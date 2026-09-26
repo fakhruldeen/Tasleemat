@@ -60,25 +60,26 @@
 
 ---
 
-### Variance thresholds
-<!-- Define acceptable variances and baseline management for Scope, Schedule, and Cost. Populate the tables below. -->
+### Scope Variance Thresholds
+<!-- Define acceptable scope variances and how the scope baseline will be managed. Populate the table below. -->
 
-#### Scope
 | Scope variance threshold | Scope baseline management |
 | :--- | :--- |
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
-#### Schedule
+### Schedule Variance Thresholds
+<!-- Define acceptable schedule variances and how the schedule baseline will be managed. Populate the table below. -->
+
 | Schedule variance threshold | Schedule baseline management |
 | :--- | :--- |
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
-#### Cost
+### Cost Variance Thresholds
+<!-- Define acceptable cost variances and how the cost baseline will be managed. Populate the table below. -->
+
 | Cost variance threshold | Cost baseline management |
 | :--- | :--- |
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-
----
 
 ### Baselines
 <!-- Attach all project baselines. -->

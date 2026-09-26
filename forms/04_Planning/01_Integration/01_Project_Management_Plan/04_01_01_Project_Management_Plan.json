@@ -20,8 +20,16 @@
             "guidance": "List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Scope, Time, Cost, Quality, Resource, Communications, Risk, Procurement, Stakeholder, Other Plans.",
             "value": ""
         },
-        "Variance thresholds": {
-            "guidance": "Define acceptable variances and baseline management for Scope, Schedule, and Cost. MUST be formatted as three separate Markdown tables (for Scope, Schedule, and Cost), each with exactly 2 columns: [Domain] variance threshold, [Domain] baseline management.",
+        "Scope Variance Thresholds": {
+            "guidance": "Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.",
+            "value": ""
+        },
+        "Schedule Variance Thresholds": {
+            "guidance": "Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.",
+            "value": ""
+        },
+        "Cost Variance Thresholds": {
+            "guidance": "Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.",
             "value": ""
         },
         "Baselines": {

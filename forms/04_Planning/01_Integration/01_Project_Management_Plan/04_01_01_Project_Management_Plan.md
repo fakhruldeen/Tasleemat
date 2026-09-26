@@ -36,8 +36,18 @@ Form: PROJECT MANAGEMENT PLAN (Instructions)
 
 ---
 
-### Variance thresholds
-**Instruction:** Define acceptable variances and baseline management for Scope, Schedule, and Cost. MUST be formatted as three separate Markdown tables (for Scope, Schedule, and Cost), each with exactly 2 columns: [Domain] variance threshold, [Domain] baseline management.
+### Scope Variance Thresholds
+**Instruction:** Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.
+
+---
+
+### Schedule Variance Thresholds
+**Instruction:** Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.
+
+---
+
+### Cost Variance Thresholds
+**Instruction:** Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.
 
 ---
 

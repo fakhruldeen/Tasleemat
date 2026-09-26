@@ -56,7 +56,9 @@ To accurately and professionally complete the **PROJECT MANAGEMENT PLAN**, the r
 *   **Phase Reviews and Criteria:** Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 5 columns: #, Phase, Reviews, Entry criteria, Exit criteria.
 *   **Development approaches:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 3 columns: #, Deliverable, Development approach.
 *   **Subsidiary management plans:** List the subsidiary management plans that are part of the project management plan. This can be in the form of a “table of contents,” links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents.
-*   **Variance thresholds:** Define acceptable variances and baseline management for Scope, Schedule, and Cost. MUST be formatted as three separate Markdown tables (for Scope, Schedule, and Cost), each with exactly 2 columns: [Domain] variance threshold, [Domain] baseline management.
+*   **Scope Variance Thresholds:** Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.
+*   **Schedule Variance Thresholds:** Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.
+*   **Cost Variance Thresholds:** Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.
 *   **Baselines:** Attach all project baselines.
 
 ---
