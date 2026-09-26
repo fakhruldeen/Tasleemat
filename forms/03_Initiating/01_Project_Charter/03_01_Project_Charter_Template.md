@@ -1,8 +1,9 @@
 <!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
 
-# PROJECT CHARTER
+<h3 align="right">{{Company_Name}}</h3>
+<h2 align="right">{{Project_Name}}</h2>
+<h1 align="center">PROJECT CHARTER</h1>
 
-**Project Title:** {{Project_Name}}  
 **Date Prepared:** {{Current_Date}}  
 **Project Sponsor:** {{Project_Sponsor_Name}}  
 **Project Manager:** {{Project_Manager_Name}}  
