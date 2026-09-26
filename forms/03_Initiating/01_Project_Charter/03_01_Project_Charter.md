@@ -35,6 +35,11 @@ Form: PROJECT CHARTER (Instructions)
 
 ---
 
+### High-level assumptions and constraints
+**Instruction:** High-level assumptions are factors considered to be true, real, or certain without proof or demonstration. Constraints are limiting factors that affect the execution of a project, program, portfolio, or process.
+
+---
+
 ### Overall project risk
 **Instruction:** An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome.
 
@@ -62,6 +67,11 @@ Form: PROJECT CHARTER (Instructions)
 
 ### Project exit criteria
 **Instruction:** The performance, metrics, conditions, or other measurements that must be met to conclude the project.
+
+---
+
+### Project approval requirements
+**Instruction:** Defines what constitutes project success, who determines whether the project is successful, and who signs off on the project.
 
 ---
 

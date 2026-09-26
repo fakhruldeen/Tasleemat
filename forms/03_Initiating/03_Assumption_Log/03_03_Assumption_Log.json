@@ -8,12 +8,20 @@
             "guidance": "Unique identifier for the assumption or constraint.",
             "value": ""
         },
-        "Category": {
-            "guidance": "The category of the assumption or constraint (e.g., Technical, Financial, Schedule).",
+        "Type": {
+            "guidance": "Specify whether this entry is an \"Assumption\" or a \"Constraint\".",
             "value": ""
         },
-        "Assumption/constraint": {
+        "Category": {
+            "guidance": "The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).",
+            "value": ""
+        },
+        "Description": {
             "guidance": "A clear, detailed description of the assumption or constraint.",
+            "value": ""
+        },
+        "Impact if invalid": {
+            "guidance": "The potential risk or impact to the project (e.g., cost, schedule, scope) if the assumption proves false or the constraint is breached.",
             "value": ""
         },
         "Responsible party": {
@@ -25,7 +33,7 @@
             "value": ""
         },
         "Actions": {
-            "guidance": "Specific actions that need to be taken to validate the assumption.",
+            "guidance": "Specific actions that need to be taken to validate the assumption or monitor the constraint.",
             "value": ""
         },
         "Status": {
@@ -33,7 +41,7 @@
             "value": ""
         },
         "Comments": {
-            "guidance": "Any additional information, context, or updates regarding the assumption or constraint.",
+            "guidance": "Any additional information, context, or updates.",
             "value": ""
         }
     }

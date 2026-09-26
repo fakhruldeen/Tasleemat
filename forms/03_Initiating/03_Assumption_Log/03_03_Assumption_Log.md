@@ -15,13 +15,23 @@ Form: Assumption Log (Instructions)
 
 ---
 
-### Category
-**Instruction:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule).
+### Type
+**Instruction:** Specify whether this entry is an "Assumption" or a "Constraint".
 
 ---
 
-### Assumption/constraint
+### Category
+**Instruction:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).
+
+---
+
+### Description
 **Instruction:** A clear, detailed description of the assumption or constraint.
+
+---
+
+### Impact if invalid
+**Instruction:** The potential risk or impact to the project (e.g., cost, schedule, scope) if the assumption proves false or the constraint is breached.
 
 ---
 
@@ -36,7 +46,7 @@ Form: Assumption Log (Instructions)
 ---
 
 ### Actions
-**Instruction:** Specific actions that need to be taken to validate the assumption.
+**Instruction:** Specific actions that need to be taken to validate the assumption or monitor the constraint.
 
 ---
 
@@ -46,5 +56,5 @@ Form: Assumption Log (Instructions)
 ---
 
 ### Comments
-**Instruction:** Any additional information, context, or updates regarding the assumption or constraint.
+**Instruction:** Any additional information, context, or updates.
 

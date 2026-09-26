@@ -40,6 +40,12 @@
 
 ---
 
+### High-level assumptions and constraints
+<!-- High-level assumptions are factors considered to be true, real, or certain without proof or demonstration. Constraints are limiting factors that affect the execution of a project, program, portfolio, or process. -->
+> [ Provide your detailed response here... ]
+
+---
+
 ### Overall project risk
 <!-- An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome. -->
 > [ Provide your detailed response here... ]
@@ -85,6 +91,12 @@
 
 ### Project exit criteria
 <!-- The performance, metrics, conditions, or other measurements that must be met to conclude the project. -->
+> [ Provide your detailed response here... ]
+
+---
+
+### Project approval requirements
+<!-- Defines what constitutes project success, who determines whether the project is successful, and who signs off on the project. -->
 > [ Provide your detailed response here... ]
 
 ---
