@@ -5,27 +5,27 @@
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>Project Title:</b> {{Project_Name}}</td>    <td width="50%"><b>Date Prepared:</b> {{Current_Date}}</td>  </tr>  <tr>    <td><b>Project Manager:</b> {{Project_Manager_Name}}</td>    <td><b>Prepared By:</b> {{Prepared_By}}</td>  </tr></table>
 
 ### Target Benefits
-*Expected tangible and intangible value to be gained.*
+<!-- Expected tangible and intangible value to be gained. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Strategic Alignment
-*How the benefits align with the organization's strategic goals.*
+<!-- How the benefits align with the organization's strategic goals. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Timeframe
-*When the benefits are expected to be realized.*
+<!-- When the benefits are expected to be realized. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Metrics
-*How the benefits will be measured.*
+<!-- How the benefits will be measured. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Risks
-*Risks associated with realizing the benefits.*
+<!-- Risks associated with realizing the benefits. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 

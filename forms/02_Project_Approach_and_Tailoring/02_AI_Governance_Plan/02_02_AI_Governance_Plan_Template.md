@@ -5,27 +5,27 @@
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>Project Title:</b> {{Project_Name}}</td>    <td width="50%"><b>Date Prepared:</b> {{Current_Date}}</td>  </tr>  <tr>    <td><b>Project Manager:</b> {{Project_Manager_Name}}</td>    <td><b>Prepared By:</b> {{Prepared_By}}</td>  </tr></table>
 
 ### Ethical Guidelines
-*Principles guiding the ethical use of AI on this project.*
+<!-- Principles guiding the ethical use of AI on this project. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Data Privacy & Security
-*Protocols for protecting sensitive data used by AI models.*
+<!-- Protocols for protecting sensitive data used by AI models. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Bias Mitigation
-*Strategies to identify and reduce bias in AI outcomes.*
+<!-- Strategies to identify and reduce bias in AI outcomes. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Compliance Requirements
-*Legal or organizational regulations the AI must adhere to.*
+<!-- Legal or organizational regulations the AI must adhere to. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Accountability
-*Who is responsible for the AI's actions and outputs.*
+<!-- Who is responsible for the AI's actions and outputs. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 

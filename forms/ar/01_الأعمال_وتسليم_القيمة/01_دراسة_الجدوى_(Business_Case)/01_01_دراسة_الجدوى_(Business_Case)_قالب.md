@@ -8,22 +8,22 @@
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>اسم المشروع:</b> {{اسم_المشروع}}</td>    <td width="50%"><b>التاريخ:</b> {{التاريخ_الحالي}}</td>  </tr>  <tr>    <td><b>مدير المشروع:</b> {{اسم_مدير_المشروع}}</td>    <td><b>إعداد:</b> {{معد_الوثيقة}}</td>  </tr></table>
 
 ### Business Need
-*Identify the problem or opportunity.*
+<!-- Identify the problem or opportunity. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
 ### Analysis of Situation
-*Describe the current state, future state, and root causes.*
+<!-- Describe the current state, future state, and root causes. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
 ### Recommendation
-*The recommended option or approach to address the need.*
+<!-- The recommended option or approach to address the need. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
 ### Evaluation Criteria
-*Metrics used to measure success.*
+<!-- Metrics used to measure success. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 

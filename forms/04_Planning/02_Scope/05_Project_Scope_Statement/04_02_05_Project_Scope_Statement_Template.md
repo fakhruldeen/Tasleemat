@@ -5,22 +5,22 @@
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>Project Title:</b> {{Project_Name}}</td>    <td width="50%"><b>Date Prepared:</b> {{Current_Date}}</td>  </tr>  <tr>    <td><b>Project Manager:</b> {{Project_Manager_Name}}</td>    <td><b>Prepared By:</b> {{Prepared_By}}</td>  </tr></table>
 
 ### Project scope description
-*Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation.*
+<!-- Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Project deliverables
-*Project deliverables are progressively elaborated from the project description key deliverables in the project charter.*
+<!-- Project deliverables are progressively elaborated from the project description key deliverables in the project charter. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Product acceptance criteria
-*Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project.*
+<!-- Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Project exclusions
-*Project exclusions clearly define what is out of scope for the product and project.*
+<!-- Project exclusions clearly define what is out of scope for the product and project. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 

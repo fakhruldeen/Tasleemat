@@ -5,12 +5,12 @@
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>Project Title:</b> {{Project_Name}}</td>    <td width="50%"><b>Date Prepared:</b> {{Current_Date}}</td>  </tr>  <tr>    <td><b>Project Manager:</b> {{Project_Manager_Name}}</td>    <td><b>Prepared By:</b> {{Prepared_By}}</td>  </tr></table>
 
 ### Control account
-*The point where scope, schedule, and cost are integrated and used to measure project performance*
+<!-- The point where scope, schedule, and cost are integrated and used to measure project performance -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
 ### Work package
-*The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.*
+<!-- The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 

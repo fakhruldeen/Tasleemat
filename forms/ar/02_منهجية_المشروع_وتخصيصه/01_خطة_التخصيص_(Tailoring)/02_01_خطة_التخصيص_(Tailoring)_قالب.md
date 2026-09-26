@@ -8,22 +8,22 @@
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>اسم المشروع:</b> {{اسم_المشروع}}</td>    <td width="50%"><b>التاريخ:</b> {{التاريخ_الحالي}}</td>  </tr>  <tr>    <td><b>مدير المشروع:</b> {{اسم_مدير_المشروع}}</td>    <td><b>إعداد:</b> {{معد_الوثيقة}}</td>  </tr></table>
 
 ### Process/Artifact
-*The standard process or artifact being considered.*
+<!-- The standard process or artifact being considered. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
 ### Tailoring Decision
-*Added, removed, or modified?*
+<!-- Added, removed, or modified? -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
 ### Justification
-*Reasoning for the tailoring decision.*
+<!-- Reasoning for the tailoring decision. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
 ### Approver
-*Person who approved the change.*
+<!-- Person who approved the change. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
