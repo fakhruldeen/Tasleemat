@@ -1,65 +1,67 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
 
-<table width="100%" style="border-collapse: collapse; border: none; margin-bottom: 20px;">  <tr>    <td align="center" style="background-color: #34495e; color: white; padding: 15px; font-size: 24px; font-weight: bold; border-radius: 5px;">      PROJECT CHARTER    </td>  </tr></table>
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>Project Title:</b> {{Project_Name}}</td>    <td width="50%"><b>Date Prepared:</b> {{Current_Date}}</td>  </tr>  <tr>    <td><b>Project Sponsor:</b> {{Project_Sponsor_Name}}</td>    <td><b>Project Manager:</b> {{Project_Manager_Name}}</td>  </tr>  <tr>    <td colspan="2"><b>Project Customer:</b> {{Client_Customer_Name}}</td>  </tr></table>
+# PROJECT CHARTER
+
+**Project Title:** {{Project_Name}}  
+**Date Prepared:** {{Current_Date}}  
+**Project Sponsor:** {{Project_Sponsor_Name}}  
+**Project Manager:** {{Project_Manager_Name}}  
+**Project Customer:** {{Client_Customer_Name}}  
+
+---
 
 ### Project purpose
 <!-- The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### High-level project description
 <!-- A summary-level description of the project. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Project boundaries
 <!-- Limits to the project scope. May include scope exclusions, or other limitations. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Key deliverables
 <!-- The high-level project and product deliverables. These will be further elaborated in the project scope statement. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### High-level requirements
 <!-- The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders’ needs and expectations. These will be further elaborated in the requirements documentation. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Overall project risk
 <!-- An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Project objectives and related success
 <!-- criteria Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. There may be additional objectives as well. Some organizations include quality, safety, and stakeholder satisfaction objectives. (continued) -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Preapproved financial resources
 <!-- The amount of funding available for the project. May include sources of funding and annual funding limits. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Key stakeholder list
 <!-- An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. This can be further elaborated in the stakeholder register. -->
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ### Project exit criteria
 <!-- The performance, metrics, conditions, or other measurements that must be met to conclude the project. Assigned project manager, responsibility, and authority level The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution. Examples of staffing authority include the power to hire, fire, discipline, accept, or not accept project staff. Budget management refers to the authority of the project manager to commit, manage, and control project funds. Variance refers to the variance level that requires escalation. Technical decisions describe the authority of the project manager to make technical decisions about deliverables or the project approach. Conflict resolution defines the degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders. Name and authority of the sponsor or other person(s) authorizing the project charter The name, position, and authority of the person who oversees the project manager for the purposes of the project. Common types of authority include the ability to approve changes, determine acceptable variance limits, resolve inter-project conflicts, and champion the project at a senior management level. -->
+> [ Provide your detailed response here... ]
 
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+---
 
-<br><br>
-<table width="100%" style="border-collapse: collapse; border: none; margin-top: 30px;">  <tr>    <td width="33%"><b>Prepared By:</b><br><br>_____________________<br><br>Date: _________________</td>    <td width="33%"><b>Reviewed By:</b><br><br>_____________________<br><br>Date: _________________</td>    <td width="33%"><b>Approved By:</b><br><br>_____________________<br><br>Date: _________________</td>  </tr></table>
-<div align="right" style="margin-top: 40px; font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 5px;">  <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i></div>
-</div>
+### Signatures
+
+**Prepared By:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
+**Reviewed By:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
+**Approved By:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
+
+---
+
+*Generated on: {{Current_Timestamp}}, by [Tasleemat](https://github.com/fakhruldeen/Tasleemat/)*
