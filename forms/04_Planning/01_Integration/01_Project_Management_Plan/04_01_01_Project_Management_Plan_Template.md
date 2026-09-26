@@ -1,4 +1,4 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -14,9 +14,9 @@
 
 | Phase | Key activities | Key Deliverables |
 | :--- | :--- | :--- |
-| [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 
@@ -25,9 +25,9 @@
 
 | Phase | Reviews | Entry criteria | Exit criteria |
 | :--- | :--- | :--- | :--- |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 
@@ -36,9 +36,9 @@
 
 | Deliverable | Development approach |
 | :--- | :--- |
-| [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 
@@ -47,16 +47,16 @@
 
 | Name | Comment |
 | :--- | :--- |
-| Scope | [ ... ] |
-| Time | [ ... ] |
-| Cost | [ ... ] |
-| Quality | [ ... ] |
-| Resource | [ ... ] |
-| Communications | [ ... ] |
-| Risk | [ ... ] |
-| Procurement | [ ... ] |
-| Stakeholder | [ ... ] |
-| Other Plans | [ ... ] |
+| Scope | [ Provide your detailed response here... ] |
+| Time | [ Provide your detailed response here... ] |
+| Cost | [ Provide your detailed response here... ] |
+| Quality | [ Provide your detailed response here... ] |
+| Resource | [ Provide your detailed response here... ] |
+| Communications | [ Provide your detailed response here... ] |
+| Risk | [ Provide your detailed response here... ] |
+| Procurement | [ Provide your detailed response here... ] |
+| Stakeholder | [ Provide your detailed response here... ] |
+| Other Plans | [ Provide your detailed response here... ] |
 
 ---
 

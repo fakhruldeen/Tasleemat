@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -27,9 +27,9 @@ Please populate the table below with the following details:
 -->
 | Project purpose | High-level project description | Project boundaries | Key deliverables | High-level requirements | Overall project risk | Project objectives and related success | Summary milestone schedule | Preapproved financial resources | Key stakeholder list | Project exit criteria |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 
 
