@@ -90,8 +90,12 @@
 
 ### Signatures
 
-**Project Manager Name:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Signature:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
-**Sponsor or Originator Name:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Signature:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
+| Project Manager: | Project Sponsor / Originator: |
+| :--- | :--- |
+| **Name:** {{Project_Manager_Name}} | **Name:** {{Project_Sponsor_Name}} |
+| **Signature:** _____________________ | **Signature:** _____________________ |
+| <br> | <br> |
+| **Date:** _________________ | **Date:** _________________ |  
 
 ---
 
