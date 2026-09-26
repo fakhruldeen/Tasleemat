@@ -9,10 +9,13 @@ Form: Assumption Log (Instructions)
 > This document serves as the detailed instruction set for generating the `Assumption Log`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> Assumptions are factors in the planning process that are considered to be true, real, or certain, without proof or demonstration. Constraints are also documented in this log. Constraints are limiting factors that affect the execution of the project. Typical constraints include a predetermined budget or fixed milestones for deliverables. Assumptions can come from any document in the project or be determined by the project team. Constraints may be documented in the project charter and are determined by the customer, sponsor, or regulatory agencies. This log is a dynamic document that is updated throughout the project. Assumptions are progressively elaborated and eventually validated.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The assumption log should be aligned and consistent with the following documents:
+• Project charter
+• Issue log
+• Risk register
 
 ---
 

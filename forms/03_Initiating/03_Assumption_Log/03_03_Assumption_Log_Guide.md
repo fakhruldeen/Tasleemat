@@ -37,10 +37,14 @@ This artifact is primarily prepared, utilized, and updated during the **INITIATI
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• Combine the assumption log with the issue register and the decision log, to create an AID Log (A = assumption, I = issue, D = decision). You can create them in a spreadsheet with each sheet dedicated to either assumptions, issues, or decisions.
+• If you have a very large project you may want to keep the constraints in a separate log from the assumptions.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The assumption log should be aligned and consistent with the following documents:
+• Project charter
+• Issue log
+• Risk register
 
 ### 5. How?
 To accurately and professionally complete the **Assumption Log**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
