@@ -4,10 +4,9 @@
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROJECT CHARTER</h1>
 
-**Date Prepared:** {{Current_Date}}  
-**Project Sponsor:** {{Project_Sponsor_Name}}  
-**Project Manager:** {{Project_Manager_Name}}  
-**Project Customer:** {{Client_Customer_Name}}  
+| **Project Sponsor:** {{Project_Sponsor_Name}} | **Date Prepared:** {{Current_Date}} |
+| :--- | :--- |
+| **Project Manager:** {{Project_Manager_Name}} | **Project Customer:** {{Client_Customer_Name}} |  
 
 ---
 
