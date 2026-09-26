@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,45 +9,19 @@
 
 ---
 
-### Name
-<!-- Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Position/Role
-<!-- The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team, such as testing lead, Scrum Master, or scheduler -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Contact information
-<!-- How to communicate with the stakeholder, such as their phone number, email address, or physical address -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Requirements
-<!-- High-level needs for the project and/or product -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Expectations
-<!-- Main expectations of the project and/or product -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Classification
-<!-- Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact -->
-
-> [ Provide your detailed response here... ]
+### Stakeholder Analysis Entries
+<!-- 
+Please populate the table below with the following details for each key stakeholder:
+- **Name or Role:** The name or role of the stakeholder being analyzed.
+- **Interest:** The level of interest the stakeholder has in the project outcomes (e.g., High, Medium, Low).
+- **Influence:** The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).
+- **Attitude:** The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).
+-->
+| Name or Role | Interest | Influence | Attitude |
+| :--- | :--- | :--- | :--- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
 ---
 
