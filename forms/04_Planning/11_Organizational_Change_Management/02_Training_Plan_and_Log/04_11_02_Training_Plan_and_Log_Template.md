@@ -8,7 +8,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">TRAINING PLAN AND LOG</h1>
 
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <td width="33%"><strong>Date Prepared:</strong> {{Current_Date}}</td>
     <td width="33%"><strong>Project Manager:</strong> {{Project_Manager_Name}}</td>
@@ -18,7 +18,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Target Audience</th>    <th>Training Module</th>    <th>Delivery Method</th>    <th>Date/Schedule</th>    <th>Completion Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Target Audience</th>    <th>Training Module</th>    <th>Delivery Method</th>    <th>Date/Schedule</th>    <th>Completion Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Target Audience:</b> <i>Who needs training.</i></li><li><b>Training Module:</b> <i>What they are learning.</i></li><li><b>Delivery Method:</b> <i>In-person, webinar, self-paced.</i></li><li><b>Date/Schedule:</b> <i>When training occurs.</i></li><li><b>Completion Status:</b> <i>Number of users completed.</i></li></ul></div>
@@ -27,7 +27,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ### Signatures
 
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <th width="33%" align="left">Prepared By:</th>
     <th width="33%" align="left">Reviewed By:</th>

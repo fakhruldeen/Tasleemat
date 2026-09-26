@@ -5,7 +5,7 @@
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">DECISION LOG</h1>
 
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <td width="33%"><strong>Date Prepared:</strong> {{Current_Date}}</td>
     <td width="33%"><strong>Project Manager:</strong> {{Project_Manager_Name}}</td>
@@ -15,7 +15,7 @@
 
 ---
 
-<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>ID</th>    <th>Category</th>    <th>Decision</th>    <th>Responsible party</th>    <th>Priority</th>    <th>Comments</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>ID</th>    <th>Category</th>    <th>Decision</th>    <th>Responsible party</th>    <th>Priority</th>    <th>Comments</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>ID:</b> <i>Enter a unique decision identifier.</i></li><li><b>Category:</b> <i>Document the type of decision, such as technical, project, process, etc.</i></li><li><b>Decision:</b> <i>Provide a detailed description of the decision.</i></li><li><b>Responsible party:</b> <i>Identify the person authorized to make the decision.</i></li><li><b>Priority:</b> <i>Enter the date the decision was made and authorized.</i></li><li><b>Comments:</b> <i>Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.</i></li></ul></div>
@@ -24,7 +24,7 @@
 
 ### Signatures
 
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <th width="33%" align="left">Prepared By:</th>
     <th width="33%" align="left">Reviewed By:</th>

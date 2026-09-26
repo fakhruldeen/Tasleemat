@@ -4,7 +4,7 @@
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROJECT CHARTER</h1>
 
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <td width="50%"><strong>Project Sponsor:</strong> {{Project_Sponsor_Name}}</td>
     <td width="50%"><strong>Date Prepared:</strong> {{Current_Date}}</td>
@@ -55,7 +55,7 @@
 
 ### Project objectives and related success criteria
 <!-- Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. -->
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <th width="20%" align="left">Item</th>
     <th width="40%" align="left">Project objectives</th>
@@ -87,7 +87,7 @@
 
 ### Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <th width="10%" align="left">#</th>
     <th width="60%" align="left">Summary milestones</th>
@@ -120,7 +120,7 @@
 
 ### Key stakeholder list
 <!-- An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. -->
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <th width="50%" align="left">Stakeholder(s)</th>
     <th width="50%" align="left">Role(s)</th>
@@ -171,7 +171,7 @@
 
 ### Signatures
 
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <th colspan="2" align="left">Project Manager:</th>
     <th colspan="2" align="left">Project Sponsor / Originator:</th>

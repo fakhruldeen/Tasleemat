@@ -1,6 +1,6 @@
 # Test
 
-<table width="100%">
+<table style="width: 100%;">
   <tr>
     <th>**Header**</th>
   </tr>
