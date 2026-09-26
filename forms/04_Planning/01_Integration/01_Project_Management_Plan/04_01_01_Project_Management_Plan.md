@@ -21,7 +21,7 @@ Form: PROJECT MANAGEMENT PLAN (Instructions)
 ---
 
 ### Development approaches
-**Instruction:** Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches.
+**Instruction:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 2 columns: Deliverable, Development approach.
 
 ---
 

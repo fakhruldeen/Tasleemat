@@ -32,9 +32,13 @@
 ---
 
 ### Development approaches
-<!-- Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches. -->
+<!-- Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches. Populate the table below. -->
 
-> [ Provide your detailed response here... ]
+| Deliverable | Development approach |
+| :--- | :--- |
+| [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] |
 
 ---
 
