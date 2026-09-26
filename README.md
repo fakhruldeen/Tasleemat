@@ -26,8 +26,6 @@ Tasleemat/
 │       ├── 00_إدارة_البرامج_والمحافظ/
 │       ├── 03_البدء/
 │       └── ...
-├── scripts/               # Python generators used to build the repo
-├── source_files/          # Original reference materials
 ├── mapping.md             # The master registry of all Document IDs
 └── USAGE_GUIDE.md         # Detailed instructions on how to use the toolkit
 ```
@@ -45,13 +43,7 @@ Want to generate a Risk Register in seconds?
 4. Watch as the AI flawlessly populates the `_Template.md` structure for you!
 *See [USAGE_GUIDE.md](./USAGE_GUIDE.md) for detailed AI workflows.*
 
-## 🌐 Deploying to GitHub Pages
-This repository is pre-configured to be hosted as a beautiful documentation website.
-1. Push this repository to GitHub.
-2. Go to your repository **Settings** > **Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)` folder, then click **Save**.
-5. Within minutes, your toolkit will be live online!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
