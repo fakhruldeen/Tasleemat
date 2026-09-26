@@ -83,6 +83,10 @@
         "Comments": {
             "guidance": "Provide any comments or additional helpful information about the risk event or condition.",
             "value": ""
+        },
+        "Scope</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
         }
     }
 }

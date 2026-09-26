@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Resource Role/Team": {
-            "guidance": "Skillset or team name.",
-            "value": ""
-        },
-        "Total Available Capacity": {
-            "guidance": "Total hours/FTE available.",
-            "value": ""
-        },
-        "Allocated Capacity": {
-            "guidance": "Hours/FTE already assigned.",
-            "value": ""
-        },
-        "Remaining Capacity": {
-            "guidance": "Available hours/FTE.",
-            "value": ""
-        },
-        "Critical Constraints": {
-            "guidance": "Any bottlenecks or single points of failure.",
-            "value": ""
+        "Resource Capacity Matrix Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Resource Role/Team:** Skillset or team name.\n- **Total Available Capacity:** Total hours/FTE available.\n- **Allocated Capacity:** Hours/FTE already assigned.\n- **Remaining Capacity:** Available hours/FTE.\n- **Critical Constraints:** Any bottlenecks or single points of failure.",
+            "value": [
+                {
+                    "Resource Role/Team": "",
+                    "Total Available Capacity": "",
+                    "Allocated Capacity": "",
+                    "Remaining Capacity": "",
+                    "Critical Constraints": ""
+                }
+            ]
         }
     }
 }

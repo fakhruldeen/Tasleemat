@@ -4,45 +4,22 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "Enter a unique issue identifier.",
-            "value": ""
-        },
-        "Type": {
-            "guidance": "Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.",
-            "value": ""
-        },
-        "Issue description": {
-            "guidance": "Provide a detailed description of the issue.",
-            "value": ""
-        },
-        "Priority": {
-            "guidance": "Define the priority, such as urgent, high, medium, or low.",
-            "value": ""
-        },
-        "Impact on objectives": {
-            "guidance": "Identify the project objectives that the issue impacts and the degree of impact.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "Identify the person who is assigned to resolve the issue.",
-            "value": ""
-        },
-        "Status": {
-            "guidance": "Denote the status of the issue as open or closed.",
-            "value": ""
-        },
-        "Resolution date": {
-            "guidance": "Document the date by which the issue needs to be resolved.",
-            "value": ""
-        },
-        "Final resolution": {
-            "guidance": "Describe how the issue was resolved.",
-            "value": ""
-        },
-        "Comments": {
-            "guidance": "Document any clarifying comments about the issue, resolution, or other fields on the form.",
-            "value": ""
+        "Issue Log Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **ID:** Enter a unique issue identifier.\n- **Type:** Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.\n- **Issue description:** Provide a detailed description of the issue.\n- **Priority:** Define the priority, such as urgent, high, medium, or low.\n- **Impact on objectives:** Identify the project objectives that the issue impacts and the degree of impact.\n- **Responsible party:** Identify the person who is assigned to resolve the issue.\n- **Status:** Denote the status of the issue as open or closed.\n- **Resolution date:** Document the date by which the issue needs to be resolved.\n- **Final resolution:** Describe how the issue was resolved.\n- **Comments:** Document any clarifying comments about the issue, resolution, or other fields on the form.",
+            "value": [
+                {
+                    "ID": "",
+                    "Type": "",
+                    "Issue description": "",
+                    "Priority": "",
+                    "Impact on objectives": "",
+                    "Responsible party": "",
+                    "Status": "",
+                    "Resolution date": "",
+                    "Final resolution": "",
+                    "Comments": ""
+                }
+            ]
         }
     }
 }

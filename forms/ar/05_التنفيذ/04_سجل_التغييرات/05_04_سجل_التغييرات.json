@@ -4,33 +4,19 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Category": {
-            "guidance": "Enter the category from the change request form. Describe the proposed change.",
-            "value": ""
-        },
-        "Requestor": {
-            "guidance": "Enter the name of the person requesting the change.",
-            "value": ""
-        },
-        "Submission date": {
-            "guidance": "Enter the date the change was submitted.",
-            "value": ""
-        },
-        "الحالة": {
-            "guidance": "Enter the status as open, pending, closed.",
-            "value": ""
-        },
-        "Disposition": {
-            "guidance": "Enter the outcome of the change request as approved, deferred, or rejected.",
-            "value": ""
-        },
-        "ID": {
-            "guidance": "",
-            "value": ""
-        },
-        "Description of change": {
-            "guidance": "",
-            "value": ""
+        "مدخلات سجل التغييرات": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Category:** Enter the category from the change request form. Describe the proposed change.\n- **Requestor:** Enter the name of the person requesting the change.\n- **Submission date:** Enter the date the change was submitted.\n- **الحالة:** Enter the status as open, pending, closed.\n- **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.\n- **ID:** \n- **Description of change:**",
+            "value": [
+                {
+                    "Category": "",
+                    "Requestor": "",
+                    "Submission date": "",
+                    "الحالة": "",
+                    "Disposition": "",
+                    "ID": "",
+                    "Description of change": ""
+                }
+            ]
         }
     }
 }

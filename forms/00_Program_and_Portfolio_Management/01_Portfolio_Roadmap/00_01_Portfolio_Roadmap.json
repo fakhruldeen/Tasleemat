@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Program/Project Name": {
-            "guidance": "Name of the initiative.",
-            "value": ""
-        },
-        "Strategic Objective": {
-            "guidance": "Which strategic goal this maps to.",
-            "value": ""
-        },
-        "Start Date": {
-            "guidance": "Expected start quarter/date.",
-            "value": ""
-        },
-        "End Date": {
-            "guidance": "Expected end quarter/date.",
-            "value": ""
-        },
-        "Budget Estimate": {
-            "guidance": "High level budget allocation.",
-            "value": ""
-        },
-        "Status": {
-            "guidance": "Current status.",
-            "value": ""
+        "Portfolio Roadmap Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Program/Project Name:** Name of the initiative.\n- **Strategic Objective:** Which strategic goal this maps to.\n- **Start Date:** Expected start quarter/date.\n- **End Date:** Expected end quarter/date.\n- **Budget Estimate:** High level budget allocation.\n- **Status:** Current status.",
+            "value": [
+                {
+                    "Program/Project Name": "",
+                    "Strategic Objective": "",
+                    "Start Date": "",
+                    "End Date": "",
+                    "Budget Estimate": "",
+                    "Status": ""
+                }
+            ]
         }
     }
 }

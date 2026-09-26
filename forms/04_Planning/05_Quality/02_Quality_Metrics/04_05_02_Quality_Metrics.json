@@ -4,45 +4,22 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Area audited": {
-            "guidance": "Check the box for the area or areas audited.",
-            "value": ""
-        },
-        "Good practices from similar projects": {
-            "guidance": "Describe any good or best practices that can be shared from similar projects.",
-            "value": ""
-        },
-        "Areas for improvement": {
-            "guidance": "Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.",
-            "value": ""
-        },
-        "Deficiencies or defects": {
-            "guidance": "",
-            "value": ""
-        },
-        "ID": {
-            "guidance": "Enter a unique defect identifier.",
-            "value": ""
-        },
-        "Defect": {
-            "guidance": "Describe the deficiency or defect.",
-            "value": ""
-        },
-        "Action": {
-            "guidance": "Describe the corrective actions needed to fix the defect.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "Identify the person assigned to correct the deficiency or defect.",
-            "value": ""
-        },
-        "Due date": {
-            "guidance": "Document the due date.",
-            "value": ""
-        },
-        "Comments": {
-            "guidance": "Provide any additional useful comments about the audit.",
-            "value": ""
+        "Quality Metrics Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Area audited:** Check the box for the area or areas audited.\n- **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.\n- **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.\n- **Deficiencies or defects:** \n- **ID:** Enter a unique defect identifier.\n- **Defect:** Describe the deficiency or defect.\n- **Action:** Describe the corrective actions needed to fix the defect.\n- **Responsible party:** Identify the person assigned to correct the deficiency or defect.\n- **Due date:** Document the due date.\n- **Comments:** Provide any additional useful comments about the audit.",
+            "value": [
+                {
+                    "Area audited": "",
+                    "Good practices from similar projects": "",
+                    "Areas for improvement": "",
+                    "Deficiencies or defects": "",
+                    "ID": "",
+                    "Defect": "",
+                    "Action": "",
+                    "Responsible party": "",
+                    "Due date": "",
+                    "Comments": ""
+                }
+            ]
         }
     }
 }

@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "",
-            "value": ""
-        },
-        "A unique identifier": {
-            "guidance": "",
-            "value": ""
-        },
-        "Summary description": {
-            "guidance": "A brief description of the requirement or need. The description should be no more than one or two sentences.",
-            "value": ""
-        },
-        "Priority": {
-            "guidance": "A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.",
-            "value": ""
-        },
-        "Story": {
-            "guidance": "This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.",
-            "value": ""
-        },
-        "Status": {
-            "guidance": "Indicates if the requirement is not started, in progress, or complete.",
-            "value": ""
+        "Product Backlog Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **ID:** \n- **A unique identifier:** \n- **Summary description:** A brief description of the requirement or need. The description should be no more than one or two sentences.\n- **Priority:** A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.\n- **Story:** This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.\n- **Status:** Indicates if the requirement is not started, in progress, or complete.",
+            "value": [
+                {
+                    "ID": "",
+                    "A unique identifier": "",
+                    "Summary description": "",
+                    "Priority": "",
+                    "Story": "",
+                    "Status": ""
+                }
+            ]
         }
     }
 }

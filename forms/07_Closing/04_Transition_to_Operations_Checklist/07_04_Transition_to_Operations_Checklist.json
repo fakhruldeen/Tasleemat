@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Checklist Item": {
-            "guidance": "e.g., Code deployed, Support manuals written.",
-            "value": ""
-        },
-        "Responsible Party": {
-            "guidance": "Who owns the item.",
-            "value": ""
-        },
-        "Sign-off Signature": {
-            "guidance": "Approval.",
-            "value": ""
-        },
-        "Date": {
-            "guidance": "When completed.",
-            "value": ""
-        },
-        "Notes": {
-            "guidance": "Any handover details.",
-            "value": ""
+        "Transition To Operations Checklist Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Checklist Item:** e.g., Code deployed, Support manuals written.\n- **Responsible Party:** Who owns the item.\n- **Sign-off Signature:** Approval.\n- **Date:** When completed.\n- **Notes:** Any handover details.",
+            "value": [
+                {
+                    "Checklist Item": "",
+                    "Responsible Party": "",
+                    "Sign-off Signature": "",
+                    "Date": "",
+                    "Notes": ""
+                }
+            ]
         }
     }
 }

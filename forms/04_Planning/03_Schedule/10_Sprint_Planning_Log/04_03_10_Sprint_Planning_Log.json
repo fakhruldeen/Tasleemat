@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Sprint Goal": {
-            "guidance": "The overarching goal of the sprint.",
-            "value": ""
-        },
-        "Story ID": {
-            "guidance": "Jira or board reference.",
-            "value": ""
-        },
-        "Story Points": {
-            "guidance": "Estimated effort.",
-            "value": ""
-        },
-        "Assignee": {
-            "guidance": "Who is working on it.",
-            "value": ""
-        },
-        "Acceptance Criteria": {
-            "guidance": "High level criteria for success.",
-            "value": ""
+        "Sprint Planning Log Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Sprint Goal:** The overarching goal of the sprint.\n- **Story ID:** Jira or board reference.\n- **Story Points:** Estimated effort.\n- **Assignee:** Who is working on it.\n- **Acceptance Criteria:** High level criteria for success.",
+            "value": [
+                {
+                    "Sprint Goal": "",
+                    "Story ID": "",
+                    "Story Points": "",
+                    "Assignee": "",
+                    "Acceptance Criteria": ""
+                }
+            ]
         }
     }
 }

@@ -83,6 +83,10 @@
         "التعليقات": {
             "guidance": "Provide any comments or additional helpful information about the risk event or condition.",
             "value": ""
+        },
+        "النطاق</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
         }
     }
 }

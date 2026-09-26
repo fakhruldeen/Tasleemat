@@ -4,21 +4,16 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "",
-            "value": ""
-        },
-        "Unique identifier": {
-            "guidance": "",
-            "value": ""
-        },
-        "Activity name": {
-            "guidance": "A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.",
-            "value": ""
-        },
-        "Description of work": {
-            "guidance": "If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",
-            "value": ""
+        "Activity List Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **ID:** \n- **Unique identifier:** \n- **Activity name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.\n- **Description of work:** If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",
+            "value": [
+                {
+                    "ID": "",
+                    "Unique identifier": "",
+                    "Activity name": "",
+                    "Description of work": ""
+                }
+            ]
         }
     }
 }

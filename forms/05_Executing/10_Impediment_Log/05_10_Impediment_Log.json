@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Impediment ID": {
-            "guidance": "Unique ID.",
-            "value": ""
-        },
-        "Date Raised": {
-            "guidance": "When it was identified.",
-            "value": ""
-        },
-        "Description": {
-            "guidance": "What is blocking the team.",
-            "value": ""
-        },
-        "Impact": {
-            "guidance": "How it affects the sprint.",
-            "value": ""
-        },
-        "Owner": {
-            "guidance": "Scrum Master or person resolving it.",
-            "value": ""
-        },
-        "Status": {
-            "guidance": "Open, In Progress, Resolved.",
-            "value": ""
+        "Impediment Log Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Impediment ID:** Unique ID.\n- **Date Raised:** When it was identified.\n- **Description:** What is blocking the team.\n- **Impact:** How it affects the sprint.\n- **Owner:** Scrum Master or person resolving it.\n- **Status:** Open, In Progress, Resolved.",
+            "value": [
+                {
+                    "Impediment ID": "",
+                    "Date Raised": "",
+                    "Description": "",
+                    "Impact": "",
+                    "Owner": "",
+                    "Status": ""
+                }
+            ]
         }
     }
 }

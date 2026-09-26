@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Checklist Item": {
-            "guidance": "e.g., Code deployed, Support manuals written.",
-            "value": ""
-        },
-        "Responsible Party": {
-            "guidance": "Who owns the item.",
-            "value": ""
-        },
-        "Sign-off Signature": {
-            "guidance": "Approval.",
-            "value": ""
-        },
-        "التاريخ": {
-            "guidance": "",
-            "value": ""
-        },
-        "ملاحظات": {
-            "guidance": "",
-            "value": ""
+        "مدخلات قائمة التحقق للانتقال إلى العمليات": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Checklist Item:** e.g., Code deployed, Support manuals written.\n- **Responsible Party:** Who owns the item.\n- **Sign-off Signature:** Approval.\n- **التاريخ:** \n- **ملاحظات:**",
+            "value": [
+                {
+                    "Checklist Item": "",
+                    "Responsible Party": "",
+                    "Sign-off Signature": "",
+                    "التاريخ": "",
+                    "ملاحظات": ""
+                }
+            ]
         }
     }
 }

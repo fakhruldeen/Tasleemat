@@ -20,6 +20,10 @@
             "guidance": "Indicate the reason for the change.",
             "value": ""
         },
+        "Impacts of change</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "Quality": {
             "guidance": "Describe the impact of the proposed change on the project or product quality.",
             "value": ""

@@ -4,65 +4,27 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Scope impact": {
-            "guidance": "",
-            "value": ""
-        },
-        "Very High": {
-            "guidance": "The product does not meet the objectives and is effectively useless",
-            "value": ""
-        },
-        "High": {
-            "guidance": "The product is deficient in multiple essential requirements",
-            "value": ""
-        },
-        "Medium": {
-            "guidance": "The product is deficient in one major requirement or multiple minor requirements",
-            "value": ""
-        },
-        "Low": {
-            "guidance": "The product is deficient in a few minor requirements",
-            "value": ""
-        },
-        "Very Low": {
-            "guidance": "",
-            "value": ""
-        },
-        "Minimal deviation from requirements": {
-            "guidance": "",
-            "value": ""
-        },
-        "There is minor deviation in performance": {
-            "guidance": "",
-            "value": ""
-        },
-        "Cost increase of 10 to 20 percent": {
-            "guidance": "",
-            "value": ""
-        },
-        "Cost increase of 5 to 10 percent": {
-            "guidance": "",
-            "value": ""
-        },
-        "Quality impact": {
-            "guidance": "",
-            "value": ""
-        },
-        "Schedule impact": {
-            "guidance": "",
-            "value": ""
-        },
-        "Cost impact": {
-            "guidance": "",
-            "value": ""
-        },
-        "Probability": {
-            "guidance": "",
-            "value": ""
-        },
-        "Risk rating": {
-            "guidance": "",
-            "value": ""
+        "Probability And Impact Assessment Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Scope impact:** \n- **Very High:** The product does not meet the objectives and is effectively useless\n- **High:** The product is deficient in multiple essential requirements\n- **Medium:** The product is deficient in one major requirement or multiple minor requirements\n- **Low:** The product is deficient in a few minor requirements\n- **Very Low:** \n- **Minimal deviation from requirements:** \n- **There is minor deviation in performance:** \n- **Cost increase of 10 to 20 percent:** \n- **Cost increase of 5 to 10 percent:** \n- **Quality impact:** \n- **Schedule impact:** \n- **Cost impact:** \n- **Probability:** \n- **Risk rating:**",
+            "value": [
+                {
+                    "Scope impact": "",
+                    "Very High": "",
+                    "High": "",
+                    "Medium": "",
+                    "Low": "",
+                    "Very Low": "",
+                    "Minimal deviation from requirements": "",
+                    "There is minor deviation in performance": "",
+                    "Cost increase of 10 to 20 percent": "",
+                    "Cost increase of 5 to 10 percent": "",
+                    "Quality impact": "",
+                    "Schedule impact": "",
+                    "Cost impact": "",
+                    "Probability": "",
+                    "Risk rating": ""
+                }
+            ]
         }
     }
 }

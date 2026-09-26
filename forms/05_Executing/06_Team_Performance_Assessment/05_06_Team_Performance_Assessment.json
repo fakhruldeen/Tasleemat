@@ -4,65 +4,27 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Technical performance": {
-            "guidance": "",
-            "value": ""
-        },
-        "Scope": {
-            "guidance": "Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.",
-            "value": ""
-        },
-        "Quality": {
-            "guidance": "Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.",
-            "value": ""
-        },
-        "Schedule": {
-            "guidance": "Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.",
-            "value": ""
-        },
-        "Cost": {
-            "guidance": "Rate the team’s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.",
-            "value": ""
-        },
-        "Communication": {
-            "guidance": "Rate the team’s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.",
-            "value": ""
-        },
-        "Collaboration": {
-            "guidance": "Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.",
-            "value": ""
-        },
-        "Conflict management": {
-            "guidance": "Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.",
-            "value": ""
-        },
-        "Decision making": {
-            "guidance": "Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.",
-            "value": ""
-        },
-        "Interpersonal competency": {
-            "guidance": "",
-            "value": ""
-        },
-        "Team morale": {
-            "guidance": "Describe the overall team morale.",
-            "value": ""
-        },
-        "Areas for development": {
-            "guidance": "",
-            "value": ""
-        },
-        "Area": {
-            "guidance": "List technical or interpersonal areas for development.",
-            "value": ""
-        },
-        "Approach": {
-            "guidance": "Describe the development approach, such as training, mentoring, or coaching.",
-            "value": ""
-        },
-        "Actions": {
-            "guidance": "List the actions necessary to implement the development approach.",
-            "value": ""
+        "Team Performance Assessment Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Technical performance:** \n- **Scope:** Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.\n- **Quality:** Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.\n- **Schedule:** Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.\n- **Cost:** Rate the team’s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.\n- **Communication:** Rate the team’s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.\n- **Collaboration:** Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.\n- **Conflict management:** Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.\n- **Decision making:** Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.\n- **Interpersonal competency:** \n- **Team morale:** Describe the overall team morale.\n- **Areas for development:** \n- **Area:** List technical or interpersonal areas for development.\n- **Approach:** Describe the development approach, such as training, mentoring, or coaching.\n- **Actions:** List the actions necessary to implement the development approach.",
+            "value": [
+                {
+                    "Technical performance": "",
+                    "Scope": "",
+                    "Quality": "",
+                    "Schedule": "",
+                    "Cost": "",
+                    "Communication": "",
+                    "Collaboration": "",
+                    "Conflict management": "",
+                    "Decision making": "",
+                    "Interpersonal competency": "",
+                    "Team morale": "",
+                    "Areas for development": "",
+                    "Area": "",
+                    "Approach": "",
+                    "Actions": ""
+                }
+            ]
         }
     }
 }

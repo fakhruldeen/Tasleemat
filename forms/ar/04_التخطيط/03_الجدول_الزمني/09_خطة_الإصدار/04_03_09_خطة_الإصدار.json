@@ -16,6 +16,10 @@
             "guidance": "Story",
             "value": ""
         },
+        "Sprint 2</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "Sprint 1": {
             "guidance": "Release Goal: Describe the goal of the release in this space.",
             "value": ""

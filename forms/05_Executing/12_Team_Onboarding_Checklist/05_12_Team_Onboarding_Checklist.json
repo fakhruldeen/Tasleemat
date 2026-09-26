@@ -4,21 +4,16 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Task": {
-            "guidance": "Onboarding activity (e.g. System access granted).",
-            "value": ""
-        },
-        "Assigned To": {
-            "guidance": "Who is responsible.",
-            "value": ""
-        },
-        "Due Date": {
-            "guidance": "When it should be completed.",
-            "value": ""
-        },
-        "Status": {
-            "guidance": "Done/Pending.",
-            "value": ""
+        "Team Onboarding Checklist Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Task:** Onboarding activity (e.g. System access granted).\n- **Assigned To:** Who is responsible.\n- **Due Date:** When it should be completed.\n- **Status:** Done/Pending.",
+            "value": [
+                {
+                    "Task": "",
+                    "Assigned To": "",
+                    "Due Date": "",
+                    "Status": ""
+                }
+            ]
         }
     }
 }

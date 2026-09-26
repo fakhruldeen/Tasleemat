@@ -8,6 +8,10 @@
             "guidance": "Provide a summary level description of the project.",
             "value": ""
         },
+        "Performance summary</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "Quality": {
             "guidance": "Describe the quality objectives and criteria needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to meet the product and project quality objectives. Enter the verification and validation information from the product acceptance form.",
             "value": ""

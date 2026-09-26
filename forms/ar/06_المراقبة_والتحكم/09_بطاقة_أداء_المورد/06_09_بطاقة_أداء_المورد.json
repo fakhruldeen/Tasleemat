@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Metric/KPI": {
-            "guidance": "What is being measured (e.g., Quality, Timeliness).",
-            "value": ""
-        },
-        "Target Score": {
-            "guidance": "Expected performance level.",
-            "value": ""
-        },
-        "Actual Score": {
-            "guidance": "Measured performance.",
-            "value": ""
-        },
-        "Variance": {
-            "guidance": "Difference between target and actual.",
-            "value": ""
-        },
-        "Corrective Action": {
-            "guidance": "Steps to improve if deficient.",
-            "value": ""
+        "مدخلات بطاقة أداء المورد": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Metric/KPI:** What is being measured (e.g., Quality, Timeliness).\n- **Target Score:** Expected performance level.\n- **Actual Score:** Measured performance.\n- **Variance:** Difference between target and actual.\n- **Corrective Action:** Steps to improve if deficient.",
+            "value": [
+                {
+                    "Metric/KPI": "",
+                    "Target Score": "",
+                    "Actual Score": "",
+                    "Variance": "",
+                    "Corrective Action": ""
+                }
+            ]
         }
     }
 }

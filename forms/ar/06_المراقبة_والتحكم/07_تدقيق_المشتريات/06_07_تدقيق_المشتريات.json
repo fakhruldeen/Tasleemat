@@ -4,6 +4,10 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "What worked well</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "الجودة": {
             "guidance": "Describe aspects of product quality that were handled well.",
             "value": ""
@@ -22,6 +26,10 @@
         },
         "Plan": {
             "guidance": "procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.",
+            "value": ""
+        },
+        "What can be improved</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
             "value": ""
         },
         "Conduct": {

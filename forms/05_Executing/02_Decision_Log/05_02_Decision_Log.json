@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "Enter a unique decision identifier.",
-            "value": ""
-        },
-        "Category": {
-            "guidance": "Document the type of decision, such as technical, project, process, etc.",
-            "value": ""
-        },
-        "Decision": {
-            "guidance": "Provide a detailed description of the decision.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "Identify the person authorized to make the decision.",
-            "value": ""
-        },
-        "Priority": {
-            "guidance": "Enter the date the decision was made and authorized.",
-            "value": ""
-        },
-        "Comments": {
-            "guidance": "Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
-            "value": ""
+        "Decision Log Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **ID:** Enter a unique decision identifier.\n- **Category:** Document the type of decision, such as technical, project, process, etc.\n- **Decision:** Provide a detailed description of the decision.\n- **Responsible party:** Identify the person authorized to make the decision.\n- **Priority:** Enter the date the decision was made and authorized.\n- **Comments:** Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
+            "value": [
+                {
+                    "ID": "",
+                    "Category": "",
+                    "Decision": "",
+                    "Responsible party": "",
+                    "Priority": "",
+                    "Comments": ""
+                }
+            ]
         }
     }
 }

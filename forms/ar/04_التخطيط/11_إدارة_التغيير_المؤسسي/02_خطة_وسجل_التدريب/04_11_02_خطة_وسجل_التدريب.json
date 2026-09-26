@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Target Audience": {
-            "guidance": "Who needs training.",
-            "value": ""
-        },
-        "Training Module": {
-            "guidance": "What they are learning.",
-            "value": ""
-        },
-        "Delivery Method": {
-            "guidance": "In-person, webinar, self-paced.",
-            "value": ""
-        },
-        "Date/Schedule": {
-            "guidance": "When training occurs.",
-            "value": ""
-        },
-        "Completion Status": {
-            "guidance": "Number of users completed.",
-            "value": ""
+        "مدخلات خطة وسجل التدريب": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Target Audience:** Who needs training.\n- **Training Module:** What they are learning.\n- **Delivery Method:** In-person, webinar, self-paced.\n- **Date/Schedule:** When training occurs.\n- **Completion Status:** Number of users completed.",
+            "value": [
+                {
+                    "Target Audience": "",
+                    "Training Module": "",
+                    "Delivery Method": "",
+                    "Date/Schedule": "",
+                    "Completion Status": ""
+                }
+            ]
         }
     }
 }

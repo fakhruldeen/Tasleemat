@@ -4,33 +4,19 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "Unique identifier for the stakeholder (e.g., SH-01).",
-            "value": ""
-        },
-        "Name": {
-            "guidance": "Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.",
-            "value": ""
-        },
-        "Position/Role": {
-            "guidance": "The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.",
-            "value": ""
-        },
-        "Contact information": {
-            "guidance": "How to communicate with the stakeholder, such as their phone number, email address, or physical address.",
-            "value": ""
-        },
-        "Requirements": {
-            "guidance": "High-level needs for the project and/or product.",
-            "value": ""
-        },
-        "Expectations": {
-            "guidance": "Main expectations of the project and/or product.",
-            "value": ""
-        },
-        "Classification": {
-            "guidance": "Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.",
-            "value": ""
+        "Stakeholder Register Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **ID:** Unique identifier for the stakeholder (e.g., SH-01).\n- **Name:** Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.\n- **Position/Role:** The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.\n- **Contact information:** How to communicate with the stakeholder, such as their phone number, email address, or physical address.\n- **Requirements:** High-level needs for the project and/or product.\n- **Expectations:** Main expectations of the project and/or product.\n- **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.",
+            "value": [
+                {
+                    "ID": "",
+                    "Name": "",
+                    "Position/Role": "",
+                    "Contact information": "",
+                    "Requirements": "",
+                    "Expectations": "",
+                    "Classification": ""
+                }
+            ]
         }
     }
 }

@@ -4,6 +4,10 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "Project Performance</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "List any practices or incidents that": {
             "guidance": "were effective in defining and managing requirements. List any practices or incidents that can be improved in defining and managing requirements.",
             "value": ""
@@ -60,12 +64,20 @@
             "guidance": "List any other practices or incidents that were effective, such as change control, configuration management, etc. List any other practices or incidents that can be improved, such as change control, configuration management, etc.",
             "value": ""
         },
+        "Risks and issues</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "Response": {
             "guidance": "Describe the response and its effectiveness.",
             "value": ""
         },
         "التعليقات": {
             "guidance": "Provide any additional information needed to improve future project performance.",
+            "value": ""
+        },
+        "Defect description</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
             "value": ""
         },
         "الحل": {

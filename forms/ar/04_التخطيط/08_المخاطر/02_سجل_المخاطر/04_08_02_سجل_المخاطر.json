@@ -4,13 +4,14 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Risk ID": {
-            "guidance": "Enter a unique risk identifier.",
-            "value": ""
-        },
-        "Risk statement": {
-            "guidance": "Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to",
-            "value": ""
+        "مدخلات سجل المخاطر": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Risk ID:** Enter a unique risk identifier.\n- **Risk statement:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to",
+            "value": [
+                {
+                    "Risk ID": "",
+                    "Risk statement": ""
+                }
+            ]
         }
     }
 }

@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Data Maturity": {
-            "guidance": "Assessment of data quality, availability, and architecture.",
-            "value": ""
-        },
-        "Technical Infrastructure": {
-            "guidance": "Evaluation of compute, storage, and software capabilities.",
-            "value": ""
-        },
-        "Skills & Expertise": {
-            "guidance": "Availability of required AI and domain expertise.",
-            "value": ""
-        },
-        "Organizational Culture": {
-            "guidance": "Readiness for change and adoption of AI tools.",
-            "value": ""
-        },
-        "Overall Readiness Score": {
-            "guidance": "Summary score or recommendation.",
-            "value": ""
+        "Ai Readiness Assessment Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Data Maturity:** Assessment of data quality, availability, and architecture.\n- **Technical Infrastructure:** Evaluation of compute, storage, and software capabilities.\n- **Skills & Expertise:** Availability of required AI and domain expertise.\n- **Organizational Culture:** Readiness for change and adoption of AI tools.\n- **Overall Readiness Score:** Summary score or recommendation.",
+            "value": [
+                {
+                    "Data Maturity": "",
+                    "Technical Infrastructure": "",
+                    "Skills & Expertise": "",
+                    "Organizational Culture": "",
+                    "Overall Readiness Score": ""
+                }
+            ]
         }
     }
 }

@@ -16,6 +16,10 @@
             "guidance": "Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.",
             "value": ""
         },
+        "Deficiencies or defects</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "Defect": {
             "guidance": "Describe the deficiency or defect.",
             "value": ""

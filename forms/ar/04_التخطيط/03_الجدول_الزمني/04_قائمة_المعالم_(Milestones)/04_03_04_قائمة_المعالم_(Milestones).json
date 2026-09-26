@@ -4,17 +4,15 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Milestone name": {
-            "guidance": "Milestone name that uniquely defines the milestone",
-            "value": ""
-        },
-        "Milestone description": {
-            "guidance": "A description of the milestone in enough detail to understand what is needed to determine the milestone is complete",
-            "value": ""
-        },
-        "Type": {
-            "guidance": "A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional",
-            "value": ""
+        "مدخلات قائمة المعالم (Milestones)": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Milestone name:** Milestone name that uniquely defines the milestone\n- **Milestone description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete\n- **Type:** A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional",
+            "value": [
+                {
+                    "Milestone name": "",
+                    "Milestone description": "",
+                    "Type": ""
+                }
+            ]
         }
     }
 }

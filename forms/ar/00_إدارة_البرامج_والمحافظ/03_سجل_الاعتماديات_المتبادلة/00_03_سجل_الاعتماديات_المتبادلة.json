@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Dependency ID": {
-            "guidance": "Unique ID.",
-            "value": ""
-        },
-        "Predecessor Project": {
-            "guidance": "Project that must finish first.",
-            "value": ""
-        },
-        "Successor Project": {
-            "guidance": "Project waiting on the predecessor.",
-            "value": ""
-        },
-        "Deliverable/Condition": {
-            "guidance": "What specifically is being waited on.",
-            "value": ""
-        },
-        "Required Date": {
-            "guidance": "When the deliverable is needed.",
-            "value": ""
-        },
-        "الحالة": {
-            "guidance": "On track, Delayed, etc.",
-            "value": ""
+        "مدخلات سجل الاعتماديات المتبادلة": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Dependency ID:** Unique ID.\n- **Predecessor Project:** Project that must finish first.\n- **Successor Project:** Project waiting on the predecessor.\n- **Deliverable/Condition:** What specifically is being waited on.\n- **Required Date:** When the deliverable is needed.\n- **الحالة:** On track, Delayed, etc.",
+            "value": [
+                {
+                    "Dependency ID": "",
+                    "Predecessor Project": "",
+                    "Successor Project": "",
+                    "Deliverable/Condition": "",
+                    "Required Date": "",
+                    "الحالة": ""
+                }
+            ]
         }
     }
 }

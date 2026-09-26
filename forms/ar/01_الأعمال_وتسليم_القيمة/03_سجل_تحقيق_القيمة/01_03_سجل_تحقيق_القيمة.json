@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Benefit ID": {
-            "guidance": "Unique identifier for the benefit.",
-            "value": ""
-        },
-        "الوصف": {
-            "guidance": "الوصف of the benefit.",
-            "value": ""
-        },
-        "المالك": {
-            "guidance": "Person accountable for the benefit realization.",
-            "value": ""
-        },
-        "Target Value": {
-            "guidance": "The expected value.",
-            "value": ""
-        },
-        "Actual Value": {
-            "guidance": "The realized value.",
-            "value": ""
-        },
-        "الحالة": {
-            "guidance": "الحالة of the benefit realization.",
-            "value": ""
+        "مدخلات سجل تحقيق القيمة": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Benefit ID:** Unique identifier for the benefit.\n- **الوصف:** الوصف of the benefit.\n- **المالك:** Person accountable for the benefit realization.\n- **Target Value:** The expected value.\n- **Actual Value:** The realized value.\n- **الحالة:** الحالة of the benefit realization.",
+            "value": [
+                {
+                    "Benefit ID": "",
+                    "الوصف": "",
+                    "المالك": "",
+                    "Target Value": "",
+                    "Actual Value": "",
+                    "الحالة": ""
+                }
+            ]
         }
     }
 }

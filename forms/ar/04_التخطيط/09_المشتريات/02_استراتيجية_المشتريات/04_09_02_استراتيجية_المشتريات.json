@@ -4,6 +4,10 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "Delivery methods</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "Construction services": {
             "guidance": "Describe the limitations of delivery, such as design build, design bid build, etc.",
             "value": ""

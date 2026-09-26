@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Impediment ID": {
-            "guidance": "Unique ID.",
-            "value": ""
-        },
-        "Date Raised": {
-            "guidance": "When it was identified.",
-            "value": ""
-        },
-        "الوصف": {
-            "guidance": "What is blocking the team.",
-            "value": ""
-        },
-        "الأثر": {
-            "guidance": "",
-            "value": ""
-        },
-        "المالك": {
-            "guidance": "Scrum Master or person resolving it.",
-            "value": ""
-        },
-        "الحالة": {
-            "guidance": "Open, In Progress, Resolved.",
-            "value": ""
+        "مدخلات سجل العوائق": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Impediment ID:** Unique ID.\n- **Date Raised:** When it was identified.\n- **الوصف:** What is blocking the team.\n- **الأثر:** \n- **المالك:** Scrum Master or person resolving it.\n- **الحالة:** Open, In Progress, Resolved.",
+            "value": [
+                {
+                    "Impediment ID": "",
+                    "Date Raised": "",
+                    "الوصف": "",
+                    "الأثر": "",
+                    "المالك": "",
+                    "الحالة": ""
+                }
+            ]
         }
     }
 }

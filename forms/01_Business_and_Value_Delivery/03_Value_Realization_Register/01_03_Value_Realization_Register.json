@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Benefit ID": {
-            "guidance": "Unique identifier for the benefit.",
-            "value": ""
-        },
-        "Description": {
-            "guidance": "Description of the benefit.",
-            "value": ""
-        },
-        "Owner": {
-            "guidance": "Person accountable for the benefit realization.",
-            "value": ""
-        },
-        "Target Value": {
-            "guidance": "The expected value.",
-            "value": ""
-        },
-        "Actual Value": {
-            "guidance": "The realized value.",
-            "value": ""
-        },
-        "Status": {
-            "guidance": "Status of the benefit realization.",
-            "value": ""
+        "Value Realization Register Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Benefit ID:** Unique identifier for the benefit.\n- **Description:** Description of the benefit.\n- **Owner:** Person accountable for the benefit realization.\n- **Target Value:** The expected value.\n- **Actual Value:** The realized value.\n- **Status:** Status of the benefit realization.",
+            "value": [
+                {
+                    "Benefit ID": "",
+                    "Description": "",
+                    "Owner": "",
+                    "Target Value": "",
+                    "Actual Value": "",
+                    "Status": ""
+                }
+            ]
         }
     }
 }

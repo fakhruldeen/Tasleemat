@@ -4,45 +4,22 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "Enter a unique issue identifier.",
-            "value": ""
-        },
-        "Type": {
-            "guidance": "Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.",
-            "value": ""
-        },
-        "Issue description": {
-            "guidance": "Provide a detailed description of the issue.",
-            "value": ""
-        },
-        "الأولوية": {
-            "guidance": "",
-            "value": ""
-        },
-        "Impact on objectives": {
-            "guidance": "Identify the project objectives that the issue impacts and the degree of impact.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "Identify the person who is assigned to resolve the issue.",
-            "value": ""
-        },
-        "الحالة": {
-            "guidance": "Denote the status of the issue as open or closed.",
-            "value": ""
-        },
-        "Resolution date": {
-            "guidance": "Document the date by which the issue needs to be resolved.",
-            "value": ""
-        },
-        "Final resolution": {
-            "guidance": "Describe how the issue was resolved.",
-            "value": ""
-        },
-        "التعليقات": {
-            "guidance": "Document any clarifying comments about the issue, resolution, or other fields on the form.",
-            "value": ""
+        "مدخلات سجل المشكلات": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** Enter a unique issue identifier.\n- **Type:** Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.\n- **Issue description:** Provide a detailed description of the issue.\n- **الأولوية:** \n- **Impact on objectives:** Identify the project objectives that the issue impacts and the degree of impact.\n- **Responsible party:** Identify the person who is assigned to resolve the issue.\n- **الحالة:** Denote the status of the issue as open or closed.\n- **Resolution date:** Document the date by which the issue needs to be resolved.\n- **Final resolution:** Describe how the issue was resolved.\n- **التعليقات:** Document any clarifying comments about the issue, resolution, or other fields on the form.",
+            "value": [
+                {
+                    "ID": "",
+                    "Type": "",
+                    "Issue description": "",
+                    "الأولوية": "",
+                    "Impact on objectives": "",
+                    "Responsible party": "",
+                    "الحالة": "",
+                    "Resolution date": "",
+                    "Final resolution": "",
+                    "التعليقات": ""
+                }
+            ]
         }
     }
 }

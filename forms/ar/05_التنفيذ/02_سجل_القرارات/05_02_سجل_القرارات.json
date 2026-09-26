@@ -4,29 +4,18 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "Enter a unique decision identifier.",
-            "value": ""
-        },
-        "Category": {
-            "guidance": "Document the type of decision, such as technical, project, process, etc.",
-            "value": ""
-        },
-        "Decision": {
-            "guidance": "Provide a detailed description of the decision.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "Identify the person authorized to make the decision.",
-            "value": ""
-        },
-        "الأولوية": {
-            "guidance": "",
-            "value": ""
-        },
-        "التعليقات": {
-            "guidance": "Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
-            "value": ""
+        "مدخلات سجل القرارات": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** Enter a unique decision identifier.\n- **Category:** Document the type of decision, such as technical, project, process, etc.\n- **Decision:** Provide a detailed description of the decision.\n- **Responsible party:** Identify the person authorized to make the decision.\n- **الأولوية:** \n- **التعليقات:** Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
+            "value": [
+                {
+                    "ID": "",
+                    "Category": "",
+                    "Decision": "",
+                    "Responsible party": "",
+                    "الأولوية": "",
+                    "التعليقات": ""
+                }
+            ]
         }
     }
 }

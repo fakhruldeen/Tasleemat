@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Prompt ID": {
-            "guidance": "Unique identifier.",
-            "value": ""
-        },
-        "Use Case": {
-            "guidance": "What the prompt is used for.",
-            "value": ""
-        },
-        "Prompt Text": {
-            "guidance": "The actual text or structure of the prompt.",
-            "value": ""
-        },
-        "Expected Output": {
-            "guidance": "What a successful response looks like.",
-            "value": ""
-        },
-        "Status/Version": {
-            "guidance": "Current version or status of the prompt.",
-            "value": ""
+        "Prompt Library Log Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **Prompt ID:** Unique identifier.\n- **Use Case:** What the prompt is used for.\n- **Prompt Text:** The actual text or structure of the prompt.\n- **Expected Output:** What a successful response looks like.\n- **Status/Version:** Current version or status of the prompt.",
+            "value": [
+                {
+                    "Prompt ID": "",
+                    "Use Case": "",
+                    "Prompt Text": "",
+                    "Expected Output": "",
+                    "Status/Version": ""
+                }
+            ]
         }
     }
 }

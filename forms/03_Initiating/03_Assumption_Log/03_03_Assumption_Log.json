@@ -4,45 +4,22 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "Unique identifier for the assumption or constraint.",
-            "value": ""
-        },
-        "Type": {
-            "guidance": "Specify whether this entry is an \"Assumption\" or a \"Constraint\".",
-            "value": ""
-        },
-        "Category": {
-            "guidance": "The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).",
-            "value": ""
-        },
-        "Description": {
-            "guidance": "A clear, detailed description of the assumption or constraint.",
-            "value": ""
-        },
-        "Impact if invalid": {
-            "guidance": "The potential risk or impact to the project (e.g., cost, schedule, scope) if the assumption proves false or the constraint is breached.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "The person who is tasked with following up on the assumption to validate if it is true or not.",
-            "value": ""
-        },
-        "Due date": {
-            "guidance": "The date by which the assumption needs to be validated.",
-            "value": ""
-        },
-        "Actions": {
-            "guidance": "Specific actions that need to be taken to validate the assumption or monitor the constraint.",
-            "value": ""
-        },
-        "Status": {
-            "guidance": "The current status of the assumption (e.g., active, transferred, or closed).",
-            "value": ""
-        },
-        "Comments": {
-            "guidance": "Any additional information, context, or updates.",
-            "value": ""
+        "Assumption Log Entries": {
+            "guidance": "Please provide a comprehensive log of all assumptions and constraints for the project. For each entry, ensure you populate the following columns in the table below:\n- **ID:** Unique identifier for the assumption or constraint.\n- **Type:** Specify whether this entry is an \"Assumption\" or a \"Constraint\".\n- **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).\n- **Description:** A clear, detailed description of the assumption or constraint.\n- **Impact if invalid:** The potential risk or impact to the project (e.g., cost, schedule, scope) if the assumption proves false or the constraint is breached.\n- **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not.\n- **Due date:** The date by which the assumption needs to be validated.\n- **Actions:** Specific actions that need to be taken to validate the assumption or monitor the constraint.\n- **Status:** The current status of the assumption (e.g., active, transferred, or closed).\n- **Comments:** Any additional information, context, or updates.",
+            "value": [
+                {
+                    "ID": "",
+                    "Type": "",
+                    "Category": "",
+                    "Description": "",
+                    "Impact if invalid": "",
+                    "Responsible party": "",
+                    "Due date": "",
+                    "Actions": "",
+                    "Status": "",
+                    "Comments": ""
+                }
+            ]
         }
     }
 }

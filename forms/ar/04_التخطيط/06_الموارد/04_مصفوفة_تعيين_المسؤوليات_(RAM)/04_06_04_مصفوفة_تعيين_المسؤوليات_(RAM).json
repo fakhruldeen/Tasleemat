@@ -4,13 +4,14 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Work package": {
-            "guidance": "Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.",
-            "value": ""
-        },
-        "Resource": {
-            "guidance": "Identify the person, division, or organization that will be working on the project.",
-            "value": ""
+        "مدخلات مصفوفة تعيين المسؤوليات (Ram)": {
+            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Work package:** Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.\n- **Resource:** Identify the person, division, or organization that will be working on the project.",
+            "value": [
+                {
+                    "Work package": "",
+                    "Resource": ""
+                }
+            ]
         }
     }
 }

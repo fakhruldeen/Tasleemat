@@ -4,25 +4,17 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID": {
-            "guidance": "Unique identifier linking back to the Stakeholder Register (e.g., SH-01).",
-            "value": ""
-        },
-        "Name or Role": {
-            "guidance": "The name or role of the stakeholder being analyzed.",
-            "value": ""
-        },
-        "Interest": {
-            "guidance": "The level of interest the stakeholder has in the project outcomes (e.g., High, Medium, Low).",
-            "value": ""
-        },
-        "Influence": {
-            "guidance": "The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).",
-            "value": ""
-        },
-        "Attitude": {
-            "guidance": "The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).",
-            "value": ""
+        "Stakeholder Analysis Entries": {
+            "guidance": "Please populate the table below with the following details:\n- **ID:** Unique identifier linking back to the Stakeholder Register (e.g., SH-01).\n- **Name or Role:** The name or role of the stakeholder being analyzed.\n- **Interest:** The level of interest the stakeholder has in the project outcomes (e.g., High, Medium, Low).\n- **Influence:** The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).\n- **Attitude:** The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).",
+            "value": [
+                {
+                    "ID": "",
+                    "Name or Role": "",
+                    "Interest": "",
+                    "Influence": "",
+                    "Attitude": ""
+                }
+            ]
         }
     }
 }

@@ -34,11 +34,48 @@
         },
         "Project objectives and related success criteria": {
             "guidance": "Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success.",
-            "value": ""
+            "value": [
+                {
+                    "Item": "**Scope**",
+                    "Project objectives": "",
+                    "Success criteria": ""
+                },
+                {
+                    "Item": "**Time**",
+                    "Project objectives": "",
+                    "Success criteria": ""
+                },
+                {
+                    "Item": "**Cost**",
+                    "Project objectives": "",
+                    "Success criteria": ""
+                },
+                {
+                    "Item": "**Other**",
+                    "Project objectives": "",
+                    "Success criteria": ""
+                }
+            ]
         },
         "Summary milestone schedule": {
             "guidance": "Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance.",
-            "value": ""
+            "value": [
+                {
+                    "#": "1",
+                    "Summary milestones": "",
+                    "Due Date": ""
+                },
+                {
+                    "#": "2",
+                    "Summary milestones": "",
+                    "Due Date": ""
+                },
+                {
+                    "#": "3",
+                    "Summary milestones": "",
+                    "Due Date": ""
+                }
+            ]
         },
         "Preapproved financial resources": {
             "guidance": "The amount of funding available for the project. May include sources of funding and annual funding limits.",
@@ -46,7 +83,12 @@
         },
         "Key stakeholder list": {
             "guidance": "An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success.",
-            "value": ""
+            "value": [
+                {
+                    "Stakeholder(s)": "",
+                    "Role(s)": ""
+                }
+            ]
         },
         "Project exit criteria": {
             "guidance": "The performance, metrics, conditions, or other measurements that must be met to conclude the project.",
@@ -56,20 +98,8 @@
             "guidance": "Defines what constitutes project success, who determines whether the project is successful, and who signs off on the project.",
             "value": ""
         },
-        "Project manager authority - Staffing Decisions": {
-            "guidance": "The authority of the project manager to hire, fire, discipline, accept, or not accept project staff.",
-            "value": ""
-        },
-        "Project manager authority - Budget management and Variance": {
-            "guidance": "The authority of the project manager to commit, manage, and control project funds, and the variance level that requires escalation.",
-            "value": ""
-        },
-        "Project manager authority - Technical Decisions": {
-            "guidance": "The authority of the project manager to make technical decisions about deliverables or the project approach.",
-            "value": ""
-        },
-        "Project manager authority - Conflict resolution": {
-            "guidance": "The degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders.",
+        "Project manager authority level": {
+            "guidance": "The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution.",
             "value": ""
         },
         "Sponsor authority": {

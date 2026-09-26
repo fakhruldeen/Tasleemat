@@ -4,6 +4,10 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "ID</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
+            "guidance": "",
+            "value": ""
+        },
         "Description of work": {
             "guidance": "If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",
             "value": ""
