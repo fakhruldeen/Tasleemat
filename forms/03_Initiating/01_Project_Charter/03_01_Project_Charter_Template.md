@@ -113,11 +113,30 @@
 
 ### Signatures
 
-| Project Manager: | Project Sponsor / Originator: |
-| :--- | :--- |
-| **Name:** {{Project_Manager_Name}} | **Name:** {{Project_Sponsor_Name}} |
-| **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** _________________ | **Date:** _________________ |  
+<table width="100%">
+  <tr>
+    <th colspan="2" align="left">Project Manager:</th>
+    <th colspan="2" align="left">Project Sponsor / Originator:</th>
+  </tr>
+  <tr>
+    <td width="15%"><strong>Name:</strong></td>
+    <td width="35%">{{Project_Manager_Name}}</td>
+    <td width="15%"><strong>Name:</strong></td>
+    <td width="35%">{{Project_Sponsor_Name}}</td>
+  </tr>
+  <tr>
+    <td><strong>Signature:</strong></td>
+    <td>_____________________</td>
+    <td><strong>Signature:</strong></td>
+    <td>_____________________</td>
+  </tr>
+  <tr>
+    <td><strong>Date:</strong></td>
+    <td>_________________</td>
+    <td><strong>Date:</strong></td>
+    <td>_________________</td>
+  </tr>
+</table>  
 
 ---
 
