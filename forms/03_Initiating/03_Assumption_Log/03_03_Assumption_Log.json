@@ -4,8 +4,36 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Assumption Log Entries": {
-            "guidance": "Please provide a comprehensive log of all assumptions and constraints for the project. For each entry, ensure you populate the following columns in the table below: - **ID:** Unique identifier for the assumption or constraint. - **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule). - **Assumption/constraint:** A clear, detailed description of the assumption or constraint. - **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not. - **Due date:** The date by which the assumption needs to be validated. - **Actions:** Specific actions that need to be taken to validate the assumption. - **Status:** The current status of the assumption (e.g., active, transferred, or closed). - **Comments:** Any additional information, context, or updates regarding the assumption or constraint.",
+        "ID": {
+            "guidance": "Unique identifier for the assumption or constraint.",
+            "value": ""
+        },
+        "Category": {
+            "guidance": "The category of the assumption or constraint (e.g., Technical, Financial, Schedule).",
+            "value": ""
+        },
+        "Assumption/constraint": {
+            "guidance": "A clear, detailed description of the assumption or constraint.",
+            "value": ""
+        },
+        "Responsible party": {
+            "guidance": "The person who is tasked with following up on the assumption to validate if it is true or not.",
+            "value": ""
+        },
+        "Due date": {
+            "guidance": "The date by which the assumption needs to be validated.",
+            "value": ""
+        },
+        "Actions": {
+            "guidance": "Specific actions that need to be taken to validate the assumption.",
+            "value": ""
+        },
+        "Status": {
+            "guidance": "The current status of the assumption (e.g., active, transferred, or closed).",
+            "value": ""
+        },
+        "Comments": {
+            "guidance": "Any additional information, context, or updates regarding the assumption or constraint.",
             "value": ""
         }
     }

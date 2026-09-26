@@ -37,9 +37,16 @@ This artifact is primarily prepared, utilized, and updated during the **INITIATI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **ASSUMPTION LOG**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **Assumption Log**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-*   **Assumption Log Entries:** Please provide a comprehensive log of all assumptions and constraints for the project. For each entry, ensure you populate the following columns in the table below: - **ID:** Unique identifier for the assumption or constraint. - **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule). - **Assumption/constraint:** A clear, detailed description of the assumption or constraint. - **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not. - **Due date:** The date by which the assumption needs to be validated. - **Actions:** Specific actions that need to be taken to validate the assumption. - **Status:** The current status of the assumption (e.g., active, transferred, or closed). - **Comments:** Any additional information, context, or updates regarding the assumption or constraint.
+*   **ID:** Unique identifier for the assumption or constraint.
+*   **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule).
+*   **Assumption/constraint:** A clear, detailed description of the assumption or constraint.
+*   **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not.
+*   **Due date:** The date by which the assumption needs to be validated.
+*   **Actions:** Specific actions that need to be taken to validate the assumption.
+*   **Status:** The current status of the assumption (e.g., active, transferred, or closed).
+*   **Comments:** Any additional information, context, or updates regarding the assumption or constraint.
 
 ---
 
