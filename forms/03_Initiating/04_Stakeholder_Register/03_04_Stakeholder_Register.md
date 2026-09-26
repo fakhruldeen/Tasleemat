@@ -9,10 +9,13 @@ Form: Stakeholder Register (Instructions)
 > This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> The stakeholder register is used to identify those people and organizations impacted by the project and to document relevant information about each stakeholder. Relevant information can include: Name, Position, Role, Contact information, Requirements, Expectations, and Classification. Initially you will not have enough information to complete the stakeholder register. As the project gets underway you will gain additional information and understanding and the stakeholder register will become more robust. The stakeholder register is a dynamic project document. The stakeholders, their level of influence, requirements, and classification are likely to change throughout the project.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The stakeholder register should be aligned and consistent with the following documents:
+• Project charter
+• Stakeholder analysis matrix
+• Stakeholder engagement plan
 
 ---
 

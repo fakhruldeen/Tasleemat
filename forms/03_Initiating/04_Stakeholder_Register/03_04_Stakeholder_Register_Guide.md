@@ -37,10 +37,15 @@ This artifact is primarily prepared, utilized, and updated during the **INITIATI
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• Combine the position in the organization with the role on the project, especially if it is a smaller project and everyone knows everyone else’s position.
+• Combine the stakeholder analysis matrix information with the stakeholder register.
+• Eliminate position, role, and contact information for small internal projects.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The stakeholder register should be aligned and consistent with the following documents:
+• Project charter
+• Stakeholder analysis matrix
+• Stakeholder engagement plan
 
 ### 5. How?
 To accurately complete this form, populate the following sections:
