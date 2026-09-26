@@ -4,7 +4,6 @@ layout: default
 title: Business Case
 nav_order: 1
 ---
-[🌐 **النسخة الإنجليزية (English Version): Business Case**](../../../01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Guide.md)
 
 
 <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">

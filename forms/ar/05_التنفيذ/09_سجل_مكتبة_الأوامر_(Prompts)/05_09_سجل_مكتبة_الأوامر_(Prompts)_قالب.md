@@ -1,6 +1,3 @@
-
-[🌐 **النسخة الإنجليزية (English Version): Prompt Library Log**](../../../05_Executing/09_Prompt_Library_Log/05_09_Prompt_Library_Log_Template.md)
-
 <div dir="rtl" style="font-family: Arial, sans-serif;">
 <!-- تعليمات للنموذج الذكي (LLM): قم بملء المساحات الفارغة [ ... ] بناءً على سياق المشروع -->
 

@@ -4,7 +4,6 @@ layout: default
 title: Milestone List
 nav_order: 1
 ---
-[🌐 **النسخة الإنجليزية (English Version): Milestone List**](../../../../04_Planning/03_Schedule/04_Milestone_List/04_03_04_Milestone_List_Guide.md)
 
 
 <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">

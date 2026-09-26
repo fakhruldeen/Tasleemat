@@ -4,7 +4,6 @@ layout: default
 title: Prompt Library Log
 nav_order: 1
 ---
-[🌐 **النسخة الإنجليزية (English Version): Prompt Library Log**](../../../05_Executing/09_Prompt_Library_Log/05_09_Prompt_Library_Log_Guide.md)
 
 
 <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">

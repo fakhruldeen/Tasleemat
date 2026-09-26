@@ -1,6 +1,3 @@
-
-[🌐 **النسخة الإنجليزية (English Version): Retrospective**](../../../05_Executing/08_Retrospective/05_08_Retrospective_Template.md)
-
 <div dir="rtl" style="font-family: Arial, sans-serif;">
 <!-- تعليمات للنموذج الذكي (LLM): قم بملء المساحات الفارغة [ ... ] بناءً على سياق المشروع -->
 

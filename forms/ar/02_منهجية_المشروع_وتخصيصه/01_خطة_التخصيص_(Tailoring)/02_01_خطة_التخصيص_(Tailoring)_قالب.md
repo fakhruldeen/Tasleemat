@@ -1,6 +1,3 @@
-
-[🌐 **النسخة الإنجليزية (English Version): Tailoring Plan**](../../../02_Project_Approach_and_Tailoring/01_Tailoring_Plan/02_01_Tailoring_Plan_Template.md)
-
 <div dir="rtl" style="font-family: Arial, sans-serif;">
 <!-- تعليمات للنموذج الذكي (LLM): قم بملء المساحات الفارغة [ ... ] بناءً على سياق المشروع -->
 

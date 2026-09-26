@@ -4,7 +4,6 @@ layout: default
 title: Tailoring Plan
 nav_order: 1
 ---
-[🌐 **النسخة الإنجليزية (English Version): Tailoring Plan**](../../../02_Project_Approach_and_Tailoring/01_Tailoring_Plan/02_01_Tailoring_Plan_Guide.md)
 
 
 <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">

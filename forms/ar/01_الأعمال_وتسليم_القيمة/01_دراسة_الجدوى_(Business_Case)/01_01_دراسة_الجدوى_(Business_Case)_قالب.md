@@ -1,6 +1,3 @@
-
-[🌐 **النسخة الإنجليزية (English Version): Business Case**](../../../01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Template.md)
-
 <div dir="rtl" style="font-family: Arial, sans-serif;">
 <!-- تعليمات للنموذج الذكي (LLM): قم بملء المساحات الفارغة [ ... ] بناءً على سياق المشروع -->
 

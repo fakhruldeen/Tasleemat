@@ -4,7 +4,6 @@ layout: default
 title: Retrospective
 nav_order: 1
 ---
-[🌐 **النسخة الإنجليزية (English Version): Retrospective**](../../../05_Executing/08_Retrospective/05_08_Retrospective_Guide.md)
 
 
 <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">

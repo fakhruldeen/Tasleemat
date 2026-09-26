@@ -1,6 +1,3 @@
-
-[🌐 **النسخة الإنجليزية (English Version): Product Backlog**](../../../../04_Planning/02_Scope/08_Product_Backlog/04_02_08_Product_Backlog_Template.md)
-
 <div dir="rtl" style="font-family: Arial, sans-serif;">
 <!-- تعليمات للنموذج الذكي (LLM): قم بملء المساحات الفارغة [ ... ] بناءً على سياق المشروع -->
 

@@ -4,7 +4,6 @@ layout: default
 title: Product Backlog
 nav_order: 1
 ---
-[🌐 **النسخة الإنجليزية (English Version): Product Backlog**](../../../../04_Planning/02_Scope/08_Product_Backlog/04_02_08_Product_Backlog_Guide.md)
 
 
 <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">
