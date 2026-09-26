@@ -113,11 +113,11 @@
 
 ### Signatures
 
-| Project Manager: | | Project Sponsor / Originator: | |
-| :--- | :--- | :--- | :--- |
-| **Name:** | {{Project_Manager_Name}} | **Name:** | {{Project_Sponsor_Name}} |
-| **Signature:** | _____________________ | **Signature:** | _____________________ |
-| **Date:** | _________________ | **Date:** | _________________ |  
+| Project Manager: | Project Sponsor / Originator: |
+| :--- | :--- |
+| **Name:** {{Project_Manager_Name}} | **Name:** {{Project_Sponsor_Name}} |
+| **Signature:** _____________________ | **Signature:** _____________________ |
+| **Date:** _________________ | **Date:** _________________ |  
 
 ---
 
