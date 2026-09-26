@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this طلب تغيير template based on the provided project context.",
     "form_name": "طلب تغيير",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Requestor & Date": {
             "guidance": "Name of the person requesting the change and the date.",

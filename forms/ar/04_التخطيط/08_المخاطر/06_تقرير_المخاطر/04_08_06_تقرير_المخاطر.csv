@@ -1,13 +1,13 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Executive Summary","A statement describing the overall project risk exposure and major individual risks.",""
-"Overall Project Risk - Status and Trends","Provide a description of the overall risk of the project.",""
-"Overall Project Risk - Significant Drivers","Identify the significant drivers of overall risk.",""
-"Overall Project Risk - Recommended Responses","Recommendations for overall risk.",""
-"Individual Project Risks - Metrics","Number of scope, schedule, cost, and quality risks. High/Medium/Low distribution.",""
-"Individual Project Risks - Top Risks","The most critical risks and their planned responses.",""
-"Individual Project Risks - Changes","Changes to critical risks since the last report.",""
-"Quantitative Analysis Summary - Probabilities","Probability of meeting scope, schedule, cost, quality objectives.",""
-"Quantitative Analysis Summary - Range of Outcomes","Range of schedule and cost outcomes.",""
-"Quantitative Analysis Summary - Key Drivers & Responses","Drivers of variance and proposed responses.",""
-"Reserve Status","Total Cost/Schedule Reserve, Used to Date, Used This Period, Remaining Reserve.",""
-"Risk Audit Summary","Summary of Risk Events, Risk Management Processes, and Recommendations.",""
+الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
+Executive Summary,A statement describing the overall project risk exposure and major individual risks.,
+Overall Project Risk - Status and Trends,Provide a description of the overall risk of the project.,
+Overall Project Risk - Significant Drivers,Identify the significant drivers of overall risk.,
+Overall Project Risk - Recommended Responses,Recommendations for overall risk.,
+Individual Project Risks - Metrics,"Number of scope, schedule, cost, and quality risks. High/Medium/Low distribution.",
+Individual Project Risks - Top Risks,The most critical risks and their planned responses.,
+Individual Project Risks - Changes,Changes to critical risks since the last report.,
+Quantitative Analysis Summary - Probabilities,"Probability of meeting scope, schedule, cost, quality objectives.",
+Quantitative Analysis Summary - Range of Outcomes,Range of schedule and cost outcomes.,
+Quantitative Analysis Summary - Key Drivers & Responses,Drivers of variance and proposed responses.,
+Reserve Status,"Total Cost/Schedule Reserve, Used to Date, Used This Period, Remaining Reserve.",
+Risk Audit Summary,"Summary of Risk Events, Risk Management Processes, and Recommendations.",

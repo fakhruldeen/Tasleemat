@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Quality Management Plan (Instructions)
+Form: QUALITY MANAGEMENT PLAN (Instructions)
 ---
 
 # QUALITY MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Quality Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `QUALITY MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Resource Management Plan (Instructions)
+Form: RESOURCE MANAGEMENT PLAN (Instructions)
 ---
 
 # RESOURCE MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Resource Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RESOURCE MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -27,16 +27,6 @@ Form: Resource Management Plan (Instructions)
 
 ### Project organizational chart
 **Instruction:** Create a hierarchy chart to show the project reporting and organizational structure.
-
----
-
-### Roles and responsibilities
-**Instruction:** 
-
----
-
-### Provide information on the following
-**Instruction:** Role. Identify the role or job title and a brief description of the role. Authority. Define the decision-making, approval, and influence levels for each role. Examples include alternative selection, conflict management, prioritizing, rewarding and penalizing, etc. Responsibility. Define the activities that each role carries out, such as job duties, processes involved, and the hand-offs to other roles. Qualifications. Describe any prerequisites, experience, licenses, seniority levels, or other qualifications necessary to fulfill the role. Competencies. Describe specific role or job skills and capacities required to complete the work. May include details on languages, technology, or other information necessary to complete the roles successfully.
 
 ---
 

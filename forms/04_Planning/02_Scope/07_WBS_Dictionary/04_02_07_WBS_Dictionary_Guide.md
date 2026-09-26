@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **WBS Dictionary**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **WBS DICTIONARY**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Work package name:** Enter a brief description of the work package deliverable from the WBS.
 *   **Code of account:** Enter the code of account from the WBS.
@@ -58,7 +58,6 @@ To accurately and professionally complete the **WBS Dictionary**, the responsibl
 *   **Technical information:** Describe or reference any technical requirements or documentation needed to complete the work package.
 *   **Agreement information:** Reference any contracts or other agreements that impact the work package.
 *   **resource:** hours
-*   **total**
 
 ---
 

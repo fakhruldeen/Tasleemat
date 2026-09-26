@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Team Charter**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **TEAM CHARTER**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Team values and principles:** List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.
 *   **Meeting guidelines:** Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc.

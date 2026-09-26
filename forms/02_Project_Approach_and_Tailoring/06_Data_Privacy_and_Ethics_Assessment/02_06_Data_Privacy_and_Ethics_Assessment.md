@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Data Privacy and Ethics Assessment (Instructions)
+Form: DATA PRIVACY AND ETHICS ASSESSMENT (Instructions)
 ---
 
 # DATA PRIVACY AND ETHICS ASSESSMENT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Data Privacy and Ethics Assessment`. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `DATA PRIVACY AND ETHICS ASSESSMENT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

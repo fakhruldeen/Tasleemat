@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this بيان نطاق المشروع template based on the provided project context.",
     "form_name": "بيان نطاق المشروع",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Project scope description": {
             "guidance": "Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation.",

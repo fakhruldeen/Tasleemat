@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Change Management Plan (Instructions)
+Form: CHANGE MANAGEMENT PLAN (Instructions)
 ---
 
 # CHANGE MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Change Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `CHANGE MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -17,36 +17,6 @@ Form: Change Management Plan (Instructions)
 
 ### Definitions of change
 **Instruction:** Schedule Change: Define a schedule change versus a schedule revision. Indicate when a schedule variance needs to go through the change control process to be re-baselined. Budget Change: Define a budget change versus a budget update. Indicate when a budget variance needs to go through the change control process to be re-baselined. Scope Change: Define a scope change versus progressive elaboration. Indicate when a scope variance needs to go through the change control process to be re-baselined. Project Document Change: Define when updates to project management documents or other project documents need to go through the change control process to be re-baselined.
-
----
-
-### Change control board
-**Instruction:** 
-
----
-
-### Name
-**Instruction:** 
-
----
-
-### Individual’s name
-**Instruction:** 
-
----
-
-### Role
-**Instruction:** 
-
----
-
-### Position on the change control board
-**Instruction:** 
-
----
-
-### Responsibility
-**Instruction:** Responsibilities and activities required of the role
 
 ---
 
@@ -72,9 +42,4 @@ Form: Change Management Plan (Instructions)
 
 ### Change request outcome
 **Instruction:** Describe the possible outcomes, such as accept, defer, or reject.
-
----
-
-### Change control process
-**Instruction:** 
 

@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Resource Breakdown Structure template based on the provided project context.",
-    "form_name": "Resource Breakdown Structure",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RESOURCE BREAKDOWN STRUCTURE template based on the provided project context.",
+    "form_name": "RESOURCE BREAKDOWN STRUCTURE",
     "project_title": "",
     "date_prepared": "",
     "fields": {

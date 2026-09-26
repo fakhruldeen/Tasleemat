@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **MONITORI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Team Member Status Report**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **TEAM MEMBER STATUS REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Root cause of variances:** For any work that was not accomplished as scheduled, identify the cause of the variance.
 *   **Funds spent this reporting period:** Record funds spent this period. Funds planned to be spent this reporting period Record funds that were planned to be spent this period.

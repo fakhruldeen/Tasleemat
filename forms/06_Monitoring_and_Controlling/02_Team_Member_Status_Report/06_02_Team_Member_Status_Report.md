@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Team Member Status Report (Instructions)
+Form: TEAM MEMBER STATUS REPORT (Instructions)
 ---
 
 # TEAM MEMBER STATUS REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Team Member Status Report`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `TEAM MEMBER STATUS REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

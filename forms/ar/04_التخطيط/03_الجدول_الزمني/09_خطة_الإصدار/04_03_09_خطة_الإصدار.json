@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this خطة الإصدار template based on the provided project context.",
     "form_name": "خطة الإصدار",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Release dates": {
             "guidance": "Either a timeline or a milestone indicator of when releases start and finish. This can be more detailed to show a linear schedule that indicates the duration of each release.",
@@ -12,14 +14,6 @@
         },
         "User": {
             "guidance": "Story",
-            "value": ""
-        },
-        "Sprint 2": {
-            "guidance": "",
-            "value": ""
-        },
-        "Sprint 3": {
-            "guidance": "This diagram assumes that different shades notes indicate different categories of user stories.",
             "value": ""
         },
         "Sprint 1": {

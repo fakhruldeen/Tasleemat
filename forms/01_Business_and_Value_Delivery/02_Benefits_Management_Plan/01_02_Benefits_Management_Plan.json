@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Benefits Management Plan template based on the provided project context.",
-    "form_name": "Benefits Management Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this BENEFITS MANAGEMENT PLAN template based on the provided project context.",
+    "form_name": "BENEFITS MANAGEMENT PLAN",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Target Benefits": {
             "guidance": "Expected tangible and intangible value to be gained.",

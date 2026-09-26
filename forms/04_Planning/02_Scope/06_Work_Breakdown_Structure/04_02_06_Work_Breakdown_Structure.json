@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Work Breakdown Structure template based on the provided project context.",
-    "form_name": "Work Breakdown Structure",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this WORK BREAKDOWN STRUCTURE template based on the provided project context.",
+    "form_name": "WORK BREAKDOWN STRUCTURE",
     "project_title": "",
     "date_prepared": "",
     "fields": {

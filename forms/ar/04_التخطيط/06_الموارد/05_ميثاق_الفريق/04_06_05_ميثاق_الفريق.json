@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this ميثاق الفريق template based on the provided project context.",
     "form_name": "ميثاق الفريق",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Team values and principles": {
             "guidance": "List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.",

@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Work Breakdown Structure (Instructions)
+Form: WORK BREAKDOWN STRUCTURE (Instructions)
 ---
 
 # WORK BREAKDOWN STRUCTURE - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Work Breakdown Structure`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `WORK BREAKDOWN STRUCTURE`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

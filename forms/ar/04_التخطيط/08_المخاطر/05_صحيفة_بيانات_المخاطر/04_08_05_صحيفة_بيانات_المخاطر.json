@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this صحيفة بيانات المخاطر template based on the provided project context.",
     "form_name": "صحيفة بيانات المخاطر",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Risk ID": {
             "guidance": "Enter a unique risk identifier.",
@@ -80,22 +82,6 @@
         },
         "التعليقات": {
             "guidance": "Provide any comments or additional helpful information about the risk event or condition.",
-            "value": ""
-        },
-        "النطاق": {
-            "guidance": "",
-            "value": ""
-        },
-        "revised": {
-            "guidance": "Probability",
-            "value": ""
-        },
-        "الجدول الزمني": {
-            "guidance": "",
-            "value": ""
-        },
-        "quality": {
-            "guidance": "",
             "value": ""
         }
     }

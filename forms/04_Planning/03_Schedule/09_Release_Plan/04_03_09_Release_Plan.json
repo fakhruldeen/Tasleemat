@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Release Plan template based on the provided project context.",
-    "form_name": "Release Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RELEASE PLAN template based on the provided project context.",
+    "form_name": "RELEASE PLAN",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -14,14 +14,6 @@
         },
         "User": {
             "guidance": "Story",
-            "value": ""
-        },
-        "Sprint 2": {
-            "guidance": "",
-            "value": ""
-        },
-        "Sprint 3": {
-            "guidance": "This diagram assumes that different shades notes indicate different categories of user stories.",
             "value": ""
         },
         "Sprint 1": {

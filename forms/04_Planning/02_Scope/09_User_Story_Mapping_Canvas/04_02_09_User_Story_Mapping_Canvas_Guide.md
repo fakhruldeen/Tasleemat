@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **User Story Mapping Canvas**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **USER STORY MAPPING CANVAS**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **User Persona:** Who the user is.
 *   **User Activities (The Backbone):** High-level tasks the user needs to accomplish.

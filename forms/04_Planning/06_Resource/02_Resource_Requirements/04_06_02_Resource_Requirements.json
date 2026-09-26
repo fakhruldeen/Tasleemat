@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Resource Requirements template based on the provided project context.",
-    "form_name": "Resource Requirements",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RESOURCE REQUIREMENTS template based on the provided project context.",
+    "form_name": "RESOURCE REQUIREMENTS",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -18,14 +18,6 @@
         },
         "Project organizational chart": {
             "guidance": "Create a hierarchy chart to show the project reporting and organizational structure.",
-            "value": ""
-        },
-        "Roles and responsibilities": {
-            "guidance": "",
-            "value": ""
-        },
-        "Provide information on the following": {
-            "guidance": "Role. Identify the role or job title and a brief description of the role. Authority. Define the decision-making, approval, and influence levels for each role. Examples include alternative selection, conflict management, prioritizing, rewarding and penalizing, etc. Responsibility. Define the activities that each role carries out, such as job duties, processes involved, and the hand-offs to other roles. Qualifications. Describe any prerequisites, experience, licenses, seniority levels, or other qualifications necessary to fulfill the role. Competencies. Describe specific role or job skills and capacities required to complete the work. May include details on languages, technology, or other information necessary to complete the roles successfully.",
             "value": ""
         },
         "Training requirements": {

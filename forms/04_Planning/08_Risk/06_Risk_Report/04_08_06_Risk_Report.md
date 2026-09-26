@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Risk Report (Instructions)
+Form: RISK REPORT (Instructions)
 ---
 
 # RISK REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Risk Report`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RISK REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

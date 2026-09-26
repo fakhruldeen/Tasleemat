@@ -1,22 +1,12 @@
 ---
 lang: en
-Form: Procurement Audit (Instructions)
+Form: PROCUREMENT AUDIT (Instructions)
 ---
 
 # PROCUREMENT AUDIT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Procurement Audit`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
-
----
-
-### What worked well
-**Instruction:** 
-
----
-
-### Scope
-**Instruction:** Describe aspects of contract scope that were handled well.
+> This document serves as the detailed instruction set for generating the `PROCUREMENT AUDIT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -42,16 +32,6 @@ Form: Procurement Audit (Instructions)
 
 ### Plan
 **Instruction:** procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.
-
----
-
-### What can be improved
-**Instruction:** 
-
----
-
-### Procurement management
-**Instruction:** process audit
 
 ---
 

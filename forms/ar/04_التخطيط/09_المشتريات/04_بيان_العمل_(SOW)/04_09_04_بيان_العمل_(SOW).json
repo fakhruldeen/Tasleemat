@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this بيان العمل (SOW) template based on the provided project context.",
     "form_name": "بيان العمل (SOW)",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Scope of Work": {
             "guidance": "Detailed description of vendor work.",

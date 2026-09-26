@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Program Charter (Instructions)
+Form: PROGRAM CHARTER (Instructions)
 ---
 
 # PROGRAM CHARTER - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Program Charter`. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `PROGRAM CHARTER`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

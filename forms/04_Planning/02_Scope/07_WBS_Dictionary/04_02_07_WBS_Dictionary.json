@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this WBS Dictionary template based on the provided project context.",
-    "form_name": "WBS Dictionary",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this WBS DICTIONARY template based on the provided project context.",
+    "form_name": "WBS DICTIONARY",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -21,7 +21,7 @@
             "value": ""
         },
         "ID": {
-            "guidance": "Enter a unique activity identifier\u2014usually an extension of the WBS code of accounts.",
+            "guidance": "Enter a unique activity identifier—usually an extension of the WBS code of accounts.",
             "value": ""
         },
         "Activity": {
@@ -78,10 +78,6 @@
         },
         "resource": {
             "guidance": "hours",
-            "value": ""
-        },
-        "total": {
-            "guidance": "",
             "value": ""
         }
     }

@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Communications Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **COMMUNICATIONS MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Stakeholder communication:** requirements The people or the groups of people who need to receive project information and their specific requirements
 *   **Information:** Describe the information to be communicated, including language, format, content, and level of detail.
@@ -46,9 +46,6 @@ To accurately and professionally complete the **Communications Management Plan**
 *   **Sender:** Insert the name of the person or the group that will provide the information.
 *   **Communication constraints or:** assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution.
 *   **Glossary of common terminology:** List any terms or acronyms unique to the project or that are used in a unique way.
-*   **assumptions**
-*   **Stakeholder**
-*   **glossary of terms or acronyms**
 
 ---
 

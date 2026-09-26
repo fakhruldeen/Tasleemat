@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
-    "form_name": "User Story Mapping Canvas",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this USER STORY MAPPING CANVAS template based on the provided project context.",
+    "form_name": "USER STORY MAPPING CANVAS",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "User Persona": {
             "guidance": "Who the user is.",

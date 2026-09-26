@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Communications Management Plan (Instructions)
+Form: COMMUNICATIONS MANAGEMENT PLAN (Instructions)
 ---
 
 # COMMUNICATIONS MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Communications Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `COMMUNICATIONS MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -42,19 +42,4 @@ Form: Communications Management Plan (Instructions)
 
 ### Glossary of common terminology
 **Instruction:** List any terms or acronyms unique to the project or that are used in a unique way.
-
----
-
-### assumptions
-**Instruction:** 
-
----
-
-### Stakeholder
-**Instruction:** 
-
----
-
-### glossary of terms or acronyms
-**Instruction:** 
 

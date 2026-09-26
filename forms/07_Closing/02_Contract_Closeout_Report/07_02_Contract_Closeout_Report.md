@@ -1,22 +1,12 @@
 ---
 lang: en
-Form: Contract Closeout Report (Instructions)
+Form: CONTRACT CLOSEOUT REPORT (Instructions)
 ---
 
 # CONTRACT CLOSEOUT REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Contract Closeout Report`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
-
----
-
-### What worked well
-**Instruction:** 
-
----
-
-### Scope
-**Instruction:** Describe aspects of contract scope that were handled well.
+> This document serves as the detailed instruction set for generating the `CONTRACT CLOSEOUT REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -62,19 +52,4 @@ Form: Contract Closeout Report (Instructions)
 
 ### Date resolved
 **Instruction:** Enter the date the dispute or claim was resolved.
-
----
-
-### What can be improved
-**Instruction:** 
-
----
-
-### Record of contract changes
-**Instruction:** 
-
----
-
-### Record of contract disputes
-**Instruction:** 
 

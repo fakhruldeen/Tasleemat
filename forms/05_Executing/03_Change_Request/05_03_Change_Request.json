@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Change Request template based on the provided project context.",
-    "form_name": "Change Request",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this CHANGE REQUEST template based on the provided project context.",
+    "form_name": "CHANGE REQUEST",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -18,14 +18,6 @@
         },
         "Justification for proposed change": {
             "guidance": "Indicate the reason for the change.",
-            "value": ""
-        },
-        "Impacts of change": {
-            "guidance": "",
-            "value": ""
-        },
-        "Scope": {
-            "guidance": "Describe the impact of the proposed change on the project and product scope.",
             "value": ""
         },
         "Quality": {

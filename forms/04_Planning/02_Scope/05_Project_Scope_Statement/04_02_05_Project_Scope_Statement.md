@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Project Scope Statement (Instructions)
+Form: PROJECT SCOPE STATEMENT (Instructions)
 ---
 
 # PROJECT SCOPE STATEMENT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Project Scope Statement`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `PROJECT SCOPE STATEMENT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

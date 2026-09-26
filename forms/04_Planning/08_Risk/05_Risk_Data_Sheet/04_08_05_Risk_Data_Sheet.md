@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Risk Data Sheet (Instructions)
+Form: RISK DATA SHEET (Instructions)
 ---
 
 # RISK DATA SHEET - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Risk Data Sheet`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RISK DATA SHEET`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -107,24 +107,4 @@ Form: Risk Data Sheet (Instructions)
 
 ### Comments
 **Instruction:** Provide any comments or additional helpful information about the risk event or condition.
-
----
-
-### Scope
-**Instruction:** 
-
----
-
-### revised
-**Instruction:** Probability
-
----
-
-### Schedule
-**Instruction:** 
-
----
-
-### quality
-**Instruction:** 
 

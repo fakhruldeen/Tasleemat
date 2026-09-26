@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this AI Use Case Canvas template based on the provided project context.",
-    "form_name": "AI Use Case Canvas",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this AI USE CASE CANVAS template based on the provided project context.",
+    "form_name": "AI USE CASE CANVAS",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Problem Statement": {
             "guidance": "The specific problem the AI will solve.",

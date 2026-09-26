@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Definition of Ready and Done (Instructions)
+Form: DEFINITION OF READY AND DONE (Instructions)
 ---
 
 # DEFINITION OF READY AND DONE - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Definition of Ready and Done`. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `DEFINITION OF READY AND DONE`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

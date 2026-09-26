@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Data Privacy and Ethics Assessment**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **DATA PRIVACY AND ETHICS ASSESSMENT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Data Source:** Where the data originates.
 *   **PII Detection:** Does it contain Personally Identifiable Information?

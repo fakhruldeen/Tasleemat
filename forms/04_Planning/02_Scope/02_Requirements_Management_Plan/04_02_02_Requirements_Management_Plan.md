@@ -1,22 +1,12 @@
 ---
 lang: en
-Form: Requirements Management Plan (Instructions)
+Form: REQUIREMENTS MANAGEMENT PLAN (Instructions)
 ---
 
 # REQUIREMENTS MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Requirements Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
-
----
-
-### Procurement integration
-**Instruction:** 
-
----
-
-### Scope
-**Instruction:** Define how the contractor's WBS will integrate with the project WBS.
+> This document serves as the detailed instruction set for generating the `REQUIREMENTS MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

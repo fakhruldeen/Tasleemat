@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
-    "form_name": "Risk Mitigation Action Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RISK MITIGATION ACTION PLAN template based on the provided project context.",
+    "form_name": "RISK MITIGATION ACTION PLAN",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Risk ID and Title": {
             "guidance": "Reference to the Risk Register.",

@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **BUSINESS
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Business Case**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **BUSINESS CASE**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Business Need:** Identify the problem or opportunity.
 *   **Analysis of Situation:** Describe the current state, future state, and root causes.

@@ -1,32 +1,12 @@
 ---
 lang: en
-Form: Lessons Learned Summary (Instructions)
+Form: LESSONS LEARNED SUMMARY (Instructions)
 ---
 
 # LESSONS LEARNED SUMMARY - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Lessons Learned Summary`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
-
----
-
-### Project Performance
-**Instruction:** 
-
----
-
-### What Worked Well
-**Instruction:** 
-
----
-
-### What Can Be Improved
-**Instruction:** 
-
----
-
-### Requirements definition
-**Instruction:** and management
+> This document serves as the detailed instruction set for generating the `LESSONS LEARNED SUMMARY`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -100,16 +80,6 @@ Form: Lessons Learned Summary (Instructions)
 
 ---
 
-### Risks and issues
-**Instruction:** 
-
----
-
-### Risk or issue description
-**Instruction:** Identify risks or issues that occurred that should be considered to improve organizational learning.
-
----
-
 ### Response
 **Instruction:** Describe the response and its effectiveness.
 
@@ -117,16 +87,6 @@ Form: Lessons Learned Summary (Instructions)
 
 ### Comments
 **Instruction:** Provide any additional information needed to improve future project performance.
-
----
-
-### Defect description
-**Instruction:** 
-
----
-
-### Describe quality defects that should be
-**Instruction:** considered to improve organizational effectiveness.
 
 ---
 
@@ -157,14 +117,4 @@ Form: Lessons Learned Summary (Instructions)
 
 ### Areas for improvement
 **Instruction:** Identify areas that can be improved on for future performance.
-
----
-
-### Quality defects
-**Instruction:** 
-
----
-
-### Vendor management
-**Instruction:** 
 

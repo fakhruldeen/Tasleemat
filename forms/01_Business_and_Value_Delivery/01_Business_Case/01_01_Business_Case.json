@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Business Case template based on the provided project context.",
-    "form_name": "Business Case",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this BUSINESS CASE template based on the provided project context.",
+    "form_name": "BUSINESS CASE",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Business Need": {
             "guidance": "Identify the problem or opportunity.",

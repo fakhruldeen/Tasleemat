@@ -37,14 +37,12 @@ This artifact is primarily prepared, utilized, and updated during the **EXECUTIN
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Change Request**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **CHANGE REQUEST**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Requestor:** The name, and if appropriate, the position of the person requesting the change
 *   **Category:** Check a box to indicate the category of change.
 *   **Description of change:** Describe the proposed change in enough detail to clearly communicate all aspects of the change.
 *   **Justification for proposed change:** Indicate the reason for the change.
-*   **Impacts of change**
-*   **Scope:** Describe the impact of the proposed change on the project and product scope.
 *   **Quality:** Describe the impact of the proposed change on the project or product quality.
 *   **Requirements:** Describe the impact of the proposed change on the project or product requirements.
 *   **Cost:** Describe the impact of the proposed change on the project budget, cost estimates, or funding requirements.

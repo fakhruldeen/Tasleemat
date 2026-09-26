@@ -37,10 +37,8 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Requirements Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **REQUIREMENTS MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-*   **Procurement integration**
-*   **Scope:** Define how the contractor's WBS will integrate with the project WBS.
 *   **Schedule:** Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.
 *   **Documentation:** Describe how contractor documentation will integrate with project documentation.
 *   **Risk:** Describe how risk identification, analysis, and response will integrate with risk management for the overall project.

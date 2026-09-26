@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Risk Audit (Instructions)
+Form: RISK AUDIT (Instructions)
 ---
 
 # RISK AUDIT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Risk Audit`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RISK AUDIT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

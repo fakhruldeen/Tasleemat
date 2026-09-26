@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **MONITORI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Project Status Report**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **PROJECT STATUS REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Accomplishments for this reporting:** period List all work packages or other accomplishments scheduled for completion for the current reporting period.
 *   **Accomplishments planned but not:** completed this reporting period List all work packages or other accomplishments scheduled for the current period but not completed.

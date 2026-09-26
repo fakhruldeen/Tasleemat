@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Risk Data Sheet**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **RISK DATA SHEET**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Risk ID:** Enter a unique risk identifier.
 *   **Risk description:** Provide a detailed description of the risk.
@@ -59,10 +59,6 @@ To accurately and professionally complete the **Risk Data Sheet**, the responsib
 *   **Contingency time:** Determine the time needed to protect the schedule from overrun.
 *   **Fallback plans:** Devise a plan to use if other response strategies fail.
 *   **Comments:** Provide any comments or additional helpful information about the risk event or condition.
-*   **Scope**
-*   **revised:** Probability
-*   **Schedule**
-*   **quality**
 
 ---
 

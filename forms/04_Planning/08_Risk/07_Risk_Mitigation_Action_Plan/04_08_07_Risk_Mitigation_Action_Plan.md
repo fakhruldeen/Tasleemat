@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Risk Mitigation Action Plan (Instructions)
+Form: RISK MITIGATION ACTION PLAN (Instructions)
 ---
 
 # RISK MITIGATION ACTION PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Risk Mitigation Action Plan`. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RISK MITIGATION ACTION PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

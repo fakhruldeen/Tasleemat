@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **EXECUTIN
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Meeting Minutes**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **MEETING MINUTES**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Meeting Objective:** Purpose of the meeting.
 *   **Attendees:** Who was present.

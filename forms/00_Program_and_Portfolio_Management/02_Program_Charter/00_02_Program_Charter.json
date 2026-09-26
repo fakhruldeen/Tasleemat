@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
-    "form_name": "Program Charter",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this PROGRAM CHARTER template based on the provided project context.",
+    "form_name": "PROGRAM CHARTER",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Program Purpose": {
             "guidance": "High-level justification for the program.",

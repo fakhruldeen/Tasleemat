@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this خطة إدارة الاتصالات template based on the provided project context.",
     "form_name": "خطة إدارة الاتصالات",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Stakeholder communication": {
             "guidance": "requirements The people or the groups of people who need to receive project information and their specific requirements",
@@ -28,18 +30,6 @@
         },
         "Glossary of common terminology": {
             "guidance": "List any terms or acronyms unique to the project or that are used in a unique way.",
-            "value": ""
-        },
-        "assumptions": {
-            "guidance": "",
-            "value": ""
-        },
-        "Stakeholder": {
-            "guidance": "",
-            "value": ""
-        },
-        "glossary of terms or acronyms": {
-            "guidance": "",
             "value": ""
         }
     }

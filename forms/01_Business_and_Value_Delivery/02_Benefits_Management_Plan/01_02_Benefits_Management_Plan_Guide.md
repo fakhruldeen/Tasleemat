@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **BUSINESS
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Benefits Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **BENEFITS MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Target Benefits:** Expected tangible and intangible value to be gained.
 *   **Strategic Alignment:** How the benefits align with the organization's strategic goals.

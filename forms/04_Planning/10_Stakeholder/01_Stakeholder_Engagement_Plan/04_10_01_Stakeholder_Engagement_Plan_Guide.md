@@ -37,16 +37,11 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Stakeholder Engagement Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **STAKEHOLDER ENGAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Stakeholder changes:** Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.
 *   **Interrelationships:** List any relationships between and among stakeholder groups.
 *   **Stakeholder engagement approach:** Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.
-*   **unaware**
-*   **Stakeholder relationships**
-*   **Pending Stakeholder changes**
-*   **C = Current level of engagement**
-*   **Stakeholder**
 
 ---
 

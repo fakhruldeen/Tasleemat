@@ -1,27 +1,17 @@
 ---
 lang: en
-Form: Project or Phase Closeout (Instructions)
+Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 ---
 
 # PROJECT OR PHASE CLOSEOUT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Project or Phase Closeout`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `PROJECT OR PHASE CLOSEOUT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
 ### Project description
 **Instruction:** Provide a summary level description of the project.
-
----
-
-### Performance summary
-**Instruction:** 
-
----
-
-### Scope
-**Instruction:** Describe the scope objectives needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to complete the scope objectives. Provide evidence that the completion criteria were met.
 
 ---
 

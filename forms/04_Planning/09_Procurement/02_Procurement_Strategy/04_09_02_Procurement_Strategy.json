@@ -1,23 +1,15 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Procurement Strategy template based on the provided project context.",
-    "form_name": "Procurement Strategy",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this PROCUREMENT STRATEGY template based on the provided project context.",
+    "form_name": "PROCUREMENT STRATEGY",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Delivery methods": {
-            "guidance": "",
-            "value": ""
-        },
-        "Professional services": {
-            "guidance": "Describe how the contractor will work with the buyer; for example, in a joint venture, as a representative, with or without subcontracting allowed.",
-            "value": ""
-        },
         "Construction services": {
             "guidance": "Describe the limitations of delivery, such as design build, design bid build, etc.",
             "value": ""
         },
         "Contract types": {
-            "guidance": "Describe the contract type, fixed, incentive, or award fees. Include the criteria associated with the fees. Common contract types include: Fixed Price: FFP \u2013 Firm Fixed Price FPIF \u2013 Fixed Price with Incentive Fee FP-EPA \u2013 Fixed Price with Economic Price Adjustment Cost Reimbursable: CPFF \u2013 Cost Plus Fixed Fee CPIF \u2013 Cost Plus Incentive Fee CPAF \u2013 Cost Plus Award Fee Time and Materials (T&M)",
+            "guidance": "Describe the contract type, fixed, incentive, or award fees. Include the criteria associated with the fees. Common contract types include: Fixed Price: FFP – Firm Fixed Price FPIF – Fixed Price with Incentive Fee FP-EPA – Fixed Price with Economic Price Adjustment Cost Reimbursable: CPFF – Cost Plus Fixed Fee CPIF – Cost Plus Incentive Fee CPAF – Cost Plus Award Fee Time and Materials (T&M)",
             "value": ""
         },
         "Procurement phases": {

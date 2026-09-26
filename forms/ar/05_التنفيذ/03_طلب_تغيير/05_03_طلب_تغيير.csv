@@ -1,12 +1,12 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Requestor & Date","Name of the person requesting the change and the date.",""
-"Category of Change","Scope, Quality, Requirements, Cost, Schedule, or Documents.",""
-"Detailed Description of Proposed Change","Clear explanation of what needs to be changed.",""
-"Justification for Proposed Change","Reasoning and business value for the change.",""
-"Impacts of Change - Scope","How the change affects project scope.",""
-"Impacts of Change - Quality","How the change affects quality standards.",""
-"Impacts of Change - Schedule","How the change affects the timeline.",""
-"Impacts of Change - Cost","How the change affects the budget.",""
-"Impacts of Change - Stakeholder/Documents","Impact on stakeholders and which documents need updates.",""
-"التعليقات","Additional clarifying information.",""
-"Disposition","Approve, Defer, Reject, and Justification (Filled by CCB).",""
+الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
+Requestor & Date,Name of the person requesting the change and the date.,
+Category of Change,"Scope, Quality, Requirements, Cost, Schedule, or Documents.",
+Detailed Description of Proposed Change,Clear explanation of what needs to be changed.,
+Justification for Proposed Change,Reasoning and business value for the change.,
+Impacts of Change - Scope,How the change affects project scope.,
+Impacts of Change - Quality,How the change affects quality standards.,
+Impacts of Change - Schedule,How the change affects the timeline.,
+Impacts of Change - Cost,How the change affects the budget.,
+Impacts of Change - Stakeholder/Documents,Impact on stakeholders and which documents need updates.,
+التعليقات,Additional clarifying information.,
+Disposition,"Approve, Defer, Reject, and Justification (Filled by CCB).",

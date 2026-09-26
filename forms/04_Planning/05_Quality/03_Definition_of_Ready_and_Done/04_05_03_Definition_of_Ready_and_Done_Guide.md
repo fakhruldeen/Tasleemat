@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Definition of Ready and Done**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **DEFINITION OF READY AND DONE**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Definition of Ready (DoR):** Criteria a story must meet before entering a sprint (e.g., clear acceptance criteria, estimated).
 *   **Definition of Done (DoD):** Criteria a story must meet to be considered complete (e.g., coded, tested, documented, approved).

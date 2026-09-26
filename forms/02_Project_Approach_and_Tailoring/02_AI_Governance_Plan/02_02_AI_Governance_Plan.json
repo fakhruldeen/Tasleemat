@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this AI Governance Plan template based on the provided project context.",
-    "form_name": "AI Governance Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this AI GOVERNANCE PLAN template based on the provided project context.",
+    "form_name": "AI GOVERNANCE PLAN",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Ethical Guidelines": {
             "guidance": "Principles guiding the ethical use of AI on this project.",

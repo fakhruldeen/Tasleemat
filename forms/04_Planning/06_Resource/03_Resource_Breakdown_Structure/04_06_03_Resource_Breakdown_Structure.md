@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Resource Breakdown Structure (Instructions)
+Form: RESOURCE BREAKDOWN STRUCTURE (Instructions)
 ---
 
 # RESOURCE BREAKDOWN STRUCTURE - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Resource Breakdown Structure`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RESOURCE BREAKDOWN STRUCTURE`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

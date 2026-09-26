@@ -1,11 +1,9 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Area audited","Check the box for the area or areas audited.",""
-"Good practices from similar projects","Describe any good or best practices that can be shared from similar projects.",""
-"Areas for improvement","Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.",""
-"Deficiencies or defects","",""
-"ID","Enter a unique defect identifier.",""
-"Defect","Describe the deficiency or defect.",""
-"Action","Describe the corrective actions needed to fix the defect.",""
-"Responsible party","Identify the person assigned to correct the deficiency or defect.",""
-"Due date","Document the due date.",""
-"التعليقات","Provide any additional useful comments about the audit.",""
+الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
+Area audited,Check the box for the area or areas audited.,
+Good practices from similar projects,Describe any good or best practices that can be shared from similar projects.,
+Areas for improvement,Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.,
+Defect,Describe the deficiency or defect.,
+Action,Describe the corrective actions needed to fix the defect.,
+Responsible party,Identify the person assigned to correct the deficiency or defect.,
+Due date,Document the due date.,
+التعليقات,Provide any additional useful comments about the audit.,

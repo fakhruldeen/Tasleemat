@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this خطة إشراك المعنيين template based on the provided project context.",
     "form_name": "خطة إشراك المعنيين",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Stakeholder changes": {
             "guidance": "Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.",
@@ -12,26 +14,6 @@
         },
         "Stakeholder engagement approach": {
             "guidance": "Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.",
-            "value": ""
-        },
-        "unaware": {
-            "guidance": "",
-            "value": ""
-        },
-        "Stakeholder relationships": {
-            "guidance": "",
-            "value": ""
-        },
-        "Pending Stakeholder changes": {
-            "guidance": "",
-            "value": ""
-        },
-        "C = Current level of engagement": {
-            "guidance": "",
-            "value": ""
-        },
-        "Stakeholder": {
-            "guidance": "",
             "value": ""
         }
     }

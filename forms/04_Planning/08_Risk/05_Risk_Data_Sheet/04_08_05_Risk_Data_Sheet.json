@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Risk Data Sheet template based on the provided project context.",
-    "form_name": "Risk Data Sheet",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RISK DATA SHEET template based on the provided project context.",
+    "form_name": "RISK DATA SHEET",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -82,22 +82,6 @@
         },
         "Comments": {
             "guidance": "Provide any comments or additional helpful information about the risk event or condition.",
-            "value": ""
-        },
-        "Scope": {
-            "guidance": "",
-            "value": ""
-        },
-        "revised": {
-            "guidance": "Probability",
-            "value": ""
-        },
-        "Schedule": {
-            "guidance": "",
-            "value": ""
-        },
-        "quality": {
-            "guidance": "",
             "value": ""
         }
     }

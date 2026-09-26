@@ -1,5 +1,5 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Process/Artifact","The standard process or artifact being considered.",""
-"Tailoring Decision","Added, removed, or modified?",""
-"Justification","Reasoning for the tailoring decision.",""
-"Approver","Person who approved the change.",""
+الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
+Process/Artifact,The standard process or artifact being considered.,
+Tailoring Decision,"Added, removed, or modified?",
+Justification,Reasoning for the tailoring decision.,
+Approver,Person who approved the change.,

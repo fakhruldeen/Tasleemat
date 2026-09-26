@@ -1,17 +1,9 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Procurement Audit template based on the provided project context.",
-    "form_name": "Procurement Audit",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this PROCUREMENT AUDIT template based on the provided project context.",
+    "form_name": "PROCUREMENT AUDIT",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "What worked well": {
-            "guidance": "",
-            "value": ""
-        },
-        "Scope": {
-            "guidance": "Describe aspects of contract scope that were handled well.",
-            "value": ""
-        },
         "Quality": {
             "guidance": "Describe aspects of product quality that were handled well.",
             "value": ""
@@ -30,14 +22,6 @@
         },
         "Plan": {
             "guidance": "procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.",
-            "value": ""
-        },
-        "What can be improved": {
-            "guidance": "",
-            "value": ""
-        },
-        "Procurement management": {
-            "guidance": "process audit",
             "value": ""
         },
         "Conduct": {

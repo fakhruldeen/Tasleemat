@@ -1,19 +1,11 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Project or Phase Closeout template based on the provided project context.",
-    "form_name": "Project or Phase Closeout",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this PROJECT OR PHASE CLOSEOUT template based on the provided project context.",
+    "form_name": "PROJECT OR PHASE CLOSEOUT",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Project description": {
             "guidance": "Provide a summary level description of the project.",
-            "value": ""
-        },
-        "Performance summary": {
-            "guidance": "",
-            "value": ""
-        },
-        "Scope": {
-            "guidance": "Describe the scope objectives needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to complete the scope objectives. Provide evidence that the completion criteria were met.",
             "value": ""
         },
         "Quality": {

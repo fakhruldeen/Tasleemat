@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **AI Governance Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **AI GOVERNANCE PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Ethical Guidelines:** Principles guiding the ethical use of AI on this project.
 *   **Data Privacy & Security:** Protocols for protecting sensitive data used by AI models.

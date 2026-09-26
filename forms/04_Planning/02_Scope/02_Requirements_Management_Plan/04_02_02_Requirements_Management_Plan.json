@@ -1,17 +1,9 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Requirements Management Plan template based on the provided project context.",
-    "form_name": "Requirements Management Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this REQUIREMENTS MANAGEMENT PLAN template based on the provided project context.",
+    "form_name": "REQUIREMENTS MANAGEMENT PLAN",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Procurement integration": {
-            "guidance": "",
-            "value": ""
-        },
-        "Scope": {
-            "guidance": "Define how the contractor's WBS will integrate with the project WBS.",
-            "value": ""
-        },
         "Schedule": {
             "guidance": "Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.",
             "value": ""

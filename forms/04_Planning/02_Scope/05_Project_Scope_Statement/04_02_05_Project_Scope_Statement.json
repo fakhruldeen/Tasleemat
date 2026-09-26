@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Project Scope Statement template based on the provided project context.",
-    "form_name": "Project Scope Statement",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this PROJECT SCOPE STATEMENT template based on the provided project context.",
+    "form_name": "PROJECT SCOPE STATEMENT",
     "project_title": "",
     "date_prepared": "",
     "fields": {

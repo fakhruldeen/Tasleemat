@@ -37,12 +37,8 @@ This artifact is primarily prepared, utilized, and updated during the **CLOSING 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Lessons Learned Summary**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **LESSONS LEARNED SUMMARY**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-*   **Project Performance**
-*   **What Worked Well**
-*   **What Can Be Improved**
-*   **Requirements definition:** and management
 *   **List any practices or incidents that:** were effective in defining and managing requirements. List any practices or incidents that can be improved in defining and managing requirements.
 *   **Scope definition and:** management List any practices or incidents that were effective in defining and managing scope. List any practices or incidents that can be improved in defining and managing scope.
 *   **Schedule development:** and control List any practices or incidents that were effective in developing and controlling the schedule. List any practices or incidents that can be improved in developing and controlling the schedule.
@@ -57,20 +53,14 @@ To accurately and professionally complete the **Lessons Learned Summary**, the r
 *   **List any processes that were developed:** that should be continued. List any processes that should be changed or discontinued.
 *   **Product-specific:** information List any practices or incidents that were effective in delivering the specific product, service, or result. List any practices or incidents that can be improved in delivering the specific product, service, or result.
 *   **Other:** List any other practices or incidents that were effective, such as change control, configuration management, etc. List any other practices or incidents that can be improved, such as change control, configuration management, etc.
-*   **Risks and issues**
-*   **Risk or issue description:** Identify risks or issues that occurred that should be considered to improve organizational learning.
 *   **Response:** Describe the response and its effectiveness.
 *   **Comments:** Provide any additional information needed to improve future project performance.
-*   **Defect description**
-*   **Describe quality defects that should be:** considered to improve organizational effectiveness.
 *   **Resolution:** Describe how the defects were resolved.
 *   **Indicate what should be done to improve:** future project performance.
 *   **Vendor:** List the vendor(s).
 *   **Issue:** Describe any issues, claims, or disputes that occurred.
 *   **Areas of exceptional performance:** Identify areas of exceptional performance that can be passed on to other teams.
 *   **Areas for improvement:** Identify areas that can be improved on for future performance.
-*   **Quality defects**
-*   **Vendor management**
 
 ---
 

@@ -1,22 +1,12 @@
 ---
 lang: en
-Form: Procurement Strategy (Instructions)
+Form: PROCUREMENT STRATEGY (Instructions)
 ---
 
 # PROCUREMENT STRATEGY - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Procurement Strategy`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
-
----
-
-### Delivery methods
-**Instruction:** 
-
----
-
-### Professional services
-**Instruction:** Describe how the contractor will work with the buyer; for example, in a joint venture, as a representative, with or without subcontracting allowed.
+> This document serves as the detailed instruction set for generating the `PROCUREMENT STRATEGY`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

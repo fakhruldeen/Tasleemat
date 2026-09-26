@@ -37,10 +37,8 @@ This artifact is primarily prepared, utilized, and updated during the **CLOSING 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Contract Closeout Report**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **CONTRACT CLOSEOUT REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-*   **What worked well**
-*   **Scope:** Describe aspects of contract scope that were handled well.
 *   **Quality:** Describe aspects of product quality that were handled well.
 *   **Schedule:** Describe aspects of the contract schedule that were handled well.
 *   **Cost:** Describe aspects of the contract budget that were handled well.
@@ -50,9 +48,6 @@ To accurately and professionally complete the **Contract Closeout Report**, the 
 *   **Date:** approved Enter the date approved from the change log. Describe the dispute or claim.
 *   **Resolution:** Describe the resolution.
 *   **Date resolved:** Enter the date the dispute or claim was resolved.
-*   **What can be improved**
-*   **Record of contract changes**
-*   **Record of contract disputes**
 
 ---
 

@@ -1,7 +1,7 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Model Details","Architecture, version, developer.",""
-"Intended Use","Primary and secondary use cases.",""
-"Factors","Demographics or environmental factors affecting performance.",""
-"Metrics","Accuracy, precision, recall, etc.",""
-"Training Data","Datasets used to train the model.",""
-"Ethical Considerations","Potential risks or biases.",""
+الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
+Model Details,"Architecture, version, developer.",
+Intended Use,Primary and secondary use cases.,
+Factors,Demographics or environmental factors affecting performance.,
+Metrics,"Accuracy, precision, recall, etc.",
+Training Data,Datasets used to train the model.,
+Ethical Considerations,Potential risks or biases.,

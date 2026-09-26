@@ -1,15 +1,9 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this تدقيق المشتريات template based on the provided project context.",
     "form_name": "تدقيق المشتريات",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
-        "What worked well": {
-            "guidance": "",
-            "value": ""
-        },
-        "النطاق": {
-            "guidance": "Describe aspects of contract scope that were handled well.",
-            "value": ""
-        },
         "الجودة": {
             "guidance": "Describe aspects of product quality that were handled well.",
             "value": ""
@@ -28,14 +22,6 @@
         },
         "Plan": {
             "guidance": "procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.",
-            "value": ""
-        },
-        "What can be improved": {
-            "guidance": "",
-            "value": ""
-        },
-        "Procurement management": {
-            "guidance": "process audit",
             "value": ""
         },
         "Conduct": {

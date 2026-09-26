@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Team Charter template based on the provided project context.",
-    "form_name": "Team Charter",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this TEAM CHARTER template based on the provided project context.",
+    "form_name": "TEAM CHARTER",
     "project_title": "",
     "date_prepared": "",
     "fields": {

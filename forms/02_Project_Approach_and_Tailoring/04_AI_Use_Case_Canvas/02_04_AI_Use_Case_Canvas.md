@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: AI Use Case Canvas (Instructions)
+Form: AI USE CASE CANVAS (Instructions)
 ---
 
 # AI USE CASE CANVAS - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `AI Use Case Canvas`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `AI USE CASE CANVAS`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

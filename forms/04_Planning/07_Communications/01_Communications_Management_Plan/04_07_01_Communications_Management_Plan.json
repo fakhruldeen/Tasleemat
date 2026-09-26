@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Communications Management Plan template based on the provided project context.",
-    "form_name": "Communications Management Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this COMMUNICATIONS MANAGEMENT PLAN template based on the provided project context.",
+    "form_name": "COMMUNICATIONS MANAGEMENT PLAN",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -30,18 +30,6 @@
         },
         "Glossary of common terminology": {
             "guidance": "List any terms or acronyms unique to the project or that are used in a unique way.",
-            "value": ""
-        },
-        "assumptions": {
-            "guidance": "",
-            "value": ""
-        },
-        "Stakeholder": {
-            "guidance": "",
-            "value": ""
-        },
-        "glossary of terms or acronyms": {
-            "guidance": "",
             "value": ""
         }
     }

@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Change Request (Instructions)
+Form: CHANGE REQUEST (Instructions)
 ---
 
 # CHANGE REQUEST - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Change Request`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `CHANGE REQUEST`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -27,16 +27,6 @@ Form: Change Request (Instructions)
 
 ### Justification for proposed change
 **Instruction:** Indicate the reason for the change.
-
----
-
-### Impacts of change
-**Instruction:** 
-
----
-
-### Scope
-**Instruction:** Describe the impact of the proposed change on the project and product scope.
 
 ---
 

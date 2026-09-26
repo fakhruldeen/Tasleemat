@@ -37,17 +37,13 @@ This artifact is primarily prepared, utilized, and updated during the **MONITORI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Procurement Audit**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **PROCUREMENT AUDIT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-*   **What worked well**
-*   **Scope:** Describe aspects of contract scope that were handled well.
 *   **Quality:** Describe aspects of product quality that were handled well.
 *   **Schedule:** Describe aspects of the contract schedule that were handled well.
 *   **Cost:** Describe aspects of the contract budget that were handled well.
 *   **Other:** Describe any other aspects of the contract or procurement that were handled well.
 *   **Plan:** procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.
-*   **What can be improved**
-*   **Procurement management:** process audit
 *   **Conduct:** procurements Control procurements Good practices to share Describe any good practices that can be shared with other projects or that should be incorporated into organization policies, procedures, or processes. Include information on lessons learned.
 *   **Areas for improvement:** Describe any areas that should be improved with the procurement process. Include information that should be incorporated into policies, procedures, or processes. Include information on lessons learned.
 

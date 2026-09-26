@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Release Plan (Instructions)
+Form: RELEASE PLAN (Instructions)
 ---
 
 # RELEASE PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Release Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RELEASE PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -22,16 +22,6 @@ Form: Release Plan (Instructions)
 
 ### User
 **Instruction:** Story
-
----
-
-### Sprint 2
-**Instruction:** 
-
----
-
-### Sprint 3
-**Instruction:** This diagram assumes that different shades notes indicate different categories of user stories.
 
 ---
 

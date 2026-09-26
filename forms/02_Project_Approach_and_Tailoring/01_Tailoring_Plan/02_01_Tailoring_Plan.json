@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Tailoring Plan template based on the provided project context.",
-    "form_name": "Tailoring Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this TAILORING PLAN template based on the provided project context.",
+    "form_name": "TAILORING PLAN",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Process/Artifact": {
             "guidance": "The standard process or artifact being considered.",

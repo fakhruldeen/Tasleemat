@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **INITIATI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Product Vision**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **PRODUCT VISION**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Target customer:** The person or group who will buy or use the product.
 *   **Needs:** The needs or requirements that the product will address.

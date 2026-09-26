@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Team Charter (Instructions)
+Form: TEAM CHARTER (Instructions)
 ---
 
 # TEAM CHARTER - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Team Charter`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `TEAM CHARTER`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

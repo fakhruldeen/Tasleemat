@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Product Vision template based on the provided project context.",
-    "form_name": "Product Vision",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this PRODUCT VISION template based on the provided project context.",
+    "form_name": "PRODUCT VISION",
     "project_title": "",
     "date_prepared": "",
     "fields": {

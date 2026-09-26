@@ -1,5 +1,2 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"ID","",""
-"Unique identifier","",""
-"Activity name","A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.",""
-"Description of work","If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",""
+الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
+Description of work,"If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",

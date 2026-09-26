@@ -1,22 +1,12 @@
 ---
 lang: en
-Form: Procurement Management Plan (Instructions)
+Form: PROCUREMENT MANAGEMENT PLAN (Instructions)
 ---
 
 # PROCUREMENT MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Procurement Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
-
----
-
-### Procurement integration
-**Instruction:** 
-
----
-
-### Scope
-**Instruction:** Define how the contractor's WBS will integrate with the project WBS.
+> This document serves as the detailed instruction set for generating the `PROCUREMENT MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

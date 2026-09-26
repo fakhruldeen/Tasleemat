@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **AI Use Case Canvas**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **AI USE CASE CANVAS**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Problem Statement:** The specific problem the AI will solve.
 *   **AI Pattern/Solution:** The type of AI model or approach (e.g., generative, predictive).

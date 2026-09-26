@@ -1,6 +1,4 @@
 Field,Guidance,LLM_Generated_Value
-Procurement integration,,
-Scope,Define how the contractor's WBS will integrate with the project WBS.,
 Schedule,"Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.",
 Documentation,Describe how contractor documentation will integrate with project documentation.,
 Risk,"Describe how risk identification, analysis, and response will integrate with risk management for the overall project.",

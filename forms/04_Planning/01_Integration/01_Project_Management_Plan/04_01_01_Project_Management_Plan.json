@@ -1,11 +1,11 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Project Management Plan template based on the provided project context.",
-    "form_name": "Project Management Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this PROJECT MANAGEMENT PLAN template based on the provided project context.",
+    "form_name": "PROJECT MANAGEMENT PLAN",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Project life cycle": {
-            "guidance": "Describe the life cycle that will be used to accomplish the project. This may include the following: \u2022 Name of each phase \u2022 Key activities for the phase \u2022 Key deliverables for the phase \u2022 Entry criteria for the phase \u2022 Exit criteria for the phase \u2022 Key reviews for the phase",
+            "guidance": "Describe the life cycle that will be used to accomplish the project. This may include the following: • Name of each phase • Key activities for the phase • Key deliverables for the phase • Entry criteria for the phase • Exit criteria for the phase • Key reviews for the phase",
             "value": ""
         },
         "Development approaches": {
@@ -13,7 +13,7 @@
             "value": ""
         },
         "Subsidiary management plans": {
-            "guidance": "List the subsidiary management plans that are part of the project management plan. This can be in the form of a \u201ctable of contents,\u201d links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents. (continued)",
+            "guidance": "List the subsidiary management plans that are part of the project management plan. This can be in the form of a “table of contents,” links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents. (continued)",
             "value": ""
         },
         "Scope variance threshold": {
@@ -33,7 +33,7 @@
             "value": ""
         },
         "Cost variance threshold": {
-            "guidance": "Define acceptable cost variances, variances that indicate a warning, and variances that are unacceptable. Cost variances may indicate the percent of variance from the baseline, such as 0\u20135 percent, 5\u201310 percent, and greater than 10 percent.",
+            "guidance": "Define acceptable cost variances, variances that indicate a warning, and variances that are unacceptable. Cost variances may indicate the percent of variance from the baseline, such as 0–5 percent, 5–10 percent, and greater than 10 percent.",
             "value": ""
         },
         "Cost baseline management": {

@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **INITIATI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Stakeholder Analysis**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **STAKEHOLDER ANALYSIS**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Name:** Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information
 *   **Position/Role:** The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team, such as testing lead, Scrum Master, or scheduler

@@ -37,11 +37,9 @@ This artifact is primarily prepared, utilized, and updated during the **CLOSING 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Project or Phase Closeout**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **PROJECT OR PHASE CLOSEOUT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Project description:** Provide a summary level description of the project.
-*   **Performance summary**
-*   **Scope:** Describe the scope objectives needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to complete the scope objectives. Provide evidence that the completion criteria were met.
 *   **Quality:** Describe the quality objectives and criteria needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to meet the product and project quality objectives. Enter the verification and validation information from the product acceptance form.
 *   **Variances:** Document the time and cost objectives and the final completion date and final expenditures. Explain any variances.
 *   **Benefits management:** Describe how the final product, service, or result achieved the benefits the project was undertaken to address.

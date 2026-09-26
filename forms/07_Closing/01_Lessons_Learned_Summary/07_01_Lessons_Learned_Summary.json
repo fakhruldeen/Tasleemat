@@ -1,25 +1,9 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Lessons Learned Summary template based on the provided project context.",
-    "form_name": "Lessons Learned Summary",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this LESSONS LEARNED SUMMARY template based on the provided project context.",
+    "form_name": "LESSONS LEARNED SUMMARY",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project Performance": {
-            "guidance": "",
-            "value": ""
-        },
-        "What Worked Well": {
-            "guidance": "",
-            "value": ""
-        },
-        "What Can Be Improved": {
-            "guidance": "",
-            "value": ""
-        },
-        "Requirements definition": {
-            "guidance": "and management",
-            "value": ""
-        },
         "List any practices or incidents that": {
             "guidance": "were effective in defining and managing requirements. List any practices or incidents that can be improved in defining and managing requirements.",
             "value": ""
@@ -76,28 +60,12 @@
             "guidance": "List any other practices or incidents that were effective, such as change control, configuration management, etc. List any other practices or incidents that can be improved, such as change control, configuration management, etc.",
             "value": ""
         },
-        "Risks and issues": {
-            "guidance": "",
-            "value": ""
-        },
-        "Risk or issue description": {
-            "guidance": "Identify risks or issues that occurred that should be considered to improve organizational learning.",
-            "value": ""
-        },
         "Response": {
             "guidance": "Describe the response and its effectiveness.",
             "value": ""
         },
         "Comments": {
             "guidance": "Provide any additional information needed to improve future project performance.",
-            "value": ""
-        },
-        "Defect description": {
-            "guidance": "",
-            "value": ""
-        },
-        "Describe quality defects that should be": {
-            "guidance": "considered to improve organizational effectiveness.",
             "value": ""
         },
         "Resolution": {
@@ -122,14 +90,6 @@
         },
         "Areas for improvement": {
             "guidance": "Identify areas that can be improved on for future performance.",
-            "value": ""
-        },
-        "Quality defects": {
-            "guidance": "",
-            "value": ""
-        },
-        "Vendor management": {
-            "guidance": "",
             "value": ""
         }
     }

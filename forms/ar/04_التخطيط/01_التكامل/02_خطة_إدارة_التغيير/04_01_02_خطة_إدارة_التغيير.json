@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this خطة إدارة التغيير template based on the provided project context.",
     "form_name": "خطة إدارة التغيير",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Change management approach": {
             "guidance": "Describe the degree of change control and how change control will integrate with other aspects of project management.",
@@ -8,30 +10,6 @@
         },
         "Definitions of change": {
             "guidance": "Schedule Change: Define a schedule change versus a schedule revision. Indicate when a schedule variance needs to go through the change control process to be re-baselined. Budget Change: Define a budget change versus a budget update. Indicate when a budget variance needs to go through the change control process to be re-baselined. Scope Change: Define a scope change versus progressive elaboration. Indicate when a scope variance needs to go through the change control process to be re-baselined. Project Document Change: Define when updates to project management documents or other project documents need to go through the change control process to be re-baselined.",
-            "value": ""
-        },
-        "Change control board": {
-            "guidance": "",
-            "value": ""
-        },
-        "الاسم": {
-            "guidance": "",
-            "value": ""
-        },
-        "Individual’s name": {
-            "guidance": "",
-            "value": ""
-        },
-        "الدور": {
-            "guidance": "",
-            "value": ""
-        },
-        "Position on the change control board": {
-            "guidance": "",
-            "value": ""
-        },
-        "المسؤولية": {
-            "guidance": "Responsibilities and activities required of the role",
             "value": ""
         },
         "Authority": {
@@ -52,10 +30,6 @@
         },
         "Change request outcome": {
             "guidance": "Describe the possible outcomes, such as accept, defer, or reject.",
-            "value": ""
-        },
-        "Change control process": {
-            "guidance": "",
             "value": ""
         }
     }

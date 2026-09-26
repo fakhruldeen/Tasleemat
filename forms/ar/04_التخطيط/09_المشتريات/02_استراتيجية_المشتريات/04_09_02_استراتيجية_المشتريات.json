@@ -1,15 +1,9 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this استراتيجية المشتريات template based on the provided project context.",
     "form_name": "استراتيجية المشتريات",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
-        "Delivery methods": {
-            "guidance": "",
-            "value": ""
-        },
-        "Professional services": {
-            "guidance": "Describe how the contractor will work with the buyer; for example, in a joint venture, as a representative, with or without subcontracting allowed.",
-            "value": ""
-        },
         "Construction services": {
             "guidance": "Describe the limitations of delivery, such as design build, design bid build, etc.",
             "value": ""

@@ -1,11 +1,11 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Stakeholder Analysis template based on the provided project context.",
-    "form_name": "Stakeholder Analysis",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this STAKEHOLDER ANALYSIS template based on the provided project context.",
+    "form_name": "STAKEHOLDER ANALYSIS",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Name": {
-            "guidance": "Stakeholder\u2019s name. If you don\u2019t have a name you can substitute a position or organization until you have more information",
+            "guidance": "Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information",
             "value": ""
         },
         "Position/Role": {

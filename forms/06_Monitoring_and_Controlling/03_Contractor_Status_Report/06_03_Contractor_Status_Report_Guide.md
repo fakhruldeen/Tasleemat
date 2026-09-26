@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **MONITORI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Contractor Status Report**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **CONTRACTOR STATUS REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Scope performance this reporting period:** Describe progress on scope made during this reporting period. Quality performance this reporting period Identify any quality or performance variances. Schedule performance this reporting period Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.
 *   **Cost performance this reporting period:** Describe whether the contract is on budget. If over or under budget, identify the cause of the variance. Forecast performance for future reporting periods Discuss the estimated delivery date and final cost of the contract. If the contract is a fixed price, do not enter cost forecasts.

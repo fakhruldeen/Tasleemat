@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Team Member Status Report template based on the provided project context.",
-    "form_name": "Team Member Status Report",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this TEAM MEMBER STATUS REPORT template based on the provided project context.",
+    "form_name": "TEAM MEMBER STATUS REPORT",
     "project_title": "",
     "date_prepared": "",
     "fields": {

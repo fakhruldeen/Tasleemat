@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Stakeholder Engagement Plan (Instructions)
+Form: STAKEHOLDER ENGAGEMENT PLAN (Instructions)
 ---
 
 # STAKEHOLDER ENGAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Stakeholder Engagement Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `STAKEHOLDER ENGAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -22,29 +22,4 @@ Form: Stakeholder Engagement Plan (Instructions)
 
 ### Stakeholder engagement approach
 **Instruction:** Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.
-
----
-
-### unaware
-**Instruction:** 
-
----
-
-### Stakeholder relationships
-**Instruction:** 
-
----
-
-### Pending Stakeholder changes
-**Instruction:** 
-
----
-
-### C = Current level of engagement
-**Instruction:** 
-
----
-
-### Stakeholder
-**Instruction:** 
 

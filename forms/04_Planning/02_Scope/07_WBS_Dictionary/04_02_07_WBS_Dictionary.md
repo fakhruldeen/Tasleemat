@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: WBS Dictionary (Instructions)
+Form: WBS DICTIONARY (Instructions)
 ---
 
 # WBS DICTIONARY - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `WBS Dictionary`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `WBS DICTIONARY`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -102,9 +102,4 @@ Form: WBS Dictionary (Instructions)
 
 ### resource
 **Instruction:** hours
-
----
-
-### total
-**Instruction:** 
 

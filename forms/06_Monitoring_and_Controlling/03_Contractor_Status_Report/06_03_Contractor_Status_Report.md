@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Contractor Status Report (Instructions)
+Form: CONTRACTOR STATUS REPORT (Instructions)
 ---
 
 # CONTRACTOR STATUS REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Contractor Status Report`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `CONTRACTOR STATUS REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

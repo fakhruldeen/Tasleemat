@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this هيكل تجزئة العمل (WBS) template based on the provided project context.",
     "form_name": "هيكل تجزئة العمل (WBS)",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Control account": {
             "guidance": "The point where scope, schedule, and cost are integrated and used to measure project performance",

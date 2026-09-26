@@ -1,15 +1,9 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this تقرير إغلاق العقد template based on the provided project context.",
     "form_name": "تقرير إغلاق العقد",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
-        "What worked well": {
-            "guidance": "",
-            "value": ""
-        },
-        "النطاق": {
-            "guidance": "Describe aspects of contract scope that were handled well.",
-            "value": ""
-        },
         "الجودة": {
             "guidance": "Describe aspects of product quality that were handled well.",
             "value": ""
@@ -44,18 +38,6 @@
         },
         "Date resolved": {
             "guidance": "Enter the date the dispute or claim was resolved.",
-            "value": ""
-        },
-        "What can be improved": {
-            "guidance": "",
-            "value": ""
-        },
-        "Record of contract changes": {
-            "guidance": "",
-            "value": ""
-        },
-        "Record of contract disputes": {
-            "guidance": "",
             "value": ""
         }
     }

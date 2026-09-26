@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Cost Management Plan template based on the provided project context.",
-    "form_name": "Cost Management Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this COST MANAGEMENT PLAN template based on the provided project context.",
+    "form_name": "COST MANAGEMENT PLAN",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -17,7 +17,7 @@
             "value": ""
         },
         "Organizational procedure": {
-            "guidance": "links Cost estimating and reporting should follow the numbering structure of the WBS. It may also need to follow the organization\u2019s code of accounts or other accounting and reporting structures.",
+            "guidance": "links Cost estimating and reporting should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures.",
             "value": ""
         },
         "Control thresholds": {

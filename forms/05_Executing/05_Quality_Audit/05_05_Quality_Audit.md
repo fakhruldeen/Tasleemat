@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Quality Audit (Instructions)
+Form: QUALITY AUDIT (Instructions)
 ---
 
 # QUALITY AUDIT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Quality Audit`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `QUALITY AUDIT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -22,16 +22,6 @@ Form: Quality Audit (Instructions)
 
 ### Areas for improvement
 **Instruction:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-
----
-
-### Deficiencies or defects
-**Instruction:** 
-
----
-
-### ID
-**Instruction:** Enter a unique defect identifier.
 
 ---
 

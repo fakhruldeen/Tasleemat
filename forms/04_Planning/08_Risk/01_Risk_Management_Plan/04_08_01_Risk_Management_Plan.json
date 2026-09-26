@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Risk Management Plan template based on the provided project context.",
-    "form_name": "Risk Management Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RISK MANAGEMENT PLAN template based on the provided project context.",
+    "form_name": "RISK MANAGEMENT PLAN",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -37,11 +37,11 @@
             "value": ""
         },
         "Definitions of probability": {
-            "guidance": "Document how probability will be measured and defined. Include the scale used and the definition for each level in the probability scale. The probability definitions should reflect the stakeholder risk appetite. For example: Very high = there is an 80 percent probability or higher that the event will occur High = there is a 60\u201380 percent probability that the event will occur Medium = there is a 40\u201360 percent probability that the event will occur Low = there is a 20\u201340 percent probability that the event will occur Very low = there is a 1\u201320 percent probability that the event will occur",
+            "guidance": "Document how probability will be measured and defined. Include the scale used and the definition for each level in the probability scale. The probability definitions should reflect the stakeholder risk appetite. For example: Very high = there is an 80 percent probability or higher that the event will occur High = there is a 60–80 percent probability that the event will occur Medium = there is a 40–60 percent probability that the event will occur Low = there is a 20–40 percent probability that the event will occur Very low = there is a 1–20 percent probability that the event will occur",
             "value": ""
         },
         "Definitions of impact by objective": {
-            "guidance": "Document how impact will be measured and defined for either the project as a whole or for each objective. The probability definitions should reflect the stakeholder risk appetite. Include the scale used and the definition for each level in the impact scale. For example: Cost Impacts: Very high = overrun of control account budget of >20 percent High = overrun of control account budget between 15\u201320 percent Medium = overrun of control account budget between 10\u201315 percent Low = overrun of control account budget between 5\u201310 percent Very low = overrun of control account budget of <5 percent",
+            "guidance": "Document how impact will be measured and defined for either the project as a whole or for each objective. The probability definitions should reflect the stakeholder risk appetite. Include the scale used and the definition for each level in the impact scale. For example: Cost Impacts: Very high = overrun of control account budget of >20 percent High = overrun of control account budget between 15–20 percent Medium = overrun of control account budget between 10–15 percent Low = overrun of control account budget between 5–10 percent Very low = overrun of control account budget of <5 percent",
             "value": ""
         },
         "Probability and impact matrix": {

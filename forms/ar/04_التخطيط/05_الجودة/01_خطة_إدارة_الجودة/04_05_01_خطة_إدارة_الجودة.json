@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this خطة إدارة الجودة template based on the provided project context.",
     "form_name": "خطة إدارة الجودة",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Quality standards": {
             "guidance": "Quality standards are usually industry or product driven. They may be ISO standards, IEEE, or some other regulatory or industry body.",

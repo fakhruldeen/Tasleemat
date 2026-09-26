@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Risk Report template based on the provided project context.",
-    "form_name": "Risk Report",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RISK REPORT template based on the provided project context.",
+    "form_name": "RISK REPORT",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -9,15 +9,15 @@
             "value": ""
         },
         "Overall project risk": {
-            "guidance": "Provide a description of the overall risk of the project, including: \u2022 High-level statement of trends \u2022 Significant drivers of overall risk \u2022 Recommended responses to overall risk",
+            "guidance": "Provide a description of the overall risk of the project, including: • High-level statement of trends • Significant drivers of overall risk • Recommended responses to overall risk",
             "value": ""
         },
         "Individual project risks": {
-            "guidance": "Analyze and summarize information associated with individual project risks, including: \u2022 Number of risks in each box of the probability impact matrix \u2022 Key metrics \u2022 Active risks \u2022 Newly closed risks \u2022 Risks distribution by category, objective, and score \u2022 Most-critical risks and changes since last report \u2022 Recommended responses to top risks",
+            "guidance": "Analyze and summarize information associated with individual project risks, including: • Number of risks in each box of the probability impact matrix • Key metrics • Active risks • Newly closed risks • Risks distribution by category, objective, and score • Most-critical risks and changes since last report • Recommended responses to top risks",
             "value": ""
         },
         "Quantitative analysis": {
-            "guidance": "Summarize the results of quantitative risk analysis, including: \u2022 Results from quantitative assessments (S-curve, tornado, etc.) \u2022 Probability of meeting key project objectives \u2022 Drivers of cost and schedule outcomes \u2022 Proposed responses",
+            "guidance": "Summarize the results of quantitative risk analysis, including: • Results from quantitative assessments (S-curve, tornado, etc.) • Probability of meeting key project objectives • Drivers of cost and schedule outcomes • Proposed responses",
             "value": ""
         },
         "Reserve status": {

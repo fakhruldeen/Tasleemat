@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Benefits Management Plan (Instructions)
+Form: BENEFITS MANAGEMENT PLAN (Instructions)
 ---
 
 # BENEFITS MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Benefits Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `BENEFITS MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 

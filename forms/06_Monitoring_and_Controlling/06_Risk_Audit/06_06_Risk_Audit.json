@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Risk Audit template based on the provided project context.",
-    "form_name": "Risk Audit",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this RISK AUDIT template based on the provided project context.",
+    "form_name": "RISK AUDIT",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -9,7 +9,7 @@
             "value": ""
         },
         "Risk statement": {
-            "guidance": "Describe the risk event or condition. A risk statement is usually phrased as \u201cEVENT may occur, causing IMPACT\u201d or \u201cIf CONDITION exists, EVENT may occur, leading to",
+            "guidance": "Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to",
             "value": ""
         }
     }

@@ -37,13 +37,11 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Release Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **RELEASE PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Release dates:** Either a timeline or a milestone indicator of when releases start and finish. This can be more detailed to show a linear schedule that indicates the duration of each release.
 *   **User stories:** The requirements or user stories from the backlog
 *   **User:** Story
-*   **Sprint 2**
-*   **Sprint 3:** This diagram assumes that different shades notes indicate different categories of user stories.
 *   **Sprint 1:** Release Goal: Describe the goal of the release in this space.
 
 ---

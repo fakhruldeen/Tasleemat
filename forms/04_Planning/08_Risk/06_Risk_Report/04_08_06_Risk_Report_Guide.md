@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Risk Report**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **RISK REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Executive summary:** A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.
 *   **Overall project risk:** Provide a description of the overall risk of the project, including: • High-level statement of trends • Significant drivers of overall risk • Recommended responses to overall risk

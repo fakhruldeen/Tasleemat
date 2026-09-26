@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: Project Charter (Instructions)
+Form: PROJECT CHARTER (Instructions)
 ---
 
 # PROJECT CHARTER - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Project Charter`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `PROJECT CHARTER`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -40,8 +40,8 @@ Form: Project Charter (Instructions)
 
 ---
 
-### Project objectives and related success
-**Instruction:** criteria Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. There may be additional objectives as well. Some organizations include quality, safety, and stakeholder satisfaction objectives. (continued)
+### Project objectives and related success criteria
+**Instruction:** Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success.
 
 ---
 
@@ -56,10 +56,35 @@ Form: Project Charter (Instructions)
 ---
 
 ### Key stakeholder list
-**Instruction:** An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. This can be further elaborated in the stakeholder register.
+**Instruction:** An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success.
 
 ---
 
 ### Project exit criteria
-**Instruction:** The performance, metrics, conditions, or other measurements that must be met to conclude the project. Assigned project manager, responsibility, and authority level The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution. Examples of staffing authority include the power to hire, fire, discipline, accept, or not accept project staff. Budget management refers to the authority of the project manager to commit, manage, and control project funds. Variance refers to the variance level that requires escalation. Technical decisions describe the authority of the project manager to make technical decisions about deliverables or the project approach. Conflict resolution defines the degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders. Name and authority of the sponsor or other person(s) authorizing the project charter The name, position, and authority of the person who oversees the project manager for the purposes of the project. Common types of authority include the ability to approve changes, determine acceptable variance limits, resolve inter-project conflicts, and champion the project at a senior management level.
+**Instruction:** The performance, metrics, conditions, or other measurements that must be met to conclude the project.
+
+---
+
+### Project manager authority - Staffing Decisions
+**Instruction:** The authority of the project manager to hire, fire, discipline, accept, or not accept project staff.
+
+---
+
+### Project manager authority - Budget management and Variance
+**Instruction:** The authority of the project manager to commit, manage, and control project funds, and the variance level that requires escalation.
+
+---
+
+### Project manager authority - Technical Decisions
+**Instruction:** The authority of the project manager to make technical decisions about deliverables or the project approach.
+
+---
+
+### Project manager authority - Conflict resolution
+**Instruction:** The degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders.
+
+---
+
+### Sponsor authority
+**Instruction:** Name and authority of the sponsor or other person(s) authorizing the project charter.
 

@@ -1,17 +1,9 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Contract Closeout Report template based on the provided project context.",
-    "form_name": "Contract Closeout Report",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this CONTRACT CLOSEOUT REPORT template based on the provided project context.",
+    "form_name": "CONTRACT CLOSEOUT REPORT",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "What worked well": {
-            "guidance": "",
-            "value": ""
-        },
-        "Scope": {
-            "guidance": "Describe aspects of contract scope that were handled well.",
-            "value": ""
-        },
         "Quality": {
             "guidance": "Describe aspects of product quality that were handled well.",
             "value": ""
@@ -46,18 +38,6 @@
         },
         "Date resolved": {
             "guidance": "Enter the date the dispute or claim was resolved.",
-            "value": ""
-        },
-        "What can be improved": {
-            "guidance": "",
-            "value": ""
-        },
-        "Record of contract changes": {
-            "guidance": "",
-            "value": ""
-        },
-        "Record of contract disputes": {
-            "guidance": "",
             "value": ""
         }
     }

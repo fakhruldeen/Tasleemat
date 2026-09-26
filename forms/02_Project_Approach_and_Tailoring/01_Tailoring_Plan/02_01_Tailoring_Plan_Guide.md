@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Tailoring Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **TAILORING PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Process/Artifact:** The standard process or artifact being considered.
 *   **Tailoring Decision:** Added, removed, or modified?

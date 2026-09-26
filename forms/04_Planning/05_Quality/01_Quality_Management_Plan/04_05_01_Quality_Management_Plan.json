@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Quality Management Plan template based on the provided project context.",
-    "form_name": "Quality Management Plan",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this QUALITY MANAGEMENT PLAN template based on the provided project context.",
+    "form_name": "QUALITY MANAGEMENT PLAN",
     "project_title": "",
     "date_prepared": "",
     "fields": {
@@ -29,7 +29,7 @@
             "value": ""
         },
         "Applicable quality procedures": {
-            "guidance": "Procedures that will be used for the project, such as \u2022 Nonconformance and rework \u2022 Corrective actions \u2022 Quality audits \u2022 Continuous improvement",
+            "guidance": "Procedures that will be used for the project, such as • Nonconformance and rework • Corrective actions • Quality audits • Continuous improvement",
             "value": ""
         }
     }

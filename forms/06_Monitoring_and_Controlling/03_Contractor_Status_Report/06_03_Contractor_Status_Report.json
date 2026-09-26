@@ -1,6 +1,6 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Contractor Status Report template based on the provided project context.",
-    "form_name": "Contractor Status Report",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this CONTRACTOR STATUS REPORT template based on the provided project context.",
+    "form_name": "CONTRACTOR STATUS REPORT",
     "project_title": "",
     "date_prepared": "",
     "fields": {

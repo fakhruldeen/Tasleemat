@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this تحليل المعنيين template based on the provided project context.",
     "form_name": "تحليل المعنيين",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "الاسم": {
             "guidance": "Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information",

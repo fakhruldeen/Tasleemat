@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "Fill out the 'value' properties for each field in this خطة إدارة النطاق template based on the provided project context.",
     "form_name": "خطة إدارة النطاق",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Units of measure": {
             "guidance": "Indicate how each type of resource will be measured. For example, labor units may be measured in staff hours, days, or weeks. Physical resources may be measured in gallons, meters, tons, or whatever is appropriate for the material. Some resources are based on a lump sum cost each time they are used.",

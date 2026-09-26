@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Quality Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **QUALITY MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Quality standards:** Quality standards are usually industry or product driven. They may be ISO standards, IEEE, or some other regulatory or industry body.
 *   **Quality objectives:** Quality objectives are the measures that must be achieved by the project or product components to meet the stakeholder needs. Objectives are the target you want to achieve. You may have metrics or specifications that provide a quantifiable measurement of success.
