@@ -36,6 +36,12 @@ This artifact is primarily prepared, utilized, and updated during the **MONITORI
 
 ---
 
+### Tailoring Tips
+[ Add Tailoring Tips Here ]
+
+### Alignment
+[ Add Alignment Information Here ]
+
 ### 5. How?
 To accurately and professionally complete the **RISK AUDIT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 

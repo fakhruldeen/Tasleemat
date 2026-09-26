@@ -8,6 +8,12 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 > **System Prompt / Instructions:**
 > This document serves as the detailed instruction set for generating the `PROJECT OR PHASE CLOSEOUT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
+> **Context & Definition:**
+> [ Add Context & Definition Here ]
+> 
+> **Alignment:**
+> [ Add Alignment Information Here ]
+
 ---
 
 ### Project description

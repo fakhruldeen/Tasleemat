@@ -8,6 +8,12 @@ Form: MEETING MINUTES (Instructions)
 > **System Prompt / Instructions:**
 > This document serves as the detailed instruction set for generating the `MEETING MINUTES`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
+> **Context & Definition:**
+> [ Add Context & Definition Here ]
+> 
+> **Alignment:**
+> [ Add Alignment Information Here ]
+
 ---
 
 ### Meeting Objective
