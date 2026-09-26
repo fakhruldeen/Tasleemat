@@ -5,27 +5,27 @@
     "date_prepared": "",
     "fields": {
         "Name": {
-            "guidance": "Stakeholder\u2019s name. If you don\u2019t have a name you can substitute a position or organization until you have more information",
+            "guidance": "Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.",
             "value": ""
         },
         "Position/Role": {
-            "guidance": "The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team, such as testing lead, Scrum Master, or scheduler",
+            "guidance": "The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.",
             "value": ""
         },
         "Contact information": {
-            "guidance": "How to communicate with the stakeholder, such as their phone number, email address, or physical address",
+            "guidance": "How to communicate with the stakeholder, such as their phone number, email address, or physical address.",
             "value": ""
         },
         "Requirements": {
-            "guidance": "High-level needs for the project and/or product",
+            "guidance": "High-level needs for the project and/or product.",
             "value": ""
         },
         "Expectations": {
-            "guidance": "Main expectations of the project and/or product",
+            "guidance": "Main expectations of the project and/or product.",
             "value": ""
         },
         "Classification": {
-            "guidance": "Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact",
+            "guidance": "Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.",
             "value": ""
         }
     }

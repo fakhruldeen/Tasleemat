@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,10 +9,21 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Name</th>    <th>Position/Role</th>    <th>Contact information</th>    <th>Requirements</th>    <th>Expectations</th>    <th>Classification</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
-
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Name:</b> <i>Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information</i></li><li><b>Position/Role:</b> <i>The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team, such as testing lead, Scrum Master, or scheduler</i></li><li><b>Contact information:</b> <i>How to communicate with the stakeholder, such as their phone number, email address, or physical address</i></li><li><b>Requirements:</b> <i>High-level needs for the project and/or product</i></li><li><b>Expectations:</b> <i>Main expectations of the project and/or product</i></li><li><b>Classification:</b> <i>Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact</i></li></ul></div>
+### Stakeholder Register Entries
+<!-- 
+Please provide a comprehensive list of all project stakeholders. For each entry, ensure you populate the following columns in the table below:
+- **Name:** Stakeholder’s name, position, or organization.
+- **Position/Role:** The position and/or role the stakeholder holds in the organization or project team.
+- **Contact information:** Phone number, email address, etc.
+- **Requirements:** High-level needs for the project/product.
+- **Expectations:** Main expectations of the project/product.
+- **Classification:** Categorization (e.g., high/medium/low impact).
+-->
+| Name | Position/Role | Contact information | Requirements | Expectations | Classification |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
 ---
 
@@ -21,6 +31,7 @@
 
 | Prepared By: | Reviewed By: | Approved By: |
 | :--- | :--- | :--- |
+| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
 | **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |
 

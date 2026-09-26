@@ -3,27 +3,27 @@
     "form_name": "سجل المعنيين",
     "fields": {
         "الاسم": {
-            "guidance": "Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information",
+            "guidance": "اسم المعني. إذا لم يكن لديك اسم يمكنك استبداله بمنصب أو مؤسسة حتى تتوفر لديك المزيد من المعلومات.",
             "value": ""
         },
-        "Position/Role": {
-            "guidance": "The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team, such as testing lead, Scrum Master, or scheduler",
+        "المنصب / الدور": {
+            "guidance": "المنصب و/أو الدور الذي يشغله المعني في المنظمة. تشير الأدوار إلى الوظيفة التي يؤديها المعني في فريق المشروع.",
             "value": ""
         },
-        "Contact information": {
-            "guidance": "How to communicate with the stakeholder, such as their phone number, email address, or physical address",
+        "معلومات التواصل": {
+            "guidance": "كيفية التواصل مع المعني، مثل رقم الهاتف، البريد الإلكتروني، أو العنوان الفعلي.",
             "value": ""
         },
         "المتطلبات": {
-            "guidance": "High-level needs for the project and/or product",
+            "guidance": "الاحتياجات عالية المستوى للمشروع و/أو المنتج.",
             "value": ""
         },
-        "Expectations": {
-            "guidance": "Main expectations of the project and/or product",
+        "التوقعات": {
+            "guidance": "التوقعات الرئيسية من المشروع و/أو المنتج.",
             "value": ""
         },
-        "Classification": {
-            "guidance": "Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact",
+        "التصنيف": {
+            "guidance": "قد تصنف بعض المشاريع المعنيين كصديق، أو محايد؛ بينما يصنفهم آخرون بناءً على التأثير (عالي، متوسط، منخفض).",
             "value": ""
         }
     }
