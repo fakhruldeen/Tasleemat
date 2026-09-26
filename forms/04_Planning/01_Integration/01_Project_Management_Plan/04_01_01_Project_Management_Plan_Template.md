@@ -60,45 +60,23 @@
 
 ---
 
-### Scope variance threshold
-<!-- Define acceptable scope variances, variances that indicate a warning, and variances that are unacceptable. Scope variance can be indicated by the features and functions that are present in the end product, or the performance metrics that are desired. -->
+### Variance thresholds
+<!-- Define acceptable variances and baseline management for Scope, Schedule, and Cost. Populate the tables below. -->
 
-> [ Provide your detailed response here... ]
+#### Scope
+| Scope variance threshold | Scope baseline management |
+| :--- | :--- |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
----
+#### Schedule
+| Schedule variance threshold | Schedule baseline management |
+| :--- | :--- |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
-### Scope baseline management
-<!-- Describe how the scope baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. Define the difference between a scope revision and a scope change. -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Schedule variance threshold
-<!-- Define acceptable schedule variances, variances that indicate a warning, and variances that are unacceptable. Schedule variances may indicate the percent of variance from the baseline or they may include the amount of float used or whether any schedule reserve has been used. -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Schedule baseline management
-<!-- Describe how the schedule baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Cost variance threshold
-<!-- Define acceptable cost variances, variances that indicate a warning, and variances that are unacceptable. Cost variances may indicate the percent of variance from the baseline, such as 0–5 percent, 5–10 percent, and greater than 10 percent. -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Cost baseline management
-<!-- Describe how the cost baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. -->
-
-> [ Provide your detailed response here... ]
+#### Cost
+| Cost variance threshold | Cost baseline management |
+| :--- | :--- |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 

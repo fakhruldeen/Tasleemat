@@ -30,33 +30,8 @@ Form: PROJECT MANAGEMENT PLAN (Instructions)
 
 ---
 
-### Scope variance threshold
-**Instruction:** Define acceptable scope variances, variances that indicate a warning, and variances that are unacceptable. Scope variance can be indicated by the features and functions that are present in the end product, or the performance metrics that are desired.
-
----
-
-### Scope baseline management
-**Instruction:** Describe how the scope baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. Define the difference between a scope revision and a scope change.
-
----
-
-### Schedule variance threshold
-**Instruction:** Define acceptable schedule variances, variances that indicate a warning, and variances that are unacceptable. Schedule variances may indicate the percent of variance from the baseline or they may include the amount of float used or whether any schedule reserve has been used.
-
----
-
-### Schedule baseline management
-**Instruction:** Describe how the schedule baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted.
-
----
-
-### Cost variance threshold
-**Instruction:** Define acceptable cost variances, variances that indicate a warning, and variances that are unacceptable. Cost variances may indicate the percent of variance from the baseline, such as 0–5 percent, 5–10 percent, and greater than 10 percent.
-
----
-
-### Cost baseline management
-**Instruction:** Describe how the cost baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted.
+### Variance thresholds
+**Instruction:** Define acceptable variances and baseline management for Scope, Schedule, and Cost. MUST be formatted as three separate Markdown tables (for Scope, Schedule, and Cost), each with exactly 2 columns: [Domain] variance threshold, [Domain] baseline management.
 
 ---
 
