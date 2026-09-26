@@ -15,6 +15,7 @@
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Start:</b> <i>Actions and behaviors that the team will begin to implement</i></li><li><b>Stop:</b> <i>Actions or behaviors that the team will cease doing</i></li><li><b>Keep:</b> <i>Practices that the team should continue with</i></li><li><b>More:</b> <i>Practices that were not done consistently that should be done more often</i></li><li><b>Less:</b> <i>Practices that were done too much or that should be reduced</i></li></ul></div>
+
 ---
 
 ### التوقيعات

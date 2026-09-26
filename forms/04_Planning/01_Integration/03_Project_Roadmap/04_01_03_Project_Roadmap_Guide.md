@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A formal Tasleemat-aligned project document known as the **Project Roadmap**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
 
+---
+
 ### 2. Why?
 To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Project Roadmap**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -43,7 +51,7 @@ To accurately and professionally complete the **Project Roadmap**, the responsib
 *   **Key stakeholder list:** An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. This can be further elaborated in the stakeholder register.
 *   **Project exit criteria:** The performance, metrics, conditions, or other measurements that must be met to conclude the project. Assigned project manager, responsibility, and authority level The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution. Examples of staffing authority include the power to hire, fire, discipline, accept, or not accept project staff. Budget management refers to the authority of the project manager to commit, manage, and control project funds. Variance refers to the variance level that requires escalation. Technical decisions describe the authority of the project manager to make technical decisions about deliverables or the project approach. Conflict resolution defines the degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders. Name and authority of the sponsor or other person(s) authorizing the project charter The name, position, and authority of the person who oversees the project manager for the purposes of the project. Common types of authority include the ability to approve changes, determine acceptable variance limits, resolve inter-project conflicts, and champion the project at a senior management level.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_01_03_Project_Roadmap_Template.md)

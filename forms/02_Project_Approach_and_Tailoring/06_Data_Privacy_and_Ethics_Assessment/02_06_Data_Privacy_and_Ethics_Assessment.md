@@ -13,14 +13,22 @@ Form: Data Privacy and Ethics Assessment (Instructions)
 ### Data Source
 **Instruction:** Where the data originates.
 
+---
+
 ### PII Detection
 **Instruction:** Does it contain Personally Identifiable Information?
+
+---
 
 ### Consent Management
 **Instruction:** How user consent was obtained.
 
+---
+
 ### Data Retention Policy
 **Instruction:** How long data is stored and how it's deleted.
+
+---
 
 ### Compliance Alignment
 **Instruction:** GDPR, CCPA, or local regulatory alignment.

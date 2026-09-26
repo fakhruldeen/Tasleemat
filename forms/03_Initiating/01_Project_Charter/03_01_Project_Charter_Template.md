@@ -14,25 +14,37 @@
 <!-- The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project. -->
 > [ Provide your detailed response here... ]
 
+---
+
 ### High-level project description
 <!-- A summary-level description of the project. -->
 > [ Provide your detailed response here... ]
+
+---
 
 ### Project boundaries
 <!-- Limits to the project scope. May include scope exclusions, or other limitations. -->
 > [ Provide your detailed response here... ]
 
+---
+
 ### Key deliverables
 <!-- The high-level project and product deliverables. These will be further elaborated in the project scope statement. -->
 > [ Provide your detailed response here... ]
+
+---
 
 ### High-level requirements
 <!-- The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders’ needs and expectations. These will be further elaborated in the requirements documentation. -->
 > [ Provide your detailed response here... ]
 
+---
+
 ### Overall project risk
 <!-- An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome. -->
 > [ Provide your detailed response here... ]
+
+---
 
 ### Project objectives and related success criteria
 <!-- Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. -->
@@ -43,6 +55,8 @@
 | **Cost** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | **Other** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
+---
+
 ### Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
 | # | Summary milestones | Due Date |
@@ -51,9 +65,13 @@
 | 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
+---
+
 ### Preapproved financial resources
 <!-- The amount of funding available for the project. May include sources of funding and annual funding limits. -->
 > [ Provide your detailed response here... ]
+
+---
 
 ### Key stakeholder list
 <!-- An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. -->
@@ -63,9 +81,13 @@
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
+---
+
 ### Project exit criteria
 <!-- The performance, metrics, conditions, or other measurements that must be met to conclude the project. -->
 > [ Provide your detailed response here... ]
+
+---
 
 ### Project manager authority level
 <!-- The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution. -->
@@ -80,6 +102,8 @@
 
 **Conflict resolution:**
 > [ Provide your detailed response here... ]
+
+---
 
 ### Sponsor authority
 <!-- Name and authority of the sponsor or other person(s) authorizing the project charter. -->

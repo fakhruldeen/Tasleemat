@@ -13,6 +13,8 @@ Form: Risk Register (Instructions)
 ### Risk ID
 **Instruction:** Enter a unique risk identifier.
 
+---
+
 ### Risk statement
 **Instruction:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to
 

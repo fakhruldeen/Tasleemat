@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A subsidiary management plan aligned with Tasleemat standards known as the **Resource Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
 
+---
+
 ### 2. Why?
 To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Resource Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -44,7 +52,7 @@ To accurately and professionally complete the **Resource Management Plan**, the 
 *   **Physical resource acquisition:** Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.
 *   **Physical resource management:** Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_06_01_Resource_Management_Plan_Template.md)

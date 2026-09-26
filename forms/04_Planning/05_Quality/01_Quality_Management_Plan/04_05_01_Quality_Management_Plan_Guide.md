@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A subsidiary management plan aligned with Tasleemat standards known as the **Quality Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
 
+---
+
 ### 2. Why?
 To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Quality Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -39,7 +47,7 @@ To accurately and professionally complete the **Quality Management Plan**, the r
 *   **Quality control approach:** The approach that will be used to measure the product and the project performance to ensure the product meets the quality objectives
 *   **Applicable quality procedures:** Procedures that will be used for the project, such as • Nonconformance and rework • Corrective actions • Quality audits • Continuous improvement
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_05_01_Quality_Management_Plan_Template.md)

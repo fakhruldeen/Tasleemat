@@ -16,15 +16,21 @@
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
+---
+
 ### Tailoring Decision
 <!-- Added, removed, or modified? -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
 
+---
+
 ### Justification
 <!-- Reasoning for the tailoring decision. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
+
+---
 
 ### Approver
 <!-- Person who approved the change. -->

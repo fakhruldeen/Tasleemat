@@ -18,6 +18,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Impediment ID:</b> <i>Unique ID.</i></li><li><b>Date Raised:</b> <i>When it was identified.</i></li><li><b>Description:</b> <i>What is blocking the team.</i></li><li><b>Impact:</b> <i>How it affects the sprint.</i></li><li><b>Owner:</b> <i>Scrum Master or person resolving it.</i></li><li><b>Status:</b> <i>Open, In Progress, Resolved.</i></li></ul></div>
+
 ---
 
 ### Signatures

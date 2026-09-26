@@ -13,11 +13,17 @@ Form: Team Onboarding Checklist (Instructions)
 ### Task
 **Instruction:** Onboarding activity (e.g. System access granted).
 
+---
+
 ### Assigned To
 **Instruction:** Who is responsible.
 
+---
+
 ### Due Date
 **Instruction:** When it should be completed.
+
+---
 
 ### Status
 **Instruction:** Done/Pending.

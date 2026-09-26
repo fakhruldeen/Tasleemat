@@ -13,6 +13,8 @@ Form: Resource Breakdown Structure (Instructions)
 ### Control account
 **Instruction:** The point where scope, schedule, and cost are integrated and used to measure project performance
 
+---
+
 ### Work package
 **Instruction:** The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.
 

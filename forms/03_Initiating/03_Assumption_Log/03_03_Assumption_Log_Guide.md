@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A project document used to record all assumptions and constraints throughout the project life cycle.
 
+---
+
 ### 2. Why?
 Helps in identifying potential risks if assumptions prove false, and clarifies the boundaries and limitations of the project.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **INITIATING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Assumption Log**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -40,7 +48,7 @@ To accurately and professionally complete the **Assumption Log**, the responsibl
 *   **Status:** The status of the assumptions, such as active, transferred, or closed
 *   **Comments:** Any additional information regarding the assumption or constraint
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](03_03_Assumption_Log_Template.md)

@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A formal Tasleemat-aligned project document known as the **Team Member Status Report**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
 
+---
+
 ### 2. Why?
 To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **MONITORING AND CONTROLLING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Maintained by the Project Manager or PMO to track actuals against the baselined plans and report to the steering committee.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Team Member Status Report**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -39,7 +47,7 @@ To accurately and professionally complete the **Team Member Status Report**, the
 *   **Issues:** Identify any new issues that have arisen. New issues should be recorded in the issue log as well.
 *   **Comments:** Document any comments that add relevance to this report.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](06_02_Team_Member_Status_Report_Template.md)

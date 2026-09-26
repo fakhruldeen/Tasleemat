@@ -13,14 +13,22 @@ Form: Request for Proposal RFP (Instructions)
 ### Project Overview
 **Instruction:** Background and purpose of the project.
 
+---
+
 ### Submission Guidelines
 **Instruction:** How and when vendors should submit proposals.
+
+---
 
 ### Technical Requirements
 **Instruction:** What the solution must do.
 
+---
+
 ### Evaluation Criteria
 **Instruction:** How proposals will be scored.
+
+---
 
 ### Terms and Conditions
 **Instruction:** Legal and compliance baselines.

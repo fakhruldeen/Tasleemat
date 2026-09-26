@@ -13,11 +13,17 @@ Form: Tailoring Plan (Instructions)
 ### Process/Artifact
 **Instruction:** The standard process or artifact being considered.
 
+---
+
 ### Tailoring Decision
 **Instruction:** Added, removed, or modified?
 
+---
+
 ### Justification
 **Instruction:** Reasoning for the tailoring decision.
+
+---
 
 ### Approver
 **Instruction:** Person who approved the change.

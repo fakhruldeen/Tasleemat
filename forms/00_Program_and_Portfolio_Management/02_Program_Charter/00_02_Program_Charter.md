@@ -13,14 +13,22 @@ Form: Program Charter (Instructions)
 ### Program Purpose
 **Instruction:** High-level justification for the program.
 
+---
+
 ### Program Objectives
 **Instruction:** Measurable goals of the program.
+
+---
 
 ### Component Projects
 **Instruction:** List of the individual projects within the program.
 
+---
+
 ### Program Benefits
 **Instruction:** Expected synergistic benefits.
+
+---
 
 ### Program Manager Authority
 **Instruction:** Authority level of the program manager.

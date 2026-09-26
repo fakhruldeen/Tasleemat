@@ -13,14 +13,22 @@ Form: Statement of Work SOW (Instructions)
 ### Scope of Work
 **Instruction:** Detailed description of vendor work.
 
+---
+
 ### Period of Performance
 **Instruction:** Start and end dates.
+
+---
 
 ### Deliverables Schedule
 **Instruction:** Specific milestones and due dates.
 
+---
+
 ### Applicable Standards
 **Instruction:** Technical or quality standards to adhere to.
+
+---
 
 ### Acceptance Criteria
 **Instruction:** How the buyer will accept the deliverables.

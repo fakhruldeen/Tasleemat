@@ -13,14 +13,22 @@ Form: Prompt Library Log (Instructions)
 ### Prompt ID
 **Instruction:** Unique identifier.
 
+---
+
 ### Use Case
 **Instruction:** What the prompt is used for.
+
+---
 
 ### Prompt Text
 **Instruction:** The actual text or structure of the prompt.
 
+---
+
 ### Expected Output
 **Instruction:** What a successful response looks like.
+
+---
 
 ### Status/Version
 **Instruction:** Current version or status of the prompt.

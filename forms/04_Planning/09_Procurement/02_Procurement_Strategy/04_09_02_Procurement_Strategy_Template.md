@@ -17,15 +17,21 @@
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
+---
+
 ### Construction services
 <!-- Describe the limitations of delivery, such as design build, design bid build, etc. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
+---
+
 ### Contract types
 <!-- Describe the contract type, fixed, incentive, or award fees. Include the criteria associated with the fees. Common contract types include: Fixed Price: FFP – Firm Fixed Price FPIF – Fixed Price with Incentive Fee FP-EPA – Fixed Price with Economic Price Adjustment Cost Reimbursable: CPFF – Cost Plus Fixed Fee CPIF – Cost Plus Incentive Fee CPAF – Cost Plus Award Fee Time and Materials (T&M) -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+
+---
 
 ### Procurement phases
 <!-- List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include any knowledge transfer requirements. -->

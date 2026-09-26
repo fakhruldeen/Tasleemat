@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A subsidiary management plan aligned with Tasleemat standards known as the **Cost Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
 
+---
+
 ### 2. Why?
 To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Cost Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -40,7 +48,7 @@ To accurately and professionally complete the **Cost Management Plan**, the resp
 *   **Cost reporting information:** and format Document the cost information required for status and progress reporting. If a specific reporting format will be used, attach a copy or refer to the specific form or template. Indicate the reporting frequency.
 *   **Additional details:** Describe variables associated with strategic funding choices, such as make or buy, buy or lease, borrowing funds versus using in-house funding, etc.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_04_01_Cost_Management_Plan_Template.md)

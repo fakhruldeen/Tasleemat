@@ -18,6 +18,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Program/Project Name:</b> <i>Name of the initiative.</i></li><li><b>Strategic Objective:</b> <i>Which strategic goal this maps to.</i></li><li><b>Start Date:</b> <i>Expected start quarter/date.</i></li><li><b>End Date:</b> <i>Expected end quarter/date.</i></li><li><b>Budget Estimate:</b> <i>High level budget allocation.</i></li><li><b>Status:</b> <i>Current status.</i></li></ul></div>
+
 ---
 
 ### Signatures

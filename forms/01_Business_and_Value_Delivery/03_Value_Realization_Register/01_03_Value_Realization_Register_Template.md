@@ -15,6 +15,7 @@
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Benefit ID:</b> <i>Unique identifier for the benefit.</i></li><li><b>Description:</b> <i>Description of the benefit.</i></li><li><b>Owner:</b> <i>Person accountable for the benefit realization.</i></li><li><b>Target Value:</b> <i>The expected value.</i></li><li><b>Actual Value:</b> <i>The realized value.</i></li><li><b>Status:</b> <i>Status of the benefit realization.</i></li></ul></div>
+
 ---
 
 ### Signatures

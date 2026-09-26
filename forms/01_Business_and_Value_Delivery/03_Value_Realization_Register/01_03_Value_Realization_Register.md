@@ -13,17 +13,27 @@ Form: Value Realization Register (Instructions)
 ### Benefit ID
 **Instruction:** Unique identifier for the benefit.
 
+---
+
 ### Description
 **Instruction:** Description of the benefit.
+
+---
 
 ### Owner
 **Instruction:** Person accountable for the benefit realization.
 
+---
+
 ### Target Value
 **Instruction:** The expected value.
 
+---
+
 ### Actual Value
 **Instruction:** The realized value.
+
+---
 
 ### Status
 **Instruction:** Status of the benefit realization.

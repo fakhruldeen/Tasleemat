@@ -13,14 +13,22 @@ Form: Resource Capacity Matrix (Instructions)
 ### Resource Role/Team
 **Instruction:** Skillset or team name.
 
+---
+
 ### Total Available Capacity
 **Instruction:** Total hours/FTE available.
+
+---
 
 ### Allocated Capacity
 **Instruction:** Hours/FTE already assigned.
 
+---
+
 ### Remaining Capacity
 **Instruction:** Available hours/FTE.
+
+---
 
 ### Critical Constraints
 **Instruction:** Any bottlenecks or single points of failure.

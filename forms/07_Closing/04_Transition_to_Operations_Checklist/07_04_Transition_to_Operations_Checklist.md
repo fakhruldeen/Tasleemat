@@ -13,14 +13,22 @@ Form: Transition to Operations Checklist (Instructions)
 ### Checklist Item
 **Instruction:** e.g., Code deployed, Support manuals written.
 
+---
+
 ### Responsible Party
 **Instruction:** Who owns the item.
+
+---
 
 ### Sign-off Signature
 **Instruction:** Approval.
 
+---
+
 ### Date
 **Instruction:** When completed.
+
+---
 
 ### Notes
 **Instruction:** Any handover details.

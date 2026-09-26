@@ -18,6 +18,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Metric/KPI:</b> <i>What is being measured (e.g., Quality, Timeliness).</i></li><li><b>Target Score:</b> <i>Expected performance level.</i></li><li><b>Actual Score:</b> <i>Measured performance.</i></li><li><b>Variance:</b> <i>Difference between target and actual.</i></li><li><b>Corrective Action:</b> <i>Steps to improve if deficient.</i></li></ul></div>
+
 ---
 
 ### Signatures

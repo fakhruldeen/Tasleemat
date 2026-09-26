@@ -13,14 +13,22 @@ Form: AI Governance Plan (Instructions)
 ### Ethical Guidelines
 **Instruction:** Principles guiding the ethical use of AI on this project.
 
+---
+
 ### Data Privacy & Security
 **Instruction:** Protocols for protecting sensitive data used by AI models.
+
+---
 
 ### Bias Mitigation
 **Instruction:** Strategies to identify and reduce bias in AI outcomes.
 
+---
+
 ### Compliance Requirements
 **Instruction:** Legal or organizational regulations the AI must adhere to.
+
+---
 
 ### Accountability
 **Instruction:** Who is responsible for the AI's actions and outputs.

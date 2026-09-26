@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A subsidiary management plan aligned with Tasleemat standards known as the **Risk Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
 
+---
+
 ### 2. Why?
 To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Risk Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -43,7 +51,7 @@ To accurately and professionally complete the **Risk Management Plan**, the resp
 *   **Definitions of impact by objective:** Document how impact will be measured and defined for either the project as a whole or for each objective. The probability definitions should reflect the stakeholder risk appetite. Include the scale used and the definition for each level in the impact scale. For example: Cost Impacts: Very high = overrun of control account budget of >20 percent High = overrun of control account budget between 15–20 percent Medium = overrun of control account budget between 10–15 percent Low = overrun of control account budget between 5–10 percent Very low = overrun of control account budget of <5 percent
 *   **Probability and impact matrix:** Describe the combinations of probability and impact that indicate a high risk, a medium risk, and a low risk and the scoring that will be used to prioritize risks. This can also include an assessment of urgency to indicate how soon the risk event is likely to occur.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_08_01_Risk_Management_Plan_Template.md)

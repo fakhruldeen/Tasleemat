@@ -13,14 +13,22 @@ Form: Sprint Planning Log (Instructions)
 ### Sprint Goal
 **Instruction:** The overarching goal of the sprint.
 
+---
+
 ### Story ID
 **Instruction:** Jira or board reference.
+
+---
 
 ### Story Points
 **Instruction:** Estimated effort.
 
+---
+
 ### Assignee
 **Instruction:** Who is working on it.
+
+---
 
 ### Acceptance Criteria
 **Instruction:** High level criteria for success.

@@ -15,6 +15,7 @@
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Data Maturity:</b> <i>Assessment of data quality, availability, and architecture.</i></li><li><b>Technical Infrastructure:</b> <i>Evaluation of compute, storage, and software capabilities.</i></li><li><b>Skills & Expertise:</b> <i>Availability of required AI and domain expertise.</i></li><li><b>Organizational Culture:</b> <i>Readiness for change and adoption of AI tools.</i></li><li><b>Overall Readiness Score:</b> <i>Summary score or recommendation.</i></li></ul></div>
+
 ---
 
 ### Signatures

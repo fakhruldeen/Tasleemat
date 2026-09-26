@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A project document including the identification, assessment, and classification of project stakeholders.
 
+---
+
 ### 2. Why?
 Crucial for understanding who impacts or is impacted by the project, enabling effective communication and engagement strategies.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **INITIATING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Stakeholder Register**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -38,7 +46,7 @@ To accurately and professionally complete the **Stakeholder Register**, the resp
 *   **Expectations:** Main expectations of the project and/or product
 *   **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](03_04_Stakeholder_Register_Template.md)

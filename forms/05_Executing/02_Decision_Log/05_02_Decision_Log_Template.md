@@ -15,6 +15,7 @@
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>ID:</b> <i>Enter a unique decision identifier.</i></li><li><b>Category:</b> <i>Document the type of decision, such as technical, project, process, etc.</i></li><li><b>Decision:</b> <i>Provide a detailed description of the decision.</i></li><li><b>Responsible party:</b> <i>Identify the person authorized to make the decision.</i></li><li><b>Priority:</b> <i>Enter the date the decision was made and authorized.</i></li><li><b>Comments:</b> <i>Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.</i></li></ul></div>
+
 ---
 
 ### Signatures

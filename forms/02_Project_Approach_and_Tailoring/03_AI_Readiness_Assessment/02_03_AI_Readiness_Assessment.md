@@ -13,14 +13,22 @@ Form: AI Readiness Assessment (Instructions)
 ### Data Maturity
 **Instruction:** Assessment of data quality, availability, and architecture.
 
+---
+
 ### Technical Infrastructure
 **Instruction:** Evaluation of compute, storage, and software capabilities.
+
+---
 
 ### Skills & Expertise
 **Instruction:** Availability of required AI and domain expertise.
 
+---
+
 ### Organizational Culture
 **Instruction:** Readiness for change and adoption of AI tools.
+
+---
 
 ### Overall Readiness Score
 **Instruction:** Summary score or recommendation.

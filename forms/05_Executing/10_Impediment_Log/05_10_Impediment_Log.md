@@ -13,17 +13,27 @@ Form: Impediment Log (Instructions)
 ### Impediment ID
 **Instruction:** Unique ID.
 
+---
+
 ### Date Raised
 **Instruction:** When it was identified.
+
+---
 
 ### Description
 **Instruction:** What is blocking the team.
 
+---
+
 ### Impact
 **Instruction:** How it affects the sprint.
 
+---
+
 ### Owner
 **Instruction:** Scrum Master or person resolving it.
+
+---
 
 ### Status
 **Instruction:** Open, In Progress, Resolved.

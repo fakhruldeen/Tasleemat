@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A formal proposal to modify any document, deliverable, or baseline.
 
+---
+
 ### 2. Why?
 Maintains control over the project baselines and ensures all changes are evaluated for impact on time, cost, and scope before approval.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **EXECUTING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Managed actively by the Project Manager and the core executing team, updated as work is performed.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Change Request**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -44,7 +52,7 @@ To accurately and professionally complete the **Change Request**, the responsibl
 *   **Project:** documents Describe the impact of the proposed change on each project document.
 *   **Comments:** Provide any comments that will clarify information about the requested change.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](05_03_Change_Request_Template.md)

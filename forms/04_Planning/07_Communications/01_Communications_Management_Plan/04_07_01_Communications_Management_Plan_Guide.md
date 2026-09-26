@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A subsidiary management plan aligned with Tasleemat standards known as the **Communications Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
 
+---
+
 ### 2. Why?
 To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Communications Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -42,7 +50,7 @@ To accurately and professionally complete the **Communications Management Plan**
 *   **Stakeholder**
 *   **glossary of terms or acronyms**
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_07_01_Communications_Management_Plan_Template.md)

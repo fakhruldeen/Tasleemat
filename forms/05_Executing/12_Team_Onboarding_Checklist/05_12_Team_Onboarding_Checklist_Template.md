@@ -18,6 +18,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Task:</b> <i>Onboarding activity (e.g. System access granted).</i></li><li><b>Assigned To:</b> <i>Who is responsible.</i></li><li><b>Due Date:</b> <i>When it should be completed.</i></li><li><b>Status:</b> <i>Done/Pending.</i></li></ul></div>
+
 ---
 
 ### Signatures

@@ -18,6 +18,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Target Audience:</b> <i>Who needs training.</i></li><li><b>Training Module:</b> <i>What they are learning.</i></li><li><b>Delivery Method:</b> <i>In-person, webinar, self-paced.</i></li><li><b>Date/Schedule:</b> <i>When training occurs.</i></li><li><b>Completion Status:</b> <i>Number of users completed.</i></li></ul></div>
+
 ---
 
 ### Signatures

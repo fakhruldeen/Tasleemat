@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A dynamic, living repository (**Interdependency Register**) used to capture, track, and monitor items that arise during project execution.
 
+---
+
 ### 2. Why?
 To maintain centralized visibility and prompt resolution of any outstanding items, risks, or requests that could impact project delivery.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PROGRAM AND PORTFOLIO MANAGEMENT Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Interdependency Register**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -38,7 +46,7 @@ To accurately and professionally complete the **Interdependency Register**, the 
 *   **Required Date:** When the deliverable is needed.
 *   **Status:** On track, Delayed, etc.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](00_03_Interdependency_Register_Template.md)

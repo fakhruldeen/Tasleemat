@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 The document that describes how the project will be executed, monitored, and controlled.
 
+---
+
 ### 2. Why?
 It integrates and consolidates all of the subsidiary management plans and baselines to guide the team through project closure.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Project Management Plan**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -42,7 +50,7 @@ To accurately and professionally complete the **Project Management Plan**, the r
 *   **Cost baseline management:** Describe how the cost baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted.
 *   **Baselines:** Attach all project baselines.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_01_01_Project_Management_Plan_Template.md)

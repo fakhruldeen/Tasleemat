@@ -13,14 +13,22 @@ Form: OCM Strategy and Plan (Instructions)
 ### Change Vision
 **Instruction:** Why the human change is necessary.
 
+---
+
 ### Stakeholder Impact Analysis
 **Instruction:** How different groups will be affected.
+
+---
 
 ### Communication Strategy
 **Instruction:** How changes will be communicated.
 
+---
+
 ### Resistance Management
 **Instruction:** How to handle pushback from users.
+
+---
 
 ### Sponsorship Strategy
 **Instruction:** How leaders will champion the change.

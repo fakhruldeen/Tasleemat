@@ -13,11 +13,17 @@ Form: Business Case (Instructions)
 ### Business Need
 **Instruction:** Identify the problem or opportunity.
 
+---
+
 ### Analysis of Situation
 **Instruction:** Describe the current state, future state, and root causes.
 
+---
+
 ### Recommendation
 **Instruction:** The recommended option or approach to address the need.
+
+---
 
 ### Evaluation Criteria
 **Instruction:** Metrics used to measure success.

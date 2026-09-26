@@ -13,23 +13,37 @@ Form: Stakeholder Engagement Plan (Instructions)
 ### Stakeholder changes
 **Instruction:** Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.
 
+---
+
 ### Interrelationships
 **Instruction:** List any relationships between and among stakeholder groups.
+
+---
 
 ### Stakeholder engagement approach
 **Instruction:** Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.
 
+---
+
 ### unaware
 **Instruction:** 
+
+---
 
 ### Stakeholder relationships
 **Instruction:** 
 
+---
+
 ### Pending Stakeholder changes
 **Instruction:** 
 
+---
+
 ### C = Current level of engagement
 **Instruction:** 
+
+---
 
 ### Stakeholder
 **Instruction:** 

@@ -13,6 +13,8 @@ Form: Definition of Ready and Done (Instructions)
 ### Definition of Ready (DoR)
 **Instruction:** Criteria a story must meet before entering a sprint (e.g., clear acceptance criteria, estimated).
 
+---
+
 ### Definition of Done (DoD)
 **Instruction:** Criteria a story must meet to be considered complete (e.g., coded, tested, documented, approved).
 

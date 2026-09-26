@@ -13,14 +13,22 @@ Form: Benefits Management Plan (Instructions)
 ### Target Benefits
 **Instruction:** Expected tangible and intangible value to be gained.
 
+---
+
 ### Strategic Alignment
 **Instruction:** How the benefits align with the organization's strategic goals.
+
+---
 
 ### Timeframe
 **Instruction:** When the benefits are expected to be realized.
 
+---
+
 ### Metrics
 **Instruction:** How the benefits will be measured.
+
+---
 
 ### Risks
 **Instruction:** Risks associated with realizing the benefits.

@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A dynamic, living repository (**Value Realization Register**) used to capture, track, and monitor items that arise during project execution.
 
+---
+
 ### 2. Why?
 To maintain centralized visibility and prompt resolution of any outstanding items, risks, or requests that could impact project delivery.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **BUSINESS AND VALUE DELIVERY Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Value Realization Register**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -38,7 +46,7 @@ To accurately and professionally complete the **Value Realization Register**, th
 *   **Actual Value:** The realized value.
 *   **Status:** Status of the benefit realization.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](01_03_Value_Realization_Register_Template.md)

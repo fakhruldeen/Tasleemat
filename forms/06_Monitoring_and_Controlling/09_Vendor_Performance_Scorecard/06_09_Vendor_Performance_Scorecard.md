@@ -13,14 +13,22 @@ Form: Vendor Performance Scorecard (Instructions)
 ### Metric/KPI
 **Instruction:** What is being measured (e.g., Quality, Timeliness).
 
+---
+
 ### Target Score
 **Instruction:** Expected performance level.
+
+---
 
 ### Actual Score
 **Instruction:** Measured performance.
 
+---
+
 ### Variance
 **Instruction:** Difference between target and actual.
+
+---
 
 ### Corrective Action
 **Instruction:** Steps to improve if deficient.

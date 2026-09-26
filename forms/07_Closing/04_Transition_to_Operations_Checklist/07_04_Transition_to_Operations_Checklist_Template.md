@@ -18,6 +18,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Checklist Item:</b> <i>e.g., Code deployed, Support manuals written.</i></li><li><b>Responsible Party:</b> <i>Who owns the item.</i></li><li><b>Sign-off Signature:</b> <i>Approval.</i></li><li><b>Date:</b> <i>When completed.</i></li><li><b>Notes:</b> <i>Any handover details.</i></li></ul></div>
+
 ---
 
 ### Signatures

@@ -13,6 +13,8 @@ Form: Responsibility Assignment Matrix (Instructions)
 ### Work package
 **Instruction:** Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.
 
+---
+
 ### Resource
 **Instruction:** Identify the person, division, or organization that will be working on the project.
 

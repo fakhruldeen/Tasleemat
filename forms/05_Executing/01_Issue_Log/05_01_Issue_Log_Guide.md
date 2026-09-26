@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A project document where information about issues is recorded and monitored.
 
+---
+
 ### 2. Why?
 Ensures that problems threatening the project's success are formally tracked, assigned, and resolved in a timely manner.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **EXECUTING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Managed actively by the Project Manager and the core executing team, updated as work is performed.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Issue Log**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -42,7 +50,7 @@ To accurately and professionally complete the **Issue Log**, the responsible par
 *   **Final resolution:** Describe how the issue was resolved.
 *   **Comments:** Document any clarifying comments about the issue, resolution, or other fields on the form.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](05_01_Issue_Log_Template.md)

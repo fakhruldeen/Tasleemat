@@ -13,14 +13,22 @@ Form: AI Use Case Canvas (Instructions)
 ### Problem Statement
 **Instruction:** The specific problem the AI will solve.
 
+---
+
 ### AI Pattern/Solution
 **Instruction:** The type of AI model or approach (e.g., generative, predictive).
+
+---
 
 ### Data Sources
 **Instruction:** Where the data will come from.
 
+---
+
 ### Value Proposition
 **Instruction:** The expected ROI or value delivery.
+
+---
 
 ### Key Risks
 **Instruction:** Major risks associated with this specific use case.

@@ -19,20 +19,28 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
+---
+
 ### PII Detection
 <!-- Does it contain Personally Identifiable Information? -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+
+---
 
 ### Consent Management
 <!-- How user consent was obtained. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
 
+---
+
 ### Data Retention Policy
 <!-- How long data is stored and how it's deleted. -->
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+
+---
 
 ### Compliance Alignment
 <!-- GDPR, CCPA, or local regulatory alignment. -->

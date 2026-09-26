@@ -13,8 +13,12 @@ Form: Milestone List (Instructions)
 ### Milestone name
 **Instruction:** Milestone name that uniquely defines the milestone
 
+---
+
 ### Milestone description
 **Instruction:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete
+
+---
 
 ### Type
 **Instruction:** A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional

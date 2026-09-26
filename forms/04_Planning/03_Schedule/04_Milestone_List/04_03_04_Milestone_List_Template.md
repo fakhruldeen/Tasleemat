@@ -15,6 +15,7 @@
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Milestone name:</b> <i>Milestone name that uniquely defines the milestone</i></li><li><b>Milestone description:</b> <i>A description of the milestone in enough detail to understand what is needed to determine the milestone is complete</i></li><li><b>Type:</b> <i>A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional</i></li></ul></div>
+
 ---
 
 ### Signatures

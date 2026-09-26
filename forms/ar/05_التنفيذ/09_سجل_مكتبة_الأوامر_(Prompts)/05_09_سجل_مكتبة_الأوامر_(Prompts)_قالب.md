@@ -15,6 +15,7 @@
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Prompt ID:</b> <i>Unique identifier.</i></li><li><b>Use Case:</b> <i>What the prompt is used for.</i></li><li><b>Prompt Text:</b> <i>The actual text or structure of the prompt.</i></li><li><b>Expected Output:</b> <i>What a successful response looks like.</i></li><li><b>Status/Version:</b> <i>Current version or status of the prompt.</i></li></ul></div>
+
 ---
 
 ### التوقيعات

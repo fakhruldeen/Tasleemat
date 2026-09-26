@@ -13,20 +13,32 @@ Form: Change Log (Instructions)
 ### Category
 **Instruction:** Enter the category from the change request form. Describe the proposed change.
 
+---
+
 ### Requestor
 **Instruction:** Enter the name of the person requesting the change.
+
+---
 
 ### Submission date
 **Instruction:** Enter the date the change was submitted.
 
+---
+
 ### Status
 **Instruction:** Enter the status as open, pending, closed.
+
+---
 
 ### Disposition
 **Instruction:** Enter the outcome of the change request as approved, deferred, or rejected.
 
+---
+
 ### ID
 **Instruction:** 
+
+---
 
 ### Description of change
 **Instruction:** 

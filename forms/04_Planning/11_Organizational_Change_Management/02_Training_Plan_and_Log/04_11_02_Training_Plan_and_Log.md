@@ -13,14 +13,22 @@ Form: Training Plan and Log (Instructions)
 ### Target Audience
 **Instruction:** Who needs training.
 
+---
+
 ### Training Module
 **Instruction:** What they are learning.
+
+---
 
 ### Delivery Method
 **Instruction:** In-person, webinar, self-paced.
 
+---
+
 ### Date/Schedule
 **Instruction:** When training occurs.
+
+---
 
 ### Completion Status
 **Instruction:** Number of users completed.

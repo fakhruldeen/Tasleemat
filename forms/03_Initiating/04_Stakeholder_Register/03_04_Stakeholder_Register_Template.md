@@ -15,6 +15,7 @@
 
 <br>
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Name:</b> <i>Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information</i></li><li><b>Position/Role:</b> <i>The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team, such as testing lead, Scrum Master, or scheduler</i></li><li><b>Contact information:</b> <i>How to communicate with the stakeholder, such as their phone number, email address, or physical address</i></li><li><b>Requirements:</b> <i>High-level needs for the project and/or product</i></li><li><b>Expectations:</b> <i>Main expectations of the project and/or product</i></li><li><b>Classification:</b> <i>Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact</i></li></ul></div>
+
 ---
 
 ### Signatures

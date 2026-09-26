@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A formal Tasleemat-aligned project document known as the **Team Performance Assessment**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
 
+---
+
 ### 2. Why?
 To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **EXECUTING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Managed actively by the Project Manager and the core executing team, updated as work is performed.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Team Performance Assessment**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -47,7 +55,7 @@ To accurately and professionally complete the **Team Performance Assessment**, t
 *   **Approach:** Describe the development approach, such as training, mentoring, or coaching.
 *   **Actions:** List the actions necessary to implement the development approach.
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](05_06_Team_Performance_Assessment_Template.md)

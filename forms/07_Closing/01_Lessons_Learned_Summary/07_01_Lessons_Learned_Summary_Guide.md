@@ -19,14 +19,22 @@ This document provides a comprehensive, professional reference to understand the
 ### 1. What?
 A formal Tasleemat-aligned project document known as the **Lessons Learned Summary**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
 
+---
+
 ### 2. Why?
 To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+
+---
 
 ### 3. When?
 This artifact is primarily prepared, utilized, and updated during the **CLOSING Process Group** of the project lifecycle.
 
+---
+
 ### 4. Who?
 **Responsibilities:** Finalized by the Project Manager for formal sign-off by the Sponsor or Customer, and archived for historical records.
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **Lessons Learned Summary**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
@@ -64,7 +72,7 @@ To accurately and professionally complete the **Lessons Learned Summary**, the r
 *   **Quality defects**
 *   **Vendor management**
 
-
+---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](07_01_Lessons_Learned_Summary_Template.md)
