@@ -33,6 +33,7 @@ Please populate the table below with the following details:
 
 | Prepared By: | Reviewed By: | Approved By: |
 | :--- | :--- | :--- |
+| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
 | **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |
 
