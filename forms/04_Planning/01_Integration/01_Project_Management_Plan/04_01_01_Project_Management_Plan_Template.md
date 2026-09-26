@@ -20,6 +20,17 @@
 
 ---
 
+### Phase Reviews and Criteria
+<!-- Define the reviews and criteria for each phase. Populate the table below. -->
+
+| Phase | Reviews | Entry criteria | Exit criteria |
+| :--- | :--- | :--- | :--- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+
+---
+
 ### Development approaches
 <!-- Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches. -->
 

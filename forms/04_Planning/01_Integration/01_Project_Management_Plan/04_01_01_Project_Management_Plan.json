@@ -8,6 +8,10 @@
             "guidance": "Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 3 columns: Phase, Key activities, Key Deliverables.",
             "value": ""
         },
+        "Phase Reviews and Criteria": {
+            "guidance": "Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 4 columns: Phase, Reviews, Entry criteria, Exit criteria.",
+            "value": ""
+        },
         "Development approaches": {
             "guidance": "Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches.",
             "value": ""
