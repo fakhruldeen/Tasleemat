@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "خطة إدارة الفوائد",
+    "fields": {
+        "Target Benefits": {
+            "guidance": "Expected tangible and intangible value to be gained.",
+            "value": ""
+        },
+        "Strategic Alignment": {
+            "guidance": "How the benefits align with the organization's strategic goals.",
+            "value": ""
+        },
+        "Timeframe": {
+            "guidance": "When the benefits are expected to be realized.",
+            "value": ""
+        },
+        "Metrics": {
+            "guidance": "How the benefits will be measured.",
+            "value": ""
+        },
+        "Risks": {
+            "guidance": "Risks associated with realizing the benefits.",
+            "value": ""
+        }
+    }
+}

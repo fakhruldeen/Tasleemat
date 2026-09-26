@@ -1,0 +1,68 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Team Performance Assessment template based on the provided project context.",
+    "form_name": "Team Performance Assessment",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Technical performance": {
+            "guidance": "",
+            "value": ""
+        },
+        "Scope": {
+            "guidance": "Rate the team\u2019s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.",
+            "value": ""
+        },
+        "Quality": {
+            "guidance": "Rate the team\u2019s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.",
+            "value": ""
+        },
+        "Schedule": {
+            "guidance": "Rate the team\u2019s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.",
+            "value": ""
+        },
+        "Cost": {
+            "guidance": "Rate the team\u2019s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.",
+            "value": ""
+        },
+        "Communication": {
+            "guidance": "Rate the team\u2019s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.",
+            "value": ""
+        },
+        "Collaboration": {
+            "guidance": "Rate the team\u2019s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.",
+            "value": ""
+        },
+        "Conflict management": {
+            "guidance": "Rate the team\u2019s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.",
+            "value": ""
+        },
+        "Decision making": {
+            "guidance": "Rate the team\u2019s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.",
+            "value": ""
+        },
+        "Interpersonal competency": {
+            "guidance": "",
+            "value": ""
+        },
+        "Team morale": {
+            "guidance": "Describe the overall team morale.",
+            "value": ""
+        },
+        "Areas for development": {
+            "guidance": "",
+            "value": ""
+        },
+        "Area": {
+            "guidance": "List technical or interpersonal areas for development.",
+            "value": ""
+        },
+        "Approach": {
+            "guidance": "Describe the development approach, such as training, mentoring, or coaching.",
+            "value": ""
+        },
+        "Actions": {
+            "guidance": "List the actions necessary to implement the development approach.",
+            "value": ""
+        }
+    }
+}

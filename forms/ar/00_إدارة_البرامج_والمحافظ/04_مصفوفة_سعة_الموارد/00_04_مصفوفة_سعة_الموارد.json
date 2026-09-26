@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "مصفوفة سعة الموارد",
+    "fields": {
+        "Resource Role/Team": {
+            "guidance": "Skillset or team name.",
+            "value": ""
+        },
+        "Total Available Capacity": {
+            "guidance": "Total hours/FTE available.",
+            "value": ""
+        },
+        "Allocated Capacity": {
+            "guidance": "Hours/FTE already assigned.",
+            "value": ""
+        },
+        "Remaining Capacity": {
+            "guidance": "Available hours/FTE.",
+            "value": ""
+        },
+        "Critical Constraints": {
+            "guidance": "Any bottlenecks or single points of failure.",
+            "value": ""
+        }
+    }
+}

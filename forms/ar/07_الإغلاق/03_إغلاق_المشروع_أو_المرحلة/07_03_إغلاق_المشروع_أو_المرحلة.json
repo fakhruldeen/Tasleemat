@@ -1,0 +1,38 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "إغلاق المشروع أو المرحلة",
+    "fields": {
+        "Project description": {
+            "guidance": "Provide a summary level description of the project.",
+            "value": ""
+        },
+        "Performance summary": {
+            "guidance": "",
+            "value": ""
+        },
+        "النطاق": {
+            "guidance": "Describe the scope objectives needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to complete the scope objectives. Provide evidence that the completion criteria were met.",
+            "value": ""
+        },
+        "الجودة": {
+            "guidance": "Describe the quality objectives and criteria needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to meet the product and project quality objectives. Enter the verification and validation information from the product acceptance form.",
+            "value": ""
+        },
+        "Variances": {
+            "guidance": "Document the time and cost objectives and the final completion date and final expenditures. Explain any variances.",
+            "value": ""
+        },
+        "Benefits management": {
+            "guidance": "Describe how the final product, service, or result achieved the benefits the project was undertaken to address.",
+            "value": ""
+        },
+        "Business needs": {
+            "guidance": "Describe how the final product, service, or result achieved the business needs identified in the business plan.",
+            "value": ""
+        },
+        "Risks and issues": {
+            "guidance": "Summarize any significant risks or issues, or the overall risk exposure, and describe the response and resolution strategies.",
+            "value": ""
+        }
+    }
+}

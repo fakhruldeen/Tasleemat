@@ -1,0 +1,50 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تدقيق المشتريات",
+    "fields": {
+        "What worked well": {
+            "guidance": "",
+            "value": ""
+        },
+        "النطاق": {
+            "guidance": "Describe aspects of contract scope that were handled well.",
+            "value": ""
+        },
+        "الجودة": {
+            "guidance": "Describe aspects of product quality that were handled well.",
+            "value": ""
+        },
+        "الجدول الزمني": {
+            "guidance": "Describe aspects of the contract schedule that were handled well.",
+            "value": ""
+        },
+        "التكلفة": {
+            "guidance": "Describe aspects of the contract budget that were handled well.",
+            "value": ""
+        },
+        "Other": {
+            "guidance": "Describe any other aspects of the contract or procurement that were handled well.",
+            "value": ""
+        },
+        "Plan": {
+            "guidance": "procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.",
+            "value": ""
+        },
+        "What can be improved": {
+            "guidance": "",
+            "value": ""
+        },
+        "Procurement management": {
+            "guidance": "process audit",
+            "value": ""
+        },
+        "Conduct": {
+            "guidance": "procurements Control procurements Good practices to share Describe any good practices that can be shared with other projects or that should be incorporated into organization policies, procedures, or processes. Include information on lessons learned.",
+            "value": ""
+        },
+        "Areas for improvement": {
+            "guidance": "Describe any areas that should be improved with the procurement process. Include information that should be incorporated into policies, procedures, or processes. Include information on lessons learned.",
+            "value": ""
+        }
+    }
+}

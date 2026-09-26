@@ -1,0 +1,7 @@
+Field,Guidance,LLM_Generated_Value
+Impediment ID,Unique ID.,
+Date Raised,When it was identified.,
+Description,What is blocking the team.,
+Impact,How it affects the sprint.,
+Owner,Scrum Master or person resolving it.,
+Status,"Open, In Progress, Resolved.",

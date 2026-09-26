@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Interdependency Register",
+    "fields": {
+        "Dependency ID": {
+            "guidance": "Unique ID.",
+            "value": ""
+        },
+        "Predecessor Project": {
+            "guidance": "Project that must finish first.",
+            "value": ""
+        },
+        "Successor Project": {
+            "guidance": "Project waiting on the predecessor.",
+            "value": ""
+        },
+        "Deliverable/Condition": {
+            "guidance": "What specifically is being waited on.",
+            "value": ""
+        },
+        "Required Date": {
+            "guidance": "When the deliverable is needed.",
+            "value": ""
+        },
+        "Status": {
+            "guidance": "On track, Delayed, etc.",
+            "value": ""
+        }
+    }
+}

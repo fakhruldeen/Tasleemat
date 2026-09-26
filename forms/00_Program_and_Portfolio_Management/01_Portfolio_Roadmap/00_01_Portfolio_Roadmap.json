@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Portfolio Roadmap",
+    "fields": {
+        "Program/Project Name": {
+            "guidance": "Name of the initiative.",
+            "value": ""
+        },
+        "Strategic Objective": {
+            "guidance": "Which strategic goal this maps to.",
+            "value": ""
+        },
+        "Start Date": {
+            "guidance": "Expected start quarter/date.",
+            "value": ""
+        },
+        "End Date": {
+            "guidance": "Expected end quarter/date.",
+            "value": ""
+        },
+        "Budget Estimate": {
+            "guidance": "High level budget allocation.",
+            "value": ""
+        },
+        "Status": {
+            "guidance": "Current status.",
+            "value": ""
+        }
+    }
+}

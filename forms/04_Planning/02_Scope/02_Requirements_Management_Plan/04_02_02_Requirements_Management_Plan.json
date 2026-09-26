@@ -1,0 +1,64 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Requirements Management Plan template based on the provided project context.",
+    "form_name": "Requirements Management Plan",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Procurement integration": {
+            "guidance": "",
+            "value": ""
+        },
+        "Scope": {
+            "guidance": "Define how the contractor's WBS will integrate with the project WBS.",
+            "value": ""
+        },
+        "Schedule": {
+            "guidance": "Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.",
+            "value": ""
+        },
+        "Documentation": {
+            "guidance": "Describe how contractor documentation will integrate with project documentation.",
+            "value": ""
+        },
+        "Risk": {
+            "guidance": "Describe how risk identification, analysis, and response will integrate with risk management for the overall project.",
+            "value": ""
+        },
+        "Reporting": {
+            "guidance": "Define how the contractor's status reports will integrate with the project status report.",
+            "value": ""
+        },
+        "Timing": {
+            "guidance": "Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth.",
+            "value": ""
+        },
+        "Performance metrics": {
+            "guidance": "Document the metrics that will be used to evaluate the seller's performance.",
+            "value": ""
+        },
+        "Roles, responsibilities, and authority": {
+            "guidance": "Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.",
+            "value": ""
+        },
+        "Assumptions and constraints": {
+            "guidance": "Record assumptions and constraints related to the procurement activities.",
+            "value": ""
+        },
+        "Legal jurisdiction and currency": {
+            "guidance": "Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.",
+            "value": ""
+        },
+        "Independent estimates": {
+            "guidance": "Document whether independent cost estimates will be used and if they will be needed for source selection.",
+            "value": ""
+        },
+        "Risk management": {
+            "guidance": "Document requirements for performance bonds or insurance contracts to reduce risk.",
+            "value": ""
+        },
+        "Prequalified sellers": {
+            "guidance": "List any prequalified sellers that will be used.",
+            "value": ""
+        }
+    }
+}

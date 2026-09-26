@@ -1,0 +1,22 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "دراسة الجدوى (Business Case)",
+    "fields": {
+        "Business Need": {
+            "guidance": "Identify the problem or opportunity.",
+            "value": ""
+        },
+        "Analysis of Situation": {
+            "guidance": "Describe the current state, future state, and root causes.",
+            "value": ""
+        },
+        "Recommendation": {
+            "guidance": "The recommended option or approach to address the need.",
+            "value": ""
+        },
+        "Evaluation Criteria": {
+            "guidance": "Metrics used to measure success.",
+            "value": ""
+        }
+    }
+}

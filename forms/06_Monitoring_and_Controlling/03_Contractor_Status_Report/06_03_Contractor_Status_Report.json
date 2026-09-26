@@ -1,0 +1,36 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Contractor Status Report template based on the provided project context.",
+    "form_name": "Contractor Status Report",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Scope performance this reporting period": {
+            "guidance": "Describe progress on scope made during this reporting period. Quality performance this reporting period Identify any quality or performance variances. Schedule performance this reporting period Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.",
+            "value": ""
+        },
+        "Cost performance this reporting period": {
+            "guidance": "Describe whether the contract is on budget. If over or under budget, identify the cause of the variance. Forecast performance for future reporting periods Discuss the estimated delivery date and final cost of the contract. If the contract is a fixed price, do not enter cost forecasts.",
+            "value": ""
+        },
+        "Claims or disputes": {
+            "guidance": "Identify any new or resolved disputes or claims that have occurred during the current reporting period.",
+            "value": ""
+        },
+        "Risks": {
+            "guidance": "List any risks. Risks should also be in the risk register.",
+            "value": ""
+        },
+        "Planned corrective or preventive action": {
+            "guidance": "Identify planned corrective or preventive actions necessary to recover schedule, cost, scope, or quality variances.",
+            "value": ""
+        },
+        "Issues": {
+            "guidance": "Identify any new issues that have arisen. These should also be entered in the issue log.",
+            "value": ""
+        },
+        "Comments": {
+            "guidance": "Add any comments that will add relevance to the report.",
+            "value": ""
+        }
+    }
+}

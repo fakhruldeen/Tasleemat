@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this AI Readiness Assessment template based on the provided project context.",
+    "form_name": "AI Readiness Assessment",
+    "fields": {
+        "Data Maturity": {
+            "guidance": "Assessment of data quality, availability, and architecture.",
+            "value": ""
+        },
+        "Technical Infrastructure": {
+            "guidance": "Evaluation of compute, storage, and software capabilities.",
+            "value": ""
+        },
+        "Skills & Expertise": {
+            "guidance": "Availability of required AI and domain expertise.",
+            "value": ""
+        },
+        "Organizational Culture": {
+            "guidance": "Readiness for change and adoption of AI tools.",
+            "value": ""
+        },
+        "Overall Readiness Score": {
+            "guidance": "Summary score or recommendation.",
+            "value": ""
+        }
+    }
+}

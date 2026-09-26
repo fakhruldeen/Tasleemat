@@ -1,0 +1,30 @@
+---
+lang: en
+Form: Risk Mitigation Action Plan (Instructions)
+---
+
+# RISK MITIGATION ACTION PLAN - LLM GENERATION GUIDE
+
+> **System Prompt / Instructions:**
+> This document serves as the detailed instruction set for generating the `Risk Mitigation Action Plan`. Reference `parameters.md` for global project variables.
+
+---
+
+### Risk ID and Title
+**Instruction:** Reference to the Risk Register.
+
+### Current Risk Score
+**Instruction:** Probability x Impact.
+
+### Mitigation Strategy
+**Instruction:** Avoid, Transfer, Mitigate, Accept.
+
+### Detailed Action Steps
+**Instruction:** Step by step plan to reduce the risk.
+
+### Resource Requirements
+**Instruction:** Budget or people needed to execute the plan.
+
+### Target Risk Score
+**Instruction:** Expected score after mitigation.
+

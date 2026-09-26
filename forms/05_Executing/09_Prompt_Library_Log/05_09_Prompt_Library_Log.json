@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Prompt Library Log template based on the provided project context.",
+    "form_name": "Prompt Library Log",
+    "fields": {
+        "Prompt ID": {
+            "guidance": "Unique identifier.",
+            "value": ""
+        },
+        "Use Case": {
+            "guidance": "What the prompt is used for.",
+            "value": ""
+        },
+        "Prompt Text": {
+            "guidance": "The actual text or structure of the prompt.",
+            "value": ""
+        },
+        "Expected Output": {
+            "guidance": "What a successful response looks like.",
+            "value": ""
+        },
+        "Status/Version": {
+            "guidance": "Current version or status of the prompt.",
+            "value": ""
+        }
+    }
+}

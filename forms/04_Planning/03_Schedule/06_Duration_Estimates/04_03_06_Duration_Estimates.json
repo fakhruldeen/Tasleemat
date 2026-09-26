@@ -1,0 +1,68 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Duration Estimates template based on the provided project context.",
+    "form_name": "Duration Estimates",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "ID": {
+            "guidance": "",
+            "value": ""
+        },
+        "Unique identifier": {
+            "guidance": "",
+            "value": ""
+        },
+        "Parametric estimates": {
+            "guidance": "Effort hours Enter amount of labor it will take to accomplish the work. Usually shown in hours, but may also be shown in days. Example: 150 hours",
+            "value": ""
+        },
+        "Resource quantity": {
+            "guidance": "Document the number of resources available. Example: 2 people",
+            "value": ""
+        },
+        "Percent available": {
+            "guidance": "Enter amount of time the resources are available. Usually shown as the percent of time available per day or per week. Example: 75 percent of the time",
+            "value": ""
+        },
+        "Performance factor": {
+            "guidance": "Estimate a performance factor if appropriate. Generally effort hours are estimated based on the amount of effort it would take the average resource to complete the work. This can be modified if you have a highly skilled resource or someone who has very little experience. The more skilled the resource, the lower the performance factor. For example, an average resource would have a 1.0 performance factor. A highly skilled resource could get the work done faster, so you multiply the effort hours times a performance factor of .8. A less skilled resource will take longer to get the work done, so you would multiply the effort hours times 1.2. Example: A skilled worker with a performance factor of .8",
+            "value": ""
+        },
+        "Duration estimate": {
+            "guidance": "Divide the effort hours by the resource quantity times the percent available times the performance factor to determine the length of time it will take to accomplish the work. The equation is: Effort/ ( quantity \u00d7 percent available \u00d7 performance factor ) = duration Example: 150/ ( 2 \u00d7 \u22c575 \u00d7 \u22c58 ) = 125 hours",
+            "value": ""
+        },
+        "Analogous estimates": {
+            "guidance": "Previous activity Enter a description of the previous activity. Example: Build a 160 square foot deck.",
+            "value": ""
+        },
+        "Previous duration": {
+            "guidance": "Document the duration of the previous activity. Example: 10 days",
+            "value": ""
+        },
+        "Current activity": {
+            "guidance": "Describe how the current activity is different. Example: Build a 200 square foot deck.",
+            "value": ""
+        },
+        "Multiplier": {
+            "guidance": "Divide the current activity by the previous activity to get a multiplier. Example: 200/160 = 1.25",
+            "value": ""
+        },
+        "Most likely duration": {
+            "guidance": "Determine a most likely duration estimate. Most likely estimates assume that there will be some delays but nothing out of the ordinary. Example: 25 days",
+            "value": ""
+        },
+        "Pessimistic duration": {
+            "guidance": "Determine a pessimistic duration estimate. Pessimistic estimates assume there are significant risks that will materialize and cause delays. Example: 36 days",
+            "value": ""
+        },
+        "Weighting equation": {
+            "guidance": "Weight the three estimates and divide. The most common method of weighting is the beta distribution: tE = (tO + 4tM + tP)/6 Example: (20 + 4(25) + 36 )/6",
+            "value": ""
+        },
+        "Expected duration": {
+            "guidance": "Enter the expected duration based on the beta distribution calculation. Example: 26 days",
+            "value": ""
+        }
+    }
+}

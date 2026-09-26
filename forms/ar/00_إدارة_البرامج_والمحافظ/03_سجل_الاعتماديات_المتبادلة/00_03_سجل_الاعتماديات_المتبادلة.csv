@@ -1,0 +1,7 @@
+الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
+"Dependency ID","Unique ID.",""
+"Predecessor Project","Project that must finish first.",""
+"Successor Project","Project waiting on the predecessor.",""
+"Deliverable/Condition","What specifically is being waited on.",""
+"Required Date","When the deliverable is needed.",""
+"الحالة","On track, Delayed, etc.",""

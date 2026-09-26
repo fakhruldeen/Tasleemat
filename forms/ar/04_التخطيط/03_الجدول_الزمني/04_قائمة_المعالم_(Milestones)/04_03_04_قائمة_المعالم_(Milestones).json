@@ -1,0 +1,18 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "قائمة المعالم (Milestones)",
+    "fields": {
+        "Milestone name": {
+            "guidance": "Milestone name that uniquely defines the milestone",
+            "value": ""
+        },
+        "Milestone description": {
+            "guidance": "A description of the milestone in enough detail to understand what is needed to determine the milestone is complete",
+            "value": ""
+        },
+        "Type": {
+            "guidance": "A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional",
+            "value": ""
+        }
+    }
+}

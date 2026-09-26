@@ -1,0 +1,20 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Milestone List template based on the provided project context.",
+    "form_name": "Milestone List",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Milestone name": {
+            "guidance": "Milestone name that uniquely defines the milestone",
+            "value": ""
+        },
+        "Milestone description": {
+            "guidance": "A description of the milestone in enough detail to understand what is needed to determine the milestone is complete",
+            "value": ""
+        },
+        "Type": {
+            "guidance": "A description of the type of milestone, such as \u2022 Internal or external \u2022 Interim or final \u2022 Mandatory or optional",
+            "value": ""
+        }
+    }
+}

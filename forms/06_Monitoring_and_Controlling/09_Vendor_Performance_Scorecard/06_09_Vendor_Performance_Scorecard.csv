@@ -1,0 +1,6 @@
+Field,Guidance,LLM_Generated_Value
+Metric/KPI,"What is being measured (e.g., Quality, Timeliness).",
+Target Score,Expected performance level.,
+Actual Score,Measured performance.,
+Variance,Difference between target and actual.,
+Corrective Action,Steps to improve if deficient.,

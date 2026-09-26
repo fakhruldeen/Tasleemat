@@ -1,0 +1,14 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تدقيق المخاطر",
+    "fields": {
+        "Risk ID": {
+            "guidance": "Enter a unique risk identifier.",
+            "value": ""
+        },
+        "Risk statement": {
+            "guidance": "Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to",
+            "value": ""
+        }
+    }
+}

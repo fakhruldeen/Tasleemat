@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "نموذج تخطيط قصص المستخدم",
+    "fields": {
+        "User Persona": {
+            "guidance": "Who the user is.",
+            "value": ""
+        },
+        "User Activities (The Backbone)": {
+            "guidance": "High-level tasks the user needs to accomplish.",
+            "value": ""
+        },
+        "User Tasks (The Slices)": {
+            "guidance": "Specific steps under each activity.",
+            "value": ""
+        },
+        "MVP Release 1": {
+            "guidance": "Stories critical for the first release.",
+            "value": ""
+        },
+        "Future Releases": {
+            "guidance": "Stories planned for later.",
+            "value": ""
+        }
+    }
+}

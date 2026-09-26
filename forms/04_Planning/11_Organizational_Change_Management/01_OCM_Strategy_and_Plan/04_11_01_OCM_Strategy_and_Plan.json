@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "OCM Strategy and Plan",
+    "fields": {
+        "Change Vision": {
+            "guidance": "Why the human change is necessary.",
+            "value": ""
+        },
+        "Stakeholder Impact Analysis": {
+            "guidance": "How different groups will be affected.",
+            "value": ""
+        },
+        "Communication Strategy": {
+            "guidance": "How changes will be communicated.",
+            "value": ""
+        },
+        "Resistance Management": {
+            "guidance": "How to handle pushback from users.",
+            "value": ""
+        },
+        "Sponsorship Strategy": {
+            "guidance": "How leaders will champion the change.",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Communications Management Plan template based on the provided project context.",
+    "form_name": "Communications Management Plan",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Stakeholder communication": {
+            "guidance": "requirements The people or the groups of people who need to receive project information and their specific requirements",
+            "value": ""
+        },
+        "Information": {
+            "guidance": "Describe the information to be communicated, including language, format, content, and level of detail.",
+            "value": ""
+        },
+        "Method or media": {
+            "guidance": "Describe how the information will be delivered; for example, email, meetings, web meetings, etc.",
+            "value": ""
+        },
+        "Time frame and frequency": {
+            "guidance": "List how often the information is to be provided and under what circumstances.",
+            "value": ""
+        },
+        "Sender": {
+            "guidance": "Insert the name of the person or the group that will provide the information.",
+            "value": ""
+        },
+        "Communication constraints or": {
+            "guidance": "assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution.",
+            "value": ""
+        },
+        "Glossary of common terminology": {
+            "guidance": "List any terms or acronyms unique to the project or that are used in a unique way.",
+            "value": ""
+        },
+        "assumptions": {
+            "guidance": "",
+            "value": ""
+        },
+        "Stakeholder": {
+            "guidance": "",
+            "value": ""
+        },
+        "glossary of terms or acronyms": {
+            "guidance": "",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "خطة حوكمة الذكاء الاصطناعي",
+    "fields": {
+        "Ethical Guidelines": {
+            "guidance": "Principles guiding the ethical use of AI on this project.",
+            "value": ""
+        },
+        "Data Privacy & Security": {
+            "guidance": "Protocols for protecting sensitive data used by AI models.",
+            "value": ""
+        },
+        "Bias Mitigation": {
+            "guidance": "Strategies to identify and reduce bias in AI outcomes.",
+            "value": ""
+        },
+        "Compliance Requirements": {
+            "guidance": "Legal or organizational regulations the AI must adhere to.",
+            "value": ""
+        },
+        "Accountability": {
+            "guidance": "Who is responsible for the AI's actions and outputs.",
+            "value": ""
+        }
+    }
+}

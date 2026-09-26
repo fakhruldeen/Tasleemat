@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "سجل القرارات",
+    "fields": {
+        "ID": {
+            "guidance": "Enter a unique decision identifier.",
+            "value": ""
+        },
+        "Category": {
+            "guidance": "Document the type of decision, such as technical, project, process, etc.",
+            "value": ""
+        },
+        "Decision": {
+            "guidance": "Provide a detailed description of the decision.",
+            "value": ""
+        },
+        "Responsible party": {
+            "guidance": "Identify the person authorized to make the decision.",
+            "value": ""
+        },
+        "الأولوية": {
+            "guidance": "Enter the date the decision was made and authorized.",
+            "value": ""
+        },
+        "التعليقات": {
+            "guidance": "Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
+            "value": ""
+        }
+    }
+}

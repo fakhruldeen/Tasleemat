@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Training Plan and Log",
+    "fields": {
+        "Target Audience": {
+            "guidance": "Who needs training.",
+            "value": ""
+        },
+        "Training Module": {
+            "guidance": "What they are learning.",
+            "value": ""
+        },
+        "Delivery Method": {
+            "guidance": "In-person, webinar, self-paced.",
+            "value": ""
+        },
+        "Date/Schedule": {
+            "guidance": "When training occurs.",
+            "value": ""
+        },
+        "Completion Status": {
+            "guidance": "Number of users completed.",
+            "value": ""
+        }
+    }
+}

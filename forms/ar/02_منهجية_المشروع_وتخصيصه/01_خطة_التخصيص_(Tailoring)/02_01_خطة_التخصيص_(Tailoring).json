@@ -1,0 +1,22 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "خطة التخصيص (Tailoring)",
+    "fields": {
+        "Process/Artifact": {
+            "guidance": "The standard process or artifact being considered.",
+            "value": ""
+        },
+        "Tailoring Decision": {
+            "guidance": "Added, removed, or modified?",
+            "value": ""
+        },
+        "Justification": {
+            "guidance": "Reasoning for the tailoring decision.",
+            "value": ""
+        },
+        "Approver": {
+            "guidance": "Person who approved the change.",
+            "value": ""
+        }
+    }
+}

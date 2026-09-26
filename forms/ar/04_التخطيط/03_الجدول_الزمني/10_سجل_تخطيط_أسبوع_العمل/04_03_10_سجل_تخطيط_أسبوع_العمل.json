@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "سجل تخطيط أسبوع العمل",
+    "fields": {
+        "Sprint Goal": {
+            "guidance": "The overarching goal of the sprint.",
+            "value": ""
+        },
+        "Story ID": {
+            "guidance": "Jira or board reference.",
+            "value": ""
+        },
+        "Story Points": {
+            "guidance": "Estimated effort.",
+            "value": ""
+        },
+        "Assignee": {
+            "guidance": "Who is working on it.",
+            "value": ""
+        },
+        "معايير القبول": {
+            "guidance": "High level criteria for success.",
+            "value": ""
+        }
+    }
+}

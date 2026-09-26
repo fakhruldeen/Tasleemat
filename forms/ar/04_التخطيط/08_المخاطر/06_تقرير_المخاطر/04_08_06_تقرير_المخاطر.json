@@ -1,0 +1,54 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تقرير المخاطر",
+    "fields": {
+        "Executive Summary": {
+            "guidance": "A statement describing the overall project risk exposure and major individual risks.",
+            "value": ""
+        },
+        "Overall Project Risk - Status and Trends": {
+            "guidance": "Provide a description of the overall risk of the project.",
+            "value": ""
+        },
+        "Overall Project Risk - Significant Drivers": {
+            "guidance": "Identify the significant drivers of overall risk.",
+            "value": ""
+        },
+        "Overall Project Risk - Recommended Responses": {
+            "guidance": "Recommendations for overall risk.",
+            "value": ""
+        },
+        "Individual Project Risks - Metrics": {
+            "guidance": "Number of scope, schedule, cost, and quality risks. High/Medium/Low distribution.",
+            "value": ""
+        },
+        "Individual Project Risks - Top Risks": {
+            "guidance": "The most critical risks and their planned responses.",
+            "value": ""
+        },
+        "Individual Project Risks - Changes": {
+            "guidance": "Changes to critical risks since the last report.",
+            "value": ""
+        },
+        "Quantitative Analysis Summary - Probabilities": {
+            "guidance": "Probability of meeting scope, schedule, cost, quality objectives.",
+            "value": ""
+        },
+        "Quantitative Analysis Summary - Range of Outcomes": {
+            "guidance": "Range of schedule and cost outcomes.",
+            "value": ""
+        },
+        "Quantitative Analysis Summary - Key Drivers & Responses": {
+            "guidance": "Drivers of variance and proposed responses.",
+            "value": ""
+        },
+        "Reserve Status": {
+            "guidance": "Total Cost/Schedule Reserve, Used to Date, Used This Period, Remaining Reserve.",
+            "value": ""
+        },
+        "Risk Audit Summary": {
+            "guidance": "Summary of Risk Events, Risk Management Processes, and Recommendations.",
+            "value": ""
+        }
+    }
+}

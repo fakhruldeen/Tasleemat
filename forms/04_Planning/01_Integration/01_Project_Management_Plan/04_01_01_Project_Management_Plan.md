@@ -1,0 +1,42 @@
+---
+lang: en
+Form: Project Management Plan (Instructions)
+---
+
+# PROJECT MANAGEMENT PLAN - LLM GENERATION GUIDE
+
+> **System Prompt / Instructions:**
+> This document serves as the detailed instruction set for generating the `Project Management Plan`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+
+---
+
+### Project life cycle
+**Instruction:** Describe the life cycle that will be used to accomplish the project. This may include the following: • Name of each phase • Key activities for the phase • Key deliverables for the phase • Entry criteria for the phase • Exit criteria for the phase • Key reviews for the phase
+
+### Development approaches
+**Instruction:** Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches.
+
+### Subsidiary management plans
+**Instruction:** List the subsidiary management plans that are part of the project management plan. This can be in the form of a “table of contents,” links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents. (continued)
+
+### Scope variance threshold
+**Instruction:** Define acceptable scope variances, variances that indicate a warning, and variances that are unacceptable. Scope variance can be indicated by the features and functions that are present in the end product, or the performance metrics that are desired.
+
+### Scope baseline management
+**Instruction:** Describe how the scope baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. Define the difference between a scope revision and a scope change. Generally, a revision does not require the same degree of approval that a change does. For example, changing the color of something is a revision; changing a function is a change.
+
+### Schedule variance threshold
+**Instruction:** Define acceptable schedule variances, variances that indicate a warning, and variances that are unacceptable. Schedule variances may indicate the percent of variance from the baseline or they may include the amount of float used or whether any schedule reserve has been used.
+
+### Schedule baseline management
+**Instruction:** Describe how the schedule baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted.
+
+### Cost variance threshold
+**Instruction:** Define acceptable cost variances, variances that indicate a warning, and variances that are unacceptable. Cost variances may indicate the percent of variance from the baseline, such as 0–5 percent, 5–10 percent, and greater than 10 percent.
+
+### Cost baseline management
+**Instruction:** Describe how the cost baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted.
+
+### Baselines
+**Instruction:** Attach all project baselines.
+

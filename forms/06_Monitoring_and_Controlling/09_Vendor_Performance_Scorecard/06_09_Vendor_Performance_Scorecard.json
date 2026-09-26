@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Vendor Performance Scorecard",
+    "fields": {
+        "Metric/KPI": {
+            "guidance": "What is being measured (e.g., Quality, Timeliness).",
+            "value": ""
+        },
+        "Target Score": {
+            "guidance": "Expected performance level.",
+            "value": ""
+        },
+        "Actual Score": {
+            "guidance": "Measured performance.",
+            "value": ""
+        },
+        "Variance": {
+            "guidance": "Difference between target and actual.",
+            "value": ""
+        },
+        "Corrective Action": {
+            "guidance": "Steps to improve if deficient.",
+            "value": ""
+        }
+    }
+}

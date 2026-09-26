@@ -1,0 +1,32 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Decision Log template based on the provided project context.",
+    "form_name": "Decision Log",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "ID": {
+            "guidance": "Enter a unique decision identifier.",
+            "value": ""
+        },
+        "Category": {
+            "guidance": "Document the type of decision, such as technical, project, process, etc.",
+            "value": ""
+        },
+        "Decision": {
+            "guidance": "Provide a detailed description of the decision.",
+            "value": ""
+        },
+        "Responsible party": {
+            "guidance": "Identify the person authorized to make the decision.",
+            "value": ""
+        },
+        "Priority": {
+            "guidance": "Enter the date the decision was made and authorized.",
+            "value": ""
+        },
+        "Comments": {
+            "guidance": "Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
+            "value": ""
+        }
+    }
+}

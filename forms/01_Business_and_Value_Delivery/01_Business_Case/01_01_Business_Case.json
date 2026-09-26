@@ -1,0 +1,22 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Business Case template based on the provided project context.",
+    "form_name": "Business Case",
+    "fields": {
+        "Business Need": {
+            "guidance": "Identify the problem or opportunity.",
+            "value": ""
+        },
+        "Analysis of Situation": {
+            "guidance": "Describe the current state, future state, and root causes.",
+            "value": ""
+        },
+        "Recommendation": {
+            "guidance": "The recommended option or approach to address the need.",
+            "value": ""
+        },
+        "Evaluation Criteria": {
+            "guidance": "Metrics used to measure success.",
+            "value": ""
+        }
+    }
+}

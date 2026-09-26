@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "بطاقة نموذج الذكاء الاصطناعي",
+    "fields": {
+        "Model Details": {
+            "guidance": "Architecture, version, developer.",
+            "value": ""
+        },
+        "Intended Use": {
+            "guidance": "Primary and secondary use cases.",
+            "value": ""
+        },
+        "Factors": {
+            "guidance": "Demographics or environmental factors affecting performance.",
+            "value": ""
+        },
+        "Metrics": {
+            "guidance": "Accuracy, precision, recall, etc.",
+            "value": ""
+        },
+        "Training Data": {
+            "guidance": "Datasets used to train the model.",
+            "value": ""
+        },
+        "Ethical Considerations": {
+            "guidance": "Potential risks or biases.",
+            "value": ""
+        }
+    }
+}

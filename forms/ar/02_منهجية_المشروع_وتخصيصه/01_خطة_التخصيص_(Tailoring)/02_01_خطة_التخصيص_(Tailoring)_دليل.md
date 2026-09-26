@@ -1,0 +1,49 @@
+---
+lang: ar
+layout: default
+title: Tailoring Plan
+nav_order: 1
+---
+[🌐 **النسخة الإنجليزية (English Version): Tailoring Plan**](../../../02_Project_Approach_and_Tailoring/01_Tailoring_Plan/02_01_Tailoring_Plan_Guide.md)
+
+
+<div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## دليل نماذج تسليمات
+# المخرج (Artifact): خطة التخصيص (Tailoring)
+
+**مرجع الوثيقة:** `PMO-02.01`
+
+يوفر هذا المستند مرجعاً تفصيلياً واحترافياً لفهم الغرض من **خطة التخصيص (Tailoring)** واستخدامه بفعالية كجزء من منهجية تسليمات.
+
+---
+
+### 1. ما هو (What)؟
+وثيقة رسمية وفق منهجية تسليمات تُعرف باسم **خطة التخصيص (Tailoring)**، وتُستخدم لتخطيط وتوثيق وإدارة العناصر الحيوية المتعلقة بهذا المكون.
+
+### 2. لماذا (Why)؟
+لضمان التوافق مع معايير تسليمات، ولتوفير الشفافية، ومراقبة الأداء، وإدارة المتغيرات بفعالية طوال دورة حياة المشروع.
+
+### 3. متى (When)؟
+يتم إعداد هذا المخرج (Artifact) وتحديثه بشكل أساسي خلال **منهجية وتخصيص المشروع** من دورة حياة المشروع.
+
+### 4. مَن (Who)؟
+**المسؤوليات:** يُطور بواسطة مدير المشروع مع مدخلات من فريق المشروع والخبراء المختصين، ثم يُعتمد كخط مرجعي.
+
+### 5. كيف (How)؟
+لإكمال **خطة التخصيص (Tailoring)** بطريقة احترافية ومتوافقة مع المعايير، يجب تعبئة الأقسام الحرجة التالية بشكل مفصل (يرجى الرجوع إلى ملف `parameters.md` لضمان توافق المتغيرات العامة للمشروع):
+
+*   **Process/Artifact:** The standard process or artifact being considered.
+*   **Tailoring Decision:** Added, removed, or modified?
+*   **Justification:** Reasoning for the tailoring decision.
+*   **Approver:** Person who approved the change.
+
+
+
+### 📥 القوالب المرتبطة
+* [📄 القالب القابل للطباعة (Markdown)](02_01_خطة_التخصيص_(Tailoring)_قالب.md)
+* [🤖 تعليمات النموذج الذكي (LLM)](Tailoring_Plan.md)
+* [📊 هيكل البيانات (JSON)](02_01_خطة_التخصيص_(Tailoring).json)
+* [📈 البيانات المجدولة (CSV)](02_01_خطة_التخصيص_(Tailoring).csv)
+
+</div>

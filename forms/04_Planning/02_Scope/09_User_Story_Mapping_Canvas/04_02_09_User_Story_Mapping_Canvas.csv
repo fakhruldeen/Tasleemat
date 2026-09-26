@@ -1,0 +1,6 @@
+Field,Guidance,LLM_Generated_Value
+User Persona,Who the user is.,
+User Activities (The Backbone),High-level tasks the user needs to accomplish.,
+User Tasks (The Slices),Specific steps under each activity.,
+MVP Release 1,Stories critical for the first release.,
+Future Releases,Stories planned for later.,

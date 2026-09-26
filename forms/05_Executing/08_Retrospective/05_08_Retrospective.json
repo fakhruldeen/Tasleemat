@@ -1,0 +1,28 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Retrospective template based on the provided project context.",
+    "form_name": "Retrospective",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Start": {
+            "guidance": "Actions and behaviors that the team will begin to implement",
+            "value": ""
+        },
+        "Stop": {
+            "guidance": "Actions or behaviors that the team will cease doing",
+            "value": ""
+        },
+        "Keep": {
+            "guidance": "Practices that the team should continue with",
+            "value": ""
+        },
+        "More": {
+            "guidance": "Practices that were not done consistently that should be done more often",
+            "value": ""
+        },
+        "Less": {
+            "guidance": "Practices that were done too much or that should be reduced",
+            "value": ""
+        }
+    }
+}

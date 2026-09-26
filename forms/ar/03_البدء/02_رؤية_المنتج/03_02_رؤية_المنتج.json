@@ -1,0 +1,22 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "رؤية المنتج",
+    "fields": {
+        "Target customer": {
+            "guidance": "The person or group who will buy or use the product.",
+            "value": ""
+        },
+        "Needs": {
+            "guidance": "The needs or requirements that the product will address.",
+            "value": ""
+        },
+        "Product and key attributes": {
+            "guidance": "A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements.",
+            "value": ""
+        },
+        "Key benefit": {
+            "guidance": "Describes why the customer would buy the product.",
+            "value": ""
+        }
+    }
+}

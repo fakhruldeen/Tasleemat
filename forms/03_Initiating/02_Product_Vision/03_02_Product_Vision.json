@@ -1,0 +1,24 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Product Vision template based on the provided project context.",
+    "form_name": "Product Vision",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Target customer": {
+            "guidance": "The person or group who will buy or use the product.",
+            "value": ""
+        },
+        "Needs": {
+            "guidance": "The needs or requirements that the product will address.",
+            "value": ""
+        },
+        "Product and key attributes": {
+            "guidance": "A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements.",
+            "value": ""
+        },
+        "Key benefit": {
+            "guidance": "Describes why the customer would buy the product.",
+            "value": ""
+        }
+    }
+}

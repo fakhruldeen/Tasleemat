@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "بيان العمل (SOW)",
+    "fields": {
+        "Scope of Work": {
+            "guidance": "Detailed description of vendor work.",
+            "value": ""
+        },
+        "Period of Performance": {
+            "guidance": "Start and end dates.",
+            "value": ""
+        },
+        "Deliverables Schedule": {
+            "guidance": "Specific milestones and due dates.",
+            "value": ""
+        },
+        "Applicable Standards": {
+            "guidance": "Technical or quality standards to adhere to.",
+            "value": ""
+        },
+        "معايير القبول": {
+            "guidance": "How the buyer will accept the deliverables.",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "مصفوفة تعيين المسؤوليات (RAM)",
+    "fields": {
+        "Work package": {
+            "guidance": "Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.",
+            "value": ""
+        },
+        "Resource": {
+            "guidance": "Identify the person, division, or organization that will be working on the project.",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,7 @@
+Field,Guidance,LLM_Generated_Value
+ID,Enter a unique decision identifier.,
+Category,"Document the type of decision, such as technical, project, process, etc.",
+Decision,Provide a detailed description of the decision.,
+Responsible party,Identify the person authorized to make the decision.,
+Priority,Enter the date the decision was made and authorized.,
+Comments,"Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",

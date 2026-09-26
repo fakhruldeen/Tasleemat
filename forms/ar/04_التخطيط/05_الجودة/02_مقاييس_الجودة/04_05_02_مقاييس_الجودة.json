@@ -1,0 +1,46 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "مقاييس الجودة",
+    "fields": {
+        "Area audited": {
+            "guidance": "Check the box for the area or areas audited.",
+            "value": ""
+        },
+        "Good practices from similar projects": {
+            "guidance": "Describe any good or best practices that can be shared from similar projects.",
+            "value": ""
+        },
+        "Areas for improvement": {
+            "guidance": "Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.",
+            "value": ""
+        },
+        "Deficiencies or defects": {
+            "guidance": "",
+            "value": ""
+        },
+        "ID": {
+            "guidance": "Enter a unique defect identifier.",
+            "value": ""
+        },
+        "Defect": {
+            "guidance": "Describe the deficiency or defect.",
+            "value": ""
+        },
+        "Action": {
+            "guidance": "Describe the corrective actions needed to fix the defect.",
+            "value": ""
+        },
+        "Responsible party": {
+            "guidance": "Identify the person assigned to correct the deficiency or defect.",
+            "value": ""
+        },
+        "Due date": {
+            "guidance": "Document the due date.",
+            "value": ""
+        },
+        "التعليقات": {
+            "guidance": "Provide any additional useful comments about the audit.",
+            "value": ""
+        }
+    }
+}

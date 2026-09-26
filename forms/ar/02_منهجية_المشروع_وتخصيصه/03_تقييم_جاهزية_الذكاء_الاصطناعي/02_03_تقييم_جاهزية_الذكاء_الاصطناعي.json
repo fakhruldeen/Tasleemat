@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تقييم جاهزية الذكاء الاصطناعي",
+    "fields": {
+        "Data Maturity": {
+            "guidance": "Assessment of data quality, availability, and architecture.",
+            "value": ""
+        },
+        "Technical Infrastructure": {
+            "guidance": "Evaluation of compute, storage, and software capabilities.",
+            "value": ""
+        },
+        "Skills & Expertise": {
+            "guidance": "Availability of required AI and domain expertise.",
+            "value": ""
+        },
+        "Organizational Culture": {
+            "guidance": "Readiness for change and adoption of AI tools.",
+            "value": ""
+        },
+        "Overall Readiness Score": {
+            "guidance": "Summary score or recommendation.",
+            "value": ""
+        }
+    }
+}

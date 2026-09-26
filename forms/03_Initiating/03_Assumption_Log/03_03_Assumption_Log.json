@@ -1,0 +1,40 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Assumption Log template based on the provided project context.",
+    "form_name": "Assumption Log",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "ID": {
+            "guidance": "",
+            "value": ""
+        },
+        "Category": {
+            "guidance": "The category of the assumption or constraint",
+            "value": ""
+        },
+        "Assumption/constraint": {
+            "guidance": "A description of the assumption or constraint",
+            "value": ""
+        },
+        "Responsible party": {
+            "guidance": "The person who is tasked with following up on the assumption to validate if it is true or not",
+            "value": ""
+        },
+        "Due date": {
+            "guidance": "The date by which the assumption needs to be validated",
+            "value": ""
+        },
+        "Actions": {
+            "guidance": "Actions that need to be taken to validate assumptions",
+            "value": ""
+        },
+        "Status": {
+            "guidance": "The status of the assumptions, such as active, transferred, or closed",
+            "value": ""
+        },
+        "Comments": {
+            "guidance": "Any additional information regarding the assumption or constraint",
+            "value": ""
+        }
+    }
+}

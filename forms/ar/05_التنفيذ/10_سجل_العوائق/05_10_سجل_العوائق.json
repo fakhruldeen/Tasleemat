@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "سجل العوائق",
+    "fields": {
+        "Impediment ID": {
+            "guidance": "Unique ID.",
+            "value": ""
+        },
+        "Date Raised": {
+            "guidance": "When it was identified.",
+            "value": ""
+        },
+        "الوصف": {
+            "guidance": "What is blocking the team.",
+            "value": ""
+        },
+        "الأثر": {
+            "guidance": "How it affects the sprint.",
+            "value": ""
+        },
+        "المالك": {
+            "guidance": "Scrum Master or person resolving it.",
+            "value": ""
+        },
+        "الحالة": {
+            "guidance": "Open, In Progress, Resolved.",
+            "value": ""
+        }
+    }
+}

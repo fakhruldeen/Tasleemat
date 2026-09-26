@@ -1,0 +1,62 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تقرير إغلاق العقد",
+    "fields": {
+        "What worked well": {
+            "guidance": "",
+            "value": ""
+        },
+        "النطاق": {
+            "guidance": "Describe aspects of contract scope that were handled well.",
+            "value": ""
+        },
+        "الجودة": {
+            "guidance": "Describe aspects of product quality that were handled well.",
+            "value": ""
+        },
+        "الجدول الزمني": {
+            "guidance": "Describe aspects of the contract schedule that were handled well.",
+            "value": ""
+        },
+        "التكلفة": {
+            "guidance": "Describe aspects of the contract budget that were handled well.",
+            "value": ""
+        },
+        "Other": {
+            "guidance": "Describe any other aspects of the contract or procurement that were handled well.",
+            "value": ""
+        },
+        "Change ID": {
+            "guidance": "Enter the change identifier from the change log.",
+            "value": ""
+        },
+        "Change": {
+            "guidance": "description Enter the description from the change log.",
+            "value": ""
+        },
+        "التاريخ": {
+            "guidance": "approved Enter the date approved from the change log. Describe the dispute or claim.",
+            "value": ""
+        },
+        "الحل": {
+            "guidance": "Describe the resolution.",
+            "value": ""
+        },
+        "Date resolved": {
+            "guidance": "Enter the date the dispute or claim was resolved.",
+            "value": ""
+        },
+        "What can be improved": {
+            "guidance": "",
+            "value": ""
+        },
+        "Record of contract changes": {
+            "guidance": "",
+            "value": ""
+        },
+        "Record of contract disputes": {
+            "guidance": "",
+            "value": ""
+        }
+    }
+}

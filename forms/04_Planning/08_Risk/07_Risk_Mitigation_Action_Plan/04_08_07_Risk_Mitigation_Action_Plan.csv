@@ -1,0 +1,7 @@
+Field,Guidance,LLM_Generated_Value
+Risk ID and Title,Reference to the Risk Register.,
+Current Risk Score,Probability x Impact.,
+Mitigation Strategy,"Avoid, Transfer, Mitigate, Accept.",
+Detailed Action Steps,Step by step plan to reduce the risk.,
+Resource Requirements,Budget or people needed to execute the plan.,
+Target Risk Score,Expected score after mitigation.,

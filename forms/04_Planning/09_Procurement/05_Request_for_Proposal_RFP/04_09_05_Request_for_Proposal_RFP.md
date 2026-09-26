@@ -1,0 +1,27 @@
+---
+lang: en
+Form: Request for Proposal RFP (Instructions)
+---
+
+# REQUEST FOR PROPOSAL RFP - LLM GENERATION GUIDE
+
+> **System Prompt / Instructions:**
+> This document serves as the detailed instruction set for generating the `Request for Proposal RFP`. Reference `parameters.md` for global project variables.
+
+---
+
+### Project Overview
+**Instruction:** Background and purpose of the project.
+
+### Submission Guidelines
+**Instruction:** How and when vendors should submit proposals.
+
+### Technical Requirements
+**Instruction:** What the solution must do.
+
+### Evaluation Criteria
+**Instruction:** How proposals will be scored.
+
+### Terms and Conditions
+**Instruction:** Legal and compliance baselines.
+

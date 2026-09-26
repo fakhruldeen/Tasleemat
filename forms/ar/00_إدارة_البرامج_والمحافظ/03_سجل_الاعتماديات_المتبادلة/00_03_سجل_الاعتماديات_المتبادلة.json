@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "سجل الاعتماديات المتبادلة",
+    "fields": {
+        "Dependency ID": {
+            "guidance": "Unique ID.",
+            "value": ""
+        },
+        "Predecessor Project": {
+            "guidance": "Project that must finish first.",
+            "value": ""
+        },
+        "Successor Project": {
+            "guidance": "Project waiting on the predecessor.",
+            "value": ""
+        },
+        "Deliverable/Condition": {
+            "guidance": "What specifically is being waited on.",
+            "value": ""
+        },
+        "Required Date": {
+            "guidance": "When the deliverable is needed.",
+            "value": ""
+        },
+        "الحالة": {
+            "guidance": "On track, Delayed, etc.",
+            "value": ""
+        }
+    }
+}

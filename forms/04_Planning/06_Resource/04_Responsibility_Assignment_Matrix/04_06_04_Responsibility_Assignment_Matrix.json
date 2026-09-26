@@ -1,0 +1,16 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Responsibility Assignment Matrix template based on the provided project context.",
+    "form_name": "Responsibility Assignment Matrix",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Work package": {
+            "guidance": "Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.",
+            "value": ""
+        },
+        "Resource": {
+            "guidance": "Identify the person, division, or organization that will be working on the project.",
+            "value": ""
+        }
+    }
+}

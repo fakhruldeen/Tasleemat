@@ -1,0 +1,17 @@
+
+[🌐 **النسخة الإنجليزية (English Version): Milestone List**](../../../../04_Planning/03_Schedule/04_Milestone_List/04_03_04_Milestone_List_Template.md)
+
+<div dir="rtl" style="font-family: Arial, sans-serif;">
+<!-- تعليمات للنموذج الذكي (LLM): قم بملء المساحات الفارغة [ ... ] بناءً على سياق المشروع -->
+
+<table width="100%" style="border-collapse: collapse; border: none; margin-bottom: 20px;">  <tr>    <td align="center" style="background-color: #34495e; color: white; padding: 15px; font-size: 24px; font-weight: bold; border-radius: 5px;">      قائمة المعالم (MILESTONES)    </td>  </tr></table>
+<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;">  <tr>    <td width="50%"><b>اسم المشروع:</b> {{اسم_المشروع}}</td>    <td width="50%"><b>التاريخ:</b> {{التاريخ_الحالي}}</td>  </tr>  <tr>    <td><b>مدير المشروع:</b> {{اسم_مدير_المشروع}}</td>    <td><b>إعداد:</b> {{معد_الوثيقة}}</td>  </tr></table>
+
+<table width="100%" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Milestone name</th>    <th>Milestone description</th>    <th>Type</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+
+<br>
+<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Milestone name:</b> <i>Milestone name that uniquely defines the milestone</i></li><li><b>Milestone description:</b> <i>A description of the milestone in enough detail to understand what is needed to determine the milestone is complete</i></li><li><b>Type:</b> <i>A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional</i></li></ul></div>
+<br><br>
+<table width="100%" style="border-collapse: collapse; border: none; margin-top: 30px;">  <tr>    <td width="33%"><b>تم الإعداد بواسطة:</b><br><br>_____________________<br><br>التاريخ: _________________</td>    <td width="33%"><b>تمت المراجعة بواسطة:</b><br><br>_____________________<br><br>التاريخ: _________________</td>    <td width="33%"><b>تم الاعتماد بواسطة:</b><br><br>_____________________<br><br>التاريخ: _________________</td>  </tr></table>
+<div align="left" style="margin-top: 40px; font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 5px;">  <i>تاريخ الإنشاء: {{وقت_الإنشاء}}</i></div>
+</div>

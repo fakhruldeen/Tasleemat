@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Risk Mitigation Action Plan",
+    "fields": {
+        "Risk ID and Title": {
+            "guidance": "Reference to the Risk Register.",
+            "value": ""
+        },
+        "Current Risk Score": {
+            "guidance": "Probability x Impact.",
+            "value": ""
+        },
+        "Mitigation Strategy": {
+            "guidance": "Avoid, Transfer, Mitigate, Accept.",
+            "value": ""
+        },
+        "Detailed Action Steps": {
+            "guidance": "Step by step plan to reduce the risk.",
+            "value": ""
+        },
+        "Resource Requirements": {
+            "guidance": "Budget or people needed to execute the plan.",
+            "value": ""
+        },
+        "Target Risk Score": {
+            "guidance": "Expected score after mitigation.",
+            "value": ""
+        }
+    }
+}

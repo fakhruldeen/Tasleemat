@@ -1,0 +1,24 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Project Scope Statement template based on the provided project context.",
+    "form_name": "Project Scope Statement",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Project scope description": {
+            "guidance": "Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation.",
+            "value": ""
+        },
+        "Project deliverables": {
+            "guidance": "Project deliverables are progressively elaborated from the project description key deliverables in the project charter.",
+            "value": ""
+        },
+        "Product acceptance criteria": {
+            "guidance": "Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project.",
+            "value": ""
+        },
+        "Project exclusions": {
+            "guidance": "Project exclusions clearly define what is out of scope for the product and project.",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Risk Report template based on the provided project context.",
+    "form_name": "Risk Report",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Executive summary": {
+            "guidance": "A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.",
+            "value": ""
+        },
+        "Overall project risk": {
+            "guidance": "Provide a description of the overall risk of the project, including: \u2022 High-level statement of trends \u2022 Significant drivers of overall risk \u2022 Recommended responses to overall risk",
+            "value": ""
+        },
+        "Individual project risks": {
+            "guidance": "Analyze and summarize information associated with individual project risks, including: \u2022 Number of risks in each box of the probability impact matrix \u2022 Key metrics \u2022 Active risks \u2022 Newly closed risks \u2022 Risks distribution by category, objective, and score \u2022 Most-critical risks and changes since last report \u2022 Recommended responses to top risks",
+            "value": ""
+        },
+        "Quantitative analysis": {
+            "guidance": "Summarize the results of quantitative risk analysis, including: \u2022 Results from quantitative assessments (S-curve, tornado, etc.) \u2022 Probability of meeting key project objectives \u2022 Drivers of cost and schedule outcomes \u2022 Proposed responses",
+            "value": ""
+        },
+        "Reserve status": {
+            "guidance": "Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.",
+            "value": ""
+        },
+        "Risk audit results (if applicable)": {
+            "guidance": "Summarize the results of a risk audit of the risk management processes.",
+            "value": ""
+        }
+    }
+}

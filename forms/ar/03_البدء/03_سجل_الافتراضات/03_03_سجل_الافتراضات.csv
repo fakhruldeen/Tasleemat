@@ -1,0 +1,9 @@
+الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
+"ID","",""
+"Category","The category of the assumption or constraint",""
+"Assumption/constraint","A description of the assumption or constraint",""
+"Responsible party","The person who is tasked with following up on the assumption to validate if it is true or not",""
+"Due date","The date by which the assumption needs to be validated",""
+"Actions","Actions that need to be taken to validate assumptions",""
+"الحالة","The status of the assumptions, such as active, transferred, or closed",""
+"التعليقات","Any additional information regarding the assumption or constraint",""

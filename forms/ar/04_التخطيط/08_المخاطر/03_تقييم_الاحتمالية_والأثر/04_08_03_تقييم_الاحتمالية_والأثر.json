@@ -1,0 +1,66 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تقييم الاحتمالية والأثر",
+    "fields": {
+        "Scope impact": {
+            "guidance": "",
+            "value": ""
+        },
+        "Very High": {
+            "guidance": "The product does not meet the objectives and is effectively useless",
+            "value": ""
+        },
+        "High": {
+            "guidance": "The product is deficient in multiple essential requirements",
+            "value": ""
+        },
+        "Medium": {
+            "guidance": "The product is deficient in one major requirement or multiple minor requirements",
+            "value": ""
+        },
+        "Low": {
+            "guidance": "The product is deficient in a few minor requirements",
+            "value": ""
+        },
+        "Very Low": {
+            "guidance": "",
+            "value": ""
+        },
+        "Minimal deviation from requirements": {
+            "guidance": "",
+            "value": ""
+        },
+        "There is minor deviation in performance": {
+            "guidance": "",
+            "value": ""
+        },
+        "Cost increase of 10 to 20 percent": {
+            "guidance": "",
+            "value": ""
+        },
+        "Cost increase of 5 to 10 percent": {
+            "guidance": "",
+            "value": ""
+        },
+        "Quality impact": {
+            "guidance": "",
+            "value": ""
+        },
+        "Schedule impact": {
+            "guidance": "",
+            "value": ""
+        },
+        "Cost impact": {
+            "guidance": "",
+            "value": ""
+        },
+        "الاحتمالية": {
+            "guidance": "",
+            "value": ""
+        },
+        "Risk rating": {
+            "guidance": "",
+            "value": ""
+        }
+    }
+}

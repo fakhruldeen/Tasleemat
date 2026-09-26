@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Benefits Management Plan template based on the provided project context.",
+    "form_name": "Benefits Management Plan",
+    "fields": {
+        "Target Benefits": {
+            "guidance": "Expected tangible and intangible value to be gained.",
+            "value": ""
+        },
+        "Strategic Alignment": {
+            "guidance": "How the benefits align with the organization's strategic goals.",
+            "value": ""
+        },
+        "Timeframe": {
+            "guidance": "When the benefits are expected to be realized.",
+            "value": ""
+        },
+        "Metrics": {
+            "guidance": "How the benefits will be measured.",
+            "value": ""
+        },
+        "Risks": {
+            "guidance": "Risks associated with realizing the benefits.",
+            "value": ""
+        }
+    }
+}

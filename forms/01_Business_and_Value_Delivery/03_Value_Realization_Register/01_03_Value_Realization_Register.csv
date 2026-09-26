@@ -1,0 +1,7 @@
+Field,Guidance,LLM_Generated_Value
+Benefit ID,Unique identifier for the benefit.,
+Description,Description of the benefit.,
+Owner,Person accountable for the benefit realization.,
+Target Value,The expected value.,
+Actual Value,The realized value.,
+Status,Status of the benefit realization.,

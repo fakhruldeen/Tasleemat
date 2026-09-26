@@ -1,0 +1,86 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "قاموس هيكل تجزئة العمل",
+    "fields": {
+        "Work package name": {
+            "guidance": "Enter a brief description of the work package deliverable from the WBS.",
+            "value": ""
+        },
+        "Code of account": {
+            "guidance": "Enter the code of account from the WBS.",
+            "value": ""
+        },
+        "Milestones": {
+            "guidance": "List any milestones associated with the work package.",
+            "value": ""
+        },
+        "Due dates": {
+            "guidance": "List the due dates for milestones associated with the work package.",
+            "value": ""
+        },
+        "ID": {
+            "guidance": "Enter a unique activity identifier—usually an extension of the WBS code of accounts.",
+            "value": ""
+        },
+        "Activity": {
+            "guidance": "Describe the activity from the activity list or the schedule.",
+            "value": ""
+        },
+        "Team resource": {
+            "guidance": "Identify the resources, usually from the resource requirements.",
+            "value": ""
+        },
+        "Labor hours": {
+            "guidance": "Enter the total effort required.",
+            "value": ""
+        },
+        "Labor rate": {
+            "guidance": "Enter the labor rate, usually from cost estimates.",
+            "value": ""
+        },
+        "Labor total": {
+            "guidance": "Multiply the effort hours times the labor rate.",
+            "value": ""
+        },
+        "Material units": {
+            "guidance": "Enter the amount of material required, usually from the resource requirements.",
+            "value": ""
+        },
+        "Material cost": {
+            "guidance": "Enter the material cost, usually from cost estimates.",
+            "value": ""
+        },
+        "Material total": {
+            "guidance": "Multiply the material units times the material cost.",
+            "value": ""
+        },
+        "Total cost": {
+            "guidance": "Sum the labor, materials, and any other costs associated with the work package.",
+            "value": ""
+        },
+        "Quality requirements": {
+            "guidance": "Document any quality requirements or metrics associated with the work package.",
+            "value": ""
+        },
+        "Acceptance criteria": {
+            "guidance": "Describe the acceptance criteria for the deliverable, usually from the scope statement.",
+            "value": ""
+        },
+        "Technical information": {
+            "guidance": "Describe or reference any technical requirements or documentation needed to complete the work package.",
+            "value": ""
+        },
+        "Agreement information": {
+            "guidance": "Reference any contracts or other agreements that impact the work package.",
+            "value": ""
+        },
+        "resource": {
+            "guidance": "hours",
+            "value": ""
+        },
+        "total": {
+            "guidance": "",
+            "value": ""
+        }
+    }
+}

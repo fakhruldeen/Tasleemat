@@ -1,0 +1,36 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Team Member Status Report template based on the provided project context.",
+    "form_name": "Team Member Status Report",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Root cause of variances": {
+            "guidance": "For any work that was not accomplished as scheduled, identify the cause of the variance.",
+            "value": ""
+        },
+        "Funds spent this reporting period": {
+            "guidance": "Record funds spent this period. Funds planned to be spent this reporting period Record funds that were planned to be spent this period.",
+            "value": ""
+        },
+        "Planned corrective of preventive action": {
+            "guidance": "Identify any actions needed to recover cost, schedule, or quality variances or prevent future variances. Activities planned for next reporting period List all activities scheduled for next period, including work to be started, continued, or completed.",
+            "value": ""
+        },
+        "Costs planned for next reporting period": {
+            "guidance": "Identify funds planned to be expended next period.",
+            "value": ""
+        },
+        "New risks identified": {
+            "guidance": "Identify any new risks that have arisen. New risks should be recorded in the risk register as well.",
+            "value": ""
+        },
+        "Issues": {
+            "guidance": "Identify any new issues that have arisen. New issues should be recorded in the issue log as well.",
+            "value": ""
+        },
+        "Comments": {
+            "guidance": "Document any comments that add relevance to this report.",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,8 @@
+Field,Guidance,LLM_Generated_Value
+Category,Enter the category from the change request form. Describe the proposed change.,
+Requestor,Enter the name of the person requesting the change.,
+Submission date,Enter the date the change was submitted.,
+Status,"Enter the status as open, pending, closed.",
+Disposition,"Enter the outcome of the change request as approved, deferred, or rejected.",
+ID,,
+Description of change,,

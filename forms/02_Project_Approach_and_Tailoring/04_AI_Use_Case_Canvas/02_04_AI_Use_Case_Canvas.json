@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this AI Use Case Canvas template based on the provided project context.",
+    "form_name": "AI Use Case Canvas",
+    "fields": {
+        "Problem Statement": {
+            "guidance": "The specific problem the AI will solve.",
+            "value": ""
+        },
+        "AI Pattern/Solution": {
+            "guidance": "The type of AI model or approach (e.g., generative, predictive).",
+            "value": ""
+        },
+        "Data Sources": {
+            "guidance": "Where the data will come from.",
+            "value": ""
+        },
+        "Value Proposition": {
+            "guidance": "The expected ROI or value delivery.",
+            "value": ""
+        },
+        "Key Risks": {
+            "guidance": "Major risks associated with this specific use case.",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this AI Governance Plan template based on the provided project context.",
+    "form_name": "AI Governance Plan",
+    "fields": {
+        "Ethical Guidelines": {
+            "guidance": "Principles guiding the ethical use of AI on this project.",
+            "value": ""
+        },
+        "Data Privacy & Security": {
+            "guidance": "Protocols for protecting sensitive data used by AI models.",
+            "value": ""
+        },
+        "Bias Mitigation": {
+            "guidance": "Strategies to identify and reduce bias in AI outcomes.",
+            "value": ""
+        },
+        "Compliance Requirements": {
+            "guidance": "Legal or organizational regulations the AI must adhere to.",
+            "value": ""
+        },
+        "Accountability": {
+            "guidance": "Who is responsible for the AI's actions and outputs.",
+            "value": ""
+        }
+    }
+}

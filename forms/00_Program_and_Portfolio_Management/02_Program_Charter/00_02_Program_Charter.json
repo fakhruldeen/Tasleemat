@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Program Charter",
+    "fields": {
+        "Program Purpose": {
+            "guidance": "High-level justification for the program.",
+            "value": ""
+        },
+        "Program Objectives": {
+            "guidance": "Measurable goals of the program.",
+            "value": ""
+        },
+        "Component Projects": {
+            "guidance": "List of the individual projects within the program.",
+            "value": ""
+        },
+        "Program Benefits": {
+            "guidance": "Expected synergistic benefits.",
+            "value": ""
+        },
+        "Program Manager Authority": {
+            "guidance": "Authority level of the program manager.",
+            "value": ""
+        }
+    }
+}

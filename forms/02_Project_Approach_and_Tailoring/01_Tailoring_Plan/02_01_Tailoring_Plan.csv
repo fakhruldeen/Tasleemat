@@ -1,0 +1,5 @@
+Field,Guidance,LLM_Generated_Value
+Process/Artifact,The standard process or artifact being considered.,
+Tailoring Decision,"Added, removed, or modified?",
+Justification,Reasoning for the tailoring decision.,
+Approver,Person who approved the change.,

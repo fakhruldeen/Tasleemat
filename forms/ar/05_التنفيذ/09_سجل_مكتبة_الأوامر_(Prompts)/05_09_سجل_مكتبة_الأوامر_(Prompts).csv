@@ -1,0 +1,6 @@
+الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
+"Prompt ID","Unique identifier.",""
+"Use Case","What the prompt is used for.",""
+"Prompt Text","The actual text or structure of the prompt.",""
+"Expected Output","What a successful response looks like.",""
+"Status/Version","Current version or status of the prompt.",""

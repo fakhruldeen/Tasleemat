@@ -1,0 +1,6 @@
+الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
+"Data Source","Where the data originates.",""
+"PII Detection","Does it contain Personally Identifiable Information?",""
+"Consent Management","How user consent was obtained.",""
+"Data Retention Policy","How long data is stored and how it's deleted.",""
+"Compliance Alignment","GDPR, CCPA, or local regulatory alignment.",""

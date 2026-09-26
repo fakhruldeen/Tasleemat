@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "قائمة التحقق للانتقال إلى العمليات",
+    "fields": {
+        "Checklist Item": {
+            "guidance": "e.g., Code deployed, Support manuals written.",
+            "value": ""
+        },
+        "Responsible Party": {
+            "guidance": "Who owns the item.",
+            "value": ""
+        },
+        "Sign-off Signature": {
+            "guidance": "Approval.",
+            "value": ""
+        },
+        "التاريخ": {
+            "guidance": "When completed.",
+            "value": ""
+        },
+        "ملاحظات": {
+            "guidance": "Any handover details.",
+            "value": ""
+        }
+    }
+}

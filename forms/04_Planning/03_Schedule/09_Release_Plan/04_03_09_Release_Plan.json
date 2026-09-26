@@ -1,0 +1,32 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Release Plan template based on the provided project context.",
+    "form_name": "Release Plan",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Release dates": {
+            "guidance": "Either a timeline or a milestone indicator of when releases start and finish. This can be more detailed to show a linear schedule that indicates the duration of each release.",
+            "value": ""
+        },
+        "User stories": {
+            "guidance": "The requirements or user stories from the backlog",
+            "value": ""
+        },
+        "User": {
+            "guidance": "Story",
+            "value": ""
+        },
+        "Sprint 2": {
+            "guidance": "",
+            "value": ""
+        },
+        "Sprint 3": {
+            "guidance": "This diagram assumes that different shades notes indicate different categories of user stories.",
+            "value": ""
+        },
+        "Sprint 1": {
+            "guidance": "Release Goal: Describe the goal of the release in this space.",
+            "value": ""
+        }
+    }
+}

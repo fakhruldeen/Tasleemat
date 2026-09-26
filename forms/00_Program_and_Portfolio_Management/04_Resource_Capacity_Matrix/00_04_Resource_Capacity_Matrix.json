@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Resource Capacity Matrix",
+    "fields": {
+        "Resource Role/Team": {
+            "guidance": "Skillset or team name.",
+            "value": ""
+        },
+        "Total Available Capacity": {
+            "guidance": "Total hours/FTE available.",
+            "value": ""
+        },
+        "Allocated Capacity": {
+            "guidance": "Hours/FTE already assigned.",
+            "value": ""
+        },
+        "Remaining Capacity": {
+            "guidance": "Available hours/FTE.",
+            "value": ""
+        },
+        "Critical Constraints": {
+            "guidance": "Any bottlenecks or single points of failure.",
+            "value": ""
+        }
+    }
+}

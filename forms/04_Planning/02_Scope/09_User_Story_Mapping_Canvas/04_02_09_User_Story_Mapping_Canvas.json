@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "User Story Mapping Canvas",
+    "fields": {
+        "User Persona": {
+            "guidance": "Who the user is.",
+            "value": ""
+        },
+        "User Activities (The Backbone)": {
+            "guidance": "High-level tasks the user needs to accomplish.",
+            "value": ""
+        },
+        "User Tasks (The Slices)": {
+            "guidance": "Specific steps under each activity.",
+            "value": ""
+        },
+        "MVP Release 1": {
+            "guidance": "Stories critical for the first release.",
+            "value": ""
+        },
+        "Future Releases": {
+            "guidance": "Stories planned for later.",
+            "value": ""
+        }
+    }
+}

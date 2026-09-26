@@ -1,0 +1,30 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "سجل تحقيق القيمة",
+    "fields": {
+        "Benefit ID": {
+            "guidance": "Unique identifier for the benefit.",
+            "value": ""
+        },
+        "الوصف": {
+            "guidance": "Description of the benefit.",
+            "value": ""
+        },
+        "المالك": {
+            "guidance": "Person accountable for the benefit realization.",
+            "value": ""
+        },
+        "Target Value": {
+            "guidance": "The expected value.",
+            "value": ""
+        },
+        "Actual Value": {
+            "guidance": "The realized value.",
+            "value": ""
+        },
+        "الحالة": {
+            "guidance": "Status of the benefit realization.",
+            "value": ""
+        }
+    }
+}

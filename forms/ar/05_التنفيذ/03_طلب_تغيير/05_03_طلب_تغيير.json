@@ -1,0 +1,50 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "طلب تغيير",
+    "fields": {
+        "Requestor & Date": {
+            "guidance": "Name of the person requesting the change and the date.",
+            "value": ""
+        },
+        "Category of Change": {
+            "guidance": "Scope, Quality, Requirements, Cost, Schedule, or Documents.",
+            "value": ""
+        },
+        "Detailed Description of Proposed Change": {
+            "guidance": "Clear explanation of what needs to be changed.",
+            "value": ""
+        },
+        "Justification for Proposed Change": {
+            "guidance": "Reasoning and business value for the change.",
+            "value": ""
+        },
+        "Impacts of Change - Scope": {
+            "guidance": "How the change affects project scope.",
+            "value": ""
+        },
+        "Impacts of Change - Quality": {
+            "guidance": "How the change affects quality standards.",
+            "value": ""
+        },
+        "Impacts of Change - Schedule": {
+            "guidance": "How the change affects the timeline.",
+            "value": ""
+        },
+        "Impacts of Change - Cost": {
+            "guidance": "How the change affects the budget.",
+            "value": ""
+        },
+        "Impacts of Change - Stakeholder/Documents": {
+            "guidance": "Impact on stakeholders and which documents need updates.",
+            "value": ""
+        },
+        "التعليقات": {
+            "guidance": "Additional clarifying information.",
+            "value": ""
+        },
+        "Disposition": {
+            "guidance": "Approve, Defer, Reject, and Justification (Filled by CCB).",
+            "value": ""
+        }
+    }
+}

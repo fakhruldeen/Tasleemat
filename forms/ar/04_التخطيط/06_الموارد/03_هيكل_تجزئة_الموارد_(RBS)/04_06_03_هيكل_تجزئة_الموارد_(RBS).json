@@ -1,0 +1,14 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "هيكل تجزئة الموارد (RBS)",
+    "fields": {
+        "Control account": {
+            "guidance": "The point where scope, schedule, and cost are integrated and used to measure project performance",
+            "value": ""
+        },
+        "Work package": {
+            "guidance": "The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.",
+            "value": ""
+        }
+    }
+}

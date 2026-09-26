@@ -1,0 +1,134 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "ملخص الدروس المستفادة",
+    "fields": {
+        "Project Performance": {
+            "guidance": "",
+            "value": ""
+        },
+        "What Worked Well": {
+            "guidance": "",
+            "value": ""
+        },
+        "What Can Be Improved": {
+            "guidance": "",
+            "value": ""
+        },
+        "Requirements definition": {
+            "guidance": "and management",
+            "value": ""
+        },
+        "List any practices or incidents that": {
+            "guidance": "were effective in defining and managing requirements. List any practices or incidents that can be improved in defining and managing requirements.",
+            "value": ""
+        },
+        "Scope definition and": {
+            "guidance": "management List any practices or incidents that were effective in defining and managing scope. List any practices or incidents that can be improved in defining and managing scope.",
+            "value": ""
+        },
+        "Schedule development": {
+            "guidance": "and control List any practices or incidents that were effective in developing and controlling the schedule. List any practices or incidents that can be improved in developing and controlling the schedule.",
+            "value": ""
+        },
+        "Cost estimating and": {
+            "guidance": "control List any practices or incidents that were effective in developing estimates and controlling costs. List any practices or incidents that can be improved in developing estimates and controlling costs.",
+            "value": ""
+        },
+        "Quality planning and": {
+            "guidance": "control List any practices or incidents that were effective in planning, managing, and controlling quality. List any practices or incidents that can be improved in planning, managing, and controlling quality. Specific defects are addressed elsewhere.",
+            "value": ""
+        },
+        "Physical resource planning and control": {
+            "guidance": "List any practices or incidents that were List any practices or incidents that can be effective in planning, acquiring, and manag- improved in planning, acquiring, and managing physical resources. ing physical resources. Team planning, develop- List any practices or incidents that were ment, and performance effective in working with team members and developing and managing the team. List any practices or incidents that can be improved in working with team members and developing and managing the team.",
+            "value": ""
+        },
+        "Communications": {
+            "guidance": "management List any practices or incidents that were effective in planning and distributing information. List any practices or incidents that can be improved in planning and distributing information.",
+            "value": ""
+        },
+        "Reporting": {
+            "guidance": "List any practices or incidents that were effective in reporting project performance. List any practices or incidents that can be improved in reporting project performance.",
+            "value": ""
+        },
+        "Risk management": {
+            "guidance": "List any practices or incidents that were effective in the risk management process. Specific risks are addressed elsewhere. List any practices or incidents that can be improved in the risk management process. Specific risks are addressed elsewhere. (continued)",
+            "value": ""
+        },
+        "Procurement planning": {
+            "guidance": "and management List any practices or incidents that were effective in planning, conducting, and administering contracts. List any practices or incidents that can be improved in planning, conducting, and administering contracts. Stakeholder engagement List any practices or incidents that were effective in engaging stakeholders. List any practices or incidents that can be improved in engaging stakeholders.",
+            "value": ""
+        },
+        "Process improvement": {
+            "guidance": "information",
+            "value": ""
+        },
+        "List any processes that were developed": {
+            "guidance": "that should be continued. List any processes that should be changed or discontinued.",
+            "value": ""
+        },
+        "Product-specific": {
+            "guidance": "information List any practices or incidents that were effective in delivering the specific product, service, or result. List any practices or incidents that can be improved in delivering the specific product, service, or result.",
+            "value": ""
+        },
+        "Other": {
+            "guidance": "List any other practices or incidents that were effective, such as change control, configuration management, etc. List any other practices or incidents that can be improved, such as change control, configuration management, etc.",
+            "value": ""
+        },
+        "Risks and issues": {
+            "guidance": "",
+            "value": ""
+        },
+        "Risk or issue description": {
+            "guidance": "Identify risks or issues that occurred that should be considered to improve organizational learning.",
+            "value": ""
+        },
+        "Response": {
+            "guidance": "Describe the response and its effectiveness.",
+            "value": ""
+        },
+        "التعليقات": {
+            "guidance": "Provide any additional information needed to improve future project performance.",
+            "value": ""
+        },
+        "Defect description": {
+            "guidance": "",
+            "value": ""
+        },
+        "Describe quality defects that should be": {
+            "guidance": "considered to improve organizational effectiveness.",
+            "value": ""
+        },
+        "الحل": {
+            "guidance": "Describe how the defects were resolved.",
+            "value": ""
+        },
+        "Indicate what should be done to improve": {
+            "guidance": "future project performance.",
+            "value": ""
+        },
+        "Vendor": {
+            "guidance": "List the vendor(s).",
+            "value": ""
+        },
+        "Issue": {
+            "guidance": "Describe any issues, claims, or disputes that occurred.",
+            "value": ""
+        },
+        "Areas of exceptional performance": {
+            "guidance": "Identify areas of exceptional performance that can be passed on to other teams.",
+            "value": ""
+        },
+        "Areas for improvement": {
+            "guidance": "Identify areas that can be improved on for future performance.",
+            "value": ""
+        },
+        "Quality defects": {
+            "guidance": "",
+            "value": ""
+        },
+        "Vendor management": {
+            "guidance": "",
+            "value": ""
+        }
+    }
+}

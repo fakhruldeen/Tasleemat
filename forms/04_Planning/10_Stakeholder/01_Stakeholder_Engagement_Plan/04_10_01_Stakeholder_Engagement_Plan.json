@@ -1,0 +1,40 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Stakeholder Engagement Plan template based on the provided project context.",
+    "form_name": "Stakeholder Engagement Plan",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Stakeholder changes": {
+            "guidance": "Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.",
+            "value": ""
+        },
+        "Interrelationships": {
+            "guidance": "List any relationships between and among stakeholder groups.",
+            "value": ""
+        },
+        "Stakeholder engagement approach": {
+            "guidance": "Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.",
+            "value": ""
+        },
+        "unaware": {
+            "guidance": "",
+            "value": ""
+        },
+        "Stakeholder relationships": {
+            "guidance": "",
+            "value": ""
+        },
+        "Pending Stakeholder changes": {
+            "guidance": "",
+            "value": ""
+        },
+        "C = Current level of engagement": {
+            "guidance": "",
+            "value": ""
+        },
+        "Stakeholder": {
+            "guidance": "",
+            "value": ""
+        }
+    }
+}

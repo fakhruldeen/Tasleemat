@@ -1,0 +1,66 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تقييم أداء الفريق",
+    "fields": {
+        "Technical performance": {
+            "guidance": "",
+            "value": ""
+        },
+        "النطاق": {
+            "guidance": "Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.",
+            "value": ""
+        },
+        "الجودة": {
+            "guidance": "Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.",
+            "value": ""
+        },
+        "الجدول الزمني": {
+            "guidance": "Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.",
+            "value": ""
+        },
+        "التكلفة": {
+            "guidance": "Rate the team’s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.",
+            "value": ""
+        },
+        "Communication": {
+            "guidance": "Rate the team’s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.",
+            "value": ""
+        },
+        "Collaboration": {
+            "guidance": "Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.",
+            "value": ""
+        },
+        "Conflict management": {
+            "guidance": "Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.",
+            "value": ""
+        },
+        "Decision making": {
+            "guidance": "Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.",
+            "value": ""
+        },
+        "Interpersonal competency": {
+            "guidance": "",
+            "value": ""
+        },
+        "Team morale": {
+            "guidance": "Describe the overall team morale.",
+            "value": ""
+        },
+        "Areas for development": {
+            "guidance": "",
+            "value": ""
+        },
+        "Area": {
+            "guidance": "List technical or interpersonal areas for development.",
+            "value": ""
+        },
+        "Approach": {
+            "guidance": "Describe the development approach, such as training, mentoring, or coaching.",
+            "value": ""
+        },
+        "Actions": {
+            "guidance": "List the actions necessary to implement the development approach.",
+            "value": ""
+        }
+    }
+}

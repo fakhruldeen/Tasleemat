@@ -1,0 +1,56 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Cost Estimates template based on the provided project context.",
+    "form_name": "Cost Estimates",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "ID": {
+            "guidance": "Unique identifier, such as the WBS ID or activity ID",
+            "value": ""
+        },
+        "Resource": {
+            "guidance": "The resource (person, equipment, material) needed for the WBS deliverable",
+            "value": ""
+        },
+        "Labor costs": {
+            "guidance": "The costs associated with team or outsourced resources",
+            "value": ""
+        },
+        "Physical costs": {
+            "guidance": "Costs associated with material, equipment, supplies, or other physical resources",
+            "value": ""
+        },
+        "Reserve": {
+            "guidance": "Document contingency reserve amounts, if any",
+            "value": ""
+        },
+        "Estimate": {
+            "guidance": "The sum of the cost of labor, physical resources, and reserve costs",
+            "value": ""
+        },
+        "Basis of estimates": {
+            "guidance": "Information such as cost per pound, duration of the work, square feet, etc.",
+            "value": ""
+        },
+        "Method": {
+            "guidance": "The method used to estimate the cost, such as analogous, parametric, etc.",
+            "value": ""
+        },
+        "Assumptions/constraints": {
+            "guidance": "Assumptions used to estimate the cost, such as the length of time the resource will be needed",
+            "value": ""
+        },
+        "Range": {
+            "guidance": "",
+            "value": ""
+        },
+        "The range of estimate": {
+            "guidance": "",
+            "value": ""
+        },
+        "Confidence level": {
+            "guidance": "The degree of confidence in the estimate",
+            "value": ""
+        }
+    }
+}

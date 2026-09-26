@@ -1,0 +1,22 @@
+{
+    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "form_name": "Team Onboarding Checklist",
+    "fields": {
+        "Task": {
+            "guidance": "Onboarding activity (e.g. System access granted).",
+            "value": ""
+        },
+        "Assigned To": {
+            "guidance": "Who is responsible.",
+            "value": ""
+        },
+        "Due Date": {
+            "guidance": "When it should be completed.",
+            "value": ""
+        },
+        "Status": {
+            "guidance": "Done/Pending.",
+            "value": ""
+        }
+    }
+}

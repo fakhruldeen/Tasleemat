@@ -1,0 +1,22 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Tailoring Plan template based on the provided project context.",
+    "form_name": "Tailoring Plan",
+    "fields": {
+        "Process/Artifact": {
+            "guidance": "The standard process or artifact being considered.",
+            "value": ""
+        },
+        "Tailoring Decision": {
+            "guidance": "Added, removed, or modified?",
+            "value": ""
+        },
+        "Justification": {
+            "guidance": "Reasoning for the tailoring decision.",
+            "value": ""
+        },
+        "Approver": {
+            "guidance": "Person who approved the change.",
+            "value": ""
+        }
+    }
+}

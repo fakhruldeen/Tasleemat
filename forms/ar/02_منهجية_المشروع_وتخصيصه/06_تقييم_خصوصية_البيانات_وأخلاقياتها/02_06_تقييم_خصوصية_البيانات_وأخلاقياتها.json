@@ -1,0 +1,26 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "تقييم خصوصية البيانات وأخلاقياتها",
+    "fields": {
+        "Data Source": {
+            "guidance": "Where the data originates.",
+            "value": ""
+        },
+        "PII Detection": {
+            "guidance": "Does it contain Personally Identifiable Information?",
+            "value": ""
+        },
+        "Consent Management": {
+            "guidance": "How user consent was obtained.",
+            "value": ""
+        },
+        "Data Retention Policy": {
+            "guidance": "How long data is stored and how it's deleted.",
+            "value": ""
+        },
+        "Compliance Alignment": {
+            "guidance": "GDPR, CCPA, or local regulatory alignment.",
+            "value": ""
+        }
+    }
+}

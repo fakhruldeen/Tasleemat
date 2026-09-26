@@ -1,0 +1,16 @@
+{
+    "_llm_instructions": "Fill out the 'value' properties for each field in this Risk Register template based on the provided project context.",
+    "form_name": "Risk Register",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "Risk ID": {
+            "guidance": "Enter a unique risk identifier.",
+            "value": ""
+        },
+        "Risk statement": {
+            "guidance": "Describe the risk event or condition. A risk statement is usually phrased as \u201cEVENT may occur, causing IMPACT\u201d or \u201cIf CONDITION exists, EVENT may occur, leading to",
+            "value": ""
+        }
+    }
+}

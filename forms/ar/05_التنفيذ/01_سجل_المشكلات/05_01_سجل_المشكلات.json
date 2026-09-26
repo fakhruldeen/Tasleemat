@@ -1,0 +1,46 @@
+{
+    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "form_name": "سجل المشكلات",
+    "fields": {
+        "ID": {
+            "guidance": "Enter a unique issue identifier.",
+            "value": ""
+        },
+        "Type": {
+            "guidance": "Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.",
+            "value": ""
+        },
+        "Issue description": {
+            "guidance": "Provide a detailed description of the issue.",
+            "value": ""
+        },
+        "الأولوية": {
+            "guidance": "Define the priority, such as urgent, high, medium, or low.",
+            "value": ""
+        },
+        "Impact on objectives": {
+            "guidance": "Identify the project objectives that the issue impacts and the degree of impact.",
+            "value": ""
+        },
+        "Responsible party": {
+            "guidance": "Identify the person who is assigned to resolve the issue.",
+            "value": ""
+        },
+        "الحالة": {
+            "guidance": "Denote the status of the issue as open or closed.",
+            "value": ""
+        },
+        "Resolution date": {
+            "guidance": "Document the date by which the issue needs to be resolved.",
+            "value": ""
+        },
+        "Final resolution": {
+            "guidance": "Describe how the issue was resolved.",
+            "value": ""
+        },
+        "التعليقات": {
+            "guidance": "Document any clarifying comments about the issue, resolution, or other fields on the form.",
+            "value": ""
+        }
+    }
+}
