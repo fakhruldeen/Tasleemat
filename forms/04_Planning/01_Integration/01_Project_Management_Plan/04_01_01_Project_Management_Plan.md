@@ -8,6 +8,12 @@ Form: PROJECT MANAGEMENT PLAN (Instructions)
 > **System Prompt / Instructions:**
 > This document serves as the detailed instruction set for generating the `PROJECT MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
+> **Context & Definition:**
+> The project management plan describes how the team will execute, monitor, control, and close the project. It integrates all subsidiary management plans and baselines into a cohesive approach. Typical information includes the selected life cycle, development approaches, variance thresholds, baseline management, and reviews. 
+> 
+> **Alignment:**
+> Ensure consistency with all subsidiary management plans, the project roadmap, and the milestone list.
+
 ---
 
 ### Project life cycle
