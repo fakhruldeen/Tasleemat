@@ -6,7 +6,12 @@ Form: Stakeholder Analysis (Instructions)
 # STAKEHOLDER ANALYSIS - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Stakeholder Analysis`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+
+---
+
+### ID
+**Instruction:** Unique identifier linking back to the Stakeholder Register (e.g., SH-01).
 
 ---
 

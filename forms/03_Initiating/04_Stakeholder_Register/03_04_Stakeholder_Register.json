@@ -4,6 +4,10 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "ID": {
+            "guidance": "Unique identifier for the stakeholder (e.g., SH-01).",
+            "value": ""
+        },
         "Name": {
             "guidance": "Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.",
             "value": ""

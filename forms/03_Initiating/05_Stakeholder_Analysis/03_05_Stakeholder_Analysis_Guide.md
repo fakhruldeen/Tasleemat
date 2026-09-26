@@ -37,8 +37,9 @@ This artifact is primarily prepared, utilized, and updated during the **INITIATI
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Stakeholder Analysis**, the responsible party must populate the following sections (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this form, populate the following sections:
 
+*   **ID:** Unique identifier linking back to the Stakeholder Register (e.g., SH-01).
 *   **Name or Role:** The name or role of the stakeholder being analyzed.
 *   **Interest:** The level of interest the stakeholder has in the project outcomes (e.g., High, Medium, Low).
 *   **Influence:** The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).

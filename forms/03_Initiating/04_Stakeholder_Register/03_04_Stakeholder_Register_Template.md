@@ -11,19 +11,21 @@
 
 ### Stakeholder Register Entries
 <!-- 
-Please provide a comprehensive list of all project stakeholders. For each entry, ensure you populate the following columns in the table below:
-- **Name:** Stakeholder’s name, position, or organization.
-- **Position/Role:** The position and/or role the stakeholder holds in the organization or project team.
-- **Contact information:** Phone number, email address, etc.
-- **Requirements:** High-level needs for the project/product.
-- **Expectations:** Main expectations of the project/product.
-- **Classification:** Categorization (e.g., high/medium/low impact).
+Please populate the table below with the following details:
+- **ID:** Unique identifier for the stakeholder (e.g., SH-01).
+- **Name:** Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.
+- **Position/Role:** The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.
+- **Contact information:** How to communicate with the stakeholder, such as their phone number, email address, or physical address.
+- **Requirements:** High-level needs for the project and/or product.
+- **Expectations:** Main expectations of the project and/or product.
+- **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
 -->
-| Name | Position/Role | Contact information | Requirements | Expectations | Classification |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
-| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| ID | Name | Position/Role | Contact information | Requirements | Expectations | Classification |
+| --- | --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+
 
 ---
 

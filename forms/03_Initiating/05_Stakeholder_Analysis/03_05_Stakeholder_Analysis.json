@@ -4,6 +4,10 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "ID": {
+            "guidance": "Unique identifier linking back to the Stakeholder Register (e.g., SH-01).",
+            "value": ""
+        },
         "Name or Role": {
             "guidance": "The name or role of the stakeholder being analyzed.",
             "value": ""

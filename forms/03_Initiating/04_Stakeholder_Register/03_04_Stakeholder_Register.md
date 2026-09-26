@@ -6,7 +6,12 @@ Form: Stakeholder Register (Instructions)
 # STAKEHOLDER REGISTER - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Stakeholder Register`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+
+---
+
+### ID
+**Instruction:** Unique identifier for the stakeholder (e.g., SH-01).
 
 ---
 

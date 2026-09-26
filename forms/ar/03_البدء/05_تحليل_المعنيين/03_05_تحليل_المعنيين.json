@@ -4,6 +4,10 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "المعرف (ID)": {
+            "guidance": "معرف فريد يربط المعني بسجل المعنيين (مثل: SH-01).",
+            "value": ""
+        },
         "الاسم أو الدور (Name or Role)": {
             "guidance": "اسم المعني أو دوره في المشروع.",
             "value": ""
