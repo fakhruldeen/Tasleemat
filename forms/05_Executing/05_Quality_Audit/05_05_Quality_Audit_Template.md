@@ -82,5 +82,6 @@
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> QUALITY AUDIT | <strong>Ref:</strong> PMO-05.05 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

@@ -1,6 +1,7 @@
 {
     "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this AI MODEL CARD AND FACT SHEET template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "AI MODEL CARD AND FACT SHEET",
+    "document_reference": "PMO-02.05",
     "project_title": "",
     "date_prepared": "",
     "fields": {

@@ -59,5 +59,6 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> USER ACCEPTANCE TESTING SIGNOFF | <strong>Ref:</strong> PMO-06.10 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

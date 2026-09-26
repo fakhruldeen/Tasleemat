@@ -1,6 +1,7 @@
 {
     "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this DATA PRIVACY AND ETHICS ASSESSMENT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "DATA PRIVACY AND ETHICS ASSESSMENT",
+    "document_reference": "PMO-02.06",
     "project_title": "",
     "date_prepared": "",
     "fields": {

@@ -1,6 +1,7 @@
 {
     "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Lessons Learned Register template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "Lessons Learned Register",
+    "document_reference": "PMO-05.07",
     "project_title": "",
     "date_prepared": "",
     "fields": {

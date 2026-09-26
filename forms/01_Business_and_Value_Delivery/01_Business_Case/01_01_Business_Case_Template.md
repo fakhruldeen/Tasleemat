@@ -49,5 +49,6 @@
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> BUSINESS CASE | <strong>Ref:</strong> PMO-01.01 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

@@ -1,6 +1,7 @@
 {
     "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROGRAM CHARTER template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "PROGRAM CHARTER",
+    "document_reference": "PMO-00.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {

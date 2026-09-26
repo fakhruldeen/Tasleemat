@@ -42,5 +42,6 @@ Please provide a comprehensive log of all assumptions and constraints for the pr
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> ASSUMPTION LOG | <strong>Ref:</strong> PMO-03.03 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

@@ -1,6 +1,7 @@
 {
     "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROJECT STATUS REPORT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "PROJECT STATUS REPORT",
+    "document_reference": "PMO-06.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {

@@ -1,6 +1,7 @@
 {
     "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إشراك المعنيين هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
     "form_name": "خطة إشراك المعنيين",
+    "document_reference": "PMO-04.10.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {

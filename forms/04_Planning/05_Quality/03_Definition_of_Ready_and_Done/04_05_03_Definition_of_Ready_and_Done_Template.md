@@ -38,5 +38,6 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> DEFINITION OF READY AND DONE | <strong>Ref:</strong> PMO-04.05.03 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
