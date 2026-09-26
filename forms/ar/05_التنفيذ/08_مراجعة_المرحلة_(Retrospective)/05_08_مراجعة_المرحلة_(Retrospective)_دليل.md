@@ -38,7 +38,7 @@ nav_order: 1
 ---
 
 ### 5. كيف (How)؟
-لإكمال **مراجعة المرحلة (Retrospective)** بطريقة احترافية ومتوافقة مع المعايير، يجب تعبئة الأقسام الحرجة التالية بشكل مفصل (يرجى الرجوع إلى ملف `parameters.md` لضمان توافق المتغيرات العامة للمشروع):
+لإكمال السجل بطريقة احترافية، يجب تعبئة الأقسام التالية:
 
 *   **Start:** Actions and behaviors that the team will begin to implement
 *   **Stop:** Actions or behaviors that the team will cease doing

@@ -10,10 +10,23 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Data Maturity</th>    <th>Technical Infrastructure</th>    <th>Skills & Expertise</th>    <th>Organizational Culture</th>    <th>Overall Readiness Score</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Ai Readiness Assessment Entries
+<!-- 
+Please populate the table below with the following details:
+- **Data Maturity:** Assessment of data quality, availability, and architecture.
+- **Technical Infrastructure:** Evaluation of compute, storage, and software capabilities.
+- **Skills & Expertise:** Availability of required AI and domain expertise.
+- **Organizational Culture:** Readiness for change and adoption of AI tools.
+- **Overall Readiness Score:** Summary score or recommendation.
+-->
+| Data Maturity | Technical Infrastructure | Skills & Expertise | Organizational Culture | Overall Readiness Score |
+| --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Data Maturity:</b> <i>Assessment of data quality, availability, and architecture.</i></li><li><b>Technical Infrastructure:</b> <i>Evaluation of compute, storage, and software capabilities.</i></li><li><b>Skills & Expertise:</b> <i>Availability of required AI and domain expertise.</i></li><li><b>Organizational Culture:</b> <i>Readiness for change and adoption of AI tools.</i></li><li><b>Overall Readiness Score:</b> <i>Summary score or recommendation.</i></li></ul></div>
+
+
 
 ---
 

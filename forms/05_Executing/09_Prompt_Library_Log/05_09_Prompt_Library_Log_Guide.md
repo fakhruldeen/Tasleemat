@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **EXECUTIN
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Prompt Library Log**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **Prompt ID:** Unique identifier.
 *   **Use Case:** What the prompt is used for.

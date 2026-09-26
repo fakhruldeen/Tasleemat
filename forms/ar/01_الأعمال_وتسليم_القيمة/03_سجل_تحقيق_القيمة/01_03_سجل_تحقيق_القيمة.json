@@ -9,7 +9,7 @@
             "value": ""
         },
         "الوصف": {
-            "guidance": "Description of the benefit.",
+            "guidance": "الوصف of the benefit.",
             "value": ""
         },
         "المالك": {
@@ -25,7 +25,7 @@
             "value": ""
         },
         "الحالة": {
-            "guidance": "Status of the benefit realization.",
+            "guidance": "الحالة of the benefit realization.",
             "value": ""
         }
     }

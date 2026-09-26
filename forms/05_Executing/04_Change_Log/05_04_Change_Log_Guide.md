@@ -37,15 +37,15 @@ This artifact is primarily prepared, utilized, and updated during the **EXECUTIN
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Change Log**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **Category:** Enter the category from the change request form. Describe the proposed change.
 *   **Requestor:** Enter the name of the person requesting the change.
 *   **Submission date:** Enter the date the change was submitted.
 *   **Status:** Enter the status as open, pending, closed.
 *   **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.
-*   **ID**
-*   **Description of change**
+*   **ID:** 
+*   **Description of change:** 
 
 ---
 

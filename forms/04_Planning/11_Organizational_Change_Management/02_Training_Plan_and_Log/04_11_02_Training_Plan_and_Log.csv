@@ -1,6 +1,3 @@
-Field,Guidance,LLM_Generated_Value
-Target Audience,Who needs training.,
-Training Module,What they are learning.,
-Delivery Method,"In-person, webinar, self-paced.",
-Date/Schedule,When training occurs.,
-Completion Status,Number of users completed.,
+Target Audience,Training Module,Delivery Method,Date/Schedule,Completion Status
+,,,,
+,,,,

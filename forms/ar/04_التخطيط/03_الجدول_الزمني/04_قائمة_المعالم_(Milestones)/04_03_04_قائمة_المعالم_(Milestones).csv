@@ -1,4 +1,3 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Milestone name","Milestone name that uniquely defines the milestone",""
-"Milestone description","A description of the milestone in enough detail to understand what is needed to determine the milestone is complete",""
-"Type","A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional",""
+Milestone name,Milestone description,Type
+,,
+,,

@@ -10,10 +10,20 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Work package</th>    <th>Resource</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Responsibility Assignment Matrix Entries
+<!-- 
+Please populate the table below with the following details:
+- **Work package:** Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.
+- **Resource:** Identify the person, division, or organization that will be working on the project.
+-->
+| Work package | Resource |
+| --- | --- |
+| [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Work package:</b> <i>Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.</i></li><li><b>Resource:</b> <i>Identify the person, division, or organization that will be working on the project.</i></li></ul></div>
+
+
 
 ---
 

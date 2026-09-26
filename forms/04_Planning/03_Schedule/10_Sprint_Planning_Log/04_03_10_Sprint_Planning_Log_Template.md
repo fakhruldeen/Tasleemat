@@ -13,10 +13,23 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Sprint Goal</th>    <th>Story ID</th>    <th>Story Points</th>    <th>Assignee</th>    <th>Acceptance Criteria</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Sprint Planning Log Entries
+<!-- 
+Please populate the table below with the following details:
+- **Sprint Goal:** The overarching goal of the sprint.
+- **Story ID:** Jira or board reference.
+- **Story Points:** Estimated effort.
+- **Assignee:** Who is working on it.
+- **Acceptance Criteria:** High level criteria for success.
+-->
+| Sprint Goal | Story ID | Story Points | Assignee | Acceptance Criteria |
+| --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Sprint Goal:</b> <i>The overarching goal of the sprint.</i></li><li><b>Story ID:</b> <i>Jira or board reference.</i></li><li><b>Story Points:</b> <i>Estimated effort.</i></li><li><b>Assignee:</b> <i>Who is working on it.</i></li><li><b>Acceptance Criteria:</b> <i>High level criteria for success.</i></li></ul></div>
+
+
 
 ---
 

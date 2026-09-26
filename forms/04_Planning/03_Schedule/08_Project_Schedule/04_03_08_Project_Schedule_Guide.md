@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Project Schedule**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **Project purpose:** The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project.
 *   **High-level project description:** A summary-level description of the project.

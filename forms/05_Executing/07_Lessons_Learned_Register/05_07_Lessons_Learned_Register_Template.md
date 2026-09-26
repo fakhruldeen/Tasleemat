@@ -10,10 +10,24 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>ID</th>    <th>Category</th>    <th>Trigger</th>    <th>Lesson</th>    <th>Responsible party</th>    <th>Comments</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Lessons Learned Register Entries
+<!-- 
+Please populate the table below with the following details:
+- **ID:** Enter a unique lesson identifier.
+- **Category:** Document the category of lesson, such as process, technical, environmental, stakeholder, phase, etc.
+- **Trigger:** Describe the context, event, or condition that led to the challenge, problem, or beneficial outcome.
+- **Lesson:** Articulate the lesson that can be passed on to other projects and to the organization.
+- **Responsible party:** Identify the person who is assigned to implement any changes to ensure the lesson is communicated and distributed.
+- **Comments:** Document any clarifying comments about the challenge, problem, good practice, or other fields on the form.
+-->
+| ID | Category | Trigger | Lesson | Responsible party | Comments |
+| --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>ID:</b> <i>Enter a unique lesson identifier.</i></li><li><b>Category:</b> <i>Document the category of lesson, such as process, technical, environmental, stakeholder, phase, etc.</i></li><li><b>Trigger:</b> <i>Describe the context, event, or condition that led to the challenge, problem, or beneficial outcome.</i></li><li><b>Lesson:</b> <i>Articulate the lesson that can be passed on to other projects and to the organization.</i></li><li><b>Responsible party:</b> <i>Identify the person who is assigned to implement any changes to ensure the lesson is communicated and distributed.</i></li><li><b>Comments:</b> <i>Document any clarifying comments about the challenge, problem, good practice, or other fields on the form.</i></li></ul></div>
+
+
 
 ---
 

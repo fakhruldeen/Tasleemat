@@ -1,13 +1,3 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"ID","Unique identifier, such as the WBS ID or activity ID",""
-"Resource","The resource (person, equipment, material) needed for the WBS deliverable",""
-"Labor costs","The costs associated with team or outsourced resources",""
-"Physical costs","Costs associated with material, equipment, supplies, or other physical resources",""
-"Reserve","Document contingency reserve amounts, if any",""
-"Estimate","The sum of the cost of labor, physical resources, and reserve costs",""
-"Basis of estimates","Information such as cost per pound, duration of the work, square feet, etc.",""
-"Method","The method used to estimate the cost, such as analogous, parametric, etc.",""
-"Assumptions/constraints","Assumptions used to estimate the cost, such as the length of time the resource will be needed",""
-"Range","",""
-"The range of estimate","",""
-"Confidence level","The degree of confidence in the estimate",""
+ID,Resource,Labor costs,Physical costs,Reserve,Estimate,Basis of estimates,Method,Assumptions/constraints,Range,The range of estimate,Confidence level
+,,,,,,,,,,,
+,,,,,,,,,,,

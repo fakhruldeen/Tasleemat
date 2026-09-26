@@ -13,10 +13,24 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Program/Project Name</th>    <th>Strategic Objective</th>    <th>Start Date</th>    <th>End Date</th>    <th>Budget Estimate</th>    <th>Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Portfolio Roadmap Entries
+<!-- 
+Please populate the table below with the following details:
+- **Program/Project Name:** Name of the initiative.
+- **Strategic Objective:** Which strategic goal this maps to.
+- **Start Date:** Expected start quarter/date.
+- **End Date:** Expected end quarter/date.
+- **Budget Estimate:** High level budget allocation.
+- **Status:** Current status.
+-->
+| Program/Project Name | Strategic Objective | Start Date | End Date | Budget Estimate | Status |
+| --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Program/Project Name:</b> <i>Name of the initiative.</i></li><li><b>Strategic Objective:</b> <i>Which strategic goal this maps to.</i></li><li><b>Start Date:</b> <i>Expected start quarter/date.</i></li><li><b>End Date:</b> <i>Expected end quarter/date.</i></li><li><b>Budget Estimate:</b> <i>High level budget allocation.</i></li><li><b>Status:</b> <i>Current status.</i></li></ul></div>
+
+
 
 ---
 

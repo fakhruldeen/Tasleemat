@@ -13,10 +13,23 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Checklist Item</th>    <th>Responsible Party</th>    <th>Sign-off Signature</th>    <th>Date</th>    <th>Notes</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Transition To Operations Checklist Entries
+<!-- 
+Please populate the table below with the following details:
+- **Checklist Item:** e.g., Code deployed, Support manuals written.
+- **Responsible Party:** Who owns the item.
+- **Sign-off Signature:** Approval.
+- **Date:** When completed.
+- **Notes:** Any handover details.
+-->
+| Checklist Item | Responsible Party | Sign-off Signature | Date | Notes |
+| --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Checklist Item:</b> <i>e.g., Code deployed, Support manuals written.</i></li><li><b>Responsible Party:</b> <i>Who owns the item.</i></li><li><b>Sign-off Signature:</b> <i>Approval.</i></li><li><b>Date:</b> <i>When completed.</i></li><li><b>Notes:</b> <i>Any handover details.</i></li></ul></div>
+
+
 
 ---
 

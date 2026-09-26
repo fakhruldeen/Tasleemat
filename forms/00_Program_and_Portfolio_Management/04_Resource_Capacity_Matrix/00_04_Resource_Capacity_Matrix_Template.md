@@ -13,10 +13,23 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Resource Role/Team</th>    <th>Total Available Capacity</th>    <th>Allocated Capacity</th>    <th>Remaining Capacity</th>    <th>Critical Constraints</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Resource Capacity Matrix Entries
+<!-- 
+Please populate the table below with the following details:
+- **Resource Role/Team:** Skillset or team name.
+- **Total Available Capacity:** Total hours/FTE available.
+- **Allocated Capacity:** Hours/FTE already assigned.
+- **Remaining Capacity:** Available hours/FTE.
+- **Critical Constraints:** Any bottlenecks or single points of failure.
+-->
+| Resource Role/Team | Total Available Capacity | Allocated Capacity | Remaining Capacity | Critical Constraints |
+| --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Resource Role/Team:</b> <i>Skillset or team name.</i></li><li><b>Total Available Capacity:</b> <i>Total hours/FTE available.</i></li><li><b>Allocated Capacity:</b> <i>Hours/FTE already assigned.</i></li><li><b>Remaining Capacity:</b> <i>Available hours/FTE.</i></li><li><b>Critical Constraints:</b> <i>Any bottlenecks or single points of failure.</i></li></ul></div>
+
+
 
 ---
 

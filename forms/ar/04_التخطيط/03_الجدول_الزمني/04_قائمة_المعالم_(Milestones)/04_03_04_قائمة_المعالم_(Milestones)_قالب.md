@@ -11,10 +11,21 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Milestone name</th>    <th>Milestone description</th>    <th>Type</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### مدخلات قائمة المعالم (Milestones)
+<!-- 
+يرجى تعبئة الجدول أدناه بالتفاصيل التالية:
+- **Milestone name:** Milestone name that uniquely defines the milestone
+- **Milestone description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete
+- **Type:** A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional
+-->
+| Milestone name | Milestone description | Type |
+| --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Milestone name:</b> <i>Milestone name that uniquely defines the milestone</i></li><li><b>Milestone description:</b> <i>A description of the milestone in enough detail to understand what is needed to determine the milestone is complete</i></li><li><b>Type:</b> <i>A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional</i></li></ul></div>
+
+
 
 ---
 

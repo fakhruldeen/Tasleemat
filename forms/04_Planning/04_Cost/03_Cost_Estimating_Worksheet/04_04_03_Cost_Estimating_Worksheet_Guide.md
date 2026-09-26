@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Cost Estimating Worksheet**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **ID:** Unique identifier, such as the WBS ID or activity ID
 *   **Parametric estimates:** Cost variable Enter the cost estimating driver, such as hours, square feet, gallons, or some other quantifiable measure. Example: Square feet
@@ -51,9 +51,9 @@ To accurately and professionally complete the **Cost Estimating Worksheet**, the
 *   **Most likely cost:** Determine a most likely cost estimate. Most likely estimates assume that there will be some cost fluctuations but nothing out of the ordinary. Example: $5,000
 *   **Pessimistic cost:** Determine a pessimistic cost estimate. Pessimistic estimates assume there are significant risks that will materialize and cause cost overruns. Example: $7,500
 *   **Weighting equation:** Weight the three estimates and divide. The most common method of weighting is the beta distribution, where c = cost: cE = ( cO + c4M + cP ) /6
-*   **(**
-*   **)**
-*   **Example: 4,000 + 4 ( 5,000 ) /6:** Expected cost Enter the expected cost based on the beta distribution. Example: $5,250
+*   **(:** 
+*   **):** 
+*   **Example: 4,000 + 4 ( 5,000 ) /6:** 
 
 ---
 

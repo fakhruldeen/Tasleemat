@@ -10,10 +10,24 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>ID</th>    <th>A unique identifier</th>    <th>Summary description</th>    <th>Priority</th>    <th>Story</th>    <th>Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Product Backlog Entries
+<!-- 
+Please populate the table below with the following details:
+- **ID:** 
+- **A unique identifier:** 
+- **Summary description:** A brief description of the requirement or need. The description should be no more than one or two sentences.
+- **Priority:** A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.
+- **Story:** This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.
+- **Status:** Indicates if the requirement is not started, in progress, or complete.
+-->
+| ID | A unique identifier | Summary description | Priority | Story | Status |
+| --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>ID:</b> <i></i></li><li><b>A unique identifier:</b> <i></i></li><li><b>Summary description:</b> <i>A brief description of the requirement or need. The description should be no more than one or two sentences.</i></li><li><b>Priority:</b> <i>A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.</i></li><li><b>Story:</b> <i>This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.</i></li><li><b>Status:</b> <i>Indicates if the requirement is not started, in progress, or complete.</i></li></ul></div>
+
+
 
 ---
 

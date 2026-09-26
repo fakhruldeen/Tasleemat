@@ -6,7 +6,7 @@ Form: Cost Estimating Worksheet (Instructions)
 # COST ESTIMATING WORKSHEET - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `Cost Estimating Worksheet`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 ---
 
@@ -81,5 +81,5 @@ Form: Cost Estimating Worksheet (Instructions)
 ---
 
 ### Example: 4,000 + 4 ( 5,000 ) /6
-**Instruction:** Expected cost Enter the expected cost based on the beta distribution. Example: $5,250
+**Instruction:** 
 

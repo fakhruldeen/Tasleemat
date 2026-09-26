@@ -13,10 +13,22 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Task</th>    <th>Assigned To</th>    <th>Due Date</th>    <th>Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Team Onboarding Checklist Entries
+<!-- 
+Please populate the table below with the following details:
+- **Task:** Onboarding activity (e.g. System access granted).
+- **Assigned To:** Who is responsible.
+- **Due Date:** When it should be completed.
+- **Status:** Done/Pending.
+-->
+| Task | Assigned To | Due Date | Status |
+| --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Task:</b> <i>Onboarding activity (e.g. System access granted).</i></li><li><b>Assigned To:</b> <i>Who is responsible.</i></li><li><b>Due Date:</b> <i>When it should be completed.</i></li><li><b>Status:</b> <i>Done/Pending.</i></li></ul></div>
+
+
 
 ---
 

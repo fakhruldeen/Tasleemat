@@ -61,7 +61,7 @@
             "value": ""
         },
         "Example: 4,000 + 4 ( 5,000 ) /6": {
-            "guidance": "Expected cost Enter the expected cost based on the beta distribution. Example: $5,250",
+            "guidance": "",
             "value": ""
         }
     }

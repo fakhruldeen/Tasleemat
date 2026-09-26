@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Milestone List**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **Milestone name:** Milestone name that uniquely defines the milestone
 *   **Milestone description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete

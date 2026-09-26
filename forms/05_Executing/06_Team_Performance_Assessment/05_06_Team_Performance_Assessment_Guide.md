@@ -37,9 +37,9 @@ This artifact is primarily prepared, utilized, and updated during the **EXECUTIN
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Team Performance Assessment**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
-*   **Technical performance**
+*   **Technical performance:** 
 *   **Scope:** Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.
 *   **Quality:** Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.
 *   **Schedule:** Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.
@@ -48,9 +48,9 @@ To accurately and professionally complete the **Team Performance Assessment**, t
 *   **Collaboration:** Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.
 *   **Conflict management:** Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.
 *   **Decision making:** Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.
-*   **Interpersonal competency**
+*   **Interpersonal competency:** 
 *   **Team morale:** Describe the overall team morale.
-*   **Areas for development**
+*   **Areas for development:** 
 *   **Area:** List technical or interpersonal areas for development.
 *   **Approach:** Describe the development approach, such as training, mentoring, or coaching.
 *   **Actions:** List the actions necessary to implement the development approach.

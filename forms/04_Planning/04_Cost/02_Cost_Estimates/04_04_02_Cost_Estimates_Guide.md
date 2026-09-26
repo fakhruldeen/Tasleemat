@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Cost Estimates**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **ID:** Unique identifier, such as the WBS ID or activity ID
 *   **Resource:** The resource (person, equipment, material) needed for the WBS deliverable
@@ -48,8 +48,8 @@ To accurately and professionally complete the **Cost Estimates**, the responsibl
 *   **Basis of estimates:** Information such as cost per pound, duration of the work, square feet, etc.
 *   **Method:** The method used to estimate the cost, such as analogous, parametric, etc.
 *   **Assumptions/constraints:** Assumptions used to estimate the cost, such as the length of time the resource will be needed
-*   **Range**
-*   **The range of estimate**
+*   **Range:** 
+*   **The range of estimate:** 
 *   **Confidence level:** The degree of confidence in the estimate
 
 ---

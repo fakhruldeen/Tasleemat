@@ -9,19 +9,19 @@
             "value": ""
         },
         "النطاق": {
-            "guidance": "Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.",
+            "guidance": "",
             "value": ""
         },
         "الجودة": {
-            "guidance": "Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.",
+            "guidance": "",
             "value": ""
         },
         "الجدول الزمني": {
-            "guidance": "Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.",
+            "guidance": "",
             "value": ""
         },
         "التكلفة": {
-            "guidance": "Rate the team’s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.",
+            "guidance": "",
             "value": ""
         },
         "Communication": {

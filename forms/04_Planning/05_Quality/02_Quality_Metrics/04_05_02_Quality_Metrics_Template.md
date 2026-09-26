@@ -10,10 +10,28 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Area audited</th>    <th>Good practices from similar projects</th>    <th>Areas for improvement</th>    <th>Deficiencies or defects</th>    <th>ID</th>    <th>Defect</th>    <th>Action</th>    <th>Responsible party</th>    <th>Due date</th>    <th>Comments</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Quality Metrics Entries
+<!-- 
+Please populate the table below with the following details:
+- **Area audited:** Check the box for the area or areas audited.
+- **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.
+- **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
+- **Deficiencies or defects:** 
+- **ID:** Enter a unique defect identifier.
+- **Defect:** Describe the deficiency or defect.
+- **Action:** Describe the corrective actions needed to fix the defect.
+- **Responsible party:** Identify the person assigned to correct the deficiency or defect.
+- **Due date:** Document the due date.
+- **Comments:** Provide any additional useful comments about the audit.
+-->
+| Area audited | Good practices from similar projects | Areas for improvement | Deficiencies or defects | ID | Defect | Action | Responsible party | Due date | Comments |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Area audited:</b> <i>Check the box for the area or areas audited.</i></li><li><b>Good practices from similar projects:</b> <i>Describe any good or best practices that can be shared from similar projects.</i></li><li><b>Areas for improvement:</b> <i>Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.</i></li><li><b>Deficiencies or defects:</b> <i></i></li><li><b>ID:</b> <i>Enter a unique defect identifier.</i></li><li><b>Defect:</b> <i>Describe the deficiency or defect.</i></li><li><b>Action:</b> <i>Describe the corrective actions needed to fix the defect.</i></li><li><b>Responsible party:</b> <i>Identify the person assigned to correct the deficiency or defect.</i></li><li><b>Due date:</b> <i>Document the due date.</i></li><li><b>Comments:</b> <i>Provide any additional useful comments about the audit.</i></li></ul></div>
+
+
 
 ---
 

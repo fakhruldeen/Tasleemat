@@ -1,3 +1,3 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Work package","Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.",""
-"Resource","Identify the person, division, or organization that will be working on the project.",""
+Work package,Resource
+,
+,

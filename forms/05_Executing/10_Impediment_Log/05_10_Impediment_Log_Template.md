@@ -13,10 +13,24 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Impediment ID</th>    <th>Date Raised</th>    <th>Description</th>    <th>Impact</th>    <th>Owner</th>    <th>Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Impediment Log Entries
+<!-- 
+Please populate the table below with the following details:
+- **Impediment ID:** Unique ID.
+- **Date Raised:** When it was identified.
+- **Description:** What is blocking the team.
+- **Impact:** How it affects the sprint.
+- **Owner:** Scrum Master or person resolving it.
+- **Status:** Open, In Progress, Resolved.
+-->
+| Impediment ID | Date Raised | Description | Impact | Owner | Status |
+| --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Impediment ID:</b> <i>Unique ID.</i></li><li><b>Date Raised:</b> <i>When it was identified.</i></li><li><b>Description:</b> <i>What is blocking the team.</i></li><li><b>Impact:</b> <i>How it affects the sprint.</i></li><li><b>Owner:</b> <i>Scrum Master or person resolving it.</i></li><li><b>Status:</b> <i>Open, In Progress, Resolved.</i></li></ul></div>
+
+
 
 ---
 

@@ -1,7 +1,3 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Benefit ID","Unique identifier for the benefit.",""
-"الوصف","Description of the benefit.",""
-"المالك","Person accountable for the benefit realization.",""
-"Target Value","The expected value.",""
-"Actual Value","The realized value.",""
-"الحالة","Status of the benefit realization.",""
+Benefit ID,الوصف,المالك,Target Value,Actual Value,الحالة
+,,,,,
+,,,,,

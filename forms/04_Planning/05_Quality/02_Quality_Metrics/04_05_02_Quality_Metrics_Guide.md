@@ -37,12 +37,12 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Quality Metrics**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **Area audited:** Check the box for the area or areas audited.
 *   **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.
 *   **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-*   **Deficiencies or defects**
+*   **Deficiencies or defects:** 
 *   **ID:** Enter a unique defect identifier.
 *   **Defect:** Describe the deficiency or defect.
 *   **Action:** Describe the corrective actions needed to fix the defect.

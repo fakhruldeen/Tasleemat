@@ -10,10 +10,24 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Benefit ID</th>    <th>Description</th>    <th>Owner</th>    <th>Target Value</th>    <th>Actual Value</th>    <th>Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Value Realization Register Entries
+<!-- 
+Please populate the table below with the following details:
+- **Benefit ID:** Unique identifier for the benefit.
+- **Description:** Description of the benefit.
+- **Owner:** Person accountable for the benefit realization.
+- **Target Value:** The expected value.
+- **Actual Value:** The realized value.
+- **Status:** Status of the benefit realization.
+-->
+| Benefit ID | Description | Owner | Target Value | Actual Value | Status |
+| --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Benefit ID:</b> <i>Unique identifier for the benefit.</i></li><li><b>Description:</b> <i>Description of the benefit.</i></li><li><b>Owner:</b> <i>Person accountable for the benefit realization.</i></li><li><b>Target Value:</b> <i>The expected value.</i></li><li><b>Actual Value:</b> <i>The realized value.</i></li><li><b>Status:</b> <i>Status of the benefit realization.</i></li></ul></div>
+
+
 
 ---
 

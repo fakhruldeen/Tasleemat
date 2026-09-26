@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **BUSINESS
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Value Realization Register**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **Benefit ID:** Unique identifier for the benefit.
 *   **Description:** Description of the benefit.

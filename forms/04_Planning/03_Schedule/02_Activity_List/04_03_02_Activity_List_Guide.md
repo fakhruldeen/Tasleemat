@@ -37,10 +37,10 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Activity List**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
-*   **ID**
-*   **Unique identifier**
+*   **ID:** 
+*   **Unique identifier:** 
 *   **Activity name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
 *   **Description of work:** If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.
 

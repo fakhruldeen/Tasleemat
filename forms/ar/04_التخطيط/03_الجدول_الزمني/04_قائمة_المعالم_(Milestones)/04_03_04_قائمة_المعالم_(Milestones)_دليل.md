@@ -38,7 +38,7 @@ nav_order: 1
 ---
 
 ### 5. كيف (How)؟
-لإكمال **قائمة المعالم (Milestones)** بطريقة احترافية ومتوافقة مع المعايير، يجب تعبئة الأقسام الحرجة التالية بشكل مفصل (يرجى الرجوع إلى ملف `parameters.md` لضمان توافق المتغيرات العامة للمشروع):
+لإكمال السجل بطريقة احترافية، يجب تعبئة الأقسام التالية:
 
 *   **Milestone name:** Milestone name that uniquely defines the milestone
 *   **Milestone description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete

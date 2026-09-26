@@ -1,6 +1,3 @@
-Field,Guidance,LLM_Generated_Value
-Sprint Goal,The overarching goal of the sprint.,
-Story ID,Jira or board reference.,
-Story Points,Estimated effort.,
-Assignee,Who is working on it.,
-Acceptance Criteria,High level criteria for success.,
+Sprint Goal,Story ID,Story Points,Assignee,Acceptance Criteria
+,,,,
+,,,,

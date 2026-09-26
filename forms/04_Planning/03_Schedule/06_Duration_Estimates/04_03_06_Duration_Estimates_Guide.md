@@ -37,10 +37,10 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Duration Estimates**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
-*   **ID**
-*   **Unique identifier**
+*   **ID:** 
+*   **Unique identifier:** 
 *   **Parametric estimates:** Effort hours Enter amount of labor it will take to accomplish the work. Usually shown in hours, but may also be shown in days. Example: 150 hours
 *   **Resource quantity:** Document the number of resources available. Example: 2 people
 *   **Percent available:** Enter amount of time the resources are available. Usually shown as the percent of time available per day or per week. Example: 75 percent of the time

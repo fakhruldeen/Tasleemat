@@ -37,10 +37,10 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Product Backlog**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
-*   **ID**
-*   **A unique identifier**
+*   **ID:** 
+*   **A unique identifier:** 
 *   **Summary description:** A brief description of the requirement or need. The description should be no more than one or two sentences.
 *   **Priority:** A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.
 *   **Story:** This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.

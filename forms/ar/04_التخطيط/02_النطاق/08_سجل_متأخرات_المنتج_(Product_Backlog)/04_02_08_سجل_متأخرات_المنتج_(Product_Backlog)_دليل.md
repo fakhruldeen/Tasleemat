@@ -38,12 +38,12 @@ nav_order: 1
 ---
 
 ### 5. كيف (How)؟
-لإكمال **سجل متأخرات المنتج (Product Backlog)** بطريقة احترافية ومتوافقة مع المعايير، يجب تعبئة الأقسام الحرجة التالية بشكل مفصل (يرجى الرجوع إلى ملف `parameters.md` لضمان توافق المتغيرات العامة للمشروع):
+لإكمال السجل بطريقة احترافية، يجب تعبئة الأقسام التالية:
 
-*   **ID**
-*   **A unique identifier**
+*   **ID:** 
+*   **A unique identifier:** 
 *   **Summary description:** A brief description of the requirement or need. The description should be no more than one or two sentences.
-*   **الأولوية:** A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.
+*   **الأولوية:** 
 *   **Story:** This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.
 *   **الحالة:** Indicates if the requirement is not started, in progress, or complete.
 

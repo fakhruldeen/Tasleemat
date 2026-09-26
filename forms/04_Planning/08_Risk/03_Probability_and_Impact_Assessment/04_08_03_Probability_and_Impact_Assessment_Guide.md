@@ -37,23 +37,23 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Probability and Impact Assessment**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
-*   **Scope impact**
+*   **Scope impact:** 
 *   **Very High:** The product does not meet the objectives and is effectively useless
 *   **High:** The product is deficient in multiple essential requirements
 *   **Medium:** The product is deficient in one major requirement or multiple minor requirements
 *   **Low:** The product is deficient in a few minor requirements
-*   **Very Low**
-*   **Minimal deviation from requirements**
-*   **There is minor deviation in performance**
-*   **Cost increase of 10 to 20 percent**
-*   **Cost increase of 5 to 10 percent**
-*   **Quality impact**
-*   **Schedule impact**
-*   **Cost impact**
-*   **Probability**
-*   **Risk rating**
+*   **Very Low:** 
+*   **Minimal deviation from requirements:** 
+*   **There is minor deviation in performance:** 
+*   **Cost increase of 10 to 20 percent:** 
+*   **Cost increase of 5 to 10 percent:** 
+*   **Quality impact:** 
+*   **Schedule impact:** 
+*   **Cost impact:** 
+*   **Probability:** 
+*   **Risk rating:** 
 
 ---
 

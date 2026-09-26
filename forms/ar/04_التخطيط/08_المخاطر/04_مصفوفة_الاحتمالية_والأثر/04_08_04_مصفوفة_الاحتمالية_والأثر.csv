@@ -1,16 +1,3 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Scope impact","",""
-"Very High","The product does not meet the objectives and is effectively useless",""
-"High","The product is deficient in multiple essential requirements",""
-"Medium","The product is deficient in one major requirement or multiple minor requirements",""
-"Low","The product is deficient in a few minor requirements",""
-"Very Low","",""
-"Minimal deviation from requirements","",""
-"There is minor deviation in performance","",""
-"Cost increase of 10 to 20 percent","",""
-"Cost increase of 5 to 10 percent","",""
-"Quality impact","",""
-"Schedule impact","",""
-"Cost impact","",""
-"الاحتمالية","",""
-"Risk rating","",""
+Scope impact,Very High,High,Medium,Low,Very Low,Minimal deviation from requirements,There is minor deviation in performance,Cost increase of 10 to 20 percent,Cost increase of 5 to 10 percent,Quality impact,Schedule impact,Cost impact,الاحتمالية,Risk rating
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,

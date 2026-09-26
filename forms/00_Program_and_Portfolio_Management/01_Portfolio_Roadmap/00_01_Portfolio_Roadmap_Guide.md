@@ -37,7 +37,7 @@ This artifact is primarily prepared, utilized, and updated during the **PROGRAM 
 ---
 
 ### 5. How?
-To accurately and professionally complete the **Portfolio Roadmap**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately complete this log, populate the following sections:
 
 *   **Program/Project Name:** Name of the initiative.
 *   **Strategic Objective:** Which strategic goal this maps to.

@@ -1,6 +1,3 @@
-الحقل (Field),الإرشادات (Guidance),LLM_Generated_Value
-"Resource Role/Team","Skillset or team name.",""
-"Total Available Capacity","Total hours/FTE available.",""
-"Allocated Capacity","Hours/FTE already assigned.",""
-"Remaining Capacity","Available hours/FTE.",""
-"Critical Constraints","Any bottlenecks or single points of failure.",""
+Resource Role/Team,Total Available Capacity,Allocated Capacity,Remaining Capacity,Critical Constraints
+,,,,
+,,,,

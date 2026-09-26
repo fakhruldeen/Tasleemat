@@ -10,10 +10,22 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>ID</th>    <th>Unique identifier</th>    <th>Activity name</th>    <th>Description of work</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Activity List Entries
+<!-- 
+Please populate the table below with the following details:
+- **ID:** 
+- **Unique identifier:** 
+- **Activity name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
+- **Description of work:** If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.
+-->
+| ID | Unique identifier | Activity name | Description of work |
+| --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>ID:</b> <i></i></li><li><b>Unique identifier:</b> <i></i></li><li><b>Activity name:</b> <i>A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.</i></li><li><b>Description of work:</b> <i>If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.</i></li></ul></div>
+
+
 
 ---
 

@@ -1,7 +1,3 @@
-Field,Guidance,LLM_Generated_Value
-Program/Project Name,Name of the initiative.,
-Strategic Objective,Which strategic goal this maps to.,
-Start Date,Expected start quarter/date.,
-End Date,Expected end quarter/date.,
-Budget Estimate,High level budget allocation.,
-Status,Current status.,
+Program/Project Name,Strategic Objective,Start Date,End Date,Budget Estimate,Status
+,,,,,
+,,,,,

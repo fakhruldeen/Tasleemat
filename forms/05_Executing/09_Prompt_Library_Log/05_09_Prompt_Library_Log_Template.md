@@ -10,10 +10,23 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Prompt ID</th>    <th>Use Case</th>    <th>Prompt Text</th>    <th>Expected Output</th>    <th>Status/Version</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Prompt Library Log Entries
+<!-- 
+Please populate the table below with the following details:
+- **Prompt ID:** Unique identifier.
+- **Use Case:** What the prompt is used for.
+- **Prompt Text:** The actual text or structure of the prompt.
+- **Expected Output:** What a successful response looks like.
+- **Status/Version:** Current version or status of the prompt.
+-->
+| Prompt ID | Use Case | Prompt Text | Expected Output | Status/Version |
+| --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Prompt ID:</b> <i>Unique identifier.</i></li><li><b>Use Case:</b> <i>What the prompt is used for.</i></li><li><b>Prompt Text:</b> <i>The actual text or structure of the prompt.</i></li><li><b>Expected Output:</b> <i>What a successful response looks like.</i></li><li><b>Status/Version:</b> <i>Current version or status of the prompt.</i></li></ul></div>
+
+
 
 ---
 

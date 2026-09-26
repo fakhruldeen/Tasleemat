@@ -13,10 +13,24 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>Dependency ID</th>    <th>Predecessor Project</th>    <th>Successor Project</th>    <th>Deliverable/Condition</th>    <th>Required Date</th>    <th>Status</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
+### Interdependency Register Entries
+<!-- 
+Please populate the table below with the following details:
+- **Dependency ID:** Unique ID.
+- **Predecessor Project:** Project that must finish first.
+- **Successor Project:** Project waiting on the predecessor.
+- **Deliverable/Condition:** What specifically is being waited on.
+- **Required Date:** When the deliverable is needed.
+- **Status:** On track, Delayed, etc.
+-->
+| Dependency ID | Predecessor Project | Successor Project | Deliverable/Condition | Required Date | Status |
+| --- | --- | --- | --- | --- | --- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Dependency ID:</b> <i>Unique ID.</i></li><li><b>Predecessor Project:</b> <i>Project that must finish first.</i></li><li><b>Successor Project:</b> <i>Project waiting on the predecessor.</i></li><li><b>Deliverable/Condition:</b> <i>What specifically is being waited on.</i></li><li><b>Required Date:</b> <i>When the deliverable is needed.</i></li><li><b>Status:</b> <i>On track, Delayed, etc.</i></li></ul></div>
+
+
 
 ---
 
