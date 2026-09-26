@@ -37,7 +37,7 @@
 
 ### Project objectives and related success criteria
 <!-- Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. -->
-| <th width="20%">Item</th> | <th width="40%">Project objectives</th> | <th width="40%">Success criteria</th> |
+| Item | Project objectives | Success criteria |
 | :--- | :--- | :--- |
 | **Scope** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | **Time** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
@@ -46,7 +46,7 @@
 
 ### Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
-| <th width="10%">#</th> | <th width="60%">Summary milestones</th> | <th width="30%">Due Date</th> |
+| # | Summary milestones | Due Date |
 | :--- | :--- | :--- |
 | 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
@@ -58,7 +58,7 @@
 
 ### Key stakeholder list
 <!-- An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. -->
-| <th width="50%">Stakeholder(s)</th> | <th width="50%">Role(s)</th> |
+| Stakeholder(s) | Role(s) |
 | :--- | :--- |
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
@@ -90,7 +90,7 @@
 
 ### Signatures
 
-| <th width="50%">Project Manager:</th> | <th width="50%">Project Sponsor / Originator:</th> |
+| Project Manager: | Project Sponsor / Originator: |
 | :--- | :--- |
 | **Name:** {{Project_Manager_Name}} | **Name:** {{Project_Sponsor_Name}} |
 | **Signature:** _____________________ | **Signature:** _____________________ |

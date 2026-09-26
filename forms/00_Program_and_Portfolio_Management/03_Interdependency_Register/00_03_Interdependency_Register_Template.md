@@ -22,7 +22,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 
 ### Signatures
 
-| <th width="33%">Prepared By:</th> | <th width="33%">Reviewed By:</th> | <th width="34%">Approved By:</th> |
+| Prepared By: | Reviewed By: | Approved By: |
 | :--- | :--- | :--- |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
 | <br> | <br> | <br> |
