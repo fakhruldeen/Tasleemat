@@ -9,10 +9,12 @@ Form: Stakeholder Analysis (Instructions)
 > This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> Stakeholder analysis is used to classify stakeholders. It can be used to help fill in the stakeholder register. Analyzing stakeholders can also help in planning stakeholder engagement for groups of stakeholders. The following example is used to assess the relative power (high or low), the relative interest (high or low), and the attitude (friend or foe). There are many other ways to categorize stakeholders, such as Influence/impact, or Power/urgency/legitimacy. Stakeholder analysis is a dynamic tool used to identify stakeholders.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The stakeholder analysis should be aligned and consistent with the following documents:
+• Stakeholder register
+• Stakeholder engagement plan
 
 ---
 

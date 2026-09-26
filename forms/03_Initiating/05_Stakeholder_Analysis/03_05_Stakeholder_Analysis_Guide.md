@@ -37,10 +37,13 @@ This artifact is primarily prepared, utilized, and updated during the **INITIATI
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• For projects with relatively homogenous stakeholders you can use a 2 × 2 grid that only considers two variables, such as interest and influence.
+• For larger projects consider using a 3 × 3 stakeholder cube. Tailor the categories to reflect the importance of various stakeholder variables.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The stakeholder analysis should be aligned and consistent with the following documents:
+• Stakeholder register
+• Stakeholder engagement plan
 
 ### 5. How?
 To accurately complete this form, populate the following sections:

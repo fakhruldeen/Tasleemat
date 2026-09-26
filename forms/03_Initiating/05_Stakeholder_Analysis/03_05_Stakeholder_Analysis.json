@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this STAKEHOLDER ANALYSIS template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this STAKEHOLDER ANALYSIS template based on the provided project context. Context & Definition: Stakeholder analysis is used to classify stakeholders. It can be used to help fill in the stakeholder register. Analyzing stakeholders can also help in planning stakeholder engagement for groups of stakeholders. The following example is used to assess the relative power (high or low), the relative interest (high or low), and the attitude (friend or foe). There are many other ways to categorize stakeholders, such as Influence/impact, or Power/urgency/legitimacy. Stakeholder analysis is a dynamic tool used to identify stakeholders. Alignment: The stakeholder analysis should be aligned and consistent with the following documents: • Stakeholder register • Stakeholder engagement plan",
     "form_name": "STAKEHOLDER ANALYSIS",
     "document_reference": "PMO-03.05",
     "project_title": "",
