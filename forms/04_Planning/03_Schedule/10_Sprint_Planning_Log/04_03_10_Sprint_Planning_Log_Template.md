@@ -26,8 +26,7 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 | Prepared By: | Reviewed By: | Approved By: |
 | :--- | :--- | :--- |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| <br> | <br> | <br> |
-| **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |  
+| <br> | **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |  
 
 ---
 

@@ -117,7 +117,6 @@
 | :--- | :--- |
 | **Name:** {{Project_Manager_Name}} | **Name:** {{Project_Sponsor_Name}} |
 | **Signature:** _____________________ | **Signature:** _____________________ |
-| <br> | <br> |
 | **Date:** _________________ | **Date:** _________________ |  
 
 ---
