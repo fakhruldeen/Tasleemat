@@ -1,7 +1,7 @@
 <!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
-<h2 align="right">{{Project_Name}}</h2>
+<h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROJECT CHARTER</h1>
 
 **Date Prepared:** {{Current_Date}}  
