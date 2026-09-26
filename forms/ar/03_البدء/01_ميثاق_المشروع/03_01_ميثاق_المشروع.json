@@ -5,7 +5,7 @@
     "date_prepared": "",
     "fields": {
         "الغرض من المشروع": {
-            "guidance": "The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project.",
+            "guidance": "السبب وراء تنفيذ المشروع. قد يشير إلى دراسة الجدوى، أو الخطة الاستراتيجية للمنظمة، أو عوامل خارجية، أو اتفاقية تعاقدية، أو أي سبب آخر لتنفيذ المشروع.",
             "value": ""
         },
         "وصف المشروع عالي المستوى": {
@@ -17,15 +17,15 @@
             "value": ""
         },
         "التسليمات الرئيسية": {
-            "guidance": "The high-level project and product deliverables. These will be further elaborated in the project scope statement.",
+            "guidance": "تسليمات المشروع والمنتج عالية المستوى. سيتم تفصيل ذلك بشكل أكبر في بيان نطاق المشروع.",
             "value": ""
         },
         "المتطلبات عالية المستوى": {
-            "guidance": "The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders’ needs and expectations. These will be further elaborated in the requirements documentation.",
+            "guidance": "الشروط أو القدرات عالية المستوى التي يجب الوفاء بها لتحقيق الغرض من المشروع. صِف ميزات ووظائف المنتج التي يجب توفرها لتلبية احتياجات وتوقعات المعنيين. سيتم تفصيل ذلك بشكل أكبر في وثائق المتطلبات.",
             "value": ""
         },
         "المخاطر الكلية للمشروع": {
-            "guidance": "An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome.",
+            "guidance": "تقييم مستوى المخاطر الكلية للمشروع. يمكن أن تشمل المخاطر الكلية التقلبات السياسية والاجتماعية والاقتصادية والتكنولوجية الكامنة، وعدم اليقين، والتعقيد، والغموض. وتتعلق بمدى تعرض المعنيين للتغيرات في نتائج المشروع.",
             "value": ""
         },
         "أهداف المشروع ومعايير النجاح المرتبطة بها": {
@@ -37,7 +37,7 @@
             "value": ""
         },
         "الموارد المالية المعتمدة مسبقاً": {
-            "guidance": "The amount of funding available for the project. May include sources of funding and annual funding limits.",
+            "guidance": "حجم التمويل المتاح للمشروع. قد يشمل مصادر التمويل والحدود السنوية للتمويل.",
             "value": ""
         },
         "قائمة المعنيين الرئيسيين": {
