@@ -24,7 +24,7 @@ Please provide a comprehensive log of all assumptions and constraints for the pr
 - **Comments:** Any additional information, context, or updates.
 -->
 | ID | Type | Category | Description | Impact if invalid | Responsible party | Due date | Actions | Status | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
