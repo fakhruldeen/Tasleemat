@@ -43,9 +43,20 @@
 ---
 
 ### Subsidiary management plans
-<!-- List the subsidiary management plans that are part of the project management plan. This can be in the form of a “table of contents,” links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents. -->
+<!-- List the subsidiary management plans that are part of the project management plan. Populate the Comment column for each of the pre-defined plans below. -->
 
-> [ Provide your detailed response here... ]
+| Name | Comment |
+| :--- | :--- |
+| Scope | [ ... ] |
+| Time | [ ... ] |
+| Cost | [ ... ] |
+| Quality | [ ... ] |
+| Resource | [ ... ] |
+| Communications | [ ... ] |
+| Risk | [ ... ] |
+| Procurement | [ ... ] |
+| Stakeholder | [ ... ] |
+| Other Plans | [ ... ] |
 
 ---
 
