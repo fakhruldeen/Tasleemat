@@ -38,16 +38,15 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 
 
 ### Tailoring Tips
-Consider the following tips to help tailor the project management plan to meet your needs:
-*   For large and complex projects, each subsidiary management plan will likely be a separate stand-alone plan. In this case you may present your project management plan as a shell with just information on the life cycle, development approach, and key reviews, and then provide a link or reference to the more detailed subsidiary management plans.
-*   For smaller projects, a project roadmap that summarizes the project phases, major deliverables, milestones, and key reviews may be sufficient.
-*   You will likely have additional subsidiary management plans that are relevant to the nature of your project, such as a technology management plan, a logistics management plan, a safety management plan, and so forth.
+• For large and complex projects, each subsidiary management plan will likely be a separate stand-alone plan. In this case you may present your project management plan as a shell with just information on the life cycle, development approach, and key reviews, and then provide a link or reference to the more detailed subsidiary management plans.
+• For smaller projects, a project roadmap that summarizes the project phases, major deliverables, milestones, and key reviews may be sufficient.
+• You will likely have additional subsidiary management plans that are relevant to the nature of your project, such as a technology management plan, a logistics management plan, a safety management plan, and so forth.
 
 ### Alignment
 The project management plan should be aligned and consistent with the following documents:
-*   All subsidiary management plans
-*   Project roadmap
-*   Milestone list
+• All subsidiary management plans
+• Project roadmap
+• Milestone list
 
 ### 5. How?
 To accurately and professionally complete the **PROJECT MANAGEMENT PLAN**, the responsible party must populate the following sections (ensure `parameters.md` is referenced for global project variables):
