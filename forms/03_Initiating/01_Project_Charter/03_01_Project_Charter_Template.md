@@ -57,7 +57,7 @@
 | Item | Project objectives | Success criteria |
 | :--- | :--- | :--- |
 | **Scope** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| **Time** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| **Schedule** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | **Cost** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 | **Other** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
@@ -103,23 +103,20 @@
 
 ### Project manager authority level
 <!-- The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution. -->
-**Staffing Decisions:**
-> [ Provide your detailed response here... ]
-
-**Budget management and Variance:**
-> [ Provide your detailed response here... ]
-
-**Technical Decisions:**
-> [ Provide your detailed response here... ]
-
-**Conflict resolution:**
-> [ Provide your detailed response here... ]
+| Authority Area | Description |
+| :--- | :--- |
+| Staffing decisions | [ Provide your detailed response here... ] |
+| Budget management and variance | [ Provide your detailed response here... ] |
+| Technical decisions | [ Provide your detailed response here... ] |
+| Conflict resolution | [ Provide your detailed response here... ] |
 
 ---
 
-### Sponsor authority
+### Name and authority of the sponsor
 <!-- Name and authority of the sponsor or other person(s) authorizing the project charter. -->
-> [ Provide your detailed response here... ]
+| Name / Position | Authority Level |
+| :--- | :--- |
+| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 

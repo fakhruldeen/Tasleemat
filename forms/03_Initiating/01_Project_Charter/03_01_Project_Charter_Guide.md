@@ -62,7 +62,7 @@ To accurately and professionally complete the **Project Charter**, the responsib
 *   **Project manager authority - Budget management and Variance:** The authority of the project manager to commit, manage, and control project funds, and the variance level that requires escalation.
 *   **Project manager authority - Technical Decisions:** The authority of the project manager to make technical decisions about deliverables or the project approach.
 *   **Project manager authority - Conflict resolution:** The degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders.
-*   **Sponsor authority:** Name and authority of the sponsor or other person(s) authorizing the project charter.
+*   **Name and authority of the sponsor:** Name and authority of the sponsor or other person(s) authorizing the project charter. MUST be formatted as a Markdown table with exactly 2 columns: Name / Position, Authority Level.
 
 ---
 

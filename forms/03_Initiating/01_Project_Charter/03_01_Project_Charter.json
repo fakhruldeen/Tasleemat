@@ -42,7 +42,7 @@
                     "Success criteria": ""
                 },
                 {
-                    "Item": "**Time**",
+                    "Item": "**Schedule**",
                     "Project objectives": "",
                     "Success criteria": ""
                 },
@@ -100,12 +100,34 @@
             "value": ""
         },
         "Project manager authority level": {
-            "guidance": "The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution.",
-            "value": ""
+            "guidance": "The authority of the project manager. MUST be formatted as a Markdown table with exactly 2 columns: Authority Area, Description. The following rows MUST be pre-filled under Authority Area: Staffing decisions, Budget management and variance, Technical decisions, Conflict resolution.",
+            "value": [
+                {
+                    "Authority Area": "Staffing decisions",
+                    "Description": ""
+                },
+                {
+                    "Authority Area": "Budget management and variance",
+                    "Description": ""
+                },
+                {
+                    "Authority Area": "Technical decisions",
+                    "Description": ""
+                },
+                {
+                    "Authority Area": "Conflict resolution",
+                    "Description": ""
+                }
+            ]
         },
-        "Sponsor authority": {
-            "guidance": "Name and authority of the sponsor or other person(s) authorizing the project charter.",
-            "value": ""
+        "Name and authority of the sponsor": {
+            "guidance": "Name and authority of the sponsor or other person(s) authorizing the project charter. MUST be formatted as a Markdown table with exactly 2 columns: Name / Position, Authority Level.",
+            "value": [
+                {
+                    "Name / Position": "",
+                    "Authority Level": ""
+                }
+            ]
         }
     }
 }

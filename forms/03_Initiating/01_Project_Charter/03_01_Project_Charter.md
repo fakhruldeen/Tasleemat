@@ -101,6 +101,6 @@ Form: PROJECT CHARTER (Instructions)
 
 ---
 
-### Sponsor authority
+### Name and authority of the sponsor
 **Instruction:** Name and authority of the sponsor or other person(s) authorizing the project charter.
 
