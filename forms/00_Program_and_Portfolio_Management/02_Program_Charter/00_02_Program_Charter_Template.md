@@ -16,35 +16,35 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 ### Program Purpose
 <!-- High-level justification for the program. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Program Objectives
 <!-- Measurable goals of the program. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Component Projects
 <!-- List of the individual projects within the program. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Program Benefits
 <!-- Expected synergistic benefits. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Program Manager Authority
 <!-- Authority level of the program manager. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 

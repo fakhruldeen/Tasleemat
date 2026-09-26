@@ -16,42 +16,42 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 ### Risk ID and Title
 <!-- Reference to the Risk Register. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Current Risk Score
 <!-- Probability x Impact. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Mitigation Strategy
 <!-- Avoid, Transfer, Mitigate, Accept. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Detailed Action Steps
 <!-- Step by step plan to reduce the risk. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Resource Requirements
 <!-- Budget or people needed to execute the plan. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Target Risk Score
 <!-- Expected score after mitigation. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 

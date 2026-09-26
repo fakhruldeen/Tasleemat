@@ -13,28 +13,28 @@
 ### Target customer
 <!-- The person or group who will buy or use the product. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Needs
 <!-- The needs or requirements that the product will address. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Product and key attributes
 <!-- A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Key benefit
 <!-- Describes why the customer would buy the product. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 

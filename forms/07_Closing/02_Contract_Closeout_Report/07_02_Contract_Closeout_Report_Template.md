@@ -11,77 +11,74 @@
 ---
 
 ### What worked well</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 20px;">  <tr style="background-color: #ecf0f1;">    <th align="left" style="padding: 10px;">      <span style="font-size: 16px; color: #2c3e50;">Scope
-<!-- Describe aspects of contract scope that were handled well. -->
-
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Quality
 <!-- Describe aspects of product quality that were handled well. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Schedule
 <!-- Describe aspects of the contract schedule that were handled well. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Cost
 <!-- Describe aspects of the contract budget that were handled well. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Other
 <!-- Describe any other aspects of the contract or procurement that were handled well. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Change ID
 <!-- Enter the change identifier from the change log. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Change
 <!-- description Enter the description from the change log. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Date
 <!-- approved Enter the date approved from the change log. Describe the dispute or claim. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Resolution
 <!-- Describe the resolution. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
 ---
 
 ### Date resolved
 <!-- Enter the date the dispute or claim was resolved. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td></tr></table>
+> [ Provide your detailed response here... ]
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 20px;">  <tr style="background-color: #ecf0f1;">    <th align="left" style="padding: 10px;">      <span style="font-size: 16px; color: #2c3e50;">What can be improved</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 20px;">  <tr style="background-color: #ecf0f1;">    <th align="left" style="padding: 10px;">      <span style="font-size: 16px; color: #2c3e50;">Record of contract changes</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 20px;">  <tr style="background-color: #ecf0f1;">    <th align="left" style="padding: 10px;">      <span style="font-size: 16px; color: #2c3e50;">Record of contract disputes</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
+> [ Provide your detailed response here... ]
+> [ Provide your detailed response here... ]
+> [ Provide your detailed response here... ]
 
 ---
 

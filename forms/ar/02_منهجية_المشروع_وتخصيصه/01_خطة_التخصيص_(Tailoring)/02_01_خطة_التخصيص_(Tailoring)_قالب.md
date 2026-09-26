@@ -14,28 +14,28 @@
 ### Process/Artifact
 <!-- The standard process or artifact being considered. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
+> [ أدخل استجابتك المفصلة هنا... ]
 
 ---
 
 ### Tailoring Decision
 <!-- Added, removed, or modified? -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
+> [ أدخل استجابتك المفصلة هنا... ]
 
 ---
 
 ### Justification
 <!-- Reasoning for the tailoring decision. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
+> [ أدخل استجابتك المفصلة هنا... ]
 
 ---
 
 ### Approver
 <!-- Person who approved the change. -->
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;"><tr><td valign="top" style="padding: 15px; color: #34495e;">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td></tr></table>
+> [ أدخل استجابتك المفصلة هنا... ]
 
 ---
 
