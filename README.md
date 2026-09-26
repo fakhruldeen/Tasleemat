@@ -1,6 +1,6 @@
 <div align="center">
   <h1>🚀 Tasleemat PMO Toolkit</h1>
-  <p><b>The Ultimate AI-Ready, Dual-Language (English & Arabic) Project Management Framework</b></p>
+  <p><b>A Comprehensive, Dual-Language (English & Arabic) Reference Guide and Template Library for Project Managers</b></p>
   <a href="./README_AR.md">🇸🇦 اقرأ هذا باللغة العربية (Read in Arabic)</a>
 </div>
 
@@ -9,11 +9,12 @@
 ## 🌟 Overview
 **Tasleemat (تسليمات)** is an enterprise-grade Project Management Office (PMO) toolkit. It provides a complete chronological lifecycle of over 68 professional project artifacts, ranging from Portfolio Roadmaps to Project Charters, Agile Sprint Planning, and AI Governance.
 
-This repository is uniquely engineered for the modern era:
-- **🤖 LLM-Ready:** Every form includes a dedicated `.json` schema and Markdown prompt designed to be injected directly into ChatGPT, Claude, or Gemini for automated, highly-accurate document generation.
-- **🌐 Dual-Language (i18n):** Flawlessly localized into formal Arabic (RTL) alongside the primary English templates, including fully translated file names and cross-reference links.
-- **🖨️ Print-Ready:** Beautiful HTML/Markdown hybrid templates that export perfectly to PDF with signature footers and document control numbers.
-- **📖 GitHub Pages Ready:** Completely configured with Jekyll metadata and navigation files.
+This repository is built primarily as a powerful reference tool for Project Managers, with advanced AI capabilities built-in:
+- **📚 Comprehensive PMO Reference:** A complete guide for project managers covering the What, Why, When, Who, and How of 68+ essential project artifacts.
+- **🖨️ Professional Templates:** Beautifully formatted, print-ready templates that export perfectly to PDF with signature footers and document control numbers.
+- **🌐 Dual-Language (i18n):** Flawlessly localized into formal Arabic (RTL) alongside the primary English guidelines.
+- **🤖 LLM-Ready (Advanced Usage):** Every form includes a dedicated `.json` schema and Markdown prompt designed to be injected into ChatGPT or Claude for automated document generation.
+- **📖 GitHub Pages Ready:** Completely configured to serve as a live documentation website.
 
 ## 📂 Repository Structure
 ```text
