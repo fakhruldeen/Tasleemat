@@ -35,8 +35,8 @@
 <!-- An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome. -->
 > [ Provide your detailed response here... ]
 
-### Project objectives and related success
-<!-- criteria Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. There may be additional objectives as well. Some organizations include quality, safety, and stakeholder satisfaction objectives. (continued) -->
+### Project objectives and related success criteria
+<!-- Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. There may be additional objectives as well. Some organizations include quality, safety, and stakeholder satisfaction objectives. -->
 > [ Provide your detailed response here... ]
 
 ### Summary milestone schedule
