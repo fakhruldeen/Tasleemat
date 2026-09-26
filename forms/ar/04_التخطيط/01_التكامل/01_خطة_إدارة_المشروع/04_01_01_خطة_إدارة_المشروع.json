@@ -4,44 +4,44 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project life cycle": {
-            "guidance": "Describe the life cycle that will be used to accomplish the project. This may include the following: • Name of each phase • Key activities for the phase • Key deliverables for the phase • Entry criteria for the phase • Exit criteria for the phase • Key reviews for the phase",
+        "دورة حياة المشروع": {
+            "guidance": "صِف دورة الحياة التي سيتم استخدامها لإنجاز المشروع. يجب أن يُنسق هذا الحقل كجدول يحتوي على 3 أعمدة: المرحلة، الأنشطة الرئيسية، والتسليمات الرئيسية.",
             "value": ""
         },
-        "Development approaches": {
-            "guidance": "Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches.",
+        "نهج التطوير": {
+            "guidance": "وثّق النهج المحدد الذي ستتبعه لإنشاء التسليمات الرئيسية. تشمل الأساليب الشائعة النهج التنبؤي، والنهج التكيفي، بالإضافة إلى التطوير التكراري أو التزايدي.",
             "value": ""
         },
-        "Subsidiary management plans": {
-            "guidance": "List the subsidiary management plans that are part of the project management plan. This can be in the form of a “table of contents,” links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents. (continued)",
+        "خطط الإدارة الفرعية": {
+            "guidance": "قم بإدراج خطط الإدارة الفرعية التي تشكل جزءًا من خطة إدارة المشروع (مثل خطة إدارة النطاق، الجدول الزمني، التكلفة، إلخ). يمكن أن يكون ذلك على شكل جدول محتويات، أو قائمة بالخطط المنفصلة.",
             "value": ""
         },
-        "Scope variance threshold": {
-            "guidance": "Define acceptable scope variances, variances that indicate a warning, and variances that are unacceptable. Scope variance can be indicated by the features and functions that are present in the end product, or the performance metrics that are desired.",
+        "حد تباين النطاق": {
+            "guidance": "حدد تباينات النطاق المقبولة، والتباينات التي تعتبر تحذيرية، وتلك غير المقبولة. يمكن الإشارة إلى التباين من خلال الميزات والوظائف الموجودة في المنتج النهائي، أو مقاييس الأداء المطلوبة.",
             "value": ""
         },
-        "Scope baseline management": {
-            "guidance": "Describe how the scope baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. Define the difference between a scope revision and a scope change. Generally, a revision does not require the same degree of approval that a change does. For example, changing the color of something is a revision; changing a function is a change.",
+        "إدارة الخط المرجعي للنطاق": {
+            "guidance": "صِف كيفية إدارة الخط المرجعي للنطاق، بما في ذلك الاستجابات للتباينات. حدد الظروف التي تستدعي إجراءات وقائية أو تصحيحية، ومتى سيتم تفعيل عملية التحكم في التغيير.",
             "value": ""
         },
-        "Schedule variance threshold": {
-            "guidance": "Define acceptable schedule variances, variances that indicate a warning, and variances that are unacceptable. Schedule variances may indicate the percent of variance from the baseline or they may include the amount of float used or whether any schedule reserve has been used.",
+        "حد تباين الجدول الزمني": {
+            "guidance": "حدد تباينات الجدول الزمني المقبولة، التحذيرية، وغير المقبولة. قد تشير إلى نسبة مئوية للتباين عن الخط المرجعي، أو مقدار الفائض الزمني المستخدم.",
             "value": ""
         },
-        "Schedule baseline management": {
-            "guidance": "Describe how the schedule baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted.",
+        "إدارة الخط المرجعي للجدول الزمني": {
+            "guidance": "صِف كيفية إدارة الخط المرجعي للجدول الزمني، بما في ذلك الاستجابات للتباينات. حدد متى يتم تفعيل الإجراءات الوقائية أو التصحيحية أو التحكم في التغيير.",
             "value": ""
         },
-        "Cost variance threshold": {
-            "guidance": "Define acceptable cost variances, variances that indicate a warning, and variances that are unacceptable. Cost variances may indicate the percent of variance from the baseline, such as 0–5 percent, 5–10 percent, and greater than 10 percent.",
+        "حد تباين التكلفة": {
+            "guidance": "حدد تباينات التكلفة المقبولة، التحذيرية، وغير المقبولة (مثل نسبة مئوية كـ 0-5%، 5-10%، وأكثر من 10%).",
             "value": ""
         },
-        "Cost baseline management": {
-            "guidance": "Describe how the cost baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted.",
+        "إدارة الخط المرجعي للتكلفة": {
+            "guidance": "صِف كيفية إدارة الخط المرجعي للتكلفة، بما في ذلك الاستجابات للتباينات المحددة. حدد متى يتم اتخاذ الإجراءات التصحيحية وعمليات التغيير.",
             "value": ""
         },
-        "Baselines": {
-            "guidance": "Attach all project baselines.",
+        "الخطوط المرجعية": {
+            "guidance": "قم بإرفاق جميع الخطوط المرجعية للمشروع (النطاق، الجدول الزمني، التكلفة، إلخ).",
             "value": ""
         }
     }

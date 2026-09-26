@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -11,9 +10,13 @@
 ---
 
 ### Project life cycle
-<!-- Describe the life cycle that will be used to accomplish the project. This may include the following: • Name of each phase • Key activities for the phase • Key deliverables for the phase • Entry criteria for the phase • Exit criteria for the phase • Key reviews for the phase -->
+<!-- Describe the life cycle that will be used to accomplish the project. Populate the table below. -->
 
-> [ Provide your detailed response here... ]
+| Phase | Key activities | Key Deliverables |
+| :--- | :--- | :--- |
+| [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] |
 
 ---
 
@@ -25,7 +28,7 @@
 ---
 
 ### Subsidiary management plans
-<!-- List the subsidiary management plans that are part of the project management plan. This can be in the form of a “table of contents,” links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents. (continued) -->
+<!-- List the subsidiary management plans that are part of the project management plan. This can be in the form of a “table of contents,” links to electronic copies of the subsidiary plans, or a list of the other plans that should be considered part of the project management plan, but are separate documents. -->
 
 > [ Provide your detailed response here... ]
 
@@ -39,7 +42,7 @@
 ---
 
 ### Scope baseline management
-<!-- Describe how the scope baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. Define the difference between a scope revision and a scope change. Generally, a revision does not require the same degree of approval that a change does. For example, changing the color of something is a revision; changing a function is a change. -->
+<!-- Describe how the scope baseline will be managed, including responses to acceptable, warning, and unacceptable variances. Define circumstances that would trigger preventive or corrective action and when the change control process would be enacted. Define the difference between a scope revision and a scope change. -->
 
 > [ Provide your detailed response here... ]
 
