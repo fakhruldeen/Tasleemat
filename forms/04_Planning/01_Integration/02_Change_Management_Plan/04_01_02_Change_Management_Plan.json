@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this CHANGE MANAGEMENT PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this CHANGE MANAGEMENT PLAN template based on the provided project context. Context & Definition: The change management plan describes how change will be managed on the project, including the change control board, definitions of change, and the change control process. Alignment: Ensure consistency with the Project roadmap, Scope, Requirements, Schedule, Cost, Quality, and Configuration management plans.",
     "form_name": "CHANGE MANAGEMENT PLAN",
     "document_reference": "PMO-04.01.02",
     "project_title": "",
@@ -10,32 +10,57 @@
             "value": ""
         },
         "Definitions of change": {
-            "guidance": "Schedule Change: Define a schedule change versus a schedule revision. Indicate when a schedule variance needs to go through the change control process to be re-baselined. Budget Change: Define a budget change versus a budget update. Indicate when a budget variance needs to go through the change control process to be re-baselined. Scope Change: Define a scope change versus progressive elaboration. Indicate when a scope variance needs to go through the change control process to be re-baselined. Project Document Change: Define when updates to project management documents or other project documents need to go through the change control process to be re-baselined.",
-            "value": ""
+            "guidance": "Define when a variance needs to go through the change control process to be re-baselined for schedule, budget, scope, and project documents. MUST be formatted as a Markdown table with exactly 2 columns: Type of Change, Definition & Re-baseline Trigger. The following rows MUST be pre-filled under Type of Change: Schedule Change, Budget Change, Scope Change, Project Document Change.",
+            "value": [
+                {
+                    "Type of Change": "Schedule Change",
+                    "Definition & Re-baseline Trigger": ""
+                },
+                {
+                    "Type of Change": "Budget Change",
+                    "Definition & Re-baseline Trigger": ""
+                },
+                {
+                    "Type of Change": "Scope Change",
+                    "Definition & Re-baseline Trigger": ""
+                },
+                {
+                    "Type of Change": "Project Document Change",
+                    "Definition & Re-baseline Trigger": ""
+                }
+            ]
         },
-        "Change control board</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
-            "value": ""
+        "Change control board": {
+            "guidance": "Identify the structure and membership of the Change Control Board (CCB), including roles, responsibilities, and authority levels. MUST be formatted as a Markdown table with exactly 4 columns: Name, Role, Responsibility, Authority.",
+            "value": [
+                {
+                    "Name": "",
+                    "Role": "",
+                    "Responsibility": "",
+                    "Authority": ""
+                }
+            ]
         },
-        "Authority": {
-            "guidance": "Authority level for approving or rejecting changes",
-            "value": ""
-        },
-        "Change request submittal": {
-            "guidance": "Describe the process used to submit change requests, including who receives requests and any special forms, policies, or procedures that need to be used.",
-            "value": ""
-        },
-        "Change request tracking": {
-            "guidance": "Describe the process for tracking change requests from submittal to final disposition.",
-            "value": ""
-        },
-        "Change request review": {
-            "guidance": "Describe the process used to review change requests, including analysis of impact on project objectives such as schedule, scope, cost, etc.",
-            "value": ""
-        },
-        "Change request outcome": {
-            "guidance": "Describe the possible outcomes, such as accept, defer, or reject.",
-            "value": ""
+        "Change control process": {
+            "guidance": "Describe the processes for change request submittal, tracking, review, and outcome disposition. MUST be formatted as a Markdown table with exactly 2 columns: Process Step, Description. The following rows MUST be pre-filled under Process Step: Change request submittal, Change request tracking, Change request review, Change request outcome.",
+            "value": [
+                {
+                    "Process Step": "Change request submittal",
+                    "Description": ""
+                },
+                {
+                    "Process Step": "Change request tracking",
+                    "Description": ""
+                },
+                {
+                    "Process Step": "Change request review",
+                    "Description": ""
+                },
+                {
+                    "Process Step": "Change request outcome",
+                    "Description": ""
+                }
+            ]
         }
     }
 }
