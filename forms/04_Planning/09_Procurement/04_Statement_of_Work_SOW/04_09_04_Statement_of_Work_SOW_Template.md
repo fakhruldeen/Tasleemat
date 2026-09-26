@@ -8,9 +8,13 @@ Fill out the template below. Replace all instances of `[ ... ]` or empty spaces 
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">STATEMENT OF WORK SOW</h1>
 
-**Date Prepared:** {{Current_Date}}  
-**Project Manager:** {{Project_Manager_Name}}  
-**Prepared By:** {{Prepared_By}}  
+<table width="100%">
+  <tr>
+    <td width="33%"><strong>Date Prepared:</strong> {{Current_Date}}</td>
+    <td width="33%"><strong>Project Manager:</strong> {{Project_Manager_Name}}</td>
+    <td width="34%"><strong>Prepared By:</strong> {{Prepared_By}}</td>
+  </tr>
+</table>  
 
 ---
 
