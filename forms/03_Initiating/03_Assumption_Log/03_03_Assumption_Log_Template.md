@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ ... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,10 +9,23 @@
 
 ---
 
-<table style="width: 100%; border-collapse: collapse; border-color: #bdc3c7; margin-bottom: 30px;" border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; border-color: #bdc3c7;">  <tr style="background-color: #ecf0f1;">    <th>ID</th>    <th>Category</th>    <th>Assumption/constraint</th>    <th>Responsible party</th>    <th>Due date</th>    <th>Actions</th>    <th>Status</th>    <th>Comments</th>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr>  <tr>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>    <td><br><br></td>  </tr></table>
-
-<br>
-<div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>ID:</b> <i></i></li><li><b>Category:</b> <i>The category of the assumption or constraint</i></li><li><b>Assumption/constraint:</b> <i>A description of the assumption or constraint</i></li><li><b>Responsible party:</b> <i>The person who is tasked with following up on the assumption to validate if it is true or not</i></li><li><b>Due date:</b> <i>The date by which the assumption needs to be validated</i></li><li><b>Actions:</b> <i>Actions that need to be taken to validate assumptions</i></li><li><b>Status:</b> <i>The status of the assumptions, such as active, transferred, or closed</i></li><li><b>Comments:</b> <i>Any additional information regarding the assumption or constraint</i></li></ul></div>
+### Assumption Log Entries
+<!-- 
+Please provide a comprehensive log of all assumptions and constraints for the project. For each entry, ensure you populate the following columns in the table below:
+- **ID:** Unique identifier for the assumption or constraint.
+- **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule).
+- **Assumption/constraint:** A clear, detailed description of the assumption or constraint.
+- **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not.
+- **Due date:** The date by which the assumption needs to be validated.
+- **Actions:** Specific actions that need to be taken to validate the assumption.
+- **Status:** The current status of the assumption (e.g., active, transferred, or closed).
+- **Comments:** Any additional information, context, or updates regarding the assumption or constraint.
+-->
+| ID | Category | Assumption/constraint | Responsible party | Due date | Actions | Status | Comments |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
+| [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] | [ ... ] |
 
 ---
 
@@ -21,6 +33,7 @@
 
 | Prepared By: | Reviewed By: | Approved By: |
 | :--- | :--- | :--- |
+| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
 | **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |
 
