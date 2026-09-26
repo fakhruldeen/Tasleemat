@@ -74,42 +74,50 @@
             ]
         },
         "Subsidiary management plans": {
-            "guidance": "List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Scope, Time, Cost, Quality, Resource, Communications, Risk, Procurement, Stakeholder, Other Plans.",
+            "guidance": "List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Change Management, Scope Management, Schedule Management, Requirements Management, Cost Management, Quality Management, Resource Management, Communications Management, Risk Management, Procurement Management, Stakeholder Engagement, Other Plans.",
             "value": [
                 {
-                    "Name": "Scope",
+                    "Name": "Change Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Time",
+                    "Name": "Scope Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Cost",
+                    "Name": "Schedule Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Quality",
+                    "Name": "Requirements Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Resource",
+                    "Name": "Cost Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Communications",
+                    "Name": "Quality Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Risk",
+                    "Name": "Resource Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Procurement",
+                    "Name": "Communications Management",
                     "Comment": ""
                 },
                 {
-                    "Name": "Stakeholder",
+                    "Name": "Risk Management",
+                    "Comment": ""
+                },
+                {
+                    "Name": "Procurement Management",
+                    "Comment": ""
+                },
+                {
+                    "Name": "Stakeholder Engagement",
                     "Comment": ""
                 },
                 {
@@ -146,8 +154,29 @@
             ]
         },
         "Baselines": {
-            "guidance": "Attach all project baselines.",
-            "value": ""
+            "guidance": "Attach all project baselines. Common baselines include Scope, Schedule, Cost, and Performance measurement. MUST be formatted as a Markdown table with exactly 3 columns: Baseline, Status / Link, Comment.",
+            "value": [
+                {
+                    "Baseline": "Scope baseline",
+                    "Status / Link": "",
+                    "Comment": ""
+                },
+                {
+                    "Baseline": "Schedule baseline",
+                    "Status / Link": "",
+                    "Comment": ""
+                },
+                {
+                    "Baseline": "Cost baseline",
+                    "Status / Link": "",
+                    "Comment": ""
+                },
+                {
+                    "Baseline": "Performance measurement baseline",
+                    "Status / Link": "",
+                    "Comment": ""
+                }
+            ]
         }
     }
 }

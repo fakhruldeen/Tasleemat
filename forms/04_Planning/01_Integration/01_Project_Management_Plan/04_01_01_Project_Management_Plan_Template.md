@@ -47,16 +47,19 @@
 
 | Name | Comment |
 | :--- | :--- |
-| Scope | [ Provide your detailed response here... ] |
-| Time | [ Provide your detailed response here... ] |
-| Cost | [ Provide your detailed response here... ] |
-| Quality | [ Provide your detailed response here... ] |
-| Resource | [ Provide your detailed response here... ] |
-| Communications | [ Provide your detailed response here... ] |
-| Risk | [ Provide your detailed response here... ] |
-| Procurement | [ Provide your detailed response here... ] |
-| Stakeholder | [ Provide your detailed response here... ] |
+| Change Management | [ Provide your detailed response here... ] |
+| Scope Management | [ Provide your detailed response here... ] |
+| Schedule Management | [ Provide your detailed response here... ] |
+| Requirements Management | [ Provide your detailed response here... ] |
+| Cost Management | [ Provide your detailed response here... ] |
+| Quality Management | [ Provide your detailed response here... ] |
+| Resource Management | [ Provide your detailed response here... ] |
+| Communications Management | [ Provide your detailed response here... ] |
+| Risk Management | [ Provide your detailed response here... ] |
+| Procurement Management | [ Provide your detailed response here... ] |
+| Stakeholder Engagement | [ Provide your detailed response here... ] |
 | Other Plans | [ Provide your detailed response here... ] |
+
 
 ---
 
@@ -82,9 +85,14 @@
 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ### Baselines
-<!-- Attach all project baselines. -->
+<!-- Attach all project baselines. Common baselines include Scope, Schedule, Cost, and Performance measurement. Populate the table below. -->
 
-> [ Provide your detailed response here... ]
+| Baseline | Status / Link | Comment |
+| :--- | :--- | :--- |
+| Scope baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| Schedule baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| Cost baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| Performance measurement baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 
