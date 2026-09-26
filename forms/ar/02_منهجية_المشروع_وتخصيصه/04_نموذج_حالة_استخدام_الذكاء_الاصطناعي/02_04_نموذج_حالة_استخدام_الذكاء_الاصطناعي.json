@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this نموذج حالة استخدام الذكاء الاصطناعي template based on the provided project context.",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج نموذج حالة استخدام الذكاء الاصطناعي هذا بناءً على سياق المشروع.",
     "form_name": "نموذج حالة استخدام الذكاء الاصطناعي",
     "project_title": "",
     "date_prepared": "",

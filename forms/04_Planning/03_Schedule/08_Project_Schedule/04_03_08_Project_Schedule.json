@@ -1,11 +1,11 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Project Schedule template based on the provided project context.",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Project Schedule template based on the provided project context.",
     "form_name": "Project Schedule",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Project purpose": {
-            "guidance": "The reason the project is being undertaken. May refer to a business case, the organization\u2019s strategic plan, external factors, a contract agreement, or any other reason for performing the project.",
+            "guidance": "The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project.",
             "value": ""
         },
         "High-level project description": {
@@ -21,7 +21,7 @@
             "value": ""
         },
         "High-level requirements": {
-            "guidance": "The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders\u2019 needs and expectations. These will be further elaborated in the requirements documentation.",
+            "guidance": "The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders’ needs and expectations. These will be further elaborated in the requirements documentation.",
             "value": ""
         },
         "Overall project risk": {

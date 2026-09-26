@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this BUSINESS CASE template based on the provided project context.",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this BUSINESS CASE template based on the provided project context.",
     "form_name": "BUSINESS CASE",
     "project_title": "",
     "date_prepared": "",

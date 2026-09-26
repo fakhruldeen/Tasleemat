@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this طلب تقديم عروض (RFP) template based on the provided project context.",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج طلب تقديم عروض (RFP) هذا بناءً على سياق المشروع.",
     "form_name": "طلب تقديم عروض (RFP)",
     "project_title": "",
     "date_prepared": "",

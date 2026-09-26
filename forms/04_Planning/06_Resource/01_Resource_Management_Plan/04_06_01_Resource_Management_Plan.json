@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this RESOURCE MANAGEMENT PLAN template based on the provided project context.",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RESOURCE MANAGEMENT PLAN template based on the provided project context.",
     "form_name": "RESOURCE MANAGEMENT PLAN",
     "project_title": "",
     "date_prepared": "",

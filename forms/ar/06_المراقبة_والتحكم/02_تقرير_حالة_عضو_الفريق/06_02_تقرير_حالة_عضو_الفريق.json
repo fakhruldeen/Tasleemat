@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this تقرير حالة عضو الفريق template based on the provided project context.",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تقرير حالة عضو الفريق هذا بناءً على سياق المشروع.",
     "form_name": "تقرير حالة عضو الفريق",
     "project_title": "",
     "date_prepared": "",

@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this نموذج تخطيط قصص المستخدم template based on the provided project context.",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج نموذج تخطيط قصص المستخدم هذا بناءً على سياق المشروع.",
     "form_name": "نموذج تخطيط قصص المستخدم",
     "project_title": "",
     "date_prepared": "",

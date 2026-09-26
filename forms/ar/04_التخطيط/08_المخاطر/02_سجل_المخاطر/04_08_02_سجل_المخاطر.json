@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nتعليمات للنموذج الذكي (LLM):\nقم بملء النموذج أدناه. استبدل جميع العلامات `[ ... ]` أو المساحات الفارغة بمحتوى المشروع ذي الصلة. استخدم `parameters.md` كمرجع.\n-->",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج سجل المخاطر هذا بناءً على سياق المشروع.",
     "form_name": "سجل المخاطر",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Risk ID": {
             "guidance": "Enter a unique risk identifier.",

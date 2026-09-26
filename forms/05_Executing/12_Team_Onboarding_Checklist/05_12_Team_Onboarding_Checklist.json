@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "<!-- \nLLM INSTRUCTIONS:\nFill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.\n-->",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Team Onboarding Checklist template based on the provided project context.",
     "form_name": "Team Onboarding Checklist",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Task": {
             "guidance": "Onboarding activity (e.g. System access granted).",

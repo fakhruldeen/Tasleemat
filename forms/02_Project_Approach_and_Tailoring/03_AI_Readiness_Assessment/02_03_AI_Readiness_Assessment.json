@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this AI Readiness Assessment template based on the provided project context.",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this AI Readiness Assessment template based on the provided project context.",
     "form_name": "AI Readiness Assessment",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Data Maturity": {
             "guidance": "Assessment of data quality, availability, and architecture.",

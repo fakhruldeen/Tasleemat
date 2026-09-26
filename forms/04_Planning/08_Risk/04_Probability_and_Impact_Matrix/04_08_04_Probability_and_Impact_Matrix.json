@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Probability and Impact Matrix template based on the provided project context.",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Probability and Impact Matrix template based on the provided project context.",
     "form_name": "Probability and Impact Matrix",
     "project_title": "",
     "date_prepared": "",

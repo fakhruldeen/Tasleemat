@@ -1,6 +1,8 @@
 {
-    "_llm_instructions": "Fill out the 'value' properties for each field in this Prompt Library Log template based on the provided project context.",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Prompt Library Log template based on the provided project context.",
     "form_name": "Prompt Library Log",
+    "project_title": "",
+    "date_prepared": "",
     "fields": {
         "Prompt ID": {
             "guidance": "Unique identifier.",
