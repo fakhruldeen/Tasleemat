@@ -65,4 +65,6 @@
 
 ---
 
-*Generated on: {{Current_Timestamp}}, by [Tasleemat](https://github.com/fakhruldeen/Tasleemat/)*
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
