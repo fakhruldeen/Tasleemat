@@ -27,9 +27,11 @@
 
 ### Signatures
 
-**Prepared By:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
-**Reviewed By:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
-**Approved By:** _____________________ &nbsp;&nbsp;&nbsp;&nbsp; **Date:** _________________  
+| <th width="33%">Prepared By:</th> | <th width="33%">Reviewed By:</th> | <th width="34%">Approved By:</th> |
+| :--- | :--- | :--- |
+| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
+| <br> | <br> | <br> |
+| **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |  
 
 ---
 
