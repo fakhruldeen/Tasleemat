@@ -11,17 +11,17 @@ Form: PROJECT MANAGEMENT PLAN (Instructions)
 ---
 
 ### Project life cycle
-**Instruction:** Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 3 columns: Phase, Key activities, Key Deliverables.
+**Instruction:** Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 4 columns: #, Phase, Key activities, Key Deliverables.
 
 ---
 
 ### Phase Reviews and Criteria
-**Instruction:** Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 4 columns: Phase, Reviews, Entry criteria, Exit criteria.
+**Instruction:** Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 5 columns: #, Phase, Reviews, Entry criteria, Exit criteria.
 
 ---
 
 ### Development approaches
-**Instruction:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 2 columns: Deliverable, Development approach.
+**Instruction:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 3 columns: #, Deliverable, Development approach.
 
 ---
 

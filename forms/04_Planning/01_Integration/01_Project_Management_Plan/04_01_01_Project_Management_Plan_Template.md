@@ -12,33 +12,33 @@
 ### Project life cycle
 <!-- Describe the life cycle that will be used to accomplish the project. Populate the table below. -->
 
-| Phase | Key activities | Key Deliverables |
-| :--- | :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| # | Phase | Key activities | Key Deliverables |
+| :--- | :--- | :--- | :--- |
+| 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 
 ### Phase Reviews and Criteria
 <!-- Define the reviews and criteria for each phase. Populate the table below. -->
 
-| Phase | Reviews | Entry criteria | Exit criteria |
-| :--- | :--- | :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| # | Phase | Reviews | Entry criteria | Exit criteria |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 
 ### Development approaches
 <!-- Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches. Populate the table below. -->
 
-| Deliverable | Development approach |
-| :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| # | Deliverable | Development approach |
+| :--- | :--- | :--- |
+| 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
 
 ---
 
