@@ -10,5 +10,5 @@
 <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #3498db;"><b>Field Guidance:</b><br><ul><li><b>Prompt ID:</b> <i>Unique identifier.</i></li><li><b>Use Case:</b> <i>What the prompt is used for.</i></li><li><b>Prompt Text:</b> <i>The actual text or structure of the prompt.</i></li><li><b>Expected Output:</b> <i>What a successful response looks like.</i></li><li><b>Status/Version:</b> <i>Current version or status of the prompt.</i></li></ul></div>
 <br><br>
 <table width="100%" style="border-collapse: collapse; border: none; margin-top: 30px;">  <tr>    <td width="33%"><b>Prepared By:</b><br><br>_____________________<br><br>Date: _________________</td>    <td width="33%"><b>Reviewed By:</b><br><br>_____________________<br><br>Date: _________________</td>    <td width="33%"><b>Approved By:</b><br><br>_____________________<br><br>Date: _________________</td>  </tr></table>
-<div align="right" style="margin-top: 40px; font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 5px;">  <i>Generated on: {{Current_Timestamp}}</i></div>
+<div align="right" style="margin-top: 40px; font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 5px;">  <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i></div>
 </div>
