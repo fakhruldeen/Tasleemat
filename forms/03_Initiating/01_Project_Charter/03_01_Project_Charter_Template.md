@@ -4,9 +4,16 @@
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROJECT CHARTER</h1>
 
-| **Project Sponsor:** {{Project_Sponsor_Name}} | **Date Prepared:** {{Current_Date}} |
-| :--- | :--- |
-| **Project Manager:** {{Project_Manager_Name}} | **Project Customer:** {{Client_Customer_Name}} |  
+<table width="100%">
+  <tr>
+    <td width="50%"><strong>Project Sponsor:</strong> {{Project_Sponsor_Name}}</td>
+    <td width="50%"><strong>Date Prepared:</strong> {{Current_Date}}</td>
+  </tr>
+  <tr>
+    <td><strong>Project Manager:</strong> {{Project_Manager_Name}}</td>
+    <td><strong>Project Customer:</strong> {{Client_Customer_Name}}</td>
+  </tr>
+</table>  
 
 ---
 
@@ -48,22 +55,60 @@
 
 ### Project objectives and related success criteria
 <!-- Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. -->
-| Item | Project objectives | Success criteria |
-| :--- | :--- | :--- |
-| **Scope** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| **Time** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| **Cost** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| **Other** | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+<table width="100%">
+  <tr>
+    <th width="20%" align="left">Item</th>
+    <th width="40%" align="left">Project objectives</th>
+    <th width="40%" align="left">Success criteria</th>
+  </tr>
+  <tr>
+    <td><strong>Scope</strong></td>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+  <tr>
+    <td><strong>Time</strong></td>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+  <tr>
+    <td><strong>Cost</strong></td>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+  <tr>
+    <td><strong>Other</strong></td>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+</table>
 
 ---
 
 ### Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
-| # | Summary milestones | Due Date |
-| :--- | :--- | :--- |
-| 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+<table width="100%">
+  <tr>
+    <th width="10%" align="left">#</th>
+    <th width="60%" align="left">Summary milestones</th>
+    <th width="30%" align="left">Due Date</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+</table>
 
 ---
 
@@ -75,11 +120,24 @@
 
 ### Key stakeholder list
 <!-- An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. -->
-| Stakeholder(s) | Role(s) |
-| :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+<table width="100%">
+  <tr>
+    <th width="50%" align="left">Stakeholder(s)</th>
+    <th width="50%" align="left">Role(s)</th>
+  </tr>
+  <tr>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+  <tr>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+  <tr>
+    <td>[ Provide your detailed response here... ]</td>
+    <td>[ Provide your detailed response here... ]</td>
+  </tr>
+</table>
 
 ---
 
