@@ -4,6 +4,13 @@ LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ ... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
+<style>
+  table {
+    width: 100%;
+    display: table;
+  }
+</style>
+
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PORTFOLIO ROADMAP</h1>
