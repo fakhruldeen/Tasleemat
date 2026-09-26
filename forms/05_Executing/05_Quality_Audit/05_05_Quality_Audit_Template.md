@@ -5,13 +5,8 @@
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">QUALITY AUDIT</h1>
 
-<table style="width: 100%;">
-  <tr>
-    <td width="33%"><strong>Date Prepared:</strong> {{Current_Date}}</td>
-    <td width="33%"><strong>Project Manager:</strong> {{Project_Manager_Name}}</td>
-    <td width="34%"><strong>Prepared By:</strong> {{Prepared_By}}</td>
-  </tr>
-</table>  
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |  
 
 ---
 
@@ -81,23 +76,10 @@
 
 ### Signatures
 
-<table style="width: 100%;">
-  <tr>
-    <th width="33%" align="left">Prepared By:</th>
-    <th width="33%" align="left">Reviewed By:</th>
-    <th width="34%" align="left">Approved By:</th>
-  </tr>
-  <tr>
-    <td><strong>Signature:</strong> _____________________</td>
-    <td><strong>Signature:</strong> _____________________</td>
-    <td><strong>Signature:</strong> _____________________</td>
-  </tr>
-  <tr>
-    <td><strong>Date:</strong> _________________</td>
-    <td><strong>Date:</strong> _________________</td>
-    <td><strong>Date:</strong> _________________</td>
-  </tr>
-</table>
+| Prepared By: | Reviewed By: | Approved By: |
+| :--- | :--- | :--- |
+| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
+| **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |
 
 ---
 
