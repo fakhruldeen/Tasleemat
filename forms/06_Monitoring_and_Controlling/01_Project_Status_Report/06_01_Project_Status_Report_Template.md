@@ -97,10 +97,23 @@
 
 ### Signatures
 
-| Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| <br> | **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |  
+<table width="100%">
+  <tr>
+    <th width="33%" align="left">Prepared By:</th>
+    <th width="33%" align="left">Reviewed By:</th>
+    <th width="34%" align="left">Approved By:</th>
+  </tr>
+  <tr>
+    <td><strong>Signature:</strong> _____________________</td>
+    <td><strong>Signature:</strong> _____________________</td>
+    <td><strong>Signature:</strong> _____________________</td>
+  </tr>
+  <tr>
+    <td><strong>Date:</strong> _________________</td>
+    <td><strong>Date:</strong> _________________</td>
+    <td><strong>Date:</strong> _________________</td>
+  </tr>
+</table>
 
 ---
 
