@@ -9,6 +9,7 @@
             "value": [
                 {
                     "ID": "",
+                    "Activity Description": "",
                     "Effort Hours": "",
                     "Resource Qty": "",
                     "% Available": "",
@@ -35,6 +36,7 @@
             "value": [
                 {
                     "ID": "",
+                    "Activity Description": "",
                     "Optimistic (tO)": "",
                     "Most Likely (tM)": "",
                     "Pessimistic (tP)": "",

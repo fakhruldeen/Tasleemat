@@ -10,19 +10,19 @@
 ---
 
 ### 1. Parametric Estimates
-| ID | Effort Hours | Resource Qty | % Available | Perf. Factor | Duration Estimate |
+| ID | Activity Description | Effort Hours | Resource Qty | % Available | Perf. Factor | Duration Estimate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
 
 ### 2. Analogous Estimates
 | ID | Previous Activity | Prev. Duration | Current Activity | Multiplier | Duration Estimate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
 
 ### 3. Three-Point Estimates (Beta Distribution)
-| ID | Optimistic (tO) | Most Likely (tM) | Pessimistic (tP) | Weighting Equation | Expected Duration (tE) |
+| ID | Activity Description | Optimistic (tO) | Most Likely (tM) | Pessimistic (tP) | Weighting Equation | Expected Duration (tE) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
 
 ---
 

@@ -27,6 +27,7 @@ Form: DURATION ESTIMATING WORKSHEET (Instructions)
 ### 1. Parametric Estimates
 **Instruction:** Calculate duration using effort and resource parameters.
 *   **ID:** Unique identifier.
+*   **Activity description:** A brief description of the work.
 *   **Effort hours:** Amount of labor to accomplish work.
 *   **Resource quantity:** Number of resources assigned.
 *   **Percent available:** % of time resources are available.
@@ -36,6 +37,7 @@ Form: DURATION ESTIMATING WORKSHEET (Instructions)
 ### 2. Analogous Estimates
 **Instruction:** Calculate duration using historical comparisons.
 *   **ID:** Unique identifier.
+*   **Activity description:** A brief description of the work.
 *   **Previous activity:** Description of past similar work.
 *   **Previous duration:** Duration of past work.
 *   **Current activity:** Description of current work.
@@ -45,6 +47,7 @@ Form: DURATION ESTIMATING WORKSHEET (Instructions)
 ### 3. Three-Point Estimates
 **Instruction:** Calculate duration using risk-weighted scenarios (Beta distribution).
 *   **ID:** Unique identifier.
+*   **Activity description:** A brief description of the work.
 *   **Optimistic (tO):** Best-case scenario.
 *   **Most Likely (tM):** Normal scenario.
 *   **Pessimistic (tP):** Worst-case scenario.
