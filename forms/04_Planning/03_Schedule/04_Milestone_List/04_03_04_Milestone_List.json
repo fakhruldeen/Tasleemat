@@ -1,26 +1,26 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Milestone List template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Milestone List",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and generate an array of milestone objects for the 'Milestone List' table based on the context. Context: The milestone list defines all the project milestones and describes the nature of each one. It may categorize the milestone as optional or mandatory, internal or external, interim or final. It is an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition. This is developed once and is not usually changed unless there is a significant scope change.",
+    "form_name": "MILESTONE LIST",
     "document_reference": "PMO-04.03.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Milestone List Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Milestone name:** Milestone name that uniquely defines the milestone\n- **Milestone description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete\n- **Type:** A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional",
+        "Milestone List": {
+            "guidance": "Generate a JSON array of milestone objects.",
             "value": [
                 {
-                    "Milestone name": "",
-                    "Milestone description": "",
+                    "Milestone Name": "",
+                    "Milestone Description": "",
                     "Type": ""
                 },
                 {
-                    "Milestone name": "",
-                    "Milestone description": "",
+                    "Milestone Name": "",
+                    "Milestone Description": "",
                     "Type": ""
                 },
                 {
-                    "Milestone name": "",
-                    "Milestone description": "",
+                    "Milestone Name": "",
+                    "Milestone Description": "",
                     "Type": ""
                 }
             ]
