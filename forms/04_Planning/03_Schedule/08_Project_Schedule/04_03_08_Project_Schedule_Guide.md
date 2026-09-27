@@ -37,7 +37,7 @@ Prepared during the **PLANNING Process Group** (Process 6.5 Develop Schedule). I
 ---
 
 ### 5. How?
-To construct the **PROJECT SCHEDULE**, the responsible party compiles data from prior schedule artifacts into a centralized list and visual Gantt chart containing:
+To construct the **PROJECT SCHEDULE**, the responsible party compiles data from prior schedule artifacts into a visual MS Project style Gantt chart AND a centralized tabular list containing:
 *   **WBS Identifier:** Links the scheduled activity back to the scope baseline.
 *   **Activity Name:** Clear definition of the task.
 *   **Start Date:** When the activity is scheduled to begin.

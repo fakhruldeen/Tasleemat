@@ -17,7 +17,9 @@ This document provides a comprehensive reference to understand the purpose and u
 ---
 
 ### 1. What?
-A visual display of the logical relationships (dependencies) between project schedule activities.
+A visual display and tabular list
+
+**Note:** This document contains BOTH a visual Mermaid flowchart for high-level viewing and a detailed tabular list for analytical reading. of the logical relationships (dependencies) between project schedule activities.
 
 ---
 
