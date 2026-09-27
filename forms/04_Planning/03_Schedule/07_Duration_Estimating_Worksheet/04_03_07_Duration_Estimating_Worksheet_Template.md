@@ -36,17 +36,17 @@ Section Instructions:
 
 ---
 
-### 1. Parametric Estimates
+### Parametric Estimates
 | ID | Activity Description | Effort Hours | Resource Qty | % Available | Perf. Factor | Duration Estimate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
 
-### 2. Analogous Estimates
+### Analogous Estimates
 | ID | Previous Activity | Prev. Duration | Current Activity | Multiplier | Duration Estimate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
 
-### 3. Three-Point Estimates (Beta Distribution)
+### Three-Point Estimates (Beta Distribution)
 | ID | Activity Description | Optimistic (tO) | Most Likely (tM) | Pessimistic (tP) | Weighting Equation | Expected Duration (tE) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |

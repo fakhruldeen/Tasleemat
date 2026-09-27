@@ -40,7 +40,7 @@ gantt
 
 ---
 
-### 1. Schedule Data Table
+### Schedule Data Table
 | WBS Identifier | Activity Name | Start Date | Finish Date | Resource Name |
 | :--- | :--- | :--- | :--- | :--- |
 | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |

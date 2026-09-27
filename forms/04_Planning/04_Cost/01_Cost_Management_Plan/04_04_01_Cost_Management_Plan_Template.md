@@ -26,23 +26,23 @@ Section Instructions:
 | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-### 1. Organizational Procedure Links
+### Organizational Procedure Links
 <!-- Describe how cost estimating and reporting follows the WBS and organizational code of accounts. -->
 [ Add details... ]
 
-### 2. Control Thresholds
+### Control Thresholds
 <!-- Indicate the variance thresholds (e.g., % deviation from baseline) that trigger preventive or corrective action. -->
 [ Add details... ]
 
-### 3. Rules of Performance Measurement
+### Rules of Performance Measurement
 <!-- Define how progress/expenditures are measured (e.g., Earned Value Management rules, ETC/EAC equations). -->
 [ Add details... ]
 
-### 4. Cost Reporting Information and Format
+### Cost Reporting Information and Format
 <!-- Document the format and frequency of status and progress reporting for project costs. -->
 [ Add details... ]
 
-### 5. Additional Details
+### Additional Details
 <!-- Describe variables associated with strategic funding choices (make/buy, borrowing vs in-house funding). -->
 [ Add details... ]
 

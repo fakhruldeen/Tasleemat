@@ -9,7 +9,7 @@
 
 ---
 
-### 1. Methodology & Tools
+### Methodology & Tools
 
 #### Schedule methodology
 <!-- Identify the scheduling methodology that will be used for the project, whether it is critical path, agile, or some other methodology. -->
@@ -25,7 +25,7 @@
 
 ---
 
-### 2. Rules of Measurement
+### Rules of Measurement
 
 #### Level of accuracy
 <!-- Describe the level of accuracy needed for estimates. Indicate the levels of accuracy required as time progresses. -->
@@ -41,7 +41,7 @@
 
 ---
 
-### 3. Variance Thresholds
+### Variance Thresholds
 
 #### Variance thresholds
 <!-- Indicate the measures that determine whether an activity, work package, or the project as a whole is on time, requires preventive action, or is late and requires corrective action. -->
@@ -49,7 +49,7 @@
 
 ---
 
-### 4. Communication & Maintenance
+### Communication & Maintenance
 
 #### Schedule reporting and format
 <!-- Document the schedule information required for status and progress reporting. -->

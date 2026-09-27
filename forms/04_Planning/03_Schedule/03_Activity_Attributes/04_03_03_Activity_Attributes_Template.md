@@ -8,7 +8,7 @@ Section Instructions:
 *   **Planned Release / Iteration:** Indicate the planned release or iteration.
 *   **Description of Work:** Detailed requirements.
 
-#### 2. Dependencies & Scheduling:** Generate a table of dependencies.
+#### Dependencies & Scheduling:** Generate a table of dependencies.
 *   **Columns:** Predecessor, Predecessor Relationship, Predecessor Lead/Lag, Successor, Successor Relationship, Successor Lead/Lag.
 -->
 
@@ -24,24 +24,24 @@ Section Instructions:
 <!-- REPEAT THIS SECTION FOR EACH ACTIVITY -->
 ### Activity: [ Add details... ]
 
-#### 1. General Information
+#### General Information
 * **ID:** [ Add details... ]
 * **Activity Name:** [ Add details... ]
 * **Planned Release / Iteration:** [ Add details... ]
 * **Description of Work:**
 > [ Add details... ]
 
-#### 2. Dependencies & Scheduling
+#### Dependencies & Scheduling
 | Predecessor | Predecessor Relationship | Predecessor Lead/Lag | Successor | Successor Relationship | Successor Lead/Lag |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-#### 3. Resource Requirements
+#### Resource Requirements
 * **Number & Type of Team Resources Required:** [ Add details... ]
 * **Skill Requirements:** [ Add details... ]
 * **Required Resources:** [ Add details... ]
 
-#### 4. Execution Requirements
+#### Execution Requirements
 * **Imposed dates:** [ Add details... ]
 * **Constraints:** [ Add details... ]
 * **Assumptions:** [ Add details... ]

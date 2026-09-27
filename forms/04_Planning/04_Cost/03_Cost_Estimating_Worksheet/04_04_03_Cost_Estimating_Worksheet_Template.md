@@ -16,22 +16,22 @@ Section Instructions:
 
 ---
 
-### 1. Parametric Estimates
+### Parametric Estimates
 | ID | Cost Variable | Cost Per Unit | Number of Units | Cost Estimate |
 | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-### 2. Analogous Estimates
+### Analogous Estimates
 | ID | Previous Activity | Previous Cost | Current Activity | Multiplier | Cost Estimate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-### 3. Three-Point Estimates
+### Three-Point Estimates
 | ID | Optimistic Cost | Most Likely Cost | Pessimistic Cost | Expected Cost |
 | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-### 4. Bottom-Up Estimates
+### Bottom-Up Estimates
 | ID | Labor Hours | Labor Rate | Total Labor | Material | Supplies | Equipment | Travel | Other Direct Costs | Indirect Costs | Reserve | Estimate |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
