@@ -12,6 +12,18 @@
                 }
             ]
         },
+        "Team member acquisition": {
+            "guidance": "Document how staff will be brought on to the project.",
+            "value": ""
+        },
+        "Team member management and release": {
+            "guidance": "Document how team members will be managed and eventually released.",
+            "value": ""
+        },
+        "Project organizational chart": {
+            "guidance": "Mermaid flowchart TD representing the organizational chart.",
+            "value": ""
+        },
         "Roles, Responsibilities, and Authority": {
             "guidance": "Table identifying Role, Responsibility, and Authority.",
             "value": [
@@ -22,6 +34,18 @@
                 }
             ]
         },
+        "Training requirements": {
+            "guidance": "Describe required training.",
+            "value": ""
+        },
+        "Rewards and recognition": {
+            "guidance": "Describe reward and recognition processes.",
+            "value": ""
+        },
+        "Team development": {
+            "guidance": "Describe methods for developing team members.",
+            "value": ""
+        },
         "Physical resource identification": {
             "guidance": "Table identifying Resource, Amount, and Grade.",
             "value": [
@@ -31,6 +55,17 @@
                     "Grade": ""
                 }
             ]
+        },
+        "Physical resource acquisition": {
+            "guidance": "Document how physical resources will be acquired.",
+            "value": ""
+        },
+        "Physical resource management": {
+            "guidance": "Document how physical resources will be managed.",
+            "value": ""
         }
-    }
+    },
+    "project_title": "",
+    "date_prepared": "",
+    "document_reference": "PMO-04.06.01"
 }
