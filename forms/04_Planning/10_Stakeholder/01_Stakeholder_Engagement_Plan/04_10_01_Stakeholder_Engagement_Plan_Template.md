@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,27 +13,27 @@
 ### Stakeholder changes
 <!-- Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Interrelationships
 <!-- List any relationships between and among stakeholder groups. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Stakeholder engagement approach
 <!-- Describe the approach you will use with each stakeholder to move them to the preferred level of engagement. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
+> [ Add details... ]
+> [ Add details... ]
+> [ Add details... ]
+> [ Add details... ]
+> [ Add details... ]
 
 ---
 

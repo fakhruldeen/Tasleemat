@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,7 +13,7 @@
 ### Change management approach
 <!-- Describe the degree of change control and how change control will integrate with other aspects of project management. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
@@ -22,10 +22,10 @@
 
 | Type of Change | Definition & Re-baseline Trigger |
 | :--- | :--- |
-| Schedule Change | [ Provide your detailed response here... ] |
-| Budget Change | [ Provide your detailed response here... ] |
-| Scope Change | [ Provide your detailed response here... ] |
-| Project Document Change | [ Provide your detailed response here... ] |
+| Schedule Change | [ Add details... ] |
+| Budget Change | [ Add details... ] |
+| Scope Change | [ Add details... ] |
+| Project Document Change | [ Add details... ] |
 
 ---
 
@@ -34,9 +34,9 @@
 
 | Name | Role | Responsibility | Authority |
 | :--- | :--- | :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -45,10 +45,10 @@
 
 | Process Step | Description |
 | :--- | :--- |
-| Change request submittal | [ Provide your detailed response here... ] |
-| Change request tracking | [ Provide your detailed response here... ] |
-| Change request review | [ Provide your detailed response here... ] |
-| Change request outcome | [ Provide your detailed response here... ] |
+| Change request submittal | [ Add details... ] |
+| Change request tracking | [ Add details... ] |
+| Change request review | [ Add details... ] |
+| Change request outcome | [ Add details... ] |
 
 ---
 

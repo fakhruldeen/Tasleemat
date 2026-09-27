@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,14 +16,14 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### Definition of Ready (DoR)
 <!-- Criteria a story must meet before entering a sprint (e.g., clear acceptance criteria, estimated). -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Definition of Done (DoD)
 <!-- Criteria a story must meet to be considered complete (e.g., coded, tested, documented, approved). -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

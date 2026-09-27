@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,28 +13,28 @@
 ### Target customer
 <!-- The person or group who will buy or use the product. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Needs
 <!-- The needs or requirements that the product will address. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Product and key attributes
 <!-- A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Key benefit
 <!-- Describes why the customer would buy the product. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,42 +16,42 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### Model Details
 <!-- Architecture, version, developer. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Intended Use
 <!-- Primary and secondary use cases. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Factors
 <!-- Demographics or environmental factors affecting performance. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Metrics
 <!-- Accuracy, precision, recall, etc. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Training Data
 <!-- Datasets used to train the model. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Ethical Considerations
 <!-- Potential risks or biases. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

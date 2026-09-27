@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,14 +13,14 @@
 ### Risk ID
 <!-- Enter a unique risk identifier. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Risk statement
 <!-- Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

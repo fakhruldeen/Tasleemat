@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,148 +13,148 @@
 ### Risk ID
 <!-- Enter a unique risk identifier. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Risk description
 <!-- Provide a detailed description of the risk. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Status
 <!-- Enter the status as open or closed. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Risk cause
 <!-- Describe the circumstances or drivers that are the source of the risk. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Probability
 <!-- Determine the likelihood of the event or condition occurring. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Impact
 <!-- Describe the impact on one or more of the project objectives. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Score
 <!-- If you are using numeric scoring, multiply the probability times the impact to determine the risk score. If you are using relative scoring then combine the two scores (e.g., highlow or medium-high). -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Reponses
 <!-- Describe the planned response strategy to the risk or condition. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Revised probability
 <!-- Determine the likelihood of the event or condition occurring after the response has been implemented. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Revised impact
 <!-- Describe the impact once the response has been implemented. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Revised score
 <!-- Enter the revised risk score once the response has been implemented. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Responsible party
 <!-- Identify the person responsible for managing the risk. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Actions
 <!-- Describe any actions that need to be taken to respond to the risk. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Secondary risks
 <!-- Describe new risks that arise out of the response strategies taken to address the risk. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Residual risk
 <!-- Describe the remaining risk after response strategies. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Contingency plan
 <!-- Develop a plan that will be initiated if specific events occur, such as missing an intermediate milestone. Contingency plans are used when the risk or residual risk is accepted. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Contingency funds
 <!-- Determine the funds needed to protect the budget from overrun. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Contingency time
 <!-- Determine the time needed to protect the schedule from overrun. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Fallback plans
 <!-- Devise a plan to use if other response strategies fail. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Comments
 <!-- Provide any comments or additional helpful information about the risk event or condition. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
-### Scope</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
+### Scope</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+> [ Add details... ]
 
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
+> [ Add details... ]
+> [ Add details... ]
 
 ---
 

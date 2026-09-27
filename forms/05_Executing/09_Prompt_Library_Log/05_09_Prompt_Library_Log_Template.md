@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -21,9 +21,9 @@ Please populate the table below with the following details:
 -->
 | Prompt ID | Use Case | Prompt Text | Expected Output | Status/Version |
 | --- | --- | --- | --- | --- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 
 

@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,35 +16,35 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### User Persona
 <!-- Who the user is. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### User Activities (The Backbone)
 <!-- High-level tasks the user needs to accomplish. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### User Tasks (The Slices)
 <!-- Specific steps under each activity. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### MVP Release 1
 <!-- Stories critical for the first release. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Future Releases
 <!-- Stories planned for later. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -10,16 +10,16 @@
 
 ---
 
-### ID</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
+### ID</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+> [ Add details... ]
+> [ Add details... ]
 
 ---
 
 ### Description of work
 <!-- If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,35 +16,35 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### Program Purpose
 <!-- High-level justification for the program. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Program Objectives
 <!-- Measurable goals of the program. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Component Projects
 <!-- List of the individual projects within the program. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Program Benefits
 <!-- Expected synergistic benefits. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Program Manager Authority
 <!-- Authority level of the program manager. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

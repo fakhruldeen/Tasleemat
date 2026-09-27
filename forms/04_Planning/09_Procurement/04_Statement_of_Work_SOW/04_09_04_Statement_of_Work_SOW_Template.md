@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,35 +16,35 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### Scope of Work
 <!-- Detailed description of vendor work. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Period of Performance
 <!-- Start and end dates. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Deliverables Schedule
 <!-- Specific milestones and due dates. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Applicable Standards
 <!-- Technical or quality standards to adhere to. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Acceptance Criteria
 <!-- How the buyer will accept the deliverables. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

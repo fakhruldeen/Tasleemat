@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,28 +13,28 @@
 ### Business Need
 <!-- Identify the problem or opportunity. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Analysis of Situation
 <!-- Describe the current state, future state, and root causes. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Recommendation
 <!-- The recommended option or approach to address the need. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Evaluation Criteria
 <!-- Metrics used to measure success. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,35 +16,35 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### Change Vision
 <!-- Why the human change is necessary. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Stakeholder Impact Analysis
 <!-- How different groups will be affected. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Communication Strategy
 <!-- How changes will be communicated. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Resistance Management
 <!-- How to handle pushback from users. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Sponsorship Strategy
 <!-- How leaders will champion the change. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

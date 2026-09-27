@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,47 +13,47 @@
 ### Project description
 <!-- Provide a summary level description of the project. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
-### Performance summary</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
+### Performance summary</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+> [ Add details... ]
 
 ---
 
 ### Quality
 <!-- Describe the quality objectives and criteria needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to meet the product and project quality objectives. Enter the verification and validation information from the product acceptance form. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Variances
 <!-- Document the time and cost objectives and the final completion date and final expenditures. Explain any variances. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Benefits management
 <!-- Describe how the final product, service, or result achieved the benefits the project was undertaken to address. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Business needs
 <!-- Describe how the final product, service, or result achieved the business needs identified in the business plan. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Risks and issues
 <!-- Summarize any significant risks or issues, or the overall risk exposure, and describe the response and resolution strategies. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

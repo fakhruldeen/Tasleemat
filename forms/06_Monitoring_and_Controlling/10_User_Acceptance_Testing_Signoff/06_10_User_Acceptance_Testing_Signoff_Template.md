@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,35 +16,35 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### Test Summary
 <!-- Overview of what was tested. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Testing Environment
 <!-- Where the testing took place. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Pass/Fail Criteria
 <!-- What determined the success. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Known Defects
 <!-- Any non-critical bugs accepted. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Business Owner Sign-off
 <!-- Formal acceptance statement. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

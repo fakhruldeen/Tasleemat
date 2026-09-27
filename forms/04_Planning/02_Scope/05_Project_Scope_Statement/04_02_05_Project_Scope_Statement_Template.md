@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,28 +13,28 @@
 ### Project scope description
 <!-- Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Project deliverables
 <!-- Project deliverables are progressively elaborated from the project description key deliverables in the project charter. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Product acceptance criteria
 <!-- Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Project exclusions
 <!-- Project exclusions clearly define what is out of scope for the product and project. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

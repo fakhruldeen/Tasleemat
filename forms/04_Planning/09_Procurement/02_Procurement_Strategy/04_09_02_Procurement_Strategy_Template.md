@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -10,29 +10,29 @@
 
 ---
 
-### Delivery methods</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
+### Delivery methods</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+> [ Add details... ]
 
 ---
 
 ### Construction services
 <!-- Describe the limitations of delivery, such as design build, design bid build, etc. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Contract types
 <!-- Describe the contract type, fixed, incentive, or award fees. Include the criteria associated with the fees. Common contract types include: Fixed Price: FFP – Firm Fixed Price FPIF – Fixed Price with Incentive Fee FP-EPA – Fixed Price with Economic Price Adjustment Cost Reimbursable: CPFF – Cost Plus Fixed Fee CPIF – Cost Plus Incentive Fee CPAF – Cost Plus Award Fee Time and Materials (T&M) -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Procurement phases
 <!-- List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include any knowledge transfer requirements. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

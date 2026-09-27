@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -10,75 +10,75 @@
 
 ---
 
-### What worked well</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
+### What worked well</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+> [ Add details... ]
 
 ---
 
 ### Quality
 <!-- Describe aspects of product quality that were handled well. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Schedule
 <!-- Describe aspects of the contract schedule that were handled well. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Cost
 <!-- Describe aspects of the contract budget that were handled well. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Other
 <!-- Describe any other aspects of the contract or procurement that were handled well. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Change ID
 <!-- Enter the change identifier from the change log. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Change
 <!-- description Enter the description from the change log. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Date
 <!-- approved Enter the date approved from the change log. Describe the dispute or claim. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Resolution
 <!-- Describe the resolution. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Date resolved
 <!-- Enter the date the dispute or claim was resolved. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
+> [ Add details... ]
+> [ Add details... ]
+> [ Add details... ]
 
 ---
 

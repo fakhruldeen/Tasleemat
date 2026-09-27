@@ -1,4 +1,4 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -14,9 +14,9 @@
 
 | # | Phase | Key activities | Key Deliverables |
 | :--- | :--- | :--- | :--- |
-| 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 1 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| 2 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| 3 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -25,9 +25,9 @@
 
 | # | Phase | Reviews | Entry criteria | Exit criteria |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 1 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| 2 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| 3 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -36,9 +36,9 @@
 
 | # | Deliverable | Development approach |
 | :--- | :--- | :--- |
-| 1 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 2 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| 3 | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| 1 | [ Add details... ] | [ Add details... ] |
+| 2 | [ Add details... ] | [ Add details... ] |
+| 3 | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -47,18 +47,18 @@
 
 | Name | Comment |
 | :--- | :--- |
-| Change Management | [ Provide your detailed response here... ] |
-| Scope Management | [ Provide your detailed response here... ] |
-| Schedule Management | [ Provide your detailed response here... ] |
-| Requirements Management | [ Provide your detailed response here... ] |
-| Cost Management | [ Provide your detailed response here... ] |
-| Quality Management | [ Provide your detailed response here... ] |
-| Resource Management | [ Provide your detailed response here... ] |
-| Communications Management | [ Provide your detailed response here... ] |
-| Risk Management | [ Provide your detailed response here... ] |
-| Procurement Management | [ Provide your detailed response here... ] |
-| Stakeholder Engagement | [ Provide your detailed response here... ] |
-| Other Plans | [ Provide your detailed response here... ] |
+| Change Management | [ Add details... ] |
+| Scope Management | [ Add details... ] |
+| Schedule Management | [ Add details... ] |
+| Requirements Management | [ Add details... ] |
+| Cost Management | [ Add details... ] |
+| Quality Management | [ Add details... ] |
+| Resource Management | [ Add details... ] |
+| Communications Management | [ Add details... ] |
+| Risk Management | [ Add details... ] |
+| Procurement Management | [ Add details... ] |
+| Stakeholder Engagement | [ Add details... ] |
+| Other Plans | [ Add details... ] |
 
 
 ---
@@ -68,31 +68,31 @@
 
 | Scope variance threshold | Scope baseline management |
 | :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Add details... ] | [ Add details... ] |
 
 ### Schedule Variance Thresholds
 <!-- Define acceptable schedule variances and how the schedule baseline will be managed. Populate the table below. -->
 
 | Schedule variance threshold | Schedule baseline management |
 | :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Add details... ] | [ Add details... ] |
 
 ### Cost Variance Thresholds
 <!-- Define acceptable cost variances and how the cost baseline will be managed. Populate the table below. -->
 
 | Cost variance threshold | Cost baseline management |
 | :--- | :--- |
-| [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| [ Add details... ] | [ Add details... ] |
 
 ### Baselines
 <!-- Attach all project baselines. Common baselines include Scope, Schedule, Cost, and Performance measurement. Populate the table below. -->
 
 | Baseline | Status / Link | Comment |
 | :--- | :--- | :--- |
-| Scope baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| Schedule baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| Cost baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
-| Performance measurement baseline | [ Provide your detailed response here... ] | [ Provide your detailed response here... ] |
+| Scope baseline | [ Add details... ] | [ Add details... ] |
+| Schedule baseline | [ Add details... ] | [ Add details... ] |
+| Cost baseline | [ Add details... ] | [ Add details... ] |
+| Performance measurement baseline | [ Add details... ] | [ Add details... ] |
 
 ---
 

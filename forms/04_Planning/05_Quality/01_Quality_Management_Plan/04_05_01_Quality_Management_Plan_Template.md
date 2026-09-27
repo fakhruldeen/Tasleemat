@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,49 +13,49 @@
 ### Quality standards
 <!-- Quality standards are usually industry or product driven. They may be ISO standards, IEEE, or some other regulatory or industry body. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Quality objectives
 <!-- Quality objectives are the measures that must be achieved by the project or product components to meet the stakeholder needs. Objectives are the target you want to achieve. You may have metrics or specifications that provide a quantifiable measurement of success. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Quality roles and responsibilities
 <!-- Define the roles necessary to conduct quality activities on the project and the responsibilities associated with each. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Deliverables and processes
 <!-- subject to quality review The key deliverables that have metrics or measures associated with quality objectives The processes used in the project that require verification or validation that they are being performed correctly, or in accordance with quality requirements or objectives -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Quality management approach
 <!-- The approach that will be used to manage the quality process. Includes the timing and content of project and product quality audits. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Quality control approach
 <!-- The approach that will be used to measure the product and the project performance to ensure the product meets the quality objectives -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Applicable quality procedures
 <!-- Procedures that will be used for the project, such as • Nonconformance and rework • Corrective actions • Quality audits • Continuous improvement -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

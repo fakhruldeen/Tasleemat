@@ -1,7 +1,7 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- 
 LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Provide your detailed response here... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,42 +16,42 @@ Fill out the template below. Replace all instances of `[ Provide your detailed r
 ### Risk ID and Title
 <!-- Reference to the Risk Register. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Current Risk Score
 <!-- Probability x Impact. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Mitigation Strategy
 <!-- Avoid, Transfer, Mitigate, Accept. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Detailed Action Steps
 <!-- Step by step plan to reduce the risk. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Resource Requirements
 <!-- Budget or people needed to execute the plan. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Target Risk Score
 <!-- Expected score after mitigation. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

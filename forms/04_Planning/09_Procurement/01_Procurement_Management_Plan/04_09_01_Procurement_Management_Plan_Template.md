@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -10,92 +10,92 @@
 
 ---
 
-### Procurement integration</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
+### Procurement integration</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+> [ Add details... ]
 
 ---
 
 ### Schedule
 <!-- Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Documentation
 <!-- Describe how contractor documentation will integrate with project documentation. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Risk
 <!-- Describe how risk identification, analysis, and response will integrate with risk management for the overall project. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Reporting
 <!-- Define how the contractor's status reports will integrate with the project status report. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Timing
 <!-- Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Performance metrics
 <!-- Document the metrics that will be used to evaluate the seller's performance. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Roles, responsibilities, and authority
 <!-- Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Assumptions and constraints
 <!-- Record assumptions and constraints related to the procurement activities. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Legal jurisdiction and currency
 <!-- Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Independent estimates
 <!-- Document whether independent cost estimates will be used and if they will be needed for source selection. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Risk management
 <!-- Document requirements for performance bonds or insurance contracts to reduce risk. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Prequalified sellers
 <!-- List any prequalified sellers that will be used. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 

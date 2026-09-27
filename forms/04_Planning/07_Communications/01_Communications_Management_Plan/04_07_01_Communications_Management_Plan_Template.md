@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,53 +13,53 @@
 ### Stakeholder communication
 <!-- requirements The people or the groups of people who need to receive project information and their specific requirements -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Information
 <!-- Describe the information to be communicated, including language, format, content, and level of detail. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Method or media
 <!-- Describe how the information will be delivered; for example, email, meetings, web meetings, etc. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Time frame and frequency
 <!-- List how often the information is to be provided and under what circumstances. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Sender
 <!-- Insert the name of the person or the group that will provide the information. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Communication constraints or
 <!-- assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Glossary of common terminology
 <!-- List any terms or acronyms unique to the project or that are used in a unique way. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
-> [ Provide your detailed response here... ]
+> [ Add details... ]
+> [ Add details... ]
+> [ Add details... ]
 
 ---
 

@@ -1,5 +1,5 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -13,75 +13,75 @@
 ### Requestor
 <!-- The name, and if appropriate, the position of the person requesting the change -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Category
 <!-- Check a box to indicate the category of change. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Description of change
 <!-- Describe the proposed change in enough detail to clearly communicate all aspects of the change. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Justification for proposed change
 <!-- Indicate the reason for the change. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
-### Impacts of change</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
+### Impacts of change</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+> [ Add details... ]
 
 ---
 
 ### Quality
 <!-- Describe the impact of the proposed change on the project or product quality. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Requirements
 <!-- Describe the impact of the proposed change on the project or product requirements. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Cost
 <!-- Describe the impact of the proposed change on the project budget, cost estimates, or funding requirements. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Schedule
 <!-- Describe the impact of the proposed change on the schedule and whether it will change the critical path. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Project
 <!-- documents Describe the impact of the proposed change on each project document. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
 ### Comments
 <!-- Provide any comments that will clarify information about the requested change. -->
 
-> [ Provide your detailed response here... ]
+> [ Add details... ]
 
 ---
 
