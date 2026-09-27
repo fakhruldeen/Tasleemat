@@ -20,22 +20,21 @@
 > [ Add details... ]
 
 #### 2. Dependencies & Scheduling
-* **Predecessor and successor activities:** [ Add details... ]
-* **Logical relationships:** [ Add details... ]
-* **Leads and lags:** [ Add details... ]
-* **Imposed dates:** [ Add details... ]
+| Predecessor | Predecessor Relationship | Predecessor Lead/Lag | Successor | Successor Relationship | Successor Lead/Lag |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-#### 3. Execution Requirements
+#### 3. Resource Requirements
+* **Number & Type of Team Resources Required:** [ Add details... ]
+* **Skill Requirements:** [ Add details... ]
+* **Required Resources:** [ Add details... ]
+
+#### 4. Execution Requirements
+* **Imposed dates:** [ Add details... ]
 * **Constraints:** [ Add details... ]
 * **Assumptions:** [ Add details... ]
 * **Location of performance:** [ Add details... ]
 * **Type of effort:** [ Add details... ]
-
-#### 4. Resource Requirements
-* **Team resources and skill levels:**
-> [ Add details... ]
-* **Required physical resources:**
-> [ Add details... ]
 
 ---
 <!-- END REPEAT SECTION -->

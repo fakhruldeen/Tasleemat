@@ -8,22 +8,6 @@ Form: ACTIVITY ATTRIBUTES (Instructions)
 > **System Prompt / Instructions:**
 > This document serves as the detailed instruction set for generating the `ACTIVITY ATTRIBUTES`. When asked to populate this form, generate an array of detailed attribute objects for each scheduled activity.
 
-> **Context & Definition:**
-> Activity attributes are the details about the activity. The activity attributes are progressively elaborated as the planning processes progress. They are an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition.
-> 
-> **Alignment:**
-> The activity attributes should be aligned and consistent with the following documents:
-• Assumption log
-• WBS
-• WBS dictionary
-• Milestone list
-• Activity list
-• Network diagram
-• Duration estimates
-• Schedule
-• Cost estimates
-• Resource requirements
-
 ---
 
 ### Activity Entries
@@ -32,21 +16,21 @@ Form: ACTIVITY ATTRIBUTES (Instructions)
 #### 1. General Information
 *   **ID:** Unique identifier.
 *   **Activity Name:** A brief statement starting with a verb summarizing the activity.
-*   **Planned Release / Iteration:** Indicate the planned release or iteration for adaptive projects.
-*   **Description of Work:** Detailed requirements for the person performing the work.
+*   **Planned Release / Iteration:** Indicate the planned release or iteration.
+*   **Description of Work:** Detailed requirements.
 
 #### 2. Dependencies & Scheduling
-*   **Predecessor and successor activities:** Identify activities that must occur before or after.
-*   **Logical relationships:** Describe the nature of the relationship (e.g., start-to-start, finish-to-start).
-*   **Leads and lags:** Required delays (lag) or accelerations (lead) applying to logical relationships.
-*   **Imposed dates:** Required dates for start, completion, reviews, or accomplishments.
+**Instruction:** Generate a table of dependencies.
+*   **Columns:** Predecessor, Predecessor Relationship, Predecessor Lead/Lag, Successor, Successor Relationship, Successor Lead/Lag.
 
-#### 3. Execution Requirements
-*   **Constraints:** Any limitations (e.g., finish-no-later-than dates, resources).
+#### 3. Resource Requirements
+*   **Number & Type of Team Resources Required:** Headcount and roles.
+*   **Skill Requirements:** Required competency levels.
+*   **Required Resources:** Equipment, materials, or facilities.
+
+#### 4. Execution Requirements
+*   **Imposed dates:** Required dates for start or completion.
+*   **Constraints:** Any limitations.
 *   **Assumptions:** Any assumptions impacting the activity.
-*   **Location of performance:** If the work is completed somewhere other than the performing site.
-*   **Type of effort:** Indicate if the work is fixed duration, fixed effort, apportioned effort, etc.
-
-#### 4. Resource Requirements
-*   **Team resources and skill levels:** Number and roles of people needed (e.g., junior, senior).
-*   **Required physical resources:** Materials, supplies, or equipment needed.
+*   **Location of performance:** Where the work takes place.
+*   **Type of effort:** Fixed duration, fixed effort, etc.

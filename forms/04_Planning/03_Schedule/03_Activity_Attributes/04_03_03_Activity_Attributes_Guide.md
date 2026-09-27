@@ -59,6 +59,8 @@ The activity attributes should be aligned and consistent with the following docu
 * [📄 Printable Template (Markdown)](04_03_03_Activity_Attributes_Template.md)
 * [🤖 LLM Generation Prompt](04_03_03_Activity_Attributes.md)
 * [📊 Data Schema (JSON)](04_03_03_Activity_Attributes.json)
-* [📈 Tabular Data (CSV)](04_03_03_Activity_Attributes.csv)
+* [📈 Tabular Data - Main (CSV)](04_03_03_Activity_Attributes.csv)
+* [📈 Tabular Data - Dependencies (CSV)](04_03_03_Activity_Attributes_Dependencies.csv)
+*(Note: ID serves as the relational foreign key)*
 
 </div>

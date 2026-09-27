@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and generate an array of activity attributes under 'fields' based on the context. Context: Activity attributes are the details about the activity. The activity attributes are progressively elaborated as the planning processes progress. They are an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition.",
+    "_llm_instructions": "Generate an array of activity attributes. Dependencies must be an array of objects.",
     "form_name": "ACTIVITY ATTRIBUTES",
     "document_reference": "PMO-04.03.03",
     "project_title": "",
@@ -13,32 +13,48 @@
                     "Activity Name": "",
                     "Planned Release / Iteration": "",
                     "Description of Work": "",
-                    "Predecessor and successor activities": "",
-                    "Logical relationships": "",
-                    "Leads and lags": "",
+                    "Dependencies & Scheduling": [
+                        {
+                            "Predecessor": "",
+                            "Predecessor Relationship": "",
+                            "Predecessor Lead/Lag": "",
+                            "Successor": "",
+                            "Successor Relationship": "",
+                            "Successor Lead/Lag": ""
+                        }
+                    ],
+                    "Number & Type of Team Resources Required": "",
+                    "Skill Requirements": "",
+                    "Required Resources": "",
                     "Imposed dates": "",
                     "Constraints": "",
                     "Assumptions": "",
                     "Location of performance": "",
-                    "Type of effort": "",
-                    "Team resources and skill levels": "",
-                    "Required physical resources": ""
+                    "Type of effort": ""
                 },
                 {
                     "ID": "",
                     "Activity Name": "",
                     "Planned Release / Iteration": "",
                     "Description of Work": "",
-                    "Predecessor and successor activities": "",
-                    "Logical relationships": "",
-                    "Leads and lags": "",
+                    "Dependencies & Scheduling": [
+                        {
+                            "Predecessor": "",
+                            "Predecessor Relationship": "",
+                            "Predecessor Lead/Lag": "",
+                            "Successor": "",
+                            "Successor Relationship": "",
+                            "Successor Lead/Lag": ""
+                        }
+                    ],
+                    "Number & Type of Team Resources Required": "",
+                    "Skill Requirements": "",
+                    "Required Resources": "",
                     "Imposed dates": "",
                     "Constraints": "",
                     "Assumptions": "",
                     "Location of performance": "",
-                    "Type of effort": "",
-                    "Team resources and skill levels": "",
-                    "Required physical resources": ""
+                    "Type of effort": ""
                 }
             ]
         }
