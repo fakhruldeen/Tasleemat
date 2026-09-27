@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ Provide your detailed response here... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,90 +9,78 @@
 
 ---
 
-### Procurement integration</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>
-> [ Provide your detailed response here... ]
-
----
-
-### Schedule
-<!-- Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items. -->
+### Requirements collection
+<!-- Describe how requirements will be collected or elicited. Consider techniques such as brainstorming, interviewing, observation, etc. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Documentation
-<!-- Describe how contractor documentation will integrate with project documentation. -->
+### Requirements analysis
+<!-- Describe how requirements will be analyzed for prioritization, categorization, and impact to the product or project approach. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Risk
-<!-- Describe how risk identification, analysis, and response will integrate with risk management for the overall project. -->
+### Requirements categories
+<!-- Identify categories for requirements such as business, stakeholder, quality, etc. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Reporting
-<!-- Define how the contractor's status reports will integrate with the project status report. -->
+### Requirements documentation
+<!-- Define how requirements will be documented. The format of a requirements document may range from a simple spreadsheet to more elaborate forms containing detailed descriptions and attachments. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Timing
-<!-- Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth. -->
+### Requirements prioritization
+<!-- Identify the prioritization approach for requirements. Certain requirements will be non-negotiable, such as those that are regulatory or those that are needed to comply with the organization’s policies or infrastructure. Other requirements may be nice to have, but not necessary for functionality. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Performance metrics
-<!-- Document the metrics that will be used to evaluate the seller's performance. -->
+### Requirements metrics
+<!-- Document the metrics that requirements will be measured against. For example, if the requirement is that the product must be able to support 150 lb, the metric may be that it is designed to support 120 percent (180 lb) and that any design or engineering decisions that cause the product to go below the 120 percent need approval by the customer. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Roles, responsibilities, and authority
-<!-- Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract. -->
+### Requirements traceability
+<!-- Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Assumptions and constraints
-<!-- Record assumptions and constraints related to the procurement activities. -->
+### Requirements tracking
+<!-- Describe how often and what techniques will be used to track progress on requirements. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Legal jurisdiction and currency
-<!-- Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment. -->
+### Requirements reporting
+<!-- Describe how reporting on requirements will be conducted and the frequency of such reporting. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Independent estimates
-<!-- Document whether independent cost estimates will be used and if they will be needed for source selection. -->
+### Requirements validation
+<!-- Identify the various methods that will be used to validate requirements such as inspection, audits, demonstration, testing, etc. -->
 
 > [ Provide your detailed response here... ]
 
 ---
 
-### Risk management
-<!-- Document requirements for performance bonds or insurance contracts to reduce risk. -->
-
-> [ Provide your detailed response here... ]
-
----
-
-### Prequalified sellers
-<!-- List any prequalified sellers that will be used. -->
+### Requirements configuration management
+<!-- Describe the configuration management system that will be used to control requirements, documentation, the change management process, and the authorization levels needed to approve changes. -->
 
 > [ Provide your detailed response here... ]
 
@@ -110,6 +97,6 @@
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> REQUIREMENTS MANAGEMENT PLAN | <strong>Ref:</strong> PMO-04.02.02 <br>
+  <strong>Template:</strong> Requirements Management Plan | <strong>Ref:</strong> PMO-04.02.02 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

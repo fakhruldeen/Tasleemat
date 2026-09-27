@@ -1,60 +1,52 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إدارة المتطلبات هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إدارة المتطلبات هذا بناءً على سياق المشروع. السياق والتعريف: تعتبر خطة إدارة المتطلبات جزءاً من خطة إدارة المشروع. وتحدد كيفية إجراء أنشطة المتطلبات طوال فترة المشروع. تشمل إدارة أنشطة المتطلبات التخطيط (الجمع/الاستنباط، التحليل، التصنيف، تحديد الأولويات، التوثيق، تحديد المقاييس، تحديد هيكل تتبع المسار) وإدارة الأنشطة (تتبع التقدم، الإبلاغ، تتبع المسار، التحقق، أداء إدارة التكوين). تتلقى الخطة معلومات من ميثاق المشروع ونهج التطوير وخطة إدارة الجودة، وتوفر معلومات لتوثيق المتطلبات ومصفوفة تتبع المتطلبات وخطة إدارة الجودة وسجل المخاطر. يتم تطويرها مرة واحدة وعادة لا تتغير. المحاذاة: يجب أن تكون خطة إدارة المتطلبات متوافقة ومتسقة مع الوثائق التالية:\n• نهج التطوير\n• خطة إدارة التغيير\n• خطة إدارة النطاق\n• خطة الإصدار والتكرار\n• سجل متراكمات المتطلبات (Requirements backlog)",
     "form_name": "خطة إدارة المتطلبات",
     "document_reference": "PMO-04.02.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Procurement integration</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "جمع المتطلبات": {
+            "guidance": "صف كيف سيتم جمع أو استنباط المتطلبات. ضع في اعتبارك تقنيات مثل العصف الذهني، المقابلات، الملاحظة، إلخ. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "الجدول الزمني": {
-            "guidance": "Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.",
+        "تحليل المتطلبات": {
+            "guidance": "صف كيف سيتم تحليل المتطلبات لتحديد الأولويات والتصنيف والتأثير على نهج المنتج أو المشروع. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Documentation": {
-            "guidance": "Describe how contractor documentation will integrate with project documentation.",
+        "فئات المتطلبات": {
+            "guidance": "حدد فئات المتطلبات مثل متطلبات الأعمال، المعنيين، الجودة، إلخ. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Risk": {
-            "guidance": "Describe how risk identification, analysis, and response will integrate with risk management for the overall project.",
+        "توثيق المتطلبات": {
+            "guidance": "حدد كيف سيتم توثيق المتطلبات (مثل جدول بيانات بسيط إلى نماذج أكثر تفصيلاً). استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Reporting": {
-            "guidance": "Define how the contractor's status reports will integrate with the project status report.",
+        "تحديد أولويات المتطلبات": {
+            "guidance": "حدد نهج تحديد الأولويات للمتطلبات. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Timing": {
-            "guidance": "Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth.",
+        "مقاييس المتطلبات": {
+            "guidance": "وثّق المقاييس التي سيتم قياس المتطلبات بناءً عليها. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Performance metrics": {
-            "guidance": "Document the metrics that will be used to evaluate the seller's performance.",
+        "تتبع مسار المتطلبات": {
+            "guidance": "حدد المعلومات التي سيتم استخدامها لربط المتطلبات من مصدرها إلى التسليمات التي تلبيها. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Roles, responsibilities, and authority": {
-            "guidance": "Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.",
+        "تتبع تقدم المتطلبات": {
+            "guidance": "صف عدد المرات والتقنيات التي سيتم استخدامها لتتبع التقدم المحرز في المتطلبات. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Assumptions and constraints": {
-            "guidance": "Record assumptions and constraints related to the procurement activities.",
+        "الإبلاغ عن المتطلبات": {
+            "guidance": "صف كيف سيتم إجراء الإبلاغ عن المتطلبات ومعدل تكرار هذا الإبلاغ. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Legal jurisdiction and currency": {
-            "guidance": "Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.",
+        "التحقق من صحة المتطلبات": {
+            "guidance": "حدد الأساليب المختلفة التي سيتم استخدامها للتحقق من المتطلبات مثل الفحص والتدقيق والعرض التوضيحي والاختبار إلخ. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         },
-        "Independent estimates": {
-            "guidance": "Document whether independent cost estimates will be used and if they will be needed for source selection.",
-            "value": ""
-        },
-        "Risk management": {
-            "guidance": "Document requirements for performance bonds or insurance contracts to reduce risk.",
-            "value": ""
-        },
-        "Prequalified sellers": {
-            "guidance": "List any prequalified sellers that will be used.",
+        "إدارة تكوين المتطلبات": {
+            "guidance": "صف نظام إدارة التكوين الذي سيتم استخدامه للتحكم في المتطلبات والتوثيق وعملية إدارة التغيير ومستويات التفويض. استخدم القوائم حيثما كان ذلك مناسباً.",
             "value": ""
         }
     }

@@ -1,60 +1,52 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUIREMENTS MANAGEMENT PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUIREMENTS MANAGEMENT PLAN template based on the provided project context. Context & Definition: The requirements management plan is part of the project management plan. It specifies how requirements activities will be conducted throughout the project. Managing requirements activities includes planning activities (collecting, analyzing, categorizing, prioritizing, documenting, determining metrics, defining traceability structure) and managing activities (tracking, reporting, tracing, validating, performing configuration management). It receives information from the project charter, development approach, and quality management plan, and provides information to requirements documentation, traceability matrix, quality management plan, and risk register. It is developed once and does not usually change. Alignment: The requirements management plan should be aligned and consistent with the following documents:\n• Development approach\n• Change management plan\n• Scope management plan\n• Release and iteration plan\n• Requirements backlog",
     "form_name": "REQUIREMENTS MANAGEMENT PLAN",
     "document_reference": "PMO-04.02.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Procurement integration</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "Requirements collection": {
+            "guidance": "Describe how requirements will be collected or elicited (e.g., brainstorming, interviewing, observation). Use lists where appropriate.",
             "value": ""
         },
-        "Schedule": {
-            "guidance": "Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.",
+        "Requirements analysis": {
+            "guidance": "Describe how requirements will be analyzed for prioritization, categorization, and impact. Use lists where appropriate.",
             "value": ""
         },
-        "Documentation": {
-            "guidance": "Describe how contractor documentation will integrate with project documentation.",
+        "Requirements categories": {
+            "guidance": "Identify categories for requirements such as business, stakeholder, quality, etc. Use lists where appropriate.",
             "value": ""
         },
-        "Risk": {
-            "guidance": "Describe how risk identification, analysis, and response will integrate with risk management for the overall project.",
+        "Requirements documentation": {
+            "guidance": "Define how requirements will be documented (e.g., spreadsheet, detailed forms). Use lists where appropriate.",
             "value": ""
         },
-        "Reporting": {
-            "guidance": "Define how the contractor's status reports will integrate with the project status report.",
+        "Requirements prioritization": {
+            "guidance": "Identify the prioritization approach for requirements (non-negotiable vs. nice-to-have). Use lists where appropriate.",
             "value": ""
         },
-        "Timing": {
-            "guidance": "Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth.",
+        "Requirements metrics": {
+            "guidance": "Document the metrics that requirements will be measured against. Use lists where appropriate.",
             "value": ""
         },
-        "Performance metrics": {
-            "guidance": "Document the metrics that will be used to evaluate the seller's performance.",
+        "Requirements traceability": {
+            "guidance": "Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. Use lists where appropriate.",
             "value": ""
         },
-        "Roles, responsibilities, and authority": {
-            "guidance": "Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.",
+        "Requirements tracking": {
+            "guidance": "Describe how often and what techniques will be used to track progress on requirements. Use lists where appropriate.",
             "value": ""
         },
-        "Assumptions and constraints": {
-            "guidance": "Record assumptions and constraints related to the procurement activities.",
+        "Requirements reporting": {
+            "guidance": "Describe how reporting on requirements will be conducted and the frequency of such reporting. Use lists where appropriate.",
             "value": ""
         },
-        "Legal jurisdiction and currency": {
-            "guidance": "Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.",
+        "Requirements validation": {
+            "guidance": "Identify the various methods that will be used to validate requirements such as inspection, audits, demonstration, testing, etc. Use lists where appropriate.",
             "value": ""
         },
-        "Independent estimates": {
-            "guidance": "Document whether independent cost estimates will be used and if they will be needed for source selection.",
-            "value": ""
-        },
-        "Risk management": {
-            "guidance": "Document requirements for performance bonds or insurance contracts to reduce risk.",
-            "value": ""
-        },
-        "Prequalified sellers": {
-            "guidance": "List any prequalified sellers that will be used.",
+        "Requirements configuration management": {
+            "guidance": "Describe the configuration management system that will be used to control requirements, documentation, the change management process, and authorization levels. Use lists where appropriate.",
             "value": ""
         }
     }

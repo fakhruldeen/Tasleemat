@@ -9,68 +9,67 @@ Form: REQUIREMENTS MANAGEMENT PLAN (Instructions)
 > This document serves as the detailed instruction set for generating the `REQUIREMENTS MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> The requirements management plan is part of the project management plan. It specifies how requirements activities will be conducted throughout the project. Managing requirements activities includes planning activities (collecting, analyzing, categorizing, prioritizing, documenting, determining metrics, defining traceability structure) and managing activities (tracking, reporting, tracing, validating, performing configuration management). It receives information from the project charter, development approach, and quality management plan, and provides information to requirements documentation, traceability matrix, quality management plan, and risk register. It is developed once and does not usually change.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The requirements management plan should be aligned and consistent with the following documents:
+• Development approach
+• Change management plan
+• Scope management plan
+• Release and iteration plan
+• Requirements backlog
 
 ---
 
-### Schedule
-**Instruction:** Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.
+### Requirements collection
+**Instruction:** Describe how requirements will be collected or elicited (e.g., brainstorming, interviewing, observation). Use lists where appropriate.
 
 ---
 
-### Documentation
-**Instruction:** Describe how contractor documentation will integrate with project documentation.
+### Requirements analysis
+**Instruction:** Describe how requirements will be analyzed for prioritization, categorization, and impact. Use lists where appropriate.
 
 ---
 
-### Risk
-**Instruction:** Describe how risk identification, analysis, and response will integrate with risk management for the overall project.
+### Requirements categories
+**Instruction:** Identify categories for requirements such as business, stakeholder, quality, etc. Use lists where appropriate.
 
 ---
 
-### Reporting
-**Instruction:** Define how the contractor's status reports will integrate with the project status report.
+### Requirements documentation
+**Instruction:** Define how requirements will be documented (e.g., spreadsheet, detailed forms). Use lists where appropriate.
 
 ---
 
-### Timing
-**Instruction:** Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth.
+### Requirements prioritization
+**Instruction:** Identify the prioritization approach for requirements (non-negotiable vs. nice-to-have). Use lists where appropriate.
 
 ---
 
-### Performance metrics
-**Instruction:** Document the metrics that will be used to evaluate the seller's performance.
+### Requirements metrics
+**Instruction:** Document the metrics that requirements will be measured against. Use lists where appropriate.
 
 ---
 
-### Roles, responsibilities, and authority
-**Instruction:** Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.
+### Requirements traceability
+**Instruction:** Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. Use lists where appropriate.
 
 ---
 
-### Assumptions and constraints
-**Instruction:** Record assumptions and constraints related to the procurement activities.
+### Requirements tracking
+**Instruction:** Describe how often and what techniques will be used to track progress on requirements. Use lists where appropriate.
 
 ---
 
-### Legal jurisdiction and currency
-**Instruction:** Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.
+### Requirements reporting
+**Instruction:** Describe how reporting on requirements will be conducted and the frequency of such reporting. Use lists where appropriate.
 
 ---
 
-### Independent estimates
-**Instruction:** Document whether independent cost estimates will be used and if they will be needed for source selection.
+### Requirements validation
+**Instruction:** Identify the various methods that will be used to validate requirements such as inspection, audits, demonstration, testing, etc. Use lists where appropriate.
 
 ---
 
-### Risk management
-**Instruction:** Document requirements for performance bonds or insurance contracts to reduce risk.
-
----
-
-### Prequalified sellers
-**Instruction:** List any prequalified sellers that will be used.
-
+### Requirements configuration management
+**Instruction:** Describe the configuration management system that will be used to control requirements, documentation, the change management process, and authorization levels. Use lists where appropriate.
