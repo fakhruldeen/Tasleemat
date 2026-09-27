@@ -12,9 +12,9 @@
 ### Requirements List
 <!-- Populate the table below with all identified requirements based on stakeholder needs and project scope. -->
 
-| ID | Requirement | Stakeholder | Category | Priority | Acceptance criteria | Test or verification method | Phase or release |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| ID | Requirement | Stakeholder | Category | Priority | Acceptance criteria | Test or verification method | Phase or release | Dependencies | Assumptions & Constraints |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 

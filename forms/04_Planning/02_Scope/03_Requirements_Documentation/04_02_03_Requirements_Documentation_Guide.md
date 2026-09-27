@@ -61,6 +61,8 @@ To accurately and professionally complete the **REQUIREMENTS DOCUMENTATION**, th
 *   **Acceptance criteria:** The criteria that must be met for the stakeholder to approve that the requirement has been fulfilled.
 *   **Test or verification method:** The means that will be used to verify that the requirement has been met (e.g., inspection, test, demonstration, analysis).
 *   **Phase or release:** The phase or release in which the requirement will be met.
+*   **Dependencies:** Any relationships or dependencies on other requirements.
+*   **Assumptions & Constraints:** Any assumptions made or constraints imposed regarding the requirement.
 
 ---
 

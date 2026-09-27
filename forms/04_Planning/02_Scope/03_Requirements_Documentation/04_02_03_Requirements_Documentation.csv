@@ -1,2 +1,2 @@
 Field,Guidance,LLM_Generated_Value
-Requirements List,"Generate a JSON array of objects representing the Requirements table. Each object must have the following keys: 'ID', 'Requirement', 'Stakeholder', 'Category', 'Priority', 'Acceptance criteria', 'Test or verification method', 'Phase or release'. Generate at least 5 representative requirements based on the project context.",
+Requirements List,"Generate a JSON array of objects representing the Requirements table. Each object must have the following keys: 'ID', 'Requirement', 'Stakeholder', 'Category', 'Priority', 'Acceptance criteria', 'Test or verification method', 'Phase or release', 'Dependencies', 'Assumptions & Constraints'. Generate at least 5 representative requirements based on the project context.",
