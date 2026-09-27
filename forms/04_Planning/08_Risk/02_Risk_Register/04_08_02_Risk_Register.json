@@ -1,24 +1,27 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Risk Register template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Risk Register",
+    "_llm_instructions": "Populate the Risk Register based on the project context.\n\nContext & Definition:\nThe risk register captures the details of identified individual risks. It documents the results of risk analysis, risk response planning, response implementation, and current status. It is used to track information about identified risks over the course of the project. Typical information includes:\n*   Risk identifier\n*   Risk statement\n*   Risk owner\n*   Probability of occurring\n*   Impact on objectives if the risk occurs\n*   Risk score\n*   Response strategies\n*   Revised probability\n*   Revised impact\n*   Revised score\n*   Actions\n*   Status\n*   Comments\n\nThe risk register can receive information from anywhere in the project environment. Some documents that should be specifically reviewed for input include:\n*   Assumption log\n*   Issue log\n*   Lessons learned register\n*   Requirements management plan\n*   Requirements documentation\n*   Scope baseline\n*   Schedule management plan\n*   Duration estimates\n*   Schedule baseline\n*   Cost management plan\n*   Cost estimates\n*   Cost baseline\n*   Quality management plan\n*   Resource management plan\n*   Resource requirements\n*   Risk management plan\n*   Procurement documents\n*   Agreements\n*   Stakeholder register\n\nThe risk register provides information to:\n*   Scope statement\n*   Duration estimates\n*   Cost estimates\n*   Quality management plan\n*   Resource requirements\n*   Risk report\n*   Procurement management plan\n*   Stakeholder engagement plan\n*   Lessons learned register\n*   Project closeout\n\nThe risk register is an output from process 11.2 Identify Risks in the PMBOK® Guide – Sixth Edition. It is developed at the start of the project and is updated throughout the project.",
+    "form_name": "RISK REGISTER",
     "document_reference": "PMO-04.08.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Risk Register Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Risk ID:** Enter a unique risk identifier.\n- **Risk statement:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to",
+        "Risk Register Log": {
+            "guidance": "Provide the list of identified risks and their details.",
             "value": [
                 {
-                    "Risk ID": "",
-                    "Risk statement": ""
-                },
-                {
-                    "Risk ID": "",
-                    "Risk statement": ""
-                },
-                {
-                    "Risk ID": "",
-                    "Risk statement": ""
+                    "Risk ID": "[ Add details... ]",
+                    "Risk statement": "[ Add details... ]",
+                    "Risk owner": "[ Add details... ]",
+                    "Probability": "[ Add details... ]",
+                    "Impact": "[ Add details... ]",
+                    "Score": "[ Add details... ]",
+                    "Response": "[ Add details... ]",
+                    "Revised prob.": "[ Add details... ]",
+                    "Revised impact": "[ Add details... ]",
+                    "Revised score": "[ Add details... ]",
+                    "Actions": "[ Add details... ]",
+                    "Status": "[ Add details... ]",
+                    "Comments": "[ Add details... ]"
                 }
             ]
         }

@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Risk Register
-nav_order: 1
+nav_order: 2
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,41 +12,78 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.08.02`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Risk Register** in alignment with Tasleemat framework.
+---
+
+### Context & Definition
+The risk register captures the details of identified individual risks. It documents the results of risk analysis, risk response planning, response implementation, and current status. It is used to track information about identified risks over the course of the project. Typical information includes:
+*   Risk identifier
+*   Risk statement
+*   Risk owner
+*   Probability of occurring
+*   Impact on objectives if the risk occurs
+*   Risk score
+*   Response strategies
+*   Revised probability
+*   Revised impact
+*   Revised score
+*   Actions
+*   Status
+*   Comments
+
+The risk register can receive information from anywhere in the project environment. Some documents that should be specifically reviewed for input include:
+*   Assumption log
+*   Issue log
+*   Lessons learned register
+*   Requirements management plan
+*   Requirements documentation
+*   Scope baseline
+*   Schedule management plan
+*   Duration estimates
+*   Schedule baseline
+*   Cost management plan
+*   Cost estimates
+*   Cost baseline
+*   Quality management plan
+*   Resource management plan
+*   Resource requirements
+*   Risk management plan
+*   Procurement documents
+*   Agreements
+*   Stakeholder register
+
+The risk register provides information to:
+*   Scope statement
+*   Duration estimates
+*   Cost estimates
+*   Quality management plan
+*   Resource requirements
+*   Risk report
+*   Procurement management plan
+*   Stakeholder engagement plan
+*   Lessons learned register
+*   Project closeout
+
+The risk register is an output from process 11.2 Identify Risks in the PMBOK® Guide – Sixth Edition. It is developed at the start of the project and is updated throughout the project.
 
 ---
 
-### 1. What?
-A repository in which outputs of risk management processes are recorded.
+### Document Elements Description (Table 2.29)
 
----
-
-### 2. Why?
-Provides a central tracking mechanism for individual project risks, their root causes, and planned responses.
-
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **Risk ID:** Enter a unique risk identifier.
-*   **Risk statement:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to
+| Document Element | Description |
+| :--- | :--- |
+| **Risk ID** | Enter a unique risk identifier. |
+| **Risk statement** | Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to EFFECT.” |
+| **Risk owner** | The person responsible for managing and tracking the risk. |
+| **Probability** | Determine the likelihood of the event or condition occurring. |
+| **Impact** | Describe the impact on one or more of the project objectives. |
+| **Score** | If you are using numeric scoring, multiply the probability times the impact to determine the risk score. If using relative scoring, combine the two. |
+| **Response** | Describe the planned response strategy to the risk or condition. |
+| **Revised probability** | Determine the likelihood of the event or condition occurring after the response has been implemented. |
+| **Revised impact** | Describe the impact once the response has been implemented. |
+| **Revised score** | Enter the revised risk score once the response has been implemented. |
+| **Actions** | Describe any actions that need to be taken to respond to the risk. |
+| **Status** | Enter the status as open or closed. |
+| **Comments** | Provide any comments or additional helpful information about the risk event or condition. |
 
 ---
 
@@ -54,6 +91,5 @@ To accurately complete this log, populate the following sections:
 * [📄 Printable Template (Markdown)](04_08_02_Risk_Register_Template.md)
 * [🤖 LLM Generation Prompt](04_08_02_Risk_Register.md)
 * [📊 Data Schema (JSON)](04_08_02_Risk_Register.json)
-* [📈 Tabular Data (CSV)](04_08_02_Risk_Register.csv)
 
 </div>
