@@ -12,50 +12,70 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.08.01`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Risk Management Plan** in alignment with Tasleemat framework.
-
 ---
 
-### 1. What?
-A subsidiary management plan aligned with Tasleemat standards known as the **Risk Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
+### Context & Definition
+The risk management plan is a component of the project management plan. It describes how risk management activities will be structured and performed for both threats and opportunities. Typical information includes:
+*   Risk strategy
+*   Methodology
+*   Roles and responsibilities for risk management
+*   Funding to identify, analyze, and respond to risk
+*   Frequency and timing for risk management activities
+*   Risk categories
+*   Stakeholder risk appetite
+*   Definitions of probability
+*   Definitions of impact by objective
+*   Probability and impact matrix template
+*   Methods to track and audit risk management activities
+*   Risk report formats
 
----
+The risk management plan can receive information from:
+*   Project charter
+*   Project management plan (any component)
+*   Stakeholder register
 
-### 2. Why?
-To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+It provides information to:
+*   Cost management plan
+*   Quality management plan
+*   Risk register
+*   Stakeholder engagement plan
 
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
+The risk management plan is an input to all the other risk management processes. It describes the approach to all other risk management processes and provides key information needed to conduct those processes successfully.
+The risk management plan is an output from process 11.1 Plan Risk Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change.
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+Consider the following tips to help tailor the risk management plan to meet your needs:
+*   For a small, simple, or short-term project you can use a simplified risk register with a 3 × 3 probability and impact matrix. You would also include risk information in the project status report rather than a separate risk report.
+*   For larger, longer, and more complex projects you will want to develop a robust risk management process, including a more granular probability and impact matrix, quantitative assessments for the schedule and budget baselines, risk audits, and risk reports.
+*   Projects that are using an agile approach will address risk at the start of each iteration and during the retrospective.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The risk management plan should be aligned and consistent with the following documents:
+*   Scope management plan
+*   Schedule management plan
+*   Cost management plan
+*   Quality management plan
+*   Resource management plan
+*   Procurement management plan
+*   Stakeholder engagement plan
 
-### 5. How?
-To accurately and professionally complete the **RISK MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+---
 
-*   **Strategy:** The general approach to managing risk on the project
-*   **Methodology:** Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used.
-*   **Roles and responsibilities:** Document the roles and responsibilities for various risk management activities.
-*   **Risk categories:** Identify categorization groups used to sort and organize risks. These can be used to sort risks on the risk register or for a risk breakdown structure, if one is used.
-*   **Risk management funding:** Document the funding needed to perform the various risk management activities, such as utilizing expert advice or transferring risks to a third party. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.
-*   **Frequency and timing:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
-*   **Stakeholder risk appetite:** Identify the risk thresholds of the organization(s) and key stakeholders on the project with regard to each objective.
-*   **Risk tracking and audit:** Document how risk activities will be recorded and how risk management processes will be audited.
-*   **Definitions of probability:** Document how probability will be measured and defined. Include the scale used and the definition for each level in the probability scale. The probability definitions should reflect the stakeholder risk appetite. For example: Very high = there is an 80 percent probability or higher that the event will occur High = there is a 60–80 percent probability that the event will occur Medium = there is a 40–60 percent probability that the event will occur Low = there is a 20–40 percent probability that the event will occur Very low = there is a 1–20 percent probability that the event will occur
-*   **Definitions of impact by objective:** Document how impact will be measured and defined for either the project as a whole or for each objective. The probability definitions should reflect the stakeholder risk appetite. Include the scale used and the definition for each level in the impact scale. For example: Cost Impacts: Very high = overrun of control account budget of >20 percent High = overrun of control account budget between 15–20 percent Medium = overrun of control account budget between 10–15 percent Low = overrun of control account budget between 5–10 percent Very low = overrun of control account budget of <5 percent
-*   **Probability and impact matrix:** Describe the combinations of probability and impact that indicate a high risk, a medium risk, and a low risk and the scoring that will be used to prioritize risks. This can also include an assessment of urgency to indicate how soon the risk event is likely to occur.
+### Document Elements Description (Table 2.28)
+
+| Document Element | Description |
+| :--- | :--- |
+| **Strategy** | The general approach to managing risk on the project. |
+| **Methodology** | Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used. |
+| **Roles and responsibilities** | Document the roles and responsibilities for various risk management activities. |
+| **Risk categories** | Identify categorization groups used to sort and organize risks. |
+| **Risk management funding** | Document the funding needed to perform the various risk management activities. |
+| **Frequency and timing** | Determine the frequency of conducting formal risk management activities and the timing of any specific activities. |
+| **Stakeholder risk appetite** | Identify the risk thresholds of the organization(s) and key stakeholders. |
+| **Risk tracking and audit** | Document how risk activities will be recorded and how risk management processes will be audited. |
+| **Definitions of probability** | Document how probability will be measured and defined. Include the scale used and the definition for each level. |
+| **Definitions of impact by objective** | Document how impact will be measured and defined for either the project as a whole or for each objective. |
+| **Probability and impact matrix** | Describe the combinations of probability and impact that indicate a high risk, a medium risk, and a low risk. |
 
 ---
 
@@ -63,6 +83,5 @@ To accurately and professionally complete the **RISK MANAGEMENT PLAN**, the resp
 * [📄 Printable Template (Markdown)](04_08_01_Risk_Management_Plan_Template.md)
 * [🤖 LLM Generation Prompt](04_08_01_Risk_Management_Plan.md)
 * [📊 Data Schema (JSON)](04_08_01_Risk_Management_Plan.json)
-* [📈 Tabular Data (CSV)](04_08_01_Risk_Management_Plan.csv)
 
 </div>

@@ -1,53 +1,66 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إدارة المخاطر هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة خطة إدارة المخاطر.\n\nالسياق والتعريف:\nخطة إدارة المخاطر هي أحد مكونات خطة إدارة المشروع. تصف كيفية هيكلة وتنفيذ أنشطة إدارة المخاطر لكل من التهديدات والفرص. تتضمن المعلومات النموذجية ما يلي:\n*   استراتيجية المخاطر\n*   المنهجية\n*   الأدوار والمسؤوليات لإدارة المخاطر\n*   التمويل لتحديد المخاطر وتحليلها والاستجابة لها\n*   تكرار وتوقيت أنشطة إدارة المخاطر\n*   فئات المخاطر\n*   الرغبة في المخاطرة لدى المعنيين\n*   تعريفات الاحتمالية\n*   تعريفات الأثر حسب الهدف\n*   نموذج مصفوفة الاحتمالية والأثر\n*   طرق تتبع وتدقيق أنشطة إدارة المخاطر\n*   تنسيقات تقرير المخاطر\n\nيمكن أن تتلقى خطة إدارة المخاطر معلومات من:\n*   ميثاق المشروع\n*   خطة إدارة المشروع (أي مكون)\n*   سجل المعنيين\n\nوهي توفر معلومات إلى:\n*   خطة إدارة التكلفة\n*   خطة إدارة الجودة\n*   سجل المخاطر\n*   خطة إشراك المعنيين\n\nتُعد خطة إدارة المخاطر مُدخلاً لجميع عمليات إدارة المخاطر الأخرى. وتصف النهج المتبع في جميع عمليات إدارة المخاطر وتوفر المعلومات الأساسية اللازمة لإجراء هذه العمليات بنجاح.\nوهي مُخرج من العملية 11.1 التخطيط لإدارة المخاطر في دليل PMBOK® - الإصدار السادس. يتم تطويرها مرة واحدة ولا تتغير عادةً.\n\nنصائح التخصيص:\n*   بالنسبة لمشروع صغير أو بسيط أو قصير الأجل، يمكنك استخدام سجل مخاطر مبسط مع مصفوفة احتمالية وأثر 3 × 3. يمكنك أيضاً تضمين معلومات المخاطر في تقرير حالة المشروع بدلاً من تقرير مخاطر منفصل.\n*   بالنسبة للمشاريع الأكبر والأطول والأكثر تعقيداً، ستحتاج إلى تطوير عملية قوية لإدارة المخاطر، بما في ذلك مصفوفة احتمالية وأثر أكثر دقة، وتقييمات كمية للخطوط المرجعية للجدول الزمني والميزانية، وتدقيق المخاطر، وتقارير المخاطر.\n*   المشاريع التي تستخدم النهج الرشيق (Agile) ستعالج المخاطر في بداية كل تكرار وأثناء المراجعة الاسترجاعية (Retrospective).\n\nالمحاذاة:\nيجب أن تكون خطة إدارة المخاطر متوافقة ومتسقة مع الوثائق التالية:\n*   خطة إدارة النطاق\n*   خطة إدارة الجدول الزمني\n*   خطة إدارة التكلفة\n*   خطة إدارة الجودة\n*   خطة إدارة الموارد\n*   خطة إدارة المشتريات\n*   خطة إشراك المعنيين",
     "form_name": "خطة إدارة المخاطر",
     "document_reference": "PMO-04.08.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Strategy": {
-            "guidance": "The general approach to managing risk on the project",
+        "الاستراتيجية والمنهجية": {
+            "guidance": "صف النهج العام لإدارة المخاطر والأدوات والمنهجيات.",
             "value": ""
         },
-        "Methodology": {
-            "guidance": "Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used.",
+        "الأدوار والمسؤوليات": {
+            "guidance": "وثّق الأدوار والمسؤوليات لمختلف أنشطة إدارة المخاطر.",
+            "value": [
+                {
+                    "الدور": "[ أضف التفاصيل... ]",
+                    "المسؤولية عن إدارة المخاطر": "[ أضف التفاصيل... ]"
+                }
+            ]
+        },
+        "فئات المخاطر": {
+            "guidance": "حدد مجموعات التصنيف المستخدمة لفرز وتنظيم المخاطر.",
             "value": ""
         },
-        "Roles and responsibilities": {
-            "guidance": "Document the roles and responsibilities for various risk management activities.",
+        "تمويل المخاطر والتكرار والتتبع": {
+            "guidance": "وثّق التمويل المطلوب وتكرار الأنشطة وكيفية تسجيل التتبع.",
             "value": ""
         },
-        "Risk categories": {
-            "guidance": "Identify categorization groups used to sort and organize risks. These can be used to sort risks on the risk register or for a risk breakdown structure, if one is used.",
+        "الرغبة في المخاطرة لدى المعنيين": {
+            "guidance": "حدد حدود المخاطر للمؤسسة والمعنيين الرئيسيين.",
             "value": ""
         },
-        "Risk management funding": {
-            "guidance": "Document the funding needed to perform the various risk management activities, such as utilizing expert advice or transferring risks to a third party. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.",
-            "value": ""
+        "تعريفات الاحتمالية": {
+            "guidance": "وثّق كيف سيتم قياس وتحديد الاحتمالية.",
+            "value": [
+                {
+                    "المستوى / المقياس": "عالي جداً",
+                    "التعريف / نسبة الاحتمالية": "[ أضف التفاصيل... ]"
+                }
+            ]
         },
-        "Frequency and timing": {
-            "guidance": "Determine the frequency of conducting formal risk management activities and the timing of any specific activities.",
-            "value": ""
+        "تعريفات الأثر حسب الهدف": {
+            "guidance": "وثّق كيف سيتم قياس وتحديد الأثر حسب الهدف (التكلفة، الجدول الزمني، إلخ).",
+            "value": [
+                {
+                    "الهدف": "التكلفة",
+                    "المستوى / المقياس": "[ أضف التفاصيل... ]",
+                    "التعريف / الأثر": "[ أضف التفاصيل... ]"
+                }
+            ]
         },
-        "Stakeholder risk appetite": {
-            "guidance": "Identify the risk thresholds of the organization(s) and key stakeholders on the project with regard to each objective.",
-            "value": ""
-        },
-        "Risk tracking and audit": {
-            "guidance": "Document how risk activities will be recorded and how risk management processes will be audited.",
-            "value": ""
-        },
-        "Definitions of probability": {
-            "guidance": "Document how probability will be measured and defined. Include the scale used and the definition for each level in the probability scale. The probability definitions should reflect the stakeholder risk appetite. For example: Very high = there is an 80 percent probability or higher that the event will occur High = there is a 60–80 percent probability that the event will occur Medium = there is a 40–60 percent probability that the event will occur Low = there is a 20–40 percent probability that the event will occur Very low = there is a 1–20 percent probability that the event will occur",
-            "value": ""
-        },
-        "Definitions of impact by objective": {
-            "guidance": "Document how impact will be measured and defined for either the project as a whole or for each objective. The probability definitions should reflect the stakeholder risk appetite. Include the scale used and the definition for each level in the impact scale. For example: Cost Impacts: Very high = overrun of control account budget of >20 percent High = overrun of control account budget between 15–20 percent Medium = overrun of control account budget between 10–15 percent Low = overrun of control account budget between 5–10 percent Very low = overrun of control account budget of <5 percent",
-            "value": ""
-        },
-        "Probability and impact matrix": {
-            "guidance": "Describe the combinations of probability and impact that indicate a high risk, a medium risk, and a low risk and the scoring that will be used to prioritize risks. This can also include an assessment of urgency to indicate how soon the risk event is likely to occur.",
-            "value": ""
+        "مصفوفة الاحتمالية والأثر": {
+            "guidance": "مصفوفة 5x5 تصف مجموعات الاحتمالية والأثر.",
+            "value": [
+                {
+                    "الاحتمالية / الأثر": "عالي جداً",
+                    "منخفض جداً": "[ أضف التفاصيل... ]",
+                    "منخفض": "[ أضف التفاصيل... ]",
+                    "متوسط": "[ أضف التفاصيل... ]",
+                    "عالي": "[ أضف التفاصيل... ]",
+                    "عالي جداً": "[ أضف التفاصيل... ]"
+                }
+            ]
         }
     }
 }

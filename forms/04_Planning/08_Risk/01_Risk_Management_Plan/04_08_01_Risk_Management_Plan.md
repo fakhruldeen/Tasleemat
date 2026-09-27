@@ -6,66 +6,59 @@ Form: RISK MANAGEMENT PLAN (Instructions)
 # RISK MANAGEMENT PLAN - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `RISK MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RISK MANAGEMENT PLAN`.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> The risk management plan is a component of the project management plan. It describes how risk management activities will be structured and performed for both threats and opportunities. Typical information includes:
+*   Risk strategy
+*   Methodology
+*   Roles and responsibilities for risk management
+*   Funding to identify, analyze, and respond to risk
+*   Frequency and timing for risk management activities
+*   Risk categories
+*   Stakeholder risk appetite
+*   Definitions of probability
+*   Definitions of impact by objective
+*   Probability and impact matrix template
+*   Methods to track and audit risk management activities
+*   Risk report formats
+
+The risk management plan can receive information from:
+*   Project charter
+*   Project management plan (any component)
+*   Stakeholder register
+
+It provides information to:
+*   Cost management plan
+*   Quality management plan
+*   Risk register
+*   Stakeholder engagement plan
+
+The risk management plan is an input to all the other risk management processes. It describes the approach to all other risk management processes and provides key information needed to conduct those processes successfully.
+The risk management plan is an output from process 11.1 Plan Risk Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change.
+>
+> **Tailoring Tips:**
+> *   For a small, simple, or short-term project you can use a simplified risk register with a 3 × 3 probability and impact matrix. You would also include risk information in the project status report rather than a separate risk report.
+*   For larger, longer, and more complex projects you will want to develop a robust risk management process, including a more granular probability and impact matrix, quantitative assessments for the schedule and budget baselines, risk audits, and risk reports.
+*   Projects that are using an agile approach will address risk at the start of each iteration and during the retrospective.
+>
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The risk management plan should be aligned and consistent with the following documents:
+*   Scope management plan
+*   Schedule management plan
+*   Cost management plan
+*   Quality management plan
+*   Resource management plan
+*   Procurement management plan
+*   Stakeholder engagement plan
 
 ---
 
-### Strategy
-**Instruction:** The general approach to managing risk on the project
-
----
-
-### Methodology
-**Instruction:** Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used.
-
----
-
-### Roles and responsibilities
-**Instruction:** Document the roles and responsibilities for various risk management activities.
-
----
-
-### Risk categories
-**Instruction:** Identify categorization groups used to sort and organize risks. These can be used to sort risks on the risk register or for a risk breakdown structure, if one is used.
-
----
-
-### Risk management funding
-**Instruction:** Document the funding needed to perform the various risk management activities, such as utilizing expert advice or transferring risks to a third party. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.
-
----
-
-### Frequency and timing
-**Instruction:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
-
----
-
-### Stakeholder risk appetite
-**Instruction:** Identify the risk thresholds of the organization(s) and key stakeholders on the project with regard to each objective.
-
----
-
-### Risk tracking and audit
-**Instruction:** Document how risk activities will be recorded and how risk management processes will be audited.
-
----
-
-### Definitions of probability
-**Instruction:** Document how probability will be measured and defined. Include the scale used and the definition for each level in the probability scale. The probability definitions should reflect the stakeholder risk appetite. For example: Very high = there is an 80 percent probability or higher that the event will occur High = there is a 60–80 percent probability that the event will occur Medium = there is a 40–60 percent probability that the event will occur Low = there is a 20–40 percent probability that the event will occur Very low = there is a 1–20 percent probability that the event will occur
-
----
-
-### Definitions of impact by objective
-**Instruction:** Document how impact will be measured and defined for either the project as a whole or for each objective. The probability definitions should reflect the stakeholder risk appetite. Include the scale used and the definition for each level in the impact scale. For example: Cost Impacts: Very high = overrun of control account budget of >20 percent High = overrun of control account budget between 15–20 percent Medium = overrun of control account budget between 10–15 percent Low = overrun of control account budget between 5–10 percent Very low = overrun of control account budget of <5 percent
-
----
-
-### Probability and impact matrix
-**Instruction:** Describe the combinations of probability and impact that indicate a high risk, a medium risk, and a low risk and the scoring that will be used to prioritize risks. This can also include an assessment of urgency to indicate how soon the risk event is likely to occur.
-
+### Section Generation Instructions
+*   **Strategy & Methodology:** Describe the general approach to managing risk, including tools, approaches, or data sources.
+*   **Roles and Responsibilities:** Document roles and responsibilities for various risk management activities.
+*   **Risk Categories:** Identify categorization groups used to sort and organize risks (e.g. Risk Breakdown Structure).
+*   **Risk Funding, Frequency, and Tracking:** Document funding needed, frequency of activities, and how risk tracking/audits are recorded.
+*   **Stakeholder Risk Appetite:** Identify the risk thresholds of the organization and key stakeholders.
+*   **Definitions of Probability & Impact:** Document how probability and impact will be measured and defined (e.g. Very High, High, Medium, Low, Very Low).
+*   **Probability and Impact Matrix:** Describe the combinations of probability and impact that indicate high, medium, and low risk.
