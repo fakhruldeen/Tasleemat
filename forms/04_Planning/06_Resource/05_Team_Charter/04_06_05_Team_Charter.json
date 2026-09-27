@@ -28,6 +28,14 @@
         "Other agreements": {
             "guidance": "List other agreements.",
             "value": ""
+        },
+        "Team Members Signatures": {
+            "guidance": "Provide a table listing the Name of each team member.",
+            "value": [
+                {
+                    "Name": ""
+                }
+            ]
         }
     }
 }

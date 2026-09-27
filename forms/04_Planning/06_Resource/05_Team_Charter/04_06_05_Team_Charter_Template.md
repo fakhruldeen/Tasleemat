@@ -7,6 +7,7 @@ Section Instructions:
 *   **Decision-making process:** Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited.
 *   **Conflict resolution process:** Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc.
 *   **Other agreements:** List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members.
+*   **Team Members Signatures:** Provide a table listing the Name of each team member.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -52,11 +53,11 @@ Section Instructions:
 
 | Name | Signature | Date |
 | :--- | :--- | :--- |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| [ Add details... ] | | |
+| [ Add details... ] | | |
+| [ Add details... ] | | |
+| [ Add details... ] | | |
+| [ Add details... ] | | |
 
 ---
 
