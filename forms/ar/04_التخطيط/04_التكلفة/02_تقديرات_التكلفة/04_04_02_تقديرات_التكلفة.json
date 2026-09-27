@@ -1,54 +1,51 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تقديرات التكلفة هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة الخصائص، وقم بملء مصفوفة تقديرات التكلفة. السياق: توفر تقديرات التكلفة معلومات حول تكلفة الموارد اللازمة لإكمال عمل المشروع، بما في ذلك العمالة والمعدات والإمدادات والخدمات والمرافق والمواد. يمكن تحديد التقديرات من خلال تطوير تقريب لكل حزمة عمل باستخدام حكم الخبراء أو باستخدام طرق كمية. وهي مخرج من عملية 7.2 تقدير التكاليف في الدليل المعرفي لإدارة المشروعات (PMBOK).",
     "form_name": "تقديرات التكلفة",
     "document_reference": "PMO-04.04.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات تقديرات التكلفة": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** Unique identifier, such as the WBS ID or activity ID\n- **Resource:** The resource (person, equipment, material) needed for the WBS deliverable\n- **Labor costs:** The costs associated with team or outsourced resources\n- **Physical costs:** Costs associated with material, equipment, supplies, or other physical resources\n- **Reserve:** Document contingency reserve amounts, if any\n- **Estimate:** The sum of the cost of labor, physical resources, and reserve costs\n- **Basis of estimates:** Information such as cost per pound, duration of the work, square feet, etc.\n- **Method:** The method used to estimate the cost, such as analogous, parametric, etc.\n- **Assumptions/constraints:** Assumptions used to estimate the cost, such as the length of time the resource will be needed\n- **Range:** \n- **The range of estimate:** \n- **Confidence level:** The degree of confidence in the estimate",
+        "تقديرات التكلفة": {
+            "guidance": "قم بإنشاء مصفوفة بيانات تمثل جدول التقديرات.",
             "value": [
                 {
-                    "ID": "",
-                    "Resource": "",
-                    "Labor costs": "",
-                    "Physical costs": "",
-                    "Reserve": "",
-                    "Estimate": "",
-                    "Basis of estimates": "",
-                    "Method": "",
-                    "Assumptions/constraints": "",
-                    "Range": "",
-                    "The range of estimate": "",
-                    "Confidence level": ""
+                    "المُعرّف": "",
+                    "المورد": "",
+                    "تكاليف العمالة": "",
+                    "التكاليف المادية": "",
+                    "الاحتياطي": "",
+                    "التقدير": "",
+                    "أساس التقديرات": "",
+                    "الطريقة": "",
+                    "الافتراضات/القيود": "",
+                    "النطاق": "",
+                    "مستوى الثقة": ""
                 },
                 {
-                    "ID": "",
-                    "Resource": "",
-                    "Labor costs": "",
-                    "Physical costs": "",
-                    "Reserve": "",
-                    "Estimate": "",
-                    "Basis of estimates": "",
-                    "Method": "",
-                    "Assumptions/constraints": "",
-                    "Range": "",
-                    "The range of estimate": "",
-                    "Confidence level": ""
+                    "المُعرّف": "",
+                    "المورد": "",
+                    "تكاليف العمالة": "",
+                    "التكاليف المادية": "",
+                    "الاحتياطي": "",
+                    "التقدير": "",
+                    "أساس التقديرات": "",
+                    "الطريقة": "",
+                    "الافتراضات/القيود": "",
+                    "النطاق": "",
+                    "مستوى الثقة": ""
                 },
                 {
-                    "ID": "",
-                    "Resource": "",
-                    "Labor costs": "",
-                    "Physical costs": "",
-                    "Reserve": "",
-                    "Estimate": "",
-                    "Basis of estimates": "",
-                    "Method": "",
-                    "Assumptions/constraints": "",
-                    "Range": "",
-                    "The range of estimate": "",
-                    "Confidence level": ""
+                    "المُعرّف": "",
+                    "المورد": "",
+                    "تكاليف العمالة": "",
+                    "التكاليف المادية": "",
+                    "الاحتياطي": "",
+                    "التقدير": "",
+                    "أساس التقديرات": "",
+                    "الطريقة": "",
+                    "الافتراضات/القيود": "",
+                    "النطاق": "",
+                    "مستوى الثقة": ""
                 }
             ]
         }

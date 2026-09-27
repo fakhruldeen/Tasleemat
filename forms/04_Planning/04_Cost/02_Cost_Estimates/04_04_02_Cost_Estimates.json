@@ -1,54 +1,51 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Cost Estimates template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Cost Estimates",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties. Populate the array for the Cost Estimates based on the context. Context: Cost estimates provide information on the cost of resources necessary to complete project work, including labor, equipment, supplies, services, facilities, and material. Estimates can be determined by developing an approximation for each work package using expert judgment or by using quantitative methods. It is an output from the process 7.2 Estimate Costs in the PMBOK® Guide.",
+    "form_name": "COST ESTIMATES",
     "document_reference": "PMO-04.04.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Cost Estimates Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **ID:** Unique identifier, such as the WBS ID or activity ID\n- **Resource:** The resource (person, equipment, material) needed for the WBS deliverable\n- **Labor costs:** The costs associated with team or outsourced resources\n- **Physical costs:** Costs associated with material, equipment, supplies, or other physical resources\n- **Reserve:** Document contingency reserve amounts, if any\n- **Estimate:** The sum of the cost of labor, physical resources, and reserve costs\n- **Basis of estimates:** Information such as cost per pound, duration of the work, square feet, etc.\n- **Method:** The method used to estimate the cost, such as analogous, parametric, etc.\n- **Assumptions/constraints:** Assumptions used to estimate the cost, such as the length of time the resource will be needed\n- **Range:** \n- **The range of estimate:** \n- **Confidence level:** The degree of confidence in the estimate",
+        "Cost Estimates": {
+            "guidance": "Generate a JSON array representing the tabular cost estimates.",
             "value": [
                 {
                     "ID": "",
                     "Resource": "",
-                    "Labor costs": "",
-                    "Physical costs": "",
+                    "Labor Costs": "",
+                    "Physical Costs": "",
                     "Reserve": "",
                     "Estimate": "",
-                    "Basis of estimates": "",
+                    "Basis of Estimates": "",
                     "Method": "",
-                    "Assumptions/constraints": "",
+                    "Assumptions/Constraints": "",
                     "Range": "",
-                    "The range of estimate": "",
-                    "Confidence level": ""
+                    "Confidence Level": ""
                 },
                 {
                     "ID": "",
                     "Resource": "",
-                    "Labor costs": "",
-                    "Physical costs": "",
+                    "Labor Costs": "",
+                    "Physical Costs": "",
                     "Reserve": "",
                     "Estimate": "",
-                    "Basis of estimates": "",
+                    "Basis of Estimates": "",
                     "Method": "",
-                    "Assumptions/constraints": "",
+                    "Assumptions/Constraints": "",
                     "Range": "",
-                    "The range of estimate": "",
-                    "Confidence level": ""
+                    "Confidence Level": ""
                 },
                 {
                     "ID": "",
                     "Resource": "",
-                    "Labor costs": "",
-                    "Physical costs": "",
+                    "Labor Costs": "",
+                    "Physical Costs": "",
                     "Reserve": "",
                     "Estimate": "",
-                    "Basis of estimates": "",
+                    "Basis of Estimates": "",
                     "Method": "",
-                    "Assumptions/constraints": "",
+                    "Assumptions/Constraints": "",
                     "Range": "",
-                    "The range of estimate": "",
-                    "Confidence level": ""
+                    "Confidence Level": ""
                 }
             ]
         }

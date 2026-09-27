@@ -1,76 +1,38 @@
 ---
 lang: en
-Form: Cost Estimates (Instructions)
+Form: COST ESTIMATES (Instructions)
 ---
 
 # COST ESTIMATES - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `COST ESTIMATES`. When asked to populate this form, generate an array of objects representing the cost estimate tabular data.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> Cost estimates provide information on the cost of resources necessary to complete project work, including labor, equipment, supplies, services, facilities, and material. Estimates can be determined by developing an approximation for each work package using expert judgment or by using quantitative methods. It is an output from the process 7.2 Estimate Costs in the PMBOK® Guide.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The cost estimates should be aligned and consistent with the following documents:
+• Assumption log
+• Activity attributes
+• Project schedule
+• Resource requirements
+• Project team assignments
 
 ---
 
-### ID
-**Instruction:** Unique identifier, such as the WBS ID or activity ID
+### Table: Activity Cost Estimates
+**Instruction:** Generate a comprehensive tabular list of activity cost estimates incorporating labor, physical resources, and reserves.
 
----
-
-### Resource
-**Instruction:** The resource (person, equipment, material) needed for the WBS deliverable
-
----
-
-### Labor costs
-**Instruction:** The costs associated with team or outsourced resources
-
----
-
-### Physical costs
-**Instruction:** Costs associated with material, equipment, supplies, or other physical resources
-
----
-
-### Reserve
-**Instruction:** Document contingency reserve amounts, if any
-
----
-
-### Estimate
-**Instruction:** The sum of the cost of labor, physical resources, and reserve costs
-
----
-
-### Basis of estimates
-**Instruction:** Information such as cost per pound, duration of the work, square feet, etc.
-
----
-
-### Method
-**Instruction:** The method used to estimate the cost, such as analogous, parametric, etc.
-
----
-
-### Assumptions/constraints
-**Instruction:** Assumptions used to estimate the cost, such as the length of time the resource will be needed
-
----
-
-### Range
-**Instruction:** 
-
----
-
-### The range of estimate
-**Instruction:** 
-
----
-
-### Confidence level
-**Instruction:** The degree of confidence in the estimate
-
+**Columns Definition:**
+*   **ID:** Unique identifier, such as the WBS ID or activity ID.
+*   **Resource:** The resource (person, equipment, material) needed for the deliverable.
+*   **Labor Costs:** The costs associated with team or outsourced resources.
+*   **Physical Costs:** Costs associated with material, equipment, supplies, or other physical resources.
+*   **Reserve:** Document contingency reserve amounts, if any.
+*   **Estimate:** The sum of the cost of labor, physical resources, and reserve costs.
+*   **Basis of Estimates:** Information such as cost per pound, duration of the work, square feet, etc.
+*   **Method:** The method used to estimate the cost (analogous, parametric, three-point, bottom-up).
+*   **Assumptions/Constraints:** Assumptions used to estimate the cost (e.g. resource duration).
+*   **Range:** The range of the estimate (e.g. +/- 10%).
+*   **Confidence Level:** The degree of confidence in the estimate (e.g. 90%).
