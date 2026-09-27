@@ -54,15 +54,22 @@ The risk register is an output from process 11.2 Identify Risks in the PMBOK® G
 Section Instructions:
 *   **Risk ID:** Enter a unique risk identifier.
 *   **Risk statement:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to EFFECT.”
-*   **Risk owner:** The person responsible for managing and tracking the risk
+*   **Risk owner:** The person responsible for managing and tracking the risk.
 *   **Probability:** Determine the likelihood of the event or condition occurring.
-*   **Impact:** Describe the impact on one or more of the project objectives.
-*   **Score:** If you are using numeric scoring, multiply the probability times the impact to determine the risk score. If you are using relative scoring then combine the two scores (e.g., high-low or medium-high).
+*   **Impact: Scope:** Describe the impact specifically on the project scope.
+*   **Impact: Quality:** Describe the impact specifically on the project quality.
+*   **Impact: Schedule:** Describe the impact specifically on the project schedule.
+*   **Impact: Cost:** Describe the impact specifically on the project cost.
+*   **Score:** Determine the initial risk score by multiplying probability by the highest impact, or combining scales.
 *   **Response:** Describe the planned response strategy to the risk or condition.
-*   **Revised probability:** Determine the likelihood of the event or condition occurring after the response has been implemented.
-*   **Revised impact:** Describe the impact once the response has been implemented.
-*   **Revised score:** Enter the revised risk score once the response has been implemented.
-*   **Actions:** Describe any actions that need to be taken to respond to the risk.
+*   **Responsible Party:** The person assigned to implement the risk response actions (Risk Action Owner).
+*   **Rev. Probability:** Determine the revised likelihood of the event after the response has been implemented.
+*   **Rev. Impact: Scope:** Describe the revised impact on scope once the response is implemented.
+*   **Rev. Impact: Quality:** Describe the revised impact on quality once the response is implemented.
+*   **Rev. Impact: Schedule:** Describe the revised impact on schedule once the response is implemented.
+*   **Rev. Impact: Cost:** Describe the revised impact on cost once the response is implemented.
+*   **Rev. Score:** Enter the revised risk score once the response has been implemented.
+*   **Actions:** Describe specific action steps that need to be taken to respond to the risk.
 *   **Status:** Enter the status as open or closed.
 *   **Comments:** Provide any comments or additional helpful information about the risk event or condition.
 -->
@@ -78,11 +85,11 @@ Section Instructions:
 
 ### Risk Register Log
 
-| Risk ID | Risk statement | Risk owner | Probability | Impact | Score | Response | Revised prob. | Revised impact | Revised score | Actions | Status | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| Risk ID | Risk statement | Risk owner | Probability | Impact: Scope | Impact: Quality | Impact: Schedule | Impact: Cost | Score | Response | Responsible Party | Rev. Probability | Rev. Impact: Scope | Rev. Impact: Quality | Rev. Impact: Schedule | Rev. Impact: Cost | Rev. Score | Actions | Status | Comments |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
