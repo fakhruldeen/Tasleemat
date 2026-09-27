@@ -4,6 +4,8 @@ title: دليل ربط الوثائق (Document Mapping)
 nav_order: 1
 ---
 
+<div dir="rtl">
+
 # 🔗 دليل ربط الوثائق (Arabic to English Mapping)
 
 يحتوي هذا الجدول على ربط مباشر بين كل وثيقة عربية والنسخة الإنجليزية المطابقة لها في المستودع الرئيسي.
@@ -218,3 +220,6 @@ nav_order: 1
 | [07 04 قائمة التحقق للانتقال إلى العمليات](./07_الإغلاق/04_قائمة_التحقق_للانتقال_إلى_العمليات/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.md) | [Transition to Operations Checklist](../../07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist_Template.md) |
 | [07 04 قائمة التحقق للانتقال إلى العمليات](./07_الإغلاق/04_قائمة_التحقق_للانتقال_إلى_العمليات/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_دليل.md) | [Transition to Operations Checklist](../../07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist_Guide.md) |
 | [07 04 قائمة التحقق للانتقال إلى العمليات](./07_الإغلاق/04_قائمة_التحقق_للانتقال_إلى_العمليات/07_04_قائمة_التحقق_للانتقال_إلى_العمليات.md) | [Transition to Operations Checklist](../../07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist.md) |
+
+
+</div>

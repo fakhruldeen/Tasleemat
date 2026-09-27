@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 <!-- تعليمات للنموذج الذكي: قم بملء مساحات الجدول الفارغة بناءً على سياق المشروع -->
 
 <h3 align="right">{{اسم_الشركة}}</h3>
@@ -30,4 +32,7 @@
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
   <strong>النموذج:</strong> قائمة المعالم الرئيسية للمشروع | <strong>المرجع:</strong> PMO-04.03.04 <br>
   <i>تاريخ الإنشاء: {{وقت_الإنشاء}}, بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+
+
 </div>
