@@ -53,6 +53,8 @@ To accurately and professionally complete the **PROJECT SCOPE STATEMENT**, the r
 *   **Project deliverables:** The progressive elaboration of the key deliverables identified in the project charter.
 *   **Product acceptance criteria:** The specific criteria developed for each component of the project, elaborated from the project charter.
 *   **Project exclusions:** Explicitly state what is out of scope for the product and project to manage expectations.
+*   **Project constraints:** List any limiting factors that affect the execution of the project (e.g., budget, schedule).
+*   **Project assumptions:** List factors that are considered to be true, real, or certain without proof or demonstration.
 
 ---
 

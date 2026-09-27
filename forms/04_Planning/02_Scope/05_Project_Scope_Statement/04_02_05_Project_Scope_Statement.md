@@ -30,3 +30,9 @@ Form: PROJECT SCOPE STATEMENT (Instructions)
 
 ### Project exclusions
 **Instruction:** Clearly define what is out of scope for the product and project.
+
+### Project constraints
+**Instruction:** List and describe the specific project constraints associated with the project scope that limit the team's options.
+
+### Project assumptions
+**Instruction:** List and describe the assumptions associated with the project scope and the potential impact of those assumptions if they prove to be false.

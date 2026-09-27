@@ -37,6 +37,20 @@
 
 ---
 
+### Project constraints
+<!-- List and describe the specific project constraints associated with the project scope that limit the team's options (e.g., predefined budget, imposed dates, schedule milestones). -->
+
+> [ Add details... ]
+
+---
+
+### Project assumptions
+<!-- List and describe the assumptions associated with the project scope and the potential impact of those assumptions if they prove to be false. -->
+
+> [ Add details... ]
+
+---
+
 ### Signatures
 
 | Prepared By: | Reviewed By: | Approved By: |

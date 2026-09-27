@@ -20,6 +20,14 @@
         "Project exclusions": {
             "guidance": "Project exclusions clearly define what is out of scope for the product and project.",
             "value": ""
+        },
+        "Project constraints": {
+            "guidance": "List and describe the specific project constraints associated with the project scope that limit the team's options (e.g., predefined budget, imposed dates, schedule milestones).",
+            "value": ""
+        },
+        "Project assumptions": {
+            "guidance": "List and describe the assumptions associated with the project scope and the potential impact of those assumptions if they prove to be false.",
+            "value": ""
         }
     }
 }
