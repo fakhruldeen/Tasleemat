@@ -5,7 +5,7 @@ Section Instructions:
 *   **Type of resource:** Indicate whether the resource is a team resource or physical resource. If physical, indicate if it is equipment, supplies, material, location, or some other form of resource.
 *   **Quantity:** Document the number or quantity of the resource needed for the activity. Indicate the unit of measure used for estimating resources.
 *   **Assumptions:** Enter assumptions associated with the resource, such as availability, certifications, etc.
-*   **Basis of estimate:** Include the method used for estimating the quantities, range of estimates, confidence level, and constraints or risks.
+*   **Basis of estimate:** Include the method used for estimating the quantities, range of estimates, confidence level, and constraints or risks associated with the resource.
 *   **Comments:** Include information on basis of estimate, grade, competency, or other relevant information.
 -->
 
