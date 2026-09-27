@@ -1,5 +1,5 @@
-الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
-Project scope description,Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation.,
-Project deliverables,Project deliverables are progressively elaborated from the project description key deliverables in the project charter.,
-Product acceptance criteria,Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project.,
-Project exclusions,Project exclusions clearly define what is out of scope for the product and project.,
+Field,Guidance,LLM_Generated_Value
+وصف نطاق المشروع,يتم تفصيل نطاق المشروع تدريجياً بناءً على وصف المشروع في ميثاق المشروع والمتطلبات الواردة في وثائق المتطلبات.,
+تسليمات المشروع,يتم تفصيل تسليمات المشروع تدريجياً بناءً على التسليمات الرئيسية لوصف المشروع في ميثاق المشروع.,
+معايير قبول المنتج,يتم تفصيل معايير القبول تدريجياً بناءً على المعلومات الواردة في ميثاق المشروع. يمكن تطوير معايير قبول لكل مكون من مكونات المشروع.,
+استثناءات المشروع,تحدد استثناءات المشروع بوضوح ما يقع خارج نطاق المنتج والمشروع.,

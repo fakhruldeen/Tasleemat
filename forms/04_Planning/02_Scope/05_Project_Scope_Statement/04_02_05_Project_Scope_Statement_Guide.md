@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Project Scope Statement
-nav_order: 1
+nav_order: 5
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -17,38 +17,42 @@ This document provides a comprehensive, professional reference to understand the
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Project Scope Statement**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+A document that provides a detailed description of the project and product scope, including deliverables, assumptions, and constraints.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+It creates a common understanding of the project scope among stakeholders, prevents scope creep by explicitly defining exclusions, and provides a baseline for evaluating whether requests for changes or additional work are contained within or outside the project's boundaries.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+This artifact is prepared during the **PLANNING Process Group** of the project lifecycle (specifically during the Define Scope process).
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+**Responsibilities:** Developed by the Project Manager with input from key stakeholders.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• For smaller projects you can combine the project scope statement with the project charter.
+• For agile projects you can combine the information with the release and iteration plan.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The project scope statement should be aligned and consistent with the following documents:
+• Project charter
+• Work breakdown structure
+• Requirements documentation
 
 ### 5. How?
 To accurately and professionally complete the **PROJECT SCOPE STATEMENT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-*   **Project scope description:** Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation.
-*   **Project deliverables:** Project deliverables are progressively elaborated from the project description key deliverables in the project charter.
-*   **Product acceptance criteria:** Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project.
-*   **Project exclusions:** Project exclusions clearly define what is out of scope for the product and project.
+*   **Project scope description:** The progressive elaboration of the project description from the project charter and requirements documentation.
+*   **Project deliverables:** The progressive elaboration of the key deliverables identified in the project charter.
+*   **Product acceptance criteria:** The specific criteria developed for each component of the project, elaborated from the project charter.
+*   **Project exclusions:** Explicitly state what is out of scope for the product and project to manage expectations.
 
 ---
 

@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROJECT SCOPE STATEMENT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROJECT SCOPE STATEMENT template based on the provided project context. Context & Definition: The project scope statement assists in defining and developing the project and product scope. The project scope statement is an output from the process 5.3 Define Scope in the PMBOK® Guide – Sixth Edition. It is developed once and is not usually updated unless there is a significant change in scope. Alignment: The project scope statement should be aligned and consistent with the following documents:\n• Project charter\n• Work breakdown structure\n• Requirements documentation",
     "form_name": "PROJECT SCOPE STATEMENT",
     "document_reference": "PMO-04.02.05",
     "project_title": "",
