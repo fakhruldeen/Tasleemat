@@ -39,7 +39,7 @@ Column Definitions:
 | :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |
+| **Date:**     /    /         | **Date:**     /    /         | **Date:**     /    /         |
 
 ---
 

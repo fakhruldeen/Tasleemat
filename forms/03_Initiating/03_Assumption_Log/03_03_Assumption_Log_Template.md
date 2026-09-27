@@ -50,7 +50,7 @@ Please provide a comprehensive log of all assumptions and constraints for the pr
 | :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |
+| **Date:**     /    /         | **Date:**     /    /         | **Date:**     /    /         |
 
 ---
 

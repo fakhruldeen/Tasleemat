@@ -147,7 +147,7 @@ Section Instructions:
 | :--- | :--- |
 | **Name:** {{Project_Manager_Name}} | **Name:** {{Project_Sponsor_Name}} |
 | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** _________________ | **Date:** _________________ |  
+| **Date:**     /    /         | **Date:**     /    /         |  
 
 ---
 
