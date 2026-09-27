@@ -5,74 +5,89 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Strategy": {
-            "guidance": "The general approach to managing risk on the project.",
-            "value": ""
-        },
-        "Methodology": {
-            "guidance": "Describe the methodology or approach to the risk management, including tools and data sources.",
-            "value": ""
-        },
-        "Roles and Responsibilities": {
-            "guidance": "Document roles and responsibilities for various risk management activities.",
-            "value": [
-                {
-                    "Role": "[ Add details... ]",
-                    "Responsibility for Risk Management": "[ Add details... ]"
+        "1. Risk Strategy and Operations": {
+            "guidance": "Define the overall approach, roles, funding, and schedule for risk management.",
+            "value": {
+                "Strategy": {
+                    "guidance": "The general approach to managing risk on the project.",
+                    "value": ""
+                },
+                "Methodology": {
+                    "guidance": "Describe the methodology or approach to the risk management, including tools and data sources.",
+                    "value": ""
+                },
+                "Roles and Responsibilities": {
+                    "guidance": "Document roles and responsibilities for various risk management activities.",
+                    "value": [
+                        {
+                            "Role": "[ Add details... ]",
+                            "Responsibility for Risk Management": "[ Add details... ]"
+                        }
+                    ]
+                },
+                "Risk Management Funding": {
+                    "guidance": "Document the funding needed to perform the various risk management activities. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.",
+                    "value": ""
+                },
+                "Frequency and Timing": {
+                    "guidance": "Determine the frequency of conducting formal risk management activities.",
+                    "value": ""
                 }
-            ]
+            }
         },
-        "Risk Categories": {
-            "guidance": "Identify categorization groups used to sort and organize risks.",
-            "value": ""
-        },
-        "Risk Management Funding": {
-            "guidance": "Document the funding needed to perform the various risk management activities. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.",
-            "value": ""
-        },
-        "Frequency and Timing": {
-            "guidance": "Determine the frequency of conducting formal risk management activities.",
-            "value": ""
-        },
-        "Stakeholder Risk Appetite": {
-            "guidance": "Identify the risk thresholds of the organization and key stakeholders.",
-            "value": ""
-        },
-        "Risk Tracking and Audit": {
-            "guidance": "Document how risk activities will be recorded and audited.",
-            "value": ""
-        },
-        "Definitions of Probability": {
-            "guidance": "Document how probability will be measured and defined.",
-            "value": [
-                {
-                    "Level / Scale": "Very High",
-                    "Definition / Probability %": "[ Add details... ]"
+        "2. Risk Assessment Framework": {
+            "guidance": "Establish the categories, risk appetites, and probability/impact matrices used to evaluate risks.",
+            "value": {
+                "Risk Categories": {
+                    "guidance": "Identify categorization groups used to sort and organize risks.",
+                    "value": ""
+                },
+                "Stakeholder Risk Appetite": {
+                    "guidance": "Identify the risk thresholds of the organization and key stakeholders.",
+                    "value": ""
+                },
+                "Definitions of Probability": {
+                    "guidance": "Document how probability will be measured and defined.",
+                    "value": [
+                        {
+                            "Level / Scale": "Very High",
+                            "Definition / Probability %": "[ Add details... ]"
+                        }
+                    ]
+                },
+                "Definitions of Impact by Objective": {
+                    "guidance": "Document how impact will be measured and defined by objective (Cost, Schedule, Quality, etc.).",
+                    "value": [
+                        {
+                            "Objective": "Cost",
+                            "Level / Scale": "[ Add details... ]",
+                            "Definition / Impact": "[ Add details... ]"
+                        }
+                    ]
+                },
+                "Probability and Impact Matrix": {
+                    "guidance": "A 5x5 matrix describing probability and impact combinations.",
+                    "value": [
+                        {
+                            "Probability / Impact": "Very High",
+                            "Very Low": "[ Add details... ]",
+                            "Low": "[ Add details... ]",
+                            "Medium": "[ Add details... ]",
+                            "High": "[ Add details... ]",
+                            "Very High": "[ Add details... ]"
+                        }
+                    ]
                 }
-            ]
+            }
         },
-        "Definitions of Impact by Objective": {
-            "guidance": "Document how impact will be measured and defined by objective (Cost, Schedule, Quality, etc.).",
-            "value": [
-                {
-                    "Objective": "Cost",
-                    "Level / Scale": "[ Add details... ]",
-                    "Definition / Impact": "[ Add details... ]"
+        "3. Risk Monitoring and Audit": {
+            "guidance": "Define how risks will be tracked and audited throughout the project lifecycle.",
+            "value": {
+                "Risk Tracking and Audit": {
+                    "guidance": "Document how risk activities will be recorded and audited.",
+                    "value": ""
                 }
-            ]
-        },
-        "Probability and Impact Matrix": {
-            "guidance": "A 5x5 matrix describing probability and impact combinations.",
-            "value": [
-                {
-                    "Probability / Impact": "Very High",
-                    "Very Low": "[ Add details... ]",
-                    "Low": "[ Add details... ]",
-                    "Medium": "[ Add details... ]",
-                    "High": "[ Add details... ]",
-                    "Very High": "[ Add details... ]"
-                }
-            ]
+            }
         }
     }
 }

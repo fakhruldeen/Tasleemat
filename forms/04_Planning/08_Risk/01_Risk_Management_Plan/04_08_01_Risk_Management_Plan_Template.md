@@ -45,16 +45,22 @@ The risk management plan should be aligned and consistent with the following doc
 *   Stakeholder engagement plan
 
 Section Instructions:
+**1. Risk Strategy and Operations**
 *   **Strategy:** The general approach to managing risk on the project.
 *   **Methodology:** Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used.
 *   **Roles and Responsibilities:** Document roles and responsibilities for various risk management activities.
-*   **Risk Categories:** Identify categorization groups used to sort and organize risks (e.g. Risk Breakdown Structure).
 *   **Risk Management Funding:** Document the funding needed to perform the various risk management activities. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.
 *   **Frequency and Timing:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
-*   **Risk Tracking and Audit:** Document how risk activities will be recorded and how risk management processes will be audited.
+
+**2. Risk Assessment Framework**
+*   **Risk Categories:** Identify categorization groups used to sort and organize risks (e.g. Risk Breakdown Structure).
 *   **Stakeholder Risk Appetite:** Identify the risk thresholds of the organization and key stakeholders.
-*   **Definitions of Probability & Impact:** Document how probability and impact will be measured and defined (e.g. Very High, High, Medium, Low, Very Low).
+*   **Definitions of Probability:** Document how probability will be measured and defined (e.g. Very High, High, Medium, Low, Very Low).
+*   **Definitions of Impact by Objective:** Document how impact will be measured and defined by objective.
 *   **Probability and Impact Matrix:** Describe the combinations of probability and impact that indicate high, medium, and low risk.
+
+**3. Risk Monitoring and Audit**
+*   **Risk Tracking and Audit:** Document how risk activities will be recorded and how risk management processes will be audited.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -65,6 +71,8 @@ Section Instructions:
 | :--- | :--- | :--- |  
 
 ---
+
+## 1. Risk Strategy and Operations
 
 ### Strategy
 [ Add details... ]
@@ -79,16 +87,17 @@ Section Instructions:
 | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] |
 
-### Risk Categories
-[ Add details... ]
-
 ### Risk Management Funding
 [ Add details... ]
 
 ### Frequency and Timing
 [ Add details... ]
 
-### Risk Tracking and Audit
+---
+
+## 2. Risk Assessment Framework
+
+### Risk Categories
 [ Add details... ]
 
 ### Stakeholder Risk Appetite
@@ -121,6 +130,13 @@ Section Instructions:
 | **Medium** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Low** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Very Low** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 3. Risk Monitoring and Audit
+
+### Risk Tracking and Audit
+[ Add details... ]
 
 ---
 

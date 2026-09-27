@@ -55,12 +55,15 @@ The risk management plan is an output from process 11.1 Plan Risk Management in 
 ---
 
 ### Section Generation Instructions
+**1. Risk Strategy and Operations**
 *   **Strategy:** The general approach to managing risk on the project.
 *   **Methodology:** Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used.
 *   **Roles and Responsibilities:** Document roles and responsibilities for various risk management activities.
+**2. Risk Assessment Framework**
 *   **Risk Categories:** Identify categorization groups used to sort and organize risks (e.g. Risk Breakdown Structure).
 *   **Risk Management Funding:** Document the funding needed to perform the various risk management activities. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.
 *   **Frequency and Timing:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
+**3. Risk Monitoring and Audit**
 *   **Risk Tracking and Audit:** Document how risk activities will be recorded and how risk management processes will be audited.
 *   **Stakeholder Risk Appetite:** Identify the risk thresholds of the organization and key stakeholders.
 *   **Definitions of Probability & Impact:** Document how probability and impact will be measured and defined (e.g. Very High, High, Medium, Low, Very Low).
