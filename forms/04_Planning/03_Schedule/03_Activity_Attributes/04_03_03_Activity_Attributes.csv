@@ -1,2 +1,4 @@
-Field,Guidance,LLM_Generated_Value
-Description of work,"If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",
+ID,Activity Name,Planned Release / Iteration,Description of Work,Predecessor and successor activities,Logical relationships,Leads and lags,Imposed dates,Constraints,Assumptions,Location of performance,Type of effort,Team resources and skill levels,Required physical resources
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,

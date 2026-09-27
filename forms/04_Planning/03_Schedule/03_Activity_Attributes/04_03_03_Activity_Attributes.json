@@ -1,17 +1,46 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this ACTIVITY ATTRIBUTES template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and generate an array of activity attributes under 'fields' based on the context. Context: Activity attributes are the details about the activity. The activity attributes are progressively elaborated as the planning processes progress. They are an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition.",
     "form_name": "ACTIVITY ATTRIBUTES",
     "document_reference": "PMO-04.03.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "ID</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
-            "value": ""
-        },
-        "Description of work": {
-            "guidance": "If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",
-            "value": ""
+        "Activity Attributes": {
+            "guidance": "Generate a JSON array of activity objects with their detailed attributes.",
+            "value": [
+                {
+                    "ID": "",
+                    "Activity Name": "",
+                    "Planned Release / Iteration": "",
+                    "Description of Work": "",
+                    "Predecessor and successor activities": "",
+                    "Logical relationships": "",
+                    "Leads and lags": "",
+                    "Imposed dates": "",
+                    "Constraints": "",
+                    "Assumptions": "",
+                    "Location of performance": "",
+                    "Type of effort": "",
+                    "Team resources and skill levels": "",
+                    "Required physical resources": ""
+                },
+                {
+                    "ID": "",
+                    "Activity Name": "",
+                    "Planned Release / Iteration": "",
+                    "Description of Work": "",
+                    "Predecessor and successor activities": "",
+                    "Logical relationships": "",
+                    "Leads and lags": "",
+                    "Imposed dates": "",
+                    "Constraints": "",
+                    "Assumptions": "",
+                    "Location of performance": "",
+                    "Type of effort": "",
+                    "Team resources and skill levels": "",
+                    "Required physical resources": ""
+                }
+            ]
         }
     }
 }

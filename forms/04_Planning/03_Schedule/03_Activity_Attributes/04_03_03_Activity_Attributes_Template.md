@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,18 +9,36 @@
 
 ---
 
-### ID</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
+<!-- REPEAT THIS SECTION FOR EACH ACTIVITY -->
+### Activity: [ Add details... ]
+
+#### 1. General Information
+* **ID:** [ Add details... ]
+* **Activity Name:** [ Add details... ]
+* **Planned Release / Iteration:** [ Add details... ]
+* **Description of Work:**
 > [ Add details... ]
+
+#### 2. Dependencies & Scheduling
+* **Predecessor and successor activities:** [ Add details... ]
+* **Logical relationships:** [ Add details... ]
+* **Leads and lags:** [ Add details... ]
+* **Imposed dates:** [ Add details... ]
+
+#### 3. Execution Requirements
+* **Constraints:** [ Add details... ]
+* **Assumptions:** [ Add details... ]
+* **Location of performance:** [ Add details... ]
+* **Type of effort:** [ Add details... ]
+
+#### 4. Resource Requirements
+* **Team resources and skill levels:**
+> [ Add details... ]
+* **Required physical resources:**
 > [ Add details... ]
 
 ---
-
-### Description of work
-<!-- If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work. -->
-
-> [ Add details... ]
-
----
+<!-- END REPEAT SECTION -->
 
 ### Signatures
 
