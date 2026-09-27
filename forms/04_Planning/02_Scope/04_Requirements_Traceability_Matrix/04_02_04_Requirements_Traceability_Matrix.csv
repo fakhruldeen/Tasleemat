@@ -1,22 +1,9 @@
-Field,Guidance,LLM_Generated_Value
-Requirements Traceability Matrix,"Generate a JSON array of objects representing the Requirements Traceability Matrix table. Each object must have the exact keys specified below. Generate at least 5 representative entries.
-Rules:
-- 'ID': Unique requirement identifier.
-- 'Requirement': Condition or capability to be met.
-- 'Source': Stakeholder that identified the requirement.
-- 'Category': e.g., functional, nonfunctional.
-- 'Priority': e.g., Level 1, Level 2.
-- 'Business objective': Business objective met by fulfilling the requirement.
-- 'Deliverable': Associated deliverable.
-- 'Verification': Metric used to measure satisfaction.
-- 'Validation': Technique used to validate stakeholder needs.",
-Inter-Requirements Traceability Matrix,"Generate a JSON array of objects representing the Inter-Requirements Traceability Matrix table. Each object must have the exact keys specified below. Generate at least 3 representative entries.
-Rules:
-- 'Business Req ID': Unique business requirement identifier.
-- 'Business Requirement': Condition to satisfy business needs.
-- 'Business Priority': Priority of the business requirement.
-- 'Business Source': Stakeholder who identified the business requirement.
-- 'Technical Req ID': Unique technical requirement identifier.
-- 'Technical Requirement': Technical performance to satisfy a need.
-- 'Technical Priority': Priority of the technical requirement.
-- 'Technical Source': Stakeholder who identified the technical requirement.",
+ID,Requirement,Source,Category,Priority,Business objective,Deliverable,Verification,Validation
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+
+Business Req ID,Business Requirement,Business Priority,Business Source,Technical Req ID,Technical Requirement,Technical Priority,Technical Source
+,,,,,,,
+,,,,,,,
+,,,,,,,
