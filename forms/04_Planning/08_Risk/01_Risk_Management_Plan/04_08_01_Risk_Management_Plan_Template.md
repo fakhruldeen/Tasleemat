@@ -8,7 +8,7 @@ The risk management plan is a component of the project management plan. It descr
 *   Funding to identify, analyze, and respond to risk
 *   Frequency and timing for risk management activities
 *   Risk categories
-*   Stakeholder risk appetite
+*   Stakeholder risk tolerances
 *   Definitions of probability
 *   Definitions of impact by objective
 *   Probability and impact matrix template
@@ -55,7 +55,7 @@ Section Instructions:
 
 **2. Risk Assessment Framework**
 *   **Risk Categories:** Identify categorization groups used to sort and organize risks (e.g. Risk Breakdown Structure).
-*   **Stakeholder Risk Appetite:** Identify the risk thresholds of the organization and key stakeholders.
+*   **Stakeholder Risk Tolerances:** Identify the risk thresholds of the organization and key stakeholders.
 *   **Definitions of Probability:** Document how probability will be measured and defined (e.g. Very High, High, Medium, Low, Very Low).
 *   **Definitions of Impact by Objective:** Document how impact will be measured and defined by objective.
 *   **Probability and Impact Matrix:** Describe the combinations of probability and impact that indicate high, medium, and low risk.
@@ -104,7 +104,7 @@ Section Instructions:
 ### Risk Categories
 [ Add details... ]
 
-### Stakeholder Risk Appetite
+### Stakeholder Risk Tolerances
 [ Add details... ]
 
 ### Definitions of Probability
@@ -119,11 +119,13 @@ Section Instructions:
 
 ### Definitions of Impact by Objective
 
-| Objective | Level / Scale | Definition / Impact |
-| :--- | :--- | :--- |
-| **Cost** | [ Add details... ] | [ Add details... ] |
-| **Schedule** | [ Add details... ] | [ Add details... ] |
-| **Scope / Quality** | [ Add details... ] | [ Add details... ] |
+| Level / Scale | Scope | Quality | Time | Cost |
+| :--- | :--- | :--- | :--- | :--- |
+| **Very High** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **High** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Medium** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Low** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Very Low** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ### Probability and Impact Matrix
 

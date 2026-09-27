@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Populate the Risk Management Plan.\n\nContext & Definition:\nThe risk management plan is a component of the project management plan. It describes how risk management activities will be structured and performed for both threats and opportunities. Typical information includes:\n*   Risk strategy\n*   Methodology\n*   Roles and responsibilities for risk management\n*   Funding to identify, analyze, and respond to risk\n*   Frequency and timing for risk management activities\n*   Risk categories\n*   Stakeholder risk appetite\n*   Definitions of probability\n*   Definitions of impact by objective\n*   Probability and impact matrix template\n*   Methods to track and audit risk management activities\n*   Risk report formats\n\nThe risk management plan can receive information from:\n*   Project charter\n*   Project management plan (any component)\n*   Stakeholder register\n\nIt provides information to:\n*   Cost management plan\n*   Quality management plan\n*   Risk register\n*   Stakeholder engagement plan\n\nThe risk management plan is an input to all the other risk management processes. It describes the approach to all other risk management processes and provides key information needed to conduct those processes successfully.\nThe risk management plan is an output from process 11.1 Plan Risk Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change.\n\nTailoring Tips:\n*   For a small, simple, or short-term project you can use a simplified risk register with a 3 × 3 probability and impact matrix. You would also include risk information in the project status report rather than a separate risk report.\n*   For larger, longer, and more complex projects you will want to develop a robust risk management process, including a more granular probability and impact matrix, quantitative assessments for the schedule and budget baselines, risk audits, and risk reports.\n*   Projects that are using an agile approach will address risk at the start of each iteration and during the retrospective.\n\nAlignment:\nThe risk management plan should be aligned and consistent with the following documents:\n*   Scope management plan\n*   Schedule management plan\n*   Cost management plan\n*   Quality management plan\n*   Resource management plan\n*   Procurement management plan\n*   Stakeholder engagement plan",
+    "_llm_instructions": "Populate the Risk Management Plan.\n\nContext & Definition:\nThe risk management plan is a component of the project management plan. It describes how risk management activities will be structured and performed for both threats and opportunities. Typical information includes:\n*   Risk strategy\n*   Methodology\n*   Roles and responsibilities for risk management\n*   Funding to identify, analyze, and respond to risk\n*   Frequency and timing for risk management activities\n*   Risk categories\n*   Stakeholder risk tolerances\n*   Definitions of probability\n*   Definitions of impact by objective\n*   Probability and impact matrix template\n*   Methods to track and audit risk management activities\n*   Risk report formats\n\nThe risk management plan can receive information from:\n*   Project charter\n*   Project management plan (any component)\n*   Stakeholder register\n\nIt provides information to:\n*   Cost management plan\n*   Quality management plan\n*   Risk register\n*   Stakeholder engagement plan\n\nThe risk management plan is an input to all the other risk management processes. It describes the approach to all other risk management processes and provides key information needed to conduct those processes successfully.\nThe risk management plan is an output from process 11.1 Plan Risk Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change.\n\nTailoring Tips:\n*   For a small, simple, or short-term project you can use a simplified risk register with a 3 × 3 probability and impact matrix. You would also include risk information in the project status report rather than a separate risk report.\n*   For larger, longer, and more complex projects you will want to develop a robust risk management process, including a more granular probability and impact matrix, quantitative assessments for the schedule and budget baselines, risk audits, and risk reports.\n*   Projects that are using an agile approach will address risk at the start of each iteration and during the retrospective.\n\nAlignment:\nThe risk management plan should be aligned and consistent with the following documents:\n*   Scope management plan\n*   Schedule management plan\n*   Cost management plan\n*   Quality management plan\n*   Resource management plan\n*   Procurement management plan\n*   Stakeholder engagement plan",
     "form_name": "RISK MANAGEMENT PLAN",
     "document_reference": "PMO-04.08.01",
     "project_title": "",
@@ -46,7 +46,7 @@
                     "guidance": "Identify categorization groups used to sort and organize risks.",
                     "value": ""
                 },
-                "Stakeholder Risk Appetite": {
+                "Stakeholder Risk Tolerances": {
                     "guidance": "Identify the risk thresholds of the organization and key stakeholders.",
                     "value": ""
                 },
@@ -63,9 +63,11 @@
                     "guidance": "Document how impact will be measured and defined by objective (Cost, Schedule, Quality, etc.).",
                     "value": [
                         {
-                            "Objective": "Cost",
-                            "Level / Scale": "[ Add details... ]",
-                            "Definition / Impact": "[ Add details... ]"
+                            "Level / Scale": "Very High",
+                            "Scope": "[ Add details... ]",
+                            "Quality": "[ Add details... ]",
+                            "Time": "[ Add details... ]",
+                            "Cost": "[ Add details... ]"
                         }
                     ]
                 },

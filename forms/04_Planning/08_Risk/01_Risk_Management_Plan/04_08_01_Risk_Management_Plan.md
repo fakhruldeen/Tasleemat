@@ -16,7 +16,7 @@ Form: RISK MANAGEMENT PLAN (Instructions)
 *   Funding to identify, analyze, and respond to risk
 *   Frequency and timing for risk management activities
 *   Risk categories
-*   Stakeholder risk appetite
+*   Stakeholder risk tolerances
 *   Definitions of probability
 *   Definitions of impact by objective
 *   Probability and impact matrix template
@@ -66,6 +66,6 @@ The risk management plan is an output from process 11.1 Plan Risk Management in 
 *   **Frequency and Timing:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
 **3. Risk Monitoring and Audit**
 *   **Risk Tracking and Audit:** Document how risk activities will be recorded and how risk management processes will be audited.
-*   **Stakeholder Risk Appetite:** Identify the risk thresholds of the organization and key stakeholders.
+*   **Stakeholder Risk Tolerances:** Identify the risk thresholds of the organization and key stakeholders.
 *   **Definitions of Probability & Impact:** Document how probability and impact will be measured and defined (e.g. Very High, High, Medium, Low, Very Low).
 *   **Probability and Impact Matrix:** Describe the combinations of probability and impact that indicate high, medium, and low risk.

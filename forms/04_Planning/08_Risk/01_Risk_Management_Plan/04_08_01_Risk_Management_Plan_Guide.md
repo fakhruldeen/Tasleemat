@@ -22,7 +22,7 @@ The risk management plan is a component of the project management plan. It descr
 *   Funding to identify, analyze, and respond to risk
 *   Frequency and timing for risk management activities
 *   Risk categories
-*   Stakeholder risk appetite
+*   Stakeholder risk tolerances
 *   Definitions of probability
 *   Definitions of impact by objective
 *   Probability and impact matrix template
@@ -71,7 +71,7 @@ The risk management plan should be aligned and consistent with the following doc
 | **Risk categories** | Identify categorization groups used to sort and organize risks. |
 | **Risk management funding** | Document the funding needed to perform the various risk management activities. |
 | **Frequency and timing** | Determine the frequency of conducting formal risk management activities and the timing of any specific activities. |
-| **Stakeholder risk appetite** | Identify the risk thresholds of the organization(s) and key stakeholders. |
+| **Stakeholder risk tolerances** | Identify the risk thresholds of the organization(s) and key stakeholders. |
 | **Risk tracking and audit** | Document how risk activities will be recorded and how risk management processes will be audited. |
 | **Definitions of probability** | Document how probability will be measured and defined. Include the scale used and the definition for each level. |
 | **Definitions of impact by objective** | Document how impact will be measured and defined for either the project as a whole or for each objective. |
