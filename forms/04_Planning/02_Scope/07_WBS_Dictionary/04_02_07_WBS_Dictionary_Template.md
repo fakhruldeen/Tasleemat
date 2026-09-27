@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,138 +9,61 @@
 
 ---
 
-### Work package name
+### Work Package Details
+
+* **Code of Account:** [ Add details... ]
+* **Work Package Name:** [ Add details... ]
+
+---
+
+### Description of Work
 <!-- Enter a brief description of the work package deliverable from the WBS. -->
 
 > [ Add details... ]
 
 ---
 
-### Code of account
-<!-- Enter the code of account from the WBS. -->
-
-> [ Add details... ]
-
----
-
-### Milestones
-<!-- List any milestones associated with the work package. -->
-
-> [ Add details... ]
-
----
-
-### Due dates
-<!-- List the due dates for milestones associated with the work package. -->
-
-> [ Add details... ]
-
----
-
-### ID
-<!-- Enter a unique activity identifier—usually an extension of the WBS code of accounts. -->
-
-> [ Add details... ]
-
----
-
-### Activity
-<!-- Describe the activity from the activity list or the schedule. -->
-
-> [ Add details... ]
-
----
-
-### Team resource
-<!-- Identify the resources, usually from the resource requirements. -->
-
-> [ Add details... ]
-
----
-
-### Labor hours
-<!-- Enter the total effort required. -->
-
-> [ Add details... ]
-
----
-
-### Labor rate
-<!-- Enter the labor rate, usually from cost estimates. -->
-
-> [ Add details... ]
-
----
-
-### Labor total
-<!-- Multiply the effort hours times the labor rate. -->
-
-> [ Add details... ]
-
----
-
-### Material units
-<!-- Enter the amount of material required, usually from the resource requirements. -->
-
-> [ Add details... ]
-
----
-
-### Material cost
-<!-- Enter the material cost, usually from cost estimates. -->
-
-> [ Add details... ]
-
----
-
-### Material total
-<!-- Multiply the material units times the material cost. -->
-
-> [ Add details... ]
-
----
-
-### Total cost
-<!-- Sum the labor, materials, and any other costs associated with the work package. -->
-
-> [ Add details... ]
-
----
-
-### Quality requirements
+### Quality Requirements
 <!-- Document any quality requirements or metrics associated with the work package. -->
 
 > [ Add details... ]
 
 ---
 
-### Acceptance criteria
+### Acceptance Criteria
 <!-- Describe the acceptance criteria for the deliverable, usually from the scope statement. -->
 
 > [ Add details... ]
 
 ---
 
-### Technical information
+### Technical Information
 <!-- Describe or reference any technical requirements or documentation needed to complete the work package. -->
 
 > [ Add details... ]
 
 ---
 
-### Agreement information
+### Agreement Information
 <!-- Reference any contracts or other agreements that impact the work package. -->
 
 > [ Add details... ]
 
 ---
 
-### resource
-<!-- hours -->
+### Milestones
 
-> [ Add details... ]
+| Milestone | Due Date |
+| :--- | :--- |
+| [ Add details... ] | [ Add details... ] |
 
-> [ Add details... ]
+---
+
+### Activities & Costs
+
+| ID | Activity | Team resource | Labor hours | Labor rate | Labor total | Material units | Material cost | Material total | Total cost |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 

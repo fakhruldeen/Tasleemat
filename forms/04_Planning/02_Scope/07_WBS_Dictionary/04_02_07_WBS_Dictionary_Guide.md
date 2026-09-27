@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: WBS Dictionary
-nav_order: 1
+nav_order: 7
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -17,53 +17,45 @@ This document provides a comprehensive, professional reference to understand the
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **WBS Dictionary**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+A document that provides detailed deliverable, activity, and scheduling information about each component in the work breakdown structure (WBS).
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+While the WBS provides the visual hierarchy, it lacks detailed descriptions of the work. The WBS dictionary prevents misunderstandings by explicitly detailing exactly what work is included in each work package, how it will be verified, what resources are needed, and what it should cost.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Prepared during the **PLANNING Process Group** (Create WBS process) and progressively elaborated as activity and cost information becomes available.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+**Responsibilities:** Developed by the Project Manager with significant input from Control Account Managers and the project team.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• For smaller projects you may not need a WBS dictionary.
+• For projects that do use a WBS dictionary you can tailor the information to be as detailed or as high level as you need. You may just want to list a description of work, the cost estimate, key delivery dates, and assigned resources.
+• For projects that have deliverables outsourced you can consider the WBS dictionary as a mini-statement of work for the outsourced deliverables.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The WBS dictionary should be aligned and consistent with the following documents:
+• Project charter
+• Requirements documentation
+• Project scope statement
+• WBS
+• Activity list
 
 ### 5. How?
-To accurately and professionally complete the **WBS DICTIONARY**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **Work package name:** Enter a brief description of the work package deliverable from the WBS.
-*   **Code of account:** Enter the code of account from the WBS.
-*   **Milestones:** List any milestones associated with the work package.
-*   **Due dates:** List the due dates for milestones associated with the work package.
-*   **ID:** Enter a unique activity identifier—usually an extension of the WBS code of accounts.
-*   **Activity:** Describe the activity from the activity list or the schedule.
-*   **Team resource:** Identify the resources, usually from the resource requirements.
-*   **Labor hours:** Enter the total effort required.
-*   **Labor rate:** Enter the labor rate, usually from cost estimates.
-*   **Labor total:** Multiply the effort hours times the labor rate.
-*   **Material units:** Enter the amount of material required, usually from the resource requirements.
-*   **Material cost:** Enter the material cost, usually from cost estimates.
-*   **Material total:** Multiply the material units times the material cost.
-*   **Total cost:** Sum the labor, materials, and any other costs associated with the work package.
-*   **Quality requirements:** Document any quality requirements or metrics associated with the work package.
-*   **Acceptance criteria:** Describe the acceptance criteria for the deliverable, usually from the scope statement.
-*   **Technical information:** Describe or reference any technical requirements or documentation needed to complete the work package.
-*   **Agreement information:** Reference any contracts or other agreements that impact the work package.
-*   **resource:** hours
+To accurately and professionally complete the **WBS DICTIONARY**, populate the following critical sections for each Work Package:
+*   **Code of account / Name:** Identify the exact component from the WBS.
+*   **Description of Work:** Define the specific work boundary.
+*   **Quality & Acceptance:** Define how the work will be measured and approved.
+*   **Milestones:** Track key dates.
+*   **Activities & Costs:** Break down the specific scheduled activities, required labor/materials, and estimated costs to complete this work package.
 
 ---
 

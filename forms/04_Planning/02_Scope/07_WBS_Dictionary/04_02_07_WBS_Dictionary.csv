@@ -1,20 +1,24 @@
 Field,Guidance,LLM_Generated_Value
-Work package name,Enter a brief description of the work package deliverable from the WBS.,
-Code of account,Enter the code of account from the WBS.,
-Milestones,List any milestones associated with the work package.,
-Due dates,List the due dates for milestones associated with the work package.,
-ID,Enter a unique activity identifier—usually an extension of the WBS code of accounts.,
-Activity,Describe the activity from the activity list or the schedule.,
-Team resource,"Identify the resources, usually from the resource requirements.",
-Labor hours,Enter the total effort required.,
-Labor rate,"Enter the labor rate, usually from cost estimates.",
-Labor total,Multiply the effort hours times the labor rate.,
-Material units,"Enter the amount of material required, usually from the resource requirements.",
-Material cost,"Enter the material cost, usually from cost estimates.",
-Material total,Multiply the material units times the material cost.,
-Total cost,"Sum the labor, materials, and any other costs associated with the work package.",
-Quality requirements,Document any quality requirements or metrics associated with the work package.,
-Acceptance criteria,"Describe the acceptance criteria for the deliverable, usually from the scope statement.",
-Technical information,Describe or reference any technical requirements or documentation needed to complete the work package.,
-Agreement information,Reference any contracts or other agreements that impact the work package.,
-resource,hours,
+Code of Account,Enter the code of account from the WBS.,
+Work Package Name,Enter the name of the work package.,
+Description of Work,Enter a brief description of the work package deliverable from the WBS.,
+Quality Requirements,Document any quality requirements or metrics associated with the work package.,
+Acceptance Criteria,Describe the acceptance criteria for the deliverable.,
+Technical Information,Describe or reference any technical requirements or documentation needed.,
+Agreement Information,Reference any contracts or other agreements that impact the work package.,
+Milestones,"Generate a JSON array of milestones.
+Rules:
+- 'Milestone': Name of milestone.
+- 'Due Date': Due date.",
+Activities & Costs,"Generate a JSON array of activities and costs associated with this work package.
+Rules:
+- 'ID': Unique activity identifier.
+- 'Activity': Description of activity.
+- 'Team resource': Resources required.
+- 'Labor hours': Total effort.
+- 'Labor rate': Rate.
+- 'Labor total': Labor hours x rate.
+- 'Material units': Amount of material.
+- 'Material cost': Material cost.
+- 'Material total': Material units x cost.
+- 'Total cost': Sum of labor, materials, etc.",

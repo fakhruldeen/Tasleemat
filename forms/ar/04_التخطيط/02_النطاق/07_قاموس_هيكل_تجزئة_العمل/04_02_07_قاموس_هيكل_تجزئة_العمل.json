@@ -1,85 +1,95 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج قاموس هيكل تجزئة العمل هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج قاموس هيكل تجزئة العمل هذا بناءً على سياق المشروع. السياق والتعريف: يدعم قاموس هيكل تجزئة العمل (WBS) هيكل تجزئة العمل من خلال توفير تفاصيل حول حسابات التحكم وحزم العمل التي يحتوي عليها. يمكن أن يوفر القاموس معلومات مفصلة حول كل حزمة عمل أو معلومات موجزة على مستوى حساب التحكم. يتم تفصيل قاموس هيكل تجزئة العمل تدريجياً طوال المشروع. المحاذاة: يجب أن يكون قاموس هيكل تجزئة العمل متوافقاً ومتسقاً مع الوثائق التالية:\n• ميثاق المشروع\n• وثائق المتطلبات\n• بيان نطاق المشروع\n• هيكل تجزئة العمل (WBS)\n• قائمة الأنشطة",
     "form_name": "قاموس هيكل تجزئة العمل",
     "document_reference": "PMO-04.02.07",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Work package name": {
-            "guidance": "Enter a brief description of the work package deliverable from the WBS.",
+        "رمز الحساب": {
+            "guidance": "أدخل رمز الحساب من هيكل تجزئة العمل.",
             "value": ""
         },
-        "Code of account": {
-            "guidance": "Enter the code of account from the WBS.",
+        "اسم حزمة العمل": {
+            "guidance": "أدخل اسم حزمة العمل.",
             "value": ""
         },
-        "Milestones": {
-            "guidance": "List any milestones associated with the work package.",
+        "وصف العمل": {
+            "guidance": "أدخل وصفاً موجزاً لتسليم حزمة العمل.",
             "value": ""
         },
-        "Due dates": {
-            "guidance": "List the due dates for milestones associated with the work package.",
+        "متطلبات الجودة": {
+            "guidance": "قم بتوثيق أي متطلبات جودة.",
             "value": ""
         },
-        "ID": {
-            "guidance": "Enter a unique activity identifier—usually an extension of the WBS code of accounts.",
+        "معايير القبول": {
+            "guidance": "صف معايير القبول للتسليم.",
             "value": ""
         },
-        "Activity": {
-            "guidance": "Describe the activity from the activity list or the schedule.",
+        "المعلومات الفنية": {
+            "guidance": "صف أو أشر إلى أي متطلبات فنية.",
             "value": ""
         },
-        "Team resource": {
-            "guidance": "Identify the resources, usually from the resource requirements.",
+        "معلومات الاتفاقية": {
+            "guidance": "أشر إلى أي عقود تؤثر على حزمة العمل.",
             "value": ""
         },
-        "Labor hours": {
-            "guidance": "Enter the total effort required.",
-            "value": ""
+        "المعالم الرئيسية": {
+            "guidance": "قم بإنشاء مصفوفة JSON للمعالم الرئيسية.\nالقواعد:\n- 'المعلم الرئيسي': اسم المعلم.\n- 'تاريخ الاستحقاق': تاريخ الاستحقاق.",
+            "value": [
+                {
+                    "المعلم الرئيسي": "",
+                    "تاريخ الاستحقاق": ""
+                },
+                {
+                    "المعلم الرئيسي": "",
+                    "تاريخ الاستحقاق": ""
+                },
+                {
+                    "المعلم الرئيسي": "",
+                    "تاريخ الاستحقاق": ""
+                }
+            ]
         },
-        "Labor rate": {
-            "guidance": "Enter the labor rate, usually from cost estimates.",
-            "value": ""
-        },
-        "Labor total": {
-            "guidance": "Multiply the effort hours times the labor rate.",
-            "value": ""
-        },
-        "Material units": {
-            "guidance": "Enter the amount of material required, usually from the resource requirements.",
-            "value": ""
-        },
-        "Material cost": {
-            "guidance": "Enter the material cost, usually from cost estimates.",
-            "value": ""
-        },
-        "Material total": {
-            "guidance": "Multiply the material units times the material cost.",
-            "value": ""
-        },
-        "Total cost": {
-            "guidance": "Sum the labor, materials, and any other costs associated with the work package.",
-            "value": ""
-        },
-        "Quality requirements": {
-            "guidance": "Document any quality requirements or metrics associated with the work package.",
-            "value": ""
-        },
-        "Acceptance criteria": {
-            "guidance": "Describe the acceptance criteria for the deliverable, usually from the scope statement.",
-            "value": ""
-        },
-        "Technical information": {
-            "guidance": "Describe or reference any technical requirements or documentation needed to complete the work package.",
-            "value": ""
-        },
-        "Agreement information": {
-            "guidance": "Reference any contracts or other agreements that impact the work package.",
-            "value": ""
-        },
-        "resource": {
-            "guidance": "hours",
-            "value": ""
+        "الأنشطة والتكاليف": {
+            "guidance": "قم بإنشاء مصفوفة JSON للأنشطة والتكاليف.\nالقواعد:\n- 'المعرف (ID)': معرف النشاط.\n- 'النشاط': وصف النشاط.\n- 'موارد الفريق': الموارد المطلوبة.\n- 'ساعات العمل': الجهد الإجمالي.\n- 'معدل أجر العمل': معدل الأجر.\n- 'إجمالي العمل': ساعات العمل في معدل الأجر.\n- 'وحدات المواد': كمية المواد.\n- 'تكلفة المواد': تكلفة المواد.\n- 'إجمالي المواد': وحدات المواد في التكلفة.\n- 'التكلفة الإجمالية': إجمالي التكاليف.",
+            "value": [
+                {
+                    "المعرف (ID)": "",
+                    "النشاط": "",
+                    "موارد الفريق": "",
+                    "ساعات العمل": "",
+                    "معدل أجر العمل": "",
+                    "إجمالي العمل": "",
+                    "وحدات المواد": "",
+                    "تكلفة المواد": "",
+                    "إجمالي المواد": "",
+                    "التكلفة الإجمالية": ""
+                },
+                {
+                    "المعرف (ID)": "",
+                    "النشاط": "",
+                    "موارد الفريق": "",
+                    "ساعات العمل": "",
+                    "معدل أجر العمل": "",
+                    "إجمالي العمل": "",
+                    "وحدات المواد": "",
+                    "تكلفة المواد": "",
+                    "إجمالي المواد": "",
+                    "التكلفة الإجمالية": ""
+                },
+                {
+                    "المعرف (ID)": "",
+                    "النشاط": "",
+                    "موارد الفريق": "",
+                    "ساعات العمل": "",
+                    "معدل أجر العمل": "",
+                    "إجمالي العمل": "",
+                    "وحدات المواد": "",
+                    "تكلفة المواد": "",
+                    "إجمالي المواد": "",
+                    "التكلفة الإجمالية": ""
+                }
+            ]
         }
     }
 }

@@ -1,20 +1,24 @@
-الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
-Work package name,Enter a brief description of the work package deliverable from the WBS.,
-Code of account,Enter the code of account from the WBS.,
-Milestones,List any milestones associated with the work package.,
-Due dates,List the due dates for milestones associated with the work package.,
-ID,Enter a unique activity identifier—usually an extension of the WBS code of accounts.,
-Activity,Describe the activity from the activity list or the schedule.,
-Team resource,"Identify the resources, usually from the resource requirements.",
-Labor hours,Enter the total effort required.,
-Labor rate,"Enter the labor rate, usually from cost estimates.",
-Labor total,Multiply the effort hours times the labor rate.,
-Material units,"Enter the amount of material required, usually from the resource requirements.",
-Material cost,"Enter the material cost, usually from cost estimates.",
-Material total,Multiply the material units times the material cost.,
-Total cost,"Sum the labor, materials, and any other costs associated with the work package.",
-Quality requirements,Document any quality requirements or metrics associated with the work package.,
-Acceptance criteria,"Describe the acceptance criteria for the deliverable, usually from the scope statement.",
-Technical information,Describe or reference any technical requirements or documentation needed to complete the work package.,
-Agreement information,Reference any contracts or other agreements that impact the work package.,
-resource,hours,
+Field,Guidance,LLM_Generated_Value
+رمز الحساب,أدخل رمز الحساب من هيكل تجزئة العمل.,
+اسم حزمة العمل,أدخل اسم حزمة العمل.,
+وصف العمل,أدخل وصفاً موجزاً لتسليم حزمة العمل.,
+متطلبات الجودة,قم بتوثيق أي متطلبات جودة.,
+معايير القبول,صف معايير القبول للتسليم.,
+المعلومات الفنية,صف أو أشر إلى أي متطلبات فنية.,
+معلومات الاتفاقية,أشر إلى أي عقود تؤثر على حزمة العمل.,
+المعالم الرئيسية,"قم بإنشاء مصفوفة JSON للمعالم الرئيسية.
+القواعد:
+- 'المعلم الرئيسي': اسم المعلم.
+- 'تاريخ الاستحقاق': تاريخ الاستحقاق.",
+الأنشطة والتكاليف,"قم بإنشاء مصفوفة JSON للأنشطة والتكاليف.
+القواعد:
+- 'المعرف (ID)': معرف النشاط.
+- 'النشاط': وصف النشاط.
+- 'موارد الفريق': الموارد المطلوبة.
+- 'ساعات العمل': الجهد الإجمالي.
+- 'معدل أجر العمل': معدل الأجر.
+- 'إجمالي العمل': ساعات العمل في معدل الأجر.
+- 'وحدات المواد': كمية المواد.
+- 'تكلفة المواد': تكلفة المواد.
+- 'إجمالي المواد': وحدات المواد في التكلفة.
+- 'التكلفة الإجمالية': إجمالي التكاليف.",
