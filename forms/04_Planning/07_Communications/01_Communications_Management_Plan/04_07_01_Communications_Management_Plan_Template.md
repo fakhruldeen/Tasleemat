@@ -55,10 +55,10 @@ Section Instructions:
 
 ---
 
-### 1. Communication Constraints or Assumptions
+### Communication Constraints or Assumptions
 [ Add details... ]
 
-### 2. Communications Matrix
+### Communications Matrix
 
 | Stakeholder / Group | Information | Method or Media | Time Frame / Frequency | Sender |
 | :--- | :--- | :--- | :--- | :--- |
@@ -66,10 +66,10 @@ Section Instructions:
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-### 3. Communication Guidelines & Resources
+### Communication Guidelines & Resources
 [ Add details... ]
 
-### 4. Glossary of Common Terminology
+### Glossary of Common Terminology
 
 | Term / Acronym | Definition |
 | :--- | :--- |
