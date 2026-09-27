@@ -29,7 +29,7 @@ Form: WBS DICTIONARY (Instructions)
 *   **Due Dates:** List the overarching due dates.
 *   **Description of Work:** Brief description of the deliverable.
 *   **Assumptions and Constraints:** List assumptions and constraints related to this work package.
-*   **Milestones:** Provide a numbered list of milestones.
+*   **Milestones:** Provide a numbered list of milestones formatted as a single markdown string containing list items.
 *   **Activities & Costs:** Generate a Markdown table (Columns: ID, Activity, Team resource, Labor hours, Labor rate, Labor total, Material units, Material cost, Material total, Total cost).
 *   **Quality Requirements:** Document any quality metrics.
 *   **Acceptance Criteria:** Describe how the deliverable will be accepted.
