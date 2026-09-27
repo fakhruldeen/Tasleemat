@@ -22,7 +22,7 @@ An assessment of the amount of time and effort required to complete each project
 ---
 
 ### 2. Why?
-It forms the foundation of the project schedule. By converting effort hours into calendar durations (factoring in resource availability), the project manager can build a realistic schedule baseline and set stakeholder expectations.
+It forms the foundation of the project schedule. By converting effort hours into calendar durations (factoring in resource availability and risk buffers), the project manager can build a realistic schedule baseline and set stakeholder expectations.
 
 ---
 
@@ -32,7 +32,7 @@ Prepared during the **PLANNING Process Group** (Process 6.4 Estimate Activity Du
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager using expert judgment or quantitative methods (Parametric, Analogous, or Three-point estimating) with the project team.
+**Responsibilities:** Developed by the Project Manager using expert judgment or quantitative methods with the project team.
 
 ---
 
@@ -40,8 +40,10 @@ Prepared during the **PLANNING Process Group** (Process 6.4 Estimate Activity Du
 To accurately and professionally complete the **DURATION ESTIMATES**, the responsible party must populate the following critical columns:
 *   **ID:** A unique identifier linking to the WBS or Activity List.
 *   **Activity description:** What specific work needs to be done.
+*   **Estimation Method:** The specific technique used to arrive at the number (e.g., Analogous, Parametric, Three-point/PERT, or Agile Timeboxing).
 *   **Effort hours:** The raw labor time required.
-*   **Duration estimates:** The actual calendar time it will take to finish the work (e.g., 40 effort hours might take a 2-week duration if the resource is only available part-time).
+*   **Contingency Reserve:** Any buffer time explicitly added to manage identified risks or scope ambiguity.
+*   **Duration estimates:** The final actual calendar time it will take to finish the work (e.g., 40 effort hours might take a 2-week duration if the resource is only available part-time).
 
 ---
 

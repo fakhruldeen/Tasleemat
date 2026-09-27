@@ -25,5 +25,7 @@ Form: DURATION ESTIMATES (Instructions)
 **Columns Definition:**
 *   **ID:** Unique identifier for the activity or work package.
 *   **Activity description:** A description of the work that needs to be done.
+*   **Estimation Method:** The technique used to calculate the duration (e.g., Parametric, Analogous, Three-point, Expert Judgment).
 *   **Effort hours:** The amount of labor it will take to accomplish the work; usually shown in hours, but may be shown in days.
-*   **Duration estimates:** The length of time it will take to accomplish the work; usually shown in days, but may be shown in weeks or months.
+*   **Contingency Reserve:** Buffer time added to account for identified schedule risks or uncertainty.
+*   **Duration estimates:** The total length of time it will take to accomplish the work (including reserves); usually shown in days, but may be shown in weeks or months.
