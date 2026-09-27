@@ -1,63 +1,63 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج ورقة عمل تقدير التكلفة هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة جداول التقدير الكمي الأربعة.",
     "form_name": "ورقة عمل تقدير التكلفة",
     "document_reference": "PMO-04.04.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات ورقة عمل تقدير التكلفة": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** Unique identifier, such as the WBS ID or activity ID\n- **Parametric estimates:** Cost variable Enter the cost estimating driver, such as hours, square feet, gallons, or some other quantifiable measure. Example: Square feet\n- **Cost per unit:** Record the cost per unit. Example: $9.50\n- **Number of units:** Enter the number of units. Example: 36\n- **Cost estimate:** Multiply the number of units times the cost per unit to calculate the estimate. Example: $9.50 x 36 = $342\n- **Analogous estimates:** Previous activity Enter a description of the previous activity. Example: Build a 160 square foot deck.\n- **Previous cost:** Document the cost of the previous activity. Example: $5,000\n- **Current activity:** Describe how the current activity is different. Example: Build a 200 square foot deck.\n- **Multiplier:** Divide the current activity by the previous activity to get a multiplier. Example: 200/160 = 1.25\n- **Most likely cost:** Determine a most likely cost estimate. Most likely estimates assume that there will be some cost fluctuations but nothing out of the ordinary. Example: $5,000\n- **Pessimistic cost:** Determine a pessimistic cost estimate. Pessimistic estimates assume there are significant risks that will materialize and cause cost overruns. Example: $7,500\n- **Weighting equation:** Weight the three estimates and divide. The most common method of weighting is the beta distribution, where c = cost: cE = ( cO + c4M + cP ) /6\n- **(:** \n- **):** \n- **Example: 4,000 + 4 ( 5,000 ) /6:**",
+        "التقديرات المعامِلية": {
+            "guidance": "مصفوفة التقديرات المعامِلية",
             "value": [
                 {
-                    "ID": "",
-                    "Parametric estimates": "",
-                    "Cost per unit": "",
-                    "Number of units": "",
-                    "Cost estimate": "",
-                    "Analogous estimates": "",
-                    "Previous cost": "",
-                    "Current activity": "",
-                    "Multiplier": "",
-                    "Most likely cost": "",
-                    "Pessimistic cost": "",
-                    "Weighting equation": "",
-                    "(": "",
-                    ")": "",
-                    "Example: 4,000 + 4 ( 5,000 ) /6": ""
-                },
+                    "المُعرّف": "",
+                    "متغير التكلفة": "",
+                    "التكلفة لكل وحدة": "",
+                    "عدد الوحدات": "",
+                    "تقدير التكلفة": ""
+                }
+            ]
+        },
+        "التقديرات التناظرية": {
+            "guidance": "مصفوفة التقديرات التناظرية",
+            "value": [
                 {
-                    "ID": "",
-                    "Parametric estimates": "",
-                    "Cost per unit": "",
-                    "Number of units": "",
-                    "Cost estimate": "",
-                    "Analogous estimates": "",
-                    "Previous cost": "",
-                    "Current activity": "",
-                    "Multiplier": "",
-                    "Most likely cost": "",
-                    "Pessimistic cost": "",
-                    "Weighting equation": "",
-                    "(": "",
-                    ")": "",
-                    "Example: 4,000 + 4 ( 5,000 ) /6": ""
-                },
+                    "المُعرّف": "",
+                    "النشاط السابق": "",
+                    "التكلفة السابقة": "",
+                    "النشاط الحالي": "",
+                    "المُضاعِف": "",
+                    "تقدير التكلفة": ""
+                }
+            ]
+        },
+        "التقدير الثلاثي النقاط": {
+            "guidance": "مصفوفة التقدير الثلاثي النقاط",
+            "value": [
                 {
-                    "ID": "",
-                    "Parametric estimates": "",
-                    "Cost per unit": "",
-                    "Number of units": "",
-                    "Cost estimate": "",
-                    "Analogous estimates": "",
-                    "Previous cost": "",
-                    "Current activity": "",
-                    "Multiplier": "",
-                    "Most likely cost": "",
-                    "Pessimistic cost": "",
-                    "Weighting equation": "",
-                    "(": "",
-                    ")": "",
-                    "Example: 4,000 + 4 ( 5,000 ) /6": ""
+                    "المُعرّف": "",
+                    "التكلفة المتفائلة": "",
+                    "التكلفة الأكثر احتمالاً": "",
+                    "التكلفة المتشائمة": "",
+                    "التكلفة المتوقعة": ""
+                }
+            ]
+        },
+        "التقديرات من أسفل إلى أعلى": {
+            "guidance": "مصفوفة التقديرات من أسفل إلى أعلى",
+            "value": [
+                {
+                    "المُعرّف": "",
+                    "ساعات العمالة": "",
+                    "معدل العمالة": "",
+                    "إجمالي العمالة": "",
+                    "المواد": "",
+                    "الإمدادات": "",
+                    "المعدات": "",
+                    "السفر": "",
+                    "التكاليف المباشرة الأخرى": "",
+                    "التكاليف غير المباشرة": "",
+                    "الاحتياطي": "",
+                    "التقدير": ""
                 }
             ]
         }

@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Cost Estimating Worksheet
-nav_order: 1
+nav_order: 3
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,61 +12,43 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.04.03`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Cost Estimating Worksheet** in alignment with Tasleemat framework.
+This document provides a comprehensive reference to understand the purpose and usage of the **Cost Estimating Worksheet**.
 
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Cost Estimating Worksheet**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
-
----
+A structured worksheet used to calculate cost estimates mathematically using quantitative methods (Parametric, Analogous, Three-Point) or detailed Bottom-Up estimation.
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
-
----
+To provide an auditable, transparent, and mathematically sound basis for project cost estimates. It prevents arbitrary guessing and ensures all components of cost are accounted for.
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Developed during the **PLANNING Process Group** (Process 7.2 Estimate Costs) and continually refined as the project progresses and more details emerge.
 
 ---
 
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+### 4. Estimation Methods
+1. **Parametric Estimating:** Derives costs by multiplying a cost per unit by the number of units (e.g., $100/sq ft x 1,000 sq ft).
+2. **Analogous Estimating:** Derives costs by comparing the current activity to a historical, similar activity and applying a scale multiplier.
+3. **Three-Point Estimating:** Accounts for risk by using Optimistic, Pessimistic, and Most Likely estimates in a Beta Distribution: `(O + 4M + P) / 6`.
+4. **Bottom-Up Estimating:** The most accurate method. Calculates every individual cost element (labor, materials, equipment, indirect costs, reserves) at the lowest WBS level.
 
 ---
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
 
 ### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **ID:** Unique identifier, such as the WBS ID or activity ID
-*   **Parametric estimates:** Cost variable Enter the cost estimating driver, such as hours, square feet, gallons, or some other quantifiable measure. Example: Square feet
-*   **Cost per unit:** Record the cost per unit. Example: $9.50
-*   **Number of units:** Enter the number of units. Example: 36
-*   **Cost estimate:** Multiply the number of units times the cost per unit to calculate the estimate. Example: $9.50 x 36 = $342
-*   **Analogous estimates:** Previous activity Enter a description of the previous activity. Example: Build a 160 square foot deck.
-*   **Previous cost:** Document the cost of the previous activity. Example: $5,000
-*   **Current activity:** Describe how the current activity is different. Example: Build a 200 square foot deck.
-*   **Multiplier:** Divide the current activity by the previous activity to get a multiplier. Example: 200/160 = 1.25
-*   **Most likely cost:** Determine a most likely cost estimate. Most likely estimates assume that there will be some cost fluctuations but nothing out of the ordinary. Example: $5,000
-*   **Pessimistic cost:** Determine a pessimistic cost estimate. Pessimistic estimates assume there are significant risks that will materialize and cause cost overruns. Example: $7,500
-*   **Weighting equation:** Weight the three estimates and divide. The most common method of weighting is the beta distribution, where c = cost: cE = ( cO + c4M + cP ) /6
-*   **(:** 
-*   **):** 
-*   **Example: 4,000 + 4 ( 5,000 ) /6:** 
+The cost estimating worksheet should be aligned and consistent with the following documents:
+• Cost management plan
+• Scope baseline
+• Project schedule
+• Quality management plan
+• Resource requirements
+• Risk register
+• Lessons learned register
 
 ---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_04_03_Cost_Estimating_Worksheet_Template.md)
 * [🤖 LLM Generation Prompt](04_04_03_Cost_Estimating_Worksheet.md)
-* [📊 Data Schema (JSON)](04_04_03_Cost_Estimating_Worksheet.json)
-* [📈 Tabular Data (CSV)](04_04_03_Cost_Estimating_Worksheet.csv)
 
 </div>

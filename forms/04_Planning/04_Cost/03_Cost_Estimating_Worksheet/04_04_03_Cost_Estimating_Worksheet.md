@@ -1,91 +1,30 @@
 ---
 lang: en
-Form: Cost Estimating Worksheet (Instructions)
+Form: COST ESTIMATING WORKSHEET (Instructions)
 ---
 
 # COST ESTIMATING WORKSHEET - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `COST ESTIMATING WORKSHEET`. When asked to populate this form, generate arrays for the tables based on the quantitative methods appropriate for the project.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> A cost estimating worksheet helps develop cost estimates when quantitative methods (Parametric, Analogous, Three-point) or a bottom-up estimate are developed. Bottom-up estimates are detailed estimates done at the work package level.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The cost estimating worksheet should be aligned and consistent with the following documents:
+• Cost management plan
+• Scope baseline
+• Project schedule
+• Quality management plan
+• Resource requirements
+• Risk register
+• Lessons learned register
 
 ---
 
-### ID
-**Instruction:** Unique identifier, such as the WBS ID or activity ID
-
----
-
-### Parametric estimates
-**Instruction:** Cost variable Enter the cost estimating driver, such as hours, square feet, gallons, or some other quantifiable measure. Example: Square feet
-
----
-
-### Cost per unit
-**Instruction:** Record the cost per unit. Example: $9.50
-
----
-
-### Number of units
-**Instruction:** Enter the number of units. Example: 36
-
----
-
-### Cost estimate
-**Instruction:** Multiply the number of units times the cost per unit to calculate the estimate. Example: $9.50 x 36 = $342
-
----
-
-### Analogous estimates
-**Instruction:** Previous activity Enter a description of the previous activity. Example: Build a 160 square foot deck.
-
----
-
-### Previous cost
-**Instruction:** Document the cost of the previous activity. Example: $5,000
-
----
-
-### Current activity
-**Instruction:** Describe how the current activity is different. Example: Build a 200 square foot deck.
-
----
-
-### Multiplier
-**Instruction:** Divide the current activity by the previous activity to get a multiplier. Example: 200/160 = 1.25
-
----
-
-### Most likely cost
-**Instruction:** Determine a most likely cost estimate. Most likely estimates assume that there will be some cost fluctuations but nothing out of the ordinary. Example: $5,000
-
----
-
-### Pessimistic cost
-**Instruction:** Determine a pessimistic cost estimate. Pessimistic estimates assume there are significant risks that will materialize and cause cost overruns. Example: $7,500
-
----
-
-### Weighting equation
-**Instruction:** Weight the three estimates and divide. The most common method of weighting is the beta distribution, where c = cost: cE = ( cO + c4M + cP ) /6
-
----
-
-### (
-**Instruction:** 
-
----
-
-### )
-**Instruction:** 
-
----
-
-### Example: 4,000 + 4 ( 5,000 ) /6
-**Instruction:** 
-
+### Section Generation Instructions
+**1. Parametric Estimates:** Use for activities driven by a quantifiable measure (e.g. square feet). (ID, Cost Variable, Cost Per Unit, Number of Units, Cost Estimate).
+**2. Analogous Estimates:** Use for activities compared to previous similar work. (ID, Previous Activity, Previous Cost, Current Activity, Multiplier, Cost Estimate).
+**3. Three-Point Estimates:** Use to account for uncertainty using beta distribution. (ID, Optimistic Cost, Most Likely Cost, Pessimistic Cost, Expected Cost).
+**4. Bottom-Up Estimates:** Detailed estimates at the work package level. (ID, Labor Hours, Labor Rate, Total Labor, Material, Supplies, Equipment, Travel, Other Direct Costs, Indirect Costs, Reserve, Estimate).
