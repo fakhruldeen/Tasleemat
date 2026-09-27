@@ -1,32 +1,32 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this TEAM CHARTER template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Team Charter.",
     "form_name": "TEAM CHARTER",
     "document_reference": "PMO-04.06.05",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Team values and principles": {
-            "guidance": "List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.",
+            "guidance": "List values and principles.",
             "value": ""
         },
         "Meeting guidelines": {
-            "guidance": "Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc.",
+            "guidance": "Identify meeting productivity guidelines.",
             "value": ""
         },
         "Communication guidelines": {
-            "guidance": "List guidelines used for effective communication. Examples include everyone voices their opinion, no dominating the conversation, no interrupting, not using inflammatory language, etc.",
+            "guidance": "List effective communication guidelines.",
             "value": ""
         },
         "Decision-making process": {
-            "guidance": "Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited.",
+            "guidance": "Describe the decision-making process.",
             "value": ""
         },
         "Conflict resolution process": {
-            "guidance": "Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc.",
+            "guidance": "Describe conflict management process.",
             "value": ""
         },
         "Other agreements": {
-            "guidance": "List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members.",
+            "guidance": "List other agreements.",
             "value": ""
         }
     }

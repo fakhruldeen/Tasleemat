@@ -1,5 +1,4 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the Team Charter based on the project context.
 
 Section Instructions:
 *   **Team values and principles:** List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.
@@ -20,43 +19,31 @@ Section Instructions:
 ---
 
 ### Team values and principles
-<!-- List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc. -->
-
 > [ Add details... ]
 
 ---
 
 ### Meeting guidelines
-<!-- Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc. -->
-
 > [ Add details... ]
 
 ---
 
 ### Communication guidelines
-<!-- List guidelines used for effective communication. Examples include everyone voices their opinion, no dominating the conversation, no interrupting, not using inflammatory language, etc. -->
-
 > [ Add details... ]
 
 ---
 
 ### Decision-making process
-<!-- Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited. -->
-
 > [ Add details... ]
 
 ---
 
 ### Conflict resolution process
-<!-- Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc. -->
-
 > [ Add details... ]
 
 ---
 
 ### Other agreements
-<!-- List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members. -->
-
 > [ Add details... ]
 
 ---
