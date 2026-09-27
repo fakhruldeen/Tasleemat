@@ -1,17 +1,32 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this WORK BREAKDOWN STRUCTURE template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this WORK BREAKDOWN STRUCTURE template based on the provided project context. Context & Definition: The work breakdown structure (WBS) is used to decompose all the work of the project. It begins at the project level and is successively broken down into finer levels of detail. The lowest level, a work package, represents a discrete deliverable that can be decomposed into activities to produce the deliverable. The WBS is an output from the process 5.4 Create WBS in the PMBOK® Guide – Sixth Edition. Alignment: The WBS should be aligned and consistent with the following documents:\n• Project charter\n• Requirements documentation\n• Project scope statement\n• WBS dictionary\n• Activity list",
     "form_name": "WORK BREAKDOWN STRUCTURE",
     "document_reference": "PMO-04.02.06",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Control account": {
-            "guidance": "The point where scope, schedule, and cost are integrated and used to measure project performance",
-            "value": ""
-        },
-        "Work package": {
-            "guidance": "The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.",
-            "value": ""
+        "Work Breakdown Structure": {
+            "guidance": "Generate a JSON array of objects representing the Work Breakdown Structure in a hierarchical outline format. Include at least 8 to 12 rows representing different levels.\nRules:\n- 'WBS ID': Hierarchical numeric identifier (e.g., 1.0, 1.1, 1.1.1).\n- 'Element Name': Name of the deliverable.\n- 'Element Type': Categorize as 'Phase', 'Control Account', 'Work Package', etc.\n- 'Description': Brief description of the scope.",
+            "value": [
+                {
+                    "WBS ID": "",
+                    "Element Name": "",
+                    "Element Type": "",
+                    "Description": ""
+                },
+                {
+                    "WBS ID": "",
+                    "Element Name": "",
+                    "Element Type": "",
+                    "Description": ""
+                },
+                {
+                    "WBS ID": "",
+                    "Element Name": "",
+                    "Element Type": "",
+                    "Description": ""
+                }
+            ]
         }
     }
 }

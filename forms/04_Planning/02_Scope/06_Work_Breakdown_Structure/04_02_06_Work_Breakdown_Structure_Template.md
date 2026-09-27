@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,17 +9,12 @@
 
 ---
 
-### Control account
-<!-- The point where scope, schedule, and cost are integrated and used to measure project performance -->
+### Work Breakdown Structure (Outline)
+<!-- The WBS is successively broken down into finer levels of detail. Each work package rolls up to one and only one control account. -->
 
-> [ Add details... ]
-
----
-
-### Work package
-<!-- The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes. -->
-
-> [ Add details... ]
+| WBS ID | Element Name | Element Type | Description |
+| :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
