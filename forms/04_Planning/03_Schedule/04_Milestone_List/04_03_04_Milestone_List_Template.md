@@ -5,22 +5,22 @@
 <h1 align="center">MILESTONE LIST</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- | :--- |  
 
 ---
 
-| Milestone Name | Milestone Description | Type |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| ID | Milestone Name | Milestone Description | Type |
+| :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ### Signatures
 
 | Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
 | **Date:** _________________ | **Date:** _________________ | **Date:** _________________ |

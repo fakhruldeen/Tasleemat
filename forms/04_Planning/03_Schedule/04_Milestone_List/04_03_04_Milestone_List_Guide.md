@@ -38,6 +38,7 @@ Prepared during the **PLANNING Process Group** (Process 6.2 Define Activities). 
 
 ### 5. How?
 To accurately and professionally complete the **MILESTONE LIST**, the responsible party must populate the following critical columns:
+*   **ID:** A unique identifier for the milestone.
 *   **Milestone Name:** The unique name of the milestone event (e.g., "Phase 1 Sign-off").
 *   **Milestone Description:** Details specifying exactly what conditions must be met for this milestone to be considered achieved.
 *   **Type:** Categorization indicating the nature of the milestone (e.g., Internal or External, Interim or Final, Mandatory or Optional).

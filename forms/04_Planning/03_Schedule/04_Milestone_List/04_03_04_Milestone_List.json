@@ -9,16 +9,19 @@
             "guidance": "Generate a JSON array of milestone objects.",
             "value": [
                 {
+                    "ID": "",
                     "Milestone Name": "",
                     "Milestone Description": "",
                     "Type": ""
                 },
                 {
+                    "ID": "",
                     "Milestone Name": "",
                     "Milestone Description": "",
                     "Type": ""
                 },
                 {
+                    "ID": "",
                     "Milestone Name": "",
                     "Milestone Description": "",
                     "Type": ""

@@ -25,6 +25,7 @@ Form: MILESTONE LIST (Instructions)
 **Instruction:** Generate a comprehensive list of project milestones in a table format.
 
 **Columns Definition:**
+*   **ID:** A unique identifier for the milestone.
 *   **Milestone Name:** Milestone name that uniquely defines the milestone.
 *   **Milestone Description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete.
 *   **Type:** A description of the type of milestone, such as Internal/External, Interim/Final, or Mandatory/Optional.
