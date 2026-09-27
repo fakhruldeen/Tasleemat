@@ -61,7 +61,8 @@ The risk management plan is an output from process 11.1 Plan Risk Management in 
 *   **Roles and Responsibilities:** Document roles and responsibilities for various risk management activities.
 **2. Risk Assessment Framework**
 *   **Risk Categories:** Identify categorization groups used to sort and organize risks (e.g. Risk Breakdown Structure).
-*   **Risk Management Funding:** Document the funding needed to perform the various risk management activities. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.
+*   **Risk Management Funding:** Document the funding needed to perform the various risk management activities.
+*   **Contingency Protocols:** Establish protocols for establishing, measuring, and allocating contingency and management reserves.
 *   **Frequency and Timing:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
 **3. Risk Monitoring and Audit**
 *   **Risk Tracking and Audit:** Document how risk activities will be recorded and how risk management processes will be audited.

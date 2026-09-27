@@ -49,7 +49,8 @@ Section Instructions:
 *   **Strategy:** The general approach to managing risk on the project.
 *   **Methodology:** Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used.
 *   **Roles and Responsibilities:** Document roles and responsibilities for various risk management activities.
-*   **Risk Management Funding:** Document the funding needed to perform the various risk management activities. Also establishes protocols for establishing, measuring, and allocating contingency and management reserves.
+*   **Risk Management Funding:** Document the funding needed to perform the various risk management activities.
+*   **Contingency Protocols:** Establish protocols for establishing, measuring, and allocating contingency and management reserves.
 *   **Frequency and Timing:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
 
 **2. Risk Assessment Framework**
@@ -88,6 +89,9 @@ Section Instructions:
 | [ Add details... ] | [ Add details... ] |
 
 ### Risk Management Funding
+[ Add details... ]
+
+### Contingency Protocols
 [ Add details... ]
 
 ### Frequency and Timing
