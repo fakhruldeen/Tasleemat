@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Activity List
-nav_order: 1
+nav_order: 2
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,43 +12,42 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.03.02`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Activity List** in alignment with Tasleemat framework.
+This document provides a comprehensive reference to understand the purpose and usage of the **Activity List**.
 
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Activity List**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+A documented tabulation of schedule activities that shows the activity description, activity identifier, and a sufficiently detailed scope of work description so project team members understand what work is to be performed.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+It breaks down the Work Breakdown Structure (WBS) deliverables into actionable, executable steps. Without this list, project estimates, scheduling, and resource allocations are impossible.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Prepared during the **PLANNING Process Group** (Process 6.2 Define Activities). For adaptive projects, this evolves iteratively.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+**Responsibilities:** Developed by the Project Manager with input from the subject matter experts performing the work.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• For projects that use an adaptive development approach your activity list will evolve as the requirements are added or changed.
+• For projects that use an adaptive development approach you may want to add a column that indicates the planned release or iteration for each activity (which we have included as a standard best-practice field).
 
 ### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **ID:** 
-*   **Unique identifier:** 
-*   **Activity name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
-*   **Description of work:** If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.
+The activity list should be aligned and consistent with the following documents:
+• Milestone list
+• Activity attributes
+• WBS
+• WBS dictionary
+• Product backlog
+• Iteration release plan
 
 ---
 

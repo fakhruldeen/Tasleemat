@@ -1,30 +1,30 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج قائمة الأنشطة هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، وإنشاء مصفوفة من كائنات الأنشطة لجدول 'قائمة الأنشطة' بناءً على السياق. السياق: تحدد قائمة الأنشطة جميع الأنشطة اللازمة لإكمال عمل المشروع. كما تصف الأنشطة بتفاصيل كافية حتى يفهم الشخص الذي يؤدي العمل المتطلبات اللازمة لإكماله بشكل صحيح. قائمة الأنشطة هي مخرج من عملية 6.2 تحديد الأنشطة في الدليل المعرفي لإدارة المشروعات (PMBOK® Guide) - الإصدار السادس.",
     "form_name": "قائمة الأنشطة",
     "document_reference": "PMO-04.03.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات قائمة الأنشطة": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** \n- **Unique identifier:** \n- **Activity name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.\n- **Description of work:** If needed use this field to provide more detail to the activity description, such as a process or method to accomplish the work.",
+        "قائمة الأنشطة": {
+            "guidance": "قم بإنشاء مصفوفة JSON من كائنات الأنشطة التي تمثل الأنشطة المطلوبة.",
             "value": [
                 {
-                    "ID": "",
-                    "Unique identifier": "",
-                    "Activity name": "",
-                    "Description of work": ""
+                    "المُعرّف (ID)": "",
+                    "اسم النشاط": "",
+                    "وصف العمل": "",
+                    "الإصدار / التكرار المخطط له": ""
                 },
                 {
-                    "ID": "",
-                    "Unique identifier": "",
-                    "Activity name": "",
-                    "Description of work": ""
+                    "المُعرّف (ID)": "",
+                    "اسم النشاط": "",
+                    "وصف العمل": "",
+                    "الإصدار / التكرار المخطط له": ""
                 },
                 {
-                    "ID": "",
-                    "Unique identifier": "",
-                    "Activity name": "",
-                    "Description of work": ""
+                    "المُعرّف (ID)": "",
+                    "اسم النشاط": "",
+                    "وصف العمل": "",
+                    "الإصدار / التكرار المخطط له": ""
                 }
             ]
         }
