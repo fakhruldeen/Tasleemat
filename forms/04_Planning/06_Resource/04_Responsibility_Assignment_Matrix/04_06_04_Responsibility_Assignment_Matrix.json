@@ -1,24 +1,27 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Responsibility Assignment Matrix template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Responsibility Assignment Matrix",
+    "_llm_instructions": "Populate the Responsibility Assignment Matrix (RAM) and its Key.",
+    "form_name": "RESPONSIBILITY ASSIGNMENT MATRIX",
     "document_reference": "PMO-04.06.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Responsibility Assignment Matrix Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Work package:** Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.\n- **Resource:** Identify the person, division, or organization that will be working on the project.",
+        "Responsibility Assignment Matrix": {
+            "guidance": "Array of assignments. The 'Work Package / Activity' is the row name, and other key-value pairs map Resource Names to their Participation Level (e.g., R, A, C, I).",
             "value": [
                 {
-                    "Work package": "",
-                    "Resource": ""
-                },
+                    "Work Package / Activity": "",
+                    "Resource 1 Name": "",
+                    "Resource 2 Name": ""
+                }
+            ]
+        },
+        "Participation Key / Legend": {
+            "guidance": "Array defining the participation codes used in the matrix.",
+            "value": [
                 {
-                    "Work package": "",
-                    "Resource": ""
-                },
-                {
-                    "Work package": "",
-                    "Resource": ""
+                    "Code": "R",
+                    "Role": "Responsible",
+                    "Description": "Does the work to complete the task."
                 }
             ]
         }

@@ -1,26 +1,36 @@
 ---
 lang: en
-Form: Responsibility Assignment Matrix (Instructions)
+Form: RESPONSIBILITY ASSIGNMENT MATRIX (Instructions)
 ---
 
 # RESPONSIBILITY ASSIGNMENT MATRIX - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RESPONSIBILITY ASSIGNMENT MATRIX` (RAM). When asked to populate this form, generate the matrix mapping resources to work packages.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> The responsibility assignment matrix (RAM) shows the intersection of work packages and resources. Generally, RAMs are used to show the different levels of participation on a work package by various team members rather than physical resources. RAMs can indicate different types of participation depending on the needs of the project. Some common types include: Accountable, Responsible, Consulted, Resource, Informed, Sign-off. The RAM always should include a key that explains what each of the levels of participation entails. It is progressively elaborated as more information about the scope and the resource requirements is known.
+>
+> **Inputs:**
+> The responsibility assignment matrix can receive information from:
+* Scope baseline
+* Requirements documentation
+* Stakeholder register
+>
+> **Tailoring Tips:**
+> * Tailor the types of participation appropriate for your project. Some projects require “sign-off” of specific deliverables, whereas others use the term “approve.”
+* Determine the appropriate level to record information on the RAM. Large projects with multiple vendors and large deliverables often use the RAM as the intersection of the WBS and the OBS (organizational breakdown structure). Small projects may use it at the deliverable or activity level to help enter schedule information.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The RAM should be aligned and consistent with the following documents:
+> * Work breakdown structure
+* Requirements documentation
+* Resource requirements
+* Procurement documents (RFP, RFQ, etc.)
 
 ---
 
-### Work package
-**Instruction:** Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.
-
----
-
-### Resource
-**Instruction:** Identify the person, division, or organization that will be working on the project.
-
+### Section Generation Instructions
+*   **Work package:** Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.
+*   **Resource Columns:** Identify the person, division, or organization that will be working on the project. Assign their participation level (e.g., R, A, C, I).
+*   **Key / Legend:** Explain the participation codes used in the matrix (e.g., R = Responsible, A = Accountable).
