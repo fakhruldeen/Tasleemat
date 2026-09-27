@@ -1,8 +1,33 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Network Diagram template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Network Diagram",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties. Provide the dependency table array and the valid Mermaid syntax for the diagram. Context: The network diagram is a visual display of the relationship between schedule elements. The purpose is to visually depict the types of relationships (FS, SS, FF, SF) and any modifications such as leads or lags between components. It is an output from process 6.3 Sequence Activities in the PMBOK® Guide – Sixth Edition.",
+    "form_name": "NETWORK DIAGRAM",
     "document_reference": "PMO-04.03.05",
     "project_title": "",
     "date_prepared": "",
-    "fields": {}
+    "fields": {
+        "Dependencies": {
+            "guidance": "Generate a JSON array of the node edges/dependencies.",
+            "value": [
+                {
+                    "Predecessor": "",
+                    "Relationship & Lead/Lag": "",
+                    "Successor": ""
+                },
+                {
+                    "Predecessor": "",
+                    "Relationship & Lead/Lag": "",
+                    "Successor": ""
+                },
+                {
+                    "Predecessor": "",
+                    "Relationship & Lead/Lag": "",
+                    "Successor": ""
+                }
+            ]
+        },
+        "Mermaid Syntax": {
+            "guidance": "Generate the valid Mermaid graph syntax (e.g. graph LR...) representing the dependencies.",
+            "value": "graph LR\n  A[Activity A] -->|FS| B[Activity B]"
+        }
+    }
 }
