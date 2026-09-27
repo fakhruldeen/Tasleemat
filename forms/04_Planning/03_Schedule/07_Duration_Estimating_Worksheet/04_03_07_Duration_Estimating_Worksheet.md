@@ -1,6 +1,8 @@
 ---
 lang: en
 Form: DURATION ESTIMATING WORKSHEET (Instructions)
+> **CRITICAL RULE:** A single project will likely use multiple estimation methods, but **each individual activity should only be estimated using ONE method**. Do not duplicate the same activity ID across different tables. Place each activity in the single table that best fits its estimation approach.
+
 ---
 
 # DURATION ESTIMATING WORKSHEET - LLM GENERATION GUIDE
