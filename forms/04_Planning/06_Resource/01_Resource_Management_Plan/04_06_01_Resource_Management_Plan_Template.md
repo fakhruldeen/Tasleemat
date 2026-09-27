@@ -26,12 +26,15 @@ Section Instructions:
 ## 1. Team Resource Management
 
 ### 1.1 Team member identification
-> [ Add details... ]
+| Role | Number | Skill Level |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ### 1.2 Team member acquisition
 > [ Add details... ]
 
-### 1.3 Team member management
+### 1.3 Team member management and release
 > [ Add details... ]
 
 ---
@@ -45,11 +48,11 @@ flowchart TD
 
 ---
 
-## 3. Roles and Responsibilities
-| Role | Authority | Responsibility | Qualifications | Competencies |
-| :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 3. Roles, Responsibilities, and Authority
+| Role | Responsibility | Authority |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -69,7 +72,10 @@ flowchart TD
 ## 5. Physical Resource Management
 
 ### 5.1 Physical resource identification
-> [ Add details... ]
+| Resource | Amount | Grade |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ### 5.2 Physical resource acquisition
 > [ Add details... ]

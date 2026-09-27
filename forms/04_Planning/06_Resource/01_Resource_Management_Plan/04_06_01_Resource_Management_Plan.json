@@ -2,15 +2,33 @@
     "_llm_instructions": "Populate the Resource Management Plan.",
     "form_name": "RESOURCE MANAGEMENT PLAN",
     "fields": {
-        "Roles and Responsibilities": {
-            "guidance": "Array of roles.",
+        "Team member identification": {
+            "guidance": "Table identifying Role, Number, and Skill Level.",
             "value": [
                 {
                     "Role": "",
-                    "Authority": "",
+                    "Number": "",
+                    "Skill Level": ""
+                }
+            ]
+        },
+        "Roles, Responsibilities, and Authority": {
+            "guidance": "Table identifying Role, Responsibility, and Authority.",
+            "value": [
+                {
+                    "Role": "",
                     "Responsibility": "",
-                    "Qualifications": "",
-                    "Competencies": ""
+                    "Authority": ""
+                }
+            ]
+        },
+        "Physical resource identification": {
+            "guidance": "Table identifying Resource, Amount, and Grade.",
+            "value": [
+                {
+                    "Resource": "",
+                    "Amount": "",
+                    "Grade": ""
                 }
             ]
         }
