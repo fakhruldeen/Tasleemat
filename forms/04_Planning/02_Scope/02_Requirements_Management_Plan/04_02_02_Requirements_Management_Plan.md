@@ -21,6 +21,11 @@ Form: REQUIREMENTS MANAGEMENT PLAN (Instructions)
 
 ---
 
+### Roles and Responsibilities
+**Instruction:** Identify the key roles and their specific responsibilities regarding requirements management (e.g., who collects requirements, who maintains the traceability matrix). Use lists where appropriate.
+
+---
+
 ### Requirements collection
 **Instruction:** Describe how requirements will be collected or elicited (e.g., brainstorming, interviewing, observation). Use lists where appropriate.
 
@@ -56,6 +61,11 @@ Form: REQUIREMENTS MANAGEMENT PLAN (Instructions)
 
 ---
 
+### Requirements tracing
+**Instruction:** Describe the ongoing execution process of tracing requirements throughout the project lifecycle to ensure all requirements are addressed and met. Use lists where appropriate.
+
+---
+
 ### Requirements tracking
 **Instruction:** Describe how often and what techniques will be used to track progress on requirements. Use lists where appropriate.
 
@@ -73,3 +83,13 @@ Form: REQUIREMENTS MANAGEMENT PLAN (Instructions)
 
 ### Requirements configuration management
 **Instruction:** Describe the configuration management system that will be used to control requirements, documentation, the change management process, and authorization levels. Use lists where appropriate.
+
+---
+
+### Test and evaluation strategy
+**Instruction:** Document the test and evaluation strategy that will be used to ensure deliverables meet the agreed-upon requirements. Use lists where appropriate.
+
+---
+
+### Backlog management
+**Instruction:** Describe how the product or project backlog will be used to manage, prioritize, and track requirements, especially in agile or adaptive environments. Use lists where appropriate.

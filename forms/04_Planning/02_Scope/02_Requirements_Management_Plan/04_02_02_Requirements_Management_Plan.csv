@@ -1,4 +1,5 @@
 Field,Guidance,LLM_Generated_Value
+Roles and Responsibilities,"Identify the key roles and their specific responsibilities regarding requirements management (e.g., who collects requirements, who maintains the traceability matrix). Use lists where appropriate.",
 Requirements collection,"Describe how requirements will be collected or elicited (e.g., brainstorming, interviewing, observation). Use lists where appropriate.",
 Requirements analysis,"Describe how requirements will be analyzed for prioritization, categorization, and impact. Use lists where appropriate.",
 Requirements categories,"Identify categories for requirements such as business, stakeholder, quality, etc. Use lists where appropriate.",
@@ -6,7 +7,10 @@ Requirements documentation,"Define how requirements will be documented (e.g., sp
 Requirements prioritization,Identify the prioritization approach for requirements (non-negotiable vs. nice-to-have). Use lists where appropriate.,
 Requirements metrics,Document the metrics that requirements will be measured against. Use lists where appropriate.,
 Requirements traceability structure,Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. Use lists where appropriate.,
+Requirements tracing,Describe the ongoing execution process of tracing requirements throughout the project lifecycle to ensure all requirements are addressed and met. Use lists where appropriate.,
 Requirements tracking,Describe how often and what techniques will be used to track progress on requirements. Use lists where appropriate.,
 Requirements reporting,Describe how reporting on requirements will be conducted and the frequency of such reporting. Use lists where appropriate.,
 Requirements validation,"Identify the various methods that will be used to validate requirements such as inspection, audits, demonstration, testing, etc. Use lists where appropriate.",
 Requirements configuration management,"Describe the configuration management system that will be used to control requirements, documentation, the change management process, and authorization levels. Use lists where appropriate.",
+Test and evaluation strategy,Document the test and evaluation strategy that will be used to ensure deliverables meet the agreed-upon requirements. Use lists where appropriate.,
+Backlog management,"Describe how the product or project backlog will be used to manage, prioritize, and track requirements, especially in agile or adaptive environments. Use lists where appropriate.",
