@@ -18,13 +18,15 @@ Form: COST MANAGEMENT PLAN (Instructions)
 
 ---
 
-### Section Generation Instructions
+### Table: Measurement Metrics
+**Instruction:** Generate a 3-column table for the core measurement metrics.
+*   **Units of measure:** Indicate how each type of resource will be measured (staff hours, days, physical units, lump sum).
+*   **Level of precision:** Indicate rounding rules for cost estimates (e.g., rounded to nearest thousand).
+*   **Level of accuracy:** Describe the acceptable variance range for estimates (progressive elaboration).
 
-**1. Units of measure:** Indicate how each type of resource will be measured (staff hours, days, physical units, lump sum).
-**2. Level of precision:** Indicate rounding rules for cost estimates (e.g., rounded to nearest thousand).
-**3. Level of accuracy:** Describe the acceptable variance range for estimates (progressive elaboration).
-**4. Organizational procedure links:** Explain how estimating links to the WBS and company accounting codes.
-**5. Control thresholds:** Define percent deviations from the baseline that trigger corrective/preventive actions.
-**6. Rules of performance measurement:** Identify the WBS level where expenditures are measured. Detail EVM formulas (ETC, EAC) if applicable.
-**7. Cost reporting information and format:** Document required status reports, formats, and frequency.
-**8. Additional details:** Describe strategic funding choices (buy vs lease, borrowing funds).
+### Section Generation Instructions
+**1. Organizational procedure links:** Explain how estimating links to the WBS and company accounting codes.
+**2. Control thresholds:** Define percent deviations from the baseline that trigger corrective/preventive actions.
+**3. Rules of performance measurement:** Identify the WBS level where expenditures are measured. Detail EVM formulas (ETC, EAC) if applicable.
+**4. Cost reporting information and format:** Document required status reports, formats, and frequency.
+**5. Additional details:** Describe strategic funding choices (buy vs lease, borrowing funds).

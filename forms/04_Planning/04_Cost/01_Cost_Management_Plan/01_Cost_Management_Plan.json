@@ -5,17 +5,15 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Units of Measure": {
-            "guidance": "Indicate how resources are measured.",
-            "value": ""
-        },
-        "Level of Precision": {
-            "guidance": "Indicate rounding rules for costs.",
-            "value": ""
-        },
-        "Level of Accuracy": {
-            "guidance": "Acceptable variance range for estimates.",
-            "value": ""
+        "Measurement Metrics Table": {
+            "guidance": "Provide the 3-column table for measurement metrics.",
+            "value": [
+                {
+                    "Units of Measure": "",
+                    "Level of Precision": "",
+                    "Level of Accuracy": ""
+                }
+            ]
         },
         "Organizational Procedure Links": {
             "guidance": "Link to WBS and accounting codes.",

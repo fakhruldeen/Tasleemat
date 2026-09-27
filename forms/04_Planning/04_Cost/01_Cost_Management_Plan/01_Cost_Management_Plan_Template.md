@@ -9,28 +9,24 @@
 
 ---
 
-### 1. Units of Measure
-[ Describe how each type of resource will be measured (e.g., staff hours, days, tons, lump sum). ]
+### Measurement Metrics
+| Units of Measure | Level of Precision | Level of Accuracy |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-### 2. Level of Precision
-[ Indicate whether cost estimates will be rounded to hundreds, thousands, or some other measurement. ]
-
-### 3. Level of Accuracy
-[ Describe the acceptable range (e.g., ±10%) and how accuracy will evolve over time via progressive elaboration. ]
-
-### 4. Organizational Procedure Links
+### 1. Organizational Procedure Links
 [ Describe how cost estimating and reporting follows the WBS and organizational code of accounts. ]
 
-### 5. Control Thresholds
+### 2. Control Thresholds
 [ Indicate the variance thresholds (e.g., % deviation from baseline) that trigger preventive or corrective action. ]
 
-### 6. Rules of Performance Measurement
+### 3. Rules of Performance Measurement
 [ Define how progress/expenditures are measured (e.g., Earned Value Management rules, ETC/EAC equations). ]
 
-### 7. Cost Reporting Information and Format
+### 4. Cost Reporting Information and Format
 [ Document the format and frequency of status and progress reporting for project costs. ]
 
-### 8. Additional Details
+### 5. Additional Details
 [ Describe variables associated with strategic funding choices (make/buy, borrowing vs in-house funding). ]
 
 ---
