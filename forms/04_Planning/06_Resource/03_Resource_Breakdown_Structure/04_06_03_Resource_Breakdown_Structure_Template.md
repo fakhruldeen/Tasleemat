@@ -23,26 +23,26 @@ Section Instructions:
 ---
 
 ### Resource Breakdown Structure (Outline)
-1. **[ Project Name ]**
-   1.1. **People**
-      1.1.1. [ Quantity ] of [ Role 1 ]
-         1.1.1.1. [ Quantity ] of [ Level 1 ]
-         1.1.1.2. [ Quantity ] of [ Level 2 ]
-         1.1.1.3. [ Quantity ] of [ Level 3 ]
-      1.1.2. [ Quantity ] of [ Role 2 ]
-   1.2. **Equipment**
-      1.2.1. [ Quantity ] of [ Type 1 ]
-      1.2.2. [ Quantity ] of [ Type 2 ]
-   1.3. **Materials**
-      1.3.1. [ Quantity ] of [ Material 1 ]
-         1.3.1.1. [ Quantity ] of [ Grade 1 ]
-         1.3.1.2. [ Quantity ] of [ Grade 2 ]
-   1.4. **Supplies**
-      1.4.1. [ Quantity ] of [ Supply 1 ]
-      1.4.2. [ Quantity ] of [ Supply 2 ]
-   1.5. **Locations**
-      1.5.1. [ Location 1 ]
-      1.5.2. [ Location 2 ]
+* 1. **[ Project Name ]**
+  * 1.1. **People**
+    * 1.1.1. [ Quantity ] of [ Role 1 ]
+      * 1.1.1.1. [ Quantity ] of [ Level 1 ]
+      * 1.1.1.2. [ Quantity ] of [ Level 2 ]
+      * 1.1.1.3. [ Quantity ] of [ Level 3 ]
+    * 1.1.2. [ Quantity ] of [ Role 2 ]
+  * 1.2. **Equipment**
+    * 1.2.1. [ Quantity ] of [ Type 1 ]
+    * 1.2.2. [ Quantity ] of [ Type 2 ]
+  * 1.3. **Materials**
+    * 1.3.1. [ Quantity ] of [ Material 1 ]
+      * 1.3.1.1. [ Quantity ] of [ Grade 1 ]
+      * 1.3.1.2. [ Quantity ] of [ Grade 2 ]
+  * 1.4. **Supplies**
+    * 1.4.1. [ Quantity ] of [ Supply 1 ]
+    * 1.4.2. [ Quantity ] of [ Supply 2 ]
+  * 1.5. **Locations**
+    * 1.5.1. [ Location 1 ]
+    * 1.5.2. [ Location 2 ]
 
 ---
 

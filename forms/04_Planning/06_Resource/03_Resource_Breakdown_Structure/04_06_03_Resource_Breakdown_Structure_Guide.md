@@ -42,19 +42,19 @@ The resource breakdown structure should be aligned and consistent with the follo
 ### Document Elements Description
 
 The Resource Breakdown Structure uses a hierarchical numbering outline format. Typically:
-1. **Project**
-   1.1. **People**
-      1.1.1. Quantity of Role 1
-         1.1.1.1. Quantity of Level 1
-         1.1.1.2. Quantity of Level 2
-      1.1.2. Quantity of Role 2
-   1.2. **Equipment**
-      1.2.1. Quantity of Type 1
-   1.3. **Materials**
-      1.3.1. Quantity of Material 1
-         1.3.1.1. Quantity of Grade 1
-   1.4. **Supplies**
-   1.5. **Locations**
+* 1. **Project**
+  * 1.1. **People**
+    * 1.1.1. Quantity of Role 1
+      * 1.1.1.1. Quantity of Level 1
+      * 1.1.1.2. Quantity of Level 2
+    * 1.1.2. Quantity of Role 2
+  * 1.2. **Equipment**
+    * 1.2.1. Quantity of Type 1
+  * 1.3. **Materials**
+    * 1.3.1. Quantity of Material 1
+      * 1.3.1.1. Quantity of Grade 1
+  * 1.4. **Supplies**
+  * 1.5. **Locations**
 
 ---
 
