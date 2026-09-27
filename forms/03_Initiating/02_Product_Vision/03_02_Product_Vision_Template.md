@@ -1,5 +1,12 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Target customer:** The person or group who will buy or use the product.
+*   **Needs:** The needs or requirements that the product will address.
+*   **Product and key attributes:** A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements.
+*   **Key benefit:** Describes why the customer would buy the product.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

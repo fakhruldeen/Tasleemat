@@ -1,5 +1,13 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Data Maturity:** Assessment of data quality, availability, and architecture.
+*   **Technical Infrastructure:** Evaluation of compute, storage, and software capabilities.
+*   **Skills & Expertise:** Availability of required AI and domain expertise.
+*   **Organizational Culture:** Readiness for change and adoption of AI tools.
+*   **Overall Readiness Score:** Summary score or recommendation.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

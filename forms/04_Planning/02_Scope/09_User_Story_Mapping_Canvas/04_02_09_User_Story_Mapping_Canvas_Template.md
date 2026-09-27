@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **User Persona:** Who the user is.
+*   **User Activities (The Backbone):** High-level tasks the user needs to accomplish.
+*   **User Tasks (The Slices):** Specific steps under each activity.
+*   **MVP Release 1:** Stories critical for the first release.
+*   **Future Releases:** Stories planned for later.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

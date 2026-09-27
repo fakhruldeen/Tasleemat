@@ -1,5 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Category:** Enter the category from the change request form. Describe the proposed change.
+*   **Requestor:** Enter the name of the person requesting the change.
+*   **Submission date:** Enter the date the change was submitted.
+*   **Status:** Enter the status as open, pending, closed.
+*   **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.
+*   **ID:** 
+*   **Description of change:** 
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

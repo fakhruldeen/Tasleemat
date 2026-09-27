@@ -1,5 +1,16 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Area audited:** Check the box for the area or areas audited.
+*   **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.
+*   **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
+*   **Defect:** Describe the deficiency or defect.
+*   **Action:** Describe the corrective actions needed to fix the defect.
+*   **Responsible party:** Identify the person assigned to correct the deficiency or defect.
+*   **Due date:** Document the due date.
+*   **Comments:** Provide any additional useful comments about the audit.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

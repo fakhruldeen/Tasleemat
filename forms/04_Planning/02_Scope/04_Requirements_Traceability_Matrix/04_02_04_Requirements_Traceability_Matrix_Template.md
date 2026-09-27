@@ -1,4 +1,9 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Requirements Traceability Matrix:** Generate a Markdown table containing exactly the columns specified below. Generate at least 5 representative requirements tracing entries based on the project context.
+*   **Inter-Requirements Traceability Matrix:** Generate a Markdown table containing exactly the columns specified below. Generate at least 3 representative inter-requirement relationships based on the project context.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Project Overview:** Background and purpose of the project.
+*   **Submission Guidelines:** How and when vendors should submit proposals.
+*   **Technical Requirements:** What the solution must do.
+*   **Evaluation Criteria:** How proposals will be scored.
+*   **Terms and Conditions:** Legal and compliance baselines.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

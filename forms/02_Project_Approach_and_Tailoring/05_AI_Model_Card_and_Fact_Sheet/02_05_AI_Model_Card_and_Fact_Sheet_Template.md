@@ -1,7 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Model Details:** Architecture, version, developer.
+*   **Intended Use:** Primary and secondary use cases.
+*   **Factors:** Demographics or environmental factors affecting performance.
+*   **Metrics:** Accuracy, precision, recall, etc.
+*   **Training Data:** Datasets used to train the model.
+*   **Ethical Considerations:** Potential risks or biases.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

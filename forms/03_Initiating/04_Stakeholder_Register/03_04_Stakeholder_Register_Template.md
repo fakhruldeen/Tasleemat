@@ -1,4 +1,14 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** Unique identifier for the stakeholder (e.g., SH-01).
+*   **Name:** Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.
+*   **Position/Role:** The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.
+*   **Contact information:** How to communicate with the stakeholder, such as their phone number, email address, or physical address.
+*   **Requirements:** High-level needs for the project and/or product.
+*   **Expectations:** Main expectations of the project and/or product.
+*   **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

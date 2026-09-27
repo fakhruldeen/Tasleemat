@@ -1,4 +1,15 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Project life cycle:** Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 4 columns: #, Phase, Key activities, Key Deliverables.
+*   **Phase Reviews and Criteria:** Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 5 columns: #, Phase, Reviews, Entry criteria, Exit criteria.
+*   **Development approaches:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 3 columns: #, Deliverable, Development approach.
+*   **Subsidiary management plans:** List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Change Management, Scope Management, Schedule Management, Requirements Management, Cost Management, Quality Management, Resource Management, Communications Management, Risk Management, Procurement Management, Stakeholder Engagement, Other Plans.
+*   **Scope Variance Thresholds:** Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.
+*   **Schedule Variance Thresholds:** Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.
+*   **Cost Variance Thresholds:** Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.
+*   **Baselines:** Attach all project baselines.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

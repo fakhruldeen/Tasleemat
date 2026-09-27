@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Program Purpose:** High-level justification for the program.
+*   **Program Objectives:** Measurable goals of the program.
+*   **Component Projects:** List of the individual projects within the program.
+*   **Program Benefits:** Expected synergistic benefits.
+*   **Program Manager Authority:** Authority level of the program manager.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Test Summary:** Overview of what was tested.
+*   **Testing Environment:** Where the testing took place.
+*   **Pass/Fail Criteria:** What determined the success.
+*   **Known Defects:** Any non-critical bugs accepted.
+*   **Business Owner Sign-off:** Formal acceptance statement.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

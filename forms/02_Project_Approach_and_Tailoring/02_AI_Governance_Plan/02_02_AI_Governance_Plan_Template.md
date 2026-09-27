@@ -1,5 +1,13 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Ethical Guidelines:** Principles guiding the ethical use of AI on this project.
+*   **Data Privacy & Security:** Protocols for protecting sensitive data used by AI models.
+*   **Bias Mitigation:** Strategies to identify and reduce bias in AI outcomes.
+*   **Compliance Requirements:** Legal or organizational regulations the AI must adhere to.
+*   **Accountability:** Who is responsible for the AI's actions and outputs.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

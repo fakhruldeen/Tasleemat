@@ -1,5 +1,23 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Scope impact:** 
+*   **Very High:** The product does not meet the objectives and is effectively useless
+*   **High:** The product is deficient in multiple essential requirements
+*   **Medium:** The product is deficient in one major requirement or multiple minor requirements
+*   **Low:** The product is deficient in a few minor requirements
+*   **Very Low:** 
+*   **Minimal deviation from requirements:** 
+*   **There is minor deviation in performance:** 
+*   **Cost increase of 10 to 20 percent:** 
+*   **Cost increase of 5 to 10 percent:** 
+*   **Quality impact:** 
+*   **Schedule impact:** 
+*   **Cost impact:** 
+*   **Probability:** 
+*   **Risk rating:** 
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

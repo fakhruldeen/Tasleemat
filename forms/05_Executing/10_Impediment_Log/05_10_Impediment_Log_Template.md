@@ -1,7 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Impediment ID:** Unique ID.
+*   **Date Raised:** When it was identified.
+*   **Description:** What is blocking the team.
+*   **Impact:** How it affects the sprint.
+*   **Owner:** Scrum Master or person resolving it.
+*   **Status:** Open, In Progress, Resolved.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

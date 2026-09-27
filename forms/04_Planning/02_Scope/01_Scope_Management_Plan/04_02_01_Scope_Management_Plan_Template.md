@@ -1,4 +1,17 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Project Scope Statement Preparation:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
+*   **Roles and Responsibilities:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
+*   **WBS:** Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. Document guidelines for establishing control accounts and work packages. Use lists where appropriate.
+*   **Project Scope Statement Preparation:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
+*   **Roles and Responsibilities:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
+*   **WBS Dictionary:** Identify the information that will be documented in the WBS Dictionary and the level of detail required. Use lists where appropriate.
+*   **Scope baseline maintenance:** Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. Use lists where appropriate.
+*   **Deliverable acceptance:** For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off. Use lists where appropriate.
+*   **Scope and requirements integration:** Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur. Use lists where appropriate.
+*   **Project management and business analysis integration:** Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations. Use lists where appropriate.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

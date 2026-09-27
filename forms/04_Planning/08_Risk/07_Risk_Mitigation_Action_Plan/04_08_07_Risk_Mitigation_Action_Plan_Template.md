@@ -1,7 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Risk ID and Title:** Reference to the Risk Register.
+*   **Current Risk Score:** Probability x Impact.
+*   **Mitigation Strategy:** Avoid, Transfer, Mitigate, Accept.
+*   **Detailed Action Steps:** Step by step plan to reduce the risk.
+*   **Resource Requirements:** Budget or people needed to execute the plan.
+*   **Target Risk Score:** Expected score after mitigation.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

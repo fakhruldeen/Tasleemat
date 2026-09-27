@@ -1,4 +1,13 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Project scope description:** Describe the project scope. Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation.
+*   **Project deliverables:** Detail the project deliverables. Project deliverables are progressively elaborated from the project description key deliverables in the project charter.
+*   **Product acceptance criteria:** Define the product acceptance criteria. Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project.
+*   **Project exclusions:** Clearly define what is out of scope for the product and project.
+*   **Project constraints:** List and describe the specific project constraints associated with the project scope that limit the team's options.
+*   **Project assumptions:** List and describe the assumptions associated with the project scope and the potential impact of those assumptions if they prove to be false.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

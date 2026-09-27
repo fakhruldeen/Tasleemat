@@ -1,4 +1,8 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Project Roadmap Entries:** Populate a Markdown table with exactly 4 columns: Project life cycle phases, Major deliverables or events, Significant milestones, Timing and types of reviews. The 'Project life cycle phases' is the name of each life cycle phase. 'Major deliverables or events' include key deliverables, phase gates, key approvals, external events. 'Significant milestones' are the milestones in the project. 'Timing and types of reviews' include management, customer, compliance, or other significant reviews.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

@@ -1,5 +1,11 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Stakeholder changes:** Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.
+*   **Interrelationships:** List any relationships between and among stakeholder groups.
+*   **Stakeholder engagement approach:** Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

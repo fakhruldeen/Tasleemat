@@ -1,7 +1,11 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Definition of Ready (DoR):** Criteria a story must meet before entering a sprint (e.g., clear acceptance criteria, estimated).
+*   **Definition of Done (DoD):** Criteria a story must meet to be considered complete (e.g., coded, tested, documented, approved).
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

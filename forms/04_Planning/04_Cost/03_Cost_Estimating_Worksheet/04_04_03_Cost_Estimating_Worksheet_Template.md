@@ -1,5 +1,23 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** Unique identifier, such as the WBS ID or activity ID
+*   **Parametric estimates:** Cost variable Enter the cost estimating driver, such as hours, square feet, gallons, or some other quantifiable measure. Example: Square feet
+*   **Cost per unit:** Record the cost per unit. Example: $9.50
+*   **Number of units:** Enter the number of units. Example: 36
+*   **Cost estimate:** Multiply the number of units times the cost per unit to calculate the estimate. Example: $9.50 x 36 = $342
+*   **Analogous estimates:** Previous activity Enter a description of the previous activity. Example: Build a 160 square foot deck.
+*   **Previous cost:** Document the cost of the previous activity. Example: $5,000
+*   **Current activity:** Describe how the current activity is different. Example: Build a 200 square foot deck.
+*   **Multiplier:** Divide the current activity by the previous activity to get a multiplier. Example: 200/160 = 1.25
+*   **Most likely cost:** Determine a most likely cost estimate. Most likely estimates assume that there will be some cost fluctuations but nothing out of the ordinary. Example: $5,000
+*   **Pessimistic cost:** Determine a pessimistic cost estimate. Pessimistic estimates assume there are significant risks that will materialize and cause cost overruns. Example: $7,500
+*   **Weighting equation:** Weight the three estimates and divide. The most common method of weighting is the beta distribution, where c = cost: cE = ( cO + c4M + cP ) /6
+*   **(:** 
+*   **):** 
+*   **Example: 4,000 + 4 ( 5,000 ) /6:** 
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

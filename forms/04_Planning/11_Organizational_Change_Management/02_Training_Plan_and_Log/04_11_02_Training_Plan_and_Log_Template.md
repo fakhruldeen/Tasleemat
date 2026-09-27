@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Target Audience:** Who needs training.
+*   **Training Module:** What they are learning.
+*   **Delivery Method:** In-person, webinar, self-paced.
+*   **Date/Schedule:** When training occurs.
+*   **Completion Status:** Number of users completed.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

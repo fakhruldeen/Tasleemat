@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Checklist Item:** e.g., Code deployed, Support manuals written.
+*   **Responsible Party:** Who owns the item.
+*   **Sign-off Signature:** Approval.
+*   **Date:** When completed.
+*   **Notes:** Any handover details.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

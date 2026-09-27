@@ -1,5 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** Enter a unique lesson identifier.
+*   **Category:** Document the category of lesson, such as process, technical, environmental, stakeholder, phase, etc.
+*   **Trigger:** Describe the context, event, or condition that led to the challenge, problem, or beneficial outcome.
+*   **Lesson:** Articulate the lesson that can be passed on to other projects and to the organization.
+*   **Responsible party:** Identify the person who is assigned to implement any changes to ensure the lesson is communicated and distributed.
+*   **Comments:** Document any clarifying comments about the challenge, problem, good practice, or other fields on the form.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

@@ -1,5 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** Enter a unique decision identifier.
+*   **Category:** Document the type of decision, such as technical, project, process, etc.
+*   **Decision:** Provide a detailed description of the decision.
+*   **Responsible party:** Identify the person authorized to make the decision.
+*   **Priority:** Enter the date the decision was made and authorized.
+*   **Comments:** Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

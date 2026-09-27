@@ -1,5 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** 
+*   **A unique identifier:** 
+*   **Summary description:** A brief description of the requirement or need. The description should be no more than one or two sentences.
+*   **Priority:** A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.
+*   **Story:** This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.
+*   **Status:** Indicates if the requirement is not started, in progress, or complete.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

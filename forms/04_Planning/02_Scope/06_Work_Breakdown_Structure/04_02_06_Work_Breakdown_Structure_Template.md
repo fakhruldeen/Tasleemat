@@ -1,4 +1,8 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Work Breakdown Structure:** Generate a Markdown table containing exactly the columns specified below. Build a realistic multi-level hierarchy (e.g., Level 1 -> Control Accounts -> Work Packages) containing at least 8 to 12 rows based on the project scope.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

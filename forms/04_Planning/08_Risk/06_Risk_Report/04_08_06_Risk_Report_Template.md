@@ -1,5 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Executive summary:** A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.
+*   **Overall project risk:** Provide a description of the overall risk of the project, including: • High-level statement of trends • Significant drivers of overall risk • Recommended responses to overall risk
+*   **Individual project risks:** Analyze and summarize information associated with individual project risks, including: • Number of risks in each box of the probability impact matrix • Key metrics • Active risks • Newly closed risks • Risks distribution by category, objective, and score • Most-critical risks and changes since last report • Recommended responses to top risks
+*   **Quantitative analysis:** Summarize the results of quantitative risk analysis, including: • Results from quantitative assessments (S-curve, tornado, etc.) • Probability of meeting key project objectives • Drivers of cost and schedule outcomes • Proposed responses
+*   **Reserve status:** Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.
+*   **Risk audit results (if applicable):** Summarize the results of a risk audit of the risk management processes.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

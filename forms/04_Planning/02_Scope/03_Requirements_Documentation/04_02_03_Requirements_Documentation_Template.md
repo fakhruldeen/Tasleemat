@@ -1,4 +1,8 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Requirements List:** Generate a Markdown table containing exactly the columns specified below. Generate at least 5 representative requirements based on the project context, ensuring they cover various categories (Business, Stakeholder, Solution, Quality).
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

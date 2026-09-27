@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Data Source:** Where the data originates.
+*   **PII Detection:** Does it contain Personally Identifiable Information?
+*   **Consent Management:** How user consent was obtained.
+*   **Data Retention Policy:** How long data is stored and how it's deleted.
+*   **Compliance Alignment:** GDPR, CCPA, or local regulatory alignment.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

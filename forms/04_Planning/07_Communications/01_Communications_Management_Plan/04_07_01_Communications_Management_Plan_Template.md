@@ -1,5 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Stakeholder communication:** requirements The people or the groups of people who need to receive project information and their specific requirements
+*   **Information:** Describe the information to be communicated, including language, format, content, and level of detail.
+*   **Method or media:** Describe how the information will be delivered; for example, email, meetings, web meetings, etc.
+*   **Time frame and frequency:** List how often the information is to be provided and under what circumstances.
+*   **Sender:** Insert the name of the person or the group that will provide the information.
+*   **Communication constraints or:** assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution.
+*   **Glossary of common terminology:** List any terms or acronyms unique to the project or that are used in a unique way.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

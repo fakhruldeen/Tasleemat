@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Change Vision:** Why the human change is necessary.
+*   **Stakeholder Impact Analysis:** How different groups will be affected.
+*   **Communication Strategy:** How changes will be communicated.
+*   **Resistance Management:** How to handle pushback from users.
+*   **Sponsorship Strategy:** How leaders will champion the change.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

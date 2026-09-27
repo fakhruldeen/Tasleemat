@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Metric/KPI:** What is being measured (e.g., Quality, Timeliness).
+*   **Target Score:** Expected performance level.
+*   **Actual Score:** Measured performance.
+*   **Variance:** Difference between target and actual.
+*   **Corrective Action:** Steps to improve if deficient.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

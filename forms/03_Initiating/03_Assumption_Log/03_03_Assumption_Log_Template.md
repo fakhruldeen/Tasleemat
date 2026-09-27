@@ -1,4 +1,17 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** Unique identifier for the assumption or constraint.
+*   **Type:** Specify whether this entry is an "Assumption" or a "Constraint".
+*   **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).
+*   **Description:** A clear, detailed description of the assumption or constraint.
+*   **Impact if invalid:** The potential risk or impact to the project (e.g., cost, schedule, scope) if the assumption proves false or the constraint is breached.
+*   **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not.
+*   **Due date:** The date by which the assumption needs to be validated.
+*   **Actions:** Specific actions that need to be taken to validate the assumption or monitor the constraint.
+*   **Status:** The current status of the assumption (e.g., active, transferred, or closed).
+*   **Comments:** Any additional information, context, or updates.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

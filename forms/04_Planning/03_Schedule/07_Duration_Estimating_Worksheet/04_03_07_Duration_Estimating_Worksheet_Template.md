@@ -1,4 +1,31 @@
-<!-- LLM INSTRUCTIONS: Fill the tables based on the appropriate estimation methods. -->
+<!--  LLM INSTRUCTIONS: Fill the tables based on the appropriate estimation methods.
+
+Section Instructions:
+*   **1. Parametric Estimates:** Calculate duration using effort and resource parameters.
+*   **ID:** Unique identifier.
+*   **Activity description:** A brief description of the work.
+*   **Effort hours:** Amount of labor to accomplish work.
+*   **Resource quantity:** Number of resources assigned.
+*   **Percent available:** % of time resources are available.
+*   **Performance factor:** Productivity factor (1.0 is average).
+*   **Duration estimate:** Effort / (Qty * % Avail * Perf Factor).
+*   **2. Analogous Estimates:** Calculate duration using historical comparisons.
+*   **ID:** Unique identifier.
+*   **Activity description:** A brief description of the work.
+*   **Previous activity:** Description of past similar work.
+*   **Previous duration:** Duration of past work.
+*   **Current activity:** Description of current work.
+*   **Multiplier:** Ratio of current vs previous size/complexity.
+*   **Duration estimate:** Prev Duration * Multiplier.
+*   **3. Three-Point Estimates:** Calculate duration using risk-weighted scenarios (Beta distribution).
+*   **ID:** Unique identifier.
+*   **Activity description:** A brief description of the work.
+*   **Optimistic (tO):** Best-case scenario.
+*   **Most Likely (tM):** Normal scenario.
+*   **Pessimistic (tP):** Worst-case scenario.
+*   **Weighting Equation:** Usually (tO + 4tM + tP) / 6.
+*   **Expected Duration (tE):** The calculated result.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

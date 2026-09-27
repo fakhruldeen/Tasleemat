@@ -1,4 +1,12 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** Unique identifier linking back to the Stakeholder Register (e.g., SH-01).
+*   **Name or Role:** The name or role of the stakeholder being analyzed.
+*   **Interest:** The level of interest the stakeholder has in the project outcomes (e.g., High, Medium, Low).
+*   **Influence:** The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).
+*   **Attitude:** The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

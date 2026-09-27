@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Resource Role/Team:** Skillset or team name.
+*   **Total Available Capacity:** Total hours/FTE available.
+*   **Allocated Capacity:** Hours/FTE already assigned.
+*   **Remaining Capacity:** Available hours/FTE.
+*   **Critical Constraints:** Any bottlenecks or single points of failure.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

@@ -1,5 +1,13 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Problem Statement:** The specific problem the AI will solve.
+*   **AI Pattern/Solution:** The type of AI model or approach (e.g., generative, predictive).
+*   **Data Sources:** Where the data will come from.
+*   **Value Proposition:** The expected ROI or value delivery.
+*   **Key Risks:** Major risks associated with this specific use case.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

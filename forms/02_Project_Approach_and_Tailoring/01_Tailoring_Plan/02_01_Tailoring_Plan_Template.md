@@ -1,5 +1,12 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Process/Artifact:** The standard process or artifact being considered.
+*   **Tailoring Decision:** Added, removed, or modified?
+*   **Justification:** Reasoning for the tailoring decision.
+*   **Approver:** Person who approved the change.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

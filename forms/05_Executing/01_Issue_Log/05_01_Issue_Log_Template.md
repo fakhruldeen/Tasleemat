@@ -1,5 +1,18 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **ID:** Enter a unique issue identifier.
+*   **Type:** Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.
+*   **Issue description:** Provide a detailed description of the issue.
+*   **Priority:** Define the priority, such as urgent, high, medium, or low.
+*   **Impact on objectives:** Identify the project objectives that the issue impacts and the degree of impact.
+*   **Responsible party:** Identify the person who is assigned to resolve the issue.
+*   **Status:** Denote the status of the issue as open or closed.
+*   **Resolution date:** Document the date by which the issue needs to be resolved.
+*   **Final resolution:** Describe how the issue was resolved.
+*   **Comments:** Document any clarifying comments about the issue, resolution, or other fields on the form.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

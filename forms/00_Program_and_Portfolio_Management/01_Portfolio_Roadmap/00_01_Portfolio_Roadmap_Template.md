@@ -1,7 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Program/Project Name:** Name of the initiative.
+*   **Strategic Objective:** Which strategic goal this maps to.
+*   **Start Date:** Expected start quarter/date.
+*   **End Date:** Expected end quarter/date.
+*   **Budget Estimate:** High level budget allocation.
+*   **Status:** Current status.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

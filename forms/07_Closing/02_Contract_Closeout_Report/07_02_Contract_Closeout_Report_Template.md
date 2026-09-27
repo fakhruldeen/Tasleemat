@@ -1,5 +1,17 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Quality:** Describe aspects of product quality that were handled well.
+*   **Schedule:** Describe aspects of the contract schedule that were handled well.
+*   **Cost:** Describe aspects of the contract budget that were handled well.
+*   **Other:** Describe any other aspects of the contract or procurement that were handled well.
+*   **Change ID:** Enter the change identifier from the change log.
+*   **Change:** description Enter the description from the change log.
+*   **Date:** approved Enter the date approved from the change log. Describe the dispute or claim.
+*   **Resolution:** Describe the resolution.
+*   **Date resolved:** Enter the date the dispute or claim was resolved.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

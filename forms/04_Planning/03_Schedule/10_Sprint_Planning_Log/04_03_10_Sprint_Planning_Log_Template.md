@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Sprint Goal:** The overarching goal of the sprint.
+*   **Story ID:** Jira or board reference.
+*   **Story Points:** Estimated effort.
+*   **Assignee:** Who is working on it.
+*   **Acceptance Criteria:** High level criteria for success.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

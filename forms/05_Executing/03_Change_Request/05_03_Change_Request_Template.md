@@ -1,5 +1,18 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Requestor:** The name, and if appropriate, the position of the person requesting the change
+*   **Category:** Check a box to indicate the category of change.
+*   **Description of change:** Describe the proposed change in enough detail to clearly communicate all aspects of the change.
+*   **Justification for proposed change:** Indicate the reason for the change.
+*   **Quality:** Describe the impact of the proposed change on the project or product quality.
+*   **Requirements:** Describe the impact of the proposed change on the project or product requirements.
+*   **Cost:** Describe the impact of the proposed change on the project budget, cost estimates, or funding requirements.
+*   **Schedule:** Describe the impact of the proposed change on the schedule and whether it will change the critical path.
+*   **Project:** documents Describe the impact of the proposed change on each project document.
+*   **Comments:** Provide any comments that will clarify information about the requested change.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

@@ -1,5 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Root cause of variances:** For any work that was not accomplished as scheduled, identify the cause of the variance.
+*   **Funds spent this reporting period:** Record funds spent this period. Funds planned to be spent this reporting period Record funds that were planned to be spent this period.
+*   **Planned corrective of preventive action:** Identify any actions needed to recover cost, schedule, or quality variances or prevent future variances. Activities planned for next reporting period List all activities scheduled for next period, including work to be started, continued, or completed.
+*   **Costs planned for next reporting period:** Identify funds planned to be expended next period.
+*   **New risks identified:** Identify any new risks that have arisen. New risks should be recorded in the risk register as well.
+*   **Issues:** Identify any new issues that have arisen. New issues should be recorded in the issue log as well.
+*   **Comments:** Document any comments that add relevance to this report.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

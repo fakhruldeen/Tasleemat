@@ -1,7 +1,15 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Dependency ID:** Unique ID.
+*   **Predecessor Project:** Project that must finish first.
+*   **Successor Project:** Project waiting on the predecessor.
+*   **Deliverable/Condition:** What specifically is being waited on.
+*   **Required Date:** When the deliverable is needed.
+*   **Status:** On track, Delayed, etc.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

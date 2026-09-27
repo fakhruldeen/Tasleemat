@@ -1,5 +1,12 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Business Need:** Identify the problem or opportunity.
+*   **Analysis of Situation:** Describe the current state, future state, and root causes.
+*   **Recommendation:** The recommended option or approach to address the need.
+*   **Evaluation Criteria:** Metrics used to measure success.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

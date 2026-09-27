@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Scope of Work:** Detailed description of vendor work.
+*   **Period of Performance:** Start and end dates.
+*   **Deliverables Schedule:** Specific milestones and due dates.
+*   **Applicable Standards:** Technical or quality standards to adhere to.
+*   **Acceptance Criteria:** How the buyer will accept the deliverables.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

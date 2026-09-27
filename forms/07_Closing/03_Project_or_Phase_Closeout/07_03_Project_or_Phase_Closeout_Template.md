@@ -1,5 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Project description:** Provide a summary level description of the project.
+*   **Quality:** Describe the quality objectives and criteria needed to achieve the planned benefits of the project. Document the specific and measurable criteria needed to meet the product and project quality objectives. Enter the verification and validation information from the product acceptance form.
+*   **Variances:** Document the time and cost objectives and the final completion date and final expenditures. Explain any variances.
+*   **Benefits management:** Describe how the final product, service, or result achieved the benefits the project was undertaken to address.
+*   **Business needs:** Describe how the final product, service, or result achieved the business needs identified in the business plan.
+*   **Risks and issues:** Summarize any significant risks or issues, or the overall risk exposure, and describe the response and resolution strategies.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

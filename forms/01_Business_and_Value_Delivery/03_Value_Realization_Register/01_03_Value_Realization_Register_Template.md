@@ -1,5 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Benefit ID:** Unique identifier for the benefit.
+*   **Description:** Description of the benefit.
+*   **Owner:** Person accountable for the benefit realization.
+*   **Target Value:** The expected value.
+*   **Actual Value:** The realized value.
+*   **Status:** Status of the benefit realization.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

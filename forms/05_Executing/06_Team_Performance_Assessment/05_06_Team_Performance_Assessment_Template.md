@@ -1,5 +1,23 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Technical performance:** 
+*   **Scope:** Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.
+*   **Quality:** Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.
+*   **Schedule:** Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.
+*   **Cost:** Rate the team’s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.
+*   **Communication:** Rate the team’s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.
+*   **Collaboration:** Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.
+*   **Conflict management:** Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.
+*   **Decision making:** Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.
+*   **Interpersonal competency:** 
+*   **Team morale:** Describe the overall team morale.
+*   **Areas for development:** 
+*   **Area:** List technical or interpersonal areas for development.
+*   **Approach:** Describe the development approach, such as training, mentoring, or coaching.
+*   **Actions:** List the actions necessary to implement the development approach.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

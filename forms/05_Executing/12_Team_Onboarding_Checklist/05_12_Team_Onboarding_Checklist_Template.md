@@ -1,7 +1,13 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Task:** Onboarding activity (e.g. System access granted).
+*   **Assigned To:** Who is responsible.
+*   **Due Date:** When it should be completed.
+*   **Status:** Done/Pending.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

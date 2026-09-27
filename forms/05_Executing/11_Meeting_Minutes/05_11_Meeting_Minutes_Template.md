@@ -1,7 +1,14 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- 
+<!--  
 LLM INSTRUCTIONS:
 Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+
+Section Instructions:
+*   **Meeting Objective:** Purpose of the meeting.
+*   **Attendees:** Who was present.
+*   **Key Discussion Points:** Main topics discussed.
+*   **Decisions Made:** What was agreed upon.
+*   **Action Items:** Tasks, owners, and due dates.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>

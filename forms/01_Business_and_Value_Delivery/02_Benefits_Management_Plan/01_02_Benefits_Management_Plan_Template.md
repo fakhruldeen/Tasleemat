@@ -1,5 +1,13 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Target Benefits:** Expected tangible and intangible value to be gained.
+*   **Strategic Alignment:** How the benefits align with the organization's strategic goals.
+*   **Timeframe:** When the benefits are expected to be realized.
+*   **Metrics:** How the benefits will be measured.
+*   **Risks:** Risks associated with realizing the benefits.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

@@ -1,4 +1,16 @@
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+*   **Activity Entries:** Repeat the following block of attributes for EVERY activity defined in the Activity List.
+*   **1. General Information
+*   **ID:** Unique identifier.
+*   **Activity Name:** A brief statement starting with a verb summarizing the activity.
+*   **Planned Release / Iteration:** Indicate the planned release or iteration.
+*   **Description of Work:** Detailed requirements.
+
+#### 2. Dependencies & Scheduling:** Generate a table of dependencies.
+*   **Columns:** Predecessor, Predecessor Relationship, Predecessor Lead/Lag, Successor, Successor Relationship, Successor Lead/Lag.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
