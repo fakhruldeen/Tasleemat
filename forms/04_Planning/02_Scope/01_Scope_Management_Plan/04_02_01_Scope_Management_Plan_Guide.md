@@ -53,6 +53,8 @@ The scope management plan should be aligned and consistent with the following do
 ### 5. How?
 To accurately and professionally complete the **SCOPE MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
+*   **Project Scope Statement Preparation:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation.
+*   **Roles and Responsibilities:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables).
 *   **WBS:** Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. The guidelines for establishing control accounts and work packages can also be documented in this section.
 *   **WBS Dictionary:** Identify the information that will be documented in the WBS Dictionary and the level of detail required.
 *   **Scope baseline maintenance:** Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained.

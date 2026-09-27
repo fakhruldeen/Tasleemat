@@ -21,8 +21,28 @@ Form: SCOPE MANAGEMENT PLAN (Instructions)
 
 ---
 
+### Project Scope Statement Preparation
+**Instruction:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
+
+---
+
+### Roles and Responsibilities
+**Instruction:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
+
+---
+
 ### WBS
 **Instruction:** Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. Document guidelines for establishing control accounts and work packages. Use lists where appropriate.
+
+---
+
+### Project Scope Statement Preparation
+**Instruction:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
+
+---
+
+### Roles and Responsibilities
+**Instruction:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
 
 ---
 

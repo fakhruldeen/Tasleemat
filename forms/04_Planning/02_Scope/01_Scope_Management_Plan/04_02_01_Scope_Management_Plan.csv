@@ -1,4 +1,6 @@
 Field,Guidance,LLM_Generated_Value
+Project Scope Statement Preparation,Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.,
+Roles and Responsibilities,"Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.",
 WBS,"Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. Document guidelines for establishing control accounts and work packages. Use lists where appropriate.",
 WBS Dictionary,Identify the information that will be documented in the WBS Dictionary and the level of detail required. Use lists where appropriate.,
 Scope baseline maintenance,Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. Use lists where appropriate.,

@@ -9,8 +9,36 @@
 
 ---
 
+### Project Scope Statement Preparation
+<!-- Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### Roles and Responsibilities
+<!-- Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). -->
+
+> [ Provide your detailed response here... ]
+
+---
+
 ### WBS
 <!-- Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. The guidelines for establishing control accounts and work packages can also be documented in this section. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### Project Scope Statement Preparation
+<!-- Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### Roles and Responsibilities
+<!-- Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). -->
 
 > [ Provide your detailed response here... ]
 
