@@ -15,6 +15,42 @@
                 {
                     "RBS Code": "1.1",
                     "Resource Node": "People"
+                },
+                {
+                    "RBS Code": "1.1.1",
+                    "Resource Node": "[ Add details... ]"
+                },
+                {
+                    "RBS Code": "1.2",
+                    "Resource Node": "Equipment"
+                },
+                {
+                    "RBS Code": "1.2.1",
+                    "Resource Node": "[ Add details... ]"
+                },
+                {
+                    "RBS Code": "1.3",
+                    "Resource Node": "Materials"
+                },
+                {
+                    "RBS Code": "1.3.1",
+                    "Resource Node": "[ Add details... ]"
+                },
+                {
+                    "RBS Code": "1.4",
+                    "Resource Node": "Supplies"
+                },
+                {
+                    "RBS Code": "1.4.1",
+                    "Resource Node": "[ Add details... ]"
+                },
+                {
+                    "RBS Code": "1.5",
+                    "Resource Node": "Locations"
+                },
+                {
+                    "RBS Code": "1.5.1",
+                    "Resource Node": "[ Add details... ]"
                 }
             ]
         },

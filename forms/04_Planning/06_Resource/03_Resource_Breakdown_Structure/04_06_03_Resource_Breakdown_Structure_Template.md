@@ -25,49 +25,41 @@ Section Instructions:
 ### Resource Breakdown Structure (Outline)
 * 1. **[ Project Name ]**
   * 1.1. **People**
-    * 1.1.1. [ Quantity ] of [ Role 1 ]
-      * 1.1.1.1. [ Quantity ] of [ Level 1 ]
-      * 1.1.1.2. [ Quantity ] of [ Level 2 ]
-      * 1.1.1.3. [ Quantity ] of [ Level 3 ]
-    * 1.1.2. [ Quantity ] of [ Role 2 ]
+    * 1.1.1. [ Add details... ]
+    * 1.1.2. [ Add details... ]
   * 1.2. **Equipment**
-    * 1.2.1. [ Quantity ] of [ Type 1 ]
-    * 1.2.2. [ Quantity ] of [ Type 2 ]
+    * 1.2.1. [ Add details... ]
+    * 1.2.2. [ Add details... ]
   * 1.3. **Materials**
-    * 1.3.1. [ Quantity ] of [ Material 1 ]
-      * 1.3.1.1. [ Quantity ] of [ Grade 1 ]
-      * 1.3.1.2. [ Quantity ] of [ Grade 2 ]
+    * 1.3.1. [ Add details... ]
+    * 1.3.2. [ Add details... ]
   * 1.4. **Supplies**
-    * 1.4.1. [ Quantity ] of [ Supply 1 ]
-    * 1.4.2. [ Quantity ] of [ Supply 2 ]
+    * 1.4.1. [ Add details... ]
+    * 1.4.2. [ Add details... ]
   * 1.5. **Locations**
-    * 1.5.1. [ Location 1 ]
-    * 1.5.2. [ Location 2 ]
-
----
+    * 1.5.1. [ Add details... ]
+    * 1.5.2. [ Add details... ]
 
 ### Resource Breakdown Structure (Hierarchical Chart)
 ```mermaid
 mindmap
   root((Project))
     People
-      Role_1
-        Level_1
-        Level_2
-      Role_2
+      PlaceholderP1["[ Add details... ]"]
+      PlaceholderP2["[ Add details... ]"]
     Equipment
-      Type_1
-      Type_2
+      PlaceholderE1["[ Add details... ]"]
+      PlaceholderE2["[ Add details... ]"]
     Materials
-      Material_1
-        Grade_1
+      PlaceholderM1["[ Add details... ]"]
+      PlaceholderM2["[ Add details... ]"]
     Supplies
-      Supply_1
+      PlaceholderS1["[ Add details... ]"]
+      PlaceholderS2["[ Add details... ]"]
     Locations
-      Location_1
+      PlaceholderL1["[ Add details... ]"]
+      PlaceholderL2["[ Add details... ]"]
 ```
-
----
 
 ### Signatures
 
