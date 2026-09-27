@@ -12,9 +12,9 @@
 ### Work Breakdown Structure (Outline)
 <!-- The WBS is successively broken down into finer levels of detail. Each work package rolls up to one and only one control account. -->
 
-| WBS ID | Element Name | Element Type | Description |
-| :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| WBS ID | Element Name | Element Type | Description | Control Account ID | Accounting Code |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 

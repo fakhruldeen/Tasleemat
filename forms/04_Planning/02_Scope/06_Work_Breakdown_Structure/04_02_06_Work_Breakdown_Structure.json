@@ -6,25 +6,31 @@
     "date_prepared": "",
     "fields": {
         "Work Breakdown Structure": {
-            "guidance": "Generate a JSON array of objects representing the Work Breakdown Structure in a hierarchical outline format. Include at least 8 to 12 rows representing different levels.\nRules:\n- 'WBS ID': Hierarchical numeric identifier (e.g., 1.0, 1.1, 1.1.1).\n- 'Element Name': Name of the deliverable.\n- 'Element Type': Categorize as 'Phase', 'Control Account', 'Work Package', etc.\n- 'Description': Brief description of the scope.",
+            "guidance": "Generate a JSON array of objects representing the Work Breakdown Structure in a hierarchical outline format. Include at least 8 to 12 rows representing different levels.\nRules:\n- 'WBS ID': Hierarchical numeric identifier (e.g., 1.0, 1.1, 1.1.1).\n- 'Element Name': Name of the deliverable.\n- 'Element Type': Categorize as 'Phase', 'Control Account', 'Work Package', etc.\n- 'Description': Brief description of the scope.\n- 'Control Account ID': Parent control account ID (if applicable).\n- 'Accounting Code': Financial tracking code (if applicable).",
             "value": [
                 {
                     "WBS ID": "",
                     "Element Name": "",
                     "Element Type": "",
-                    "Description": ""
+                    "Description": "",
+                    "Control Account ID": "",
+                    "Accounting Code": ""
                 },
                 {
                     "WBS ID": "",
                     "Element Name": "",
                     "Element Type": "",
-                    "Description": ""
+                    "Description": "",
+                    "Control Account ID": "",
+                    "Accounting Code": ""
                 },
                 {
                     "WBS ID": "",
                     "Element Name": "",
                     "Element Type": "",
-                    "Description": ""
+                    "Description": "",
+                    "Control Account ID": "",
+                    "Accounting Code": ""
                 }
             ]
         }

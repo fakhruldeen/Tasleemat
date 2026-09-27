@@ -29,3 +29,5 @@ Form: WORK BREAKDOWN STRUCTURE (Instructions)
 *   **Element Name:** The concise name of the deliverable or component.
 *   **Element Type:** Categorize the element (e.g., 'Project Phase', 'Major Deliverable', 'Control Account', 'Work Package'). Ensure you include Control Accounts and Work Packages.
 *   **Description:** A very brief description of the element's scope.
+*   **Control Account ID:** If the element is a Work Package, list the ID of the Control Account it rolls up to.
+*   **Accounting Code:** A specific organizational accounting code to track expenditures for this deliverable.

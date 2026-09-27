@@ -57,6 +57,8 @@ To accurately and professionally complete the **WORK BREAKDOWN STRUCTURE**, the 
 *   **Element Name:** Name the deliverables, sub-deliverables, Control Accounts, and Work Packages.
 *   **Element Type:** Define the structural level of the element (e.g., 'Control Account', 'Work Package'). **Control accounts** integrate scope, schedule, and cost. **Work packages** are the lowest level deliverables.
 *   **Description:** Briefly define the scope boundary of that specific element.
+*   **Control Account ID:** Explicitly map Work Packages back to their parent Control Account for reporting.
+*   **Accounting Code:** Align deliverables to specific financial codes to track expenditures (if applicable).
 
 ---
 
