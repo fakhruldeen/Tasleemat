@@ -45,10 +45,13 @@ The risk management plan should be aligned and consistent with the following doc
 *   Stakeholder engagement plan
 
 Section Instructions:
-*   **Strategy & Methodology:** Describe the general approach to managing risk, including tools, approaches, or data sources.
+*   **Strategy:** The general approach to managing risk on the project.
+*   **Methodology:** Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used.
 *   **Roles and Responsibilities:** Document roles and responsibilities for various risk management activities.
 *   **Risk Categories:** Identify categorization groups used to sort and organize risks (e.g. Risk Breakdown Structure).
-*   **Risk Funding, Frequency, and Tracking:** Document funding needed, frequency of activities, and how risk tracking/audits are recorded.
+*   **Risk Management Funding:** Document the funding needed to perform the various risk management activities.
+*   **Frequency and Timing:** Determine the frequency of conducting formal risk management activities and the timing of any specific activities.
+*   **Risk Tracking and Audit:** Document how risk activities will be recorded and how risk management processes will be audited.
 *   **Stakeholder Risk Appetite:** Identify the risk thresholds of the organization and key stakeholders.
 *   **Definitions of Probability & Impact:** Document how probability and impact will be measured and defined (e.g. Very High, High, Medium, Low, Very Low).
 *   **Probability and Impact Matrix:** Describe the combinations of probability and impact that indicate high, medium, and low risk.
@@ -63,7 +66,10 @@ Section Instructions:
 
 ---
 
-### Strategy & Methodology
+### Strategy
+[ Add details... ]
+
+### Methodology
 [ Add details... ]
 
 ### Roles and Responsibilities
@@ -76,7 +82,13 @@ Section Instructions:
 ### Risk Categories
 [ Add details... ]
 
-### Risk Funding, Frequency, and Tracking
+### Risk Management Funding
+[ Add details... ]
+
+### Frequency and Timing
+[ Add details... ]
+
+### Risk Tracking and Audit
 [ Add details... ]
 
 ### Stakeholder Risk Appetite

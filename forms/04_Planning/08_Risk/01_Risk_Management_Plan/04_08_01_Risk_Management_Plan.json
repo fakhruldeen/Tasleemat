@@ -5,8 +5,12 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Strategy & Methodology": {
-            "guidance": "Describe the general approach to managing risk, tools, and methodologies.",
+        "Strategy": {
+            "guidance": "The general approach to managing risk on the project.",
+            "value": ""
+        },
+        "Methodology": {
+            "guidance": "Describe the methodology or approach to the risk management, including tools and data sources.",
             "value": ""
         },
         "Roles and Responsibilities": {
@@ -22,12 +26,20 @@
             "guidance": "Identify categorization groups used to sort and organize risks.",
             "value": ""
         },
-        "Risk Funding, Frequency, and Tracking": {
-            "guidance": "Document funding needed, frequency of activities, and how risk tracking/audits are recorded.",
+        "Risk Management Funding": {
+            "guidance": "Document the funding needed to perform the various risk management activities.",
+            "value": ""
+        },
+        "Frequency and Timing": {
+            "guidance": "Determine the frequency of conducting formal risk management activities.",
             "value": ""
         },
         "Stakeholder Risk Appetite": {
             "guidance": "Identify the risk thresholds of the organization and key stakeholders.",
+            "value": ""
+        },
+        "Risk Tracking and Audit": {
+            "guidance": "Document how risk activities will be recorded and audited.",
             "value": ""
         },
         "Definitions of Probability": {
