@@ -78,6 +78,7 @@ To accurately and professionally complete the **REQUIREMENTS TRACEABILITY MATRIX
 * [📄 Printable Template (Markdown)](04_02_04_Requirements_Traceability_Matrix_Template.md)
 * [🤖 LLM Generation Prompt](04_02_04_Requirements_Traceability_Matrix.md)
 * [📊 Data Schema (JSON)](04_02_04_Requirements_Traceability_Matrix.json)
-* [📈 Tabular Data (CSV)](04_02_04_Requirements_Traceability_Matrix.csv)
+* [📈 Tabular Data - Traceability Matrix (CSV)](04_02_04_Requirements_Traceability_Matrix.csv)
+* [📈 Tabular Data - Inter-Requirements Matrix (CSV)](04_02_04_Inter-Requirements_Traceability_Matrix.csv)
 
 </div>
