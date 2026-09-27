@@ -1,8 +1,82 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Requirements Traceability Matrix template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Requirements Traceability Matrix",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUIREMENTS TRACEABILITY MATRIX template based on the provided project context. Context & Definition: A requirements traceability matrix is used to track the various attributes of requirements throughout the project life cycle. It uses information from the requirements documentation and traces how those requirements are addressed through other aspects of the project. An inter-requirements traceability matrix can be used to trace the relationship between categories of requirements (e.g., Business vs Technical). The requirements traceability matrix is an output from the process 5.2 Collect Requirements in the PMBOK® Guide – Sixth Edition. Alignment: The requirements traceability matrix should be aligned and consistent with the following documents:\n• Development approach\n• Requirements management plan\n• Requirements documentation\n• Release and iteration plan",
+    "form_name": "REQUIREMENTS TRACEABILITY MATRIX",
     "document_reference": "PMO-04.02.04",
     "project_title": "",
     "date_prepared": "",
-    "fields": {}
+    "fields": {
+        "Requirements Traceability Matrix": {
+            "guidance": "Generate a JSON array of objects representing the Requirements Traceability Matrix table. Each object must have the exact keys specified below. Generate at least 5 representative entries.\nRules:\n- 'ID': Unique requirement identifier.\n- 'Requirement': Condition or capability to be met.\n- 'Source': Stakeholder that identified the requirement.\n- 'Category': e.g., functional, nonfunctional.\n- 'Priority': e.g., Level 1, Level 2.\n- 'Business objective': Business objective met by fulfilling the requirement.\n- 'Deliverable': Associated deliverable.\n- 'Verification': Metric used to measure satisfaction.\n- 'Validation': Technique used to validate stakeholder needs.",
+            "value": [
+                {
+                    "ID": "",
+                    "Requirement": "",
+                    "Source": "",
+                    "Category": "",
+                    "Priority": "",
+                    "Business objective": "",
+                    "Deliverable": "",
+                    "Verification": "",
+                    "Validation": ""
+                },
+                {
+                    "ID": "",
+                    "Requirement": "",
+                    "Source": "",
+                    "Category": "",
+                    "Priority": "",
+                    "Business objective": "",
+                    "Deliverable": "",
+                    "Verification": "",
+                    "Validation": ""
+                },
+                {
+                    "ID": "",
+                    "Requirement": "",
+                    "Source": "",
+                    "Category": "",
+                    "Priority": "",
+                    "Business objective": "",
+                    "Deliverable": "",
+                    "Verification": "",
+                    "Validation": ""
+                }
+            ]
+        },
+        "Inter-Requirements Traceability Matrix": {
+            "guidance": "Generate a JSON array of objects representing the Inter-Requirements Traceability Matrix table. Each object must have the exact keys specified below. Generate at least 3 representative entries.\nRules:\n- 'Business Req ID': Unique business requirement identifier.\n- 'Business Requirement': Condition to satisfy business needs.\n- 'Business Priority': Priority of the business requirement.\n- 'Business Source': Stakeholder who identified the business requirement.\n- 'Technical Req ID': Unique technical requirement identifier.\n- 'Technical Requirement': Technical performance to satisfy a need.\n- 'Technical Priority': Priority of the technical requirement.\n- 'Technical Source': Stakeholder who identified the technical requirement.",
+            "value": [
+                {
+                    "Business Req ID": "",
+                    "Business Requirement": "",
+                    "Business Priority": "",
+                    "Business Source": "",
+                    "Technical Req ID": "",
+                    "Technical Requirement": "",
+                    "Technical Priority": "",
+                    "Technical Source": ""
+                },
+                {
+                    "Business Req ID": "",
+                    "Business Requirement": "",
+                    "Business Priority": "",
+                    "Business Source": "",
+                    "Technical Req ID": "",
+                    "Technical Requirement": "",
+                    "Technical Priority": "",
+                    "Technical Source": ""
+                },
+                {
+                    "Business Req ID": "",
+                    "Business Requirement": "",
+                    "Business Priority": "",
+                    "Business Source": "",
+                    "Technical Req ID": "",
+                    "Technical Requirement": "",
+                    "Technical Priority": "",
+                    "Technical Source": ""
+                }
+            ]
+        }
+    }
 }

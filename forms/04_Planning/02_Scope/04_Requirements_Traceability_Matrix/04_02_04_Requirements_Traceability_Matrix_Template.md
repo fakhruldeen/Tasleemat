@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -9,6 +8,22 @@
 | :--- | :--- | :--- |  
 
 ---
+
+### Requirements Traceability Matrix
+<!-- Trace requirements to project objectives, WBS deliverables, metrics, and validation. -->
+
+| ID | Requirement | Source | Category | Priority | Business objective | Deliverable | Verification | Validation |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+### Inter-Requirements Traceability Matrix
+<!-- Trace the relationship between categories of requirements (e.g., Business vs Technical). -->
+
+| Business Req ID | Business Requirement | Business Priority | Business Source | Technical Req ID | Technical Requirement | Technical Priority | Technical Source |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 

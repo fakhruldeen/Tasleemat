@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Requirements Traceability Matrix
-nav_order: 1
+nav_order: 4
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -22,7 +22,7 @@ A grid that links product requirements from their origin to the deliverables tha
 ---
 
 ### 2. Why?
-Ensures each requirement adds business value and helps manage changes to the product scope.
+It helps ensure that each requirement adds business value by linking it to the business and project objectives. It provides a means to track requirements throughout the project life cycle.
 
 ---
 
@@ -32,18 +32,45 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+**Responsibilities:** Developed by the Project Manager or Business Analyst.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• For complex projects you may need to invest in requirements management software to help manage and track requirements. Using a paper form is usually only helpful for small projects or when tracking requirements at a high level.
+• For projects with one or more vendors you may want to add a field indicating which organization is accountable for meeting each requirement.
+• Consider an outline format with the business requirement at a parent level and technical requirement and specifications subordinate to the business requirement.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The requirements traceability matrix should be aligned and consistent with the following documents:
+• Development approach
+• Requirements management plan
+• Requirements documentation
+• Release and iteration plan
 
 ### 5. How?
-To accurately and professionally complete the **Requirements Traceability Matrix**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **REQUIREMENTS TRACEABILITY MATRIX**, the responsible party must populate the following critical table columns based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+**Requirements Traceability Matrix:**
+*   **ID:** Enter a unique requirement identifier.
+*   **Requirement:** Document the condition or capability that must be met.
+*   **Source:** The stakeholder that identified the requirement.
+*   **Category:** Categorize the requirement.
+*   **Priority:** Prioritize the requirement category.
+*   **Business objective:** List the business objective met by fulfilling the requirement.
+*   **Deliverable:** Identify the deliverable that is associated with the requirement.
+*   **Verification:** Describe the metric that is used to measure the satisfaction of the requirement.
+*   **Validation:** Describe the technique that will be used to validate the requirement.
+
+**Inter-Requirements Traceability Matrix:**
+*   **Business Req ID:** Enter a unique business requirement identifier.
+*   **Business Requirement:** Document the business requirement.
+*   **Business Priority:** Prioritize the business requirement.
+*   **Business Source:** Document the stakeholder who identified the business requirement.
+*   **Technical Req ID:** Enter a unique technical requirement identifier.
+*   **Technical Requirement:** Document the technical performance requirement.
+*   **Technical Priority:** Prioritize the technical requirement.
+*   **Technical Source:** Document the stakeholder who identified the technical requirement.
 
 ---
 
