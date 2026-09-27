@@ -1,91 +1,50 @@
 ---
 lang: en
-Form: Duration Estimating Worksheet (Instructions)
+Form: DURATION ESTIMATING WORKSHEET (Instructions)
 ---
 
 # DURATION ESTIMATING WORKSHEET - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `DURATION ESTIMATING WORKSHEET`. Generate three JSON arrays corresponding to the Parametric, Analogous, and Three-Point estimating methods.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> A duration estimating worksheet helps develop duration estimates when quantitative methods are used (Parametric, Analogous, or Three-point). It is an input to Duration Estimates and an output from process 6.4 Estimate Activity Duration in the PMBOK® Guide.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The duration estimating worksheet should be aligned and consistent with the following documents:
+• Assumption log
+• Scope baseline
+• Activity list
+• Activity attributes
+• Resource requirements
+• Risk register
 
 ---
 
-### ID
-**Instruction:** 
+### 1. Parametric Estimates
+**Instruction:** Calculate duration using effort and resource parameters.
+*   **ID:** Unique identifier.
+*   **Effort hours:** Amount of labor to accomplish work.
+*   **Resource quantity:** Number of resources assigned.
+*   **Percent available:** % of time resources are available.
+*   **Performance factor:** Productivity factor (1.0 is average).
+*   **Duration estimate:** Effort / (Qty * % Avail * Perf Factor).
 
----
+### 2. Analogous Estimates
+**Instruction:** Calculate duration using historical comparisons.
+*   **ID:** Unique identifier.
+*   **Previous activity:** Description of past similar work.
+*   **Previous duration:** Duration of past work.
+*   **Current activity:** Description of current work.
+*   **Multiplier:** Ratio of current vs previous size/complexity.
+*   **Duration estimate:** Prev Duration * Multiplier.
 
-### Unique identifier
-**Instruction:** 
-
----
-
-### Parametric estimates
-**Instruction:** Effort hours Enter amount of labor it will take to accomplish the work. Usually shown in hours, but may also be shown in days. Example: 150 hours
-
----
-
-### Resource quantity
-**Instruction:** Document the number of resources available. Example: 2 people
-
----
-
-### Percent available
-**Instruction:** Enter amount of time the resources are available. Usually shown as the percent of time available per day or per week. Example: 75 percent of the time
-
----
-
-### Performance factor
-**Instruction:** Estimate a performance factor if appropriate. Generally effort hours are estimated based on the amount of effort it would take the average resource to complete the work. This can be modified if you have a highly skilled resource or someone who has very little experience. The more skilled the resource, the lower the performance factor. For example, an average resource would have a 1.0 performance factor. A highly skilled resource could get the work done faster, so you multiply the effort hours times a performance factor of .8. A less skilled resource will take longer to get the work done, so you would multiply the effort hours times 1.2. Example: A skilled worker with a performance factor of .8
-
----
-
-### Duration estimate
-**Instruction:** Divide the effort hours by the resource quantity times the percent available times the performance factor to determine the length of time it will take to accomplish the work. The equation is: Effort/ ( quantity × percent available × performance factor ) = duration Example: 150/ ( 2 × ⋅75 × ⋅8 ) = 125 hours
-
----
-
-### Analogous estimates
-**Instruction:** Previous activity Enter a description of the previous activity. Example: Build a 160 square foot deck.
-
----
-
-### Previous duration
-**Instruction:** Document the duration of the previous activity. Example: 10 days
-
----
-
-### Current activity
-**Instruction:** Describe how the current activity is different. Example: Build a 200 square foot deck.
-
----
-
-### Multiplier
-**Instruction:** Divide the current activity by the previous activity to get a multiplier. Example: 200/160 = 1.25
-
----
-
-### Most likely duration
-**Instruction:** Determine a most likely duration estimate. Most likely estimates assume that there will be some delays but nothing out of the ordinary. Example: 25 days
-
----
-
-### Pessimistic duration
-**Instruction:** Determine a pessimistic duration estimate. Pessimistic estimates assume there are significant risks that will materialize and cause delays. Example: 36 days
-
----
-
-### Weighting equation
-**Instruction:** Weight the three estimates and divide. The most common method of weighting is the beta distribution: tE = (tO + 4tM + tP)/6 Example: (20 + 4(25) + 36 )/6
-
----
-
-### Expected duration
-**Instruction:** Enter the expected duration based on the beta distribution calculation. Example: 26 days
-
+### 3. Three-Point Estimates
+**Instruction:** Calculate duration using risk-weighted scenarios (Beta distribution).
+*   **ID:** Unique identifier.
+*   **Optimistic (tO):** Best-case scenario.
+*   **Most Likely (tM):** Normal scenario.
+*   **Pessimistic (tP):** Worst-case scenario.
+*   **Weighting Equation:** Usually (tO + 4tM + tP) / 6.
+*   **Expected Duration (tE):** The calculated result.
