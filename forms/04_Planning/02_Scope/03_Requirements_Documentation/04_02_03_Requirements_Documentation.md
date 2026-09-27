@@ -22,4 +22,16 @@ Form: REQUIREMENTS DOCUMENTATION (Instructions)
 ---
 
 ### Requirements List
-**Instruction:** Generate a Markdown table containing the following columns: ID, Requirement, Stakeholder, Category, Priority, Acceptance criteria, Test or verification method, Phase or release, Dependencies, Assumptions & Constraints. Document the condition or capability that must be met by the project. Assign a unique ID. Identify the stakeholder's name or role. Categorize the requirement (e.g., business, quality, solution). Prioritize the requirement (e.g., Level 1, Level 2; must have, nice to have). Define acceptance criteria. Define the test or verification method (e.g., inspection, test, demonstration). Indicate the phase or release. Identify any dependencies or relationships with other requirements. Document any assumptions or constraints. Generate at least 5 representative requirements based on the project context.
+**Instruction:** Generate a Markdown table containing exactly the columns specified below. Generate at least 5 representative requirements based on the project context, ensuring they cover various categories (Business, Stakeholder, Solution, Quality).
+
+**Table Columns & Generation Rules:**
+*   **ID:** Create a unique identifier for the requirement (e.g., REQ-001, REQ-002).
+*   **Requirement:** Clearly articulate the specific condition, capability, or feature that must be met by the product or project to satisfy stakeholder needs.
+*   **Stakeholder:** Identify the name, role, or organization of the stakeholder who requested or owns this requirement.
+*   **Category:** Classify the requirement (e.g., Business, Stakeholder, Solution, Transition, Project, Quality).
+*   **Priority:** Assign a priority level (e.g., High, Medium, Low, or Must Have, Should Have, Nice to Have).
+*   **Acceptance criteria:** Define the specific, measurable criteria that must be met for the stakeholder to approve that the requirement has been fulfilled.
+*   **Test or verification method:** State the method to verify fulfillment (e.g., Inspection, Test, Demonstration, Analysis).
+*   **Phase or release:** Indicate which project phase, sprint, or product release will deliver this requirement.
+*   **Dependencies:** List the IDs of any other requirements that this requirement depends on, or state "None".
+*   **Assumptions & Constraints:** Document any assumptions made or technical/business constraints related to this requirement.

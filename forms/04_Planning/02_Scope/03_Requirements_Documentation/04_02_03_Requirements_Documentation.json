@@ -6,7 +6,7 @@
     "date_prepared": "",
     "fields": {
         "Requirements List": {
-            "guidance": "Generate a JSON array of objects representing the Requirements table. Each object must have the following keys: 'ID', 'Requirement', 'Stakeholder', 'Category', 'Priority', 'Acceptance criteria', 'Test or verification method', 'Phase or release', 'Dependencies', 'Assumptions & Constraints'. Generate at least 5 representative requirements based on the project context.",
+            "guidance": "Generate a JSON array of objects representing the Requirements table. Each object must have the exact keys specified below. Generate at least 5 representative requirements based on the project context, ensuring they cover various categories (Business, Stakeholder, Solution, Quality).\nRules:\n- 'ID': Create a unique identifier for the requirement (e.g., REQ-001).\n- 'Requirement': Clearly articulate the specific condition or capability.\n- 'Stakeholder': Name, role, or organization of the stakeholder.\n- 'Category': Classify the requirement (e.g., Business, Stakeholder, Solution, Quality).\n- 'Priority': Assign a priority level (e.g., High, Medium, Low).\n- 'Acceptance criteria': Specific, measurable criteria that must be met.\n- 'Test or verification method': Method to verify fulfillment (e.g., Inspection, Test).\n- 'Phase or release': Project phase, sprint, or product release.\n- 'Dependencies': IDs of any other requirements that this requirement depends on.\n- 'Assumptions & Constraints': Any assumptions made or technical/business constraints.",
             "value": [
                 {
                     "ID": "",
