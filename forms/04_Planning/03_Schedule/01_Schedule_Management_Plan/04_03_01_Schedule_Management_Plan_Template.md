@@ -11,31 +11,39 @@
 
 ### 1. Methodology & Tools
 
-**Schedule methodology**
+#### Schedule methodology
 <!-- Identify the scheduling methodology that will be used for the project, whether it is critical path, agile, or some other methodology. -->
 > [ Add details... ]
 
-**Scheduling tool(s)**
+#### Scheduling tool(s)
 <!-- Identify the scheduling tool(s) that will be used for the project. Tools can include scheduling software, reporting software, earned value software, etc. -->
+> [ Add details... ]
+
+#### Iterative planning & timeboxing
+<!-- Add information on the level of detail and timing for WBS decomposition based on rolling wave planning. For agile projects, add information on the time box periods for releases, waves, and iterations. -->
 > [ Add details... ]
 
 ---
 
 ### 2. Rules of Measurement
 
-**Level of accuracy**
+#### Level of accuracy
 <!-- Describe the level of accuracy needed for estimates. Indicate the levels of accuracy required as time progresses. -->
 > [ Add details... ]
 
-**Units of measure**
+#### Units of measure
 <!-- Indicate whether duration estimates will be in days, weeks, months, or some other unit of measure. -->
+> [ Add details... ]
+
+#### Performance measurement rules (EVM)
+<!-- Include information on rules for establishing percent complete and the EVM measurement techniques (fixed formula, percent complete, level of effort, etc.). -->
 > [ Add details... ]
 
 ---
 
 ### 3. Variance Thresholds
 
-**Variance thresholds**
+#### Variance thresholds
 <!-- Indicate the measures that determine whether an activity, work package, or the project as a whole is on time, requires preventive action, or is late and requires corrective action. -->
 > [ Add details... ]
 
@@ -43,15 +51,15 @@
 
 ### 4. Communication & Maintenance
 
-**Schedule reporting and format**
+#### Schedule reporting and format
 <!-- Document the schedule information required for status and progress reporting. -->
 > [ Add details... ]
 
-**Organizational procedure links**
+#### Organizational procedure links
 <!-- The schedule outline should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures. -->
 > [ Add details... ]
 
-**Schedule updates**
+#### Schedule updates
 <!-- Document the process for updating the schedule, including update frequency, permissions, and version control. -->
 > [ Add details... ]
 

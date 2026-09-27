@@ -18,26 +18,20 @@ Form: SCHEDULE MANAGEMENT PLAN (Instructions)
 
 ---
 
-### Schedule methodology
-**Instruction:** Identify the scheduling methodology that will be used for the project, whether it is critical path, agile, or some other methodology.
+### 1. Methodology & Tools
+*   **Schedule methodology:** Identify the scheduling methodology that will be used for the project, whether it is critical path, agile, or some other methodology.
+*   **Scheduling tool(s):** Identify the scheduling tool(s) that will be used for the project. Tools can include scheduling software, reporting software, earned value software, etc.
+*   **Iterative planning & timeboxing:** Add information on the level of detail and timing for WBS decomposition based on rolling wave planning. For agile projects, add information on the time box periods for releases, waves, and iterations.
 
-### Scheduling tool(s)
-**Instruction:** Identify the scheduling tool(s) that will be used for the project. Tools can include scheduling software, reporting software, earned value software, etc.
+### 2. Rules of Measurement
+*   **Level of accuracy:** Describe the level of accuracy needed for estimates. Indicate the levels of accuracy required as time progresses (progressive elaboration).
+*   **Units of measure:** Indicate whether duration estimates will be in days, weeks, months, or some other unit of measure.
+*   **Performance measurement rules (EVM):** Include information on rules for establishing percent complete and the EVM measurement techniques (fixed formula, percent complete, level of effort, etc.).
 
-### Level of accuracy
-**Instruction:** Describe the level of accuracy needed for estimates. Indicate the levels of accuracy required as time progresses (progressive elaboration).
+### 3. Variance Thresholds
+*   **Variance thresholds:** Indicate the measures that determine whether an activity, work package, or the project as a whole is on time, requires preventive action, or is late and requires corrective action.
 
-### Units of measure
-**Instruction:** Indicate whether duration estimates will be in days, weeks, months, or some other unit of measure.
-
-### Variance thresholds
-**Instruction:** Indicate the measures that determine whether an activity, work package, or the project as a whole is on time, requires preventive action, or is late and requires corrective action.
-
-### Schedule reporting and format
-**Instruction:** Document the schedule information required for status and progress reporting.
-
-### Organizational procedure links
-**Instruction:** Specify how the schedule outline links to the numbering structure of the WBS or the organization’s code of accounts.
-
-### Schedule updates
-**Instruction:** Document the process for updating the schedule, including update frequency, permissions, and version control.
+### 4. Communication & Maintenance
+*   **Schedule reporting and format:** Document the schedule information required for status and progress reporting.
+*   **Organizational procedure links:** Specify how the schedule outline links to the numbering structure of the WBS or the organization’s code of accounts.
+*   **Schedule updates:** Document the process for updating the schedule, including update frequency, permissions, and version control.
