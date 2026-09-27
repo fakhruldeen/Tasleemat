@@ -1,27 +1,27 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج قائمة المعالم (Milestones) هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
-    "form_name": "قائمة المعالم (Milestones)",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، وإنشاء مصفوفة من الكائنات لجدول 'قائمة المعالم الرئيسية للمشروع' بناءً على السياق. السياق: تحدد قائمة المعالم الرئيسية للمشروع جميع المعالم الرئيسية للمشروع وتصف طبيعة كل منها. يمكن تصنيف المعلم الرئيسي للمشروع على أنه اختياري أو إلزامي، داخلي أو خارجي، مؤقت أو نهائي. قائمة المعالم هي مخرج من عملية 6.2 تحديد الأنشطة في الدليل المعرفي لإدارة المشروعات - الإصدار السادس. يتم تطوير هذه القائمة مرة واحدة ولا يتم تغييرها عادةً إلا في حالة حدوث تغيير كبير في النطاق.",
+    "form_name": "قائمة المعالم الرئيسية للمشروع",
     "document_reference": "PMO-04.03.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات قائمة المعالم (Milestones)": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Milestone name:** Milestone name that uniquely defines the milestone\n- **Milestone description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete\n- **Type:** A description of the type of milestone, such as • Internal or external • Interim or final • Mandatory or optional",
+        "قائمة المعالم الرئيسية للمشروع": {
+            "guidance": "قم بإنشاء مصفوفة بيانات من الكائنات للمعالم الرئيسية للمشروع.",
             "value": [
                 {
-                    "Milestone name": "",
-                    "Milestone description": "",
-                    "Type": ""
+                    "اسم المعلم الرئيسي للمشروع": "",
+                    "وصف المعلم الرئيسي للمشروع": "",
+                    "النوع": ""
                 },
                 {
-                    "Milestone name": "",
-                    "Milestone description": "",
-                    "Type": ""
+                    "اسم المعلم الرئيسي للمشروع": "",
+                    "وصف المعلم الرئيسي للمشروع": "",
+                    "النوع": ""
                 },
                 {
-                    "Milestone name": "",
-                    "Milestone description": "",
-                    "Type": ""
+                    "اسم المعلم الرئيسي للمشروع": "",
+                    "وصف المعلم الرئيسي للمشروع": "",
+                    "النوع": ""
                 }
             ]
         }
