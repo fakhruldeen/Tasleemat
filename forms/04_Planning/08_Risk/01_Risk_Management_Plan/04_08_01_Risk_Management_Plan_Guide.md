@@ -70,6 +70,7 @@ The risk management plan should be aligned and consistent with the following doc
 | **Roles and responsibilities** | Document the roles and responsibilities for various risk management activities. |
 | **Risk categories** | Identify categorization groups used to sort and organize risks. |
 | **Risk management funding** | Document the funding needed to perform the various risk management activities. |
+| **Contingency protocols** | Establish protocols for establishing, measuring, and allocating contingency and management reserves. |
 | **Frequency and timing** | Determine the frequency of conducting formal risk management activities and the timing of any specific activities. |
 | **Stakeholder risk tolerances** | Identify the risk thresholds of the organization(s) and key stakeholders. |
 | **Risk tracking and audit** | Document how risk activities will be recorded and how risk management processes will be audited. |
