@@ -3,7 +3,7 @@
 Section Instructions:
 *   **Parametric Estimates:** Use for activities driven by a quantifiable measure (e.g. square feet). (ID, Cost Variable, Cost Per Unit, Number of Units, Cost Estimate).
 *   **Analogous Estimates:** Use for activities compared to previous similar work. (ID, Previous Activity, Previous Cost, Current Activity, Multiplier, Cost Estimate).
-*   **Three-Point Estimates:** Use to account for uncertainty using beta distribution (cE = (cO + 4cM + cP) / 6). (ID, Optimistic Cost, Most Likely Cost, Pessimistic Cost, Expected Cost).
+*   **Three-Point Estimates:** Use to account for uncertainty using beta distribution (cE = (cO + 4cM + cP) / 6). (ID, Optimistic Cost, Most Likely Cost, Pessimistic Cost, Weighting Equation, Expected Cost).
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -26,14 +26,9 @@ Section Instructions:
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ### Three-Point Estimates
-| ID | Optimistic Cost | Most Likely Cost | Pessimistic Cost | Expected Cost |
-| :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
-### Bottom-Up Estimates
-| ID | Labor Hours | Labor Rate | Total Labor | Material | Supplies | Equipment | Travel | Other Direct Costs | Indirect Costs | Reserve | Estimate |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| ID | Optimistic Cost | Most Likely Cost | Pessimistic Cost | Weighting Equation | Expected Cost |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 

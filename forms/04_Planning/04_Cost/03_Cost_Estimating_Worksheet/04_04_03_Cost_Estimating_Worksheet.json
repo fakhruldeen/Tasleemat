@@ -31,13 +31,14 @@
             ]
         },
         "Three-Point Estimates": {
-            "guidance": "- **ID:** Unique identifier.\n- **Optimistic Cost:** Estimate assuming all goes well.\n- **Most Likely Cost:** Estimate assuming normal fluctuations.\n- **Pessimistic Cost:** Estimate assuming significant risks materialize.\n- **Expected Cost:** cE = ( cO + 4cM + cP ) /6",
+            "guidance": "- **ID:** Unique identifier.\n- **Optimistic Cost:** Estimate assuming all goes well.\n- **Most Likely Cost:** Estimate assuming normal fluctuations.\n- **Pessimistic Cost:** Estimate assuming significant risks materialize.\n- **Weighting Equation:** The equation used to weight the estimates (e.g. cE = (cO + 4cM + cP) / 6).\n- **Expected Cost:** cE = ( cO + 4cM + cP ) /6",
             "value": [
                 {
                     "ID": "",
                     "Optimistic Cost": "",
                     "Most Likely Cost": "",
                     "Pessimistic Cost": "",
+                    "Weighting Equation": "",
                     "Expected Cost": ""
                 }
             ]
