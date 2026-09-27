@@ -10,6 +10,8 @@ nav_order: 7
 ## Tasleemat Forms Guide
 # Project Artifact: Duration Estimating Worksheet
 
+**CRITICAL RULE:** While a project may use multiple methods overall, **each individual activity should only be estimated using ONE method**. Do not duplicate the same activity across the three tables. Choose the single best method for each task.
+
 **Document Reference:** `PMO-04.03.07`
 
 This document provides a comprehensive reference to understand the purpose and usage of the **Duration Estimating Worksheet**.

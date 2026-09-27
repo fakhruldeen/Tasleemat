@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the properties. Provide three arrays representing the three tables. Context: A duration estimating worksheet helps develop duration estimates when quantitative methods are used (Parametric, Analogous, or Three-point). It is an input to Duration Estimates and an output from process 6.4 Estimate Activity Duration in the PMBOK® Guide.",
+    "_llm_instructions": "Fill out the properties. Provide three arrays representing the three tables. CRITICAL RULE: Each individual activity should only be estimated using ONE method. Do not duplicate activity IDs across the tables.",
     "form_name": "DURATION ESTIMATING WORKSHEET",
     "document_reference": "PMO-04.03.07",
     "project_title": "",
@@ -15,7 +15,8 @@
                     "Perf. Factor": "",
                     "Duration Estimate": ""
                 }
-            ]
+            ],
+            "guidance": "Provide the array of estimates. Remember: Do not include activities here if they are already estimated in another table."
         },
         "Analogous Estimates": {
             "value": [
@@ -27,7 +28,8 @@
                     "Multiplier": "",
                     "Duration Estimate": ""
                 }
-            ]
+            ],
+            "guidance": "Provide the array of estimates. Remember: Do not include activities here if they are already estimated in another table."
         },
         "Three-Point Estimates": {
             "value": [
@@ -39,7 +41,8 @@
                     "Weighting Equation": "",
                     "Expected Duration (tE)": ""
                 }
-            ]
+            ],
+            "guidance": "Provide the array of estimates. Remember: Do not include activities here if they are already estimated in another table."
         }
     }
 }
