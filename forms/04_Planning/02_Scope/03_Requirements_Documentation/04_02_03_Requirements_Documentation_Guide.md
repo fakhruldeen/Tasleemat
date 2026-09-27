@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Requirements Documentation
-nav_order: 1
+nav_order: 3
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -17,12 +17,12 @@ This document provides a comprehensive, professional reference to understand the
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Requirements Documentation**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+A formal record of all the identified conditions or capabilities that must be met by the project to satisfy a contract, standard, specification, or other formally imposed documents.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+It assists the project manager in making tradeoff decisions among requirements and in managing stakeholder expectations. Detailed requirements are essential to define the scope baseline.
 
 ---
 
@@ -32,18 +32,35 @@ This artifact is primarily prepared, utilized, and updated during the **PLANNING
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+**Responsibilities:** Developed by the Project Manager or Business Analyst with heavy input from the stakeholders.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• If you are using an agile or adaptive development approach you may want to incorporate information on the release or iteration for each requirement.
+• For a project with a lot of requirements you may want to indicate the relationships between requirements.
+• You can add information about assumptions or constraints associated with requirements.
+• For small and quick adaptive or agile projects, the requirements documentation and backlog can be combined.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The requirements documentation should be aligned and consistent with the following documents:
+• Requirements management plan
+• Benefits management plan
+• Quality management plan
+• Requirements traceability matrix
+• Release plan
 
 ### 5. How?
-To accurately and professionally complete the **Requirements Documentation**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **REQUIREMENTS DOCUMENTATION**, the responsible party must populate the following critical table columns based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **ID:** A unique identifier for the requirement.
+*   **Requirement:** The condition or capability that must be met by the project or be present in the product, service, or result to satisfy a need or expectation of a stakeholder.
+*   **Stakeholder:** Stakeholder’s name, position, or organization.
+*   **Category:** The category of the requirement (e.g., business, stakeholder, solution, transition).
+*   **Priority:** The priority group (e.g., Level 1, Level 2; must have, should have, nice to have).
+*   **Acceptance criteria:** The criteria that must be met for the stakeholder to approve that the requirement has been fulfilled.
+*   **Test or verification method:** The means that will be used to verify that the requirement has been met (e.g., inspection, test, demonstration, analysis).
+*   **Phase or release:** The phase or release in which the requirement will be met.
 
 ---
 

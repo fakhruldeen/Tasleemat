@@ -1,8 +1,24 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Requirements Documentation template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Requirements Documentation",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUIREMENTS DOCUMENTATION template based on the provided project context. Context & Definition: The requirements documentation assists the project manager in making tradeoff decisions among requirements and in managing stakeholder expectations. Requirements will be progressively elaborated as more information about the project becomes available. Requirements documentation is an output from the process 5.2 Collect Requirements in the PMBOK® Guide – Sixth Edition. Alignment: The requirements documentation should be aligned and consistent with the following documents:\n• Requirements management plan\n• Benefits management plan\n• Quality management plan\n• Requirements traceability matrix\n• Release plan",
+    "form_name": "REQUIREMENTS DOCUMENTATION",
     "document_reference": "PMO-04.02.03",
     "project_title": "",
     "date_prepared": "",
-    "fields": {}
+    "fields": {
+        "Requirements List": {
+            "guidance": "Generate a JSON array of objects representing the Requirements table. Each object must have the following keys: 'ID', 'Requirement', 'Stakeholder', 'Category', 'Priority', 'Acceptance criteria', 'Test or verification method', 'Phase or release'. Generate at least 5 representative requirements based on the project context.",
+            "value": [
+                {
+                    "ID": "",
+                    "Requirement": "",
+                    "Stakeholder": "",
+                    "Category": "",
+                    "Priority": "",
+                    "Acceptance criteria": "",
+                    "Test or verification method": "",
+                    "Phase or release": ""
+                }
+            ]
+        }
+    }
 }
