@@ -1,4 +1,9 @@
-Team member identification,Team member acquisition,Team member management,Project organizational chart,Roles and responsibilities,Provide information on the following,Training requirements,Rewards and recognition,Team development,Physical resource identification,Physical resource acquisition,Physical resource management
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
+Field,Guidance,LLM_Generated_Value
+Schedule methodology,"Identify the scheduling methodology that will be used for the project, whether it is critical path, agile, or some other methodology.",
+Scheduling tool(s),"Identify the scheduling tool(s) that will be used for the project. Tools can include scheduling software, reporting software, earned value software, etc.",
+Level of accuracy,Describe the level of accuracy needed for estimates.,
+Units of measure,"Indicate whether duration estimates will be in days, weeks, months, or some other unit of measure.",
+Variance thresholds,"Indicate the measures that determine whether an activity, work package, or the project as a whole is on time, requires preventive action, or is late and requires corrective action.",
+Schedule reporting and format,Document the schedule information required for status and progress reporting.,
+Organizational procedure links,The schedule outline should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures.,
+Schedule updates,"Document the process for updating the schedule, including update frequency, permissions, and version control.",

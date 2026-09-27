@@ -17,46 +17,45 @@ This document provides a comprehensive, professional reference to understand the
 ---
 
 ### 1. What?
-A subsidiary management plan aligned with Tasleemat standards known as the **Schedule Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
+A component of the project management plan that establishes the criteria and the activities for developing, monitoring, and controlling the project schedule.
 
 ---
 
 ### 2. Why?
-To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+It provides guidance and direction on how the project schedule will be managed throughout the project. Without a plan, the team may track time using mismatched units, fail to recognize delays early due to unclear thresholds, or use incompatible software tools.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+This artifact is prepared during the **PLANNING Process Group**. It is developed once and does not usually change.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+**Responsibilities:** Developed by the Project Manager with input from the project team and key stakeholders.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• Add information on the level of detail and timing for WBS decomposition based on rolling wave planning.
+• For projects that use agile, add information on the time box periods for releases, waves, and iterations.
+• For projects that use earned value management, include information on rules for establishing percent complete and the EVM measurement techniques.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The schedule management plan should be aligned and consistent with the following documents:
+• Project charter
+• Cost management plan
 
 ### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **Team member identification:** Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Team member acquisition:** Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures.
-*   **Team member management:** Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer.
-*   **Project organizational chart:** Create a hierarchy chart to show the project reporting and organizational structure.
-*   **Roles and responsibilities:** 
-*   **Provide information on the following:** Role. Identify the role or job title and a brief description of the role. Authority. Define the decision-making, approval, and influence levels for each role. Examples include alternative selection, conflict management, prioritizing, rewarding and penalizing, etc. Responsibility. Define the activities that each role carries out, such as job duties, processes involved, and the hand-offs to other roles. Qualifications. Describe any prerequisites, experience, licenses, seniority levels, or other qualifications necessary to fulfill the role. Competencies. Describe specific role or job skills and capacities required to complete the work. May include details on languages, technology, or other information necessary to complete the roles successfully.
-*   **Training requirements:** Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished.
-*   **Rewards and recognition:** Describe any reward and recognition processes and limitations.
-*   **Team development:** Describe methods for developing individual team members and the team as a whole.
-*   **Physical resource identification:** Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Physical resource acquisition:** Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.
-*   **Physical resource management:** Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.
+To accurately and professionally complete the **SCHEDULE MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context:
+*   **Schedule methodology:** Define the theoretical approach (e.g., Critical Path, Agile).
+*   **Scheduling tool(s):** Define the software used (e.g., MS Project, Jira).
+*   **Level of accuracy:** Set the acceptable range for duration estimates (e.g., ±10%).
+*   **Units of measure:** Standardize time (e.g., staff hours, staff days).
+*   **Variance thresholds:** Set the rules for when a delay triggers an alert.
+*   **Schedule reporting:** Define the status reporting format.
+*   **Organizational procedure links:** Tie the schedule to the WBS and accounting codes.
+*   **Schedule updates:** Establish who updates the schedule and how often.
 
 ---
 
