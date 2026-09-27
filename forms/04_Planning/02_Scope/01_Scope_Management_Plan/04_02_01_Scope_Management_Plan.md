@@ -21,5 +21,30 @@ Form: SCOPE MANAGEMENT PLAN (Instructions)
 
 ---
 
-### Scope Management Approach
-**Instruction:** Populate a Markdown table with exactly 2 columns: Plan Element, Approach & Guidelines. The following rows MUST be pre-filled under Plan Element: WBS, WBS Dictionary, Scope baseline maintenance, Deliverable acceptance, Scope and requirements integration, Project management and business analysis integration. Describe how the WBS will be arranged, guidelines for control accounts, WBS Dictionary details, types of scope changes for formal change control, how deliverables will be validated, integration of scope and requirements, and integration of business analysis.
+### WBS
+**Instruction:** Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. Document guidelines for establishing control accounts and work packages. Use lists where appropriate.
+
+---
+
+### WBS Dictionary
+**Instruction:** Identify the information that will be documented in the WBS Dictionary and the level of detail required. Use lists where appropriate.
+
+---
+
+### Scope baseline maintenance
+**Instruction:** Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. Use lists where appropriate.
+
+---
+
+### Deliverable acceptance
+**Instruction:** For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off. Use lists where appropriate.
+
+---
+
+### Scope and requirements integration
+**Instruction:** Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur. Use lists where appropriate.
+
+---
+
+### Project management and business analysis integration
+**Instruction:** Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations. Use lists where appropriate.

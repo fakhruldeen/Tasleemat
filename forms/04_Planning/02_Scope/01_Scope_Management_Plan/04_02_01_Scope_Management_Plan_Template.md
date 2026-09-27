@@ -9,24 +9,45 @@
 
 ---
 
-### Scope Management Approach
-<!-- 
-Please populate the table below with the following details:
-- **WBS:** Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. The guidelines for establishing control accounts and work packages can also be documented in this section.
-- **WBS Dictionary:** Identify the information that will be documented in the WBS Dictionary and the level of detail required.
-- **Scope baseline maintenance:** Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained.
-- **Deliverable acceptance:** For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off.
-- **Scope and requirements integration:** Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur.
-- **Project management and business analysis integration:** Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations.
--->
-| Plan Element | Approach & Guidelines |
-| :--- | :--- |
-| **WBS** | [ Provide your detailed response here... ] |
-| **WBS Dictionary** | [ Provide your detailed response here... ] |
-| **Scope baseline maintenance** | [ Provide your detailed response here... ] |
-| **Deliverable acceptance** | [ Provide your detailed response here... ] |
-| **Scope and requirements integration** | [ Provide your detailed response here... ] |
-| **Project management and business analysis integration** | [ Provide your detailed response here... ] |
+### WBS
+<!-- Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. The guidelines for establishing control accounts and work packages can also be documented in this section. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### WBS Dictionary
+<!-- Identify the information that will be documented in the WBS Dictionary and the level of detail required. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### Scope baseline maintenance
+<!-- Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### Deliverable acceptance
+<!-- For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### Scope and requirements integration
+<!-- Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur. -->
+
+> [ Provide your detailed response here... ]
+
+---
+
+### Project management and business analysis integration
+<!-- Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations. -->
+
+> [ Provide your detailed response here... ]
 
 ---
 
