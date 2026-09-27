@@ -1,66 +1,24 @@
 ---
 lang: en
-Form: Quality Metrics (Instructions)
+Form: QUALITY METRICS (Instructions)
 ---
 
 # QUALITY METRICS - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `QUALITY METRICS`. When asked to populate this form, generate the detailed measurements for project/product attributes.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> Quality metrics provide specific detailed measurements about a project or product attribute, and how it should be measured to verify compliance. They are consulted in the manage quality process to ensure that the processes used will meet the metric. Deliverables or processes are measured in the control quality phase and compared to the metric.
+> **Tailoring Tips:** On smaller projects quality metrics, requirements, and specifications are considered the same thing. Different industries may use the term 'specifications' rather than 'metrics'. Specific standards may include metrics that must be adhered to and referenced in the quality management plan.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> Align with: Requirements documentation, Quality management plan.
 
 ---
 
-### Area audited
-**Instruction:** Check the box for the area or areas audited.
-
----
-
-### Good practices from similar projects
-**Instruction:** Describe any good or best practices that can be shared from similar projects.
-
----
-
-### Areas for improvement
-**Instruction:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-
----
-
-### Deficiencies or defects
-**Instruction:** 
-
----
-
-### ID
-**Instruction:** Enter a unique defect identifier.
-
----
-
-### Defect
-**Instruction:** Describe the deficiency or defect.
-
----
-
-### Action
-**Instruction:** Describe the corrective actions needed to fix the defect.
-
----
-
-### Responsible party
-**Instruction:** Identify the person assigned to correct the deficiency or defect.
-
----
-
-### Due date
-**Instruction:** Document the due date.
-
----
-
-### Comments
-**Instruction:** Provide any additional useful comments about the audit.
-
+### Section Generation Instructions
+*   **ID:** Unique identifier. This can be the WBS ID or activity ID number.
+*   **Item:** Describe the attribute to be measured.
+*   **Metric:** The specific, quantifiable measurement.
+*   **Measurement Method:** The method of measuring, including any equipment or procedures.

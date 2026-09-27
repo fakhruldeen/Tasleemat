@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Quality Metrics
-nav_order: 1
+nav_order: 2
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,49 +12,29 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.05.02`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Quality Metrics** in alignment with Tasleemat framework.
-
 ---
 
-### 1. What?
-A formal Tasleemat-aligned project document known as the **Quality Metrics**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+### Context & Definition
+Quality metrics provide specific detailed measurements about a project or product attribute, and how it should be measured to verify compliance. Metrics are consulted in the manage quality process to ensure that the processes used will meet the metric. The deliverables or processes are measured in the control quality phase and compared to the metric to determine if the result is acceptable or if corrective action or rework is required.
 
----
-
-### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
-
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
+Quality metrics are an output from process **8.1 Plan Quality Management** in the PMBOK® Guide. They are generally determined as the requirements are developed. If requirements are stable, they will be developed once. If requirements are evolving or changing, they will evolve and change as well.
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+On smaller projects quality metrics, requirements, and specifications are considered the same thing. Different industries may use the term 'specifications' rather than 'metrics'. Specific standards may include metrics that must be adhered to and referenced in the quality management plan.
 
 ### Alignment
-[ Add Alignment Information Here ]
+Align with: Requirements documentation, Quality management plan.
 
-### 5. How?
-To accurately complete this log, populate the following sections:
+---
 
-*   **Area audited:** Check the box for the area or areas audited.
-*   **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.
-*   **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-*   **Deficiencies or defects:** 
-*   **ID:** Enter a unique defect identifier.
-*   **Defect:** Describe the deficiency or defect.
-*   **Action:** Describe the corrective actions needed to fix the defect.
-*   **Responsible party:** Identify the person assigned to correct the deficiency or defect.
-*   **Due date:** Document the due date.
-*   **Comments:** Provide any additional useful comments about the audit.
+### Document Elements Description (Table 2.22)
+
+| Document Element | Description |
+| :--- | :--- |
+| **ID** | Unique identifier. This can be the WBS ID or activity ID number. |
+| **Item** | Describe the attribute to be measured. |
+| **Metric** | The specific, quantifiable measurement. |
+| **Measurement method** | The method of measuring, including any equipment or procedures. |
 
 ---
 

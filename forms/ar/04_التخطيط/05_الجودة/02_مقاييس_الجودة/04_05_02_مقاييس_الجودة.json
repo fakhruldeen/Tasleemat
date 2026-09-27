@@ -1,48 +1,18 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج مقاييس الجودة هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة جدول مقاييس الجودة.",
     "form_name": "مقاييس الجودة",
     "document_reference": "PMO-04.05.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات مقاييس الجودة": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Area audited:** Check the box for the area or areas audited.\n- **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.\n- **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.\n- **Deficiencies or defects:** \n- **ID:** Enter a unique defect identifier.\n- **Defect:** Describe the deficiency or defect.\n- **Action:** Describe the corrective actions needed to fix the defect.\n- **Responsible party:** Identify the person assigned to correct the deficiency or defect.\n- **Due date:** Document the due date.\n- **التعليقات:** Provide any additional useful comments about the audit.",
+        "سجل مقاييس الجودة": {
+            "guidance": "مصفوفة المقاييس.\n- **المُعرّف:** معرف فريد.\n- **العنصر:** السمة المراد قياسها.\n- **المقياس:** القياس القابل للكم.\n- **طريقة القياس:** كيفية قياسها.",
             "value": [
                 {
-                    "Area audited": "",
-                    "Good practices from similar projects": "",
-                    "Areas for improvement": "",
-                    "Deficiencies or defects": "",
-                    "ID": "",
-                    "Defect": "",
-                    "Action": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "التعليقات": ""
-                },
-                {
-                    "Area audited": "",
-                    "Good practices from similar projects": "",
-                    "Areas for improvement": "",
-                    "Deficiencies or defects": "",
-                    "ID": "",
-                    "Defect": "",
-                    "Action": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "التعليقات": ""
-                },
-                {
-                    "Area audited": "",
-                    "Good practices from similar projects": "",
-                    "Areas for improvement": "",
-                    "Deficiencies or defects": "",
-                    "ID": "",
-                    "Defect": "",
-                    "Action": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "التعليقات": ""
+                    "المُعرّف": "",
+                    "العنصر": "",
+                    "المقياس": "",
+                    "طريقة القياس": ""
                 }
             ]
         }

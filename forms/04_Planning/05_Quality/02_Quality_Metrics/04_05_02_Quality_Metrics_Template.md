@@ -1,17 +1,10 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the Quality Metrics table based on the project context.
 
 Section Instructions:
-*   **Area audited:** Check the box for the area or areas audited.
-*   **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.
-*   **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-*   **Deficiencies or defects:** 
-*   **ID:** Enter a unique defect identifier.
-*   **Defect:** Describe the deficiency or defect.
-*   **Action:** Describe the corrective actions needed to fix the defect.
-*   **Responsible party:** Identify the person assigned to correct the deficiency or defect.
-*   **Due date:** Document the due date.
-*   **Comments:** Provide any additional useful comments about the audit.
+*   **ID:** Unique identifier. This can be the WBS ID or activity ID number.
+*   **Item:** Describe the attribute to be measured.
+*   **Metric:** The specific, quantifiable measurement.
+*   **Measurement Method:** The method of measuring, including any equipment or procedures.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -23,28 +16,12 @@ Section Instructions:
 
 ---
 
-### Quality Metrics Entries
-<!-- 
-Please populate the table below with the following details:
-- **Area audited:** Check the box for the area or areas audited.
-- **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.
-- **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-- **Deficiencies or defects:** 
-- **ID:** Enter a unique defect identifier.
-- **Defect:** Describe the deficiency or defect.
-- **Action:** Describe the corrective actions needed to fix the defect.
-- **Responsible party:** Identify the person assigned to correct the deficiency or defect.
-- **Due date:** Document the due date.
-- **Comments:** Provide any additional useful comments about the audit.
--->
-| Area audited | Good practices from similar projects | Areas for improvement | Deficiencies or defects | ID | Defect | Action | Responsible party | Due date | Comments |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
-
-
+### Quality Metrics Log
+| ID | Item | Metric | Measurement Method |
+| :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -59,6 +36,6 @@ Please populate the table below with the following details:
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Quality Metrics | <strong>Ref:</strong> PMO-04.05.02 <br>
+  <strong>Template:</strong> QUALITY METRICS | <strong>Ref:</strong> PMO-04.05.02 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

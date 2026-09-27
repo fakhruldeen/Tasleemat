@@ -1,48 +1,18 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Quality Metrics template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Quality Metrics",
+    "_llm_instructions": "Populate the Quality Metrics table.",
+    "form_name": "QUALITY METRICS",
     "document_reference": "PMO-04.05.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Quality Metrics Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Area audited:** Check the box for the area or areas audited.\n- **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.\n- **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.\n- **Deficiencies or defects:** \n- **ID:** Enter a unique defect identifier.\n- **Defect:** Describe the deficiency or defect.\n- **Action:** Describe the corrective actions needed to fix the defect.\n- **Responsible party:** Identify the person assigned to correct the deficiency or defect.\n- **Due date:** Document the due date.\n- **Comments:** Provide any additional useful comments about the audit.",
+        "Quality Metrics Log": {
+            "guidance": "Array of metrics.\n- **ID:** Unique identifier.\n- **Item:** The attribute to measure.\n- **Metric:** The quantifiable measurement.\n- **Measurement Method:** How it will be measured.",
             "value": [
                 {
-                    "Area audited": "",
-                    "Good practices from similar projects": "",
-                    "Areas for improvement": "",
-                    "Deficiencies or defects": "",
                     "ID": "",
-                    "Defect": "",
-                    "Action": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "Comments": ""
-                },
-                {
-                    "Area audited": "",
-                    "Good practices from similar projects": "",
-                    "Areas for improvement": "",
-                    "Deficiencies or defects": "",
-                    "ID": "",
-                    "Defect": "",
-                    "Action": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "Comments": ""
-                },
-                {
-                    "Area audited": "",
-                    "Good practices from similar projects": "",
-                    "Areas for improvement": "",
-                    "Deficiencies or defects": "",
-                    "ID": "",
-                    "Defect": "",
-                    "Action": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "Comments": ""
+                    "Item": "",
+                    "Metric": "",
+                    "Measurement Method": ""
                 }
             ]
         }
