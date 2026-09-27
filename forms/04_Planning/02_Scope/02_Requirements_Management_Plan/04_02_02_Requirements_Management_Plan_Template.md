@@ -51,7 +51,7 @@
 
 ---
 
-### Requirements traceability
+### Requirements traceability structure
 <!-- Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. -->
 
 > [ Provide your detailed response here... ]

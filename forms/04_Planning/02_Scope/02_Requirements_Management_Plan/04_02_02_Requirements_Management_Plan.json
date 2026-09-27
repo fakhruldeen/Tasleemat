@@ -29,7 +29,7 @@
             "guidance": "Document the metrics that requirements will be measured against. Use lists where appropriate.",
             "value": ""
         },
-        "Requirements traceability": {
+        "Requirements traceability structure": {
             "guidance": "Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. Use lists where appropriate.",
             "value": ""
         },

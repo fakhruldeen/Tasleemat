@@ -51,7 +51,7 @@ Form: REQUIREMENTS MANAGEMENT PLAN (Instructions)
 
 ---
 
-### Requirements traceability
+### Requirements traceability structure
 **Instruction:** Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. Use lists where appropriate.
 
 ---

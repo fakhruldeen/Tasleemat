@@ -59,7 +59,7 @@ To accurately and professionally complete the **REQUIREMENTS MANAGEMENT PLAN**, 
 *   **Requirements documentation:** Define how requirements will be documented.
 *   **Requirements prioritization:** Identify the prioritization approach for requirements.
 *   **Requirements metrics:** Document the metrics that requirements will be measured against.
-*   **Requirements traceability:** Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them.
+*   **Requirements traceability structure:** Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them.
 *   **Requirements tracking:** Describe how often and what techniques will be used to track progress on requirements.
 *   **Requirements reporting:** Describe how reporting on requirements will be conducted and the frequency of such reporting.
 *   **Requirements validation:** Identify the various methods that will be used to validate requirements such as inspection, audits, demonstration, testing, etc.
