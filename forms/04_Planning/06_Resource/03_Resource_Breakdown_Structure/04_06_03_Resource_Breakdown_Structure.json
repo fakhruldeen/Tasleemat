@@ -1,16 +1,25 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RESOURCE BREAKDOWN STRUCTURE template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Resource Breakdown Structure.\n\nContext & Definition:\nThe resource breakdown structure is a hierarchical structure used to organize the resources by type and category. It can be shown as a hierarchical chart or as an outline.\nThe resource breakdown structure can receive information from:\n*   Assumption log\n*   Resource management plan\n*   Scope baseline\n*   Activity attributes\n\nIt provides information to:\n*   Duration estimates worksheet\n\nThe resource breakdown structure is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resources are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. If the scope is evolving, the resource requirements will evolve as well.\n\nTailoring Tips:\n*   For projects with many different types of team resources you may want to decompose the team branch further by including information on skill level, required certifications, location, or other information.\n*   For projects that have different locations you may want to organize the resource breakdown structure by geography.\n\nAlignment:\nThe resource breakdown structure should be aligned and consistent with the following documents:\n*   Resource management plan\n*   Resource requirements",
     "form_name": "RESOURCE BREAKDOWN STRUCTURE",
     "document_reference": "PMO-04.06.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Control account": {
-            "guidance": "The point where scope, schedule, and cost are integrated and used to measure project performance",
-            "value": ""
+        "Resource Breakdown Structure (Outline)": {
+            "guidance": "Hierarchical list (1., 1.1, 1.1.1) of People, Equipment, Materials, Supplies, and Locations.",
+            "value": [
+                {
+                    "RBS Code": "1",
+                    "Resource Node": "Project"
+                },
+                {
+                    "RBS Code": "1.1",
+                    "Resource Node": "People"
+                }
+            ]
         },
-        "Work package": {
-            "guidance": "The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.",
+        "Hierarchical Chart": {
+            "guidance": "Mermaid mindmap code representing the RBS.",
             "value": ""
         }
     }

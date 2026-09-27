@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Resource Breakdown Structure
-nav_order: 1
+nav_order: 3
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,41 +12,49 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.06.03`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Resource Breakdown Structure** in alignment with Tasleemat framework.
-
 ---
 
-### 1. What?
-A formal Tasleemat-aligned project document known as the **Resource Breakdown Structure**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+### Context & Definition
+The resource breakdown structure is a hierarchical structure used to organize the resources by type and category. It can be shown as a hierarchical chart or as an outline.
+The resource breakdown structure can receive information from:
+*   Assumption log
+*   Resource management plan
+*   Scope baseline
+*   Activity attributes
 
----
+It provides information to:
+*   Duration estimates worksheet
 
-### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
-
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
+The resource breakdown structure is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resources are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. If the scope is evolving, the resource requirements will evolve as well.
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+Consider the following tips to help tailor the resource breakdown structure to meet your needs:
+*   For projects with many different types of team resources you may want to decompose the team branch further by including information on skill level, required certifications, location, or other information.
+*   For projects that have different locations you may want to organize the resource breakdown structure by geography.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The resource breakdown structure should be aligned and consistent with the following documents:
+*   Resource management plan
+*   Resource requirements
 
-### 5. How?
-To accurately and professionally complete the **RESOURCE BREAKDOWN STRUCTURE**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+---
 
-*   **Control account:** The point where scope, schedule, and cost are integrated and used to measure project performance
-*   **Work package:** The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.
+### Document Elements Description
+
+The Resource Breakdown Structure uses a hierarchical numbering outline format. Typically:
+1. **Project**
+   1.1. **People**
+      1.1.1. Quantity of Role 1
+         1.1.1.1. Quantity of Level 1
+         1.1.1.2. Quantity of Level 2
+      1.1.2. Quantity of Role 2
+   1.2. **Equipment**
+      1.2.1. Quantity of Type 1
+   1.3. **Materials**
+      1.3.1. Quantity of Material 1
+         1.3.1.1. Quantity of Grade 1
+   1.4. **Supplies**
+   1.5. **Locations**
 
 ---
 

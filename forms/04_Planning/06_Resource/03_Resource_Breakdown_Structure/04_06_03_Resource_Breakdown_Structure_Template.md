@@ -1,9 +1,16 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the Resource Breakdown Structure based on the project context.
 
 Section Instructions:
-*   **Control account:** The point where scope, schedule, and cost are integrated and used to measure project performance
-*   **Work package:** The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.
+*   **Resource Breakdown Structure (Outline):** Provide a hierarchical outline of resources organized by type and category. Use the following numbering structure:
+    1. Project
+    1.1. People
+        1.1.1. Quantity of Role 1
+            1.1.1.1. Quantity of Level 1
+    1.2. Equipment
+    1.3. Materials
+    1.4. Supplies
+    1.5. Locations
+*   **Hierarchical Chart:** Provide a Mermaid mindmap or flowchart TD representing the resource breakdown structure visually.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -15,17 +22,50 @@ Section Instructions:
 
 ---
 
-### Control account
-<!-- The point where scope, schedule, and cost are integrated and used to measure project performance -->
-
-> [ Add details... ]
+### Resource Breakdown Structure (Outline)
+1. **[ Project Name ]**
+   1.1. **People**
+      1.1.1. [ Quantity ] of [ Role 1 ]
+         1.1.1.1. [ Quantity ] of [ Level 1 ]
+         1.1.1.2. [ Quantity ] of [ Level 2 ]
+         1.1.1.3. [ Quantity ] of [ Level 3 ]
+      1.1.2. [ Quantity ] of [ Role 2 ]
+   1.2. **Equipment**
+      1.2.1. [ Quantity ] of [ Type 1 ]
+      1.2.2. [ Quantity ] of [ Type 2 ]
+   1.3. **Materials**
+      1.3.1. [ Quantity ] of [ Material 1 ]
+         1.3.1.1. [ Quantity ] of [ Grade 1 ]
+         1.3.1.2. [ Quantity ] of [ Grade 2 ]
+   1.4. **Supplies**
+      1.4.1. [ Quantity ] of [ Supply 1 ]
+      1.4.2. [ Quantity ] of [ Supply 2 ]
+   1.5. **Locations**
+      1.5.1. [ Location 1 ]
+      1.5.2. [ Location 2 ]
 
 ---
 
-### Work package
-<!-- The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes. -->
-
-> [ Add details... ]
+### Resource Breakdown Structure (Hierarchical Chart)
+```mermaid
+mindmap
+  root((Project))
+    People
+      Role_1
+        Level_1
+        Level_2
+      Role_2
+    Equipment
+      Type_1
+      Type_2
+    Materials
+      Material_1
+        Grade_1
+    Supplies
+      Supply_1
+    Locations
+      Location_1
+```
 
 ---
 

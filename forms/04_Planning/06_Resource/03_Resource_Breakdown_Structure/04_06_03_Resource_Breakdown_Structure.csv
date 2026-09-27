@@ -1,3 +1,6 @@
-Field,Guidance,LLM_Generated_Value
-Control account,"The point where scope, schedule, and cost are integrated and used to measure project performance",
-Work package,"The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.",
+RBS Code,Resource Node
+1,Project
+1.1,People
+1.1.1,[ Quantity of Role 1 ]
+1.1.1.1,[ Quantity of Level 1 ]
+1.2,Equipment

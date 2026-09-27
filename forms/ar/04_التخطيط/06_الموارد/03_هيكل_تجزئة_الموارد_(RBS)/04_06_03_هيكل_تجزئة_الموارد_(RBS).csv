@@ -1,3 +1,6 @@
-الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
-Control account,"The point where scope, schedule, and cost are integrated and used to measure project performance",
-Work package,"The lowest-level deliverable defined in the WBS for estimating and measuring resources, cost, and duration. Each work package rolls up to one and only one control account for reporting purposes.",
+رمز RBS,عقدة المورد
+1,المشروع
+1.1,الأفراد
+1.1.1,[ الكمية من الدور 1 ]
+1.1.1.1,[ الكمية من المستوى 1 ]
+1.2,المعدات
