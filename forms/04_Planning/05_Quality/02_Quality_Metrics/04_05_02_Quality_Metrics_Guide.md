@@ -17,17 +17,27 @@ nav_order: 2
 ### Context & Definition
 Quality metrics provide specific detailed measurements about a project or product attribute, and how it should be measured to verify compliance. Metrics are consulted in the manage quality process to ensure that the processes used will meet the metric. The deliverables or processes are measured in the control quality phase and compared to the metric to determine if the result is acceptable or if corrective action or rework is required.
 
-Quality metrics are an output from process **8.1 Plan Quality Management** in the PMBOK® Guide. They are generally determined as the requirements are developed. If requirements are stable, they will be developed once. If requirements are evolving or changing, they will evolve and change as well.
+**Quality metrics can receive information from:**
+*   Project management plan
+*   Requirements documentation
+*   Stakeholder register
+
+Quality metrics are an output from process **8.1 Plan Quality Management** in the PMBOK® Guide – Sixth Edition. They are generally determined as the requirements are developed. If requirements are stable, they will be developed once. If requirements are evolving or changing, they will evolve and change as well.
 
 ### Tailoring Tips
-On smaller projects quality metrics, requirements, and specifications are considered the same thing. Different industries may use the term 'specifications' rather than 'metrics'. Specific standards may include metrics that must be adhered to and referenced in the quality management plan.
+Consider the following tips to help tailor the quality metrics to meet your needs:
+*   On smaller projects quality metrics, requirements, and specifications are considered the same thing. Different industries may use the term “specifications” rather than “metrics.”
+*   In many industries there are specific standards that include metrics. These must be adhered to in your project. Your quality management plan may reference these by citing specific regulations, or they may be integrated into organizational policies and procedures.
 
 ### Alignment
-Align with: Requirements documentation, Quality management plan.
+The quality metrics should be aligned and consistent with the following documents:
+*   Requirements documentation
+*   Quality management plan
 
 ---
 
 ### Document Elements Description (Table 2.22)
+You can use the element descriptions below to assist you in documenting quality metrics.
 
 | Document Element | Description |
 | :--- | :--- |
