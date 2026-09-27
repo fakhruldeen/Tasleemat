@@ -12,8 +12,9 @@
 ### Requirements Traceability Matrix
 <!-- Trace requirements to project objectives, WBS deliverables, metrics, and validation. -->
 
-| ID | Requirement | Source | Category | Priority | Business objective | Deliverable | Verification | Validation |
+| Requirement Information | | | | | Relationship Traceability | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **ID** | **Requirement** | **Source** | **Priority** | **Category** | **Business objective** | **Deliverable** | **Verification** | **Validation** |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---

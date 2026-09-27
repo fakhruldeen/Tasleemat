@@ -55,8 +55,8 @@ To accurately and professionally complete the **REQUIREMENTS TRACEABILITY MATRIX
 *   **ID:** Enter a unique requirement identifier.
 *   **Requirement:** Document the condition or capability that must be met.
 *   **Source:** The stakeholder that identified the requirement.
-*   **Category:** Categorize the requirement.
 *   **Priority:** Prioritize the requirement category.
+*   **Category:** Categorize the requirement.
 *   **Business objective:** List the business objective met by fulfilling the requirement.
 *   **Deliverable:** Identify the deliverable that is associated with the requirement.
 *   **Verification:** Describe the metric that is used to measure the satisfaction of the requirement.

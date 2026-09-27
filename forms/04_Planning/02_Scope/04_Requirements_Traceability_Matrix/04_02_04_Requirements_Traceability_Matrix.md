@@ -27,8 +27,8 @@ Form: REQUIREMENTS TRACEABILITY MATRIX (Instructions)
 *   **ID:** Enter a unique requirement identifier.
 *   **Requirement:** Document the condition or capability that must be met by the project.
 *   **Source:** The stakeholder that identified the requirement.
-*   **Category:** Categorize the requirement (e.g., functional, nonfunctional, security).
 *   **Priority:** Prioritize the requirement category (e.g., Level 1, Level 2, must have).
+*   **Category:** Categorize the requirement (e.g., functional, nonfunctional, security).
 *   **Business objective:** List the business objective as identified in the charter or business case that is met by fulfilling the requirement.
 *   **Deliverable:** Identify the deliverable that is associated with the requirement.
 *   **Verification:** Describe the metric that is used to measure the satisfaction of the requirement.
