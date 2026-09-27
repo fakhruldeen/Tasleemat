@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Project Schedule
-nav_order: 1
+nav_order: 8
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,50 +12,57 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.03.08`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Project Schedule** in alignment with Tasleemat framework.
+This document provides a comprehensive reference to understand the purpose and usage of the **Project Schedule**.
 
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Project Schedule**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+The finalized calendar-based timeline of the project. It explicitly links activities, their dependencies, required resources, and calculated durations to specific start and finish calendar dates.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+It is the master chronological blueprint for project execution. It allows the project manager to track progress against a baseline, informs resources when they are needed, and manages stakeholder expectations regarding delivery timelines.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Prepared during the **PLANNING Process Group** (Process 6.5 Develop Schedule). It is updated and elaborated continuously throughout the project lifecycle.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+**Responsibilities:** Developed by the Project Manager with input from the project team. It is often approved by the Project Sponsor as part of the overall schedule baseline.
+
+---
+
+### 5. How?
+To construct the **PROJECT SCHEDULE**, the responsible party compiles data from prior schedule artifacts into a centralized list and visual Gantt chart containing:
+*   **WBS Identifier:** Links the scheduled activity back to the scope baseline.
+*   **Activity Name:** Clear definition of the task.
+*   **Start Date:** When the activity is scheduled to begin.
+*   **Finish Date:** When the activity must conclude.
+*   **Resource Name:** The specific person, team, or equipment required.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+• For smaller projects, a simple spreadsheet table may suffice instead of a visual Gantt chart.
+• At the beginning, you may only schedule high-level WBS deliverables, detailing activities as you decompose the work.
+• You may choose to distribute a milestone chart showing only key events rather than the full schedule for executive stakeholders.
 
 ### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **Project purpose:** The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project.
-*   **High-level project description:** A summary-level description of the project.
-*   **Project boundaries:** Limits to the project scope. May include scope exclusions, or other limitations.
-*   **Key deliverables:** The high-level project and product deliverables. These will be further elaborated in the project scope statement.
-*   **High-level requirements:** The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders’ needs and expectations. These will be further elaborated in the requirements documentation.
-*   **Overall project risk:** An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome.
-*   **Project objectives and related success:** criteria Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. There may be additional objectives as well. Some organizations include quality, safety, and stakeholder satisfaction objectives. (continued)
-*   **Summary milestone schedule:** Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance.
-*   **Preapproved financial resources:** The amount of funding available for the project. May include sources of funding and annual funding limits.
-*   **Key stakeholder list:** An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. This can be further elaborated in the stakeholder register.
-*   **Project exit criteria:** The performance, metrics, conditions, or other measurements that must be met to conclude the project. Assigned project manager, responsibility, and authority level The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution. Examples of staffing authority include the power to hire, fire, discipline, accept, or not accept project staff. Budget management refers to the authority of the project manager to commit, manage, and control project funds. Variance refers to the variance level that requires escalation. Technical decisions describe the authority of the project manager to make technical decisions about deliverables or the project approach. Conflict resolution defines the degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders. Name and authority of the sponsor or other person(s) authorizing the project charter The name, position, and authority of the person who oversees the project manager for the purposes of the project. Common types of authority include the ability to approve changes, determine acceptable variance limits, resolve inter-project conflicts, and champion the project at a senior management level.
+The project schedule should be aligned and consistent with the following documents:
+• Project charter
+• Assumption log
+• Schedule management plan
+• Project roadmap
+• Scope baseline
+• Activity list
+• Network diagram
+• Duration estimates
+• Project team assignments
+• Project calendars
 
 ---
 
