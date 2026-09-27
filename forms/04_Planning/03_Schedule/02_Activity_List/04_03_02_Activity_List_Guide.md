@@ -49,6 +49,14 @@ The activity list should be aligned and consistent with the following documents:
 • Product backlog
 • Iteration release plan
 
+
+### 5. How?
+To accurately and professionally complete the **ACTIVITY LIST**, the responsible party must populate the following critical columns:
+*   **ID:** A unique identifier for the activity (often tied to the WBS).
+*   **Activity Name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
+*   **Description of Work:** Provide more detail to the activity description, such as a process or method to accomplish the work.
+*   **Planned Release / Iteration:** Indicate the planned release or iteration for each activity (especially relevant for adaptive/agile development approaches).
+
 ---
 
 ### 📥 Associated Templates

@@ -53,6 +53,33 @@ The activity attributes should be aligned and consistent with the following docu
 • Cost estimates
 • Resource requirements
 
+
+### 5. How?
+To accurately and professionally complete the **ACTIVITY ATTRIBUTES**, the responsible party must populate the following details for EVERY activity:
+
+#### 1. General Information
+*   **ID:** Unique identifier.
+*   **Activity Name:** A brief statement starting with a verb summarizing the activity.
+*   **Planned Release / Iteration:** Indicate the planned release or iteration.
+*   **Description of Work:** Detailed requirements.
+
+#### 2. Dependencies & Scheduling
+*   **Predecessor / Successor:** Identify activities that must occur before or after.
+*   **Logical relationships:** Describe the nature of the relationship (e.g., start-to-start, finish-to-start).
+*   **Leads and lags:** Required delays (lag) or accelerations (lead) applying to logical relationships.
+
+#### 3. Resource Requirements
+*   **Number & Type of Team Resources Required:** Headcount and roles.
+*   **Skill Requirements:** Required competency levels.
+*   **Required Resources:** Equipment, materials, or facilities.
+
+#### 4. Execution Requirements
+*   **Imposed dates:** Required dates for start or completion.
+*   **Constraints:** Any limitations.
+*   **Assumptions:** Any assumptions impacting the activity.
+*   **Location of performance:** Where the work takes place.
+*   **Type of effort:** Fixed duration, fixed effort, etc.
+
 ---
 
 ### 📥 Associated Templates
