@@ -6,61 +6,17 @@ Form: RESOURCE REQUIREMENTS (Instructions)
 # RESOURCE REQUIREMENTS - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `RESOURCE REQUIREMENTS`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `RESOURCE REQUIREMENTS`.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
-> **Alignment:**
-> [ Add Alignment Information Here ]
+> Context: The resource requirements describe the type and quantity of resources needed to complete the project work. Resources include: People, Equipment, Material, Supplies, Locations (as needed). The resource requirements form is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resource requirements are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. Tailoring Tips: You may want to divide the form into two sections (team vs physical) or internal vs contracted. Consider adding a column for basis of estimates (Method used, Range, Confidence level, Constraints). Alignment: The resource requirements should be aligned and consistent with the Project schedule, Cost estimates, and Bid documents.
 
 ---
 
-### Team member identification
-**Instruction:** Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards.
-
----
-
-### Team member acquisition
-**Instruction:** Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures.
-
----
-
-### Team member management
-**Instruction:** Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer.
-
----
-
-### Project organizational chart
-**Instruction:** Create a hierarchy chart to show the project reporting and organizational structure.
-
----
-
-### Training requirements
-**Instruction:** Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished.
-
----
-
-### Rewards and recognition
-**Instruction:** Describe any reward and recognition processes and limitations.
-
----
-
-### Team development
-**Instruction:** Describe methods for developing individual team members and the team as a whole.
-
----
-
-### Physical resource identification
-**Instruction:** Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards.
-
----
-
-### Physical resource acquisition
-**Instruction:** Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.
-
----
-
-### Physical resource management
-**Instruction:** Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.
-
+### Section Generation Instructions
+*   **ID:** Unique identifier.
+*   **Type of resource:** Indicate whether the resource is a team resource or physical resource. If physical, indicate if it is equipment, supplies, material, location, or some other form of resource.
+*   **Quantity:** Document the number or quantity of the resource needed for the activity. Indicate the unit of measure used for estimating resources.
+*   **Assumptions:** Enter assumptions associated with the resource, such as availability, certifications, etc.
+*   **Basis of estimate:** Include the method used for estimating the quantities, range of estimates, confidence level, and constraints or risks.
+*   **Comments:** Include information on basis of estimate, grade, competency, or other relevant information.

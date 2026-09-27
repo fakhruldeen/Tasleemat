@@ -1,53 +1,22 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RESOURCE REQUIREMENTS template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Resource Requirements. Context: The resource requirements describe the type and quantity of resources needed to complete the project work. Resources include: People, Equipment, Material, Supplies, Locations (as needed). The resource requirements form is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resource requirements are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. Tailoring Tips: You may want to divide the form into two sections (team vs physical) or internal vs contracted. Consider adding a column for basis of estimates (Method used, Range, Confidence level, Constraints). Alignment: The resource requirements should be aligned and consistent with the Project schedule, Cost estimates, and Bid documents.",
     "form_name": "RESOURCE REQUIREMENTS",
     "document_reference": "PMO-04.06.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Team member identification": {
-            "guidance": "Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards.",
-            "value": ""
-        },
-        "Team member acquisition": {
-            "guidance": "Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures.",
-            "value": ""
-        },
-        "Team member management": {
-            "guidance": "Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer.",
-            "value": ""
-        },
-        "Project organizational chart": {
-            "guidance": "Create a hierarchy chart to show the project reporting and organizational structure.",
-            "value": ""
-        },
-        "Roles and responsibilities</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
-            "value": ""
-        },
-        "Training requirements": {
-            "guidance": "Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished.",
-            "value": ""
-        },
-        "Rewards and recognition": {
-            "guidance": "Describe any reward and recognition processes and limitations.",
-            "value": ""
-        },
-        "Team development": {
-            "guidance": "Describe methods for developing individual team members and the team as a whole.",
-            "value": ""
-        },
-        "Physical resource identification": {
-            "guidance": "Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards.",
-            "value": ""
-        },
-        "Physical resource acquisition": {
-            "guidance": "Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.",
-            "value": ""
-        },
-        "Physical resource management": {
-            "guidance": "Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.",
-            "value": ""
+        "Resource Requirements Log": {
+            "guidance": "Provide a table detailing ID, Type of resource, Quantity, Assumptions, Basis of estimate, and Comments.",
+            "value": [
+                {
+                    "ID": "",
+                    "Type of resource": "",
+                    "Quantity": "",
+                    "Assumptions": "",
+                    "Basis of estimate": "",
+                    "Comments": ""
+                }
+            ]
         }
     }
 }

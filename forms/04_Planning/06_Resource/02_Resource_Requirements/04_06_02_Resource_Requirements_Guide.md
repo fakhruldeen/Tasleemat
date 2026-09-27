@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Resource Requirements
-nav_order: 1
+nav_order: 2
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,49 +12,23 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.06.02`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Resource Requirements** in alignment with Tasleemat framework.
+---
+
+### Context & Definition
+Context: The resource requirements describe the type and quantity of resources needed to complete the project work. Resources include: People, Equipment, Material, Supplies, Locations (as needed). The resource requirements form is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resource requirements are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. Tailoring Tips: You may want to divide the form into two sections (team vs physical) or internal vs contracted. Consider adding a column for basis of estimates (Method used, Range, Confidence level, Constraints). Alignment: The resource requirements should be aligned and consistent with the Project schedule, Cost estimates, and Bid documents.
 
 ---
 
-### 1. What?
-A formal Tasleemat-aligned project document known as the **Resource Requirements**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+### Document Elements Description (Table 2.26)
 
----
-
-### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
-
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately and professionally complete the **RESOURCE REQUIREMENTS**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **Team member identification:** Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Team member acquisition:** Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures.
-*   **Team member management:** Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer.
-*   **Project organizational chart:** Create a hierarchy chart to show the project reporting and organizational structure.
-*   **Training requirements:** Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished.
-*   **Rewards and recognition:** Describe any reward and recognition processes and limitations.
-*   **Team development:** Describe methods for developing individual team members and the team as a whole.
-*   **Physical resource identification:** Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Physical resource acquisition:** Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.
-*   **Physical resource management:** Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.
+| Document Element | Description |
+| :--- | :--- |
+| **ID** | Unique identifier |
+| **Type of resource** | Indicate whether the resource is a team resource or physical resource. If physical, indicate if it is equipment, supplies, material, location, or some other form of resource. |
+| **Quantity** | Document the number or quantity of the resource needed for the activity. Indicate the unit of measure used for estimating resources. |
+| **Assumptions** | Enter assumptions associated with the resource, such as availability, certifications, etc. |
+| **Basis of estimate** | Include the method used for estimating the quantities, range of estimates, confidence level, and constraints or risks. |
+| **Comments** | Include information on grade, competency, or other relevant information. |
 
 ---
 

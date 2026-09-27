@@ -1,17 +1,12 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the Resource Requirements based on the project context.
 
 Section Instructions:
-*   **Team member identification:** Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Team member acquisition:** Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures.
-*   **Team member management:** Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer.
-*   **Project organizational chart:** Create a hierarchy chart to show the project reporting and organizational structure.
-*   **Training requirements:** Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished.
-*   **Rewards and recognition:** Describe any reward and recognition processes and limitations.
-*   **Team development:** Describe methods for developing individual team members and the team as a whole.
-*   **Physical resource identification:** Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Physical resource acquisition:** Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.
-*   **Physical resource management:** Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.
+*   **ID:** Unique identifier.
+*   **Type of resource:** Indicate whether the resource is a team resource or physical resource. If physical, indicate if it is equipment, supplies, material, location, or some other form of resource.
+*   **Quantity:** Document the number or quantity of the resource needed for the activity. Indicate the unit of measure used for estimating resources.
+*   **Assumptions:** Enter assumptions associated with the resource, such as availability, certifications, etc.
+*   **Basis of estimate:** Include the method used for estimating the quantities, range of estimates, confidence level, and constraints or risks.
+*   **Comments:** Include information on basis of estimate, grade, competency, or other relevant information.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -23,78 +18,13 @@ Section Instructions:
 
 ---
 
-### Team member identification
-<!-- Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards. -->
+### Resource Requirements Log
 
-> [ Add details... ]
-
----
-
-### Team member acquisition
-<!-- Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures. -->
-
-> [ Add details... ]
-
----
-
-### Team member management
-<!-- Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer. -->
-
-> [ Add details... ]
-
----
-
-### Project organizational chart
-<!-- Create a hierarchy chart to show the project reporting and organizational structure. -->
-
-> [ Add details... ]
-
----
-
-### Roles and responsibilities</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
-> [ Add details... ]
-
----
-
-### Training requirements
-<!-- Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished. -->
-
-> [ Add details... ]
-
----
-
-### Rewards and recognition
-<!-- Describe any reward and recognition processes and limitations. -->
-
-> [ Add details... ]
-
----
-
-### Team development
-<!-- Describe methods for developing individual team members and the team as a whole. -->
-
-> [ Add details... ]
-
----
-
-### Physical resource identification
-<!-- Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards. -->
-
-> [ Add details... ]
-
----
-
-### Physical resource acquisition
-<!-- Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes. -->
-
-> [ Add details... ]
-
----
-
-### Physical resource management
-<!-- Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information. -->
-
-> [ Add details... ]
+| ID | Type of resource | Quantity | Assumptions | Basis of estimate | Comments |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
