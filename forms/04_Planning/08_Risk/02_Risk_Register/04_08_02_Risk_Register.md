@@ -62,23 +62,23 @@ The risk register is an output from process 11.2 Identify Risks in the PMBOK® G
 ---
 
 ### Section Generation Instructions
-*   **Risk ID:** Enter a unique risk identifier.
-*   **Risk statement:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to EFFECT.”
-*   **Risk owner:** The person responsible for managing and tracking the risk.
-*   **Probability:** Determine the likelihood of the event or condition occurring.
-*   **Impact: Scope:** Describe the impact specifically on the project scope.
-*   **Impact: Quality:** Describe the impact specifically on the project quality.
-*   **Impact: Schedule:** Describe the impact specifically on the project schedule.
-*   **Impact: Cost:** Describe the impact specifically on the project cost.
-*   **Score:** Determine the initial risk score by multiplying probability by the highest impact, or combining scales.
-*   **Response:** Describe the planned response strategy to the risk or condition.
-*   **Responsible Party:** The person assigned to implement the risk response actions (Risk Action Owner).
-*   **Rev. Probability:** Determine the revised likelihood of the event after the response has been implemented.
-*   **Rev. Impact: Scope:** Describe the revised impact on scope once the response is implemented.
-*   **Rev. Impact: Quality:** Describe the revised impact on quality once the response is implemented.
-*   **Rev. Impact: Schedule:** Describe the revised impact on schedule once the response is implemented.
-*   **Rev. Impact: Cost:** Describe the revised impact on cost once the response is implemented.
-*   **Rev. Score:** Enter the revised risk score once the response has been implemented.
-*   **Actions:** Describe specific action steps that need to be taken to respond to the risk.
-*   **Status:** Enter the status as open or closed.
-*   **Comments:** Provide any comments or additional helpful information about the risk event or condition.
+*   **Risk ID:** Enter a unique alphanumeric identifier for the risk (e.g., R-001, TEC-005) to ensure traceability across all project documentation.
+*   **Risk statement:** Clearly and specifically describe the risk event or condition. Use the standard cause-and-effect format: "Because of [CAUSE], [RISK EVENT] may occur, which would lead to [EFFECT on project]." Avoid vague statements; be precise about the threat or opportunity.
+*   **Risk owner:** Identify the specific individual or role (not a broad department) who is ultimately accountable for monitoring this risk and ensuring the response strategy is effective.
+*   **Probability:** Assess the initial likelihood of the risk occurring before any mitigation actions are taken. Use the defined scales from the Risk Management Plan (e.g., Very High, High, Medium, Low, Very Low, or a specific percentage).
+*   **Impact: Scope:** Detail the specific consequences to the project's deliverables, features, or requirements if the risk occurs. Quantify the severity (e.g., "Critical scope reduction", "Minor feature delay") using the baseline scales.
+*   **Impact: Quality:** Detail the specific consequences to the project's quality metrics, performance standards, or defect rates. Will it cause the product to fail acceptance criteria?
+*   **Impact: Schedule:** Detail the specific time delay or acceleration if the risk occurs. Quantify in days/weeks (e.g., "2-week delay to critical path") or use the baseline severity scale.
+*   **Impact: Cost:** Detail the specific financial impact if the risk occurs. Quantify in currency or budget percentage overrun (e.g., "$50,000 overrun", "10% budget increase").
+*   **Score:** Calculate the initial inherent risk exposure score. This is typically derived by multiplying the Probability scale by the highest Impact scale across all objectives, mapping to the Probability and Impact Matrix (e.g., Red/Critical, Yellow/Moderate, Green/Low).
+*   **Response:** Explicitly define the strategy chosen to handle the risk (e.g., Avoid, Mitigate, Transfer, Accept for threats; Exploit, Enhance, Share, Accept for opportunities) and summarize the high-level plan to execute it.
+*   **Responsible Party:** Identify the specific individual (Risk Action Owner) assigned to physically carry out the response actions. This may be different from the overall Risk Owner.
+*   **Rev. Probability:** Re-evaluate and state the new, targeted likelihood of the risk occurring *after* the planned response actions have been fully implemented (Residual Risk).
+*   **Rev. Impact: Scope:** Re-evaluate the impact on the project scope assuming the response actions are successful.
+*   **Rev. Impact: Quality:** Re-evaluate the impact on quality assuming the response actions are successful.
+*   **Rev. Impact: Schedule:** Re-evaluate the impact on the schedule assuming the response actions are successful.
+*   **Rev. Impact: Cost:** Re-evaluate the financial impact assuming the response actions are successful.
+*   **Rev. Score:** Calculate the new residual risk score based on the Revised Probability and the highest Revised Impact. This proves whether the chosen response strategy reduces the risk to an acceptable threshold.
+*   **Actions:** List the specific, step-by-step tactical activities required to implement the response strategy. Include dependencies or immediate next steps.
+*   **Status:** Indicate the current state of the risk. Standard statuses include: Identified, Active, Monitoring, Mitigated, Occurred (turned into an Issue), or Closed.
+*   **Comments:** Provide any relevant historical context, updates from recent risk review meetings, links to external issue logs, or justifications for the chosen response strategy.
