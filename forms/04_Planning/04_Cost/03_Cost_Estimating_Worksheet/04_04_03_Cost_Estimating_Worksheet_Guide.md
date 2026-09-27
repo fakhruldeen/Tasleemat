@@ -17,7 +17,7 @@ This document provides a comprehensive reference to understand the purpose and u
 ---
 
 ### 1. What?
-A structured worksheet used to calculate cost estimates mathematically using quantitative methods (Parametric, Analogous, Three-Point) or detailed Bottom-Up estimation.
+A structured worksheet used to calculate cost estimates mathematically using quantitative methods (Parametric, Analogous, Three-Point) 
 
 ### 2. Why?
 To provide an auditable, transparent, and mathematically sound basis for project cost estimates. It prevents arbitrary guessing and ensures all components of cost are accounted for.
@@ -31,7 +31,6 @@ Developed during the **PLANNING Process Group** (Process 7.2 Estimate Costs) and
 1. **Parametric Estimating:** Derives costs by multiplying a cost per unit by the number of units (e.g., $100/sq ft x 1,000 sq ft).
 2. **Analogous Estimating:** Derives costs by comparing the current activity to a historical, similar activity and applying a scale multiplier.
 3. **Three-Point Estimating:** Accounts for risk by using Optimistic, Pessimistic, and Most Likely estimates in a Beta Distribution: `(O + 4M + P) / 6`.
-4. **Bottom-Up Estimating:** The most accurate method. Calculates every individual cost element (labor, materials, equipment, indirect costs, reserves) at the lowest WBS level.
 
 ---
 

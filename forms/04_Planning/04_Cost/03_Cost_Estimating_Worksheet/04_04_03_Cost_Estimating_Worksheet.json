@@ -1,12 +1,12 @@
 {
-    "_llm_instructions": "Populate the four quantitative estimation tables.",
+    "_llm_instructions": "Populate the three quantitative estimation tables.",
     "form_name": "COST ESTIMATING WORKSHEET",
     "document_reference": "PMO-04.04.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Parametric Estimates": {
-            "guidance": "Array of Parametric Estimates",
+            "guidance": "- **ID:** Unique identifier, such as the WBS ID or activity ID\n- **Cost Variable:** Enter the cost estimating driver.\n- **Cost Per Unit:** Record the cost per unit.\n- **Number of Units:** Enter the number of units.\n- **Cost Estimate:** Multiply number of units times cost per unit.",
             "value": [
                 {
                     "ID": "",
@@ -18,7 +18,7 @@
             ]
         },
         "Analogous Estimates": {
-            "guidance": "Array of Analogous Estimates",
+            "guidance": "- **ID:** Unique identifier.\n- **Previous Activity:** Enter a description of the previous activity.\n- **Previous Cost:** Document the cost of the previous activity.\n- **Current Activity:** Describe how the current activity is different.\n- **Multiplier:** Divide current activity by previous activity.\n- **Cost Estimate:** Multiply previous cost by multiplier.",
             "value": [
                 {
                     "ID": "",
@@ -31,7 +31,7 @@
             ]
         },
         "Three-Point Estimates": {
-            "guidance": "Array of Three-Point Estimates",
+            "guidance": "- **ID:** Unique identifier.\n- **Optimistic Cost:** Estimate assuming all goes well.\n- **Most Likely Cost:** Estimate assuming normal fluctuations.\n- **Pessimistic Cost:** Estimate assuming significant risks materialize.\n- **Expected Cost:** cE = ( cO + 4cM + cP ) /6",
             "value": [
                 {
                     "ID": "",
@@ -39,25 +39,6 @@
                     "Most Likely Cost": "",
                     "Pessimistic Cost": "",
                     "Expected Cost": ""
-                }
-            ]
-        },
-        "Bottom-Up Estimates": {
-            "guidance": "Array of Bottom-Up Estimates",
-            "value": [
-                {
-                    "ID": "",
-                    "Labor Hours": "",
-                    "Labor Rate": "",
-                    "Total Labor": "",
-                    "Material": "",
-                    "Supplies": "",
-                    "Equipment": "",
-                    "Travel": "",
-                    "Other Direct Costs": "",
-                    "Indirect Costs": "",
-                    "Reserve": "",
-                    "Estimate": ""
                 }
             ]
         }

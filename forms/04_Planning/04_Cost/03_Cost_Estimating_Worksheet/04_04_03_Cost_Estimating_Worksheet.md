@@ -27,4 +27,3 @@ Form: COST ESTIMATING WORKSHEET (Instructions)
 **1. Parametric Estimates:** Use for activities driven by a quantifiable measure (e.g. square feet). (ID, Cost Variable, Cost Per Unit, Number of Units, Cost Estimate).
 **2. Analogous Estimates:** Use for activities compared to previous similar work. (ID, Previous Activity, Previous Cost, Current Activity, Multiplier, Cost Estimate).
 **3. Three-Point Estimates:** Use to account for uncertainty using beta distribution. (ID, Optimistic Cost, Most Likely Cost, Pessimistic Cost, Expected Cost).
-**4. Bottom-Up Estimates:** Detailed estimates at the work package level. (ID, Labor Hours, Labor Rate, Total Labor, Material, Supplies, Equipment, Travel, Other Direct Costs, Indirect Costs, Reserve, Estimate).
