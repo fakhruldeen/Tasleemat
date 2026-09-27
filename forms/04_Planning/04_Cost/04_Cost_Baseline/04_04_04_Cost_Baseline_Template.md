@@ -7,6 +7,7 @@ Section Instructions:
 *   **Planned Period Cost:** The cost planned to be spent during this specific period.
 *   **Cumulative Cost:** The running total of planned costs up to and including this period (this represents the S-Curve).
 *   **Remarks / Key Activities:** The major work packages or deliverables driving the cost in this period.
+*   **S-Curve Graphic:** Update the mermaid xychart-beta block. The x-axis should be short alphanumeric strings (e.g. [P1, P2]) to avoid parsing errors. y-axis is Cumulative Cost.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -35,7 +36,7 @@ Section Instructions:
 ```mermaid
 xychart-beta
     title "Cost Baseline S-Curve"
-    x-axis [Period 1, Period 2, Period 3, Period 4, Period 5, Period 6]
+    x-axis [P1, P2, P3, P4, P5, P6]
     y-axis "Cumulative Cost" 0 --> 10000
     line [1000, 2500, 4500, 7000, 9000, 10000]
     bar [1000, 1500, 2000, 2500, 2000, 1000]

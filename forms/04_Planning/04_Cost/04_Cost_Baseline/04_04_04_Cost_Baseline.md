@@ -29,6 +29,6 @@ Form: COST BASELINE (Instructions)
 
 **3. S-Curve Graphic:**
 *   Generate a `mermaid` diagram of type `xychart-beta`.
-*   The `x-axis` should be the Periods.
+*   The `x-axis` should be the Periods using short alphanumeric strings (e.g. `[P1, P2, P3]`) to avoid Mermaid lexical errors.
 *   The `y-axis` should map to the Cumulative Cost scale.
 *   Use `line` for Cumulative Cost and `bar` for Planned Period Cost.
