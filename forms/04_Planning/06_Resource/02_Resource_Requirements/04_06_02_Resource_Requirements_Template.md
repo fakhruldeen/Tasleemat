@@ -9,13 +9,6 @@ Section Instructions:
 *   **Comments:** Include information on basis of estimate, grade, competency, or other relevant information.
 -->
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body, div, p, table, th, td, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif !important;
-}
-</style>
-
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">RESOURCE REQUIREMENTS</h1>
