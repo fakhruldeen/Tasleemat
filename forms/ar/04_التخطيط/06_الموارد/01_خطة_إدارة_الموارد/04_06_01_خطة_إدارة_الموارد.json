@@ -1,53 +1,18 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إدارة الموارد هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة خطة إدارة الموارد.",
     "form_name": "خطة إدارة الموارد",
-    "document_reference": "PMO-04.06.01",
-    "project_title": "",
-    "date_prepared": "",
     "fields": {
-        "Team member identification": {
-            "guidance": "Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards.",
-            "value": ""
-        },
-        "Team member acquisition": {
-            "guidance": "Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures.",
-            "value": ""
-        },
-        "Team member management": {
-            "guidance": "Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer.",
-            "value": ""
-        },
-        "Project organizational chart": {
-            "guidance": "Create a hierarchy chart to show the project reporting and organizational structure.",
-            "value": ""
-        },
-        "Roles and responsibilities</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
-            "value": ""
-        },
-        "Training requirements": {
-            "guidance": "Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished.",
-            "value": ""
-        },
-        "Rewards and recognition": {
-            "guidance": "Describe any reward and recognition processes and limitations.",
-            "value": ""
-        },
-        "Team development": {
-            "guidance": "Describe methods for developing individual team members and the team as a whole.",
-            "value": ""
-        },
-        "Physical resource identification": {
-            "guidance": "Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards.",
-            "value": ""
-        },
-        "Physical resource acquisition": {
-            "guidance": "Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.",
-            "value": ""
-        },
-        "Physical resource management": {
-            "guidance": "Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.",
-            "value": ""
+        "الأدوار والمسؤوليات": {
+            "guidance": "مصفوفة الأدوار.",
+            "value": [
+                {
+                    "الدور": "",
+                    "الصلاحيات": "",
+                    "المسؤولية": "",
+                    "المؤهلات": "",
+                    "الكفاءات": ""
+                }
+            ]
         }
     }
 }

@@ -1,17 +1,17 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the Resource Management Plan based on the project context.
 
 Section Instructions:
-*   **Team member identification:** Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Team member acquisition:** Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures.
-*   **Team member management:** Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer.
-*   **Project organizational chart:** Create a hierarchy chart to show the project reporting and organizational structure.
-*   **Training requirements:** Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished.
+*   **Team member identification:** Methods used to identify the skill sets needed and the level of skill needed. Includes techniques to estimate number of resources (past projects, parametric estimates, industry standards).
+*   **Team member acquisition:** Document how staff will be brought on to the project. Describe differences between internal and contract team members regarding on-boarding.
+*   **Team member management:** Document how team members will be managed and eventually released. Include knowledge transfer methods.
+*   **Project organizational chart:** Create a hierarchy chart (Mermaid flowchart TD) to show the project reporting and organizational structure.
+*   **Roles and responsibilities:** Provide information on Role, Authority, Responsibility, Qualifications, and Competencies.
+*   **Training requirements:** Describe required training on equipment, technology, or company processes.
 *   **Rewards and recognition:** Describe any reward and recognition processes and limitations.
 *   **Team development:** Describe methods for developing individual team members and the team as a whole.
-*   **Physical resource identification:** Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards.
-*   **Physical resource acquisition:** Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes.
-*   **Physical resource management:** Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information.
+*   **Physical resource identification:** Methods used to identify materials, equipment, supplies.
+*   **Physical resource acquisition:** Document how equipment/materials will be acquired (buy, lease, rent).
+*   **Physical resource management:** Document how materials/equipment will be managed (inventory, supply chain, logistics).
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -23,77 +23,58 @@ Section Instructions:
 
 ---
 
-### Team member identification
-<!-- Methods used to identify the skill sets needed and the level of skill needed. This includes techniques to estimate the number of resources needed, such as information from past projects, parametric estimates, or industry standards. -->
+## 1. Team Resource Management
 
+### 1.1 Team member identification
+> [ Add details... ]
+
+### 1.2 Team member acquisition
+> [ Add details... ]
+
+### 1.3 Team member management
 > [ Add details... ]
 
 ---
 
-### Team member acquisition
-<!-- Document how staff will be brought on to the project. Describe any differences between internal team members and contract team members with regard to on-boarding procedures. -->
+## 2. Project Organizational Chart
+```mermaid
+flowchart TD
+    PM[Project Manager] --> TM1[Team Member 1]
+    PM --> TM2[Team Member 2]
+```
 
+---
+
+## 3. Roles and Responsibilities
+| Role | Authority | Responsibility | Qualifications | Competencies |
+| :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 4. Team Development and Support
+
+### 4.1 Training requirements
+> [ Add details... ]
+
+### 4.2 Rewards and recognition
+> [ Add details... ]
+
+### 4.3 Team development
 > [ Add details... ]
 
 ---
 
-### Team member management
-<!-- Document how team members will be managed and eventually released from the team. Management methods may vary depending on the relative authority of the project manager and whether team members are internal to the organization or contract staff. Team member release should include methods for knowledge transfer. -->
+## 5. Physical Resource Management
 
+### 5.1 Physical resource identification
 > [ Add details... ]
 
----
-
-### Project organizational chart
-<!-- Create a hierarchy chart to show the project reporting and organizational structure. -->
-
+### 5.2 Physical resource acquisition
 > [ Add details... ]
 
----
-
-### Roles and responsibilities</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
-> [ Add details... ]
-
----
-
-### Training requirements
-<!-- Describe any required training on equipment, technology, or company processes. Include information on how and when training will be accomplished. -->
-
-> [ Add details... ]
-
----
-
-### Rewards and recognition
-<!-- Describe any reward and recognition processes and limitations. -->
-
-> [ Add details... ]
-
----
-
-### Team development
-<!-- Describe methods for developing individual team members and the team as a whole. -->
-
-> [ Add details... ]
-
----
-
-### Physical resource identification
-<!-- Methods used to identify the materials, equipment, and supplies needed to complete the work. This includes units of measure and techniques to estimate the amount of resources needed, such as information from past projects, parametric estimates, or industry standards. -->
-
-> [ Add details... ]
-
----
-
-### Physical resource acquisition
-<!-- Document how equipment, materials, and supplies will be acquired. This can include buy, lease, rent, or pull from inventory. In the event resources are acquired, ensure alignment with procurement management processes. -->
-
-> [ Add details... ]
-
----
-
-### Physical resource management
-<!-- Document how materials, equipment, and supplies will be managed to ensure they are available when needed. This can include appropriate inventory, supply chain, and logistics information. -->
-
+### 5.3 Physical resource management
 > [ Add details... ]
 
 ---
