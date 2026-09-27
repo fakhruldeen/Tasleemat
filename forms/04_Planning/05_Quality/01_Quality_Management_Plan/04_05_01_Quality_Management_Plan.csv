@@ -1,5 +1,19 @@
-Category,Field 1,Field 2,Field 3
-Standards,Standard / Regulation,Description / Application,
-Objectives,Deliverable / Process,Quality Metric / Objective,Target Value
-Roles,Role,Name / Team,Quality Responsibilities
-Reviews,Deliverable / Process,Review Type,Reviewer
+[ Quality Standards ]
+Standard / Regulation,Description / Application
+,
+
+[ Quality Objectives ]
+Deliverable / Process,Quality Metric / Objective,Target Value
+,,
+
+[ Quality Roles and Responsibilities ]
+Role,Name / Team,Quality Responsibilities
+,,
+
+[ Deliverables and Processes Subject to Quality Review ]
+Deliverable / Process,Review Type,Reviewer
+,,
+
+[ Applicable Quality Procedures ]
+Procedure Type,Description / Implementation
+,
