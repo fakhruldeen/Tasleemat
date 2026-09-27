@@ -12,46 +12,23 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.05.01`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Quality Management Plan** in alignment with Tasleemat framework.
+This document provides a comprehensive reference to understand the purpose and usage of the **Quality Management Plan**.
 
 ---
 
 ### 1. What?
-A subsidiary management plan aligned with Tasleemat standards known as the **Quality Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
-
----
+A component of the project management plan that describes how applicable policies, procedures, and guidelines will be implemented to achieve the quality objectives for the project.
 
 ### 2. Why?
-To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
-
----
+To ensure that the project will satisfy the needs for which it was undertaken and to formalize the project's quality policies, procedures, and standards.
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Developed during the **PLANNING Process Group** (Process 8.1 Plan Quality Management).
 
 ---
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
 
 ### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately and professionally complete the **QUALITY MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **Quality standards:** Quality standards are usually industry or product driven. They may be ISO standards, IEEE, or some other regulatory or industry body.
-*   **Quality objectives:** Quality objectives are the measures that must be achieved by the project or product components to meet the stakeholder needs. Objectives are the target you want to achieve. You may have metrics or specifications that provide a quantifiable measurement of success.
-*   **Quality roles and responsibilities:** Define the roles necessary to conduct quality activities on the project and the responsibilities associated with each.
-*   **Deliverables and processes:** subject to quality review The key deliverables that have metrics or measures associated with quality objectives The processes used in the project that require verification or validation that they are being performed correctly, or in accordance with quality requirements or objectives
-*   **Quality management approach:** The approach that will be used to manage the quality process. Includes the timing and content of project and product quality audits.
-*   **Quality control approach:** The approach that will be used to measure the product and the project performance to ensure the product meets the quality objectives
-*   **Applicable quality procedures:** Procedures that will be used for the project, such as • Nonconformance and rework • Corrective actions • Quality audits • Continuous improvement
+Align with: Project charter, Scope management plan, Requirements management plan, Resource management plan, Procurement documents.
 
 ---
 
