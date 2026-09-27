@@ -1,4 +1,10 @@
-<!-- LLM INSTRUCTIONS: Fill out each section completely based on the project's financial governance requirements. -->
+<!-- LLM INSTRUCTIONS: Fill out each section completely based on the project's financial governance requirements.
+
+Column Definitions:
+*   **Units of measure:** Indicate how each type of resource will be measured (staff hours, days, physical units, lump sum).
+*   **Level of precision:** Indicate rounding rules for cost estimates (e.g., rounded to nearest thousand).
+*   **Level of accuracy:** Describe the acceptable variance range for estimates (progressive elaboration).
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

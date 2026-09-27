@@ -1,4 +1,12 @@
-<!-- LLM INSTRUCTIONS: Modify the Mermaid Gantt chart to visually represent the project schedule. Ensure valid Mermaid syntax. -->
+<!-- LLM INSTRUCTIONS: Modify the Mermaid Gantt chart to visually represent the project schedule. Ensure valid Mermaid syntax.
+
+Column Definitions:
+*   **WBS Identifier:** The unique WBS code linking the activity to the work package.
+*   **Activity Name:** A brief description of the work.
+*   **Start Date:** The planned start date (YYYY-MM-DD).
+*   **Finish Date:** The planned finish date (YYYY-MM-DD).
+*   **Resource Name:** The person or role assigned to the activity.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

@@ -1,4 +1,11 @@
-<!-- LLM INSTRUCTIONS: Fill in the table rows based on project context. Add or remove rows as needed. -->
+<!-- LLM INSTRUCTIONS: Fill in the table rows based on project context. Add or remove rows as needed.
+
+Column Definitions:
+*   **ID:** A unique identifier for the activity (often tied to the WBS).
+*   **Activity Name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
+*   **Description of Work:** Provide more detail to the activity description, such as a process or method to accomplish the work.
+*   **Planned Release / Iteration:** Indicate the planned release or iteration for each activity (especially relevant for adaptive/agile development approaches).
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

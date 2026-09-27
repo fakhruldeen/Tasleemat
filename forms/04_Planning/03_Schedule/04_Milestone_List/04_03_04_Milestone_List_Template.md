@@ -1,4 +1,11 @@
-<!-- LLM INSTRUCTIONS: Fill in the table rows based on project context. Add or remove rows as needed. -->
+<!-- LLM INSTRUCTIONS: Fill in the table rows based on project context. Add or remove rows as needed.
+
+Column Definitions:
+*   **ID:** A unique identifier for the milestone.
+*   **Milestone Name:** Milestone name that uniquely defines the milestone.
+*   **Milestone Description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete.
+*   **Type:** A description of the type of milestone, such as Internal/External, Interim/Final, or Mandatory/Optional.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

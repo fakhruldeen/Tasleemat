@@ -1,4 +1,10 @@
-<!-- LLM INSTRUCTIONS: Generate the Mermaid diagram below based on the project schedule. -->
+<!-- LLM INSTRUCTIONS: Generate the Mermaid diagram below based on the project schedule.
+
+Column Definitions:
+*   **Predecessor:** The activity that must occur first.
+*   **Relationship & Lead/Lag:** The relationship type (FS, SS, FF, SF) and any acceleration/delay (e.g., FS+3d).
+*   **Successor:** The activity that follows.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
