@@ -14,10 +14,11 @@
 
 ```mermaid
 graph LR
-    %% [ Add details... ]
-    %% Example:
-    %% A[Activity A] -->|FS| B[Activity B]
-    %% A -->|SS +2d| C[Activity C]
+    %% [ Add your network diagram dependencies here. Below is an example: ]
+    A[Activity A] -->|FS| B[Activity B]
+    A -->|SS +2d| C[Activity C]
+    B -->|FF| D[Activity D]
+    C -->|FS| D
 ```
 
 ---
