@@ -1,4 +1,4 @@
-<!-- LLM INSTRUCTIONS: Fill in the table and generate the Mermaid diagram. -->
+<!-- LLM INSTRUCTIONS: Generate the Mermaid diagram below based on the project schedule. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -9,22 +9,15 @@
 
 ---
 
-### 1. Network Diagram Dependencies
-<!-- A tabular representation of the nodes and edges of the network diagram -->
-
-| Predecessor | Relationship & Lead/Lag | Successor |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
----
-
-### 2. Network Diagram Visualization
-<!-- Mermaid Graph LR visualization representing the table above -->
+### Network Diagram Visualization
+<!-- Mermaid Graph LR visualization representing schedule dependencies -->
 
 ```mermaid
-[ Add details... e.g. graph LR 
- A[Activity A] -->|FS| B[Activity B] ]
+graph LR
+    %% [ Add details... ]
+    %% Example:
+    %% A[Activity A] -->|FS| B[Activity B]
+    %% A -->|SS +2d| C[Activity C]
 ```
 
 ---

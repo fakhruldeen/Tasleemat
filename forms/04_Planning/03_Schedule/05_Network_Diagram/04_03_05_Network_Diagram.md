@@ -19,13 +19,5 @@ Form: NETWORK DIAGRAM (Instructions)
 
 ---
 
-### 1. Network Diagram Dependencies
-**Instruction:** Generate a table listing the connections between activities/milestones.
-
-**Columns Definition:**
-*   **Predecessor:** The activity or milestone that comes first.
-*   **Relationship & Lead/Lag:** The relationship type (FS, SS, FF, SF) and any applied lead (-days) or lag (+days).
-*   **Successor:** The activity or milestone that follows.
-
-### 2. Network Diagram Visualization
+### Network Diagram Visualization
 **Instruction:** Generate a valid `mermaid` block (using `graph LR` or `graph TD`) that visually represents the dependencies listed in the table above. Ensure node names are concise or utilize node IDs with labels (e.g., `A[Activity A] -->|FS| B[Activity B]`).
