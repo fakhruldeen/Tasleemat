@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Cost Baseline
-nav_order: 1
+nav_order: 5
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,38 +12,30 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.04.04`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Cost Baseline** in alignment with Tasleemat framework.
+This document provides a comprehensive reference to understand the purpose and usage of the **Cost Baseline**.
 
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Cost Baseline**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
-
----
+The cost baseline is the approved version of the time-phased project budget, excluding any management reserves. It serves as the benchmark against which actual cost performance is measured.
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
-
----
+To monitor and control project spending. By establishing a time-phased baseline (often visualized as an S-curve), the project manager can compare actual expenditures against planned expenditures at any point in time using Earned Value Management (EVM).
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Developed during the **PLANNING Process Group** (Process 7.3 Determine Budget). It is established once estimates are aggregated and contingency reserves are added. It only changes through formal change control.
 
 ---
 
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+### 4. Components of the Project Budget
+1. **Activity Cost Estimates:** The base cost of all project work.
+2. **Contingency Reserves:** Added to activity estimates to cover *known-unknown* risks. (This sum creates the **Cost Baseline**).
+3. **Management Reserves:** Added on top of the Cost Baseline to cover *unknown-unknown* risks. (This sum creates the **Total Project Budget**).
 
 ---
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
 
 ### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately and professionally complete the **Cost Baseline**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+The cost baseline should be aligned with the Assumption log, Project schedule, Cost estimates, Project team assignments, and Risk register.
 
 ---
 

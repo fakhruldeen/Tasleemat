@@ -1,8 +1,29 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Cost Baseline template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Cost Baseline",
+    "_llm_instructions": "Populate the budget summary and time-phased budget.",
+    "form_name": "COST BASELINE",
     "document_reference": "PMO-04.04.04",
     "project_title": "",
     "date_prepared": "",
-    "fields": {}
+    "fields": {
+        "Budget Summary": {
+            "guidance": "Array containing the budget rollup.\n- **Component:** Activity Cost Estimates, Contingency Reserve, Cost Baseline, Management Reserve, Total Project Budget.\n- **Amount:** The total allocated funds.",
+            "value": [
+                {
+                    "Component": "",
+                    "Amount": ""
+                }
+            ]
+        },
+        "Time-Phased Budget": {
+            "guidance": "Array of periodic costs.\n- **Period:** e.g. Month 1.\n- **Planned Period Cost:** Cost for this period.\n- **Cumulative Cost:** Running total (S-Curve data).\n- **Remarks:** Key activities driving the cost.",
+            "value": [
+                {
+                    "Period": "",
+                    "Planned Period Cost": "",
+                    "Cumulative Cost": "",
+                    "Remarks / Key Activities": ""
+                }
+            ]
+        }
+    }
 }
