@@ -12,46 +12,61 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.07.01`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Communications Management Plan** in alignment with Tasleemat framework.
-
 ---
 
-### 1. What?
-A subsidiary management plan aligned with Tasleemat standards known as the **Communications Management Plan**, which describes how this specific aspect of the project will be planned, structured, and controlled.
+### Context & Definition
+The communications management plan is a component of the project management plan. It describes how project communications will be planned, structured, implemented, and monitored for effectiveness. Typical information includes:
+*   Stakeholder communication requirements
+*   Information
+*   Method or media
+*   Time frame and frequency
+*   Sender
+*   Communication assumptions and constraints
+*   Glossary of common terminology
 
----
+In addition, the communications management plan can include resources, time, and budgets associated with communication activities, methods for addressing sensitive or proprietary information, and methods for updating the communications management plan.
 
-### 2. Why?
-To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+The communications management plan can receive information from:
+*   Project charter
+*   Requirements documentation
+*   Resource management plan
+*   Stakeholder register
+*   Stakeholder engagement plan
 
----
+It provides information to:
+*   Stakeholder register
+*   Stakeholder engagement plan
 
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
+The communications management plan is an output from process 10.1 Plan Communications Management in the PMBOK® Guide – Sixth Edition. It is updated periodically throughout the project as stakeholders are added and leave the project and as communications needs emerge and shift.
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+Consider the following tips to help tailor the communications management plan to meet your needs:
+*   When multiple organizations are working on a project there will be additional information needed, such as:
+    *   Person responsible for authorizing release of internal or confidential information
+    *   How different communication hardware, software, and technologies will be addressed to ensure information gets to everyone regardless of their communication infrastructure
+*   If you have a multinational team your plan will need to account for the business language, currency unit of measure, translation, and other factors required to ensure effective communication across multiple countries and cultures.
+*   On a project that has a significant communication component you will want to identify the resources allocated for communication activities, the time requirements, and the budget allocated.
+*   For projects with complex communication needs, include a flowchart of the sequence of communication events.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The communications management plan should be aligned and consistent with the following documents:
+*   Project schedule
+*   Stakeholder register
+*   Stakeholder engagement plan
 
-### 5. How?
-To accurately and professionally complete the **COMMUNICATIONS MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+---
 
-*   **Stakeholder communication:** requirements The people or the groups of people who need to receive project information and their specific requirements
-*   **Information:** Describe the information to be communicated, including language, format, content, and level of detail.
-*   **Method or media:** Describe how the information will be delivered; for example, email, meetings, web meetings, etc.
-*   **Time frame and frequency:** List how often the information is to be provided and under what circumstances.
-*   **Sender:** Insert the name of the person or the group that will provide the information.
-*   **Communication constraints or:** assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution.
-*   **Glossary of common terminology:** List any terms or acronyms unique to the project or that are used in a unique way.
+### Document Elements Description (Table 2.27)
+
+| Document Element | Description |
+| :--- | :--- |
+| **Stakeholder communication requirements** | The people or the groups of people who need to receive project information and their specific requirements. |
+| **Information** | Describe the information to be communicated, including language, format, content, and level of detail. |
+| **Method or media** | Describe how the information will be delivered; for example, email, meetings, web meetings, etc. |
+| **Time frame and frequency** | List how often the information is to be provided and under what circumstances. |
+| **Sender** | Insert the name of the person or the group that will provide the information. |
+| **Communication constraints or assumptions** | List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution. |
+| **Glossary of common terminology** | List any terms or acronyms unique to the project or that are used in a unique way. |
 
 ---
 
@@ -59,6 +74,7 @@ To accurately and professionally complete the **COMMUNICATIONS MANAGEMENT PLAN**
 * [📄 Printable Template (Markdown)](04_07_01_Communications_Management_Plan_Template.md)
 * [🤖 LLM Generation Prompt](04_07_01_Communications_Management_Plan.md)
 * [📊 Data Schema (JSON)](04_07_01_Communications_Management_Plan.json)
-* [📈 Tabular Data (CSV)](04_07_01_Communications_Management_Plan.csv)
+* [📈 Tabular Data (CSV Matrix)](04_07_01_Communications_Management_Plan_Matrix.csv)
+* [📈 Tabular Data (CSV Glossary)](04_07_01_Communications_Management_Plan_Glossary.csv)
 
 </div>

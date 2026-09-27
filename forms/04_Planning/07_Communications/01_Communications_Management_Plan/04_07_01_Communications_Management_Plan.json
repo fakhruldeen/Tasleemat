@@ -1,37 +1,38 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this COMMUNICATIONS MANAGEMENT PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Communications Management Plan.\n\nContext & Definition:\nThe communications management plan is a component of the project management plan. It describes how project communications will be planned, structured, implemented, and monitored for effectiveness. Typical information includes:\n*   Stakeholder communication requirements\n*   Information\n*   Method or media\n*   Time frame and frequency\n*   Sender\n*   Communication assumptions and constraints\n*   Glossary of common terminology\n\nIn addition, the communications management plan can include resources, time, and budgets associated with communication activities, methods for addressing sensitive or proprietary information, and methods for updating the communications management plan.\n\nThe communications management plan can receive information from:\n*   Project charter\n*   Requirements documentation\n*   Resource management plan\n*   Stakeholder register\n*   Stakeholder engagement plan\n\nIt provides information to:\n*   Stakeholder register\n*   Stakeholder engagement plan\n\nThe communications management plan is an output from process 10.1 Plan Communications Management in the PMBOK® Guide – Sixth Edition. It is updated periodically throughout the project as stakeholders are added and leave the project and as communications needs emerge and shift.\n\nTailoring Tips:\n*   When multiple organizations are working on a project there will be additional information needed, such as:\n    *   Person responsible for authorizing release of internal or confidential information\n    *   How different communication hardware, software, and technologies will be addressed to ensure information gets to everyone regardless of their communication infrastructure\n*   If you have a multinational team your plan will need to account for the business language, currency unit of measure, translation, and other factors required to ensure effective communication across multiple countries and cultures.\n*   On a project that has a significant communication component you will want to identify the resources allocated for communication activities, the time requirements, and the budget allocated.\n*   For projects with complex communication needs, include a flowchart of the sequence of communication events.\n\nAlignment:\nThe communications management plan should be aligned and consistent with the following documents:\n*   Project schedule\n*   Stakeholder register\n*   Stakeholder engagement plan",
     "form_name": "COMMUNICATIONS MANAGEMENT PLAN",
     "document_reference": "PMO-04.07.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Stakeholder communication": {
-            "guidance": "requirements The people or the groups of people who need to receive project information and their specific requirements",
+        "Communication Constraints or Assumptions": {
+            "guidance": "List any assumptions or constraints.",
             "value": ""
         },
-        "Information": {
-            "guidance": "Describe the information to be communicated, including language, format, content, and level of detail.",
+        "Communications Matrix": {
+            "guidance": "Provide a table identifying Stakeholder communication requirements, Information, Method or media, Time frame and frequency, and Sender.",
+            "value": [
+                {
+                    "Stakeholder / Group": "[ Add details... ]",
+                    "Information": "[ Add details... ]",
+                    "Method or Media": "[ Add details... ]",
+                    "Time Frame / Frequency": "[ Add details... ]",
+                    "Sender": "[ Add details... ]"
+                }
+            ]
+        },
+        "Communication Guidelines & Resources": {
+            "guidance": "Describe hardware/software used, resource/budget allocations, multinational protocols, etc.",
             "value": ""
         },
-        "Method or media": {
-            "guidance": "Describe how the information will be delivered; for example, email, meetings, web meetings, etc.",
-            "value": ""
-        },
-        "Time frame and frequency": {
-            "guidance": "List how often the information is to be provided and under what circumstances.",
-            "value": ""
-        },
-        "Sender": {
-            "guidance": "Insert the name of the person or the group that will provide the information.",
-            "value": ""
-        },
-        "Communication constraints or": {
-            "guidance": "assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution.",
-            "value": ""
-        },
-        "Glossary of common terminology": {
-            "guidance": "List any terms or acronyms unique to the project or that are used in a unique way.",
-            "value": ""
+        "Glossary of Common Terminology": {
+            "guidance": "List any terms or acronyms unique to the project.",
+            "value": [
+                {
+                    "Term / Acronym": "[ Add details... ]",
+                    "Definition": "[ Add details... ]"
+                }
+            ]
         }
     }
 }
