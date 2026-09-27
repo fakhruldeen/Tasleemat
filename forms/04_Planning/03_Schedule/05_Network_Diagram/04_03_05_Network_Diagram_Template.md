@@ -23,6 +23,13 @@ graph LR
 
 ---
 
+### 1. Network Diagram Dependencies
+| Predecessor | Relationship & Lead/Lag | Successor |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
 ### Signatures
 
 | Prepared By: | Reviewed By: | Approved By: |

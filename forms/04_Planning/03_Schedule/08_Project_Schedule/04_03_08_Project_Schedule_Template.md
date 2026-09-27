@@ -13,20 +13,31 @@
 gantt
     title Project Schedule
     dateFormat  YYYY-MM-DD
-    axisFormat  %m/%d
+    axisFormat  %Y-%m-%d
+    tickInterval 1week
     
+    %% MS Project Style Grouping & Dependencies
     %% [ Add your project schedule activities here. Below is an example: ]
-    section Design Phase
-    WBS 1.1 Requirements    :a1, 2026-01-01, 7d
-    WBS 1.2 Architecture    :a2, after a1, 10d
+    section 1.0 Design Phase
+    1.1 Requirements    :done, req, 2026-01-01, 7d
+    1.2 Architecture    :active, arch, after req, 10d
     
-    section Build Phase
-    WBS 2.1 Backend         :b1, after a2, 14d
-    WBS 2.2 Frontend        :b2, after a2, 14d
+    section 2.0 Build Phase
+    2.1 Backend         :crit, back, after arch, 14d
+    2.2 Frontend        :front, after arch, 14d
     
-    section Testing
-    WBS 3.1 QA Testing      :c1, after b1 b2, 7d
+    section 3.0 Testing
+    3.1 QA Testing      :milestone, qa, after back front, 0d
 ```
+
+---
+
+### 1. Schedule Data Table
+| WBS Identifier | Activity Name | Start Date | Finish Date | Resource Name |
+| :--- | :--- | :--- | :--- | :--- |
+| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
 
 ---
 

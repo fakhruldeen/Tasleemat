@@ -21,3 +21,12 @@ Form: NETWORK DIAGRAM (Instructions)
 
 ### Network Diagram Visualization
 **Instruction:** Generate a valid `mermaid` block (using `graph LR` or `graph TD`) that visually represents the dependencies listed in the table above. Ensure node names are concise or utilize node IDs with labels (e.g., `A[Activity A] -->|FS| B[Activity B]`).
+
+
+### Table: Network Diagram Dependencies
+**Instruction:** Provide the raw tabular data defining the relationships.
+
+**Columns Definition:**
+*   **Predecessor:** The activity that must occur first.
+*   **Relationship & Lead/Lag:** The relationship type (FS, SS, FF, SF) and any acceleration/delay (e.g., FS+3d).
+*   **Successor:** The activity that follows.
