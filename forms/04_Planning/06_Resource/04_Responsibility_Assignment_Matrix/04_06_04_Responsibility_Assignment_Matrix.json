@@ -9,9 +9,10 @@
             "guidance": "Array of assignments. The 'Work Package / Activity' is the row name, and other key-value pairs map Resource Names to their Participation Level (e.g., R, A, C, I).",
             "value": [
                 {
-                    "Work Package / Activity": "",
-                    "Resource 1 Name": "",
-                    "Resource 2 Name": ""
+                    "Work Package / Activity": "Example: Gather Requirements",
+                    "Resource 1 Name": "R",
+                    "Resource 2 Name": "A",
+                    "Resource 3 Name": "C"
                 }
             ]
         },
@@ -22,6 +23,26 @@
                     "Code": "R",
                     "Role": "Responsible",
                     "Description": "Does the work to complete the task."
+                },
+                {
+                    "Code": "A",
+                    "Role": "Accountable",
+                    "Description": "Ultimately answerable for the correct and thorough completion of the task."
+                },
+                {
+                    "Code": "C",
+                    "Role": "Consulted",
+                    "Description": "Those whose opinions are sought, typically subject matter experts."
+                },
+                {
+                    "Code": "I",
+                    "Role": "Informed",
+                    "Description": "Those who are kept up-to-date on progress."
+                },
+                {
+                    "Code": "S",
+                    "Role": "Sign-off",
+                    "Description": "Approves the specific deliverable or phase."
                 }
             ]
         }
