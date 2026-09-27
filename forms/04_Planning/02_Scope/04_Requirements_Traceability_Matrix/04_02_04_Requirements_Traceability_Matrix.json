@@ -6,40 +6,52 @@
     "date_prepared": "",
     "fields": {
         "Requirements Traceability Matrix": {
-            "guidance": "Generate a JSON array of objects representing the Requirements Traceability Matrix table. Each object must have the exact keys specified below. Generate at least 5 representative entries.\nRules:\n- 'ID': Unique requirement identifier.\n- 'Requirement': Condition or capability to be met.\n- 'Source': Stakeholder that identified the requirement.\n- 'Priority': e.g., Level 1, Level 2.\n- 'Category': e.g., functional, nonfunctional.\n- 'Business objective': Business objective met by fulfilling the requirement.\n- 'Deliverable': Associated deliverable.\n- 'Verification': Metric used to measure satisfaction.\n- 'Validation': Technique used to validate stakeholder needs.",
+            "guidance": "Generate a JSON array of objects representing the Requirements Traceability Matrix table. Each object must contain two nested objects: 'Requirement Information' and 'Relationship Traceability'.\nRules for 'Requirement Information':\n- 'ID': Unique requirement identifier.\n- 'Requirement': Condition or capability to be met.\n- 'Source': Stakeholder that identified the requirement.\n- 'Priority': e.g., Level 1, Level 2.\n- 'Category': e.g., functional, nonfunctional.\n\nRules for 'Relationship Traceability':\n- 'Business objective': Business objective met by fulfilling the requirement.\n- 'Deliverable': Associated deliverable.\n- 'Verification': Metric used to measure satisfaction.\n- 'Validation': Technique used to validate stakeholder needs.",
             "value": [
                 {
-                    "ID": "",
-                    "Requirement": "",
-                    "Source": "",
-                    "Priority": "",
-                    "Category": "",
-                    "Business objective": "",
-                    "Deliverable": "",
-                    "Verification": "",
-                    "Validation": ""
+                    "Requirement Information": {
+                        "ID": "",
+                        "Requirement": "",
+                        "Source": "",
+                        "Priority": "",
+                        "Category": ""
+                    },
+                    "Relationship Traceability": {
+                        "Business objective": "",
+                        "Deliverable": "",
+                        "Verification": "",
+                        "Validation": ""
+                    }
                 },
                 {
-                    "ID": "",
-                    "Requirement": "",
-                    "Source": "",
-                    "Priority": "",
-                    "Category": "",
-                    "Business objective": "",
-                    "Deliverable": "",
-                    "Verification": "",
-                    "Validation": ""
+                    "Requirement Information": {
+                        "ID": "",
+                        "Requirement": "",
+                        "Source": "",
+                        "Priority": "",
+                        "Category": ""
+                    },
+                    "Relationship Traceability": {
+                        "Business objective": "",
+                        "Deliverable": "",
+                        "Verification": "",
+                        "Validation": ""
+                    }
                 },
                 {
-                    "ID": "",
-                    "Requirement": "",
-                    "Source": "",
-                    "Priority": "",
-                    "Category": "",
-                    "Business objective": "",
-                    "Deliverable": "",
-                    "Verification": "",
-                    "Validation": ""
+                    "Requirement Information": {
+                        "ID": "",
+                        "Requirement": "",
+                        "Source": "",
+                        "Priority": "",
+                        "Category": ""
+                    },
+                    "Relationship Traceability": {
+                        "Business objective": "",
+                        "Deliverable": "",
+                        "Verification": "",
+                        "Validation": ""
+                    }
                 }
             ]
         },
