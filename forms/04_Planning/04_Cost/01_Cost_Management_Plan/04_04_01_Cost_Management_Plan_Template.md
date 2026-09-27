@@ -1,5 +1,4 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context. -->
+<!-- LLM INSTRUCTIONS: Fill out each section completely based on the project's financial governance requirements. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -10,59 +9,25 @@
 
 ---
 
-### Units of measure
-<!-- Indicate how each type of resource will be measured. For example, labor units may be measured in staff hours, days, or weeks. Physical resources may be measured in gallons, meters, tons, or whatever is appropriate for the material. Some resources are based on a lump sum cost each time they are used. -->
+### Measurement Metrics
+| Units of Measure | Level of Precision | Level of Accuracy |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> [ Add details... ]
+### 1. Organizational Procedure Links
+[ Describe how cost estimating and reporting follows the WBS and organizational code of accounts. ]
 
----
+### 2. Control Thresholds
+[ Indicate the variance thresholds (e.g., % deviation from baseline) that trigger preventive or corrective action. ]
 
-### Level of precision
-<!-- Indicate whether cost estimates will be rounded to hundreds, thousands, or some other measurement. -->
+### 3. Rules of Performance Measurement
+[ Define how progress/expenditures are measured (e.g., Earned Value Management rules, ETC/EAC equations). ]
 
-> [ Add details... ]
+### 4. Cost Reporting Information and Format
+[ Document the format and frequency of status and progress reporting for project costs. ]
 
----
-
-### Level of accuracy
-<!-- Describe the level of accuracy needed for estimates. The level of accuracy may evolve over time as more information is known (progressive elaboration). If there are guidelines for rolling wave planning and the level of refinement that will be used for cost estimates, indicate the levels of accuracy required as time progresses. -->
-
-> [ Add details... ]
-
----
-
-### Organizational procedure
-<!-- links Cost estimating and reporting should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures. -->
-
-> [ Add details... ]
-
----
-
-### Control thresholds
-<!-- Indicate the measures that determine whether an activity, work package, or the project as a whole is on budget, requires preventive action, or is over budget and requires corrective action. Usually indicated as a percent deviation from the baseline. -->
-
-> [ Add details... ]
-
----
-
-### Rules of performance
-<!-- measurement Identify the level in the WBS where progress and expenditures will be measured. For projects that use earned value management indicate whether costs will be reported at the work package or control account level. Describe the measurement method that will be used, such as weighted milestones, fixed-formula, percent complete, etc. Document the equations that will be used to forecast estimates to complete (ETC) and estimates at completion (EAC). -->
-
-> [ Add details... ]
-
----
-
-### Cost reporting information
-<!-- and format Document the cost information required for status and progress reporting. If a specific reporting format will be used, attach a copy or refer to the specific form or template. Indicate the reporting frequency. -->
-
-> [ Add details... ]
-
----
-
-### Additional details
-<!-- Describe variables associated with strategic funding choices, such as make or buy, buy or lease, borrowing funds versus using in-house funding, etc. -->
-
-> [ Add details... ]
+### 5. Additional Details
+[ Describe variables associated with strategic funding choices (make/buy, borrowing vs in-house funding). ]
 
 ---
 
