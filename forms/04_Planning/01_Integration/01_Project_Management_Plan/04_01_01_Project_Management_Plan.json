@@ -133,6 +133,14 @@
                 {
                     "Scope variance threshold": "",
                     "Scope baseline management": ""
+                },
+                {
+                    "Scope variance threshold": "",
+                    "Scope baseline management": ""
+                },
+                {
+                    "Scope variance threshold": "",
+                    "Scope baseline management": ""
                 }
             ]
         },
@@ -142,12 +150,28 @@
                 {
                     "Schedule variance threshold": "",
                     "Schedule baseline management": ""
+                },
+                {
+                    "Schedule variance threshold": "",
+                    "Schedule baseline management": ""
+                },
+                {
+                    "Schedule variance threshold": "",
+                    "Schedule baseline management": ""
                 }
             ]
         },
         "Cost Variance Thresholds": {
             "guidance": "Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.",
             "value": [
+                {
+                    "Cost variance threshold": "",
+                    "Cost baseline management": ""
+                },
+                {
+                    "Cost variance threshold": "",
+                    "Cost baseline management": ""
+                },
                 {
                     "Cost variance threshold": "",
                     "Cost baseline management": ""

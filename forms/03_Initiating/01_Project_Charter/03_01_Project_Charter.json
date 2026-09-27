@@ -88,6 +88,14 @@
                 {
                     "Stakeholder(s)": "",
                     "Role(s)": ""
+                },
+                {
+                    "Stakeholder(s)": "",
+                    "Role(s)": ""
+                },
+                {
+                    "Stakeholder(s)": "",
+                    "Role(s)": ""
                 }
             ]
         },
@@ -123,6 +131,14 @@
         "Name and authority of the sponsor": {
             "guidance": "Name and authority of the sponsor or other person(s) authorizing the project charter. MUST be formatted as a Markdown table with exactly 2 columns: Name / Position, Authority Level.",
             "value": [
+                {
+                    "Name / Position": "",
+                    "Authority Level": ""
+                },
+                {
+                    "Name / Position": "",
+                    "Authority Level": ""
+                },
                 {
                     "Name / Position": "",
                     "Authority Level": ""
