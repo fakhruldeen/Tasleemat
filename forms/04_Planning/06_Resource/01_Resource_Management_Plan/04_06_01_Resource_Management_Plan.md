@@ -36,7 +36,7 @@ Form: RESOURCE MANAGEMENT PLAN (Instructions)
 ---
 
 ### Section Generation Instructions
-*   **Team member identification:** Provide a table identifying Role, Number (estimated count), and Skill Level.
+*   **Team member identification and estimates:** Provide a table identifying Role, Number (estimated count), and Skill Level.
 *   **Team member acquisition:** Document how staff will be brought on to the project. Describe differences between internal and contract team members regarding on-boarding.
 *   **Team member management and release:** Document how team members will be managed and eventually released. Include methods for knowledge transfer and staff release.
 *   **Project organizational chart:** Create a hierarchy chart (Mermaid flowchart TD) to show the project reporting and organizational structure.
@@ -44,6 +44,6 @@ Form: RESOURCE MANAGEMENT PLAN (Instructions)
 *   **Training requirements:** Describe required training on equipment, technology, or company processes.
 *   **Rewards and recognition:** Describe any reward and recognition processes and limitations.
 *   **Team development:** Describe methods for developing individual team members and the team as a whole.
-*   **Physical resource identification:** Provide a table identifying Resource, Amount, and Grade.
+*   **Physical resource identification and estimates:** Provide a table identifying Resource, Amount, and Grade.
 *   **Physical resource acquisition:** Document how equipment/materials will be acquired (buy, lease, rent).
 *   **Physical resource management:** Document how materials/equipment will be managed (inventory, supply chain, logistics).

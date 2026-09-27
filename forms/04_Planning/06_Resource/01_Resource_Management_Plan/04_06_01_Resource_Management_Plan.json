@@ -2,7 +2,7 @@
     "_llm_instructions": "Populate the Resource Management Plan.",
     "form_name": "RESOURCE MANAGEMENT PLAN",
     "fields": {
-        "Team member identification": {
+        "Team member identification and estimates": {
             "guidance": "Table identifying Role, Number, and Skill Level.",
             "value": [
                 {
@@ -46,7 +46,7 @@
             "guidance": "Describe methods for developing team members.",
             "value": ""
         },
-        "Physical resource identification": {
+        "Physical resource identification and estimates": {
             "guidance": "Table identifying Resource, Amount, and Grade.",
             "value": [
                 {

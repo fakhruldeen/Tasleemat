@@ -45,7 +45,7 @@ The resource management plan should be aligned and consistent with the following
 
 | Document Element | Description |
 | :--- | :--- |
-| **Team member identification** | Identify the skill sets needed, including Role, Number, and Skill Level. |
+| **Team member identification and estimates** | Identify the skill sets needed, including Role, Number, and Skill Level. |
 | **Team member acquisition** | Document how staff will be brought on to the project. |
 | **Team member management and release** | Document how team members will be managed and eventually released (staff release). |
 | **Project organizational chart** | Create a hierarchy chart to show the project reporting structure. |
@@ -53,7 +53,7 @@ The resource management plan should be aligned and consistent with the following
 | **Training requirements** | Describe any required training on equipment, technology, or company processes. |
 | **Rewards and recognition** | Describe any reward and recognition processes and limitations. |
 | **Team development** | Describe methods for developing individual team members and the team as a whole. |
-| **Physical resource identification** | Identify the materials needed, including Resource, Amount, and Grade. |
+| **Physical resource identification and estimates** | Identify the materials needed, including Resource, Amount, and Grade. |
 | **Physical resource acquisition** | Document how equipment, materials, and supplies will be acquired. |
 | **Physical resource management** | Document how materials, equipment, and supplies will be managed. |
 
