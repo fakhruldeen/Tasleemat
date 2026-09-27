@@ -9,48 +9,17 @@ Form: SCOPE MANAGEMENT PLAN (Instructions)
 > This document serves as the detailed instruction set for generating the `SCOPE MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
+> The scope management plan is part of the project management plan. It specifies how the project scope will be defined, developed, monitored, controlled, and validated. Planning how to manage scope should include at least processes for developing a detailed scope statement, decomposing the project into discrete deliverables using a WBS, determining what constitutes a scope change versus a revision, maintaining the WBS and the scope baseline, and how deliverables will be accepted. The scope management plan can receive information from the project charter and project management plan, and it provides information to requirements documentation, scope statement, WBS, and WBS dictionary. It is developed once and does not usually change.
 > 
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The scope management plan should be aligned and consistent with the following documents:
+• Development approach
+• Life cycle description
+• Change management plan
+• Requirements management plan
+• Release and iteration plan
 
 ---
 
-### Units of measure
-**Instruction:** Indicate how each type of resource will be measured. For example, labor units may be measured in staff hours, days, or weeks. Physical resources may be measured in gallons, meters, tons, or whatever is appropriate for the material. Some resources are based on a lump sum cost each time they are used.
-
----
-
-### Level of precision
-**Instruction:** Indicate whether cost estimates will be rounded to hundreds, thousands, or some other measurement.
-
----
-
-### Level of accuracy
-**Instruction:** Describe the level of accuracy needed for estimates. The level of accuracy may evolve over time as more information is known (progressive elaboration). If there are guidelines for rolling wave planning and the level of refinement that will be used for cost estimates, indicate the levels of accuracy required as time progresses.
-
----
-
-### Organizational procedure
-**Instruction:** links Cost estimating and reporting should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures.
-
----
-
-### Control thresholds
-**Instruction:** Indicate the measures that determine whether an activity, work package, or the project as a whole is on budget, requires preventive action, or is over budget and requires corrective action. Usually indicated as a percent deviation from the baseline.
-
----
-
-### Rules of performance
-**Instruction:** measurement Identify the level in the WBS where progress and expenditures will be measured. For projects that use earned value management indicate whether costs will be reported at the work package or control account level. Describe the measurement method that will be used, such as weighted milestones, fixed-formula, percent complete, etc. Document the equations that will be used to forecast estimates to complete (ETC) and estimates at completion (EAC).
-
----
-
-### Cost reporting information
-**Instruction:** and format Document the cost information required for status and progress reporting. If a specific reporting format will be used, attach a copy or refer to the specific form or template. Indicate the reporting frequency.
-
----
-
-### Additional details
-**Instruction:** Describe variables associated with strategic funding choices, such as make or buy, buy or lease, borrowing funds versus using in-house funding, etc.
-
+### Scope Management Approach
+**Instruction:** Populate a Markdown table with exactly 2 columns: Plan Element, Approach & Guidelines. The following rows MUST be pre-filled under Plan Element: WBS, WBS Dictionary, Scope baseline maintenance, Deliverable acceptance, Scope and requirements integration, Project management and business analysis integration. Describe how the WBS will be arranged, guidelines for control accounts, WBS Dictionary details, types of scope changes for formal change control, how deliverables will be validated, integration of scope and requirements, and integration of business analysis.

@@ -1,41 +1,38 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this SCOPE MANAGEMENT PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this SCOPE MANAGEMENT PLAN template based on the provided project context. Context & Definition: The scope management plan is part of the project management plan. It specifies how the project scope will be defined, developed, monitored, controlled, and validated. Planning how to manage scope should include at least processes for developing a detailed scope statement, decomposing the project into discrete deliverables using a WBS, determining what constitutes a scope change versus a revision, maintaining the WBS and the scope baseline, and how deliverables will be accepted. The scope management plan can receive information from the project charter and project management plan, and it provides information to requirements documentation, scope statement, WBS, and WBS dictionary. It is developed once and does not usually change. Alignment: The scope management plan should be aligned and consistent with the following documents:\n• Development approach\n• Life cycle description\n• Change management plan\n• Requirements management plan\n• Release and iteration plan",
     "form_name": "SCOPE MANAGEMENT PLAN",
     "document_reference": "PMO-04.02.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Units of measure": {
-            "guidance": "Indicate how each type of resource will be measured. For example, labor units may be measured in staff hours, days, or weeks. Physical resources may be measured in gallons, meters, tons, or whatever is appropriate for the material. Some resources are based on a lump sum cost each time they are used.",
-            "value": ""
-        },
-        "Level of precision": {
-            "guidance": "Indicate whether cost estimates will be rounded to hundreds, thousands, or some other measurement.",
-            "value": ""
-        },
-        "Level of accuracy": {
-            "guidance": "Describe the level of accuracy needed for estimates. The level of accuracy may evolve over time as more information is known (progressive elaboration). If there are guidelines for rolling wave planning and the level of refinement that will be used for cost estimates, indicate the levels of accuracy required as time progresses.",
-            "value": ""
-        },
-        "Organizational procedure": {
-            "guidance": "links Cost estimating and reporting should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures.",
-            "value": ""
-        },
-        "Control thresholds": {
-            "guidance": "Indicate the measures that determine whether an activity, work package, or the project as a whole is on budget, requires preventive action, or is over budget and requires corrective action. Usually indicated as a percent deviation from the baseline.",
-            "value": ""
-        },
-        "Rules of performance": {
-            "guidance": "measurement Identify the level in the WBS where progress and expenditures will be measured. For projects that use earned value management indicate whether costs will be reported at the work package or control account level. Describe the measurement method that will be used, such as weighted milestones, fixed-formula, percent complete, etc. Document the equations that will be used to forecast estimates to complete (ETC) and estimates at completion (EAC).",
-            "value": ""
-        },
-        "Cost reporting information": {
-            "guidance": "and format Document the cost information required for status and progress reporting. If a specific reporting format will be used, attach a copy or refer to the specific form or template. Indicate the reporting frequency.",
-            "value": ""
-        },
-        "Additional details": {
-            "guidance": "Describe variables associated with strategic funding choices, such as make or buy, buy or lease, borrowing funds versus using in-house funding, etc.",
-            "value": ""
+        "Scope Management Approach": {
+            "guidance": "Populate a Markdown table with exactly 2 columns: Plan Element, Approach & Guidelines. The following rows MUST be pre-filled under Plan Element: WBS, WBS Dictionary, Scope baseline maintenance, Deliverable acceptance, Scope and requirements integration, Project management and business analysis integration. Describe how the WBS will be arranged, guidelines for control accounts, WBS Dictionary details, types of scope changes for formal change control, how deliverables will be validated, integration of scope and requirements, and integration of business analysis.",
+            "value": [
+                {
+                    "Plan Element": "WBS",
+                    "Approach & Guidelines": ""
+                },
+                {
+                    "Plan Element": "WBS Dictionary",
+                    "Approach & Guidelines": ""
+                },
+                {
+                    "Plan Element": "Scope baseline maintenance",
+                    "Approach & Guidelines": ""
+                },
+                {
+                    "Plan Element": "Deliverable acceptance",
+                    "Approach & Guidelines": ""
+                },
+                {
+                    "Plan Element": "Scope and requirements integration",
+                    "Approach & Guidelines": ""
+                },
+                {
+                    "Plan Element": "Project management and business analysis integration",
+                    "Approach & Guidelines": ""
+                }
+            ]
         }
     }
 }

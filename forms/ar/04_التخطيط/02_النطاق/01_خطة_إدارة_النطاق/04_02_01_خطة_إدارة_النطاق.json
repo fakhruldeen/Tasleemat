@@ -1,41 +1,38 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إدارة النطاق هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إدارة النطاق هذا بناءً على سياق المشروع. السياق والتعريف: تعتبر خطة إدارة النطاق جزءاً من خطة إدارة المشروع. وهي تحدد كيفية تعريف نطاق المشروع وتطويره ومراقبته والتحكم فيه والتحقق من صحته. يجب أن يتضمن التخطيط لكيفية إدارة النطاق على الأقل عمليات لتطوير بيان نطاق مفصل، وتحليل المشروع إلى تسليمات منفصلة باستخدام هيكل تجزئة العمل (WBS)، وتحديد ما يشكل تغييراً في النطاق مقابل مراجعة، والحفاظ على هيكل تجزئة العمل والخط المرجعي للنطاق، وكيف سيتم قبول التسليمات. يمكن لخطة إدارة النطاق أن تتلقى معلومات من ميثاق المشروع وخطة إدارة المشروع، وتوفر معلومات لتوثيق المتطلبات، وبيان النطاق، وهيكل تجزئة العمل، وقاموس هيكل تجزئة العمل. يتم تطويرها مرة واحدة وعادة لا تتغير. المحاذاة: يجب أن تكون خطة إدارة النطاق متوافقة ومتسقة مع الوثائق التالية:\n• نهج التطوير\n• وصف دورة الحياة\n• خطة إدارة التغيير\n• خطة إدارة المتطلبات\n• خطة الإصدار والتكرار",
     "form_name": "خطة إدارة النطاق",
     "document_reference": "PMO-04.02.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Units of measure": {
-            "guidance": "Indicate how each type of resource will be measured. For example, labor units may be measured in staff hours, days, or weeks. Physical resources may be measured in gallons, meters, tons, or whatever is appropriate for the material. Some resources are based on a lump sum cost each time they are used.",
-            "value": ""
-        },
-        "Level of precision": {
-            "guidance": "Indicate whether cost estimates will be rounded to hundreds, thousands, or some other measurement.",
-            "value": ""
-        },
-        "Level of accuracy": {
-            "guidance": "Describe the level of accuracy needed for estimates. The level of accuracy may evolve over time as more information is known (progressive elaboration). If there are guidelines for rolling wave planning and the level of refinement that will be used for cost estimates, indicate the levels of accuracy required as time progresses.",
-            "value": ""
-        },
-        "Organizational procedure": {
-            "guidance": "links Cost estimating and reporting should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures.",
-            "value": ""
-        },
-        "Control thresholds": {
-            "guidance": "Indicate the measures that determine whether an activity, work package, or the project as a whole is on budget, requires preventive action, or is over budget and requires corrective action. Usually indicated as a percent deviation from the baseline.",
-            "value": ""
-        },
-        "Rules of performance": {
-            "guidance": "measurement Identify the level in the WBS where progress and expenditures will be measured. For projects that use earned value management indicate whether costs will be reported at the work package or control account level. Describe the measurement method that will be used, such as weighted milestones, fixed-formula, percent complete, etc. Document the equations that will be used to forecast estimates to complete (ETC) and estimates at completion (EAC).",
-            "value": ""
-        },
-        "Cost reporting information": {
-            "guidance": "and format Document the cost information required for status and progress reporting. If a specific reporting format will be used, attach a copy or refer to the specific form or template. Indicate the reporting frequency.",
-            "value": ""
-        },
-        "Additional details": {
-            "guidance": "Describe variables associated with strategic funding choices, such as make or buy, buy or lease, borrowing funds versus using in-house funding, etc.",
-            "value": ""
+        "نهج إدارة النطاق": {
+            "guidance": "قم بتعبئة جدول Markdown بعمودين بالضبط: عنصر الخطة، النهج والإرشادات. يجب تعبئة الصفوف التالية مسبقاً ضمن عنصر الخطة: هيكل تجزئة العمل (WBS)، قاموس هيكل تجزئة العمل (WBS Dictionary)، صيانة الخط المرجعي للنطاق، قبول التسليمات، تكامل النطاق والمتطلبات، تكامل إدارة المشروع وتحليل الأعمال. صِف كيف سيتم ترتيب هيكل تجزئة العمل، وإرشادات حسابات التحكم، وتفاصيل قاموس هيكل تجزئة العمل، وأنواع تغييرات النطاق للتحكم الرسمي في التغيير، وكيف سيتم التحقق من صحة التسليمات، وتكامل النطاق والمتطلبات، وتكامل تحليل الأعمال.",
+            "value": [
+                {
+                    "عنصر الخطة": "هيكل تجزئة العمل (WBS)",
+                    "النهج والإرشادات": ""
+                },
+                {
+                    "عنصر الخطة": "قاموس هيكل تجزئة العمل (WBS Dictionary)",
+                    "النهج والإرشادات": ""
+                },
+                {
+                    "عنصر الخطة": "صيانة الخط المرجعي للنطاق",
+                    "النهج والإرشادات": ""
+                },
+                {
+                    "عنصر الخطة": "قبول التسليمات",
+                    "النهج والإرشادات": ""
+                },
+                {
+                    "عنصر الخطة": "تكامل النطاق والمتطلبات",
+                    "النهج والإرشادات": ""
+                },
+                {
+                    "عنصر الخطة": "تكامل إدارة المشروع وتحليل الأعمال",
+                    "النهج والإرشادات": ""
+                }
+            ]
         }
     }
 }
