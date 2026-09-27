@@ -53,6 +53,9 @@ For EACH Work Package in your WBS, create an entry detailing:
 * [📄 Printable Template (Markdown)](04_02_07_WBS_Dictionary_Template.md)
 * [🤖 LLM Generation Prompt](04_02_07_WBS_Dictionary.md)
 * [📊 Data Schema (JSON)](04_02_07_WBS_Dictionary.json)
-* [📈 Tabular Data (CSV)](04_02_07_WBS_Dictionary.csv)
+* [📈 Tabular Data - Main (CSV)](04_02_07_WBS_Dictionary.csv)
+* [📈 Tabular Data - Milestones (CSV)](04_02_07_WBS_Dictionary_Milestones.csv)
+* [📈 Tabular Data - Activities & Costs (CSV)](04_02_07_WBS_Dictionary_Activities.csv)
+*(Note: Code of Accounts serves as the relational foreign key across these CSV files)*
 
 </div>

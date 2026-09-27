@@ -1,2 +1,4 @@
-Field,Guidance,LLM_Generated_Value
-Work Packages,Generate a JSON array of work package objects.,
+Code of Accounts,Work Package Name,Due Dates,Description of Work,Assumptions and Constraints,Quality Requirements,Acceptance Criteria,Technical Information,Agreement Information
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
