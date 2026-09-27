@@ -1,93 +1,174 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this WBS DICTIONARY template based on the provided project context. Context & Definition: The WBS dictionary supports the work breakdown structure (WBS) by providing detail about the control accounts and work packages it contains. The dictionary can provide detailed information about each work package or summary information at the control account level. The WBS dictionary is progressively elaborated throughout the project. Alignment: The WBS dictionary should be aligned and consistent with the following documents:\n• Project charter\n• Requirements documentation\n• Project scope statement\n• WBS\n• Activity list",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared', and generate an array of Work Packages under 'fields'. Context: The WBS dictionary supports the work breakdown structure (WBS) by providing detail about the control accounts and work packages it contains. The dictionary provides detailed information about each work package.",
     "form_name": "WBS DICTIONARY",
     "document_reference": "PMO-04.02.07",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Code of Account": {
-            "guidance": "Enter the code of account from the WBS.",
-            "value": ""
-        },
-        "Work Package Name": {
-            "guidance": "Enter the name of the work package.",
-            "value": ""
-        },
-        "Description of Work": {
-            "guidance": "Enter a brief description of the work package deliverable from the WBS.",
-            "value": ""
-        },
-        "Quality Requirements": {
-            "guidance": "Document any quality requirements or metrics associated with the work package.",
-            "value": ""
-        },
-        "Acceptance Criteria": {
-            "guidance": "Describe the acceptance criteria for the deliverable.",
-            "value": ""
-        },
-        "Technical Information": {
-            "guidance": "Describe or reference any technical requirements or documentation needed.",
-            "value": ""
-        },
-        "Agreement Information": {
-            "guidance": "Reference any contracts or other agreements that impact the work package.",
-            "value": ""
-        },
-        "Milestones": {
-            "guidance": "Generate a JSON array of milestones.\nRules:\n- 'Milestone': Name of milestone.\n- 'Due Date': Due date.",
+        "Work Packages": {
+            "guidance": "Generate a JSON array of work package objects.",
             "value": [
                 {
-                    "Milestone": "",
-                    "Due Date": ""
+                    "Work Package Name": "",
+                    "Code of Accounts": "",
+                    "Due Dates": "",
+                    "Description of Work": "",
+                    "Assumptions and Constraints": "",
+                    "Milestones": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "Activities & Costs": [
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        },
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        },
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        }
+                    ],
+                    "Quality Requirements": "",
+                    "Acceptance Criteria": "",
+                    "Technical Information": "",
+                    "Agreement Information": ""
                 },
                 {
-                    "Milestone": "",
-                    "Due Date": ""
+                    "Work Package Name": "",
+                    "Code of Accounts": "",
+                    "Due Dates": "",
+                    "Description of Work": "",
+                    "Assumptions and Constraints": "",
+                    "Milestones": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "Activities & Costs": [
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        },
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        },
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        }
+                    ],
+                    "Quality Requirements": "",
+                    "Acceptance Criteria": "",
+                    "Technical Information": "",
+                    "Agreement Information": ""
                 },
                 {
-                    "Milestone": "",
-                    "Due Date": ""
-                }
-            ]
-        },
-        "Activities & Costs": {
-            "guidance": "Generate a JSON array of activities and costs associated with this work package.\nRules:\n- 'ID': Unique activity identifier.\n- 'Activity': Description of activity.\n- 'Team resource': Resources required.\n- 'Labor hours': Total effort.\n- 'Labor rate': Rate.\n- 'Labor total': Labor hours x rate.\n- 'Material units': Amount of material.\n- 'Material cost': Material cost.\n- 'Material total': Material units x cost.\n- 'Total cost': Sum of labor, materials, etc.",
-            "value": [
-                {
-                    "ID": "",
-                    "Activity": "",
-                    "Team resource": "",
-                    "Labor hours": "",
-                    "Labor rate": "",
-                    "Labor total": "",
-                    "Material units": "",
-                    "Material cost": "",
-                    "Material total": "",
-                    "Total cost": ""
-                },
-                {
-                    "ID": "",
-                    "Activity": "",
-                    "Team resource": "",
-                    "Labor hours": "",
-                    "Labor rate": "",
-                    "Labor total": "",
-                    "Material units": "",
-                    "Material cost": "",
-                    "Material total": "",
-                    "Total cost": ""
-                },
-                {
-                    "ID": "",
-                    "Activity": "",
-                    "Team resource": "",
-                    "Labor hours": "",
-                    "Labor rate": "",
-                    "Labor total": "",
-                    "Material units": "",
-                    "Material cost": "",
-                    "Material total": "",
-                    "Total cost": ""
+                    "Work Package Name": "",
+                    "Code of Accounts": "",
+                    "Due Dates": "",
+                    "Description of Work": "",
+                    "Assumptions and Constraints": "",
+                    "Milestones": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "Activities & Costs": [
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        },
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        },
+                        {
+                            "ID": "",
+                            "Activity": "",
+                            "Team resource": "",
+                            "Labor hours": "",
+                            "Labor rate": "",
+                            "Labor total": "",
+                            "Material units": "",
+                            "Material cost": "",
+                            "Material total": "",
+                            "Total cost": ""
+                        }
+                    ],
+                    "Quality Requirements": "",
+                    "Acceptance Criteria": "",
+                    "Technical Information": "",
+                    "Agreement Information": ""
                 }
             ]
         }

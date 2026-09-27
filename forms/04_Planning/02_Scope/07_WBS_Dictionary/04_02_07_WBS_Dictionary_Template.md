@@ -9,63 +9,42 @@
 
 ---
 
-### Work Package Details
+<!-- REPEAT THIS SECTION FOR EACH WORK PACKAGE -->
+### Work Package: [ Add details... ]
 
-* **Code of Account:** [ Add details... ]
 * **Work Package Name:** [ Add details... ]
+* **Code of Accounts:** [ Add details... ]
+* **Due Dates:** [ Add details... ]
 
----
-
-### Description of Work
-<!-- Enter a brief description of the work package deliverable from the WBS. -->
-
+**Description of Work:**
 > [ Add details... ]
 
----
-
-### Quality Requirements
-<!-- Document any quality requirements or metrics associated with the work package. -->
-
+**Assumptions and Constraints:**
 > [ Add details... ]
 
----
+**Milestones:**
+1. [ Add details... ]
+2. [ Add details... ]
 
-### Acceptance Criteria
-<!-- Describe the acceptance criteria for the deliverable, usually from the scope statement. -->
-
-> [ Add details... ]
-
----
-
-### Technical Information
-<!-- Describe or reference any technical requirements or documentation needed to complete the work package. -->
-
-> [ Add details... ]
-
----
-
-### Agreement Information
-<!-- Reference any contracts or other agreements that impact the work package. -->
-
-> [ Add details... ]
-
----
-
-### Milestones
-
-| Milestone | Due Date |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
-
----
-
-### Activities & Costs
-
+**Activities & Costs:**
 | ID | Activity | Team resource | Labor hours | Labor rate | Labor total | Material units | Material cost | Material total | Total cost |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
+**Quality Requirements:**
+> [ Add details... ]
+
+**Acceptance Criteria:**
+> [ Add details... ]
+
+**Technical Information:**
+> [ Add details... ]
+
+**Agreement Information:**
+> [ Add details... ]
+
 ---
+<!-- END REPEAT SECTION -->
 
 ### Signatures
 
