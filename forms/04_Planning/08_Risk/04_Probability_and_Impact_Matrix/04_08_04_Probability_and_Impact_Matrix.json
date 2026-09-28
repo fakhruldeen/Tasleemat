@@ -1,12 +1,57 @@
 {
-    "_llm_instructions": "Populate the Probability and Impact Matrix based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Probability and Impact Matrix: Provide the exact numerical scores in each box of the 5x5 matrix.\n- Risk Score Thresholds: Define the numerical range and required actions for High, Medium, and Low risk tiers.",
+    "_llm_instructions": "Populate the Probability and Impact Matrix based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Probability and Impact Matrix (Threats): Provide the exact numerical scores in each box of the 5x5 matrix for negative risks (threats).\n- Probability and Impact Matrix (Opportunities): Provide the exact numerical scores in each box of the 5x5 matrix for positive risks (opportunities).\n- Risk Score Thresholds: Define the numerical range and required actions for High, Medium, and Low risk tiers.",
     "form_name": "PROBABILITY AND IMPACT MATRIX",
     "document_reference": "PMO-04.08.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Probability and Impact Matrix": {
-            "guidance": "Provide the exact numerical scores in each box of the 5x5 matrix.",
+        "Probability and Impact Matrix (Threats)": {
+            "guidance": "Provide the exact numerical scores in each box of the 5x5 matrix for threats.",
+            "value": [
+                {
+                    "Probability \\ Impact": "Very High",
+                    "Very Low": "",
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                },
+                {
+                    "Probability \\ Impact": "High",
+                    "Very Low": "",
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                },
+                {
+                    "Probability \\ Impact": "Medium",
+                    "Very Low": "",
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                },
+                {
+                    "Probability \\ Impact": "Low",
+                    "Very Low": "",
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                },
+                {
+                    "Probability \\ Impact": "Very Low",
+                    "Very Low": "",
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                }
+            ]
+        },
+        "Probability and Impact Matrix (Opportunities)": {
+            "guidance": "Provide the exact numerical scores in each box of the 5x5 matrix for opportunities.",
             "value": [
                 {
                     "Probability \\ Impact": "Very High",

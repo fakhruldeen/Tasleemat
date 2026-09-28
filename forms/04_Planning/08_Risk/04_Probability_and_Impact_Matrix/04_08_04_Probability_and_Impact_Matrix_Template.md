@@ -1,7 +1,8 @@
 <!-- LLM INSTRUCTIONS: Populate the Probability and Impact Matrix based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
 Section-by-Section Instructions:
-- Probability and Impact Matrix: Provide the exact numerical scores in each box of the 5x5 matrix.
+- Probability and Impact Matrix (Threats): Provide the exact numerical scores in each box of the 5x5 matrix for negative risks (threats).
+- Probability and Impact Matrix (Opportunities): Provide the exact numerical scores in each box of the 5x5 matrix for positive risks (opportunities).
 - Risk Score Thresholds: Define the numerical range and required actions for High, Medium, and Low risk tiers.
 
 Ensure lists and tables are populated strictly according to the markdown structure provided. -->
@@ -15,7 +16,19 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 ---
 
-## Probability and Impact Matrix (P-I Matrix)
+## Probability and Impact Matrix (Threats)
+
+| Probability \ Impact | Very Low | Low | Medium | High | Very High |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Very High** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
+| **High** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
+| **Medium** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
+| **Low** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
+| **Very Low** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
+
+---
+
+## Probability and Impact Matrix (Opportunities)
 
 | Probability \ Impact | Very Low | Low | Medium | High | Very High |
 | :--- | :---: | :---: | :---: | :---: | :---: |
