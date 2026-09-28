@@ -6,7 +6,7 @@
     "date_prepared": "",
     "fields": {
         "Definitions of Impact by Objective": {
-            "guidance": "Provide specific thresholds for Scope, Quality, Schedule, and Cost across the 5 levels (Very High to Very Low). Example: Very High Schedule Impact = >20% increase.",
+            "guidance": "Provide specific thresholds for Scope, Quality, Schedule, and Cost across the 5 levels (Very High to Very Low).",
             "value": [
                 {
                     "Rating": "Very High",
@@ -46,7 +46,7 @@
             ]
         },
         "Definitions of Probability": {
-            "guidance": "Provide percentage thresholds or verbal descriptors for probability across the 5 levels. Example: Very High = >80%.",
+            "guidance": "Provide percentage thresholds or verbal descriptors for probability across the 5 levels.",
             "value": [
                 {
                     "Rating": "Very High",

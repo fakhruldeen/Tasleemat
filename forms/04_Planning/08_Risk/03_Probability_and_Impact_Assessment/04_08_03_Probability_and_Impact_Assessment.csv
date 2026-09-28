@@ -1,4 +1,4 @@
-Scope impact,Very High,High,Medium,Low,Very Low,Minimal deviation from requirements,There is minor deviation in performance,Cost increase of 10 to 20 percent,Cost increase of 5 to 10 percent,Quality impact,Schedule impact,Cost impact,Probability,Risk rating
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+﻿Field,Guidance,LLM_Generated_Value
+Definitions of Impact by Objective,"Provide specific thresholds for Scope, Quality, Schedule, and Cost across the 5 levels (Very High to Very Low).",
+Definitions of Probability,Provide percentage thresholds or verbal descriptors for probability across the 5 levels.,
+Risk Rating Guidelines,"Define the rule logic for mapping combinations of probability and impact into High, Medium, or Low overall ratings.",

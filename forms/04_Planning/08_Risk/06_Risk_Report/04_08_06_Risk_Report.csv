@@ -1,10 +1,27 @@
-﻿Probability \ Impact,Very High,High,Medium,Low,Very Low
-Very High,[ # ],[ # ],[ # ],[ # ],[ # ]
-High,[ # ],[ # ],[ # ],[ # ],[ # ]
-Medium,[ # ],[ # ],[ # ],[ # ],[ # ]
-Low,[ # ],[ # ],[ # ],[ # ],[ # ]
-Very Low,[ # ],[ # ],[ # ],[ # ],[ # ]
-
-Top Risks,Responses
-[ Risk A ],[ Response A ]
-[ Risk B ],[ Response B ]
+﻿Field,Guidance,LLM_Generated_Value
+Executive Summary,Describe overall project risk exposure and major individual risks.,
+Overall Risk Status and Trends,High-level statement of trends and current risk status.,
+Significant Drivers of Overall Risk,Identify the significant drivers of overall project risk.,
+Recommended Responses to Overall Risk,Outline recommended responses to overall project risk.,
+Probability and Impact Matrix,Provide the exact number of risks in each box of the 5x5 matrix.,
+Metrics,Provide specific metric counts.,
+Critical Risks & Responses,List the top critical risks and their responses.,
+Changes to Critical Risks,Describe any changes to critical risks since the last report.,
+Realized Risks (Transferred to Issue Log),List risks that have occurred and transferred to the issue log.,
+Results from Quantitative Assessments,"Results from S-curve, tornado, etc.",
+Probability of Meeting Objectives,"Provide the probability for Scope, Schedule, Cost, Quality, and Other.",
+Range of Outcomes,Detail outcome ranges and variances.,
+Total Cost Reserve,The total budget allocated for risk responses.,
+Contingency Reserve,Portion of cost reserve for known-unknowns.,
+Management Reserve,Portion of cost reserve for unknown-unknowns.,
+Cost Reserve Used to Date,Cumulative amount of cost reserve consumed so far.,
+Cost Reserve Used This Period,Amount of cost reserve consumed during this period.,
+Remaining Cost Reserve,Balance of cost reserve available.,
+Total Schedule Reserve,Total buffer time allocated for risk responses.,
+Schedule Reserve Used to Date,Cumulative amount of schedule reserve consumed.,
+Schedule Reserve Used This Period,Amount of schedule reserve consumed during this period.,
+Remaining Schedule Reserve,Balance of schedule reserve available.,
+Assessment of Reserve Adequacy,Provide an assessment of whether the remaining reserves are adequate given the current risk profile.,
+Summary of Risk Events,Overview of risk events that occurred and their impacts.,
+Summary of Risk Management Processes,Evaluation of how effectively the risk management processes were executed.,
+Summary of Recommendations,Actionable recommendations stemming from the risk audit.,

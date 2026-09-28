@@ -1,37 +1,74 @@
 {
-    "_llm_instructions": "Populate the Risk Report based on the project context.\n\nContext & Definition:\nThe risk report presents information on overall project risk and summarizes information on individual project risks. It provides information for each of the processes from identification of risks, through analysis, response planning and implementation, and monitoring risks.\n\nSection-by-Section Instructions:\n1. Executive Summary: Provide a statement describing the overall project risk exposure and major individual risks affecting the project, along with proposed responses for trends.\n2. Overall Project Risk:\n   - Overall Risk Status and Trends: Describe overarching trends observed in the risk profile and current status.\n   - Significant Drivers of Overall Risk: Identify the significant drivers of overall project risk.\n   - Recommended Responses to Overall Risk: Outline recommended responses to overall project risk.\n3. Individual Project Risks:\n   - Probability and Impact Matrix: Indicate the exact number of individual risks in each of the 25 boxes of the 5x5 matrix.\n   - Metrics: Provide integer counts for: scope risks, schedule risks, cost risks, quality risks, very high/high/medium probability risks, active risks, and newly closed risks.\n   - Critical Risks & Responses: Populate the 2-column table mapping the 'Top Risks' to their proposed 'Responses'.\n   - Changes to Critical Risks: Describe any changes to critical risks since the last report.\n   - Realized Risks (Transferred to Issue Log): List any risks that materialized during this period and are now being managed as issues.\n4. Quantitative Analysis:\n   - Results from Quantitative Assessments: Summarize results from S-curve, tornado diagrams, etc.\n   - Probability of Meeting Objectives: List the probability for Scope, Schedule, Cost, Quality, and Other.\n   - Range of Outcomes: Detail the Range of Schedule Outcomes, Range of Cost Outcomes, Key Drivers of Variances, and Proposed Responses.\n5. Reserve Status:\n   - Cost Reserve: Detail the Total Cost Reserve (breaking down Contingency vs. Management Reserve), Used to Date, Used This Period, and Remaining Reserve.\n   - Schedule Reserve: Detail the Total Schedule Reserve, Used to Date, Used This Period, and Remaining Reserve.\n   - Assessment of Reserve Adequacy: Provide an assessment of whether the remaining reserves are adequate given the current risk profile.\n6. Risk Audit Summary:\n   - Summary of Risk Events: Summarize historical risk events and occurrences.\n   - Summary of Risk Management Processes: Summarize the effectiveness of the risk management processes.\n   - Summary of Recommendations: Summarize any recommendations arising from the risk audit.\n\nEnsure lists and tables are populated strictly according to the markdown structure provided.",
+    "_llm_instructions": "Populate the Risk Report based on the project context.\n\nContext & Definition:\nThe risk report presents information on overall project risk and summarizes information on individual project risks. It provides information for each of the processes from identification of risks, through analysis, response planning and implementation, and monitoring risks.\n\nSection-by-Section Instructions:\n1. Executive Summary: Provide a statement describing the overall project risk exposure and major individual risks affecting the project, along with proposed responses for trends.\n2. Overall Project Risk:\n   - Overall Risk Status and Trends: Describe overarching trends observed in the risk profile and current status.\n   - Significant Drivers of Overall Risk: Identify the significant drivers of overall project risk.\n   - Recommended Responses to Overall Risk: Outline recommended responses to overall project risk.\n3. Individual Project Risks:\n   - Probability and Impact Matrix: Indicate the exact number of individual risks in each of the 25 boxes of the 5x5 matrix.\n   - Metrics: Provide integer counts for: scope risks, schedule risks, cost risks, quality risks, very high/high/medium probability risks, active risks, and newly closed risks.\n   - Critical Risks & Responses: Populate the 2-column table mapping the 'Top Risks' to their proposed 'Responses'.\n   - Changes to Critical Risks: Describe any changes to critical risks since the last report.\n   - Realized Risks (Transferred to Issue Log): List any risks that materialized during this period and are now being managed as issues.\n4. Quantitative Analysis:\n   - Results from Quantitative Assessments: Summarize results from S-curve, tornado diagrams, etc.\n   - Probability of Meeting Objectives: List the probability for Scope, Schedule, Cost, Quality, and Other.\n   - Range of Outcomes: Detail the Range of Schedule Outcomes, Range of Cost Outcomes, Key Drivers of Variances, and Proposed Responses.\n5. Reserve Status:\n   - Total Cost Reserve: The total budget allocated for risk responses.\n   - Contingency Reserve: Portion of cost reserve for known-unknowns.\n   - Management Reserve: Portion of cost reserve for unknown-unknowns.\n   - Cost Reserve Used to Date: Cumulative amount consumed.\n   - Cost Reserve Used This Period: Amount consumed this period.\n   - Remaining Cost Reserve: Balance available.\n   - Total Schedule Reserve: Total buffer time allocated.\n   - Schedule Reserve Used to Date: Cumulative time buffer consumed.\n   - Schedule Reserve Used This Period: Buffer time consumed this period.\n   - Remaining Schedule Reserve: Balance available.\n   - Assessment of Reserve Adequacy: Provide an assessment of whether the remaining reserves are adequate given the current risk profile.\n6. Risk Audit Summary:\n   - Summary of Risk Events: Summarize historical risk events and occurrences.\n   - Summary of Risk Management Processes: Summarize the effectiveness of the risk management processes.\n   - Summary of Recommendations: Summarize any recommendations arising from the risk audit.\n\nEnsure lists and tables are populated strictly according to the markdown structure provided.",
     "form_name": "RISK REPORT",
     "document_reference": "PMO-04.08.06",
     "project_title": "",
     "date_prepared": "",
-    "reporting_period": "",
     "fields": {
         "Executive Summary": {
-            "Executive summary": {
-                "guidance": "Describe overall project risk exposure and major individual risks.",
-                "value": ""
-            }
+            "guidance": "Describe overall project risk exposure and major individual risks.",
+            "value": ""
         },
-        "Overall Project Risk": {
-            "Overall Risk Status and Trends": {
-                "guidance": "High-level statement of trends and current risk status.",
-                "value": ""
-            },
-            "Significant Drivers of Overall Risk": {
-                "guidance": "Identify the significant drivers of overall project risk.",
-                "value": ""
-            },
-            "Recommended Responses to Overall Risk": {
-                "guidance": "Outline recommended responses to overall project risk.",
-                "value": ""
-            }
+        "Overall Risk Status and Trends": {
+            "guidance": "High-level statement of trends and current risk status.",
+            "value": ""
         },
-        "Individual Project Risks": {
-            "Probability and Impact Matrix": {
-                "guidance": "Provide the number of individual risks in each box of a 5x5 matrix (Very High down to Very Low for both Probability and Impact).",
-                "value": "See Matrix Table"
-            },
-            "Metrics": {
+        "Significant Drivers of Overall Risk": {
+            "guidance": "Identify the significant drivers of overall project risk.",
+            "value": ""
+        },
+        "Recommended Responses to Overall Risk": {
+            "guidance": "Outline recommended responses to overall project risk.",
+            "value": ""
+        },
+        "Probability and Impact Matrix": {
+            "guidance": "Provide the exact number of risks in each box of the 5x5 matrix.",
+            "value": [
+                {
+                    "Probability \\ Impact": "Very High",
+                    "Very High": "",
+                    "High": "",
+                    "Medium": "",
+                    "Low": "",
+                    "Very Low": ""
+                },
+                {
+                    "Probability \\ Impact": "High",
+                    "Very High": "",
+                    "High": "",
+                    "Medium": "",
+                    "Low": "",
+                    "Very Low": ""
+                },
+                {
+                    "Probability \\ Impact": "Medium",
+                    "Very High": "",
+                    "High": "",
+                    "Medium": "",
+                    "Low": "",
+                    "Very Low": ""
+                },
+                {
+                    "Probability \\ Impact": "Low",
+                    "Very High": "",
+                    "High": "",
+                    "Medium": "",
+                    "Low": "",
+                    "Very Low": ""
+                },
+                {
+                    "Probability \\ Impact": "Very Low",
+                    "Very High": "",
+                    "High": "",
+                    "Medium": "",
+                    "Low": "",
+                    "Very Low": ""
+                }
+            ]
+        },
+        "Metrics": {
+            "guidance": "Provide specific metric counts.",
+            "value": {
                 "Number of scope risks": "",
                 "Number of schedule risks": "",
                 "Number of cost risks": "",
@@ -41,77 +78,103 @@
                 "Number of medium probability risks": "",
                 "Number of active risks": "",
                 "Newly closed risks": ""
-            },
-            "Critical Risks": {
-                "guidance": "List the top critical risks and their responses.",
-                "value": [
-                    {
-                        "Top Risks": "",
-                        "Responses": ""
-                    }
-                ]
-            },
-            "Changes to Critical Risks": {
-                "guidance": "Describe any changes to critical risks since the last report.",
-                "value": ""
-            },
-            "Realized Risks (Transferred to Issue Log)": {
-                "guidance": "List risks that have occurred and transferred to the issue log.",
-                "value": ""
             }
         },
-        "Quantitative Analysis": {
-            "Results from Quantitative Assessments": {
-                "guidance": "Results from S-curve, tornado, etc.",
-                "value": ""
-            },
-            "Probability of Meeting Objectives": {
+        "Critical Risks & Responses": {
+            "guidance": "List the top critical risks and their responses.",
+            "value": [
+                {
+                    "Top Risks": "",
+                    "Responses": ""
+                }
+            ]
+        },
+        "Changes to Critical Risks": {
+            "guidance": "Describe any changes to critical risks since the last report.",
+            "value": ""
+        },
+        "Realized Risks (Transferred to Issue Log)": {
+            "guidance": "List risks that have occurred and transferred to the issue log.",
+            "value": ""
+        },
+        "Results from Quantitative Assessments": {
+            "guidance": "Results from S-curve, tornado, etc.",
+            "value": ""
+        },
+        "Probability of Meeting Objectives": {
+            "guidance": "Provide the probability for Scope, Schedule, Cost, Quality, and Other.",
+            "value": {
                 "Scope": "",
                 "Schedule": "",
                 "Cost": "",
                 "Quality": "",
                 "Other": ""
-            },
-            "Range of Outcomes": {
+            }
+        },
+        "Range of Outcomes": {
+            "guidance": "Detail outcome ranges and variances.",
+            "value": {
                 "Range of Schedule Outcomes": "",
                 "Range of Cost Outcomes": "",
                 "Key Drivers of Variances": "",
                 "Proposed Responses": ""
             }
         },
-        "Reserve Status": {
-            "Cost Reserve": {
-                "Total Cost Reserve": "",
-                "Contingency Reserve": "",
-                "Management Reserve": "",
-                "Used to Date": "",
-                "Used This Period": "",
-                "Remaining Reserve": ""
-            },
-            "Schedule Reserve": {
-                "Total Schedule Reserve": "",
-                "Used to Date": "",
-                "Used This Period": "",
-                "Remaining Reserve": ""
-            },
-            "Assessment of Reserve Adequacy": {
-                "guidance": "Provide an assessment of whether the remaining reserves are adequate given the current risk profile.",
-                "value": ""
-            }
+        "Total Cost Reserve": {
+            "guidance": "The total budget allocated for risk responses.",
+            "value": ""
         },
-        "Risk Audit Summary": {
-            "Summary of Risk Events": {
-                "guidance": "",
-                "value": ""
-            },
-            "Summary of Risk Management Processes": {
-                "guidance": "",
-                "value": ""
-            },
-            "Summary of Recommendations": {
-                "guidance": "",
-                "value": ""
-            }
+        "Contingency Reserve": {
+            "guidance": "Portion of cost reserve for known-unknowns.",
+            "value": ""
+        },
+        "Management Reserve": {
+            "guidance": "Portion of cost reserve for unknown-unknowns.",
+            "value": ""
+        },
+        "Cost Reserve Used to Date": {
+            "guidance": "Cumulative amount of cost reserve consumed so far.",
+            "value": ""
+        },
+        "Cost Reserve Used This Period": {
+            "guidance": "Amount of cost reserve consumed during this period.",
+            "value": ""
+        },
+        "Remaining Cost Reserve": {
+            "guidance": "Balance of cost reserve available.",
+            "value": ""
+        },
+        "Total Schedule Reserve": {
+            "guidance": "Total buffer time allocated for risk responses.",
+            "value": ""
+        },
+        "Schedule Reserve Used to Date": {
+            "guidance": "Cumulative amount of schedule reserve consumed.",
+            "value": ""
+        },
+        "Schedule Reserve Used This Period": {
+            "guidance": "Amount of schedule reserve consumed during this period.",
+            "value": ""
+        },
+        "Remaining Schedule Reserve": {
+            "guidance": "Balance of schedule reserve available.",
+            "value": ""
+        },
+        "Assessment of Reserve Adequacy": {
+            "guidance": "Provide an assessment of whether the remaining reserves are adequate given the current risk profile.",
+            "value": ""
+        },
+        "Summary of Risk Events": {
+            "guidance": "Overview of risk events that occurred and their impacts.",
+            "value": ""
+        },
+        "Summary of Risk Management Processes": {
+            "guidance": "Evaluation of how effectively the risk management processes were executed.",
+            "value": ""
+        },
+        "Summary of Recommendations": {
+            "guidance": "Actionable recommendations stemming from the risk audit.",
+            "value": ""
         }
     }
 }

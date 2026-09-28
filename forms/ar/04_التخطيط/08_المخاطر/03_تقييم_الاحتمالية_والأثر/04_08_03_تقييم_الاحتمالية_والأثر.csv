@@ -1,4 +1,4 @@
-Scope impact,Very High,High,Medium,Low,Very Low,Minimal deviation from requirements,There is minor deviation in performance,Cost increase of 10 to 20 percent,Cost increase of 5 to 10 percent,Quality impact,Schedule impact,Cost impact,الاحتمالية,Risk rating
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+﻿Field,Guidance,LLM_Generated_Value
+تعريفات الأثر حسب الهدف,توفير عتبات محددة للنطاق والجودة والجدول الزمني والتكلفة عبر المستويات الخمسة (من مرتفع جداً إلى منخفض جداً).,
+تعريفات الاحتمالية,توفير عتبات مئوية أو واصفات لفظية للاحتمالية عبر المستويات الخمسة.,
+إرشادات تصنيف المخاطر,تحديد القواعد المنطقية لتعيين مجموعات الاحتمالية والأثر إلى تصنيفات عامة مرتفعة أو متوسطة أو منخفضة.,
