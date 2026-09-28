@@ -74,6 +74,7 @@ The risk report should be aligned and consistent with the following documents:
 **Reserve Status**
 *   **Cost Reserve:** Detail the Total Cost Reserve, Used to Date, Used This Period, and Remaining Reserve.
 *   **Schedule Reserve:** Detail the Total Schedule Reserve, Used to Date, Used This Period, and Remaining Reserve.
+*   **Assessment of Reserve Adequacy:** Provide an assessment of whether the remaining reserves are adequate given the current risk profile.
 
 **Risk Audit Summary**
 *   **Summary of Risk Events:** Summarize historical risk events and occurrences.

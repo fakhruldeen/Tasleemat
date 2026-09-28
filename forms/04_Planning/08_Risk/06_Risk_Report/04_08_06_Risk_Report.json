@@ -87,6 +87,10 @@
                 "Used to Date": "",
                 "Used This Period": "",
                 "Remaining Reserve": ""
+            },
+            "Assessment of Reserve Adequacy": {
+                "guidance": "Provide an assessment of whether the remaining reserves are adequate given the current risk profile.",
+                "value": ""
             }
         },
         "Risk Audit Summary": {

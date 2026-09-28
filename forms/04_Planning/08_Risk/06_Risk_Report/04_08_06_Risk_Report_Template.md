@@ -109,6 +109,9 @@ Ensure lists and tables are populated according to instructions. -->
 *   **Used This Period:** [ Add details... ]
 *   **Remaining Reserve:** [ Add details... ]
 
+### Assessment of Reserve Adequacy
+[ Add details... ]
+
 ---
 
 ## Risk Audit Summary
