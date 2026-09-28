@@ -15,7 +15,7 @@ Section-by-Section Instructions:
 <h1 align="center">CHANGE REQUEST</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
-| :--- | :--- |
+| :--- | :--- | :--- |
 
 ---
 
@@ -56,14 +56,14 @@ Section-by-Section Instructions:
 
 ## 4. Impacts of Change
 
-| Area | Impact Description |
-| :--- | :--- |
-| **Scope** | [ Add details... ] |
-| **Quality** | [ Add details... ] |
-| **Requirements** | [ Add details... ] |
-| **Cost** | [ Add details... ] |
-| **Schedule** | [ Add details... ] |
-| **Project documents** | [ Add details... ] |
+| Area | Impact Type | Impact Description |
+| :--- | :--- | :--- |
+| **Scope** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
+| **Quality** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
+| **Requirements** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
+| **Cost** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
+| **Schedule** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
+| **Project documents** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
 
 ---
 
@@ -75,7 +75,7 @@ Section-by-Section Instructions:
 ### Signatures
 
 | Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |

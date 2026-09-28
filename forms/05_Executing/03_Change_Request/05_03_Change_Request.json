@@ -44,26 +44,32 @@
             "value": [
                 {
                     "Area": "Scope",
+                    "Impact Type (Increase/Decrease/Modify)": "",
                     "Impact Description": ""
                 },
                 {
                     "Area": "Quality",
+                    "Impact Type (Increase/Decrease/Modify)": "",
                     "Impact Description": ""
                 },
                 {
                     "Area": "Requirements",
+                    "Impact Type (Increase/Decrease/Modify)": "",
                     "Impact Description": ""
                 },
                 {
                     "Area": "Cost",
+                    "Impact Type (Increase/Decrease/Modify)": "",
                     "Impact Description": ""
                 },
                 {
                     "Area": "Schedule",
+                    "Impact Type (Increase/Decrease/Modify)": "",
                     "Impact Description": ""
                 },
                 {
                     "Area": "Project documents",
+                    "Impact Type (Increase/Decrease/Modify)": "",
                     "Impact Description": ""
                 }
             ]
