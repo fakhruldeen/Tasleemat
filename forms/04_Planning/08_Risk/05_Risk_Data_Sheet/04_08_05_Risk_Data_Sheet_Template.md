@@ -6,11 +6,11 @@ Section-by-Section Instructions:
 - Status: Enter the status as open or closed.
 - Risk cause: Describe the circumstances or drivers that are the source of the risk.
 - Probability: Determine the likelihood of the event or condition occurring.
-- Impact: Describe the impact on one or more of the project objectives.
+- Impact: Describe the impact specifically on Scope, Quality, Schedule, and Cost.
 - Score: Numeric or relative score calculated from probability and impact.
 - Responses: Describe the planned response strategy to the risk or condition.
 - Revised probability: Likelihood after the response has been implemented.
-- Revised impact: Impact after the response has been implemented.
+- Revised impact: Impact on Scope, Quality, Schedule, and Cost after the response has been implemented.
 - Revised score: Revised risk score after the response has been implemented.
 - Responsible party: Identify the person responsible for managing the risk.
 - Actions: Describe any actions that need to be taken to respond to the risk.
@@ -45,7 +45,11 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 ### Assessment & Score
 *   **Probability:** [LLM_Generate]
-*   **Impact:** [LLM_Generate]
+*   **Impact:**
+    *   **Scope:** [LLM_Generate]
+    *   **Quality:** [LLM_Generate]
+    *   **Schedule:** [LLM_Generate]
+    *   **Cost:** [LLM_Generate]
 *   **Score:** [LLM_Generate]
 
 ---
@@ -58,7 +62,11 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 ### Revised Assessment (Post-Mitigation)
 *   **Revised probability:** [LLM_Generate]
-*   **Revised impact:** [LLM_Generate]
+*   **Revised impact:**
+    *   **Scope:** [LLM_Generate]
+    *   **Quality:** [LLM_Generate]
+    *   **Schedule:** [LLM_Generate]
+    *   **Cost:** [LLM_Generate]
 *   **Revised score:** [LLM_Generate]
 
 ### Cascading Risks
