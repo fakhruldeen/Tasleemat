@@ -58,12 +58,14 @@ Section-by-Section Instructions:
 
 | Area | Impact Type | Impact Description |
 | :--- | :--- | :--- |
-| **Scope** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
-| **Quality** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
-| **Requirements** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
-| **Cost** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
-| **Schedule** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
-| **Project documents** | [ ] Increase [ ] Decrease [ ] Modify | [ Add details... ] |
+| **Scope** | [ + / - / M ] | [ Add details... ] |
+| **Quality** | [ + / - / M ] | [ Add details... ] |
+| **Requirements** | [ + / - / M ] | [ Add details... ] |
+| **Cost** | [ + / - / M ] | [ Add details... ] |
+| **Schedule** | [ + / - / M ] | [ Add details... ] |
+| **Project documents** | [ + / - / M ] | [ Add details... ] |
+
+*Legend: [+] Increase, [-] Decrease, [M] Modify*
 
 ---
 
