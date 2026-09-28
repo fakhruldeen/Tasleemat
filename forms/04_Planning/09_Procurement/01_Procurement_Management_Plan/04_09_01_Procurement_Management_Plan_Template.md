@@ -1,14 +1,10 @@
 <!-- LLM INSTRUCTIONS: Populate the Procurement Management Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
 Section-by-Section Instructions:
-- Procurement Integration: Scope: Define how the contractor's WBS will integrate with the project WBS.
-- Procurement Integration: Schedule: Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.
-- Procurement Integration: Documentation: Describe how contractor documentation will integrate with project documentation.
-- Procurement Integration: Risk: Describe how risk identification, analysis, and response will integrate with risk management for the overall project.
-- Procurement Integration: Reporting: Define how the contractor's status reports will integrate with the project status report.
+- Procurement Integration: Define how the contractor's work will integrate with the project (Scope, Schedule, Documentation, Risk, Reporting).
 - Timing of Procurement Activities: Identify the timetable of key procurement activities.
 - Performance Metrics: Document the metrics that will be used to evaluate the seller's performance.
-- Roles, Responsibilities, and Authority: Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.
+- Roles, Responsibilities, and Authority: Define the roles, responsibilities, and authority level.
 - Assumptions and Constraints: Record assumptions and constraints related to the procurement activities.
 - Legal Jurisdiction and Currency: Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.
 - Independent Estimates: Document whether independent cost estimates will be used and if they will be needed for source selection.
@@ -26,40 +22,49 @@ Section-by-Section Instructions:
 
 ## 1. Procurement Integration
 
-### 1.1 Scope
-[ Add details... ]
-
-### 1.2 Schedule
-[ Add details... ]
-
-### 1.3 Documentation
-[ Add details... ]
-
-### 1.4 Risk
-[ Add details... ]
-
-### 1.5 Reporting
-[ Add details... ]
+| Area | Integration Approach |
+| :--- | :--- |
+| **Scope** | [ Add details... ] |
+| **Schedule** | [ Add details... ] |
+| **Documentation** | [ Add details... ] |
+| **Risk** | [ Add details... ] |
+| **Reporting** | [ Add details... ] |
 
 ---
 
 ## 2. Timing of Procurement Activities
-[ Add details... ]
+
+| Date | Activity |
+| :--- | :--- |
+| [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 3. Performance Metrics
-[ Add details... ]
+
+| Item | Metric | Measurement Method |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 4. Roles, Responsibilities, and Authority
-[ Add details... ]
+
+| Role | Responsibility | Authority |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 5. Assumptions and Constraints
-[ Add details... ]
+
+| Category | Assumption/Constraint |
+| :--- | :--- |
+| [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -79,7 +84,8 @@ Section-by-Section Instructions:
 ---
 
 ## 9. Prequalified Sellers
-[ Add details... ]
+1. [ Add details... ]
+2. [ Add details... ]
 
 ---
 

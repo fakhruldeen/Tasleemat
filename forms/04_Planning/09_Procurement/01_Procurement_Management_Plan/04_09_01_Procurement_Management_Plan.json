@@ -1,45 +1,72 @@
 {
-    "_llm_instructions": "Populate the Procurement Management Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Procurement Integration: Scope: Define how the contractor's WBS will integrate with the project WBS.\n- Procurement Integration: Schedule: Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.\n- Procurement Integration: Documentation: Describe how contractor documentation will integrate with project documentation.\n- Procurement Integration: Risk: Describe how risk identification, analysis, and response will integrate with risk management for the overall project.\n- Procurement Integration: Reporting: Define how the contractor's status reports will integrate with the project status report.\n- Timing of Procurement Activities: Identify the timetable of key procurement activities.\n- Performance Metrics: Document the metrics that will be used to evaluate the seller's performance.\n- Roles, Responsibilities, and Authority: Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.\n- Assumptions and Constraints: Record assumptions and constraints related to the procurement activities.\n- Legal Jurisdiction and Currency: Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.\n- Independent Estimates: Document whether independent cost estimates will be used and if they will be needed for source selection.\n- Risk Management Requirements: Document requirements for performance bonds or insurance contracts to reduce risk.\n- Prequalified Sellers: List any prequalified sellers that will be used.",
+    "_llm_instructions": "Populate the Procurement Management Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Procurement Integration: Define how the contractor's work will integrate with the project (Scope, Schedule, Documentation, Risk, Reporting).\n- Timing of Procurement Activities: Identify the timetable of key procurement activities.\n- Performance Metrics: Document the metrics that will be used to evaluate the seller's performance.\n- Roles, Responsibilities, and Authority: Define the roles, responsibilities, and authority level.\n- Assumptions and Constraints: Record assumptions and constraints related to the procurement activities.\n- Legal Jurisdiction and Currency: Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.\n- Independent Estimates: Document whether independent cost estimates will be used and if they will be needed for source selection.\n- Risk Management Requirements: Document requirements for performance bonds or insurance contracts to reduce risk.\n- Prequalified Sellers: List any prequalified sellers that will be used.",
     "form_name": "PROCUREMENT MANAGEMENT PLAN",
     "document_reference": "PMO-04.09.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Procurement Integration: Scope": {
-            "guidance": "Define how the contractor's WBS will integrate with the project WBS.",
-            "value": ""
-        },
-        "Procurement Integration: Schedule": {
-            "guidance": "Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.",
-            "value": ""
-        },
-        "Procurement Integration: Documentation": {
-            "guidance": "Describe how contractor documentation will integrate with project documentation.",
-            "value": ""
-        },
-        "Procurement Integration: Risk": {
-            "guidance": "Describe how risk identification, analysis, and response will integrate with risk management for the overall project.",
-            "value": ""
-        },
-        "Procurement Integration: Reporting": {
-            "guidance": "Define how the contractor's status reports will integrate with the project status report.",
-            "value": ""
+        "Procurement Integration": {
+            "guidance": "Define how the contractor's work will integrate with the project (Scope, Schedule, Documentation, Risk, Reporting).",
+            "value": [
+                {
+                    "Area": "Scope",
+                    "Integration Approach": ""
+                },
+                {
+                    "Area": "Schedule",
+                    "Integration Approach": ""
+                },
+                {
+                    "Area": "Documentation",
+                    "Integration Approach": ""
+                },
+                {
+                    "Area": "Risk",
+                    "Integration Approach": ""
+                },
+                {
+                    "Area": "Reporting",
+                    "Integration Approach": ""
+                }
+            ]
         },
         "Timing of Procurement Activities": {
             "guidance": "Identify the timetable of key procurement activities.",
-            "value": ""
+            "value": [
+                {
+                    "Date": "",
+                    "Activity": ""
+                }
+            ]
         },
         "Performance Metrics": {
             "guidance": "Document the metrics that will be used to evaluate the seller's performance.",
-            "value": ""
+            "value": [
+                {
+                    "Item": "",
+                    "Metric": "",
+                    "Measurement Method": ""
+                }
+            ]
         },
         "Roles, Responsibilities, and Authority": {
-            "guidance": "Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.",
-            "value": ""
+            "guidance": "Define the roles, responsibilities, and authority level.",
+            "value": [
+                {
+                    "Role": "",
+                    "Responsibility": "",
+                    "Authority": ""
+                }
+            ]
         },
         "Assumptions and Constraints": {
             "guidance": "Record assumptions and constraints related to the procurement activities.",
-            "value": ""
+            "value": [
+                {
+                    "Category": "",
+                    "Assumption/Constraint": ""
+                }
+            ]
         },
         "Legal Jurisdiction and Currency": {
             "guidance": "Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.",
@@ -55,7 +82,10 @@
         },
         "Prequalified Sellers": {
             "guidance": "List any prequalified sellers that will be used.",
-            "value": ""
+            "value": [
+                "",
+                ""
+            ]
         }
     }
 }
