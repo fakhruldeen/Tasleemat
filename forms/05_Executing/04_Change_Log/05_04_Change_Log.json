@@ -6,20 +6,19 @@
     "date_prepared": "",
     "fields": {
         "Change Log": {
-            "guidance": "Log all change requests including their category, type, description, impacts, status, and final disposition.",
+            "guidance": "Log all change requests including their core details, status, disposition, and additional tailoring information.",
             "value": [
                 {
                     "ID": "",
                     "Category": "",
-                    "Type (Mandatory/Discretionary)": "",
-                    "Bug Fix? (Y/N)": "",
                     "Description": "",
                     "Requestor": "",
                     "Submission Date": "",
-                    "Cost/Schedule Impact": "",
-                    "Configurable Items Impacted": "",
                     "Status": "",
-                    "Disposition": ""
+                    "Disposition": "",
+                    "Cost/Schedule Impact": "",
+                    "Type (Mandatory/Discretionary)": "",
+                    "Configurable Items Impacted": ""
                 }
             ]
         }

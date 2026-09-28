@@ -25,4 +25,4 @@ The change log should be aligned and consistent with the following documents:
 ---
 
 ### Section Generation Instructions
-*   **Change Log:** Log all change requests including their category, type, description, impacts, status, and final disposition.
+*   **Change Log:** Log all change requests including their core details, status, disposition, and additional tailoring information.
