@@ -45,7 +45,7 @@ Ensure lists and tables are populated according to instructions. -->
 *Indicate the number of individual risks in each box below:*
 
 | Probability \ Impact | Very High | High | Medium | Low | Very Low |
-| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :--- |
+| :--- | :---: | :---: | :---: | :---: | :---: |
 | **Very High** | [ # ] | [ # ] | [ # ] | [ # ] | [ # ] |
 | **High** | [ # ] | [ # ] | [ # ] | [ # ] | [ # ] |
 | **Medium** | [ # ] | [ # ] | [ # ] | [ # ] | [ # ] |
@@ -66,7 +66,7 @@ Ensure lists and tables are populated according to instructions. -->
 ### Critical Risks & Responses
 
 | Top Risks | Responses |
-| :--- | :--- | :--- |
+| :--- | :--- |
 | [ Risk A ] | [ Response A ] |
 | [ Risk B ] | [ Response B ] |
 
@@ -94,13 +94,13 @@ Ensure lists and tables are populated according to instructions. -->
 
 ## Reserve Status
 
-**Cost Reserve**
+### Cost Reserve
 *   **Total Cost Reserve:** [ Add details... ]
 *   **Used to Date:** [ Add details... ]
 *   **Used This Period:** [ Add details... ]
 *   **Remaining Reserve:** [ Add details... ]
 
-**Schedule Reserve**
+### Schedule Reserve
 *   **Total Schedule Reserve:** [ Add details... ]
 *   **Used to Date:** [ Add details... ]
 *   **Used This Period:** [ Add details... ]
@@ -124,7 +124,7 @@ Ensure lists and tables are populated according to instructions. -->
 ### Signatures
 
 | Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
