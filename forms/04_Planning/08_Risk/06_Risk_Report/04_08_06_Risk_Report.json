@@ -1,33 +1,89 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RISK REPORT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Risk Report based on the project context.\n\nContext & Definition:\nThe risk report presents information on overall project risk and summarizes information on individual project risks. It provides information for each of the processes from identification of risks, through analysis, response planning and implementation, and monitoring risks.\nTypical information includes:\n*   Executive summary\n*   Description of overall project risk\n*   Description of individual project risks\n*   Quantitative analysis\n*   Reserve status\n*   Risk audit results (if applicable)\n\nThe risk report can receive information from anywhere in the project environment. Some documents that should be specifically reviewed for input include:\n*   Assumption log\n*   Issue log\n*   Lessons learned register\n*   Risk management plan\n*   Project performance reports\n*   Variance analysis\n*   Earned value status\n*   Risk audit\n*   Contractor status reports\n\nThe risk report provides information to:\n*   Lessons learned register\n*   Project closeout report\n\nThe risk report is an output from process 11.2 Identify Risks in the PMBOK® Guide – Sixth Edition. It is developed at the start of the project and is updated throughout the project.\n\nTailoring Tips:\n*   For a small, simple, or short-term project you can summarize this information in the regular project status report rather than create a separate risk report.\n*   Many projects do not include a quantitative risk analysis; if yours does not, omit this information from the report.\n*   For larger, longer, and more complex projects you can tailor the quantitative risk analysis techniques used to those most appropriate to your project.\n*   For more robust risk reports include appendices that may include the full risk register and quantitative risk model input (probabilistic distributions, branch correlation groups).\n\nAlignment:\nThe risk report should be aligned and consistent with the following documents:\n*   Assumption log\n*   Issue register\n*   Project performance report\n*   Risk management plan\n*   Risk register",
     "form_name": "RISK REPORT",
     "document_reference": "PMO-04.08.06",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Executive summary": {
-            "guidance": "A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.",
-            "value": ""
+        "1. Executive Summary": {
+            "Executive summary": {
+                "guidance": "A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.",
+                "value": ""
+            }
         },
-        "Overall project risk": {
-            "guidance": "Provide a description of the overall risk of the project, including: • High-level statement of trends • Significant drivers of overall risk • Recommended responses to overall risk",
-            "value": ""
+        "2. Overall Project Risk": {
+            "High-level Statement of Trends": {
+                "guidance": "Describe overarching trends observed in the risk profile.",
+                "value": ""
+            },
+            "Significant Drivers of Overall Risk": {
+                "guidance": "Identify the significant drivers of overall project risk.",
+                "value": ""
+            },
+            "Recommended Responses to Overall Risk": {
+                "guidance": "Outline recommended responses to overall project risk.",
+                "value": ""
+            }
         },
-        "Individual project risks": {
-            "guidance": "Analyze and summarize information associated with individual project risks, including: • Number of risks in each box of the probability impact matrix • Key metrics • Active risks • Newly closed risks • Risks distribution by category, objective, and score • Most-critical risks and changes since last report • Recommended responses to top risks",
-            "value": ""
+        "3. Individual Project Risks": {
+            "Probability Impact Matrix Metrics": {
+                "guidance": "Number of risks in each box of the probability impact matrix.",
+                "value": ""
+            },
+            "Key Metrics": {
+                "guidance": "Provide key metrics summarizing risk health.",
+                "value": ""
+            },
+            "Active Risks": {
+                "guidance": "List or summarize currently active risks.",
+                "value": ""
+            },
+            "Newly Closed Risks": {
+                "guidance": "Highlight risks that have been newly closed since the last report.",
+                "value": ""
+            },
+            "Risks Distribution": {
+                "guidance": "Describe risks distribution by category, objective, and score.",
+                "value": ""
+            },
+            "Most-Critical Risks": {
+                "guidance": "Detail the most-critical risks and any changes since the last report.",
+                "value": ""
+            },
+            "Recommended Responses to Top Risks": {
+                "guidance": "Outline recommended responses to top individual risks.",
+                "value": ""
+            }
         },
-        "Quantitative analysis": {
-            "guidance": "Summarize the results of quantitative risk analysis, including: • Results from quantitative assessments (S-curve, tornado, etc.) • Probability of meeting key project objectives • Drivers of cost and schedule outcomes • Proposed responses",
-            "value": ""
+        "4. Quantitative Analysis": {
+            "Results from Quantitative Assessments": {
+                "guidance": "Results from quantitative assessments (S-curve, tornado, etc.).",
+                "value": ""
+            },
+            "Probability of Meeting Key Objectives": {
+                "guidance": "The calculated probability of meeting key project objectives.",
+                "value": ""
+            },
+            "Drivers of Cost and Schedule Outcomes": {
+                "guidance": "Primary drivers of cost and schedule outcomes.",
+                "value": ""
+            },
+            "Proposed Responses": {
+                "guidance": "Proposed responses based on quantitative findings.",
+                "value": ""
+            }
         },
-        "Reserve status": {
-            "guidance": "Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.",
-            "value": ""
+        "5. Reserve Status": {
+            "Reserve Status": {
+                "guidance": "Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.",
+                "value": ""
+            }
         },
-        "Risk audit results (if applicable)": {
-            "guidance": "Summarize the results of a risk audit of the risk management processes.",
-            "value": ""
+        "6. Risk Audit Results (if applicable)": {
+            "Risk Audit Results": {
+                "guidance": "Summarize the results of a risk audit of the risk management processes.",
+                "value": ""
+            }
         }
     }
 }

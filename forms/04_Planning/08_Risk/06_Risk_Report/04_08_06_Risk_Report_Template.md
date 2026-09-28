@@ -1,63 +1,155 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the Risk Report based on the project context.
+
+Context & Definition:
+The risk report presents information on overall project risk and summarizes information on individual project risks. It provides information for each of the processes from identification of risks, through analysis, response planning and implementation, and monitoring risks.
+Typical information includes:
+*   Executive summary
+*   Description of overall project risk
+*   Description of individual project risks
+*   Quantitative analysis
+*   Reserve status
+*   Risk audit results (if applicable)
+
+The risk report can receive information from anywhere in the project environment. Some documents that should be specifically reviewed for input include:
+*   Assumption log
+*   Issue log
+*   Lessons learned register
+*   Risk management plan
+*   Project performance reports
+*   Variance analysis
+*   Earned value status
+*   Risk audit
+*   Contractor status reports
+
+The risk report provides information to:
+*   Lessons learned register
+*   Project closeout report
+
+The risk report is an output from process 11.2 Identify Risks in the PMBOK® Guide – Sixth Edition. It is developed at the start of the project and is updated throughout the project.
+
+Tailoring Tips:
+*   For a small, simple, or short-term project you can summarize this information in the regular project status report rather than create a separate risk report.
+*   Many projects do not include a quantitative risk analysis; if yours does not, omit this information from the report.
+*   For larger, longer, and more complex projects you can tailor the quantitative risk analysis techniques used to those most appropriate to your project.
+*   For more robust risk reports include appendices that may include the full risk register and quantitative risk model input (probabilistic distributions, branch correlation groups).
+
+Alignment:
+The risk report should be aligned and consistent with the following documents:
+*   Assumption log
+*   Issue register
+*   Project performance report
+*   Risk management plan
+*   Risk register
 
 Section Instructions:
+**1. Executive Summary**
 *   **Executive summary:** A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.
-*   **Overall project risk:** Provide a description of the overall risk of the project, including: • High-level statement of trends • Significant drivers of overall risk • Recommended responses to overall risk
-*   **Individual project risks:** Analyze and summarize information associated with individual project risks, including: • Number of risks in each box of the probability impact matrix • Key metrics • Active risks • Newly closed risks • Risks distribution by category, objective, and score • Most-critical risks and changes since last report • Recommended responses to top risks
-*   **Quantitative analysis:** Summarize the results of quantitative risk analysis, including: • Results from quantitative assessments (S-curve, tornado, etc.) • Probability of meeting key project objectives • Drivers of cost and schedule outcomes • Proposed responses
-*   **Reserve status:** Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.
-*   **Risk audit results (if applicable):** Summarize the results of a risk audit of the risk management processes.
+
+**2. Overall Project Risk**
+Provide a description of the overall risk of the project, including:
+*   **High-level statement of trends:** Describe overarching trends observed in the risk profile.
+*   **Significant drivers:** Identify the significant drivers of overall project risk.
+*   **Recommended responses:** Outline recommended responses to overall project risk.
+
+**3. Individual Project Risks**
+Analyze and summarize information associated with individual project risks, including:
+*   **Probability & Impact Metrics:** Number of risks in each box of the probability impact matrix.
+*   **Key Metrics:** Provide key metrics summarizing risk health.
+*   **Active Risks:** List or summarize currently active risks.
+*   **Newly Closed Risks:** Highlight risks that have been newly closed since the last report.
+*   **Risk Distribution:** Describe risks distribution by category, objective, and score.
+*   **Critical Risks:** Detail the most-critical risks and any changes since the last report.
+*   **Recommended Responses:** Outline recommended responses to top individual risks.
+
+**4. Quantitative Analysis**
+Summarize the results of quantitative risk analysis, including:
+*   **Quantitative results:** Results from quantitative assessments (S-curve, tornado, etc.).
+*   **Probability of meeting objectives:** The calculated probability of meeting key project objectives.
+*   **Drivers of outcomes:** Primary drivers of cost and schedule outcomes.
+*   **Proposed quantitative responses:** Proposed responses based on quantitative findings.
+
+**5. Reserve Status**
+*   **Reserve Status:** Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.
+
+**6. Risk Audit Results**
+*   **Risk Audit Results:** Summarize the results of a risk audit of the risk management processes (if applicable).
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">RISK REPORT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
+| :--- | :--- |
 
 ---
 
-### Executive summary
-<!-- A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends. -->
-
-> [ Add details... ]
+## 1. Executive Summary
+[ Add details... ]
 
 ---
 
-### Overall project risk
-<!-- Provide a description of the overall risk of the project, including: • High-level statement of trends • Significant drivers of overall risk • Recommended responses to overall risk -->
+## 2. Overall Project Risk
 
-> [ Add details... ]
+### High-level Statement of Trends
+[ Add details... ]
 
----
+### Significant Drivers of Overall Risk
+[ Add details... ]
 
-### Individual project risks
-<!-- Analyze and summarize information associated with individual project risks, including: • Number of risks in each box of the probability impact matrix • Key metrics • Active risks • Newly closed risks • Risks distribution by category, objective, and score • Most-critical risks and changes since last report • Recommended responses to top risks -->
-
-> [ Add details... ]
-
----
-
-### Quantitative analysis
-<!-- Summarize the results of quantitative risk analysis, including: • Results from quantitative assessments (S-curve, tornado, etc.) • Probability of meeting key project objectives • Drivers of cost and schedule outcomes • Proposed responses -->
-
-> [ Add details... ]
+### Recommended Responses to Overall Risk
+[ Add details... ]
 
 ---
 
-### Reserve status
-<!-- Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve. -->
+## 3. Individual Project Risks
 
-> [ Add details... ]
+### Probability Impact Matrix Metrics
+[ Add details... ]
+
+### Key Metrics
+[ Add details... ]
+
+### Active Risks
+[ Add details... ]
+
+### Newly Closed Risks
+[ Add details... ]
+
+### Risks Distribution
+[ Add details... ]
+
+### Most-Critical Risks
+[ Add details... ]
+
+### Recommended Responses to Top Risks
+[ Add details... ]
 
 ---
 
-### Risk audit results (if applicable)
-<!-- Summarize the results of a risk audit of the risk management processes. -->
+## 4. Quantitative Analysis
 
-> [ Add details... ]
+### Results from Quantitative Assessments
+[ Add details... ]
+
+### Probability of Meeting Key Objectives
+[ Add details... ]
+
+### Drivers of Cost and Schedule Outcomes
+[ Add details... ]
+
+### Proposed Responses
+[ Add details... ]
+
+---
+
+## 5. Reserve Status
+[ Add details... ]
+
+---
+
+## 6. Risk Audit Results (if applicable)
+[ Add details... ]
 
 ---
 

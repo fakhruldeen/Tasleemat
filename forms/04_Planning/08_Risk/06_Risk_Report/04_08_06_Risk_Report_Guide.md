@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Risk Report
-nav_order: 1
+nav_order: 6
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,45 +12,61 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.08.06`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Risk Report** in alignment with Tasleemat framework.
+---
+
+### Context & Definition
+The risk report presents information on overall project risk and summarizes information on individual project risks. It provides information for each of the processes from identification of risks, through analysis, response planning and implementation, and monitoring risks.
+Typical information includes:
+*   Executive summary
+*   Description of overall project risk
+*   Description of individual project risks
+*   Quantitative analysis
+*   Reserve status
+*   Risk audit results (if applicable)
+
+The risk report can receive information from anywhere in the project environment. Some documents that should be specifically reviewed for input include:
+*   Assumption log
+*   Issue log
+*   Lessons learned register
+*   Risk management plan
+*   Project performance reports
+*   Variance analysis
+*   Earned value status
+*   Risk audit
+*   Contractor status reports
+
+The risk report provides information to:
+*   Lessons learned register
+*   Project closeout report
+
+The risk report is an output from process 11.2 Identify Risks in the PMBOK® Guide – Sixth Edition. It is developed at the start of the project and is updated throughout the project.
+
+Tailoring Tips:
+*   For a small, simple, or short-term project you can summarize this information in the regular project status report rather than create a separate risk report.
+*   Many projects do not include a quantitative risk analysis; if yours does not, omit this information from the report.
+*   For larger, longer, and more complex projects you can tailor the quantitative risk analysis techniques used to those most appropriate to your project.
+*   For more robust risk reports include appendices that may include the full risk register and quantitative risk model input (probabilistic distributions, branch correlation groups).
+
+Alignment:
+The risk report should be aligned and consistent with the following documents:
+*   Assumption log
+*   Issue register
+*   Project performance report
+*   Risk management plan
+*   Risk register
 
 ---
 
-### 1. What?
-A formal Tasleemat-aligned project document known as the **Risk Report**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+### Document Elements Description
 
----
-
-### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
-
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
-
----
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately and professionally complete the **RISK REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **Executive summary:** A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.
-*   **Overall project risk:** Provide a description of the overall risk of the project, including: • High-level statement of trends • Significant drivers of overall risk • Recommended responses to overall risk
-*   **Individual project risks:** Analyze and summarize information associated with individual project risks, including: • Number of risks in each box of the probability impact matrix • Key metrics • Active risks • Newly closed risks • Risks distribution by category, objective, and score • Most-critical risks and changes since last report • Recommended responses to top risks
-*   **Quantitative analysis:** Summarize the results of quantitative risk analysis, including: • Results from quantitative assessments (S-curve, tornado, etc.) • Probability of meeting key project objectives • Drivers of cost and schedule outcomes • Proposed responses
-*   **Reserve status:** Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.
-*   **Risk audit results (if applicable):** Summarize the results of a risk audit of the risk management processes.
+| Document Element | Description |
+| :--- | :--- |
+| **Executive summary** | A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends. |
+| **Overall project risk** | Provide a description of the overall risk of the project, including trends, drivers, and recommended responses. |
+| **Individual project risks** | Analyze and summarize information associated with individual project risks. |
+| **Quantitative analysis** | Summarize the results of quantitative risk analysis, including assessments, probabilities, drivers, and responses. |
+| **Reserve status** | Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve. |
+| **Risk audit results** | Summarize the results of a risk audit of the risk management processes (if applicable). |
 
 ---
 
@@ -58,6 +74,5 @@ To accurately and professionally complete the **RISK REPORT**, the responsible p
 * [📄 Printable Template (Markdown)](04_08_06_Risk_Report_Template.md)
 * [🤖 LLM Generation Prompt](04_08_06_Risk_Report.md)
 * [📊 Data Schema (JSON)](04_08_06_Risk_Report.json)
-* [📈 Tabular Data (CSV)](04_08_06_Risk_Report.csv)
 
 </div>
