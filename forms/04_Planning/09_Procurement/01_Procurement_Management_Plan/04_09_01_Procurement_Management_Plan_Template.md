@@ -1,116 +1,85 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Populate the Procurement Management Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
-Section Instructions:
-*   **Schedule:** Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.
-*   **Documentation:** Describe how contractor documentation will integrate with project documentation.
-*   **Risk:** Describe how risk identification, analysis, and response will integrate with risk management for the overall project.
-*   **Reporting:** Define how the contractor's status reports will integrate with the project status report.
-*   **Timing:** Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth.
-*   **Performance metrics:** Document the metrics that will be used to evaluate the seller's performance.
-*   **Roles, responsibilities, and authority:** Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.
-*   **Assumptions and constraints:** Record assumptions and constraints related to the procurement activities.
-*   **Legal jurisdiction and currency:** Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.
-*   **Independent estimates:** Document whether independent cost estimates will be used and if they will be needed for source selection.
-*   **Risk management:** Document requirements for performance bonds or insurance contracts to reduce risk.
-*   **Prequalified sellers:** List any prequalified sellers that will be used.
--->
+Section-by-Section Instructions:
+- Procurement Integration: Scope: Define how the contractor's WBS will integrate with the project WBS.
+- Procurement Integration: Schedule: Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.
+- Procurement Integration: Documentation: Describe how contractor documentation will integrate with project documentation.
+- Procurement Integration: Risk: Describe how risk identification, analysis, and response will integrate with risk management for the overall project.
+- Procurement Integration: Reporting: Define how the contractor's status reports will integrate with the project status report.
+- Timing of Procurement Activities: Identify the timetable of key procurement activities.
+- Performance Metrics: Document the metrics that will be used to evaluate the seller's performance.
+- Roles, Responsibilities, and Authority: Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.
+- Assumptions and Constraints: Record assumptions and constraints related to the procurement activities.
+- Legal Jurisdiction and Currency: Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.
+- Independent Estimates: Document whether independent cost estimates will be used and if they will be needed for source selection.
+- Risk Management Requirements: Document requirements for performance bonds or insurance contracts to reduce risk.
+- Prequalified Sellers: List any prequalified sellers that will be used. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROCUREMENT MANAGEMENT PLAN</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
+| :--- | :--- |
 
 ---
 
-### Procurement integration</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
-> [ Add details... ]
+## 1. Procurement Integration
+
+### 1.1 Scope
+[ Add details... ]
+
+### 1.2 Schedule
+[ Add details... ]
+
+### 1.3 Documentation
+[ Add details... ]
+
+### 1.4 Risk
+[ Add details... ]
+
+### 1.5 Reporting
+[ Add details... ]
 
 ---
 
-### Schedule
-<!-- Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items. -->
-
-> [ Add details... ]
+## 2. Timing of Procurement Activities
+[ Add details... ]
 
 ---
 
-### Documentation
-<!-- Describe how contractor documentation will integrate with project documentation. -->
-
-> [ Add details... ]
+## 3. Performance Metrics
+[ Add details... ]
 
 ---
 
-### Risk
-<!-- Describe how risk identification, analysis, and response will integrate with risk management for the overall project. -->
-
-> [ Add details... ]
+## 4. Roles, Responsibilities, and Authority
+[ Add details... ]
 
 ---
 
-### Reporting
-<!-- Define how the contractor's status reports will integrate with the project status report. -->
-
-> [ Add details... ]
+## 5. Assumptions and Constraints
+[ Add details... ]
 
 ---
 
-### Timing
-<!-- Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth. -->
-
-> [ Add details... ]
+## 6. Legal Jurisdiction and Currency
+[ Add details... ]
 
 ---
 
-### Performance metrics
-<!-- Document the metrics that will be used to evaluate the seller's performance. -->
-
-> [ Add details... ]
+## 7. Independent Estimates
+[ Add details... ]
 
 ---
 
-### Roles, responsibilities, and authority
-<!-- Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract. -->
-
-> [ Add details... ]
+## 8. Risk Management Requirements
+[ Add details... ]
 
 ---
 
-### Assumptions and constraints
-<!-- Record assumptions and constraints related to the procurement activities. -->
-
-> [ Add details... ]
-
----
-
-### Legal jurisdiction and currency
-<!-- Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment. -->
-
-> [ Add details... ]
-
----
-
-### Independent estimates
-<!-- Document whether independent cost estimates will be used and if they will be needed for source selection. -->
-
-> [ Add details... ]
-
----
-
-### Risk management
-<!-- Document requirements for performance bonds or insurance contracts to reduce risk. -->
-
-> [ Add details... ]
-
----
-
-### Prequalified sellers
-<!-- List any prequalified sellers that will be used. -->
-
-> [ Add details... ]
+## 9. Prequalified Sellers
+[ Add details... ]
 
 ---
 
@@ -119,7 +88,7 @@ Section Instructions:
 | Prepared By: | Reviewed By: | Approved By: |
 | :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
+| **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 ---

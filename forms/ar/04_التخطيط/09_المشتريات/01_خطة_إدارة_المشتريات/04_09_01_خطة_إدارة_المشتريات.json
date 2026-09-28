@@ -1,60 +1,60 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة إدارة المشتريات هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة خطة إدارة المشتريات بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- تكامل المشتريات: النطاق: حدد كيف سيتكامل هيكل تجزئة العمل الخاص بالمقاول مع هيكل تجزئة العمل للمشروع.\n- تكامل المشتريات: الجدول الزمني: حدد كيف سيتكامل جدول المقاول مع جدول المشروع، بما في ذلك المعالم والعناصر ذات المهل الطويلة.\n- تكامل المشتريات: التوثيق: صف كيف ستتكامل وثائق المقاول مع وثائق المشروع.\n- تكامل المشتريات: المخاطر: صف كيف سيتكامل تحديد المخاطر وتحليلها والاستجابة لها مع إدارة المخاطر للمشروع ككل.\n- تكامل المشتريات: إعداد التقارير: حدد كيف ستتكامل تقارير حالة المقاول مع تقرير حالة المشروع.\n- توقيت أنشطة المشتريات: حدد الجدول الزمني لأنشطة الشراء الرئيسية.\n- مقاييس الأداء: وثق المقاييس التي سيتم استخدامها لتقييم أداء البائع.\n- الأدوار والمسؤوليات والصلاحيات: حدد الأدوار والمسؤوليات ومستوى الصلاحية لمدير المشروع والمقاول وإدارة المشتريات، بالإضافة إلى أي أصحاب مصلحة مهمين آخرين للعقد.\n- الافتراضات والقيود: سجل الافتراضات والقيود المتعلقة بأنشطة الشراء.\n- الولاية القضائية القانونية والعملة: حدد الموقع الذي له ولاية قضائية قانونية. حدد العملة التي سيتم استخدامها للتسعير والدفع.\n- التقديرات المستقلة: وثق ما إذا كان سيتم استخدام تقديرات تكلفة مستقلة وما إذا كانت ستكون مطلوبة لاختيار المصدر.\n- متطلبات إدارة المخاطر: وثق متطلبات سندات الأداء أو عقود التأمين للحد من المخاطر.\n- البائعون المؤهلون مسبقًا: ضع قائمة بأي بائعين مؤهلين مسبقًا سيتم استخدامهم.",
     "form_name": "خطة إدارة المشتريات",
     "document_reference": "PMO-04.09.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Procurement integration</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "تكامل المشتريات: النطاق": {
+            "guidance": "حدد كيف سيتكامل هيكل تجزئة العمل الخاص بالمقاول مع هيكل تجزئة العمل للمشروع.",
             "value": ""
         },
-        "الجدول الزمني": {
-            "guidance": "Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.",
+        "تكامل المشتريات: الجدول الزمني": {
+            "guidance": "حدد كيف سيتكامل جدول المقاول مع جدول المشروع، بما في ذلك المعالم والعناصر ذات المهل الطويلة.",
             "value": ""
         },
-        "Documentation": {
-            "guidance": "Describe how contractor documentation will integrate with project documentation.",
+        "تكامل المشتريات: التوثيق": {
+            "guidance": "صف كيف ستتكامل وثائق المقاول مع وثائق المشروع.",
             "value": ""
         },
-        "Risk": {
-            "guidance": "Describe how risk identification, analysis, and response will integrate with risk management for the overall project.",
+        "تكامل المشتريات: المخاطر": {
+            "guidance": "صف كيف سيتكامل تحديد المخاطر وتحليلها والاستجابة لها مع إدارة المخاطر للمشروع ككل.",
             "value": ""
         },
-        "Reporting": {
-            "guidance": "Define how the contractor's status reports will integrate with the project status report.",
+        "تكامل المشتريات: إعداد التقارير": {
+            "guidance": "حدد كيف ستتكامل تقارير حالة المقاول مع تقرير حالة المشروع.",
             "value": ""
         },
-        "Timing": {
-            "guidance": "Identify the timetable of key procurement activities. Examples include when the statement of work (SOW) will be complete, when procurement documents will be released, the date proposals are due, and so forth.",
+        "توقيت أنشطة المشتريات": {
+            "guidance": "حدد الجدول الزمني لأنشطة الشراء الرئيسية.",
             "value": ""
         },
-        "Performance metrics": {
-            "guidance": "Document the metrics that will be used to evaluate the seller's performance.",
+        "مقاييس الأداء": {
+            "guidance": "وثق المقاييس التي سيتم استخدامها لتقييم أداء البائع.",
             "value": ""
         },
-        "Roles, responsibilities, and authority": {
-            "guidance": "Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.",
+        "الأدوار والمسؤوليات والصلاحيات": {
+            "guidance": "حدد الأدوار والمسؤوليات ومستوى الصلاحية لمدير المشروع والمقاول وإدارة المشتريات، بالإضافة إلى أي أصحاب مصلحة مهمين آخرين للعقد.",
             "value": ""
         },
-        "Assumptions and constraints": {
-            "guidance": "Record assumptions and constraints related to the procurement activities.",
+        "الافتراضات والقيود": {
+            "guidance": "سجل الافتراضات والقيود المتعلقة بأنشطة الشراء.",
             "value": ""
         },
-        "Legal jurisdiction and currency": {
-            "guidance": "Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.",
+        "الولاية القضائية القانونية والعملة": {
+            "guidance": "حدد الموقع الذي له ولاية قضائية قانونية. حدد العملة التي سيتم استخدامها للتسعير والدفع.",
             "value": ""
         },
-        "Independent estimates": {
-            "guidance": "Document whether independent cost estimates will be used and if they will be needed for source selection.",
+        "التقديرات المستقلة": {
+            "guidance": "وثق ما إذا كان سيتم استخدام تقديرات تكلفة مستقلة وما إذا كانت ستكون مطلوبة لاختيار المصدر.",
             "value": ""
         },
-        "Risk management": {
-            "guidance": "Document requirements for performance bonds or insurance contracts to reduce risk.",
+        "متطلبات إدارة المخاطر": {
+            "guidance": "وثق متطلبات سندات الأداء أو عقود التأمين للحد من المخاطر.",
             "value": ""
         },
-        "Prequalified sellers": {
-            "guidance": "List any prequalified sellers that will be used.",
+        "البائعون المؤهلون مسبقًا": {
+            "guidance": "ضع قائمة بأي بائعين مؤهلين مسبقًا سيتم استخدامهم.",
             "value": ""
         }
     }
