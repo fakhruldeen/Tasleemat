@@ -1,63 +1,81 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تقييم أداء الفريق هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة تقييم أداء الفريق بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- الأداء الفني: قيم قدرة الفريق على الإنجاز عبر الأبعاد الفنية وقدم تعليقات تبريرية.\n- الكفاءة الشخصية: قيم المهارات الشخصية للفريق وقدم تعليقات تبريرية.\n- خصائص الفريق: صف الروح المعنوية العامة للفريق والتماسك.\n- نقاط قوة وضعف الفريق: حدد نقاط القوة والضعف الأساسية للفريق.\n- مجالات التطوير: حدد مجالات التطوير ونهج تنفيذها.",
     "form_name": "تقييم أداء الفريق",
     "document_reference": "PMO-05.06",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات تقييم أداء الفريق": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Technical performance:** \n- **النطاق:** \n- **الجودة:** \n- **الجدول الزمني:** \n- **التكلفة:** \n- **Communication:** Rate the team’s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.\n- **Collaboration:** Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.\n- **Conflict management:** Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.\n- **Decision making:** Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.\n- **Interpersonal competency:** \n- **Team morale:** Describe the overall team morale.\n- **Areas for development:** \n- **Area:** List technical or interpersonal areas for development.\n- **Approach:** Describe the development approach, such as training, mentoring, or coaching.\n- **Actions:** List the actions necessary to implement the development approach.",
+        "الأداء الفني": {
+            "guidance": "قيم قدرة الفريق على الإنجاز عبر الأبعاد الفنية وقدم تعليقات تبريرية.",
             "value": [
                 {
-                    "Technical performance": "",
-                    "النطاق": "",
-                    "الجودة": "",
-                    "الجدول الزمني": "",
-                    "التكلفة": "",
-                    "Communication": "",
-                    "Collaboration": "",
-                    "Conflict management": "",
-                    "Decision making": "",
-                    "Interpersonal competency": "",
-                    "Team morale": "",
-                    "Areas for development": "",
-                    "Area": "",
-                    "Approach": "",
-                    "Actions": ""
+                    "البعد": "النطاق",
+                    "التقييم": "",
+                    "ملاحظات": ""
                 },
                 {
-                    "Technical performance": "",
-                    "النطاق": "",
-                    "الجودة": "",
-                    "الجدول الزمني": "",
-                    "التكلفة": "",
-                    "Communication": "",
-                    "Collaboration": "",
-                    "Conflict management": "",
-                    "Decision making": "",
-                    "Interpersonal competency": "",
-                    "Team morale": "",
-                    "Areas for development": "",
-                    "Area": "",
-                    "Approach": "",
-                    "Actions": ""
+                    "البعد": "الجودة",
+                    "التقييم": "",
+                    "ملاحظات": ""
                 },
                 {
-                    "Technical performance": "",
-                    "النطاق": "",
-                    "الجودة": "",
-                    "الجدول الزمني": "",
-                    "التكلفة": "",
-                    "Communication": "",
-                    "Collaboration": "",
-                    "Conflict management": "",
-                    "Decision making": "",
-                    "Interpersonal competency": "",
-                    "Team morale": "",
-                    "Areas for development": "",
-                    "Area": "",
-                    "Approach": "",
-                    "Actions": ""
+                    "البعد": "الجدول الزمني",
+                    "التقييم": "",
+                    "ملاحظات": ""
+                },
+                {
+                    "البعد": "التكلفة",
+                    "التقييم": "",
+                    "ملاحظات": ""
+                }
+            ]
+        },
+        "الكفاءة الشخصية": {
+            "guidance": "قيم المهارات الشخصية للفريق وقدم تعليقات تبريرية.",
+            "value": [
+                {
+                    "البعد": "التواصل",
+                    "التقييم": "",
+                    "ملاحظات": ""
+                },
+                {
+                    "البعد": "التعاون",
+                    "التقييم": "",
+                    "ملاحظات": ""
+                },
+                {
+                    "البعد": "إدارة الصراعات",
+                    "التقييم": "",
+                    "ملاحظات": ""
+                },
+                {
+                    "البعد": "اتخاذ القرار",
+                    "التقييم": "",
+                    "ملاحظات": ""
+                }
+            ]
+        },
+        "خصائص الفريق": {
+            "guidance": "صف الروح المعنوية العامة للفريق والتماسك.",
+            "value": {
+                "الروح المعنوية للفريق": "",
+                "التماسك": ""
+            }
+        },
+        "نقاط قوة وضعف الفريق": {
+            "guidance": "حدد نقاط القوة والضعف الأساسية للفريق.",
+            "value": {
+                "نقاط القوة": "",
+                "نقاط الضعف": ""
+            }
+        },
+        "مجالات التطوير": {
+            "guidance": "حدد مجالات التطوير ونهج تنفيذها.",
+            "value": [
+                {
+                    "المجال": "",
+                    "النهج (تدريب/توجيه/تدريب شخصي)": "",
+                    "الإجراءات": ""
                 }
             ]
         }

@@ -1,4 +1,6 @@
-Technical performance,Scope,Quality,Schedule,Cost,Communication,Collaboration,Conflict management,Decision making,Interpersonal competency,Team morale,Areas for development,Area,Approach,Actions
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+﻿Field,Guidance,LLM_Generated_Value
+Technical Performance,Rate the team's ability to deliver across technical dimensions and provide justifying comments.,"[{""Dimension"": ""Scope"", ""Rating"": """", ""Comments"": """"}, {""Dimension"": ""Quality"", ""Rating"": """", ""Comments"": """"}, {""Dimension"": ""Schedule"", ""Rating"": """", ""Comments"": """"}, {""Dimension"": ""Cost"", ""Rating"": """", ""Comments"": """"}]"
+Interpersonal Competency,Rate the team's interpersonal skills and provide justifying comments.,"[{""Dimension"": ""Communication"", ""Rating"": """", ""Comments"": """"}, {""Dimension"": ""Collaboration"", ""Rating"": """", ""Comments"": """"}, {""Dimension"": ""Conflict management"", ""Rating"": """", ""Comments"": """"}, {""Dimension"": ""Decision making"", ""Rating"": """", ""Comments"": """"}]"
+Team Characteristics,Describe the overall team morale and cohesiveness.,"{""Team Morale"": """", ""Cohesiveness"": """"}"
+Team Strengths and Weaknesses,Identify the primary strengths and weaknesses of the team.,"{""Strengths"": """", ""Weaknesses"": """"}"
+Areas for Development,Identify areas for development and the approach to implement them.,"[{""Area"": """", ""Approach (Training/Mentoring/Coaching)"": """", ""Actions"": """"}]"

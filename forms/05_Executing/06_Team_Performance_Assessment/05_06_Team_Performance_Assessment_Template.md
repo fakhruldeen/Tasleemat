@@ -1,60 +1,69 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Populate the Team Performance Assessment based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
-Section Instructions:
-*   **Technical performance:** 
-*   **Scope:** Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.
-*   **Quality:** Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.
-*   **Schedule:** Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.
-*   **Cost:** Rate the team’s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.
-*   **Communication:** Rate the team’s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.
-*   **Collaboration:** Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.
-*   **Conflict management:** Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.
-*   **Decision making:** Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.
-*   **Interpersonal competency:** 
-*   **Team morale:** Describe the overall team morale.
-*   **Areas for development:** 
-*   **Area:** List technical or interpersonal areas for development.
-*   **Approach:** Describe the development approach, such as training, mentoring, or coaching.
-*   **Actions:** List the actions necessary to implement the development approach.
--->
+Section-by-Section Instructions:
+- Technical Performance: Rate the team's ability to deliver across technical dimensions and provide justifying comments.
+- Interpersonal Competency: Rate the team's interpersonal skills and provide justifying comments.
+- Team Characteristics: Describe the overall team morale and cohesiveness.
+- Team Strengths and Weaknesses: Identify the primary strengths and weaknesses of the team.
+- Areas for Development: Identify areas for development and the approach to implement them. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">TEAM PERFORMANCE ASSESSMENT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
+| :--- | :--- |
 
 ---
 
-### Team Performance Assessment Entries
-<!-- 
-Please populate the table below with the following details:
-- **Technical performance:** 
-- **Scope:** Rate the team’s ability to deliver the scope of the project and product. Provide comments that describe instances or aspects of scope performance that justify the rating.
-- **Quality:** Rate the team’s ability to deliver the quality required of the project and product. Provide comments that describe instances or aspects of quality performance that justify the rating.
-- **Schedule:** Rate the team’s ability to deliver on schedule. Provide comments that describe instances or aspects of schedule performance that justify the rating.
-- **Cost:** Rate the team’s ability to deliver within budget. Provide comments that describe instances or aspects of cost performance that justify the rating.
-- **Communication:** Rate the team’s ability to communicate effectively. Provide comments that illustrate instances of communication that justify the rating.
-- **Collaboration:** Rate the team’s ability to collaborate effectively. Provide comments that illustrate instances of collaboration that justify the rating.
-- **Conflict management:** Rate the team’s ability to manage conflict effectively. Provide comments that illustrate instances of conflict management that justify the rating.
-- **Decision making:** Rate the team’s ability to make decisions effectively. Provide comments that illustrate instances of decision making that justify the rating.
-- **Interpersonal competency:** 
-- **Team morale:** Describe the overall team morale.
-- **Areas for development:** 
-- **Area:** List technical or interpersonal areas for development.
-- **Approach:** Describe the development approach, such as training, mentoring, or coaching.
-- **Actions:** List the actions necessary to implement the development approach.
--->
-| Technical performance | Scope | Quality | Schedule | Cost | Communication | Collaboration | Conflict management | Decision making | Interpersonal competency | Team morale | Areas for development | Area | Approach | Actions |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 1. Technical Performance
 
+| Dimension | Rating | Comments |
+| :--- | :--- | :--- |
+| **Scope** | [ Add details... ] | [ Add details... ] |
+| **Quality** | [ Add details... ] | [ Add details... ] |
+| **Schedule** | [ Add details... ] | [ Add details... ] |
+| **Cost** | [ Add details... ] | [ Add details... ] |
 
+---
 
+## 2. Interpersonal Competency
+
+| Dimension | Rating | Comments |
+| :--- | :--- | :--- |
+| **Communication** | [ Add details... ] | [ Add details... ] |
+| **Collaboration** | [ Add details... ] | [ Add details... ] |
+| **Conflict management** | [ Add details... ] | [ Add details... ] |
+| **Decision making** | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 3. Team Characteristics
+
+**Team Morale:**
+[ Add details... ]
+
+**Cohesiveness:**
+[ Add details... ]
+
+---
+
+## 4. Team Strengths and Weaknesses
+
+**Strengths:**
+[ Add details... ]
+
+**Weaknesses:**
+[ Add details... ]
+
+---
+
+## 5. Areas for Development
+
+| Area | Approach (Training/Mentoring/Coaching) | Actions |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -69,6 +78,6 @@ Please populate the table below with the following details:
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Team Performance Assessment | <strong>Ref:</strong> PMO-05.06 <br>
+  <strong>Template:</strong> TEAM PERFORMANCE ASSESSMENT | <strong>Ref:</strong> PMO-05.06 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
