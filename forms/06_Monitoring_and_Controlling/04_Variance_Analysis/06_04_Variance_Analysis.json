@@ -1,8 +1,54 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Variance Analysis template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Variance Analysis",
+    "_llm_instructions": "Populate the Variance Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Variance Analysis Table: Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.\n- Variance Implications and Escalation: Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.",
+    "form_name": "VARIANCE ANALYSIS",
     "document_reference": "PMO-06.04",
     "project_title": "",
     "date_prepared": "",
-    "fields": {}
+    "fields": {
+        "Variance Analysis Table": {
+            "guidance": "Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.",
+            "value": [
+                {
+                    "Category": "Schedule",
+                    "Planned Result": "",
+                    "Actual Result": "",
+                    "Variance": "",
+                    "Root Cause": "",
+                    "Planned Response": ""
+                },
+                {
+                    "Category": "Cost",
+                    "Planned Result": "",
+                    "Actual Result": "",
+                    "Variance": "",
+                    "Root Cause": "",
+                    "Planned Response": ""
+                },
+                {
+                    "Category": "Quality",
+                    "Planned Result": "",
+                    "Actual Result": "",
+                    "Variance": "",
+                    "Root Cause": "",
+                    "Planned Response": ""
+                },
+                {
+                    "Category": "Scope",
+                    "Planned Result": "",
+                    "Actual Result": "",
+                    "Variance": "",
+                    "Root Cause": "",
+                    "Planned Response": ""
+                }
+            ]
+        },
+        "Variance Implications and Escalation": {
+            "guidance": "Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.",
+            "value": {
+                "Implications of continued variance (Forecast)": "",
+                "Escalation Required (Y/N)": "",
+                "Escalation Details": ""
+            }
+        }
+    }
 }
