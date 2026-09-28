@@ -1,56 +1,74 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROJECT STATUS REPORT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Project Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates and the name of the project manager preparing the document.\n- Schedule Performance (Current Period): List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.\n- Cost Performance (Current Period): Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.\n- Planning for Next Period: Outline the accomplishments and costs planned for the upcoming reporting period.\n- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation to sponsors or program managers.\n- Project Knowledge and Decisions: Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "PROJECT STATUS REPORT",
     "document_reference": "PMO-06.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Accomplishments for this reporting": {
-            "guidance": "period List all work packages or other accomplishments scheduled for completion for the current reporting period.",
-            "value": ""
+        "Report Information": {
+            "guidance": "Provide the reporting period dates and the name of the project manager preparing the document.",
+            "value": {
+                "Reporting Period Start Date": "",
+                "Reporting Period End Date": "",
+                "Prepared By (Project Manager)": ""
+            }
         },
-        "Accomplishments planned but not": {
-            "guidance": "completed this reporting period List all work packages or other accomplishments scheduled for the current period but not completed.",
-            "value": ""
+        "Schedule Performance (Current Period)": {
+            "guidance": "List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.",
+            "value": {
+                "Accomplishments for this reporting period": [
+                    "",
+                    "",
+                    ""
+                ],
+                "Accomplishments planned but not completed this reporting period": [
+                    "",
+                    "",
+                    ""
+                ],
+                "Root cause of schedule variances": "",
+                "Impact to upcoming milestones or project due date": "",
+                "Planned corrective or preventive action (Schedule)": ""
+            }
         },
-        "Root cause of variances": {
-            "guidance": "Identify the cause of the variance for any work that was not accomplished as scheduled for the current period.",
-            "value": ""
+        "Cost Performance (Current Period)": {
+            "guidance": "Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.",
+            "value": {
+                "Funds spent this reporting period": "",
+                "Root cause of cost variances": "",
+                "Impact to overall budget or contingency funds": "",
+                "Planned corrective or preventive action (Cost)": ""
+            }
         },
-        "Impact to upcoming milestones or": {
-            "guidance": "project due date Identify any impact to any upcoming milestones or overall project schedule for any work that was not accomplished as scheduled. Identify any work currently behind on the critical path or if the critical path has changed based on the variance.",
-            "value": ""
+        "Planning for Next Period": {
+            "guidance": "Outline the accomplishments and costs planned for the upcoming reporting period.",
+            "value": {
+                "Accomplishments planned for next reporting period": [
+                    "",
+                    "",
+                    ""
+                ],
+                "Costs planned for next reporting period": ""
+            }
         },
-        "Planned corrective or preventive": {
-            "guidance": "action Identify any actions needed to make up schedule variances or prevent future schedule variances.",
-            "value": ""
+        "Risks, Issues, and Escalations": {
+            "guidance": "Log new risks, issues, and any matters requiring escalation to sponsors or program managers.",
+            "value": {
+                "New risks identified": "",
+                "New issues identified": "",
+                "Escalations": ""
+            }
         },
-        "Funds spent this reporting period": {
-            "guidance": "Record funds spent this period.",
-            "value": ""
-        },
-        "Root cause of variance": {
-            "guidance": "Identify the cause of the variance for any expenditure over or under plan. Include information on the labor variance versus material variance and whether the variance is due to the basis of estimates or estimating assumptions. Impact to overall budget or contingency funds Indicate the impact to the overall project budget or whether contingency funds must be expended.",
-            "value": ""
-        },
-        "Accomplishments planned for next": {
-            "guidance": "reporting period List all work packages or accomplishments scheduled for completion next period.",
-            "value": ""
-        },
-        "Costs planned for next reporting": {
-            "guidance": "period Identify funds planned to be expended next period.",
-            "value": ""
-        },
-        "New risks identified": {
-            "guidance": "Identify any new risks that have been identified this period. These risks should be recorded in the risk register as well.",
-            "value": ""
-        },
-        "Issues": {
-            "guidance": "Identify any new issues that have arisen this period. These issues should be recorded in the issue log as well.",
-            "value": ""
+        "Project Knowledge and Decisions": {
+            "guidance": "Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.",
+            "value": {
+                "Decisions made": "",
+                "Change requests submitted this period": "",
+                "Lessons learned / Knowledge transfer": ""
+            }
         },
         "Comments": {
-            "guidance": "Record any comments that add relevance to the report.",
+            "guidance": "Document any comments that add relevance to this report.",
             "value": ""
         }
     }

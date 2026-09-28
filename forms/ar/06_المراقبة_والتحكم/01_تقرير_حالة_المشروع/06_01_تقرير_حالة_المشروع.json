@@ -1,68 +1,74 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تقرير حالة المشروع هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة تقرير حالة المشروع بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- معلومات التقرير: قدم تواريخ فترة التقرير واسم مدير المشروع الذي أعد الوثيقة.\n- أداء الجدول الزمني (الفترة الحالية): اذكر الإنجازات، العمل غير المكتمل، الأسباب الجذرية لتباينات الجدول الزمني، التأثيرات على المعالم، والإجراءات التصحيحية.\n- أداء التكلفة (الفترة الحالية): فصل الأموال المنفقة، الأسباب الجذرية لتباينات التكلفة، التأثيرات على الميزانية الإجمالية، والإجراءات التصحيحية.\n- التخطيط للفترة القادمة: حدد الإنجازات والتكاليف المخطط لها لفترة التقرير القادمة.\n- المخاطر والمشكلات والتصعيد: سجل المخاطر الجديدة والمشكلات وأي أمور تتطلب التصعيد للرعاة أو مديري البرامج.\n- المعرفة والقرارات المتعلقة بالمشروع: وثق القرارات المتخذة، ولخص طلبات التغيير، وسجل الدروس المستفادة لنقل المعرفة التنظيمية.\n- ملاحظات: وثق أي تعليقات تضيف صلة بهذا التقرير.",
     "form_name": "تقرير حالة المشروع",
     "document_reference": "PMO-06.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Accomplishments for This Reporting Period": {
-            "guidance": "List all work packages or other accomplishments completed.",
-            "value": ""
+        "معلومات التقرير": {
+            "guidance": "قدم تواريخ فترة التقرير واسم مدير المشروع الذي أعد الوثيقة.",
+            "value": {
+                "تاريخ بدء فترة التقرير": "",
+                "تاريخ انتهاء فترة التقرير": "",
+                "تم الإعداد بواسطة (مدير المشروع)": ""
+            }
         },
-        "Accomplishments Planned but Not Completed": {
-            "guidance": "Work that was scheduled but delayed.",
-            "value": ""
+        "أداء الجدول الزمني (الفترة الحالية)": {
+            "guidance": "اذكر الإنجازات، العمل غير المكتمل، الأسباب الجذرية لتباينات الجدول الزمني، التأثيرات على المعالم، والإجراءات التصحيحية.",
+            "value": {
+                "الإنجازات خلال فترة التقرير الحالية": [
+                    "",
+                    "",
+                    ""
+                ],
+                "الإنجازات المخطط لها ولكن لم تكتمل خلال فترة التقرير الحالية": [
+                    "",
+                    "",
+                    ""
+                ],
+                "السبب الجذري لتباينات الجدول الزمني": "",
+                "التأثير على المعالم القادمة أو تاريخ استحقاق المشروع": "",
+                "الإجراء التصحيحي أو الوقائي المخطط له (الجدول الزمني)": ""
+            }
         },
-        "Root Cause of Variances": {
-            "guidance": "Identify the root cause of schedule or work variances.",
-            "value": ""
+        "أداء التكلفة (الفترة الحالية)": {
+            "guidance": "فصل الأموال المنفقة، الأسباب الجذرية لتباينات التكلفة، التأثيرات على الميزانية الإجمالية، والإجراءات التصحيحية.",
+            "value": {
+                "الأموال التي تم إنفاقها خلال فترة التقرير الحالية": "",
+                "السبب الجذري لتباينات التكلفة": "",
+                "التأثير على الميزانية الإجمالية أو أموال الطوارئ": "",
+                "الإجراء التصحيحي أو الوقائي المخطط له (التكلفة)": ""
+            }
         },
-        "Impact to Upcoming Milestones or Due Date": {
-            "guidance": "Identify any impact to critical path or future milestones.",
-            "value": ""
+        "التخطيط للفترة القادمة": {
+            "guidance": "حدد الإنجازات والتكاليف المخطط لها لفترة التقرير القادمة.",
+            "value": {
+                "الإنجازات المخطط لها لفترة التقرير القادمة": [
+                    "",
+                    "",
+                    ""
+                ],
+                "التكاليف المخطط لها لفترة التقرير القادمة": ""
+            }
         },
-        "Planned Corrective or Preventive Action": {
-            "guidance": "Actions to recover schedule or prevent delays.",
-            "value": ""
+        "المخاطر والمشكلات والتصعيد": {
+            "guidance": "سجل المخاطر الجديدة والمشكلات وأي أمور تتطلب التصعيد للرعاة أو مديري البرامج.",
+            "value": {
+                "المخاطر الجديدة المحددة": "",
+                "المشكلات الجديدة المحددة": "",
+                "قضايا التصعيد": ""
+            }
         },
-        "Funds Spent This Reporting Period": {
-            "guidance": "Actual costs incurred.",
-            "value": ""
+        "المعرفة والقرارات المتعلقة بالمشروع": {
+            "guidance": "وثق القرارات المتخذة، ولخص طلبات التغيير، وسجل الدروس المستفادة لنقل المعرفة التنظيمية.",
+            "value": {
+                "القرارات المتخذة": "",
+                "طلبات التغيير المقدمة خلال هذه الفترة": "",
+                "الدروس المستفادة / نقل المعرفة": ""
+            }
         },
-        "Funds Planned to Be Spent": {
-            "guidance": "Budgeted costs for the period.",
-            "value": ""
-        },
-        "Root Cause of Cost Variances": {
-            "guidance": "Identify causes for any budget overruns or underruns.",
-            "value": ""
-        },
-        "Impact to Overall Budget or Contingency": {
-            "guidance": "How the cost variance affects the total budget.",
-            "value": ""
-        },
-        "Quality Variances Identified": {
-            "guidance": "Identify any product performance or quality issues.",
-            "value": ""
-        },
-        "Accomplishments Planned for Next Period": {
-            "guidance": "Work scheduled for the upcoming period.",
-            "value": ""
-        },
-        "Costs Planned for Next Period": {
-            "guidance": "Expected expenditures for the upcoming period.",
-            "value": ""
-        },
-        "New Risks Identified": {
-            "guidance": "New risks that should be added to the risk register.",
-            "value": ""
-        },
-        "Issues": {
-            "guidance": "New issues that should be added to the issue log.",
-            "value": ""
-        },
-        "التعليقات": {
-            "guidance": "Any additional context.",
+        "ملاحظات": {
+            "guidance": "وثق أي تعليقات تضيف صلة بهذا التقرير.",
             "value": ""
         }
     }

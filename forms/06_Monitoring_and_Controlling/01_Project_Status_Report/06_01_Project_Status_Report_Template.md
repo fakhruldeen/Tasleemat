@@ -1,121 +1,112 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Populate the Project Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
-Section Instructions:
-*   **Accomplishments for this reporting:** period List all work packages or other accomplishments scheduled for completion for the current reporting period.
-*   **Accomplishments planned but not:** completed this reporting period List all work packages or other accomplishments scheduled for the current period but not completed.
-*   **Root cause of variances:** Identify the cause of the variance for any work that was not accomplished as scheduled for the current period.
-*   **Impact to upcoming milestones or:** project due date Identify any impact to any upcoming milestones or overall project schedule for any work that was not accomplished as scheduled. Identify any work currently behind on the critical path or if the critical path has changed based on the variance.
-*   **Planned corrective or preventive:** action Identify any actions needed to make up schedule variances or prevent future schedule variances.
-*   **Funds spent this reporting period:** Record funds spent this period.
-*   **Root cause of variance:** Identify the cause of the variance for any expenditure over or under plan. Include information on the labor variance versus material variance and whether the variance is due to the basis of estimates or estimating assumptions. Impact to overall budget or contingency funds Indicate the impact to the overall project budget or whether contingency funds must be expended.
-*   **Accomplishments planned for next:** reporting period List all work packages or accomplishments scheduled for completion next period.
-*   **Costs planned for next reporting:** period Identify funds planned to be expended next period.
-*   **New risks identified:** Identify any new risks that have been identified this period. These risks should be recorded in the risk register as well.
-*   **Issues:** Identify any new issues that have arisen this period. These issues should be recorded in the issue log as well.
-*   **Comments:** Record any comments that add relevance to the report.
--->
+Section-by-Section Instructions:
+- Report Information: Provide the reporting period dates and the name of the project manager preparing the document.
+- Schedule Performance (Current Period): List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.
+- Cost Performance (Current Period): Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.
+- Planning for Next Period: Outline the accomplishments and costs planned for the upcoming reporting period.
+- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation to sponsors or program managers.
+- Project Knowledge and Decisions: Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.
+- Comments: Document any comments that add relevance to this report. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROJECT STATUS REPORT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Reporting Period:** [ Reporting Period Start Date ] to [ Reporting Period End Date ] |
+| :--- | :--- |
 
 ---
 
-### Accomplishments for this reporting
-<!-- period List all work packages or other accomplishments scheduled for completion for the current reporting period. -->
+## 1. Schedule Performance (Current Period)
 
-> [ Add details... ]
+**Accomplishments for this reporting period:**
+1. [ Add details... ]
+2. [ Add details... ]
+3. [ Add details... ]
 
----
+**Accomplishments planned but not completed this reporting period:**
+1. [ Add details... ]
+2. [ Add details... ]
+3. [ Add details... ]
 
-### Accomplishments planned but not
-<!-- completed this reporting period List all work packages or other accomplishments scheduled for the current period but not completed. -->
+**Root cause of schedule variances:**
+[ Add details... ]
 
-> [ Add details... ]
+**Impact to upcoming milestones or project due date:**
+[ Add details... ]
 
----
-
-### Root cause of variances
-<!-- Identify the cause of the variance for any work that was not accomplished as scheduled for the current period. -->
-
-> [ Add details... ]
-
----
-
-### Impact to upcoming milestones or
-<!-- project due date Identify any impact to any upcoming milestones or overall project schedule for any work that was not accomplished as scheduled. Identify any work currently behind on the critical path or if the critical path has changed based on the variance. -->
-
-> [ Add details... ]
+**Planned corrective or preventive action (Schedule):**
+[ Add details... ]
 
 ---
 
-### Planned corrective or preventive
-<!-- action Identify any actions needed to make up schedule variances or prevent future schedule variances. -->
+## 2. Cost Performance (Current Period)
 
-> [ Add details... ]
+**Funds spent this reporting period:**
+[ Add details... ]
 
----
+**Root cause of cost variances:**
+[ Add details... ]
 
-### Funds spent this reporting period
-<!-- Record funds spent this period. -->
+**Impact to overall budget or contingency funds:**
+[ Add details... ]
 
-> [ Add details... ]
-
----
-
-### Root cause of variance
-<!-- Identify the cause of the variance for any expenditure over or under plan. Include information on the labor variance versus material variance and whether the variance is due to the basis of estimates or estimating assumptions. Impact to overall budget or contingency funds Indicate the impact to the overall project budget or whether contingency funds must be expended. -->
-
-> [ Add details... ]
+**Planned corrective or preventive action (Cost):**
+[ Add details... ]
 
 ---
 
-### Accomplishments planned for next
-<!-- reporting period List all work packages or accomplishments scheduled for completion next period. -->
+## 3. Planning for Next Period
 
-> [ Add details... ]
+**Accomplishments planned for next reporting period:**
+1. [ Add details... ]
+2. [ Add details... ]
+3. [ Add details... ]
 
----
-
-### Costs planned for next reporting
-<!-- period Identify funds planned to be expended next period. -->
-
-> [ Add details... ]
+**Costs planned for next reporting period:**
+[ Add details... ]
 
 ---
 
-### New risks identified
-<!-- Identify any new risks that have been identified this period. These risks should be recorded in the risk register as well. -->
+## 4. Risks, Issues, and Escalations
 
-> [ Add details... ]
+**New risks identified:**
+[ Add details... ]
+
+**New issues identified:**
+[ Add details... ]
+
+**Escalations:**
+[ Add details... ]
 
 ---
 
-### Issues
-<!-- Identify any new issues that have arisen this period. These issues should be recorded in the issue log as well. -->
+## 5. Project Knowledge and Decisions
 
-> [ Add details... ]
+**Decisions made:**
+[ Add details... ]
+
+**Change requests submitted this period:**
+[ Add details... ]
+
+**Lessons learned / Knowledge transfer:**
+[ Add details... ]
 
 ---
 
-### Comments
-<!-- Record any comments that add relevance to the report. -->
-
-> [ Add details... ]
+## 6. Comments
+[ Add details... ]
 
 ---
 
 ### Signatures
 
-| Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
-| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Prepared By (Project Manager): | Reviewed By (Sponsor / PMO): |
+| :--- | :--- |
+| **Name:** [ Prepared By (Project Manager) ] | **Name:** {{Reviewed_By}} |
+| **Signature:** _____________________ | **Signature:** _____________________ |
+| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 ---
 

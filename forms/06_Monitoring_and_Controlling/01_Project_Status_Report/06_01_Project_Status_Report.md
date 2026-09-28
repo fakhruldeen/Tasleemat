@@ -6,71 +6,36 @@ Form: PROJECT STATUS REPORT (Instructions)
 # PROJECT STATUS REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROJECT STATUS REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `PROJECT STATUS REPORT`.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
-> **Alignment:**
-> [ Add Alignment Information Here ]
+> The project status report is filled out by the project manager and submitted on a regular basis to project oversight groups. It tracks overall project schedule and cost performance, indicates impacts to milestones and budgets, and identifies new risks, issues, and variances.
+
+**Tailoring Tips:**
+*   You can add a field for escalations to identify those areas that need to be escalated to the sponsor, program manager, or other appropriate individuals.
+*   Some reports include a field to record decisions made. These would be transferred to the project decision log.
+*   If there were any change requests that were submitted during the reporting period you may want to summarize them and refer the reader to the change log.
+*   If your organization has a robust knowledge management process you might consider adding fields for knowledge transfer or lessons learned.
+
+**Alignment:**
+The project status report should be aligned and consistent with the following documents:
+*   Team member status reports
+*   Project schedule
+*   Cost estimates
+*   Project budget
+*   Issue log
+*   Risk register
+*   Variance analysis
+*   Earned value status report
+*   Contractor status report
 
 ---
 
-### Accomplishments for this reporting
-**Instruction:** period List all work packages or other accomplishments scheduled for completion for the current reporting period.
-
----
-
-### Accomplishments planned but not
-**Instruction:** completed this reporting period List all work packages or other accomplishments scheduled for the current period but not completed.
-
----
-
-### Root cause of variances
-**Instruction:** Identify the cause of the variance for any work that was not accomplished as scheduled for the current period.
-
----
-
-### Impact to upcoming milestones or
-**Instruction:** project due date Identify any impact to any upcoming milestones or overall project schedule for any work that was not accomplished as scheduled. Identify any work currently behind on the critical path or if the critical path has changed based on the variance.
-
----
-
-### Planned corrective or preventive
-**Instruction:** action Identify any actions needed to make up schedule variances or prevent future schedule variances.
-
----
-
-### Funds spent this reporting period
-**Instruction:** Record funds spent this period.
-
----
-
-### Root cause of variance
-**Instruction:** Identify the cause of the variance for any expenditure over or under plan. Include information on the labor variance versus material variance and whether the variance is due to the basis of estimates or estimating assumptions. Impact to overall budget or contingency funds Indicate the impact to the overall project budget or whether contingency funds must be expended.
-
----
-
-### Accomplishments planned for next
-**Instruction:** reporting period List all work packages or accomplishments scheduled for completion next period.
-
----
-
-### Costs planned for next reporting
-**Instruction:** period Identify funds planned to be expended next period.
-
----
-
-### New risks identified
-**Instruction:** Identify any new risks that have been identified this period. These risks should be recorded in the risk register as well.
-
----
-
-### Issues
-**Instruction:** Identify any new issues that have arisen this period. These issues should be recorded in the issue log as well.
-
----
-
-### Comments
-**Instruction:** Record any comments that add relevance to the report.
-
+### Section Generation Instructions
+*   **Report Information:** Provide the reporting period dates and the name of the project manager preparing the document.
+*   **Schedule Performance (Current Period):** List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.
+*   **Cost Performance (Current Period):** Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.
+*   **Planning for Next Period:** Outline the accomplishments and costs planned for the upcoming reporting period.
+*   **Risks, Issues, and Escalations:** Log new risks, issues, and any matters requiring escalation to sponsors or program managers.
+*   **Project Knowledge and Decisions:** Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.
+*   **Comments:** Document any comments that add relevance to this report.
