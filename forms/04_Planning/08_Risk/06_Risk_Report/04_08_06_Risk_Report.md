@@ -65,6 +65,7 @@ The risk report should be aligned and consistent with the following documents:
 *   **Metrics:** Provide counts for: Number of scope risks, Number of schedule risks, Number of cost risks, Number of quality risks, Number of very high probability risks, Number of high probability risks, Number of medium probability risks, Number of active risks, and Newly closed risks.
 *   **Critical Risks:** Populate a table mapping the 'Top Risks' to their proposed 'Responses'.
 *   **Changes to Critical Risks:** Describe any changes to critical risks since the last report.
+*   **Realized Risks (Transferred to Issue Log):** List any risks that materialized during this period and are now being managed as issues.
 
 **Quantitative Analysis**
 *   **Results from Quantitative Assessments:** Summarize results from S-curve, tornado diagrams, etc.
@@ -72,7 +73,7 @@ The risk report should be aligned and consistent with the following documents:
 *   **Range of Outcomes:** Detail the Range of Schedule Outcomes, Range of Cost Outcomes, Key Drivers of Variances, and Proposed Responses.
 
 **Reserve Status**
-*   **Cost Reserve:** Detail the Total Cost Reserve, Used to Date, Used This Period, and Remaining Reserve.
+*   **Cost Reserve:** Detail the Total Cost Reserve (including breakdown of Contingency vs. Management Reserve), Used to Date, Used This Period, and Remaining Reserve.
 *   **Schedule Reserve:** Detail the Total Schedule Reserve, Used to Date, Used This Period, and Remaining Reserve.
 *   **Assessment of Reserve Adequacy:** Provide an assessment of whether the remaining reserves are adequate given the current risk profile.
 

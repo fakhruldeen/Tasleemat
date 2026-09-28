@@ -54,6 +54,10 @@
             "Changes to Critical Risks": {
                 "guidance": "Describe any changes to critical risks since the last report.",
                 "value": ""
+            },
+            "Realized Risks (Transferred to Issue Log)": {
+                "guidance": "List risks that have occurred and transferred to the issue log.",
+                "value": ""
             }
         },
         "Quantitative Analysis": {
@@ -78,6 +82,8 @@
         "Reserve Status": {
             "Cost Reserve": {
                 "Total Cost Reserve": "",
+                "Contingency Reserve": "",
+                "Management Reserve": "",
                 "Used to Date": "",
                 "Used This Period": "",
                 "Remaining Reserve": ""

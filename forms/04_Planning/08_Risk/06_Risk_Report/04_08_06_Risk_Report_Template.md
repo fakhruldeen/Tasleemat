@@ -73,6 +73,9 @@ Ensure lists and tables are populated according to instructions. -->
 ### Changes to Critical Risks
 [ Add details... ]
 
+### Realized Risks (Transferred to Issue Log)
+[ Add details... ]
+
 ---
 
 ## Quantitative Analysis
@@ -99,6 +102,8 @@ Ensure lists and tables are populated according to instructions. -->
 
 ### Cost Reserve
 *   **Total Cost Reserve:** [ Add details... ]
+    *   **Contingency Reserve:** [ Add details... ]
+    *   **Management Reserve:** [ Add details... ]
 *   **Used to Date:** [ Add details... ]
 *   **Used This Period:** [ Add details... ]
 *   **Remaining Reserve:** [ Add details... ]
