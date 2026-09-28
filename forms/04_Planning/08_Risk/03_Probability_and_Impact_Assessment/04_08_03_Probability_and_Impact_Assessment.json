@@ -1,63 +1,89 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Probability and Impact Assessment template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Probability and Impact Assessment",
+    "_llm_instructions": "Populate the Probability and Impact Assessment by defining exact thresholds and rating guidelines based on project scale and criticality.",
+    "form_name": "PROBABILITY AND IMPACT ASSESSMENT",
     "document_reference": "PMO-04.08.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Probability And Impact Assessment Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Scope impact:** \n- **Very High:** The product does not meet the objectives and is effectively useless\n- **High:** The product is deficient in multiple essential requirements\n- **Medium:** The product is deficient in one major requirement or multiple minor requirements\n- **Low:** The product is deficient in a few minor requirements\n- **Very Low:** \n- **Minimal deviation from requirements:** \n- **There is minor deviation in performance:** \n- **Cost increase of 10 to 20 percent:** \n- **Cost increase of 5 to 10 percent:** \n- **Quality impact:** \n- **Schedule impact:** \n- **Cost impact:** \n- **Probability:** \n- **Risk rating:**",
+        "Definitions of Impact by Objective": {
+            "guidance": "Provide specific thresholds for Scope, Quality, Schedule, and Cost across the 5 levels (Very High to Very Low). Example: Very High Schedule Impact = >20% increase.",
             "value": [
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "Probability": "",
-                    "Risk rating": ""
+                    "Rating": "Very High",
+                    "Scope Impact": "",
+                    "Quality Impact": "",
+                    "Schedule Impact": "",
+                    "Cost Impact": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "Probability": "",
-                    "Risk rating": ""
+                    "Rating": "High",
+                    "Scope Impact": "",
+                    "Quality Impact": "",
+                    "Schedule Impact": "",
+                    "Cost Impact": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "Probability": "",
-                    "Risk rating": ""
+                    "Rating": "Medium",
+                    "Scope Impact": "",
+                    "Quality Impact": "",
+                    "Schedule Impact": "",
+                    "Cost Impact": ""
+                },
+                {
+                    "Rating": "Low",
+                    "Scope Impact": "",
+                    "Quality Impact": "",
+                    "Schedule Impact": "",
+                    "Cost Impact": ""
+                },
+                {
+                    "Rating": "Very Low",
+                    "Scope Impact": "",
+                    "Quality Impact": "",
+                    "Schedule Impact": "",
+                    "Cost Impact": ""
+                }
+            ]
+        },
+        "Definitions of Probability": {
+            "guidance": "Provide percentage thresholds or verbal descriptors for probability across the 5 levels. Example: Very High = >80%.",
+            "value": [
+                {
+                    "Rating": "Very High",
+                    "Description": ""
+                },
+                {
+                    "Rating": "High",
+                    "Description": ""
+                },
+                {
+                    "Rating": "Medium",
+                    "Description": ""
+                },
+                {
+                    "Rating": "Low",
+                    "Description": ""
+                },
+                {
+                    "Rating": "Very Low",
+                    "Description": ""
+                }
+            ]
+        },
+        "Risk Rating Guidelines": {
+            "guidance": "Define the rule logic for mapping combinations of probability and impact into High, Medium, or Low overall ratings.",
+            "value": [
+                {
+                    "Risk Rating": "High",
+                    "Conditions": ""
+                },
+                {
+                    "Risk Rating": "Medium",
+                    "Conditions": ""
+                },
+                {
+                    "Risk Rating": "Low",
+                    "Conditions": ""
                 }
             ]
         }

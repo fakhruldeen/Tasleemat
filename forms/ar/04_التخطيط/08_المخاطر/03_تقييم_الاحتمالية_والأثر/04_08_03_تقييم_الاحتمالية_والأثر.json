@@ -1,63 +1,89 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تقييم الاحتمالية والأثر هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة تقييم الاحتمالية والأثر من خلال تحديد عتبات دقيقة وإرشادات تصنيف بناءً على حجم المشروع وأهميته.",
     "form_name": "تقييم الاحتمالية والأثر",
     "document_reference": "PMO-04.08.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات تقييم الاحتمالية والأثر": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Scope impact:** \n- **Very High:** The product does not meet the objectives and is effectively useless\n- **High:** The product is deficient in multiple essential requirements\n- **Medium:** The product is deficient in one major requirement or multiple minor requirements\n- **Low:** The product is deficient in a few minor requirements\n- **Very Low:** \n- **Minimal deviation from requirements:** \n- **There is minor deviation in performance:** \n- **Cost increase of 10 to 20 percent:** \n- **Cost increase of 5 to 10 percent:** \n- **Quality impact:** \n- **Schedule impact:** \n- **Cost impact:** \n- **الاحتمالية:** \n- **Risk rating:**",
+        "تعريفات الأثر حسب الهدف": {
+            "guidance": "توفير عتبات محددة للنطاق والجودة والجدول الزمني والتكلفة عبر المستويات الخمسة (من مرتفع جداً إلى منخفض جداً). مثال: أثر مرتفع جداً على الجدول الزمني = زيادة >20٪.",
             "value": [
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "الاحتمالية": "",
-                    "Risk rating": ""
+                    "التصنيف": "مرتفع جداً",
+                    "أثر النطاق": "",
+                    "أثر الجودة": "",
+                    "أثر الجدول الزمني": "",
+                    "أثر التكلفة": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "الاحتمالية": "",
-                    "Risk rating": ""
+                    "التصنيف": "مرتفع",
+                    "أثر النطاق": "",
+                    "أثر الجودة": "",
+                    "أثر الجدول الزمني": "",
+                    "أثر التكلفة": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "الاحتمالية": "",
-                    "Risk rating": ""
+                    "التصنيف": "متوسط",
+                    "أثر النطاق": "",
+                    "أثر الجودة": "",
+                    "أثر الجدول الزمني": "",
+                    "أثر التكلفة": ""
+                },
+                {
+                    "التصنيف": "منخفض",
+                    "أثر النطاق": "",
+                    "أثر الجودة": "",
+                    "أثر الجدول الزمني": "",
+                    "أثر التكلفة": ""
+                },
+                {
+                    "التصنيف": "منخفض جداً",
+                    "أثر النطاق": "",
+                    "أثر الجودة": "",
+                    "أثر الجدول الزمني": "",
+                    "أثر التكلفة": ""
+                }
+            ]
+        },
+        "تعريفات الاحتمالية": {
+            "guidance": "توفير عتبات مئوية أو واصفات لفظية للاحتمالية عبر المستويات الخمسة. مثال: مرتفع جداً = >80٪.",
+            "value": [
+                {
+                    "التصنيف": "مرتفع جداً",
+                    "الوصف": ""
+                },
+                {
+                    "التصنيف": "مرتفع",
+                    "الوصف": ""
+                },
+                {
+                    "التصنيف": "متوسط",
+                    "الوصف": ""
+                },
+                {
+                    "التصنيف": "منخفض",
+                    "الوصف": ""
+                },
+                {
+                    "التصنيف": "منخفض جداً",
+                    "الوصف": ""
+                }
+            ]
+        },
+        "إرشادات تصنيف المخاطر": {
+            "guidance": "تحديد القواعد المنطقية لتعيين مجموعات الاحتمالية والأثر إلى تصنيفات عامة مرتفعة أو متوسطة أو منخفضة.",
+            "value": [
+                {
+                    "تصنيف المخاطر": "مرتفع",
+                    "الشروط": ""
+                },
+                {
+                    "تصنيف المخاطر": "متوسط",
+                    "الشروط": ""
+                },
+                {
+                    "تصنيف المخاطر": "منخفض",
+                    "الشروط": ""
                 }
             ]
         }
