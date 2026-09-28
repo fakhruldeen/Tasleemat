@@ -1,63 +1,72 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Probability and Impact Matrix template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Probability and Impact Matrix",
+    "_llm_instructions": "Populate the Probability and Impact Matrix based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Probability and Impact Matrix: Provide the exact numerical scores in each box of the 5x5 matrix.\n- Risk Score Thresholds: Define the numerical range and required actions for High, Medium, and Low risk tiers.",
+    "form_name": "PROBABILITY AND IMPACT MATRIX",
     "document_reference": "PMO-04.08.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Probability And Impact Matrix Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Scope impact:** \n- **Very High:** The product does not meet the objectives and is effectively useless\n- **High:** The product is deficient in multiple essential requirements\n- **Medium:** The product is deficient in one major requirement or multiple minor requirements\n- **Low:** The product is deficient in a few minor requirements\n- **Very Low:** \n- **Minimal deviation from requirements:** \n- **There is minor deviation in performance:** \n- **Cost increase of 10 to 20 percent:** \n- **Cost increase of 5 to 10 percent:** \n- **Quality impact:** \n- **Schedule impact:** \n- **Cost impact:** \n- **Probability:** \n- **Risk rating:**",
+        "Probability and Impact Matrix": {
+            "guidance": "Provide the exact numerical scores in each box of the 5x5 matrix.",
             "value": [
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
+                    "Probability \\ Impact": "Very High",
                     "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "Probability": "",
-                    "Risk rating": ""
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
+                    "Probability \\ Impact": "High",
                     "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "Probability": "",
-                    "Risk rating": ""
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
+                    "Probability \\ Impact": "Medium",
                     "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "Probability": "",
-                    "Risk rating": ""
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                },
+                {
+                    "Probability \\ Impact": "Low",
+                    "Very Low": "",
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                },
+                {
+                    "Probability \\ Impact": "Very Low",
+                    "Very Low": "",
+                    "Low": "",
+                    "Medium": "",
+                    "High": "",
+                    "Very High": ""
+                }
+            ]
+        },
+        "Risk Score Thresholds": {
+            "guidance": "Define the numerical range and required actions for High, Medium, and Low risk tiers.",
+            "value": [
+                {
+                    "Risk Tier": "High Risk (Red)",
+                    "Score Range": "",
+                    "Required Action": ""
+                },
+                {
+                    "Risk Tier": "Medium Risk (Yellow)",
+                    "Score Range": "",
+                    "Required Action": ""
+                },
+                {
+                    "Risk Tier": "Low Risk (Green)",
+                    "Score Range": "",
+                    "Required Action": ""
                 }
             ]
         }

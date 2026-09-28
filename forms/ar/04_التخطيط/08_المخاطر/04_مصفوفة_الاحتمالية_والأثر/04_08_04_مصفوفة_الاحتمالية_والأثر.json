@@ -1,63 +1,72 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج مصفوفة الاحتمالية والأثر هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة مصفوفة الاحتمالية والأثر بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- مصفوفة الاحتمالية والأثر: توفير الدرجات العددية الدقيقة في كل مربع من مصفوفة 5x5.\n- عتبات درجات المخاطر: تحديد النطاق العددي والإجراءات المطلوبة لمستويات المخاطر المرتفعة والمتوسطة والمنخفضة.",
     "form_name": "مصفوفة الاحتمالية والأثر",
     "document_reference": "PMO-04.08.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات مصفوفة الاحتمالية والأثر": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Scope impact:** \n- **Very High:** The product does not meet the objectives and is effectively useless\n- **High:** The product is deficient in multiple essential requirements\n- **Medium:** The product is deficient in one major requirement or multiple minor requirements\n- **Low:** The product is deficient in a few minor requirements\n- **Very Low:** \n- **Minimal deviation from requirements:** \n- **There is minor deviation in performance:** \n- **Cost increase of 10 to 20 percent:** \n- **Cost increase of 5 to 10 percent:** \n- **Quality impact:** \n- **Schedule impact:** \n- **Cost impact:** \n- **الاحتمالية:** \n- **Risk rating:**",
+        "مصفوفة الاحتمالية والأثر": {
+            "guidance": "توفير الدرجات العددية الدقيقة في كل مربع من مصفوفة 5x5.",
             "value": [
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "الاحتمالية": "",
-                    "Risk rating": ""
+                    "الاحتمالية \\ الأثر": "مرتفع جداً",
+                    "منخفض جداً": "",
+                    "منخفض": "",
+                    "متوسط": "",
+                    "مرتفع": "",
+                    "مرتفع جداً": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "الاحتمالية": "",
-                    "Risk rating": ""
+                    "الاحتمالية \\ الأثر": "مرتفع",
+                    "منخفض جداً": "",
+                    "منخفض": "",
+                    "متوسط": "",
+                    "مرتفع": "",
+                    "مرتفع جداً": ""
                 },
                 {
-                    "Scope impact": "",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": "",
-                    "Minimal deviation from requirements": "",
-                    "There is minor deviation in performance": "",
-                    "Cost increase of 10 to 20 percent": "",
-                    "Cost increase of 5 to 10 percent": "",
-                    "Quality impact": "",
-                    "Schedule impact": "",
-                    "Cost impact": "",
-                    "الاحتمالية": "",
-                    "Risk rating": ""
+                    "الاحتمالية \\ الأثر": "متوسط",
+                    "منخفض جداً": "",
+                    "منخفض": "",
+                    "متوسط": "",
+                    "مرتفع": "",
+                    "مرتفع جداً": ""
+                },
+                {
+                    "الاحتمالية \\ الأثر": "منخفض",
+                    "منخفض جداً": "",
+                    "منخفض": "",
+                    "متوسط": "",
+                    "مرتفع": "",
+                    "مرتفع جداً": ""
+                },
+                {
+                    "الاحتمالية \\ الأثر": "منخفض جداً",
+                    "منخفض جداً": "",
+                    "منخفض": "",
+                    "متوسط": "",
+                    "مرتفع": "",
+                    "مرتفع جداً": ""
+                }
+            ]
+        },
+        "عتبات درجات المخاطر": {
+            "guidance": "تحديد النطاق العددي والإجراءات المطلوبة لمستويات المخاطر المرتفعة والمتوسطة والمنخفضة.",
+            "value": [
+                {
+                    "مستوى الخطر": "خطر مرتفع (أحمر)",
+                    "نطاق الدرجة": "",
+                    "الإجراء المطلوب": ""
+                },
+                {
+                    "مستوى الخطر": "خطر متوسط (أصفر)",
+                    "نطاق الدرجة": "",
+                    "الإجراء المطلوب": ""
+                },
+                {
+                    "مستوى الخطر": "خطر منخفض (أخضر)",
+                    "نطاق الدرجة": "",
+                    "الإجراء المطلوب": ""
                 }
             ]
         }

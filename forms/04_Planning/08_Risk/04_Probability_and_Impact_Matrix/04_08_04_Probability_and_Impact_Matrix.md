@@ -1,91 +1,18 @@
 ---
 lang: en
-Form: Probability and Impact Matrix (Instructions)
+Form: PROBABILITY AND IMPACT MATRIX (Instructions)
 ---
 
 # PROBABILITY AND IMPACT MATRIX - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `PROBABILITY AND IMPACT MATRIX`.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
-> **Alignment:**
-> [ Add Alignment Information Here ]
+> The Probability and Impact Matrix is a grid for mapping the probability of each risk occurrence and its impact on project objectives if that risk occurs. It is used during qualitative risk analysis to prioritize risks for further quantitative analysis or action. The matrix specifies combinations of probability and impact that lead to rating the risks as low, moderate, or high priority.
 
 ---
 
-### Scope impact
-**Instruction:** 
-
----
-
-### Very High
-**Instruction:** The product does not meet the objectives and is effectively useless
-
----
-
-### High
-**Instruction:** The product is deficient in multiple essential requirements
-
----
-
-### Medium
-**Instruction:** The product is deficient in one major requirement or multiple minor requirements
-
----
-
-### Low
-**Instruction:** The product is deficient in a few minor requirements
-
----
-
-### Very Low
-**Instruction:** 
-
----
-
-### Minimal deviation from requirements
-**Instruction:** 
-
----
-
-### There is minor deviation in performance
-**Instruction:** 
-
----
-
-### Cost increase of 10 to 20 percent
-**Instruction:** 
-
----
-
-### Cost increase of 5 to 10 percent
-**Instruction:** 
-
----
-
-### Quality impact
-**Instruction:** 
-
----
-
-### Schedule impact
-**Instruction:** 
-
----
-
-### Cost impact
-**Instruction:** 
-
----
-
-### Probability
-**Instruction:** 
-
----
-
-### Risk rating
-**Instruction:** 
-
+### Section Generation Instructions
+*   **Probability and Impact Matrix:** Provide the exact numerical scores in each box of the 5x5 matrix. Typically calculated by multiplying the probability score by the impact score.
+*   **Risk Score Thresholds:** Define the numerical range and required actions for High, Medium, and Low risk tiers.

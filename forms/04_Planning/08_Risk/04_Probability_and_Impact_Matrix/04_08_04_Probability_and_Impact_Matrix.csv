@@ -1,4 +1,3 @@
-Scope impact,Very High,High,Medium,Low,Very Low,Minimal deviation from requirements,There is minor deviation in performance,Cost increase of 10 to 20 percent,Cost increase of 5 to 10 percent,Quality impact,Schedule impact,Cost impact,Probability,Risk rating
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+﻿Field,Guidance,LLM_Generated_Value
+Probability and Impact Matrix,Provide the exact numerical scores in each box of the 5x5 matrix.,
+Risk Score Thresholds,"Define the numerical range and required actions for High, Medium, and Low risk tiers.",
