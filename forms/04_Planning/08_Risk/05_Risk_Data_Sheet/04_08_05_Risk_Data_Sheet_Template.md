@@ -35,58 +35,48 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 ## Risk Information
 
-*   **Risk ID:** [LLM_Generate]
-*   **Status:** [LLM_Generate]
-*   **Responsible party:** [LLM_Generate]
+| Property | Details |
+| :--- | :--- |
+| **Risk ID** | [LLM_Generate] |
+| **Status** | [LLM_Generate] |
+| **Responsible party** | [LLM_Generate] |
+| **Risk description** | [LLM_Generate] |
+| **Risk cause** | [LLM_Generate] |
 
-### Description & Causes
-*   **Risk description:** [LLM_Generate]
-*   **Risk cause:** [LLM_Generate]
+## Assessment (Pre-Mitigation)
 
-### Assessment & Score
-*   **Probability:** [LLM_Generate]
-*   **Impact:**
-    *   **Scope:** [LLM_Generate]
-    *   **Quality:** [LLM_Generate]
-    *   **Schedule:** [LLM_Generate]
-    *   **Cost:** [LLM_Generate]
-*   **Score:** [LLM_Generate]
+| Property | Details |
+| :--- | :--- |
+| **Probability** | [LLM_Generate] |
+| **Impact** | **Scope:** [LLM_Generate]<br>**Quality:** [LLM_Generate]<br>**Schedule:** [LLM_Generate]<br>**Cost:** [LLM_Generate] |
+| **Score** | [LLM_Generate] |
 
----
+## Response Strategy
 
-## Response & Planning
+| Property | Details |
+| :--- | :--- |
+| **Responses** | [LLM_Generate] |
+| **Actions** | [LLM_Generate] |
+| **Secondary risks** | [LLM_Generate] |
+| **Residual risk** | [LLM_Generate] |
 
-### Mitigation
-*   **Responses:** [LLM_Generate]
-*   **Actions:** [LLM_Generate]
+## Assessment (Post-Mitigation)
 
-### Revised Assessment (Post-Mitigation)
-*   **Revised probability:** [LLM_Generate]
-*   **Revised impact:**
-    *   **Scope:** [LLM_Generate]
-    *   **Quality:** [LLM_Generate]
-    *   **Schedule:** [LLM_Generate]
-    *   **Cost:** [LLM_Generate]
-*   **Revised score:** [LLM_Generate]
+| Property | Details |
+| :--- | :--- |
+| **Revised probability** | [LLM_Generate] |
+| **Revised impact** | **Scope:** [LLM_Generate]<br>**Quality:** [LLM_Generate]<br>**Schedule:** [LLM_Generate]<br>**Cost:** [LLM_Generate] |
+| **Revised score** | [LLM_Generate] |
 
-### Cascading Risks
-*   **Secondary risks:** [LLM_Generate]
-*   **Residual risk:** [LLM_Generate]
+## Contingency & Fallback Planning
 
----
-
-## Contingency & Fallback
-
-*   **Contingency plan:** [LLM_Generate]
-*   **Contingency funds:** [LLM_Generate]
-*   **Contingency time:** [LLM_Generate]
-*   **Fallback plans:** [LLM_Generate]
-
----
-
-## Additional Information
-
-*   **Comments:** [LLM_Generate]
+| Property | Details |
+| :--- | :--- |
+| **Contingency plan** | [LLM_Generate] |
+| **Contingency funds** | [LLM_Generate] |
+| **Contingency time** | [LLM_Generate] |
+| **Fallback plans** | [LLM_Generate] |
+| **Comments** | [LLM_Generate] |
 
 ---
 
