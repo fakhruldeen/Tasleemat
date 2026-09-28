@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RISK DATA SHEET template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Risk Data Sheet based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Risk ID: Enter a unique risk identifier.\n- Risk description: Provide a detailed description of the risk.\n- Status: Enter the status as open or closed.\n- Risk cause: Describe the circumstances or drivers that are the source of the risk.\n- Probability: Determine the likelihood of the event or condition occurring.\n- Impact: Describe the impact on one or more of the project objectives.\n- Score: Numeric or relative score calculated from probability and impact.\n- Responses: Describe the planned response strategy to the risk or condition.\n- Revised probability: Likelihood after the response has been implemented.\n- Revised impact: Impact after the response has been implemented.\n- Revised score: Revised risk score after the response has been implemented.\n- Responsible party: Identify the person responsible for managing the risk.\n- Actions: Describe any actions that need to be taken to respond to the risk.\n- Secondary risks: Describe new risks that arise out of the response strategies.\n- Residual risk: Describe the remaining risk after response strategies.\n- Contingency plan: Plan initiated if specific events occur (e.g. missing a milestone).\n- Contingency funds: Determine the funds needed to protect the budget from overrun.\n- Contingency time: Determine the time needed to protect the schedule from overrun.\n- Fallback plans: Plan to use if other response strategies fail.\n- Comments: Any comments or additional helpful information.",
     "form_name": "RISK DATA SHEET",
     "document_reference": "PMO-04.08.05",
     "project_title": "",
@@ -30,23 +30,23 @@
             "value": ""
         },
         "Score": {
-            "guidance": "If you are using numeric scoring, multiply the probability times the impact to determine the risk score. If you are using relative scoring then combine the two scores (e.g., highlow or medium-high).",
+            "guidance": "Numeric or relative score calculated from probability and impact.",
             "value": ""
         },
-        "Reponses": {
+        "Responses": {
             "guidance": "Describe the planned response strategy to the risk or condition.",
             "value": ""
         },
         "Revised probability": {
-            "guidance": "Determine the likelihood of the event or condition occurring after the response has been implemented.",
+            "guidance": "Likelihood after the response has been implemented.",
             "value": ""
         },
         "Revised impact": {
-            "guidance": "Describe the impact once the response has been implemented.",
+            "guidance": "Impact after the response has been implemented.",
             "value": ""
         },
         "Revised score": {
-            "guidance": "Enter the revised risk score once the response has been implemented.",
+            "guidance": "Revised risk score after the response has been implemented.",
             "value": ""
         },
         "Responsible party": {
@@ -58,7 +58,7 @@
             "value": ""
         },
         "Secondary risks": {
-            "guidance": "Describe new risks that arise out of the response strategies taken to address the risk.",
+            "guidance": "Describe new risks that arise out of the response strategies.",
             "value": ""
         },
         "Residual risk": {
@@ -66,7 +66,7 @@
             "value": ""
         },
         "Contingency plan": {
-            "guidance": "Develop a plan that will be initiated if specific events occur, such as missing an intermediate milestone. Contingency plans are used when the risk or residual risk is accepted.",
+            "guidance": "Plan initiated if specific events occur.",
             "value": ""
         },
         "Contingency funds": {
@@ -78,15 +78,11 @@
             "value": ""
         },
         "Fallback plans": {
-            "guidance": "Devise a plan to use if other response strategies fail.",
+            "guidance": "Plan to use if other response strategies fail.",
             "value": ""
         },
         "Comments": {
-            "guidance": "Provide any comments or additional helpful information about the risk event or condition.",
-            "value": ""
-        },
-        "Scope</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+            "guidance": "Any comments or additional helpful information.",
             "value": ""
         }
     }
