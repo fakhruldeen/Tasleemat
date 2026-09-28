@@ -60,11 +60,13 @@
             "value": [
                 {
                     "Characteristic": "Team Morale",
-                    "Description": ""
+                    "Rating": "",
+                    "Comments": ""
                 },
                 {
                     "Characteristic": "Cohesiveness",
-                    "Description": ""
+                    "Rating": "",
+                    "Comments": ""
                 }
             ]
         },
@@ -73,11 +75,13 @@
             "value": [
                 {
                     "Area": "Strengths",
-                    "Description": ""
+                    "Rating": "",
+                    "Comments": ""
                 },
                 {
                     "Area": "Weaknesses",
-                    "Description": ""
+                    "Rating": "",
+                    "Comments": ""
                 }
             ]
         },
@@ -86,7 +90,7 @@
             "value": [
                 {
                     "Area": "",
-                    "Approach (Training/Mentoring/Coaching)": "",
+                    "Approach": "",
                     "Actions": ""
                 }
             ]

@@ -40,28 +40,30 @@ Section-by-Section Instructions:
 
 ## 3. Team Characteristics
 
-| Characteristic | Description |
-| :--- | :--- |
-| **Team Morale** | [ Add details... ] |
-| **Cohesiveness** | [ Add details... ] |
+| Characteristic | Rating | Comments |
+| :--- | :--- | :--- |
+| **Team Morale** | [ Add details... ] | [ Add details... ] |
+| **Cohesiveness** | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 4. Team Strengths and Weaknesses
 
-| Area | Description |
-| :--- | :--- |
-| **Strengths** | [ Add details... ] |
-| **Weaknesses** | [ Add details... ] |
+| Area | Rating | Comments |
+| :--- | :--- | :--- |
+| **Strengths** | [ Add details... ] | [ Add details... ] |
+| **Weaknesses** | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 5. Areas for Development
 
-| Area | Approach (Training/Mentoring/Coaching) | Actions |
+| Area | Approach | Actions |
 | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+*Legend for Approach: Training, Mentoring, Coaching*
 
 ---
 
