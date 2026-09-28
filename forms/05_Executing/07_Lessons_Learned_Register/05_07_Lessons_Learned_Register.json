@@ -1,35 +1,22 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Lessons Learned Register template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Lessons Learned Register",
+    "_llm_instructions": "Populate the Lessons Learned Register based on the project context. Note: This log must output an array of objects matching the flat table headers.",
+    "form_name": "LESSONS LEARNED REGISTER",
     "document_reference": "PMO-05.07",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Lessons Learned Register Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **ID:** Enter a unique lesson identifier.\n- **Category:** Document the category of lesson, such as process, technical, environmental, stakeholder, phase, etc.\n- **Trigger:** Describe the context, event, or condition that led to the challenge, problem, or beneficial outcome.\n- **Lesson:** Articulate the lesson that can be passed on to other projects and to the organization.\n- **Responsible party:** Identify the person who is assigned to implement any changes to ensure the lesson is communicated and distributed.\n- **Comments:** Document any clarifying comments about the challenge, problem, good practice, or other fields on the form.",
+        "Lessons Learned Register": {
+            "guidance": "Log all project lessons learned including the trigger event, the core lesson, responsible party, implementation opportunities, and organizational impact.",
             "value": [
                 {
                     "ID": "",
                     "Category": "",
                     "Trigger": "",
                     "Lesson": "",
-                    "Responsible party": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Trigger": "",
-                    "Lesson": "",
-                    "Responsible party": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Trigger": "",
-                    "Lesson": "",
-                    "Responsible party": "",
+                    "Responsible Party": "",
+                    "Identifier/Submitter": "",
+                    "Next Implementation Opportunity & Date": "",
+                    "Organizational Impact (Y/N)": "",
                     "Comments": ""
                 }
             ]

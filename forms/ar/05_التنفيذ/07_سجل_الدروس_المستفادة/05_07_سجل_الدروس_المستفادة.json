@@ -1,36 +1,23 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج سجل الدروس المستفادة هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة سجل الدروس المستفادة بناءً على سياق المشروع. ملاحظة: يجب أن يُخرج هذا السجل مصفوفة من الكائنات تتطابق مع رؤوس الجدول المسطح.",
     "form_name": "سجل الدروس المستفادة",
     "document_reference": "PMO-05.07",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات سجل الدروس المستفادة": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** Enter a unique lesson identifier.\n- **Category:** Document the category of lesson, such as process, technical, environmental, stakeholder, phase, etc.\n- **Trigger:** Describe the context, event, or condition that led to the challenge, problem, or beneficial outcome.\n- **Lesson:** Articulate the lesson that can be passed on to other projects and to the organization.\n- **Responsible party:** Identify the person who is assigned to implement any changes to ensure the lesson is communicated and distributed.\n- **التعليقات:** Document any clarifying comments about the challenge, problem, good practice, or other fields on the form.",
+        "سجل الدروس المستفادة": {
+            "guidance": "قم بتسجيل جميع الدروس المستفادة من المشروع بما في ذلك حدث التحفيز، الدرس الأساسي، الطرف المسؤول، فرص التنفيذ، والتأثير التنظيمي.",
             "value": [
                 {
-                    "ID": "",
-                    "Category": "",
-                    "Trigger": "",
-                    "Lesson": "",
-                    "Responsible party": "",
-                    "التعليقات": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Trigger": "",
-                    "Lesson": "",
-                    "Responsible party": "",
-                    "التعليقات": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Trigger": "",
-                    "Lesson": "",
-                    "Responsible party": "",
-                    "التعليقات": ""
+                    "المعرف (ID)": "",
+                    "الفئة": "",
+                    "المحفز": "",
+                    "الدرس": "",
+                    "الطرف المسؤول": "",
+                    "مقدم/محدد الدرس": "",
+                    "فرصة وتاريخ التنفيذ التالي": "",
+                    "تأثير تنظيمي؟ (نعم/لا)": "",
+                    "ملاحظات": ""
                 }
             ]
         }
