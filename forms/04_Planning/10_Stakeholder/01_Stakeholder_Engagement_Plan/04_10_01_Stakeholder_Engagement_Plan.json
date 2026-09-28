@@ -1,11 +1,24 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this STAKEHOLDER ENGAGEMENT PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Stakeholder Engagement Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Stakeholder Engagement Assessment Matrix: Use 'C' for Current and 'D' for Desired engagement level (Unaware, Resistant, Neutral, Supportive, Leading).\n- Stakeholder Changes: Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.\n- Interrelationships: List any relationships between and among stakeholder groups.\n- Stakeholder Engagement Approach: Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.",
     "form_name": "STAKEHOLDER ENGAGEMENT PLAN",
     "document_reference": "PMO-04.10.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Stakeholder changes": {
+        "Stakeholder Engagement Assessment Matrix": {
+            "guidance": "Use 'C' for Current and 'D' for Desired engagement level (Unaware, Resistant, Neutral, Supportive, Leading).",
+            "value": [
+                {
+                    "Stakeholder Name": "",
+                    "Unaware": "",
+                    "Resistant": "",
+                    "Neutral": "",
+                    "Supportive": "",
+                    "Leading": ""
+                }
+            ]
+        },
+        "Stakeholder Changes": {
             "guidance": "Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.",
             "value": ""
         },
@@ -13,9 +26,14 @@
             "guidance": "List any relationships between and among stakeholder groups.",
             "value": ""
         },
-        "Stakeholder engagement approach": {
+        "Stakeholder Engagement Approach": {
             "guidance": "Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.",
-            "value": ""
+            "value": [
+                {
+                    "Stakeholder Name": "",
+                    "Engagement Approach": ""
+                }
+            ]
         }
     }
 }
