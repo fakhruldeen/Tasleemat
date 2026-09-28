@@ -1,47 +1,25 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Issue Log template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Issue Log",
+    "_llm_instructions": "Populate the Issue Log based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Issue Log: Log all project issues including their type, source, priority (Urgent/High/Medium/Low), impacts, responsible party, status (Open/Closed), and resolution.",
+    "form_name": "ISSUE LOG",
     "document_reference": "PMO-05.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Issue Log Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **ID:** Enter a unique issue identifier.\n- **Type:** Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.\n- **Issue description:** Provide a detailed description of the issue.\n- **Priority:** Define the priority, such as urgent, high, medium, or low.\n- **Impact on objectives:** Identify the project objectives that the issue impacts and the degree of impact.\n- **Responsible party:** Identify the person who is assigned to resolve the issue.\n- **Status:** Denote the status of the issue as open or closed.\n- **Resolution date:** Document the date by which the issue needs to be resolved.\n- **Final resolution:** Describe how the issue was resolved.\n- **Comments:** Document any clarifying comments about the issue, resolution, or other fields on the form.",
+        "Issue Log": {
+            "guidance": "Log all project issues including their type, source, priority (Urgent/High/Medium/Low), impacts, responsible party, status (Open/Closed), and resolution.",
             "value": [
                 {
                     "ID": "",
                     "Type": "",
-                    "Issue description": "",
+                    "Source of Issue": "",
+                    "Issue Description": "",
                     "Priority": "",
-                    "Impact on objectives": "",
-                    "Responsible party": "",
+                    "Impact on Objectives": "",
+                    "Impacted Stakeholders": "",
+                    "Responsible Party": "",
                     "Status": "",
-                    "Resolution date": "",
-                    "Final resolution": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Issue description": "",
-                    "Priority": "",
-                    "Impact on objectives": "",
-                    "Responsible party": "",
-                    "Status": "",
-                    "Resolution date": "",
-                    "Final resolution": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Issue description": "",
-                    "Priority": "",
-                    "Impact on objectives": "",
-                    "Responsible party": "",
-                    "Status": "",
-                    "Resolution date": "",
-                    "Final resolution": "",
+                    "Resolution Date": "",
+                    "Final Resolution": "",
                     "Comments": ""
                 }
             ]

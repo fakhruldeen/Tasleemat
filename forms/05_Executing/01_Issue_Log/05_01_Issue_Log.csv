@@ -1,4 +1,2 @@
-ID,Type,Issue description,Priority,Impact on objectives,Responsible party,Status,Resolution date,Final resolution,Comments
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+﻿Field,Guidance,LLM_Generated_Value
+Issue Log,"Log all project issues including their type, source, priority (Urgent/High/Medium/Low), impacts, responsible party, status (Open/Closed), and resolution.","[{""ID"": """", ""Type"": """", ""Source of Issue"": """", ""Issue Description"": """", ""Priority"": """", ""Impact on Objectives"": """", ""Impacted Stakeholders"": """", ""Responsible Party"": """", ""Status"": """", ""Resolution Date"": """", ""Final Resolution"": """", ""Comments"": """"}]"
