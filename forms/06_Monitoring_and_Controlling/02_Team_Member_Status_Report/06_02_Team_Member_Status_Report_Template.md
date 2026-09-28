@@ -1,6 +1,7 @@
 <!-- LLM INSTRUCTIONS: Populate the Team Member Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
 Section-by-Section Instructions:
+- Report Information: Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.
 - Schedule and Activities (Current Period): Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.
 - Cost and Budget (Current Period): Provide information on funds planned vs spent, and the root cause of any cost variances.
 - Quality and Corrective Actions: Identify quality variances and planned corrective or preventive actions.
@@ -13,9 +14,9 @@ Section-by-Section Instructions:
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">TEAM MEMBER STATUS REPORT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Reporting Period:** [ Start Date ] to [ End Date ] |
+| **Date Prepared:** {{Current_Date}} | **Reporting Period:** [ Reporting Period Start Date ] to [ Reporting Period End Date ] |
 | :--- | :--- |
-| **Team Member Name:** [ Name ] | **Role:** [ Role ] |
+| **Team Member Name:** [ Team Member Name ] | **Role:** [ Team Member Role ] |
 
 ---
 
@@ -108,7 +109,7 @@ Section-by-Section Instructions:
 
 | Prepared By (Team Member): | Reviewed By (Project Manager): |
 | :--- | :--- |
-| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} |
+| **Name:** [ Prepared By (Team Member) ] | **Name:** {{Reviewed_By}} |
 | **Signature:** _____________________ | **Signature:** _____________________ |
 | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 

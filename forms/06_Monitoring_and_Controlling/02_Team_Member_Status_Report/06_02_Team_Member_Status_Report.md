@@ -30,6 +30,7 @@ The team member status report should be aligned and consistent with the followin
 ---
 
 ### Section Generation Instructions
+*   **Report Information:** Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.
 *   **Schedule and Activities (Current Period):** Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.
 *   **Cost and Budget (Current Period):** Provide information on funds planned vs spent, and the root cause of any cost variances.
 *   **Quality and Corrective Actions:** Identify quality variances and planned corrective or preventive actions.

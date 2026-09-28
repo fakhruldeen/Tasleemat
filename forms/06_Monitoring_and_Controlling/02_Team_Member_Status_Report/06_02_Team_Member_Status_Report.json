@@ -1,10 +1,20 @@
 {
-    "_llm_instructions": "Populate the Team Member Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Schedule and Activities (Current Period): Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.\n- Cost and Budget (Current Period): Provide information on funds planned vs spent, and the root cause of any cost variances.\n- Quality and Corrective Actions: Identify quality variances and planned corrective or preventive actions.\n- Planning for Next Period: Outline the schedule and cost plans for the upcoming reporting period.\n- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation.\n- Project Knowledge and Decisions: Document key decisions made and lessons learned to transfer to organizational repositories.\n- Comments: Document any comments that add relevance to this report.",
+    "_llm_instructions": "Populate the Team Member Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.\n- Schedule and Activities (Current Period): Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.\n- Cost and Budget (Current Period): Provide information on funds planned vs spent, and the root cause of any cost variances.\n- Quality and Corrective Actions: Identify quality variances and planned corrective or preventive actions.\n- Planning for Next Period: Outline the schedule and cost plans for the upcoming reporting period.\n- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation.\n- Project Knowledge and Decisions: Document key decisions made and lessons learned to transfer to organizational repositories.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "TEAM MEMBER STATUS REPORT",
     "document_reference": "PMO-06.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "Report Information": {
+            "guidance": "Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.",
+            "value": {
+                "Reporting Period Start Date": "",
+                "Reporting Period End Date": "",
+                "Team Member Name": "",
+                "Team Member Role": "",
+                "Prepared By (Team Member)": ""
+            }
+        },
         "Schedule and Activities (Current Period)": {
             "guidance": "Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.",
             "value": {

@@ -3,6 +3,7 @@ This document provides descriptions for each element in the Team Member Status R
 
 | Document Element | Description |
 | :--- | :--- |
+| **Report Information** | Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document. |
 | **Activities planned this reporting period** | List all activities scheduled for this period, including work to be started, continued, or completed. |
 | **Activities accomplished this reporting period** | List all activities accomplished this period, including work that was started, continued, or completed. |
 | **Activities planned but not accomplished this reporting period** | List all activities that were scheduled for this period, but not started, continued, or completed. |
