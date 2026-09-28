@@ -23,8 +23,8 @@ The team performance assessment should be aligned and consistent with the follow
 ---
 
 ### Section Generation Instructions
-*   **Technical Performance:** Rate the team's ability to deliver across technical dimensions and provide justifying comments.
-*   **Interpersonal Competency:** Rate the team's interpersonal skills and provide justifying comments.
-*   **Team Characteristics:** Describe the overall team morale and cohesiveness.
-*   **Team Strengths and Weaknesses:** Identify the primary strengths and weaknesses of the team.
+*   **Technical Performance:** Rate the team's ability to deliver across technical dimensions and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
+*   **Interpersonal Competency:** Rate the team's interpersonal skills and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
+*   **Team Characteristics:** Describe the overall team morale and cohesiveness. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
+*   **Team Strengths and Weaknesses:** Identify the primary strengths and weaknesses of the team. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
 *   **Areas for Development:** Identify areas for development and the approach to implement them.

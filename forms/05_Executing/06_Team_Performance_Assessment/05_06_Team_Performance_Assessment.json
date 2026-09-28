@@ -1,12 +1,12 @@
 {
-    "_llm_instructions": "Populate the Team Performance Assessment based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Technical Performance: Rate the team's ability to deliver across technical dimensions and provide justifying comments.\n- Interpersonal Competency: Rate the team's interpersonal skills and provide justifying comments.\n- Team Characteristics: Describe the overall team morale and cohesiveness.\n- Team Strengths and Weaknesses: Identify the primary strengths and weaknesses of the team.\n- Areas for Development: Identify areas for development and the approach to implement them.",
+    "_llm_instructions": "Populate the Team Performance Assessment based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Technical Performance: Rate the team's ability to deliver across technical dimensions and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Interpersonal Competency: Rate the team's interpersonal skills and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Team Characteristics: Describe the overall team morale and cohesiveness. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Team Strengths and Weaknesses: Identify the primary strengths and weaknesses of the team. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Areas for Development: Identify areas for development and the approach to implement them.",
     "form_name": "TEAM PERFORMANCE ASSESSMENT",
     "document_reference": "PMO-05.06",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Technical Performance": {
-            "guidance": "Rate the team's ability to deliver across technical dimensions and provide justifying comments.",
+            "guidance": "Rate the team's ability to deliver across technical dimensions and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
             "value": [
                 {
                     "Dimension": "Scope",
@@ -31,7 +31,7 @@
             ]
         },
         "Interpersonal Competency": {
-            "guidance": "Rate the team's interpersonal skills and provide justifying comments.",
+            "guidance": "Rate the team's interpersonal skills and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
             "value": [
                 {
                     "Dimension": "Communication",
@@ -56,7 +56,7 @@
             ]
         },
         "Team Characteristics": {
-            "guidance": "Describe the overall team morale and cohesiveness.",
+            "guidance": "Describe the overall team morale and cohesiveness. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
             "value": [
                 {
                     "Characteristic": "Team Morale",
@@ -71,7 +71,7 @@
             ]
         },
         "Team Strengths and Weaknesses": {
-            "guidance": "Identify the primary strengths and weaknesses of the team.",
+            "guidance": "Identify the primary strengths and weaknesses of the team. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
             "value": [
                 {
                     "Area": "Strengths",

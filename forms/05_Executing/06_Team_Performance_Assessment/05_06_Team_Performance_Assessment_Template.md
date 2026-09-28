@@ -1,10 +1,10 @@
 <!-- LLM INSTRUCTIONS: Populate the Team Performance Assessment based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
 Section-by-Section Instructions:
-- Technical Performance: Rate the team's ability to deliver across technical dimensions and provide justifying comments.
-- Interpersonal Competency: Rate the team's interpersonal skills and provide justifying comments.
-- Team Characteristics: Describe the overall team morale and cohesiveness.
-- Team Strengths and Weaknesses: Identify the primary strengths and weaknesses of the team.
+- Technical Performance: Rate the team's ability to deliver across technical dimensions and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
+- Interpersonal Competency: Rate the team's interpersonal skills and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
+- Team Characteristics: Describe the overall team morale and cohesiveness. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
+- Team Strengths and Weaknesses: Identify the primary strengths and weaknesses of the team. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
 - Areas for Development: Identify areas for development and the approach to implement them. -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -13,6 +13,13 @@ Section-by-Section Instructions:
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
 | :--- | :--- |
+
+---
+
+> **Rating Legend:**
+> `[X]` Exceeds Expectations
+> `[M]` Meets Expectations
+> `[N]` Needs Improvement
 
 ---
 
