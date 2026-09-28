@@ -1,100 +1,74 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Populate the Change Request based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
-Section Instructions:
-*   **Requestor:** The name, and if appropriate, the position of the person requesting the change
-*   **Category:** Check a box to indicate the category of change.
-*   **Description of change:** Describe the proposed change in enough detail to clearly communicate all aspects of the change.
-*   **Justification for proposed change:** Indicate the reason for the change.
-*   **Quality:** Describe the impact of the proposed change on the project or product quality.
-*   **Requirements:** Describe the impact of the proposed change on the project or product requirements.
-*   **Cost:** Describe the impact of the proposed change on the project budget, cost estimates, or funding requirements.
-*   **Schedule:** Describe the impact of the proposed change on the schedule and whether it will change the critical path.
-*   **Project:** documents Describe the impact of the proposed change on each project document.
-*   **Comments:** Provide any comments that will clarify information about the requested change.
--->
+Section-by-Section Instructions:
+- Requestor Name and Position: The name, and if appropriate, the position of the person requesting the change.
+- Change Category: Check a box to indicate the category of change.
+- Change Type: Indicate whether the change is mandatory (such as a legal requirement) or discretionary.
+- Description of Change: Describe the proposed change in enough detail to clearly communicate all aspects of the change.
+- Justification for Proposed Change: Indicate the reason for the change.
+- Implications of Not Making the Change: Describe the implications or risks of not implementing this change.
+- Impacts of Change: Describe the impact of the proposed change across project dimensions.
+- Comments: Provide any comments that will clarify information about the requested change. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">CHANGE REQUEST</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
+| :--- | :--- |
 
 ---
 
-### Requestor
-<!-- The name, and if appropriate, the position of the person requesting the change -->
-
-> [ Add details... ]
-
----
-
-### Category
-<!-- Check a box to indicate the category of change. -->
-
-> [ Add details... ]
+## 1. Requestor Information
+**Requestor Name and Position:**
+[ Add details... ]
 
 ---
 
-### Description of change
-<!-- Describe the proposed change in enough detail to clearly communicate all aspects of the change. -->
+## 2. Change Classification
 
-> [ Add details... ]
+**Change Category:**
+- [ ] Scope
+- [ ] Schedule
+- [ ] Cost
+- [ ] Quality
+- [ ] Resource
+- [ ] Other: [ Add details... ]
 
----
-
-### Justification for proposed change
-<!-- Indicate the reason for the change. -->
-
-> [ Add details... ]
-
----
-
-### Impacts of change</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
-> [ Add details... ]
+**Change Type:**
+- [ ] Mandatory (e.g., Legal / Compliance)
+- [ ] Discretionary
 
 ---
 
-### Quality
-<!-- Describe the impact of the proposed change on the project or product quality. -->
+## 3. Change Details
 
-> [ Add details... ]
+### 3.1 Description of Change
+[ Add details... ]
 
----
+### 3.2 Justification for Proposed Change
+[ Add details... ]
 
-### Requirements
-<!-- Describe the impact of the proposed change on the project or product requirements. -->
-
-> [ Add details... ]
-
----
-
-### Cost
-<!-- Describe the impact of the proposed change on the project budget, cost estimates, or funding requirements. -->
-
-> [ Add details... ]
+### 3.3 Implications of Not Making the Change
+[ Add details... ]
 
 ---
 
-### Schedule
-<!-- Describe the impact of the proposed change on the schedule and whether it will change the critical path. -->
+## 4. Impacts of Change
 
-> [ Add details... ]
+| Area | Impact Description |
+| :--- | :--- |
+| **Scope** | [ Add details... ] |
+| **Quality** | [ Add details... ] |
+| **Requirements** | [ Add details... ] |
+| **Cost** | [ Add details... ] |
+| **Schedule** | [ Add details... ] |
+| **Project documents** | [ Add details... ] |
 
 ---
 
-### Project
-<!-- documents Describe the impact of the proposed change on each project document. -->
-
-> [ Add details... ]
-
----
-
-### Comments
-<!-- Provide any comments that will clarify information about the requested change. -->
-
-> [ Add details... ]
+## 5. Comments
+[ Add details... ]
 
 ---
 
@@ -103,7 +77,7 @@ Section Instructions:
 | Prepared By: | Reviewed By: | Approved By: |
 | :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
+| **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 ---

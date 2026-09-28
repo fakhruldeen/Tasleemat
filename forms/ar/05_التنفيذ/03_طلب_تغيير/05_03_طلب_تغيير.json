@@ -1,52 +1,75 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج طلب تغيير هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة طلب التغيير بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- اسم وطالب التغيير ومنصبه: الاسم، وإذا كان مناسبًا، منصب الشخص الذي يطلب التغيير.\n- فئة التغيير: ضع علامة في مربع للإشارة إلى فئة التغيير.\n- نوع التغيير: أشر إلى ما إذا كان التغيير إلزاميًا (مثل متطلب قانوني) أو تقديريًا.\n- وصف التغيير: صف التغيير المقترح بتفصيل كافٍ لإيصال جميع جوانب التغيير بوضوح.\n- مبرر التغيير المقترح: أشر إلى سبب التغيير.\n- الآثار المترتبة على عدم إجراء التغيير: صف الآثار أو المخاطر المترتبة على عدم تنفيذ هذا التغيير.\n- تأثيرات التغيير: صف تأثير التغيير المقترح عبر أبعاد المشروع.\n- ملاحظات: قدم أي تعليقات توضح المعلومات حول التغيير المطلوب.",
     "form_name": "طلب تغيير",
     "document_reference": "PMO-05.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Requestor & Date": {
-            "guidance": "Name of the person requesting the change and the date.",
+        "اسم وطالب التغيير ومنصبه": {
+            "guidance": "الاسم، وإذا كان مناسبًا، منصب الشخص الذي يطلب التغيير.",
             "value": ""
         },
-        "Category of Change": {
-            "guidance": "Scope, Quality, Requirements, Cost, Schedule, or Documents.",
+        "فئة التغيير": {
+            "guidance": "ضع علامة في مربع للإشارة إلى فئة التغيير.",
+            "value": {
+                "النطاق": false,
+                "الجدول الزمني": false,
+                "التكلفة": false,
+                "الجودة": false,
+                "الموارد": false,
+                "أخرى": ""
+            }
+        },
+        "نوع التغيير": {
+            "guidance": "أشر إلى ما إذا كان التغيير إلزاميًا (مثل متطلب قانوني) أو تقديريًا.",
+            "value": {
+                "إلزامي": false,
+                "تقديري": false
+            }
+        },
+        "وصف التغيير": {
+            "guidance": "صف التغيير المقترح بتفصيل كافٍ لإيصال جميع جوانب التغيير بوضوح.",
             "value": ""
         },
-        "Detailed Description of Proposed Change": {
-            "guidance": "Clear explanation of what needs to be changed.",
+        "مبرر التغيير المقترح": {
+            "guidance": "أشر إلى سبب التغيير.",
             "value": ""
         },
-        "Justification for Proposed Change": {
-            "guidance": "Reasoning and business value for the change.",
+        "الآثار المترتبة على عدم إجراء التغيير": {
+            "guidance": "صف الآثار أو المخاطر المترتبة على عدم تنفيذ هذا التغيير.",
             "value": ""
         },
-        "Impacts of Change - Scope": {
-            "guidance": "How the change affects project scope.",
-            "value": ""
+        "تأثيرات التغيير": {
+            "guidance": "صف تأثير التغيير المقترح عبر أبعاد المشروع.",
+            "value": [
+                {
+                    "المجال": "النطاق",
+                    "وصف التأثير": ""
+                },
+                {
+                    "المجال": "الجودة",
+                    "وصف التأثير": ""
+                },
+                {
+                    "المجال": "المتطلبات",
+                    "وصف التأثير": ""
+                },
+                {
+                    "المجال": "التكلفة",
+                    "وصف التأثير": ""
+                },
+                {
+                    "المجال": "الجدول الزمني",
+                    "وصف التأثير": ""
+                },
+                {
+                    "المجال": "مستندات المشروع",
+                    "وصف التأثير": ""
+                }
+            ]
         },
-        "Impacts of Change - Quality": {
-            "guidance": "How the change affects quality standards.",
-            "value": ""
-        },
-        "Impacts of Change - Schedule": {
-            "guidance": "How the change affects the timeline.",
-            "value": ""
-        },
-        "Impacts of Change - Cost": {
-            "guidance": "How the change affects the budget.",
-            "value": ""
-        },
-        "Impacts of Change - Stakeholder/Documents": {
-            "guidance": "Impact on stakeholders and which documents need updates.",
-            "value": ""
-        },
-        "التعليقات": {
-            "guidance": "Additional clarifying information.",
-            "value": ""
-        },
-        "Disposition": {
-            "guidance": "Approve, Defer, Reject, and Justification (Filled by CCB).",
+        "ملاحظات": {
+            "guidance": "قدم أي تعليقات توضح المعلومات حول التغيير المطلوب.",
             "value": ""
         }
     }

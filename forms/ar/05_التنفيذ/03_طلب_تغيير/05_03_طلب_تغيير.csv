@@ -1,12 +1,9 @@
-الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
-Requestor & Date,Name of the person requesting the change and the date.,
-Category of Change,"Scope, Quality, Requirements, Cost, Schedule, or Documents.",
-Detailed Description of Proposed Change,Clear explanation of what needs to be changed.,
-Justification for Proposed Change,Reasoning and business value for the change.,
-Impacts of Change - Scope,How the change affects project scope.,
-Impacts of Change - Quality,How the change affects quality standards.,
-Impacts of Change - Schedule,How the change affects the timeline.,
-Impacts of Change - Cost,How the change affects the budget.,
-Impacts of Change - Stakeholder/Documents,Impact on stakeholders and which documents need updates.,
-التعليقات,Additional clarifying information.,
-Disposition,"Approve, Defer, Reject, and Justification (Filled by CCB).",
+﻿Field,Guidance,LLM_Generated_Value
+اسم وطالب التغيير ومنصبه,الاسم، وإذا كان مناسبًا، منصب الشخص الذي يطلب التغيير.,
+فئة التغيير,ضع علامة في مربع للإشارة إلى فئة التغيير.,"{""النطاق"": false, ""الجدول الزمني"": false, ""التكلفة"": false, ""الجودة"": false, ""الموارد"": false, ""أخرى"": """"}"
+نوع التغيير,أشر إلى ما إذا كان التغيير إلزاميًا (مثل متطلب قانوني) أو تقديريًا.,"{""إلزامي"": false, ""تقديري"": false}"
+وصف التغيير,صف التغيير المقترح بتفصيل كافٍ لإيصال جميع جوانب التغيير بوضوح.,
+مبرر التغيير المقترح,أشر إلى سبب التغيير.,
+الآثار المترتبة على عدم إجراء التغيير,صف الآثار أو المخاطر المترتبة على عدم تنفيذ هذا التغيير.,
+تأثيرات التغيير,صف تأثير التغيير المقترح عبر أبعاد المشروع.,"[{""المجال"": ""النطاق"", ""وصف التأثير"": """"}, {""المجال"": ""الجودة"", ""وصف التأثير"": """"}, {""المجال"": ""المتطلبات"", ""وصف التأثير"": """"}, {""المجال"": ""التكلفة"", ""وصف التأثير"": """"}, {""المجال"": ""الجدول الزمني"", ""وصف التأثير"": """"}, {""المجال"": ""مستندات المشروع"", ""وصف التأثير"": """"}]"
+ملاحظات,قدم أي تعليقات توضح المعلومات حول التغيير المطلوب.,

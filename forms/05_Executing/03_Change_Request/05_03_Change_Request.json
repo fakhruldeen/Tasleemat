@@ -1,49 +1,72 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this CHANGE REQUEST template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Change Request based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Requestor Name and Position: The name, and if appropriate, the position of the person requesting the change.\n- Change Category: Check a box to indicate the category of change.\n- Change Type: Indicate whether the change is mandatory (such as a legal requirement) or discretionary.\n- Description of Change: Describe the proposed change in enough detail to clearly communicate all aspects of the change.\n- Justification for Proposed Change: Indicate the reason for the change.\n- Implications of Not Making the Change: Describe the implications or risks of not implementing this change.\n- Impacts of Change: Describe the impact of the proposed change across project dimensions.\n- Comments: Provide any comments that will clarify information about the requested change.",
     "form_name": "CHANGE REQUEST",
     "document_reference": "PMO-05.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Requestor": {
-            "guidance": "The name, and if appropriate, the position of the person requesting the change",
+        "Requestor Name and Position": {
+            "guidance": "The name, and if appropriate, the position of the person requesting the change.",
             "value": ""
         },
-        "Category": {
+        "Change Category": {
             "guidance": "Check a box to indicate the category of change.",
-            "value": ""
+            "value": {
+                "Scope": false,
+                "Schedule": false,
+                "Cost": false,
+                "Quality": false,
+                "Resource": false,
+                "Other": ""
+            }
         },
-        "Description of change": {
+        "Change Type": {
+            "guidance": "Indicate whether the change is mandatory (such as a legal requirement) or discretionary.",
+            "value": {
+                "Mandatory": false,
+                "Discretionary": false
+            }
+        },
+        "Description of Change": {
             "guidance": "Describe the proposed change in enough detail to clearly communicate all aspects of the change.",
             "value": ""
         },
-        "Justification for proposed change": {
+        "Justification for Proposed Change": {
             "guidance": "Indicate the reason for the change.",
             "value": ""
         },
-        "Impacts of change</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "Implications of Not Making the Change": {
+            "guidance": "Describe the implications or risks of not implementing this change.",
             "value": ""
         },
-        "Quality": {
-            "guidance": "Describe the impact of the proposed change on the project or product quality.",
-            "value": ""
-        },
-        "Requirements": {
-            "guidance": "Describe the impact of the proposed change on the project or product requirements.",
-            "value": ""
-        },
-        "Cost": {
-            "guidance": "Describe the impact of the proposed change on the project budget, cost estimates, or funding requirements.",
-            "value": ""
-        },
-        "Schedule": {
-            "guidance": "Describe the impact of the proposed change on the schedule and whether it will change the critical path.",
-            "value": ""
-        },
-        "Project": {
-            "guidance": "documents Describe the impact of the proposed change on each project document.",
-            "value": ""
+        "Impacts of Change": {
+            "guidance": "Describe the impact of the proposed change across project dimensions.",
+            "value": [
+                {
+                    "Area": "Scope",
+                    "Impact Description": ""
+                },
+                {
+                    "Area": "Quality",
+                    "Impact Description": ""
+                },
+                {
+                    "Area": "Requirements",
+                    "Impact Description": ""
+                },
+                {
+                    "Area": "Cost",
+                    "Impact Description": ""
+                },
+                {
+                    "Area": "Schedule",
+                    "Impact Description": ""
+                },
+                {
+                    "Area": "Project documents",
+                    "Impact Description": ""
+                }
+            ]
         },
         "Comments": {
             "guidance": "Provide any comments that will clarify information about the requested change.",

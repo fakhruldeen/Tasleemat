@@ -1,11 +1,9 @@
-Field,Guidance,LLM_Generated_Value
-Requestor,"The name, and if appropriate, the position of the person requesting the change",
-Category,Check a box to indicate the category of change.,
-Description of change,Describe the proposed change in enough detail to clearly communicate all aspects of the change.,
-Justification for proposed change,Indicate the reason for the change.,
-Quality,Describe the impact of the proposed change on the project or product quality.,
-Requirements,Describe the impact of the proposed change on the project or product requirements.,
-Cost,"Describe the impact of the proposed change on the project budget, cost estimates, or funding requirements.",
-Schedule,Describe the impact of the proposed change on the schedule and whether it will change the critical path.,
-Project,documents Describe the impact of the proposed change on each project document.,
+﻿Field,Guidance,LLM_Generated_Value
+Requestor Name and Position,"The name, and if appropriate, the position of the person requesting the change.",
+Change Category,Check a box to indicate the category of change.,"{""Scope"": false, ""Schedule"": false, ""Cost"": false, ""Quality"": false, ""Resource"": false, ""Other"": """"}"
+Change Type,Indicate whether the change is mandatory (such as a legal requirement) or discretionary.,"{""Mandatory"": false, ""Discretionary"": false}"
+Description of Change,Describe the proposed change in enough detail to clearly communicate all aspects of the change.,
+Justification for Proposed Change,Indicate the reason for the change.,
+Implications of Not Making the Change,Describe the implications or risks of not implementing this change.,
+Impacts of Change,Describe the impact of the proposed change across project dimensions.,"[{""Area"": ""Scope"", ""Impact Description"": """"}, {""Area"": ""Quality"", ""Impact Description"": """"}, {""Area"": ""Requirements"", ""Impact Description"": """"}, {""Area"": ""Cost"", ""Impact Description"": """"}, {""Area"": ""Schedule"", ""Impact Description"": """"}, {""Area"": ""Project documents"", ""Impact Description"": """"}]"
 Comments,Provide any comments that will clarify information about the requested change.,
