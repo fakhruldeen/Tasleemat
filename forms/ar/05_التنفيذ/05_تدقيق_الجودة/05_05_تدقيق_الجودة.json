@@ -1,44 +1,52 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تدقيق الجودة هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة تدقيق الجودة بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- المجال الذي تم تدقيقه: ضع علامة في المربع للمجال أو المجالات التي تم تدقيقها.\n- الممارسات الجيدة من مشاريع مماثلة: صف أي ممارسات جيدة أو أفضل الممارسات التي يمكن مشاركتها من مشاريع مماثلة.\n- مجالات التحسين: صف أي مجالات تحتاج إلى تحسين والتحسينات أو القياسات المحددة التي يجب تحقيقها.\n- أوجه القصور أو العيوب: سجل أي عيوب أو أوجه قصور تم العثور عليها أثناء التدقيق، بما في ذلك بنود الإجراءات.\n- تتبع تنفيذ التغييرات المعتمدة: تتبع حالة تنفيذ التغييرات المعتمدة، أو الإجراءات التصحيحية أو الوقائية.\n- المعلومات المراد مشاركتها مع مشاريع أخرى: وثق أي معلومات أو رؤى أو نتائج يجب مشاركتها مع مشاريع أخرى.\n- ملاحظات: قدم أي تعليقات إضافية مفيدة حول التدقيق.",
     "form_name": "تدقيق الجودة",
     "document_reference": "PMO-05.05",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Area audited": {
-            "guidance": "Check the box for the area or areas audited.",
+        "المجال الذي تم تدقيقه": {
+            "guidance": "ضع علامة في المربع للمجال أو المجالات التي تم تدقيقها.",
+            "value": {
+                "عمليات المشروع": false,
+                "مستندات المشروع": false,
+                "متطلبات المنتج": false,
+                "وثائق المنتج": false,
+                "إصلاح العيوب أو أوجه القصور": false,
+                "الامتثال للسياسات والإجراءات التنظيمية": false,
+                "الامتثال لخطة إدارة الجودة": false
+            }
+        },
+        "الممارسات الجيدة من مشاريع مماثلة": {
+            "guidance": "صف أي ممارسات جيدة أو أفضل الممارسات التي يمكن مشاركتها من مشاريع مماثلة.",
             "value": ""
         },
-        "Good practices from similar projects": {
-            "guidance": "Describe any good or best practices that can be shared from similar projects.",
+        "مجالات التحسين": {
+            "guidance": "صف أي مجالات تحتاج إلى تحسين والتحسينات أو القياسات المحددة التي يجب تحقيقها.",
             "value": ""
         },
-        "Areas for improvement": {
-            "guidance": "Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.",
+        "أوجه القصور أو العيوب": {
+            "guidance": "سجل أي عيوب أو أوجه قصور تم العثور عليها أثناء التدقيق، بما في ذلك بنود الإجراءات.",
+            "value": [
+                {
+                    "المعرف (ID)": "",
+                    "العيب": "",
+                    "الإجراء": "",
+                    "الطرف المسؤول": "",
+                    "تاريخ الاستحقاق": ""
+                }
+            ]
+        },
+        "تتبع تنفيذ التغييرات المعتمدة": {
+            "guidance": "تتبع حالة تنفيذ التغييرات المعتمدة، أو الإجراءات التصحيحية أو الوقائية.",
             "value": ""
         },
-        "Deficiencies or defects</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "المعلومات المراد مشاركتها مع مشاريع أخرى": {
+            "guidance": "وثق أي معلومات أو رؤى أو نتائج يجب مشاركتها مع مشاريع أخرى.",
             "value": ""
         },
-        "Defect": {
-            "guidance": "Describe the deficiency or defect.",
-            "value": ""
-        },
-        "Action": {
-            "guidance": "Describe the corrective actions needed to fix the defect.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "Identify the person assigned to correct the deficiency or defect.",
-            "value": ""
-        },
-        "Due date": {
-            "guidance": "Document the due date.",
-            "value": ""
-        },
-        "التعليقات": {
-            "guidance": "Provide any additional useful comments about the audit.",
+        "ملاحظات": {
+            "guidance": "قدم أي تعليقات إضافية مفيدة حول التدقيق.",
             "value": ""
         }
     }

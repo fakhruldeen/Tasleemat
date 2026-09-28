@@ -1,9 +1,8 @@
-Field,Guidance,LLM_Generated_Value
-Area audited,Check the box for the area or areas audited.,
-Good practices from similar projects,Describe any good or best practices that can be shared from similar projects.,
-Areas for improvement,Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.,
-Defect,Describe the deficiency or defect.,
-Action,Describe the corrective actions needed to fix the defect.,
-Responsible party,Identify the person assigned to correct the deficiency or defect.,
-Due date,Document the due date.,
+﻿Field,Guidance,LLM_Generated_Value
+Area Audited,Check the box for the area or areas audited.,"{""Project processes"": false, ""Project documents"": false, ""Product requirements"": false, ""Product documentation"": false, ""Defect or deficiency repair"": false, ""Compliance with organizational policies and procedures"": false, ""Compliance with the quality management plan"": false}"
+Good Practices from Similar Projects,Describe any good or best practices that can be shared from similar projects.,
+Areas for Improvement,Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.,
+Deficiencies or Defects,"Log any defects or deficiencies found during the audit, including action items.","[{""ID"": """", ""Defect"": """", ""Action"": """", ""Responsible Party"": """", ""Due Date"": """"}]"
+Implementation Tracking of Approved Changes,"Track the implementation status of approved changes, corrective, or preventive actions.",
+Information to Share with Other Projects,"Document any information, insights, or findings that should be shared with other projects.",
 Comments,Provide any additional useful comments about the audit.,

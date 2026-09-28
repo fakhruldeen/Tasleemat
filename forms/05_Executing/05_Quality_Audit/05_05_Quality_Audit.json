@@ -1,40 +1,48 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this QUALITY AUDIT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Quality Audit based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Area Audited: Check the box for the area or areas audited.\n- Good Practices from Similar Projects: Describe any good or best practices that can be shared from similar projects.\n- Areas for Improvement: Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.\n- Deficiencies or Defects: Log any defects or deficiencies found during the audit, including action items.\n- Implementation Tracking of Approved Changes: Track the implementation status of approved changes, corrective, or preventive actions.\n- Information to Share with Other Projects: Document any information, insights, or findings that should be shared with other projects.\n- Comments: Provide any additional useful comments about the audit.",
     "form_name": "QUALITY AUDIT",
     "document_reference": "PMO-05.05",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Area audited": {
+        "Area Audited": {
             "guidance": "Check the box for the area or areas audited.",
-            "value": ""
+            "value": {
+                "Project processes": false,
+                "Project documents": false,
+                "Product requirements": false,
+                "Product documentation": false,
+                "Defect or deficiency repair": false,
+                "Compliance with organizational policies and procedures": false,
+                "Compliance with the quality management plan": false
+            }
         },
-        "Good practices from similar projects": {
+        "Good Practices from Similar Projects": {
             "guidance": "Describe any good or best practices that can be shared from similar projects.",
             "value": ""
         },
-        "Areas for improvement": {
+        "Areas for Improvement": {
             "guidance": "Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.",
             "value": ""
         },
-        "Deficiencies or defects</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "Deficiencies or Defects": {
+            "guidance": "Log any defects or deficiencies found during the audit, including action items.",
+            "value": [
+                {
+                    "ID": "",
+                    "Defect": "",
+                    "Action": "",
+                    "Responsible Party": "",
+                    "Due Date": ""
+                }
+            ]
+        },
+        "Implementation Tracking of Approved Changes": {
+            "guidance": "Track the implementation status of approved changes, corrective, or preventive actions.",
             "value": ""
         },
-        "Defect": {
-            "guidance": "Describe the deficiency or defect.",
-            "value": ""
-        },
-        "Action": {
-            "guidance": "Describe the corrective actions needed to fix the defect.",
-            "value": ""
-        },
-        "Responsible party": {
-            "guidance": "Identify the person assigned to correct the deficiency or defect.",
-            "value": ""
-        },
-        "Due date": {
-            "guidance": "Document the due date.",
+        "Information to Share with Other Projects": {
+            "guidance": "Document any information, insights, or findings that should be shared with other projects.",
             "value": ""
         },
         "Comments": {

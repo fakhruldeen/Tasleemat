@@ -1,84 +1,66 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Populate the Quality Audit based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
-Section Instructions:
-*   **Area audited:** Check the box for the area or areas audited.
-*   **Good practices from similar projects:** Describe any good or best practices that can be shared from similar projects.
-*   **Areas for improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-*   **Defect:** Describe the deficiency or defect.
-*   **Action:** Describe the corrective actions needed to fix the defect.
-*   **Responsible party:** Identify the person assigned to correct the deficiency or defect.
-*   **Due date:** Document the due date.
-*   **Comments:** Provide any additional useful comments about the audit.
--->
+Section-by-Section Instructions:
+- Area Audited: Check the box for the area or areas audited.
+- Good Practices from Similar Projects: Describe any good or best practices that can be shared from similar projects.
+- Areas for Improvement: Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
+- Deficiencies or Defects: Log any defects or deficiencies found during the audit, including action items.
+- Implementation Tracking of Approved Changes: Track the implementation status of approved changes, corrective, or preventive actions.
+- Information to Share with Other Projects: Document any information, insights, or findings that should be shared with other projects.
+- Comments: Provide any additional useful comments about the audit. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">QUALITY AUDIT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
+| :--- | :--- |
 
 ---
 
-### Area audited
-<!-- Check the box for the area or areas audited. -->
-
-> [ Add details... ]
-
----
-
-### Good practices from similar projects
-<!-- Describe any good or best practices that can be shared from similar projects. -->
-
-> [ Add details... ]
+## 1. Area Audited
+Check the box for the area or areas audited.
+- [ ] Project processes
+- [ ] Project documents
+- [ ] Product requirements
+- [ ] Product documentation
+- [ ] Defect or deficiency repair
+- [ ] Compliance with organizational policies and procedures
+- [ ] Compliance with the quality management plan
 
 ---
 
-### Areas for improvement
-<!-- Describe any areas that need improvement and the specific improvements or measurements that need to be achieved. -->
-
-> [ Add details... ]
+## 2. Good Practices from Similar Projects
+[ Add details... ]
 
 ---
 
-### Deficiencies or defects</span><br>    </th>  </tr>  <tr>    <td valign="top" style="padding: 15px; color: #34495e;">      <br>[ Add details... ]<br><br><br>    </td>  </tr></table>
-> [ Add details... ]
+## 3. Areas for Improvement
+[ Add details... ]
 
 ---
 
-### Defect
-<!-- Describe the deficiency or defect. -->
+## 4. Deficiencies or Defects
 
-> [ Add details... ]
-
----
-
-### Action
-<!-- Describe the corrective actions needed to fix the defect. -->
-
-> [ Add details... ]
+| ID | Defect | Action | Responsible Party | Due Date |
+| :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
-### Responsible party
-<!-- Identify the person assigned to correct the deficiency or defect. -->
-
-> [ Add details... ]
+## 5. Implementation Tracking of Approved Changes
+[ Add details... ]
 
 ---
 
-### Due date
-<!-- Document the due date. -->
-
-> [ Add details... ]
+## 6. Information to Share with Other Projects
+[ Add details... ]
 
 ---
 
-### Comments
-<!-- Provide any additional useful comments about the audit. -->
-
-> [ Add details... ]
+## 7. Comments
+[ Add details... ]
 
 ---
 

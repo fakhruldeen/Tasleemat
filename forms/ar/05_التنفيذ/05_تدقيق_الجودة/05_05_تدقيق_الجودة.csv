@@ -1,9 +1,8 @@
-الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
-Area audited,Check the box for the area or areas audited.,
-Good practices from similar projects,Describe any good or best practices that can be shared from similar projects.,
-Areas for improvement,Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.,
-Defect,Describe the deficiency or defect.,
-Action,Describe the corrective actions needed to fix the defect.,
-Responsible party,Identify the person assigned to correct the deficiency or defect.,
-Due date,Document the due date.,
-التعليقات,Provide any additional useful comments about the audit.,
+﻿Field,Guidance,LLM_Generated_Value
+المجال الذي تم تدقيقه,ضع علامة في المربع للمجال أو المجالات التي تم تدقيقها.,"{""عمليات المشروع"": false, ""مستندات المشروع"": false, ""متطلبات المنتج"": false, ""وثائق المنتج"": false, ""إصلاح العيوب أو أوجه القصور"": false, ""الامتثال للسياسات والإجراءات التنظيمية"": false, ""الامتثال لخطة إدارة الجودة"": false}"
+الممارسات الجيدة من مشاريع مماثلة,صف أي ممارسات جيدة أو أفضل الممارسات التي يمكن مشاركتها من مشاريع مماثلة.,
+مجالات التحسين,صف أي مجالات تحتاج إلى تحسين والتحسينات أو القياسات المحددة التي يجب تحقيقها.,
+أوجه القصور أو العيوب,سجل أي عيوب أو أوجه قصور تم العثور عليها أثناء التدقيق، بما في ذلك بنود الإجراءات.,"[{""المعرف (ID)"": """", ""العيب"": """", ""الإجراء"": """", ""الطرف المسؤول"": """", ""تاريخ الاستحقاق"": """"}]"
+تتبع تنفيذ التغييرات المعتمدة,تتبع حالة تنفيذ التغييرات المعتمدة، أو الإجراءات التصحيحية أو الوقائية.,
+المعلومات المراد مشاركتها مع مشاريع أخرى,وثق أي معلومات أو رؤى أو نتائج يجب مشاركتها مع مشاريع أخرى.,
+ملاحظات,قدم أي تعليقات إضافية مفيدة حول التدقيق.,
