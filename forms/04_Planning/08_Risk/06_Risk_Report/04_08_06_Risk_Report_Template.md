@@ -73,9 +73,6 @@ Ensure lists and tables are populated according to instructions. -->
 ### Changes to Critical Risks
 [ Add details... ]
 
-### Changes to Critical Risks
-[ Add details... ]
-
 ---
 
 ## Quantitative Analysis
