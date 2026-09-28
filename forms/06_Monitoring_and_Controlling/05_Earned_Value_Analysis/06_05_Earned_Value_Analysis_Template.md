@@ -2,14 +2,14 @@
 
 Section-by-Section Instructions:
 - Report Information: Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.
-- Basic Earned Value Metrics: Enter the core EVM financial figures.
-- Variances and Indices: Calculate variances and performance indices.
-- Percentages: Indicate cumulative percentages.
-- Forecasting (Estimates): Forecast completion costs and required performance indices. Justify the EAC and TCPI methods chosen.
+- Basic Earned Value Metrics: Enter the core EVM financial figures for the current reporting period, the current period cumulative, and the past period cumulative.
+- Variances and Indices: Calculate variances and performance indices for each period column.
+- Percentages: Indicate percentages for each period column.
+- Forecasting (Estimates): Forecast completion costs using the EAC formulas, select the EAC method, justify the selection, and calculate the TCPI. Provide values for each period column.
 - Root Cause and Impacts Analysis: Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.
-- Comments: Document any comments that add relevance to this report. -->
+- Comments: Document any comments that add relevance to this report.
+-->
 
-<h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">EARNED VALUE ANALYSIS</h1>
 
@@ -21,48 +21,47 @@ Section-by-Section Instructions:
 
 ## 1. Basic Earned Value Metrics
 
-| Metric | Value |
-| :--- | :--- |
-| **Budget at Completion (BAC)** | [ Add details... ] |
-| **Planned Value (PV)** | [ Add details... ] |
-| **Earned Value (EV)** | [ Add details... ] |
-| **Actual Cost (AC)** | [ Add details... ] |
+**Budget at Completion (BAC):** [ Add details... ]
+
+| Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
+| :--- | :--- | :--- | :--- | :--- |
+| **Planned Value (PV)** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Earned Value (EV)** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Actual Cost (AC)** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 2. Variances and Indices
 
-| Metric | Calculation | Value |
-| :--- | :--- | :--- |
-| **Schedule Variance (SV)** | EV - PV | [ Add details... ] |
-| **Cost Variance (CV)** | EV - AC | [ Add details... ] |
-| **Schedule Performance Index (SPI)** | EV / PV | [ Add details... ] |
-| **Cost Performance Index (CPI)** | EV / AC | [ Add details... ] |
+| Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
+| :--- | :--- | :--- | :--- | :--- |
+| **Schedule Variance (SV)** | EV - PV | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Cost Variance (CV)** | EV - AC | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Schedule Performance Index (SPI)** | EV / PV | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Cost Performance Index (CPI)** | EV / AC | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 3. Percentages
 
-| Metric | Calculation | Value |
-| :--- | :--- | :--- |
-| **Percent Planned** | PV / BAC | [ Add details... ] |
-| **Percent Earned** | EV / BAC | [ Add details... ] |
-| **Percent Spent** | AC / BAC | [ Add details... ] |
+| Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
+| :--- | :--- | :--- | :--- | :--- |
+| **Percent Planned** | PV / BAC | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Percent Earned** | EV / BAC | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Percent Spent** | AC / BAC | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
 ## 4. Forecasting (Estimates)
 
-**Estimates at Completion (EAC) Method & Justification:**
-[ Add details... ]
+| Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
+| :--- | :--- | :--- | :--- | :--- |
+| **EAC w/CPI** | BAC / CPI | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **EAC w/CPI × SPI** | AC + ((BAC - EV) / (CPI × SPI)) | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Selected EAC** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **To Complete Performance Index (TCPI)** | (BAC - EV) / (BAC - AC) | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-**Estimates at Completion (EAC) Value:**
-[ Add details... ]
-
-**To Complete Performance Index (TCPI) Method:**
-[ Add details... ]
-
-**To Complete Performance Index (TCPI) Value:**
+**Selected EAC - Justification and Explanation:**
 [ Add details... ]
 
 ---
@@ -85,16 +84,6 @@ Section-by-Section Instructions:
 
 ## 6. Comments
 [ Add details... ]
-
----
-
-### Signatures
-
-| Prepared By: | Reviewed By: |
-| :--- | :--- |
-| **Name:** [ Prepared By (Project Manager) ] | **Name:** {{Reviewed_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 ---
 
