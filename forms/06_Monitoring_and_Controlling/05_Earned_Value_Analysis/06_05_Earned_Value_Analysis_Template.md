@@ -23,11 +23,11 @@ Section-by-Section Instructions:
 
 **Budget at Completion (BAC):** [ Add details... ]
 
-| Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
-| :--- | :--- | :--- | :--- | :--- |
-| **Planned Value (PV)** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **Earned Value (EV)** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **Actual Cost (AC)** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| Metric | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
+| :--- | :--- | :--- | :--- |
+| **Planned Value (PV)** | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Earned Value (EV)** | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| **Actual Cost (AC)** | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -58,7 +58,6 @@ Section-by-Section Instructions:
 | :--- | :--- | :--- | :--- | :--- |
 | **EAC w/CPI** | BAC / CPI | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **EAC w/CPI × SPI** | AC + ((BAC - EV) / (CPI × SPI)) | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **Selected EAC** | — | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **To Complete Performance Index (TCPI)** | (BAC - EV) / (BAC - AC) | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 **Selected EAC - Justification and Explanation:**
