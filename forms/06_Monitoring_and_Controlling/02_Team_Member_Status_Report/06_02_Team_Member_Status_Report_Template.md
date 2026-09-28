@@ -22,13 +22,19 @@ Section-by-Section Instructions:
 ## 1. Schedule and Activities (Current Period)
 
 **Activities planned this reporting period:**
-[ Add details... ]
+1. [ Add details... ]
+2. [ Add details... ]
+3. [ Add details... ]
 
 **Activities accomplished this reporting period:**
-[ Add details... ]
+1. [ Add details... ]
+2. [ Add details... ]
+3. [ Add details... ]
 
 **Activities planned but not accomplished this reporting period:**
-[ Add details... ]
+1. [ Add details... ]
+2. [ Add details... ]
+3. [ Add details... ]
 
 **Root cause of schedule variances:**
 [ Add details... ]
@@ -61,7 +67,9 @@ Section-by-Section Instructions:
 ## 4. Planning for Next Period
 
 **Activities planned for next reporting period:**
-[ Add details... ]
+1. [ Add details... ]
+2. [ Add details... ]
+3. [ Add details... ]
 
 **Costs planned for next reporting period:**
 [ Add details... ]

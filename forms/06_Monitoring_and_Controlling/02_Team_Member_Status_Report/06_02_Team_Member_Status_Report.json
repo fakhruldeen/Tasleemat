@@ -8,9 +8,21 @@
         "Schedule and Activities (Current Period)": {
             "guidance": "Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.",
             "value": {
-                "Activities planned this reporting period": "",
-                "Activities accomplished this reporting period": "",
-                "Activities planned but not accomplished this reporting period": "",
+                "Activities planned this reporting period": [
+                    "",
+                    "",
+                    ""
+                ],
+                "Activities accomplished this reporting period": [
+                    "",
+                    "",
+                    ""
+                ],
+                "Activities planned but not accomplished this reporting period": [
+                    "",
+                    "",
+                    ""
+                ],
                 "Root cause of schedule variances": ""
             }
         },
@@ -32,7 +44,11 @@
         "Planning for Next Period": {
             "guidance": "Outline the schedule and cost plans for the upcoming reporting period.",
             "value": {
-                "Activities planned for next reporting period": "",
+                "Activities planned for next reporting period": [
+                    "",
+                    "",
+                    ""
+                ],
                 "Costs planned for next reporting period": ""
             }
         },
