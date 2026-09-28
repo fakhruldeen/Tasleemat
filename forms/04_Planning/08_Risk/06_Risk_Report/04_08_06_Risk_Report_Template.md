@@ -1,11 +1,23 @@
-<!-- LLM INSTRUCTIONS: Fill in the Risk Report based on the project context. Ensure lists and tables are populated according to instructions. -->
+<!-- LLM INSTRUCTIONS: Fill in the Risk Report based on the project context.
+
+Context & Definition:
+The risk report presents information on overall project risk and summarizes information on individual project risks. It provides information for each of the processes from identification of risks, through analysis, response planning and implementation, and monitoring risks.
+Typical information includes:
+*   Executive summary
+*   Description of overall project risk
+*   Description of individual project risks
+*   Quantitative analysis
+*   Reserve status
+*   Risk audit results (if applicable)
+
+Ensure lists and tables are populated according to instructions. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">RISK REPORT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
-| :--- | :--- |
+| **Date Prepared:** {{Current_Date}} | **Reporting Period:** {{Reporting_Period}} | **Project Manager:** {{Project_Manager_Name}} |
+| :--- | :--- | :--- |
 
 ---
 
@@ -33,7 +45,7 @@
 *Indicate the number of individual risks in each box below:*
 
 | Probability \ Impact | Very High | High | Medium | Low | Very Low |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :--- |
 | **Very High** | [ # ] | [ # ] | [ # ] | [ # ] | [ # ] |
 | **High** | [ # ] | [ # ] | [ # ] | [ # ] | [ # ] |
 | **Medium** | [ # ] | [ # ] | [ # ] | [ # ] | [ # ] |
@@ -54,7 +66,7 @@
 ### Critical Risks & Responses
 
 | Top Risks | Responses |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | [ Risk A ] | [ Response A ] |
 | [ Risk B ] | [ Response B ] |
 
@@ -112,7 +124,7 @@
 ### Signatures
 
 | Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
 | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Signature:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
