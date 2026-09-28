@@ -52,29 +52,29 @@ The risk report should be aligned and consistent with the following documents:
 ---
 
 ### Section Generation Instructions
-**1. Executive Summary**
+**Executive Summary**
 *   **Executive summary:** A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.
 
-**2. Overall Project Risk**
+**Overall Project Risk**
 *   **Overall Risk Status and Trends:** Describe overarching trends observed in the risk profile and current status.
 *   **Significant Drivers of Overall Risk:** Identify the significant drivers of overall project risk.
 *   **Recommended Responses to Overall Risk:** Outline recommended responses to overall project risk.
 
-**3. Individual Project Risks**
+**Individual Project Risks**
 *   **Probability and Impact Matrix:** Indicate the number of individual risks in each box of the 5x5 matrix (Very High to Very Low).
 *   **Metrics:** Provide counts for: Number of scope risks, Number of schedule risks, Number of cost risks, Number of quality risks, Number of very high probability risks, Number of high probability risks, Number of medium probability risks, Number of active risks, and Newly closed risks.
 *   **Critical Risks:** Populate a table mapping the 'Top Risks' to their proposed 'Responses'.
 
-**4. Quantitative Analysis**
+**Quantitative Analysis**
 *   **Results from Quantitative Assessments:** Summarize results from S-curve, tornado diagrams, etc.
 *   **Probability of Meeting Objectives:** List the probability for Scope, Schedule, Cost, Quality, and Other.
 *   **Range of Outcomes:** Detail the Range of Schedule Outcomes, Range of Cost Outcomes, Key Drivers of Variances, and Proposed Responses.
 
-**5. Reserve Status**
+**Reserve Status**
 *   **Cost Reserve:** Detail the Total Cost Reserve, Used to Date, Used This Period, and Remaining Reserve.
 *   **Schedule Reserve:** Detail the Total Schedule Reserve, Used to Date, Used This Period, and Remaining Reserve.
 
-**6. Risk Audit Summary**
+**Risk Audit Summary**
 *   **Summary of Risk Events:** Summarize historical risk events and occurrences.
 *   **Summary of Risk Management Processes:** Summarize the effectiveness of the risk management processes.
 *   **Summary of Recommendations:** Summarize any recommendations arising from the risk audit.

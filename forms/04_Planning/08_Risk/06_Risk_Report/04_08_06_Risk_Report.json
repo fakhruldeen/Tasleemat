@@ -5,13 +5,13 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "1. Executive Summary": {
+        "Executive Summary": {
             "Executive summary": {
                 "guidance": "Describe overall project risk exposure and major individual risks.",
                 "value": ""
             }
         },
-        "2. Overall Project Risk": {
+        "Overall Project Risk": {
             "Overall Risk Status and Trends": {
                 "guidance": "High-level statement of trends and current risk status.",
                 "value": ""
@@ -25,7 +25,7 @@
                 "value": ""
             }
         },
-        "3. Individual Project Risks": {
+        "Individual Project Risks": {
             "Probability and Impact Matrix": {
                 "guidance": "Provide the number of individual risks in each box of a 5x5 matrix (Very High down to Very Low for both Probability and Impact).",
                 "value": "See Matrix Table"
@@ -51,7 +51,7 @@
                 ]
             }
         },
-        "4. Quantitative Analysis": {
+        "Quantitative Analysis": {
             "Results from Quantitative Assessments": {
                 "guidance": "Results from S-curve, tornado, etc.",
                 "value": ""
@@ -70,7 +70,7 @@
                 "Proposed Responses": ""
             }
         },
-        "5. Reserve Status": {
+        "Reserve Status": {
             "Cost Reserve": {
                 "Total Cost Reserve": "",
                 "Used to Date": "",
@@ -84,7 +84,7 @@
                 "Remaining Reserve": ""
             }
         },
-        "6. Risk Audit Summary": {
+        "Risk Audit Summary": {
             "Summary of Risk Events": {
                 "guidance": "",
                 "value": ""

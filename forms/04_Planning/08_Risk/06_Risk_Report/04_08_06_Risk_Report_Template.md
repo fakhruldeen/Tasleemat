@@ -9,12 +9,12 @@
 
 ---
 
-## 1. Executive Summary
+## Executive Summary
 [ Add details... ]
 
 ---
 
-## 2. Overall Project Risk
+## Overall Project Risk
 
 ### Overall Risk Status and Trends
 [ Add details... ]
@@ -27,7 +27,7 @@
 
 ---
 
-## 3. Individual Project Risks
+## Individual Project Risks
 
 ### Probability and Impact Matrix
 *Indicate the number of individual risks in each box below:*
@@ -60,7 +60,7 @@
 
 ---
 
-## 4. Quantitative Analysis
+## Quantitative Analysis
 
 ### Results from Quantitative Assessments
 [ Add details... ]
@@ -80,7 +80,7 @@
 
 ---
 
-## 5. Reserve Status
+## Reserve Status
 
 **Cost Reserve**
 *   **Total Cost Reserve:** [ Add details... ]
@@ -96,7 +96,7 @@
 
 ---
 
-## 6. Risk Audit Summary
+## Risk Audit Summary
 
 ### Summary of Risk Events
 [ Add details... ]
