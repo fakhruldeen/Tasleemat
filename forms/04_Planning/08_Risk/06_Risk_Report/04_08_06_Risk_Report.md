@@ -56,30 +56,25 @@ The risk report should be aligned and consistent with the following documents:
 *   **Executive summary:** A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends.
 
 **2. Overall Project Risk**
-Provide a description of the overall risk of the project, including:
-*   **High-level statement of trends:** Describe overarching trends observed in the risk profile.
-*   **Significant drivers:** Identify the significant drivers of overall project risk.
-*   **Recommended responses:** Outline recommended responses to overall project risk.
+*   **Overall Risk Status and Trends:** Describe overarching trends observed in the risk profile and current status.
+*   **Significant Drivers of Overall Risk:** Identify the significant drivers of overall project risk.
+*   **Recommended Responses to Overall Risk:** Outline recommended responses to overall project risk.
 
 **3. Individual Project Risks**
-Analyze and summarize information associated with individual project risks, including:
-*   **Probability & Impact Metrics:** Number of risks in each box of the probability impact matrix.
-*   **Key Metrics:** Provide key metrics summarizing risk health.
-*   **Active Risks:** List or summarize currently active risks.
-*   **Newly Closed Risks:** Highlight risks that have been newly closed since the last report.
-*   **Risk Distribution:** Describe risks distribution by category, objective, and score.
-*   **Critical Risks:** Detail the most-critical risks and any changes since the last report.
-*   **Recommended Responses:** Outline recommended responses to top individual risks.
+*   **Probability and Impact Matrix:** Indicate the number of individual risks in each box of the 5x5 matrix (Very High to Very Low).
+*   **Metrics:** Provide counts for: Number of scope risks, Number of schedule risks, Number of cost risks, Number of quality risks, Number of very high probability risks, Number of high probability risks, Number of medium probability risks, Number of active risks, and Newly closed risks.
+*   **Critical Risks:** Populate a table mapping the 'Top Risks' to their proposed 'Responses'.
 
 **4. Quantitative Analysis**
-Summarize the results of quantitative risk analysis, including:
-*   **Quantitative results:** Results from quantitative assessments (S-curve, tornado, etc.).
-*   **Probability of meeting objectives:** The calculated probability of meeting key project objectives.
-*   **Drivers of outcomes:** Primary drivers of cost and schedule outcomes.
-*   **Proposed quantitative responses:** Proposed responses based on quantitative findings.
+*   **Results from Quantitative Assessments:** Summarize results from S-curve, tornado diagrams, etc.
+*   **Probability of Meeting Objectives:** List the probability for Scope, Schedule, Cost, Quality, and Other.
+*   **Range of Outcomes:** Detail the Range of Schedule Outcomes, Range of Cost Outcomes, Key Drivers of Variances, and Proposed Responses.
 
 **5. Reserve Status**
-*   **Reserve Status:** Describe the reserve status, such as reserve used, reserve remaining, and an assessment of the adequacy of the reserve.
+*   **Cost Reserve:** Detail the Total Cost Reserve, Used to Date, Used This Period, and Remaining Reserve.
+*   **Schedule Reserve:** Detail the Total Schedule Reserve, Used to Date, Used This Period, and Remaining Reserve.
 
-**6. Risk Audit Results**
-*   **Risk Audit Results:** Summarize the results of a risk audit of the risk management processes (if applicable).
+**6. Risk Audit Summary**
+*   **Summary of Risk Events:** Summarize historical risk events and occurrences.
+*   **Summary of Risk Management Processes:** Summarize the effectiveness of the risk management processes.
+*   **Summary of Recommendations:** Summarize any recommendations arising from the risk audit.
