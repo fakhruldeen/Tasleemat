@@ -35,58 +35,58 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 ## Risk Information
 
-*   **Risk ID:** [LLM_Generate]
-*   **Status:** [LLM_Generate]
-*   **Responsible party:** [LLM_Generate]
+*   **Risk ID:** [ Add details... ]
+*   **Status:** [ Add details... ]
+*   **Responsible party:** [ Add details... ]
 
 ### Description & Causes
-*   **Risk description:** [LLM_Generate]
-*   **Risk cause:** [LLM_Generate]
+*   **Risk description:** [ Add details... ]
+*   **Risk cause:** [ Add details... ]
 
 ### Assessment & Score
-*   **Probability:** [LLM_Generate]
+*   **Probability:** [ Add details... ]
 *   **Impact:**
-    *   **Scope:** [LLM_Generate]
-    *   **Quality:** [LLM_Generate]
-    *   **Schedule:** [LLM_Generate]
-    *   **Cost:** [LLM_Generate]
-*   **Score:** [LLM_Generate]
+    *   **Scope:** [ Add details... ]
+    *   **Quality:** [ Add details... ]
+    *   **Schedule:** [ Add details... ]
+    *   **Cost:** [ Add details... ]
+*   **Score:** [ Add details... ]
 
 ---
 
 ## Response & Planning
 
 ### Mitigation
-*   **Responses:** [LLM_Generate]
-*   **Actions:** [LLM_Generate]
+*   **Responses:** [ Add details... ]
+*   **Actions:** [ Add details... ]
 
 ### Revised Assessment (Post-Mitigation)
-*   **Revised probability:** [LLM_Generate]
+*   **Revised probability:** [ Add details... ]
 *   **Revised impact:**
-    *   **Scope:** [LLM_Generate]
-    *   **Quality:** [LLM_Generate]
-    *   **Schedule:** [LLM_Generate]
-    *   **Cost:** [LLM_Generate]
-*   **Revised score:** [LLM_Generate]
+    *   **Scope:** [ Add details... ]
+    *   **Quality:** [ Add details... ]
+    *   **Schedule:** [ Add details... ]
+    *   **Cost:** [ Add details... ]
+*   **Revised score:** [ Add details... ]
 
 ### Cascading Risks
-*   **Secondary risks:** [LLM_Generate]
-*   **Residual risk:** [LLM_Generate]
+*   **Secondary risks:** [ Add details... ]
+*   **Residual risk:** [ Add details... ]
 
 ---
 
 ## Contingency & Fallback
 
-*   **Contingency plan:** [LLM_Generate]
-*   **Contingency funds:** [LLM_Generate]
-*   **Contingency time:** [LLM_Generate]
-*   **Fallback plans:** [LLM_Generate]
+*   **Contingency plan:** [ Add details... ]
+*   **Contingency funds:** [ Add details... ]
+*   **Contingency time:** [ Add details... ]
+*   **Fallback plans:** [ Add details... ]
 
 ---
 
 ## Additional Information
 
-*   **Comments:** [LLM_Generate]
+*   **Comments:** [ Add details... ]
 
 ---
 
