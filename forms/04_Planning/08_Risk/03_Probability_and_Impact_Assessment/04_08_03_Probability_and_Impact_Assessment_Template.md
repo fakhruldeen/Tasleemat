@@ -1,9 +1,11 @@
-<!-- LLM INSTRUCTIONS: Fill in the Probability and Impact Assessment based on the project context.
+<!-- LLM INSTRUCTIONS: Populate the Probability and Impact Assessment by defining exact thresholds and rating guidelines based on project scale and criticality. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
-Context & Definition:
-The probability and impact assessment records definitions for the likelihood of events occurring (probability), and the impact on the various project objectives if they do occur. It also provides a key to assign an overall risk rating (e.g. High, Medium, Low) based on the combined probability and impact scores. This is typically used when a full Risk Management Plan does not exist.
+Section-by-Section Instructions:
+- Definitions of Impact by Objective: Provide specific thresholds for Scope, Quality, Schedule, and Cost across the 5 levels (Very High to Very Low).
+- Definitions of Probability: Provide percentage thresholds or verbal descriptors for probability across the 5 levels.
+- Risk Rating Guidelines: Define the rule logic for mapping combinations of probability and impact into High, Medium, or Low overall ratings.
 
-Ensure lists and tables are populated according to instructions. -->
+Ensure lists and tables are populated strictly according to the markdown structure provided. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

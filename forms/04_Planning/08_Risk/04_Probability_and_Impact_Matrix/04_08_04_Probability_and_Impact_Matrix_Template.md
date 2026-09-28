@@ -1,4 +1,8 @@
-<!-- LLM INSTRUCTIONS: Populate the Probability and Impact Matrix with appropriate numerical scores and risk tier definitions based on the project's risk tolerance.
+<!-- LLM INSTRUCTIONS: Populate the Probability and Impact Matrix based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
+
+Section-by-Section Instructions:
+- Probability and Impact Matrix: Provide the exact numerical scores in each box of the 5x5 matrix.
+- Risk Score Thresholds: Define the numerical range and required actions for High, Medium, and Low risk tiers.
 
 Ensure lists and tables are populated strictly according to the markdown structure provided. -->
 
