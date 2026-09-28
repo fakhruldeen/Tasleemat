@@ -1,36 +1,22 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج سجل القرارات هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة سجل القرارات بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- سجل القرارات: قم بتسجيل جميع قرارات المشروع. قم بتضمين الفئة، والقرار نفسه، والتأثيرات على الأهداف، والمعنيين المتأثرين، والطرف المسؤول، والتاريخ، وأي ملاحظات (مثل البدائل التي تم النظر فيها أو الأسباب).",
     "form_name": "سجل القرارات",
     "document_reference": "PMO-05.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات سجل القرارات": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** Enter a unique decision identifier.\n- **Category:** Document the type of decision, such as technical, project, process, etc.\n- **Decision:** Provide a detailed description of the decision.\n- **Responsible party:** Identify the person authorized to make the decision.\n- **الأولوية:** \n- **التعليقات:** Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
+        "سجل القرارات": {
+            "guidance": "قم بتسجيل جميع قرارات المشروع. قم بتضمين الفئة، والقرار نفسه، والتأثيرات على الأهداف، والمعنيين المتأثرين، والطرف المسؤول، والتاريخ، وأي ملاحظات (مثل البدائل التي تم النظر فيها أو الأسباب).",
             "value": [
                 {
-                    "ID": "",
-                    "Category": "",
-                    "Decision": "",
-                    "Responsible party": "",
-                    "الأولوية": "",
-                    "التعليقات": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Decision": "",
-                    "Responsible party": "",
-                    "الأولوية": "",
-                    "التعليقات": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Decision": "",
-                    "Responsible party": "",
-                    "الأولوية": "",
-                    "التعليقات": ""
+                    "المعرف (ID)": "",
+                    "الفئة": "",
+                    "القرار": "",
+                    "التأثيرات على التسليمات/الأهداف": "",
+                    "المعنيون المتأثرون": "",
+                    "الطرف المسؤول": "",
+                    "التاريخ": "",
+                    "ملاحظات": ""
                 }
             ]
         }

@@ -1,4 +1,2 @@
-ID,Category,Decision,Responsible party,Priority,Comments
-,,,,,
-,,,,,
-,,,,,
+﻿Field,Guidance,LLM_Generated_Value
+Decision Log,"Record all project decisions. Include the category, the decision itself, impacts on objectives, affected stakeholders, the responsible party, the date, and any comments (such as alternatives considered or reasoning).","[{""ID"": """", ""Category"": """", ""Decision"": """", ""Impacts on Deliverables/Objectives"": """", ""Impacted Stakeholders"": """", ""Responsible Party"": """", ""Date"": """", ""Comments"": """"}]"

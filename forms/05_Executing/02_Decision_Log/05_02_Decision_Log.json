@@ -1,35 +1,21 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Decision Log template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Decision Log",
+    "_llm_instructions": "Populate the Decision Log based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Decision Log: Record all project decisions. Include the category, the decision itself, impacts on objectives, affected stakeholders, the responsible party, the date, and any comments (such as alternatives considered or reasoning).",
+    "form_name": "DECISION LOG",
     "document_reference": "PMO-05.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Decision Log Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **ID:** Enter a unique decision identifier.\n- **Category:** Document the type of decision, such as technical, project, process, etc.\n- **Decision:** Provide a detailed description of the decision.\n- **Responsible party:** Identify the person authorized to make the decision.\n- **Priority:** Enter the date the decision was made and authorized.\n- **Comments:** Enter any further information to clarify the decision, alternatives considered, the reason the decision was made, and the impact of the decision.",
+        "Decision Log": {
+            "guidance": "Record all project decisions. Include the category, the decision itself, impacts on objectives, affected stakeholders, the responsible party, the date, and any comments (such as alternatives considered or reasoning).",
             "value": [
                 {
                     "ID": "",
                     "Category": "",
                     "Decision": "",
-                    "Responsible party": "",
-                    "Priority": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Decision": "",
-                    "Responsible party": "",
-                    "Priority": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Decision": "",
-                    "Responsible party": "",
-                    "Priority": "",
+                    "Impacts on Deliverables/Objectives": "",
+                    "Impacted Stakeholders": "",
+                    "Responsible Party": "",
+                    "Date": "",
                     "Comments": ""
                 }
             ]
