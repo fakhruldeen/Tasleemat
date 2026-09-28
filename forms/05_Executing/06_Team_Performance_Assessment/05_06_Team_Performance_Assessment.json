@@ -57,17 +57,29 @@
         },
         "Team Characteristics": {
             "guidance": "Describe the overall team morale and cohesiveness.",
-            "value": {
-                "Team Morale": "",
-                "Cohesiveness": ""
-            }
+            "value": [
+                {
+                    "Characteristic": "Team Morale",
+                    "Description": ""
+                },
+                {
+                    "Characteristic": "Cohesiveness",
+                    "Description": ""
+                }
+            ]
         },
         "Team Strengths and Weaknesses": {
             "guidance": "Identify the primary strengths and weaknesses of the team.",
-            "value": {
-                "Strengths": "",
-                "Weaknesses": ""
-            }
+            "value": [
+                {
+                    "Area": "Strengths",
+                    "Description": ""
+                },
+                {
+                    "Area": "Weaknesses",
+                    "Description": ""
+                }
+            ]
         },
         "Areas for Development": {
             "guidance": "Identify areas for development and the approach to implement them.",

@@ -40,21 +40,19 @@ Section-by-Section Instructions:
 
 ## 3. Team Characteristics
 
-**Team Morale:**
-[ Add details... ]
-
-**Cohesiveness:**
-[ Add details... ]
+| Characteristic | Description |
+| :--- | :--- |
+| **Team Morale** | [ Add details... ] |
+| **Cohesiveness** | [ Add details... ] |
 
 ---
 
 ## 4. Team Strengths and Weaknesses
 
-**Strengths:**
-[ Add details... ]
-
-**Weaknesses:**
-[ Add details... ]
+| Area | Description |
+| :--- | :--- |
+| **Strengths** | [ Add details... ] |
+| **Weaknesses** | [ Add details... ] |
 
 ---
 
