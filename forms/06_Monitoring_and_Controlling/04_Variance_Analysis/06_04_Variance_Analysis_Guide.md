@@ -12,3 +12,4 @@ This document provides descriptions for each element in the Variance Analysis.
 | **Implications of continued variance** | A forecast based on a trend analysis or identified responses regarding continued variance. |
 | **Escalation Required** | Indicate if the information needs to be escalated to the sponsor, program manager, or other appropriate individuals. |
 | **Escalation Details** | Provide specifics about what needs escalation and to whom. |
+| **Comments** | Document any comments that add relevance to this report. |

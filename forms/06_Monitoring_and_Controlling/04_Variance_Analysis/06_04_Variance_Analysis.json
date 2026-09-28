@@ -1,5 +1,5 @@
 {
-    "_llm_instructions": "Populate the Variance Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Variance Analysis Table: Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.\n- Variance Implications and Escalation: Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.",
+    "_llm_instructions": "Populate the Variance Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Variance Analysis Table: Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.\n- Variance Implications and Escalation: Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "VARIANCE ANALYSIS",
     "document_reference": "PMO-06.04",
     "project_title": "",
@@ -49,6 +49,10 @@
                 "Escalation Required (Y/N)": "",
                 "Escalation Details": ""
             }
+        },
+        "Comments": {
+            "guidance": "Document any comments that add relevance to this report.",
+            "value": ""
         }
     }
 }

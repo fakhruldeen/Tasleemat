@@ -2,7 +2,8 @@
 
 Section-by-Section Instructions:
 - Variance Analysis Table: Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.
-- Variance Implications and Escalation: Document implications of continued variance (forecasts/trends) and whether the variance needs escalation. -->
+- Variance Implications and Escalation: Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.
+- Comments: Document any comments that add relevance to this report. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -33,6 +34,11 @@ Section-by-Section Instructions:
 [ Add details... ]
 
 **Escalation Details:**
+[ Add details... ]
+
+---
+
+## 3. Comments
 [ Add details... ]
 
 ---

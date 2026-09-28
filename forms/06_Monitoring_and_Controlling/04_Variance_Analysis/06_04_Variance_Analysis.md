@@ -33,3 +33,4 @@ The variance analysis should be aligned and consistent with the following docume
 ### Section Generation Instructions
 *   **Variance Analysis Table:** Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.
 *   **Variance Implications and Escalation:** Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.
+*   **Comments:** Document any comments that add relevance to this report.
