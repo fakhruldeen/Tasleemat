@@ -3,7 +3,7 @@ This document provides descriptions for each element in the Project Status Repor
 
 | Document Element | Description |
 | :--- | :--- |
-| **Report Information** | Provide the reporting period dates and the name of the project manager preparing the document. |
+| **Report Information** | Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name. |
 | **Accomplishments for this reporting period** | List all work packages or other accomplishments scheduled for completion for the current reporting period. |
 | **Accomplishments planned but not completed this reporting period** | List all work packages or other accomplishments scheduled for the current period but not completed. |
 | **Root cause of schedule variances** | Identify the cause of the variance for any work that was not accomplished as scheduled for the current period. |

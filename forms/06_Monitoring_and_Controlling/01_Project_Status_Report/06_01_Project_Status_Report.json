@@ -1,16 +1,17 @@
 {
-    "_llm_instructions": "Populate the Project Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates and the name of the project manager preparing the document.\n- Schedule Performance (Current Period): List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.\n- Cost Performance (Current Period): Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.\n- Planning for Next Period: Outline the accomplishments and costs planned for the upcoming reporting period.\n- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation to sponsors or program managers.\n- Project Knowledge and Decisions: Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.\n- Comments: Document any comments that add relevance to this report.",
+    "_llm_instructions": "Populate the Project Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.\n- Schedule Performance (Current Period): List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.\n- Cost Performance (Current Period): Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.\n- Planning for Next Period: Outline the accomplishments and costs planned for the upcoming reporting period.\n- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation to sponsors or program managers.\n- Project Knowledge and Decisions: Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "PROJECT STATUS REPORT",
     "document_reference": "PMO-06.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
         "Report Information": {
-            "guidance": "Provide the reporting period dates and the name of the project manager preparing the document.",
+            "guidance": "Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.",
             "value": {
                 "Reporting Period Start Date": "",
                 "Reporting Period End Date": "",
-                "Prepared By (Project Manager)": ""
+                "Prepared By (Project Manager)": "",
+                "Sponsor Name": ""
             }
         },
         "Schedule Performance (Current Period)": {

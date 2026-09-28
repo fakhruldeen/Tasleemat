@@ -1,7 +1,7 @@
 <!-- LLM INSTRUCTIONS: Populate the Project Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
 Section-by-Section Instructions:
-- Report Information: Provide the reporting period dates and the name of the project manager preparing the document.
+- Report Information: Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.
 - Schedule Performance (Current Period): List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.
 - Cost Performance (Current Period): Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.
 - Planning for Next Period: Outline the accomplishments and costs planned for the upcoming reporting period.
@@ -15,6 +15,7 @@ Section-by-Section Instructions:
 
 | **Date Prepared:** {{Current_Date}} | **Reporting Period:** [ Reporting Period Start Date ] to [ Reporting Period End Date ] |
 | :--- | :--- |
+| **Project Manager:** [ Prepared By (Project Manager) ] | **Sponsor:** [ Sponsor Name ] |
 
 ---
 

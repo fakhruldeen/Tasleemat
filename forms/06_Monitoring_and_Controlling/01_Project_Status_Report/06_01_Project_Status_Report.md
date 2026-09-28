@@ -32,7 +32,7 @@ The project status report should be aligned and consistent with the following do
 ---
 
 ### Section Generation Instructions
-*   **Report Information:** Provide the reporting period dates and the name of the project manager preparing the document.
+*   **Report Information:** Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.
 *   **Schedule Performance (Current Period):** List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.
 *   **Cost Performance (Current Period):** Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.
 *   **Planning for Next Period:** Outline the accomplishments and costs planned for the upcoming reporting period.
