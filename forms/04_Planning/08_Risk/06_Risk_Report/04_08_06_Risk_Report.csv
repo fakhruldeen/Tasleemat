@@ -3,14 +3,14 @@ Executive Summary,Describe overall project risk exposure and major individual ri
 Overall Risk Status and Trends,High-level statement of trends and current risk status.,
 Significant Drivers of Overall Risk,Identify the significant drivers of overall project risk.,
 Recommended Responses to Overall Risk,Outline recommended responses to overall project risk.,
-Probability and Impact Matrix,Provide the exact number of risks in each box of the 5x5 matrix.,
-Metrics,Provide specific metric counts.,
-Critical Risks & Responses,List the top critical risks and their responses.,
+Probability and Impact Matrix,Provide the exact number of risks in each box of the 5x5 matrix.,"[{""Probability \\ Impact"": ""Very High"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""High"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""Medium"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""Low"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""Very Low"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}]"
+Metrics,Provide specific metric counts.,"{""Number of scope risks"": """", ""Number of schedule risks"": """", ""Number of cost risks"": """", ""Number of quality risks"": """", ""Number of very high probability risks"": """", ""Number of high probability risks"": """", ""Number of medium probability risks"": """", ""Number of active risks"": """", ""Newly closed risks"": """"}"
+Critical Risks & Responses,List the top critical risks and their responses.,"[{""Top Risks"": """", ""Responses"": """"}]"
 Changes to Critical Risks,Describe any changes to critical risks since the last report.,
 Realized Risks (Transferred to Issue Log),List risks that have occurred and transferred to the issue log.,
 Results from Quantitative Assessments,"Results from S-curve, tornado, etc.",
-Probability of Meeting Objectives,"Provide the probability for Scope, Schedule, Cost, Quality, and Other.",
-Range of Outcomes,Detail outcome ranges and variances.,
+Probability of Meeting Objectives,"Provide the probability for Scope, Schedule, Cost, Quality, and Other.","{""Scope"": """", ""Schedule"": """", ""Cost"": """", ""Quality"": """", ""Other"": """"}"
+Range of Outcomes,Detail outcome ranges and variances.,"{""Range of Schedule Outcomes"": """", ""Range of Cost Outcomes"": """", ""Key Drivers of Variances"": """", ""Proposed Responses"": """"}"
 Total Cost Reserve,The total budget allocated for risk responses.,
 Contingency Reserve,Portion of cost reserve for known-unknowns.,
 Management Reserve,Portion of cost reserve for unknown-unknowns.,
