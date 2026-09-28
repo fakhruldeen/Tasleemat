@@ -2,15 +2,33 @@
 
 Context & Definition:
 The risk report presents information on overall project risk and summarizes information on individual project risks. It provides information for each of the processes from identification of risks, through analysis, response planning and implementation, and monitoring risks.
-Typical information includes:
-*   Executive summary
-*   Description of overall project risk
-*   Description of individual project risks
-*   Quantitative analysis
-*   Reserve status
-*   Risk audit results (if applicable)
 
-Ensure lists and tables are populated according to instructions. -->
+Section-by-Section Instructions:
+1. Executive Summary: Provide a statement describing the overall project risk exposure and major individual risks affecting the project, along with proposed responses for trends.
+2. Overall Project Risk:
+   - Overall Risk Status and Trends: Describe overarching trends observed in the risk profile and current status.
+   - Significant Drivers of Overall Risk: Identify the significant drivers of overall project risk.
+   - Recommended Responses to Overall Risk: Outline recommended responses to overall project risk.
+3. Individual Project Risks:
+   - Probability and Impact Matrix: Indicate the exact number of individual risks in each of the 25 boxes of the 5x5 matrix.
+   - Metrics: Provide integer counts for: scope risks, schedule risks, cost risks, quality risks, very high/high/medium probability risks, active risks, and newly closed risks.
+   - Critical Risks & Responses: Populate the 2-column table mapping the 'Top Risks' to their proposed 'Responses'.
+   - Changes to Critical Risks: Describe any changes to critical risks since the last report.
+   - Realized Risks (Transferred to Issue Log): List any risks that materialized during this period and are now being managed as issues.
+4. Quantitative Analysis:
+   - Results from Quantitative Assessments: Summarize results from S-curve, tornado diagrams, etc.
+   - Probability of Meeting Objectives: List the probability for Scope, Schedule, Cost, Quality, and Other.
+   - Range of Outcomes: Detail the Range of Schedule Outcomes, Range of Cost Outcomes, Key Drivers of Variances, and Proposed Responses.
+5. Reserve Status:
+   - Cost Reserve: Detail the Total Cost Reserve (breaking down Contingency vs. Management Reserve), Used to Date, Used This Period, and Remaining Reserve.
+   - Schedule Reserve: Detail the Total Schedule Reserve, Used to Date, Used This Period, and Remaining Reserve.
+   - Assessment of Reserve Adequacy: Provide an assessment of whether the remaining reserves are adequate given the current risk profile.
+6. Risk Audit Summary:
+   - Summary of Risk Events: Summarize historical risk events and occurrences.
+   - Summary of Risk Management Processes: Summarize the effectiveness of the risk management processes.
+   - Summary of Recommendations: Summarize any recommendations arising from the risk audit.
+
+Ensure lists and tables are populated strictly according to the markdown structure provided. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
