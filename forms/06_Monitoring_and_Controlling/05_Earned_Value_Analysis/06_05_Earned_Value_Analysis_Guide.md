@@ -1,56 +1,21 @@
----
-lang: en
-layout: default
-title: Earned Value Analysis
-nav_order: 1
----
+# EARNED VALUE ANALYSIS - GUIDANCE
+This document provides descriptions for each element in the Earned Value Analysis.
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
-
-## Tasleemat Forms Guide
-# Project Artifact: Earned Value Analysis
-
-**Document Reference:** `PMO-06.05`
-
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Earned Value Analysis** in alignment with Tasleemat framework.
-
----
-
-### 1. What?
-A formal Tasleemat-aligned project document known as the **Earned Value Analysis**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
-
----
-
-### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
-
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **MONITORING AND CONTROLLING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Maintained by the Project Manager or PMO to track actuals against the baselined plans and report to the steering committee.
-
----
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately and professionally complete the **Earned Value Analysis**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](06_05_Earned_Value_Analysis_Template.md)
-* [🤖 LLM Generation Prompt](06_05_Earned_Value_Analysis.md)
-* [📊 Data Schema (JSON)](06_05_Earned_Value_Analysis.json)
-* [📈 Tabular Data (CSV)](06_05_Earned_Value_Analysis.csv)
-
-</div>
+| Document Element | Description |
+| :--- | :--- |
+| **Planned value** | Enter the value of the work planned to be accomplished. |
+| **Earned value** | Enter the value of the work actually accomplished. |
+| **Actual cost** | Enter the cost for the work accomplished. |
+| **Schedule variance** | Calculate the schedule variance by subtracting the planned value from the earned value. SV = EV – PV |
+| **Cost variance** | Calculate the cost variance by subtracting the actual cost from the earned value. CV = EV – AC |
+| **Schedule performance index** | Calculate the schedule performance index by dividing earned value by the planned value. SPI = EV/PV |
+| **Cost performance index** | Calculate the cost performance index by dividing the earned value by the actual cost. CPI = EV/AC |
+| **Root cause of schedule variance** | Identify the root cause of the schedule variance. |
+| **Schedule impact** | Describe the impact on deliverables, milestones, or critical path. |
+| **Root cause of cost variance** | Identify the root cause of the cost variance. |
+| **Budget impact** | Describe the impact on the project budget, contingency funds and reserves, and any intended actions to address the variance. |
+| **Percent planned** | Indicate the cumulative percent of the work planned to be accomplished. PV/BAC |
+| **Percent earned** | Indicate the cumulative percent of work that has been accomplished. EV/BAC |
+| **Percent spent** | Indicate the total costs spent to accomplish the work. AC/BAC |
+| **Estimates at completion** | Determine an appropriate method to forecast the total expenditures at the project completion. Calculate the forecast and justify the reason for selecting the particular estimate at completion. |
+| **To complete performance index** | Calculate the work remaining divided by the funds remaining. TCPI = (BAC – EV)/(BAC – AC) or TCPI = (BAC – EV)/(EAC – AC). |

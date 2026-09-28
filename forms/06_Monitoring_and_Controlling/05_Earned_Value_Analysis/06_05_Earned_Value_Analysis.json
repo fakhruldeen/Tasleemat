@@ -1,8 +1,66 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Earned Value Analysis template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Earned Value Analysis",
+    "_llm_instructions": "Populate the Earned Value Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.\n- Basic Earned Value Metrics: Enter the core EVM financial figures.\n- Variances and Indices: Calculate variances and performance indices.\n- Percentages: Indicate cumulative percentages.\n- Forecasting (Estimates): Forecast completion costs and required performance indices. Justify the EAC and TCPI methods chosen.\n- Root Cause and Impacts Analysis: Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.\n- Comments: Document any comments that add relevance to this report.",
+    "form_name": "EARNED VALUE ANALYSIS",
     "document_reference": "PMO-06.05",
     "project_title": "",
     "date_prepared": "",
-    "fields": {}
+    "fields": {
+        "Report Information": {
+            "guidance": "Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.",
+            "value": {
+                "Reporting Period Start Date": "",
+                "Reporting Period End Date": "",
+                "Analysis Level (Project / Control Account)": "",
+                "Prepared By (Project Manager)": ""
+            }
+        },
+        "Basic Earned Value Metrics": {
+            "guidance": "Enter the core EVM financial figures.",
+            "value": {
+                "Budget at Completion (BAC)": "",
+                "Planned Value (PV)": "",
+                "Earned Value (EV)": "",
+                "Actual Cost (AC)": ""
+            }
+        },
+        "Variances and Indices": {
+            "guidance": "Calculate variances and performance indices.",
+            "value": {
+                "Schedule Variance (SV = EV - PV)": "",
+                "Cost Variance (CV = EV - AC)": "",
+                "Schedule Performance Index (SPI = EV / PV)": "",
+                "Cost Performance Index (CPI = EV / AC)": ""
+            }
+        },
+        "Percentages": {
+            "guidance": "Indicate cumulative percentages.",
+            "value": {
+                "Percent Planned (PV / BAC)": "",
+                "Percent Earned (EV / BAC)": "",
+                "Percent Spent (AC / BAC)": ""
+            }
+        },
+        "Forecasting (Estimates)": {
+            "guidance": "Forecast completion costs and required performance indices. Justify the EAC and TCPI methods chosen.",
+            "value": {
+                "Estimates at Completion (EAC) Method & Justification": "",
+                "Estimates at Completion (EAC) Value": "",
+                "To Complete Performance Index (TCPI) Method": "",
+                "To Complete Performance Index (TCPI) Value": ""
+            }
+        },
+        "Root Cause and Impacts Analysis": {
+            "guidance": "Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.",
+            "value": {
+                "Root cause of schedule variance": "",
+                "Schedule impact (incl. implications of continued variance)": "",
+                "Root cause of cost variance": "",
+                "Budget impact (incl. intended actions/reserves)": ""
+            }
+        },
+        "Comments": {
+            "guidance": "Document any comments that add relevance to this report.",
+            "value": ""
+        }
+    }
 }
