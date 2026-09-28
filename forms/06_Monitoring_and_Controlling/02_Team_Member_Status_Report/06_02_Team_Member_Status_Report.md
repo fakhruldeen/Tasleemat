@@ -6,46 +6,34 @@ Form: TEAM MEMBER STATUS REPORT (Instructions)
 # TEAM MEMBER STATUS REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `TEAM MEMBER STATUS REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `TEAM MEMBER STATUS REPORT`.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
-> **Alignment:**
-> [ Add Alignment Information Here ]
+> The team member status report is filled out by team members and submitted to the project manager on a regular basis. It tracks schedule, quality, and cost status for the current reporting period and provides planned information for the next reporting period. It identifies new risks, issues, and variances.
+
+**Tailoring Tips:**
+*   You can add a field for escalations to identify those areas that need to be escalated to the sponsor, program manager, or other appropriate individual.
+*   Some reports include a field to record decisions made. These would be transferred to the project decision log.
+*   If your organization has a robust knowledge management process you might consider adding fields for knowledge transfer or lessons learned. These can then be transferred to the organization’s knowledge repository or lessons learned register.
+
+**Alignment:**
+The team member status report should be aligned and consistent with the following documents:
+*   Project schedule
+*   Cost estimates
+*   Project budget
+*   Issue log
+*   Risk register
+*   Project status report
+*   Variance analysis
+*   Earned value status report
 
 ---
 
-### Root cause of variances
-**Instruction:** For any work that was not accomplished as scheduled, identify the cause of the variance.
-
----
-
-### Funds spent this reporting period
-**Instruction:** Record funds spent this period. Funds planned to be spent this reporting period Record funds that were planned to be spent this period.
-
----
-
-### Planned corrective of preventive action
-**Instruction:** Identify any actions needed to recover cost, schedule, or quality variances or prevent future variances. Activities planned for next reporting period List all activities scheduled for next period, including work to be started, continued, or completed.
-
----
-
-### Costs planned for next reporting period
-**Instruction:** Identify funds planned to be expended next period.
-
----
-
-### New risks identified
-**Instruction:** Identify any new risks that have arisen. New risks should be recorded in the risk register as well.
-
----
-
-### Issues
-**Instruction:** Identify any new issues that have arisen. New issues should be recorded in the issue log as well.
-
----
-
-### Comments
-**Instruction:** Document any comments that add relevance to this report.
-
+### Section Generation Instructions
+*   **Schedule and Activities (Current Period):** Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.
+*   **Cost and Budget (Current Period):** Provide information on funds planned vs spent, and the root cause of any cost variances.
+*   **Quality and Corrective Actions:** Identify quality variances and planned corrective or preventive actions.
+*   **Planning for Next Period:** Outline the schedule and cost plans for the upcoming reporting period.
+*   **Risks, Issues, and Escalations:** Log new risks, issues, and any matters requiring escalation.
+*   **Project Knowledge and Decisions:** Document key decisions made and lessons learned to transfer to organizational repositories.
+*   **Comments:** Document any comments that add relevance to this report.

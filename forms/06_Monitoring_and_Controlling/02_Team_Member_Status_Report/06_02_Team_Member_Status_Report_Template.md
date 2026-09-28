@@ -1,81 +1,108 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Populate the Team Member Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
-Section Instructions:
-*   **Root cause of variances:** For any work that was not accomplished as scheduled, identify the cause of the variance.
-*   **Funds spent this reporting period:** Record funds spent this period. Funds planned to be spent this reporting period Record funds that were planned to be spent this period.
-*   **Planned corrective of preventive action:** Identify any actions needed to recover cost, schedule, or quality variances or prevent future variances. Activities planned for next reporting period List all activities scheduled for next period, including work to be started, continued, or completed.
-*   **Costs planned for next reporting period:** Identify funds planned to be expended next period.
-*   **New risks identified:** Identify any new risks that have arisen. New risks should be recorded in the risk register as well.
-*   **Issues:** Identify any new issues that have arisen. New issues should be recorded in the issue log as well.
-*   **Comments:** Document any comments that add relevance to this report.
--->
+Section-by-Section Instructions:
+- Schedule and Activities (Current Period): Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.
+- Cost and Budget (Current Period): Provide information on funds planned vs spent, and the root cause of any cost variances.
+- Quality and Corrective Actions: Identify quality variances and planned corrective or preventive actions.
+- Planning for Next Period: Outline the schedule and cost plans for the upcoming reporting period.
+- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation.
+- Project Knowledge and Decisions: Document key decisions made and lessons learned to transfer to organizational repositories.
+- Comments: Document any comments that add relevance to this report. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">TEAM MEMBER STATUS REPORT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Reporting Period:** [ Start Date ] to [ End Date ] |
+| :--- | :--- |
+| **Team Member Name:** [ Name ] | **Role:** [ Role ] |
 
 ---
 
-### Root cause of variances
-<!-- For any work that was not accomplished as scheduled, identify the cause of the variance. -->
+## 1. Schedule and Activities (Current Period)
 
-> [ Add details... ]
+**Activities planned this reporting period:**
+[ Add details... ]
 
----
+**Activities accomplished this reporting period:**
+[ Add details... ]
 
-### Funds spent this reporting period
-<!-- Record funds spent this period. Funds planned to be spent this reporting period Record funds that were planned to be spent this period. -->
+**Activities planned but not accomplished this reporting period:**
+[ Add details... ]
 
-> [ Add details... ]
-
----
-
-### Planned corrective of preventive action
-<!-- Identify any actions needed to recover cost, schedule, or quality variances or prevent future variances. Activities planned for next reporting period List all activities scheduled for next period, including work to be started, continued, or completed. -->
-
-> [ Add details... ]
+**Root cause of schedule variances:**
+[ Add details... ]
 
 ---
 
-### Costs planned for next reporting period
-<!-- Identify funds planned to be expended next period. -->
+## 2. Cost and Budget (Current Period)
 
-> [ Add details... ]
+**Funds planned to be spent this reporting period:**
+[ Add details... ]
 
----
+**Funds spent this reporting period:**
+[ Add details... ]
 
-### New risks identified
-<!-- Identify any new risks that have arisen. New risks should be recorded in the risk register as well. -->
-
-> [ Add details... ]
-
----
-
-### Issues
-<!-- Identify any new issues that have arisen. New issues should be recorded in the issue log as well. -->
-
-> [ Add details... ]
+**Root cause of cost variances:**
+[ Add details... ]
 
 ---
 
-### Comments
-<!-- Document any comments that add relevance to this report. -->
+## 3. Quality and Corrective Actions
 
-> [ Add details... ]
+**Quality variances identified this period:**
+[ Add details... ]
+
+**Planned corrective or preventive action:**
+[ Add details... ]
+
+---
+
+## 4. Planning for Next Period
+
+**Activities planned for next reporting period:**
+[ Add details... ]
+
+**Costs planned for next reporting period:**
+[ Add details... ]
+
+---
+
+## 5. Risks, Issues, and Escalations
+
+**New risks identified:**
+[ Add details... ]
+
+**New issues identified:**
+[ Add details... ]
+
+**Escalations:**
+[ Add details... ]
+
+---
+
+## 6. Project Knowledge and Decisions
+
+**Decisions made:**
+[ Add details... ]
+
+**Lessons learned / Knowledge transfer:**
+[ Add details... ]
+
+---
+
+## 7. Comments
+[ Add details... ]
 
 ---
 
 ### Signatures
 
-| Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
-| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Prepared By (Team Member): | Reviewed By (Project Manager): |
+| :--- | :--- |
+| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} |
+| **Signature:** _____________________ | **Signature:** _____________________ |
+| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 ---
 
