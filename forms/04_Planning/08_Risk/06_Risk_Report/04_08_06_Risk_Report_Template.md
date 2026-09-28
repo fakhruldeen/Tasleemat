@@ -70,6 +70,12 @@ Ensure lists and tables are populated according to instructions. -->
 | [ Risk A ] | [ Response A ] |
 | [ Risk B ] | [ Response B ] |
 
+### Changes to Critical Risks
+[ Add details... ]
+
+### Changes to Critical Risks
+[ Add details... ]
+
 ---
 
 ## Quantitative Analysis

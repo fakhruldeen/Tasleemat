@@ -64,6 +64,7 @@ The risk report should be aligned and consistent with the following documents:
 *   **Probability and Impact Matrix:** Indicate the number of individual risks in each box of the 5x5 matrix (Very High to Very Low).
 *   **Metrics:** Provide counts for: Number of scope risks, Number of schedule risks, Number of cost risks, Number of quality risks, Number of very high probability risks, Number of high probability risks, Number of medium probability risks, Number of active risks, and Newly closed risks.
 *   **Critical Risks:** Populate a table mapping the 'Top Risks' to their proposed 'Responses'.
+*   **Changes to Critical Risks:** Describe any changes to critical risks since the last report.
 
 **Quantitative Analysis**
 *   **Results from Quantitative Assessments:** Summarize results from S-curve, tornado diagrams, etc.

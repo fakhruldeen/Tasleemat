@@ -50,6 +50,10 @@
                         "Responses": ""
                     }
                 ]
+            },
+            "Changes to Critical Risks": {
+                "guidance": "Describe any changes to critical risks since the last report.",
+                "value": ""
             }
         },
         "Quantitative Analysis": {
