@@ -1,25 +1,38 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROCUREMENT STRATEGY template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Populate the Procurement Strategy based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Delivery Methods: Professional Services: Describe how the contractor will work with the buyer (e.g., joint venture, representative, with or without subcontracting allowed).\n- Delivery Methods: Construction Services: Describe the limitations of delivery, such as design build, design bid build, etc.\n- Contract Types: Describe the contract types (e.g. Fixed Price, Cost Reimbursable, Time and Materials) and include the criteria associated with any fees or incentives.\n- Procurement Phases: List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include knowledge transfer requirements.",
     "form_name": "PROCUREMENT STRATEGY",
     "document_reference": "PMO-04.09.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Delivery methods</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "Delivery Methods: Professional Services": {
+            "guidance": "Describe how the contractor will work with the buyer (e.g., joint venture, representative, with or without subcontracting allowed).",
             "value": ""
         },
-        "Construction services": {
+        "Delivery Methods: Construction Services": {
             "guidance": "Describe the limitations of delivery, such as design build, design bid build, etc.",
             "value": ""
         },
-        "Contract types": {
-            "guidance": "Describe the contract type, fixed, incentive, or award fees. Include the criteria associated with the fees. Common contract types include: Fixed Price: FFP – Firm Fixed Price FPIF – Fixed Price with Incentive Fee FP-EPA – Fixed Price with Economic Price Adjustment Cost Reimbursable: CPFF – Cost Plus Fixed Fee CPIF – Cost Plus Incentive Fee CPAF – Cost Plus Award Fee Time and Materials (T&M)",
-            "value": ""
+        "Contract Types": {
+            "guidance": "Describe the contract types (e.g. Fixed Price, Cost Reimbursable, Time and Materials) and include the criteria associated with any fees or incentives.",
+            "value": [
+                {
+                    "Contract Type": "",
+                    "Description and Fee Criteria": ""
+                }
+            ]
         },
-        "Procurement phases": {
-            "guidance": "List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include any knowledge transfer requirements.",
-            "value": ""
+        "Procurement Phases": {
+            "guidance": "List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include knowledge transfer requirements.",
+            "value": [
+                {
+                    "Phase": "",
+                    "Milestones": "",
+                    "Advancement Criteria": "",
+                    "Tests / Evaluations": "",
+                    "Knowledge Transfer": ""
+                }
+            ]
         }
     }
 }

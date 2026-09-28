@@ -6,26 +6,20 @@ Form: PROCUREMENT STRATEGY (Instructions)
 # PROCUREMENT STRATEGY - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROCUREMENT STRATEGY`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the `PROCUREMENT STRATEGY`.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
-> **Alignment:**
-> [ Add Alignment Information Here ]
+> The procurement strategy describes information about specific procurements, including delivery methods, contract types, and procurement phases. It is developed once for each procurement when needed.
+
+**Tailoring Tips:**
+*   For a project that will be done using internal resources only, you do not need a procurement strategy.
+*   For projects with few procurements consider combining this form with the procurement management plan.
+*   For simple purchases, or for purchases where you have worked with a vendor successfully for a length of time, you may not need a formal procurement strategy; rather you would record the information in a statement of work (SOW).
 
 ---
 
-### Construction services
-**Instruction:** Describe the limitations of delivery, such as design build, design bid build, etc.
-
----
-
-### Contract types
-**Instruction:** Describe the contract type, fixed, incentive, or award fees. Include the criteria associated with the fees. Common contract types include: Fixed Price: FFP – Firm Fixed Price FPIF – Fixed Price with Incentive Fee FP-EPA – Fixed Price with Economic Price Adjustment Cost Reimbursable: CPFF – Cost Plus Fixed Fee CPIF – Cost Plus Incentive Fee CPAF – Cost Plus Award Fee Time and Materials (T&M)
-
----
-
-### Procurement phases
-**Instruction:** List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include any knowledge transfer requirements.
-
+### Section Generation Instructions
+*   **Delivery Methods: Professional Services:** Describe how the contractor will work with the buyer (e.g., joint venture, representative, with or without subcontracting allowed).
+*   **Delivery Methods: Construction Services:** Describe the limitations of delivery, such as design build, design bid build, etc.
+*   **Contract Types:** Describe the contract types (e.g. Fixed Price, Cost Reimbursable, Time and Materials) and include the criteria associated with any fees or incentives.
+*   **Procurement Phases:** List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include knowledge transfer requirements.

@@ -1,25 +1,38 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج استراتيجية المشتريات هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة استراتيجية المشتريات بناءً على سياق المشروع. تأكد من أن مفاتيح JSON تتطابق تمامًا مع الحقول المسطحة المقابلة في الماركدوان.\n\nتعليمات الأقسام بالتفصيل:\n- طرق التسليم: الخدمات المهنية: صف كيف سيعمل المقاول مع المشتري (مثل: مشروع مشترك، ممثل، مع أو بدون السماح بالتعاقد من الباطن).\n- طرق التسليم: خدمات البناء: صف قيود التسليم، مثل التصميم والبناء، تصميم وعطاء وبناء، إلخ.\n- أنواع العقود: صف أنواع العقود (مثل: السعر الثابت، التكلفة المستردة، الوقت والمواد) وتضمين المعايير المرتبطة بأي رسوم أو حوافز.\n- مراحل المشتريات: ضع قائمة بمراحل الشراء والمعالم ومعايير الانتقال إلى المرحلة التالية والاختبارات أو التقييمات لكل مرحلة. قم بتضمين متطلبات نقل المعرفة.",
     "form_name": "استراتيجية المشتريات",
     "document_reference": "PMO-04.09.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Delivery methods</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "طرق التسليم: الخدمات المهنية": {
+            "guidance": "صف كيف سيعمل المقاول مع المشتري (مثل: مشروع مشترك، ممثل، مع أو بدون السماح بالتعاقد من الباطن).",
             "value": ""
         },
-        "Construction services": {
-            "guidance": "Describe the limitations of delivery, such as design build, design bid build, etc.",
+        "طرق التسليم: خدمات البناء": {
+            "guidance": "صف قيود التسليم، مثل التصميم والبناء، تصميم وعطاء وبناء، إلخ.",
             "value": ""
         },
-        "Contract types": {
-            "guidance": "Describe the contract type, fixed, incentive, or award fees. Include the criteria associated with the fees. Common contract types include: Fixed Price: FFP – Firm Fixed Price FPIF – Fixed Price with Incentive Fee FP-EPA – Fixed Price with Economic Price Adjustment Cost Reimbursable: CPFF – Cost Plus Fixed Fee CPIF – Cost Plus Incentive Fee CPAF – Cost Plus Award Fee Time and Materials (T&M)",
-            "value": ""
+        "أنواع العقود": {
+            "guidance": "صف أنواع العقود (مثل: السعر الثابت، التكلفة المستردة، الوقت والمواد) وتضمين المعايير المرتبطة بأي رسوم أو حوافز.",
+            "value": [
+                {
+                    "نوع العقد": "",
+                    "الوصف ومعايير الرسوم": ""
+                }
+            ]
         },
-        "Procurement phases": {
-            "guidance": "List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include any knowledge transfer requirements.",
-            "value": ""
+        "مراحل المشتريات": {
+            "guidance": "ضع قائمة بمراحل الشراء والمعالم ومعايير الانتقال إلى المرحلة التالية والاختبارات أو التقييمات لكل مرحلة. قم بتضمين متطلبات نقل المعرفة.",
+            "value": [
+                {
+                    "المرحلة": "",
+                    "المعالم": "",
+                    "معايير التقدم": "",
+                    "الاختبارات / التقييمات": "",
+                    "نقل المعرفة": ""
+                }
+            ]
         }
     }
 }
