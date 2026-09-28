@@ -1,10 +1,10 @@
 <!-- LLM INSTRUCTIONS: Populate the Procurement Strategy based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
 Section-by-Section Instructions:
-- Delivery Methods: Professional Services: Describe how the contractor will work with the buyer (e.g., joint venture, representative, with or without subcontracting allowed).
-- Delivery Methods: Construction Services: Describe the limitations of delivery, such as design build, design bid build, etc.
-- Contract Types: Describe the contract types (e.g. Fixed Price, Cost Reimbursable, Time and Materials) and include the criteria associated with any fees or incentives.
-- Procurement Phases: List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include knowledge transfer requirements. -->
+- Delivery Methods: Describe the delivery method (e.g., joint venture, representative, design build, etc.).
+- Contract Type Selection: Select the contract types.
+- Incentive or Award Fees: List any incentive or award fees and their associated criteria.
+- Procurement Life Cycle: List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
@@ -16,27 +16,34 @@ Section-by-Section Instructions:
 ---
 
 ## 1. Delivery Methods
-
-### 1.1 Professional Services
-[ Add details... ]
-
-### 1.2 Construction Services
 [ Add details... ]
 
 ---
 
 ## 2. Contract Types
 
-| Contract Type | Description and Fee Criteria |
+**Checklist:**
+- [ ] FFP (Firm Fixed Price)
+- [ ] FPIF (Fixed Price with Incentive Fee)
+- [ ] FP-EPA (Fixed Price with Economic Price Adjustment)
+- [ ] CPFF (Cost Plus Fixed Fee)
+- [ ] CPIF (Cost Plus Incentive Fee)
+- [ ] CPAF (Cost Plus Award Fee)
+- [ ] T&M (Time and Materials)
+- [ ] Other: [ Add details... ]
+
+**Incentive or Award Fees:**
+
+| Incentive or Award Fee | Criteria |
 | :--- | :--- |
 | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] |
 
 ---
 
-## 3. Procurement Phases
+## 3. Procurement Life Cycle
 
-| Phase | Milestones | Advancement Criteria | Tests / Evaluations | Knowledge Transfer |
+| Phase | Entry Criteria | Key Deliverables or Milestones | Exit Criteria | Knowledge transfer |
 | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |

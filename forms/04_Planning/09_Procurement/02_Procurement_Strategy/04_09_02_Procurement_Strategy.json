@@ -1,36 +1,45 @@
 {
-    "_llm_instructions": "Populate the Procurement Strategy based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Delivery Methods: Professional Services: Describe how the contractor will work with the buyer (e.g., joint venture, representative, with or without subcontracting allowed).\n- Delivery Methods: Construction Services: Describe the limitations of delivery, such as design build, design bid build, etc.\n- Contract Types: Describe the contract types (e.g. Fixed Price, Cost Reimbursable, Time and Materials) and include the criteria associated with any fees or incentives.\n- Procurement Phases: List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include knowledge transfer requirements.",
+    "_llm_instructions": "Populate the Procurement Strategy based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Delivery Methods: Describe the delivery method (e.g., joint venture, representative, design build, etc.).\n- Contract Type Selection: Select the contract types.\n- Incentive or Award Fees: List any incentive or award fees and their associated criteria.\n- Procurement Life Cycle: List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer.",
     "form_name": "PROCUREMENT STRATEGY",
     "document_reference": "PMO-04.09.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Delivery Methods: Professional Services": {
-            "guidance": "Describe how the contractor will work with the buyer (e.g., joint venture, representative, with or without subcontracting allowed).",
+        "Delivery Methods": {
+            "guidance": "Describe the delivery method (e.g., joint venture, representative, design build, etc.).",
             "value": ""
         },
-        "Delivery Methods: Construction Services": {
-            "guidance": "Describe the limitations of delivery, such as design build, design bid build, etc.",
-            "value": ""
+        "Contract Type Selection": {
+            "guidance": "Select the contract types.",
+            "value": {
+                "FFP": false,
+                "FPIF": false,
+                "FP-EPA": false,
+                "CPFF": false,
+                "CPIF": false,
+                "CPAF": false,
+                "T&M": false,
+                "Other": ""
+            }
         },
-        "Contract Types": {
-            "guidance": "Describe the contract types (e.g. Fixed Price, Cost Reimbursable, Time and Materials) and include the criteria associated with any fees or incentives.",
+        "Incentive or Award Fees": {
+            "guidance": "List any incentive or award fees and their associated criteria.",
             "value": [
                 {
-                    "Contract Type": "",
-                    "Description and Fee Criteria": ""
+                    "Incentive or Award Fee": "",
+                    "Criteria": ""
                 }
             ]
         },
-        "Procurement Phases": {
-            "guidance": "List the procurement phases, milestones, criteria to advance to the next phase, and tests or evaluations for each phase. Include knowledge transfer requirements.",
+        "Procurement Life Cycle": {
+            "guidance": "List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer.",
             "value": [
                 {
                     "Phase": "",
-                    "Milestones": "",
-                    "Advancement Criteria": "",
-                    "Tests / Evaluations": "",
-                    "Knowledge Transfer": ""
+                    "Entry Criteria": "",
+                    "Key Deliverables or Milestones": "",
+                    "Exit Criteria": "",
+                    "Knowledge transfer": ""
                 }
             ]
         }
