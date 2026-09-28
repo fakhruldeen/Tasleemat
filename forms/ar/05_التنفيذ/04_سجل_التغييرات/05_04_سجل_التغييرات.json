@@ -1,39 +1,25 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج سجل التغييرات هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "قم بتعبئة سجل التغييرات بناءً على سياق المشروع. ملاحظة: يجب أن يُخرج هذا السجل مصفوفة من الكائنات تتطابق مع رؤوس الجدول المسطح.",
     "form_name": "سجل التغييرات",
     "document_reference": "PMO-05.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات سجل التغييرات": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Category:** Enter the category from the change request form. Describe the proposed change.\n- **Requestor:** Enter the name of the person requesting the change.\n- **Submission date:** Enter the date the change was submitted.\n- **الحالة:** Enter the status as open, pending, closed.\n- **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.\n- **ID:** \n- **Description of change:**",
+        "سجل التغييرات": {
+            "guidance": "قم بتسجيل جميع طلبات التغيير بما في ذلك فئتها ونوعها ووصفها وتأثيراتها وحالتها والقرار النهائي.",
             "value": [
                 {
-                    "Category": "",
-                    "Requestor": "",
-                    "Submission date": "",
+                    "المعرف (ID)": "",
+                    "الفئة": "",
+                    "النوع (إلزامي/تقديري)": "",
+                    "إصلاح خطأ برمجي؟ (نعم/لا)": "",
+                    "الوصف": "",
+                    "مقدم الطلب": "",
+                    "تاريخ التقديم": "",
+                    "تأثير التكلفة/الجدول الزمني": "",
+                    "العناصر القابلة للتهيئة المتأثرة": "",
                     "الحالة": "",
-                    "Disposition": "",
-                    "ID": "",
-                    "Description of change": ""
-                },
-                {
-                    "Category": "",
-                    "Requestor": "",
-                    "Submission date": "",
-                    "الحالة": "",
-                    "Disposition": "",
-                    "ID": "",
-                    "Description of change": ""
-                },
-                {
-                    "Category": "",
-                    "Requestor": "",
-                    "Submission date": "",
-                    "الحالة": "",
-                    "Disposition": "",
-                    "ID": "",
-                    "Description of change": ""
+                    "القرار": ""
                 }
             ]
         }

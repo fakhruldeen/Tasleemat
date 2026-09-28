@@ -1,44 +1,20 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
-
-Section Instructions:
-*   **Category:** Enter the category from the change request form. Describe the proposed change.
-*   **Requestor:** Enter the name of the person requesting the change.
-*   **Submission date:** Enter the date the change was submitted.
-*   **Status:** Enter the status as open, pending, closed.
-*   **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.
-*   **ID:** 
-*   **Description of change:** 
--->
+<!-- LLM INSTRUCTIONS: Populate the Change Log based on the project context. Note: This log must output an array of objects matching the flat table headers. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">CHANGE LOG</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
+| :--- | :--- |
 
 ---
 
-### Change Log Entries
-<!-- 
-Please populate the table below with the following details:
-- **Category:** Enter the category from the change request form. Describe the proposed change.
-- **Requestor:** Enter the name of the person requesting the change.
-- **Submission date:** Enter the date the change was submitted.
-- **Status:** Enter the status as open, pending, closed.
-- **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.
-- **ID:** 
-- **Description of change:** 
--->
-| Category | Requestor | Submission date | Status | Disposition | ID | Description of change |
-| --- | --- | --- | --- | --- | --- | --- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## Change Log Entries
 
-
-
+| ID | Category | Type (Mandatory/Discretionary) | Bug Fix? (Y/N) | Description | Requestor | Submission Date | Cost/Schedule Impact | Configurable Items Impacted | Status | Disposition |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
@@ -53,6 +29,6 @@ Please populate the table below with the following details:
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Change Log | <strong>Ref:</strong> PMO-05.04 <br>
+  <strong>Template:</strong> CHANGE LOG | <strong>Ref:</strong> PMO-05.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

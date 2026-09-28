@@ -1,4 +1,2 @@
-Category,Requestor,Submission date,Status,Disposition,ID,Description of change
-,,,,,,
-,,,,,,
-,,,,,,
+﻿ID,Category,Type (Mandatory/Discretionary),Bug Fix? (Y/N),Description,Requestor,Submission Date,Cost/Schedule Impact,Configurable Items Impacted,Status,Disposition
+,,,,,,,,,,

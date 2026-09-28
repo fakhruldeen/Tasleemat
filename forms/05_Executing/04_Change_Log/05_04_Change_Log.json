@@ -1,39 +1,25 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Change Log template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Change Log",
+    "_llm_instructions": "Populate the Change Log based on the project context. Note: This log must output an array of objects matching the flat table headers.",
+    "form_name": "CHANGE LOG",
     "document_reference": "PMO-05.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Change Log Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Category:** Enter the category from the change request form. Describe the proposed change.\n- **Requestor:** Enter the name of the person requesting the change.\n- **Submission date:** Enter the date the change was submitted.\n- **Status:** Enter the status as open, pending, closed.\n- **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.\n- **ID:** \n- **Description of change:**",
+        "Change Log": {
+            "guidance": "Log all change requests including their category, type, description, impacts, status, and final disposition.",
             "value": [
                 {
-                    "Category": "",
-                    "Requestor": "",
-                    "Submission date": "",
-                    "Status": "",
-                    "Disposition": "",
                     "ID": "",
-                    "Description of change": ""
-                },
-                {
                     "Category": "",
+                    "Type (Mandatory/Discretionary)": "",
+                    "Bug Fix? (Y/N)": "",
+                    "Description": "",
                     "Requestor": "",
-                    "Submission date": "",
+                    "Submission Date": "",
+                    "Cost/Schedule Impact": "",
+                    "Configurable Items Impacted": "",
                     "Status": "",
-                    "Disposition": "",
-                    "ID": "",
-                    "Description of change": ""
-                },
-                {
-                    "Category": "",
-                    "Requestor": "",
-                    "Submission date": "",
-                    "Status": "",
-                    "Disposition": "",
-                    "ID": "",
-                    "Description of change": ""
+                    "Disposition": ""
                 }
             ]
         }

@@ -1,64 +1,16 @@
----
-lang: en
-layout: default
-title: Change Log
-nav_order: 1
----
+# CHANGE LOG - GUIDANCE
+This document provides descriptions for each element in the Change Log.
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
-
-## Tasleemat Forms Guide
-# Project Artifact: Change Log
-
-**Document Reference:** `PMO-05.04`
-
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Change Log** in alignment with Tasleemat framework.
-
----
-
-### 1. What?
-A dynamic, living repository (**Change Log**) used to capture, track, and monitor items that arise during project execution.
-
----
-
-### 2. Why?
-To maintain centralized visibility and prompt resolution of any outstanding items, risks, or requests that could impact project delivery.
-
----
-
-### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **EXECUTING Process Group** of the project lifecycle.
-
----
-
-### 4. Who?
-**Responsibilities:** Managed actively by the Project Manager and the core executing team, updated as work is performed.
-
----
-
-### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **Category:** Enter the category from the change request form. Describe the proposed change.
-*   **Requestor:** Enter the name of the person requesting the change.
-*   **Submission date:** Enter the date the change was submitted.
-*   **Status:** Enter the status as open, pending, closed.
-*   **Disposition:** Enter the outcome of the change request as approved, deferred, or rejected.
-*   **ID:** 
-*   **Description of change:** 
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](05_04_Change_Log_Template.md)
-* [🤖 LLM Generation Prompt](05_04_Change_Log.md)
-* [📊 Data Schema (JSON)](05_04_Change_Log.json)
-* [📈 Tabular Data (CSV)](05_04_Change_Log.csv)
-
-</div>
+| Document Element | Description |
+| :--- | :--- |
+| **ID** | Enter a unique change identifier. |
+| **Category** | Enter the category from the change request form. |
+| **Type (Mandatory/Discretionary)** | Indicate whether the change is mandatory (such as a legal requirement) or discretionary. |
+| **Bug Fix? (Y/N)** | Indicate if the change is specifically to fix a bug or defect (common in IT projects). |
+| **Description** | Describe the proposed change. |
+| **Requestor** | Enter the name of the person requesting the change. |
+| **Submission Date** | Enter the date the change was submitted. |
+| **Cost/Schedule Impact** | A brief summary of how this change impacts the project's budget or timeline. |
+| **Configurable Items Impacted** | Record information to track configuration management (which items/components are impacted). |
+| **Status** | Enter the status as open, pending, or closed. |
+| **Disposition** | Enter the outcome of the change request as approved, deferred, or rejected. |
