@@ -1,6 +1,6 @@
 {
     "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PRODUCT VISION template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "PRODUCT VISION",
+    "form_name": "PRODUCT VISION STATEMENT",
     "document_reference": "PMO-03.02",
     "project_title": "",
     "date_prepared": "",

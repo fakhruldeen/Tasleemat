@@ -1,6 +1,6 @@
 {
     "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RISK AUDIT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "RISK AUDIT",
+    "form_name": "RISK AUDIT REPORT",
     "document_reference": "PMO-06.06",
     "project_title": "",
     "date_prepared": "",

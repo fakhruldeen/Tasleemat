@@ -3,7 +3,7 @@
 
 <h3 align="left">{{اسم_الشركة}}</h3>
 <h2 align="left">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
-<h1 align="center">مراجعة المرحلة (RETROSPECTIVE)</h1>
+<h1 align="center">تقرير مراجعة المرحلة (RETROSPECTIVE)</h1>
 
 **تاريخ الإعداد:** {{التاريخ_الحالي}}  
 **مدير المشروع:** {{اسم_مدير_المشروع}}  
@@ -42,6 +42,6 @@
 ---
 
 <div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>النموذج:</strong> مراجعة المرحلة (Retrospective) | <strong>المرجع:</strong> PMO-05.08 <br>
+  <strong>النموذج:</strong> تقرير مراجعة المرحلة (Retrospective) | <strong>المرجع:</strong> PMO-05.08 <br>
   <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

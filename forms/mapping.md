@@ -31,7 +31,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | Doc ID | Artifact Name | Directory Path |
 | --- | --- | --- |
 | **PMO-03.01** | Project Charter | `03_Initiating/01_Project_Charter` |
-| **PMO-03.02** | Product Vision | `03_Initiating/02_Product_Vision` |
+| **PMO-03.02** | Product Vision Statement | `03_Initiating/02_Product_Vision` |
 | **PMO-03.03** | Assumption Log | `03_Initiating/03_Assumption_Log` |
 | **PMO-03.04** | Stakeholder Register | `03_Initiating/04_Stakeholder_Register` |
 | **PMO-03.05** | Stakeholder Analysis | `03_Initiating/05_Stakeholder_Analysis` |
@@ -66,8 +66,8 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-04.04.03** | Cost Estimating Worksheet | `04_Planning/04_Cost/03_Cost_Estimating_Worksheet` |
 | **PMO-04.04.04** | Cost Baseline | `04_Planning/04_Cost/04_Cost_Baseline` |
 | **PMO-04.05.01** | Quality Management Plan | `04_Planning/05_Quality/01_Quality_Management_Plan` |
-| **PMO-04.05.02** | Quality Metrics | `04_Planning/05_Quality/02_Quality_Metrics` |
-| **PMO-04.05.03** | Definition of Ready and Done | `04_Planning/05_Quality/03_Definition_of_Ready_and_Done` |
+| **PMO-04.05.02** | Quality Metrics Register | `04_Planning/05_Quality/02_Quality_Metrics` |
+| **PMO-04.05.03** | Definition of Ready and Done Standard | `04_Planning/05_Quality/03_Definition_of_Ready_and_Done` |
 | **PMO-04.06.01** | Resource Management Plan | `04_Planning/06_Resource/01_Resource_Management_Plan` |
 | **PMO-04.06.02** | Resource Requirements | `04_Planning/06_Resource/02_Resource_Requirements` |
 | **PMO-04.06.03** | Resource Breakdown Structure | `04_Planning/06_Resource/03_Resource_Breakdown_Structure` |
@@ -97,10 +97,10 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-05.02** | Decision Log | `05_Executing/02_Decision_Log` |
 | **PMO-05.03** | Change Request | `05_Executing/03_Change_Request` |
 | **PMO-05.04** | Change Log | `05_Executing/04_Change_Log` |
-| **PMO-05.05** | Quality Audit | `05_Executing/05_Quality_Audit` |
+| **PMO-05.05** | Quality Audit Report | `05_Executing/05_Quality_Audit` |
 | **PMO-05.06** | Team Performance Assessment | `05_Executing/06_Team_Performance_Assessment` |
 | **PMO-05.07** | Lessons Learned Register | `05_Executing/07_Lessons_Learned_Register` |
-| **PMO-05.08** | Retrospective | `05_Executing/08_Retrospective` |
+| **PMO-05.08** | Retrospective Report | `05_Executing/08_Retrospective` |
 | **PMO-05.09** | Prompt Library Log | `05_Executing/09_Prompt_Library_Log` |
 | **PMO-05.10** | Impediment Log | `05_Executing/10_Impediment_Log` |
 | **PMO-05.11** | Meeting Minutes | `05_Executing/11_Meeting_Minutes` |
@@ -114,8 +114,8 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-06.03** | Contractor Status Report | `06_Monitoring_and_Controlling/03_Contractor_Status_Report` |
 | **PMO-06.04** | Variance Analysis | `06_Monitoring_and_Controlling/04_Variance_Analysis` |
 | **PMO-06.05** | Earned Value Analysis Report | `06_Monitoring_and_Controlling/05_Earned_Value_Analysis` |
-| **PMO-06.06** | Risk Audit | `06_Monitoring_and_Controlling/06_Risk_Audit` |
-| **PMO-06.07** | Procurement Audit | `06_Monitoring_and_Controlling/07_Procurement_Audit` |
+| **PMO-06.06** | Risk Audit Report | `06_Monitoring_and_Controlling/06_Risk_Audit` |
+| **PMO-06.07** | Procurement Audit Report | `06_Monitoring_and_Controlling/07_Procurement_Audit` |
 | **PMO-06.08** | Product Acceptance Form | `06_Monitoring_and_Controlling/08_Product_Acceptance_Form` |
 | **PMO-06.09** | Vendor Performance Scorecard | `06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard` |
 | **PMO-06.10** | User Acceptance Testing Signoff | `06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff` |
@@ -125,6 +125,6 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | --- | --- | --- |
 | **PMO-07.01** | Lessons Learned Summary | `07_Closing/01_Lessons_Learned_Summary` |
 | **PMO-07.02** | Contract Closeout Report | `07_Closing/02_Contract_Closeout_Report` |
-| **PMO-07.03** | Project or Phase Closeout | `07_Closing/03_Project_or_Phase_Closeout` |
+| **PMO-07.03** | Project or Phase Closeout Report | `07_Closing/03_Project_or_Phase_Closeout` |
 | **PMO-07.04** | Transition to Operations Checklist | `07_Closing/04_Transition_to_Operations_Checklist` |
 

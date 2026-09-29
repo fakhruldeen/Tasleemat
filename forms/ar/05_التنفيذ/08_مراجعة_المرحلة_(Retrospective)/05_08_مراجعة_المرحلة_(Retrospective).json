@@ -1,6 +1,6 @@
 {
     "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج مراجعة المرحلة (Retrospective) هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
-    "form_name": "مراجعة المرحلة (Retrospective)",
+    "form_name": "تقرير مراجعة المرحلة (Retrospective)",
     "document_reference": "PMO-05.08",
     "project_title": "",
     "date_prepared": "",

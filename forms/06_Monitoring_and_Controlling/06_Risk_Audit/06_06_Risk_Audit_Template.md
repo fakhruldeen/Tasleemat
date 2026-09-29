@@ -8,7 +8,7 @@ Section Instructions:
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
-<h1 align="center">RISK AUDIT</h1>
+<h1 align="center">RISK AUDIT REPORT</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
 | :--- | :--- | :--- |  
@@ -40,6 +40,6 @@ Section Instructions:
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> RISK AUDIT | <strong>Ref:</strong> PMO-06.06 <br>
+  <strong>Template:</strong> RISK AUDIT REPORT | <strong>Ref:</strong> PMO-06.06 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
