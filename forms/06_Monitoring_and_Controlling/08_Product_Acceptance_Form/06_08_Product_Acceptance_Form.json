@@ -1,8 +1,63 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Product Acceptance Form template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Product Acceptance Form",
+    "_llm_instructions": "Fill out 'project_title' and 'date_prepared', and the 'value' property of each field, using the project context. Use 'label' to select the correct output language. Reference parameters.md for global project variables.",
+    "form_name": "PRODUCT ACCEPTANCE FORM",
     "document_reference": "PMO-06.08",
     "project_title": "",
     "date_prepared": "",
-    "fields": {}
+    "fields": {
+        "id": {
+            "section": "Product Acceptance Record",
+            "label": "ID",
+            "guidance": "Enter a unique requirement identifier from the requirements documentation.",
+            "value": ""
+        },
+        "requirement": {
+            "section": "Product Acceptance Record",
+            "label": "Requirement",
+            "guidance": "Enter the requirement description from the requirements documentation.",
+            "value": ""
+        },
+        "acceptance_criteria": {
+            "section": "Product Acceptance Record",
+            "label": "Acceptance Criteria",
+            "guidance": "Enter the criteria for acceptance, stated so they can be judged as met or not met.",
+            "value": ""
+        },
+        "validation_method": {
+            "section": "Product Acceptance Record",
+            "label": "Validation Method",
+            "guidance": "Describe the method of validating that the requirement meets the stakeholder's needs.",
+            "value": ""
+        },
+        "verification_method": {
+            "section": "Product Acceptance Record",
+            "label": "Verification Method",
+            "guidance": "Optional. Record the verification method used to prove that the deliverable meets the requirement. Adding this column turns the form into a product verification, validation, and acceptance form.",
+            "value": ""
+        },
+        "status": {
+            "section": "Product Acceptance Record",
+            "label": "Status",
+            "guidance": "Document whether the requirement or deliverable was accepted or not.",
+            "value": ""
+        },
+        "sign_off": {
+            "section": "Product Acceptance Record",
+            "label": "Sign-off",
+            "guidance": "Obtain the signature of the party accepting the product.",
+            "value": ""
+        },
+        "acceptance_date": {
+            "section": "Product Acceptance Record",
+            "label": "Acceptance Date",
+            "guidance": "Enter the date the product was accepted. This dates the acceptance for the project record and for the requirements traceability matrix.",
+            "value": ""
+        },
+        "comments": {
+            "section": "Product Acceptance Record",
+            "label": "Comments",
+            "guidance": "Add any comments relevant to the acceptance, such as conditions attached to the acceptance, or items deferred to a later acceptance.",
+            "value": ""
+        }
+    }
 }

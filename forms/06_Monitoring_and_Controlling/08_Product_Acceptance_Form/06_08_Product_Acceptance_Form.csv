@@ -1,1 +1,10 @@
-Field,Guidance,LLM_Generated_Value
+Section,Field,Guidance,LLM_Generated_Value
+Product Acceptance Record,ID,Enter a unique requirement identifier from the requirements documentation.,
+Product Acceptance Record,Requirement,Enter the requirement description from the requirements documentation.,
+Product Acceptance Record,Acceptance Criteria,"Enter the criteria for acceptance, stated so they can be judged as met or not met.",
+Product Acceptance Record,Validation Method,Describe the method of validating that the requirement meets the stakeholder's needs.,
+Product Acceptance Record,Verification Method,"Optional. Record the verification method used to prove that the deliverable meets the requirement. Adding this column turns the form into a product verification, validation, and acceptance form.",
+Product Acceptance Record,Status,Document whether the requirement or deliverable was accepted or not.,
+Product Acceptance Record,Sign-off,Obtain the signature of the party accepting the product.,
+Product Acceptance Record,Acceptance Date,Enter the date the product was accepted. This dates the acceptance for the project record and for the requirements traceability matrix.,
+Product Acceptance Record,Comments,"Add any comments relevant to the acceptance, such as conditions attached to the acceptance, or items deferred to a later acceptance.",
