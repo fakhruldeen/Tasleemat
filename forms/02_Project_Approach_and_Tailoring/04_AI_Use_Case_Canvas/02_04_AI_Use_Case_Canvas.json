@@ -1,29 +1,171 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this AI USE CASE CANVAS template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "AI USE CASE CANVAS",
-    "document_reference": "PMO-02.04",
-    "project_title": "",
-    "date_prepared": "",
-    "fields": {
-        "Problem Statement": {
-            "guidance": "The specific problem the AI will solve.",
-            "value": ""
-        },
-        "AI Pattern/Solution": {
-            "guidance": "The type of AI model or approach (e.g., generative, predictive).",
-            "value": ""
-        },
-        "Data Sources": {
-            "guidance": "Where the data will come from.",
-            "value": ""
-        },
-        "Value Proposition": {
-            "guidance": "The expected ROI or value delivery.",
-            "value": ""
-        },
-        "Key Risks": {
-            "guidance": "Major risks associated with this specific use case.",
-            "value": ""
-        }
+  "_llm_instructions": "Fill out the 'project_title' and 'date_prepared' properties, and the 'value' property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Name the model version, the group affected, and the threshold that triggers action, rather than recording a category; a governance plan that says 'encrypted', 'minimised' and 'monitored' describes an intention and not a system, and the difference only becomes visible when something goes wrong and no one can say what was in force.",
+  "form_name": "AI GOVERNANCE PLAN",
+  "document_reference": "PMO-02.02",
+  "project_title": "",
+  "date_prepared": "",
+  "fields": {
+    "f01_Use_Case_Name": {
+      "section": "Use Case Identification",
+      "label": "Use Case Name",
+      "guidance": "What this use case is called, and where it sits in the portfolio. Naming it makes it possible to say that a later system is the same use case grown, which is usually the difference between a second business case and a repeat of the first.",
+      "value": ""
+    },
+    "f02_Business_Owner": {
+      "section": "Use Case Identification",
+      "label": "Business Owner",
+      "guidance": "The person accountable for the outcome, who must be able to say what the system is for without reference to the model. An owner who describes the technology has not been identified.",
+      "value": ""
+    },
+    "f03_Problem_Statement": {
+      "section": "Use Case Identification",
+      "label": "Problem Statement",
+      "guidance": "The specific problem, in the words of the person who has it, with the cost of leaving it unsolved. \"Improve efficiency\" is a goal; \"a specialist spends forty minutes a day reconciling three spreadsheets\" is a problem that can be sized and later checked.",
+      "value": ""
+    },
+    "f04_Affected_Population": {
+      "section": "Use Case Identification",
+      "label": "Affected Population",
+      "guidance": "Who experiences the problem, how many, and how often. The population is what converts an annoyance into a cost, and it is also the population the system will act upon.",
+      "value": ""
+    },
+    "f05_Current_Workaround": {
+      "section": "Use Case Identification",
+      "label": "Current Workaround",
+      "guidance": "What people do today, and what it costs them. A workaround with no stated cost cannot be beaten, so the baseline here is what any proposal is measured against.",
+      "value": ""
+    },
+    "f06_AI_Pattern": {
+      "section": "Proposed Solution",
+      "label": "AI Pattern",
+      "guidance": "The class of approach, and what makes it fit this problem rather than a neighbouring one. Classification, ranking, generation, forecasting and anomaly detection fail differently, and naming the pattern is what lets the failure modes be anticipated.",
+      "value": ""
+    },
+    "f07_Solution_Description": {
+      "section": "Proposed Solution",
+      "label": "Solution Description",
+      "guidance": "What the system does, in one paragraph a non-specialist can check. If the description requires the model architecture to be understood, the description is not yet a description.",
+      "value": ""
+    },
+    "f08_Human_Role": {
+      "section": "Proposed Solution",
+      "label": "Human Role",
+      "guidance": "What a person still does, and at which points they can stop the system. A system described as assisting usually replaces something, and the thing replaced should be named so the change is visible to those affected.",
+      "value": ""
+    },
+    "f09_Scope_Boundary": {
+      "section": "Proposed Solution",
+      "label": "Scope Boundary",
+      "guidance": "What this use case explicitly does not include. Scope stated only as a positive is unbounded, and an unbounded use case absorbs its neighbours' costs.",
+      "value": ""
+    },
+    "f10_Assumptions": {
+      "section": "Proposed Solution",
+      "label": "Assumptions",
+      "guidance": "What must be true for the solution to work, and what happens if each is not. Assumptions recorded after the build are records of what was believed, not of what was assumed.",
+      "value": ""
+    },
+    "f11_Data_Sources": {
+      "section": "Data",
+      "label": "Data Sources",
+      "guidance": "Where each input comes from, as a named system or collection with an owner. A source named only as \"historical data\" cannot be checked for permission, and permission is the first thing that blocks.",
+      "value": ""
+    },
+    "f12_Data_Category_and_Volume": {
+      "section": "Data",
+      "label": "Data Category and Volume",
+      "guidance": "What kind of data, at what volume and frequency. Frequency is the field most often omitted and the one that determines whether the system is retrained, refreshed or left to drift.",
+      "value": ""
+    },
+    "f13_Data_Quality_Status": {
+      "section": "Data",
+      "label": "Data Quality Status",
+      "guidance": "What is known about completeness, consistency and timeliness, and what has not been checked. Recording what was not checked is as useful as recording what was, because it bounds the confidence of the estimate.",
+      "value": ""
+    },
+    "f14_Labelling_Requirement": {
+      "section": "Data",
+      "label": "Labelling Requirement",
+      "guidance": "Whether labelled examples exist, who will produce them, and at what cost. This is usually the largest single line in the business case, and it is usually absent from it.",
+      "value": ""
+    },
+    "f15_Permitted_Use_and_Access": {
+      "section": "Data",
+      "label": "Permitted Use and Access",
+      "guidance": "What the data may be used for within this use case, and who approves it. Where the data cannot be used for model training, the shape of the solution changes, and that is better known before than after.",
+      "value": ""
+    },
+    "f16_Value_Proposition": {
+      "section": "Value and Cost",
+      "label": "Value Proposition",
+      "guidance": "What changes for whom, expressed as a change in the process rather than a return figure. A return calculated before the operating cost is a number that survives no review.",
+      "value": ""
+    },
+    "f17_Value_Measurement_Method": {
+      "section": "Value and Cost",
+      "label": "Value Measurement Method",
+      "guidance": "How the value will be measured, against what baseline, and by whom. Value stated without a baseline is a claim, and the baseline is usually already recorded in the current-workaround cost above.",
+      "value": ""
+    },
+    "f18_Beneficiaries": {
+      "section": "Value and Cost",
+      "label": "Beneficiaries",
+      "guidance": "Who gains, and who bears the cost of the change. These are rarely the same people, and the form is the place where the second group becomes visible.",
+      "value": ""
+    },
+    "f19_Build_Cost": {
+      "section": "Value and Cost",
+      "label": "Build Cost",
+      "guidance": "What it will cost to build, and what is included. The cost that is excluded is the operating cost below, and stating the exclusion is what keeps the total honest.",
+      "value": ""
+    },
+    "f20_Operating_Cost": {
+      "section": "Value and Cost",
+      "label": "Operating Cost",
+      "guidance": "What it will cost to run per unit of work, and at what volume. Cost per unit rather than total, because the total scales with volume and the viability question is asked per unit.",
+      "value": ""
+    },
+    "f21_Value_Realisation_Condition": {
+      "section": "Value and Cost",
+      "label": "Value Realisation Condition",
+      "guidance": "What must be true for the value to be realised, as distinct from for the system to be built. Most systems are built successfully and deliver nothing, and the difference is nearly always one of these conditions.",
+      "value": ""
+    },
+    "f22_Key_Risks": {
+      "section": "Risks, Controls and Governance Route",
+      "label": "Key Risks",
+      "guidance": "The risks specific to this use case, ranked, with the consequence if each materialises. A generic risk register applied here records that data may be biased without saying for whom or how it would be detected.",
+      "value": ""
+    },
+    "f23_Risk_Controls": {
+      "section": "Risks, Controls and Governance Route",
+      "label": "Risk Controls",
+      "guidance": "What is in place for each risk, and what it does not cover. The second half is the useful half, and a control that covers everything is a control that has been described rather than designed.",
+      "value": ""
+    },
+    "f24_Feasibility_Assessment": {
+      "section": "Risks, Controls and Governance Route",
+      "label": "Feasibility Assessment",
+      "guidance": "Whether this is technically feasible, at what maturity, and what is unproven. A feasibility statement that does not say which part is unproven is a statement that all of it is proven.",
+      "value": ""
+    },
+    "f25_Governance_Route": {
+      "section": "Risks, Controls and Governance Route",
+      "label": "Governance Route",
+      "guidance": "Which governance artefacts this use case must pass through, and in what order. The order is the content: privacy, then fairness, then approval, because a system approved before its data is assessed cannot be un-approved.",
+      "value": ""
+    },
+    "f26_Kill_Criteria": {
+      "section": "Risks, Controls and Governance Route",
+      "label": "Kill Criteria",
+      "guidance": "What result would cause this use case to be stopped. A use case with no kill criteria is a commitment, and a commitment entered without an exit condition is the failure mode this field exists to prevent.",
+      "value": ""
+    },
+    "f27_Related_Artefacts": {
+      "section": "Risks, Controls and Governance Route",
+      "label": "Related Artefacts",
+      "guidance": "The business case, AI governance plan, model card and privacy assessment for this use case, so that a reader holding the canvas can find the decisions that depend on it.",
+      "value": ""
     }
+  }
 }
