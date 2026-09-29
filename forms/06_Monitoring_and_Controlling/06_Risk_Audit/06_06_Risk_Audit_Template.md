@@ -35,25 +35,27 @@ Section Instructions:
 
 ## 1. Audit Information
 <!-- Define the boundaries of this audit so a reader knows exactly what period and what
-artifacts were examined. The reference documents should be the risk management plan,
-the risk register, and the risk report, as the audit is aligned with those three.
-Use a date range for the period covered, and state whether the audit covers the whole
-project or only a phase or control account. For the audit method, record how the audit
-was performed (for example document review, interviews with the risk owner and project
-manager, or sampling of risk register entries). -->
+artifacts were examined. Use a date range for the period covered, and state whether the audit
+covers the whole project or only a phase or control account. Record how the audit was
+performed, for example document review, interviews with the risk owner and project manager,
+or sampling of risk register entries.
+- **Audit Scope:** what this audit covers - the whole project, a specific phase, or a defined
+  subset of risks.
+- **Period Covered:** the date range the audit examines, for example 2026-01-01 to
+  2026-03-31.
+- **Level of Analysis:** project level, control account, or work package level.
+- **Reference Documents Reviewed:** the risk management plan, the risk register, and the risk
+  report, with their versions or dates.
+- **Audit Method:** how the audit was performed, for example document review, interviews, or
+  sampling. -->
 
 | Field | Entry |
 | :--- | :--- |
 | **Audit Scope** | [ Add details... ] |
-<!-- What this audit covers: the whole project, a specific phase, or a defined subset of risks. -->
 | **Period Covered** | [ Add details... ] |
-<!-- The date range the audit examines, for example 2026-01-01 to 2026-03-31. -->
 | **Level of Analysis** | [ Add details... ] |
-<!-- Project level, control account, or work package level. -->
 | **Reference Documents Reviewed** | [ Add details... ] |
-<!-- List the risk management plan, the risk register, and the risk report, with their versions or dates. -->
 | **Audit Method** | [ Add details... ] |
-<!-- How the audit was performed, for example document review, interviews, or sampling. -->
 
 ---
 
@@ -65,8 +67,6 @@ Comment column to judge retrospectively whether the event could have been forese
 identified early enough, was its probability and impact assessed realistically, and was
 there a cheaper or faster response available. One row per risk event. -->
 
-| Risk Event | Cause | Response Implemented | Comment |
-| :--- | :--- | :--- | :--- |
 <!--
 - Risk Event: the event as recorded in the risk register, by ID and description.
 - Cause: the root cause recorded in the risk register.
@@ -74,6 +74,8 @@ there a cheaper or faster response available. One row per risk event. -->
 - Comment: whether the event could have been foreseen, and whether a more effective
   response was available.
 -->
+| Risk Event | Cause | Response Implemented | Comment |
+| :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -89,8 +91,6 @@ that response was actually successful. Actions to Improve captures what should c
 the response for future risks - a different strategy, an earlier trigger, more reserve, or
 a better owner. One row per risk response. -->
 
-| Risk Event | Response | Successful? | Actions to Improve |
-| :--- | :--- | :--- | :--- |
 <!--
 - Risk Event: the event the response was aimed at, by risk ID from the register.
 - Response: the planned response as recorded in the risk register.
@@ -98,6 +98,8 @@ a better owner. One row per risk response. -->
   justification.
 - Actions to Improve: opportunities for improvement in how this response was handled.
 -->
+| Risk Event | Response | Successful? | Actions to Improve |
+| :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -113,12 +115,12 @@ the Observation column - for example a process performed but not documented, or 
 informally. Plan Risk Management is assessed once; the remaining five rows are the recurring
 processes run throughout the project. -->
 
-| Risk Management Process | Followed as Planned? | Observation |
-| :--- | :--- | :--- |
 <!--
 - Followed as Planned?: Yes / Partially / No, judged against the risk management plan.
 - Observation: what was done differently or was missing.
 -->
+| Risk Management Process | Followed as Planned? | Observation |
+| :--- | :--- | :--- |
 | **Plan Risk Management** | [ Add details... ] | [ Add details... ] |
 | **Identify Risks** | [ Add details... ] | [ Add details... ] |
 | **Perform Qualitative Risk Analysis** | [ Add details... ] | [ Add details... ] |
@@ -134,12 +136,12 @@ simulation, sensitivity analysis, or contingency reserve and fallback plan. Then
 whether it produced a useful result, and if not, why not. Plan Risk Management is excluded
 from this table because its outputs are the plan itself rather than a distinct technique. -->
 
-| Risk Management Process | Tools and Techniques Used | Successful? |
-| :--- | :--- | :--- |
 <!--
 - Tools and Techniques Used: name the specific techniques applied in this process.
 - Successful?: whether the technique produced a sound and usable result.
 -->
+| Risk Management Process | Tools and Techniques Used | Successful? |
+| :--- | :--- | :--- |
 | **Identify Risks** | [ Add details... ] | [ Add details... ] |
 | **Perform Qualitative Risk Analysis** | [ Add details... ] | [ Add details... ] |
 | **Perform Quantitative Risk Analysis** | [ Add details... ] | [ Add details... ] |
@@ -170,13 +172,13 @@ in the audit, not a general concern. The improvement plan states what will chang
 it, and what done looks like. The follow-up column carries the date corrective action is due
 and the action reference, so the item can be tracked after the audit closes. -->
 
-| Area for Improvement | Improvement Plan | Follow-up Date / Corrective Action |
-| :--- | :--- | :--- |
 <!--
 - Area for Improvement: the specific weakness identified during the audit.
 - Improvement Plan: what will change, who owns it, and the expected result.
 - Follow-up Date / Corrective Action: the due date and the corrective action reference.
 -->
+| Area for Improvement | Improvement Plan | Follow-up Date / Corrective Action |
+| :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
