@@ -1,4 +1,4 @@
-# EARNED VALUE ANALYSIS - GUIDANCE
+# EARNED VALUE ANALYSIS REPORT - GUIDANCE
 This document provides descriptions for each element in the Earned Value Analysis.
 
 > **Reporting periods:** Every metric in sections 1-4 is reported across three period

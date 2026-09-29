@@ -1,12 +1,12 @@
 ---
 lang: en
-Form: EARNED VALUE ANALYSIS (Instructions)
+Form: EARNED VALUE ANALYSIS REPORT (Instructions)
 ---
 
-# EARNED VALUE ANALYSIS - LLM GENERATION GUIDE
+# EARNED VALUE ANALYSIS REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `EARNED VALUE ANALYSIS`.
+> This document serves as the detailed instruction set for generating the `EARNED VALUE ANALYSIS REPORT`.
 
 > **Context & Definition:**
 > Earned value analysis shows specific mathematical metrics that are designed to reflect the health of the project by integrating scope, schedule, and cost information. It is used to forecast total cost at completion and required efficiency.

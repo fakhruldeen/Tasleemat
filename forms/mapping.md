@@ -113,7 +113,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-06.02** | Team Member Status Report | `06_Monitoring_and_Controlling/02_Team_Member_Status_Report` |
 | **PMO-06.03** | Contractor Status Report | `06_Monitoring_and_Controlling/03_Contractor_Status_Report` |
 | **PMO-06.04** | Variance Analysis | `06_Monitoring_and_Controlling/04_Variance_Analysis` |
-| **PMO-06.05** | Earned Value Analysis | `06_Monitoring_and_Controlling/05_Earned_Value_Analysis` |
+| **PMO-06.05** | Earned Value Analysis Report | `06_Monitoring_and_Controlling/05_Earned_Value_Analysis` |
 | **PMO-06.06** | Risk Audit | `06_Monitoring_and_Controlling/06_Risk_Audit` |
 | **PMO-06.07** | Procurement Audit | `06_Monitoring_and_Controlling/07_Procurement_Audit` |
 | **PMO-06.08** | Product Acceptance Form | `06_Monitoring_and_Controlling/08_Product_Acceptance_Form` |

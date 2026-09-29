@@ -12,7 +12,7 @@ Section-by-Section Instructions:
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
-<h1 align="center">EARNED VALUE ANALYSIS</h1>
+<h1 align="center">EARNED VALUE ANALYSIS REPORT</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Reporting Period:** [ Reporting Period Start Date ] to [ Reporting Period End Date ] |
 | :--- | :--- |
@@ -98,6 +98,6 @@ Section-by-Section Instructions:
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> EARNED VALUE ANALYSIS | <strong>Ref:</strong> PMO-06.05 <br>
+  <strong>Template:</strong> EARNED VALUE ANALYSIS REPORT | <strong>Ref:</strong> PMO-06.05 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
