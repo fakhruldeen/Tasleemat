@@ -36,7 +36,7 @@ Form: RETROSPECTIVE (Instructions)
 
 ### Date
 
-**Instruction:** The date the retrospective was held.
+**Instruction:** The date the retrospective was held. Record it against the sprint number on the same line, because a retrospective carrying only a date cannot be matched to the one before it, and the set becomes a list of dates with no context.
 
 **Generated value:** [ Add details... ]
 

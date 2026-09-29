@@ -85,7 +85,7 @@ must populate the following sections based on the project context (ensure
 
 *   **Sprint or Iteration:** The sprint or iteration this retrospective covers. A retrospective that does not say which sprint it belongs to cannot be compared with the previous one, and an uncountable sequence of retrospectives is the same as none.
 *   **Team Members Present:** Who took part. Someone who is not in the room cannot act on what was agreed, so name the absent members and how the outcome will reach them.
-*   **Date:** The date the retrospective was held.
+*   **Date:** The date the retrospective was held. Record it against the sprint number on the same line, because a retrospective carrying only a date cannot be matched to the one before it, and the set becomes a list of dates with no context.
 *   **Start:** Actions and behaviors the team will begin to implement. Be specific: "hold a joint review with QA twice a week" can be started, "communicate better" cannot.
 *   **Stop:** Actions or behaviors the team will cease doing. If the team is not willing to actually stop it, recording it here only builds a list the team learns to distrust.
 *   **Keep:** Practices the team should continue with. Note why, because the reason is what a future team will need when the person who introduced the practice has moved on.

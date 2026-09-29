@@ -171,13 +171,37 @@ def normalise(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().lower()
 
 
+def strip_front_matter(text: str) -> str:
+    """Remove a leading Jekyll YAML front-matter block."""
+    if not text.startswith("---"):
+        return text
+    end = text.find("\n---", 3)
+    return text[end + 4:] if end != -1 else text
+
+
+def strip_code_fences(text: str) -> str:
+    """Remove fenced code blocks, whose content is often copied verbatim."""
+    out, in_fence = [], False
+    for line in text.splitlines():
+        if line.lstrip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if not in_fence:
+            out.append(line)
+    return "\n".join(out)
+
+
 def latin_tokens(text: str) -> list[str]:
     """Latin words in text that indicate untranslated prose.
 
-    Filename components, paths and HTML tags are removed first, then known
-    acronyms and schema vocabulary are dropped.
+    Front matter, fenced code, filename components, paths and HTML tags are
+    removed first, then known acronyms and schema vocabulary are dropped.
+    Jekyll front matter carries fixed configuration keys (lang, layout,
+    nav_order) that are never translated.
     """
-    cleaned = FILENAME_COMPONENT.sub(" ", text)
+    cleaned = strip_front_matter(text)
+    cleaned = strip_code_fences(cleaned)
+    cleaned = FILENAME_COMPONENT.sub(" ", cleaned)
     cleaned = PATH_LIKE.sub(" ", cleaned)
     cleaned = re.sub(r"<[^>]+>", " ", cleaned)
     return [t for t in re.findall(r"[A-Za-z]{2,}", cleaned)
@@ -573,6 +597,36 @@ def selftest() -> int:
         print(f"  note   reference form reports: {baseline}")
     else:
         print("  ok     reference form is clean (no false positives)")
+
+    # Front matter is fixed configuration and must not read as untranslated
+    # prose, while genuine prose in the same file still must.
+    AR_CONFIG = ("---\nlang: ar\nlayout: default\nnav_order: 1\n"
+                 "---\n\n<div dir=\"rtl\"></div>\n")
+
+    form = load_form(ROOT.joinpath(*REFERENCE))
+    form["rtl"] = True
+    form["template_text"] = AR_CONFIG
+    form["prompt_text"] = ""
+    form["guide_text"] = ""
+    form["json_text"] = ""
+    form["csv_text"] = ""
+    found: list[str] = []
+    check_script_purity(form, found)
+    if found:
+        print(f"  FAIL   front matter treated as untranslated: {found}")
+        failures += 1
+    else:
+        print("  ok     Jekyll front matter is not flagged as untranslated")
+
+    # ...and the same file must still be flagged when real prose is present.
+    form["template_text"] += "\n\nThis is untranslated English prose.\n"
+    found = []
+    check_script_purity(form, found)
+    if found:
+        print("  ok     untranslated prose beside front matter is still flagged")
+    else:
+        print("  FAIL   untranslated prose beside front matter went unnoticed")
+        failures += 1
     return failures
 
 
