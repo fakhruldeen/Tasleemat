@@ -1,9 +1,8 @@
-<div dir="rtl" style="font-family: Arial, sans-serif;">
 <!-- تعليمات للنموذج الذكي (LLM): قم بملء المساحات الفارغة [ أضف التفاصيل... ] بناءً على سياق المشروع -->
 
-<h3 align="left">{{اسم_الشركة}}</h3>
-<h2 align="left">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
-<h1 align="center">دراسة الجدوى (BUSINESS CASE)</h1>
+<h3 dir="rtl" align="left">{{اسم_الشركة}}</h3>
+<h2 dir="rtl" align="left">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
+<h1 dir="rtl" align="center">دراسة الجدوى (BUSINESS CASE)</h1>
 
 **تاريخ الإعداد:** {{التاريخ_الحالي}}  
 **مدير المشروع:** {{اسم_مدير_المشروع}}  
@@ -49,9 +48,7 @@
 
 ---
 
-<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="rtl" align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
   <strong>النموذج:</strong> دراسة الجدوى (BUSINESS CASE) | <strong>المرجع:</strong> PMO-01.01 <br>
   <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
-</div>
-
 </div>

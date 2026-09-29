@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
@@ -9,9 +8,9 @@ Section Instructions:
 *   **Key Risks:** Major risks associated with this specific use case.
 -->
 
-<h3 align="right">{{Company_Name}}</h3>
-<h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
-<h1 align="center">AI USE CASE CANVAS</h1>
+<h3 dir="ltr" align="right">{{Company_Name}}</h3>
+<h2 dir="ltr" align="right">{{Project_Name}} - {{Project_ID}}</h2>
+<h1 dir="ltr" align="center">AI USE CASE CANVAS</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
 | :--- | :--- | :--- |  
@@ -63,9 +62,7 @@ Section Instructions:
 
 ---
 
-<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
   <strong>Template:</strong> AI USE CASE CANVAS | <strong>Ref:</strong> PMO-02.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
-</div>
-
 </div>

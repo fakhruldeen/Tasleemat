@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
@@ -11,9 +10,9 @@ Section Instructions:
 *   **Areas for improvement:** Describe any areas that should be improved with the procurement process. Include information that should be incorporated into policies, procedures, or processes. Include information on lessons learned.
 -->
 
-<h3 align="right">{{Company_Name}}</h3>
-<h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
-<h1 align="center">PROCUREMENT AUDIT REPORT</h1>
+<h3 dir="ltr" align="right">{{Company_Name}}</h3>
+<h2 dir="ltr" align="right">{{Project_Name}} - {{Project_ID}}</h2>
+<h1 dir="ltr" align="center">PROCUREMENT AUDIT REPORT</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
 | :--- | :--- | :--- |  
@@ -89,9 +88,7 @@ Section Instructions:
 
 ---
 
-<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
   <strong>Template:</strong> PROCUREMENT AUDIT REPORT | <strong>Ref:</strong> PMO-06.07 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
-</div>
-
 </div>

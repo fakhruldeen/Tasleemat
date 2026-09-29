@@ -30,9 +30,9 @@ import sys
 OPEN_TAG = re.compile(r"^<([a-zA-Z][a-zA-Z0-9-]*)(\s|>|/)")
 
 
-def spanning_tag(path):
-    """Return the tag name if line 1 opens an element it does not also close."""
-    lines = io.open(path, encoding="utf-8").read().split("\n")
+def spanning_tag_of_text(text):
+    """Return the tag name if the text opens an element it does not also close."""
+    lines = text.split("\n")
     if not lines:
         return None
     first = lines[0].strip()
@@ -47,6 +47,11 @@ def spanning_tag(path):
     if first.rstrip().endswith("/>"):
         return None
     return tag
+
+
+def spanning_tag(path):
+    """Return the tag name if line 1 opens an element it does not also close."""
+    return spanning_tag_of_text(io.open(path, encoding="utf-8").read())
 
 
 def main(root):
