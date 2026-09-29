@@ -3,16 +3,16 @@ lang: en
 Form: LESSONS LEARNED SUMMARY (Instructions)
 ---
 
-# LESSONS LEARNED SUMMARY - دليل التوليد بالنموذج الذكي
+# LESSONS LEARNED SUMMARY - LLM GENERATION GUIDE
 
-> **تعليمات النظام:**
-> يمثل هذا المستند مجموعة التعليمات التفصيلية لتوليد `LESSONS LEARNED SUMMARY`. وعند طلب تعبئة هذا النموذج، استخدم الإرشادات المقدمة لكل قسم أدناه لتوليد المحتوى المطلوب بدقة. راجع `parameters.md` للتحقق من المتغيرات العامة للمشروع.
+> **System Prompt / Instructions:**
+> This document serves as the detailed instruction set for generating the `LESSONS LEARNED SUMMARY`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
-> **السياق والتعريف:**
-> تُجمع الدروس المستفادة طوال المشروع أو على فترات محددة. ويُعد هذا الملخص تجميعًا وتنظيمًا لما نجح في المشروع وينبغي نقله إلى فرق أخرى، وتحديد ما ينبغي تحسينه في المشاريع المستقبلية. وهو يدعم العملية 4.7 إغلاق المشروع أو المرحلة.
+> **Context & Definition:**
+> Lessons learned are compiled throughout the project or at specific intervals. This summary organizes what the project team did that worked very well and should be passed along to other project teams, and identifies what should be improved for future project work. It supports process 4.7 Close Project or Phase.
 
-> **المحاذاة:**
-> يجب أن يتسق هذا الملخص مع: Issue register، Risk register، Decision log، Lessons learned register، Retrospectives.
+> **Alignment:**
+> This summary must be consistent with: Issue register, Risk register, Decision log, Lessons learned register, Retrospectives.
 
 ---
 
@@ -20,7 +20,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Requirements Definition and Management / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in defining and managing requirements. Name the practice, not the meeting where it was discussed.
+**Instruction:** Practices or incidents that were effective in defining and managing requirements. Name the practice, not the meeting where it was discussed.
 
 **Generated value:** [ Add details... ]
 
@@ -28,7 +28,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Requirements Definition and Management / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in defining and managing requirements, and what the improvement should be.
+**Instruction:** Practices or incidents that can be improved in defining and managing requirements, and what the improvement should be.
 
 **Generated value:** [ Add details... ]
 
@@ -36,7 +36,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Scope Definition and Management / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in defining and managing scope. Where baselines were held, say so.
+**Instruction:** Practices or incidents that were effective in defining and managing scope. Where baselines were held, say so.
 
 **Generated value:** [ Add details... ]
 
@@ -44,7 +44,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Scope Definition and Management / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in defining and managing scope.
+**Instruction:** Practices or incidents that can be improved in defining and managing scope.
 
 **Generated value:** [ Add details... ]
 
@@ -52,7 +52,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Schedule Development and Control / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in developing and controlling the schedule.
+**Instruction:** Practices or incidents that were effective in developing and controlling the schedule.
 
 **Generated value:** [ Add details... ]
 
@@ -60,7 +60,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Schedule Development and Control / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in developing and controlling the schedule.
+**Instruction:** Practices or incidents that can be improved in developing and controlling the schedule.
 
 **Generated value:** [ Add details... ]
 
@@ -68,7 +68,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Cost Estimating and Control / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in developing estimates and controlling costs.
+**Instruction:** Practices or incidents that were effective in developing estimates and controlling costs.
 
 **Generated value:** [ Add details... ]
 
@@ -76,7 +76,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Cost Estimating and Control / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in developing estimates and controlling costs.
+**Instruction:** Practices or incidents that can be improved in developing estimates and controlling costs.
 
 **Generated value:** [ Add details... ]
 
@@ -84,7 +84,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Quality Planning and Control / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in planning, managing, and controlling quality.
+**Instruction:** Practices or incidents that were effective in planning, managing, and controlling quality.
 
 **Generated value:** [ Add details... ]
 
@@ -92,7 +92,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Quality Planning and Control / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in planning, managing, and controlling quality. Specific defects are recorded in the quality defects section below.
+**Instruction:** Practices or incidents that can be improved in planning, managing, and controlling quality. Specific defects are recorded in the quality defects section below.
 
 **Generated value:** [ Add details... ]
 
@@ -100,7 +100,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Physical Resource Planning and Control / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in planning, acquiring, and managing physical resources.
+**Instruction:** Practices or incidents that were effective in planning, acquiring, and managing physical resources.
 
 **Generated value:** [ Add details... ]
 
@@ -108,7 +108,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Physical Resource Planning and Control / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in planning, acquiring, and managing physical resources.
+**Instruction:** Practices or incidents that can be improved in planning, acquiring, and managing physical resources.
 
 **Generated value:** [ Add details... ]
 
@@ -116,7 +116,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Team Planning, Development, and Performance / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in working with team members and developing and managing the team.
+**Instruction:** Practices or incidents that were effective in working with team members and developing and managing the team.
 
 **Generated value:** [ Add details... ]
 
@@ -124,7 +124,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Team Planning, Development, and Performance / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in working with team members and developing and managing the team.
+**Instruction:** Practices or incidents that can be improved in working with team members and developing and managing the team.
 
 **Generated value:** [ Add details... ]
 
@@ -132,7 +132,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Communications Management / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in planning and distributing information.
+**Instruction:** Practices or incidents that were effective in planning and distributing information.
 
 **Generated value:** [ Add details... ]
 
@@ -140,7 +140,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Communications Management / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in planning and distributing information.
+**Instruction:** Practices or incidents that can be improved in planning and distributing information.
 
 **Generated value:** [ Add details... ]
 
@@ -148,7 +148,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Reporting / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in reporting project performance.
+**Instruction:** Practices or incidents that were effective in reporting project performance.
 
 **Generated value:** [ Add details... ]
 
@@ -156,7 +156,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Reporting / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in reporting project performance.
+**Instruction:** Practices or incidents that can be improved in reporting project performance.
 
 **Generated value:** [ Add details... ]
 
@@ -164,7 +164,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Risk Management / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in the risk management process. Specific risks are recorded in the risks and issues section below.
+**Instruction:** Practices or incidents that were effective in the risk management process. Specific risks are recorded in the risks and issues section below.
 
 **Generated value:** [ Add details... ]
 
@@ -172,7 +172,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Risk Management / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in the risk management process. Specific risks are recorded in the risks and issues section below.
+**Instruction:** Practices or incidents that can be improved in the risk management process. Specific risks are recorded in the risks and issues section below.
 
 **Generated value:** [ Add details... ]
 
@@ -180,7 +180,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Procurement Planning and Management / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in planning, conducting, and administering contracts.
+**Instruction:** Practices or incidents that were effective in planning, conducting, and administering contracts.
 
 **Generated value:** [ Add details... ]
 
@@ -188,7 +188,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Procurement Planning and Management / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in planning, conducting, and administering contracts.
+**Instruction:** Practices or incidents that can be improved in planning, conducting, and administering contracts.
 
 **Generated value:** [ Add details... ]
 
@@ -196,7 +196,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Stakeholder Engagement / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in engaging stakeholders.
+**Instruction:** Practices or incidents that were effective in engaging stakeholders.
 
 **Generated value:** [ Add details... ]
 
@@ -204,7 +204,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Stakeholder Engagement / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in engaging stakeholders.
+**Instruction:** Practices or incidents that can be improved in engaging stakeholders.
 
 **Generated value:** [ Add details... ]
 
@@ -212,7 +212,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Process Improvement Information / What Worked Well
 
-**التعليمات:** Processes that were developed and should be continued on future projects.
+**Instruction:** Processes that were developed and should be continued on future projects.
 
 **Generated value:** [ Add details... ]
 
@@ -220,7 +220,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Process Improvement Information / What Can Be Improved
 
-**التعليمات:** Processes that should be changed or discontinued.
+**Instruction:** Processes that should be changed or discontinued.
 
 **Generated value:** [ Add details... ]
 
@@ -228,7 +228,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Product-Specific Information / What Worked Well
 
-**التعليمات:** Practices or incidents that were effective in delivering the specific product, service, or result.
+**Instruction:** Practices or incidents that were effective in delivering the specific product, service, or result.
 
 **Generated value:** [ Add details... ]
 
@@ -236,7 +236,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Product-Specific Information / What Can Be Improved
 
-**التعليمات:** Practices or incidents that can be improved in delivering the specific product, service, or result.
+**Instruction:** Practices or incidents that can be improved in delivering the specific product, service, or result.
 
 **Generated value:** [ Add details... ]
 
@@ -244,7 +244,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Other / What Worked Well
 
-**التعليمات:** Other practices or incidents that were effective, such as change control, configuration management, or integration management.
+**Instruction:** Other practices or incidents that were effective, such as change control, configuration management, or integration management.
 
 **Generated value:** [ Add details... ]
 
@@ -252,7 +252,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Other / What Can Be Improved
 
-**التعليمات:** Other practices or incidents that can be improved, such as change control, configuration management, or integration management.
+**Instruction:** Other practices or incidents that can be improved, such as change control, configuration management, or integration management.
 
 **Generated value:** [ Add details... ]
 
@@ -262,7 +262,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Risk or Issue
 
-**التعليمات:** Describe the risk or issue that occurred and should be considered to improve organizational learning.
+**Instruction:** Describe the risk or issue that occurred and should be considered to improve organizational learning.
 
 **Generated value:** [ Add details... ]
 
@@ -270,7 +270,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Response
 
-**التعليمات:** Describe the response that was taken and its effectiveness. Say plainly whether the response worked.
+**Instruction:** Describe the response that was taken and its effectiveness. Say plainly whether the response worked.
 
 **Generated value:** [ Add details... ]
 
@@ -278,7 +278,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Comments
 
-**التعليمات:** Provide any additional information needed to improve future project performance.
+**Instruction:** Provide any additional information needed to improve future project performance.
 
 **Generated value:** [ Add details... ]
 
@@ -288,7 +288,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Defect
 
-**التعليمات:** Describe the quality defect that should be considered to improve organizational effectiveness.
+**Instruction:** Describe the quality defect that should be considered to improve organizational effectiveness.
 
 **Generated value:** [ Add details... ]
 
@@ -296,7 +296,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Resolution
 
-**التعليمات:** Describe how the defect was resolved and whether the resolution held.
+**Instruction:** Describe how the defect was resolved and whether the resolution held.
 
 **Generated value:** [ Add details... ]
 
@@ -304,7 +304,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Comments
 
-**التعليمات:** Indicate what should be done to improve future project performance.
+**Instruction:** Indicate what should be done to improve future project performance.
 
 **Generated value:** [ Add details... ]
 
@@ -314,7 +314,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Vendor
 
-**التعليمات:** List the vendor or vendors concerned.
+**Instruction:** List the vendor or vendors concerned.
 
 **Generated value:** [ Add details... ]
 
@@ -322,7 +322,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Issue
 
-**التعليمات:** Describe any issues, claims, or disputes that occurred with this vendor.
+**Instruction:** Describe any issues, claims, or disputes that occurred with this vendor.
 
 **Generated value:** [ Add details... ]
 
@@ -330,7 +330,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Resolution
 
-**التعليمات:** Describe the outcome or resolution that was reached.
+**Instruction:** Describe the outcome or resolution that was reached.
 
 **Generated value:** [ Add details... ]
 
@@ -338,7 +338,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Comments
 
-**التعليمات:** Indicate what should be done to improve future vendor management performance.
+**Instruction:** Indicate what should be done to improve future vendor management performance.
 
 **Generated value:** [ Add details... ]
 
@@ -348,7 +348,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Entry
 
-**التعليمات:** Identify areas of exceptional performance that can be passed on to other teams. State what was done and what made it work.
+**Instruction:** Identify areas of exceptional performance that can be passed on to other teams. State what was done and what made it work.
 
 **Generated value:** [ Add details... ]
 
@@ -358,7 +358,7 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 
 ### Entry
 
-**التعليمات:** Identify areas that can be improved for future performance. State the improvement sought, not only the problem.
+**Instruction:** Identify areas that can be improved for future performance. State the improvement sought, not only the problem.
 
 **Generated value:** [ Add details... ]
 
