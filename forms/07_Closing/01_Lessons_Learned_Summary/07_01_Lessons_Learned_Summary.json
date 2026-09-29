@@ -1,108 +1,260 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this LESSONS LEARNED SUMMARY template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
     "form_name": "LESSONS LEARNED SUMMARY",
     "document_reference": "PMO-07.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project Performance</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "f01_Requirements_Definition_and_Management_W": {
+            "section": "Project Performance",
+            "label": "Requirements Definition and Management / What Worked Well",
+            "guidance": "Practices or incidents that were effective in defining and managing requirements. Name the practice, not the meeting where it was discussed.",
             "value": ""
         },
-        "List any practices or incidents that": {
-            "guidance": "were effective in defining and managing requirements. List any practices or incidents that can be improved in defining and managing requirements.",
+        "f02_Requirements_Definition_and_Management_W": {
+            "section": "Project Performance",
+            "label": "Requirements Definition and Management / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in defining and managing requirements, and what the improvement should be.",
             "value": ""
         },
-        "Scope definition and": {
-            "guidance": "management List any practices or incidents that were effective in defining and managing scope. List any practices or incidents that can be improved in defining and managing scope.",
+        "f03_Scope_Definition_and_Management_What_Wor": {
+            "section": "Project Performance",
+            "label": "Scope Definition and Management / What Worked Well",
+            "guidance": "Practices or incidents that were effective in defining and managing scope. Where baselines were held, say so.",
             "value": ""
         },
-        "Schedule development": {
-            "guidance": "and control List any practices or incidents that were effective in developing and controlling the schedule. List any practices or incidents that can be improved in developing and controlling the schedule.",
+        "f04_Scope_Definition_and_Management_What_Can": {
+            "section": "Project Performance",
+            "label": "Scope Definition and Management / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in defining and managing scope.",
             "value": ""
         },
-        "Cost estimating and": {
-            "guidance": "control List any practices or incidents that were effective in developing estimates and controlling costs. List any practices or incidents that can be improved in developing estimates and controlling costs.",
+        "f05_Schedule_Development_and_Control_What_Wo": {
+            "section": "Project Performance",
+            "label": "Schedule Development and Control / What Worked Well",
+            "guidance": "Practices or incidents that were effective in developing and controlling the schedule.",
             "value": ""
         },
-        "Quality planning and": {
-            "guidance": "control List any practices or incidents that were effective in planning, managing, and controlling quality. List any practices or incidents that can be improved in planning, managing, and controlling quality. Specific defects are addressed elsewhere.",
+        "f06_Schedule_Development_and_Control_What_Ca": {
+            "section": "Project Performance",
+            "label": "Schedule Development and Control / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in developing and controlling the schedule.",
             "value": ""
         },
-        "Physical resource planning and control": {
-            "guidance": "List any practices or incidents that were List any practices or incidents that can be effective in planning, acquiring, and manag- improved in planning, acquiring, and managing physical resources. ing physical resources. Team planning, develop- List any practices or incidents that were ment, and performance effective in working with team members and developing and managing the team. List any practices or incidents that can be improved in working with team members and developing and managing the team.",
+        "f07_Cost_Estimating_and_Control_What_Worked": {
+            "section": "Project Performance",
+            "label": "Cost Estimating and Control / What Worked Well",
+            "guidance": "Practices or incidents that were effective in developing estimates and controlling costs.",
             "value": ""
         },
-        "Communications": {
-            "guidance": "management List any practices or incidents that were effective in planning and distributing information. List any practices or incidents that can be improved in planning and distributing information.",
+        "f08_Cost_Estimating_and_Control_What_Can_Be": {
+            "section": "Project Performance",
+            "label": "Cost Estimating and Control / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in developing estimates and controlling costs.",
             "value": ""
         },
-        "Reporting": {
-            "guidance": "List any practices or incidents that were effective in reporting project performance. List any practices or incidents that can be improved in reporting project performance.",
+        "f09_Quality_Planning_and_Control_What_Worked": {
+            "section": "Project Performance",
+            "label": "Quality Planning and Control / What Worked Well",
+            "guidance": "Practices or incidents that were effective in planning, managing, and controlling quality.",
             "value": ""
         },
-        "Risk management": {
-            "guidance": "List any practices or incidents that were effective in the risk management process. Specific risks are addressed elsewhere. List any practices or incidents that can be improved in the risk management process. Specific risks are addressed elsewhere. (continued)",
+        "f10_Quality_Planning_and_Control_What_Can_Be": {
+            "section": "Project Performance",
+            "label": "Quality Planning and Control / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in planning, managing, and controlling quality. Specific defects are recorded in the quality defects section below.",
             "value": ""
         },
-        "Procurement planning": {
-            "guidance": "and management List any practices or incidents that were effective in planning, conducting, and administering contracts. List any practices or incidents that can be improved in planning, conducting, and administering contracts. Stakeholder engagement List any practices or incidents that were effective in engaging stakeholders. List any practices or incidents that can be improved in engaging stakeholders.",
+        "f11_Physical_Resource_Planning_and_Control_W": {
+            "section": "Project Performance",
+            "label": "Physical Resource Planning and Control / What Worked Well",
+            "guidance": "Practices or incidents that were effective in planning, acquiring, and managing physical resources.",
             "value": ""
         },
-        "Process improvement": {
-            "guidance": "information",
+        "f12_Physical_Resource_Planning_and_Control_W": {
+            "section": "Project Performance",
+            "label": "Physical Resource Planning and Control / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in planning, acquiring, and managing physical resources.",
             "value": ""
         },
-        "List any processes that were developed": {
-            "guidance": "that should be continued. List any processes that should be changed or discontinued.",
+        "f13_Team_Planning_Development_and_Performanc": {
+            "section": "Project Performance",
+            "label": "Team Planning, Development, and Performance / What Worked Well",
+            "guidance": "Practices or incidents that were effective in working with team members and developing and managing the team.",
             "value": ""
         },
-        "Product-specific": {
-            "guidance": "information List any practices or incidents that were effective in delivering the specific product, service, or result. List any practices or incidents that can be improved in delivering the specific product, service, or result.",
+        "f14_Team_Planning_Development_and_Performanc": {
+            "section": "Project Performance",
+            "label": "Team Planning, Development, and Performance / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in working with team members and developing and managing the team.",
             "value": ""
         },
-        "Other": {
-            "guidance": "List any other practices or incidents that were effective, such as change control, configuration management, etc. List any other practices or incidents that can be improved, such as change control, configuration management, etc.",
+        "f15_Communications_Management_What_Worked_We": {
+            "section": "Project Performance",
+            "label": "Communications Management / What Worked Well",
+            "guidance": "Practices or incidents that were effective in planning and distributing information.",
             "value": ""
         },
-        "Risks and issues</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "f16_Communications_Management_What_Can_Be_Im": {
+            "section": "Project Performance",
+            "label": "Communications Management / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in planning and distributing information.",
             "value": ""
         },
-        "Response": {
-            "guidance": "Describe the response and its effectiveness.",
+        "f17_Reporting_What_Worked_Well": {
+            "section": "Project Performance",
+            "label": "Reporting / What Worked Well",
+            "guidance": "Practices or incidents that were effective in reporting project performance.",
             "value": ""
         },
-        "Comments": {
+        "f18_Reporting_What_Can_Be_Improved": {
+            "section": "Project Performance",
+            "label": "Reporting / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in reporting project performance.",
+            "value": ""
+        },
+        "f19_Risk_Management_What_Worked_Well": {
+            "section": "Project Performance",
+            "label": "Risk Management / What Worked Well",
+            "guidance": "Practices or incidents that were effective in the risk management process. Specific risks are recorded in the risks and issues section below.",
+            "value": ""
+        },
+        "f20_Risk_Management_What_Can_Be_Improved": {
+            "section": "Project Performance",
+            "label": "Risk Management / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in the risk management process. Specific risks are recorded in the risks and issues section below.",
+            "value": ""
+        },
+        "f21_Procurement_Planning_and_Management_What": {
+            "section": "Project Performance",
+            "label": "Procurement Planning and Management / What Worked Well",
+            "guidance": "Practices or incidents that were effective in planning, conducting, and administering contracts.",
+            "value": ""
+        },
+        "f22_Procurement_Planning_and_Management_What": {
+            "section": "Project Performance",
+            "label": "Procurement Planning and Management / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in planning, conducting, and administering contracts.",
+            "value": ""
+        },
+        "f23_Stakeholder_Engagement_What_Worked_Well": {
+            "section": "Project Performance",
+            "label": "Stakeholder Engagement / What Worked Well",
+            "guidance": "Practices or incidents that were effective in engaging stakeholders.",
+            "value": ""
+        },
+        "f24_Stakeholder_Engagement_What_Can_Be_Impro": {
+            "section": "Project Performance",
+            "label": "Stakeholder Engagement / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in engaging stakeholders.",
+            "value": ""
+        },
+        "f25_Process_Improvement_Information_What_Wor": {
+            "section": "Project Performance",
+            "label": "Process Improvement Information / What Worked Well",
+            "guidance": "Processes that were developed and should be continued on future projects.",
+            "value": ""
+        },
+        "f26_Process_Improvement_Information_What_Can": {
+            "section": "Project Performance",
+            "label": "Process Improvement Information / What Can Be Improved",
+            "guidance": "Processes that should be changed or discontinued.",
+            "value": ""
+        },
+        "f27_Product_Specific_Information_What_Worked": {
+            "section": "Project Performance",
+            "label": "Product-Specific Information / What Worked Well",
+            "guidance": "Practices or incidents that were effective in delivering the specific product, service, or result.",
+            "value": ""
+        },
+        "f28_Product_Specific_Information_What_Can_Be": {
+            "section": "Project Performance",
+            "label": "Product-Specific Information / What Can Be Improved",
+            "guidance": "Practices or incidents that can be improved in delivering the specific product, service, or result.",
+            "value": ""
+        },
+        "f29_Other_What_Worked_Well": {
+            "section": "Project Performance",
+            "label": "Other / What Worked Well",
+            "guidance": "Other practices or incidents that were effective, such as change control, configuration management, or integration management.",
+            "value": ""
+        },
+        "f30_Other_What_Can_Be_Improved": {
+            "section": "Project Performance",
+            "label": "Other / What Can Be Improved",
+            "guidance": "Other practices or incidents that can be improved, such as change control, configuration management, or integration management.",
+            "value": ""
+        },
+        "f31_Risk_or_Issue": {
+            "section": "Risks and Issues",
+            "label": "Risk or Issue",
+            "guidance": "Describe the risk or issue that occurred and should be considered to improve organizational learning.",
+            "value": ""
+        },
+        "f32_Response": {
+            "section": "Risks and Issues",
+            "label": "Response",
+            "guidance": "Describe the response that was taken and its effectiveness. Say plainly whether the response worked.",
+            "value": ""
+        },
+        "f33_Comments": {
+            "section": "Risks and Issues",
+            "label": "Comments",
             "guidance": "Provide any additional information needed to improve future project performance.",
             "value": ""
         },
-        "Defect description</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "f34_Defect": {
+            "section": "Quality Defects",
+            "label": "Defect",
+            "guidance": "Describe the quality defect that should be considered to improve organizational effectiveness.",
             "value": ""
         },
-        "Resolution": {
-            "guidance": "Describe how the defects were resolved.",
+        "f35_Resolution": {
+            "section": "Quality Defects",
+            "label": "Resolution",
+            "guidance": "Describe how the defect was resolved and whether the resolution held.",
             "value": ""
         },
-        "Indicate what should be done to improve": {
-            "guidance": "future project performance.",
+        "f36_Comments": {
+            "section": "Quality Defects",
+            "label": "Comments",
+            "guidance": "Indicate what should be done to improve future project performance.",
             "value": ""
         },
-        "Vendor": {
-            "guidance": "List the vendor(s).",
+        "f37_Vendor": {
+            "section": "Vendor Management",
+            "label": "Vendor",
+            "guidance": "List the vendor or vendors concerned.",
             "value": ""
         },
-        "Issue": {
-            "guidance": "Describe any issues, claims, or disputes that occurred.",
+        "f38_Issue": {
+            "section": "Vendor Management",
+            "label": "Issue",
+            "guidance": "Describe any issues, claims, or disputes that occurred with this vendor.",
             "value": ""
         },
-        "Areas of exceptional performance": {
-            "guidance": "Identify areas of exceptional performance that can be passed on to other teams.",
+        "f39_Resolution": {
+            "section": "Vendor Management",
+            "label": "Resolution",
+            "guidance": "Describe the outcome or resolution that was reached.",
             "value": ""
         },
-        "Areas for improvement": {
-            "guidance": "Identify areas that can be improved on for future performance.",
+        "f40_Comments": {
+            "section": "Vendor Management",
+            "label": "Comments",
+            "guidance": "Indicate what should be done to improve future vendor management performance.",
+            "value": ""
+        },
+        "f41_Entry": {
+            "section": "Areas of Exceptional Performance",
+            "label": "Entry",
+            "guidance": "Identify areas of exceptional performance that can be passed on to other teams. State what was done and what made it work.",
+            "value": ""
+        },
+        "f42_Entry": {
+            "section": "Areas for Improvement",
+            "label": "Entry",
+            "guidance": "Identify areas that can be improved for future performance. State the improvement sought, not only the problem.",
             "value": ""
         }
     }

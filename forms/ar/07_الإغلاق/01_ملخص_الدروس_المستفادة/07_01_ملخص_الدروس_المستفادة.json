@@ -1,108 +1,260 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج ملخص الدروس المستفادة هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
     "form_name": "ملخص الدروس المستفادة",
     "document_reference": "PMO-07.01",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project Performance</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "f01_تعريف_المتطلبات_وإدارتها_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "تعريف المتطلبات وإدارتها / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تعريف المتطلبات وإدارتها. اذكر الممارسة نفسها، لا الاجتماع الذي نُوقشت فيه.",
             "value": ""
         },
-        "List any practices or incidents that": {
-            "guidance": "were effective in defining and managing requirements. List any practices or incidents that can be improved in defining and managing requirements.",
+        "f02_تعريف_المتطلبات_وإدارتها_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "تعريف المتطلبات وإدارتها / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تعريف المتطلبات وإدارتها، وما الذي ينبغي أن يكون التحسين.",
             "value": ""
         },
-        "Scope definition and": {
-            "guidance": "management List any practices or incidents that were effective in defining and managing scope. List any practices or incidents that can be improved in defining and managing scope.",
+        "f03_تعريف_النطاق_وإدارته_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "تعريف النطاق وإدارته / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تعريف النطاق وإدارته. إذا تم الالتزام بخط الأساس، فاذكر ذلك.",
             "value": ""
         },
-        "Schedule development": {
-            "guidance": "and control List any practices or incidents that were effective in developing and controlling the schedule. List any practices or incidents that can be improved in developing and controlling the schedule.",
+        "f04_تعريف_النطاق_وإدارته_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "تعريف النطاق وإدارته / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تعريف النطاق وإدارته.",
             "value": ""
         },
-        "Cost estimating and": {
-            "guidance": "control List any practices or incidents that were effective in developing estimates and controlling costs. List any practices or incidents that can be improved in developing estimates and controlling costs.",
+        "f05_تطوير_الجدول_الزمني_والتحكم_فيه_ما_نجح_ب": {
+            "section": "أداء المشروع",
+            "label": "تطوير الجدول الزمني والتحكم فيه / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تطوير الجدول الزمني والتحكم فيه.",
             "value": ""
         },
-        "Quality planning and": {
-            "guidance": "control List any practices or incidents that were effective in planning, managing, and controlling quality. List any practices or incidents that can be improved in planning, managing, and controlling quality. Specific defects are addressed elsewhere.",
+        "f06_تطوير_الجدول_الزمني_والتحكم_فيه_ما_يمكن": {
+            "section": "أداء المشروع",
+            "label": "تطوير الجدول الزمني والتحكم فيه / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تطوير الجدول الزمني والتحكم فيه.",
             "value": ""
         },
-        "Physical resource planning and control": {
-            "guidance": "List any practices or incidents that were List any practices or incidents that can be effective in planning, acquiring, and manag- improved in planning, acquiring, and managing physical resources. ing physical resources. Team planning, develop- List any practices or incidents that were ment, and performance effective in working with team members and developing and managing the team. List any practices or incidents that can be improved in working with team members and developing and managing the team.",
+        "f07_تقدير_التكلفة_والتحكم_فيها_ما_نجح_بشكل_ج": {
+            "section": "أداء المشروع",
+            "label": "تقدير التكلفة والتحكم فيها / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في إعداد التقديرات والتحكم في التكاليف.",
             "value": ""
         },
-        "Communications": {
-            "guidance": "management List any practices or incidents that were effective in planning and distributing information. List any practices or incidents that can be improved in planning and distributing information.",
+        "f08_تقدير_التكلفة_والتحكم_فيها_ما_يمكن_تحسين": {
+            "section": "أداء المشروع",
+            "label": "تقدير التكلفة والتحكم فيها / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في إعداد التقديرات والتحكم في التكاليف.",
             "value": ""
         },
-        "Reporting": {
-            "guidance": "List any practices or incidents that were effective in reporting project performance. List any practices or incidents that can be improved in reporting project performance.",
+        "f09_تخطيط_الجودة_والتحكم_فيها_ما_نجح_بشكل_جي": {
+            "section": "أداء المشروع",
+            "label": "تخطيط الجودة والتحكم فيها / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تخطيط الجودة وإدارتها والتحكم فيها.",
             "value": ""
         },
-        "Risk management": {
-            "guidance": "List any practices or incidents that were effective in the risk management process. Specific risks are addressed elsewhere. List any practices or incidents that can be improved in the risk management process. Specific risks are addressed elsewhere. (continued)",
+        "f10_تخطيط_الجودة_والتحكم_فيها_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "تخطيط الجودة والتحكم فيها / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تخطيط الجودة وإدارتها والتحكم فيها. تُسجَّل عيوب الجودة تحديدًا في قسم عيوب الجودة أدناه.",
             "value": ""
         },
-        "Procurement planning": {
-            "guidance": "and management List any practices or incidents that were effective in planning, conducting, and administering contracts. List any practices or incidents that can be improved in planning, conducting, and administering contracts. Stakeholder engagement List any practices or incidents that were effective in engaging stakeholders. List any practices or incidents that can be improved in engaging stakeholders.",
+        "f11_تخطيط_الموارد_المادية_والتحكم_فيها_ما_نج": {
+            "section": "أداء المشروع",
+            "label": "تخطيط الموارد المادية والتحكم فيها / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تخطيط الموارد المادية واكتسابها وإدارتها.",
             "value": ""
         },
-        "Process improvement": {
-            "guidance": "information",
+        "f12_تخطيط_الموارد_المادية_والتحكم_فيها_ما_يم": {
+            "section": "أداء المشروع",
+            "label": "تخطيط الموارد المادية والتحكم فيها / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تخطيط الموارد المادية واكتسابها وإدارتها.",
             "value": ""
         },
-        "List any processes that were developed": {
-            "guidance": "that should be continued. List any processes that should be changed or discontinued.",
+        "f13_تخطيط_الفريق_وتطويره_وأداؤه_ما_نجح_بشكل": {
+            "section": "أداء المشروع",
+            "label": "تخطيط الفريق وتطويره وأداؤه / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في العمل مع أعضاء الفريق وتطويره وإدارته.",
             "value": ""
         },
-        "Product-specific": {
-            "guidance": "information List any practices or incidents that were effective in delivering the specific product, service, or result. List any practices or incidents that can be improved in delivering the specific product, service, or result.",
+        "f14_تخطيط_الفريق_وتطويره_وأداؤه_ما_يمكن_تحسي": {
+            "section": "أداء المشروع",
+            "label": "تخطيط الفريق وتطويره وأداؤه / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في العمل مع أعضاء الفريق وتطويره وإدارته.",
             "value": ""
         },
-        "Other": {
-            "guidance": "List any other practices or incidents that were effective, such as change control, configuration management, etc. List any other practices or incidents that can be improved, such as change control, configuration management, etc.",
+        "f15_إدارة_الاتصالات_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "إدارة الاتصالات / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تخطيط المعلومات وتوزيعها.",
             "value": ""
         },
-        "Risks and issues</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "f16_إدارة_الاتصالات_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "إدارة الاتصالات / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تخطيط المعلومات وتوزيعها.",
             "value": ""
         },
-        "Response": {
-            "guidance": "Describe the response and its effectiveness.",
+        "f17_التقارير_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "التقارير / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في إعداد تقارير أداء المشروع.",
             "value": ""
         },
-        "التعليقات": {
-            "guidance": "Provide any additional information needed to improve future project performance.",
+        "f18_التقارير_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "التقارير / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في إعداد تقارير أداء المشروع.",
             "value": ""
         },
-        "Defect description</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "f19_إدارة_المخاطر_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "إدارة المخاطر / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في عملية إدارة المخاطر. تُسجَّل المخاطر تحديدًا في قسم المخاطر والمشكلات أدناه.",
             "value": ""
         },
-        "الحل": {
-            "guidance": "Describe how the defects were resolved.",
+        "f20_إدارة_المخاطر_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "إدارة المخاطر / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في عملية إدارة المخاطر. تُسجَّل المخاطر تحديدًا في قسم المخاطر والمشكلات أدناه.",
             "value": ""
         },
-        "Indicate what should be done to improve": {
-            "guidance": "future project performance.",
+        "f21_تخطيط_المشتريات_وإدارتها_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "تخطيط المشتريات وإدارتها / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تخطيط العقود وتنفيذها وإدارتها.",
             "value": ""
         },
-        "Vendor": {
-            "guidance": "List the vendor(s).",
+        "f22_تخطيط_المشتريات_وإدارتها_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "تخطيط المشتريات وإدارتها / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تخطيط العقود وتنفيذها وإدارتها.",
             "value": ""
         },
-        "Issue": {
-            "guidance": "Describe any issues, claims, or disputes that occurred.",
+        "f23_إشراك_أصحاب_المصلحة_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "إشراك أصحاب المصلحة / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في إشراك أصحاب المصلحة.",
             "value": ""
         },
-        "Areas of exceptional performance": {
-            "guidance": "Identify areas of exceptional performance that can be passed on to other teams.",
+        "f24_إشراك_أصحاب_المصلحة_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "إشراك أصحاب المصلحة / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في إشراك أصحاب المصلحة.",
             "value": ""
         },
-        "Areas for improvement": {
-            "guidance": "Identify areas that can be improved on for future performance.",
+        "f25_معلومات_تحسين_العمليات_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "معلومات تحسين العمليات / ما نجح بشكل جيد",
+            "guidance": "العمليات التي تم تطويرها وينبغي الاستمرار في تطبيقها في المشاريع القادمة.",
+            "value": ""
+        },
+        "f26_معلومات_تحسين_العمليات_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "معلومات تحسين العمليات / ما يمكن تحسينه",
+            "guidance": "العمليات التي ينبغي تغييرها أو وقفها.",
+            "value": ""
+        },
+        "f27_معلومات_خاصة_بالمنتج_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "معلومات خاصة بالمنتج / ما نجح بشكل جيد",
+            "guidance": "الممارسات أو الحوادث التي كانت فعّالة في تسليم المنتج أو الخدمة أو النتيجة المحددة.",
+            "value": ""
+        },
+        "f28_معلومات_خاصة_بالمنتج_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "معلومات خاصة بالمنتج / ما يمكن تحسينه",
+            "guidance": "الممارسات أو الحوادث التي يمكن تحسينها في تسليم المنتج أو الخدمة أو النتيجة المحددة.",
+            "value": ""
+        },
+        "f29_أخرى_ما_نجح_بشكل_جيد": {
+            "section": "أداء المشروع",
+            "label": "أخرى / ما نجح بشكل جيد",
+            "guidance": "ممارسات أو حوادث أخرى كانت فعّالة، مثل إدارة التغيير أو إدارة التهيئة أو إدارة التكامل.",
+            "value": ""
+        },
+        "f30_أخرى_ما_يمكن_تحسينه": {
+            "section": "أداء المشروع",
+            "label": "أخرى / ما يمكن تحسينه",
+            "guidance": "ممارسات أو حوادث أخرى يمكن تحسينها، مثل إدارة التغيير أو إدارة التهيئة أو إدارة التكامل.",
+            "value": ""
+        },
+        "f31_المخاطرة_أو_المشكلة": {
+            "section": "المخاطر والمشكلات",
+            "label": "المخاطرة أو المشكلة",
+            "guidance": "صف المخاطرة أو المشكلة التي وقعت والتي ينبغي أخذها في الاعتبار لتحسين التعلم المؤسسي.",
+            "value": ""
+        },
+        "f32_الاستجابة": {
+            "section": "المخاطر والمشكلات",
+            "label": "الاستجابة",
+            "guidance": "صف الاستجابة التي تم اتخاذها وفعاليتها. واذكر بوضوح ما إذا كانت الاستجابة ناجحة.",
+            "value": ""
+        },
+        "f33_التعليقات": {
+            "section": "المخاطر والمشكلات",
+            "label": "التعليقات",
+            "guidance": "اذكر أي معلومات إضافية مطلوبة لتحسين أداء المشاريع في المستقبل.",
+            "value": ""
+        },
+        "f34_العيب": {
+            "section": "عيوب الجودة",
+            "label": "العيب",
+            "guidance": "صف عيب الجودة الذي ينبغي أخذه في الاعتبار لتحسين الفعالية المؤسسية.",
+            "value": ""
+        },
+        "f35_الحل": {
+            "section": "عيوب الجودة",
+            "label": "الحل",
+            "guidance": "صف كيف تم حل العيب وما إذا كان الحل ثابتًا.",
+            "value": ""
+        },
+        "f36_التعليقات": {
+            "section": "عيوب الجودة",
+            "label": "التعليقات",
+            "guidance": "اذكر ما ينبغي عمله لتحسين أداء المشاريع في المستقبل.",
+            "value": ""
+        },
+        "f37_المورد": {
+            "section": "إدارة الموردين",
+            "label": "المورد",
+            "guidance": "اذكر المورد أو الموردين المعنيين.",
+            "value": ""
+        },
+        "f38_المشكلة": {
+            "section": "إدارة الموردين",
+            "label": "المشكلة",
+            "guidance": "صف أي مشكلات أو مطالبات أو منازعات حدثت مع هذا المورد.",
+            "value": ""
+        },
+        "f39_الحل": {
+            "section": "إدارة الموردين",
+            "label": "الحل",
+            "guidance": "صف النتيجة أو الحل الذي تم الوصول إليه.",
+            "value": ""
+        },
+        "f40_التعليقات": {
+            "section": "إدارة الموردين",
+            "label": "التعليقات",
+            "guidance": "اذكر ما ينبغي عمله لتحسين أداء إدارة الموردين في المستقبل.",
+            "value": ""
+        },
+        "f41_مخرج": {
+            "section": "مجالات الأداء الاستثنائي",
+            "label": "مخرج",
+            "guidance": "حدّد مجالات الأداء الاستثنائي التي يمكن نقلها إلى فرق أخرى. اذكر ما تم عمله وما جعله ناجحًا.",
+            "value": ""
+        },
+        "f42_مخرج": {
+            "section": "مجالات التحسين",
+            "label": "مخرج",
+            "guidance": "حدّد المجالات التي يمكن تحسينها لأداء المستقبل. اذكر التحسين المطلوب، وليس المشكلة فحسب.",
             "value": ""
         }
     }
