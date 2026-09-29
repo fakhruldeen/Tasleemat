@@ -1,28 +1,74 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RELEASE PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
     "form_name": "RELEASE PLAN",
     "document_reference": "PMO-04.03.09",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Release dates": {
-            "guidance": "Either a timeline or a milestone indicator of when releases start and finish. This can be more detailed to show a linear schedule that indicates the duration of each release.",
+        "f01_Release": {
+            "section": "Releases",
+            "label": "Release",
+            "guidance": "The release identifier and name, for example R1 or Release 1. A release is the unit the customer receives, not an internal milestone, so name it the way the customer would recognise it.",
             "value": ""
         },
-        "User stories": {
-            "guidance": "The requirements or user stories from the backlog",
+        "f02_Start_Date": {
+            "section": "Releases",
+            "label": "Start Date",
+            "guidance": "When the release starts. For a high-level plan a month or a quarter is honest; a day-level date implies a precision the plan does not have.",
             "value": ""
         },
-        "User": {
-            "guidance": "Story",
+        "f03_End_Date": {
+            "section": "Releases",
+            "label": "End Date",
+            "guidance": "When the release finishes. Give the duration as well as the end date, since the two together are what show whether the release is gaining or losing ground.",
             "value": ""
         },
-        "Sprint 2</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "f04_User_Stories": {
+            "section": "Releases",
+            "label": "User Stories",
+            "guidance": "The requirements or user stories from the backlog assigned to this release, referenced by their backlog identifier rather than restated, so the plan and the backlog cannot drift apart.",
             "value": ""
         },
-        "Sprint 1": {
-            "guidance": "Release Goal: Describe the goal of the release in this space.",
+        "f05_Release_Goal": {
+            "section": "Releases",
+            "label": "Release Goal",
+            "guidance": "What this release is for, in one sentence. A release without a goal turns into a list of everything that happened to fit, which is how releases acquire unrelated work.",
+            "value": ""
+        },
+        "f06_Status": {
+            "section": "Releases",
+            "label": "Status",
+            "guidance": "Not started, in progress, or released. This is the column that makes the plan honest: once a sprint has started its contents cannot change, so anything still marked in progress is committed, and anything not started can still move.",
+            "value": ""
+        },
+        "f07_Sprint": {
+            "section": "Sprint Breakdown",
+            "label": "Sprint",
+            "guidance": "The sprint identifier and the release it belongs to, so the plan can be read per release rather than as one long list.",
+            "value": ""
+        },
+        "f08_Dates": {
+            "section": "Sprint Breakdown",
+            "label": "Dates",
+            "guidance": "When the sprint starts and ends. A sprint with no dates cannot be told apart from one that is still open to negotiation, and once it has started its contents are fixed.",
+            "value": ""
+        },
+        "f09_Sprint_Goal": {
+            "section": "Sprint Breakdown",
+            "label": "Sprint Goal",
+            "guidance": "What this sprint is for, in one sentence. Several sprints toward one release goal is the normal case; a sprint goal that contradicts the release goal is a sign the release is carrying two unrelated pieces of work.",
+            "value": ""
+        },
+        "f10_Sprint_User_Stories": {
+            "section": "Sprint Breakdown",
+            "label": "Sprint User Stories",
+            "guidance": "The user stories committed to this sprint, by backlog identifier. Once the sprint has started this list is what was committed, and a change to it is a change to the commitment rather than to the plan.",
+            "value": ""
+        },
+        "f11_Sprint_Status": {
+            "section": "Sprint Breakdown",
+            "label": "Sprint Status",
+            "guidance": "Not started, in progress, or complete.",
             "value": ""
         }
     }
