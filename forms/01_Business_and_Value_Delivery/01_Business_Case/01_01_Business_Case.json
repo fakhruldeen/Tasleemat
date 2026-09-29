@@ -1,25 +1,111 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this BUSINESS CASE template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "BUSINESS CASE",
-    "document_reference": "PMO-01.01",
-    "project_title": "",
-    "date_prepared": "",
-    "fields": {
-        "Business Need": {
-            "guidance": "Identify the problem or opportunity.",
-            "value": ""
-        },
-        "Analysis of Situation": {
-            "guidance": "Describe the current state, future state, and root causes.",
-            "value": ""
-        },
-        "Recommendation": {
-            "guidance": "The recommended option or approach to address the need.",
-            "value": ""
-        },
-        "Evaluation Criteria": {
-            "guidance": "Metrics used to measure success.",
-            "value": ""
-        }
+  "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables. Every figure quoted in the analysis must come from the supplied context; where a figure is not available, record the gap rather than an estimate, since a business case is a funding decision and an invented number is worse than an acknowledged blank.",
+  "form_name": "Business Case",
+  "document_reference": "PMO-01.01",
+  "project_title": "",
+  "date_prepared": "",
+  "fields": {
+    "f01_Need_Statement": {
+      "section": "1. Business Need",
+      "label": "Need Statement",
+      "guidance": "The problem or opportunity in one sentence, stated so that a reader who has never met the organisation can tell whether it has been solved. A need written as a goal cannot be falsified, and an unfalsifiable need is the reason a project that delivered everything it promised can still be judged a failure.",
+      "value": ""
+    },
+    "f02_Why_Now": {
+      "section": "1. Business Need",
+      "label": "Why Now",
+      "guidance": "What makes this the moment to act. A need that has been true for a decade is not refuted by a business case, it is only dated by one, so the trigger has to be named: a regulation, a contract expiry, a competitor move, a cost that has crossed a threshold, a capability that has become scarce.",
+      "value": ""
+    },
+    "f03_Who_Feels_It": {
+      "section": "1. Business Need",
+      "label": "Who Feels It",
+      "guidance": "The stakeholder group that experiences the problem, and the one that pays for the remedy. These are often not the same group, and a case written only from the sufferer's point of view produces an approval that the payer later withdraws.",
+      "value": ""
+    },
+    "f04_Cost_of_Inaction": {
+      "section": "1. Business Need",
+      "label": "Cost of Inaction",
+      "guidance": "What happens if nothing is done, stated as a figure or a dated event rather than as a risk. This is the only number that competes with the cost of the investment, and a business case without it is an assertion of desire.",
+      "value": ""
+    },
+    "f05_Current_State": {
+      "section": "2. Analysis of Situation",
+      "label": "Current State",
+      "guidance": "How things stand now, with the figures that would be measured today. Record the baseline, because every later claim of improvement is measured against it and a baseline invented after the project is a baseline chosen to flatter the project.",
+      "value": ""
+    },
+    "f06_Future_State_Without_the_Project": {
+      "section": "2. Analysis of Situation",
+      "label": "Future State Without the Project",
+      "guidance": "What the situation becomes if the project is not funded, in the same terms as the current state. This is the counterfactual, and it is the only part of the analysis that makes the investment comparable to anything.",
+      "value": ""
+    },
+    "f07_Root_Causes": {
+      "section": "2. Analysis of Situation",
+      "label": "Root Causes",
+      "guidance": "The causes beneath the symptoms, distinguishing causes from the constraints that merely limit the damage. A business case that treats a constraint as a cause proposes a project that removes the constraint and leaves the cause in place.",
+      "value": ""
+    },
+    "f08_Constraints_and_Assumptions": {
+      "section": "2. Analysis of Situation",
+      "label": "Constraints and Assumptions",
+      "guidance": "What must hold for the analysis to be valid, and what is being assumed rather than known. Assumptions recorded here can be tested later; assumptions buried in prose cannot.",
+      "value": ""
+    },
+    "f09_Option_Description": {
+      "section": "3. Options and Recommendation",
+      "label": "Option Description",
+      "guidance": "The distinct options considered, including the do-nothing option, since it is the baseline every other option is measured against and it is the one most often left out of the table.",
+      "value": ""
+    },
+    "f10_Benefits": {
+      "section": "3. Options and Recommendation",
+      "label": "Benefits",
+      "guidance": "The benefits of the option, each with how it will be measured. A benefit with no measure is a hope, and hopes do not survive a funding review.",
+      "value": ""
+    },
+    "f11_Costs": {
+      "section": "3. Options and Recommendation",
+      "label": "Costs",
+      "guidance": "The full life of costs, not only the build. A case that counts only build cost is comparing a number to a number, and the difference between the two is usually the whole argument.",
+      "value": ""
+    },
+    "f12_Risks": {
+      "section": "3. Options and Recommendation",
+      "label": "Risks",
+      "guidance": "The risks that would change the outcome, and what happens to the case if each occurs. A business case with no risks section is asserting that none exist, which is itself a risk and always an unconvincing one.",
+      "value": ""
+    },
+    "f13_Net_Present_Value": {
+      "section": "3. Options and Recommendation",
+      "label": "Net Present Value",
+      "guidance": "The net present value, with the discount rate and the period stated. Without them the figure is not reproducible and cannot be compared with any other case competing for the same money.",
+      "value": ""
+    },
+    "f14_Recommendation": {
+      "section": "3. Options and Recommendation",
+      "label": "Recommendation",
+      "guidance": "The recommended option and the reason, stated so that a reader can disagree with the recommendation without being disagreeing with the analysis. A recommendation that can only be accepted whole is not a recommendation.",
+      "value": ""
+    },
+    "f15_Evaluation_Criteria": {
+      "section": "4. Evaluation and Approval",
+      "label": "Evaluation Criteria",
+      "guidance": "The measures by which success will be judged, each with a baseline, a target and a date.",
+      "value": ""
+    },
+    "f16_Review_and_Approval": {
+      "section": "4. Evaluation and Approval",
+      "label": "Review and Approval",
+      "guidance": "Who reviews the case, when, and what decision each reviewer is being asked to make. A review that asks for information rather than for a decision produces a meeting rather than an approval.",
+      "value": ""
+    },
+    "f17_Trigger_to_Reconsider": {
+      "section": "4. Evaluation and Approval",
+      "label": "Trigger to Reconsider",
+      "guidance": "The event that would cause the case to be reopened, such as a change in the cost of the inputs or a material shift in the benefit. A business case with no reopening trigger is a document that can never be wrong.",
+      "value": ""
     }
+  }
 }
