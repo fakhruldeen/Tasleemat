@@ -52,3 +52,5 @@ Please populate the table below with the following details:
   <strong>Template:</strong> Team Onboarding Checklist | <strong>Ref:</strong> PMO-05.12 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

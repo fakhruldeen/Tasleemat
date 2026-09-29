@@ -108,3 +108,5 @@ Section Instructions:
   <strong>Template:</strong> CONTRACT CLOSEOUT REPORT | <strong>Ref:</strong> PMO-07.02 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

@@ -69,3 +69,5 @@ Section Instructions:
   <strong>Template:</strong> DATA PRIVACY AND ETHICS ASSESSMENT | <strong>Ref:</strong> PMO-02.06 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

@@ -69,3 +69,5 @@ Section Instructions:
   <strong>Template:</strong> STATEMENT OF WORK SOW | <strong>Ref:</strong> PMO-04.09.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

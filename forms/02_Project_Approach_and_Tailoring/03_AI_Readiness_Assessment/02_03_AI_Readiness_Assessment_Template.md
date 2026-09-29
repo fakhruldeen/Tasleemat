@@ -52,3 +52,5 @@ Please populate the table below with the following details:
   <strong>Template:</strong> AI Readiness Assessment | <strong>Ref:</strong> PMO-02.03 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

@@ -45,3 +45,5 @@
   <strong>النموذج:</strong> سجل مكتبة الأوامر (Prompts) | <strong>المرجع:</strong> PMO-05.09 <br>
   <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>
+
+</div>

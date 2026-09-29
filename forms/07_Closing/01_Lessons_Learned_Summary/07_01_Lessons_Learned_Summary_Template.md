@@ -223,3 +223,5 @@ Section Instructions:
   <strong>Template:</strong> LESSONS LEARNED SUMMARY | <strong>Ref:</strong> PMO-07.01 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

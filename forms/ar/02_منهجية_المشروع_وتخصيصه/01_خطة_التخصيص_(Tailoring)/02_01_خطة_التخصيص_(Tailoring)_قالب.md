@@ -53,3 +53,5 @@
   <strong>النموذج:</strong> خطة التخصيص (TAILORING) | <strong>المرجع:</strong> PMO-02.01 <br>
   <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>
+
+</div>

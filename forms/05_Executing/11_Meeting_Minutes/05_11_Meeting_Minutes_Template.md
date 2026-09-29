@@ -69,3 +69,5 @@ Section Instructions:
   <strong>Template:</strong> MEETING MINUTES | <strong>Ref:</strong> PMO-05.11 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

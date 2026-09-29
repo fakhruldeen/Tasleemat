@@ -45,3 +45,5 @@
   <strong>النموذج:</strong> تقرير مراجعة المرحلة (Retrospective) | <strong>المرجع:</strong> PMO-05.08 <br>
   <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>
+
+</div>

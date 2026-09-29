@@ -67,3 +67,5 @@ Section Instructions:
   <strong>Template:</strong> AI USE CASE CANVAS | <strong>Ref:</strong> PMO-02.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>

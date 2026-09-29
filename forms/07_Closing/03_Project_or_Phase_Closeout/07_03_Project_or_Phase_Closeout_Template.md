@@ -80,3 +80,5 @@ Section Instructions:
   <strong>Template:</strong> PROJECT OR PHASE CLOSEOUT REPORT | <strong>Ref:</strong> PMO-07.03 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
+
+</div>
