@@ -1,4 +1,5 @@
 Section,Field,Guidance,LLM_Generated_Value
+Audit Information,Audit Information,"Record the procurements or contracts audited, the audit scope, the period covered, and the audit method.",
 Vendor Performance Audit - What Worked Well,Scope,Describe the aspects of contract scope that were handled well.,
 Vendor Performance Audit - What Worked Well,Quality,Describe the aspects of product quality that were handled well.,
 Vendor Performance Audit - What Worked Well,Schedule,Describe the aspects of the contract schedule that were handled well.,

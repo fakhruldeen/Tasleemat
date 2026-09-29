@@ -3,6 +3,11 @@ lang: en
 Form: PROCUREMENT AUDIT REPORT (Instructions)
 ---
 
+## Audit Information
+
+### Audit Information
+**Instruction:** Record the procurements or contracts audited, the audit scope, the period covered, and the audit method.
+
 # PROCUREMENT AUDIT REPORT - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**

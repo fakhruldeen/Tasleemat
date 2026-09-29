@@ -5,6 +5,12 @@
     "project_title": "",
     "date_prepared": "",
     "fields": {
+        "audit_information": {
+            "section": "Audit Information",
+            "label": "Audit Information",
+            "guidance": "Record the procurements or contracts audited, the audit scope, the period covered, and the audit method.",
+            "value": ""
+        },
         "scope_worked_well": {
             "section": "Vendor Performance Audit - What Worked Well",
             "label": "Scope",
