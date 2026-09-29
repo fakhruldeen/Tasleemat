@@ -10,6 +10,7 @@ Section-by-Section Instructions:
 - Comments: Document any comments that add relevance to this report.
 -->
 
+<h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">EARNED VALUE ANALYSIS</h1>
 
