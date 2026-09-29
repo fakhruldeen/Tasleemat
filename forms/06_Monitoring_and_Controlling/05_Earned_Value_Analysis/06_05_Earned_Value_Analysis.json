@@ -1,9 +1,14 @@
 {
-    "_llm_instructions": "Populate the Earned Value Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.\n- Basic Earned Value Metrics: Enter the core EVM financial figures.\n- Variances and Indices: Calculate variances and performance indices.\n- Percentages: Indicate cumulative percentages.\n- Forecasting (Estimates): Forecast completion costs and required performance indices. Justify the EAC and TCPI methods chosen.\n- Root Cause and Impacts Analysis: Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.\n- Comments: Document any comments that add relevance to this report.",
+    "_llm_instructions": "Populate the Earned Value Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nPeriod columns: every metric table in this form is reported across three period columns - 'Current Reporting Period', 'Current Period Cumulative', and 'Past Period Cumulative'. Populate all three for each metric.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.\n- Basic Earned Value Metrics: Enter Budget at Completion (BAC) once, then enter Planned Value (PV), Earned Value (EV), and Actual Cost (AC) for each of the three period columns.\n- Variances and Indices: Calculate Schedule Variance (SV), Cost Variance (CV), Schedule Performance Index (SPI), and Cost Performance Index (CPI) for each period column using the stated calculation.\n- Percentages: Indicate Percent Planned (PV/BAC), Percent Earned (EV/BAC), and Percent Spent (AC/BAC) for each period column.\n- Forecasting (Estimates): Calculate EAC w/CPI (BAC/CPI), EAC w/CPI x SPI (AC + ((BAC - EV)/(CPI x SPI))), and TCPI ((BAC - EV)/(BAC - AC)) for each period column, then record the selected EAC and justify the choice.\n- Root Cause and Impacts Analysis: Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "EARNED VALUE ANALYSIS",
     "document_reference": "PMO-06.05",
     "project_title": "",
     "date_prepared": "",
+    "period_columns": [
+        "Current Reporting Period",
+        "Current Period Cumulative",
+        "Past Period Cumulative"
+    ],
     "fields": {
         "Report Information": {
             "guidance": "Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.",
@@ -15,38 +20,104 @@
             }
         },
         "Basic Earned Value Metrics": {
-            "guidance": "Enter the core EVM financial figures.",
+            "guidance": "Enter Budget at Completion (BAC) once, then enter Planned Value (PV), Earned Value (EV), and Actual Cost (AC) for each period column.",
             "value": {
-                "Budget at Completion (BAC)": "",
-                "Planned Value (PV)": "",
-                "Earned Value (EV)": "",
-                "Actual Cost (AC)": ""
+                "Budget at Completion (BAC)": {
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Planned Value (PV)": {
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Earned Value (EV)": {
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Actual Cost (AC)": {
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                }
             }
         },
         "Variances and Indices": {
-            "guidance": "Calculate variances and performance indices.",
+            "guidance": "Calculate variances and performance indices for each period column using the stated calculation.",
             "value": {
-                "Schedule Variance (SV = EV - PV)": "",
-                "Cost Variance (CV = EV - AC)": "",
-                "Schedule Performance Index (SPI = EV / PV)": "",
-                "Cost Performance Index (CPI = EV / AC)": ""
+                "Schedule Variance (SV)": {
+                    "calculation": "EV - PV",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Cost Variance (CV)": {
+                    "calculation": "EV - AC",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Schedule Performance Index (SPI)": {
+                    "calculation": "EV / PV",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Cost Performance Index (CPI)": {
+                    "calculation": "EV / AC",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                }
             }
         },
         "Percentages": {
-            "guidance": "Indicate cumulative percentages.",
+            "guidance": "Indicate percentages for each period column using the stated calculation.",
             "value": {
-                "Percent Planned (PV / BAC)": "",
-                "Percent Earned (EV / BAC)": "",
-                "Percent Spent (AC / BAC)": ""
+                "Percent Planned": {
+                    "calculation": "PV / BAC",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Percent Earned": {
+                    "calculation": "EV / BAC",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Percent Spent": {
+                    "calculation": "AC / BAC",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                }
             }
         },
         "Forecasting (Estimates)": {
-            "guidance": "Forecast completion costs and required performance indices. Justify the EAC and TCPI methods chosen.",
+            "guidance": "Forecast completion costs for each period column using the stated calculation, then record the selected EAC and justify the choice.",
             "value": {
-                "Estimates at Completion (EAC) Method & Justification": "",
-                "Estimates at Completion (EAC) Value": "",
-                "To Complete Performance Index (TCPI) Method": "",
-                "To Complete Performance Index (TCPI) Value": ""
+                "EAC w/CPI": {
+                    "calculation": "BAC / CPI",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "EAC w/CPI x SPI": {
+                    "calculation": "AC + ((BAC - EV) / (CPI x SPI))",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "To Complete Performance Index (TCPI)": {
+                    "calculation": "(BAC - EV) / (BAC - AC)",
+                    "Current Reporting Period": "",
+                    "Current Period Cumulative": "",
+                    "Past Period Cumulative": ""
+                },
+                "Selected EAC - Justification and Explanation": ""
             }
         },
         "Root Cause and Impacts Analysis": {
