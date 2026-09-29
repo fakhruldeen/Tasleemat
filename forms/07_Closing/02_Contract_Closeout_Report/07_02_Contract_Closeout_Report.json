@@ -1,48 +1,134 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this CONTRACT CLOSEOUT REPORT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out 'project_title' and 'date_prepared', and the 'value' property of each field, using the project context. Use 'label' to select the correct output language. Reference parameters.md for global project variables.",
     "form_name": "CONTRACT CLOSEOUT REPORT",
     "document_reference": "PMO-07.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "What worked well</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "contract_identification": {
+            "section": "Contract Identification",
+            "label": "Contract Identification",
+            "guidance": "Record the contract reference, the vendor, and the contract type and value.",
             "value": ""
         },
-        "Quality": {
-            "guidance": "Describe aspects of product quality that were handled well.",
+        "scope_worked_well": {
+            "section": "Vendor Performance Analysis - What Worked Well",
+            "label": "Scope",
+            "guidance": "Describe the aspects of contract scope that were handled well.",
             "value": ""
         },
-        "Schedule": {
-            "guidance": "Describe aspects of the contract schedule that were handled well.",
+        "quality_worked_well": {
+            "section": "Vendor Performance Analysis - What Worked Well",
+            "label": "Quality",
+            "guidance": "Describe the aspects of product quality that were handled well.",
             "value": ""
         },
-        "Cost": {
-            "guidance": "Describe aspects of the contract budget that were handled well.",
+        "schedule_worked_well": {
+            "section": "Vendor Performance Analysis - What Worked Well",
+            "label": "Schedule",
+            "guidance": "Describe the aspects of the contract schedule that were handled well.",
             "value": ""
         },
-        "Other": {
-            "guidance": "Describe any other aspects of the contract or procurement that were handled well.",
+        "cost_worked_well": {
+            "section": "Vendor Performance Analysis - What Worked Well",
+            "label": "Cost",
+            "guidance": "Describe the aspects of the contract budget that were handled well.",
             "value": ""
         },
-        "Change ID": {
+        "other_worked_well": {
+            "section": "Vendor Performance Analysis - What Worked Well",
+            "label": "Other",
+            "guidance": "Describe any other aspects of the contract or procurement that were handled well, including how easy the vendor was to work with.",
+            "value": ""
+        },
+        "scope_improve": {
+            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "label": "Scope",
+            "guidance": "Describe the aspects of contract scope that could be improved.",
+            "value": ""
+        },
+        "quality_improve": {
+            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "label": "Quality",
+            "guidance": "Describe the aspects of product quality that could be improved.",
+            "value": ""
+        },
+        "schedule_improve": {
+            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "label": "Schedule",
+            "guidance": "Describe the aspects of the contract schedule that could be improved.",
+            "value": ""
+        },
+        "cost_improve": {
+            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "label": "Cost",
+            "guidance": "Describe the aspects of the contract budget that could be improved.",
+            "value": ""
+        },
+        "other_improve": {
+            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "label": "Other",
+            "guidance": "Describe any other aspects of the contract or procurement that could be improved.",
+            "value": ""
+        },
+        "change_id": {
+            "section": "Record of Contract Changes",
+            "label": "Change ID",
             "guidance": "Enter the change identifier from the change log.",
             "value": ""
         },
-        "Change": {
-            "guidance": "description Enter the description from the change log.",
+        "change_description": {
+            "section": "Record of Contract Changes",
+            "label": "Change Description",
+            "guidance": "Enter the description from the change log.",
             "value": ""
         },
-        "Date": {
-            "guidance": "approved Enter the date approved from the change log. Describe the dispute or claim.",
+        "date_approved": {
+            "section": "Record of Contract Changes",
+            "label": "Date Approved",
+            "guidance": "Enter the date approved from the change log.",
             "value": ""
         },
-        "Resolution": {
+        "dispute_description": {
+            "section": "Record of Contract Disputes",
+            "label": "Dispute Description",
+            "guidance": "Describe the dispute or claim.",
+            "value": ""
+        },
+        "dispute_resolution": {
+            "section": "Record of Contract Disputes",
+            "label": "Resolution",
             "guidance": "Describe the resolution.",
             "value": ""
         },
-        "Date resolved": {
+        "date_resolved": {
+            "section": "Record of Contract Disputes",
+            "label": "Date Resolved",
             "guidance": "Enter the date the dispute or claim was resolved.",
+            "value": ""
+        },
+        "completion_date": {
+            "section": "Contract Completion and Final Payment",
+            "label": "Contract Completion Date",
+            "guidance": "Enter the date the contract was completed.",
+            "value": ""
+        },
+        "signed_off_by": {
+            "section": "Contract Completion and Final Payment",
+            "label": "Signed Off By",
+            "guidance": "Record who signed off on the contract completion.",
+            "value": ""
+        },
+        "final_payment_date": {
+            "section": "Contract Completion and Final Payment",
+            "label": "Final Payment Date",
+            "guidance": "Enter the date of the final payment.",
+            "value": ""
+        },
+        "comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Add any comments that will add relevance to the closeout report.",
             "value": ""
         }
     }

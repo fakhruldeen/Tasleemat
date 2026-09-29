@@ -5,62 +5,88 @@ title: Contract Closeout Report
 nav_order: 1
 ---
 
+
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
-# Project Artifact: Contract Closeout Report
+# Artifact: Contract Closeout Report
 
 **Document Reference:** `PMO-07.02`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Contract Closeout Report** in alignment with Tasleemat framework.
+This document provides a detailed, professional reference for understanding the
+purpose of the **Contract Closeout Report** and using it effectively as part of
+the Tasleemat methodology.
 
 ---
 
-### 1. What?
-A formal Tasleemat-aligned project document known as the **Contract Closeout Report**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+### 1. What is it?
+An official Tasleemat document called the **Contract Closeout Report**, used to
+document vendor performance so the information can be used to evaluate the
+vendor for future work. Contract closure supports the project closure process
+and helps ensure contractual agreements are completed or terminated.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+To ensure alignment with Tasleemat standards, to provide transparency, to record
+the lessons learned from a contract for future procurement, and to support
+project closure.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **CLOSING Process Group** of the project lifecycle.
+This artifact is prepared in the **Closing Process Group** of the project
+lifecycle, before a contract can be fully closed or terminated.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Finalized by the Project Manager for formal sign-off by the Sponsor or Customer, and archived for historical records.
+**Responsibilities:** Maintained by the contract manager and the procurement
+manager, and approved by finance control. It is used as an input when the vendor
+is evaluated for future procurement.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+*   For a small contract you can combine all the vendor performance information
+    into a single summary paragraph.
+*   For small contracts you may not need the contract changes or contract
+    disputes sections.
+*   If the project was based around one large contract, you can combine the
+    information in the project closeout report with this form.
 
 ### Alignment
-[ Add Alignment Information Here ]
+*   Procurement management plan
+*   Procurement audit
+*   Change log
+*   Project closeout
 
 ### 5. How?
-To accurately and professionally complete the **CONTRACT CLOSEOUT REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **CONTRACT CLOSEOUT REPORT**, the
+responsible party must populate the following critical sections based on the
+project context (ensure `parameters.md` is referenced for global project
+variables):
 
-*   **Quality:** Describe aspects of product quality that were handled well.
-*   **Schedule:** Describe aspects of the contract schedule that were handled well.
-*   **Cost:** Describe aspects of the contract budget that were handled well.
-*   **Other:** Describe any other aspects of the contract or procurement that were handled well.
-*   **Change ID:** Enter the change identifier from the change log.
-*   **Change:** description Enter the description from the change log.
-*   **Date:** approved Enter the date approved from the change log. Describe the dispute or claim.
-*   **Resolution:** Describe the resolution.
-*   **Date resolved:** Enter the date the dispute or claim was resolved.
+*   **Contract Identification:** Record the contract reference, the vendor, the
+    contract type and value, and the closeout status.
+*   **What Worked Well:** For scope, quality, schedule, cost, and any other
+    dimension, describe what was handled well and give the evidence for it.
+*   **What Can Be Improved:** For the same five dimensions, describe what could
+    have been improved and the recommended action.
+*   **Record of Contract Changes:** For each change, enter the change ID, the
+    description, and the date approved, taken from the change log.
+*   **Record of Contract Disputes:** For each dispute or claim, describe it, the
+    resolution, and the date it was resolved.
+*   **Contract Completion and Final Payment:** Record the completion date, who
+    signed off, and the date of the final payment.
+*   **Comments:** Add any comments that add relevance to the report.
 
 ---
 
-### 📥 Associated Templates
+### 📥 Related Files
 * [📄 Printable Template (Markdown)](07_02_Contract_Closeout_Report_Template.md)
-* [🤖 LLM Generation Prompt](07_02_Contract_Closeout_Report.md)
-* [📊 Data Schema (JSON)](07_02_Contract_Closeout_Report.json)
+* [🤖 LLM Instructions](07_02_Contract_Closeout_Report.md)
+* [📊 Data Structure (JSON)](07_02_Contract_Closeout_Report.json)
 * [📈 Tabular Data (CSV)](07_02_Contract_Closeout_Report.csv)
 
 </div>

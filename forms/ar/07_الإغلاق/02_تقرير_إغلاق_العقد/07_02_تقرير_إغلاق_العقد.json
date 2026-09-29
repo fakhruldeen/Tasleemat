@@ -1,48 +1,134 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تقرير إغلاق العقد هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "املأ 'project_title' و'date_prepared'، وخاصية 'value' لكل حقل باستخدام سياق المشروع. استخدم 'label' لتحديد لغة الإخراج المناسبة. راجع parameters.md للمتغيرات العامة.",
     "form_name": "تقرير إغلاق العقد",
     "document_reference": "PMO-07.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "What worked well</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "contract_identification": {
+            "section": "تحديد العقد",
+            "label": "تحديد العقد",
+            "guidance": "سجل مرجع العقد واسم المورد ونوع العقد وقيمته.",
             "value": ""
         },
-        "الجودة": {
-            "guidance": "Describe aspects of product quality that were handled well.",
+        "scope_worked_well": {
+            "section": "تحليل أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "النطاق",
+            "guidance": "صف جوانب نطاق العقد التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "الجدول الزمني": {
-            "guidance": "Describe aspects of the contract schedule that were handled well.",
+        "quality_worked_well": {
+            "section": "تحليل أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "الجودة",
+            "guidance": "صف جوانب جودة المنتج التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "التكلفة": {
-            "guidance": "Describe aspects of the contract budget that were handled well.",
+        "schedule_worked_well": {
+            "section": "تحليل أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "الجدول الزمني",
+            "guidance": "صف جوانب الجدول الزمني للعقد التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "Other": {
-            "guidance": "Describe any other aspects of the contract or procurement that were handled well.",
+        "cost_worked_well": {
+            "section": "تحليل أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "التكلفة",
+            "guidance": "صف جوانب ميزانية العقد التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "Change ID": {
-            "guidance": "Enter the change identifier from the change log.",
+        "other_worked_well": {
+            "section": "تحليل أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "أخرى",
+            "guidance": "صف أي جوانب أخرى من العقد أو عملية الشراء التي تمت معالجتها بشكل جيد، بما في ذلك مدى سهولة التعامل مع المورد.",
             "value": ""
         },
-        "Change": {
-            "guidance": "description Enter the description from the change log.",
+        "scope_improve": {
+            "section": "تحليل أداء المورد - ما يمكن تحسينه",
+            "label": "النطاق",
+            "guidance": "صف جوانب نطاق العقد التي يمكن تحسينها.",
             "value": ""
         },
-        "التاريخ": {
-            "guidance": "approved Enter the date approved from the change log. Describe the dispute or claim.",
+        "quality_improve": {
+            "section": "تحليل أداء المورد - ما يمكن تحسينه",
+            "label": "الجودة",
+            "guidance": "صف جوانب جودة المنتج التي يمكن تحسينها.",
             "value": ""
         },
-        "الحل": {
-            "guidance": "Describe the resolution.",
+        "schedule_improve": {
+            "section": "تحليل أداء المورد - ما يمكن تحسينه",
+            "label": "الجدول الزمني",
+            "guidance": "صف جوانب الجدول الزمني للعقد التي يمكن تحسينها.",
             "value": ""
         },
-        "Date resolved": {
-            "guidance": "Enter the date the dispute or claim was resolved.",
+        "cost_improve": {
+            "section": "تحليل أداء المورد - ما يمكن تحسينه",
+            "label": "التكلفة",
+            "guidance": "صف جوانب ميزانية العقد التي يمكن تحسينها.",
+            "value": ""
+        },
+        "other_improve": {
+            "section": "تحليل أداء المورد - ما يمكن تحسينه",
+            "label": "أخرى",
+            "guidance": "صف أي جوانب أخرى من العقد أو عملية الشراء التي يمكن تحسينها.",
+            "value": ""
+        },
+        "change_id": {
+            "section": "سجل تغييرات العقد",
+            "label": "معرف التغيير",
+            "guidance": "أدخل معرف التغيير من سجل التغييرات.",
+            "value": ""
+        },
+        "change_description": {
+            "section": "سجل تغييرات العقد",
+            "label": "وصف التغيير",
+            "guidance": "أدخل الوصف من سجل التغييرات.",
+            "value": ""
+        },
+        "date_approved": {
+            "section": "سجل تغييرات العقد",
+            "label": "تاريخ الاعتماد",
+            "guidance": "أدخل تاريخ الاعتماد من سجل التغييرات.",
+            "value": ""
+        },
+        "dispute_description": {
+            "section": "سجل نزاعات العقد",
+            "label": "وصف النزاع",
+            "guidance": "صف النزاع أو المطالبة.",
+            "value": ""
+        },
+        "dispute_resolution": {
+            "section": "سجل نزاعات العقد",
+            "label": "التسوية",
+            "guidance": "صف التسوية.",
+            "value": ""
+        },
+        "date_resolved": {
+            "section": "سجل نزاعات العقد",
+            "label": "تاريخ الحل",
+            "guidance": "أدخل تاريخ حل النزاع أو المطالبة.",
+            "value": ""
+        },
+        "completion_date": {
+            "section": "إتمام العقد والدفعة النهائية",
+            "label": "تاريخ إتمام العقد",
+            "guidance": "أدخل تاريخ إتمام العقد.",
+            "value": ""
+        },
+        "signed_off_by": {
+            "section": "إتمام العقد والدفعة النهائية",
+            "label": "تم الاعتماد من",
+            "guidance": "سجل من اعتمد إتمام العقد.",
+            "value": ""
+        },
+        "final_payment_date": {
+            "section": "إتمام العقد والدفعة النهائية",
+            "label": "تاريخ الدفعة النهائية",
+            "guidance": "أدخل تاريخ الدفعة النهائية.",
+            "value": ""
+        },
+        "comments": {
+            "section": "التعليقات",
+            "label": "التعليقات",
+            "guidance": "أضف أي تعليقات تضفي على تقرير الإغلاق صلة إضافية.",
             "value": ""
         }
     }
