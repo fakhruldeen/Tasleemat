@@ -1,38 +1,63 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Product Backlog template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Product Backlog",
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "PRODUCT BACKLOG",
     "document_reference": "PMO-04.02.08",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Product Backlog Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **ID:** \n- **A unique identifier:** \n- **Summary description:** A brief description of the requirement or need. The description should be no more than one or two sentences.\n- **Priority:** A way of prioritizing or ranking the requirements. This can be in summary groups, such as high, medium and low, or it can be numbered 1, 2, 3.\n- **Story:** This field can either be a user story that is prioritized, or it can indicate the name of a user story that is recorded elsewhere.\n- **Status:** Indicates if the requirement is not started, in progress, or complete.",
-            "value": [
-                {
-                    "ID": "",
-                    "A unique identifier": "",
-                    "Summary description": "",
-                    "Priority": "",
-                    "Story": "",
-                    "Status": ""
-                },
-                {
-                    "ID": "",
-                    "A unique identifier": "",
-                    "Summary description": "",
-                    "Priority": "",
-                    "Story": "",
-                    "Status": ""
-                },
-                {
-                    "ID": "",
-                    "A unique identifier": "",
-                    "Summary description": "",
-                    "Priority": "",
-                    "Story": "",
-                    "Status": ""
-                }
-            ]
+        "f01_ID": {
+            "section": "Backlog",
+            "label": "ID",
+            "guidance": "A unique identifier. Keep it short, stable, and never reused, because the same ID appears in the trace from vision to release and a reassigned ID breaks that trace without anyone noticing.",
+            "value": ""
+        },
+        "f02_Summary_Description": {
+            "section": "Backlog",
+            "label": "Summary Description",
+            "guidance": "A brief description of the requirement or need, in no more than one or two sentences. If it needs a paragraph, the item is probably two items, or it belongs in the vision rather than the backlog.",
+            "value": ""
+        },
+        "f03_Priority": {
+            "section": "Backlog",
+            "label": "Priority",
+            "guidance": "A way of ranking the requirements. Either summary groups such as high, medium, and low, or a numbered rank. State which scheme is in use, because a backlog that mixes the two cannot be sorted.",
+            "value": ""
+        },
+        "f04_Story": {
+            "section": "Backlog",
+            "label": "Story",
+            "guidance": "A prioritised user story, or the name of a user story recorded elsewhere. Where the story lives elsewhere, reference it rather than copying it, so the two do not diverge.",
+            "value": ""
+        },
+        "f05_Status": {
+            "section": "Backlog",
+            "label": "Status",
+            "guidance": "Whether the requirement is not started, in progress, or complete. Use the same set of values for every row, since a status column with mixed vocabularies cannot be filtered.",
+            "value": ""
+        },
+        "f06_Story_Points": {
+            "section": "Backlog",
+            "label": "Story Points",
+            "guidance": "Estimating information such as story points. An estimate is a prediction made to compare against actuals, so record it even when it is a rough guess, and do not revise it silently.",
+            "value": ""
+        },
+        "f07_Target_Sprint_or_Release": {
+            "section": "Backlog",
+            "label": "Target Sprint or Release",
+            "guidance": "Which sprint or release the item will be incorporated into. Treat this as a forecast: an item that keeps moving between releases is telling you something, and the churn is worth seeing.",
+            "value": ""
+        },
+        "f08_User_Type": {
+            "section": "Backlog",
+            "label": "User Type",
+            "guidance": "The user type that will benefit, such as customer, administrator, or manager. This is what shows which parts of the organisation the release actually serves.",
+            "value": ""
+        },
+        "f09_Category": {
+            "section": "Backlog",
+            "label": "Category",
+            "guidance": "A category, which helps on large projects where the backlog is too big to hold in one view. Categories should reflect how the work is actually sequenced, not how the team happens to be divided.",
+            "value": ""
         }
     }
 }
