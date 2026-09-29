@@ -1,9 +1,27 @@
 <div dir="ltr" style="font-family: Arial, sans-serif;">
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
+Risk audits evaluate the effectiveness of risk identification, risk responses, and the risk
+management process as a whole. Information reviewed can include risk event audits, risk
+response audits, risk management process audits, good practices, and areas for improvement.
+The risk audit is a tool used in process 11.7 Control Risks in the PMBOK Guide - Sixth Edition.
+It is conducted periodically as needed.
+
 Section Instructions:
-*   **Risk ID:** Enter a unique risk identifier.
-*   **Risk statement:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to
+*   **Audit Information:** Record the audit scope, period covered, level of analysis, and the
+    reference documents reviewed (risk management plan, risk register, risk report).
+*   **Risk Event Audits:** For each risk event reviewed, list the event, its cause, the response
+    implemented, and whether the event could have been foreseen or responded to more effectively.
+*   **Risk Response Audits:** For each response reviewed, list the event, the response, whether
+    it was successful, and actions to improve.
+*   **Risk Management Process Audit:** Assess whether Plan Risk Management, Identify Risks,
+    Perform Qualitative Risk Analysis, Perform Quantitative Risk Analysis, Plan Risk Responses,
+    and Control Risks were followed, and identify the tools and techniques used and whether
+    they were successful.
+*   **Good Practices:** Describe practices to share with other projects, including any
+    recommendations to update risk forms, templates, policies, procedures, or processes.
+*   **Areas for Improvement:** Describe practices needing improvement, the improvement plan,
+    and any follow-up dates or information for corrective action.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -15,17 +33,90 @@ Section Instructions:
 
 ---
 
-### Risk ID
-<!-- Enter a unique risk identifier. -->
+## 1. Audit Information
 
-> [ Add details... ]
+| Field | Entry |
+| :--- | :--- |
+| **Audit Scope** | [ Add details... ] |
+| **Period Covered** | [ Add details... ] |
+| **Level of Analysis** | [ Add details... ] |
+| **Reference Documents Reviewed** | [ Add details... ] |
+| **Audit Method** | [ Add details... ] |
 
 ---
 
-### Risk statement
-<!-- Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to -->
+## 2. Risk Event Audits
+<!-- Review the risk events recorded in the risk register. -->
+
+| Risk Event | Cause | Response Implemented | Comment |
+| :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+> **Comment guidance:** Discuss if there was any way to have foreseen the event and responded to it more effectively.
+
+---
+
+## 3. Risk Response Audits
+<!-- Review the risk responses recorded in the risk register. -->
+
+| Risk Event | Response | Successful? | Actions to Improve |
+| :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 4. Risk Management Process Audit
+
+### 4.1 Process Compliance
+
+| Risk Management Process | Followed as Planned? | Observation |
+| :--- | :--- | :--- |
+| **Plan Risk Management** | [ Add details... ] | [ Add details... ] |
+| **Identify Risks** | [ Add details... ] | [ Add details... ] |
+| **Perform Qualitative Risk Analysis** | [ Add details... ] | [ Add details... ] |
+| **Perform Quantitative Risk Analysis** | [ Add details... ] | [ Add details... ] |
+| **Plan Risk Responses** | [ Add details... ] | [ Add details... ] |
+| **Control Risks** | [ Add details... ] | [ Add details... ] |
+
+### 4.2 Tools and Techniques
+
+| Risk Management Process | Tools and Techniques Used | Successful? |
+| :--- | :--- | :--- |
+| **Identify Risks** | [ Add details... ] | [ Add details... ] |
+| **Perform Qualitative Risk Analysis** | [ Add details... ] | [ Add details... ] |
+| **Perform Quantitative Risk Analysis** | [ Add details... ] | [ Add details... ] |
+| **Plan Risk Responses** | [ Add details... ] | [ Add details... ] |
+| **Control Risks** | [ Add details... ] | [ Add details... ] |
+
+> **Tools and techniques guidance:** Identify tools and techniques used in the various risk management processes and whether they were successful.
+
+---
+
+## 5. Good Practices
+<!-- Describe any practices that should be shared for use on other projects. -->
 
 > [ Add details... ]
+
+> **Guidance:** Include any recommendations to update and improve risk forms, templates, policies, procedures, or processes to ensure these practices are repeatable.
+
+---
+
+## 6. Areas for Improvement
+
+| Area for Improvement | Improvement Plan | Follow-up Date / Corrective Action |
+| :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 7. Comments
+[ Add details... ]
 
 ---
 

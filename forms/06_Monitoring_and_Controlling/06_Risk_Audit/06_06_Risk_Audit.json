@@ -1,16 +1,79 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RISK AUDIT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RISK AUDIT REPORT based on the provided project context.\n\nRisk audits evaluate the effectiveness of risk identification, risk responses, and the risk management process as a whole. The risk audit is a tool used in process 11.7 Control Risks in the PMBOK Guide - Sixth Edition, and is conducted periodically as needed.\n\nContext & Definition: Risk audits are used to evaluate the effectiveness of the risk identification, risk responses, and risk management process as a whole.\n\nAlignment: Risk management plan, Risk register, Risk report.",
     "form_name": "RISK AUDIT REPORT",
     "document_reference": "PMO-06.06",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Risk ID": {
-            "guidance": "Enter a unique risk identifier.",
+        "Audit Information": {
+            "guidance": "Record the audit scope, period covered, level of analysis, the reference documents reviewed, and the audit method.",
+            "value": {
+                "Audit Scope": "",
+                "Period Covered": "",
+                "Level of Analysis": "",
+                "Reference Documents Reviewed": "",
+                "Audit Method": ""
+            }
+        },
+        "Risk Event Audits": {
+            "guidance": "For each risk event reviewed, list the event from the risk register, its root cause, the response implemented, and a comment on whether the event could have been foreseen or responded to more effectively.",
+            "value": [
+                {
+                    "Risk Event": "",
+                    "Cause": "",
+                    "Response Implemented": "",
+                    "Comment": ""
+                }
+            ]
+        },
+        "Risk Response Audits": {
+            "guidance": "For each risk response reviewed, list the risk event, the response from the risk register, whether the response was successful, and any actions to improve.",
+            "value": [
+                {
+                    "Risk Event": "",
+                    "Response": "",
+                    "Successful": "",
+                    "Actions to Improve": ""
+                }
+            ]
+        },
+        "Risk Management Process Audit - Process Compliance": {
+            "guidance": "For each risk management process, indicate whether it was followed as indicated in the risk management plan, and record any observation.",
+            "value": [
+                {
+                    "Process": "",
+                    "Followed": "",
+                    "Observation": ""
+                }
+            ]
+        },
+        "Risk Management Process Audit - Tools and Techniques": {
+            "guidance": "Identify the tools and techniques used in the various risk management processes and whether they were successful.",
+            "value": [
+                {
+                    "Process": "",
+                    "Tools and Techniques Used": "",
+                    "Successful": ""
+                }
+            ]
+        },
+        "Good Practices": {
+            "guidance": "Describe any practices that should be shared for use on other projects. Include any recommendations to update and improve risk forms, templates, policies, procedures, or processes to ensure these practices are repeatable.",
             "value": ""
         },
-        "Risk statement": {
-            "guidance": "Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to",
+        "Areas for Improvement": {
+            "guidance": "Describe any practices that need improvement, the improvement plan, and any follow-up dates or information for corrective action.",
+            "value": [
+                {
+                    "Area for Improvement": "",
+                    "Improvement Plan": "",
+                    "Follow-up Date": "",
+                    "Corrective Action": ""
+                }
+            ]
+        },
+        "Comments": {
+            "guidance": "Document any comments that add relevance to this report.",
             "value": ""
         }
     }

@@ -8,7 +8,7 @@ nav_order: 1
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
-# Project Artifact: Risk Audit
+# Project Artifact: Risk Audit Report
 
 **Document Reference:** `PMO-06.06`
 
@@ -17,7 +17,7 @@ This document provides a comprehensive, professional reference to understand the
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Risk Audit**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+A formal Tasleemat-aligned project document known as the **Risk Audit Report**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
 
 ---
 
@@ -27,7 +27,7 @@ To ensure strict alignment with Tasleemat standards, establish transparency, mon
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **MONITORING AND CONTROLLING Process Group** of the project lifecycle.
+This artifact is primarily prepared, utilized, and updated during the **MONITORING AND CONTROLLING Process Group** of the project lifecycle. The risk audit is a tool used in process **11.7 Control Risks** in the PMBOK® Guide – Sixth Edition, and is conducted **periodically as needed**.
 
 ---
 
@@ -37,16 +37,27 @@ This artifact is primarily prepared, utilized, and updated during the **MONITORI
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+*   To make the audit more robust you can include an assessment of the effectiveness of the risk management approach.
+*   Large organizations often have policies and procedures associated with project risk management. If this is the case in your organization, include an assessment of compliance with the policies and procedures.
+*   Many organizations don't track opportunity management. You can expand the scope of the audit to include opportunity management if appropriate.
+*   For larger projects you may want to include information on overall risk in addition to risk events.
 
 ### Alignment
-[ Add Alignment Information Here ]
+The risk audit should be aligned and consistent with the following documents:
+*   Risk management plan
+*   Risk register
+*   Risk report
 
 ### 5. How?
-To accurately and professionally complete the **RISK AUDIT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **RISK AUDIT REPORT**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-*   **Risk ID:** Enter a unique risk identifier.
-*   **Risk statement:** Describe the risk event or condition. A risk statement is usually phrased as “EVENT may occur, causing IMPACT” or “If CONDITION exists, EVENT may occur, leading to
+*   **Audit Information:** Record the audit scope, period covered, level of analysis, the reference documents reviewed, and the audit method.
+*   **Risk Event Audits:** For each risk event reviewed, list the event from the risk register, its root cause, the response implemented, and a comment on whether the event could have been foreseen or responded to more effectively.
+*   **Risk Response Audits:** For each risk response reviewed, list the risk event, the response from the risk register, whether the response was successful, and any actions to improve.
+*   **Risk Management Process Audit:** Assess whether Plan Risk Management, Identify Risks, Perform Qualitative Risk Analysis, Perform Quantitative Risk Analysis, Plan Risk Responses, and Control Risks were followed, and identify the tools and techniques used and whether they were successful.
+*   **Good Practices:** Describe practices to share with other projects, including any recommendations to update risk forms, templates, policies, procedures, or processes.
+*   **Areas for Improvement:** Describe practices needing improvement, the improvement plan, and any follow-up dates or information for corrective action.
+*   **Comments:** Document any comments that add relevance to this report.
 
 ---
 
