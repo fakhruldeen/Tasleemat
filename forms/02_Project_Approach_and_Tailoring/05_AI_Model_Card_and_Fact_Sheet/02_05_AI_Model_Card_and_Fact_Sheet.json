@@ -1,33 +1,243 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this AI MODEL CARD AND FACT SHEET template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "AI MODEL CARD AND FACT SHEET",
-    "document_reference": "PMO-02.05",
-    "project_title": "",
-    "date_prepared": "",
-    "fields": {
-        "Model Details": {
-            "guidance": "Architecture, version, developer.",
-            "value": ""
-        },
-        "Intended Use": {
-            "guidance": "Primary and secondary use cases.",
-            "value": ""
-        },
-        "Factors": {
-            "guidance": "Demographics or environmental factors affecting performance.",
-            "value": ""
-        },
-        "Metrics": {
-            "guidance": "Accuracy, precision, recall, etc.",
-            "value": ""
-        },
-        "Training Data": {
-            "guidance": "Datasets used to train the model.",
-            "value": ""
-        },
-        "Ethical Considerations": {
-            "guidance": "Potential risks or biases.",
-            "value": ""
-        }
+  "_llm_instructions": "Fill out the 'project_title' and 'date_prepared' properties, and the 'value' property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Name the model version, the group affected, and the threshold that triggers action, rather than recording a category; a governance plan that says 'encrypted', 'minimised' and 'monitored' describes an intention and not a system, and the difference only becomes visible when something goes wrong and no one can say what was in force.",
+  "form_name": "AI MODEL CARD AND FACT SHEET",
+  "document_reference": "PMO-02.05",
+  "project_title": "",
+  "date_prepared": "",
+  "fields": {
+    "f01_Model_Name_and_Version": {
+      "section": "Model Identification and Provenance",
+      "label": "Model Name and Version",
+      "guidance": "The model at a specific version, with the date that version was produced. A card that names a model rather than a version describes whichever build happens to be deployed when it is read, and the answer is rarely the one that was assessed.",
+      "value": ""
+    },
+    "f02_Developer_and_Provenance": {
+      "section": "Model Identification and Provenance",
+      "label": "Developer and Provenance",
+      "guidance": "Who built it, whether it was trained in-house, fine-tuned, or acquired, and from what base model. Provenance determines which of the sections that follow can be answered at all, and it is usually the section that is missing when a question is asked.",
+      "value": ""
+    },
+    "f03_Architecture_and_Configuration": {
+      "section": "Model Identification and Provenance",
+      "label": "Architecture and Configuration",
+      "guidance": "The architecture family, the parameter count, and the settings that affect behaviour. The settings are the part that matters, because the same architecture with different decoding parameters is a different system.",
+      "value": ""
+    },
+    "f04_Training_Method_and_Compute": {
+      "section": "Model Identification and Provenance",
+      "label": "Training Method and Compute",
+      "guidance": "How it was trained, over what period, and at what cost. Compute is recorded because it bounds reproducibility: a result that needed a compute allocation nobody can obtain again is not a result that can be re-derived.",
+      "value": ""
+    },
+    "f05_Licence_and_Usage_Terms": {
+      "section": "Model Identification and Provenance",
+      "label": "Licence and Usage Terms",
+      "guidance": "The licence, who may use it, and under what restrictions. A model used outside its licence is a legal exposure that no technical section of this card addresses.",
+      "value": ""
+    },
+    "f06_Related_Artefacts": {
+      "section": "Model Identification and Provenance",
+      "label": "Related Artefacts",
+      "guidance": "The model, the code, the weights and the data, each with where it lives. A card that lists no locations is a description, and a description cannot be checked against anything.",
+      "value": ""
+    },
+    "f07_Primary_Use": {
+      "section": "Intended Use and Out-of-Scope Use",
+      "label": "Primary Use",
+      "guidance": "The task the model is for, stated as an input and an output. An input and an output can be tested; a purpose cannot.",
+      "value": ""
+    },
+    "f08_Secondary_Use": {
+      "section": "Intended Use and Out-of-Scope Use",
+      "label": "Secondary Use",
+      "guidance": "What else it may legitimately be used for, if anything. Recorded separately because a use that is merely tolerated and one that is endorsed need different controls, and a card that lists only the endorsed one hides the tolerated ones.",
+      "value": ""
+    },
+    "f09_Out_of_Scope_Use": {
+      "section": "Intended Use and Out-of-Scope Use",
+      "label": "Out-of-Scope Use",
+      "guidance": "The uses it must not be used for, with the reason for each. This section is the one that makes the card usable by someone deciding whether to deploy it, and a card without it can only say what the model is for.",
+      "value": ""
+    },
+    "f10_User_and_Audience": {
+      "section": "Intended Use and Out-of-Scope Use",
+      "label": "User and Audience",
+      "guidance": "Who operates it, and who is subject to its output. The two are routinely treated as one, and the conflation is how a system that scores applicants comes to be described as a tool that helps recruiters write better.",
+      "value": ""
+    },
+    "f11_Operating_Conditions": {
+      "section": "Intended Use and Out-of-Scope Use",
+      "label": "Operating Conditions",
+      "guidance": "The inputs it expects, the conditions it was tested under, and the conditions under which it should not be used. These are the boundaries of the evaluation in section 4, and a metric read outside them is not a weaker claim, it is a wrong one.",
+      "value": ""
+    },
+    "f12_Human_Oversight_Requirement": {
+      "section": "Intended Use and Out-of-Scope Use",
+      "label": "Human Oversight Requirement",
+      "guidance": "Where a person must review an output before it is acted on. Oversight specified as a general principle rather than as points in a workflow does not survive contact with a deadline.",
+      "value": ""
+    },
+    "f13_Datasets": {
+      "section": "Training Data",
+      "label": "Datasets",
+      "guidance": "Each dataset by name, with its owner and the date it was collected. A dataset named only by type cannot be checked for permission, and permission is what blocks first.",
+      "value": ""
+    },
+    "f14_Provenance_and_Collection_Method": {
+      "section": "Training Data",
+      "label": "Provenance and Collection Method",
+      "guidance": "Where each dataset came from and how it was gathered. Collected data carries the practices of the period and place it came from, whether or not those were examined.",
+      "value": ""
+    },
+    "f15_Demographic_and_Geographic_Coverage": {
+      "section": "Training Data",
+      "label": "Demographic and Geographic Coverage",
+      "guidance": "Who and where the data represents, and who and where it does not. A dataset that represents a population accurately says so; the field matters because its absence is what allows a model to be applied to a population nobody measured.",
+      "value": ""
+    },
+    "f16_Time_Period_Covered": {
+      "section": "Training Data",
+      "label": "Time Period Covered",
+      "guidance": "The span the data covers, and what happened during it. A model trained on a period of stable conditions inherits the assumption that conditions will remain stable, and the card is where that assumption is written down.",
+      "value": ""
+    },
+    "f17_Licence_and_Consent_Basis": {
+      "section": "Training Data",
+      "label": "Licence and Consent Basis",
+      "guidance": "The basis on which each dataset may be used, and whether consent was obtained where it was required. Where consent was not obtained, that is the fact to record, not an absence to leave blank.",
+      "value": ""
+    },
+    "f18_Preprocessing_and_Filtering": {
+      "section": "Training Data",
+      "label": "Preprocessing and Filtering",
+      "guidance": "What was removed, resampled or imputed, and on what basis. Filtering is where a dataset acquires the shape of the population the model will then fail on, and it is rarely the step examined.",
+      "value": ""
+    },
+    "f19_Known_Dataset_Limitations": {
+      "section": "Training Data",
+      "label": "Known Dataset Limitations",
+      "guidance": "What the dataset cannot represent. This is the field that prevents a metric from being read as a general claim, and it is almost always empty.",
+      "value": ""
+    },
+    "f20_Evaluation_Data": {
+      "section": "Evaluation and Performance",
+      "label": "Evaluation Data",
+      "guidance": "The data the evaluation was run on, and whether it is disjoint from the training data. Disjointness is the first thing to check in any evaluation, and its absence invalidates every number in the section.",
+      "value": ""
+    },
+    "f21_Metrics": {
+      "section": "Evaluation and Performance",
+      "label": "Metrics",
+      "guidance": "Each metric, its value, and the confidence interval or sample size behind it. A single figure with no interval is a point presented as a range, and decisions get made on it.",
+      "value": ""
+    },
+    "f22_Performance_by_Subgroup": {
+      "section": "Evaluation and Performance",
+      "label": "Performance by Subgroup",
+      "guidance": "The same metrics for each group the model affects, with the sample size for each. A subgroup figure from a small sample is not a measurement, and the sample size is what distinguishes the two.",
+      "value": ""
+    },
+    "f23_Baseline_Comparison": {
+      "section": "Evaluation and Performance",
+      "label": "Baseline Comparison",
+      "guidance": "What the model is compared against, and by how much. A model compared only with a trivial baseline can be both better than it and useless.",
+      "value": ""
+    },
+    "f24_Threshold_and_Operating_Point": {
+      "section": "Evaluation and Performance",
+      "label": "Threshold and Operating Point",
+      "guidance": "The threshold in force, and what the alternatives would cost. A model is a set of trade-offs rather than a single system, and the trade-off is only visible once a threshold is fixed.",
+      "value": ""
+    },
+    "f25_Evaluation_Method_and_Limitations": {
+      "section": "Evaluation and Performance",
+      "label": "Evaluation Method and Limitations",
+      "guidance": "How the evaluation was conducted, by whom, and what it does not establish. An evaluation conducted by the team that built the model is legitimate, and it is a fact that belongs on the card.",
+      "value": ""
+    },
+    "f26_Robustness_and_Failure_Modes": {
+      "section": "Evaluation and Performance",
+      "label": "Robustness and Failure Modes",
+      "guidance": "How the model behaves under input it was not tested on, and the known ways it fails. Known failure modes are more useful than a robustness score, because a reader can act on them and cannot act on a score.",
+      "value": ""
+    },
+    "f27_Affected_Groups": {
+      "section": "Ethical, Fairness and Safety Considerations",
+      "label": "Affected Groups",
+      "guidance": "The groups whose outcomes the model determines, named. Groups described in aggregate on the basis of a test are not the same as the group that performs worst on it.",
+      "value": ""
+    },
+    "f28_Known_Bias": {
+      "section": "Ethical, Fairness and Safety Considerations",
+      "label": "Known Bias",
+      "guidance": "The specific ways this model is unfair to this group, stated so that they could be false. A field titled \"bias\" that says the model may be biased is a heading; \"the model scores this group lower on historic completion rates\" is a claim that can be measured and can turn out to be wrong.",
+      "value": ""
+    },
+    "f29_Safety_Risks": {
+      "section": "Ethical, Fairness and Safety Considerations",
+      "label": "Safety Risks",
+      "guidance": "The ways the model could cause harm, by severity, with the conditions under which each arises. Severity is what determines the control, and a risk listed without severity is a list of possibilities.",
+      "value": ""
+    },
+    "f30_Dual_Use_and_Misuse_Potential": {
+      "section": "Ethical, Fairness and Safety Considerations",
+      "label": "Dual-Use and Misuse Potential",
+      "guidance": "How the model could be used to cause harm, and what has been done about it. Relevant to a model that generates as well as one that classifies, and usually unstated.",
+      "value": ""
+    },
+    "f31_Environmental_and_Resource_Impact": {
+      "section": "Ethical, Fairness and Safety Considerations",
+      "label": "Environmental and Resource Impact",
+      "guidance": "The energy and compute consumed, and by whom bears it. Recorded because it is a real cost that appears in no other section, and because it is usually the only figure an external party can verify.",
+      "value": ""
+    },
+    "f32_Data_Privacy_Impact": {
+      "section": "Ethical, Fairness and Safety Considerations",
+      "label": "Data Privacy Impact",
+      "guidance": "What the model can reveal about individuals in its training data, and whether it has been tested for it. Extraction and memorisation are testable, and the test is the only thing that distinguishes a considered answer from an assumption.",
+      "value": ""
+    },
+    "f33_Known_Limitations": {
+      "section": "Limitations, Monitoring and Change Control",
+      "label": "Known Limitations",
+      "guidance": "What the model cannot do, stated plainly. This is the section a reader consults after an incident, and a card that is optimistic in it is a card that will not be consulted a second time.",
+      "value": ""
+    },
+    "f34_Out_of_Distribution_Behaviour": {
+      "section": "Limitations, Monitoring and Change Control",
+      "label": "Out-of-Distribution Behaviour",
+      "guidance": "How the model behaves on inputs unlike its training data, and whether that has been measured. A model given a population it never saw does not fail loudly, which is what makes this worth recording.",
+      "value": ""
+    },
+    "f35_Production_Monitoring": {
+      "section": "Limitations, Monitoring and Change Control",
+      "label": "Production Monitoring",
+      "guidance": "What is watched after deployment, against what baseline, and how often. Drift is a property of the relationship between the model and the world, not of the model, so a launch measurement is the first of a series.",
+      "value": ""
+    },
+    "f36_Monitoring_Thresholds": {
+      "section": "Limitations, Monitoring and Change Control",
+      "label": "Monitoring Thresholds",
+      "guidance": "What result triggers action, written before the result is known. A threshold set after seeing a number is a description of that number.",
+      "value": ""
+    },
+    "f37_Retraining_and_Update_Policy": {
+      "section": "Limitations, Monitoring and Change Control",
+      "label": "Retraining and Update Policy",
+      "guidance": "When the model will be retrained, what triggers it, and who approves. Without this the model is updated whenever someone has time, and the change is then invisible to everything above it in this card.",
+      "value": ""
+    },
+    "f38_Version_Change_Record": {
+      "section": "Limitations, Monitoring and Change Control",
+      "label": "Version Change Record",
+      "guidance": "What changed between this version and the last, and why. Models change often and silently, and a card with no change record cannot answer what was in force when an incident occurred.",
+      "value": ""
+    },
+    "f39_Decommissioning_Plan": {
+      "section": "Limitations, Monitoring and Change Control",
+      "label": "Decommissioning Plan",
+      "guidance": "How and when the model will be retired, and what happens to the data it holds. A model in production with no retirement plan is a system whose cost grows and whose obligations are never discharged.",
+      "value": ""
     }
+  }
 }
