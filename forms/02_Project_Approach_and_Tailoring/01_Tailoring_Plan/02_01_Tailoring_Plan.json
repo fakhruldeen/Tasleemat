@@ -1,25 +1,99 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this TAILORING PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "TAILORING PLAN",
-    "document_reference": "PMO-02.01",
-    "project_title": "",
-    "date_prepared": "",
-    "fields": {
-        "Process/Artifact": {
-            "guidance": "The standard process or artifact being considered.",
-            "value": ""
-        },
-        "Tailoring Decision": {
-            "guidance": "Added, removed, or modified?",
-            "value": ""
-        },
-        "Justification": {
-            "guidance": "Reasoning for the tailoring decision.",
-            "value": ""
-        },
-        "Approver": {
-            "guidance": "Person who approved the change.",
-            "value": ""
-        }
+  "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables. Record the consequence of each decision, not only what it improves: a tailoring plan that shows only benefits reads as a summary of intentions rather than a set of decisions that can be reviewed.",
+  "form_name": "Tailoring Plan",
+  "document_reference": "PMO-02.01",
+  "project_title": "",
+  "date_prepared": "",
+  "fields": {
+    "f01_Organizational_Methodology": {
+      "section": "1. Tailoring Basis",
+      "label": "Organizational Methodology",
+      "guidance": "The methodology this project is tailoring from, with its version. The version matters because a decision to deviate from a methodology is meaningless without knowing which one, and two projects claiming to follow the same methodology may be following different editions of it.",
+      "value": ""
+    },
+    "f02_Tailoring_Drivers": {
+      "section": "1. Tailoring Basis",
+      "label": "Tailoring Drivers",
+      "guidance": "What makes this project different from the standard: size, risk, complexity, regulatory context, or organisational constraint. A tailoring plan written without drivers lists arbitrary decisions, because where nothing is forcing a change any change looks equally reasonable.",
+      "value": ""
+    },
+    "f03_Applicable_Standards": {
+      "section": "1. Tailoring Basis",
+      "label": "Applicable Standards",
+      "guidance": "The governance, quality or regulatory standards that apply regardless of tailoring, and which cannot be traded away. These are the floor the tailoring operates above, and a plan that does not state them invites a decision to drop a mandatory control as an efficiency measure.",
+      "value": ""
+    },
+    "f04_Inherited_Tailoring": {
+      "section": "1. Tailoring Basis",
+      "label": "Inherited Tailoring",
+      "guidance": "Any tailoring already decided at programme or portfolio level that this project inherits rather than makes. Most deviations in a project are inherited, and a plan that records only its own decisions implies it has full control over the approach when it does not.",
+      "value": ""
+    },
+    "f05_Process_or_Artifact": {
+      "section": "2. Tailoring Decisions",
+      "label": "Process or Artifact",
+      "guidance": "What is being tailored, named specifically enough to be found in the methodology. \"The risk process\" is not a decision anyone can approve, because there are several and the one approved may not be the one implemented.",
+      "value": ""
+    },
+    "f06_Standard_Requirement": {
+      "section": "2. Tailoring Decisions",
+      "label": "Standard Requirement",
+      "guidance": "What the methodology requires by default, stated before the change. Without the default written down the reader cannot tell whether the tailoring loosened a requirement or only renamed it, which is the commonest form of undeclared tailoring.",
+      "value": ""
+    },
+    "f07_Decision": {
+      "section": "2. Tailoring Decisions",
+      "label": "Decision",
+      "guidance": "Added, removed, or modified, and specifically what changes. Record the effect on the process itself, not the intent, since \"simplified\" is an intent and \"the weekly risk review is replaced by a fortnightly one\" is an effect.",
+      "value": ""
+    },
+    "f08_Rationale": {
+      "section": "2. Tailoring Decisions",
+      "label": "Rationale",
+      "guidance": "Why this change is right for this project, tied to a driver. A rationale that would be equally valid for any project is not a rationale, and is the usual reason a tailoring decision cannot survive a later challenge.",
+      "value": ""
+    },
+    "f09_Consequence": {
+      "section": "2. Tailoring Decisions",
+      "label": "Consequence",
+      "guidance": "What becomes harder because of the change. Every tailoring has a cost, and a plan that records only what improves is a summary of intentions; recording what is given up is what makes the decision reviewable.",
+      "value": ""
+    },
+    "f10_Reversibility": {
+      "section": "2. Tailoring Decisions",
+      "label": "Reversibility",
+      "guidance": "Whether the change can be undone, and what would trigger reversing it. Most tailoring is reversible in principle and irreversible in practice, because by the time the cost becomes clear the team has built its way around the change.",
+      "value": ""
+    },
+    "f11_Impact_on_Artifacts": {
+      "section": "2. Tailoring Decisions",
+      "label": "Impact on Artifacts",
+      "guidance": "Which downstream artifacts change as a result, such as the risk register, the schedule format, or the reporting cadence. A decision that changes a process without changing the artifacts that process produces leaves two versions of the truth in circulation.",
+      "value": ""
+    },
+    "f12_Decision_Authority": {
+      "section": "3. Governance of Tailoring",
+      "label": "Decision Authority",
+      "guidance": "Who may approve a tailoring decision, and at what level each class of change is approved. Without an authority map the project either escalates everything or decides things nobody authorised.",
+      "value": ""
+    },
+    "f13_Review_and_Reapproval": {
+      "section": "3. Governance of Tailoring",
+      "label": "Review and Reapproval",
+      "guidance": "When the plan is reviewed, and what would cause a decision to be reopened. Tailoring decisions are rarely revisited, so the trigger has to exist before the decision rather than being invented once the cost is known.",
+      "value": ""
+    },
+    "f14_Compliance_Check": {
+      "section": "3. Governance of Tailoring",
+      "label": "Compliance Check",
+      "guidance": "How the plan is checked against the applicable standards, and who performs the check. A self-check performed by the party that wanted the change is not a check.",
+      "value": ""
+    },
+    "f15_Change_Control_Link": {
+      "section": "3. Governance of Tailoring",
+      "label": "Change Control Link",
+      "guidance": "How a later change to a baselined decision is raised, since tailoring is baselined and any subsequent change is a change to the plan rather than an update to it.",
+      "value": ""
     }
+  }
 }
