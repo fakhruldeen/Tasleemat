@@ -9,28 +9,78 @@ Form: PRODUCT VISION (Instructions)
 > This document serves as the detailed instruction set for generating the `PRODUCT VISION`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> The product vision provides the future view of the product being developed. It is aspirational, yet achievable and realistic, and is developed at the very beginning of a project, where it is often an input to the business case. On agile-based projects it is often used in place of a project charter, and it is developed once, at the beginning.
+
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> This vision must be consistent with: Product backlog, Roadmap, Release plan.
 
 ---
 
-### Target customer
-**Instruction:** The person or group who will buy or use the product.
+## Vision Elements
+
+### Target Customer
+
+**Instruction:** The person or group who will buy or use the product. Name who they are in a way that lets a reader tell whether a given person is in scope, because "small business" and "enterprise customer" lead to different products.
+
+**Generated value:** [ Add details... ]
 
 ---
 
 ### Needs
-**Instruction:** The needs or requirements that the product will address.
+
+**Instruction:** The needs or requirements that the product will address. State the underlying need rather than the feature that answers it, because features can be built many ways and the need cannot.
+
+**Generated value:** [ Add details... ]
 
 ---
 
-### Product and key attributes
-**Instruction:** A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements.
+### Product and Key Attributes
+
+**Instruction:** A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements. Keep this at the top level: it is a vision, not a specification, and detail added here will age badly before the backlog is written.
+
+**Generated value:** [ Add details... ]
 
 ---
 
-### Key benefit
-**Instruction:** Describes why the customer would buy the product.
+### Key Benefit
+
+**Instruction:** Why the customer would buy the product. One benefit, stated in the customer's terms rather than the team's. If several benefits compete, record the primary one here and the others below, because a vision that promises everything commits to nothing.
+
+**Generated value:** [ Add details... ]
+
+---
+
+## Tailoring Detail
+
+### Business Goals
+
+**Instruction:** The business goals the product is aligned to. This is what makes a vision arguable: without it, "key benefit" cannot be weighed against a competing use of the same budget.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Competitive Position
+
+**Instruction:** The key competitors, and how this product will be better. "Better" must be measured on something the customer cares about; being newer or cheaper to build is not the same thing.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Differentiation
+
+**Instruction:** What differentiates this product from similar products in the market. If nothing does, that is a finding worth recording now rather than discovering after the product is built.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Vision Statement
+
+**Instruction:** The whole vision in a sentence or two, once the sections above are settled. Write it last, from what the sections concluded, not first as a summary of what was intended.
+
+**Generated value:** [ Add details... ]
+
+---
 

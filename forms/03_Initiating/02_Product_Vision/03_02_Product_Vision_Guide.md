@@ -12,50 +12,91 @@ nav_order: 1
 
 **Document Reference:** `PMO-03.02`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Product Vision** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Product Vision** in alignment with
+the Tasleemat framework.
 
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Product Vision**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+A formal Tasleemat-aligned project document known as the **Product Vision**,
+which provides the future view of the product being developed. It is
+aspirational, yet achievable and realistic, and is developed at the very
+beginning of a project, where it is often an input to the business case. On
+agile-based projects it is often used in place of a project charter.
+
+It records four elements: the target customer, the needs the product will
+address, the product and its key attributes, and the key benefit. It also
+carries the business goals, the competitive position, the differentiation,
+and the vision statement itself, each of which the tailoring guidance calls
+for.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+To keep the product pointed at a real customer and a real need while the
+detail is negotiated later, and to give the business case something concrete
+to be tested against.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **INITIATING Process Group** of the project lifecycle.
+This artifact is prepared at the **INITIATING** Process Group of the project
+lifecycle. It is developed once, at the very beginning of the project. If it
+is revised later, record what changed and why, since the backlog and the
+roadmap will have been built on the earlier version.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+**Responsibilities:** Developed by the Product Owner with the Sponsor, agreed
+with the target customer or their representative, and signed off by the
+Project Sponsor or Client.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+*   Document the business goals that the product is aligned to.
+*   Identify key competitors and how this product will be better.
+*   Describe what differentiates this product from similar products in the
+    market.
+*   You can combine all the information into a sentence or two, or you can
+    follow the formula shown in the form. The sections are there to be filled
+    or removed, not all to be completed.
+*   The vision is written once, at the start. Record any later revision and
+    its reason.
+
+---
 
 ### Alignment
-[ Add Alignment Information Here ]
+This product vision should be aligned and consistent with the following
+documents:
+*   Product backlog
+*   Roadmap
+*   Release plan
+
+---
 
 ### 5. How?
-To accurately and professionally complete the **PRODUCT VISION**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **PRODUCT VISION**, the responsible party
+must populate the following sections based on the project context (ensure
+`parameters.md` is referenced for global project variables):
 
-*   **Target customer:** The person or group who will buy or use the product.
-*   **Needs:** The needs or requirements that the product will address.
-*   **Product and key attributes:** A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements.
-*   **Key benefit:** Describes why the customer would buy the product.
+*   **Target Customer:** The person or group who will buy or use the product. Name who they are in a way that lets a reader tell whether a given person is in scope, because "small business" and "enterprise customer" lead to different products.
+*   **Needs:** The needs or requirements that the product will address. State the underlying need rather than the feature that answers it, because features can be built many ways and the need cannot.
+*   **Product and Key Attributes:** A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements. Keep this at the top level: it is a vision, not a specification, and detail added here will age badly before the backlog is written.
+*   **Key Benefit:** Why the customer would buy the product. One benefit, stated in the customer's terms rather than the team's. If several benefits compete, record the primary one here and the others below, because a vision that promises everything commits to nothing.
+*   **Business Goals:** The business goals the product is aligned to. This is what makes a vision arguable: without it, "key benefit" cannot be weighed against a competing use of the same budget.
+*   **Competitive Position:** The key competitors, and how this product will be better. "Better" must be measured on something the customer cares about; being newer or cheaper to build is not the same thing.
+*   **Differentiation:** What differentiates this product from similar products in the market. If nothing does, that is a finding worth recording now rather than discovering after the product is built.
+*   **Vision Statement:** The whole vision in a sentence or two, once the sections above are settled. Write it last, from what the sections concluded, not first as a summary of what was intended.
 
 ---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](03_02_Product_Vision_Template.md)
 * [🤖 LLM Generation Prompt](03_02_Product_Vision.md)
-* [📊 Data Schema (JSON)](03_02_Product_Vision.json)
+* [📊 Data Structure (JSON)](03_02_Product_Vision.json)
 * [📈 Tabular Data (CSV)](03_02_Product_Vision.csv)
 
 </div>

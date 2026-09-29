@@ -1,5 +1,9 @@
-Field,Guidance,LLM_Generated_Value
-Target customer,The person or group who will buy or use the product.,
-Needs,The needs or requirements that the product will address.,
-Product and key attributes,"A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements.",
-Key benefit,Describes why the customer would buy the product.,
+Section,Field,Guidance,LLM_Generated_Value
+Vision Elements,Target Customer,"The person or group who will buy or use the product. Name who they are in a way that lets a reader tell whether a given person is in scope, because ""small business"" and ""enterprise customer"" lead to different products.",
+Vision Elements,Needs,"The needs or requirements that the product will address. State the underlying need rather than the feature that answers it, because features can be built many ways and the need cannot.",
+Vision Elements,Product and Key Attributes,"A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements. Keep this at the top level: it is a vision, not a specification, and detail added here will age badly before the backlog is written.",
+Vision Elements,Key Benefit,"Why the customer would buy the product. One benefit, stated in the customer's terms rather than the team's. If several benefits compete, record the primary one here and the others below, because a vision that promises everything commits to nothing.",
+Tailoring Detail,Business Goals,"The business goals the product is aligned to. This is what makes a vision arguable: without it, ""key benefit"" cannot be weighed against a competing use of the same budget.",
+Tailoring Detail,Competitive Position,"The key competitors, and how this product will be better. ""Better"" must be measured on something the customer cares about; being newer or cheaper to build is not the same thing.",
+Tailoring Detail,Differentiation,"What differentiates this product from similar products in the market. If nothing does, that is a finding worth recording now rather than discovering after the product is built.",
+Tailoring Detail,Vision Statement,"The whole vision in a sentence or two, once the sections above are settled. Write it last, from what the sections concluded, not first as a summary of what was intended.",

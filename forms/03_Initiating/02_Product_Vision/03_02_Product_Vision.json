@@ -1,24 +1,56 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PRODUCT VISION template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "PRODUCT VISION STATEMENT",
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "PRODUCT VISION",
     "document_reference": "PMO-03.02",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Target customer": {
-            "guidance": "The person or group who will buy or use the product.",
+        "f01_Target_Customer": {
+            "section": "Vision Elements",
+            "label": "Target Customer",
+            "guidance": "The person or group who will buy or use the product. Name who they are in a way that lets a reader tell whether a given person is in scope, because \"small business\" and \"enterprise customer\" lead to different products.",
             "value": ""
         },
-        "Needs": {
-            "guidance": "The needs or requirements that the product will address.",
+        "f02_Needs": {
+            "section": "Vision Elements",
+            "label": "Needs",
+            "guidance": "The needs or requirements that the product will address. State the underlying need rather than the feature that answers it, because features can be built many ways and the need cannot.",
             "value": ""
         },
-        "Product and key attributes": {
-            "guidance": "A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements.",
+        "f03_Product_and_Key_Attributes": {
+            "section": "Vision Elements",
+            "label": "Product and Key Attributes",
+            "guidance": "A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements. Keep this at the top level: it is a vision, not a specification, and detail added here will age badly before the backlog is written.",
             "value": ""
         },
-        "Key benefit": {
-            "guidance": "Describes why the customer would buy the product.",
+        "f04_Key_Benefit": {
+            "section": "Vision Elements",
+            "label": "Key Benefit",
+            "guidance": "Why the customer would buy the product. One benefit, stated in the customer's terms rather than the team's. If several benefits compete, record the primary one here and the others below, because a vision that promises everything commits to nothing.",
+            "value": ""
+        },
+        "f05_Business_Goals": {
+            "section": "Tailoring Detail",
+            "label": "Business Goals",
+            "guidance": "The business goals the product is aligned to. This is what makes a vision arguable: without it, \"key benefit\" cannot be weighed against a competing use of the same budget.",
+            "value": ""
+        },
+        "f06_Competitive_Position": {
+            "section": "Tailoring Detail",
+            "label": "Competitive Position",
+            "guidance": "The key competitors, and how this product will be better. \"Better\" must be measured on something the customer cares about; being newer or cheaper to build is not the same thing.",
+            "value": ""
+        },
+        "f07_Differentiation": {
+            "section": "Tailoring Detail",
+            "label": "Differentiation",
+            "guidance": "What differentiates this product from similar products in the market. If nothing does, that is a finding worth recording now rather than discovering after the product is built.",
+            "value": ""
+        },
+        "f08_Vision_Statement": {
+            "section": "Tailoring Detail",
+            "label": "Vision Statement",
+            "guidance": "The whole vision in a sentence or two, once the sections above are settled. Write it last, from what the sections concluded, not first as a summary of what was intended.",
             "value": ""
         }
     }
