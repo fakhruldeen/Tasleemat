@@ -1,44 +1,104 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تدقيق المشتريات هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "املأ 'project_title' و'date_prepared'، وخاصية 'value' لكل حقل باستخدام سياق المشروع. استخدم 'label' لتحديد لغة الإخراج المناسبة. راجع parameters.md للمتغيرات العامة.",
     "form_name": "تقرير تدقيق المشتريات",
     "document_reference": "PMO-06.07",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "What worked well</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "scope_worked_well": {
+            "section": "تدقيق أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "النطاق",
+            "guidance": "صف جوانب نطاق العقد التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "الجودة": {
-            "guidance": "Describe aspects of product quality that were handled well.",
+        "quality_worked_well": {
+            "section": "تدقيق أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "الجودة",
+            "guidance": "صف جوانب جودة المنتج التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "الجدول الزمني": {
-            "guidance": "Describe aspects of the contract schedule that were handled well.",
+        "schedule_worked_well": {
+            "section": "تدقيق أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "الجدول الزمني",
+            "guidance": "صف جوانب الجدول الزمني للعقد التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "التكلفة": {
-            "guidance": "Describe aspects of the contract budget that were handled well.",
+        "cost_worked_well": {
+            "section": "تدقيق أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "التكلفة",
+            "guidance": "صف جوانب ميزانية العقد التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "Other": {
-            "guidance": "Describe any other aspects of the contract or procurement that were handled well.",
+        "other_worked_well": {
+            "section": "تدقيق أداء المورد - ما تمت معالجته بشكل جيد",
+            "label": "أخرى",
+            "guidance": "صف أي جوانب أخرى من العقد أو عملية الشراء التي تمت معالجتها بشكل جيد.",
             "value": ""
         },
-        "Plan": {
-            "guidance": "procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.",
+        "scope_improve": {
+            "section": "تدقيق أداء المورد - ما يمكن تحسينه",
+            "label": "النطاق",
+            "guidance": "صف جوانب نطاق العقد التي يمكن تحسينها.",
             "value": ""
         },
-        "What can be improved</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ أدخل استجابتك المفصلة هنا... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "quality_improve": {
+            "section": "تدقيق أداء المورد - ما يمكن تحسينه",
+            "label": "الجودة",
+            "guidance": "صف جوانب جودة المنتج التي يمكن تحسينها.",
             "value": ""
         },
-        "Conduct": {
-            "guidance": "procurements Control procurements Good practices to share Describe any good practices that can be shared with other projects or that should be incorporated into organization policies, procedures, or processes. Include information on lessons learned.",
+        "schedule_improve": {
+            "section": "تدقيق أداء المورد - ما يمكن تحسينه",
+            "label": "الجدول الزمني",
+            "guidance": "صف جوانب الجدول الزمني للعقد التي يمكن تحسينها.",
             "value": ""
         },
-        "Areas for improvement": {
-            "guidance": "Describe any areas that should be improved with the procurement process. Include information that should be incorporated into policies, procedures, or processes. Include information on lessons learned.",
+        "cost_improve": {
+            "section": "تدقيق أداء المورد - ما يمكن تحسينه",
+            "label": "التكلفة",
+            "guidance": "صف جوانب ميزانية العقد التي يمكن تحسينها.",
+            "value": ""
+        },
+        "other_improve": {
+            "section": "تدقيق أداء المورد - ما يمكن تحسينه",
+            "label": "أخرى",
+            "guidance": "صف أي جوانب أخرى من العقد أو عملية الشراء التي يمكن تحسينها.",
+            "value": ""
+        },
+        "plan_procurements": {
+            "section": "تدقيق عمليات إدارة المشتريات",
+            "label": "تخطيط المشتريات",
+            "guidance": "حدد ما إذا كان قد تم اتباع عملية تخطيط المشتريات، وصف أي أدوات أو تقنيات كانت فعالة لكل عملية شراء.",
+            "value": ""
+        },
+        "conduct_procurements": {
+            "section": "تدقيق عمليات إدارة المشتريات",
+            "label": "تنفيذ المشتريات",
+            "guidance": "حدد ما إذا كان قد تم اتباع عملية تنفيذ المشتريات، وصف أي أدوات أو تقنيات كانت فعالة لكل عملية شراء.",
+            "value": ""
+        },
+        "control_procurements": {
+            "section": "تدقيق عمليات إدارة المشتريات",
+            "label": "التحكم في المشتريات",
+            "guidance": "حدد ما إذا كان قد تم اتباع عملية التحكم في المشتريات، وصف أي أدوات أو تقنيات كانت فعالة لكل عملية شراء.",
+            "value": ""
+        },
+        "good_practices": {
+            "section": "الممارسات الجيدة للمشاركة",
+            "label": "الممارسات الجيدة للمشاركة",
+            "guidance": "صف أي ممارسات جيدة يمكن مشاركتها مع مشاريع أخرى، أو ينبغي إدراجها في سياسات أو إجراءات أو عمليات المؤسسة. واذكر الدروس المستفادة.",
+            "value": ""
+        },
+        "areas_for_improvement": {
+            "section": "مجالات التحسين",
+            "label": "مجالات التحسين",
+            "guidance": "صف أي مجالات ينبغي تحسينها في عملية الشراء. واذكر المعلومات التي ينبغي إدراجها في السياسات أو الإجراءات أو العمليات، واذكر الدروس المستفادة.",
+            "value": ""
+        },
+        "comments": {
+            "section": "التعليقات",
+            "label": "التعليقات",
+            "guidance": "أضف أي تعليقات تضفي على التدقيق صلة إضافية.",
             "value": ""
         }
     }

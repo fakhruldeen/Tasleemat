@@ -1,44 +1,104 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROCUREMENT AUDIT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out 'project_title' and 'date_prepared', and the 'value' property of each field, using the project context. Use 'label' to select the correct output language. Reference parameters.md for global project variables.",
     "form_name": "PROCUREMENT AUDIT REPORT",
     "document_reference": "PMO-06.07",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "What worked well</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "scope_worked_well": {
+            "section": "Vendor Performance Audit - What Worked Well",
+            "label": "Scope",
+            "guidance": "Describe the aspects of contract scope that were handled well.",
             "value": ""
         },
-        "Quality": {
-            "guidance": "Describe aspects of product quality that were handled well.",
+        "quality_worked_well": {
+            "section": "Vendor Performance Audit - What Worked Well",
+            "label": "Quality",
+            "guidance": "Describe the aspects of product quality that were handled well.",
             "value": ""
         },
-        "Schedule": {
-            "guidance": "Describe aspects of the contract schedule that were handled well.",
+        "schedule_worked_well": {
+            "section": "Vendor Performance Audit - What Worked Well",
+            "label": "Schedule",
+            "guidance": "Describe the aspects of the contract schedule that were handled well.",
             "value": ""
         },
-        "Cost": {
-            "guidance": "Describe aspects of the contract budget that were handled well.",
+        "cost_worked_well": {
+            "section": "Vendor Performance Audit - What Worked Well",
+            "label": "Cost",
+            "guidance": "Describe the aspects of the contract budget that were handled well.",
             "value": ""
         },
-        "Other": {
+        "other_worked_well": {
+            "section": "Vendor Performance Audit - What Worked Well",
+            "label": "Other",
             "guidance": "Describe any other aspects of the contract or procurement that were handled well.",
             "value": ""
         },
-        "Plan": {
-            "guidance": "procurements Indicate if each procureDescribe any tools or techniques that ment was followed or not. were effective for each procurement.",
+        "scope_improve": {
+            "section": "Vendor Performance Audit - What Can Be Improved",
+            "label": "Scope",
+            "guidance": "Describe the aspects of contract scope that could be improved.",
             "value": ""
         },
-        "What can be improved</span><br>    </th>  </tr>  <tr>    <td valign=\"top\" style=\"padding: 15px; color: #34495e;\">      <br>[ Provide your detailed response here... ]<br><br><br>    </td>  </tr></table>": {
-            "guidance": "",
+        "quality_improve": {
+            "section": "Vendor Performance Audit - What Can Be Improved",
+            "label": "Quality",
+            "guidance": "Describe the aspects of product quality that could be improved.",
             "value": ""
         },
-        "Conduct": {
-            "guidance": "procurements Control procurements Good practices to share Describe any good practices that can be shared with other projects or that should be incorporated into organization policies, procedures, or processes. Include information on lessons learned.",
+        "schedule_improve": {
+            "section": "Vendor Performance Audit - What Can Be Improved",
+            "label": "Schedule",
+            "guidance": "Describe the aspects of the contract schedule that could be improved.",
             "value": ""
         },
-        "Areas for improvement": {
-            "guidance": "Describe any areas that should be improved with the procurement process. Include information that should be incorporated into policies, procedures, or processes. Include information on lessons learned.",
+        "cost_improve": {
+            "section": "Vendor Performance Audit - What Can Be Improved",
+            "label": "Cost",
+            "guidance": "Describe the aspects of the contract budget that could be improved.",
+            "value": ""
+        },
+        "other_improve": {
+            "section": "Vendor Performance Audit - What Can Be Improved",
+            "label": "Other",
+            "guidance": "Describe any other aspects of the contract or procurement that could be improved.",
+            "value": ""
+        },
+        "plan_procurements": {
+            "section": "Procurement Management Process Audit",
+            "label": "Plan Procurements",
+            "guidance": "Indicate whether Plan Procurements was followed, and describe any tools or techniques that were effective for each procurement.",
+            "value": ""
+        },
+        "conduct_procurements": {
+            "section": "Procurement Management Process Audit",
+            "label": "Conduct Procurements",
+            "guidance": "Indicate whether Conduct Procurements was followed, and describe any tools or techniques that were effective for each procurement.",
+            "value": ""
+        },
+        "control_procurements": {
+            "section": "Procurement Management Process Audit",
+            "label": "Control Procurements",
+            "guidance": "Indicate whether Control Procurements was followed, and describe any tools or techniques that were effective for each procurement.",
+            "value": ""
+        },
+        "good_practices": {
+            "section": "Good Practices to Share",
+            "label": "Good Practices to Share",
+            "guidance": "Describe any good practices that can be shared with other projects, or that should be incorporated into organisational policies, procedures, or processes. Include lessons learned.",
+            "value": ""
+        },
+        "areas_for_improvement": {
+            "section": "Areas for Improvement",
+            "label": "Areas for Improvement",
+            "guidance": "Describe any areas that should be improved in the procurement process. Include information that should be incorporated into policies, procedures, or processes, and include lessons learned.",
+            "value": ""
+        },
+        "comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Add any comments that will add relevance to the audit.",
             "value": ""
         }
     }
