@@ -53,6 +53,14 @@ ACRONYMS = {
 FILENAME_COMPONENT = re.compile(r"\(([A-Za-z0-9_.\- ]+)\)")
 # A Latin token that is part of a filename or a path, e.g. parameters.md.
 PATH_LIKE = re.compile(r"[A-Za-z0-9_.\-]*\.(?:md|csv|json|pdf|html)\b")
+# An identifier such as TR-114 or PO-0097: a code, not prose. Coded references
+# are quoted inside an example sentence and stay in their original form.
+CODE_TOKEN = re.compile(r"\b[A-Z]{2,}[-_/]?\d{2,}\b")
+# The house style glosses a translated term with its English original in
+# parentheses, e.g. مرحلة المراقبة والتحكم (Monitoring & Controlling Process
+# Group) and **Generated value:**. The gloss is deliberate, not untranslated.
+PAREN_GLOSS = re.compile(r"\([^()]*\)")
+BOLD_LABEL = re.compile(r"\*\*[^*]*:\*\*")
 
 CJK = re.compile(
     "[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\u3400-\u4dbf"
@@ -194,15 +202,20 @@ def strip_code_fences(text: str) -> str:
 def latin_tokens(text: str) -> list[str]:
     """Latin words in text that indicate untranslated prose.
 
-    Front matter, fenced code, filename components, paths and HTML tags are
-    removed first, then known acronyms and schema vocabulary are dropped.
-    Jekyll front matter carries fixed configuration keys (lang, layout,
-    nav_order) that are never translated.
+    Front matter, fenced code, filename components, paths, coded identifiers,
+    parenthetical English glosses and bold field labels are removed first, then
+    known acronyms and schema vocabulary are dropped. Jekyll front matter carries
+    fixed configuration keys (lang, layout, nav_order) that are never translated,
+    a reference such as TR-114 is an identifier rather than prose, and the house
+    style deliberately glosses a translated term with its English original.
     """
     cleaned = strip_front_matter(text)
     cleaned = strip_code_fences(cleaned)
     cleaned = FILENAME_COMPONENT.sub(" ", cleaned)
     cleaned = PATH_LIKE.sub(" ", cleaned)
+    cleaned = CODE_TOKEN.sub(" ", cleaned)
+    cleaned = PAREN_GLOSS.sub(" ", cleaned)
+    cleaned = BOLD_LABEL.sub(" ", cleaned)
     cleaned = re.sub(r"<[^>]+>", " ", cleaned)
     return [t for t in re.findall(r"[A-Za-z]{2,}", cleaned)
             if t.upper() not in ACRONYMS]
@@ -626,6 +639,64 @@ def selftest() -> int:
         print("  ok     untranslated prose beside front matter is still flagged")
     else:
         print("  FAIL   untranslated prose beside front matter went unnoticed")
+        failures += 1
+
+    # A coded reference such as TR-114 is an identifier, not untranslated prose.
+    form = load_form(ROOT.joinpath(*REFERENCE))
+    form["rtl"] = True
+    form["template_text"] = ("<div dir=\"rtl\">\n"
+                             "وثيقة اختبار TR-114 وسجل طلب الشراء PO-0097.\n"
+                             "</div>\n")
+    form["prompt_text"] = ""
+    form["guide_text"] = ""
+    form["json_text"] = ""
+    form["csv_text"] = ""
+    found = []
+    check_script_purity(form, found)
+    if found:
+        print(f"  FAIL   coded reference treated as untranslated: {found}")
+        failures += 1
+    else:
+        print("  ok     coded references are not flagged as untranslated")
+
+    # Prose that merely contains digits must still be flagged.
+    form["template_text"] += "\nThis sentence has 114 items to record.\n"
+    found = []
+    check_script_purity(form, found)
+    if found:
+        print("  ok     English prose with digits is still flagged")
+    else:
+        print("  FAIL   English prose with digits went unnoticed")
+        failures += 1
+
+    # A parenthetical English gloss is house style, but prose outside the
+    # parentheses must still be flagged.
+    form = load_form(ROOT.joinpath(*REFERENCE))
+    form["rtl"] = True
+    form["template_text"] = (
+        "<div dir=\"rtl\">\n"
+        "يتم إعداد هذا المخرج خلال **مرحلة المراقبة والتحكم "
+        "(Monitoring & Controlling Process Group)** من الدورة.\n"
+        "</div>\n")
+    form["prompt_text"] = ""
+    form["guide_text"] = ""
+    form["json_text"] = ""
+    form["csv_text"] = ""
+    found = []
+    check_script_purity(form, found)
+    if found:
+        print(f"  FAIL   gloss treated as untranslated: {found}")
+        failures += 1
+    else:
+        print("  ok     parenthetical English gloss is not flagged")
+
+    form["template_text"] += "\nThis whole sentence is English.\n"
+    found = []
+    check_script_purity(form, found)
+    if found:
+        print("  ok     prose outside the gloss is still flagged")
+    else:
+        print("  FAIL   prose outside the gloss went unnoticed")
         failures += 1
     return failures
 

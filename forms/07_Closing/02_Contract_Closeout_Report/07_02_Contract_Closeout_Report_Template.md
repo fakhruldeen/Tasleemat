@@ -190,7 +190,6 @@ Comment guidance: All disputes must be resolved, the result accepted, and final 
 contract was terminated rather than completed, scope limitations, or context needed by
 the project closeout report. -->
 
-> [ Add details... ]
 
 ---
 

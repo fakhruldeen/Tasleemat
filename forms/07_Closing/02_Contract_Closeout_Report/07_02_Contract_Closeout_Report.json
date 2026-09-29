@@ -12,61 +12,61 @@
             "value": ""
         },
         "scope_worked_well": {
-            "section": "Vendor Performance Analysis - What Worked Well",
+            "section": "Vendor Performance Analysis: What Worked Well",
             "label": "Scope",
             "guidance": "Describe the aspects of contract scope that were handled well.",
             "value": ""
         },
         "quality_worked_well": {
-            "section": "Vendor Performance Analysis - What Worked Well",
+            "section": "Vendor Performance Analysis: What Worked Well",
             "label": "Quality",
             "guidance": "Describe the aspects of product quality that were handled well.",
             "value": ""
         },
         "schedule_worked_well": {
-            "section": "Vendor Performance Analysis - What Worked Well",
+            "section": "Vendor Performance Analysis: What Worked Well",
             "label": "Schedule",
             "guidance": "Describe the aspects of the contract schedule that were handled well.",
             "value": ""
         },
         "cost_worked_well": {
-            "section": "Vendor Performance Analysis - What Worked Well",
+            "section": "Vendor Performance Analysis: What Worked Well",
             "label": "Cost",
             "guidance": "Describe the aspects of the contract budget that were handled well.",
             "value": ""
         },
         "other_worked_well": {
-            "section": "Vendor Performance Analysis - What Worked Well",
+            "section": "Vendor Performance Analysis: What Worked Well",
             "label": "Other",
             "guidance": "Describe any other aspects of the contract or procurement that were handled well, including how easy the vendor was to work with.",
             "value": ""
         },
         "scope_improve": {
-            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "section": "Vendor Performance Analysis: What Can Be Improved",
             "label": "Scope",
             "guidance": "Describe the aspects of contract scope that could be improved.",
             "value": ""
         },
         "quality_improve": {
-            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "section": "Vendor Performance Analysis: What Can Be Improved",
             "label": "Quality",
             "guidance": "Describe the aspects of product quality that could be improved.",
             "value": ""
         },
         "schedule_improve": {
-            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "section": "Vendor Performance Analysis: What Can Be Improved",
             "label": "Schedule",
             "guidance": "Describe the aspects of the contract schedule that could be improved.",
             "value": ""
         },
         "cost_improve": {
-            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "section": "Vendor Performance Analysis: What Can Be Improved",
             "label": "Cost",
             "guidance": "Describe the aspects of the contract budget that could be improved.",
             "value": ""
         },
         "other_improve": {
-            "section": "Vendor Performance Analysis - What Can Be Improved",
+            "section": "Vendor Performance Analysis: What Can Be Improved",
             "label": "Other",
             "guidance": "Describe any other aspects of the contract or procurement that could be improved.",
             "value": ""
@@ -92,13 +92,13 @@
         "dispute_description": {
             "section": "Record of Contract Disputes",
             "label": "Dispute Description",
-            "guidance": "Describe the dispute or claim.",
+            "guidance": "The dispute or claim, what was in contention, and the amount or scope at issue. State the position the project took and the date it was raised, because a dispute recorded without its date cannot be distinguished from one still open at closeout.",
             "value": ""
         },
         "dispute_resolution": {
             "section": "Record of Contract Disputes",
             "label": "Resolution",
-            "guidance": "Describe the resolution.",
+            "guidance": "How the dispute was settled, by whom, and when, with a reference to the agreement or settlement that closed it. An unresolved dispute carried past closeout is a liability the receiving organisation inherits without knowing it, so record the outcome even when it is only partial.",
             "value": ""
         },
         "date_resolved": {
@@ -110,7 +110,7 @@
         "completion_date": {
             "section": "Contract Completion and Final Payment",
             "label": "Contract Completion Date",
-            "guidance": "Enter the date the contract was completed.",
+            "guidance": "The date the contract was completed, meaning the date the work was accepted rather than the date the last invoice was paid. Where the two differ, give both, because a payment date is not evidence that the work was accepted.",
             "value": ""
         },
         "signed_off_by": {

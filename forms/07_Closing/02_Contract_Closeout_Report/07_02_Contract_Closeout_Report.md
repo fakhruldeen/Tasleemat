@@ -71,10 +71,10 @@ Form: CONTRACT CLOSEOUT REPORT (Instructions)
 ## Record of Contract Disputes
 
 ### Dispute Description
-**Instruction:** Describe the dispute or claim.
+**Instruction:** The dispute or claim, what was in contention, and the amount or scope at issue. State the position the project took and the date it was raised, because a dispute recorded without its date cannot be distinguished from one still open at closeout.
 
 ### Resolution
-**Instruction:** Describe the resolution.
+**Instruction:** How the dispute was settled, by whom, and when, with a reference to the agreement or settlement that closed it. An unresolved dispute carried past closeout is a liability the receiving organisation inherits without knowing it, so record the outcome even when it is only partial.
 
 ### Date Resolved
 **Instruction:** Enter the date the dispute or claim was resolved.
@@ -82,7 +82,7 @@ Form: CONTRACT CLOSEOUT REPORT (Instructions)
 ## Contract Completion and Final Payment
 
 ### Contract Completion Date
-**Instruction:** Enter the date the contract was completed.
+**Instruction:** The date the contract was completed, meaning the date the work was accepted rather than the date the last invoice was paid. Where the two differ, give both, because a payment date is not evidence that the work was accepted.
 
 ### Signed Off By
 **Instruction:** Record who signed off on the contract completion.
