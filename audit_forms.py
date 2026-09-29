@@ -491,6 +491,31 @@ def check_guide_links(form: dict, bad: list) -> None:
 # driver
 # --------------------------------------------------------------------------
 
+def check_missing_word(form: dict, bad: list) -> None:
+    """Two spaces between Arabic letters, on one line, with no indentation.
+
+    A single word lost during Arabic generation leaves the two spaces that
+    marked its place behind, so the sentence still parses as Arabic and no
+    other check sees it. This happened twice: "بعد سنوات  شخص" in the Program
+    Charter and "بديل  لنفس" in the Product Vision.
+
+    Wrapped list items and continuation lines are indented, so a run of
+    spaces that reaches the start of a line is layout rather than a gap.
+    """
+    run = re.compile(r"[؀-ۿ][ \t]{2,}[؀-ۿ]")
+    for role in ("template", "prompt", "guide", "json", "csv"):
+        if not form["kind"][role]:
+            continue
+        name = form["kind"][role]
+        for n, line in enumerate(form[role + "_text"].splitlines(), start=1):
+            if line[:1] in (" ", "\t") or line.lstrip() != line:
+                continue  # an indented continuation or list item
+            for m in run.finditer(line):
+                frag = line[max(0, m.start() - 30):m.end() + 30]
+                bad.append(f"possible missing word in {name} line {n}: "
+                           f"...{frag.strip()}...")
+
+
 CHECKS = (
     check_files,
     check_json,
@@ -504,6 +529,7 @@ CHECKS = (
     check_cjk,
     check_script_purity,
     check_guide_links,
+    check_missing_word,
 )
 
 
@@ -698,6 +724,41 @@ def selftest() -> int:
     else:
         print("  FAIL   prose outside the gloss went unnoticed")
         failures += 1
+
+    # A word lost mid-sentence leaves two spaces behind and no other check
+    # sees it, because the sentence still parses as Arabic.
+    form = load_form(ROOT.joinpath(*REFERENCE))
+    form["rtl"] = True
+    form["template_text"] = (
+        "<div dir=\"rtl\">\n"
+        "هذا هو الاختبار الذي يُقاس عليه كل ميثاق في النهاية، عادةً بعد سنوات  "
+        "شخص لم يكن حاضرًا عند كتابته.\n"
+        "</div>\n")
+    form["prompt_text"] = ""
+    form["guide_text"] = ""
+    form["json_text"] = ""
+    form["csv_text"] = ""
+    found = []
+    check_missing_word(form, found)
+    if found:
+        print("  ok     a word lost mid-sentence is flagged")
+    else:
+        print("  FAIL   a word lost mid-sentence went unnoticed")
+        failures += 1
+
+    # ...and an indented continuation line is layout, not a gap.
+    form["template_text"] = (
+        "<div dir=\"rtl\">\n"
+        "سطر مستمر مع مسافة بادئة\n"
+        "   _followed by four spaces of indentation here.\n"
+        "</div>\n")
+    found = []
+    check_missing_word(form, found)
+    if found:
+        print(f"  FAIL   indentation treated as a missing word: {found}")
+        failures += 1
+    else:
+        print("  ok     indented continuation lines are not flagged")
     return failures
 
 
