@@ -1,38 +1,111 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Value Realization Register template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "Value Realization Register",
-    "document_reference": "PMO-01.03",
-    "project_title": "",
-    "date_prepared": "",
-    "fields": {
-        "Value Realization Register Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Benefit ID:** Unique identifier for the benefit.\n- **Description:** Description of the benefit.\n- **Owner:** Person accountable for the benefit realization.\n- **Target Value:** The expected value.\n- **Actual Value:** The realized value.\n- **Status:** Status of the benefit realization.",
-            "value": [
-                {
-                    "Benefit ID": "",
-                    "Description": "",
-                    "Owner": "",
-                    "Target Value": "",
-                    "Actual Value": "",
-                    "Status": ""
-                },
-                {
-                    "Benefit ID": "",
-                    "Description": "",
-                    "Owner": "",
-                    "Target Value": "",
-                    "Actual Value": "",
-                    "Status": ""
-                },
-                {
-                    "Benefit ID": "",
-                    "Description": "",
-                    "Owner": "",
-                    "Target Value": "",
-                    "Actual Value": "",
-                    "Status": ""
-                }
-            ]
-        }
+  "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables. Record the date of measurement alongside every actual value: a figure measured early in the period and carried forward as final is the usual way a shortfall is reported as success, and the date is the only thing that distinguishes the two.",
+  "form_name": "Value Realization Register",
+  "document_reference": "PMO-01.03",
+  "project_title": "",
+  "date_prepared": "",
+  "fields": {
+    "f01_Register_Purpose": {
+      "section": "1. Register Control",
+      "label": "Register Purpose",
+      "guidance": "What this register is tracking and which benefits it covers. State the scope, because a register that silently omits a benefit reads as a benefit that was never claimed, and the two are indistinguishable to a later reader.",
+      "value": ""
+    },
+    "f02_Reporting_Period": {
+      "section": "1. Register Control",
+      "label": "Reporting Period",
+      "guidance": "The period the entries cover and the date the register was last updated. Without a date a register of moving values is indistinguishable from one that was abandoned, and the two look identical on the page.",
+      "value": ""
+    },
+    "f03_Source_Documents": {
+      "section": "1. Register Control",
+      "label": "Source Documents",
+      "guidance": "The business case and benefits management plan the entries derive from. The register does not create benefits; it tracks benefits defined elsewhere, and the source is what lets a reader check a target against the case that authorised it.",
+      "value": ""
+    },
+    "f04_Entry_Rules": {
+      "section": "1. Register Control",
+      "label": "Entry Rules",
+      "guidance": "What qualifies for an entry, and what does not. A register that accumulates everything makes no claim on anyone's attention, and the entries that get reviewed are then the ones that were easiest to write.",
+      "value": ""
+    },
+    "f05_Benefit_ID": {
+      "section": "2. Value Realization Register",
+      "label": "Benefit ID",
+      "guidance": "The identifier for the benefit, matching the benefits management plan. Without a shared identifier the register cannot be reconciled against the plan, and a benefit can be tracked in one and dropped from the other without anyone deciding to drop it.",
+      "value": ""
+    },
+    "f06_Benefit_Description": {
+      "section": "2. Value Realization Register",
+      "label": "Benefit Description",
+      "guidance": "The benefit as a measurable change, restated in the form it will be measured. The register is where a benefit written in prose has to become a number, so the description must be the one the measure actually refers to.",
+      "value": ""
+    },
+    "f07_Benefit_Owner": {
+      "section": "2. Value Realization Register",
+      "label": "Benefit Owner",
+      "guidance": "The role accountable for realising the benefit, which is normally not the project manager. The project manager can report the value; only the operating role can change the practice the value depends on.",
+      "value": ""
+    },
+    "f08_Measurement_Method": {
+      "section": "2. Value Realization Register",
+      "label": "Measurement Method",
+      "guidance": "How the value is calculated, stated so two people would compute it the same way. Most disputes about a realised value turn on method rather than on the outcome, and an unstated method invites whichever reading suits the reader.",
+      "value": ""
+    },
+    "f09_Baseline_Value": {
+      "section": "2. Value Realization Register",
+      "label": "Baseline Value",
+      "guidance": "The value the measure stood at before the project. Without it the actual figure has nothing to be compared against, and the register becomes a list of numbers rather than evidence of change.",
+      "value": ""
+    },
+    "f10_Target_Value_and_Date": {
+      "section": "2. Value Realization Register",
+      "label": "Target Value and Date",
+      "guidance": "The value expected and the date it is expected by. A target without a date cannot be late, and an undated target is met every day it goes unexamined.",
+      "value": ""
+    },
+    "f11_Actual_Value_and_Date": {
+      "section": "2. Value Realization Register",
+      "label": "Actual Value and Date",
+      "guidance": "The value measured and the date it was measured. The date of measurement matters as much as the figure, because a value measured early in the year and reported as final is the most common way a shortfall is reported as success.",
+      "value": ""
+    },
+    "f12_Variance": {
+      "section": "2. Value Realization Register",
+      "label": "Variance",
+      "guidance": "The difference between actual and target, signed. This is the column the register exists to produce, and a register that records only the actuals has omitted the only figure anyone reads.",
+      "value": ""
+    },
+    "f13_Status": {
+      "section": "2. Value Realization Register",
+      "label": "Status",
+      "guidance": "Where the benefit stands against its plan. The status should follow a stated rule rather than a judgement, since a status chosen to match the reporting is a status that reports nothing.",
+      "value": ""
+    },
+    "f14_Variance_Explanation": {
+      "section": "3. Realization Actions",
+      "label": "Variance Explanation",
+      "guidance": "Why the actual differs from the target, recorded as a cause rather than as a gap. A variance with no cause cannot be acted on, and a benefit that is off plan for a reason nobody has established will stay off plan for a reason nobody has established.",
+      "value": ""
+    },
+    "f15_Corrective_Action": {
+      "section": "3. Realization Actions",
+      "label": "Corrective Action",
+      "guidance": "What is being done, by whom, and by when. An action without an owner is a note, and notes appear in the next version of the register as unresolved.",
+      "value": ""
+    },
+    "f16_Escalation_Trigger": {
+      "section": "3. Realization Actions",
+      "label": "Escalation Trigger",
+      "guidance": "The event that requires the benefit to be escalated rather than adjusted. Without a trigger the variance is absorbed at each review until it is no longer a variance but the plan, and the plan has quietly become the record of what happened.",
+      "value": ""
+    },
+    "f17_Benefit_Withdrawal": {
+      "section": "3. Realization Actions",
+      "label": "Benefit Withdrawal",
+      "guidance": "The grounds for removing a benefit from the register. Without them benefits are never withdrawn, only left at their last reported value, and a withdrawn benefit and a stalled one look the same forever.",
+      "value": ""
     }
+  }
 }
