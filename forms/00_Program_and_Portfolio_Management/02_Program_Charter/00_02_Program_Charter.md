@@ -6,36 +6,265 @@ Form: PROGRAM CHARTER (Instructions)
 # PROGRAM CHARTER - LLM GENERATION GUIDE
 
 > **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROGRAM CHARTER`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+> This document serves as the detailed instruction set for generating the
+> `PROGRAM CHARTER`. When asked to populate this form, use the guidance provided
+> for each section below to accurately generate the required content. Reference
+> `parameters.md` for global project variables.
 
 > **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
-> **Alignment:**
-> [ Add Alignment Information Here ]
+> The program charter is the document that authorises a program. It states why the
+> program exists, what it is accountable for delivering, and what authority and
+> resources have been given to the program manager in order to deliver it. It is
+> the point at which a group of individually sensible projects becomes a program
+> with a single accountable owner and a single set of objectives.
 
----
+> **Alignment:**
+> This program charter must be consistent with: Portfolio roadmap, Business case,
+> Program management plan, Organizational change management plan.
 
 ### Program Purpose
-**Instruction:** High-level justification for the program.
 
----
+**Instruction:** The change the program exists to bring about, not a description of the work it will do. "Replace the billing platform" describes work; "so that month-end billing closes in three days rather than ten" describes a change, and only the second can be judged complete or not.
 
-### Program Objectives
-**Instruction:** Measurable goals of the program.
+**Generated value:** [ Add details... ]
 
----
+### Business Driver and Strategic Alignment
 
-### Component Projects
-**Instruction:** List of the individual projects within the program.
+**Instruction:** The portfolio or strategy entry this program serves, named so the program can be traced back to the objective that funded it. A charter that cannot name its driver has no way to answer whether it is still worth doing once the strategy has moved on.
 
----
+**Generated value:** [ Add details... ]
 
-### Program Benefits
-**Instruction:** Expected synergistic benefits.
+### Problem or Opportunity Statement
 
----
+**Instruction:** The specific problem being solved or the specific opportunity being taken, stated so that someone who disagreed with it could say why. An opportunity described only in positive terms is indistinguishable from a wish, because nothing in the statement can fail.
 
-### Program Manager Authority
-**Instruction:** Authority level of the program manager.
+**Generated value:** [ Add details... ]
+
+### Consequence of Not Proceeding
+
+**Instruction:** What happens if the program is not undertaken, including what is lost rather than only what is missed. This is the test every charter is eventually measured against, usually several years later by someone who was not present when it was written, and it is almost never recorded at the time.
+
+**Generated value:** [ Add details... ]
+
+### Program Vision Statement
+
+**Instruction:** A short statement of the future state the program exists to create, in the organisation's own words. Keep it to a single sentence that someone outside the program could understand, since a vision statement read only by the program team is a statement to itself.
+
+**Generated value:** [ Add details... ]
+
+### ID
+
+**Instruction:** The identifier for the objective, used in the components, benefits and reporting sections so that progress against it can be traced to the work that was meant to deliver it.
+
+**Generated value:** [ Add details... ]
+
+### Objective
+
+**Instruction:** What must be true when the program succeeds, stated so that a reasonable person could disagree with it. Where the components were funded before the charter was written, check the direction of the fit: an objective written to fit a component has inherited that component's scope without choosing it.
+
+**Generated value:** [ Add details... ]
+
+### Measure
+
+**Instruction:** How achievement will be established, naming the source of the figure rather than the sentiment behind it. A measure with no source cannot be reproduced by anyone checking the claim, and an objective whose evidence cannot be reproduced is an opinion with a number attached.
+
+**Generated value:** [ Add details... ]
+
+### Target Date
+
+**Instruction:** When the objective must be met, which is what makes it a target rather than a direction. Where the date is inherited from a component's own plan rather than from the benefit it serves, record the date the benefit is actually expected rather than the date the work finishes.
+
+**Generated value:** [ Add details... ]
+
+### Owner
+
+**Instruction:** The single role accountable for the objective, which is normally not the program manager for every objective. An objective owned by a team cannot be chased, because a team is never available when the answer is needed.
+
+**Generated value:** [ Add details... ]
+
+### Status
+
+**Instruction:** Where the objective currently stands, from a fixed set agreed for the program. A free-text status cannot be rolled up, and a program whose objectives cannot be rolled up cannot be reported to the sponsor as anything other than a list.
+
+**Generated value:** [ Add details... ]
+
+### Component ID
+
+**Instruction:** The stable identifier of the component project, matching the identifier used in the portfolio roadmap so the two can be joined and the same component is not tracked under two names.
+
+**Generated value:** [ Add details... ]
+
+### Component Name
+
+**Instruction:** The name of the project or operation within the program, taken from its own charter. Where a component serves more than one program, record that here, because a component reported to two owners is reported to neither once they disagree.
+
+**Generated value:** [ Add details... ]
+
+### Objective Linkage
+
+**Instruction:** Which program objectives this component serves, by identifier. A component linked to no objective is a candidate for removal, and the charter is the last point at which that is visible before the money is committed.
+
+**Generated value:** [ Add details... ]
+
+### Status
+
+**Instruction:** Where the component currently stands, from the fixed set used across the program, so components are read against each other rather than each in the terms its own project used.
+
+**Generated value:** [ Add details... ]
+
+### Owner
+
+**Instruction:** Who is accountable for the component, which will usually not be the program manager. The program manager remains accountable for the component's contribution to the objective, which is a different accountability and is worth stating as such.
+
+**Generated value:** [ Add details... ]
+
+### Benefit ID
+
+**Instruction:** The identifier for the benefit, used in the benefits management plan and the value realization register so the same benefit is not counted twice under two names.
+
+**Generated value:** [ Add details... ]
+
+### Benefit
+
+**Instruction:** The benefit the program expects to produce, preferably stating benefits the components would not produce individually, since those are the reason for having a program rather than a list of projects. A benefit that any one component would have delivered anyway is not a program benefit.
+
+**Generated value:** [ Add details... ]
+
+### Category
+
+**Instruction:** Whether the benefit is financial or non-financial. The two are governed differently and are counted differently, and a benefit recorded without a category is usually valued at whichever the writer found more convenient.
+
+**Generated value:** [ Add details... ]
+
+### Beneficiary
+
+**Instruction:** Who receives the benefit, named rather than described. A benefit with no identifiable recipient cannot be realised, because realisation requires someone to change their behaviour or take a decision they would not otherwise have taken.
+
+**Generated value:** [ Add details... ]
+
+### Realization Mechanism
+
+**Instruction:** How the benefit will actually be captured, which is where most assumed benefits turn out not to be. The mechanism is what distinguishes a benefit the program will deliver from one the business hopes will occur, and without it the benefit is an aspiration with a number attached.
+
+**Generated value:** [ Add details... ]
+
+### Realization Date
+
+**Instruction:** When the benefit is expected to be realised. For a financial benefit this is commonly well after the component that created it has closed, and recording the earlier date is the most common way a program's benefits appear to land on time when they have not.
+
+**Generated value:** [ Add details... ]
+
+### Program Manager Authority Statement
+
+**Instruction:** What the program manager is authorised to decide and to commit, in the terms the organisation recognises. Record it as a grant rather than as a description of the role, so that a decision taken under it is defensible afterwards.
+
+**Generated value:** [ Add details... ]
+
+### Authority Retained by the Sponsor
+
+**Instruction:** What the sponsor keeps, which is usually the larger share. A charter that grants everything appears to grant everything, and the first real escalation then has no precedent to follow because there was no line drawn to escalate across.
+
+**Generated value:** [ Add details... ]
+
+### Program Governance Forum
+
+**Instruction:** The forum that governs the program, its membership, and what it decides rather than merely discusses. Record the distinction, because a forum that only discusses produces minutes about decisions taken elsewhere.
+
+**Generated value:** [ Add details... ]
+
+### Reporting Cadence and Audience
+
+**Instruction:** How often the program reports, to whom, and in what form. Reporting to a body that cannot act on it is a reporting obligation rather than a control, and the difference is visible only when the report is examined.
+
+**Generated value:** [ Add details... ]
+
+### Escalation Path
+
+**Instruction:** Who decides when the authority level is exceeded, named so the escalation does not have to be negotiated at the moment it is needed. Where the path is a role rather than a person, record how the person is identified, since roles go vacant.
+
+**Generated value:** [ Add details... ]
+
+### Funding Position
+
+**Instruction:** What is approved, what is requested, and what is not yet decided, stated honestly. A charter that treats unapproved funding as available sets the program up to discover the shortfall after it has already committed the component projects to spend against it.
+
+**Generated value:** [ Add details... ]
+
+### Decision Type
+
+**Instruction:** What kind of decision this row concerns, such as scope, budget, procurement, or personnel. Naming the kinds separately is what makes the authority levels below meaningful, since a single level cannot apply uniformly to all of them.
+
+**Generated value:** [ Add details... ]
+
+### Authority Level
+
+**Instruction:** The level at which the program manager may decide this kind of decision, such as team, department, or business unit. Where the answer is the same for every row, consider whether the row is doing any work.
+
+**Generated value:** [ Add details... ]
+
+### Escalation Path
+
+**Instruction:** Who decides when this authority level is exceeded, named for this decision type rather than in general, since the escalation for a budget decision is often not the escalation for a scope one.
+
+**Generated value:** [ Add details... ]
+
+### Limits or Conditions
+
+**Instruction:** What this authority does not extend to, which is the half of the row that prevents the dispute later. A row recording only what is permitted invites the reading that everything not forbidden is also permitted.
+
+**Generated value:** [ Add details... ]
+
+### ID
+
+**Instruction:** The identifier for the risk or assumption, so it can be referred to from the objectives and from reporting without ambiguity.
+
+**Generated value:** [ Add details... ]
+
+### Type
+
+**Instruction:** Whether the row is a Risk or an Assumption. A risk may occur or not; an assumption is either true or false and can be tested. Recording both under one heading loses the distinction exactly where it decides whether the item needs watching or checking.
+
+**Generated value:** [ Add details... ]
+
+### Description
+
+**Instruction:** What is at stake, or what is being taken for granted, stated so the assumption could be shown to have failed. An assumption phrased as a sentiment cannot be tested, and an untestable assumption is a hope with a risk rating attached.
+
+**Generated value:** [ Add details... ]
+
+### Impact on Program
+
+**Instruction:** What happens to the program if the risk occurs or the assumption proves false, in objective, funding or schedule terms. An item recorded without an impact cannot be prioritised, because nothing distinguishes the consequential from the trivial.
+
+**Generated value:** [ Add details... ]
+
+### Owner
+
+**Instruction:** Who watches this. A risk with no owner is not being watched, and the program's exposure grows silently while the register still appears complete.
+
+**Generated value:** [ Add details... ]
+
+### Review Date
+
+**Instruction:** When this will next be checked. An assumption nobody revisits becomes a fact by default, which is precisely when the conditions that made it true have changed.
+
+**Generated value:** [ Add details... ]
+
+### Defined Response
+
+**Instruction:** What happens when an objective is not met: whether the response is to replan, reduce scope, extend the date, or close the objective. A charter with no stated response to failure leaves that decision to whoever happens to be in the room when it arises, which is usually the person least able to afford the time.
+
+**Generated value:** [ Add details... ]
+
+### Decision Authority
+
+**Instruction:** Who takes that decision, and whether the sponsor must be consulted first. Where the answer is that the program manager decides alone, record what they may not commit without the sponsor, since that is the part that is assumed rather than agreed.
+
+**Generated value:** [ Add details... ]
+
+### Trigger for Reassessment
+
+**Instruction:** What specifically triggers the response: a date, a measure falling short by a stated margin, or an event. A trigger expressed as "if the objective is not met" is the same as the failure itself and gives no warning that the decision is coming.
+
+**Generated value:** [ Add details... ]
 
