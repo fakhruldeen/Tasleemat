@@ -1,29 +1,225 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this DATA PRIVACY AND ETHICS ASSESSMENT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "DATA PRIVACY AND ETHICS ASSESSMENT",
-    "document_reference": "PMO-02.06",
-    "project_title": "",
-    "date_prepared": "",
-    "fields": {
-        "Data Source": {
-            "guidance": "Where the data originates.",
-            "value": ""
-        },
-        "PII Detection": {
-            "guidance": "Does it contain Personally Identifiable Information?",
-            "value": ""
-        },
-        "Consent Management": {
-            "guidance": "How user consent was obtained.",
-            "value": ""
-        },
-        "Data Retention Policy": {
-            "guidance": "How long data is stored and how it's deleted.",
-            "value": ""
-        },
-        "Compliance Alignment": {
-            "guidance": "GDPR, CCPA, or local regulatory alignment.",
-            "value": ""
-        }
+  "_llm_instructions": "Fill out the 'project_title' and 'date_prepared' properties, and the 'value' property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Record a basis per purpose rather than per dataset, state the retention period and what it is based on rather than adopting a default, and say where deletion does not reach: backups, logs, exports and trained models. An assessment that says 'consented', 'encrypted' and 'retained' has described an intention, and the difference only becomes visible when a person asks for their data and no one can say what happens next.",
+  "form_name": "DATA PRIVACY AND ETHICS ASSESSMENT",
+  "document_reference": "PMO-02.06",
+  "project_title": "",
+  "date_prepared": "",
+  "fields": {
+    "f01_Assessment_Scope": {
+      "section": "Scope, Data Inventory and Ownership",
+      "label": "Assessment Scope",
+      "guidance": "The processing, systems, and periods this assessment covers, stated so that its edges are visible. An assessment that does not say what it excludes will be read as covering everything, and the gap between the two is where the untested processing lives.",
+      "value": ""
+    },
+    "f02_Processing_Out_of_Scope": {
+      "section": "Scope, Data Inventory and Ownership",
+      "label": "Processing Out of Scope",
+      "guidance": "What is explicitly not covered, and why. Excluded because another assessment covers it, or excluded because it was not looked at, are very different statements and only the second one is a finding.",
+      "value": ""
+    },
+    "f03_Data_Owners_and_Custodians": {
+      "section": "Scope, Data Inventory and Ownership",
+      "label": "Data Owners and Custodians",
+      "guidance": "Who owns each data asset and who administers it day to day. Ownership and custody differ, and the accountability clause follows the custodian while the budget follows the owner.",
+      "value": ""
+    },
+    "f04_Data_Inventory": {
+      "section": "Scope, Data Inventory and Ownership",
+      "label": "Data Inventory",
+      "guidance": "One row per data asset: what it is, who owns it, the purpose it is held for, whether it holds personal data, whether that data is special category, and its volume and refresh rate. An inventory described as a count rather than as a list cannot answer any of the questions that follow.",
+      "value": ""
+    },
+    "f05_Data_Flow_and_Recipients": {
+      "section": "Scope, Data Inventory and Ownership",
+      "label": "Data Flow and Recipients",
+      "guidance": "Where the data moves, and who receives it. The flow is what determines which transfers need a mechanism, and a flow that shows only the primary store hides the copies.",
+      "value": ""
+    },
+    "f06_Processing_Purposes_and_Necessity": {
+      "section": "Lawful Basis and Purpose Limitation",
+      "label": "Processing Purposes and Necessity",
+      "guidance": "What each processing activity is for, and why it cannot be achieved with less data or a shorter reach. Necessity is assessed per purpose rather than per dataset, because one dataset frequently serves several purposes with very different necessity.",
+      "value": ""
+    },
+    "f07_Lawful_Basis_by_Purpose": {
+      "section": "Lawful Basis and Purpose Limitation",
+      "label": "Lawful Basis by Purpose",
+      "guidance": "One row per purpose: the data processed, the basis relied on, the basis for special category data where any is present, and the justification. A form that records a basis once for a dataset will carry one basis across purposes that do not share it.",
+      "value": ""
+    },
+    "f08_Purpose_Compatibility_and_Secondary_Use": {
+      "section": "Lawful Basis and Purpose Limitation",
+      "label": "Purpose Compatibility and Secondary Use",
+      "guidance": "Whether the data is used for any purpose other than the one collected for, and on what basis. Secondary use is the most common privacy failure in analytics work and the one least likely to be noticed, because every individual field still has a lawful origin.",
+      "value": ""
+    },
+    "f09_Automated_Decision_Making": {
+      "section": "Lawful Basis and Purpose Limitation",
+      "label": "Automated Decision-Making",
+      "guidance": "Any decision made about a person with no meaningful human involvement, the logic involved, and the consequences for them. Recorded because the assessment of a legal basis does not by itself establish that a decision is one a person could contest.",
+      "value": ""
+    },
+    "f10_Consent_Mechanism": {
+      "section": "Consent and Transparency",
+      "label": "Consent Mechanism",
+      "guidance": "How consent is requested, and where in the flow it appears. Consent collected after the data is already in use is a record, not a request, and the difference determines what the record is worth.",
+      "value": ""
+    },
+    "f11_Consent_Specificity_and_Granularity": {
+      "section": "Consent and Transparency",
+      "label": "Consent Specificity and Granularity",
+      "guidance": "What the person was told they were consenting to, and whether the choices are separate. A single consent covering several purposes is consent to none of them in particular, and a bundle of pre-ticked boxes is not a choice.",
+      "value": ""
+    },
+    "f12_Consent_Recording_and_Evidence": {
+      "section": "Consent and Transparency",
+      "label": "Consent Recording and Evidence",
+      "guidance": "Where each consent is stored, with the timestamp, the version of the text shown, and the interface shown. A consent record without the version of the text cannot be defended later, because the terms the person agreed to are then unrecoverable.",
+      "value": ""
+    },
+    "f13_Withdrawal": {
+      "section": "Consent and Transparency",
+      "label": "Withdrawal",
+      "guidance": "How a person withdraws, how much easier it is than granting, and what happens to data already processed on that basis. Asymmetry between granting and withdrawing is the standard test, and a withdrawal that is honoured prospectively only leaves the processing intact behind it.",
+      "value": ""
+    },
+    "f14_Privacy_Notices_and_Just_in_Time_Disclosure": {
+      "section": "Consent and Transparency",
+      "label": "Privacy Notices and Just-in-Time Disclosure",
+      "guidance": "What is told at collection, what is told at the point the data is used, and where either may be found. A notice published once and never revisited informs nobody who meets the processing for the first time in month three.",
+      "value": ""
+    },
+    "f15_Rights_Handling_Process": {
+      "section": "Individual Rights",
+      "label": "Rights Handling Process",
+      "guidance": "How a request is received, routed, decided and answered, and by whom. A right stated in a policy with no route to exercise it is a stated right, and it is tested only when someone uses it.",
+      "value": ""
+    },
+    "f16_Identity_Verification": {
+      "section": "Individual Rights",
+      "label": "Identity Verification",
+      "guidance": "How the requester is confirmed to be who they claim, and what is refused when that cannot be done. Verification that accepts anyone discloses data; verification that refuses everyone denies the right, and the balance is a decision to record rather than a default.",
+      "value": ""
+    },
+    "f17_Response_Timeframes_and_Escalation": {
+      "section": "Individual Rights",
+      "label": "Response Timeframes and Escalation",
+      "guidance": "The deadline for each type of request, what happens when it is missed, and who is told. The clock is the whole of the right in practice, because a correct answer delivered late is still a breach.",
+      "value": ""
+    },
+    "f18_Rights_Over_Derived_Shared_and_Retired_Data": {
+      "section": "Individual Rights",
+      "label": "Rights Over Derived, Shared and Retired Data",
+      "guidance": "What happens to a request where the data has been aggregated, shared with a third party, or placed in a model. Deletion cannot reach a trained model by deleting a row, and the form that does not say so will be read as having deleted it.",
+      "value": ""
+    },
+    "f19_Retention_Schedule": {
+      "section": "Retention, Security and Sharing",
+      "label": "Retention Schedule",
+      "guidance": "One row per data asset: the retention period, the basis for that period rather than the convention, what triggers deletion, and how deletion is verified. A period adopted as a default and recorded as a decision is the most common entry, and it is the reason data outlives every justification that justified it.",
+      "value": ""
+    },
+    "f20_Deletion_Mechanism_and_Coverage": {
+      "section": "Retention, Security and Sharing",
+      "label": "Deletion Mechanism and Coverage",
+      "guidance": "How deletion is carried out, across primary stores, replicas, logs, exports and derived copies. Deleting a row from one table while the data persists in five other places is the most frequent finding in any such assessment, and it is invisible without a coverage statement.",
+      "value": ""
+    },
+    "f21_Backups_and_Derived_Data": {
+      "section": "Retention, Security and Sharing",
+      "label": "Backups and Derived Data",
+      "guidance": "How deletion propagates to backups and to models trained on the data, and over what period. Backups are the usual reason a deletion is incomplete, and a trained model is a copy no deletion request reaches.",
+      "value": ""
+    },
+    "f22_Access_Controls_and_Least_Privilege": {
+      "section": "Retention, Security and Sharing",
+      "label": "Access Controls and Least Privilege",
+      "guidance": "Who can reach the data, by what route, under what approval, and how access is reviewed. Access is the control that fails quietly, since misuse of legitimate credentials is indistinguishable from legitimate use without a review.",
+      "value": ""
+    },
+    "f23_Encryption_and_Key_Management": {
+      "section": "Retention, Security and Sharing",
+      "label": "Encryption and Key Management",
+      "guidance": "What is encrypted in transit and at rest, and who holds the keys. Encryption whose keys sit beside the data is a control on paper, and the key custody arrangement is the part that is not written down.",
+      "value": ""
+    },
+    "f24_Third_Party_Sharing": {
+      "section": "Retention, Security and Sharing",
+      "label": "Third-Party Sharing",
+      "guidance": "One row per recipient: the recipient, the purpose, the data shared, the contractual safeguard relied on, and the region processed in. Each row needs its own basis, because a processor bound by contract to a controller is not the same arrangement as a controller sharing on its own purpose.",
+      "value": ""
+    },
+    "f25_Cross_Border_Transfers": {
+      "section": "Retention, Security and Sharing",
+      "label": "Cross-Border Transfers",
+      "guidance": "Where data or processing leaves the jurisdiction, under which transfer mechanism, and what supplementary measures apply. A hosting region is not a transfer analysis, and remote access by a foreign staff member is a transfer that no region setting records.",
+      "value": ""
+    },
+    "f26_Breach_Notification": {
+      "section": "Retention, Security and Sharing",
+      "label": "Breach Notification",
+      "guidance": "What constitutes a breach here, who is notified, within what time, and who decides. Recorded because a response plan written after an incident is always written for that incident, and the decision threshold is the part that is usually left out.",
+      "value": ""
+    },
+    "f27_Harm_Beyond_Legal_Exposure": {
+      "section": "Ethics Beyond Compliance",
+      "label": "Harm Beyond Legal Exposure",
+      "guidance": "Where this processing causes harm that no law prohibits. This section exists because compliance is a floor: processing can be lawful, consented, retained properly and shared properly, and still be wrong, and a form that stops at lawful has answered the question it was easy to answer.",
+      "value": ""
+    },
+    "f28_Vulnerable_Individuals_and_Groups": {
+      "section": "Ethics Beyond Compliance",
+      "label": "Vulnerable Individuals and Groups",
+      "guidance": "Who is affected in a state of reduced ability to refuse, to understand, or to bear the consequence. Vulnerability here is a property of the situation rather than of the person, and it is invisible to a record of categories and volumes.",
+      "value": ""
+    },
+    "f29_Transparency_to_Affected_People": {
+      "section": "Ethics Beyond Compliance",
+      "label": "Transparency to Affected People",
+      "guidance": "What the people in the data are actually told, in language they use, as distinct from what the notice says. A notice that is accurate, complete and unread is the standard failure, and reading it as a recipient rather than as a drafter is the only way to see it.",
+      "value": ""
+    },
+    "f30_Manipulation_Dark_Patterns_and_Consent_Fatigue": {
+      "section": "Ethics Beyond Compliance",
+      "label": "Manipulation, Dark Patterns and Consent Fatigue",
+      "guidance": "Whether the interface nudges, pre-ticks, buries refusal, or asks repeatedly, and whether the volume of requests is such that a refusal is impractical. Consent obtained by a design choice is not freely given, whatever the record says.",
+      "value": ""
+    },
+    "f31_Fairness_of_Automated_Decisions": {
+      "section": "Ethics Beyond Compliance",
+      "label": "Fairness of Automated Decisions",
+      "guidance": "Whether the processing produces outcomes for people, and what the distribution of those outcomes is across groups. A lawful basis for a decision is not a defence of its fairness, and the two are assessed against different questions.",
+      "value": ""
+    },
+    "f32_Findings_Register": {
+      "section": "Findings, Remediation and Review",
+      "label": "Findings Register",
+      "guidance": "One row per finding: the finding, the risk it poses to individuals, the severity, the owner, and the action being taken. Severity is what determines the order of work, and a register with no severity column is a list of observations.",
+      "value": ""
+    },
+    "f33_Residual_Risk_and_Acceptance": {
+      "section": "Findings, Remediation and Review",
+      "label": "Residual Risk and Acceptance",
+      "guidance": "The risk remaining after the planned actions, who accepts it, and until when. Acceptance is a decision with an owner and an expiry date; an acceptance with neither is an unowned risk that will be rediscovered at the next assessment.",
+      "value": ""
+    },
+    "f34_Remediation_Plan": {
+      "section": "Findings, Remediation and Review",
+      "label": "Remediation Plan",
+      "guidance": "The actions, their owners and their dates, and what is being done in the interim. The interim period is where a known finding actually operates, so it is the part of the plan most worth writing down.",
+      "value": ""
+    },
+    "f35_Review_Triggers": {
+      "section": "Findings, Remediation and Review",
+      "label": "Review Triggers",
+      "guidance": "What would cause this assessment to be revisited before its scheduled date, such as a new purpose, a new recipient, a new model, or a regulatory change. Triggers stated after the change have occurred are a record of the change.",
+      "value": ""
+    },
+    "f36_Reassessment_Triggers": {
+      "section": "Findings, Remediation and Review",
+      "label": "Reassessment Triggers",
+      "guidance": "When this assessment expires and on what cycle. An assessment with no expiry is treated as permanent by everyone who did not write it, including the people who inherited it.",
+      "value": ""
     }
+  }
 }

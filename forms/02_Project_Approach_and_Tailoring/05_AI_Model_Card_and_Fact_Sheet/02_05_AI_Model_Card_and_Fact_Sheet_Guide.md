@@ -61,7 +61,7 @@ following documents:
 ---
 
 ### 5. How?
-To accurately and professionally complete the **AI GOVERNANCE PLAN**, the
+To accurately and professionally complete the **AI MODEL CARD AND FACT SHEET**, the
 responsible party must populate the following sections based on the project
 context (ensure `parameters.md` is referenced for global project variables):
 
