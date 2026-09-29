@@ -1,35 +1,72 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this CONTRACTOR STATUS REPORT template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill out 'project_title' and 'date_prepared', and the 'value' property of each field, using the project context. Use the 'label' to select the correct output language for the target document. Reference parameters.md for global variables.",
     "form_name": "CONTRACTOR STATUS REPORT",
     "document_reference": "PMO-06.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Scope performance this reporting period": {
-            "guidance": "Describe progress on scope made during this reporting period. Quality performance this reporting period Identify any quality or performance variances. Schedule performance this reporting period Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.",
+        "reporting_information": {
+            "label": "Reporting Information",
+            "guidance": "Record the contractor, the contract number and type, the reporting period covered, and the report submission date. The contract type determines whether a cost forecast is expected.",
             "value": ""
         },
-        "Cost performance this reporting period": {
-            "guidance": "Describe whether the contract is on budget. If over or under budget, identify the cause of the variance. Forecast performance for future reporting periods Discuss the estimated delivery date and final cost of the contract. If the contract is a fixed price, do not enter cost forecasts.",
+        "scope_performance": {
+            "label": "Scope Performance",
+            "guidance": "Describe the progress on scope made during this reporting period.",
             "value": ""
         },
-        "Claims or disputes": {
-            "guidance": "Identify any new or resolved disputes or claims that have occurred during the current reporting period.",
+        "quality_performance": {
+            "label": "Quality Performance",
+            "guidance": "Identify any quality or performance variances.",
             "value": ""
         },
-        "Risks": {
-            "guidance": "List any risks. Risks should also be in the risk register.",
+        "schedule_performance": {
+            "label": "Schedule Performance",
+            "guidance": "Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.",
             "value": ""
         },
-        "Planned corrective or preventive action": {
+        "cost_performance": {
+            "label": "Cost Performance",
+            "guidance": "Describe whether the contract is on budget. If over or under budget, identify the cause of the variance.",
+            "value": ""
+        },
+        "forecast_performance": {
+            "label": "Forecast Performance",
+            "guidance": "Discuss the estimated delivery date and final cost of the contract. If the contract is fixed price, do not enter cost forecasts.",
+            "value": ""
+        },
+        "claims_or_disputes": {
+            "label": "Claims or Disputes",
+            "guidance": "Identify any new or resolved disputes or claims that occurred during the current reporting period.",
+            "value": ""
+        },
+        "risks": {
+            "label": "Risks",
+            "guidance": "List any risks. Risks should also be recorded in the project risk register.",
+            "value": ""
+        },
+        "corrective_preventive_action": {
+            "label": "Planned Corrective or Preventive Action",
             "guidance": "Identify planned corrective or preventive actions necessary to recover schedule, cost, scope, or quality variances.",
             "value": ""
         },
-        "Issues": {
+        "issues": {
+            "label": "Issues",
             "guidance": "Identify any new issues that have arisen. These should also be entered in the issue log.",
             "value": ""
         },
-        "Comments": {
+        "escalations": {
+            "label": "Escalations",
+            "guidance": "Identify any area that requires escalation to the sponsor, program manager, contracting officer, or another appropriate individual.",
+            "value": ""
+        },
+        "change_requests": {
+            "label": "Contract Change Requests",
+            "guidance": "Summarise any contract change requests submitted during this reporting period.",
+            "value": ""
+        },
+        "comments": {
+            "label": "Comments",
             "guidance": "Add any comments that will add relevance to the report.",
             "value": ""
         }

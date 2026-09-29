@@ -14,38 +14,45 @@ Form: CONTRACTOR STATUS REPORT (Instructions)
 > **Alignment:**
 > [ Add Alignment Information Here ]
 
----
-
-### Scope performance this reporting period
-**Instruction:** Describe progress on scope made during this reporting period. Quality performance this reporting period Identify any quality or performance variances. Schedule performance this reporting period Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.
+> The contractor status report is an example of work performance information from process 12.3 Control Procurements in the PMBOK Guide - Sixth Edition. It is submitted at pre-defined intervals, and its content is generally carried into the project status report.
 
 ---
 
-### Cost performance this reporting period
-**Instruction:** Describe whether the contract is on budget. If over or under budget, identify the cause of the variance. Forecast performance for future reporting periods Discuss the estimated delivery date and final cost of the contract. If the contract is a fixed price, do not enter cost forecasts.
+### Reporting Information
+**Instruction:** Record the contractor, the contract number and type, the reporting period covered, and the report submission date. The contract type determines whether a cost forecast is expected.
 
----
+### Scope Performance
+**Instruction:** Describe the progress on scope made during this reporting period.
 
-### Claims or disputes
-**Instruction:** Identify any new or resolved disputes or claims that have occurred during the current reporting period.
+### Quality Performance
+**Instruction:** Identify any quality or performance variances.
 
----
+### Schedule Performance
+**Instruction:** Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.
+
+### Cost Performance
+**Instruction:** Describe whether the contract is on budget. If over or under budget, identify the cause of the variance.
+
+### Forecast Performance
+**Instruction:** Discuss the estimated delivery date and final cost of the contract. If the contract is fixed price, do not enter cost forecasts.
+
+### Claims or Disputes
+**Instruction:** Identify any new or resolved disputes or claims that occurred during the current reporting period.
 
 ### Risks
-**Instruction:** List any risks. Risks should also be in the risk register.
+**Instruction:** List any risks. Risks should also be recorded in the project risk register.
 
----
-
-### Planned corrective or preventive action
+### Planned Corrective or Preventive Action
 **Instruction:** Identify planned corrective or preventive actions necessary to recover schedule, cost, scope, or quality variances.
-
----
 
 ### Issues
 **Instruction:** Identify any new issues that have arisen. These should also be entered in the issue log.
 
----
+### Escalations
+**Instruction:** Identify any area that requires escalation to the sponsor, program manager, contracting officer, or another appropriate individual.
+
+### Contract Change Requests
+**Instruction:** Summarise any contract change requests submitted during this reporting period.
 
 ### Comments
 **Instruction:** Add any comments that will add relevance to the report.
-

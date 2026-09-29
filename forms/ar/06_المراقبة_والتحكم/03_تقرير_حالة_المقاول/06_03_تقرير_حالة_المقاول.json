@@ -1,36 +1,73 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج تقرير حالة المقاول هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
+    "_llm_instructions": "املأ 'project_title' و'date_prepared'، وخاصية 'value' لكل حقل باستخدام سياق المشروع. استخدم 'label' لتحديد لغة الإخراج المناسبة. راجع parameters.md للمتغيرات العامة.",
     "form_name": "تقرير حالة المقاول",
     "document_reference": "PMO-06.03",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Scope performance this reporting period": {
-            "guidance": "Describe progress on scope made during this reporting period. Quality performance this reporting period Identify any quality or performance variances. Schedule performance this reporting period Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.",
+        "reporting_information": {
+            "label": "معلومات التقرير",
+            "guidance": "سجل المقاول ورقم العقد ونوعه والفترة الزمنية التي يغطيها التقرير وتاريخ تقديمه. نوع العقد يحدد ما إذا كان هناك توقع للتكلفة من عدمه.",
             "value": ""
         },
-        "Cost performance this reporting period": {
-            "guidance": "Describe whether the contract is on budget. If over or under budget, identify the cause of the variance. Forecast performance for future reporting periods Discuss the estimated delivery date and final cost of the contract. If the contract is a fixed price, do not enter cost forecasts.",
+        "scope_performance": {
+            "label": "أداء النطاق",
+            "guidance": "صف التقدم الذي تحقق في نطاق العمل خلال الفترة الزمنية الحالية.",
             "value": ""
         },
-        "Claims or disputes": {
-            "guidance": "Identify any new or resolved disputes or claims that have occurred during the current reporting period.",
+        "quality_performance": {
+            "label": "أداء الجودة",
+            "guidance": "حدد أي انحرافات في الجودة أو في الأداء.",
             "value": ""
         },
-        "Risks": {
-            "guidance": "List any risks. Risks should also be in the risk register.",
+        "schedule_performance": {
+            "label": "أداء الجدول الزمني",
+            "guidance": "صف ما إذا كان العقد ملتزمًا بالجدول الزمني. وفي حال التقدم أو التأخر، حدد سبب الانحراف.",
             "value": ""
         },
-        "Planned corrective or preventive action": {
-            "guidance": "Identify planned corrective or preventive actions necessary to recover schedule, cost, scope, or quality variances.",
+        "cost_performance": {
+            "label": "أداء التكلفة",
+            "guidance": "صف ما إذا كان العقد ملتزمًا بالميزانية. وفي حال تجاوزها أو عدم تجاوزها، حدد سبب الانحراف.",
             "value": ""
         },
-        "Issues": {
-            "guidance": "Identify any new issues that have arisen. These should also be entered in the issue log.",
+        "forecast_performance": {
+            "label": "التوقعات المستقبلية",
+            "guidance": "ناقش تاريخ التسليم المتوقع والتكلفة النهائية المتوقعة للعقد. وإذا كان العقد بسعر ثابت،  فلا تُدخل توقعات للتكلفة.",
             "value": ""
         },
-        "التعليقات": {
-            "guidance": "Add any comments that will add relevance to the report.",
+        "claims_or_disputes": {
+            "label": "المطالبات أو النزاعات",
+            "guidance": "حدد أي نزاعات أو مطالبات جديدة أو تم تسويتها خلال الفترة الزمنية الحالية.",
+            "value": ""
+        },
+        "risks": {
+            "label": "المخاطر",
+            "guidance": "اذكر أي مخاطر. ويجب أن تكون هذه المخاطر مسجلة أيضًا في سجل مخاطر المشروع.",
+            "value": ""
+        },
+        "corrective_preventive_action": {
+            "label": "الإجراءات التصحيحية أو الوقائية المخططة",
+            "guidance": "حدد الإجراءات التصحيحية أو الوقائية المخططة اللازمة لاستعادة الانحرافات في الجدول الزمني أو التكلفة أو النطاق أو الجودة.",
+            "value": ""
+        },
+        "issues": {
+            "label": "المشكلات",
+            "guidance": "حدد أي مشكلات جديدة ظهرت. ويجب أن تُدخل هذه المشكلات أيضًا في سجل المشكلات.",
+            "value": ""
+        },
+        "escalations": {
+            "label": "التصعيدات",
+            "guidance": "حدد أي بند يتطلب تصعيده إلى راعي المشروع أو مدير البرنامج أو مسؤول العقد أو أي طرف مناسب آخر.",
+            "value": ""
+        },
+        "change_requests": {
+            "label": "طلبات تغيير العقد",
+            "guidance": "لخص أي طلبات تغيير للعقد تم تقديمها خلال الفترة الزمنية الحالية.",
+            "value": ""
+        },
+        "comments": {
+            "label": "التعليقات",
+            "guidance": "أضف أي تعليقات تضفي على التقرير صلة إضافية.",
             "value": ""
         }
     }
