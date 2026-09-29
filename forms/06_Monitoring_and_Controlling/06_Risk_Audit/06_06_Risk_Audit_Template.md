@@ -1,4 +1,3 @@
-<div dir="ltr" style="font-family: Arial, sans-serif;">
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Risk audits evaluate the effectiveness of risk identification, risk responses, and the risk
@@ -204,6 +203,4 @@ records unavailable at the time of the audit, or risks that could not be assesse
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
   <strong>Template:</strong> RISK AUDIT REPORT | <strong>Ref:</strong> PMO-06.06 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
-</div>
-
 </div>
