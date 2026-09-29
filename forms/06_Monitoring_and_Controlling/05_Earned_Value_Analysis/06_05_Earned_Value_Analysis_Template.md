@@ -86,6 +86,16 @@ Section-by-Section Instructions:
 
 ---
 
+### Sign-off and Approvals
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Cost / Finance Lead** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+
+---
+
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
   <strong>Template:</strong> EARNED VALUE ANALYSIS | <strong>Ref:</strong> PMO-06.05 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>

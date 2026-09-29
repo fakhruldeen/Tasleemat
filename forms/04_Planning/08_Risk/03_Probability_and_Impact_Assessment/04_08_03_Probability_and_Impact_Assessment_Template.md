@@ -50,13 +50,13 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 ---
 
-### Signatures
+### Sign-off and Approvals
 
-| Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
-| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Risk Owner** | {{Risk_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Risk Manager** | {{Risk_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

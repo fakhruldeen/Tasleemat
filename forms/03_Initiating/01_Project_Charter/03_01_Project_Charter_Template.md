@@ -141,13 +141,13 @@ Section Instructions:
 
 ---
 
-### Signatures
+### Sign-off and Approvals
 
-| Project Manager: | Project Sponsor / Originator: |
-| :--- | :--- |
-| **Name:** {{Project_Manager_Name}} | **Name:** {{Project_Sponsor_Name}} |
-| **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

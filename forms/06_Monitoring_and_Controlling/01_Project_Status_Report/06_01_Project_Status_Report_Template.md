@@ -101,13 +101,13 @@ Section-by-Section Instructions:
 
 ---
 
-### Signatures
+### Sign-off and Approvals
 
-| Prepared By (Project Manager): | Reviewed By (Sponsor / PMO): |
-| :--- | :--- |
-| **Name:** [ Prepared By (Project Manager) ] | **Name:** {{Reviewed_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

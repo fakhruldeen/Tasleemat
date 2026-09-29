@@ -105,13 +105,13 @@ Section-by-Section Instructions:
 
 ---
 
-### Signatures
+### Sign-off and Approvals
 
-| Prepared By (Team Member): | Reviewed By (Project Manager): |
-| :--- | :--- |
-| **Name:** [ Prepared By (Team Member) ] | **Name:** {{Reviewed_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Team Member / Contributor** | {{Prepared_By}} | _______________________ | [ .... - .... - .... ] |
+| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

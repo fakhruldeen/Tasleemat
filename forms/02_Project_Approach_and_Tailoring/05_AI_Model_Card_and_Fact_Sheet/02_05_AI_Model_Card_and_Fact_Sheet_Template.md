@@ -63,13 +63,13 @@ Section Instructions:
 
 ---
 
-### Signatures
+### Sign-off and Approvals
 
-| Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
-| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **AI / ML Lead** | {{AI_ML_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Data Protection Officer** | {{Data_Protection_Officer_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

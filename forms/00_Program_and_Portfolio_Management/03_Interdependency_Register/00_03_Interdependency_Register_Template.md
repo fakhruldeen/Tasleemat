@@ -42,13 +42,13 @@ Please populate the table below with the following details:
 
 ---
 
-### Signatures
+### Sign-off and Approvals
 
-| Prepared By: | Reviewed By: | Approved By: |
-| :--- | :--- | :--- |
-| **Name:** {{Prepared_By}} | **Name:** {{Reviewed_By}} | **Name:** {{Approved_By}} |
-| **Signature:** _____________________ | **Signature:** _____________________ | **Signature:** _____________________ |
-| **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Date:** &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Program Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Dependency Owner** | {{Dependency_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 
