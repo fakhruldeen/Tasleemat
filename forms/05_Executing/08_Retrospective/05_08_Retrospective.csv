@@ -1,4 +1,14 @@
-Start,Stop,Keep,More,Less
-,,,,
-,,,,
-,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Session,Sprint or Iteration,"The sprint or iteration this retrospective covers. A retrospective that does not say which sprint it belongs to cannot be compared with the previous one, and an uncountable sequence of retrospectives is the same as none.",
+Session,Team Members Present,"Who took part. Someone who is not in the room cannot act on what was agreed, so name the absent members and how the outcome will reach them.",
+Session,Date,The date the retrospective was held.,
+Starfish,Start,"Actions and behaviors the team will begin to implement. Be specific: ""hold a joint review with QA twice a week"" can be started, ""communicate better"" cannot.",
+Starfish,Stop,"Actions or behaviors the team will cease doing. If the team is not willing to actually stop it, recording it here only builds a list the team learns to distrust.",
+Starfish,Keep,"Practices the team should continue with. Note why, because the reason is what a future team will need when the person who introduced the practice has moved on.",
+Starfish,More,"Practices that were not done consistently and should be done more often. Inconsistent usually means the practice exists but nothing enforces it, so record what would enforce it.",
+Starfish,Less,Practices that were done too much or should be reduced. Watch for process that exists to fix a problem which no longer occurs; that is the usual source of ceremony the team has stopped noticing.,
+Action Items,Action,"The specific change being made, taken from the Start, Stop, More, and Less columns rather than invented separately.",
+Action Items,Owner,"The one person accountable for making it happen. A team cannot own an action, because a team is never available.",
+Action Items,By When,"The date it should be done, and where it will be reviewed. An action with no review date is an action that will be carried into the next retrospective as a note about doing it better.",
+Action Items,Outcome,"What happened when it was tried, filled in at the next retrospective. Without this column the team repeats the same actions and the retrospective becomes a ritual rather than a feedback loop.",
+FLAP Alternative,Future Considerations,"The FLAP alternative to the starfish. If the team prefers FLAP, replace the five starfish columns with Accomplishments, Problems, Lessons, and Future Considerations rather than recording both, since two parallel forms get half-filled and neither is trusted.",
