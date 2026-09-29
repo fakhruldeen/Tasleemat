@@ -1,35 +1,189 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Resource Capacity Matrix template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
     "form_name": "Resource Capacity Matrix",
     "document_reference": "PMO-00.04",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Resource Capacity Matrix Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Resource Role/Team:** Skillset or team name.\n- **Total Available Capacity:** Total hours/FTE available.\n- **Allocated Capacity:** Hours/FTE already assigned.\n- **Remaining Capacity:** Available hours/FTE.\n- **Critical Constraints:** Any bottlenecks or single points of failure.",
-            "value": [
-                {
-                    "Resource Role/Team": "",
-                    "Total Available Capacity": "",
-                    "Allocated Capacity": "",
-                    "Remaining Capacity": "",
-                    "Critical Constraints": ""
-                },
-                {
-                    "Resource Role/Team": "",
-                    "Total Available Capacity": "",
-                    "Allocated Capacity": "",
-                    "Remaining Capacity": "",
-                    "Critical Constraints": ""
-                },
-                {
-                    "Resource Role/Team": "",
-                    "Total Available Capacity": "",
-                    "Allocated Capacity": "",
-                    "Remaining Capacity": "",
-                    "Critical Constraints": ""
-                }
-            ]
+        "f01_Matrix_Scope_and_Level": {
+            "section": "Matrix Basis",
+            "label": "Matrix Scope and Level",
+            "guidance": "What this matrix covers and at what level it is maintained, whether portfolio-wide across initiatives, program-wide across components, or for a single project. The level decides what the matrix is used to decide: a portfolio matrix decides between initiatives, a project matrix decides whether one plan is credible, and reading either as the other produces a confident wrong answer.",
+            "value": ""
+        },
+        "f02_Capacity_Unit_of_Measure": {
+            "section": "Matrix Basis",
+            "label": "Capacity Unit of Measure",
+            "guidance": "The unit used for every figure in the matrix, whether person-days, full-time equivalents, or hours per period. State it once and use it throughout: a matrix whose rows use different units cannot be added up, and the total at the foot of it is then arithmetically meaningless rather than merely approximate.",
+            "value": ""
+        },
+        "f03_Periods_Covered": {
+            "section": "Matrix Basis",
+            "label": "Periods Covered",
+            "guidance": "The periods the matrix covers, matching those of the schedule it is compared against. Where the matrix is annual and the schedule is weekly, the comparison has to be done by hand every time and is therefore not done, which is how a quarterly shortfall survives to become a delivery failure.",
+            "value": ""
+        },
+        "f04_Source_of_Truth_or_Extract": {
+            "section": "Matrix Basis",
+            "label": "Source of Truth or Extract",
+            "guidance": "Whether this matrix is the authoritative record or an extract from a resourcing tool. Record which, because a reader who treats a stale extract as current will plan against capacity that was reallocated weeks ago, and the error surfaces only when the work cannot be staffed.",
+            "value": ""
+        },
+        "f05_Matrix_Owner": {
+            "section": "Matrix Basis",
+            "label": "Matrix Owner",
+            "guidance": "The single role accountable for the matrix as a whole, which is normally not the owner of any one resource in it. Where this is blank, the matrix has contributors but nobody who notices that a row has not been updated since the reorganisation.",
+            "value": ""
+        },
+        "f06_Last_Updated": {
+            "section": "Matrix Basis",
+            "label": "Last Updated",
+            "guidance": "The date the matrix was last reconciled against the plan, and against which version of the schedule. Without it a reader cannot tell a current matrix from an abandoned one, and the two are indistinguishable on the page.",
+            "value": ""
+        },
+        "f07_ID": {
+            "section": "Capacity by Resource",
+            "label": "ID",
+            "guidance": "The identifier for the resource role, used in the demand and gap sections so the three can be compared row against row. Without a shared identifier the comparison is done by eye, and two similarly named roles are the ones most often confused.",
+            "value": ""
+        },
+        "f08_Resource_Role_or_Team": {
+            "section": "Capacity by Resource",
+            "label": "Resource Role or Team",
+            "guidance": "The role or team, named as the work requires it rather than as the organisation chart draws it. A matrix organised by existing departments can never show a gap, because it only ever lists what is already there, and the absence of a needed capability reads as its absence from the plan rather than from the organisation.",
+            "value": ""
+        },
+        "f09_Period": {
+            "section": "Capacity by Resource",
+            "label": "Period",
+            "guidance": "The period the row covers, using the same periods throughout the matrix. Capacity recorded per period rather than in total is what makes the matrix usable, because a resource with a thousand person-days available who is fully committed in the month the work is needed has no capacity at all.",
+            "value": ""
+        },
+        "f10_Total_Available": {
+            "section": "Capacity by Resource",
+            "label": "Total Available",
+            "guidance": "The capacity that exists in the period, before any allocation, in the unit declared for the matrix. This is a figure about the organisation rather than about the project, and recording it here is what allows the reader to see how much of it is actually available.",
+            "value": ""
+        },
+        "f11_Allocated": {
+            "section": "Capacity by Resource",
+            "label": "Allocated",
+            "guidance": "The capacity already committed elsewhere in the portfolio. This is the column most often left out, and without it the available figure is the total, which is not what the project can use. It is also the column that reveals a resource being shared between initiatives without either owner knowing.",
+            "value": ""
+        },
+        "f12_Remaining": {
+            "section": "Capacity by Resource",
+            "label": "Remaining",
+            "guidance": "What is left after allocation, which is the figure the planner actually has. Where this is negative, the matrix has found a real problem; where it is silently recorded as zero because nobody wanted to write a negative number, the problem has been hidden instead of solved.",
+            "value": ""
+        },
+        "f13_Constraints_or_Single_Points_of_Failure": {
+            "section": "Capacity by Resource",
+            "label": "Constraints or Single Points of Failure",
+            "guidance": "What limits this resource: a location, a qualification held by one person, a licence, a tool only one person can operate, or a notice period. Record the consequence rather than the adjective, because \"test automation is a single point of failure because one person holds it\" can be acted on, while \"test automation is a risk\" cannot.",
+            "value": ""
+        },
+        "f14_Notes": {
+            "section": "Capacity by Resource",
+            "label": "Notes",
+            "guidance": "Anything that changes how the row should be read, such as a known vacancy, planned leave, or a resource shared with another portfolio. Where a role is filled by more than one person, record the role once and note the split here, since a row per person hides the total capacity of the role.",
+            "value": ""
+        },
+        "f15_ID": {
+            "section": "Demand by Resource",
+            "label": "ID",
+            "guidance": "The resource role the demand is for, matching the ID used in the capacity section so the two can be set against each other.",
+            "value": ""
+        },
+        "f16_Resource_Role": {
+            "section": "Demand by Resource",
+            "label": "Resource Role",
+            "guidance": "The role the demand falls on, using the same naming as the capacity section. The two must be the same list, or the comparison in the gap section silently excludes roles that appear in only one of them, which are usually the ones in trouble.",
+            "value": ""
+        },
+        "f17_Period": {
+            "section": "Demand by Resource",
+            "label": "Period",
+            "guidance": "The period the demand falls in. A demand recorded with no period cannot be compared with a capacity figure that has one, and is therefore dropped from the comparison without anyone deciding to drop it.",
+            "value": ""
+        },
+        "f18_Required_Capacity": {
+            "section": "Demand by Resource",
+            "label": "Required Capacity",
+            "guidance": "What the scope and schedule require in the period. Record the figure the plan was built on rather than the figure currently being achieved, since the second is a consequence of the first being wrong and reporting it back as the requirement makes the shortfall disappear from the plan.",
+            "value": ""
+        },
+        "f19_Source_of_Demand": {
+            "section": "Demand by Resource",
+            "label": "Source of Demand",
+            "guidance": "Which part of the plan generates it, such as a named deliverable, work package, or activity. A demand that cannot be traced to something in the plan cannot be challenged, and demands that cannot be challenged only ever grow.",
+            "value": ""
+        },
+        "f20_Priority": {
+            "section": "Demand by Resource",
+            "label": "Priority",
+            "guidance": "Whether the demand is essential, or could be deferred or descoped. Without a priority a gap has no remedy, because the available responses are to add capacity, move the work, or reduce it, and nothing in the matrix says which of those the programme would accept.",
+            "value": ""
+        },
+        "f21_Resource_Role": {
+            "section": "Gap Analysis",
+            "label": "Resource Role",
+            "guidance": "The role the gap applies to, using the same naming as the sections above. Where a role appears in the demand but not the capacity, the gap is the whole requirement rather than a shortfall, and that case is worth distinguishing because it is a different problem.",
+            "value": ""
+        },
+        "f22_Gap": {
+            "section": "Gap Analysis",
+            "label": "Gap",
+            "guidance": "The difference between required and remaining, stated as a signed number so that a surplus is not read as a shortfall. This is the figure the whole matrix exists to produce, and a matrix that records only the totals has omitted the only number anyone reads.",
+            "value": ""
+        },
+        "f23_Period": {
+            "section": "Gap Analysis",
+            "label": "Period",
+            "guidance": "The period the gap falls in. A gap in a period with no demand in it is a different problem from a gap in a period the work needs, and reporting both as \"a gap\" sends the reader looking for the wrong remedy.",
+            "value": ""
+        },
+        "f24_Resolution_Planned": {
+            "section": "Gap Analysis",
+            "label": "Resolution Planned",
+            "guidance": "How the gap will be closed: recruitment, a contractor, moving work between periods, reducing scope, or accepting the risk. Where the gap is covered by a contractor or a shared resource, record the contract or agreement that covers it, because a gap filled on the understanding that someone will help is not covered at all.",
+            "value": ""
+        },
+        "f25_Resolution_Owner": {
+            "section": "Gap Analysis",
+            "label": "Resolution Owner",
+            "guidance": "Who is accountable for closing the gap. A gap with a planned resolution and no owner is a gap being wished away, and it is the most common way a capacity matrix comes to be relied upon long after it was last true.",
+            "value": ""
+        },
+        "f26_Resolution_Date": {
+            "section": "Gap Analysis",
+            "label": "Resolution Date",
+            "guidance": "By when the resolution is expected to be in place. This is what tells the reader whether the plan is still feasible, so record it rather than leaving the row open, and where the date has passed without resolution, escalate rather than moving the date.",
+            "value": ""
+        },
+        "f27_Resource_Role": {
+            "section": "Contingency",
+            "label": "Resource Role",
+            "guidance": "The role the contingency applies to, or \"plan\" where the buffer is held across all roles rather than against one.",
+            "value": ""
+        },
+        "f28_Contingency_Type": {
+            "section": "Contingency",
+            "label": "Contingency Type",
+            "guidance": "Whether the buffer is in capacity, in time, or in scope. The three are not interchangeable: time contingency can be spent once, capacity contingency can be spent on anything, and scope contingency reduces the deliverable. A plan that holds no scope contingency and states only that it has float is a plan whose contingency is the work being cut.",
+            "value": ""
+        },
+        "f29_Contingency_Amount": {
+            "section": "Contingency",
+            "label": "Contingency Amount",
+            "guidance": "The size of the buffer, in the declared unit. Record it as a figure rather than a percentage, because a percentage of a demand that was never reconciled produces a number that looks precise and is not.",
+            "value": ""
+        },
+        "f30_How_It_Would_Be_Used": {
+            "section": "Contingency",
+            "label": "How It Would Be Used",
+            "guidance": "What the buffer protects, recorded so it cannot be quietly consumed on something it was not held for. A contingency with no stated use is the first thing cut in a difficult month, which is precisely the month it was held for.",
+            "value": ""
         }
     }
 }
