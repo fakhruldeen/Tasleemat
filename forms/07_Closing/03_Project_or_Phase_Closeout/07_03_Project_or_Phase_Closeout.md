@@ -26,111 +26,11 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 
 ---
 
-## Performance Summary
-
-### Scope Objectives
-
-**Instruction:** Describe the scope objectives needed to achieve the planned benefits of the project.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Completion Criteria
-
-**Instruction:** Document the specific and measurable criteria needed to complete the scope objectives. State each one so that it can be answered met or not met.
-
-**Generated value:** [ Add details... ]
-
----
-
-### How Met
-
-**Instruction:** Provide the evidence that the completion criteria were met. Give the source of the evidence, such as the document, test result, or acceptance record, not only the conclusion.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Quality Objectives
-
-**Instruction:** Describe the quality objectives and criteria needed to achieve the planned benefits of the project.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Quality Criteria
-
-**Instruction:** Document the specific and measurable criteria needed to meet the product and project quality objectives.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Verification and Validation
-
-**Instruction:** Enter the verification and validation information from the product acceptance form. Cross-reference that form rather than restating it, so the two records cannot drift apart.
-
-**Generated value:** [ Add details... ]
-
----
-
-## Variances
-
-### Time Objectives
-
-**Instruction:** The planned time objectives, being the approved schedule baseline duration and the planned completion date.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Final Completion Date
-
-**Instruction:** The actual date the project or phase was completed.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Time Variance
-
-**Instruction:** The difference between the planned and actual completion, and the reason for it. Where the project finished early, say so and explain why, since an unexplained favourable variance hides a planning error just as a delay does.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Cost Objectives
-
-**Instruction:** The approved cost baseline, or the total budget at completion if no baseline applies.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Final Expenditures
-
-**Instruction:** The actual total spent at completion, and whether it includes contingency drawn or reserve released.
-
-**Generated value:** [ Add details... ]
-
----
-
-### Cost Variance
-
-**Instruction:** The difference between the planned and actual cost, in currency and as a percentage, and the reason for it.
-
-**Generated value:** [ Add details... ]
-
----
-
 ## Benefits Management
 
 ### How Benefits Were Achieved
 
-**Instruction:** Describe how the final product, service, or result achieved the benefits the project was undertaken to address. Identify the benefit and the evidence that it was realised, distinguishing a benefit that was realised from one that is still expected.
+**Instruction:** Describe how the final product, service, or result achieved the benefits the project was undertaken to address. Identify the benefit and the evidence that it was realised, distinguishing a benefit that was realised from one that is still only expected.
 
 **Generated value:** [ Add details... ]
 
@@ -138,7 +38,7 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 
 ### Benefits Realisation Status
 
-**Instruction:** The current realisation status of each benefit, and who owns tracking it after the project team has been released.
+**Instruction:** The current realisation status of each benefit, and who owns tracking it after the project team has been released. A benefit with no owner at closure is a benefit that will not be measured.
 
 **Generated value:** [ Add details... ]
 
@@ -162,19 +62,143 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 
 ---
 
-## Risks and Issues
+## Performance Summary
 
-### Significant Risks and Issues
+### Scope / Objectives
 
-**Instruction:** Summarize any significant risks or issues, or the overall risk exposure, and describe the response and resolution strategies used. Record what remained open at closure, because an unresolved item transferred silently is the one most often lost.
+**Instruction:** Describe the scope objectives needed to achieve the planned benefits of the project.
 
 **Generated value:** [ Add details... ]
 
 ---
 
-### Items Transferred
+### Scope / Completion Criteria
 
-**Instruction:** Any item transferred to the organization or to operations, with the recipient named. An item with no named recipient has not been transferred.
+**Instruction:** Document the specific and measurable criteria needed to complete the scope objectives. State each one so that it can be answered met or not met, and cross-reference the scope baseline.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Scope / How Met
+
+**Instruction:** Provide the evidence that the completion criteria were met. Give the source of the evidence, such as the document, test result, or acceptance record, and not only the conclusion drawn from it.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Quality / Objectives
+
+**Instruction:** Describe the quality objectives and criteria needed to achieve the planned benefits of the project.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Quality / Completion Criteria
+
+**Instruction:** Document the specific and measurable criteria needed to meet the product and project quality objectives.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Quality / How Met
+
+**Instruction:** Enter the verification and validation information from the product acceptance form. Cross-reference that form rather than restating it, so the two records cannot drift apart.
+
+**Generated value:** [ Add details... ]
+
+---
+
+## Variances
+
+### Time / Objectives
+
+**Instruction:** The planned time objectives: the approved schedule baseline duration and the planned completion date.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Time / Final Outcome
+
+**Instruction:** The actual completion date and the actual duration.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Time / Variance
+
+**Instruction:** The difference between planned and actual, in days or weeks, with the reason. Where the project finished early, say so and explain why, because an unexplained favourable variance hides a planning error just as a delay does.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Time / Comments
+
+**Instruction:** Any consequence of the time variance for the organization, such as a missed market window, and anything still open at closure.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Cost / Objectives
+
+**Instruction:** The approved cost baseline, or the total budget at completion if no baseline applies.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Cost / Final Outcome
+
+**Instruction:** The actual total spent at completion, stating whether it includes contingency drawn or reserve released.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Cost / Variance
+
+**Instruction:** The difference between planned and actual, in currency and as a percentage, with the reason.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Cost / Comments
+
+**Instruction:** Any consequence of the cost variance for the organization, such as a claim or a budget transfer still required, and anything still open.
+
+**Generated value:** [ Add details... ]
+
+---
+
+## Risks and Issues
+
+### Risk or Issue
+
+**Instruction:** The risk or issue, and where it came from. Give the reference from the risk or issue register rather than restating it.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Response and Resolution
+
+**Instruction:** What was done about it and how effective that was. Say plainly whether it worked.
+
+**Generated value:** [ Add details... ]
+
+---
+
+### Comments
+
+**Instruction:** What remains open, and who owns it after closure. An unresolved item transferred without a named recipient has not been transferred.
 
 **Generated value:** [ Add details... ]
 
@@ -184,7 +208,7 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 
 ### Contracts Closed
 
-**Instruction:** The contracts closed out, with the final contract value and the date of each closure.
+**Instruction:** The contracts closed out, with the final value and the closure date of each. Where procurement was not used, state that plainly rather than leaving the section blank.
 
 **Generated value:** [ Add details... ]
 
@@ -192,7 +216,7 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 
 ### Obligations Discharged
 
-**Instruction:** The obligations, warranties, and service levels that have been met, transferred, or remain outstanding. Name who holds each one now.
+**Instruction:** The obligations, warranties, and service levels met, transferred, or still outstanding, with the holder named for each.
 
 **Generated value:** [ Add details... ]
 
@@ -200,7 +224,7 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 
 ### Claims and Disputes Settled
 
-**Instruction:** Any claim or dispute that was settled before closure, and any that was not. An unresolved claim is a liability the project has just handed on.
+**Instruction:** Any claim or dispute settled before closure, and any that was not. An unresolved claim is a liability the project is handing on.
 
 **Generated value:** [ Add details... ]
 

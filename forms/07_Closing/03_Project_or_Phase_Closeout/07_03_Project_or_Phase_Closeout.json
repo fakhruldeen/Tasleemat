@@ -11,130 +11,148 @@
             "guidance": "Provide a summary-level description of the project or phase: what it was, its purpose, and its boundaries. Keep it to a summary, and point to the project charter for detail.",
             "value": ""
         },
-        "f02_Scope_Objectives": {
-            "section": "Performance Summary",
-            "label": "Scope Objectives",
-            "guidance": "Describe the scope objectives needed to achieve the planned benefits of the project.",
-            "value": ""
-        },
-        "f03_Completion_Criteria": {
-            "section": "Performance Summary",
-            "label": "Completion Criteria",
-            "guidance": "Document the specific and measurable criteria needed to complete the scope objectives. State each one so that it can be answered met or not met.",
-            "value": ""
-        },
-        "f04_How_Met": {
-            "section": "Performance Summary",
-            "label": "How Met",
-            "guidance": "Provide the evidence that the completion criteria were met. Give the source of the evidence, such as the document, test result, or acceptance record, not only the conclusion.",
-            "value": ""
-        },
-        "f05_Quality_Objectives": {
-            "section": "Performance Summary",
-            "label": "Quality Objectives",
-            "guidance": "Describe the quality objectives and criteria needed to achieve the planned benefits of the project.",
-            "value": ""
-        },
-        "f06_Quality_Criteria": {
-            "section": "Performance Summary",
-            "label": "Quality Criteria",
-            "guidance": "Document the specific and measurable criteria needed to meet the product and project quality objectives.",
-            "value": ""
-        },
-        "f07_Verification_and_Validation": {
-            "section": "Performance Summary",
-            "label": "Verification and Validation",
-            "guidance": "Enter the verification and validation information from the product acceptance form. Cross-reference that form rather than restating it, so the two records cannot drift apart.",
-            "value": ""
-        },
-        "f08_Time_Objectives": {
-            "section": "Variances",
-            "label": "Time Objectives",
-            "guidance": "The planned time objectives, being the approved schedule baseline duration and the planned completion date.",
-            "value": ""
-        },
-        "f09_Final_Completion_Date": {
-            "section": "Variances",
-            "label": "Final Completion Date",
-            "guidance": "The actual date the project or phase was completed.",
-            "value": ""
-        },
-        "f10_Time_Variance": {
-            "section": "Variances",
-            "label": "Time Variance",
-            "guidance": "The difference between the planned and actual completion, and the reason for it. Where the project finished early, say so and explain why, since an unexplained favourable variance hides a planning error just as a delay does.",
-            "value": ""
-        },
-        "f11_Cost_Objectives": {
-            "section": "Variances",
-            "label": "Cost Objectives",
-            "guidance": "The approved cost baseline, or the total budget at completion if no baseline applies.",
-            "value": ""
-        },
-        "f12_Final_Expenditures": {
-            "section": "Variances",
-            "label": "Final Expenditures",
-            "guidance": "The actual total spent at completion, and whether it includes contingency drawn or reserve released.",
-            "value": ""
-        },
-        "f13_Cost_Variance": {
-            "section": "Variances",
-            "label": "Cost Variance",
-            "guidance": "The difference between the planned and actual cost, in currency and as a percentage, and the reason for it.",
-            "value": ""
-        },
-        "f14_How_Benefits_Were_Achieved": {
+        "f02_How_Benefits_Were_Achieved": {
             "section": "Benefits Management",
             "label": "How Benefits Were Achieved",
-            "guidance": "Describe how the final product, service, or result achieved the benefits the project was undertaken to address. Identify the benefit and the evidence that it was realised, distinguishing a benefit that was realised from one that is still expected.",
+            "guidance": "Describe how the final product, service, or result achieved the benefits the project was undertaken to address. Identify the benefit and the evidence that it was realised, distinguishing a benefit that was realised from one that is still only expected.",
             "value": ""
         },
-        "f15_Benefits_Realisation_Status": {
+        "f03_Benefits_Realisation_Status": {
             "section": "Benefits Management",
             "label": "Benefits Realisation Status",
-            "guidance": "The current realisation status of each benefit, and who owns tracking it after the project team has been released.",
+            "guidance": "The current realisation status of each benefit, and who owns tracking it after the project team has been released. A benefit with no owner at closure is a benefit that will not be measured.",
             "value": ""
         },
-        "f16_How_Business_Needs_Were_Met": {
+        "f04_How_Business_Needs_Were_Met": {
             "section": "Business Needs",
             "label": "How Business Needs Were Met",
             "guidance": "Describe how the final product, service, or result achieved the business needs identified in the business plan.",
             "value": ""
         },
-        "f17_Needs_Not_Met": {
+        "f05_Needs_Not_Met": {
             "section": "Business Needs",
             "label": "Needs Not Met",
             "guidance": "Any business need that was not met, and what happens next now that the project is closed. A need left unstated here will be assumed met by whoever inherits the product.",
             "value": ""
         },
-        "f18_Significant_Risks_and_Issues": {
-            "section": "Risks and Issues",
-            "label": "Significant Risks and Issues",
-            "guidance": "Summarize any significant risks or issues, or the overall risk exposure, and describe the response and resolution strategies used. Record what remained open at closure, because an unresolved item transferred silently is the one most often lost.",
+        "f06_Scope_Objectives": {
+            "section": "Performance Summary",
+            "label": "Scope / Objectives",
+            "guidance": "Describe the scope objectives needed to achieve the planned benefits of the project.",
             "value": ""
         },
-        "f19_Items_Transferred": {
-            "section": "Risks and Issues",
-            "label": "Items Transferred",
-            "guidance": "Any item transferred to the organization or to operations, with the recipient named. An item with no named recipient has not been transferred.",
+        "f07_Scope_Completion_Criteria": {
+            "section": "Performance Summary",
+            "label": "Scope / Completion Criteria",
+            "guidance": "Document the specific and measurable criteria needed to complete the scope objectives. State each one so that it can be answered met or not met, and cross-reference the scope baseline.",
             "value": ""
         },
-        "f20_Contracts_Closed": {
+        "f08_Scope_How_Met": {
+            "section": "Performance Summary",
+            "label": "Scope / How Met",
+            "guidance": "Provide the evidence that the completion criteria were met. Give the source of the evidence, such as the document, test result, or acceptance record, and not only the conclusion drawn from it.",
+            "value": ""
+        },
+        "f09_Quality_Objectives": {
+            "section": "Performance Summary",
+            "label": "Quality / Objectives",
+            "guidance": "Describe the quality objectives and criteria needed to achieve the planned benefits of the project.",
+            "value": ""
+        },
+        "f10_Quality_Completion_Criteria": {
+            "section": "Performance Summary",
+            "label": "Quality / Completion Criteria",
+            "guidance": "Document the specific and measurable criteria needed to meet the product and project quality objectives.",
+            "value": ""
+        },
+        "f11_Quality_How_Met": {
+            "section": "Performance Summary",
+            "label": "Quality / How Met",
+            "guidance": "Enter the verification and validation information from the product acceptance form. Cross-reference that form rather than restating it, so the two records cannot drift apart.",
+            "value": ""
+        },
+        "f12_Time_Objectives": {
+            "section": "Variances",
+            "label": "Time / Objectives",
+            "guidance": "The planned time objectives: the approved schedule baseline duration and the planned completion date.",
+            "value": ""
+        },
+        "f13_Time_Final_Outcome": {
+            "section": "Variances",
+            "label": "Time / Final Outcome",
+            "guidance": "The actual completion date and the actual duration.",
+            "value": ""
+        },
+        "f14_Time_Variance": {
+            "section": "Variances",
+            "label": "Time / Variance",
+            "guidance": "The difference between planned and actual, in days or weeks, with the reason. Where the project finished early, say so and explain why, because an unexplained favourable variance hides a planning error just as a delay does.",
+            "value": ""
+        },
+        "f15_Time_Comments": {
+            "section": "Variances",
+            "label": "Time / Comments",
+            "guidance": "Any consequence of the time variance for the organization, such as a missed market window, and anything still open at closure.",
+            "value": ""
+        },
+        "f16_Cost_Objectives": {
+            "section": "Variances",
+            "label": "Cost / Objectives",
+            "guidance": "The approved cost baseline, or the total budget at completion if no baseline applies.",
+            "value": ""
+        },
+        "f17_Cost_Final_Outcome": {
+            "section": "Variances",
+            "label": "Cost / Final Outcome",
+            "guidance": "The actual total spent at completion, stating whether it includes contingency drawn or reserve released.",
+            "value": ""
+        },
+        "f18_Cost_Variance": {
+            "section": "Variances",
+            "label": "Cost / Variance",
+            "guidance": "The difference between planned and actual, in currency and as a percentage, with the reason.",
+            "value": ""
+        },
+        "f19_Cost_Comments": {
+            "section": "Variances",
+            "label": "Cost / Comments",
+            "guidance": "Any consequence of the cost variance for the organization, such as a claim or a budget transfer still required, and anything still open.",
+            "value": ""
+        },
+        "f20_Risk_or_Issue": {
+            "section": "Risks and Issues",
+            "label": "Risk or Issue",
+            "guidance": "The risk or issue, and where it came from. Give the reference from the risk or issue register rather than restating it.",
+            "value": ""
+        },
+        "f21_Response_and_Resolution": {
+            "section": "Risks and Issues",
+            "label": "Response and Resolution",
+            "guidance": "What was done about it and how effective that was. Say plainly whether it worked.",
+            "value": ""
+        },
+        "f22_Comments": {
+            "section": "Risks and Issues",
+            "label": "Comments",
+            "guidance": "What remains open, and who owns it after closure. An unresolved item transferred without a named recipient has not been transferred.",
+            "value": ""
+        },
+        "f23_Contracts_Closed": {
             "section": "Procurement Closeout",
             "label": "Contracts Closed",
-            "guidance": "The contracts closed out, with the final contract value and the date of each closure.",
+            "guidance": "The contracts closed out, with the final value and the closure date of each. Where procurement was not used, state that plainly rather than leaving the section blank.",
             "value": ""
         },
-        "f21_Obligations_Discharged": {
+        "f24_Obligations_Discharged": {
             "section": "Procurement Closeout",
             "label": "Obligations Discharged",
-            "guidance": "The obligations, warranties, and service levels that have been met, transferred, or remain outstanding. Name who holds each one now.",
+            "guidance": "The obligations, warranties, and service levels met, transferred, or still outstanding, with the holder named for each.",
             "value": ""
         },
-        "f22_Claims_and_Disputes_Settled": {
+        "f25_Claims_and_Disputes_Settled": {
             "section": "Procurement Closeout",
             "label": "Claims and Disputes Settled",
-            "guidance": "Any claim or dispute that was settled before closure, and any that was not. An unresolved claim is a liability the project has just handed on.",
+            "guidance": "Any claim or dispute settled before closure, and any that was not. An unresolved claim is a liability the project is handing on.",
             "value": ""
         }
     }
