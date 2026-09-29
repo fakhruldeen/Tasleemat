@@ -87,7 +87,9 @@ qualitative points belong, for example how easy the vendor was to work with.
 | **Cost** | [ Add details... ] | [ Add details... ] |
 | **Other** | [ Add details... ] | [ Add details... ] |
 
-> **Tailoring note:** For a small contract, all of the vendor performance information may be combined into a single summary paragraph.
+<!--
+Tailoring note: For a small contract, all of the vendor performance information may be combined into a single summary paragraph.
+-->
 
 ---
 
@@ -111,7 +113,9 @@ managed. Where the cause was organisational rather than vendor-specific, say so.
 | **Cost** | [ Add details... ] | [ Add details... ] |
 | **Other** | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** State the deficiency, its effect, and what should be done instead.
+<!--
+Comment guidance: State the deficiency, its effect, and what should be done instead.
+-->
 
 ---
 
@@ -131,7 +135,9 @@ change log so the two records can be reconciled.
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Tailoring note:** For small contracts, this section may not be needed.
+<!--
+Tailoring note: For small contracts, this section may not be needed.
+-->
 
 ---
 
@@ -151,7 +157,9 @@ the contract.
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Tailoring note:** For small contracts, this section may not be needed.
+<!--
+Tailoring note: For small contracts, this section may not be needed.
+-->
 
 ---
 
@@ -171,7 +179,9 @@ so here and explain why in the comments section.
 | **Signed Off By** | [ Add details... ] |
 | **Final Payment Date** | [ Add details... ] |
 
-> **Comment guidance:** All disputes must be resolved, the result accepted, and final payment made before closure.
+<!--
+Comment guidance: All disputes must be resolved, the result accepted, and final payment made before closure.
+-->
 
 ---
 

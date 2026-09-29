@@ -89,9 +89,11 @@ dimensions separate, because a conclusion that mixes quality and cost cannot be 
 | **Cost** | [ Add details... ] | [ Add details... ] |
 | **Other** | [ Add details... ] | [ Add details... ] |
 
-> **Tailoring note:** Add qualitative information such as how easy the vendor was to work with,
-> the timeliness of returning calls, and the collaborative attitude. This is useful for future
-> procurement opportunities.
+<!--
+Tailoring note: Add qualitative information such as how easy the vendor was to work with,
+the timeliness of returning calls, and the collaborative attitude. This is useful for future
+procurement opportunities.
+-->
 
 ---
 
@@ -115,7 +117,9 @@ cause rather than a vendor one, say so, because that finding belongs in section 
 | **Cost** | [ Add details... ] | [ Add details... ] |
 | **Other** | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** State the deficiency, its effect, and what should be done instead.
+<!--
+Comment guidance: State the deficiency, its effect, and what should be done instead.
+-->
 
 ---
 
@@ -134,7 +138,9 @@ right, because the next procurement will not know to repeat it. -->
 | **Conduct Procurements** | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Control Procurements** | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** Name the specific technique applied, and state whether it produced a useful result.
+<!--
+Comment guidance: Name the specific technique applied, and state whether it produced a useful result.
+-->
 
 ---
 
@@ -164,7 +170,9 @@ cause, it belongs here as well as in section 3. -->
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** Each area must name a specific weakness, what will change, and who owns it.
+<!--
+Comment guidance: Each area must name a specific weakness, what will change, and who owns it.
+-->
 
 ---
 

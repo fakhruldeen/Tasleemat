@@ -76,9 +76,12 @@ for the product rather than only the role, so the acceptance is traceable.
 | [ Add ID... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Sign here... ] | [ .... - .... - .... ] |
 | [ Add ID... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Sign here... ] | [ .... - .... - .... ] |
 
-> **Tailoring note:** Remove the Verification Method column if you do not need it. With that column the form becomes a product verification, validation, and acceptance form.
-
-> **Comment guidance:** Record any conditions attached to the acceptance, or items deferred to a later acceptance.
+<!--
+Tailoring note: Remove the Verification Method column if you do not need it. With that column the form becomes a product verification, validation, and acceptance form.
+-->
+<!--
+Comment guidance: Record any conditions attached to the acceptance, or items deferred to a later acceptance.
+-->
 
 ---
 

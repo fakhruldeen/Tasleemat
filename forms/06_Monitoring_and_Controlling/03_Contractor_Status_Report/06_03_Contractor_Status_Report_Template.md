@@ -95,7 +95,9 @@ acted on, and the project manager carries this content into the project status r
 | **Schedule** | [ Add details... ] | [ Add details... ] |
 | **Cost** | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** Where a dimension is behind, state the recovery date as well as the cause.
+<!--
+Comment guidance: Where a dimension is behind, state the recovery date as well as the cause.
+-->
 
 ---
 
@@ -112,7 +114,9 @@ because the price is contractually fixed and a cost forecast would be misleading
 | **Estimated Final Cost** | [ Add details... ] | [ Add details... ] |
 | **Key Forecast Assumptions** | [ Add details... ] | [ Add details... ] |
 
-> **Fixed price contracts:** If the contract is fixed price, do not enter cost forecasts. Record the reason instead.
+<!--
+Fixed price contracts: If the contract is fixed price, do not enter cost forecasts. Record the reason instead.
+-->
 
 ---
 
@@ -144,7 +148,9 @@ the risk report. -->
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** Risks in this section must also be recorded in the risk register.
+<!--
+Comment guidance: Risks in this section must also be recorded in the risk register.
+-->
 
 ---
 
@@ -174,7 +180,9 @@ section 5 is something that may occur; do not report the same item as both. -->
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** Issues in this section must also be entered in the issue log.
+<!--
+Comment guidance: Issues in this section must also be entered in the issue log.
+-->
 
 ---
 
@@ -190,7 +198,9 @@ section is optional and may be removed if no escalation is needed in your projec
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Tailoring note:** This section is optional. Remove it if your project has no escalation route.
+<!--
+Tailoring note: This section is optional. Remove it if your project has no escalation route.
+-->
 
 ---
 
@@ -206,7 +216,9 @@ was submitted in the period. -->
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Tailoring note:** This section is optional. Remove it if no change request was submitted.
+<!--
+Tailoring note: This section is optional. Remove it if no change request was submitted.
+-->
 
 ---
 

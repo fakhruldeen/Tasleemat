@@ -73,13 +73,16 @@ there a cheaper or faster response available. One row per risk event. -->
 - Comment: whether the event could have been foreseen, and whether a more effective
   response was available.
 -->
+
 | Risk Event | Cause | Response Implemented | Comment |
 | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
-> **Comment guidance:** Discuss if there was any way to have foreseen the event and responded to it more effectively.
+<!--
+Comment guidance: Discuss if there was any way to have foreseen the event and responded to it more effectively.
+-->
 
 ---
 
@@ -97,6 +100,7 @@ a better owner. One row per risk response. -->
   justification.
 - Actions to Improve: opportunities for improvement in how this response was handled.
 -->
+
 | Risk Event | Response | Successful? | Actions to Improve |
 | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -118,6 +122,7 @@ processes run throughout the project. -->
 - Followed as Planned?: Yes / Partially / No, judged against the risk management plan.
 - Observation: what was done differently or was missing.
 -->
+
 | Risk Management Process | Followed as Planned? | Observation |
 | :--- | :--- | :--- |
 | **Plan Risk Management** | [ Add details... ] | [ Add details... ] |
@@ -139,6 +144,7 @@ from this table because its outputs are the plan itself rather than a distinct t
 - Tools and Techniques Used: name the specific techniques applied in this process.
 - Successful?: whether the technique produced a sound and usable result.
 -->
+
 | Risk Management Process | Tools and Techniques Used | Successful? |
 | :--- | :--- | :--- |
 | **Identify Risks** | [ Add details... ] | [ Add details... ] |
@@ -147,7 +153,9 @@ from this table because its outputs are the plan itself rather than a distinct t
 | **Plan Risk Responses** | [ Add details... ] | [ Add details... ] |
 | **Control Risks** | [ Add details... ] | [ Add details... ] |
 
-> **Tools and techniques guidance:** Identify tools and techniques used in the various risk management processes and whether they were successful.
+<!--
+Tools and techniques guidance: Identify tools and techniques used in the various risk management processes and whether they were successful.
+-->
 
 ---
 
@@ -160,7 +168,9 @@ and improve it so the practice becomes repeatable rather than dependent on one i
 
 > [ Add details... ]
 
-> **Guidance:** Include any recommendations to update and improve risk forms, templates, policies, procedures, or processes to ensure these practices are repeatable.
+<!--
+Guidance: Include any recommendations to update and improve risk forms, templates, policies, procedures, or processes to ensure these practices are repeatable.
+-->
 
 ---
 
@@ -176,6 +186,7 @@ and the action reference, so the item can be tracked after the audit closes. -->
 - Improvement Plan: what will change, who owns it, and the expected result.
 - Follow-up Date / Corrective Action: the due date and the corrective action reference.
 -->
+
 | Area for Improvement | Improvement Plan | Follow-up Date / Corrective Action |
 | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
