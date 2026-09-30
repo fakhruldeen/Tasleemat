@@ -2,61 +2,67 @@
 lang: en
 layout: default
 title: Prompt Library Log
-nav_order: 1
+nav_order: 7
 ---
-
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Prompt Library Log
 
 **Document Reference:** `PMO-05.09`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Prompt Library Log** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Prompt Library Log** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A dynamic, living repository (**Prompt Library Log**) used to capture, track, and monitor items that arise during project execution.
+A table of the prompts in use, one row each: an identifier, the use case, the text as it is actually sent, what a good response looks like, and the version and status it currently holds. The text column is the one that decides whether the log is usable: a prompt filed as a description has to be rewritten before it can be sent.
 
 ---
 
 ### 2. Why?
-To maintain centralized visibility and prompt resolution of any outstanding items, risks, or requests that could impact project delivery.
+Because prompts are written repeatedly and rarely remembered, and the cost of a badly written prompt is paid in the review of whatever it produced. A library converts that cost into a lookup. It also converts an individual judgement into a shared one: a prompt that two people use gets better in a way that one person's habit does not, and the expected output column is what lets a team say the improvement happened.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **EXECUTING Process Group** of the project lifecycle.
+Written when a prompt has been used and found worth keeping, and revised whenever the prompt itself is revised. The version belongs in the first entry rather than being added later, because a prompt revised without a version number leaves every earlier result attached to a text that no longer exists.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Managed actively by the Project Manager and the core executing team, updated as work is performed.
+Kept by whoever uses the prompts, which on an AI-enabled project is the team rather than a single owner. The AI or ML lead signs because that role is where prompts are drawn from and where the ones that do not work get noticed. The data protection officer signs because a prompt is where personal data most often enters a model without being noticed.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **Prompt ID:** Unique identifier.
-*   **Use Case:** What the prompt is used for.
-*   **Prompt Text:** The actual text or structure of the prompt.
-*   **Expected Output:** What a successful response looks like.
-*   **Status/Version:** Current version or status of the prompt.
+*   File the prompt, not its history. The library is read under time pressure, and an entry written with a paragraph of reasoning attached to it is an entry nobody opens.
+*   Write the expected output before the prompt is used. Deciding what a good answer looks like after seeing the answer is not a standard, it is a description.
+*   Retire what does not work. An entry that was used and did not help is the most valuable line in the log, provided it is marked as one rather than deleted.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](05_09_Prompt_Library_Log_Template.md)
-* [🤖 LLM Generation Prompt](05_09_Prompt_Library_Log.md)
-* [📊 Data Schema (JSON)](05_09_Prompt_Library_Log.json)
-* [📈 Tabular Data (CSV)](05_09_Prompt_Library_Log.csv)
+### Alignment
+the AI governance plan, the AI readiness assessment, and the model card and fact sheet, because a prompt that names a model is only reusable while that model is in use
 
-</div>
+---
+
+### 5. How?
+To accurately complete the Prompt Library Log, populate the following sections based on
+the project context (ensuring reference to `parameters.md` for the general
+project variables):
+
+*   **Prompt ID:** A short identifier, so a prompt can be referred to in a meeting without its text being read out. A number is enough if it is the only one in use.
+*   **Use Case:** What the prompt is for, in one line: the task it was written to do and the situation it was written in. A prompt filed without its use case cannot be told apart from another one that reads almost the same.
+*   **Prompt Text:** The prompt as it is actually sent, not a description of it. What is filed here has to be usable by pasting it, because a paraphrase is a different prompt and will behave differently.
+*   **Expected Output:** What a good answer looks like, specifically enough to be checked. This is the column that makes the library auditable: without it there is nothing to compare a later response against.
+*   **Status/Version:** Where the prompt stands, and which version this is. A prompt that has been revised without the version moving leaves every earlier result attached to a text that no longer exists.
+
+---
+
+### Associated Templates
+* [📄 Printable Template (Markdown)](05_09_Prompt_Library_Log_Template.md)
+* [🤖 Smart Generation Prompt](05_09_Prompt_Library_Log.md)
+* [📊 Data Structure (JSON)](05_09_Prompt_Library_Log.json)
+* [📈 Tabular Data (CSV)](05_09_Prompt_Library_Log.csv)

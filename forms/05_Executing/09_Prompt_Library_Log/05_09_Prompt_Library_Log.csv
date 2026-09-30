@@ -1,4 +1,6 @@
-Prompt ID,Use Case,Prompt Text,Expected Output,Status/Version
-,,,,
-,,,,
-,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Prompt Library,Prompt ID,"A short identifier, so a prompt can be referred to in a meeting without its text being read out. A number is enough if it is the only one in use.",
+Prompt Library,Use Case,"What the prompt is for, in one line: the task it was written to do and the situation it was written in. A prompt filed without its use case cannot be told apart from another one that reads almost the same.",
+Prompt Library,Prompt Text,"The prompt as it is actually sent, not a description of it. What is filed here has to be usable by pasting it, because a paraphrase is a different prompt and will behave differently.",
+Prompt Library,Expected Output,"What a good answer looks like, specifically enough to be checked. This is the column that makes the library auditable: without it there is nothing to compare a later response against.",
+Prompt Library,Status/Version,"Where the prompt stands, and which version this is. A prompt that has been revised without the version moving leaves every earlier result attached to a text that no longer exists.",
