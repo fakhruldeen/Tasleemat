@@ -1,29 +1,147 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this USER STORY MAPPING CANVAS template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "USER STORY MAPPING CANVAS",
-    "document_reference": "PMO-04.02.09",
-    "project_title": "",
-    "date_prepared": "",
-    "fields": {
-        "User Persona": {
-            "guidance": "Who the user is.",
-            "value": ""
-        },
-        "User Activities (The Backbone)": {
-            "guidance": "High-level tasks the user needs to accomplish.",
-            "value": ""
-        },
-        "User Tasks (The Slices)": {
-            "guidance": "Specific steps under each activity.",
-            "value": ""
-        },
-        "MVP Release 1": {
-            "guidance": "Stories critical for the first release.",
-            "value": ""
-        },
-        "Future Releases": {
-            "guidance": "Stories planned for later.",
-            "value": ""
-        }
+  "_llm_instructions": "Fill out the 'project_title' and 'date_prepared' properties, and the 'value' property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Give the persona a workaround to beat and a frequency, and order the backbone by what the person does rather than by how the system is built. State the first-release outcome as something the person can now do, not as a list of features, and give every deferred slice a reason: later is not a reason, and a column with no stated dependency is a wish rather than a plan.",
+  "form_name": "USER STORY MAPPING CANVAS",
+  "document_reference": "PMO-04.02.09",
+  "project_title": "",
+  "date_prepared": "",
+  "fields": {
+    "f01_Primary_Persona": {
+      "section": "Persona and Problem",
+      "label": "Primary Persona",
+      "guidance": "The specific person, described so that a team can tell whether a proposed story serves them. A persona written as a role title rather than a person is the reason two teams build different products from the same map and discover the difference at launch.",
+      "value": ""
+    },
+    "f02_What_They_Are_Trying_to_Do": {
+      "section": "Persona and Problem",
+      "label": "What They Are Trying to Do",
+      "guidance": "What the person is trying to accomplish, in their own framing, and what they do today instead. The workaround is the baseline: a proposal that cannot say what it replaces cannot say what it improves, and every estimate is then a guess.",
+      "value": ""
+    },
+    "f03_Frequency_and_Stakes": {
+      "section": "Persona and Problem",
+      "label": "Frequency and Stakes",
+      "guidance": "How often the person does this, and what it costs them when it goes wrong. Frequency is what orders the backbone, and stakes are what separate a task worth automating from one worth automating carefully.",
+      "value": ""
+    },
+    "f04_Organisations_and_Roles_Affected": {
+      "section": "Persona and Problem",
+      "label": "Organisations and Roles Affected",
+      "guidance": "Other roles the change touches, including the people who approve, review, or are affected by a decision made from the output. A map that names only the operator will produce a system whose other users are discovered after release.",
+      "value": ""
+    },
+    "f05_Activities_in_Order": {
+      "section": "The Backbone",
+      "label": "Activities in Order",
+      "guidance": "The high-level activities the persona performs, left to right in the order performed. The order is a claim about how the work actually happens, and it is the part of the map most often arranged by system architecture instead, which hides the sequence the person actually experiences.",
+      "value": ""
+    },
+    "f06_Backbone_Source": {
+      "section": "The Backbone",
+      "label": "Backbone Source",
+      "guidance": "How the sequence was established: observation, interview, existing process document, or assumption. A backbone derived from a process diagram describes how the organisation says the work happens, which is not always how anyone does it.",
+      "value": ""
+    },
+    "f07_Activities_Deferred": {
+      "section": "The Backbone",
+      "label": "Activities Deferred",
+      "guidance": "Activities the person does that are deliberately not on the map, and why. A map that lists everything is a list of activities; the argument is in what has been left off and what that defers.",
+      "value": ""
+    },
+    "f08_Optional_and_Variable_Paths": {
+      "section": "The Backbone",
+      "label": "Optional and Variable Paths",
+      "guidance": "Where the sequence branches, and which branches are common and which are rare. A backbone drawn as a single line forces rare paths into the main flow, which is where most of the wasted work in a release comes from.",
+      "value": ""
+    },
+    "f09_Tasks_Under_Each_Activity": {
+      "section": "The Slices",
+      "label": "Tasks Under Each Activity",
+      "guidance": "One row per activity, with the specific steps of that activity. A step that serves no single activity is a horizontal layer, and a horizontal layer cannot be released on its own because no user can do anything useful with it.",
+      "value": ""
+    },
+    "f10_Slices_as_Vertical_Columns": {
+      "section": "The Slices",
+      "label": "Slices as Vertical Columns",
+      "guidance": "Each column must be a usable increment: every activity in the backbone has something in it, and a user can complete the whole journey with only that column. This is the defining discipline of the method, and a map that fails it has produced a technical layering dressed as a story map.",
+      "value": ""
+    },
+    "f11_Walking_Skeleton": {
+      "section": "The Slices",
+      "label": "Walking Skeleton",
+      "guidance": "The thinnest possible column, end to end, with the crudest workable implementation of every activity. Its purpose is to prove the integration rather than the features, and it is normally thrown away, which is the reason teams hesitate to build it.",
+      "value": ""
+    },
+    "f12_Slice_Sizing_Evidence": {
+      "section": "The Slices",
+      "label": "Slice Sizing Evidence",
+      "guidance": "What shows each slice is small enough to deliver, such as a timeboxed trial or a measured manual run. An estimate is a claim about a slice nobody has tried, and the first slice is where the estimate is usually wrong.",
+      "value": ""
+    },
+    "f13_MVP_Boundary": {
+      "section": "Release Slicing",
+      "label": "MVP Boundary",
+      "guidance": "Which columns are in the first release and which are not, and the single outcome that release delivers. The boundary is drawn by whether a persona can achieve something they came for, not by what is most valuable or most nearly finished, and a release assembled from the easiest columns delivers nothing anyone wanted.",
+      "value": ""
+    },
+    "f14_Outcome_of_the_First_Release": {
+      "section": "Release Slicing",
+      "label": "Outcome of the First Release",
+      "guidance": "What the persona is able to do after it that they could not do before, stated as a capability and not as a list of features. A release described by its features has no test for whether it succeeded, so its success is decided afterwards by whoever feels strongly about it.",
+      "value": ""
+    },
+    "f15_Validation_Plan": {
+      "section": "Release Slicing",
+      "label": "Validation Plan",
+      "guidance": "How the first release will be judged, against what, and by whom. Recorded before the release because a validation designed afterwards is a description of whatever was found.",
+      "value": ""
+    },
+    "f16_Slices_Deferred_Beyond_MVP": {
+      "section": "Release Slicing",
+      "label": "Slices Deferred Beyond MVP",
+      "guidance": "The columns not in the first release, with the reason for each. \"Later\" is not a reason; the reason is usually a dependency, a missing decision, or a risk too large for a first release.",
+      "value": ""
+    },
+    "f17_Later_Release_Candidates": {
+      "section": "Beyond the First Release",
+      "label": "Later Release Candidates",
+      "guidance": "Columns considered for subsequent releases, with their dependencies named. A candidate with an unnamed dependency is a wish, and a wish placed on a map is read as a commitment by whoever reads the map next.",
+      "value": ""
+    },
+    "f18_Emergent_Work_Anticipated": {
+      "section": "Beyond the First Release",
+      "label": "Emergent Work Anticipated",
+      "guidance": "Work the map does not contain because it has not been discovered yet, and how new items will be added. A map that claims to be complete invites the work to go somewhere unrecorded instead, which is where it is found later at the worst possible moment.",
+      "value": ""
+    },
+    "f19_Explicitly_Out_of_Scope": {
+      "section": "Beyond the First Release",
+      "label": "Explicitly Out of Scope",
+      "guidance": "What this product will not do, stated so it can be said out loud. This is the section that makes the map safe to publish, because an unstated exclusion is discovered by a user rather than by the team.",
+      "value": ""
+    },
+    "f20_Assumptions_and_Unvalidated_Beliefs": {
+      "section": "Map Quality and Maintenance",
+      "label": "Assumptions and Unvalidated Beliefs",
+      "guidance": "What the map takes on trust, and what would have to be true for it to hold. Every map rests on beliefs nobody has tested, and listing them is the only way to know which one to test first.",
+      "value": ""
+    },
+    "f21_Risks_to_the_Map": {
+      "section": "Map Quality and Maintenance",
+      "label": "Risks to the Map",
+      "guidance": "What would force the map to be redrawn, such as a change in regulation, a competitor's launch, or a finding that the real sequence differs. Recorded as triggers rather than as concerns, because a concern has no date and a trigger does.",
+      "value": ""
+    },
+    "f22_Update_Cadence_and_Owners": {
+      "section": "Map Quality and Maintenance",
+      "label": "Update Cadence and Owners",
+      "guidance": "How often the map is revisited, when a change triggers a redraw, and who owns it. A map with no owner and no cadence is a picture of what was understood once, and it is still being shown to people as if it were current.",
+      "value": ""
+    },
+    "f23_Traceability_to_Backlog_and_Release": {
+      "section": "Map Quality and Maintenance",
+      "label": "Traceability to Backlog and Release",
+      "guidance": "How a story on this map reaches the backlog, and what happens when a backlog item contradicts the map. The two are kept in step by a rule and a person, or they diverge quietly and the map stops describing the product.",
+      "value": ""
     }
+  }
 }
