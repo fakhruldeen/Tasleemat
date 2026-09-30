@@ -1,12 +1,50 @@
-<!--  
-LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Context and Definition:
+A team onboarding checklist is the set of things that must be true before
+somebody can be useful on a team, written down so that they happen. Most of
+them are invisible to the person who joins, which is the reason they are
+routinely missed: the access grant, the introduction to the tooling, the
+person to ask when something is unclear. A team that assumes a new member
+will work these out spends the first month discovering what it should have
+arranged in the first week.
+
+The checklist is per person rather than per project, and the dates are
+relative to the joining date for that reason. A new member's first week is
+the same set of steps in the same order whatever else is happening on the
+project, and a checklist with fixed calendar dates has to be redone every
+time the joining date moves.
+
+It can receive information from:
+*   Project onboarding plan
+*   Team composition and roles
+*   Information security policy
+
+It provides information to:
+*   Team performance assessment
+*   Lessons learned register
+*   Project status report, when a team is not yet at full strength
+
+Tailoring Tips:
+*   Write what done looks like, not what to do. A task nobody can mark as
+    complete is a task nobody will complete.
+*   Name the one-off. Most of these are somebody's single action, and the
+    step that gets missed is almost always the one that belongs to a person
+    outside the team.
+*   Close the checklist. The last entry is the one that says the onboarding
+    is finished, and without it the list has no end.
+
+Alignment:
+The team onboarding checklist should be aligned and consistent with:
+*   Team roles and responsibilities
+*   Information security policy, because access is the largest block of it
+*   Project onboarding plan, where the project has one
 
 Section Instructions:
-*   **Task:** Onboarding activity (e.g. System access granted).
-*   **Assigned To:** Who is responsible.
-*   **Due Date:** When it should be completed.
-*   **Status:** Done/Pending.
+*   Onboarding Tasks: for each thing that must be true before the new member
+    can be useful, give the task written so its completion is checkable, who
+    does it, when it should be done relative to joining, and whether it is
+    done or still pending.
 -->
 
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
@@ -14,26 +52,17 @@ Section Instructions:
 <h1 dir="ltr" align="center">TEAM ONBOARDING CHECKLIST</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Team Onboarding Checklist Entries
-<!-- 
-Please populate the table below with the following details:
-- **Task:** Onboarding activity (e.g. System access granted).
-- **Assigned To:** Who is responsible.
-- **Due Date:** When it should be completed.
-- **Status:** Done/Pending.
--->
+## Onboarding Tasks
+
 | Task | Assigned To | Due Date | Status |
 | --- | --- | --- | --- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
-
-
+| [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 
 ---
 
@@ -48,6 +77,6 @@ Please populate the table below with the following details:
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Team Onboarding Checklist | <strong>Ref:</strong> PMO-05.12 <br>
+  <strong>Template:</strong> TEAM ONBOARDING CHECKLIST | <strong>Ref:</strong> PMO-05.12 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

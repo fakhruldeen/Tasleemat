@@ -1,4 +1,5 @@
-Task,Assigned To,Due Date,Status
-,,,
-,,,
-,,,
+Section,Field,Guidance,LLM_Generated_Value
+Onboarding Tasks,Task,"The activity, written so that a person who does not know the project can tell whether it is done. ""Get set up"" is not a task; ""reviewed the onboarding document"" is.",
+Onboarding Tasks,Assigned To,"Who does it, which is not the same as who is waiting for it. Most onboarding tasks are somebody's one-off action, and naming the one-off is what stops the new member chasing something nobody owns.",
+Onboarding Tasks,Due Date,"When it should be complete, relative to the joining date rather than to a calendar day, because the joining date moves and a checklist full of fixed dates has to be redone when it does.",
+Onboarding Tasks,Status,"Done or pending, and the date it was done. A checklist nobody updates is one that has quietly stopped being true, and the entry is what shows it has.",

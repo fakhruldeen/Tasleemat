@@ -1,32 +1,31 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Team Onboarding Checklist template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "Team Onboarding Checklist",
     "document_reference": "PMO-05.12",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Team Onboarding Checklist' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.12.",
     "fields": {
-        "Team Onboarding Checklist Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Task:** Onboarding activity (e.g. System access granted).\n- **Assigned To:** Who is responsible.\n- **Due Date:** When it should be completed.\n- **Status:** Done/Pending.",
-            "value": [
-                {
-                    "Task": "",
-                    "Assigned To": "",
-                    "Due Date": "",
-                    "Status": ""
-                },
-                {
-                    "Task": "",
-                    "Assigned To": "",
-                    "Due Date": "",
-                    "Status": ""
-                },
-                {
-                    "Task": "",
-                    "Assigned To": "",
-                    "Due Date": "",
-                    "Status": ""
-                }
-            ]
+        "f01_Task": {
+            "section": "Onboarding Tasks",
+            "label": "Task",
+            "guidance": "The activity, written so that a person who does not know the project can tell whether it is done. \"Get set up\" is not a task; \"reviewed the onboarding document\" is.",
+            "value": ""
+        },
+        "f02_Assigned_To": {
+            "section": "Onboarding Tasks",
+            "label": "Assigned To",
+            "guidance": "Who does it, which is not the same as who is waiting for it. Most onboarding tasks are somebody's one-off action, and naming the one-off is what stops the new member chasing something nobody owns.",
+            "value": ""
+        },
+        "f03_Due_Date": {
+            "section": "Onboarding Tasks",
+            "label": "Due Date",
+            "guidance": "When it should be complete, relative to the joining date rather than to a calendar day, because the joining date moves and a checklist full of fixed dates has to be redone when it does.",
+            "value": ""
+        },
+        "f04_Status": {
+            "section": "Onboarding Tasks",
+            "label": "Status",
+            "guidance": "Done or pending, and the date it was done. A checklist nobody updates is one that has quietly stopped being true, and the entry is what shows it has.",
+            "value": ""
         }
     }
 }
