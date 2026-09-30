@@ -54,15 +54,48 @@ DOUBLED_SPACE = LOST_WORD
 
 
 def _blank_tags(s):
-    """Blank HTML tags with a single space, so tag-like corruption stays visible.
+    """Blank HTML tags so tag-like corruption stays visible.
 
-    A single space matters: blanking with \\x00 pushes Arabic and markup next to
-    each other and manufactures false positives.
+    A single space matters: blanking with \\x00 pushes Arabic and markup next
+    to each other and manufactures false positives.
     """
+    # Squeeze the whitespace either side of a tag *before* blanking it. Once
+    # the tag is gone there is nothing left to identify which spaces it
+    # created, so a second pass cannot recover the difference -- and an
+    # inline <strong> then reads as a lost word every time.
+    s = _collapse_around_tags(s)
     s = re.sub(r"<[a-zA-Z/][^>]*>", " ", s)
-    s = re.sub(r"<!--|-->", " ", s)
+    # A comment opener is followed by a single space by convention, and the
+    # leading '<' and the next Arabic letter then sit two apart. Blanking the
+    # opener with nothing, rather than a space, keeps that from reading as a
+    # lost word.
+    s = re.sub(r"<!--|-->", "", s)
     s = re.sub(r"^\s*>", " ", s, flags=re.M)
     return s
+
+
+# An inline tag leaves a blank on each side, and the two blanks then sit
+# either side of the next word. That reads as a doubled space and would be
+# reported as a lost word, so the pairs created by blanking are collapsed --
+# but only where a tag was actually blanked, so a genuine doubled space in the
+# prose is still visible.
+def _collapse_around_tags(text):
+    blanked = re.sub(r"<[a-zA-Z/][^>]*>", "\x00", text)
+    blanked = re.sub(r"[ \t]*\x00[ \t]*", " ", blanked)
+    return blanked
+
+
+# An inline tag leaves a blank on each side, and the two blanks then sit
+# either side of the next word. That reads as a doubled space and would be
+# reported as a lost word, so the pairs created by blanking are collapsed --
+# but only where a tag was actually blanked, so a genuine doubled space in the
+# prose is still visible.
+
+
+def _collapse_around_tags(text):
+    blanked = re.sub(r"<[a-zA-Z/][^>]*>", "\x00", text)
+    blanked = re.sub(r"[ \t]*\x00[ \t]*", " ", blanked)
+    return blanked
 
 
 def check_text(text, context="", allow=(), allow_where=None):

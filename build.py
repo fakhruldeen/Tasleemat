@@ -30,7 +30,9 @@ WORD = re.compile("[\u0600-\u06ff][\u0600-\u06ff\u064b-\u0652\u0670]*")
 
 CSV_HEADER = ["Section", "Field", "Guidance", "LLM_Generated_Value"]
 
-# Latin that is legitimately present in an Arabic artefact.
+# Latin that is legitimately present in an Arabic artefact. `parameters` is
+# referenced by every prompt and template, and the document reference itself
+# is Latin by convention, so both are allow-listed rather than suppressed.
 ALLOW = (
     "Tasleemat", "Business_Case",
     "lang", "ar", "en", "title", "layout", "default", "Form", "Instructions",
@@ -39,6 +41,7 @@ ALLOW = (
     "Generation", "Prompt", "Tabular", "Associated", "Templates", "Output",
     "Artifact", "QA", "UAT", "RBS", "WBS", "RACI", "The", "and", "of", "to",
     "for", "with", "Guide", "What", "Why", "When", "Who", "How",
+    "parameters.md", "parameters", "PMO",
 )
 
 
@@ -57,20 +60,34 @@ def sections_of(fields):
 
 # --- JSON --------------------------------------------------------------------
 
-def build_json(name, ref, fields, guidance, meta=None):
-    """Build the JSON. `guidance` maps label -> guidance text."""
+def build_json(name, ref, fields, guidance, meta=None, lang="ar"):
+    """Build the JSON. `guidance` maps label -> guidance text.
+
+    `_llm_instructions` follows the language of the file it goes into. It was
+    hardcoded Arabic, which put Arabic inside the English JSON -- caught by the
+    audit's no-Arabic-in-English-files check.
+    """
     missing = [label for _, label in fields if label not in guidance]
     if missing:
         raise SystemExit(f"no guidance for: {missing}")
 
-    data = {
-        "form_name": name,
-        "document_reference": ref,
-        "_llm_instructions": (
+    if lang == "ar":
+        instructions = (
             f"قم بتعبئة حقول '{name}' وكتابة قيمة كل حقل في موضع "
             "'القيمة المولَّدة' اعتمادًا على سياق المشروع. "
             f"السياق: المشروع الذي يحمل المرجع {ref}."
-        ),
+        )
+    else:
+        instructions = (
+            f"Populate the fields of '{name}' and write the value of each "
+            "field under 'Generated Value', based on the project context. "
+            f"Context: the project carrying reference {ref}."
+        )
+
+    data = {
+        "form_name": name,
+        "document_reference": ref,
+        "_llm_instructions": instructions,
     }
     if meta:
         data.update(meta)
@@ -140,10 +157,17 @@ def build_ar_template(en_text, tr):
         if m:
             level = line[:3]
             body = m.group(1)
-            if body in tr["SECTIONS"]:
-                body = tr["SECTIONS"][body]
-            elif body in tr["LABELS"]:
-                body = tr["LABELS"][body]
+            # The number in a numbered heading is outside the regex body, so
+            # the body is the heading text alone. An earlier version
+            # re-prepended the number and produced a doubled space after
+            # every heading marker.
+            num = re.match(r"^(\d+\.\s*)", body)
+            num = num.group(1) if num else ""
+            bare = body[len(num):]
+            if bare in tr["SECTIONS"]:
+                body = num + tr["SECTIONS"][bare]
+            elif bare in tr["LABELS"]:
+                body = num + tr["LABELS"][bare]
             elif body in tr["ALLOW_HEADINGS"]:
                 pass                        # already a permitted proper noun
             else:
@@ -151,7 +175,7 @@ def build_ar_template(en_text, tr):
                 # translation is an untranslated string, and it has shipped
                 # through a clean audit more than once.
                 raise SystemExit(f"untranslated heading: {body!r}")
-            out.append(f"{level} {body}")
+            out.append(f"{level} {body}".replace("##  ", "## "))
             i += 1
             continue
 
@@ -186,6 +210,8 @@ def build_ar_template(en_text, tr):
                 raise SystemExit(f"untranslated label: {label!r}")
             new = f"**{tr['LABELS'][label]}:**"
             if rest:
+                # rest may itself be a placeholder such as [ Add details... ],
+                # so it goes through the same substitution as any other line
                 new += f" {translate_inline(rest, tr)}"
             out.append(new)
             i += 1
@@ -240,6 +266,9 @@ def _translate_row(line, tr):
         if "[ Add details... ]" in c:
             out.append(tr["PLACEHOLDERS"]["add_details"])
             continue
+        if re.fullmatch(r"\[\s*\.{4}\s*-\s*\.{4}\s*-\s*\.{4}\s*\]", c):
+            out.append(tr["PLACEHOLDERS"].get("date_mask", c))
+            continue
         if "[" in c and "]" in c:
             out.append(tr["PLACEHOLDERS"]["fill"])
             continue
@@ -248,11 +277,14 @@ def _translate_row(line, tr):
 
 
 def translate_inline(text, tr):
-    """Substitute placeholders and inline bold labels within a line."""
+    """Substitute placeholders, inline bold labels and fill-in markers."""
     def ph(m):
         name = m.group(1)
         return "{{" + tr["PLACEHOLDERS"].get(name, name) + "}}"
     text = PLACEHOLDER.sub(ph, text)
+    # the fill-in marker is prose, not a template placeholder, so it is
+    # substituted before the generic bracket rule can swallow it
+    text = text.replace("[ Add details... ]", tr["PLACEHOLDERS"]["add_details"])
     text = re.sub(r"\*\*([^*]+?):\*\*",
                   lambda m: f"**{tr['LABELS'].get(m.group(1), m.group(1))}:**",
                   text)
