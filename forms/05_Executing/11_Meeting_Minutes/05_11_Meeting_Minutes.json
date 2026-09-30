@@ -1,28 +1,36 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this MEETING MINUTES template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "MEETING MINUTES",
+    "form_name": "Meeting Minutes",
     "document_reference": "PMO-05.11",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Meeting Minutes' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.11.",
     "fields": {
-        "Meeting Objective": {
-            "guidance": "Purpose of the meeting.",
+        "f01_Meeting_Objective": {
+            "section": "Meeting Record",
+            "label": "Meeting Objective",
+            "guidance": "What the meeting was called to settle, in one sentence. A purpose written after the meeting is a summary, and it is the only line that tells a reader whether anything was decided.",
             "value": ""
         },
-        "Attendees": {
-            "guidance": "Who was present.",
+        "f02_Attendees": {
+            "section": "Meeting Record",
+            "label": "Attendees",
+            "guidance": "Who was there, and who sent apologies. The list is not administrative: it is what tells a later reader whose agreement a decision carries, and who has to be told when the position changes.",
             "value": ""
         },
-        "Key Discussion Points": {
-            "guidance": "Main topics discussed.",
+        "f03_Key_Discussion_Points": {
+            "section": "Meeting Record",
+            "label": "Key Discussion Points",
+            "guidance": "The matters discussed, with the reasoning recorded alongside the conclusion. A decision with no recorded reasoning is one that gets relitigated, because the next person cannot see what was weighed.",
             "value": ""
         },
-        "Decisions Made": {
-            "guidance": "What was agreed upon.",
+        "f04_Decisions_Made": {
+            "section": "Meeting Record",
+            "label": "Decisions Made",
+            "guidance": "What was agreed, one per entry, attributed to the meeting that agreed it. This section is the one that is read later, and anything not written here did not happen as far as the record is concerned.",
             "value": ""
         },
-        "Action Items": {
-            "guidance": "Tasks, owners, and due dates.",
+        "f05_Action_Items": {
+            "section": "Action Items",
+            "label": "Action Items",
+            "guidance": "What was assigned, to whom, and by when. Written as a table because a task in a paragraph has no owner and no deadline a week later, and an action item without those two is a note.",
             "value": ""
         }
     }

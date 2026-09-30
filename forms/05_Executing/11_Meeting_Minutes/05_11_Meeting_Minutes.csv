@@ -1,6 +1,6 @@
-Field,Guidance,LLM_Generated_Value
-Meeting Objective,Purpose of the meeting.,
-Attendees,Who was present.,
-Key Discussion Points,Main topics discussed.,
-Decisions Made,What was agreed upon.,
-Action Items,"Tasks, owners, and due dates.",
+Section,Field,Guidance,LLM_Generated_Value
+Meeting Record,Meeting Objective,"What the meeting was called to settle, in one sentence. A purpose written after the meeting is a summary, and it is the only line that tells a reader whether anything was decided.",
+Meeting Record,Attendees,"Who was there, and who sent apologies. The list is not administrative: it is what tells a later reader whose agreement a decision carries, and who has to be told when the position changes.",
+Meeting Record,Key Discussion Points,"The matters discussed, with the reasoning recorded alongside the conclusion. A decision with no recorded reasoning is one that gets relitigated, because the next person cannot see what was weighed.",
+Meeting Record,Decisions Made,"What was agreed, one per entry, attributed to the meeting that agreed it. This section is the one that is read later, and anything not written here did not happen as far as the record is concerned.",
+Action Items,Action Items,"What was assigned, to whom, and by when. Written as a table because a task in a paragraph has no owner and no deadline a week later, and an action item without those two is a note.",

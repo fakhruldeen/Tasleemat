@@ -1,13 +1,48 @@
-<!--  
-LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Context and Definition:
+Meeting minutes are the record of what a meeting decided, written so that
+somebody who was not in the room can act on it. They are not a transcript.
+What makes a record of a meeting worth keeping months later is entirely what
+cannot be reconstructed from memory: the decisions, and the actions with
+their owners and dates. The discussion is recorded for a narrower reason,
+which is that a decision with no recorded reasoning gets relitigated by
+the next person who cannot see what was weighed. The attendee list is not
+administrative either, since it is what tells a reader whose agreement a
+decision carries.
+
+It can receive information from:
+*   Decision log
+*   Action items already assigned
+*   Risk audit, when a meeting is convened about a risk
+
+It provides information to:
+*   Decision log, once something is agreed
+*   Action items, once something is assigned
+*   Lessons learned register
+*   Project communications plan
+
+Tailoring Tips:
+*   Write the decisions, not the discussion. Most of what was said has no
+    bearing on what was agreed, and minutes that record the speech cannot be
+    read later.
+*   Name an owner and a date or write nothing. An action item without both is
+    a topic for the next meeting, and topics accumulate.
+*   Record the disagreement too. A decision taken over an objection is a
+    decision somebody will reopen, and the objection is the part that tells
+    you when it matters.
+
+Alignment:
+The meeting minutes should be aligned and consistent with:
+*   Decision log
+*   Action items, where a decision becomes an assignment
+*   Project status report, because decisions change what is reported
 
 Section Instructions:
-*   **Meeting Objective:** Purpose of the meeting.
-*   **Attendees:** Who was present.
-*   **Key Discussion Points:** Main topics discussed.
-*   **Decisions Made:** What was agreed upon.
-*   **Action Items:** Tasks, owners, and due dates.
+*   Meeting Objective: what the meeting was called to settle, then who was
+    there, then the matters discussed with their reasoning, then what was
+    agreed.
+*   Action Items: one row per assignment, with the owner and the date.
 -->
 
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
@@ -15,42 +50,43 @@ Section Instructions:
 <h1 dir="ltr" align="center">MEETING MINUTES</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Meeting Objective
-<!-- Purpose of the meeting. -->
+## Meeting Record
 
-> [ Add details... ]
+### Meeting Objective
+
+[ Add details... ]
 
 ---
 
 ### Attendees
-<!-- Who was present. -->
 
-> [ Add details... ]
+[ Add details... ]
 
 ---
 
 ### Key Discussion Points
-<!-- Main topics discussed. -->
 
-> [ Add details... ]
+[ Add details... ]
 
 ---
 
 ### Decisions Made
-<!-- What was agreed upon. -->
 
-> [ Add details... ]
+[ Add details... ]
 
 ---
 
-### Action Items
-<!-- Tasks, owners, and due dates. -->
+## Action Items
 
-> [ Add details... ]
+| Action | Owner | Due Date | Status |
+| --- | --- | --- | --- |
+| [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 
 ---
 
