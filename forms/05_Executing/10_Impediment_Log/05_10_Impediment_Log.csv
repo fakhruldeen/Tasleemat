@@ -1,4 +1,7 @@
-Impediment ID,Date Raised,Description,Impact,Owner,Status
-,,,,,
-,,,,,
-,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Impediment Log,Impediment ID,"A short identifier, so an impediment can be referred to in a stand-up without being described again. A number is enough if it is the only one in use.",
+Impediment Log,Date Raised,When it was identified. The date is what makes an old impediment visible: an entry with no date is one nobody can tell has been sitting there.,
+Impediment Log,Description,"What is standing between the team and the work, in terms someone outside the team would understand. A description the reader can only decode by asking is not one that can be escalated.",
+Impediment Log,Impact,What it costs while it stands: the work it holds up and what that costs in the cycle. An impediment with no stated impact cannot be prioritised against anything else.,
+Impediment Log,Owner,"Who is pursuing the resolution, which is not the same as who the impediment affects. The person raising it may be pursuing it and the person who can remove it may be elsewhere.",
+Impediment Log,Status,"Open, in progress, or resolved, and the date it was resolved. A resolved entry with no resolution recorded is worth little, because the next team to hit it cannot use what was learned.",

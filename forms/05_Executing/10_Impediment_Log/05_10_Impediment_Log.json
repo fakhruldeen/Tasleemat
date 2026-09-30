@@ -1,38 +1,43 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Impediment Log template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "Impediment Log",
     "document_reference": "PMO-05.10",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Impediment Log' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.10.",
     "fields": {
-        "Impediment Log Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Impediment ID:** Unique ID.\n- **Date Raised:** When it was identified.\n- **Description:** What is blocking the team.\n- **Impact:** How it affects the sprint.\n- **Owner:** Scrum Master or person resolving it.\n- **Status:** Open, In Progress, Resolved.",
-            "value": [
-                {
-                    "Impediment ID": "",
-                    "Date Raised": "",
-                    "Description": "",
-                    "Impact": "",
-                    "Owner": "",
-                    "Status": ""
-                },
-                {
-                    "Impediment ID": "",
-                    "Date Raised": "",
-                    "Description": "",
-                    "Impact": "",
-                    "Owner": "",
-                    "Status": ""
-                },
-                {
-                    "Impediment ID": "",
-                    "Date Raised": "",
-                    "Description": "",
-                    "Impact": "",
-                    "Owner": "",
-                    "Status": ""
-                }
-            ]
+        "f01_Impediment_ID": {
+            "section": "Impediment Log",
+            "label": "Impediment ID",
+            "guidance": "A short identifier, so an impediment can be referred to in a stand-up without being described again. A number is enough if it is the only one in use.",
+            "value": ""
+        },
+        "f02_Date_Raised": {
+            "section": "Impediment Log",
+            "label": "Date Raised",
+            "guidance": "When it was identified. The date is what makes an old impediment visible: an entry with no date is one nobody can tell has been sitting there.",
+            "value": ""
+        },
+        "f03_Description": {
+            "section": "Impediment Log",
+            "label": "Description",
+            "guidance": "What is standing between the team and the work, in terms someone outside the team would understand. A description the reader can only decode by asking is not one that can be escalated.",
+            "value": ""
+        },
+        "f04_Impact": {
+            "section": "Impediment Log",
+            "label": "Impact",
+            "guidance": "What it costs while it stands: the work it holds up and what that costs in the cycle. An impediment with no stated impact cannot be prioritised against anything else.",
+            "value": ""
+        },
+        "f05_Owner": {
+            "section": "Impediment Log",
+            "label": "Owner",
+            "guidance": "Who is pursuing the resolution, which is not the same as who the impediment affects. The person raising it may be pursuing it and the person who can remove it may be elsewhere.",
+            "value": ""
+        },
+        "f06_Status": {
+            "section": "Impediment Log",
+            "label": "Status",
+            "guidance": "Open, in progress, or resolved, and the date it was resolved. A resolved entry with no resolution recorded is worth little, because the next team to hit it cannot use what was learned.",
+            "value": ""
         }
     }
 }

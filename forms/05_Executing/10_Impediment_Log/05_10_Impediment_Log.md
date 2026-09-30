@@ -3,44 +3,53 @@ lang: en
 Form: Impediment Log (Instructions)
 ---
 
-# IMPEDIMENT LOG - LLM GENERATION GUIDE
+# Impediment Log - LLM Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+SYSTEM INSTRUCTIONS: This document is the detailed instruction set for
+generating the Impediment Log. When asked to populate the template, follow the
+guidance for each section below to produce the requested content. Refer to
+`parameters.md` for the general project variables.
+-->
 
-> **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> **Context and Definition:**
+> The record of the things standing between a team and the work it has taken on, kept so that they are raised rather than worked around. An impediment is not an issue: an issue is something wrong inside the team's own work, which the team fixes by working differently, while an impediment is something the team cannot remove by itself. That distinction is what the log records, and it is why every entry has an owner, because the person raising an impediment is rarely the person who can clear it.
+
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The Impediment Log must be consistent with: the issue log, the decision log, and the risk register, because an impediment that recurs is a risk being realised.
 
 ---
+
+## Impediment Log
 
 ### Impediment ID
-**Instruction:** Unique ID.
+**Instructions:** A short identifier, so an impediment can be referred to in a stand-up without being described again. A number is enough if it is the only one in use.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Date Raised
-**Instruction:** When it was identified.
+**Instructions:** When it was identified. The date is what makes an old impediment visible: an entry with no date is one nobody can tell has been sitting there.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Description
-**Instruction:** What is blocking the team.
+**Instructions:** What is standing between the team and the work, in terms someone outside the team would understand. A description the reader can only decode by asking is not one that can be escalated.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Impact
-**Instruction:** How it affects the sprint.
+**Instructions:** What it costs while it stands: the work it holds up and what that costs in the cycle. An impediment with no stated impact cannot be prioritised against anything else.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Owner
-**Instruction:** Scrum Master or person resolving it.
+**Instructions:** Who is pursuing the resolution, which is not the same as who the impediment affects. The person raising it may be pursuing it and the person who can remove it may be elsewhere.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Status
-**Instruction:** Open, In Progress, Resolved.
+**Instructions:** Open, in progress, or resolved, and the date it was resolved. A resolved entry with no resolution recorded is worth little, because the next team to hit it cannot use what was learned.
 
+**Generated Value:** [ Add details... ]
+
+---
