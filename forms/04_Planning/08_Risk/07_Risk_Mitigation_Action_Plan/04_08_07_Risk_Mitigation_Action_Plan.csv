@@ -1,7 +1,7 @@
-Field,Guidance,LLM_Generated_Value
-Risk ID and Title,Reference to the Risk Register.,
-Current Risk Score,Probability x Impact.,
-Mitigation Strategy,"Avoid, Transfer, Mitigate, Accept.",
-Detailed Action Steps,Step by step plan to reduce the risk.,
-Resource Requirements,Budget or people needed to execute the plan.,
-Target Risk Score,Expected score after mitigation.,
+Section,Field,Guidance,LLM_Generated_Value
+Risk Assessment,Risk ID and Title,"The identifier and title of the risk exactly as the risk register carries them, so this plan can be joined back to the register. A title written here that differs from the register's is the defect that makes the two documents disagree about what is being planned for.",
+Risk Assessment,Current Risk Score,"The probability multiplied by the impact, each on the scale the register uses, with both factors shown rather than only the product. A score given on its own hides the reason for it, and a score whose factors cannot be read back cannot be recalculated when one of them changes.",
+Mitigation Plan,Mitigation Strategy,"Which of the four treatments the risk is given: avoid, transfer, mitigate, or accept. Accept is a decision that needs a reason, so an accepted risk carries the reason and the name of whoever accepted it.",
+Mitigation Plan,Detailed Action Steps,"The plan as ordered steps, each with an owner and a date, so that the plan can be read as work rather than as intent. A step with no owner is a wish, and a step with no date is a step that never starts.",
+Mitigation Plan,Resource Requirements,"What executing the plan costs and who has to be assigned to it: the budget, the people, and the time. Stated so the request can be approved against something, rather than argued in a meeting where no one can check it.",
+Mitigation Plan,Target Risk Score,"The score the plan is expected to reach, with the assumptions it depends on. A target written without saying which steps deliver it cannot be checked afterwards, which leaves no way to know whether the plan worked.",

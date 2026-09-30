@@ -3,44 +3,55 @@ lang: en
 Form: RISK MITIGATION ACTION PLAN (Instructions)
 ---
 
-# RISK MITIGATION ACTION PLAN - LLM GENERATION GUIDE
+# RISK MITIGATION ACTION PLAN - LLM Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `RISK MITIGATION ACTION PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+SYSTEM INSTRUCTIONS: This document is the detailed instruction set for
+generating the RISK MITIGATION ACTION PLAN. When asked to populate the template, follow the
+guidance for each section below to produce the requested content. Refer to
+`parameters.md` for the general project variables.
+-->
 
-> **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> **Context and Definition:**
+> The commitment of what will be done about one named risk: the treatment it is given, the steps that deliver that treatment, what the steps cost, and the score the project expects to reach once they are done. It is an output of Plan Risk Responses, and it exists so that a risk which has been identified does not stay identified.
+
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The RISK MITIGATION ACTION PLAN must be consistent with: the risk register, the risk management plan, and the risk audit, which looks for the responses that were planned and never made.
 
 ---
+
+## Risk Assessment
 
 ### Risk ID and Title
-**Instruction:** Reference to the Risk Register.
+**Instructions:** The identifier and title of the risk exactly as the risk register carries them, so this plan can be joined back to the register. A title written here that differs from the register's is the defect that makes the two documents disagree about what is being planned for.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Current Risk Score
-**Instruction:** Probability x Impact.
+**Instructions:** The probability multiplied by the impact, each on the scale the register uses, with both factors shown rather than only the product. A score given on its own hides the reason for it, and a score whose factors cannot be read back cannot be recalculated when one of them changes.
 
----
+**Generated Value:** [ Add details... ]
+
+## Mitigation Plan
 
 ### Mitigation Strategy
-**Instruction:** Avoid, Transfer, Mitigate, Accept.
+**Instructions:** Which of the four treatments the risk is given: avoid, transfer, mitigate, or accept. Accept is a decision that needs a reason, so an accepted risk carries the reason and the name of whoever accepted it.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Detailed Action Steps
-**Instruction:** Step by step plan to reduce the risk.
+**Instructions:** The plan as ordered steps, each with an owner and a date, so that the plan can be read as work rather than as intent. A step with no owner is a wish, and a step with no date is a step that never starts.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Resource Requirements
-**Instruction:** Budget or people needed to execute the plan.
+**Instructions:** What executing the plan costs and who has to be assigned to it: the budget, the people, and the time. Stated so the request can be approved against something, rather than argued in a meeting where no one can check it.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Target Risk Score
-**Instruction:** Expected score after mitigation.
+**Instructions:** The score the plan is expected to reach, with the assumptions it depends on. A target written without saying which steps deliver it cannot be checked afterwards, which leaves no way to know whether the plan worked.
 
+**Generated Value:** [ Add details... ]
+
+---

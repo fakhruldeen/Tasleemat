@@ -1,32 +1,44 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RISK MITIGATION ACTION PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "RISK MITIGATION ACTION PLAN",
     "document_reference": "PMO-04.08.07",
+    "_llm_instructions": "Populate the fields of 'RISK MITIGATION ACTION PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.08.07.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Risk ID and Title": {
-            "guidance": "Reference to the Risk Register.",
+        "f01_Risk_ID_and_Title": {
+            "section": "Risk Assessment",
+            "label": "Risk ID and Title",
+            "guidance": "The identifier and title of the risk exactly as the risk register carries them, so this plan can be joined back to the register. A title written here that differs from the register's is the defect that makes the two documents disagree about what is being planned for.",
             "value": ""
         },
-        "Current Risk Score": {
-            "guidance": "Probability x Impact.",
+        "f02_Current_Risk_Score": {
+            "section": "Risk Assessment",
+            "label": "Current Risk Score",
+            "guidance": "The probability multiplied by the impact, each on the scale the register uses, with both factors shown rather than only the product. A score given on its own hides the reason for it, and a score whose factors cannot be read back cannot be recalculated when one of them changes.",
             "value": ""
         },
-        "Mitigation Strategy": {
-            "guidance": "Avoid, Transfer, Mitigate, Accept.",
+        "f03_Mitigation_Strategy": {
+            "section": "Mitigation Plan",
+            "label": "Mitigation Strategy",
+            "guidance": "Which of the four treatments the risk is given: avoid, transfer, mitigate, or accept. Accept is a decision that needs a reason, so an accepted risk carries the reason and the name of whoever accepted it.",
             "value": ""
         },
-        "Detailed Action Steps": {
-            "guidance": "Step by step plan to reduce the risk.",
+        "f04_Detailed_Action_Steps": {
+            "section": "Mitigation Plan",
+            "label": "Detailed Action Steps",
+            "guidance": "The plan as ordered steps, each with an owner and a date, so that the plan can be read as work rather than as intent. A step with no owner is a wish, and a step with no date is a step that never starts.",
             "value": ""
         },
-        "Resource Requirements": {
-            "guidance": "Budget or people needed to execute the plan.",
+        "f05_Resource_Requirements": {
+            "section": "Mitigation Plan",
+            "label": "Resource Requirements",
+            "guidance": "What executing the plan costs and who has to be assigned to it: the budget, the people, and the time. Stated so the request can be approved against something, rather than argued in a meeting where no one can check it.",
             "value": ""
         },
-        "Target Risk Score": {
-            "guidance": "Expected score after mitigation.",
+        "f06_Target_Risk_Score": {
+            "section": "Mitigation Plan",
+            "label": "Target Risk Score",
+            "guidance": "The score the plan is expected to reach, with the assumptions it depends on. A target written without saying which steps deliver it cannot be checked afterwards, which leaves no way to know whether the plan worked.",
             "value": ""
         }
     }

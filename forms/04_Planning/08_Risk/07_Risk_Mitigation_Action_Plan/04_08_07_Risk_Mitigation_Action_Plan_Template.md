@@ -1,14 +1,46 @@
-<!--  
-LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+<!-- LLM INSTRUCTIONS: Fill in the Risk Mitigation Action Plan based on
+the project context.
+
+Context and Definition:
+A risk mitigation action plan is the commitment of what will be done about a
+named risk: the treatment it is given, the steps that deliver the treatment,
+what the steps cost, and the score the project expects to reach once they are
+done. It is an output of Plan Risk Responses, and it exists so that a risk
+which has been identified does not stay identified.
+
+It can receive information from:
+*   Risk register
+*   Risk management plan
+*   Risk response matrix
+
+It provides information to:
+*   Risk register
+*   Change log, when the treatment changes the baseline
+*   Project status report, because an accepted risk is a status fact
+
+Tailoring Tips:
+*   Plan only the risks whose score justifies the effort. A plan for every
+    registered risk spends the same effort on a risk that would have been
+    accepted anyway.
+*   Write the target score before the steps, not after. The target is what
+    makes the steps checkable; written last it becomes a description of what
+    happened rather than a commitment to it.
+*   Give an accepted risk a reason and a name. Acceptance is the one response
+    that is a decision rather than work, so it is the one most often left
+    unrecorded.
+
+Alignment:
+The risk mitigation action plan should be aligned and consistent with:
+*   Risk register
+*   Risk management plan
+*   Risk audit, which looks for the responses that were planned and never made
 
 Section Instructions:
-*   **Risk ID and Title:** Reference to the Risk Register.
-*   **Current Risk Score:** Probability x Impact.
-*   **Mitigation Strategy:** Avoid, Transfer, Mitigate, Accept.
-*   **Detailed Action Steps:** Step by step plan to reduce the risk.
-*   **Resource Requirements:** Budget or people needed to execute the plan.
-*   **Target Risk Score:** Expected score after mitigation.
+*   1. Risk Assessment: name the risk as the register carries it, then give
+    the score as probability times impact with both factors shown.
+*   2. Mitigation Plan: state the treatment, the steps that deliver it with an
+    owner and a date each, what the steps cost, and the score the plan expects
+    to reach.
 -->
 
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
@@ -16,51 +48,21 @@ Section Instructions:
 <h1 dir="ltr" align="center">RISK MITIGATION ACTION PLAN</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Risk ID and Title
-<!-- Reference to the Risk Register. -->
+## 1. Risk Assessment
 
-> [ Add details... ]
+| Risk ID and Title | Current Risk Score |
+| :--- | :--- |
+| [ Add details... ] | [ Add details... ] |
 
----
+## 2. Mitigation Plan
 
-### Current Risk Score
-<!-- Probability x Impact. -->
-
-> [ Add details... ]
-
----
-
-### Mitigation Strategy
-<!-- Avoid, Transfer, Mitigate, Accept. -->
-
-> [ Add details... ]
-
----
-
-### Detailed Action Steps
-<!-- Step by step plan to reduce the risk. -->
-
-> [ Add details... ]
-
----
-
-### Resource Requirements
-<!-- Budget or people needed to execute the plan. -->
-
-> [ Add details... ]
-
----
-
-### Target Risk Score
-<!-- Expected score after mitigation. -->
-
-> [ Add details... ]
-
----
+| Mitigation Strategy | Detailed Action Steps | Resource Requirements | Target Risk Score |
+| :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ### Sign-off and Approvals
 
