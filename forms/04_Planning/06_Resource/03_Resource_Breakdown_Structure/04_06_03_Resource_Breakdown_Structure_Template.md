@@ -1,8 +1,14 @@
-<!-- LLM INSTRUCTIONS: Fill in the Resource Breakdown Structure based on the project context.
+<!-- LLM INSTRUCTIONS: Fill in the Resource Breakdown Structure based on the
+project context.
 
-Context & Definition:
-The resource breakdown structure is a hierarchical structure used to organize the resources by type and category. It can be shown as a hierarchical chart or as an outline.
-The resource breakdown structure can receive information from:
+Context and Definition:
+The resource breakdown structure is a hierarchical structure used to organize
+the resources by type and category. It can be shown as a hierarchical chart or as
+an outline. It is an output of Estimate Activity Resources, and its resources are
+based on the project scope: a stable scope gives a stable resource tree, and an
+evolving scope gives one that must be re-examined each time scope moves.
+
+It can receive information from:
 *   Assumption log
 *   Resource management plan
 *   Scope baseline
@@ -11,28 +17,27 @@ The resource breakdown structure can receive information from:
 It provides information to:
 *   Duration estimates worksheet
 
-The resource breakdown structure is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resources are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. If the scope is evolving, the resource requirements will evolve as well.
-
 Tailoring Tips:
-*   For projects with many different types of team resources you may want to decompose the team branch further by including information on skill level, required certifications, location, or other information.
-*   For projects that have different locations you may want to organize the resource breakdown structure by geography.
+*   Decompose the team branch further when the project mixes skill levels,
+    required certifications or locations, since a branch holding all three
+    cannot be estimated against anything.
+*   Organise by geography instead of by type when the work is spread across
+    sites and the constraint is where people are.
+*   Keep the numbering contiguous. A gap in the codes reads as a missing node
+    rather than a deliberate skip.
 
 Alignment:
-The resource breakdown structure should be aligned and consistent with the following documents:
+The resource breakdown structure should be aligned and consistent with:
 *   Resource management plan
 *   Resource requirements
 
 Section Instructions:
-*   **Resource Breakdown Structure (Outline):** Provide a hierarchical outline of resources organized by type and category. Use the following numbering structure:
-    1. Project
-    1.1. People
-        1.1.1. Quantity of Role 1
-            1.1.1.1. Quantity of Level 1
-    1.2. Equipment
-    1.3. Materials
-    1.4. Supplies
-    1.5. Locations
-*   **Hierarchical Chart:** Provide a Mermaid mindmap or flowchart TD representing the resource breakdown structure visually.
+*   1. Resource Breakdown Structure (Outline): Give the hierarchy as rows of code
+    and node. The code is the position in the tree, written as 1, 1.1, 1.1.1 so a
+    reader can rebuild the tree from the text alone.
+*   2. Resource Breakdown Structure (Hierarchical Chart): State which view the
+    diagram takes, then give the node labels in the same order as the outline.
+    The chart and the outline must agree.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -40,29 +45,34 @@ Section Instructions:
 <h1 align="center">RESOURCE BREAKDOWN STRUCTURE</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Resource Breakdown Structure (Outline)
-* 1. **[ Project Name ]**
-  * 1.1. **People**
-    * 1.1.1. [ Add details... ]
-    * 1.1.2. [ Add details... ]
-  * 1.2. **Equipment**
-    * 1.2.1. [ Add details... ]
-    * 1.2.2. [ Add details... ]
-  * 1.3. **Materials**
-    * 1.3.1. [ Add details... ]
-    * 1.3.2. [ Add details... ]
-  * 1.4. **Supplies**
-    * 1.4.1. [ Add details... ]
-    * 1.4.2. [ Add details... ]
-  * 1.5. **Locations**
-    * 1.5.1. [ Add details... ]
-    * 1.5.2. [ Add details... ]
+## 1. Resource Breakdown Structure (Outline)
 
-### Resource Breakdown Structure (Hierarchical Chart)
+| RBS Code | Resource Node |
+| :--- | :--- |
+| 1 | [ Project Name ] |
+| 1.1 | People |
+| 1.1.1 | [ Add details... ] |
+| 1.1.2 | [ Add details... ] |
+| 1.2 | Equipment |
+| 1.2.1 | [ Add details... ] |
+| 1.3 | Materials |
+| 1.3.1 | [ Add details... ] |
+| 1.4 | Supplies |
+| 1.4.1 | [ Add details... ] |
+| 1.5 | Locations |
+| 1.5.1 | [ Add details... ] |
+
+## 2. Resource Breakdown Structure (Hierarchical Chart)
+
+**Chart Form:** [ Add details... ]
+
+**Node Labels:**
+[ Add details... ]
+
 ```mermaid
 mindmap
   root((Project))

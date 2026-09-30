@@ -5,63 +5,63 @@ title: Resource Breakdown Structure
 nav_order: 3
 ---
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
-
 ## Tasleemat Forms Guide
 # Project Artifact: Resource Breakdown Structure
 
 **Document Reference:** `PMO-04.06.03`
 
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Resource Breakdown Structure** in alignment with the
+Tasleemat framework.
+
 ---
 
-### Context & Definition
-The resource breakdown structure is a hierarchical structure used to organize the resources by type and category. It can be shown as a hierarchical chart or as an outline.
-The resource breakdown structure can receive information from:
-*   Assumption log
-*   Resource management plan
-*   Scope baseline
-*   Activity attributes
+### 1. What?
+A list of the project's resources arranged as a tree: the project at the top, resource categories beneath it, and individual resources with their quantities below those. It answers the question of what the project needs and in what groupings, without repeating the schedule.
 
-It provides information to:
-*   Duration estimates worksheet
+---
 
-The resource breakdown structure is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resources are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. If the scope is evolving, the resource requirements will evolve as well.
+### 2. Why?
+Because a resource list sorted flat by name cannot be checked against anything. As a tree, a reader can see at once which category is carrying the load, which branch is empty, and where a single resource sits deep enough that it may be split. The tree is also what makes the estimate arguable: a claim that a branch is adequately resourced is checkable against a branch that is not.
+
+---
+
+### 3. When?
+Built when activities are being estimated, once enough of the scope is settled to know what the activities are. It is revised whenever scope changes, because resources follow scope: a stable scope gives a stable resource tree, and an evolving one gives a tree that must be re-examined each time scope moves.
+
+---
+
+### 4. Who?
+Prepared by whoever estimates the activities, which is usually the team lead, and reviewed by the resource manager who holds the wider picture of what the organisation can supply. The project manager signs it because the tree is the shape of the estimate they are committing to.
+
+---
 
 ### Tailoring Tips
-Consider the following tips to help tailor the resource breakdown structure to meet your needs:
-*   For projects with many different types of team resources you may want to decompose the team branch further by including information on skill level, required certifications, location, or other information.
-*   For projects that have different locations you may want to organize the resource breakdown structure by geography.
-
-### Alignment
-The resource breakdown structure should be aligned and consistent with the following documents:
-*   Resource management plan
-*   Resource requirements
+*   Decompose the people branch further when the team mixes skill levels, required certifications, or locations. A branch that holds all three together cannot be estimated against anything.
+*   Organise by geography instead of by type when the work is spread across sites and the constraint is where people are, not what they do.
+*   Keep the numbering contiguous. A gap in the codes reads as a missing node rather than as a deliberate skip, and the reader cannot tell which it was meant to be.
 
 ---
 
-### Document Elements Description
+### Alignment
+the resource management plan, the resource requirements, and the activity attributes the resources are estimated against
 
-The Resource Breakdown Structure uses a hierarchical numbering outline format. Typically:
-* 1. **Project**
-  * 1.1. **People**
-    * 1.1.1. Quantity of Role 1
-      * 1.1.1.1. Quantity of Level 1
-      * 1.1.1.2. Quantity of Level 2
-    * 1.1.2. Quantity of Role 2
-  * 1.2. **Equipment**
-    * 1.2.1. Quantity of Type 1
-  * 1.3. **Materials**
-    * 1.3.1. Quantity of Material 1
-      * 1.3.1.1. Quantity of Grade 1
-  * 1.4. **Supplies**
-  * 1.5. **Locations**
+---
+
+### 5. How?
+To accurately complete the Resource Breakdown Structure, populate the following sections based on
+the project context (ensuring reference to `parameters.md` for the general
+project variables):
+
+*   **RBS Code:** The position of the node in the hierarchy, written as 1, 1.1, 1.1.1 so a reader can reconstruct the tree from the text alone. A node numbered 1.2.1 with no 1.2 above it means a level was skipped.
+*   **Resource Node:** What the node names. A first-level node is the project, a second-level node is a resource category such as people or equipment, and a third-level node is an individual resource carrying its quantity. A category node with nothing beneath it leaves the branch empty.
+*   **Chart Form:** Which view the chart takes: a mindmap for a single hierarchy, or a flowchart where the nodes carry relationships rather than only parentage. Stated so a reader knows what the diagram is meant to show.
+*   **Node Labels:** The node labels, one per line, in the same order as the outline. The chart and the outline must agree: a branch present in one and absent from the other is the defect this section exists to prevent.
 
 ---
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](04_06_03_Resource_Breakdown_Structure_Template.md)
 * [🤖 LLM Generation Prompt](04_06_03_Resource_Breakdown_Structure.md)
-* [📊 Data Schema (JSON)](04_06_03_Resource_Breakdown_Structure.json)
+* [📊 Data Structure (JSON)](04_06_03_Resource_Breakdown_Structure.json)
 * [📈 Tabular Data (CSV)](04_06_03_Resource_Breakdown_Structure.csv)
-
-</div>
