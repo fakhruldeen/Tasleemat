@@ -110,6 +110,21 @@ try:
 except SystemExit as e:
     expect("unknown placeholder raises", "Prepared_By" in str(e), str(e))
 
+print("\nmust reject: a table row wrapped across two lines")
+rows = "| a | b |\n| --- | --- |\n"
+expect("whole-table rows accepted", build.check_rows(rows))
+try:
+    build.check_rows(rows + "| [ Add detai\nls... ] | [ Add details... ] |\n")
+    expect("wrapped row rejected", False, "it passed silently")
+except SystemExit as e:
+    expect("wrapped row rejected", "line 3" in str(e), str(e))
+try:
+    build.check_rows("| first cell | no closing pipe\n")
+    expect("row without a closing pipe rejected", False, "it passed silently")
+except SystemExit as e:
+    expect("row without a closing pipe rejected", "line 1" in str(e), str(e))
+    expect("the message names the line", "at line 1" in str(e), str(e))
+
 print("\nmust reject: an untranslated heading")
 bad = {k: (dict(v) if isinstance(v, dict) else set(v)) for k, v in TR.items()}
 del bad["SECTIONS"]["Sign-off and Approvals"]

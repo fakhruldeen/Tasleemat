@@ -1,28 +1,36 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this USER ACCEPTANCE TESTING SIGNOFF template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "USER ACCEPTANCE TESTING SIGNOFF",
+    "form_name": "User Acceptance Testing Signoff",
     "document_reference": "PMO-06.10",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'User Acceptance Testing Signoff' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.10.",
     "fields": {
-        "Test Summary": {
-            "guidance": "Overview of what was tested.",
+        "f01_Test_Summary": {
+            "section": "Acceptance Record",
+            "label": "Test Summary",
+            "guidance": "What was tested, stated so that a reader can tell whether this was the whole release or a slice of it, and so that the criteria below can be read against something. \"The system\" is not a test summary; \"the three checkout flows plus the refund path\" is.",
             "value": ""
         },
-        "Testing Environment": {
-            "guidance": "Where the testing took place.",
+        "f02_Testing_Environment": {
+            "section": "Acceptance Record",
+            "label": "Testing Environment",
+            "guidance": "Where the testing took place and against what. The environment and the build are part of what was accepted: a pass on a developer's machine is not a pass on the environment the business will use, and a signature that does not record which one was tested cannot be relied on at go-live.",
             "value": ""
         },
-        "Pass/Fail Criteria": {
-            "guidance": "What determined the success.",
+        "f03_Pass_Fail_Criteria": {
+            "section": "Acceptance Record",
+            "label": "Pass/Fail Criteria",
+            "guidance": "What was decided before the testing began, not what was concluded after it. The criteria are what make the result mean anything: \"the system works\" cannot fail, because every system works on the day it is demonstrated, and a criterion written afterwards describes the outcome.",
             "value": ""
         },
-        "Known Defects": {
-            "guidance": "Any non-critical bugs accepted.",
+        "f04_Known_Defects": {
+            "section": "Acceptance Record",
+            "label": "Known Defects",
+            "guidance": "What was found and accepted rather than fixed, with the severity and who agreed to carry it. This section is what makes the signature honest: an empty defects section says the testing found nothing, which is almost never what happened, and a reader who knows that stops trusting the signature. Anything still open at go-live is discovered by somebody with no authority left to stop it.",
             "value": ""
         },
-        "Business Owner Sign-off": {
-            "guidance": "Formal acceptance statement.",
+        "f05_Business_Owner_Sign_off": {
+            "section": "Acceptance Record",
+            "label": "Business Owner Sign-off",
+            "guidance": "The decision, stated in the business's own terms rather than as a signature alone. What is being accepted, what is being accepted with, and what happens if something turns out not to work. This is the line that is read later when the question is whether the business agreed to this.",
             "value": ""
         }
     }

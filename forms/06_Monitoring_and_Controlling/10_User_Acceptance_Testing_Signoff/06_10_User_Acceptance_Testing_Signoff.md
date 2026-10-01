@@ -1,41 +1,50 @@
 ---
 lang: en
-Form: USER ACCEPTANCE TESTING SIGNOFF (Instructions)
+Form: User Acceptance Testing Signoff (Instructions)
 ---
 
-# USER ACCEPTANCE TESTING SIGNOFF - LLM GENERATION GUIDE
+# User Acceptance Testing Signoff - LLM Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `USER ACCEPTANCE TESTING SIGNOFF`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+SYSTEM INSTRUCTIONS: This document is the detailed instruction set for
+generating the User Acceptance Testing Signoff. When asked to populate the template, follow the
+guidance for each section below to produce the requested content. Refer to
+`parameters.md` for the general project variables.
+-->
 
-> **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> **Context and Definition:**
+> A record of a decision rather than a test report. The testing was performed and written up elsewhere; what this document holds is the business's agreement that the thing tested is the thing they asked for. It is the only artifact in this set that cannot be taken back quietly: development testing continues past a failure, and once the business has signed, the project moves on and the outstanding findings stop being worked on.
+
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The User Acceptance Testing Signoff must be consistent with: the test plan, because the signoff is against the cases the plan defines; the product acceptance form, which records the same decision at deliverable level; and the transition to operations checklist, which cannot start until this is signed.
 
 ---
+
+## Acceptance Record
 
 ### Test Summary
-**Instruction:** Overview of what was tested.
+**Instructions:** What was tested, stated so that a reader can tell whether this was the whole release or a slice of it, and so that the criteria below can be read against something. "The system" is not a test summary; "the three checkout flows plus the refund path" is.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Testing Environment
-**Instruction:** Where the testing took place.
+**Instructions:** Where the testing took place and against what. The environment and the build are part of what was accepted: a pass on a developer's machine is not a pass on the environment the business will use, and a signature that does not record which one was tested cannot be relied on at go-live.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Pass/Fail Criteria
-**Instruction:** What determined the success.
+**Instructions:** What was decided before the testing began, not what was concluded after it. The criteria are what make the result mean anything: "the system works" cannot fail, because every system works on the day it is demonstrated, and a criterion written afterwards describes the outcome.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Known Defects
-**Instruction:** Any non-critical bugs accepted.
+**Instructions:** What was found and accepted rather than fixed, with the severity and who agreed to carry it. This section is what makes the signature honest: an empty defects section says the testing found nothing, which is almost never what happened, and a reader who knows that stops trusting the signature. Anything still open at go-live is discovered by somebody with no authority left to stop it.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Business Owner Sign-off
-**Instruction:** Formal acceptance statement.
+**Instructions:** The decision, stated in the business's own terms rather than as a signature alone. What is being accepted, what is being accepted with, and what happens if something turns out not to work. This is the line that is read later when the question is whether the business agreed to this.
 
+**Generated Value:** [ Add details... ]
+
+---

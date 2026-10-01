@@ -360,3 +360,34 @@ def verify_pair(en_json_path, ar_json_path, ar_paths):
     for p in ar_paths:
         problems.extend(scan.check_file(p, allow=ALLOW))
     return scan.report(problems, "pair")
+
+
+def check_rows(text, label="template"):
+    """Every table row must be one line.
+
+    `TABLE_ROW` requires a leading and a trailing pipe, so a row
+    that a generator's string concatenation wrapped across two
+    source lines produces two fragments, and *neither* matches.
+    concatenation wrapped across two source lines produces two fragments, and
+    *neither* matches: the first has no closing pipe and the second has no
+    opening one. Both fragments then fall through to `translate_inline`, which
+    leaves role names in English, truncates a multi-cell row, and turns real
+    placeholders into fragments that no brace check recognises.
+
+    Found on PMO-06.09, where seven rows in one template were wrapped that way
+    and the only symptom the gates reported was untranslated Latin in the
+    Arabic file.
+    """
+    bad = []
+    for i, line in enumerate(text.split("\n"), 1):
+        s = line.rstrip()
+        if s.startswith("|") and not s.endswith("|"):
+            bad.append((i, s[:60]))
+    if bad:
+        for i, s in bad:
+            print(f"  line {i}: table row with no closing pipe: {s!r}")
+        raise SystemExit(
+            f"{len(bad)} table row(s) broken in {label} at line "
+            f"{bad[0][0]}; a row must be a single source line"
+        )
+    return True
