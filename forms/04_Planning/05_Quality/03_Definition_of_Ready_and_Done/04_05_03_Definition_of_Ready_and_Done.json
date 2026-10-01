@@ -1,16 +1,18 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this DEFINITION OF READY AND DONE template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "DEFINITION OF READY AND DONE STANDARD",
+    "form_name": "Definition of Ready and Done Standard",
     "document_reference": "PMO-04.05.03",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Definition of Ready and Done Standard' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.05.03.",
     "fields": {
-        "Definition of Ready (DoR)": {
-            "guidance": "Criteria a story must meet before entering a sprint (e.g., clear acceptance criteria, estimated).",
+        "f01_Definition_of_Ready_DoR": {
+            "section": "Team Working Agreement",
+            "label": "Definition of Ready (DoR)",
+            "guidance": "What a piece of work must satisfy before the team will pick it up. The test for every item is that a second person can check it without asking the author: the acceptance criteria are written and are unambiguous, the dependency is named, the estimate exists. \"The team believes it is understood\" is not ready; \"the acceptance criteria are in the ticket and no two readers would build different things from them\" is.",
             "value": ""
         },
-        "Definition of Done (DoD)": {
-            "guidance": "Criteria a story must meet to be considered complete (e.g., coded, tested, documented, approved).",
+        "f02_Definition_of_Done_DoD": {
+            "section": "Team Working Agreement",
+            "label": "Definition of Done (DoD)",
+            "guidance": "What must be true before a piece of work is called finished, stated so that somebody other than the author could confirm each one: the change is reviewed, the tests exist and pass, the documentation follows the change, and the acceptance criteria are met. This is the definition that decays, because every story shipped with an exception weakens it for the next one and nothing stops that becoming the rule. It is written once and applied without renegotiation; a justified exception is logged, not folded back into the definition.",
             "value": ""
         }
     }

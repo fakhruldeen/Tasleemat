@@ -1,26 +1,35 @@
 ---
 lang: en
-Form: DEFINITION OF READY AND DONE (Instructions)
+Form: Definition of Ready and Done Standard (Instructions)
 ---
 
-# DEFINITION OF READY AND DONE - LLM GENERATION GUIDE
+# Definition of Ready and Done Standard - LLM Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `DEFINITION OF READY AND DONE`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+SYSTEM INSTRUCTIONS: This document is the detailed instruction set for
+generating the Definition of Ready and Done Standard. When asked to populate the template, follow the
+guidance for each section below to produce the requested content. Refer to
+`parameters.md` for the general project variables.
+-->
 
-> **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> **Context and Definition:**
+> A standard rather than a record: written once at the start and used to measure every piece of work since. The two definitions point in opposite directions. The definition of ready is a promise made by whoever brings work in, and it is the team's only legitimate reason to refuse work. The definition of done is a promise made to whoever reads the work later, and it is the one that decays.
+
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The Definition of Ready and Done Standard must be consistent with: the team's estimation record, so the ready standard reflects real practice rather than an intention; the retrospective, which is where a criterion that keeps being waived should be reported rather than quietly dropped; and the change control process, since a change that has not been tested is the case the done standard exists to catch.
 
 ---
+
+## Team Working Agreement
 
 ### Definition of Ready (DoR)
-**Instruction:** Criteria a story must meet before entering a sprint (e.g., clear acceptance criteria, estimated).
+**Instructions:** What a piece of work must satisfy before the team will pick it up. The test for every item is that a second person can check it without asking the author: the acceptance criteria are written and are unambiguous, the dependency is named, the estimate exists. "The team believes it is understood" is not ready; "the acceptance criteria are in the ticket and no two readers would build different things from them" is.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Definition of Done (DoD)
-**Instruction:** Criteria a story must meet to be considered complete (e.g., coded, tested, documented, approved).
+**Instructions:** What must be true before a piece of work is called finished, stated so that somebody other than the author could confirm each one: the change is reviewed, the tests exist and pass, the documentation follows the change, and the acceptance criteria are met. This is the definition that decays, because every story shipped with an exception weakens it for the next one and nothing stops that becoming the rule. It is written once and applied without renegotiation; a justified exception is logged, not folded back into the definition.
 
+**Generated Value:** [ Add details... ]
+
+---
