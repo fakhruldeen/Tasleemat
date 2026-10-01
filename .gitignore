@@ -25,3 +25,6 @@ Thumbs.db
 .vscode/
 .idea/
 progress.md
+PMO-templates/
+# Local generator staging - see RESUME.md
+.staging/
