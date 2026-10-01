@@ -1,28 +1,60 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this STATEMENT OF WORK SOW template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "STATEMENT OF WORK SOW",
+    "form_name": "Statement of Work",
     "document_reference": "PMO-04.09.04",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Statement of Work' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.09.04.",
     "fields": {
-        "Scope of Work": {
-            "guidance": "Detailed description of vendor work.",
+        "f01_Purpose_and_Authority": {
+            "section": "Scope and Deliverables",
+            "label": "Purpose and Authority",
+            "guidance": "What this statement of work is authorised to do, and by whom. The authority clause is the one that settles a dispute about whether something was in scope: it names the instrument that created the obligation - the contract, the charter, the minute that approved it - so that a later reader can tell an agreed obligation from a good suggestion.",
             "value": ""
         },
-        "Period of Performance": {
-            "guidance": "Start and end dates.",
+        "f02_Scope_of_Work": {
+            "section": "Scope and Deliverables",
+            "label": "Scope of Work",
+            "guidance": "The work to be performed, described so that both parties would recognise the same work from this description alone. Boundaries are part of the description: what is explicitly excluded matters as much as what is included, because an omission read as an inclusion is the most common way a statement of work is argued about after the fact.",
             "value": ""
         },
-        "Deliverables Schedule": {
-            "guidance": "Specific milestones and due dates.",
+        "f03_Period_of_Performance": {
+            "section": "Scope and Deliverables",
+            "label": "Period of Performance",
+            "guidance": "The start and end dates, with any phases or extensions written in rather than left to a separate schedule. The end date is the one that carries the obligation, because it determines when acceptance becomes due and therefore when payment may fall due with it.",
             "value": ""
         },
-        "Applicable Standards": {
-            "guidance": "Technical or quality standards to adhere to.",
+        "f04_Deliverables_and_Schedule": {
+            "section": "Scope and Deliverables",
+            "label": "Deliverables and Schedule",
+            "guidance": "What will be handed over and by when, milestone by milestone rather than as a single lump. A deliverable without a date attached to it is a topic rather than an obligation, and it is the absence of dates that lets a period of performance run past its end without anybody having to decide anything.",
             "value": ""
         },
-        "Acceptance Criteria": {
-            "guidance": "How the buyer will accept the deliverables.",
+        "f05_Applicable_Standards": {
+            "section": "Scope and Deliverables",
+            "label": "Applicable Standards",
+            "guidance": "The technical, quality and regulatory requirements the deliverables must satisfy, named so that conformance can be tested rather than asserted. \"Best practice\" is not a standard, because there is no test that fails it; a named standard either passes or does not.",
+            "value": ""
+        },
+        "f06_Acceptance_Criteria": {
+            "section": "Scope and Deliverables",
+            "label": "Acceptance Criteria",
+            "guidance": "How the buyer will decide that each deliverable is accepted, who decides it, and how long they have to decide. An acceptance clause that omits the rejection route accepts the deliverable by default on silence, which removes the only leverage a buyer has over a supplier who has already been paid to try.",
+            "value": ""
+        },
+        "f07_Roles_and_Responsibilities": {
+            "section": "Terms and Governance",
+            "label": "Roles and Responsibilities",
+            "guidance": "Who is accountable for each part of the work on each side, named by role rather than by person so the document survives a change of staff. The line that matters is the boundary of authority: who may approve a delivery, who may commit additional effort, and who may not do either without going back to the contract.",
+            "value": ""
+        },
+        "f08_Assumptions_and_Dependencies": {
+            "section": "Terms and Governance",
+            "label": "Assumptions and Dependencies",
+            "guidance": "What both parties are taking to be true, and what the work depends on that is not under the supplier's control - access, data, decisions from third parties. This is the section that determines who carries the schedule when an assumption turns out to be false, and leaving it out converts a dependency problem into a dispute.",
+            "value": ""
+        },
+        "f09_Change_Control": {
+            "section": "Terms and Governance",
+            "label": "Change Control",
+            "guidance": "How a change to the scope, the deliverables or the dates gets into the statement of work, who approves it, and what happens to the price and the dates when it does. A change route that is described but not named is not a control: without an approver and a form, the first change of scope becomes a conversation, and the second one becomes the dispute.",
             "value": ""
         }
     }

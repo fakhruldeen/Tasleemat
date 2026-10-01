@@ -1,62 +1,73 @@
 ---
 lang: en
 layout: default
-title: Statement of Work SOW
-nav_order: 1
+title: Statement of Work
+nav_order: 7
 ---
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
-
 ## Tasleemat Forms Guide
-# Project Artifact: Statement of Work SOW
+# Project Artifact: Statement of Work
 
 **Document Reference:** `PMO-04.09.04`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Statement of Work SOW** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Statement of Work** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Statement of Work SOW**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+Two sections. The first is what will be delivered: the purpose and the authority behind it, the scope, the period of performance, the deliverables against their dates, the standards they must satisfy, and the criteria by which the buyer will accept each one. The second is what makes those terms hold: who is accountable on each side, what both parties are assuming and depending on, and the route by which a change enters the document.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+Because a document that describes deliverables without naming the authority that approved them and the mechanism by which they can be changed is not a contract document, it is a proposal in the wrong folder. Everything difficult about a statement of work happens after it is signed: the scope is read more widely than it was written, an assumption turns out to be false, and somebody needs extra work. The authority clause settles who agreed what, and the change route decides whether that extra work becomes a conversation or a dispute. Omitting them does not simplify the project; it defers both arguments to the moment they are least welcome.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Once, before the work begins, and then revised only through the change route the document itself defines. It is not a living record of what is happening, which is what the issue and change logs are for; a statement of work edited in place stops being the thing both parties agreed to, and the point of holding a copy is that neither party can quietly move it. Read again at closeout, where the question is not how the work went but whether what was delivered is what was written here.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+Owned by the procurement manager, who holds the contract and is the only party with standing to commit the buyer, with the project manager supplying the schedule and requirements context so the scope described is the scope the project is managing. The client representative signs because acceptance criteria bind the customer, not the supplier, and a criterion no customer has agreed to is a criterion the customer can decline to apply when it becomes inconvenient.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately and professionally complete the **STATEMENT OF WORK SOW**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **Scope of Work:** Detailed description of vendor work.
-*   **Period of Performance:** Start and end dates.
-*   **Deliverables Schedule:** Specific milestones and due dates.
-*   **Applicable Standards:** Technical or quality standards to adhere to.
-*   **Acceptance Criteria:** How the buyer will accept the deliverables.
+*   Write what is excluded. An omission reads as an inclusion, and almost every argument about scope begins with something nobody said.
+*   Name the standard rather than describing it. A named standard can be tested and can fail; a description of good practice cannot fail and therefore settles nothing.
+*   Give the acceptance clause a decision maker and a deadline. Acceptance by silence is not a safeguard, because silence is exactly what happens when nobody was given the obligation to decide.
+*   Name an approver for the change route. A change process described without an approver is not a control; the first change becomes a conversation and the second becomes the dispute.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_09_04_Statement_of_Work_SOW_Template.md)
-* [🤖 LLM Generation Prompt](04_09_04_Statement_of_Work_SOW.md)
-* [📊 Data Schema (JSON)](04_09_04_Statement_of_Work_SOW.json)
-* [📈 Tabular Data (CSV)](04_09_04_Statement_of_Work_SOW.csv)
+### Alignment
+the procurement strategy, which decides what is bought and on what terms; the requirements documentation, so the scope described here is the scope the project is managing; and the change request and change log, because the change route written here is the one those records follow
 
-</div>
+---
+
+### 5. How?
+To accurately complete the Statement of Work, populate the following sections based on
+the project context (ensuring reference to `parameters.md` for the general
+project variables):
+
+*   **Purpose and Authority:** What this statement of work is authorised to do, and by whom. The authority clause is the one that settles a dispute about whether something was in scope: it names the instrument that created the obligation - the contract, the charter, the minute that approved it - so that a later reader can tell an agreed obligation from a good suggestion.
+*   **Scope of Work:** The work to be performed, described so that both parties would recognise the same work from this description alone. Boundaries are part of the description: what is explicitly excluded matters as much as what is included, because an omission read as an inclusion is the most common way a statement of work is argued about after the fact.
+*   **Period of Performance:** The start and end dates, with any phases or extensions written in rather than left to a separate schedule. The end date is the one that carries the obligation, because it determines when acceptance becomes due and therefore when payment may fall due with it.
+*   **Deliverables and Schedule:** What will be handed over and by when, milestone by milestone rather than as a single lump. A deliverable without a date attached to it is a topic rather than an obligation, and it is the absence of dates that lets a period of performance run past its end without anybody having to decide anything.
+*   **Applicable Standards:** The technical, quality and regulatory requirements the deliverables must satisfy, named so that conformance can be tested rather than asserted. "Best practice" is not a standard, because there is no test that fails it; a named standard either passes or does not.
+*   **Acceptance Criteria:** How the buyer will decide that each deliverable is accepted, who decides it, and how long they have to decide. An acceptance clause that omits the rejection route accepts the deliverable by default on silence, which removes the only leverage a buyer has over a supplier who has already been paid to try.
+*   **Roles and Responsibilities:** Who is accountable for each part of the work on each side, named by role rather than by person so the document survives a change of staff. The line that matters is the boundary of authority: who may approve a delivery, who may commit additional effort, and who may not do either without going back to the contract.
+*   **Assumptions and Dependencies:** What both parties are taking to be true, and what the work depends on that is not under the supplier's control - access, data, decisions from third parties. This is the section that determines who carries the schedule when an assumption turns out to be false, and leaving it out converts a dependency problem into a dispute.
+*   **Change Control:** How a change to the scope, the deliverables or the dates gets into the statement of work, who approves it, and what happens to the price and the dates when it does. A change route that is described but not named is not a control: without an approver and a form, the first change of scope becomes a conversation, and the second one becomes the dispute.
+
+---
+
+### Associated Templates
+* [📄 Printable Template (Markdown)](04_09_04_Statement_of_Work_SOW_Template.md)
+* [🤖 Smart Generation Prompt](04_09_04_Statement_of_Work_SOW.md)
+* [📊 Data Structure (JSON)](04_09_04_Statement_of_Work_SOW.json)
+* [📈 Tabular Data (CSV)](04_09_04_Statement_of_Work_SOW.csv)
