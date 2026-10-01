@@ -195,7 +195,7 @@ def build_ar_template(en_text, tr):
                 # whether the first cell is a bold metadata label, not
                 # whether the row mentions a placeholder at all.
                 first = _split_row(row)[0].strip()
-                if META_LABEL.fullmatch(first):
+                if META_LABEL.match(first):
                     out.append(_translate_meta_row(row, tr))
                 else:
                     out.append(_translate_row(row, tr))
@@ -224,13 +224,23 @@ def build_ar_template(en_text, tr):
 
 
 def _translate_meta_row(line, tr):
-    """A metadata row keeps its bold label and translates the placeholder only."""
+    """A metadata cell is a bold label followed by its value.
+
+    `META_LABEL.fullmatch` cannot be used here: the cell is
+    `**Label:** {{Placeholder}}`, so the regex never consumes the whole
+    string and the label is left in English. `match` on the prefix is what
+    the shape of the cell calls for, and the remainder is translated
+    separately so the placeholder is substituted rather than discarded.
+    """
     cells = _split_row(line)
     out = []
     for cell in cells:
-        m = META_LABEL.fullmatch(cell.strip())
+        c = cell.strip()
+        m = META_LABEL.match(c)
         if m and m.group(1) in tr["LABELS"]:
-            out.append(f"**{tr['LABELS'][m.group(1)]}:**")
+            rest = c[m.end():].strip()
+            value = f" {translate_inline(rest, tr)}" if rest else ""
+            out.append(f"**{tr['LABELS'][m.group(1)]}:**{value}")
         else:
             out.append(translate_inline(cell, tr))
     return "| " + " | ".join(out) + " |"
@@ -259,7 +269,7 @@ def _translate_row(line, tr):
         if key in tr["ROLES"]:
             out.append(tr["ROLES"][key])
             continue
-        meta = META_LABEL.fullmatch(key)
+        meta = META_LABEL.match(key)
         if meta and meta.group(1) in tr["LABELS"]:
             out.append(f"**{tr['LABELS'][meta.group(1)]}:**")
             continue
@@ -280,7 +290,12 @@ def translate_inline(text, tr):
     """Substitute placeholders, inline bold labels and fill-in markers."""
     def ph(m):
         name = m.group(1)
-        return "{{" + tr["PLACEHOLDERS"].get(name, name) + "}}"
+        if name not in tr["PLACEHOLDERS"]:
+            raise SystemExit(
+                f"untranslated placeholder: {name!r} "
+                f"(from {text!r})"
+            )
+        return "{{" + tr["PLACEHOLDERS"][name] + "}}"
     text = PLACEHOLDER.sub(ph, text)
     # the fill-in marker is prose, not a template placeholder, so it is
     # substituted before the generic bracket rule can swallow it
@@ -292,6 +307,26 @@ def translate_inline(text, tr):
 
 
 # --- verification ------------------------------------------------------------
+
+def check_braces(text, label="template"):
+    """Every `{{Name}}` placeholder must carry both braces, and the count is
+    reported.
+
+    A template written as a Python literal and passed through `str.format`
+    loses one brace from each side unless the source doubled them, leaving
+    `{Name}` -- a token no substitution will ever fill. Neither the audit nor
+    the renderer inspects braces, so the file reaches the tree looking clean.
+    Found on PMO-05.09, where the English template had nine such tokens and
+    the Arabic builder carried all nine across faithfully.
+    """
+    bad = re.findall(r"(?<!\{)\{[A-Za-z_\u0600-\u06FF][^{}]*\}(?!\})", text)
+    good = re.findall(r"\{\{[^{}]+\}\}", text)
+    if bad:
+        for b in sorted(set(bad)):
+            print(f"  PLACEHOLDER WITHOUT BRACES in {label}: {b}")
+        raise SystemExit(f"{len(bad)} malformed placeholder(s) in {label}")
+    return len(good)
+
 
 def verify_ar(text, label=""):
     problems = scan.check_text(text, label, allow=ALLOW)

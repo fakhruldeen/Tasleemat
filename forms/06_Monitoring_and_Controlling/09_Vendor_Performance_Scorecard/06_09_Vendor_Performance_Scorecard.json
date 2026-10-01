@@ -1,35 +1,37 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Vendor Performance Scorecard template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "Vendor Performance Scorecard",
     "document_reference": "PMO-06.09",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Vendor Performance Scorecard' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.09.",
     "fields": {
-        "Vendor Performance Scorecard Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Metric/KPI:** What is being measured (e.g., Quality, Timeliness).\n- **Target Score:** Expected performance level.\n- **Actual Score:** Measured performance.\n- **Variance:** Difference between target and actual.\n- **Corrective Action:** Steps to improve if deficient.",
-            "value": [
-                {
-                    "Metric/KPI": "",
-                    "Target Score": "",
-                    "Actual Score": "",
-                    "Variance": "",
-                    "Corrective Action": ""
-                },
-                {
-                    "Metric/KPI": "",
-                    "Target Score": "",
-                    "Actual Score": "",
-                    "Variance": "",
-                    "Corrective Action": ""
-                },
-                {
-                    "Metric/KPI": "",
-                    "Target Score": "",
-                    "Actual Score": "",
-                    "Variance": "",
-                    "Corrective Action": ""
-                }
-            ]
+        "f01_Metric_KPI": {
+            "section": "Vendor Performance Scorecard Entries",
+            "label": "Metric/KPI",
+            "guidance": "What is being measured, named so that both sides would recognise it. \"Quality\" is not a metric; \"defects found in acceptance, per hundred items delivered\" is, because a word cannot be measured twice and compared across periods.",
+            "value": ""
+        },
+        "f02_Target_Score": {
+            "section": "Vendor Performance Scorecard Entries",
+            "label": "Target Score",
+            "guidance": "The level agreed in advance, with the period it applies to. A target written after the result is known is not a target, it is a description, and this column is the one that makes the variance column mean anything.",
+            "value": ""
+        },
+        "f03_Actual_Score": {
+            "section": "Vendor Performance Scorecard Entries",
+            "label": "Actual Score",
+            "guidance": "What was measured, and how. The measure is stated with the score so that a later reader can tell whether the same method was used in both periods; a number whose method has changed is not comparable to a number whose method did not.",
+            "value": ""
+        },
+        "f04_Variance": {
+            "section": "Vendor Performance Scorecard Entries",
+            "label": "Variance",
+            "guidance": "Target minus actual, with the direction that matters. Whether a positive number is good or bad depends on the metric, and stating it here is what stops the sign being argued about instead of the performance.",
+            "value": ""
+        },
+        "f05_Corrective_Action": {
+            "section": "Vendor Performance Scorecard Entries",
+            "label": "Corrective Action",
+            "guidance": "What happens because of the variance, and by when. Written only where there is a shortfall, and naming who does it: a scorecard that records a variance and no response produces the same variance next period, because the only thing that changed in between was the number.",
+            "value": ""
         }
     }
 }

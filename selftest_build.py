@@ -91,6 +91,24 @@ expect("add-details placeholder translated",
        "[ أضف التفاصيل... ]" in out and "[ Add details... ]" not in out)
 expect("metadata placeholders translated", "{{التاريخ_الحالي}}" in out
        and "{{Current_Date}}" not in out)
+# The metadata *label* and its value share a cell, so `META_LABEL.fullmatch`
+# could never match and both halves shipped in English. Asserting the
+# placeholder alone passed while the label stayed untranslated -- which is the
+# gap that let PMO-06.09 through a clean audit.
+expect("metadata labels translated",
+       "**تاريخ الإعداد:**" in out and "**" + TR["LABELS"]["Prepared By"] + ":**"
+       in out and "Date Prepared" not in out and "Prepared By" not in out)
+expect("metadata value kept beside its label",
+       "**تاريخ الإعداد:** {{التاريخ_الحالي}}" in out)
+
+print("\nmust reject: a placeholder with no translation")
+bad_ph = {k: (dict(v) if isinstance(v, dict) else set(v)) for k, v in TR.items()}
+del bad_ph["PLACEHOLDERS"]["Prepared_By"]
+try:
+    build.build_ar_template(EN, bad_ph)
+    expect("unknown placeholder raises", False, "it passed through silently")
+except SystemExit as e:
+    expect("unknown placeholder raises", "Prepared_By" in str(e), str(e))
 
 print("\nmust reject: an untranslated heading")
 bad = {k: (dict(v) if isinstance(v, dict) else set(v)) for k, v in TR.items()}

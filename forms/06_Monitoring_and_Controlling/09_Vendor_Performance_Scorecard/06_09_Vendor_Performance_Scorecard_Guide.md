@@ -2,61 +2,67 @@
 lang: en
 layout: default
 title: Vendor Performance Scorecard
-nav_order: 1
+nav_order: 7
 ---
-
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Vendor Performance Scorecard
 
 **Document Reference:** `PMO-06.09`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Vendor Performance Scorecard** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Vendor Performance Scorecard** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A formal Tasleemat-aligned project document known as the **Vendor Performance Scorecard**, utilized to plan, document, and manage the critical elements related to this specific knowledge area.
+A table of the measures the project tracks for one supplier, one row each: the metric named so that both sides would recognise it, the target agreed for the period, the score actually measured together with the method, the variance from that target with the direction that matters, and the corrective action with an owner and a date where the variance is a shortfall.
 
 ---
 
 ### 2. Why?
-To ensure strict alignment with Tasleemat standards, establish transparency, monitor project performance, and control variances effectively throughout the project life cycle.
+Because a score with no target behind it cannot be argued with in either direction. The supplier regards it as good, the project regards it as adequate, and nothing in the document settles the disagreement. Agreeing the target beforehand is what converts the form from a record of an opinion into the basis for a decision, and it is also what makes the variance column worth computing at all.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **MONITORING AND CONTROLLING Process Group** of the project lifecycle.
+Once per period, per supplier, and kept rather than overwritten, because a single period says almost nothing and the trend is what identifies a supplier that is drifting. Reviewed by whoever owns the contract, and read again at closeout, where the question is not how the last quarter went but whether the supplier would be chosen again.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Maintained by the Project Manager or PMO to track actuals against the baselined plans and report to the steering committee.
+Owned by the procurement manager, who holds the contract and is the only party with standing to act on what the numbers show, with the project manager supplying the schedule and quality context the measures come from. The supplier representative signs the record, and that signature is worth having precisely because it means both sides are working from the same figures rather than from two accounts of the same period.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **Metric/KPI:** What is being measured (e.g., Quality, Timeliness).
-*   **Target Score:** Expected performance level.
-*   **Actual Score:** Measured performance.
-*   **Variance:** Difference between target and actual.
-*   **Corrective Action:** Steps to improve if deficient.
+*   Agree the target before the period starts. A target written afterwards is a description of what happened, and the variance column then computes a gap between the outcome and itself.
+*   State the measure with the score. A number whose method changed between periods cannot be compared with one whose method did not, and the comparison is the only reason the number exists.
+*   Write a corrective action only where there is a shortfall, and name who owns it. A variance with no response is recorded again next period, because the only thing that changed in between was the number.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](06_09_Vendor_Performance_Scorecard_Template.md)
-* [🤖 LLM Generation Prompt](06_09_Vendor_Performance_Scorecard.md)
-* [📊 Data Schema (JSON)](06_09_Vendor_Performance_Scorecard.json)
-* [📈 Tabular Data (CSV)](06_09_Vendor_Performance_Scorecard.csv)
+### Alignment
+the contract or statement of work, because the measures are contract measures and not the project's preferences; the procurement audit, which reads the period records as its evidence; and the contract closeout report, which needs the trend rather than a single period
 
-</div>
+---
+
+### 5. How?
+To accurately complete the Vendor Performance Scorecard, populate the following sections based on
+the project context (ensuring reference to `parameters.md` for the general
+project variables):
+
+*   **Metric/KPI:** What is being measured, named so that both sides would recognise it. "Quality" is not a metric; "defects found in acceptance, per hundred items delivered" is, because a word cannot be measured twice and compared across periods.
+*   **Target Score:** The level agreed in advance, with the period it applies to. A target written after the result is known is not a target, it is a description, and this column is the one that makes the variance column mean anything.
+*   **Actual Score:** What was measured, and how. The measure is stated with the score so that a later reader can tell whether the same method was used in both periods; a number whose method has changed is not comparable to a number whose method did not.
+*   **Variance:** Target minus actual, with the direction that matters. Whether a positive number is good or bad depends on the metric, and stating it here is what stops the sign being argued about instead of the performance.
+*   **Corrective Action:** What happens because of the variance, and by when. Written only where there is a shortfall, and naming who does it: a scorecard that records a variance and no response produces the same variance next period, because the only thing that changed in between was the number.
+
+---
+
+### Associated Templates
+* [📄 Printable Template (Markdown)](06_09_Vendor_Performance_Scorecard_Template.md)
+* [🤖 Smart Generation Prompt](06_09_Vendor_Performance_Scorecard.md)
+* [📊 Data Structure (JSON)](06_09_Vendor_Performance_Scorecard.json)
+* [📈 Tabular Data (CSV)](06_09_Vendor_Performance_Scorecard.csv)

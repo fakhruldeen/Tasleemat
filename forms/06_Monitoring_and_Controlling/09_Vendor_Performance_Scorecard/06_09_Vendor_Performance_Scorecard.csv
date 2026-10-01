@@ -1,4 +1,6 @@
-Metric/KPI,Target Score,Actual Score,Variance,Corrective Action
-,,,,
-,,,,
-,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Vendor Performance Scorecard Entries,Metric/KPI,"What is being measured, named so that both sides would recognise it. ""Quality"" is not a metric; ""defects found in acceptance, per hundred items delivered"" is, because a word cannot be measured twice and compared across periods.",
+Vendor Performance Scorecard Entries,Target Score,"The level agreed in advance, with the period it applies to. A target written after the result is known is not a target, it is a description, and this column is the one that makes the variance column mean anything.",
+Vendor Performance Scorecard Entries,Actual Score,"What was measured, and how. The measure is stated with the score so that a later reader can tell whether the same method was used in both periods; a number whose method has changed is not comparable to a number whose method did not.",
+Vendor Performance Scorecard Entries,Variance,"Target minus actual, with the direction that matters. Whether a positive number is good or bad depends on the metric, and stating it here is what stops the sign being argued about instead of the performance.",
+Vendor Performance Scorecard Entries,Corrective Action,"What happens because of the variance, and by when. Written only where there is a shortfall, and naming who does it: a scorecard that records a variance and no response produces the same variance next period, because the only thing that changed in between was the number.",
