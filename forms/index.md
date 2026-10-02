@@ -1,9 +1,9 @@
 # Tasleemat PMO Forms Hub | مستودع نماذج تسليمات
 
-This directory contains the **94 bilingual Project Management Office (PMO) artifact bundles** in symmetric English and Arabic structures:
+This directory contains the **102 bilingual Project Management Office (PMO) artifact bundles** in symmetric English and Arabic structures:
 
-- **🇬🇧 [English PMO Templates (`forms/en/`)](en/)** — All 94 standardized templates, guides, prompts, JSON schemas, and CSV field dictionaries in English.
-- **🇸🇦 [النماذج العربية (`forms/ar/`)](ar/)** — كافة النماذج الـ 94 المترجمة والموطنة بالكامل باللغة العربية (RTL) وفق معايير معهد إدارة المشاريع (PMI).
+- **🇬🇧 [English PMO Templates (`forms/en/`)](en/)** — All 102 standardized templates, guides, prompts, JSON schemas, and CSV field dictionaries in English.
+- **🇸🇦 [النماذج العربية (`forms/ar/`)](ar/)** — كافة النماذج الـ 102 المترجمة والموطنة بالكامل باللغة العربية (RTL) وفق معايير معهد إدارة المشاريع (PMI).
 
 ---
 
