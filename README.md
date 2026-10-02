@@ -5,7 +5,7 @@
 #### *Fully Aligned with PMI PMBOK® Guide 6th, 7th & 8th Edition Ready Standards*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Ed%20Ready-0052cc?style=for-the-badge)](LEXICON.md)
+[![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc?style=for-the-badge)](LEXICON.md)
 [![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-success?style=for-the-badge)](forms/)
 [![Language](https://img.shields.io/badge/Language-English%20%7C%20العربية-darkgreen?style=for-the-badge)](README_AR.md)
 [![Format](https://img.shields.io/badge/Formats-Markdown%20%7C%20JSON%20%7C%20CSV-orange?style=for-the-badge)](USAGE_GUIDE.md)
