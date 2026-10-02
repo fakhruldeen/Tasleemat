@@ -7,11 +7,12 @@
 ---
 
 ## 🌟 Overview
-**Tasleemat (تسليمات)** is an enterprise-grade Project Management Office (PMO) toolkit. It provides a complete chronological lifecycle of over 68 professional project artifacts, ranging from Portfolio Roadmaps to Project Charters, Agile Sprint Planning, and AI Governance.
+**Tasleemat (تسليمات)** is an enterprise-grade Project Management Office (PMO) toolkit. It provides a complete chronological lifecycle of 94 professional project artifacts, ranging from Portfolio Roadmaps to Project Charters, Agile Sprint Planning, and AI Governance.
 
 This repository is built primarily as a powerful reference tool for Project Managers, with advanced AI capabilities built-in:
-- **📚 Comprehensive PMO Reference:** A complete guide for project managers covering the What, Why, When, Who, and How of 68+ essential project artifacts.
-- **🖨️ Professional Templates:** Beautifully formatted, print-ready templates that export perfectly to PDF with signature footers and document control numbers.
+- **📚 Comprehensive PMO Reference:** A complete guide for project managers covering the What, Why, When, Who, and How of 94 essential project artifacts.
+- **📖 Bilingual Lexicon & Directory:** Full PMI standard English-Arabic terminology mapping in [`LEXICON.md`](LEXICON.md) and [`LEXICON.json`](LEXICON.json).
+- **🖨️ Professional Templates:** Beautifully formatted, print-ready templates that export perfectly to PDF with role-based signature footers and document control numbers.
 - **🌐 Dual-Language (i18n):** Flawlessly localized into formal Arabic (RTL) alongside the primary English guidelines.
 - **🤖 LLM-Ready (Advanced Usage):** Every form includes a dedicated `.json` schema and Markdown prompt designed to be injected into ChatGPT or Claude for automated document generation.
 - **📖 GitHub Pages Ready:** Completely configured to serve as a live documentation website.
@@ -27,7 +28,8 @@ Tasleemat/
 │       ├── 00_إدارة_البرامج_والمحافظ/
 │       ├── 03_البدء/
 │       └── ...
-├── mapping.md             # The master registry of all Document IDs
+├── LEXICON.md             # 📖 Master Bilingual PMO Lexicon & Forms Catalog
+├── LEXICON.json           # 🤖 Machine-readable Lexicon & Metadata Schema
 └── USAGE_GUIDE.md         # Detailed instructions on how to use the toolkit
 ```
 
@@ -42,7 +44,7 @@ Want to generate a Risk Register in seconds?
 2. Open the `.md` (Prompt) or `.json` file of the artifact you need.
 3. Paste the prompt, the parameters, and your rough notes into an LLM (like ChatGPT).
 4. Watch as the AI flawlessly populates the `_Template.md` structure for you!
-*See [USAGE_GUIDE.md](./USAGE_GUIDE.md) for detailed AI workflows.*
+*See [USAGE_GUIDE.md](./USAGE_GUIDE.md) and [LEXICON.md](./LEXICON.md) for detailed workflows and terminology reference.*
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
