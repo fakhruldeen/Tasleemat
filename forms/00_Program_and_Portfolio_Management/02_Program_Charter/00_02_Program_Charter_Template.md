@@ -300,11 +300,9 @@ Risk and assumption rows:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Program Sponsor** | {{Program_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Program Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance Business Partner** | {{Finance_Business_Partner_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Program Sponsor** | {{Program_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

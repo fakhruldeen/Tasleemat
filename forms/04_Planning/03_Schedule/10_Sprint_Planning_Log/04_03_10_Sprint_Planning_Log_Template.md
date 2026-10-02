@@ -104,10 +104,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Site / Execution Lead** | {{Execution_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Planner / Scheduler** | {{Scheduler_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

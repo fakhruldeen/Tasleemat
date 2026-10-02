@@ -142,9 +142,8 @@ Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Business Analyst** | {{Business_Analyst_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **UX / BA Lead** | {{UX_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Development Team Lead** | {{Dev_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

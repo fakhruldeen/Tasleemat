@@ -127,9 +127,8 @@ Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Client Representative** | {{Client_Customer_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Technical Lead / Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Vendor / Contractor Representative** | {{Vendor_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

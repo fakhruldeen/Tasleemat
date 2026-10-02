@@ -95,9 +95,8 @@ Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Meeting Chair** | {{Meeting_Chair_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Note Taker** | {{Note_Taker_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Minute Taker** | {{Minute_Taker_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

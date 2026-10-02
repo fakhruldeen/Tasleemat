@@ -271,11 +271,9 @@ Contingency rows:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
+| **Resource Planning Lead** | {{Resource_Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Program Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Resource Manager** | {{Resource_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance Business Partner** | {{Finance_Business_Partner_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **PMO Director** | {{PMO_Director_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

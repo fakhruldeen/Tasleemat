@@ -82,7 +82,6 @@ Section Instructions:
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Vendor Representative** | {{Vendor_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7

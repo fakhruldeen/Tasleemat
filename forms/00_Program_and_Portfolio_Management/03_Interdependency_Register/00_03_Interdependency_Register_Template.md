@@ -230,11 +230,9 @@ Escalation rows:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Program Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Program / Portfolio Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Delivery / Component Lead** | {{Delivery_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Dependency Owner** | {{Dependency_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Portfolio Manager** | {{Portfolio_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

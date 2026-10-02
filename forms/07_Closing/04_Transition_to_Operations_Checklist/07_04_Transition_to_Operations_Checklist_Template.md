@@ -52,10 +52,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Operations / Service Owner** | {{Operations_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Operations / Maintenance Lead** | {{Operations_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Client Representative** | {{Client_Customer_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Business Owner / Client Representative** | {{Client_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

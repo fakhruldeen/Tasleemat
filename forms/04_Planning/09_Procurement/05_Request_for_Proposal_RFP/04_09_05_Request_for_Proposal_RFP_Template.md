@@ -139,8 +139,7 @@ Section Instructions:
 | :--- | :--- | :--- | :--- |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Procurement Committee Chair** | {{Committee_Chair_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Procurement Committee Chair** | {{Procurement_Committee_Chair_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

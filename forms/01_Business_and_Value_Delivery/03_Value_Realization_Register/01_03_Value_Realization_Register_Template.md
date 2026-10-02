@@ -82,10 +82,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Benefit Owner** | {{Benefit_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

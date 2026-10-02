@@ -129,10 +129,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-| **AI / ML Lead** | {{AI_ML_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Data Protection Officer** | {{Data_Protection_Officer_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Product / Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **AI Technical Lead** | {{AI_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

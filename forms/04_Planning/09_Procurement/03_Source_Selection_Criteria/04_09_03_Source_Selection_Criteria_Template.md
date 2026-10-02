@@ -58,10 +58,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Risk / Procurement Lead** | {{Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Technical Evaluation Lead** | {{Technical_Evaluation_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Tender Committee Chair** | {{Tender_Committee_Chair_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

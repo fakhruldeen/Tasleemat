@@ -199,8 +199,7 @@ the project closeout report. -->
 | :--- | :--- | :--- | :--- |
 | **Contract Manager** | {{Contract_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Finance Controller / Legal Counsel** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

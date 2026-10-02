@@ -154,10 +154,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **AI / ML Lead** | {{AI_ML_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Data Protection Officer** | {{Data_Protection_Officer_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Model Developer / ML Lead** | {{ML_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **AI Ethics / QA Reviewer** | {{QA_Reviewer_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

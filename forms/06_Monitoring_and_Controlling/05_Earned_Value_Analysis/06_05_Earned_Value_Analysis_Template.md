@@ -91,9 +91,8 @@ Section-by-Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Cost / Finance Lead** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Cost / EVM Specialist** | {{EVM_Specialist_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance Controller / PMO Lead** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

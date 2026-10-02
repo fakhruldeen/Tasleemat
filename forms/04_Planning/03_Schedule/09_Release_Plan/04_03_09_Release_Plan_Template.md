@@ -79,11 +79,10 @@ Column guidance, by column:
 ## 3. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | :--- | :--- |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Release / DevOps Lead** | {{Release_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

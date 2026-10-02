@@ -68,10 +68,9 @@ Check the box for the area or areas audited.
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Lead Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Quality Manager / QA Lead** | {{Quality_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Lead Quality Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Quality Assurance (QA) Manager** | {{QA_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

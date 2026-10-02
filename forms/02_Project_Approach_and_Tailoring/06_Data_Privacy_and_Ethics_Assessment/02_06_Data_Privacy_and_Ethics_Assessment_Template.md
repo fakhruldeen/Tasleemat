@@ -203,10 +203,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Data Protection Officer** | {{Data_Protection_Officer_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Ethics Review Lead** | {{Ethics_Review_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Data Protection Officer (DPO)** | {{DPO_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Legal / Compliance Counsel** | {{Legal_Counsel_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

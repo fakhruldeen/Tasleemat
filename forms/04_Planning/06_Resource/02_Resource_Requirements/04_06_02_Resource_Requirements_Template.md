@@ -53,9 +53,8 @@ Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Technical Lead** | {{Technical_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Resource / Functional Manager** | {{Resource_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

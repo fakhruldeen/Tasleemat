@@ -101,10 +101,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Lead Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Lead Risk Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Risk Manager** | {{Risk_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

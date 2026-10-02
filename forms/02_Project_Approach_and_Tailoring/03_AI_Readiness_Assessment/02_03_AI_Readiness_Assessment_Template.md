@@ -136,11 +136,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **AI / ML Lead** | {{AI_ML_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Data Owner** | {{Data_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **AI / Data Lead** | {{AI_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Enterprise Architect / IT Lead** | {{IT_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

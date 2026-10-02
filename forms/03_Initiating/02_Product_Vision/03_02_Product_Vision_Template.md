@@ -121,11 +121,10 @@ Section Instructions:
 ## 9. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | :--- | :--- |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Key User / Customer Representative** | {{Customer_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

@@ -25,10 +25,9 @@ Section-by-Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Team Member / Contributor** | {{Prepared_By}} | _______________________ | [ .... - .... - .... ] |
-| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Decision Maker / PM** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Key Stakeholder Representative** | {{Stakeholder_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

@@ -78,10 +78,9 @@ Section-by-Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Requester** | {{Prepared_By}} | _______________________ | [ .... - .... - .... ] |
+| **Requester** | {{Requester_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Change Control Board (CCB) Chair** | {{CCB_Chair_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

@@ -95,11 +95,10 @@ Column guidance, by column:
 ## 5. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| ---: | ---: | ---: | ---: |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Team Member / Contributor** | {{Team_Member_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| :--- | :--- | :--- | :--- |
+| **Scrum Master / Facilitator** | {{Scrum_Master_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Team Representative** | {{Team_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

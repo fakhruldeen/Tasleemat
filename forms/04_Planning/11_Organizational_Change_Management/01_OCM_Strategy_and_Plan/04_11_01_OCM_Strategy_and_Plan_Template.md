@@ -85,8 +85,7 @@ Section Instructions:
 | :--- | :--- | :--- | :--- |
 | **Change Manager** | {{Change_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Executive Sponsor / HR Lead** | {{Executive_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

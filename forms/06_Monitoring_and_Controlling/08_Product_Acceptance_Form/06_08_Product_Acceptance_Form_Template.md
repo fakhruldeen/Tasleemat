@@ -89,10 +89,9 @@ Comment guidance: Record any conditions attached to the acceptance, or items def
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
+| **Product / Business Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Client Representative** | {{Client_Customer_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Client / Customer Representative** | {{Client_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

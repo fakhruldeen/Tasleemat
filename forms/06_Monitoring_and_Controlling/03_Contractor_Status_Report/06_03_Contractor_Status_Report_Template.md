@@ -122,10 +122,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Vendor / Contractor Representative** | {{Vendor_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Contractor / Vendor Representative** | {{Contractor_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Procurement / Contract Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

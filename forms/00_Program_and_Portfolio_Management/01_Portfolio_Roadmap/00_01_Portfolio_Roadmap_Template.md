@@ -281,10 +281,8 @@ Roadmap change rows:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Portfolio Manager** | {{Portfolio_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Program Sponsor** | {{Program_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance Business Partner** | {{Finance_Business_Partner_Name}} | _______________________ | [ .... - .... - .... ] |
-
+| **Head of PMO** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Executive Sponsor** | {{Executive_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

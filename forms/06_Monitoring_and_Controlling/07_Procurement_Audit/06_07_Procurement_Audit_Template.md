@@ -89,10 +89,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Lead Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Lead Procurement Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
