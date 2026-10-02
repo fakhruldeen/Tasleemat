@@ -1,183 +1,183 @@
 {
-  "_llm_instructions": "Fill out the 'project_title' and 'date_prepared' properties, and the 'value' property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Name the model version, the group affected, and the threshold that triggers action, rather than recording a category; a governance plan that says 'encrypted', 'minimised' and 'monitored' describes an intention and not a system, and the difference only becomes visible when something goes wrong and no one can say what was in force.",
-  "form_name": "AI GOVERNANCE PLAN",
-  "document_reference": "PMO-02.02",
-  "project_title": "",
-  "date_prepared": "",
-  "fields": {
-    "f01_AI_System_Inventory": {
-      "section": "Governance Context and Scope",
-      "label": "AI System Inventory",
-      "guidance": "What the system is, at the version that will actually run, and who operates it. Record the version, because a governance plan that covers \"the model\" covers whichever model happens to be deployed when someone asks, and the answer is rarely the one that was assessed.",
-      "value": ""
-    },
-    "f02_Intended_Purpose_and_Affected_Users": {
-      "section": "Governance Context and Scope",
-      "label": "Intended Purpose and Affected Users",
-      "guidance": "What the system is for, and who is subject to its output rather than merely its user. The two are routinely confused, and the confusion is how a system that screens applicants comes to be described as a tool that helps recruiters write better.",
-      "value": ""
-    },
-    "f03_Risk_Classification": {
-      "section": "Governance Context and Scope",
-      "label": "Risk Classification",
-      "guidance": "The tier assigned and the criteria that put it there, not the tier alone. A classification with no stated criteria cannot be challenged, and an unchallengeable classification is the same as no classification.",
-      "value": ""
-    },
-    "f04_Scope_Exclusions": {
-      "section": "Governance Context and Scope",
-      "label": "Scope Exclusions",
-      "guidance": "What this plan explicitly does not cover, and who owns it instead. Governance plans fail at the boundary: the component nobody assigned sits under a plan that assumed it was included.",
-      "value": ""
-    },
-    "f05_Ethical_Principles": {
-      "section": "Ethical Principles and Acceptable Use",
-      "label": "Ethical Principles",
-      "guidance": "The principles that constrain use on this project, and the case in which one yields to another. Principles that cannot yield to each other are not a decision rule, and a project under time pressure will resolve the conflict silently and after the fact.",
-      "value": ""
-    },
-    "f06_Prohibited_Uses": {
-      "section": "Ethical Principles and Acceptable Use",
-      "label": "Prohibited Uses",
-      "guidance": "Uses that are refused regardless of benefit. This section is what the plan is for, and a plan listing only permitted uses has no way to refuse anything.",
-      "value": ""
-    },
-    "f07_Approved_Use_Cases": {
-      "section": "Ethical Principles and Acceptable Use",
-      "label": "Approved Use Cases",
-      "guidance": "The uses that are approved, each with the limits within which it stays approved. An approved use without stated limits is an approved capability, not an approved use.",
-      "value": ""
-    },
-    "f08_Human_Impact_Assessment": {
-      "section": "Ethical Principles and Acceptable Use",
-      "label": "Human Impact Assessment",
-      "guidance": "Who bears the consequences of a wrong output, and whether they can tell it was wrong. A system whose subject cannot detect its own errors transfers the cost of error to the person least able to contest it.",
-      "value": ""
-    },
-    "f09_Data_Category": {
-      "section": "Data Governance",
-      "label": "Data Category",
-      "guidance": "What kind of data, in terms a data subject would recognise as being about them.",
-      "value": ""
-    },
-    "f10_Provenance_and_Lawful_Basis": {
-      "section": "Data Governance",
-      "label": "Provenance and Lawful Basis",
-      "guidance": "Where the data came from and under what basis it is processed. Data that arrived with the model cannot have its basis added later, so a model trained before this question was asked holds data whose status nobody can now evidence.",
-      "value": ""
-    },
-    "f11_Permitted_Use": {
-      "section": "Data Governance",
-      "label": "Permitted Use",
-      "guidance": "What the data may be used for within this system, and what it may not. The most common governance failure is not a leak but reuse for a purpose nobody re-approved.",
-      "value": ""
-    },
-    "f12_Protection_Control": {
-      "section": "Data Governance",
-      "label": "Protection Control",
-      "guidance": "The specific control applied, not the category of control. \"Encrypted\" is a category, and the sentence that matters is which key, held by whom, and rotated how.",
-      "value": ""
-    },
-    "f13_Retention_and_Deletion": {
-      "section": "Data Governance",
-      "label": "Retention and Deletion",
-      "guidance": "When the data is deleted, and how deletion is verified. Deletion that is asserted rather than evidenced is how a training set outlives the project that justified it.",
-      "value": ""
-    },
-    "f14_Affected_Group": {
-      "section": "Fairness, Bias and Transparency",
-      "label": "Affected Group",
-      "guidance": "The group whose outcomes are affected, named. Groups are described in aggregate on the basis of a test, and the group that matters is the one that performs worst on it.",
-      "value": ""
-    },
-    "f15_Bias_Risk": {
-      "section": "Fairness, Bias and Transparency",
-      "label": "Bias Risk",
-      "guidance": "The specific way this system could be unfair to this group, stated so it could be false. \"Bias risk\" as a heading is not a risk; \"the model scores this group lower on historic completion rates\" is a risk that can be measured and can turn out to be wrong.",
-      "value": ""
-    },
-    "f16_Test_Method_and_Threshold": {
-      "section": "Fairness, Bias and Transparency",
-      "label": "Test Method and Threshold",
-      "guidance": "How it is tested and what result triggers action, with the threshold written before the result is known. A threshold set after seeing the number is a description of that number.",
-      "value": ""
-    },
-    "f17_Mitigation": {
-      "section": "Fairness, Bias and Transparency",
-      "label": "Mitigation",
-      "guidance": "What will be done about a confirmed disparity, and what the system does in the meantime. Most bias mitigation plans describe the end state and are silent on whether the system runs while the question is open.",
-      "value": ""
-    },
-    "f18_Ongoing_Indicator": {
-      "section": "Fairness, Bias and Transparency",
-      "label": "Ongoing Indicator",
-      "guidance": "The metric watched after release, and its frequency. Bias is not a property of a model at launch but of the data it keeps meeting, so the launch measurement is the first of a series and not the last.",
-      "value": ""
-    },
-    "f19_Applicable_Regulations": {
-      "section": "Compliance and Accountability",
-      "label": "Applicable Regulations",
-      "guidance": "The instruments that bind this system, named, with the clause where the obligation is specific. A list of regulation names is a research note, not a compliance position.",
-      "value": ""
-    },
-    "f20_Control_Mapping": {
-      "section": "Compliance and Accountability",
-      "label": "Control Mapping",
-      "guidance": "Which control satisfies which obligation, and which obligations have no control yet. The second half is the useful half, and a mapping that covers every obligation is nearly always a mapping that was written to be complete rather than to be true.",
-      "value": ""
-    },
-    "f21_Evidence_and_Records": {
-      "section": "Compliance and Accountability",
-      "label": "Evidence and Records",
-      "guidance": "What is retained to demonstrate compliance, for how long, and who may inspect it. Compliance demonstrated only by assertion cannot be audited, and what cannot be audited is not demonstrable to a regulator.",
-      "value": ""
-    },
-    "f22_Compliance_Review_Cadence": {
-      "section": "Compliance and Accountability",
-      "label": "Compliance Review Cadence",
-      "guidance": "How often compliance is revisited and what triggers an off-cycle review. A model version change, a new data source, and a new use are all events, and a plan that reviews only on a calendar will miss all three.",
-      "value": ""
-    },
-    "f23_Accountable_Owner": {
-      "section": "Compliance and Accountability",
-      "label": "Accountable Owner",
-      "guidance": "The named person answerable for this system's behaviour, with the authority to stop it. Accountability assigned to a committee is distributed to nobody, and the test is whether the named person can halt the system without convening anyone.",
-      "value": ""
-    },
-    "f24_Human_Oversight_Points": {
-      "section": "Compliance and Accountability",
-      "label": "Human Oversight Points",
-      "guidance": "The specific points where a human can override, and where they cannot. Oversight that exists everywhere in principle and nowhere in the workflow is a statement of values, and the points that matter are the ones where override is expensive.",
-      "value": ""
-    },
-    "f25_Decision_Rights_and_Redress": {
-      "section": "Compliance and Accountability",
-      "label": "Decision Rights and Redress",
-      "guidance": "Who decides what the system is permitted to do after launch, and how a person affected by its output contests that output. Redress is the only mechanism that makes accountability reachable by the person who needs it.",
-      "value": ""
-    },
-    "f26_Incident_Reporting": {
-      "section": "Compliance and Accountability",
-      "label": "Incident Reporting",
-      "guidance": "What counts as an incident, to whom it is reported, and within what time. An incident definition written broadly enough to catch everything is one nobody can apply under time pressure, and a narrow one misses precisely the cases that were not foreseeable when it was written.",
-      "value": ""
-    },
-    "f27_Performance_and_Drift_Monitoring": {
-      "section": "Monitoring and Change",
-      "label": "Performance and Drift Monitoring",
-      "guidance": "What is watched in operation, and against what baseline. A production model is a different system from the one assessed, and the difference accumulates rather than announcing itself.",
-      "value": ""
-    },
-    "f28_Reassessment_Triggers": {
-      "section": "Monitoring and Change",
-      "label": "Reassessment Triggers",
-      "guidance": "The events that require the plan to be reopened, stated so they can be recognised by someone who was not in the room. Triggers described in terms of materiality always resolve towards not triggering.",
-      "value": ""
-    },
-    "f29_Change_Control_Link": {
-      "section": "Monitoring and Change",
-      "label": "Change Control Link",
-      "guidance": "How a change to the system is raised, since the system, its data, and its approved uses are all governed by this plan and a change to any of them is a change to the plan.",
-      "value": ""
-    }
+ "_llm_instructions": "Fill out the 'project_title' and 'date_prepared' properties, and the 'value' property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Name the model version, the group affected, and the threshold that triggers action, rather than recording a category; a governance plan that says 'encrypted', 'minimised' and 'monitored' describes an intention and not a system, and the difference only becomes visible when something goes wrong and no one can say what was in force.",
+ "form_name": "AI GOVERNANCE PLAN",
+ "document_reference": "PMO-02.02",
+ "project_title": "",
+ "date_prepared": "",
+ "fields": {
+  "f01_AI_System_Inventory": {
+   "section": "Governance Context and Scope",
+   "label": "AI System Inventory",
+   "guidance": "What the system is, at the version that will actually run, and who operates it. Record the version, because a governance plan that covers \"the model\" covers whichever model happens to be deployed when someone asks, and the answer is rarely the one that was assessed.",
+   "value": ""
+  },
+  "f02_Intended_Purpose_and_Affected_Users": {
+   "section": "Governance Context and Scope",
+   "label": "Intended Purpose and Affected Users",
+   "guidance": "What the system is for, and who is subject to its output rather than merely its user. The two are routinely confused, and the confusion is how a system that screens applicants comes to be described as a tool that helps recruiters write better.",
+   "value": ""
+  },
+  "f03_Risk_Classification": {
+   "section": "Governance Context and Scope",
+   "label": "Risk Classification",
+   "guidance": "The tier assigned and the criteria that put it there, not the tier alone. A classification with no stated criteria cannot be challenged, and an unchallengeable classification is the same as no classification.",
+   "value": ""
+  },
+  "f04_Scope_Exclusions": {
+   "section": "Governance Context and Scope",
+   "label": "Scope Exclusions",
+   "guidance": "What this plan explicitly does not cover, and who owns it instead. Governance plans fail at the boundary: the component nobody assigned sits under a plan that assumed it was included.",
+   "value": ""
+  },
+  "f05_Ethical_Principles": {
+   "section": "Ethical Principles and Acceptable Use",
+   "label": "Ethical Principles",
+   "guidance": "The principles that constrain use on this project, and the case in which one yields to another. Principles that cannot yield to each other are not a decision rule, and a project under time pressure will resolve the conflict silently and after the fact.",
+   "value": ""
+  },
+  "f06_Prohibited_Uses": {
+   "section": "Ethical Principles and Acceptable Use",
+   "label": "Prohibited Uses",
+   "guidance": "Uses that are refused regardless of benefit. This section is what the plan is for, and a plan listing only permitted uses has no way to refuse anything.",
+   "value": ""
+  },
+  "f07_Approved_Use_Cases": {
+   "section": "Ethical Principles and Acceptable Use",
+   "label": "Approved Use Cases",
+   "guidance": "The uses that are approved, each with the limits within which it stays approved. An approved use without stated limits is an approved capability, not an approved use.",
+   "value": ""
+  },
+  "f08_Human_Impact_Assessment": {
+   "section": "Ethical Principles and Acceptable Use",
+   "label": "Human Impact Assessment",
+   "guidance": "Who bears the consequences of a wrong output, and whether they can tell it was wrong. A system whose subject cannot detect its own errors transfers the cost of error to the person least able to contest it.",
+   "value": ""
+  },
+  "f09_Data_Category": {
+   "section": "Data Governance",
+   "label": "Data Category",
+   "guidance": "What kind of data, in terms a data subject would recognise as being about them.",
+   "value": ""
+  },
+  "f10_Provenance_and_Lawful_Basis": {
+   "section": "Data Governance",
+   "label": "Provenance and Lawful Basis",
+   "guidance": "Where the data came from and under what basis it is processed. Data that arrived with the model cannot have its basis added later, so a model trained before this question was asked holds data whose status nobody can now evidence.",
+   "value": ""
+  },
+  "f11_Permitted_Use": {
+   "section": "Data Governance",
+   "label": "Permitted Use",
+   "guidance": "What the data may be used for within this system, and what it may not. The most common governance failure is not a leak but reuse for a purpose nobody re-approved.",
+   "value": ""
+  },
+  "f12_Protection_Control": {
+   "section": "Data Governance",
+   "label": "Protection Control",
+   "guidance": "The specific control applied, not the category of control. \"Encrypted\" is a category, and the sentence that matters is which key, held by whom, and rotated how.",
+   "value": ""
+  },
+  "f13_Retention_and_Deletion": {
+   "section": "Data Governance",
+   "label": "Retention and Deletion",
+   "guidance": "When the data is deleted, and how deletion is verified. Deletion that is asserted rather than evidenced is how a training set outlives the project that justified it.",
+   "value": ""
+  },
+  "f14_Affected_Group": {
+   "section": "Fairness, Bias and Transparency",
+   "label": "Affected Group",
+   "guidance": "The group whose outcomes are affected, named. Groups are described in aggregate on the basis of a test, and the group that matters is the one that performs worst on it.",
+   "value": ""
+  },
+  "f15_Bias_Risk": {
+   "section": "Fairness, Bias and Transparency",
+   "label": "Bias Risk",
+   "guidance": "The specific way this system could be unfair to this group, stated so it could be false. \"Bias risk\" as a heading is not a risk; \"the model scores this group lower on historic completion rates\" is a risk that can be measured and can turn out to be wrong.",
+   "value": ""
+  },
+  "f16_Test_Method_and_Threshold": {
+   "section": "Fairness, Bias and Transparency",
+   "label": "Test Method and Threshold",
+   "guidance": "How it is tested and what result triggers action, with the threshold written before the result is known. A threshold set after seeing the number is a description of that number.",
+   "value": ""
+  },
+  "f17_Mitigation": {
+   "section": "Fairness, Bias and Transparency",
+   "label": "Mitigation",
+   "guidance": "What will be done about a confirmed disparity, and what the system does in the meantime. Most bias mitigation plans describe the end state and are silent on whether the system runs while the question is open.",
+   "value": ""
+  },
+  "f18_Ongoing_Indicator": {
+   "section": "Fairness, Bias and Transparency",
+   "label": "Ongoing Indicator",
+   "guidance": "The metric watched after release, and its frequency. Bias is not a property of a model at launch but of the data it keeps meeting, so the launch measurement is the first of a series and not the last.",
+   "value": ""
+  },
+  "f19_Applicable_Regulations": {
+   "section": "Compliance and Accountability",
+   "label": "Applicable Regulations",
+   "guidance": "The instruments that bind this system, named, with the clause where the obligation is specific. A list of regulation names is a research note, not a compliance position.",
+   "value": ""
+  },
+  "f20_Control_Mapping": {
+   "section": "Compliance and Accountability",
+   "label": "Control Mapping",
+   "guidance": "Which control satisfies which obligation, and which obligations have no control yet. The second half is the useful half, and a mapping that covers every obligation is nearly always a mapping that was written to be complete rather than to be true.",
+   "value": ""
+  },
+  "f21_Evidence_and_Records": {
+   "section": "Compliance and Accountability",
+   "label": "Evidence and Records",
+   "guidance": "What is retained to demonstrate compliance, for how long, and who may inspect it. Compliance demonstrated only by assertion cannot be audited, and what cannot be audited is not demonstrable to a regulator.",
+   "value": ""
+  },
+  "f22_Compliance_Review_Cadence": {
+   "section": "Compliance and Accountability",
+   "label": "Compliance Review Cadence",
+   "guidance": "How often compliance is revisited and what triggers an off-cycle review. A model version change, a new data source, and a new use are all events, and a plan that reviews only on a calendar will miss all three.",
+   "value": ""
+  },
+  "f23_Accountable_Owner": {
+   "section": "Compliance and Accountability",
+   "label": "Accountable Owner",
+   "guidance": "The named person answerable for this system's behaviour, with the authority to stop it. Accountability assigned to a committee is distributed to nobody, and the test is whether the named person can halt the system without convening anyone.",
+   "value": ""
+  },
+  "f24_Human_Oversight_Points": {
+   "section": "Compliance and Accountability",
+   "label": "Human Oversight Points",
+   "guidance": "The specific points where a human can override, and where they cannot. Oversight that exists everywhere in principle and nowhere in the workflow is a statement of values, and the points that matter are the ones where override is expensive.",
+   "value": ""
+  },
+  "f25_Decision_Rights_and_Redress": {
+   "section": "Compliance and Accountability",
+   "label": "Decision Rights and Redress",
+   "guidance": "Who decides what the system is permitted to do after launch, and how a person affected by its output contests that output. Redress is the only mechanism that makes accountability reachable by the person who needs it.",
+   "value": ""
+  },
+  "f26_Incident_Reporting": {
+   "section": "Compliance and Accountability",
+   "label": "Incident Reporting",
+   "guidance": "What counts as an incident, to whom it is reported, and within what time. An incident definition written broadly enough to catch everything is one nobody can apply under time pressure, and a narrow one misses precisely the cases that were not foreseeable when it was written.",
+   "value": ""
+  },
+  "f27_Performance_and_Drift_Monitoring": {
+   "section": "Monitoring and Change",
+   "label": "Performance and Drift Monitoring",
+   "guidance": "What is watched in operation, and against what baseline. A production model is a different system from the one assessed, and the difference accumulates rather than announcing itself.",
+   "value": ""
+  },
+  "f28_Reassessment_Triggers": {
+   "section": "Monitoring and Change",
+   "label": "Reassessment Triggers",
+   "guidance": "The events that require the plan to be reopened, stated so they can be recognised by someone who was not in the room. Triggers described in terms of materiality always resolve towards not triggering.",
+   "value": ""
+  },
+  "f29_Change_Control_Link": {
+   "section": "Monitoring and Change",
+   "label": "Change Control Link",
+   "guidance": "How a change to the system is raised, since the system, its data, and its approved uses are all governed by this plan and a change to any of them is a change to the plan.",
+   "value": ""
   }
+ }
 }
