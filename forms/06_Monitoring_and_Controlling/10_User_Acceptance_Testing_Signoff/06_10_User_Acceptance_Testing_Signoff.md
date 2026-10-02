@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > A record of a decision rather than a test report. The testing was performed and written up elsewhere; what this document holds is the business's agreement that the thing tested is the thing they asked for. It is the only artifact in this set that cannot be taken back quietly: development testing continues past a failure, and once the business has signed, the project moves on and the outstanding findings stop being worked on.
 
-> **Alignment:**
-> The User Acceptance Testing Signoff must be consistent with: the test plan, because the signoff is against the cases the plan defines; the product acceptance form, which records the same decision at deliverable level; and the transition to operations checklist, which cannot start until this is signed.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Approved Project Baselines (PMO-04.01.01), Work Performance Data & Logs (PMO-05.01 - 05.12)
+>   * *Optional:* Risk Register (PMO-04.08.02), Vendor Agreements (PMO-04.09.04)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Change Requests (PMO-05.03), Project / Phase Closeout (PMO-07.03), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Transition to Operations Checklist (PMO-07.04), Value Realization Register (PMO-01.03)
 
 ---
 

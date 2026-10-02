@@ -11,8 +11,13 @@ Form: RETROSPECTIVE (Instructions)
 > **Context & Definition:**
 > The retrospective is an activity performed at the end of every sprint. The information is usually recorded on sticky notes or in software. A common approach is called a starfish and collects Start, Stop, Keep, More, and Less. The intent is to improve the performance of the team and make them more efficient in each subsequent sprint.
 
-> **Alignment:**
-> This retrospective must be consistent with: Lessons learned summary, Project closeout.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Management Plan (PMO-04.01.01), Approved Baselines (Scope/Schedule/Cost)
+>   * *Optional:* Risk Register (PMO-04.08.02), Stakeholder Engagement Plan (PMO-04.10.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Status Reports (PMO-06.01), Change Log (PMO-05.04), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Variance Analysis (PMO-06.04), Decision Log (PMO-05.02)
 
 ---
 

@@ -44,8 +44,23 @@ Managed by the Training Coordinator or Change Specialist, with oversight from th
 
 ---
 
-### Alignment
-The Training Plan and Log should be aligned and consistent with: the OCM Strategy and Plan, reinforcing change adoption across user cohorts; the Project Schedule, synchronizing training delivery with release dates; and the Resource Management Plan, securing training facilities, environments, and instructors.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Stakeholder Analysis (PMO-03.05)
+    *   Project Scope Statement (PMO-04.02.05)
+*   **Optional / Contextual:**
+    *   Communications Plan (PMO-04.07.01)
+    *   Project Roadmap (PMO-04.01.03)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Training Plan & Log (PMO-04.11.02)
+    *   Transition to Operations Checklist (PMO-07.04)
+*   **Optional / Contextual:**
+    *   Team Performance Assessment (PMO-05.06)
+    *   Lessons Learned Summary (PMO-07.01)
 
 ---
 

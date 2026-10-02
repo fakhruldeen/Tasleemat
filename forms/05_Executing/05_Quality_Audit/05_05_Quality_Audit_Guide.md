@@ -44,8 +44,24 @@ Conducted by an independent Quality Auditor or PMO Quality Specialist and delive
 
 ---
 
-### Alignment
-The Quality Audit Report aligns with Quality Management Plan, Quality Metrics, and Corrective Action Plans.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Management Plan (PMO-04.01.01)
+    *   Approved Baselines (Scope/Schedule/Cost)
+*   **Optional / Contextual:**
+    *   Risk Register (PMO-04.08.02)
+    *   Stakeholder Engagement Plan (PMO-04.10.01)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Status Reports (PMO-06.01)
+    *   Change Log (PMO-05.04)
+    *   Lessons Learned Summary (PMO-07.01)
+*   **Optional / Contextual:**
+    *   Variance Analysis (PMO-06.04)
+    *   Decision Log (PMO-05.02)
 
 ---
 

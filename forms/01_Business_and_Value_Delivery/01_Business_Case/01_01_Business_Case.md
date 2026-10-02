@@ -16,8 +16,13 @@ Form: BUSINESS CASE (Instructions)
 
 The four sections follow the order in which a reader forms a judgement. The need establishes that there is something to solve and that it is worth solving now. The analysis establishes what is actually true today and what would happen if nothing changed. The options establish what could be done and what each costs over its whole life. The evaluation establishes how anyone will later tell whether the decision was right, and who is being asked to make the decision now.
 
-> **Alignment:**
-> This business case must be consistent with: Portfolio roadmap, Program charter, Project management plan, Benefits management plan, Value realization register.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Strategic Business Objectives, Cost-Benefit Financial Baseline
+>   * *Optional:* Portfolio Roadmap (PMO-00.01), Feasibility & Market Analysis
+> * **Downstream Dependents:**
+>   * *Mandatory:* Benefits Management Plan (PMO-01.02), Project Charter (PMO-03.01), Value Realization Register (PMO-01.03)
+>   * *Optional:* Product Vision (PMO-03.02), AI Use Case Canvas (PMO-02.04)
 
 ---
 

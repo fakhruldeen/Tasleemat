@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A project document used to record all assumptions and constraints throughout the project lifecycle.
 
-> **Alignment:**
-> The Assumption Log aligns with Risk Register, Scope Baseline, and Project Charter.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Business Case (PMO-01.01)
+>   * *Optional:* Feasibility Studies, Contractual SOW (PMO-04.09.04)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Risk Register (PMO-04.08.02), Project Scope Statement (PMO-04.02.05), Cost Estimates (PMO-04.04.02)
+>   * *Optional:* Duration Estimates (PMO-04.03.06), Decision Log (PMO-05.02)
 
 ---
 

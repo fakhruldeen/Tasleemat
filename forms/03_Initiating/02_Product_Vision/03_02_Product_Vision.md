@@ -11,8 +11,13 @@ Form: PRODUCT VISION (Instructions)
 > **Context & Definition:**
 > The product vision provides the future view of the product being developed. It is aspirational, yet achievable and realistic, and is developed at the very beginning of a project, where it is often an input to the business case. On agile-based projects it is often used in place of a project charter, and it is developed once, at the beginning.
 
-> **Alignment:**
-> This vision must be consistent with: Product backlog, Roadmap, Release plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Business Case (PMO-01.01), Customer & Market Needs Analysis
+>   * *Optional:* Project Charter (PMO-03.01), Strategic Objectives
+> * **Downstream Dependents:**
+>   * *Mandatory:* Product Backlog (PMO-04.02.08), User Story Mapping (PMO-04.02.09), Project Roadmap (PMO-04.01.03)
+>   * *Optional:* Release Plan (PMO-04.03.09), Requirements Documentation (PMO-04.02.03)
 
 ---
 

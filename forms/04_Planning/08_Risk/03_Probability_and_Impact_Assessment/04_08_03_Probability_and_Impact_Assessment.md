@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A qualitative analysis artifact evaluating the likelihood and potential consequence of identified risks to prioritize them for further analysis or response.
 
-> **Alignment:**
-> Bridges Risk Register with Probability-Impact Matrix and Quantitative Risk Analysis.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Assumption Log (PMO-03.03), Project Baselines (Scope/Schedule/Cost)
+>   * *Optional:* AI Governance Plan (PMO-02.02), Procurement Strategy (PMO-04.09.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Risk Register (PMO-04.08.02), Risk Reports (PMO-04.08.06), Risk Audits (PMO-06.06)
+>   * *Optional:* Risk Mitigation Action Plan (PMO-04.08.07), Decision Log (PMO-05.02)
 
 ---
 

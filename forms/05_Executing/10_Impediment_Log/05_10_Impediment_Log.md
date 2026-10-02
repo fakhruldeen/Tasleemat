@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > The record of the things standing between a team and the work it has taken on, kept so that they are raised rather than worked around. An impediment is not an issue: an issue is something wrong inside the team's own work, which the team fixes by working differently, while an impediment is something the team cannot remove by itself. That distinction is what the log records, and it is why every entry has an owner, because the person raising an impediment is rarely the person who can clear it.
 
-> **Alignment:**
-> The Impediment Log must be consistent with: the issue log, the decision log, and the risk register, because an impediment that recurs is a risk being realised.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Management Plan (PMO-04.01.01), Approved Baselines (Scope/Schedule/Cost)
+>   * *Optional:* Risk Register (PMO-04.08.02), Stakeholder Engagement Plan (PMO-04.10.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Status Reports (PMO-06.01), Change Log (PMO-05.04), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Variance Analysis (PMO-06.04), Decision Log (PMO-05.02)
 
 ---
 

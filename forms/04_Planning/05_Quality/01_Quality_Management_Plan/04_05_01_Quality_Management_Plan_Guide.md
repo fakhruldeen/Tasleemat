@@ -44,8 +44,24 @@ Authored by Quality Lead and Project Manager, approved by Project Sponsor and PM
 
 ---
 
-### Alignment
-Integrates with Quality Metrics, Definition of Ready/Done, Quality Audit reports, and Deliverable Acceptance forms.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Scope Statement (PMO-04.02.05)
+    *   Requirements Documentation (PMO-04.02.03)
+*   **Optional / Contextual:**
+    *   Tailoring Plan (PMO-02.01)
+    *   AI Governance Plan (PMO-02.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Quality Audits (PMO-05.05)
+    *   Product Acceptance Form (PMO-06.08)
+    *   UAT Sign-off Form (PMO-06.10)
+*   **Optional / Contextual:**
+    *   Definition of Ready & Done (PMO-04.05.03)
+    *   Vendor Scorecard (PMO-06.09)
 
 ---
 

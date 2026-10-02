@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A detailed bottom-up estimating worksheet providing line-item financial calculations for staffing, materials, tools, and vendor contracts.
 
-> **Alignment:**
-> Feeds directly into Cost Estimates summary table and Cost Baseline.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08), Resource Requirements (PMO-04.06.02)
+>   * *Optional:* Risk Register (PMO-04.08.02), Procurement Strategy (PMO-04.09.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Cost Baseline (PMO-04.04.04), Earned Value Analysis / EVA (PMO-06.05), Variance Analysis (PMO-06.04)
+>   * *Optional:* Cost Estimating Worksheet (PMO-04.04.03), Procurement Budget Plan (PMO-04.09.01)
 
 ---
 

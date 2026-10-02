@@ -79,13 +79,25 @@ is real.
 
 ---
 
-### Alignment
-This program charter should be aligned and consistent with the following
-documents:
-*   Portfolio roadmap
-*   Business case
-*   Program management plan
-*   Organizational change management plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Portfolio Roadmap (PMO-00.01)
+    *   Program Business Case
+    *   Strategic Plan
+*   **Optional / Contextual:**
+    *   Interdependency Register (PMO-00.03)
+    *   Benefits Management Plan (PMO-01.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Program Benefits Management Plan (PMO-01.02)
+    *   Component Project Charters (PMO-03.01)
+    *   Interdependency Register (PMO-00.03)
+*   **Optional / Contextual:**
+    *   Resource Capacity Matrix (PMO-00.04)
+    *   Program Governance Plan
 
 ---
 

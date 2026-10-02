@@ -18,8 +18,13 @@ The three sections follow the life of a tailoring decision. The basis establishe
 
 The field most often skipped is the consequence. Every tailoring has a cost, and a plan that records only what improves is a summary of intentions. Recording what becomes harder is what makes the decision reviewable by someone who was not in the conversation when it was made.
 
-> **Alignment:**
-> This tailoring plan must be consistent with: Program charter, Project management plan, Risk management plan, Change management plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Organizational PMO Methodology
+>   * *Optional:* Program Charter (PMO-00.02), Risk Management Plan (PMO-04.08.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Management Plan (PMO-04.01.01), Quality Management Plan (PMO-04.05.01)
+>   * *Optional:* AI Governance Plan (PMO-02.02), Team Charter (PMO-04.06.05)
 
 ---
 

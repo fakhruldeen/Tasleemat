@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > A standard rather than a record: written once at the start and used to measure every piece of work since. The two definitions point in opposite directions. The definition of ready is a promise made by whoever brings work in, and it is the team's only legitimate reason to refuse work. The definition of done is a promise made to whoever reads the work later, and it is the one that decays.
 
-> **Alignment:**
-> The Definition of Ready and Done Standard must be consistent with: the team's estimation record, so the ready standard reflects real practice rather than an intention; the retrospective, which is where a criterion that keeps being waived should be reported rather than quietly dropped; and the change control process, since a change that has not been tested is the case the done standard exists to catch.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Scope Statement (PMO-04.02.05), Requirements Documentation (PMO-04.02.03)
+>   * *Optional:* Tailoring Plan (PMO-02.01), AI Governance Plan (PMO-02.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Quality Audits (PMO-05.05), Product Acceptance Form (PMO-06.08), UAT Sign-off Form (PMO-06.10)
+>   * *Optional:* Definition of Ready & Done (PMO-04.05.03), Vendor Scorecard (PMO-06.09)
 
 ---
 

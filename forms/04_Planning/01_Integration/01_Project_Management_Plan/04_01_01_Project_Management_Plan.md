@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > The master integrative document that defines how the project is executed, monitored, controlled, and closed across all knowledge areas.
 
-> **Alignment:**
-> Integrates all subsidiary management plans, scope/schedule/cost baselines, and aligns with the Project Charter and Governance Framework.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Subsidiary Management Plans & Baselines
+>   * *Optional:* Tailoring Plan (PMO-02.01), Program Governance Framework (PMO-00.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Execution & Status Reports (PMO-06.01), Change Control Management (PMO-05.03)
+>   * *Optional:* Project Roadmap (PMO-04.01.03), Lookahead Planning (PMO-04.03.10)
 
 ---
 

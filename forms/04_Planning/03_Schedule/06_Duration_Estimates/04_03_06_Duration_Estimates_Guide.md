@@ -44,8 +44,23 @@ Created by Task Leads and Estimators, reviewed and consolidated by Project Sched
 
 ---
 
-### Alignment
-Integrates with Activity List, Resource Requirements, Duration Estimating Worksheet, and Project Schedule.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Scope Statement (PMO-04.02.05)
+*   **Optional / Contextual:**
+    *   Resource Requirements (PMO-04.06.02)
+    *   Risk Register (PMO-04.08.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Schedule Baseline (PMO-04.03.08)
+    *   Earned Value Analysis / EVA (PMO-06.05)
+*   **Optional / Contextual:**
+    *   Release Plan (PMO-04.03.09)
+    *   Lookahead Planning Log (PMO-04.03.10)
 
 ---
 

@@ -78,14 +78,24 @@ is a cost change and should not be agreed without someone who can see the cost.
 
 ---
 
-### Alignment
-This resource capacity matrix should be aligned and consistent with the
-following documents:
-*   Portfolio roadmap
-*   Program charter
-*   Project management plan
-*   Resource breakdown structure
-*   Procurement plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Portfolio Roadmap (PMO-00.01)
+    *   Program Charter (PMO-00.02)
+    *   Organizational Staffing Budgets
+*   **Optional / Contextual:**
+    *   Resource Management Plans (PMO-04.06.01)
+    *   Resource Requirements (PMO-04.06.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Resource Management Plans (PMO-04.06.01)
+    *   Project Schedules (PMO-04.03.08)
+*   **Optional / Contextual:**
+    *   Responsibility Assignment Matrix / RAM (PMO-04.06.04)
+    *   Procurement Strategy (PMO-04.09.02)
 
 ---
 

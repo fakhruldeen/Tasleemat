@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A structured review of the procurement process from planning through contract administration to identify successes and improvements.
 
-> **Alignment:**
-> Directly aligns with Procurement Management Plan, Contractor Status Reports, Contract Closeout, and PMO standards.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Approved Project Baselines (PMO-04.01.01), Work Performance Data & Logs (PMO-05.01 - 05.12)
+>   * *Optional:* Risk Register (PMO-04.08.02), Vendor Agreements (PMO-04.09.04)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Change Requests (PMO-05.03), Project / Phase Closeout (PMO-07.03), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Transition to Operations Checklist (PMO-07.04), Value Realization Register (PMO-01.03)
 
 ---
 

@@ -76,13 +76,25 @@ finance business partner who can confirm the funding rows are real.
 
 ---
 
-### Alignment
-This portfolio roadmap should be aligned and consistent with the following
-documents:
-*   Program charter
-*   Business case
-*   Portfolio management plan
-*   Resource capacity matrix
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Enterprise Strategic Plan
+    *   Portfolio Capital Budget & Allocations
+*   **Optional / Contextual:**
+    *   Program Charters (PMO-00.02)
+    *   Interdependency Register (PMO-00.03)
+    *   Resource Capacity Matrix (PMO-00.04)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Program Charters (PMO-00.02)
+    *   Project Charters (PMO-03.01)
+    *   Portfolio Capacity Allocations
+*   **Optional / Contextual:**
+    *   Business Cases (PMO-01.01)
+    *   AI Readiness Assessment (PMO-02.03)
 
 ---
 

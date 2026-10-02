@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A graphical representation of the logical relationships, sequences, and dependencies among project schedule activities.
 
-> **Alignment:**
-> Directly bridges Activity Attributes and Duration Estimates with the Project Schedule and Critical Path Model.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Scope Statement (PMO-04.02.05)
+>   * *Optional:* Resource Requirements (PMO-04.06.02), Risk Register (PMO-04.08.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Schedule Baseline (PMO-04.03.08), Earned Value Analysis / EVA (PMO-06.05)
+>   * *Optional:* Release Plan (PMO-04.03.09), Lookahead Planning Log (PMO-04.03.10)
 
 ---
 

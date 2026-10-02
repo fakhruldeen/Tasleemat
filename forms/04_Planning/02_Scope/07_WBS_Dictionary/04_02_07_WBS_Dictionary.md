@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A detailed document that provides comprehensive deliverable, activity, and scheduling information for each component in the WBS.
 
-> **Alignment:**
-> The third essential element of the Scope Baseline, linking WBS elements to Activity Lists, Cost Estimates, and Acceptance criteria.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Stakeholder Requirements
+>   * *Optional:* Product Vision (PMO-03.02), Assumption Log (PMO-03.03)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08), Cost Estimates (PMO-04.04.02)
+>   * *Optional:* Product Backlog (PMO-04.02.08), Quality Metrics (PMO-04.05.02)
 
 ---
 

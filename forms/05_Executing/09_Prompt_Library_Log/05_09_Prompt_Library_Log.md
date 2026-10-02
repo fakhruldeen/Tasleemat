@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > The record of the prompts a team has found worth keeping, kept so that the next time the same question comes up the answer is already written. Its purpose is reuse: a prompt that solved a problem is worth more the second time it is used than the effort of writing it again, and worth more still if the team can see what a good response looked like. It is the working record of an AI-enabled practice, and that practice changes, so each entry carries a version.
 
-> **Alignment:**
-> The Prompt Library Log must be consistent with: the AI governance plan, the AI readiness assessment, and the model card and fact sheet, because a prompt that names a model is only reusable while that model is in use.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Management Plan (PMO-04.01.01), Approved Baselines (Scope/Schedule/Cost)
+>   * *Optional:* Risk Register (PMO-04.08.02), Stakeholder Engagement Plan (PMO-04.10.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Status Reports (PMO-06.01), Change Log (PMO-05.04), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Variance Analysis (PMO-06.04), Decision Log (PMO-05.02)
 
 ---
 

@@ -44,8 +44,25 @@ Owned by the procurement manager, who holds the contract and is the only party w
 
 ---
 
-### Alignment
-the procurement strategy, which decides what is bought and on what terms; the requirements documentation, so the scope described here is the scope the project is managing; and the change request and change log, because the change route written here is the one those records follow
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Scope Statement (PMO-04.02.05)
+    *   Cost Baseline (PMO-04.04.04)
+    *   Project Schedule (PMO-04.03.08)
+*   **Optional / Contextual:**
+    *   Risk Register (PMO-04.08.02)
+    *   Resource Requirements (PMO-04.06.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Statement of Work / SOW (PMO-04.09.04)
+    *   RFP (PMO-04.09.05)
+    *   Contract Closure Report (PMO-07.02)
+*   **Optional / Contextual:**
+    *   Vendor Performance Scorecard (PMO-06.09)
+    *   Contractor Status Report (PMO-06.03)
 
 ---
 

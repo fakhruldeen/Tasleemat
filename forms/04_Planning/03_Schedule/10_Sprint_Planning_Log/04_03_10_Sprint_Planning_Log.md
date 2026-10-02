@@ -17,8 +17,13 @@ guidance for each section below to produce the requested content. Refer to
 
 The fields that resist filling are the ones worth having. A capacity figure with no basis, a scope addition with no displaced story, and a risk with no trigger are all cheap to leave blank and expensive to discover in week two. Filling them is the whole value of the form, so the guidance below leans on the reason rather than restating the label.
 
-> **Alignment:**
-> The SPRINT PLANNING LOG must be consistent with: the product backlog, the release plan, the project schedule, and the resource capacity matrix.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Scope Statement (PMO-04.02.05)
+>   * *Optional:* Resource Requirements (PMO-04.06.02), Risk Register (PMO-04.08.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Schedule Baseline (PMO-04.03.08), Earned Value Analysis / EVA (PMO-06.05)
+>   * *Optional:* Release Plan (PMO-04.03.09), Lookahead Planning Log (PMO-04.03.10)
 
 ---
 

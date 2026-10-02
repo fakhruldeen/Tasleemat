@@ -76,13 +76,24 @@ the person who needs the deliverable.
 
 ---
 
-### Alignment
-This interdependency register should be aligned and consistent with the
-following documents:
-*   Portfolio roadmap
-*   Program charter
-*   Project management plan
-*   Schedule management plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Program Charter (PMO-00.02) or Portfolio Roadmap (PMO-00.01)
+    *   Project Schedules (PMO-04.03.08)
+*   **Optional / Contextual:**
+    *   Milestone Lists (PMO-04.03.04)
+    *   Procurement Plans (PMO-04.09.01)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Schedules (PMO-04.03.08)
+    *   Program Status Reports (PMO-06.01)
+    *   Risk Registers (PMO-04.08.02)
+*   **Optional / Contextual:**
+    *   Lookahead Planning Log (PMO-04.03.10)
+    *   Change Requests (PMO-05.03)
 
 ---
 

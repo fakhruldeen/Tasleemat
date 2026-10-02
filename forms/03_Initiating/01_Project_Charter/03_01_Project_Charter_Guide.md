@@ -45,8 +45,27 @@ Issued by the Project Sponsor, authored/drafted with the Project Manager, and si
 
 ---
 
-### Alignment
-The Project Charter aligns with the Business Case, Benefits Management Plan, Strategic Plan, and provides the foundation for the Project Management Plan.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Business Case (PMO-01.01)
+    *   Strategic Plan
+*   **Optional / Contextual:**
+    *   Program Charter (PMO-00.02)
+    *   Portfolio Roadmap (PMO-00.01)
+    *   AI Use Case Canvas (PMO-02.04)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Management Plan (PMO-04.01.01)
+    *   Stakeholder Register (PMO-03.04)
+    *   Assumption Log (PMO-03.03)
+    *   Scope Statement (PMO-04.02.05)
+*   **Optional / Contextual:**
+    *   Tailoring Plan (PMO-02.01)
+    *   Team Charter (PMO-04.06.05)
+    *   Product Vision (PMO-03.02)
 
 ---
 

@@ -77,13 +77,23 @@ figures, not the project's.
 
 ---
 
-### Alignment
-This value realization register should be aligned and consistent with the
-following documents:
-*   Business case
-*   Benefits management plan
-*   Program charter
-*   Project management plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Benefits Management Plan (PMO-01.02)
+    *   Business Case (PMO-01.01)
+*   **Optional / Contextual:**
+    *   Project Status Reports (PMO-06.01)
+    *   Product Acceptance Form (PMO-06.08)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Lessons Learned Summary (PMO-07.01)
+    *   Project / Phase Closeout (PMO-07.03)
+*   **Optional / Contextual:**
+    *   Post-Project Benefit Reviews
+    *   Operational KPI Dashboards
 
 ---
 

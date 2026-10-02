@@ -44,8 +44,23 @@ Authored by Project Manager and Change Lead, approved by Project Sponsor.
 
 ---
 
-### Alignment
-Integrates with Stakeholder Register, Communications Management Plan, Change Management Plan, and Project Charter.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Stakeholder Register (PMO-03.04)
+    *   Stakeholder Analysis (PMO-03.05)
+*   **Optional / Contextual:**
+    *   Project Charter (PMO-03.01)
+    *   Change Management Plan (PMO-04.01.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Status Reports (PMO-06.01)
+    *   Meeting Minutes (PMO-05.11)
+*   **Optional / Contextual:**
+    *   OCM Strategy & Plan (PMO-04.11.01)
+    *   Issue Log (PMO-05.01)
 
 ---
 

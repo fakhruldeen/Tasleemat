@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A subsidiary plan defining how risk management activities will be structured and performed throughout the project lifecycle.
 
-> **Alignment:**
-> Integrates with Risk Register, Risk Breakdown Structure (RBS), Probability & Impact Matrix, and Cost Baseline contingency.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Assumption Log (PMO-03.03), Project Baselines (Scope/Schedule/Cost)
+>   * *Optional:* AI Governance Plan (PMO-02.02), Procurement Strategy (PMO-04.09.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Risk Register (PMO-04.08.02), Risk Reports (PMO-04.08.06), Risk Audits (PMO-06.06)
+>   * *Optional:* Risk Mitigation Action Plan (PMO-04.08.07), Decision Log (PMO-05.02)
 
 ---
 

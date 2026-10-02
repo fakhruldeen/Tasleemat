@@ -77,13 +77,23 @@ required to uphold.
 
 ---
 
-### Alignment
-This tailoring plan should be aligned and consistent with the
-following documents:
-*   Program charter
-*   Project management plan
-*   Risk management plan
-*   Change management plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Organizational PMO Methodology
+*   **Optional / Contextual:**
+    *   Program Charter (PMO-00.02)
+    *   Risk Management Plan (PMO-04.08.01)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Management Plan (PMO-04.01.01)
+    *   Quality Management Plan (PMO-04.05.01)
+*   **Optional / Contextual:**
+    *   AI Governance Plan (PMO-02.02)
+    *   Team Charter (PMO-04.06.05)
 
 ---
 

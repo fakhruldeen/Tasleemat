@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > A hierarchical view of the project's resources, organised by type and category. It is an output of Estimate Activity Resources, and its job is to make the resource picture legible at a glance rather than to restate it line by line.
 
-> **Alignment:**
-> The RESOURCE BREAKDOWN STRUCTURE must be consistent with: the resource management plan, the resource requirements, and the activity attributes the resources are estimated against.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08)
+>   * *Optional:* Resource Capacity Matrix (PMO-00.04), Cost Management Plan (PMO-04.04.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Responsibility Assignment Matrix / RAM (PMO-04.06.04), Team Charter (PMO-04.06.05), Team Performance Assessment (PMO-05.06)
+>   * *Optional:* Team Onboarding Checklist (PMO-05.12), Training Plan & Log (PMO-04.11.02)
 
 ---
 

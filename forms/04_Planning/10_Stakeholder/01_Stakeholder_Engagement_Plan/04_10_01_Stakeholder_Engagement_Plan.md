@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A subsidiary plan identifying the strategies and actions required to effectively engage project stakeholders based on their needs, interests, and impact.
 
-> **Alignment:**
-> Integrates with Stakeholder Register, Communications Management Plan, Change Management Plan, and Project Charter.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Stakeholder Register (PMO-03.04), Stakeholder Analysis (PMO-03.05)
+>   * *Optional:* Project Charter (PMO-03.01), Change Management Plan (PMO-04.01.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Status Reports (PMO-06.01), Meeting Minutes (PMO-05.11)
+>   * *Optional:* OCM Strategy & Plan (PMO-04.11.01), Issue Log (PMO-05.01)
 
 ---
 

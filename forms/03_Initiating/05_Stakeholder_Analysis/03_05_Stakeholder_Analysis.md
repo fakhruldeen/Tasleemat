@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A technique of systematically gathering and analyzing quantitative and qualitative information to determine whose interests should be taken into account throughout the project.
 
-> **Alignment:**
-> The Stakeholder Analysis aligns with the Stakeholder Register and Stakeholder Engagement Plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Stakeholder Register (PMO-03.04), Project Charter (PMO-03.01)
+>   * *Optional:* Organizational Context & Culture Assessments
+> * **Downstream Dependents:**
+>   * *Mandatory:* Stakeholder Engagement Plan (PMO-04.10.01), Communications Management Plan (PMO-04.07.01)
+>   * *Optional:* OCM Strategy & Plan (PMO-04.11.01), Training Plan (PMO-04.11.02)
 
 ---
 

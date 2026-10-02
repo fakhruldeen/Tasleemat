@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > An Organizational Change Management (OCM) Strategy and Plan guides the human and behavioral side of project transition. While technical project plans deliver the solution, the OCM plan ensures that affected individuals, teams, and stakeholders embrace, adopt, and effectively use the new capabilities to realize the expected business benefits.
 
-> **Alignment:**
-> The OCM Strategy and Plan should be aligned and consistent with: the Project Management Plan, synchronizing change milestones with technical releases; the Communications Management Plan, ensuring unified and timely stakeholder messaging; and the Risk Register, capturing organizational, cultural, and adoption risks.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Stakeholder Analysis (PMO-03.05), Project Scope Statement (PMO-04.02.05)
+>   * *Optional:* Communications Plan (PMO-04.07.01), Project Roadmap (PMO-04.01.03)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Training Plan & Log (PMO-04.11.02), Transition to Operations Checklist (PMO-07.04)
+>   * *Optional:* Team Performance Assessment (PMO-05.06), Lessons Learned Summary (PMO-07.01)
 
 ---
 

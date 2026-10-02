@@ -44,8 +44,25 @@ Authored by Project Cost Estimator and Technical Leads, reviewed and consolidate
 
 ---
 
-### Alignment
-Feeds directly into Cost Baseline, Cost Estimating Worksheet, Procurement Budget, and Risk Contingency planning.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Project Schedule (PMO-04.03.08)
+    *   Resource Requirements (PMO-04.06.02)
+*   **Optional / Contextual:**
+    *   Risk Register (PMO-04.08.02)
+    *   Procurement Strategy (PMO-04.09.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Cost Baseline (PMO-04.04.04)
+    *   Earned Value Analysis / EVA (PMO-06.05)
+    *   Variance Analysis (PMO-06.04)
+*   **Optional / Contextual:**
+    *   Cost Estimating Worksheet (PMO-04.04.03)
+    *   Procurement Budget Plan (PMO-04.09.01)
 
 ---
 

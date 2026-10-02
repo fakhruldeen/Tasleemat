@@ -71,11 +71,24 @@ team.
 
 ---
 
-### Alignment
-This backlog should be aligned and consistent with the following documents:
-*   Product vision
-*   Roadmap
-*   Release plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Stakeholder Requirements
+*   **Optional / Contextual:**
+    *   Product Vision (PMO-03.02)
+    *   Assumption Log (PMO-03.03)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Project Schedule (PMO-04.03.08)
+    *   Cost Estimates (PMO-04.04.02)
+*   **Optional / Contextual:**
+    *   Product Backlog (PMO-04.02.08)
+    *   Quality Metrics (PMO-04.05.02)
 
 ---
 

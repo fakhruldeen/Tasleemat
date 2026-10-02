@@ -44,8 +44,25 @@ Authored by Lead Procurement Specialist and Project Manager, approved by Commerc
 
 ---
 
-### Alignment
-Informs Procurement Management Plan, SOW, RFP packages, and Source Selection Criteria.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Scope Statement (PMO-04.02.05)
+    *   Cost Baseline (PMO-04.04.04)
+    *   Project Schedule (PMO-04.03.08)
+*   **Optional / Contextual:**
+    *   Risk Register (PMO-04.08.02)
+    *   Resource Requirements (PMO-04.06.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Statement of Work / SOW (PMO-04.09.04)
+    *   RFP (PMO-04.09.05)
+    *   Contract Closure Report (PMO-07.02)
+*   **Optional / Contextual:**
+    *   Vendor Performance Scorecard (PMO-06.09)
+    *   Contractor Status Report (PMO-06.03)
 
 ---
 

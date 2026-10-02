@@ -18,8 +18,13 @@ The four sections follow the life of a benefit rather than the life of a project
 
 The section that is most often left out is the rule for what happens when a benefit slips. Without it the status is revised to match reality rather than reality being revised, and that is how a plan becomes fiction while still being reported as on track.
 
-> **Alignment:**
-> This benefits management plan must be consistent with: Business case, Program charter, Project management plan, Value realization register.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Business Case (PMO-01.01), Project Charter (PMO-03.01)
+>   * *Optional:* Program Charter (PMO-00.02), Enterprise Strategic Goals
+> * **Downstream Dependents:**
+>   * *Mandatory:* Value Realization Register (PMO-01.03), Project Management Plan (PMO-04.01.01), Project / Phase Closeout (PMO-07.03)
+>   * *Optional:* Project Roadmap (PMO-04.01.03), Transition to Operations Checklist (PMO-07.04)
 
 ---
 

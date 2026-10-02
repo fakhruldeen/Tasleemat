@@ -44,8 +44,24 @@ Created and managed by the Project Manager with input from project sponsors and 
 
 ---
 
-### Alignment
-The Stakeholder Register aligns with Stakeholder Engagement Plan, Communications Management Plan, and Project Charter.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Procurement Agreements
+*   **Optional / Contextual:**
+    *   Program Charter (PMO-00.02)
+    *   Organizational Charts
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Stakeholder Analysis (PMO-03.05)
+    *   Stakeholder Engagement Plan (PMO-04.10.01)
+    *   Communications Management Plan (PMO-04.07.01)
+*   **Optional / Contextual:**
+    *   Change Management Strategy (PMO-04.11.01)
+    *   Team Charter (PMO-04.06.05)
 
 ---
 

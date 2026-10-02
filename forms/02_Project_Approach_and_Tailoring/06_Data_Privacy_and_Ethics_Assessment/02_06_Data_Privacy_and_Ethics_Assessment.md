@@ -20,8 +20,13 @@ The seventh section is where this form differs from the others in this group. Th
 
 The value of the form is in the fields that are inconvenient. An assessment with no exclusions, no secondary use, no deletion-coverage statement, no withdrawal route and no ethics findings describes processing that has not started, because each of those is filled in by something that happened rather than by something that was decided. So the fields to insist on are the ones with no good answer available: where deletion does not reach, what happens to a person whose data is in a trained model, who can refuse and who cannot, and what harm remains after compliance is satisfied. Where a value genuinely is not known, record that it is not known and who must resolve it, which is more useful than a plausible answer, because a plausible answer will be relied on and a declared gap will be closed.
 
-> **Alignment:**
-> This data privacy and ethics assessment must be consistent with: AI governance plan, AI model card and fact sheet, risk management plan, data management plan, stakeholder register.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* AI Use Case Canvas (PMO-02.04) or Scope Statement (PMO-04.02.05), Data Flow & System Architecture
+>   * *Optional:* Regulatory Privacy Requirements (GDPR / Data Protection Acts)
+> * **Downstream Dependents:**
+>   * *Mandatory:* AI Governance Plan (PMO-02.02), Risk Register (PMO-04.08.02), Requirements Documentation (PMO-04.02.03)
+>   * *Optional:* Statement of Work / SOW (PMO-04.09.04), Quality Audit (PMO-05.05)
 
 ---
 

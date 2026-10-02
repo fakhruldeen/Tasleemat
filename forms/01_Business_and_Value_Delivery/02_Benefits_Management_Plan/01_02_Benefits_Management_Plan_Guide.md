@@ -77,13 +77,24 @@ benefits were part of the case for.
 
 ---
 
-### Alignment
-This benefits management plan should be aligned and consistent with the
-following documents:
-*   Business case
-*   Program charter
-*   Project management plan
-*   Value realization register
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Business Case (PMO-01.01)
+    *   Project Charter (PMO-03.01)
+*   **Optional / Contextual:**
+    *   Program Charter (PMO-00.02)
+    *   Enterprise Strategic Goals
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Value Realization Register (PMO-01.03)
+    *   Project Management Plan (PMO-04.01.01)
+    *   Project / Phase Closeout (PMO-07.03)
+*   **Optional / Contextual:**
+    *   Project Roadmap (PMO-04.01.03)
+    *   Transition to Operations Checklist (PMO-07.04)
 
 ---
 

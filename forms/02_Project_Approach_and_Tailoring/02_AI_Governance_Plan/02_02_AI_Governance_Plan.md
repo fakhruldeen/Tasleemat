@@ -18,8 +18,13 @@ The six sections follow the order in which those answers are needed. Scope estab
 
 The failure mode is category language. A plan that says data is minimised, protected and monitored, that bias is mitigated, and that compliance is maintained describes an intention rather than a system, and reads identically whether or not anyone has checked. The test is whether a reader who was not in the room can tell what would have to change for a decision to be made differently. So record the model version, the key holder, the numeric threshold, the named individual, the event that triggers review. Where a value genuinely is not yet known, record that it is not known and who must resolve it, which is a far more useful sentence than a plausible-looking category.
 
-> **Alignment:**
-> This AI governance plan must be consistent with: Data privacy and ethics assessment, AI model card and fact sheet, risk management plan, change management plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* AI Use Case Canvas (PMO-02.04), AI Readiness Assessment (PMO-02.03), Organizational AI Ethics Policy
+>   * *Optional:* Data Privacy & Ethics Assessment (PMO-02.06), Project Charter (PMO-03.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* AI Model Card (PMO-02.05), Quality Metrics (PMO-04.05.02), Risk Management Plan (PMO-04.08.01)
+>   * *Optional:* Prompt Library Register (PMO-05.09), UAT Sign-off Form (PMO-06.10)
 
 ---
 

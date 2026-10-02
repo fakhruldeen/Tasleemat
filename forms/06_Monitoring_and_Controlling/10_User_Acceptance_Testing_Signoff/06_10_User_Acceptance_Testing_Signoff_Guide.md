@@ -43,8 +43,24 @@ Signed by the business owner or client representative, who is the party acceptin
 
 ---
 
-### Alignment
-the test plan, because the signoff is against the cases the plan defines; the product acceptance form, which records the same decision at deliverable level; and the transition to operations checklist, which cannot start until this is signed
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Approved Project Baselines (PMO-04.01.01)
+    *   Work Performance Data & Logs (PMO-05.01 - 05.12)
+*   **Optional / Contextual:**
+    *   Risk Register (PMO-04.08.02)
+    *   Vendor Agreements (PMO-04.09.04)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Change Requests (PMO-05.03)
+    *   Project / Phase Closeout (PMO-07.03)
+    *   Lessons Learned Summary (PMO-07.01)
+*   **Optional / Contextual:**
+    *   Transition to Operations Checklist (PMO-07.04)
+    *   Value Realization Register (PMO-01.03)
 
 ---
 

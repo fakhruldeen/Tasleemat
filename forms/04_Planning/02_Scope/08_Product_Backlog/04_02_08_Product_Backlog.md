@@ -11,8 +11,13 @@ Form: PRODUCT BACKLOG (Instructions)
 > **Context & Definition:**
 > The product vision provides the future view of the product being developed. It is aspirational, yet achievable and realistic, and is developed at the very beginning of a project, where it is often an input to the business case. On agile-based projects it is often used in place of a project charter, and it is developed once, at the beginning.
 
-> **Alignment:**
-> This vision must be consistent with: Product vision, Roadmap, Release plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Stakeholder Requirements
+>   * *Optional:* Product Vision (PMO-03.02), Assumption Log (PMO-03.03)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08), Cost Estimates (PMO-04.04.02)
+>   * *Optional:* Product Backlog (PMO-04.02.08), Quality Metrics (PMO-04.05.02)
 
 ---
 

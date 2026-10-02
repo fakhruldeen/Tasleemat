@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > The record of what a meeting decided, written so that somebody who was not in the room can act on it. They are not a transcript. What makes a record of a meeting worth keeping months later is entirely what cannot be reconstructed from memory: the decisions, and the actions with their owners and dates. The discussion is recorded for a narrower reason, which is that a decision with no recorded reasoning gets relitigated by the next person who cannot see what was weighed. The attendee list is not administrative either, since it is what tells a reader whose agreement a decision carries.
 
-> **Alignment:**
-> The Meeting Minutes must be consistent with: the decision log, the action items where a decision becomes an assignment, and the project status report, because decisions change what is reported.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Management Plan (PMO-04.01.01), Approved Baselines (Scope/Schedule/Cost)
+>   * *Optional:* Risk Register (PMO-04.08.02), Stakeholder Engagement Plan (PMO-04.10.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Status Reports (PMO-06.01), Change Log (PMO-05.04), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Variance Analysis (PMO-06.04), Decision Log (PMO-05.02)
 
 ---
 

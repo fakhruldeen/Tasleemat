@@ -18,8 +18,13 @@ The register exists to make one movement visible: the difference between what a 
 
 A register also needs rules for what happens to a benefit that does not arrive. Without a stated trigger for escalation, a variance is absorbed at each review until it stops being a variance and becomes the plan, and the plan has quietly become the record of what happened.
 
-> **Alignment:**
-> This value realization register must be consistent with: Business case, Benefits management plan, Program charter, Project management plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Benefits Management Plan (PMO-01.02), Business Case (PMO-01.01)
+>   * *Optional:* Project Status Reports (PMO-06.01), Product Acceptance Form (PMO-06.08)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Lessons Learned Summary (PMO-07.01), Project / Phase Closeout (PMO-07.03)
+>   * *Optional:* Post-Project Benefit Reviews, Operational KPI Dashboards
 
 ---
 

@@ -44,8 +44,23 @@ Owned by the Change Manager or Project Manager, developed in close collaboration
 
 ---
 
-### Alignment
-The OCM Strategy and Plan should be aligned and consistent with: the Project Management Plan, synchronizing change milestones with technical releases; the Communications Management Plan, ensuring unified and timely stakeholder messaging; and the Risk Register, capturing organizational, cultural, and adoption risks.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Stakeholder Analysis (PMO-03.05)
+    *   Project Scope Statement (PMO-04.02.05)
+*   **Optional / Contextual:**
+    *   Communications Plan (PMO-04.07.01)
+    *   Project Roadmap (PMO-04.01.03)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Training Plan & Log (PMO-04.11.02)
+    *   Transition to Operations Checklist (PMO-07.04)
+*   **Optional / Contextual:**
+    *   Team Performance Assessment (PMO-05.06)
+    *   Lessons Learned Summary (PMO-07.01)
 
 ---
 

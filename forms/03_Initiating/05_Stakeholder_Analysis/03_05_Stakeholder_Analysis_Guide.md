@@ -44,8 +44,22 @@ Performed by the Project Manager with input from the project team and sponsor.
 
 ---
 
-### Alignment
-The Stakeholder Analysis aligns with the Stakeholder Register and Stakeholder Engagement Plan.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Stakeholder Register (PMO-03.04)
+    *   Project Charter (PMO-03.01)
+*   **Optional / Contextual:**
+    *   Organizational Context & Culture Assessments
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Stakeholder Engagement Plan (PMO-04.10.01)
+    *   Communications Management Plan (PMO-04.07.01)
+*   **Optional / Contextual:**
+    *   OCM Strategy & Plan (PMO-04.11.01)
+    *   Training Plan (PMO-04.11.02)
 
 ---
 

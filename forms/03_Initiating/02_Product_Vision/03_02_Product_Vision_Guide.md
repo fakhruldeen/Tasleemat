@@ -68,12 +68,24 @@ Project Sponsor or Client.
 
 ---
 
-### Alignment
-This product vision should be aligned and consistent with the following
-documents:
-*   Product backlog
-*   Roadmap
-*   Release plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Business Case (PMO-01.01)
+    *   Customer & Market Needs Analysis
+*   **Optional / Contextual:**
+    *   Project Charter (PMO-03.01)
+    *   Strategic Objectives
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Product Backlog (PMO-04.02.08)
+    *   User Story Mapping (PMO-04.02.09)
+    *   Project Roadmap (PMO-04.01.03)
+*   **Optional / Contextual:**
+    *   Release Plan (PMO-04.03.09)
+    *   Requirements Documentation (PMO-04.02.03)
 
 ---
 

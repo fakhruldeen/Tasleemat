@@ -50,13 +50,24 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 
 ---
 
-### Alignment
-This AI use case canvas should be aligned and consistent with the
-following documents:
-*   Business case
-*   AI governance plan
-*   AI model card and fact sheet
-*   Data privacy and ethics assessment
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   AI Readiness Assessment (PMO-02.03)
+    *   Business Case (PMO-01.01)
+*   **Optional / Contextual:**
+    *   Product Vision (PMO-03.02)
+    *   Stakeholder Analysis (PMO-03.05)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   AI Governance Plan (PMO-02.02)
+    *   Requirements Documentation (PMO-04.02.03)
+*   **Optional / Contextual:**
+    *   User Story Mapping (PMO-04.02.09)
+    *   AI Model Card (PMO-02.05)
 
 ---
 

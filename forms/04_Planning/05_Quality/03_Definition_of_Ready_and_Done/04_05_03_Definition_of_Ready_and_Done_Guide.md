@@ -43,8 +43,24 @@ Agreed by the team, which is the only arrangement that produces something they w
 
 ---
 
-### Alignment
-the team's estimation record, so the ready standard reflects real practice rather than an intention; the retrospective, which is where a criterion that keeps being waived should be reported rather than quietly dropped; and the change control process, since a change that has not been tested is the case the done standard exists to catch
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Scope Statement (PMO-04.02.05)
+    *   Requirements Documentation (PMO-04.02.03)
+*   **Optional / Contextual:**
+    *   Tailoring Plan (PMO-02.01)
+    *   AI Governance Plan (PMO-02.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Quality Audits (PMO-05.05)
+    *   Product Acceptance Form (PMO-06.08)
+    *   UAT Sign-off Form (PMO-06.10)
+*   **Optional / Contextual:**
+    *   Definition of Ready & Done (PMO-04.05.03)
+    *   Vendor Scorecard (PMO-06.09)
 
 ---
 

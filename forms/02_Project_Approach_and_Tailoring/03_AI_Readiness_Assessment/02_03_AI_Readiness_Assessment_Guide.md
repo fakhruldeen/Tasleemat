@@ -50,13 +50,23 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 
 ---
 
-### Alignment
-This AI readiness assessment should be aligned and consistent with the
-following documents:
-*   AI governance plan
-*   Business case
-*   Organisational change management strategy
-*   Risk management plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Business Case (PMO-01.01)
+    *   Data & Technical Architecture Baseline
+*   **Optional / Contextual:**
+    *   Portfolio Roadmap (PMO-00.01)
+    *   Strategic AI Goals
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   AI Governance Plan (PMO-02.02)
+    *   AI Use Case Canvas (PMO-02.04)
+*   **Optional / Contextual:**
+    *   Resource Capacity Matrix (PMO-00.04)
+    *   Procurement Plan (PMO-04.09.01)
 
 ---
 

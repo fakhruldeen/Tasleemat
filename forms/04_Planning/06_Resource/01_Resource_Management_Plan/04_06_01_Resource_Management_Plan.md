@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A subsidiary plan establishing how human, equipment, and material resources will be categorized, acquired, managed, and controlled.
 
-> **Alignment:**
-> Integrates with Resource Requirements, RBS, RAM/RACI matrix, Team Charter, and Project Schedule.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08)
+>   * *Optional:* Resource Capacity Matrix (PMO-00.04), Cost Management Plan (PMO-04.04.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Responsibility Assignment Matrix / RAM (PMO-04.06.04), Team Charter (PMO-04.06.05), Team Performance Assessment (PMO-05.06)
+>   * *Optional:* Team Onboarding Checklist (PMO-05.12), Training Plan & Log (PMO-04.11.02)
 
 ---
 

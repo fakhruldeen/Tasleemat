@@ -43,8 +43,24 @@ Written by whoever took the notes, which is not always the chair, and approved b
 
 ---
 
-### Alignment
-the decision log, the action items where a decision becomes an assignment, and the project status report, because decisions change what is reported
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Management Plan (PMO-04.01.01)
+    *   Approved Baselines (Scope/Schedule/Cost)
+*   **Optional / Contextual:**
+    *   Risk Register (PMO-04.08.02)
+    *   Stakeholder Engagement Plan (PMO-04.10.01)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Status Reports (PMO-06.01)
+    *   Change Log (PMO-05.04)
+    *   Lessons Learned Summary (PMO-07.01)
+*   **Optional / Contextual:**
+    *   Variance Analysis (PMO-06.04)
+    *   Decision Log (PMO-05.02)
 
 ---
 

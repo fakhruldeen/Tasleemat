@@ -11,8 +11,13 @@ Form: PROJECT OR PHASE CLOSEOUT (Instructions)
 > **Context & Definition:**
 > Project closeout documents the final project performance as compared to the project objectives. The objectives from the project charter are reviewed and evidence of meeting them is documented, as are unmet objectives and variances. Information from the procurement closeout is documented as well. It supports process 4.7 Close Project or Phase.
 
-> **Alignment:**
-> This closeout must be consistent with: Project management plan (all components), Product acceptance, Lessons learned summary.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Product Acceptance Form (PMO-06.08), UAT Sign-off (PMO-06.10), Contract Closure Reports (PMO-07.02)
+>   * *Optional:* Lessons Learned Register (PMO-05.07), Issue Log (PMO-05.01), Risk Register (PMO-04.08.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Final Project Archive & Release, Value Realization Register (PMO-01.03), Organizational Process Assets Update
+>   * *Optional:* Post-Implementation Review, Transition to Operations Checklist (PMO-07.04)
 
 ---
 

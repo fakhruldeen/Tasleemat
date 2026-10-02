@@ -44,8 +44,26 @@ Jointly executed by the Project Manager and the receiving Operations / Service O
 
 ---
 
-### Alignment
-The Transition to Operations Checklist should be aligned and consistent with: the Quality Management Plan, confirming operational acceptance criteria; the OCM Strategy and Plan, ensuring operational readiness and sustainable adoption; and the Contract Closeout Report, aligning vendor handover obligations with operational acceptance.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Product Acceptance Form (PMO-06.08)
+    *   UAT Sign-off (PMO-06.10)
+    *   Contract Closure Reports (PMO-07.02)
+*   **Optional / Contextual:**
+    *   Lessons Learned Register (PMO-05.07)
+    *   Issue Log (PMO-05.01)
+    *   Risk Register (PMO-04.08.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Final Project Archive & Release
+    *   Value Realization Register (PMO-01.03)
+    *   Organizational Process Assets Update
+*   **Optional / Contextual:**
+    *   Post-Implementation Review
+    *   Transition to Operations Checklist (PMO-07.04)
 
 ---
 

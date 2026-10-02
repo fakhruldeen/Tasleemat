@@ -93,13 +93,25 @@ external parties. Reviewed by the same signatories on each triggering event.
 
 ---
 
-### Alignment
-This AI governance plan should be aligned and consistent with the
-following documents:
-*   Data privacy and ethics assessment
-*   AI model card and fact sheet
-*   Risk management plan
-*   Change management plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   AI Use Case Canvas (PMO-02.04)
+    *   AI Readiness Assessment (PMO-02.03)
+    *   Organizational AI Ethics Policy
+*   **Optional / Contextual:**
+    *   Data Privacy & Ethics Assessment (PMO-02.06)
+    *   Project Charter (PMO-03.01)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   AI Model Card (PMO-02.05)
+    *   Quality Metrics (PMO-04.05.02)
+    *   Risk Management Plan (PMO-04.08.01)
+*   **Optional / Contextual:**
+    *   Prompt Library Register (PMO-05.09)
+    *   UAT Sign-off Form (PMO-06.10)
 
 ---
 

@@ -11,10 +11,13 @@ Form: CONTRACT CLOSEOUT REPORT (Instructions)
 > **Context & Definition:**
 > [ Add Context & Definition Here ]
 > 
-> **Alignment:**
-> [ Add Alignment Information Here ]
-
-> Before a contract can be fully closed or terminated, all disputes must be resolved, the product or result must be accepted, and the final payments must be made. Record the contract completion date, who signed off on it, and the date of the final payment.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Product Acceptance Form (PMO-06.08), UAT Sign-off (PMO-06.10), Contract Closure Reports (PMO-07.02)
+>   * *Optional:* Lessons Learned Register (PMO-05.07), Issue Log (PMO-05.01), Risk Register (PMO-04.08.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Final Project Archive & Release, Value Realization Register (PMO-01.03), Organizational Process Assets Update
+>   * *Optional:* Post-Implementation Review, Transition to Operations Checklist (PMO-07.04)
 
 ---
 

@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A formal proposal to modify any deliverable, project management plan component, or project baseline.
 
-> **Alignment:**
-> The Change Request aligns with Change Management Plan, Change Log, and Project Baselines.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Management Plan (PMO-04.01.01), Approved Baselines (Scope/Schedule/Cost)
+>   * *Optional:* Risk Register (PMO-04.08.02), Stakeholder Engagement Plan (PMO-04.10.01)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Status Reports (PMO-06.01), Change Log (PMO-05.04), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Variance Analysis (PMO-06.04), Decision Log (PMO-05.02)
 
 ---
 

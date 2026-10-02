@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A formal evaluation artifact establishing the objective technical, commercial, and past performance criteria used to score and select vendor proposals.
 
-> **Alignment:**
-> Included within Request for Proposal (RFP) packages and directly drives Tender Evaluation Reports and Contract Awards.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Scope Statement (PMO-04.02.05), Cost Baseline (PMO-04.04.04), Project Schedule (PMO-04.03.08)
+>   * *Optional:* Risk Register (PMO-04.08.02), Resource Requirements (PMO-04.06.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Statement of Work / SOW (PMO-04.09.04), RFP (PMO-04.09.05), Contract Closure Report (PMO-07.02)
+>   * *Optional:* Vendor Performance Scorecard (PMO-06.09), Contractor Status Report (PMO-06.03)
 
 ---
 

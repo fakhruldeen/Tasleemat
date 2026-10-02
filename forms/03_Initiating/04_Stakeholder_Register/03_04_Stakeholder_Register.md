@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A project document including the identification, assessment, and classification of project stakeholders.
 
-> **Alignment:**
-> The Stakeholder Register aligns with Stakeholder Engagement Plan, Communications Management Plan, and Project Charter.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Procurement Agreements
+>   * *Optional:* Program Charter (PMO-00.02), Organizational Charts
+> * **Downstream Dependents:**
+>   * *Mandatory:* Stakeholder Analysis (PMO-03.05), Stakeholder Engagement Plan (PMO-04.10.01), Communications Management Plan (PMO-04.07.01)
+>   * *Optional:* Change Management Strategy (PMO-04.11.01), Team Charter (PMO-04.06.05)
 
 ---
 

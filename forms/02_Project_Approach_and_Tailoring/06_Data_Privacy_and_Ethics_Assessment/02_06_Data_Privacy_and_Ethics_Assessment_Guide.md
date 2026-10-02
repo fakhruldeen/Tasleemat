@@ -116,14 +116,23 @@ findings.
 
 ---
 
-### Alignment
-This data privacy and ethics assessment should be aligned and consistent with
-the following documents:
-*   AI governance plan
-*   AI model card and fact sheet
-*   Risk management plan
-*   Data management plan
-*   Stakeholder register
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   AI Use Case Canvas (PMO-02.04) or Scope Statement (PMO-04.02.05)
+    *   Data Flow & System Architecture
+*   **Optional / Contextual:**
+    *   Regulatory Privacy Requirements (GDPR / Data Protection Acts)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   AI Governance Plan (PMO-02.02)
+    *   Risk Register (PMO-04.08.02)
+    *   Requirements Documentation (PMO-04.02.03)
+*   **Optional / Contextual:**
+    *   Statement of Work / SOW (PMO-04.09.04)
+    *   Quality Audit (PMO-05.05)
 
 ---
 

@@ -74,14 +74,24 @@ deal with it", and neither is answered by the project team alone.
 
 ---
 
-### Alignment
-This business case should be aligned and consistent with the
-following documents:
-*   Portfolio roadmap
-*   Program charter
-*   Project management plan
-*   Benefits management plan
-*   Value realization register
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Strategic Business Objectives
+    *   Cost-Benefit Financial Baseline
+*   **Optional / Contextual:**
+    *   Portfolio Roadmap (PMO-00.01)
+    *   Feasibility & Market Analysis
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Benefits Management Plan (PMO-01.02)
+    *   Project Charter (PMO-03.01)
+    *   Value Realization Register (PMO-01.03)
+*   **Optional / Contextual:**
+    *   Product Vision (PMO-03.02)
+    *   AI Use Case Canvas (PMO-02.04)
 
 ---
 

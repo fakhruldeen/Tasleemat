@@ -11,8 +11,13 @@ Form: RELEASE PLAN (Instructions)
 > **Context & Definition:**
 > The product vision provides the future view of the product being developed. It is aspirational, yet achievable and realistic, and is developed at the very beginning of a project, where it is often an input to the business case. On agile-based projects it is often used in place of a project charter, and it is developed once, at the beginning.
 
-> **Alignment:**
-> This vision must be consistent with: Product vision, Roadmap, Product backlog.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Scope Statement (PMO-04.02.05)
+>   * *Optional:* Resource Requirements (PMO-04.06.02), Risk Register (PMO-04.08.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Schedule Baseline (PMO-04.03.08), Earned Value Analysis / EVA (PMO-06.05)
+>   * *Optional:* Release Plan (PMO-04.03.09), Lookahead Planning Log (PMO-04.03.10)
 
 ---
 

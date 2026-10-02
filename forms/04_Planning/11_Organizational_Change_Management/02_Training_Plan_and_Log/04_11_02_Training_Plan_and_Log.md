@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A Training Plan and Log defines the curriculum, schedule, delivery approach, and tracking mechanisms for building user competencies during project execution. It ensures that impacted teams acquire the necessary knowledge and practical skills to successfully adopt new tools, systems, and operational procedures before go-live.
 
-> **Alignment:**
-> The Training Plan and Log should be aligned and consistent with: the OCM Strategy and Plan, reinforcing change adoption across user cohorts; the Project Schedule, synchronizing training delivery with release dates; and the Resource Management Plan, securing training facilities, environments, and instructors.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Stakeholder Analysis (PMO-03.05), Project Scope Statement (PMO-04.02.05)
+>   * *Optional:* Communications Plan (PMO-04.07.01), Project Roadmap (PMO-04.01.03)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Training Plan & Log (PMO-04.11.02), Transition to Operations Checklist (PMO-07.04)
+>   * *Optional:* Team Performance Assessment (PMO-05.06), Lessons Learned Summary (PMO-07.01)
 
 ---
 

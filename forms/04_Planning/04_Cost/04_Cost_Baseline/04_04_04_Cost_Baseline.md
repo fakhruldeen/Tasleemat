@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > The approved version of the time-phased project budget, excluding any management reserves, which can be changed only through formal change control.
 
-> **Alignment:**
-> The core Cost component of the Performance Measurement Baseline (PMB), directly driving Earned Value Analysis.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08), Resource Requirements (PMO-04.06.02)
+>   * *Optional:* Risk Register (PMO-04.08.02), Procurement Strategy (PMO-04.09.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Cost Baseline (PMO-04.04.04), Earned Value Analysis / EVA (PMO-06.05), Variance Analysis (PMO-06.04)
+>   * *Optional:* Cost Estimating Worksheet (PMO-04.04.03), Procurement Budget Plan (PMO-04.09.01)
 
 ---
 

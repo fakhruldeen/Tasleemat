@@ -67,11 +67,26 @@ and archived with the project records.
 
 ---
 
-### Alignment
-This closeout should be aligned and consistent with the following documents:
-*   Project management plan (all components)
-*   Product acceptance
-*   Lessons learned summary
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Product Acceptance Form (PMO-06.08)
+    *   UAT Sign-off (PMO-06.10)
+    *   Contract Closure Reports (PMO-07.02)
+*   **Optional / Contextual:**
+    *   Lessons Learned Register (PMO-05.07)
+    *   Issue Log (PMO-05.01)
+    *   Risk Register (PMO-04.08.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Final Project Archive & Release
+    *   Value Realization Register (PMO-01.03)
+    *   Organizational Process Assets Update
+*   **Optional / Contextual:**
+    *   Post-Implementation Review
+    *   Transition to Operations Checklist (PMO-07.04)
 
 ---
 

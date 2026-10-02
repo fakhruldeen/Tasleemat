@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > The commitment of what will be done about one named risk: the treatment it is given, the steps that deliver that treatment, what the steps cost, and the score the project expects to reach once they are done. It is an output of Plan Risk Responses, and it exists so that a risk which has been identified does not stay identified.
 
-> **Alignment:**
-> The RISK MITIGATION ACTION PLAN must be consistent with: the risk register, the risk management plan, and the risk audit, which looks for the responses that were planned and never made.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Assumption Log (PMO-03.03), Project Baselines (Scope/Schedule/Cost)
+>   * *Optional:* AI Governance Plan (PMO-02.02), Procurement Strategy (PMO-04.09.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Risk Register (PMO-04.08.02), Risk Reports (PMO-04.08.06), Risk Audits (PMO-06.06)
+>   * *Optional:* Risk Mitigation Action Plan (PMO-04.08.07), Decision Log (PMO-05.02)
 
 ---
 

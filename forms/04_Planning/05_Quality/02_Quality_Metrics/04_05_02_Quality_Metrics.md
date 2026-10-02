@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A structured specification describing a project or product attribute and how the Quality Control process will verify compliance.
 
-> **Alignment:**
-> Informs Quality Checklists, QC Test Reports, Quality Audits, and Product Acceptance sign-offs.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Scope Statement (PMO-04.02.05), Requirements Documentation (PMO-04.02.03)
+>   * *Optional:* Tailoring Plan (PMO-02.01), AI Governance Plan (PMO-02.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Quality Audits (PMO-05.05), Product Acceptance Form (PMO-06.08), UAT Sign-off Form (PMO-06.10)
+>   * *Optional:* Definition of Ready & Done (PMO-04.05.03), Vendor Scorecard (PMO-06.09)
 
 ---
 

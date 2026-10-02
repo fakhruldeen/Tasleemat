@@ -18,8 +18,13 @@ The six sections follow the order in which a team discovers what it did not know
 
 The failure mode is the undifferentiated average. A readiness score that weights every dimension equally treats a capability the business does not depend on as equal to one it cannot operate without, and the aggregate then conceals the single gap that matters. So record the scale, the weights and their justification, and the severity of each gap separately from the score. Where a dimension was assessed by self-declaration rather than by measurement, say so: self-declaration is legitimate and common, and it becomes a problem only when it is not labelled and is therefore indistinguishable from a measurement. An assessment should also record its own expiry, since readiness decays as people move and data drifts, and an assessment with no reassessment trigger is treated as current indefinitely.
 
-> **Alignment:**
-> This AI governance plan must be consistent with: AI governance plan, business case, organisational change management strategy, risk management plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Business Case (PMO-01.01), Data & Technical Architecture Baseline
+>   * *Optional:* Portfolio Roadmap (PMO-00.01), Strategic AI Goals
+> * **Downstream Dependents:**
+>   * *Mandatory:* AI Governance Plan (PMO-02.02), AI Use Case Canvas (PMO-02.04)
+>   * *Optional:* Resource Capacity Matrix (PMO-00.04), Procurement Plan (PMO-04.09.01)
 
 ---
 

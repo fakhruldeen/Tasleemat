@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A Transition to Operations Checklist governs the orderly handover of project deliverables, assets, documentation, knowledge, and support responsibilities from the project team to permanent operational and support teams. It ensures that the receiving organization is fully prepared to maintain, operate, and support the solution sustainably after project closeout.
 
-> **Alignment:**
-> The Transition to Operations Checklist should be aligned and consistent with: the Quality Management Plan, confirming operational acceptance criteria; the OCM Strategy and Plan, ensuring operational readiness and sustainable adoption; and the Contract Closeout Report, aligning vendor handover obligations with operational acceptance.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Product Acceptance Form (PMO-06.08), UAT Sign-off (PMO-06.10), Contract Closure Reports (PMO-07.02)
+>   * *Optional:* Lessons Learned Register (PMO-05.07), Issue Log (PMO-05.01), Risk Register (PMO-04.08.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Final Project Archive & Release, Value Realization Register (PMO-01.03), Organizational Process Assets Update
+>   * *Optional:* Post-Implementation Review, Transition to Operations Checklist (PMO-07.04)
 
 ---
 

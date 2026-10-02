@@ -11,8 +11,13 @@ Form: LESSONS LEARNED SUMMARY (Instructions)
 > **Context & Definition:**
 > Lessons learned are compiled throughout the project or at specific intervals. This summary organizes what the project team did that worked very well and should be passed along to other project teams, and identifies what should be improved for future project work. It supports process 4.7 Close Project or Phase.
 
-> **Alignment:**
-> This summary must be consistent with: Issue register, Risk register, Decision log, Lessons learned register, Retrospectives.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Product Acceptance Form (PMO-06.08), UAT Sign-off (PMO-06.10), Contract Closure Reports (PMO-07.02)
+>   * *Optional:* Lessons Learned Register (PMO-05.07), Issue Log (PMO-05.01), Risk Register (PMO-04.08.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Final Project Archive & Release, Value Realization Register (PMO-01.03), Organizational Process Assets Update
+>   * *Optional:* Post-Implementation Review, Transition to Operations Checklist (PMO-07.04)
 
 ---
 

@@ -44,8 +44,23 @@ Authored by the Project Manager with input from core team leads, approved by the
 
 ---
 
-### Alignment
-Integrates all subsidiary management plans, scope/schedule/cost baselines, and aligns with the Project Charter and Governance Framework.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Subsidiary Management Plans & Baselines
+*   **Optional / Contextual:**
+    *   Tailoring Plan (PMO-02.01)
+    *   Program Governance Framework (PMO-00.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project Execution & Status Reports (PMO-06.01)
+    *   Change Control Management (PMO-05.03)
+*   **Optional / Contextual:**
+    *   Project Roadmap (PMO-04.01.03)
+    *   Lookahead Planning (PMO-04.03.10)
 
 ---
 

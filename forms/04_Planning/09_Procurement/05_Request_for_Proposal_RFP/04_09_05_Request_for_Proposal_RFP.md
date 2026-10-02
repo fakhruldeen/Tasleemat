@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > An invitation to suppliers to compete for work, and the document that makes the competition contestable. It states what is being bought, what a supplier must demonstrate, how submissions will be handled, and the criteria each proposal will be scored against with the weight each one carries. The difference between that last part and a justification is the difference between a contest and a decision that was already made.
 
-> **Alignment:**
-> The Request for Proposal must be consistent with: the procurement strategy, which decides what is bought and on what terms; the source selection criteria, which the evaluation method must follow rather than restate; and the statement of work, which is drafted from the winning response and cannot contradict what was invited here.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Scope Statement (PMO-04.02.05), Cost Baseline (PMO-04.04.04), Project Schedule (PMO-04.03.08)
+>   * *Optional:* Risk Register (PMO-04.08.02), Resource Requirements (PMO-04.06.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Statement of Work / SOW (PMO-04.09.04), RFP (PMO-04.09.05), Contract Closure Report (PMO-07.02)
+>   * *Optional:* Vendor Performance Scorecard (PMO-06.09), Contractor Status Report (PMO-06.03)
 
 ---
 

@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > A record of how an external supplier performed against measures the project agreed in advance. The columns are in the order the decisions happen in: the metric, the target agreed for it, what was actually measured, the gap between them, and what is being done about the gap.
 
-> **Alignment:**
-> The Vendor Performance Scorecard must be consistent with: the contract or statement of work, because the measures are contract measures and not the project's preferences; the procurement audit, which reads the period records as its evidence; and the contract closeout report, which needs the trend rather than a single period.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Approved Project Baselines (PMO-04.01.01), Work Performance Data & Logs (PMO-05.01 - 05.12)
+>   * *Optional:* Risk Register (PMO-04.08.02), Vendor Agreements (PMO-04.09.04)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Change Requests (PMO-05.03), Project / Phase Closeout (PMO-07.03), Lessons Learned Summary (PMO-07.01)
+>   * *Optional:* Transition to Operations Checklist (PMO-07.04), Value Realization Register (PMO-01.03)
 
 ---
 

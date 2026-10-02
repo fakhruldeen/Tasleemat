@@ -14,8 +14,13 @@ instructions below. Refer to `parameters.md` for project variables.
 > **Context and Definition:**
 > A subsidiary plan defining how the organization's quality policies, methodologies, and standards will be implemented and verified.
 
-> **Alignment:**
-> Integrates with Quality Metrics, Definition of Ready/Done, Quality Audit reports, and Deliverable Acceptance forms.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Scope Statement (PMO-04.02.05), Requirements Documentation (PMO-04.02.03)
+>   * *Optional:* Tailoring Plan (PMO-02.01), AI Governance Plan (PMO-02.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Quality Audits (PMO-05.05), Product Acceptance Form (PMO-06.08), UAT Sign-off Form (PMO-06.10)
+>   * *Optional:* Definition of Ready & Done (PMO-04.05.03), Vendor Scorecard (PMO-06.09)
 
 ---
 

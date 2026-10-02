@@ -26,8 +26,13 @@ The last two sections keep the map honest. Work the map does not contain is anti
 
 The value of the form is in the fields that are inconvenient. A map with no stated workaround, no recorded source for the backbone, no deferred slices with reasons, no outcome and no validation plan describes a product nobody has agreed on, because each of those is filled in by something that happened rather than by something that was decided. So the fields to insist on are the ones with no good answer available: what the person does today, where the sequence came from, which slices are out of the first release and why, and what the map assumes. Where a value genuinely is not known, record that it is not known and who must resolve it, which is more useful than a plausible answer, because a plausible answer will be relied on and a declared gap will be closed.
 
-> **Alignment:**
-> This user story mapping canvas must be consistent with: product backlog, project scope statement, requirements traceability matrix, release plan, project schedule.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Charter (PMO-03.01), Stakeholder Requirements
+>   * *Optional:* Product Vision (PMO-03.02), Assumption Log (PMO-03.03)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08), Cost Estimates (PMO-04.04.02)
+>   * *Optional:* Product Backlog (PMO-04.02.08), Quality Metrics (PMO-04.05.02)
 
 ---
 

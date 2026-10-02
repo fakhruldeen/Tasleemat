@@ -15,8 +15,13 @@ guidance for each section below to produce the requested content. Refer to
 > **Context and Definition:**
 > A record of what will be delivered, by when, to what standard, how acceptance will be decided, and who may change it and how. The difference from a proposal is not tone but authority: a proposal describes work somebody offered to do, a statement of work describes work somebody agreed to do, names the instrument that agreed it, and gives both parties a route to change it without anybody having to break the contract.
 
-> **Alignment:**
-> The Statement of Work must be consistent with: the procurement strategy, which decides what is bought and on what terms; the requirements documentation, so the scope described here is the scope the project is managing; and the change request and change log, because the change route written here is the one those records follow.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* Project Scope Statement (PMO-04.02.05), Cost Baseline (PMO-04.04.04), Project Schedule (PMO-04.03.08)
+>   * *Optional:* Risk Register (PMO-04.08.02), Resource Requirements (PMO-04.06.02)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Statement of Work / SOW (PMO-04.09.04), RFP (PMO-04.09.05), Contract Closure Report (PMO-07.02)
+>   * *Optional:* Vendor Performance Scorecard (PMO-06.09), Contractor Status Report (PMO-06.03)
 
 ---
 

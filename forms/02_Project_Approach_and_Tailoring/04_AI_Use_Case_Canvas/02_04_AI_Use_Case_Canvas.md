@@ -18,8 +18,13 @@ The five sections follow the order a reviewer asks questions in. Identification 
 
 Two fields do the work that the rest supports. The current workaround establishes the baseline, because a claim of value without one is a number someone chose. The kill criteria establish that this is a proposal rather than a commitment, since a use case entered without an exit condition becomes permanent by default rather than by decision. Where the data cannot be used for model training, the shape of the solution changes, and the canvas is the last place that is cheap to discover. Write the labelling requirement with its cost: it is usually the largest single line in the business case and usually absent from it.
 
-> **Alignment:**
-> This AI governance plan must be consistent with: Business case, AI governance plan, AI model card and fact sheet, data privacy and ethics assessment.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* AI Readiness Assessment (PMO-02.03), Business Case (PMO-01.01)
+>   * *Optional:* Product Vision (PMO-03.02), Stakeholder Analysis (PMO-03.05)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Project Charter (PMO-03.01), AI Governance Plan (PMO-02.02), Requirements Documentation (PMO-04.02.03)
+>   * *Optional:* User Story Mapping (PMO-04.02.09), AI Model Card (PMO-02.05)
 
 ---
 

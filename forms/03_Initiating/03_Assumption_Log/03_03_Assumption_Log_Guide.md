@@ -44,8 +44,24 @@ Maintained by the Project Manager with input from the project team and stakehold
 
 ---
 
-### Alignment
-The Assumption Log aligns with Risk Register, Scope Baseline, and Project Charter.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Business Case (PMO-01.01)
+*   **Optional / Contextual:**
+    *   Feasibility Studies
+    *   Contractual SOW (PMO-04.09.04)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Risk Register (PMO-04.08.02)
+    *   Project Scope Statement (PMO-04.02.05)
+    *   Cost Estimates (PMO-04.04.02)
+*   **Optional / Contextual:**
+    *   Duration Estimates (PMO-04.03.06)
+    *   Decision Log (PMO-05.02)
 
 ---
 

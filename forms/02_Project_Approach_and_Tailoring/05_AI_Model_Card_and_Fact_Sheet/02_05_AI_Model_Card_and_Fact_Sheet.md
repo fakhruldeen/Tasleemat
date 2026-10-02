@@ -18,8 +18,13 @@ The six sections follow the order those questions arrive. Identification records
 
 The card's value is entirely in the fields that are inconvenient. A model card with no out-of-scope use, no known limitations, no subgroup figures and no change record describes a model that has not been used, because every one of those fields is filled in by something that happened. So the fields to insist on are the ones with no good answer available: the subgroup figure with its sample size, the threshold and what the alternatives would cost, the known dataset limitations, the out-of-distribution behaviour, and the decommissioning plan. Where a value genuinely is not known, record that it is not known and who must resolve it, which is more useful than a plausible figure, because a plausible figure will be relied on and a declared gap will be closed.
 
-> **Alignment:**
-> This AI governance plan must be consistent with: AI use case canvas, AI governance plan, data privacy and ethics assessment, risk management plan.
+> **Alignment & Dependencies:**
+> * **Pre-requisites (Inputs):**
+>   * *Mandatory:* AI Governance Plan (PMO-02.02), Model Training & Validation Benchmarks
+>   * *Optional:* Data Privacy & Ethics Assessment (PMO-02.06), AI Use Case Canvas (PMO-02.04)
+> * **Downstream Dependents:**
+>   * *Mandatory:* Product Acceptance Form (PMO-06.08), UAT Sign-off Form (PMO-06.10), Transition to Operations Checklist (PMO-07.04)
+>   * *Optional:* Prompt Library Register (PMO-05.09), Lessons Learned Register (PMO-05.07)
 
 ---
 

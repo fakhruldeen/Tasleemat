@@ -44,8 +44,25 @@ Maintained by Risk Manager and Project Manager, actions executed by Risk Owners.
 
 ---
 
-### Alignment
-Integrates with Risk Management Plan, Risk Data Sheets, Issue Log, and Project Status Reports.
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Assumption Log (PMO-03.03)
+    *   Project Baselines (Scope/Schedule/Cost)
+*   **Optional / Contextual:**
+    *   AI Governance Plan (PMO-02.02)
+    *   Procurement Strategy (PMO-04.09.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Risk Register (PMO-04.08.02)
+    *   Risk Reports (PMO-04.08.06)
+    *   Risk Audits (PMO-06.06)
+*   **Optional / Contextual:**
+    *   Risk Mitigation Action Plan (PMO-04.08.07)
+    *   Decision Log (PMO-05.02)
 
 ---
 
