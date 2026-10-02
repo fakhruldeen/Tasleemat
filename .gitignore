@@ -6,11 +6,13 @@ ENV/
 env.bak/
 venv.bak/
 
-# Python
+# Python & Developer Tools
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+*.py
+tools/
 
 # OS generated files
 .DS_Store
@@ -21,11 +23,13 @@ __pycache__/
 ehthumbs.db
 Thumbs.db
 
-# IDEs
+# IDEs & Local Temp
 .vscode/
 .idea/
 progress.md
+plan.md
+RESUME.md
 PMO-templates/
 arabic.pdf
-# Local generator staging - see RESUME.md
 .staging/
+scratch/
