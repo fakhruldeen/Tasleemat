@@ -1,0 +1,63 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "Sustainability and ESG Management Plan",
+    "document_reference": "PMO-04.12.01",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Sustainability_Vision_and_Regulatory_Baseline": {
+            "section": "Sustainability Mandate and Scope",
+            "label": "Sustainability Vision and Regulatory Baseline",
+            "guidance": "The organizational ESG mandate, environmental regulatory frameworks, and statutory compliance standards governing the project.",
+            "value": ""
+        },
+        "f02_Carbon_Footprint_Reduction_Target": {
+            "section": "Sustainability Mandate and Scope",
+            "label": "Carbon Footprint Reduction Target",
+            "guidance": "Quantified greenhouse gas (GHG) emission reduction targets spanning direct execution (Scope 1/2) and supply chain operations (Scope 3).",
+            "value": ""
+        },
+        "f03_Circular_Economy_and_Material_Strategy": {
+            "section": "Sustainability Mandate and Scope",
+            "label": "Circular Economy and Material Strategy",
+            "guidance": "Policies governing zero-waste design, sustainable material selection, energy efficiency, and asset recycling / reuse pathways.",
+            "value": ""
+        },
+        "f04_Social_Impact_and_Community_Engagement": {
+            "section": "Social and Ethical Governance",
+            "label": "Social Impact and Community Engagement",
+            "guidance": "Measures ensuring positive community impact, workforce diversity, labor safety standards, and local stakeholder benefits.",
+            "value": ""
+        },
+        "f05_Ethical_Procurement_and_Supplier_ESG_Standards": {
+            "section": "Social and Ethical Governance",
+            "label": "Ethical Procurement and Supplier ESG Standards",
+            "guidance": "Mandatory vendor qualification criteria regarding human rights, fair labor practices, and sustainable supply chain transparency.",
+            "value": ""
+        },
+        "f06_ESG_Risk_and_Compliance_Monitoring": {
+            "section": "Social and Ethical Governance",
+            "label": "ESG Risk and Compliance Monitoring",
+            "guidance": "Specific environmental and social risk exposures, mitigation plans, and regulatory inspection cadences.",
+            "value": ""
+        },
+        "f07_ESG_Key_Performance_Indicators": {
+            "section": "ESG Metrics and Decommissioning",
+            "label": "ESG Key Performance Indicators",
+            "guidance": "Measurable scorecard tracking energy consumption, carbon offsets, diversity ratios, and ethical audit scores across sprints.",
+            "value": ""
+        },
+        "f08_Sustainable_Decommissioning_and_Handover": {
+            "section": "ESG Metrics and Decommissioning",
+            "label": "Sustainable Decommissioning and Handover",
+            "guidance": "Procedures ensuring environmentally responsible asset disposal, data purging, and ecological post-project decommissioning.",
+            "value": ""
+        },
+        "f09_Sustainability_Audit_Lead_and_Review_Cadence": {
+            "section": "ESG Metrics and Decommissioning",
+            "label": "Sustainability Audit Lead and Review Cadence",
+            "guidance": "The designated sustainability officer accountable for compliance audits and the periodic ESG review schedule.",
+            "value": ""
+        }
+    }
+}

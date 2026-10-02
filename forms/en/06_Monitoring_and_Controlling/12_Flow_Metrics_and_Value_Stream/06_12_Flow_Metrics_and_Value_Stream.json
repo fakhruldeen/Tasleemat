@@ -1,0 +1,63 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "Flow Metrics and Value Stream Dashboard",
+    "document_reference": "PMO-06.12",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Value_Stream_Name_and_Definition": {
+            "section": "Value Stream Parameters",
+            "label": "Value Stream Name and Definition",
+            "guidance": "The specific customer value stream, delivery pipeline, or product domain monitored by this flow dashboard.",
+            "value": ""
+        },
+        "f02_Measurement_Window_and_Interval": {
+            "section": "Value Stream Parameters",
+            "label": "Measurement Window and Interval",
+            "guidance": "The operational reporting period, iteration window, and rolling sample interval evaluated for flow metrics.",
+            "value": ""
+        },
+        "f03_WIP_Limits_and_Work_Categorization": {
+            "section": "Value Stream Parameters",
+            "label": "WIP Limits and Work Categorization",
+            "guidance": "Configured Work in Progress (WIP) caps across workflow stages and item type breakdown (Features, Defect Fixes, Technical Debt, and Risks).",
+            "value": ""
+        },
+        "f04_Lead_Time_and_Cycle_Time_Percentiles": {
+            "section": "Flow Telemetry and Metrics",
+            "label": "Lead Time and Cycle Time Percentiles",
+            "guidance": "50th, 85th, and 95th percentile delivery times from work commitment to customer deployment, highlighting predictability.",
+            "value": ""
+        },
+        "f05_Flow_Efficiency_and_Wait_Time_Ratio": {
+            "section": "Flow Telemetry and Metrics",
+            "label": "Flow Efficiency and Wait Time Ratio",
+            "guidance": "Percentage of total lead time spent in active value-adding touch work versus idle queue/blocking states.",
+            "value": ""
+        },
+        "f06_Throughput_and_Delivery_Velocity": {
+            "section": "Flow Telemetry and Metrics",
+            "label": "Throughput and Delivery Velocity",
+            "guidance": "Completed work items delivered per iteration cycle, indicating steady-state system capacity and throughput stability.",
+            "value": ""
+        },
+        "f07_Flow_Load_and_Work_Age_Health": {
+            "section": "Flow Health and Bottleneck Remediation",
+            "label": "Flow Load and Work Age Health",
+            "guidance": "Inventory of active in-flight items, aging WIP items exceeding the 85th percentile threshold, and systemic work overload.",
+            "value": ""
+        },
+        "f08_Bottleneck_Identification_and_Root_Cause": {
+            "section": "Flow Health and Bottleneck Remediation",
+            "label": "Bottleneck Identification and Root Cause",
+            "guidance": "Specific workflow stage where work accumulates as queue inventory and the underlying process constraint.",
+            "value": ""
+        },
+        "f09_Kaizen_Flow_Optimization_Action": {
+            "section": "Flow Health and Bottleneck Remediation",
+            "label": "Kaizen Flow Optimization Action",
+            "guidance": "Targeted continuous improvement action, WIP constraint adjustment, or dependency unblocking intervention to improve flow.",
+            "value": ""
+        }
+    }
+}

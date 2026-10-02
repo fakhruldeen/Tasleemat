@@ -44,6 +44,7 @@ Select an artifact below to view its comprehensive guide and download the associ
 * **PMO-04.06.03**: [Resource Breakdown Structure](06_Resource/03_Resource_Breakdown_Structure/04_06_03_Resource_Breakdown_Structure_Guide.md)
 * **PMO-04.06.04**: [Responsibility Assignment Matrix](06_Resource/04_Responsibility_Assignment_Matrix/04_06_04_Responsibility_Assignment_Matrix_Guide.md)
 * **PMO-04.06.05**: [Team Charter](06_Resource/05_Team_Charter/04_06_05_Team_Charter_Guide.md)
+* **PMO-04.06.06**: [Team Psychological Safety and Wellbeing Index](06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Guide.md)
 * **PMO-04.07.01**: [Communications Management Plan](07_Communications/01_Communications_Management_Plan/04_07_01_Communications_Management_Plan_Guide.md)
 * **PMO-04.08.01**: [Risk Management Plan](08_Risk/01_Risk_Management_Plan/04_08_01_Risk_Management_Plan_Guide.md)
 * **PMO-04.08.02**: [Risk Register](08_Risk/02_Risk_Register/04_08_02_Risk_Register_Guide.md)
@@ -60,3 +61,4 @@ Select an artifact below to view its comprehensive guide and download the associ
 * **PMO-04.10.01**: [Stakeholder Engagement Plan](10_Stakeholder/01_Stakeholder_Engagement_Plan/04_10_01_Stakeholder_Engagement_Plan_Guide.md)
 * **PMO-04.11.01**: [OCM Strategy and Plan](11_Organizational_Change_Management/01_OCM_Strategy_and_Plan/04_11_01_OCM_Strategy_and_Plan_Guide.md)
 * **PMO-04.11.02**: [Training Plan and Log](11_Organizational_Change_Management/02_Training_Plan_and_Log/04_11_02_Training_Plan_and_Log_Guide.md)
+* **PMO-04.12.01**: [Sustainability and ESG Management Plan](12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.md)

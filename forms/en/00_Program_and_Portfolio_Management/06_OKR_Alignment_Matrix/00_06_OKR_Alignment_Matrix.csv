@@ -1,0 +1,10 @@
+Section,Field,Guidance,LLM_Generated_Value
+Alignment Framework,Strategic Cycle and Horizon,"The corporate planning cycle, fiscal year, and strategic review cadence governing the OKR alignment matrix.",
+Alignment Framework,Enterprise Strategic Objective,The overarching corporate priority or strategic theme this initiative directly advances.,
+Alignment Framework,Portfolio Investment Category,"The investment classification (Strategic Growth, Operational Resilience, Transformative Innovation, or Mandatory Compliance).",
+OKR Mapping and Key Results,Target Key Result ID and Metric,The specific measurable Key Result identifier and target performance metric defined by executive leadership.,
+OKR Mapping and Key Results,Project Deliverable Contribution,"The tangible product capability, system feature, or project milestone directly contributing to Key Result fulfillment.",
+OKR Mapping and Key Results,Leading vs Lagging Indicator,Classification whether the contribution measure provides immediate early progress signals (leading) or final outcome confirmation (lagging).,
+Confidence Tracking and Pivoting,Quarterly Confidence Score,Current subjective confidence rating (0.0 to 1.0) of achieving the Key Result given project execution trajectory.,
+Confidence Tracking and Pivoting,Confidence Variance Rationale,Root-cause explanation for any score degradation or positive acceleration relative to the previous cycle baseline.,
+Confidence Tracking and Pivoting,Strategic Pivot Recommendation,"Mandated strategic intervention, scope adjustment, or resource reallocation if confidence drops below target threshold.",

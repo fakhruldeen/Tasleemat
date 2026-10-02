@@ -100,16 +100,16 @@ flowchart LR
 
 ### 📑 Lifecycle Phase Summary
 
-1. **[00. Program and Portfolio Management](forms/en/00_Program_and_Portfolio_Management/)** (`PMO-00.01` – `PMO-00.05`): Strategic alignment, cross-project dependencies, and resource capacity balancing.
+1. **[00. Program and Portfolio Management](forms/en/00_Program_and_Portfolio_Management/)** (`PMO-00.01` – `PMO-00.06`): Strategic alignment, cross-project dependencies, and resource capacity balancing.
 2. **[01. Business and Value Delivery](forms/en/01_Business_and_Value_Delivery/)** (`PMO-01.01` – `PMO-01.04`): Business cases, benefits realization plans, and value tracking registers.
 3. **[02. Project Approach and Tailoring](forms/en/02_Project_Approach_and_Tailoring/)** (`PMO-02.01` – `PMO-02.06`): Methodology tailoring, AI governance, model cards, and ethics assessments.
 4. **[03. Initiating](forms/en/03_Initiating/)** (`PMO-03.01` – `PMO-03.05`): Project charter, product vision, assumption logs, and stakeholder registers.
-5. **[04. Planning](forms/en/04_Planning/)** (`PMO-04.01.01` – `PMO-04.11.02`): 32 comprehensive planning baselines spanning Integration, Scope (WBS), Schedule, Cost, Quality, Resources, Communications, Risks, Procurement, Stakeholders, and OCM.
+5. **[04. Planning](forms/en/04_Planning/)** (`PMO-04.01.01` – `PMO-04.12.01`): 34 comprehensive planning baselines spanning Integration, Scope (WBS), Schedule, Cost, Quality, Resources, Communications, Risks, Procurement, Stakeholders, and OCM.
 6. **[05. Executing](forms/en/05_Executing/)** (`PMO-05.01` – `PMO-05.12`): Issue logs, change requests, team performance evaluations, retrospectives, and prompt libraries.
-7. **[06. Monitoring and Controlling](forms/en/06_Monitoring_and_Controlling/)** (`PMO-06.01` – `PMO-06.11`): Status reports, variance analysis, Earned Value Analysis (EVA), and UAT sign-offs.
+7. **[06. Monitoring and Controlling](forms/en/06_Monitoring_and_Controlling/)** (`PMO-06.01` – `PMO-06.12`): Status reports, variance analysis, Earned Value Analysis (EVA), and UAT sign-offs.
 8. **[07. Closing](forms/en/07_Closing/)** (`PMO-07.01` – `PMO-07.05`): Contract closeout reports, lessons learned summaries, and operational handover checklists.
 
-*For the complete index of all 98 forms with English/Arabic names and direct links, see **[`LEXICON.md`](LEXICON.md)**.*
+*For the complete index of all 102 forms with English/Arabic names and direct links, see **[`LEXICON.md`](LEXICON.md)**.*
 
 ---
 

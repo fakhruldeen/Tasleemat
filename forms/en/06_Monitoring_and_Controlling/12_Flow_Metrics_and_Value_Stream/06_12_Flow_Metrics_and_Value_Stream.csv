@@ -1,0 +1,10 @@
+Section,Field,Guidance,LLM_Generated_Value
+Value Stream Parameters,Value Stream Name and Definition,"The specific customer value stream, delivery pipeline, or product domain monitored by this flow dashboard.",
+Value Stream Parameters,Measurement Window and Interval,"The operational reporting period, iteration window, and rolling sample interval evaluated for flow metrics.",
+Value Stream Parameters,WIP Limits and Work Categorization,"Configured Work in Progress (WIP) caps across workflow stages and item type breakdown (Features, Defect Fixes, Technical Debt, and Risks).",
+Flow Telemetry and Metrics,Lead Time and Cycle Time Percentiles,"50th, 85th, and 95th percentile delivery times from work commitment to customer deployment, highlighting predictability.",
+Flow Telemetry and Metrics,Flow Efficiency and Wait Time Ratio,Percentage of total lead time spent in active value-adding touch work versus idle queue/blocking states.,
+Flow Telemetry and Metrics,Throughput and Delivery Velocity,"Completed work items delivered per iteration cycle, indicating steady-state system capacity and throughput stability.",
+Flow Health and Bottleneck Remediation,Flow Load and Work Age Health,"Inventory of active in-flight items, aging WIP items exceeding the 85th percentile threshold, and systemic work overload.",
+Flow Health and Bottleneck Remediation,Bottleneck Identification and Root Cause,Specific workflow stage where work accumulates as queue inventory and the underlying process constraint.,
+Flow Health and Bottleneck Remediation,Kaizen Flow Optimization Action,"Targeted continuous improvement action, WIP constraint adjustment, or dependency unblocking intervention to improve flow.",

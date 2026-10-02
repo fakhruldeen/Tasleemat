@@ -10,6 +10,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-00.03** | Interdependency Register | `00_Program_and_Portfolio_Management/03_Interdependency_Register` |
 | **PMO-00.04** | Resource Capacity Matrix | `00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix` |
 | **PMO-00.05** | PMO Maturity Assessment | `00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment` |
+| **PMO-00.06** | OKR Alignment Matrix | `00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix` |
 
 ## Business and Value Delivery
 | Doc ID | Artifact Name | Directory Path |
@@ -75,6 +76,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-04.06.03** | Resource Breakdown Structure | `04_Planning/06_Resource/03_Resource_Breakdown_Structure` |
 | **PMO-04.06.04** | Responsibility Assignment Matrix | `04_Planning/06_Resource/04_Responsibility_Assignment_Matrix` |
 | **PMO-04.06.05** | Team Charter | `04_Planning/06_Resource/05_Team_Charter` |
+| **PMO-04.06.06** | Team Psychological Safety and Wellbeing Index | `04_Planning/06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index` |
 | **PMO-04.07.01** | Communications Management Plan | `04_Planning/07_Communications/01_Communications_Management_Plan` |
 | **PMO-04.08.01** | Risk Management Plan | `04_Planning/08_Risk/01_Risk_Management_Plan` |
 | **PMO-04.08.02** | Risk Register | `04_Planning/08_Risk/02_Risk_Register` |
@@ -91,6 +93,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-04.10.01** | Stakeholder Engagement Plan | `04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan` |
 | **PMO-04.11.01** | OCM Strategy and Plan | `04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan` |
 | **PMO-04.11.02** | Training Plan and Log | `04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log` |
+| **PMO-04.12.01** | Sustainability and ESG Management Plan | `04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan` |
 
 ## Executing
 | Doc ID | Artifact Name | Directory Path |
@@ -122,6 +125,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-06.09** | Vendor Performance Scorecard | `06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard` |
 | **PMO-06.10** | User Acceptance Testing Signoff | `06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff` |
 | **PMO-06.11** | Project Health Check Matrix | `06_Monitoring_and_Controlling/11_Project_Health_Check` |
+| **PMO-06.12** | Flow Metrics and Value Stream Dashboard | `06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream` |
 
 ## Closing
 | Doc ID | Artifact Name | Directory Path |

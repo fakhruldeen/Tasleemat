@@ -1,0 +1,63 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "Team Psychological Safety and Wellbeing Index",
+    "document_reference": "PMO-04.06.06",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Assessment_Period_and_Cadence": {
+            "section": "Assessment Baseline",
+            "label": "Assessment Period and Cadence",
+            "guidance": "The evaluation sprint, sprint cadence, and designated survey period for measuring team psychological safety and cognitive well-being.",
+            "value": ""
+        },
+        "f02_Facilitator_and_Working_Model": {
+            "section": "Assessment Baseline",
+            "label": "Facilitator and Working Model",
+            "guidance": "The designated agile coach, scrum master, or people lead facilitating the assessment, and the team's working arrangement (Co-located, Hybrid, or Fully Remote).",
+            "value": ""
+        },
+        "f03_Team_Response_Participation_Rate": {
+            "section": "Assessment Baseline",
+            "label": "Team Response Participation Rate",
+            "guidance": "The percentage of team members participating in the anonymous assessment to validate sample representation.",
+            "value": ""
+        },
+        "f04_Vulnerability_and_Open_Inquiry_Score": {
+            "section": "Psychological Safety Dimensions",
+            "label": "Vulnerability and Open Inquiry Score",
+            "guidance": "Aggregated rating reflecting team members' comfort in asking questions, admitting mistakes, and seeking help without fear of penalty.",
+            "value": ""
+        },
+        "f05_Constructive_Dissent_and_Innovation_Score": {
+            "section": "Psychological Safety Dimensions",
+            "label": "Constructive Dissent and Innovation Score",
+            "guidance": "Aggregated rating reflecting psychological comfort in challenging assumptions, proposing novel ideas, and offering dissenting views.",
+            "value": ""
+        },
+        "f06_Blameless_Culture_and_Mutual_Support_Score": {
+            "section": "Psychological Safety Dimensions",
+            "label": "Blameless Culture and Mutual Support Score",
+            "guidance": "Aggregated rating reflecting perceived team trust, peer collaboration, and constructive root-cause problem solving.",
+            "value": ""
+        },
+        "f07_Cognitive_Load_and_Overtime_Health": {
+            "section": "Cognitive Load and Well-being",
+            "label": "Cognitive Load and Overtime Health",
+            "guidance": "Quantitative assessment of sustained work pressure, cognitive context-switching frequency, and overtime hours worked.",
+            "value": ""
+        },
+        "f08_Focus_Time_and_Meeting_Load_Ratio": {
+            "section": "Cognitive Load and Well-being",
+            "label": "Focus Time and Meeting Load Ratio",
+            "guidance": "Ratio of uninterrupted deep-work focus time compared to total hours spent in synchronous meetings and ceremonies.",
+            "value": ""
+        },
+        "f09_Well_being_Action_and_Working_Agreement_Update": {
+            "section": "Cognitive Load and Well-being",
+            "label": "Well-being Action and Working Agreement Update",
+            "guidance": "Agreed interventions, meeting hygiene rules, focus-block policies, or team charter amendments enacted to protect team vitality.",
+            "value": ""
+        }
+    }
+}

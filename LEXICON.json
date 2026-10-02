@@ -48,6 +48,14 @@
       "ar_path": "forms/ar/00_إدارة_البرامج_والمحافظ/05_تقييم_نضج_مكتب_إدارة_المشاريع"
     },
     {
+      "code": "PMO-00.06",
+      "english_name": "OKR Alignment Matrix",
+      "arabic_name": "مصفوفة مواءمة الأهداف والنتائج الرئيسية",
+      "pmi_standard_term": "Objectives and Key Results (OKR) / Value Stream Mapping",
+      "en_path": "forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix",
+      "ar_path": "forms/ar/00_إدارة_البرامج_والمحافظ/06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية"
+    },
+    {
       "code": "PMO-01.01",
       "en_name": "Business Case",
       "ar_name": "دراسة الجدوى",
@@ -488,6 +496,14 @@
       "ar_dir": "forms/ar/04_التخطيط/06_الموارد/05_ميثاق_الفريق"
     },
     {
+      "code": "PMO-04.06.06",
+      "english_name": "Team Psychological Safety and Wellbeing Index",
+      "arabic_name": "مؤشر الأمان النفسي وصحة الفريق",
+      "pmi_standard_term": "Team Performance / Psychological Safety & Well-being",
+      "en_path": "forms/en/04_Planning/06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index",
+      "ar_path": "forms/ar/04_التخطيط/06_الموارد/06_مؤشر_الأمان_النفسي_وصحة_الفريق"
+    },
+    {
       "code": "PMO-04.07.01",
       "en_name": "COMMUNICATIONS MANAGEMENT PLAN",
       "ar_name": "خطة إدارة الاتصالات",
@@ -630,6 +646,14 @@
       "subgroup": "11_Organizational_Change_Management",
       "en_dir": "forms/en/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log",
       "ar_dir": "forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/02_خطة_وسجل_التدريب"
+    },
+    {
+      "code": "PMO-04.12.01",
+      "english_name": "Sustainability and ESG Management Plan",
+      "arabic_name": "خطة إدارة الاستدامة والمعايير البيئية والاجتماعية والحوكمة",
+      "pmi_standard_term": "Sustainable Project Management / ESG Integration Plan",
+      "en_path": "forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan",
+      "ar_path": "forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة"
     },
     {
       "code": "PMO-05.01",
@@ -836,6 +860,14 @@
       "pmi_standard_term": "Project Health Check / Stage Gate Audit",
       "en_path": "forms/en/06_Monitoring_and_Controlling/11_Project_Health_Check",
       "ar_path": "forms/ar/06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع"
+    },
+    {
+      "code": "PMO-06.12",
+      "english_name": "Flow Metrics and Value Stream Dashboard",
+      "arabic_name": "لوحة مقاييس التدفق وتدفق القيمة",
+      "pmi_standard_term": "Flow Metrics / Value Stream Telemetry Dashboard",
+      "en_path": "forms/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream",
+      "ar_path": "forms/ar/06_المراقبة_والتحكم/12_مقاييس_التدفق_وتدفق_القيمة"
     },
     {
       "code": "PMO-07.01",

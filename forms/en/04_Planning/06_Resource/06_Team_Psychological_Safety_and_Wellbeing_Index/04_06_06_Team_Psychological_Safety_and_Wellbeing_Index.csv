@@ -1,0 +1,10 @@
+Section,Field,Guidance,LLM_Generated_Value
+Assessment Baseline,Assessment Period and Cadence,"The evaluation sprint, sprint cadence, and designated survey period for measuring team psychological safety and cognitive well-being.",
+Assessment Baseline,Facilitator and Working Model,"The designated agile coach, scrum master, or people lead facilitating the assessment, and the team's working arrangement (Co-located, Hybrid, or Fully Remote).",
+Assessment Baseline,Team Response Participation Rate,The percentage of team members participating in the anonymous assessment to validate sample representation.,
+Psychological Safety Dimensions,Vulnerability and Open Inquiry Score,"Aggregated rating reflecting team members' comfort in asking questions, admitting mistakes, and seeking help without fear of penalty.",
+Psychological Safety Dimensions,Constructive Dissent and Innovation Score,"Aggregated rating reflecting psychological comfort in challenging assumptions, proposing novel ideas, and offering dissenting views.",
+Psychological Safety Dimensions,Blameless Culture and Mutual Support Score,"Aggregated rating reflecting perceived team trust, peer collaboration, and constructive root-cause problem solving.",
+Cognitive Load and Well-being,Cognitive Load and Overtime Health,"Quantitative assessment of sustained work pressure, cognitive context-switching frequency, and overtime hours worked.",
+Cognitive Load and Well-being,Focus Time and Meeting Load Ratio,Ratio of uninterrupted deep-work focus time compared to total hours spent in synchronous meetings and ceremonies.,
+Cognitive Load and Well-being,Well-being Action and Working Agreement Update,"Agreed interventions, meeting hygiene rules, focus-block policies, or team charter amendments enacted to protect team vitality.",

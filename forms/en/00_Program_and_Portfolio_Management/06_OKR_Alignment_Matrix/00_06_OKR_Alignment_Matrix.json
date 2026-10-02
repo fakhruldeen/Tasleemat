@@ -1,0 +1,63 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "OKR Alignment Matrix",
+    "document_reference": "PMO-00.06",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Strategic_Cycle_and_Horizon": {
+            "section": "Alignment Framework",
+            "label": "Strategic Cycle and Horizon",
+            "guidance": "The corporate planning cycle, fiscal year, and strategic review cadence governing the OKR alignment matrix.",
+            "value": ""
+        },
+        "f02_Enterprise_Strategic_Objective": {
+            "section": "Alignment Framework",
+            "label": "Enterprise Strategic Objective",
+            "guidance": "The overarching corporate priority or strategic theme this initiative directly advances.",
+            "value": ""
+        },
+        "f03_Portfolio_Investment_Category": {
+            "section": "Alignment Framework",
+            "label": "Portfolio Investment Category",
+            "guidance": "The investment classification (Strategic Growth, Operational Resilience, Transformative Innovation, or Mandatory Compliance).",
+            "value": ""
+        },
+        "f04_Target_Key_Result_ID_and_Metric": {
+            "section": "OKR Mapping and Key Results",
+            "label": "Target Key Result ID and Metric",
+            "guidance": "The specific measurable Key Result identifier and target performance metric defined by executive leadership.",
+            "value": ""
+        },
+        "f05_Project_Deliverable_Contribution": {
+            "section": "OKR Mapping and Key Results",
+            "label": "Project Deliverable Contribution",
+            "guidance": "The tangible product capability, system feature, or project milestone directly contributing to Key Result fulfillment.",
+            "value": ""
+        },
+        "f06_Leading_vs_Lagging_Indicator": {
+            "section": "OKR Mapping and Key Results",
+            "label": "Leading vs Lagging Indicator",
+            "guidance": "Classification whether the contribution measure provides immediate early progress signals (leading) or final outcome confirmation (lagging).",
+            "value": ""
+        },
+        "f07_Quarterly_Confidence_Score": {
+            "section": "Confidence Tracking and Pivoting",
+            "label": "Quarterly Confidence Score",
+            "guidance": "Current subjective confidence rating (0.0 to 1.0) of achieving the Key Result given project execution trajectory.",
+            "value": ""
+        },
+        "f08_Confidence_Variance_Rationale": {
+            "section": "Confidence Tracking and Pivoting",
+            "label": "Confidence Variance Rationale",
+            "guidance": "Root-cause explanation for any score degradation or positive acceleration relative to the previous cycle baseline.",
+            "value": ""
+        },
+        "f09_Strategic_Pivot_Recommendation": {
+            "section": "Confidence Tracking and Pivoting",
+            "label": "Strategic Pivot Recommendation",
+            "guidance": "Mandated strategic intervention, scope adjustment, or resource reallocation if confidence drops below target threshold.",
+            "value": ""
+        }
+    }
+}

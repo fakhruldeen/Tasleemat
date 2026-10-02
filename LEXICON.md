@@ -1,7 +1,7 @@
 # Project Management Bilingual Lexicon & Forms Catalog
 # المعجم الثنائي لإدارة المشاريع ودليل نماذج تسليمات
 
-> **Standard Alignment:** PMI Lexicon of Project Management Terms, PMBOK® Guide (6th & 7th Editions), and ISO 21500 / ISO 21502.
+> **Standard Alignment:** PMI Lexicon of Project Management Terms, PMBOK® Guide (6th, 7th & 8th Edition Ready), and ISO 21500 / ISO 21502.
 
 ---
 
@@ -21,7 +21,7 @@ Each form directory contains exactly **5 synchronized files**:
 
 ---
 
-## 2. Master Forms Catalog (فهرس النماذج الكامل - 98 نموذجاً)
+## 2. Master Forms Catalog (فهرس النماذج الكامل - 102 نموذجاً)
 
 | Document Code | English Form Name | Official Arabic Translation | English Location | Arabic Location |
 | :--- | :--- | :--- | :--- | :--- |
@@ -30,6 +30,7 @@ Each form directory contains exactly **5 synchronized files**:
 | **PMO-00.03** | [Interdependency Register](forms/en/00_Program_and_Portfolio_Management/03_Interdependency_Register) | [سجل الاعتماديات المتبادلة](forms/ar/00_إدارة_البرامج_والمحافظ/03_سجل_الاعتماديات_المتبادلة) | `forms/en/00_Program_and_Portfolio_Management/03_Interdependency_Register` | `forms/ar/00_إدارة_البرامج_والمحافظ/03_سجل_الاعتماديات_المتبادلة` |
 | **PMO-00.04** | [Resource Capacity Matrix](forms/en/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix) | [مصفوفة سعة الموارد](forms/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد) | `forms/en/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix` | `forms/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد` |
 | **PMO-00.05** | [PMO Maturity Assessment](forms/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment) | [تقييم نضج مكتب إدارة المشاريع](forms/ar/00_إدارة_البرامج_والمحافظ/05_تقييم_نضج_مكتب_إدارة_المشاريع) | `forms/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment` | `forms/ar/00_إدارة_البرامج_والمحافظ/05_تقييم_نضج_مكتب_إدارة_المشاريع` |
+| **PMO-00.06** | [OKR Alignment Matrix](forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix) | [مصفوفة مواءمة الأهداف والنتائج الرئيسية](forms/ar/00_إدارة_البرامج_والمحافظ/06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية) | `forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix` | `forms/ar/00_إدارة_البرامج_والمحافظ/06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية` |
 | **PMO-01.01** | [Business Case](forms/en/01_Business_and_Value_Delivery/01_Business_Case) | [دراسة الجدوى](forms/ar/01_الأعمال_وتسليم_القيمة/01_دراسة_الجدوى_(Business_Case)) | `forms/en/01_Business_and_Value_Delivery/01_Business_Case` | `forms/ar/01_الأعمال_وتسليم_القيمة/01_دراسة_الجدوى_(Business_Case)` |
 | **PMO-01.02** | [Benefits Management Plan](forms/en/01_Business_and_Value_Delivery/02_Benefits_Management_Plan) | [خطة إدارة الفوائد](forms/ar/01_الأعمال_وتسليم_القيمة/02_خطة_إدارة_الفوائد) | `forms/en/01_Business_and_Value_Delivery/02_Benefits_Management_Plan` | `forms/ar/01_الأعمال_وتسليم_القيمة/02_خطة_إدارة_الفوائد` |
 | **PMO-01.03** | [Value Realization Register](forms/en/01_Business_and_Value_Delivery/03_Value_Realization_Register) | [سجل تحقيق القيمة](forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة) | `forms/en/01_Business_and_Value_Delivery/03_Value_Realization_Register` | `forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة` |
@@ -95,6 +96,7 @@ Each form directory contains exactly **5 synchronized files**:
 | **PMO-04.10.01** | [STAKEHOLDER ENGAGEMENT PLAN](forms/en/04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan) | [خطة إشراك المعنيين](forms/ar/04_التخطيط/10_المعنيين/01_خطة_إشراك_المعنيين) | `forms/en/04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan` | `forms/ar/04_التخطيط/10_المعنيين/01_خطة_إشراك_المعنيين` |
 | **PMO-04.11.01** | [OCM Strategy and Plan](forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan) | [استراتيجية وخطة إدارة التغيير المؤسسي](forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي) | `forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan` | `forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي` |
 | **PMO-04.11.02** | [Training Plan and Log](forms/en/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log) | [خطة وسجل التدريب](forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/02_خطة_وسجل_التدريب) | `forms/en/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log` | `forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/02_خطة_وسجل_التدريب` |
+| **PMO-04.12.01** | [Sustainability and ESG Management Plan](forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan) | [خطة إدارة الاستدامة والمعايير البيئية والاجتماعية والحوكمة](forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة) | `forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan` | `forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة` |
 | **PMO-05.01** | [ISSUE LOG](forms/en/05_Executing/01_Issue_Log) | [سجل المشكلات](forms/ar/05_التنفيذ/01_سجل_المشكلات) | `forms/en/05_Executing/01_Issue_Log` | `forms/ar/05_التنفيذ/01_سجل_المشكلات` |
 | **PMO-05.02** | [DECISION LOG](forms/en/05_Executing/02_Decision_Log) | [سجل القرارات](forms/ar/05_التنفيذ/02_سجل_القرارات) | `forms/en/05_Executing/02_Decision_Log` | `forms/ar/05_التنفيذ/02_سجل_القرارات` |
 | **PMO-05.03** | [CHANGE REQUEST](forms/en/05_Executing/03_Change_Request) | [طلب تغيير](forms/ar/05_التنفيذ/03_طلب_تغيير) | `forms/en/05_Executing/03_Change_Request` | `forms/ar/05_التنفيذ/03_طلب_تغيير` |
@@ -183,7 +185,7 @@ Each form directory contains exactly **5 synchronized files**:
 | Role (EN) | المسمى الوظيفي بالعربية | Governance Responsibility & Templates Signed |
 | :--- | :--- | :--- |
 | **Project Sponsor** | راعي المشروع | Project Charter (03.01), Business Case (01.01), Project Closeout (07.03), Scope Baseline (04.02.05). |
-| **Project Manager** | مدير المشروع | Operational owner across all 98 forms; responsible for preparation, execution tracking, and sign-offs. |
+| **Project Manager** | مدير المشروع | Operational owner across all 102 forms; responsible for preparation, execution tracking, and sign-offs. |
 | **Finance Controller / CFO** | المراقب المالي / المدير المالي | Cost Management Plan (04.04.01), Cost Baseline (04.04.04), Procurement Strategy (04.09.02), Contract Closeout (07.02). |
 | **CCB Chair** | رئيس مجلس ضبط التغيير | Change Management Plan (04.01.02), Change Requests (05.03), Change Log (05.04). |
 | **Quality Assurance Lead** | مسؤول ضمان الجودة | Quality Management Plan (04.05.01), Quality Metrics (04.05.02), Quality Audit (05.05), Product Acceptance (06.08). |
