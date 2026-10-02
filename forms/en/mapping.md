@@ -9,6 +9,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-00.02** | Program Charter | `00_Program_and_Portfolio_Management/02_Program_Charter` |
 | **PMO-00.03** | Interdependency Register | `00_Program_and_Portfolio_Management/03_Interdependency_Register` |
 | **PMO-00.04** | Resource Capacity Matrix | `00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix` |
+| **PMO-00.05** | PMO Maturity Assessment | `00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment` |
 
 ## Business and Value Delivery
 | Doc ID | Artifact Name | Directory Path |
@@ -16,6 +17,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-01.01** | Business Case | `01_Business_and_Value_Delivery/01_Business_Case` |
 | **PMO-01.02** | Benefits Management Plan | `01_Business_and_Value_Delivery/02_Benefits_Management_Plan` |
 | **PMO-01.03** | Value Realization Register | `01_Business_and_Value_Delivery/03_Value_Realization_Register` |
+| **PMO-01.04** | Gap Analysis Report | `01_Business_and_Value_Delivery/04_Gap_Analysis_Report` |
 
 ## Project Approach and Tailoring
 | Doc ID | Artifact Name | Directory Path |
@@ -119,6 +121,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-06.08** | Product Acceptance Form | `06_Monitoring_and_Controlling/08_Product_Acceptance_Form` |
 | **PMO-06.09** | Vendor Performance Scorecard | `06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard` |
 | **PMO-06.10** | User Acceptance Testing Signoff | `06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff` |
+| **PMO-06.11** | Project Health Check Matrix | `06_Monitoring_and_Controlling/11_Project_Health_Check` |
 
 ## Closing
 | Doc ID | Artifact Name | Directory Path |
@@ -127,4 +130,5 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-07.02** | Contract Closeout Report | `07_Closing/02_Contract_Closeout_Report` |
 | **PMO-07.03** | Project or Phase Closeout Report | `07_Closing/03_Project_or_Phase_Closeout` |
 | **PMO-07.04** | Transition to Operations Checklist | `07_Closing/04_Transition_to_Operations_Checklist` |
+| **PMO-07.05** | Post-Implementation Review Report | `07_Closing/05_Post_Implementation_Review` |
 

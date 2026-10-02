@@ -222,4 +222,18 @@ nav_order: 1
 | [07 04 قائمة التحقق للانتقال إلى العمليات](./07_الإغلاق/04_قائمة_التحقق_للانتقال_إلى_العمليات/07_04_قائمة_التحقق_للانتقال_إلى_العمليات.md) | [Transition to Operations Checklist](../07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist.md) |
 
 
+
+| [00 05 تقييم نضج مكتب إدارة المشاريع](./00_إدارة_البرامج_والمحافظ/05_تقييم_نضج_مكتب_إدارة_المشاريع/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_دليل.md) | [PMO Maturity Assessment](../00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment_Guide.md) |
+| [00 05 تقييم نضج مكتب إدارة المشاريع](./00_إدارة_البرامج_والمحافظ/05_تقييم_نضج_مكتب_إدارة_المشاريع/00_05_تقييم_نضج_مكتب_إدارة_المشاريع.md) | [PMO Maturity Assessment](../00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment.md) |
+| [00 05 تقييم نضج مكتب إدارة المشاريع](./00_إدارة_البرامج_والمحافظ/05_تقييم_نضج_مكتب_إدارة_المشاريع/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_قالب.md) | [PMO Maturity Assessment](../00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment_Template.md) |
+| [01 04 تقرير تحليل الفجوات](./01_الأعمال_وتسليم_القيمة/04_تقرير_تحليل_الفجوات/01_04_تقرير_تحليل_الفجوات_دليل.md) | [Gap Analysis Report](../01_Business_and_Value_Delivery/04_Gap_Analysis_Report/01_04_Gap_Analysis_Report_Guide.md) |
+| [01 04 تقرير تحليل الفجوات](./01_الأعمال_وتسليم_القيمة/04_تقرير_تحليل_الفجوات/01_04_تقرير_تحليل_الفجوات.md) | [Gap Analysis Report](../01_Business_and_Value_Delivery/04_Gap_Analysis_Report/01_04_Gap_Analysis_Report.md) |
+| [01 04 تقرير تحليل الفجوات](./01_الأعمال_وتسليم_القيمة/04_تقرير_تحليل_الفجوات/01_04_تقرير_تحليل_الفجوات_قالب.md) | [Gap Analysis Report](../01_Business_and_Value_Delivery/04_Gap_Analysis_Report/01_04_Gap_Analysis_Report_Template.md) |
+| [06 11 مصفوفة الفحص الصحي للمشروع](./06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع/06_11_الفحص_الصحي_للمشروع_دليل.md) | [Project Health Check Matrix](../06_Monitoring_and_Controlling/11_Project_Health_Check/06_11_Project_Health_Check_Guide.md) |
+| [06 11 مصفوفة الفحص الصحي للمشروع](./06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع/06_11_الفحص_الصحي_للمشروع.md) | [Project Health Check Matrix](../06_Monitoring_and_Controlling/11_Project_Health_Check/06_11_Project_Health_Check.md) |
+| [06 11 مصفوفة الفحص الصحي للمشروع](./06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع/06_11_الفحص_الصحي_للمشروع_قالب.md) | [Project Health Check Matrix](../06_Monitoring_and_Controlling/11_Project_Health_Check/06_11_Project_Health_Check_Template.md) |
+| [07 05 تقرير مراجعة ما بعد التنفيذ](./07_الإغلاق/05_مراجعة_ما_بعد_التنفيذ/07_05_مراجعة_ما_بعد_التنفيذ_دليل.md) | [Post-Implementation Review Report](../07_Closing/05_Post_Implementation_Review/07_05_Post_Implementation_Review_Guide.md) |
+| [07 05 تقرير مراجعة ما بعد التنفيذ](./07_الإغلاق/05_مراجعة_ما_بعد_التنفيذ/07_05_مراجعة_ما_بعد_التنفيذ.md) | [Post-Implementation Review Report](../07_Closing/05_Post_Implementation_Review/07_05_Post_Implementation_Review.md) |
+| [07 05 تقرير مراجعة ما بعد التنفيذ](./07_الإغلاق/05_مراجعة_ما_بعد_التنفيذ/07_05_مراجعة_ما_بعد_التنفيذ_قالب.md) | [Post-Implementation Review Report](../07_Closing/05_Post_Implementation_Review/07_05_Post_Implementation_Review_Template.md) |
+
 </div>

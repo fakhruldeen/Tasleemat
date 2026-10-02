@@ -1,0 +1,81 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "Project Health Check Matrix",
+    "document_reference": "PMO-06.11",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Review_Purpose_and_Milestone_Stage": {
+            "section": "Review Context",
+            "label": "Review Purpose and Milestone Stage",
+            "guidance": "The objective of the independent health review and the project lifecycle phase or gate at which it is conducted.",
+            "value": ""
+        },
+        "f02_Lead_Reviewer_and_Assessment_Date": {
+            "section": "Review Context",
+            "label": "Lead Reviewer and Assessment Date",
+            "guidance": "The independent PMO auditor or assurance lead conducting the review and the inspection date.",
+            "value": ""
+        },
+        "f03_Overall_Health_Rating": {
+            "section": "Review Context",
+            "label": "Overall Health Rating",
+            "guidance": "The synthesized overall health score (Red, Amber, or Green) representing aggregate delivery confidence.",
+            "value": ""
+        },
+        "f04_Governance_and_Sponsorship_Health": {
+            "section": "Dimension Health Scores",
+            "label": "Governance and Sponsorship Health",
+            "guidance": "Health rating and findings on steering committee engagement, decision timeliness, and charter mandate.",
+            "value": ""
+        },
+        "f05_Scope_and_Change_Control_Health": {
+            "section": "Dimension Health Scores",
+            "label": "Scope and Change Control Health",
+            "guidance": "Health rating and findings on baseline stability, scope creep control, and change request rigor.",
+            "value": ""
+        },
+        "f06_Schedule_and_Milestone_Health": {
+            "section": "Dimension Health Scores",
+            "label": "Schedule and Milestone Health",
+            "guidance": "Health rating and findings on critical path adherence, milestone float, and delivery velocity.",
+            "value": ""
+        },
+        "f07_Cost_and_Budget_Variance_Health": {
+            "section": "Dimension Health Scores",
+            "label": "Cost and Budget Variance Health",
+            "guidance": "Health rating and findings on earned value metrics (CPI), cost variance, and EAC forecast credibility.",
+            "value": ""
+        },
+        "f08_Risk_and_Issue_Exposure_Health": {
+            "section": "Dimension Health Scores",
+            "label": "Risk and Issue Exposure Health",
+            "guidance": "Health rating and findings on risk register currency, mitigation effectiveness, and unresolved issues.",
+            "value": ""
+        },
+        "f09_Stakeholder_and_Team_Health": {
+            "section": "Dimension Health Scores",
+            "label": "Stakeholder and Team Health",
+            "guidance": "Health rating and findings on team morale, resourcing levels, and stakeholder satisfaction.",
+            "value": ""
+        },
+        "f10_Critical_Finding_Description": {
+            "section": "Remediation Action Plan",
+            "label": "Critical Finding Description",
+            "guidance": "Key vulnerability or red-flag issue identified during the health check audit.",
+            "value": ""
+        },
+        "f11_Mandated_Corrective_Action": {
+            "section": "Remediation Action Plan",
+            "label": "Mandated Corrective Action",
+            "guidance": "Specific remedial intervention required to return the project domain to acceptable performance.",
+            "value": ""
+        },
+        "f12_Remediation_Owner_and_Due_Date": {
+            "section": "Remediation Action Plan",
+            "label": "Remediation Owner and Due Date",
+            "guidance": "The assigned individual accountable for corrective action execution and the strict due date.",
+            "value": ""
+        }
+    }
+}

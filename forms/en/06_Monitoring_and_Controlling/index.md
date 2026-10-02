@@ -20,3 +20,4 @@ Select an artifact below to view its comprehensive guide and download the associ
 * **PMO-06.08**: [Product Acceptance Form](08_Product_Acceptance_Form/06_08_Product_Acceptance_Form_Guide.md)
 * **PMO-06.09**: [Vendor Performance Scorecard](09_Vendor_Performance_Scorecard/06_09_Vendor_Performance_Scorecard_Guide.md)
 * **PMO-06.10**: [User Acceptance Testing Signoff](10_User_Acceptance_Testing_Signoff/06_10_User_Acceptance_Testing_Signoff_Guide.md)
+* **PMO-06.11**: [Project Health Check Matrix](11_Project_Health_Check/06_11_Project_Health_Check_Guide.md)

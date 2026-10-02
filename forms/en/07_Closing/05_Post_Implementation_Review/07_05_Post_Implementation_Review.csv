@@ -1,0 +1,9 @@
+Section,Field,Guidance,LLM_Generated_Value
+Review Context,Review Purpose and Evaluation Period,The post-handover evaluation objectives and the operating timeframe assessed (typically 3 to 6 months post go-live).,
+Review Context,Lead Evaluator and Date,The designated business assurance lead or PMO evaluator conducting the review and the completion date.,
+Benefits Realization Assessment,Planned vs Realized Benefits,Quantitative comparison of financial and operational benefits realized in steady-state operations versus business case projections.,
+Benefits Realization Assessment,Operational Adoption Rate,"Metrics reflecting user adoption, system throughput, and behavioral integration into routine operations.",
+Operational Transition and Stability,Operational Stability and Support,"Assessment of post-transition SLA adherence, support ticket volume, and operational maintenance handover efficacy.",
+Operational Transition and Stability,Outstanding Issues and Technical Debt,"Inventory of lingering operational bugs, unresolved defects, or technical debt requiring long-term maintenance.",
+Long-Term Insights and Recommendations,Strategic Lessons Learned,"High-level strategic insights on solution viability, change management effectiveness, and business model impact.",
+Long-Term Insights and Recommendations,Ongoing Optimization Recommendations,"Prescriptive guidance for continuous optimization, future phase enhancements, and long-term capability extension.",

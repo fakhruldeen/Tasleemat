@@ -1,0 +1,75 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "PMO Maturity Assessment",
+    "document_reference": "PMO-00.05",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Assessment_Purpose_and_Scope": {
+            "section": "Assessment Context",
+            "label": "Assessment Purpose and Scope",
+            "guidance": "What this PMO maturity assessment covers, the organizational boundaries evaluated, and the strategic improvement rationale behind the exercise.",
+            "value": ""
+        },
+        "f02_Assessment_Lead_and_Date": {
+            "section": "Assessment Context",
+            "label": "Assessment Lead and Date",
+            "guidance": "The designated assessor or governance review team accountable for the evaluation, and the baseline assessment completion date.",
+            "value": ""
+        },
+        "f03_Target_Maturity_Level": {
+            "section": "Assessment Context",
+            "label": "Target Maturity Level",
+            "guidance": "The desired future maturity tier (Levels 1 to 5) targeted by the PMO across defined strategic planning horizons.",
+            "value": ""
+        },
+        "f04_Governance_and_Strategy_Alignment": {
+            "section": "Dimension Scoring",
+            "label": "Governance and Strategy Alignment",
+            "guidance": "Scored capability rating and evidentiary findings regarding portfolio decision-making, strategic prioritization, and executive reporting alignment.",
+            "value": ""
+        },
+        "f05_Delivery_Support_and_Methodology": {
+            "section": "Dimension Scoring",
+            "label": "Delivery Support and Methodology",
+            "guidance": "Scored capability rating and evidentiary findings regarding standard delivery framework adoption, lifecycle gates, and PM coaching support.",
+            "value": ""
+        },
+        "f06_People_and_Competency_Development": {
+            "section": "Dimension Scoring",
+            "label": "People and Competency Development",
+            "guidance": "Scored capability rating and evidentiary findings regarding project management professional pathways, mentoring programs, and training curricula.",
+            "value": ""
+        },
+        "f07_Performance_and_Reporting": {
+            "section": "Dimension Scoring",
+            "label": "Performance and Reporting",
+            "guidance": "Scored capability rating and evidentiary findings regarding milestone tracking, earned value visibility, variance logging, and KPI reporting.",
+            "value": ""
+        },
+        "f08_Tools_and_Technology_Ecosystem": {
+            "section": "Dimension Scoring",
+            "label": "Tools and Technology Ecosystem",
+            "guidance": "Scored capability rating and evidentiary findings regarding PMIS tooling integration, workflow automation, and collaborative repository usage.",
+            "value": ""
+        },
+        "f09_Capability_Gap_Description": {
+            "section": "Improvement Roadmap",
+            "label": "Capability Gap Description",
+            "guidance": "The specific operational or structural gap separating current maturity performance from target capability requirements.",
+            "value": ""
+        },
+        "f10_Improvement_Initiative": {
+            "section": "Improvement Roadmap",
+            "label": "Improvement Initiative",
+            "guidance": "The prioritized transformative action, process overhaul, or technology deployment planned to close the identified capability gap.",
+            "value": ""
+        },
+        "f11_Initiative_Owner_and_Timeline": {
+            "section": "Improvement Roadmap",
+            "label": "Initiative Owner and Timeline",
+            "guidance": "The accountable individual responsible for delivery and the committed milestone completion date for the improvement initiative.",
+            "value": ""
+        }
+    }
+}

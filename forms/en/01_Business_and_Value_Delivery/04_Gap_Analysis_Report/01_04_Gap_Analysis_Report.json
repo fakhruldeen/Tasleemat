@@ -1,0 +1,69 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "Gap Analysis Report",
+    "document_reference": "PMO-01.04",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Analysis_Objective_and_Scope": {
+            "section": "Analysis Context",
+            "label": "Analysis Objective and Scope",
+            "guidance": "The strategic purpose and organizational business domain boundaries evaluated by this gap analysis.",
+            "value": ""
+        },
+        "f02_Current_State_Summary": {
+            "section": "Analysis Context",
+            "label": "Current State Summary",
+            "guidance": "Executive summary of the baseline operating model, legacy systems, and existing operational capabilities.",
+            "value": ""
+        },
+        "f03_Desired_Target_State": {
+            "section": "Analysis Context",
+            "label": "Desired Target State",
+            "guidance": "The envisioned future operating state, target business architecture, and required capability levels.",
+            "value": ""
+        },
+        "f04_Functional_and_Process_Gaps": {
+            "section": "Gap Evaluation Matrix",
+            "label": "Functional and Process Gaps",
+            "guidance": "Specific discrepancies identified between current operational workflows and target process efficiency standards.",
+            "value": ""
+        },
+        "f05_Technical_and_Systems_Gaps": {
+            "section": "Gap Evaluation Matrix",
+            "label": "Technical and Systems Gaps",
+            "guidance": "Deficiencies in current software infrastructure, data architecture, security tooling, and integration capabilities.",
+            "value": ""
+        },
+        "f06_People_and_Competency_Gaps": {
+            "section": "Gap Evaluation Matrix",
+            "label": "People and Competency Gaps",
+            "guidance": "Human capital deficiencies, staffing shortages, and technical skill gaps required to sustain the target state.",
+            "value": ""
+        },
+        "f07_Risk_and_Business_Impact": {
+            "section": "Gap Evaluation Matrix",
+            "label": "Risk and Business Impact",
+            "guidance": "The quantified operational risk, revenue exposure, and strategic impact of leaving identified gaps unaddressed.",
+            "value": ""
+        },
+        "f08_Closure_Initiative_Description": {
+            "section": "Remediation Strategy",
+            "label": "Closure Initiative Description",
+            "guidance": "The specific project, enhancement sprint, or restructuring action designed to bridge the capability gap.",
+            "value": ""
+        },
+        "f09_Priority_and_Execution_Feasibility": {
+            "section": "Remediation Strategy",
+            "label": "Priority and Execution Feasibility",
+            "guidance": "The implementation urgency (Urgent/High/Medium/Low) and technical/financial execution feasibility rating.",
+            "value": ""
+        },
+        "f10_Assigned_Owner_and_Target_Date": {
+            "section": "Remediation Strategy",
+            "label": "Assigned Owner and Target Date",
+            "guidance": "The accountable business lead and committed milestone target date for closing the capability gap.",
+            "value": ""
+        }
+    }
+}

@@ -13,3 +13,4 @@ Select an artifact below to view its comprehensive guide and download the associ
 * **PMO-01.01**: [Business Case](01_Business_Case/01_01_Business_Case_Guide.md)
 * **PMO-01.02**: [Benefits Management Plan](02_Benefits_Management_Plan/01_02_Benefits_Management_Plan_Guide.md)
 * **PMO-01.03**: [Value Realization Register](03_Value_Realization_Register/01_03_Value_Realization_Register_Guide.md)
+* **PMO-01.04**: [Gap Analysis Report](04_Gap_Analysis_Report/01_04_Gap_Analysis_Report_Guide.md)

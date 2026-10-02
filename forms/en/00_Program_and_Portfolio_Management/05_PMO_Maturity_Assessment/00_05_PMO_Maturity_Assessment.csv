@@ -1,0 +1,12 @@
+Section,Field,Guidance,LLM_Generated_Value
+Assessment Context,Assessment Purpose and Scope,"What this PMO maturity assessment covers, the organizational boundaries evaluated, and the strategic improvement rationale behind the exercise.",
+Assessment Context,Assessment Lead and Date,"The designated assessor or governance review team accountable for the evaluation, and the baseline assessment completion date.",
+Assessment Context,Target Maturity Level,The desired future maturity tier (Levels 1 to 5) targeted by the PMO across defined strategic planning horizons.,
+Dimension Scoring,Governance and Strategy Alignment,"Scored capability rating and evidentiary findings regarding portfolio decision-making, strategic prioritization, and executive reporting alignment.",
+Dimension Scoring,Delivery Support and Methodology,"Scored capability rating and evidentiary findings regarding standard delivery framework adoption, lifecycle gates, and PM coaching support.",
+Dimension Scoring,People and Competency Development,"Scored capability rating and evidentiary findings regarding project management professional pathways, mentoring programs, and training curricula.",
+Dimension Scoring,Performance and Reporting,"Scored capability rating and evidentiary findings regarding milestone tracking, earned value visibility, variance logging, and KPI reporting.",
+Dimension Scoring,Tools and Technology Ecosystem,"Scored capability rating and evidentiary findings regarding PMIS tooling integration, workflow automation, and collaborative repository usage.",
+Improvement Roadmap,Capability Gap Description,The specific operational or structural gap separating current maturity performance from target capability requirements.,
+Improvement Roadmap,Improvement Initiative,"The prioritized transformative action, process overhaul, or technology deployment planned to close the identified capability gap.",
+Improvement Roadmap,Initiative Owner and Timeline,The accountable individual responsible for delivery and the committed milestone completion date for the improvement initiative.,

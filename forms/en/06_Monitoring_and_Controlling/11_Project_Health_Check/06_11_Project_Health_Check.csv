@@ -1,0 +1,13 @@
+Section,Field,Guidance,LLM_Generated_Value
+Review Context,Review Purpose and Milestone Stage,The objective of the independent health review and the project lifecycle phase or gate at which it is conducted.,
+Review Context,Lead Reviewer and Assessment Date,The independent PMO auditor or assurance lead conducting the review and the inspection date.,
+Review Context,Overall Health Rating,"The synthesized overall health score (Red, Amber, or Green) representing aggregate delivery confidence.",
+Dimension Health Scores,Governance and Sponsorship Health,"Health rating and findings on steering committee engagement, decision timeliness, and charter mandate.",
+Dimension Health Scores,Scope and Change Control Health,"Health rating and findings on baseline stability, scope creep control, and change request rigor.",
+Dimension Health Scores,Schedule and Milestone Health,"Health rating and findings on critical path adherence, milestone float, and delivery velocity.",
+Dimension Health Scores,Cost and Budget Variance Health,"Health rating and findings on earned value metrics (CPI), cost variance, and EAC forecast credibility.",
+Dimension Health Scores,Risk and Issue Exposure Health,"Health rating and findings on risk register currency, mitigation effectiveness, and unresolved issues.",
+Dimension Health Scores,Stakeholder and Team Health,"Health rating and findings on team morale, resourcing levels, and stakeholder satisfaction.",
+Remediation Action Plan,Critical Finding Description,Key vulnerability or red-flag issue identified during the health check audit.,
+Remediation Action Plan,Mandated Corrective Action,Specific remedial intervention required to return the project domain to acceptable performance.,
+Remediation Action Plan,Remediation Owner and Due Date,The assigned individual accountable for corrective action execution and the strict due date.,

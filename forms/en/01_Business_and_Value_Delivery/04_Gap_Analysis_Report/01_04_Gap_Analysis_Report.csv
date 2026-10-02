@@ -1,0 +1,11 @@
+Section,Field,Guidance,LLM_Generated_Value
+Analysis Context,Analysis Objective and Scope,The strategic purpose and organizational business domain boundaries evaluated by this gap analysis.,
+Analysis Context,Current State Summary,"Executive summary of the baseline operating model, legacy systems, and existing operational capabilities.",
+Analysis Context,Desired Target State,"The envisioned future operating state, target business architecture, and required capability levels.",
+Gap Evaluation Matrix,Functional and Process Gaps,Specific discrepancies identified between current operational workflows and target process efficiency standards.,
+Gap Evaluation Matrix,Technical and Systems Gaps,"Deficiencies in current software infrastructure, data architecture, security tooling, and integration capabilities.",
+Gap Evaluation Matrix,People and Competency Gaps,"Human capital deficiencies, staffing shortages, and technical skill gaps required to sustain the target state.",
+Gap Evaluation Matrix,Risk and Business Impact,"The quantified operational risk, revenue exposure, and strategic impact of leaving identified gaps unaddressed.",
+Remediation Strategy,Closure Initiative Description,"The specific project, enhancement sprint, or restructuring action designed to bridge the capability gap.",
+Remediation Strategy,Priority and Execution Feasibility,The implementation urgency (Urgent/High/Medium/Low) and technical/financial execution feasibility rating.,
+Remediation Strategy,Assigned Owner and Target Date,The accountable business lead and committed milestone target date for closing the capability gap.,

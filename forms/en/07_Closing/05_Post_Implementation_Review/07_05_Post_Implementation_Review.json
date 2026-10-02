@@ -1,0 +1,57 @@
+{
+    "_llm_instructions": "Fill in the 'project_title' and 'date_prepared' properties, and the 'value' property of each field, based on the provided project context. Reference parameters.md for global project variables.",
+    "form_name": "Post-Implementation Review Report",
+    "document_reference": "PMO-07.05",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Review_Purpose_and_Evaluation_Period": {
+            "section": "Review Context",
+            "label": "Review Purpose and Evaluation Period",
+            "guidance": "The post-handover evaluation objectives and the operating timeframe assessed (typically 3 to 6 months post go-live).",
+            "value": ""
+        },
+        "f02_Lead_Evaluator_and_Date": {
+            "section": "Review Context",
+            "label": "Lead Evaluator and Date",
+            "guidance": "The designated business assurance lead or PMO evaluator conducting the review and the completion date.",
+            "value": ""
+        },
+        "f03_Planned_vs_Realized_Benefits": {
+            "section": "Benefits Realization Assessment",
+            "label": "Planned vs Realized Benefits",
+            "guidance": "Quantitative comparison of financial and operational benefits realized in steady-state operations versus business case projections.",
+            "value": ""
+        },
+        "f04_Operational_Adoption_Rate": {
+            "section": "Benefits Realization Assessment",
+            "label": "Operational Adoption Rate",
+            "guidance": "Metrics reflecting user adoption, system throughput, and behavioral integration into routine operations.",
+            "value": ""
+        },
+        "f05_Operational_Stability_and_Support": {
+            "section": "Operational Transition and Stability",
+            "label": "Operational Stability and Support",
+            "guidance": "Assessment of post-transition SLA adherence, support ticket volume, and operational maintenance handover efficacy.",
+            "value": ""
+        },
+        "f06_Outstanding_Issues_and_Technical_Debt": {
+            "section": "Operational Transition and Stability",
+            "label": "Outstanding Issues and Technical Debt",
+            "guidance": "Inventory of lingering operational bugs, unresolved defects, or technical debt requiring long-term maintenance.",
+            "value": ""
+        },
+        "f07_Strategic_Lessons_Learned": {
+            "section": "Long-Term Insights and Recommendations",
+            "label": "Strategic Lessons Learned",
+            "guidance": "High-level strategic insights on solution viability, change management effectiveness, and business model impact.",
+            "value": ""
+        },
+        "f08_Ongoing_Optimization_Recommendations": {
+            "section": "Long-Term Insights and Recommendations",
+            "label": "Ongoing Optimization Recommendations",
+            "guidance": "Prescriptive guidance for continuous optimization, future phase enhancements, and long-term capability extension.",
+            "value": ""
+        }
+    }
+}

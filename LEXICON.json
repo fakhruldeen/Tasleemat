@@ -40,6 +40,14 @@
       "ar_dir": "forms/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد"
     },
     {
+      "code": "PMO-00.05",
+      "english_name": "PMO Maturity Assessment",
+      "arabic_name": "تقييم نضج مكتب إدارة المشاريع",
+      "pmi_standard_term": "PMO Maturity Model / Capability Assessment",
+      "en_path": "forms/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment",
+      "ar_path": "forms/ar/00_إدارة_البرامج_والمحافظ/05_تقييم_نضج_مكتب_إدارة_المشاريع"
+    },
+    {
       "code": "PMO-01.01",
       "en_name": "Business Case",
       "ar_name": "دراسة الجدوى",
@@ -65,6 +73,14 @@
       "subgroup": "",
       "en_dir": "forms/en/01_Business_and_Value_Delivery/03_Value_Realization_Register",
       "ar_dir": "forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة"
+    },
+    {
+      "code": "PMO-01.04",
+      "english_name": "Gap Analysis Report",
+      "arabic_name": "تقرير تحليل الفجوات",
+      "pmi_standard_term": "Gap Analysis / Needs Assessment",
+      "en_path": "forms/en/01_Business_and_Value_Delivery/04_Gap_Analysis_Report",
+      "ar_path": "forms/ar/01_الأعمال_وتسليم_القيمة/04_تقرير_تحليل_الفجوات"
     },
     {
       "code": "PMO-02.01",
@@ -814,6 +830,14 @@
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)"
     },
     {
+      "code": "PMO-06.11",
+      "english_name": "Project Health Check Matrix",
+      "arabic_name": "مصفوفة الفحص الصحي للمشروع",
+      "pmi_standard_term": "Project Health Check / Stage Gate Audit",
+      "en_path": "forms/en/06_Monitoring_and_Controlling/11_Project_Health_Check",
+      "ar_path": "forms/ar/06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع"
+    },
+    {
       "code": "PMO-07.01",
       "en_name": "LESSONS LEARNED SUMMARY",
       "ar_name": "ملخص الدروس المستفادة",
@@ -848,6 +872,14 @@
       "subgroup": "",
       "en_dir": "forms/en/07_Closing/04_Transition_to_Operations_Checklist",
       "ar_dir": "forms/ar/07_الإغلاق/04_قائمة_التحقق_للانتقال_إلى_العمليات"
+    },
+    {
+      "code": "PMO-07.05",
+      "english_name": "Post-Implementation Review Report",
+      "arabic_name": "تقرير مراجعة ما بعد التنفيذ",
+      "pmi_standard_term": "Post-Implementation Review (PIR) / Benefits Realization Audit",
+      "en_path": "forms/en/07_Closing/05_Post_Implementation_Review",
+      "ar_path": "forms/ar/07_الإغلاق/05_مراجعة_ما_بعد_التنفيذ"
     }
   ]
 }
