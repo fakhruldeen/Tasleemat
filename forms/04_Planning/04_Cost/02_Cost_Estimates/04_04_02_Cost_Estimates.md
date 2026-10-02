@@ -1,38 +1,68 @@
 ---
 lang: en
-Form: COST ESTIMATES (Instructions)
+Form: Cost Estimates (Instructions)
 ---
 
-# COST ESTIMATES - LLM GENERATION GUIDE
+# Cost Estimates - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `COST ESTIMATES`. When asked to populate this form, generate an array of objects representing the cost estimate tabular data.
+<!--
+System Instructions: This document contains instructions for generating the
+«Cost Estimates». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> Cost estimates provide information on the cost of resources necessary to complete project work, including labor, equipment, supplies, services, facilities, and material. Estimates can be determined by developing an approximation for each work package using expert judgment or by using quantitative methods. It is an output from the process 7.2 Estimate Costs in the PMBOK® Guide.
-> 
+> **Context and Definition:**
+> A comprehensive financial document containing quantitative assessments of the probable costs of resources required to complete project activities.
+
 > **Alignment:**
-> The cost estimates should be aligned and consistent with the following documents:
-• Assumption log
-• Activity attributes
-• Project schedule
-• Resource requirements
-• Project team assignments
+> Feeds directly into Cost Baseline, Cost Estimating Worksheet, Procurement Budget, and Risk Contingency planning.
 
 ---
 
-### Table: Activity Cost Estimates
-**Instruction:** Generate a comprehensive tabular list of activity cost estimates incorporating labor, physical resources, and reserves.
+## Activity and Work Package Cost Breakdown
 
-**Columns Definition:**
-*   **ID:** Unique identifier, such as the WBS ID or activity ID.
-*   **Resource:** The resource (person, equipment, material) needed for the deliverable.
-*   **Labor Costs:** The costs associated with team or outsourced resources.
-*   **Physical Costs:** Costs associated with material, equipment, supplies, or other physical resources.
-*   **Reserve:** Document contingency reserve amounts, if any.
-*   **Estimate:** The sum of the cost of labor, physical resources, and reserve costs.
-*   **Basis of Estimates:** Information such as cost per pound, duration of the work, square feet, etc.
-*   **Method:** The method used to estimate the cost (analogous, parametric, three-point, bottom-up).
-*   **Assumptions/Constraints:** Assumptions used to estimate the cost (e.g. resource duration).
-*   **Range:** The range of the estimate (e.g. +/- 10%).
-*   **Confidence Level:** The degree of confidence in the estimate (e.g. 90%).
+### Activity Identifier and Description
+**Instruction:** Unique activity code and concise work summary for each estimated item.
+
+**Generated Value:** [ Add details... ]
+
+### Direct Labor Cost Estimate
+**Instruction:** Estimated direct staffing expenses calculated from effort hours and labor rates.
+
+**Generated Value:** [ Add details... ]
+
+### Materials and Equipment Cost Estimate
+**Instruction:** Estimated costs for hardware, raw materials, software licensing, and equipment.
+
+**Generated Value:** [ Add details... ]
+
+### Total Base Cost Estimate
+**Instruction:** Consolidated base financial estimate prior to reserve calculations.
+
+**Generated Value:** [ Add details... ]
+
+## Resource Cost Rates and Basis of Estimates
+
+### Labor Rate Categories and Rate Cards
+**Instruction:** Standard billing rate categories, consultant day-rates, and internal unit costs.
+
+**Generated Value:** [ Add details... ]
+
+### Historical Data and Estimating Assumptions
+**Instruction:** Benchmark data, vendor quotation references, and key assumptions applied.
+
+**Generated Value:** [ Add details... ]
+
+## Contingency and Management Reserves
+
+### Contingency Reserve Allocation
+**Instruction:** Calculated risk contingency reserve allocated for identified known-unknown risks.
+
+**Generated Value:** [ Add details... ]
+
+### Total Activity Cost with Contingency
+**Instruction:** Final baseline cost figure inclusive of contingency reserves for budgeting.
+
+**Generated Value:** [ Add details... ]
+
+---

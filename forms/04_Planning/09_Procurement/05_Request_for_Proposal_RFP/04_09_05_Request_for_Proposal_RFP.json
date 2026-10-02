@@ -1,28 +1,66 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUEST FOR PROPOSAL RFP template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "REQUEST FOR PROPOSAL RFP",
+    "form_name": "Request for Proposal",
     "document_reference": "PMO-04.09.05",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Request for Proposal' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.09.05.",
     "fields": {
-        "Project Overview": {
-            "guidance": "Background and purpose of the project.",
+        "f01_Purpose_and_Authority": {
+            "section": "Invitation and Scope",
+            "label": "Purpose and Authority",
+            "guidance": "What this request is authorised to invite, and by whom. The authority clause is what makes the contest defensible: it names the instrument that authorised the procurement, so a later reader can tell an invitation the organisation is entitled to issue from a document somebody drafted because they wanted something.",
             "value": ""
         },
-        "Submission Guidelines": {
-            "guidance": "How and when vendors should submit proposals.",
+        "f02_Project_Overview": {
+            "section": "Invitation and Scope",
+            "label": "Project Overview",
+            "guidance": "The background, the objectives, and the outcome being bought - enough that a supplier who has never heard of the organisation can decide whether this is work they want. A request that describes deliverables without describing the problem produces proposals that are technically compliant and solve something nobody had.",
             "value": ""
         },
-        "Technical Requirements": {
-            "guidance": "What the solution must do.",
+        "f03_Scope_of_Work": {
+            "section": "Invitation and Scope",
+            "label": "Scope of Work",
+            "guidance": "The work and the boundaries of it, described so that two suppliers would propose the same work from this description alone. The exclusions matter as much as the inclusions, because an omission reads as an inclusion and the supplier who priced it that way is the one whose price becomes impossible to deliver.",
             "value": ""
         },
-        "Evaluation Criteria": {
-            "guidance": "How proposals will be scored.",
+        "f04_Deliverables_and_Schedule": {
+            "section": "Invitation and Scope",
+            "label": "Deliverables and Schedule",
+            "guidance": "What will be handed over and by when, milestone by milestone. A supplier prices the schedule it is given, so a schedule stated only as a total duration invites every supplier to assume its own plan and the evaluation to compare plans that were never compared.",
             "value": ""
         },
-        "Terms and Conditions": {
-            "guidance": "Legal and compliance baselines.",
+        "f05_Technical_Requirements": {
+            "section": "Invitation and Scope",
+            "label": "Technical Requirements",
+            "guidance": "The functional and non-functional requirements the solution must satisfy, separated because they are evaluated differently: a function that is missing is a gap, whereas a performance target that is missed is a shortfall, and a form that treats them as one list cannot say which of the two has occurred.",
+            "value": ""
+        },
+        "f06_Commercial_Requirements": {
+            "section": "Invitation and Scope",
+            "label": "Commercial Requirements",
+            "guidance": "The pricing structure, the currency, what is included and what is billed separately, and the period the price holds for. A request that asks for a price without saying what it must include produces responses that are not comparable, and the cheapest one is then the one that left the most out.",
+            "value": ""
+        },
+        "f07_Submission_Requirements": {
+            "section": "Process and Evaluation",
+            "label": "Submission Requirements",
+            "guidance": "How a proposal must be submitted and by when, in a form the buyer can actually open: who may submit, what the deadline means, whether a proposal may be withdrawn before the deadline, and what happens to one that arrives late. Each of these is a point at which a well-meaning supplier can be turned away by accident, and an accident at this point is indistinguishable from a rigged contest.",
+            "value": ""
+        },
+        "f08_Evaluation_Criteria_and_Weights": {
+            "section": "Process and Evaluation",
+            "label": "Evaluation Criteria and Weights",
+            "guidance": "The criteria the proposals will be scored against, each with the weight it carries and what a high score looks like. This is the clause that decides whether the contest was real. Criteria published after the bids are in are not criteria but a justification, and no supplier can appeal to them because no supplier saw them; a stated weight also stops a criterion nobody expected from deciding the outcome.",
+            "value": ""
+        },
+        "f09_Clarifications_and_Questions": {
+            "section": "Process and Evaluation",
+            "label": "Clarifications and Questions",
+            "guidance": "How questions are asked, answered, and published, and the date the answer period closes. Two rules carry this section: every answer goes to every supplier, because an answer given to one is a private amendment to the requirement; and the question period closes before submissions open the work of pricing, because a question answered late is answered to whoever has already committed their number.",
+            "value": ""
+        },
+        "f10_Award_and_Contract": {
+            "section": "Process and Evaluation",
+            "label": "Award and Contract",
+            "guidance": "How the successful supplier is chosen, what happens next, and what the award does and does not commit anyone to. Naming the route from award to statement of work is what stops the gap between winning and signing from becoming a second negotiation with no rules.",
             "value": ""
         }
     }

@@ -1,8 +1,64 @@
-# PROBABILITY AND IMPACT ASSESSMENT - GUIDANCE
-This document provides descriptions for each element in the Probability and Impact Assessment.
+---
+lang: en
+layout: default
+title: Probability and Impact Assessment
+nav_order: 3
+---
 
-| Document Element | Description |
-| :--- | :--- |
-| **Definitions of Impact by Objective** | Tables defining the specific severity thresholds (Very High to Very Low) for impacts to Scope, Quality, Schedule, and Cost. |
-| **Definitions of Probability** | Percentage ranges and likelihood descriptions mapping to Very High to Very Low probabilities. |
-| **Risk Rating Guidelines** | The conditional logic and rules used to map probability and impact intersections to a finalized overall risk rating (High, Medium, Low). |
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Probability and Impact Assessment
+
+**Document Reference:** `PMO-04.08.03`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Probability and Impact Assessment** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A structured evaluation table documenting probability ratings, multidimensional impacts, urgency, and composite scores.
+
+---
+
+### 2. Why?
+Focuses project resources and management attention on critical threats while avoiding unnecessary effort on minor risks.
+
+---
+
+### 3. When?
+Conducted during risk planning and updated whenever new risks are logged or project conditions shift.
+
+---
+
+### 4. Who?
+Facilitated by Risk Manager and Project Manager with Subject Matter Experts and Task Leads.
+
+---
+
+### Tailoring Tips
+*   Use relative affinity mapping and consensus estimation in agile team risk reviews.
+*   Incorporate strict financial and environmental impact rating scales for industrial construction.
+
+---
+
+### Alignment
+Bridges Risk Register with Probability-Impact Matrix and Quantitative Risk Analysis.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Probability and Impact Assessment**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Probability Scoring Scales and Values:** The 1 to 5 numerical scale and percentage probability ranges applied.
+*   **Impact Scoring Scales and Dimensions:** The 1 to 5 rating scale defining scope, schedule, cost, and quality severity.
+*   **Risk ID and Event Title:** The unique risk tracking identifier and concise description of the risk event.
+*   **Evaluated Probability and Impact Ratings:** Individual probability score and assessed impact rating across project dimensions.
+*   **Risk Urgency and Proximity Assessment:** Time proximity and urgency factor determining how quickly a response is needed.
+*   **Composite Risk Exposure Score:** Calculated overall risk score (Probability x Impact) placing the risk on the priority ladder.
+*   **Priority Category and Mitigation Urgency:** Classification into High (Red), Moderate (Yellow), or Low (Green) priority bands.
+
+</div>

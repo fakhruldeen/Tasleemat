@@ -1,17 +1,9 @@
-<!-- LLM INSTRUCTIONS: Fill out the Cost Estimates table below based on the project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Column Definitions:
-*   **ID:** Unique identifier, such as the WBS ID or activity ID.
-*   **Resource:** The resource (person, equipment, material) needed for the deliverable.
-*   **Labor Costs:** The costs associated with team or outsourced resources.
-*   **Physical Costs:** Costs associated with material, equipment, supplies, or other physical resources.
-*   **Reserve:** Document contingency reserve amounts, if any.
-*   **Estimate:** The sum of the cost of labor, physical resources, and reserve costs.
-*   **Basis of Estimates:** Information such as cost per pound, duration of the work, square feet, etc.
-*   **Method:** The method used to estimate the cost (analogous, parametric, three-point, bottom-up).
-*   **Assumptions/Constraints:** Assumptions used to estimate the cost (e.g. resource duration).
-*   **Range:** The range of the estimate (e.g. +/- 10%).
-*   **Confidence Level:** The degree of confidence in the estimate (e.g. 90%).
+Section Instructions:
+- Activity and Work Package Cost Breakdown: Provide comprehensive project data for all required fields in this section.
+- Resource Cost Rates and Basis of Estimates: Provide comprehensive project data for all required fields in this section.
+- Contingency and Management Reserves: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -19,18 +11,43 @@ Column Definitions:
 <h1 align="center">COST ESTIMATES</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Activity Cost Estimates
-<!-- Generate a comprehensive tabular list of activity cost estimates incorporating labor, physical resources, and reserves. -->
+## 1. Activity and Work Package Cost Breakdown
 
-| ID | Resource | Labor Costs | Physical Costs | Reserve | Estimate | Basis of Estimates | Method | Assumptions/Constraints | Range | Confidence Level |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Activity Identifier and Description:**
+[ Add details... ]
+
+**Direct Labor Cost Estimate:**
+[ Add details... ]
+
+**Materials and Equipment Cost Estimate:**
+[ Add details... ]
+
+**Total Base Cost Estimate:**
+[ Add details... ]
+
+---
+
+## 2. Resource Cost Rates and Basis of Estimates
+
+**Labor Rate Categories and Rate Cards:**
+[ Add details... ]
+
+**Historical Data and Estimating Assumptions:**
+[ Add details... ]
+
+---
+
+## 3. Contingency and Management Reserves
+
+**Contingency Reserve Allocation:**
+[ Add details... ]
+
+**Total Activity Cost with Contingency:**
+[ Add details... ]
 
 ---
 
@@ -38,9 +55,9 @@ Column Definitions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

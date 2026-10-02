@@ -1,36 +1,75 @@
 ---
 lang: en
-Form: ACTIVITY ATTRIBUTES (Instructions)
+Form: Activity Attributes (Instructions)
 ---
 
-# ACTIVITY ATTRIBUTES - LLM GENERATION GUIDE
+# Activity Attributes - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `ACTIVITY ATTRIBUTES`. When asked to populate this form, generate an array of detailed attribute objects for each scheduled activity.
+<!--
+System Instructions: This document contains instructions for generating the
+«Activity Attributes». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
+
+> **Context and Definition:**
+> An artifact detailing the multiple descriptive components associated with each schedule activity, including predecessor/successor relationships, resource requirements, and constraints.
+
+> **Alignment:**
+> Integrates Activity List with Network Diagram, Duration Estimates, Resource Requirements, and Project Schedule.
 
 ---
 
-### Activity Entries
-**Instruction:** Repeat the following block of attributes for EVERY activity defined in the Activity List.
+## Activity Identification and Overview
 
-#### 1. General Information
-*   **ID:** Unique identifier.
-*   **Activity Name:** A brief statement starting with a verb summarizing the activity.
-*   **Planned Release / Iteration:** Indicate the planned release or iteration.
-*   **Description of Work:** Detailed requirements.
+### Activity Code and Title
+**Instruction:** Unique identifier code and full descriptive title of the schedule activity.
 
-#### 2. Dependencies & Scheduling
-**Instruction:** Generate a table of dependencies.
-*   **Columns:** Predecessor, Predecessor Relationship, Predecessor Lead/Lag, Successor, Successor Relationship, Successor Lead/Lag.
+**Generated Value:** [ Add details... ]
 
-#### 3. Resource Requirements
-*   **Number & Type of Team Resources Required:** Headcount and roles.
-*   **Skill Requirements:** Required competency levels.
-*   **Required Resources:** Equipment, materials, or facilities.
+### Activity Description and Scope Summary
+**Instruction:** Detailed technical narrative of the specific scope executed under this activity.
 
-#### 4. Execution Requirements
-*   **Imposed dates:** Required dates for start or completion.
-*   **Constraints:** Any limitations.
-*   **Assumptions:** Any assumptions impacting the activity.
-*   **Location of performance:** Where the work takes place.
-*   **Type of effort:** Fixed duration, fixed effort, etc.
+**Generated Value:** [ Add details... ]
+
+### Assigned Work Package Reference
+**Instruction:** Corresponding parent WBS code and deliverable component mapping.
+
+**Generated Value:** [ Add details... ]
+
+## Activity Predecessors and Successors
+
+### Predecessor Activities and Logic
+**Instruction:** List of preceding activities with dependency relationships (FS, SS, FF, SF) and lead/lag times.
+
+**Generated Value:** [ Add details... ]
+
+### Successor Activities and Logic
+**Instruction:** List of succeeding activities dependent upon the completion or start of this activity.
+
+**Generated Value:** [ Add details... ]
+
+## Resource and Skill Requirements
+
+### Required Team Roles and Headcount
+**Instruction:** Specific staffing roles, technical disciplines, and quantity of resources required.
+
+**Generated Value:** [ Add details... ]
+
+### Technical Skills and Equipment Needed
+**Instruction:** Specialized skill sets, machinery, software licenses, or facilities required for performance.
+
+**Generated Value:** [ Add details... ]
+
+## Execution Constraints and Imposed Dates
+
+### Imposed Start and Finish Dates
+**Instruction:** Contractual or management-mandated fixed start/finish constraint dates.
+
+**Generated Value:** [ Add details... ]
+
+### Activity Assumptions and Location Constraints
+**Instruction:** Critical assumptions regarding execution conditions, performance location, and physical constraints.
+
+**Generated Value:** [ Add details... ]
+
+---

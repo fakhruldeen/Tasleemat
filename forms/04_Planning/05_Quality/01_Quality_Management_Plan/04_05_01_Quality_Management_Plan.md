@@ -1,27 +1,75 @@
 ---
 lang: en
-Form: QUALITY MANAGEMENT PLAN (Instructions)
+Form: Quality Management Plan (Instructions)
 ---
 
-# QUALITY MANAGEMENT PLAN - LLM GENERATION GUIDE
+# Quality Management Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `QUALITY MANAGEMENT PLAN`. 
+<!--
+System Instructions: This document contains instructions for generating the
+«Quality Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The quality management plan describes how applicable policies, procedures, and guidelines will be implemented to achieve the quality objectives for the project.
-> **Tailoring Tips:** On smaller projects quality, requirements, and scope are handled together. Larger projects separate them. Must adhere to industry standards and organizational policies.
-> 
+> **Context and Definition:**
+> A subsidiary plan defining how the organization's quality policies, methodologies, and standards will be implemented and verified.
+
 > **Alignment:**
-> Align with: Project charter, Scope management plan, Requirements management plan, Resource management plan, Procurement documents.
+> Integrates with Quality Metrics, Definition of Ready/Done, Quality Audit reports, and Deliverable Acceptance forms.
 
 ---
 
-### Section Generation Instructions
-*   **Quality Standards:** Quality standards are usually industry or product driven. They may be ISO standards, IEEE, or some other regulatory or industry body.
-*   **Quality Objectives:** Quality objectives are the measures that must be achieved by the project or product components to meet the stakeholder needs. Objectives are the target you want to achieve.
-*   **Quality Roles and Responsibilities:** Define the roles necessary to conduct quality activities on the project and the responsibilities associated with each.
-*   **Deliverables and Processes Subject to Quality Review:** The key deliverables that have metrics or measures associated with quality objectives. The processes used in the project that require verification or validation.
-*   **Quality Management Approach:** The approach that will be used to manage the quality process. Includes the timing and content of project and product quality audits.
-*   **Quality Control Approach:** The approach that will be used to measure the product and the project performance to ensure the product meets the quality objectives.
-*   **Applicable Quality Procedures:** Procedures that will be used for the project, such as Nonconformance and rework, Corrective actions, Quality audits, Continuous improvement.
+## Quality Standards and Policies
+
+### Organizational Quality Policy and Framework
+**Instruction:** The overarching corporate quality principles and methodology (e.g., ISO, Lean Six Sigma, CMMI).
+
+**Generated Value:** [ Add details... ]
+
+### Applicable Industry Quality Standards
+**Instruction:** Specific external regulatory, engineering, or legal quality standards enforced.
+
+**Generated Value:** [ Add details... ]
+
+## Quality Objectives and KPIs
+
+### Project Quality Goals and Thresholds
+**Instruction:** Measurable quality targets regarding defect containment, test coverage, and customer satisfaction.
+
+**Generated Value:** [ Add details... ]
+
+### Continuous Improvement Objectives
+**Instruction:** Process enhancement goals and lessons learned integration mechanisms.
+
+**Generated Value:** [ Add details... ]
+
+## Quality Assurance and Quality Control Procedures
+
+### Quality Assurance (QA) Process
+**Instruction:** Audits and process compliance activities ensuring project execution adheres to approved standards.
+
+**Generated Value:** [ Add details... ]
+
+### Quality Control (QC) Testing Protocol
+**Instruction:** Inspection, automated testing, and peer review workflows used to verify deliverable quality.
+
+**Generated Value:** [ Add details... ]
+
+### Non-Conformance and Defect Management
+**Instruction:** Standard procedure for logging, prioritizing, resolving, and verifying non-conformance issues.
+
+**Generated Value:** [ Add details... ]
+
+## Quality Roles and Review Gates
+
+### Quality Roles and Responsibilities
+**Instruction:** Designated quality assurance leads, test engineers, and peer review inspectors.
+
+**Generated Value:** [ Add details... ]
+
+### Quality Review Gates and Sign-off Criteria
+**Instruction:** Mandatory quality milestones and gate reviews required before client acceptance.
+
+**Generated Value:** [ Add details... ]
+
+---

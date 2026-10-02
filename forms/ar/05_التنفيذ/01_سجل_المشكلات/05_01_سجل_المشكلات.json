@@ -1,50 +1,81 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج سجل المشكلات هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
     "form_name": "سجل المشكلات",
     "document_reference": "PMO-05.01",
+    "_llm_instructions": "قم بتعبئة حقول 'سجل المشكلات' وكتابة قيمة كل حقل في موضع 'القيمة المولَّدة' اعتمادًا على سياق المشروع. السياق: المشروع الذي يحمل المرجع PMO-05.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "مدخلات سجل المشكلات": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **ID:** Enter a unique issue identifier.\n- **Type:** Document the type or category of the issue, such as stakeholder issue, technical issue, conflict, etc.\n- **Issue description:** Provide a detailed description of the issue.\n- **الأولوية:** \n- **Impact on objectives:** Identify the project objectives that the issue impacts and the degree of impact.\n- **Responsible party:** Identify the person who is assigned to resolve the issue.\n- **الحالة:** Denote the status of the issue as open or closed.\n- **Resolution date:** Document the date by which the issue needs to be resolved.\n- **Final resolution:** Describe how the issue was resolved.\n- **التعليقات:** Document any clarifying comments about the issue, resolution, or other fields on the form.",
-            "value": [
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Issue description": "",
-                    "الأولوية": "",
-                    "Impact on objectives": "",
-                    "Responsible party": "",
-                    "الحالة": "",
-                    "Resolution date": "",
-                    "Final resolution": "",
-                    "التعليقات": ""
-                },
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Issue description": "",
-                    "الأولوية": "",
-                    "Impact on objectives": "",
-                    "Responsible party": "",
-                    "الحالة": "",
-                    "Resolution date": "",
-                    "Final resolution": "",
-                    "التعليقات": ""
-                },
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Issue description": "",
-                    "الأولوية": "",
-                    "Impact on objectives": "",
-                    "Responsible party": "",
-                    "الحالة": "",
-                    "Resolution date": "",
-                    "Final resolution": "",
-                    "التعليقات": ""
-                }
-            ]
+        "f01_المعرف": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "المعرف",
+            "guidance": "معرف فريد للمشكلة (مثل ISS-01) لضمان سهولة التتبع والرجوع إليها.",
+            "value": ""
+        },
+        "f02_النوع": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "النوع",
+            "guidance": "نوع المشكلة أو تصنيفها (مثل: فنية، موارد، جدول زمني، نطاق).",
+            "value": ""
+        },
+        "f03_مصدر_المشكلة": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "مصدر المشكلة",
+            "guidance": "مصدر ظهور المشكلة أو السبب المباشر لها في المشروع.",
+            "value": ""
+        },
+        "f04_وصف_المشكلة": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "وصف المشكلة",
+            "guidance": "وصف مفصل للمشكلة والظروف المحيطة بها وحالتها الحالية.",
+            "value": ""
+        },
+        "f05_الأولوية": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "الأولوية",
+            "guidance": "مستوى الأولوية والضرورة (حرج، عالي، متوسط، منخفض).",
+            "value": ""
+        },
+        "f06_التأثير_على_الأهداف": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "التأثير على الأهداف",
+            "guidance": "التأثير المحتمل أو الفعلي للمشكلة على أهداف المشروع والتسليمات.",
+            "value": ""
+        },
+        "f07_المعنيون_المتأثرون": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "المعنيون المتأثرون",
+            "guidance": "المعنيون أو الفئات المتأثرة بشكل مباشر أو غير مباشر بالمشكلة.",
+            "value": ""
+        },
+        "f08_الجهة_المسؤولة": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "الجهة المسؤولة",
+            "guidance": "الشخص أو الجهة المعينة لمتابعة المشكلة والعمل على معالجتها.",
+            "value": ""
+        },
+        "f09_الحالة": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "الحالة",
+            "guidance": "الحالة الحالية للمشكلة (مثل: مفتوحة، قيد المعالجة، محلولة، مغلقة).",
+            "value": ""
+        },
+        "f10_تاريخ_المعالجة": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "تاريخ المعالجة",
+            "guidance": "التاريخ المستهدف أو الفعلي الذي تمت فيه معالجة المشكلة وإغلاقها.",
+            "value": ""
+        },
+        "f11_المعالجة_النهائية": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "المعالجة النهائية",
+            "guidance": "ملخص الإجراء التصحيحي المتخذ لمعالجة المشكلة والحل المطبق.",
+            "value": ""
+        },
+        "f12_التعليقات": {
+            "section": "مدخلات سجل المشكلات",
+            "label": "التعليقات",
+            "guidance": "أي ملاحظات إضافية أو سياق أو تفاصيل تتعلق بالمتابعة والتصعيد.",
+            "value": ""
         }
     }
 }

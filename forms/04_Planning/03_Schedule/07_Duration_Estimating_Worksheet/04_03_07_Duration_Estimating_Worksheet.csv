@@ -1,4 +1,12 @@
-ID,Unique identifier,Parametric estimates,Resource quantity,Percent available,Performance factor,Duration estimate,Analogous estimates,Previous duration,Current activity,Multiplier,Most likely duration,Pessimistic duration,Weighting equation,Expected duration
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Parametric Estimates,Parametric Activity and Unit Metric,"The activity name and specific unit metric rate used for parametric calculation (e.g., hours per unit).",
+Parametric Estimates,Quantity and Resource Factor,Total quantity of work units and resource efficiency factor applied.,
+Parametric Estimates,Parametric Duration Result,Calculated duration derived from the mathematical parametric formula.,
+Analogous Estimates,Historical Reference Activity,Past project activity used as a baseline benchmark for historical comparison.,
+Analogous Estimates,Historical Duration and Complexity Scaling,Duration of past activity and scaling factor applied for project scope differences.,
+Analogous Estimates,Analogous Duration Result,Final duration outcome determined through analogous comparison.,
+Three-Point Estimates (Beta Distribution),"Optimistic, Most Likely, and Pessimistic Durations","The recorded optimistic (tO), most likely (tM), and pessimistic (tP) estimates.",
+Three-Point Estimates (Beta Distribution),Beta Calculated Expected Duration (tE),Calculated expected duration using the PERT beta distribution formula (tO + 4tM + tP) / 6.,
+Three-Point Estimates (Beta Distribution),Standard Deviation and Variance,Calculated standard deviation (tP - tO) / 6 assessing estimating risk and variance.,
+Aggregated Schedule Reserves,Total Calculated Schedule Buffer,Consolidated sum of duration contingency buffers across all estimated activities.,
+Aggregated Schedule Reserves,Worksheet Reconciliation and Approval,Formal review confirming no duplicate activity estimations across methods.,

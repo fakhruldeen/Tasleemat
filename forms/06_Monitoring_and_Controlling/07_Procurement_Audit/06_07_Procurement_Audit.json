@@ -1,110 +1,68 @@
 {
-    "_llm_instructions": "Fill out 'project_title' and 'date_prepared', and the 'value' property of each field, using the project context. Use 'label' to select the correct output language. Reference parameters.md for global project variables.",
     "form_name": "PROCUREMENT AUDIT REPORT",
     "document_reference": "PMO-06.07",
+    "_llm_instructions": "Populate the fields of 'PROCUREMENT AUDIT REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.07.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "audit_information": {
+        "f01_Procurements_or_Contracts_Audited": {
             "section": "Audit Information",
-            "label": "Audit Information",
-            "guidance": "Record the procurements or contracts audited, the audit scope, the period covered, and the audit method.",
+            "label": "Procurements or Contracts Audited",
+            "guidance": "The specific procurement contracts, tender packages, and vendors audited.",
             "value": ""
         },
-        "scope_worked_well": {
+        "f02_Audit_Scope": {
+            "section": "Audit Information",
+            "label": "Audit Scope",
+            "guidance": "The scope, contract boundaries, and sampling methodology of the procurement audit.",
+            "value": ""
+        },
+        "f03_Period_Covered": {
+            "section": "Audit Information",
+            "label": "Period Covered",
+            "guidance": "The date range and milestones examined during the procurement audit.",
+            "value": ""
+        },
+        "f04_Audit_Method": {
+            "section": "Audit Information",
+            "label": "Audit Method",
+            "guidance": "The methodology used (e.g., contract file review, vendor interviews, financial reconciliation).",
+            "value": ""
+        },
+        "f05_Vendor_Performance_Audit_What_Worked_Well": {
             "section": "Vendor Performance Audit - What Worked Well",
-            "label": "Scope",
-            "guidance": "Describe the aspects of contract scope that were handled well.",
+            "label": "Vendor Performance Audit - What Worked Well",
+            "guidance": "Aspects of contract scope, quality, schedule, and cost delivered successfully with supporting evidence.",
             "value": ""
         },
-        "quality_worked_well": {
-            "section": "Vendor Performance Audit - What Worked Well",
-            "label": "Quality",
-            "guidance": "Describe the aspects of product quality that were handled well.",
-            "value": ""
-        },
-        "schedule_worked_well": {
-            "section": "Vendor Performance Audit - What Worked Well",
-            "label": "Schedule",
-            "guidance": "Describe the aspects of the contract schedule that were handled well.",
-            "value": ""
-        },
-        "cost_worked_well": {
-            "section": "Vendor Performance Audit - What Worked Well",
-            "label": "Cost",
-            "guidance": "Describe the aspects of the contract budget that were handled well.",
-            "value": ""
-        },
-        "other_worked_well": {
-            "section": "Vendor Performance Audit - What Worked Well",
-            "label": "Other",
-            "guidance": "Describe any other aspects of the contract or procurement that were handled well.",
-            "value": ""
-        },
-        "scope_improve": {
+        "f06_Vendor_Performance_Audit_What_Can_Be_Improved": {
             "section": "Vendor Performance Audit - What Can Be Improved",
-            "label": "Scope",
-            "guidance": "Describe the aspects of contract scope that could be improved.",
+            "label": "Vendor Performance Audit - What Can Be Improved",
+            "guidance": "Deficiencies, delays, or cost variances identified across contract dimensions with recommendations.",
             "value": ""
         },
-        "quality_improve": {
-            "section": "Vendor Performance Audit - What Can Be Improved",
-            "label": "Quality",
-            "guidance": "Describe the aspects of product quality that could be improved.",
-            "value": ""
-        },
-        "schedule_improve": {
-            "section": "Vendor Performance Audit - What Can Be Improved",
-            "label": "Schedule",
-            "guidance": "Describe the aspects of the contract schedule that could be improved.",
-            "value": ""
-        },
-        "cost_improve": {
-            "section": "Vendor Performance Audit - What Can Be Improved",
-            "label": "Cost",
-            "guidance": "Describe the aspects of the contract budget that could be improved.",
-            "value": ""
-        },
-        "other_improve": {
-            "section": "Vendor Performance Audit - What Can Be Improved",
-            "label": "Other",
-            "guidance": "Describe any other aspects of the contract or procurement that could be improved.",
-            "value": ""
-        },
-        "plan_procurements": {
+        "f07_Procurement_Management_Process_Audit": {
             "section": "Procurement Management Process Audit",
-            "label": "Plan Procurements",
-            "guidance": "Indicate whether Plan Procurements was followed, and describe any tools or techniques that were effective for each procurement.",
+            "label": "Procurement Management Process Audit",
+            "guidance": "Audit evaluation across Plan Procurements, Conduct Procurements, and Control Procurements.",
             "value": ""
         },
-        "conduct_procurements": {
-            "section": "Procurement Management Process Audit",
-            "label": "Conduct Procurements",
-            "guidance": "Indicate whether Conduct Procurements was followed, and describe any tools or techniques that were effective for each procurement.",
-            "value": ""
-        },
-        "control_procurements": {
-            "section": "Procurement Management Process Audit",
-            "label": "Control Procurements",
-            "guidance": "Indicate whether Control Procurements was followed, and describe any tools or techniques that were effective for each procurement.",
-            "value": ""
-        },
-        "good_practices": {
+        "f08_Good_Practices_to_Share": {
             "section": "Good Practices to Share",
             "label": "Good Practices to Share",
-            "guidance": "Describe any good practices that can be shared with other projects, or that should be incorporated into organisational policies, procedures, or processes. Include lessons learned.",
+            "guidance": "Contracting best practices, negotiation tactics, and lessons learned for reuse across the PMO.",
             "value": ""
         },
-        "areas_for_improvement": {
+        "f09_Areas_for_Improvement": {
             "section": "Areas for Improvement",
             "label": "Areas for Improvement",
-            "guidance": "Describe any areas that should be improved in the procurement process. Include information that should be incorporated into policies, procedures, or processes, and include lessons learned.",
+            "guidance": "Recommendations for updating organizational procurement policies, templates, and procedures.",
             "value": ""
         },
-        "comments": {
+        "f10_Comments": {
             "section": "Comments",
             "label": "Comments",
-            "guidance": "Add any comments that will add relevance to the audit.",
+            "guidance": "Additional auditor observations, commercial context, or closing remarks.",
             "value": ""
         }
     }

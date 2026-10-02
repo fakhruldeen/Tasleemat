@@ -12,57 +12,56 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.03.01`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Schedule Management Plan** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Schedule Management Plan** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A component of the project management plan that establishes the criteria and the activities for developing, monitoring, and controlling the project schedule.
+A governance artifact defining scheduling tools, estimating units, variance thresholds, and maintenance protocols.
 
 ---
 
 ### 2. Why?
-It provides guidance and direction on how the project schedule will be managed throughout the project. Without a plan, the team may track time using mismatched units, fail to recognize delays early due to unclear thresholds, or use incompatible software tools.
+Establishes disciplined schedule control, prevents delivery delays, and standardizes progress tracking.
 
 ---
 
 ### 3. When?
-This artifact is prepared during the **PLANNING Process Group**. It is developed once and does not usually change.
+Authored during project planning and enforced throughout project execution and controlling.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and key stakeholders.
+Created by Project Scheduler and Project Manager, approved by Project Sponsor and PMO.
 
 ---
 
 ### Tailoring Tips
-• Add information on the level of detail and timing for WBS decomposition based on rolling wave planning.
-• For projects that use agile, add information on the time box periods for releases, waves, and iterations.
-• For projects that use earned value management, include information on rules for establishing percent complete and the EVM measurement techniques.
-
-### Alignment
-The schedule management plan should be aligned and consistent with the following documents:
-• Project charter
-• Cost management plan
-
-### 5. How?
-To accurately and professionally complete the **SCHEDULE MANAGEMENT PLAN**, the responsible party must populate the following critical sections based on the project context:
-*   **Schedule methodology:** Define the theoretical approach (e.g., Critical Path, Agile).
-*   **Scheduling tool(s):** Define the software used (e.g., MS Project, Jira).
-*   **Level of accuracy:** Set the acceptable range for duration estimates (e.g., ±10%).
-*   **Units of measure:** Standardize time (e.g., staff hours, staff days).
-*   **Variance thresholds:** Set the rules for when a delay triggers an alert.
-*   **Schedule reporting:** Define the status reporting format.
-*   **Organizational procedure links:** Tie the schedule to the WBS and accounting codes.
-*   **Schedule updates:** Establish who updates the schedule and how often.
+*   Configure sprint velocity tracking and kanban flow metrics for agile initiatives.
+*   Enforce rigorous CPM network logic and schedule risk analysis for complex capital projects.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_03_01_Schedule_Management_Plan_Template.md)
-* [🤖 LLM Generation Prompt](04_03_01_Schedule_Management_Plan.md)
-* [📊 Data Schema (JSON)](04_03_01_Schedule_Management_Plan.json)
-* [📈 Tabular Data (CSV)](04_03_01_Schedule_Management_Plan.csv)
+### Alignment
+Integrates with Project Schedule, Activity List, Cost Management Plan, and Progress Status Reports.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Schedule Management Plan**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Scheduling Methodology Selection:** The scheduling framework applied (e.g., Critical Path Method, Agile cadence, or Critical Chain).
+*   **Scheduling Software and Systems:** Approved project management and scheduling software tools used to build and maintain the schedule model.
+*   **Rolling Wave Planning Approach:** Level of detail and decomposition horizon applied to near-term vs. long-term project activities.
+*   **Agile Timeboxing and Iteration Rules:** Standard sprint lengths, release cadence, and timeboxing rules for iterative work packages.
+*   **Units of Measure for Durations:** Designated units of measure (hours, days, weeks) applied across schedule estimates.
+*   **Level of Accuracy and Estimating Ranges:** Acceptable variance ranges (+/- percentage) required for duration and effort estimates.
+*   **Earned Value Management (EVM) Rules:** Techniques used for measuring physical progress and establishing percent complete (e.g., 50/50, 0/100, milestone weights).
+*   **Schedule Performance Indicators:** Key metrics tracked including SV, SPI, critical path float, and milestone variance.
+*   **Schedule Variance Thresholds:** Permissible delay thresholds that trigger mandatory corrective actions and executive escalations.
+*   **Schedule Update and Baselines Protocol:** Cadence for schedule status updates, critical path recalculation, and baseline change governance.
 
 </div>

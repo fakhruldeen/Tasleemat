@@ -1,31 +1,68 @@
 ---
 lang: en
-Form: DURATION ESTIMATES (Instructions)
+Form: Duration Estimates (Instructions)
 ---
 
-# DURATION ESTIMATES - LLM GENERATION GUIDE
+# Duration Estimates - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `DURATION ESTIMATES`. When asked to populate this form, generate an array of objects representing the duration estimates table.
+<!--
+System Instructions: This document contains instructions for generating the
+«Duration Estimates». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> Duration estimates provide information on the amount of time it will take to complete project work. They can be determined by developing an estimate for each activity, work package, or control account, using expert judgment or quantitative methods. They are an output from process 6.4 Estimate Activity Durations in the PMBOK® Guide – Sixth Edition.
-> 
+> **Context and Definition:**
+> A quantitative schedule document detailing the quantitative assessments of the likely number of time periods required to complete each activity.
+
 > **Alignment:**
-> The duration estimates should be aligned and consistent with the following documents:
-• Assumption log
-• Activity attributes
-• Resource requirements
+> Integrates with Activity List, Resource Requirements, Duration Estimating Worksheet, and Project Schedule.
 
 ---
 
-### Table: Duration Estimates
-**Instruction:** Generate a comprehensive list of activities and their estimated durations.
+## Activity Duration Estimates Table
 
-**Columns Definition:**
-*   **ID:** Unique identifier for the activity or work package.
-*   **Activity description:** A description of the work that needs to be done.
-*   **Estimation Method:** The technique used to calculate the duration (e.g., Parametric, Analogous, Three-point, Expert Judgment).
-*   **Effort hours:** The amount of labor it will take to accomplish the work; usually shown in hours, but may be shown in days.
-*   **Contingency Reserve:** Buffer time added to account for identified schedule risks or uncertainty.
-*   **Duration estimates:** The total length of time it will take to accomplish the work (including reserves); usually shown in days, but may be shown in weeks or months.
+### Activity Identifier and Description
+**Instruction:** The activity code and concise work summary for each estimated activity.
+
+**Generated Value:** [ Add details... ]
+
+### Estimation Method Applied
+**Instruction:** The specific technique used (analogous, parametric, three-point, or bottom-up).
+
+**Generated Value:** [ Add details... ]
+
+### Estimated Effort Hours and Assigned Resources
+**Instruction:** Total calculated person-hours of effort and assigned resource quantities.
+
+**Generated Value:** [ Add details... ]
+
+### Estimated Duration
+**Instruction:** Calculated working duration in work days or weeks required to complete the activity.
+
+**Generated Value:** [ Add details... ]
+
+## Basis of Estimates and Assumptions
+
+### Historical Data and Productivity Rates
+**Instruction:** Empirical reference data, productivity metrics, and historical benchmarks used.
+
+**Generated Value:** [ Add details... ]
+
+### Key Estimating Assumptions
+**Instruction:** Foundational assumptions regarding resource availability, skill proficiencies, and work shifts.
+
+**Generated Value:** [ Add details... ]
+
+## Contingency and Reserve Analysis
+
+### Schedule Contingency Reserve
+**Instruction:** Calculated contingency buffer allocated to accommodate identified activity risks.
+
+**Generated Value:** [ Add details... ]
+
+### Total Activity Duration with Contingency
+**Instruction:** Final baseline duration inclusive of contingency buffer used in the schedule model.
+
+**Generated Value:** [ Add details... ]
+
+---

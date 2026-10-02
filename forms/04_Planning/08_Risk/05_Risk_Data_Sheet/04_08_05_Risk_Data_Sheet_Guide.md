@@ -1,25 +1,68 @@
-# RISK DATA SHEET - GUIDANCE
-This document provides descriptions for each element in the Risk Data Sheet.
+---
+lang: en
+layout: default
+title: Risk Data Sheet
+nav_order: 5
+---
 
-| Document Element | Description |
-| :--- | :--- |
-| **Risk ID** | Enter a unique risk identifier. |
-| **Risk description** | Provide a detailed description of the risk. |
-| **Status** | Enter the status as open or closed. |
-| **Risk cause** | Describe the circumstances or drivers that are the source of the risk. |
-| **Probability** | Determine the likelihood of the event or condition occurring. |
-| **Impact** | Describe the impact on Scope, Quality, Schedule, and Cost. |
-| **Score** | Numeric or relative score calculated from probability and impact. |
-| **Responses** | Describe the planned response strategy to the risk or condition. |
-| **Revised probability** | Likelihood after the response has been implemented. |
-| **Revised impact** | Impact on Scope, Quality, Schedule, and Cost after the response has been implemented. |
-| **Revised score** | Revised risk score after the response has been implemented. |
-| **Responsible party** | Identify the person responsible for managing the risk. |
-| **Actions** | Describe any actions that need to be taken to respond to the risk. |
-| **Secondary risks** | Describe new risks that arise out of the response strategies. |
-| **Residual risk** | Describe the remaining risk after response strategies. |
-| **Contingency plan** | Plan initiated if specific events occur. |
-| **Contingency funds** | Determine the funds needed to protect the budget from overrun. |
-| **Contingency time** | Determine the time needed to protect the schedule from overrun. |
-| **Fallback plans** | Plan to use if other response strategies fail. |
-| **Comments** | Any comments or additional helpful information. |
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Risk Data Sheet
+
+**Document Reference:** `PMO-04.08.05`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Risk Data Sheet** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A comprehensive single-risk dossier detailing root causes, triggers, EMV calculations, mitigation steps, and fallback responses.
+
+---
+
+### 2. Why?
+Provides exhaustive operational and financial analysis to de-risk high-exposure threats to project success.
+
+---
+
+### 3. When?
+Created when a risk is categorized as High or Critical in qualitative assessment.
+
+---
+
+### 4. Who?
+Authored by Assigned Risk Owner with input from Lead Engineers and Risk Manager.
+
+---
+
+### Tailoring Tips
+*   Mandatory for any risk whose EMV exceeds contingency allocation thresholds.
+*   Incorporate detailed technical simulation models for complex architecture and security risks.
+
+---
+
+### Alignment
+Expands upon Risk Register line items and informs Contingency Reserve allocations and Risk Mitigation Action Plans.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Risk Data Sheet**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Risk Identifier and Title:** Unique identifier code and descriptive title for the specific high-impact risk.
+*   **Risk Statement and Operational Context:** Comprehensive statement articulating cause, condition, and operational impact.
+*   **Assigned Risk Owner and Stakeholders:** Designated risk owner, action lead, and impacted project stakeholders.
+*   **Assessed Probability and Impact Ratings:** Detailed probability rating and impact breakdown across scope, schedule, and cost.
+*   **Expected Monetary Value (EMV) Analysis:** Quantitative calculation of monetary impact (Probability x Financial Consequence).
+*   **Schedule Delay and Critical Path Exposure:** Projected days of delay on critical path activities if the risk occurs.
+*   **Root Cause Analysis Details:** Underlying systemic, technical, or environmental drivers causing the risk.
+*   **Early Warning Triggers and Thresholds:** Identifiable metrics and operational thresholds that trigger risk activation.
+*   **Primary Mitigation Action Plan:** Step-by-step preventive measures, action item owners, and completion deadlines.
+*   **Contingency and Fallback Response Plan:** Secondary action plan implemented if primary mitigation fails or risk materializes.
+*   **Allocated Contingency Budget and Reserves:** Specific financial reserve allocation assigned to execute this risk response.
+
+</div>

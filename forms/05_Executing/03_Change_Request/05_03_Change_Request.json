@@ -1,81 +1,56 @@
 {
-    "_llm_instructions": "Populate the Change Request based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Requestor Name and Position: The name, and if appropriate, the position of the person requesting the change.\n- Change Category: Check a box to indicate the category of change.\n- Change Type: Indicate whether the change is mandatory (such as a legal requirement) or discretionary.\n- Description of Change: Describe the proposed change in enough detail to clearly communicate all aspects of the change.\n- Justification for Proposed Change: Indicate the reason for the change.\n- Implications of Not Making the Change: Describe the implications or risks of not implementing this change.\n- Impacts of Change: Describe the impact of the proposed change across project dimensions.\n- Comments: Provide any comments that will clarify information about the requested change.",
     "form_name": "CHANGE REQUEST",
     "document_reference": "PMO-05.03",
+    "_llm_instructions": "Populate the fields of 'CHANGE REQUEST' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Requestor Name and Position": {
-            "guidance": "The name, and if appropriate, the position of the person requesting the change.",
+        "f01_Requestor_Name_and_Position": {
+            "section": "Requestor Information",
+            "label": "Requestor Name and Position",
+            "guidance": "The name and organizational role or position of the person submitting the change request.",
             "value": ""
         },
-        "Change Category": {
-            "guidance": "Check a box to indicate the category of change.",
-            "value": {
-                "Scope": false,
-                "Schedule": false,
-                "Cost": false,
-                "Quality": false,
-                "Resource": false,
-                "Other": ""
-            }
-        },
-        "Change Type": {
-            "guidance": "Indicate whether the change is mandatory (such as a legal requirement) or discretionary.",
-            "value": {
-                "Mandatory": false,
-                "Discretionary": false
-            }
-        },
-        "Description of Change": {
-            "guidance": "Describe the proposed change in enough detail to clearly communicate all aspects of the change.",
+        "f02_Change_Category": {
+            "section": "Change Classification",
+            "label": "Change Category",
+            "guidance": "The specific project dimension affected (e.g., Scope, Schedule, Cost, Quality, Resource).",
             "value": ""
         },
-        "Justification for Proposed Change": {
-            "guidance": "Indicate the reason for the change.",
+        "f03_Change_Type": {
+            "section": "Change Classification",
+            "label": "Change Type",
+            "guidance": "Indicates whether the change is mandatory (legal/compliance) or discretionary.",
             "value": ""
         },
-        "Implications of Not Making the Change": {
-            "guidance": "Describe the implications or risks of not implementing this change.",
+        "f04_Description_of_Change": {
+            "section": "Change Details",
+            "label": "Description of Change",
+            "guidance": "Comprehensive narrative detailing the requested modification or enhancement.",
             "value": ""
         },
-        "Impacts of Change": {
-            "guidance": "Describe the impact of the proposed change across project dimensions.",
-            "value": [
-                {
-                    "Area": "Scope",
-                    "Impact Type (Increase/Decrease/Modify)": "",
-                    "Impact Description": ""
-                },
-                {
-                    "Area": "Quality",
-                    "Impact Type (Increase/Decrease/Modify)": "",
-                    "Impact Description": ""
-                },
-                {
-                    "Area": "Requirements",
-                    "Impact Type (Increase/Decrease/Modify)": "",
-                    "Impact Description": ""
-                },
-                {
-                    "Area": "Cost",
-                    "Impact Type (Increase/Decrease/Modify)": "",
-                    "Impact Description": ""
-                },
-                {
-                    "Area": "Schedule",
-                    "Impact Type (Increase/Decrease/Modify)": "",
-                    "Impact Description": ""
-                },
-                {
-                    "Area": "Project documents",
-                    "Impact Type (Increase/Decrease/Modify)": "",
-                    "Impact Description": ""
-                }
-            ]
+        "f05_Justification_for_Proposed_Change": {
+            "section": "Change Details",
+            "label": "Justification for Proposed Change",
+            "guidance": "The business driver, operational trigger, or rationale justifying the change.",
+            "value": ""
         },
-        "Comments": {
-            "guidance": "Provide any comments that will clarify information about the requested change.",
+        "f06_Implications_of_Not_Making_the_Change": {
+            "section": "Change Details",
+            "label": "Implications of Not Making the Change",
+            "guidance": "Risks, costs, operational penalties, or missed opportunities if the change is rejected.",
+            "value": ""
+        },
+        "f07_Impacts_of_Change": {
+            "section": "Impacts of Change",
+            "label": "Impacts of Change",
+            "guidance": "Detailed assessment of impacts across scope, schedule, budget, risks, and contracts.",
+            "value": ""
+        },
+        "f08_Comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Additional context, dependencies, or evaluation notes.",
             "value": ""
         }
     }

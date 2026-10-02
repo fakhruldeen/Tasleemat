@@ -12,41 +12,50 @@ nav_order: 1
 
 **Document Reference:** `PMO-03.01`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Project Charter** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Project Charter** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A document issued by the project sponsor that formally authorizes the existence of a project and provides the project manager with authority to apply resources.
+A formal document issued by the project initiator or sponsor that formally authorizes the existence of a project and provides the project manager with the authority to apply organizational resources to project activities.
 
 ---
 
 ### 2. Why?
-It establishes a direct link between the project and the strategic objectives of the organization and creates a formal record of the project.
+It establishes a direct link between the project and the strategic objectives of the organization, creates a formal record of the project, and shows the organizational commitment to the project.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **INITIATING Process Group** of the project lifecycle.
+Developed in the Initiating Process Group at the very beginning of the project or phase.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+Issued by the Project Sponsor, authored/drafted with the Project Manager, and signed off by key authorizing executives.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
+*   Scale the level of detail to project complexity and investment size.
+*   Ensure clear boundaries and explicit scope exclusions to avoid early misalignment.
+*   Define measurable success criteria across scope, schedule, cost, and quality.
+
+---
 
 ### Alignment
-[ Add Alignment Information Here ]
+The Project Charter aligns with the Business Case, Benefits Management Plan, Strategic Plan, and provides the foundation for the Project Management Plan.
+
+---
 
 ### 5. How?
-To accurately and professionally complete the **Project Charter**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+To accurately and professionally complete the **Project Charter**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
 *   **Project purpose:** The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project.
-*   **High-level project description:** A summary-level description of the project.
+*   **High-level project description:** A summary-level description of the project detailing its core scope and business context.
 *   **Project boundaries:** Limits to the project scope. May include scope exclusions, or other limitations.
 *   **Key deliverables:** The high-level project and product deliverables. These will be further elaborated in the project scope statement.
 *   **High-level requirements:** The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders’ needs and expectations. These will be further elaborated in the requirements documentation.
@@ -58,18 +67,7 @@ To accurately and professionally complete the **Project Charter**, the responsib
 *   **Key stakeholder list:** An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success.
 *   **Project exit criteria:** The performance, metrics, conditions, or other measurements that must be met to conclude the project.
 *   **Project approval requirements:** Defines what constitutes project success, who determines whether the project is successful, and who signs off on the project.
-*   **Project manager authority - Staffing Decisions:** The authority of the project manager to hire, fire, discipline, accept, or not accept project staff.
-*   **Project manager authority - Budget management and Variance:** The authority of the project manager to commit, manage, and control project funds, and the variance level that requires escalation.
-*   **Project manager authority - Technical Decisions:** The authority of the project manager to make technical decisions about deliverables or the project approach.
-*   **Project manager authority - Conflict resolution:** The degree to which the project manager can resolve conflict within the team, within the organization, and with external stakeholders.
-*   **Name and authority of the sponsor:** Name and authority of the sponsor or other person(s) authorizing the project charter. MUST be formatted as a Markdown table with exactly 2 columns: Name / Position, Authority Level.
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](03_01_Project_Charter_Template.md)
-* [🤖 LLM Generation Prompt](03_01_Project_Charter.md)
-* [📊 Data Schema (JSON)](03_01_Project_Charter.json)
-* [📈 Tabular Data (CSV)](03_01_Project_Charter.csv)
+*   **Project manager authority level:** The authority of the project manager with regard to staffing decisions, budget management and variance, technical decisions, and conflict resolution.
+*   **Name and authority of the sponsor:** Name and authority of the sponsor or other person(s) authorizing the project charter.
 
 </div>

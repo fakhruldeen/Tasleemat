@@ -1,0 +1,11 @@
+Section,Field,Guidance,LLM_Generated_Value
+Labor and Staffing Cost Calculations,Role Title and Headcount,"Specific resource role, staffing level, and number of full-time equivalents (FTE).",
+Labor and Staffing Cost Calculations,Hours Allocation and Hourly Rate,Total planned working hours and authorized standard or contracted hourly billing rate.,
+Labor and Staffing Cost Calculations,Total Calculated Labor Cost,Subtotal labor expenditure calculated from hours multiplied by hourly rate.,
+Material and Equipment Cost Calculations,Material or Equipment Item Description,"Detailed description of physical supplies, hardware, server infrastructure, or licenses.",
+Material and Equipment Cost Calculations,Unit Quantity and Unit Purchase Price,Required quantity and current quoted unit price per item.,
+Material and Equipment Cost Calculations,Total Calculated Materials Cost,Subtotal materials expenditure calculated from quantity multiplied by unit price.,
+Subcontractor and Vendor Cost Calculations,Contracted Service or Work Package,"External vendor scope of work, milestone deliverables, or consulting package.",
+Subcontractor and Vendor Cost Calculations,Vendor Pricing Model and Contract Sum,"Fixed price, time-and-materials rate, or contracted service sum.",
+Consolidated Cost Estimate Reconciliation,Grand Total Base Estimate,"Sum of all labor, materials, equipment, and subcontractor cost line items.",
+Consolidated Cost Estimate Reconciliation,Worksheet Verification and Audit Sign-off,Formal reconciliation verifying math accuracy and absence of duplicated cost items.,

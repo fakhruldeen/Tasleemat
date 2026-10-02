@@ -1,32 +1,63 @@
 ---
 lang: en
-Form: NETWORK DIAGRAM (Instructions)
+Form: Network Diagram (Instructions)
 ---
 
-# NETWORK DIAGRAM - LLM GENERATION GUIDE
+# Network Diagram - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `NETWORK DIAGRAM`. When asked to populate this form, generate the tabular dependencies list and a valid Mermaid graph visualization.
+<!--
+System Instructions: This document contains instructions for generating the
+«Network Diagram». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The network diagram is a visual display of the relationship between schedule elements. The purpose is to visually depict the types of relationships (FS, SS, FF, SF) and any modifications such as leads or lags between components. It is an output from process 6.3 Sequence Activities in the PMBOK® Guide – Sixth Edition.
-> 
+> **Context and Definition:**
+> A graphical representation of the logical relationships, sequences, and dependencies among project schedule activities.
+
 > **Alignment:**
-> The network diagram should be aligned and consistent with the following documents:
-• Project schedule
-• Project roadmap
-• Milestone list
+> Directly bridges Activity Attributes and Duration Estimates with the Project Schedule and Critical Path Model.
 
 ---
 
-### Network Diagram Visualization
-**Instruction:** Generate a valid `mermaid` block (using `graph LR` or `graph TD`) that visually represents the dependencies listed in the table above. Ensure node names are concise or utilize node IDs with labels (e.g., `A[Activity A] -->|FS| B[Activity B]`).
+## Network Logic and Critical Path Overview
 
+### Network Diagramming Methodology
+**Instruction:** The logical diagramming method utilized (Precedence Diagramming Method - PDM).
 
-### Table: Network Diagram Dependencies
-**Instruction:** Provide the raw tabular data defining the relationships.
+**Generated Value:** [ Add details... ]
 
-**Columns Definition:**
-*   **Predecessor:** The activity that must occur first.
-*   **Relationship & Lead/Lag:** The relationship type (FS, SS, FF, SF) and any acceleration/delay (e.g., FS+3d).
-*   **Successor:** The activity that follows.
+### Critical Path Summary and Duration
+**Instruction:** Identification of critical path activities, total critical path duration, and zero-float paths.
+
+**Generated Value:** [ Add details... ]
+
+### Near-Critical Paths and Float Analysis
+**Instruction:** Analysis of near-critical paths and activities possessing total and free float.
+
+**Generated Value:** [ Add details... ]
+
+## Precedence Relationships and Dependencies
+
+### Core Predecessor and Successor Chains
+**Instruction:** Key sequence chains connecting major engineering and development work packages.
+
+**Generated Value:** [ Add details... ]
+
+### Lead and Lag Justifications
+**Instruction:** Documented technical justifications for all applied lead times and lag buffers.
+
+**Generated Value:** [ Add details... ]
+
+## Network Diagram Visualization
+
+### Mermaid Diagram Syntax
+**Instruction:** Valid Mermaid graph syntax representing the complete node-and-arrow network dependency logic.
+
+**Generated Value:** [ Add details... ]
+
+### Diagram Interpretation Guidelines
+**Instruction:** Narrative guide explaining how to read activity nodes, dependencies, and path flows.
+
+**Generated Value:** [ Add details... ]
+
+---

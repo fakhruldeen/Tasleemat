@@ -1,32 +1,63 @@
 ---
 lang: en
-Form: PROBABILITY AND IMPACT ASSESSMENT (Instructions)
+Form: Probability and Impact Assessment (Instructions)
 ---
 
-# PROBABILITY AND IMPACT ASSESSMENT - LLM GENERATION GUIDE
+# Probability and Impact Assessment - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROBABILITY AND IMPACT ASSESSMENT`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Probability and Impact Assessment». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The probability and impact assessment records definitions for the likelihood of events occurring (probability), and the impact on the various project objectives if they do occur. It also provides a key to assign an overall risk rating (e.g. High, Medium, Low) based on the combined probability and impact scores. This is typically used when a full Risk Management Plan does not exist.
+> **Context and Definition:**
+> A qualitative analysis artifact evaluating the likelihood and potential consequence of identified risks to prioritize them for further analysis or response.
 
-**Tailoring Tips:**
-*   On smaller projects, the impacts may be grouped together without distinguishing impact by objective.
-*   The matrix can be 3x3 for a small project, 5x5 for a medium project, and 10x10 for a complex or large project.
-*   To indicate relative criticality, tighter or looser thresholds can be used. For example, Cost could have tighter thresholds if it is a rigid constraint.
-*   Other objectives (like stakeholder satisfaction) can be added if crucial.
-*   Urgency information can be included if required.
+> **Alignment:**
+> Bridges Risk Register with Probability-Impact Matrix and Quantitative Risk Analysis.
 
 ---
 
-### Section Generation Instructions
+## Assessment Parameters and Scoring Scales
 
-**Definitions of Impact by Objective**
-*   Populate the table providing concrete qualitative or quantitative thresholds for Very High, High, Medium, Low, and Very Low impact for Scope, Quality, Schedule, and Cost. (e.g. "Cost increase of greater than 20%").
+### Probability Scoring Scales and Values
+**Instruction:** The 1 to 5 numerical scale and percentage probability ranges applied.
 
-**Definitions of Probability**
-*   Provide a description or percentage range for the likelihood of occurrence for Very High (e.g. >80%), High, Medium, Low, and Very Low.
+**Generated Value:** [ Add details... ]
 
-**Risk Rating Guidelines**
-*   Provide the rule-set defining what combinations yield High, Medium, or Low overall risk ratings. For example, "High: Any event with a probability of medium or above and a very high impact on any objective."
+### Impact Scoring Scales and Dimensions
+**Instruction:** The 1 to 5 rating scale defining scope, schedule, cost, and quality severity.
+
+**Generated Value:** [ Add details... ]
+
+## Qualitative Risk Evaluation
+
+### Risk ID and Event Title
+**Instruction:** The unique risk tracking identifier and concise description of the risk event.
+
+**Generated Value:** [ Add details... ]
+
+### Evaluated Probability and Impact Ratings
+**Instruction:** Individual probability score and assessed impact rating across project dimensions.
+
+**Generated Value:** [ Add details... ]
+
+### Risk Urgency and Proximity Assessment
+**Instruction:** Time proximity and urgency factor determining how quickly a response is needed.
+
+**Generated Value:** [ Add details... ]
+
+## Risk Exposure Analysis and Prioritization
+
+### Composite Risk Exposure Score
+**Instruction:** Calculated overall risk score (Probability x Impact) placing the risk on the priority ladder.
+
+**Generated Value:** [ Add details... ]
+
+### Priority Category and Mitigation Urgency
+**Instruction:** Classification into High (Red), Moderate (Yellow), or Low (Green) priority bands.
+
+**Generated Value:** [ Add details... ]
+
+---

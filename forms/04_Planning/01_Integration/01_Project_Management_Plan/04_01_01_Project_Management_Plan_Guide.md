@@ -12,60 +12,68 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.01.01`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Project Management Plan** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Project Management Plan** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-The document that describes how the project will be executed, monitored, and controlled.
+A formal comprehensive project management artifact consolidating lifecycle definitions, subsidiary plans, baselines, and variance thresholds.
 
 ---
 
 ### 2. Why?
-It integrates and consolidates all of the subsidiary management plans and baselines to guide the team through project closure.
+Provides the definitive operational baseline and single source of truth for managing project delivery and performance.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Developed during the planning phase and progressively elaborated and maintained throughout the project lifecycle.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+Authored by the Project Manager with input from core team leads, approved by the Project Sponsor and PMO Lead.
 
 ---
-
 
 ### Tailoring Tips
-• For large and complex projects, each subsidiary management plan will likely be a separate stand-alone plan. In this case you may present your project management plan as a shell with just information on the life cycle, development approach, and key reviews, and then provide a link or reference to the more detailed subsidiary management plans.
-• For smaller projects, a project roadmap that summarizes the project phases, major deliverables, milestones, and key reviews may be sufficient.
-• You will likely have additional subsidiary management plans that are relevant to the nature of your project, such as a technology management plan, a logistics management plan, a safety management plan, and so forth.
-
-### Alignment
-The project management plan should be aligned and consistent with the following documents:
-• All subsidiary management plans
-• Project roadmap
-• Milestone list
-
-### 5. How?
-To accurately and professionally complete the **PROJECT MANAGEMENT PLAN**, the responsible party must populate the following sections (ensure `parameters.md` is referenced for global project variables):
-
-*   **Project life cycle:** Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 4 columns: #, Phase, Key activities, Key Deliverables.
-*   **Phase Reviews and Criteria:** Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 5 columns: #, Phase, Reviews, Entry criteria, Exit criteria.
-*   **Development approaches:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 3 columns: #, Deliverable, Development approach.
-*   **Subsidiary management plans:** List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Change Management, Scope Management, Schedule Management, Requirements Management, Cost Management, Quality Management, Resource Management, Communications Management, Risk Management, Procurement Management, Stakeholder Engagement, Other Plans.
-*   **Scope Variance Thresholds:** Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.
-*   **Schedule Variance Thresholds:** Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.
-*   **Cost Variance Thresholds:** Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.
-*   **Baselines:** Attach all project baselines. Common baselines include Scope, Schedule, Cost, and Performance measurement. MUST be formatted as a Markdown table with exactly 3 columns: Baseline, Status / Link, Comment.
+*   Scale the level of detail based on project size, risk profile, and organizational governance maturity.
+*   Emphasize adaptive iteration cadences for agile and hybrid projects.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_01_01_Project_Management_Plan_Template.md)
-* [🤖 LLM Generation Prompt](04_01_01_Project_Management_Plan.md)
-* [📊 Data Schema (JSON)](04_01_01_Project_Management_Plan.json)
-* [📈 Tabular Data (CSV)](04_01_01_Project_Management_Plan.csv)
+### Alignment
+Integrates all subsidiary management plans, scope/schedule/cost baselines, and aligns with the Project Charter and Governance Framework.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Project Management Plan**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Project Life Cycle Description:** Description of the chosen life cycle phases, transitions, and overarching progression.
+*   **Phase Names and Progression:** Defined sequence and boundaries of project phases from inception to closeout.
+*   **Key Phase Activities:** Major technical and managerial activities executed across each project phase.
+*   **Key Phase Deliverables:** Core verified outputs and milestone deliverables generated within each phase.
+*   **Phase Review Mechanism:** Governance gates, health checks, and decision points conducted between phases.
+*   **Phase Entry Criteria:** Mandatory readiness prerequisites and inputs required before entering each phase.
+*   **Phase Exit Criteria:** Specific acceptance standards and approvals needed to formally close each phase.
+*   **Selected Development Approach:** Justification for predictive, agile, hybrid, iterative, or incremental delivery.
+*   **Deliverable-Specific Approaches:** Tailored development methodologies mapped to distinct deliverable types.
+*   **Scope and Requirements Management Summary:** Integration summary of scope definition, baseline control, and requirements tracing.
+*   **Schedule and Cost Management Summary:** Integration summary of schedule development, budgeting, and variance thresholds.
+*   **Quality and Resource Management Summary:** Integration summary of quality standards, staffing, and team development.
+*   **Communications and Stakeholder Summary:** Integration summary of information distribution and stakeholder engagement.
+*   **Risk and Procurement Summary:** Integration summary of risk mitigation and vendor procurement management.
+*   **Change and Configuration Summary:** Integration summary of change control procedures and configuration management.
+*   **Scope Variance Threshold:** Defined boundary for allowable scope variance before triggering formal change control.
+*   **Schedule Variance Threshold:** Permissible schedule variance limits before mandatory schedule recovery actions.
+*   **Cost Variance Threshold:** Authorized percentage or financial variance limits before budget escalation.
+*   **Scope Baseline Definition:** The approved project scope statement, WBS, and associated WBS dictionary.
+*   **Schedule Baseline Definition:** The authorized project schedule model with baseline start and finish dates.
+*   **Cost Baseline Definition:** The approved time-phased project budget excluding management reserves.
+*   **Performance Measurement Baseline (PMB):** Integrated scope-schedule-cost baseline used for earned value management.
 
 </div>

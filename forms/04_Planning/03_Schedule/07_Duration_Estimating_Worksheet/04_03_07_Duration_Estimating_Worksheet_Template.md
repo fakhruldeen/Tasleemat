@@ -1,30 +1,10 @@
-<!--  LLM INSTRUCTIONS: Fill the tables based on the appropriate estimation methods.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **1. Parametric Estimates:** Calculate duration using effort and resource parameters.
-*   **ID:** Unique identifier.
-*   **Activity description:** A brief description of the work.
-*   **Effort hours:** Amount of labor to accomplish work.
-*   **Resource quantity:** Number of resources assigned.
-*   **Percent available:** % of time resources are available.
-*   **Performance factor:** Productivity factor (1.0 is average).
-*   **Duration estimate:** Effort / (Qty * % Avail * Perf Factor).
-*   **2. Analogous Estimates:** Calculate duration using historical comparisons.
-*   **ID:** Unique identifier.
-*   **Activity description:** A brief description of the work.
-*   **Previous activity:** Description of past similar work.
-*   **Previous duration:** Duration of past work.
-*   **Current activity:** Description of current work.
-*   **Multiplier:** Ratio of current vs previous size/complexity.
-*   **Duration estimate:** Prev Duration * Multiplier.
-*   **3. Three-Point Estimates:** Calculate duration using risk-weighted scenarios (Beta distribution).
-*   **ID:** Unique identifier.
-*   **Activity description:** A brief description of the work.
-*   **Optimistic (tO):** Best-case scenario.
-*   **Most Likely (tM):** Normal scenario.
-*   **Pessimistic (tP):** Worst-case scenario.
-*   **Weighting Equation:** Usually (tO + 4tM + tP) / 6.
-*   **Expected Duration (tE):** The calculated result.
+- Parametric Estimates: Provide comprehensive project data for all required fields in this section.
+- Analogous Estimates: Provide comprehensive project data for all required fields in this section.
+- Three-Point Estimates (Beta Distribution): Provide comprehensive project data for all required fields in this section.
+- Aggregated Schedule Reserves: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -32,24 +12,56 @@ Section Instructions:
 <h1 align="center">DURATION ESTIMATING WORKSHEET</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Parametric Estimates
-| ID | Activity Description | Effort Hours | Resource Qty | % Available | Perf. Factor | Duration Estimate |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+## 1. Parametric Estimates
 
-### Analogous Estimates
-| ID | Previous Activity | Prev. Duration | Current Activity | Multiplier | Duration Estimate |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+**Parametric Activity and Unit Metric:**
+[ Add details... ]
 
-### Three-Point Estimates (Beta Distribution)
-| ID | Activity Description | Optimistic (tO) | Most Likely (tM) | Pessimistic (tP) | Weighting Equation | Expected Duration (tE) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+**Quantity and Resource Factor:**
+[ Add details... ]
+
+**Parametric Duration Result:**
+[ Add details... ]
+
+---
+
+## 2. Analogous Estimates
+
+**Historical Reference Activity:**
+[ Add details... ]
+
+**Historical Duration and Complexity Scaling:**
+[ Add details... ]
+
+**Analogous Duration Result:**
+[ Add details... ]
+
+---
+
+## 3. Three-Point Estimates (Beta Distribution)
+
+**Optimistic, Most Likely, and Pessimistic Durations:**
+[ Add details... ]
+
+**Beta Calculated Expected Duration (tE):**
+[ Add details... ]
+
+**Standard Deviation and Variance:**
+[ Add details... ]
+
+---
+
+## 4. Aggregated Schedule Reserves
+
+**Total Calculated Schedule Buffer:**
+[ Add details... ]
+
+**Worksheet Reconciliation and Approval:**
+[ Add details... ]
 
 ---
 
@@ -57,9 +69,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Planning Lead / Scheduler** | {{Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

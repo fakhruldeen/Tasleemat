@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Assumption Log
-nav_order: 1
+nav_order: 3
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,60 +12,56 @@ nav_order: 1
 
 **Document Reference:** `PMO-03.03`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Assumption Log** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Assumption Log** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A project document used to record all assumptions and constraints throughout the project life cycle.
+A dedicated register capturing all operational, technical, and environmental assumptions and constraints.
 
 ---
 
 ### 2. Why?
-Helps in identifying potential risks if assumptions prove false, and clarifies the boundaries and limitations of the project.
+Unverified assumptions and untracked constraints are leading causes of project risk and schedule slippage.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **INITIATING Process Group** of the project lifecycle.
+Initiated during project initiation and continuously updated through execution and monitoring.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+Maintained by the Project Manager with input from the project team and stakeholders.
 
 ---
 
 ### Tailoring Tips
-• Combine the assumption log with the issue register and the decision log, to create an AID Log (A = assumption, I = issue, D = decision). You can create them in a spreadsheet with each sheet dedicated to either assumptions, issues, or decisions.
-• If you have a very large project you may want to keep the constraints in a separate log from the assumptions.
-
-### Alignment
-The assumption log should be aligned and consistent with the following documents:
-• Project charter
-• Issue log
-• Risk register
-
-### 5. How?
-To accurately and professionally complete the **Assumption Log**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **ID:** Unique identifier for the assumption or constraint.
-*   **Type:** Specify whether this entry is an "Assumption" or a "Constraint".
-*   **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).
-*   **Description:** A clear, detailed description of the assumption or constraint.
-*   **Impact if invalid:** The potential risk or impact to the project (e.g., cost, schedule, scope) if the assumption proves false or the constraint is breached.
-*   **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not.
-*   **Due date:** The date by which the assumption needs to be validated.
-*   **Actions:** Specific actions that need to be taken to validate the assumption or monitor the constraint.
-*   **Status:** The current status of the assumption (e.g., active, transferred, or closed).
-*   **Comments:** Any additional information, context, or updates.
+*   Review and validate assumptions at every milestone gate.
+*   Convert invalid assumptions immediately into risk register entries or issue log items.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](03_03_Assumption_Log_Template.md)
-* [🤖 LLM Generation Prompt](03_03_Assumption_Log.md)
-* [📊 Data Schema (JSON)](03_03_Assumption_Log.json)
-* [📈 Tabular Data (CSV)](03_03_Assumption_Log.csv)
+### Alignment
+The Assumption Log aligns with Risk Register, Scope Baseline, and Project Charter.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Assumption Log**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **ID:** Unique identifier for the assumption or constraint entry.
+*   **Type:** Specify whether this entry is an 'Assumption' or a 'Constraint'.
+*   **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).
+*   **Description:** A clear, detailed description of the assumption or constraint.
+*   **Impact if invalid:** The potential risk or impact to the project if the assumption proves false or the constraint is breached.
+*   **Responsible party:** The person or role tasked with following up on the assumption to validate its accuracy.
+*   **Due date:** The target date by which the assumption needs to be validated or reviewed.
+*   **Actions:** Specific actions required to validate the assumption or monitor the constraint.
+*   **Status:** The current status of the assumption (e.g., active, validated, closed).
+*   **Comments:** Any additional information, operational context, or status updates.
 
 </div>

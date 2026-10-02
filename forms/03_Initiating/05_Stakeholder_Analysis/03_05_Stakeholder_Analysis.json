@@ -1,35 +1,39 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this STAKEHOLDER ANALYSIS template based on the provided project context. Context & Definition: Stakeholder analysis is used to classify stakeholders. It can be used to help fill in the stakeholder register. Analyzing stakeholders can also help in planning stakeholder engagement for groups of stakeholders. The following example is used to assess the relative power (high or low), the relative interest (high or low), and the attitude (friend or foe). There are many other ways to categorize stakeholders, such as Influence/impact, or Power/urgency/legitimacy. Stakeholder analysis is a dynamic tool used to identify stakeholders. Alignment: The stakeholder analysis should be aligned and consistent with the following documents: • Stakeholder register • Stakeholder engagement plan",
     "form_name": "STAKEHOLDER ANALYSIS",
     "document_reference": "PMO-03.05",
+    "_llm_instructions": "Populate the fields of 'STAKEHOLDER ANALYSIS' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-03.05.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Stakeholder Analysis Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **ID:** Unique identifier linking back to the Stakeholder Register (e.g., SH-01).\n- **Name or Role:** The name or role of the stakeholder being analyzed.\n- **Interest:** The level of interest the stakeholder has in the project outcomes (e.g., High, Medium, Low).\n- **Influence:** The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).\n- **Attitude:** The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).",
-            "value": [
-                {
-                    "ID": "",
-                    "Name or Role": "",
-                    "Interest": "",
-                    "Influence": "",
-                    "Attitude": ""
-                },
-                {
-                    "ID": "",
-                    "Name or Role": "",
-                    "Interest": "",
-                    "Influence": "",
-                    "Attitude": ""
-                },
-                {
-                    "ID": "",
-                    "Name or Role": "",
-                    "Interest": "",
-                    "Influence": "",
-                    "Attitude": ""
-                }
-            ]
+        "f01_ID": {
+            "section": "Stakeholder Analysis Entries",
+            "label": "ID",
+            "guidance": "Unique identifier linking back to the Stakeholder Register (e.g., SH-01).",
+            "value": ""
+        },
+        "f02_Name_or_Role": {
+            "section": "Stakeholder Analysis Entries",
+            "label": "Name or Role",
+            "guidance": "The name or role of the stakeholder being analyzed.",
+            "value": ""
+        },
+        "f03_Interest": {
+            "section": "Stakeholder Analysis Entries",
+            "label": "Interest",
+            "guidance": "The level of interest the stakeholder has in project outcomes (e.g., High, Medium, Low).",
+            "value": ""
+        },
+        "f04_Influence": {
+            "section": "Stakeholder Analysis Entries",
+            "label": "Influence",
+            "guidance": "The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).",
+            "value": ""
+        },
+        "f05_Attitude": {
+            "section": "Stakeholder Analysis Entries",
+            "label": "Attitude",
+            "guidance": "The stakeholder's stance towards the project (e.g., Champion, Positive, Neutral, Negative).",
+            "value": ""
         }
     }
 }

@@ -12,42 +12,55 @@ nav_order: 5
 
 **Document Reference:** `PMO-04.06.05`
 
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Team Charter** in alignment with the
+Tasleemat framework.
+
 ---
 
-### Context & Definition
-The team charter is used to establish ground rules and guidelines for the team. It is particularly useful on virtual teams and teams that are comprised of members from different organizations. Using a team charter can help establish expectations and agreements on working effectively together. The contents of the team charter typically include: Team values and principles, Meeting guidelines, Communication guidelines, Decision-making process, Conflict resolution process, and Team agreements.
+### 1. What?
+A team social contract defining ground rules, meeting expectations, decision rules, and conflict resolution mechanisms.
 
-**The team charter is an output from 9.1 Plan Resource Management in the PMBOK® Guide – Sixth Edition.** It is generally developed once and does not change; however, if there is substantial team member turnover, the team should periodically revisit the team charter and reaffirm or update it accordingly.
+---
+
+### 2. Why?
+Fosters psychological safety, reduces interpersonal friction, enhances team cohesion, and promotes mutual accountability.
+
+---
+
+### 3. When?
+Created early during project team onboarding and revisited during retrospectives and major team transitions.
+
+---
+
+### 4. Who?
+Authored collaboratively by the Entire Project Team with facilitator guidance from Project Manager or Scrum Master.
+
+---
 
 ### Tailoring Tips
-Consider the following tips to help tailor the team charter to meet your needs:
-*   If you bring in contractors for key roles in the project you should include them in developing the team charter.
-*   If your organization has organizational values, make sure your team charter is aligned with the organizational values.
-*   International teams may need to spend more time developing this document as different cultures have different ways of making decisions and resolving conflicts.
+*   Incorporate agile team working agreements, sprint cadence norms, and mob programming guidelines.
+*   Define multi-site, multi-timezone virtual collaboration standards for distributed teams.
+
+---
 
 ### Alignment
-The team charter should be aligned and consistent with the following documents:
-*   Resource management plan
+Supports Resource Management Plan, Communications Plan, and Stakeholder Engagement.
 
 ---
 
-### Document Elements Description (Table 2.25)
+### 5. How?
+To accurately and professionally complete the **Team Charter**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-| Document Element | Description |
-| :--- | :--- |
-| **Team values and principles** | List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc. |
-| **Meeting guidelines** | Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc. |
-| **Communication guidelines** | List guidelines used for effective communication. Examples include everyone voices their opinion, no dominating the conversation, no interrupting, not using inflammatory language, etc. |
-| **Decision-making process** | Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited. |
-| **Conflict resolution process** | Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc. |
-| **Other agreements** | List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members. |
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_06_05_Team_Charter_Template.md)
-* [🤖 LLM Generation Prompt](04_06_05_Team_Charter.md)
-* [📊 Data Schema (JSON)](04_06_05_Team_Charter.json)
-* [📈 Tabular Data (CSV)](04_06_05_Team_Charter.csv)
+*   **Core Team Values:** Guiding moral, professional, and behavioral values agreed upon by the team.
+*   **Shared Project Mission and Vision:** Collective vision articulating the team's commitment to delivering quality project outcomes.
+*   **Working Norms and Ground Rules:** Standard rules governing daily conduct, accountability, punctuality, and mutual respect.
+*   **Core Working Hours and Availability:** Agreed overlapping collaboration hours, remote working standards, and response timeframes.
+*   **Meeting Cadence and Rules:** Protocols for daily standups, status meetings, retrospectives, agendas, and note taking.
+*   **Communication Channels Usage:** Guidelines defining appropriate use of instant messaging, email, ticketing, and documentation repositories.
+*   **Decision-Making Framework:** Agreed decision methodology (e.g., consensus, majority vote, or technical lead authority).
+*   **Conflict Escalation and Resolution Steps:** Constructive step-by-step process for resolving interpersonal and technical disputes.
+*   **Team Signatures and Commitment:** Formal acknowledgment and commitment signed by all active project team members.
 
 </div>

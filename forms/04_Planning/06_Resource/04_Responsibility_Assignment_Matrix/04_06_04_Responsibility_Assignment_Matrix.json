@@ -1,50 +1,57 @@
 {
-    "_llm_instructions": "Populate the Responsibility Assignment Matrix (RAM) and its Key.",
-    "form_name": "RESPONSIBILITY ASSIGNMENT MATRIX RAM",
+    "form_name": "RESPONSIBILITY ASSIGNMENT MATRIX",
     "document_reference": "PMO-04.06.04",
+    "_llm_instructions": "Populate the fields of 'RESPONSIBILITY ASSIGNMENT MATRIX' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.06.04.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Responsibility Assignment Matrix": {
-            "guidance": "Array of assignments. The 'Work Package / Activity' is the row name, and other key-value pairs map Resource Names to their Participation Level (e.g., R, A, C, I).",
-            "value": [
-                {
-                    "Work Package / Activity": "Example: Gather Requirements",
-                    "Resource 1 Name": "R",
-                    "Resource 2 Name": "A",
-                    "Resource 3 Name": "C"
-                }
-            ]
+        "f01_Responsible_R_Definition": {
+            "section": "RACI Model Definitions and Key",
+            "label": "Responsible (R) Definition",
+            "guidance": "Definition: The role assigned to do the work and complete the activity deliverable.",
+            "value": ""
         },
-        "Participation Key / Legend": {
-            "guidance": "Array defining the participation codes used in the matrix.",
-            "value": [
-                {
-                    "Code": "R",
-                    "Role": "Responsible",
-                    "Description": "Does the work to complete the task."
-                },
-                {
-                    "Code": "A",
-                    "Role": "Accountable",
-                    "Description": "Ultimately answerable for the correct and thorough completion of the task."
-                },
-                {
-                    "Code": "C",
-                    "Role": "Consulted",
-                    "Description": "Those whose opinions are sought, typically subject matter experts."
-                },
-                {
-                    "Code": "I",
-                    "Role": "Informed",
-                    "Description": "Those who are kept up-to-date on progress."
-                },
-                {
-                    "Code": "S",
-                    "Role": "Sign-off",
-                    "Description": "Approves the specific deliverable or phase."
-                }
-            ]
+        "f02_Accountable_A_Definition": {
+            "section": "RACI Model Definitions and Key",
+            "label": "Accountable (A) Definition",
+            "guidance": "Definition: The single role with ultimate ownership, decision authority, and sign-off approval.",
+            "value": ""
+        },
+        "f03_Consulted_C_Definition": {
+            "section": "RACI Model Definitions and Key",
+            "label": "Consulted (C) Definition",
+            "guidance": "Definition: Subject matter experts providing vital two-way input and technical guidance.",
+            "value": ""
+        },
+        "f04_Informed_I_Definition": {
+            "section": "RACI Model Definitions and Key",
+            "label": "Informed (I) Definition",
+            "guidance": "Definition: Stakeholders kept updated on progress, milestones, and decisions via one-way communication.",
+            "value": ""
+        },
+        "f05_WBS_Deliverable_and_Assigned_RACI_Codes": {
+            "section": "Assignment Matrix (Work Packages vs Roles)",
+            "label": "WBS Deliverable and Assigned RACI Codes",
+            "guidance": "Tabular mapping assigning explicit R, A, C, and I roles for each major WBS work package.",
+            "value": ""
+        },
+        "f06_Role_Coverage_and_Work_Distribution": {
+            "section": "Assignment Matrix (Work Packages vs Roles)",
+            "label": "Role Coverage and Work Distribution",
+            "guidance": "Verification that every activity has exactly one Accountable role and at least one Responsible role.",
+            "value": ""
+        },
+        "f07_Single_Accountability_Governance_Rule": {
+            "section": "Governance and Accountability Rules",
+            "label": "Single Accountability Governance Rule",
+            "guidance": "Mandatory policy prohibiting multiple Accountable (A) assignments per deliverable to prevent diffusion of responsibility.",
+            "value": ""
+        },
+        "f08_Escalation_and_Conflict_Resolution_Protocol": {
+            "section": "Governance and Accountability Rules",
+            "label": "Escalation and Conflict Resolution Protocol",
+            "guidance": "Process for resolving role overlaps, gaps, and decision deadlocks across project leads.",
+            "value": ""
         }
     }
 }

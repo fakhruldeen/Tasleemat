@@ -1,207 +1,141 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROJECT MANAGEMENT PLAN template based on the provided project context. Context & Definition: The project management plan describes how the team will execute, monitor, control, and close the project. While it has some unique information, it is primarily comprised of all the subsidiary management plans and the baselines. The project management plan combines all this information into a cohesive and integrated approach to managing the project. The project management plan contains plans for managing all the Knowledge Areas as well as specific aspects of the project that require special focus. The project management plan also contains baselines. Common baselines include: Scope, Schedule, Cost, and Performance measurement baseline. The project management plan can receive information from all the subsidiary management plans and baselines, and provides information to all other integration processes. This document is developed as the initial project planning is conducted, and then it is not usually changed unless there is a significant change in the charter, environment, or scope of the project. Alignment: The project management plan should be aligned and consistent with the following documents: • All subsidiary management plans • Project roadmap • Milestone list",
     "form_name": "PROJECT MANAGEMENT PLAN",
     "document_reference": "PMO-04.01.01",
+    "_llm_instructions": "Populate the fields of 'PROJECT MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.01.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project life cycle": {
-            "guidance": "Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 4 columns: #, Phase, Key activities, Key Deliverables.",
-            "value": [
-                {
-                    "#": "1",
-                    "Phase": "",
-                    "Key activities": "",
-                    "Key Deliverables": ""
-                },
-                {
-                    "#": "2",
-                    "Phase": "",
-                    "Key activities": "",
-                    "Key Deliverables": ""
-                },
-                {
-                    "#": "3",
-                    "Phase": "",
-                    "Key activities": "",
-                    "Key Deliverables": ""
-                }
-            ]
+        "f01_Project_Life_Cycle_Description": {
+            "section": "Project Life Cycle",
+            "label": "Project Life Cycle Description",
+            "guidance": "Description of the chosen life cycle phases, transitions, and overarching progression.",
+            "value": ""
         },
-        "Phase Reviews and Criteria": {
-            "guidance": "Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 5 columns: #, Phase, Reviews, Entry criteria, Exit criteria.",
-            "value": [
-                {
-                    "#": "1",
-                    "Phase": "",
-                    "Reviews": "",
-                    "Entry criteria": "",
-                    "Exit criteria": ""
-                },
-                {
-                    "#": "2",
-                    "Phase": "",
-                    "Reviews": "",
-                    "Entry criteria": "",
-                    "Exit criteria": ""
-                },
-                {
-                    "#": "3",
-                    "Phase": "",
-                    "Reviews": "",
-                    "Entry criteria": "",
-                    "Exit criteria": ""
-                }
-            ]
+        "f02_Phase_Names_and_Progression": {
+            "section": "Project Life Cycle",
+            "label": "Phase Names and Progression",
+            "guidance": "Defined sequence and boundaries of project phases from inception to closeout.",
+            "value": ""
         },
-        "Development approaches": {
-            "guidance": "Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 3 columns: #, Deliverable, Development approach.",
-            "value": [
-                {
-                    "#": "1",
-                    "Deliverable": "",
-                    "Development approach": ""
-                },
-                {
-                    "#": "2",
-                    "Deliverable": "",
-                    "Development approach": ""
-                },
-                {
-                    "#": "3",
-                    "Deliverable": "",
-                    "Development approach": ""
-                }
-            ]
+        "f03_Key_Phase_Activities": {
+            "section": "Project Life Cycle",
+            "label": "Key Phase Activities",
+            "guidance": "Major technical and managerial activities executed across each project phase.",
+            "value": ""
         },
-        "Subsidiary management plans": {
-            "guidance": "List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Change Management, Scope Management, Schedule Management, Requirements Management, Cost Management, Quality Management, Resource Management, Communications Management, Risk Management, Procurement Management, Stakeholder Engagement, Other Plans.",
-            "value": [
-                {
-                    "Name": "Change Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Scope Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Schedule Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Requirements Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Cost Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Quality Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Resource Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Communications Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Risk Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Procurement Management",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Stakeholder Engagement",
-                    "Comment": ""
-                },
-                {
-                    "Name": "Other Plans",
-                    "Comment": ""
-                }
-            ]
+        "f04_Key_Phase_Deliverables": {
+            "section": "Project Life Cycle",
+            "label": "Key Phase Deliverables",
+            "guidance": "Core verified outputs and milestone deliverables generated within each phase.",
+            "value": ""
         },
-        "Scope Variance Thresholds": {
-            "guidance": "Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.",
-            "value": [
-                {
-                    "Scope variance threshold": "",
-                    "Scope baseline management": ""
-                },
-                {
-                    "Scope variance threshold": "",
-                    "Scope baseline management": ""
-                },
-                {
-                    "Scope variance threshold": "",
-                    "Scope baseline management": ""
-                }
-            ]
+        "f05_Phase_Review_Mechanism": {
+            "section": "Phase Reviews and Criteria",
+            "label": "Phase Review Mechanism",
+            "guidance": "Governance gates, health checks, and decision points conducted between phases.",
+            "value": ""
         },
-        "Schedule Variance Thresholds": {
-            "guidance": "Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.",
-            "value": [
-                {
-                    "Schedule variance threshold": "",
-                    "Schedule baseline management": ""
-                },
-                {
-                    "Schedule variance threshold": "",
-                    "Schedule baseline management": ""
-                },
-                {
-                    "Schedule variance threshold": "",
-                    "Schedule baseline management": ""
-                }
-            ]
+        "f06_Phase_Entry_Criteria": {
+            "section": "Phase Reviews and Criteria",
+            "label": "Phase Entry Criteria",
+            "guidance": "Mandatory readiness prerequisites and inputs required before entering each phase.",
+            "value": ""
         },
-        "Cost Variance Thresholds": {
-            "guidance": "Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.",
-            "value": [
-                {
-                    "Cost variance threshold": "",
-                    "Cost baseline management": ""
-                },
-                {
-                    "Cost variance threshold": "",
-                    "Cost baseline management": ""
-                },
-                {
-                    "Cost variance threshold": "",
-                    "Cost baseline management": ""
-                }
-            ]
+        "f07_Phase_Exit_Criteria": {
+            "section": "Phase Reviews and Criteria",
+            "label": "Phase Exit Criteria",
+            "guidance": "Specific acceptance standards and approvals needed to formally close each phase.",
+            "value": ""
         },
-        "Baselines": {
-            "guidance": "Attach all project baselines. Common baselines include Scope, Schedule, Cost, and Performance measurement. MUST be formatted as a Markdown table with exactly 3 columns: Baseline, Status / Link, Comment.",
-            "value": [
-                {
-                    "Baseline": "Scope baseline",
-                    "Status / Link": "",
-                    "Comment": ""
-                },
-                {
-                    "Baseline": "Schedule baseline",
-                    "Status / Link": "",
-                    "Comment": ""
-                },
-                {
-                    "Baseline": "Cost baseline",
-                    "Status / Link": "",
-                    "Comment": ""
-                },
-                {
-                    "Baseline": "Performance measurement baseline",
-                    "Status / Link": "",
-                    "Comment": ""
-                }
-            ]
+        "f08_Selected_Development_Approach": {
+            "section": "Development Approaches",
+            "label": "Selected Development Approach",
+            "guidance": "Justification for predictive, agile, hybrid, iterative, or incremental delivery.",
+            "value": ""
+        },
+        "f09_Deliverable_Specific_Approaches": {
+            "section": "Development Approaches",
+            "label": "Deliverable-Specific Approaches",
+            "guidance": "Tailored development methodologies mapped to distinct deliverable types.",
+            "value": ""
+        },
+        "f10_Scope_and_Requirements_Management_Summary": {
+            "section": "Subsidiary Management Plans",
+            "label": "Scope and Requirements Management Summary",
+            "guidance": "Integration summary of scope definition, baseline control, and requirements tracing.",
+            "value": ""
+        },
+        "f11_Schedule_and_Cost_Management_Summary": {
+            "section": "Subsidiary Management Plans",
+            "label": "Schedule and Cost Management Summary",
+            "guidance": "Integration summary of schedule development, budgeting, and variance thresholds.",
+            "value": ""
+        },
+        "f12_Quality_and_Resource_Management_Summary": {
+            "section": "Subsidiary Management Plans",
+            "label": "Quality and Resource Management Summary",
+            "guidance": "Integration summary of quality standards, staffing, and team development.",
+            "value": ""
+        },
+        "f13_Communications_and_Stakeholder_Summary": {
+            "section": "Subsidiary Management Plans",
+            "label": "Communications and Stakeholder Summary",
+            "guidance": "Integration summary of information distribution and stakeholder engagement.",
+            "value": ""
+        },
+        "f14_Risk_and_Procurement_Summary": {
+            "section": "Subsidiary Management Plans",
+            "label": "Risk and Procurement Summary",
+            "guidance": "Integration summary of risk mitigation and vendor procurement management.",
+            "value": ""
+        },
+        "f15_Change_and_Configuration_Summary": {
+            "section": "Subsidiary Management Plans",
+            "label": "Change and Configuration Summary",
+            "guidance": "Integration summary of change control procedures and configuration management.",
+            "value": ""
+        },
+        "f16_Scope_Variance_Threshold": {
+            "section": "Variance Thresholds",
+            "label": "Scope Variance Threshold",
+            "guidance": "Defined boundary for allowable scope variance before triggering formal change control.",
+            "value": ""
+        },
+        "f17_Schedule_Variance_Threshold": {
+            "section": "Variance Thresholds",
+            "label": "Schedule Variance Threshold",
+            "guidance": "Permissible schedule variance limits before mandatory schedule recovery actions.",
+            "value": ""
+        },
+        "f18_Cost_Variance_Threshold": {
+            "section": "Variance Thresholds",
+            "label": "Cost Variance Threshold",
+            "guidance": "Authorized percentage or financial variance limits before budget escalation.",
+            "value": ""
+        },
+        "f19_Scope_Baseline_Definition": {
+            "section": "Project Baselines",
+            "label": "Scope Baseline Definition",
+            "guidance": "The approved project scope statement, WBS, and associated WBS dictionary.",
+            "value": ""
+        },
+        "f20_Schedule_Baseline_Definition": {
+            "section": "Project Baselines",
+            "label": "Schedule Baseline Definition",
+            "guidance": "The authorized project schedule model with baseline start and finish dates.",
+            "value": ""
+        },
+        "f21_Cost_Baseline_Definition": {
+            "section": "Project Baselines",
+            "label": "Cost Baseline Definition",
+            "guidance": "The approved time-phased project budget excluding management reserves.",
+            "value": ""
+        },
+        "f22_Performance_Measurement_Baseline_PMB": {
+            "section": "Project Baselines",
+            "label": "Performance Measurement Baseline (PMB)",
+            "guidance": "Integrated scope-schedule-cost baseline used for earned value management.",
+            "value": ""
         }
     }
 }

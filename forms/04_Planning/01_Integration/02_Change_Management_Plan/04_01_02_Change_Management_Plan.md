@@ -1,18 +1,95 @@
-# CHANGE MANAGEMENT PLAN - LLM GENERATION GUIDE
+---
+lang: en
+Form: Change Management Plan (Instructions)
+---
 
-**System Prompt:**
-You are an expert Project Manager. Your task is to generate a comprehensive Change Management Plan based on the provided project context. 
+# Change Management Plan - Generation Prompt
 
-**Context & Definition:**
-The change management plan is a component of the project management plan. It describes how change will be managed on the project. Typical information includes the structure and membership of a change control board, definitions of change, and the step-by-step change control process (submittal, tracking, review, and disposition). The document is typically developed once and is not usually changed.
+<!--
+System Instructions: This document contains instructions for generating the
+«Change Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-**Alignment:**
-The change management plan should be aligned and consistent with the following documents: Project roadmap or development approach, Scope management plan, Requirements management plan, Schedule management plan, Cost management plan, Quality management plan, Configuration management plan.
+> **Context and Definition:**
+> A key subsidiary plan defining how changes to project baselines and deliverables are identified, documented, assessed, approved, and tracked.
 
-**Instructions:**
-*   **Change management approach:** Describe the degree of change control and how change control will integrate with other aspects of project management.
-*   **Definitions of change:** Define when a variance needs to go through the change control process to be re-baselined for schedule, budget, scope, and project documents. MUST be formatted as a Markdown table with exactly 2 columns: Type of Change, Definition & Re-baseline Trigger. The following rows MUST be pre-filled under Type of Change: Schedule Change, Budget Change, Scope Change, Project Document Change.
-*   **Change control board:** Identify the structure and membership of the Change Control Board (CCB), including roles, responsibilities, and authority levels. MUST be formatted as a Markdown table with exactly 4 columns: Name, Role, Responsibility, Authority.
-*   **Change control process:** Describe the processes for change request submittal, tracking, review, and outcome disposition. MUST be formatted as a Markdown table with exactly 2 columns: Process Step, Description. The following rows MUST be pre-filled under Process Step: Change request submittal, Change request tracking, Change request review, Change request outcome.
+> **Alignment:**
+> Integrates with Project Management Plan, Change Log, Configuration Management Plan, and baseline artifacts.
 
-Ensure the final output is directly ready for the markdown template.
+---
+
+## Change Management Approach
+
+### Change Philosophy and Governance
+**Instruction:** Principles governing how change requests are evaluated, prioritized, and approved.
+
+**Generated Value:** [ Add details... ]
+
+### Change Thresholds and Triggers
+**Instruction:** Conditions and variance thresholds that necessitate formal change control submissions.
+
+**Generated Value:** [ Add details... ]
+
+### Change Tracking and Tools
+**Instruction:** Software tools and tracking mechanisms used to log and trace change requests.
+
+**Generated Value:** [ Add details... ]
+
+## Definitions of Change
+
+### Minor Change Definition
+**Instruction:** Criteria for low-impact changes manageable within existing project tolerances.
+
+**Generated Value:** [ Add details... ]
+
+### Major Change Definition
+**Instruction:** Criteria for significant changes affecting baselines, budgets, or critical path.
+
+**Generated Value:** [ Add details... ]
+
+### Emergency Change Definition
+**Instruction:** Expedited protocols for urgent operational or security change interventions.
+
+**Generated Value:** [ Add details... ]
+
+## Change Control Board (CCB)
+
+### CCB Composition and Roles
+**Instruction:** Designated members, roles, and voting authority within the Change Control Board.
+
+**Generated Value:** [ Add details... ]
+
+### Meeting Cadence and Quorum
+**Instruction:** Frequency of CCB meetings and quorum requirements for binding change approvals.
+
+**Generated Value:** [ Add details... ]
+
+### Escalation and Delegation Rules
+**Instruction:** Rules governing threshold-based escalation to executive sponsors or steering committees.
+
+**Generated Value:** [ Add details... ]
+
+## Change Control Process
+
+### Change Submission Workflow
+**Instruction:** Standard operating procedure for logging and submitting formal change requests.
+
+**Generated Value:** [ Add details... ]
+
+### Impact Assessment Methodology
+**Instruction:** Cross-functional analysis evaluating scope, schedule, cost, quality, and risk impact.
+
+**Generated Value:** [ Add details... ]
+
+### Approval and Baseline Update Protocol
+**Instruction:** Formal sign-off steps and procedures for updating affected baselines and plans.
+
+**Generated Value:** [ Add details... ]
+
+### Communication and Implementation
+**Instruction:** Process for communicating change decisions and tracking implementation progress.
+
+**Generated Value:** [ Add details... ]
+
+---

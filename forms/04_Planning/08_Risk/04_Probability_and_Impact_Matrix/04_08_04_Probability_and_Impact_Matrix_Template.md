@@ -1,52 +1,47 @@
-<!-- LLM INSTRUCTIONS: Populate the Probability and Impact Matrix based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Section-by-Section Instructions:
-- Probability and Impact Matrix (Threats): Provide the exact numerical scores in each box of the 5x5 matrix for negative risks (threats).
-- Probability and Impact Matrix (Opportunities): Provide the exact numerical scores in each box of the 5x5 matrix for positive risks (opportunities).
-- Risk Score Thresholds: Define the numerical range and required actions for High, Medium, and Low risk tiers.
-
-Ensure lists and tables are populated strictly according to the markdown structure provided. -->
+Section Instructions:
+- Matrix Architecture and Rating Thresholds: Provide comprehensive project data for all required fields in this section.
+- Threat and Opportunity Scoring Grid: Provide comprehensive project data for all required fields in this section.
+- Risk Thresholds and Escalation Rules: Provide comprehensive project data for all required fields in this section.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROBABILITY AND IMPACT MATRIX</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
-| :--- | :--- |
-
----
-
-## Probability and Impact Matrix (Threats)
-
-| Probability \ Impact | Very Low | Low | Medium | High | Very High |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Very High** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **High** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **Medium** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **Low** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **Very Low** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-
----
-
-## Probability and Impact Matrix (Opportunities)
-
-| Probability \ Impact | Very Low | Low | Medium | High | Very High |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Very High** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **High** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **Medium** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **Low** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-| **Very Low** | [ Score ] | [ Score ] | [ Score ] | [ Score ] | [ Score ] |
-
----
-
-## Risk Score Thresholds
-
-| Risk Tier | Score Range | Required Action |
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
 | :--- | :--- | :--- |
-| **High Risk (Red)** | [ e.g., 0.18 - 0.72 ] | [ e.g., Immediate mitigation plan required, escalate to sponsor. ] |
-| **Medium Risk (Yellow)** | [ e.g., 0.05 - 0.14 ] | [ e.g., Monitor closely, develop contingency plan. ] |
-| **Low Risk (Green)** | [ e.g., 0.01 - 0.04 ] | [ e.g., Add to watch list, no immediate action required. ] |
+
+---
+
+## 1. Matrix Architecture and Rating Thresholds
+
+**Matrix Grid Dimensions and Scaling:**
+[ Add details... ]
+
+**Risk Tolerance and Severity Bands:**
+[ Add details... ]
+
+---
+
+## 2. Threat and Opportunity Scoring Grid
+
+**Threat Evaluation Grid Mapping:**
+[ Add details... ]
+
+**Opportunity Evaluation Grid Mapping:**
+[ Add details... ]
+
+---
+
+## 3. Risk Thresholds and Escalation Rules
+
+**Mandatory Treatment Thresholds:**
+[ Add details... ]
+
+**Executive Escalation Protocols:**
+[ Add details... ]
 
 ---
 
@@ -54,9 +49,9 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Risk Manager** | {{Risk_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Risk / Procurement Lead** | {{Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

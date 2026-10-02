@@ -1,70 +1,92 @@
 ---
 lang: en
-Form: SCOPE MANAGEMENT PLAN (Instructions)
+Form: Scope Management Plan (Instructions)
 ---
 
-# SCOPE MANAGEMENT PLAN - LLM GENERATION GUIDE
+# Scope Management Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `SCOPE MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Scope Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The scope management plan is part of the project management plan. It specifies how the project scope will be defined, developed, monitored, controlled, and validated. Planning how to manage scope should include at least processes for developing a detailed scope statement, decomposing the project into discrete deliverables using a WBS, determining what constitutes a scope change versus a revision, maintaining the WBS and the scope baseline, and how deliverables will be accepted. The scope management plan can receive information from the project charter and project management plan, and it provides information to requirements documentation, scope statement, WBS, and WBS dictionary. It is developed once and does not usually change.
-> 
+> **Context and Definition:**
+> A subsidiary plan defining how project scope is developed, structured, verified, and controlled throughout execution.
+
 > **Alignment:**
-> The scope management plan should be aligned and consistent with the following documents:
-• Development approach
-• Life cycle description
-• Change management plan
-• Requirements management plan
-• Release and iteration plan
+> Integrates with Project Scope Statement, WBS, Requirements Management Plan, and Change Management Plan.
 
 ---
 
-### Project Scope Statement Preparation
-**Instruction:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
+## Scope Definition Process
+
+### Scope Planning Approach
+**Instruction:** Overall approach for developing the detailed project scope statement and requirements.
+
+**Generated Value:** [ Add details... ]
+
+### Roles and Responsibilities (Scope)
+**Instruction:** Key roles responsible for defining, decomposing, and validating project scope.
+
+**Generated Value:** [ Add details... ]
+
+### Scope Statement Preparation Steps
+**Instruction:** Sequence of analytical activities used to author and validate the scope statement.
+
+**Generated Value:** [ Add details... ]
+
+## WBS Creation and Structure
+
+### WBS Decomposition Methodology
+**Instruction:** Techniques used to break down major deliverables into verifiable work packages.
+
+**Generated Value:** [ Add details... ]
+
+### WBS Level of Detail
+**Instruction:** Guidelines governing the granularity and completion criteria for lowest-level WBS nodes.
+
+**Generated Value:** [ Add details... ]
+
+### WBS Identification Scheme
+**Instruction:** Numbering and hierarchical coding structure applied across the work breakdown structure.
+
+**Generated Value:** [ Add details... ]
+
+## WBS Dictionary and Baseline Maintenance
+
+### WBS Dictionary Development
+**Instruction:** Standard procedure for authoring detailed work package definitions and milestones.
+
+**Generated Value:** [ Add details... ]
+
+### Scope Baseline Approval and Maintenance
+**Instruction:** Formal protocols for baseline sign-off, version control, and maintenance updates.
+
+**Generated Value:** [ Add details... ]
+
+## Scope Verification and Deliverable Acceptance
+
+### Deliverable Verification Process
+**Instruction:** Quality control and technical verification procedures prior to client inspection.
+
+**Generated Value:** [ Add details... ]
+
+### Formal Acceptance Criteria and Sign-off
+**Instruction:** Step-by-step procedure for obtaining formal customer or sponsor acceptance.
+
+**Generated Value:** [ Add details... ]
+
+## Scope Control and Integration
+
+### Scope Change Control Integration
+**Instruction:** Workflow connecting scope variance identification to formal change request processing.
+
+**Generated Value:** [ Add details... ]
+
+### Scope and Requirements Traceability Integration
+**Instruction:** Alignment mechanism linking requirements traceability to scope deliverables.
+
+**Generated Value:** [ Add details... ]
 
 ---
-
-### Roles and Responsibilities
-**Instruction:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
-
----
-
-### WBS
-**Instruction:** Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. Document guidelines for establishing control accounts and work packages. Use lists where appropriate.
-
----
-
-### Project Scope Statement Preparation
-**Instruction:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
-
----
-
-### Roles and Responsibilities
-**Instruction:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
-
----
-
-### WBS Dictionary
-**Instruction:** Identify the information that will be documented in the WBS Dictionary and the level of detail required. Use lists where appropriate.
-
----
-
-### Scope baseline maintenance
-**Instruction:** Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. Use lists where appropriate.
-
----
-
-### Deliverable acceptance
-**Instruction:** For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off. Use lists where appropriate.
-
----
-
-### Scope and requirements integration
-**Instruction:** Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur. Use lists where appropriate.
-
----
-
-### Project management and business analysis integration
-**Instruction:** Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations. Use lists where appropriate.

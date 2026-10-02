@@ -16,10 +16,10 @@ Section-by-Section Instructions:
 
 ---
 
-> **Rating Legend:**
-> `[X]` Exceeds Expectations
-> `[M]` Meets Expectations
-> `[N]` Needs Improvement
+**Rating Legend:**
+`[X]` Exceeds Expectations
+`[M]` Meets Expectations
+`[N]` Needs Improvement
 
 ---
 

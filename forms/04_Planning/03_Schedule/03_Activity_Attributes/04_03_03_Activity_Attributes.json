@@ -1,62 +1,63 @@
 {
-    "_llm_instructions": "Generate an array of activity attributes. Dependencies must be an array of objects.",
     "form_name": "ACTIVITY ATTRIBUTES",
     "document_reference": "PMO-04.03.03",
+    "_llm_instructions": "Populate the fields of 'ACTIVITY ATTRIBUTES' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Activity Attributes": {
-            "guidance": "Generate a JSON array of activity objects with their detailed attributes.",
-            "value": [
-                {
-                    "ID": "",
-                    "Activity Name": "",
-                    "Planned Release / Iteration": "",
-                    "Description of Work": "",
-                    "Dependencies & Scheduling": [
-                        {
-                            "Predecessor": "",
-                            "Predecessor Relationship": "",
-                            "Predecessor Lead/Lag": "",
-                            "Successor": "",
-                            "Successor Relationship": "",
-                            "Successor Lead/Lag": ""
-                        }
-                    ],
-                    "Number & Type of Team Resources Required": "",
-                    "Skill Requirements": "",
-                    "Required Resources": "",
-                    "Imposed dates": "",
-                    "Constraints": "",
-                    "Assumptions": "",
-                    "Location of performance": "",
-                    "Type of effort": ""
-                },
-                {
-                    "ID": "",
-                    "Activity Name": "",
-                    "Planned Release / Iteration": "",
-                    "Description of Work": "",
-                    "Dependencies & Scheduling": [
-                        {
-                            "Predecessor": "",
-                            "Predecessor Relationship": "",
-                            "Predecessor Lead/Lag": "",
-                            "Successor": "",
-                            "Successor Relationship": "",
-                            "Successor Lead/Lag": ""
-                        }
-                    ],
-                    "Number & Type of Team Resources Required": "",
-                    "Skill Requirements": "",
-                    "Required Resources": "",
-                    "Imposed dates": "",
-                    "Constraints": "",
-                    "Assumptions": "",
-                    "Location of performance": "",
-                    "Type of effort": ""
-                }
-            ]
+        "f01_Activity_Code_and_Title": {
+            "section": "Activity Identification and Overview",
+            "label": "Activity Code and Title",
+            "guidance": "Unique identifier code and full descriptive title of the schedule activity.",
+            "value": ""
+        },
+        "f02_Activity_Description_and_Scope_Summary": {
+            "section": "Activity Identification and Overview",
+            "label": "Activity Description and Scope Summary",
+            "guidance": "Detailed technical narrative of the specific scope executed under this activity.",
+            "value": ""
+        },
+        "f03_Assigned_Work_Package_Reference": {
+            "section": "Activity Identification and Overview",
+            "label": "Assigned Work Package Reference",
+            "guidance": "Corresponding parent WBS code and deliverable component mapping.",
+            "value": ""
+        },
+        "f04_Predecessor_Activities_and_Logic": {
+            "section": "Activity Predecessors and Successors",
+            "label": "Predecessor Activities and Logic",
+            "guidance": "List of preceding activities with dependency relationships (FS, SS, FF, SF) and lead/lag times.",
+            "value": ""
+        },
+        "f05_Successor_Activities_and_Logic": {
+            "section": "Activity Predecessors and Successors",
+            "label": "Successor Activities and Logic",
+            "guidance": "List of succeeding activities dependent upon the completion or start of this activity.",
+            "value": ""
+        },
+        "f06_Required_Team_Roles_and_Headcount": {
+            "section": "Resource and Skill Requirements",
+            "label": "Required Team Roles and Headcount",
+            "guidance": "Specific staffing roles, technical disciplines, and quantity of resources required.",
+            "value": ""
+        },
+        "f07_Technical_Skills_and_Equipment_Needed": {
+            "section": "Resource and Skill Requirements",
+            "label": "Technical Skills and Equipment Needed",
+            "guidance": "Specialized skill sets, machinery, software licenses, or facilities required for performance.",
+            "value": ""
+        },
+        "f08_Imposed_Start_and_Finish_Dates": {
+            "section": "Execution Constraints and Imposed Dates",
+            "label": "Imposed Start and Finish Dates",
+            "guidance": "Contractual or management-mandated fixed start/finish constraint dates.",
+            "value": ""
+        },
+        "f09_Activity_Assumptions_and_Location_Constraints": {
+            "section": "Execution Constraints and Imposed Dates",
+            "label": "Activity Assumptions and Location Constraints",
+            "guidance": "Critical assumptions regarding execution conditions, performance location, and physical constraints.",
+            "value": ""
         }
     }
 }

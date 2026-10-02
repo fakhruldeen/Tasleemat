@@ -1,48 +1,50 @@
-<!-- LLM INSTRUCTIONS: Populate the Stakeholder Engagement Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Section-by-Section Instructions:
-- Stakeholder Engagement Assessment Matrix: Use 'C' for Current and 'D' for Desired engagement level (Unaware, Resistant, Neutral, Supportive, Leading).
-- Stakeholder Changes: Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.
-- Interrelationships: List any relationships between and among stakeholder groups.
-- Stakeholder Engagement Approach: Describe the approach you will use with each stakeholder to move them to the preferred level of engagement. -->
+Section Instructions:
+- Stakeholder Engagement Assessment Matrix: Provide comprehensive project data for all required fields in this section.
+- Stakeholder Relationships and Interdependencies: Provide comprehensive project data for all required fields in this section.
+- Engagement Strategies and Action Protocols: Provide comprehensive project data for all required fields in this section.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">STAKEHOLDER ENGAGEMENT PLAN</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
-| :--- | :--- |
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |
 
 ---
 
 ## 1. Stakeholder Engagement Assessment Matrix
-*Note: Use "C" for Current Engagement Level, and "D" for Desired Engagement Level.*
 
-| Stakeholder Name | Unaware | Resistant | Neutral | Supportive | Leading |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Stakeholder Name and Role:**
+[ Add details... ]
 
----
+**Current vs Desired Engagement Level:**
+[ Add details... ]
 
-## 2. Stakeholder Changes
+**Engagement Gap Analysis:**
 [ Add details... ]
 
 ---
 
-## 3. Interrelationships
+## 2. Stakeholder Relationships and Interdependencies
+
+**Inter-Stakeholder Dynamics and Coalitions:**
+[ Add details... ]
+
+**Stakeholder Expectations and Key Concerns:**
 [ Add details... ]
 
 ---
 
-## 4. Stakeholder Engagement Approach
+## 3. Engagement Strategies and Action Protocols
 
-| Stakeholder Name | Engagement Approach |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] |
+**Tailored Engagement Strategy:**
+[ Add details... ]
+
+**Engagement Monitoring and Feedback Loop:**
+[ Add details... ]
 
 ---
 
@@ -51,8 +53,8 @@ Section-by-Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Communications Lead** | {{Communications_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Risk / Procurement Lead** | {{Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

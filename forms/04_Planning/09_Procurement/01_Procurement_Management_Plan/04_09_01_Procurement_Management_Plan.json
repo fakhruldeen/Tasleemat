@@ -1,91 +1,57 @@
 {
-    "_llm_instructions": "Populate the Procurement Management Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Procurement Integration: Define how the contractor's work will integrate with the project (Scope, Schedule, Documentation, Risk, Reporting).\n- Timing of Procurement Activities: Identify the timetable of key procurement activities.\n- Performance Metrics: Document the metrics that will be used to evaluate the seller's performance.\n- Roles, Responsibilities, and Authority: Define the roles, responsibilities, and authority level.\n- Assumptions and Constraints: Record assumptions and constraints related to the procurement activities.\n- Legal Jurisdiction and Currency: Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.\n- Independent Estimates: Document whether independent cost estimates will be used and if they will be needed for source selection.\n- Risk Management Requirements: Document requirements for performance bonds or insurance contracts to reduce risk.\n- Prequalified Sellers: List any prequalified sellers that will be used.",
     "form_name": "PROCUREMENT MANAGEMENT PLAN",
     "document_reference": "PMO-04.09.01",
+    "_llm_instructions": "Populate the fields of 'PROCUREMENT MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.09.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Procurement Integration": {
-            "guidance": "Define how the contractor's work will integrate with the project (Scope, Schedule, Documentation, Risk, Reporting).",
-            "value": [
-                {
-                    "Area": "Scope",
-                    "Integration Approach": ""
-                },
-                {
-                    "Area": "Schedule",
-                    "Integration Approach": ""
-                },
-                {
-                    "Area": "Documentation",
-                    "Integration Approach": ""
-                },
-                {
-                    "Area": "Risk",
-                    "Integration Approach": ""
-                },
-                {
-                    "Area": "Reporting",
-                    "Integration Approach": ""
-                }
-            ]
-        },
-        "Timing of Procurement Activities": {
-            "guidance": "Identify the timetable of key procurement activities.",
-            "value": [
-                {
-                    "Date": "",
-                    "Activity": ""
-                }
-            ]
-        },
-        "Performance Metrics": {
-            "guidance": "Document the metrics that will be used to evaluate the seller's performance.",
-            "value": [
-                {
-                    "Item": "",
-                    "Metric": "",
-                    "Measurement Method": ""
-                }
-            ]
-        },
-        "Roles, Responsibilities, and Authority": {
-            "guidance": "Define the roles, responsibilities, and authority level.",
-            "value": [
-                {
-                    "Role": "",
-                    "Responsibility": "",
-                    "Authority": ""
-                }
-            ]
-        },
-        "Assumptions and Constraints": {
-            "guidance": "Record assumptions and constraints related to the procurement activities.",
-            "value": [
-                {
-                    "Category": "",
-                    "Assumption/Constraint": ""
-                }
-            ]
-        },
-        "Legal Jurisdiction and Currency": {
-            "guidance": "Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.",
+        "f01_Procurement_Strategy_and_Project_Integration": {
+            "section": "Procurement Integration and Scheduling",
+            "label": "Procurement Strategy and Project Integration",
+            "guidance": "Integration strategy coordinating contract acquisitions with overall project schedule and scope baselines.",
             "value": ""
         },
-        "Independent Estimates": {
-            "guidance": "Document whether independent cost estimates will be used and if they will be needed for source selection.",
+        "f02_Procurement_Timetable_and_Milestone_Alignment": {
+            "section": "Procurement Integration and Scheduling",
+            "label": "Procurement Timetable and Milestone Alignment",
+            "guidance": "Key procurement lifecycle milestones (RFP issuance, bid evaluation, contract award, delivery).",
             "value": ""
         },
-        "Risk Management Requirements": {
-            "guidance": "Document requirements for performance bonds or insurance contracts to reduce risk.",
+        "f03_Procurement_Roles_and_Sign_off_Authority": {
+            "section": "Procurement Roles, Authority, and Metrics",
+            "label": "Procurement Roles and Sign-off Authority",
+            "guidance": "Defined roles (Procurement Manager, Legal Counsel, Technical Evaluators) and contracting authority limits.",
             "value": ""
         },
-        "Prequalified Sellers": {
-            "guidance": "List any prequalified sellers that will be used.",
-            "value": [
-                "",
-                ""
-            ]
+        "f04_Vendor_Performance_Metrics_and_SLAs": {
+            "section": "Procurement Roles, Authority, and Metrics",
+            "label": "Vendor Performance Metrics and SLAs",
+            "guidance": "Objective metrics and service level agreements used to measure vendor performance.",
+            "value": ""
+        },
+        "f05_Standard_Contract_Types_Selection": {
+            "section": "Contract Types and Pre-Qualified Vendors",
+            "label": "Standard Contract Types Selection",
+            "guidance": "Authorized contract structures (Firm Fixed Price, Time and Materials, Cost-Plus) mapped to deliverable types.",
+            "value": ""
+        },
+        "f06_Pre_Qualified_Vendor_Selection_Approach": {
+            "section": "Contract Types and Pre-Qualified Vendors",
+            "label": "Pre-Qualified Vendor Selection Approach",
+            "guidance": "Approach for evaluating and maintaining pre-qualified vendor lists and source directories.",
+            "value": ""
+        },
+        "f07_Legal_Jurisdiction_Dispute_Terms_and_Currency": {
+            "section": "Legal Jurisdiction, Currency, and Risk Management",
+            "label": "Legal Jurisdiction, Dispute Terms, and Currency",
+            "guidance": "Governing commercial legal jurisdiction, dispute resolution protocols, and billing currency.",
+            "value": ""
+        },
+        "f08_Procurement_Risk_and_Independent_Estimates": {
+            "section": "Legal Jurisdiction, Currency, and Risk Management",
+            "label": "Procurement Risk and Independent Estimates",
+            "guidance": "Independent Cost Estimate (ICE) requirements and vendor default mitigation strategies.",
+            "value": ""
         }
     }
 }

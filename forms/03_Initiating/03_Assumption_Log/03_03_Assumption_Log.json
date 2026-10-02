@@ -1,50 +1,69 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this ASSUMPTION LOG template based on the provided project context. Context & Definition: Assumptions are factors in the planning process that are considered to be true, real, or certain, without proof or demonstration. Constraints are also documented in this log. Constraints are limiting factors that affect the execution of the project. Typical constraints include a predetermined budget or fixed milestones for deliverables. Assumptions can come from any document in the project or be determined by the project team. Constraints may be documented in the project charter and are determined by the customer, sponsor, or regulatory agencies. This log is a dynamic document that is updated throughout the project. Assumptions are progressively elaborated and eventually validated. Alignment: The assumption log should be aligned and consistent with the following documents: • Project charter • Issue log • Risk register",
     "form_name": "ASSUMPTION LOG",
     "document_reference": "PMO-03.03",
+    "_llm_instructions": "Populate the fields of 'ASSUMPTION LOG' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-03.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Assumption Log Entries": {
-            "guidance": "Please provide a comprehensive log of all assumptions and constraints for the project. For each entry, ensure you populate the following columns in the table below:\n- **ID:** Unique identifier for the assumption or constraint.\n- **Type:** Specify whether this entry is an \"Assumption\" or a \"Constraint\".\n- **Category:** The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).\n- **Description:** A clear, detailed description of the assumption or constraint.\n- **Impact if invalid:** The potential risk or impact to the project (e.g., cost, schedule, scope) if the assumption proves false or the constraint is breached.\n- **Responsible party:** The person who is tasked with following up on the assumption to validate if it is true or not.\n- **Due date:** The date by which the assumption needs to be validated.\n- **Actions:** Specific actions that need to be taken to validate the assumption or monitor the constraint.\n- **Status:** The current status of the assumption (e.g., active, transferred, or closed).\n- **Comments:** Any additional information, context, or updates.",
-            "value": [
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Category": "",
-                    "Description": "",
-                    "Impact if invalid": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "Actions": "",
-                    "Status": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Category": "",
-                    "Description": "",
-                    "Impact if invalid": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "Actions": "",
-                    "Status": "",
-                    "Comments": ""
-                },
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Category": "",
-                    "Description": "",
-                    "Impact if invalid": "",
-                    "Responsible party": "",
-                    "Due date": "",
-                    "Actions": "",
-                    "Status": "",
-                    "Comments": ""
-                }
-            ]
+        "f01_ID": {
+            "section": "Assumption Log Entries",
+            "label": "ID",
+            "guidance": "Unique identifier for the assumption or constraint entry.",
+            "value": ""
+        },
+        "f02_Type": {
+            "section": "Assumption Log Entries",
+            "label": "Type",
+            "guidance": "Specify whether this entry is an 'Assumption' or a 'Constraint'.",
+            "value": ""
+        },
+        "f03_Category": {
+            "section": "Assumption Log Entries",
+            "label": "Category",
+            "guidance": "The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).",
+            "value": ""
+        },
+        "f04_Description": {
+            "section": "Assumption Log Entries",
+            "label": "Description",
+            "guidance": "A clear, detailed description of the assumption or constraint.",
+            "value": ""
+        },
+        "f05_Impact_if_invalid": {
+            "section": "Assumption Log Entries",
+            "label": "Impact if invalid",
+            "guidance": "The potential risk or impact to the project if the assumption proves false or the constraint is breached.",
+            "value": ""
+        },
+        "f06_Responsible_party": {
+            "section": "Assumption Log Entries",
+            "label": "Responsible party",
+            "guidance": "The person or role tasked with following up on the assumption to validate its accuracy.",
+            "value": ""
+        },
+        "f07_Due_date": {
+            "section": "Assumption Log Entries",
+            "label": "Due date",
+            "guidance": "The target date by which the assumption needs to be validated or reviewed.",
+            "value": ""
+        },
+        "f08_Actions": {
+            "section": "Assumption Log Entries",
+            "label": "Actions",
+            "guidance": "Specific actions required to validate the assumption or monitor the constraint.",
+            "value": ""
+        },
+        "f09_Status": {
+            "section": "Assumption Log Entries",
+            "label": "Status",
+            "guidance": "The current status of the assumption (e.g., active, validated, closed).",
+            "value": ""
+        },
+        "f10_Comments": {
+            "section": "Assumption Log Entries",
+            "label": "Comments",
+            "guidance": "Any additional information, operational context, or status updates.",
+            "value": ""
         }
     }
 }

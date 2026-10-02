@@ -1,4 +1,9 @@
-WBS ID,Element Name,Element Type,Description,Control Account ID,Accounting Code
-,,,,,
-,,,,,
-,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+WBS Structure and Hierarchy,WBS Decomposition Approach,"The organizing principle used to decompose scope (e.g., phase-based, deliverable-based, or subsystem-based).",
+WBS Structure and Hierarchy,Hierarchy Levels and Coding Scheme,"Definition of hierarchical levels (Project, Phase/Subsystem, Deliverable, Work Package) and WBS numbering scheme.",
+WBS Structure and Hierarchy,100 Percent Rule Compliance,Confirmation that all parent nodes capture 100 percent of subordinate scope with no external additions.,
+Work Breakdown Elements,Level 1 Summary Elements,High-level summary nodes representing major phases or principal delivery workstreams.,
+Work Breakdown Elements,Level 2 and 3 Intermediate Deliverables,Subordinate deliverables and integrated components decomposing summary elements.,
+Work Breakdown Elements,Lowest-Level Work Packages Summary,"Discrete manageable units of work assigned for cost estimation, scheduling, and control.",
+WBS Outline Representation,Hierarchical WBS Outline,Complete textual outline displaying the hierarchical breakdown of the entire project scope.,
+WBS Outline Representation,Control Accounts and Work Package Identifiers,Assigned identifiers mapping control accounts to accounting and management structures.,

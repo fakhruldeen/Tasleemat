@@ -1,30 +1,57 @@
 ---
 lang: en
-Form: TEAM PERFORMANCE ASSESSMENT (Instructions)
+Form: Team Performance Assessment (Instructions)
 ---
 
-# TEAM PERFORMANCE ASSESSMENT - LLM GENERATION GUIDE
+# Team Performance Assessment - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `TEAM PERFORMANCE ASSESSMENT`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Team Performance Assessment». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The team performance assessment is used to review technical and interpersonal competencies of the team as a whole, as well as general characteristics such as team morale and cohesiveness. It identifies areas to improve the team's ability to achieve agreed-upon project objectives.
+> **Context and Definition:**
+> A structured evaluation of project team effectiveness, collaboration, and technical execution capability.
 
-**Tailoring Tips:**
-*   For a small project you can just do a summary of technical performance and interpersonal competency rather than decomposing those categories into subcategories.
-*   If part of your role as a project manager is to evaluate individual team member performance you can modify the form to focus on individuals rather than the team.
-*   Some team assessments include team strengths and weaknesses.
-
-**Alignment:**
-The team performance assessment should be aligned and consistent with the following documents:
-*   Resource management plan
+> **Alignment:**
+> The Team Performance Assessment aligns with Resource Management Plan, Team Charter, and Training Plan.
 
 ---
 
-### Section Generation Instructions
-*   **Technical Performance:** Rate the team's ability to deliver across technical dimensions and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
-*   **Interpersonal Competency:** Rate the team's interpersonal skills and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
-*   **Team Characteristics:** Describe the overall team morale and cohesiveness. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
-*   **Team Strengths and Weaknesses:** Identify the primary strengths and weaknesses of the team. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.
-*   **Areas for Development:** Identify areas for development and the approach to implement them.
+## Technical Performance
+
+### Technical Performance
+**Instruction:** Evaluation of the team's ability to achieve scope, quality, schedule, and cost goals.
+
+**Generated Value:** [ Add details... ]
+
+## Interpersonal Competency
+
+### Interpersonal Competency
+**Instruction:** Evaluation of communication, collaboration, conflict management, and decision making.
+
+**Generated Value:** [ Add details... ]
+
+## Team Characteristics
+
+### Team Characteristics
+**Instruction:** Assessment of overall team morale, cohesion, trust, and shared commitment.
+
+**Generated Value:** [ Add details... ]
+
+## Team Strengths and Weaknesses
+
+### Team Strengths and Weaknesses
+**Instruction:** Identification of critical technical/interpersonal strengths and operational weaknesses.
+
+**Generated Value:** [ Add details... ]
+
+## Areas for Development
+
+### Areas for Development
+**Instruction:** Targeted skill acquisition, training programs, team building, and coaching plans.
+
+**Generated Value:** [ Add details... ]
+
+---

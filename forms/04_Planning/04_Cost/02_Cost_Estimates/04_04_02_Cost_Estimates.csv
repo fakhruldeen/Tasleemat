@@ -1,4 +1,9 @@
-ID,Resource,Labor Costs,Physical Costs,Reserve,Estimate,Basis of Estimates,Method,Assumptions/Constraints,Range,Confidence Level
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Activity and Work Package Cost Breakdown,Activity Identifier and Description,Unique activity code and concise work summary for each estimated item.,
+Activity and Work Package Cost Breakdown,Direct Labor Cost Estimate,Estimated direct staffing expenses calculated from effort hours and labor rates.,
+Activity and Work Package Cost Breakdown,Materials and Equipment Cost Estimate,"Estimated costs for hardware, raw materials, software licensing, and equipment.",
+Activity and Work Package Cost Breakdown,Total Base Cost Estimate,Consolidated base financial estimate prior to reserve calculations.,
+Resource Cost Rates and Basis of Estimates,Labor Rate Categories and Rate Cards,"Standard billing rate categories, consultant day-rates, and internal unit costs.",
+Resource Cost Rates and Basis of Estimates,Historical Data and Estimating Assumptions,"Benchmark data, vendor quotation references, and key assumptions applied.",
+Contingency and Management Reserves,Contingency Reserve Allocation,Calculated risk contingency reserve allocated for identified known-unknown risks.,
+Contingency and Management Reserves,Total Activity Cost with Contingency,Final baseline cost figure inclusive of contingency reserves for budgeting.,

@@ -1,13 +1,32 @@
-<!--  
-LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Context and Definition:
+A Transition to Operations Checklist governs the orderly handover of project deliverables, assets, documentation, knowledge, and support responsibilities from the project team to permanent operational and support teams. It ensures that the receiving organization is fully prepared to maintain, operate, and support the solution sustainably after project closeout.
+
+It can receive information from:
+*   The Project Scope Statement and Deliverables, identifying all outputs requiring operational transfer
+*   The Product Acceptance Form, verifying that deliverables meet specified quality and technical standards
+*   The Training Plan and Log, confirming operational staff readiness
+
+It provides information to:
+*   The Project or Phase Closeout Report, certifying successful operational transition
+*   The Contract Closeout Report, confirming transfer of vendor-supplied assets and warranties
+*   The Lessons Learned Register, capturing operational transition insights
+
+Tailoring Tips:
+*   Involve operations early. Engage operational stakeholders during testing and dry runs, not only at final handover.
+*   Verify documentation and access. Ensure runbooks, user manuals, administrative credentials, and licensing agreements are verified and archived.
+*   Establish warranty and escalation paths. Clarify the warranty support window and transition from hypercare to standard tier-1/tier-2 support.
+*   Sign off each item individually. Avoid blanket acceptances that obscure unfulfilled operational prerequisites.
+
+Alignment:
+The Transition to Operations Checklist should be aligned and consistent with:
+*   The Quality Management Plan, confirming operational acceptance criteria
+*   The OCM Strategy and Plan, ensuring operational readiness and sustainable adoption
+*   The Contract Closeout Report, aligning vendor handover obligations with operational acceptance
 
 Section Instructions:
-*   **Checklist Item:** e.g., Code deployed, Support manuals written.
-*   **Responsible Party:** Who owns the item.
-*   **Sign-off Signature:** Approval.
-*   **Date:** When completed.
-*   **Notes:** Any handover details.
+*   Operational Handover Items: for each deliverable, asset, or support requirement, list the handover item, the receiving responsible party, the operational acceptance criteria, the handover date, and the sign-off status.
 -->
 
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
@@ -15,27 +34,17 @@ Section Instructions:
 <h1 dir="ltr" align="center">TRANSITION TO OPERATIONS CHECKLIST</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Transition To Operations Checklist Entries
-<!-- 
-Please populate the table below with the following details:
-- **Checklist Item:** e.g., Code deployed, Support manuals written.
-- **Responsible Party:** Who owns the item.
-- **Sign-off Signature:** Approval.
-- **Date:** When completed.
-- **Notes:** Any handover details.
--->
-| Checklist Item | Responsible Party | Sign-off Signature | Date | Notes |
+## Operational Handover Items
+
+| Handover Item | Responsible Party | Acceptance Criteria | Handover Date | Sign-off Status |
 | --- | --- | --- | --- | --- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
-
-
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 
 ---
 
@@ -50,6 +59,6 @@ Please populate the table below with the following details:
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Transition to Operations Checklist | <strong>Ref:</strong> PMO-07.04 <br>
+  <strong>Template:</strong> TRANSITION TO OPERATIONS CHECKLIST | <strong>Ref:</strong> PMO-07.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

@@ -1,50 +1,75 @@
 {
-    "_llm_instructions": "Fill out the properties. Provide three arrays representing the three tables. CRITICAL RULE: Each individual activity should only be estimated using ONE method. Do not duplicate activity IDs across the tables.",
     "form_name": "DURATION ESTIMATING WORKSHEET",
     "document_reference": "PMO-04.03.07",
+    "_llm_instructions": "Populate the fields of 'DURATION ESTIMATING WORKSHEET' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.07.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Parametric Estimates": {
-            "value": [
-                {
-                    "ID": "",
-                    "Activity Description": "",
-                    "Effort Hours": "",
-                    "Resource Qty": "",
-                    "% Available": "",
-                    "Perf. Factor": "",
-                    "Duration Estimate": ""
-                }
-            ],
-            "guidance": "Provide the array of estimates. Remember: Do not include activities here if they are already estimated in another table."
+        "f01_Parametric_Activity_and_Unit_Metric": {
+            "section": "Parametric Estimates",
+            "label": "Parametric Activity and Unit Metric",
+            "guidance": "The activity name and specific unit metric rate used for parametric calculation (e.g., hours per unit).",
+            "value": ""
         },
-        "Analogous Estimates": {
-            "value": [
-                {
-                    "ID": "",
-                    "Previous Activity": "",
-                    "Prev. Duration": "",
-                    "Current Activity": "",
-                    "Multiplier": "",
-                    "Duration Estimate": ""
-                }
-            ],
-            "guidance": "Provide the array of estimates. Remember: Do not include activities here if they are already estimated in another table."
+        "f02_Quantity_and_Resource_Factor": {
+            "section": "Parametric Estimates",
+            "label": "Quantity and Resource Factor",
+            "guidance": "Total quantity of work units and resource efficiency factor applied.",
+            "value": ""
         },
-        "Three-Point Estimates": {
-            "value": [
-                {
-                    "ID": "",
-                    "Activity Description": "",
-                    "Optimistic (tO)": "",
-                    "Most Likely (tM)": "",
-                    "Pessimistic (tP)": "",
-                    "Weighting Equation": "",
-                    "Expected Duration (tE)": ""
-                }
-            ],
-            "guidance": "Provide the array of estimates. Remember: Do not include activities here if they are already estimated in another table."
+        "f03_Parametric_Duration_Result": {
+            "section": "Parametric Estimates",
+            "label": "Parametric Duration Result",
+            "guidance": "Calculated duration derived from the mathematical parametric formula.",
+            "value": ""
+        },
+        "f04_Historical_Reference_Activity": {
+            "section": "Analogous Estimates",
+            "label": "Historical Reference Activity",
+            "guidance": "Past project activity used as a baseline benchmark for historical comparison.",
+            "value": ""
+        },
+        "f05_Historical_Duration_and_Complexity_Scaling": {
+            "section": "Analogous Estimates",
+            "label": "Historical Duration and Complexity Scaling",
+            "guidance": "Duration of past activity and scaling factor applied for project scope differences.",
+            "value": ""
+        },
+        "f06_Analogous_Duration_Result": {
+            "section": "Analogous Estimates",
+            "label": "Analogous Duration Result",
+            "guidance": "Final duration outcome determined through analogous comparison.",
+            "value": ""
+        },
+        "f07_Optimistic_Most_Likely_and_Pessimistic_Durations": {
+            "section": "Three-Point Estimates (Beta Distribution)",
+            "label": "Optimistic, Most Likely, and Pessimistic Durations",
+            "guidance": "The recorded optimistic (tO), most likely (tM), and pessimistic (tP) estimates.",
+            "value": ""
+        },
+        "f08_Beta_Calculated_Expected_Duration_tE": {
+            "section": "Three-Point Estimates (Beta Distribution)",
+            "label": "Beta Calculated Expected Duration (tE)",
+            "guidance": "Calculated expected duration using the PERT beta distribution formula (tO + 4tM + tP) / 6.",
+            "value": ""
+        },
+        "f09_Standard_Deviation_and_Variance": {
+            "section": "Three-Point Estimates (Beta Distribution)",
+            "label": "Standard Deviation and Variance",
+            "guidance": "Calculated standard deviation (tP - tO) / 6 assessing estimating risk and variance.",
+            "value": ""
+        },
+        "f10_Total_Calculated_Schedule_Buffer": {
+            "section": "Aggregated Schedule Reserves",
+            "label": "Total Calculated Schedule Buffer",
+            "guidance": "Consolidated sum of duration contingency buffers across all estimated activities.",
+            "value": ""
+        },
+        "f11_Worksheet_Reconciliation_and_Approval": {
+            "section": "Aggregated Schedule Reserves",
+            "label": "Worksheet Reconciliation and Approval",
+            "guidance": "Formal review confirming no duplicate activity estimations across methods.",
+            "value": ""
         }
     }
 }

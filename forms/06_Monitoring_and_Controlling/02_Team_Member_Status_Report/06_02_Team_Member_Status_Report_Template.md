@@ -16,7 +16,7 @@ Section-by-Section Instructions:
 
 | **Date Prepared:** {{Current_Date}} | **Reporting Period:** [ Reporting Period Start Date ] to [ Reporting Period End Date ] |
 | :--- | :--- |
-| **Team Member Name:** [ Team Member Name ] | **Role:** [ Team Member Role ] |
+| **Team Member Name:** [ Team Member Name ] | **Role:** [ Role ] |
 
 ---
 
@@ -95,7 +95,7 @@ Section-by-Section Instructions:
 **Decisions made:**
 [ Add details... ]
 
-**Lessons learned / Knowledge transfer:**
+**Lessons learned and knowledge transfer:**
 [ Add details... ]
 
 ---

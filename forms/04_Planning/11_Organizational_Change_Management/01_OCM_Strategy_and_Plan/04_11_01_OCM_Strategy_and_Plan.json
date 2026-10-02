@@ -1,28 +1,42 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this OCM STRATEGY AND PLAN template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
-    "form_name": "OCM STRATEGY AND PLAN",
+    "form_name": "OCM Strategy and Plan",
     "document_reference": "PMO-04.11.01",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'OCM Strategy and Plan' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.11.01.",
     "fields": {
-        "Change Vision": {
-            "guidance": "Why the human change is necessary.",
+        "f01_Change_Vision": {
+            "section": "Change Strategy and Impact",
+            "label": "Change Vision",
+            "guidance": "Why the organizational change is necessary and the future state it creates. It articulates the business need for people to change how they work, the compelling reasons to transition, and the tangible outcomes the organization will realize when adoption is achieved.",
             "value": ""
         },
-        "Stakeholder Impact Analysis": {
-            "guidance": "How different groups will be affected.",
+        "f02_Stakeholder_Impact_Analysis": {
+            "section": "Change Strategy and Impact",
+            "label": "Stakeholder Impact Analysis",
+            "guidance": "How different stakeholder groups, departments, and roles will be affected by the change. Identifies the degree of disruption across processes, systems, organizational structures, and daily workloads so tailored support can be provided.",
             "value": ""
         },
-        "Communication Strategy": {
-            "guidance": "How changes will be communicated.",
+        "f03_Sponsorship_Strategy": {
+            "section": "Change Strategy and Impact",
+            "label": "Sponsorship Strategy",
+            "guidance": "How project sponsors, executive leaders, and change champions will visibly advocate, lead, and resource the change. Details their active commitments, coalitions across business units, and direct engagement with impacted teams.",
             "value": ""
         },
-        "Resistance Management": {
-            "guidance": "How to handle pushback from users.",
+        "f04_Communication_Strategy": {
+            "section": "Enablement and Adoption",
+            "label": "Communication Strategy",
+            "guidance": "The channels, key messages, frequency, and two-way feedback loops used to keep stakeholders informed and engaged throughout the transition. Ensures timely delivery of transparent information and addresses evolving concerns.",
             "value": ""
         },
-        "Sponsorship Strategy": {
-            "guidance": "How leaders will champion the change.",
+        "f05_Resistance_Management": {
+            "section": "Enablement and Adoption",
+            "label": "Resistance Management",
+            "guidance": "Proactive identification of likely sources of resistance, underlying root causes, and specific interventions to mitigate pushback. Establishes supportive pathways to help teams navigate transition anxiety and adopt new practices.",
+            "value": ""
+        },
+        "f06_Readiness_and_Reinforcement": {
+            "section": "Enablement and Adoption",
+            "label": "Readiness and Reinforcement",
+            "guidance": "The criteria, checkpoints, and mechanisms to measure organizational readiness before go-live, and the reinforcement strategies (recognition, ongoing coaching, audits) to ensure adopted behaviors are sustained long-term.",
             "value": ""
         }
     }

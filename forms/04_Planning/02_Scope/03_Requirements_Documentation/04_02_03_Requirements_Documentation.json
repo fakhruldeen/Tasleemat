@@ -1,50 +1,63 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUIREMENTS DOCUMENTATION template based on the provided project context. Context & Definition: The requirements documentation assists the project manager in making tradeoff decisions among requirements and in managing stakeholder expectations. Requirements will be progressively elaborated as more information about the project becomes available. Requirements documentation is an output from the process 5.2 Collect Requirements in the PMBOK® Guide – Sixth Edition. Alignment: The requirements documentation should be aligned and consistent with the following documents:\n• Requirements management plan\n• Benefits management plan\n• Quality management plan\n• Requirements traceability matrix\n• Release plan",
     "form_name": "REQUIREMENTS DOCUMENTATION",
     "document_reference": "PMO-04.02.03",
+    "_llm_instructions": "Populate the fields of 'REQUIREMENTS DOCUMENTATION' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.02.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Requirements List": {
-            "guidance": "Generate a JSON array of objects representing the Requirements table. Each object must have the exact keys specified below. Generate at least 5 representative requirements based on the project context, ensuring they cover various categories (Business, Stakeholder, Solution, Quality).\nRules:\n- 'ID': Create a unique identifier for the requirement (e.g., REQ-001).\n- 'Requirement': Clearly articulate the specific condition or capability.\n- 'Stakeholder': Name, role, or organization of the stakeholder.\n- 'Category': Classify the requirement (e.g., Business, Stakeholder, Solution, Quality).\n- 'Priority': Assign a priority level (e.g., High, Medium, Low).\n- 'Acceptance criteria': Specific, measurable criteria that must be met.\n- 'Test or verification method': Method to verify fulfillment (e.g., Inspection, Test).\n- 'Phase or release': Project phase, sprint, or product release.\n- 'Dependencies': IDs of any other requirements that this requirement depends on.\n- 'Assumptions & Constraints': Any assumptions made or technical/business constraints.",
-            "value": [
-                {
-                    "ID": "",
-                    "Requirement": "",
-                    "Stakeholder": "",
-                    "Category": "",
-                    "Priority": "",
-                    "Acceptance criteria": "",
-                    "Test or verification method": "",
-                    "Phase or release": "",
-                    "Dependencies": "",
-                    "Assumptions & Constraints": ""
-                },
-                {
-                    "ID": "",
-                    "Requirement": "",
-                    "Stakeholder": "",
-                    "Category": "",
-                    "Priority": "",
-                    "Acceptance criteria": "",
-                    "Test or verification method": "",
-                    "Phase or release": "",
-                    "Dependencies": "",
-                    "Assumptions & Constraints": ""
-                },
-                {
-                    "ID": "",
-                    "Requirement": "",
-                    "Stakeholder": "",
-                    "Category": "",
-                    "Priority": "",
-                    "Acceptance criteria": "",
-                    "Test or verification method": "",
-                    "Phase or release": "",
-                    "Dependencies": "",
-                    "Assumptions & Constraints": ""
-                }
-            ]
+        "f01_Business_Objectives_and_Goals": {
+            "section": "Business Requirements",
+            "label": "Business Objectives and Goals",
+            "guidance": "High-level organizational motivations, strategic drivers, and target business problems to solve.",
+            "value": ""
+        },
+        "f02_Business_Process_Impact": {
+            "section": "Business Requirements",
+            "label": "Business Process Impact",
+            "guidance": "Current-state vs. target-state operational workflow enhancements and process impacts.",
+            "value": ""
+        },
+        "f03_Business_Value_and_Success_Criteria": {
+            "section": "Business Requirements",
+            "label": "Business Value and Success Criteria",
+            "guidance": "Measurable commercial, operational, or customer value expected upon delivery.",
+            "value": ""
+        },
+        "f04_User_Persona_and_Needs_Summary": {
+            "section": "Stakeholder Requirements",
+            "label": "User Persona and Needs Summary",
+            "guidance": "Detailed operational requirements categorized by specific stakeholder groups and user personas.",
+            "value": ""
+        },
+        "f05_Stakeholder_Pain_Points_and_Expectations": {
+            "section": "Stakeholder Requirements",
+            "label": "Stakeholder Pain Points and Expectations",
+            "guidance": "Critical operational pain points addressed and expected behavioral outcomes.",
+            "value": ""
+        },
+        "f06_Functional_Requirements_Specification": {
+            "section": "Solution and Technical Requirements",
+            "label": "Functional Requirements Specification",
+            "guidance": "Detailed capabilities, system interactions, features, and functional behavior.",
+            "value": ""
+        },
+        "f07_Technical_Architecture_and_System_Constraints": {
+            "section": "Solution and Technical Requirements",
+            "label": "Technical Architecture and System Constraints",
+            "guidance": "System interfaces, infrastructure prerequisites, data architecture, and technological boundaries.",
+            "value": ""
+        },
+        "f08_Non_Functional_Requirements_Quality_of_Service": {
+            "section": "Transition and Non-Functional Requirements",
+            "label": "Non-Functional Requirements (Quality of Service)",
+            "guidance": "Performance thresholds, security standards, availability, scalability, and usability criteria.",
+            "value": ""
+        },
+        "f09_Transition_and_Readiness_Requirements": {
+            "section": "Transition and Non-Functional Requirements",
+            "label": "Transition and Readiness Requirements",
+            "guidance": "Data migration, end-user training, operational handover, and rollout support prerequisites.",
+            "value": ""
         }
     }
 }

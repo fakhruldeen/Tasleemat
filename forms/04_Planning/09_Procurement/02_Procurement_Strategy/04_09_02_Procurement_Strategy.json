@@ -1,47 +1,45 @@
 {
-    "_llm_instructions": "Populate the Procurement Strategy based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Delivery Methods: Describe the delivery method (e.g., joint venture, representative, design build, etc.).\n- Contract Type Selection: Select the contract types.\n- Incentive or Award Fees: List any incentive or award fees and their associated criteria.\n- Procurement Life Cycle: List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer.",
     "form_name": "PROCUREMENT STRATEGY",
     "document_reference": "PMO-04.09.02",
+    "_llm_instructions": "Populate the fields of 'PROCUREMENT STRATEGY' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.09.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Delivery Methods": {
-            "guidance": "Describe the delivery method (e.g., joint venture, representative, design build, etc.).",
+        "f01_Project_Delivery_Method": {
+            "section": "Delivery Methods and Contract Types",
+            "label": "Project Delivery Method",
+            "guidance": "The selected delivery structure (e.g., Design-Build, Turnkey EPC, Professional Services, Agile Staff Augmentation).",
             "value": ""
         },
-        "Contract Type Selection": {
-            "guidance": "Select the contract types.",
-            "value": {
-                "FFP": false,
-                "FPIF": false,
-                "FP-EPA": false,
-                "CPFF": false,
-                "CPIF": false,
-                "CPAF": false,
-                "T&M": false,
-                "Other": ""
-            }
+        "f02_Contract_Payment_Types_and_Rationale": {
+            "section": "Delivery Methods and Contract Types",
+            "label": "Contract Payment Types and Rationale",
+            "guidance": "Selected contract payment mechanism (Firm Fixed Price, Cost Reimbursable, Target Price) and justification.",
+            "value": ""
         },
-        "Incentive or Award Fees": {
-            "guidance": "List any incentive or award fees and their associated criteria.",
-            "value": [
-                {
-                    "Incentive or Award Fee": "",
-                    "Criteria": ""
-                }
-            ]
+        "f03_Incentive_Fees_and_Bonus_Provisions": {
+            "section": "Incentive and Fee Structures",
+            "label": "Incentive Fees and Bonus Provisions",
+            "guidance": "Performance-based financial incentives, early completion bonuses, or quality metrics.",
+            "value": ""
         },
-        "Procurement Life Cycle": {
-            "guidance": "List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer.",
-            "value": [
-                {
-                    "Phase": "",
-                    "Entry Criteria": "",
-                    "Key Deliverables or Milestones": "",
-                    "Exit Criteria": "",
-                    "Knowledge transfer": ""
-                }
-            ]
+        "f04_Penalty_and_Liquidated_Damages_Clauses": {
+            "section": "Incentive and Fee Structures",
+            "label": "Penalty and Liquidated Damages Clauses",
+            "guidance": "Contractual liquidated damages and penalty provisions for unexcused schedule delays.",
+            "value": ""
+        },
+        "f05_Procurement_Sourcing_Stages": {
+            "section": "Procurement Phases and Sourcing Life Cycle",
+            "label": "Procurement Sourcing Stages",
+            "guidance": "Sequence of procurement stages: market analysis, pre-qualification, RFP issuance, evaluation, negotiation, award.",
+            "value": ""
+        },
+        "f06_Market_Engagement_and_Competitive_Sourcing_Approach": {
+            "section": "Procurement Phases and Sourcing Life Cycle",
+            "label": "Market Engagement and Competitive Sourcing Approach",
+            "guidance": "Method of market engagement (Sole Source, Open Competitive Tender, Limited Request for Quotation).",
+            "value": ""
         }
     }
 }

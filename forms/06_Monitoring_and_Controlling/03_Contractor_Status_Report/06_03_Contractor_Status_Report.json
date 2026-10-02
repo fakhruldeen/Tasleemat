@@ -1,73 +1,158 @@
 {
-    "_llm_instructions": "Fill out 'project_title' and 'date_prepared', and the 'value' property of each field, using the project context. Use the 'label' to select the correct output language for the target document. Reference parameters.md for global variables.",
     "form_name": "CONTRACTOR STATUS REPORT",
     "document_reference": "PMO-06.03",
+    "_llm_instructions": "Populate the fields of 'CONTRACTOR STATUS REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "reporting_information": {
-            "label": "Reporting Information",
-            "guidance": "Record the contractor, the contract number and type, the reporting period covered, and the report submission date. The contract type determines whether a cost forecast is expected.",
+        "f01_Contractor": {
+            "section": "Reporting Information",
+            "label": "Contractor",
+            "guidance": "The legal name and contact details of the contractor performing the contract.",
             "value": ""
         },
-        "scope_performance": {
-            "label": "Scope Performance",
-            "guidance": "Describe the progress on scope made during this reporting period.",
+        "f02_Contract_Number_and_Type": {
+            "section": "Reporting Information",
+            "label": "Contract Number and Type",
+            "guidance": "The official contract identifier and contract type (e.g., Fixed Price, T&M).",
             "value": ""
         },
-        "quality_performance": {
-            "label": "Quality Performance",
-            "guidance": "Identify any quality or performance variances.",
+        "f03_Reporting_Period": {
+            "section": "Reporting Information",
+            "label": "Reporting Period",
+            "guidance": "The start and end calendar dates covered by this contractor report.",
             "value": ""
         },
-        "schedule_performance": {
-            "label": "Schedule Performance",
-            "guidance": "Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.",
+        "f04_Report_Submission_Date": {
+            "section": "Reporting Information",
+            "label": "Report Submission Date",
+            "guidance": "The exact date on which the report was officially submitted to the project manager.",
             "value": ""
         },
-        "cost_performance": {
-            "label": "Cost Performance",
-            "guidance": "Describe whether the contract is on budget. If over or under budget, identify the cause of the variance.",
+        "f05_Scope_Status_This_Period": {
+            "section": "Performance This Reporting Period",
+            "label": "Scope / Status This Period",
+            "guidance": "Assessment of contracted scope deliverables completed or in progress during this period.",
             "value": ""
         },
-        "forecast_performance": {
-            "label": "Forecast Performance",
-            "guidance": "Discuss the estimated delivery date and final cost of the contract. If the contract is fixed price, do not enter cost forecasts.",
+        "f06_Scope_Variance_and_Cause": {
+            "section": "Performance This Reporting Period",
+            "label": "Scope / Variance and Cause",
+            "guidance": "Explanation of any deviations from contracted scope baselines and their root causes.",
             "value": ""
         },
-        "claims_or_disputes": {
+        "f07_Quality_Status_This_Period": {
+            "section": "Performance This Reporting Period",
+            "label": "Quality / Status This Period",
+            "guidance": "Evaluation of deliverable quality against contracted standards and specifications.",
+            "value": ""
+        },
+        "f08_Quality_Variance_and_Cause": {
+            "section": "Performance This Reporting Period",
+            "label": "Quality / Variance and Cause",
+            "guidance": "Root causes and details of any non-conformance or failed quality checks.",
+            "value": ""
+        },
+        "f09_Schedule_Status_This_Period": {
+            "section": "Performance This Reporting Period",
+            "label": "Schedule / Status This Period",
+            "guidance": "Assessment of progress against contracted milestone dates and schedule baselines.",
+            "value": ""
+        },
+        "f10_Schedule_Variance_and_Cause": {
+            "section": "Performance This Reporting Period",
+            "label": "Schedule / Variance and Cause",
+            "guidance": "Root cause explanation for any schedule delays or accelerations.",
+            "value": ""
+        },
+        "f11_Cost_Status_This_Period": {
+            "section": "Performance This Reporting Period",
+            "label": "Cost / Status This Period",
+            "guidance": "Assessment of contract billings and expenditures against the financial plan.",
+            "value": ""
+        },
+        "f12_Cost_Variance_and_Cause": {
+            "section": "Performance This Reporting Period",
+            "label": "Cost / Variance and Cause",
+            "guidance": "Root cause explanation for any financial variances or billing discrepancies.",
+            "value": ""
+        },
+        "f13_Estimated_Completion_Date_Estimate": {
+            "section": "Forecast Performance for Future Reporting Periods",
+            "label": "Estimated Completion Date / Estimate",
+            "guidance": "The contractor projected delivery and contract completion date.",
+            "value": ""
+        },
+        "f14_Estimated_Completion_Date_Basis": {
+            "section": "Forecast Performance for Future Reporting Periods",
+            "label": "Estimated Completion Date / Basis",
+            "guidance": "Basis and rationale supporting the estimated completion date.",
+            "value": ""
+        },
+        "f15_Estimated_Final_Cost_Estimate": {
+            "section": "Forecast Performance for Future Reporting Periods",
+            "label": "Estimated Final Cost / Estimate",
+            "guidance": "Projected total final cost at completion (applicable to cost-reimbursable contracts).",
+            "value": ""
+        },
+        "f16_Estimated_Final_Cost_Basis": {
+            "section": "Forecast Performance for Future Reporting Periods",
+            "label": "Estimated Final Cost / Basis",
+            "guidance": "Basis and historical cost rate data supporting the estimated final cost.",
+            "value": ""
+        },
+        "f17_Key_Forecast_Assumptions_Estimate": {
+            "section": "Forecast Performance for Future Reporting Periods",
+            "label": "Key Forecast Assumptions / Estimate",
+            "guidance": "Summary of key assumptions underpinning forecast values.",
+            "value": ""
+        },
+        "f18_Key_Forecast_Assumptions_Basis": {
+            "section": "Forecast Performance for Future Reporting Periods",
+            "label": "Key Forecast Assumptions / Basis",
+            "guidance": "Dependencies and external conditions supporting forecast stability.",
+            "value": ""
+        },
+        "f19_Claims_or_Disputes": {
+            "section": "Claims or Disputes",
             "label": "Claims or Disputes",
-            "guidance": "Identify any new or resolved disputes or claims that occurred during the current reporting period.",
+            "guidance": "Summary of any new, pending, or resolved contractual claims or disputes.",
             "value": ""
         },
-        "risks": {
+        "f20_Risks": {
+            "section": "Risks",
             "label": "Risks",
-            "guidance": "List any risks. Risks should also be recorded in the project risk register.",
+            "guidance": "Key vendor-side risks that could impact contract milestones or deliverables.",
             "value": ""
         },
-        "corrective_preventive_action": {
+        "f21_Planned_Corrective_or_Preventive_Action": {
+            "section": "Planned Corrective or Preventive Action",
             "label": "Planned Corrective or Preventive Action",
-            "guidance": "Identify planned corrective or preventive actions necessary to recover schedule, cost, scope, or quality variances.",
+            "guidance": "Specific remedial actions planned by the contractor to recover performance variances.",
             "value": ""
         },
-        "issues": {
+        "f22_Issues": {
+            "section": "Issues",
             "label": "Issues",
-            "guidance": "Identify any new issues that have arisen. These should also be entered in the issue log.",
+            "guidance": "Current active roadblocks, technical issues, or dependencies affecting execution.",
             "value": ""
         },
-        "escalations": {
+        "f23_Escalations": {
+            "section": "Escalations",
             "label": "Escalations",
-            "guidance": "Identify any area that requires escalation to the sponsor, program manager, contracting officer, or another appropriate individual.",
+            "guidance": "Items requiring urgent decisions or dispute intervention from the buyer or PMO.",
             "value": ""
         },
-        "change_requests": {
+        "f24_Contract_Change_Requests": {
+            "section": "Contract Change Requests",
             "label": "Contract Change Requests",
-            "guidance": "Summarise any contract change requests submitted during this reporting period.",
+            "guidance": "Summary of formal contract change proposals submitted, reviewed, or pending.",
             "value": ""
         },
-        "comments": {
+        "f25_Comments": {
+            "section": "Comments",
             "label": "Comments",
-            "guidance": "Add any comments that will add relevance to the report.",
+            "guidance": "Additional context, contractor remarks, or explanatory notes.",
             "value": ""
         }
     }

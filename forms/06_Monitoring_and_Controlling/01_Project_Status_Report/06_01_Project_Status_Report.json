@@ -1,75 +1,116 @@
 {
-    "_llm_instructions": "Populate the Project Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.\n- Schedule Performance (Current Period): List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.\n- Cost Performance (Current Period): Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.\n- Planning for Next Period: Outline the accomplishments and costs planned for the upcoming reporting period.\n- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation to sponsors or program managers.\n- Project Knowledge and Decisions: Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "PROJECT STATUS REPORT",
     "document_reference": "PMO-06.01",
+    "_llm_instructions": "Populate the fields of 'PROJECT STATUS REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Report Information": {
-            "guidance": "Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.",
-            "value": {
-                "Reporting Period Start Date": "",
-                "Reporting Period End Date": "",
-                "Prepared By (Project Manager)": "",
-                "Sponsor Name": ""
-            }
+        "f01_Accomplishments_for_this_reporting_period": {
+            "section": "Schedule Performance (Current Period)",
+            "label": "Accomplishments for this reporting period",
+            "guidance": "Key milestones, deliverables, and tasks completed during this period.",
+            "value": ""
         },
-        "Schedule Performance (Current Period)": {
-            "guidance": "List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.",
-            "value": {
-                "Accomplishments for this reporting period": [
-                    "",
-                    "",
-                    ""
-                ],
-                "Accomplishments planned but not completed this reporting period": [
-                    "",
-                    "",
-                    ""
-                ],
-                "Root cause of schedule variances": "",
-                "Impact to upcoming milestones or project due date": "",
-                "Planned corrective or preventive action (Schedule)": ""
-            }
+        "f02_Accomplishments_planned_but_not_completed_this_reporting_period": {
+            "section": "Schedule Performance (Current Period)",
+            "label": "Accomplishments planned but not completed this reporting period",
+            "guidance": "Activities that were scheduled for completion but remain in progress or delayed.",
+            "value": ""
         },
-        "Cost Performance (Current Period)": {
-            "guidance": "Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.",
-            "value": {
-                "Funds spent this reporting period": "",
-                "Root cause of cost variances": "",
-                "Impact to overall budget or contingency funds": "",
-                "Planned corrective or preventive action (Cost)": ""
-            }
+        "f03_Root_cause_of_schedule_variances": {
+            "section": "Schedule Performance (Current Period)",
+            "label": "Root cause of schedule variances",
+            "guidance": "Underlying causes and contributing factors for any schedule delays or slippages.",
+            "value": ""
         },
-        "Planning for Next Period": {
-            "guidance": "Outline the accomplishments and costs planned for the upcoming reporting period.",
-            "value": {
-                "Accomplishments planned for next reporting period": [
-                    "",
-                    "",
-                    ""
-                ],
-                "Costs planned for next reporting period": ""
-            }
+        "f04_Impact_to_upcoming_milestones_or_project_due_date": {
+            "section": "Schedule Performance (Current Period)",
+            "label": "Impact to upcoming milestones or project due date",
+            "guidance": "Expected effects of current schedule performance on future critical path milestones.",
+            "value": ""
         },
-        "Risks, Issues, and Escalations": {
-            "guidance": "Log new risks, issues, and any matters requiring escalation to sponsors or program managers.",
-            "value": {
-                "New risks identified": "",
-                "New issues identified": "",
-                "Escalations": ""
-            }
+        "f05_Planned_corrective_or_preventive_action_Schedule": {
+            "section": "Schedule Performance (Current Period)",
+            "label": "Planned corrective or preventive action (Schedule)",
+            "guidance": "Specific recovery actions planned to bring the schedule back in alignment with baseline.",
+            "value": ""
         },
-        "Project Knowledge and Decisions": {
-            "guidance": "Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.",
-            "value": {
-                "Decisions made": "",
-                "Change requests submitted this period": "",
-                "Lessons learned / Knowledge transfer": ""
-            }
+        "f06_Funds_spent_this_reporting_period": {
+            "section": "Cost Performance (Current Period)",
+            "label": "Funds spent this reporting period",
+            "guidance": "Total expenditures and actual costs incurred during the current reporting period.",
+            "value": ""
         },
-        "Comments": {
-            "guidance": "Document any comments that add relevance to this report.",
+        "f07_Root_cause_of_cost_variances": {
+            "section": "Cost Performance (Current Period)",
+            "label": "Root cause of cost variances",
+            "guidance": "Reasons for any cost overruns or underruns compared against the cost baseline.",
+            "value": ""
+        },
+        "f08_Impact_to_overall_budget_or_contingency_funds": {
+            "section": "Cost Performance (Current Period)",
+            "label": "Impact to overall budget or contingency funds",
+            "guidance": "Projected impact of current spending trends on total project budget and reserves.",
+            "value": ""
+        },
+        "f09_Planned_corrective_or_preventive_action_Cost": {
+            "section": "Cost Performance (Current Period)",
+            "label": "Planned corrective or preventive action (Cost)",
+            "guidance": "Corrective steps designed to control project expenditure within approved budget limits.",
+            "value": ""
+        },
+        "f10_Accomplishments_planned_for_next_reporting_period": {
+            "section": "Planning for Next Period",
+            "label": "Accomplishments planned for next reporting period",
+            "guidance": "Key objectives, tasks, and deliverables scheduled for execution in the next cycle.",
+            "value": ""
+        },
+        "f11_Costs_planned_for_next_reporting_period": {
+            "section": "Planning for Next Period",
+            "label": "Costs planned for next reporting period",
+            "guidance": "Anticipated financial expenditures and commitments for the upcoming period.",
+            "value": ""
+        },
+        "f12_New_risks_identified": {
+            "section": "Risks, Issues, and Escalations",
+            "label": "New risks identified",
+            "guidance": "Newly discovered risks requiring qualitative or quantitative analysis and response planning.",
+            "value": ""
+        },
+        "f13_New_issues_identified": {
+            "section": "Risks, Issues, and Escalations",
+            "label": "New issues identified",
+            "guidance": "Newly materialized issues requiring immediate tracking and resolution.",
+            "value": ""
+        },
+        "f14_Escalations": {
+            "section": "Risks, Issues, and Escalations",
+            "label": "Escalations",
+            "guidance": "Matters requiring immediate intervention or decision-making from executive sponsors.",
+            "value": ""
+        },
+        "f15_Decisions_made": {
+            "section": "Project Knowledge and Decisions",
+            "label": "Decisions made",
+            "guidance": "Significant architectural, operational, or management decisions ratified during this period.",
+            "value": ""
+        },
+        "f16_Change_requests_submitted_this_period": {
+            "section": "Project Knowledge and Decisions",
+            "label": "Change requests submitted this period",
+            "guidance": "Summary of formal change requests submitted, evaluated, or approved this period.",
+            "value": ""
+        },
+        "f17_Lessons_learned_and_knowledge_transfer": {
+            "section": "Project Knowledge and Decisions",
+            "label": "Lessons learned and knowledge transfer",
+            "guidance": "Insights and practical lessons captured to enhance ongoing and future project performance.",
+            "value": ""
+        },
+        "f18_Comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Additional explanatory notes, contextual remarks, or qualitative updates.",
             "value": ""
         }
     }

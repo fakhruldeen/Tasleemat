@@ -1,35 +1,70 @@
 ---
 lang: en
-Form: PROCUREMENT MANAGEMENT PLAN (Instructions)
+Form: Procurement Management Plan (Instructions)
 ---
 
-# PROCUREMENT MANAGEMENT PLAN - LLM GENERATION GUIDE
+# Procurement Management Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROCUREMENT MANAGEMENT PLAN`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Procurement Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The procurement management plan describes how all aspects of a procurement will be managed. It describes how procured work will be coordinated and integrated with other project work, timing of activities, metrics, roles, constraints, legal jurisdiction, and risk requirements.
+> **Context and Definition:**
+> A subsidiary plan establishing how project procurement processes will be administered from developing procurement documents through contract closure.
 
-**Tailoring Tips:**
-*   For a project that will be done using internal resources only, or where materials will be purchased with a standing purchase order, you do not need a procurement management plan.
-*   For projects with a few procurements consider combining this form with the procurement strategy.
-*   You may wish to combine the assumptions and constraints for procurements with the assumption log.
-*   Work with the contracting or legal department to ensure compliance with organizational purchasing policies.
+> **Alignment:**
+> Integrates with Procurement Strategy, SOW, Source Selection Criteria, Cost Baseline, and Project Schedule.
 
 ---
 
-### Section Generation Instructions
-*   **Procurement Integration: Scope:** Define how the contractor's WBS will integrate with the project WBS.
-*   **Procurement Integration: Schedule:** Define how the contractor's schedule will integrate with the project schedule, including milestones and long lead items.
-*   **Procurement Integration: Documentation:** Describe how contractor documentation will integrate with project documentation.
-*   **Procurement Integration: Risk:** Describe how risk identification, analysis, and response will integrate with risk management for the overall project.
-*   **Procurement Integration: Reporting:** Define how the contractor's status reports will integrate with the project status report.
-*   **Timing of Procurement Activities:** Identify the timetable of key procurement activities.
-*   **Performance Metrics:** Document the metrics that will be used to evaluate the seller's performance.
-*   **Roles, Responsibilities, and Authority:** Define the roles, responsibilities, and authority level of the project manager, contractor, and procurement department, as well as any other significant stakeholders for the contract.
-*   **Assumptions and Constraints:** Record assumptions and constraints related to the procurement activities.
-*   **Legal Jurisdiction and Currency:** Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.
-*   **Independent Estimates:** Document whether independent cost estimates will be used and if they will be needed for source selection.
-*   **Risk Management Requirements:** Document requirements for performance bonds or insurance contracts to reduce risk.
-*   **Prequalified Sellers:** List any prequalified sellers that will be used.
+## Procurement Integration and Scheduling
+
+### Procurement Strategy and Project Integration
+**Instruction:** Integration strategy coordinating contract acquisitions with overall project schedule and scope baselines.
+
+**Generated Value:** [ Add details... ]
+
+### Procurement Timetable and Milestone Alignment
+**Instruction:** Key procurement lifecycle milestones (RFP issuance, bid evaluation, contract award, delivery).
+
+**Generated Value:** [ Add details... ]
+
+## Procurement Roles, Authority, and Metrics
+
+### Procurement Roles and Sign-off Authority
+**Instruction:** Defined roles (Procurement Manager, Legal Counsel, Technical Evaluators) and contracting authority limits.
+
+**Generated Value:** [ Add details... ]
+
+### Vendor Performance Metrics and SLAs
+**Instruction:** Objective metrics and service level agreements used to measure vendor performance.
+
+**Generated Value:** [ Add details... ]
+
+## Contract Types and Pre-Qualified Vendors
+
+### Standard Contract Types Selection
+**Instruction:** Authorized contract structures (Firm Fixed Price, Time and Materials, Cost-Plus) mapped to deliverable types.
+
+**Generated Value:** [ Add details... ]
+
+### Pre-Qualified Vendor Selection Approach
+**Instruction:** Approach for evaluating and maintaining pre-qualified vendor lists and source directories.
+
+**Generated Value:** [ Add details... ]
+
+## Legal Jurisdiction, Currency, and Risk Management
+
+### Legal Jurisdiction, Dispute Terms, and Currency
+**Instruction:** Governing commercial legal jurisdiction, dispute resolution protocols, and billing currency.
+
+**Generated Value:** [ Add details... ]
+
+### Procurement Risk and Independent Estimates
+**Instruction:** Independent Cost Estimate (ICE) requirements and vendor default mitigation strategies.
+
+**Generated Value:** [ Add details... ]
+
+---

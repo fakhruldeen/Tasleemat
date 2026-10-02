@@ -1,2 +1,11 @@
-﻿ID,Category,Description,Requestor,Submission Date,Status,Disposition,Cost/Schedule Impact,Type (Mandatory/Discretionary),Configurable Items Impacted
-,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Change Log Entries,ID,"Unique identifier for the change request (e.g., CR-01).",
+Change Log Entries,Category,"Change category (Scope, Schedule, Cost, Quality, Resource).",
+Change Log Entries,Description,Summary description of the proposed change.,
+Change Log Entries,Requestor,Name or department submitting the change request.,
+Change Log Entries,Submission Date,Date the change request was formally submitted.,
+Change Log Entries,Status,"Current lifecycle state of the request (Submitted, Under Review, Approved, Rejected).",
+Change Log Entries,Disposition,Decision made by the Change Control Board (CCB).,
+Change Log Entries,Cost/Schedule Impact,Estimated financial and timeline impact of the change.,
+Change Log Entries,Type (Mandatory/Discretionary),Whether the change is legally mandatory or discretionary.,
+Change Log Entries,Configurable Items Impacted,"Configuration items, baselines, or specifications affected.",

@@ -1,38 +1,68 @@
 {
-    "_llm_instructions": "Fill out the properties and generate professional text for each section of the Cost Management Plan. Context: The cost management plan specifies how the project costs will be estimated, structured, monitored, and controlled. It is an output from the process 7.1 Plan Cost Management in the PMBOK® Guide.",
     "form_name": "COST MANAGEMENT PLAN",
     "document_reference": "PMO-04.04.01",
+    "_llm_instructions": "Populate the fields of 'COST MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.04.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Measurement Metrics Table": {
-            "guidance": "Provide the 3-column table for measurement metrics.",
-            "value": [
-                {
-                    "Units of Measure": "",
-                    "Level of Precision": "",
-                    "Level of Accuracy": ""
-                }
-            ]
-        },
-        "Organizational Procedure Links": {
-            "guidance": "Link to WBS and accounting codes.",
+        "f01_Cost_Estimating_and_Budgeting_Methodology": {
+            "section": "Cost Management Approach and Methodology",
+            "label": "Cost Estimating and Budgeting Methodology",
+            "guidance": "The overarching framework and techniques applied for estimating and establishing budgets.",
             "value": ""
         },
-        "Control Thresholds": {
-            "guidance": "Variance triggers for corrective action.",
+        "f02_Cost_Accounting_and_Tracking_Software": {
+            "section": "Cost Management Approach and Methodology",
+            "label": "Cost Accounting and Tracking Software",
+            "guidance": "Approved enterprise accounting and financial tracking tools used for cost management.",
             "value": ""
         },
-        "Rules of Performance Measurement": {
-            "guidance": "Measurement methods, EVM rules.",
+        "f03_Currency_and_Units_of_Measure": {
+            "section": "Units of Measure and Estimation Precision",
+            "label": "Currency and Units of Measure",
+            "guidance": "Primary project operating currency and measurement units (person-days, hourly billing rates).",
             "value": ""
         },
-        "Cost Reporting Information": {
-            "guidance": "Format and frequency of reporting.",
+        "f04_Level_of_Precision_and_Accuracy_Ranges": {
+            "section": "Units of Measure and Estimation Precision",
+            "label": "Level of Precision and Accuracy Ranges",
+            "guidance": "Rounding rules, decimal precision, and required percentage confidence ranges (+/-).",
             "value": ""
         },
-        "Additional Details": {
-            "guidance": "Funding choices or options.",
+        "f05_Control_Account_Structure_and_WBS_Linkage": {
+            "section": "Organizational Procedures and Control Accounts",
+            "label": "Control Account Structure and WBS Linkage",
+            "guidance": "Integration linking WBS work packages to specific financial chart-of-account codes.",
+            "value": ""
+        },
+        "f06_Cost_Management_Roles_and_Authorizations": {
+            "section": "Organizational Procedures and Control Accounts",
+            "label": "Cost Management Roles and Authorizations",
+            "guidance": "Financial decision authority, invoice approval thresholds, and spending limits.",
+            "value": ""
+        },
+        "f07_EVM_Formulas_and_Measurement_Techniques": {
+            "section": "Earned Value and Performance Measurement Rules",
+            "label": "EVM Formulas and Measurement Techniques",
+            "guidance": "Standard EVM formulas, physical percent complete determination rules, and BAC rules.",
+            "value": ""
+        },
+        "f08_Cost_Performance_Indicators": {
+            "section": "Earned Value and Performance Measurement Rules",
+            "label": "Cost Performance Indicators",
+            "guidance": "Key financial metrics tracked including CV, CPI, TCPI, and EAC forecasting formulas.",
+            "value": ""
+        },
+        "f09_Cost_Variance_Thresholds_and_Escalations": {
+            "section": "Cost Variance Thresholds and Reporting",
+            "label": "Cost Variance Thresholds and Escalations",
+            "guidance": "Defined financial deviation boundaries triggering mandatory variance analysis and CCB escalation.",
+            "value": ""
+        },
+        "f10_Cost_Reporting_Cadence_and_Formats": {
+            "section": "Cost Variance Thresholds and Reporting",
+            "label": "Cost Reporting Cadence and Formats",
+            "guidance": "Frequency, distribution channels, and presentation formats for executive financial reports.",
             "value": ""
         }
     }

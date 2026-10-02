@@ -1,44 +1,264 @@
 ---
 lang: en
-Form: EARNED VALUE ANALYSIS REPORT (Instructions)
+Form: Earned Value Analysis (Instructions)
 ---
 
-# EARNED VALUE ANALYSIS REPORT - LLM GENERATION GUIDE
+# Earned Value Analysis - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `EARNED VALUE ANALYSIS REPORT`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Earned Value Analysis». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> Earned value analysis shows specific mathematical metrics that are designed to reflect the health of the project by integrating scope, schedule, and cost information. It is used to forecast total cost at completion and required efficiency.
+> **Context and Definition:**
+> A rigorous performance measurement methodology that integrates project scope, schedule, and cost metrics to assess health and forecast final outcomes.
 
-> **Period columns:**
-> Every metric table in sections 1 through 4 is reported across three period columns -
-> **Current Reporting Period**, **Current Period Cumulative**, and **Past Period
-> Cumulative**. Populate all three columns for each metric. `Budget at Completion (BAC)`
-> is a single figure and is not restated per period.
-
-**Tailoring Tips:**
-*   The earned value analysis can be done at the control account and/or project level depending on your needs.
-*   You may want to add a field that indicates the implications of continued variance. This can include a forecast based on a trend analysis or based on identified responses.
-*   Several different equations can be used to calculate the EAC depending on whether the remaining work will be completed at the budgeted rate or at the current rate.
-*   There are options to calculate a TCPI. Use the information from your project to determine the best approach for reporting.
-*   You may want to add information that indicates the implications of continued schedule variance. This can include a schedule forecast using SPI as the basis for a trend analysis or based on analyzing the critical path.
-
-**Alignment:**
-Earned value analysis should be aligned and consistent with the following documents:
-*   Project status report
-*   Project schedule
-*   Project budget
-*   Variance analysis
-*   Contractor status report
+> **Alignment:**
+> Integrates Cost Baseline, Project Schedule, WBS, Variance Analysis, and executive Status Reports.
 
 ---
 
-### Section Generation Instructions
-*   **Report Information:** Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.
-*   **Basic Earned Value Metrics:** Enter Budget at Completion (BAC) once, then enter Planned Value (PV), Earned Value (EV), and Actual Cost (AC) for each of the three period columns.
-*   **Variances and Indices:** Calculate Schedule Variance (SV = EV - PV), Cost Variance (CV = EV - AC), Schedule Performance Index (SPI = EV / PV), and Cost Performance Index (CPI = EV / AC) for each period column.
-*   **Percentages:** Indicate Percent Planned (PV / BAC), Percent Earned (EV / BAC), and Percent Spent (AC / BAC) for each period column.
-*   **Forecasting (Estimates):** Calculate EAC w/CPI (BAC / CPI), EAC w/CPI x SPI (AC + ((BAC - EV) / (CPI x SPI))), and TCPI ((BAC - EV) / (BAC - AC)) for each period column, then record the selected EAC and justify the choice.
-*   **Root Cause and Impacts Analysis:** Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.
-*   **Comments:** Document any comments that add relevance to this report.
+## Basic Earned Value Metrics
+
+### Budget at Completion (BAC)
+**Instruction:** The total approved baseline budget allocated for the complete project scope.
+
+**Generated Value:** [ Add details... ]
+
+### Planned Value (PV) / Current Reporting Period
+**Instruction:** The authorized budget assigned to scheduled work for the current reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Planned Value (PV) / Current Period Cumulative
+**Instruction:** The cumulative authorized budget planned from project start through current period.
+
+**Generated Value:** [ Add details... ]
+
+### Planned Value (PV) / Past Period Cumulative
+**Instruction:** The cumulative planned value calculated at the close of the previous reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Earned Value (EV) / Current Reporting Period
+**Instruction:** The budgeted amount for the work actually completed during the current period.
+
+**Generated Value:** [ Add details... ]
+
+### Earned Value (EV) / Current Period Cumulative
+**Instruction:** The cumulative budgeted amount for all work accomplished from project start to date.
+
+**Generated Value:** [ Add details... ]
+
+### Earned Value (EV) / Past Period Cumulative
+**Instruction:** The cumulative earned value achieved as of the previous reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Actual Cost (AC) / Current Reporting Period
+**Instruction:** The actual expenditures incurred for work performed during the current period.
+
+**Generated Value:** [ Add details... ]
+
+### Actual Cost (AC) / Current Period Cumulative
+**Instruction:** The cumulative total actual costs incurred from project start through current period.
+
+**Generated Value:** [ Add details... ]
+
+### Actual Cost (AC) / Past Period Cumulative
+**Instruction:** The cumulative actual costs recorded as of the previous reporting period.
+
+**Generated Value:** [ Add details... ]
+
+## Variances and Indices
+
+### Schedule Variance (SV) / Current Reporting Period
+**Instruction:** The schedule performance in financial terms (EV - PV) for the current period.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Variance (SV) / Current Period Cumulative
+**Instruction:** The cumulative schedule variance (Cumulative EV - Cumulative PV) to date.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Variance (SV) / Past Period Cumulative
+**Instruction:** The cumulative schedule variance as of the prior reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Variance (CV) / Current Reporting Period
+**Instruction:** The financial budget variance (EV - AC) for the current reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Variance (CV) / Current Period Cumulative
+**Instruction:** The cumulative cost variance (Cumulative EV - Cumulative AC) to date.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Variance (CV) / Past Period Cumulative
+**Instruction:** The cumulative cost variance as of the prior reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Performance Index (SPI) / Current Reporting Period
+**Instruction:** The schedule efficiency ratio (EV / PV) for the current period.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Performance Index (SPI) / Current Period Cumulative
+**Instruction:** The cumulative schedule efficiency ratio (Cumulative EV / Cumulative PV).
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Performance Index (SPI) / Past Period Cumulative
+**Instruction:** The cumulative schedule efficiency index from the previous reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Performance Index (CPI) / Current Reporting Period
+**Instruction:** The cost efficiency ratio (EV / AC) for the current period.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Performance Index (CPI) / Current Period Cumulative
+**Instruction:** The cumulative cost efficiency ratio (Cumulative EV / Cumulative AC).
+
+**Generated Value:** [ Add details... ]
+
+### Cost Performance Index (CPI) / Past Period Cumulative
+**Instruction:** The cumulative cost efficiency index from the previous reporting period.
+
+**Generated Value:** [ Add details... ]
+
+## Percentages
+
+### Percent Planned / Current Reporting Period
+**Instruction:** Planned Value divided by BAC for the current reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Planned / Current Period Cumulative
+**Instruction:** Cumulative Planned Value divided by BAC to measure scheduled completion percentage.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Planned / Past Period Cumulative
+**Instruction:** Cumulative Planned Value divided by BAC as of the prior reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Earned / Current Reporting Period
+**Instruction:** Earned Value divided by BAC for the current reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Earned / Current Period Cumulative
+**Instruction:** Cumulative Earned Value divided by BAC representing actual project percent complete.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Earned / Past Period Cumulative
+**Instruction:** Cumulative Earned Value divided by BAC as of the prior reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Spent / Current Reporting Period
+**Instruction:** Actual Cost divided by BAC for the current reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Spent / Current Period Cumulative
+**Instruction:** Cumulative Actual Cost divided by BAC representing total project budget spent to date.
+
+**Generated Value:** [ Add details... ]
+
+### Percent Spent / Past Period Cumulative
+**Instruction:** Cumulative Actual Cost divided by BAC as of the prior reporting period.
+
+**Generated Value:** [ Add details... ]
+
+## Forecasting (Estimates)
+
+### EAC w/CPI / Current Reporting Period
+**Instruction:** Estimate at Completion assuming future work performed at current period CPI (BAC / CPI).
+
+**Generated Value:** [ Add details... ]
+
+### EAC w/CPI / Current Period Cumulative
+**Instruction:** Estimate at Completion assuming future work performed at cumulative CPI.
+
+**Generated Value:** [ Add details... ]
+
+### EAC w/CPI / Past Period Cumulative
+**Instruction:** Estimate at Completion based on past period cumulative CPI.
+
+**Generated Value:** [ Add details... ]
+
+### EAC w/CPI × SPI / Current Reporting Period
+**Instruction:** Estimate at Completion factoring both cost and schedule indices for current period.
+
+**Generated Value:** [ Add details... ]
+
+### EAC w/CPI × SPI / Current Period Cumulative
+**Instruction:** Estimate at Completion factoring cumulative cost and schedule performance indices.
+
+**Generated Value:** [ Add details... ]
+
+### EAC w/CPI × SPI / Past Period Cumulative
+**Instruction:** Estimate at Completion factoring past period cumulative cost and schedule indices.
+
+**Generated Value:** [ Add details... ]
+
+### To Complete Performance Index (TCPI) / Current Reporting Period
+**Instruction:** Cost efficiency required to complete the remaining work within BAC for current period.
+
+**Generated Value:** [ Add details... ]
+
+### To Complete Performance Index (TCPI) / Current Period Cumulative
+**Instruction:** Cost efficiency required to complete the remaining work within BAC cumulatively.
+
+**Generated Value:** [ Add details... ]
+
+### To Complete Performance Index (TCPI) / Past Period Cumulative
+**Instruction:** TCPI calculated at the close of the prior reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Selected EAC - Justification and Explanation
+**Instruction:** Detailed justification of the selected EAC forecasting formula and expected final budget outcome.
+
+**Generated Value:** [ Add details... ]
+
+## Root Cause and Impacts Analysis
+
+### Root cause of schedule variance
+**Instruction:** Underlying drivers and operational causes for schedule efficiency or delay.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule impact (incl. implications of continued variance)
+**Instruction:** Projected delivery delays and critical path impacts if schedule trends continue.
+
+**Generated Value:** [ Add details... ]
+
+### Root cause of cost variance
+**Instruction:** Operational factors, rate fluctuations, or scope drivers causing cost variances.
+
+**Generated Value:** [ Add details... ]
+
+### Budget impact (incl. intended actions/reserves)
+**Instruction:** Financial exposure and reserve utilization strategies to maintain fiscal control.
+
+**Generated Value:** [ Add details... ]
+
+## Comments
+
+### Comments
+**Instruction:** Additional contextual observations or recommendations from the EVM analyst.
+
+**Generated Value:** [ Add details... ]
+
+---

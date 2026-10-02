@@ -1,78 +1,87 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this CHANGE MANAGEMENT PLAN template based on the provided project context. Context & Definition: The change management plan describes how change will be managed on the project, including the change control board, definitions of change, and the change control process. Alignment: Ensure consistency with the Project roadmap, Scope, Requirements, Schedule, Cost, Quality, and Configuration management plans.",
     "form_name": "CHANGE MANAGEMENT PLAN",
     "document_reference": "PMO-04.01.02",
+    "_llm_instructions": "Populate the fields of 'CHANGE MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.01.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Change management approach": {
-            "guidance": "Describe the degree of change control and how change control will integrate with other aspects of project management.",
+        "f01_Change_Philosophy_and_Governance": {
+            "section": "Change Management Approach",
+            "label": "Change Philosophy and Governance",
+            "guidance": "Principles governing how change requests are evaluated, prioritized, and approved.",
             "value": ""
         },
-        "Definitions of change": {
-            "guidance": "Define when a variance needs to go through the change control process to be re-baselined for schedule, budget, scope, and project documents. MUST be formatted as a Markdown table with exactly 2 columns: Type of Change, Definition & Re-baseline Trigger. The following rows MUST be pre-filled under Type of Change: Schedule Change, Budget Change, Scope Change, Project Document Change.",
-            "value": [
-                {
-                    "Type of Change": "Schedule Change",
-                    "Definition & Re-baseline Trigger": ""
-                },
-                {
-                    "Type of Change": "Budget Change",
-                    "Definition & Re-baseline Trigger": ""
-                },
-                {
-                    "Type of Change": "Scope Change",
-                    "Definition & Re-baseline Trigger": ""
-                },
-                {
-                    "Type of Change": "Project Document Change",
-                    "Definition & Re-baseline Trigger": ""
-                }
-            ]
+        "f02_Change_Thresholds_and_Triggers": {
+            "section": "Change Management Approach",
+            "label": "Change Thresholds and Triggers",
+            "guidance": "Conditions and variance thresholds that necessitate formal change control submissions.",
+            "value": ""
         },
-        "Change control board": {
-            "guidance": "Identify the structure and membership of the Change Control Board (CCB), including roles, responsibilities, and authority levels. MUST be formatted as a Markdown table with exactly 4 columns: Name, Role, Responsibility, Authority.",
-            "value": [
-                {
-                    "Name": "",
-                    "Role": "",
-                    "Responsibility": "",
-                    "Authority": ""
-                },
-                {
-                    "Name": "",
-                    "Role": "",
-                    "Responsibility": "",
-                    "Authority": ""
-                },
-                {
-                    "Name": "",
-                    "Role": "",
-                    "Responsibility": "",
-                    "Authority": ""
-                }
-            ]
+        "f03_Change_Tracking_and_Tools": {
+            "section": "Change Management Approach",
+            "label": "Change Tracking and Tools",
+            "guidance": "Software tools and tracking mechanisms used to log and trace change requests.",
+            "value": ""
         },
-        "Change control process": {
-            "guidance": "Describe the processes for change request submittal, tracking, review, and outcome disposition. MUST be formatted as a Markdown table with exactly 2 columns: Process Step, Description. The following rows MUST be pre-filled under Process Step: Change request submittal, Change request tracking, Change request review, Change request outcome.",
-            "value": [
-                {
-                    "Process Step": "Change request submittal",
-                    "Description": ""
-                },
-                {
-                    "Process Step": "Change request tracking",
-                    "Description": ""
-                },
-                {
-                    "Process Step": "Change request review",
-                    "Description": ""
-                },
-                {
-                    "Process Step": "Change request outcome",
-                    "Description": ""
-                }
-            ]
+        "f04_Minor_Change_Definition": {
+            "section": "Definitions of Change",
+            "label": "Minor Change Definition",
+            "guidance": "Criteria for low-impact changes manageable within existing project tolerances.",
+            "value": ""
+        },
+        "f05_Major_Change_Definition": {
+            "section": "Definitions of Change",
+            "label": "Major Change Definition",
+            "guidance": "Criteria for significant changes affecting baselines, budgets, or critical path.",
+            "value": ""
+        },
+        "f06_Emergency_Change_Definition": {
+            "section": "Definitions of Change",
+            "label": "Emergency Change Definition",
+            "guidance": "Expedited protocols for urgent operational or security change interventions.",
+            "value": ""
+        },
+        "f07_CCB_Composition_and_Roles": {
+            "section": "Change Control Board (CCB)",
+            "label": "CCB Composition and Roles",
+            "guidance": "Designated members, roles, and voting authority within the Change Control Board.",
+            "value": ""
+        },
+        "f08_Meeting_Cadence_and_Quorum": {
+            "section": "Change Control Board (CCB)",
+            "label": "Meeting Cadence and Quorum",
+            "guidance": "Frequency of CCB meetings and quorum requirements for binding change approvals.",
+            "value": ""
+        },
+        "f09_Escalation_and_Delegation_Rules": {
+            "section": "Change Control Board (CCB)",
+            "label": "Escalation and Delegation Rules",
+            "guidance": "Rules governing threshold-based escalation to executive sponsors or steering committees.",
+            "value": ""
+        },
+        "f10_Change_Submission_Workflow": {
+            "section": "Change Control Process",
+            "label": "Change Submission Workflow",
+            "guidance": "Standard operating procedure for logging and submitting formal change requests.",
+            "value": ""
+        },
+        "f11_Impact_Assessment_Methodology": {
+            "section": "Change Control Process",
+            "label": "Impact Assessment Methodology",
+            "guidance": "Cross-functional analysis evaluating scope, schedule, cost, quality, and risk impact.",
+            "value": ""
+        },
+        "f12_Approval_and_Baseline_Update_Protocol": {
+            "section": "Change Control Process",
+            "label": "Approval and Baseline Update Protocol",
+            "guidance": "Formal sign-off steps and procedures for updating affected baselines and plans.",
+            "value": ""
+        },
+        "f13_Communication_and_Implementation": {
+            "section": "Change Control Process",
+            "label": "Communication and Implementation",
+            "guidance": "Process for communicating change decisions and tracking implementation progress.",
+            "value": ""
         }
     }
 }

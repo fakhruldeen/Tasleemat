@@ -1,28 +1,64 @@
 ---
 lang: en
-Form: DECISION LOG (Instructions)
+Form: Decision Log (Instructions)
 ---
 
-# DECISION LOG - LLM GENERATION GUIDE
+# Decision Log - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `DECISION LOG`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Decision Log». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The decision log helps keep track of the decisions that were made, who made them, and when they were made. It is a dynamic document that is created at the start of the project and is maintained throughout the project to manage day-to-day activities.
+> **Context and Definition:**
+> A project management artifact that captures key architectural, technical, operational, and managerial decisions.
 
-**Tailoring Tips:**
-*   For projects that are large, complicated, or complex you can add fields to identify the impacts of the decision on deliverables or project objectives.
-*   You could add a field that documents which stakeholders are impacted by the decision or should be involved with making the decision or should be informed of the decision.
-
-**Alignment:**
-The decision log should be aligned and consistent with the following documents:
-*   Project scope statement
-*   Responsibility assignment matrix
-*   Communications management plan
-*   Issue register
+> **Alignment:**
+> The Decision Log aligns with Project Charter, Change Log, Issue Log, and Stakeholder Register.
 
 ---
 
-### Section Generation Instructions
-*   **Decision Log:** Record all project decisions. Include the category, the decision itself, impacts on objectives, affected stakeholders, the responsible party, the date, and any comments (such as alternatives considered or reasoning).
+## Decision Log Entries
+
+### ID
+**Instruction:** Unique identifier for the decision (e.g., DEC-01).
+
+**Generated Value:** [ Add details... ]
+
+### Category
+**Instruction:** Category of the decision (e.g., Scope, Architecture, Vendor, Process).
+
+**Generated Value:** [ Add details... ]
+
+### Decision
+**Instruction:** The specific decision made and its underlying rationale.
+
+**Generated Value:** [ Add details... ]
+
+### Impacts on Deliverables/Objectives
+**Instruction:** Anticipated impacts on deliverables, budget, schedule, or architecture.
+
+**Generated Value:** [ Add details... ]
+
+### Impacted Stakeholders
+**Instruction:** Stakeholders affected by this decision.
+
+**Generated Value:** [ Add details... ]
+
+### Responsible Party
+**Instruction:** The person or entity responsible for making and enforcing the decision.
+
+**Generated Value:** [ Add details... ]
+
+### Date
+**Instruction:** The date on which the decision was officially agreed or approved.
+
+**Generated Value:** [ Add details... ]
+
+### Comments
+**Instruction:** Alternatives considered, trade-offs, and supporting references.
+
+**Generated Value:** [ Add details... ]
+
+---

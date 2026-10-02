@@ -1,71 +1,69 @@
 {
-    "_llm_instructions": "Populate the Resource Management Plan.",
     "form_name": "RESOURCE MANAGEMENT PLAN",
-    "fields": {
-        "Team member identification and estimates": {
-            "guidance": "Table identifying Role, Number, and Skill Level.",
-            "value": [
-                {
-                    "Role": "",
-                    "Number": "",
-                    "Skill Level": ""
-                }
-            ]
-        },
-        "Team member acquisition": {
-            "guidance": "Document how staff will be brought on to the project.",
-            "value": ""
-        },
-        "Team member management and release": {
-            "guidance": "Document how team members will be managed and eventually released.",
-            "value": ""
-        },
-        "Project organizational chart": {
-            "guidance": "Mermaid flowchart TD representing the organizational chart.",
-            "value": ""
-        },
-        "Roles, Responsibilities, and Authority": {
-            "guidance": "Table identifying Role, Responsibility, and Authority.",
-            "value": [
-                {
-                    "Role": "",
-                    "Responsibility": "",
-                    "Authority": ""
-                }
-            ]
-        },
-        "Training requirements": {
-            "guidance": "Describe required training.",
-            "value": ""
-        },
-        "Rewards and recognition": {
-            "guidance": "Describe reward and recognition processes.",
-            "value": ""
-        },
-        "Team development": {
-            "guidance": "Describe methods for developing team members.",
-            "value": ""
-        },
-        "Physical resource identification and estimates": {
-            "guidance": "Table identifying Resource, Amount, and Grade.",
-            "value": [
-                {
-                    "Resource": "",
-                    "Amount": "",
-                    "Grade": ""
-                }
-            ]
-        },
-        "Physical resource acquisition": {
-            "guidance": "Document how physical resources will be acquired.",
-            "value": ""
-        },
-        "Physical resource management": {
-            "guidance": "Document how physical resources will be managed.",
-            "value": ""
-        }
-    },
+    "document_reference": "PMO-04.06.01",
+    "_llm_instructions": "Populate the fields of 'RESOURCE MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.06.01.",
     "project_title": "",
     "date_prepared": "",
-    "document_reference": "PMO-04.06.01"
+    "fields": {
+        "f01_Resource_Identification_Strategy": {
+            "section": "Resource Identification and Acquisition",
+            "label": "Resource Identification Strategy",
+            "guidance": "Methods used to identify human, equipment, and material resources needed for project execution.",
+            "value": ""
+        },
+        "f02_Resource_Acquisition_and_Staffing_Approach": {
+            "section": "Resource Identification and Acquisition",
+            "label": "Resource Acquisition and Staffing Approach",
+            "guidance": "Protocols for internal resource assignment, external hiring, and contracting.",
+            "value": ""
+        },
+        "f03_Key_Project_Roles_and_Competency_Profiles": {
+            "section": "Roles, Responsibilities, and Authority",
+            "label": "Key Project Roles and Competency Profiles",
+            "guidance": "Definition of core project roles, required qualifications, and skill competencies.",
+            "value": ""
+        },
+        "f04_Authority_and_Decision_Making_Boundaries": {
+            "section": "Roles, Responsibilities, and Authority",
+            "label": "Authority and Decision-Making Boundaries",
+            "guidance": "Authorized decision limits for technical leads, project managers, and supervisors.",
+            "value": ""
+        },
+        "f05_Project_Organizational_Chart_and_Hierarchy": {
+            "section": "Project Organization Structure",
+            "label": "Project Organizational Chart and Hierarchy",
+            "guidance": "Visual or structured hierarchy outlining reporting lines and team organizational units.",
+            "value": ""
+        },
+        "f06_Resource_Management_Governance": {
+            "section": "Project Organization Structure",
+            "label": "Resource Management Governance",
+            "guidance": "Policies governing resource allocation, conflicts of priority, and workload balancing.",
+            "value": ""
+        },
+        "f07_Team_Building_and_Development_Initiatives": {
+            "section": "Team Development and Training Strategy",
+            "label": "Team Building and Development Initiatives",
+            "guidance": "Structured activities and coaching designed to enhance team cohesion and performance.",
+            "value": ""
+        },
+        "f08_Required_Training_and_Certification_Programs": {
+            "section": "Team Development and Training Strategy",
+            "label": "Required Training and Certification Programs",
+            "guidance": "Mandatory technical, safety, or process training required for team members.",
+            "value": ""
+        },
+        "f09_Equipment_and_Material_Logistics": {
+            "section": "Physical Resource Management and Control",
+            "label": "Equipment and Material Logistics",
+            "guidance": "Procurement, storage, utilization tracking, and maintenance of physical tools and equipment.",
+            "value": ""
+        },
+        "f10_Resource_Release_and_Demobilization_Plan": {
+            "section": "Physical Resource Management and Control",
+            "label": "Resource Release and Demobilization Plan",
+            "guidance": "Orderly phased release plan for team members and return or disposal of physical equipment.",
+            "value": ""
+        }
+    }
 }

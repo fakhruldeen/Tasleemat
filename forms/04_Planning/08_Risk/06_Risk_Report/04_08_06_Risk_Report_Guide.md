@@ -1,32 +1,68 @@
-# RISK REPORT - GUIDANCE
-This document provides descriptions for each element in the Risk Report.
+---
+lang: en
+layout: default
+title: Risk Report
+nav_order: 6
+---
 
-| Document Element | Description |
-| :--- | :--- |
-| **Date Prepared** | The date the report was authored. |
-| **Reporting Period** | The specific timeframe (e.g., Month, Quarter, Phase) this report covers. |
-| **Project Manager** | The person responsible for the project. |
-| **Executive summary** | A statement describing the overall project risk exposure and major individual risks affecting the project, along with the proposed responses for trends. |
-| **Overall Risk Status and Trends** | High-level statement of trends and current risk status. |
-| **Significant Drivers of Overall Risk** | Identify the significant drivers of overall project risk. |
-| **Recommended Responses to Overall Risk** | Outline recommended responses to overall project risk. |
-| **Probability and Impact Matrix** | Indicates the number of individual risks residing in each box of the 5x5 matrix. |
-| **Metrics** | Specific counts for risks by objective (scope, schedule, cost, quality), probability (very high, high, medium), and status (active, newly closed). |
-| **Critical Risks & Responses** | A table tracking the top risks facing the project and their corresponding planned responses. |
-| **Changes to Critical Risks** | Description of any modifications, escalations, or changes to critical risks since the last report. |
-| **Realized Risks (Transferred to Issue Log)** | Risks that have materialized into actual issues during the reporting period. |
-| **Results from Quantitative Assessments** | Output summaries from models like S-curves, Tornado diagrams, or Monte Carlo simulations. |
-| **Probability of Meeting Objectives** | The calculated likelihood of meeting the Scope, Schedule, Cost, and Quality targets. |
-| **Range of Outcomes** | Expected variance range for Schedule and Cost outcomes, their key drivers, and proposed responses. |
-| **Total Cost Reserve** | The total budget allocated for risk responses (Management Reserve and Contingency Reserve). |
-| **Cost Reserve Used to Date** | The cumulative amount of the cost reserve consumed so far. |
-| **Cost Reserve Used This Period** | The amount of the cost reserve consumed during this specific reporting period. |
-| **Remaining Cost Reserve** | The balance of the cost reserve available. |
-| **Total Schedule Reserve** | The total buffer time allocated for risk responses. |
-| **Schedule Reserve Used to Date** | The cumulative amount of schedule reserve consumed so far. |
-| **Schedule Reserve Used This Period** | The amount of schedule reserve consumed during this specific reporting period. |
-| **Remaining Schedule Reserve** | The balance of the schedule reserve available. |
-| **Assessment of Reserve Adequacy** | Evaluation of whether the remaining cost and schedule reserves are sufficient given the current risk landscape. |
-| **Summary of Risk Events** | Overview of risk events that occurred and their impacts. |
-| **Summary of Risk Management Processes** | Evaluation of how effectively the risk management processes were executed. |
-| **Summary of Recommendations** | Actionable recommendations stemming from the risk audit. |
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Risk Report
+
+**Document Reference:** `PMO-04.08.06`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Risk Report** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A formal governance artifact summarizing overall project risk, top threats/opportunities, and strategic risk trends.
+
+---
+
+### 2. Why?
+Informs executive sponsors of overall uncertainty levels, justifies reserve utilization, and prompts governance decisions.
+
+---
+
+### 3. When?
+Prepared on a regular cadence (monthly or milestone gates) throughout project execution.
+
+---
+
+### 4. Who?
+Authored by Project Risk Manager and Project Manager, presented to Project Sponsor and Steering Committee.
+
+---
+
+### Tailoring Tips
+*   Focus on sprint risk burndown charts and blocker trends for agile leadership reviews.
+*   Provide full quantitative probabilistic completion curves for major capital programs.
+
+---
+
+### Alignment
+Integrates Risk Register, Risk Data Sheets, Quantitative Risk Analysis, and Executive Status Reports.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Risk Report**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Overall Project Risk Exposure Summary:** High-level summary of overall project risk health, trends, and risk exposure level.
+*   **Key Risk Drivers and Strategic Factors:** Primary organizational, commercial, or technical drivers influencing project risk.
+*   **Overall Risk Mitigation Strategy:** Consolidated strategy for navigating major project uncertainties.
+*   **Top Project Threats and Active Responses:** Summary of the most critical individual threats, current status, and active mitigation plans.
+*   **Top Project Opportunities and Capture Plans:** Summary of major positive opportunities and execution plans to realize benefits.
+*   **Realized Risks Transferred to Issue Log:** Recently materialized risks that have transitioned to the Issue Log for resolution.
+*   **Quantitative Simulation Findings:** Key conclusions derived from quantitative Monte Carlo simulations or probabilistic models.
+*   **Probability of Achieving Project Objectives:** Estimated percentage likelihood of achieving target delivery dates and budget limits.
+*   **Contingency Reserve Adequacy Assessment:** Audit assessment of total contingency reserve balance against remaining project risk exposure.
+*   **Risk Process and Metric Trends:** Trend analysis tracking closed risks, newly identified risks, and velocity of response actions.
+*   **Recommended Governance Interventions:** Strategic recommendations, escalation requests, and required decisions for executive sponsors.
+
+</div>

@@ -1,22 +1,51 @@
 {
-    "_llm_instructions": "Populate the Resource Requirements.\n\nContext & Definition:\nThe resource requirements describe the type and quantity of resources needed to complete the project work. Resources include:\n*   People\n*   Equipment\n*   Material\n*   Supplies\n*   Locations (as needed)\n\nLocations can include training rooms, testing sites, and so on.\n\nThe activity resource requirements can receive information from:\n*   Assumption log\n*   Resource management plan\n*   Scope baseline\n*   Activity list\n*   Activity attributes\n*   Cost estimates resource calendars\n*   Risk register\n\nIt provides information to:\n*   Duration estimating worksheet\n*   Project schedule\n*   Cost estimating worksheet\n*   Risk register\n*   Procurement management plan\n\nThe resource requirements form is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resource requirements are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. If the scope is evolving, the resource requirements will evolve as well. The resource requirements will become more detailed and more stable over time.\n\nTailoring Tips:\n*   You may want to divide the form into two sections—one for team resources and one for physical resources. As an alternative you can have one section for internal resources and one section for contracted or purchased resources.\n*   Consider adding a column that includes the basis of estimates. This can include supporting detail such as:\n    *   Method used for estimating the quantities\n    *   Range of estimates\n    *   Confidence level of estimates\n    *   Constraints or risks associated with the resource\n*   For projects with large amounts of inventory, supplies, or material you may want to document support requirements, such as inventory, supply chain, and logistical requirements.\n\nAlignment:\nThe resource requirements should be aligned and consistent with the following documents:\n*   Project schedule\n*   Cost estimates\n*   Bid documents",
     "form_name": "RESOURCE REQUIREMENTS",
     "document_reference": "PMO-04.06.02",
+    "_llm_instructions": "Populate the fields of 'RESOURCE REQUIREMENTS' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.06.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Resource Requirements Log": {
-            "guidance": "Provide a table detailing ID, Type of resource, Quantity, Assumptions, Basis of estimate, and Comments.",
-            "value": [
-                {
-                    "ID": "",
-                    "Type of resource": "",
-                    "Quantity": "",
-                    "Assumptions": "",
-                    "Basis of estimate": "",
-                    "Comments": ""
-                }
-            ]
+        "f01_Activity_Identifier_and_Role_Required": {
+            "section": "Human Resource Requirements",
+            "label": "Activity Identifier and Role Required",
+            "guidance": "The schedule activity code and specific professional role or technical job title required.",
+            "value": ""
+        },
+        "f02_Skill_Competencies_and_Quantity_Needed": {
+            "section": "Human Resource Requirements",
+            "label": "Skill Competencies and Quantity Needed",
+            "guidance": "Required certifications, technical expertise, and quantity of headcount required.",
+            "value": ""
+        },
+        "f03_Estimated_Effort_Hours_and_Allocation": {
+            "section": "Human Resource Requirements",
+            "label": "Estimated Effort Hours and Allocation",
+            "guidance": "Total estimated person-hours and allocated percentage commitment for each resource.",
+            "value": ""
+        },
+        "f04_Equipment_Machinery_and_Tool_Requirements": {
+            "section": "Physical and Material Resource Requirements",
+            "label": "Equipment, Machinery, and Tool Requirements",
+            "guidance": "Specific hardware, specialized machinery, computing infrastructure, or testing tools needed.",
+            "value": ""
+        },
+        "f05_Materials_Supplies_and_Facilities": {
+            "section": "Physical and Material Resource Requirements",
+            "label": "Materials, Supplies, and Facilities",
+            "guidance": "Physical raw materials, office space, testing laboratories, or staging environments required.",
+            "value": ""
+        },
+        "f06_Resource_Availability_Dates_and_Constraints": {
+            "section": "Resource Availability and Scheduling Calendar",
+            "label": "Resource Availability Dates and Constraints",
+            "guidance": "Calendar timeframes, mobilization dates, shift constraints, and lead time requirements.",
+            "value": ""
+        },
+        "f07_Resource_Assumptions_and_Risk_Factors": {
+            "section": "Resource Availability and Scheduling Calendar",
+            "label": "Resource Assumptions and Risk Factors",
+            "guidance": "Key assumptions regarding staffing market availability, productivity rates, and bottleneck risks.",
+            "value": ""
         }
     }
 }

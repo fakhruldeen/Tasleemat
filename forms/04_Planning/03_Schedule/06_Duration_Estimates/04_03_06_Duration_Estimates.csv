@@ -1,4 +1,9 @@
-ID,Activity Description,Estimation Method,Effort Hours,Contingency Reserve,Duration Estimates
-,,,,,
-,,,,,
-,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Activity Duration Estimates Table,Activity Identifier and Description,The activity code and concise work summary for each estimated activity.,
+Activity Duration Estimates Table,Estimation Method Applied,"The specific technique used (analogous, parametric, three-point, or bottom-up).",
+Activity Duration Estimates Table,Estimated Effort Hours and Assigned Resources,Total calculated person-hours of effort and assigned resource quantities.,
+Activity Duration Estimates Table,Estimated Duration,Calculated working duration in work days or weeks required to complete the activity.,
+Basis of Estimates and Assumptions,Historical Data and Productivity Rates,"Empirical reference data, productivity metrics, and historical benchmarks used.",
+Basis of Estimates and Assumptions,Key Estimating Assumptions,"Foundational assumptions regarding resource availability, skill proficiencies, and work shifts.",
+Contingency and Reserve Analysis,Schedule Contingency Reserve,Calculated contingency buffer allocated to accommodate identified activity risks.,
+Contingency and Reserve Analysis,Total Activity Duration with Contingency,Final baseline duration inclusive of contingency buffer used in the schedule model.,

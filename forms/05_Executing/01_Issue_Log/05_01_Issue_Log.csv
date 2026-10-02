@@ -1,2 +1,13 @@
-﻿ID,Type,Source of Issue,Issue Description,Priority,Impact on Objectives,Impacted Stakeholders,Responsible Party,Status,Resolution Date,Final Resolution,Comments
-,,,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Issue Log Entries,ID,"Unique identifier for the issue (e.g., ISS-01).",
+Issue Log Entries,Type,"Type or classification of the issue (e.g., Technical, Resource, Schedule).",
+Issue Log Entries,Source of Issue,"Origin or root trigger of the issue (e.g., Vendor delay, Requirement change).",
+Issue Log Entries,Issue Description,Detailed explanation of the issue and current condition.,
+Issue Log Entries,Priority,"Urgency or priority level (e.g., Urgent, High, Medium, Low).",
+Issue Log Entries,Impact on Objectives,"Potential or realized impact on scope, schedule, cost, or quality.",
+Issue Log Entries,Impacted Stakeholders,Stakeholders or user groups affected by this issue.,
+Issue Log Entries,Responsible Party,The person or role assigned to resolve or track the issue.,
+Issue Log Entries,Status,"Current status of the issue (e.g., Open, In Progress, Resolved, Closed).",
+Issue Log Entries,Resolution Date,Target or actual date by which the issue was resolved.,
+Issue Log Entries,Final Resolution,Summary of the corrective action taken to resolve the issue.,
+Issue Log Entries,Comments,"Additional notes, context, or escalation details.",

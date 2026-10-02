@@ -1,33 +1,103 @@
-# EARNED VALUE ANALYSIS REPORT - GUIDANCE
-This document provides descriptions for each element in the Earned Value Analysis.
+---
+lang: en
+layout: default
+title: Earned Value Analysis
+nav_order: 5
+---
 
-> **Reporting periods:** Every metric in sections 1-4 is reported across three period
-> columns - **Current Reporting Period**, **Current Period Cumulative**, and
-> **Past Period Cumulative**. Populate all three so trends can be read over time.
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
-| Document Element | Description |
-| :--- | :--- |
-| **Reporting period start date** | Enter the first day of the period being reported. |
-| **Reporting period end date** | Enter the last day of the period being reported. |
-| **Analysis level** | State the level at which the analysis is performed, e.g. project or control account. |
-| **Prepared by (project manager)** | Enter the name of the project manager accountable for the analysis. |
-| **Budget at completion** | Enter the total authorized budget for the work. BAC is a single figure and is not restated per period. |
-| **Planned value** | Enter the value of the work planned to be accomplished. PV/BAC |
-| **Earned value** | Enter the value of the work actually accomplished. EV/BAC |
-| **Actual cost** | Enter the cost for the work accomplished. AC/BAC |
-| **Schedule variance** | Calculate the schedule variance by subtracting the planned value from the earned value. SV = EV – PV |
-| **Cost variance** | Calculate the cost variance by subtracting the actual cost from the earned value. CV = EV – AC |
-| **Schedule performance index** | Calculate the schedule performance index by dividing earned value by the planned value. SPI = EV/PV |
-| **Cost performance index** | Calculate the cost performance index by dividing the earned value by the actual cost. CPI = EV/AC |
-| **Percent planned** | Indicate the percent of the work planned to be accomplished. PV/BAC |
-| **Percent earned** | Indicate the percent of work that has been accomplished. EV/BAC |
-| **Percent spent** | Indicate the total costs spent to accomplish the work. AC/BAC |
-| **EAC w/CPI** | Forecast total expenditures at completion assuming the remaining work is completed at the budgeted rate. BAC/CPI |
-| **EAC w/CPI × SPI** | Forecast total expenditures at completion assuming the current cost and schedule performance continues. AC + ((BAC – EV)/(CPI × SPI)) |
-| **To complete performance index** | Calculate the work remaining divided by the funds remaining. TCPI = (BAC – EV)/(BAC – AC) |
-| **Selected EAC** | Determine an appropriate method to forecast the total expenditures at project completion. Record the chosen estimate and justify the reason for selecting it. |
-| **Root cause of schedule variance** | Identify the root cause of the schedule variance. |
-| **Schedule impact** | Describe the impact on deliverables, milestones, or critical path. |
-| **Root cause of cost variance** | Identify the root cause of the cost variance. |
-| **Budget impact** | Describe the impact on the project budget, contingency funds and reserves, and any intended actions to address the variance. |
-| **Comments** | Document any comments that add relevance to this report. |
+## Tasleemat Forms Guide
+# Project Artifact: Earned Value Analysis
+
+**Document Reference:** `PMO-06.05`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Earned Value Analysis** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A quantitative management artifact calculating PV, EV, AC, variances (SV, CV), indices (SPI, CPI), and estimates at completion (EAC, TCPI).
+
+---
+
+### 2. Why?
+Provides objective mathematical forecasting of final project cost and completion dates, avoiding optimistic bias.
+
+---
+
+### 3. When?
+Calculated at regular reporting intervals throughout project execution and controlling.
+
+---
+
+### 4. Who?
+Produced by Project Controller or Project Manager and reviewed by PMO and Executive Sponsors.
+
+---
+
+### Tailoring Tips
+*   Select the appropriate EAC forecasting formula based on whether past variances are considered typical or atypical.
+*   Calculate EVM at control account level for complex multi-vendor programs.
+
+---
+
+### Alignment
+Integrates Cost Baseline, Project Schedule, WBS, Variance Analysis, and executive Status Reports.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Earned Value Analysis**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Budget at Completion (BAC):** The total approved baseline budget allocated for the complete project scope.
+*   **Planned Value (PV) / Current Reporting Period:** The authorized budget assigned to scheduled work for the current reporting period.
+*   **Planned Value (PV) / Current Period Cumulative:** The cumulative authorized budget planned from project start through current period.
+*   **Planned Value (PV) / Past Period Cumulative:** The cumulative planned value calculated at the close of the previous reporting period.
+*   **Earned Value (EV) / Current Reporting Period:** The budgeted amount for the work actually completed during the current period.
+*   **Earned Value (EV) / Current Period Cumulative:** The cumulative budgeted amount for all work accomplished from project start to date.
+*   **Earned Value (EV) / Past Period Cumulative:** The cumulative earned value achieved as of the previous reporting period.
+*   **Actual Cost (AC) / Current Reporting Period:** The actual expenditures incurred for work performed during the current period.
+*   **Actual Cost (AC) / Current Period Cumulative:** The cumulative total actual costs incurred from project start through current period.
+*   **Actual Cost (AC) / Past Period Cumulative:** The cumulative actual costs recorded as of the previous reporting period.
+*   **Schedule Variance (SV) / Current Reporting Period:** The schedule performance in financial terms (EV - PV) for the current period.
+*   **Schedule Variance (SV) / Current Period Cumulative:** The cumulative schedule variance (Cumulative EV - Cumulative PV) to date.
+*   **Schedule Variance (SV) / Past Period Cumulative:** The cumulative schedule variance as of the prior reporting period.
+*   **Cost Variance (CV) / Current Reporting Period:** The financial budget variance (EV - AC) for the current reporting period.
+*   **Cost Variance (CV) / Current Period Cumulative:** The cumulative cost variance (Cumulative EV - Cumulative AC) to date.
+*   **Cost Variance (CV) / Past Period Cumulative:** The cumulative cost variance as of the prior reporting period.
+*   **Schedule Performance Index (SPI) / Current Reporting Period:** The schedule efficiency ratio (EV / PV) for the current period.
+*   **Schedule Performance Index (SPI) / Current Period Cumulative:** The cumulative schedule efficiency ratio (Cumulative EV / Cumulative PV).
+*   **Schedule Performance Index (SPI) / Past Period Cumulative:** The cumulative schedule efficiency index from the previous reporting period.
+*   **Cost Performance Index (CPI) / Current Reporting Period:** The cost efficiency ratio (EV / AC) for the current period.
+*   **Cost Performance Index (CPI) / Current Period Cumulative:** The cumulative cost efficiency ratio (Cumulative EV / Cumulative AC).
+*   **Cost Performance Index (CPI) / Past Period Cumulative:** The cumulative cost efficiency index from the previous reporting period.
+*   **Percent Planned / Current Reporting Period:** Planned Value divided by BAC for the current reporting period.
+*   **Percent Planned / Current Period Cumulative:** Cumulative Planned Value divided by BAC to measure scheduled completion percentage.
+*   **Percent Planned / Past Period Cumulative:** Cumulative Planned Value divided by BAC as of the prior reporting period.
+*   **Percent Earned / Current Reporting Period:** Earned Value divided by BAC for the current reporting period.
+*   **Percent Earned / Current Period Cumulative:** Cumulative Earned Value divided by BAC representing actual project percent complete.
+*   **Percent Earned / Past Period Cumulative:** Cumulative Earned Value divided by BAC as of the prior reporting period.
+*   **Percent Spent / Current Reporting Period:** Actual Cost divided by BAC for the current reporting period.
+*   **Percent Spent / Current Period Cumulative:** Cumulative Actual Cost divided by BAC representing total project budget spent to date.
+*   **Percent Spent / Past Period Cumulative:** Cumulative Actual Cost divided by BAC as of the prior reporting period.
+*   **EAC w/CPI / Current Reporting Period:** Estimate at Completion assuming future work performed at current period CPI (BAC / CPI).
+*   **EAC w/CPI / Current Period Cumulative:** Estimate at Completion assuming future work performed at cumulative CPI.
+*   **EAC w/CPI / Past Period Cumulative:** Estimate at Completion based on past period cumulative CPI.
+*   **EAC w/CPI × SPI / Current Reporting Period:** Estimate at Completion factoring both cost and schedule indices for current period.
+*   **EAC w/CPI × SPI / Current Period Cumulative:** Estimate at Completion factoring cumulative cost and schedule performance indices.
+*   **EAC w/CPI × SPI / Past Period Cumulative:** Estimate at Completion factoring past period cumulative cost and schedule indices.
+*   **To Complete Performance Index (TCPI) / Current Reporting Period:** Cost efficiency required to complete the remaining work within BAC for current period.
+*   **To Complete Performance Index (TCPI) / Current Period Cumulative:** Cost efficiency required to complete the remaining work within BAC cumulatively.
+*   **To Complete Performance Index (TCPI) / Past Period Cumulative:** TCPI calculated at the close of the prior reporting period.
+*   **Selected EAC - Justification and Explanation:** Detailed justification of the selected EAC forecasting formula and expected final budget outcome.
+*   **Root cause of schedule variance:** Underlying drivers and operational causes for schedule efficiency or delay.
+*   **Schedule impact (incl. implications of continued variance):** Projected delivery delays and critical path impacts if schedule trends continue.
+*   **Root cause of cost variance:** Operational factors, rate fluctuations, or scope drivers causing cost variances.
+*   **Budget impact (incl. intended actions/reserves):** Financial exposure and reserve utilization strategies to maintain fiscal control.
+*   **Comments:** Additional contextual observations or recommendations from the EVM analyst.
+
+</div>

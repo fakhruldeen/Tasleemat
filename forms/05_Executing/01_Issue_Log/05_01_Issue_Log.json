@@ -1,28 +1,81 @@
 {
-    "_llm_instructions": "Populate the Issue Log based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Issue Log: Log all project issues including their type, source, priority (Urgent/High/Medium/Low), impacts, responsible party, status (Open/Closed), and resolution.",
     "form_name": "ISSUE LOG",
     "document_reference": "PMO-05.01",
+    "_llm_instructions": "Populate the fields of 'ISSUE LOG' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Issue Log": {
-            "guidance": "Log all project issues including their type, source, priority (Urgent/High/Medium/Low), impacts, responsible party, status (Open/Closed), and resolution.",
-            "value": [
-                {
-                    "ID": "",
-                    "Type": "",
-                    "Source of Issue": "",
-                    "Issue Description": "",
-                    "Priority": "",
-                    "Impact on Objectives": "",
-                    "Impacted Stakeholders": "",
-                    "Responsible Party": "",
-                    "Status": "",
-                    "Resolution Date": "",
-                    "Final Resolution": "",
-                    "Comments": ""
-                }
-            ]
+        "f01_ID": {
+            "section": "Issue Log Entries",
+            "label": "ID",
+            "guidance": "Unique identifier for the issue (e.g., ISS-01).",
+            "value": ""
+        },
+        "f02_Type": {
+            "section": "Issue Log Entries",
+            "label": "Type",
+            "guidance": "Type or classification of the issue (e.g., Technical, Resource, Schedule).",
+            "value": ""
+        },
+        "f03_Source_of_Issue": {
+            "section": "Issue Log Entries",
+            "label": "Source of Issue",
+            "guidance": "Origin or root trigger of the issue (e.g., Vendor delay, Requirement change).",
+            "value": ""
+        },
+        "f04_Issue_Description": {
+            "section": "Issue Log Entries",
+            "label": "Issue Description",
+            "guidance": "Detailed explanation of the issue and current condition.",
+            "value": ""
+        },
+        "f05_Priority": {
+            "section": "Issue Log Entries",
+            "label": "Priority",
+            "guidance": "Urgency or priority level (e.g., Urgent, High, Medium, Low).",
+            "value": ""
+        },
+        "f06_Impact_on_Objectives": {
+            "section": "Issue Log Entries",
+            "label": "Impact on Objectives",
+            "guidance": "Potential or realized impact on scope, schedule, cost, or quality.",
+            "value": ""
+        },
+        "f07_Impacted_Stakeholders": {
+            "section": "Issue Log Entries",
+            "label": "Impacted Stakeholders",
+            "guidance": "Stakeholders or user groups affected by this issue.",
+            "value": ""
+        },
+        "f08_Responsible_Party": {
+            "section": "Issue Log Entries",
+            "label": "Responsible Party",
+            "guidance": "The person or role assigned to resolve or track the issue.",
+            "value": ""
+        },
+        "f09_Status": {
+            "section": "Issue Log Entries",
+            "label": "Status",
+            "guidance": "Current status of the issue (e.g., Open, In Progress, Resolved, Closed).",
+            "value": ""
+        },
+        "f10_Resolution_Date": {
+            "section": "Issue Log Entries",
+            "label": "Resolution Date",
+            "guidance": "Target or actual date by which the issue was resolved.",
+            "value": ""
+        },
+        "f11_Final_Resolution": {
+            "section": "Issue Log Entries",
+            "label": "Final Resolution",
+            "guidance": "Summary of the corrective action taken to resolve the issue.",
+            "value": ""
+        },
+        "f12_Comments": {
+            "section": "Issue Log Entries",
+            "label": "Comments",
+            "guidance": "Additional notes, context, or escalation details.",
+            "value": ""
         }
     }
 }

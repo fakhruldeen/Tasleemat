@@ -1,2 +1,8 @@
-ID,Type of resource,Quantity,Assumptions,Basis of estimate,Comments
-,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Human Resource Requirements,Activity Identifier and Role Required,The schedule activity code and specific professional role or technical job title required.,
+Human Resource Requirements,Skill Competencies and Quantity Needed,"Required certifications, technical expertise, and quantity of headcount required.",
+Human Resource Requirements,Estimated Effort Hours and Allocation,Total estimated person-hours and allocated percentage commitment for each resource.,
+Physical and Material Resource Requirements,"Equipment, Machinery, and Tool Requirements","Specific hardware, specialized machinery, computing infrastructure, or testing tools needed.",
+Physical and Material Resource Requirements,"Materials, Supplies, and Facilities","Physical raw materials, office space, testing laboratories, or staging environments required.",
+Resource Availability and Scheduling Calendar,Resource Availability Dates and Constraints,"Calendar timeframes, mobilization dates, shift constraints, and lead time requirements.",
+Resource Availability and Scheduling Calendar,Resource Assumptions and Risk Factors,"Key assumptions regarding staffing market availability, productivity rates, and bottleneck risks.",

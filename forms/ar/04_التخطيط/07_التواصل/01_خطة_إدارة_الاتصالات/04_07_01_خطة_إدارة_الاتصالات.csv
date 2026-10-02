@@ -1,8 +1,9 @@
-الحقل,الإرشادات,القيمة_المولدة_بواسطة_الذكاء_الاصطناعي
-Stakeholder communication,requirements The people or the groups of people who need to receive project information and their specific requirements,
-Information,"Describe the information to be communicated, including language, format, content, and level of detail.",
-Method or media,"Describe how the information will be delivered; for example, email, meetings, web meetings, etc.",
-Time frame and frequency,List how often the information is to be provided and under what circumstances.,
-Sender,Insert the name of the person or the group that will provide the information.,
-Communication constraints or,"assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution.",
-Glossary of common terminology,List any terms or acronyms unique to the project or that are used in a unique way.,
+Section,Field,Guidance,LLM_Generated_Value
+متطلبات التواصل مع المعنيين,فئات المعنيين والاحتياجات الإخبارية,تحديد فئات أصحاب المصلحة واحتياجاتهم المحددة من المعلومات والتقارير والحوكمة.,
+متطلبات التواصل مع المعنيين,غرض التواصل واللغة المعتمدة,الهدف المباشر من التواصل واللغة الرسمية المعتمدة لإنتاج مخرجات ووثائق المشروع.,
+قنوات وبروتوكولات توزيع المعلومات,قنوات وأدوات التواصل المعتمدة,المنصات المعتمدة (البريد، البوابة الرقمية، لوحات المؤشرات) لنشر المعلومات وتداولها.,
+قنوات وبروتوكولات توزيع المعلومات,ضوابط السرية وأمن المعلومات,إرشادات التحكم في الوصول واتفاقيات السرية وبروتوكولات حماية البيانات الحساسة.,
+مصفوفة وجدول الاتصالات الدوري,بند التواصل والجمهور المستهدف,التقرير أو الاجتماع المحدد (مثل تقرير الحالة الأسبوعي، عرض لجنة التوجيه) والمستلمون.,
+مصفوفة وجدول الاتصالات الدوري,الدورية والصيغة والمسؤول عن الإرسال,وتيرة التوزيع وصيغة المستند والطرف المسؤول عن إعداد وإرسال المعلومات.,
+مسارات التصعيد ومسرد مصطلحات المشروع,مسار وإجراءات التصعيد العاجل,البروتوكول المتدرج لتصعيد المشكلات الحرجة وتنبيهات الميزانية للقيادة التنفيذية.,
+مسارات التصعيد ومسرد مصطلحات المشروع,مسرد مصطلحات واختصارات المشروع,قاموس قياسي يوضح الاختصارات الفنية والمصطلحات التخصصية المستخدمة في الوثائق.,

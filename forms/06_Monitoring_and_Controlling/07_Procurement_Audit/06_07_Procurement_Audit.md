@@ -1,84 +1,86 @@
 ---
 lang: en
-Form: PROCUREMENT AUDIT REPORT (Instructions)
+Form: Procurement Audit (Instructions)
+---
+
+# Procurement Audit - Generation Prompt
+
+<!--
+System Instructions: This document contains instructions for generating the
+«Procurement Audit». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
+
+> **Context and Definition:**
+> A structured review of the procurement process from planning through contract administration to identify successes and improvements.
+
+> **Alignment:**
+> Directly aligns with Procurement Management Plan, Contractor Status Reports, Contract Closeout, and PMO standards.
+
 ---
 
 ## Audit Information
 
-### Audit Information
-**Instruction:** Record the procurements or contracts audited, the audit scope, the period covered, and the audit method.
+### Procurements or Contracts Audited
+**Instruction:** The specific procurement contracts, tender packages, and vendors audited.
 
-# PROCUREMENT AUDIT REPORT - LLM GENERATION GUIDE
+**Generated Value:** [ Add details... ]
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROCUREMENT AUDIT REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+### Audit Scope
+**Instruction:** The scope, contract boundaries, and sampling methodology of the procurement audit.
 
-> **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
-> **Alignment:**
-> [ Add Alignment Information Here ]
+**Generated Value:** [ Add details... ]
 
-> The procurement audit is a technique from process 12.3 Control Procurements in the PMBOK Guide - Sixth Edition. It is conducted periodically throughout the project, or as needed.
+### Period Covered
+**Instruction:** The date range and milestones examined during the procurement audit.
 
----
+**Generated Value:** [ Add details... ]
+
+### Audit Method
+**Instruction:** The methodology used (e.g., contract file review, vendor interviews, financial reconciliation).
+
+**Generated Value:** [ Add details... ]
 
 ## Vendor Performance Audit - What Worked Well
 
-### Scope
-**Instruction:** Describe the aspects of contract scope that were handled well.
+### Vendor Performance Audit - What Worked Well
+**Instruction:** Aspects of contract scope, quality, schedule, and cost delivered successfully with supporting evidence.
 
-### Quality
-**Instruction:** Describe the aspects of product quality that were handled well.
-
-### Schedule
-**Instruction:** Describe the aspects of the contract schedule that were handled well.
-
-### Cost
-**Instruction:** Describe the aspects of the contract budget that were handled well.
-
-### Other
-**Instruction:** Describe any other aspects of the contract or procurement that were handled well.
+**Generated Value:** [ Add details... ]
 
 ## Vendor Performance Audit - What Can Be Improved
 
-### Scope
-**Instruction:** Describe the aspects of contract scope that could be improved.
+### Vendor Performance Audit - What Can Be Improved
+**Instruction:** Deficiencies, delays, or cost variances identified across contract dimensions with recommendations.
 
-### Quality
-**Instruction:** Describe the aspects of product quality that could be improved.
-
-### Schedule
-**Instruction:** Describe the aspects of the contract schedule that could be improved.
-
-### Cost
-**Instruction:** Describe the aspects of the contract budget that could be improved.
-
-### Other
-**Instruction:** Describe any other aspects of the contract or procurement that could be improved.
+**Generated Value:** [ Add details... ]
 
 ## Procurement Management Process Audit
 
-### Plan Procurements
-**Instruction:** Indicate whether Plan Procurements was followed, and describe any tools or techniques that were effective for each procurement.
+### Procurement Management Process Audit
+**Instruction:** Audit evaluation across Plan Procurements, Conduct Procurements, and Control Procurements.
 
-### Conduct Procurements
-**Instruction:** Indicate whether Conduct Procurements was followed, and describe any tools or techniques that were effective for each procurement.
-
-### Control Procurements
-**Instruction:** Indicate whether Control Procurements was followed, and describe any tools or techniques that were effective for each procurement.
+**Generated Value:** [ Add details... ]
 
 ## Good Practices to Share
 
 ### Good Practices to Share
-**Instruction:** Describe any good practices that can be shared with other projects, or that should be incorporated into organisational policies, procedures, or processes. Include lessons learned.
+**Instruction:** Contracting best practices, negotiation tactics, and lessons learned for reuse across the PMO.
+
+**Generated Value:** [ Add details... ]
 
 ## Areas for Improvement
 
 ### Areas for Improvement
-**Instruction:** Describe any areas that should be improved in the procurement process. Include information that should be incorporated into policies, procedures, or processes, and include lessons learned.
+**Instruction:** Recommendations for updating organizational procurement policies, templates, and procedures.
+
+**Generated Value:** [ Add details... ]
 
 ## Comments
 
 ### Comments
-**Instruction:** Add any comments that will add relevance to the audit.
+**Instruction:** Additional auditor observations, commercial context, or closing remarks.
+
+**Generated Value:** [ Add details... ]
+
+---

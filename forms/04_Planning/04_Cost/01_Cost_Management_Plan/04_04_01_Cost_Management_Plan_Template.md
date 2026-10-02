@@ -1,15 +1,11 @@
-<!--  LLM INSTRUCTIONS: Fill out each section completely based on the project's financial governance requirements.
-
-Column Definitions:
-*   **Units of measure:** Indicate how each type of resource will be measured (staff hours, days, physical units, lump sum).
-*   **Level of precision:** Indicate rounding rules for cost estimates (e.g., rounded to nearest thousand).
-*   **Level of accuracy:** Describe the acceptable variance range for estimates (progressive elaboration).
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-**Instruction:** Generate a 3-column table for the core measurement metrics.
-*   **Units of measure:** Indicate how each type of resource will be measured (staff hours, days, physical units, lump sum).
-*   **Level of precision:** Indicate rounding rules for cost estimates (e.g., rounded to nearest thousand).
-*   **Level of accuracy:** Describe the acceptable variance range for estimates (progressive elaboration).
+- Cost Management Approach and Methodology: Provide comprehensive project data for all required fields in this section.
+- Units of Measure and Estimation Precision: Provide comprehensive project data for all required fields in this section.
+- Organizational Procedures and Control Accounts: Provide comprehensive project data for all required fields in this section.
+- Earned Value and Performance Measurement Rules: Provide comprehensive project data for all required fields in this section.
+- Cost Variance Thresholds and Reporting: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -17,33 +13,56 @@ Section Instructions:
 <h1 align="center">COST MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Measurement Metrics
-| Units of Measure | Level of Precision | Level of Accuracy |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 1. Cost Management Approach and Methodology
 
-### Organizational Procedure Links
-<!-- Describe how cost estimating and reporting follows the WBS and organizational code of accounts. -->
+**Cost Estimating and Budgeting Methodology:**
 [ Add details... ]
 
-### Control Thresholds
-<!-- Indicate the variance thresholds (e.g., % deviation from baseline) that trigger preventive or corrective action. -->
+**Cost Accounting and Tracking Software:**
 [ Add details... ]
 
-### Rules of Performance Measurement
-<!-- Define how progress/expenditures are measured (e.g., Earned Value Management rules, ETC/EAC equations). -->
+---
+
+## 2. Units of Measure and Estimation Precision
+
+**Currency and Units of Measure:**
 [ Add details... ]
 
-### Cost Reporting Information and Format
-<!-- Document the format and frequency of status and progress reporting for project costs. -->
+**Level of Precision and Accuracy Ranges:**
 [ Add details... ]
 
-### Additional Details
-<!-- Describe variables associated with strategic funding choices (make/buy, borrowing vs in-house funding). -->
+---
+
+## 3. Organizational Procedures and Control Accounts
+
+**Control Account Structure and WBS Linkage:**
+[ Add details... ]
+
+**Cost Management Roles and Authorizations:**
+[ Add details... ]
+
+---
+
+## 4. Earned Value and Performance Measurement Rules
+
+**EVM Formulas and Measurement Techniques:**
+[ Add details... ]
+
+**Cost Performance Indicators:**
+[ Add details... ]
+
+---
+
+## 5. Cost Variance Thresholds and Reporting
+
+**Cost Variance Thresholds and Escalations:**
+[ Add details... ]
+
+**Cost Reporting Cadence and Formats:**
 [ Add details... ]
 
 ---
@@ -53,8 +72,8 @@ Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

@@ -1,48 +1,68 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this SCHEDULE MANAGEMENT PLAN template based on the provided project context. Context & Definition: The schedule management plan is part of the project management plan. It specifies how the project schedule will be developed, monitored, and controlled. It is an output from the process 6.1 Plan Schedule Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change. Alignment: The schedule management plan should be aligned and consistent with the following documents:\n• Project charter\n• Cost management plan",
     "form_name": "SCHEDULE MANAGEMENT PLAN",
     "document_reference": "PMO-04.03.01",
+    "_llm_instructions": "Populate the fields of 'SCHEDULE MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Schedule methodology": {
-            "guidance": "Identify the scheduling methodology that will be used for the project, whether it is critical path, agile, or some other methodology.",
+        "f01_Scheduling_Methodology_Selection": {
+            "section": "Scheduling Methodology and Tools",
+            "label": "Scheduling Methodology Selection",
+            "guidance": "The scheduling framework applied (e.g., Critical Path Method, Agile cadence, or Critical Chain).",
             "value": ""
         },
-        "Scheduling tool(s)": {
-            "guidance": "Identify the scheduling tool(s) that will be used for the project. Tools can include scheduling software, reporting software, earned value software, etc.",
+        "f02_Scheduling_Software_and_Systems": {
+            "section": "Scheduling Methodology and Tools",
+            "label": "Scheduling Software and Systems",
+            "guidance": "Approved project management and scheduling software tools used to build and maintain the schedule model.",
             "value": ""
         },
-        "Iterative planning & timeboxing": {
-            "guidance": "Add information on the level of detail and timing for WBS decomposition based on rolling wave planning. For agile projects, add information on the time box periods for releases, waves, and iterations.",
+        "f03_Rolling_Wave_Planning_Approach": {
+            "section": "Planning Cadence and Level of Detail",
+            "label": "Rolling Wave Planning Approach",
+            "guidance": "Level of detail and decomposition horizon applied to near-term vs. long-term project activities.",
             "value": ""
         },
-        "Level of accuracy": {
-            "guidance": "Describe the level of accuracy needed for estimates.",
+        "f04_Agile_Timeboxing_and_Iteration_Rules": {
+            "section": "Planning Cadence and Level of Detail",
+            "label": "Agile Timeboxing and Iteration Rules",
+            "guidance": "Standard sprint lengths, release cadence, and timeboxing rules for iterative work packages.",
             "value": ""
         },
-        "Units of measure": {
-            "guidance": "Indicate whether duration estimates will be in days, weeks, months, or some other unit of measure.",
+        "f05_Units_of_Measure_for_Durations": {
+            "section": "Units of Measure and Estimation Accuracy",
+            "label": "Units of Measure for Durations",
+            "guidance": "Designated units of measure (hours, days, weeks) applied across schedule estimates.",
             "value": ""
         },
-        "Performance measurement rules (EVM)": {
-            "guidance": "Include information on rules for establishing percent complete and the EVM measurement techniques.",
+        "f06_Level_of_Accuracy_and_Estimating_Ranges": {
+            "section": "Units of Measure and Estimation Accuracy",
+            "label": "Level of Accuracy and Estimating Ranges",
+            "guidance": "Acceptable variance ranges (+/- percentage) required for duration and effort estimates.",
             "value": ""
         },
-        "Variance thresholds": {
-            "guidance": "Indicate the measures that determine whether an activity, work package, or the project as a whole is on time, requires preventive action, or is late and requires corrective action.",
+        "f07_Earned_Value_Management_EVM_Rules": {
+            "section": "Performance Measurement Rules",
+            "label": "Earned Value Management (EVM) Rules",
+            "guidance": "Techniques used for measuring physical progress and establishing percent complete (e.g., 50/50, 0/100, milestone weights).",
             "value": ""
         },
-        "Schedule reporting and format": {
-            "guidance": "Document the schedule information required for status and progress reporting.",
+        "f08_Schedule_Performance_Indicators": {
+            "section": "Performance Measurement Rules",
+            "label": "Schedule Performance Indicators",
+            "guidance": "Key metrics tracked including SV, SPI, critical path float, and milestone variance.",
             "value": ""
         },
-        "Organizational procedure links": {
-            "guidance": "The schedule outline should follow the numbering structure of the WBS. It may also need to follow the organization’s code of accounts or other accounting and reporting structures.",
+        "f09_Schedule_Variance_Thresholds": {
+            "section": "Schedule Variance Thresholds and Maintenance",
+            "label": "Schedule Variance Thresholds",
+            "guidance": "Permissible delay thresholds that trigger mandatory corrective actions and executive escalations.",
             "value": ""
         },
-        "Schedule updates": {
-            "guidance": "Document the process for updating the schedule, including update frequency, permissions, and version control.",
+        "f10_Schedule_Update_and_Baselines_Protocol": {
+            "section": "Schedule Variance Thresholds and Maintenance",
+            "label": "Schedule Update and Baselines Protocol",
+            "guidance": "Cadence for schedule status updates, critical path recalculation, and baseline change governance.",
             "value": ""
         }
     }

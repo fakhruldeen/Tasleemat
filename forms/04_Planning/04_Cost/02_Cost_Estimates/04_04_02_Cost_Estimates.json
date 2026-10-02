@@ -1,53 +1,57 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties. Populate the array for the Cost Estimates based on the context. Context: Cost estimates provide information on the cost of resources necessary to complete project work, including labor, equipment, supplies, services, facilities, and material. Estimates can be determined by developing an approximation for each work package using expert judgment or by using quantitative methods. It is an output from the process 7.2 Estimate Costs in the PMBOK® Guide.",
     "form_name": "COST ESTIMATES",
     "document_reference": "PMO-04.04.02",
+    "_llm_instructions": "Populate the fields of 'COST ESTIMATES' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.04.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Cost Estimates": {
-            "guidance": "Generate a JSON array representing the tabular cost estimates.",
-            "value": [
-                {
-                    "ID": "",
-                    "Resource": "",
-                    "Labor Costs": "",
-                    "Physical Costs": "",
-                    "Reserve": "",
-                    "Estimate": "",
-                    "Basis of Estimates": "",
-                    "Method": "",
-                    "Assumptions/Constraints": "",
-                    "Range": "",
-                    "Confidence Level": ""
-                },
-                {
-                    "ID": "",
-                    "Resource": "",
-                    "Labor Costs": "",
-                    "Physical Costs": "",
-                    "Reserve": "",
-                    "Estimate": "",
-                    "Basis of Estimates": "",
-                    "Method": "",
-                    "Assumptions/Constraints": "",
-                    "Range": "",
-                    "Confidence Level": ""
-                },
-                {
-                    "ID": "",
-                    "Resource": "",
-                    "Labor Costs": "",
-                    "Physical Costs": "",
-                    "Reserve": "",
-                    "Estimate": "",
-                    "Basis of Estimates": "",
-                    "Method": "",
-                    "Assumptions/Constraints": "",
-                    "Range": "",
-                    "Confidence Level": ""
-                }
-            ]
+        "f01_Activity_Identifier_and_Description": {
+            "section": "Activity and Work Package Cost Breakdown",
+            "label": "Activity Identifier and Description",
+            "guidance": "Unique activity code and concise work summary for each estimated item.",
+            "value": ""
+        },
+        "f02_Direct_Labor_Cost_Estimate": {
+            "section": "Activity and Work Package Cost Breakdown",
+            "label": "Direct Labor Cost Estimate",
+            "guidance": "Estimated direct staffing expenses calculated from effort hours and labor rates.",
+            "value": ""
+        },
+        "f03_Materials_and_Equipment_Cost_Estimate": {
+            "section": "Activity and Work Package Cost Breakdown",
+            "label": "Materials and Equipment Cost Estimate",
+            "guidance": "Estimated costs for hardware, raw materials, software licensing, and equipment.",
+            "value": ""
+        },
+        "f04_Total_Base_Cost_Estimate": {
+            "section": "Activity and Work Package Cost Breakdown",
+            "label": "Total Base Cost Estimate",
+            "guidance": "Consolidated base financial estimate prior to reserve calculations.",
+            "value": ""
+        },
+        "f05_Labor_Rate_Categories_and_Rate_Cards": {
+            "section": "Resource Cost Rates and Basis of Estimates",
+            "label": "Labor Rate Categories and Rate Cards",
+            "guidance": "Standard billing rate categories, consultant day-rates, and internal unit costs.",
+            "value": ""
+        },
+        "f06_Historical_Data_and_Estimating_Assumptions": {
+            "section": "Resource Cost Rates and Basis of Estimates",
+            "label": "Historical Data and Estimating Assumptions",
+            "guidance": "Benchmark data, vendor quotation references, and key assumptions applied.",
+            "value": ""
+        },
+        "f07_Contingency_Reserve_Allocation": {
+            "section": "Contingency and Management Reserves",
+            "label": "Contingency Reserve Allocation",
+            "guidance": "Calculated risk contingency reserve allocated for identified known-unknown risks.",
+            "value": ""
+        },
+        "f08_Total_Activity_Cost_with_Contingency": {
+            "section": "Contingency and Management Reserves",
+            "label": "Total Activity Cost with Contingency",
+            "guidance": "Final baseline cost figure inclusive of contingency reserves for budgeting.",
+            "value": ""
         }
     }
 }

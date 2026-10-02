@@ -1,4 +1,13 @@
-Project life cycle phases,Major deliverables or events,Significant milestones,Timing and types of reviews
-,,,
-,,,
-,,,
+Section,Field,Guidance,LLM_Generated_Value
+Strategic Objectives and Business Value,Strategic Alignment Summary,Clear articulation of how project outcomes support broader organizational goals.,
+Strategic Objectives and Business Value,Target Business Value and Benefits,"Anticipated operational improvements, revenue gains, or value realization targets.",
+Strategic Objectives and Business Value,Success Criteria and Key Metrics,Quantitative and qualitative KPIs used to measure project milestone success.,
+Project Roadmap Overview,High-Level Product Vision,Executive narrative describing the end-state solution and delivery vision.,
+Project Roadmap Overview,Major Workstreams and Themes,Core technical and functional workstreams driving delivery forward.,
+Project Roadmap Overview,Roadmap Horizon and Timeframes,Overall chronological span covering major release windows and delivery horizons.,
+Release and Milestone Timeline,Release 1 (MVP) Scope and Milestone,Target completion date and essential scope commitments for the initial release.,
+Release and Milestone Timeline,Release 2 Scope and Milestone,Target completion date and expanded functionality for subsequent release phases.,
+Release and Milestone Timeline,Future Enhancements and Final Milestone,"Long-term enhancements, post-launch operationalization, and final closeout milestone.",
+Key Dependencies and Assumptions,Cross-Project and External Dependencies,"Critical interdependencies with other organizational initiatives, platforms, or vendors.",
+Key Dependencies and Assumptions,Critical Architectural and Strategic Assumptions,Foundational assumptions underpinning delivery timelines and resource models.,
+Key Dependencies and Assumptions,Strategic Risks and Mitigation,Major strategic risks that could impact timeline execution and roadmap milestones.,

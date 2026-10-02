@@ -1,4 +1,10 @@
-ID,Activity Name,Planned Release / Iteration,Description of Work,Number & Type of Team Resources Required,Skill Requirements,Required Resources,Imposed dates,Constraints,Assumptions,Location of performance,Type of effort
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Activity Identification and Overview,Activity Code and Title,Unique identifier code and full descriptive title of the schedule activity.,
+Activity Identification and Overview,Activity Description and Scope Summary,Detailed technical narrative of the specific scope executed under this activity.,
+Activity Identification and Overview,Assigned Work Package Reference,Corresponding parent WBS code and deliverable component mapping.,
+Activity Predecessors and Successors,Predecessor Activities and Logic,"List of preceding activities with dependency relationships (FS, SS, FF, SF) and lead/lag times.",
+Activity Predecessors and Successors,Successor Activities and Logic,List of succeeding activities dependent upon the completion or start of this activity.,
+Resource and Skill Requirements,Required Team Roles and Headcount,"Specific staffing roles, technical disciplines, and quantity of resources required.",
+Resource and Skill Requirements,Technical Skills and Equipment Needed,"Specialized skill sets, machinery, software licenses, or facilities required for performance.",
+Execution Constraints and Imposed Dates,Imposed Start and Finish Dates,Contractual or management-mandated fixed start/finish constraint dates.,
+Execution Constraints and Imposed Dates,Activity Assumptions and Location Constraints,"Critical assumptions regarding execution conditions, performance location, and physical constraints.",

@@ -1,91 +1,58 @@
-<!-- LLM INSTRUCTIONS: Populate the Procurement Management Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Section-by-Section Instructions:
-- Procurement Integration: Define how the contractor's work will integrate with the project (Scope, Schedule, Documentation, Risk, Reporting).
-- Timing of Procurement Activities: Identify the timetable of key procurement activities.
-- Performance Metrics: Document the metrics that will be used to evaluate the seller's performance.
-- Roles, Responsibilities, and Authority: Define the roles, responsibilities, and authority level.
-- Assumptions and Constraints: Record assumptions and constraints related to the procurement activities.
-- Legal Jurisdiction and Currency: Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.
-- Independent Estimates: Document whether independent cost estimates will be used and if they will be needed for source selection.
-- Risk Management Requirements: Document requirements for performance bonds or insurance contracts to reduce risk.
-- Prequalified Sellers: List any prequalified sellers that will be used. -->
+Section Instructions:
+- Procurement Integration and Scheduling: Provide comprehensive project data for all required fields in this section.
+- Procurement Roles, Authority, and Metrics: Provide comprehensive project data for all required fields in this section.
+- Contract Types and Pre-Qualified Vendors: Provide comprehensive project data for all required fields in this section.
+- Legal Jurisdiction, Currency, and Risk Management: Provide comprehensive project data for all required fields in this section.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROCUREMENT MANAGEMENT PLAN</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
-| :--- | :--- |
-
----
-
-## 1. Procurement Integration
-
-| Area | Integration Approach |
-| :--- | :--- |
-| **Scope** | [ Add details... ] |
-| **Schedule** | [ Add details... ] |
-| **Documentation** | [ Add details... ] |
-| **Risk** | [ Add details... ] |
-| **Reporting** | [ Add details... ] |
-
----
-
-## 2. Timing of Procurement Activities
-
-| Date | Activity |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] |
-
----
-
-## 3. Performance Metrics
-
-| Item | Metric | Measurement Method |
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
 | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
 
-## 4. Roles, Responsibilities, and Authority
+## 1. Procurement Integration and Scheduling
 
-| Role | Responsibility | Authority |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Procurement Strategy and Project Integration:**
+[ Add details... ]
 
----
-
-## 5. Assumptions and Constraints
-
-| Category | Assumption/Constraint |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] |
-
----
-
-## 6. Legal Jurisdiction and Currency
+**Procurement Timetable and Milestone Alignment:**
 [ Add details... ]
 
 ---
 
-## 7. Independent Estimates
+## 2. Procurement Roles, Authority, and Metrics
+
+**Procurement Roles and Sign-off Authority:**
+[ Add details... ]
+
+**Vendor Performance Metrics and SLAs:**
 [ Add details... ]
 
 ---
 
-## 8. Risk Management Requirements
+## 3. Contract Types and Pre-Qualified Vendors
+
+**Standard Contract Types Selection:**
+[ Add details... ]
+
+**Pre-Qualified Vendor Selection Approach:**
 [ Add details... ]
 
 ---
 
-## 9. Prequalified Sellers
-1. [ Add details... ]
-2. [ Add details... ]
+## 4. Legal Jurisdiction, Currency, and Risk Management
+
+**Legal Jurisdiction, Dispute Terms, and Currency:**
+[ Add details... ]
+
+**Procurement Risk and Independent Estimates:**
+[ Add details... ]
 
 ---
 
@@ -93,9 +60,9 @@ Section-by-Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Risk / Procurement Lead** | {{Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

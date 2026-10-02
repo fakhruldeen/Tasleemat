@@ -1,31 +1,58 @@
 ---
 lang: en
-Form: MILESTONE LIST (Instructions)
+Form: Milestone List (Instructions)
 ---
 
-# MILESTONE LIST - LLM GENERATION GUIDE
+# Milestone List - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `MILESTONE LIST`. When asked to populate this form, generate a JSON array of milestone objects that represent the project's key milestones.
+<!--
+System Instructions: This document contains instructions for generating the
+«Milestone List». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The milestone list defines all the project milestones and describes the nature of each one. It may categorize the milestone as optional or mandatory, internal or external, interim or final. It is an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition. This is developed once and is not usually changed unless there is a significant scope change.
-> 
+> **Context and Definition:**
+> A structured list identifying all significant points, events, or contractual achievements in a project, categorized as mandatory or optional.
+
 > **Alignment:**
-> The milestone list should be aligned and consistent with the following documents:
-• Project charter
-• Activity list
-• Network diagram
-• Duration estimates
-• Schedule
+> Directly informs Project Roadmap, Project Schedule, Status Reports, and Vendor Billing gates.
 
 ---
 
-### Table: Milestone List
-**Instruction:** Generate a comprehensive list of project milestones in a table format.
+## Mandatory Milestones
 
-**Columns Definition:**
-*   **ID:** A unique identifier for the milestone.
-*   **Milestone Name:** Milestone name that uniquely defines the milestone.
-*   **Milestone Description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete.
-*   **Type:** A description of the type of milestone, such as Internal/External, Interim/Final, or Mandatory/Optional.
+### Contractual and Regulatory Milestones
+**Instruction:** Legally binding delivery milestones, compliance deadlines, and contractual gate events.
+
+**Generated Value:** [ Add details... ]
+
+### Target Dates and Deliverables (Mandatory)
+**Instruction:** Fixed target calendar dates and verified deliverables associated with mandatory milestones.
+
+**Generated Value:** [ Add details... ]
+
+## Optional and Internal Milestones
+
+### Internal Project Gate Milestones
+**Instruction:** Major internal transition points, architectural baseline completions, and integration checkpoints.
+
+**Generated Value:** [ Add details... ]
+
+### Target Dates and Deliverables (Internal)
+**Instruction:** Planned schedule dates and required internal outcomes for managerial review milestones.
+
+**Generated Value:** [ Add details... ]
+
+## Milestone Verification and Criteria
+
+### Verification Evidence and Sign-off Lead
+**Instruction:** Required audit evidence, formal artifacts, and designated approval authority for milestone achievement.
+
+**Generated Value:** [ Add details... ]
+
+### Milestone Critical Path Impact
+**Instruction:** Assessment of whether the milestone resides on the critical path and associated delivery float.
+
+**Generated Value:** [ Add details... ]
+
+---

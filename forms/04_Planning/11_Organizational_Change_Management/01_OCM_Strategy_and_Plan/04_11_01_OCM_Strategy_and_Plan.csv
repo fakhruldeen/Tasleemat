@@ -1,6 +1,7 @@
-Field,Guidance,LLM_Generated_Value
-Change Vision,Why the human change is necessary.,
-Stakeholder Impact Analysis,How different groups will be affected.,
-Communication Strategy,How changes will be communicated.,
-Resistance Management,How to handle pushback from users.,
-Sponsorship Strategy,How leaders will champion the change.,
+Section,Field,Guidance,LLM_Generated_Value
+Change Strategy and Impact,Change Vision,"Why the organizational change is necessary and the future state it creates. It articulates the business need for people to change how they work, the compelling reasons to transition, and the tangible outcomes the organization will realize when adoption is achieved.",
+Change Strategy and Impact,Stakeholder Impact Analysis,"How different stakeholder groups, departments, and roles will be affected by the change. Identifies the degree of disruption across processes, systems, organizational structures, and daily workloads so tailored support can be provided.",
+Change Strategy and Impact,Sponsorship Strategy,"How project sponsors, executive leaders, and change champions will visibly advocate, lead, and resource the change. Details their active commitments, coalitions across business units, and direct engagement with impacted teams.",
+Enablement and Adoption,Communication Strategy,"The channels, key messages, frequency, and two-way feedback loops used to keep stakeholders informed and engaged throughout the transition. Ensures timely delivery of transparent information and addresses evolving concerns.",
+Enablement and Adoption,Resistance Management,"Proactive identification of likely sources of resistance, underlying root causes, and specific interventions to mitigate pushback. Establishes supportive pathways to help teams navigate transition anxiety and adopt new practices.",
+Enablement and Adoption,Readiness and Reinforcement,"The criteria, checkpoints, and mechanisms to measure organizational readiness before go-live, and the reinforcement strategies (recognition, ongoing coaching, audits) to ensure adopted behaviors are sustained long-term.",

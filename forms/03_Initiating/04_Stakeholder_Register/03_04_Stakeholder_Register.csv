@@ -1,4 +1,8 @@
-ID,Name,Position/Role,Contact information,Requirements,Expectations,Classification
-,,,,,,
-,,,,,,
-,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Stakeholder Register Entries,ID,"Unique identifier for the stakeholder (e.g., SH-01).",
+Stakeholder Register Entries,Name,"Stakeholder’s name. If unknown, specify the position or organization.",
+Stakeholder Register Entries,Position/Role,The position or functional role the stakeholder holds in the organization or project.,
+Stakeholder Register Entries,Contact information,Communication channels for the stakeholder such as email address or phone number.,
+Stakeholder Register Entries,Requirements,High-level needs and critical requirements for the project and deliverables.,
+Stakeholder Register Entries,Expectations,"Main expectations regarding project execution, outcomes, and governance.",
+Stakeholder Register Entries,Classification,"Stakeholder categorization (e.g., internal/external, high/medium/low impact).",

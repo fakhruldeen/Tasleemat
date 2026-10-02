@@ -1,32 +1,81 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROJECT ROADMAP template based on the provided project context. Context & Definition: The project roadmap is a high-level visual summary of the life cycle phases, key deliverables, management reviews and milestones. The project roadmap can receive information from the project charter and the project management plan. It provides information to the project schedule, risk register, and milestone list. If it is developed it would be in conjunction with the project management plan. It is developed once, and then only changed if dates of the key events, milestones, or deliverables change. Alignment: The project roadmap should be aligned and consistent with the following documents:\n• Project management plan\n• Milestone list",
     "form_name": "PROJECT ROADMAP",
     "document_reference": "PMO-04.01.03",
+    "_llm_instructions": "Populate the fields of 'PROJECT ROADMAP' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.01.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project Roadmap Entries": {
-            "guidance": "Populate a Markdown table with exactly 4 columns: Project life cycle phases, Major deliverables or events, Significant milestones, Timing and types of reviews. The 'Project life cycle phases' is the name of each life cycle phase. 'Major deliverables or events' include key deliverables, phase gates, key approvals, external events. 'Significant milestones' are the milestones in the project. 'Timing and types of reviews' include management, customer, compliance, or other significant reviews.",
-            "value": [
-                {
-                    "Project life cycle phases": "",
-                    "Major deliverables or events": "",
-                    "Significant milestones": "",
-                    "Timing and types of reviews": ""
-                },
-                {
-                    "Project life cycle phases": "",
-                    "Major deliverables or events": "",
-                    "Significant milestones": "",
-                    "Timing and types of reviews": ""
-                },
-                {
-                    "Project life cycle phases": "",
-                    "Major deliverables or events": "",
-                    "Significant milestones": "",
-                    "Timing and types of reviews": ""
-                }
-            ]
+        "f01_Strategic_Alignment_Summary": {
+            "section": "Strategic Objectives and Business Value",
+            "label": "Strategic Alignment Summary",
+            "guidance": "Clear articulation of how project outcomes support broader organizational goals.",
+            "value": ""
+        },
+        "f02_Target_Business_Value_and_Benefits": {
+            "section": "Strategic Objectives and Business Value",
+            "label": "Target Business Value and Benefits",
+            "guidance": "Anticipated operational improvements, revenue gains, or value realization targets.",
+            "value": ""
+        },
+        "f03_Success_Criteria_and_Key_Metrics": {
+            "section": "Strategic Objectives and Business Value",
+            "label": "Success Criteria and Key Metrics",
+            "guidance": "Quantitative and qualitative KPIs used to measure project milestone success.",
+            "value": ""
+        },
+        "f04_High_Level_Product_Vision": {
+            "section": "Project Roadmap Overview",
+            "label": "High-Level Product Vision",
+            "guidance": "Executive narrative describing the end-state solution and delivery vision.",
+            "value": ""
+        },
+        "f05_Major_Workstreams_and_Themes": {
+            "section": "Project Roadmap Overview",
+            "label": "Major Workstreams and Themes",
+            "guidance": "Core technical and functional workstreams driving delivery forward.",
+            "value": ""
+        },
+        "f06_Roadmap_Horizon_and_Timeframes": {
+            "section": "Project Roadmap Overview",
+            "label": "Roadmap Horizon and Timeframes",
+            "guidance": "Overall chronological span covering major release windows and delivery horizons.",
+            "value": ""
+        },
+        "f07_Release_1_MVP_Scope_and_Milestone": {
+            "section": "Release and Milestone Timeline",
+            "label": "Release 1 (MVP) Scope and Milestone",
+            "guidance": "Target completion date and essential scope commitments for the initial release.",
+            "value": ""
+        },
+        "f08_Release_2_Scope_and_Milestone": {
+            "section": "Release and Milestone Timeline",
+            "label": "Release 2 Scope and Milestone",
+            "guidance": "Target completion date and expanded functionality for subsequent release phases.",
+            "value": ""
+        },
+        "f09_Future_Enhancements_and_Final_Milestone": {
+            "section": "Release and Milestone Timeline",
+            "label": "Future Enhancements and Final Milestone",
+            "guidance": "Long-term enhancements, post-launch operationalization, and final closeout milestone.",
+            "value": ""
+        },
+        "f10_Cross_Project_and_External_Dependencies": {
+            "section": "Key Dependencies and Assumptions",
+            "label": "Cross-Project and External Dependencies",
+            "guidance": "Critical interdependencies with other organizational initiatives, platforms, or vendors.",
+            "value": ""
+        },
+        "f11_Critical_Architectural_and_Strategic_Assumptions": {
+            "section": "Key Dependencies and Assumptions",
+            "label": "Critical Architectural and Strategic Assumptions",
+            "guidance": "Foundational assumptions underpinning delivery timelines and resource models.",
+            "value": ""
+        },
+        "f12_Strategic_Risks_and_Mitigation": {
+            "section": "Key Dependencies and Assumptions",
+            "label": "Strategic Risks and Mitigation",
+            "guidance": "Major strategic risks that could impact timeline execution and roadmap milestones.",
+            "value": ""
         }
     }
 }

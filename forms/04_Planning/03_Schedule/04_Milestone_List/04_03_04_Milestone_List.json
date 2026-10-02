@@ -1,32 +1,45 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and generate an array of milestone objects for the 'Milestone List' table based on the context. Context: The milestone list defines all the project milestones and describes the nature of each one. It may categorize the milestone as optional or mandatory, internal or external, interim or final. It is an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition. This is developed once and is not usually changed unless there is a significant scope change.",
     "form_name": "MILESTONE LIST",
     "document_reference": "PMO-04.03.04",
+    "_llm_instructions": "Populate the fields of 'MILESTONE LIST' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.04.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Milestone List": {
-            "guidance": "Generate a JSON array of milestone objects.",
-            "value": [
-                {
-                    "ID": "",
-                    "Milestone Name": "",
-                    "Milestone Description": "",
-                    "Type": ""
-                },
-                {
-                    "ID": "",
-                    "Milestone Name": "",
-                    "Milestone Description": "",
-                    "Type": ""
-                },
-                {
-                    "ID": "",
-                    "Milestone Name": "",
-                    "Milestone Description": "",
-                    "Type": ""
-                }
-            ]
+        "f01_Contractual_and_Regulatory_Milestones": {
+            "section": "Mandatory Milestones",
+            "label": "Contractual and Regulatory Milestones",
+            "guidance": "Legally binding delivery milestones, compliance deadlines, and contractual gate events.",
+            "value": ""
+        },
+        "f02_Target_Dates_and_Deliverables_Mandatory": {
+            "section": "Mandatory Milestones",
+            "label": "Target Dates and Deliverables (Mandatory)",
+            "guidance": "Fixed target calendar dates and verified deliverables associated with mandatory milestones.",
+            "value": ""
+        },
+        "f03_Internal_Project_Gate_Milestones": {
+            "section": "Optional and Internal Milestones",
+            "label": "Internal Project Gate Milestones",
+            "guidance": "Major internal transition points, architectural baseline completions, and integration checkpoints.",
+            "value": ""
+        },
+        "f04_Target_Dates_and_Deliverables_Internal": {
+            "section": "Optional and Internal Milestones",
+            "label": "Target Dates and Deliverables (Internal)",
+            "guidance": "Planned schedule dates and required internal outcomes for managerial review milestones.",
+            "value": ""
+        },
+        "f05_Verification_Evidence_and_Sign_off_Lead": {
+            "section": "Milestone Verification and Criteria",
+            "label": "Verification Evidence and Sign-off Lead",
+            "guidance": "Required audit evidence, formal artifacts, and designated approval authority for milestone achievement.",
+            "value": ""
+        },
+        "f06_Milestone_Critical_Path_Impact": {
+            "section": "Milestone Verification and Criteria",
+            "label": "Milestone Critical Path Impact",
+            "guidance": "Assessment of whether the milestone resides on the critical path and associated delivery float.",
+            "value": ""
         }
     }
 }

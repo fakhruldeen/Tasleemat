@@ -1,8 +1,9 @@
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Requirements Traceability Matrix:** Generate a Markdown table containing exactly the columns specified below. Generate at least 5 representative requirements tracing entries based on the project context.
-*   **Inter-Requirements Traceability Matrix:** Generate a Markdown table containing exactly the columns specified below. Generate at least 3 representative inter-requirement relationships based on the project context.
+- Traceability Parameters: Provide comprehensive project data for all required fields in this section.
+- Requirements Traceability Mapping: Provide comprehensive project data for all required fields in this section.
+- Inter-Requirements Dependencies: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -10,27 +11,40 @@ Section Instructions:
 <h1 align="center">REQUIREMENTS TRACEABILITY MATRIX</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Requirements Traceability Matrix
-<!-- Trace requirements to project objectives, WBS deliverables, metrics, and validation. -->
-* **Requirement Information:** ID, Requirement, Source, Priority, Category.
-* **Relationship Traceability:** Business objective, Deliverable, Verification, Validation.
+## 1. Traceability Parameters
 
-| ID | Requirement | Source | Priority | Category | Business objective | Deliverable | Verification | Validation |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Traceability Purpose and Baseline Reference:**
+[ Add details... ]
+
+**Traceability Dimensions and Attributes:**
+[ Add details... ]
 
 ---
 
-### Inter-Requirements Traceability Matrix
-<!-- Trace the relationship between categories of requirements (e.g., Business vs Technical). -->
+## 2. Requirements Traceability Mapping
 
-| Business Req ID | Business Requirement | Business Priority | Business Source | Technical Req ID | Technical Requirement | Technical Priority | Technical Source |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Business Need to Requirement Linkage:**
+[ Add details... ]
+
+**Requirement to WBS Deliverable Mapping:**
+[ Add details... ]
+
+**Requirement to Design and Test Case Mapping:**
+[ Add details... ]
+
+---
+
+## 3. Inter-Requirements Dependencies
+
+**Core Inter-Requirement Dependencies:**
+[ Add details... ]
+
+**Impact and Traceability Governance:**
+[ Add details... ]
 
 ---
 
@@ -38,13 +52,13 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Requirements Manager** | {{Requirements_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Test Manager / QA Lead** | {{Quality_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Requirements Traceability Matrix | <strong>Ref:</strong> PMO-04.02.04 <br>
+  <strong>Template:</strong> REQUIREMENTS TRACEABILITY MATRIX | <strong>Ref:</strong> PMO-04.02.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

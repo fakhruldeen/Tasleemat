@@ -1,2 +1,9 @@
-﻿ID,Category,Decision,Impacts on Deliverables/Objectives,Impacted Stakeholders,Responsible Party,Date,Comments
-,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Decision Log Entries,ID,"Unique identifier for the decision (e.g., DEC-01).",
+Decision Log Entries,Category,"Category of the decision (e.g., Scope, Architecture, Vendor, Process).",
+Decision Log Entries,Decision,The specific decision made and its underlying rationale.,
+Decision Log Entries,Impacts on Deliverables/Objectives,"Anticipated impacts on deliverables, budget, schedule, or architecture.",
+Decision Log Entries,Impacted Stakeholders,Stakeholders affected by this decision.,
+Decision Log Entries,Responsible Party,The person or entity responsible for making and enforcing the decision.,
+Decision Log Entries,Date,The date on which the decision was officially agreed or approved.,
+Decision Log Entries,Comments,"Alternatives considered, trade-offs, and supporting references.",

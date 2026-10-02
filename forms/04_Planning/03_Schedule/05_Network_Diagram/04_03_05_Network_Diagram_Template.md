@@ -1,9 +1,9 @@
-<!-- LLM INSTRUCTIONS: Generate the Mermaid diagram below based on the project schedule.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Column Definitions:
-*   **Predecessor:** The activity that must occur first.
-*   **Relationship & Lead/Lag:** The relationship type (FS, SS, FF, SF) and any acceleration/delay (e.g., FS+3d).
-*   **Successor:** The activity that follows.
+Section Instructions:
+- Network Logic and Critical Path Overview: Provide comprehensive project data for all required fields in this section.
+- Precedence Relationships and Dependencies: Provide comprehensive project data for all required fields in this section.
+- Network Diagram Visualization: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -11,38 +11,50 @@ Column Definitions:
 <h1 align="center">NETWORK DIAGRAM</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
-
----
-
-### Network Diagram Visualization
-<!-- Mermaid Graph LR visualization representing schedule dependencies -->
-
-```mermaid
-graph LR
-    %% [ Add your network diagram dependencies here. Below is an example: ]
-    A[Activity A] -->|FS| B[Activity B]
-    A -->|SS +2d| C[Activity C]
-    B -->|FF| D[Activity D]
-    C -->|FS| D
-```
-
----
-
-### Network Diagram Dependencies
-| Predecessor | Relationship & Lead/Lag | Successor |
 | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 1. Network Logic and Critical Path Overview
+
+**Network Diagramming Methodology:**
+[ Add details... ]
+
+**Critical Path Summary and Duration:**
+[ Add details... ]
+
+**Near-Critical Paths and Float Analysis:**
+[ Add details... ]
+
+---
+
+## 2. Precedence Relationships and Dependencies
+
+**Core Predecessor and Successor Chains:**
+[ Add details... ]
+
+**Lead and Lag Justifications:**
+[ Add details... ]
+
+---
+
+## 3. Network Diagram Visualization
+
+**Mermaid Diagram Syntax:**
+[ Add details... ]
+
+**Diagram Interpretation Guidelines:**
+[ Add details... ]
+
+---
 
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Planning Lead / Scheduler** | {{Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

@@ -2,61 +2,68 @@
 lang: en
 layout: default
 title: Training Plan and Log
-nav_order: 1
+nav_order: 7
 ---
-
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Training Plan and Log
 
 **Document Reference:** `PMO-04.11.02`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Training Plan and Log** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Training Plan and Log** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A subsidiary management plan aligned with Tasleemat standards known as the **Training Plan and Log**, which describes how this specific aspect of the project will be planned, structured, and controlled.
+One consolidated table tracking training activities. It captures the target audience, the specific training module and learning objectives, the delivery method (workshop, virtual, e-learning), the scheduled target date, and the real-time completion status of participant cohorts.
 
 ---
 
 ### 2. Why?
-To provide a clear roadmap and standardized processes for the project team, preventing unauthorized deviations in scope, time, or cost.
+Because systems and processes cannot function without competent operators. Organizations frequently invest heavily in building solutions only to encounter severe operational delays because end users were not trained in advance. A structured training plan and log ensures everyone is equipped with the right skills at the right time before cutover.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Formulated during the planning phase to schedule curriculum design and logistcs, executed during system testing and pre-release windows, and continuously updated as training sessions occur until 100% operational readiness is certified.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs), then baselined.
+Managed by the Training Coordinator or Change Specialist, with oversight from the Project Manager and functional Team Leads. The Training Coordinator and Team Leads sign off to verify training completion and competence levels.
 
 ---
 
 ### Tailoring Tips
-[ Add Tailoring Tips Here ]
-
-### Alignment
-[ Add Alignment Information Here ]
-
-### 5. How?
-To accurately complete this log, populate the following sections:
-
-*   **Target Audience:** Who needs training.
-*   **Training Module:** What they are learning.
-*   **Delivery Method:** In-person, webinar, self-paced.
-*   **Date/Schedule:** When training occurs.
-*   **Completion Status:** Number of users completed.
+*   Segment training by audience role. Tailor learning modules to specific daily workflows rather than delivering generic one-size-fits-all sessions.
+*   Combine multiple delivery methods. Blend instructor-led walkthroughs with hands-on practice labs and self-paced reference materials.
+*   Track attendance and verify competency. Ensure training tracking measures actual skill comprehension, not merely session attendance.
+*   Schedule close to go-live. Deliver training near the implementation date so users apply newly learned skills immediately.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_11_02_Training_Plan_and_Log_Template.md)
-* [🤖 LLM Generation Prompt](04_11_02_Training_Plan_and_Log.md)
-* [📊 Data Schema (JSON)](04_11_02_Training_Plan_and_Log.json)
-* [📈 Tabular Data (CSV)](04_11_02_Training_Plan_and_Log.csv)
+### Alignment
+The Training Plan and Log should be aligned and consistent with: the OCM Strategy and Plan, reinforcing change adoption across user cohorts; the Project Schedule, synchronizing training delivery with release dates; and the Resource Management Plan, securing training facilities, environments, and instructors.
 
-</div>
+---
+
+### 5. How?
+To accurately complete the Training Plan and Log, populate the following sections based on
+the project context (ensuring reference to `parameters.md` for the general
+project variables):
+
+*   **Target Audience:** The specific stakeholder group, department, or role that requires training to effectively operate new systems or execute updated workflows.
+*   **Training Module:** The title, core learning objectives, and curriculum content designed to build required technical and operational competencies.
+*   **Delivery Method:** The instructional format and medium used (e.g., in-person workshop, live virtual session, self-paced e-learning, or peer coaching).
+*   **Target Date:** The scheduled delivery date or completion deadline, aligned with project deployment and user readiness milestones.
+*   **Completion Status:** The current progress or adoption status (e.g., Scheduled, In Progress, Completed) tracking user participation and certification.
+
+---
+
+### Associated Templates
+* [📄 Printable Template (Markdown)](04_11_02_Training_Plan_and_Log_Template.md)
+* [🤖 Smart Generation Prompt](04_11_02_Training_Plan_and_Log.md)
+* [📊 Data Structure (JSON)](04_11_02_Training_Plan_and_Log.json)
+* [📈 Tabular Data (CSV)](04_11_02_Training_Plan_and_Log.csv)

@@ -1,68 +1,74 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUIREMENTS MANAGEMENT PLAN template based on the provided project context. Context & Definition: The requirements management plan is part of the project management plan. It specifies how requirements activities will be conducted throughout the project. Managing requirements activities includes planning activities (collecting, analyzing, categorizing, prioritizing, documenting, determining metrics, defining traceability structure) and managing activities (tracking, reporting, tracing, validating, performing configuration management). It receives information from the project charter, development approach, and quality management plan, and provides information to requirements documentation, traceability matrix, quality management plan, and risk register. It is developed once and does not usually change. Alignment: The requirements management plan should be aligned and consistent with the following documents:\n• Development approach\n• Change management plan\n• Scope management plan\n• Release and iteration plan\n• Requirements backlog",
     "form_name": "REQUIREMENTS MANAGEMENT PLAN",
     "document_reference": "PMO-04.02.02",
+    "_llm_instructions": "Populate the fields of 'REQUIREMENTS MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.02.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Roles and Responsibilities": {
-            "guidance": "Identify the key roles and their specific responsibilities regarding requirements management (e.g., who collects requirements, who maintains the traceability matrix). Use lists where appropriate.",
+        "f01_Requirements_Elicitation_Techniques": {
+            "section": "Requirements Collection and Analysis",
+            "label": "Requirements Elicitation Techniques",
+            "guidance": "Methods used to gather stakeholder needs including interviews, focus groups, and surveys.",
             "value": ""
         },
-        "Requirements collection": {
-            "guidance": "Describe how requirements will be collected or elicited (e.g., brainstorming, interviewing, observation). Use lists where appropriate.",
+        "f02_Requirements_Analysis_and_Elaboration": {
+            "section": "Requirements Collection and Analysis",
+            "label": "Requirements Analysis and Elaboration",
+            "guidance": "Analytical processes applied to structure, clarify, and model requirements.",
             "value": ""
         },
-        "Requirements analysis": {
-            "guidance": "Describe how requirements will be analyzed for prioritization, categorization, and impact. Use lists where appropriate.",
+        "f03_Stakeholder_Engagement_for_Requirements": {
+            "section": "Requirements Collection and Analysis",
+            "label": "Stakeholder Engagement for Requirements",
+            "guidance": "Strategy for maintaining active stakeholder participation throughout requirements definition.",
             "value": ""
         },
-        "Requirements categories": {
-            "guidance": "Identify categories for requirements such as business, stakeholder, quality, etc. Use lists where appropriate.",
+        "f04_Requirements_Taxonomy_and_Categories": {
+            "section": "Requirements Categorization and Documentation",
+            "label": "Requirements Taxonomy and Categories",
+            "guidance": "Classification scheme covering business, stakeholder, solution, functional, and non-functional requirements.",
             "value": ""
         },
-        "Requirements documentation": {
-            "guidance": "Define how requirements will be documented (e.g., spreadsheet, detailed forms). Use lists where appropriate.",
+        "f05_Requirements_Documentation_Standards": {
+            "section": "Requirements Categorization and Documentation",
+            "label": "Requirements Documentation Standards",
+            "guidance": "Formatting guidelines and documentation artifacts used to record verified requirements.",
             "value": ""
         },
-        "Requirements prioritization": {
-            "guidance": "Identify the prioritization approach for requirements (non-negotiable vs. nice-to-have). Use lists where appropriate.",
+        "f06_Requirements_Prioritization_Scheme": {
+            "section": "Prioritization and Metrics",
+            "label": "Requirements Prioritization Scheme",
+            "guidance": "Ranking methodology (such as MoSCoW, weighted scoring, or value ranking) to prioritize scope.",
             "value": ""
         },
-        "Requirements metrics": {
-            "guidance": "Document the metrics that requirements will be measured against. Use lists where appropriate.",
+        "f07_Requirements_Product_Metrics": {
+            "section": "Prioritization and Metrics",
+            "label": "Requirements Product Metrics",
+            "guidance": "Quantitative metrics measuring requirements volatility, defect density, and coverage.",
             "value": ""
         },
-        "Requirements traceability structure": {
-            "guidance": "Identify the information that will be used to link requirements from their origin to the deliverables that satisfy them. Use lists where appropriate.",
+        "f08_Traceability_Structure_and_Attributes": {
+            "section": "Traceability and Configuration Management",
+            "label": "Traceability Structure and Attributes",
+            "guidance": "Attributes and linkages tracked across the requirements lifecycle to ensure bidirectional traceability.",
             "value": ""
         },
-        "Requirements tracing": {
-            "guidance": "Describe the ongoing execution process of tracing requirements throughout the project lifecycle to ensure all requirements are addressed and met. Use lists where appropriate.",
+        "f09_Requirements_Configuration_Control": {
+            "section": "Traceability and Configuration Management",
+            "label": "Requirements Configuration Control",
+            "guidance": "Procedures for baseline versioning and evaluating changes to documented requirements.",
             "value": ""
         },
-        "Requirements tracking": {
-            "guidance": "Describe how often and what techniques will be used to track progress on requirements. Use lists where appropriate.",
+        "f10_Requirements_Verification_Method": {
+            "section": "Verification and Validation Strategy",
+            "label": "Requirements Verification Method",
+            "guidance": "Techniques ensuring requirements are complete, consistent, unambiguous, and testable.",
             "value": ""
         },
-        "Requirements reporting": {
-            "guidance": "Describe how reporting on requirements will be conducted and the frequency of such reporting. Use lists where appropriate.",
-            "value": ""
-        },
-        "Requirements validation": {
-            "guidance": "Identify the various methods that will be used to validate requirements such as inspection, audits, demonstration, testing, etc. Use lists where appropriate.",
-            "value": ""
-        },
-        "Requirements configuration management": {
-            "guidance": "Describe the configuration management system that will be used to control requirements, documentation, the change management process, and authorization levels. Use lists where appropriate.",
-            "value": ""
-        },
-        "Test and evaluation strategy": {
-            "guidance": "Document the test and evaluation strategy that will be used to ensure deliverables meet the agreed-upon requirements. Use lists where appropriate.",
-            "value": ""
-        },
-        "Backlog management": {
-            "guidance": "Describe how the product or project backlog will be used to manage, prioritize, and track requirements, especially in agile or adaptive environments. Use lists where appropriate.",
+        "f11_Validation_and_User_Acceptance_Strategy": {
+            "section": "Verification and Validation Strategy",
+            "label": "Validation and User Acceptance Strategy",
+            "guidance": "Approach for validating that final deliverables fulfill underlying business objectives.",
             "value": ""
         }
     }

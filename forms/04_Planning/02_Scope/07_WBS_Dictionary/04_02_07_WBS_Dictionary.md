@@ -1,37 +1,85 @@
 ---
 lang: en
-Form: WBS DICTIONARY (Instructions)
+Form: WBS Dictionary (Instructions)
 ---
 
-# WBS DICTIONARY - LLM GENERATION GUIDE
+# WBS Dictionary - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `WBS DICTIONARY`. When asked to populate this form, generate multiple dictionary entries (one for each work package).
+<!--
+System Instructions: This document contains instructions for generating the
+«WBS Dictionary». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The WBS dictionary supports the work breakdown structure (WBS) by providing detail about the control accounts and work packages it contains. The dictionary provides detailed information about each work package.
-> 
+> **Context and Definition:**
+> A detailed document that provides comprehensive deliverable, activity, and scheduling information for each component in the WBS.
+
 > **Alignment:**
-> The WBS dictionary should be aligned and consistent with the following documents:
-• Project charter
-• Requirements documentation
-• Project scope statement
-• WBS
-• Activity list
+> The third essential element of the Scope Baseline, linking WBS elements to Activity Lists, Cost Estimates, and Acceptance criteria.
 
 ---
 
-### Work Package Entries
-**Instruction:** Repeat the following block for EVERY Work Package defined in the WBS.
+## Work Package Identification
 
-*   **Work Package Name:** Enter the name of the work package.
-*   **Code of Accounts:** Enter the WBS ID / code of account.
-*   **Due Dates:** List the overarching due dates.
-*   **Description of Work:** Brief description of the deliverable.
-*   **Assumptions and Constraints:** List assumptions and constraints related to this work package.
-*   **Milestones:** Provide a numbered list of milestones formatted as a single markdown string containing list items.
-*   **Activities & Costs:** Generate a Markdown table (Columns: ID, Activity, Team resource, Labor hours, Labor rate, Labor total, Material units, Material cost, Material total, Total cost).
-*   **Quality Requirements:** Document any quality metrics.
-*   **Acceptance Criteria:** Describe how the deliverable will be accepted.
-*   **Technical Information:** Reference technical requirements.
-*   **Agreement Information:** Reference any contracts or agreements.
+### WBS Identifier and Title
+**Instruction:** The unique WBS code number and descriptive name of the specific work package.
+
+**Generated Value:** [ Add details... ]
+
+### Control Account and Responsible Organization
+**Instruction:** Associated control account code and organizational unit or person accountable for delivery.
+
+**Generated Value:** [ Add details... ]
+
+### Work Package Owner
+**Instruction:** Designated lead engineer or manager responsible for work package execution.
+
+**Generated Value:** [ Add details... ]
+
+## Scope of Work and Deliverables
+
+### Work Package Scope Description
+**Instruction:** Detailed narrative describing the technical work, tasks, and activities required for this package.
+
+**Generated Value:** [ Add details... ]
+
+### Deliverables Produced
+**Instruction:** Specific tangible or intangible outputs generated upon work package completion.
+
+**Generated Value:** [ Add details... ]
+
+### Milestone Schedule and Target Dates
+**Instruction:** Target start date, intermediate technical milestones, and completion deadline.
+
+**Generated Value:** [ Add details... ]
+
+## Quality Criteria and Acceptance
+
+### Quality Requirements and Standards
+**Instruction:** Mandatory quality metrics, engineering specifications, and technical standards.
+
+**Generated Value:** [ Add details... ]
+
+### Acceptance Criteria and Sign-off Lead
+**Instruction:** Clear criteria and designated stakeholder authorized to accept the work package.
+
+**Generated Value:** [ Add details... ]
+
+## Resource and Cost Allocations
+
+### Required Resources and Skills
+**Instruction:** Personnel roles, technical expertise, materials, and specialized equipment needed.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Estimate and Budget Allocation
+**Instruction:** Approved budget allocation and cost baseline figure assigned to this work package.
+
+**Generated Value:** [ Add details... ]
+
+### Assumptions, Constraints, and Dependencies
+**Instruction:** Specific operational constraints, key assumptions, and preceding/succeeding work package linkages.
+
+**Generated Value:** [ Add details... ]
+
+---

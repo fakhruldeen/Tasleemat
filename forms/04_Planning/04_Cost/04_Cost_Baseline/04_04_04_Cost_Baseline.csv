@@ -1,4 +1,8 @@
-Period,Planned Period Cost,Cumulative Cost,Remarks / Key Activities
-,,,
-,,,
-,,,
+Section,Field,Guidance,LLM_Generated_Value
+Time-Phased Cost Baseline (S-Curve),Reporting Period and Planned Expenditures,Periodic time-phased planned expenditures across months or fiscal quarters.,
+Time-Phased Cost Baseline (S-Curve),Cumulative Planned Value (S-Curve PV),The authorized cumulative planned budget curve from project start to completion.,
+Time-Phased Cost Baseline (S-Curve),Budget at Completion (BAC) Total,The total authorized baseline budget excluding management reserves.,
+Work Package Budget Allocations,Control Account and Work Package Allocations,Approved baseline budget figures mapped to specific WBS control accounts.,
+Work Package Budget Allocations,Contingency Reserve Distribution,Distribution of project contingency reserves assigned across control accounts.,
+Project Funding Requirements and Limits,Periodic Funding Requirements,"Total cash outlay required per period, incorporating funding step increments.",
+Project Funding Requirements and Limits,Management Reserve and Total Project Budget,Executive management reserve amount and the total authorized project budget (BAC + Management Reserve).,

@@ -1,31 +1,63 @@
 ---
 lang: en
-Form: STAKEHOLDER ENGAGEMENT PLAN (Instructions)
+Form: Stakeholder Engagement Plan (Instructions)
 ---
 
-# STAKEHOLDER ENGAGEMENT PLAN - LLM GENERATION GUIDE
+# Stakeholder Engagement Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `STAKEHOLDER ENGAGEMENT PLAN`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Stakeholder Engagement Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The stakeholder engagement plan describes strategies and actions that will be used to promote productive involvement of stakeholders in decision making and project execution. Typical information includes desired and current engagement levels, impact of changes, interrelationships, and specific engagement approaches.
+> **Context and Definition:**
+> A subsidiary plan identifying the strategies and actions required to effectively engage project stakeholders based on their needs, interests, and impact.
 
-**Tailoring Tips:**
-*   For small projects you may not need a stakeholder engagement plan. You can combine the information with the stakeholder register.
-*   Projects with multiple stakeholders with overlapping and intersecting relationships can benefit from having a stakeholder relationship map.
-*   For many high-risk projects, stakeholder engagement is critical to success. Robust plans are required for complex interactions.
-
-**Alignment:**
-The stakeholder engagement plan should be aligned and consistent with the following documents:
-*   Stakeholder register
-*   Communications management plan
-*   Project schedule
+> **Alignment:**
+> Integrates with Stakeholder Register, Communications Management Plan, Change Management Plan, and Project Charter.
 
 ---
 
-### Section Generation Instructions
-*   **Stakeholder Engagement Assessment Matrix:** Use 'C' for Current and 'D' for Desired engagement level (Unaware, Resistant, Neutral, Supportive, Leading).
-*   **Stakeholder Changes:** Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.
-*   **Interrelationships:** List any relationships between and among stakeholder groups.
-*   **Stakeholder Engagement Approach:** Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.
+## Stakeholder Engagement Assessment Matrix
+
+### Stakeholder Name and Role
+**Instruction:** Designated key stakeholder, organizational title, and sphere of influence.
+
+**Generated Value:** [ Add details... ]
+
+### Current vs Desired Engagement Level
+**Instruction:** Assessment of current engagement (Unaware, Resistant, Neutral, Supportive, Leading) vs. desired target level.
+
+**Generated Value:** [ Add details... ]
+
+### Engagement Gap Analysis
+**Instruction:** Analytical evaluation explaining the gap between current and desired engagement states.
+
+**Generated Value:** [ Add details... ]
+
+## Stakeholder Relationships and Interdependencies
+
+### Inter-Stakeholder Dynamics and Coalitions
+**Instruction:** Analysis of political dynamics, alliances, and influence networks among stakeholder groups.
+
+**Generated Value:** [ Add details... ]
+
+### Stakeholder Expectations and Key Concerns
+**Instruction:** Documented primary expectations, operational concerns, and sensitivity triggers.
+
+**Generated Value:** [ Add details... ]
+
+## Engagement Strategies and Action Protocols
+
+### Tailored Engagement Strategy
+**Instruction:** Specific actionable interventions designed to move the stakeholder to the desired engagement state.
+
+**Generated Value:** [ Add details... ]
+
+### Engagement Monitoring and Feedback Loop
+**Instruction:** Process for evaluating engagement effectiveness and adjusting tactics throughout delivery.
+
+**Generated Value:** [ Add details... ]
+
+---

@@ -1,58 +1,167 @@
 ---
 lang: en
-Form: CONTRACTOR STATUS REPORT (Instructions)
+Form: Contractor Status Report (Instructions)
 ---
 
-# CONTRACTOR STATUS REPORT - LLM GENERATION GUIDE
+# Contractor Status Report - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `CONTRACTOR STATUS REPORT`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Contractor Status Report». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> **Context and Definition:**
+> A formal contract administration artifact submitted by external vendors to report work progress, variances, forecasts, and risks.
+
 > **Alignment:**
-> [ Add Alignment Information Here ]
-
-> The contractor status report is an example of work performance information from process 12.3 Control Procurements in the PMBOK Guide - Sixth Edition. It is submitted at pre-defined intervals, and its content is generally carried into the project status report.
+> Directly aligns with Procurement Management Plan, Contract SOW, Project Status Report, and Earned Value reports.
 
 ---
 
-### Reporting Information
-**Instruction:** Record the contractor, the contract number and type, the reporting period covered, and the report submission date. The contract type determines whether a cost forecast is expected.
+## Reporting Information
 
-### Scope Performance
-**Instruction:** Describe the progress on scope made during this reporting period.
+### Contractor
+**Instruction:** The legal name and contact details of the contractor performing the contract.
 
-### Quality Performance
-**Instruction:** Identify any quality or performance variances.
+**Generated Value:** [ Add details... ]
 
-### Schedule Performance
-**Instruction:** Describe whether the contract is on schedule. If ahead or behind, identify the cause of the variance.
+### Contract Number and Type
+**Instruction:** The official contract identifier and contract type (e.g., Fixed Price, T&M).
 
-### Cost Performance
-**Instruction:** Describe whether the contract is on budget. If over or under budget, identify the cause of the variance.
+**Generated Value:** [ Add details... ]
 
-### Forecast Performance
-**Instruction:** Discuss the estimated delivery date and final cost of the contract. If the contract is fixed price, do not enter cost forecasts.
+### Reporting Period
+**Instruction:** The start and end calendar dates covered by this contractor report.
+
+**Generated Value:** [ Add details... ]
+
+### Report Submission Date
+**Instruction:** The exact date on which the report was officially submitted to the project manager.
+
+**Generated Value:** [ Add details... ]
+
+## Performance This Reporting Period
+
+### Scope / Status This Period
+**Instruction:** Assessment of contracted scope deliverables completed or in progress during this period.
+
+**Generated Value:** [ Add details... ]
+
+### Scope / Variance and Cause
+**Instruction:** Explanation of any deviations from contracted scope baselines and their root causes.
+
+**Generated Value:** [ Add details... ]
+
+### Quality / Status This Period
+**Instruction:** Evaluation of deliverable quality against contracted standards and specifications.
+
+**Generated Value:** [ Add details... ]
+
+### Quality / Variance and Cause
+**Instruction:** Root causes and details of any non-conformance or failed quality checks.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule / Status This Period
+**Instruction:** Assessment of progress against contracted milestone dates and schedule baselines.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule / Variance and Cause
+**Instruction:** Root cause explanation for any schedule delays or accelerations.
+
+**Generated Value:** [ Add details... ]
+
+### Cost / Status This Period
+**Instruction:** Assessment of contract billings and expenditures against the financial plan.
+
+**Generated Value:** [ Add details... ]
+
+### Cost / Variance and Cause
+**Instruction:** Root cause explanation for any financial variances or billing discrepancies.
+
+**Generated Value:** [ Add details... ]
+
+## Forecast Performance for Future Reporting Periods
+
+### Estimated Completion Date / Estimate
+**Instruction:** The contractor projected delivery and contract completion date.
+
+**Generated Value:** [ Add details... ]
+
+### Estimated Completion Date / Basis
+**Instruction:** Basis and rationale supporting the estimated completion date.
+
+**Generated Value:** [ Add details... ]
+
+### Estimated Final Cost / Estimate
+**Instruction:** Projected total final cost at completion (applicable to cost-reimbursable contracts).
+
+**Generated Value:** [ Add details... ]
+
+### Estimated Final Cost / Basis
+**Instruction:** Basis and historical cost rate data supporting the estimated final cost.
+
+**Generated Value:** [ Add details... ]
+
+### Key Forecast Assumptions / Estimate
+**Instruction:** Summary of key assumptions underpinning forecast values.
+
+**Generated Value:** [ Add details... ]
+
+### Key Forecast Assumptions / Basis
+**Instruction:** Dependencies and external conditions supporting forecast stability.
+
+**Generated Value:** [ Add details... ]
+
+## Claims or Disputes
 
 ### Claims or Disputes
-**Instruction:** Identify any new or resolved disputes or claims that occurred during the current reporting period.
+**Instruction:** Summary of any new, pending, or resolved contractual claims or disputes.
+
+**Generated Value:** [ Add details... ]
+
+## Risks
 
 ### Risks
-**Instruction:** List any risks. Risks should also be recorded in the project risk register.
+**Instruction:** Key vendor-side risks that could impact contract milestones or deliverables.
+
+**Generated Value:** [ Add details... ]
+
+## Planned Corrective or Preventive Action
 
 ### Planned Corrective or Preventive Action
-**Instruction:** Identify planned corrective or preventive actions necessary to recover schedule, cost, scope, or quality variances.
+**Instruction:** Specific remedial actions planned by the contractor to recover performance variances.
+
+**Generated Value:** [ Add details... ]
+
+## Issues
 
 ### Issues
-**Instruction:** Identify any new issues that have arisen. These should also be entered in the issue log.
+**Instruction:** Current active roadblocks, technical issues, or dependencies affecting execution.
+
+**Generated Value:** [ Add details... ]
+
+## Escalations
 
 ### Escalations
-**Instruction:** Identify any area that requires escalation to the sponsor, program manager, contracting officer, or another appropriate individual.
+**Instruction:** Items requiring urgent decisions or dispute intervention from the buyer or PMO.
+
+**Generated Value:** [ Add details... ]
+
+## Contract Change Requests
 
 ### Contract Change Requests
-**Instruction:** Summarise any contract change requests submitted during this reporting period.
+**Instruction:** Summary of formal contract change proposals submitted, reviewed, or pending.
+
+**Generated Value:** [ Add details... ]
+
+## Comments
 
 ### Comments
-**Instruction:** Add any comments that will add relevance to the report.
+**Instruction:** Additional context, contractor remarks, or explanatory notes.
+
+**Generated Value:** [ Add details... ]
+
+---

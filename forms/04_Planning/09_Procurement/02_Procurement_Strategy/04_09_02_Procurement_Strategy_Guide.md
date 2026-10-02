@@ -1,9 +1,63 @@
-# PROCUREMENT STRATEGY - GUIDANCE
-This document provides descriptions for each element in the Procurement Strategy.
+---
+lang: en
+layout: default
+title: Procurement Strategy
+nav_order: 2
+---
 
-| Document Element | Description |
-| :--- | :--- |
-| **Delivery Methods** | Describe the delivery method (e.g., joint venture, representative, design build, etc.). |
-| **Contract Type Selection** | Select the contract types. |
-| **Incentive or Award Fees** | List any incentive or award fees and their associated criteria. |
-| **Procurement Life Cycle** | List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer. |
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Procurement Strategy
+
+**Document Reference:** `PMO-04.09.02`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Procurement Strategy** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A strategic document outlining commercial packaging, delivery models, incentive mechanisms, and sourcing roadmaps.
+
+---
+
+### 2. Why?
+Optimizes risk distribution between buyer and seller, secures optimal market pricing, and aligns commercial terms with project delivery goals.
+
+---
+
+### 3. When?
+Developed early in procurement planning prior to drafting detailed bidding documentation.
+
+---
+
+### 4. Who?
+Authored by Lead Procurement Specialist and Project Manager, approved by Commercial Director and Sponsor.
+
+---
+
+### Tailoring Tips
+*   Structure multi-tier master services agreements (MSAs) with agile statement of work call-offs for digital initiatives.
+*   Utilize FIDIC or NEC standard contract suites for heavy civil engineering construction.
+
+---
+
+### Alignment
+Informs Procurement Management Plan, SOW, RFP packages, and Source Selection Criteria.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Procurement Strategy**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Project Delivery Method:** The selected delivery structure (e.g., Design-Build, Turnkey EPC, Professional Services, Agile Staff Augmentation).
+*   **Contract Payment Types and Rationale:** Selected contract payment mechanism (Firm Fixed Price, Cost Reimbursable, Target Price) and justification.
+*   **Incentive Fees and Bonus Provisions:** Performance-based financial incentives, early completion bonuses, or quality metrics.
+*   **Penalty and Liquidated Damages Clauses:** Contractual liquidated damages and penalty provisions for unexcused schedule delays.
+*   **Procurement Sourcing Stages:** Sequence of procurement stages: market analysis, pre-qualification, RFP issuance, evaluation, negotiation, award.
+*   **Market Engagement and Competitive Sourcing Approach:** Method of market engagement (Sole Source, Open Competitive Tender, Limited Request for Quotation).
+
+</div>

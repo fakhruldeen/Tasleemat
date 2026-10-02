@@ -1,4 +1,8 @@
-Predecessor,Relationship & Lead/Lag,Successor
-,,
-,,
-,,
+Section,Field,Guidance,LLM_Generated_Value
+Network Logic and Critical Path Overview,Network Diagramming Methodology,The logical diagramming method utilized (Precedence Diagramming Method - PDM).,
+Network Logic and Critical Path Overview,Critical Path Summary and Duration,"Identification of critical path activities, total critical path duration, and zero-float paths.",
+Network Logic and Critical Path Overview,Near-Critical Paths and Float Analysis,Analysis of near-critical paths and activities possessing total and free float.,
+Precedence Relationships and Dependencies,Core Predecessor and Successor Chains,Key sequence chains connecting major engineering and development work packages.,
+Precedence Relationships and Dependencies,Lead and Lag Justifications,Documented technical justifications for all applied lead times and lag buffers.,
+Network Diagram Visualization,Mermaid Diagram Syntax,Valid Mermaid graph syntax representing the complete node-and-arrow network dependency logic.,
+Network Diagram Visualization,Diagram Interpretation Guidelines,"Narrative guide explaining how to read activity nodes, dependencies, and path flows.",

@@ -1,46 +1,56 @@
-<!-- LLM INSTRUCTIONS: Populate the Source Selection Criteria based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Section-by-Section Instructions:
-- Criteria Definitions and Weighting: Define the criteria, assign weights (totaling 100%), and describe the meaning of ratings 1 through 5 for each criterion. Common criteria include Capacity, Cost, Experience, Technical expertise.
-- Candidate Evaluations: Evaluate each candidate against the criteria. Score = Weight * Rating.
-- Total Scores: Sum the scores for each candidate to determine the winner of the bid. -->
+Section Instructions:
+- Evaluation Criteria and Weighting Framework: Provide comprehensive project data for all required fields in this section.
+- Candidate Scoring and Assessment Table: Provide comprehensive project data for all required fields in this section.
+- Final Evaluation Summary and Recommendation: Provide comprehensive project data for all required fields in this section.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">SOURCE SELECTION CRITERIA</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
-| :--- | :--- |
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |
 
 ---
 
-## 1. Criteria Definitions and Weighting
+## 1. Evaluation Criteria and Weighting Framework
 
-| Criterion | Weight (%) | Rating 1 (Lowest) | Rating 2 | Rating 3 | Rating 4 | Rating 5 (Highest) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **Total Weight** | **100%** | | | | | |
+**Technical Capability and Understanding (Weight):**
+[ Add details... ]
 
----
+**Vendor Experience and Past Performance (Weight):**
+[ Add details... ]
 
-## 2. Candidate Evaluations
+**Financial Commercial Pricing (Weight):**
+[ Add details... ]
 
-| Criterion | Weight (%) | Candidate 1 Rating | Candidate 1 Score | Candidate 2 Rating | Candidate 2 Score | Candidate 3 Rating | Candidate 3 Score |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Management Approach and Compliance (Weight):**
+[ Add details... ]
 
 ---
 
-## 3. Total Scores
+## 2. Candidate Scoring and Assessment Table
 
-| Property | Details |
-| :--- | :--- |
-| **Candidate 1 Name & Total Score** | [ Add details... ] |
-| **Candidate 2 Name & Total Score** | [ Add details... ] |
-| **Candidate 3 Name & Total Score** | [ Add details... ] |
+**Vendor Candidate Name and Proposal Identifier:**
+[ Add details... ]
+
+**Technical and Commercial Score Breakdown:**
+[ Add details... ]
+
+**Total Weighted Score:**
+[ Add details... ]
+
+---
+
+## 3. Final Evaluation Summary and Recommendation
+
+**Comparative Analysis and Value Justification:**
+[ Add details... ]
+
+**Contract Award Recommendation and Sign-off:**
+[ Add details... ]
 
 ---
 
@@ -48,9 +58,9 @@ Section-by-Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Evaluation Committee Chair** | {{Evaluation_Chair_Name}} | _______________________ | [ .... - .... - .... ] |
-| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Risk / Procurement Lead** | {{Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

@@ -1,12 +1,11 @@
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Project scope description:** Describe the project scope. Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation.
-*   **Project deliverables:** Detail the project deliverables. Project deliverables are progressively elaborated from the project description key deliverables in the project charter.
-*   **Product acceptance criteria:** Define the product acceptance criteria. Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project.
-*   **Project exclusions:** Clearly define what is out of scope for the product and project.
-*   **Project constraints:** List and describe the specific project constraints associated with the project scope that limit the team's options.
-*   **Project assumptions:** List and describe the assumptions associated with the project scope and the potential impact of those assumptions if they prove to be false.
+- Project Scope Description: Provide comprehensive project data for all required fields in this section.
+- Project Deliverables: Provide comprehensive project data for all required fields in this section.
+- Product Acceptance Criteria: Provide comprehensive project data for all required fields in this section.
+- Project Exclusions: Provide comprehensive project data for all required fields in this section.
+- Project Constraints and Assumptions: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -14,49 +13,57 @@ Section Instructions:
 <h1 align="center">PROJECT SCOPE STATEMENT</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Project scope description
-<!-- Project scope is progressively elaborated from the project description in the project charter and the requirements in the requirements documentation. -->
+## 1. Project Scope Description
 
-> [ Add details... ]
+**Detailed Project Scope Description:**
+[ Add details... ]
 
----
-
-### Project deliverables
-<!-- Project deliverables are progressively elaborated from the project description key deliverables in the project charter. -->
-
-> [ Add details... ]
+**Major Project Objectives and Outcomes:**
+[ Add details... ]
 
 ---
 
-### Product acceptance criteria
-<!-- Acceptance criteria is progressively elaborated from the information in the project charter. Acceptance criteria can be developed for each component of the project. -->
+## 2. Project Deliverables
 
-> [ Add details... ]
+**Core Product Deliverables:**
+[ Add details... ]
 
----
-
-### Project exclusions
-<!-- Project exclusions clearly define what is out of scope for the product and project. -->
-
-> [ Add details... ]
+**Project Management and Governance Deliverables:**
+[ Add details... ]
 
 ---
 
-### Project constraints
-<!-- List and describe the specific project constraints associated with the project scope that limit the team's options (e.g., predefined budget, imposed dates, schedule milestones). -->
+## 3. Product Acceptance Criteria
 
-> [ Add details... ]
+**Measurable Acceptance Criteria:**
+[ Add details... ]
+
+**Acceptance Authority and Process:**
+[ Add details... ]
 
 ---
 
-### Project assumptions
-<!-- List and describe the assumptions associated with the project scope and the potential impact of those assumptions if they prove to be false. -->
+## 4. Project Exclusions
 
-> [ Add details... ]
+**Explicit Out-of-Scope Items:**
+[ Add details... ]
+
+**Boundaries and Excluded Support:**
+[ Add details... ]
+
+---
+
+## 5. Project Constraints and Assumptions
+
+**Identified Project Constraints:**
+[ Add details... ]
+
+**Identified Project Assumptions:**
+[ Add details... ]
 
 ---
 
@@ -65,8 +72,8 @@ Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Client Representative** | {{Client_Customer_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

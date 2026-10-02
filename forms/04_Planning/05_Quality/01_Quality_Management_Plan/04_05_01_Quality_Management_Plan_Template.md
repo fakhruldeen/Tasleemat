@@ -1,13 +1,10 @@
-<!-- LLM INSTRUCTIONS: Fill in the Quality Management Plan based on the project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Quality Standards:** Standards driven by industry or product (e.g. ISO, IEEE). (Standard / Regulation, Description / Application).
-*   **Quality Objectives:** Measures that must be achieved. (Deliverable / Process, Quality Metric / Objective, Target Value).
-*   **Quality Roles and Responsibilities:** Roles necessary to conduct quality activities. (Role, Name / Team, Quality Responsibilities).
-*   **Deliverables and Processes Subject to Review:** Key deliverables with metrics, and processes requiring verification/validation. (Deliverable / Process, Review Type, Reviewer).
-*   **Quality Management Approach:** Approach to manage the quality process, including timing and content of audits.
-*   **Quality Control Approach:** Approach to measure product/project performance against objectives.
-*   **Applicable Quality Procedures:** Nonconformance, corrective actions, audits, continuous improvement. (Procedure Type, Description / Implementation).
+- Quality Standards and Policies: Provide comprehensive project data for all required fields in this section.
+- Quality Objectives and KPIs: Provide comprehensive project data for all required fields in this section.
+- Quality Assurance and Quality Control Procedures: Provide comprehensive project data for all required fields in this section.
+- Quality Roles and Review Gates: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -15,47 +12,50 @@ Section Instructions:
 <h1 align="center">QUALITY MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Quality Standards
-| Standard / Regulation | Description / Application |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] |
+## 1. Quality Standards and Policies
 
-### Quality Objectives
-| Deliverable / Process | Quality Metric / Objective | Target Value |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Organizational Quality Policy and Framework:**
+[ Add details... ]
 
-### Quality Roles and Responsibilities
-| Role | Name / Team | Quality Responsibilities |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Applicable Industry Quality Standards:**
+[ Add details... ]
 
-### Deliverables and Processes Subject to Quality Review
-| Deliverable / Process | Review Type (Verification / Validation) | Reviewer |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+---
 
-### Quality Management Approach
-> [ Add details... ]
+## 2. Quality Objectives and KPIs
 
-### Quality Control Approach
-> [ Add details... ]
+**Project Quality Goals and Thresholds:**
+[ Add details... ]
 
-### Applicable Quality Procedures
-| Procedure Type | Description / Implementation |
-| :--- | :--- |
-| **Nonconformance and rework** | [ Add details... ] |
-| **Corrective actions** | [ Add details... ] |
-| **Quality audits** | [ Add details... ] |
-| **Continuous improvement** | [ Add details... ] |
+**Continuous Improvement Objectives:**
+[ Add details... ]
+
+---
+
+## 3. Quality Assurance and Quality Control Procedures
+
+**Quality Assurance (QA) Process:**
+[ Add details... ]
+
+**Quality Control (QC) Testing Protocol:**
+[ Add details... ]
+
+**Non-Conformance and Defect Management:**
+[ Add details... ]
+
+---
+
+## 4. Quality Roles and Review Gates
+
+**Quality Roles and Responsibilities:**
+[ Add details... ]
+
+**Quality Review Gates and Sign-off Criteria:**
+[ Add details... ]
 
 ---
 
@@ -63,9 +63,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Quality Manager / QA Lead** | {{Quality_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

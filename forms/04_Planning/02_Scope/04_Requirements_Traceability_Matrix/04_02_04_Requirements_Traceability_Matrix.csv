@@ -1,4 +1,8 @@
-ID,Requirement,Source,Priority,Category,Business objective,Deliverable,Verification,Validation
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Traceability Parameters,Traceability Purpose and Baseline Reference,The governing objective and versioned requirements baseline linked across the matrix.,
+Traceability Parameters,Traceability Dimensions and Attributes,"Key parameters tracked including source origin, WBS work package, design component, and test case ID.",
+Requirements Traceability Mapping,Business Need to Requirement Linkage,Explicit linkage connecting overarching business goals to detailed functional requirements.,
+Requirements Traceability Mapping,Requirement to WBS Deliverable Mapping,Traceability mapping associating each requirement with its corresponding WBS work package.,
+Requirements Traceability Mapping,Requirement to Design and Test Case Mapping,Verification mapping linking requirements to technical architecture components and test verification cases.,
+Inter-Requirements Dependencies,Core Inter-Requirement Dependencies,"Identified functional linkages, prerequisite requirements, and cross-feature constraints.",
+Inter-Requirements Dependencies,Impact and Traceability Governance,Protocols for assessing downstream deliverable impact when a linked requirement is modified.,

@@ -1,20 +1,45 @@
 {
-    "_llm_instructions": "Populate the Quality Metrics table.",
-    "form_name": "QUALITY METRICS REGISTER",
+    "form_name": "QUALITY METRICS",
     "document_reference": "PMO-04.05.02",
+    "_llm_instructions": "Populate the fields of 'QUALITY METRICS' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.05.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Quality Metrics Log": {
-            "guidance": "Array of metrics.\n- **ID:** Unique identifier.\n- **Item:** The attribute to measure.\n- **Metric:** The quantifiable measurement.\n- **Measurement Method:** How it will be measured.",
-            "value": [
-                {
-                    "ID": "",
-                    "Item": "",
-                    "Metric": "",
-                    "Measurement Method": ""
-                }
-            ]
+        "f01_Metric_Name_and_Target_Standard": {
+            "section": "Deliverable Quality Metrics",
+            "label": "Metric Name and Target Standard",
+            "guidance": "The specific quality attribute, measurable KPI, and approved benchmark target value.",
+            "value": ""
+        },
+        "f02_Associated_Deliverable_and_Work_Package": {
+            "section": "Deliverable Quality Metrics",
+            "label": "Associated Deliverable and Work Package",
+            "guidance": "The corresponding project deliverable, subsystem, or WBS component measured.",
+            "value": ""
+        },
+        "f03_Process_Efficiency_Metric": {
+            "section": "Process and Performance Quality Metrics",
+            "label": "Process Efficiency Metric",
+            "guidance": "Process measurement evaluating cycle times, throughput, sprint burndown, or rework rates.",
+            "value": ""
+        },
+        "f04_Defect_Density_and_Severity_Thresholds": {
+            "section": "Process and Performance Quality Metrics",
+            "label": "Defect Density and Severity Thresholds",
+            "guidance": "Allowable defect counts categorized by severity level (Critical, Major, Minor).",
+            "value": ""
+        },
+        "f05_Measurement_Frequency_and_Tooling": {
+            "section": "Quality Measurement and Tolerance Limits",
+            "label": "Measurement Frequency and Tooling",
+            "guidance": "How often data is collected and the specific testing tools or inspection techniques used.",
+            "value": ""
+        },
+        "f06_Acceptable_Tolerance_Range_and_Escalation_Trigger": {
+            "section": "Quality Measurement and Tolerance Limits",
+            "label": "Acceptable Tolerance Range and Escalation Trigger",
+            "guidance": "Upper and lower control limits (+/- tolerance) and triggers requiring corrective escalation.",
+            "value": ""
         }
     }
 }

@@ -1,37 +1,75 @@
 ---
 lang: en
-Form: REQUIREMENTS DOCUMENTATION (Instructions)
+Form: Requirements Documentation (Instructions)
 ---
 
-# REQUIREMENTS DOCUMENTATION - LLM GENERATION GUIDE
+# Requirements Documentation - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `REQUIREMENTS DOCUMENTATION`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Requirements Documentation». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The requirements documentation assists the project manager in making tradeoff decisions among requirements and in managing stakeholder expectations. Requirements will be progressively elaborated as more information about the project becomes available. Requirements documentation is an output from the process 5.2 Collect Requirements in the PMBOK® Guide – Sixth Edition.
-> 
+> **Context and Definition:**
+> A foundational artifact describing how individual requirements meet the business need for the project.
+
 > **Alignment:**
-> The requirements documentation should be aligned and consistent with the following documents:
-• Requirements management plan
-• Benefits management plan
-• Quality management plan
-• Requirements traceability matrix
-• Release plan
+> Directly informs Requirements Traceability Matrix, Project Scope Statement, WBS, and Product Acceptance Criteria.
 
 ---
 
-### Requirements List
-**Instruction:** Generate a Markdown table containing exactly the columns specified below. Generate at least 5 representative requirements based on the project context, ensuring they cover various categories (Business, Stakeholder, Solution, Quality).
+## Business Requirements
 
-**Table Columns & Generation Rules:**
-*   **ID:** Create a unique identifier for the requirement (e.g., REQ-001, REQ-002).
-*   **Requirement:** Clearly articulate the specific condition, capability, or feature that must be met by the product or project to satisfy stakeholder needs.
-*   **Stakeholder:** Identify the name, role, or organization of the stakeholder who requested or owns this requirement.
-*   **Category:** Classify the requirement (e.g., Business, Stakeholder, Solution, Transition, Project, Quality).
-*   **Priority:** Assign a priority level (e.g., High, Medium, Low, or Must Have, Should Have, Nice to Have).
-*   **Acceptance criteria:** Define the specific, measurable criteria that must be met for the stakeholder to approve that the requirement has been fulfilled.
-*   **Test or verification method:** State the method to verify fulfillment (e.g., Inspection, Test, Demonstration, Analysis).
-*   **Phase or release:** Indicate which project phase, sprint, or product release will deliver this requirement.
-*   **Dependencies:** List the IDs of any other requirements that this requirement depends on, or state "None".
-*   **Assumptions & Constraints:** Document any assumptions made or technical/business constraints related to this requirement.
+### Business Objectives and Goals
+**Instruction:** High-level organizational motivations, strategic drivers, and target business problems to solve.
+
+**Generated Value:** [ Add details... ]
+
+### Business Process Impact
+**Instruction:** Current-state vs. target-state operational workflow enhancements and process impacts.
+
+**Generated Value:** [ Add details... ]
+
+### Business Value and Success Criteria
+**Instruction:** Measurable commercial, operational, or customer value expected upon delivery.
+
+**Generated Value:** [ Add details... ]
+
+## Stakeholder Requirements
+
+### User Persona and Needs Summary
+**Instruction:** Detailed operational requirements categorized by specific stakeholder groups and user personas.
+
+**Generated Value:** [ Add details... ]
+
+### Stakeholder Pain Points and Expectations
+**Instruction:** Critical operational pain points addressed and expected behavioral outcomes.
+
+**Generated Value:** [ Add details... ]
+
+## Solution and Technical Requirements
+
+### Functional Requirements Specification
+**Instruction:** Detailed capabilities, system interactions, features, and functional behavior.
+
+**Generated Value:** [ Add details... ]
+
+### Technical Architecture and System Constraints
+**Instruction:** System interfaces, infrastructure prerequisites, data architecture, and technological boundaries.
+
+**Generated Value:** [ Add details... ]
+
+## Transition and Non-Functional Requirements
+
+### Non-Functional Requirements (Quality of Service)
+**Instruction:** Performance thresholds, security standards, availability, scalability, and usability criteria.
+
+**Generated Value:** [ Add details... ]
+
+### Transition and Readiness Requirements
+**Instruction:** Data migration, end-user training, operational handover, and rollout support prerequisites.
+
+**Generated Value:** [ Add details... ]
+
+---

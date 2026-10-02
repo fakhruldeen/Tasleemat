@@ -1,35 +1,39 @@
 {
-    "_llm_instructions": "قم بتعبئة 'project_title' و 'date_prepared'، بالإضافة إلى خصائص 'value' لكل حقل في نموذج خطة وسجل التدريب هذا بناءً على سياق المشروع. السياق والتعريف: [ أضف السياق والتعريف هنا ] المحاذاة: [ أضف معلومات المحاذاة هنا ]",
     "form_name": "خطة وسجل التدريب",
     "document_reference": "PMO-04.11.02",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "قم بتعبئة حقول 'خطة وسجل التدريب' وكتابة قيمة كل حقل في موضع 'القيمة المولَّدة' اعتمادًا على سياق المشروع. السياق: المشروع الذي يحمل المرجع PMO-04.11.02.",
     "fields": {
-        "مدخلات خطة وسجل التدريب": {
-            "guidance": "يرجى تعبئة الجدول أدناه بالتفاصيل التالية:\n- **Target Audience:** Who needs training.\n- **Training Module:** What they are learning.\n- **Delivery Method:** In-person, webinar, self-paced.\n- **Date/Schedule:** When training occurs.\n- **Completion Status:** Number of users completed.",
-            "value": [
-                {
-                    "Target Audience": "",
-                    "Training Module": "",
-                    "Delivery Method": "",
-                    "Date/Schedule": "",
-                    "Completion Status": ""
-                },
-                {
-                    "Target Audience": "",
-                    "Training Module": "",
-                    "Delivery Method": "",
-                    "Date/Schedule": "",
-                    "Completion Status": ""
-                },
-                {
-                    "Target Audience": "",
-                    "Training Module": "",
-                    "Delivery Method": "",
-                    "Date/Schedule": "",
-                    "Completion Status": ""
-                }
-            ]
+        "f01_الفئة_المستهدفة": {
+            "section": "أنشطة التدريب",
+            "label": "الفئة المستهدفة",
+            "guidance": "المجموعة أو الإدارة أو الدور الوظيفي الذي يحتاج إلى التدريب لاستخدام الأنظمة الجديدة وتنفيذ إجراءات العمل الجديدة.",
+            "value": ""
+        },
+        "f02_الوحدة_التدريبية": {
+            "section": "أنشطة التدريب",
+            "label": "الوحدة التدريبية",
+            "guidance": "عنوان الدورة أو المحتوى التعليمي والأهداف المحددة لبناء المهارات الفنية والتشغيلية المطلوبة.",
+            "value": ""
+        },
+        "f03_طريقة_التقديم": {
+            "section": "أنشطة التدريب",
+            "label": "طريقة التقديم",
+            "guidance": "أسلوب تقديم التدريب المعتمد، مثل الدورات التفاعلية، أو التدريب عن بعد، أو التعلم الذاتي، أو التدريب أثناء العمل.",
+            "value": ""
+        },
+        "f04_التاريخ_المستهدف": {
+            "section": "أنشطة التدريب",
+            "label": "التاريخ المستهدف",
+            "guidance": "الموعد المحدد لعقد الدورة التدريبية أو الموعد النهائي لإتمامها بما يتوافق مع مراحل إطلاق المشروع.",
+            "value": ""
+        },
+        "f05_حالة_الإتمام": {
+            "section": "أنشطة التدريب",
+            "label": "حالة الإتمام",
+            "guidance": "مستوى التقدم الحالي لحضور التدريب وإتمامه (مثل: مجدول، قيد التنفيذ، مكتمل) لمتابعة جاهزية المشاركين.",
+            "value": ""
         }
-    }
+    },
+    "project_title": "",
+    "date_prepared": ""
 }

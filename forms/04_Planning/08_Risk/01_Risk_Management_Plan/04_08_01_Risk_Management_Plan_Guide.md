@@ -12,77 +12,56 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.08.01`
 
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Risk Management Plan** in alignment with the
+Tasleemat framework.
+
 ---
 
-### Context & Definition
-The risk management plan is a component of the project management plan. It describes how risk management activities will be structured and performed for both threats and opportunities. Typical information includes:
-*   Risk strategy
-*   Methodology
-*   Roles and responsibilities for risk management
-*   Funding to identify, analyze, and respond to risk
-*   Frequency and timing for risk management activities
-*   Risk categories
-*   Stakeholder risk tolerances
-*   Definitions of probability
-*   Definitions of impact by objective
-*   Probability and impact matrix template
-*   Methods to track and audit risk management activities
-*   Risk report formats
+### 1. What?
+A governance document defining scoring scales, assessment methodologies, threshold limits, and review cadences.
 
-The risk management plan can receive information from:
-*   Project charter
-*   Project management plan (any component)
-*   Stakeholder register
+---
 
-It provides information to:
-*   Cost management plan
-*   Quality management plan
-*   Risk register
-*   Stakeholder engagement plan
+### 2. Why?
+Ensures proactive risk identification, standardizes risk evaluation, and protects project baselines from unexpected disruptions.
 
-The risk management plan is an input to all the other risk management processes. It describes the approach to all other risk management processes and provides key information needed to conduct those processes successfully.
-The risk management plan is an output from process 11.1 Plan Risk Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change.
+---
+
+### 3. When?
+Developed early in project planning and enforced continuously during execution and monitoring.
+
+---
+
+### 4. Who?
+Authored by Project Risk Manager and Project Manager, approved by Project Sponsor and Steering Committee.
+
+---
 
 ### Tailoring Tips
-Consider the following tips to help tailor the risk management plan to meet your needs:
-*   For a small, simple, or short-term project you can use a simplified risk register with a 3 × 3 probability and impact matrix. You would also include risk information in the project status report rather than a separate risk report.
-*   For larger, longer, and more complex projects you will want to develop a robust risk management process, including a more granular probability and impact matrix, quantitative assessments for the schedule and budget baselines, risk audits, and risk reports.
-*   Projects that are using an agile approach will address risk at the start of each iteration and during the retrospective.
+*   Incorporate agile risk-adjusted backlogs and spike tasks for iterative projects.
+*   Perform comprehensive Monte Carlo quantitative simulations for megaprojects and major capital investments.
+
+---
 
 ### Alignment
-The risk management plan should be aligned and consistent with the following documents:
-*   Scope management plan
-*   Schedule management plan
-*   Cost management plan
-*   Quality management plan
-*   Resource management plan
-*   Procurement management plan
-*   Stakeholder engagement plan
+Integrates with Risk Register, Risk Breakdown Structure (RBS), Probability & Impact Matrix, and Cost Baseline contingency.
 
 ---
 
-### Document Elements Description (Table 2.28)
+### 5. How?
+To accurately and professionally complete the **Risk Management Plan**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-| Document Element | Description |
-| :--- | :--- |
-| **Strategy** | The general approach to managing risk on the project. |
-| **Methodology** | Describe the methodology or approach to the risk management. This includes any tools, approaches, or data sources that will be used. |
-| **Roles and responsibilities** | Document the roles and responsibilities for various risk management activities. |
-| **Risk categories** | Identify categorization groups used to sort and organize risks. |
-| **Risk management funding** | Document the funding needed to perform the various risk management activities. |
-| **Contingency protocols** | Establish protocols for establishing, measuring, and allocating contingency and management reserves. |
-| **Frequency and timing** | Determine the frequency of conducting formal risk management activities and the timing of any specific activities. |
-| **Stakeholder risk tolerances** | Identify the risk thresholds of the organization(s) and key stakeholders. |
-| **Risk tracking and audit** | Document how risk activities will be recorded and how risk management processes will be audited. |
-| **Definitions of probability** | Document how probability will be measured and defined. Include the scale used and the definition for each level. |
-| **Definitions of impact by objective** | Document how impact will be measured and defined for either the project as a whole or for each objective. |
-| **Probability and impact matrix** | Describe the combinations of probability and impact that indicate a high risk, a medium risk, and a low risk. |
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_08_01_Risk_Management_Plan_Template.md)
-* [🤖 LLM Generation Prompt](04_08_01_Risk_Management_Plan.md)
-* [📊 Data Schema (JSON)](04_08_01_Risk_Management_Plan.json)
+*   **Risk Management Strategy:** The general approach, continuous identification cycle, and assessment tools applied.
+*   **Risk Management Tools and Repositories:** Software tools, risk databases, and central logging systems used to record risks.
+*   **Risk Roles and Responsibilities:** Designated roles including Risk Owner, Risk Manager, and Action Item Owners.
+*   **Risk Budgeting and Contingency Funding:** Policies for establishing contingency reserves and managing risk response budgets.
+*   **Probability Scoring Scale:** Standard scale (1-5 or Very Low to Very High) with objective percentage probabilities.
+*   **Impact Scoring Definitions:** Objective criteria measuring cost, schedule, quality, and scope impacts across scale levels.
+*   **Probability and Impact Matrix Grid:** The calibrated scoring matrix used to assign overall risk exposure scores.
+*   **Risk Thresholds and Escalation Triggers:** Defined exposure thresholds that dictate mandatory executive escalation.
+*   **Risk Breakdown Categories:** Taxonomy categories classifying technical, external, organizational, and managerial risks.
+*   **Risk Audits and Review Cadence:** Frequency of periodic risk re-assessments and formal audit reviews.
 
 </div>

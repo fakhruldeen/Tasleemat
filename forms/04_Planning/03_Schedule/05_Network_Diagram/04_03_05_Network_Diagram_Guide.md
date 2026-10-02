@@ -12,57 +12,53 @@ nav_order: 5
 
 **Document Reference:** `PMO-04.03.05`
 
-This document provides a comprehensive reference to understand the purpose and usage of the **Network Diagram**.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Network Diagram** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A visual display and tabular list
-
-**Note:** This document contains BOTH a visual Mermaid flowchart for high-level viewing and a detailed tabular list for analytical reading. of the logical relationships (dependencies) between project schedule activities.
+A network model and visualization displaying predecessors, successors, leads/lags, and critical paths.
 
 ---
 
 ### 2. Why?
-It visually depicts the flow of work, highlighting critical paths and showing exactly how activities are logically linked. It allows project managers to see which tasks can be done in parallel and which are strictly sequential.
+Calculates critical path, identifies project float, optimizes resource allocation, and reveals schedule vulnerabilities.
 
 ---
 
 ### 3. When?
-Prepared during the **PLANNING Process Group** (Process 6.3 Sequence Activities). 
+Developed during schedule sequencing and maintained throughout schedule controlling.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team.
-
----
-
-### 5. How?
-To accurately and professionally complete the **NETWORK DIAGRAM**, the responsible party must populate the dependencies table and generate the visual chart:
-*   **Predecessor:** The preceding schedule element.
-*   **Relationship & Lead/Lag:** Indicate one of four types: Finish-to-start (FS), Start-to-start (SS), Finish-to-finish (FF), Start-to-finish (SF). Add Lags (delays, e.g., FS+3d) or Leads (accelerations, e.g., FS-3d).
-*   **Successor:** The succeeding schedule element.
-*   **Visualization:** Render these relationships graphically. Tasleemat recommends using Markdown-native **Mermaid** syntax (`graph LR`) for seamless documentation rendering.
+Developed by Project Scheduler, reviewed by Technical Leads, approved by Project Manager.
 
 ---
 
 ### Tailoring Tips
-• For some projects you will enter the type of relationship directly into the schedule tool rather than draw it out.
-• The network diagram can be produced at the activity level, the deliverable level, or the milestone level.
-
-### Alignment
-The network diagram should be aligned and consistent with the following documents:
-• Project schedule
-• Project roadmap
-• Milestone list
+*   Focus on cross-team story dependency mapping and release trains for scaled agile.
+*   Maintain fully detailed CPM logic networks with forward/backward pass calculations for infrastructure programs.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_03_05_Network_Diagram_Template.md)
-* [🤖 LLM Generation Prompt](04_03_05_Network_Diagram.md)
-* [📊 Data Schema (JSON)](04_03_05_Network_Diagram.json)
-* [📈 Tabular Data (CSV)](04_03_05_Network_Diagram.csv)
+### Alignment
+Directly bridges Activity Attributes and Duration Estimates with the Project Schedule and Critical Path Model.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Network Diagram**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Network Diagramming Methodology:** The logical diagramming method utilized (Precedence Diagramming Method - PDM).
+*   **Critical Path Summary and Duration:** Identification of critical path activities, total critical path duration, and zero-float paths.
+*   **Near-Critical Paths and Float Analysis:** Analysis of near-critical paths and activities possessing total and free float.
+*   **Core Predecessor and Successor Chains:** Key sequence chains connecting major engineering and development work packages.
+*   **Lead and Lag Justifications:** Documented technical justifications for all applied lead times and lag buffers.
+*   **Mermaid Diagram Syntax:** Valid Mermaid graph syntax representing the complete node-and-arrow network dependency logic.
+*   **Diagram Interpretation Guidelines:** Narrative guide explaining how to read activity nodes, dependencies, and path flows.
 
 </div>

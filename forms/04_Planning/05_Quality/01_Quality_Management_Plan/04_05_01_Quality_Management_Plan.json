@@ -1,65 +1,63 @@
 {
-    "_llm_instructions": "Populate the Quality Management Plan structures.",
     "form_name": "QUALITY MANAGEMENT PLAN",
     "document_reference": "PMO-04.05.01",
+    "_llm_instructions": "Populate the fields of 'QUALITY MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.05.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Quality Standards": {
-            "guidance": "Array of Quality Standards.\n- **Standard / Regulation:** e.g. ISO 9001.\n- **Description / Application:** How it applies to the project.",
-            "value": [
-                {
-                    "Standard / Regulation": "",
-                    "Description / Application": ""
-                }
-            ]
-        },
-        "Quality Objectives": {
-            "guidance": "Array of Quality Objectives.\n- **Deliverable / Process:** The item being measured.\n- **Quality Metric / Objective:** The specific metric.\n- **Target Value:** The target specification or threshold.",
-            "value": [
-                {
-                    "Deliverable / Process": "",
-                    "Quality Metric / Objective": "",
-                    "Target Value": ""
-                }
-            ]
-        },
-        "Quality Roles and Responsibilities": {
-            "guidance": "Array of roles.\n- **Role:** The job title.\n- **Name / Team:** Who fills the role.\n- **Quality Responsibilities:** Specific quality-related tasks.",
-            "value": [
-                {
-                    "Role": "",
-                    "Name / Team": "",
-                    "Quality Responsibilities": ""
-                }
-            ]
-        },
-        "Deliverables and Processes Subject to Quality Review": {
-            "guidance": "Array of reviewable items.\n- **Deliverable / Process:** The item.\n- **Review Type:** Verification or Validation.\n- **Reviewer:** Who performs the review.",
-            "value": [
-                {
-                    "Deliverable / Process": "",
-                    "Review Type": "",
-                    "Reviewer": ""
-                }
-            ]
-        },
-        "Quality Management Approach": {
-            "guidance": "Text describing the approach to manage the quality process.",
+        "f01_Organizational_Quality_Policy_and_Framework": {
+            "section": "Quality Standards and Policies",
+            "label": "Organizational Quality Policy and Framework",
+            "guidance": "The overarching corporate quality principles and methodology (e.g., ISO, Lean Six Sigma, CMMI).",
             "value": ""
         },
-        "Quality Control Approach": {
-            "guidance": "Text describing the approach to measure performance.",
+        "f02_Applicable_Industry_Quality_Standards": {
+            "section": "Quality Standards and Policies",
+            "label": "Applicable Industry Quality Standards",
+            "guidance": "Specific external regulatory, engineering, or legal quality standards enforced.",
             "value": ""
         },
-        "Applicable Quality Procedures": {
-            "guidance": "Array of procedures (Nonconformance, Corrective actions, Audits, Continuous improvement).\n- **Procedure Type:** Name of the procedure.\n- **Description / Implementation:** How it is executed.",
-            "value": [
-                {
-                    "Procedure Type": "",
-                    "Description / Implementation": ""
-                }
-            ]
+        "f03_Project_Quality_Goals_and_Thresholds": {
+            "section": "Quality Objectives and KPIs",
+            "label": "Project Quality Goals and Thresholds",
+            "guidance": "Measurable quality targets regarding defect containment, test coverage, and customer satisfaction.",
+            "value": ""
+        },
+        "f04_Continuous_Improvement_Objectives": {
+            "section": "Quality Objectives and KPIs",
+            "label": "Continuous Improvement Objectives",
+            "guidance": "Process enhancement goals and lessons learned integration mechanisms.",
+            "value": ""
+        },
+        "f05_Quality_Assurance_QA_Process": {
+            "section": "Quality Assurance and Quality Control Procedures",
+            "label": "Quality Assurance (QA) Process",
+            "guidance": "Audits and process compliance activities ensuring project execution adheres to approved standards.",
+            "value": ""
+        },
+        "f06_Quality_Control_QC_Testing_Protocol": {
+            "section": "Quality Assurance and Quality Control Procedures",
+            "label": "Quality Control (QC) Testing Protocol",
+            "guidance": "Inspection, automated testing, and peer review workflows used to verify deliverable quality.",
+            "value": ""
+        },
+        "f07_Non_Conformance_and_Defect_Management": {
+            "section": "Quality Assurance and Quality Control Procedures",
+            "label": "Non-Conformance and Defect Management",
+            "guidance": "Standard procedure for logging, prioritizing, resolving, and verifying non-conformance issues.",
+            "value": ""
+        },
+        "f08_Quality_Roles_and_Responsibilities": {
+            "section": "Quality Roles and Review Gates",
+            "label": "Quality Roles and Responsibilities",
+            "guidance": "Designated quality assurance leads, test engineers, and peer review inspectors.",
+            "value": ""
+        },
+        "f09_Quality_Review_Gates_and_Sign_off_Criteria": {
+            "section": "Quality Roles and Review Gates",
+            "label": "Quality Review Gates and Sign-off Criteria",
+            "guidance": "Mandatory quality milestones and gate reviews required before client acceptance.",
+            "value": ""
         }
     }
 }

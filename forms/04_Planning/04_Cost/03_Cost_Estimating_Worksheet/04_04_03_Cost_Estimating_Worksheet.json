@@ -1,47 +1,69 @@
 {
-    "_llm_instructions": "Populate the three quantitative estimation tables.",
     "form_name": "COST ESTIMATING WORKSHEET",
     "document_reference": "PMO-04.04.03",
+    "_llm_instructions": "Populate the fields of 'COST ESTIMATING WORKSHEET' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.04.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Parametric Estimates": {
-            "guidance": "- **ID:** Unique identifier, such as the WBS ID or activity ID\n- **Cost Variable:** Enter the cost estimating driver.\n- **Cost Per Unit:** Record the cost per unit.\n- **Number of Units:** Enter the number of units.\n- **Cost Estimate:** Multiply number of units times cost per unit.",
-            "value": [
-                {
-                    "ID": "",
-                    "Cost Variable": "",
-                    "Cost Per Unit": "",
-                    "Number of Units": "",
-                    "Cost Estimate": ""
-                }
-            ]
+        "f01_Role_Title_and_Headcount": {
+            "section": "Labor and Staffing Cost Calculations",
+            "label": "Role Title and Headcount",
+            "guidance": "Specific resource role, staffing level, and number of full-time equivalents (FTE).",
+            "value": ""
         },
-        "Analogous Estimates": {
-            "guidance": "- **ID:** Unique identifier.\n- **Previous Activity:** Enter a description of the previous activity.\n- **Previous Cost:** Document the cost of the previous activity.\n- **Current Activity:** Describe how the current activity is different.\n- **Multiplier:** Divide current activity by previous activity.\n- **Cost Estimate:** Multiply previous cost by multiplier.",
-            "value": [
-                {
-                    "ID": "",
-                    "Previous Activity": "",
-                    "Previous Cost": "",
-                    "Current Activity": "",
-                    "Multiplier": "",
-                    "Cost Estimate": ""
-                }
-            ]
+        "f02_Hours_Allocation_and_Hourly_Rate": {
+            "section": "Labor and Staffing Cost Calculations",
+            "label": "Hours Allocation and Hourly Rate",
+            "guidance": "Total planned working hours and authorized standard or contracted hourly billing rate.",
+            "value": ""
         },
-        "Three-Point Estimates": {
-            "guidance": "- **ID:** Unique identifier.\n- **Optimistic Cost:** Estimate assuming all goes well.\n- **Most Likely Cost:** Estimate assuming normal fluctuations.\n- **Pessimistic Cost:** Estimate assuming significant risks materialize.\n- **Weighting Equation:** The equation used to weight the estimates (e.g. cE = (cO + 4cM + cP) / 6).\n- **Expected Cost:** cE = ( cO + 4cM + cP ) /6",
-            "value": [
-                {
-                    "ID": "",
-                    "Optimistic Cost": "",
-                    "Most Likely Cost": "",
-                    "Pessimistic Cost": "",
-                    "Weighting Equation": "",
-                    "Expected Cost": ""
-                }
-            ]
+        "f03_Total_Calculated_Labor_Cost": {
+            "section": "Labor and Staffing Cost Calculations",
+            "label": "Total Calculated Labor Cost",
+            "guidance": "Subtotal labor expenditure calculated from hours multiplied by hourly rate.",
+            "value": ""
+        },
+        "f04_Material_or_Equipment_Item_Description": {
+            "section": "Material and Equipment Cost Calculations",
+            "label": "Material or Equipment Item Description",
+            "guidance": "Detailed description of physical supplies, hardware, server infrastructure, or licenses.",
+            "value": ""
+        },
+        "f05_Unit_Quantity_and_Unit_Purchase_Price": {
+            "section": "Material and Equipment Cost Calculations",
+            "label": "Unit Quantity and Unit Purchase Price",
+            "guidance": "Required quantity and current quoted unit price per item.",
+            "value": ""
+        },
+        "f06_Total_Calculated_Materials_Cost": {
+            "section": "Material and Equipment Cost Calculations",
+            "label": "Total Calculated Materials Cost",
+            "guidance": "Subtotal materials expenditure calculated from quantity multiplied by unit price.",
+            "value": ""
+        },
+        "f07_Contracted_Service_or_Work_Package": {
+            "section": "Subcontractor and Vendor Cost Calculations",
+            "label": "Contracted Service or Work Package",
+            "guidance": "External vendor scope of work, milestone deliverables, or consulting package.",
+            "value": ""
+        },
+        "f08_Vendor_Pricing_Model_and_Contract_Sum": {
+            "section": "Subcontractor and Vendor Cost Calculations",
+            "label": "Vendor Pricing Model and Contract Sum",
+            "guidance": "Fixed price, time-and-materials rate, or contracted service sum.",
+            "value": ""
+        },
+        "f09_Grand_Total_Base_Estimate": {
+            "section": "Consolidated Cost Estimate Reconciliation",
+            "label": "Grand Total Base Estimate",
+            "guidance": "Sum of all labor, materials, equipment, and subcontractor cost line items.",
+            "value": ""
+        },
+        "f10_Worksheet_Verification_and_Audit_Sign_off": {
+            "section": "Consolidated Cost Estimate Reconciliation",
+            "label": "Worksheet Verification and Audit Sign-off",
+            "guidance": "Formal reconciliation verifying math accuracy and absence of duplicated cost items.",
+            "value": ""
         }
     }
 }

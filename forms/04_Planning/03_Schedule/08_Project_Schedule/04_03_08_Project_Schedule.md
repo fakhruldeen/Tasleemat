@@ -1,37 +1,73 @@
 ---
 lang: en
-Form: PROJECT SCHEDULE (Instructions)
+Form: Project Schedule (Instructions)
 ---
 
-# PROJECT SCHEDULE - LLM GENERATION GUIDE
+# Project Schedule - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROJECT SCHEDULE`. When asked to populate this form, generate an array of objects representing the schedule tabular data, and output a Mermaid Gantt chart for the markdown visualization.
+<!--
+System Instructions: This document contains instructions for generating the
+«Project Schedule». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The project schedule combines the information from the activity list, network diagram, resource requirements, and duration estimates to determine the start and finish dates for project activities. A common way of showing a schedule is via a Gantt chart. It is an output from the process 6.5 Develop Schedule in the PMBOK® Guide.
-> 
+> **Context and Definition:**
+> The primary schedule output that presents linked activities with planned dates, durations, milestones, and resource allocations.
+
 > **Alignment:**
-> The project schedule should be aligned and consistent with the following documents:
-• Project charter
-• Assumption log
-• Schedule management plan
-• Project roadmap
-• Scope baseline
-• Activity list
-• Network diagram
-• Duration estimates
-• Project team assignments
-• Project calendars
+> The core Schedule Baseline integrating Activity List, Network Diagram, Duration Estimates, and Earned Value Management.
 
 ---
 
-### Data: Project Schedule
-**Instruction:** Generate a comprehensive list of activities with their start and finish dates.
+## Baseline Schedule Summary
 
-**Columns Definition:**
-*   **WBS Identifier:** The unique WBS code linking the activity to the work package.
-*   **Activity Name:** A brief description of the work.
-*   **Start Date:** The planned start date (YYYY-MM-DD).
-*   **Finish Date:** The planned finish date (YYYY-MM-DD).
-*   **Resource Name:** The person or role assigned to the activity.
+### Project Start and Target Finish Dates
+**Instruction:** The authorized baseline start date and targeted project completion date.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Data Version and Baseline Status
+**Instruction:** The formal schedule model version number and baseline authorization state.
+
+**Generated Value:** [ Add details... ]
+
+### Total Critical Path Length and Major Phases
+**Instruction:** Total working days on the critical path and scheduled durations for each major project phase.
+
+**Generated Value:** [ Add details... ]
+
+## Detailed Schedule Data
+
+### WBS Code and Activity Schedule Mapping
+**Instruction:** Consolidated schedule line items linking WBS code, activity title, and work package.
+
+**Generated Value:** [ Add details... ]
+
+### Planned Start and Finish Dates
+**Instruction:** Approved baseline start date and baseline completion date for each scheduled activity.
+
+**Generated Value:** [ Add details... ]
+
+### Assigned Resources and Effort Allocation
+**Instruction:** Designated resource leads, team members, and allocated effort hours per activity.
+
+**Generated Value:** [ Add details... ]
+
+## Critical Path and Float Analysis
+
+### Critical Path Flag and Dependencies
+**Instruction:** Clear indicator (Yes/No) identifying critical path activities and predecessor linkages.
+
+**Generated Value:** [ Add details... ]
+
+### Total Float and Free Float Values
+**Instruction:** Calculated total float and free float values in working days for each schedule activity.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Risk and Recovery Considerations
+**Instruction:** Identification of high-risk scheduling bottlenecks and contingency deployment rules.
+
+**Generated Value:** [ Add details... ]
+
+---

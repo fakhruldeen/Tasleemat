@@ -1,7 +1,10 @@
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Work Package Entries:** Repeat the following block for EVERY Work Package defined in the WBS.
+- Work Package Identification: Provide comprehensive project data for all required fields in this section.
+- Scope of Work and Deliverables: Provide comprehensive project data for all required fields in this section.
+- Quality Criteria and Acceptance: Provide comprehensive project data for all required fields in this section.
+- Resource and Cost Allocations: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -9,54 +12,66 @@ Section Instructions:
 <h1 align="center">WBS DICTIONARY</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-<!-- REPEAT THIS SECTION FOR EACH WORK PACKAGE -->
-### Work Package: [ Add details... ]
+## 1. Work Package Identification
 
-* **Work Package Name:** [ Add details... ]
-* **Code of Accounts:** [ Add details... ]
-* **Due Dates:** [ Add details... ]
+**WBS Identifier and Title:**
+[ Add details... ]
 
-**Description of Work:**
-> [ Add details... ]
+**Control Account and Responsible Organization:**
+[ Add details... ]
 
-**Assumptions and Constraints:**
-> [ Add details... ]
-
-**Milestones:**
-1. [ Add details... ]
-2. [ Add details... ]
-
-**Activities & Costs:**
-| ID | Activity | Team resource | Labor hours | Labor rate | Labor total | Material units | Material cost | Material total | Total cost |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
-**Quality Requirements:**
-> [ Add details... ]
-
-**Acceptance Criteria:**
-> [ Add details... ]
-
-**Technical Information:**
-> [ Add details... ]
-
-**Agreement Information:**
-> [ Add details... ]
+**Work Package Owner:**
+[ Add details... ]
 
 ---
-<!-- END REPEAT SECTION -->
+
+## 2. Scope of Work and Deliverables
+
+**Work Package Scope Description:**
+[ Add details... ]
+
+**Deliverables Produced:**
+[ Add details... ]
+
+**Milestone Schedule and Target Dates:**
+[ Add details... ]
+
+---
+
+## 3. Quality Criteria and Acceptance
+
+**Quality Requirements and Standards:**
+[ Add details... ]
+
+**Acceptance Criteria and Sign-off Lead:**
+[ Add details... ]
+
+---
+
+## 4. Resource and Cost Allocations
+
+**Required Resources and Skills:**
+[ Add details... ]
+
+**Cost Estimate and Budget Allocation:**
+[ Add details... ]
+
+**Assumptions, Constraints, and Dependencies:**
+[ Add details... ]
+
+---
 
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

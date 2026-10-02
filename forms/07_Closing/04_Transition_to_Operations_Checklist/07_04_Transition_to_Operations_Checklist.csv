@@ -1,4 +1,6 @@
-Checklist Item,Responsible Party,Sign-off Signature,Date,Notes
-,,,,
-,,,,
-,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Operational Handover Items,Handover Item,"The operational deliverable, documentation, system asset, credentials, warranty, or support agreement formally transferred to the sustaining operations team.",
+Operational Handover Items,Responsible Party,"The operational team, service owner, or designated role accepting ongoing responsibility and stewardship for the item.",
+Operational Handover Items,Acceptance Criteria,The specific operational readiness criteria and verification evidence required before formal handover sign-off.,
+Operational Handover Items,Handover Date,The scheduled or actual date on which ownership and support accountability are formally transferred.,
+Operational Handover Items,Sign-off Status,"The formal verification status (e.g., Accepted, Conditional, Pending) confirming operational readiness.",

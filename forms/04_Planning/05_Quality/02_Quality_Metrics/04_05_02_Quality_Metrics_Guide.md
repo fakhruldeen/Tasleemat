@@ -12,46 +12,52 @@ nav_order: 2
 
 **Document Reference:** `PMO-04.05.02`
 
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Quality Metrics** in alignment with the
+Tasleemat framework.
+
 ---
 
-### Context & Definition
-Quality metrics provide specific detailed measurements about a project or product attribute, and how it should be measured to verify compliance. Metrics are consulted in the manage quality process to ensure that the processes used will meet the metric. The deliverables or processes are measured in the control quality phase and compared to the metric to determine if the result is acceptable or if corrective action or rework is required.
+### 1. What?
+A quantitative matrix defining measurable quality criteria, tolerance limits, test methodologies, and frequency.
 
-**Quality metrics can receive information from:**
-*   Project management plan
-*   Requirements documentation
-*   Stakeholder register
+---
 
-Quality metrics are an output from process **8.1 Plan Quality Management** in the PMBOK® Guide – Sixth Edition. They are generally determined as the requirements are developed. If requirements are stable, they will be developed once. If requirements are evolving or changing, they will evolve and change as well.
+### 2. Why?
+Translates subjective quality aspirations into objective, testable engineering and operational criteria.
+
+---
+
+### 3. When?
+Defined during quality planning and measured continuously throughout development and testing.
+
+---
+
+### 4. Who?
+Created by Quality Assurance Lead and Technical Leads, approved by Project Manager.
+
+---
 
 ### Tailoring Tips
-Consider the following tips to help tailor the quality metrics to meet your needs:
-*   On smaller projects quality metrics, requirements, and specifications are considered the same thing. Different industries may use the term “specifications” rather than “metrics.”
-*   In many industries there are specific standards that include metrics. These must be adhered to in your project. Your quality management plan may reference these by citing specific regulations, or they may be integrated into organizational policies and procedures.
+*   Include automated code coverage and response latency metrics for web services.
+*   Specify physical tensile strength, tolerance tolerances, and stress ratings for physical assets.
+
+---
 
 ### Alignment
-The quality metrics should be aligned and consistent with the following documents:
-*   Requirements documentation
-*   Quality management plan
+Informs Quality Checklists, QC Test Reports, Quality Audits, and Product Acceptance sign-offs.
 
 ---
 
-### Document Elements Description (Table 2.22)
-You can use the element descriptions below to assist you in documenting quality metrics.
+### 5. How?
+To accurately and professionally complete the **Quality Metrics**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-| Document Element | Description |
-| :--- | :--- |
-| **ID** | Unique identifier. This can be the WBS ID or activity ID number. |
-| **Item** | Describe the attribute to be measured. |
-| **Metric** | The specific, quantifiable measurement. |
-| **Measurement method** | The method of measuring, including any equipment or procedures. |
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_05_02_Quality_Metrics_Template.md)
-* [🤖 LLM Generation Prompt](04_05_02_Quality_Metrics.md)
-* [📊 Data Schema (JSON)](04_05_02_Quality_Metrics.json)
-* [📈 Tabular Data (CSV)](04_05_02_Quality_Metrics.csv)
+*   **Metric Name and Target Standard:** The specific quality attribute, measurable KPI, and approved benchmark target value.
+*   **Associated Deliverable and Work Package:** The corresponding project deliverable, subsystem, or WBS component measured.
+*   **Process Efficiency Metric:** Process measurement evaluating cycle times, throughput, sprint burndown, or rework rates.
+*   **Defect Density and Severity Thresholds:** Allowable defect counts categorized by severity level (Critical, Major, Minor).
+*   **Measurement Frequency and Tooling:** How often data is collected and the specific testing tools or inspection techniques used.
+*   **Acceptable Tolerance Range and Escalation Trigger:** Upper and lower control limits (+/- tolerance) and triggers requiring corrective escalation.
 
 </div>

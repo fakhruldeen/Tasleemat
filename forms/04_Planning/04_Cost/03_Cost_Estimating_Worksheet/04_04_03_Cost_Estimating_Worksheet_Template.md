@@ -1,28 +1,10 @@
-<!-- LLM INSTRUCTIONS: Fill in the tables below using the quantitative estimating methods appropriate for the project activities.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-**Parametric Estimates:** Use for activities driven by a quantifiable measure.
-*   **ID:** Unique identifier, such as the WBS ID or activity ID.
-*   **Cost Variable:** Enter the cost estimating driver, such as hours, square feet, gallons, or some other quantifiable measure.
-*   **Cost Per Unit:** Record the cost per unit.
-*   **Number of Units:** Enter the number of units.
-*   **Cost Estimate:** Multiply the number of units times the cost per unit to calculate the estimate.
-
-**Analogous Estimates:** Use for activities compared to previous similar work.
-*   **ID:** Unique identifier.
-*   **Previous Activity:** Enter a description of the previous activity.
-*   **Previous Cost:** Document the cost of the previous activity.
-*   **Current Activity:** Describe how the current activity is different.
-*   **Multiplier:** Divide the current activity by the previous activity to get a multiplier.
-*   **Cost Estimate:** Multiply the cost for the previous activity by the multiplier to calculate the Cost Estimate.
-
-**Three-Point Estimates:** Use to account for uncertainty using beta distribution.
-*   **ID:** Unique identifier.
-*   **Optimistic Cost:** Estimate assuming all costs were identified and there won't be any cost increases.
-*   **Most Likely Cost:** Estimate assuming some cost fluctuations but nothing out of the ordinary.
-*   **Pessimistic Cost:** Estimate assuming significant risks will materialize and cause cost overruns.
-*   **Weighting Equation:** Weight the three estimates. The most common method is the beta distribution: cE = (cO + 4cM + cP) / 6.
-*   **Expected Cost:** Enter the expected cost based on the beta distribution.
+- Labor and Staffing Cost Calculations: Provide comprehensive project data for all required fields in this section.
+- Material and Equipment Cost Calculations: Provide comprehensive project data for all required fields in this section.
+- Subcontractor and Vendor Cost Calculations: Provide comprehensive project data for all required fields in this section.
+- Consolidated Cost Estimate Reconciliation: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -30,24 +12,53 @@ Section Instructions:
 <h1 align="center">COST ESTIMATING WORKSHEET</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Parametric Estimates
-| ID | Cost Variable | Cost Per Unit | Number of Units | Cost Estimate |
-| :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 1. Labor and Staffing Cost Calculations
 
-### Analogous Estimates
-| ID | Previous Activity | Previous Cost | Current Activity | Multiplier | Cost Estimate |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Role Title and Headcount:**
+[ Add details... ]
 
-### Three-Point Estimates
-| ID | Optimistic Cost | Most Likely Cost | Pessimistic Cost | Weighting Equation | Expected Cost |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Hours Allocation and Hourly Rate:**
+[ Add details... ]
+
+**Total Calculated Labor Cost:**
+[ Add details... ]
+
+---
+
+## 2. Material and Equipment Cost Calculations
+
+**Material or Equipment Item Description:**
+[ Add details... ]
+
+**Unit Quantity and Unit Purchase Price:**
+[ Add details... ]
+
+**Total Calculated Materials Cost:**
+[ Add details... ]
+
+---
+
+## 3. Subcontractor and Vendor Cost Calculations
+
+**Contracted Service or Work Package:**
+[ Add details... ]
+
+**Vendor Pricing Model and Contract Sum:**
+[ Add details... ]
+
+---
+
+## 4. Consolidated Cost Estimate Reconciliation
+
+**Grand Total Base Estimate:**
+[ Add details... ]
+
+**Worksheet Verification and Audit Sign-off:**
+[ Add details... ]
 
 ---
 
@@ -55,9 +66,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

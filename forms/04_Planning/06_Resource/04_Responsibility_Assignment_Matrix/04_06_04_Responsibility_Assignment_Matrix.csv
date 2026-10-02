@@ -1,0 +1,9 @@
+Section,Field,Guidance,LLM_Generated_Value
+RACI Model Definitions and Key,Responsible (R) Definition,Definition: The role assigned to do the work and complete the activity deliverable.,
+RACI Model Definitions and Key,Accountable (A) Definition,"Definition: The single role with ultimate ownership, decision authority, and sign-off approval.",
+RACI Model Definitions and Key,Consulted (C) Definition,Definition: Subject matter experts providing vital two-way input and technical guidance.,
+RACI Model Definitions and Key,Informed (I) Definition,"Definition: Stakeholders kept updated on progress, milestones, and decisions via one-way communication.",
+Assignment Matrix (Work Packages vs Roles),WBS Deliverable and Assigned RACI Codes,"Tabular mapping assigning explicit R, A, C, and I roles for each major WBS work package.",
+Assignment Matrix (Work Packages vs Roles),Role Coverage and Work Distribution,Verification that every activity has exactly one Accountable role and at least one Responsible role.,
+Governance and Accountability Rules,Single Accountability Governance Rule,Mandatory policy prohibiting multiple Accountable (A) assignments per deliverable to prevent diffusion of responsibility.,
+Governance and Accountability Rules,Escalation and Conflict Resolution Protocol,"Process for resolving role overlaps, gaps, and decision deadlocks across project leads.",

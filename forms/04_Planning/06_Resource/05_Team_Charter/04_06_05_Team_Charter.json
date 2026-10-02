@@ -1,41 +1,63 @@
 {
-    "_llm_instructions": "Populate the Team Charter. Context: The team charter is used to establish ground rules and guidelines for the team. It is particularly useful on virtual teams and teams that are comprised of members from different organizations. Using a team charter can help establish expectations and agreements on working effectively together. Tailoring Tips: If you bring in contractors for key roles in the project you should include them in developing the team charter. If your organization has organizational values, make sure your team charter is aligned with the organizational values. International teams may need to spend more time developing this document as different cultures have different ways of making decisions and resolving conflicts. Alignment: The team charter should be aligned and consistent with the Resource management plan.",
     "form_name": "TEAM CHARTER",
     "document_reference": "PMO-04.06.05",
+    "_llm_instructions": "Populate the fields of 'TEAM CHARTER' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.06.05.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Team values and principles": {
-            "guidance": "List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.",
+        "f01_Core_Team_Values": {
+            "section": "Team Values and Shared Vision",
+            "label": "Core Team Values",
+            "guidance": "Guiding moral, professional, and behavioral values agreed upon by the team.",
             "value": ""
         },
-        "Meeting guidelines": {
-            "guidance": "Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc.",
+        "f02_Shared_Project_Mission_and_Vision": {
+            "section": "Team Values and Shared Vision",
+            "label": "Shared Project Mission and Vision",
+            "guidance": "Collective vision articulating the team's commitment to delivering quality project outcomes.",
             "value": ""
         },
-        "Communication guidelines": {
-            "guidance": "List guidelines used for effective communication. Examples include everyone voices their opinion, no dominating the conversation, no interrupting, not using inflammatory language, etc.",
+        "f03_Working_Norms_and_Ground_Rules": {
+            "section": "Operating Agreements and Guidelines",
+            "label": "Working Norms and Ground Rules",
+            "guidance": "Standard rules governing daily conduct, accountability, punctuality, and mutual respect.",
             "value": ""
         },
-        "Decision-making process": {
-            "guidance": "Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited.",
+        "f04_Core_Working_Hours_and_Availability": {
+            "section": "Operating Agreements and Guidelines",
+            "label": "Core Working Hours and Availability",
+            "guidance": "Agreed overlapping collaboration hours, remote working standards, and response timeframes.",
             "value": ""
         },
-        "Conflict resolution process": {
-            "guidance": "Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc.",
+        "f05_Meeting_Cadence_and_Rules": {
+            "section": "Communication and Meeting Protocols",
+            "label": "Meeting Cadence and Rules",
+            "guidance": "Protocols for daily standups, status meetings, retrospectives, agendas, and note taking.",
             "value": ""
         },
-        "Other agreements": {
-            "guidance": "List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members.",
+        "f06_Communication_Channels_Usage": {
+            "section": "Communication and Meeting Protocols",
+            "label": "Communication Channels Usage",
+            "guidance": "Guidelines defining appropriate use of instant messaging, email, ticketing, and documentation repositories.",
             "value": ""
         },
-        "Team Members Signatures": {
-            "guidance": "Provide a table listing the Name of each team member.",
-            "value": [
-                {
-                    "Name": ""
-                }
-            ]
+        "f07_Decision_Making_Framework": {
+            "section": "Decision-Making and Conflict Resolution",
+            "label": "Decision-Making Framework",
+            "guidance": "Agreed decision methodology (e.g., consensus, majority vote, or technical lead authority).",
+            "value": ""
+        },
+        "f08_Conflict_Escalation_and_Resolution_Steps": {
+            "section": "Decision-Making and Conflict Resolution",
+            "label": "Conflict Escalation and Resolution Steps",
+            "guidance": "Constructive step-by-step process for resolving interpersonal and technical disputes.",
+            "value": ""
+        },
+        "f09_Team_Signatures_and_Commitment": {
+            "section": "Decision-Making and Conflict Resolution",
+            "label": "Team Signatures and Commitment",
+            "guidance": "Formal acknowledgment and commitment signed by all active project team members.",
+            "value": ""
         }
     }
 }

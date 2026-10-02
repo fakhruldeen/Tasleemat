@@ -12,59 +12,56 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.06.01`
 
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Resource Management Plan** in alignment with the
+Tasleemat framework.
+
 ---
 
-### Context & Definition
-The resource management plan is part of the project management plan. It provides guidance on how team and physical resources should be allocated, managed, and released. Information in the resource management plan includes: estimating methods, acquisition and release information, roles and responsibilities, project org chart, training, rewards, team development, and methods for managing physical resources (inventory, supply chain, logistics).
+### 1. What?
+A comprehensive management plan defining organizational charts, staffing acquisition, team training, and physical equipment logistics.
 
-**The resource management plan can receive information from:**
-*   Project charter
-*   Quality management plan
-*   Scope baseline
-*   Project schedule
-*   Requirements documentation
-*   Risk register
-*   Stakeholder register
+---
+
+### 2. Why?
+Ensures sufficient resource capability and capacity to execute project scope within budget and schedule baselines.
+
+---
+
+### 3. When?
+Developed during planning and referenced continuously throughout staffing, execution, and release.
+
+---
+
+### 4. Who?
+Authored by Project Manager in collaboration with HR and Resource Managers, approved by Sponsor.
+
+---
 
 ### Tailoring Tips
-Consider the following tips to help tailor the resource management plan to meet your needs:
-*   If you need to bring in outside contractors for the project you will need to include information on how to on-board them to the project. You will also need to consider how to ensure they have all the information they need, but no access to proprietary data. This may include a "non-disclosure agreement" or similar forms.
-*   For any team or physical resources that are acquired from outside the organization you will need to work with procurement policies for the organization and the project.
-*   Projects with large amounts of inventory, supplies, or material should either reference organizational policies regarding managing physical resources, or provide sufficient detail to ensure appropriate control.
+*   Emphasize cross-functional self-organizing team dynamics for agile product development.
+*   Maintain detailed heavy equipment mobilization/demobilization plans for construction programs.
+
+---
 
 ### Alignment
-The resource management plan should be aligned and consistent with the following documents:
-*   Work breakdown structure
-*   Requirements documentation
-*   Quality management plan
-*   Procurement management plan
+Integrates with Resource Requirements, RBS, RAM/RACI matrix, Team Charter, and Project Schedule.
 
 ---
 
-### Document Elements Description (Table 2.24)
+### 5. How?
+To accurately and professionally complete the **Resource Management Plan**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-| Document Element | Description |
-| :--- | :--- |
-| **Team member identification and estimates** | Identify the skill sets needed, including Role, Number, and Skill Level. |
-| **Team member acquisition** | Document how staff will be brought on to the project. |
-| **Team member management and release** | Document how team members will be managed and eventually released (staff release). |
-| **Project organizational chart** | Create a hierarchy chart to show the project reporting structure. |
-| **Roles, Responsibilities, and Authority** | Identify the Role, Responsibility, and Authority. |
-| **Training requirements** | Describe any required training on equipment, technology, or company processes. |
-| **Rewards and recognition** | Describe any reward and recognition processes and limitations. |
-| **Team development** | Describe methods for developing individual team members and the team as a whole. |
-| **Physical resource identification and estimates** | Identify the materials needed, including Resource, Amount, and Grade. |
-| **Physical resource acquisition** | Document how equipment, materials, and supplies will be acquired. |
-| **Physical resource management** | Document how materials, equipment, and supplies will be managed. |
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_06_01_Resource_Management_Plan_Template.md)
-* [🤖 LLM Generation Prompt](04_06_01_Resource_Management_Plan.md)
-* [📊 Data Schema (JSON)](04_06_01_Resource_Management_Plan.json)
-* [📈 Tabular Data (CSV) - Team](04_06_01_Resource_Management_Plan_Team.csv)
-* [📈 Tabular Data (CSV) - Roles](04_06_01_Resource_Management_Plan_Roles.csv)
-* [📈 Tabular Data (CSV) - Physical](04_06_01_Resource_Management_Plan_Physical.csv)
+*   **Resource Identification Strategy:** Methods used to identify human, equipment, and material resources needed for project execution.
+*   **Resource Acquisition and Staffing Approach:** Protocols for internal resource assignment, external hiring, and contracting.
+*   **Key Project Roles and Competency Profiles:** Definition of core project roles, required qualifications, and skill competencies.
+*   **Authority and Decision-Making Boundaries:** Authorized decision limits for technical leads, project managers, and supervisors.
+*   **Project Organizational Chart and Hierarchy:** Visual or structured hierarchy outlining reporting lines and team organizational units.
+*   **Resource Management Governance:** Policies governing resource allocation, conflicts of priority, and workload balancing.
+*   **Team Building and Development Initiatives:** Structured activities and coaching designed to enhance team cohesion and performance.
+*   **Required Training and Certification Programs:** Mandatory technical, safety, or process training required for team members.
+*   **Equipment and Material Logistics:** Procurement, storage, utilization tracking, and maintenance of physical tools and equipment.
+*   **Resource Release and Demobilization Plan:** Orderly phased release plan for team members and return or disposal of physical equipment.
 
 </div>

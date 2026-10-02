@@ -1,14 +1,12 @@
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Project life cycle:** Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 4 columns: #, Phase, Key activities, Key Deliverables.
-*   **Phase Reviews and Criteria:** Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 5 columns: #, Phase, Reviews, Entry criteria, Exit criteria.
-*   **Development approaches:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 3 columns: #, Deliverable, Development approach.
-*   **Subsidiary management plans:** List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Change Management, Scope Management, Schedule Management, Requirements Management, Cost Management, Quality Management, Resource Management, Communications Management, Risk Management, Procurement Management, Stakeholder Engagement, Other Plans.
-*   **Scope Variance Thresholds:** Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.
-*   **Schedule Variance Thresholds:** Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.
-*   **Cost Variance Thresholds:** Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.
-*   **Baselines:** Attach all project baselines.
+- Project Life Cycle: Provide comprehensive project data for all required fields in this section.
+- Phase Reviews and Criteria: Provide comprehensive project data for all required fields in this section.
+- Development Approaches: Provide comprehensive project data for all required fields in this section.
+- Subsidiary Management Plans: Provide comprehensive project data for all required fields in this section.
+- Variance Thresholds: Provide comprehensive project data for all required fields in this section.
+- Project Baselines: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -16,94 +14,97 @@ Section Instructions:
 <h1 align="center">PROJECT MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
-
----
-
-### Project life cycle
-<!-- Describe the life cycle that will be used to accomplish the project. Populate the table below. -->
-
-| # | Phase | Key activities | Key Deliverables |
-| :--- | :--- | :--- | :--- |
-| 1 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| 2 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| 3 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
----
-
-### Phase Reviews and Criteria
-<!-- Define the reviews and criteria for each phase. Populate the table below. -->
-
-| # | Phase | Reviews | Entry criteria | Exit criteria |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| 2 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| 3 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
----
-
-### Development approaches
-<!-- Document the specific approach you will take to create key deliverables. Common approaches include predictive approaches, where the scope is known and stable; and adaptive approaches, where the scope is evolving and subject to change. It may also include iterative or incremental development approaches. Populate the table below. -->
-
-| # | Deliverable | Development approach |
 | :--- | :--- | :--- |
-| 1 | [ Add details... ] | [ Add details... ] |
-| 2 | [ Add details... ] | [ Add details... ] |
-| 3 | [ Add details... ] | [ Add details... ] |
 
 ---
 
-### Subsidiary management plans
-<!-- List the subsidiary management plans that are part of the project management plan. Populate the Comment column for each of the pre-defined plans below. -->
+## 1. Project Life Cycle
 
-| Name | Comment |
-| :--- | :--- |
-| Change Management | [ Add details... ] |
-| Scope Management | [ Add details... ] |
-| Schedule Management | [ Add details... ] |
-| Requirements Management | [ Add details... ] |
-| Cost Management | [ Add details... ] |
-| Quality Management | [ Add details... ] |
-| Resource Management | [ Add details... ] |
-| Communications Management | [ Add details... ] |
-| Risk Management | [ Add details... ] |
-| Procurement Management | [ Add details... ] |
-| Stakeholder Engagement | [ Add details... ] |
-| Other Plans | [ Add details... ] |
+**Project Life Cycle Description:**
+[ Add details... ]
 
+**Phase Names and Progression:**
+[ Add details... ]
+
+**Key Phase Activities:**
+[ Add details... ]
+
+**Key Phase Deliverables:**
+[ Add details... ]
 
 ---
 
-### Scope Variance Thresholds
-<!-- Define acceptable scope variances and how the scope baseline will be managed. Populate the table below. -->
+## 2. Phase Reviews and Criteria
 
-| Scope variance threshold | Scope baseline management |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
+**Phase Review Mechanism:**
+[ Add details... ]
 
-### Schedule Variance Thresholds
-<!-- Define acceptable schedule variances and how the schedule baseline will be managed. Populate the table below. -->
+**Phase Entry Criteria:**
+[ Add details... ]
 
-| Schedule variance threshold | Schedule baseline management |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
+**Phase Exit Criteria:**
+[ Add details... ]
 
-### Cost Variance Thresholds
-<!-- Define acceptable cost variances and how the cost baseline will be managed. Populate the table below. -->
+---
 
-| Cost variance threshold | Cost baseline management |
-| :--- | :--- |
-| [ Add details... ] | [ Add details... ] |
+## 3. Development Approaches
 
-### Baselines
-<!-- Attach all project baselines. Common baselines include Scope, Schedule, Cost, and Performance measurement. Populate the table below. -->
+**Selected Development Approach:**
+[ Add details... ]
 
-| Baseline | Status / Link | Comment |
-| :--- | :--- | :--- |
-| Scope baseline | [ Add details... ] | [ Add details... ] |
-| Schedule baseline | [ Add details... ] | [ Add details... ] |
-| Cost baseline | [ Add details... ] | [ Add details... ] |
-| Performance measurement baseline | [ Add details... ] | [ Add details... ] |
+**Deliverable-Specific Approaches:**
+[ Add details... ]
+
+---
+
+## 4. Subsidiary Management Plans
+
+**Scope and Requirements Management Summary:**
+[ Add details... ]
+
+**Schedule and Cost Management Summary:**
+[ Add details... ]
+
+**Quality and Resource Management Summary:**
+[ Add details... ]
+
+**Communications and Stakeholder Summary:**
+[ Add details... ]
+
+**Risk and Procurement Summary:**
+[ Add details... ]
+
+**Change and Configuration Summary:**
+[ Add details... ]
+
+---
+
+## 5. Variance Thresholds
+
+**Scope Variance Threshold:**
+[ Add details... ]
+
+**Schedule Variance Threshold:**
+[ Add details... ]
+
+**Cost Variance Threshold:**
+[ Add details... ]
+
+---
+
+## 6. Project Baselines
+
+**Scope Baseline Definition:**
+[ Add details... ]
+
+**Schedule Baseline Definition:**
+[ Add details... ]
+
+**Cost Baseline Definition:**
+[ Add details... ]
+
+**Performance Measurement Baseline (PMB):**
+[ Add details... ]
 
 ---
 
@@ -113,7 +114,7 @@ Section Instructions:
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

@@ -22,7 +22,7 @@ Section Instructions:
 
 ---
 
-### Assumption Log Entries
+## Assumption Log Entries
 <!-- 
 Please provide a comprehensive log of all assumptions and constraints for the project. For each entry, ensure you populate the following columns in the table below:
 - **ID:** Unique identifier for the assumption or constraint.

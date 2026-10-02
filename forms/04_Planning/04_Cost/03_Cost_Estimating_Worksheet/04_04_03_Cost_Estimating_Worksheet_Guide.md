@@ -12,42 +12,56 @@ nav_order: 3
 
 **Document Reference:** `PMO-04.04.03`
 
-This document provides a comprehensive reference to understand the purpose and usage of the **Cost Estimating Worksheet**.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Cost Estimating Worksheet** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A structured worksheet used to calculate cost estimates mathematically using quantitative methods (Parametric, Analogous, Three-Point) 
-
-### 2. Why?
-To provide an auditable, transparent, and mathematically sound basis for project cost estimates. It prevents arbitrary guessing and ensures all components of cost are accounted for.
-
-### 3. When?
-Developed during the **PLANNING Process Group** (Process 7.2 Estimate Costs) and continually refined as the project progresses and more details emerge.
+A computational artifact detailing line-by-line financial calculations across labor, hardware, software, and outside services.
 
 ---
 
-### 4. Estimation Methods
-1. **Parametric Estimating:** Derives costs by multiplying a cost per unit by the number of units (e.g., $100/sq ft x 1,000 sq ft).
-2. **Analogous Estimating:** Derives costs by comparing the current activity to a historical, similar activity and applying a scale multiplier.
-3. **Three-Point Estimating:** Accounts for risk by using Optimistic, Pessimistic, and Most Likely estimates in a Beta Distribution: `(O + 4M + P) / 6`.
+### 2. Why?
+Provides mathematical transparency and defensible audit trails for all budgeted funds.
+
+---
+
+### 3. When?
+Utilized during cost planning to aggregate bottom-up work package expenses.
+
+---
+
+### 4. Who?
+Authored by Cost Estimator and Technical Leads, audited by Project Manager.
+
+---
+
+### Tailoring Tips
+*   Simplify for agile teams into sprint velocity capacity burn calculations.
+*   Provide full Bill of Quantities (BOQ) line items for heavy civil and infrastructure works.
 
 ---
 
 ### Alignment
-The cost estimating worksheet should be aligned and consistent with the following documents:
-• Cost management plan
-• Scope baseline
-• Project schedule
-• Quality management plan
-• Resource requirements
-• Risk register
-• Lessons learned register
+Feeds directly into Cost Estimates summary table and Cost Baseline.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_04_03_Cost_Estimating_Worksheet_Template.md)
-* [🤖 LLM Generation Prompt](04_04_03_Cost_Estimating_Worksheet.md)
+### 5. How?
+To accurately and professionally complete the **Cost Estimating Worksheet**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Role Title and Headcount:** Specific resource role, staffing level, and number of full-time equivalents (FTE).
+*   **Hours Allocation and Hourly Rate:** Total planned working hours and authorized standard or contracted hourly billing rate.
+*   **Total Calculated Labor Cost:** Subtotal labor expenditure calculated from hours multiplied by hourly rate.
+*   **Material or Equipment Item Description:** Detailed description of physical supplies, hardware, server infrastructure, or licenses.
+*   **Unit Quantity and Unit Purchase Price:** Required quantity and current quoted unit price per item.
+*   **Total Calculated Materials Cost:** Subtotal materials expenditure calculated from quantity multiplied by unit price.
+*   **Contracted Service or Work Package:** External vendor scope of work, milestone deliverables, or consulting package.
+*   **Vendor Pricing Model and Contract Sum:** Fixed price, time-and-materials rate, or contracted service sum.
+*   **Grand Total Base Estimate:** Sum of all labor, materials, equipment, and subcontractor cost line items.
+*   **Worksheet Verification and Audit Sign-off:** Formal reconciliation verifying math accuracy and absence of duplicated cost items.
 
 </div>

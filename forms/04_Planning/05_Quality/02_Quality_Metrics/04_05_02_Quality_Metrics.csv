@@ -1,4 +1,7 @@
-ID,Item,Metric,Measurement Method
-,,,
-,,,
-,,,
+Section,Field,Guidance,LLM_Generated_Value
+Deliverable Quality Metrics,Metric Name and Target Standard,"The specific quality attribute, measurable KPI, and approved benchmark target value.",
+Deliverable Quality Metrics,Associated Deliverable and Work Package,"The corresponding project deliverable, subsystem, or WBS component measured.",
+Process and Performance Quality Metrics,Process Efficiency Metric,"Process measurement evaluating cycle times, throughput, sprint burndown, or rework rates.",
+Process and Performance Quality Metrics,Defect Density and Severity Thresholds,"Allowable defect counts categorized by severity level (Critical, Major, Minor).",
+Quality Measurement and Tolerance Limits,Measurement Frequency and Tooling,How often data is collected and the specific testing tools or inspection techniques used.,
+Quality Measurement and Tolerance Limits,Acceptable Tolerance Range and Escalation Trigger,Upper and lower control limits (+/- tolerance) and triggers requiring corrective escalation.,

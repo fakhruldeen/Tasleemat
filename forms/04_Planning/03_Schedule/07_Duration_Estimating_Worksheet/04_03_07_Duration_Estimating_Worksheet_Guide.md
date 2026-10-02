@@ -10,62 +10,59 @@ nav_order: 7
 ## Tasleemat Forms Guide
 # Project Artifact: Duration Estimating Worksheet
 
-**CRITICAL RULE:** While a project may use multiple methods overall, **each individual activity should only be estimated using ONE method**. Do not duplicate the same activity across the three tables. Choose the single best method for each task.
-
 **Document Reference:** `PMO-04.03.07`
 
-This document provides a comprehensive reference to understand the purpose and usage of the **Duration Estimating Worksheet**.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Duration Estimating Worksheet** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A mathematical worksheet used to calculate the duration of project activities using quantitative methods (Parametric, Analogous, and Three-point).
+A structured computational artifact documenting formulas, inputs, assumptions, and statistical variance for schedule durations.
 
 ---
 
 ### 2. Why?
-Instead of simply guessing how long a task will take, this worksheet forces the project manager to show their math. This creates highly defensible, realistic duration estimates that are grounded in resource constraints, historical data, and risk distributions.
+Ensures estimating rigor, documents mathematical basis of estimates, and quantifies duration uncertainty.
 
 ---
 
 ### 3. When?
-Prepared during the **PLANNING Process Group** (Process 6.4 Estimate Activity Durations). It serves as the mathematical precursor to the finalized "Duration Estimates" document.
+Utilized during schedule planning when calculating detailed duration models.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager and Team Subject Matter Experts (SMEs) using expert judgment and historical databases.
-
----
-
-### 5. How?
-The worksheet is split into three estimating methods. You only need to use the method that fits the activity:
-*   **Parametric:** Used when you have quantifiable effort and resource data. The math is: `Duration = Effort / (Resource Qty × Percent Available × Performance Factor)`.
-*   **Analogous:** Used for high-level estimates based on historical projects. The math is: `Duration = Previous Duration × Size/Complexity Multiplier`.
-*   **Three-Point (Beta):** Used when there is high uncertainty or risk. The math weighs the most likely scenario heavily: `Expected Duration (tE) = (Optimistic + 4(Most Likely) + Pessimistic) / 6`.
+Authored by Project Scheduler and Technical Leads, audited by Project Manager.
 
 ---
 
 ### Tailoring Tips
-• You do not need to use all three estimating methods for every activity. Choose the method that best fits the availability of historical data and resource clarity.
-
-### Alignment
-The duration estimating worksheet should be aligned and consistent with the following documents:
-• Assumption log
-• Scope baseline
-• Activity list
-• Activity attributes
-• Resource requirements
-• Risk register
+*   Focus on statistical three-point distributions for novel software research components.
+*   Emphasize unit-rate parametric tables for repetitive engineering and construction installations.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_03_07_Duration_Estimating_Worksheet_Template.md)
-* [🤖 LLM Generation Prompt](04_03_07_Duration_Estimating_Worksheet.md)
-* [📊 Data Schema (JSON)](04_03_07_Duration_Estimating_Worksheet.json)
-* [📈 Tabular Data (CSV) - Parametric](04_03_07_Duration_Estimating_Worksheet_Parametric.csv)
-* [📈 Tabular Data (CSV) - Analogous](04_03_07_Duration_Estimating_Worksheet_Analogous.csv)
-* [📈 Tabular Data (CSV) - Three-Point](04_03_07_Duration_Estimating_Worksheet_ThreePoint.csv)
+### Alignment
+Feeds into Duration Estimates table, Schedule Baseline, and Quantitative Risk Analysis.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Duration Estimating Worksheet**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Parametric Activity and Unit Metric:** The activity name and specific unit metric rate used for parametric calculation (e.g., hours per unit).
+*   **Quantity and Resource Factor:** Total quantity of work units and resource efficiency factor applied.
+*   **Parametric Duration Result:** Calculated duration derived from the mathematical parametric formula.
+*   **Historical Reference Activity:** Past project activity used as a baseline benchmark for historical comparison.
+*   **Historical Duration and Complexity Scaling:** Duration of past activity and scaling factor applied for project scope differences.
+*   **Analogous Duration Result:** Final duration outcome determined through analogous comparison.
+*   **Optimistic, Most Likely, and Pessimistic Durations:** The recorded optimistic (tO), most likely (tM), and pessimistic (tP) estimates.
+*   **Beta Calculated Expected Duration (tE):** Calculated expected duration using the PERT beta distribution formula (tO + 4tM + tP) / 6.
+*   **Standard Deviation and Variance:** Calculated standard deviation (tP - tO) / 6 assessing estimating risk and variance.
+*   **Total Calculated Schedule Buffer:** Consolidated sum of duration contingency buffers across all estimated activities.
+*   **Worksheet Reconciliation and Approval:** Formal review confirming no duplicate activity estimations across methods.
 
 </div>

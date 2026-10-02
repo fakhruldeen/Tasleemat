@@ -1,149 +1,99 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this PROJECT CHARTER template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "PROJECT CHARTER",
     "document_reference": "PMO-03.01",
+    "_llm_instructions": "Populate the fields of 'PROJECT CHARTER' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-03.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project purpose": {
+        "f01_Project_purpose": {
+            "section": "Project purpose",
+            "label": "Project purpose",
             "guidance": "The reason the project is being undertaken. May refer to a business case, the organization’s strategic plan, external factors, a contract agreement, or any other reason for performing the project.",
             "value": ""
         },
-        "High-level project description": {
-            "guidance": "A summary-level description of the project.",
+        "f02_High_level_project_description": {
+            "section": "High-level project description",
+            "label": "High-level project description",
+            "guidance": "A summary-level description of the project detailing its core scope and business context.",
             "value": ""
         },
-        "Project boundaries": {
+        "f03_Project_boundaries": {
+            "section": "Project boundaries",
+            "label": "Project boundaries",
             "guidance": "Limits to the project scope. May include scope exclusions, or other limitations.",
             "value": ""
         },
-        "Key deliverables": {
+        "f04_Key_deliverables": {
+            "section": "Key deliverables",
+            "label": "Key deliverables",
             "guidance": "The high-level project and product deliverables. These will be further elaborated in the project scope statement.",
             "value": ""
         },
-        "High-level requirements": {
+        "f05_High_level_requirements": {
+            "section": "High-level requirements",
+            "label": "High-level requirements",
             "guidance": "The high-level conditions or capabilities that must be met to satisfy the purpose of the project. Describe the product features and functions that must be present to meet stakeholders’ needs and expectations. These will be further elaborated in the requirements documentation.",
             "value": ""
         },
-        "High-level assumptions and constraints": {
+        "f06_High_level_assumptions_and_constraints": {
+            "section": "High-level assumptions and constraints",
+            "label": "High-level assumptions and constraints",
             "guidance": "High-level assumptions are factors considered to be true, real, or certain without proof or demonstration. Constraints are limiting factors that affect the execution of a project, program, portfolio, or process.",
             "value": ""
         },
-        "Overall project risk": {
+        "f07_Overall_project_risk": {
+            "section": "Overall project risk",
+            "label": "Overall project risk",
             "guidance": "An assessment of the overall riskiness of the project. Overall risk can include the underlying political, social, economic, and technological volatility, uncertainty, complexity, and ambiguity. It pertains to the stakeholder exposure to variations in the project outcome.",
             "value": ""
         },
-        "Project objectives and related success criteria": {
+        "f08_Project_objectives_and_related_success_criteria": {
+            "section": "Project objectives and related success criteria",
+            "label": "Project objectives and related success criteria",
             "guidance": "Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success.",
-            "value": [
-                {
-                    "Item": "**Scope**",
-                    "Project objectives": "",
-                    "Success criteria": ""
-                },
-                {
-                    "Item": "**Schedule**",
-                    "Project objectives": "",
-                    "Success criteria": ""
-                },
-                {
-                    "Item": "**Cost**",
-                    "Project objectives": "",
-                    "Success criteria": ""
-                },
-                {
-                    "Item": "**Other**",
-                    "Project objectives": "",
-                    "Success criteria": ""
-                }
-            ]
+            "value": ""
         },
-        "Summary milestone schedule": {
+        "f09_Summary_milestone_schedule": {
+            "section": "Summary milestone schedule",
+            "label": "Summary milestone schedule",
             "guidance": "Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance.",
-            "value": [
-                {
-                    "#": "1",
-                    "Summary milestones": "",
-                    "Due Date": ""
-                },
-                {
-                    "#": "2",
-                    "Summary milestones": "",
-                    "Due Date": ""
-                },
-                {
-                    "#": "3",
-                    "Summary milestones": "",
-                    "Due Date": ""
-                }
-            ]
+            "value": ""
         },
-        "Preapproved financial resources": {
+        "f10_Preapproved_financial_resources": {
+            "section": "Preapproved financial resources",
+            "label": "Preapproved financial resources",
             "guidance": "The amount of funding available for the project. May include sources of funding and annual funding limits.",
             "value": ""
         },
-        "Key stakeholder list": {
+        "f11_Key_stakeholder_list": {
+            "section": "Key stakeholder list",
+            "label": "Key stakeholder list",
             "guidance": "An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success.",
-            "value": [
-                {
-                    "Stakeholder(s)": "",
-                    "Role(s)": ""
-                },
-                {
-                    "Stakeholder(s)": "",
-                    "Role(s)": ""
-                },
-                {
-                    "Stakeholder(s)": "",
-                    "Role(s)": ""
-                }
-            ]
+            "value": ""
         },
-        "Project exit criteria": {
+        "f12_Project_exit_criteria": {
+            "section": "Project exit criteria",
+            "label": "Project exit criteria",
             "guidance": "The performance, metrics, conditions, or other measurements that must be met to conclude the project.",
             "value": ""
         },
-        "Project approval requirements": {
+        "f13_Project_approval_requirements": {
+            "section": "Project approval requirements",
+            "label": "Project approval requirements",
             "guidance": "Defines what constitutes project success, who determines whether the project is successful, and who signs off on the project.",
             "value": ""
         },
-        "Project manager authority level": {
-            "guidance": "The authority of the project manager. MUST be formatted as a Markdown table with exactly 2 columns: Authority Area, Description. The following rows MUST be pre-filled under Authority Area: Staffing decisions, Budget management and variance, Technical decisions, Conflict resolution.",
-            "value": [
-                {
-                    "Authority Area": "Staffing decisions",
-                    "Description": ""
-                },
-                {
-                    "Authority Area": "Budget management and variance",
-                    "Description": ""
-                },
-                {
-                    "Authority Area": "Technical decisions",
-                    "Description": ""
-                },
-                {
-                    "Authority Area": "Conflict resolution",
-                    "Description": ""
-                }
-            ]
+        "f14_Project_manager_authority_level": {
+            "section": "Project manager authority level",
+            "label": "Project manager authority level",
+            "guidance": "The authority of the project manager with regard to staffing decisions, budget management and variance, technical decisions, and conflict resolution.",
+            "value": ""
         },
-        "Name and authority of the sponsor": {
-            "guidance": "Name and authority of the sponsor or other person(s) authorizing the project charter. MUST be formatted as a Markdown table with exactly 2 columns: Name / Position, Authority Level.",
-            "value": [
-                {
-                    "Name / Position": "",
-                    "Authority Level": ""
-                },
-                {
-                    "Name / Position": "",
-                    "Authority Level": ""
-                },
-                {
-                    "Name / Position": "",
-                    "Authority Level": ""
-                }
-            ]
+        "f15_Name_and_authority_of_the_sponsor": {
+            "section": "Name and authority of the sponsor",
+            "label": "Name and authority of the sponsor",
+            "guidance": "Name and authority of the sponsor or other person(s) authorizing the project charter.",
+            "value": ""
         }
     }
 }

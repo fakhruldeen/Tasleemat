@@ -3,52 +3,57 @@ lang: en
 Form: Stakeholder Register (Instructions)
 ---
 
-# STAKEHOLDER REGISTER - LLM GENERATION GUIDE
+# Stakeholder Register - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Stakeholder Register». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The stakeholder register is used to identify those people and organizations impacted by the project and to document relevant information about each stakeholder. Relevant information can include: Name, Position, Role, Contact information, Requirements, Expectations, and Classification. Initially you will not have enough information to complete the stakeholder register. As the project gets underway you will gain additional information and understanding and the stakeholder register will become more robust. The stakeholder register is a dynamic project document. The stakeholders, their level of influence, requirements, and classification are likely to change throughout the project.
-> 
+> **Context and Definition:**
+> A project document including the identification, assessment, and classification of project stakeholders.
+
 > **Alignment:**
-> The stakeholder register should be aligned and consistent with the following documents:
-• Project charter
-• Stakeholder analysis matrix
-• Stakeholder engagement plan
+> The Stakeholder Register aligns with Stakeholder Engagement Plan, Communications Management Plan, and Project Charter.
 
 ---
+
+## Stakeholder Register Entries
 
 ### ID
 **Instruction:** Unique identifier for the stakeholder (e.g., SH-01).
 
----
+**Generated Value:** [ Add details... ]
 
 ### Name
-**Instruction:** Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.
+**Instruction:** Stakeholder’s name. If unknown, specify the position or organization.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Position/Role
-**Instruction:** The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.
+**Instruction:** The position or functional role the stakeholder holds in the organization or project.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Contact information
-**Instruction:** How to communicate with the stakeholder, such as their phone number, email address, or physical address.
+**Instruction:** Communication channels for the stakeholder such as email address or phone number.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Requirements
-**Instruction:** High-level needs for the project and/or product.
+**Instruction:** High-level needs and critical requirements for the project and deliverables.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Expectations
-**Instruction:** Main expectations of the project and/or product.
+**Instruction:** Main expectations regarding project execution, outcomes, and governance.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Classification
-**Instruction:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
+**Instruction:** Stakeholder categorization (e.g., internal/external, high/medium/low impact).
 
+**Generated Value:** [ Add details... ]
+
+---

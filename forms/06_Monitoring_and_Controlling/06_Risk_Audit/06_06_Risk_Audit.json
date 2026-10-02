@@ -1,79 +1,80 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this RISK AUDIT REPORT based on the provided project context.\n\nRisk audits evaluate the effectiveness of risk identification, risk responses, and the risk management process as a whole. The risk audit is a tool used in process 11.7 Control Risks in the PMBOK Guide - Sixth Edition, and is conducted periodically as needed.\n\nContext & Definition: Risk audits are used to evaluate the effectiveness of the risk identification, risk responses, and risk management process as a whole.\n\nAlignment: Risk management plan, Risk register, Risk report.",
     "form_name": "RISK AUDIT REPORT",
     "document_reference": "PMO-06.06",
+    "_llm_instructions": "Populate the fields of 'RISK AUDIT REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.06.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Audit Information": {
-            "guidance": "Record the audit scope, period covered, level of analysis, the reference documents reviewed, and the audit method.",
-            "value": {
-                "Audit Scope": "",
-                "Period Covered": "",
-                "Level of Analysis": "",
-                "Reference Documents Reviewed": "",
-                "Audit Method": ""
-            }
-        },
-        "Risk Event Audits": {
-            "guidance": "For each risk event reviewed, list the event from the risk register, its root cause, the response implemented, and a comment on whether the event could have been foreseen or responded to more effectively.",
-            "value": [
-                {
-                    "Risk Event": "",
-                    "Cause": "",
-                    "Response Implemented": "",
-                    "Comment": ""
-                }
-            ]
-        },
-        "Risk Response Audits": {
-            "guidance": "For each risk response reviewed, list the risk event, the response from the risk register, whether the response was successful, and any actions to improve.",
-            "value": [
-                {
-                    "Risk Event": "",
-                    "Response": "",
-                    "Successful": "",
-                    "Actions to Improve": ""
-                }
-            ]
-        },
-        "Risk Management Process Audit - Process Compliance": {
-            "guidance": "For each risk management process, indicate whether it was followed as indicated in the risk management plan, and record any observation.",
-            "value": [
-                {
-                    "Process": "",
-                    "Followed": "",
-                    "Observation": ""
-                }
-            ]
-        },
-        "Risk Management Process Audit - Tools and Techniques": {
-            "guidance": "Identify the tools and techniques used in the various risk management processes and whether they were successful.",
-            "value": [
-                {
-                    "Process": "",
-                    "Tools and Techniques Used": "",
-                    "Successful": ""
-                }
-            ]
-        },
-        "Good Practices": {
-            "guidance": "Describe any practices that should be shared for use on other projects. Include any recommendations to update and improve risk forms, templates, policies, procedures, or processes to ensure these practices are repeatable.",
+        "f01_Audit_Scope": {
+            "section": "Audit Information",
+            "label": "Audit Scope",
+            "guidance": "The defined scope and boundaries of the risk audit.",
             "value": ""
         },
-        "Areas for Improvement": {
-            "guidance": "Describe any practices that need improvement, the improvement plan, and any follow-up dates or information for corrective action.",
-            "value": [
-                {
-                    "Area for Improvement": "",
-                    "Improvement Plan": "",
-                    "Follow-up Date": "",
-                    "Corrective Action": ""
-                }
-            ]
+        "f02_Period_Covered": {
+            "section": "Audit Information",
+            "label": "Period Covered",
+            "guidance": "The timeframe examined by the risk audit.",
+            "value": ""
         },
-        "Comments": {
-            "guidance": "Document any comments that add relevance to this report.",
+        "f03_Level_of_Analysis": {
+            "section": "Audit Information",
+            "label": "Level of Analysis",
+            "guidance": "The organizational or WBS level examined during the audit.",
+            "value": ""
+        },
+        "f04_Reference_Documents_Reviewed": {
+            "section": "Audit Information",
+            "label": "Reference Documents Reviewed",
+            "guidance": "Key governance documents and logs reviewed during the audit.",
+            "value": ""
+        },
+        "f05_Audit_Method": {
+            "section": "Audit Information",
+            "label": "Audit Method",
+            "guidance": "The methodology and evaluation techniques applied during the audit.",
+            "value": ""
+        },
+        "f06_Risk_Event_Audits": {
+            "section": "Risk Event Audits",
+            "label": "Risk Event Audits",
+            "guidance": "Evaluation of materialized risk events, root causes, response effectiveness, and foreseeability.",
+            "value": ""
+        },
+        "f07_Risk_Response_Audits": {
+            "section": "Risk Response Audits",
+            "label": "Risk Response Audits",
+            "guidance": "Detailed assessment of planned risk responses and their practical execution success.",
+            "value": ""
+        },
+        "f08_Process_Compliance": {
+            "section": "Risk Management Process Audit",
+            "label": "Process Compliance",
+            "guidance": "Evaluation of organizational compliance with established PMBOK risk processes.",
+            "value": ""
+        },
+        "f09_Tools_and_Techniques": {
+            "section": "Risk Management Process Audit",
+            "label": "Tools and Techniques",
+            "guidance": "Assessment of the effectiveness of risk assessment tools and analytical models applied.",
+            "value": ""
+        },
+        "f10_Good_Practices": {
+            "section": "Good Practices",
+            "label": "Good Practices",
+            "guidance": "Proven risk management practices and techniques recommended for broader adoption.",
+            "value": ""
+        },
+        "f11_Areas_for_Improvement": {
+            "section": "Areas for Improvement",
+            "label": "Areas for Improvement",
+            "guidance": "Identified procedural deficiencies, corrective action plans, owners, and due dates.",
+            "value": ""
+        },
+        "f12_Comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Additional audit observations, limitations, or stakeholder commentary.",
             "value": ""
         }
     }

@@ -1,25 +1,58 @@
 ---
 lang: en
-Form: PROCUREMENT STRATEGY (Instructions)
+Form: Procurement Strategy (Instructions)
 ---
 
-# PROCUREMENT STRATEGY - LLM GENERATION GUIDE
+# Procurement Strategy - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROCUREMENT STRATEGY`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Procurement Strategy». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The procurement strategy describes information about specific procurements, including delivery methods, contract types, and procurement phases. It is developed once for each procurement when needed.
+> **Context and Definition:**
+> A strategic artifact establishing the delivery methods, contract payment types, and procurement phases used to acquire external services and products.
 
-**Tailoring Tips:**
-*   For a project that will be done using internal resources only, you do not need a procurement strategy.
-*   For projects with few procurements consider combining this form with the procurement management plan.
-*   For simple purchases, or for purchases where you have worked with a vendor successfully for a length of time, you may not need a formal procurement strategy; rather you would record the information in a statement of work (SOW).
+> **Alignment:**
+> Informs Procurement Management Plan, SOW, RFP packages, and Source Selection Criteria.
 
 ---
 
-### Section Generation Instructions
-*   **Delivery Methods:** Describe the delivery method (e.g., joint venture, representative, design build, etc.).
-*   **Contract Type Selection:** Select the contract types.
-*   **Incentive or Award Fees:** List any incentive or award fees and their associated criteria.
-*   **Procurement Life Cycle:** List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer.
+## Delivery Methods and Contract Types
+
+### Project Delivery Method
+**Instruction:** The selected delivery structure (e.g., Design-Build, Turnkey EPC, Professional Services, Agile Staff Augmentation).
+
+**Generated Value:** [ Add details... ]
+
+### Contract Payment Types and Rationale
+**Instruction:** Selected contract payment mechanism (Firm Fixed Price, Cost Reimbursable, Target Price) and justification.
+
+**Generated Value:** [ Add details... ]
+
+## Incentive and Fee Structures
+
+### Incentive Fees and Bonus Provisions
+**Instruction:** Performance-based financial incentives, early completion bonuses, or quality metrics.
+
+**Generated Value:** [ Add details... ]
+
+### Penalty and Liquidated Damages Clauses
+**Instruction:** Contractual liquidated damages and penalty provisions for unexcused schedule delays.
+
+**Generated Value:** [ Add details... ]
+
+## Procurement Phases and Sourcing Life Cycle
+
+### Procurement Sourcing Stages
+**Instruction:** Sequence of procurement stages: market analysis, pre-qualification, RFP issuance, evaluation, negotiation, award.
+
+**Generated Value:** [ Add details... ]
+
+### Market Engagement and Competitive Sourcing Approach
+**Instruction:** Method of market engagement (Sole Source, Open Competitive Tender, Limited Request for Quotation).
+
+**Generated Value:** [ Add details... ]
+
+---

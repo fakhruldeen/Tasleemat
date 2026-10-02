@@ -1,164 +1,75 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared', and generate an array of Work Packages under 'fields'. Context: The WBS dictionary supports the work breakdown structure (WBS) by providing detail about the control accounts and work packages it contains. The dictionary provides detailed information about each work package.",
     "form_name": "WBS DICTIONARY",
     "document_reference": "PMO-04.02.07",
+    "_llm_instructions": "Populate the fields of 'WBS DICTIONARY' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.02.07.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Work Packages": {
-            "guidance": "Generate a JSON array of work package objects.",
-            "value": [
-                {
-                    "Work Package Name": "",
-                    "Code of Accounts": "",
-                    "Due Dates": "",
-                    "Description of Work": "",
-                    "Assumptions and Constraints": "",
-                    "Milestones": "",
-                    "Activities & Costs": [
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        },
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        },
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        }
-                    ],
-                    "Quality Requirements": "",
-                    "Acceptance Criteria": "",
-                    "Technical Information": "",
-                    "Agreement Information": ""
-                },
-                {
-                    "Work Package Name": "",
-                    "Code of Accounts": "",
-                    "Due Dates": "",
-                    "Description of Work": "",
-                    "Assumptions and Constraints": "",
-                    "Milestones": "",
-                    "Activities & Costs": [
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        },
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        },
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        }
-                    ],
-                    "Quality Requirements": "",
-                    "Acceptance Criteria": "",
-                    "Technical Information": "",
-                    "Agreement Information": ""
-                },
-                {
-                    "Work Package Name": "",
-                    "Code of Accounts": "",
-                    "Due Dates": "",
-                    "Description of Work": "",
-                    "Assumptions and Constraints": "",
-                    "Milestones": "",
-                    "Activities & Costs": [
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        },
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        },
-                        {
-                            "ID": "",
-                            "Activity": "",
-                            "Team resource": "",
-                            "Labor hours": "",
-                            "Labor rate": "",
-                            "Labor total": "",
-                            "Material units": "",
-                            "Material cost": "",
-                            "Material total": "",
-                            "Total cost": ""
-                        }
-                    ],
-                    "Quality Requirements": "",
-                    "Acceptance Criteria": "",
-                    "Technical Information": "",
-                    "Agreement Information": ""
-                }
-            ]
+        "f01_WBS_Identifier_and_Title": {
+            "section": "Work Package Identification",
+            "label": "WBS Identifier and Title",
+            "guidance": "The unique WBS code number and descriptive name of the specific work package.",
+            "value": ""
+        },
+        "f02_Control_Account_and_Responsible_Organization": {
+            "section": "Work Package Identification",
+            "label": "Control Account and Responsible Organization",
+            "guidance": "Associated control account code and organizational unit or person accountable for delivery.",
+            "value": ""
+        },
+        "f03_Work_Package_Owner": {
+            "section": "Work Package Identification",
+            "label": "Work Package Owner",
+            "guidance": "Designated lead engineer or manager responsible for work package execution.",
+            "value": ""
+        },
+        "f04_Work_Package_Scope_Description": {
+            "section": "Scope of Work and Deliverables",
+            "label": "Work Package Scope Description",
+            "guidance": "Detailed narrative describing the technical work, tasks, and activities required for this package.",
+            "value": ""
+        },
+        "f05_Deliverables_Produced": {
+            "section": "Scope of Work and Deliverables",
+            "label": "Deliverables Produced",
+            "guidance": "Specific tangible or intangible outputs generated upon work package completion.",
+            "value": ""
+        },
+        "f06_Milestone_Schedule_and_Target_Dates": {
+            "section": "Scope of Work and Deliverables",
+            "label": "Milestone Schedule and Target Dates",
+            "guidance": "Target start date, intermediate technical milestones, and completion deadline.",
+            "value": ""
+        },
+        "f07_Quality_Requirements_and_Standards": {
+            "section": "Quality Criteria and Acceptance",
+            "label": "Quality Requirements and Standards",
+            "guidance": "Mandatory quality metrics, engineering specifications, and technical standards.",
+            "value": ""
+        },
+        "f08_Acceptance_Criteria_and_Sign_off_Lead": {
+            "section": "Quality Criteria and Acceptance",
+            "label": "Acceptance Criteria and Sign-off Lead",
+            "guidance": "Clear criteria and designated stakeholder authorized to accept the work package.",
+            "value": ""
+        },
+        "f09_Required_Resources_and_Skills": {
+            "section": "Resource and Cost Allocations",
+            "label": "Required Resources and Skills",
+            "guidance": "Personnel roles, technical expertise, materials, and specialized equipment needed.",
+            "value": ""
+        },
+        "f10_Cost_Estimate_and_Budget_Allocation": {
+            "section": "Resource and Cost Allocations",
+            "label": "Cost Estimate and Budget Allocation",
+            "guidance": "Approved budget allocation and cost baseline figure assigned to this work package.",
+            "value": ""
+        },
+        "f11_Assumptions_Constraints_and_Dependencies": {
+            "section": "Resource and Cost Allocations",
+            "label": "Assumptions, Constraints, and Dependencies",
+            "guidance": "Specific operational constraints, key assumptions, and preceding/succeeding work package linkages.",
+            "value": ""
         }
     }
 }

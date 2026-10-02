@@ -1,36 +1,68 @@
 ---
 lang: en
-Form: RESPONSIBILITY ASSIGNMENT MATRIX (Instructions)
+Form: Responsibility Assignment Matrix (Instructions)
 ---
 
-# RESPONSIBILITY ASSIGNMENT MATRIX - LLM GENERATION GUIDE
+# Responsibility Assignment Matrix - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `RESPONSIBILITY ASSIGNMENT MATRIX` (RAM). When asked to populate this form, generate the matrix mapping resources to work packages.
+<!--
+System Instructions: This document contains instructions for generating the
+«Responsibility Assignment Matrix». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The responsibility assignment matrix (RAM) shows the intersection of work packages and resources. Generally, RAMs are used to show the different levels of participation on a work package by various team members rather than physical resources. RAMs can indicate different types of participation depending on the needs of the project. Some common types include: Accountable, Responsible, Consulted, Resource, Informed, Sign-off. The RAM always should include a key that explains what each of the levels of participation entails. It is progressively elaborated as more information about the scope and the resource requirements is known.
->
-> **Inputs:**
-> The responsibility assignment matrix can receive information from:
-* Scope baseline
-* Requirements documentation
-* Stakeholder register
->
-> **Tailoring Tips:**
-> * Tailor the types of participation appropriate for your project. Some projects require “sign-off” of specific deliverables, whereas others use the term “approve.”
-* Determine the appropriate level to record information on the RAM. Large projects with multiple vendors and large deliverables often use the RAM as the intersection of the WBS and the OBS (organizational breakdown structure). Small projects may use it at the deliverable or activity level to help enter schedule information.
-> 
+> **Context and Definition:**
+> A matrix that shows the project resources assigned to each work package, ensuring clear allocation using the RACI framework.
+
 > **Alignment:**
-> The RAM should be aligned and consistent with the following documents:
-> * Work breakdown structure
-* Requirements documentation
-* Resource requirements
-* Procurement documents (RFP, RFQ, etc.)
+> Connects WBS Work Packages with Organizational Chart, Team Charter, and Project Management Plan.
 
 ---
 
-### Section Generation Instructions
-*   **Work package:** Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level.
-*   **Resource Columns:** Identify the person, division, or organization that will be working on the project. Assign their participation level (e.g., R, A, C, I).
-*   **Key / Legend:** Explain the participation codes used in the matrix (e.g., R = Responsible, A = Accountable).
+## RACI Model Definitions and Key
+
+### Responsible (R) Definition
+**Instruction:** Definition: The role assigned to do the work and complete the activity deliverable.
+
+**Generated Value:** [ Add details... ]
+
+### Accountable (A) Definition
+**Instruction:** Definition: The single role with ultimate ownership, decision authority, and sign-off approval.
+
+**Generated Value:** [ Add details... ]
+
+### Consulted (C) Definition
+**Instruction:** Definition: Subject matter experts providing vital two-way input and technical guidance.
+
+**Generated Value:** [ Add details... ]
+
+### Informed (I) Definition
+**Instruction:** Definition: Stakeholders kept updated on progress, milestones, and decisions via one-way communication.
+
+**Generated Value:** [ Add details... ]
+
+## Assignment Matrix (Work Packages vs Roles)
+
+### WBS Deliverable and Assigned RACI Codes
+**Instruction:** Tabular mapping assigning explicit R, A, C, and I roles for each major WBS work package.
+
+**Generated Value:** [ Add details... ]
+
+### Role Coverage and Work Distribution
+**Instruction:** Verification that every activity has exactly one Accountable role and at least one Responsible role.
+
+**Generated Value:** [ Add details... ]
+
+## Governance and Accountability Rules
+
+### Single Accountability Governance Rule
+**Instruction:** Mandatory policy prohibiting multiple Accountable (A) assignments per deliverable to prevent diffusion of responsibility.
+
+**Generated Value:** [ Add details... ]
+
+### Escalation and Conflict Resolution Protocol
+**Instruction:** Process for resolving role overlaps, gaps, and decision deadlocks across project leads.
+
+**Generated Value:** [ Add details... ]
+
+---

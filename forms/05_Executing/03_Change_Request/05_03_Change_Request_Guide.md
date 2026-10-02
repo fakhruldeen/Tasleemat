@@ -1,13 +1,65 @@
-# CHANGE REQUEST - GUIDANCE
-This document provides descriptions for each element in the Change Request.
+---
+lang: en
+layout: default
+title: Change Request
+nav_order: 3
+---
 
-| Document Element | Description |
-| :--- | :--- |
-| **Requestor Name and Position** | The name, and if appropriate, the position of the person requesting the change. |
-| **Change Category** | Check a box to indicate the category of change. |
-| **Change Type** | Indicate whether the change is mandatory (e.g., a legal requirement) or discretionary. |
-| **Description of Change** | Describe the proposed change in enough detail to clearly communicate all aspects of the change. |
-| **Justification for Proposed Change** | Indicate the reason for the change. |
-| **Implications of Not Making the Change** | Describe the implications or risks of not implementing this change. |
-| **Impacts of Change** | Describe the impact of the proposed change on specific project dimensions (Scope, Quality, Requirements, Cost, Schedule, Project documents). |
-| **Comments** | Provide any comments that will clarify information about the requested change. |
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Change Request
+
+**Document Reference:** `PMO-05.03`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Change Request** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A standardized form capturing full justification and impact analysis for proposed modifications.
+
+---
+
+### 2. Why?
+Ensures changes are rigorously evaluated before approval to protect project scope, budget, and timeline.
+
+---
+
+### 3. When?
+Submitted whenever a baseline adjustment or scope modification is identified during execution.
+
+---
+
+### 4. Who?
+Submitted by any stakeholder or team member, evaluated by the Project Manager, and approved by CCB.
+
+---
+
+### Tailoring Tips
+*   Include precise schedule and cost impact estimates before submitting to CCB.
+*   Attach updated architectural or technical specs to support evaluation.
+
+---
+
+### Alignment
+The Change Request aligns with Change Management Plan, Change Log, and Project Baselines.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Change Request**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Requestor Name and Position:** The name and organizational role or position of the person submitting the change request.
+*   **Change Category:** The specific project dimension affected (e.g., Scope, Schedule, Cost, Quality, Resource).
+*   **Change Type:** Indicates whether the change is mandatory (legal/compliance) or discretionary.
+*   **Description of Change:** Comprehensive narrative detailing the requested modification or enhancement.
+*   **Justification for Proposed Change:** The business driver, operational trigger, or rationale justifying the change.
+*   **Implications of Not Making the Change:** Risks, costs, operational penalties, or missed opportunities if the change is rejected.
+*   **Impacts of Change:** Detailed assessment of impacts across scope, schedule, budget, risks, and contracts.
+*   **Comments:** Additional context, dependencies, or evaluation notes.
+
+</div>

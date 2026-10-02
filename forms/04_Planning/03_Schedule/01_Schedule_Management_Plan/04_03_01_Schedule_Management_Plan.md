@@ -1,37 +1,82 @@
 ---
 lang: en
-Form: SCHEDULE MANAGEMENT PLAN (Instructions)
+Form: Schedule Management Plan (Instructions)
 ---
 
-# SCHEDULE MANAGEMENT PLAN - LLM GENERATION GUIDE
+# Schedule Management Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `SCHEDULE MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Schedule Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The schedule management plan is part of the project management plan. It specifies how the project schedule will be developed, monitored, and controlled. It is an output from the process 6.1 Plan Schedule Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change.
-> 
+> **Context and Definition:**
+> A subsidiary plan establishing the criteria and activities for developing, monitoring, and controlling the project schedule.
+
 > **Alignment:**
-> The schedule management plan should be aligned and consistent with the following documents:
-• Project charter
-• Cost management plan
+> Integrates with Project Schedule, Activity List, Cost Management Plan, and Progress Status Reports.
 
 ---
 
-### 1. Methodology & Tools
-*   **Schedule methodology:** Identify the scheduling methodology that will be used for the project, whether it is critical path, agile, or some other methodology.
-*   **Scheduling tool(s):** Identify the scheduling tool(s) that will be used for the project. Tools can include scheduling software, reporting software, earned value software, etc.
-*   **Iterative planning & timeboxing:** Add information on the level of detail and timing for WBS decomposition based on rolling wave planning. For agile projects, add information on the time box periods for releases, waves, and iterations.
+## Scheduling Methodology and Tools
 
-### 2. Rules of Measurement
-*   **Level of accuracy:** Describe the level of accuracy needed for estimates. Indicate the levels of accuracy required as time progresses (progressive elaboration).
-*   **Units of measure:** Indicate whether duration estimates will be in days, weeks, months, or some other unit of measure.
-*   **Performance measurement rules (EVM):** Include information on rules for establishing percent complete and the EVM measurement techniques (fixed formula, percent complete, level of effort, etc.).
+### Scheduling Methodology Selection
+**Instruction:** The scheduling framework applied (e.g., Critical Path Method, Agile cadence, or Critical Chain).
 
-### 3. Variance Thresholds
-*   **Variance thresholds:** Indicate the measures that determine whether an activity, work package, or the project as a whole is on time, requires preventive action, or is late and requires corrective action.
+**Generated Value:** [ Add details... ]
 
-### 4. Communication & Maintenance
-*   **Schedule reporting and format:** Document the schedule information required for status and progress reporting.
-*   **Organizational procedure links:** Specify how the schedule outline links to the numbering structure of the WBS or the organization’s code of accounts.
-*   **Schedule updates:** Document the process for updating the schedule, including update frequency, permissions, and version control.
+### Scheduling Software and Systems
+**Instruction:** Approved project management and scheduling software tools used to build and maintain the schedule model.
+
+**Generated Value:** [ Add details... ]
+
+## Planning Cadence and Level of Detail
+
+### Rolling Wave Planning Approach
+**Instruction:** Level of detail and decomposition horizon applied to near-term vs. long-term project activities.
+
+**Generated Value:** [ Add details... ]
+
+### Agile Timeboxing and Iteration Rules
+**Instruction:** Standard sprint lengths, release cadence, and timeboxing rules for iterative work packages.
+
+**Generated Value:** [ Add details... ]
+
+## Units of Measure and Estimation Accuracy
+
+### Units of Measure for Durations
+**Instruction:** Designated units of measure (hours, days, weeks) applied across schedule estimates.
+
+**Generated Value:** [ Add details... ]
+
+### Level of Accuracy and Estimating Ranges
+**Instruction:** Acceptable variance ranges (+/- percentage) required for duration and effort estimates.
+
+**Generated Value:** [ Add details... ]
+
+## Performance Measurement Rules
+
+### Earned Value Management (EVM) Rules
+**Instruction:** Techniques used for measuring physical progress and establishing percent complete (e.g., 50/50, 0/100, milestone weights).
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Performance Indicators
+**Instruction:** Key metrics tracked including SV, SPI, critical path float, and milestone variance.
+
+**Generated Value:** [ Add details... ]
+
+## Schedule Variance Thresholds and Maintenance
+
+### Schedule Variance Thresholds
+**Instruction:** Permissible delay thresholds that trigger mandatory corrective actions and executive escalations.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Update and Baselines Protocol
+**Instruction:** Cadence for schedule status updates, critical path recalculation, and baseline change governance.
+
+**Generated Value:** [ Add details... ]
+
+---

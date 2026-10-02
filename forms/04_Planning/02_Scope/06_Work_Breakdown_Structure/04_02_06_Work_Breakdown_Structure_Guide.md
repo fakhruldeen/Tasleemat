@@ -12,60 +12,54 @@ nav_order: 6
 
 **Document Reference:** `PMO-04.02.06`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Work Breakdown Structure (WBS)** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Work Breakdown Structure** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables.
+A deliverable-oriented hierarchical breakdown structuring total project commitments into manageable work packages.
 
 ---
 
 ### 2. Why?
-It organizes and defines the total scope of the project and represents the work specified in the current approved project scope statement. It provides a structured vision of what has to be delivered.
+Prevents missed deliverables, enables accurate cost and duration estimating, and establishes clear accountability.
 
 ---
 
 ### 3. When?
-This artifact is prepared during the **PLANNING Process Group** of the project lifecycle. The higher levels are defined early, while lower levels are progressively elaborated.
+Developed during scope planning, formally baselined before detailed scheduling and cost estimation.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and key stakeholders.
+Created collaboratively by Project Manager and Core Technical Leads, approved by Sponsor.
 
 ---
 
 ### Tailoring Tips
-• The needs of the project will determine the way that the WBS is organized (e.g., Geography, Major deliverables, Life cycle phases, Subprojects).
-• For smaller projects you may use a WBS that is depicted like an organizational chart.
-• For larger projects you will need to arrange the WBS in an outline format and provide a numbering structure.
-• If your organization has accounting codes you may need to align each deliverable to a specific accounting code to track expenditures.
-
-### Alignment
-The WBS should be aligned and consistent with the following documents:
-• Project charter
-• Requirements documentation
-• Project scope statement
-• WBS dictionary
-• Activity list
-
-### 5. How?
-To accurately and professionally complete the **WORK BREAKDOWN STRUCTURE**, the responsible party must populate the following critical table columns based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **WBS ID:** Use a hierarchical numbering system (e.g., 1.0, 1.1, 1.1.1) to show parent-child relationships.
-*   **Element Name:** Name the deliverables, sub-deliverables, Control Accounts, and Work Packages.
-*   **Element Type:** Define the structural level of the element (e.g., 'Control Account', 'Work Package'). **Control accounts** integrate scope, schedule, and cost. **Work packages** are the lowest level deliverables.
-*   **Description:** Briefly define the scope boundary of that specific element.
-*   **Control Account ID:** Explicitly map Work Packages back to their parent Control Account for reporting.
-*   **Accounting Code:** Align deliverables to specific financial codes to track expenditures (if applicable).
+*   Decompose down to release themes and epic structures for adaptive programs.
+*   Establish formal control accounts at system integration boundaries for multi-contractor engagements.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_02_06_Work_Breakdown_Structure_Template.md)
-* [🤖 LLM Generation Prompt](04_02_06_Work_Breakdown_Structure.md)
-* [📊 Data Schema (JSON)](04_02_06_Work_Breakdown_Structure.json)
-* [📈 Tabular Data (CSV)](04_02_06_Work_Breakdown_Structure.csv)
+### Alignment
+Forms the architectural framework linking Project Scope Statement, WBS Dictionary, Project Schedule, and Cost Baseline.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Work Breakdown Structure**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **WBS Decomposition Approach:** The organizing principle used to decompose scope (e.g., phase-based, deliverable-based, or subsystem-based).
+*   **Hierarchy Levels and Coding Scheme:** Definition of hierarchical levels (Project, Phase/Subsystem, Deliverable, Work Package) and WBS numbering scheme.
+*   **100 Percent Rule Compliance:** Confirmation that all parent nodes capture 100 percent of subordinate scope with no external additions.
+*   **Level 1 Summary Elements:** High-level summary nodes representing major phases or principal delivery workstreams.
+*   **Level 2 and 3 Intermediate Deliverables:** Subordinate deliverables and integrated components decomposing summary elements.
+*   **Lowest-Level Work Packages Summary:** Discrete manageable units of work assigned for cost estimation, scheduling, and control.
+*   **Hierarchical WBS Outline:** Complete textual outline displaying the hierarchical breakdown of the entire project scope.
+*   **Control Accounts and Work Package Identifiers:** Assigned identifiers mapping control accounts to accounting and management structures.
 
 </div>

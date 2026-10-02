@@ -1,4 +1,11 @@
-ID,Type,Category,Description,Impact if invalid,Responsible party,Due date,Actions,Status,Comments
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Assumption Log Entries,ID,Unique identifier for the assumption or constraint entry.,
+Assumption Log Entries,Type,Specify whether this entry is an 'Assumption' or a 'Constraint'.,
+Assumption Log Entries,Category,"The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource).",
+Assumption Log Entries,Description,"A clear, detailed description of the assumption or constraint.",
+Assumption Log Entries,Impact if invalid,The potential risk or impact to the project if the assumption proves false or the constraint is breached.,
+Assumption Log Entries,Responsible party,The person or role tasked with following up on the assumption to validate its accuracy.,
+Assumption Log Entries,Due date,The target date by which the assumption needs to be validated or reviewed.,
+Assumption Log Entries,Actions,Specific actions required to validate the assumption or monitor the constraint.,
+Assumption Log Entries,Status,"The current status of the assumption (e.g., active, validated, closed).",
+Assumption Log Entries,Comments,"Any additional information, operational context, or status updates.",

@@ -1,0 +1,10 @@
+Section,Field,Guidance,LLM_Generated_Value
+Quality Standards and Policies,Organizational Quality Policy and Framework,"The overarching corporate quality principles and methodology (e.g., ISO, Lean Six Sigma, CMMI).",
+Quality Standards and Policies,Applicable Industry Quality Standards,"Specific external regulatory, engineering, or legal quality standards enforced.",
+Quality Objectives and KPIs,Project Quality Goals and Thresholds,"Measurable quality targets regarding defect containment, test coverage, and customer satisfaction.",
+Quality Objectives and KPIs,Continuous Improvement Objectives,Process enhancement goals and lessons learned integration mechanisms.,
+Quality Assurance and Quality Control Procedures,Quality Assurance (QA) Process,Audits and process compliance activities ensuring project execution adheres to approved standards.,
+Quality Assurance and Quality Control Procedures,Quality Control (QC) Testing Protocol,"Inspection, automated testing, and peer review workflows used to verify deliverable quality.",
+Quality Assurance and Quality Control Procedures,Non-Conformance and Defect Management,"Standard procedure for logging, prioritizing, resolving, and verifying non-conformance issues.",
+Quality Roles and Review Gates,Quality Roles and Responsibilities,"Designated quality assurance leads, test engineers, and peer review inspectors.",
+Quality Roles and Review Gates,Quality Review Gates and Sign-off Criteria,Mandatory quality milestones and gate reviews required before client acceptance.,

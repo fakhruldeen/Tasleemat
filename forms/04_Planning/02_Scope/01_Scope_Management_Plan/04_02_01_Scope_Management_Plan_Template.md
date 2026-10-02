@@ -1,16 +1,11 @@
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Project Scope Statement Preparation:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
-*   **Roles and Responsibilities:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
-*   **WBS:** Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. Document guidelines for establishing control accounts and work packages. Use lists where appropriate.
-*   **Project Scope Statement Preparation:** Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.
-*   **Roles and Responsibilities:** Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.
-*   **WBS Dictionary:** Identify the information that will be documented in the WBS Dictionary and the level of detail required. Use lists where appropriate.
-*   **Scope baseline maintenance:** Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. Use lists where appropriate.
-*   **Deliverable acceptance:** For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off. Use lists where appropriate.
-*   **Scope and requirements integration:** Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur. Use lists where appropriate.
-*   **Project management and business analysis integration:** Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations. Use lists where appropriate.
+- Scope Definition Process: Provide comprehensive project data for all required fields in this section.
+- WBS Creation and Structure: Provide comprehensive project data for all required fields in this section.
+- WBS Dictionary and Baseline Maintenance: Provide comprehensive project data for all required fields in this section.
+- Scope Verification and Deliverable Acceptance: Provide comprehensive project data for all required fields in this section.
+- Scope Control and Integration: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -18,77 +13,63 @@ Section Instructions:
 <h1 align="center">SCOPE MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Project Scope Statement Preparation
-<!-- Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. -->
+## 1. Scope Definition Process
 
-> [ Add details... ]
+**Scope Planning Approach:**
+[ Add details... ]
 
----
+**Roles and Responsibilities (Scope):**
+[ Add details... ]
 
-### Roles and Responsibilities
-<!-- Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). -->
-
-> [ Add details... ]
-
----
-
-### WBS
-<!-- Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. The guidelines for establishing control accounts and work packages can also be documented in this section. -->
-
-> [ Add details... ]
+**Scope Statement Preparation Steps:**
+[ Add details... ]
 
 ---
 
-### Project Scope Statement Preparation
-<!-- Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. -->
+## 2. WBS Creation and Structure
 
-> [ Add details... ]
+**WBS Decomposition Methodology:**
+[ Add details... ]
 
----
+**WBS Level of Detail:**
+[ Add details... ]
 
-### Roles and Responsibilities
-<!-- Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). -->
-
-> [ Add details... ]
-
----
-
-### WBS Dictionary
-<!-- Identify the information that will be documented in the WBS Dictionary and the level of detail required. -->
-
-> [ Add details... ]
+**WBS Identification Scheme:**
+[ Add details... ]
 
 ---
 
-### Scope baseline maintenance
-<!-- Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. -->
+## 3. WBS Dictionary and Baseline Maintenance
 
-> [ Add details... ]
+**WBS Dictionary Development:**
+[ Add details... ]
 
----
-
-### Deliverable acceptance
-<!-- For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off. -->
-
-> [ Add details... ]
+**Scope Baseline Approval and Maintenance:**
+[ Add details... ]
 
 ---
 
-### Scope and requirements integration
-<!-- Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur. -->
+## 4. Scope Verification and Deliverable Acceptance
 
-> [ Add details... ]
+**Deliverable Verification Process:**
+[ Add details... ]
+
+**Formal Acceptance Criteria and Sign-off:**
+[ Add details... ]
 
 ---
 
-### Project management and business analysis integration
-<!-- Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations. -->
+## 5. Scope Control and Integration
 
-> [ Add details... ]
+**Scope Change Control Integration:**
+[ Add details... ]
+
+**Scope and Requirements Traceability Integration:**
+[ Add details... ]
 
 ---
 
@@ -98,11 +79,11 @@ Section Instructions:
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Scope Management Plan | <strong>Ref:</strong> PMO-04.02.01 <br>
+  <strong>Template:</strong> SCOPE MANAGEMENT PLAN | <strong>Ref:</strong> PMO-04.02.01 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

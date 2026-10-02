@@ -1,4 +1,10 @@
-ID,Requirement,Stakeholder,Category,Priority,Acceptance criteria,Test or verification method,Phase or release,Dependencies,Assumptions & Constraints
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Business Requirements,Business Objectives and Goals,"High-level organizational motivations, strategic drivers, and target business problems to solve.",
+Business Requirements,Business Process Impact,Current-state vs. target-state operational workflow enhancements and process impacts.,
+Business Requirements,Business Value and Success Criteria,"Measurable commercial, operational, or customer value expected upon delivery.",
+Stakeholder Requirements,User Persona and Needs Summary,Detailed operational requirements categorized by specific stakeholder groups and user personas.,
+Stakeholder Requirements,Stakeholder Pain Points and Expectations,Critical operational pain points addressed and expected behavioral outcomes.,
+Solution and Technical Requirements,Functional Requirements Specification,"Detailed capabilities, system interactions, features, and functional behavior.",
+Solution and Technical Requirements,Technical Architecture and System Constraints,"System interfaces, infrastructure prerequisites, data architecture, and technological boundaries.",
+Transition and Non-Functional Requirements,Non-Functional Requirements (Quality of Service),"Performance thresholds, security standards, availability, scalability, and usability criteria.",
+Transition and Non-Functional Requirements,Transition and Readiness Requirements,"Data migration, end-user training, operational handover, and rollout support prerequisites.",

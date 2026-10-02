@@ -1,41 +1,56 @@
 ---
 lang: en
-Form: OCM STRATEGY AND PLAN (Instructions)
+Form: OCM Strategy and Plan (Instructions)
 ---
 
-# OCM STRATEGY AND PLAN - LLM GENERATION GUIDE
+# OCM Strategy and Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `OCM STRATEGY AND PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«OCM Strategy and Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> [ Add Context & Definition Here ]
-> 
+> **Context and Definition:**
+> An Organizational Change Management (OCM) Strategy and Plan guides the human and behavioral side of project transition. While technical project plans deliver the solution, the OCM plan ensures that affected individuals, teams, and stakeholders embrace, adopt, and effectively use the new capabilities to realize the expected business benefits.
+
 > **Alignment:**
-> [ Add Alignment Information Here ]
+> The OCM Strategy and Plan should be aligned and consistent with: the Project Management Plan, synchronizing change milestones with technical releases; the Communications Management Plan, ensuring unified and timely stakeholder messaging; and the Risk Register, capturing organizational, cultural, and adoption risks.
 
 ---
+
+## Change Strategy and Impact
 
 ### Change Vision
-**Instruction:** Why the human change is necessary.
+**Instruction:** Why the organizational change is necessary and the future state it creates. It articulates the business need for people to change how they work, the compelling reasons to transition, and the tangible outcomes the organization will realize when adoption is achieved.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Stakeholder Impact Analysis
-**Instruction:** How different groups will be affected.
+**Instruction:** How different stakeholder groups, departments, and roles will be affected by the change. Identifies the degree of disruption across processes, systems, organizational structures, and daily workloads so tailored support can be provided.
 
----
-
-### Communication Strategy
-**Instruction:** How changes will be communicated.
-
----
-
-### Resistance Management
-**Instruction:** How to handle pushback from users.
-
----
+**Generated Value:** [ Add details... ]
 
 ### Sponsorship Strategy
-**Instruction:** How leaders will champion the change.
+**Instruction:** How project sponsors, executive leaders, and change champions will visibly advocate, lead, and resource the change. Details their active commitments, coalitions across business units, and direct engagement with impacted teams.
 
+**Generated Value:** [ Add details... ]
+
+## Enablement and Adoption
+
+### Communication Strategy
+**Instruction:** The channels, key messages, frequency, and two-way feedback loops used to keep stakeholders informed and engaged throughout the transition. Ensures timely delivery of transparent information and addresses evolving concerns.
+
+**Generated Value:** [ Add details... ]
+
+### Resistance Management
+**Instruction:** Proactive identification of likely sources of resistance, underlying root causes, and specific interventions to mitigate pushback. Establishes supportive pathways to help teams navigate transition anxiety and adopt new practices.
+
+**Generated Value:** [ Add details... ]
+
+### Readiness and Reinforcement
+**Instruction:** The criteria, checkpoints, and mechanisms to measure organizational readiness before go-live, and the reinforcement strategies (recognition, ongoing coaching, audits) to ensure adopted behaviors are sustained long-term.
+
+**Generated Value:** [ Add details... ]
+
+---

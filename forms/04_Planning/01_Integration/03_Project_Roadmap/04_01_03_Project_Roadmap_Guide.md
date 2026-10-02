@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Project Roadmap
-nav_order: 1
+nav_order: 3
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,53 +12,58 @@ nav_order: 1
 
 **Document Reference:** `PMO-04.01.03`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Project Roadmap** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Project Roadmap** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A high-level visual summary of the life cycle phases, key deliverables, management reviews and milestones.
+An executive timeline representing significant releases, deliverables, strategic alignment, and cross-functional themes.
 
 ---
 
 ### 2. Why?
-It provides a high-level overview of the project's journey, making it easy for stakeholders to understand the timeline and key events without diving into a detailed schedule.
+Provides clear stakeholder visibility, aligns leadership expectations, and communicates strategic delivery goals.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Created early during project initiation/planning and updated regularly as release plans evolve.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the project team and Subject Matter Experts (SMEs).
+Authored by Project Manager and Product Owner, approved by Project Sponsor and Steering Committee.
 
 ---
 
 ### Tailoring Tips
-• For large and complex projects this will likely be a separate stand-alone document.
-• For smaller projects the project roadmap may serve as the project management plan.
-
-### Alignment
-The project roadmap should be aligned and consistent with the following documents:
-• Project management plan
-• Milestone list
-
-### 5. How?
-To accurately and professionally complete the **PROJECT ROADMAP**, the responsible party must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-*   **Project life cycle phases:** The name of each life cycle phase.
-*   **Major deliverables or events:** Key deliverables, phase gates, key approvals, external events, or other significant events in the project.
-*   **Significant milestones:** Milestones in the project.
-*   **Timing and types of reviews:** Management, customer, compliance, or other significant reviews.
+*   Focus on theme-based and outcome-based horizons for agile initiatives.
+*   Incorporate contract milestone dates for predictive client delivery programs.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_01_03_Project_Roadmap_Template.md)
-* [🤖 LLM Generation Prompt](04_01_03_Project_Roadmap.md)
-* [📊 Data Schema (JSON)](04_01_03_Project_Roadmap.json)
-* [📈 Tabular Data (CSV)](04_01_03_Project_Roadmap.csv)
+### Alignment
+Bridges Project Charter and Business Case with detailed Project Schedule and Release Plans.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Project Roadmap**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Strategic Alignment Summary:** Clear articulation of how project outcomes support broader organizational goals.
+*   **Target Business Value and Benefits:** Anticipated operational improvements, revenue gains, or value realization targets.
+*   **Success Criteria and Key Metrics:** Quantitative and qualitative KPIs used to measure project milestone success.
+*   **High-Level Product Vision:** Executive narrative describing the end-state solution and delivery vision.
+*   **Major Workstreams and Themes:** Core technical and functional workstreams driving delivery forward.
+*   **Roadmap Horizon and Timeframes:** Overall chronological span covering major release windows and delivery horizons.
+*   **Release 1 (MVP) Scope and Milestone:** Target completion date and essential scope commitments for the initial release.
+*   **Release 2 Scope and Milestone:** Target completion date and expanded functionality for subsequent release phases.
+*   **Future Enhancements and Final Milestone:** Long-term enhancements, post-launch operationalization, and final closeout milestone.
+*   **Cross-Project and External Dependencies:** Critical interdependencies with other organizational initiatives, platforms, or vendors.
+*   **Critical Architectural and Strategic Assumptions:** Foundational assumptions underpinning delivery timelines and resource models.
+*   **Strategic Risks and Mitigation:** Major strategic risks that could impact timeline execution and roadmap milestones.
 
 </div>

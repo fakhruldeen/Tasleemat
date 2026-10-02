@@ -1,95 +1,67 @@
 ---
 lang: en
 layout: default
-title: Procurement Audit Report
-nav_order: 1
+title: Procurement Audit
+nav_order: 7
 ---
-
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
-# Artifact: Procurement Audit Report
+# Project Artifact: Procurement Audit
 
 **Document Reference:** `PMO-06.07`
 
-This document provides a detailed, professional reference for understanding the
-purpose of the **Procurement Audit Report** and using it effectively as part of
-the Tasleemat methodology.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Procurement Audit** in alignment with the
+Tasleemat framework.
 
 ---
 
-### 1. What is it?
-An official Tasleemat document called the **Procurement Audit Report**, used to
-review contracts and contracting processes for completeness, accuracy, and
-effectiveness. It is a technique from process **12.3 Control Procurements** in
-the PMBOK Guide - Sixth Edition, conducted periodically throughout the project
-or as needed.
+### 1. What?
+A formal audit report evaluating vendor performance, procurement process compliance, and contracting effectiveness.
 
 ---
 
 ### 2. Why?
-To ensure alignment with Tasleemat standards, to provide transparency, to
-monitor performance, and to improve both the procurement process and its results
-on the current procurement and on other contracts.
+Protects organizational commercial interests, validates vendor deliverable compliance, and captures procurement lessons.
 
 ---
 
 ### 3. When?
-This artifact is prepared and updated primarily during the **Monitoring and
-Controlling Process Group** of the project lifecycle, either periodically or as
-needed.
+Conducted periodically during contract execution and prior to formal contract closeout.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Maintained by the project manager, the project management
-office, or a procurement auditor, and reviewed by the procurement manager and
-finance control.
+Authored by Procurement Auditor or Contracts Specialist and reviewed by Procurement Lead and Project Manager.
 
 ---
 
 ### Tailoring Tips
-*   Add qualitative information, such as how easy the vendor was to work with,
-    the timeliness of returning calls, and the collaborative attitude. This
-    provides useful information for future procurement opportunities.
-*   You may add further contract or procurement elements beyond the five core
-    dimensions if your procurement category calls for them.
-
-### Alignment
-*   Procurement management plan
-*   Contractor status report
-*   Contract closeout report
-
-### 5. How?
-To accurately and professionally complete the **PROCUREMENT AUDIT REPORT**, the
-responsible party must populate the following critical sections based on the
-project context (ensure `parameters.md` is referenced for global project
-variables):
-
-*   **Audit Information:** Record the procurements or contracts audited, the
-    audit scope, the period covered, and the audit method.
-*   **What Worked Well:** For scope, quality, schedule, cost, and any other
-    dimension, describe what was handled well and give the evidence for it.
-*   **What Can Be Improved:** For the same five dimensions, describe what could
-    be improved and the recommended action.
-*   **Procurement Management Process Audit:** For Plan Procurements, Conduct
-    Procurements, and Control Procurements, state whether each was followed, and
-    record the tools and techniques used and whether they were effective.
-*   **Good Practices to Share:** Describe practices worth sharing or
-    incorporating into organisational policies, procedures, or processes, and
-    include lessons learned.
-*   **Areas for Improvement:** Describe what should improve in the procurement
-    process and what should be incorporated into policies, procedures, or
-    processes, and include lessons learned.
-*   **Comments:** Add any comments that add relevance to the audit.
+*   Include vendor relationship sentiment and ease of collaboration for strategic partnership evaluations.
+*   Align with organizational supply chain compliance frameworks for regulated public procurements.
 
 ---
 
-### 📥 Related Files
-* [📄 Printable Template (Markdown)](06_07_Procurement_Audit_Template.md)
-* [🤖 LLM Instructions](06_07_Procurement_Audit.md)
-* [📊 Data Structure (JSON)](06_07_Procurement_Audit.json)
-* [📈 Tabular Data (CSV)](06_07_Procurement_Audit.csv)
+### Alignment
+Directly aligns with Procurement Management Plan, Contractor Status Reports, Contract Closeout, and PMO standards.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Procurement Audit**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Procurements or Contracts Audited:** The specific procurement contracts, tender packages, and vendors audited.
+*   **Audit Scope:** The scope, contract boundaries, and sampling methodology of the procurement audit.
+*   **Period Covered:** The date range and milestones examined during the procurement audit.
+*   **Audit Method:** The methodology used (e.g., contract file review, vendor interviews, financial reconciliation).
+*   **Vendor Performance Audit - What Worked Well:** Aspects of contract scope, quality, schedule, and cost delivered successfully with supporting evidence.
+*   **Vendor Performance Audit - What Can Be Improved:** Deficiencies, delays, or cost variances identified across contract dimensions with recommendations.
+*   **Procurement Management Process Audit:** Audit evaluation across Plan Procurements, Conduct Procurements, and Control Procurements.
+*   **Good Practices to Share:** Contracting best practices, negotiation tactics, and lessons learned for reuse across the PMO.
+*   **Areas for Improvement:** Recommendations for updating organizational procurement policies, templates, and procedures.
+*   **Comments:** Additional auditor observations, commercial context, or closing remarks.
 
 </div>

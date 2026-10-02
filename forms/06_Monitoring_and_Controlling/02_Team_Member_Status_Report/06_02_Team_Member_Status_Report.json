@@ -1,84 +1,110 @@
 {
-    "_llm_instructions": "Populate the Team Member Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.\n- Schedule and Activities (Current Period): Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.\n- Cost and Budget (Current Period): Provide information on funds planned vs spent, and the root cause of any cost variances.\n- Quality and Corrective Actions: Identify quality variances and planned corrective or preventive actions.\n- Planning for Next Period: Outline the schedule and cost plans for the upcoming reporting period.\n- Risks, Issues, and Escalations: Log new risks, issues, and any matters requiring escalation.\n- Project Knowledge and Decisions: Document key decisions made and lessons learned to transfer to organizational repositories.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "TEAM MEMBER STATUS REPORT",
     "document_reference": "PMO-06.02",
+    "_llm_instructions": "Populate the fields of 'TEAM MEMBER STATUS REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Report Information": {
-            "guidance": "Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.",
-            "value": {
-                "Reporting Period Start Date": "",
-                "Reporting Period End Date": "",
-                "Team Member Name": "",
-                "Team Member Role": "",
-                "Prepared By (Team Member)": ""
-            }
+        "f01_Activities_planned_this_reporting_period": {
+            "section": "Schedule and Activities (Current Period)",
+            "label": "Activities planned this reporting period",
+            "guidance": "Tasks and work packages scheduled for execution by this member during this period.",
+            "value": ""
         },
-        "Schedule and Activities (Current Period)": {
-            "guidance": "Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.",
-            "value": {
-                "Activities planned this reporting period": [
-                    "",
-                    "",
-                    ""
-                ],
-                "Activities accomplished this reporting period": [
-                    "",
-                    "",
-                    ""
-                ],
-                "Activities planned but not accomplished this reporting period": [
-                    "",
-                    "",
-                    ""
-                ],
-                "Root cause of schedule variances": ""
-            }
+        "f02_Activities_accomplished_this_reporting_period": {
+            "section": "Schedule and Activities (Current Period)",
+            "label": "Activities accomplished this reporting period",
+            "guidance": "Tasks and work packages successfully finalized by this member during this period.",
+            "value": ""
         },
-        "Cost and Budget (Current Period)": {
-            "guidance": "Provide information on funds planned vs spent, and the root cause of any cost variances.",
-            "value": {
-                "Funds planned to be spent this reporting period": "",
-                "Funds spent this reporting period": "",
-                "Root cause of cost variances": ""
-            }
+        "f03_Activities_planned_but_not_accomplished_this_reporting_period": {
+            "section": "Schedule and Activities (Current Period)",
+            "label": "Activities planned but not accomplished this reporting period",
+            "guidance": "Scheduled tasks that were started but not completed or deferred.",
+            "value": ""
         },
-        "Quality and Corrective Actions": {
-            "guidance": "Identify quality variances and planned corrective or preventive actions.",
-            "value": {
-                "Quality variances identified this period": "",
-                "Planned corrective or preventive action": ""
-            }
+        "f04_Root_cause_of_schedule_variances": {
+            "section": "Schedule and Activities (Current Period)",
+            "label": "Root cause of schedule variances",
+            "guidance": "Underlying reasons for any task delays or workload obstacles.",
+            "value": ""
         },
-        "Planning for Next Period": {
-            "guidance": "Outline the schedule and cost plans for the upcoming reporting period.",
-            "value": {
-                "Activities planned for next reporting period": [
-                    "",
-                    "",
-                    ""
-                ],
-                "Costs planned for next reporting period": ""
-            }
+        "f05_Funds_planned_to_be_spent_this_reporting_period": {
+            "section": "Cost and Budget (Current Period)",
+            "label": "Funds planned to be spent this reporting period",
+            "guidance": "Planned labor hours or direct expenses allocated for the member this period.",
+            "value": ""
         },
-        "Risks, Issues, and Escalations": {
-            "guidance": "Log new risks, issues, and any matters requiring escalation.",
-            "value": {
-                "New risks identified": "",
-                "New issues identified": "",
-                "Escalations": ""
-            }
+        "f06_Funds_spent_this_reporting_period": {
+            "section": "Cost and Budget (Current Period)",
+            "label": "Funds spent this reporting period",
+            "guidance": "Actual labor hours or expenses incurred by the member during this period.",
+            "value": ""
         },
-        "Project Knowledge and Decisions": {
-            "guidance": "Document key decisions made and lessons learned to transfer to organizational repositories.",
-            "value": {
-                "Decisions made": "",
-                "Lessons learned / Knowledge transfer": ""
-            }
+        "f07_Root_cause_of_cost_variances": {
+            "section": "Cost and Budget (Current Period)",
+            "label": "Root cause of cost variances",
+            "guidance": "Reasons for discrepancies between planned and actual resource expenditures.",
+            "value": ""
         },
-        "Comments": {
-            "guidance": "Document any comments that add relevance to this report.",
+        "f08_Quality_variances_identified_this_period": {
+            "section": "Quality and Corrective Actions",
+            "label": "Quality variances identified this period",
+            "guidance": "Defects, rework, or non-conformance issues encountered in deliverables.",
+            "value": ""
+        },
+        "f09_Planned_corrective_or_preventive_action": {
+            "section": "Quality and Corrective Actions",
+            "label": "Planned corrective or preventive action",
+            "guidance": "Targeted remedial steps to correct quality issues or prevent recurring defects.",
+            "value": ""
+        },
+        "f10_Activities_planned_for_next_reporting_period": {
+            "section": "Planning for Next Period",
+            "label": "Activities planned for next reporting period",
+            "guidance": "Upcoming work assignments and deliverables scheduled for the next interval.",
+            "value": ""
+        },
+        "f11_Costs_planned_for_next_reporting_period": {
+            "section": "Planning for Next Period",
+            "label": "Costs planned for next reporting period",
+            "guidance": "Estimated hours or expenditures planned for the upcoming reporting period.",
+            "value": ""
+        },
+        "f12_New_risks_identified": {
+            "section": "Risks, Issues, and Escalations",
+            "label": "New risks identified",
+            "guidance": "Potential technical, operational, or resource uncertainties identified by the member.",
+            "value": ""
+        },
+        "f13_New_issues_identified": {
+            "section": "Risks, Issues, and Escalations",
+            "label": "New issues identified",
+            "guidance": "Immediate roadblocks, blockers, or dependencies requiring team resolution.",
+            "value": ""
+        },
+        "f14_Escalations": {
+            "section": "Risks, Issues, and Escalations",
+            "label": "Escalations",
+            "guidance": "Impediments requiring intervention from the Project Manager or Team Lead.",
+            "value": ""
+        },
+        "f15_Decisions_made": {
+            "section": "Project Knowledge and Decisions",
+            "label": "Decisions made",
+            "guidance": "Technical or operational choices adopted by the team member during execution.",
+            "value": ""
+        },
+        "f16_Lessons_learned_and_knowledge_transfer": {
+            "section": "Project Knowledge and Decisions",
+            "label": "Lessons learned and knowledge transfer",
+            "guidance": "Practical findings and best practices captured during task execution.",
+            "value": ""
+        },
+        "f17_Comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Additional reflections, notes, or contextual feedback from the team member.",
             "value": ""
         }
     }

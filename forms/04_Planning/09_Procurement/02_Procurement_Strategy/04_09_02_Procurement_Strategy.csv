@@ -1,5 +1,7 @@
-﻿Field,Guidance,LLM_Generated_Value
-Delivery Methods,"Describe the delivery method (e.g., joint venture, representative, design build, etc.).",
-Contract Type Selection,Select the contract types.,"{""FFP"": false, ""FPIF"": false, ""FP-EPA"": false, ""CPFF"": false, ""CPIF"": false, ""CPAF"": false, ""T&M"": false, ""Other"": """"}"
-Incentive or Award Fees,List any incentive or award fees and their associated criteria.,"[{""Incentive or Award Fee"": """", ""Criteria"": """"}]"
-Procurement Life Cycle,"List the procurement phases, entry/exit criteria, deliverables, and knowledge transfer.","[{""Phase"": """", ""Entry Criteria"": """", ""Key Deliverables or Milestones"": """", ""Exit Criteria"": """", ""Knowledge transfer"": """"}]"
+Section,Field,Guidance,LLM_Generated_Value
+Delivery Methods and Contract Types,Project Delivery Method,"The selected delivery structure (e.g., Design-Build, Turnkey EPC, Professional Services, Agile Staff Augmentation).",
+Delivery Methods and Contract Types,Contract Payment Types and Rationale,"Selected contract payment mechanism (Firm Fixed Price, Cost Reimbursable, Target Price) and justification.",
+Incentive and Fee Structures,Incentive Fees and Bonus Provisions,"Performance-based financial incentives, early completion bonuses, or quality metrics.",
+Incentive and Fee Structures,Penalty and Liquidated Damages Clauses,Contractual liquidated damages and penalty provisions for unexcused schedule delays.,
+Procurement Phases and Sourcing Life Cycle,Procurement Sourcing Stages,"Sequence of procurement stages: market analysis, pre-qualification, RFP issuance, evaluation, negotiation, award.",
+Procurement Phases and Sourcing Life Cycle,Market Engagement and Competitive Sourcing Approach,"Method of market engagement (Sole Source, Open Competitive Tender, Limited Request for Quotation).",

@@ -12,73 +12,53 @@ nav_order: 4
 
 **Document Reference:** `PMO-04.02.04`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Requirements Traceability Matrix** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Requirements Traceability Matrix** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A grid that links product requirements from their origin to the deliverables that satisfy them.
+A bidirectional tracking artifact ensuring each requirement provides business value and is verified by test execution.
 
 ---
 
 ### 2. Why?
-It helps ensure that each requirement adds business value by linking it to the business and project objectives. It provides a means to track requirements throughout the project life cycle.
+Guarantees no requirements are omitted, prevents unauthorized work, and provides instant impact analysis for changes.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **PLANNING Process Group** of the project lifecycle.
+Established during requirements planning and maintained through development, testing, and acceptance.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager or Business Analyst.
+Maintained by Business Analyst and QA Lead, audited by Project Manager and PMO.
 
 ---
 
 ### Tailoring Tips
-• For complex projects you may need to invest in requirements management software to help manage and track requirements. Using a paper form is usually only helpful for small projects or when tracking requirements at a high level.
-• For projects with one or more vendors you may want to add a field indicating which organization is accountable for meeting each requirement.
-• Consider an outline format with the business requirement at a parent level and technical requirement and specifications subordinate to the business requirement.
-
-### Alignment
-The requirements traceability matrix should be aligned and consistent with the following documents:
-• Development approach
-• Requirements management plan
-• Requirements documentation
-• Release and iteration plan
-
-### 5. How?
-To accurately and professionally complete the **REQUIREMENTS TRACEABILITY MATRIX**, the responsible party must populate the following critical table columns based on the project context (ensure `parameters.md` is referenced for global project variables):
-
-**Requirements Traceability Matrix:**
-*   **ID:** Enter a unique requirement identifier.
-*   **Requirement:** Document the condition or capability that must be met.
-*   **Source:** The stakeholder that identified the requirement.
-*   **Priority:** Prioritize the requirement category.
-*   **Category:** Categorize the requirement.
-*   **Business objective:** List the business objective met by fulfilling the requirement.
-*   **Deliverable:** Identify the deliverable that is associated with the requirement.
-*   **Verification:** Describe the metric that is used to measure the satisfaction of the requirement.
-*   **Validation:** Describe the technique that will be used to validate the requirement.
-
-**Inter-Requirements Traceability Matrix:**
-*   **Business Req ID:** Enter a unique business requirement identifier.
-*   **Business Requirement:** Document the business requirement.
-*   **Business Priority:** Prioritize the business requirement.
-*   **Business Source:** Document the stakeholder who identified the business requirement.
-*   **Technical Req ID:** Enter a unique technical requirement identifier.
-*   **Technical Requirement:** Document the technical performance requirement.
-*   **Technical Priority:** Prioritize the technical requirement.
-*   **Technical Source:** Document the stakeholder who identified the technical requirement.
+*   Use ALM/Jira issue links for agile feature-to-story-to-test traceability.
+*   Maintain comprehensive tabular compliance matrices for external regulatory audits.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_02_04_Requirements_Traceability_Matrix_Template.md)
-* [🤖 LLM Generation Prompt](04_02_04_Requirements_Traceability_Matrix.md)
-* [📊 Data Schema (JSON)](04_02_04_Requirements_Traceability_Matrix.json)
-* [📈 Tabular Data - Traceability Matrix (CSV)](04_02_04_Requirements_Traceability_Matrix.csv)
-* [📈 Tabular Data - Inter-Requirements Matrix (CSV)](04_02_04_Inter-Requirements_Traceability_Matrix.csv)
+### Alignment
+Integrates Business Case, Project Scope Statement, WBS, Technical Architecture, and Quality Test Plans.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Requirements Traceability Matrix**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Traceability Purpose and Baseline Reference:** The governing objective and versioned requirements baseline linked across the matrix.
+*   **Traceability Dimensions and Attributes:** Key parameters tracked including source origin, WBS work package, design component, and test case ID.
+*   **Business Need to Requirement Linkage:** Explicit linkage connecting overarching business goals to detailed functional requirements.
+*   **Requirement to WBS Deliverable Mapping:** Traceability mapping associating each requirement with its corresponding WBS work package.
+*   **Requirement to Design and Test Case Mapping:** Verification mapping linking requirements to technical architecture components and test verification cases.
+*   **Core Inter-Requirement Dependencies:** Identified functional linkages, prerequisite requirements, and cross-feature constraints.
+*   **Impact and Traceability Governance:** Protocols for assessing downstream deliverable impact when a linked requirement is modified.
 
 </div>

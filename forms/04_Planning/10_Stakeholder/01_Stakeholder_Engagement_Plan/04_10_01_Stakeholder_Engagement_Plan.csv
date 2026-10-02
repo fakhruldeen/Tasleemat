@@ -1,5 +1,8 @@
-﻿Field,Guidance,LLM_Generated_Value
-Stakeholder Engagement Assessment Matrix,"Use 'C' for Current and 'D' for Desired engagement level (Unaware, Resistant, Neutral, Supportive, Leading).","[{""Stakeholder Name"": """", ""Unaware"": """", ""Resistant"": """", ""Neutral"": """", ""Supportive"": """", ""Leading"": """"}]"
-Stakeholder Changes,"Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.",
-Interrelationships,List any relationships between and among stakeholder groups.,
-Stakeholder Engagement Approach,Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.,"[{""Stakeholder Name"": """", ""Engagement Approach"": """"}]"
+Section,Field,Guidance,LLM_Generated_Value
+Stakeholder Engagement Assessment Matrix,Stakeholder Name and Role,"Designated key stakeholder, organizational title, and sphere of influence.",
+Stakeholder Engagement Assessment Matrix,Current vs Desired Engagement Level,"Assessment of current engagement (Unaware, Resistant, Neutral, Supportive, Leading) vs. desired target level.",
+Stakeholder Engagement Assessment Matrix,Engagement Gap Analysis,Analytical evaluation explaining the gap between current and desired engagement states.,
+Stakeholder Relationships and Interdependencies,Inter-Stakeholder Dynamics and Coalitions,"Analysis of political dynamics, alliances, and influence networks among stakeholder groups.",
+Stakeholder Relationships and Interdependencies,Stakeholder Expectations and Key Concerns,"Documented primary expectations, operational concerns, and sensitivity triggers.",
+Engagement Strategies and Action Protocols,Tailored Engagement Strategy,Specific actionable interventions designed to move the stakeholder to the desired engagement state.,
+Engagement Strategies and Action Protocols,Engagement Monitoring and Feedback Loop,Process for evaluating engagement effectiveness and adjusting tactics throughout delivery.,

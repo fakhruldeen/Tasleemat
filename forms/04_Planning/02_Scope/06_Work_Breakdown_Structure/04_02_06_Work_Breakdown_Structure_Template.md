@@ -1,7 +1,9 @@
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Work Breakdown Structure:** Generate a Markdown table containing exactly the columns specified below. Build a realistic multi-level hierarchy (e.g., Level 1 -> Control Accounts -> Work Packages) containing at least 8 to 12 rows based on the project scope.
+- WBS Structure and Hierarchy: Provide comprehensive project data for all required fields in this section.
+- Work Breakdown Elements: Provide comprehensive project data for all required fields in this section.
+- WBS Outline Representation: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -9,16 +11,43 @@ Section Instructions:
 <h1 align="center">WORK BREAKDOWN STRUCTURE</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Work Breakdown Structure (Outline)
-<!-- The WBS is successively broken down into finer levels of detail. Each work package rolls up to one and only one control account. -->
+## 1. WBS Structure and Hierarchy
 
-| WBS ID | Element Name | Element Type | Description | Control Account ID | Accounting Code |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**WBS Decomposition Approach:**
+[ Add details... ]
+
+**Hierarchy Levels and Coding Scheme:**
+[ Add details... ]
+
+**100 Percent Rule Compliance:**
+[ Add details... ]
+
+---
+
+## 2. Work Breakdown Elements
+
+**Level 1 Summary Elements:**
+[ Add details... ]
+
+**Level 2 and 3 Intermediate Deliverables:**
+[ Add details... ]
+
+**Lowest-Level Work Packages Summary:**
+[ Add details... ]
+
+---
+
+## 3. WBS Outline Representation
+
+**Hierarchical WBS Outline:**
+[ Add details... ]
+
+**Control Accounts and Work Package Identifiers:**
+[ Add details... ]
 
 ---
 
@@ -27,8 +56,8 @@ Section Instructions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

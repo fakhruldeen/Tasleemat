@@ -12,71 +12,53 @@ nav_order: 2
 
 **Document Reference:** `PMO-04.06.02`
 
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Resource Requirements** in alignment with the
+Tasleemat framework.
+
 ---
 
-### Context & Definition
-The resource requirements describe the type and quantity of resources needed to complete the project work. Resources include:
-*   People
-*   Equipment
-*   Material
-*   Supplies
-*   Locations (as needed)
+### 1. What?
+A structured schedule table recording human, equipment, and material resource needs per activity.
 
-Locations can include training rooms, testing sites, and so on.
+---
 
-The activity resource requirements can receive information from:
-*   Assumption log
-*   Resource management plan
-*   Scope baseline
-*   Activity list
-*   Activity attributes
-*   Cost estimates resource calendars
-*   Risk register
+### 2. Why?
+Enables accurate resource allocation, prevents overallocation, and informs procurement planning.
 
-It provides information to:
-*   Duration estimating worksheet
-*   Project schedule
-*   Cost estimating worksheet
-*   Risk register
-*   Procurement management plan
+---
 
-The resource requirements form is an output from process 9.2 Estimate Activity Resources in the PMBOK® Guide – Sixth Edition. Resource requirements are based on the project scope. Therefore, if the scope is known and stable, the requirements should remain relatively stable. If the scope is evolving, the resource requirements will evolve as well. The resource requirements will become more detailed and more stable over time.
+### 3. When?
+Developed during resource planning following activity definition and prior to final duration estimating.
+
+---
+
+### 4. Who?
+Created by Project Scheduler and Task Leads, reviewed by Resource Manager and Project Manager.
+
+---
 
 ### Tailoring Tips
-Consider the following tips to help tailor the resource requirements to meet your needs:
-*   You may want to divide the form into two sections—one for team resources and one for physical resources. As an alternative you can have one section for internal resources and one section for contracted or purchased resources.
-*   Consider adding a column that includes the basis of estimates. This can include supporting detail such as:
-    *   Method used for estimating the quantities
-    *   Range of estimates
-    *   Confidence level of estimates
-    *   Constraints or risks associated with the resource
-*   For projects with large amounts of inventory, supplies, or material you may want to document support requirements, such as inventory, supply chain, and logistical requirements.
+*   Focus on cross-functional skill matrix profiles for agile team capacity planning.
+*   Specify detailed equipment specs and operator certification requirements for construction.
+
+---
 
 ### Alignment
-The resource requirements should be aligned and consistent with the following documents:
-*   Project schedule
-*   Cost estimates
-*   Bid documents
+Integrates with Activity Attributes, Duration Estimates, Cost Estimates, and Resource Calendars.
 
 ---
 
-### Document Elements Description (Table 2.26)
+### 5. How?
+To accurately and professionally complete the **Resource Requirements**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-| Document Element | Description |
-| :--- | :--- |
-| **ID** | Unique identifier |
-| **Type of resource** | Indicate whether the resource is a team resource or physical resource. If physical, indicate if it is equipment, supplies, material, location, or some other form of resource. |
-| **Quantity** | Document the number or quantity of the resource needed for the activity. Indicate the unit of measure used for estimating resources. |
-| **Assumptions** | Enter assumptions associated with the resource, such as availability, certifications, etc. |
-| **Basis of estimate** | Include the method used for estimating the quantities, range of estimates, confidence level, and constraints or risks associated with the resource. |
-| **Comments** | Include information on grade, competency, or other relevant information. |
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_06_02_Resource_Requirements_Template.md)
-* [🤖 LLM Generation Prompt](04_06_02_Resource_Requirements.md)
-* [📊 Data Schema (JSON)](04_06_02_Resource_Requirements.json)
-* [📈 Tabular Data (CSV)](04_06_02_Resource_Requirements.csv)
+*   **Activity Identifier and Role Required:** The schedule activity code and specific professional role or technical job title required.
+*   **Skill Competencies and Quantity Needed:** Required certifications, technical expertise, and quantity of headcount required.
+*   **Estimated Effort Hours and Allocation:** Total estimated person-hours and allocated percentage commitment for each resource.
+*   **Equipment, Machinery, and Tool Requirements:** Specific hardware, specialized machinery, computing infrastructure, or testing tools needed.
+*   **Materials, Supplies, and Facilities:** Physical raw materials, office space, testing laboratories, or staging environments required.
+*   **Resource Availability Dates and Constraints:** Calendar timeframes, mobilization dates, shift constraints, and lead time requirements.
+*   **Resource Assumptions and Risk Factors:** Key assumptions regarding staffing market availability, productivity rates, and bottleneck risks.
 
 </div>

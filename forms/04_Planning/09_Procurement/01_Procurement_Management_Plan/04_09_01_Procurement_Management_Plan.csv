@@ -1,10 +1,9 @@
-﻿Field,Guidance,LLM_Generated_Value
-Procurement Integration,"Define how the contractor's work will integrate with the project (Scope, Schedule, Documentation, Risk, Reporting).","[{""Area"": ""Scope"", ""Integration Approach"": """"}, {""Area"": ""Schedule"", ""Integration Approach"": """"}, {""Area"": ""Documentation"", ""Integration Approach"": """"}, {""Area"": ""Risk"", ""Integration Approach"": """"}, {""Area"": ""Reporting"", ""Integration Approach"": """"}]"
-Timing of Procurement Activities,Identify the timetable of key procurement activities.,"[{""Date"": """", ""Activity"": """"}]"
-Performance Metrics,Document the metrics that will be used to evaluate the seller's performance.,"[{""Item"": """", ""Metric"": """", ""Measurement Method"": """"}]"
-"Roles, Responsibilities, and Authority","Define the roles, responsibilities, and authority level.","[{""Role"": """", ""Responsibility"": """", ""Authority"": """"}]"
-Assumptions and Constraints,Record assumptions and constraints related to the procurement activities.,"[{""Category"": """", ""Assumption/Constraint"": """"}]"
-Legal Jurisdiction and Currency,Identify the location that has legal jurisdiction. Identify the currency that will be used for pricing and payment.,
-Independent Estimates,Document whether independent cost estimates will be used and if they will be needed for source selection.,
-Risk Management Requirements,Document requirements for performance bonds or insurance contracts to reduce risk.,
-Prequalified Sellers,List any prequalified sellers that will be used.,"["""", """"]"
+Section,Field,Guidance,LLM_Generated_Value
+Procurement Integration and Scheduling,Procurement Strategy and Project Integration,Integration strategy coordinating contract acquisitions with overall project schedule and scope baselines.,
+Procurement Integration and Scheduling,Procurement Timetable and Milestone Alignment,"Key procurement lifecycle milestones (RFP issuance, bid evaluation, contract award, delivery).",
+"Procurement Roles, Authority, and Metrics",Procurement Roles and Sign-off Authority,"Defined roles (Procurement Manager, Legal Counsel, Technical Evaluators) and contracting authority limits.",
+"Procurement Roles, Authority, and Metrics",Vendor Performance Metrics and SLAs,Objective metrics and service level agreements used to measure vendor performance.,
+Contract Types and Pre-Qualified Vendors,Standard Contract Types Selection,"Authorized contract structures (Firm Fixed Price, Time and Materials, Cost-Plus) mapped to deliverable types.",
+Contract Types and Pre-Qualified Vendors,Pre-Qualified Vendor Selection Approach,Approach for evaluating and maintaining pre-qualified vendor lists and source directories.,
+"Legal Jurisdiction, Currency, and Risk Management","Legal Jurisdiction, Dispute Terms, and Currency","Governing commercial legal jurisdiction, dispute resolution protocols, and billing currency.",
+"Legal Jurisdiction, Currency, and Risk Management",Procurement Risk and Independent Estimates,Independent Cost Estimate (ICE) requirements and vendor default mitigation strategies.,

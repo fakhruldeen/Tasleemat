@@ -1,14 +1,13 @@
 <!-- LLM INSTRUCTIONS: Populate the Earned Value Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 
 Section-by-Section Instructions:
-- Report Information: Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.
-- Basic Earned Value Metrics: Enter the core EVM financial figures for the current reporting period, the current period cumulative, and the past period cumulative.
+- Report Information: Provide the reporting period dates, level of analysis, and the project manager's name.
+- Basic Earned Value Metrics: Enter the core EVM financial figures for the current reporting period, current period cumulative, and past period cumulative.
 - Variances and Indices: Calculate variances and performance indices for each period column.
 - Percentages: Indicate percentages for each period column.
-- Forecasting (Estimates): Forecast completion costs using the EAC formulas, select the EAC method, justify the selection, and calculate the TCPI. Provide values for each period column.
-- Root Cause and Impacts Analysis: Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.
-- Comments: Document any comments that add relevance to this report.
--->
+- Forecasting (Estimates): Forecast completion costs using the EAC formulas, select the EAC method, justify the selection, and calculate the TCPI.
+- Root Cause and Impacts Analysis: Describe the root causes for variances and their impact on budget, critical path, and deliverables.
+- Comments: Document any comments that add relevance to this report. -->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>

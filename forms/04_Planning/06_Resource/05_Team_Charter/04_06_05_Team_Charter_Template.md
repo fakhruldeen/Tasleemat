@@ -1,13 +1,10 @@
-<!-- LLM INSTRUCTIONS: Fill in the Team Charter based on the project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Team values and principles:** List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.
-*   **Meeting guidelines:** Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc.
-*   **Communication guidelines:** List guidelines used for effective communication. Examples include everyone voices their opinion, no dominating the conversation, no interrupting, not using inflammatory language, etc.
-*   **Decision-making process:** Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited.
-*   **Conflict resolution process:** Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc.
-*   **Other agreements:** List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members.
-*   **Team Members Signatures:** Provide a table listing the Name of each team member.
+- Team Values and Shared Vision: Provide comprehensive project data for all required fields in this section.
+- Operating Agreements and Guidelines: Provide comprehensive project data for all required fields in this section.
+- Communication and Meeting Protocols: Provide comprehensive project data for all required fields in this section.
+- Decision-Making and Conflict Resolution: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -15,49 +12,50 @@ Section Instructions:
 <h1 align="center">TEAM CHARTER</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
-
----
-
-### Team values and principles
-> [ Add details... ]
-
----
-
-### Meeting guidelines
-> [ Add details... ]
-
----
-
-### Communication guidelines
-> [ Add details... ]
-
----
-
-### Decision-making process
-> [ Add details... ]
-
----
-
-### Conflict resolution process
-> [ Add details... ]
-
----
-
-### Other agreements
-> [ Add details... ]
-
----
-
-### Team Members Signatures
-
-| Name | Signature | Date |
 | :--- | :--- | :--- |
-| [ Add details... ] | | |
-| [ Add details... ] | | |
-| [ Add details... ] | | |
-| [ Add details... ] | | |
-| [ Add details... ] | | |
+
+---
+
+## 1. Team Values and Shared Vision
+
+**Core Team Values:**
+[ Add details... ]
+
+**Shared Project Mission and Vision:**
+[ Add details... ]
+
+---
+
+## 2. Operating Agreements and Guidelines
+
+**Working Norms and Ground Rules:**
+[ Add details... ]
+
+**Core Working Hours and Availability:**
+[ Add details... ]
+
+---
+
+## 3. Communication and Meeting Protocols
+
+**Meeting Cadence and Rules:**
+[ Add details... ]
+
+**Communication Channels Usage:**
+[ Add details... ]
+
+---
+
+## 4. Decision-Making and Conflict Resolution
+
+**Decision-Making Framework:**
+[ Add details... ]
+
+**Conflict Escalation and Resolution Steps:**
+[ Add details... ]
+
+**Team Signatures and Commitment:**
+[ Add details... ]
 
 ---
 
@@ -65,9 +63,9 @@ Section Instructions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Team Member / Contributor** | {{Prepared_By}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

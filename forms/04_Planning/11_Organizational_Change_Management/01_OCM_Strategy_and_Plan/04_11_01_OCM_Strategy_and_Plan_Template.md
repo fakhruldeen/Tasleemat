@@ -1,13 +1,33 @@
-<!--  
-LLM INSTRUCTIONS:
-Fill out the template below. Replace all instances of `[ Add details... ]` or empty spaces with the relevant project content. Use `parameters.md` for context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Context and Definition:
+An Organizational Change Management (OCM) Strategy and Plan guides the human and behavioral side of project transition. While technical project plans deliver the solution, the OCM plan ensures that affected individuals, teams, and stakeholders embrace, adopt, and effectively use the new capabilities to realize the expected business benefits.
+
+It can receive information from:
+*   The Project Charter, establishing strategic goals and expected organizational outcomes
+*   The Stakeholder Register and Analysis, mapping impacted groups and their initial attitudes
+*   The Scope Management Plan, defining process and workflow changes
+
+It provides information to:
+*   The Training Plan and Log, defining required skill-building and learning interventions
+*   The Communications Management Plan, aligning change messaging with broader project communications
+*   The Project Status Report, reporting change readiness metrics and adoption progress
+
+Tailoring Tips:
+*   Focus on people, not just systems. Successful change is measured by adoption and sustained behavior, not merely technical deployment.
+*   Secure active, visible sponsorship. Leaders must visibly model the change and communicate its strategic importance directly to their teams.
+*   Address resistance with empathy and data. Uncover root causes of apprehension early rather than treating resistance as mere compliance failure.
+*   Measure adoption post-launch. Track real-world usage and performance metrics to ensure old habits do not re-emerge.
+
+Alignment:
+The OCM Strategy and Plan should be aligned and consistent with:
+*   The Project Management Plan, synchronizing change milestones with technical releases
+*   The Communications Management Plan, ensuring unified and timely stakeholder messaging
+*   The Risk Register, capturing organizational, cultural, and adoption risks
 
 Section Instructions:
-*   **Change Vision:** Why the human change is necessary.
-*   **Stakeholder Impact Analysis:** How different groups will be affected.
-*   **Communication Strategy:** How changes will be communicated.
-*   **Resistance Management:** How to handle pushback from users.
-*   **Sponsorship Strategy:** How leaders will champion the change.
+*   Change Strategy and Impact: define the purpose and future vision of the change, assess the breadth of stakeholder impact, and establish the leadership sponsorship roadmap.
+*   Enablement and Adoption: outline the communications and engagement approach, establish proactive resistance management tactics, and define readiness benchmarks and long-term reinforcement mechanisms.
 -->
 
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
@@ -15,42 +35,47 @@ Section Instructions:
 <h1 dir="ltr" align="center">OCM STRATEGY AND PLAN</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Change Vision
-<!-- Why the human change is necessary. -->
+## Change Strategy and Impact
 
-> [ Add details... ]
+### Change Vision
+
+[ Add details... ]
 
 ---
 
 ### Stakeholder Impact Analysis
-<!-- How different groups will be affected. -->
 
-> [ Add details... ]
-
----
-
-### Communication Strategy
-<!-- How changes will be communicated. -->
-
-> [ Add details... ]
-
----
-
-### Resistance Management
-<!-- How to handle pushback from users. -->
-
-> [ Add details... ]
+[ Add details... ]
 
 ---
 
 ### Sponsorship Strategy
-<!-- How leaders will champion the change. -->
 
-> [ Add details... ]
+[ Add details... ]
+
+---
+
+## Enablement and Adoption
+
+### Communication Strategy
+
+[ Add details... ]
+
+---
+
+### Resistance Management
+
+[ Add details... ]
+
+---
+
+### Readiness and Reinforcement
+
+[ Add details... ]
 
 ---
 

@@ -91,7 +91,7 @@ Section-by-Section Instructions:
 **Change requests submitted this period:**
 [ Add details... ]
 
-**Lessons learned / Knowledge transfer:**
+**Lessons learned and knowledge transfer:**
 [ Add details... ]
 
 ---

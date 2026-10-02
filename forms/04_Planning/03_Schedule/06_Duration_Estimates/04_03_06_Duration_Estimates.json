@@ -1,38 +1,57 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties. Populate the array for the Duration Estimates based on the context. Context: Duration estimates provide information on the amount of time it will take to complete project work. They can be determined by developing an estimate for each activity, work package, or control account, using expert judgment or quantitative methods. They are an output from process 6.4 Estimate Activity Durations in the PMBOK® Guide – Sixth Edition.",
     "form_name": "DURATION ESTIMATES",
     "document_reference": "PMO-04.03.06",
+    "_llm_instructions": "Populate the fields of 'DURATION ESTIMATES' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.06.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Duration Estimates": {
-            "guidance": "Generate a JSON array representing the duration estimates table.",
-            "value": [
-                {
-                    "ID": "",
-                    "Activity Description": "",
-                    "Estimation Method": "",
-                    "Effort Hours": "",
-                    "Contingency Reserve": "",
-                    "Duration Estimates": ""
-                },
-                {
-                    "ID": "",
-                    "Activity Description": "",
-                    "Estimation Method": "",
-                    "Effort Hours": "",
-                    "Contingency Reserve": "",
-                    "Duration Estimates": ""
-                },
-                {
-                    "ID": "",
-                    "Activity Description": "",
-                    "Estimation Method": "",
-                    "Effort Hours": "",
-                    "Contingency Reserve": "",
-                    "Duration Estimates": ""
-                }
-            ]
+        "f01_Activity_Identifier_and_Description": {
+            "section": "Activity Duration Estimates Table",
+            "label": "Activity Identifier and Description",
+            "guidance": "The activity code and concise work summary for each estimated activity.",
+            "value": ""
+        },
+        "f02_Estimation_Method_Applied": {
+            "section": "Activity Duration Estimates Table",
+            "label": "Estimation Method Applied",
+            "guidance": "The specific technique used (analogous, parametric, three-point, or bottom-up).",
+            "value": ""
+        },
+        "f03_Estimated_Effort_Hours_and_Assigned_Resources": {
+            "section": "Activity Duration Estimates Table",
+            "label": "Estimated Effort Hours and Assigned Resources",
+            "guidance": "Total calculated person-hours of effort and assigned resource quantities.",
+            "value": ""
+        },
+        "f04_Estimated_Duration": {
+            "section": "Activity Duration Estimates Table",
+            "label": "Estimated Duration",
+            "guidance": "Calculated working duration in work days or weeks required to complete the activity.",
+            "value": ""
+        },
+        "f05_Historical_Data_and_Productivity_Rates": {
+            "section": "Basis of Estimates and Assumptions",
+            "label": "Historical Data and Productivity Rates",
+            "guidance": "Empirical reference data, productivity metrics, and historical benchmarks used.",
+            "value": ""
+        },
+        "f06_Key_Estimating_Assumptions": {
+            "section": "Basis of Estimates and Assumptions",
+            "label": "Key Estimating Assumptions",
+            "guidance": "Foundational assumptions regarding resource availability, skill proficiencies, and work shifts.",
+            "value": ""
+        },
+        "f07_Schedule_Contingency_Reserve": {
+            "section": "Contingency and Reserve Analysis",
+            "label": "Schedule Contingency Reserve",
+            "guidance": "Calculated contingency buffer allocated to accommodate identified activity risks.",
+            "value": ""
+        },
+        "f08_Total_Activity_Duration_with_Contingency": {
+            "section": "Contingency and Reserve Analysis",
+            "label": "Total Activity Duration with Contingency",
+            "guidance": "Final baseline duration inclusive of contingency buffer used in the schedule model.",
+            "value": ""
         }
     }
 }

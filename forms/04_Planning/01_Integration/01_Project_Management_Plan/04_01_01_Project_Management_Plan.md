@@ -1,59 +1,144 @@
 ---
 lang: en
-Form: PROJECT MANAGEMENT PLAN (Instructions)
+Form: Project Management Plan (Instructions)
 ---
 
-# PROJECT MANAGEMENT PLAN - LLM GENERATION GUIDE
+# Project Management Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROJECT MANAGEMENT PLAN`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Project Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The project management plan describes how the team will execute, monitor, control, and close the project. While it has some unique information, it is primarily comprised of all the subsidiary management plans and the baselines. The project management plan combines all this information into a cohesive and integrated approach to managing the project. The project management plan contains plans for managing all the Knowledge Areas as well as specific aspects of the project that require special focus. The project management plan also contains baselines. Common baselines include: Scope, Schedule, Cost, and Performance measurement baseline. The project management plan can receive information from all the subsidiary management plans and baselines, and provides information to all other integration processes. This document is developed as the initial project planning is conducted, and then it is not usually changed unless there is a significant change in the charter, environment, or scope of the project.
-> 
+> **Context and Definition:**
+> The master integrative document that defines how the project is executed, monitored, controlled, and closed across all knowledge areas.
+
 > **Alignment:**
-> The project management plan should be aligned and consistent with the following documents:
-> • All subsidiary management plans
-> • Project roadmap
-> • Milestone list
+> Integrates all subsidiary management plans, scope/schedule/cost baselines, and aligns with the Project Charter and Governance Framework.
 
 ---
 
-### Project life cycle
-**Instruction:** Describe the life cycle that will be used to accomplish the project. MUST be formatted as a Markdown table with exactly 4 columns: #, Phase, Key activities, Key Deliverables.
+## Project Life Cycle
+
+### Project Life Cycle Description
+**Instruction:** Description of the chosen life cycle phases, transitions, and overarching progression.
+
+**Generated Value:** [ Add details... ]
+
+### Phase Names and Progression
+**Instruction:** Defined sequence and boundaries of project phases from inception to closeout.
+
+**Generated Value:** [ Add details... ]
+
+### Key Phase Activities
+**Instruction:** Major technical and managerial activities executed across each project phase.
+
+**Generated Value:** [ Add details... ]
+
+### Key Phase Deliverables
+**Instruction:** Core verified outputs and milestone deliverables generated within each phase.
+
+**Generated Value:** [ Add details... ]
+
+## Phase Reviews and Criteria
+
+### Phase Review Mechanism
+**Instruction:** Governance gates, health checks, and decision points conducted between phases.
+
+**Generated Value:** [ Add details... ]
+
+### Phase Entry Criteria
+**Instruction:** Mandatory readiness prerequisites and inputs required before entering each phase.
+
+**Generated Value:** [ Add details... ]
+
+### Phase Exit Criteria
+**Instruction:** Specific acceptance standards and approvals needed to formally close each phase.
+
+**Generated Value:** [ Add details... ]
+
+## Development Approaches
+
+### Selected Development Approach
+**Instruction:** Justification for predictive, agile, hybrid, iterative, or incremental delivery.
+
+**Generated Value:** [ Add details... ]
+
+### Deliverable-Specific Approaches
+**Instruction:** Tailored development methodologies mapped to distinct deliverable types.
+
+**Generated Value:** [ Add details... ]
+
+## Subsidiary Management Plans
+
+### Scope and Requirements Management Summary
+**Instruction:** Integration summary of scope definition, baseline control, and requirements tracing.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule and Cost Management Summary
+**Instruction:** Integration summary of schedule development, budgeting, and variance thresholds.
+
+**Generated Value:** [ Add details... ]
+
+### Quality and Resource Management Summary
+**Instruction:** Integration summary of quality standards, staffing, and team development.
+
+**Generated Value:** [ Add details... ]
+
+### Communications and Stakeholder Summary
+**Instruction:** Integration summary of information distribution and stakeholder engagement.
+
+**Generated Value:** [ Add details... ]
+
+### Risk and Procurement Summary
+**Instruction:** Integration summary of risk mitigation and vendor procurement management.
+
+**Generated Value:** [ Add details... ]
+
+### Change and Configuration Summary
+**Instruction:** Integration summary of change control procedures and configuration management.
+
+**Generated Value:** [ Add details... ]
+
+## Variance Thresholds
+
+### Scope Variance Threshold
+**Instruction:** Defined boundary for allowable scope variance before triggering formal change control.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Variance Threshold
+**Instruction:** Permissible schedule variance limits before mandatory schedule recovery actions.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Variance Threshold
+**Instruction:** Authorized percentage or financial variance limits before budget escalation.
+
+**Generated Value:** [ Add details... ]
+
+## Project Baselines
+
+### Scope Baseline Definition
+**Instruction:** The approved project scope statement, WBS, and associated WBS dictionary.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule Baseline Definition
+**Instruction:** The authorized project schedule model with baseline start and finish dates.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Baseline Definition
+**Instruction:** The approved time-phased project budget excluding management reserves.
+
+**Generated Value:** [ Add details... ]
+
+### Performance Measurement Baseline (PMB)
+**Instruction:** Integrated scope-schedule-cost baseline used for earned value management.
+
+**Generated Value:** [ Add details... ]
 
 ---
-
-### Phase Reviews and Criteria
-**Instruction:** Define the reviews and criteria for each phase. MUST be formatted as a Markdown table with exactly 5 columns: #, Phase, Reviews, Entry criteria, Exit criteria.
-
----
-
-### Development approaches
-**Instruction:** Document the specific approach you will take to create key deliverables. Common approaches include predictive, adaptive, iterative, or incremental. MUST be formatted as a Markdown table with exactly 3 columns: #, Deliverable, Development approach.
-
----
-
-### Subsidiary management plans
-**Instruction:** List the subsidiary management plans that are part of the project management plan. MUST be formatted as a Markdown table with exactly 2 columns: Name, Comment. The following rows MUST be pre-filled under Name: Change Management, Scope Management, Schedule Management, Requirements Management, Cost Management, Quality Management, Resource Management, Communications Management, Risk Management, Procurement Management, Stakeholder Engagement, Other Plans.
-
----
-
-### Scope Variance Thresholds
-**Instruction:** Define acceptable scope variances and how the scope baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Scope variance threshold, Scope baseline management.
-
----
-
-### Schedule Variance Thresholds
-**Instruction:** Define acceptable schedule variances and how the schedule baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Schedule variance threshold, Schedule baseline management.
-
----
-
-### Cost Variance Thresholds
-**Instruction:** Define acceptable cost variances and how the cost baseline will be managed. MUST be formatted as a Markdown table with exactly 2 columns: Cost variance threshold, Cost baseline management.
-
----
-
-### Baselines
-**Instruction:** Attach all project baselines.
-

@@ -1,40 +1,80 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this SCOPE MANAGEMENT PLAN template based on the provided project context. Context & Definition: The scope management plan is part of the project management plan. It specifies how the project scope will be defined, developed, monitored, controlled, and validated. Planning how to manage scope should include at least processes for developing a detailed scope statement, decomposing the project into discrete deliverables using a WBS, determining what constitutes a scope change versus a revision, maintaining the WBS and the scope baseline, and how deliverables will be accepted. The scope management plan can receive information from the project charter and project management plan, and it provides information to requirements documentation, scope statement, WBS, and WBS dictionary. It is developed once and does not usually change. Alignment: The scope management plan should be aligned and consistent with the following documents:\n• Development approach\n• Life cycle description\n• Change management plan\n• Requirements management plan\n• Release and iteration plan",
     "form_name": "SCOPE MANAGEMENT PLAN",
     "document_reference": "PMO-04.02.01",
+    "_llm_instructions": "Populate the fields of 'SCOPE MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.02.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project Scope Statement Preparation": {
-            "guidance": "Describe the process for developing a detailed project scope statement from the high-level project charter and requirements documentation. Use lists where appropriate.",
+        "f01_Scope_Planning_Approach": {
+            "section": "Scope Definition Process",
+            "label": "Scope Planning Approach",
+            "guidance": "Overall approach for developing the detailed project scope statement and requirements.",
             "value": ""
         },
-        "Roles and Responsibilities": {
-            "guidance": "Identify the key roles and their specific responsibilities regarding scope management (e.g., who develops the WBS, who approves scope changes, who formally accepts deliverables). Use lists where appropriate.",
+        "f02_Roles_and_Responsibilities_Scope": {
+            "section": "Scope Definition Process",
+            "label": "Roles and Responsibilities (Scope)",
+            "guidance": "Key roles responsible for defining, decomposing, and validating project scope.",
             "value": ""
         },
-        "WBS": {
-            "guidance": "Describe the WBS and whether it will be arranged using phases, geography, major deliverables, or some other way. Document guidelines for establishing control accounts and work packages. Use lists where appropriate.",
+        "f03_Scope_Statement_Preparation_Steps": {
+            "section": "Scope Definition Process",
+            "label": "Scope Statement Preparation Steps",
+            "guidance": "Sequence of analytical activities used to author and validate the scope statement.",
             "value": ""
         },
-        "WBS Dictionary": {
-            "guidance": "Identify the information that will be documented in the WBS Dictionary and the level of detail required. Use lists where appropriate.",
+        "f04_WBS_Decomposition_Methodology": {
+            "section": "WBS Creation and Structure",
+            "label": "WBS Decomposition Methodology",
+            "guidance": "Techniques used to break down major deliverables into verifiable work packages.",
             "value": ""
         },
-        "Scope baseline maintenance": {
-            "guidance": "Identify the types of scope changes that will need to go through the formal change control process and how the scope baseline will be maintained. Use lists where appropriate.",
+        "f05_WBS_Level_of_Detail": {
+            "section": "WBS Creation and Structure",
+            "label": "WBS Level of Detail",
+            "guidance": "Guidelines governing the granularity and completion criteria for lowest-level WBS nodes.",
             "value": ""
         },
-        "Deliverable acceptance": {
-            "guidance": "For each deliverable, identify how the deliverable will be validated for customer acceptance, including any tests or documentation needed for sign-off. Use lists where appropriate.",
+        "f06_WBS_Identification_Scheme": {
+            "section": "WBS Creation and Structure",
+            "label": "WBS Identification Scheme",
+            "guidance": "Numbering and hierarchical coding structure applied across the work breakdown structure.",
             "value": ""
         },
-        "Scope and requirements integration": {
-            "guidance": "Describe how project and product requirements will be addressed in the scope statement and WBS. Identify the integration points and how requirements and scope validation will occur. Use lists where appropriate.",
+        "f07_WBS_Dictionary_Development": {
+            "section": "WBS Dictionary and Baseline Maintenance",
+            "label": "WBS Dictionary Development",
+            "guidance": "Standard procedure for authoring detailed work package definitions and milestones.",
             "value": ""
         },
-        "Project management and business analysis integration": {
-            "guidance": "Describe how business analysis and project management will integrate as scope is being defined, developed, tested, validated, and turned over to operations. Use lists where appropriate.",
+        "f08_Scope_Baseline_Approval_and_Maintenance": {
+            "section": "WBS Dictionary and Baseline Maintenance",
+            "label": "Scope Baseline Approval and Maintenance",
+            "guidance": "Formal protocols for baseline sign-off, version control, and maintenance updates.",
+            "value": ""
+        },
+        "f09_Deliverable_Verification_Process": {
+            "section": "Scope Verification and Deliverable Acceptance",
+            "label": "Deliverable Verification Process",
+            "guidance": "Quality control and technical verification procedures prior to client inspection.",
+            "value": ""
+        },
+        "f10_Formal_Acceptance_Criteria_and_Sign_off": {
+            "section": "Scope Verification and Deliverable Acceptance",
+            "label": "Formal Acceptance Criteria and Sign-off",
+            "guidance": "Step-by-step procedure for obtaining formal customer or sponsor acceptance.",
+            "value": ""
+        },
+        "f11_Scope_Change_Control_Integration": {
+            "section": "Scope Control and Integration",
+            "label": "Scope Change Control Integration",
+            "guidance": "Workflow connecting scope variance identification to formal change request processing.",
+            "value": ""
+        },
+        "f12_Scope_and_Requirements_Traceability_Integration": {
+            "section": "Scope Control and Integration",
+            "label": "Scope and Requirements Traceability Integration",
+            "guidance": "Alignment mechanism linking requirements traceability to scope deliverables.",
             "value": ""
         }
     }

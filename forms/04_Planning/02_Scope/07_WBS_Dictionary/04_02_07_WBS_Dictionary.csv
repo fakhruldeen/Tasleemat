@@ -1,4 +1,12 @@
-Code of Accounts,Work Package Name,Due Dates,Description of Work,Assumptions and Constraints,Milestones,Quality Requirements,Acceptance Criteria,Technical Information,Agreement Information
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Work Package Identification,WBS Identifier and Title,The unique WBS code number and descriptive name of the specific work package.,
+Work Package Identification,Control Account and Responsible Organization,Associated control account code and organizational unit or person accountable for delivery.,
+Work Package Identification,Work Package Owner,Designated lead engineer or manager responsible for work package execution.,
+Scope of Work and Deliverables,Work Package Scope Description,"Detailed narrative describing the technical work, tasks, and activities required for this package.",
+Scope of Work and Deliverables,Deliverables Produced,Specific tangible or intangible outputs generated upon work package completion.,
+Scope of Work and Deliverables,Milestone Schedule and Target Dates,"Target start date, intermediate technical milestones, and completion deadline.",
+Quality Criteria and Acceptance,Quality Requirements and Standards,"Mandatory quality metrics, engineering specifications, and technical standards.",
+Quality Criteria and Acceptance,Acceptance Criteria and Sign-off Lead,Clear criteria and designated stakeholder authorized to accept the work package.,
+Resource and Cost Allocations,Required Resources and Skills,"Personnel roles, technical expertise, materials, and specialized equipment needed.",
+Resource and Cost Allocations,Cost Estimate and Budget Allocation,Approved budget allocation and cost baseline figure assigned to this work package.,
+Resource and Cost Allocations,"Assumptions, Constraints, and Dependencies","Specific operational constraints, key assumptions, and preceding/succeeding work package linkages.",

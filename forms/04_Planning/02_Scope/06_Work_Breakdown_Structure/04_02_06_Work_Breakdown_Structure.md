@@ -1,33 +1,68 @@
 ---
 lang: en
-Form: WORK BREAKDOWN STRUCTURE (Instructions)
+Form: Work Breakdown Structure (Instructions)
 ---
 
-# WORK BREAKDOWN STRUCTURE - LLM GENERATION GUIDE
+# Work Breakdown Structure - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `WORK BREAKDOWN STRUCTURE`. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Work Breakdown Structure». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The work breakdown structure (WBS) is used to decompose all the work of the project. It begins at the project level and is successively broken down into finer levels of detail. The lowest level, a work package, represents a discrete deliverable that can be decomposed into activities to produce the deliverable. The WBS is an output from the process 5.4 Create WBS in the PMBOK® Guide – Sixth Edition.
-> 
+> **Context and Definition:**
+> A hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish project objectives.
+
 > **Alignment:**
-> The WBS should be aligned and consistent with the following documents:
-• Project charter
-• Requirements documentation
-• Project scope statement
-• WBS dictionary
-• Activity list
+> Forms the architectural framework linking Project Scope Statement, WBS Dictionary, Project Schedule, and Cost Baseline.
 
 ---
 
-### Work Breakdown Structure
-**Instruction:** Generate a Markdown table containing exactly the columns specified below. Build a realistic multi-level hierarchy (e.g., Level 1 -> Control Accounts -> Work Packages) containing at least 8 to 12 rows based on the project scope.
+## WBS Structure and Hierarchy
 
-**Table Columns & Generation Rules:**
-*   **WBS ID:** Provide a hierarchical numeric structure (e.g., 1.0, 1.1, 1.1.1) to clearly indicate outline level.
-*   **Element Name:** The concise name of the deliverable or component.
-*   **Element Type:** Categorize the element (e.g., 'Project Phase', 'Major Deliverable', 'Control Account', 'Work Package'). Ensure you include Control Accounts and Work Packages.
-*   **Description:** A very brief description of the element's scope.
-*   **Control Account ID:** If the element is a Work Package, list the ID of the Control Account it rolls up to.
-*   **Accounting Code:** A specific organizational accounting code to track expenditures for this deliverable.
+### WBS Decomposition Approach
+**Instruction:** The organizing principle used to decompose scope (e.g., phase-based, deliverable-based, or subsystem-based).
+
+**Generated Value:** [ Add details... ]
+
+### Hierarchy Levels and Coding Scheme
+**Instruction:** Definition of hierarchical levels (Project, Phase/Subsystem, Deliverable, Work Package) and WBS numbering scheme.
+
+**Generated Value:** [ Add details... ]
+
+### 100 Percent Rule Compliance
+**Instruction:** Confirmation that all parent nodes capture 100 percent of subordinate scope with no external additions.
+
+**Generated Value:** [ Add details... ]
+
+## Work Breakdown Elements
+
+### Level 1 Summary Elements
+**Instruction:** High-level summary nodes representing major phases or principal delivery workstreams.
+
+**Generated Value:** [ Add details... ]
+
+### Level 2 and 3 Intermediate Deliverables
+**Instruction:** Subordinate deliverables and integrated components decomposing summary elements.
+
+**Generated Value:** [ Add details... ]
+
+### Lowest-Level Work Packages Summary
+**Instruction:** Discrete manageable units of work assigned for cost estimation, scheduling, and control.
+
+**Generated Value:** [ Add details... ]
+
+## WBS Outline Representation
+
+### Hierarchical WBS Outline
+**Instruction:** Complete textual outline displaying the hierarchical breakdown of the entire project scope.
+
+**Generated Value:** [ Add details... ]
+
+### Control Accounts and Work Package Identifiers
+**Instruction:** Assigned identifiers mapping control accounts to accounting and management structures.
+
+**Generated Value:** [ Add details... ]
+
+---

@@ -1,35 +1,37 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this Training Plan and Log template based on the provided project context. Context & Definition: [ Add Context & Definition Here ] Alignment: [ Add Alignment Information Here ]",
     "form_name": "Training Plan and Log",
     "document_reference": "PMO-04.11.02",
-    "project_title": "",
-    "date_prepared": "",
+    "_llm_instructions": "Populate the fields of 'Training Plan and Log' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.11.02.",
     "fields": {
-        "Training Plan And Log Entries": {
-            "guidance": "Please populate the table below with the following details:\n- **Target Audience:** Who needs training.\n- **Training Module:** What they are learning.\n- **Delivery Method:** In-person, webinar, self-paced.\n- **Date/Schedule:** When training occurs.\n- **Completion Status:** Number of users completed.",
-            "value": [
-                {
-                    "Target Audience": "",
-                    "Training Module": "",
-                    "Delivery Method": "",
-                    "Date/Schedule": "",
-                    "Completion Status": ""
-                },
-                {
-                    "Target Audience": "",
-                    "Training Module": "",
-                    "Delivery Method": "",
-                    "Date/Schedule": "",
-                    "Completion Status": ""
-                },
-                {
-                    "Target Audience": "",
-                    "Training Module": "",
-                    "Delivery Method": "",
-                    "Date/Schedule": "",
-                    "Completion Status": ""
-                }
-            ]
+        "f01_Target_Audience": {
+            "section": "Training Activities",
+            "label": "Target Audience",
+            "guidance": "The specific stakeholder group, department, or role that requires training to effectively operate new systems or execute updated workflows.",
+            "value": ""
+        },
+        "f02_Training_Module": {
+            "section": "Training Activities",
+            "label": "Training Module",
+            "guidance": "The title, core learning objectives, and curriculum content designed to build required technical and operational competencies.",
+            "value": ""
+        },
+        "f03_Delivery_Method": {
+            "section": "Training Activities",
+            "label": "Delivery Method",
+            "guidance": "The instructional format and medium used (e.g., in-person workshop, live virtual session, self-paced e-learning, or peer coaching).",
+            "value": ""
+        },
+        "f04_Target_Date": {
+            "section": "Training Activities",
+            "label": "Target Date",
+            "guidance": "The scheduled delivery date or completion deadline, aligned with project deployment and user readiness milestones.",
+            "value": ""
+        },
+        "f05_Completion_Status": {
+            "section": "Training Activities",
+            "label": "Completion Status",
+            "guidance": "The current progress or adoption status (e.g., Scheduled, In Progress, Completed) tracking user participation and certification.",
+            "value": ""
         }
     }
 }

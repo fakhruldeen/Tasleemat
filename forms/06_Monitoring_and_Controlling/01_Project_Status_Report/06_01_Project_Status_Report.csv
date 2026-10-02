@@ -1,8 +1,19 @@
-﻿Field,Guidance,LLM_Generated_Value
-Report Information,"Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.","{""Reporting Period Start Date"": """", ""Reporting Period End Date"": """", ""Prepared By (Project Manager)"": """", ""Sponsor Name"": """"}"
-Schedule Performance (Current Period),"List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.","{""Accomplishments for this reporting period"": ["""", """", """"], ""Accomplishments planned but not completed this reporting period"": ["""", """", """"], ""Root cause of schedule variances"": """", ""Impact to upcoming milestones or project due date"": """", ""Planned corrective or preventive action (Schedule)"": """"}"
-Cost Performance (Current Period),"Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.","{""Funds spent this reporting period"": """", ""Root cause of cost variances"": """", ""Impact to overall budget or contingency funds"": """", ""Planned corrective or preventive action (Cost)"": """"}"
-Planning for Next Period,Outline the accomplishments and costs planned for the upcoming reporting period.,"{""Accomplishments planned for next reporting period"": ["""", """", """"], ""Costs planned for next reporting period"": """"}"
-"Risks, Issues, and Escalations","Log new risks, issues, and any matters requiring escalation to sponsors or program managers.","{""New risks identified"": """", ""New issues identified"": """", ""Escalations"": """"}"
-Project Knowledge and Decisions,"Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.","{""Decisions made"": """", ""Change requests submitted this period"": """", ""Lessons learned / Knowledge transfer"": """"}"
-Comments,Document any comments that add relevance to this report.,
+Section,Field,Guidance,LLM_Generated_Value
+Schedule Performance (Current Period),Accomplishments for this reporting period,"Key milestones, deliverables, and tasks completed during this period.",
+Schedule Performance (Current Period),Accomplishments planned but not completed this reporting period,Activities that were scheduled for completion but remain in progress or delayed.,
+Schedule Performance (Current Period),Root cause of schedule variances,Underlying causes and contributing factors for any schedule delays or slippages.,
+Schedule Performance (Current Period),Impact to upcoming milestones or project due date,Expected effects of current schedule performance on future critical path milestones.,
+Schedule Performance (Current Period),Planned corrective or preventive action (Schedule),Specific recovery actions planned to bring the schedule back in alignment with baseline.,
+Cost Performance (Current Period),Funds spent this reporting period,Total expenditures and actual costs incurred during the current reporting period.,
+Cost Performance (Current Period),Root cause of cost variances,Reasons for any cost overruns or underruns compared against the cost baseline.,
+Cost Performance (Current Period),Impact to overall budget or contingency funds,Projected impact of current spending trends on total project budget and reserves.,
+Cost Performance (Current Period),Planned corrective or preventive action (Cost),Corrective steps designed to control project expenditure within approved budget limits.,
+Planning for Next Period,Accomplishments planned for next reporting period,"Key objectives, tasks, and deliverables scheduled for execution in the next cycle.",
+Planning for Next Period,Costs planned for next reporting period,Anticipated financial expenditures and commitments for the upcoming period.,
+"Risks, Issues, and Escalations",New risks identified,Newly discovered risks requiring qualitative or quantitative analysis and response planning.,
+"Risks, Issues, and Escalations",New issues identified,Newly materialized issues requiring immediate tracking and resolution.,
+"Risks, Issues, and Escalations",Escalations,Matters requiring immediate intervention or decision-making from executive sponsors.,
+Project Knowledge and Decisions,Decisions made,"Significant architectural, operational, or management decisions ratified during this period.",
+Project Knowledge and Decisions,Change requests submitted this period,"Summary of formal change requests submitted, evaluated, or approved this period.",
+Project Knowledge and Decisions,Lessons learned and knowledge transfer,Insights and practical lessons captured to enhance ongoing and future project performance.,
+Comments,Comments,"Additional explanatory notes, contextual remarks, or qualitative updates.",

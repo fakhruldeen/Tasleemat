@@ -1,24 +1,57 @@
 {
-    "_llm_instructions": "Populate the Decision Log based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Decision Log: Record all project decisions. Include the category, the decision itself, impacts on objectives, affected stakeholders, the responsible party, the date, and any comments (such as alternatives considered or reasoning).",
     "form_name": "DECISION LOG",
     "document_reference": "PMO-05.02",
+    "_llm_instructions": "Populate the fields of 'DECISION LOG' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Decision Log": {
-            "guidance": "Record all project decisions. Include the category, the decision itself, impacts on objectives, affected stakeholders, the responsible party, the date, and any comments (such as alternatives considered or reasoning).",
-            "value": [
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Decision": "",
-                    "Impacts on Deliverables/Objectives": "",
-                    "Impacted Stakeholders": "",
-                    "Responsible Party": "",
-                    "Date": "",
-                    "Comments": ""
-                }
-            ]
+        "f01_ID": {
+            "section": "Decision Log Entries",
+            "label": "ID",
+            "guidance": "Unique identifier for the decision (e.g., DEC-01).",
+            "value": ""
+        },
+        "f02_Category": {
+            "section": "Decision Log Entries",
+            "label": "Category",
+            "guidance": "Category of the decision (e.g., Scope, Architecture, Vendor, Process).",
+            "value": ""
+        },
+        "f03_Decision": {
+            "section": "Decision Log Entries",
+            "label": "Decision",
+            "guidance": "The specific decision made and its underlying rationale.",
+            "value": ""
+        },
+        "f04_Impacts_on_Deliverables_Objectives": {
+            "section": "Decision Log Entries",
+            "label": "Impacts on Deliverables/Objectives",
+            "guidance": "Anticipated impacts on deliverables, budget, schedule, or architecture.",
+            "value": ""
+        },
+        "f05_Impacted_Stakeholders": {
+            "section": "Decision Log Entries",
+            "label": "Impacted Stakeholders",
+            "guidance": "Stakeholders affected by this decision.",
+            "value": ""
+        },
+        "f06_Responsible_Party": {
+            "section": "Decision Log Entries",
+            "label": "Responsible Party",
+            "guidance": "The person or entity responsible for making and enforcing the decision.",
+            "value": ""
+        },
+        "f07_Date": {
+            "section": "Decision Log Entries",
+            "label": "Date",
+            "guidance": "The date on which the decision was officially agreed or approved.",
+            "value": ""
+        },
+        "f08_Comments": {
+            "section": "Decision Log Entries",
+            "label": "Comments",
+            "guidance": "Alternatives considered, trade-offs, and supporting references.",
+            "value": ""
         }
     }
 }

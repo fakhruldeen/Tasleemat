@@ -1,136 +1,284 @@
 {
-    "_llm_instructions": "Populate the Earned Value Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nPeriod columns: every metric table in this form is reported across three period columns - 'Current Reporting Period', 'Current Period Cumulative', and 'Past Period Cumulative'. Populate all three for each metric.\n\nSection-by-Section Instructions:\n- Report Information: Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.\n- Basic Earned Value Metrics: Enter Budget at Completion (BAC) once, then enter Planned Value (PV), Earned Value (EV), and Actual Cost (AC) for each of the three period columns.\n- Variances and Indices: Calculate Schedule Variance (SV), Cost Variance (CV), Schedule Performance Index (SPI), and Cost Performance Index (CPI) for each period column using the stated calculation.\n- Percentages: Indicate Percent Planned (PV/BAC), Percent Earned (EV/BAC), and Percent Spent (AC/BAC) for each period column.\n- Forecasting (Estimates): Calculate EAC w/CPI (BAC/CPI), EAC w/CPI x SPI (AC + ((BAC - EV)/(CPI x SPI))), and TCPI ((BAC - EV)/(BAC - AC)) for each period column, then record the selected EAC and justify the choice.\n- Root Cause and Impacts Analysis: Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "EARNED VALUE ANALYSIS REPORT",
     "document_reference": "PMO-06.05",
+    "_llm_instructions": "Populate the fields of 'EARNED VALUE ANALYSIS REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.05.",
     "project_title": "",
     "date_prepared": "",
-    "period_columns": [
-        "Current Reporting Period",
-        "Current Period Cumulative",
-        "Past Period Cumulative"
-    ],
     "fields": {
-        "Report Information": {
-            "guidance": "Provide the reporting period dates, level of analysis (e.g., project, control account), and the project manager's name.",
-            "value": {
-                "Reporting Period Start Date": "",
-                "Reporting Period End Date": "",
-                "Analysis Level (Project / Control Account)": "",
-                "Prepared By (Project Manager)": ""
-            }
+        "f01_Budget_at_Completion_BAC": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Budget at Completion (BAC)",
+            "guidance": "The total approved baseline budget allocated for the complete project scope.",
+            "value": ""
         },
-        "Basic Earned Value Metrics": {
-            "guidance": "Enter Budget at Completion (BAC) once, then enter Planned Value (PV), Earned Value (EV), and Actual Cost (AC) for each period column.",
-            "value": {
-                "Budget at Completion (BAC)": {
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Planned Value (PV)": {
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Earned Value (EV)": {
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Actual Cost (AC)": {
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                }
-            }
+        "f02_Planned_Value_PV_Current_Reporting_Period": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Planned Value (PV) / Current Reporting Period",
+            "guidance": "The authorized budget assigned to scheduled work for the current reporting period.",
+            "value": ""
         },
-        "Variances and Indices": {
-            "guidance": "Calculate variances and performance indices for each period column using the stated calculation.",
-            "value": {
-                "Schedule Variance (SV)": {
-                    "calculation": "EV - PV",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Cost Variance (CV)": {
-                    "calculation": "EV - AC",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Schedule Performance Index (SPI)": {
-                    "calculation": "EV / PV",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Cost Performance Index (CPI)": {
-                    "calculation": "EV / AC",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                }
-            }
+        "f03_Planned_Value_PV_Current_Period_Cumulative": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Planned Value (PV) / Current Period Cumulative",
+            "guidance": "The cumulative authorized budget planned from project start through current period.",
+            "value": ""
         },
-        "Percentages": {
-            "guidance": "Indicate percentages for each period column using the stated calculation.",
-            "value": {
-                "Percent Planned": {
-                    "calculation": "PV / BAC",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Percent Earned": {
-                    "calculation": "EV / BAC",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Percent Spent": {
-                    "calculation": "AC / BAC",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                }
-            }
+        "f04_Planned_Value_PV_Past_Period_Cumulative": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Planned Value (PV) / Past Period Cumulative",
+            "guidance": "The cumulative planned value calculated at the close of the previous reporting period.",
+            "value": ""
         },
-        "Forecasting (Estimates)": {
-            "guidance": "Forecast completion costs for each period column using the stated calculation, then record the selected EAC and justify the choice.",
-            "value": {
-                "EAC w/CPI": {
-                    "calculation": "BAC / CPI",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "EAC w/CPI x SPI": {
-                    "calculation": "AC + ((BAC - EV) / (CPI x SPI))",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "To Complete Performance Index (TCPI)": {
-                    "calculation": "(BAC - EV) / (BAC - AC)",
-                    "Current Reporting Period": "",
-                    "Current Period Cumulative": "",
-                    "Past Period Cumulative": ""
-                },
-                "Selected EAC - Justification and Explanation": ""
-            }
+        "f05_Earned_Value_EV_Current_Reporting_Period": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Earned Value (EV) / Current Reporting Period",
+            "guidance": "The budgeted amount for the work actually completed during the current period.",
+            "value": ""
         },
-        "Root Cause and Impacts Analysis": {
-            "guidance": "Describe the root causes for variances and their impact on budget, critical path, and deliverables, including trend analysis implications.",
-            "value": {
-                "Root cause of schedule variance": "",
-                "Schedule impact (incl. implications of continued variance)": "",
-                "Root cause of cost variance": "",
-                "Budget impact (incl. intended actions/reserves)": ""
-            }
+        "f06_Earned_Value_EV_Current_Period_Cumulative": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Earned Value (EV) / Current Period Cumulative",
+            "guidance": "The cumulative budgeted amount for all work accomplished from project start to date.",
+            "value": ""
         },
-        "Comments": {
-            "guidance": "Document any comments that add relevance to this report.",
+        "f07_Earned_Value_EV_Past_Period_Cumulative": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Earned Value (EV) / Past Period Cumulative",
+            "guidance": "The cumulative earned value achieved as of the previous reporting period.",
+            "value": ""
+        },
+        "f08_Actual_Cost_AC_Current_Reporting_Period": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Actual Cost (AC) / Current Reporting Period",
+            "guidance": "The actual expenditures incurred for work performed during the current period.",
+            "value": ""
+        },
+        "f09_Actual_Cost_AC_Current_Period_Cumulative": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Actual Cost (AC) / Current Period Cumulative",
+            "guidance": "The cumulative total actual costs incurred from project start through current period.",
+            "value": ""
+        },
+        "f10_Actual_Cost_AC_Past_Period_Cumulative": {
+            "section": "Basic Earned Value Metrics",
+            "label": "Actual Cost (AC) / Past Period Cumulative",
+            "guidance": "The cumulative actual costs recorded as of the previous reporting period.",
+            "value": ""
+        },
+        "f11_Schedule_Variance_SV_Current_Reporting_Period": {
+            "section": "Variances and Indices",
+            "label": "Schedule Variance (SV) / Current Reporting Period",
+            "guidance": "The schedule performance in financial terms (EV - PV) for the current period.",
+            "value": ""
+        },
+        "f12_Schedule_Variance_SV_Current_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Schedule Variance (SV) / Current Period Cumulative",
+            "guidance": "The cumulative schedule variance (Cumulative EV - Cumulative PV) to date.",
+            "value": ""
+        },
+        "f13_Schedule_Variance_SV_Past_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Schedule Variance (SV) / Past Period Cumulative",
+            "guidance": "The cumulative schedule variance as of the prior reporting period.",
+            "value": ""
+        },
+        "f14_Cost_Variance_CV_Current_Reporting_Period": {
+            "section": "Variances and Indices",
+            "label": "Cost Variance (CV) / Current Reporting Period",
+            "guidance": "The financial budget variance (EV - AC) for the current reporting period.",
+            "value": ""
+        },
+        "f15_Cost_Variance_CV_Current_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Cost Variance (CV) / Current Period Cumulative",
+            "guidance": "The cumulative cost variance (Cumulative EV - Cumulative AC) to date.",
+            "value": ""
+        },
+        "f16_Cost_Variance_CV_Past_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Cost Variance (CV) / Past Period Cumulative",
+            "guidance": "The cumulative cost variance as of the prior reporting period.",
+            "value": ""
+        },
+        "f17_Schedule_Performance_Index_SPI_Current_Reporting_Period": {
+            "section": "Variances and Indices",
+            "label": "Schedule Performance Index (SPI) / Current Reporting Period",
+            "guidance": "The schedule efficiency ratio (EV / PV) for the current period.",
+            "value": ""
+        },
+        "f18_Schedule_Performance_Index_SPI_Current_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Schedule Performance Index (SPI) / Current Period Cumulative",
+            "guidance": "The cumulative schedule efficiency ratio (Cumulative EV / Cumulative PV).",
+            "value": ""
+        },
+        "f19_Schedule_Performance_Index_SPI_Past_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Schedule Performance Index (SPI) / Past Period Cumulative",
+            "guidance": "The cumulative schedule efficiency index from the previous reporting period.",
+            "value": ""
+        },
+        "f20_Cost_Performance_Index_CPI_Current_Reporting_Period": {
+            "section": "Variances and Indices",
+            "label": "Cost Performance Index (CPI) / Current Reporting Period",
+            "guidance": "The cost efficiency ratio (EV / AC) for the current period.",
+            "value": ""
+        },
+        "f21_Cost_Performance_Index_CPI_Current_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Cost Performance Index (CPI) / Current Period Cumulative",
+            "guidance": "The cumulative cost efficiency ratio (Cumulative EV / Cumulative AC).",
+            "value": ""
+        },
+        "f22_Cost_Performance_Index_CPI_Past_Period_Cumulative": {
+            "section": "Variances and Indices",
+            "label": "Cost Performance Index (CPI) / Past Period Cumulative",
+            "guidance": "The cumulative cost efficiency index from the previous reporting period.",
+            "value": ""
+        },
+        "f23_Percent_Planned_Current_Reporting_Period": {
+            "section": "Percentages",
+            "label": "Percent Planned / Current Reporting Period",
+            "guidance": "Planned Value divided by BAC for the current reporting period.",
+            "value": ""
+        },
+        "f24_Percent_Planned_Current_Period_Cumulative": {
+            "section": "Percentages",
+            "label": "Percent Planned / Current Period Cumulative",
+            "guidance": "Cumulative Planned Value divided by BAC to measure scheduled completion percentage.",
+            "value": ""
+        },
+        "f25_Percent_Planned_Past_Period_Cumulative": {
+            "section": "Percentages",
+            "label": "Percent Planned / Past Period Cumulative",
+            "guidance": "Cumulative Planned Value divided by BAC as of the prior reporting period.",
+            "value": ""
+        },
+        "f26_Percent_Earned_Current_Reporting_Period": {
+            "section": "Percentages",
+            "label": "Percent Earned / Current Reporting Period",
+            "guidance": "Earned Value divided by BAC for the current reporting period.",
+            "value": ""
+        },
+        "f27_Percent_Earned_Current_Period_Cumulative": {
+            "section": "Percentages",
+            "label": "Percent Earned / Current Period Cumulative",
+            "guidance": "Cumulative Earned Value divided by BAC representing actual project percent complete.",
+            "value": ""
+        },
+        "f28_Percent_Earned_Past_Period_Cumulative": {
+            "section": "Percentages",
+            "label": "Percent Earned / Past Period Cumulative",
+            "guidance": "Cumulative Earned Value divided by BAC as of the prior reporting period.",
+            "value": ""
+        },
+        "f29_Percent_Spent_Current_Reporting_Period": {
+            "section": "Percentages",
+            "label": "Percent Spent / Current Reporting Period",
+            "guidance": "Actual Cost divided by BAC for the current reporting period.",
+            "value": ""
+        },
+        "f30_Percent_Spent_Current_Period_Cumulative": {
+            "section": "Percentages",
+            "label": "Percent Spent / Current Period Cumulative",
+            "guidance": "Cumulative Actual Cost divided by BAC representing total project budget spent to date.",
+            "value": ""
+        },
+        "f31_Percent_Spent_Past_Period_Cumulative": {
+            "section": "Percentages",
+            "label": "Percent Spent / Past Period Cumulative",
+            "guidance": "Cumulative Actual Cost divided by BAC as of the prior reporting period.",
+            "value": ""
+        },
+        "f32_EAC_w_CPI_Current_Reporting_Period": {
+            "section": "Forecasting (Estimates)",
+            "label": "EAC w/CPI / Current Reporting Period",
+            "guidance": "Estimate at Completion assuming future work performed at current period CPI (BAC / CPI).",
+            "value": ""
+        },
+        "f33_EAC_w_CPI_Current_Period_Cumulative": {
+            "section": "Forecasting (Estimates)",
+            "label": "EAC w/CPI / Current Period Cumulative",
+            "guidance": "Estimate at Completion assuming future work performed at cumulative CPI.",
+            "value": ""
+        },
+        "f34_EAC_w_CPI_Past_Period_Cumulative": {
+            "section": "Forecasting (Estimates)",
+            "label": "EAC w/CPI / Past Period Cumulative",
+            "guidance": "Estimate at Completion based on past period cumulative CPI.",
+            "value": ""
+        },
+        "f35_EAC_w_CPI_SPI_Current_Reporting_Period": {
+            "section": "Forecasting (Estimates)",
+            "label": "EAC w/CPI × SPI / Current Reporting Period",
+            "guidance": "Estimate at Completion factoring both cost and schedule indices for current period.",
+            "value": ""
+        },
+        "f36_EAC_w_CPI_SPI_Current_Period_Cumulative": {
+            "section": "Forecasting (Estimates)",
+            "label": "EAC w/CPI × SPI / Current Period Cumulative",
+            "guidance": "Estimate at Completion factoring cumulative cost and schedule performance indices.",
+            "value": ""
+        },
+        "f37_EAC_w_CPI_SPI_Past_Period_Cumulative": {
+            "section": "Forecasting (Estimates)",
+            "label": "EAC w/CPI × SPI / Past Period Cumulative",
+            "guidance": "Estimate at Completion factoring past period cumulative cost and schedule indices.",
+            "value": ""
+        },
+        "f38_To_Complete_Performance_Index_TCPI_Current_Reporting_Period": {
+            "section": "Forecasting (Estimates)",
+            "label": "To Complete Performance Index (TCPI) / Current Reporting Period",
+            "guidance": "Cost efficiency required to complete the remaining work within BAC for current period.",
+            "value": ""
+        },
+        "f39_To_Complete_Performance_Index_TCPI_Current_Period_Cumulative": {
+            "section": "Forecasting (Estimates)",
+            "label": "To Complete Performance Index (TCPI) / Current Period Cumulative",
+            "guidance": "Cost efficiency required to complete the remaining work within BAC cumulatively.",
+            "value": ""
+        },
+        "f40_To_Complete_Performance_Index_TCPI_Past_Period_Cumulative": {
+            "section": "Forecasting (Estimates)",
+            "label": "To Complete Performance Index (TCPI) / Past Period Cumulative",
+            "guidance": "TCPI calculated at the close of the prior reporting period.",
+            "value": ""
+        },
+        "f41_Selected_EAC_Justification_and_Explanation": {
+            "section": "Forecasting (Estimates)",
+            "label": "Selected EAC - Justification and Explanation",
+            "guidance": "Detailed justification of the selected EAC forecasting formula and expected final budget outcome.",
+            "value": ""
+        },
+        "f42_Root_cause_of_schedule_variance": {
+            "section": "Root Cause and Impacts Analysis",
+            "label": "Root cause of schedule variance",
+            "guidance": "Underlying drivers and operational causes for schedule efficiency or delay.",
+            "value": ""
+        },
+        "f43_Schedule_impact_incl_implications_of_continued_variance": {
+            "section": "Root Cause and Impacts Analysis",
+            "label": "Schedule impact (incl. implications of continued variance)",
+            "guidance": "Projected delivery delays and critical path impacts if schedule trends continue.",
+            "value": ""
+        },
+        "f44_Root_cause_of_cost_variance": {
+            "section": "Root Cause and Impacts Analysis",
+            "label": "Root cause of cost variance",
+            "guidance": "Operational factors, rate fluctuations, or scope drivers causing cost variances.",
+            "value": ""
+        },
+        "f45_Budget_impact_incl_intended_actions_reserves": {
+            "section": "Root Cause and Impacts Analysis",
+            "label": "Budget impact (incl. intended actions/reserves)",
+            "guidance": "Financial exposure and reserve utilization strategies to maintain fiscal control.",
+            "value": ""
+        },
+        "f46_Comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Additional contextual observations or recommendations from the EVM analyst.",
             "value": ""
         }
     }

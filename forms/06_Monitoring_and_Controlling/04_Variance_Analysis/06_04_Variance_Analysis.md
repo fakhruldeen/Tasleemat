@@ -1,36 +1,148 @@
 ---
 lang: en
-Form: VARIANCE ANALYSIS (Instructions)
+Form: Variance Analysis (Instructions)
 ---
 
-# VARIANCE ANALYSIS - LLM GENERATION GUIDE
+# Variance Analysis - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `VARIANCE ANALYSIS`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Variance Analysis». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> Variance analysis reports collect and assemble information on project performance variances. Common topics are schedule, cost, and quality variances. It can be provided as a standalone report, as part of the project status report, or as backup to an earned value status report.
+> **Context and Definition:**
+> An analytical tool used to measure the differences between planned baselines and actual performance across schedule, cost, quality, and scope.
 
-**Tailoring Tips:**
-*   Scope variance can be included but is generally indicated by a schedule variance, as either more or less scope will have been accomplished over time.
-*   The variance analysis can be done at an activity, resource, work package, control account, or project level depending on your needs.
-*   You can add a check box to indicate if the information needs to be escalated to the sponsor, program manager, or other appropriate individuals.
-*   You may want to add a field that indicates the implications of continued variance. This can include a forecast based on a trend analysis or based on identified responses.
-
-**Alignment:**
-The variance analysis should be aligned and consistent with the following documents:
-*   Team member status reports
-*   Project status report
-*   Project schedule
-*   Cost estimates
-*   Project budget
-*   Issue log
-*   Earned value status report
-*   Contractor status report
+> **Alignment:**
+> Interlinks with Project Management Plan baselines, Work Performance Reports, Earned Value Analysis, and Change Log.
 
 ---
 
-### Section Generation Instructions
-*   **Variance Analysis Table:** Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.
-*   **Variance Implications and Escalation:** Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.
-*   **Comments:** Document any comments that add relevance to this report.
+## Variance Analysis Table
+
+### Schedule / Planned Result
+**Instruction:** The target baseline schedule milestone, duration, or date.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule / Actual Result
+**Instruction:** The actual completed milestone date, duration, or current progress.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule / Variance
+**Instruction:** Calculated difference between actual schedule performance and the baseline.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule / Root Cause
+**Instruction:** Primary cause and contributing factors for schedule variance.
+
+**Generated Value:** [ Add details... ]
+
+### Schedule / Planned Response
+**Instruction:** Action plan or recovery strategy designed to address schedule variance.
+
+**Generated Value:** [ Add details... ]
+
+### Cost / Planned Result
+**Instruction:** The approved baseline budget or planned expenditure for the period.
+
+**Generated Value:** [ Add details... ]
+
+### Cost / Actual Result
+**Instruction:** The actual expenditures or costs incurred during the period.
+
+**Generated Value:** [ Add details... ]
+
+### Cost / Variance
+**Instruction:** Calculated difference between actual expenditures and the cost baseline.
+
+**Generated Value:** [ Add details... ]
+
+### Cost / Root Cause
+**Instruction:** Primary drivers and events resulting in cost overruns or savings.
+
+**Generated Value:** [ Add details... ]
+
+### Cost / Planned Response
+**Instruction:** Corrective measures and cost containment actions to realign with budget.
+
+**Generated Value:** [ Add details... ]
+
+### Quality / Planned Result
+**Instruction:** The quality metric, acceptance threshold, or standard expected.
+
+**Generated Value:** [ Add details... ]
+
+### Quality / Actual Result
+**Instruction:** The actual measured quality outcome, defect rate, or test score.
+
+**Generated Value:** [ Add details... ]
+
+### Quality / Variance
+**Instruction:** Discrepancy between actual quality achievements and defined quality metrics.
+
+**Generated Value:** [ Add details... ]
+
+### Quality / Root Cause
+**Instruction:** Root cause analysis detailing why quality requirements were not met.
+
+**Generated Value:** [ Add details... ]
+
+### Quality / Planned Response
+**Instruction:** Remediation plan, rework procedures, or process improvements.
+
+**Generated Value:** [ Add details... ]
+
+### Scope / Planned Result
+**Instruction:** The authorized deliverables and work packages committed in the scope statement.
+
+**Generated Value:** [ Add details... ]
+
+### Scope / Actual Result
+**Instruction:** The actual scope deliverables completed and verified during the period.
+
+**Generated Value:** [ Add details... ]
+
+### Scope / Variance
+**Instruction:** Extent of scope variance, unapproved scope additions, or unfinished deliverables.
+
+**Generated Value:** [ Add details... ]
+
+### Scope / Root Cause
+**Instruction:** Factors causing scope variance, creep, or delayed deliverable completions.
+
+**Generated Value:** [ Add details... ]
+
+### Scope / Planned Response
+**Instruction:** Corrective actions, change requests, or realignment to baseline scope.
+
+**Generated Value:** [ Add details... ]
+
+## Variance Implications and Escalation
+
+### Implications of continued variance (Forecast)
+**Instruction:** Anticipated long-term impact on overall project objectives if variances persist.
+
+**Generated Value:** [ Add details... ]
+
+### Escalation Required (Y/N)
+**Instruction:** Clear indication (Yes/No) whether senior leadership escalation is necessary.
+
+**Generated Value:** [ Add details... ]
+
+### Escalation Details
+**Instruction:** Details of the specific escalation path, required decisions, and target stakeholders.
+
+**Generated Value:** [ Add details... ]
+
+## Comments
+
+### Comments
+**Instruction:** Additional explanatory notes, cross-functional dependencies, or contextual insights.
+
+**Generated Value:** [ Add details... ]
+
+---

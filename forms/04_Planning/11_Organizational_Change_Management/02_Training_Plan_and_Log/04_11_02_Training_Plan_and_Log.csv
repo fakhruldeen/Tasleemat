@@ -1,4 +1,6 @@
-Target Audience,Training Module,Delivery Method,Date/Schedule,Completion Status
-,,,,
-,,,,
-,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Training Activities,Target Audience,"The specific stakeholder group, department, or role that requires training to effectively operate new systems or execute updated workflows.",
+Training Activities,Training Module,"The title, core learning objectives, and curriculum content designed to build required technical and operational competencies.",
+Training Activities,Delivery Method,"The instructional format and medium used (e.g., in-person workshop, live virtual session, self-paced e-learning, or peer coaching).",
+Training Activities,Target Date,"The scheduled delivery date or completion deadline, aligned with project deployment and user readiness milestones.",
+Training Activities,Completion Status,"The current progress or adoption status (e.g., Scheduled, In Progress, Completed) tracking user participation and certification.",

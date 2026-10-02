@@ -1,27 +1,12 @@
-﻿Field,Guidance,LLM_Generated_Value
-Executive Summary,Describe overall project risk exposure and major individual risks.,
-Overall Risk Status and Trends,High-level statement of trends and current risk status.,
-Significant Drivers of Overall Risk,Identify the significant drivers of overall project risk.,
-Recommended Responses to Overall Risk,Outline recommended responses to overall project risk.,
-Probability and Impact Matrix,Provide the exact number of risks in each box of the 5x5 matrix.,"[{""Probability \\ Impact"": ""Very High"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""High"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""Medium"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""Low"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}, {""Probability \\ Impact"": ""Very Low"", ""Very High"": """", ""High"": """", ""Medium"": """", ""Low"": """", ""Very Low"": """"}]"
-Metrics,Provide specific metric counts.,"{""Number of scope risks"": """", ""Number of schedule risks"": """", ""Number of cost risks"": """", ""Number of quality risks"": """", ""Number of very high probability risks"": """", ""Number of high probability risks"": """", ""Number of medium probability risks"": """", ""Number of active risks"": """", ""Newly closed risks"": """"}"
-Critical Risks & Responses,List the top critical risks and their responses.,"[{""Top Risks"": """", ""Responses"": """"}]"
-Changes to Critical Risks,Describe any changes to critical risks since the last report.,
-Realized Risks (Transferred to Issue Log),List risks that have occurred and transferred to the issue log.,
-Results from Quantitative Assessments,"Results from S-curve, tornado, etc.",
-Probability of Meeting Objectives,"Provide the probability for Scope, Schedule, Cost, Quality, and Other.","{""Scope"": """", ""Schedule"": """", ""Cost"": """", ""Quality"": """", ""Other"": """"}"
-Range of Outcomes,Detail outcome ranges and variances.,"{""Range of Schedule Outcomes"": """", ""Range of Cost Outcomes"": """", ""Key Drivers of Variances"": """", ""Proposed Responses"": """"}"
-Total Cost Reserve,The total budget allocated for risk responses.,
-Contingency Reserve,Portion of cost reserve for known-unknowns.,
-Management Reserve,Portion of cost reserve for unknown-unknowns.,
-Cost Reserve Used to Date,Cumulative amount of cost reserve consumed so far.,
-Cost Reserve Used This Period,Amount of cost reserve consumed during this period.,
-Remaining Cost Reserve,Balance of cost reserve available.,
-Total Schedule Reserve,Total buffer time allocated for risk responses.,
-Schedule Reserve Used to Date,Cumulative amount of schedule reserve consumed.,
-Schedule Reserve Used This Period,Amount of schedule reserve consumed during this period.,
-Remaining Schedule Reserve,Balance of schedule reserve available.,
-Assessment of Reserve Adequacy,Provide an assessment of whether the remaining reserves are adequate given the current risk profile.,
-Summary of Risk Events,Overview of risk events that occurred and their impacts.,
-Summary of Risk Management Processes,Evaluation of how effectively the risk management processes were executed.,
-Summary of Recommendations,Actionable recommendations stemming from the risk audit.,
+Section,Field,Guidance,LLM_Generated_Value
+Executive Summary and Overall Risk Profile,Overall Project Risk Exposure Summary,"High-level summary of overall project risk health, trends, and risk exposure level.",
+Executive Summary and Overall Risk Profile,Key Risk Drivers and Strategic Factors,"Primary organizational, commercial, or technical drivers influencing project risk.",
+Executive Summary and Overall Risk Profile,Overall Risk Mitigation Strategy,Consolidated strategy for navigating major project uncertainties.,
+Critical Threats and Opportunities Summary,Top Project Threats and Active Responses,"Summary of the most critical individual threats, current status, and active mitigation plans.",
+Critical Threats and Opportunities Summary,Top Project Opportunities and Capture Plans,Summary of major positive opportunities and execution plans to realize benefits.,
+Critical Threats and Opportunities Summary,Realized Risks Transferred to Issue Log,Recently materialized risks that have transitioned to the Issue Log for resolution.,
+Quantitative Risk Exposure and Reserve Adequacy,Quantitative Simulation Findings,Key conclusions derived from quantitative Monte Carlo simulations or probabilistic models.,
+Quantitative Risk Exposure and Reserve Adequacy,Probability of Achieving Project Objectives,Estimated percentage likelihood of achieving target delivery dates and budget limits.,
+Quantitative Risk Exposure and Reserve Adequacy,Contingency Reserve Adequacy Assessment,Audit assessment of total contingency reserve balance against remaining project risk exposure.,
+Risk Management Trends and Recommendations,Risk Process and Metric Trends,"Trend analysis tracking closed risks, newly identified risks, and velocity of response actions.",
+Risk Management Trends and Recommendations,Recommended Governance Interventions,"Strategic recommendations, escalation requests, and required decisions for executive sponsors.",

@@ -3,41 +3,47 @@ lang: en
 Form: Stakeholder Analysis (Instructions)
 ---
 
-# STAKEHOLDER ANALYSIS - LLM GENERATION GUIDE
+# Stakeholder Analysis - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the log. When asked to populate this form, use the guidance provided for each section below to accurately generate the required content. Reference `parameters.md` for global project variables.
+<!--
+System Instructions: This document contains instructions for generating the
+«Stakeholder Analysis». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> Stakeholder analysis is used to classify stakeholders. It can be used to help fill in the stakeholder register. Analyzing stakeholders can also help in planning stakeholder engagement for groups of stakeholders. The following example is used to assess the relative power (high or low), the relative interest (high or low), and the attitude (friend or foe). There are many other ways to categorize stakeholders, such as Influence/impact, or Power/urgency/legitimacy. Stakeholder analysis is a dynamic tool used to identify stakeholders.
-> 
+> **Context and Definition:**
+> A technique of systematically gathering and analyzing quantitative and qualitative information to determine whose interests should be taken into account throughout the project.
+
 > **Alignment:**
-> The stakeholder analysis should be aligned and consistent with the following documents:
-• Stakeholder register
-• Stakeholder engagement plan
+> The Stakeholder Analysis aligns with the Stakeholder Register and Stakeholder Engagement Plan.
 
 ---
+
+## Stakeholder Analysis Entries
 
 ### ID
 **Instruction:** Unique identifier linking back to the Stakeholder Register (e.g., SH-01).
 
----
+**Generated Value:** [ Add details... ]
 
 ### Name or Role
 **Instruction:** The name or role of the stakeholder being analyzed.
 
----
+**Generated Value:** [ Add details... ]
 
 ### Interest
-**Instruction:** The level of interest the stakeholder has in the project outcomes (e.g., High, Medium, Low).
+**Instruction:** The level of interest the stakeholder has in project outcomes (e.g., High, Medium, Low).
 
----
+**Generated Value:** [ Add details... ]
 
 ### Influence
 **Instruction:** The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).
 
----
+**Generated Value:** [ Add details... ]
 
 ### Attitude
-**Instruction:** The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).
+**Instruction:** The stakeholder's stance towards the project (e.g., Champion, Positive, Neutral, Negative).
 
+**Generated Value:** [ Add details... ]
+
+---

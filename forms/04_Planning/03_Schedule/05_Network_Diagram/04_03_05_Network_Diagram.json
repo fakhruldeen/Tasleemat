@@ -1,33 +1,51 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties. Provide the dependency table array and the valid Mermaid syntax for the diagram. Context: The network diagram is a visual display of the relationship between schedule elements. The purpose is to visually depict the types of relationships (FS, SS, FF, SF) and any modifications such as leads or lags between components. It is an output from process 6.3 Sequence Activities in the PMBOK® Guide – Sixth Edition.",
     "form_name": "NETWORK DIAGRAM",
     "document_reference": "PMO-04.03.05",
+    "_llm_instructions": "Populate the fields of 'NETWORK DIAGRAM' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.05.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Dependencies": {
-            "guidance": "Generate a JSON array of the node edges/dependencies.",
-            "value": [
-                {
-                    "Predecessor": "",
-                    "Relationship & Lead/Lag": "",
-                    "Successor": ""
-                },
-                {
-                    "Predecessor": "",
-                    "Relationship & Lead/Lag": "",
-                    "Successor": ""
-                },
-                {
-                    "Predecessor": "",
-                    "Relationship & Lead/Lag": "",
-                    "Successor": ""
-                }
-            ]
+        "f01_Network_Diagramming_Methodology": {
+            "section": "Network Logic and Critical Path Overview",
+            "label": "Network Diagramming Methodology",
+            "guidance": "The logical diagramming method utilized (Precedence Diagramming Method - PDM).",
+            "value": ""
         },
-        "Mermaid Syntax": {
-            "guidance": "Generate the valid Mermaid graph syntax (e.g. graph LR...) representing the dependencies.",
-            "value": "graph LR\n  A[Activity A] -->|FS| B[Activity B]"
+        "f02_Critical_Path_Summary_and_Duration": {
+            "section": "Network Logic and Critical Path Overview",
+            "label": "Critical Path Summary and Duration",
+            "guidance": "Identification of critical path activities, total critical path duration, and zero-float paths.",
+            "value": ""
+        },
+        "f03_Near_Critical_Paths_and_Float_Analysis": {
+            "section": "Network Logic and Critical Path Overview",
+            "label": "Near-Critical Paths and Float Analysis",
+            "guidance": "Analysis of near-critical paths and activities possessing total and free float.",
+            "value": ""
+        },
+        "f04_Core_Predecessor_and_Successor_Chains": {
+            "section": "Precedence Relationships and Dependencies",
+            "label": "Core Predecessor and Successor Chains",
+            "guidance": "Key sequence chains connecting major engineering and development work packages.",
+            "value": ""
+        },
+        "f05_Lead_and_Lag_Justifications": {
+            "section": "Precedence Relationships and Dependencies",
+            "label": "Lead and Lag Justifications",
+            "guidance": "Documented technical justifications for all applied lead times and lag buffers.",
+            "value": ""
+        },
+        "f06_Mermaid_Diagram_Syntax": {
+            "section": "Network Diagram Visualization",
+            "label": "Mermaid Diagram Syntax",
+            "guidance": "Valid Mermaid graph syntax representing the complete node-and-arrow network dependency logic.",
+            "value": ""
+        },
+        "f07_Diagram_Interpretation_Guidelines": {
+            "section": "Network Diagram Visualization",
+            "label": "Diagram Interpretation Guidelines",
+            "guidance": "Narrative guide explaining how to read activity nodes, dependencies, and path flows.",
+            "value": ""
         }
     }
 }

@@ -2,7 +2,7 @@
 lang: en
 layout: default
 title: Stakeholder Register
-nav_order: 1
+nav_order: 4
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -12,58 +12,53 @@ nav_order: 1
 
 **Document Reference:** `PMO-03.04`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **Stakeholder Register** in alignment with Tasleemat framework.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Stakeholder Register** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A project document including the identification, assessment, and classification of project stakeholders.
+A centralized register listing all stakeholders with their contact information, expectations, requirements, and classification.
 
 ---
 
 ### 2. Why?
-Crucial for understanding who impacts or is impacted by the project, enabling effective communication and engagement strategies.
+Effective stakeholder engagement is critical to managing expectations, securing alignment, and project success.
 
 ---
 
 ### 3. When?
-This artifact is primarily prepared, utilized, and updated during the **INITIATING Process Group** of the project lifecycle.
+Created during project initiation and maintained continuously throughout the project lifecycle.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Initiated by the Project Sponsor, drafted by the Project Manager, and validated by key stakeholders.
+Created and managed by the Project Manager with input from project sponsors and team members.
 
 ---
 
 ### Tailoring Tips
-• Combine the position in the organization with the role on the project, especially if it is a smaller project and everyone knows everyone else’s position.
-• Combine the stakeholder analysis matrix information with the stakeholder register.
-• Eliminate position, role, and contact information for small internal projects.
-
-### Alignment
-The stakeholder register should be aligned and consistent with the following documents:
-• Project charter
-• Stakeholder analysis matrix
-• Stakeholder engagement plan
-
-### 5. How?
-To accurately complete this form, populate the following sections:
-
-*   **ID:** Unique identifier for the stakeholder (e.g., SH-01).
-*   **Name:** Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.
-*   **Position/Role:** The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.
-*   **Contact information:** How to communicate with the stakeholder, such as their phone number, email address, or physical address.
-*   **Requirements:** High-level needs for the project and/or product.
-*   **Expectations:** Main expectations of the project and/or product.
-*   **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
+*   Categorize stakeholders by influence and interest to tailor communication strategies.
+*   Regularly review contact details and role changes during phase transitions.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](03_04_Stakeholder_Register_Template.md)
-* [🤖 LLM Generation Prompt](03_04_Stakeholder_Register.md)
-* [📊 Data Schema (JSON)](03_04_Stakeholder_Register.json)
-* [📈 Tabular Data (CSV)](03_04_Stakeholder_Register.csv)
+### Alignment
+The Stakeholder Register aligns with Stakeholder Engagement Plan, Communications Management Plan, and Project Charter.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Stakeholder Register**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **ID:** Unique identifier for the stakeholder (e.g., SH-01).
+*   **Name:** Stakeholder’s name. If unknown, specify the position or organization.
+*   **Position/Role:** The position or functional role the stakeholder holds in the organization or project.
+*   **Contact information:** Communication channels for the stakeholder such as email address or phone number.
+*   **Requirements:** High-level needs and critical requirements for the project and deliverables.
+*   **Expectations:** Main expectations regarding project execution, outcomes, and governance.
+*   **Classification:** Stakeholder categorization (e.g., internal/external, high/medium/low impact).
 
 </div>

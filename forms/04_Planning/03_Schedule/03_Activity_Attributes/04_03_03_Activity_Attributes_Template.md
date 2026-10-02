@@ -1,15 +1,10 @@
-<!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Activity Entries:** Repeat the following block of attributes for EVERY activity defined in the Activity List.
-*   **1. General Information
-*   **ID:** Unique identifier.
-*   **Activity Name:** A brief statement starting with a verb summarizing the activity.
-*   **Planned Release / Iteration:** Indicate the planned release or iteration.
-*   **Description of Work:** Detailed requirements.
-
-#### Dependencies & Scheduling:** Generate a table of dependencies.
-*   **Columns:** Predecessor, Predecessor Relationship, Predecessor Lead/Lag, Successor, Successor Relationship, Successor Lead/Lag.
+- Activity Identification and Overview: Provide comprehensive project data for all required fields in this section.
+- Activity Predecessors and Successors: Provide comprehensive project data for all required fields in this section.
+- Resource and Skill Requirements: Provide comprehensive project data for all required fields in this section.
+- Execution Constraints and Imposed Dates: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -17,47 +12,60 @@ Section Instructions:
 <h1 align="center">ACTIVITY ATTRIBUTES</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-<!-- REPEAT THIS SECTION FOR EACH ACTIVITY -->
-### Activity: [ Add details... ]
+## 1. Activity Identification and Overview
 
-#### General Information
-* **ID:** [ Add details... ]
-* **Activity Name:** [ Add details... ]
-* **Planned Release / Iteration:** [ Add details... ]
-* **Description of Work:**
-> [ Add details... ]
+**Activity Code and Title:**
+[ Add details... ]
 
-#### Dependencies & Scheduling
-| Predecessor | Predecessor Relationship | Predecessor Lead/Lag | Successor | Successor Relationship | Successor Lead/Lag |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Activity Description and Scope Summary:**
+[ Add details... ]
 
-#### Resource Requirements
-* **Number & Type of Team Resources Required:** [ Add details... ]
-* **Skill Requirements:** [ Add details... ]
-* **Required Resources:** [ Add details... ]
-
-#### Execution Requirements
-* **Imposed dates:** [ Add details... ]
-* **Constraints:** [ Add details... ]
-* **Assumptions:** [ Add details... ]
-* **Location of performance:** [ Add details... ]
-* **Type of effort:** [ Add details... ]
+**Assigned Work Package Reference:**
+[ Add details... ]
 
 ---
-<!-- END REPEAT SECTION -->
+
+## 2. Activity Predecessors and Successors
+
+**Predecessor Activities and Logic:**
+[ Add details... ]
+
+**Successor Activities and Logic:**
+[ Add details... ]
+
+---
+
+## 3. Resource and Skill Requirements
+
+**Required Team Roles and Headcount:**
+[ Add details... ]
+
+**Technical Skills and Equipment Needed:**
+[ Add details... ]
+
+---
+
+## 4. Execution Constraints and Imposed Dates
+
+**Imposed Start and Finish Dates:**
+[ Add details... ]
+
+**Activity Assumptions and Location Constraints:**
+[ Add details... ]
+
+---
 
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Planning Lead / Scheduler** | {{Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

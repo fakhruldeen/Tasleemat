@@ -1,99 +1,69 @@
 {
-    "_llm_instructions": "Populate the Risk Management Plan.\n\nContext & Definition:\nThe risk management plan is a component of the project management plan. It describes how risk management activities will be structured and performed for both threats and opportunities. Typical information includes:\n*   Risk strategy\n*   Methodology\n*   Roles and responsibilities for risk management\n*   Funding to identify, analyze, and respond to risk\n*   Frequency and timing for risk management activities\n*   Risk categories\n*   Stakeholder risk tolerances\n*   Definitions of probability\n*   Definitions of impact by objective\n*   Probability and impact matrix template\n*   Methods to track and audit risk management activities\n*   Risk report formats\n\nThe risk management plan can receive information from:\n*   Project charter\n*   Project management plan (any component)\n*   Stakeholder register\n\nIt provides information to:\n*   Cost management plan\n*   Quality management plan\n*   Risk register\n*   Stakeholder engagement plan\n\nThe risk management plan is an input to all the other risk management processes. It describes the approach to all other risk management processes and provides key information needed to conduct those processes successfully.\nThe risk management plan is an output from process 11.1 Plan Risk Management in the PMBOK® Guide – Sixth Edition. It is developed once and does not usually change.\n\nTailoring Tips:\n*   For a small, simple, or short-term project you can use a simplified risk register with a 3 × 3 probability and impact matrix. You would also include risk information in the project status report rather than a separate risk report.\n*   For larger, longer, and more complex projects you will want to develop a robust risk management process, including a more granular probability and impact matrix, quantitative assessments for the schedule and budget baselines, risk audits, and risk reports.\n*   Projects that are using an agile approach will address risk at the start of each iteration and during the retrospective.\n\nAlignment:\nThe risk management plan should be aligned and consistent with the following documents:\n*   Scope management plan\n*   Schedule management plan\n*   Cost management plan\n*   Quality management plan\n*   Resource management plan\n*   Procurement management plan\n*   Stakeholder engagement plan",
     "form_name": "RISK MANAGEMENT PLAN",
     "document_reference": "PMO-04.08.01",
+    "_llm_instructions": "Populate the fields of 'RISK MANAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.08.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "1. Risk Strategy and Operations": {
-            "guidance": "Define the overall approach, roles, funding, and schedule for risk management.",
-            "value": {
-                "Strategy": {
-                    "guidance": "The general approach to managing risk on the project.",
-                    "value": ""
-                },
-                "Methodology": {
-                    "guidance": "Describe the methodology or approach to the risk management, including tools and data sources.",
-                    "value": ""
-                },
-                "Roles and Responsibilities": {
-                    "guidance": "Document roles and responsibilities for various risk management activities.",
-                    "value": [
-                        {
-                            "Role": "[ Add details... ]",
-                            "Responsibility for Risk Management": "[ Add details... ]"
-                        }
-                    ]
-                },
-                "Risk Management Funding": {
-                    "guidance": "Document the funding needed to perform the various risk management activities.",
-                    "value": ""
-                },
-                "Contingency Protocols": {
-                    "guidance": "Establish protocols for establishing, measuring, and allocating contingency and management reserves.",
-                    "value": ""
-                },
-                "Frequency and Timing": {
-                    "guidance": "Determine the frequency of conducting formal risk management activities.",
-                    "value": ""
-                }
-            }
+        "f01_Risk_Management_Strategy": {
+            "section": "Risk Management Strategy and Methodology",
+            "label": "Risk Management Strategy",
+            "guidance": "The general approach, continuous identification cycle, and assessment tools applied.",
+            "value": ""
         },
-        "2. Risk Assessment Framework": {
-            "guidance": "Establish the categories, risk appetites, and probability/impact matrices used to evaluate risks.",
-            "value": {
-                "Risk Categories": {
-                    "guidance": "Identify categorization groups used to sort and organize risks.",
-                    "value": ""
-                },
-                "Stakeholder Risk Tolerances": {
-                    "guidance": "Identify the risk thresholds of the organization and key stakeholders.",
-                    "value": ""
-                },
-                "Definitions of Probability": {
-                    "guidance": "Document how probability will be measured and defined.",
-                    "value": [
-                        {
-                            "Level / Scale": "Very High",
-                            "Definition / Probability %": "[ Add details... ]"
-                        }
-                    ]
-                },
-                "Definitions of Impact by Objective": {
-                    "guidance": "Document how impact will be measured and defined by objective (Cost, Schedule, Quality, etc.).",
-                    "value": [
-                        {
-                            "Level / Scale": "Very High",
-                            "Scope": "[ Add details... ]",
-                            "Quality": "[ Add details... ]",
-                            "Time": "[ Add details... ]",
-                            "Cost": "[ Add details... ]"
-                        }
-                    ]
-                },
-                "Probability and Impact Matrix": {
-                    "guidance": "A 5x5 matrix describing probability and impact combinations.",
-                    "value": [
-                        {
-                            "Probability / Impact": "Very High",
-                            "Very Low": "[ Add details... ]",
-                            "Low": "[ Add details... ]",
-                            "Medium": "[ Add details... ]",
-                            "High": "[ Add details... ]",
-                            "Very High": "[ Add details... ]"
-                        }
-                    ]
-                }
-            }
+        "f02_Risk_Management_Tools_and_Repositories": {
+            "section": "Risk Management Strategy and Methodology",
+            "label": "Risk Management Tools and Repositories",
+            "guidance": "Software tools, risk databases, and central logging systems used to record risks.",
+            "value": ""
         },
-        "3. Risk Monitoring and Audit": {
-            "guidance": "Define how risks will be tracked and audited throughout the project lifecycle.",
-            "value": {
-                "Risk Tracking and Audit": {
-                    "guidance": "Document how risk activities will be recorded and audited.",
-                    "value": ""
-                }
-            }
+        "f03_Risk_Roles_and_Responsibilities": {
+            "section": "Risk Roles, Responsibilities, and Funding",
+            "label": "Risk Roles and Responsibilities",
+            "guidance": "Designated roles including Risk Owner, Risk Manager, and Action Item Owners.",
+            "value": ""
+        },
+        "f04_Risk_Budgeting_and_Contingency_Funding": {
+            "section": "Risk Roles, Responsibilities, and Funding",
+            "label": "Risk Budgeting and Contingency Funding",
+            "guidance": "Policies for establishing contingency reserves and managing risk response budgets.",
+            "value": ""
+        },
+        "f05_Probability_Scoring_Scale": {
+            "section": "Probability and Impact Definitions",
+            "label": "Probability Scoring Scale",
+            "guidance": "Standard scale (1-5 or Very Low to Very High) with objective percentage probabilities.",
+            "value": ""
+        },
+        "f06_Impact_Scoring_Definitions": {
+            "section": "Probability and Impact Definitions",
+            "label": "Impact Scoring Definitions",
+            "guidance": "Objective criteria measuring cost, schedule, quality, and scope impacts across scale levels.",
+            "value": ""
+        },
+        "f07_Probability_and_Impact_Matrix_Grid": {
+            "section": "Risk Scoring and Probability-Impact Matrix",
+            "label": "Probability and Impact Matrix Grid",
+            "guidance": "The calibrated scoring matrix used to assign overall risk exposure scores.",
+            "value": ""
+        },
+        "f08_Risk_Thresholds_and_Escalation_Triggers": {
+            "section": "Risk Scoring and Probability-Impact Matrix",
+            "label": "Risk Thresholds and Escalation Triggers",
+            "guidance": "Defined exposure thresholds that dictate mandatory executive escalation.",
+            "value": ""
+        },
+        "f09_Risk_Breakdown_Categories": {
+            "section": "Risk Categories and Protocols",
+            "label": "Risk Breakdown Categories",
+            "guidance": "Taxonomy categories classifying technical, external, organizational, and managerial risks.",
+            "value": ""
+        },
+        "f10_Risk_Audits_and_Review_Cadence": {
+            "section": "Risk Categories and Protocols",
+            "label": "Risk Audits and Review Cadence",
+            "guidance": "Frequency of periodic risk re-assessments and formal audit reviews.",
+            "value": ""
         }
     }
 }

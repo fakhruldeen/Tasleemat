@@ -1,30 +1,58 @@
 ---
 lang: en
-Form: QUALITY METRICS (Instructions)
+Form: Quality Metrics (Instructions)
 ---
 
-# QUALITY METRICS - LLM GENERATION GUIDE
+# Quality Metrics - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `QUALITY METRICS`. When asked to populate this form, generate the detailed measurements for project/product attributes.
+<!--
+System Instructions: This document contains instructions for generating the
+«Quality Metrics». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> Quality metrics provide specific detailed measurements about a project or product attribute, and how it should be measured to verify compliance. Metrics are consulted in the manage quality process to ensure that the processes used will meet the metric. The deliverables or processes are measured in the control quality phase and compared to the metric to determine if the result is acceptable or if corrective action or rework is required.
-> 
-> **Inputs:**
-> Quality metrics can receive information from: Project management plan, Requirements documentation, Stakeholder register.
->
-> **Tailoring Tips:**
-> *   On smaller projects quality metrics, requirements, and specifications are considered the same thing. Different industries may use the term “specifications” rather than “metrics.”
-> *   In many industries there are specific standards that include metrics. These must be adhered to in your project.
-> 
+> **Context and Definition:**
+> A structured specification describing a project or product attribute and how the Quality Control process will verify compliance.
+
 > **Alignment:**
-> The quality metrics should be aligned and consistent with the following documents: Requirements documentation, Quality management plan.
+> Informs Quality Checklists, QC Test Reports, Quality Audits, and Product Acceptance sign-offs.
 
 ---
 
-### Section Generation Instructions
-*   **ID:** Unique identifier. This can be the WBS ID or activity ID number.
-*   **Item:** Describe the attribute to be measured.
-*   **Metric:** The specific, quantifiable measurement.
-*   **Measurement method:** The method of measuring, including any equipment or procedures.
+## Deliverable Quality Metrics
+
+### Metric Name and Target Standard
+**Instruction:** The specific quality attribute, measurable KPI, and approved benchmark target value.
+
+**Generated Value:** [ Add details... ]
+
+### Associated Deliverable and Work Package
+**Instruction:** The corresponding project deliverable, subsystem, or WBS component measured.
+
+**Generated Value:** [ Add details... ]
+
+## Process and Performance Quality Metrics
+
+### Process Efficiency Metric
+**Instruction:** Process measurement evaluating cycle times, throughput, sprint burndown, or rework rates.
+
+**Generated Value:** [ Add details... ]
+
+### Defect Density and Severity Thresholds
+**Instruction:** Allowable defect counts categorized by severity level (Critical, Major, Minor).
+
+**Generated Value:** [ Add details... ]
+
+## Quality Measurement and Tolerance Limits
+
+### Measurement Frequency and Tooling
+**Instruction:** How often data is collected and the specific testing tools or inspection techniques used.
+
+**Generated Value:** [ Add details... ]
+
+### Acceptable Tolerance Range and Escalation Trigger
+**Instruction:** Upper and lower control limits (+/- tolerance) and triggers requiring corrective escalation.
+
+**Generated Value:** [ Add details... ]
+
+---

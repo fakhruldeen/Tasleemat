@@ -1,2 +1,9 @@
-Risk ID,Risk statement,Risk owner,Probability,Impact: Scope,Impact: Quality,Impact: Schedule,Impact: Cost,Score,Response,Responsible Party,Rev. Probability,Rev. Impact: Scope,Rev. Impact: Quality,Rev. Impact: Schedule,Rev. Impact: Cost,Rev. Score,Actions,Status,Comments
-[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ],[ Add details... ]
+Section,Field,Guidance,LLM_Generated_Value
+Identified Risk Details,Risk Identifier and Category,"Unique risk tracking code (e.g., RSK-01) and assigned RBS category.",
+Identified Risk Details,Risk Event Narrative and Root Cause,"Clear risk statement describing event cause, uncertain occurrence, and potential outcome.",
+Identified Risk Details,Risk Trigger and Symptoms,Observable early warning signs and conditions indicating risk materialization.,
+Risk Analysis and Exposure Rating,Assessed Probability and Impact Scores,Quantitative probability rating and multidimensional impact score.,
+Risk Analysis and Exposure Rating,Calculated Risk Exposure Rating,Composite risk severity score (Probability x Impact) and overall priority ranking.,
+Planned Risk Response and Owner,Risk Response Strategy,"Selected treatment strategy (Avoid, Mitigate, Transfer, Accept, Exploit, Enhance, Share).",
+Planned Risk Response and Owner,Action Plan and Contingency Plan,Specific preventive mitigation steps and secondary fallback contingency plan.,
+Planned Risk Response and Owner,Assigned Risk Owner and Status,Designated individual accountable for managing the risk and current lifecycle status.,

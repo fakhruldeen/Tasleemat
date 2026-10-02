@@ -2,112 +2,81 @@
 lang: en
 layout: default
 title: Contractor Status Report
-nav_order: 1
+nav_order: 3
 ---
-
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
-# Artifact: Contractor Status Report
+# Project Artifact: Contractor Status Report
 
 **Document Reference:** `PMO-06.03`
 
-This document provides a detailed, professional reference for understanding the
-purpose of the **Contractor Status Report** and using it effectively as part of
-the Tasleemat methodology.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Contractor Status Report** in alignment with the
+Tasleemat framework.
 
 ---
 
-### 1. What is it?
-An official Tasleemat document called the **Contractor Status Report**, used to
-plan, document, and manage the critical elements of this component. It is an
-example of work performance information identified in process **12.3 Control
-Procurements** in the PMBOK Guide - Sixth Edition, and it is submitted at
-pre-defined intervals throughout the project.
+### 1. What?
+A structured periodic performance report prepared by contractors to account for deliverable progress, cost, quality, and claims.
 
 ---
 
 ### 2. Why?
-To ensure alignment with Tasleemat standards, to provide transparency, to
-monitor performance, and to manage change effectively across the project
-lifecycle. The information in this report is generally carried into the project
-status report compiled by the project manager.
+Ensures contractual compliance, tracks vendor performance objectively, and provides early warning on procurement delays.
 
 ---
 
 ### 3. When?
-This artifact is prepared and updated primarily during the **Monitoring and
-Controlling Process Group** of the project lifecycle, on a regular reporting
-interval agreed with the project manager.
+Submitted at agreed contractual intervals (e.g., monthly) during the procurement execution phase.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Maintained by the contractor or vendor representative and
-submitted to the project manager. Reviewed by the project manager and, where
-applicable, the procurement manager, as input to the project status report.
+Authored by Contractor Project Manager or Representative and reviewed by Project Manager and Procurement Lead.
 
 ---
 
 ### Tailoring Tips
-*   You can add a field for escalations to identify those areas that need to be
-    escalated to the sponsor, program manager, contracting officer, or other
-    appropriate individuals.
-*   If there were any contract change requests that were submitted during the
-    reporting period, summary information should be described in the contractor
-    status report.
-*   In addition to tailoring the content of the contractor status report, you can
-    tailor the presentation. Many PMOs have reporting software that transforms
-    the data into dashboards, heat reports, stop light charts, or other
-    representations.
-*   If your contract is fixed price, you may remove the cost forecast fields
-    entirely, since the price is contractually fixed.
-
-### Alignment
-*   Procurement management plan
-*   Project schedule
-*   Cost estimates
-*   Project budget
-*   Variance analysis
-*   Earned value status report
-*   Project status report
-
-### 5. How?
-To accurately and professionally complete the **CONTRACTOR STATUS REPORT**, the
-responsible party must populate the following critical sections based on the
-project context (ensure `parameters.md` is referenced for global project
-variables):
-
-*   **Reporting Information:** Record the contractor, the contract number and
-    type, the reporting period covered, and the report submission date.
-*   **Performance This Reporting Period:** Describe the progress on scope made
-    during this reporting period. Identify any quality or performance variances.
-    Describe whether the contract is on schedule, and if ahead or behind,
-    identify the cause of the variance. Describe whether the contract is on
-    budget, and if over or under budget, identify the cause of the variance.
-*   **Forecast Performance:** Discuss the estimated delivery date and final cost
-    of the contract. If the contract is a fixed price, do not enter cost
-    forecasts.
-*   **Claims or Disputes:** Identify any new or resolved disputes or claims that
-    occurred during the current reporting period.
-*   **Risks:** List any risks. Risks should also be in the risk register.
-*   **Planned Corrective or Preventive Action:** Identify planned corrective or
-    preventive actions necessary to recover schedule, cost, scope, or quality
-    variances.
-*   **Issues:** Identify any new issues that have arisen. These should also be
-    entered in the issue log.
-*   **Escalations:** Identify any area that requires escalation, and to whom.
-*   **Contract Change Requests:** Summarise any change requests submitted in the
-    period and their current status.
-*   **Comments:** Add any comments that will add relevance to the report.
+*   Omit cost forecasts for fixed-price contracts where total pricing is not subject to cost reimbursement.
+*   Include quantitative EVM metrics for complex turnkey contractor engagements.
 
 ---
 
-### 📥 Related Files
-* [📄 Printable Template (Markdown)](06_03_Contractor_Status_Report_Template.md)
-* [🤖 LLM Instructions](06_03_Contractor_Status_Report.md)
-* [📊 Data Structure (JSON)](06_03_Contractor_Status_Report.json)
-* [📈 Tabular Data (CSV)](06_03_Contractor_Status_Report.csv)
+### Alignment
+Directly aligns with Procurement Management Plan, Contract SOW, Project Status Report, and Earned Value reports.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Contractor Status Report**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Contractor:** The legal name and contact details of the contractor performing the contract.
+*   **Contract Number and Type:** The official contract identifier and contract type (e.g., Fixed Price, T&M).
+*   **Reporting Period:** The start and end calendar dates covered by this contractor report.
+*   **Report Submission Date:** The exact date on which the report was officially submitted to the project manager.
+*   **Scope / Status This Period:** Assessment of contracted scope deliverables completed or in progress during this period.
+*   **Scope / Variance and Cause:** Explanation of any deviations from contracted scope baselines and their root causes.
+*   **Quality / Status This Period:** Evaluation of deliverable quality against contracted standards and specifications.
+*   **Quality / Variance and Cause:** Root causes and details of any non-conformance or failed quality checks.
+*   **Schedule / Status This Period:** Assessment of progress against contracted milestone dates and schedule baselines.
+*   **Schedule / Variance and Cause:** Root cause explanation for any schedule delays or accelerations.
+*   **Cost / Status This Period:** Assessment of contract billings and expenditures against the financial plan.
+*   **Cost / Variance and Cause:** Root cause explanation for any financial variances or billing discrepancies.
+*   **Estimated Completion Date / Estimate:** The contractor projected delivery and contract completion date.
+*   **Estimated Completion Date / Basis:** Basis and rationale supporting the estimated completion date.
+*   **Estimated Final Cost / Estimate:** Projected total final cost at completion (applicable to cost-reimbursable contracts).
+*   **Estimated Final Cost / Basis:** Basis and historical cost rate data supporting the estimated final cost.
+*   **Key Forecast Assumptions / Estimate:** Summary of key assumptions underpinning forecast values.
+*   **Key Forecast Assumptions / Basis:** Dependencies and external conditions supporting forecast stability.
+*   **Claims or Disputes:** Summary of any new, pending, or resolved contractual claims or disputes.
+*   **Risks:** Key vendor-side risks that could impact contract milestones or deliverables.
+*   **Planned Corrective or Preventive Action:** Specific remedial actions planned by the contractor to recover performance variances.
+*   **Issues:** Current active roadblocks, technical issues, or dependencies affecting execution.
+*   **Escalations:** Items requiring urgent decisions or dispute intervention from the buyer or PMO.
+*   **Contract Change Requests:** Summary of formal contract change proposals submitted, reviewed, or pending.
+*   **Comments:** Additional context, contractor remarks, or explanatory notes.
 
 </div>

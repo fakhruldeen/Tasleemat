@@ -1,14 +1,66 @@
-# LESSONS LEARNED REGISTER - GUIDANCE
-This document provides descriptions for each element in the Lessons Learned Register.
+---
+lang: en
+layout: default
+title: Lessons Learned Register
+nav_order: 7
+---
 
-| Document Element | Description |
-| :--- | :--- |
-| **ID** | Enter a unique lesson identifier. |
-| **Category** | Document the category of lesson, such as process, technical, environmental, stakeholder, phase, etc. |
-| **Trigger** | Describe the context, event, or condition that led to the challenge, problem, or beneficial outcome. |
-| **Lesson** | Articulate the lesson that can be passed on to other projects and to the organization. |
-| **Responsible Party** | Identify the person who is assigned to implement any changes to ensure the lesson is communicated and distributed. |
-| **Identifier/Submitter** | The person who identified or submitted the lesson (if different from the responsible party). |
-| **Next Implementation Opportunity & Date** | Record when and where this lesson can first be actively applied to ensure it is acted upon. |
-| **Organizational Impact (Y/N)** | Indicate whether the lesson impacts an organizational system, policy, or practice (Y) or can be implemented locally without escalation (N). |
-| **Comments** | Document any clarifying comments about the challenge, problem, good practice, or other fields on the form. |
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Lessons Learned Register
+
+**Document Reference:** `PMO-05.07`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Lessons Learned Register** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A centralized repository capturing successes, mistakes, and improvement insights across all project phases.
+
+---
+
+### 2. Why?
+Prevents repeating costly errors, institutionalizes best practices, and improves organizational capability.
+
+---
+
+### 3. When?
+Initiated early and updated continuously at milestones, phase gates, and project retrospectives.
+
+---
+
+### 4. Who?
+Maintained by the Project Manager with active contributions from all project team members and stakeholders.
+
+---
+
+### Tailoring Tips
+*   Conduct structured retrospective discussions at the end of each iteration or milestone.
+*   Transfer high-impact lessons to the central PMO knowledge repository at project closing.
+
+---
+
+### Alignment
+The Lessons Learned Register aligns with Project Closeout Report, Quality Management Plan, and Knowledge Base.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Lessons Learned Register**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **ID:** Unique identifier for the lesson learned (e.g., LLR-01).
+*   **Category:** Knowledge area or project phase (e.g., Technical, Procurement, Schedule).
+*   **Trigger:** The triggering event, root cause, or situation encountered.
+*   **Lesson:** Detailed description of what worked well or what should be done differently.
+*   **Responsible Party:** Person or role assigned to document or disseminate the lesson.
+*   **Identifier/Submitter:** Name or team identifying the lesson.
+*   **Next Implementation Opportunity & Date:** Future milestone, project, or date where this lesson will be applied.
+*   **Organizational Impact (Y/N):** Whether this lesson impacts enterprise processes, standards, or assets.
+*   **Comments:** Additional reflections, training recommendations, or references.
+
+</div>

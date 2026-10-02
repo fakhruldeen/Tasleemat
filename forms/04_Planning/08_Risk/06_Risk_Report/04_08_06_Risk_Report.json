@@ -1,179 +1,74 @@
 {
-    "_llm_instructions": "Populate the Risk Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Executive Summary: Describe overall project risk exposure and major individual risks affecting the project.\n- Overall Risk Status and Trends: Describe overarching trends observed in the risk profile and current status.\n- Significant Drivers of Overall Risk: Identify the significant drivers of overall project risk.\n- Recommended Responses to Overall Risk: Outline recommended responses to overall project risk.\n- Probability and Impact Matrix: Indicate the exact number of individual risks in each of the 25 boxes of the 5x5 matrix.\n- Metrics: Provide integer counts for scope, schedule, cost, quality, very high/high/medium probability, active, and newly closed risks.\n- Critical Risks & Responses: Populate the 2-column table mapping the 'Top Risks' to their proposed 'Responses'.\n- Changes to Critical Risks: Describe any changes to critical risks since the last report.\n- Realized Risks (Transferred to Issue Log): List any risks that materialized during this period and are now being managed as issues.\n- Results from Quantitative Assessments: Summarize results from S-curve, tornado diagrams, etc.\n- Probability of Meeting Objectives: List the probability for Scope, Schedule, Cost, Quality, and Other.\n- Range of Outcomes: Detail the Range of Schedule Outcomes, Range of Cost Outcomes, Key Drivers of Variances, and Proposed Responses.\n- Total Cost Reserve: The total budget allocated for risk responses.\n- Contingency Reserve: Portion of cost reserve for known-unknowns.\n- Management Reserve: Portion of cost reserve for unknown-unknowns.\n- Cost Reserve Used to Date: Cumulative amount of cost reserve consumed so far.\n- Cost Reserve Used This Period: Amount of cost reserve consumed during this period.\n- Remaining Cost Reserve: Balance of cost reserve available.\n- Total Schedule Reserve: Total buffer time allocated for risk responses.\n- Schedule Reserve Used to Date: Cumulative time buffer consumed so far.\n- Schedule Reserve Used This Period: Buffer time consumed this period.\n- Remaining Schedule Reserve: Balance of schedule reserve available.\n- Assessment of Reserve Adequacy: Provide an assessment of whether the remaining reserves are adequate given the current risk profile.\n- Summary of Risk Events: Summarize historical risk events and occurrences.\n- Summary of Risk Management Processes: Summarize the effectiveness of the risk management processes.\n- Summary of Recommendations: Summarize any recommendations arising from the risk audit.",
     "form_name": "RISK REPORT",
     "document_reference": "PMO-04.08.06",
+    "_llm_instructions": "Populate the fields of 'RISK REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.08.06.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Executive Summary": {
-            "guidance": "Describe overall project risk exposure and major individual risks.",
+        "f01_Overall_Project_Risk_Exposure_Summary": {
+            "section": "Executive Summary and Overall Risk Profile",
+            "label": "Overall Project Risk Exposure Summary",
+            "guidance": "High-level summary of overall project risk health, trends, and risk exposure level.",
             "value": ""
         },
-        "Overall Risk Status and Trends": {
-            "guidance": "High-level statement of trends and current risk status.",
+        "f02_Key_Risk_Drivers_and_Strategic_Factors": {
+            "section": "Executive Summary and Overall Risk Profile",
+            "label": "Key Risk Drivers and Strategic Factors",
+            "guidance": "Primary organizational, commercial, or technical drivers influencing project risk.",
             "value": ""
         },
-        "Significant Drivers of Overall Risk": {
-            "guidance": "Identify the significant drivers of overall project risk.",
+        "f03_Overall_Risk_Mitigation_Strategy": {
+            "section": "Executive Summary and Overall Risk Profile",
+            "label": "Overall Risk Mitigation Strategy",
+            "guidance": "Consolidated strategy for navigating major project uncertainties.",
             "value": ""
         },
-        "Recommended Responses to Overall Risk": {
-            "guidance": "Outline recommended responses to overall project risk.",
+        "f04_Top_Project_Threats_and_Active_Responses": {
+            "section": "Critical Threats and Opportunities Summary",
+            "label": "Top Project Threats and Active Responses",
+            "guidance": "Summary of the most critical individual threats, current status, and active mitigation plans.",
             "value": ""
         },
-        "Probability and Impact Matrix": {
-            "guidance": "Provide the exact number of risks in each box of the 5x5 matrix.",
-            "value": [
-                {
-                    "Probability \\ Impact": "Very High",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": ""
-                },
-                {
-                    "Probability \\ Impact": "High",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": ""
-                },
-                {
-                    "Probability \\ Impact": "Medium",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": ""
-                },
-                {
-                    "Probability \\ Impact": "Low",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": ""
-                },
-                {
-                    "Probability \\ Impact": "Very Low",
-                    "Very High": "",
-                    "High": "",
-                    "Medium": "",
-                    "Low": "",
-                    "Very Low": ""
-                }
-            ]
-        },
-        "Metrics": {
-            "guidance": "Provide specific metric counts.",
-            "value": {
-                "Number of scope risks": "",
-                "Number of schedule risks": "",
-                "Number of cost risks": "",
-                "Number of quality risks": "",
-                "Number of very high probability risks": "",
-                "Number of high probability risks": "",
-                "Number of medium probability risks": "",
-                "Number of active risks": "",
-                "Newly closed risks": ""
-            }
-        },
-        "Critical Risks & Responses": {
-            "guidance": "List the top critical risks and their responses.",
-            "value": [
-                {
-                    "Top Risks": "",
-                    "Responses": ""
-                }
-            ]
-        },
-        "Changes to Critical Risks": {
-            "guidance": "Describe any changes to critical risks since the last report.",
+        "f05_Top_Project_Opportunities_and_Capture_Plans": {
+            "section": "Critical Threats and Opportunities Summary",
+            "label": "Top Project Opportunities and Capture Plans",
+            "guidance": "Summary of major positive opportunities and execution plans to realize benefits.",
             "value": ""
         },
-        "Realized Risks (Transferred to Issue Log)": {
-            "guidance": "List risks that have occurred and transferred to the issue log.",
+        "f06_Realized_Risks_Transferred_to_Issue_Log": {
+            "section": "Critical Threats and Opportunities Summary",
+            "label": "Realized Risks Transferred to Issue Log",
+            "guidance": "Recently materialized risks that have transitioned to the Issue Log for resolution.",
             "value": ""
         },
-        "Results from Quantitative Assessments": {
-            "guidance": "Results from S-curve, tornado, etc.",
+        "f07_Quantitative_Simulation_Findings": {
+            "section": "Quantitative Risk Exposure and Reserve Adequacy",
+            "label": "Quantitative Simulation Findings",
+            "guidance": "Key conclusions derived from quantitative Monte Carlo simulations or probabilistic models.",
             "value": ""
         },
-        "Probability of Meeting Objectives": {
-            "guidance": "Provide the probability for Scope, Schedule, Cost, Quality, and Other.",
-            "value": {
-                "Scope": "",
-                "Schedule": "",
-                "Cost": "",
-                "Quality": "",
-                "Other": ""
-            }
-        },
-        "Range of Outcomes": {
-            "guidance": "Detail outcome ranges and variances.",
-            "value": {
-                "Range of Schedule Outcomes": "",
-                "Range of Cost Outcomes": "",
-                "Key Drivers of Variances": "",
-                "Proposed Responses": ""
-            }
-        },
-        "Total Cost Reserve": {
-            "guidance": "The total budget allocated for risk responses.",
+        "f08_Probability_of_Achieving_Project_Objectives": {
+            "section": "Quantitative Risk Exposure and Reserve Adequacy",
+            "label": "Probability of Achieving Project Objectives",
+            "guidance": "Estimated percentage likelihood of achieving target delivery dates and budget limits.",
             "value": ""
         },
-        "Contingency Reserve": {
-            "guidance": "Portion of cost reserve for known-unknowns.",
+        "f09_Contingency_Reserve_Adequacy_Assessment": {
+            "section": "Quantitative Risk Exposure and Reserve Adequacy",
+            "label": "Contingency Reserve Adequacy Assessment",
+            "guidance": "Audit assessment of total contingency reserve balance against remaining project risk exposure.",
             "value": ""
         },
-        "Management Reserve": {
-            "guidance": "Portion of cost reserve for unknown-unknowns.",
+        "f10_Risk_Process_and_Metric_Trends": {
+            "section": "Risk Management Trends and Recommendations",
+            "label": "Risk Process and Metric Trends",
+            "guidance": "Trend analysis tracking closed risks, newly identified risks, and velocity of response actions.",
             "value": ""
         },
-        "Cost Reserve Used to Date": {
-            "guidance": "Cumulative amount of cost reserve consumed so far.",
-            "value": ""
-        },
-        "Cost Reserve Used This Period": {
-            "guidance": "Amount of cost reserve consumed during this period.",
-            "value": ""
-        },
-        "Remaining Cost Reserve": {
-            "guidance": "Balance of cost reserve available.",
-            "value": ""
-        },
-        "Total Schedule Reserve": {
-            "guidance": "Total buffer time allocated for risk responses.",
-            "value": ""
-        },
-        "Schedule Reserve Used to Date": {
-            "guidance": "Cumulative amount of schedule reserve consumed.",
-            "value": ""
-        },
-        "Schedule Reserve Used This Period": {
-            "guidance": "Amount of schedule reserve consumed during this period.",
-            "value": ""
-        },
-        "Remaining Schedule Reserve": {
-            "guidance": "Balance of schedule reserve available.",
-            "value": ""
-        },
-        "Assessment of Reserve Adequacy": {
-            "guidance": "Provide an assessment of whether the remaining reserves are adequate given the current risk profile.",
-            "value": ""
-        },
-        "Summary of Risk Events": {
-            "guidance": "Overview of risk events that occurred and their impacts.",
-            "value": ""
-        },
-        "Summary of Risk Management Processes": {
-            "guidance": "Evaluation of how effectively the risk management processes were executed.",
-            "value": ""
-        },
-        "Summary of Recommendations": {
-            "guidance": "Actionable recommendations stemming from the risk audit.",
+        "f11_Recommended_Governance_Interventions": {
+            "section": "Risk Management Trends and Recommendations",
+            "label": "Recommended Governance Interventions",
+            "guidance": "Strategic recommendations, escalation requests, and required decisions for executive sponsors.",
             "value": ""
         }
     }

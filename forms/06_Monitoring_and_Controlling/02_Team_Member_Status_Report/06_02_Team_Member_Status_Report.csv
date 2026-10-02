@@ -1,9 +1,18 @@
-﻿Field,Guidance,LLM_Generated_Value
-Report Information,"Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.","{""Reporting Period Start Date"": """", ""Reporting Period End Date"": """", ""Team Member Name"": """", ""Team Member Role"": """", ""Prepared By (Team Member)"": """"}"
-Schedule and Activities (Current Period),"Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.","{""Activities planned this reporting period"": ["""", """", """"], ""Activities accomplished this reporting period"": ["""", """", """"], ""Activities planned but not accomplished this reporting period"": ["""", """", """"], ""Root cause of schedule variances"": """"}"
-Cost and Budget (Current Period),"Provide information on funds planned vs spent, and the root cause of any cost variances.","{""Funds planned to be spent this reporting period"": """", ""Funds spent this reporting period"": """", ""Root cause of cost variances"": """"}"
-Quality and Corrective Actions,Identify quality variances and planned corrective or preventive actions.,"{""Quality variances identified this period"": """", ""Planned corrective or preventive action"": """"}"
-Planning for Next Period,Outline the schedule and cost plans for the upcoming reporting period.,"{""Activities planned for next reporting period"": ["""", """", """"], ""Costs planned for next reporting period"": """"}"
-"Risks, Issues, and Escalations","Log new risks, issues, and any matters requiring escalation.","{""New risks identified"": """", ""New issues identified"": """", ""Escalations"": """"}"
-Project Knowledge and Decisions,Document key decisions made and lessons learned to transfer to organizational repositories.,"{""Decisions made"": """", ""Lessons learned / Knowledge transfer"": """"}"
-Comments,Document any comments that add relevance to this report.,
+Section,Field,Guidance,LLM_Generated_Value
+Schedule and Activities (Current Period),Activities planned this reporting period,Tasks and work packages scheduled for execution by this member during this period.,
+Schedule and Activities (Current Period),Activities accomplished this reporting period,Tasks and work packages successfully finalized by this member during this period.,
+Schedule and Activities (Current Period),Activities planned but not accomplished this reporting period,Scheduled tasks that were started but not completed or deferred.,
+Schedule and Activities (Current Period),Root cause of schedule variances,Underlying reasons for any task delays or workload obstacles.,
+Cost and Budget (Current Period),Funds planned to be spent this reporting period,Planned labor hours or direct expenses allocated for the member this period.,
+Cost and Budget (Current Period),Funds spent this reporting period,Actual labor hours or expenses incurred by the member during this period.,
+Cost and Budget (Current Period),Root cause of cost variances,Reasons for discrepancies between planned and actual resource expenditures.,
+Quality and Corrective Actions,Quality variances identified this period,"Defects, rework, or non-conformance issues encountered in deliverables.",
+Quality and Corrective Actions,Planned corrective or preventive action,Targeted remedial steps to correct quality issues or prevent recurring defects.,
+Planning for Next Period,Activities planned for next reporting period,Upcoming work assignments and deliverables scheduled for the next interval.,
+Planning for Next Period,Costs planned for next reporting period,Estimated hours or expenditures planned for the upcoming reporting period.,
+"Risks, Issues, and Escalations",New risks identified,"Potential technical, operational, or resource uncertainties identified by the member.",
+"Risks, Issues, and Escalations",New issues identified,"Immediate roadblocks, blockers, or dependencies requiring team resolution.",
+"Risks, Issues, and Escalations",Escalations,Impediments requiring intervention from the Project Manager or Team Lead.,
+Project Knowledge and Decisions,Decisions made,Technical or operational choices adopted by the team member during execution.,
+Project Knowledge and Decisions,Lessons learned and knowledge transfer,Practical findings and best practices captured during task execution.,
+Comments,Comments,"Additional reflections, notes, or contextual feedback from the team member.",

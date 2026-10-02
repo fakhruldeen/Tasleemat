@@ -1,10 +1,9 @@
-<!-- LLM INSTRUCTIONS: Fill in the table rows based on project context. Add or remove rows as needed.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Column Definitions:
-*   **ID:** A unique identifier for the activity (often tied to the WBS).
-*   **Activity Name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
-*   **Description of Work:** Provide more detail to the activity description, such as a process or method to accomplish the work.
-*   **Planned Release / Iteration:** Indicate the planned release or iteration for each activity (especially relevant for adaptive/agile development approaches).
+Section Instructions:
+- Schedule Activity Inventory: Provide comprehensive project data for all required fields in this section.
+- Activity Details and Descriptions: Provide comprehensive project data for all required fields in this section.
+- Associated WBS Work Packages: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -12,15 +11,40 @@ Column Definitions:
 <h1 align="center">ACTIVITY LIST</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-| ID | Activity Name | Description of Work | Planned Release / Iteration |
-| :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 1. Schedule Activity Inventory
+
+**Activity Identifier and Name:**
+[ Add details... ]
+
+**Activity Scope of Work:**
+[ Add details... ]
+
+**Planned Iteration or Release:**
+[ Add details... ]
+
+---
+
+## 2. Activity Details and Descriptions
+
+**Activity Execution Method:**
+[ Add details... ]
+
+**Estimated Effort and Duration Units:**
+[ Add details... ]
+
+---
+
+## 3. Associated WBS Work Packages
+
+**Parent WBS Work Package Mapping:**
+[ Add details... ]
+
+**Activity Completion Deliverable:**
+[ Add details... ]
 
 ---
 
@@ -28,9 +52,9 @@ Column Definitions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

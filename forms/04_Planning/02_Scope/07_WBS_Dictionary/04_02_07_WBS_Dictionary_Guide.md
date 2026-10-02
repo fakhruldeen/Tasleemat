@@ -12,49 +12,57 @@ nav_order: 7
 
 **Document Reference:** `PMO-04.02.07`
 
-This document provides a comprehensive, professional reference to understand the purpose and effective usage of the **WBS Dictionary**.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **WBS Dictionary** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A document that provides detailed deliverable, activity, and scheduling information about each component in the work breakdown structure (WBS).
+A dictionary defining scope, deliverables, acceptance criteria, assumptions, resources, and budget per work package.
 
 ---
 
 ### 2. Why?
-The WBS dictionary prevents misunderstandings by explicitly detailing exactly what work is included in each work package, how it will be verified, what resources are needed, and what it should cost.
+Eliminates ambiguity regarding work package scope, preventing assumptions and facilitating independent work assignment.
 
 ---
 
 ### 3. When?
-Prepared during the **PLANNING Process Group**.
+Developed immediately following WBS creation and baselined as part of the overall scope baseline.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from Control Account Managers.
+Authored by Assigned Work Package Owners with Project Manager oversight, signed off by PMO.
+
+---
+
+### Tailoring Tips
+*   Include acceptance test criteria and story definitions of done for adaptive delivery.
+*   Reference detailed engineering statements of work (SOW) for contractor-executed work packages.
+
+---
+
+### Alignment
+The third essential element of the Scope Baseline, linking WBS elements to Activity Lists, Cost Estimates, and Acceptance criteria.
 
 ---
 
 ### 5. How?
-For EACH Work Package in your WBS, create an entry detailing:
-*   **Work Package Name & Code of Accounts:** Identifiers.
-*   **Due Dates:** Overarching deadlines.
-*   **Description of Work:** The scope of the work package.
-*   **Assumptions and Constraints:** Limiting factors and assumed truths.
-*   **Milestones:** Numbered list of key events.
-*   **Activities & Costs:** Tabular breakdown of labor and materials.
-*   **Quality & Acceptance:** Verification metrics.
-*   **Technical & Agreement Info:** References and contracts.
+To accurately and professionally complete the **WBS Dictionary**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_02_07_WBS_Dictionary_Template.md)
-* [🤖 LLM Generation Prompt](04_02_07_WBS_Dictionary.md)
-* [📊 Data Schema (JSON)](04_02_07_WBS_Dictionary.json)
-* [📈 Tabular Data - Main (CSV)](04_02_07_WBS_Dictionary.csv)
-* [📈 Tabular Data - Activities & Costs (CSV)](04_02_07_WBS_Dictionary_Activities.csv)
-*(Note: Code of Accounts serves as the relational foreign key across these CSV files)*
+*   **WBS Identifier and Title:** The unique WBS code number and descriptive name of the specific work package.
+*   **Control Account and Responsible Organization:** Associated control account code and organizational unit or person accountable for delivery.
+*   **Work Package Owner:** Designated lead engineer or manager responsible for work package execution.
+*   **Work Package Scope Description:** Detailed narrative describing the technical work, tasks, and activities required for this package.
+*   **Deliverables Produced:** Specific tangible or intangible outputs generated upon work package completion.
+*   **Milestone Schedule and Target Dates:** Target start date, intermediate technical milestones, and completion deadline.
+*   **Quality Requirements and Standards:** Mandatory quality metrics, engineering specifications, and technical standards.
+*   **Acceptance Criteria and Sign-off Lead:** Clear criteria and designated stakeholder authorized to accept the work package.
+*   **Required Resources and Skills:** Personnel roles, technical expertise, materials, and specialized equipment needed.
+*   **Cost Estimate and Budget Allocation:** Approved budget allocation and cost baseline figure assigned to this work package.
+*   **Assumptions, Constraints, and Dependencies:** Specific operational constraints, key assumptions, and preceding/succeeding work package linkages.
 
 </div>

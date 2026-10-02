@@ -12,46 +12,54 @@ nav_order: 4
 
 **Document Reference:** `PMO-04.06.04`
 
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Responsibility Assignment Matrix** in alignment with the
+Tasleemat framework.
+
 ---
 
-### Context & Definition
-The responsibility assignment matrix (RAM) shows the intersection of work packages and resources. Generally, RAMs are used to show the different levels of participation on a work package by various team members rather than physical resources. RAMs can indicate different types of participation depending on the needs of the project. Some common types include: Accountable, Responsible, Consulted, Resource, Informed, Sign-off. The RAM always should include a key that explains what each of the levels of participation entails. It is progressively elaborated as more information about the scope and the resource requirements is known.
+### 1. What?
+A structured cross-reference matrix defining Responsible, Accountable, Consulted, and Informed designations.
 
-**Inputs:**
-The responsibility assignment matrix can receive information from:
-* Scope baseline
-* Requirements documentation
-* Stakeholder register
+---
+
+### 2. Why?
+Eliminates role ambiguity, prevents dropped deliverables, and ensures clear ownership across multi-disciplinary teams.
+
+---
+
+### 3. When?
+Developed during resource planning and updated when project roles or organizational structures change.
+
+---
+
+### 4. Who?
+Created by Project Manager and Core Team Leads, signed off by Work Package Owners and Sponsor.
+
+---
 
 ### Tailoring Tips
-Consider the following tips to help tailor the RAM to meet your needs:
-* Tailor the types of participation appropriate for your project. Some projects require “sign-off” of specific deliverables, whereas others use the term “approve.”
-* Determine the appropriate level to record information on the RAM. Large projects with multiple vendors and large deliverables often use the RAM as the intersection of the WBS and the OBS (organizational breakdown structure). Small projects may use it at the deliverable or activity level to help enter schedule information.
+*   Map RACI roles across agile squads, product managers, scrum masters, and chapter leads.
+*   Include joint venture and subcontractor partner roles for large consortium delivery models.
+
+---
 
 ### Alignment
-The RAM should be aligned and consistent with the following documents:
-* Work breakdown structure
-* Requirements documentation
-* Resource requirements
-* Procurement documents (RFP, RFQ, etc.)
+Connects WBS Work Packages with Organizational Chart, Team Charter, and Project Management Plan.
 
 ---
 
-### Document Elements Description (Table 2.23)
-You can use the element descriptions below to assist you in developing a responsibility assignment matrix.
+### 5. How?
+To accurately and professionally complete the **Responsibility Assignment Matrix**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
 
-| Document Element | Description |
-| :--- | :--- |
-| **Work package** | Name of the work package you are assigning resources to. The RAM can be used at the work package level, control account level, or activity level. |
-| **Resource** | Identify the person, division, or organization that will be working on the project. |
-
----
-
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_06_04_Responsibility_Assignment_Matrix_Template.md)
-* [🤖 LLM Generation Prompt](04_06_04_Responsibility_Assignment_Matrix.md)
-* [📊 Data Schema (JSON)](04_06_04_Responsibility_Assignment_Matrix.json)
-* [📈 Tabular Data (CSV) - Matrix](04_06_04_Responsibility_Assignment_Matrix_RAM.csv)
-* [📈 Tabular Data (CSV) - Key](04_06_04_Responsibility_Assignment_Matrix_Key.csv)
+*   **Responsible (R) Definition:** Definition: The role assigned to do the work and complete the activity deliverable.
+*   **Accountable (A) Definition:** Definition: The single role with ultimate ownership, decision authority, and sign-off approval.
+*   **Consulted (C) Definition:** Definition: Subject matter experts providing vital two-way input and technical guidance.
+*   **Informed (I) Definition:** Definition: Stakeholders kept updated on progress, milestones, and decisions via one-way communication.
+*   **WBS Deliverable and Assigned RACI Codes:** Tabular mapping assigning explicit R, A, C, and I roles for each major WBS work package.
+*   **Role Coverage and Work Distribution:** Verification that every activity has exactly one Accountable role and at least one Responsible role.
+*   **Single Accountability Governance Rule:** Mandatory policy prohibiting multiple Accountable (A) assignments per deliverable to prevent diffusion of responsibility.
+*   **Escalation and Conflict Resolution Protocol:** Process for resolving role overlaps, gaps, and decision deadlocks across project leads.
 
 </div>

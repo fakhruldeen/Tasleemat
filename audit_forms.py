@@ -45,6 +45,7 @@ ACRONYMS = {
     "UAT", "KPI", "MOU", "SLA", "SMART", "PDCA", "OHS", "PMP", "ML", "API",
     "SaaS", "PRINCE2", "TPS", "MoSCoW", "PII", "GDPR", "LLM", "NLP",
     "PMBOK", "PMO", "Tasleemat", "Arial", "HTML", "PDF", "CSV", "JSON",
+    "PV", "EV", "AC", "BAC", "CV", "SV", "CPI", "SPI", "EAC", "ETC", "VAC", "TCPI",
     "md", "csv", "json", "ar", "en", "lang", "default", "true", "false",
     "Fill", "Field", "Section", "Guidance", "Value", "Generated", "Reference",
     "and", "based", "align", "datetime", "iso", "utf",

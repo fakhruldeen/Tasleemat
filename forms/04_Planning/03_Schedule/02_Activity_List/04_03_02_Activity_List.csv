@@ -1,4 +1,8 @@
-ID,Activity Name,Description of Work,Planned Release / Iteration
-,,,
-,,,
-,,,
+Section,Field,Guidance,LLM_Generated_Value
+Schedule Activity Inventory,Activity Identifier and Name,Unique activity code and concise action-oriented title for each schedule activity.,
+Schedule Activity Inventory,Activity Scope of Work,Specific narrative detailing the discrete scope of work to be performed in this activity.,
+Schedule Activity Inventory,Planned Iteration or Release,"The target delivery sprint, wave, or milestone window assigned to this activity.",
+Activity Details and Descriptions,Activity Execution Method,Technical or managerial execution approach applied to perform the work.,
+Activity Details and Descriptions,Estimated Effort and Duration Units,Estimated working effort in person-hours and planned calendar duration.,
+Associated WBS Work Packages,Parent WBS Work Package Mapping,The parent WBS work package identifier and deliverable directly decomposed by this activity.,
+Associated WBS Work Packages,Activity Completion Deliverable,The tangible or verified intermediate output produced upon activity completion.,

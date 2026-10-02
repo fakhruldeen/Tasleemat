@@ -1,0 +1,11 @@
+Section,Field,Guidance,LLM_Generated_Value
+Cost Management Approach and Methodology,Cost Estimating and Budgeting Methodology,The overarching framework and techniques applied for estimating and establishing budgets.,
+Cost Management Approach and Methodology,Cost Accounting and Tracking Software,Approved enterprise accounting and financial tracking tools used for cost management.,
+Units of Measure and Estimation Precision,Currency and Units of Measure,"Primary project operating currency and measurement units (person-days, hourly billing rates).",
+Units of Measure and Estimation Precision,Level of Precision and Accuracy Ranges,"Rounding rules, decimal precision, and required percentage confidence ranges (+/-).",
+Organizational Procedures and Control Accounts,Control Account Structure and WBS Linkage,Integration linking WBS work packages to specific financial chart-of-account codes.,
+Organizational Procedures and Control Accounts,Cost Management Roles and Authorizations,"Financial decision authority, invoice approval thresholds, and spending limits.",
+Earned Value and Performance Measurement Rules,EVM Formulas and Measurement Techniques,"Standard EVM formulas, physical percent complete determination rules, and BAC rules.",
+Earned Value and Performance Measurement Rules,Cost Performance Indicators,"Key financial metrics tracked including CV, CPI, TCPI, and EAC forecasting formulas.",
+Cost Variance Thresholds and Reporting,Cost Variance Thresholds and Escalations,Defined financial deviation boundaries triggering mandatory variance analysis and CCB escalation.,
+Cost Variance Thresholds and Reporting,Cost Reporting Cadence and Formats,"Frequency, distribution channels, and presentation formats for executive financial reports.",

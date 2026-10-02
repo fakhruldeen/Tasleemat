@@ -1,99 +1,39 @@
 {
-    "_llm_instructions": "Populate the Team Performance Assessment based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Technical Performance: Rate the team's ability to deliver across technical dimensions and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Interpersonal Competency: Rate the team's interpersonal skills and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Team Characteristics: Describe the overall team morale and cohesiveness. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Team Strengths and Weaknesses: Identify the primary strengths and weaknesses of the team. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.\n- Areas for Development: Identify areas for development and the approach to implement them.",
     "form_name": "TEAM PERFORMANCE ASSESSMENT",
     "document_reference": "PMO-05.06",
+    "_llm_instructions": "Populate the fields of 'TEAM PERFORMANCE ASSESSMENT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.06.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Technical Performance": {
-            "guidance": "Rate the team's ability to deliver across technical dimensions and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
-            "value": [
-                {
-                    "Dimension": "Scope",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Dimension": "Quality",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Dimension": "Schedule",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Dimension": "Cost",
-                    "Rating": "",
-                    "Comments": ""
-                }
-            ]
+        "f01_Technical_Performance": {
+            "section": "Technical Performance",
+            "label": "Technical Performance",
+            "guidance": "Evaluation of the team's ability to achieve scope, quality, schedule, and cost goals.",
+            "value": ""
         },
-        "Interpersonal Competency": {
-            "guidance": "Rate the team's interpersonal skills and provide justifying comments. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
-            "value": [
-                {
-                    "Dimension": "Communication",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Dimension": "Collaboration",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Dimension": "Conflict management",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Dimension": "Decision making",
-                    "Rating": "",
-                    "Comments": ""
-                }
-            ]
+        "f02_Interpersonal_Competency": {
+            "section": "Interpersonal Competency",
+            "label": "Interpersonal Competency",
+            "guidance": "Evaluation of communication, collaboration, conflict management, and decision making.",
+            "value": ""
         },
-        "Team Characteristics": {
-            "guidance": "Describe the overall team morale and cohesiveness. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
-            "value": [
-                {
-                    "Characteristic": "Team Morale",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Characteristic": "Cohesiveness",
-                    "Rating": "",
-                    "Comments": ""
-                }
-            ]
+        "f03_Team_Characteristics": {
+            "section": "Team Characteristics",
+            "label": "Team Characteristics",
+            "guidance": "Assessment of overall team morale, cohesion, trust, and shared commitment.",
+            "value": ""
         },
-        "Team Strengths and Weaknesses": {
-            "guidance": "Identify the primary strengths and weaknesses of the team. Note: Use [X] Exceeds Expectations, [M] Meets Expectations, or [N] Needs Improvement for all 'Rating' fields.",
-            "value": [
-                {
-                    "Area": "Strengths",
-                    "Rating": "",
-                    "Comments": ""
-                },
-                {
-                    "Area": "Weaknesses",
-                    "Rating": "",
-                    "Comments": ""
-                }
-            ]
+        "f04_Team_Strengths_and_Weaknesses": {
+            "section": "Team Strengths and Weaknesses",
+            "label": "Team Strengths and Weaknesses",
+            "guidance": "Identification of critical technical/interpersonal strengths and operational weaknesses.",
+            "value": ""
         },
-        "Areas for Development": {
-            "guidance": "Identify areas for development and the approach to implement them.",
-            "value": [
-                {
-                    "Area": "",
-                    "Approach": "",
-                    "Actions": ""
-                }
-            ]
+        "f05_Areas_for_Development": {
+            "section": "Areas for Development",
+            "label": "Areas for Development",
+            "guidance": "Targeted skill acquisition, training programs, team building, and coaching plans.",
+            "value": ""
         }
     }
 }

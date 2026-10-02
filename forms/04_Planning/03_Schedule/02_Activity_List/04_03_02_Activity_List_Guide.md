@@ -12,57 +12,53 @@ nav_order: 2
 
 **Document Reference:** `PMO-04.03.02`
 
-This document provides a comprehensive reference to understand the purpose and usage of the **Activity List**.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Activity List** in alignment with the
+Tasleemat framework.
 
 ---
 
 ### 1. What?
-A documented tabulation of schedule activities that shows the activity description, activity identifier, and a sufficiently detailed scope of work description so project team members understand what work is to be performed.
+A detailed inventory of project activities containing identifiers, scope of work descriptions, and WBS mappings.
 
 ---
 
 ### 2. Why?
-It breaks down the Work Breakdown Structure (WBS) deliverables into actionable, executable steps. Without this list, project estimates, scheduling, and resource allocations are impossible.
+Provides the atomic building blocks needed for schedule network sequencing, resource estimating, and duration analysis.
 
 ---
 
 ### 3. When?
-Prepared during the **PLANNING Process Group** (Process 6.2 Define Activities). For adaptive projects, this evolves iteratively.
+Developed during schedule planning immediately after WBS creation and refined iteratively.
 
 ---
 
 ### 4. Who?
-**Responsibilities:** Developed by the Project Manager with input from the subject matter experts performing the work.
+Created by Project Scheduler and Core Technical Team leads, reviewed by Project Manager.
 
 ---
 
 ### Tailoring Tips
-• For projects that use an adaptive development approach your activity list will evolve as the requirements are added or changed.
-• For projects that use an adaptive development approach you may want to add a column that indicates the planned release or iteration for each activity (which we have included as a standard best-practice field).
-
-### Alignment
-The activity list should be aligned and consistent with the following documents:
-• Milestone list
-• Activity attributes
-• WBS
-• WBS dictionary
-• Product backlog
-• Iteration release plan
-
-
-### 5. How?
-To accurately and professionally complete the **ACTIVITY LIST**, the responsible party must populate the following critical columns:
-*   **ID:** A unique identifier for the activity (often tied to the WBS).
-*   **Activity Name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
-*   **Description of Work:** Provide more detail to the activity description, such as a process or method to accomplish the work.
-*   **Planned Release / Iteration:** Indicate the planned release or iteration for each activity (especially relevant for adaptive/agile development approaches).
+*   Maintain as backlog tasks during sprint planning for agile deliveries.
+*   Ensure full 1-to-1 WBS traceability for construction and engineering schedules.
 
 ---
 
-### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](04_03_02_Activity_List_Template.md)
-* [🤖 LLM Generation Prompt](04_03_02_Activity_List.md)
-* [📊 Data Schema (JSON)](04_03_02_Activity_List.json)
-* [📈 Tabular Data (CSV)](04_03_02_Activity_List.csv)
+### Alignment
+Directly links WBS Work Packages to Activity Attributes, Milestone List, Duration Estimates, and Network Diagram.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Activity List**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Activity Identifier and Name:** Unique activity code and concise action-oriented title for each schedule activity.
+*   **Activity Scope of Work:** Specific narrative detailing the discrete scope of work to be performed in this activity.
+*   **Planned Iteration or Release:** The target delivery sprint, wave, or milestone window assigned to this activity.
+*   **Activity Execution Method:** Technical or managerial execution approach applied to perform the work.
+*   **Estimated Effort and Duration Units:** Estimated working effort in person-hours and planned calendar duration.
+*   **Parent WBS Work Package Mapping:** The parent WBS work package identifier and deliverable directly decomposed by this activity.
+*   **Activity Completion Deliverable:** The tangible or verified intermediate output produced upon activity completion.
 
 </div>

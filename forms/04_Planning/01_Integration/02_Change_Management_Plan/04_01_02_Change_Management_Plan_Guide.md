@@ -1,26 +1,70 @@
+---
+lang: en
+layout: default
+title: Change Management Plan
+nav_order: 2
+---
+
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
 # Project Artifact: Change Management Plan
 
 **Document Reference:** `PMO-04.01.02`
 
-## Context & Definition
-The change management plan is a component of the project management plan. It describes how change will be managed on the project. Typical information includes the structure and membership of a change control board, definitions of change, and the step-by-step change control process (submittal, tracking, review, and disposition). The document is typically developed once and is not usually changed.
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Change Management Plan** in alignment with the
+Tasleemat framework.
 
-## Tailoring Tips
-*   If you have a few product components or project documents that require configuration management, you may be able to combine change management and configuration management into one plan.
-*   The rigor and structure of your change management plan should reflect the product development approach. For predictive approaches, a rigorous change management approach is appropriate. For adaptive approaches, the change management plan should allow for evolving scope.
+---
 
-## Alignment
-The change management plan should be aligned and consistent with the following documents:
-*   Project roadmap or development approach
-*   Scope management plan
-*   Requirements management plan
-*   Schedule management plan
-*   Cost management plan
-*   Quality management plan
-*   Configuration management plan
+### 1. What?
+A structured governance plan establishing change thresholds, CCB responsibilities, and the end-to-end change evaluation workflow.
 
-## Instructions
-1.  **Change management approach:** Describe the degree of change control and how change control will integrate with other aspects of project management.
-2.  **Definitions of change:** Define when a variance needs to go through the change control process to be re-baselined for schedule, budget, scope, and project documents. MUST be formatted as a Markdown table with exactly 2 columns: Type of Change, Definition & Re-baseline Trigger. The following rows MUST be pre-filled under Type of Change: Schedule Change, Budget Change, Scope Change, Project Document Change.
-3.  **Change control board:** Identify the structure and membership of the Change Control Board (CCB), including roles, responsibilities, and authority levels. MUST be formatted as a Markdown table with exactly 4 columns: Name, Role, Responsibility, Authority.
-4.  **Change control process:** Describe the processes for change request submittal, tracking, review, and outcome disposition. MUST be formatted as a Markdown table with exactly 2 columns: Process Step, Description. The following rows MUST be pre-filled under Process Step: Change request submittal, Change request tracking, Change request review, Change request outcome.
+---
+
+### 2. Why?
+Prevents scope creep, ensures objective evaluation of project impacts, and maintains baseline integrity.
+
+---
+
+### 3. When?
+Established during initial project planning and enforced throughout project execution and controlling.
+
+---
+
+### 4. Who?
+Created by Project Manager, reviewed by PMO, and approved by the Change Control Board and Project Sponsor.
+
+---
+
+### Tailoring Tips
+*   Establish lightweight approval paths for agile iterations while retaining CCB oversight for product release baselines.
+*   Adjust CCB membership based on organizational governance structures.
+
+---
+
+### Alignment
+Integrates with Project Management Plan, Change Log, Configuration Management Plan, and baseline artifacts.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Change Management Plan**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Change Philosophy and Governance:** Principles governing how change requests are evaluated, prioritized, and approved.
+*   **Change Thresholds and Triggers:** Conditions and variance thresholds that necessitate formal change control submissions.
+*   **Change Tracking and Tools:** Software tools and tracking mechanisms used to log and trace change requests.
+*   **Minor Change Definition:** Criteria for low-impact changes manageable within existing project tolerances.
+*   **Major Change Definition:** Criteria for significant changes affecting baselines, budgets, or critical path.
+*   **Emergency Change Definition:** Expedited protocols for urgent operational or security change interventions.
+*   **CCB Composition and Roles:** Designated members, roles, and voting authority within the Change Control Board.
+*   **Meeting Cadence and Quorum:** Frequency of CCB meetings and quorum requirements for binding change approvals.
+*   **Escalation and Delegation Rules:** Rules governing threshold-based escalation to executive sponsors or steering committees.
+*   **Change Submission Workflow:** Standard operating procedure for logging and submitting formal change requests.
+*   **Impact Assessment Methodology:** Cross-functional analysis evaluating scope, schedule, cost, quality, and risk impact.
+*   **Approval and Baseline Update Protocol:** Formal sign-off steps and procedures for updating affected baselines and plans.
+*   **Communication and Implementation:** Process for communicating change decisions and tracking implementation progress.
+
+</div>

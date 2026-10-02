@@ -1,29 +1,51 @@
 {
-    "_llm_instructions": "Populate the budget summary and time-phased budget.",
     "form_name": "COST BASELINE",
     "document_reference": "PMO-04.04.04",
+    "_llm_instructions": "Populate the fields of 'COST BASELINE' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.04.04.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Budget Summary": {
-            "guidance": "Array containing the budget rollup.\n- **Component:** Activity Cost Estimates, Contingency Reserve, Cost Baseline, Management Reserve, Total Project Budget.\n- **Amount:** The total allocated funds.",
-            "value": [
-                {
-                    "Component": "",
-                    "Amount": ""
-                }
-            ]
+        "f01_Reporting_Period_and_Planned_Expenditures": {
+            "section": "Time-Phased Cost Baseline (S-Curve)",
+            "label": "Reporting Period and Planned Expenditures",
+            "guidance": "Periodic time-phased planned expenditures across months or fiscal quarters.",
+            "value": ""
         },
-        "Time-Phased Budget": {
-            "guidance": "Array of periodic costs.\n- **Period:** e.g. Month 1.\n- **Planned Period Cost:** Cost for this period.\n- **Cumulative Cost:** Running total (S-Curve data).\n- **Remarks:** Key activities driving the cost.",
-            "value": [
-                {
-                    "Period": "",
-                    "Planned Period Cost": "",
-                    "Cumulative Cost": "",
-                    "Remarks / Key Activities": ""
-                }
-            ]
+        "f02_Cumulative_Planned_Value_S_Curve_PV": {
+            "section": "Time-Phased Cost Baseline (S-Curve)",
+            "label": "Cumulative Planned Value (S-Curve PV)",
+            "guidance": "The authorized cumulative planned budget curve from project start to completion.",
+            "value": ""
+        },
+        "f03_Budget_at_Completion_BAC_Total": {
+            "section": "Time-Phased Cost Baseline (S-Curve)",
+            "label": "Budget at Completion (BAC) Total",
+            "guidance": "The total authorized baseline budget excluding management reserves.",
+            "value": ""
+        },
+        "f04_Control_Account_and_Work_Package_Allocations": {
+            "section": "Work Package Budget Allocations",
+            "label": "Control Account and Work Package Allocations",
+            "guidance": "Approved baseline budget figures mapped to specific WBS control accounts.",
+            "value": ""
+        },
+        "f05_Contingency_Reserve_Distribution": {
+            "section": "Work Package Budget Allocations",
+            "label": "Contingency Reserve Distribution",
+            "guidance": "Distribution of project contingency reserves assigned across control accounts.",
+            "value": ""
+        },
+        "f06_Periodic_Funding_Requirements": {
+            "section": "Project Funding Requirements and Limits",
+            "label": "Periodic Funding Requirements",
+            "guidance": "Total cash outlay required per period, incorporating funding step increments.",
+            "value": ""
+        },
+        "f07_Management_Reserve_and_Total_Project_Budget": {
+            "section": "Project Funding Requirements and Limits",
+            "label": "Management Reserve and Total Project Budget",
+            "guidance": "Executive management reserve amount and the total authorized project budget (BAC + Management Reserve).",
+            "value": ""
         }
     }
 }

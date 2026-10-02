@@ -1,55 +1,85 @@
 ---
 lang: en
-Form: DURATION ESTIMATING WORKSHEET (Instructions)
-> **CRITICAL RULE:** A single project will likely use multiple estimation methods, but **each individual activity should only be estimated using ONE method**. Do not duplicate the same activity ID across different tables. Place each activity in the single table that best fits its estimation approach.
-
+Form: Duration Estimating Worksheet (Instructions)
 ---
 
-# DURATION ESTIMATING WORKSHEET - LLM GENERATION GUIDE
+# Duration Estimating Worksheet - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `DURATION ESTIMATING WORKSHEET`. Generate three JSON arrays corresponding to the Parametric, Analogous, and Three-Point estimating methods.
+<!--
+System Instructions: This document contains instructions for generating the
+«Duration Estimating Worksheet». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> A duration estimating worksheet helps develop duration estimates when quantitative methods are used (Parametric, Analogous, or Three-point). It is an input to Duration Estimates and an output from process 6.4 Estimate Activity Duration in the PMBOK® Guide.
-> 
+> **Context and Definition:**
+> A detailed analytical worksheet used to derive activity duration estimates using parametric, analogous, and three-point (PERT) methodologies.
+
 > **Alignment:**
-> The duration estimating worksheet should be aligned and consistent with the following documents:
-• Assumption log
-• Scope baseline
-• Activity list
-• Activity attributes
-• Resource requirements
-• Risk register
+> Feeds into Duration Estimates table, Schedule Baseline, and Quantitative Risk Analysis.
 
 ---
 
-### 1. Parametric Estimates
-**Instruction:** Calculate duration using effort and resource parameters.
-*   **ID:** Unique identifier.
-*   **Activity description:** A brief description of the work.
-*   **Effort hours:** Amount of labor to accomplish work.
-*   **Resource quantity:** Number of resources assigned.
-*   **Percent available:** % of time resources are available.
-*   **Performance factor:** Productivity factor (1.0 is average).
-*   **Duration estimate:** Effort / (Qty * % Avail * Perf Factor).
+## Parametric Estimates
 
-### 2. Analogous Estimates
-**Instruction:** Calculate duration using historical comparisons.
-*   **ID:** Unique identifier.
-*   **Activity description:** A brief description of the work.
-*   **Previous activity:** Description of past similar work.
-*   **Previous duration:** Duration of past work.
-*   **Current activity:** Description of current work.
-*   **Multiplier:** Ratio of current vs previous size/complexity.
-*   **Duration estimate:** Prev Duration * Multiplier.
+### Parametric Activity and Unit Metric
+**Instruction:** The activity name and specific unit metric rate used for parametric calculation (e.g., hours per unit).
 
-### 3. Three-Point Estimates
-**Instruction:** Calculate duration using risk-weighted scenarios (Beta distribution).
-*   **ID:** Unique identifier.
-*   **Activity description:** A brief description of the work.
-*   **Optimistic (tO):** Best-case scenario.
-*   **Most Likely (tM):** Normal scenario.
-*   **Pessimistic (tP):** Worst-case scenario.
-*   **Weighting Equation:** Usually (tO + 4tM + tP) / 6.
-*   **Expected Duration (tE):** The calculated result.
+**Generated Value:** [ Add details... ]
+
+### Quantity and Resource Factor
+**Instruction:** Total quantity of work units and resource efficiency factor applied.
+
+**Generated Value:** [ Add details... ]
+
+### Parametric Duration Result
+**Instruction:** Calculated duration derived from the mathematical parametric formula.
+
+**Generated Value:** [ Add details... ]
+
+## Analogous Estimates
+
+### Historical Reference Activity
+**Instruction:** Past project activity used as a baseline benchmark for historical comparison.
+
+**Generated Value:** [ Add details... ]
+
+### Historical Duration and Complexity Scaling
+**Instruction:** Duration of past activity and scaling factor applied for project scope differences.
+
+**Generated Value:** [ Add details... ]
+
+### Analogous Duration Result
+**Instruction:** Final duration outcome determined through analogous comparison.
+
+**Generated Value:** [ Add details... ]
+
+## Three-Point Estimates (Beta Distribution)
+
+### Optimistic, Most Likely, and Pessimistic Durations
+**Instruction:** The recorded optimistic (tO), most likely (tM), and pessimistic (tP) estimates.
+
+**Generated Value:** [ Add details... ]
+
+### Beta Calculated Expected Duration (tE)
+**Instruction:** Calculated expected duration using the PERT beta distribution formula (tO + 4tM + tP) / 6.
+
+**Generated Value:** [ Add details... ]
+
+### Standard Deviation and Variance
+**Instruction:** Calculated standard deviation (tP - tO) / 6 assessing estimating risk and variance.
+
+**Generated Value:** [ Add details... ]
+
+## Aggregated Schedule Reserves
+
+### Total Calculated Schedule Buffer
+**Instruction:** Consolidated sum of duration contingency buffers across all estimated activities.
+
+**Generated Value:** [ Add details... ]
+
+### Worksheet Reconciliation and Approval
+**Instruction:** Formal review confirming no duplicate activity estimations across methods.
+
+**Generated Value:** [ Add details... ]
+
+---

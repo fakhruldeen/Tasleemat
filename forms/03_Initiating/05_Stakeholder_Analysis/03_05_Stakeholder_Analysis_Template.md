@@ -17,7 +17,7 @@ Section Instructions:
 
 ---
 
-### Stakeholder Analysis Entries
+## Stakeholder Analysis Entries
 <!-- 
 Please populate the table below with the following details:
 - **ID:** Unique identifier linking back to the Stakeholder Register (e.g., SH-01).

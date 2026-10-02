@@ -1,52 +1,50 @@
 {
-    "_llm_instructions": "Populate the Quality Audit based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Area Audited: Check the box for the area or areas audited.\n- Good Practices from Similar Projects: Describe any good or best practices that can be shared from similar projects.\n- Areas for Improvement: Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.\n- Deficiencies or Defects: Log any defects or deficiencies found during the audit, including action items.\n- Implementation Tracking of Approved Changes: Track the implementation status of approved changes, corrective, or preventive actions.\n- Information to Share with Other Projects: Document any information, insights, or findings that should be shared with other projects.\n- Comments: Provide any additional useful comments about the audit.",
     "form_name": "QUALITY AUDIT REPORT",
     "document_reference": "PMO-05.05",
+    "_llm_instructions": "Populate the fields of 'QUALITY AUDIT REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.05.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Area Audited": {
-            "guidance": "Check the box for the area or areas audited.",
-            "value": {
-                "Project processes": false,
-                "Project documents": false,
-                "Product requirements": false,
-                "Product documentation": false,
-                "Defect or deficiency repair": false,
-                "Compliance with organizational policies and procedures": false,
-                "Compliance with the quality management plan": false
-            }
-        },
-        "Good Practices from Similar Projects": {
-            "guidance": "Describe any good or best practices that can be shared from similar projects.",
+        "f01_Area_Audited": {
+            "section": "Area Audited",
+            "label": "Area Audited",
+            "guidance": "Specific processes, documentation, deliverables, or quality procedures evaluated.",
             "value": ""
         },
-        "Areas for Improvement": {
-            "guidance": "Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.",
+        "f02_Good_Practices_from_Similar_Projects": {
+            "section": "Good Practices from Similar Projects",
+            "label": "Good Practices from Similar Projects",
+            "guidance": "High-performing practices, techniques, and benchmarks identified during audit.",
             "value": ""
         },
-        "Deficiencies or Defects": {
-            "guidance": "Log any defects or deficiencies found during the audit, including action items.",
-            "value": [
-                {
-                    "ID": "",
-                    "Defect": "",
-                    "Action": "",
-                    "Responsible Party": "",
-                    "Due Date": ""
-                }
-            ]
-        },
-        "Implementation Tracking of Approved Changes": {
-            "guidance": "Track the implementation status of approved changes, corrective, or preventive actions.",
+        "f03_Areas_for_Improvement": {
+            "section": "Areas for Improvement",
+            "label": "Areas for Improvement",
+            "guidance": "Gaps, performance deviations, and recommended procedural optimizations.",
             "value": ""
         },
-        "Information to Share with Other Projects": {
-            "guidance": "Document any information, insights, or findings that should be shared with other projects.",
+        "f04_Deficiencies_or_Defects": {
+            "section": "Deficiencies or Defects",
+            "label": "Deficiencies or Defects",
+            "guidance": "Recorded defects, non-compliance items, and assigned corrective actions.",
             "value": ""
         },
-        "Comments": {
-            "guidance": "Provide any additional useful comments about the audit.",
+        "f05_Implementation_Tracking_of_Approved_Changes": {
+            "section": "Implementation Tracking of Approved Changes",
+            "label": "Implementation Tracking of Approved Changes",
+            "guidance": "Status of previously approved corrective actions, preventive actions, and defect repairs.",
+            "value": ""
+        },
+        "f06_Information_to_Share_with_Other_Projects": {
+            "section": "Information to Share with Other Projects",
+            "label": "Information to Share with Other Projects",
+            "guidance": "Valuable organizational insights, lessons, and quality benchmarks to disseminate.",
+            "value": ""
+        },
+        "f07_Comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "General observations, auditor notes, and executive summary.",
             "value": ""
         }
     }

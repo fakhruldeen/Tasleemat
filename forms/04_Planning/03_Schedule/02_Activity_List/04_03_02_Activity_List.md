@@ -1,32 +1,63 @@
 ---
 lang: en
-Form: ACTIVITY LIST (Instructions)
+Form: Activity List (Instructions)
 ---
 
-# ACTIVITY LIST - LLM GENERATION GUIDE
+# Activity List - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `ACTIVITY LIST`. When asked to populate this form, generate a JSON array of activity objects that represent the project's required activities.
+<!--
+System Instructions: This document contains instructions for generating the
+«Activity List». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The activity list defines all the activities necessary to complete the project work. It also describes the activities in sufficient detail so that the person performing the work understands the requirements necessary to complete it correctly. The activity list is an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition.
-> 
+> **Context and Definition:**
+> A comprehensive table listing all scheduled activities required on the project to decompose WBS work packages into manageable execution units.
+
 > **Alignment:**
-> The activity list should be aligned and consistent with the following documents:
-• Milestone list
-• Activity attributes
-• WBS
-• WBS dictionary
-• Product backlog
-• Iteration release plan
+> Directly links WBS Work Packages to Activity Attributes, Milestone List, Duration Estimates, and Network Diagram.
 
 ---
 
-### Table: Activity List
-**Instruction:** Generate a comprehensive list of project activities in a table format.
+## Schedule Activity Inventory
 
-**Columns Definition:**
-*   **ID:** A unique identifier for the activity (often tied to the WBS).
-*   **Activity Name:** A brief statement that summarizes the activity. Activities usually start with a verb and are only a few words.
-*   **Description of Work:** Provide more detail to the activity description, such as a process or method to accomplish the work.
-*   **Planned Release / Iteration:** Indicate the planned release or iteration for each activity (especially relevant for adaptive/agile development approaches).
+### Activity Identifier and Name
+**Instruction:** Unique activity code and concise action-oriented title for each schedule activity.
+
+**Generated Value:** [ Add details... ]
+
+### Activity Scope of Work
+**Instruction:** Specific narrative detailing the discrete scope of work to be performed in this activity.
+
+**Generated Value:** [ Add details... ]
+
+### Planned Iteration or Release
+**Instruction:** The target delivery sprint, wave, or milestone window assigned to this activity.
+
+**Generated Value:** [ Add details... ]
+
+## Activity Details and Descriptions
+
+### Activity Execution Method
+**Instruction:** Technical or managerial execution approach applied to perform the work.
+
+**Generated Value:** [ Add details... ]
+
+### Estimated Effort and Duration Units
+**Instruction:** Estimated working effort in person-hours and planned calendar duration.
+
+**Generated Value:** [ Add details... ]
+
+## Associated WBS Work Packages
+
+### Parent WBS Work Package Mapping
+**Instruction:** The parent WBS work package identifier and deliverable directly decomposed by this activity.
+
+**Generated Value:** [ Add details... ]
+
+### Activity Completion Deliverable
+**Instruction:** The tangible or verified intermediate output produced upon activity completion.
+
+**Generated Value:** [ Add details... ]
+
+---

@@ -1,17 +1,11 @@
-<!-- LLM INSTRUCTIONS: Fill in the Resource Management Plan based on the project context.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Team member identification and estimates:** Provide a table identifying Role, Number (estimated count), and Skill Level.
-*   **Team member acquisition:** Document how staff will be brought on to the project. Describe differences between internal and contract team members regarding on-boarding.
-*   **Team member management and release:** Document how team members will be managed and eventually released. Include methods for knowledge transfer and staff release.
-*   **Project organizational chart:** Create a hierarchy chart (Mermaid flowchart TD) to show the project reporting and organizational structure.
-*   **Roles, Responsibilities, and Authority:** Provide a table identifying Role, Responsibility, and Authority.
-*   **Training requirements:** Describe required training on equipment, technology, or company processes.
-*   **Rewards and recognition:** Describe any reward and recognition processes and limitations.
-*   **Team development:** Describe methods for developing individual team members and the team as a whole.
-*   **Physical resource identification and estimates:** Provide a table identifying Resource, Amount, and Grade.
-*   **Physical resource acquisition:** Document how equipment/materials will be acquired (buy, lease, rent).
-*   **Physical resource management:** Document how materials/equipment will be managed (inventory, supply chain, logistics).
+- Resource Identification and Acquisition: Provide comprehensive project data for all required fields in this section.
+- Roles, Responsibilities, and Authority: Provide comprehensive project data for all required fields in this section.
+- Project Organization Structure: Provide comprehensive project data for all required fields in this section.
+- Team Development and Training Strategy: Provide comprehensive project data for all required fields in this section.
+- Physical Resource Management and Control: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -19,69 +13,57 @@ Section Instructions:
 <h1 align="center">RESOURCE MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
-
----
-
-## 1. Team Resource Management
-
-### 1.1 Team member identification and estimates
-| Role | Number | Skill Level |
 | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-
-### 1.2 Team member acquisition
-> [ Add details... ]
-
-### 1.3 Team member management and release
-> [ Add details... ]
 
 ---
 
-## 2. Project Organizational Chart
-```mermaid
-flowchart TD
-    PM[Project Manager] --> TM1[Team Member 1]
-    PM --> TM2[Team Member 2]
-```
+## 1. Resource Identification and Acquisition
+
+**Resource Identification Strategy:**
+[ Add details... ]
+
+**Resource Acquisition and Staffing Approach:**
+[ Add details... ]
 
 ---
 
-## 3. Roles, Responsibilities, and Authority
-| Role | Responsibility | Authority |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 2. Roles, Responsibilities, and Authority
+
+**Key Project Roles and Competency Profiles:**
+[ Add details... ]
+
+**Authority and Decision-Making Boundaries:**
+[ Add details... ]
 
 ---
 
-## 4. Team Development and Support
+## 3. Project Organization Structure
 
-### 4.1 Training requirements
-> [ Add details... ]
+**Project Organizational Chart and Hierarchy:**
+[ Add details... ]
 
-### 4.2 Rewards and recognition
-> [ Add details... ]
-
-### 4.3 Team development
-> [ Add details... ]
+**Resource Management Governance:**
+[ Add details... ]
 
 ---
 
-## 5. Physical Resource Management
+## 4. Team Development and Training Strategy
 
-### 5.1 Physical resource identification and estimates
-| Resource | Amount | Grade |
-| :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Team Building and Development Initiatives:**
+[ Add details... ]
 
-### 5.2 Physical resource acquisition
-> [ Add details... ]
+**Required Training and Certification Programs:**
+[ Add details... ]
 
-### 5.3 Physical resource management
-> [ Add details... ]
+---
+
+## 5. Physical Resource Management and Control
+
+**Equipment and Material Logistics:**
+[ Add details... ]
+
+**Resource Release and Demobilization Plan:**
+[ Add details... ]
 
 ---
 
@@ -90,8 +72,8 @@ flowchart TD
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Resource Manager** | {{Resource_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

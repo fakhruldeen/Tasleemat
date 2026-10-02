@@ -1,94 +1,51 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and the 'value' properties for each field in this REQUIREMENTS TRACEABILITY MATRIX template based on the provided project context. Context & Definition: A requirements traceability matrix is used to track the various attributes of requirements throughout the project life cycle. It uses information from the requirements documentation and traces how those requirements are addressed through other aspects of the project. An inter-requirements traceability matrix can be used to trace the relationship between categories of requirements (e.g., Business vs Technical). The requirements traceability matrix is an output from the process 5.2 Collect Requirements in the PMBOK® Guide – Sixth Edition. Alignment: The requirements traceability matrix should be aligned and consistent with the following documents:\n• Development approach\n• Requirements management plan\n• Requirements documentation\n• Release and iteration plan",
     "form_name": "REQUIREMENTS TRACEABILITY MATRIX",
     "document_reference": "PMO-04.02.04",
+    "_llm_instructions": "Populate the fields of 'REQUIREMENTS TRACEABILITY MATRIX' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.02.04.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Requirements Traceability Matrix": {
-            "guidance": "Generate a JSON array of objects representing the Requirements Traceability Matrix table. Each object must contain two nested objects: 'Requirement Information' and 'Relationship Traceability'.\nRules for 'Requirement Information':\n- 'ID': Unique requirement identifier.\n- 'Requirement': Condition or capability to be met.\n- 'Source': Stakeholder that identified the requirement.\n- 'Priority': e.g., Level 1, Level 2.\n- 'Category': e.g., functional, nonfunctional.\n\nRules for 'Relationship Traceability':\n- 'Business objective': Business objective met by fulfilling the requirement.\n- 'Deliverable': Associated deliverable.\n- 'Verification': Metric used to measure satisfaction.\n- 'Validation': Technique used to validate stakeholder needs.",
-            "value": [
-                {
-                    "Requirement Information": {
-                        "ID": "",
-                        "Requirement": "",
-                        "Source": "",
-                        "Priority": "",
-                        "Category": ""
-                    },
-                    "Relationship Traceability": {
-                        "Business objective": "",
-                        "Deliverable": "",
-                        "Verification": "",
-                        "Validation": ""
-                    }
-                },
-                {
-                    "Requirement Information": {
-                        "ID": "",
-                        "Requirement": "",
-                        "Source": "",
-                        "Priority": "",
-                        "Category": ""
-                    },
-                    "Relationship Traceability": {
-                        "Business objective": "",
-                        "Deliverable": "",
-                        "Verification": "",
-                        "Validation": ""
-                    }
-                },
-                {
-                    "Requirement Information": {
-                        "ID": "",
-                        "Requirement": "",
-                        "Source": "",
-                        "Priority": "",
-                        "Category": ""
-                    },
-                    "Relationship Traceability": {
-                        "Business objective": "",
-                        "Deliverable": "",
-                        "Verification": "",
-                        "Validation": ""
-                    }
-                }
-            ]
+        "f01_Traceability_Purpose_and_Baseline_Reference": {
+            "section": "Traceability Parameters",
+            "label": "Traceability Purpose and Baseline Reference",
+            "guidance": "The governing objective and versioned requirements baseline linked across the matrix.",
+            "value": ""
         },
-        "Inter-Requirements Traceability Matrix": {
-            "guidance": "Generate a JSON array of objects representing the Inter-Requirements Traceability Matrix table. Each object must have the exact keys specified below. Generate at least 3 representative entries.\nRules:\n- 'Business Req ID': Unique business requirement identifier.\n- 'Business Requirement': Condition to satisfy business needs.\n- 'Business Priority': Priority of the business requirement.\n- 'Business Source': Stakeholder who identified the business requirement.\n- 'Technical Req ID': Unique technical requirement identifier.\n- 'Technical Requirement': Technical performance to satisfy a need.\n- 'Technical Priority': Priority of the technical requirement.\n- 'Technical Source': Stakeholder who identified the technical requirement.",
-            "value": [
-                {
-                    "Business Req ID": "",
-                    "Business Requirement": "",
-                    "Business Priority": "",
-                    "Business Source": "",
-                    "Technical Req ID": "",
-                    "Technical Requirement": "",
-                    "Technical Priority": "",
-                    "Technical Source": ""
-                },
-                {
-                    "Business Req ID": "",
-                    "Business Requirement": "",
-                    "Business Priority": "",
-                    "Business Source": "",
-                    "Technical Req ID": "",
-                    "Technical Requirement": "",
-                    "Technical Priority": "",
-                    "Technical Source": ""
-                },
-                {
-                    "Business Req ID": "",
-                    "Business Requirement": "",
-                    "Business Priority": "",
-                    "Business Source": "",
-                    "Technical Req ID": "",
-                    "Technical Requirement": "",
-                    "Technical Priority": "",
-                    "Technical Source": ""
-                }
-            ]
+        "f02_Traceability_Dimensions_and_Attributes": {
+            "section": "Traceability Parameters",
+            "label": "Traceability Dimensions and Attributes",
+            "guidance": "Key parameters tracked including source origin, WBS work package, design component, and test case ID.",
+            "value": ""
+        },
+        "f03_Business_Need_to_Requirement_Linkage": {
+            "section": "Requirements Traceability Mapping",
+            "label": "Business Need to Requirement Linkage",
+            "guidance": "Explicit linkage connecting overarching business goals to detailed functional requirements.",
+            "value": ""
+        },
+        "f04_Requirement_to_WBS_Deliverable_Mapping": {
+            "section": "Requirements Traceability Mapping",
+            "label": "Requirement to WBS Deliverable Mapping",
+            "guidance": "Traceability mapping associating each requirement with its corresponding WBS work package.",
+            "value": ""
+        },
+        "f05_Requirement_to_Design_and_Test_Case_Mapping": {
+            "section": "Requirements Traceability Mapping",
+            "label": "Requirement to Design and Test Case Mapping",
+            "guidance": "Verification mapping linking requirements to technical architecture components and test verification cases.",
+            "value": ""
+        },
+        "f06_Core_Inter_Requirement_Dependencies": {
+            "section": "Inter-Requirements Dependencies",
+            "label": "Core Inter-Requirement Dependencies",
+            "guidance": "Identified functional linkages, prerequisite requirements, and cross-feature constraints.",
+            "value": ""
+        },
+        "f07_Impact_and_Traceability_Governance": {
+            "section": "Inter-Requirements Dependencies",
+            "label": "Impact and Traceability Governance",
+            "guidance": "Protocols for assessing downstream deliverable impact when a linked requirement is modified.",
+            "value": ""
         }
     }
 }

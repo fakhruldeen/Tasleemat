@@ -1,91 +1,51 @@
 {
-    "_llm_instructions": "Populate the Probability and Impact Assessment by defining exact thresholds and rating guidelines based on project scale and criticality.",
     "form_name": "PROBABILITY AND IMPACT ASSESSMENT",
     "document_reference": "PMO-04.08.03",
+    "_llm_instructions": "Populate the fields of 'PROBABILITY AND IMPACT ASSESSMENT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.08.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Definitions of Impact by Objective": {
-            "guidance": "Provide specific thresholds for Scope, Quality, Schedule, and Cost across the 5 levels (Very High to Very Low).",
-            "value": [
-                {
-                    "Rating": "Very High",
-                    "Scope Impact": "",
-                    "Quality Impact": "",
-                    "Schedule Impact": "",
-                    "Cost Impact": ""
-                },
-                {
-                    "Rating": "High",
-                    "Scope Impact": "",
-                    "Quality Impact": "",
-                    "Schedule Impact": "",
-                    "Cost Impact": ""
-                },
-                {
-                    "Rating": "Medium",
-                    "Scope Impact": "",
-                    "Quality Impact": "",
-                    "Schedule Impact": "",
-                    "Cost Impact": ""
-                },
-                {
-                    "Rating": "Low",
-                    "Scope Impact": "",
-                    "Quality Impact": "",
-                    "Schedule Impact": "",
-                    "Cost Impact": ""
-                },
-                {
-                    "Rating": "Very Low",
-                    "Scope Impact": "",
-                    "Quality Impact": "",
-                    "Schedule Impact": "",
-                    "Cost Impact": ""
-                }
-            ]
+        "f01_Probability_Scoring_Scales_and_Values": {
+            "section": "Assessment Parameters and Scoring Scales",
+            "label": "Probability Scoring Scales and Values",
+            "guidance": "The 1 to 5 numerical scale and percentage probability ranges applied.",
+            "value": ""
         },
-        "Definitions of Probability": {
-            "guidance": "Provide percentage thresholds or verbal descriptors for probability across the 5 levels.",
-            "value": [
-                {
-                    "Rating": "Very High",
-                    "Description": ""
-                },
-                {
-                    "Rating": "High",
-                    "Description": ""
-                },
-                {
-                    "Rating": "Medium",
-                    "Description": ""
-                },
-                {
-                    "Rating": "Low",
-                    "Description": ""
-                },
-                {
-                    "Rating": "Very Low",
-                    "Description": ""
-                }
-            ]
+        "f02_Impact_Scoring_Scales_and_Dimensions": {
+            "section": "Assessment Parameters and Scoring Scales",
+            "label": "Impact Scoring Scales and Dimensions",
+            "guidance": "The 1 to 5 rating scale defining scope, schedule, cost, and quality severity.",
+            "value": ""
         },
-        "Risk Rating Guidelines": {
-            "guidance": "Define the rule logic for mapping combinations of probability and impact into High, Medium, or Low overall ratings.",
-            "value": [
-                {
-                    "Risk Rating": "High",
-                    "Conditions": ""
-                },
-                {
-                    "Risk Rating": "Medium",
-                    "Conditions": ""
-                },
-                {
-                    "Risk Rating": "Low",
-                    "Conditions": ""
-                }
-            ]
+        "f03_Risk_ID_and_Event_Title": {
+            "section": "Qualitative Risk Evaluation",
+            "label": "Risk ID and Event Title",
+            "guidance": "The unique risk tracking identifier and concise description of the risk event.",
+            "value": ""
+        },
+        "f04_Evaluated_Probability_and_Impact_Ratings": {
+            "section": "Qualitative Risk Evaluation",
+            "label": "Evaluated Probability and Impact Ratings",
+            "guidance": "Individual probability score and assessed impact rating across project dimensions.",
+            "value": ""
+        },
+        "f05_Risk_Urgency_and_Proximity_Assessment": {
+            "section": "Qualitative Risk Evaluation",
+            "label": "Risk Urgency and Proximity Assessment",
+            "guidance": "Time proximity and urgency factor determining how quickly a response is needed.",
+            "value": ""
+        },
+        "f06_Composite_Risk_Exposure_Score": {
+            "section": "Risk Exposure Analysis and Prioritization",
+            "label": "Composite Risk Exposure Score",
+            "guidance": "Calculated overall risk score (Probability x Impact) placing the risk on the priority ladder.",
+            "value": ""
+        },
+        "f07_Priority_Category_and_Mitigation_Urgency": {
+            "section": "Risk Exposure Analysis and Prioritization",
+            "label": "Priority Category and Mitigation Urgency",
+            "guidance": "Classification into High (Red), Moderate (Yellow), or Low (Green) priority bands.",
+            "value": ""
         }
     }
 }

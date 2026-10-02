@@ -1,10 +1,9 @@
-<!-- LLM INSTRUCTIONS: Fill in the table rows based on project context. Add or remove rows as needed.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Column Definitions:
-*   **ID:** A unique identifier for the milestone.
-*   **Milestone Name:** Milestone name that uniquely defines the milestone.
-*   **Milestone Description:** A description of the milestone in enough detail to understand what is needed to determine the milestone is complete.
-*   **Type:** A description of the type of milestone, such as Internal/External, Interim/Final, or Mandatory/Optional.
+Section Instructions:
+- Mandatory Milestones: Provide comprehensive project data for all required fields in this section.
+- Optional and Internal Milestones: Provide comprehensive project data for all required fields in this section.
+- Milestone Verification and Criteria: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -12,15 +11,37 @@ Column Definitions:
 <h1 align="center">MILESTONE LIST</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-| ID | Milestone Name | Milestone Description | Type |
-| :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 1. Mandatory Milestones
+
+**Contractual and Regulatory Milestones:**
+[ Add details... ]
+
+**Target Dates and Deliverables (Mandatory):**
+[ Add details... ]
+
+---
+
+## 2. Optional and Internal Milestones
+
+**Internal Project Gate Milestones:**
+[ Add details... ]
+
+**Target Dates and Deliverables (Internal):**
+[ Add details... ]
+
+---
+
+## 3. Milestone Verification and Criteria
+
+**Verification Evidence and Sign-off Lead:**
+[ Add details... ]
+
+**Milestone Critical Path Impact:**
+[ Add details... ]
 
 ---
 
@@ -29,8 +50,8 @@ Column Definitions:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

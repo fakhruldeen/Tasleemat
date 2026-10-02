@@ -1,13 +1,9 @@
-<!-- LLM INSTRUCTIONS: Fill in the budget summary and the time-phased budget table below. Generate a mermaid xychart-beta representing the Cost Baseline S-Curve.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Section Instructions:
-*   **Budget Summary Component:** The structural element of the budget (Activity Cost Estimates, Contingency Reserve, Cost Baseline, Management Reserve, Total Project Budget).
-*   **Budget Summary Amount:** The total allocated funds for that component.
-*   **Period:** The specific time period (e.g. Month 1, Month 2, Q1).
-*   **Planned Period Cost:** The cost planned to be spent during this specific period.
-*   **Cumulative Cost:** The running total of planned costs up to and including this period (this represents the S-Curve).
-*   **Remarks / Key Activities:** The major work packages or deliverables driving the cost in this period.
-*   **S-Curve Graphic:** Update the mermaid xychart-beta block. The x-axis should be short alphanumeric strings (e.g. [P1, P2]) to avoid parsing errors. y-axis is Cumulative Cost.
+- Time-Phased Cost Baseline (S-Curve): Provide comprehensive project data for all required fields in this section.
+- Work Package Budget Allocations: Provide comprehensive project data for all required fields in this section.
+- Project Funding Requirements and Limits: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -15,41 +11,40 @@ Section Instructions:
 <h1 align="center">COST BASELINE</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-### Project Budget Summary
-<!-- The Cost Baseline includes Contingency Reserves. Management Reserves are added to the Cost Baseline to determine the Total Project Budget. -->
-| Component | Amount |
-| :--- | :--- |
-| **Activity Cost Estimates** | [ Add details... ] |
-| **Contingency Reserve** | [ Add details... ] |
-| **Cost Baseline (Total)** | [ Add details... ] |
-| **Management Reserve** | [ Add details... ] |
-| **Total Project Budget** | [ Add details... ] |
+## 1. Time-Phased Cost Baseline (S-Curve)
+
+**Reporting Period and Planned Expenditures:**
+[ Add details... ]
+
+**Cumulative Planned Value (S-Curve PV):**
+[ Add details... ]
+
+**Budget at Completion (BAC) Total:**
+[ Add details... ]
 
 ---
 
-### Cost Baseline S-Curve
-<!-- Replace the sample data below with the actual time-phased cumulative costs to render the S-Curve. -->
-```mermaid
-xychart-beta
-    title "Cost Baseline S-Curve"
-    x-axis [P1, P2, P3, P4, P5, P6]
-    y-axis "Cumulative Cost" 0 --> 10000
-    line [1000, 2500, 4500, 7000, 9000, 10000]
-    bar [1000, 1500, 2000, 2500, 2000, 1000]
-```
+## 2. Work Package Budget Allocations
+
+**Control Account and Work Package Allocations:**
+[ Add details... ]
+
+**Contingency Reserve Distribution:**
+[ Add details... ]
 
 ---
 
-### Time-Phased Budget
-| Period | Planned Period Cost | Cumulative Cost | Remarks / Key Activities |
-| :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 3. Project Funding Requirements and Limits
+
+**Periodic Funding Requirements:**
+[ Add details... ]
+
+**Management Reserve and Total Project Budget:**
+[ Add details... ]
 
 ---
 
@@ -58,12 +53,12 @@ xychart-beta
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Finance / Cost Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
-  <strong>Template:</strong> Cost Baseline | <strong>Ref:</strong> PMO-04.04.04 <br>
+  <strong>Template:</strong> COST BASELINE | <strong>Ref:</strong> PMO-04.04.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

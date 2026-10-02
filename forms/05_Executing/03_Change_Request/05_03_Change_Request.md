@@ -1,34 +1,72 @@
 ---
 lang: en
-Form: CHANGE REQUEST (Instructions)
+Form: Change Request (Instructions)
 ---
 
-# CHANGE REQUEST - LLM GENERATION GUIDE
+# Change Request - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `CHANGE REQUEST`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Change Request». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> A change request is used to change any aspect of the project, including product, documents, cost, or schedule. Upon completion, it is submitted to the change control board for review.
+> **Context and Definition:**
+> A formal proposal to modify any deliverable, project management plan component, or project baseline.
 
-**Tailoring Tips:**
-*   For smaller projects you can simplify the form by having a summary description of the impacts without including impacts for each subcategory (scope, quality, requirements, etc.).
-*   You can add a check box that indicates whether the change is mandatory (such as a legal requirement) or discretionary.
-*   A field can be added that describes the implications of not making the change.
-
-**Alignment:**
-The change request should be aligned and consistent with the following documents:
-*   Change management plan
-*   Change log
+> **Alignment:**
+> The Change Request aligns with Change Management Plan, Change Log, and Project Baselines.
 
 ---
 
-### Section Generation Instructions
-*   **Requestor Name and Position:** The name, and if appropriate, the position of the person requesting the change.
-*   **Change Category:** Check a box to indicate the category of change.
-*   **Change Type:** Indicate whether the change is mandatory (such as a legal requirement) or discretionary.
-*   **Description of Change:** Describe the proposed change in enough detail to clearly communicate all aspects of the change.
-*   **Justification for Proposed Change:** Indicate the reason for the change.
-*   **Implications of Not Making the Change:** Describe the implications or risks of not implementing this change.
-*   **Impacts of Change:** Describe the impact of the proposed change across project dimensions.
-*   **Comments:** Provide any comments that will clarify information about the requested change.
+## Requestor Information
+
+### Requestor Name and Position
+**Instruction:** The name and organizational role or position of the person submitting the change request.
+
+**Generated Value:** [ Add details... ]
+
+## Change Classification
+
+### Change Category
+**Instruction:** The specific project dimension affected (e.g., Scope, Schedule, Cost, Quality, Resource).
+
+**Generated Value:** [ Add details... ]
+
+### Change Type
+**Instruction:** Indicates whether the change is mandatory (legal/compliance) or discretionary.
+
+**Generated Value:** [ Add details... ]
+
+## Change Details
+
+### Description of Change
+**Instruction:** Comprehensive narrative detailing the requested modification or enhancement.
+
+**Generated Value:** [ Add details... ]
+
+### Justification for Proposed Change
+**Instruction:** The business driver, operational trigger, or rationale justifying the change.
+
+**Generated Value:** [ Add details... ]
+
+### Implications of Not Making the Change
+**Instruction:** Risks, costs, operational penalties, or missed opportunities if the change is rejected.
+
+**Generated Value:** [ Add details... ]
+
+## Impacts of Change
+
+### Impacts of Change
+**Instruction:** Detailed assessment of impacts across scope, schedule, budget, risks, and contracts.
+
+**Generated Value:** [ Add details... ]
+
+## Comments
+
+### Comments
+**Instruction:** Additional context, dependencies, or evaluation notes.
+
+**Generated Value:** [ Add details... ]
+
+---

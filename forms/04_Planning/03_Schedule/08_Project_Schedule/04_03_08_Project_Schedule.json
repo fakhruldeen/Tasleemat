@@ -1,35 +1,63 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties. Populate the array for the Project Schedule based on the context. Ensure dates are realistic. Context: The project schedule combines the information from the activity list, network diagram, resource requirements, and duration estimates to determine the start and finish dates for project activities. A common way of showing a schedule is via a Gantt chart. It is an output from the process 6.5 Develop Schedule in the PMBOK® Guide.",
     "form_name": "PROJECT SCHEDULE",
     "document_reference": "PMO-04.03.08",
+    "_llm_instructions": "Populate the fields of 'PROJECT SCHEDULE' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.08.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Project Schedule": {
-            "guidance": "Generate a JSON array representing the tabular schedule data.",
-            "value": [
-                {
-                    "WBS Identifier": "",
-                    "Activity Name": "",
-                    "Start Date": "",
-                    "Finish Date": "",
-                    "Resource Name": ""
-                },
-                {
-                    "WBS Identifier": "",
-                    "Activity Name": "",
-                    "Start Date": "",
-                    "Finish Date": "",
-                    "Resource Name": ""
-                },
-                {
-                    "WBS Identifier": "",
-                    "Activity Name": "",
-                    "Start Date": "",
-                    "Finish Date": "",
-                    "Resource Name": ""
-                }
-            ]
+        "f01_Project_Start_and_Target_Finish_Dates": {
+            "section": "Baseline Schedule Summary",
+            "label": "Project Start and Target Finish Dates",
+            "guidance": "The authorized baseline start date and targeted project completion date.",
+            "value": ""
+        },
+        "f02_Schedule_Data_Version_and_Baseline_Status": {
+            "section": "Baseline Schedule Summary",
+            "label": "Schedule Data Version and Baseline Status",
+            "guidance": "The formal schedule model version number and baseline authorization state.",
+            "value": ""
+        },
+        "f03_Total_Critical_Path_Length_and_Major_Phases": {
+            "section": "Baseline Schedule Summary",
+            "label": "Total Critical Path Length and Major Phases",
+            "guidance": "Total working days on the critical path and scheduled durations for each major project phase.",
+            "value": ""
+        },
+        "f04_WBS_Code_and_Activity_Schedule_Mapping": {
+            "section": "Detailed Schedule Data",
+            "label": "WBS Code and Activity Schedule Mapping",
+            "guidance": "Consolidated schedule line items linking WBS code, activity title, and work package.",
+            "value": ""
+        },
+        "f05_Planned_Start_and_Finish_Dates": {
+            "section": "Detailed Schedule Data",
+            "label": "Planned Start and Finish Dates",
+            "guidance": "Approved baseline start date and baseline completion date for each scheduled activity.",
+            "value": ""
+        },
+        "f06_Assigned_Resources_and_Effort_Allocation": {
+            "section": "Detailed Schedule Data",
+            "label": "Assigned Resources and Effort Allocation",
+            "guidance": "Designated resource leads, team members, and allocated effort hours per activity.",
+            "value": ""
+        },
+        "f07_Critical_Path_Flag_and_Dependencies": {
+            "section": "Critical Path and Float Analysis",
+            "label": "Critical Path Flag and Dependencies",
+            "guidance": "Clear indicator (Yes/No) identifying critical path activities and predecessor linkages.",
+            "value": ""
+        },
+        "f08_Total_Float_and_Free_Float_Values": {
+            "section": "Critical Path and Float Analysis",
+            "label": "Total Float and Free Float Values",
+            "guidance": "Calculated total float and free float values in working days for each schedule activity.",
+            "value": ""
+        },
+        "f09_Schedule_Risk_and_Recovery_Considerations": {
+            "section": "Critical Path and Float Analysis",
+            "label": "Schedule Risk and Recovery Considerations",
+            "guidance": "Identification of high-risk scheduling bottlenecks and contingency deployment rules.",
+            "value": ""
         }
     }
 }

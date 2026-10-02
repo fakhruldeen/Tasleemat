@@ -1,52 +1,50 @@
-<!-- LLM INSTRUCTIONS: Populate the Probability and Impact Assessment by defining exact thresholds and rating guidelines based on project scale and criticality. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Section-by-Section Instructions:
-- Definitions of Impact by Objective: Provide specific thresholds for Scope, Quality, Schedule, and Cost across the 5 levels (Very High to Very Low).
-- Definitions of Probability: Provide percentage thresholds or verbal descriptors for probability across the 5 levels.
-- Risk Rating Guidelines: Define the rule logic for mapping combinations of probability and impact into High, Medium, or Low overall ratings.
-
-Ensure lists and tables are populated strictly according to the markdown structure provided. -->
+Section Instructions:
+- Assessment Parameters and Scoring Scales: Provide comprehensive project data for all required fields in this section.
+- Qualitative Risk Evaluation: Provide comprehensive project data for all required fields in this section.
+- Risk Exposure Analysis and Prioritization: Provide comprehensive project data for all required fields in this section.
+-->
 
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">PROBABILITY AND IMPACT ASSESSMENT</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} |
-| :--- | :--- |
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |
 
 ---
 
-## Definitions of Impact by Objective
+## 1. Assessment Parameters and Scoring Scales
 
-| Rating | Scope Impact | Quality Impact | Schedule Impact | Cost Impact |
-| :--- | :--- | :--- | :--- | :--- |
-| **Very High** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **High** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **Medium** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **Low** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| **Very Low** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+**Probability Scoring Scales and Values:**
+[ Add details... ]
+
+**Impact Scoring Scales and Dimensions:**
+[ Add details... ]
 
 ---
 
-## Definitions of Probability
+## 2. Qualitative Risk Evaluation
 
-| Rating | Description |
-| :--- | :--- |
-| **Very High** | [ Add details... ] |
-| **High** | [ Add details... ] |
-| **Medium** | [ Add details... ] |
-| **Low** | [ Add details... ] |
-| **Very Low** | [ Add details... ] |
+**Risk ID and Event Title:**
+[ Add details... ]
+
+**Evaluated Probability and Impact Ratings:**
+[ Add details... ]
+
+**Risk Urgency and Proximity Assessment:**
+[ Add details... ]
 
 ---
 
-## Risk Rating Guidelines
+## 3. Risk Exposure Analysis and Prioritization
 
-| Risk Rating | Conditions |
-| :--- | :--- |
-| **High** | [ Add details... ] |
-| **Medium** | [ Add details... ] |
-| **Low** | [ Add details... ] |
+**Composite Risk Exposure Score:**
+[ Add details... ]
+
+**Priority Category and Mitigation Urgency:**
+[ Add details... ]
 
 ---
 
@@ -54,9 +52,9 @@ Ensure lists and tables are populated strictly according to the markdown structu
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Risk Owner** | {{Risk_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Risk Manager** | {{Risk_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Risk / Procurement Lead** | {{Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

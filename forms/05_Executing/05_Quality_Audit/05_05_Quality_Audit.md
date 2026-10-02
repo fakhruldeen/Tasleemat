@@ -1,31 +1,71 @@
 ---
 lang: en
-Form: QUALITY AUDIT (Instructions)
+Form: Quality Audit Report (Instructions)
 ---
 
-# QUALITY AUDIT - LLM GENERATION GUIDE
+# Quality Audit Report - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `QUALITY AUDIT`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Quality Audit Report». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> A quality audit is a technique that employs a structured, independent review to project and/or product elements. Audits should be tailored to best meet the needs of the project.
+> **Context and Definition:**
+> A structured, independent review to determine whether project activities comply with organizational and project policies, processes, and procedures.
 
-**Tailoring Tips:**
-*   Quality audits can also include information that will be shared with other projects.
-*   Some projects use audits to track the implementation of approved changes and corrective or preventive actions.
-
-**Alignment:**
-The quality audit should be aligned and consistent with the following documents:
-*   Quality management plan
+> **Alignment:**
+> The Quality Audit Report aligns with Quality Management Plan, Quality Metrics, and Corrective Action Plans.
 
 ---
 
-### Section Generation Instructions
-*   **Area Audited:** Check the box for the area or areas audited.
-*   **Good Practices from Similar Projects:** Describe any good or best practices that can be shared from similar projects.
-*   **Areas for Improvement:** Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.
-*   **Deficiencies or Defects:** Log any defects or deficiencies found during the audit, including action items.
-*   **Implementation Tracking of Approved Changes:** Track the implementation status of approved changes, corrective, or preventive actions.
-*   **Information to Share with Other Projects:** Document any information, insights, or findings that should be shared with other projects.
-*   **Comments:** Provide any additional useful comments about the audit.
+## Area Audited
+
+### Area Audited
+**Instruction:** Specific processes, documentation, deliverables, or quality procedures evaluated.
+
+**Generated Value:** [ Add details... ]
+
+## Good Practices from Similar Projects
+
+### Good Practices from Similar Projects
+**Instruction:** High-performing practices, techniques, and benchmarks identified during audit.
+
+**Generated Value:** [ Add details... ]
+
+## Areas for Improvement
+
+### Areas for Improvement
+**Instruction:** Gaps, performance deviations, and recommended procedural optimizations.
+
+**Generated Value:** [ Add details... ]
+
+## Deficiencies or Defects
+
+### Deficiencies or Defects
+**Instruction:** Recorded defects, non-compliance items, and assigned corrective actions.
+
+**Generated Value:** [ Add details... ]
+
+## Implementation Tracking of Approved Changes
+
+### Implementation Tracking of Approved Changes
+**Instruction:** Status of previously approved corrective actions, preventive actions, and defect repairs.
+
+**Generated Value:** [ Add details... ]
+
+## Information to Share with Other Projects
+
+### Information to Share with Other Projects
+**Instruction:** Valuable organizational insights, lessons, and quality benchmarks to disseminate.
+
+**Generated Value:** [ Add details... ]
+
+## Comments
+
+### Comments
+**Instruction:** General observations, auditor notes, and executive summary.
+
+**Generated Value:** [ Add details... ]
+
+---

@@ -1,25 +1,63 @@
 {
-    "_llm_instructions": "Populate the Lessons Learned Register based on the project context. Note: This log must output an array of objects matching the flat table headers.",
     "form_name": "LESSONS LEARNED REGISTER",
     "document_reference": "PMO-05.07",
+    "_llm_instructions": "Populate the fields of 'LESSONS LEARNED REGISTER' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.07.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Lessons Learned Register": {
-            "guidance": "Log all project lessons learned including the trigger event, the core lesson, responsible party, implementation opportunities, and organizational impact.",
-            "value": [
-                {
-                    "ID": "",
-                    "Category": "",
-                    "Trigger": "",
-                    "Lesson": "",
-                    "Responsible Party": "",
-                    "Identifier/Submitter": "",
-                    "Next Implementation Opportunity & Date": "",
-                    "Organizational Impact (Y/N)": "",
-                    "Comments": ""
-                }
-            ]
+        "f01_ID": {
+            "section": "Lessons Learned Entries",
+            "label": "ID",
+            "guidance": "Unique identifier for the lesson learned (e.g., LLR-01).",
+            "value": ""
+        },
+        "f02_Category": {
+            "section": "Lessons Learned Entries",
+            "label": "Category",
+            "guidance": "Knowledge area or project phase (e.g., Technical, Procurement, Schedule).",
+            "value": ""
+        },
+        "f03_Trigger": {
+            "section": "Lessons Learned Entries",
+            "label": "Trigger",
+            "guidance": "The triggering event, root cause, or situation encountered.",
+            "value": ""
+        },
+        "f04_Lesson": {
+            "section": "Lessons Learned Entries",
+            "label": "Lesson",
+            "guidance": "Detailed description of what worked well or what should be done differently.",
+            "value": ""
+        },
+        "f05_Responsible_Party": {
+            "section": "Lessons Learned Entries",
+            "label": "Responsible Party",
+            "guidance": "Person or role assigned to document or disseminate the lesson.",
+            "value": ""
+        },
+        "f06_Identifier_Submitter": {
+            "section": "Lessons Learned Entries",
+            "label": "Identifier/Submitter",
+            "guidance": "Name or team identifying the lesson.",
+            "value": ""
+        },
+        "f07_Next_Implementation_Opportunity_Date": {
+            "section": "Lessons Learned Entries",
+            "label": "Next Implementation Opportunity & Date",
+            "guidance": "Future milestone, project, or date where this lesson will be applied.",
+            "value": ""
+        },
+        "f08_Organizational_Impact_Y_N": {
+            "section": "Lessons Learned Entries",
+            "label": "Organizational Impact (Y/N)",
+            "guidance": "Whether this lesson impacts enterprise processes, standards, or assets.",
+            "value": ""
+        },
+        "f09_Comments": {
+            "section": "Lessons Learned Entries",
+            "label": "Comments",
+            "guidance": "Additional reflections, training recommendations, or references.",
+            "value": ""
         }
     }
 }

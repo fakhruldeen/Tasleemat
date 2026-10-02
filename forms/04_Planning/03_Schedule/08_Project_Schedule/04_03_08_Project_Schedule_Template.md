@@ -1,11 +1,9 @@
-<!-- LLM INSTRUCTIONS: Modify the Mermaid Gantt chart to visually represent the project schedule. Ensure valid Mermaid syntax.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Column Definitions:
-*   **WBS Identifier:** The unique WBS code linking the activity to the work package.
-*   **Activity Name:** A brief description of the work.
-*   **Start Date:** The planned start date (YYYY-MM-DD).
-*   **Finish Date:** The planned finish date (YYYY-MM-DD).
-*   **Resource Name:** The person or role assigned to the activity.
+Section Instructions:
+- Baseline Schedule Summary: Provide comprehensive project data for all required fields in this section.
+- Detailed Schedule Data: Provide comprehensive project data for all required fields in this section.
+- Critical Path and Float Analysis: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -13,39 +11,46 @@ Column Definitions:
 <h1 align="center">PROJECT SCHEDULE</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-```mermaid
-gantt
-    title Project Schedule
-    dateFormat  YYYY-MM-DD
-    axisFormat  %Y-%m-%d
-    tickInterval 1week
-    
-    %% MS Project Style Grouping & Dependencies
-    %% [ Add your project schedule activities here. Below is an example: ]
-    section 1.0 Design Phase
-    1.1 Requirements    :done, req, 2026-01-01, 7d
-    1.2 Architecture    :active, arch, after req, 10d
-    
-    section 2.0 Build Phase
-    2.1 Backend         :crit, back, after arch, 14d
-    2.2 Frontend        :front, after arch, 14d
-    
-    section 3.0 Testing
-    3.1 QA Testing      :milestone, qa, after back front, 0d
-```
+## 1. Baseline Schedule Summary
+
+**Project Start and Target Finish Dates:**
+[ Add details... ]
+
+**Schedule Data Version and Baseline Status:**
+[ Add details... ]
+
+**Total Critical Path Length and Major Phases:**
+[ Add details... ]
 
 ---
 
-### Schedule Data Table
-| WBS Identifier | Activity Name | Start Date | Finish Date | Resource Name |
-| :--- | :--- | :--- | :--- | :--- |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
-| [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] | [ Add... ] |
+## 2. Detailed Schedule Data
+
+**WBS Code and Activity Schedule Mapping:**
+[ Add details... ]
+
+**Planned Start and Finish Dates:**
+[ Add details... ]
+
+**Assigned Resources and Effort Allocation:**
+[ Add details... ]
+
+---
+
+## 3. Critical Path and Float Analysis
+
+**Critical Path Flag and Dependencies:**
+[ Add details... ]
+
+**Total Float and Free Float Values:**
+[ Add details... ]
+
+**Schedule Risk and Recovery Considerations:**
+[ Add details... ]
 
 ---
 
@@ -54,8 +59,8 @@ gantt
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Planning Lead / Scheduler** | {{Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

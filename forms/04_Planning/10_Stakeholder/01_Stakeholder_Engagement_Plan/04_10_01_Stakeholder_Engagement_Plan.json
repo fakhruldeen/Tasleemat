@@ -1,39 +1,51 @@
 {
-    "_llm_instructions": "Populate the Stakeholder Engagement Plan based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Stakeholder Engagement Assessment Matrix: Use 'C' for Current and 'D' for Desired engagement level (Unaware, Resistant, Neutral, Supportive, Leading).\n- Stakeholder Changes: Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.\n- Interrelationships: List any relationships between and among stakeholder groups.\n- Stakeholder Engagement Approach: Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.",
     "form_name": "STAKEHOLDER ENGAGEMENT PLAN",
     "document_reference": "PMO-04.10.01",
+    "_llm_instructions": "Populate the fields of 'STAKEHOLDER ENGAGEMENT PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.10.01.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Stakeholder Engagement Assessment Matrix": {
-            "guidance": "Use 'C' for Current and 'D' for Desired engagement level (Unaware, Resistant, Neutral, Supportive, Leading).",
-            "value": [
-                {
-                    "Stakeholder Name": "",
-                    "Unaware": "",
-                    "Resistant": "",
-                    "Neutral": "",
-                    "Supportive": "",
-                    "Leading": ""
-                }
-            ]
-        },
-        "Stakeholder Changes": {
-            "guidance": "Describe any pending additions, deletions, or changes to stakeholders and the potential impact to the project.",
+        "f01_Stakeholder_Name_and_Role": {
+            "section": "Stakeholder Engagement Assessment Matrix",
+            "label": "Stakeholder Name and Role",
+            "guidance": "Designated key stakeholder, organizational title, and sphere of influence.",
             "value": ""
         },
-        "Interrelationships": {
-            "guidance": "List any relationships between and among stakeholder groups.",
+        "f02_Current_vs_Desired_Engagement_Level": {
+            "section": "Stakeholder Engagement Assessment Matrix",
+            "label": "Current vs Desired Engagement Level",
+            "guidance": "Assessment of current engagement (Unaware, Resistant, Neutral, Supportive, Leading) vs. desired target level.",
             "value": ""
         },
-        "Stakeholder Engagement Approach": {
-            "guidance": "Describe the approach you will use with each stakeholder to move them to the preferred level of engagement.",
-            "value": [
-                {
-                    "Stakeholder Name": "",
-                    "Engagement Approach": ""
-                }
-            ]
+        "f03_Engagement_Gap_Analysis": {
+            "section": "Stakeholder Engagement Assessment Matrix",
+            "label": "Engagement Gap Analysis",
+            "guidance": "Analytical evaluation explaining the gap between current and desired engagement states.",
+            "value": ""
+        },
+        "f04_Inter_Stakeholder_Dynamics_and_Coalitions": {
+            "section": "Stakeholder Relationships and Interdependencies",
+            "label": "Inter-Stakeholder Dynamics and Coalitions",
+            "guidance": "Analysis of political dynamics, alliances, and influence networks among stakeholder groups.",
+            "value": ""
+        },
+        "f05_Stakeholder_Expectations_and_Key_Concerns": {
+            "section": "Stakeholder Relationships and Interdependencies",
+            "label": "Stakeholder Expectations and Key Concerns",
+            "guidance": "Documented primary expectations, operational concerns, and sensitivity triggers.",
+            "value": ""
+        },
+        "f06_Tailored_Engagement_Strategy": {
+            "section": "Engagement Strategies and Action Protocols",
+            "label": "Tailored Engagement Strategy",
+            "guidance": "Specific actionable interventions designed to move the stakeholder to the desired engagement state.",
+            "value": ""
+        },
+        "f07_Engagement_Monitoring_and_Feedback_Loop": {
+            "section": "Engagement Strategies and Action Protocols",
+            "label": "Engagement Monitoring and Feedback Loop",
+            "guidance": "Process for evaluating engagement effectiveness and adjusting tactics throughout delivery.",
+            "value": ""
         }
     }
 }

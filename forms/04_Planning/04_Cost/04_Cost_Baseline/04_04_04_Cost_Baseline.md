@@ -1,34 +1,63 @@
 ---
 lang: en
-Form: COST BASELINE (Instructions)
+Form: Cost Baseline (Instructions)
 ---
 
-# COST BASELINE - LLM GENERATION GUIDE
+# Cost Baseline - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `COST BASELINE`. When asked to populate this form, provide the budget summary, the time-phased budget table, and a mermaid xychart-beta representing the S-Curve.
+<!--
+System Instructions: This document contains instructions for generating the
+«Cost Baseline». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The cost baseline is a time-phased budget used to measure, monitor, and control cost performance. It is developed by summing the costs of the project by the time period and developing a cumulative cost curve (S-curve). It includes contingency reserves but excludes management reserves.
-> 
+> **Context and Definition:**
+> The approved version of the time-phased project budget, excluding any management reserves, which can be changed only through formal change control.
+
 > **Alignment:**
-> The cost baseline should be aligned with the Assumption log, Project schedule, Cost estimates, Project team assignments, and Risk register.
+> The core Cost component of the Performance Measurement Baseline (PMB), directly driving Earned Value Analysis.
 
 ---
 
-### Section Generation Instructions
-**1. Budget Summary:**
-*   **Component:** The structural element of the budget (Activity Cost Estimates, Contingency Reserve, Cost Baseline, Management Reserve, Total Project Budget).
-*   **Amount:** The total allocated funds for that component.
+## Time-Phased Cost Baseline (S-Curve)
 
-**2. Time-Phased Budget:**
-*   **Period:** The specific time period (e.g. Month 1, Month 2, Q1).
-*   **Planned Period Cost:** The cost planned to be spent during this specific period.
-*   **Cumulative Cost:** The running total of planned costs up to and including this period (this represents the S-Curve).
-*   **Remarks / Key Activities:** The major work packages or deliverables driving the cost in this period.
+### Reporting Period and Planned Expenditures
+**Instruction:** Periodic time-phased planned expenditures across months or fiscal quarters.
 
-**3. S-Curve Graphic:**
-*   Generate a `mermaid` diagram of type `xychart-beta`.
-*   The `x-axis` should be the Periods using short alphanumeric strings (e.g. `[P1, P2, P3]`) to avoid Mermaid lexical errors.
-*   The `y-axis` should map to the Cumulative Cost scale.
-*   Use `line` for Cumulative Cost and `bar` for Planned Period Cost.
+**Generated Value:** [ Add details... ]
+
+### Cumulative Planned Value (S-Curve PV)
+**Instruction:** The authorized cumulative planned budget curve from project start to completion.
+
+**Generated Value:** [ Add details... ]
+
+### Budget at Completion (BAC) Total
+**Instruction:** The total authorized baseline budget excluding management reserves.
+
+**Generated Value:** [ Add details... ]
+
+## Work Package Budget Allocations
+
+### Control Account and Work Package Allocations
+**Instruction:** Approved baseline budget figures mapped to specific WBS control accounts.
+
+**Generated Value:** [ Add details... ]
+
+### Contingency Reserve Distribution
+**Instruction:** Distribution of project contingency reserves assigned across control accounts.
+
+**Generated Value:** [ Add details... ]
+
+## Project Funding Requirements and Limits
+
+### Periodic Funding Requirements
+**Instruction:** Total cash outlay required per period, incorporating funding step increments.
+
+**Generated Value:** [ Add details... ]
+
+### Management Reserve and Total Project Budget
+**Instruction:** Executive management reserve amount and the total authorized project budget (BAC + Management Reserve).
+
+**Generated Value:** [ Add details... ]
+
+---

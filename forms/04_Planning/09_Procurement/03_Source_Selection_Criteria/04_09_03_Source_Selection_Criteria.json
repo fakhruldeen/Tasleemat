@@ -1,46 +1,63 @@
 {
-    "_llm_instructions": "Populate the Source Selection Criteria based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Criteria Definitions and Weighting: Define the criteria, assign weights (totaling 100%), and describe the meaning of ratings 1 through 5 for each criterion. Common criteria include Capacity, Cost, Experience, Technical expertise.\n- Candidate Evaluations: Evaluate each candidate against the criteria. Score = Weight * Rating.\n- Total Scores: Sum the scores for each candidate to determine the winner of the bid.",
     "form_name": "SOURCE SELECTION CRITERIA",
     "document_reference": "PMO-04.09.03",
+    "_llm_instructions": "Populate the fields of 'SOURCE SELECTION CRITERIA' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.09.03.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Criteria Definitions and Weighting": {
-            "guidance": "Define the criteria, assign weights (totaling 100%), and describe the meaning of ratings 1 through 5 for each criterion. Common criteria include Capacity, Cost, Experience, Technical expertise.",
-            "value": [
-                {
-                    "Criterion": "",
-                    "Weight (%)": "",
-                    "Rating 1 (Lowest)": "",
-                    "Rating 2": "",
-                    "Rating 3": "",
-                    "Rating 4": "",
-                    "Rating 5 (Highest)": ""
-                }
-            ]
+        "f01_Technical_Capability_and_Understanding_Weight": {
+            "section": "Evaluation Criteria and Weighting Framework",
+            "label": "Technical Capability and Understanding (Weight)",
+            "guidance": "Scoring weight and criteria assessing technical approach, compliance with SOW, and architecture.",
+            "value": ""
         },
-        "Candidate Evaluations": {
-            "guidance": "Evaluate each candidate against the criteria. Score = Weight * Rating.",
-            "value": [
-                {
-                    "Criterion": "",
-                    "Weight (%)": "",
-                    "Candidate 1 Rating": "",
-                    "Candidate 1 Score": "",
-                    "Candidate 2 Rating": "",
-                    "Candidate 2 Score": "",
-                    "Candidate 3 Rating": "",
-                    "Candidate 3 Score": ""
-                }
-            ]
+        "f02_Vendor_Experience_and_Past_Performance_Weight": {
+            "section": "Evaluation Criteria and Weighting Framework",
+            "label": "Vendor Experience and Past Performance (Weight)",
+            "guidance": "Scoring weight and criteria evaluating track record, references, and relevant past project delivery.",
+            "value": ""
         },
-        "Total Scores": {
-            "guidance": "Sum the scores for each candidate to determine the winner of the bid.",
-            "value": {
-                "Candidate 1 Name & Total Score": "",
-                "Candidate 2 Name & Total Score": "",
-                "Candidate 3 Name & Total Score": ""
-            }
+        "f03_Financial_Commercial_Pricing_Weight": {
+            "section": "Evaluation Criteria and Weighting Framework",
+            "label": "Financial Commercial Pricing (Weight)",
+            "guidance": "Scoring weight and evaluation model for pricing, total cost of ownership (TCO), and rate competitiveness.",
+            "value": ""
+        },
+        "f04_Management_Approach_and_Compliance_Weight": {
+            "section": "Evaluation Criteria and Weighting Framework",
+            "label": "Management Approach and Compliance (Weight)",
+            "guidance": "Scoring weight evaluating project management methodology, staffing qualifications, and contractual compliance.",
+            "value": ""
+        },
+        "f05_Vendor_Candidate_Name_and_Proposal_Identifier": {
+            "section": "Candidate Scoring and Assessment Table",
+            "label": "Vendor Candidate Name and Proposal Identifier",
+            "guidance": "Identification of bidding vendor, proposal reference number, and submission date.",
+            "value": ""
+        },
+        "f06_Technical_and_Commercial_Score_Breakdown": {
+            "section": "Candidate Scoring and Assessment Table",
+            "label": "Technical and Commercial Score Breakdown",
+            "guidance": "Individual numerical scores assigned across technical, commercial, and past performance criteria.",
+            "value": ""
+        },
+        "f07_Total_Weighted_Score": {
+            "section": "Candidate Scoring and Assessment Table",
+            "label": "Total Weighted Score",
+            "guidance": "Consolidated total weighted evaluation score out of 100 points for each candidate.",
+            "value": ""
+        },
+        "f08_Comparative_Analysis_and_Value_Justification": {
+            "section": "Final Evaluation Summary and Recommendation",
+            "label": "Comparative Analysis and Value Justification",
+            "guidance": "Narrative justifying why the winning proposal offers superior value, quality, or pricing.",
+            "value": ""
+        },
+        "f09_Contract_Award_Recommendation_and_Sign_off": {
+            "section": "Final Evaluation Summary and Recommendation",
+            "label": "Contract Award Recommendation and Sign-off",
+            "guidance": "Formal evaluation committee recommendation identifying preferred vendor for contract execution.",
+            "value": ""
         }
     }
 }

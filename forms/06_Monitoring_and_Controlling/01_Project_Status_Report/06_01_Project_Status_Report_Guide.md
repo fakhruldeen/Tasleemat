@@ -1,24 +1,75 @@
-# PROJECT STATUS REPORT - GUIDANCE
-This document provides descriptions for each element in the Project Status Report.
+---
+lang: en
+layout: default
+title: Project Status Report
+nav_order: 1
+---
 
-| Document Element | Description |
-| :--- | :--- |
-| **Report Information** | Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name. |
-| **Accomplishments for this reporting period** | List all work packages or other accomplishments scheduled for completion for the current reporting period. |
-| **Accomplishments planned but not completed this reporting period** | List all work packages or other accomplishments scheduled for the current period but not completed. |
-| **Root cause of schedule variances** | Identify the cause of the variance for any work that was not accomplished as scheduled for the current period. |
-| **Impact to upcoming milestones or project due date** | Identify any impact to any upcoming milestones or overall project schedule for any work that was not accomplished as scheduled. |
-| **Planned corrective or preventive action (Schedule)** | Identify any actions needed to make up schedule variances or prevent future schedule variances. |
-| **Funds spent this reporting period** | Record funds spent this period. |
-| **Root cause of cost variances** | Identify the cause of the variance for any expenditure over or under plan. Include information on the labor variance versus material variance and whether the variance is due to the basis of estimates or estimating assumptions. |
-| **Impact to overall budget or contingency funds** | Indicate the impact to the overall project budget or whether contingency funds must be expended. |
-| **Planned corrective or preventive action (Cost)** | Identify any actions needed to recover cost variances or to prevent future cost variances. |
-| **Accomplishments planned for next reporting period** | List all work packages or accomplishments scheduled for completion next period. |
-| **Costs planned for next reporting period** | Identify funds planned to be expended next period. |
-| **New risks identified** | Identify any new risks that have been identified this period. These risks should be recorded in the risk register as well. |
-| **New issues identified** | Identify any new issues that have arisen this period. These issues should be recorded in the issue log as well. |
-| **Escalations** | Identify any areas that need to be escalated to the sponsor, program manager, or other appropriate individuals. |
-| **Decisions made** | Record decisions made. These would be transferred to the project decision log. |
-| **Change requests submitted this period** | Summarize change requests submitted during the reporting period and refer the reader to the change log. |
-| **Lessons learned / Knowledge transfer** | Record knowledge transfer or lessons learned. These can then be transferred to the organization’s knowledge repository or lessons learned register. |
-| **Comments** | Record any comments that add relevance to the report. |
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Project Status Report
+
+**Document Reference:** `PMO-06.01`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Project Status Report** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A formal executive artifact presenting regular performance metrics, milestones, risks, and forecasts across the project.
+
+---
+
+### 2. Why?
+Enables executive sponsors and PMO leaders to make informed governance decisions and authorize necessary interventions.
+
+---
+
+### 3. When?
+Prepared on a recurring cycle (weekly or monthly) throughout executing, monitoring, and controlling phases.
+
+---
+
+### 4. Who?
+Authored by the Project Manager and distributed to Project Sponsors, PMO Director, and Steering Committees.
+
+---
+
+### Tailoring Tips
+*   Adjust reporting frequency and level of detail based on project scale, risk rating, and stakeholder governance needs.
+*   Emphasize variance root causes and corrective action plans rather than raw descriptive status.
+
+---
+
+### Alignment
+The Project Status Report consolidates data from Schedule, Cost Baseline, Risk Register, Issue Log, and Earned Value reports.
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Project Status Report**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Accomplishments for this reporting period:** Key milestones, deliverables, and tasks completed during this period.
+*   **Accomplishments planned but not completed this reporting period:** Activities that were scheduled for completion but remain in progress or delayed.
+*   **Root cause of schedule variances:** Underlying causes and contributing factors for any schedule delays or slippages.
+*   **Impact to upcoming milestones or project due date:** Expected effects of current schedule performance on future critical path milestones.
+*   **Planned corrective or preventive action (Schedule):** Specific recovery actions planned to bring the schedule back in alignment with baseline.
+*   **Funds spent this reporting period:** Total expenditures and actual costs incurred during the current reporting period.
+*   **Root cause of cost variances:** Reasons for any cost overruns or underruns compared against the cost baseline.
+*   **Impact to overall budget or contingency funds:** Projected impact of current spending trends on total project budget and reserves.
+*   **Planned corrective or preventive action (Cost):** Corrective steps designed to control project expenditure within approved budget limits.
+*   **Accomplishments planned for next reporting period:** Key objectives, tasks, and deliverables scheduled for execution in the next cycle.
+*   **Costs planned for next reporting period:** Anticipated financial expenditures and commitments for the upcoming period.
+*   **New risks identified:** Newly discovered risks requiring qualitative or quantitative analysis and response planning.
+*   **New issues identified:** Newly materialized issues requiring immediate tracking and resolution.
+*   **Escalations:** Matters requiring immediate intervention or decision-making from executive sponsors.
+*   **Decisions made:** Significant architectural, operational, or management decisions ratified during this period.
+*   **Change requests submitted this period:** Summary of formal change requests submitted, evaluated, or approved this period.
+*   **Lessons learned and knowledge transfer:** Insights and practical lessons captured to enhance ongoing and future project performance.
+*   **Comments:** Additional explanatory notes, contextual remarks, or qualitative updates.
+
+</div>

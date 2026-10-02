@@ -1,8 +1,8 @@
-﻿Field,Guidance,LLM_Generated_Value
-Area Audited,Check the box for the area or areas audited.,"{""Project processes"": false, ""Project documents"": false, ""Product requirements"": false, ""Product documentation"": false, ""Defect or deficiency repair"": false, ""Compliance with organizational policies and procedures"": false, ""Compliance with the quality management plan"": false}"
-Good Practices from Similar Projects,Describe any good or best practices that can be shared from similar projects.,
-Areas for Improvement,Describe any areas that need improvement and the specific improvements or measurements that need to be achieved.,
-Deficiencies or Defects,"Log any defects or deficiencies found during the audit, including action items.","[{""ID"": """", ""Defect"": """", ""Action"": """", ""Responsible Party"": """", ""Due Date"": """"}]"
-Implementation Tracking of Approved Changes,"Track the implementation status of approved changes, corrective, or preventive actions.",
-Information to Share with Other Projects,"Document any information, insights, or findings that should be shared with other projects.",
-Comments,Provide any additional useful comments about the audit.,
+Section,Field,Guidance,LLM_Generated_Value
+Area Audited,Area Audited,"Specific processes, documentation, deliverables, or quality procedures evaluated.",
+Good Practices from Similar Projects,Good Practices from Similar Projects,"High-performing practices, techniques, and benchmarks identified during audit.",
+Areas for Improvement,Areas for Improvement,"Gaps, performance deviations, and recommended procedural optimizations.",
+Deficiencies or Defects,Deficiencies or Defects,"Recorded defects, non-compliance items, and assigned corrective actions.",
+Implementation Tracking of Approved Changes,Implementation Tracking of Approved Changes,"Status of previously approved corrective actions, preventive actions, and defect repairs.",
+Information to Share with Other Projects,Information to Share with Other Projects,"Valuable organizational insights, lessons, and quality benchmarks to disseminate.",
+Comments,Comments,"General observations, auditor notes, and executive summary.",

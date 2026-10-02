@@ -1,41 +1,124 @@
 ---
 lang: en
-Form: PROJECT STATUS REPORT (Instructions)
+Form: Project Status Report (Instructions)
 ---
 
-# PROJECT STATUS REPORT - LLM GENERATION GUIDE
+# Project Status Report - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `PROJECT STATUS REPORT`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Project Status Report». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The project status report is filled out by the project manager and submitted on a regular basis to project oversight groups. It tracks overall project schedule and cost performance, indicates impacts to milestones and budgets, and identifies new risks, issues, and variances.
+> **Context and Definition:**
+> A comprehensive periodic report conveying project health, progress against baselines, variances, upcoming plans, and critical issues.
 
-**Tailoring Tips:**
-*   You can add a field for escalations to identify those areas that need to be escalated to the sponsor, program manager, or other appropriate individuals.
-*   Some reports include a field to record decisions made. These would be transferred to the project decision log.
-*   If there were any change requests that were submitted during the reporting period you may want to summarize them and refer the reader to the change log.
-*   If your organization has a robust knowledge management process you might consider adding fields for knowledge transfer or lessons learned.
-
-**Alignment:**
-The project status report should be aligned and consistent with the following documents:
-*   Team member status reports
-*   Project schedule
-*   Cost estimates
-*   Project budget
-*   Issue log
-*   Risk register
-*   Variance analysis
-*   Earned value status report
-*   Contractor status report
+> **Alignment:**
+> The Project Status Report consolidates data from Schedule, Cost Baseline, Risk Register, Issue Log, and Earned Value reports.
 
 ---
 
-### Section Generation Instructions
-*   **Report Information:** Provide the reporting period dates, the name of the project manager preparing the document, and the sponsor name.
-*   **Schedule Performance (Current Period):** List accomplishments, incomplete work, root causes of schedule variances, impacts to milestones, and corrective actions.
-*   **Cost Performance (Current Period):** Detail funds spent, root causes of cost variances, impacts to the overall budget, and corrective actions.
-*   **Planning for Next Period:** Outline the accomplishments and costs planned for the upcoming reporting period.
-*   **Risks, Issues, and Escalations:** Log new risks, issues, and any matters requiring escalation to sponsors or program managers.
-*   **Project Knowledge and Decisions:** Document decisions made, summarize change requests, and record lessons learned for organizational knowledge transfer.
-*   **Comments:** Document any comments that add relevance to this report.
+## Schedule Performance (Current Period)
+
+### Accomplishments for this reporting period
+**Instruction:** Key milestones, deliverables, and tasks completed during this period.
+
+**Generated Value:** [ Add details... ]
+
+### Accomplishments planned but not completed this reporting period
+**Instruction:** Activities that were scheduled for completion but remain in progress or delayed.
+
+**Generated Value:** [ Add details... ]
+
+### Root cause of schedule variances
+**Instruction:** Underlying causes and contributing factors for any schedule delays or slippages.
+
+**Generated Value:** [ Add details... ]
+
+### Impact to upcoming milestones or project due date
+**Instruction:** Expected effects of current schedule performance on future critical path milestones.
+
+**Generated Value:** [ Add details... ]
+
+### Planned corrective or preventive action (Schedule)
+**Instruction:** Specific recovery actions planned to bring the schedule back in alignment with baseline.
+
+**Generated Value:** [ Add details... ]
+
+## Cost Performance (Current Period)
+
+### Funds spent this reporting period
+**Instruction:** Total expenditures and actual costs incurred during the current reporting period.
+
+**Generated Value:** [ Add details... ]
+
+### Root cause of cost variances
+**Instruction:** Reasons for any cost overruns or underruns compared against the cost baseline.
+
+**Generated Value:** [ Add details... ]
+
+### Impact to overall budget or contingency funds
+**Instruction:** Projected impact of current spending trends on total project budget and reserves.
+
+**Generated Value:** [ Add details... ]
+
+### Planned corrective or preventive action (Cost)
+**Instruction:** Corrective steps designed to control project expenditure within approved budget limits.
+
+**Generated Value:** [ Add details... ]
+
+## Planning for Next Period
+
+### Accomplishments planned for next reporting period
+**Instruction:** Key objectives, tasks, and deliverables scheduled for execution in the next cycle.
+
+**Generated Value:** [ Add details... ]
+
+### Costs planned for next reporting period
+**Instruction:** Anticipated financial expenditures and commitments for the upcoming period.
+
+**Generated Value:** [ Add details... ]
+
+## Risks, Issues, and Escalations
+
+### New risks identified
+**Instruction:** Newly discovered risks requiring qualitative or quantitative analysis and response planning.
+
+**Generated Value:** [ Add details... ]
+
+### New issues identified
+**Instruction:** Newly materialized issues requiring immediate tracking and resolution.
+
+**Generated Value:** [ Add details... ]
+
+### Escalations
+**Instruction:** Matters requiring immediate intervention or decision-making from executive sponsors.
+
+**Generated Value:** [ Add details... ]
+
+## Project Knowledge and Decisions
+
+### Decisions made
+**Instruction:** Significant architectural, operational, or management decisions ratified during this period.
+
+**Generated Value:** [ Add details... ]
+
+### Change requests submitted this period
+**Instruction:** Summary of formal change requests submitted, evaluated, or approved this period.
+
+**Generated Value:** [ Add details... ]
+
+### Lessons learned and knowledge transfer
+**Instruction:** Insights and practical lessons captured to enhance ongoing and future project performance.
+
+**Generated Value:** [ Add details... ]
+
+## Comments
+
+### Comments
+**Instruction:** Additional explanatory notes, contextual remarks, or qualitative updates.
+
+**Generated Value:** [ Add details... ]
+
+---

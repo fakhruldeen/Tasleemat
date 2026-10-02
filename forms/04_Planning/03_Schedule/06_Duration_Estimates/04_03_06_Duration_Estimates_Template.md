@@ -1,12 +1,9 @@
-<!-- LLM INSTRUCTIONS: Fill the table based on the project schedule.
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
-Column Definitions:
-*   **ID:** Unique identifier for the activity or work package.
-*   **Activity description:** A description of the work that needs to be done.
-*   **Estimation Method:** The technique used to calculate the duration (e.g., Parametric, Analogous, Three-point, Expert Judgment).
-*   **Effort hours:** The amount of labor it will take to accomplish the work; usually shown in hours, but may be shown in days.
-*   **Contingency Reserve:** Buffer time added to account for identified schedule risks or uncertainty.
-*   **Duration estimates:** The total length of time it will take to accomplish the work (including reserves); usually shown in days, but may be shown in weeks or months.
+Section Instructions:
+- Activity Duration Estimates Table: Provide comprehensive project data for all required fields in this section.
+- Basis of Estimates and Assumptions: Provide comprehensive project data for all required fields in this section.
+- Contingency and Reserve Analysis: Provide comprehensive project data for all required fields in this section.
 -->
 
 <h3 align="right">{{Company_Name}}</h3>
@@ -14,15 +11,43 @@ Column Definitions:
 <h1 align="center">DURATION ESTIMATES</h1>
 
 | **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
-| :--- | :--- | :--- |  
+| :--- | :--- | :--- |
 
 ---
 
-| ID | Activity Description | Estimation Method | Effort Hours | Contingency Reserve | Duration Estimates |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
-| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+## 1. Activity Duration Estimates Table
+
+**Activity Identifier and Description:**
+[ Add details... ]
+
+**Estimation Method Applied:**
+[ Add details... ]
+
+**Estimated Effort Hours and Assigned Resources:**
+[ Add details... ]
+
+**Estimated Duration:**
+[ Add details... ]
+
+---
+
+## 2. Basis of Estimates and Assumptions
+
+**Historical Data and Productivity Rates:**
+[ Add details... ]
+
+**Key Estimating Assumptions:**
+[ Add details... ]
+
+---
+
+## 3. Contingency and Reserve Analysis
+
+**Schedule Contingency Reserve:**
+[ Add details... ]
+
+**Total Activity Duration with Contingency:**
+[ Add details... ]
 
 ---
 
@@ -30,9 +55,9 @@ Column Definitions:
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
-| **Planning Lead / Scheduler** | {{Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 
 ---
 

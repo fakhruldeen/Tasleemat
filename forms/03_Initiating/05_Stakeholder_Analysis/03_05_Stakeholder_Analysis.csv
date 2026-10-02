@@ -1,4 +1,6 @@
-ID,Name or Role,Interest,Influence,Attitude
-,,,,
-,,,,
-,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Stakeholder Analysis Entries,ID,"Unique identifier linking back to the Stakeholder Register (e.g., SH-01).",
+Stakeholder Analysis Entries,Name or Role,The name or role of the stakeholder being analyzed.,
+Stakeholder Analysis Entries,Interest,"The level of interest the stakeholder has in project outcomes (e.g., High, Medium, Low).",
+Stakeholder Analysis Entries,Influence,"The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).",
+Stakeholder Analysis Entries,Attitude,"The stakeholder's stance towards the project (e.g., Champion, Positive, Neutral, Negative).",

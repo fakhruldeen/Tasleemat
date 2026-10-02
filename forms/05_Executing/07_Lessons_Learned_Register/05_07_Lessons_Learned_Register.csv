@@ -1,2 +1,10 @@
-﻿ID,Category,Trigger,Lesson,Responsible Party,Identifier/Submitter,Next Implementation Opportunity & Date,Organizational Impact (Y/N),Comments
-,,,,,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Lessons Learned Entries,ID,"Unique identifier for the lesson learned (e.g., LLR-01).",
+Lessons Learned Entries,Category,"Knowledge area or project phase (e.g., Technical, Procurement, Schedule).",
+Lessons Learned Entries,Trigger,"The triggering event, root cause, or situation encountered.",
+Lessons Learned Entries,Lesson,Detailed description of what worked well or what should be done differently.,
+Lessons Learned Entries,Responsible Party,Person or role assigned to document or disseminate the lesson.,
+Lessons Learned Entries,Identifier/Submitter,Name or team identifying the lesson.,
+Lessons Learned Entries,Next Implementation Opportunity & Date,"Future milestone, project, or date where this lesson will be applied.",
+Lessons Learned Entries,Organizational Impact (Y/N),"Whether this lesson impacts enterprise processes, standards, or assets.",
+Lessons Learned Entries,Comments,"Additional reflections, training recommendations, or references.",

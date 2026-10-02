@@ -1,40 +1,121 @@
 ---
 lang: en
-Form: TEAM MEMBER STATUS REPORT (Instructions)
+Form: Team Member Status Report (Instructions)
 ---
 
-# TEAM MEMBER STATUS REPORT - LLM GENERATION GUIDE
+# Team Member Status Report - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `TEAM MEMBER STATUS REPORT`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Team Member Status Report». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The team member status report is filled out by team members and submitted to the project manager on a regular basis. It tracks schedule, quality, and cost status for the current reporting period and provides planned information for the next reporting period. It identifies new risks, issues, and variances.
+> **Context and Definition:**
+> A bottom-up reporting mechanism enabling individual contributors to report progress, variances, risks, and next steps to team leadership.
 
-**Tailoring Tips:**
-*   You can add a field for escalations to identify those areas that need to be escalated to the sponsor, program manager, or other appropriate individual.
-*   Some reports include a field to record decisions made. These would be transferred to the project decision log.
-*   If your organization has a robust knowledge management process you might consider adding fields for knowledge transfer or lessons learned. These can then be transferred to the organization’s knowledge repository or lessons learned register.
-
-**Alignment:**
-The team member status report should be aligned and consistent with the following documents:
-*   Project schedule
-*   Cost estimates
-*   Project budget
-*   Issue log
-*   Risk register
-*   Project status report
-*   Variance analysis
-*   Earned value status report
+> **Alignment:**
+> Feeds directly into the Project Status Report, Issue Log, Risk Register, and resource management tracking tools.
 
 ---
 
-### Section Generation Instructions
-*   **Report Information:** Provide the reporting period dates, team member name, team member role, and the name of the team member preparing the document.
-*   **Schedule and Activities (Current Period):** Provide information on activities planned, accomplished, and incomplete, along with root causes for schedule variances.
-*   **Cost and Budget (Current Period):** Provide information on funds planned vs spent, and the root cause of any cost variances.
-*   **Quality and Corrective Actions:** Identify quality variances and planned corrective or preventive actions.
-*   **Planning for Next Period:** Outline the schedule and cost plans for the upcoming reporting period.
-*   **Risks, Issues, and Escalations:** Log new risks, issues, and any matters requiring escalation.
-*   **Project Knowledge and Decisions:** Document key decisions made and lessons learned to transfer to organizational repositories.
-*   **Comments:** Document any comments that add relevance to this report.
+## Schedule and Activities (Current Period)
+
+### Activities planned this reporting period
+**Instruction:** Tasks and work packages scheduled for execution by this member during this period.
+
+**Generated Value:** [ Add details... ]
+
+### Activities accomplished this reporting period
+**Instruction:** Tasks and work packages successfully finalized by this member during this period.
+
+**Generated Value:** [ Add details... ]
+
+### Activities planned but not accomplished this reporting period
+**Instruction:** Scheduled tasks that were started but not completed or deferred.
+
+**Generated Value:** [ Add details... ]
+
+### Root cause of schedule variances
+**Instruction:** Underlying reasons for any task delays or workload obstacles.
+
+**Generated Value:** [ Add details... ]
+
+## Cost and Budget (Current Period)
+
+### Funds planned to be spent this reporting period
+**Instruction:** Planned labor hours or direct expenses allocated for the member this period.
+
+**Generated Value:** [ Add details... ]
+
+### Funds spent this reporting period
+**Instruction:** Actual labor hours or expenses incurred by the member during this period.
+
+**Generated Value:** [ Add details... ]
+
+### Root cause of cost variances
+**Instruction:** Reasons for discrepancies between planned and actual resource expenditures.
+
+**Generated Value:** [ Add details... ]
+
+## Quality and Corrective Actions
+
+### Quality variances identified this period
+**Instruction:** Defects, rework, or non-conformance issues encountered in deliverables.
+
+**Generated Value:** [ Add details... ]
+
+### Planned corrective or preventive action
+**Instruction:** Targeted remedial steps to correct quality issues or prevent recurring defects.
+
+**Generated Value:** [ Add details... ]
+
+## Planning for Next Period
+
+### Activities planned for next reporting period
+**Instruction:** Upcoming work assignments and deliverables scheduled for the next interval.
+
+**Generated Value:** [ Add details... ]
+
+### Costs planned for next reporting period
+**Instruction:** Estimated hours or expenditures planned for the upcoming reporting period.
+
+**Generated Value:** [ Add details... ]
+
+## Risks, Issues, and Escalations
+
+### New risks identified
+**Instruction:** Potential technical, operational, or resource uncertainties identified by the member.
+
+**Generated Value:** [ Add details... ]
+
+### New issues identified
+**Instruction:** Immediate roadblocks, blockers, or dependencies requiring team resolution.
+
+**Generated Value:** [ Add details... ]
+
+### Escalations
+**Instruction:** Impediments requiring intervention from the Project Manager or Team Lead.
+
+**Generated Value:** [ Add details... ]
+
+## Project Knowledge and Decisions
+
+### Decisions made
+**Instruction:** Technical or operational choices adopted by the team member during execution.
+
+**Generated Value:** [ Add details... ]
+
+### Lessons learned and knowledge transfer
+**Instruction:** Practical findings and best practices captured during task execution.
+
+**Generated Value:** [ Add details... ]
+
+## Comments
+
+### Comments
+**Instruction:** Additional reflections, notes, or contextual feedback from the team member.
+
+**Generated Value:** [ Add details... ]
+
+---

@@ -19,7 +19,7 @@ Section Instructions:
 
 ---
 
-### Stakeholder Register Entries
+## Stakeholder Register Entries
 <!-- 
 Please populate the table below with the following details:
 - **ID:** Unique identifier for the stakeholder (e.g., SH-01).

@@ -1,28 +1,74 @@
 ---
 lang: en
-Form: CHANGE LOG (Instructions)
+Form: Change Log (Instructions)
 ---
 
-# CHANGE LOG - LLM GENERATION GUIDE
+# Change Log - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `CHANGE LOG`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Change Log». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The change log is used to track changes from the change request through the final decision. It is a dynamic document that is updated throughout the project.
+> **Context and Definition:**
+> A comprehensive register recording all change requests submitted during the project lifecycle and their disposition.
 
-**Tailoring Tips:**
-*   You can include additional summary information from the change request in the log, such as cost or schedule impact.
-*   You can add a check box that indicates whether the change is mandatory (such as a legal requirement) or discretionary.
-*   The change log can also record information to track configuration management, such as which configurable items are impacted.
-*   Some IT projects include a field that indicates if a change is a bug fix.
-
-**Alignment:**
-The change log should be aligned and consistent with the following documents:
-*   Change management plan
-*   Change request
+> **Alignment:**
+> The Change Log aligns with Change Management Plan, Project Baselines, and Project Status Report.
 
 ---
 
-### Section Generation Instructions
-*   **Change Log:** Log all change requests including their core details, status, disposition, and additional tailoring information.
+## Change Log Entries
+
+### ID
+**Instruction:** Unique identifier for the change request (e.g., CR-01).
+
+**Generated Value:** [ Add details... ]
+
+### Category
+**Instruction:** Change category (Scope, Schedule, Cost, Quality, Resource).
+
+**Generated Value:** [ Add details... ]
+
+### Description
+**Instruction:** Summary description of the proposed change.
+
+**Generated Value:** [ Add details... ]
+
+### Requestor
+**Instruction:** Name or department submitting the change request.
+
+**Generated Value:** [ Add details... ]
+
+### Submission Date
+**Instruction:** Date the change request was formally submitted.
+
+**Generated Value:** [ Add details... ]
+
+### Status
+**Instruction:** Current lifecycle state of the request (Submitted, Under Review, Approved, Rejected).
+
+**Generated Value:** [ Add details... ]
+
+### Disposition
+**Instruction:** Decision made by the Change Control Board (CCB).
+
+**Generated Value:** [ Add details... ]
+
+### Cost/Schedule Impact
+**Instruction:** Estimated financial and timeline impact of the change.
+
+**Generated Value:** [ Add details... ]
+
+### Type (Mandatory/Discretionary)
+**Instruction:** Whether the change is legally mandatory or discretionary.
+
+**Generated Value:** [ Add details... ]
+
+### Configurable Items Impacted
+**Instruction:** Configuration items, baselines, or specifications affected.
+
+**Generated Value:** [ Add details... ]
+
+---

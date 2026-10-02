@@ -1,57 +1,152 @@
 {
-    "_llm_instructions": "Populate the Variance Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Variance Analysis Table: Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.\n- Variance Implications and Escalation: Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.\n- Comments: Document any comments that add relevance to this report.",
     "form_name": "VARIANCE ANALYSIS",
     "document_reference": "PMO-06.04",
+    "_llm_instructions": "Populate the fields of 'VARIANCE ANALYSIS' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.04.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Variance Analysis Table": {
-            "guidance": "Document the planned results, actual results, calculated variance, root causes, and planned responses for Schedule, Cost, Quality, and Scope.",
-            "value": [
-                {
-                    "Category": "Schedule",
-                    "Planned Result": "",
-                    "Actual Result": "",
-                    "Variance": "",
-                    "Root Cause": "",
-                    "Planned Response": ""
-                },
-                {
-                    "Category": "Cost",
-                    "Planned Result": "",
-                    "Actual Result": "",
-                    "Variance": "",
-                    "Root Cause": "",
-                    "Planned Response": ""
-                },
-                {
-                    "Category": "Quality",
-                    "Planned Result": "",
-                    "Actual Result": "",
-                    "Variance": "",
-                    "Root Cause": "",
-                    "Planned Response": ""
-                },
-                {
-                    "Category": "Scope",
-                    "Planned Result": "",
-                    "Actual Result": "",
-                    "Variance": "",
-                    "Root Cause": "",
-                    "Planned Response": ""
-                }
-            ]
+        "f01_Schedule_Planned_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Schedule / Planned Result",
+            "guidance": "The target baseline schedule milestone, duration, or date.",
+            "value": ""
         },
-        "Variance Implications and Escalation": {
-            "guidance": "Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.",
-            "value": {
-                "Implications of continued variance (Forecast)": "",
-                "Escalation Required (Y/N)": "",
-                "Escalation Details": ""
-            }
+        "f02_Schedule_Actual_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Schedule / Actual Result",
+            "guidance": "The actual completed milestone date, duration, or current progress.",
+            "value": ""
         },
-        "Comments": {
-            "guidance": "Document any comments that add relevance to this report.",
+        "f03_Schedule_Variance": {
+            "section": "Variance Analysis Table",
+            "label": "Schedule / Variance",
+            "guidance": "Calculated difference between actual schedule performance and the baseline.",
+            "value": ""
+        },
+        "f04_Schedule_Root_Cause": {
+            "section": "Variance Analysis Table",
+            "label": "Schedule / Root Cause",
+            "guidance": "Primary cause and contributing factors for schedule variance.",
+            "value": ""
+        },
+        "f05_Schedule_Planned_Response": {
+            "section": "Variance Analysis Table",
+            "label": "Schedule / Planned Response",
+            "guidance": "Action plan or recovery strategy designed to address schedule variance.",
+            "value": ""
+        },
+        "f06_Cost_Planned_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Cost / Planned Result",
+            "guidance": "The approved baseline budget or planned expenditure for the period.",
+            "value": ""
+        },
+        "f07_Cost_Actual_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Cost / Actual Result",
+            "guidance": "The actual expenditures or costs incurred during the period.",
+            "value": ""
+        },
+        "f08_Cost_Variance": {
+            "section": "Variance Analysis Table",
+            "label": "Cost / Variance",
+            "guidance": "Calculated difference between actual expenditures and the cost baseline.",
+            "value": ""
+        },
+        "f09_Cost_Root_Cause": {
+            "section": "Variance Analysis Table",
+            "label": "Cost / Root Cause",
+            "guidance": "Primary drivers and events resulting in cost overruns or savings.",
+            "value": ""
+        },
+        "f10_Cost_Planned_Response": {
+            "section": "Variance Analysis Table",
+            "label": "Cost / Planned Response",
+            "guidance": "Corrective measures and cost containment actions to realign with budget.",
+            "value": ""
+        },
+        "f11_Quality_Planned_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Quality / Planned Result",
+            "guidance": "The quality metric, acceptance threshold, or standard expected.",
+            "value": ""
+        },
+        "f12_Quality_Actual_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Quality / Actual Result",
+            "guidance": "The actual measured quality outcome, defect rate, or test score.",
+            "value": ""
+        },
+        "f13_Quality_Variance": {
+            "section": "Variance Analysis Table",
+            "label": "Quality / Variance",
+            "guidance": "Discrepancy between actual quality achievements and defined quality metrics.",
+            "value": ""
+        },
+        "f14_Quality_Root_Cause": {
+            "section": "Variance Analysis Table",
+            "label": "Quality / Root Cause",
+            "guidance": "Root cause analysis detailing why quality requirements were not met.",
+            "value": ""
+        },
+        "f15_Quality_Planned_Response": {
+            "section": "Variance Analysis Table",
+            "label": "Quality / Planned Response",
+            "guidance": "Remediation plan, rework procedures, or process improvements.",
+            "value": ""
+        },
+        "f16_Scope_Planned_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Scope / Planned Result",
+            "guidance": "The authorized deliverables and work packages committed in the scope statement.",
+            "value": ""
+        },
+        "f17_Scope_Actual_Result": {
+            "section": "Variance Analysis Table",
+            "label": "Scope / Actual Result",
+            "guidance": "The actual scope deliverables completed and verified during the period.",
+            "value": ""
+        },
+        "f18_Scope_Variance": {
+            "section": "Variance Analysis Table",
+            "label": "Scope / Variance",
+            "guidance": "Extent of scope variance, unapproved scope additions, or unfinished deliverables.",
+            "value": ""
+        },
+        "f19_Scope_Root_Cause": {
+            "section": "Variance Analysis Table",
+            "label": "Scope / Root Cause",
+            "guidance": "Factors causing scope variance, creep, or delayed deliverable completions.",
+            "value": ""
+        },
+        "f20_Scope_Planned_Response": {
+            "section": "Variance Analysis Table",
+            "label": "Scope / Planned Response",
+            "guidance": "Corrective actions, change requests, or realignment to baseline scope.",
+            "value": ""
+        },
+        "f21_Implications_of_continued_variance_Forecast": {
+            "section": "Variance Implications and Escalation",
+            "label": "Implications of continued variance (Forecast)",
+            "guidance": "Anticipated long-term impact on overall project objectives if variances persist.",
+            "value": ""
+        },
+        "f22_Escalation_Required_Y_N": {
+            "section": "Variance Implications and Escalation",
+            "label": "Escalation Required (Y/N)",
+            "guidance": "Clear indication (Yes/No) whether senior leadership escalation is necessary.",
+            "value": ""
+        },
+        "f23_Escalation_Details": {
+            "section": "Variance Implications and Escalation",
+            "label": "Escalation Details",
+            "guidance": "Details of the specific escalation path, required decisions, and target stakeholders.",
+            "value": ""
+        },
+        "f24_Comments": {
+            "section": "Comments",
+            "label": "Comments",
+            "guidance": "Additional explanatory notes, cross-functional dependencies, or contextual insights.",
             "value": ""
         }
     }

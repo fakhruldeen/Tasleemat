@@ -1,98 +1,74 @@
 {
-    "_llm_instructions": "Populate the Risk Data Sheet based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.\n\nSection-by-Section Instructions:\n- Risk ID: Enter a unique risk identifier.\n- Risk description: Provide a detailed description of the risk.\n- Status: Enter the status as open or closed.\n- Risk cause: Describe the circumstances or drivers that are the source of the risk.\n- Probability: Determine the likelihood of the event or condition occurring.\n- Impact: Describe the impact specifically on Scope, Quality, Schedule, and Cost.\n- Score: Numeric or relative score calculated from probability and impact.\n- Responses: Describe the planned response strategy to the risk or condition.\n- Revised probability: Likelihood after the response has been implemented.\n- Revised impact: Impact on Scope, Quality, Schedule, and Cost after the response has been implemented.\n- Revised score: Revised risk score after the response has been implemented.\n- Responsible party: Identify the person responsible for managing the risk.\n- Actions: Describe any actions that need to be taken to respond to the risk.\n- Secondary risks: Describe new risks that arise out of the response strategies.\n- Residual risk: Describe the remaining risk after response strategies.\n- Contingency plan: Plan initiated if specific events occur (e.g. missing a milestone).\n- Contingency funds: Determine the funds needed to protect the budget from overrun.\n- Contingency time: Determine the time needed to protect the schedule from overrun.\n- Fallback plans: Plan to use if other response strategies fail.\n- Comments: Any comments or additional helpful information.",
     "form_name": "RISK DATA SHEET",
     "document_reference": "PMO-04.08.05",
+    "_llm_instructions": "Populate the fields of 'RISK DATA SHEET' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.08.05.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Risk ID": {
-            "guidance": "Enter a unique risk identifier.",
+        "f01_Risk_Identifier_and_Title": {
+            "section": "Risk Identification and Event Narrative",
+            "label": "Risk Identifier and Title",
+            "guidance": "Unique identifier code and descriptive title for the specific high-impact risk.",
             "value": ""
         },
-        "Risk description": {
-            "guidance": "Provide a detailed description of the risk.",
+        "f02_Risk_Statement_and_Operational_Context": {
+            "section": "Risk Identification and Event Narrative",
+            "label": "Risk Statement and Operational Context",
+            "guidance": "Comprehensive statement articulating cause, condition, and operational impact.",
             "value": ""
         },
-        "Status": {
-            "guidance": "Enter the status as open or closed.",
+        "f03_Assigned_Risk_Owner_and_Stakeholders": {
+            "section": "Risk Identification and Event Narrative",
+            "label": "Assigned Risk Owner and Stakeholders",
+            "guidance": "Designated risk owner, action lead, and impacted project stakeholders.",
             "value": ""
         },
-        "Risk cause": {
-            "guidance": "Describe the circumstances or drivers that are the source of the risk.",
+        "f04_Assessed_Probability_and_Impact_Ratings": {
+            "section": "Qualitative and Quantitative Analysis",
+            "label": "Assessed Probability and Impact Ratings",
+            "guidance": "Detailed probability rating and impact breakdown across scope, schedule, and cost.",
             "value": ""
         },
-        "Probability": {
-            "guidance": "Determine the likelihood of the event or condition occurring.",
+        "f05_Expected_Monetary_Value_EMV_Analysis": {
+            "section": "Qualitative and Quantitative Analysis",
+            "label": "Expected Monetary Value (EMV) Analysis",
+            "guidance": "Quantitative calculation of monetary impact (Probability x Financial Consequence).",
             "value": ""
         },
-        "Impact": {
-            "guidance": "Describe the impact on Scope, Quality, Schedule, and Cost.",
-            "value": {
-                "Scope": "",
-                "Quality": "",
-                "Schedule": "",
-                "Cost": ""
-            }
-        },
-        "Score": {
-            "guidance": "Numeric or relative score calculated from probability and impact.",
+        "f06_Schedule_Delay_and_Critical_Path_Exposure": {
+            "section": "Qualitative and Quantitative Analysis",
+            "label": "Schedule Delay and Critical Path Exposure",
+            "guidance": "Projected days of delay on critical path activities if the risk occurs.",
             "value": ""
         },
-        "Responses": {
-            "guidance": "Describe the planned response strategy to the risk or condition.",
+        "f07_Root_Cause_Analysis_Details": {
+            "section": "Root Cause, Triggers, and Impacts",
+            "label": "Root Cause Analysis Details",
+            "guidance": "Underlying systemic, technical, or environmental drivers causing the risk.",
             "value": ""
         },
-        "Revised probability": {
-            "guidance": "Likelihood after the response has been implemented.",
+        "f08_Early_Warning_Triggers_and_Thresholds": {
+            "section": "Root Cause, Triggers, and Impacts",
+            "label": "Early Warning Triggers and Thresholds",
+            "guidance": "Identifiable metrics and operational thresholds that trigger risk activation.",
             "value": ""
         },
-        "Revised impact": {
-            "guidance": "Impact on Scope, Quality, Schedule, and Cost after the response has been implemented.",
-            "value": {
-                "Scope": "",
-                "Quality": "",
-                "Schedule": "",
-                "Cost": ""
-            }
-        },
-        "Revised score": {
-            "guidance": "Revised risk score after the response has been implemented.",
+        "f09_Primary_Mitigation_Action_Plan": {
+            "section": "Detailed Response Strategy and Action Plan",
+            "label": "Primary Mitigation Action Plan",
+            "guidance": "Step-by-step preventive measures, action item owners, and completion deadlines.",
             "value": ""
         },
-        "Responsible party": {
-            "guidance": "Identify the person responsible for managing the risk.",
+        "f10_Contingency_and_Fallback_Response_Plan": {
+            "section": "Detailed Response Strategy and Action Plan",
+            "label": "Contingency and Fallback Response Plan",
+            "guidance": "Secondary action plan implemented if primary mitigation fails or risk materializes.",
             "value": ""
         },
-        "Actions": {
-            "guidance": "Describe any actions that need to be taken to respond to the risk.",
-            "value": ""
-        },
-        "Secondary risks": {
-            "guidance": "Describe new risks that arise out of the response strategies.",
-            "value": ""
-        },
-        "Residual risk": {
-            "guidance": "Describe the remaining risk after response strategies.",
-            "value": ""
-        },
-        "Contingency plan": {
-            "guidance": "Plan initiated if specific events occur.",
-            "value": ""
-        },
-        "Contingency funds": {
-            "guidance": "Determine the funds needed to protect the budget from overrun.",
-            "value": ""
-        },
-        "Contingency time": {
-            "guidance": "Determine the time needed to protect the schedule from overrun.",
-            "value": ""
-        },
-        "Fallback plans": {
-            "guidance": "Plan to use if other response strategies fail.",
-            "value": ""
-        },
-        "Comments": {
-            "guidance": "Any comments or additional helpful information.",
+        "f11_Allocated_Contingency_Budget_and_Reserves": {
+            "section": "Detailed Response Strategy and Action Plan",
+            "label": "Allocated Contingency Budget and Reserves",
+            "guidance": "Specific financial reserve allocation assigned to execute this risk response.",
             "value": ""
         }
     }

@@ -1,34 +1,75 @@
 ---
 lang: en
-Form: TEAM CHARTER (Instructions)
+Form: Team Charter (Instructions)
 ---
 
-# TEAM CHARTER - LLM GENERATION GUIDE
+# Team Charter - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `TEAM CHARTER`.
+<!--
+System Instructions: This document contains instructions for generating the
+«Team Charter». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The team charter is used to establish ground rules and guidelines for the team. It is particularly useful on virtual teams and teams that are comprised of members from different organizations. Using a team charter can help establish expectations and agreements on working effectively together. The contents of the team charter typically include: Team values and principles, Meeting guidelines, Communication guidelines, Decision-making process, Conflict resolution process, and Team agreements.
+> **Context and Definition:**
+> A collaborative document that establishes the team values, agreements, communication norms, and operating guidelines for the project team.
 
-**The team charter is an output from 9.1 Plan Resource Management in the PMBOK® Guide – Sixth Edition.** It is generally developed once and does not change; however, if there is substantial team member turnover, the team should periodically revisit the team charter and reaffirm or update it accordingly.
->
-> **Tailoring Tips:**
-> *   If you bring in contractors for key roles in the project you should include them in developing the team charter.
-*   If your organization has organizational values, make sure your team charter is aligned with the organizational values.
-*   International teams may need to spend more time developing this document as different cultures have different ways of making decisions and resolving conflicts.
-> 
 > **Alignment:**
-> The team charter should be aligned and consistent with the following documents:
-*   Resource management plan
+> Supports Resource Management Plan, Communications Plan, and Stakeholder Engagement.
 
 ---
 
-### Section Generation Instructions
-*   **Team values and principles:** List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.
-*   **Meeting guidelines:** Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc.
-*   **Communication guidelines:** List guidelines used for effective communication. Examples include everyone voices their opinion, no dominating the conversation, no interrupting, not using inflammatory language, etc.
-*   **Decision-making process:** Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited.
-*   **Conflict resolution process:** Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc.
-*   **Other agreements:** List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members.
-*   **Team Members Signatures:** Provide a table listing the Name of each team member.
+## Team Values and Shared Vision
+
+### Core Team Values
+**Instruction:** Guiding moral, professional, and behavioral values agreed upon by the team.
+
+**Generated Value:** [ Add details... ]
+
+### Shared Project Mission and Vision
+**Instruction:** Collective vision articulating the team's commitment to delivering quality project outcomes.
+
+**Generated Value:** [ Add details... ]
+
+## Operating Agreements and Guidelines
+
+### Working Norms and Ground Rules
+**Instruction:** Standard rules governing daily conduct, accountability, punctuality, and mutual respect.
+
+**Generated Value:** [ Add details... ]
+
+### Core Working Hours and Availability
+**Instruction:** Agreed overlapping collaboration hours, remote working standards, and response timeframes.
+
+**Generated Value:** [ Add details... ]
+
+## Communication and Meeting Protocols
+
+### Meeting Cadence and Rules
+**Instruction:** Protocols for daily standups, status meetings, retrospectives, agendas, and note taking.
+
+**Generated Value:** [ Add details... ]
+
+### Communication Channels Usage
+**Instruction:** Guidelines defining appropriate use of instant messaging, email, ticketing, and documentation repositories.
+
+**Generated Value:** [ Add details... ]
+
+## Decision-Making and Conflict Resolution
+
+### Decision-Making Framework
+**Instruction:** Agreed decision methodology (e.g., consensus, majority vote, or technical lead authority).
+
+**Generated Value:** [ Add details... ]
+
+### Conflict Escalation and Resolution Steps
+**Instruction:** Constructive step-by-step process for resolving interpersonal and technical disputes.
+
+**Generated Value:** [ Add details... ]
+
+### Team Signatures and Commitment
+**Instruction:** Formal acknowledgment and commitment signed by all active project team members.
+
+**Generated Value:** [ Add details... ]
+
+---

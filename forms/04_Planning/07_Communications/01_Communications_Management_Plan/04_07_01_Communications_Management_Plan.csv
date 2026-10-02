@@ -1,8 +1,9 @@
-Field,Guidance,LLM_Generated_Value
-Stakeholder communication,requirements The people or the groups of people who need to receive project information and their specific requirements,
-Information,"Describe the information to be communicated, including language, format, content, and level of detail.",
-Method or media,"Describe how the information will be delivered; for example, email, meetings, web meetings, etc.",
-Time frame and frequency,List how often the information is to be provided and under what circumstances.,
-Sender,Insert the name of the person or the group that will provide the information.,
-Communication constraints or,"assumptions List any assumptions or constraints. Constraints can include descriptions of proprietary, secure, or sensitive information and relevant restrictions for distribution.",
-Glossary of common terminology,List any terms or acronyms unique to the project or that are used in a unique way.,
+Section,Field,Guidance,LLM_Generated_Value
+Stakeholder Communication Requirements,Stakeholder Group and Information Needs,"Identification of key stakeholder groups and their specific information, governance, and reporting requirements.",
+Stakeholder Communication Requirements,Communication Purpose and Language,The explicit intent of communication and designated working language for project artifacts.,
+Information Distribution Protocols and Channels,Approved Communication Channels and Tools,"Designated platforms (email, intranet, project portal, status dashboards) used for distribution.",
+Information Distribution Protocols and Channels,Confidentiality and Information Security Constraints,"Access control guidelines, NDAs, and security protocols governing sensitive project data.",
+Communication Matrix and Cadence,Communication Item and Target Audience,"Specific report or meeting artifact (e.g., Weekly Status Report, Executive Steering Deck) and recipients.",
+Communication Matrix and Cadence,"Frequency, Format, and Responsible Sender","Distribution cadence, file format (PDF, dashboard), and assigned sender responsible for delivery.",
+Escalation Paths and Project Terminology Glossary,Urgent Escalation Process,"Step-by-step protocol for escalating critical issues, budget alerts, and schedule delays to executive leadership.",
+Escalation Paths and Project Terminology Glossary,Project Terminology and Acronym Glossary,"Standard glossary defining technical acronyms, specialized terms, and abbreviations used across project documents.",

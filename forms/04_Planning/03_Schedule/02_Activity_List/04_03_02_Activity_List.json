@@ -1,32 +1,51 @@
 {
-    "_llm_instructions": "Fill out the 'project_title', 'date_prepared' properties, and generate an array of activity objects for the 'Activity List' table based on the context. Context: The activity list defines all the activities necessary to complete the project work. It also describes the activities in sufficient detail so that the person performing the work understands the requirements necessary to complete it correctly. The activity list is an output from process 6.2 Define Activities in the PMBOK® Guide – Sixth Edition.",
     "form_name": "ACTIVITY LIST",
     "document_reference": "PMO-04.03.02",
+    "_llm_instructions": "Populate the fields of 'ACTIVITY LIST' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.03.02.",
     "project_title": "",
     "date_prepared": "",
     "fields": {
-        "Activity List": {
-            "guidance": "Generate a JSON array of activity objects representing the work breakdown.",
-            "value": [
-                {
-                    "ID": "",
-                    "Activity Name": "",
-                    "Description of Work": "",
-                    "Planned Release / Iteration": ""
-                },
-                {
-                    "ID": "",
-                    "Activity Name": "",
-                    "Description of Work": "",
-                    "Planned Release / Iteration": ""
-                },
-                {
-                    "ID": "",
-                    "Activity Name": "",
-                    "Description of Work": "",
-                    "Planned Release / Iteration": ""
-                }
-            ]
+        "f01_Activity_Identifier_and_Name": {
+            "section": "Schedule Activity Inventory",
+            "label": "Activity Identifier and Name",
+            "guidance": "Unique activity code and concise action-oriented title for each schedule activity.",
+            "value": ""
+        },
+        "f02_Activity_Scope_of_Work": {
+            "section": "Schedule Activity Inventory",
+            "label": "Activity Scope of Work",
+            "guidance": "Specific narrative detailing the discrete scope of work to be performed in this activity.",
+            "value": ""
+        },
+        "f03_Planned_Iteration_or_Release": {
+            "section": "Schedule Activity Inventory",
+            "label": "Planned Iteration or Release",
+            "guidance": "The target delivery sprint, wave, or milestone window assigned to this activity.",
+            "value": ""
+        },
+        "f04_Activity_Execution_Method": {
+            "section": "Activity Details and Descriptions",
+            "label": "Activity Execution Method",
+            "guidance": "Technical or managerial execution approach applied to perform the work.",
+            "value": ""
+        },
+        "f05_Estimated_Effort_and_Duration_Units": {
+            "section": "Activity Details and Descriptions",
+            "label": "Estimated Effort and Duration Units",
+            "guidance": "Estimated working effort in person-hours and planned calendar duration.",
+            "value": ""
+        },
+        "f06_Parent_WBS_Work_Package_Mapping": {
+            "section": "Associated WBS Work Packages",
+            "label": "Parent WBS Work Package Mapping",
+            "guidance": "The parent WBS work package identifier and deliverable directly decomposed by this activity.",
+            "value": ""
+        },
+        "f07_Activity_Completion_Deliverable": {
+            "section": "Associated WBS Work Packages",
+            "label": "Activity Completion Deliverable",
+            "guidance": "The tangible or verified intermediate output produced upon activity completion.",
+            "value": ""
         }
     }
 }

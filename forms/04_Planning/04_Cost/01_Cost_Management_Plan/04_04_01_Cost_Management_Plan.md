@@ -1,32 +1,82 @@
 ---
 lang: en
-Form: COST MANAGEMENT PLAN (Instructions)
+Form: Cost Management Plan (Instructions)
 ---
 
-# COST MANAGEMENT PLAN - LLM GENERATION GUIDE
+# Cost Management Plan - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `COST MANAGEMENT PLAN`. When asked to populate this form, generate professional, comprehensive content for each section.
+<!--
+System Instructions: This document contains instructions for generating the
+«Cost Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> The cost management plan specifies how the project costs will be estimated, structured, monitored, and controlled. It is an output from the process 7.1 Plan Cost Management in the PMBOK® Guide.
-> 
+> **Context and Definition:**
+> A subsidiary plan establishing the policies, procedures, and documentation for planning, managing, expending, and controlling project costs.
+
 > **Alignment:**
-> The cost management plan should be aligned and consistent with the following documents:
-• Project charter
-• Schedule management plan
+> Integrates with Cost Baseline, Cost Estimates, Schedule Management Plan, and Earned Value Analysis.
 
 ---
 
-### Table: Measurement Metrics
-**Instruction:** Generate a 3-column table for the core measurement metrics.
-*   **Units of measure:** Indicate how each type of resource will be measured (staff hours, days, physical units, lump sum).
-*   **Level of precision:** Indicate rounding rules for cost estimates (e.g., rounded to nearest thousand).
-*   **Level of accuracy:** Describe the acceptable variance range for estimates (progressive elaboration).
+## Cost Management Approach and Methodology
 
-### Section Generation Instructions
-**1. Organizational procedure links:** Explain how estimating links to the WBS and company accounting codes.
-**2. Control thresholds:** Define percent deviations from the baseline that trigger corrective/preventive actions.
-**3. Rules of performance measurement:** Identify the WBS level where expenditures are measured. Detail EVM formulas (ETC, EAC) if applicable.
-**4. Cost reporting information and format:** Document required status reports, formats, and frequency.
-**5. Additional details:** Describe strategic funding choices (buy vs lease, borrowing funds).
+### Cost Estimating and Budgeting Methodology
+**Instruction:** The overarching framework and techniques applied for estimating and establishing budgets.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Accounting and Tracking Software
+**Instruction:** Approved enterprise accounting and financial tracking tools used for cost management.
+
+**Generated Value:** [ Add details... ]
+
+## Units of Measure and Estimation Precision
+
+### Currency and Units of Measure
+**Instruction:** Primary project operating currency and measurement units (person-days, hourly billing rates).
+
+**Generated Value:** [ Add details... ]
+
+### Level of Precision and Accuracy Ranges
+**Instruction:** Rounding rules, decimal precision, and required percentage confidence ranges (+/-).
+
+**Generated Value:** [ Add details... ]
+
+## Organizational Procedures and Control Accounts
+
+### Control Account Structure and WBS Linkage
+**Instruction:** Integration linking WBS work packages to specific financial chart-of-account codes.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Management Roles and Authorizations
+**Instruction:** Financial decision authority, invoice approval thresholds, and spending limits.
+
+**Generated Value:** [ Add details... ]
+
+## Earned Value and Performance Measurement Rules
+
+### EVM Formulas and Measurement Techniques
+**Instruction:** Standard EVM formulas, physical percent complete determination rules, and BAC rules.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Performance Indicators
+**Instruction:** Key financial metrics tracked including CV, CPI, TCPI, and EAC forecasting formulas.
+
+**Generated Value:** [ Add details... ]
+
+## Cost Variance Thresholds and Reporting
+
+### Cost Variance Thresholds and Escalations
+**Instruction:** Defined financial deviation boundaries triggering mandatory variance analysis and CCB escalation.
+
+**Generated Value:** [ Add details... ]
+
+### Cost Reporting Cadence and Formats
+**Instruction:** Frequency, distribution channels, and presentation formats for executive financial reports.
+
+**Generated Value:** [ Add details... ]
+
+---

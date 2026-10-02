@@ -1,8 +1,10 @@
-Field,Guidance,LLM_Generated_Value
-Team values and principles,"List values and principles that the team agrees to operate within. Examples include mutual respect, operating from fact not opinion, etc.",
-Meeting guidelines,"Identify guidelines that will keep meetings productive. Examples include decision makers must be present, start on time, stick to the agenda, etc.",
-Communication guidelines,"List guidelines used for effective communication. Examples include everyone voices their opinion, no dominating the conversation, no interrupting, not using inflammatory language, etc.",
-Decision-making process,Describe the process used to make decisions. Indicate the relative power of the project manager for decision making as well as any voting procedures. Also indicate the circumstances under which a decision can be revisited.,
-Conflict resolution process,"Describe the process for managing conflict, when a conflict will be escalated, when it should be tabled for later discussion, etc.",
-Other agreements,List any other agreements or approaches to ensuring a collaborative and productive working relationship among team members.,
-Team Members Signatures,Provide a table listing the Name of each team member.,
+Section,Field,Guidance,LLM_Generated_Value
+Team Values and Shared Vision,Core Team Values,"Guiding moral, professional, and behavioral values agreed upon by the team.",
+Team Values and Shared Vision,Shared Project Mission and Vision,Collective vision articulating the team's commitment to delivering quality project outcomes.,
+Operating Agreements and Guidelines,Working Norms and Ground Rules,"Standard rules governing daily conduct, accountability, punctuality, and mutual respect.",
+Operating Agreements and Guidelines,Core Working Hours and Availability,"Agreed overlapping collaboration hours, remote working standards, and response timeframes.",
+Communication and Meeting Protocols,Meeting Cadence and Rules,"Protocols for daily standups, status meetings, retrospectives, agendas, and note taking.",
+Communication and Meeting Protocols,Communication Channels Usage,"Guidelines defining appropriate use of instant messaging, email, ticketing, and documentation repositories.",
+Decision-Making and Conflict Resolution,Decision-Making Framework,"Agreed decision methodology (e.g., consensus, majority vote, or technical lead authority).",
+Decision-Making and Conflict Resolution,Conflict Escalation and Resolution Steps,Constructive step-by-step process for resolving interpersonal and technical disputes.,
+Decision-Making and Conflict Resolution,Team Signatures and Commitment,Formal acknowledgment and commitment signed by all active project team members.,

@@ -1,48 +1,80 @@
 ---
 lang: en
-Form: COST ESTIMATING WORKSHEET (Instructions)
+Form: Cost Estimating Worksheet (Instructions)
 ---
 
-# COST ESTIMATING WORKSHEET - LLM GENERATION GUIDE
+# Cost Estimating Worksheet - Generation Prompt
 
-> **System Prompt / Instructions:**
-> This document serves as the detailed instruction set for generating the `COST ESTIMATING WORKSHEET`. When asked to populate this form, generate arrays for the tables based on the quantitative methods appropriate for the project.
+<!--
+System Instructions: This document contains instructions for generating the
+«Cost Estimating Worksheet». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
 
-> **Context & Definition:**
-> A cost estimating worksheet helps develop cost estimates when quantitative methods (Parametric, Analogous, Three-point) or a bottom-up estimate are developed. Bottom-up estimates are detailed estimates done at the work package level.
-> 
+> **Context and Definition:**
+> A detailed bottom-up estimating worksheet providing line-item financial calculations for staffing, materials, tools, and vendor contracts.
+
 > **Alignment:**
-> The cost estimating worksheet should be aligned and consistent with the following documents:
-• Cost management plan
-• Scope baseline
-• Project schedule
-• Quality management plan
-• Resource requirements
-• Risk register
-• Lessons learned register
+> Feeds directly into Cost Estimates summary table and Cost Baseline.
 
 ---
 
-### Section Generation Instructions
-**1. Parametric Estimates:** Use for activities driven by a quantifiable measure.
-*   **ID:** Unique identifier, such as the WBS ID or activity ID.
-*   **Cost Variable:** Enter the cost estimating driver, such as hours, square feet, gallons, or some other quantifiable measure.
-*   **Cost Per Unit:** Record the cost per unit.
-*   **Number of Units:** Enter the number of units.
-*   **Cost Estimate:** Multiply the number of units times the cost per unit to calculate the estimate.
+## Labor and Staffing Cost Calculations
 
-**2. Analogous Estimates:** Use for activities compared to previous similar work.
-*   **ID:** Unique identifier.
-*   **Previous Activity:** Enter a description of the previous activity.
-*   **Previous Cost:** Document the cost of the previous activity.
-*   **Current Activity:** Describe how the current activity is different.
-*   **Multiplier:** Divide the current activity by the previous activity to get a multiplier.
-*   **Cost Estimate:** Multiply the cost for the previous activity by the multiplier to calculate the Cost Estimate.
+### Role Title and Headcount
+**Instruction:** Specific resource role, staffing level, and number of full-time equivalents (FTE).
 
-**3. Three-Point Estimates:** Use to account for uncertainty using beta distribution.
-*   **ID:** Unique identifier.
-*   **Optimistic Cost:** Estimate assuming all costs were identified and there won't be any cost increases.
-*   **Most Likely Cost:** Estimate assuming some cost fluctuations but nothing out of the ordinary.
-*   **Pessimistic Cost:** Estimate assuming significant risks will materialize and cause cost overruns.
-*   **Weighting Equation:** Weight the three estimates. The most common method is the beta distribution: cE = (cO + 4cM + cP) / 6.
-*   **Expected Cost:** Enter the expected cost based on the beta distribution.
+**Generated Value:** [ Add details... ]
+
+### Hours Allocation and Hourly Rate
+**Instruction:** Total planned working hours and authorized standard or contracted hourly billing rate.
+
+**Generated Value:** [ Add details... ]
+
+### Total Calculated Labor Cost
+**Instruction:** Subtotal labor expenditure calculated from hours multiplied by hourly rate.
+
+**Generated Value:** [ Add details... ]
+
+## Material and Equipment Cost Calculations
+
+### Material or Equipment Item Description
+**Instruction:** Detailed description of physical supplies, hardware, server infrastructure, or licenses.
+
+**Generated Value:** [ Add details... ]
+
+### Unit Quantity and Unit Purchase Price
+**Instruction:** Required quantity and current quoted unit price per item.
+
+**Generated Value:** [ Add details... ]
+
+### Total Calculated Materials Cost
+**Instruction:** Subtotal materials expenditure calculated from quantity multiplied by unit price.
+
+**Generated Value:** [ Add details... ]
+
+## Subcontractor and Vendor Cost Calculations
+
+### Contracted Service or Work Package
+**Instruction:** External vendor scope of work, milestone deliverables, or consulting package.
+
+**Generated Value:** [ Add details... ]
+
+### Vendor Pricing Model and Contract Sum
+**Instruction:** Fixed price, time-and-materials rate, or contracted service sum.
+
+**Generated Value:** [ Add details... ]
+
+## Consolidated Cost Estimate Reconciliation
+
+### Grand Total Base Estimate
+**Instruction:** Sum of all labor, materials, equipment, and subcontractor cost line items.
+
+**Generated Value:** [ Add details... ]
+
+### Worksheet Verification and Audit Sign-off
+**Instruction:** Formal reconciliation verifying math accuracy and absence of duplicated cost items.
+
+**Generated Value:** [ Add details... ]
+
+---

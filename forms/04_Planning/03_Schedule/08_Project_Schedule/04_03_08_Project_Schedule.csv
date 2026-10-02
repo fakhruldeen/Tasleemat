@@ -1,4 +1,10 @@
-WBS Identifier,Activity Name,Start Date,Finish Date,Resource Name
-,,,,
-,,,,
-,,,,
+Section,Field,Guidance,LLM_Generated_Value
+Baseline Schedule Summary,Project Start and Target Finish Dates,The authorized baseline start date and targeted project completion date.,
+Baseline Schedule Summary,Schedule Data Version and Baseline Status,The formal schedule model version number and baseline authorization state.,
+Baseline Schedule Summary,Total Critical Path Length and Major Phases,Total working days on the critical path and scheduled durations for each major project phase.,
+Detailed Schedule Data,WBS Code and Activity Schedule Mapping,"Consolidated schedule line items linking WBS code, activity title, and work package.",
+Detailed Schedule Data,Planned Start and Finish Dates,Approved baseline start date and baseline completion date for each scheduled activity.,
+Detailed Schedule Data,Assigned Resources and Effort Allocation,"Designated resource leads, team members, and allocated effort hours per activity.",
+Critical Path and Float Analysis,Critical Path Flag and Dependencies,Clear indicator (Yes/No) identifying critical path activities and predecessor linkages.,
+Critical Path and Float Analysis,Total Float and Free Float Values,Calculated total float and free float values in working days for each schedule activity.,
+Critical Path and Float Analysis,Schedule Risk and Recovery Considerations,Identification of high-risk scheduling bottlenecks and contingency deployment rules.,
