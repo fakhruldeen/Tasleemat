@@ -11,7 +11,7 @@
 
 <br/>
 
-**[🇬🇧 Read Full Documentation in English (اقرأ بالإنجليزية)](README.md)** • **[📖 المعجم الثنائي وفهرس النماذج](LEXICON.md)** • **[🛠️ دليل الاستخدام العملي](USAGE_GUIDE_AR.md)** • **[📂 النماذج العربية](forms/ar/)** • **[📂 النماذج الإنجليزية](forms/)**
+**[🇬🇧 Read Full Documentation in English (اقرأ بالإنجليزية)](README.md)** • **[📖 المعجم الثنائي وفهرس النماذج](LEXICON.md)** • **[🛠️ دليل الاستخدام العملي](USAGE_GUIDE_AR.md)** • **[📂 النماذج العربية](forms/ar/)** • **[📂 النماذج الإنجليزية](forms/en/)**
 
 ---
 
@@ -42,8 +42,9 @@
 
 ```text
 Tasleemat/
-├── forms/                                    # 🇬🇧 المخرجات باللغة الإنجليزية
-│   ├── 00_Program_and_Portfolio_Management/  # 4 خرائط طريق ومصفوفات سعة
+├── forms/
+│   ├── en/                                   # 🇬🇧 المخرجات باللغة الإنجليزية
+│   │   ├── 00_Program_and_Portfolio_Management/  # 4 خرائط طريق ومصفوفات سعة
 │   ├── 01_Business_and_Value_Delivery/       # 3 دراسات جدوى وسجلات قيمة
 │   ├── 02_Project_Approach_and_Tailoring/    # 6 خطط تخصيص وحوكمة ذكاء اصطناعي
 │   ├── 03_Initiating/                        # 5 مواثيق وسجلات افتراضات ومعنيين

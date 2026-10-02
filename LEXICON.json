@@ -9,7 +9,7 @@
       "ar_name": "خارطة طريق المحفظة",
       "group": "00_Program_and_Portfolio_Management",
       "subgroup": "",
-      "en_dir": "forms/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap",
+      "en_dir": "forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap",
       "ar_dir": "forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة"
     },
     {
@@ -18,7 +18,7 @@
       "ar_name": "ميثاق البرنامج",
       "group": "00_Program_and_Portfolio_Management",
       "subgroup": "",
-      "en_dir": "forms/00_Program_and_Portfolio_Management/02_Program_Charter",
+      "en_dir": "forms/en/00_Program_and_Portfolio_Management/02_Program_Charter",
       "ar_dir": "forms/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج"
     },
     {
@@ -27,7 +27,7 @@
       "ar_name": "سجل الاعتماديات المتبادلة",
       "group": "00_Program_and_Portfolio_Management",
       "subgroup": "",
-      "en_dir": "forms/00_Program_and_Portfolio_Management/03_Interdependency_Register",
+      "en_dir": "forms/en/00_Program_and_Portfolio_Management/03_Interdependency_Register",
       "ar_dir": "forms/ar/00_إدارة_البرامج_والمحافظ/03_سجل_الاعتماديات_المتبادلة"
     },
     {
@@ -36,7 +36,7 @@
       "ar_name": "مصفوفة سعة الموارد",
       "group": "00_Program_and_Portfolio_Management",
       "subgroup": "",
-      "en_dir": "forms/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix",
+      "en_dir": "forms/en/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix",
       "ar_dir": "forms/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد"
     },
     {
@@ -45,7 +45,7 @@
       "ar_name": "دراسة الجدوى",
       "group": "01_Business_and_Value_Delivery",
       "subgroup": "",
-      "en_dir": "forms/01_Business_and_Value_Delivery/01_Business_Case",
+      "en_dir": "forms/en/01_Business_and_Value_Delivery/01_Business_Case",
       "ar_dir": "forms/ar/01_الأعمال_وتسليم_القيمة/01_دراسة_الجدوى_(Business_Case)"
     },
     {
@@ -54,7 +54,7 @@
       "ar_name": "خطة إدارة الفوائد",
       "group": "01_Business_and_Value_Delivery",
       "subgroup": "",
-      "en_dir": "forms/01_Business_and_Value_Delivery/02_Benefits_Management_Plan",
+      "en_dir": "forms/en/01_Business_and_Value_Delivery/02_Benefits_Management_Plan",
       "ar_dir": "forms/ar/01_الأعمال_وتسليم_القيمة/02_خطة_إدارة_الفوائد"
     },
     {
@@ -63,7 +63,7 @@
       "ar_name": "سجل تحقيق القيمة",
       "group": "01_Business_and_Value_Delivery",
       "subgroup": "",
-      "en_dir": "forms/01_Business_and_Value_Delivery/03_Value_Realization_Register",
+      "en_dir": "forms/en/01_Business_and_Value_Delivery/03_Value_Realization_Register",
       "ar_dir": "forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة"
     },
     {
@@ -72,7 +72,7 @@
       "ar_name": "خطة التخصيص",
       "group": "02_Project_Approach_and_Tailoring",
       "subgroup": "",
-      "en_dir": "forms/02_Project_Approach_and_Tailoring/01_Tailoring_Plan",
+      "en_dir": "forms/en/02_Project_Approach_and_Tailoring/01_Tailoring_Plan",
       "ar_dir": "forms/ar/02_منهجية_المشروع_وتخصيصه/01_خطة_التخصيص"
     },
     {
@@ -81,7 +81,7 @@
       "ar_name": "خطة حوكمة الذكاء الاصطناعي",
       "group": "02_Project_Approach_and_Tailoring",
       "subgroup": "",
-      "en_dir": "forms/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan",
+      "en_dir": "forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan",
       "ar_dir": "forms/ar/02_منهجية_المشروع_وتخصيصه/02_خطة_حوكمة_الذكاء_الاصطناعي"
     },
     {
@@ -90,7 +90,7 @@
       "ar_name": "تقييم جاهزية الذكاء الاصطناعي",
       "group": "02_Project_Approach_and_Tailoring",
       "subgroup": "",
-      "en_dir": "forms/02_Project_Approach_and_Tailoring/03_AI_Readiness_Assessment",
+      "en_dir": "forms/en/02_Project_Approach_and_Tailoring/03_AI_Readiness_Assessment",
       "ar_dir": "forms/ar/02_منهجية_المشروع_وتخصيصه/03_تقييم_جاهزية_الذكاء_الاصطناعي"
     },
     {
@@ -99,7 +99,7 @@
       "ar_name": "نموذج حالة استخدام الذكاء الاصطناعي",
       "group": "02_Project_Approach_and_Tailoring",
       "subgroup": "",
-      "en_dir": "forms/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas",
+      "en_dir": "forms/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas",
       "ar_dir": "forms/ar/02_منهجية_المشروع_وتخصيصه/04_نموذج_حالة_استخدام_الذكاء_الاصطناعي"
     },
     {
@@ -108,7 +108,7 @@
       "ar_name": "بطاقة نموذج الذكاء الاصطناعي",
       "group": "02_Project_Approach_and_Tailoring",
       "subgroup": "",
-      "en_dir": "forms/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet",
+      "en_dir": "forms/en/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet",
       "ar_dir": "forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي"
     },
     {
@@ -117,7 +117,7 @@
       "ar_name": "تقييم خصوصية البيانات وأخلاقياتها",
       "group": "02_Project_Approach_and_Tailoring",
       "subgroup": "",
-      "en_dir": "forms/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment",
+      "en_dir": "forms/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment",
       "ar_dir": "forms/ar/02_منهجية_المشروع_وتخصيصه/06_تقييم_خصوصية_البيانات_وأخلاقياتها"
     },
     {
@@ -126,7 +126,7 @@
       "ar_name": "ميثاق المشروع",
       "group": "03_Initiating",
       "subgroup": "",
-      "en_dir": "forms/03_Initiating/01_Project_Charter",
+      "en_dir": "forms/en/03_Initiating/01_Project_Charter",
       "ar_dir": "forms/ar/03_البدء/01_ميثاق_المشروع"
     },
     {
@@ -135,7 +135,7 @@
       "ar_name": "بيان رؤية المنتج",
       "group": "03_Initiating",
       "subgroup": "",
-      "en_dir": "forms/03_Initiating/02_Product_Vision",
+      "en_dir": "forms/en/03_Initiating/02_Product_Vision",
       "ar_dir": "forms/ar/03_البدء/02_رؤية_المنتج"
     },
     {
@@ -144,7 +144,7 @@
       "ar_name": "سجل الافتراضات",
       "group": "03_Initiating",
       "subgroup": "",
-      "en_dir": "forms/03_Initiating/03_Assumption_Log",
+      "en_dir": "forms/en/03_Initiating/03_Assumption_Log",
       "ar_dir": "forms/ar/03_البدء/03_سجل_الافتراضات"
     },
     {
@@ -153,7 +153,7 @@
       "ar_name": "سجل المعنيين",
       "group": "03_Initiating",
       "subgroup": "",
-      "en_dir": "forms/03_Initiating/04_Stakeholder_Register",
+      "en_dir": "forms/en/03_Initiating/04_Stakeholder_Register",
       "ar_dir": "forms/ar/03_البدء/04_سجل_المعنيين"
     },
     {
@@ -162,7 +162,7 @@
       "ar_name": "تحليل المعنيين",
       "group": "03_Initiating",
       "subgroup": "",
-      "en_dir": "forms/03_Initiating/05_Stakeholder_Analysis",
+      "en_dir": "forms/en/03_Initiating/05_Stakeholder_Analysis",
       "ar_dir": "forms/ar/03_البدء/05_تحليل_المعنيين"
     },
     {
@@ -171,7 +171,7 @@
       "ar_name": "خطة إدارة المشروع",
       "group": "04_Planning",
       "subgroup": "01_Integration",
-      "en_dir": "forms/04_Planning/01_Integration/01_Project_Management_Plan",
+      "en_dir": "forms/en/04_Planning/01_Integration/01_Project_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/01_التكامل/01_خطة_إدارة_المشروع"
     },
     {
@@ -180,7 +180,7 @@
       "ar_name": "خطة إدارة التغيير",
       "group": "04_Planning",
       "subgroup": "01_Integration",
-      "en_dir": "forms/04_Planning/01_Integration/02_Change_Management_Plan",
+      "en_dir": "forms/en/04_Planning/01_Integration/02_Change_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/01_التكامل/02_خطة_إدارة_التغيير"
     },
     {
@@ -189,7 +189,7 @@
       "ar_name": "خارطة طريق المشروع",
       "group": "04_Planning",
       "subgroup": "01_Integration",
-      "en_dir": "forms/04_Planning/01_Integration/03_Project_Roadmap",
+      "en_dir": "forms/en/04_Planning/01_Integration/03_Project_Roadmap",
       "ar_dir": "forms/ar/04_التخطيط/01_التكامل/03_خارطة_طريق_المشروع"
     },
     {
@@ -198,7 +198,7 @@
       "ar_name": "خطة إدارة النطاق",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/01_Scope_Management_Plan",
+      "en_dir": "forms/en/04_Planning/02_Scope/01_Scope_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/01_خطة_إدارة_النطاق"
     },
     {
@@ -207,7 +207,7 @@
       "ar_name": "خطة إدارة المتطلبات",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/02_Requirements_Management_Plan",
+      "en_dir": "forms/en/04_Planning/02_Scope/02_Requirements_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/02_خطة_إدارة_المتطلبات"
     },
     {
@@ -216,7 +216,7 @@
       "ar_name": "وثائق المتطلبات",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/03_Requirements_Documentation",
+      "en_dir": "forms/en/04_Planning/02_Scope/03_Requirements_Documentation",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/03_وثائق_المتطلبات"
     },
     {
@@ -225,7 +225,7 @@
       "ar_name": "مصفوفة تتبع المتطلبات",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/04_Requirements_Traceability_Matrix",
+      "en_dir": "forms/en/04_Planning/02_Scope/04_Requirements_Traceability_Matrix",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/04_مصفوفة_تتبع_المتطلبات"
     },
     {
@@ -234,7 +234,7 @@
       "ar_name": "بيان نطاق المشروع",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/05_Project_Scope_Statement",
+      "en_dir": "forms/en/04_Planning/02_Scope/05_Project_Scope_Statement",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/05_بيان_نطاق_المشروع"
     },
     {
@@ -243,7 +243,7 @@
       "ar_name": "هيكل تجزئة العمل",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/06_Work_Breakdown_Structure",
+      "en_dir": "forms/en/04_Planning/02_Scope/06_Work_Breakdown_Structure",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/06_هيكل_تجزئة_العمل"
     },
     {
@@ -252,7 +252,7 @@
       "ar_name": "قاموس هيكل تجزئة العمل",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/07_WBS_Dictionary",
+      "en_dir": "forms/en/04_Planning/02_Scope/07_WBS_Dictionary",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/07_قاموس_هيكل_تجزئة_العمل"
     },
     {
@@ -261,7 +261,7 @@
       "ar_name": "قائمة تراكم المنتج",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/08_Product_Backlog",
+      "en_dir": "forms/en/04_Planning/02_Scope/08_Product_Backlog",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)"
     },
     {
@@ -270,7 +270,7 @@
       "ar_name": "نموذج تخطيط قصص المستخدم",
       "group": "04_Planning",
       "subgroup": "02_Scope",
-      "en_dir": "forms/04_Planning/02_Scope/09_User_Story_Mapping_Canvas",
+      "en_dir": "forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas",
       "ar_dir": "forms/ar/04_التخطيط/02_النطاق/09_نموذج_تخطيط_قصص_المستخدم"
     },
     {
@@ -279,7 +279,7 @@
       "ar_name": "خطة إدارة الجدول الزمني",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/01_Schedule_Management_Plan",
+      "en_dir": "forms/en/04_Planning/03_Schedule/01_Schedule_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/01_خطة_إدارة_الجدول_الزمني"
     },
     {
@@ -288,7 +288,7 @@
       "ar_name": "قائمة الأنشطة",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/02_Activity_List",
+      "en_dir": "forms/en/04_Planning/03_Schedule/02_Activity_List",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/02_قائمة_الأنشطة"
     },
     {
@@ -297,7 +297,7 @@
       "ar_name": "سمات النشاط",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/03_Activity_Attributes",
+      "en_dir": "forms/en/04_Planning/03_Schedule/03_Activity_Attributes",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/03_سمات_النشاط"
     },
     {
@@ -306,7 +306,7 @@
       "ar_name": "قائمة المعالم",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/04_Milestone_List",
+      "en_dir": "forms/en/04_Planning/03_Schedule/04_Milestone_List",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/04_قائمة_المعالم_(Milestones)"
     },
     {
@@ -315,7 +315,7 @@
       "ar_name": "المخطط الشبكي",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/05_Network_Diagram",
+      "en_dir": "forms/en/04_Planning/03_Schedule/05_Network_Diagram",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/05_المخطط_الشبكي"
     },
     {
@@ -324,7 +324,7 @@
       "ar_name": "تقديرات المدة",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/06_Duration_Estimates",
+      "en_dir": "forms/en/04_Planning/03_Schedule/06_Duration_Estimates",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/06_تقديرات_المدة"
     },
     {
@@ -333,7 +333,7 @@
       "ar_name": "ورقة عمل تقدير المدة",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/07_Duration_Estimating_Worksheet",
+      "en_dir": "forms/en/04_Planning/03_Schedule/07_Duration_Estimating_Worksheet",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/07_ورقة_عمل_تقدير_المدة"
     },
     {
@@ -342,7 +342,7 @@
       "ar_name": "الجدول الزمني للمشروع",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/08_Project_Schedule",
+      "en_dir": "forms/en/04_Planning/03_Schedule/08_Project_Schedule",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/08_الجدول_الزمني_للمشروع"
     },
     {
@@ -351,7 +351,7 @@
       "ar_name": "خطة الإصدار",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/09_Release_Plan",
+      "en_dir": "forms/en/04_Planning/03_Schedule/09_Release_Plan",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/09_خطة_الإصدار"
     },
     {
@@ -360,7 +360,7 @@
       "ar_name": "سجل تخطيط دورة تطوير",
       "group": "04_Planning",
       "subgroup": "03_Schedule",
-      "en_dir": "forms/04_Planning/03_Schedule/10_Sprint_Planning_Log",
+      "en_dir": "forms/en/04_Planning/03_Schedule/10_Sprint_Planning_Log",
       "ar_dir": "forms/ar/04_التخطيط/03_الجدول_الزمني/10_سجل_تخطيط_أسبوع_العمل"
     },
     {
@@ -369,7 +369,7 @@
       "ar_name": "خطة إدارة التكلفة",
       "group": "04_Planning",
       "subgroup": "04_Cost",
-      "en_dir": "forms/04_Planning/04_Cost/01_Cost_Management_Plan",
+      "en_dir": "forms/en/04_Planning/04_Cost/01_Cost_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/04_التكلفة/01_خطة_إدارة_التكلفة"
     },
     {
@@ -378,7 +378,7 @@
       "ar_name": "تقديرات التكلفة",
       "group": "04_Planning",
       "subgroup": "04_Cost",
-      "en_dir": "forms/04_Planning/04_Cost/02_Cost_Estimates",
+      "en_dir": "forms/en/04_Planning/04_Cost/02_Cost_Estimates",
       "ar_dir": "forms/ar/04_التخطيط/04_التكلفة/02_تقديرات_التكلفة"
     },
     {
@@ -387,7 +387,7 @@
       "ar_name": "ورقة عمل تقدير التكلفة",
       "group": "04_Planning",
       "subgroup": "04_Cost",
-      "en_dir": "forms/04_Planning/04_Cost/03_Cost_Estimating_Worksheet",
+      "en_dir": "forms/en/04_Planning/04_Cost/03_Cost_Estimating_Worksheet",
       "ar_dir": "forms/ar/04_التخطيط/04_التكلفة/03_ورقة_عمل_تقدير_التكلفة"
     },
     {
@@ -396,7 +396,7 @@
       "ar_name": "الخط المرجعي للتكلفة",
       "group": "04_Planning",
       "subgroup": "04_Cost",
-      "en_dir": "forms/04_Planning/04_Cost/04_Cost_Baseline",
+      "en_dir": "forms/en/04_Planning/04_Cost/04_Cost_Baseline",
       "ar_dir": "forms/ar/04_التخطيط/04_التكلفة/04_الخط_المرجعي_للتكلفة"
     },
     {
@@ -405,7 +405,7 @@
       "ar_name": "خطة إدارة الجودة",
       "group": "04_Planning",
       "subgroup": "05_Quality",
-      "en_dir": "forms/04_Planning/05_Quality/01_Quality_Management_Plan",
+      "en_dir": "forms/en/04_Planning/05_Quality/01_Quality_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/05_الجودة/01_خطة_إدارة_الجودة"
     },
     {
@@ -414,7 +414,7 @@
       "ar_name": "مقاييس الجودة",
       "group": "04_Planning",
       "subgroup": "05_Quality",
-      "en_dir": "forms/04_Planning/05_Quality/02_Quality_Metrics",
+      "en_dir": "forms/en/04_Planning/05_Quality/02_Quality_Metrics",
       "ar_dir": "forms/ar/04_التخطيط/05_الجودة/02_مقاييس_الجودة"
     },
     {
@@ -423,7 +423,7 @@
       "ar_name": "تعريف الجاهزية والاكتمال",
       "group": "04_Planning",
       "subgroup": "05_Quality",
-      "en_dir": "forms/04_Planning/05_Quality/03_Definition_of_Ready_and_Done",
+      "en_dir": "forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done",
       "ar_dir": "forms/ar/04_التخطيط/05_الجودة/03_تعريف_الجاهزية_والاكتمال"
     },
     {
@@ -432,7 +432,7 @@
       "ar_name": "خطة إدارة الموارد",
       "group": "04_Planning",
       "subgroup": "06_Resource",
-      "en_dir": "forms/04_Planning/06_Resource/01_Resource_Management_Plan",
+      "en_dir": "forms/en/04_Planning/06_Resource/01_Resource_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/06_الموارد/01_خطة_إدارة_الموارد"
     },
     {
@@ -441,7 +441,7 @@
       "ar_name": "متطلبات الموارد",
       "group": "04_Planning",
       "subgroup": "06_Resource",
-      "en_dir": "forms/04_Planning/06_Resource/02_Resource_Requirements",
+      "en_dir": "forms/en/04_Planning/06_Resource/02_Resource_Requirements",
       "ar_dir": "forms/ar/04_التخطيط/06_الموارد/02_متطلبات_الموارد"
     },
     {
@@ -450,7 +450,7 @@
       "ar_name": "هيكل تجزئة الموارد",
       "group": "04_Planning",
       "subgroup": "06_Resource",
-      "en_dir": "forms/04_Planning/06_Resource/03_Resource_Breakdown_Structure",
+      "en_dir": "forms/en/04_Planning/06_Resource/03_Resource_Breakdown_Structure",
       "ar_dir": "forms/ar/04_التخطيط/06_الموارد/03_هيكل_تجزئة_الموارد_(RBS)"
     },
     {
@@ -459,7 +459,7 @@
       "ar_name": "مصفوفة تعيين المسؤوليات",
       "group": "04_Planning",
       "subgroup": "06_Resource",
-      "en_dir": "forms/04_Planning/06_Resource/04_Responsibility_Assignment_Matrix",
+      "en_dir": "forms/en/04_Planning/06_Resource/04_Responsibility_Assignment_Matrix",
       "ar_dir": "forms/ar/04_التخطيط/06_الموارد/04_مصفوفة_تعيين_المسؤوليات_(RAM)"
     },
     {
@@ -468,7 +468,7 @@
       "ar_name": "ميثاق الفريق",
       "group": "04_Planning",
       "subgroup": "06_Resource",
-      "en_dir": "forms/04_Planning/06_Resource/05_Team_Charter",
+      "en_dir": "forms/en/04_Planning/06_Resource/05_Team_Charter",
       "ar_dir": "forms/ar/04_التخطيط/06_الموارد/05_ميثاق_الفريق"
     },
     {
@@ -477,7 +477,7 @@
       "ar_name": "خطة إدارة الاتصالات",
       "group": "04_Planning",
       "subgroup": "07_Communications",
-      "en_dir": "forms/04_Planning/07_Communications/01_Communications_Management_Plan",
+      "en_dir": "forms/en/04_Planning/07_Communications/01_Communications_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/07_التواصل/01_خطة_إدارة_الاتصالات"
     },
     {
@@ -486,7 +486,7 @@
       "ar_name": "خطة إدارة المخاطر",
       "group": "04_Planning",
       "subgroup": "08_Risk",
-      "en_dir": "forms/04_Planning/08_Risk/01_Risk_Management_Plan",
+      "en_dir": "forms/en/04_Planning/08_Risk/01_Risk_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/08_المخاطر/01_خطة_إدارة_المخاطر"
     },
     {
@@ -495,7 +495,7 @@
       "ar_name": "سجل المخاطر",
       "group": "04_Planning",
       "subgroup": "08_Risk",
-      "en_dir": "forms/04_Planning/08_Risk/02_Risk_Register",
+      "en_dir": "forms/en/04_Planning/08_Risk/02_Risk_Register",
       "ar_dir": "forms/ar/04_التخطيط/08_المخاطر/02_سجل_المخاطر"
     },
     {
@@ -504,7 +504,7 @@
       "ar_name": "تقييم الاحتمالية والأثر",
       "group": "04_Planning",
       "subgroup": "08_Risk",
-      "en_dir": "forms/04_Planning/08_Risk/03_Probability_and_Impact_Assessment",
+      "en_dir": "forms/en/04_Planning/08_Risk/03_Probability_and_Impact_Assessment",
       "ar_dir": "forms/ar/04_التخطيط/08_المخاطر/03_تقييم_الاحتمالية_والأثر"
     },
     {
@@ -513,7 +513,7 @@
       "ar_name": "مصفوفة الاحتمالية والأثر",
       "group": "04_Planning",
       "subgroup": "08_Risk",
-      "en_dir": "forms/04_Planning/08_Risk/04_Probability_and_Impact_Matrix",
+      "en_dir": "forms/en/04_Planning/08_Risk/04_Probability_and_Impact_Matrix",
       "ar_dir": "forms/ar/04_التخطيط/08_المخاطر/04_مصفوفة_الاحتمالية_والأثر"
     },
     {
@@ -522,7 +522,7 @@
       "ar_name": "ورقة بيانات المخاطر",
       "group": "04_Planning",
       "subgroup": "08_Risk",
-      "en_dir": "forms/04_Planning/08_Risk/05_Risk_Data_Sheet",
+      "en_dir": "forms/en/04_Planning/08_Risk/05_Risk_Data_Sheet",
       "ar_dir": "forms/ar/04_التخطيط/08_المخاطر/05_ورقة_بيانات_المخاطر"
     },
     {
@@ -531,7 +531,7 @@
       "ar_name": "تقرير المخاطر",
       "group": "04_Planning",
       "subgroup": "08_Risk",
-      "en_dir": "forms/04_Planning/08_Risk/06_Risk_Report",
+      "en_dir": "forms/en/04_Planning/08_Risk/06_Risk_Report",
       "ar_dir": "forms/ar/04_التخطيط/08_المخاطر/06_تقرير_المخاطر"
     },
     {
@@ -540,7 +540,7 @@
       "ar_name": "خطة عمل التخفيف من المخاطر",
       "group": "04_Planning",
       "subgroup": "08_Risk",
-      "en_dir": "forms/04_Planning/08_Risk/07_Risk_Mitigation_Action_Plan",
+      "en_dir": "forms/en/04_Planning/08_Risk/07_Risk_Mitigation_Action_Plan",
       "ar_dir": "forms/ar/04_التخطيط/08_المخاطر/07_خطة_عمل_التخفيف_من_المخاطر"
     },
     {
@@ -549,7 +549,7 @@
       "ar_name": "خطة إدارة المشتريات",
       "group": "04_Planning",
       "subgroup": "09_Procurement",
-      "en_dir": "forms/04_Planning/09_Procurement/01_Procurement_Management_Plan",
+      "en_dir": "forms/en/04_Planning/09_Procurement/01_Procurement_Management_Plan",
       "ar_dir": "forms/ar/04_التخطيط/09_المشتريات/01_خطة_إدارة_المشتريات"
     },
     {
@@ -558,7 +558,7 @@
       "ar_name": "استراتيجية المشتريات",
       "group": "04_Planning",
       "subgroup": "09_Procurement",
-      "en_dir": "forms/04_Planning/09_Procurement/02_Procurement_Strategy",
+      "en_dir": "forms/en/04_Planning/09_Procurement/02_Procurement_Strategy",
       "ar_dir": "forms/ar/04_التخطيط/09_المشتريات/02_استراتيجية_المشتريات"
     },
     {
@@ -567,7 +567,7 @@
       "ar_name": "معايير اختيار المصدر",
       "group": "04_Planning",
       "subgroup": "09_Procurement",
-      "en_dir": "forms/04_Planning/09_Procurement/03_Source_Selection_Criteria",
+      "en_dir": "forms/en/04_Planning/09_Procurement/03_Source_Selection_Criteria",
       "ar_dir": "forms/ar/04_التخطيط/09_المشتريات/03_معايير_اختيار_المصدر"
     },
     {
@@ -576,7 +576,7 @@
       "ar_name": "بيان العمل",
       "group": "04_Planning",
       "subgroup": "09_Procurement",
-      "en_dir": "forms/04_Planning/09_Procurement/04_Statement_of_Work_SOW",
+      "en_dir": "forms/en/04_Planning/09_Procurement/04_Statement_of_Work_SOW",
       "ar_dir": "forms/ar/04_التخطيط/09_المشتريات/04_بيان_العمل_(SOW)"
     },
     {
@@ -585,7 +585,7 @@
       "ar_name": "طلب تقديم العروض",
       "group": "04_Planning",
       "subgroup": "09_Procurement",
-      "en_dir": "forms/04_Planning/09_Procurement/05_Request_for_Proposal_RFP",
+      "en_dir": "forms/en/04_Planning/09_Procurement/05_Request_for_Proposal_RFP",
       "ar_dir": "forms/ar/04_التخطيط/09_المشتريات/05_طلب_تقديم_عروض_(RFP)"
     },
     {
@@ -594,7 +594,7 @@
       "ar_name": "خطة إشراك المعنيين",
       "group": "04_Planning",
       "subgroup": "10_Stakeholder",
-      "en_dir": "forms/04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan",
+      "en_dir": "forms/en/04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan",
       "ar_dir": "forms/ar/04_التخطيط/10_المعنيين/01_خطة_إشراك_المعنيين"
     },
     {
@@ -603,7 +603,7 @@
       "ar_name": "استراتيجية وخطة إدارة التغيير المؤسسي",
       "group": "04_Planning",
       "subgroup": "11_Organizational_Change_Management",
-      "en_dir": "forms/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan",
+      "en_dir": "forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan",
       "ar_dir": "forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي"
     },
     {
@@ -612,7 +612,7 @@
       "ar_name": "خطة وسجل التدريب",
       "group": "04_Planning",
       "subgroup": "11_Organizational_Change_Management",
-      "en_dir": "forms/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log",
+      "en_dir": "forms/en/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log",
       "ar_dir": "forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/02_خطة_وسجل_التدريب"
     },
     {
@@ -621,7 +621,7 @@
       "ar_name": "سجل المشكلات",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/01_Issue_Log",
+      "en_dir": "forms/en/05_Executing/01_Issue_Log",
       "ar_dir": "forms/ar/05_التنفيذ/01_سجل_المشكلات"
     },
     {
@@ -630,7 +630,7 @@
       "ar_name": "سجل القرارات",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/02_Decision_Log",
+      "en_dir": "forms/en/05_Executing/02_Decision_Log",
       "ar_dir": "forms/ar/05_التنفيذ/02_سجل_القرارات"
     },
     {
@@ -639,7 +639,7 @@
       "ar_name": "طلب تغيير",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/03_Change_Request",
+      "en_dir": "forms/en/05_Executing/03_Change_Request",
       "ar_dir": "forms/ar/05_التنفيذ/03_طلب_تغيير"
     },
     {
@@ -648,7 +648,7 @@
       "ar_name": "سجل التغييرات",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/04_Change_Log",
+      "en_dir": "forms/en/05_Executing/04_Change_Log",
       "ar_dir": "forms/ar/05_التنفيذ/04_سجل_التغييرات"
     },
     {
@@ -657,7 +657,7 @@
       "ar_name": "تقرير تدقيق الجودة",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/05_Quality_Audit",
+      "en_dir": "forms/en/05_Executing/05_Quality_Audit",
       "ar_dir": "forms/ar/05_التنفيذ/05_تدقيق_الجودة"
     },
     {
@@ -666,7 +666,7 @@
       "ar_name": "تقييم أداء الفريق",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/06_Team_Performance_Assessment",
+      "en_dir": "forms/en/05_Executing/06_Team_Performance_Assessment",
       "ar_dir": "forms/ar/05_التنفيذ/06_تقييم_أداء_الفريق"
     },
     {
@@ -675,7 +675,7 @@
       "ar_name": "سجل الدروس المستفادة",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/07_Lessons_Learned_Register",
+      "en_dir": "forms/en/05_Executing/07_Lessons_Learned_Register",
       "ar_dir": "forms/ar/05_التنفيذ/07_سجل_الدروس_المستفادة"
     },
     {
@@ -684,7 +684,7 @@
       "ar_name": "مراجعة المرحلة",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/08_Retrospective",
+      "en_dir": "forms/en/05_Executing/08_Retrospective",
       "ar_dir": "forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)"
     },
     {
@@ -693,7 +693,7 @@
       "ar_name": "سجل مكتبة الأوامر",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/09_Prompt_Library_Log",
+      "en_dir": "forms/en/05_Executing/09_Prompt_Library_Log",
       "ar_dir": "forms/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)"
     },
     {
@@ -702,7 +702,7 @@
       "ar_name": "سجل العوائق",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/10_Impediment_Log",
+      "en_dir": "forms/en/05_Executing/10_Impediment_Log",
       "ar_dir": "forms/ar/05_التنفيذ/10_سجل_العوائق"
     },
     {
@@ -711,7 +711,7 @@
       "ar_name": "محضر الاجتماع",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/11_Meeting_Minutes",
+      "en_dir": "forms/en/05_Executing/11_Meeting_Minutes",
       "ar_dir": "forms/ar/05_التنفيذ/11_محضر_الاجتماع"
     },
     {
@@ -720,7 +720,7 @@
       "ar_name": "قائمة التحقق لتهيئة فريق العمل",
       "group": "05_Executing",
       "subgroup": "",
-      "en_dir": "forms/05_Executing/12_Team_Onboarding_Checklist",
+      "en_dir": "forms/en/05_Executing/12_Team_Onboarding_Checklist",
       "ar_dir": "forms/ar/05_التنفيذ/12_قائمة_التحقق_لتهيئة_فريق_العمل"
     },
     {
@@ -729,7 +729,7 @@
       "ar_name": "تقرير حالة المشروع",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/01_Project_Status_Report",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/01_Project_Status_Report",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/01_تقرير_حالة_المشروع"
     },
     {
@@ -738,7 +738,7 @@
       "ar_name": "تقرير حالة عضو الفريق",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/02_Team_Member_Status_Report",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/02_Team_Member_Status_Report",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/02_تقرير_حالة_عضو_الفريق"
     },
     {
@@ -747,7 +747,7 @@
       "ar_name": "تقرير حالة المقاول",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/03_Contractor_Status_Report",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/03_Contractor_Status_Report",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/03_تقرير_حالة_المقاول"
     },
     {
@@ -756,7 +756,7 @@
       "ar_name": "تحليل التباين",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/04_Variance_Analysis",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/04_Variance_Analysis",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/04_تحليل_التباين"
     },
     {
@@ -765,7 +765,7 @@
       "ar_name": "تقرير تحليل القيمة المكتسبة",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/05_Earned_Value_Analysis",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/05_Earned_Value_Analysis",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/05_تحليل_القيمة_المكتسبة_(EVA)"
     },
     {
@@ -774,7 +774,7 @@
       "ar_name": "تقرير تدقيق المخاطر",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/06_Risk_Audit",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/06_Risk_Audit",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/06_تدقيق_المخاطر"
     },
     {
@@ -783,7 +783,7 @@
       "ar_name": "تقرير تدقيق المشتريات",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/07_Procurement_Audit",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/07_Procurement_Audit",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/07_تدقيق_المشتريات"
     },
     {
@@ -792,7 +792,7 @@
       "ar_name": "نموذج قبول المنتج",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/08_Product_Acceptance_Form",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/08_Product_Acceptance_Form",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/08_نموذج_قبول_المنتج"
     },
     {
@@ -801,7 +801,7 @@
       "ar_name": "بطاقة أداء المورد",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/09_بطاقة_أداء_المورد"
     },
     {
@@ -810,7 +810,7 @@
       "ar_name": "نموذج اعتماد اختبار قبول المستخدم",
       "group": "06_Monitoring_and_Controlling",
       "subgroup": "",
-      "en_dir": "forms/06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff",
       "ar_dir": "forms/ar/06_المراقبة_والتحكم/10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)"
     },
     {
@@ -819,7 +819,7 @@
       "ar_name": "ملخص الدروس المستفادة",
       "group": "07_Closing",
       "subgroup": "",
-      "en_dir": "forms/07_Closing/01_Lessons_Learned_Summary",
+      "en_dir": "forms/en/07_Closing/01_Lessons_Learned_Summary",
       "ar_dir": "forms/ar/07_الإغلاق/01_ملخص_الدروس_المستفادة"
     },
     {
@@ -828,7 +828,7 @@
       "ar_name": "تقرير إغلاق العقد",
       "group": "07_Closing",
       "subgroup": "",
-      "en_dir": "forms/07_Closing/02_Contract_Closeout_Report",
+      "en_dir": "forms/en/07_Closing/02_Contract_Closeout_Report",
       "ar_dir": "forms/ar/07_الإغلاق/02_تقرير_إغلاق_العقد"
     },
     {
@@ -837,7 +837,7 @@
       "ar_name": "تقرير إغلاق المشروع أو المرحلة",
       "group": "07_Closing",
       "subgroup": "",
-      "en_dir": "forms/07_Closing/03_Project_or_Phase_Closeout",
+      "en_dir": "forms/en/07_Closing/03_Project_or_Phase_Closeout",
       "ar_dir": "forms/ar/07_الإغلاق/03_إغلاق_المشروع_أو_المرحلة"
     },
     {
@@ -846,7 +846,7 @@
       "ar_name": "قائمة التحقق للانتقال إلى العمليات",
       "group": "07_Closing",
       "subgroup": "",
-      "en_dir": "forms/07_Closing/04_Transition_to_Operations_Checklist",
+      "en_dir": "forms/en/07_Closing/04_Transition_to_Operations_Checklist",
       "ar_dir": "forms/ar/07_الإغلاق/04_قائمة_التحقق_للانتقال_إلى_العمليات"
     }
   ]

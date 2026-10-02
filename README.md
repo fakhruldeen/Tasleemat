@@ -11,7 +11,7 @@
 
 <br/>
 
-**[🇸🇦 اقرأ الدليل الكامل باللغة العربية (Read in Arabic)](README_AR.md)** • **[📖 Master Lexicon & Catalog](LEXICON.md)** • **[🛠️ Usage Guide](USAGE_GUIDE.md)** • **[📂 English Forms](forms/)** • **[📂 Arabic Forms](forms/ar/)**
+**[🇸🇦 اقرأ الدليل الكامل باللغة العربية (Read in Arabic)](README_AR.md)** • **[📖 Master Lexicon & Catalog](LEXICON.md)** • **[🛠️ Usage Guide](USAGE_GUIDE.md)** • **[📂 English Forms](forms/en/)** • **[📂 Arabic Forms](forms/ar/)**
 
 ---
 
@@ -40,16 +40,17 @@ Every single artifact is designed as a **5-file synchronized bundle**, bridging 
 
 ```text
 Tasleemat/
-├── forms/                                    # 🇬🇧 English Artifacts (Root)
-│   ├── 00_Program_and_Portfolio_Management/  # 4 Roadmaps & Capacity Matrices
-│   ├── 01_Business_and_Value_Delivery/       # 3 Business Cases & Value Registers
-│   ├── 02_Project_Approach_and_Tailoring/    # 6 Tailoring & AI Governance Plans
-│   ├── 03_Initiating/                        # 5 Charters, Assumption Logs & Registers
-│   ├── 04_Planning/                          # 32 Detailed Baselines (Scope, Schedule, Cost, etc.)
-│   ├── 05_Executing/                         # 12 Operational Logs & Meeting Records
-│   ├── 06_Monitoring_and_Controlling/        # 10 Variance, EVA & Quality Audits
-│   ├── 07_Closing/                           # 4 Closeout Reports & Handover Checklists
-│   ├── parameters.md                         # Global project variables for AI prompts
+├── forms/
+│   ├── en/                                   # 🇬🇧 English Artifacts (Root)
+│   │   ├── 00_Program_and_Portfolio_Management/  # 4 Roadmaps & Capacity Matrices
+│   │   ├── 01_Business_and_Value_Delivery/       # 3 Business Cases & Value Registers
+│   │   ├── 02_Project_Approach_and_Tailoring/    # 6 Tailoring & AI Governance Plans
+│   │   ├── 03_Initiating/                        # 5 Charters, Assumption Logs & Registers
+│   │   ├── 04_Planning/                          # 32 Detailed Baselines (Scope, Schedule, Cost, etc.)
+│   │   ├── 05_Executing/                         # 12 Operational Logs & Meeting Records
+│   │   ├── 06_Monitoring_and_Controlling/        # 10 Variance, EVA & Quality Audits
+│   │   ├── 07_Closing/                           # 4 Closeout Reports & Handover Checklists
+│   │   └── parameters.md                         # Global project variables for AI prompts
 │   └── ar/                                   # 🇸🇦 Arabic Localized Artifacts (RTL)
 │       ├── 00_إدارة_البرامج_والمحافظ/
 │       ├── 01_الأعمال_وتسليم_القيمة/
@@ -72,7 +73,7 @@ Tasleemat/
 
 ## 📦 The 5-File Artifact Bundle
 
-Inside every form directory (e.g., [`forms/03_Initiating/01_Project_Charter/`](forms/03_Initiating/01_Project_Charter/)), you will find exactly 5 synchronized files:
+Inside every form directory (e.g., [`forms/en/03_Initiating/01_Project_Charter/`](forms/en/03_Initiating/01_Project_Charter/)), you will find exactly 5 synchronized files:
 
 | File Type | Pattern | Purpose & Practitioner Value |
 | :--- | :--- | :--- |
@@ -99,14 +100,14 @@ flowchart LR
 
 ### 📑 Lifecycle Phase Summary
 
-1. **[00. Program and Portfolio Management](forms/00_Program_and_Portfolio_Management/)** (`PMO-00.01` – `PMO-00.04`): Strategic alignment, cross-project dependencies, and resource capacity balancing.
-2. **[01. Business and Value Delivery](forms/01_Business_and_Value_Delivery/)** (`PMO-01.01` – `PMO-01.03`): Business cases, benefits realization plans, and value tracking registers.
-3. **[02. Project Approach and Tailoring](forms/02_Project_Approach_and_Tailoring/)** (`PMO-02.01` – `PMO-02.06`): Methodology tailoring, AI governance, model cards, and ethics assessments.
-4. **[03. Initiating](forms/03_Initiating/)** (`PMO-03.01` – `PMO-03.05`): Project charter, product vision, assumption logs, and stakeholder registers.
-5. **[04. Planning](forms/04_Planning/)** (`PMO-04.01.01` – `PMO-04.11.02`): 32 comprehensive planning baselines spanning Integration, Scope (WBS), Schedule, Cost, Quality, Resources, Communications, Risks, Procurement, Stakeholders, and OCM.
-6. **[05. Executing](forms/05_Executing/)** (`PMO-05.01` – `PMO-05.12`): Issue logs, change requests, team performance evaluations, retrospectives, and prompt libraries.
-7. **[06. Monitoring and Controlling](forms/06_Monitoring_and_Controlling/)** (`PMO-06.01` – `PMO-06.10`): Status reports, variance analysis, Earned Value Analysis (EVA), and UAT sign-offs.
-8. **[07. Closing](forms/07_Closing/)** (`PMO-07.01` – `PMO-07.04`): Contract closeout reports, lessons learned summaries, and operational handover checklists.
+1. **[00. Program and Portfolio Management](forms/en/00_Program_and_Portfolio_Management/)** (`PMO-00.01` – `PMO-00.04`): Strategic alignment, cross-project dependencies, and resource capacity balancing.
+2. **[01. Business and Value Delivery](forms/en/01_Business_and_Value_Delivery/)** (`PMO-01.01` – `PMO-01.03`): Business cases, benefits realization plans, and value tracking registers.
+3. **[02. Project Approach and Tailoring](forms/en/02_Project_Approach_and_Tailoring/)** (`PMO-02.01` – `PMO-02.06`): Methodology tailoring, AI governance, model cards, and ethics assessments.
+4. **[03. Initiating](forms/en/03_Initiating/)** (`PMO-03.01` – `PMO-03.05`): Project charter, product vision, assumption logs, and stakeholder registers.
+5. **[04. Planning](forms/en/04_Planning/)** (`PMO-04.01.01` – `PMO-04.11.02`): 32 comprehensive planning baselines spanning Integration, Scope (WBS), Schedule, Cost, Quality, Resources, Communications, Risks, Procurement, Stakeholders, and OCM.
+6. **[05. Executing](forms/en/05_Executing/)** (`PMO-05.01` – `PMO-05.12`): Issue logs, change requests, team performance evaluations, retrospectives, and prompt libraries.
+7. **[06. Monitoring and Controlling](forms/en/06_Monitoring_and_Controlling/)** (`PMO-06.01` – `PMO-06.10`): Status reports, variance analysis, Earned Value Analysis (EVA), and UAT sign-offs.
+8. **[07. Closing](forms/en/07_Closing/)** (`PMO-07.01` – `PMO-07.04`): Contract closeout reports, lessons learned summaries, and operational handover checklists.
 
 *For the complete index of all 94 forms with English/Arabic names and direct links, see **[`LEXICON.md`](LEXICON.md)**.*
 
@@ -115,13 +116,13 @@ flowchart LR
 ## ⚡ Quick Start: 3 Ways to Use Tasleemat
 
 ### 1. Manual Project Management Workflow
-1. Navigate to the desired phase folder (e.g., [`forms/03_Initiating/01_Project_Charter/`](forms/03_Initiating/01_Project_Charter/)).
+1. Navigate to the desired phase folder (e.g., [`forms/en/03_Initiating/01_Project_Charter/`](forms/en/03_Initiating/01_Project_Charter/)).
 2. Open `03_01_Project_Charter_Guide.md` to review best practices and required inputs.
 3. Copy `03_01_Project_Charter_Template.md` into your editor (VS Code, Obsidian, Notion, or Confluence) or export directly to PDF.
 
 ### 2. AI-Powered Generation Workflow (ChatGPT, Claude, Gemini)
 Generate complete, compliant PMO documents in seconds:
-1. Open [`forms/parameters.md`](forms/parameters.md) (or [`forms/ar/parameters.md`](forms/ar/parameters.md)) and enter your project parameters (Title, Sponsor, Budget, Scope boundaries).
+1. Open [`forms/en/parameters.md`](forms/en/parameters.md) (or [`forms/ar/parameters.md`](forms/ar/parameters.md)) and enter your project parameters (Title, Sponsor, Budget, Scope boundaries).
 2. Open the prompt file `*.md` of the desired artifact (e.g., `04_08_02_Risk_Register.md`).
 3. Feed both files along with your rough meeting notes into your LLM:
    ```text
