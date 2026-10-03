@@ -1,0 +1,83 @@
+site_name: Tasleemat PMO Operating System | تسليمات
+site_url: https://fakhruldeen.github.io/Tasleemat/
+site_description: Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Automation Library aligned with PMI PMBOK® 6th, 7th & 8th Edition standards.
+site_author: Fakhruldeen & Tasleemat Contributors
+repo_url: https://github.com/fakhruldeen/Tasleemat
+repo_name: fakhruldeen/Tasleemat
+
+theme:
+  name: material
+  language: en
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  logo: docs/img/logo.png
+  favicon: docs/img/logo.png
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: README.md
+  - البوابة بالعربية: README_AR.md
+  - 📖 Master Lexicon: docs/LEXICON.md
+  - 📚 Documentation (EN):
+    - 01. Getting Started: docs/en/01_getting_started.md
+    - 02. Usage Guide: docs/en/02_usage_guide.md
+    - 03. PMO Policy Manual: docs/en/03_pmo_policy_manual.md
+    - 04. Stage-Gates & Governance: docs/en/04_stage_gates_and_governance.md
+    - 05. Tailoring Profiles: docs/en/05_tailoring_profiles.md
+    - 06. RACI Authority Matrix: docs/en/06_raci_authority_matrix.md
+    - 07. Document Dependencies: docs/en/07_document_dependencies.md
+    - 08. AI Governance Framework: docs/en/08_ai_governance_framework.md
+    - 09. Agile & Hybrid Integration: docs/en/09_agile_hybrid_integration.md
+    - 10. FAQ & Troubleshooting: docs/en/10_faq_and_troubleshooting.md
+    - 11. Tools & Automation: docs/en/11_tools_and_automation.md
+  - 📚 المكتبة التوثيقية (AR):
+    - 01. دليل البدء السريع: docs/ar/01_getting_started.md
+    - 02. دليل الممارس الشامل: docs/ar/02_usage_guide.md
+    - 03. دليل سياسات PMO: docs/ar/03_pmo_policy_manual.md
+    - 04. بوابات العبور والمراجعات: docs/ar/04_stage_gates_and_governance.md
+    - 05. ملفات التخصيص وتصنيف المشاريع: docs/ar/05_tailoring_profiles.md
+    - 06. مصفوفة الصلاحيات RACI: docs/ar/06_raci_authority_matrix.md
+    - 07. شبكة اعتماديات الوثائق: docs/ar/07_document_dependencies.md
+    - 08. إطار حوكمة الذكاء الاصطناعي: docs/ar/08_ai_governance_framework.md
+    - 09. دليل المنهجيات الرشيقة والهجينة: docs/ar/09_agile_hybrid_integration.md
+    - 10. الأسئلة الشائعة وحل المشكلات: docs/ar/10_faq_and_troubleshooting.md
+    - 11. دليل الأدوات والأتمتة: docs/ar/11_tools_and_automation.md

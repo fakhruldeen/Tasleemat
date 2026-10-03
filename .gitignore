@@ -11,8 +11,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-*.py
-tools/
+scratch/
 
 # OS generated files
 .DS_Store

@@ -1,0 +1,55 @@
+/* Tasleemat Official Print & PDF Export Stylesheet */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm 1.2cm;
+  }
+
+  @page landscape {
+    size: A4 landscape;
+    margin: 1.2cm 1.0cm;
+  }
+
+  .landscape-mode {
+    page: landscape;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    page-break-inside: auto;
+    font-size: 8.5pt;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  th, td {
+    border: 1px solid #d0d7de;
+    padding: 6px 8px;
+    text-align: inherit;
+  }
+
+  th {
+    background-color: #f6f8fa !important;
+    font-weight: 600;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    color: #0969da;
+  }
+}

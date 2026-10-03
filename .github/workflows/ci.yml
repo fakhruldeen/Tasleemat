@@ -1,0 +1,43 @@
+name: Tasleemat PMO Governance & Quality Assurance CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  audit-and-parity:
+    name: Form Schema, Quality & Parity Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Form Quality & Schema Audit (204 Forms)
+        run: |
+          python3 tools/audit_forms.py
+
+      - name: Run Web Rendering & Syntax Check
+        run: |
+          python3 tools/check_rendering.py
+
+      - name: Run English/Arabic Bilingual 1:1 Parity Verification
+        run: |
+          python3 tools/parity.py forms/en forms/ar
+
+      - name: Test Tasleemat CLI Scaffolder
+        run: |
+          python3 tools/tasleemat_cli.py list --lang en
+          python3 tools/tasleemat_cli.py list --lang ar
+          python3 tools/tasleemat_cli.py search "Charter" --lang en
+          python3 tools/tasleemat_cli.py search "ميثاق" --lang ar
+          python3 tools/tasleemat_cli.py init --tier 3 --pack agile --lang both --name "CI_Test_Project" --code "PRJ-TEST-01" --pm "Test PM" --sponsor "Test Sponsor" --out ./test_workspace
+          test -f ./test_workspace/PROJECT_README.md
+          echo "Tasleemat CI Verification Passed Flawlessly!"
