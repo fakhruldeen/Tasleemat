@@ -1741,6 +1741,13 @@ theme:
   name: material
   language: en
   palette:
+    # Dark mode (PMOSkills Obsidian Default)
+    - scheme: slate
+      primary: slate
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
     # Light mode
     - scheme: default
       primary: slate
@@ -1748,13 +1755,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    # Dark mode
-    - scheme: slate
-      primary: slate
-      accent: cyan
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.tabs.sticky
