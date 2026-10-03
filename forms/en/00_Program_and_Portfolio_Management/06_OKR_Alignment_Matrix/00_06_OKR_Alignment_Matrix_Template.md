@@ -8,11 +8,24 @@ Section Instructions:
 - Confidence Tracking and Pivoting: Provide comprehensive data for all fields.
 -->
 
+<style>
+  @media print {
+    @page {
+      size: A4 landscape;
+      margin: 1.5cm 1cm;
+    }
+    table {
+      width: 100%;
+      font-size: 9pt;
+    }
+  }
+</style>
+
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
-<h2 dir="ltr" align="right">{{Project_Name}} - {{Project_ID}}</h2>
+<h2 dir="ltr" align="right">{{Organization_or_Strategy_Name}} - {{Cycle_Period}}</h2>
 <h1 dir="ltr" align="center">OKR ALIGNMENT MATRIX</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| **Date Prepared:** {{Current_Date}} | **Strategy Lead:** {{Strategy_Lead_Name}} | **Prepared By:** {{Prepared_By}} |
 | :--- | :--- | :--- |
 
 ---

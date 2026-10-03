@@ -42,10 +42,10 @@ Section Instructions:
 -->
 
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
-<h2 dir="ltr" align="right">{{Project_Name}} - {{Project_ID}}</h2>
+<h2 dir="ltr" align="right">{{AI_Solution_Name}} - {{Use_Case_ID}}</h2>
 <h1 dir="ltr" align="center">AI USE CASE CANVAS</h1>
 
-| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| **Date Prepared:** {{Current_Date}} | **AI Product Owner:** {{AI_Product_Owner_Name}} | **Prepared By:** {{Prepared_By}} |
 | :--- | :--- | :--- |
 
 ---

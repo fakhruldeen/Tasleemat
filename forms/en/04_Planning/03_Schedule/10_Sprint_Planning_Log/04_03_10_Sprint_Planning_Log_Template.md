@@ -28,6 +28,19 @@ Section Instructions:
 *   **Team Lead, Product Owner, Project Manager:** The three roles that commit the sprint. The product owner commits the priority and the team lead commits the estimate, and a sign-off that has only one of the two is an agreement about half of what was planned.
 -->
 
+<style>
+  @media print {
+    @page {
+      size: A4 landscape;
+      margin: 1.5cm 1cm;
+    }
+    table {
+      width: 100%;
+      font-size: 9pt;
+    }
+  }
+</style>
+
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
 <h2 dir="ltr" align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 dir="ltr" align="center">SPRINT PLANNING LOG</h1>

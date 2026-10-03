@@ -31,6 +31,19 @@ Section Instructions:
 *   **Areas for Improvement:** Identify areas that can be improved for future performance.
 -->
 
+<style>
+  @media print {
+    @page {
+      size: A4 landscape;
+      margin: 1.5cm 1cm;
+    }
+    table {
+      width: 100%;
+      font-size: 9pt;
+    }
+  }
+</style>
+
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
 <h2 dir="ltr" align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 dir="ltr" align="center">LESSONS LEARNED SUMMARY</h1>
