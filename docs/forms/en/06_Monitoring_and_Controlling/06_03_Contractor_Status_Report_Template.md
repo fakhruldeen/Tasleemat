@@ -148,7 +148,7 @@ Section Instructions:
 | **Procurement / Contract Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
-<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> CONTRACTOR STATUS REPORT | <strong>Ref:</strong> PMO-06.03 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

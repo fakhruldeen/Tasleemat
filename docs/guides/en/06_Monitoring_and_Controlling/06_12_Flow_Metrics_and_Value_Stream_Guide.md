@@ -26,7 +26,7 @@ title: Flow Metrics and Value Stream Dashboard
 nav_order: 12
 ---
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Flow Metrics and Value Stream Dashboard

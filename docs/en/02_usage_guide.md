@@ -255,6 +255,6 @@ Every template concludes with an **Approval and Sign-off Table** tailored to the
 
 ---
 
-<div align="center">
+<div align="center" markdown="1">
   <sub>For terminology translations and full index, consult <a href="../LEXICON.md"><b>../LEXICON.md</b></a>.</sub>
 </div>

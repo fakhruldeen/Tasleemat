@@ -26,7 +26,7 @@ title: Team Psychological Safety and Wellbeing Index
 nav_order: 6
 ---
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Team Psychological Safety and Wellbeing Index

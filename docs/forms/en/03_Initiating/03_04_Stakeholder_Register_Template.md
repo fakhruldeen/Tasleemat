@@ -69,7 +69,7 @@ Please populate the table below with the following details:
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
-<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> Stakeholder Register | <strong>Ref:</strong> PMO-03.04 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

@@ -3,7 +3,7 @@
   <a class="lang-switch-btn" href="../en/02_usage_guide.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
 </div>
 
-<div dir="rtl" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;">
+<div dir="rtl" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;" markdown="1">
 
 <p align="center">
   <img src="docs/img/logo-ar.png" alt="شعار حزمة أدوات تسليمات لإدارة المشاريع" width="280">
@@ -231,7 +231,7 @@ print(master_df.head())
 
 ---
 
-<div align="center">
+<div align="center" markdown="1">
   <sub>للاطلاع على الترجمات المعتمدة والفهرس الشامل، راجع <a href="../LEXICON.md"><b>../LEXICON.md</b></a>.</sub>
 </div>
 

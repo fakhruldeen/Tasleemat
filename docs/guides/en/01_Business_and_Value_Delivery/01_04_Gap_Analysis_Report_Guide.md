@@ -26,7 +26,7 @@ title: Gap Analysis Report
 nav_order: 4
 ---
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Gap Analysis Report

@@ -65,7 +65,7 @@
 - **الفئة:** فئة، وهو ما يفيد في المشاريع الكبيرة حيث تكون قائمة التراكم أكبر من أن تُعرض في منظور واحد. وينبغي أن تعكس الفئات تسلسل العمل الفعللي، لا التقسيم الحالي للفريق.
 -->
 
-<div dir="rtl">
+<div dir="rtl" markdown="1">
 
 <h3 dir="rtl" align="right">{{اسم_الشركة}}</h3>
 <h2 dir="rtl" align="right">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
@@ -101,7 +101,7 @@
 | **قائد فريق التطوير** | {{اسم_قائد_فريق_التطوير}} | _______________________ | [.... -.... -.... ] |
 ---
 
-<div dir="rtl" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="rtl" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
  <strong>القالب:</strong> قائمة تراكم المنتج | <strong>المرجع:</strong> PMO-04.02.08 <br>
  <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

@@ -100,7 +100,7 @@ Assumptions and Constraints:
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 ---
 
-<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> PROJECT ROADMAP | <strong>Ref:</strong> PMO-04.01.03 <br>
   <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

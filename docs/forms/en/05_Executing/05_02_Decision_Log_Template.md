@@ -51,7 +51,7 @@ Section-by-Section Instructions:
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
-<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> DECISION LOG | <strong>Ref:</strong> PMO-05.02 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

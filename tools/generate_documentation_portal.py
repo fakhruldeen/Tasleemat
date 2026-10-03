@@ -111,7 +111,7 @@ TIER_MAP = {
 }
 
 def sanitize_content_links(content, current_doc_path, deliverable):
-    """Sanitize all relative markdown links with balanced parentheses support."""
+    """Sanitize all relative markdown links and ensure HTML block elements have markdown="1"."""
     pat = r'\[(?:[^\]]*)\]\(((?:[^()]+|\([^()]*\))+)\)'
 
     def replacer(match):
@@ -151,7 +151,17 @@ def sanitize_content_links(content, current_doc_path, deliverable):
 
         return f"[{text}]({url})"
 
-    return re.sub(pat, replacer, content)
+    content = re.sub(pat, replacer, content)
+
+    # Enable Markdown parsing inside HTML <div> tags for md_in_html extension
+    def add_markdown_attr(m):
+        tag_attrs = m.group(1)
+        if "markdown=" in tag_attrs:
+            return m.group(0)
+        return f'<div {tag_attrs} markdown="1">'
+
+    content = re.sub(r'<div\s+([^>]+)>', add_markdown_attr, content)
+    return content
 
 def collect_deliverables():
     """Scan all 102 deliverable folders in forms/en and forms/ar and construct full mappings."""
@@ -922,6 +932,7 @@ def update_governance_manuals_lang_bars():
             en_content = en_f.read_text(encoding="utf-8")
             # Strip previous lang bar if present to avoid duplication
             en_content = re.sub(r'<div class="lang-switch-bar">.*?</div>\n*', '', en_content, flags=re.DOTALL)
+            en_content = re.sub(r'<div\s+([^>]+)>', lambda m: m.group(0) if "markdown=" in m.group(1) or "lang-switch" in m.group(1) else f'<div {m.group(1)} markdown="1">', en_content)
             bar_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
   <a class="lang-switch-btn" href="{rel_ar}">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
@@ -932,6 +943,7 @@ def update_governance_manuals_lang_bars():
 
             ar_content = ar_f.read_text(encoding="utf-8")
             ar_content = re.sub(r'<div class="lang-switch-bar".*?</div>\n*', '', ar_content, flags=re.DOTALL)
+            ar_content = re.sub(r'<div\s+([^>]+)>', lambda m: m.group(0) if "markdown=" in m.group(1) or "lang-switch" in m.group(1) else f'<div {m.group(1)} markdown="1">', ar_content)
             bar_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en}">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>

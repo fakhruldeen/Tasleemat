@@ -26,7 +26,7 @@ title: دراسة الجدوى
 nav_order: 1
 ---
 
-<div dir="rtl">
+<div dir="rtl" markdown="1">
 
 ## دليل نماذج تسليمات
 # المخرج: دراسة الجدوى

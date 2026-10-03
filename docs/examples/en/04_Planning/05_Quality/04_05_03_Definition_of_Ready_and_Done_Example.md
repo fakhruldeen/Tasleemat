@@ -56,7 +56,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 | **Development Team Lead** | Eng. Walid Al-Hammad (Development Lead) | [Electronically Signed] | 2026-03-18 |
 ---
 
-<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> DEFINITION OF READY AND DONE STANDARD | <strong>Ref:</strong> PMO-04.05.03 <br>
   <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

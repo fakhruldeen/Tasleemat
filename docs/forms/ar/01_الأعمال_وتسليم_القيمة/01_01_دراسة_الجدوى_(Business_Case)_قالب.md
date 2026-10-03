@@ -50,7 +50,7 @@
 *  **محفّز إعادة النظر:** الحدث الذي يعيد فتح الدراسة، مثل تغيّر كلفة المدخلات أو تحوّل جوهري في المنفعة. والدراسة التي لا محفّز لإعادة النظر لها وثيقة لا يمكن أن تكون خاطئة.
 -->
 
-<div dir="rtl">
+<div dir="rtl" markdown="1">
 
 <h3 dir="rtl" align="left">{{اسم_الشركة}}</h3>
 <h2 dir="rtl" align="left">{{اسم_المبادرة}} - {{معرف_المقترح}}</h2>
@@ -120,7 +120,7 @@
 | **راعي المشروع** | {{اسم_راعي_المشروع}} | _______________________ | [.... -.... -.... ] |
 ---
 
-<div dir="rtl" align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="rtl" align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
  <strong>النموذج:</strong> دراسة الجدوى | <strong>المرجع:</strong> PMO-01.01 <br>
  <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

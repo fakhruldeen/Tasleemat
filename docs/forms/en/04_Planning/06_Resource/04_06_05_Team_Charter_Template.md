@@ -89,7 +89,7 @@ Section Instructions:
 | **Team Representative** | {{Team_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
-<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> TEAM CHARTER | <strong>Ref:</strong> PMO-04.06.05 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

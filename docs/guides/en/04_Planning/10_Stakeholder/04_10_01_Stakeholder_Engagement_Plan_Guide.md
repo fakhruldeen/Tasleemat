@@ -26,7 +26,7 @@ title: Stakeholder Engagement Plan
 nav_order: 1
 ---
 
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Stakeholder Engagement Plan

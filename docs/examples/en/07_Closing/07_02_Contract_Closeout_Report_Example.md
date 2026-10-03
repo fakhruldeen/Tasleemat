@@ -144,7 +144,7 @@ the project closeout report. -->
 | **Finance Controller / Legal Counsel** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 ---
 
-<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> CONTRACT CLOSEOUT REPORT | <strong>Ref:</strong> PMO-07.02 <br>
   <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

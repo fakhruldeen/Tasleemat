@@ -326,7 +326,7 @@ Risk and assumption rows:
 | **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 ---
 
-<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
   <strong>Template:</strong> Program Charter | <strong>Ref:</strong> PMO-00.02 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

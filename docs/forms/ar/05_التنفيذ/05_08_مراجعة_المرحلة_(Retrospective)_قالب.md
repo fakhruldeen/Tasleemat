@@ -59,7 +59,7 @@
 - **النتيجة:** ما حدث عند تطبيقه، ويُملأ في المراجعة التالية. وبلون هذا العمود يكرر الفريق الإجراءات نفسها وتصبح المراجعة طقسًا لا حلقة تغذية راجعة.
 -->
 
-<div dir="rtl">
+<div dir="rtl" markdown="1">
 
 <h3 dir="rtl" align="right">{{اسم_الشركة}}</h3>
 <h2 dir="rtl" align="right">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
@@ -124,7 +124,7 @@
 | **ممثل فريق العمل** | {{اسم_ممثل_الفريق}} | _______________________ | [.... -.... -.... ] |
 ---
 
-<div dir="rtl" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+<div dir="rtl" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
  <strong>القالب:</strong> مراجعة المرحلة | <strong>المرجع:</strong> PMO-05.08 <br>
  <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

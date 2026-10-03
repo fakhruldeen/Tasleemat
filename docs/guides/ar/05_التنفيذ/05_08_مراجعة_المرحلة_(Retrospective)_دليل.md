@@ -26,7 +26,7 @@ title: مراجعة المرحلة
 nav_order: 1
 ---
 
-<div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">
+<div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
 
 ## دليل نماذج تسليمات
 # أثر المشروع: مراجعة المرحلة
