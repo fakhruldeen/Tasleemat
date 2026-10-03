@@ -117,18 +117,29 @@ flowchart LR
 7. **[06. Monitoring and Controlling](forms/en/06_Monitoring_and_Controlling/)** (`PMO-06.01` – `PMO-06.12`): Status reports, variance analysis, Earned Value Analysis (EVA), UAT sign-offs, project health check matrices, and Lean flow metrics dashboards.
 8. **[07. Closing](forms/en/07_Closing/)** (`PMO-07.01` – `PMO-07.05`): Lessons learned summaries, contract closeouts, project closeouts, operational handover checklists, and post-implementation reviews (PIR).
 
-*For the complete index of all 102 forms with English/Arabic names and direct links, see **[`LEXICON.md`](LEXICON.md)**.*
+*For the complete index of all 102 forms with English/Arabic names and direct links, see **[`docs/LEXICON.md`](docs/LEXICON.md)**.*
 
 ---
 
-## ⚡ Quick Start: 3 Ways to Use Tasleemat
+## ⚡ Quick Start: 4 Ways to Use Tasleemat
 
-### 1. Manual Project Management Workflow
+### 1. Interactive CLI Project Scaffolder *(Fastest)*
+Initialize a complete project workspace tailored to your project size in under 2 seconds:
+```bash
+# Scaffold a new project (interactive wizard or flags)
+python3 tools/tasleemat_cli.py init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
+
+# Search forms by keyword in Arabic or English
+python3 tools/tasleemat_cli.py search "Risk" --lang en
+python3 tools/tasleemat_cli.py search "ميثاق" --lang ar
+```
+
+### 2. Manual Project Management Workflow
 1. Navigate to the desired phase folder (e.g., [`forms/en/03_Initiating/01_Project_Charter/`](forms/en/03_Initiating/01_Project_Charter/)).
 2. Open `03_01_Project_Charter_Guide.md` to review best practices and required inputs.
-3. Copy `03_01_Project_Charter_Template.md` into your editor (VS Code, Obsidian, Notion, or Confluence) or export directly to PDF.
+3. Copy `03_01_Project_Charter_Template.md` into your editor (VS Code, Obsidian, Notion, or Confluence) or export directly to PDF using `python3 tools/export_deliverables.py`.
 
-### 2. AI-Powered Generation Workflow (ChatGPT, Claude, Gemini)
+### 3. AI-Powered Generation Workflow (ChatGPT, Claude, Gemini)
 Generate complete, compliant PMO documents in seconds:
 1. Open [`forms/en/parameters.md`](forms/en/parameters.md) (or [`forms/ar/parameters.md`](forms/ar/parameters.md)) and enter your project parameters (Title, Sponsor, Budget, Scope boundaries).
 2. Open the prompt file `*.md` of the desired artifact (e.g., `04_08_02_Risk_Register.md`).
@@ -140,8 +151,8 @@ Generate complete, compliant PMO documents in seconds:
    ```
 4. Receive a perfectly structured, publication-ready project document!
 
-### 3. Programmatic & Data Engineering Workflow
-- Ingest [`LEXICON.json`](LEXICON.json) or individual `*.json` / `*.csv` files directly into Python (`pandas`), PowerBI, or internal web dashboards to track deliverable completion across enterprise portfolios.
+### 4. Programmatic & Data Engineering Workflow
+- Ingest [`docs/LEXICON.json`](docs/LEXICON.json) or individual `*.json` / `*.csv` files directly into Python (`pandas`), PowerBI, or internal web dashboards to track deliverable completion across enterprise portfolios.
 
 ---
 

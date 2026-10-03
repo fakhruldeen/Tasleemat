@@ -69,6 +69,7 @@ nav:
     - 09. Agile & Hybrid Integration: docs/en/09_agile_hybrid_integration.md
     - 10. FAQ & Troubleshooting: docs/en/10_faq_and_troubleshooting.md
     - 11. Tools & Automation: docs/en/11_tools_and_automation.md
+    - 12. Open Knowledge Framework (OKF): docs/en/12_open_knowledge_framework.md
   - 📚 المكتبة التوثيقية (AR):
     - 01. دليل البدء السريع: docs/ar/01_getting_started.md
     - 02. دليل الممارس الشامل: docs/ar/02_usage_guide.md
@@ -81,3 +82,4 @@ nav:
     - 09. دليل المنهجيات الرشيقة والهجينة: docs/ar/09_agile_hybrid_integration.md
     - 10. الأسئلة الشائعة وحل المشكلات: docs/ar/10_faq_and_troubleshooting.md
     - 11. دليل الأدوات والأتمتة: docs/ar/11_tools_and_automation.md
+    - 12. معيار مؤسسة المعرفة المفتوحة (OKF): docs/ar/12_open_knowledge_framework.md

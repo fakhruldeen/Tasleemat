@@ -32,6 +32,10 @@ jobs:
         run: |
           python3 tools/parity.py forms/en forms/ar
 
+      - name: Run Open Knowledge Foundation (OKF) Frictionless Validation
+        run: |
+          python3 tools/validate_okf.py
+
       - name: Test Tasleemat CLI Scaffolder
         run: |
           python3 tools/tasleemat_cli.py list --lang en
