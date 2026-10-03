@@ -112,46 +112,57 @@ TIER_MAP = {
 
 def sanitize_content_links(content, current_doc_path, deliverable):
     """Sanitize all relative markdown links and ensure HTML block elements have markdown="1"."""
-    pat = r'\[(?:[^\]]*)\]\(((?:[^()]+|\([^()]*\))+)\)'
+    pat = re.compile(r'\[((?:[^\[\]]|\[[^\[\]]*\])*)\]\(((?:[^()]+|\([^()]*\))+)\)')
 
     def replacer(match):
-        full_match = match.group(0)
-        text_match = re.match(r'\[(.*)\]\(', full_match)
-        text = text_match.group(1) if text_match else "Link"
-        url = match.group(1).strip()
+        text = match.group(1)
+        url = match.group(2).strip()
 
         if url.startswith(("http://", "https://", "mailto:", "#")):
             return f"[{text}]({url})"
 
         clean_url = url.strip("<>").split('#')[0].split('?')[0].strip()
+        is_ar = "/ar/" in str(current_doc_path) or "_قالب" in str(current_doc_path) or "_دليل" in str(current_doc_path) or "_مثال" in str(current_doc_path)
 
         # 1. Example links
         if "_Example.md" in clean_url or "_مثال.md" in clean_url:
-            lang_is_ar = "_مثال.md" in clean_url or "examples/ar/" in clean_url or "/ar/" in str(current_doc_path)
-            target = deliverable["doc_ex_ar"] if lang_is_ar else deliverable["doc_ex_en"]
+            target = deliverable["doc_ex_ar"] if is_ar else deliverable["doc_ex_en"]
             return f"[{text}]({os.path.relpath(target, current_doc_path.parent)})"
 
         # 2. Template links
         if "_Template.md" in clean_url or "_قالب.md" in clean_url:
-            lang_is_ar = "_قالب.md" in clean_url or "forms/ar/" in clean_url or "/ar/" in str(current_doc_path)
-            target = deliverable["doc_tpl_ar"] if lang_is_ar else deliverable["doc_tpl_en"]
+            target = deliverable["doc_tpl_ar"] if is_ar else deliverable["doc_tpl_en"]
             return f"[{text}]({os.path.relpath(target, current_doc_path.parent)})"
 
         # 3. Guide links
         if "_Guide.md" in clean_url or "_دليل.md" in clean_url:
-            lang_is_ar = "_دليل.md" in clean_url or "guides/ar/" in clean_url or "/ar/" in str(current_doc_path)
-            target = deliverable["doc_guide_ar"] if lang_is_ar else deliverable["doc_guide_en"]
+            target = deliverable["doc_guide_ar"] if is_ar else deliverable["doc_guide_en"]
             return f"[{text}]({os.path.relpath(target, current_doc_path.parent)})"
 
-        # 4. Sibling prompts, CSV, JSON schemas
-        if clean_url.endswith((".json", ".csv", ".md")):
-            target = (current_doc_path.parent / clean_url).resolve()
-            if not target.exists():
-                return f"**{text}**"
+        # 4. Sibling JSON Schema -> Link to GitHub Repository blob
+        if clean_url.endswith(".json"):
+            target_json = deliverable["json_ar"] if is_ar else deliverable["json_en"]
+            if target_json and target_json.exists():
+                gh_url = f"https://github.com/fakhruldeen/Tasleemat/blob/main/{target_json.relative_to(ROOT).as_posix()}"
+                return f"[{text}]({gh_url})"
+
+        # 5. Sibling CSV Data -> Link to GitHub Repository blob
+        if clean_url.endswith(".csv"):
+            target_csv = deliverable["csv_ar"] if is_ar else deliverable["csv_en"]
+            if target_csv and target_csv.exists():
+                gh_url = f"https://github.com/fakhruldeen/Tasleemat/blob/main/{target_csv.relative_to(ROOT).as_posix()}"
+                return f"[{text}]({gh_url})"
+
+        # 6. Sibling AI Prompt (e.g. 00_01_Portfolio_Roadmap.md) -> Link to GitHub Repository blob
+        if clean_url.endswith(".md"):
+            target_prompt = deliverable["prompt_ar"] if is_ar else deliverable["prompt_en"]
+            if target_prompt and target_prompt.exists():
+                gh_url = f"https://github.com/fakhruldeen/Tasleemat/blob/main/{target_prompt.relative_to(ROOT).as_posix()}"
+                return f"[{text}]({gh_url})"
 
         return f"[{text}]({url})"
 
-    content = re.sub(pat, replacer, content)
+    content = pat.sub(replacer, content)
 
     # Enable Markdown parsing inside HTML <div> tags for md_in_html extension
     def add_markdown_attr(m):
@@ -169,6 +180,7 @@ def collect_deliverables():
     ar_templates = sorted(list(FORMS_AR.rglob("*_قالب.md")))
 
     deliverables = []
+    gh_base = "https://github.com/fakhruldeen/Tasleemat/blob/main"
 
     for t_en in en_templates:
         folder_en = t_en.parent
@@ -228,6 +240,20 @@ def collect_deliverables():
         if "AI" in name_en or "02_02" in code_raw or "02_03" in code_raw or "02_04" in code_raw or "02_05" in code_raw or "02_06" in code_raw:
             tier_info = "Tier 4 (AI & Specialized)"
 
+        gh_tpl_en = f"{gh_base}/{t_en.relative_to(ROOT).as_posix()}"
+        gh_guide_en = f"{gh_base}/{guides_en[0].relative_to(ROOT).as_posix()}" if guides_en else ""
+        gh_ex_en = f"{gh_base}/{examples_en[0].relative_to(ROOT).as_posix()}" if examples_en else ""
+        gh_prompt_en = f"{gh_base}/{prompts_en[0].relative_to(ROOT).as_posix()}" if prompts_en else ""
+        gh_json_en = f"{gh_base}/{jsons_en[0].relative_to(ROOT).as_posix()}" if jsons_en else ""
+        gh_csv_en = f"{gh_base}/{csvs_en[0].relative_to(ROOT).as_posix()}" if csvs_en else ""
+
+        gh_tpl_ar = f"{gh_base}/{t_ar.relative_to(ROOT).as_posix()}" if t_ar else ""
+        gh_guide_ar = f"{gh_base}/{guides_ar[0].relative_to(ROOT).as_posix()}" if guides_ar else ""
+        gh_ex_ar = f"{gh_base}/{examples_ar[0].relative_to(ROOT).as_posix()}" if examples_ar else ""
+        gh_prompt_ar = f"{gh_base}/{prompts_ar[0].relative_to(ROOT).as_posix()}" if prompts_ar else ""
+        gh_json_ar = f"{gh_base}/{jsons_ar[0].relative_to(ROOT).as_posix()}" if jsons_ar else ""
+        gh_csv_ar = f"{gh_base}/{csvs_ar[0].relative_to(ROOT).as_posix()}" if csvs_ar else ""
+
         deliverables.append({
             "code": doc_id,
             "code_raw": code_raw,
@@ -257,6 +283,18 @@ def collect_deliverables():
             "doc_tpl_ar": doc_tpl_ar,
             "doc_guide_ar": doc_guide_ar,
             "doc_ex_ar": doc_ex_ar,
+            "gh_tpl_en": gh_tpl_en,
+            "gh_guide_en": gh_guide_en,
+            "gh_ex_en": gh_ex_en,
+            "gh_prompt_en": gh_prompt_en,
+            "gh_json_en": gh_json_en,
+            "gh_csv_en": gh_csv_en,
+            "gh_tpl_ar": gh_tpl_ar,
+            "gh_guide_ar": gh_guide_ar,
+            "gh_ex_ar": gh_ex_ar,
+            "gh_prompt_ar": gh_prompt_ar,
+            "gh_json_ar": gh_json_ar,
+            "gh_csv_ar": gh_csv_ar,
         })
 
     return deliverables
@@ -306,7 +344,10 @@ def build_portal():
         content_tpl_en = sanitize_content_links(d["tpl_en"].read_text(encoding="utf-8"), d["doc_tpl_en"], d)
         nav_header_tpl_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_from_tpl}">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="{d['gh_tpl_en']}" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_from_tpl}">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -319,6 +360,7 @@ def build_portal():
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="{rel_guide_from_tpl}">📖 Authoring Guide</a>
     <a class="nav-pill" href="{rel_ex_from_tpl}">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="{d['gh_tpl_en']}" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="{rel_ar_from_tpl}">🇸🇦 النسخة العربية</a>
   </div>
 </div>
@@ -332,7 +374,10 @@ def build_portal():
         content_guide_en = sanitize_content_links(d["guide_en"].read_text(encoding="utf-8"), d["doc_guide_en"], d)
         nav_header_guide_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_from_guide}">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="{d['gh_guide_en']}" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_from_guide}">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -345,6 +390,7 @@ def build_portal():
     <a class="nav-pill" href="{rel_tpl_from_guide}">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="{rel_ex_from_guide}">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="{d['gh_guide_en']}" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="{rel_ar_from_guide}">🇸🇦 النسخة العربية</a>
   </div>
 </div>
@@ -358,7 +404,10 @@ def build_portal():
         content_ex_en = sanitize_content_links(d["ex_en"].read_text(encoding="utf-8"), d["doc_ex_en"], d)
         nav_header_ex_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_from_ex}">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="{d['gh_ex_en']}" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_from_ex}">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -371,6 +420,7 @@ def build_portal():
     <a class="nav-pill" href="{rel_tpl_from_ex}">📋 Blank Template</a>
     <a class="nav-pill" href="{rel_guide_from_ex}">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="{d['gh_ex_en']}" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="{rel_ar_from_ex}">🇸🇦 النسخة العربية</a>
   </div>
 </div>
@@ -384,7 +434,10 @@ def build_portal():
         content_tpl_ar = sanitize_content_links(d["tpl_ar"].read_text(encoding="utf-8"), d["doc_tpl_ar"], d)
         nav_header_tpl_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_from_tpl_ar}">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="{d['gh_tpl_ar']}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_from_tpl_ar}">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -397,6 +450,7 @@ def build_portal():
     <a class="nav-pill active" href="#">📋 القالب الفارغ</a>
     <a class="nav-pill" href="{rel_guide_from_tpl_ar}">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="{rel_ex_from_tpl_ar}">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="{d['gh_tpl_ar']}" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
     <a class="nav-pill lang-pill" href="{rel_en_from_tpl_ar}">🇬🇧 English Version</a>
   </div>
 </div>
@@ -410,7 +464,10 @@ def build_portal():
         content_guide_ar = sanitize_content_links(d["guide_ar"].read_text(encoding="utf-8"), d["doc_guide_ar"], d)
         nav_header_guide_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_from_guide_ar}">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="{d['gh_guide_ar']}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_from_guide_ar}">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -423,6 +480,7 @@ def build_portal():
     <a class="nav-pill" href="{rel_tpl_from_guide_ar}">📋 القالب الفارغ</a>
     <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="{rel_ex_from_guide_ar}">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="{d['gh_guide_ar']}" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
     <a class="nav-pill lang-pill" href="{rel_en_from_guide_ar}">🇬🇧 English Version</a>
   </div>
 </div>
@@ -436,7 +494,10 @@ def build_portal():
         content_ex_ar = sanitize_content_links(d["ex_ar"].read_text(encoding="utf-8"), d["doc_ex_ar"], d)
         nav_header_ex_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_from_ex_ar}">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="{d['gh_ex_ar']}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_from_ex_ar}">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -449,6 +510,7 @@ def build_portal():
     <a class="nav-pill" href="{rel_tpl_from_ex_ar}">📋 القالب الفارغ</a>
     <a class="nav-pill" href="{rel_guide_from_ex_ar}">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill active" href="#">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="{d['gh_ex_ar']}" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
     <a class="nav-pill lang-pill" href="{rel_en_from_ex_ar}">🇬🇧 English Version</a>
   </div>
 </div>
@@ -476,10 +538,13 @@ def build_portal():
     # 6. Update Master Governance Manuals with Language Switch Bar
     update_governance_manuals_lang_bars()
 
-    # 7. Audit and repair all internal markdown links across all docs/ files
+    # 7. Update Lexicon with top GitHub bar
+    update_lexicon_bar()
+
+    # 8. Audit and repair all internal markdown links across all docs/ files
     fix_all_internal_links(deliverables)
 
-    # 8. Update mkdocs.yml navigation
+    # 9. Update mkdocs.yml navigation
     update_mkdocs_config(deliverables)
 
     print("Documentation portal successfully generated!")
@@ -499,6 +564,7 @@ def build_landing_pages():
     <a href="catalog/en/index.html" class="btn-primary">🚀 Explore Master Catalog</a>
     <a href="forms/en/index.html" class="btn-secondary">📋 Browse Templates</a>
     <a href="en/01_getting_started.html" class="btn-secondary">📚 Governance Manuals</a>
+    <a href="https://github.com/fakhruldeen/Tasleemat" class="btn-secondary" target="_blank" rel="noopener noreferrer">🐙 GitHub Repository ↗</a>
     <a href="README_AR.html" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
   </div>
   <div class="stat-grid">
@@ -718,6 +784,7 @@ flowchart TD
     <a href="catalog/ar/index.html" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
     <a href="forms/ar/index.html" class="btn-secondary">📋 تصفح القوالب القياسية</a>
     <a href="ar/01_getting_started.html" class="btn-secondary">📚 الأدلة والسياسات</a>
+    <a href="https://github.com/fakhruldeen/Tasleemat" class="btn-secondary" target="_blank" rel="noopener noreferrer">🐙 مستودع GitHub ↗</a>
     <a href="index.html" class="btn-lang">🇬🇧 Switch to English Portal</a>
   </div>
   <div class="stat-grid">
@@ -941,7 +1008,10 @@ def update_governance_manuals_lang_bars():
             en_content = re.sub(r'<div\s+([^>]+)>', lambda m: m.group(0) if "markdown=" in m.group(1) or "lang-switch" in m.group(1) else f'<div {m.group(1)} markdown="1">', en_content)
             bar_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
-  <a class="lang-switch-btn" href="{rel_ar}">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/{en_f.name}" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar}">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
 </div>
 
 """
@@ -952,11 +1022,31 @@ def update_governance_manuals_lang_bars():
             ar_content = re.sub(r'<div\s+([^>]+)>', lambda m: m.group(0) if "markdown=" in m.group(1) or "lang-switch" in m.group(1) else f'<div {m.group(1)} markdown="1">', ar_content)
             bar_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en}">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/{ar_f.name}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en}">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 """
             ar_f.write_text(bar_ar + ar_content.lstrip(), encoding="utf-8")
+
+def update_lexicon_bar():
+    """Ensure docs/LEXICON.md has a top language switch and GitHub repo bar."""
+    lex_file = DOCS_DIR / "LEXICON.md"
+    if not lex_file.exists():
+        return
+    content = lex_file.read_text(encoding="utf-8")
+    content = re.sub(r'<div class="lang-switch-bar".*?</div>\n*', '', content, flags=re.DOTALL)
+    bar = """<div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Bilingual Resource:</strong> Master Lexicon & Deliverables Catalog | المعجم الموحد للمصطلحات</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/LEXICON.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+  </div>
+</div>
+
+"""
+    lex_file.write_text(bar + content.lstrip(), encoding="utf-8")
 
 def fix_all_internal_links(deliverables):
     """Audit and automatically resolve all relative markdown links across docs/ to guarantee zero 404s."""
@@ -1035,7 +1125,10 @@ def build_master_catalogs(deliverables):
 
     catalog_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Master Catalog</span>
-  <a class="lang-switch-btn" href="{rel_ar_catalog}">🇸🇦 الانتقال للفهرس العام بالعربية (Arabic Catalog) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/docs/catalog/en" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_catalog}">🇸🇦 الانتقال للفهرس العام بالعربية (Arabic Catalog) →</a>
+  </div>
 </div>
 
 # 📑 Master Deliverables & Artifacts Catalog
@@ -1161,7 +1254,10 @@ def build_master_catalogs(deliverables):
 
     catalog_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الفهرس العام باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_catalog}">🇬🇧 Switch to English Catalog (الفهرس الإنجليزي) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/docs/catalog/ar" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_catalog}">🇬🇧 Switch to English Catalog (الفهرس الإنجليزي) ←</a>
+  </div>
 </div>
 
 # 📑 الفهرس العام والمستكشف التفاعلي للمخرجات والنماذج
@@ -1288,7 +1384,10 @@ def build_section_indexes(deliverables):
     rel_ar_tpl_idx = os.path.relpath(DOCS_DIR / "forms/ar/index.md", target_tpl_en.parent).replace(".md", ".html")
     tpl_idx_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_tpl_idx}">🇸🇦 الانتقال لفهرس القوالب بالعربية (Arabic Templates) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_tpl_idx}">🇸🇦 الانتقال لفهرس القوالب بالعربية (Arabic Templates) →</a>
+  </div>
 </div>
 
 # 📋 Tasleemat Templates Library (English)
@@ -1319,7 +1418,10 @@ def build_section_indexes(deliverables):
     rel_en_tpl_idx = os.path.relpath(DOCS_DIR / "forms/en/index.md", target_tpl_ar.parent).replace(".md", ".html")
     tpl_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_tpl_idx}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_tpl_idx}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
+  </div>
 </div>
 
 # 📋 مكتبة قوالب ونماذج تسليمات (بالعربية)
@@ -1350,7 +1452,10 @@ def build_section_indexes(deliverables):
     rel_ar_g_idx = os.path.relpath(DOCS_DIR / "guides/ar/index.md", target_g_en.parent).replace(".md", ".html")
     guides_idx_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_g_idx}">🇸🇦 الانتقال لأدلة النماذج بالعربية (Arabic Guides) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_g_idx}">🇸🇦 الانتقال لأدلة النماذج بالعربية (Arabic Guides) →</a>
+  </div>
 </div>
 
 # 📖 Deliverable Authoring & Governance Guides (English)
@@ -1380,7 +1485,10 @@ def build_section_indexes(deliverables):
     rel_en_g_idx = os.path.relpath(DOCS_DIR / "guides/en/index.md", target_g_ar.parent).replace(".md", ".html")
     guides_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_g_idx}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_g_idx}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
+  </div>
 </div>
 
 # 📖 أدلة إعداد وتعبئة النماذج (بالعربية)
@@ -1410,7 +1518,10 @@ def build_section_indexes(deliverables):
     rel_ar_ex_idx = os.path.relpath(DOCS_DIR / "examples/ar/index.md", target_ex_en.parent).replace(".md", ".html")
     ex_idx_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_ex_idx}">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/en" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_ex_idx}">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples) →</a>
+  </div>
 </div>
 
 # 💡 Reference Examples & Case Studies Showcase (English)
@@ -1440,7 +1551,10 @@ def build_section_indexes(deliverables):
     rel_en_ex_idx = os.path.relpath(DOCS_DIR / "examples/en/index.md", target_ex_ar.parent).replace(".md", ".html")
     ex_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_ex_idx}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/ar" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_ex_idx}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
+  </div>
 </div>
 
 # 💡 معرض الأمثلة الواقعية ودراسات الحالة (بالعربية)
@@ -1480,7 +1594,10 @@ def build_phase_indexes(deliverables):
         rel_ar_phase_tpl = os.path.relpath(DOCS_DIR / "forms" / "ar" / phase_dir_ar / "index.md", target_t_en.parent).replace(".md", ".html")
         idx_content_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_phase_tpl}">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/{phase_dir_en}" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_phase_tpl}">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
+  </div>
 </div>
 
 # {p_info['icon']} {p_info['en_title']} (Templates)
@@ -1506,7 +1623,10 @@ def build_phase_indexes(deliverables):
         rel_en_phase_tpl = os.path.relpath(DOCS_DIR / "forms" / "en" / phase_dir_en / "index.md", target_t_ar.parent).replace(".md", ".html")
         idx_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_phase_tpl}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar/{phase_dir_ar}" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_phase_tpl}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
+  </div>
 </div>
 
 # {p_info['icon']} {p_info['ar_title']} (القوالب)
@@ -1532,7 +1652,10 @@ def build_phase_indexes(deliverables):
         rel_ar_phase_g = os.path.relpath(DOCS_DIR / "guides" / "ar" / phase_dir_ar / "index.md", target_g_en.parent).replace(".md", ".html")
         g_content_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_phase_g}">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/{phase_dir_en}" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_phase_g}">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
+  </div>
 </div>
 
 # {p_info['icon']} {p_info['en_title']} (Authoring Guides)
@@ -1558,7 +1681,10 @@ def build_phase_indexes(deliverables):
         rel_en_phase_g = os.path.relpath(DOCS_DIR / "guides" / "en" / phase_dir_en / "index.md", target_g_ar.parent).replace(".md", ".html")
         g_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_phase_g}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar/{phase_dir_ar}" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_phase_g}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
+  </div>
 </div>
 
 # {p_info['icon']} {p_info['ar_title']} (الأدلة الإرشادية)
@@ -1584,7 +1710,10 @@ def build_phase_indexes(deliverables):
         rel_ar_phase_e = os.path.relpath(DOCS_DIR / "examples" / "ar" / phase_dir_ar / "index.md", target_e_en.parent).replace(".md", ".html")
         e_content_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="{rel_ar_phase_e}">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/en/{phase_dir_en}" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="{rel_ar_phase_e}">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
+  </div>
 </div>
 
 # {p_info['icon']} {p_info['en_title']} (Reference Examples)
@@ -1610,7 +1739,10 @@ def build_phase_indexes(deliverables):
         rel_en_phase_e = os.path.relpath(DOCS_DIR / "examples" / "en" / phase_dir_en / "index.md", target_e_ar.parent).replace(".md", ".html")
         e_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="{rel_en_phase_e}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/ar/{phase_dir_ar}" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
+    <a class="lang-switch-btn" href="{rel_en_phase_e}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
+  </div>
 </div>
 
 # {p_info['icon']} {p_info['ar_title']} (الأمثلة الواقعية)
@@ -1946,6 +2078,18 @@ def generate_tasleemat_data_js(deliverables):
             "url_guide_ar": rel_guide_ar,
             "url_ex_en": rel_ex_en,
             "url_ex_ar": rel_ex_ar,
+            "gh_tpl_en": d.get("gh_tpl_en", ""),
+            "gh_tpl_ar": d.get("gh_tpl_ar", ""),
+            "gh_guide_en": d.get("gh_guide_en", ""),
+            "gh_guide_ar": d.get("gh_guide_ar", ""),
+            "gh_ex_en": d.get("gh_ex_en", ""),
+            "gh_ex_ar": d.get("gh_ex_ar", ""),
+            "gh_prompt_en": d.get("gh_prompt_en", ""),
+            "gh_prompt_ar": d.get("gh_prompt_ar", ""),
+            "gh_json_en": d.get("gh_json_en", ""),
+            "gh_json_ar": d.get("gh_json_ar", ""),
+            "gh_csv_en": d.get("gh_csv_en", ""),
+            "gh_csv_ar": d.get("gh_csv_ar", ""),
         })
 
     out_file = DOCS_DIR / "assets" / "tasleemat_data.js"

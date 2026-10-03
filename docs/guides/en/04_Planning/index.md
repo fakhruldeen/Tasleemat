@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.html">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/04_Planning" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.html">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
+  </div>
 </div>
 
 # 📐 04. Planning (Authoring Guides)

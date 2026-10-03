@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/01_الأعمال_وتسليم_القيمة/index.html">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/01_Business_and_Value_Delivery" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="../../ar/01_الأعمال_وتسليم_القيمة/index.html">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
+  </div>
 </div>
 
 # 💎 01. Business & Value Delivery (Templates)

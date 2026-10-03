@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary_Guide.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/07_Closing/07_01_Lessons_Learned_Summary_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary_Guide.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
@@ -162,9 +166,9 @@ context (ensure `parameters.md` is referenced for global project variables):
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](../../../forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.md)
-* **🤖 LLM Generation Prompt**
-* **📊 Data Structure (JSON)**
-* **📈 Tabular Data (CSV)**
+* [🤖 LLM Generation Prompt](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary.md)
+* [📊 Data Structure (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary.json)
+* [📈 Tabular Data (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary.csv)
 
 ---
 

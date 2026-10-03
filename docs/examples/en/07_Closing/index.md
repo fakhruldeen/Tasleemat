@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/index.html">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/en/07_Closing" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="../../ar/07_الإغلاق/index.html">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
+  </div>
 </div>
 
 # 🏁 07. Closing (Reference Examples)

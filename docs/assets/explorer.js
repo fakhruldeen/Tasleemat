@@ -212,10 +212,11 @@
             <button class="modal-tab-btn" data-tab="schema">📊 ${isArabic ? 'مخطط البيانات (JSON/CSV)' : 'Data Schema'}</button>
           </div>
 
-          <!-- Modal Action Bar (Copy / Download) -->
+          <!-- Modal Action Bar (Copy / Download / GitHub) -->
           <div class="modal-action-bar">
             <button id="modal-copy-btn" class="modal-act-btn">📋 ${isArabic ? 'نسخ المحتوى' : 'Copy Content'}</button>
             <button id="modal-download-btn" class="modal-act-btn">⬇️ ${isArabic ? 'تحميل الملف' : 'Download File'}</button>
+            <a id="modal-github-btn" class="modal-act-btn modal-gh-btn" href="#" target="_blank" rel="noopener noreferrer">🐙 ${isArabic ? 'عرض على GitHub' : 'View on GitHub'} ↗</a>
             <span id="modal-toast" class="modal-toast-msg" style="display: none;">✓ ${isArabic ? 'تم النسخ إلى الحافظة بنجاح!' : 'Copied to clipboard!'}</span>
           </div>
 
@@ -238,6 +239,7 @@
     const modalLangBtn = document.getElementById("modal-lang-toggle");
     const modalCopyBtn = document.getElementById("modal-copy-btn");
     const modalDownloadBtn = document.getElementById("modal-download-btn");
+    const modalGithubBtn = document.getElementById("modal-github-btn");
     const modalToast = document.getElementById("modal-toast");
     const modalTabBtns = document.querySelectorAll(".modal-tab-btn");
     const modalBody = document.getElementById("modal-content-body");
@@ -367,6 +369,22 @@
       }
 
       modalBody.setAttribute("dir", isAr ? "rtl" : "ltr");
+
+      // Update GitHub Source URL
+      let ghUrl = "";
+      if (activeTab === "template") ghUrl = isAr ? activeDeliverable.gh_tpl_ar : activeDeliverable.gh_tpl_en;
+      else if (activeTab === "guide") ghUrl = isAr ? activeDeliverable.gh_guide_ar : activeDeliverable.gh_guide_en;
+      else if (activeTab === "example") ghUrl = isAr ? activeDeliverable.gh_ex_ar : activeDeliverable.gh_ex_en;
+      else if (activeTab === "prompt") ghUrl = isAr ? activeDeliverable.gh_prompt_ar : activeDeliverable.gh_prompt_en;
+      else if (activeTab === "schema") ghUrl = isAr ? activeDeliverable.gh_json_ar : activeDeliverable.gh_json_en;
+
+      if (ghUrl) {
+        modalGithubBtn.href = ghUrl;
+        modalGithubBtn.style.display = "inline-flex";
+      } else {
+        modalGithubBtn.style.display = "none";
+      }
+      modalGithubBtn.innerHTML = `🐙 ${isAr ? 'عرض على GitHub' : 'View on GitHub'} ↗`;
     }
 
     // Search Box Listener

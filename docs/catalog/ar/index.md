@@ -1,6 +1,9 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الفهرس العام باللغة العربية</span>
-  <a class="lang-switch-btn" href="../en/index.html">🇬🇧 Switch to English Catalog (الفهرس الإنجليزي) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/docs/catalog/ar" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/index.html">🇬🇧 Switch to English Catalog (الفهرس الإنجليزي) ←</a>
+  </div>
 </div>
 
 # 📑 الفهرس العام والمستكشف التفاعلي للمخرجات والنماذج

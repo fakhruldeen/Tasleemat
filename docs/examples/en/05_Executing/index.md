@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/index.html">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/en/05_Executing" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="lang-switch-btn" href="../../ar/05_التنفيذ/index.html">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
+  </div>
 </div>
 
 # ⚡ 05. Executing (Reference Examples)

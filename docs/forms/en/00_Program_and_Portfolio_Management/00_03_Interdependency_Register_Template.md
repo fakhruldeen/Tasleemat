@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/00_Program_and_Portfolio_Management/03_Interdependency_Register/00_03_Interdependency_Register_Template.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/00_Program_and_Portfolio_Management/03_Interdependency_Register/00_03_Interdependency_Register_Template.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_قالب.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>

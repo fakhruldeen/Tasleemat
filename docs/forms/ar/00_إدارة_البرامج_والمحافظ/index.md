@@ -1,6 +1,9 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../en/00_Program_and_Portfolio_Management/index.html">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar/00_إدارة_البرامج_والمحافظ" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/00_Program_and_Portfolio_Management/index.html">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
+  </div>
 </div>
 
 # 🏛️ 00. إدارة البرامج والمحافظ (القوالب)

@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/00_01_Portfolio_Roadmap_Guide.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../forms/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/00_01_Portfolio_Roadmap_Guide.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
@@ -167,9 +171,9 @@ context (ensure `parameters.md` is referenced for global project variables):
 
 ### 📥 Associated Templates
 * [📄 Printable Template (Markdown)](../../../forms/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Template.md)
-* **🤖 LLM Generation Prompt**
-* **📊 Data Structure (JSON)**
-* **📈 Tabular Data (CSV)**
+* [🤖 LLM Generation Prompt](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/00_01_Portfolio_Roadmap.md)
+* [📊 Data Structure (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/00_01_Portfolio_Roadmap.json)
+* [📈 Tabular Data (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/00_01_Portfolio_Roadmap.csv)
 
 ---
 

@@ -1,6 +1,9 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../en/05_Executing/05_09_Prompt_Library_Log_Template.html">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/05_Executing/05_09_Prompt_Library_Log_Template.html">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -13,6 +16,7 @@
     <a class="nav-pill active" href="#">📋 القالب الفارغ</a>
     <a class="nav-pill" href="../../../guides/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_دليل.html">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="../../../examples/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
     <a class="nav-pill lang-pill" href="../../en/05_Executing/05_09_Prompt_Library_Log_Template.html">🇬🇧 English Version</a>
   </div>
 </div>

@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/04_Planning/02_Scope/02_Requirements_Management_Plan/04_02_02_Requirements_Management_Plan_Guide.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../../forms/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/04_Planning/02_Scope/02_Requirements_Management_Plan/04_02_02_Requirements_Management_Plan_Guide.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>

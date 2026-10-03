@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/07_Closing/02_Contract_Closeout_Report/07_02_Contract_Closeout_Report_Example.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../forms/en/07_Closing/07_02_Contract_Closeout_Report_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/07_Closing/07_02_Contract_Closeout_Report_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/07_Closing/02_Contract_Closeout_Report/07_02_Contract_Closeout_Report_Example.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>

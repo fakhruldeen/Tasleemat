@@ -1,6 +1,9 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
-  <a class="lang-switch-btn" href="../en/01_getting_started.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/01_getting_started.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/01_getting_started.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <p align="center">

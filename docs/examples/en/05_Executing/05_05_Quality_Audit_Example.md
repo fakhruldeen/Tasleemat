@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_05_تدقيق_الجودة_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/05_Executing/05_Quality_Audit/05_05_Quality_Audit_Example.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_05_تدقيق_الجودة_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../forms/en/05_Executing/05_05_Quality_Audit_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/05_Executing/05_05_Quality_Audit_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/05_Executing/05_Quality_Audit/05_05_Quality_Audit_Example.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_05_تدقيق_الجودة_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>

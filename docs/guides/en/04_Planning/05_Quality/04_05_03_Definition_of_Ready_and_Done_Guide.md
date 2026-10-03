@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done_Guide.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../../ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../../forms/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done_Guide.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
@@ -97,9 +101,9 @@ project variables):
 
 ### Associated Templates
 * [📄 Printable Template (Markdown)](../../../../forms/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Template.md)
-* **🤖 Smart Generation Prompt**
-* **📊 Data Structure (JSON)**
-* **📈 Tabular Data (CSV)**
+* [🤖 Smart Generation Prompt](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done.md)
+* [📊 Data Structure (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done.json)
+* [📈 Tabular Data (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done.csv)
 
 ---
 

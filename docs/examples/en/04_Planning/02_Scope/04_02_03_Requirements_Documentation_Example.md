@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/04_Planning/02_Scope/03_Requirements_Documentation/04_02_03_Requirements_Documentation_Example.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../../forms/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../../guides/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/04_Planning/02_Scope/03_Requirements_Documentation/04_02_03_Requirements_Documentation_Example.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>

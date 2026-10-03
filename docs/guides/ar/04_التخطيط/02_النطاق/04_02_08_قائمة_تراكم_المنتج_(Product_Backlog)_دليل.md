@@ -1,6 +1,9 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../../en/04_Planning/02_Scope/04_02_08_Product_Backlog_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../../en/04_Planning/02_Scope/04_02_08_Product_Backlog_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../../forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب الفارغ</a>
     <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="../../../../examples/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
     <a class="nav-pill lang-pill" href="../../../en/04_Planning/02_Scope/04_02_08_Product_Backlog_Guide.html">🇬🇧 English Version</a>
   </div>
 </div>
@@ -112,9 +116,9 @@ nav_order: 1
 
 ### المحاذاة والترابط المؤسسي
 * [📄 القالب القابل للطباعة (Markdown)](../../../../forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.md)
-* **🤖 تعليمات النموذج الذكي (LLM)**
-* **📊 هيكل البيانات (JSON)**
-* **📈 البيانات المجدولة (CSV)**
+* [🤖 تعليمات النموذج الذكي (LLM)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog).md)
+* [📊 هيكل البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog).json)
+* [📈 البيانات المجدولة (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog).csv)
 
 ---
 

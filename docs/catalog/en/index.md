@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Master Catalog</span>
-  <a class="lang-switch-btn" href="../ar/index.html">🇸🇦 الانتقال للفهرس العام بالعربية (Arabic Catalog) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/docs/catalog/en" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/index.html">🇸🇦 الانتقال للفهرس العام بالعربية (Arabic Catalog) →</a>
+  </div>
 </div>
 
 # 📑 Master Deliverables & Artifacts Catalog

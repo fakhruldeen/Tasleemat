@@ -1,6 +1,9 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../../en/04_Planning/02_Scope/04_02_08_Product_Backlog_Example.html">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../../en/04_Planning/02_Scope/04_02_08_Product_Backlog_Example.html">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../../forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب الفارغ</a>
     <a class="nav-pill" href="../../../../guides/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.html">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill active" href="#">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
     <a class="nav-pill lang-pill" href="../../../en/04_Planning/02_Scope/04_02_08_Product_Backlog_Example.html">🇬🇧 English Version</a>
   </div>
 </div>

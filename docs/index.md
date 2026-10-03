@@ -10,6 +10,7 @@
     <a href="catalog/en/index.html" class="btn-primary">🚀 Explore Master Catalog</a>
     <a href="forms/en/index.html" class="btn-secondary">📋 Browse Templates</a>
     <a href="en/01_getting_started.html" class="btn-secondary">📚 Governance Manuals</a>
+    <a href="https://github.com/fakhruldeen/Tasleemat" class="btn-secondary" target="_blank" rel="noopener noreferrer">🐙 GitHub Repository ↗</a>
     <a href="README_AR.html" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
   </div>
   <div class="stat-grid">

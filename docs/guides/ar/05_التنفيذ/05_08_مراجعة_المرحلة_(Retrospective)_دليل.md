@@ -1,6 +1,9 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../en/05_Executing/05_08_Retrospective_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective)_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/05_Executing/05_08_Retrospective_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../forms/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.html">📋 القالب الفارغ</a>
     <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="../../../examples/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective)_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
     <a class="nav-pill lang-pill" href="../../en/05_Executing/05_08_Retrospective_Guide.html">🇬🇧 English Version</a>
   </div>
 </div>
@@ -113,9 +117,9 @@ nav_order: 1
 
 ### المحاذاة والترابط المؤسسي
 * [📄 القالب القابل للطباعة (Markdown)](../../../forms/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.md)
-* **🤖 تعليمات النموذج الذكي (LLM)**
-* **📊 هيكل البيانات (JSON)**
-* **📈 البيانات المجدولة (CSV)**
+* [🤖 تعليمات النموذج الذكي (LLM)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective).md)
+* [📊 هيكل البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective).json)
+* [📈 البيانات المجدولة (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective).csv)
 
 ---
 

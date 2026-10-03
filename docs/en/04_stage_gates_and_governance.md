@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
-  <a class="lang-switch-btn" href="../ar/04_stage_gates_and_governance.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/04_stage_gates_and_governance.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/04_stage_gates_and_governance.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
 </div>
 
 <p align="center">

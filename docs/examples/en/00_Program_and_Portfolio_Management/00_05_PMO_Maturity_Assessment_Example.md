@@ -1,6 +1,9 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment_Example.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  </div>
 </div>
 
 <div class="deliverable-header-card">
@@ -13,6 +16,7 @@
     <a class="nav-pill" href="../../../forms/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment_Example.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
     <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
