@@ -1,4 +1,4 @@
-# 06 06 Risk Audit (Reference Example)
+# Risk Audit (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-06.06`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,38 +15,28 @@
 ## 1. Audit Information
 
 | Field | Entry |
-| :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
 ## 2. Risk Event Audits
 
 | Risk Event | Cause | Response Implemented | Comment |
-| :--- | :--- | :--- | :--- |
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
 ## 3. Risk Response Audits
 
 | Risk Event | Response | Successful? | Actions to Improve |
-| :--- | :--- | :--- | :--- |
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-07-31 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-10-31 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-12-31 |
 
 ---
 
@@ -55,34 +45,18 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 ### 4.1 Process Compliance
 
 | Risk Management Process | Followed as Planned? | Observation |
-| :--- | :--- | :--- |
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ### 4.2 Tools and Techniques
 
 | Risk Management Process | Tools and Techniques Used | Successful? |
-| :--- | :--- | :--- |
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+| Approved and aligned with governance baseline | 2026-07-31 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2026-10-31 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2026-12-31 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2027-03-31 | Approved and aligned with governance baseline |
 
 ---
 
@@ -94,10 +68,9 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 6. Areas for Improvement
 
 | Area for Improvement | Improvement Plan | Follow-up Date / Corrective Action |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-04-01 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-01 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-08-15 |
 
 ---
 

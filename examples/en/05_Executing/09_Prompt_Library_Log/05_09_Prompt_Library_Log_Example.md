@@ -1,4 +1,4 @@
-# 05 09 Prompt Library Log (Reference Example)
+# Prompt Library Log (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.09`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,12 +15,9 @@
 ## Prompt Library
 
 | Prompt ID | Use Case | Prompt Text | Expected Output | Status/Version |
-| --- | --- | --- | --- | --- |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | In Progress |
+| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Completed |
+| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Planned |
 
 ---
 

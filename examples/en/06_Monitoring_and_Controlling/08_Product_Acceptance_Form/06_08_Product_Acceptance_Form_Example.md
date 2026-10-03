@@ -1,4 +1,4 @@
-# 06 08 Product Acceptance Form (Reference Example)
+# Product Acceptance Form (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-06.08`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -16,12 +16,10 @@
 
 
 | ID | Requirement | Acceptance Criteria | Validation Method | Verification Method | Status | Sign-off | Date |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 | Approved and aligned with governance baseline | In Progress | Approved and aligned with governance baseline | 2026-04-01 |
+| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 | Approved and aligned with governance baseline | Completed | Approved and aligned with governance baseline | 2026-06-01 |
+| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 | Approved and aligned with governance baseline | Planned | Approved and aligned with governance baseline | 2026-08-15 |
+| BEN-04 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | BEN-04 | Approved and aligned with governance baseline | Approved | Approved and aligned with governance baseline | 2026-10-01 |
 
 
 <!--

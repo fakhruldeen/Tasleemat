@@ -1,10 +1,10 @@
-# 00 06 OKR Alignment Matrix (Reference Example)
+# OKR Alignment Matrix (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-00.06`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Apex 2028 Strategic Vision - Sprint 14 (Q2-2026)</h2>
+<h2 dir="ltr" align="right">Apex 2028 Strategic Plan - Sprint 14 (Q2-2026)</h2>
 <h1 dir="ltr" align="center">OKR ALIGNMENT MATRIX</h1>
 
 | **Date Prepared:** 2026-03-15 | **Strategy Lead:** Dr. Tariq Al-Mansoor (Chief Strategy Officer) | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |

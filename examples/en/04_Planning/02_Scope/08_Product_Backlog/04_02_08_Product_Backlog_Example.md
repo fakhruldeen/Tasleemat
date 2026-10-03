@@ -1,4 +1,4 @@
-# 04 02 08 Product Backlog (Reference Example)
+# Product Backlog (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-04.02`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -16,17 +16,10 @@
 <!-- One row per requirement, feature, function, or user story. The backlog is developed at the start of the project and is updated throughout it, so a row that has not been revisited in months is worse than no row: it looks current and is not. Add or remove rows and columns as the project needs. -->
 
 | ID | Summary Description | Priority | Story | Status | Story Points | Target Sprint or Release | User Type | Category |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-07-31 | In Progress | 2026-07-31 | Approved and aligned with governance baseline | Technical & Integration | Technical & Integration |
+| REQ-02 | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-10-31 | Completed | 2026-10-31 | Approved and aligned with governance baseline | Operational & Functional | Operational & Functional |
+| ACT-03 | Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | 2026-12-31 | Planned | 2026-12-31 | Approved and aligned with governance baseline | Governance & Compliance | Governance & Compliance |
+| BEN-04 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2027-03-31 | Approved | 2027-03-31 | Approved and aligned with governance baseline | Cloud Infrastructure | Cloud Infrastructure |
 
 ---
 

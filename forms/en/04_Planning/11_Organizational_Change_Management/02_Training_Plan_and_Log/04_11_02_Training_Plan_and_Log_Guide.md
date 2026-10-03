@@ -27,7 +27,7 @@ Because systems and processes cannot function without competent operators. Organ
 ---
 
 ### 3. When?
-Formulated during the planning phase to schedule curriculum design and logistcs, executed during system testing and pre-release windows, and continuously updated as training sessions occur until 100% operational readiness is certified.
+Formulated during the planning phase to schedule curriculum design and logistics, executed during system testing and pre-release windows, and continuously updated as training sessions occur until 100% operational readiness is certified.
 
 ---
 

@@ -1,4 +1,4 @@
-# 05 10 Impediment Log (Reference Example)
+# Impediment Log (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.10`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,12 +15,9 @@
 ## Impediment Log
 
 | Impediment ID | Date Raised | Description | Impact | Owner | Status |
-| --- | --- | --- | --- | --- | --- |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | 2026-04-01 | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | In Progress |
+| REQ-02 | 2026-06-01 | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | Completed |
+| ACT-03 | 2026-08-15 | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | Planned |
 
 ---
 

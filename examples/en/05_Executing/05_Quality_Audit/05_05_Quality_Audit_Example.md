@@ -1,4 +1,4 @@
-# 05 05 Quality Audit (Reference Example)
+# Quality Audit (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.05`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -37,9 +37,9 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 4. Deficiencies or Defects
 
 | ID | Defect | Action | Responsible Party | Due Date |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-04-01 |
+| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-06-01 |
+| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-08-15 |
 
 ---
 

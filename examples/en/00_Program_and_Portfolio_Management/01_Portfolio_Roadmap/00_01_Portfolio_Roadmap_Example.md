@@ -1,4 +1,4 @@
-# 00 01 Portfolio Roadmap (Reference Example)
+# Portfolio Roadmap (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-00.01`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -21,17 +21,17 @@
  by a few initiatives cannot be read as a change of direction rather than as two
  views of the same portfolio. -->
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Portfolio Purpose and Scope:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Planning Period:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Roadmap Horizon:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Portfolio Owner:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Planning Cycle:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Roadmap Version and Status:** Fully documented and verified in accordance with enterprise governance baseline.
 
 ---
 
@@ -46,35 +46,21 @@ This section has been thoroughly defined and documented in accordance with the T
  or remove rows as needed. -->
 
 | ID | Initiative Name | Type | Strategic Objective | Start | End | Budget | Status |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Scope | 100% automation of procurement, supply chain, and billing cycles | Zero critical functional gaps at final delivery |
-| Schedule | Deliver all phases within 18 months of project charter approval | Zero unapproved slippage on critical path milestones |
-| Cost | Execute within pre-approved budget envelope of $3,500,000 USD | Cost Performance Index (CPI) maintained >= 1.00 |
-| Quality | Achieve >= 99.9% system uptime and sub-second transaction latency | User satisfaction CSAT score >= 90% in post-launch audit |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Unified Cloud ERP Core Architecture | Technical & Integration | Digital Transformation & Operational Agility | 2026-04-01 | 2026-07-31 | $950,000 USD | In Progress |
+| REQ-02 | Automated Procurement & Smart Supply Chain Engine | Operational & Functional | Process Automation & 40% Cycle Time Reduction | 2026-06-01 | 2026-10-31 | $1,150,000 USD | Completed |
+| ACT-03 | Executive Business Intelligence & Reporting Platform | Governance & Compliance | Real-time Data-Driven Executive Decision Making | 2026-08-15 | 2026-12-31 | $780,000 USD | Planned |
+| BEN-04 | Employee Self-Service & HR Capital Portal | Cloud Infrastructure | 100% Security & Regulatory Compliance Assurance | 2026-10-01 | 2027-03-31 | $520,000 USD | Approved |
 
 ---
 
 ## 3. Dependencies and Sequencing
-<!-- Where one initiative cannot proceed until another delivers, record it here
- with a typed dependency rather than in a free-text note, because a dependency
- recorded only in prose is a dependency nobody can query. Finish to Start is
- the common case; Start to Start and Finish to Finish arise where two
- initiatives must move together. State the impact of a late predecessor in
- money, schedule, or both, since a dependency with no stated impact is not
- actionable when the predecessor slips. -->
+
 
 | ID | Dependent Initiative | Dependency Type | Predecessor | Required By | Impact if Late |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Unified Cloud ERP Core Architecture | Finish-to-Start (FS) | INIT-01 (Cloud ERP Core) | 2026-07-31 | 2-week schedule slippage on integration testing window |
+| REQ-02 | Automated Procurement & Smart Supply Chain Engine | Start-to-Start (SS) | INIT-02 (Supply Chain) | 2026-10-31 | Rescheduling of operational pilot rollout date |
+| ACT-03 | Executive Business Intelligence & Reporting Platform | Finish-to-Finish (FF) | INIT-01 (Cloud Architecture) | 2026-12-31 | Minor reallocation of cloud professional services |
+| BEN-04 | Employee Self-Service & HR Capital Portal | Finish-to-Start (FS) | INIT-01 (Cloud ERP Core) | 2027-03-31 | 2-week schedule slippage on integration testing window |
 
 ---
 
@@ -88,12 +74,9 @@ This section has been thoroughly defined and documented in accordance with the T
  rows as needed. -->
 
 | Period | Planned Funding | Planned Capacity | Committed Load | Available | Notes |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| 2026-Q2 | $950,000 USD | 480 FTE Hours / mo | 420 FTE Hours / mo | 60 FTE Hours (Buffer) | Validated against enterprise ISO27001 cloud security standards. |
+| 2026-Q3 | $1,150,000 USD | 620 FTE Hours / mo | 580 FTE Hours / mo | 40 FTE Hours (Buffer) | Weekly steering coordination meetings on schedule. |
+| 2026-Q4 | $780,000 USD | 540 FTE Hours / mo | 490 FTE Hours / mo | 50 FTE Hours (Buffer) | Contingency reserve allocated for critical path dependencies. |
 
 ---
 
@@ -101,16 +84,9 @@ This section has been thoroughly defined and documented in accordance with the T
 
 
 | ID | Type | Description | Impact on Roadmap | Owner | Review Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-Assumptions and Constraints:
-* **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
-Assumptions and Constraints:
-* **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
+| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | 2026-04-01 |
+| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | 2026-06-01 |
+| ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | 2026-08-15 |
 
 ---
 
@@ -122,12 +98,9 @@ Assumptions and Constraints:
  nobody owns. Add or remove rows as needed. -->
 
 | Change ID | Description | Reason | Affected Initiatives | Approved By | Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| CR-2026-01 | Deploy hardened cloud environment and master databases | Security baseline compliance enhancement | Unified Cloud ERP Core Architecture | Elena Vance, PfMP | 2026-04-01 |
+| CR-2026-02 | Automate procurement requisition and inventory workflows | Operational scope extension for branch logistics | Automated Procurement & Smart Supply Chain Engine | Faisal Al-Harbi, PMP | 2026-06-01 |
+| CR-2026-03 | Build interactive executive dashboards and KPI reports | Alignment with quarterly fiscal cutover milestones | Executive Business Intelligence & Reporting Platform | Tariq Al-Mansoor, PfMP | 2026-08-15 |
 
 ---
 

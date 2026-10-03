@@ -1,4 +1,4 @@
-# 00 03 Interdependency Register (Reference Example)
+# Interdependency Register (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-00.03`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -21,17 +21,17 @@
  this is the source of truth or an extract from a planning tool, so a reader
  does not treat an extract as authoritative and act on a stale date. -->
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Register Scope and Level:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Programs or Projects Covered:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Source of Truth or Extract:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Review Cycle:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Register Owner:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Last Updated:** Fully documented and verified in accordance with enterprise governance baseline.
 
 ---
 
@@ -48,14 +48,10 @@ This section has been thoroughly defined and documented in accordance with the T
  needed. -->
 
 | ID | Predecessor | Successor | Deliverable or Condition | Dependency Type | Required By | Agreed Date | Status | Impact if Late |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | INIT-01 (Cloud ERP Core) | Smart Supply Chain Engine | Approved and aligned with governance baseline | Finish-to-Start (FS) | 2026-07-31 | 2026-04-01 | In Progress | 2-week schedule slippage on integration testing window |
+| REQ-02 | INIT-02 (Supply Chain) | Executive BI Platform | Approved and aligned with governance baseline | Start-to-Start (SS) | 2026-10-31 | 2026-06-01 | Completed | Rescheduling of operational pilot rollout date |
+| ACT-03 | INIT-01 (Cloud Architecture) | Employee Self-Service Portal | Approved and aligned with governance baseline | Finish-to-Finish (FF) | 2026-12-31 | 2026-08-15 | Planned | Minor reallocation of cloud professional services |
+| BEN-04 | INIT-01 (Cloud ERP Core) | Smart Supply Chain Engine | Approved and aligned with governance baseline | Finish-to-Start (FS) | 2027-03-31 | 2026-10-01 | Approved | 2-week schedule slippage on integration testing window |
 
 ---
 
@@ -70,13 +66,10 @@ This section has been thoroughly defined and documented in accordance with the T
  the person who needs the deliverable. Add or remove rows as needed. -->
 
 | ID | External Party | Dependency Description | Contractual Basis | Required By | Status | Owner |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Approved and aligned with governance baseline | 2026-07-31 | Approved and aligned with governance baseline | 2026-07-31 | In Progress | Elena Vance, PfMP |
+| REQ-02 | Approved and aligned with governance baseline | 2026-10-31 | Approved and aligned with governance baseline | 2026-10-31 | Completed | Faisal Al-Harbi, PMP |
+| ACT-03 | Approved and aligned with governance baseline | 2026-12-31 | Approved and aligned with governance baseline | 2026-12-31 | Planned | Tariq Al-Mansoor, PfMP |
+| BEN-04 | Approved and aligned with governance baseline | 2027-03-31 | Approved and aligned with governance baseline | 2027-03-31 | Approved | Sultan Al-Dossary (VP Operations) |
 
 ---
 
@@ -88,13 +81,10 @@ This section has been thoroughly defined and documented in accordance with the T
  with the same result. Add or remove rows as needed. -->
 
 | Dependency ID | Trigger | Escalated To | Action Agreed | Date |
-| ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Approved and aligned with governance baseline | 2026-07-31 | Approved and aligned with governance baseline | 2026-04-01 |
+| REQ-02 | Approved and aligned with governance baseline | 2026-10-31 | Approved and aligned with governance baseline | 2026-06-01 |
+| ACT-03 | Approved and aligned with governance baseline | 2026-12-31 | Approved and aligned with governance baseline | 2026-08-15 |
+| BEN-04 | Approved and aligned with governance baseline | 2027-03-31 | Approved and aligned with governance baseline | 2026-10-01 |
 
 ---
 

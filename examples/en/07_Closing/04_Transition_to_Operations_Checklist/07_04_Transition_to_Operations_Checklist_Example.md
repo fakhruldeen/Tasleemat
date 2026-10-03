@@ -1,4 +1,4 @@
-# 07 04 Transition to Operations Checklist (Reference Example)
+# Transition to Operations Checklist (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-07.04`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,12 +15,9 @@
 ## Operational Handover Items
 
 | Handover Item | Responsible Party | Acceptance Criteria | Handover Date | Sign-off Status |
-| --- | --- | --- | --- | --- |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Elena Vance, PfMP | Approved and aligned with governance baseline | 2026-04-01 | In Progress |
+| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline | 2026-06-01 | Completed |
+| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline | 2026-08-15 | Planned |
 
 ---
 

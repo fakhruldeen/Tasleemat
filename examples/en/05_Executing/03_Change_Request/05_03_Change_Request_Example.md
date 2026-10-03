@@ -1,4 +1,4 @@
-# 05 03 Change Request (Reference Example)
+# Change Request (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.03`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -26,7 +26,7 @@ This section has been thoroughly defined and documented in accordance with the T
 - [ ] Cost
 - [ ] Quality
 - [ ] Resource
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+- [ ] Other: Fully documented and verified in accordance with enterprise governance baseline.
 
 **Change Type:**
 - [ ] Mandatory (e.g., Legal / Compliance)
@@ -50,13 +50,10 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 4. Impacts of Change
 
 | Area | Impact Type | Impact Description |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Technical & Integration | 2-week schedule slippage on integration testing window |
+| Approved and aligned with governance baseline | Operational & Functional | Rescheduling of operational pilot rollout date |
+| Approved and aligned with governance baseline | Governance & Compliance | Minor reallocation of cloud professional services |
+| Approved and aligned with governance baseline | Cloud Infrastructure | 2-week schedule slippage on integration testing window |
 
 *Legend: [+] Increase, [-] Decrease, [M] Modify*
 

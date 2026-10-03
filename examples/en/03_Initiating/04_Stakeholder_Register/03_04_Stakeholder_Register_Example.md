@@ -1,4 +1,4 @@
-# 03 04 Stakeholder Register (Reference Example)
+# Stakeholder Register (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-03.04`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -24,12 +24,9 @@ Please populate the table below with the following details:
 - **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
 -->
 | ID | Name | Position/Role | Contact information | Requirements | Expectations | Classification |
-| --- | --- | --- | --- | --- | --- | --- |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration |
+| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional |
+| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance |
 
 
 ---

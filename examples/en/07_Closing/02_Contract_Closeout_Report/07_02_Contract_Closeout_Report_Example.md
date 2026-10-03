@@ -1,4 +1,4 @@
-# 07 02 Contract Closeout Report (Reference Example)
+# Contract Closeout Report (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-07.02`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -25,11 +25,10 @@ contract is also closed, but the performance record is interpreted differently.
 - **Closeout Status:** completed or terminated, and the date closure was initiated. -->
 
 | Field | Entry |
-| :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -37,12 +36,10 @@ This section has been thoroughly defined and documented in accordance with the T
 
 
 | Dimension | What Was Handled Well | Evidence or Example |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | BEN-04 |
 
 
 
@@ -52,12 +49,10 @@ This section has been thoroughly defined and documented in accordance with the T
 
 
 | Dimension | What Could Be Improved | Recommended Action |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-07-31 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-10-31 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-12-31 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2027-03-31 |
 
 <!--
 Comment guidance: State the deficiency, its effect, and what should be done instead.
@@ -69,10 +64,9 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 
 | Change ID | Change Description | Date Approved |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| CR-2026-01 | Deploy hardened cloud environment and master databases | 2026-04-01 |
+| CR-2026-02 | Automate procurement requisition and inventory workflows | 2026-06-01 |
+| CR-2026-03 | Build interactive executive dashboards and KPI reports | 2026-08-15 |
 
 
 
@@ -82,10 +76,9 @@ This section has been thoroughly defined and documented in accordance with the T
 
 
 | Dispute Description | Resolution | Date Resolved |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-04-01 |
+| Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-06-01 |
+| Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | 2026-08-15 |
 
 
 
@@ -95,10 +88,9 @@ This section has been thoroughly defined and documented in accordance with the T
 
 
 | Field | Entry |
-| :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 <!--
 Comment guidance: All disputes must be resolved, the result accepted, and final payment made before closure.

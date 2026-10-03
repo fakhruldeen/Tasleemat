@@ -1,4 +1,4 @@
-# 00 04 Resource Capacity Matrix (Reference Example)
+# Resource Capacity Matrix (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-00.04`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -22,17 +22,17 @@
  is the source of truth or an extract from a resourcing tool, so a reader does
  not treat a stale extract as current. -->
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Matrix Scope and Level:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Capacity Unit of Measure:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Periods Covered:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Source of Truth or Extract:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Matrix Owner:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Last Updated:** Fully documented and verified in accordance with enterprise governance baseline.
 
 ---
 
@@ -50,34 +50,10 @@ This section has been thoroughly defined and documented in accordance with the T
  remove rows as needed. -->
 
 | ID | Resource Role or Team | Period | Total Available | Allocated | Remaining | Constraints or Single Points of Failure | Notes |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+| INIT-01 | Approved and aligned with governance baseline | 2026-Q2 | 2026-07-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Approved and aligned with governance baseline | 2026-Q3 | 2026-10-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| ACT-03 | Approved and aligned with governance baseline | 2026-Q4 | 2026-12-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
+| BEN-04 | Approved and aligned with governance baseline | 2027-Q1 | 2027-03-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 
 ---
 
@@ -85,28 +61,10 @@ Preapproved Financial Resources & Budget Envelope:
 
 
 | ID | Resource Role | Period | Required Capacity | Source of Demand | Priority |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+| INIT-01 | Approved and aligned with governance baseline | 2026-Q2 | 480 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| REQ-02 | Approved and aligned with governance baseline | 2026-Q3 | 620 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| ACT-03 | Approved and aligned with governance baseline | 2026-Q4 | 540 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| BEN-04 | Approved and aligned with governance baseline | 2027-Q1 | 480 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -121,13 +79,10 @@ Preapproved Financial Resources & Budget Envelope:
  than leaving the row open. Add or remove rows as needed. -->
 
 | Resource Role | Gap | Period | Resolution Planned | Resolution Owner | Resolution Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-Q2 | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-04-01 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-Q3 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-06-01 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-Q4 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-08-15 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2027-Q1 | Approved and aligned with governance baseline | Sultan Al-Dossary (VP Operations) | 2026-10-01 |
 
 ---
 
@@ -135,12 +90,9 @@ This section has been thoroughly defined and documented in accordance with the T
 
 
 | Resource Role | Contingency Type | Contingency Amount | How It Would Be Used |
-| ---: | ---: | ---: | ---: |
-| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
-| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
-| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Technical & Integration | $950,000 USD | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Operational & Functional | $1,150,000 USD | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Governance & Compliance | $780,000 USD | Approved and aligned with governance baseline |
 
 ---
 

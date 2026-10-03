@@ -1,4 +1,4 @@
-# 04 06 02 Resource Requirements (Reference Example)
+# Resource Requirements (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-04.06`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -17,21 +17,21 @@
 **Activity Identifier and Role Required:**
 High-Level System & Business Requirements:
 * Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and GAAP/IFRS financial accounting standards.
+* Full compliance with national e-invoicing mandates and enterprise accounting standards.
 * System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
 * Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
 
 **Skill Competencies and Quantity Needed:**
 High-Level System & Business Requirements:
 * Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and GAAP/IFRS financial accounting standards.
+* Full compliance with national e-invoicing mandates and enterprise accounting standards.
 * System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
 * Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
 
 **Estimated Effort Hours and Allocation:**
 High-Level System & Business Requirements:
 * Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and GAAP/IFRS financial accounting standards.
+* Full compliance with national e-invoicing mandates and enterprise accounting standards.
 * System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
 * Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
 
@@ -42,14 +42,14 @@ High-Level System & Business Requirements:
 **Equipment, Machinery, and Tool Requirements:**
 High-Level System & Business Requirements:
 * Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and GAAP/IFRS financial accounting standards.
+* Full compliance with national e-invoicing mandates and enterprise accounting standards.
 * System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
 * Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
 
 **Materials, Supplies, and Facilities:**
 High-Level System & Business Requirements:
 * Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and GAAP/IFRS financial accounting standards.
+* Full compliance with national e-invoicing mandates and enterprise accounting standards.
 * System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
 * Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
 

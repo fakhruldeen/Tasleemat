@@ -1,4 +1,4 @@
-# 05 01 Issue Log (Reference Example)
+# Issue Log (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.01`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,9 +15,9 @@
 ## Issue Log Entries
 
 | ID | Type | Source of Issue | Issue Description | Priority | Impact on Objectives | Impacted Stakeholders | Responsible Party | Status | Resolution Date | Final Resolution | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Technical & Integration | Approved and aligned with governance baseline | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Digital Transformation & Operational Agility | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | In Progress | 2026-04-01 | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Approved and aligned with governance baseline | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | Process Automation & 40% Cycle Time Reduction | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | Completed | 2026-06-01 | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| ACT-03 | Governance & Compliance | Approved and aligned with governance baseline | Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | Real-time Data-Driven Executive Decision Making | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | Planned | 2026-08-15 | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
 
 ---
 

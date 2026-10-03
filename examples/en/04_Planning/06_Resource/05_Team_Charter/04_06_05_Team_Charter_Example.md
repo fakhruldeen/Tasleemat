@@ -1,4 +1,4 @@
-# 04 06 05 Team Charter (Reference Example)
+# Team Charter (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-04.06`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,10 +15,10 @@
 ## 1. Team Values and Shared Vision
 
 **Core Team Values:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
 
 **Shared Project Mission and Vision:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
 
 ---
 

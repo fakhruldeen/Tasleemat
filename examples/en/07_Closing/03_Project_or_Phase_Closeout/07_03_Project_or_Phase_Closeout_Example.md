@@ -1,4 +1,4 @@
-# 07 03 Project or Phase Closeout (Reference Example)
+# Project or Phase Closeout (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-07.03`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -64,9 +64,9 @@ This section has been thoroughly defined and documented in accordance with the T
 <!-- Scope and Quality as rows, against Objectives, Completion Criteria, and How Met as columns. The three columns answer three different questions, and each is easy to confuse with the other two: the objective is what was set, the completion criteria are the test that decides whether it was met, and How Met is the evidence that the test was passed. Write the criteria so that each can be answered yes or no, and give the source of the evidence rather than the conclusion. For Quality, cross-reference the product acceptance form instead of restating it. Add a row per additional area if the project needs one. -->
 
 | Area | Objectives | Completion Criteria | How Met |
-| :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Digital Transformation & Operational Agility | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Process Automation & 40% Cycle Time Reduction | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Real-time Data-Driven Executive Decision Making | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 <!-- Column guidance:
 - **Objectives:** What the project set out to achieve in this area, taken from the approved plan rather than restated from memory.
@@ -89,9 +89,9 @@ Row guidance:
 <!-- Time and Cost as rows, against Objectives, Final Outcome, Variance, and Comments as columns. Give the variance as a number, not a word, and say which way it went. Where the project finished early or under budget, explain why: an unexplained favourable variance hides a planning error just as a delay does, and a reader cannot repeat the favourable outcome if they cannot see what produced it. Use the Comments column for anything still open at closure. Add a row per additional measure if the project tracks one. -->
 
 | Measure | Objectives | Final Outcome | Variance | Comments |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Zero critical production defects at release | Digital Transformation & Operational Agility | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| Annual recurring operational savings >= $950K USD | Process Automation & 40% Cycle Time Reduction | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| Sub-second transaction response latency (< 800ms) | Real-time Data-Driven Executive Decision Making | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
 
 <!-- Column guidance:
 - **Objectives:** The approved baseline or plan figure.
@@ -117,15 +117,10 @@ Row guidance:
 <!-- One row per significant risk or issue. Identify each from the risk or issue register by reference rather than restating it, say what was done and whether it worked, and use the Comments column for anything still open. An unresolved item transferred without a named recipient has not actually been transferred, and is the one most often lost. Add or remove rows as needed. -->
 
 | Risk or Issue | Response and Resolution | Comments |
-| :--- | :--- | :--- |
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 
 <!--
 - **Risk or Issue:** The risk or issue, and where it came from. Give the reference from the risk or issue register rather than restating it.
@@ -139,10 +134,9 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 <!-- The information from the procurement closeout. Where procurement was not used, state that plainly in the first row rather than leaving the section blank, so a reader knows it was considered. Any claim or dispute not settled before closure is a liability being handed on, and belongs in the status column. -->
 
 | Item | Details | Status at Closure |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| 1 | Deploy hardened cloud environment and master databases | In Progress |
+| 2 | Automate procurement requisition and inventory workflows | Completed |
+| 3 | Build interactive executive dashboards and KPI reports | Planned |
 
 <!--
 - **Item:** What the row is about.

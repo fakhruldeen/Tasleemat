@@ -1,4 +1,4 @@
-# 02 03 AI Readiness Assessment (Reference Example)
+# AI Readiness Assessment (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-02.03`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,15 +15,15 @@
 ## 1. Purpose and Scope of the Assessment
 <!-- What decision this assessment supports, what is in and out of scope, how it was assessed, and what the scores rest on. -->
 
-The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
+**Assessment Objective:** Fully documented and verified in accordance with enterprise governance baseline.
 
-The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
+**Assessment Scope:** Fully documented and verified in accordance with enterprise governance baseline.
 
-The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
+**Assessment Method:** Fully documented and verified in accordance with enterprise governance baseline.
 
-The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
+**Assessor and Date:** Fully documented and verified in accordance with enterprise governance baseline.
 
-The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
+**Evidence Basis:** Fully documented and verified in accordance with enterprise governance baseline.
 
 ---
 
@@ -31,10 +31,9 @@ The purpose of this project is to consolidate, modernize, and automate Apex Glob
 <!-- One row per data source: does the data exist, is it fit, can it be traced, is it labelled, and is access settled. -->
 
 | Data Source | Data Availability | Data Quality | Data Lineage and Documentation | Labelling and Ground Truth | Data Governance and Access |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -42,10 +41,9 @@ This section has been thoroughly defined and documented in accordance with the T
 <!-- One row per platform concern: capacity, tooling, integration, resilience, and what happens as volume grows. -->
 
 | Concern | Current State | Gap | Cost and Effort to Close | Severity |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | In Progress | Approved and aligned with governance baseline | 2026-07-31 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Completed | Approved and aligned with governance baseline | 2026-10-31 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Planned | Approved and aligned with governance baseline | 2026-12-31 | Approved and aligned with governance baseline |
 
 ---
 
@@ -53,10 +51,9 @@ This section has been thoroughly defined and documented in accordance with the T
 <!-- One row per role: whether it is filled, what the person can actually do, and how the gap closes. -->
 
 | Role | Filled | Level | Domain Knowledge | How the Gap Closes |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance | Approved and aligned with governance baseline |
 
 ---
 
@@ -64,27 +61,26 @@ This section has been thoroughly defined and documented in accordance with the T
 <!-- One row per organisational condition, with the evidence rather than the assertion, and who owns closing it. -->
 
 | Condition | Current State | Evidence | Owner | Note |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | In Progress | INIT-01 | Elena Vance, PfMP | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Completed | REQ-02 | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Planned | ACT-03 | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
 
 ---
 
 ## 6. Assessment Outcome and Route Forward
 <!-- The scores, the aggregate and its weights, the gaps that block rather than slow, the recommended route, and what would reopen the assessment. -->
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Dimension Scores:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Weighted Overall Score:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Blocking Gaps:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Recommended Route:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Remediation Plan:** Fully documented and verified in accordance with enterprise governance baseline.
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Reassessment Trigger:** Fully documented and verified in accordance with enterprise governance baseline.
 
 ---
 

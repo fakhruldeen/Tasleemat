@@ -1,4 +1,4 @@
-# 06 03 Contractor Status Report (Reference Example)
+# Contractor Status Report (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-06.03`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,93 +15,83 @@
 ## 1. Reporting Information
 
 | Field | Entry |
-| :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
 ## 2. Performance This Reporting Period
 
 | Performance Dimension | Status This Period | Variance and Cause |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | 2026-Q2 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2026-Q3 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2026-Q4 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2027-Q1 | Approved and aligned with governance baseline |
 
 ---
 
 ## 3. Forecast Performance for Future Reporting Periods
 
 | Forecast Item | Estimate | Basis |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
 ## 4. Claims or Disputes
 
 | Reference | Description | Date Raised | Amount | Status |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Deploy hardened cloud environment and master databases | 2026-04-01 | $950,000 USD | In Progress |
+| Approved and aligned with governance baseline | Automate procurement requisition and inventory workflows | 2026-06-01 | $1,150,000 USD | Completed |
+| Approved and aligned with governance baseline | Build interactive executive dashboards and KPI reports | 2026-08-15 | $780,000 USD | Planned |
 
 ---
 
 ## 5. Risks
 
 | Risk ID and Description | Probability | Impact | Planned Response |
-| :--- | :--- | :--- | :--- |
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+| RSK-01 | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with governance baseline |
+| RSK-02 | Approved and aligned with governance baseline | Rescheduling of operational pilot rollout date | Approved and aligned with governance baseline |
+| RSK-03 | Approved and aligned with governance baseline | Minor reallocation of cloud professional services | Approved and aligned with governance baseline |
 
 ---
 
 ## 6. Planned Corrective or Preventive Action
 
 | Related Variance | Corrective or Preventive Action | Owner | Due Date |
-| :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-04-01 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-06-01 |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-08-15 |
 
 ---
 
 ## 7. Issues
 
 | Issue ID and Description | Category | Status | Impact |
-| :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Technical & Integration | In Progress | 2-week schedule slippage on integration testing window |
+| REQ-02 | Operational & Functional | Completed | Rescheduling of operational pilot rollout date |
+| ACT-03 | Governance & Compliance | Planned | Minor reallocation of cloud professional services |
 
 ---
 
 ## 8. Escalations
 
 | Item Requiring Escalation | Escalate To | Decision Required By |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | 2026-07-31 | 2026-07-31 |
+| Approved and aligned with governance baseline | 2026-10-31 | 2026-10-31 |
+| Approved and aligned with governance baseline | 2026-12-31 | 2026-12-31 |
 
 ---
 
 ## 9. Contract Change Requests
 
 | Change Request Reference | Description | Status |
-| :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Deploy hardened cloud environment and master databases | In Progress |
+| Approved and aligned with governance baseline | Automate procurement requisition and inventory workflows | Completed |
+| Approved and aligned with governance baseline | Build interactive executive dashboards and KPI reports | Planned |
 
 ---
 

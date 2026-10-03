@@ -1,4 +1,4 @@
-# 06 05 Earned Value Analysis (Reference Example)
+# Earned Value Analysis (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-06.05`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,44 +15,40 @@
 
 ## 1. Basic Earned Value Metrics
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+**Budget at Completion (BAC):** Fully documented and verified in accordance with enterprise governance baseline.
 
 | Metric | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
-| :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Zero critical production defects at release | 2026-Q2 | 2026-Q2 | 2026-Q2 |
+| Annual recurring operational savings >= $950K USD | 2026-Q3 | 2026-Q3 | 2026-Q3 |
+| Sub-second transaction response latency (< 800ms) | 2026-Q4 | 2026-Q4 | 2026-Q4 |
 
 ---
 
 ## 2. Variances and Indices
 
 | Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Zero critical production defects at release | Approved and aligned with governance baseline | 2026-Q2 | 2026-Q2 | 2026-Q2 |
+| Annual recurring operational savings >= $950K USD | Approved and aligned with governance baseline | 2026-Q3 | 2026-Q3 | 2026-Q3 |
+| Sub-second transaction response latency (< 800ms) | Approved and aligned with governance baseline | 2026-Q4 | 2026-Q4 | 2026-Q4 |
+| End-user CSAT score >= 90% in audit | Approved and aligned with governance baseline | 2027-Q1 | 2027-Q1 | 2027-Q1 |
 
 ---
 
 ## 3. Percentages
 
 | Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Zero critical production defects at release | Approved and aligned with governance baseline | 2026-Q2 | 2026-Q2 | 2026-Q2 |
+| Annual recurring operational savings >= $950K USD | Approved and aligned with governance baseline | 2026-Q3 | 2026-Q3 | 2026-Q3 |
+| Sub-second transaction response latency (< 800ms) | Approved and aligned with governance baseline | 2026-Q4 | 2026-Q4 | 2026-Q4 |
 
 ---
 
 ## 4. Forecasting (Estimates)
 
 | Metric | Calculation | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
-| :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Zero critical production defects at release | Approved and aligned with governance baseline | 2026-Q2 | 2026-Q2 | 2026-Q2 |
+| Annual recurring operational savings >= $950K USD | Approved and aligned with governance baseline | 2026-Q3 | 2026-Q3 | 2026-Q3 |
+| Sub-second transaction response latency (< 800ms) | Approved and aligned with governance baseline | 2026-Q4 | 2026-Q4 | 2026-Q4 |
 
 **Selected EAC - Justification and Explanation:**
 This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.

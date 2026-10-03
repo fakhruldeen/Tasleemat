@@ -1,4 +1,4 @@
-# 05 07 Lessons Learned Register (Reference Example)
+# Lessons Learned Register (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.07`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,9 +15,9 @@
 ## Lessons Learned Entries
 
 | ID | Category | Trigger | Lesson | Responsible Party | Identifier/Submitter | Next Implementation Opportunity & Date | Organizational Impact (Y/N) | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Technical & Integration | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | INIT-01 | 2026-04-01 | 2-week schedule slippage on integration testing window | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | REQ-02 | 2026-06-01 | Rescheduling of operational pilot rollout date | Weekly steering coordination meetings on schedule. |
+| ACT-03 | Governance & Compliance | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | ACT-03 | 2026-08-15 | Minor reallocation of cloud professional services | Contingency reserve allocated for critical path dependencies. |
 
 ---
 

@@ -1,4 +1,4 @@
-# 04 05 01 Quality Management Plan (Reference Example)
+# Quality Management Plan (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-04.05`). All company names, project references, and figures are realistic fictional simulations.
 
 ---

@@ -1,4 +1,4 @@
-# 03 03 Assumption Log (Reference Example)
+# Assumption Log (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-03.03`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -27,16 +27,9 @@ Please provide a comprehensive log of all assumptions and constraints for the pr
 - **Comments:** Any additional information, context, or updates.
 -->
 | ID | Type | Category | Description | Impact if invalid | Responsible party | Due date | Actions | Status | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-Assumptions and Constraints:
-* **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
-Assumptions and Constraints:
-* **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
-Assumptions and Constraints:
-* **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
+| INIT-01 | Technical & Integration | Technical & Integration | Deploy hardened cloud environment and master databases | INIT-01 | Elena Vance, PfMP | 2026-04-01 | Approved and aligned with governance baseline | In Progress | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Operational & Functional | Automate procurement requisition and inventory workflows | REQ-02 | Faisal Al-Harbi, PMP | 2026-06-01 | Approved and aligned with governance baseline | Completed | Weekly steering coordination meetings on schedule. |
+| ACT-03 | Governance & Compliance | Governance & Compliance | Build interactive executive dashboards and KPI reports | ACT-03 | Tariq Al-Mansoor, PfMP | 2026-08-15 | Approved and aligned with governance baseline | Planned | Contingency reserve allocated for critical path dependencies. |
 
 ---
 

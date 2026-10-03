@@ -1,4 +1,4 @@
-# 04 03 06 Duration Estimates (Reference Example)
+# Duration Estimates (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-04.03`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -33,12 +33,12 @@ This section has been thoroughly defined and documented in accordance with the T
 **Historical Data and Productivity Rates:**
 Assumptions and Constraints:
 * **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
+* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved budget limit of $3.5M USD; mandatory adherence to corporate data protection guidelines.
 
 **Key Estimating Assumptions:**
 Assumptions and Constraints:
 * **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
+* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved budget limit of $3.5M USD; mandatory adherence to corporate data protection guidelines.
 
 ---
 

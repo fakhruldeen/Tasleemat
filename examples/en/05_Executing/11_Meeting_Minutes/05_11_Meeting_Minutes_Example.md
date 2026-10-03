@@ -1,4 +1,4 @@
-# 05 11 Meeting Minutes (Reference Example)
+# Meeting Minutes (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.11`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -41,14 +41,9 @@ This section has been thoroughly defined and documented in accordance with the T
 ## Action Items
 
 | Action | Owner | Due Date | Status |
-| --- | --- | --- | --- |
-| 1 | Business Requirements Document & Solution Architecture Sign-off | 2026-04-15 | 100% sign-off from all executive stakeholders |
-| 2 | Cloud Infrastructure & Testing Sandbox Readiness | 2026-06-30 | Core security, IAM, and baseline integration verified |
-| 3 | Legacy Data Migration & Reconciliation Phase Complete | 2026-09-15 | 99.98% data reconciliation accuracy achieved |
-| 4 | User Acceptance Testing (UAT) Final Sign-off | 2026-11-20 | Zero Sev-1 and Sev-2 open defects |
-| 5 | Enterprise Production Go-Live & Hypercare Support | 2026-12-31 | System stabilized with sub-second API latency |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-04-01 | In Progress |
+| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-06-01 | Completed |
+| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-08-15 | Planned |
 
 ---
 

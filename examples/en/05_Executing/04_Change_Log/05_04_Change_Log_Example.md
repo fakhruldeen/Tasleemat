@@ -1,4 +1,4 @@
-# 05 04 Change Log (Reference Example)
+# Change Log (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-05.04`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,9 +15,9 @@
 ## Change Log Entries
 
 | ID | Category | Description | Requestor | Submission Date | Status | Disposition | Cost/Schedule Impact | Type (Mandatory/Discretionary) | Configurable Items Impacted |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2026-07-31 | 2026-04-01 | In Progress | Approved and aligned with governance baseline | $950,000 USD | Technical & Integration | 2-week schedule slippage on integration testing window |
+| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | 2026-10-31 | 2026-06-01 | Completed | Approved and aligned with governance baseline | $1,150,000 USD | Operational & Functional | Rescheduling of operational pilot rollout date |
+| ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | 2026-12-31 | 2026-08-15 | Planned | Approved and aligned with governance baseline | $780,000 USD | Governance & Compliance | Minor reallocation of cloud professional services |
 
 ---
 

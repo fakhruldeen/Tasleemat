@@ -1,4 +1,4 @@
-# 06 12 Flow Metrics and Value Stream (Reference Example)
+# Flow Metrics and Value Stream (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-06.12`). All company names, project references, and figures are realistic fictional simulations.
 
 ---

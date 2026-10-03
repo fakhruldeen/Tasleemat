@@ -1,4 +1,4 @@
-# 04 02 05 Project Scope Statement (Reference Example)
+# Project Scope Statement (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-04.02`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -37,7 +37,7 @@ The project encompasses the end-to-end implementation and rollout of a unified c
 **Core Product Deliverables:**
 Key Project Deliverables:
 * Detailed Solution Architecture & Data Integration Blueprint.
-* Fully provisioned, hardened cloud production environment meeting ISO27001/SOC2 standards.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
 * Validated historical master data migration package (99.98% reconciliation rate).
 * Comprehensive training curriculum delivered to 450+ business users and functional admins.
 * User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.
@@ -45,7 +45,7 @@ Key Project Deliverables:
 **Project Management and Governance Deliverables:**
 Key Project Deliverables:
 * Detailed Solution Architecture & Data Integration Blueprint.
-* Fully provisioned, hardened cloud production environment meeting ISO27001/SOC2 standards.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
 * Validated historical master data migration package (99.98% reconciliation rate).
 * Comprehensive training curriculum delivered to 450+ business users and functional admins.
 * User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.
@@ -91,12 +91,12 @@ Scope Boundaries & Exclusions:
 **Identified Project Constraints:**
 Assumptions and Constraints:
 * **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
+* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved budget limit of $3.5M USD; mandatory adherence to corporate data protection guidelines.
 
 **Identified Project Assumptions:**
 Assumptions and Constraints:
 * **Assumptions:** Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
-* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved CAPEX/OPEX budget limit of $3.5M USD; mandatory adherence to regional data privacy laws.
+* **Constraints:** Hard completion deadline prior to Q4 fiscal year close; pre-approved budget limit of $3.5M USD; mandatory adherence to corporate data protection guidelines.
 
 ---
 

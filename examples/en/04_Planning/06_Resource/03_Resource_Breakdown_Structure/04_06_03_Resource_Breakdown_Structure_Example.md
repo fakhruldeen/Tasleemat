@@ -1,4 +1,4 @@
-# 04 06 03 Resource Breakdown Structure (Reference Example)
+# Resource Breakdown Structure (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-04.06`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -16,134 +16,43 @@
 
 | RBS Code | Resource Node |
 | :--- | :--- |
-| 1 | [ Project Name ] |
+| 1 | Apex Enterprise Nexus ERP |
 | 1.1 | People |
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+| 1.1.1 | Solution Architects & Cloud Engineers |
+| 1.1.2 | Functional Analysts & QA Engineers |
 | 1.2 | Equipment |
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+| 1.2.1 | Cloud Integration & Build Clusters |
 | 1.3 | Materials |
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+| 1.3.1 | SaaS Enterprise Licenses & Database Engine |
 | 1.4 | Supplies |
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+| 1.4.1 | Cloud Storage & Compute Credits |
 | 1.5 | Locations |
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+| 1.5.1 | Primary Data Center & Virtual Staging VPC |
 
 ## 2. Resource Breakdown Structure (Hierarchical Chart)
 
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+**Chart Form:** Functional & Infrastructure Tree View
 
-**Node Labels:**
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+**Node Labels:** 5-tier classification covering Personnel, Compute, Licensing, Storage, and Environments.
 
 ```mermaid
 mindmap
   root((Project))
     People
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+      PlaceholderP1["Solution Architects & Engineers"]
+      PlaceholderP2["Business Analysts & QA Testers"]
     Equipment
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+      PlaceholderE1["Development & Test Build Clusters"]
+      PlaceholderE2["Network Gateways & Security Appliances"]
     Materials
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+      PlaceholderM1["Software & Database Licenses"]
+      PlaceholderM2["API Connectors & Integration Adapters"]
     Supplies
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+      PlaceholderS1["Object Storage Credits"]
+      PlaceholderS2["Compute Processing Capacity"]
     Locations
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+      PlaceholderL1["Primary Cloud Region"]
+      PlaceholderL2["Virtual Private Cloud (VPC)"]
 ```
 
 ### Sign-off and Approvals

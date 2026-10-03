@@ -1,4 +1,4 @@
-# 06 04 Variance Analysis (Reference Example)
+# Variance Analysis (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-06.04`). All company names, project references, and figures are realistic fictional simulations.
 
 ---
@@ -15,11 +15,10 @@
 ## 1. Variance Analysis Table
 
 | Category | Planned Result | Actual Result | Variance | Root Cause | Planned Response |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+| Technical & Integration | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Operational & Functional | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Governance & Compliance | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Cloud Infrastructure | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
