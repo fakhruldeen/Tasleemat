@@ -12,7 +12,7 @@
 
 <br/>
 
-**[🇸🇦 اقرأ بالعربية](README_AR.md)** • **[📖 Master Lexicon](LEXICON.md)** • **[🚪 Stage-Gates](STAGE_GATES.md)** • **[⚖️ Tailoring Profiles](TAILORING_PROFILES.md)** • **[🔗 Dependencies DAG](DOCUMENT_DEPENDENCIES.md)** • **[👥 RACI Matrix](RACI_AUTHORITY_MATRIX.md)** • **[🛠️ Usage Guide](USAGE_GUIDE.md)** • **[📂 English Forms](forms/en/)** • **[📂 Arabic Forms](forms/ar/)**
+**[🇸🇦 اقرأ بالعربية](README_AR.md)** • **[📖 Master Lexicon](LEXICON.md)** • **[📜 Policy Manual](PMO_POLICY_MANUAL.md)** • **[🚪 Stage-Gates](STAGE_GATES.md)** • **[⚖️ Tailoring Profiles](TAILORING_PROFILES.md)** • **[🔗 Dependencies DAG](DOCUMENT_DEPENDENCIES.md)** • **[👥 RACI Matrix](RACI_AUTHORITY_MATRIX.md)** • **[🛠️ Usage Guide](USAGE_GUIDE.md)** • **[📂 English Forms](forms/en/)** • **[📂 Arabic Forms](forms/ar/)**
 
 ---
 
