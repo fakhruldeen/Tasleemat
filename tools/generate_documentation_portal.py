@@ -461,7 +461,10 @@ def build_portal():
     # 2. Build Landing Pages (Hero Banners + Metric Stat Grids)
     build_landing_pages()
 
-    # 3. Build Master Catalogs with Interactive Explorer
+    # 3. Generate Client-Side Data JS for Interactive Explorer
+    generate_tasleemat_data_js(deliverables)
+
+    # 4. Build Master Catalogs with Interactive Explorer
     build_master_catalogs(deliverables)
 
     # 4. Build Section Index Pages
@@ -1864,6 +1867,7 @@ extra_css:
   - assets/custom.css
 
 extra_javascript:
+  - assets/tasleemat_data.js
   - assets/explorer.js
 
 plugins:
@@ -1889,6 +1893,66 @@ markdown_extensions:
     nav_yaml = yaml.dump({"nav": nav}, allow_unicode=True, sort_keys=False, default_flow_style=False)
     mkdocs_file.write_text(header_yaml.strip() + "\n\n" + nav_yaml + "\n", encoding="utf-8")
     print("mkdocs.yml navigation updated successfully.")
+
+def generate_tasleemat_data_js(deliverables):
+    """Generate docs/assets/tasleemat_data.js containing full client-side bundles for all 102 deliverables."""
+    data_list = []
+    for d in deliverables:
+        tpl_en = d["tpl_en"].read_text(encoding="utf-8") if d["tpl_en"] and d["tpl_en"].exists() else ""
+        tpl_ar = d["tpl_ar"].read_text(encoding="utf-8") if d["tpl_ar"] and d["tpl_ar"].exists() else ""
+        guide_en = d["guide_en"].read_text(encoding="utf-8") if d["guide_en"] and d["guide_en"].exists() else ""
+        guide_ar = d["guide_ar"].read_text(encoding="utf-8") if d["guide_ar"] and d["guide_ar"].exists() else ""
+        ex_en = d["ex_en"].read_text(encoding="utf-8") if d["ex_en"] and d["ex_en"].exists() else ""
+        ex_ar = d["ex_ar"].read_text(encoding="utf-8") if d["ex_ar"] and d["ex_ar"].exists() else ""
+        prompt_en = d["prompt_en"].read_text(encoding="utf-8") if d["prompt_en"] and d["prompt_en"].exists() else ""
+        prompt_ar = d["prompt_ar"].read_text(encoding="utf-8") if d["prompt_ar"] and d["prompt_ar"].exists() else ""
+        json_en = d["json_en"].read_text(encoding="utf-8") if d["json_en"] and d["json_en"].exists() else ""
+        json_ar = d["json_ar"].read_text(encoding="utf-8") if d["json_ar"] and d["json_ar"].exists() else ""
+        csv_en = d["csv_en"].read_text(encoding="utf-8") if d["csv_en"] and d["csv_en"].exists() else ""
+        csv_ar = d["csv_ar"].read_text(encoding="utf-8") if d["csv_ar"] and d["csv_ar"].exists() else ""
+
+        rel_tpl_en = os.path.relpath(d["doc_tpl_en"], DOCS_DIR).replace(".md", ".html")
+        rel_tpl_ar = os.path.relpath(d["doc_tpl_ar"], DOCS_DIR).replace(".md", ".html") if d["doc_tpl_ar"] else ""
+        rel_guide_en = os.path.relpath(d["doc_guide_en"], DOCS_DIR).replace(".md", ".html")
+        rel_guide_ar = os.path.relpath(d["doc_guide_ar"], DOCS_DIR).replace(".md", ".html") if d["doc_guide_ar"] else ""
+        rel_ex_en = os.path.relpath(d["doc_ex_en"], DOCS_DIR).replace(".md", ".html")
+        rel_ex_ar = os.path.relpath(d["doc_ex_ar"], DOCS_DIR).replace(".md", ".html") if d["doc_ex_ar"] else ""
+
+        data_list.append({
+            "code": d["code"],
+            "code_raw": d["code_raw"],
+            "phase": d["phase"],
+            "phase_name_en": PHASE_META[d["phase"]]["en_title"],
+            "phase_name_ar": PHASE_META[d["phase"]]["ar_title"],
+            "phase_icon": PHASE_META[d["phase"]]["icon"],
+            "tier": d["tier"],
+            "name_en": d["name_en"],
+            "name_ar": d["name_ar"],
+            "template_en": tpl_en,
+            "template_ar": tpl_ar,
+            "guide_en": guide_en,
+            "guide_ar": guide_ar,
+            "example_en": ex_en,
+            "example_ar": ex_ar,
+            "prompt_en": prompt_en,
+            "prompt_ar": prompt_ar,
+            "json_en": json_en,
+            "json_ar": json_ar,
+            "csv_en": csv_en,
+            "csv_ar": csv_ar,
+            "url_tpl_en": rel_tpl_en,
+            "url_tpl_ar": rel_tpl_ar,
+            "url_guide_en": rel_guide_en,
+            "url_guide_ar": rel_guide_ar,
+            "url_ex_en": rel_ex_en,
+            "url_ex_ar": rel_ex_ar,
+        })
+
+    out_file = DOCS_DIR / "assets" / "tasleemat_data.js"
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    json_str = json.dumps(data_list, ensure_ascii=False)
+    out_file.write_text(f"window.TASLEEMAT_DATA = {json_str};\n", encoding="utf-8")
+    print(f"Generated {out_file} with {len(data_list)} deliverables ({len(json_str)} bytes).")
 
 if __name__ == "__main__":
     build_portal()
