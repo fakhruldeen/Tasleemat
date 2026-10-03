@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.md">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">

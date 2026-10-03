@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="../en/02_usage_guide.md">🇬🇧 Switch to English Version (النسخة الإنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <a class="lang-switch-btn" href="../en/02_usage_guide.md">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
 </div>
 
 <div dir="rtl" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;">

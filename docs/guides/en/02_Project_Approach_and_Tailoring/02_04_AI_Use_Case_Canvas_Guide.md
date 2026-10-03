@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">

@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">

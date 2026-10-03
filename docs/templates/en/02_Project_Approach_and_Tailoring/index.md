@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
 </div>
 
 # ⚖️ 02. Project Approach & Tailoring (Templates)

@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="../../../en/04_Planning/03_Schedule/04_03_04_Milestone_List_Guide.md">🇬🇧 Switch to English Guide (النسخة الإنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="../../../en/04_Planning/03_Schedule/04_03_04_Milestone_List_Guide.md">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">

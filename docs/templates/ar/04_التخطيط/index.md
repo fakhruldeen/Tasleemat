@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="../../en/04_Planning/index.md">🇬🇧 Switch to English Templates (قوالب إنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="../../en/04_Planning/index.md">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
 </div>
 
 # 📐 04. التخطيط (القوالب)

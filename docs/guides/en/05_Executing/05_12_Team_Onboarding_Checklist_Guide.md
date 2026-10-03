@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">

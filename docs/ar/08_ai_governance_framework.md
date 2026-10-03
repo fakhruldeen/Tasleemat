@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="../en/08_ai_governance_framework.md">🇬🇧 Switch to English Version (النسخة الإنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <a class="lang-switch-btn" href="../en/08_ai_governance_framework.md">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
 </div>
 
 <p align="center">

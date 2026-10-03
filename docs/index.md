@@ -1,49 +1,40 @@
-<p align="center">
-  <img src="img/logo.png" alt="Tasleemat Logo" width="340" />
-</p>
-
-# 📚 Tasleemat PMO Operating System & Documentation Portal
-**Version:** 2.0  
-**Standard Alignment:** PMI PMBOK® 6th, 7th & 8th Editions • NIST AI RMF • SDAIA AI Ethics • ISO 21500  
-**Total Artifacts:** 102 Bilingual Deliverables • 204 Form Bundles • 204 Reference Examples • 24 Master Governance Manuals
-
----
-
-## ⚡ Quick Navigation Hub
-
-<div class="portal-card-grid">
-  <a class="portal-card" href="catalog/en/index.md">
-    <h4>📑 Master Deliverables Catalog</h4>
-    <p>Searchable matrix of all 102 project deliverables with direct links to Templates, Guides, and Examples.</p>
-  </a>
-
-  <a class="portal-card" href="templates/en/index.md">
-    <h4>📋 Standard Templates Library</h4>
-    <p>102 copy-ready, structured Markdown templates with Document Control tables and clear field schemas.</p>
-  </a>
-
-  <a class="portal-card" href="guides/en/index.md">
-    <h4>📖 Deliverable Authoring Guides</h4>
-    <p>102 step-by-step authoring manuals with RACI roles, inputs/outputs dependencies, and quality gates.</p>
-  </a>
-
-  <a class="portal-card" href="examples/en/index.md">
-    <h4>💡 Real-World Examples Showcase</h4>
-    <p>102 fully populated, realistic enterprise case study examples across all 8 lifecycle phases.</p>
-  </a>
-
-  <a class="portal-card" href="en/01_getting_started.md">
-    <h4>📚 Governance Manuals (12 Guides)</h4>
-    <p>Comprehensive PMO policy manuals, stage-gates, RACI matrix, AI governance, and agile integration.</p>
-  </a>
-
-  <a class="portal-card" href="LEXICON.md">
-    <h4>📖 Master Lexicon & Glossary</h4>
-    <p>Authoritative bilingual (English & Arabic) project management terminology and artifact dictionary.</p>
-  </a>
+<div class="hero-wrapper">
+  <div class="hero-tag">
+    <span class="pulse-dot"></span> Enterprise PMO Operating System 2.0 • PMI PMBOK® 6/7/8 & NIST AI RMF
+  </div>
+  <h1 class="hero-title">Tasleemat PMO Operating System</h1>
+  <p class="hero-subtitle">
+    The premier bilingual (English & Arabic) enterprise project management framework, delivery artifacts library, and AI governance suite with 100% mathematical symmetry, zero vendor lock-in, and automated validation.
+  </p>
+  <div class="hero-actions">
+    <a href="catalog/en/index.md" class="btn-primary">🚀 Explore Master Catalog</a>
+    <a href="templates/en/index.md" class="btn-secondary">📋 Browse Templates</a>
+    <a href="en/01_getting_started.md" class="btn-secondary">📚 Governance Manuals</a>
+    <a href="README_AR.md" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-number">102</div>
+      <div class="stat-label">Bilingual Deliverables</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">24</div>
+      <div class="stat-label">Governance Manuals</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">8</div>
+      <div class="stat-label">Lifecycle Phases</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">4</div>
+      <div class="stat-label">Project Sizing Tiers</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">OKF Validated</div>
+    </div>
+  </div>
 </div>
-
----
 
 ## 🧭 Project Lifecycle & Stage-Gates Architecture
 
@@ -79,16 +70,119 @@ flowchart TD
 
 ## 🏛️ Browse by Lifecycle Phase
 
-| Phase # | Lifecycle Phase Name | Deliverables Count | Direct Links |
-| :---: | :--- | :---: | :---: |
-| **00** | [**Program & Portfolio Management**](templates/en/00_Program_and_Portfolio_Management/index.md) | 6 Artifacts | [📋 Templates](templates/en/00_Program_and_Portfolio_Management/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
-| **01** | [**Business & Value Delivery**](templates/en/01_Business_and_Value_Delivery/index.md) | 4 Artifacts | [📋 Templates](templates/en/01_Business_and_Value_Delivery/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
-| **02** | [**Project Approach & Tailoring**](templates/en/02_Project_Approach_and_Tailoring/index.md) | 6 Artifacts | [📋 Templates](templates/en/02_Project_Approach_and_Tailoring/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
-| **03** | [**Initiating**](templates/en/03_Initiating/index.md) | 5 Artifacts | [📋 Templates](templates/en/03_Initiating/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
-| **04** | [**Planning**](templates/en/04_Planning/index.md) | 47 Artifacts | [📋 Templates](templates/en/04_Planning/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
-| **05** | [**Executing**](templates/en/05_Executing/index.md) | 12 Artifacts | [📋 Templates](templates/en/05_Executing/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
-| **06** | [**Monitoring & Controlling**](templates/en/06_Monitoring_and_Controlling/index.md) | 12 Artifacts | [📋 Templates](templates/en/06_Monitoring_and_Controlling/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
-| **07** | [**Closing**](templates/en/07_Closing/index.md) | 5 Artifacts | [📋 Templates](templates/en/07_Closing/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+<div class="phase-cards-grid">
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 00</span>
+      <span style="font-size: 1.5rem;">🏛️</span>
+    </div>
+    <h3 class="phase-hub-title">Program & Portfolio Management</h3>
+    <p class="phase-hub-desc">Strategic alignment, portfolio balancing, multi-project dependencies, and PMO maturity (6 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/00_Program_and_Portfolio_Management/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/00_Program_and_Portfolio_Management/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/00_Program_and_Portfolio_Management/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 01</span>
+      <span style="font-size: 1.5rem;">💎</span>
+    </div>
+    <h3 class="phase-hub-title">Business & Value Delivery</h3>
+    <p class="phase-hub-desc">Business justification, benefit realization planning, value tracking, and gap analysis (4 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/01_Business_and_Value_Delivery/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/01_Business_and_Value_Delivery/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/01_Business_and_Value_Delivery/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 02</span>
+      <span style="font-size: 1.5rem;">⚖️</span>
+    </div>
+    <h3 class="phase-hub-title">Project Approach & Tailoring</h3>
+    <p class="phase-hub-desc">Tailoring strategy, governance tiers, AI ethics, model cards, and agile/hybrid adoption (6 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/02_Project_Approach_and_Tailoring/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/02_Project_Approach_and_Tailoring/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/02_Project_Approach_and_Tailoring/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 03</span>
+      <span style="font-size: 1.5rem;">🚀</span>
+    </div>
+    <h3 class="phase-hub-title">Initiating</h3>
+    <p class="phase-hub-desc">Formal authorization, product vision, initial assumptions, and stakeholder identification (5 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/03_Initiating/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/03_Initiating/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/03_Initiating/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 04</span>
+      <span style="font-size: 1.5rem;">📐</span>
+    </div>
+    <h3 class="phase-hub-title">Planning (12 Domains)</h3>
+    <p class="phase-hub-desc">Comprehensive baselines across Scope, Schedule, Cost, Quality, Resources, Risk, and Procurement (47 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/04_Planning/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/04_Planning/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/04_Planning/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 05</span>
+      <span style="font-size: 1.5rem;">⚡</span>
+    </div>
+    <h3 class="phase-hub-title">Executing</h3>
+    <p class="phase-hub-desc">Directing work, managing issues, decision logs, change control, and team performance (12 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/05_Executing/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/05_Executing/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/05_Executing/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 06</span>
+      <span style="font-size: 1.5rem;">📊</span>
+    </div>
+    <h3 class="phase-hub-title">Monitoring & Controlling</h3>
+    <p class="phase-hub-desc">Status reporting, Earned Value Analysis (EVA), variance tracking, and quality acceptance (12 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/06_Monitoring_and_Controlling/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/06_Monitoring_and_Controlling/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/06_Monitoring_and_Controlling/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 07</span>
+      <span style="font-size: 1.5rem;">🏁</span>
+    </div>
+    <h3 class="phase-hub-title">Closing</h3>
+    <p class="phase-hub-desc">Formal transition to operations, contract closure, final lessons learned, and PIR (5 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/07_Closing/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/07_Closing/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/07_Closing/index.md">💡 Examples</a>
+    </div>
+  </div>
+</div>
 
 ---
 

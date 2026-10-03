@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
 </div>
 
 <div class="deliverable-header-card">

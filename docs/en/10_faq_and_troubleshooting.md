@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="../ar/10_faq_and_troubleshooting.md">🇸🇦 الانتقال للنسخة العربية (Arabic Version)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <a class="lang-switch-btn" href="../ar/10_faq_and_troubleshooting.md">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
 </div>
 
 <p align="center">

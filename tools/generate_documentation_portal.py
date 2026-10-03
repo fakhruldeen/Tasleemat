@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """tools/generate_documentation_portal.py
-Generates the comprehensive, modern GitHub Pages documentation portal for Tasleemat.
-Features separate English and Arabic navigation structures with universal 1-click
-bilingual cross-linking on every single page, rich interactive Explorer widget,
-and modern Glassmorphic design tokens.
+Generates the modern, enterprise-grade documentation portal for Tasleemat.
+Features:
+- Streamlined 3-tab top navigation (English Portal, Arabic Portal, Lexicon)
+- Universal 1-click bilingual cross-linking on every single page
+- Glassmorphic Hero Banners with live counters, badges, and responsive action chips
+- Interactive Deliverables Explorer (Search, Phase & Tier filters, Grid/Table views)
+- Comprehensive Phase Hub cards and Document Control headers
 """
 
 import os
@@ -291,8 +294,8 @@ def build_portal():
         # 1. EN Template
         content_tpl_en = sanitize_content_links(d["tpl_en"].read_text(encoding="utf-8"), d["doc_tpl_en"], d)
         nav_header_tpl_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_from_tpl}">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_from_tpl}">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -317,8 +320,8 @@ def build_portal():
         # 2. EN Guide
         content_guide_en = sanitize_content_links(d["guide_en"].read_text(encoding="utf-8"), d["doc_guide_en"], d)
         nav_header_guide_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_from_guide}">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_from_guide}">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -343,8 +346,8 @@ def build_portal():
         # 3. EN Example
         content_ex_en = sanitize_content_links(d["ex_en"].read_text(encoding="utf-8"), d["doc_ex_en"], d)
         nav_header_ex_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_from_ex}">🇸🇦 الانتقال للمثال بالعربية (Arabic Example)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_from_ex}">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -369,8 +372,8 @@ def build_portal():
         # 4. AR Template
         content_tpl_ar = sanitize_content_links(d["tpl_ar"].read_text(encoding="utf-8"), d["doc_tpl_ar"], d)
         nav_header_tpl_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_from_tpl_ar}">🇬🇧 Switch to English Template (النسخة الإنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_from_tpl_ar}">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -395,8 +398,8 @@ def build_portal():
         # 5. AR Guide
         content_guide_ar = sanitize_content_links(d["guide_ar"].read_text(encoding="utf-8"), d["doc_guide_ar"], d)
         nav_header_guide_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_from_guide_ar}">🇬🇧 Switch to English Guide (النسخة الإنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_from_guide_ar}">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -421,8 +424,8 @@ def build_portal():
         # 6. AR Example
         content_ex_ar = sanitize_content_links(d["ex_ar"].read_text(encoding="utf-8"), d["doc_ex_ar"], d)
         nav_header_ex_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_from_ex_ar}">🇬🇧 Switch to English Example (النسخة الإنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_from_ex_ar}">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">
@@ -444,22 +447,465 @@ def build_portal():
 """
         d["doc_ex_ar"].write_text(nav_header_ex_ar + content_ex_ar, encoding="utf-8")
 
-    # 2. Build Master Catalogs with Interactive Explorer
+    # 2. Build Landing Pages (Hero Banners + Metric Stat Grids)
+    build_landing_pages()
+
+    # 3. Build Master Catalogs with Interactive Explorer
     build_master_catalogs(deliverables)
 
-    # 3. Build Section Index Pages
+    # 4. Build Section Index Pages
     build_section_indexes(deliverables)
 
-    # 4. Build Phase Index Pages
+    # 5. Build Phase Index Pages
     build_phase_indexes(deliverables)
 
-    # 5. Update Master Governance Manuals with Language Switch Bar
+    # 6. Update Master Governance Manuals with Language Switch Bar
     update_governance_manuals_lang_bars()
 
-    # 6. Update mkdocs.yml navigation
+    # 7. Update mkdocs.yml navigation
     update_mkdocs_config(deliverables)
 
     print("Documentation portal successfully generated!")
+
+def build_landing_pages():
+    """Build modern Hero Landing pages for English (docs/index.md) and Arabic (docs/README_AR.md)."""
+    # 1. English Landing Page
+    index_en = """<div class="hero-wrapper">
+  <div class="hero-tag">
+    <span class="pulse-dot"></span> Enterprise PMO Operating System 2.0 • PMI PMBOK® 6/7/8 & NIST AI RMF
+  </div>
+  <h1 class="hero-title">Tasleemat PMO Operating System</h1>
+  <p class="hero-subtitle">
+    The premier bilingual (English & Arabic) enterprise project management framework, delivery artifacts library, and AI governance suite with 100% mathematical symmetry, zero vendor lock-in, and automated validation.
+  </p>
+  <div class="hero-actions">
+    <a href="catalog/en/index.md" class="btn-primary">🚀 Explore Master Catalog</a>
+    <a href="templates/en/index.md" class="btn-secondary">📋 Browse Templates</a>
+    <a href="en/01_getting_started.md" class="btn-secondary">📚 Governance Manuals</a>
+    <a href="README_AR.md" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-number">102</div>
+      <div class="stat-label">Bilingual Deliverables</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">24</div>
+      <div class="stat-label">Governance Manuals</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">8</div>
+      <div class="stat-label">Lifecycle Phases</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">4</div>
+      <div class="stat-label">Project Sizing Tiers</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">OKF Validated</div>
+    </div>
+  </div>
+</div>
+
+## 🧭 Project Lifecycle & Stage-Gates Architecture
+
+```mermaid
+flowchart TD
+    subgraph G0["Gate 0: Strategic Alignment"]
+        P00["00. Program & Portfolio"]
+        P01["01. Business & Value"]
+    end
+
+    subgraph G1["Gate 1: Project Charter"]
+        P02["02. Approach & Tailoring"]
+        P03["03. Initiating"]
+    end
+
+    subgraph G2["Gate 2: Baseline Approval"]
+        P04["04. Planning (12 Areas)"]
+    end
+
+    subgraph G3["Gate 3: Execution & Control"]
+        P05["05. Executing"]
+        P06["06. Monitoring & Controlling"]
+    end
+
+    subgraph G4["Gate 4 & 5: Operational Handover & Closeout"]
+        P07["07. Closing"]
+    end
+
+    G0 --> G1 --> G2 --> G3 --> G4
+```
+
+---
+
+## 🏛️ Browse by Lifecycle Phase
+
+<div class="phase-cards-grid">
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 00</span>
+      <span style="font-size: 1.5rem;">🏛️</span>
+    </div>
+    <h3 class="phase-hub-title">Program & Portfolio Management</h3>
+    <p class="phase-hub-desc">Strategic alignment, portfolio balancing, multi-project dependencies, and PMO maturity (6 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/00_Program_and_Portfolio_Management/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/00_Program_and_Portfolio_Management/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/00_Program_and_Portfolio_Management/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 01</span>
+      <span style="font-size: 1.5rem;">💎</span>
+    </div>
+    <h3 class="phase-hub-title">Business & Value Delivery</h3>
+    <p class="phase-hub-desc">Business justification, benefit realization planning, value tracking, and gap analysis (4 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/01_Business_and_Value_Delivery/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/01_Business_and_Value_Delivery/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/01_Business_and_Value_Delivery/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 02</span>
+      <span style="font-size: 1.5rem;">⚖️</span>
+    </div>
+    <h3 class="phase-hub-title">Project Approach & Tailoring</h3>
+    <p class="phase-hub-desc">Tailoring strategy, governance tiers, AI ethics, model cards, and agile/hybrid adoption (6 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/02_Project_Approach_and_Tailoring/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/02_Project_Approach_and_Tailoring/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/02_Project_Approach_and_Tailoring/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 03</span>
+      <span style="font-size: 1.5rem;">🚀</span>
+    </div>
+    <h3 class="phase-hub-title">Initiating</h3>
+    <p class="phase-hub-desc">Formal authorization, product vision, initial assumptions, and stakeholder identification (5 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/03_Initiating/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/03_Initiating/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/03_Initiating/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 04</span>
+      <span style="font-size: 1.5rem;">📐</span>
+    </div>
+    <h3 class="phase-hub-title">Planning (12 Domains)</h3>
+    <p class="phase-hub-desc">Comprehensive baselines across Scope, Schedule, Cost, Quality, Resources, Risk, and Procurement (47 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/04_Planning/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/04_Planning/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/04_Planning/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 05</span>
+      <span style="font-size: 1.5rem;">⚡</span>
+    </div>
+    <h3 class="phase-hub-title">Executing</h3>
+    <p class="phase-hub-desc">Directing work, managing issues, decision logs, change control, and team performance (12 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/05_Executing/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/05_Executing/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/05_Executing/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 06</span>
+      <span style="font-size: 1.5rem;">📊</span>
+    </div>
+    <h3 class="phase-hub-title">Monitoring & Controlling</h3>
+    <p class="phase-hub-desc">Status reporting, Earned Value Analysis (EVA), variance tracking, and quality acceptance (12 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/06_Monitoring_and_Controlling/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/06_Monitoring_and_Controlling/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/06_Monitoring_and_Controlling/index.md">💡 Examples</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">Phase 07</span>
+      <span style="font-size: 1.5rem;">🏁</span>
+    </div>
+    <h3 class="phase-hub-title">Closing</h3>
+    <p class="phase-hub-desc">Formal transition to operations, contract closure, final lessons learned, and PIR (5 Artifacts).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/en/07_Closing/index.md">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/07_Closing/index.md">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/07_Closing/index.md">💡 Examples</a>
+    </div>
+  </div>
+</div>
+
+---
+
+## 📑 Master Governance Manuals (12 Systems Guides)
+
+| Guide # | Document Title | Language | Description & Key Value |
+| :---: | :--- | :---: | :--- |
+| **01** | [**Getting Started**](en/01_getting_started.md) | 🇬🇧 EN | Quick-start lifecycle overview, onboarding steps from Day 1 to Day 30. |
+| **02** | [**Practitioner Usage Guide**](en/02_usage_guide.md) | 🇬🇧 EN | Field syntax, Markdown conventions, JSON/CSV integration, and authoring guidelines. |
+| **03** | [**PMO Policy Manual**](en/03_pmo_policy_manual.md) | 🇬🇧 EN | Enterprise governance mandates, change control thresholds, and audit rules. |
+| **04** | [**Stage-Gates Framework**](en/04_stage_gates_and_governance.md) | 🇬🇧 EN | 6 Stage-Gates (Gate 0 to 5), entry/exit criteria, and executive review gates. |
+| **05** | [**Tailoring Profiles**](en/05_tailoring_profiles.md) | 🇬🇧 EN | 4 project tiers (Enterprise, Medium, Agile, AI) and deliverable requirements. |
+| **06** | [**RACI Authority Matrix**](en/06_raci_authority_matrix.md) | 🇬🇧 EN | Full 102-form governance matrix defining author and approval sign-off roles. |
+| **07** | [**Document Dependencies**](en/07_document_dependencies.md) | 🇬🇧 EN | Directed acyclic graph (DAG) mapping upstream inputs to downstream outputs. |
+| **08** | [**AI Governance Framework**](en/08_ai_governance_framework.md) | 🇬🇧 EN | AI Canvas, Model Cards, Ethics, NIST AI RMF, and MLOps monitoring. |
+| **09** | [**Agile & Hybrid Integration**](en/09_agile_hybrid_integration.md) | 🇬🇧 EN | Mapping forms to Scrum/Kanban ceremonies, Flow metrics, and DoD/DoR. |
+| **10** | [**FAQ & Troubleshooting**](en/10_faq_and_troubleshooting.md) | 🇬🇧 EN | 25+ practical answers to governance hurdles, sizing disputes, and EVM issues. |
+| **11** | [**Tools & Automation Guide**](en/11_tools_and_automation.md) | 🇬🇧 EN | Python validation suite, CI/CD pipelines, JIRA/Azure DevOps integration. |
+| **12** | [**Open Knowledge Framework (OKF)**](en/12_open_knowledge_framework.md) | 🇬🇧 EN | Frictionless Data Package standard, FAIR data principles, datapackage.json. |
+| **LEX** | [**Master Lexicon & Catalog**](LEXICON.md) | 🌐 Bi | Master bilingual terminology glossary and cross-reference table. |
+
+---
+
+## 👤 Persona-Based Reading Pathways
+
+* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [`02_usage_guide.md`](en/02_usage_guide.md) → [Templates Library](templates/en/index.md).
+* **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
+* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [Agile Backlog & Retrospective](templates/en/05_Executing/index.md).
+* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md) → [AI Governance Templates](templates/en/02_Project_Approach_and_Tailoring/index.md).
+* **For DevOps & Tool Admins:** Explore [`11_tools_and_automation.md`](en/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](en/12_open_knowledge_framework.md).
+"""
+    (DOCS_DIR / "index.md").write_text(index_en, encoding="utf-8")
+
+    # 2. Arabic Landing Page
+    index_ar = """<div class="hero-wrapper" dir="rtl">
+  <div class="hero-tag">
+    <span class="pulse-dot"></span> نظام التشغيل الحوكمي لإدارة المشاريع 2.0 • PMI PMBOK® 6/7/8 وأخلاقيات الذكاء الاصطناعي (سدايا)
+  </div>
+  <h1 class="hero-title">نظام تسليمات لإدارة المشاريع الحوكمية</h1>
+  <p class="hero-subtitle">
+    المرجع المؤسسي الشامل ثنائي اللغة (عربي/إنجليزي) لمكتب إدارة المشاريع (PMO)، وحزمة المخرجات الإدارية، وحوكمة مشاريع الذكاء الاصطناعي بتناظر رياضي 100% ودون أي قيود أو تبعية تقنية.
+  </p>
+  <div class="hero-actions">
+    <a href="catalog/ar/index.md" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
+    <a href="templates/ar/index.md" class="btn-secondary">📋 تصفح القوالب القياسية</a>
+    <a href="ar/01_getting_started.md" class="btn-secondary">📚 الأدلة والسياسات</a>
+    <a href="index.md" class="btn-lang">🇬🇧 Switch to English Portal</a>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-number">102</div>
+      <div class="stat-label">مخرجاً إدارياً ثنائياً</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">24</div>
+      <div class="stat-label">دليلاً حوكمياً معتمداً</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">8</div>
+      <div class="stat-label">مراحل لدورة الحياة</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">4</div>
+      <div class="stat-label">مستويات لتخصيص المشاريع</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">مطابقة لمعيار OKF</div>
+    </div>
+  </div>
+</div>
+
+## 🧭 مخطط دورة حياة المشروع وبوابات العبور الحوكمية
+
+```mermaid
+flowchart TD
+    subgraph G0["بوابة 0: المواءمة الاستراتيجية ودراسة الجدوى"]
+        P00["00. إدارة البرامج والمحافظ"]
+        P01["01. الأعمال وتسليم القيمة"]
+    end
+
+    subgraph G1["بوابة 1: ميثاق المشروع والتخصيص"]
+        P02["02. منهجية المشروع وتخصيصه"]
+        P03["03. البدء"]
+    end
+
+    subgraph G2["بوابة 2: اعتماد خطوط الأساس"]
+        P04["04. التخطيط (12 مجالاً معرفياً)"]
+    end
+
+    subgraph G3["بوابة 3: التنفيذ والتحكم في الأداء"]
+        P05["05. التنفيذ"]
+        P06["06. المراقبة والتحكم"]
+    end
+
+    subgraph G4["بوابة 4 و 5: التسليم التشغيلي والإغلاق"]
+        P07["07. الإغلاق"]
+    end
+
+    G0 --> G1 --> G2 --> G3 --> G4
+```
+
+---
+
+## 🏛️ تصفح النماذج والمخرجات حسب مراحل دورة الحياة
+
+<div class="phase-cards-grid" dir="rtl">
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 00</span>
+      <span style="font-size: 1.5rem;">🏛️</span>
+    </div>
+    <h3 class="phase-hub-title">إدارة البرامج والمحافظ</h3>
+    <p class="phase-hub-desc">المواءمة الاستراتيجية، توازن المحفظة، إدارة الاعتماديات بين المشاريع، وتقييم نضج PMO (6 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 01</span>
+      <span style="font-size: 1.5rem;">💎</span>
+    </div>
+    <h3 class="phase-hub-title">الأعمال وتسليم القيمة</h3>
+    <p class="phase-hub-desc">دراسات الجدوى الاقتصادية، خطط إدارة المنافع، سجلات تحقيق القيمة، وتحليل الفجوات (4 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 02</span>
+      <span style="font-size: 1.5rem;">⚖️</span>
+    </div>
+    <h3 class="phase-hub-title">منهجية المشروع وتخصيصه</h3>
+    <p class="phase-hub-desc">استراتيجية التخصيص، مستويات الحوكمة، أخلاقيات الذكاء الاصطناعي، وبطاقات النماذج (6 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 03</span>
+      <span style="font-size: 1.5rem;">🚀</span>
+    </div>
+    <h3 class="phase-hub-title">البدء</h3>
+    <p class="phase-hub-desc">الترخيص الرسمي للمشروع، رؤية المنتج، سجل الافتراضات الأولية، وتحديد المعنيين (5 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/03_البدء/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/03_البدء/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/03_البدء/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 04</span>
+      <span style="font-size: 1.5rem;">📐</span>
+    </div>
+    <h3 class="phase-hub-title">التخطيط (12 مجالاً معرفياً)</h3>
+    <p class="phase-hub-desc">الخطوط المرجعية للنطاق، الجدول الزمني، التكلفة، الجودة، الموارد، المخاطر، والمشتريات (47 مخرجاً).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/04_التخطيط/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/04_التخطيط/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/04_التخطيط/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 05</span>
+      <span style="font-size: 1.5rem;">⚡</span>
+    </div>
+    <h3 class="phase-hub-title">التنفيذ</h3>
+    <p class="phase-hub-desc">توجيه وإدارة أعمال المشروع، سجل القضايا، سجل القرارات، طلبات التغيير، وأداء الفريق (12 مخرجاً).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/05_التنفيذ/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/05_التنفيذ/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 06</span>
+      <span style="font-size: 1.5rem;">📊</span>
+    </div>
+    <h3 class="phase-hub-title">المراقبة والتحكم</h3>
+    <p class="phase-hub-desc">تقارير الأداء، تحليل القيمة المكتسبة (EVA)، مراقبة التباين، وضمان الجودة واختبارات القبول (12 مخرجاً).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 07</span>
+      <span style="font-size: 1.5rem;">🏁</span>
+    </div>
+    <h3 class="phase-hub-title">الإغلاق</h3>
+    <p class="phase-hub-desc">الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ (5 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/07_الإغلاق/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/07_الإغلاق/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+</div>
+
+---
+
+## 📑 جدول الأدلة والوثائق الإرشادية (12 دليلاً حوكمياً)
+
+| رقم الدليل | عنوان الوثيقة | اللغة | الوصف والقيمة التشغيلية |
+| :---: | :--- | :---: | :--- |
+| **01** | [**دليل البدء السريع**](ar/01_getting_started.md) | 🇸🇦 AR | خطوات الانطلاق في المشروع وإجراءات العمل من اليوم 1 حتى اليوم 30. |
+| **02** | [**دليل الممارس الشامل**](ar/02_usage_guide.md) | 🇸🇦 AR | قواعد تحرير النماذج، بناء حقول Markdown، والتكامل مع ملفات JSON و CSV. |
+| **03** | [**دليل سياسات PMO**](ar/03_pmo_policy_manual.md) | 🇸🇦 AR | سياسات الحوكمة المؤسسية، إدارة خطوط الأساس، وضوابط التدقيق والامتثال. |
+| **04** | [**بوابات العبور والمراجعات**](ar/04_stage_gates_and_governance.md) | 🇸🇦 AR | إطار بوابات العبور الست (بوابة 0 إلى 5)، معايير الدخول والخروج والاعتماد. |
+| **05** | [**ملفات التخصيص وتصنيف المشاريع**](ar/05_tailoring_profiles.md) | 🇸🇦 AR | تصنيف المشاريع إلى 4 مستويات وتحديد المخرجات الإلزامية لكل مستوى. |
+| **06** | [**مصفوفة الصلاحيات RACI**](ar/06_raci_authority_matrix.md) | 🇸🇦 AR | جدول الصلاحيات والمسؤوليات لكافة الـ 102 نموذج وتحديد سلطات التوقيع. |
+| **07** | [**شبكة اعتماديات الوثائق**](ar/07_document_dependencies.md) | 🇸🇦 AR | خريطة تدفق البيانات والاعتماديات السابقة واللاحقة لكافة مخرجات المشروع. |
+| **08** | [**إطار حوكمة الذكاء الاصطناعي**](ar/08_ai_governance_framework.md) | 🇸🇦 AR | لوحة الاستخدام، بطاقات النماذج، مواءمة سدايا و NIST ومراقبة MLOps. |
+| **09** | [**المنهجيات الرشيقة والهجينة**](ar/09_agile_hybrid_integration.md) | 🇸🇦 AR | مواءمة النماذج مع سكرم وكانبان، مقاييس التدفق، وتعريف الجاهزية والانتهاء. |
+| **10** | [**الأسئلة الشائعة وحل المشكلات**](ar/10_faq_and_troubleshooting.md) | 🇸🇦 AR | أكثر من 25 إجابة عملية لحل المشكلات الحوكمية، الخلافات التوثيقية وحسابات EVM. |
+| **11** | [**دليل الأدوات والأتمتة**](ar/11_tools_and_automation.md) | 🇸🇦 AR | حزمة الفحص الآلي في بايثون، وخطوط أنابيب CI/CD والربط مع JIRA و DevOps. |
+| **12** | [**معيار مؤسسة المعرفة المفتوحة (OKF)**](ar/12_open_knowledge_framework.md) | 🇸🇦 AR | حزم البيانات السلسة (Frictionless Data)، مبادئ FAIR، وملف datapackage.json. |
+| **LEX** | [**المعجم الموحد للمصطلحات**](LEXICON.md) | 🌐 ثنائي | المعجم الرسمي المعتمد للمصطلحات الإنجليزية والعربية وفهرس النماذج. |
+
+---
+
+## 👤 مسارات القراءة الموصى بها بحسب الدور الوظيفي
+
+* **لمديري المشاريع:** ابدأ بـ [`01_getting_started.md`](ar/01_getting_started.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [`02_usage_guide.md`](ar/02_usage_guide.md) → [مكتبة القوالب](templates/ar/index.md).
+* **لمدراء مكاتب إدارة المشاريع (PMO):** راجع [`03_pmo_policy_manual.md`](ar/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](ar/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](ar/06_raci_authority_matrix.md).
+* **لقادة سكرم والتحول الرشيق:** ركز على [`09_agile_hybrid_integration.md`](ar/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [سجلات سكرم والمراجعات](templates/ar/05_التنفيذ/index.md).
+* **لمدراء مشاريع الذكاء الاصطناعي:** تعمق في [`08_ai_governance_framework.md`](ar/08_ai_governance_framework.md) → [قوالب حوكمة الذكاء الاصطناعي](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md).
+* **لمسؤولي الأنظمة والأتمتة:** استكشف [`11_tools_and_automation.md`](ar/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](ar/12_open_knowledge_framework.md).
+"""
+    (DOCS_DIR / "README_AR.md").write_text(index_ar, encoding="utf-8")
 
 def update_governance_manuals_lang_bars():
     """Ensure all 12 EN and 12 AR governance manuals have top language switcher bars."""
@@ -473,24 +919,25 @@ def update_governance_manuals_lang_bars():
             rel_en = os.path.relpath(en_f, ar_f.parent)
 
             en_content = en_f.read_text(encoding="utf-8")
-            if "lang-switch-bar" not in en_content:
-                bar_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar}">🇸🇦 الانتقال للنسخة العربية (Arabic Version)</a>
+            # Strip previous lang bar if present to avoid duplication
+            en_content = re.sub(r'<div class="lang-switch-bar">.*?</div>\n*', '', en_content, flags=re.DOTALL)
+            bar_en = f"""<div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <a class="lang-switch-btn" href="{rel_ar}">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
 </div>
 
 """
-                en_f.write_text(bar_en + en_content, encoding="utf-8")
+            en_f.write_text(bar_en + en_content.lstrip(), encoding="utf-8")
 
             ar_content = ar_f.read_text(encoding="utf-8")
-            if "lang-switch-bar" not in ar_content:
-                bar_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en}">🇬🇧 Switch to English Version (النسخة الإنجليزية)</a>
+            ar_content = re.sub(r'<div class="lang-switch-bar".*?</div>\n*', '', ar_content, flags=re.DOTALL)
+            bar_ar = f"""<div class="lang-switch-bar" dir="rtl">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en}">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
 </div>
 
 """
-                ar_f.write_text(bar_ar + ar_content, encoding="utf-8")
+            ar_f.write_text(bar_ar + ar_content.lstrip(), encoding="utf-8")
 
 def build_master_catalogs(deliverables):
     """Build comprehensive interactive master catalog pages with live Explorer widget."""
@@ -499,19 +946,19 @@ def build_master_catalogs(deliverables):
     rel_ar_catalog = os.path.relpath(DOCS_DIR / "catalog/ar/index.md", target_en.parent)
 
     catalog_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_catalog}">🇸🇦 الانتقال للفهرس العام بالعربية (Arabic Catalog)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Master Catalog</span>
+  <a class="lang-switch-btn" href="{rel_ar_catalog}">🇸🇦 الانتقال للفهرس العام بالعربية (Arabic Catalog) →</a>
 </div>
 
 # 📑 Master Deliverables & Artifacts Catalog
-**Standard:** PMI PMBOK® 6th, 7th & 8th Editions • NIST AI RMF • ISO 21500  
-**Total Deliverables:** 102 Bilingual Forms (204 Standard Templates • 204 Authoring Guides • 204 Completed Case Studies)
+**Standard Alignment:** PMI PMBOK® 6th, 7th & 8th Editions • NIST AI RMF • ISO 21500  
+**Total Matrix:** 102 Bilingual Forms (204 Standard Templates • 204 Authoring Guides • 204 Case Studies)
 
 ---
 
 <div id="tasleemat-explorer" class="explorer-wrapper">
   <div class="explorer-toolbar">
-    <input type="text" id="explorer-search" class="explorer-search-box" placeholder="🔍 Search by code (e.g. PMO-03.01), name, phase, tier, or keyword..." />
+    <input type="text" id="explorer-search" class="explorer-search-box" placeholder="🔍 Instant search by code (e.g. PMO-03.01), deliverable name, phase, tier, or standard..." />
     
     <div class="explorer-filter-group">
       <span class="explorer-filter-label">Phase:</span>
@@ -536,7 +983,7 @@ def build_master_catalogs(deliverables):
     </div>
 
     <div class="explorer-filter-group" style="justify-content: space-between; margin-top: 6px;">
-      <span style="font-size: 0.85rem; color: #64748b; font-weight: 600;">Showing <span id="results-count" style="color: #2563eb; font-weight: 800;">102</span> deliverables</span>
+      <span style="font-size: 0.86rem; color: var(--text-muted); font-weight: 600;">Showing <span id="results-count" style="color: var(--brand-primary); font-weight: 800;">102</span> deliverables</span>
       <div style="display: flex; gap: 6px;">
         <button class="filter-chip view-toggle-btn active" data-view="cards">🗂️ Card Grid View</button>
         <button class="filter-chip view-toggle-btn" data-view="table">📊 Table View</button>
@@ -560,17 +1007,17 @@ def build_master_catalogs(deliverables):
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
           <span class="badge badge-code">{d['code']}</span>
-          <span style="font-size: 0.75rem; color: #64748b; font-weight: 600;">{d['tier']}</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">{d['tier']}</span>
         </div>
         <h5>{d['name_en']}</h5>
-        <div style="font-size: 0.78rem; color: #64748b; margin-bottom: 4px;">🇸🇦 {d['name_ar']}</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 {d['name_ar']}</div>
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">{phase_title}</div>
       </div>
       <div class="explorer-card-actions">
         <a class="card-action-link" href="{rel_tpl}">📋 Template</a>
         <a class="card-action-link" href="{rel_guide}">📖 Guide</a>
         <a class="card-action-link" href="{rel_ex}">💡 Example</a>
-        <a class="card-action-link" style="background: #ecfdf5; color: #065f46 !important;" href="{rel_ar_tpl}">🇸🇦 عربي</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #047857 !important;" href="{rel_ar_tpl}">🇸🇦 عربي</a>
       </div>
     </div>
 """
@@ -595,13 +1042,12 @@ def build_master_catalogs(deliverables):
         rel_tpl = os.path.relpath(d["doc_tpl_en"], target_en.parent)
         rel_guide = os.path.relpath(d["doc_guide_en"], target_en.parent)
         rel_ex = os.path.relpath(d["doc_ex_en"], target_en.parent)
-        rel_ar_tpl = os.path.relpath(d["doc_tpl_ar"], target_en.parent)
         phase_title = PHASE_META[d['phase']]['en_title']
         search_str = f"{d['code']} {d['name_en']} {d['name_ar']} {phase_title} {d['tier']} PMI PMBOK".lower()
 
         catalog_en += f"""        <tr class="explorer-table-row" data-phase="{d['phase']}" data-tier="{d['tier']}" data-search="{search_str}">
           <td style="text-align: center;"><strong><code>{d['code']}</code></strong></td>
-          <td><strong>{d['name_en']}</strong><br/><small style="color: #64748b;">🇸🇦 {d['name_ar']}</small></td>
+          <td><strong>{d['name_en']}</strong><br/><small style="color: var(--text-muted);">🇸🇦 {d['name_ar']}</small></td>
           <td>{phase_title}</td>
           <td><span class="badge badge-phase">{d['tier']}</span></td>
           <td style="text-align: center; white-space: nowrap;">
@@ -626,8 +1072,8 @@ def build_master_catalogs(deliverables):
     rel_en_catalog = os.path.relpath(DOCS_DIR / "catalog/en/index.md", target_ar.parent)
 
     catalog_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_catalog}">🇬🇧 Switch to English Catalog (الفهرس الإنجليزي)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الفهرس العام باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_catalog}">🇬🇧 Switch to English Catalog (الفهرس الإنجليزي) ←</a>
 </div>
 
 # 📑 الفهرس العام والمستكشف التفاعلي للمخرجات والنماذج
@@ -638,7 +1084,7 @@ def build_master_catalogs(deliverables):
 
 <div id="tasleemat-explorer" class="explorer-wrapper" dir="rtl">
   <div class="explorer-toolbar">
-    <input type="text" id="explorer-search" class="explorer-search-box" placeholder="🔍 ابحث بالرمز (مثل PMO-03.01)، الاسم، المرحلة، المستوى، أو الكلمات المفتاحية..." />
+    <input type="text" id="explorer-search" class="explorer-search-box" placeholder="🔍 بحث فوري بالرمز (مثل PMO-03.01)، الاسم، المرحلة، المستوى، أو الكلمات المفتاحية..." />
     
     <div class="explorer-filter-group">
       <span class="explorer-filter-label">المرحلة:</span>
@@ -663,7 +1109,7 @@ def build_master_catalogs(deliverables):
     </div>
 
     <div class="explorer-filter-group" style="justify-content: space-between; margin-top: 6px;">
-      <span style="font-size: 0.85rem; color: #64748b; font-weight: 600;">يتم عرض <span id="results-count" style="color: #2563eb; font-weight: 800;">102</span> نموذجاً</span>
+      <span style="font-size: 0.86rem; color: var(--text-muted); font-weight: 600;">يتم عرض <span id="results-count" style="color: var(--brand-primary); font-weight: 800;">102</span> نموذجاً</span>
       <div style="display: flex; gap: 6px;">
         <button class="filter-chip view-toggle-btn active" data-view="cards">🗂️ عرض البطاقات</button>
         <button class="filter-chip view-toggle-btn" data-view="table">📊 عرض الجدول</button>
@@ -687,17 +1133,17 @@ def build_master_catalogs(deliverables):
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
           <span class="badge badge-code">{d['code']}</span>
-          <span style="font-size: 0.75rem; color: #64748b; font-weight: 600;">{d['tier']}</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">{d['tier']}</span>
         </div>
         <h5>{d['name_ar']}</h5>
-        <div style="font-size: 0.78rem; color: #64748b; margin-bottom: 4px;">🇬🇧 {d['name_en']}</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 {d['name_en']}</div>
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">{phase_title}</div>
       </div>
       <div class="explorer-card-actions">
         <a class="card-action-link" href="{rel_tpl}">📋 القالب</a>
         <a class="card-action-link" href="{rel_guide}">📖 الدليل</a>
         <a class="card-action-link" href="{rel_ex}">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: #eff6ff; color: #1e40af !important;" href="{rel_en_tpl}">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(79, 70, 229, 0.1); color: var(--brand-primary) !important;" href="{rel_en_tpl}">🇬🇧 EN</a>
       </div>
     </div>
 """
@@ -727,7 +1173,7 @@ def build_master_catalogs(deliverables):
 
         catalog_ar += f"""        <tr class="explorer-table-row" data-phase="{d['phase']}" data-tier="{d['tier']}" data-search="{search_str}">
           <td style="text-align: center;"><strong><code>{d['code']}</code></strong></td>
-          <td><strong>{d['name_ar']}</strong><br/><small style="color: #64748b;">🇬🇧 {d['name_en']}</small></td>
+          <td><strong>{d['name_ar']}</strong><br/><small style="color: var(--text-muted);">🇬🇧 {d['name_en']}</small></td>
           <td>{phase_title}</td>
           <td><span class="badge badge-phase">{d['tier']}</span></td>
           <td style="text-align: center; white-space: nowrap;">
@@ -753,8 +1199,8 @@ def build_section_indexes(deliverables):
     target_tpl_en.parent.mkdir(parents=True, exist_ok=True)
     rel_ar_tpl_idx = os.path.relpath(DOCS_DIR / "templates/ar/index.md", target_tpl_en.parent)
     tpl_idx_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_tpl_idx}">🇸🇦 الانتقال لفهرس القوالب بالعربية (Arabic Templates)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_tpl_idx}">🇸🇦 الانتقال لفهرس القوالب بالعربية (Arabic Templates) →</a>
 </div>
 
 # 📋 Tasleemat Templates Library (English)
@@ -784,8 +1230,8 @@ def build_section_indexes(deliverables):
     target_tpl_ar.parent.mkdir(parents=True, exist_ok=True)
     rel_en_tpl_idx = os.path.relpath(DOCS_DIR / "templates/en/index.md", target_tpl_ar.parent)
     tpl_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_tpl_idx}">🇬🇧 Switch to English Templates (قوالب إنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_tpl_idx}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
 </div>
 
 # 📋 مكتبة قوالب ونماذج تسليمات (بالعربية)
@@ -815,8 +1261,8 @@ def build_section_indexes(deliverables):
     target_g_en.parent.mkdir(parents=True, exist_ok=True)
     rel_ar_g_idx = os.path.relpath(DOCS_DIR / "guides/ar/index.md", target_g_en.parent)
     guides_idx_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_g_idx}">🇸🇦 الانتقال لأدلة النماذج بالعربية (Arabic Guides)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_g_idx}">🇸🇦 الانتقال لأدلة النماذج بالعربية (Arabic Guides) →</a>
 </div>
 
 # 📖 Deliverable Authoring & Governance Guides (English)
@@ -845,8 +1291,8 @@ def build_section_indexes(deliverables):
     target_g_ar.parent.mkdir(parents=True, exist_ok=True)
     rel_en_g_idx = os.path.relpath(DOCS_DIR / "guides/en/index.md", target_g_ar.parent)
     guides_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_g_idx}">🇬🇧 Switch to English Guides (أدلة إنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_g_idx}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
 </div>
 
 # 📖 أدلة إعداد وتعبئة النماذج (بالعربية)
@@ -875,8 +1321,8 @@ def build_section_indexes(deliverables):
     target_ex_en.parent.mkdir(parents=True, exist_ok=True)
     rel_ar_ex_idx = os.path.relpath(DOCS_DIR / "examples/ar/index.md", target_ex_en.parent)
     ex_idx_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_ex_idx}">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_ex_idx}">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples) →</a>
 </div>
 
 # 💡 Reference Examples & Case Studies Showcase (English)
@@ -905,8 +1351,8 @@ def build_section_indexes(deliverables):
     target_ex_ar.parent.mkdir(parents=True, exist_ok=True)
     rel_en_ex_idx = os.path.relpath(DOCS_DIR / "examples/en/index.md", target_ex_ar.parent)
     ex_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_ex_idx}">🇬🇧 Switch to English Examples (أمثلة إنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_ex_idx}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
 </div>
 
 # 💡 معرض الأمثلة الواقعية ودراسات الحالة (بالعربية)
@@ -945,8 +1391,8 @@ def build_phase_indexes(deliverables):
         target_t_en.parent.mkdir(parents=True, exist_ok=True)
         rel_ar_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "ar" / phase_dir_ar / "index.md", target_t_en.parent)
         idx_content_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_phase_tpl}">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_phase_tpl}">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
 </div>
 
 # {p_info['icon']} {p_info['en_title']} (Templates)
@@ -971,8 +1417,8 @@ def build_phase_indexes(deliverables):
         target_t_ar.parent.mkdir(parents=True, exist_ok=True)
         rel_en_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "en" / phase_dir_en / "index.md", target_t_ar.parent)
         idx_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_phase_tpl}">🇬🇧 Switch to English Templates (قوالب إنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_phase_tpl}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
 </div>
 
 # {p_info['icon']} {p_info['ar_title']} (القوالب)
@@ -997,8 +1443,8 @@ def build_phase_indexes(deliverables):
         target_g_en.parent.mkdir(parents=True, exist_ok=True)
         rel_ar_phase_g = os.path.relpath(DOCS_DIR / "guides" / "ar" / phase_dir_ar / "index.md", target_g_en.parent)
         g_content_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_phase_g}">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_phase_g}">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
 </div>
 
 # {p_info['icon']} {p_info['en_title']} (Authoring Guides)
@@ -1023,8 +1469,8 @@ def build_phase_indexes(deliverables):
         target_g_ar.parent.mkdir(parents=True, exist_ok=True)
         rel_en_phase_g = os.path.relpath(DOCS_DIR / "guides" / "en" / phase_dir_en / "index.md", target_g_ar.parent)
         g_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_phase_g}">🇬🇧 Switch to English Guides (أدلة إنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_phase_g}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
 </div>
 
 # {p_info['icon']} {p_info['ar_title']} (الأدلة الإرشادية)
@@ -1049,8 +1495,8 @@ def build_phase_indexes(deliverables):
         target_e_en.parent.mkdir(parents=True, exist_ok=True)
         rel_ar_phase_e = os.path.relpath(DOCS_DIR / "examples" / "ar" / phase_dir_ar / "index.md", target_e_en.parent)
         e_content_en = f"""<div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="{rel_ar_phase_e}">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="{rel_ar_phase_e}">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
 </div>
 
 # {p_info['icon']} {p_info['en_title']} (Reference Examples)
@@ -1075,8 +1521,8 @@ def build_phase_indexes(deliverables):
         target_e_ar.parent.mkdir(parents=True, exist_ok=True)
         rel_en_phase_e = os.path.relpath(DOCS_DIR / "examples" / "en" / phase_dir_en / "index.md", target_e_ar.parent)
         e_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="{rel_en_phase_e}">🇬🇧 Switch to English Examples (أمثلة إنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="{rel_en_phase_e}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
 </div>
 
 # {p_info['icon']} {p_info['ar_title']} (الأمثلة الواقعية)
@@ -1097,7 +1543,7 @@ def build_phase_indexes(deliverables):
         target_e_ar.write_text(e_content_ar, encoding="utf-8")
 
 def update_mkdocs_config(deliverables):
-    """Update mkdocs.yml with separated English and Arabic navigation structures."""
+    """Update mkdocs.yml with sleek, streamlined 3-tab top navigation."""
     mkdocs_file = ROOT / "mkdocs.yml"
 
     def make_phase_nav_en(phase_prefix, section_type="templates"):
@@ -1171,130 +1617,191 @@ def update_mkdocs_config(deliverables):
                 nav_list.append({f"{d['code']} {d['name_ar']}": target})
         return nav_list
 
+    # Streamlined 3-Tab Architecture
     nav = [
-        # === 🇬🇧 ENGLISH SECTION ===
+        # === 🇬🇧 ENGLISH PORTAL TAB ===
         {"🇬🇧 English Portal": [
             {"Home & Overview": "index.md"},
-            {"📑 Master Deliverables Catalog": "catalog/en/index.md"},
-            {"📖 Master Lexicon & Terms": "LEXICON.md"},
-            {"🇸🇦 للانتقال للبوابة العربية (Arabic Portal)": "README_AR.md"}
-        ]},
-        {"📚 Governance Manuals (EN)": [
-            {"01. Getting Started": "en/01_getting_started.md"},
-            {"02. Usage Guide": "en/02_usage_guide.md"},
-            {"03. PMO Policy Manual": "en/03_pmo_policy_manual.md"},
-            {"04. Stage-Gates & Governance": "en/04_stage_gates_and_governance.md"},
-            {"05. Tailoring Profiles": "en/05_tailoring_profiles.md"},
-            {"06. RACI Authority Matrix": "en/06_raci_authority_matrix.md"},
-            {"07. Document Dependencies": "en/07_document_dependencies.md"},
-            {"08. AI Governance Framework": "en/08_ai_governance_framework.md"},
-            {"09. Agile & Hybrid Integration": "en/09_agile_hybrid_integration.md"},
-            {"10. FAQ & Troubleshooting": "en/10_faq_and_troubleshooting.md"},
-            {"11. Tools & Automation": "en/11_tools_and_automation.md"},
-            {"12. Open Knowledge Framework (OKF)": "en/12_open_knowledge_framework.md"}
-        ]},
-        {"📋 Templates Library (EN)": [
-            {"Templates Overview": "templates/en/index.md"},
-            {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "templates")},
-            {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "templates")},
-            {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "templates")},
-            {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "templates")},
-            {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "templates")},
-            {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "templates")},
-            {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "templates")},
-            {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "templates")}
-        ]},
-        {"📖 Authoring Guides (EN)": [
-            {"Guides Overview": "guides/en/index.md"},
-            {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "guides")},
-            {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "guides")},
-            {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "guides")},
-            {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "guides")},
-            {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "guides")},
-            {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "guides")},
-            {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "guides")},
-            {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "guides")}
-        ]},
-        {"💡 Reference Examples (EN)": [
-            {"Case Studies Showcase": "examples/en/index.md"},
-            {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "examples")},
-            {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "examples")},
-            {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "examples")},
-            {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "examples")},
-            {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "examples")},
-            {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "examples")},
-            {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "examples")},
-            {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "examples")}
+            {"📑 Interactive Master Catalog": "catalog/en/index.md"},
+            {"📚 PMO Governance Manuals (01-12)": [
+                {"01. Getting Started": "en/01_getting_started.md"},
+                {"02. Usage Guide": "en/02_usage_guide.md"},
+                {"03. PMO Policy Manual": "en/03_pmo_policy_manual.md"},
+                {"04. Stage-Gates & Governance": "en/04_stage_gates_and_governance.md"},
+                {"05. Tailoring Profiles": "en/05_tailoring_profiles.md"},
+                {"06. RACI Authority Matrix": "en/06_raci_authority_matrix.md"},
+                {"07. Document Dependencies": "en/07_document_dependencies.md"},
+                {"08. AI Governance Framework": "en/08_ai_governance_framework.md"},
+                {"09. Agile & Hybrid Integration": "en/09_agile_hybrid_integration.md"},
+                {"10. FAQ & Troubleshooting": "en/10_faq_and_troubleshooting.md"},
+                {"11. Tools & Automation": "en/11_tools_and_automation.md"},
+                {"12. Open Knowledge Framework (OKF)": "en/12_open_knowledge_framework.md"}
+            ]},
+            {"📋 Standard Templates Library": [
+                {"Templates Overview": "templates/en/index.md"},
+                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "templates")},
+                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "templates")},
+                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "templates")},
+                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "templates")},
+                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "templates")},
+                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "templates")},
+                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "templates")},
+                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "templates")}
+            ]},
+            {"📖 Deliverable Authoring Guides": [
+                {"Guides Overview": "guides/en/index.md"},
+                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "guides")},
+                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "guides")},
+                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "guides")},
+                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "guides")},
+                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "guides")},
+                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "guides")},
+                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "guides")},
+                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "guides")}
+            ]},
+            {"💡 Real-World Reference Examples": [
+                {"Case Studies Showcase": "examples/en/index.md"},
+                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "examples")},
+                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "examples")},
+                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "examples")},
+                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "examples")},
+                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "examples")},
+                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "examples")},
+                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "examples")},
+                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "examples")}
+            ]}
         ]},
 
-        # === 🇸🇦 ARABIC SECTION ===
-        {"🇸🇦 البوابة التوثيقية (AR)": [
+        # === 🇸🇦 ARABIC PORTAL TAB ===
+        {"🇸🇦 البوابة التوثيقية (Arabic)": [
             {"الرئيسية ودليل الانطلاق": "README_AR.md"},
-            {"📑 الفهرس العام الشامل للنماذج": "catalog/ar/index.md"},
-            {"📖 المعجم الموحد للمصطلحات": "LEXICON.md"},
-            {"🇬🇧 Switch to English Portal": "index.md"}
+            {"📑 الفهرس التفاعلي الشامل": "catalog/ar/index.md"},
+            {"📚 الأدلة والسياسات الحوكمية (01-12)": [
+                {"01. دليل البدء السريع": "ar/01_getting_started.md"},
+                {"02. دليل الممارس الشامل": "ar/02_usage_guide.md"},
+                {"03. دليل سياسات PMO": "ar/03_pmo_policy_manual.md"},
+                {"04. بوابات العبور والمراجعات": "ar/04_stage_gates_and_governance.md"},
+                {"05. ملفات التخصيص وتصنيف المشاريع": "ar/05_tailoring_profiles.md"},
+                {"06. مصفوفة الصلاحيات RACI": "ar/06_raci_authority_matrix.md"},
+                {"07. شبكة اعتماديات الوثائق": "ar/07_document_dependencies.md"},
+                {"08. إطار حوكمة الذكاء الاصطناعي": "ar/08_ai_governance_framework.md"},
+                {"09. دليل المنهجيات الرشيقة والهجينة": "ar/09_agile_hybrid_integration.md"},
+                {"10. الأسئلة الشائعة وحل المشكلات": "ar/10_faq_and_troubleshooting.md"},
+                {"11. دليل الأدوات والأتمتة": "ar/11_tools_and_automation.md"},
+                {"12. معيار مؤسسة المعرفة المفتوحة (OKF)": "ar/12_open_knowledge_framework.md"}
+            ]},
+            {"📋 مكتبة القوالب والنماذج": [
+                {"الفهرس العام للقوالب": "templates/ar/index.md"},
+                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "templates")},
+                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "templates")},
+                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "templates")},
+                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "templates")},
+                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "templates")},
+                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "templates")},
+                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "templates")},
+                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "templates")}
+            ]},
+            {"📖 أدلة إعداد النماذج": [
+                {"الفهرس العام للأدلة": "guides/ar/index.md"},
+                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "guides")},
+                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "guides")},
+                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "guides")},
+                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "guides")},
+                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "guides")},
+                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "guides")},
+                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "guides")},
+                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "guides")}
+            ]},
+            {"💡 معرض الأمثلة الواقعية": [
+                {"معرض دراسات الحالة": "examples/ar/index.md"},
+                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "examples")},
+                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "examples")},
+                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "examples")},
+                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "examples")},
+                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "examples")},
+                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "examples")},
+                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "examples")},
+                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "examples")}
+            ]}
         ]},
-        {"📚 الأدلة والسياسات الحوكمية (AR)": [
-            {"01. دليل البدء السريع": "ar/01_getting_started.md"},
-            {"02. دليل الممارس الشامل": "ar/02_usage_guide.md"},
-            {"03. دليل سياسات PMO": "ar/03_pmo_policy_manual.md"},
-            {"04. بوابات العبور والمراجعات": "ar/04_stage_gates_and_governance.md"},
-            {"05. ملفات التخصيص وتصنيف المشاريع": "ar/05_tailoring_profiles.md"},
-            {"06. مصفوفة الصلاحيات RACI": "ar/06_raci_authority_matrix.md"},
-            {"07. شبكة اعتماديات الوثائق": "ar/07_document_dependencies.md"},
-            {"08. إطار حوكمة الذكاء الاصطناعي": "ar/08_ai_governance_framework.md"},
-            {"09. دليل المنهجيات الرشيقة والهجينة": "ar/09_agile_hybrid_integration.md"},
-            {"10. الأسئلة الشائعة وحل المشكلات": "ar/10_faq_and_troubleshooting.md"},
-            {"11. دليل الأدوات والأتمتة": "ar/11_tools_and_automation.md"},
-            {"12. معيار مؤسسة المعرفة المفتوحة (OKF)": "ar/12_open_knowledge_framework.md"}
-        ]},
-        {"📋 مكتبة القوالب والنماذج (AR)": [
-            {"الفهرس العام للقوالب": "templates/ar/index.md"},
-            {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "templates")},
-            {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "templates")},
-            {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "templates")},
-            {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "templates")},
-            {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "templates")},
-            {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "templates")},
-            {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "templates")},
-            {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "templates")}
-        ]},
-        {"📖 أدلة إعداد النماذج (AR)": [
-            {"الفهرس العام للأدلة": "guides/ar/index.md"},
-            {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "guides")},
-            {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "guides")},
-            {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "guides")},
-            {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "guides")},
-            {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "guides")},
-            {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "guides")},
-            {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "guides")},
-            {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "guides")}
-        ]},
-        {"💡 معرض الأمثلة الواقعية (AR)": [
-            {"معرض دراسات الحالة": "examples/ar/index.md"},
-            {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "examples")},
-            {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "examples")},
-            {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "examples")},
-            {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "examples")},
-            {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "examples")},
-            {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "examples")},
-            {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "examples")},
-            {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "examples")}
-        ]}
+
+        # === 📖 BILINGUAL LEXICON TAB ===
+        {"📖 Master Bilingual Lexicon": "LEXICON.md"}
     ]
 
-    raw_cfg = mkdocs_file.read_text(encoding="utf-8")
-    header_part = raw_cfg.split("nav:")[0]
+    header_yaml = """site_name: Tasleemat PMO Operating System | تسليمات
+site_url: https://fakhr.me/Tasleemat/
+site_description: Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Automation Library aligned with PMI PMBOK® 6th, 7th & 8th Edition standards.
+site_author: Fakhruldeen & Tasleemat Contributors
+repo_url: https://github.com/fakhruldeen/Tasleemat
+repo_name: fakhruldeen/Tasleemat
+docs_dir: docs
 
-    # Add extra_javascript if not already present
-    if "assets/explorer.js" not in header_part:
-        header_part = header_part.replace(
-            "extra_css:\n  - assets/custom.css",
-            "extra_css:\n  - assets/custom.css\n\nextra_javascript:\n  - assets/explorer.js"
-        )
+theme:
+  name: material
+  language: en
+  palette:
+    # Light mode
+    - scheme: default
+      primary: slate
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: slate
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+  logo: img/logo.png
+  favicon: img/logo.png
+
+extra_css:
+  - assets/custom.css
+
+extra_javascript:
+  - assets/explorer.js
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list
+  - md_in_html
+"""
 
     nav_yaml = yaml.dump({"nav": nav}, allow_unicode=True, sort_keys=False, default_flow_style=False)
-    mkdocs_file.write_text(header_part.strip() + "\n\n" + nav_yaml + "\n", encoding="utf-8")
+    mkdocs_file.write_text(header_yaml.strip() + "\n\n" + nav_yaml + "\n", encoding="utf-8")
     print("mkdocs.yml navigation updated successfully.")
 
 if __name__ == "__main__":

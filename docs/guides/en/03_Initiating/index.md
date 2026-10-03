@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/03_البدء/index.md">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/03_البدء/index.md">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
 </div>
 
 # 🚀 03. Initiating (Authoring Guides)

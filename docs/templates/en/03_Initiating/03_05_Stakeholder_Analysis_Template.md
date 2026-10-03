@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/03_البدء/03_05_تحليل_المعنيين_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/03_البدء/03_05_تحليل_المعنيين_قالب.md">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">

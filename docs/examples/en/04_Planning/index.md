@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Language / اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
 </div>
 
 # 📐 04. Planning (Reference Examples)

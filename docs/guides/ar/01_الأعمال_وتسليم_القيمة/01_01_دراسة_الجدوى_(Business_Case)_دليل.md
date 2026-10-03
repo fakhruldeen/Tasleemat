@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
-  <span>🌐 اللغة / Language:</span>
-  <a class="lang-switch-btn" href="../../en/01_Business_and_Value_Delivery/01_01_Business_Case_Guide.md">🇬🇧 Switch to English Guide (النسخة الإنجليزية)</a>
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <a class="lang-switch-btn" href="../../en/01_Business_and_Value_Delivery/01_01_Business_Case_Guide.md">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
 </div>
 
 <div class="deliverable-header-card rtl-card" dir="rtl">

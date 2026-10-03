@@ -1,49 +1,40 @@
-<p align="center">
-  <img src="img/logo-ar.png" alt="شعار تسليمات" width="340" />
-</p>
-
-# 📚 البوابة التوثيقية وقاعدة المعرفة لنظام «تسليمات»
-**الإصدار:** 2.0  
-**التوافق مع المعايير:** معهد إدارة المشاريع PMI PMBOK® الإصدارات 6 و 7 و 8 • أخلاقيات الذكاء الاصطناعي (سدايا) • NIST AI RMF • ISO 21500  
-**إجمالي المخرجات:** 102 مخرجاً إدارياً ثنائياً • 204 حزمة نماذج وقوالب • 204 مثال واقعي معتمد • 24 دليلاً حوكمياً رئيسياً
-
----
-
-## ⚡ مركز الوصول والتنقل السريع
-
-<div class="portal-card-grid" dir="rtl">
-  <a class="portal-card" href="catalog/ar/index.md">
-    <h4>📑 الفهرس العام للمخرجات والنماذج</h4>
-    <p>دليل شامل وبحث تفاعلي لكافة الـ 102 مخرجاً إدارياً مع روابط مباشرة للقوالب، الأدلة، والأمثلة.</p>
-  </a>
-
-  <a class="portal-card" href="templates/ar/index.md">
-    <h4>📋 مكتبة القوالب القياسية</h4>
-    <p>102 قالب عمل قياسي جاهز للتعبئة بصيغة Markdown مع جداول التحكم بالوثائق والاعتمادات.</p>
-  </a>
-
-  <a class="portal-card" href="guides/ar/index.md">
-    <h4>📖 أدلة إعداد وتعبئة النماذج</h4>
-    <p>102 دليلاً تفصيلياً يشرح خطوة بخطوة مصفوفة الصلاحيات RACI، والمدخلات والمخرجات وبوابات الجودة.</p>
-  </a>
-
-  <a class="portal-card" href="examples/ar/index.md">
-    <h4>💡 معرض الأمثلة الواقعية ودراسات الحالة</h4>
-    <p>102 مثال واقعي مكتمل بالبيانات والأرقام والقرارات المؤسسية يغطي كافة مراحل دورة حياة المشروع.</p>
-  </a>
-
-  <a class="portal-card" href="ar/01_getting_started.md">
-    <h4>📚 الأدلة والسياسات الحوكمية (12 دليلاً)</h4>
-    <p>الأدلة المؤسسية لإدارة المشاريع، سياسات PMO، بوابات العبور، ومصفوفة الصلاحيات، وحوكمة الذكاء الاصطناعي.</p>
-  </a>
-
-  <a class="portal-card" href="LEXICON.md">
-    <h4>📖 المعجم الموحد للمصطلحات</h4>
-    <p>المرجع المصطلحي المعتمد للمصطلحات الإنجليزية والعربية المطابقة لمعايير معهد إدارة المشاريع PMI.</p>
-  </a>
+<div class="hero-wrapper" dir="rtl">
+  <div class="hero-tag">
+    <span class="pulse-dot"></span> نظام التشغيل الحوكمي لإدارة المشاريع 2.0 • PMI PMBOK® 6/7/8 وأخلاقيات الذكاء الاصطناعي (سدايا)
+  </div>
+  <h1 class="hero-title">نظام تسليمات لإدارة المشاريع الحوكمية</h1>
+  <p class="hero-subtitle">
+    المرجع المؤسسي الشامل ثنائي اللغة (عربي/إنجليزي) لمكتب إدارة المشاريع (PMO)، وحزمة المخرجات الإدارية، وحوكمة مشاريع الذكاء الاصطناعي بتناظر رياضي 100% ودون أي قيود أو تبعية تقنية.
+  </p>
+  <div class="hero-actions">
+    <a href="catalog/ar/index.md" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
+    <a href="templates/ar/index.md" class="btn-secondary">📋 تصفح القوالب القياسية</a>
+    <a href="ar/01_getting_started.md" class="btn-secondary">📚 الأدلة والسياسات</a>
+    <a href="index.md" class="btn-lang">🇬🇧 Switch to English Portal</a>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-number">102</div>
+      <div class="stat-label">مخرجاً إدارياً ثنائياً</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">24</div>
+      <div class="stat-label">دليلاً حوكمياً معتمداً</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">8</div>
+      <div class="stat-label">مراحل لدورة الحياة</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">4</div>
+      <div class="stat-label">مستويات لتخصيص المشاريع</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">مطابقة لمعيار OKF</div>
+    </div>
+  </div>
 </div>
-
----
 
 ## 🧭 مخطط دورة حياة المشروع وبوابات العبور الحوكمية
 
@@ -77,18 +68,121 @@ flowchart TD
 
 ---
 
-## 🏛️ تصفح النماذج حسب مراحل دورة الحياة
+## 🏛️ تصفح النماذج والمخرجات حسب مراحل دورة الحياة
 
-| رقم المرحلة | اسم المرحلة الحوكمية | عدد النماذج | الروابط السريعة |
-| :---: | :--- | :---: | :---: |
-| **00** | [**إدارة البرامج والمحافظ**](templates/ar/00_إدارة_البرامج_والمحافظ/index.md) | 6 مخرجات | [📋 القوالب](templates/ar/00_إدارة_البرامج_والمحافظ/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
-| **01** | [**الأعمال وتسليم القيمة**](templates/ar/01_الأعمال_وتسليم_القيمة/index.md) | 4 مخرجات | [📋 القوالب](templates/ar/01_الأعمال_وتسليم_القيمة/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
-| **02** | [**منهجية المشروع وتخصيصه**](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md) | 6 مخرجات | [📋 القوالب](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
-| **03** | [**البدء**](templates/ar/03_البدء/index.md) | 5 مخرجات | [📋 القوالب](templates/ar/03_البدء/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
-| **04** | [**التخطيط**](templates/ar/04_التخطيط/index.md) | 47 مخرجاً | [📋 القوالب](templates/ar/04_التخطيط/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
-| **05** | [**التنفيذ**](templates/ar/05_التنفيذ/index.md) | 12 مخرجاً | [📋 القوالب](templates/ar/05_التنفيذ/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
-| **06** | [**المراقبة والتحكم**](templates/ar/06_المراقبة_والتحكم/index.md) | 12 مخرجاً | [📋 القوالب](templates/ar/06_المراقبة_والتحكم/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
-| **07** | [**الإغلاق**](templates/ar/07_الإغلاق/index.md) | 5 مخرجات | [📋 القوالب](templates/ar/07_الإغلاق/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+<div class="phase-cards-grid" dir="rtl">
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 00</span>
+      <span style="font-size: 1.5rem;">🏛️</span>
+    </div>
+    <h3 class="phase-hub-title">إدارة البرامج والمحافظ</h3>
+    <p class="phase-hub-desc">المواءمة الاستراتيجية، توازن المحفظة، إدارة الاعتماديات بين المشاريع، وتقييم نضج PMO (6 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 01</span>
+      <span style="font-size: 1.5rem;">💎</span>
+    </div>
+    <h3 class="phase-hub-title">الأعمال وتسليم القيمة</h3>
+    <p class="phase-hub-desc">دراسات الجدوى الاقتصادية، خطط إدارة المنافع، سجلات تحقيق القيمة، وتحليل الفجوات (4 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 02</span>
+      <span style="font-size: 1.5rem;">⚖️</span>
+    </div>
+    <h3 class="phase-hub-title">منهجية المشروع وتخصيصه</h3>
+    <p class="phase-hub-desc">استراتيجية التخصيص، مستويات الحوكمة، أخلاقيات الذكاء الاصطناعي، وبطاقات النماذج (6 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 03</span>
+      <span style="font-size: 1.5rem;">🚀</span>
+    </div>
+    <h3 class="phase-hub-title">البدء</h3>
+    <p class="phase-hub-desc">الترخيص الرسمي للمشروع، رؤية المنتج، سجل الافتراضات الأولية، وتحديد المعنيين (5 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/03_البدء/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/03_البدء/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/03_البدء/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 04</span>
+      <span style="font-size: 1.5rem;">📐</span>
+    </div>
+    <h3 class="phase-hub-title">التخطيط (12 مجالاً معرفياً)</h3>
+    <p class="phase-hub-desc">الخطوط المرجعية للنطاق، الجدول الزمني، التكلفة، الجودة، الموارد، المخاطر، والمشتريات (47 مخرجاً).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/04_التخطيط/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/04_التخطيط/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/04_التخطيط/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 05</span>
+      <span style="font-size: 1.5rem;">⚡</span>
+    </div>
+    <h3 class="phase-hub-title">التنفيذ</h3>
+    <p class="phase-hub-desc">توجيه وإدارة أعمال المشروع، سجل القضايا، سجل القرارات، طلبات التغيير، وأداء الفريق (12 مخرجاً).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/05_التنفيذ/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/05_التنفيذ/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 06</span>
+      <span style="font-size: 1.5rem;">📊</span>
+    </div>
+    <h3 class="phase-hub-title">المراقبة والتحكم</h3>
+    <p class="phase-hub-desc">تقارير الأداء، تحليل القيمة المكتسبة (EVA)، مراقبة التباين، وضمان الجودة واختبارات القبول (12 مخرجاً).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+
+  <div class="phase-hub-card">
+    <div class="phase-hub-header">
+      <span class="badge badge-phase">المرحلة 07</span>
+      <span style="font-size: 1.5rem;">🏁</span>
+    </div>
+    <h3 class="phase-hub-title">الإغلاق</h3>
+    <p class="phase-hub-desc">الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ (5 مخرجات).</p>
+    <div class="phase-hub-actions">
+      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.md">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/07_الإغلاق/index.md">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/07_الإغلاق/index.md">💡 الأمثلة</a>
+    </div>
+  </div>
+</div>
 
 ---
 

@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
-  <span>🌐 Dual Language / ثنائي اللغة:</span>
-  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_قالب.md">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">
