@@ -12,7 +12,7 @@
 
 <br/>
 
-**[🇬🇧 Read the Full Guide in English](README.md)** • **[📖 المعجم الشامل والمطابقة الموحدة](LEXICON.md)** • **[🛠️ دليل الاستخدام التطبيقي](USAGE_GUIDE_AR.md)** • **[📂 النماذج العربية](forms/ar/)** • **[📂 النماذج الإنجليزية](forms/en/)**
+**[🇬🇧 Read in English](README.md)** • **[📖 المعجم الموحد](LEXICON.md)** • **[🔗 شبكة الاعتماديات (DAG)](DOCUMENT_DEPENDENCIES_AR.md)** • **[👥 مصفوفة RACI للحوكمة](RACI_AUTHORITY_MATRIX_AR.md)** • **[🛠️ دليل الاستخدام](USAGE_GUIDE_AR.md)** • **[📂 النماذج العربية](forms/ar/)** • **[📂 النماذج الإنجليزية](forms/en/)**
 
 ---
 

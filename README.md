@@ -12,7 +12,7 @@
 
 <br/>
 
-**[🇸🇦 اقرأ الدليل الكامل باللغة العربية (Read in Arabic)](README_AR.md)** • **[📖 Master Lexicon & Catalog](LEXICON.md)** • **[🛠️ Usage Guide](USAGE_GUIDE.md)** • **[📂 English Forms](forms/en/)** • **[📂 Arabic Forms](forms/ar/)**
+**[🇸🇦 اقرأ الدليل الكامل باللغة العربية (Read in Arabic)](README_AR.md)** • **[📖 Master Lexicon](LEXICON.md)** • **[🔗 Dependencies DAG](DOCUMENT_DEPENDENCIES.md)** • **[👥 Governance RACI](RACI_AUTHORITY_MATRIX.md)** • **[🛠️ Usage Guide](USAGE_GUIDE.md)** • **[📂 English Forms](forms/en/)** • **[📂 Arabic Forms](forms/ar/)**
 
 ---
 
