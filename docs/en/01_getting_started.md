@@ -37,8 +37,8 @@ flowchart LR
 2. **Review Stage-Gate Requirements:**
    - Read [`04_stage_gates_and_governance.md`](04_stage_gates_and_governance.md) to understand the 6 governance milestones (Gate 0 to Gate 5).
 3. **Draft the Strategic Foundation:**
-   - If starting at portfolio level: Complete [`00_01 Portfolio Roadmap`](../../forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/) and [`00_06 OKR Alignment`](../../forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment/).
-   - Complete [`01_01 Business Case`](../../forms/en/01_Strategic_and_Initiation/01_Business_Case/) and [`03_01 Project Charter`](../../forms/en/03_Initiating/01_Project_Charter/).
+   - If starting at portfolio level: Complete [`00_01 Portfolio Roadmap`](../../forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/) and [`00_06 OKR Alignment`](../../forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix/).
+   - Complete [`01_01 Business Case`](../../forms/en/01_Business_and_Value_Delivery/01_Business_Case/) and [`03_01 Project Charter`](../../forms/en/03_Initiating/01_Project_Charter/).
 
 ---
 

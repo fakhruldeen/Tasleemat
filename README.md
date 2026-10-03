@@ -169,6 +169,30 @@ Tasleemat is strictly aligned with international project management benchmarks:
 
 ---
 
+## 🧪 Quality Assurance & Automated Test Suite
+
+Tasleemat features an enterprise-grade automated testing suite (`tests/`) covering **100% of the repository's 102 forms, 204 reference examples, JSON schemas, OKF data package, and CLI tools**:
+
+```bash
+# Run the complete test suite (28 comprehensive unit & integration tests)
+python3 -m unittest discover -s tests -v
+
+# Or execute tests directly via the Tasleemat CLI
+python3 tools/tasleemat_cli.py test -v
+```
+
+| Test Module | Coverage & Verification Scope |
+| :--- | :--- |
+| **`test_parity.py`** | 1:1 English/Arabic symmetry across all 8 phases, 102 form folders, and 5-file bundles |
+| **`test_schemas.py`** | JSON schema parsing, required top-level keys, field definitions, and JSON-CSV alignment |
+| **`test_okf_datapackage.py`** | Frictionless JSON Schema standard compliance for all 204 package resources |
+| **`test_governance_templates.py`** | Executive Document Control tables, guide-to-example links, and relative link integrity |
+| **`test_fictional_compliance.py`** | Realistic sample validation, non-empty content checks, and zero unresolved template placeholders |
+| **`test_cli_and_exporters.py`** | Multi-tier project scaffolding, parameter substitution, catalog search, and HTML exporter |
+| **`test_documentation.py`** | 24 operational manuals (12 EN / 12 AR), LEXICON integrity, and MkDocs navigation |
+
+---
+
 ## 📄 License & Attribution
 
 This project is open-source under the **[MIT License](LICENSE)**. You are free to use, adapt, and integrate these templates in commercial and non-commercial enterprise projects.

@@ -41,8 +41,13 @@ jobs:
         run: |
           python3 tools/validate_okf.py
 
-      - name: Test Tasleemat CLI Scaffolder
+      - name: Run Complete Automated Test Suite (28 Unit & Integration Tests)
         run: |
+          python3 -m unittest discover -s tests -v
+
+      - name: Test Tasleemat CLI Scaffolder & Exporter
+        run: |
+          python3 tools/tasleemat_cli.py test -v
           python3 tools/tasleemat_cli.py list --lang en
           python3 tools/tasleemat_cli.py list --lang ar
           python3 tools/tasleemat_cli.py search "Charter" --lang en

@@ -3,6 +3,9 @@
 </p>
 
 # 📘 Tasleemat PMO Toolkit — Comprehensive Practitioner & Automation Guide
+**Document Reference:** `TASLEEMAT-GUIDE-02-USAGE-GUIDE`  
+**Standard:** PMI PMBOK® Guide 6th, 7th & 8th Edition Standard  
+**Target Audience:** Project Managers, PMO Directors, AI Engineers, Scrum Masters  
 
 Welcome to the definitive practitioner and automation guide for the **Tasleemat PMO Toolkit**. Whether you are a project manager looking to standardize physical deliverables, a PMO director establishing enterprise governance, or an AI engineer building autonomous project management agents, this guide covers every workflow end-to-end.
 

@@ -93,6 +93,20 @@ python3 tools/tasleemat_cli.py list --lang en
 python3 tools/tasleemat_cli.py list --lang ar
 ```
 
+### D. Running the Automated Test Suite (`test`)
+Run the entire 28-test verification suite directly from the CLI:
+
+```bash
+# Run tests with summary
+python3 tools/tasleemat_cli.py test
+
+# Run tests with verbose output
+python3 tools/tasleemat_cli.py test -v
+
+# Or run via standard Python unittest
+python3 -m unittest discover -s tests -v
+```
+
 ---
 
 ## 🖨️ 2. Batch Deliverable Exporter (`tools/export_deliverables.py`)
@@ -101,7 +115,7 @@ Convert single Markdown forms or entire project directories into executive, prin
 
 ```bash
 # Export a single document to HTML
-python3 tools/export_deliverables.py docs/en/01_getting_started.md -o output.html
+python3 tools/export_deliverables.py forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter_Template.md -o output.html
 
 # Export an Arabic deliverable with native RTL styling
 python3 tools/export_deliverables.py forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع_قالب.md -o charter.html
@@ -131,22 +145,23 @@ mkdocs build
 
 ## 🛡️ 4. Python Quality & Parity Audit Suite
 
-The repository includes built-in verification scripts executed automatically by our CI/CD pipeline:
+The repository includes built-in verification scripts and full unit test coverage executed automatically by our CI/CD pipeline:
 
-### 1. Form Quality & Schema Auditor (`tools/audit_forms.py`)
+### 1. Master Test Suite (`tests/`)
+- **Execution:** `python3 -m unittest discover -s tests -v`
+- **Modules:** `test_parity.py`, `test_schemas.py`, `test_okf_datapackage.py`, `test_governance_templates.py`, `test_fictional_compliance.py`, `test_cli_and_exporters.py`, `test_documentation.py`.
+
+### 2. Form Quality & Schema Auditor (`tools/audit_forms.py`)
 - **Execution:** `python3 tools/audit_forms.py`
-- **Function:** Scans all 204 form files to verify:
-  - Presence of Document Control & Sign-off tables.
-  - Proper heading hierarchies (`#`, `##`, `###`).
-  - Strict absence of broken markdown links.
+- **Function:** Scans all 204 form files for governance table compliance, section depth, and formatting.
 
-### 2. Bilingual Parity Checker (`tools/parity.py`)
+### 3. Open Knowledge Foundation Frictionless Validator (`tools/validate_okf.py`)
+- **Execution:** `python3 tools/validate_okf.py`
+- **Function:** Validates `datapackage.json` and all 204 frictionless JSON schemas against international open data standards.
+
+### 4. Bilingual Parity Checker (`tools/parity.py`)
 - **Execution:** `python3 tools/parity.py forms/en forms/ar`
-- **Function:** Ensures exact 1:1 structural symmetry between English and Arabic deliverable catalogs (folders, templates, guides, JSON schemas, CSV files).
-
-### 3. Rendering & Formatting Verifier (`tools/check_rendering.py`)
-- **Execution:** `python3 tools/check_rendering.py`
-- **Function:** Audits markdown tables, bold keys, and mermaid diagrams to ensure zero layout-breaking syntax errors on GitHub, GitLab, and Azure DevOps web renderers.
+- **Function:** Ensures exact 1:1 structural symmetry between English and Arabic deliverable catalogs.
 
 ---
 
@@ -156,4 +171,6 @@ Every push and pull request to the `main` branch triggers an automated GitHub Ac
 1. Validates schema integrity across all 204 form bundles (`audit_forms.py`).
 2. Checks web rendering syntax (`check_rendering.py`).
 3. Enforces 1:1 English-Arabic structural parity (`parity.py`).
-4. Runs end-to-end integration tests on `tasleemat_cli.py`.
+4. Validates Frictionless Open Data Package (`validate_okf.py`).
+5. Executes the complete 28-test automated test suite (`tests/`).
+6. Runs end-to-end integration tests on `tasleemat_cli.py`.

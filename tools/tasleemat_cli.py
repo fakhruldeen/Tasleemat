@@ -234,6 +234,23 @@ def search_forms(args):
         print(f"  No forms matching '{query}'.")
     print(f"\nTotal matches: {matches}\n")
 
+def run_tests(args):
+    """Execute the comprehensive automated test suite."""
+    import unittest
+    print(f"\n{Colors.HEADER}{Colors.BOLD}===================================================={Colors.ENDC}")
+    print(f"{Colors.HEADER}{Colors.BOLD}   🧪 Running Tasleemat Automated Test Suite       {Colors.ENDC}")
+    print(f"{Colors.HEADER}{Colors.BOLD}===================================================={Colors.ENDC}\n")
+    loader = unittest.TestLoader()
+    suite = loader.discover(str(ROOT / "tests"), pattern="test_*.py")
+    runner = unittest.TextTestRunner(verbosity=2 if args.verbose else 1)
+    result = runner.run(suite)
+    if result.wasSuccessful():
+        print(f"\n{Colors.OKGREEN}{Colors.BOLD}✅ All Tasleemat tests passed successfully!{Colors.ENDC}\n")
+        sys.exit(0)
+    else:
+        print(f"\n{Colors.FAIL}{Colors.BOLD}❌ Test failures detected!{Colors.ENDC}\n")
+        sys.exit(1)
+
 def main():
     parser = argparse.ArgumentParser(description="Tasleemat PMO Operating System CLI")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
@@ -258,6 +275,10 @@ def main():
     search_parser.add_argument("query", help="Search keyword")
     search_parser.add_argument("-l", "--lang", choices=["ar", "en"], default="en", help="Language")
 
+    # test command
+    test_parser = subparsers.add_parser("test", help="Run automated test suite")
+    test_parser.add_argument("-v", "--verbose", action="store_true", help="Verbose test output")
+
     args = parser.parse_args()
     if args.command == "init":
         scaffold_project(args)
@@ -265,6 +286,8 @@ def main():
         list_forms(args)
     elif args.command == "search":
         search_forms(args)
+    elif args.command == "test":
+        run_tests(args)
     else:
         parser.print_help()
 

@@ -94,6 +94,20 @@ python3 tools/tasleemat_cli.py list --lang ar
 python3 tools/tasleemat_cli.py list --lang en
 ```
 
+### د. تشغيل حزمة الفحوصات والاختبارات الآلية (`test`)
+تشغيل حزمة الفحص الشاملة المكونة من 28 فحصاً برمجياً:
+
+```bash
+# تشغيل حزمة الاختبارات مع الملخص
+python3 tools/tasleemat_cli.py test
+
+# تشغيل الاختبارات بالوضع المفصل
+python3 tools/tasleemat_cli.py test -v
+
+# أو التشغيل عبر أداة unittest القياسية في بايثون
+python3 -m unittest discover -s tests -v
+```
+
 ---
 
 ## 🖨️ 2. محرك التصدير المجمع للوثائق (`tools/export_deliverables.py`)
@@ -102,7 +116,7 @@ python3 tools/tasleemat_cli.py list --lang en
 
 ```bash
 # تصدير وثيقة مفردة
-python3 tools/export_deliverables.py docs/ar/01_getting_started.md -o output.html
+python3 tools/export_deliverables.py forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع_قالب.md -o output.html
 
 # تصدير نموذج عربي مع دعم RTL
 python3 tools/export_deliverables.py forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع_قالب.md -o charter.html
@@ -132,22 +146,32 @@ mkdocs build
 
 ## 🛡️ 4. حزمة التدقيق والفحص البرمجي في بايثون
 
-يحتوي مجلد `tools/` على أدوات فحص وتدقيق آلية:
+يحتوي مجلد `tests/` و `tools/` على منظومة اختبارات وتدقيق آلية متكاملة:
 
-### 1. مدقق جودة النماذج والمخططات (`tools/audit_forms.py`)
+### 1. حزمة الاختبارات الرئيسية (`tests/`)
+- **طريقة التشغيل:** `python3 -m unittest discover -s tests -v`
+- **الوحدات:** التماثل اللغوي (`test_parity.py`)، المخططات الهيكلية (`test_schemas.py`)، حزمة البيانات المفتوحة (`test_okf_datapackage.py`)، قوالب الحوكمة (`test_governance_templates.py`)، الامتثال للبيانات الافتراضية (`test_fictional_compliance.py`)، أدوات CLI (`test_cli_and_exporters.py`)، والأدلة التوثيقية (`test_documentation.py`).
+
+### 2. مدقق جودة النماذج والمخططات (`tools/audit_forms.py`)
 - **طريقة التشغيل:** `python3 tools/audit_forms.py`
 - **الوظيفة:** يفحص جميع النماذج الـ 102 باللغتين العربية والإنجليزية (204 ملفات) للتأكد من وجود جدول الاعتماد وتسلسل العناوين وصحة الروابط.
 
-### 2. فاحص التماثل والتطابق اللغوي (`tools/parity.py`)
+### 3. مدقق حزمة البيانات المفتوحة Frictionless OKF (`tools/validate_okf.py`)
+- **طريقة التشغيل:** `python3 tools/validate_okf.py`
+- **الوظيفة:** يتحقق من مطابقة ملف `datapackage.json` والمخططات الـ 204 لمعايير حزم البيانات المفتوحة الدولية.
+
+### 4. فاحص التماثل والتطابق اللغوي (`tools/parity.py`)
 - **طريقة التشغيل:** `python3 tools/parity.py forms/en forms/ar`
 - **الوظيفة:** يضمن التطابق التام 1:1 في البنية والملفات بين المجلدات العربية والإنجليزية.
-
-### 3. مدقق العرض والتنسيق (`tools/check_rendering.py`)
-- **طريقة التشغيل:** `python3 tools/check_rendering.py`
-- **الوظيفة:** يفحص جداول Markdown ومخططات Mermaid لضمان خلوها من الأخطاء في واجهات GitHub و GitLab.
 
 ---
 
 ## ⚙️ 5. خط أنابيب التكامل المستمر (`.github/workflows/ci.yml`)
 
-يتم تشغيل فحص آلي عبر GitHub Actions مع كل عملية دفع أو سحب (Pull Request) إلى الفرع الرئيسي `main` لضمان استمرارية الجودة وخلو المستودع من الأخطاء بنسبة 100%.
+يتم تشغيل فحص آلي عبر GitHub Actions مع كل عملية دفع أو سحب (Pull Request) إلى الفرع الرئيسي `main` يشمل:
+1. التحقق من سلامة المخططات الهيكلية لكافة النماذج الـ 204 (`audit_forms.py`).
+2. فحص العرض والتنسيق للجداول والمخططات (`check_rendering.py`).
+3. التحقق من التماثل الثنائي التام عربي/إنجليزي 1:1 (`parity.py`).
+4. فحص حزمة البيانات المفتوحة Frictionless (`validate_okf.py`).
+5. تشغيل حزمة الاختبارات الآلية الشاملة المكونة من 28 فحصاً (`tests/`).
+6. اختبار واجهة الأوامر والتصدير (`tasleemat_cli.py`).
