@@ -15,39 +15,39 @@
 ## Alignment Framework
 
 **Strategic Cycle and Horizon:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Enterprise Strategic Objective:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Portfolio Investment Category:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## OKR Mapping and Key Results
 
 **Target Key Result ID and Metric:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Project Deliverable Contribution:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Leading vs Lagging Indicator:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## Confidence Tracking and Pivoting
 
 **Quarterly Confidence Score:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Confidence Variance Rationale:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Strategic Pivot Recommendation:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

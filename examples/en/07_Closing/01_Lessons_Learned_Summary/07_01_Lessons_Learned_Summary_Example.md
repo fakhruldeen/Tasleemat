@@ -17,20 +17,20 @@
 
 | Knowledge Area | What Worked Well | What Can Be Improved |
 | :--- | :--- | :--- |
-| **Requirements Definition and Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Requirements Definition and Management** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | **Scope Definition and Management** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
 | **Schedule Development and Control** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
 | **Cost Estimating and Control** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
 | **Quality Planning and Control** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
-| **Physical Resource Planning and Control** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Team Planning, Development, and Performance** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Communications Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Reporting** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Risk Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Procurement Planning and Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Stakeholder Engagement** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Process Improvement Information** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Product-Specific Information** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Physical Resource Planning and Control** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Team Planning, Development, and Performance** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Communications Management** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Reporting** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Risk Management** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Procurement Planning and Management** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Stakeholder Engagement** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Process Improvement Information** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Product-Specific Information** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | **Other** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
 
 <!-- Column guidance, by row:
@@ -92,10 +92,10 @@
 
 | Risk or Issue Description | Response | Comments |
 | :--- | :--- | :--- |
-| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| Conduct comprehensive end-user enablement workshops | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
+| Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
+| Build interactive executive dashboards and KPI reports | Approved and aligned with Apex Global Solutions governance baseline | Contingency reserve allocated for critical path dependencies. |
+| Conduct comprehensive end-user enablement workshops | Approved and aligned with Apex Global Solutions governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 
@@ -108,10 +108,10 @@
 
 | Defect Description | Resolution | Comments |
 | :--- | :--- | :--- |
-| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| Conduct comprehensive end-user enablement workshops | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
+| Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
+| Build interactive executive dashboards and KPI reports | Approved and aligned with Apex Global Solutions governance baseline | Contingency reserve allocated for critical path dependencies. |
+| Conduct comprehensive end-user enablement workshops | Approved and aligned with Apex Global Solutions governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 
@@ -125,10 +125,10 @@
 
 | Vendor | Issue | Resolution | Comments |
 | :--- | :--- | :--- | :--- |
-| 2026-06-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| 2026-09-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| 2026-11-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| 2027-01-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
+| 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
+| 2026-11-30 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Contingency reserve allocated for critical path dependencies. |
+| 2027-01-31 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 
@@ -137,9 +137,9 @@
 - **Entry:** Identify areas of exceptional performance that can be passed on to other teams. State what was done and what made it work.
 -->
 
-- Fully documented and verified in accordance with enterprise governance baseline.
-- Fully documented and verified in accordance with enterprise governance baseline.
-- Fully documented and verified in accordance with enterprise governance baseline.
+- Fully defined and verified in accordance with Apex Global Solutions operational baseline.
+- Fully defined and verified in accordance with Apex Global Solutions operational baseline.
+- Fully defined and verified in accordance with Apex Global Solutions operational baseline.
 
 ---
 
@@ -148,9 +148,9 @@
 - **Entry:** Identify areas that can be improved for future performance. State the improvement sought, not only the problem.
 -->
 
-- Fully documented and verified in accordance with enterprise governance baseline.
-- Fully documented and verified in accordance with enterprise governance baseline.
-- Fully documented and verified in accordance with enterprise governance baseline.
+- Fully defined and verified in accordance with Apex Global Solutions operational baseline.
+- Fully defined and verified in accordance with Apex Global Solutions operational baseline.
+- Fully defined and verified in accordance with Apex Global Solutions operational baseline.
 
 ---
 

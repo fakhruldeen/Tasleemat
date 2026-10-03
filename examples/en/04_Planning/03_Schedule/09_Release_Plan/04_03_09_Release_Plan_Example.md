@@ -17,10 +17,10 @@
 
 | Release | Start Date | End Date | User Stories | Release Goal | Status |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| Approved and aligned with governance baseline | 2026-04-01 | 2026-06-30 | Approved and aligned with governance baseline | Digital Transformation & Operational Agility | In Progress |
-| Approved and aligned with governance baseline | 2026-06-01 | 2026-09-30 | Approved and aligned with governance baseline | Process Automation & 40% Cycle Time Reduction | Completed |
-| Approved and aligned with governance baseline | 2026-08-15 | 2026-11-30 | Approved and aligned with governance baseline | Real-time Data-Driven Executive Decision Making | Planned |
-| Approved and aligned with governance baseline | 2026-10-01 | 2027-01-31 | Approved and aligned with governance baseline | 100% Security & Regulatory Compliance Assurance | Approved |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-04-01 | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | Digital Transformation & Operational Agility | In Progress |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-06-01 | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | Process Automation & 40% Cycle Time Reduction | Completed |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-08-15 | 2026-11-30 | Approved and aligned with Apex Global Solutions governance baseline | Real-time Data-Driven Executive Decision Making | Planned |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-10-01 | 2027-01-31 | Approved and aligned with Apex Global Solutions governance baseline | 100% Security & Regulatory Compliance Assurance | Approved |
 
 ---
 
@@ -29,9 +29,9 @@
 
 | Sprint | Dates | Sprint Goal | Sprint User Stories | Sprint Status |
 | ---: | ---: | ---: | ---: | ---: |
-| **Sprint 1** | 2026-06-30 | Digital Transformation & Operational Agility | Approved and aligned with governance baseline | In Progress |
-| **Sprint 2** | 2026-09-30 | Process Automation & 40% Cycle Time Reduction | Approved and aligned with governance baseline | Completed |
-| **Sprint 3** | 2026-11-30 | Real-time Data-Driven Executive Decision Making | Approved and aligned with governance baseline | Planned |
+| **Sprint 1** | 2026-06-30 | Digital Transformation & Operational Agility | Approved and aligned with Apex Global Solutions governance baseline | In Progress |
+| **Sprint 2** | 2026-09-30 | Process Automation & 40% Cycle Time Reduction | Approved and aligned with Apex Global Solutions governance baseline | Completed |
+| **Sprint 3** | 2026-11-30 | Real-time Data-Driven Executive Decision Making | Approved and aligned with Apex Global Solutions governance baseline | Planned |
 
 <!-- A release may have several sprints; give each one a row and state which release it belongs to. -->
 

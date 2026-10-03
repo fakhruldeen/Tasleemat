@@ -15,23 +15,23 @@
 ## 1. Activity Identification and Overview
 
 **Activity Code and Title:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Activity Description and Scope Summary:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Assigned Work Package Reference:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 2. Activity Predecessors and Successors
 
 **Predecessor Activities and Logic:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Successor Activities and Logic:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

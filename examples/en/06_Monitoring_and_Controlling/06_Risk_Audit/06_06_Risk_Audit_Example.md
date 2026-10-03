@@ -17,10 +17,10 @@
 | Field | Entry |
 | :--- | :--- |
 | **Audit Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units |
-| **Period Covered** | Approved and aligned with governance baseline |
-| **Level of Analysis** | Approved and aligned with governance baseline |
-| **Reference Documents Reviewed** | Approved and aligned with governance baseline |
-| **Audit Method** | Approved and aligned with governance baseline |
+| **Period Covered** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Level of Analysis** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Reference Documents Reviewed** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Audit Method** | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -28,9 +28,9 @@
 
 | Risk Event | Cause | Response Implemented | Comment |
 | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -38,9 +38,9 @@
 
 | Risk Event | Response | Successful? | Actions to Improve |
 | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -50,27 +50,27 @@
 
 | Risk Management Process | Followed as Planned? | Observation |
 | :--- | :--- | :--- |
-| **Plan Risk Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Identify Risks** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Perform Qualitative Risk Analysis** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Perform Quantitative Risk Analysis** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Plan Risk Responses** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Control Risks** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Plan Risk Management** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Identify Risks** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Perform Qualitative Risk Analysis** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Perform Quantitative Risk Analysis** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Plan Risk Responses** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Control Risks** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ### 4.2 Tools and Techniques
 
 | Risk Management Process | Tools and Techniques Used | Successful? |
 | :--- | :--- | :--- |
-| **Identify Risks** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Perform Qualitative Risk Analysis** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Perform Quantitative Risk Analysis** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Plan Risk Responses** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Control Risks** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Identify Risks** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Perform Qualitative Risk Analysis** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Perform Quantitative Risk Analysis** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Plan Risk Responses** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Control Risks** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
 ## 5. Good Practices
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
@@ -78,14 +78,14 @@ This section has been thoroughly defined and documented in accordance with the T
 
 | Area for Improvement | Improvement Plan | Follow-up Date / Corrective Action |
 | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-30 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-09-30 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-11-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 |
 
 ---
 
 ## 7. Comments
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

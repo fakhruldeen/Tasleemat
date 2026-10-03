@@ -15,36 +15,36 @@
 ## 1. RACI Model Definitions and Key
 
 **Responsible (R) Definition:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Accountable (A) Definition:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Consulted (C) Definition:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Informed (I) Definition:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 2. Assignment Matrix (Work Packages vs Roles)
 
 **WBS Deliverable and Assigned RACI Codes:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Role Coverage and Work Distribution:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 3. Governance and Accountability Rules
 
 **Single Accountability Governance Rule:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+A mandatory 'Human-in-the-Loop' policy is enforced for all automated decisions exceeding $15,000 USD or where the model confidence threshold drops below 90%, requiring explicit management sign-off.
 
 **Escalation and Conflict Resolution Protocol:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+A mandatory 'Human-in-the-Loop' policy is enforced for all automated decisions exceeding $15,000 USD or where the model confidence threshold drops below 90%, requiring explicit management sign-off.
 
 ---
 

@@ -15,7 +15,7 @@
 
 ## 1. Basic Earned Value Metrics
 
-**Budget at Completion (BAC):** Fully defined and validated in accordance with enterprise governance baseline.
+**Budget at Completion (BAC):** $3,500,000 USD (including 10% management contingency reserve).
 
 | Metric | Current Reporting Period | Current Period Cumulative | Past Period Cumulative |
 | :--- | :--- | :--- | :--- |
@@ -55,28 +55,28 @@
 | **To Complete Performance Index (TCPI)** | (BAC - EV) / (BAC - AC) | 2026-Q4 | 2026-Q4 | 2026-Q4 |
 
 **Selected EAC - Justification and Explanation:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 5. Root Cause and Impacts Analysis
 
 **Root cause of schedule variance:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Schedule impact (incl. implications of continued variance):**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Root cause of cost variance:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Budget impact (incl. intended actions/reserves):**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 6. Comments
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

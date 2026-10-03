@@ -25,9 +25,9 @@ Please populate the table below with the following details:
 -->
 | ID | Name | Position/Role | Contact information | Requirements | Expectations | Classification |
 | --- | --- | --- | --- | --- | --- | --- |
-| INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Strategic executive oversight and resource authorization | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration |
-| REQ-02 | Sultan Al-Dossary (VP of Operations) | Business process owner and final acceptance authority | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional |
-| ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Primary commercial user champion and UAT stakeholder | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance |
+| INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Strategic executive oversight and resource authorization | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration |
+| REQ-02 | Sultan Al-Dossary (VP of Operations) | Business process owner and final acceptance authority | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional |
+| ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Primary commercial user champion and UAT stakeholder | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance |
 
 
 ---

@@ -16,10 +16,10 @@
 
 | Field | Entry |
 | :--- | :--- |
-| **Contractor** | Approved and aligned with governance baseline |
-| **Contract Number and Type** | Approved and aligned with governance baseline |
-| **Reporting Period** | Approved and aligned with governance baseline |
-| **Report Submission Date** | Approved and aligned with governance baseline |
+| **Contractor** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Contract Number and Type** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Reporting Period** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Report Submission Date** | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -38,9 +38,9 @@
 
 | Forecast Item | Estimate | Basis |
 | :--- | :--- | :--- |
-| **Estimated Completion Date** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Estimated Completion Date** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | **Estimated Final Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
-| **Key Forecast Assumptions** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Key Forecast Assumptions** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -48,9 +48,9 @@
 
 | Reference | Description | Date Raised | Amount | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Deploy hardened cloud environment and master databases | 2026-06-30 | $950,000 USD | In Progress |
-| Approved and aligned with governance baseline | Automate procurement requisition and inventory workflows | 2026-09-30 | $1,150,000 USD | Completed |
-| Approved and aligned with governance baseline | Build interactive executive dashboards and KPI reports | 2026-11-30 | $780,000 USD | Planned |
+| Approved and aligned with Apex Global Solutions governance baseline | Deploy hardened cloud environment and master databases | 2026-06-30 | $950,000 USD | In Progress |
+| Approved and aligned with Apex Global Solutions governance baseline | Automate procurement requisition and inventory workflows | 2026-09-30 | $1,150,000 USD | Completed |
+| Approved and aligned with Apex Global Solutions governance baseline | Build interactive executive dashboards and KPI reports | 2026-11-30 | $780,000 USD | Planned |
 
 ---
 
@@ -58,9 +58,9 @@
 
 | Risk ID and Description | Probability | Impact | Planned Response |
 | :--- | :--- | :--- | :--- |
-| RSK-01 | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with governance baseline |
-| RSK-02 | Approved and aligned with governance baseline | Rescheduling of operational pilot rollout date | Approved and aligned with governance baseline |
-| RSK-03 | Approved and aligned with governance baseline | Minor reallocation of cloud professional services | Approved and aligned with governance baseline |
+| RSK-01 | Approved and aligned with Apex Global Solutions governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with Apex Global Solutions governance baseline |
+| RSK-02 | Approved and aligned with Apex Global Solutions governance baseline | Rescheduling of operational pilot rollout date | Approved and aligned with Apex Global Solutions governance baseline |
+| RSK-03 | Approved and aligned with Apex Global Solutions governance baseline | Minor reallocation of cloud professional services | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -68,9 +68,9 @@
 
 | Related Variance | Corrective or Preventive Action | Owner | Due Date |
 | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-06-30 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-11-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-06-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | 2026-11-30 |
 
 ---
 
@@ -88,8 +88,8 @@
 
 | Item Requiring Escalation | Escalate To | Decision Required By |
 | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-30 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-09-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
 
 ---
 
@@ -97,13 +97,13 @@
 
 | Change Request Reference | Description | Status |
 | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Deploy hardened cloud environment and master databases | In Progress |
-| Approved and aligned with governance baseline | Automate procurement requisition and inventory workflows | Completed |
+| Approved and aligned with Apex Global Solutions governance baseline | Deploy hardened cloud environment and master databases | In Progress |
+| Approved and aligned with Apex Global Solutions governance baseline | Automate procurement requisition and inventory workflows | Completed |
 
 ---
 
 ## 10. Comments
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

@@ -15,13 +15,13 @@
 ## 1. Tailoring Basis
 <!-- What is being tailored from, what forces the change, what cannot be traded away, and what is inherited. -->
 
-**Organizational Methodology:** Fully defined and validated in accordance with enterprise governance baseline.
+**Organizational Methodology:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Tailoring Drivers:** Fully defined and validated in accordance with enterprise governance baseline.
+**Tailoring Drivers:** Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.
 
-**Applicable Standards:** Fully defined and validated in accordance with enterprise governance baseline.
+**Applicable Standards:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Inherited Tailoring:** Fully defined and validated in accordance with enterprise governance baseline.
+**Inherited Tailoring:** Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.
 
 ---
 
@@ -30,22 +30,22 @@
 
 | Process or Artifact | Standard Requirement | Decision | Rationale | Consequence | Reversibility | Impact on Artifacts |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Rescheduling of operational pilot rollout date |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Minor reallocation of cloud professional services |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2-week schedule slippage on integration testing window |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Rescheduling of operational pilot rollout date |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Minor reallocation of cloud professional services |
 
 ---
 
 ## 3. Governance of Tailoring
 <!-- Who approves, when decisions are revisited, how compliance is checked, and how a baselined decision is changed. -->
 
-**Decision Authority:** Elena Vance, PfMP (Portfolio Transformation Director)
+**Decision Authority:** Mandatory human-in-the-loop review by business division leads for all exceptional and high-impact operations.
 
-**Review and Reapproval:** Fully defined and validated in accordance with enterprise governance baseline.
+**Review and Reapproval:** Mandatory human-in-the-loop review by business division leads for all exceptional and high-impact operations.
 
-**Compliance Check:** Fully defined and validated in accordance with enterprise governance baseline.
+**Compliance Check:** 100% pass score on enterprise cybersecurity baseline and regulatory data privacy compliance audits.
 
-**Change Control Link:** Fully defined and validated in accordance with enterprise governance baseline.
+**Change Control Link:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 

@@ -23,9 +23,9 @@
 
 **Register Scope and Level:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Programs or Projects Covered:** Fully defined and validated in accordance with enterprise governance baseline.
+**Programs or Projects Covered:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Source of Truth or Extract:** Fully defined and validated in accordance with enterprise governance baseline.
+**Source of Truth or Extract:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 **Review Cycle:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
 
@@ -49,11 +49,11 @@
 
 | ID | Predecessor | Successor | Deliverable or Condition | Dependency Type | Required By | Agreed Date | Status | Impact if Late |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| INIT-01 | INIT-01 (Cloud ERP Core) | Smart Supply Chain Engine | Approved and aligned with governance baseline | Finish-to-Start (FS) | 2026-06-30 | 2026-06-30 | In Progress | 2-week schedule slippage on integration testing window |
-| REQ-02 | INIT-02 (Supply Chain) | Executive BI Platform | Approved and aligned with governance baseline | Start-to-Start (SS) | 2026-09-30 | 2026-09-30 | Completed | Rescheduling of operational pilot rollout date |
-| ACT-03 | INIT-01 (Cloud Architecture) | Employee Self-Service Portal | Approved and aligned with governance baseline | Finish-to-Finish (FF) | 2026-11-30 | 2026-11-30 | Planned | Minor reallocation of cloud professional services |
-| BEN-04 | INIT-03 (Data Layer) | Enterprise API Gateway | Approved and aligned with governance baseline | Finish-to-Start (FS) | 2027-01-31 | 2027-01-31 | Approved | Postponement of cohort 2 training wave |
-| WBS-05 | INIT-01 (Cloud ERP Core) | Smart Supply Chain Engine | Approved and aligned with governance baseline | Finish-to-Start (FS) | 2027-03-31 | 2027-03-31 | In Progress | 2-week schedule slippage on integration testing window |
+| INIT-01 | INIT-01 (Cloud ERP Core) | Smart Supply Chain Engine | Approved and aligned with Apex Global Solutions governance baseline | Finish-to-Start (FS) | 2026-06-30 | 2026-06-30 | In Progress | 2-week schedule slippage on integration testing window |
+| REQ-02 | INIT-02 (Supply Chain) | Executive BI Platform | Approved and aligned with Apex Global Solutions governance baseline | Start-to-Start (SS) | 2026-09-30 | 2026-09-30 | Completed | Rescheduling of operational pilot rollout date |
+| ACT-03 | INIT-01 (Cloud Architecture) | Employee Self-Service Portal | Approved and aligned with Apex Global Solutions governance baseline | Finish-to-Finish (FF) | 2026-11-30 | 2026-11-30 | Planned | Minor reallocation of cloud professional services |
+| BEN-04 | INIT-03 (Data Layer) | Enterprise API Gateway | Approved and aligned with Apex Global Solutions governance baseline | Finish-to-Start (FS) | 2027-01-31 | 2027-01-31 | Approved | Postponement of cohort 2 training wave |
+| WBS-05 | INIT-01 (Cloud ERP Core) | Smart Supply Chain Engine | Approved and aligned with Apex Global Solutions governance baseline | Finish-to-Start (FS) | 2027-03-31 | 2027-03-31 | In Progress | 2-week schedule slippage on integration testing window |
 
 ---
 
@@ -69,10 +69,10 @@
 
 | ID | External Party | Dependency Description | Contractual Basis | Required By | Status | Owner |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| INIT-01 | Approved and aligned with governance baseline | 2026-06-30 | Approved and aligned with governance baseline | 2026-06-30 | In Progress | Elena Vance, PfMP |
-| REQ-02 | Approved and aligned with governance baseline | 2026-09-30 | Approved and aligned with governance baseline | 2026-09-30 | Completed | Faisal Al-Harbi, PMP |
-| ACT-03 | Approved and aligned with governance baseline | 2026-11-30 | Approved and aligned with governance baseline | 2026-11-30 | Planned | Tariq Al-Mansoor, PfMP |
-| BEN-04 | Approved and aligned with governance baseline | 2027-01-31 | Approved and aligned with governance baseline | 2027-01-31 | Approved | Sultan Al-Dossary |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | In Progress | Elena Vance, PfMP |
+| REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Completed | Faisal Al-Harbi, PMP |
+| ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 | Planned | Tariq Al-Mansoor, PfMP |
+| BEN-04 | Approved and aligned with Apex Global Solutions governance baseline | 2027-01-31 | Approved and aligned with Apex Global Solutions governance baseline | 2027-01-31 | Approved | Sultan Al-Dossary |
 
 ---
 
@@ -85,10 +85,10 @@
 
 | Dependency ID | Trigger | Escalated To | Action Agreed | Date |
 | ---: | ---: | ---: | ---: | ---: |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-30 |
-| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-09-30 |
-| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-11-30 |
-| BEN-04 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2027-01-31 |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
+| REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
+| ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 |
+| BEN-04 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2027-01-31 |
 
 ---
 

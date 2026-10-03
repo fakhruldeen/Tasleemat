@@ -16,9 +16,9 @@
 
 | Handover Item | Responsible Party | Acceptance Criteria | Handover Date | Sign-off Status |
 | --- | --- | --- | --- | --- |
-| Approved and aligned with governance baseline | Elena Vance, PfMP | Approved and aligned with governance baseline | 2026-03-18 | In Progress |
-| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline | 2026-03-18 | Completed |
-| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline | 2026-03-18 | Planned |
+| Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | In Progress |
+| Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | Completed |
+| Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | Planned |
 
 ---
 

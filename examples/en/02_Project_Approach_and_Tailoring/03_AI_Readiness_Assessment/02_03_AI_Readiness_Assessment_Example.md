@@ -19,11 +19,11 @@
 
 **Assessment Scope:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Assessment Method:** Fully defined and validated in accordance with enterprise governance baseline.
+**Assessment Method:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Assessor and Date:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
+**Assessor and Date:** Tariq Al-Mansoor, PfMP (Lead PMO Assessor) - 2026-03-15
 
-**Evidence Basis:** Fully defined and validated in accordance with enterprise governance baseline.
+**Evidence Basis:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
@@ -32,9 +32,9 @@
 
 | Data Source | Data Availability | Data Quality | Data Lineage and Documentation | Labelling and Ground Truth | Data Governance and Access |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Secure electronic archiving with compliance audit | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| API ingestion streams with tokenized logging | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -43,9 +43,9 @@
 
 | Concern | Current State | Gap | Cost and Effort to Close | Severity |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | In Progress | Approved and aligned with governance baseline | $950,000 USD | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Completed | Approved and aligned with governance baseline | $1,150,000 USD | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Planned | Approved and aligned with governance baseline | $780,000 USD | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | In Progress | Approved and aligned with Apex Global Solutions governance baseline | $950,000 USD | Medium (Subject to quarterly audit) |
+| Approved and aligned with Apex Global Solutions governance baseline | Completed | Approved and aligned with Apex Global Solutions governance baseline | $1,150,000 USD | Low (Within acceptable operating bounds) |
+| Approved and aligned with Apex Global Solutions governance baseline | Planned | Approved and aligned with Apex Global Solutions governance baseline | $780,000 USD | High (Requires mandatory human approval) |
 
 ---
 
@@ -54,9 +54,9 @@
 
 | Role | Filled | Level | Domain Knowledge | How the Gap Closes |
 | :--- | :--- | :--- | :--- | :--- |
-| Strategic executive oversight and resource authorization | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration | Approved and aligned with governance baseline |
-| Business process owner and final acceptance authority | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional | Approved and aligned with governance baseline |
-| Primary commercial user champion and UAT stakeholder | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance | Approved and aligned with governance baseline |
+| Strategic executive oversight and resource authorization | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration | Approved and aligned with Apex Global Solutions governance baseline |
+| Business process owner and final acceptance authority | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional | Approved and aligned with Apex Global Solutions governance baseline |
+| Primary commercial user champion and UAT stakeholder | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -65,26 +65,26 @@
 
 | Condition | Current State | Evidence | Owner | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | In Progress | INIT-01 | Elena Vance, PfMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Completed | REQ-02 | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Planned | ACT-03 | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | In Progress | INIT-01 | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Completed | REQ-02 | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Planned | ACT-03 | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
 ## 6. Assessment Outcome and Route Forward
 <!-- The scores, the aggregate and its weights, the gaps that block rather than slow, the recommended route, and what would reopen the assessment. -->
 
-**Dimension Scores:** Fully defined and validated in accordance with enterprise governance baseline.
+**Dimension Scores:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Weighted Overall Score:** Fully defined and validated in accordance with enterprise governance baseline.
+**Weighted Overall Score:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Blocking Gaps:** Fully defined and validated in accordance with enterprise governance baseline.
+**Blocking Gaps:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Recommended Route:** Fully defined and validated in accordance with enterprise governance baseline.
+**Recommended Route:** Full migration to cloud-native unified ERP platform executed across 3 structured rollout waves.
 
-**Remediation Plan:** Fully defined and validated in accordance with enterprise governance baseline.
+**Remediation Plan:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Reassessment Trigger:** Fully defined and validated in accordance with enterprise governance baseline.
+**Reassessment Trigger:** Scope baseline shift > 10%, schedule slip > 2 weeks, or regulatory framework modifications.
 
 ---
 

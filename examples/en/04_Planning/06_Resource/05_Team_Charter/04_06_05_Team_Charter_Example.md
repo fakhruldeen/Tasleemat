@@ -25,10 +25,10 @@ The purpose of this project is to consolidate, modernize, and automate Apex Glob
 ## 2. Operating Agreements and Guidelines
 
 **Working Norms and Ground Rules:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Core Working Hours and Availability:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
@@ -36,24 +36,24 @@ This section has been thoroughly defined and documented in accordance with the T
 
 **Meeting Cadence and Rules:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Communication Channels Usage:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 
 ## 4. Decision-Making and Conflict Resolution
 
 **Decision-Making Framework:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Conflict Escalation and Resolution Steps:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Team Signatures and Commitment:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

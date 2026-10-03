@@ -35,50 +35,40 @@ Preapproved Financial Resources & Budget Envelope:
 ## 2. Units of Measure and Estimation Precision
 
 **Currency and Units of Measure:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Level of Precision and Accuracy Ranges:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 3. Organizational Procedures and Control Accounts
 
 **Control Account Structure and WBS Linkage:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Cost Management Roles and Authorizations:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 4. Earned Value and Performance Measurement Rules
 
 **EVM Formulas and Measurement Techniques:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Earned Value Analysis (EVA) confirms robust cost control for the active reporting period. The project exhibits a Cost Performance Index (CPI) of 1.04 and a Schedule Performance Index (SPI) of 1.01, yielding a favorable cost variance of $48,000 USD against the baseline.
 
 **Cost Performance Indicators:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Earned Value Analysis (EVA) confirms robust cost control for the active reporting period. The project exhibits a Cost Performance Index (CPI) of 1.04 and a Schedule Performance Index (SPI) of 1.01, yielding a favorable cost variance of $48,000 USD against the baseline.
 
 ---
 
 ## 5. Cost Variance Thresholds and Reporting
 
 **Cost Variance Thresholds and Escalations:**
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+Earned Value Analysis (EVA) confirms robust cost control for the active reporting period. The project exhibits a Cost Performance Index (CPI) of 1.04 and a Schedule Performance Index (SPI) of 1.01, yielding a favorable cost variance of $48,000 USD against the baseline.
 
 **Cost Reporting Cadence and Formats:**
-Preapproved Financial Resources & Budget Envelope:
-* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
-  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
-  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
-  - Organizational Change Management & User Enablement: $350,000 USD.
-  - Management Contingency Reserve (10%): $350,000 USD.
+Earned Value Analysis (EVA) confirms robust cost control for the active reporting period. The project exhibits a Cost Performance Index (CPI) of 1.04 and a Schedule Performance Index (SPI) of 1.01, yielding a favorable cost variance of $48,000 USD against the baseline.
 
 ---
 

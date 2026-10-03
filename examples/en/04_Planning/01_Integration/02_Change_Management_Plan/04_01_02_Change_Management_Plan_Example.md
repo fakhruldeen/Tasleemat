@@ -16,15 +16,15 @@
 
 **Change Philosophy and Governance:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Change Thresholds and Triggers:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Change Tracking and Tools:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 
@@ -32,15 +32,15 @@ A structured Prosci ADKAR change campaign engages 450+ enterprise users across b
 
 **Minor Change Definition:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Major Change Definition:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Emergency Change Definition:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 
@@ -48,15 +48,15 @@ A structured Prosci ADKAR change campaign engages 450+ enterprise users across b
 
 **CCB Composition and Roles:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Meeting Cadence and Quorum:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Escalation and Delegation Rules:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 
@@ -64,19 +64,19 @@ A structured Prosci ADKAR change campaign engages 450+ enterprise users across b
 
 **Change Submission Workflow:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Impact Assessment Methodology:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Approval and Baseline Update Protocol:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Communication and Implementation:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 

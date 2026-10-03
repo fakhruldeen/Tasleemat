@@ -25,12 +25,12 @@ Check the box for the area or areas audited.
 ---
 
 ## 2. Good Practices from Similar Projects
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 3. Areas for Improvement
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
@@ -38,24 +38,24 @@ This section has been thoroughly defined and documented in accordance with the T
 
 | ID | Defect | Action | Responsible Party | Due Date |
 | :--- | :--- | :--- | :--- | :--- |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-06-30 |
-| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-06-30 |
+| REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
 
 ---
 
 ## 5. Implementation Tracking of Approved Changes
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 
 ## 6. Information to Share with Other Projects
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 7. Comments
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

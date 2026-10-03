@@ -34,10 +34,10 @@
 
 | Dimension | Rating | Comments |
 | :--- | :--- | :--- |
-| **Communication** | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| **Collaboration** | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| **Communication** | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| **Collaboration** | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
 | **Conflict management** | Resolve team operational conflicts; escalate strategic disputes to Steering Committee | Resolve team operational conflicts; escalate strategic disputes to Steering Committee |
-| **Decision making** | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
+| **Decision making** | Approved and aligned with Apex Global Solutions governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 
@@ -45,8 +45,8 @@
 
 | Characteristic | Rating | Comments |
 | :--- | :--- | :--- |
-| **Team Morale** | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| **Cohesiveness** | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| **Team Morale** | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| **Cohesiveness** | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
 
 ---
 
@@ -54,8 +54,8 @@
 
 | Area | Rating | Comments |
 | :--- | :--- | :--- |
-| **Strengths** | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| **Weaknesses** | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| **Strengths** | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| **Weaknesses** | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
 
 ---
 
@@ -63,8 +63,8 @@
 
 | Area | Approach | Actions |
 | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 *Legend for Approach: Training, Mentoring, Coaching*
 

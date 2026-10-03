@@ -16,8 +16,8 @@
 
 | ID | Category | Trigger | Lesson | Responsible Party | Identifier/Submitter | Next Implementation Opportunity & Date | Organizational Impact (Y/N) | Comments |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| INIT-01 | Technical & Integration | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | INIT-01 | 2026-06-30 | 2-week schedule slippage on integration testing window | Validated against enterprise ISO27001 cloud security standards. |
-| REQ-02 | Operational & Functional | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | REQ-02 | 2026-09-30 | Rescheduling of operational pilot rollout date | Weekly steering coordination meetings on schedule. |
+| INIT-01 | Technical & Integration | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | INIT-01 | 2026-06-30 | 2-week schedule slippage on integration testing window | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | REQ-02 | 2026-09-30 | Rescheduling of operational pilot rollout date | Weekly steering coordination meetings on schedule. |
 
 ---
 

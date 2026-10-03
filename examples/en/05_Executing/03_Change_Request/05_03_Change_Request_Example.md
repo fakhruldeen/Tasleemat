@@ -14,7 +14,7 @@
 
 ## 1. Requestor Information
 **Requestor Name and Position:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
@@ -26,7 +26,7 @@ This section has been thoroughly defined and documented in accordance with the T
 - [ ] Cost
 - [ ] Quality
 - [ ] Resource
-- [ ] Other: Fully documented and verified in accordance with enterprise governance baseline.
+- [ ] Other: Fully defined and verified in accordance with Apex Global Solutions operational baseline.
 
 **Change Type:**
 - [ ] Mandatory (e.g., Legal / Compliance)
@@ -38,15 +38,15 @@ This section has been thoroughly defined and documented in accordance with the T
 
 ### 3.1 Description of Change
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ### 3.2 Justification for Proposed Change
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ### 3.3 Implications of Not Making the Change
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 
@@ -66,7 +66,7 @@ A structured Prosci ADKAR change campaign engages 450+ enterprise users across b
 ---
 
 ## 5. Comments
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

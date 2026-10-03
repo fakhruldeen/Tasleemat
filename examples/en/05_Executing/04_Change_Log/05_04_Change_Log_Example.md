@@ -16,8 +16,8 @@
 
 | ID | Category | Description | Requestor | Submission Date | Status | Disposition | Cost/Schedule Impact | Type (Mandatory/Discretionary) | Configurable Items Impacted |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-06-30 | In Progress | Approved and aligned with governance baseline | $950,000 USD | Technical & Integration | 2-week schedule slippage on integration testing window |
-| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-09-30 | Completed | Approved and aligned with governance baseline | $1,150,000 USD | Operational & Functional | Rescheduling of operational pilot rollout date |
+| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | In Progress | Approved and aligned with Apex Global Solutions governance baseline | $950,000 USD | Technical & Integration | 2-week schedule slippage on integration testing window |
+| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Completed | Approved and aligned with Apex Global Solutions governance baseline | $1,150,000 USD | Operational & Functional | Rescheduling of operational pilot rollout date |
 
 ---
 

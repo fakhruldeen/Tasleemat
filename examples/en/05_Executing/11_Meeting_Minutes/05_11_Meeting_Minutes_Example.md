@@ -16,25 +16,25 @@
 
 ### Meeting Objective
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ### Attendees
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ### Key Discussion Points
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ### Decisions Made
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
@@ -42,9 +42,9 @@ This section has been thoroughly defined and documented in accordance with the T
 
 | Action | Owner | Due Date | Status |
 | --- | --- | --- | --- |
-| Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-03-18 | In Progress |
-| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-03-18 | Completed |
-| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-03-18 | Planned |
+| Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-03-18 | In Progress |
+| Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-03-18 | Completed |
+| Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | 2026-03-18 | Planned |
 
 ---
 

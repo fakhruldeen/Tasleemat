@@ -28,9 +28,9 @@ Please provide a comprehensive log of all assumptions and constraints for the pr
 -->
 | ID | Type | Category | Description | Impact if invalid | Responsible party | Due date | Actions | Status | Comments |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| INIT-01 | Technical & Integration | Technical & Integration | Deploy hardened cloud environment and master databases | INIT-01 | Elena Vance, PfMP | 2026-06-30 | Approved and aligned with governance baseline | In Progress | Validated against enterprise ISO27001 cloud security standards. |
-| REQ-02 | Operational & Functional | Operational & Functional | Automate procurement requisition and inventory workflows | REQ-02 | Faisal Al-Harbi, PMP | 2026-09-30 | Approved and aligned with governance baseline | Completed | Weekly steering coordination meetings on schedule. |
-| ACT-03 | Governance & Compliance | Governance & Compliance | Build interactive executive dashboards and KPI reports | ACT-03 | Tariq Al-Mansoor, PfMP | 2026-11-30 | Approved and aligned with governance baseline | Planned | Contingency reserve allocated for critical path dependencies. |
+| INIT-01 | Technical & Integration | Technical & Integration | Deploy hardened cloud environment and master databases | INIT-01 | Elena Vance, PfMP | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | In Progress | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Operational & Functional | Automate procurement requisition and inventory workflows | REQ-02 | Faisal Al-Harbi, PMP | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | Completed | Weekly steering coordination meetings on schedule. |
+| ACT-03 | Governance & Compliance | Governance & Compliance | Build interactive executive dashboards and KPI reports | ACT-03 | Tariq Al-Mansoor, PfMP | 2026-11-30 | Approved and aligned with Apex Global Solutions governance baseline | Planned | Contingency reserve allocated for critical path dependencies. |
 
 ---
 

@@ -23,13 +23,13 @@
 
 **Program Purpose:** Modernize core IT infrastructure, consolidate platforms, and standardize digital services.
 
-**Business Driver and Strategic Alignment:** Fully defined and validated in accordance with enterprise governance baseline.
+**Business Driver and Strategic Alignment:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 **Problem or Opportunity Statement:** Version 1.0 (Formally Approved)
 
-**Consequence of Not Proceeding:** Fully defined and validated in accordance with enterprise governance baseline.
+**Consequence of Not Proceeding:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Program Vision Statement:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
+**Program Vision Statement:** Establish an intelligent, fully automated enterprise operations ecosystem achieving global best practices by 2028.
 
 ---
 
@@ -45,11 +45,11 @@
 
 | ID | Objective | Measure | Target Date | Owner | Status |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| INIT-01 | Digital Transformation & Operational Agility | Zero critical production defects at release | 2026-06-30 | Elena Vance, PfMP | In Progress |
+| INIT-01 | Digital Transformation & Operational Agility | Model inference accuracy & data reconciliation >= 95% | 2026-06-30 | Elena Vance, PfMP | In Progress |
 | REQ-02 | Process Automation & 40% Cycle Time Reduction | Annual recurring operational savings >= $950K USD | 2026-09-30 | Faisal Al-Harbi, PMP | Completed |
 | ACT-03 | Real-time Data-Driven Executive Decision Making | Sub-second transaction response latency (< 800ms) | 2026-11-30 | Tariq Al-Mansoor, PfMP | Planned |
 | BEN-04 | 100% Security & Regulatory Compliance Assurance | End-user CSAT score >= 90% in audit | 2027-01-31 | Sultan Al-Dossary | Approved |
-| WBS-05 | Digital Transformation & Operational Agility | Zero critical production defects at release | 2027-03-31 | Elena Vance, PfMP | In Progress |
+| WBS-05 | Digital Transformation & Operational Agility | Model inference accuracy & data reconciliation >= 95% | 2027-03-31 | Elena Vance, PfMP | In Progress |
 
 ---
 
@@ -70,33 +70,33 @@
 
 | Benefit ID | Benefit | Category | Beneficiary | Realization Mechanism | Realization Date |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| INIT-01 | Approved and aligned with governance baseline | Technical & Integration | Elena Vance, PfMP | Approved and aligned with governance baseline | 2026-06-30 |
-| REQ-02 | Approved and aligned with governance baseline | Operational & Functional | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline | 2026-09-30 |
-| ACT-03 | Approved and aligned with governance baseline | Governance & Compliance | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline | 2026-11-30 |
-| BEN-04 | Approved and aligned with governance baseline | Cloud Infrastructure | Sultan Al-Dossary | Approved and aligned with governance baseline | 2027-01-31 |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
+| REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
+| ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 |
+| BEN-04 | Approved and aligned with Apex Global Solutions governance baseline | Cloud Infrastructure | Sultan Al-Dossary | Approved and aligned with Apex Global Solutions governance baseline | 2027-01-31 |
 
 ---
 
 ## 5. Program Manager Authority and Governance
 
 
-**Program Manager Authority Statement:** Elena Vance, PfMP (Portfolio Transformation Director)
+**Program Manager Authority Statement:** Full authority to direct program tracks, approve interim deliverables, and allocate resources up to $150,000 USD.
 
-**Authority Retained by the Sponsor:** Elena Vance, PfMP (Portfolio Transformation Director)
+**Authority Retained by the Sponsor:** Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.
 
-**Program Governance Forum:** Fully defined and validated in accordance with enterprise governance baseline.
+**Program Governance Forum:** Mandatory human-in-the-loop review by business division leads for all exceptional and high-impact operations.
 
-**Reporting Cadence and Audience:** Fully defined and validated in accordance with enterprise governance baseline.
+**Reporting Cadence and Audience:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Escalation Path:** Fully defined and validated in accordance with enterprise governance baseline.
+**Escalation Path:** Squad Lead -> Project Manager -> PMO Director -> Executive Steering Committee.
 
-**Funding Position:** Fully defined and validated in accordance with enterprise governance baseline.
+**Funding Position:** Fully funded and pre-approved under FY2026-2027 Capital Expenditure (CAPEX) budget.
 
 | Decision Type | Authority Level | Escalation Path | Limits or Conditions |
 | ---: | ---: | ---: | ---: |
-| Technical & Integration | Full executive authority to charter project, approve budget envelope, and commit resources | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Operational & Functional | Business requirements sign-off and final operational acceptance authority | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Governance & Compliance | Governance oversight, stage-gate audit validation, and method compliance | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Technical & Integration | Full executive authority to charter project, approve budget envelope, and commit resources | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Operational & Functional | Business requirements sign-off and final operational acceptance authority | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Governance & Compliance | Governance oversight, stage-gate audit validation, and method compliance | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -120,11 +120,11 @@
  objective, and who takes that decision. Add or remove rows as the program's
  governance requires. -->
 
-**Defined Response:** Fully defined and validated in accordance with enterprise governance baseline.
+**Defined Response:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Decision Authority:** Elena Vance, PfMP (Portfolio Transformation Director)
+**Decision Authority:** Mandatory human-in-the-loop review by business division leads for all exceptional and high-impact operations.
 
-**Trigger for Reassessment:** Fully defined and validated in accordance with enterprise governance baseline.
+**Trigger for Reassessment:** Active operational monitoring with rapid response workflows triggered upon threshold deviations.
 
 ---
 

@@ -17,11 +17,11 @@
 
 | ID | Requirement | Acceptance Criteria | Validation Method | Verification Method | Status | Sign-off | Date |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 | Approved and aligned with governance baseline | In Progress | [ Sign here... ] | 2026-03-18 |
-| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 | Approved and aligned with governance baseline | Completed | [ Sign here... ] | 2026-03-18 |
-| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 | Approved and aligned with governance baseline | Planned | [ Sign here... ] | 2026-03-18 |
-| BEN-04 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | BEN-04 | Approved and aligned with governance baseline | Approved | [ Sign here... ] | 2026-03-18 |
-| WBS-05 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | WBS-05 | Approved and aligned with governance baseline | In Progress | [ Sign here... ] | 2026-03-18 |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | In Progress | [ Sign here... ] | 2026-03-18 |
+| REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Completed | [ Sign here... ] | 2026-03-18 |
+| ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Planned | [ Sign here... ] | 2026-03-18 |
+| BEN-04 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | BEN-04 | Approved and aligned with Apex Global Solutions governance baseline | Approved | [ Sign here... ] | 2026-03-18 |
+| WBS-05 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | WBS-05 | Approved and aligned with Apex Global Solutions governance baseline | In Progress | [ Sign here... ] | 2026-03-18 |
 
 
 <!--

@@ -16,10 +16,10 @@
 
 | Field | Entry |
 | :--- | :--- |
-| **Procurements or Contracts Audited** | Approved and aligned with governance baseline |
+| **Procurements or Contracts Audited** | Approved and aligned with Apex Global Solutions governance baseline |
 | **Audit Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units |
-| **Period Covered** | Approved and aligned with governance baseline |
-| **Audit Method** | Approved and aligned with governance baseline |
+| **Period Covered** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Audit Method** | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -51,14 +51,14 @@
 
 | Procurement Process | Followed as Planned? | Tools and Techniques Used | Effective? |
 | :--- | :--- | :--- | :--- |
-| **Plan Procurements** | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Conduct Procurements** | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| **Control Procurements** | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Plan Procurements** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Conduct Procurements** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| **Control Procurements** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
 ## 5. Good Practices to Share
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
@@ -66,14 +66,14 @@ This section has been thoroughly defined and documented in accordance with the T
 
 | Area for Improvement | Recommended Change | Owner | Reference |
 | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | 2026-06-30 | Elena Vance, PfMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-09-30 | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-11-30 | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
 ## 7. Comments
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 

@@ -24,11 +24,11 @@
 
 **Matrix Scope and Level:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Capacity Unit of Measure:** Fully defined and validated in accordance with enterprise governance baseline.
+**Capacity Unit of Measure:** Full-Time Equivalent (FTE) Billable Work Hours, benchmarked at 160 hours per month per engineer.
 
 **Periods Covered:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
 
-**Source of Truth or Extract:** Fully defined and validated in accordance with enterprise governance baseline.
+**Source of Truth or Extract:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 **Matrix Owner:** Elena Vance, PfMP (Portfolio Transformation Director)
 
@@ -51,11 +51,11 @@
 
 | ID | Resource Role or Team | Period | Total Available | Allocated | Remaining | Constraints or Single Points of Failure | Notes |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| INIT-01 | Strategic executive oversight and resource authorization | 2026-Q2 | 60 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| REQ-02 | Business process owner and final acceptance authority | 2026-Q3 | 40 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| ACT-03 | Primary commercial user champion and UAT stakeholder | 2026-Q4 | 50 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| BEN-04 | Regulatory compliance and data governance validator | 2027-Q1 | 60 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
-| WBS-05 | Strategic executive oversight and resource authorization | 2027-Q2 | 60 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| INIT-01 | Automated database ETL pipeline extraction | 2026-Q2 | 60 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Secure electronic archiving with compliance audit | 2026-Q3 | 40 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
+| ACT-03 | API ingestion streams with tokenized logging | 2026-Q4 | 50 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Contingency reserve allocated for critical path dependencies. |
+| BEN-04 | Automated database ETL pipeline extraction | 2027-Q1 | 60 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational KPIs performing within target tolerance. |
+| WBS-05 | Secure electronic archiving with compliance audit | 2027-Q2 | 60 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 
 ---
 
@@ -64,10 +64,10 @@
 
 | ID | Resource Role | Period | Required Capacity | Source of Demand | Priority |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| INIT-01 | Strategic executive oversight and resource authorization | 2026-Q2 | 480 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| REQ-02 | Business process owner and final acceptance authority | 2026-Q3 | 620 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| ACT-03 | Primary commercial user champion and UAT stakeholder | 2026-Q4 | 540 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| BEN-04 | Regulatory compliance and data governance validator | 2027-Q1 | 500 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| INIT-01 | Automated database ETL pipeline extraction | 2026-Q2 | 480 FTE Hours / mo | Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline |
+| REQ-02 | Secure electronic archiving with compliance audit | 2026-Q3 | 620 FTE Hours / mo | Secure electronic archiving with compliance audit | Approved and aligned with Apex Global Solutions governance baseline |
+| ACT-03 | API ingestion streams with tokenized logging | 2026-Q4 | 540 FTE Hours / mo | API ingestion streams with tokenized logging | Approved and aligned with Apex Global Solutions governance baseline |
+| BEN-04 | Automated database ETL pipeline extraction | 2027-Q1 | 500 FTE Hours / mo | Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -83,10 +83,10 @@
 
 | Resource Role | Gap | Period | Resolution Planned | Resolution Owner | Resolution Date |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| Strategic executive oversight and resource authorization | Approved and aligned with governance baseline | 2026-Q2 | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-06-30 |
-| Business process owner and final acceptance authority | Approved and aligned with governance baseline | 2026-Q3 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
-| Primary commercial user champion and UAT stakeholder | Approved and aligned with governance baseline | 2026-Q4 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-11-30 |
-| Regulatory compliance and data governance validator | Approved and aligned with governance baseline | 2027-Q1 | Approved and aligned with governance baseline | Sultan Al-Dossary | 2027-01-31 |
+| Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline | 2026-Q2 | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-06-30 |
+| Secure electronic archiving with compliance audit | Approved and aligned with Apex Global Solutions governance baseline | 2026-Q3 | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
+| API ingestion streams with tokenized logging | Approved and aligned with Apex Global Solutions governance baseline | 2026-Q4 | Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | 2026-11-30 |
+| Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline | 2027-Q1 | Approved and aligned with Apex Global Solutions governance baseline | Sultan Al-Dossary | 2027-01-31 |
 
 ---
 
@@ -95,9 +95,9 @@
 
 | Resource Role | Contingency Type | Contingency Amount | How It Would Be Used |
 | ---: | ---: | ---: | ---: |
-| Strategic executive oversight and resource authorization | Technical & Integration | $950,000 USD | Approved and aligned with governance baseline |
-| Business process owner and final acceptance authority | Operational & Functional | $1,150,000 USD | Approved and aligned with governance baseline |
-| Primary commercial user champion and UAT stakeholder | Governance & Compliance | $780,000 USD | Approved and aligned with governance baseline |
+| Automated database ETL pipeline extraction | Technical & Integration | $950,000 USD | Approved and aligned with Apex Global Solutions governance baseline |
+| Secure electronic archiving with compliance audit | Operational & Functional | $1,150,000 USD | Approved and aligned with Apex Global Solutions governance baseline |
+| API ingestion streams with tokenized logging | Governance & Compliance | $780,000 USD | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 

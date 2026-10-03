@@ -14,13 +14,13 @@
 ## 1. Persona and Problem
 <!-- Who this is for, what they are trying to do, how often they do it, what it costs them, and who else the change touches. -->
 
-**Primary Persona:** Fully defined and validated in accordance with enterprise governance baseline.
+**Primary Persona:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**What They Are Trying to Do:** Fully defined and validated in accordance with enterprise governance baseline.
+**What They Are Trying to Do:** Reduce purchase order cycle time by 40% and eliminate data entry reconciliation errors to < 0.1%
 
-**Frequency and Stakes:** Fully defined and validated in accordance with enterprise governance baseline.
+**Frequency and Stakes:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Organisations and Roles Affected:** Fully defined and validated in accordance with enterprise governance baseline.
+**Organisations and Roles Affected:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
@@ -31,16 +31,16 @@
 
 | # | Activity | Purpose for the Persona | Source of Evidence |
 | :--- | :--- | :--- | :--- |
-| 1 | Unified Cloud ERP Core Architecture | Approved and aligned with governance baseline | INIT-01 |
-| 2 | Automated Procurement & Smart Supply Chain Engine | Approved and aligned with governance baseline | REQ-02 |
-| 3 | Executive Business Intelligence & Reporting Platform | Approved and aligned with governance baseline | ACT-03 |
-| 4 | Employee Self-Service & HR Capital Portal | Approved and aligned with governance baseline | BEN-04 |
+| 1 | Unified Cloud ERP Core Architecture | Approved and aligned with Apex Global Solutions governance baseline | INIT-01 |
+| 2 | Automated Procurement & Smart Supply Chain Engine | Approved and aligned with Apex Global Solutions governance baseline | REQ-02 |
+| 3 | Executive Business Intelligence & Reporting Platform | Approved and aligned with Apex Global Solutions governance baseline | ACT-03 |
+| 4 | Employee Self-Service & HR Capital Portal | Approved and aligned with Apex Global Solutions governance baseline | BEN-04 |
 
-**Backbone Source:** Fully defined and validated in accordance with enterprise governance baseline.
+**Backbone Source:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Activities Deferred:** Fully defined and validated in accordance with enterprise governance baseline.
+**Activities Deferred:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Optional and Variable Paths:** Fully defined and validated in accordance with enterprise governance baseline.
+**Optional and Variable Paths:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
@@ -51,40 +51,40 @@
 
 | Activity | Step 1 | Step 2 | Step 3 | Vertical Slice Complete |
 | :--- | :--- | :--- | :--- | :--- |
-| Unified Cloud ERP Core Architecture | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Automated Procurement & Smart Supply Chain Engine | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Executive Business Intelligence & Reporting Platform | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Employee Self-Service & HR Capital Portal | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Unified Cloud ERP Core Architecture | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Automated Procurement & Smart Supply Chain Engine | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Executive Business Intelligence & Reporting Platform | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Employee Self-Service & HR Capital Portal | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
-**Slices as Vertical Columns:** Fully defined and validated in accordance with enterprise governance baseline.
+**Slices as Vertical Columns:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Walking Skeleton:** Fully defined and validated in accordance with enterprise governance baseline.
+**Walking Skeleton:** Minimal end-to-end functional thread: Requisition creation, manager approval, and cloud invoice generation.
 
-**Slice Sizing Evidence:** Fully defined and validated in accordance with enterprise governance baseline.
+**Slice Sizing Evidence:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
 ## 4. Release Slicing
 
 
-**MVP Boundary:** Fully defined and validated in accordance with enterprise governance baseline.
+**MVP Boundary:** Core procurement, inventory ledger, and financial billing integration.
 
-**Outcome of the First Release:** Fully defined and validated in accordance with enterprise governance baseline.
+**Outcome of the First Release:** Pilot rollout (MVP) deployed across 3 regional distribution hubs for performance validation.
 
-**Validation Plan:** Fully defined and validated in accordance with enterprise governance baseline.
+**Validation Plan:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Slices Deferred Beyond MVP:** Fully defined and validated in accordance with enterprise governance baseline.
+**Slices Deferred Beyond MVP:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
 ## 5. Beyond the First Release
 <!-- Columns considered later with their dependencies, work the map does not yet contain, and what this product will not do. -->
 
-**Later Release Candidates:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
+**Later Release Candidates:** Mobile self-service portal, international payment gateway integrations, and predictive analytics engine.
 
-**Emergent Work Anticipated:** Fully defined and validated in accordance with enterprise governance baseline.
+**Emergent Work Anticipated:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Explicitly Out of Scope:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
+**Explicitly Out of Scope:** On-premise hardware procurement and legacy codebase maintenance beyond cutover window.
 
 ---
 
@@ -93,11 +93,11 @@
 
 **Assumptions and Unvalidated Beliefs:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
 
-**Risks to the Map:** Fully defined and validated in accordance with enterprise governance baseline.
+**Risks to the Map:** Active operational monitoring with rapid response workflows triggered upon threshold deviations.
 
 **Update Cadence and Owners:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
 
-**Traceability to Backlog and Release:** Fully defined and validated in accordance with enterprise governance baseline.
+**Traceability to Backlog and Release:** Two-week agile delivery sprint focusing on high-priority backlog items and acceptance criteria verification.
 
 ---
 

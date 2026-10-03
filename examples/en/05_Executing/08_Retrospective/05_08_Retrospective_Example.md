@@ -17,7 +17,7 @@
 
 | Sprint or Iteration | Team Members Present | Date |
 | ---: | ---: | ---: |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-30 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
 
 ---
 
@@ -26,12 +26,12 @@
 
 | Start | Stop | Keep | More | Less |
 | ---: | ---: | ---: | ---: | ---: |
-| 2026-04-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-06-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-08-15 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-10-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-12-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-04-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| 2026-04-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| 2026-06-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| 2026-08-15 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| 2026-10-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| 2026-12-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| 2026-04-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -40,10 +40,10 @@
 
 | Action | Owner | By When | Outcome |
 | ---: | ---: | ---: | ---: |
-| Approved and aligned with governance baseline | Elena Vance, PfMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Sultan Al-Dossary | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Sultan Al-Dossary | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -55,7 +55,7 @@
 
 | Accomplishments | Problems | Lessons | Future Considerations |
 | ---: | ---: | ---: | ---: |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | INIT-01 |
 
 ## 5. Sign-off and Approvals
 

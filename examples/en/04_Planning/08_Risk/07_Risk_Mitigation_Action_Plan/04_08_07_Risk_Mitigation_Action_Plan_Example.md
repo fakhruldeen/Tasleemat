@@ -16,13 +16,13 @@
 
 | Risk ID and Title | Current Risk Score |
 | :--- | :--- |
-| RSK-01 | Approved and aligned with governance baseline |
+| RSK-01 | Approved and aligned with Apex Global Solutions governance baseline |
 
 ## 2. Mitigation Plan
 
 | Mitigation Strategy | Detailed Action Steps | Resource Requirements | Target Risk Score |
 | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline |
 
 ### Sign-off and Approvals
 

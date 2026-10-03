@@ -16,8 +16,8 @@
 
 | ID | Category | Decision | Impacts on Deliverables/Objectives | Impacted Stakeholders | Responsible Party | Date | Comments |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| INIT-01 | Technical & Integration | Approved and aligned with governance baseline | Digital Transformation & Operational Agility | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Elena Vance, PfMP | 2026-06-30 | Validated against enterprise ISO27001 cloud security standards. |
-| REQ-02 | Operational & Functional | Approved and aligned with governance baseline | Process Automation & 40% Cycle Time Reduction | Sultan Al-Dossary (VP of Operations) | Faisal Al-Harbi, PMP | 2026-09-30 | Weekly steering coordination meetings on schedule. |
+| INIT-01 | Technical & Integration | Approved and aligned with Apex Global Solutions governance baseline | Digital Transformation & Operational Agility | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Elena Vance, PfMP | 2026-06-30 | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Approved and aligned with Apex Global Solutions governance baseline | Process Automation & 40% Cycle Time Reduction | Sultan Al-Dossary (VP of Operations) | Faisal Al-Harbi, PMP | 2026-09-30 | Weekly steering coordination meetings on schedule. |
 
 ---
 

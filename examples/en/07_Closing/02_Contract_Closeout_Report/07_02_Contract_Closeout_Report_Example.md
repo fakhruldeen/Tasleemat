@@ -26,10 +26,10 @@ contract is also closed, but the performance record is interpreted differently.
 
 | Field | Entry |
 | :--- | :--- |
-| **Contract Reference** | Approved and aligned with governance baseline |
-| **Vendor** | Approved and aligned with governance baseline |
-| **Contract Type and Value** | Approved and aligned with governance baseline |
-| **Closeout Status** | Approved and aligned with governance baseline |
+| **Contract Reference** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Vendor** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Contract Type and Value** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Closeout Status** | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -83,9 +83,9 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 | Dispute Description | Resolution | Date Resolved |
 | :--- | :--- | :--- |
-| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-06-30 |
-| Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-09-30 |
-| Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | 2026-11-30 |
+| Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
+| Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
+| Build interactive executive dashboards and KPI reports | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 |
 
 
 
@@ -96,9 +96,9 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 | Field | Entry |
 | :--- | :--- |
-| **Contract Completion Date** | Approved and aligned with governance baseline |
-| **Signed Off By** | Approved and aligned with governance baseline |
-| **Final Payment Date** | Approved and aligned with governance baseline |
+| **Contract Completion Date** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Signed Off By** | Approved and aligned with Apex Global Solutions governance baseline |
+| **Final Payment Date** | Approved and aligned with Apex Global Solutions governance baseline |
 
 <!--
 Comment guidance: All disputes must be resolved, the result accepted, and final payment made before closure.

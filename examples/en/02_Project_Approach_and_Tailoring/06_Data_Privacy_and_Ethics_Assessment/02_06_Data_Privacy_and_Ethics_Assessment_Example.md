@@ -18,17 +18,17 @@
 
 **Processing Out of Scope:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Data Owners and Custodians:** Elena Vance, PfMP (Portfolio Transformation Director)
+**Data Owners and Custodians:** Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.
 
 **Data Inventory:**
 
 | Data Asset | Owner | Stated Purpose | Personal Data | Special Category | Volume and Refresh |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Elena Vance, PfMP | In Progress | Approved and aligned with governance baseline | Technical & Integration | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Completed | Approved and aligned with governance baseline | Operational & Functional | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Planned | Approved and aligned with governance baseline | Governance & Compliance | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | In Progress | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | Completed | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | Planned | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance | Approved and aligned with Apex Global Solutions governance baseline |
 
-**Data Flow and Recipients:** Fully defined and validated in accordance with enterprise governance baseline.
+**Data Flow and Recipients:** Encrypted data transit (TLS 1.3) contained within private cloud VPC with zero unapproved third-party exposure.
 
 ---
 
@@ -41,41 +41,41 @@
 
 | Purpose | Data Processed | Lawful Basis | Special Category Basis | Justification |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance | Approved and aligned with Apex Global Solutions governance baseline |
 
-**Purpose Compatibility and Secondary Use:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
+**Purpose Compatibility and Secondary Use:** Operational synthesis reporting and preliminary compliance audit logs for operations management
 
-**Automated Decision-Making:** Fully defined and validated in accordance with enterprise governance baseline.
+**Automated Decision-Making:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
 ## 3. Consent and Transparency
 
 
-**Consent Mechanism:** Fully defined and validated in accordance with enterprise governance baseline.
+**Consent Mechanism:** Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.
 
-**Consent Specificity and Granularity:** Fully defined and validated in accordance with enterprise governance baseline.
+**Consent Specificity and Granularity:** Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.
 
-**Consent Recording and Evidence:** Fully defined and validated in accordance with enterprise governance baseline.
+**Consent Recording and Evidence:** Cryptographically signed, timestamped audit log of all user consent grants and revocations.
 
-**Withdrawal:** Fully defined and validated in accordance with enterprise governance baseline.
+**Withdrawal:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Privacy Notices and Just-in-Time Disclosure:** Fully defined and validated in accordance with enterprise governance baseline.
+**Privacy Notices and Just-in-Time Disclosure:** End-to-end data encryption at rest and in transit adhering strictly to enterprise data privacy regulations
 
 ---
 
 ## 4. Individual Rights
 
 
-**Rights Handling Process:** Fully defined and validated in accordance with enterprise governance baseline.
+**Rights Handling Process:** Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.
 
-**Identity Verification:** Fully defined and validated in accordance with enterprise governance baseline.
+**Identity Verification:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Response Timeframes and Escalation:** Fully defined and validated in accordance with enterprise governance baseline.
+**Response Timeframes and Escalation:** Active operational monitoring with rapid response workflows triggered upon threshold deviations.
 
-**Rights Over Derived, Shared and Retired Data:** Fully defined and validated in accordance with enterprise governance baseline.
+**Rights Over Derived, Shared and Retired Data:** Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.
 
 ---
 
@@ -86,44 +86,44 @@
 
 | Data Asset | Retention Period | Basis for Period | Deletion Trigger | Deletion Verified |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | 2026-Q2 | 2026-Q2 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-Q3 | 2026-Q3 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-Q4 | 2026-Q4 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-Q2 | 2026-Q2 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-Q3 | 2026-Q3 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | 2026-Q4 | 2026-Q4 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
-**Deletion Mechanism and Coverage:** Fully defined and validated in accordance with enterprise governance baseline.
+**Deletion Mechanism and Coverage:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Backups and Derived Data:** Fully defined and validated in accordance with enterprise governance baseline.
+**Backups and Derived Data:** Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.
 
-**Access Controls and Least Privilege:** Fully defined and validated in accordance with enterprise governance baseline.
+**Access Controls and Least Privilege:** Role-Based Access Control (RBAC) enforced with Multi-Factor Authentication and audit logging.
 
-**Encryption and Key Management:** Fully defined and validated in accordance with enterprise governance baseline.
+**Encryption and Key Management:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 **Third-Party Sharing:**
 
 | Recipient | Purpose | Data Shared | Contractual Safeguard | Region |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
-**Cross-Border Transfers:** Fully defined and validated in accordance with enterprise governance baseline.
+**Cross-Border Transfers:** All sensitive data residency strictly maintained within authorized in-country sovereign cloud regions.
 
-**Breach Notification:** Fully defined and validated in accordance with enterprise governance baseline.
+**Breach Notification:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
 ## 6. Ethics Beyond Compliance
 
 
-**Harm Beyond Legal Exposure:** Fully defined and validated in accordance with enterprise governance baseline.
+**Harm Beyond Legal Exposure:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Vulnerable Individuals and Groups:** Fully defined and validated in accordance with enterprise governance baseline.
+**Vulnerable Individuals and Groups:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Transparency to Affected People:** Fully defined and validated in accordance with enterprise governance baseline.
+**Transparency to Affected People:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Manipulation, Dark Patterns and Consent Fatigue:** Fully defined and validated in accordance with enterprise governance baseline.
+**Manipulation, Dark Patterns and Consent Fatigue:** Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.
 
-**Fairness of Automated Decisions:** Fully defined and validated in accordance with enterprise governance baseline.
+**Fairness of Automated Decisions:** Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.
 
 ---
 
@@ -134,17 +134,17 @@
 
 | Finding | Risk to Individuals | Severity | Owner | Action |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | INIT-01 | Approved and aligned with governance baseline | Elena Vance, PfMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | REQ-02 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | ACT-03 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | INIT-01 | Medium (Subject to quarterly audit) | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | REQ-02 | Low (Within acceptable operating bounds) | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | ACT-03 | High (Requires mandatory human approval) | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
 
-**Residual Risk and Acceptance:** Fully defined and validated in accordance with enterprise governance baseline.
+**Residual Risk and Acceptance:** Active operational monitoring with rapid response workflows triggered upon threshold deviations.
 
-**Remediation Plan:** Fully defined and validated in accordance with enterprise governance baseline.
+**Remediation Plan:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Review Triggers:** Fully defined and validated in accordance with enterprise governance baseline.
+**Review Triggers:** Active operational monitoring with rapid response workflows triggered upon threshold deviations.
 
-**Reassessment Triggers:** Fully defined and validated in accordance with enterprise governance baseline.
+**Reassessment Triggers:** Scope baseline shift > 10%, schedule slip > 2 weeks, or regulatory framework modifications.
 
 ---
 

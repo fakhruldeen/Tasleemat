@@ -35,20 +35,20 @@ Preapproved Financial Resources & Budget Envelope:
 ## 2. Roles, Responsibilities, and Authority
 
 **Key Project Roles and Competency Profiles:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Authority and Decision-Making Boundaries:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
 ## 3. Project Organization Structure
 
 **Project Organizational Chart and Hierarchy:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 **Resource Management Governance:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly documented and validated in accordance with Apex Global Solutions operational baseline and PMO delivery governance standards.
 
 ---
 
@@ -56,11 +56,11 @@ This section has been thoroughly defined and documented in accordance with the T
 
 **Team Building and Development Initiatives:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 **Required Training and Certification Programs:**
 Change Management & Stakeholder Enablement:
-A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops, targeting >= 95% adoption at launch.
 
 ---
 

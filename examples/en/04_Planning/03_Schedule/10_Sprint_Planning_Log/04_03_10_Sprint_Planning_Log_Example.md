@@ -14,13 +14,13 @@
 ## 1. Sprint Frame
 
 
-**Sprint Goal:** Fully defined and validated in accordance with enterprise governance baseline.
+**Sprint Goal:** Deliver and integrate the automated cloud e-invoicing module and validate initial batch user acceptance testing.
 
-**Sprint Window:** Fully defined and validated in accordance with enterprise governance baseline.
+**Sprint Window:** 2-Week Sprint Cycle (Starting Sunday April 5, 2026 through Thursday April 16, 2026).
 
-**Capacity Basis:** Fully defined and validated in accordance with enterprise governance baseline.
+**Capacity Basis:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Carry-over From the Previous Sprint:** Fully defined and validated in accordance with enterprise governance baseline.
+**Carry-over From the Previous Sprint:** Two minor sub-tasks for UI styling polish and API edge-case integration test scripts.
 
 ---
 
@@ -31,19 +31,19 @@
 
 | Story ID | Story Title | Story Points | Priority | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | In Progress |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | In Progress |
 
 **Acceptance Criteria:**
 
 | Story ID | Acceptance Criteria | Verified By |
 | :--- | :--- | :--- |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 **Scope Added After Planning:**
 
 | Story ID | Reason Added | Requested By | Effect on Sprint |
 | :--- | :--- | :--- | :--- |
-| INIT-01 | Security baseline compliance enhancement | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| INIT-01 | Security baseline compliance enhancement | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
 
@@ -54,11 +54,11 @@
 
 | Team Member | Role | Assigned Stories | Available Capacity |
 | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Strategic executive oversight and resource authorization | Approved and aligned with governance baseline | 480 FTE Hours / mo |
+| Approved and aligned with Apex Global Solutions governance baseline | Strategic executive oversight and resource authorization | Approved and aligned with Apex Global Solutions governance baseline | 480 FTE Hours / mo |
 
-**Skill and Capacity Gaps:** Fully defined and validated in accordance with enterprise governance baseline.
+**Skill and Capacity Gaps:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
-**Dependencies Outside the Team:** Fully defined and validated in accordance with enterprise governance baseline.
+**Dependencies Outside the Team:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 
@@ -69,9 +69,9 @@
 
 | Risk | Trigger | Likelihood | Impact | Response |
 | :--- | :--- | :--- | :--- | :--- |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with governance baseline |
+| Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with Apex Global Solutions governance baseline |
 
-**Contingency:** Fully defined and validated in accordance with enterprise governance baseline.
+**Contingency:** Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.
 
 ---
 

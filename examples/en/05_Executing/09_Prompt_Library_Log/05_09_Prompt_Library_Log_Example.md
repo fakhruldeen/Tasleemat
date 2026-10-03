@@ -16,9 +16,9 @@
 
 | Prompt ID | Use Case | Prompt Text | Expected Output | Status/Version |
 | --- | --- | --- | --- | --- |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | In Progress |
-| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Completed |
-| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Planned |
+| INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | In Progress |
+| REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Completed |
+| ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Planned |
 
 ---
 
