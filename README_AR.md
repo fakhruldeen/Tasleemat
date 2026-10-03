@@ -12,7 +12,7 @@
 
 <br/>
 
-**[🇬🇧 Read in English](README.md)** • **[📖 المعجم الموحد](LEXICON.md)** • **[📜 دليل سياسات PMO](PMO_POLICY_MANUAL_AR.md)** • **[🚪 بوابات العبور المرحلية](STAGE_GATES_AR.md)** • **[⚖️ تصنيف وتخصيص المشاريع](TAILORING_PROFILES_AR.md)** • **[🔗 شبكة الاعتماديات (DAG)](DOCUMENT_DEPENDENCIES_AR.md)** • **[👥 مصفوفة RACI](RACI_AUTHORITY_MATRIX_AR.md)** • **[🛠️ دليل الاستخدام](USAGE_GUIDE_AR.md)** • **[📂 النماذج العربية](forms/ar/)** • **[📂 النماذج الإنجليزية](forms/en/)**
+**[🇬🇧 Read in English](README.md)** • **[📖 المعجم الموحد](LEXICON.md)** • **[🏆 مشاريع مرجعية](examples/README_AR.md)** • **[📜 دليل سياسات PMO](PMO_POLICY_MANUAL_AR.md)** • **[🚪 بوابات العبور](STAGE_GATES_AR.md)** • **[⚖️ تصنيف المشاريع](TAILORING_PROFILES_AR.md)** • **[🔗 الاعتماديات](DOCUMENT_DEPENDENCIES_AR.md)** • **[👥 مصفوفة RACI](RACI_AUTHORITY_MATRIX_AR.md)** • **[🛠️ الدليل](USAGE_GUIDE_AR.md)** • **[📂 النماذج العربية](forms/ar/)** • **[📂 النماذج الإنجليزية](forms/en/)**
 
 ---
 
