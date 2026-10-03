@@ -7,4 +7,4 @@ This directory contains the **102 bilingual Project Management Office (PMO) arti
 
 ---
 
-*For the complete forms catalog with cross-references, see **[`LEXICON.md`](../LEXICON.md)**.*
+*For the complete forms catalog with cross-references, see **[`LEXICON.md`](../docs/LEXICON.md)**.*

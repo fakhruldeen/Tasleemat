@@ -9,14 +9,14 @@
 #### *Fully Aligned with PMI PMBOK® Guide 6th, 7th & 8th Edition Ready Standards*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc?style=for-the-badge)](LEXICON.md)
+[![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc?style=for-the-badge)](docs/LEXICON.md)
 [![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-success?style=for-the-badge)](forms/)
 [![Language](https://img.shields.io/badge/Language-English%20%7C%20العربية-darkgreen?style=for-the-badge)](README_AR.md)
-[![Format](https://img.shields.io/badge/Formats-Markdown%20%7C%20JSON%20%7C%20CSV-orange?style=for-the-badge)](USAGE_GUIDE.md)
+[![Documentation](https://img.shields.io/badge/Docs-Complete%20Knowledge%20Base-orange?style=for-the-badge)](docs/)
 
 <br/>
 
-**[🇸🇦 اقرأ بالعربية](README_AR.md)** • **[📖 Master Lexicon](LEXICON.md)** • **[🏆 Demos](examples/)** • **[📜 Policy Manual](PMO_POLICY_MANUAL.md)** • **[🚪 Stage-Gates](STAGE_GATES.md)** • **[⚖️ Tailoring](TAILORING_PROFILES.md)** • **[🔗 Dependencies](DOCUMENT_DEPENDENCIES.md)** • **[👥 RACI](RACI_AUTHORITY_MATRIX.md)** • **[🛠️ Guide](USAGE_GUIDE.md)** • **[📂 English Forms](forms/en/)** • **[📂 Arabic Forms](forms/ar/)**
+**[🇸🇦 اقرأ بالعربية](README_AR.md)** • **[📚 Documentation Hub](docs/)** • **[📖 Master Lexicon](docs/LEXICON.md)** • **[🏆 Demos & Examples](examples/)** • **[🚀 Getting Started](docs/en/01_getting_started.md)** • **[📜 Policy Manual](docs/en/03_pmo_policy_manual.md)** • **[🚪 Stage-Gates](docs/en/04_stage_gates_and_governance.md)** • **[⚖️ Tailoring](docs/en/05_tailoring_profiles.md)** • **[🤖 AI Framework](docs/en/08_ai_governance_framework.md)** • **[⚡ Agile Guide](docs/en/09_agile_hybrid_integration.md)** • **[📂 English Forms](forms/en/)** • **[📂 Arabic Forms](forms/ar/)**
 
 ---
 
@@ -40,7 +40,7 @@ Every single artifact is designed as a **5-file synchronized bundle**, bridging 
 - **🌐 100% Bilingual Parity (EN & AR):** Strict 1-to-1 structural parity between English source files and native Arabic (RTL) files aligned with the **PMI Lexicon of Project Management Terms**.
 - **🤖 AI-Native & GenAI Architecture:** Every form includes dedicated machine-readable JSON schemas and prompt instructions ready for instant automated drafting via Claude, ChatGPT, Gemini, or local LLMs.
 - **🖨️ Executive Print & Export Ready:** Clean GitHub-flavored Markdown and HTML tables formatted for seamless PDF conversion with governance sign-off blocks.
-- **📖 Official Terminology Lexicon:** Standardized project management terms mapped and defined in [`LEXICON.md`](LEXICON.md) and [`LEXICON.json`](LEXICON.json).
+- **📖 Official Terminology Lexicon:** Standardized project management terms mapped and defined in [`docs/LEXICON.md`](docs/LEXICON.md) and [`docs/LEXICON.json`](docs/LEXICON.json).
 
 ---
 
@@ -48,33 +48,33 @@ Every single artifact is designed as a **5-file synchronized bundle**, bridging 
 
 ```text
 Tasleemat/
-├── forms/
-│   ├── en/                                         # 🇬🇧 English Artifacts (Root)
-│   │   ├── 00_Program_and_Portfolio_Management/    # 6 Roadmaps, OKRs, Maturity & Capacity
-│   │   ├── 01_Business_and_Value_Delivery/         # 4 Business Cases, Gap Analysis & Value
-│   │   ├── 02_Project_Approach_and_Tailoring/      # 6 Tailoring & AI Governance Plans
-│   │   ├── 03_Initiating/                          # 5 Charters, Assumption Logs & Registers
-│   │   ├── 04_Planning/                            # 52 Detailed Baselines across 12 Domains
-│   │   ├── 05_Executing/                           # 12 Operational Logs & Meeting Records
-│   │   ├── 06_Monitoring_and_Controlling/          # 12 Variance, EVA, Flow Metrics & Health
-│   │   ├── 07_Closing/                             # 5 Closeout Reports, Handover & PIR
-│   │   └── parameters.md                           # Global project variables for AI prompts
-│   └── ar/                                         # 🇸🇦 Arabic Localized Artifacts (RTL)
-│       ├── 00_إدارة_البرامج_والمحافظ/
-│       ├── 01_الأعمال_وتسليم_القيمة/
-│       ├── 02_منهجية_المشروع_وتخصيصه/
-│       ├── 03_البدء/
-│       ├── 04_التخطيط/
-│       ├── 05_التنفيذ/
-│       ├── 06_المراقبة_والتحكم/
-│       ├── 07_الإغلاق/
-│       └── parameters.md
-├── LEXICON.md                                      # 📖 Master Bilingual PMI Lexicon & Catalog
-├── LEXICON.json                                    # 🤖 Machine-readable Schema & Form Index
-├── USAGE_GUIDE.md                                  # 📘 Comprehensive English Practitioner Guide
-├── USAGE_GUIDE_AR.md                               # 📙 Comprehensive Arabic Practitioner Guide
-├── README.md                                       # 🇬🇧 Main Repository Documentation
-└── README_AR.md                                    # 🇸🇦 Arabic Repository Documentation
+├── docs/                                           # 📚 Central Documentation & Governance Portal
+│   ├── README.md                                   # 🇬🇧 English Documentation Hub & Reading Paths
+│   ├── README_AR.md                                # 🇸🇦 Arabic Documentation Hub & Reading Paths
+│   ├── LEXICON.md                                  # 📖 Master Bilingual PMI Lexicon & Form Catalog
+│   ├── LEXICON.json                                # 🤖 Machine-readable Schema & Form Registry
+│   ├── en/                                         # 🇬🇧 11 Comprehensive English Guides
+│   │   ├── 01_getting_started.md                   # Quick-Start & Onboarding Workflow (Day 1 to 30)
+│   │   ├── 02_usage_guide.md                       # Practitioner Field Conventions & Syntax
+│   │   ├── 03_pmo_policy_manual.md                 # PMO Policies, Thresholds & Audit Mandates
+│   │   ├── 04_stage_gates_and_governance.md        # 6-Stage Gate Reviews & Signoff Criteria
+│   │   ├── 05_tailoring_profiles.md                # 4 Project Tiers (Enterprise, Core, Agile, AI)
+│   │   ├── 06_raci_authority_matrix.md             # 102-Form RACI Responsibility Framework
+│   │   ├── 07_document_dependencies.md             # Directed Acyclic Graph (DAG) of Deliverables
+│   │   ├── 08_ai_governance_framework.md           # AI Canvas, Model Cards, Ethics & SDAIA/NIST
+│   │   ├── 09_agile_hybrid_integration.md          # Agile Ceremonies, Sprints, Flow Metrics & DoD
+│   │   ├── 10_faq_and_troubleshooting.md           # 25+ Solutions to Practitioner Roadblocks
+│   │   └── 11_tools_and_automation.md              # Python Validation Suite & DevOps CI/CD
+│   └── ar/                                         # 🇸🇦 11 Comprehensive Arabic Guides
+├── forms/                                          # 📋 102 Bilingual Forms (204 Bundles)
+│   ├── en/                                         # 🇬🇧 English Deliverables (00 to 07)
+│   └── ar/                                         # 🇸🇦 Arabic Deliverables (00 إلى 07)
+├── examples/                                       # 🏆 204 Fully-Populated Real-World Examples
+│   ├── en/                                         # 🇬🇧 102 English Reference Implementations
+│   └── ar/                                         # 🇸🇦 102 Arabic Reference Implementations
+├── tools/                                          # 🛠️ Verification, Parity & Audit Tooling
+├── README.md                                       # 🇬🇧 Main Repository Portal
+└── README_AR.md                                    # 🇸🇦 Arabic Repository Portal
 ```
 
 ---

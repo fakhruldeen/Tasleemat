@@ -24,7 +24,7 @@ Welcome to the definitive practitioner and automation guide for the **Tasleemat 
 
 ## 1. The 5-File Architecture
 
-Every one of the **102 form directories** across [`forms/en/`](forms/en/) and [`forms/ar/`](forms/ar/) contains exactly five synchronized files engineered for specific stages of the document lifecycle:
+Every one of the **102 form directories** across [`../../forms/en/`](../../forms/en/) and [`../../forms/ar/`](../../forms/ar/) contains exactly five synchronized files engineered for specific stages of the document lifecycle:
 
 ```text
 01_Project_Charter/
@@ -85,7 +85,7 @@ Every one of the **102 form directories** across [`forms/en/`](forms/en/) and [`
 
 ## 2. Global Parameters Configuration
 
-Before generating documents with AI, define your project's global baseline variables in [`forms/en/parameters.md`](forms/en/parameters.md) (or [`forms/ar/parameters.md`](forms/ar/parameters.md) for Arabic):
+Before generating documents with AI, define your project's global baseline variables in [`../../forms/en/parameters.md`](../../forms/en/parameters.md) (or [`../../forms/ar/parameters.md`](../../forms/ar/parameters.md) for Arabic):
 
 ```markdown
 # Project Global Parameters (معاملات المشروع العامة)
@@ -120,8 +120,8 @@ Before generating documents with AI, define your project's global baseline varia
    Your task is to generate a comprehensive, professional, audit-ready Markdown document 
    matching the exact structure and tables of the target template. Do not summarize or omit sections.
    ```
-3. Paste the contents of `forms/en/parameters.md`.
-4. Paste the specific prompt file (e.g., [`forms/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register.md`](forms/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register.md)).
+3. Paste the contents of `../../forms/en/parameters.md`.
+4. Paste the specific prompt file (e.g., [`../../forms/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register.md`](../../forms/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register.md)).
 5. Paste your raw project notes (e.g., transcripts, bullet points, or email summaries).
 6. The AI will return the complete, filled-out Markdown document ready to paste into `_Template.md`.
 
@@ -136,7 +136,7 @@ import json
 import openai
 
 # 1. Load schema
-with open("forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter.json") as f:
+with open("../../forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter.json") as f:
     schema = json.load(f)
 
 # 2. Call OpenAI with JSON Mode
@@ -169,14 +169,14 @@ Run complete document generation locally and securely without external data tran
 
 ```bash
 # Run local generation with Llama 3 or Mistral via Ollama
-ollama run llama3:70b "$(cat forms/en/parameters.md) $(cat forms/en/05_Executing/01_Issue_Log/05_01_Issue_Log.md) Meeting notes: [insert notes]" > Issue_Log_Draft.md
+ollama run llama3:70b "$(cat ../../forms/en/parameters.md) $(cat ../../forms/en/05_Executing/01_Issue_Log/05_01_Issue_Log.md) Meeting notes: [insert notes]" > Issue_Log_Draft.md
 ```
 
 ---
 
 ## 4. Managing Lifecycle Dependencies
 
-Tasleemat forms are interconnected through upstream prerequisites and downstream consumers. Refer to [`LEXICON.md`](LEXICON.md) or section `### Alignment & Dependencies` in any `*_Guide.md` before approving baselines:
+Tasleemat forms are interconnected through upstream prerequisites and downstream consumers. Refer to [`../LEXICON.md`](../LEXICON.md) or section `### Alignment & Dependencies` in any `*_Guide.md` before approving baselines:
 
 ```mermaid
 graph TD
@@ -248,5 +248,5 @@ Every template concludes with an **Approval and Sign-off Table** tailored to the
 ---
 
 <div align="center">
-  <sub>For terminology translations and full index, consult <a href="LEXICON.md"><b>LEXICON.md</b></a>.</sub>
+  <sub>For terminology translations and full index, consult <a href="../LEXICON.md"><b>../LEXICON.md</b></a>.</sub>
 </div>
