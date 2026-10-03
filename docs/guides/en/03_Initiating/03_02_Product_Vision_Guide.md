@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/03_البدء/03_02_رؤية_المنتج_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <a class="lang-switch-btn" href="../../ar/03_البدء/03_02_رؤية_المنتج_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/03_Initiating/03_02_Product_Vision_Template.md">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../templates/en/03_Initiating/03_02_Product_Vision_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../examples/en/03_Initiating/03_02_Product_Vision_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/03_البدء/03_02_رؤية_المنتج_دليل.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../examples/en/03_Initiating/03_02_Product_Vision_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../ar/03_البدء/03_02_رؤية_المنتج_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

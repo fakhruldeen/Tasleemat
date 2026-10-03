@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../en/04_Planning/index.md">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
+  <a class="lang-switch-btn" href="../../en/04_Planning/index.html">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
 </div>
 
 # 📐 04. التخطيط (الأمثلة الواقعية)

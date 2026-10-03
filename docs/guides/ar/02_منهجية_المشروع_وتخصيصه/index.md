@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../en/02_Project_Approach_and_Tailoring/index.md">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
+  <a class="lang-switch-btn" href="../../en/02_Project_Approach_and_Tailoring/index.html">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
 </div>
 
 # ⚖️ 02. منهجية المشروع وتخصيصه (الأدلة الإرشادية)

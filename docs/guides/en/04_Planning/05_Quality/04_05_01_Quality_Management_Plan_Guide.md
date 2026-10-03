@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Template.md">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../templates/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../../examples/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_دليل.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../../examples/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

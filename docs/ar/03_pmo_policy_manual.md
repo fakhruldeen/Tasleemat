@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
-  <a class="lang-switch-btn" href="../en/03_pmo_policy_manual.md">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  <a class="lang-switch-btn" href="../en/03_pmo_policy_manual.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
 </div>
 
 <p align="center">

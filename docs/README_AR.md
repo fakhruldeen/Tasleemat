@@ -7,10 +7,10 @@
     المرجع المؤسسي الشامل ثنائي اللغة (عربي/إنجليزي) لمكتب إدارة المشاريع (PMO)، وحزمة المخرجات الإدارية، وحوكمة مشاريع الذكاء الاصطناعي بتناظر رياضي 100% ودون أي قيود أو تبعية تقنية.
   </p>
   <div class="hero-actions">
-    <a href="catalog/ar/index.md" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
-    <a href="templates/ar/index.md" class="btn-secondary">📋 تصفح القوالب القياسية</a>
-    <a href="ar/01_getting_started.md" class="btn-secondary">📚 الأدلة والسياسات</a>
-    <a href="index.md" class="btn-lang">🇬🇧 Switch to English Portal</a>
+    <a href="catalog/ar/index.html" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
+    <a href="templates/ar/index.html" class="btn-secondary">📋 تصفح القوالب القياسية</a>
+    <a href="ar/01_getting_started.html" class="btn-secondary">📚 الأدلة والسياسات</a>
+    <a href="index.html" class="btn-lang">🇬🇧 Switch to English Portal</a>
   </div>
   <div class="stat-grid">
     <div class="stat-card">
@@ -79,9 +79,9 @@ flowchart TD
     <h3 class="phase-hub-title">إدارة البرامج والمحافظ</h3>
     <p class="phase-hub-desc">المواءمة الاستراتيجية، توازن المحفظة، إدارة الاعتماديات بين المشاريع، وتقييم نضج PMO (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -93,9 +93,9 @@ flowchart TD
     <h3 class="phase-hub-title">الأعمال وتسليم القيمة</h3>
     <p class="phase-hub-desc">دراسات الجدوى الاقتصادية، خطط إدارة المنافع، سجلات تحقيق القيمة، وتحليل الفجوات (4 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -107,9 +107,9 @@ flowchart TD
     <h3 class="phase-hub-title">منهجية المشروع وتخصيصه</h3>
     <p class="phase-hub-desc">استراتيجية التخصيص، مستويات الحوكمة، أخلاقيات الذكاء الاصطناعي، وبطاقات النماذج (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -121,9 +121,9 @@ flowchart TD
     <h3 class="phase-hub-title">البدء</h3>
     <p class="phase-hub-desc">الترخيص الرسمي للمشروع، رؤية المنتج، سجل الافتراضات الأولية، وتحديد المعنيين (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/03_البدء/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/03_البدء/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/03_البدء/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/03_البدء/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/03_البدء/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/03_البدء/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -135,9 +135,9 @@ flowchart TD
     <h3 class="phase-hub-title">التخطيط (12 مجالاً معرفياً)</h3>
     <p class="phase-hub-desc">الخطوط المرجعية للنطاق، الجدول الزمني، التكلفة، الجودة، الموارد، المخاطر، والمشتريات (47 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/04_التخطيط/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/04_التخطيط/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/04_التخطيط/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/04_التخطيط/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/04_التخطيط/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/04_التخطيط/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -149,9 +149,9 @@ flowchart TD
     <h3 class="phase-hub-title">التنفيذ</h3>
     <p class="phase-hub-desc">توجيه وإدارة أعمال المشروع، سجل القضايا، سجل القرارات، طلبات التغيير، وأداء الفريق (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/05_التنفيذ/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/05_التنفيذ/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/05_التنفيذ/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/05_التنفيذ/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -163,9 +163,9 @@ flowchart TD
     <h3 class="phase-hub-title">المراقبة والتحكم</h3>
     <p class="phase-hub-desc">تقارير الأداء، تحليل القيمة المكتسبة (EVA)، مراقبة التباين، وضمان الجودة واختبارات القبول (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -177,9 +177,9 @@ flowchart TD
     <h3 class="phase-hub-title">الإغلاق</h3>
     <p class="phase-hub-desc">الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/07_الإغلاق/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/07_الإغلاق/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/07_الإغلاق/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/07_الإغلاق/index.html">💡 الأمثلة</a>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.md">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -11,9 +11,9 @@
   </div>
   <div class="deliverable-nav-pills">
     <a class="nav-pill active" href="#">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../guides/en/07_Closing/07_04_Transition_to_Operations_Checklist_Guide.md">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../examples/en/07_Closing/07_04_Transition_to_Operations_Checklist_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../guides/en/07_Closing/07_04_Transition_to_Operations_Checklist_Guide.html">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../examples/en/07_Closing/07_04_Transition_to_Operations_Checklist_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

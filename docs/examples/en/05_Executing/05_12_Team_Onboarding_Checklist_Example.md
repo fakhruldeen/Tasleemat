@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.md">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../guides/en/05_Executing/05_12_Team_Onboarding_Checklist_Guide.md">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../templates/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../guides/en/05_Executing/05_12_Team_Onboarding_Checklist_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

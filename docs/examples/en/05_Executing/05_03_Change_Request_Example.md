@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_03_طلب_تغيير_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_03_طلب_تغيير_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/05_Executing/05_03_Change_Request_Template.md">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../guides/en/05_Executing/05_03_Change_Request_Guide.md">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../templates/en/05_Executing/05_03_Change_Request_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../guides/en/05_Executing/05_03_Change_Request_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_03_طلب_تغيير_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_03_طلب_تغيير_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

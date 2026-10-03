@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
-  <a class="lang-switch-btn" href="../en/10_faq_and_troubleshooting.md">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  <a class="lang-switch-btn" href="../en/10_faq_and_troubleshooting.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
 </div>
 
 <p align="center">

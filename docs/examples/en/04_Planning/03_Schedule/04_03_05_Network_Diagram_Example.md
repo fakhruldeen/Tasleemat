@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Template.md">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../../guides/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Guide.md">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../../templates/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../guides/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

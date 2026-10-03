@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../ar/index.md">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples) →</a>
+  <a class="lang-switch-btn" href="../ar/index.html">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples) →</a>
 </div>
 
 # 💡 Reference Examples & Case Studies Showcase (English)

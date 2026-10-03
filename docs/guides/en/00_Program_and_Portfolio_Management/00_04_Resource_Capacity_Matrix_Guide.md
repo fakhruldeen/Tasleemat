@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.md">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../templates/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../examples/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_دليل.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../examples/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

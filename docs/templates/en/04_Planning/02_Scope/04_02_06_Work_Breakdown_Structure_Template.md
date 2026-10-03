@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.md">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -11,9 +11,9 @@
   </div>
   <div class="deliverable-nav-pills">
     <a class="nav-pill active" href="#">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../../guides/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Guide.md">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../../examples/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../../guides/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Guide.html">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../../examples/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

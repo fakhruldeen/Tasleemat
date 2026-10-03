@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/01_الأعمال_وتسليم_القيمة/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
+  <a class="lang-switch-btn" href="../../ar/01_الأعمال_وتسليم_القيمة/index.html">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
 </div>
 
 # 💎 01. Business & Value Delivery (Templates)

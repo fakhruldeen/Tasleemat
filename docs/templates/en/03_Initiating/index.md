@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/03_البدء/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
+  <a class="lang-switch-btn" href="../../ar/03_البدء/index.html">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
 </div>
 
 # 🚀 03. Initiating (Templates)

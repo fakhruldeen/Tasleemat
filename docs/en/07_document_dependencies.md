@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
-  <a class="lang-switch-btn" href="../ar/07_document_dependencies.md">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  <a class="lang-switch-btn" href="../ar/07_document_dependencies.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
 </div>
 
 <p align="center">

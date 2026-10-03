@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.md">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -11,9 +11,9 @@
   </div>
   <div class="deliverable-nav-pills">
     <a class="nav-pill active" href="#">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../../guides/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Guide.md">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../../examples/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../../guides/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Guide.html">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../../examples/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

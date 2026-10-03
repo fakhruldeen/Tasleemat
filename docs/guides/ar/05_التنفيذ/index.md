@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../en/05_Executing/index.md">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
+  <a class="lang-switch-btn" href="../../en/05_Executing/index.html">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
 </div>
 
 # ⚡ 05. التنفيذ (الأدلة الإرشادية)

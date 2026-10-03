@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
-  <a class="lang-switch-btn" href="../en/09_agile_hybrid_integration.md">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  <a class="lang-switch-btn" href="../en/09_agile_hybrid_integration.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
 </div>
 
 <p align="center">

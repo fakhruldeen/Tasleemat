@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/03_البدء/03_01_ميثاق_المشروع_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
+  <a class="lang-switch-btn" href="../../ar/03_البدء/03_01_ميثاق_المشروع_مثال.html">🇸🇦 الانتقال للمثال بالعربية (Arabic Example) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/03_Initiating/03_01_Project_Charter_Template.md">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../guides/en/03_Initiating/03_01_Project_Charter_Guide.md">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../templates/en/03_Initiating/03_01_Project_Charter_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../guides/en/03_Initiating/03_01_Project_Charter_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/03_البدء/03_01_ميثاق_المشروع_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/03_البدء/03_01_ميثاق_المشروع_مثال.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

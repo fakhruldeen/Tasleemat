@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.md">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
+  <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.html">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
 </div>
 
 # 📐 04. Planning (Authoring Guides)

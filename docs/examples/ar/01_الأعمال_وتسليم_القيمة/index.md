@@ -1,6 +1,6 @@
 <div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
-  <a class="lang-switch-btn" href="../../en/01_Business_and_Value_Delivery/index.md">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
+  <a class="lang-switch-btn" href="../../en/01_Business_and_Value_Delivery/index.html">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
 </div>
 
 # 💎 01. الأعمال وتسليم القيمة (الأمثلة الواقعية)

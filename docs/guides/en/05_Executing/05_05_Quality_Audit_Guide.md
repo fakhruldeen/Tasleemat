@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_05_تدقيق_الجودة_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_05_تدقيق_الجودة_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -10,10 +10,10 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/05_Executing/05_05_Quality_Audit_Template.md">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../templates/en/05_Executing/05_05_Quality_Audit_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../examples/en/05_Executing/05_05_Quality_Audit_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_05_تدقيق_الجودة_دليل.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../examples/en/05_Executing/05_05_Quality_Audit_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_05_تدقيق_الجودة_دليل.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

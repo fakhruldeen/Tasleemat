@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
+  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/index.html">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
 </div>
 
 # 🏁 07. Closing (Templates)

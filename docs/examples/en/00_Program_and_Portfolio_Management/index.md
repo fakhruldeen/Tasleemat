@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
+  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/index.html">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
 </div>
 
 # 🏛️ 00. Program & Portfolio Management (Reference Examples)

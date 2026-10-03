@@ -1,6 +1,6 @@
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
-  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.md">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
 </div>
 
 <div class="deliverable-header-card">
@@ -11,9 +11,9 @@
   </div>
   <div class="deliverable-nav-pills">
     <a class="nav-pill active" href="#">📋 Blank Template</a>
-    <a class="nav-pill" href="../../../guides/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Guide.md">📖 Authoring Guide</a>
-    <a class="nav-pill" href="../../../examples/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Example.md">💡 Completed Example</a>
-    <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill" href="../../../guides/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Guide.html">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../examples/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Example.html">💡 Completed Example</a>
+    <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.html">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

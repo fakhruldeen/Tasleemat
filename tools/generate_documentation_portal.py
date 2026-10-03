@@ -7,6 +7,7 @@ Features:
 - Glassmorphic Hero Banners with live counters, badges, and responsive action chips
 - Interactive Deliverables Explorer (Search, Phase & Tier filters, Grid/Table views)
 - Comprehensive Phase Hub cards and Document Control headers
+- Complete 404 prevention with use_directory_urls: false and exact HTML cross-linking
 """
 
 import os
@@ -266,30 +267,30 @@ def build_portal():
             if p:
                 p.parent.mkdir(parents=True, exist_ok=True)
 
-        # Build cross-links
-        rel_guide_from_tpl = os.path.relpath(d["doc_guide_en"], d["doc_tpl_en"].parent)
-        rel_ex_from_tpl = os.path.relpath(d["doc_ex_en"], d["doc_tpl_en"].parent)
-        rel_ar_from_tpl = os.path.relpath(d["doc_tpl_ar"], d["doc_tpl_en"].parent)
+        # Cross-links with .html for raw HTML tags
+        rel_guide_from_tpl = os.path.relpath(d["doc_guide_en"], d["doc_tpl_en"].parent).replace(".md", ".html")
+        rel_ex_from_tpl = os.path.relpath(d["doc_ex_en"], d["doc_tpl_en"].parent).replace(".md", ".html")
+        rel_ar_from_tpl = os.path.relpath(d["doc_tpl_ar"], d["doc_tpl_en"].parent).replace(".md", ".html")
 
-        rel_tpl_from_guide = os.path.relpath(d["doc_tpl_en"], d["doc_guide_en"].parent)
-        rel_ex_from_guide = os.path.relpath(d["doc_ex_en"], d["doc_guide_en"].parent)
-        rel_ar_from_guide = os.path.relpath(d["doc_guide_ar"], d["doc_guide_en"].parent)
+        rel_tpl_from_guide = os.path.relpath(d["doc_tpl_en"], d["doc_guide_en"].parent).replace(".md", ".html")
+        rel_ex_from_guide = os.path.relpath(d["doc_ex_en"], d["doc_guide_en"].parent).replace(".md", ".html")
+        rel_ar_from_guide = os.path.relpath(d["doc_guide_ar"], d["doc_guide_en"].parent).replace(".md", ".html")
 
-        rel_tpl_from_ex = os.path.relpath(d["doc_tpl_en"], d["doc_ex_en"].parent)
-        rel_guide_from_ex = os.path.relpath(d["doc_guide_en"], d["doc_ex_en"].parent)
-        rel_ar_from_ex = os.path.relpath(d["doc_ex_ar"], d["doc_ex_en"].parent)
+        rel_tpl_from_ex = os.path.relpath(d["doc_tpl_en"], d["doc_ex_en"].parent).replace(".md", ".html")
+        rel_guide_from_ex = os.path.relpath(d["doc_guide_en"], d["doc_ex_en"].parent).replace(".md", ".html")
+        rel_ar_from_ex = os.path.relpath(d["doc_ex_ar"], d["doc_ex_en"].parent).replace(".md", ".html")
 
-        rel_guide_from_tpl_ar = os.path.relpath(d["doc_guide_ar"], d["doc_tpl_ar"].parent)
-        rel_ex_from_tpl_ar = os.path.relpath(d["doc_ex_ar"], d["doc_tpl_ar"].parent)
-        rel_en_from_tpl_ar = os.path.relpath(d["doc_tpl_en"], d["doc_tpl_ar"].parent)
+        rel_guide_from_tpl_ar = os.path.relpath(d["doc_guide_ar"], d["doc_tpl_ar"].parent).replace(".md", ".html")
+        rel_ex_from_tpl_ar = os.path.relpath(d["doc_ex_ar"], d["doc_tpl_ar"].parent).replace(".md", ".html")
+        rel_en_from_tpl_ar = os.path.relpath(d["doc_tpl_en"], d["doc_tpl_ar"].parent).replace(".md", ".html")
 
-        rel_tpl_from_guide_ar = os.path.relpath(d["doc_tpl_ar"], d["doc_guide_ar"].parent)
-        rel_ex_from_guide_ar = os.path.relpath(d["doc_ex_ar"], d["doc_guide_ar"].parent)
-        rel_en_from_guide_ar = os.path.relpath(d["doc_guide_en"], d["doc_guide_ar"].parent)
+        rel_tpl_from_guide_ar = os.path.relpath(d["doc_tpl_ar"], d["doc_guide_ar"].parent).replace(".md", ".html")
+        rel_ex_from_guide_ar = os.path.relpath(d["doc_ex_ar"], d["doc_guide_ar"].parent).replace(".md", ".html")
+        rel_en_from_guide_ar = os.path.relpath(d["doc_guide_en"], d["doc_guide_ar"].parent).replace(".md", ".html")
 
-        rel_tpl_from_ex_ar = os.path.relpath(d["doc_tpl_ar"], d["doc_ex_ar"].parent)
-        rel_guide_from_ex_ar = os.path.relpath(d["doc_guide_ar"], d["doc_ex_ar"].parent)
-        rel_en_from_ex_ar = os.path.relpath(d["doc_ex_en"], d["doc_ex_ar"].parent)
+        rel_tpl_from_ex_ar = os.path.relpath(d["doc_tpl_ar"], d["doc_ex_ar"].parent).replace(".md", ".html")
+        rel_guide_from_ex_ar = os.path.relpath(d["doc_guide_ar"], d["doc_ex_ar"].parent).replace(".md", ".html")
+        rel_en_from_ex_ar = os.path.relpath(d["doc_ex_en"], d["doc_ex_ar"].parent).replace(".md", ".html")
 
         # 1. EN Template
         content_tpl_en = sanitize_content_links(d["tpl_en"].read_text(encoding="utf-8"), d["doc_tpl_en"], d)
@@ -479,10 +480,10 @@ def build_landing_pages():
     The premier bilingual (English & Arabic) enterprise project management framework, delivery artifacts library, and AI governance suite with 100% mathematical symmetry, zero vendor lock-in, and automated validation.
   </p>
   <div class="hero-actions">
-    <a href="catalog/en/index.md" class="btn-primary">🚀 Explore Master Catalog</a>
-    <a href="templates/en/index.md" class="btn-secondary">📋 Browse Templates</a>
-    <a href="en/01_getting_started.md" class="btn-secondary">📚 Governance Manuals</a>
-    <a href="README_AR.md" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
+    <a href="catalog/en/index.html" class="btn-primary">🚀 Explore Master Catalog</a>
+    <a href="templates/en/index.html" class="btn-secondary">📋 Browse Templates</a>
+    <a href="en/01_getting_started.html" class="btn-secondary">📚 Governance Manuals</a>
+    <a href="README_AR.html" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
   </div>
   <div class="stat-grid">
     <div class="stat-card">
@@ -551,9 +552,9 @@ flowchart TD
     <h3 class="phase-hub-title">Program & Portfolio Management</h3>
     <p class="phase-hub-desc">Strategic alignment, portfolio balancing, multi-project dependencies, and PMO maturity (6 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/00_Program_and_Portfolio_Management/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/00_Program_and_Portfolio_Management/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/00_Program_and_Portfolio_Management/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/00_Program_and_Portfolio_Management/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/00_Program_and_Portfolio_Management/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/00_Program_and_Portfolio_Management/index.html">💡 Examples</a>
     </div>
   </div>
 
@@ -565,9 +566,9 @@ flowchart TD
     <h3 class="phase-hub-title">Business & Value Delivery</h3>
     <p class="phase-hub-desc">Business justification, benefit realization planning, value tracking, and gap analysis (4 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/01_Business_and_Value_Delivery/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/01_Business_and_Value_Delivery/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/01_Business_and_Value_Delivery/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/01_Business_and_Value_Delivery/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/01_Business_and_Value_Delivery/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/01_Business_and_Value_Delivery/index.html">💡 Examples</a>
     </div>
   </div>
 
@@ -579,9 +580,9 @@ flowchart TD
     <h3 class="phase-hub-title">Project Approach & Tailoring</h3>
     <p class="phase-hub-desc">Tailoring strategy, governance tiers, AI ethics, model cards, and agile/hybrid adoption (6 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/02_Project_Approach_and_Tailoring/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/02_Project_Approach_and_Tailoring/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/02_Project_Approach_and_Tailoring/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/02_Project_Approach_and_Tailoring/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/02_Project_Approach_and_Tailoring/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/02_Project_Approach_and_Tailoring/index.html">💡 Examples</a>
     </div>
   </div>
 
@@ -593,9 +594,9 @@ flowchart TD
     <h3 class="phase-hub-title">Initiating</h3>
     <p class="phase-hub-desc">Formal authorization, product vision, initial assumptions, and stakeholder identification (5 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/03_Initiating/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/03_Initiating/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/03_Initiating/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/03_Initiating/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/03_Initiating/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/03_Initiating/index.html">💡 Examples</a>
     </div>
   </div>
 
@@ -607,9 +608,9 @@ flowchart TD
     <h3 class="phase-hub-title">Planning (12 Domains)</h3>
     <p class="phase-hub-desc">Comprehensive baselines across Scope, Schedule, Cost, Quality, Resources, Risk, and Procurement (47 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/04_Planning/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/04_Planning/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/04_Planning/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/04_Planning/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/04_Planning/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/04_Planning/index.html">💡 Examples</a>
     </div>
   </div>
 
@@ -621,9 +622,9 @@ flowchart TD
     <h3 class="phase-hub-title">Executing</h3>
     <p class="phase-hub-desc">Directing work, managing issues, decision logs, change control, and team performance (12 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/05_Executing/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/05_Executing/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/05_Executing/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/05_Executing/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/05_Executing/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/05_Executing/index.html">💡 Examples</a>
     </div>
   </div>
 
@@ -635,9 +636,9 @@ flowchart TD
     <h3 class="phase-hub-title">Monitoring & Controlling</h3>
     <p class="phase-hub-desc">Status reporting, Earned Value Analysis (EVA), variance tracking, and quality acceptance (12 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/06_Monitoring_and_Controlling/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/06_Monitoring_and_Controlling/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/06_Monitoring_and_Controlling/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/06_Monitoring_and_Controlling/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/06_Monitoring_and_Controlling/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/06_Monitoring_and_Controlling/index.html">💡 Examples</a>
     </div>
   </div>
 
@@ -649,9 +650,9 @@ flowchart TD
     <h3 class="phase-hub-title">Closing</h3>
     <p class="phase-hub-desc">Formal transition to operations, contract closure, final lessons learned, and PIR (5 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/07_Closing/index.md">📋 Templates</a>
-      <a class="card-action-link" href="guides/en/07_Closing/index.md">📖 Guides</a>
-      <a class="card-action-link" href="examples/en/07_Closing/index.md">💡 Examples</a>
+      <a class="card-action-link" href="templates/en/07_Closing/index.html">📋 Templates</a>
+      <a class="card-action-link" href="guides/en/07_Closing/index.html">📖 Guides</a>
+      <a class="card-action-link" href="examples/en/07_Closing/index.html">💡 Examples</a>
     </div>
   </div>
 </div>
@@ -698,10 +699,10 @@ flowchart TD
     المرجع المؤسسي الشامل ثنائي اللغة (عربي/إنجليزي) لمكتب إدارة المشاريع (PMO)، وحزمة المخرجات الإدارية، وحوكمة مشاريع الذكاء الاصطناعي بتناظر رياضي 100% ودون أي قيود أو تبعية تقنية.
   </p>
   <div class="hero-actions">
-    <a href="catalog/ar/index.md" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
-    <a href="templates/ar/index.md" class="btn-secondary">📋 تصفح القوالب القياسية</a>
-    <a href="ar/01_getting_started.md" class="btn-secondary">📚 الأدلة والسياسات</a>
-    <a href="index.md" class="btn-lang">🇬🇧 Switch to English Portal</a>
+    <a href="catalog/ar/index.html" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
+    <a href="templates/ar/index.html" class="btn-secondary">📋 تصفح القوالب القياسية</a>
+    <a href="ar/01_getting_started.html" class="btn-secondary">📚 الأدلة والسياسات</a>
+    <a href="index.html" class="btn-lang">🇬🇧 Switch to English Portal</a>
   </div>
   <div class="stat-grid">
     <div class="stat-card">
@@ -770,9 +771,9 @@ flowchart TD
     <h3 class="phase-hub-title">إدارة البرامج والمحافظ</h3>
     <p class="phase-hub-desc">المواءمة الاستراتيجية، توازن المحفظة، إدارة الاعتماديات بين المشاريع، وتقييم نضج PMO (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -784,9 +785,9 @@ flowchart TD
     <h3 class="phase-hub-title">الأعمال وتسليم القيمة</h3>
     <p class="phase-hub-desc">دراسات الجدوى الاقتصادية، خطط إدارة المنافع، سجلات تحقيق القيمة، وتحليل الفجوات (4 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -798,9 +799,9 @@ flowchart TD
     <h3 class="phase-hub-title">منهجية المشروع وتخصيصه</h3>
     <p class="phase-hub-desc">استراتيجية التخصيص، مستويات الحوكمة، أخلاقيات الذكاء الاصطناعي، وبطاقات النماذج (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -812,9 +813,9 @@ flowchart TD
     <h3 class="phase-hub-title">البدء</h3>
     <p class="phase-hub-desc">الترخيص الرسمي للمشروع، رؤية المنتج، سجل الافتراضات الأولية، وتحديد المعنيين (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/03_البدء/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/03_البدء/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/03_البدء/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/03_البدء/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/03_البدء/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/03_البدء/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -826,9 +827,9 @@ flowchart TD
     <h3 class="phase-hub-title">التخطيط (12 مجالاً معرفياً)</h3>
     <p class="phase-hub-desc">الخطوط المرجعية للنطاق، الجدول الزمني، التكلفة، الجودة، الموارد، المخاطر، والمشتريات (47 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/04_التخطيط/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/04_التخطيط/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/04_التخطيط/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/04_التخطيط/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/04_التخطيط/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/04_التخطيط/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -840,9 +841,9 @@ flowchart TD
     <h3 class="phase-hub-title">التنفيذ</h3>
     <p class="phase-hub-desc">توجيه وإدارة أعمال المشروع، سجل القضايا، سجل القرارات، طلبات التغيير، وأداء الفريق (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/05_التنفيذ/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/05_التنفيذ/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/05_التنفيذ/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/05_التنفيذ/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -854,9 +855,9 @@ flowchart TD
     <h3 class="phase-hub-title">المراقبة والتحكم</h3>
     <p class="phase-hub-desc">تقارير الأداء، تحليل القيمة المكتسبة (EVA)، مراقبة التباين، وضمان الجودة واختبارات القبول (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.html">💡 الأمثلة</a>
     </div>
   </div>
 
@@ -868,9 +869,9 @@ flowchart TD
     <h3 class="phase-hub-title">الإغلاق</h3>
     <p class="phase-hub-desc">الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.md">📋 القوالب</a>
-      <a class="card-action-link" href="guides/ar/07_الإغلاق/index.md">📖 الأدلة</a>
-      <a class="card-action-link" href="examples/ar/07_الإغلاق/index.md">💡 الأمثلة</a>
+      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="guides/ar/07_الإغلاق/index.html">📖 الأدلة</a>
+      <a class="card-action-link" href="examples/ar/07_الإغلاق/index.html">💡 الأمثلة</a>
     </div>
   </div>
 </div>
@@ -915,8 +916,8 @@ def update_governance_manuals_lang_bars():
 
         if en_files and ar_files:
             en_f, ar_f = en_files[0], ar_files[0]
-            rel_ar = os.path.relpath(ar_f, en_f.parent)
-            rel_en = os.path.relpath(en_f, ar_f.parent)
+            rel_ar = os.path.relpath(ar_f, en_f.parent).replace(".md", ".html")
+            rel_en = os.path.relpath(en_f, ar_f.parent).replace(".md", ".html")
 
             en_content = en_f.read_text(encoding="utf-8")
             # Strip previous lang bar if present to avoid duplication
@@ -943,7 +944,7 @@ def build_master_catalogs(deliverables):
     """Build comprehensive interactive master catalog pages with live Explorer widget."""
     target_en = DOCS_DIR / "catalog/en/index.md"
     target_en.parent.mkdir(parents=True, exist_ok=True)
-    rel_ar_catalog = os.path.relpath(DOCS_DIR / "catalog/ar/index.md", target_en.parent)
+    rel_ar_catalog = os.path.relpath(DOCS_DIR / "catalog/ar/index.md", target_en.parent).replace(".md", ".html")
 
     catalog_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Master Catalog</span>
@@ -995,10 +996,10 @@ def build_master_catalogs(deliverables):
 """
 
     for d in deliverables:
-        rel_tpl = os.path.relpath(d["doc_tpl_en"], target_en.parent)
-        rel_guide = os.path.relpath(d["doc_guide_en"], target_en.parent)
-        rel_ex = os.path.relpath(d["doc_ex_en"], target_en.parent)
-        rel_ar_tpl = os.path.relpath(d["doc_tpl_ar"], target_en.parent)
+        rel_tpl = os.path.relpath(d["doc_tpl_en"], target_en.parent).replace(".md", ".html")
+        rel_guide = os.path.relpath(d["doc_guide_en"], target_en.parent).replace(".md", ".html")
+        rel_ex = os.path.relpath(d["doc_ex_en"], target_en.parent).replace(".md", ".html")
+        rel_ar_tpl = os.path.relpath(d["doc_tpl_ar"], target_en.parent).replace(".md", ".html")
         phase_title = PHASE_META[d['phase']]['en_title']
 
         search_str = f"{d['code']} {d['name_en']} {d['name_ar']} {phase_title} {d['tier']} PMI PMBOK".lower()
@@ -1017,7 +1018,7 @@ def build_master_catalogs(deliverables):
         <a class="card-action-link" href="{rel_tpl}">📋 Template</a>
         <a class="card-action-link" href="{rel_guide}">📖 Guide</a>
         <a class="card-action-link" href="{rel_ex}">💡 Example</a>
-        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #047857 !important;" href="{rel_ar_tpl}">🇸🇦 عربي</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="{rel_ar_tpl}">🇸🇦 عربي</a>
       </div>
     </div>
 """
@@ -1039,9 +1040,9 @@ def build_master_catalogs(deliverables):
 """
 
     for d in deliverables:
-        rel_tpl = os.path.relpath(d["doc_tpl_en"], target_en.parent)
-        rel_guide = os.path.relpath(d["doc_guide_en"], target_en.parent)
-        rel_ex = os.path.relpath(d["doc_ex_en"], target_en.parent)
+        rel_tpl = os.path.relpath(d["doc_tpl_en"], target_en.parent).replace(".md", ".html")
+        rel_guide = os.path.relpath(d["doc_guide_en"], target_en.parent).replace(".md", ".html")
+        rel_ex = os.path.relpath(d["doc_ex_en"], target_en.parent).replace(".md", ".html")
         phase_title = PHASE_META[d['phase']]['en_title']
         search_str = f"{d['code']} {d['name_en']} {d['name_ar']} {phase_title} {d['tier']} PMI PMBOK".lower()
 
@@ -1069,7 +1070,7 @@ def build_master_catalogs(deliverables):
     # 2. AR Master Catalog with Interactive Explorer
     target_ar = DOCS_DIR / "catalog/ar/index.md"
     target_ar.parent.mkdir(parents=True, exist_ok=True)
-    rel_en_catalog = os.path.relpath(DOCS_DIR / "catalog/en/index.md", target_ar.parent)
+    rel_en_catalog = os.path.relpath(DOCS_DIR / "catalog/en/index.md", target_ar.parent).replace(".md", ".html")
 
     catalog_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الفهرس العام باللغة العربية</span>
@@ -1121,10 +1122,10 @@ def build_master_catalogs(deliverables):
 """
 
     for d in deliverables:
-        rel_tpl = os.path.relpath(d["doc_tpl_ar"], target_ar.parent)
-        rel_guide = os.path.relpath(d["doc_guide_ar"], target_ar.parent)
-        rel_ex = os.path.relpath(d["doc_ex_ar"], target_ar.parent)
-        rel_en_tpl = os.path.relpath(d["doc_tpl_en"], target_ar.parent)
+        rel_tpl = os.path.relpath(d["doc_tpl_ar"], target_ar.parent).replace(".md", ".html")
+        rel_guide = os.path.relpath(d["doc_guide_ar"], target_ar.parent).replace(".md", ".html")
+        rel_ex = os.path.relpath(d["doc_ex_ar"], target_ar.parent).replace(".md", ".html")
+        rel_en_tpl = os.path.relpath(d["doc_tpl_en"], target_ar.parent).replace(".md", ".html")
         phase_title = PHASE_META[d['phase']]['ar_title']
 
         search_str = f"{d['code']} {d['name_en']} {d['name_ar']} {phase_title} {d['tier']} ميثاق خطة سجل".lower()
@@ -1143,7 +1144,7 @@ def build_master_catalogs(deliverables):
         <a class="card-action-link" href="{rel_tpl}">📋 القالب</a>
         <a class="card-action-link" href="{rel_guide}">📖 الدليل</a>
         <a class="card-action-link" href="{rel_ex}">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(79, 70, 229, 0.1); color: var(--brand-primary) !important;" href="{rel_en_tpl}">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="{rel_en_tpl}">🇬🇧 EN</a>
       </div>
     </div>
 """
@@ -1165,9 +1166,9 @@ def build_master_catalogs(deliverables):
 """
 
     for d in deliverables:
-        rel_tpl = os.path.relpath(d["doc_tpl_ar"], target_ar.parent)
-        rel_guide = os.path.relpath(d["doc_guide_ar"], target_ar.parent)
-        rel_ex = os.path.relpath(d["doc_ex_ar"], target_ar.parent)
+        rel_tpl = os.path.relpath(d["doc_tpl_ar"], target_ar.parent).replace(".md", ".html")
+        rel_guide = os.path.relpath(d["doc_guide_ar"], target_ar.parent).replace(".md", ".html")
+        rel_ex = os.path.relpath(d["doc_ex_ar"], target_ar.parent).replace(".md", ".html")
         phase_title = PHASE_META[d['phase']]['ar_title']
         search_str = f"{d['code']} {d['name_en']} {d['name_ar']} {phase_title} {d['tier']}".lower()
 
@@ -1197,7 +1198,7 @@ def build_section_indexes(deliverables):
     # 1. EN Templates Index
     target_tpl_en = DOCS_DIR / "templates/en/index.md"
     target_tpl_en.parent.mkdir(parents=True, exist_ok=True)
-    rel_ar_tpl_idx = os.path.relpath(DOCS_DIR / "templates/ar/index.md", target_tpl_en.parent)
+    rel_ar_tpl_idx = os.path.relpath(DOCS_DIR / "templates/ar/index.md", target_tpl_en.parent).replace(".md", ".html")
     tpl_idx_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_tpl_idx}">🇸🇦 الانتقال لفهرس القوالب بالعربية (Arabic Templates) →</a>
@@ -1228,7 +1229,7 @@ def build_section_indexes(deliverables):
     # 2. AR Templates Index
     target_tpl_ar = DOCS_DIR / "templates/ar/index.md"
     target_tpl_ar.parent.mkdir(parents=True, exist_ok=True)
-    rel_en_tpl_idx = os.path.relpath(DOCS_DIR / "templates/en/index.md", target_tpl_ar.parent)
+    rel_en_tpl_idx = os.path.relpath(DOCS_DIR / "templates/en/index.md", target_tpl_ar.parent).replace(".md", ".html")
     tpl_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_tpl_idx}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
@@ -1259,7 +1260,7 @@ def build_section_indexes(deliverables):
     # 3. EN Guides Index
     target_g_en = DOCS_DIR / "guides/en/index.md"
     target_g_en.parent.mkdir(parents=True, exist_ok=True)
-    rel_ar_g_idx = os.path.relpath(DOCS_DIR / "guides/ar/index.md", target_g_en.parent)
+    rel_ar_g_idx = os.path.relpath(DOCS_DIR / "guides/ar/index.md", target_g_en.parent).replace(".md", ".html")
     guides_idx_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_g_idx}">🇸🇦 الانتقال لأدلة النماذج بالعربية (Arabic Guides) →</a>
@@ -1289,7 +1290,7 @@ def build_section_indexes(deliverables):
     # 4. AR Guides Index
     target_g_ar = DOCS_DIR / "guides/ar/index.md"
     target_g_ar.parent.mkdir(parents=True, exist_ok=True)
-    rel_en_g_idx = os.path.relpath(DOCS_DIR / "guides/en/index.md", target_g_ar.parent)
+    rel_en_g_idx = os.path.relpath(DOCS_DIR / "guides/en/index.md", target_g_ar.parent).replace(".md", ".html")
     guides_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_g_idx}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
@@ -1319,7 +1320,7 @@ def build_section_indexes(deliverables):
     # 5. EN Examples Index
     target_ex_en = DOCS_DIR / "examples/en/index.md"
     target_ex_en.parent.mkdir(parents=True, exist_ok=True)
-    rel_ar_ex_idx = os.path.relpath(DOCS_DIR / "examples/ar/index.md", target_ex_en.parent)
+    rel_ar_ex_idx = os.path.relpath(DOCS_DIR / "examples/ar/index.md", target_ex_en.parent).replace(".md", ".html")
     ex_idx_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_ex_idx}">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples) →</a>
@@ -1349,7 +1350,7 @@ def build_section_indexes(deliverables):
     # 6. AR Examples Index
     target_ex_ar = DOCS_DIR / "examples/ar/index.md"
     target_ex_ar.parent.mkdir(parents=True, exist_ok=True)
-    rel_en_ex_idx = os.path.relpath(DOCS_DIR / "examples/en/index.md", target_ex_ar.parent)
+    rel_en_ex_idx = os.path.relpath(DOCS_DIR / "examples/en/index.md", target_ex_ar.parent).replace(".md", ".html")
     ex_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_ex_idx}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
@@ -1389,7 +1390,7 @@ def build_phase_indexes(deliverables):
         # 1. Templates Phase Index (EN)
         target_t_en = DOCS_DIR / "templates" / "en" / phase_dir_en / "index.md"
         target_t_en.parent.mkdir(parents=True, exist_ok=True)
-        rel_ar_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "ar" / phase_dir_ar / "index.md", target_t_en.parent)
+        rel_ar_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "ar" / phase_dir_ar / "index.md", target_t_en.parent).replace(".md", ".html")
         idx_content_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_phase_tpl}">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
@@ -1415,7 +1416,7 @@ def build_phase_indexes(deliverables):
         # 2. Templates Phase Index (AR)
         target_t_ar = DOCS_DIR / "templates" / "ar" / phase_dir_ar / "index.md"
         target_t_ar.parent.mkdir(parents=True, exist_ok=True)
-        rel_en_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "en" / phase_dir_en / "index.md", target_t_ar.parent)
+        rel_en_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "en" / phase_dir_en / "index.md", target_t_ar.parent).replace(".md", ".html")
         idx_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_phase_tpl}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
@@ -1441,7 +1442,7 @@ def build_phase_indexes(deliverables):
         # 3. Guides Phase Index (EN)
         target_g_en = DOCS_DIR / "guides" / "en" / phase_dir_en / "index.md"
         target_g_en.parent.mkdir(parents=True, exist_ok=True)
-        rel_ar_phase_g = os.path.relpath(DOCS_DIR / "guides" / "ar" / phase_dir_ar / "index.md", target_g_en.parent)
+        rel_ar_phase_g = os.path.relpath(DOCS_DIR / "guides" / "ar" / phase_dir_ar / "index.md", target_g_en.parent).replace(".md", ".html")
         g_content_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_phase_g}">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides) →</a>
@@ -1467,7 +1468,7 @@ def build_phase_indexes(deliverables):
         # 4. Guides Phase Index (AR)
         target_g_ar = DOCS_DIR / "guides" / "ar" / phase_dir_ar / "index.md"
         target_g_ar.parent.mkdir(parents=True, exist_ok=True)
-        rel_en_phase_g = os.path.relpath(DOCS_DIR / "guides" / "en" / phase_dir_en / "index.md", target_g_ar.parent)
+        rel_en_phase_g = os.path.relpath(DOCS_DIR / "guides" / "en" / phase_dir_en / "index.md", target_g_ar.parent).replace(".md", ".html")
         g_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_phase_g}">🇬🇧 Switch to English Guides (أدلة إنجليزية) ←</a>
@@ -1493,7 +1494,7 @@ def build_phase_indexes(deliverables):
         # 5. Examples Phase Index (EN)
         target_e_en = DOCS_DIR / "examples" / "en" / phase_dir_en / "index.md"
         target_e_en.parent.mkdir(parents=True, exist_ok=True)
-        rel_ar_phase_e = os.path.relpath(DOCS_DIR / "examples" / "ar" / phase_dir_ar / "index.md", target_e_en.parent)
+        rel_ar_phase_e = os.path.relpath(DOCS_DIR / "examples" / "ar" / phase_dir_ar / "index.md", target_e_en.parent).replace(".md", ".html")
         e_content_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_phase_e}">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples) →</a>
@@ -1519,7 +1520,7 @@ def build_phase_indexes(deliverables):
         # 6. Examples Phase Index (AR)
         target_e_ar = DOCS_DIR / "examples" / "ar" / phase_dir_ar / "index.md"
         target_e_ar.parent.mkdir(parents=True, exist_ok=True)
-        rel_en_phase_e = os.path.relpath(DOCS_DIR / "examples" / "en" / phase_dir_en / "index.md", target_e_ar.parent)
+        rel_en_phase_e = os.path.relpath(DOCS_DIR / "examples" / "en" / phase_dir_en / "index.md", target_e_ar.parent).replace(".md", ".html")
         e_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_phase_e}">🇬🇧 Switch to English Examples (أمثلة إنجليزية) ←</a>
@@ -1543,7 +1544,7 @@ def build_phase_indexes(deliverables):
         target_e_ar.write_text(e_content_ar, encoding="utf-8")
 
 def update_mkdocs_config(deliverables):
-    """Update mkdocs.yml with sleek, streamlined 3-tab top navigation."""
+    """Update mkdocs.yml with sleek, streamlined 3-tab top navigation and use_directory_urls: false."""
     mkdocs_file = ROOT / "mkdocs.yml"
 
     def make_phase_nav_en(phase_prefix, section_type="templates"):
@@ -1736,6 +1737,7 @@ site_author: Fakhruldeen & Tasleemat Contributors
 repo_url: https://github.com/fakhruldeen/Tasleemat
 repo_name: fakhruldeen/Tasleemat
 docs_dir: docs
+use_directory_urls: false
 
 theme:
   name: material
