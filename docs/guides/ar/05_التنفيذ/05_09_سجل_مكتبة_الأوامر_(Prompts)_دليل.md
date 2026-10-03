@@ -10,7 +10,7 @@
     <span class="badge badge-type">دليل إرشادي وحوكمي</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../forms/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.html">📋 القالب الفارغ</a>
     <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="../../../examples/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.html">💡 مثال واقعي مكتمل</a>
     <a class="nav-pill lang-pill" href="../../en/05_Executing/05_09_Prompt_Library_Log_Guide.html">🇬🇧 English Version</a>
@@ -81,7 +81,7 @@ nav_order: 7
 ---
 
 ### المحاذاة والترابط المؤسسي
-* [📄 القالب القابل للطباعة (Markdown)](../../../templates/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.md)
+* [📄 القالب القابل للطباعة (Markdown)](../../../forms/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.md)
 * **🤖 موجّه التوليد الذكي**
 * **📊 بنية البيانات (JSON)**
 * **📈 البيانات الجدولية (CSV)**

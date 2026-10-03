@@ -56,10 +56,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">00. إدارة البرامج والمحافظ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="00" data-tier="Tier 1 | Tier 2" data-search="pmo-00.02 program charter ميثاق البرنامج 00. إدارة البرامج والمحافظ tier 1 | tier 2 ميثاق خطة سجل">
@@ -73,10 +73,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">00. إدارة البرامج والمحافظ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="00" data-tier="Tier 1 | Tier 2" data-search="pmo-00.03 interdependency register سجل الاعتماديات المتبادلة 00. إدارة البرامج والمحافظ tier 1 | tier 2 ميثاق خطة سجل">
@@ -90,10 +90,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">00. إدارة البرامج والمحافظ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="00" data-tier="Tier 1 | Tier 2" data-search="pmo-00.04 resource capacity matrix مصفوفة سعة الموارد 00. إدارة البرامج والمحافظ tier 1 | tier 2 ميثاق خطة سجل">
@@ -107,10 +107,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">00. إدارة البرامج والمحافظ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="00" data-tier="Tier 1 | Tier 2" data-search="pmo-00.05 pmo maturity assessment تقييم نضج مكتب إدارة المشاريع 00. إدارة البرامج والمحافظ tier 1 | tier 2 ميثاق خطة سجل">
@@ -124,10 +124,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">00. إدارة البرامج والمحافظ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="00" data-tier="Tier 1 | Tier 2" data-search="pmo-00.06 okr alignment matrix مصفوفة مواءمة الأهداف والنتائج الرئيسية 00. إدارة البرامج والمحافظ tier 1 | tier 2 ميثاق خطة سجل">
@@ -141,10 +141,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">00. إدارة البرامج والمحافظ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="01" data-tier="Tier 1 | Tier 2" data-search="pmo-01.01 business case دراسة الجدوى (business case) 01. الأعمال وتسليم القيمة tier 1 | tier 2 ميثاق خطة سجل">
@@ -158,10 +158,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">01. الأعمال وتسليم القيمة</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/01_Business_and_Value_Delivery/01_01_Business_Case_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/01_Business_and_Value_Delivery/01_01_Business_Case_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="01" data-tier="Tier 1 | Tier 2" data-search="pmo-01.02 benefits management plan خطة إدارة الفوائد 01. الأعمال وتسليم القيمة tier 1 | tier 2 ميثاق خطة سجل">
@@ -175,10 +175,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">01. الأعمال وتسليم القيمة</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="01" data-tier="Tier 1 | Tier 2" data-search="pmo-01.03 value realization register سجل تحقيق القيمة 01. الأعمال وتسليم القيمة tier 1 | tier 2 ميثاق خطة سجل">
@@ -192,10 +192,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">01. الأعمال وتسليم القيمة</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="01" data-tier="Tier 1 | Tier 2" data-search="pmo-01.04 gap analysis report تقرير تحليل الفجوات 01. الأعمال وتسليم القيمة tier 1 | tier 2 ميثاق خطة سجل">
@@ -209,10 +209,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">01. الأعمال وتسليم القيمة</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/01_Business_and_Value_Delivery/01_04_Gap_Analysis_Report_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/01_Business_and_Value_Delivery/01_04_Gap_Analysis_Report_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="02" data-tier="Tier 1 | Tier 2 | Tier 4" data-search="pmo-02.01 tailoring plan خطة التخصيص 02. منهجية المشروع وتخصيصه tier 1 | tier 2 | tier 4 ميثاق خطة سجل">
@@ -226,10 +226,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">02. منهجية المشروع وتخصيصه</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="02" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-02.02 ai governance plan خطة حوكمة الذكاء الاصطناعي 02. منهجية المشروع وتخصيصه tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -243,10 +243,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">02. منهجية المشروع وتخصيصه</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="02" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-02.03 ai readiness assessment تقييم جاهزية الذكاء الاصطناعي 02. منهجية المشروع وتخصيصه tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -260,10 +260,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">02. منهجية المشروع وتخصيصه</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="02" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-02.04 ai use case canvas نموذج حالة استخدام الذكاء الاصطناعي 02. منهجية المشروع وتخصيصه tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -277,10 +277,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">02. منهجية المشروع وتخصيصه</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="02" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-02.05 ai model card and fact sheet بطاقة نموذج الذكاء الاصطناعي 02. منهجية المشروع وتخصيصه tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -294,10 +294,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">02. منهجية المشروع وتخصيصه</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="02" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-02.06 data privacy and ethics assessment تقييم خصوصية البيانات وأخلاقياتها 02. منهجية المشروع وتخصيصه tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -311,10 +311,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">02. منهجية المشروع وتخصيصه</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="03" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-03.01 project charter ميثاق المشروع 03. البدء tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -328,10 +328,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">03. البدء</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/03_البدء/03_01_ميثاق_المشروع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/03_البدء/03_01_ميثاق_المشروع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/03_البدء/03_01_ميثاق_المشروع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/03_البدء/03_01_ميثاق_المشروع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/03_Initiating/03_01_Project_Charter_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/03_Initiating/03_01_Project_Charter_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="03" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-03.02 product vision رؤية المنتج 03. البدء tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -345,10 +345,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">03. البدء</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/03_البدء/03_02_رؤية_المنتج_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/03_البدء/03_02_رؤية_المنتج_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/03_البدء/03_02_رؤية_المنتج_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/03_البدء/03_02_رؤية_المنتج_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/03_Initiating/03_02_Product_Vision_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/03_Initiating/03_02_Product_Vision_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="03" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-03.03 assumption log سجل الافتراضات 03. البدء tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -362,10 +362,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">03. البدء</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/03_البدء/03_03_سجل_الافتراضات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/03_البدء/03_03_سجل_الافتراضات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/03_البدء/03_03_سجل_الافتراضات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/03_البدء/03_03_سجل_الافتراضات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/03_Initiating/03_03_Assumption_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/03_Initiating/03_03_Assumption_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="03" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-03.04 stakeholder register سجل المعنيين 03. البدء tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -379,10 +379,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">03. البدء</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/03_البدء/03_04_سجل_المعنيين_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/03_البدء/03_04_سجل_المعنيين_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/03_البدء/03_04_سجل_المعنيين_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/03_البدء/03_04_سجل_المعنيين_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/03_Initiating/03_04_Stakeholder_Register_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/03_Initiating/03_04_Stakeholder_Register_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="03" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-03.05 stakeholder analysis تحليل المعنيين 03. البدء tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -396,10 +396,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">03. البدء</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/03_البدء/03_05_تحليل_المعنيين_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/03_البدء/03_05_تحليل_المعنيين_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/03_البدء/03_05_تحليل_المعنيين_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/03_البدء/03_05_تحليل_المعنيين_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/03_Initiating/03_05_Stakeholder_Analysis_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/03_Initiating/03_05_Stakeholder_Analysis_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.01.01 project management plan خطة إدارة المشروع 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -413,10 +413,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/01_Integration/04_01_01_Project_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/01_Integration/04_01_01_Project_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.01.02 change management plan خطة إدارة التغيير 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -430,10 +430,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/01_Integration/04_01_02_Change_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/01_Integration/04_01_02_Change_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.01.03 project roadmap خارطة طريق المشروع 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -447,10 +447,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.02.01 scope management plan خطة إدارة النطاق 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -464,10 +464,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_01_Scope_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_01_Scope_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-04.02.02 requirements management plan خطة إدارة المتطلبات 04. التخطيط tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -481,10 +481,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-04.02.03 requirements documentation وثائق المتطلبات 04. التخطيط tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -498,10 +498,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-04.02.04 requirements traceability matrix مصفوفة تتبع المتطلبات 04. التخطيط tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -515,10 +515,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_04_Requirements_Traceability_Matrix_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_04_Requirements_Traceability_Matrix_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-04.02.05 project scope statement بيان نطاق المشروع 04. التخطيط tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -532,10 +532,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_05_Project_Scope_Statement_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_05_Project_Scope_Statement_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 4 (AI & Specialized)" data-search="pmo-04.02.06 work breakdown structure هيكل تجزئة العمل 04. التخطيط tier 4 (ai & specialized) ميثاق خطة سجل">
@@ -549,10 +549,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.02.07 wbs dictionary قاموس هيكل تجزئة العمل 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -566,10 +566,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.02.08 product backlog قائمة تراكم المنتج (product backlog) 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -583,10 +583,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.02.09 user story mapping canvas نموذج تخطيط قصص المستخدم 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -600,10 +600,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.01 schedule management plan خطة إدارة الجدول الزمني 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -617,10 +617,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_01_Schedule_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_01_Schedule_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.02 activity list قائمة الأنشطة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -634,10 +634,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_02_Activity_List_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_02_Activity_List_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.03 activity attributes سمات النشاط 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -651,10 +651,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_03_Activity_Attributes_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_03_Activity_Attributes_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.04 milestone list قائمة المعالم (milestones) 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -668,10 +668,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_04_Milestone_List_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_04_Milestone_List_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.05 network diagram المخطط الشبكي 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -685,10 +685,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.06 duration estimates تقديرات المدة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -702,10 +702,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_06_Duration_Estimates_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_06_Duration_Estimates_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.07 duration estimating worksheet ورقة عمل تقدير المدة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -719,10 +719,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.08 project schedule الجدول الزمني للمشروع 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -736,10 +736,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.09 release plan خطة الإصدار 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -753,10 +753,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.03.10 sprint planning log سجل تخطيط أسبوع العمل 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -770,10 +770,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.04.01 cost management plan خطة إدارة التكلفة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -787,10 +787,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/04_Cost/04_04_01_Cost_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/04_Cost/04_04_01_Cost_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.04.02 cost estimates تقديرات التكلفة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -804,10 +804,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.04.03 cost estimating worksheet ورقة عمل تقدير التكلفة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -821,10 +821,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.04.04 cost baseline الخط المرجعي للتكلفة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -838,10 +838,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/04_Cost/04_04_04_Cost_Baseline_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/04_Cost/04_04_04_Cost_Baseline_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.05.01 quality management plan خطة إدارة الجودة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -855,10 +855,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.05.02 quality metrics مقاييس الجودة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -872,10 +872,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.05.03 definition of ready and done تعريف الجاهزية والاكتمال 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -889,10 +889,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.06.01 resource management plan خطة إدارة الموارد 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -906,10 +906,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/06_Resource/04_06_01_Resource_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/06_Resource/04_06_01_Resource_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.06.02 resource requirements متطلبات الموارد 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -923,10 +923,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/06_Resource/04_06_02_Resource_Requirements_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/06_Resource/04_06_02_Resource_Requirements_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.06.03 resource breakdown structure هيكل تجزئة الموارد (rbs) 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -940,10 +940,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.06.04 responsibility assignment matrix مصفوفة تعيين المسؤوليات (ram) 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -957,10 +957,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.06.05 team charter ميثاق الفريق 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -974,10 +974,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/06_Resource/04_06_05_Team_Charter_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/06_Resource/04_06_05_Team_Charter_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.06.06 team psychological safety and wellbeing index مؤشر الأمان النفسي وصحة الفريق 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -991,10 +991,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.07.01 communications management plan خطة إدارة الاتصالات 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1008,10 +1008,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.01 risk management plan خطة إدارة المخاطر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1025,10 +1025,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.02 risk register سجل المخاطر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1042,10 +1042,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/08_Risk/04_08_02_Risk_Register_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/08_Risk/04_08_02_Risk_Register_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.03 probability and impact assessment تقييم الاحتمالية والأثر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1059,10 +1059,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.04 probability and impact matrix مصفوفة الاحتمالية والأثر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1076,10 +1076,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/08_Risk/04_08_04_Probability_and_Impact_Matrix_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/08_Risk/04_08_04_Probability_and_Impact_Matrix_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.05 risk data sheet ورقة بيانات المخاطر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1093,10 +1093,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/08_Risk/04_08_05_Risk_Data_Sheet_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/08_Risk/04_08_05_Risk_Data_Sheet_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.06 risk report تقرير المخاطر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1110,10 +1110,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/08_Risk/04_08_06_Risk_Report_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/08_Risk/04_08_06_Risk_Report_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.07 risk mitigation action plan خطة عمل التخفيف من المخاطر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1127,10 +1127,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.09.01 procurement management plan خطة إدارة المشتريات 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1144,10 +1144,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/09_Procurement/04_09_01_Procurement_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/09_Procurement/04_09_01_Procurement_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.09.02 procurement strategy استراتيجية المشتريات 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1161,10 +1161,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.09.03 source selection criteria معايير اختيار المصدر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1178,10 +1178,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/09_Procurement/04_09_03_Source_Selection_Criteria_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/09_Procurement/04_09_03_Source_Selection_Criteria_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.09.04 statement of work sow بيان العمل (sow) 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1195,10 +1195,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.09.05 request for proposal rfp طلب تقديم عروض (rfp) 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1212,10 +1212,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.10.01 stakeholder engagement plan خطة إشراك المعنيين 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1229,10 +1229,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.11.01 ocm strategy and plan استراتيجية وخطة إدارة التغيير المؤسسي 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1246,10 +1246,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.11.02 training plan and log خطة وسجل التدريب 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1263,10 +1263,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.12.01 sustainability and esg management plan خطة إدارة الاستدامة والمعايير البيئية والاجتماعية والحوكمة 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1280,10 +1280,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.01 issue log سجل المشكلات 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1297,10 +1297,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_01_سجل_المشكلات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_01_سجل_المشكلات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_01_سجل_المشكلات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_01_سجل_المشكلات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_01_Issue_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_01_Issue_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.02 decision log سجل القرارات 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1314,10 +1314,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_02_سجل_القرارات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_02_سجل_القرارات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_02_سجل_القرارات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_02_سجل_القرارات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_02_Decision_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_02_Decision_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.03 change request طلب تغيير 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1331,10 +1331,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_03_طلب_تغيير_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_03_طلب_تغيير_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_03_طلب_تغيير_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_03_طلب_تغيير_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_03_Change_Request_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_03_Change_Request_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.04 change log سجل التغييرات 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1348,10 +1348,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_04_سجل_التغييرات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_04_سجل_التغييرات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_04_سجل_التغييرات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_04_سجل_التغييرات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_04_Change_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_04_Change_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.05 quality audit تدقيق الجودة 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1365,10 +1365,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_05_تدقيق_الجودة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_05_تدقيق_الجودة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_05_تدقيق_الجودة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_05_تدقيق_الجودة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_05_Quality_Audit_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_05_Quality_Audit_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.06 team performance assessment تقييم أداء الفريق 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1382,10 +1382,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_06_Team_Performance_Assessment_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_06_Team_Performance_Assessment_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.07 lessons learned register سجل الدروس المستفادة 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1399,10 +1399,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_07_Lessons_Learned_Register_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_07_Lessons_Learned_Register_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.08 retrospective مراجعة المرحلة (retrospective) 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1416,10 +1416,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_08_Retrospective_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_08_Retrospective_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.09 prompt library log سجل مكتبة الأوامر (prompts) 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1433,10 +1433,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_09_Prompt_Library_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_09_Prompt_Library_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.10 impediment log سجل العوائق 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1450,10 +1450,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_10_سجل_العوائق_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_10_سجل_العوائق_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_10_سجل_العوائق_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_10_سجل_العوائق_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_10_Impediment_Log_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_10_Impediment_Log_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.11 meeting minutes محضر الاجتماع 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1467,10 +1467,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_11_محضر_الاجتماع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_11_محضر_الاجتماع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_11_محضر_الاجتماع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_11_محضر_الاجتماع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_11_Meeting_Minutes_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_11_Meeting_Minutes_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.12 team onboarding checklist قائمة التحقق لتهيئة فريق العمل 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1484,10 +1484,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.01 project status report تقرير حالة المشروع 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1501,10 +1501,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.02 team member status report تقرير حالة عضو الفريق 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1518,10 +1518,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_02_Team_Member_Status_Report_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_02_Team_Member_Status_Report_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.03 contractor status report تقرير حالة المقاول 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1535,10 +1535,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_03_Contractor_Status_Report_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_03_Contractor_Status_Report_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.04 variance analysis تحليل التباين 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1552,10 +1552,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_04_Variance_Analysis_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_04_Variance_Analysis_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.05 earned value analysis تحليل القيمة المكتسبة (eva) 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1569,10 +1569,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.06 risk audit تدقيق المخاطر 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1586,10 +1586,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_06_Risk_Audit_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_06_Risk_Audit_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.07 procurement audit تدقيق المشتريات 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1603,10 +1603,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.08 product acceptance form نموذج قبول المنتج 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1620,10 +1620,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.09 vendor performance scorecard بطاقة أداء المورد 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1637,10 +1637,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.10 user acceptance testing signoff نموذج اعتماد اختبار قبول المستخدم (uat) 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1654,10 +1654,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.11 project health check الفحص الصحي للمشروع 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1671,10 +1671,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.12 flow metrics and value stream مقاييس التدفق وتدفق القيمة 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1688,10 +1688,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.01 lessons learned summary ملخص الدروس المستفادة 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1705,10 +1705,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. الإغلاق</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/07_Closing/07_01_Lessons_Learned_Summary_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.02 contract closeout report تقرير إغلاق العقد 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1722,10 +1722,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. الإغلاق</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/07_Closing/07_02_Contract_Closeout_Report_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_02_Contract_Closeout_Report_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.03 project or phase closeout إغلاق المشروع أو المرحلة 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1739,10 +1739,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. الإغلاق</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.04 transition to operations checklist قائمة التحقق للانتقال إلى العمليات 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1756,10 +1756,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. الإغلاق</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.05 post implementation review مراجعة ما بعد التنفيذ 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1773,10 +1773,10 @@
         <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. الإغلاق</div>
       </div>
       <div class="explorer-card-actions">
-        <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_قالب.html">📋 القالب</a>
         <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_مثال.html">💡 مثال واقعي</a>
-        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../templates/en/07_Closing/07_05_Post_Implementation_Review_Template.html">🇬🇧 EN</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_05_Post_Implementation_Review_Template.html">🇬🇧 EN</a>
       </div>
     </div>
   </div>
@@ -1799,7 +1799,7 @@
           <td>00. إدارة البرامج والمحافظ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_مثال.html">💡 المثال</a>
           </td>
@@ -1810,7 +1810,7 @@
           <td>00. إدارة البرامج والمحافظ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_مثال.html">💡 المثال</a>
           </td>
@@ -1821,7 +1821,7 @@
           <td>00. إدارة البرامج والمحافظ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_مثال.html">💡 المثال</a>
           </td>
@@ -1832,7 +1832,7 @@
           <td>00. إدارة البرامج والمحافظ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_مثال.html">💡 المثال</a>
           </td>
@@ -1843,7 +1843,7 @@
           <td>00. إدارة البرامج والمحافظ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_مثال.html">💡 المثال</a>
           </td>
@@ -1854,7 +1854,7 @@
           <td>00. إدارة البرامج والمحافظ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_مثال.html">💡 المثال</a>
           </td>
@@ -1865,7 +1865,7 @@
           <td>01. الأعمال وتسليم القيمة</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_مثال.html">💡 المثال</a>
           </td>
@@ -1876,7 +1876,7 @@
           <td>01. الأعمال وتسليم القيمة</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_مثال.html">💡 المثال</a>
           </td>
@@ -1887,7 +1887,7 @@
           <td>01. الأعمال وتسليم القيمة</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_مثال.html">💡 المثال</a>
           </td>
@@ -1898,7 +1898,7 @@
           <td>01. الأعمال وتسليم القيمة</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_مثال.html">💡 المثال</a>
           </td>
@@ -1909,7 +1909,7 @@
           <td>02. منهجية المشروع وتخصيصه</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 4</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_مثال.html">💡 المثال</a>
           </td>
@@ -1920,7 +1920,7 @@
           <td>02. منهجية المشروع وتخصيصه</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_مثال.html">💡 المثال</a>
           </td>
@@ -1931,7 +1931,7 @@
           <td>02. منهجية المشروع وتخصيصه</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_مثال.html">💡 المثال</a>
           </td>
@@ -1942,7 +1942,7 @@
           <td>02. منهجية المشروع وتخصيصه</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_مثال.html">💡 المثال</a>
           </td>
@@ -1953,7 +1953,7 @@
           <td>02. منهجية المشروع وتخصيصه</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.html">💡 المثال</a>
           </td>
@@ -1964,7 +1964,7 @@
           <td>02. منهجية المشروع وتخصيصه</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_مثال.html">💡 المثال</a>
           </td>
@@ -1975,7 +1975,7 @@
           <td>03. البدء</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/03_البدء/03_01_ميثاق_المشروع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/03_البدء/03_01_ميثاق_المشروع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/03_البدء/03_01_ميثاق_المشروع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/03_البدء/03_01_ميثاق_المشروع_مثال.html">💡 المثال</a>
           </td>
@@ -1986,7 +1986,7 @@
           <td>03. البدء</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/03_البدء/03_02_رؤية_المنتج_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/03_البدء/03_02_رؤية_المنتج_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/03_البدء/03_02_رؤية_المنتج_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/03_البدء/03_02_رؤية_المنتج_مثال.html">💡 المثال</a>
           </td>
@@ -1997,7 +1997,7 @@
           <td>03. البدء</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/03_البدء/03_03_سجل_الافتراضات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/03_البدء/03_03_سجل_الافتراضات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/03_البدء/03_03_سجل_الافتراضات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/03_البدء/03_03_سجل_الافتراضات_مثال.html">💡 المثال</a>
           </td>
@@ -2008,7 +2008,7 @@
           <td>03. البدء</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/03_البدء/03_04_سجل_المعنيين_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/03_البدء/03_04_سجل_المعنيين_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/03_البدء/03_04_سجل_المعنيين_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/03_البدء/03_04_سجل_المعنيين_مثال.html">💡 المثال</a>
           </td>
@@ -2019,7 +2019,7 @@
           <td>03. البدء</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/03_البدء/03_05_تحليل_المعنيين_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/03_البدء/03_05_تحليل_المعنيين_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/03_البدء/03_05_تحليل_المعنيين_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/03_البدء/03_05_تحليل_المعنيين_مثال.html">💡 المثال</a>
           </td>
@@ -2030,7 +2030,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_مثال.html">💡 المثال</a>
           </td>
@@ -2041,7 +2041,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_مثال.html">💡 المثال</a>
           </td>
@@ -2052,7 +2052,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_مثال.html">💡 المثال</a>
           </td>
@@ -2063,7 +2063,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_مثال.html">💡 المثال</a>
           </td>
@@ -2074,7 +2074,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_مثال.html">💡 المثال</a>
           </td>
@@ -2085,7 +2085,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_مثال.html">💡 المثال</a>
           </td>
@@ -2096,7 +2096,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_مثال.html">💡 المثال</a>
           </td>
@@ -2107,7 +2107,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_مثال.html">💡 المثال</a>
           </td>
@@ -2118,7 +2118,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 4 (AI & Specialized)</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_مثال.html">💡 المثال</a>
           </td>
@@ -2129,7 +2129,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_مثال.html">💡 المثال</a>
           </td>
@@ -2140,7 +2140,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.html">💡 المثال</a>
           </td>
@@ -2151,7 +2151,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_مثال.html">💡 المثال</a>
           </td>
@@ -2162,7 +2162,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_مثال.html">💡 المثال</a>
           </td>
@@ -2173,7 +2173,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_مثال.html">💡 المثال</a>
           </td>
@@ -2184,7 +2184,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_مثال.html">💡 المثال</a>
           </td>
@@ -2195,7 +2195,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_مثال.html">💡 المثال</a>
           </td>
@@ -2206,7 +2206,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_مثال.html">💡 المثال</a>
           </td>
@@ -2217,7 +2217,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_مثال.html">💡 المثال</a>
           </td>
@@ -2228,7 +2228,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_مثال.html">💡 المثال</a>
           </td>
@@ -2239,7 +2239,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_مثال.html">💡 المثال</a>
           </td>
@@ -2250,7 +2250,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_مثال.html">💡 المثال</a>
           </td>
@@ -2261,7 +2261,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_مثال.html">💡 المثال</a>
           </td>
@@ -2272,7 +2272,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_مثال.html">💡 المثال</a>
           </td>
@@ -2283,7 +2283,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_مثال.html">💡 المثال</a>
           </td>
@@ -2294,7 +2294,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_مثال.html">💡 المثال</a>
           </td>
@@ -2305,7 +2305,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_مثال.html">💡 المثال</a>
           </td>
@@ -2316,7 +2316,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_مثال.html">💡 المثال</a>
           </td>
@@ -2327,7 +2327,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_مثال.html">💡 المثال</a>
           </td>
@@ -2338,7 +2338,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_مثال.html">💡 المثال</a>
           </td>
@@ -2349,7 +2349,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_مثال.html">💡 المثال</a>
           </td>
@@ -2360,7 +2360,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_مثال.html">💡 المثال</a>
           </td>
@@ -2371,7 +2371,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_مثال.html">💡 المثال</a>
           </td>
@@ -2382,7 +2382,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_مثال.html">💡 المثال</a>
           </td>
@@ -2393,7 +2393,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_مثال.html">💡 المثال</a>
           </td>
@@ -2404,7 +2404,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_مثال.html">💡 المثال</a>
           </td>
@@ -2415,7 +2415,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_مثال.html">💡 المثال</a>
           </td>
@@ -2426,7 +2426,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_مثال.html">💡 المثال</a>
           </td>
@@ -2437,7 +2437,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_مثال.html">💡 المثال</a>
           </td>
@@ -2448,7 +2448,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_مثال.html">💡 المثال</a>
           </td>
@@ -2459,7 +2459,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_مثال.html">💡 المثال</a>
           </td>
@@ -2470,7 +2470,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_مثال.html">💡 المثال</a>
           </td>
@@ -2481,7 +2481,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_مثال.html">💡 المثال</a>
           </td>
@@ -2492,7 +2492,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_مثال.html">💡 المثال</a>
           </td>
@@ -2503,7 +2503,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_مثال.html">💡 المثال</a>
           </td>
@@ -2514,7 +2514,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_مثال.html">💡 المثال</a>
           </td>
@@ -2525,7 +2525,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_مثال.html">💡 المثال</a>
           </td>
@@ -2536,7 +2536,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_مثال.html">💡 المثال</a>
           </td>
@@ -2547,7 +2547,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_مثال.html">💡 المثال</a>
           </td>
@@ -2558,7 +2558,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_مثال.html">💡 المثال</a>
           </td>
@@ -2569,7 +2569,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_مثال.html">💡 المثال</a>
           </td>
@@ -2580,7 +2580,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_مثال.html">💡 المثال</a>
           </td>
@@ -2591,7 +2591,7 @@
           <td>04. التخطيط</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.html">💡 المثال</a>
           </td>
@@ -2602,7 +2602,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_01_سجل_المشكلات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_01_سجل_المشكلات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_01_سجل_المشكلات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_01_سجل_المشكلات_مثال.html">💡 المثال</a>
           </td>
@@ -2613,7 +2613,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_02_سجل_القرارات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_02_سجل_القرارات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_02_سجل_القرارات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_02_سجل_القرارات_مثال.html">💡 المثال</a>
           </td>
@@ -2624,7 +2624,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_03_طلب_تغيير_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_03_طلب_تغيير_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_03_طلب_تغيير_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_03_طلب_تغيير_مثال.html">💡 المثال</a>
           </td>
@@ -2635,7 +2635,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_04_سجل_التغييرات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_04_سجل_التغييرات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_04_سجل_التغييرات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_04_سجل_التغييرات_مثال.html">💡 المثال</a>
           </td>
@@ -2646,7 +2646,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_05_تدقيق_الجودة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_05_تدقيق_الجودة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_05_تدقيق_الجودة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_05_تدقيق_الجودة_مثال.html">💡 المثال</a>
           </td>
@@ -2657,7 +2657,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_مثال.html">💡 المثال</a>
           </td>
@@ -2668,7 +2668,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_مثال.html">💡 المثال</a>
           </td>
@@ -2679,7 +2679,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_مثال.html">💡 المثال</a>
           </td>
@@ -2690,7 +2690,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.html">💡 المثال</a>
           </td>
@@ -2701,7 +2701,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_10_سجل_العوائق_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_10_سجل_العوائق_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_10_سجل_العوائق_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_10_سجل_العوائق_مثال.html">💡 المثال</a>
           </td>
@@ -2712,7 +2712,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_11_محضر_الاجتماع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_11_محضر_الاجتماع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_11_محضر_الاجتماع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_11_محضر_الاجتماع_مثال.html">💡 المثال</a>
           </td>
@@ -2723,7 +2723,7 @@
           <td>05. التنفيذ</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.html">💡 المثال</a>
           </td>
@@ -2734,7 +2734,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_مثال.html">💡 المثال</a>
           </td>
@@ -2745,7 +2745,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_مثال.html">💡 المثال</a>
           </td>
@@ -2756,7 +2756,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_مثال.html">💡 المثال</a>
           </td>
@@ -2767,7 +2767,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_مثال.html">💡 المثال</a>
           </td>
@@ -2778,7 +2778,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_مثال.html">💡 المثال</a>
           </td>
@@ -2789,7 +2789,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_مثال.html">💡 المثال</a>
           </td>
@@ -2800,7 +2800,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_مثال.html">💡 المثال</a>
           </td>
@@ -2811,7 +2811,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_مثال.html">💡 المثال</a>
           </td>
@@ -2822,7 +2822,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_مثال.html">💡 المثال</a>
           </td>
@@ -2833,7 +2833,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_مثال.html">💡 المثال</a>
           </td>
@@ -2844,7 +2844,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_مثال.html">💡 المثال</a>
           </td>
@@ -2855,7 +2855,7 @@
           <td>06. المراقبة والتحكم</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_مثال.html">💡 المثال</a>
           </td>
@@ -2866,7 +2866,7 @@
           <td>07. الإغلاق</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_مثال.html">💡 المثال</a>
           </td>
@@ -2877,7 +2877,7 @@
           <td>07. الإغلاق</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.html">💡 المثال</a>
           </td>
@@ -2888,7 +2888,7 @@
           <td>07. الإغلاق</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_مثال.html">💡 المثال</a>
           </td>
@@ -2899,7 +2899,7 @@
           <td>07. الإغلاق</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_مثال.html">💡 المثال</a>
           </td>
@@ -2910,7 +2910,7 @@
           <td>07. الإغلاق</td>
           <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
           <td style="text-align: center; white-space: nowrap;">
-            <a class="card-action-link" href="../../templates/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_مثال.html">💡 المثال</a>
           </td>

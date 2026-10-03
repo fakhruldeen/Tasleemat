@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/05_Executing/05_08_Retrospective_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/05_Executing/05_08_Retrospective_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/05_Executing/05_08_Retrospective_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.html">🇸🇦 النسخة العربية</a>
@@ -134,7 +134,7 @@ must populate the following sections based on the project context (ensure
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../templates/en/05_Executing/05_08_Retrospective_Template.md)
+* [📄 Printable Template (Markdown)](../../../forms/en/05_Executing/05_08_Retrospective_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

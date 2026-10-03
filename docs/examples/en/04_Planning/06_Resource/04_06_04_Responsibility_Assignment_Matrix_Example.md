@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../../guides/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_مثال.html">🇸🇦 النسخة العربية</a>

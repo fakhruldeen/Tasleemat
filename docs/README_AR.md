@@ -8,7 +8,7 @@
   </p>
   <div class="hero-actions">
     <a href="catalog/ar/index.html" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
-    <a href="templates/ar/index.html" class="btn-secondary">📋 تصفح القوالب القياسية</a>
+    <a href="forms/ar/index.html" class="btn-secondary">📋 تصفح القوالب القياسية</a>
     <a href="ar/01_getting_started.html" class="btn-secondary">📚 الأدلة والسياسات</a>
     <a href="index.html" class="btn-lang">🇬🇧 Switch to English Portal</a>
   </div>
@@ -79,7 +79,7 @@ flowchart TD
     <h3 class="phase-hub-title">إدارة البرامج والمحافظ</h3>
     <p class="phase-hub-desc">المواءمة الاستراتيجية، توازن المحفظة، إدارة الاعتماديات بين المشاريع، وتقييم نضج PMO (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/00_إدارة_البرامج_والمحافظ/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.html">💡 الأمثلة</a>
     </div>
@@ -93,7 +93,7 @@ flowchart TD
     <h3 class="phase-hub-title">الأعمال وتسليم القيمة</h3>
     <p class="phase-hub-desc">دراسات الجدوى الاقتصادية، خطط إدارة المنافع، سجلات تحقيق القيمة، وتحليل الفجوات (4 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/01_الأعمال_وتسليم_القيمة/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.html">💡 الأمثلة</a>
     </div>
@@ -107,7 +107,7 @@ flowchart TD
     <h3 class="phase-hub-title">منهجية المشروع وتخصيصه</h3>
     <p class="phase-hub-desc">استراتيجية التخصيص، مستويات الحوكمة، أخلاقيات الذكاء الاصطناعي، وبطاقات النماذج (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/02_منهجية_المشروع_وتخصيصه/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.html">💡 الأمثلة</a>
     </div>
@@ -121,7 +121,7 @@ flowchart TD
     <h3 class="phase-hub-title">البدء</h3>
     <p class="phase-hub-desc">الترخيص الرسمي للمشروع، رؤية المنتج، سجل الافتراضات الأولية، وتحديد المعنيين (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/03_البدء/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/03_البدء/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/03_البدء/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/03_البدء/index.html">💡 الأمثلة</a>
     </div>
@@ -135,7 +135,7 @@ flowchart TD
     <h3 class="phase-hub-title">التخطيط (12 مجالاً معرفياً)</h3>
     <p class="phase-hub-desc">الخطوط المرجعية للنطاق، الجدول الزمني، التكلفة، الجودة، الموارد، المخاطر، والمشتريات (47 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/04_التخطيط/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/04_التخطيط/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/04_التخطيط/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/04_التخطيط/index.html">💡 الأمثلة</a>
     </div>
@@ -149,7 +149,7 @@ flowchart TD
     <h3 class="phase-hub-title">التنفيذ</h3>
     <p class="phase-hub-desc">توجيه وإدارة أعمال المشروع، سجل القضايا، سجل القرارات، طلبات التغيير، وأداء الفريق (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/05_التنفيذ/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/05_التنفيذ/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/05_التنفيذ/index.html">💡 الأمثلة</a>
     </div>
@@ -163,7 +163,7 @@ flowchart TD
     <h3 class="phase-hub-title">المراقبة والتحكم</h3>
     <p class="phase-hub-desc">تقارير الأداء، تحليل القيمة المكتسبة (EVA)، مراقبة التباين، وضمان الجودة واختبارات القبول (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/06_المراقبة_والتحكم/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.html">💡 الأمثلة</a>
     </div>
@@ -177,7 +177,7 @@ flowchart TD
     <h3 class="phase-hub-title">الإغلاق</h3>
     <p class="phase-hub-desc">الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/07_الإغلاق/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/07_الإغلاق/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/07_الإغلاق/index.html">💡 الأمثلة</a>
     </div>
@@ -208,8 +208,8 @@ flowchart TD
 
 ## 👤 مسارات القراءة الموصى بها بحسب الدور الوظيفي
 
-* **لمديري المشاريع:** ابدأ بـ [`01_getting_started.md`](ar/01_getting_started.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [`02_usage_guide.md`](ar/02_usage_guide.md) → [مكتبة القوالب](templates/ar/index.md).
+* **لمديري المشاريع:** ابدأ بـ [`01_getting_started.md`](ar/01_getting_started.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [`02_usage_guide.md`](ar/02_usage_guide.md) → [مكتبة القوالب](forms/ar/index.md).
 * **لمدراء مكاتب إدارة المشاريع (PMO):** راجع [`03_pmo_policy_manual.md`](ar/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](ar/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](ar/06_raci_authority_matrix.md).
-* **لقادة سكرم والتحول الرشيق:** ركز على [`09_agile_hybrid_integration.md`](ar/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [سجلات سكرم والمراجعات](templates/ar/05_التنفيذ/index.md).
-* **لمدراء مشاريع الذكاء الاصطناعي:** تعمق في [`08_ai_governance_framework.md`](ar/08_ai_governance_framework.md) → [قوالب حوكمة الذكاء الاصطناعي](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md).
+* **لقادة سكرم والتحول الرشيق:** ركز على [`09_agile_hybrid_integration.md`](ar/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [سجلات سكرم والمراجعات](forms/ar/05_التنفيذ/index.md).
+* **لمدراء مشاريع الذكاء الاصطناعي:** تعمق في [`08_ai_governance_framework.md`](ar/08_ai_governance_framework.md) → [قوالب حوكمة الذكاء الاصطناعي](forms/ar/02_منهجية_المشروع_وتخصيصه/index.md).
 * **لمسؤولي الأنظمة والأتمتة:** استكشف [`11_tools_and_automation.md`](ar/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](ar/12_open_knowledge_framework.md).

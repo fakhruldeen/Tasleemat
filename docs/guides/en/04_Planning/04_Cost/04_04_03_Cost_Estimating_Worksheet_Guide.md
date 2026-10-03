@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_دليل.html">🇸🇦 النسخة العربية</a>

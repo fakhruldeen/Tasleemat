@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.html">🇸🇦 النسخة العربية</a>
@@ -131,7 +131,7 @@ must populate the following sections based on the project context (ensure
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../../templates/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.md)
+* [📄 Printable Template (Markdown)](../../../../forms/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

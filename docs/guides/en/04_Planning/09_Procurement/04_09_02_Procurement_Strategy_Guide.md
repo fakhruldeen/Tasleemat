@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_دليل.html">🇸🇦 النسخة العربية</a>

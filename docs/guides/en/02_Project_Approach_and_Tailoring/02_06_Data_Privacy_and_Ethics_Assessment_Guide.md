@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_دليل.html">🇸🇦 النسخة العربية</a>
@@ -202,7 +202,7 @@ context (ensure `parameters.md` is referenced for global project variables):
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../templates/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.md)
+* [📄 Printable Template (Markdown)](../../../forms/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

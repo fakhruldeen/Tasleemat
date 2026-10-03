@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/07_Closing/07_01_Lessons_Learned_Summary_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/07_Closing/07_01_Lessons_Learned_Summary_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_دليل.html">🇸🇦 النسخة العربية</a>
@@ -161,7 +161,7 @@ context (ensure `parameters.md` is referenced for global project variables):
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../templates/en/07_Closing/07_01_Lessons_Learned_Summary_Template.md)
+* [📄 Printable Template (Markdown)](../../../forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

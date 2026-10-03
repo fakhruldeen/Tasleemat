@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_دليل.html">🇸🇦 النسخة العربية</a>

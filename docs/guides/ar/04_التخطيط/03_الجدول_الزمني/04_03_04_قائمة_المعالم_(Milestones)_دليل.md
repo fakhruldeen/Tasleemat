@@ -10,7 +10,7 @@
     <span class="badge badge-type">دليل إرشادي وحوكمي</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../../forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_قالب.html">📋 القالب الفارغ</a>
     <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="../../../../examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_مثال.html">💡 مثال واقعي مكتمل</a>
     <a class="nav-pill lang-pill" href="../../../en/04_Planning/03_Schedule/04_03_04_Milestone_List_Guide.html">🇬🇧 English Version</a>

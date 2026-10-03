@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/03_Initiating/03_04_Stakeholder_Register_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/03_Initiating/03_04_Stakeholder_Register_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/03_Initiating/03_04_Stakeholder_Register_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/03_البدء/03_04_سجل_المعنيين_دليل.html">🇸🇦 النسخة العربية</a>

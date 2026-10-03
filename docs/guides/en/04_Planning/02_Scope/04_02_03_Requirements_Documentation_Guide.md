@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_دليل.html">🇸🇦 النسخة العربية</a>

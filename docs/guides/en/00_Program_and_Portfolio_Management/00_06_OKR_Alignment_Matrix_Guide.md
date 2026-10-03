@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_دليل.html">🇸🇦 النسخة العربية</a>

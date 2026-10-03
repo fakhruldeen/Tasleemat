@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/05_Executing/05_02_Decision_Log_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/05_Executing/05_02_Decision_Log_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/05_Executing/05_02_Decision_Log_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_02_سجل_القرارات_مثال.html">🇸🇦 النسخة العربية</a>

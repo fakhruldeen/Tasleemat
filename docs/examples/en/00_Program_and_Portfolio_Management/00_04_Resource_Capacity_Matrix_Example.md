@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_مثال.html">🇸🇦 النسخة العربية</a>

@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_دليل.html">🇸🇦 النسخة العربية</a>
@@ -106,7 +106,7 @@ project variables):
 ---
 
 ### Associated Templates
-* [📄 Printable Template (Markdown)](../../../../templates/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.md)
+* [📄 Printable Template (Markdown)](../../../../forms/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.md)
 * **🤖 Smart Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

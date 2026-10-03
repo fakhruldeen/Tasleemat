@@ -8,7 +8,7 @@
   </p>
   <div class="hero-actions">
     <a href="catalog/en/index.html" class="btn-primary">🚀 Explore Master Catalog</a>
-    <a href="templates/en/index.html" class="btn-secondary">📋 Browse Templates</a>
+    <a href="forms/en/index.html" class="btn-secondary">📋 Browse Templates</a>
     <a href="en/01_getting_started.html" class="btn-secondary">📚 Governance Manuals</a>
     <a href="README_AR.html" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
   </div>
@@ -79,7 +79,7 @@ flowchart TD
     <h3 class="phase-hub-title">Program & Portfolio Management</h3>
     <p class="phase-hub-desc">Strategic alignment, portfolio balancing, multi-project dependencies, and PMO maturity (6 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/00_Program_and_Portfolio_Management/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/00_Program_and_Portfolio_Management/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/00_Program_and_Portfolio_Management/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/00_Program_and_Portfolio_Management/index.html">💡 Examples</a>
     </div>
@@ -93,7 +93,7 @@ flowchart TD
     <h3 class="phase-hub-title">Business & Value Delivery</h3>
     <p class="phase-hub-desc">Business justification, benefit realization planning, value tracking, and gap analysis (4 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/01_Business_and_Value_Delivery/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/01_Business_and_Value_Delivery/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/01_Business_and_Value_Delivery/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/01_Business_and_Value_Delivery/index.html">💡 Examples</a>
     </div>
@@ -107,7 +107,7 @@ flowchart TD
     <h3 class="phase-hub-title">Project Approach & Tailoring</h3>
     <p class="phase-hub-desc">Tailoring strategy, governance tiers, AI ethics, model cards, and agile/hybrid adoption (6 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/02_Project_Approach_and_Tailoring/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/02_Project_Approach_and_Tailoring/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/02_Project_Approach_and_Tailoring/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/02_Project_Approach_and_Tailoring/index.html">💡 Examples</a>
     </div>
@@ -121,7 +121,7 @@ flowchart TD
     <h3 class="phase-hub-title">Initiating</h3>
     <p class="phase-hub-desc">Formal authorization, product vision, initial assumptions, and stakeholder identification (5 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/03_Initiating/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/03_Initiating/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/03_Initiating/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/03_Initiating/index.html">💡 Examples</a>
     </div>
@@ -135,7 +135,7 @@ flowchart TD
     <h3 class="phase-hub-title">Planning (12 Domains)</h3>
     <p class="phase-hub-desc">Comprehensive baselines across Scope, Schedule, Cost, Quality, Resources, Risk, and Procurement (47 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/04_Planning/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/04_Planning/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/04_Planning/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/04_Planning/index.html">💡 Examples</a>
     </div>
@@ -149,7 +149,7 @@ flowchart TD
     <h3 class="phase-hub-title">Executing</h3>
     <p class="phase-hub-desc">Directing work, managing issues, decision logs, change control, and team performance (12 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/05_Executing/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/05_Executing/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/05_Executing/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/05_Executing/index.html">💡 Examples</a>
     </div>
@@ -163,7 +163,7 @@ flowchart TD
     <h3 class="phase-hub-title">Monitoring & Controlling</h3>
     <p class="phase-hub-desc">Status reporting, Earned Value Analysis (EVA), variance tracking, and quality acceptance (12 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/06_Monitoring_and_Controlling/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/06_Monitoring_and_Controlling/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/06_Monitoring_and_Controlling/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/06_Monitoring_and_Controlling/index.html">💡 Examples</a>
     </div>
@@ -177,7 +177,7 @@ flowchart TD
     <h3 class="phase-hub-title">Closing</h3>
     <p class="phase-hub-desc">Formal transition to operations, contract closure, final lessons learned, and PIR (5 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/07_Closing/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/07_Closing/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/07_Closing/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/07_Closing/index.html">💡 Examples</a>
     </div>
@@ -208,8 +208,8 @@ flowchart TD
 
 ## 👤 Persona-Based Reading Pathways
 
-* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [`02_usage_guide.md`](en/02_usage_guide.md) → [Templates Library](templates/en/index.md).
+* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [`02_usage_guide.md`](en/02_usage_guide.md) → [Templates Library](forms/en/index.md).
 * **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
-* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [Agile Backlog & Retrospective](templates/en/05_Executing/index.md).
-* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md) → [AI Governance Templates](templates/en/02_Project_Approach_and_Tailoring/index.md).
+* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [Agile Backlog & Retrospective](forms/en/05_Executing/index.md).
+* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md) → [AI Governance Templates](forms/en/02_Project_Approach_and_Tailoring/index.md).
 * **For DevOps & Tool Admins:** Explore [`11_tools_and_automation.md`](en/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](en/12_open_knowledge_framework.md).

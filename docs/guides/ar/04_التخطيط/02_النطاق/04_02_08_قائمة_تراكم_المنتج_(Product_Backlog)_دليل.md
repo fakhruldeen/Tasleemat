@@ -10,7 +10,7 @@
     <span class="badge badge-type">دليل إرشادي وحوكمي</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../../forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.html">📋 القالب الفارغ</a>
     <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="../../../../examples/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.html">💡 مثال واقعي مكتمل</a>
     <a class="nav-pill lang-pill" href="../../../en/04_Planning/02_Scope/04_02_08_Product_Backlog_Guide.html">🇬🇧 English Version</a>
@@ -111,7 +111,7 @@ nav_order: 1
 ---
 
 ### المحاذاة والترابط المؤسسي
-* [📄 القالب القابل للطباعة (Markdown)](../../../../templates/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.md)
+* [📄 القالب القابل للطباعة (Markdown)](../../../../forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.md)
 * **🤖 تعليمات النموذج الذكي (LLM)**
 * **📊 هيكل البيانات (JSON)**
 * **📈 البيانات المجدولة (CSV)**

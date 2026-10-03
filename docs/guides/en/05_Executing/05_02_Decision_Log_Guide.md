@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/05_Executing/05_02_Decision_Log_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/05_Executing/05_02_Decision_Log_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/05_Executing/05_02_Decision_Log_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_02_سجل_القرارات_دليل.html">🇸🇦 النسخة العربية</a>

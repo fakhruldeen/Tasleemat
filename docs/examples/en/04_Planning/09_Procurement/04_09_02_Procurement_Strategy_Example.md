@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../../guides/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_مثال.html">🇸🇦 النسخة العربية</a>

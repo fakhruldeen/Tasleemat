@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_دليل.html">🇸🇦 النسخة العربية</a>
@@ -99,7 +99,7 @@ project variables):
 ---
 
 ### Associated Templates
-* [📄 Printable Template (Markdown)](../../../../templates/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.md)
+* [📄 Printable Template (Markdown)](../../../../forms/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.md)
 * **🤖 Smart Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

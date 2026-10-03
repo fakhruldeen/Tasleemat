@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/07_Closing/07_02_Contract_Closeout_Report_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/07_Closing/07_02_Contract_Closeout_Report_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/07_Closing/07_02_Contract_Closeout_Report_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.html">🇸🇦 النسخة العربية</a>

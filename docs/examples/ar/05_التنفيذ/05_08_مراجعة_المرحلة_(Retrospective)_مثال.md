@@ -10,7 +10,7 @@
     <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../forms/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.html">📋 القالب الفارغ</a>
     <a class="nav-pill" href="../../../guides/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.html">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill active" href="#">💡 مثال واقعي مكتمل</a>
     <a class="nav-pill lang-pill" href="../../en/05_Executing/05_08_Retrospective_Example.html">🇬🇧 English Version</a>

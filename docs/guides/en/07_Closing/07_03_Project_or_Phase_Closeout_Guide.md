@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/07_Closing/07_03_Project_or_Phase_Closeout_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_دليل.html">🇸🇦 النسخة العربية</a>
@@ -145,7 +145,7 @@ must populate the following sections based on the project context (ensure
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../templates/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.md)
+* [📄 Printable Template (Markdown)](../../../forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

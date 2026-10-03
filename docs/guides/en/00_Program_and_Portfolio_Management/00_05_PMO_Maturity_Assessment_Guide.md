@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_دليل.html">🇸🇦 النسخة العربية</a>

@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_دليل.html">🇸🇦 النسخة العربية</a>
@@ -101,7 +101,7 @@ project variables):
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../../templates/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.md)
+* [📄 Printable Template (Markdown)](../../../../forms/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_دليل.html">🇸🇦 النسخة العربية</a>

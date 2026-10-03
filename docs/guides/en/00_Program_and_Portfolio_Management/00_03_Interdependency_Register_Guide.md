@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_دليل.html">🇸🇦 النسخة العربية</a>
@@ -154,7 +154,7 @@ context (ensure `parameters.md` is referenced for global project variables):
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../templates/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.md)
+* [📄 Printable Template (Markdown)](../../../forms/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

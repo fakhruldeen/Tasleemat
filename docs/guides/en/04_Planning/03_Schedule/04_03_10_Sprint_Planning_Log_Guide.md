@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../../templates/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../forms/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_دليل.html">🇸🇦 النسخة العربية</a>
@@ -121,7 +121,7 @@ general project variables):
 ---
 
 ### 📥 Associated Templates
-* [📄 Printable Template (Markdown)](../../../../templates/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.md)
+* [📄 Printable Template (Markdown)](../../../../forms/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.md)
 * **🤖 LLM Generation Prompt**
 * **📊 Data Structure (JSON)**
 * **📈 Tabular Data (CSV)**

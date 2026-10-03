@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_مثال.html">🇸🇦 النسخة العربية</a>

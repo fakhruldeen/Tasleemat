@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_مثال.html">🇸🇦 النسخة العربية</a>

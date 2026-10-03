@@ -10,7 +10,7 @@
     <span class="badge badge-type">Authoring & Governance Guide</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/05_Executing/05_06_Team_Performance_Assessment_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/05_Executing/05_06_Team_Performance_Assessment_Template.html">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/05_Executing/05_06_Team_Performance_Assessment_Example.html">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_دليل.html">🇸🇦 النسخة العربية</a>

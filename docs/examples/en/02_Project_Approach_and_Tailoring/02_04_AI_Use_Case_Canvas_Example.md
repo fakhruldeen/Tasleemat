@@ -10,7 +10,7 @@
     <span class="badge badge-example">Realistic Case Study Benchmark</span>
   </div>
   <div class="deliverable-nav-pills">
-    <a class="nav-pill" href="../../../templates/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.html">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../forms/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.html">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Guide.html">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
     <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_مثال.html">🇸🇦 النسخة العربية</a>

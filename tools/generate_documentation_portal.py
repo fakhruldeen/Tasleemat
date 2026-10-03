@@ -133,7 +133,7 @@ def sanitize_content_links(content, current_doc_path, deliverable):
 
         # 2. Template links
         if "_Template.md" in clean_url or "_قالب.md" in clean_url:
-            lang_is_ar = "_قالب.md" in clean_url or "templates/ar/" in clean_url or "/ar/" in str(current_doc_path)
+            lang_is_ar = "_قالب.md" in clean_url or "forms/ar/" in clean_url or "/ar/" in str(current_doc_path)
             target = deliverable["doc_tpl_ar"] if lang_is_ar else deliverable["doc_tpl_en"]
             return f"[{text}]({os.path.relpath(target, current_doc_path.parent)})"
 
@@ -206,11 +206,11 @@ def collect_deliverables():
             dest_dir_en = pathlib.Path(rel_en.parts[0])
             dest_dir_ar = pathlib.Path(rel_ar.parts[0]) if rel_ar else dest_dir_en
 
-        doc_tpl_en = DOCS_DIR / "templates" / "en" / dest_dir_en / t_en.name
+        doc_tpl_en = DOCS_DIR / "forms" / "en" / dest_dir_en / t_en.name
         doc_guide_en = DOCS_DIR / "guides" / "en" / dest_dir_en / guides_en[0].name
         doc_ex_en = DOCS_DIR / "examples" / "en" / dest_dir_en / examples_en[0].name
 
-        doc_tpl_ar = DOCS_DIR / "templates" / "ar" / dest_dir_ar / t_ar.name if t_ar else None
+        doc_tpl_ar = DOCS_DIR / "forms" / "ar" / dest_dir_ar / t_ar.name if t_ar else None
         doc_guide_ar = DOCS_DIR / "guides" / "ar" / dest_dir_ar / guides_ar[0].name if guides_ar else None
         doc_ex_ar = DOCS_DIR / "examples" / "ar" / dest_dir_ar / examples_ar[0].name if examples_ar else None
 
@@ -256,7 +256,7 @@ def build_portal():
     print(f"Loaded {len(deliverables)} deliverable bundles.")
 
     # Clean existing generated docs sections
-    for sub in ["catalog", "templates", "guides", "examples"]:
+    for sub in ["catalog", "forms", "guides", "examples"]:
         target_dir = DOCS_DIR / sub
         if target_dir.exists():
             shutil.rmtree(target_dir)
@@ -481,7 +481,7 @@ def build_landing_pages():
   </p>
   <div class="hero-actions">
     <a href="catalog/en/index.html" class="btn-primary">🚀 Explore Master Catalog</a>
-    <a href="templates/en/index.html" class="btn-secondary">📋 Browse Templates</a>
+    <a href="forms/en/index.html" class="btn-secondary">📋 Browse Templates</a>
     <a href="en/01_getting_started.html" class="btn-secondary">📚 Governance Manuals</a>
     <a href="README_AR.html" class="btn-lang">🇸🇦 الانتقال للبوابة العربية</a>
   </div>
@@ -552,7 +552,7 @@ flowchart TD
     <h3 class="phase-hub-title">Program & Portfolio Management</h3>
     <p class="phase-hub-desc">Strategic alignment, portfolio balancing, multi-project dependencies, and PMO maturity (6 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/00_Program_and_Portfolio_Management/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/00_Program_and_Portfolio_Management/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/00_Program_and_Portfolio_Management/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/00_Program_and_Portfolio_Management/index.html">💡 Examples</a>
     </div>
@@ -566,7 +566,7 @@ flowchart TD
     <h3 class="phase-hub-title">Business & Value Delivery</h3>
     <p class="phase-hub-desc">Business justification, benefit realization planning, value tracking, and gap analysis (4 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/01_Business_and_Value_Delivery/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/01_Business_and_Value_Delivery/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/01_Business_and_Value_Delivery/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/01_Business_and_Value_Delivery/index.html">💡 Examples</a>
     </div>
@@ -580,7 +580,7 @@ flowchart TD
     <h3 class="phase-hub-title">Project Approach & Tailoring</h3>
     <p class="phase-hub-desc">Tailoring strategy, governance tiers, AI ethics, model cards, and agile/hybrid adoption (6 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/02_Project_Approach_and_Tailoring/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/02_Project_Approach_and_Tailoring/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/02_Project_Approach_and_Tailoring/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/02_Project_Approach_and_Tailoring/index.html">💡 Examples</a>
     </div>
@@ -594,7 +594,7 @@ flowchart TD
     <h3 class="phase-hub-title">Initiating</h3>
     <p class="phase-hub-desc">Formal authorization, product vision, initial assumptions, and stakeholder identification (5 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/03_Initiating/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/03_Initiating/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/03_Initiating/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/03_Initiating/index.html">💡 Examples</a>
     </div>
@@ -608,7 +608,7 @@ flowchart TD
     <h3 class="phase-hub-title">Planning (12 Domains)</h3>
     <p class="phase-hub-desc">Comprehensive baselines across Scope, Schedule, Cost, Quality, Resources, Risk, and Procurement (47 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/04_Planning/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/04_Planning/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/04_Planning/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/04_Planning/index.html">💡 Examples</a>
     </div>
@@ -622,7 +622,7 @@ flowchart TD
     <h3 class="phase-hub-title">Executing</h3>
     <p class="phase-hub-desc">Directing work, managing issues, decision logs, change control, and team performance (12 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/05_Executing/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/05_Executing/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/05_Executing/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/05_Executing/index.html">💡 Examples</a>
     </div>
@@ -636,7 +636,7 @@ flowchart TD
     <h3 class="phase-hub-title">Monitoring & Controlling</h3>
     <p class="phase-hub-desc">Status reporting, Earned Value Analysis (EVA), variance tracking, and quality acceptance (12 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/06_Monitoring_and_Controlling/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/06_Monitoring_and_Controlling/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/06_Monitoring_and_Controlling/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/06_Monitoring_and_Controlling/index.html">💡 Examples</a>
     </div>
@@ -650,7 +650,7 @@ flowchart TD
     <h3 class="phase-hub-title">Closing</h3>
     <p class="phase-hub-desc">Formal transition to operations, contract closure, final lessons learned, and PIR (5 Artifacts).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/en/07_Closing/index.html">📋 Templates</a>
+      <a class="card-action-link" href="forms/en/07_Closing/index.html">📋 Templates</a>
       <a class="card-action-link" href="guides/en/07_Closing/index.html">📖 Guides</a>
       <a class="card-action-link" href="examples/en/07_Closing/index.html">💡 Examples</a>
     </div>
@@ -681,10 +681,10 @@ flowchart TD
 
 ## 👤 Persona-Based Reading Pathways
 
-* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [`02_usage_guide.md`](en/02_usage_guide.md) → [Templates Library](templates/en/index.md).
+* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [`02_usage_guide.md`](en/02_usage_guide.md) → [Templates Library](forms/en/index.md).
 * **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
-* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [Agile Backlog & Retrospective](templates/en/05_Executing/index.md).
-* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md) → [AI Governance Templates](templates/en/02_Project_Approach_and_Tailoring/index.md).
+* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [Agile Backlog & Retrospective](forms/en/05_Executing/index.md).
+* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md) → [AI Governance Templates](forms/en/02_Project_Approach_and_Tailoring/index.md).
 * **For DevOps & Tool Admins:** Explore [`11_tools_and_automation.md`](en/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](en/12_open_knowledge_framework.md).
 """
     (DOCS_DIR / "index.md").write_text(index_en, encoding="utf-8")
@@ -700,7 +700,7 @@ flowchart TD
   </p>
   <div class="hero-actions">
     <a href="catalog/ar/index.html" class="btn-primary">🚀 استكشاف الفهرس الشامل</a>
-    <a href="templates/ar/index.html" class="btn-secondary">📋 تصفح القوالب القياسية</a>
+    <a href="forms/ar/index.html" class="btn-secondary">📋 تصفح القوالب القياسية</a>
     <a href="ar/01_getting_started.html" class="btn-secondary">📚 الأدلة والسياسات</a>
     <a href="index.html" class="btn-lang">🇬🇧 Switch to English Portal</a>
   </div>
@@ -771,7 +771,7 @@ flowchart TD
     <h3 class="phase-hub-title">إدارة البرامج والمحافظ</h3>
     <p class="phase-hub-desc">المواءمة الاستراتيجية، توازن المحفظة، إدارة الاعتماديات بين المشاريع، وتقييم نضج PMO (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/00_إدارة_البرامج_والمحافظ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/00_إدارة_البرامج_والمحافظ/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/00_إدارة_البرامج_والمحافظ/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/00_إدارة_البرامج_والمحافظ/index.html">💡 الأمثلة</a>
     </div>
@@ -785,7 +785,7 @@ flowchart TD
     <h3 class="phase-hub-title">الأعمال وتسليم القيمة</h3>
     <p class="phase-hub-desc">دراسات الجدوى الاقتصادية، خطط إدارة المنافع، سجلات تحقيق القيمة، وتحليل الفجوات (4 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/01_الأعمال_وتسليم_القيمة/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/01_الأعمال_وتسليم_القيمة/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/01_الأعمال_وتسليم_القيمة/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/01_الأعمال_وتسليم_القيمة/index.html">💡 الأمثلة</a>
     </div>
@@ -799,7 +799,7 @@ flowchart TD
     <h3 class="phase-hub-title">منهجية المشروع وتخصيصه</h3>
     <p class="phase-hub-desc">استراتيجية التخصيص، مستويات الحوكمة، أخلاقيات الذكاء الاصطناعي، وبطاقات النماذج (6 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/02_منهجية_المشروع_وتخصيصه/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/02_منهجية_المشروع_وتخصيصه/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/02_منهجية_المشروع_وتخصيصه/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/02_منهجية_المشروع_وتخصيصه/index.html">💡 الأمثلة</a>
     </div>
@@ -813,7 +813,7 @@ flowchart TD
     <h3 class="phase-hub-title">البدء</h3>
     <p class="phase-hub-desc">الترخيص الرسمي للمشروع، رؤية المنتج، سجل الافتراضات الأولية، وتحديد المعنيين (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/03_البدء/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/03_البدء/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/03_البدء/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/03_البدء/index.html">💡 الأمثلة</a>
     </div>
@@ -827,7 +827,7 @@ flowchart TD
     <h3 class="phase-hub-title">التخطيط (12 مجالاً معرفياً)</h3>
     <p class="phase-hub-desc">الخطوط المرجعية للنطاق، الجدول الزمني، التكلفة، الجودة، الموارد، المخاطر، والمشتريات (47 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/04_التخطيط/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/04_التخطيط/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/04_التخطيط/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/04_التخطيط/index.html">💡 الأمثلة</a>
     </div>
@@ -841,7 +841,7 @@ flowchart TD
     <h3 class="phase-hub-title">التنفيذ</h3>
     <p class="phase-hub-desc">توجيه وإدارة أعمال المشروع، سجل القضايا، سجل القرارات، طلبات التغيير، وأداء الفريق (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/05_التنفيذ/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/05_التنفيذ/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/05_التنفيذ/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/05_التنفيذ/index.html">💡 الأمثلة</a>
     </div>
@@ -855,7 +855,7 @@ flowchart TD
     <h3 class="phase-hub-title">المراقبة والتحكم</h3>
     <p class="phase-hub-desc">تقارير الأداء، تحليل القيمة المكتسبة (EVA)، مراقبة التباين، وضمان الجودة واختبارات القبول (12 مخرجاً).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/06_المراقبة_والتحكم/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/06_المراقبة_والتحكم/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/06_المراقبة_والتحكم/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/06_المراقبة_والتحكم/index.html">💡 الأمثلة</a>
     </div>
@@ -869,7 +869,7 @@ flowchart TD
     <h3 class="phase-hub-title">الإغلاق</h3>
     <p class="phase-hub-desc">الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ (5 مخرجات).</p>
     <div class="phase-hub-actions">
-      <a class="card-action-link" href="templates/ar/07_الإغلاق/index.html">📋 القوالب</a>
+      <a class="card-action-link" href="forms/ar/07_الإغلاق/index.html">📋 القوالب</a>
       <a class="card-action-link" href="guides/ar/07_الإغلاق/index.html">📖 الأدلة</a>
       <a class="card-action-link" href="examples/ar/07_الإغلاق/index.html">💡 الأمثلة</a>
     </div>
@@ -900,10 +900,10 @@ flowchart TD
 
 ## 👤 مسارات القراءة الموصى بها بحسب الدور الوظيفي
 
-* **لمديري المشاريع:** ابدأ بـ [`01_getting_started.md`](ar/01_getting_started.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [`02_usage_guide.md`](ar/02_usage_guide.md) → [مكتبة القوالب](templates/ar/index.md).
+* **لمديري المشاريع:** ابدأ بـ [`01_getting_started.md`](ar/01_getting_started.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [`02_usage_guide.md`](ar/02_usage_guide.md) → [مكتبة القوالب](forms/ar/index.md).
 * **لمدراء مكاتب إدارة المشاريع (PMO):** راجع [`03_pmo_policy_manual.md`](ar/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](ar/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](ar/06_raci_authority_matrix.md).
-* **لقادة سكرم والتحول الرشيق:** ركز على [`09_agile_hybrid_integration.md`](ar/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [سجلات سكرم والمراجعات](templates/ar/05_التنفيذ/index.md).
-* **لمدراء مشاريع الذكاء الاصطناعي:** تعمق في [`08_ai_governance_framework.md`](ar/08_ai_governance_framework.md) → [قوالب حوكمة الذكاء الاصطناعي](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md).
+* **لقادة سكرم والتحول الرشيق:** ركز على [`09_agile_hybrid_integration.md`](ar/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [سجلات سكرم والمراجعات](forms/ar/05_التنفيذ/index.md).
+* **لمدراء مشاريع الذكاء الاصطناعي:** تعمق في [`08_ai_governance_framework.md`](ar/08_ai_governance_framework.md) → [قوالب حوكمة الذكاء الاصطناعي](forms/ar/02_منهجية_المشروع_وتخصيصه/index.md).
 * **لمسؤولي الأنظمة والأتمتة:** استكشف [`11_tools_and_automation.md`](ar/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](ar/12_open_knowledge_framework.md).
 """
     (DOCS_DIR / "README_AR.md").write_text(index_ar, encoding="utf-8")
@@ -1196,9 +1196,9 @@ def build_master_catalogs(deliverables):
 def build_section_indexes(deliverables):
     """Build root index pages for templates, guides, and examples with cross-language switches."""
     # 1. EN Templates Index
-    target_tpl_en = DOCS_DIR / "templates/en/index.md"
+    target_tpl_en = DOCS_DIR / "forms/en/index.md"
     target_tpl_en.parent.mkdir(parents=True, exist_ok=True)
-    rel_ar_tpl_idx = os.path.relpath(DOCS_DIR / "templates/ar/index.md", target_tpl_en.parent).replace(".md", ".html")
+    rel_ar_tpl_idx = os.path.relpath(DOCS_DIR / "forms/ar/index.md", target_tpl_en.parent).replace(".md", ".html")
     tpl_idx_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_tpl_idx}">🇸🇦 الانتقال لفهرس القوالب بالعربية (Arabic Templates) →</a>
@@ -1227,9 +1227,9 @@ def build_section_indexes(deliverables):
     target_tpl_en.write_text(tpl_idx_en, encoding="utf-8")
 
     # 2. AR Templates Index
-    target_tpl_ar = DOCS_DIR / "templates/ar/index.md"
+    target_tpl_ar = DOCS_DIR / "forms/ar/index.md"
     target_tpl_ar.parent.mkdir(parents=True, exist_ok=True)
-    rel_en_tpl_idx = os.path.relpath(DOCS_DIR / "templates/en/index.md", target_tpl_ar.parent).replace(".md", ".html")
+    rel_en_tpl_idx = os.path.relpath(DOCS_DIR / "forms/en/index.md", target_tpl_ar.parent).replace(".md", ".html")
     tpl_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_tpl_idx}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
@@ -1388,9 +1388,9 @@ def build_phase_indexes(deliverables):
         phase_dir_ar = p_items[0]["dest_dir_ar"].parts[0]
 
         # 1. Templates Phase Index (EN)
-        target_t_en = DOCS_DIR / "templates" / "en" / phase_dir_en / "index.md"
+        target_t_en = DOCS_DIR / "forms" / "en" / phase_dir_en / "index.md"
         target_t_en.parent.mkdir(parents=True, exist_ok=True)
-        rel_ar_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "ar" / phase_dir_ar / "index.md", target_t_en.parent).replace(".md", ".html")
+        rel_ar_phase_tpl = os.path.relpath(DOCS_DIR / "forms" / "ar" / phase_dir_ar / "index.md", target_t_en.parent).replace(".md", ".html")
         idx_content_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <a class="lang-switch-btn" href="{rel_ar_phase_tpl}">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates) →</a>
@@ -1414,9 +1414,9 @@ def build_phase_indexes(deliverables):
         target_t_en.write_text(idx_content_en, encoding="utf-8")
 
         # 2. Templates Phase Index (AR)
-        target_t_ar = DOCS_DIR / "templates" / "ar" / phase_dir_ar / "index.md"
+        target_t_ar = DOCS_DIR / "forms" / "ar" / phase_dir_ar / "index.md"
         target_t_ar.parent.mkdir(parents=True, exist_ok=True)
-        rel_en_phase_tpl = os.path.relpath(DOCS_DIR / "templates" / "en" / phase_dir_en / "index.md", target_t_ar.parent).replace(".md", ".html")
+        rel_en_phase_tpl = os.path.relpath(DOCS_DIR / "forms" / "en" / phase_dir_en / "index.md", target_t_ar.parent).replace(".md", ".html")
         idx_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <a class="lang-switch-btn" href="{rel_en_phase_tpl}">🇬🇧 Switch to English Templates (قوالب إنجليزية) ←</a>
@@ -1563,7 +1563,7 @@ def update_mkdocs_config(deliverables):
                 sub_title = PLANNING_SUBS.get(sub_k, (sub_k.replace("_", " "), ""))[0]
                 sub_items = []
                 for d in sub_groups[sub_k]:
-                    if section_type == "templates":
+                    if section_type == "forms":
                         target = os.path.relpath(d["doc_tpl_en"], DOCS_DIR)
                     elif section_type == "guides":
                         target = os.path.relpath(d["doc_guide_en"], DOCS_DIR)
@@ -1573,7 +1573,7 @@ def update_mkdocs_config(deliverables):
                 nav_list.append({sub_title: sub_items})
         else:
             for d in items:
-                if section_type == "templates":
+                if section_type == "forms":
                     target = os.path.relpath(d["doc_tpl_en"], DOCS_DIR)
                 elif section_type == "guides":
                     target = os.path.relpath(d["doc_guide_en"], DOCS_DIR)
@@ -1599,7 +1599,7 @@ def update_mkdocs_config(deliverables):
                 sub_title = PLANNING_SUBS[en_match[0]][1] if en_match else sub_k.replace("_", " ")
                 sub_items = []
                 for d in sub_groups[sub_k]:
-                    if section_type == "templates":
+                    if section_type == "forms":
                         target = os.path.relpath(d["doc_tpl_ar"], DOCS_DIR)
                     elif section_type == "guides":
                         target = os.path.relpath(d["doc_guide_ar"], DOCS_DIR)
@@ -1609,7 +1609,7 @@ def update_mkdocs_config(deliverables):
                 nav_list.append({sub_title: sub_items})
         else:
             for d in items:
-                if section_type == "templates":
+                if section_type == "forms":
                     target = os.path.relpath(d["doc_tpl_ar"], DOCS_DIR)
                 elif section_type == "guides":
                     target = os.path.relpath(d["doc_guide_ar"], DOCS_DIR)
@@ -1639,15 +1639,15 @@ def update_mkdocs_config(deliverables):
                 {"12. Open Knowledge Framework (OKF)": "en/12_open_knowledge_framework.md"}
             ]},
             {"📋 Standard Templates Library": [
-                {"Templates Overview": "templates/en/index.md"},
-                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "templates")},
-                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "templates")},
-                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "templates")},
-                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "templates")},
-                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "templates")},
-                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "templates")},
-                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "templates")},
-                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "templates")}
+                {"Templates Overview": "forms/en/index.md"},
+                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "forms")},
+                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "forms")},
+                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "forms")},
+                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "forms")},
+                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "forms")},
+                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "forms")},
+                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "forms")},
+                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "forms")}
             ]},
             {"📖 Deliverable Authoring Guides": [
                 {"Guides Overview": "guides/en/index.md"},
@@ -1692,15 +1692,15 @@ def update_mkdocs_config(deliverables):
                 {"12. معيار مؤسسة المعرفة المفتوحة (OKF)": "ar/12_open_knowledge_framework.md"}
             ]},
             {"📋 مكتبة القوالب والنماذج": [
-                {"الفهرس العام للقوالب": "templates/ar/index.md"},
-                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "templates")},
-                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "templates")},
-                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "templates")},
-                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "templates")},
-                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "templates")},
-                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "templates")},
-                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "templates")},
-                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "templates")}
+                {"الفهرس العام للقوالب": "forms/ar/index.md"},
+                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "forms")},
+                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "forms")},
+                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "forms")},
+                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "forms")},
+                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "forms")},
+                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "forms")},
+                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "forms")},
+                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "forms")}
             ]},
             {"📖 أدلة إعداد النماذج": [
                 {"الفهرس العام للأدلة": "guides/ar/index.md"},
