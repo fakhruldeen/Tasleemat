@@ -82,4 +82,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Risk Process and Metric Trends:** Trend analysis tracking closed risks, newly identified risks, and velocity of response actions.
 *   **Recommended Governance Interventions:** Strategic recommendations, escalation requests, and required decisions for executive sponsors.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_08_06_Risk_Report_Example.md](../../../../../examples/en/04_Planning/08_Risk/06_Risk_Report/04_08_06_Risk_Report_Example.md)
+
 </div>

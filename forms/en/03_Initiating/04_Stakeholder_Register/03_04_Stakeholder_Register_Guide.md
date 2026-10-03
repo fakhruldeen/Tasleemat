@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Expectations:** Main expectations regarding project execution, outcomes, and governance.
 *   **Classification:** Stakeholder categorization (e.g., internal/external, high/medium/low impact).
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [03_04_Stakeholder_Register_Example.md](../../../../examples/en/03_Initiating/04_Stakeholder_Register/03_04_Stakeholder_Register_Example.md)
+
 </div>

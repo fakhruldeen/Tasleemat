@@ -82,4 +82,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Improvement Initiative:** The prioritized transformative action, process overhaul, or technology deployment planned to close the identified capability gap.
 *   **Initiative Owner and Timeline:** The accountable individual responsible for delivery and the committed milestone completion date for the improvement initiative.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [00_05_PMO_Maturity_Assessment_Example.md](../../../../examples/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment_Example.md)
+
 </div>

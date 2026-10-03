@@ -81,3 +81,9 @@ project variables):
 * [🤖 Smart Generation Prompt](05_12_Team_Onboarding_Checklist.md)
 * [📊 Data Structure (JSON)](05_12_Team_Onboarding_Checklist.json)
 * [📈 Tabular Data (CSV)](05_12_Team_Onboarding_Checklist.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_12_Team_Onboarding_Checklist_Example.md](../../../../examples/en/05_Executing/12_Team_Onboarding_Checklist/05_12_Team_Onboarding_Checklist_Example.md)

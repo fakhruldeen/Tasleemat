@@ -83,3 +83,9 @@ project variables):
 * [🤖 Smart Generation Prompt](04_11_01_OCM_Strategy_and_Plan.md)
 * [📊 Data Structure (JSON)](04_11_01_OCM_Strategy_and_Plan.json)
 * [📈 Tabular Data (CSV)](04_11_01_OCM_Strategy_and_Plan.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_11_01_OCM_Strategy_and_Plan_Example.md](../../../../../examples/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan/04_11_01_OCM_Strategy_and_Plan_Example.md)

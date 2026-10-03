@@ -82,4 +82,10 @@ variables):
 * [📊 Data Structure (JSON)](06_08_Product_Acceptance_Form.json)
 * [📈 Tabular Data (CSV)](06_08_Product_Acceptance_Form.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_08_Product_Acceptance_Form_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/08_Product_Acceptance_Form/06_08_Product_Acceptance_Form_Example.md)
+
 </div>

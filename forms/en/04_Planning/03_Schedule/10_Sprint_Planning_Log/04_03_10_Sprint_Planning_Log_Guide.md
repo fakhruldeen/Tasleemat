@@ -104,3 +104,9 @@ general project variables):
 * [🤖 LLM Generation Prompt](04_03_10_Sprint_Planning_Log.md)
 * [📊 Data Structure (JSON)](04_03_10_Sprint_Planning_Log.json)
 * [📈 Tabular Data (CSV)](04_03_10_Sprint_Planning_Log.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_10_Sprint_Planning_Log_Example.md](../../../../../examples/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/04_03_10_Sprint_Planning_Log_Example.md)

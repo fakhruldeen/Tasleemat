@@ -89,3 +89,9 @@ project variables):
 * [🤖 Smart Generation Prompt](04_09_05_Request_for_Proposal_RFP.md)
 * [📊 Data Structure (JSON)](04_09_05_Request_for_Proposal_RFP.json)
 * [📈 Tabular Data (CSV)](04_09_05_Request_for_Proposal_RFP.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_09_05_Request_for_Proposal_RFP_Example.md](../../../../../examples/en/04_Planning/09_Procurement/05_Request_for_Proposal_RFP/04_09_05_Request_for_Proposal_RFP_Example.md)

@@ -76,4 +76,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Tailored Engagement Strategy:** Specific actionable interventions designed to move the stakeholder to the desired engagement state.
 *   **Engagement Monitoring and Feedback Loop:** Process for evaluating engagement effectiveness and adjusting tactics throughout delivery.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_10_01_Stakeholder_Engagement_Plan_Example.md](../../../../../examples/en/04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan/04_10_01_Stakeholder_Engagement_Plan_Example.md)
+
 </div>

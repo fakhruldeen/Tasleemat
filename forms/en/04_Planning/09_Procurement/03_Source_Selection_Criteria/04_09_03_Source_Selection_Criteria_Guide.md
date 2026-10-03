@@ -80,4 +80,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Comparative Analysis and Value Justification:** Narrative justifying why the winning proposal offers superior value, quality, or pricing.
 *   **Contract Award Recommendation and Sign-off:** Formal evaluation committee recommendation identifying preferred vendor for contract execution.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_09_03_Source_Selection_Criteria_Example.md](../../../../../examples/en/04_Planning/09_Procurement/03_Source_Selection_Criteria/04_09_03_Source_Selection_Criteria_Example.md)
+
 </div>

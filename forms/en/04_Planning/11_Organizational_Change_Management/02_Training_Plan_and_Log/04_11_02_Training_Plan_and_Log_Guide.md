@@ -82,3 +82,9 @@ project variables):
 * [🤖 Smart Generation Prompt](04_11_02_Training_Plan_and_Log.md)
 * [📊 Data Structure (JSON)](04_11_02_Training_Plan_and_Log.json)
 * [📈 Tabular Data (CSV)](04_11_02_Training_Plan_and_Log.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_11_02_Training_Plan_and_Log_Example.md](../../../../../examples/en/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log/04_11_02_Training_Plan_and_Log_Example.md)

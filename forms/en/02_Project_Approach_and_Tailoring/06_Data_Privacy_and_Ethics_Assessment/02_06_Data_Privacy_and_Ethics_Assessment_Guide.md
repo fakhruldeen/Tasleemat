@@ -186,4 +186,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](02_06_Data_Privacy_and_Ethics_Assessment.json)
 * [📈 Tabular Data (CSV)](02_06_Data_Privacy_and_Ethics_Assessment.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [02_06_Data_Privacy_and_Ethics_Assessment_Example.md](../../../../examples/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Example.md)
+
 </div>

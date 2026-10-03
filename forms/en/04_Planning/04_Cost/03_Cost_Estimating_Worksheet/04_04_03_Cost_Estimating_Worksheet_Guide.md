@@ -81,4 +81,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Grand Total Base Estimate:** Sum of all labor, materials, equipment, and subcontractor cost line items.
 *   **Worksheet Verification and Audit Sign-off:** Formal reconciliation verifying math accuracy and absence of duplicated cost items.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_04_03_Cost_Estimating_Worksheet_Example.md](../../../../../examples/en/04_Planning/04_Cost/03_Cost_Estimating_Worksheet/04_04_03_Cost_Estimating_Worksheet_Example.md)
+
 </div>

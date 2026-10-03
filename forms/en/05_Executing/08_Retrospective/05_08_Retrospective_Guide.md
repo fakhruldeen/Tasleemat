@@ -118,4 +118,10 @@ must populate the following sections based on the project context (ensure
 * [📊 Data Structure (JSON)](05_08_Retrospective.json)
 * [📈 Tabular Data (CSV)](05_08_Retrospective.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_08_Retrospective_Example.md](../../../../examples/en/05_Executing/08_Retrospective/05_08_Retrospective_Example.md)
+
 </div>

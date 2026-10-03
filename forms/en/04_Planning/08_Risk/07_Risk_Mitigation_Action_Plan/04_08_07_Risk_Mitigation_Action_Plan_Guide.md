@@ -84,3 +84,9 @@ project variables):
 * [🤖 LLM Generation Prompt](04_08_07_Risk_Mitigation_Action_Plan.md)
 * [📊 Data Structure (JSON)](04_08_07_Risk_Mitigation_Action_Plan.json)
 * [📈 Tabular Data (CSV)](04_08_07_Risk_Mitigation_Action_Plan.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_08_07_Risk_Mitigation_Action_Plan_Example.md](../../../../../examples/en/04_Planning/08_Risk/07_Risk_Mitigation_Action_Plan/04_08_07_Risk_Mitigation_Action_Plan_Example.md)

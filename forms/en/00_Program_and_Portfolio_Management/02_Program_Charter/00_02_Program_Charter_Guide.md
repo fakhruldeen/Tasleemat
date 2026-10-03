@@ -156,4 +156,10 @@ party must populate the following sections based on the project context (ensure
 * [📊 Data Structure (JSON)](00_02_Program_Charter.json)
 * [📈 Tabular Data (CSV)](00_02_Program_Charter.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [00_02_Program_Charter_Example.md](../../../../examples/en/00_Program_and_Portfolio_Management/02_Program_Charter/00_02_Program_Charter_Example.md)
+
 </div>

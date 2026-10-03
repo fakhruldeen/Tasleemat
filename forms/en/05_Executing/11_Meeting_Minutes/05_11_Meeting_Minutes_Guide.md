@@ -82,3 +82,9 @@ project variables):
 * [🤖 Smart Generation Prompt](05_11_Meeting_Minutes.md)
 * [📊 Data Structure (JSON)](05_11_Meeting_Minutes.json)
 * [📈 Tabular Data (CSV)](05_11_Meeting_Minutes.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_11_Meeting_Minutes_Example.md](../../../../examples/en/05_Executing/11_Meeting_Minutes/05_11_Meeting_Minutes_Example.md)

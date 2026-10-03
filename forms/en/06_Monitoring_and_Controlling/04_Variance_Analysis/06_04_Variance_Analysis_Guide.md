@@ -94,4 +94,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Escalation Details:** Details of the specific escalation path, required decisions, and target stakeholders.
 *   **Comments:** Additional explanatory notes, cross-functional dependencies, or contextual insights.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_04_Variance_Analysis_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/04_Variance_Analysis/06_04_Variance_Analysis_Example.md)
+
 </div>

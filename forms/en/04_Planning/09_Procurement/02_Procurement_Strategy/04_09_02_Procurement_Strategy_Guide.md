@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Procurement Sourcing Stages:** Sequence of procurement stages: market analysis, pre-qualification, RFP issuance, evaluation, negotiation, award.
 *   **Market Engagement and Competitive Sourcing Approach:** Method of market engagement (Sole Source, Open Competitive Tender, Limited Request for Quotation).
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_09_02_Procurement_Strategy_Example.md](../../../../../examples/en/04_Planning/09_Procurement/02_Procurement_Strategy/04_09_02_Procurement_Strategy_Example.md)
+
 </div>

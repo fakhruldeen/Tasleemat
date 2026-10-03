@@ -81,4 +81,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Risk Breakdown Categories:** Taxonomy categories classifying technical, external, organizational, and managerial risks.
 *   **Risk Audits and Review Cadence:** Frequency of periodic risk re-assessments and formal audit reviews.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_08_01_Risk_Management_Plan_Example.md](../../../../../examples/en/04_Planning/08_Risk/01_Risk_Management_Plan/04_08_01_Risk_Management_Plan_Example.md)
+
 </div>

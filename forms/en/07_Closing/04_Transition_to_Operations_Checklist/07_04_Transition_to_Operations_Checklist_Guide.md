@@ -85,3 +85,9 @@ project variables):
 * [🤖 Smart Generation Prompt](07_04_Transition_to_Operations_Checklist.md)
 * [📊 Data Structure (JSON)](07_04_Transition_to_Operations_Checklist.json)
 * [📈 Tabular Data (CSV)](07_04_Transition_to_Operations_Checklist.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [07_04_Transition_to_Operations_Checklist_Example.md](../../../../examples/en/07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist_Example.md)

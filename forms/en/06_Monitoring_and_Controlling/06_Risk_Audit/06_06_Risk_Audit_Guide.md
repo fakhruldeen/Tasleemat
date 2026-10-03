@@ -82,4 +82,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Areas for Improvement:** Identified procedural deficiencies, corrective action plans, owners, and due dates.
 *   **Comments:** Additional audit observations, limitations, or stakeholder commentary.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_06_Risk_Audit_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/06_Risk_Audit/06_06_Risk_Audit_Example.md)
+
 </div>

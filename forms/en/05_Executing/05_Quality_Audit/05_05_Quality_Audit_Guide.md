@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Information to Share with Other Projects:** Valuable organizational insights, lessons, and quality benchmarks to disseminate.
 *   **Comments:** General observations, auditor notes, and executive summary.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_05_Quality_Audit_Example.md](../../../../examples/en/05_Executing/05_Quality_Audit/05_05_Quality_Audit_Example.md)
+
 </div>

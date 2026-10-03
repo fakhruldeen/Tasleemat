@@ -80,4 +80,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Total Calculated Schedule Buffer:** Consolidated sum of duration contingency buffers across all estimated activities.
 *   **Worksheet Reconciliation and Approval:** Formal review confirming no duplicate activity estimations across methods.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_07_Duration_Estimating_Worksheet_Example.md](../../../../../examples/en/04_Planning/03_Schedule/07_Duration_Estimating_Worksheet/04_03_07_Duration_Estimating_Worksheet_Example.md)
+
 </div>

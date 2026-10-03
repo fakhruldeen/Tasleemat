@@ -145,4 +145,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](07_01_Lessons_Learned_Summary.json)
 * [📈 Tabular Data (CSV)](07_01_Lessons_Learned_Summary.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [07_01_Lessons_Learned_Summary_Example.md](../../../../examples/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary_Example.md)
+
 </div>

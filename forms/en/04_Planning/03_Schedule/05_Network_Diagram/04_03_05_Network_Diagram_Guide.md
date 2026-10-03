@@ -76,4 +76,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Mermaid Diagram Syntax:** Valid Mermaid graph syntax representing the complete node-and-arrow network dependency logic.
 *   **Diagram Interpretation Guidelines:** Narrative guide explaining how to read activity nodes, dependencies, and path flows.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_05_Network_Diagram_Example.md](../../../../../examples/en/04_Planning/03_Schedule/05_Network_Diagram/04_03_05_Network_Diagram_Example.md)
+
 </div>

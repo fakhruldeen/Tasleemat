@@ -78,4 +78,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Periodic Funding Requirements:** Total cash outlay required per period, incorporating funding step increments.
 *   **Management Reserve and Total Project Budget:** Executive management reserve amount and the total authorized project budget (BAC + Management Reserve).
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_04_04_Cost_Baseline_Example.md](../../../../../examples/en/04_Planning/04_Cost/04_Cost_Baseline/04_04_04_Cost_Baseline_Example.md)
+
 </div>

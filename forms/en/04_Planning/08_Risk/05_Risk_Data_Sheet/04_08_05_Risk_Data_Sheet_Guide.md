@@ -82,4 +82,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Contingency and Fallback Response Plan:** Secondary action plan implemented if primary mitigation fails or risk materializes.
 *   **Allocated Contingency Budget and Reserves:** Specific financial reserve allocation assigned to execute this risk response.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_08_05_Risk_Data_Sheet_Example.md](../../../../../examples/en/04_Planning/08_Risk/05_Risk_Data_Sheet/04_08_05_Risk_Data_Sheet_Example.md)
+
 </div>

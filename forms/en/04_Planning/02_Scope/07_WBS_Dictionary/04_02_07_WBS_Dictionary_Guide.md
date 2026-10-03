@@ -81,4 +81,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Cost Estimate and Budget Allocation:** Approved budget allocation and cost baseline figure assigned to this work package.
 *   **Assumptions, Constraints, and Dependencies:** Specific operational constraints, key assumptions, and preceding/succeeding work package linkages.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_07_WBS_Dictionary_Example.md](../../../../../examples/en/04_Planning/02_Scope/07_WBS_Dictionary/04_02_07_WBS_Dictionary_Example.md)
+
 </div>

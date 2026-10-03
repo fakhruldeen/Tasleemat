@@ -115,4 +115,10 @@ must populate the following sections based on the project context (ensure
 * [📊 Data Structure (JSON)](04_02_08_Product_Backlog.json)
 * [📈 Tabular Data (CSV)](04_02_08_Product_Backlog.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_08_Product_Backlog_Example.md](../../../../../examples/en/04_Planning/02_Scope/08_Product_Backlog/04_02_08_Product_Backlog_Example.md)
+
 </div>

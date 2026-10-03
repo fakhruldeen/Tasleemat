@@ -89,4 +89,10 @@ variables):
 * [📊 Data Structure (JSON)](07_02_Contract_Closeout_Report.json)
 * [📈 Tabular Data (CSV)](07_02_Contract_Closeout_Report.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [07_02_Contract_Closeout_Report_Example.md](../../../../examples/en/07_Closing/02_Contract_Closeout_Report/07_02_Contract_Closeout_Report_Example.md)
+
 </div>

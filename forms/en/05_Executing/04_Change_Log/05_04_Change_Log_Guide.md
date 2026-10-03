@@ -80,4 +80,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Type (Mandatory/Discretionary):** Whether the change is legally mandatory or discretionary.
 *   **Configurable Items Impacted:** Configuration items, baselines, or specifications affected.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_04_Change_Log_Example.md](../../../../examples/en/05_Executing/04_Change_Log/05_04_Change_Log_Example.md)
+
 </div>

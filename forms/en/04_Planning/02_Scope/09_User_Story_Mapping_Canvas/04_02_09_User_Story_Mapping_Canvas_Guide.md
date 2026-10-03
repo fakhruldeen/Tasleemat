@@ -169,4 +169,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](04_02_09_User_Story_Mapping_Canvas.json)
 * [📈 Tabular Data (CSV)](04_02_09_User_Story_Mapping_Canvas.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_09_User_Story_Mapping_Canvas_Example.md](../../../../../examples/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Example.md)
+
 </div>

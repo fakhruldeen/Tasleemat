@@ -88,4 +88,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Lessons learned and knowledge transfer:** Insights and practical lessons captured to enhance ongoing and future project performance.
 *   **Comments:** Additional explanatory notes, contextual remarks, or qualitative updates.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_01_Project_Status_Report_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/01_Project_Status_Report/06_01_Project_Status_Report_Example.md)
+
 </div>

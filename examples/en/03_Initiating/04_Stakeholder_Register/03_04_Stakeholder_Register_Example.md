@@ -1,0 +1,49 @@
+# 03 04 Stakeholder Register (Reference Example)
+> 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-03.04`). All company names, project references, and figures are realistic fictional simulations.
+
+---
+
+<h3 align="right">Apex Global Solutions</h3>
+<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h1 align="center">STAKEHOLDER REGISTER</h1>
+
+| **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
+| :--- | :--- | :--- |  
+
+---
+
+## Stakeholder Register Entries
+<!-- 
+Please populate the table below with the following details:
+- **ID:** Unique identifier for the stakeholder (e.g., SH-01).
+- **Name:** Stakeholder’s name. If you don’t have a name you can substitute a position or organization until you have more information.
+- **Position/Role:** The position and/or role the stakeholder holds in the organization. Examples of positions include programmer, human resources analyst, or quality assurance specialist. Roles indicate the function the stakeholder performs on the project team.
+- **Contact information:** How to communicate with the stakeholder, such as their phone number, email address, or physical address.
+- **Requirements:** High-level needs for the project and/or product.
+- **Expectations:** Main expectations of the project and/or product.
+- **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
+-->
+| ID | Name | Position/Role | Contact information | Requirements | Expectations | Classification |
+| --- | --- | --- | --- | --- | --- | --- |
+| 01 | Enterprise Cloud Infrastructure Architecture | Completed | High | Alex Mercer | 2026-06-15 | Compliant with SOC2 and ISO27001 |
+| 02 | Automated Procurement & Supply Chain Workflows | In Progress | High | Faisal Al-Harbi | 2026-08-30 | Successful API integration verified |
+| 03 | Executive BI & Operational Analytics Dashboards | Planned | Medium | Sarah Jenkins | 2026-10-15 | Pending data warehouse staging |
+This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+
+
+---
+
+### Sign-off and Approvals
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
+| **Stakeholder Relations Lead** | Huda Al-Hashimi (Stakeholder Engagement Lead) | [Electronically Signed] | 2026-03-18 |
+| **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
+---
+
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> Stakeholder Register | <strong>Ref:</strong> PMO-03.04 <br>
+  <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>

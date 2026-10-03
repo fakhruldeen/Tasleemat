@@ -80,4 +80,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Identified Project Constraints:** Imposed boundaries including hard deadlines, budget caps, regulatory compliance, and technology limits.
 *   **Identified Project Assumptions:** Critical planning assumptions regarding resource availability, vendor performance, and dependencies.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_05_Project_Scope_Statement_Example.md](../../../../../examples/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Example.md)
+
 </div>

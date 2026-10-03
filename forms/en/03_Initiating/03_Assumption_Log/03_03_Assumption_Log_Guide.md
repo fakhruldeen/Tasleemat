@@ -80,4 +80,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Status:** The current status of the assumption (e.g., active, validated, closed).
 *   **Comments:** Any additional information, operational context, or status updates.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [03_03_Assumption_Log_Example.md](../../../../examples/en/03_Initiating/03_Assumption_Log/03_03_Assumption_Log_Example.md)
+
 </div>

@@ -82,3 +82,9 @@ project variables):
 * [🤖 Smart Generation Prompt](06_10_User_Acceptance_Testing_Signoff.md)
 * [📊 Data Structure (JSON)](06_10_User_Acceptance_Testing_Signoff.json)
 * [📈 Tabular Data (CSV)](06_10_User_Acceptance_Testing_Signoff.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_10_User_Acceptance_Testing_Signoff_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff/06_10_User_Acceptance_Testing_Signoff_Example.md)

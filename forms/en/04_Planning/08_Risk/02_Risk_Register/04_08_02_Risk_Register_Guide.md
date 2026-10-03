@@ -79,4 +79,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Action Plan and Contingency Plan:** Specific preventive mitigation steps and secondary fallback contingency plan.
 *   **Assigned Risk Owner and Status:** Designated individual accountable for managing the risk and current lifecycle status.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_08_02_Risk_Register_Example.md](../../../../../examples/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register_Example.md)
+
 </div>

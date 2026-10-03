@@ -82,3 +82,9 @@ project variables):
 * [🤖 Smart Generation Prompt](06_09_Vendor_Performance_Scorecard.md)
 * [📊 Data Structure (JSON)](06_09_Vendor_Performance_Scorecard.json)
 * [📈 Tabular Data (CSV)](06_09_Vendor_Performance_Scorecard.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_09_Vendor_Performance_Scorecard_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard/06_09_Vendor_Performance_Scorecard_Example.md)

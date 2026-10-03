@@ -73,4 +73,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Influence:** The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low).
 *   **Attitude:** The stakeholder's stance towards the project (e.g., Champion, Positive, Neutral, Negative).
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [03_05_Stakeholder_Analysis_Example.md](../../../../examples/en/03_Initiating/05_Stakeholder_Analysis/03_05_Stakeholder_Analysis_Example.md)
+
 </div>

@@ -79,4 +79,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Non-Functional Requirements (Quality of Service):** Performance thresholds, security standards, availability, scalability, and usability criteria.
 *   **Transition and Readiness Requirements:** Data migration, end-user training, operational handover, and rollout support prerequisites.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_03_Requirements_Documentation_Example.md](../../../../../examples/en/04_Planning/02_Scope/03_Requirements_Documentation/04_02_03_Requirements_Documentation_Example.md)
+
 </div>

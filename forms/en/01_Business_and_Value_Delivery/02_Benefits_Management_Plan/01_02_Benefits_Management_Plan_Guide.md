@@ -129,4 +129,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](01_02_Benefits_Management_Plan.json)
 * [📈 Tabular Data (CSV)](01_02_Benefits_Management_Plan.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [01_02_Benefits_Management_Plan_Example.md](../../../../examples/en/01_Business_and_Value_Delivery/02_Benefits_Management_Plan/01_02_Benefits_Management_Plan_Example.md)
+
 </div>

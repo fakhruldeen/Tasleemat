@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Urgent Escalation Process:** Step-by-step protocol for escalating critical issues, budget alerts, and schedule delays to executive leadership.
 *   **Project Terminology and Acronym Glossary:** Standard glossary defining technical acronyms, specialized terms, and abbreviations used across project documents.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_07_01_Communications_Management_Plan_Example.md](../../../../../examples/en/04_Planning/07_Communications/01_Communications_Management_Plan/04_07_01_Communications_Management_Plan_Example.md)
+
 </div>

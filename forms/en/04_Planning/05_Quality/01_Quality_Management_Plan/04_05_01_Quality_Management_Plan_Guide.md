@@ -79,4 +79,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Quality Roles and Responsibilities:** Designated quality assurance leads, test engineers, and peer review inspectors.
 *   **Quality Review Gates and Sign-off Criteria:** Mandatory quality milestones and gate reviews required before client acceptance.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_05_01_Quality_Management_Plan_Example.md](../../../../../examples/en/04_Planning/05_Quality/01_Quality_Management_Plan/04_05_01_Quality_Management_Plan_Example.md)
+
 </div>

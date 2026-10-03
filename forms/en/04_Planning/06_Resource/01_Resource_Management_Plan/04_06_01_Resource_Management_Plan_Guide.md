@@ -80,4 +80,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Equipment and Material Logistics:** Procurement, storage, utilization tracking, and maintenance of physical tools and equipment.
 *   **Resource Release and Demobilization Plan:** Orderly phased release plan for team members and return or disposal of physical equipment.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_06_01_Resource_Management_Plan_Example.md](../../../../../examples/en/04_Planning/06_Resource/01_Resource_Management_Plan/04_06_01_Resource_Management_Plan_Example.md)
+
 </div>

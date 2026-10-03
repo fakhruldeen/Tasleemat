@@ -126,4 +126,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](02_01_Tailoring_Plan.json)
 * [📈 Tabular Data (CSV)](02_01_Tailoring_Plan.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [02_01_Tailoring_Plan_Example.md](../../../../examples/en/02_Project_Approach_and_Tailoring/01_Tailoring_Plan/02_01_Tailoring_Plan_Example.md)
+
 </div>

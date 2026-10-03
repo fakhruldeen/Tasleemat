@@ -82,4 +82,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Strategic Lessons Learned:** High-level strategic insights on solution viability, change management effectiveness, and business model impact.
 *   **Ongoing Optimization Recommendations:** Prescriptive guidance for continuous optimization, future phase enhancements, and long-term capability extension.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [07_05_Post_Implementation_Review_Example.md](../../../../examples/en/07_Closing/05_Post_Implementation_Review/07_05_Post_Implementation_Review_Example.md)
+
 </div>

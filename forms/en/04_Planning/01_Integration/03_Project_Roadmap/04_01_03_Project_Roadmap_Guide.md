@@ -81,4 +81,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Critical Architectural and Strategic Assumptions:** Foundational assumptions underpinning delivery timelines and resource models.
 *   **Strategic Risks and Mitigation:** Major strategic risks that could impact timeline execution and roadmap milestones.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_01_03_Project_Roadmap_Example.md](../../../../../examples/en/04_Planning/01_Integration/03_Project_Roadmap/04_01_03_Project_Roadmap_Example.md)
+
 </div>

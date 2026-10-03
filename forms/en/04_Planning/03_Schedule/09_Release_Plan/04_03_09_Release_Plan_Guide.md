@@ -117,4 +117,10 @@ must populate the following sections based on the project context (ensure
 * [📊 Data Structure (JSON)](04_03_09_Release_Plan.json)
 * [📈 Tabular Data (CSV)](04_03_09_Release_Plan.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_09_Release_Plan_Example.md](../../../../../examples/en/04_Planning/03_Schedule/09_Release_Plan/04_03_09_Release_Plan_Example.md)
+
 </div>

@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Resource Availability Dates and Constraints:** Calendar timeframes, mobilization dates, shift constraints, and lead time requirements.
 *   **Resource Assumptions and Risk Factors:** Key assumptions regarding staffing market availability, productivity rates, and bottleneck risks.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_06_02_Resource_Requirements_Example.md](../../../../../examples/en/04_Planning/06_Resource/02_Resource_Requirements/04_06_02_Resource_Requirements_Example.md)
+
 </div>

@@ -78,4 +78,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Composite Risk Exposure Score:** Calculated overall risk score (Probability x Impact) placing the risk on the priority ladder.
 *   **Priority Category and Mitigation Urgency:** Classification into High (Red), Moderate (Yellow), or Low (Green) priority bands.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_08_03_Probability_and_Impact_Assessment_Example.md](../../../../../examples/en/04_Planning/08_Risk/03_Probability_and_Impact_Assessment/04_08_03_Probability_and_Impact_Assessment_Example.md)
+
 </div>

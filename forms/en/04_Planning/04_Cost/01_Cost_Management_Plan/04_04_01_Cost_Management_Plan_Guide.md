@@ -81,4 +81,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Cost Variance Thresholds and Escalations:** Defined financial deviation boundaries triggering mandatory variance analysis and CCB escalation.
 *   **Cost Reporting Cadence and Formats:** Frequency, distribution channels, and presentation formats for executive financial reports.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_04_01_Cost_Management_Plan_Example.md](../../../../../examples/en/04_Planning/04_Cost/01_Cost_Management_Plan/04_04_01_Cost_Management_Plan_Example.md)
+
 </div>

@@ -80,4 +80,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Sustainable Decommissioning and Handover:** Procedures ensuring environmentally responsible asset disposal, data purging, and ecological post-project decommissioning.
 *   **Sustainability Audit Lead and Review Cadence:** The designated sustainability officer accountable for compliance audits and the periodic ESG review schedule.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_12_01_Sustainability_and_ESG_Management_Plan_Example.md](../../../../../examples/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan/04_12_01_Sustainability_and_ESG_Management_Plan_Example.md)
+
 </div>

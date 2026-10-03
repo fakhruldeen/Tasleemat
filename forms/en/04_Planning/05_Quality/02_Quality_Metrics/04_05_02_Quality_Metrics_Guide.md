@@ -76,4 +76,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Measurement Frequency and Tooling:** How often data is collected and the specific testing tools or inspection techniques used.
 *   **Acceptable Tolerance Range and Escalation Trigger:** Upper and lower control limits (+/- tolerance) and triggers requiring corrective escalation.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_05_02_Quality_Metrics_Example.md](../../../../../examples/en/04_Planning/05_Quality/02_Quality_Metrics/04_05_02_Quality_Metrics_Example.md)
+
 </div>

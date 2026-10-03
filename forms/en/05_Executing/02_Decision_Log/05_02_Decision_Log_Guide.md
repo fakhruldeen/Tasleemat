@@ -78,4 +78,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Date:** The date on which the decision was officially agreed or approved.
 *   **Comments:** Alternatives considered, trade-offs, and supporting references.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_02_Decision_Log_Example.md](../../../../examples/en/05_Executing/02_Decision_Log/05_02_Decision_Log_Example.md)
+
 </div>

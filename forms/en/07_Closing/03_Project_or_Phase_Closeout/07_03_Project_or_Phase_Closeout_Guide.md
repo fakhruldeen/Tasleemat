@@ -129,4 +129,10 @@ must populate the following sections based on the project context (ensure
 * [📊 Data Structure (JSON)](07_03_Project_or_Phase_Closeout.json)
 * [📈 Tabular Data (CSV)](07_03_Project_or_Phase_Closeout.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [07_03_Project_or_Phase_Closeout_Example.md](../../../../examples/en/07_Closing/03_Project_or_Phase_Closeout/07_03_Project_or_Phase_Closeout_Example.md)
+
 </div>

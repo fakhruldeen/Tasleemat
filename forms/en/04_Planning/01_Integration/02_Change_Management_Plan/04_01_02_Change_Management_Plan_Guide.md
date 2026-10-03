@@ -82,4 +82,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Approval and Baseline Update Protocol:** Formal sign-off steps and procedures for updating affected baselines and plans.
 *   **Communication and Implementation:** Process for communicating change decisions and tracking implementation progress.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_01_02_Change_Management_Plan_Example.md](../../../../../examples/en/04_Planning/01_Integration/02_Change_Management_Plan/04_01_02_Change_Management_Plan_Example.md)
+
 </div>

@@ -91,4 +91,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Cost Baseline Definition:** The approved time-phased project budget excluding management reserves.
 *   **Performance Measurement Baseline (PMB):** Integrated scope-schedule-cost baseline used for earned value management.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_01_01_Project_Management_Plan_Example.md](../../../../../examples/en/04_Planning/01_Integration/01_Project_Management_Plan/04_01_01_Project_Management_Plan_Example.md)
+
 </div>

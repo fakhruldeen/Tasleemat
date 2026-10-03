@@ -95,4 +95,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Contract Change Requests:** Summary of formal contract change proposals submitted, reviewed, or pending.
 *   **Comments:** Additional context, contractor remarks, or explanatory notes.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_03_Contractor_Status_Report_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/03_Contractor_Status_Report/06_03_Contractor_Status_Report_Example.md)
+
 </div>

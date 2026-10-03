@@ -116,4 +116,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Budget impact (incl. intended actions/reserves):** Financial exposure and reserve utilization strategies to maintain fiscal control.
 *   **Comments:** Additional contextual observations or recommendations from the EVM analyst.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_05_Earned_Value_Analysis_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/05_Earned_Value_Analysis/06_05_Earned_Value_Analysis_Example.md)
+
 </div>

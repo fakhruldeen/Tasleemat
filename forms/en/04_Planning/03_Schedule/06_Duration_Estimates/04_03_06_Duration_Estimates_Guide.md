@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Schedule Contingency Reserve:** Calculated contingency buffer allocated to accommodate identified activity risks.
 *   **Total Activity Duration with Contingency:** Final baseline duration inclusive of contingency buffer used in the schedule model.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_06_Duration_Estimates_Example.md](../../../../../examples/en/04_Planning/03_Schedule/06_Duration_Estimates/04_03_06_Duration_Estimates_Example.md)
+
 </div>

@@ -112,4 +112,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](02_04_AI_Use_Case_Canvas.json)
 * [📈 Tabular Data (CSV)](02_04_AI_Use_Case_Canvas.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [02_04_AI_Use_Case_Canvas_Example.md](../../../../examples/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas/02_04_AI_Use_Case_Canvas_Example.md)
+
 </div>

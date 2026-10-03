@@ -88,3 +88,9 @@ project variables):
 * [🤖 Smart Generation Prompt](04_09_04_Statement_of_Work_SOW.md)
 * [📊 Data Structure (JSON)](04_09_04_Statement_of_Work_SOW.json)
 * [📈 Tabular Data (CSV)](04_09_04_Statement_of_Work_SOW.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_09_04_Statement_of_Work_SOW_Example.md](../../../../../examples/en/04_Planning/09_Procurement/04_Statement_of_Work_SOW/04_09_04_Statement_of_Work_SOW_Example.md)

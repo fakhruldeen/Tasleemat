@@ -143,4 +143,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](00_04_Resource_Capacity_Matrix.json)
 * [📈 Tabular Data (CSV)](00_04_Resource_Capacity_Matrix.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [00_04_Resource_Capacity_Matrix_Example.md](../../../../examples/en/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix/00_04_Resource_Capacity_Matrix_Example.md)
+
 </div>

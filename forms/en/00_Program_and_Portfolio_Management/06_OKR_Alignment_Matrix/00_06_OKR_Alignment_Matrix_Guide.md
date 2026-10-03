@@ -80,4 +80,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Confidence Variance Rationale:** Root-cause explanation for any score degradation or positive acceleration relative to the previous cycle baseline.
 *   **Strategic Pivot Recommendation:** Mandated strategic intervention, scope adjustment, or resource reallocation if confidence drops below target threshold.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [00_06_OKR_Alignment_Matrix_Example.md](../../../../examples/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix/00_06_OKR_Alignment_Matrix_Example.md)
+
 </div>

@@ -158,4 +158,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](02_02_AI_Governance_Plan.json)
 * [📈 Tabular Data (CSV)](02_02_AI_Governance_Plan.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [02_02_AI_Governance_Plan_Example.md](../../../../examples/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan_Example.md)
+
 </div>

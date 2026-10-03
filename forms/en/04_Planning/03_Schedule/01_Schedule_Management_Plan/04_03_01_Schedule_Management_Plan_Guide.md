@@ -79,4 +79,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Schedule Variance Thresholds:** Permissible delay thresholds that trigger mandatory corrective actions and executive escalations.
 *   **Schedule Update and Baselines Protocol:** Cadence for schedule status updates, critical path recalculation, and baseline change governance.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_01_Schedule_Management_Plan_Example.md](../../../../../examples/en/04_Planning/03_Schedule/01_Schedule_Management_Plan/04_03_01_Schedule_Management_Plan_Example.md)
+
 </div>

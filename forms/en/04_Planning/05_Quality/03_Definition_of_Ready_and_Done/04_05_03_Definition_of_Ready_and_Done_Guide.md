@@ -79,3 +79,9 @@ project variables):
 * [🤖 Smart Generation Prompt](04_05_03_Definition_of_Ready_and_Done.md)
 * [📊 Data Structure (JSON)](04_05_03_Definition_of_Ready_and_Done.json)
 * [📈 Tabular Data (CSV)](04_05_03_Definition_of_Ready_and_Done.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_05_03_Definition_of_Ready_and_Done_Example.md](../../../../../examples/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done_Example.md)

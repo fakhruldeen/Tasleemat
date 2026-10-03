@@ -75,4 +75,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Team Strengths and Weaknesses:** Identification of critical technical/interpersonal strengths and operational weaknesses.
 *   **Areas for Development:** Targeted skill acquisition, training programs, team building, and coaching plans.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_06_Team_Performance_Assessment_Example.md](../../../../examples/en/05_Executing/06_Team_Performance_Assessment/05_06_Team_Performance_Assessment_Example.md)
+
 </div>

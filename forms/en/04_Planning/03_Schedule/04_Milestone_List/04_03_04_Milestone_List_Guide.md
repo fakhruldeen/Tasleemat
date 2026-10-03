@@ -75,4 +75,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Verification Evidence and Sign-off Lead:** Required audit evidence, formal artifacts, and designated approval authority for milestone achievement.
 *   **Milestone Critical Path Impact:** Assessment of whether the milestone resides on the critical path and associated delivery float.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_04_Milestone_List_Example.md](../../../../../examples/en/04_Planning/03_Schedule/04_Milestone_List/04_03_04_Milestone_List_Example.md)
+
 </div>

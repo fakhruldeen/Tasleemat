@@ -82,3 +82,9 @@ project variables):
 * [🤖 Smart Generation Prompt](05_09_Prompt_Library_Log.md)
 * [📊 Data Structure (JSON)](05_09_Prompt_Library_Log.json)
 * [📈 Tabular Data (CSV)](05_09_Prompt_Library_Log.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_09_Prompt_Library_Log_Example.md](../../../../examples/en/05_Executing/09_Prompt_Library_Log/05_09_Prompt_Library_Log_Example.md)

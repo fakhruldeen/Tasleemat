@@ -87,4 +87,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Lessons learned and knowledge transfer:** Practical findings and best practices captured during task execution.
 *   **Comments:** Additional reflections, notes, or contextual feedback from the team member.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_02_Team_Member_Status_Report_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/02_Team_Member_Status_Report/06_02_Team_Member_Status_Report_Example.md)
+
 </div>

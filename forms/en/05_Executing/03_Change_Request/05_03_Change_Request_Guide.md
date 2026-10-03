@@ -78,4 +78,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Impacts of Change:** Detailed assessment of impacts across scope, schedule, budget, risks, and contracts.
 *   **Comments:** Additional context, dependencies, or evaluation notes.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_03_Change_Request_Example.md](../../../../examples/en/05_Executing/03_Change_Request/05_03_Change_Request_Example.md)
+
 </div>

@@ -79,4 +79,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Conflict Escalation and Resolution Steps:** Constructive step-by-step process for resolving interpersonal and technical disputes.
 *   **Team Signatures and Commitment:** Formal acknowledgment and commitment signed by all active project team members.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_06_05_Team_Charter_Example.md](../../../../../examples/en/04_Planning/06_Resource/05_Team_Charter/04_06_05_Team_Charter_Example.md)
+
 </div>

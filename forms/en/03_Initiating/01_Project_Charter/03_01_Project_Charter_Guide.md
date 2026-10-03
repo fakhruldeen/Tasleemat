@@ -89,4 +89,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Project manager authority level:** The authority of the project manager with regard to staffing decisions, budget management and variance, technical decisions, and conflict resolution.
 *   **Name and authority of the sponsor:** Name and authority of the sponsor or other person(s) authorizing the project charter.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [03_01_Project_Charter_Example.md](../../../../examples/en/03_Initiating/01_Project_Charter/03_01_Project_Charter_Example.md)
+
 </div>

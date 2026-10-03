@@ -124,4 +124,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](02_05_AI_Model_Card_and_Fact_Sheet.json)
 * [📈 Tabular Data (CSV)](02_05_AI_Model_Card_and_Fact_Sheet.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [02_05_AI_Model_Card_and_Fact_Sheet_Example.md](../../../../examples/en/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet/02_05_AI_Model_Card_and_Fact_Sheet_Example.md)
+
 </div>

@@ -81,4 +81,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Priority and Execution Feasibility:** The implementation urgency (Urgent/High/Medium/Low) and technical/financial execution feasibility rating.
 *   **Assigned Owner and Target Date:** The accountable business lead and committed milestone target date for closing the capability gap.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [01_04_Gap_Analysis_Report_Example.md](../../../../examples/en/01_Business_and_Value_Delivery/04_Gap_Analysis_Report/01_04_Gap_Analysis_Report_Example.md)
+
 </div>

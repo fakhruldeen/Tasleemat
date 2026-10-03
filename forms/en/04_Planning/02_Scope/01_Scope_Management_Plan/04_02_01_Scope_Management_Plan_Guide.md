@@ -82,4 +82,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Scope Change Control Integration:** Workflow connecting scope variance identification to formal change request processing.
 *   **Scope and Requirements Traceability Integration:** Alignment mechanism linking requirements traceability to scope deliverables.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_01_Scope_Management_Plan_Example.md](../../../../../examples/en/04_Planning/02_Scope/01_Scope_Management_Plan/04_02_01_Scope_Management_Plan_Example.md)
+
 </div>

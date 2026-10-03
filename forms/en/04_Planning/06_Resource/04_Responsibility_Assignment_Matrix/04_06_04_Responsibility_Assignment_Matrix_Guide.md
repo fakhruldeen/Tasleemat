@@ -78,4 +78,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Single Accountability Governance Rule:** Mandatory policy prohibiting multiple Accountable (A) assignments per deliverable to prevent diffusion of responsibility.
 *   **Escalation and Conflict Resolution Protocol:** Process for resolving role overlaps, gaps, and decision deadlocks across project leads.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_06_04_Responsibility_Assignment_Matrix_Example.md](../../../../../examples/en/04_Planning/06_Resource/04_Responsibility_Assignment_Matrix/04_06_04_Responsibility_Assignment_Matrix_Example.md)
+
 </div>

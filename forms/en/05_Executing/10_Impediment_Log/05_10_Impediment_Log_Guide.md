@@ -83,3 +83,9 @@ project variables):
 * [🤖 Smart Generation Prompt](05_10_Impediment_Log.md)
 * [📊 Data Structure (JSON)](05_10_Impediment_Log.json)
 * [📈 Tabular Data (CSV)](05_10_Impediment_Log.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_10_Impediment_Log_Example.md](../../../../examples/en/05_Executing/10_Impediment_Log/05_10_Impediment_Log_Example.md)

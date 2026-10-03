@@ -78,4 +78,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Hierarchical WBS Outline:** Complete textual outline displaying the hierarchical breakdown of the entire project scope.
 *   **Control Accounts and Work Package Identifiers:** Assigned identifiers mapping control accounts to accounting and management structures.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_06_Work_Breakdown_Structure_Example.md](../../../../../examples/en/04_Planning/02_Scope/06_Work_Breakdown_Structure/04_02_06_Work_Breakdown_Structure_Example.md)
+
 </div>

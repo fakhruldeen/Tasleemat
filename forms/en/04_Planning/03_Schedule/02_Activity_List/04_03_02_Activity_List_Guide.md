@@ -76,4 +76,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Parent WBS Work Package Mapping:** The parent WBS work package identifier and deliverable directly decomposed by this activity.
 *   **Activity Completion Deliverable:** The tangible or verified intermediate output produced upon activity completion.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_02_Activity_List_Example.md](../../../../../examples/en/04_Planning/03_Schedule/02_Activity_List/04_03_02_Activity_List_Example.md)
+
 </div>

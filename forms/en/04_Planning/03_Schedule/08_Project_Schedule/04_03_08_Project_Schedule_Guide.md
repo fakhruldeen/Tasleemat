@@ -78,4 +78,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Total Float and Free Float Values:** Calculated total float and free float values in working days for each schedule activity.
 *   **Schedule Risk and Recovery Considerations:** Identification of high-risk scheduling bottlenecks and contingency deployment rules.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_03_08_Project_Schedule_Example.md](../../../../../examples/en/04_Planning/03_Schedule/08_Project_Schedule/04_03_08_Project_Schedule_Example.md)
+
 </div>

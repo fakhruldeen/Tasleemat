@@ -79,4 +79,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Contingency Reserve Allocation:** Calculated risk contingency reserve allocated for identified known-unknown risks.
 *   **Total Activity Cost with Contingency:** Final baseline cost figure inclusive of contingency reserves for budgeting.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_04_02_Cost_Estimates_Example.md](../../../../../examples/en/04_Planning/04_Cost/02_Cost_Estimates/04_04_02_Cost_Estimates_Example.md)
+
 </div>

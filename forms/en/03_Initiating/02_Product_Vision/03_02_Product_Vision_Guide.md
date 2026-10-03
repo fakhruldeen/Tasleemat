@@ -111,4 +111,10 @@ must populate the following sections based on the project context (ensure
 * [📊 Data Structure (JSON)](03_02_Product_Vision.json)
 * [📈 Tabular Data (CSV)](03_02_Product_Vision.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [03_02_Product_Vision_Example.md](../../../../examples/en/03_Initiating/02_Product_Vision/03_02_Product_Vision_Example.md)
+
 </div>

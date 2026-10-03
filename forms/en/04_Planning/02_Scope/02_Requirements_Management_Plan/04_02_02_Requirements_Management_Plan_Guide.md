@@ -81,4 +81,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Requirements Verification Method:** Techniques ensuring requirements are complete, consistent, unambiguous, and testable.
 *   **Validation and User Acceptance Strategy:** Approach for validating that final deliverables fulfill underlying business objectives.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_02_Requirements_Management_Plan_Example.md](../../../../../examples/en/04_Planning/02_Scope/02_Requirements_Management_Plan/04_02_02_Requirements_Management_Plan_Example.md)
+
 </div>

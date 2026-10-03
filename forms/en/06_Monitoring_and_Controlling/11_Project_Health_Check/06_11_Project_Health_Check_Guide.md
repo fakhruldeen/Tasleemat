@@ -83,4 +83,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Mandated Corrective Action:** Specific remedial intervention required to return the project domain to acceptable performance.
 *   **Remediation Owner and Due Date:** The assigned individual accountable for corrective action execution and the strict due date.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_11_Project_Health_Check_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/11_Project_Health_Check/06_11_Project_Health_Check_Example.md)
+
 </div>

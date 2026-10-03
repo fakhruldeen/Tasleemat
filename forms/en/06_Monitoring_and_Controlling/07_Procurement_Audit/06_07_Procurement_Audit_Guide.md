@@ -80,4 +80,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Areas for Improvement:** Recommendations for updating organizational procurement policies, templates, and procedures.
 *   **Comments:** Additional auditor observations, commercial context, or closing remarks.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_07_Procurement_Audit_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/07_Procurement_Audit/06_07_Procurement_Audit_Example.md)
+
 </div>

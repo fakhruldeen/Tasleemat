@@ -80,4 +80,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Focus Time and Meeting Load Ratio:** Ratio of uninterrupted deep-work focus time compared to total hours spent in synchronous meetings and ceremonies.
 *   **Well-being Action and Working Agreement Update:** Agreed interventions, meeting hygiene rules, focus-block policies, or team charter amendments enacted to protect team vitality.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Example.md](../../../../../examples/en/04_Planning/06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Example.md)
+
 </div>

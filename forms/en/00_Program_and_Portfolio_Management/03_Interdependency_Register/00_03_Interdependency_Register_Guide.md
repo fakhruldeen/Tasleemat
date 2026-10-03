@@ -138,4 +138,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](00_03_Interdependency_Register.json)
 * [📈 Tabular Data (CSV)](00_03_Interdependency_Register.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [00_03_Interdependency_Register_Example.md](../../../../examples/en/00_Program_and_Portfolio_Management/03_Interdependency_Register/00_03_Interdependency_Register_Example.md)
+
 </div>

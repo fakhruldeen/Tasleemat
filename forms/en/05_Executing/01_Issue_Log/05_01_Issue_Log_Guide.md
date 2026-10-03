@@ -82,4 +82,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Final Resolution:** Summary of the corrective action taken to resolve the issue.
 *   **Comments:** Additional notes, context, or escalation details.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [05_01_Issue_Log_Example.md](../../../../examples/en/05_Executing/01_Issue_Log/05_01_Issue_Log_Example.md)
+
 </div>

@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Mandatory Treatment Thresholds:** Thresholds requiring mandatory immediate mitigation and dedicated contingency funding.
 *   **Executive Escalation Protocols:** Protocols governing when high-severity risks must be escalated to the Executive Sponsor or PMO.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_08_04_Probability_and_Impact_Matrix_Example.md](../../../../../examples/en/04_Planning/08_Risk/04_Probability_and_Impact_Matrix/04_08_04_Probability_and_Impact_Matrix_Example.md)
+
 </div>

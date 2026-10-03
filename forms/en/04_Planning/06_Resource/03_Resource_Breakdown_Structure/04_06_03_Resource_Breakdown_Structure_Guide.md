@@ -81,3 +81,9 @@ project variables):
 * [🤖 LLM Generation Prompt](04_06_03_Resource_Breakdown_Structure.md)
 * [📊 Data Structure (JSON)](04_06_03_Resource_Breakdown_Structure.json)
 * [📈 Tabular Data (CSV)](04_06_03_Resource_Breakdown_Structure.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_06_03_Resource_Breakdown_Structure_Example.md](../../../../../examples/en/04_Planning/06_Resource/03_Resource_Breakdown_Structure/04_06_03_Resource_Breakdown_Structure_Example.md)

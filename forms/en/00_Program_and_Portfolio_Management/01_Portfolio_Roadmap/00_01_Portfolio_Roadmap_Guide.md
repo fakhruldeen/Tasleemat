@@ -150,4 +150,10 @@ context (ensure `parameters.md` is referenced for global project variables):
 * [📊 Data Structure (JSON)](00_01_Portfolio_Roadmap.json)
 * [📈 Tabular Data (CSV)](00_01_Portfolio_Roadmap.csv)
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [00_01_Portfolio_Roadmap_Example.md](../../../../examples/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/00_01_Portfolio_Roadmap_Example.md)
+
 </div>

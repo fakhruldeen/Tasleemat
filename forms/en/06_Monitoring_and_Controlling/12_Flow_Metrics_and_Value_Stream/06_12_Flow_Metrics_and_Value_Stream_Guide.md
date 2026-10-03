@@ -80,4 +80,10 @@ Fill out each section carefully following the specific field guidance provided b
 *   **Bottleneck Identification and Root Cause:** Specific workflow stage where work accumulates as queue inventory and the underlying process constraint.
 *   **Kaizen Flow Optimization Action:** Targeted continuous improvement action, WIP constraint adjustment, or dependency unblocking intervention to improve flow.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [06_12_Flow_Metrics_and_Value_Stream_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream/06_12_Flow_Metrics_and_Value_Stream_Example.md)
+
 </div>

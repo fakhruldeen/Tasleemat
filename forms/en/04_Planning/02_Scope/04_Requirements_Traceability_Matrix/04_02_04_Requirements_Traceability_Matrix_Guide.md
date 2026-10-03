@@ -77,4 +77,10 @@ must populate the following critical sections based on the project context (ensu
 *   **Core Inter-Requirement Dependencies:** Identified functional linkages, prerequisite requirements, and cross-feature constraints.
 *   **Impact and Traceability Governance:** Protocols for assessing downstream deliverable impact when a linked requirement is modified.
 
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_04_Requirements_Traceability_Matrix_Example.md](../../../../../examples/en/04_Planning/02_Scope/04_Requirements_Traceability_Matrix/04_02_04_Requirements_Traceability_Matrix_Example.md)
+
 </div>
