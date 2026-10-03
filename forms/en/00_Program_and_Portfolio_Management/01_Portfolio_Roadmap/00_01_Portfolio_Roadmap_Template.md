@@ -158,19 +158,6 @@ Roadmap change rows:
     roadmap in which it took effect.
 -->
 
-<style>
-  @media print {
-    @page {
-      size: A4 landscape;
-      margin: 1.5cm 1cm;
-    }
-    table {
-      width: 100%;
-      font-size: 9pt;
-    }
-  }
-</style>
-
 <h3 dir="ltr" align="right">{{Company_Name}}</h3>
 <h2 dir="ltr" align="right">{{Portfolio_Name}} - {{Portfolio_ID}}</h2>
 <h1 dir="ltr" align="center">PORTFOLIO ROADMAP</h1>

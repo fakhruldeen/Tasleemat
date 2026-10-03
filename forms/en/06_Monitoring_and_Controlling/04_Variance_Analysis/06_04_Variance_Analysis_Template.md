@@ -5,19 +5,6 @@ Section-by-Section Instructions:
 - Variance Implications and Escalation: Document implications of continued variance (forecasts/trends) and whether the variance needs escalation.
 - Comments: Document any comments that add relevance to this report. -->
 
-<style>
-  @media print {
-    @page {
-      size: A4 landscape;
-      margin: 1.5cm 1cm;
-    }
-    table {
-      width: 100%;
-      font-size: 9pt;
-    }
-  }
-</style>
-
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">VARIANCE ANALYSIS</h1>

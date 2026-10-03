@@ -10,19 +10,6 @@ Section Instructions:
 *   **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
 -->
 
-<style>
-  @media print {
-    @page {
-      size: A4 landscape;
-      margin: 1.5cm 1cm;
-    }
-    table {
-      width: 100%;
-      font-size: 9pt;
-    }
-  }
-</style>
-
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">STAKEHOLDER REGISTER</h1>

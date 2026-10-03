@@ -3,19 +3,6 @@
 Section-by-Section Instructions:
 - Decision Log: Record all project decisions. Include the category, the decision itself, impacts on objectives, affected stakeholders, the responsible party, the date, and any comments (such as alternatives considered or reasoning). -->
 
-<style>
-  @media print {
-    @page {
-      size: A4 landscape;
-      margin: 1.5cm 1cm;
-    }
-    table {
-      width: 100%;
-      font-size: 9pt;
-    }
-  }
-</style>
-
 <h3 align="right">{{Company_Name}}</h3>
 <h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
 <h1 align="center">DECISION LOG</h1>

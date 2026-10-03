@@ -39,19 +39,6 @@
   كما استُعمل، وما يبدو عليه الرد الجيد، والإصدار والحالة التي يحملها الآن.
 -->
 
-<style>
-  @media print {
-    @page {
-      size: A4 landscape;
-      margin: 1.5cm 1cm;
-    }
-    table {
-      width: 100%;
-      font-size: 9pt;
-    }
-  }
-</style>
-
 <div dir="rtl">
 
 
