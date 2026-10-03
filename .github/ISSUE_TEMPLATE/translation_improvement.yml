@@ -1,0 +1,37 @@
+name: 🌐 Translation / Terminology Improvement
+description: Suggest refinements to Arabic/English translations or terminology mappings.
+title: "[Translation]: "
+labels: ["translation", "lexicon"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an improvement to terminology translation in [`docs/LEXICON.md`](docs/LEXICON.md) or specific form guides.
+  - type: input
+    id: english_term
+    attributes:
+      label: English Term
+      placeholder: "e.g. Schedule Baseline"
+    validations:
+      required: true
+  - type: input
+    id: current_arabic
+    attributes:
+      label: Current Arabic Translation
+      placeholder: "e.g. الخط المرجعي للجدول الزمني"
+    validations:
+      required: true
+  - type: input
+    id: suggested_arabic
+    attributes:
+      label: Suggested Arabic Translation
+      placeholder: "e.g. خط الأساس للجدول الزمني"
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference Standard (PMI Lexicon, SDAIA, ISO, etc.)
+      description: Cite standard sources supporting the refinement.
+    validations:
+      required: false

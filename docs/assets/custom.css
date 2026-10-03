@@ -1,0 +1,36 @@
+/* Tasleemat Custom Web Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --md-text-font: 'Inter', sans-serif;
+  --md-code-font: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+[dir="rtl"], html[lang="ar"] {
+  font-family: 'Cairo', sans-serif !important;
+  text-align: right;
+}
+
+/* Custom table styling */
+.md-typeset table:not([class]) {
+  font-size: 0.8rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+/* Mermaid diagrams center alignment */
+.mermaid {
+  text-align: center;
+  margin: 1.5em 0;
+}

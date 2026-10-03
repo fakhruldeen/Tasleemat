@@ -1,0 +1,46 @@
+name: 💡 New Form / Deliverable Request
+description: Propose a new project management form, template, or methodology pack.
+title: "[Proposal]: "
+labels: ["enhancement", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a new standard artifact to be added to the **Tasleemat** PMO ecosystem.
+  - type: input
+    id: suggested_title
+    attributes:
+      label: Suggested Deliverable Name
+      description: English and Arabic names
+      placeholder: "e.g. AI Continuous Learning Policy / سياسة التعلم المستمر للذكاء الاصطناعي"
+    validations:
+      required: true
+  - type: dropdown
+    id: lifecycle_phase
+    attributes:
+      label: Lifecycle Phase / Domain
+      options:
+        - 00 Program and Portfolio Management
+        - 01 Business and Value Delivery
+        - 02 Project Approach and Tailoring
+        - 03 Initiating
+        - 04 Planning
+        - 05 Executing
+        - 06 Monitoring and Controlling
+        - 07 Closing
+    validations:
+      required: true
+  - type: textarea
+    id: business_justification
+    attributes:
+      label: Business Justification & Standard Alignment
+      description: Why is this artifact necessary? (e.g. PMBOK 8th Edition, ISO 21500, Agile, MLOps)
+    validations:
+      required: true
+  - type: textarea
+    id: key_sections
+    attributes:
+      label: Proposed Key Sections & Fields
+      description: Outline the main tables, sections, and fields for this form.
+    validations:
+      required: false

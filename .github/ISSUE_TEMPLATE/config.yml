@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Tasleemat Master Lexicon
+    url: https://github.com/fakhruldeen/Tasleemat/blob/main/docs/LEXICON.md
+    about: Look up standard PMI terms and form cross-references.
+  - name: 📚 Documentation Portal
+    url: https://github.com/fakhruldeen/Tasleemat/tree/main/docs
+    about: Browse user guides, policy manual, and stage-gate frameworks.

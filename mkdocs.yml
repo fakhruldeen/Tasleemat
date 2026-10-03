@@ -34,6 +34,9 @@ theme:
   logo: docs/img/logo.png
   favicon: docs/img/logo.png
 
+extra_css:
+  - assets/custom.css
+
 plugins:
   - search
 

@@ -1,0 +1,42 @@
+name: 🐛 Bug Report / Formatting Issue
+description: Report a broken link, rendering issue, table misalignment, or schema error.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue in **Tasleemat**! Please provide the details below.
+  - type: input
+    id: form_id
+    attributes:
+      label: Form ID or Document Path
+      description: e.g. `PMO-03.01`, `forms/ar/03_البدء/01_ميثاق_المشروع/`, or `docs/en/04_stage_gates_and_governance.md`
+      placeholder: "PMO-03.01"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language Affected
+      options:
+        - Arabic (ar)
+        - English (en)
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: What is broken or incorrect?
+      placeholder: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to see instead?
+    validations:
+      required: false
