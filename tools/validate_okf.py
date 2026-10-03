@@ -1,21 +1,18 @@
 #!/usr/bin/env python3
-"""Validate the root datapackage.json and all 204 tabular CSV resources
+"""Validate the root datapackage.json and all 204 JSON Schema resources
 against Open Knowledge Foundation (OKF) Frictionless Data specifications.
 """
 
 import os
 import sys
 import json
-import csv
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATAPACKAGE_PATH = ROOT / "datapackage.json"
 
-REQUIRED_FIELDS = ["Section", "Field", "Guidance", "LLM_Generated_Value"]
-
 def validate_datapackage():
-    print("=== Validating Open Knowledge Foundation (OKF) Data Package ===")
+    print("=== Validating Open Knowledge Foundation (OKF) JSON Data Package ===")
     
     if not DATAPACKAGE_PATH.exists():
         print("❌ Error: datapackage.json not found at repository root!")
@@ -26,11 +23,11 @@ def validate_datapackage():
 
     # Validate package level metadata
     assert data.get("name") == "tasleemat-pmo-framework", "Invalid package name"
-    assert data.get("profile") == "tabular-data-package", "Invalid profile (must be tabular-data-package)"
+    assert data.get("profile") == "data-package", "Invalid profile"
     assert len(data.get("licenses", [])) > 0, "Missing open licenses"
 
     resources = data.get("resources", [])
-    print(f"Checking {len(resources)} Frictionless resources...")
+    print(f"Checking {len(resources)} JSON Schema resources...")
 
     if len(resources) != 204:
         print(f"❌ Error: Expected 204 resources, found {len(resources)}")
@@ -55,30 +52,41 @@ def validate_datapackage():
         elif lang == "ar-SA":
             ar_count += 1
 
-        # Validate CSV contents against Table Schema
+        # Validate JSON content against schema rules
         try:
-            with open(res_path, "r", encoding="utf-8") as csv_f:
-                reader = csv.reader(csv_f)
-                header = next(reader, None)
-                if not header or header != REQUIRED_FIELDS:
-                    print(f"❌ Header mismatch in {res_path}: {header}")
+            with open(res_path, "r", encoding="utf-8") as json_f:
+                content = json.load(json_f)
+                
+                # Verify required top-level keys
+                if "form_name" not in content or "document_reference" not in content or "fields" not in content:
+                    print(f"❌ Missing mandatory keys in {res_path}")
                     errors += 1
                     continue
                 
-                row_count = 0
-                for row in reader:
-                    if len(row) != 4:
-                        print(f"❌ Column count mismatch in {res_path} row {row_count+1}: expected 4, got {len(row)}")
+                fields = content.get("fields", {})
+                if not isinstance(fields, dict) or len(fields) == 0:
+                    print(f"❌ Empty or invalid fields object in {res_path}")
+                    errors += 1
+                    continue
+                
+                # Check field items
+                for field_key, field_data in fields.items():
+                    if not isinstance(field_data, dict):
+                        print(f"❌ Field {field_key} in {res_path} is not an object")
                         errors += 1
                         break
-                    row_count += 1
+                    if "section" not in field_data or "label" not in field_data or "guidance" not in field_data:
+                        print(f"❌ Field {field_key} in {res_path} missing section/label/guidance")
+                        errors += 1
+                        break
+
         except Exception as e:
-            print(f"❌ Error reading {res_path}: {e}")
+            print(f"❌ Error parsing JSON in {res_path}: {e}")
             errors += 1
 
     print(f"Resources verified: {en_count} English + {ar_count} Arabic = {len(resources)} Total")
     if errors == 0:
-        print("✨ SUCCESS: OKF Frictionless Data Package is 100% VALID and compliant!")
+        print("✨ SUCCESS: OKF JSON Schema Data Package is 100% VALID and compliant!")
         return 0
     else:
         print(f"❌ FAILED: {errors} validation errors detected.")

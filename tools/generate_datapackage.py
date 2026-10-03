@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the official root datapackage.json conforming to the
-Open Knowledge Foundation (OKF) Frictionless Data Package Standard.
+Open Knowledge Foundation (OKF) Frictionless Data Package Standard
+using native JSON Schemas for all 204 project management artifacts.
 """
 
 import os
@@ -12,97 +13,115 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 FORMS_DIR = ROOT / "forms"
 DATAPACKAGE_PATH = ROOT / "datapackage.json"
 
-TABLE_SCHEMA = {
-    "fields": [
-        {
-            "name": "Section",
+JSON_SCHEMA_DEF = {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "form_name": {
             "type": "string",
-            "title": "Document Section",
-            "description": "Lifecycle section, domain grouping, or table category within the PMO artifact.",
-            "constraints": {
-                "required": True
-            }
+            "description": "The official standard name of the PMO deliverable."
         },
-        {
-            "name": "Field",
+        "document_reference": {
             "type": "string",
-            "title": "Field Label",
-            "description": "Standardized field name, parameter label, or table column header.",
-            "constraints": {
-                "required": True
-            }
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
         },
-        {
-            "name": "Guidance",
+        "_llm_instructions": {
             "type": "string",
-            "title": "Practitioner Guidance",
-            "description": "Instruction and contextual prompt guidelines for populating this field.",
-            "constraints": {
-                "required": True
-            }
+            "description": "System prompt and execution instructions for AI LLM generation."
         },
-        {
-            "name": "LLM_Generated_Value",
+        "project_title": {
             "type": "string",
-            "title": "Target / Generated Value",
-            "description": "Generated or placeholder value populated by the user or AI agent.",
-            "constraints": {
-                "required": False
+            "description": "Name or title of the project."
+        },
+        "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+        },
+        "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "section": {"type": "string"},
+                    "label": {"type": "string"},
+                    "guidance": {"type": "string"},
+                    "value": {"type": "string"}
+                },
+                "required": ["section", "label", "guidance"]
             }
         }
-    ],
-    "primaryKey": ["Section", "Field"],
-    "missingValues": [""]
+    },
+    "required": ["form_name", "document_reference", "fields"]
 }
 
 def build_datapackage():
-    print("=== Generating Open Knowledge Foundation (OKF) Data Package Manifest ===")
+    print("=== Generating Open Knowledge Foundation (OKF) JSON Data Package Manifest ===")
 
     resources = []
     
-    # 1. English Resources (forms/en/**/*.csv)
-    for csv_file in sorted(FORMS_DIR.glob("en/**/*.csv")):
-        rel_path = csv_file.relative_to(ROOT).as_posix()
-        # Clean slug name e.g. en-03-01-project-charter
-        slug = re.sub(r'[^a-zA-Z0-9_-]', '-', csv_file.stem).lower()
+    # 1. English JSON Schemas (forms/en/**/*.json)
+    for json_file in sorted(FORMS_DIR.glob("en/**/*.json")):
+        rel_path = json_file.relative_to(ROOT).as_posix()
+        slug = re.sub(r'[^a-zA-Z0-9_-]', '-', json_file.stem).lower()
         resource_name = f"en-{slug}"
+        
+        # Read file to extract title and document ref
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                content = json.load(f)
+                title = content.get("form_name", json_file.stem.replace('_', ' '))
+                doc_ref = content.get("document_reference", "")
+        except Exception:
+            title = json_file.stem.replace('_', ' ')
+            doc_ref = ""
         
         resources.append({
             "name": resource_name,
-            "title": csv_file.stem.replace('_', ' '),
+            "title": title,
+            "reference": doc_ref,
             "path": rel_path,
-            "format": "csv",
-            "mediatype": "text/csv",
+            "format": "json",
+            "mediatype": "application/json",
             "encoding": "utf-8",
             "language": "en",
             "direction": "ltr",
-            "schema": TABLE_SCHEMA
+            "schema": JSON_SCHEMA_DEF
         })
 
-    # 2. Arabic Resources (forms/ar/**/*.csv)
-    for csv_file in sorted(FORMS_DIR.glob("ar/**/*.csv")):
-        rel_path = csv_file.relative_to(ROOT).as_posix()
-        # Clean slug name e.g. ar-03-01-project-charter
-        slug = re.sub(r'[^a-zA-Z0-9_\u0600-\u06FF-]', '-', csv_file.stem).lower()
+    # 2. Arabic JSON Schemas (forms/ar/**/*.json)
+    for json_file in sorted(FORMS_DIR.glob("ar/**/*.json")):
+        rel_path = json_file.relative_to(ROOT).as_posix()
+        slug = re.sub(r'[^a-zA-Z0-9_\u0600-\u06FF-]', '-', json_file.stem).lower()
         resource_name = f"ar-{slug}"
+        
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                content = json.load(f)
+                title = content.get("form_name", json_file.stem.replace('_', ' '))
+                doc_ref = content.get("document_reference", "")
+        except Exception:
+            title = json_file.stem.replace('_', ' ')
+            doc_ref = ""
         
         resources.append({
             "name": resource_name,
-            "title": csv_file.stem.replace('_', ' '),
+            "title": title,
+            "reference": doc_ref,
             "path": rel_path,
-            "format": "csv",
-            "mediatype": "text/csv",
+            "format": "json",
+            "mediatype": "application/json",
             "encoding": "utf-8",
             "language": "ar-SA",
             "direction": "rtl",
-            "schema": TABLE_SCHEMA
+            "schema": JSON_SCHEMA_DEF
         })
 
     datapackage = {
-        "profile": "tabular-data-package",
+        "profile": "data-package",
         "name": "tasleemat-pmo-framework",
         "title": "Tasleemat: Enterprise Bilingual (English & Arabic) Project Management Framework",
-        "description": "Complete open, machine-readable Project Management Office (PMO) artifact library with 102 bilingual deliverable pairs conforming to PMI PMBOK® 6th, 7th & 8th Edition standards and the Open Knowledge Foundation (OKF) Frictionless Data specification.",
+        "description": "Complete open, machine-readable Project Management Office (PMO) artifact library with 102 bilingual deliverable JSON schemas conforming to PMI PMBOK® 6th, 7th & 8th Edition standards and the Open Knowledge Foundation (OKF) Frictionless Data specification.",
         "version": "2.0.0",
         "homepage": "https://github.com/fakhruldeen/Tasleemat",
         "licenses": [
@@ -118,6 +137,7 @@ def build_datapackage():
             "pmbok",
             "open-knowledge",
             "frictionless-data",
+            "json-schema",
             "arabic",
             "bilingual",
             "ai-governance",
@@ -136,7 +156,7 @@ def build_datapackage():
     with open(DATAPACKAGE_PATH, "w", encoding="utf-8") as f:
         json.dump(datapackage, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Created datapackage.json with {len(resources)} Frictionless Tabular Resources ({len(resources)//2} EN + {len(resources)//2} AR).")
+    print(f"✅ Created datapackage.json with {len(resources)} JSON Schema Resources ({len(resources)//2} EN + {len(resources)//2} AR).")
 
 if __name__ == "__main__":
     build_datapackage()
