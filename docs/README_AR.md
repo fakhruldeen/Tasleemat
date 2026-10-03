@@ -5,47 +5,94 @@
 # 📚 البوابة التوثيقية وقاعدة المعرفة لنظام «تسليمات»
 **الإصدار:** 2.0  
 **التوافق مع المعايير:** معهد إدارة المشاريع PMI PMBOK® الإصدارات 6 و 7 و 8 • أخلاقيات الذكاء الاصطناعي (سدايا) • NIST AI RMF • ISO 21500  
+**إجمالي المخرجات:** 102 مخرجاً إدارياً ثنائياً • 204 حزمة نماذج وقوالب • 204 مثال واقعي معتمد • 24 دليلاً حوكمياً رئيسياً
 
 ---
 
-## 🧭 الفهرس التوثيقي الشامل
+## ⚡ مركز الوصول والتنقل السريع
 
-أهلاً بك في البوابة التوثيقية الرسمية لنظام **«تسليمات»**. تجد أدناه دليلاً متكاملاً يضم السياسات الحوكمية، والأدلة الإرشادية للممارسين، وأطر العمل الحديثة لإدارة المشاريع الرشيقة ومشاريع الذكاء الاصطناعي.
+<div class="portal-card-grid" dir="rtl">
+  <a class="portal-card" href="catalog/ar/index.md">
+    <h4>📑 الفهرس العام للمخرجات والنماذج</h4>
+    <p>دليل شامل وبحث تفاعلي لكافة الـ 102 مخرجاً إدارياً مع روابط مباشرة للقوالب، الأدلة، والأمثلة.</p>
+  </a>
+
+  <a class="portal-card" href="templates/ar/index.md">
+    <h4>📋 مكتبة القوالب القياسية</h4>
+    <p>102 قالب عمل قياسي جاهز للتعبئة بصيغة Markdown مع جداول التحكم بالوثائق والاعتمادات.</p>
+  </a>
+
+  <a class="portal-card" href="guides/ar/index.md">
+    <h4>📖 أدلة إعداد وتعبئة النماذج</h4>
+    <p>102 دليلاً تفصيلياً يشرح خطوة بخطوة مصفوفة الصلاحيات RACI، والمدخلات والمخرجات وبوابات الجودة.</p>
+  </a>
+
+  <a class="portal-card" href="examples/ar/index.md">
+    <h4>💡 معرض الأمثلة الواقعية ودراسات الحالة</h4>
+    <p>102 مثال واقعي مكتمل بالبيانات والأرقام والقرارات المؤسسية يغطي كافة مراحل دورة حياة المشروع.</p>
+  </a>
+
+  <a class="portal-card" href="ar/01_getting_started.md">
+    <h4>📚 الأدلة والسياسات الحوكمية (12 دليلاً)</h4>
+    <p>الأدلة المؤسسية لإدارة المشاريع، سياسات PMO، بوابات العبور، ومصفوفة الصلاحيات، وحوكمة الذكاء الاصطناعي.</p>
+  </a>
+
+  <a class="portal-card" href="LEXICON.md">
+    <h4>📖 المعجم الموحد للمصطلحات</h4>
+    <p>المرجع المصطلحي المعتمد للمصطلحات الإنجليزية والعربية المطابقة لمعايير معهد إدارة المشاريع PMI.</p>
+  </a>
+</div>
+
+---
+
+## 🧭 مخطط دورة حياة المشروع وبوابات العبور الحوكمية
 
 ```mermaid
 flowchart TD
-    subgraph "التأسيس والانطلاق"
-        D1["01. دليل البدء السريع"]
-        D2["02. دليل الممارس الشامل"]
-        D3["03. دليل سياسات PMO"]
+    subgraph G0["بوابة 0: المواءمة الاستراتيجية ودراسة الجدوى"]
+        P00["00. إدارة البرامج والمحافظ"]
+        P01["01. الأعمال وتسليم القيمة"]
     end
 
-    subgraph "الحوكمة والهيكلية"
-        D4["04. بوابات العبور والمراجعات"]
-        D5["05. ملفات التخصيص وتصنيف المشاريع"]
-        D6["06. مصفوفة الصلاحيات RACI"]
-        D7["07. شبكة اعتماديات الوثائق"]
+    subgraph G1["بوابة 1: ميثاق المشروع والتخصيص"]
+        P02["02. منهجية المشروع وتخصيصه"]
+        P03["03. البدء"]
     end
 
-    subgraph "المنهجيات الحديثة"
-        D8["08. إطار حوكمة الذكاء الاصطناعي"]
-        D9["09. دليل المنهجيات الرشيقة والهجينة"]
+    subgraph G2["بوابة 2: اعتماد خطوط الأساس"]
+        P04["04. التخطيط (12 مجالاً معرفياً)"]
     end
 
-    subgraph "الدعم والأتمتة"
-        D10["10. الأسئلة الشائعة وحل المشكلات"]
-        D11["11. دليل الأدوات والأتمتة"]
+    subgraph G3["بوابة 3: التنفيذ والتحكم في الأداء"]
+        P05["05. التنفيذ"]
+        P06["06. المراقبة والتحكم"]
     end
 
-    D1 --> D4
-    D4 --> D5
-    D5 --> D8
-    D5 --> D9
+    subgraph G4["بوابة 4 و 5: التسليم التشغيلي والإغلاق"]
+        P07["07. الإغلاق"]
+    end
+
+    G0 --> G1 --> G2 --> G3 --> G4
 ```
 
 ---
 
-## 📑 جدول الأدلة والوثائق الإرشادية
+## 🏛️ تصفح النماذج حسب مراحل دورة الحياة
+
+| رقم المرحلة | اسم المرحلة الحوكمية | عدد النماذج | الروابط السريعة |
+| :---: | :--- | :---: | :---: |
+| **00** | [**إدارة البرامج والمحافظ**](templates/ar/00_إدارة_البرامج_والمحافظ/index.md) | 6 مخرجات | [📋 القوالب](templates/ar/00_إدارة_البرامج_والمحافظ/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+| **01** | [**الأعمال وتسليم القيمة**](templates/ar/01_الأعمال_وتسليم_القيمة/index.md) | 4 مخرجات | [📋 القوالب](templates/ar/01_الأعمال_وتسليم_القيمة/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+| **02** | [**منهجية المشروع وتخصيصه**](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md) | 6 مخرجات | [📋 القوالب](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+| **03** | [**البدء**](templates/ar/03_البدء/index.md) | 5 مخرجات | [📋 القوالب](templates/ar/03_البدء/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+| **04** | [**التخطيط**](templates/ar/04_التخطيط/index.md) | 47 مخرجاً | [📋 القوالب](templates/ar/04_التخطيط/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+| **05** | [**التنفيذ**](templates/ar/05_التنفيذ/index.md) | 12 مخرجاً | [📋 القوالب](templates/ar/05_التنفيذ/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+| **06** | [**المراقبة والتحكم**](templates/ar/06_المراقبة_والتحكم/index.md) | 12 مخرجاً | [📋 القوالب](templates/ar/06_المراقبة_والتحكم/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+| **07** | [**الإغلاق**](templates/ar/07_الإغلاق/index.md) | 5 مخرجات | [📋 القوالب](templates/ar/07_الإغلاق/index.md) • [📖 الأدلة](guides/ar/index.md) • [💡 الأمثلة](examples/ar/index.md) |
+
+---
+
+## 📑 جدول الأدلة والوثائق الإرشادية (12 دليلاً حوكمياً)
 
 | رقم الدليل | عنوان الوثيقة | اللغة | الوصف والقيمة التشغيلية |
 | :---: | :--- | :---: | :--- |
@@ -67,8 +114,8 @@ flowchart TD
 
 ## 👤 مسارات القراءة الموصى بها بحسب الدور الوظيفي
 
-* **لمديري المشاريع:** ابدأ بـ [`01_getting_started.md`](ar/01_getting_started.md) $ightarrow$ [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) $ightarrow$ [`02_usage_guide.md`](ar/02_usage_guide.md).
-* **لمدراء مكاتب إدارة المشاريع (PMO):** راجع [`03_pmo_policy_manual.md`](ar/03_pmo_policy_manual.md) $ightarrow$ [`04_stage_gates_and_governance.md`](ar/04_stage_gates_and_governance.md) $ightarrow$ [`06_raci_authority_matrix.md`](ar/06_raci_authority_matrix.md).
-* **لقادة سكرم والتحول الرشيق:** ركز على [`09_agile_hybrid_integration.md`](ar/09_agile_hybrid_integration.md) $ightarrow$ [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md).
-* **لمدراء مشاريع الذكاء الاصطناعي:** تعمق في [`08_ai_governance_framework.md`](ar/08_ai_governance_framework.md).
-* **لمسؤولي الأنظمة والأتمتة:** استكشف [`11_tools_and_automation.md`](ar/11_tools_and_automation.md).
+* **لمديري المشاريع:** ابدأ بـ [`01_getting_started.md`](ar/01_getting_started.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [`02_usage_guide.md`](ar/02_usage_guide.md) → [مكتبة القوالب](templates/ar/index.md).
+* **لمدراء مكاتب إدارة المشاريع (PMO):** راجع [`03_pmo_policy_manual.md`](ar/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](ar/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](ar/06_raci_authority_matrix.md).
+* **لقادة سكرم والتحول الرشيق:** ركز على [`09_agile_hybrid_integration.md`](ar/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](ar/05_tailoring_profiles.md) → [سجلات سكرم والمراجعات](templates/ar/05_التنفيذ/index.md).
+* **لمدراء مشاريع الذكاء الاصطناعي:** تعمق في [`08_ai_governance_framework.md`](ar/08_ai_governance_framework.md) → [قوالب حوكمة الذكاء الاصطناعي](templates/ar/02_منهجية_المشروع_وتخصيصه/index.md).
+* **لمسؤولي الأنظمة والأتمتة:** استكشف [`11_tools_and_automation.md`](ar/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](ar/12_open_knowledge_framework.md).

@@ -1,0 +1,79 @@
+<div class="deliverable-header-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-04.03.05</span>
+    <span class="badge badge-phase">04. Planning</span>
+    <span class="badge badge-standard">PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../../guides/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Guide.md">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../../examples/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Example.md">💡 Completed Example</a>
+    <a class="nav-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_قالب.md">🇸🇦 النسخة العربية</a>
+  </div>
+</div>
+
+---
+
+<!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+- Network Logic and Critical Path Overview: Provide comprehensive project data for all required fields in this section.
+- Precedence Relationships and Dependencies: Provide comprehensive project data for all required fields in this section.
+- Network Diagram Visualization: Provide comprehensive project data for all required fields in this section.
+-->
+
+<h3 align="right">{{Company_Name}}</h3>
+<h2 align="right">{{Project_Name}} - {{Project_ID}}</h2>
+<h1 align="center">NETWORK DIAGRAM</h1>
+
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |
+
+---
+
+## 1. Network Logic and Critical Path Overview
+
+**Network Diagramming Methodology:**
+[ Add details... ]
+
+**Critical Path Summary and Duration:**
+[ Add details... ]
+
+**Near-Critical Paths and Float Analysis:**
+[ Add details... ]
+
+---
+
+## 2. Precedence Relationships and Dependencies
+
+**Core Predecessor and Successor Chains:**
+[ Add details... ]
+
+**Lead and Lag Justifications:**
+[ Add details... ]
+
+---
+
+## 3. Network Diagram Visualization
+
+**Mermaid Diagram Syntax:**
+[ Add details... ]
+
+**Diagram Interpretation Guidelines:**
+[ Add details... ]
+
+---
+
+### Sign-off and Approvals
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| **Project Planner / Scheduler** | {{Scheduler_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Technical Lead** | {{Technical_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+---
+
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> NETWORK DIAGRAM | <strong>Ref:</strong> PMO-04.03.05 <br>
+  <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>

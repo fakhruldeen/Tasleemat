@@ -1,0 +1,106 @@
+<div class="deliverable-header-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-04.04.03</span>
+    <span class="badge badge-phase">04. Planning</span>
+    <span class="badge badge-type">Authoring & Governance Guide</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../../templates/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Template.md">📋 Blank Template</a>
+    <a class="nav-pill active" href="#">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../../examples/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Example.md">💡 Completed Example</a>
+    <a class="nav-pill" href="../../../ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_دليل.md">🇸🇦 النسخة العربية</a>
+  </div>
+</div>
+
+---
+
+---
+lang: en
+layout: default
+title: Cost Estimating Worksheet
+nav_order: 3
+---
+
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Cost Estimating Worksheet
+
+**Document Reference:** `PMO-04.04.03`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Cost Estimating Worksheet** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A computational artifact detailing line-by-line financial calculations across labor, hardware, software, and outside services.
+
+---
+
+### 2. Why?
+Provides mathematical transparency and defensible audit trails for all budgeted funds.
+
+---
+
+### 3. When?
+Utilized during cost planning to aggregate bottom-up work package expenses.
+
+---
+
+### 4. Who?
+Authored by Cost Estimator and Technical Leads, audited by Project Manager.
+
+---
+
+### Tailoring Tips
+*   Simplify for agile teams into sprint velocity capacity burn calculations.
+*   Provide full Bill of Quantities (BOQ) line items for heavy civil and infrastructure works.
+
+---
+
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Project Schedule (PMO-04.03.08)
+    *   Resource Requirements (PMO-04.06.02)
+*   **Optional / Contextual:**
+    *   Risk Register (PMO-04.08.02)
+    *   Procurement Strategy (PMO-04.09.02)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Cost Baseline (PMO-04.04.04)
+    *   Earned Value Analysis / EVA (PMO-06.05)
+    *   Variance Analysis (PMO-06.04)
+*   **Optional / Contextual:**
+    *   Cost Estimating Worksheet (PMO-04.04.03)
+    *   Procurement Budget Plan (PMO-04.09.01)
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Cost Estimating Worksheet**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Role Title and Headcount:** Specific resource role, staffing level, and number of full-time equivalents (FTE).
+*   **Hours Allocation and Hourly Rate:** Total planned working hours and authorized standard or contracted hourly billing rate.
+*   **Total Calculated Labor Cost:** Subtotal labor expenditure calculated from hours multiplied by hourly rate.
+*   **Material or Equipment Item Description:** Detailed description of physical supplies, hardware, server infrastructure, or licenses.
+*   **Unit Quantity and Unit Purchase Price:** Required quantity and current quoted unit price per item.
+*   **Total Calculated Materials Cost:** Subtotal materials expenditure calculated from quantity multiplied by unit price.
+*   **Contracted Service or Work Package:** External vendor scope of work, milestone deliverables, or consulting package.
+*   **Vendor Pricing Model and Contract Sum:** Fixed price, time-and-materials rate, or contracted service sum.
+*   **Grand Total Base Estimate:** Sum of all labor, materials, equipment, and subcontractor cost line items.
+*   **Worksheet Verification and Audit Sign-off:** Formal reconciliation verifying math accuracy and absence of duplicated cost items.
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_04_03_Cost_Estimating_Worksheet_Example.md](../../../../examples/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Example.md)
+
+</div>

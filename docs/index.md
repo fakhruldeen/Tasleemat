@@ -2,50 +2,97 @@
   <img src="img/logo.png" alt="Tasleemat Logo" width="340" />
 </p>
 
-# 📚 Tasleemat Knowledge Base & Governance Documentation
+# 📚 Tasleemat PMO Operating System & Documentation Portal
 **Version:** 2.0  
 **Standard Alignment:** PMI PMBOK® 6th, 7th & 8th Editions • NIST AI RMF • SDAIA AI Ethics • ISO 21500  
+**Total Artifacts:** 102 Bilingual Deliverables • 204 Form Bundles • 204 Reference Examples • 24 Master Governance Manuals
 
 ---
 
-## 🧭 Master Documentation Directory
+## ⚡ Quick Navigation Hub
 
-Welcome to the central documentation portal of **Tasleemat (تسليمات)**. Below is the curated index of practical guides, governance manuals, and integration frameworks designed to empower project practitioners, PMO directors, agile teams, and enterprise auditors.
+<div class="portal-card-grid">
+  <a class="portal-card" href="catalog/en/index.md">
+    <h4>📑 Master Deliverables Catalog</h4>
+    <p>Searchable matrix of all 102 project deliverables with direct links to Templates, Guides, and Examples.</p>
+  </a>
+
+  <a class="portal-card" href="templates/en/index.md">
+    <h4>📋 Standard Templates Library</h4>
+    <p>102 copy-ready, structured Markdown templates with Document Control tables and clear field schemas.</p>
+  </a>
+
+  <a class="portal-card" href="guides/en/index.md">
+    <h4>📖 Deliverable Authoring Guides</h4>
+    <p>102 step-by-step authoring manuals with RACI roles, inputs/outputs dependencies, and quality gates.</p>
+  </a>
+
+  <a class="portal-card" href="examples/en/index.md">
+    <h4>💡 Real-World Examples Showcase</h4>
+    <p>102 fully populated, realistic enterprise case study examples across all 8 lifecycle phases.</p>
+  </a>
+
+  <a class="portal-card" href="en/01_getting_started.md">
+    <h4>📚 Governance Manuals (12 Guides)</h4>
+    <p>Comprehensive PMO policy manuals, stage-gates, RACI matrix, AI governance, and agile integration.</p>
+  </a>
+
+  <a class="portal-card" href="LEXICON.md">
+    <h4>📖 Master Lexicon & Glossary</h4>
+    <p>Authoritative bilingual (English & Arabic) project management terminology and artifact dictionary.</p>
+  </a>
+</div>
+
+---
+
+## 🧭 Project Lifecycle & Stage-Gates Architecture
 
 ```mermaid
 flowchart TD
-    subgraph "Foundation & Onboarding"
-        D1["01. Getting Started"]
-        D2["02. Practitioner Usage Guide"]
-        D3["03. PMO Policy Manual"]
+    subgraph G0["Gate 0: Strategic Alignment"]
+        P00["00. Program & Portfolio"]
+        P01["01. Business & Value"]
     end
 
-    subgraph "Governance & Architecture"
-        D4["04. Stage-Gates Framework"]
-        D5["05. Tailoring Profiles & Sizing"]
-        D6["06. RACI Authority Matrix"]
-        D7["07. Document Dependencies DAG"]
+    subgraph G1["Gate 1: Project Charter"]
+        P02["02. Approach & Tailoring"]
+        P03["03. Initiating"]
     end
 
-    subgraph "Modern Delivery Frameworks"
-        D8["08. AI Governance Framework"]
-        D9["09. Agile & Hybrid Integration"]
+    subgraph G2["Gate 2: Baseline Approval"]
+        P04["04. Planning (12 Areas)"]
     end
 
-    subgraph "Support & Operations"
-        D10["10. FAQ & Troubleshooting"]
-        D11["11. Developer Tools & CI/CD"]
+    subgraph G3["Gate 3: Execution & Control"]
+        P05["05. Executing"]
+        P06["06. Monitoring & Controlling"]
     end
 
-    D1 --> D4
-    D4 --> D5
-    D5 --> D8
-    D5 --> D9
+    subgraph G4["Gate 4 & 5: Operational Handover & Closeout"]
+        P07["07. Closing"]
+    end
+
+    G0 --> G1 --> G2 --> G3 --> G4
 ```
 
 ---
 
-## 📑 Core Documentation Index
+## 🏛️ Browse by Lifecycle Phase
+
+| Phase # | Lifecycle Phase Name | Deliverables Count | Direct Links |
+| :---: | :--- | :---: | :---: |
+| **00** | [**Program & Portfolio Management**](templates/en/00_Program_and_Portfolio_Management/index.md) | 6 Artifacts | [📋 Templates](templates/en/00_Program_and_Portfolio_Management/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+| **01** | [**Business & Value Delivery**](templates/en/01_Business_and_Value_Delivery/index.md) | 4 Artifacts | [📋 Templates](templates/en/01_Business_and_Value_Delivery/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+| **02** | [**Project Approach & Tailoring**](templates/en/02_Project_Approach_and_Tailoring/index.md) | 6 Artifacts | [📋 Templates](templates/en/02_Project_Approach_and_Tailoring/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+| **03** | [**Initiating**](templates/en/03_Initiating/index.md) | 5 Artifacts | [📋 Templates](templates/en/03_Initiating/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+| **04** | [**Planning**](templates/en/04_Planning/index.md) | 47 Artifacts | [📋 Templates](templates/en/04_Planning/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+| **05** | [**Executing**](templates/en/05_Executing/index.md) | 12 Artifacts | [📋 Templates](templates/en/05_Executing/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+| **06** | [**Monitoring & Controlling**](templates/en/06_Monitoring_and_Controlling/index.md) | 12 Artifacts | [📋 Templates](templates/en/06_Monitoring_and_Controlling/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+| **07** | [**Closing**](templates/en/07_Closing/index.md) | 5 Artifacts | [📋 Templates](templates/en/07_Closing/index.md) • [📖 Guides](guides/en/index.md) • [💡 Examples](examples/en/index.md) |
+
+---
+
+## 📑 Master Governance Manuals (12 Systems Guides)
 
 | Guide # | Document Title | Language | Description & Key Value |
 | :---: | :--- | :---: | :--- |
@@ -67,8 +114,8 @@ flowchart TD
 
 ## 👤 Persona-Based Reading Pathways
 
-* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) $ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) $ightarrow$ [`02_usage_guide.md`](en/02_usage_guide.md).
-* **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) $ightarrow$ [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) $ightarrow$ [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
-* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) $ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md).
-* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md).
-* **For DevOps & Tool Admins:** Explore [`11_tools_and_automation.md`](en/11_tools_and_automation.md).
+* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [`02_usage_guide.md`](en/02_usage_guide.md) → [Templates Library](templates/en/index.md).
+* **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) → [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) → [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
+* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) → [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) → [Agile Backlog & Retrospective](templates/en/05_Executing/index.md).
+* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md) → [AI Governance Templates](templates/en/02_Project_Approach_and_Tailoring/index.md).
+* **For DevOps & Tool Admins:** Explore [`11_tools_and_automation.md`](en/11_tools_and_automation.md) → [`12_open_knowledge_framework.md`](en/12_open_knowledge_framework.md).
