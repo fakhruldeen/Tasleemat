@@ -45,7 +45,7 @@
 **Answer:** Refer to [`06_raci_authority_matrix.md`](06_raci_authority_matrix.md). The Project Manager is **Responsible (Author)**, while the Project Sponsor or Steering Committee is **Accountable (Sign-off Authority)**.
 
 #### Q6: How do we handle project changes during execution?
-**Answer:** Any deviation from the approved baseline (Scope, Schedule, Budget) exceeding threshold limits must go through [`PMO-05.03 Change Request`](../../forms/en/05_Executing/03_Change_Request/) and be logged in [`PMO-05.04 Change Log`](../../forms/en/05_Executing/04_Change_Log/) with formal Change Control Board (CCB) approval.
+**Answer:** Any deviation from the approved baseline (Scope, Schedule, Budget) exceeding threshold limits must go through [`PMO-05.03 Change Request`](../forms/en/05_Executing/05_03_Change_Request_Template.md) and be logged in [`PMO-05.04 Change Log`](../forms/en/05_Executing/05_04_Change_Log_Template.md) with formal Change Control Board (CCB) approval.
 
 ---
 
@@ -53,12 +53,12 @@
 
 ### Problem 1: "The project team complains about too much paperwork."
 - **Root Cause:** The PM selected Tier 1 (Enterprise) forms for a small Tier 3 initiative.
-- **Solution:** Re-run the project sizing assessment in [`05_tailoring_profiles.md`](05_tailoring_profiles.md). Strip out non-mandatory forms immediately. Consolidate status tracking into [`06_01 Project Status Report`](../../forms/en/06_Monitoring_and_Controlling/01_Project_Status_Report/).
+- **Solution:** Re-run the project sizing assessment in [`05_tailoring_profiles.md`](05_tailoring_profiles.md). Strip out non-mandatory forms immediately. Consolidate status tracking into [`06_01 Project Status Report`](../forms/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Template.md).
 
 ### Problem 2: "Earned Value Analysis numbers (CPI/SPI) do not match the status report."
 - **Root Cause:** Discrepancy between Planned Value (PV) in the cost baseline and Actual Cost (AC) from accounting ledgers.
-- **Solution:** Ensure that Earned Value (EV) is calculated strictly against completed WBS work packages as defined in [`PMO-04.02.07 WBS Dictionary`](../../forms/en/04_Planning/02_Scope/07_WBS_Dictionary/).
+- **Solution:** Ensure that Earned Value (EV) is calculated strictly against completed WBS work packages as defined in [`PMO-04.02.07 WBS Dictionary`](../forms/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Template.md).
 
 ### Problem 3: "Our AI model's accuracy dropped in production after deployment."
 - **Root Cause:** Data drift or undetected distribution shifts in inference inputs.
-- **Solution:** Check [`PMO-02.05 AI Model Card`](../../forms/en/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet/) for baseline performance slices. Execute remediation protocols specified in [`PMO-02.02 AI Governance Plan`](../../forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/).
+- **Solution:** Check [`PMO-02.05 AI Model Card`](../forms/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.md) for baseline performance slices. Execute remediation protocols specified in [`PMO-02.02 AI Governance Plan`](../forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.md).

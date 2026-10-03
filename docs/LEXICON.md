@@ -12,8 +12,8 @@
 ## 1. Directory & File Structure (أين تجد الملفات)
 
 The repository is organized into a mirrored bilingual hierarchy:
-- **English Forms (`en`):** Located in [`forms/en/`](../forms/en/)
-- **Arabic Standardized Forms (`ar`):** Located in [`forms/ar/`](../forms/ar/)
+- **English Forms (`en`):** Located in [`forms/en/`](forms/en/index.md)
+- **Arabic Standardized Forms (`ar`):** Located in [`forms/ar/`](forms/ar/index.md)
 
 ### Form Bundle Structure (هيكل حزمة النموذج)
 Each form directory contains exactly **5 synchronized files**:

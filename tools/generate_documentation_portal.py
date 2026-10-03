@@ -473,7 +473,10 @@ def build_portal():
     # 6. Update Master Governance Manuals with Language Switch Bar
     update_governance_manuals_lang_bars()
 
-    # 7. Update mkdocs.yml navigation
+    # 7. Audit and repair all internal markdown links across all docs/ files
+    fix_all_internal_links(deliverables)
+
+    # 8. Update mkdocs.yml navigation
     update_mkdocs_config(deliverables)
 
     print("Documentation portal successfully generated!")
@@ -951,6 +954,75 @@ def update_governance_manuals_lang_bars():
 
 """
             ar_f.write_text(bar_ar + ar_content.lstrip(), encoding="utf-8")
+
+def fix_all_internal_links(deliverables):
+    """Audit and automatically resolve all relative markdown links across docs/ to guarantee zero 404s."""
+    en_tpls = {re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name).group(1): p for p in (DOCS_DIR / "forms" / "en").rglob("*_Template.md") if re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name)}
+    ar_tpls = {re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name).group(1): p for p in (DOCS_DIR / "forms" / "ar").rglob("*_قالب.md") if re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name)}
+
+    en_guides = {re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name).group(1): p for p in (DOCS_DIR / "guides" / "en").rglob("*_Guide.md") if re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name)}
+    ar_guides = {re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name).group(1): p for p in (DOCS_DIR / "guides" / "ar").rglob("*_دليل.md") if re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name)}
+
+    en_exs = {re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name).group(1): p for p in (DOCS_DIR / "examples" / "en").rglob("*_Example.md") if re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name)}
+    ar_exs = {re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name).group(1): p for p in (DOCS_DIR / "examples" / "ar").rglob("*_مثال.md") if re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", p.name)}
+
+    en_manuals = {f"{i:02d}": list((DOCS_DIR / "en").glob(f"{i:02d}_*.md"))[0] for i in range(1, 13) if list((DOCS_DIR / "en").glob(f"{i:02d}_*.md"))}
+    ar_manuals = {f"{i:02d}": list((DOCS_DIR / "ar").glob(f"{i:02d}_*.md"))[0] for i in range(1, 13) if list((DOCS_DIR / "ar").glob(f"{i:02d}_*.md"))}
+
+    link_pat = re.compile(r"\[((?:[^\[\]]|\[[^\[\]]*\])*)\]\(((?:[^()]+|\([^()]*\))+)\)")
+
+    def fix_link(md_file, match):
+        text = match.group(1)
+        url = match.group(2).strip()
+
+        if url.startswith(("http://", "https://", "mailto:", "#")):
+            return match.group(0)
+
+        clean_url = url.split("#")[0].split("?")[0].strip()
+        fragment = ("#" + url.split("#")[1]) if "#" in url else ""
+
+        target = (md_file.parent / clean_url).resolve()
+        if target.exists() and target.is_file():
+            return match.group(0)
+
+        is_ar = "/ar/" in str(md_file) or "README_AR" in str(md_file) or "_قالب" in str(md_file) or "_دليل" in str(md_file) or "_مثال" in str(md_file)
+
+        # 1. Manuals
+        m_man = re.search(r"(\d{2})_[a-z_]+\.md", clean_url)
+        if m_man and m_man.group(1) in en_manuals:
+            num = m_man.group(1)
+            target_man = ar_manuals[num] if is_ar else en_manuals[num]
+            rel = os.path.relpath(target_man, md_file.parent)
+            return f"[{text}]({rel}{fragment})"
+
+        # 2. Deliverable code
+        m_code = re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", clean_url) or re.search(r"(\d{2}_\d{2}(?:_\d{2})?)", text) or re.search(r"PMO-(\d{2}\.\d{2}(?:\.\d{2})?)", text)
+        if m_code:
+            raw_code = m_code.group(1).replace(".", "_")
+            if "guide" in clean_url.lower() or "دليل" in clean_url or "دليل" in text or "Guide" in text:
+                target_del = ar_guides.get(raw_code) if is_ar else en_guides.get(raw_code)
+            elif "example" in clean_url.lower() or "مثال" in clean_url or "مثال" in text or "Example" in text:
+                target_del = ar_exs.get(raw_code) if is_ar else en_exs.get(raw_code)
+            else:
+                target_del = ar_tpls.get(raw_code) if is_ar else en_tpls.get(raw_code)
+
+            if target_del:
+                rel = os.path.relpath(target_del, md_file.parent)
+                return f"[{text}]({rel}{fragment})"
+
+        # 3. Root forms or docs index
+        if clean_url in ["../forms/en/", "../forms/ar/", "forms/en/", "forms/ar/", "../../forms/en/", "../../forms/ar/"]:
+            target_f = (DOCS_DIR / "forms" / ("ar" if "ar" in clean_url else "en") / "index.md")
+            rel = os.path.relpath(target_f, md_file.parent)
+            return f"[{text}]({rel})"
+
+        return match.group(0)
+
+    for md_file in sorted(DOCS_DIR.rglob("*.md")):
+        content = md_file.read_text(encoding="utf-8")
+        new_content = link_pat.sub(lambda m: fix_link(md_file, m), content)
+        if new_content != content:
+            md_file.write_text(new_content, encoding="utf-8")
 
 def build_master_catalogs(deliverables):
     """Build comprehensive interactive master catalog pages with live Explorer widget."""

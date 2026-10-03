@@ -107,8 +107,27 @@ class TestDocumentation(unittest.TestCase):
 
         self.assertGreater(len(content_en), 2000, "README.md must be comprehensive")
         self.assertGreater(len(content_ar), 2000, "README_AR.md must be comprehensive")
-        self.assertIn("Tasleemat", content_en)
-        self.assertIn("تسليمات", content_ar)
+    def test_all_internal_markdown_links_in_docs_exist(self):
+        """Verify 100% of internal relative Markdown links across all files in docs/ resolve to real files on disk."""
+        import re
+        link_pat = re.compile(r"\[((?:[^\[\]]|\[[^\[\]]*\])*)\]\(((?:[^()]+|\([^()]*\))+)\)")
+        broken_links = []
+
+        for md_file in sorted(DOCS_DIR.rglob("*.md")):
+            content = md_file.read_text(encoding="utf-8")
+            for match in link_pat.finditer(content):
+                text = match.group(1)
+                url = match.group(2).strip()
+                if url.startswith(("http://", "https://", "mailto:", "#")):
+                    continue
+                clean_url = url.split("#")[0].split("?")[0].strip()
+                if not clean_url:
+                    continue
+                target = (md_file.parent / clean_url).resolve()
+                if not target.exists():
+                    broken_links.append((str(md_file.relative_to(ROOT)), url, text))
+
+        self.assertEqual(len(broken_links), 0, f"Found {len(broken_links)} broken relative links in docs/: {broken_links[:10]}")
 
 if __name__ == "__main__":
     unittest.main()

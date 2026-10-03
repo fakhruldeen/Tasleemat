@@ -42,18 +42,18 @@ flowchart LR
 2. **Review Stage-Gate Requirements:**
    - Read [`04_stage_gates_and_governance.md`](04_stage_gates_and_governance.md) to understand the 6 governance milestones (Gate 0 to Gate 5).
 3. **Draft the Strategic Foundation:**
-   - If starting at portfolio level: Complete [`00_01 Portfolio Roadmap`](../../forms/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/) and [`00_06 OKR Alignment`](../../forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix/).
-   - Complete [`01_01 Business Case`](../../forms/en/01_Business_and_Value_Delivery/01_Business_Case/) and [`03_01 Project Charter`](../../forms/en/03_Initiating/01_Project_Charter/).
+   - If starting at portfolio level: Complete [`00_01 Portfolio Roadmap`](../forms/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Template.md) and [`00_06 OKR Alignment`](../forms/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.md).
+   - Complete [`01_01 Business Case`](../forms/en/01_Business_and_Value_Delivery/01_01_Business_Case_Template.md) and [`03_01 Project Charter`](../forms/en/03_Initiating/03_01_Project_Charter_Template.md).
 
 ---
 
 ### Phase 2: Day 8 to Day 21 — Planning & Baseline Authorization
 1. **Establish the Triple Constraint Baseline:**
-   - **Scope:** Complete [`04_02_05 Scope Statement`](../../forms/en/04_Planning/02_Scope/05_Project_Scope_Statement/) and [`04_02_06 WBS`](../../forms/en/04_Planning/02_Scope/06_Work_Breakdown_Structure/).
-   - **Schedule:** Complete [`04_03_08 Project Schedule`](../../forms/en/04_Planning/03_Schedule/08_Project_Schedule/).
-   - **Cost:** Complete [`04_04_04 Cost Baseline`](../../forms/en/04_Planning/04_Cost/04_Cost_Baseline/).
+   - **Scope:** Complete [`04_02_05 Scope Statement`](../forms/en/04_Planning/02_Scope/04_02_05_Project_Scope_Statement_Template.md) and [`04_02_06 WBS`](../forms/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Template.md).
+   - **Schedule:** Complete [`04_03_08 Project Schedule`](../forms/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Template.md).
+   - **Cost:** Complete [`04_04_04 Cost Baseline`](../forms/en/04_Planning/04_Cost/04_04_04_Cost_Baseline_Template.md).
 2. **Assign Governance Roles & RACI:**
-   - Consult [`06_raci_authority_matrix.md`](06_raci_authority_matrix.md) and fill [`04_06_04 RACI Matrix`](../../forms/en/04_Planning/06_Resource/04_Responsibility_Assignment_Matrix/).
+   - Consult [`06_raci_authority_matrix.md`](06_raci_authority_matrix.md) and fill [`04_06_04 RACI Matrix`](../forms/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Template.md).
 3. **Pass Gate 2 (Integrated Baseline Review):**
    - Present the integrated baseline to the PMO and Sponsor for formal sign-off.
 
@@ -61,16 +61,16 @@ flowchart LR
 
 ### Phase 3: Day 22 Onward — Execution, Control, & Stage Gates
 1. **Maintain Live Operational Logs:**
-   - Track issues in [`05_01 Issue Log`](../../forms/en/05_Executing/01_Issue_Log/).
-   - Log decisions in [`05_02 Decision Log`](../../forms/en/05_Executing/02_Decision_Log/).
-   - Process change requests through [`05_03 Change Request`](../../forms/en/05_Executing/03_Change_Request/) and [`05_04 Change Log`](../../forms/en/05_Executing/04_Change_Log/).
+   - Track issues in [`05_01 Issue Log`](../forms/en/05_Executing/05_01_Issue_Log_Template.md).
+   - Log decisions in [`05_02 Decision Log`](../forms/en/05_Executing/05_02_Decision_Log_Template.md).
+   - Process change requests through [`05_03 Change Request`](../forms/en/05_Executing/05_03_Change_Request_Template.md) and [`05_04 Change Log`](../forms/en/05_Executing/05_04_Change_Log_Template.md).
 2. **Measure Value & Variances:**
-   - Run weekly or bi-weekly [`06_01 Project Status Report`](../../forms/en/06_Monitoring_and_Controlling/01_Project_Status_Report/).
-   - Calculate EVM metrics via [`06_05 Earned Value Analysis`](../../forms/en/06_Monitoring_and_Controlling/05_Earned_Value_Analysis/).
+   - Run weekly or bi-weekly [`06_01 Project Status Report`](../forms/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Template.md).
+   - Calculate EVM metrics via [`06_05 Earned Value Analysis`](../forms/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Template.md).
 3. **Pass Gate 4 & Gate 5 (Acceptance & Closure):**
-   - Secure customer signoff using [`06_08 Product Acceptance Form`](../../forms/en/06_Monitoring_and_Controlling/08_Product_Acceptance_Form/).
-   - Handover to ops via [`07_04 Transition Checklist`](../../forms/en/07_Closing/04_Transition_to_Operations_Checklist/).
-   - Archive organizational assets using [`07_03 Closeout Report`](../../forms/en/07_Closing/03_Project_or_Phase_Closeout/) and [`07_01 Lessons Learned`](../../forms/en/07_Closing/01_Lessons_Learned_Summary/).
+   - Secure customer signoff using [`06_08 Product Acceptance Form`](../forms/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Template.md).
+   - Handover to ops via [`07_04 Transition Checklist`](../forms/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.md).
+   - Archive organizational assets using [`07_03 Closeout Report`](../forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.md) and [`07_01 Lessons Learned`](../forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.md).
 
 ---
 

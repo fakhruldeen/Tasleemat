@@ -91,4 +91,4 @@ flowchart TD
 Deploying an AI model is not the end of the project—it is the beginning of continuous calibration:
 1. **Model Drift Monitoring:** Daily telemetry comparing inference feature distributions against training baselines (PSI / KL divergence).
 2. **Fairness Drift Audits:** Monthly evaluation across demographic slices to detect emerging bias.
-3. **Prompt Version Rollback:** Immediate rollback capability via [`05_09 Prompt Library Log`](../../forms/en/05_Executing/09_Prompt_Library_Log/) if unexpected hallucinations occur.
+3. **Prompt Version Rollback:** Immediate rollback capability via [`05_09 Prompt Library Log`](../forms/en/05_Executing/05_09_Prompt_Library_Log_Template.md) if unexpected hallucinations occur.

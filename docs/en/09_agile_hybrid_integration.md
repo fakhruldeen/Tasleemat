@@ -50,20 +50,20 @@ flowchart TD
 
 | Agile Ceremony / Activity | Tasleemat Deliverable | Role Responsible | Frequency |
 | :--- | :--- | :--- | :--- |
-| **Discovery & Inception** | [`PMO-04.02.09 User Story Mapping Canvas`](../../forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/) | Product Owner | Project Start / Major Releases |
-| **Quality Criteria Agreement** | [`PMO-04.05.03 Definition of Ready & Done`](../../forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/) | Team & Scrum Master | Inception & Sprint 0 |
-| **Backlog Refinement** | [`PMO-04.02.08 Product Backlog`](../../forms/en/04_Planning/02_Scope/08_Product_Backlog/) | Product Owner | Weekly / Continuous |
-| **Sprint Planning** | [`PMO-04.03.10 Sprint Planning Log`](../../forms/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/) | Scrum Master & Dev Team | Start of Sprint (Bi-weekly) |
-| **Release Coordination** | [`PMO-04.03.09 Release Plan`](../../forms/en/04_Planning/03_Schedule/09_Release_Plan/) | Product Owner / Release Mgr | Quarterly / Per Release |
-| **Flow & WIP Monitoring** | [`PMO-06.12 Flow Metrics & Value Stream`](../../forms/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream/) | Agile Coach / PMO | Continuous / Sprint Review |
-| **Sprint Retrospective** | [`PMO-05.08 Retrospective`](../../forms/en/05_Executing/08_Retrospective/) | Team & Scrum Master | End of Sprint |
-| **Team Psychological Safety** | [`PMO-04.06.06 Psychological Safety Index`](../../forms/en/04_Planning/06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index/) | Agile Coach / HR Partner | Monthly / Quarterly |
+| **Discovery & Inception** | [`PMO-04.02.09 User Story Mapping Canvas`](../forms/en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Template.md) | Product Owner | Project Start / Major Releases |
+| **Quality Criteria Agreement** | [`PMO-04.05.03 Definition of Ready & Done`](../forms/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Template.md) | Team & Scrum Master | Inception & Sprint 0 |
+| **Backlog Refinement** | [`PMO-04.02.08 Product Backlog`](../forms/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.md) | Product Owner | Weekly / Continuous |
+| **Sprint Planning** | [`PMO-04.03.10 Sprint Planning Log`](../forms/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.md) | Scrum Master & Dev Team | Start of Sprint (Bi-weekly) |
+| **Release Coordination** | [`PMO-04.03.09 Release Plan`](../forms/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Template.md) | Product Owner / Release Mgr | Quarterly / Per Release |
+| **Flow & WIP Monitoring** | [`PMO-06.12 Flow Metrics & Value Stream`](../forms/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.md) | Agile Coach / PMO | Continuous / Sprint Review |
+| **Sprint Retrospective** | [`PMO-05.08 Retrospective`](../forms/en/05_Executing/05_08_Retrospective_Template.md) | Team & Scrum Master | End of Sprint |
+| **Team Psychological Safety** | [`PMO-04.06.06 Psychological Safety Index`](../forms/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Template.md) | Agile Coach / HR Partner | Monthly / Quarterly |
 
 ---
 
 ## 📊 Agile Flow Metrics & Governance KPIs
 
-Rather than tracking task hours, high-performing agile teams measure value throughput using [`PMO-06.12`](../../forms/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream/):
+Rather than tracking task hours, high-performing agile teams measure value throughput using [`PMO-06.12`](../forms/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.md):
 
 1. **Cycle Time:** The elapsed calendar time from when work starts on a user story to when it is delivered to production.
 2. **Throughput:** The number of completed user stories or story points delivered per sprint.
