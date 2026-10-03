@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/01_Business_and_Value_Delivery/index.md">🇬🇧 Switch to English Templates (قوالب إنجليزية)</a>
+</div>
+
 # 💎 01. الأعمال وتسليم القيمة (القوالب)
 دراسات الجدوى الاقتصادية، خطط إدارة المنافع، سجلات تحقيق القيمة، وتحليل الفجوات.
 

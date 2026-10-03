@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_02_سجل_القرارات_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-05.02</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/05_Executing/05_02_Decision_Log_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/05_Executing/05_02_Decision_Log_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/05_التنفيذ/05_02_سجل_القرارات_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_02_سجل_القرارات_قالب.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

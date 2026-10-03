@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../en/09_agile_hybrid_integration.md">🇬🇧 Switch to English Version (النسخة الإنجليزية)</a>
+</div>
+
 <p align="center">
   <img src="../img/logo-ar.png" alt="شعار تسليمات" width="320" />
 </p>

@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../ar/index.md">🇸🇦 الانتقال للأمثلة الواقعية بالعربية (Arabic Examples)</a>
+</div>
+
 # 💡 Reference Examples & Case Studies Showcase (English)
 **102 fully populated, realistic enterprise case study examples** showcasing best practice completion across all lifecycle phases.
 

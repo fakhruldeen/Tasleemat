@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates)</a>
+</div>
+
 # 🏁 07. Closing (Templates)
 Formal transition to operations, contract closure, final lessons learned, and post-implementation review.
 

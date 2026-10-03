@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../ar/11_tools_and_automation.md">🇸🇦 الانتقال للنسخة العربية (Arabic Version)</a>
+</div>
+
 <p align="center">
   <img src="../img/logo.png" alt="Tasleemat Logo" width="320" />
 </p>

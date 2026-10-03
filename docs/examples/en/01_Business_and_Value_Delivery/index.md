@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/01_الأعمال_وتسليم_القيمة/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples)</a>
+</div>
+
 # 💎 01. Business & Value Delivery (Reference Examples)
 Business justification, benefit realization planning, value tracking, and gap analysis.
 

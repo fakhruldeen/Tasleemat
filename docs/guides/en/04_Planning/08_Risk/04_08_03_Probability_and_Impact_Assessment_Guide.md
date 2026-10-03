@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-04.08.03</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../../templates/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Template.md">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../../ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_دليل.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_دليل.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

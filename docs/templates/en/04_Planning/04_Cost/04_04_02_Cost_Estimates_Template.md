@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-04.04.02</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="../../../../guides/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../../ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_قالب.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

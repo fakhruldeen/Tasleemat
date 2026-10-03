@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples)</a>
+</div>
+
 # ⚖️ 02. Project Approach & Tailoring (Reference Examples)
 Tailoring strategy, governance tiers, AI ethics, model cards, and agile/hybrid adoption.
 

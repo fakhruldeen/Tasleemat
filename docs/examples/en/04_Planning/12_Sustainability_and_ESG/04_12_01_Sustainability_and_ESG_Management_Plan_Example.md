@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-04.12.01</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../../templates/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.md">📋 Blank Template</a>
     <a class="nav-pill" href="../../../../guides/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill" href="../../../ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

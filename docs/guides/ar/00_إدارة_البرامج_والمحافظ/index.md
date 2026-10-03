@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/00_Program_and_Portfolio_Management/index.md">🇬🇧 Switch to English Guides (أدلة إنجليزية)</a>
+</div>
+
 # 🏛️ 00. إدارة البرامج والمحافظ (الأدلة الإرشادية)
 المواءمة الاستراتيجية، توازن المحفظة، إدارة الاعتماديات بين المشاريع، وتقييم نضج مكتب إدارة المشاريع.
 

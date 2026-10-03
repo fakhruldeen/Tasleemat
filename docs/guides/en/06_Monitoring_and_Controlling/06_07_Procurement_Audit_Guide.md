@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-06.07</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../templates/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Template.md">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_دليل.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_دليل.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

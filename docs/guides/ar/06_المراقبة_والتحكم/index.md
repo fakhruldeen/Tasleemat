@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/06_Monitoring_and_Controlling/index.md">🇬🇧 Switch to English Guides (أدلة إنجليزية)</a>
+</div>
+
 # 📊 06. المراقبة والتحكم (الأدلة الإرشادية)
 تقارير الأداء، تحليل القيمة المكتسبة (EVA)، مراقبة التباين، وضمان الجودة واختبارات القبول.
 

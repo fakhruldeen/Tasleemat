@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates)</a>
+</div>
+
 # 🏛️ 00. Program & Portfolio Management (Templates)
 Strategic alignment, portfolio balancing, multi-project dependencies, and PMO maturity.
 

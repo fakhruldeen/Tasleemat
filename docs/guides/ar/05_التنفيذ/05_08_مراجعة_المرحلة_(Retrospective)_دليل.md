@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/05_Executing/05_08_Retrospective_Guide.md">🇬🇧 Switch to English Guide (النسخة الإنجليزية)</a>
+</div>
+
 <div class="deliverable-header-card rtl-card" dir="rtl">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-05.08</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../templates/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_قالب.md">📋 القالب الفارغ</a>
     <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
     <a class="nav-pill" href="../../../examples/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_مثال.md">💡 مثال واقعي مكتمل</a>
-    <a class="nav-pill" href="../../en/05_Executing/05_08_Retrospective_Guide.md">🇬🇧 English Version</a>
+    <a class="nav-pill lang-pill" href="../../en/05_Executing/05_08_Retrospective_Guide.md">🇬🇧 English Version</a>
   </div>
 </div>
 

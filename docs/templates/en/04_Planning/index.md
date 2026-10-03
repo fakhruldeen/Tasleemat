@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.md">🇸🇦 الانتقال لقوالب المرحلة بالعربية (Arabic Templates)</a>
+</div>
+
 # 📐 04. Planning (Templates)
 Comprehensive baselines across Scope, Schedule, Cost, Quality, Resources, Risk, and Procurement.
 

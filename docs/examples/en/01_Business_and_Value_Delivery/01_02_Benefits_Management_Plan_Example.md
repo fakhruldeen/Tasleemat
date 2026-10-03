@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-01.02</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../templates/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Template.md">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_مثال.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

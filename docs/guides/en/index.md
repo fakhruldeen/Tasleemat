@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../ar/index.md">🇸🇦 الانتقال لأدلة النماذج بالعربية (Arabic Guides)</a>
+</div>
+
 # 📖 Deliverable Authoring & Governance Guides (English)
 **Step-by-step instructions, RACI authority assignments, required inputs, and stage-gate acceptance criteria for all 102 deliverables.**
 

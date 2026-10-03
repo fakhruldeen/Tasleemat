@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-04.03.10</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="../../../../guides/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-06.09</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../templates/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Template.md">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_مثال.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

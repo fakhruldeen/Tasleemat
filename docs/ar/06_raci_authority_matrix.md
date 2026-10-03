@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../en/06_raci_authority_matrix.md">🇬🇧 Switch to English Version (النسخة الإنجليزية)</a>
+</div>
+
 <p align="center">
   <img src="docs/img/logo-ar.png" alt="شعار حزمة أدوات تسليمات لإدارة المشاريع" width="280">
 </p>

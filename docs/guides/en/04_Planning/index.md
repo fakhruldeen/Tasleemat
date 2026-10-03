@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/04_التخطيط/index.md">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides)</a>
+</div>
+
 # 📐 04. Planning (Authoring Guides)
 Comprehensive baselines across Scope, Schedule, Cost, Quality, Resources, Risk, and Procurement.
 

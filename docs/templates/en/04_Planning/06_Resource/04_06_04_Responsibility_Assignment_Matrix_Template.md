@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../../ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-04.06.04</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="../../../../guides/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../../examples/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../../ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../../ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_قالب.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

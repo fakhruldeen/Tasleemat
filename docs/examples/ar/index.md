@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../en/index.md">🇬🇧 Switch to English Examples (أمثلة إنجليزية)</a>
+</div>
+
 # 💡 معرض الأمثلة الواقعية ودراسات الحالة (بالعربية)
 **102 مثال واقعي مكتمل ومعتمد** يغطي دراسات حالة تطبيقية نموذجية لكافة مخرجات دورة حياة المشروع.
 

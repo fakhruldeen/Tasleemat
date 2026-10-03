@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../en/index.md">🇬🇧 Switch to English Templates (قوالب إنجليزية)</a>
+</div>
+
 # 📋 مكتبة قوالب ونماذج تسليمات (بالعربية)
 **قوالب عمل قياسية جاهزة للاستخدام بصيغة Markdown** متوافقة مع معايير معهد إدارة المشاريع PMI PMBOK®.
 

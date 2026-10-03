@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/00_إدارة_البرامج_والمحافظ/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples)</a>
+</div>
+
 # 🏛️ 00. Program & Portfolio Management (Reference Examples)
 Strategic alignment, portfolio balancing, multi-project dependencies, and PMO maturity.
 

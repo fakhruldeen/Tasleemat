@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples)</a>
+</div>
+
 # 🏁 07. Closing (Reference Examples)
 Formal transition to operations, contract closure, final lessons learned, and post-implementation review.
 

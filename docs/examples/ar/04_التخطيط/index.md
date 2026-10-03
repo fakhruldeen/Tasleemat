@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/04_Planning/index.md">🇬🇧 Switch to English Examples (أمثلة إنجليزية)</a>
+</div>
+
 # 📐 04. التخطيط (الأمثلة الواقعية)
 الخطوط المرجعية الشاملة للنطاق، الجدول الزمني، التكلفة، الجودة، الموارد، المخاطر، والمشتريات.
 

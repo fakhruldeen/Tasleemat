@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/02_Project_Approach_and_Tailoring/index.md">🇬🇧 Switch to English Templates (قوالب إنجليزية)</a>
+</div>
+
 # ⚖️ 02. منهجية المشروع وتخصيصه (القوالب)
 استراتيجية التخصيص، مستويات الحوكمة، أخلاقيات الذكاء الاصطناعي، وبطاقات النماذج.
 

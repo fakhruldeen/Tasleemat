@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/03_Initiating/index.md">🇬🇧 Switch to English Examples (أمثلة إنجليزية)</a>
+</div>
+
 # 🚀 03. البدء (الأمثلة الواقعية)
 الترخيص الرسمي للمشروع، رؤية المنتج، سجل الافتراضات الأولية، وتحديد المعنيين.
 

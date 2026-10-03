@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/03_البدء/index.md">🇸🇦 الانتقال لأمثلة المرحلة بالعربية (Arabic Examples)</a>
+</div>
+
 # 🚀 03. Initiating (Reference Examples)
 Formal authorization, product vision, initial assumptions, and stakeholder identification.
 

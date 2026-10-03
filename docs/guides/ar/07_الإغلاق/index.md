@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/07_Closing/index.md">🇬🇧 Switch to English Guides (أدلة إنجليزية)</a>
+</div>
+
 # 🏁 07. الإغلاق (الأدلة الإرشادية)
 الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ.
 

@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-06.08</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../templates/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Template.md">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_مثال.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

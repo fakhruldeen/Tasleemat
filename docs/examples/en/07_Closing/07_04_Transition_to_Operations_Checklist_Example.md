@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_مثال.md">🇸🇦 الانتقال للمثال بالعربية (Arabic Example)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-07.04</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../templates/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.md">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/07_Closing/07_04_Transition_to_Operations_Checklist_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill active" href="#">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_مثال.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_مثال.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../en/index.md">🇬🇧 Switch to English Guides (أدلة إنجليزية)</a>
+</div>
+
 # 📖 أدلة إعداد وتعبئة النماذج (بالعربية)
 **إرشادات خطوة بخطوة، مصفوفة الصلاحيات RACI، المدخلات والمخرجات المطلوبة، ومعايير القبول والاعتماد.**
 

@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-02.02</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_قالب.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

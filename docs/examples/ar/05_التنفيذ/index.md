@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/05_Executing/index.md">🇬🇧 Switch to English Examples (أمثلة إنجليزية)</a>
+</div>
+
 # ⚡ 05. التنفيذ (الأمثلة الواقعية)
 توجيه وإدارة أعمال المشروع، سجل القضايا، سجل القرارات، طلبات التغيير، وأداء الفريق.
 

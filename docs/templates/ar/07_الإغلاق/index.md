@@ -1,3 +1,8 @@
+<div class="lang-switch-bar" dir="rtl">
+  <span>🌐 اللغة / Language:</span>
+  <a class="lang-switch-btn" href="../../en/07_Closing/index.md">🇬🇧 Switch to English Templates (قوالب إنجليزية)</a>
+</div>
+
 # 🏁 07. الإغلاق (القوالب)
 الانتقال الرسمي للعمليات التشغيلية، إغلاق العقود، خلاصة الدروس المستفادة، ومراجعة ما بعد التنفيذ.
 

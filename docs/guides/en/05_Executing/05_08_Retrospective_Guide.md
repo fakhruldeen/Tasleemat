@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.md">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-05.08</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill" href="../../../templates/en/05_Executing/05_08_Retrospective_Template.md">📋 Blank Template</a>
     <a class="nav-pill active" href="#">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/05_Executing/05_08_Retrospective_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 

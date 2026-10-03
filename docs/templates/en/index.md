@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../ar/index.md">🇸🇦 الانتقال لفهرس القوالب بالعربية (Arabic Templates)</a>
+</div>
+
 # 📋 Tasleemat Templates Library (English)
 **Standardized, Copy-Ready Markdown Deliverable Templates** aligned with PMI PMBOK® 6th, 7th & 8th Editions.
 

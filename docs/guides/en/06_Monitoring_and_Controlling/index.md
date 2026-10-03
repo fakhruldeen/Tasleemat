@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/06_المراقبة_والتحكم/index.md">🇸🇦 الانتقال لأدلة المرحلة بالعربية (Arabic Guides)</a>
+</div>
+
 # 📊 06. Monitoring & Controlling (Authoring Guides)
 Status reporting, Earned Value Analysis (EVA), variance tracking, and quality acceptance.
 

@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Language / اللغة:</span>
+  <a class="lang-switch-btn" href="../ar/05_tailoring_profiles.md">🇸🇦 الانتقال للنسخة العربية (Arabic Version)</a>
+</div>
+
 <p align="center">
   <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
 </p>

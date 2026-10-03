@@ -1,3 +1,8 @@
+<div class="lang-switch-bar">
+  <span>🌐 Dual Language / ثنائي اللغة:</span>
+  <a class="lang-switch-btn" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.md">🇸🇦 الانتقال للقالب بالعربية (Arabic Template)</a>
+</div>
+
 <div class="deliverable-header-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-05.12</span>
@@ -8,7 +13,7 @@
     <a class="nav-pill active" href="#">📋 Blank Template</a>
     <a class="nav-pill" href="../../../guides/en/05_Executing/05_12_Team_Onboarding_Checklist_Guide.md">📖 Authoring Guide</a>
     <a class="nav-pill" href="../../../examples/en/05_Executing/05_12_Team_Onboarding_Checklist_Example.md">💡 Completed Example</a>
-    <a class="nav-pill" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.md">🇸🇦 النسخة العربية</a>
+    <a class="nav-pill lang-pill" href="../../ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.md">🇸🇦 النسخة العربية</a>
   </div>
 </div>
 
