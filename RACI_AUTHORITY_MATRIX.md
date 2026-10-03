@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+</p>
+
 # 👥 Tasleemat Master Governance RACI & Signature Authority Matrix
 **Document Reference:** `TASLEEMAT-GOVERNANCE-RACI-v2.0`  
 **Scope:** Complete RACI authority framework across all 102 forms  

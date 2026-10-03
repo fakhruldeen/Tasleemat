@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="300">
+</p>
+
 # 🏆 Tasleemat Gold-Standard Reference Examples
 **Directory:** `examples/`  
 **Coverage:** 102 Bilingual Forms (204 Completed Reference Artifacts)  

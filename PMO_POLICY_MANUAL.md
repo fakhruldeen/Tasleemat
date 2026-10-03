@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+</p>
+
 # 🏛️ Tasleemat Enterprise PMO Policy Manual & Standard Operating Procedures
 **Document Reference:** `PMO-POL-MANUAL-v2.0`  
 **Standard:** PMI PMBOK® Guide 6th, 7th & 8th Edition Standard  

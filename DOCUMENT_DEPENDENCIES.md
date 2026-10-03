@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+</p>
+
 # 🔗 Tasleemat Document Dependencies & Lifecycle Architecture
 **Document Reference:** `TASLEEMAT-DOC-DEPENDENCIES-v2.0`  
 **Standard:** PMI PMBOK® 6th, 7th & 8th Edition Standard  

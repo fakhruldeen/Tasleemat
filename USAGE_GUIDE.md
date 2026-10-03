@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+</p>
+
 # 📘 Tasleemat PMO Toolkit — Comprehensive Practitioner & Automation Guide
 
 Welcome to the definitive practitioner and automation guide for the **Tasleemat PMO Toolkit**. Whether you are a project manager looking to standardize physical deliverables, a PMO director establishing enterprise governance, or an AI engineer building autonomous project management agents, this guide covers every workflow end-to-end.

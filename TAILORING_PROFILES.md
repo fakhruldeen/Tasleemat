@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+</p>
+
 # ⚖️ Tasleemat Project Sizing & Tailoring Profiles Guide
 **Document Reference:** `TASLEEMAT-TAILORING-PROFILES-v2.0`  
 **Standard:** PMI PMBOK® Guide 6th, 7th & 8th Edition Standard  

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+</p>
+
 # Tasleemat PMO Forms Hub | مستودع نماذج تسليمات
 
 This directory contains the **102 bilingual Project Management Office (PMO) artifact bundles** in symmetric English and Arabic structures:

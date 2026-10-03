@@ -1,5 +1,9 @@
 <div dir="rtl" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;">
 
+<p align="center">
+  <img src="docs/img/logo-ar.png" alt="شعار حزمة أدوات تسليمات لإدارة المشاريع" width="280">
+</p>
+
 # 📙 دليل استخدام حزمة تسليمات (Tasleemat PMO Practitioner & Automation Guide)
 ### *الدليل العملي الشامل لإدارة المخرجات والتوليد الذكي والأتمتة المؤسسية*
 

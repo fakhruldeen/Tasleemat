@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+</p>
+
 # Project Management Bilingual Lexicon & Forms Catalog
 # المعجم الثنائي لإدارة المشاريع ودليل نماذج تسليمات
 
