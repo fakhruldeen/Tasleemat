@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">QUALITY METRICS</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -35,20 +35,24 @@ Key Project Deliverables:
 ## 2. Process and Performance Quality Metrics
 
 **Process Efficiency Metric:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Quality Assurance & Governance Audit:
+All deliverables are audited against PMO Stage-Gate quality gates, ISO 9001 quality standards, and ISO 27001 cloud security protocols prior to executive milestone sign-off.
 
 **Defect Density and Severity Thresholds:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Quality Assurance & Governance Audit:
+All deliverables are audited against PMO Stage-Gate quality gates, ISO 9001 quality standards, and ISO 27001 cloud security protocols prior to executive milestone sign-off.
 
 ---
 
 ## 3. Quality Measurement and Tolerance Limits
 
 **Measurement Frequency and Tooling:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Quality Assurance & Governance Audit:
+All deliverables are audited against PMO Stage-Gate quality gates, ISO 9001 quality standards, and ISO 27001 cloud security protocols prior to executive milestone sign-off.
 
 **Acceptable Tolerance Range and Escalation Trigger:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Quality Assurance & Governance Audit:
+All deliverables are audited against PMO Stage-Gate quality gates, ISO 9001 quality standards, and ISO 27001 cloud security protocols prior to executive milestone sign-off.
 
 ---
 
@@ -56,8 +60,8 @@ This section has been thoroughly defined and documented in accordance with the T
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Quality Assurance (QA) Lead** | Noura Al-Sayed (QA Lead) | [Electronically Signed] | 2026-03-18 |
-| **Engineering / Technical Lead** | Eng. Tariq Al-Najjar (Engineering Lead) | [Electronically Signed] | 2026-03-18 |
+| **Quality Assurance (QA) Lead** | Noura Al-Sayed (Director of Quality Assurance) | [Electronically Signed] | 2026-03-18 |
+| **Engineering / Technical Lead** | Eng. Tariq Al-Najjar (Principal Systems Engineer) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 ---
 

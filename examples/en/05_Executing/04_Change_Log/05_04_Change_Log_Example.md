@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">CHANGE LOG</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP |
@@ -15,9 +15,9 @@
 ## Change Log Entries
 
 | ID | Category | Description | Requestor | Submission Date | Status | Disposition | Cost/Schedule Impact | Type (Mandatory/Discretionary) | Configurable Items Impacted |
-| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2026-07-31 | 2026-04-01 | In Progress | Approved and aligned with governance baseline | $950,000 USD | Technical & Integration | 2-week schedule slippage on integration testing window |
-| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | 2026-10-31 | 2026-06-01 | Completed | Approved and aligned with governance baseline | $1,150,000 USD | Operational & Functional | Rescheduling of operational pilot rollout date |
-| ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | 2026-12-31 | 2026-08-15 | Planned | Approved and aligned with governance baseline | $780,000 USD | Governance & Compliance | Minor reallocation of cloud professional services |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-06-30 | In Progress | Approved and aligned with governance baseline | $950,000 USD | Technical & Integration | 2-week schedule slippage on integration testing window |
+| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-09-30 | Completed | Approved and aligned with governance baseline | $1,150,000 USD | Operational & Functional | Rescheduling of operational pilot rollout date |
 
 ---
 

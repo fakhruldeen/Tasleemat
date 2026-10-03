@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Enterprise Digital Transformation Portfolio - PORT-2026-X01</h2>
+<h2 dir="ltr" align="right">Enterprise Digital Transformation & Cloud Operations Portfolio - PORT-2026-X01</h2>
 <h1 dir="ltr" align="center">PORTFOLIO ROADMAP</h1>
 
 | **Date Prepared:** 2026-03-15 | **Portfolio Director:** Elena Vance, PfMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -21,17 +21,17 @@
  by a few initiatives cannot be read as a change of direction rather than as two
  views of the same portfolio. -->
 
-**Portfolio Purpose and Scope:** Fully documented and verified in accordance with enterprise governance baseline.
+**Portfolio Purpose and Scope:** Drive comprehensive enterprise digital transformation, cloud modernization, and operational supply chain automation across all business units.
 
-**Planning Period:** Fully documented and verified in accordance with enterprise governance baseline.
+**Planning Period:** 2026 - 2028 (Rolling 3-Year Strategic Cycle)
 
-**Roadmap Horizon:** Fully documented and verified in accordance with enterprise governance baseline.
+**Roadmap Horizon:** 24-Month Active Execution Horizon with Quarterly Reprioritization
 
-**Portfolio Owner:** Fully documented and verified in accordance with enterprise governance baseline.
+**Portfolio Owner:** Elena Vance, PfMP (Portfolio & Enterprise Transformation Director)
 
-**Planning Cycle:** Fully documented and verified in accordance with enterprise governance baseline.
+**Planning Cycle:** Annual Strategic Planning Cycle (Quarterly Rolling Review)
 
-**Roadmap Version and Status:** Fully documented and verified in accordance with enterprise governance baseline.
+**Roadmap Version and Status:** Version 1.0 (Formally Approved)
 
 ---
 
@@ -46,10 +46,12 @@
  or remove rows as needed. -->
 
 | ID | Initiative Name | Type | Strategic Objective | Start | End | Budget | Status |
-| INIT-01 | Unified Cloud ERP Core Architecture | Technical & Integration | Digital Transformation & Operational Agility | 2026-04-01 | 2026-07-31 | $950,000 USD | In Progress |
-| REQ-02 | Automated Procurement & Smart Supply Chain Engine | Operational & Functional | Process Automation & 40% Cycle Time Reduction | 2026-06-01 | 2026-10-31 | $1,150,000 USD | Completed |
-| ACT-03 | Executive Business Intelligence & Reporting Platform | Governance & Compliance | Real-time Data-Driven Executive Decision Making | 2026-08-15 | 2026-12-31 | $780,000 USD | Planned |
-| BEN-04 | Employee Self-Service & HR Capital Portal | Cloud Infrastructure | 100% Security & Regulatory Compliance Assurance | 2026-10-01 | 2027-03-31 | $520,000 USD | Approved |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Technical & Integration | Digital Transformation & Operational Agility | 2026-04-01 | 2026-06-30 | $950,000 USD | In Progress |
+| REQ-02 | Sultan Al-Dossary (VP of Operations) | Operational & Functional | Process Automation & 40% Cycle Time Reduction | 2026-06-01 | 2026-09-30 | $1,150,000 USD | Completed |
+| ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Governance & Compliance | Real-time Data-Driven Executive Decision Making | 2026-08-15 | 2026-11-30 | $780,000 USD | Planned |
+| BEN-04 | Abdulaziz Al-Zahrani (Compliance & Governance Director) | Cloud Infrastructure | 100% Security & Regulatory Compliance Assurance | 2026-10-01 | 2027-01-31 | $520,000 USD | Approved |
+| WBS-05 | Tariq Al-Mansoor, PfMP (PMO Director) | Cybersecurity | Digital Transformation & Operational Agility | 2026-12-01 | 2027-03-31 | $350,000 USD | In Progress |
 
 ---
 
@@ -57,10 +59,11 @@
 
 
 | ID | Dependent Initiative | Dependency Type | Predecessor | Required By | Impact if Late |
-| INIT-01 | Unified Cloud ERP Core Architecture | Finish-to-Start (FS) | INIT-01 (Cloud ERP Core) | 2026-07-31 | 2-week schedule slippage on integration testing window |
-| REQ-02 | Automated Procurement & Smart Supply Chain Engine | Start-to-Start (SS) | INIT-02 (Supply Chain) | 2026-10-31 | Rescheduling of operational pilot rollout date |
-| ACT-03 | Executive Business Intelligence & Reporting Platform | Finish-to-Finish (FF) | INIT-01 (Cloud Architecture) | 2026-12-31 | Minor reallocation of cloud professional services |
-| BEN-04 | Employee Self-Service & HR Capital Portal | Finish-to-Start (FS) | INIT-01 (Cloud ERP Core) | 2027-03-31 | 2-week schedule slippage on integration testing window |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Unified Cloud ERP Core Architecture | Finish-to-Start (FS) | INIT-01 (Cloud ERP Core) | 2026-06-30 | 2-week schedule slippage on integration testing window |
+| REQ-02 | Automated Procurement & Smart Supply Chain Engine | Start-to-Start (SS) | INIT-02 (Supply Chain) | 2026-09-30 | Rescheduling of operational pilot rollout date |
+| ACT-03 | Executive Business Intelligence & Reporting Platform | Finish-to-Finish (FF) | INIT-01 (Cloud Architecture) | 2026-11-30 | Minor reallocation of cloud professional services |
+| BEN-04 | Employee Self-Service & HR Capital Portal | Finish-to-Start (FS) | INIT-03 (Data Layer) | 2027-01-31 | Postponement of cohort 2 training wave |
 
 ---
 
@@ -74,6 +77,7 @@
  rows as needed. -->
 
 | Period | Planned Funding | Planned Capacity | Committed Load | Available | Notes |
+| ---: | ---: | ---: | ---: | ---: | ---: |
 | 2026-Q2 | $950,000 USD | 480 FTE Hours / mo | 420 FTE Hours / mo | 60 FTE Hours (Buffer) | Validated against enterprise ISO27001 cloud security standards. |
 | 2026-Q3 | $1,150,000 USD | 620 FTE Hours / mo | 580 FTE Hours / mo | 40 FTE Hours (Buffer) | Weekly steering coordination meetings on schedule. |
 | 2026-Q4 | $780,000 USD | 540 FTE Hours / mo | 490 FTE Hours / mo | 50 FTE Hours (Buffer) | Contingency reserve allocated for critical path dependencies. |
@@ -84,9 +88,10 @@
 
 
 | ID | Type | Description | Impact on Roadmap | Owner | Review Date |
-| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | 2026-04-01 |
-| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | 2026-06-01 |
-| ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | 2026-08-15 |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | 2026-06-30 |
+| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | 2026-09-30 |
+| ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | 2026-11-30 |
 
 ---
 
@@ -98,9 +103,10 @@
  nobody owns. Add or remove rows as needed. -->
 
 | Change ID | Description | Reason | Affected Initiatives | Approved By | Date |
-| CR-2026-01 | Deploy hardened cloud environment and master databases | Security baseline compliance enhancement | Unified Cloud ERP Core Architecture | Elena Vance, PfMP | 2026-04-01 |
-| CR-2026-02 | Automate procurement requisition and inventory workflows | Operational scope extension for branch logistics | Automated Procurement & Smart Supply Chain Engine | Faisal Al-Harbi, PMP | 2026-06-01 |
-| CR-2026-03 | Build interactive executive dashboards and KPI reports | Alignment with quarterly fiscal cutover milestones | Executive Business Intelligence & Reporting Platform | Tariq Al-Mansoor, PfMP | 2026-08-15 |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| CR-2026-01 | Deploy hardened cloud environment and master databases | Security baseline compliance enhancement | Unified Cloud ERP Core Architecture | Elena Vance, PfMP | 2026-06-30 |
+| CR-2026-02 | Automate procurement requisition and inventory workflows | Operational scope extension for branch logistics | Automated Procurement & Smart Supply Chain Engine | Faisal Al-Harbi, PMP | 2026-09-30 |
+| CR-2026-03 | Build interactive executive dashboards and KPI reports | Alignment with quarterly fiscal cutover milestones | Executive Business Intelligence & Reporting Platform | Tariq Al-Mansoor, PfMP | 2026-11-30 |
 
 ---
 
@@ -110,7 +116,7 @@
 | :--- | :--- | :--- | :--- |
 | **Portfolio Manager** | Elena Vance, PfMP | [Electronically Signed] | 2026-03-18 |
 | **Head of PMO** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
-| **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
+| **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

@@ -4,12 +4,12 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">PROJECT CHARTER</h1>
 
 | **Project Sponsor:** Dr. Muna Al-Ghamdi (Executive VP of Technology) | **Date Prepared:** 2026-03-15 |
 | :--- | :--- |
-| **Project Manager:** Faisal Al-Harbi, PMP | **Project Customer:** Apex Enterprise Commercial Division |  
+| **Project Manager:** Faisal Al-Harbi, PMP | **Project Customer:** Apex Enterprise Commercial Division |
 
 ---
 
@@ -78,19 +78,21 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 ## Project objectives and related success criteria
 <!-- Project objectives are usually established for at least scope, schedule, and cost. The success criteria identify the metrics or measurements that will be used to measure success. -->
 | Item | Project objectives | Success criteria |
-| 1 | Digital Transformation & Operational Agility | Zero critical production defects at release |
-| 2 | Process Automation & 40% Cycle Time Reduction | Annual recurring operational savings >= $950K USD |
-| 3 | Real-time Data-Driven Executive Decision Making | Sub-second transaction response latency (< 800ms) |
-| 4 | 100% Security & Regulatory Compliance Assurance | End-user CSAT score >= 90% in audit |
+| :--- | :--- | :--- |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | 100% automation of procurement, supply chain, and billing cycles |
+| **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Deliver all phases within 18 months with zero critical path slippage |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Maintain Cost Performance Index (CPI) >= 1.00 within approved budget |
+| **Other** | Deliver high system reliability (99.95% uptime) and superior user experience | Achieve >= 90% user satisfaction and sub-second transaction latency |
 
 ---
 
 ## Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
 | # | Summary milestones | Due Date |
-| 1 | 2026-07-31 | 2026-04-01 |
-| 2 | 2026-10-31 | 2026-06-01 |
-| 3 | 2026-12-31 | 2026-08-15 |
+| :--- | :--- | :--- |
+| 1 | Architecture Design & Requirements Sign-off | 2026-06-30 |
+| 2 | Cloud Infrastructure & Sandbox Readiness | 2026-09-30 |
+| 3 | Historical Data Migration & Verification | 2026-11-30 |
 
 ---
 
@@ -108,9 +110,10 @@ Preapproved Financial Resources & Budget Envelope:
 ## Key stakeholder list
 <!-- An initial, high-level list of people or groups that have influenced or can influence project success, as well as those who are influenced by its success. -->
 | Stakeholder(s) | Role(s) |
-| Elena Vance, PfMP | Approved and aligned with governance baseline |
-| Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
-| Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
+| :--- | :--- |
+| Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Strategic executive oversight and resource authorization |
+| Sultan Al-Dossary (VP of Operations) | Business process owner and final acceptance authority |
+| Nasser Al-Ghamdi (Commercial Client Director) | Primary commercial user champion and UAT stakeholder |
 
 ---
 
@@ -126,30 +129,29 @@ Project Exit & Acceptance Criteria:
 
 ## Project approval requirements
 <!-- Defines what constitutes project success, who determines whether the project is successful, and who signs off on the project. -->
-High-Level System & Business Requirements:
-* Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and enterprise accounting standards.
-* System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
-* Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
+Project Approval Requirements:
+1. Unanimous consensus from Executive Sponsor and VP Operations on final UAT results.
+2. Formal verification of all stage-gate deliverables by PMO Lead.
+3. Complete execution of cutover checklist and operational transition sign-off.
 
 ---
 
 ## Project manager authority level
 <!-- The authority of the project manager with regard to staffing, budget management and variance, technical decisions, and conflict resolution. -->
 | Authority Area | Description |
-| Approve expenditures up to $40K USD and architectural baselines | Deploy hardened cloud environment and master databases |
-| Full administrative authority over team assignments | Automate procurement requisition and inventory workflows |
-| Authorize technical design adjustments within tolerance | Build interactive executive dashboards and KPI reports |
-| Approve expenditures up to $40K USD and architectural baselines | Deploy hardened cloud environment and master databases |
+| :--- | :--- |
+| Staffing decisions | Authority to select project team members, assign tasks, and evaluate performance |
+| Budget management and variance | Authorize expenditures up to $40,000 USD; variances > 5% require Sponsor approval |
+| Technical decisions | Approve solution architecture designs compliant with enterprise cloud standards |
+| Conflict resolution | Resolve team operational conflicts; escalate strategic disputes to Steering Committee |
 
 ---
 
 ## Name and authority of the sponsor
 <!-- Name and authority of the sponsor or other person(s) authorizing the project charter. -->
 | Name / Position | Authority Level |
-| Approved and aligned with governance baseline | Approve expenditures up to $40K USD and architectural baselines |
-| Approved and aligned with governance baseline | Full administrative authority over team assignments |
-| Approved and aligned with governance baseline | Authorize technical design adjustments within tolerance |
+| :--- | :--- |
+| Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Full executive authority to charter project, approve budget envelope, and commit resources |
 
 ---
 

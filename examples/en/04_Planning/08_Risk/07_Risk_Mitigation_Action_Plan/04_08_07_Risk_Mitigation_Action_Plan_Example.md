@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">RISK MITIGATION ACTION PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,15 +15,13 @@
 ## 1. Risk Assessment
 
 | Risk ID and Title | Current Risk Score |
+| :--- | :--- |
 | RSK-01 | Approved and aligned with governance baseline |
-| RSK-02 | Approved and aligned with governance baseline |
-| RSK-03 | Approved and aligned with governance baseline |
 
 ## 2. Mitigation Plan
 
 | Mitigation Strategy | Detailed Action Steps | Resource Requirements | Target Risk Score |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ### Sign-off and Approvals
@@ -31,7 +29,7 @@
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Risk Action Owner** | Approved - Action Owner Name | [Electronically Signed] | 2026-03-18 |
-| **Risk Manager** | Layla Al-Amri, PMI-RMP | [Electronically Signed] | 2026-03-18 |
+| **Risk Manager** | Layla Al-Omari, PMI-RMP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 ---
 

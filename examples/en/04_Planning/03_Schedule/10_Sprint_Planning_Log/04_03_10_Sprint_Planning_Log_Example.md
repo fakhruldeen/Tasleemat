@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">SPRINT PLANNING LOG</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -14,13 +14,13 @@
 ## 1. Sprint Frame
 
 
-**Sprint Goal:** Fully documented and verified in accordance with enterprise governance baseline.
+**Sprint Goal:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Sprint Window:** Fully documented and verified in accordance with enterprise governance baseline.
+**Sprint Window:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Capacity Basis:** Fully documented and verified in accordance with enterprise governance baseline.
+**Capacity Basis:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Carry-over From the Previous Sprint:** Fully documented and verified in accordance with enterprise governance baseline.
+**Carry-over From the Previous Sprint:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -30,23 +30,20 @@
 **Stories Committed:**
 
 | Story ID | Story Title | Story Points | Priority | Status |
-| INIT-01 | 2026-07-31 | 2026-07-31 | Approved and aligned with governance baseline | In Progress |
-| REQ-02 | 2026-10-31 | 2026-10-31 | Approved and aligned with governance baseline | Completed |
-| ACT-03 | 2026-12-31 | 2026-12-31 | Approved and aligned with governance baseline | Planned |
+| :--- | :--- | :--- | :--- | :--- |
+| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | In Progress |
 
 **Acceptance Criteria:**
 
 | Story ID | Acceptance Criteria | Verified By |
+| :--- | :--- | :--- |
 | INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 **Scope Added After Planning:**
 
 | Story ID | Reason Added | Requested By | Effect on Sprint |
+| :--- | :--- | :--- | :--- |
 | INIT-01 | Security baseline compliance enhancement | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| REQ-02 | Operational scope extension for branch logistics | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| ACT-03 | Alignment with quarterly fiscal cutover milestones | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -56,13 +53,12 @@
 **Assignee and Availability:**
 
 | Team Member | Role | Assigned Stories | Available Capacity |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-07-31 | 480 FTE Hours / mo |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-10-31 | 620 FTE Hours / mo |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-12-31 | 540 FTE Hours / mo |
+| :--- | :--- | :--- | :--- |
+| Approved and aligned with governance baseline | Strategic executive oversight and resource authorization | Approved and aligned with governance baseline | 480 FTE Hours / mo |
 
-**Skill and Capacity Gaps:** Fully documented and verified in accordance with enterprise governance baseline.
+**Skill and Capacity Gaps:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Dependencies Outside the Team:** Fully documented and verified in accordance with enterprise governance baseline.
+**Dependencies Outside the Team:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -72,11 +68,10 @@
 **Risks Identified at Planning:**
 
 | Risk | Trigger | Likelihood | Impact | Response |
+| :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Rescheduling of operational pilot rollout date | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Minor reallocation of cloud professional services | Approved and aligned with governance baseline |
 
-**Contingency:** Fully documented and verified in accordance with enterprise governance baseline.
+**Contingency:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 

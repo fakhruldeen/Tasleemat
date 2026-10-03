@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">RESOURCE MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -55,10 +55,12 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 4. Team Development and Training Strategy
 
 **Team Building and Development Initiatives:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Change Management & Stakeholder Enablement:
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
 
 **Required Training and Certification Programs:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Change Management & Stakeholder Enablement:
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
 
 ---
 

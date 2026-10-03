@@ -4,10 +4,10 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">NextGen Cloud Infrastructure & Digital Services Program - PGM-2026-CX</h2>
+<h2 dir="ltr" align="right">Unified Cloud Infrastructure & Enterprise Services Program - PGM-2026-CX</h2>
 <h1 dir="ltr" align="center">PROGRAM CHARTER</h1>
 
-| **Date Prepared:** 2026-03-15 | **Program Manager:** Eng. Khalid Al-Otaibi, PgMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
+| **Date Prepared:** 2026-03-15 | **Program Manager:** Khalid Al-Otaibi, PgMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
 | :--- | :--- | :--- |  
 
 ---
@@ -21,15 +21,15 @@
  State what happens if the program is not undertaken, since that is the test
  every charter is eventually measured against, usually several years later. -->
 
-**Program Purpose:** Fully documented and verified in accordance with enterprise governance baseline.
+**Program Purpose:** Modernize core IT infrastructure, consolidate platforms, and standardize digital services.
 
-**Business Driver and Strategic Alignment:** Fully documented and verified in accordance with enterprise governance baseline.
+**Business Driver and Strategic Alignment:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Problem or Opportunity Statement:** Fully documented and verified in accordance with enterprise governance baseline.
+**Problem or Opportunity Statement:** Version 1.0 (Formally Approved)
 
-**Consequence of Not Proceeding:** Fully documented and verified in accordance with enterprise governance baseline.
+**Consequence of Not Proceeding:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Program Vision Statement:** Fully documented and verified in accordance with enterprise governance baseline.
+**Program Vision Statement:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
 ---
 
@@ -44,10 +44,12 @@
  Add or remove rows as needed. -->
 
 | ID | Objective | Measure | Target Date | Owner | Status |
-| INIT-01 | Digital Transformation & Operational Agility | Zero critical production defects at release | 2026-04-01 | Elena Vance, PfMP | In Progress |
-| REQ-02 | Process Automation & 40% Cycle Time Reduction | Annual recurring operational savings >= $950K USD | 2026-06-01 | Faisal Al-Harbi, PMP | Completed |
-| ACT-03 | Real-time Data-Driven Executive Decision Making | Sub-second transaction response latency (< 800ms) | 2026-08-15 | Tariq Al-Mansoor, PfMP | Planned |
-| BEN-04 | 100% Security & Regulatory Compliance Assurance | End-user CSAT score >= 90% in audit | 2026-10-01 | Sultan Al-Dossary (VP Operations) | Approved |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Digital Transformation & Operational Agility | Zero critical production defects at release | 2026-06-30 | Elena Vance, PfMP | In Progress |
+| REQ-02 | Process Automation & 40% Cycle Time Reduction | Annual recurring operational savings >= $950K USD | 2026-09-30 | Faisal Al-Harbi, PMP | Completed |
+| ACT-03 | Real-time Data-Driven Executive Decision Making | Sub-second transaction response latency (< 800ms) | 2026-11-30 | Tariq Al-Mansoor, PfMP | Planned |
+| BEN-04 | 100% Security & Regulatory Compliance Assurance | End-user CSAT score >= 90% in audit | 2027-01-31 | Sultan Al-Dossary | Approved |
+| WBS-05 | Digital Transformation & Operational Agility | Zero critical production defects at release | 2027-03-31 | Elena Vance, PfMP | In Progress |
 
 ---
 
@@ -55,10 +57,11 @@
 
 
 | Component ID | Component Name | Objective Linkage | Status | Owner |
-| INIT-01 | Unified Cloud ERP Core Architecture | Digital Transformation & Operational Agility | In Progress | Elena Vance, PfMP |
-| REQ-02 | Automated Procurement & Smart Supply Chain Engine | Process Automation & 40% Cycle Time Reduction | Completed | Faisal Al-Harbi, PMP |
-| ACT-03 | Executive Business Intelligence & Reporting Platform | Real-time Data-Driven Executive Decision Making | Planned | Tariq Al-Mansoor, PfMP |
-| BEN-04 | Employee Self-Service & HR Capital Portal | 100% Security & Regulatory Compliance Assurance | Approved | Sultan Al-Dossary (VP Operations) |
+| ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Digital Transformation & Operational Agility | In Progress | Elena Vance, PfMP |
+| REQ-02 | Sultan Al-Dossary (VP of Operations) | Process Automation & 40% Cycle Time Reduction | Completed | Faisal Al-Harbi, PMP |
+| ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Real-time Data-Driven Executive Decision Making | Planned | Tariq Al-Mansoor, PfMP |
+| BEN-04 | Abdulaziz Al-Zahrani (Compliance & Governance Director) | 100% Security & Regulatory Compliance Assurance | Approved | Sultan Al-Dossary |
 
 ---
 
@@ -66,32 +69,34 @@
 
 
 | Benefit ID | Benefit | Category | Beneficiary | Realization Mechanism | Realization Date |
-| INIT-01 | Approved and aligned with governance baseline | Technical & Integration | Elena Vance, PfMP | Quarterly post-launch financial audit and system telemetry | 2026-04-01 |
-| REQ-02 | Approved and aligned with governance baseline | Operational & Functional | Faisal Al-Harbi, PMP | Quarterly post-launch financial audit and system telemetry | 2026-06-01 |
-| ACT-03 | Approved and aligned with governance baseline | Governance & Compliance | Tariq Al-Mansoor, PfMP | Quarterly post-launch financial audit and system telemetry | 2026-08-15 |
-| BEN-04 | Approved and aligned with governance baseline | Cloud Infrastructure | Sultan Al-Dossary (VP Operations) | Quarterly post-launch financial audit and system telemetry | 2026-10-01 |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Approved and aligned with governance baseline | Technical & Integration | Elena Vance, PfMP | Approved and aligned with governance baseline | 2026-06-30 |
+| REQ-02 | Approved and aligned with governance baseline | Operational & Functional | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline | 2026-09-30 |
+| ACT-03 | Approved and aligned with governance baseline | Governance & Compliance | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline | 2026-11-30 |
+| BEN-04 | Approved and aligned with governance baseline | Cloud Infrastructure | Sultan Al-Dossary | Approved and aligned with governance baseline | 2027-01-31 |
 
 ---
 
 ## 5. Program Manager Authority and Governance
 
 
-**Program Manager Authority Statement:** Fully documented and verified in accordance with enterprise governance baseline.
+**Program Manager Authority Statement:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Authority Retained by the Sponsor:** Fully documented and verified in accordance with enterprise governance baseline.
+**Authority Retained by the Sponsor:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Program Governance Forum:** Fully documented and verified in accordance with enterprise governance baseline.
+**Program Governance Forum:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Reporting Cadence and Audience:** Fully documented and verified in accordance with enterprise governance baseline.
+**Reporting Cadence and Audience:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Escalation Path:** Fully documented and verified in accordance with enterprise governance baseline.
+**Escalation Path:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Funding Position:** Fully documented and verified in accordance with enterprise governance baseline.
+**Funding Position:** Fully defined and validated in accordance with enterprise governance baseline.
 
 | Decision Type | Authority Level | Escalation Path | Limits or Conditions |
-| Technical & Integration | Approve expenditures up to $40K USD and architectural baselines | Escalate to Steering Committee and PMO Lead | Approved and aligned with governance baseline |
-| Operational & Functional | Full administrative authority over team assignments | Escalate to Steering Committee and PMO Lead | Approved and aligned with governance baseline |
-| Governance & Compliance | Authorize technical design adjustments within tolerance | Escalate to Steering Committee and PMO Lead | Approved and aligned with governance baseline |
+| ---: | ---: | ---: | ---: |
+| Technical & Integration | Full executive authority to charter project, approve budget envelope, and commit resources | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Operational & Functional | Business requirements sign-off and final operational acceptance authority | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Governance & Compliance | Governance oversight, stage-gate audit validation, and method compliance | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -99,10 +104,11 @@
 
 
 | ID | Type | Description | Impact on Program | Owner | Review Date |
-| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | 2026-04-01 |
-| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | 2026-06-01 |
-| ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | 2026-08-15 |
-| BEN-04 | Cloud Infrastructure | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Sultan Al-Dossary (VP Operations) | 2026-10-01 |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | 2026-06-30 |
+| REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | 2026-09-30 |
+| ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | 2026-11-30 |
+| BEN-04 | Cloud Infrastructure | Conduct comprehensive end-user enablement workshops | Postponement of cohort 2 training wave | Sultan Al-Dossary | 2027-01-31 |
 
 ---
 
@@ -114,11 +120,11 @@
  objective, and who takes that decision. Add or remove rows as the program's
  governance requires. -->
 
-**Defined Response:** Fully documented and verified in accordance with enterprise governance baseline.
+**Defined Response:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Decision Authority:** Fully documented and verified in accordance with enterprise governance baseline.
+**Decision Authority:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Trigger for Reassessment:** Fully documented and verified in accordance with enterprise governance baseline.
+**Trigger for Reassessment:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -126,8 +132,8 @@
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Program Manager** | Eng. Khalid Al-Otaibi, PgMP | [Electronically Signed] | 2026-03-18 |
-| **Program Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
+| **Program Manager** | Khalid Al-Otaibi, PgMP | [Electronically Signed] | 2026-03-18 |
+| **Program Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |
 | **Business Owner** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 ---
 

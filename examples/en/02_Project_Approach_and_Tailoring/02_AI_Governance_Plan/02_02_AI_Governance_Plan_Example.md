@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - COMPLEX-2026-ERP</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - COMPLEX-2026-ERP</h2>
 <h1 dir="ltr" align="center">AI GOVERNANCE PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **PMO Assessor:** Lead PMO Assessor | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,26 +15,26 @@
 ## 1. Governance Context and Scope
 
 
-**AI System Inventory:** Fully documented and verified in accordance with enterprise governance baseline.
+**AI System Inventory:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Intended Purpose and Affected Users:** Fully documented and verified in accordance with enterprise governance baseline.
+**Intended Purpose and Affected Users:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Risk Classification:** Fully documented and verified in accordance with enterprise governance baseline.
+**Risk Classification:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Scope Exclusions:** Fully documented and verified in accordance with enterprise governance baseline.
+**Scope Exclusions:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
 ---
 
 ## 2. Ethical Principles and Acceptable Use
 <!-- The constraints that bind use, the uses refused outright, the uses approved within limits, and who bears the cost of error. -->
 
-**Ethical Principles:** Fully documented and verified in accordance with enterprise governance baseline.
+**Ethical Principles:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Prohibited Uses:** Fully documented and verified in accordance with enterprise governance baseline.
+**Prohibited Uses:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Approved Use Cases:** Fully documented and verified in accordance with enterprise governance baseline.
+**Approved Use Cases:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Human Impact Assessment:** Fully documented and verified in accordance with enterprise governance baseline.
+**Human Impact Assessment:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -42,6 +42,7 @@
 <!-- One row per data category: what it is, where it came from, what it may be used for, how it is protected, and when it is deleted. -->
 
 | Data Category | Provenance and Lawful Basis | Permitted Use | Protection Control | Retention and Deletion |
+| :--- | :--- | :--- | :--- | :--- |
 | Technical & Integration | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Operational & Functional | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Governance & Compliance | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
@@ -52,41 +53,42 @@
 <!-- One row per affected group: the way this system could be unfair to them, how that is tested, what happens if the test fails, and what is watched afterwards. -->
 
 | Affected Group | Bias Risk | Test Method and Threshold | Mitigation | Ongoing Indicator |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-07-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-10-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-12-31 |
+| :--- | :--- | :--- | :--- | :--- |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
 ## 5. Compliance and Accountability
 <!-- The instruments that bind the system, the controls that satisfy them, the evidence retained, who is answerable, and where a person can contest an output. -->
 
-**Applicable Regulations:** Fully documented and verified in accordance with enterprise governance baseline.
+**Applicable Regulations:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Control Mapping:** Fully documented and verified in accordance with enterprise governance baseline.
+**Control Mapping:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Evidence and Records:** Fully documented and verified in accordance with enterprise governance baseline.
+**Evidence and Records:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Compliance Review Cadence:** Fully documented and verified in accordance with enterprise governance baseline.
+**Compliance Review Cadence:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Accountable Owner:** Fully documented and verified in accordance with enterprise governance baseline.
+**Accountable Owner:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Human Oversight Points:** Fully documented and verified in accordance with enterprise governance baseline.
+**Human Oversight Points:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Decision Rights and Redress:** Fully documented and verified in accordance with enterprise governance baseline.
+**Decision Rights and Redress:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Incident Reporting:** Fully documented and verified in accordance with enterprise governance baseline.
+**Incident Reporting:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 6. Monitoring and Change
 <!-- What is watched in operation, what forces the plan to be reopened, and how a change to the system is raised. -->
 
-**Performance and Drift Monitoring:** Fully documented and verified in accordance with enterprise governance baseline.
+**Performance and Drift Monitoring:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Reassessment Triggers:** Fully documented and verified in accordance with enterprise governance baseline.
+**Reassessment Triggers:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Change Control Link:** Fully documented and verified in accordance with enterprise governance baseline.
+**Change Control Link:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 

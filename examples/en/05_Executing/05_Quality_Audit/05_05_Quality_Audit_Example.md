@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">QUALITY AUDIT REPORT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP |
@@ -37,14 +37,15 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 4. Deficiencies or Defects
 
 | ID | Defect | Action | Responsible Party | Due Date |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-04-01 |
-| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-06-01 |
-| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-08-15 |
+| :--- | :--- | :--- | :--- | :--- |
+| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-06-30 |
+| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
 
 ---
 
 ## 5. Implementation Tracking of Approved Changes
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Change Management & Stakeholder Enablement:
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
 
 ---
 
@@ -63,7 +64,7 @@ This section has been thoroughly defined and documented in accordance with the T
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Lead Quality Auditor** | Adel Al-Mutairi, CIA | [Electronically Signed] | 2026-03-18 |
-| **Quality Assurance (QA) Manager** | Noura Al-Sayed (QA Director) | [Electronically Signed] | 2026-03-18 |
+| **Quality Assurance (QA) Manager** | Noura Al-Sayed (Director of Quality Assurance) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 ---
 

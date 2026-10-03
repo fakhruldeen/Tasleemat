@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Core Enterprise Systems Modernization - FEAS-2026-003</h2>
+<h2 dir="ltr" align="right">Core Modernization & Cloud Migration Initiative - FEAS-2026-003</h2>
 <h1 dir="ltr" align="center">BENEFITS MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **Lead Evaluator:** Dr. Fahad Al-Qahtani | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -16,19 +16,19 @@
 <!-- The benefits as measurable changes, their owners, today's values, and why this project gets the credit. -->
 
 | Benefit | Category | Owner | Baseline Value | Target Value | Attribution Assumption |
+| :--- | :--- | :--- | ---: | ---: | :--- |
 | Approved and aligned with governance baseline | Technical & Integration | Elena Vance, PfMP | $950,000 USD | $950,000 USD | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Operational & Functional | Faisal Al-Harbi, PMP | $1,150,000 USD | $1,150,000 USD | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Governance & Compliance | Tariq Al-Mansoor, PfMP | $780,000 USD | $780,000 USD | Approved and aligned with governance baseline |
 
-**Benefit Statements:** Fully documented and verified in accordance with enterprise governance baseline.
+**Benefit Statements:** Version 1.0 (Formally Approved)
 
-**Benefit Categories:** Fully documented and verified in accordance with enterprise governance baseline.
+**Benefit Categories:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Benefit Owners:** Fully documented and verified in accordance with enterprise governance baseline.
+**Benefit Owners:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Baseline Values:** Fully documented and verified in accordance with enterprise governance baseline.
+**Baseline Values:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Attribution Assumption:** Fully documented and verified in accordance with enterprise governance baseline.
+**Attribution Assumption:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -36,32 +36,32 @@
 <!-- When each benefit is expected to arrive, what will be visible beforehand, what harm is expected, and what it depends on. -->
 
 | Benefit | Realisation Date | Lead Indicator | Lead and Lag | Dependencies | Dis-benefits |
-| Approved and aligned with governance baseline | 2026-04-01 | 2026-07-31 | Approved and aligned with governance baseline | 2026-07-31 | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-06-01 | 2026-10-31 | Approved and aligned with governance baseline | 2026-10-31 | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-08-15 | 2026-12-31 | Approved and aligned with governance baseline | 2026-12-31 | Approved and aligned with governance baseline |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Approved and aligned with governance baseline | 2026-06-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-30 | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2026-09-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-09-30 | Approved and aligned with governance baseline |
 
-**Realisation Date:** Fully documented and verified in accordance with enterprise governance baseline.
+**Realisation Date:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
 
-**Lead and Lag Indicators:** Fully documented and verified in accordance with enterprise governance baseline.
+**Lead and Lag Indicators:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Dis-benefits:** Fully documented and verified in accordance with enterprise governance baseline.
+**Dis-benefits:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Dependencies:** Fully documented and verified in accordance with enterprise governance baseline.
+**Dependencies:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 3. Measurement and Governance
 <!-- The measures, the method, the cadence, and what happens when a benefit slips. -->
 
-**Benefit Metrics:** Fully documented and verified in accordance with enterprise governance baseline.
+**Benefit Metrics:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Measurement Method:** Fully documented and verified in accordance with enterprise governance baseline.
+**Measurement Method:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Review Cadence:** Fully documented and verified in accordance with enterprise governance baseline.
+**Review Cadence:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Benefit Status Rules:** Fully documented and verified in accordance with enterprise governance baseline.
+**Benefit Status Rules:** Version 1.0 (Formally Approved)
 
-**Reporting Audience:** Fully documented and verified in accordance with enterprise governance baseline.
+**Reporting Audience:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -69,15 +69,15 @@
 <!-- The risks to the benefits themselves, who owns each, and the observable event that means it is happening. -->
 
 | Benefit | Benefit Risk | Owner | Response | Early Warning Trigger |
+| :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
-**Benefit Risks:** Fully documented and verified in accordance with enterprise governance baseline.
+**Benefit Risks:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Risk Owner and Response:** Fully documented and verified in accordance with enterprise governance baseline.
+**Risk Owner and Response:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Early Warning Trigger:** Fully documented and verified in accordance with enterprise governance baseline.
+**Early Warning Trigger:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 

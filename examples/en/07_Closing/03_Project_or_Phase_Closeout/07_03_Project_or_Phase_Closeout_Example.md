@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">PROJECT OR PHASE CLOSEOUT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -52,11 +52,11 @@ This section has been thoroughly defined and documented in accordance with the T
 
 **How Business Needs Were Met:**
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
 
 **Needs Not Met:**
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
 
 ---
 
@@ -64,9 +64,9 @@ This section has been thoroughly defined and documented in accordance with the T
 <!-- Scope and Quality as rows, against Objectives, Completion Criteria, and How Met as columns. The three columns answer three different questions, and each is easy to confuse with the other two: the objective is what was set, the completion criteria are the test that decides whether it was met, and How Met is the evidence that the test was passed. Write the criteria so that each can be answered yes or no, and give the source of the evidence rather than the conclusion. For Quality, cross-reference the product acceptance form instead of restating it. Add a row per additional area if the project needs one. -->
 
 | Area | Objectives | Completion Criteria | How Met |
-| Approved and aligned with governance baseline | Digital Transformation & Operational Agility | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Process Automation & 40% Cycle Time Reduction | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Real-time Data-Driven Executive Decision Making | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- | :--- | :--- |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | 100% automation of procurement, supply chain, and billing cycles | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Achieve >= 90% user satisfaction and sub-second transaction latency | Deliver high system reliability (99.95% uptime) and superior user experience |
 
 <!-- Column guidance:
 - **Objectives:** What the project set out to achieve in this area, taken from the approved plan rather than restated from memory.
@@ -89,9 +89,9 @@ Row guidance:
 <!-- Time and Cost as rows, against Objectives, Final Outcome, Variance, and Comments as columns. Give the variance as a number, not a word, and say which way it went. Where the project finished early or under budget, explain why: an unexplained favourable variance hides a planning error just as a delay does, and a reader cannot repeat the favourable outcome if they cannot see what produced it. Use the Comments column for anything still open at closure. Add a row per additional measure if the project tracks one. -->
 
 | Measure | Objectives | Final Outcome | Variance | Comments |
-| Zero critical production defects at release | Digital Transformation & Operational Agility | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| Annual recurring operational savings >= $950K USD | Process Automation & 40% Cycle Time Reduction | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| Sub-second transaction response latency (< 800ms) | Real-time Data-Driven Executive Decision Making | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
+| :--- | :--- | :--- | :--- | :--- |
+| **Time** | Digital Transformation & Operational Agility | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
 
 <!-- Column guidance:
 - **Objectives:** The approved baseline or plan figure.
@@ -117,10 +117,11 @@ Row guidance:
 <!-- One row per significant risk or issue. Identify each from the risk or issue register by reference rather than restating it, say what was done and whether it worked, and use the Comments column for anything still open. An unresolved item transferred without a named recipient has not actually been transferred, and is the one most often lost. Add or remove rows as needed. -->
 
 | Risk or Issue | Response and Resolution | Comments |
+| :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
 
 <!--
 - **Risk or Issue:** The risk or issue, and where it came from. Give the reference from the risk or issue register rather than restating it.
@@ -134,9 +135,10 @@ Row guidance:
 <!-- The information from the procurement closeout. Where procurement was not used, state that plainly in the first row rather than leaving the section blank, so a reader knows it was considered. Any claim or dispute not settled before closure is a liability being handed on, and belongs in the status column. -->
 
 | Item | Details | Status at Closure |
-| 1 | Deploy hardened cloud environment and master databases | In Progress |
-| 2 | Automate procurement requisition and inventory workflows | Completed |
-| 3 | Build interactive executive dashboards and KPI reports | Planned |
+| :--- | :--- | :--- |
+| **Contracts Closed** | Deploy hardened cloud environment and master databases | In Progress |
+| **Obligations Discharged** | Automate procurement requisition and inventory workflows | Completed |
+| **Claims and Disputes Settled** | Build interactive executive dashboards and KPI reports | Planned |
 
 <!--
 - **Item:** What the row is about.
@@ -155,7 +157,7 @@ Row guidance:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
-| **Operations / Service Owner** | Sultan Al-Dossary (VP Operations) | [Electronically Signed] | 2026-03-18 |
+| **Operations / Service Owner** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor / Client** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 ---
 

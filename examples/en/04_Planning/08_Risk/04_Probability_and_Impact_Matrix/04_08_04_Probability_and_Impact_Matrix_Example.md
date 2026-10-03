@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">PROBABILITY AND IMPACT MATRIX</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,20 +15,32 @@
 ## 1. Matrix Architecture and Rating Thresholds
 
 **Matrix Grid Dimensions and Scaling:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The project encompasses the end-to-end implementation and rollout of a unified cloud ERP suite comprising:
+1. Automated Procurement, Inventory Management, and Smart Supply Chain logistics.
+2. Core Financials, General Ledger, Multi-currency Treasury, and Tax Compliance modules.
+3. Human Capital Management (HCM), Payroll automation, and Employee Self-Service portals.
+4. Secure enterprise API integration middleware connecting CRM, BI, and banking gateways.
+5. Real-time executive dashboards and predictive operational analytics engines.
 
 **Risk Tolerance and Severity Bands:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The project encompasses the end-to-end implementation and rollout of a unified cloud ERP suite comprising:
+1. Automated Procurement, Inventory Management, and Smart Supply Chain logistics.
+2. Core Financials, General Ledger, Multi-currency Treasury, and Tax Compliance modules.
+3. Human Capital Management (HCM), Payroll automation, and Employee Self-Service portals.
+4. Secure enterprise API integration middleware connecting CRM, BI, and banking gateways.
+5. Real-time executive dashboards and predictive operational analytics engines.
 
 ---
 
 ## 2. Threat and Opportunity Scoring Grid
 
 **Threat Evaluation Grid Mapping:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Overall Project Risk Assessment:
+Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
 
 **Opportunity Evaluation Grid Mapping:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Overall Project Risk Assessment:
+Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
 
 ---
 
@@ -48,7 +60,7 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Risk Manager** | Layla Al-Amri, PMI-RMP | [Electronically Signed] | 2026-03-18 |
+| **Risk Manager** | Layla Al-Omari, PMI-RMP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **PMO Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 ---

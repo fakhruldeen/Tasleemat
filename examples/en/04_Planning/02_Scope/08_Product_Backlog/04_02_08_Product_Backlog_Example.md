@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">PRODUCT BACKLOG</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -16,10 +16,15 @@
 <!-- One row per requirement, feature, function, or user story. The backlog is developed at the start of the project and is updated throughout it, so a row that has not been revisited in months is worse than no row: it looks current and is not. Add or remove rows and columns as the project needs. -->
 
 | ID | Summary Description | Priority | Story | Status | Story Points | Target Sprint or Release | User Type | Category |
-| INIT-01 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-07-31 | In Progress | 2026-07-31 | Approved and aligned with governance baseline | Technical & Integration | Technical & Integration |
-| REQ-02 | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-10-31 | Completed | 2026-10-31 | Approved and aligned with governance baseline | Operational & Functional | Operational & Functional |
-| ACT-03 | Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | 2026-12-31 | Planned | 2026-12-31 | Approved and aligned with governance baseline | Governance & Compliance | Governance & Compliance |
-| BEN-04 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2027-03-31 | Approved | 2027-03-31 | Approved and aligned with governance baseline | Cloud Infrastructure | Cloud Infrastructure |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Approved and aligned with governance baseline | In Progress | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration | Technical & Integration |
+| REQ-02 | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Completed | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional | Operational & Functional |
+| ACT-03 | Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Planned | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance | Governance & Compliance |
+| BEN-04 | Conduct comprehensive end-user enablement workshops | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Cloud Infrastructure | Cloud Infrastructure |
+| WBS-05 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Approved and aligned with governance baseline | In Progress | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Cybersecurity | Cybersecurity |
+| DEL-06 | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Completed | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration | Technical & Integration |
+| AUD-07 | Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Planned | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional | Operational & Functional |
+| INIT-08 | Conduct comprehensive end-user enablement workshops | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance | Governance & Compliance |
 
 ---
 

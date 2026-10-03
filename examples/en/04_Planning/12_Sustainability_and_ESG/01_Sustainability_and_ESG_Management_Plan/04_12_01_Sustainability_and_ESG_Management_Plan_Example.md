@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">SUSTAINABILITY AND ESG MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -72,7 +72,7 @@ This section has been thoroughly defined and documented in accordance with the T
 | :--- | :--- | :--- | :--- |
 | **Sustainability / ESG Officer** | Eng. Yasser Al-Subaie (ESG & Sustainability Director) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
-| **Procurement / Operations Lead** | Sultan Al-Dossary (VP Operations) | [Electronically Signed] | 2026-03-18 |
+| **Procurement / Operations Lead** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

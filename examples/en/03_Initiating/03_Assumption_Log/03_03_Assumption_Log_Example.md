@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">ASSUMPTION LOG</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -27,9 +27,10 @@ Please provide a comprehensive log of all assumptions and constraints for the pr
 - **Comments:** Any additional information, context, or updates.
 -->
 | ID | Type | Category | Description | Impact if invalid | Responsible party | Due date | Actions | Status | Comments |
-| INIT-01 | Technical & Integration | Technical & Integration | Deploy hardened cloud environment and master databases | INIT-01 | Elena Vance, PfMP | 2026-04-01 | Approved and aligned with governance baseline | In Progress | Validated against enterprise ISO27001 cloud security standards. |
-| REQ-02 | Operational & Functional | Operational & Functional | Automate procurement requisition and inventory workflows | REQ-02 | Faisal Al-Harbi, PMP | 2026-06-01 | Approved and aligned with governance baseline | Completed | Weekly steering coordination meetings on schedule. |
-| ACT-03 | Governance & Compliance | Governance & Compliance | Build interactive executive dashboards and KPI reports | ACT-03 | Tariq Al-Mansoor, PfMP | 2026-08-15 | Approved and aligned with governance baseline | Planned | Contingency reserve allocated for critical path dependencies. |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| INIT-01 | Technical & Integration | Technical & Integration | Deploy hardened cloud environment and master databases | INIT-01 | Elena Vance, PfMP | 2026-06-30 | Approved and aligned with governance baseline | In Progress | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Operational & Functional | Automate procurement requisition and inventory workflows | REQ-02 | Faisal Al-Harbi, PMP | 2026-09-30 | Approved and aligned with governance baseline | Completed | Weekly steering coordination meetings on schedule. |
+| ACT-03 | Governance & Compliance | Governance & Compliance | Build interactive executive dashboards and KPI reports | ACT-03 | Tariq Al-Mansoor, PfMP | 2026-11-30 | Approved and aligned with governance baseline | Planned | Contingency reserve allocated for critical path dependencies. |
 
 ---
 

@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">PROJECT SCOPE STATEMENT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -55,18 +55,20 @@ Key Project Deliverables:
 ## 3. Product Acceptance Criteria
 
 **Measurable Acceptance Criteria:**
-Project Exit & Acceptance Criteria:
-1. 100% passing rate on UAT test cases with zero open Sev-1 or Sev-2 defect tickets.
-2. Verified cutover and data reconciliation signed off by Chief Financial Officer and VP Operations.
-3. Minimum 95% user training attendance and proficiency certification completed across all departments.
-4. 30 consecutive days of incident-free production operation under hypercare support.
+Key Project Deliverables:
+* Detailed Solution Architecture & Data Integration Blueprint.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
+* Validated historical master data migration package (99.98% reconciliation rate).
+* Comprehensive training curriculum delivered to 450+ business users and functional admins.
+* User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.
 
 **Acceptance Authority and Process:**
-Project Exit & Acceptance Criteria:
-1. 100% passing rate on UAT test cases with zero open Sev-1 or Sev-2 defect tickets.
-2. Verified cutover and data reconciliation signed off by Chief Financial Officer and VP Operations.
-3. Minimum 95% user training attendance and proficiency certification completed across all departments.
-4. 30 consecutive days of incident-free production operation under hypercare support.
+Key Project Deliverables:
+* Detailed Solution Architecture & Data Integration Blueprint.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
+* Validated historical master data migration package (99.98% reconciliation rate).
+* Comprehensive training curriculum delivered to 450+ business users and functional admins.
+* User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.
 
 ---
 
@@ -105,7 +107,7 @@ Assumptions and Constraints:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
-| **Lead Technical Architect** | Alex Mercer (Lead Solution Architect) | [Electronically Signed] | 2026-03-18 |
+| **Lead Technical Architect** | Fahad Al-Subaie (Chief Solution Architect) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor / Client** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 ---
 

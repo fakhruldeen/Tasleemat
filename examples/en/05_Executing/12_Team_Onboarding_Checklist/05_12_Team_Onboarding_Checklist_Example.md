@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">TEAM ONBOARDING CHECKLIST</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,9 +15,10 @@
 ## Onboarding Tasks
 
 | Task | Assigned To | Due Date | Status |
-| Unified Cloud ERP Core Architecture | 2026-07-31 | 2026-04-01 | In Progress |
-| Automated Procurement & Smart Supply Chain Engine | 2026-10-31 | 2026-06-01 | Completed |
-| Executive Business Intelligence & Reporting Platform | 2026-12-31 | 2026-08-15 | Planned |
+| --- | --- | --- | --- |
+| Unified Cloud ERP Core Architecture | Elena Vance, PfMP | 2026-03-18 | In Progress |
+| Automated Procurement & Smart Supply Chain Engine | Faisal Al-Harbi, PMP | 2026-03-18 | Completed |
+| Executive Business Intelligence & Reporting Platform | Tariq Al-Mansoor, PfMP | 2026-03-18 | Planned |
 
 ---
 

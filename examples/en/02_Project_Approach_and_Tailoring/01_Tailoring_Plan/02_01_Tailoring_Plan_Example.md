@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - ASSESS-2026-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - ASSESS-2026-01</h2>
 <h1 dir="ltr" align="center">TAILORING PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **Methodology Lead:** Tariq Al-Mansoor, PfMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,13 +15,13 @@
 ## 1. Tailoring Basis
 <!-- What is being tailored from, what forces the change, what cannot be traded away, and what is inherited. -->
 
-**Organizational Methodology:** Fully documented and verified in accordance with enterprise governance baseline.
+**Organizational Methodology:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Tailoring Drivers:** Fully documented and verified in accordance with enterprise governance baseline.
+**Tailoring Drivers:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Applicable Standards:** Fully documented and verified in accordance with enterprise governance baseline.
+**Applicable Standards:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Inherited Tailoring:** Fully documented and verified in accordance with enterprise governance baseline.
+**Inherited Tailoring:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -29,22 +29,23 @@
 <!-- One row per decision: the default, what changes instead, why, what it costs, and what it affects. -->
 
 | Process or Artifact | Standard Requirement | Decision | Rationale | Consequence | Reversibility | Impact on Artifacts |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Rescheduling of operational pilot rollout date | Approved and aligned with governance baseline | Rescheduling of operational pilot rollout date |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Minor reallocation of cloud professional services | Approved and aligned with governance baseline | Minor reallocation of cloud professional services |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2-week schedule slippage on integration testing window |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Rescheduling of operational pilot rollout date |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Minor reallocation of cloud professional services |
 
 ---
 
 ## 3. Governance of Tailoring
 <!-- Who approves, when decisions are revisited, how compliance is checked, and how a baselined decision is changed. -->
 
-**Decision Authority:** Fully documented and verified in accordance with enterprise governance baseline.
+**Decision Authority:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Review and Reapproval:** Fully documented and verified in accordance with enterprise governance baseline.
+**Review and Reapproval:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Compliance Check:** Fully documented and verified in accordance with enterprise governance baseline.
+**Compliance Check:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Change Control Link:** Fully documented and verified in accordance with enterprise governance baseline.
+**Change Control Link:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 

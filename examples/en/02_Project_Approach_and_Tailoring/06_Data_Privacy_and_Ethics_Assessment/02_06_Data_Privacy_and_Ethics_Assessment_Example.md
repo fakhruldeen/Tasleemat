@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP Platform - ASSESS-2026-01</h2>
+<h2 dir="ltr" align="right">Apex Enterprise Nexus ERP Platform - ASSESS-2026-01</h2>
 <h1 dir="ltr" align="center">DATA PRIVACY AND ETHICS ASSESSMENT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Data Privacy Officer:** Abdulaziz Al-Zahrani (Data Protection Officer) | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -14,112 +14,116 @@
 ## 1. Scope, Data Inventory and Ownership
 <!-- What this assessment covers, what it does not, who owns and administers the data, what assets exist, and where the data moves. -->
 
-**Assessment Scope:** Fully documented and verified in accordance with enterprise governance baseline.
+**Assessment Scope:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Processing Out of Scope:** Fully documented and verified in accordance with enterprise governance baseline.
+**Processing Out of Scope:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Data Owners and Custodians:** Fully documented and verified in accordance with enterprise governance baseline.
+**Data Owners and Custodians:** Elena Vance, PfMP (Portfolio Transformation Director)
 
 **Data Inventory:**
 
 | Data Asset | Owner | Stated Purpose | Personal Data | Special Category | Volume and Refresh |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Elena Vance, PfMP | In Progress | Approved and aligned with governance baseline | Technical & Integration | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Completed | Approved and aligned with governance baseline | Operational & Functional | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Planned | Approved and aligned with governance baseline | Governance & Compliance | Approved and aligned with governance baseline |
 
-**Data Flow and Recipients:** Fully documented and verified in accordance with enterprise governance baseline.
+**Data Flow and Recipients:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 2. Lawful Basis and Purpose Limitation
 <!-- What each processing is for and why it needs the data it uses, the basis relied on per purpose, any use beyond the original purpose, and any decision made about a person automatically. -->
 
-**Processing Purposes and Necessity:** Fully documented and verified in accordance with enterprise governance baseline.
+**Processing Purposes and Necessity:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
 **Lawful Basis by Purpose:**
 
 | Purpose | Data Processed | Lawful Basis | Special Category Basis | Justification |
+| :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Technical & Integration | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational & Functional | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Governance & Compliance | Approved and aligned with governance baseline |
 
-**Purpose Compatibility and Secondary Use:** Fully documented and verified in accordance with enterprise governance baseline.
+**Purpose Compatibility and Secondary Use:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Automated Decision-Making:** Fully documented and verified in accordance with enterprise governance baseline.
+**Automated Decision-Making:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 3. Consent and Transparency
-<!-- How consent is requested, what it covers, how it is evidenced, how it is withdrawn, and what the people in the data are told. -->
 
-**Consent Mechanism:** Fully documented and verified in accordance with enterprise governance baseline.
 
-**Consent Specificity and Granularity:** Fully documented and verified in accordance with enterprise governance baseline.
+**Consent Mechanism:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Consent Recording and Evidence:** Fully documented and verified in accordance with enterprise governance baseline.
+**Consent Specificity and Granularity:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Withdrawal:** Fully documented and verified in accordance with enterprise governance baseline.
+**Consent Recording and Evidence:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Privacy Notices and Just-in-Time Disclosure:** Fully documented and verified in accordance with enterprise governance baseline.
+**Withdrawal:** Fully defined and validated in accordance with enterprise governance baseline.
+
+**Privacy Notices and Just-in-Time Disclosure:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 4. Individual Rights
-<!-- How a request for an individual's data is received, decided and answered in time, and what happens where the data has been derived, shared or used to build a model. -->
 
-**Rights Handling Process:** Fully documented and verified in accordance with enterprise governance baseline.
 
-**Identity Verification:** Fully documented and verified in accordance with enterprise governance baseline.
+**Rights Handling Process:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Response Timeframes and Escalation:** Fully documented and verified in accordance with enterprise governance baseline.
+**Identity Verification:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Rights Over Derived, Shared and Retired Data:** Fully documented and verified in accordance with enterprise governance baseline.
+**Response Timeframes and Escalation:** Fully defined and validated in accordance with enterprise governance baseline.
+
+**Rights Over Derived, Shared and Retired Data:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 5. Retention, Security and Sharing
-<!-- How long each asset is kept and on what basis, how deletion reaches every copy, who can reach the data, who else receives it, where it crosses a border, and what happens on a breach. -->
+
 
 **Retention Schedule:**
 
 | Data Asset | Retention Period | Basis for Period | Deletion Trigger | Deletion Verified |
+| :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | 2026-Q2 | 2026-Q2 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | 2026-Q3 | 2026-Q3 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | 2026-Q4 | 2026-Q4 | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
-**Deletion Mechanism and Coverage:** Fully documented and verified in accordance with enterprise governance baseline.
+**Deletion Mechanism and Coverage:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Backups and Derived Data:** Fully documented and verified in accordance with enterprise governance baseline.
+**Backups and Derived Data:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Access Controls and Least Privilege:** Fully documented and verified in accordance with enterprise governance baseline.
+**Access Controls and Least Privilege:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Encryption and Key Management:** Fully documented and verified in accordance with enterprise governance baseline.
+**Encryption and Key Management:** Fully defined and validated in accordance with enterprise governance baseline.
 
 **Third-Party Sharing:**
 
 | Recipient | Purpose | Data Shared | Contractual Safeguard | Region |
+| :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
-**Cross-Border Transfers:** Fully documented and verified in accordance with enterprise governance baseline.
+**Cross-Border Transfers:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Breach Notification:** Fully documented and verified in accordance with enterprise governance baseline.
+**Breach Notification:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 6. Ethics Beyond Compliance
 
 
-**Harm Beyond Legal Exposure:** Fully documented and verified in accordance with enterprise governance baseline.
+**Harm Beyond Legal Exposure:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Vulnerable Individuals and Groups:** Fully documented and verified in accordance with enterprise governance baseline.
+**Vulnerable Individuals and Groups:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Transparency to Affected People:** Fully documented and verified in accordance with enterprise governance baseline.
+**Transparency to Affected People:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Manipulation, Dark Patterns and Consent Fatigue:** Fully documented and verified in accordance with enterprise governance baseline.
+**Manipulation, Dark Patterns and Consent Fatigue:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Fairness of Automated Decisions:** Fully documented and verified in accordance with enterprise governance baseline.
+**Fairness of Automated Decisions:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -129,17 +133,18 @@
 **Findings Register:**
 
 | Finding | Risk to Individuals | Severity | Owner | Action |
+| :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | INIT-01 | Approved and aligned with governance baseline | Elena Vance, PfMP | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | REQ-02 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | ACT-03 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
 
-**Residual Risk and Acceptance:** Fully documented and verified in accordance with enterprise governance baseline.
+**Residual Risk and Acceptance:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Remediation Plan:** Fully documented and verified in accordance with enterprise governance baseline.
+**Remediation Plan:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Review Triggers:** Fully documented and verified in accordance with enterprise governance baseline.
+**Review Triggers:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Reassessment Triggers:** Fully documented and verified in accordance with enterprise governance baseline.
+**Reassessment Triggers:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 

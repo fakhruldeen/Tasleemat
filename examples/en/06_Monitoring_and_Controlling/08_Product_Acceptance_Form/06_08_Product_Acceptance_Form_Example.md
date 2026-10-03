@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">PRODUCT ACCEPTANCE FORM</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -16,10 +16,12 @@
 
 
 | ID | Requirement | Acceptance Criteria | Validation Method | Verification Method | Status | Sign-off | Date |
-| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 | Approved and aligned with governance baseline | In Progress | Approved and aligned with governance baseline | 2026-04-01 |
-| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 | Approved and aligned with governance baseline | Completed | Approved and aligned with governance baseline | 2026-06-01 |
-| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 | Approved and aligned with governance baseline | Planned | Approved and aligned with governance baseline | 2026-08-15 |
-| BEN-04 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | BEN-04 | Approved and aligned with governance baseline | Approved | Approved and aligned with governance baseline | 2026-10-01 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| INIT-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 | Approved and aligned with governance baseline | In Progress | [ Sign here... ] | 2026-03-18 |
+| REQ-02 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 | Approved and aligned with governance baseline | Completed | [ Sign here... ] | 2026-03-18 |
+| ACT-03 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 | Approved and aligned with governance baseline | Planned | [ Sign here... ] | 2026-03-18 |
+| BEN-04 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | BEN-04 | Approved and aligned with governance baseline | Approved | [ Sign here... ] | 2026-03-18 |
+| WBS-05 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | WBS-05 | Approved and aligned with governance baseline | In Progress | [ Sign here... ] | 2026-03-18 |
 
 
 <!--

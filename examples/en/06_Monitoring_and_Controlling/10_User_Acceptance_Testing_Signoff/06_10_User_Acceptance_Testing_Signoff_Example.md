@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">USER ACCEPTANCE TESTING SIGNOFF</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -16,31 +16,51 @@
 
 ### Test Summary
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Project Exit & Acceptance Criteria:
+1. 100% passing rate on UAT test cases with zero open Sev-1 or Sev-2 defect tickets.
+2. Verified cutover and data reconciliation signed off by Chief Financial Officer and VP Operations.
+3. Minimum 95% user training attendance and proficiency certification completed across all departments.
+4. 30 consecutive days of incident-free production operation under hypercare support.
 
 ---
 
 ### Testing Environment
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Project Exit & Acceptance Criteria:
+1. 100% passing rate on UAT test cases with zero open Sev-1 or Sev-2 defect tickets.
+2. Verified cutover and data reconciliation signed off by Chief Financial Officer and VP Operations.
+3. Minimum 95% user training attendance and proficiency certification completed across all departments.
+4. 30 consecutive days of incident-free production operation under hypercare support.
 
 ---
 
 ### Pass/Fail Criteria
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Project Exit & Acceptance Criteria:
+1. 100% passing rate on UAT test cases with zero open Sev-1 or Sev-2 defect tickets.
+2. Verified cutover and data reconciliation signed off by Chief Financial Officer and VP Operations.
+3. Minimum 95% user training attendance and proficiency certification completed across all departments.
+4. 30 consecutive days of incident-free production operation under hypercare support.
 
 ---
 
 ### Known Defects
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Project Exit & Acceptance Criteria:
+1. 100% passing rate on UAT test cases with zero open Sev-1 or Sev-2 defect tickets.
+2. Verified cutover and data reconciliation signed off by Chief Financial Officer and VP Operations.
+3. Minimum 95% user training attendance and proficiency certification completed across all departments.
+4. 30 consecutive days of incident-free production operation under hypercare support.
 
 ---
 
 ### Business Owner Sign-off
 
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Project Exit & Acceptance Criteria:
+1. 100% passing rate on UAT test cases with zero open Sev-1 or Sev-2 defect tickets.
+2. Verified cutover and data reconciliation signed off by Chief Financial Officer and VP Operations.
+3. Minimum 95% user training attendance and proficiency certification completed across all departments.
+4. 30 consecutive days of incident-free production operation under hypercare support.
 
 ---
 
@@ -48,7 +68,7 @@ This section has been thoroughly defined and documented in accordance with the T
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Quality Assurance (QA) Manager** | Noura Al-Sayed (QA Director) | [Electronically Signed] | 2026-03-18 |
+| **Quality Assurance (QA) Manager** | Noura Al-Sayed (Director of Quality Assurance) | [Electronically Signed] | 2026-03-18 |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **Client Representative / Business Owner** | Nasser Al-Ghamdi (Commercial Client Director) | [Electronically Signed] | 2026-03-18 |
 ---

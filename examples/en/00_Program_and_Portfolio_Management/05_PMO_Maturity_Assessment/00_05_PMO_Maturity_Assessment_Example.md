@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Enterprise PMO & Transformation Office - 2026 Annual Audit</h2>
+<h2 dir="ltr" align="right">Approved - PMO Name - 2026 Annual Audit</h2>
 <h1 dir="ltr" align="center">PMO MATURITY ASSESSMENT</h1>
 
 | **Date Prepared:** 2026-03-15 | **PMO Director:** Tariq Al-Mansoor, PfMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,13 +15,13 @@
 ## Assessment Context
 
 **Assessment Purpose and Scope:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
 
 **Assessment Lead and Date:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
 
 **Target Maturity Level:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+The purpose of this project is to consolidate, modernize, and automate Apex Global Solutions' end-to-end supply chain, financial management, and operational workflows by deploying a state-of-the-art cloud-native ERP platform (Apex Enterprise Nexus). This initiative directly eliminates data silos from legacy systems, achieves a projected annual operational savings of $1.15M USD, reduces order cycle times by 40%, and directly advances Enterprise Strategic Pillar 1 (Digital Agility & Operational Excellence).
 
 ---
 
@@ -62,7 +62,7 @@ This section has been thoroughly defined and documented in accordance with the T
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **PMO Director** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
-| **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
+| **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |
 | **Lead Assessor** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 ---
 

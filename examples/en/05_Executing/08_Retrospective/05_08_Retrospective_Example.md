@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">RETROSPECTIVE</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -16,9 +16,8 @@
 <!-- A retrospective that does not say which sprint it covers cannot be compared with the previous one, and someone who was not in the room cannot act on what was agreed. -->
 
 | Sprint or Iteration | Team Members Present | Date |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-04-01 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-01 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-08-15 |
+| ---: | ---: | ---: |
+| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-06-30 |
 
 ---
 
@@ -26,10 +25,13 @@
 <!-- One item per row, one sentence each. The columns are not interchangeable: Stop means cease and Less means too much of something, so putting the same item in both to hedge is how a retrospective stops being honest. Add or remove rows as needed. -->
 
 | Start | Stop | Keep | More | Less |
-| 2026-04-01 | 2026-07-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-06-01 | 2026-10-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-08-15 | 2026-12-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| 2026-10-01 | 2027-03-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| ---: | ---: | ---: | ---: | ---: |
+| 2026-04-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| 2026-06-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| 2026-08-15 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| 2026-10-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| 2026-12-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| 2026-04-01 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -37,10 +39,11 @@
 <!-- Every action taken from the Start, Stop, More, and Less columns, with one named owner and a review date. Carry each row into the next retrospective and fill in the outcome: an action reviewed only once is an action nobody checked, and a retrospective without an outcome column becomes a ritual rather than a feedback loop. -->
 
 | Action | Owner | By When | Outcome |
+| ---: | ---: | ---: | ---: |
 | Approved and aligned with governance baseline | Elena Vance, PfMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Sultan Al-Dossary (VP Operations) | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | Sultan Al-Dossary | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -51,9 +54,8 @@
 ---
 
 | Accomplishments | Problems | Lessons | Future Considerations |
+| ---: | ---: | ---: | ---: |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 |
 
 ## 5. Sign-off and Approvals
 

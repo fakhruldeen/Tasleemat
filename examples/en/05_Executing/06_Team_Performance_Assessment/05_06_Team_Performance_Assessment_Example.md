@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">TEAM PERFORMANCE ASSESSMENT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP |
@@ -22,45 +22,47 @@
 ## 1. Technical Performance
 
 | Dimension | Rating | Comments |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| :--- | :--- | :--- |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
 
 ---
 
 ## 2. Interpersonal Competency
 
 | Dimension | Rating | Comments |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| :--- | :--- | :--- |
+| **Communication** | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| **Collaboration** | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| **Conflict management** | Resolve team operational conflicts; escalate strategic disputes to Steering Committee | Resolve team operational conflicts; escalate strategic disputes to Steering Committee |
+| **Decision making** | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 
 ## 3. Team Characteristics
 
 | Characteristic | Rating | Comments |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
+| :--- | :--- | :--- |
+| **Team Morale** | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| **Cohesiveness** | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
 
 ---
 
 ## 4. Team Strengths and Weaknesses
 
 | Area | Rating | Comments |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
+| :--- | :--- | :--- |
+| **Strengths** | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| **Weaknesses** | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
 
 ---
 
 ## 5. Areas for Development
 
 | Area | Approach | Actions |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 

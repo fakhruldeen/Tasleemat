@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">RISK REPORT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -31,13 +31,16 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 ## 2. Critical Threats and Opportunities Summary
 
 **Top Project Threats and Active Responses:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Overall Project Risk Assessment:
+Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
 
 **Top Project Opportunities and Capture Plans:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Overall Project Risk Assessment:
+Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
 
 **Realized Risks Transferred to Issue Log:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Overall Project Risk Assessment:
+Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
 
 ---
 
@@ -73,7 +76,7 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Risk Manager** | Layla Al-Amri, PMI-RMP | [Electronically Signed] | 2026-03-18 |
+| **Risk Manager** | Layla Al-Omari, PMI-RMP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 ---

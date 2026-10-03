@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Apex Cognitive Operations Assistant - UC-AI-2026-04</h2>
+<h2 dir="ltr" align="right">Apex Enterprise Cognitive Assistant (AECA) - UC-AI-2026-04</h2>
 <h1 dir="ltr" align="center">AI USE CASE CANVAS</h1>
 
 | **Date Prepared:** 2026-03-15 | **AI Product Owner:** Mariam Al-Khatib (AI Product Lead) | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,30 +15,30 @@
 ## 1. Use Case Identification
 <!-- What this is called, who owns the outcome, the problem in the words of the person who has it, who it affects, and what people do today. -->
 
-**Use Case Name:** Fully documented and verified in accordance with enterprise governance baseline.
+**Use Case Name:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Business Owner:** Fully documented and verified in accordance with enterprise governance baseline.
+**Business Owner:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Problem Statement:** Fully documented and verified in accordance with enterprise governance baseline.
+**Problem Statement:** Version 1.0 (Formally Approved)
 
-**Affected Population:** Fully documented and verified in accordance with enterprise governance baseline.
+**Affected Population:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Current Workaround:** Fully documented and verified in accordance with enterprise governance baseline.
+**Current Workaround:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 2. Proposed Solution
 <!-- The class of approach, what the system does in terms a non-specialist can check, what a person still does, what is out of scope, and what must be true for it to work. -->
 
-**AI Pattern:** Fully documented and verified in accordance with enterprise governance baseline.
+**AI Pattern:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Solution Description:** Fully documented and verified in accordance with enterprise governance baseline.
+**Solution Description:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Human Role:** Fully documented and verified in accordance with enterprise governance baseline.
+**Human Role:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Scope Boundary:** Fully documented and verified in accordance with enterprise governance baseline.
+**Scope Boundary:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Assumptions:** Fully documented and verified in accordance with enterprise governance baseline.
+**Assumptions:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
@@ -46,6 +46,7 @@
 <!-- One row per source: where it comes from, what it is, what is known about its quality, what labelling is required, and what use is permitted. -->
 
 | Data Source | Data Category and Volume | Data Quality Status | Labelling Requirement | Permitted Use and Access |
+| :--- | :--- | :--- | :--- | :--- |
 | Approved and aligned with governance baseline | Technical & Integration | In Progress | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Operational & Functional | Completed | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Approved and aligned with governance baseline | Governance & Compliance | Planned | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
@@ -55,34 +56,34 @@
 ## 4. Value and Cost
 <!-- The value, how it will be measured and against what baseline, who gains and who bears the cost, and the build and operating costs kept separate. -->
 
-**Value Proposition:** Fully documented and verified in accordance with enterprise governance baseline.
+**Value Proposition:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Value Measurement Method:** Fully documented and verified in accordance with enterprise governance baseline.
+**Value Measurement Method:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Beneficiaries:** Fully documented and verified in accordance with enterprise governance baseline.
+**Beneficiaries:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Build Cost:** Fully documented and verified in accordance with enterprise governance baseline.
+**Build Cost:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Operating Cost:** Fully documented and verified in accordance with enterprise governance baseline.
+**Operating Cost:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Value Realisation Condition:** Fully documented and verified in accordance with enterprise governance baseline.
+**Value Realisation Condition:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 
 ## 5. Risks, Controls and Governance Route
 <!-- The risks specific to this use case and what they would cause, what is in place and what it does not cover, whether it is feasible, which governance it passes through, and what would stop it. -->
 
-**Key Risks:** Fully documented and verified in accordance with enterprise governance baseline.
+**Key Risks:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Risk Controls:** Fully documented and verified in accordance with enterprise governance baseline.
+**Risk Controls:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Feasibility Assessment:** Fully documented and verified in accordance with enterprise governance baseline.
+**Feasibility Assessment:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Governance Route:** Fully documented and verified in accordance with enterprise governance baseline.
+**Governance Route:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Kill Criteria:** Fully documented and verified in accordance with enterprise governance baseline.
+**Kill Criteria:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Related Artefacts:** Fully documented and verified in accordance with enterprise governance baseline.
+**Related Artefacts:** Fully defined and validated in accordance with enterprise governance baseline.
 
 ---
 

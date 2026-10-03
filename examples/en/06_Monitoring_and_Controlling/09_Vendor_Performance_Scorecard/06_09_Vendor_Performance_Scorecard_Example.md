@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">VENDOR PERFORMANCE SCORECARD</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,6 +15,7 @@
 ## Vendor Performance Scorecard Entries
 
 | Metric/KPI | Target Score | Actual Score | Variance | Corrective Action |
+| --- | --- | --- | --- | --- |
 | Zero critical production defects at release | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Annual recurring operational savings >= $950K USD | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 | Sub-second transaction response latency (< 800ms) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
@@ -25,7 +26,7 @@
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Procurement Manager** | Mansoor Al-Shehri (Head of Procurement) | [Electronically Signed] | 2026-03-18 |
+| **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Vendor Representative** | Robert Vance (Apex Global Services Lead) | [Electronically Signed] | 2026-03-18 |
 ---

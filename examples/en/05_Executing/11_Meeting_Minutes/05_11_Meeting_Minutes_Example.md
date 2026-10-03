@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">MEETING MINUTES</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -41,9 +41,10 @@ This section has been thoroughly defined and documented in accordance with the T
 ## Action Items
 
 | Action | Owner | Due Date | Status |
-| Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-04-01 | In Progress |
-| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-06-01 | Completed |
-| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-08-15 | Planned |
+| --- | --- | --- | --- |
+| Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-03-18 | In Progress |
+| Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-03-18 | Completed |
+| Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-03-18 | Planned |
 
 ---
 

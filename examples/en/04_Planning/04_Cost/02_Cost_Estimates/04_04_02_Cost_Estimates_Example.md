@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">COST ESTIMATES</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,16 +15,36 @@
 ## 1. Activity and Work Package Cost Breakdown
 
 **Activity Identifier and Description:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Direct Labor Cost Estimate:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Materials and Equipment Cost Estimate:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Total Base Cost Estimate:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 ---
 
@@ -64,7 +84,7 @@ This section has been thoroughly defined and documented in accordance with the T
 | :--- | :--- | :--- | :--- |
 | **Cost Estimator** | Zaid Al-Ghamdi, CCEA | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
-| **Finance Controller** | Bader Al-Mutairi (Finance Controller) | [Electronically Signed] | 2026-03-18 |
+| **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">COST BASELINE</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,13 +15,28 @@
 ## 1. Time-Phased Cost Baseline (S-Curve)
 
 **Reporting Period and Planned Expenditures:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Cumulative Planned Value (S-Curve PV):**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Budget at Completion (BAC) Total:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 ---
 
@@ -48,18 +63,20 @@ Preapproved Financial Resources & Budget Envelope:
 ## 3. Project Funding Requirements and Limits
 
 **Periodic Funding Requirements:**
-High-Level System & Business Requirements:
-* Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and enterprise accounting standards.
-* System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
-* Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Management Reserve and Total Project Budget:**
-High-Level System & Business Requirements:
-* Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and enterprise accounting standards.
-* System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
-* Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 ---
 
@@ -68,7 +85,7 @@ High-Level System & Business Requirements:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
-| **Finance Controller / CFO** | Bader Al-Mutairi (Finance Controller) | [Electronically Signed] | 2026-03-18 |
+| **Finance Controller / CFO** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 ---
 

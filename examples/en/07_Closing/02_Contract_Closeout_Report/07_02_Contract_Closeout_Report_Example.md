@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">CONTRACT CLOSEOUT REPORT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -25,10 +25,11 @@ contract is also closed, but the performance record is interpreted differently.
 - **Closeout Status:** completed or terminated, and the date closure was initiated. -->
 
 | Field | Entry |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- |
+| **Contract Reference** | Approved and aligned with governance baseline |
+| **Vendor** | Approved and aligned with governance baseline |
+| **Contract Type and Value** | Approved and aligned with governance baseline |
+| **Closeout Status** | Approved and aligned with governance baseline |
 
 ---
 
@@ -36,10 +37,12 @@ contract is also closed, but the performance record is interpreted differently.
 
 
 | Dimension | What Was Handled Well | Evidence or Example |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | BEN-04 |
+| :--- | :--- | :--- |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
+| **Other** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
 
 
 
@@ -49,10 +52,12 @@ contract is also closed, but the performance record is interpreted differently.
 
 
 | Dimension | What Could Be Improved | Recommended Action |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-07-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-10-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-12-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2027-03-31 |
+| :--- | :--- | :--- |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
+| **Other** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
 
 <!--
 Comment guidance: State the deficiency, its effect, and what should be done instead.
@@ -64,9 +69,10 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 
 | Change ID | Change Description | Date Approved |
-| CR-2026-01 | Deploy hardened cloud environment and master databases | 2026-04-01 |
-| CR-2026-02 | Automate procurement requisition and inventory workflows | 2026-06-01 |
-| CR-2026-03 | Build interactive executive dashboards and KPI reports | 2026-08-15 |
+| :--- | :--- | :--- |
+| CR-2026-01 | Deploy hardened cloud environment and master databases | 2026-06-30 |
+| CR-2026-02 | Automate procurement requisition and inventory workflows | 2026-09-30 |
+| CR-2026-03 | Build interactive executive dashboards and KPI reports | 2026-11-30 |
 
 
 
@@ -76,9 +82,10 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 
 | Dispute Description | Resolution | Date Resolved |
-| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-04-01 |
-| Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-06-01 |
-| Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | 2026-08-15 |
+| :--- | :--- | :--- |
+| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | 2026-06-30 |
+| Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | 2026-09-30 |
+| Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | 2026-11-30 |
 
 
 
@@ -88,9 +95,10 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 
 | Field | Entry |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- |
+| **Contract Completion Date** | Approved and aligned with governance baseline |
+| **Signed Off By** | Approved and aligned with governance baseline |
+| **Final Payment Date** | Approved and aligned with governance baseline |
 
 <!--
 Comment guidance: All disputes must be resolved, the result accepted, and final payment made before closure.
@@ -110,9 +118,9 @@ the project closeout report. -->
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Contract Manager** | Mansoor Al-Shehri (Senior Contracts Manager) | [Electronically Signed] | 2026-03-18 |
-| **Procurement Manager** | Mansoor Al-Shehri (Head of Procurement) | [Electronically Signed] | 2026-03-18 |
-| **Finance Controller / Legal Counsel** | Bader Al-Mutairi (Finance Controller) | [Electronically Signed] | 2026-03-18 |
+| **Contract Manager** | Approved - Contract Manager Name | [Electronically Signed] | 2026-03-18 |
+| **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
+| **Finance Controller / Legal Counsel** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

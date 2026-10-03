@@ -57,7 +57,7 @@ This section has been thoroughly defined and documented in accordance with the T
 | :--- | :--- | :--- | :--- |
 | **Head of Strategy / PMO** | Dr. Tariq Al-Mansoor (Chief Strategy Officer) | [Electronically Signed] | 2026-03-18 |
 | **Portfolio Manager** | Elena Vance, PfMP | [Electronically Signed] | 2026-03-18 |
-| **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
+| **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

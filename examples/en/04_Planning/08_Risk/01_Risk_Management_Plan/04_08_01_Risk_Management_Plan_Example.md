@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">RISK MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -27,12 +27,20 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 ## 2. Risk Roles, Responsibilities, and Funding
 
 **Risk Roles and Responsibilities:**
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Risk Budgeting and Contingency Funding:**
-Overall Project Risk Assessment:
-Overall risk is classified as 'Moderate-High' due to multi-system integration complexity and cross-departmental change impact. Key mitigation actions include dedicated middleware squads, a phased regional rollout strategy (Pilot first), a 10% contingency management reserve, and active weekly risk reviews with the executive steering board.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 ---
 
@@ -74,7 +82,7 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
-| **Risk Manager / Officer** | Layla Al-Amri, PMI-RMP | [Electronically Signed] | 2026-03-18 |
+| **Risk Manager / Officer** | Layla Al-Omari, PMI-RMP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 ---

@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">COST MANAGEMENT PLAN</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,10 +15,20 @@
 ## 1. Cost Management Approach and Methodology
 
 **Cost Estimating and Budgeting Methodology:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Cost Accounting and Tracking Software:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 ---
 
@@ -55,10 +65,20 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 5. Cost Variance Thresholds and Reporting
 
 **Cost Variance Thresholds and Escalations:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Cost Reporting Cadence and Formats:**
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 ---
 
@@ -67,7 +87,7 @@ This section has been thoroughly defined and documented in accordance with the T
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
-| **Finance Controller** | Bader Al-Mutairi (Finance Controller) | [Electronically Signed] | 2026-03-18 |
+| **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 ---
 

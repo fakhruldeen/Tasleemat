@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">PROCUREMENT AUDIT REPORT</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -15,39 +15,45 @@
 ## 1. Audit Information
 
 | Field | Entry |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- |
+| **Procurements or Contracts Audited** | Approved and aligned with governance baseline |
+| **Audit Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Period Covered** | Approved and aligned with governance baseline |
+| **Audit Method** | Approved and aligned with governance baseline |
 
 ---
 
 ## 2. Vendor Performance Audit - What Worked Well
 
 | Dimension | What Was Handled Well | Evidence or Example |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | INIT-01 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | REQ-02 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | ACT-03 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | BEN-04 |
+| :--- | :--- | :--- |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
+| **Other** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
 
 ---
 
 ## 3. Vendor Performance Audit - What Can Be Improved
 
 | Dimension | What Could Be Improved | Recommended Action |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-07-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-10-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-12-31 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2027-03-31 |
+| :--- | :--- | :--- |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
+| **Other** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
 
 ---
 
 ## 4. Procurement Management Process Audit
 
 | Procurement Process | Followed as Planned? | Tools and Techniques Used | Effective? |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-07-31 | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-10-31 | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-12-31 | Approved and aligned with governance baseline |
+| :--- | :--- | :--- | :--- |
+| **Plan Procurements** | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Conduct Procurements** | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Control Procurements** | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -59,9 +65,10 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 6. Areas for Improvement
 
 | Area for Improvement | Recommended Change | Owner | Reference |
-| Approved and aligned with governance baseline | 2026-07-31 | Elena Vance, PfMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-10-31 | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | 2026-12-31 | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
+| :--- | :--- | :--- | :--- |
+| Approved and aligned with governance baseline | 2026-06-30 | Elena Vance, PfMP | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2026-09-30 | Faisal Al-Harbi, PMP | Approved and aligned with governance baseline |
+| Approved and aligned with governance baseline | 2026-11-30 | Tariq Al-Mansoor, PfMP | Approved and aligned with governance baseline |
 
 ---
 
@@ -75,8 +82,8 @@ This section has been thoroughly defined and documented in accordance with the T
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Lead Procurement Auditor** | Adel Al-Mutairi, CIA | [Electronically Signed] | 2026-03-18 |
-| **Procurement Manager** | Mansoor Al-Shehri (Head of Procurement) | [Electronically Signed] | 2026-03-18 |
-| **Finance Controller** | Bader Al-Mutairi (Finance Controller) | [Electronically Signed] | 2026-03-18 |
+| **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
+| **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

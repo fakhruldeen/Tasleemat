@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">CHANGE REQUEST</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP |
@@ -37,23 +37,29 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 3. Change Details
 
 ### 3.1 Description of Change
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Change Management & Stakeholder Enablement:
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
 
 ### 3.2 Justification for Proposed Change
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Change Management & Stakeholder Enablement:
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
 
 ### 3.3 Implications of Not Making the Change
-This section has been thoroughly defined and documented in accordance with the Tasleemat PMO framework and PMI global delivery standards. All specifications reflect verified enterprise operational parameters for Apex Global Solutions.
+Change Management & Stakeholder Enablement:
+A structured Prosci ADKAR change campaign engages 450+ enterprise users across branches via bi-weekly newsletters, hands-on sandbox labs, and train-the-trainer workshops.
 
 ---
 
 ## 4. Impacts of Change
 
 | Area | Impact Type | Impact Description |
-| Approved and aligned with governance baseline | Technical & Integration | 2-week schedule slippage on integration testing window |
-| Approved and aligned with governance baseline | Operational & Functional | Rescheduling of operational pilot rollout date |
-| Approved and aligned with governance baseline | Governance & Compliance | Minor reallocation of cloud professional services |
-| Approved and aligned with governance baseline | Cloud Infrastructure | 2-week schedule slippage on integration testing window |
+| :--- | :--- | :--- |
+| **Scope** | [ + / - / M ] | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Quality** | [ + / - / M ] | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Requirements** | [ + / - / M ] | Minor reallocation of cloud professional services |
+| **Cost** | [ + / - / M ] | Execute project within pre-approved $3,500,000 USD budget envelope |
+| **Schedule** | [ + / - / M ] | Complete end-to-end system rollout and cutover within 18 months |
+| **Project documents** | [ + / - / M ] | Rescheduling of operational pilot rollout date |
 
 *Legend: [+] Increase, [-] Decrease, [M] Modify*
 

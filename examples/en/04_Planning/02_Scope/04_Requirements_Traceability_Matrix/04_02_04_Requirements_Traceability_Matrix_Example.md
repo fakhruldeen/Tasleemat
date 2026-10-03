@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">REQUIREMENTS TRACEABILITY MATRIX</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -70,7 +70,7 @@ High-Level System & Business Requirements:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Requirements Analyst Lead** | Sarah Jenkins, CBAP | [Electronically Signed] | 2026-03-18 |
-| **Quality Assurance (QA) Lead** | Noura Al-Sayed (QA Lead) | [Electronically Signed] | 2026-03-18 |
+| **Quality Assurance (QA) Lead** | Noura Al-Sayed (Director of Quality Assurance) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 ---
 

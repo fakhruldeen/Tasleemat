@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">VARIANCE ANALYSIS</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP |
@@ -15,10 +15,11 @@
 ## 1. Variance Analysis Table
 
 | Category | Planned Result | Actual Result | Variance | Root Cause | Planned Response |
-| Technical & Integration | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Operational & Functional | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Governance & Compliance | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Cloud Infrastructure | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
+| **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
+| **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Scope** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
 
 ---
 
@@ -45,8 +46,8 @@ This section has been thoroughly defined and documented in accordance with the T
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
-| **Cost & Schedule Controller** | Bader Al-Mutairi (Finance Controller) | [Electronically Signed] | 2026-03-18 |
-| **Finance Controller** | Bader Al-Mutairi (Finance Controller) | [Electronically Signed] | 2026-03-18 |
+| **Cost & Schedule Controller** | Bader Al-Mutairi (Chief Financial Officer) | [Electronically Signed] | 2026-03-18 |
+| **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">

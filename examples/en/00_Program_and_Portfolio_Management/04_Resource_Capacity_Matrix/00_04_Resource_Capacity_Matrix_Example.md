@@ -7,7 +7,7 @@
 <h2 dir="ltr" align="right">Information Technology & Enterprise Operations - 2026-Q1 to 2027-Q4</h2>
 <h1 dir="ltr" align="center">RESOURCE CAPACITY MATRIX</h1>
 
-| **Date Prepared:** 2026-03-15 | **Program Manager:** Eng. Khalid Al-Otaibi, PgMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
+| **Date Prepared:** 2026-03-15 | **Program Manager:** Khalid Al-Otaibi, PgMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
 | :--- | :--- | :--- |  
 
 ---
@@ -22,17 +22,17 @@
  is the source of truth or an extract from a resourcing tool, so a reader does
  not treat a stale extract as current. -->
 
-**Matrix Scope and Level:** Fully documented and verified in accordance with enterprise governance baseline.
+**Matrix Scope and Level:** Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.
 
-**Capacity Unit of Measure:** Fully documented and verified in accordance with enterprise governance baseline.
+**Capacity Unit of Measure:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Periods Covered:** Fully documented and verified in accordance with enterprise governance baseline.
+**Periods Covered:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
 
-**Source of Truth or Extract:** Fully documented and verified in accordance with enterprise governance baseline.
+**Source of Truth or Extract:** Fully defined and validated in accordance with enterprise governance baseline.
 
-**Matrix Owner:** Fully documented and verified in accordance with enterprise governance baseline.
+**Matrix Owner:** Elena Vance, PfMP (Portfolio Transformation Director)
 
-**Last Updated:** Fully documented and verified in accordance with enterprise governance baseline.
+**Last Updated:** 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)
 
 ---
 
@@ -50,10 +50,12 @@
  remove rows as needed. -->
 
 | ID | Resource Role or Team | Period | Total Available | Allocated | Remaining | Constraints or Single Points of Failure | Notes |
-| INIT-01 | Approved and aligned with governance baseline | 2026-Q2 | 2026-07-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| REQ-02 | Approved and aligned with governance baseline | 2026-Q3 | 2026-10-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| ACT-03 | Approved and aligned with governance baseline | 2026-Q4 | 2026-12-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| BEN-04 | Approved and aligned with governance baseline | 2027-Q1 | 2027-03-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Strategic executive oversight and resource authorization | 2026-Q2 | 60 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Business process owner and final acceptance authority | 2026-Q3 | 40 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| ACT-03 | Primary commercial user champion and UAT stakeholder | 2026-Q4 | 50 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
+| BEN-04 | Regulatory compliance and data governance validator | 2027-Q1 | 60 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
+| WBS-05 | Strategic executive oversight and resource authorization | 2027-Q2 | 60 FTE Hours (Buffer) | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 
 ---
 
@@ -61,10 +63,11 @@
 
 
 | ID | Resource Role | Period | Required Capacity | Source of Demand | Priority |
-| INIT-01 | Approved and aligned with governance baseline | 2026-Q2 | 480 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| REQ-02 | Approved and aligned with governance baseline | 2026-Q3 | 620 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| ACT-03 | Approved and aligned with governance baseline | 2026-Q4 | 540 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| BEN-04 | Approved and aligned with governance baseline | 2027-Q1 | 480 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | Strategic executive oversight and resource authorization | 2026-Q2 | 480 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| REQ-02 | Business process owner and final acceptance authority | 2026-Q3 | 620 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| ACT-03 | Primary commercial user champion and UAT stakeholder | 2026-Q4 | 540 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| BEN-04 | Regulatory compliance and data governance validator | 2027-Q1 | 500 FTE Hours / mo | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
 
 ---
 
@@ -79,10 +82,11 @@
  than leaving the row open. Add or remove rows as needed. -->
 
 | Resource Role | Gap | Period | Resolution Planned | Resolution Owner | Resolution Date |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-Q2 | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-04-01 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-Q3 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-06-01 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2026-Q4 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-08-15 |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | 2027-Q1 | Approved and aligned with governance baseline | Sultan Al-Dossary (VP Operations) | 2026-10-01 |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| Strategic executive oversight and resource authorization | Approved and aligned with governance baseline | 2026-Q2 | Approved and aligned with governance baseline | Elena Vance, PfMP | 2026-06-30 |
+| Business process owner and final acceptance authority | Approved and aligned with governance baseline | 2026-Q3 | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
+| Primary commercial user champion and UAT stakeholder | Approved and aligned with governance baseline | 2026-Q4 | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | 2026-11-30 |
+| Regulatory compliance and data governance validator | Approved and aligned with governance baseline | 2027-Q1 | Approved and aligned with governance baseline | Sultan Al-Dossary | 2027-01-31 |
 
 ---
 
@@ -90,9 +94,10 @@
 
 
 | Resource Role | Contingency Type | Contingency Amount | How It Would Be Used |
-| Approved and aligned with governance baseline | Technical & Integration | $950,000 USD | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Operational & Functional | $1,150,000 USD | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Governance & Compliance | $780,000 USD | Approved and aligned with governance baseline |
+| ---: | ---: | ---: | ---: |
+| Strategic executive oversight and resource authorization | Technical & Integration | $950,000 USD | Approved and aligned with governance baseline |
+| Business process owner and final acceptance authority | Operational & Functional | $1,150,000 USD | Approved and aligned with governance baseline |
+| Primary commercial user champion and UAT stakeholder | Governance & Compliance | $780,000 USD | Approved and aligned with governance baseline |
 
 ---
 
@@ -101,7 +106,7 @@
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Resource Planning Lead** | Sami Al-Ghamdi (Resource Management Lead) | [Electronically Signed] | 2026-03-18 |
-| **Program Manager** | Eng. Khalid Al-Otaibi, PgMP | [Electronically Signed] | 2026-03-18 |
+| **Program Manager** | Khalid Al-Otaibi, PgMP | [Electronically Signed] | 2026-03-18 |
 | **PMO Director** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 ---
 

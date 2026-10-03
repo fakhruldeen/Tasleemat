@@ -4,7 +4,7 @@
 ---
 
 <h3 dir="ltr" align="right">Apex Global Solutions</h3>
-<h2 dir="ltr" align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 dir="ltr" align="center">LESSONS LEARNED SUMMARY</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -16,10 +16,22 @@
 <!-- Two columns, one for what worked well and one for what can be improved. Take each row from the knowledge area named in the first column. Record the practice itself rather than the meeting in which it was discussed, because the next project needs something it can adopt. Where a response failed, record the failure, since a summary of successes alone is of no use. Where a knowledge area has nothing worth recording, say so plainly instead of inventing an entry. Specific risks, defects, and vendor disputes belong in the sections below; cross-reference them here rather than repeating them. -->
 
 | Knowledge Area | What Worked Well | What Can Be Improved |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
-| Approved and aligned with governance baseline | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| :--- | :--- | :--- |
+| **Requirements Definition and Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Scope Definition and Management** | Deploy and integrate unified cloud ERP platform across all enterprise units | Deploy and integrate unified cloud ERP platform across all enterprise units |
+| **Schedule Development and Control** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
+| **Cost Estimating and Control** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
+| **Quality Planning and Control** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
+| **Physical Resource Planning and Control** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Team Planning, Development, and Performance** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Communications Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Reporting** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Risk Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Procurement Planning and Management** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Stakeholder Engagement** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Process Improvement Information** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Product-Specific Information** | Approved and aligned with governance baseline | Approved and aligned with governance baseline |
+| **Other** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
 
 <!-- Column guidance, by row:
 - **Requirements Definition and Management**
@@ -79,10 +91,11 @@
 -->
 
 | Risk or Issue Description | Response | Comments |
+| :--- | :--- | :--- |
 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
 | Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| Conduct comprehensive end-user enablement workshops | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 
@@ -94,10 +107,11 @@
 -->
 
 | Defect Description | Resolution | Comments |
+| :--- | :--- | :--- |
 | Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 | Automate procurement requisition and inventory workflows | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
 | Build interactive executive dashboards and KPI reports | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| Deploy hardened cloud environment and master databases | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| Conduct comprehensive end-user enablement workshops | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 
@@ -110,10 +124,11 @@
 -->
 
 | Vendor | Issue | Resolution | Comments |
-| 2026-07-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
-| 2026-10-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
-| 2026-12-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
-| 2027-03-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| :--- | :--- | :--- | :--- |
+| 2026-06-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Validated against enterprise ISO27001 cloud security standards. |
+| 2026-09-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Weekly steering coordination meetings on schedule. |
+| 2026-11-30 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Contingency reserve allocated for critical path dependencies. |
+| 2027-01-31 | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Operational KPIs performing within target tolerance. |
 
 ---
 

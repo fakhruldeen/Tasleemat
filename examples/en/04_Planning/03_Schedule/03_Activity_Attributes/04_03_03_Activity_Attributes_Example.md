@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">ACTIVITY ATTRIBUTES</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP | **Prepared By:** Faisal Al-Harbi, PMP (Senior Project Manager) |
@@ -38,18 +38,20 @@ This section has been thoroughly defined and documented in accordance with the T
 ## 3. Resource and Skill Requirements
 
 **Required Team Roles and Headcount:**
-High-Level System & Business Requirements:
-* Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and enterprise accounting standards.
-* System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
-* Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 **Technical Skills and Equipment Needed:**
-High-Level System & Business Requirements:
-* Sub-second transaction response latency under peak load of 1,200 concurrent active users.
-* Full compliance with national e-invoicing mandates and enterprise accounting standards.
-* System availability SLA of >= 99.95% with Disaster Recovery Recovery Time Objective (RTO) < 2 hours.
-* Role-based access control (RBAC), multi-factor authentication, and end-to-end audit logging.
+Preapproved Financial Resources & Budget Envelope:
+* Total Approved Capital & Operational Envelope: **$3,500,000 USD**, structured as:
+  - Cloud SaaS Licensing & Infrastructure Subscription: $1,350,000 USD.
+  - Systems Integration & Professional Engineering Services: $1,450,000 USD.
+  - Organizational Change Management & User Enablement: $350,000 USD.
+  - Management Contingency Reserve (10%): $350,000 USD.
 
 ---
 
@@ -72,7 +74,7 @@ Assumptions and Constraints:
 | Role | Name | Signature | Date |
 | :--- | :--- | :--- | :--- |
 | **Project Planner / Scheduler** | Ibrahim Al-Dosari, PMI-SP | [Electronically Signed] | 2026-03-18 |
-| **Technical Lead** | Alex Mercer (Technical Lead) | [Electronically Signed] | 2026-03-18 |
+| **Technical Lead** | Fahad Al-Subaie (Chief Solution Architect) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 ---
 

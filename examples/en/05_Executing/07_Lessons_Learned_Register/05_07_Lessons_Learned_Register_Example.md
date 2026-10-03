@@ -4,7 +4,7 @@
 ---
 
 <h3 align="right">Apex Global Solutions</h3>
-<h2 align="right">Unified Cloud ERP & Smart Supply Chain Implementation - PRJ-2026-ERP-01</h2>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
 <h1 align="center">LESSONS LEARNED REGISTER</h1>
 
 | **Date Prepared:** 2026-03-15 | **Project Manager:** Faisal Al-Harbi, PMP |
@@ -15,9 +15,9 @@
 ## Lessons Learned Entries
 
 | ID | Category | Trigger | Lesson | Responsible Party | Identifier/Submitter | Next Implementation Opportunity & Date | Organizational Impact (Y/N) | Comments |
-| INIT-01 | Technical & Integration | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | INIT-01 | 2026-04-01 | 2-week schedule slippage on integration testing window | Validated against enterprise ISO27001 cloud security standards. |
-| REQ-02 | Operational & Functional | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | REQ-02 | 2026-06-01 | Rescheduling of operational pilot rollout date | Weekly steering coordination meetings on schedule. |
-| ACT-03 | Governance & Compliance | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Tariq Al-Mansoor, PfMP | ACT-03 | 2026-08-15 | Minor reallocation of cloud professional services | Contingency reserve allocated for critical path dependencies. |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| INIT-01 | Technical & Integration | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Elena Vance, PfMP | INIT-01 | 2026-06-30 | 2-week schedule slippage on integration testing window | Validated against enterprise ISO27001 cloud security standards. |
+| REQ-02 | Operational & Functional | Approved and aligned with governance baseline | Approved and aligned with governance baseline | Faisal Al-Harbi, PMP | REQ-02 | 2026-09-30 | Rescheduling of operational pilot rollout date | Weekly steering coordination meetings on schedule. |
 
 ---
 
