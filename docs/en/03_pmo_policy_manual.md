@@ -6,14 +6,8 @@
   </div>
 </div>
 
-</div>
-
-</div>
-
-</div>
-
 <p align="center">
-  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
 </p>
 
 # 🏛️ Tasleemat Enterprise PMO Policy Manual & Standard Operating Procedures

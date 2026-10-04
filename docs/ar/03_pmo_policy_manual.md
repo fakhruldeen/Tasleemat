@@ -6,14 +6,8 @@
   </div>
 </div>
 
-</div>
-
-</div>
-
-</div>
-
 <p align="center">
-  <img src="docs/img/logo-ar.png" alt="شعار حزمة أدوات تسليمات لإدارة المشاريع" width="280">
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
 </p>
 
 # 🏛️ دليل سياسات وإجراءات مكتب إدارة المشاريع المؤسسي (SOPs)

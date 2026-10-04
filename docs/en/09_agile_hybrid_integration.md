@@ -6,14 +6,8 @@
   </div>
 </div>
 
-</div>
-
-</div>
-
-</div>
-
 <p align="center">
-  <img src="../img/logo.png" alt="Tasleemat Logo" width="320" />
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
 </p>
 
 ---
@@ -77,4 +71,5 @@ Rather than tracking task hours, high-performing agile teams measure value throu
 1. **Cycle Time:** The elapsed calendar time from when work starts on a user story to when it is delivered to production.
 2. **Throughput:** The number of completed user stories or story points delivered per sprint.
 3. **Work In Progress (WIP):** The total active items in the system. Enforcing strict WIP limits prevents multi-tasking bottlenecks.
-4. **Flow Efficiency:** $	ext{Flow Efficiency} = rac{	ext{Active Working Time}}{	ext{Total Lead Time}} 	imes 100\%$. Target $\ge 40\%$.
+4. **Flow Efficiency:** $	ext{Flow Efficiency} = 
+rac{	ext{Active Working Time}}{	ext{Total Lead Time}} 	imes 100\%$. Target $\ge 40\%$.

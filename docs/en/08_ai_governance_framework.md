@@ -6,14 +6,8 @@
   </div>
 </div>
 
-</div>
-
-</div>
-
-</div>
-
 <p align="center">
-  <img src="../img/logo.png" alt="Tasleemat Logo" width="320" />
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
 </p>
 
 ---

@@ -1075,6 +1075,19 @@ flowchart TD
 """
     (DOCS_DIR / "README_AR.md").write_text(index_ar, encoding="utf-8")
 
+def clean_manual_content_string(content: str) -> str:
+    cleaned = re.sub(r'<div class="lang-switch-bar"[^>]*>[\s\S]*?</div>\s*</div>\n*', '', content)
+    cleaned = re.sub(r'<div class="lang-switch-bar"[^>]*>[\s\S]*?</div>\n*', '', cleaned)
+    lines = cleaned.splitlines()
+    start_idx = 0
+    while start_idx < len(lines):
+        line_s = lines[start_idx].strip()
+        if line_s in ['</div>', '<div>', '</div></div>', ''] or line_s.startswith('<div class="lang-switch'):
+            start_idx += 1
+        else:
+            break
+    return '\n'.join(lines[start_idx:])
+
 def update_governance_manuals_lang_bars():
     """Ensure all 12 EN and 12 AR governance manuals have top language switcher bars."""
     for i in range(1, 13):
@@ -1086,10 +1099,7 @@ def update_governance_manuals_lang_bars():
             rel_ar = os.path.relpath(ar_f, en_f.parent).replace(".md", ".html")
             rel_en = os.path.relpath(en_f, ar_f.parent).replace(".md", ".html")
 
-            en_content = en_f.read_text(encoding="utf-8")
-            # Strip previous lang bar if present to avoid duplication
-            en_content = re.sub(r'<div class="lang-switch-bar">.*?</div>\n*', '', en_content, flags=re.DOTALL)
-            en_content = re.sub(r'<div\s+([^>]+)>', lambda m: m.group(0) if "markdown=" in m.group(1) or "lang-switch" in m.group(1) else f'<div {m.group(1)} markdown="1">', en_content)
+            en_content = clean_manual_content_string(en_f.read_text(encoding="utf-8"))
             bar_en = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
   <div class="lang-switch-actions">
@@ -1101,9 +1111,7 @@ def update_governance_manuals_lang_bars():
 """
             en_f.write_text(bar_en + en_content.lstrip(), encoding="utf-8")
 
-            ar_content = ar_f.read_text(encoding="utf-8")
-            ar_content = re.sub(r'<div class="lang-switch-bar".*?</div>\n*', '', ar_content, flags=re.DOTALL)
-            ar_content = re.sub(r'<div\s+([^>]+)>', lambda m: m.group(0) if "markdown=" in m.group(1) or "lang-switch" in m.group(1) else f'<div {m.group(1)} markdown="1">', ar_content)
+            ar_content = clean_manual_content_string(ar_f.read_text(encoding="utf-8"))
             bar_ar = f"""<div class="lang-switch-bar" dir="rtl">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -1120,8 +1128,7 @@ def update_lexicon_bar():
     lex_file = DOCS_DIR / "LEXICON.md"
     if not lex_file.exists():
         return
-    content = lex_file.read_text(encoding="utf-8")
-    content = re.sub(r'<div class="lang-switch-bar".*?</div>\n*', '', content, flags=re.DOTALL)
+    content = clean_manual_content_string(lex_file.read_text(encoding="utf-8"))
     bar = """<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Bilingual Resource:</strong> Master Lexicon & Deliverables Catalog | المعجم الموحد للمصطلحات</span>
   <div class="lang-switch-actions">

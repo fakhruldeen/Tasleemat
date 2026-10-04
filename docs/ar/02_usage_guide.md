@@ -6,17 +6,11 @@
   </div>
 </div>
 
-</div>
-
-</div>
-
-</div>
+<p align="center">
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+</p>
 
 <div dir="rtl" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;" markdown="1">
-
-<p align="center">
-  <img src="docs/img/logo-ar.png" alt="شعار حزمة أدوات تسليمات لإدارة المشاريع" width="280">
-</p>
 
 # 📙 دليل استخدام حزمة تسليمات (Tasleemat PMO Practitioner & Automation Guide)
 **مرجع الوثيقة:** `TASLEEMAT-GUIDE-02-USAGE-GUIDE-AR`  

@@ -6,14 +6,8 @@
   </div>
 </div>
 
-</div>
-
-</div>
-
-</div>
-
 <p align="center">
-  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="320" />
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
 </p>
 
 ---
