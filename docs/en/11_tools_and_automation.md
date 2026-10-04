@@ -6,6 +6,10 @@
   </div>
 </div>
 
+</div>
+
+</div>
+
 <p align="center">
   <img src="../img/logo.png" alt="Tasleemat Logo" width="320" />
 </p>

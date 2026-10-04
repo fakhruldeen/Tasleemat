@@ -4,6 +4,43 @@
  */
 
 (function () {
+  // 1. Global Page Direction & Language Synchronizer
+  function syncPageLanguageAndDirection() {
+    const path = window.location.pathname;
+    const isArabicPage = path.includes("/ar/") || 
+                         path.includes("README_AR") || 
+                         path.includes("_قالب") || 
+                         path.includes("_دليل") || 
+                         path.includes("_مثال") || 
+                         path.includes("/catalog/ar/") ||
+                         path.includes("/forms/ar/") ||
+                         path.includes("/guides/ar/") ||
+                         path.includes("/examples/ar/");
+    
+    if (isArabicPage) {
+      document.documentElement.setAttribute("dir", "rtl");
+      document.documentElement.setAttribute("lang", "ar");
+      document.documentElement.setAttribute("data-md-direction", "rtl");
+      if (document.body) {
+        document.body.setAttribute("dir", "rtl");
+        document.body.classList.add("rtl-page");
+      }
+    } else {
+      document.documentElement.setAttribute("dir", "ltr");
+      document.documentElement.setAttribute("lang", "en");
+      document.documentElement.setAttribute("data-md-direction", "ltr");
+      if (document.body) {
+        document.body.setAttribute("dir", "ltr");
+        document.body.classList.remove("rtl-page");
+      }
+    }
+  }
+
+  syncPageLanguageAndDirection();
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", syncPageLanguageAndDirection);
+  }
+
   // Lightweight markdown-to-HTML parser for fast, client-side artifact rendering
   function renderMarkdown(md) {
     if (!md) return '<div class="empty-state">No content available.</div>';

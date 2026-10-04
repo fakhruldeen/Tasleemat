@@ -5,6 +5,10 @@
   </div>
 </div>
 
+</div>
+
+</div>
+
 <p align="center">
   <img src="img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
 </p>

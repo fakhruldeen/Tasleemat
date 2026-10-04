@@ -18,16 +18,14 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-    # Light mode
+    # Light mode (Clean Professional Theme)
     - scheme: default
-      primary: slate
+      primary: white
       accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
