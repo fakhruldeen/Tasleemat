@@ -261,20 +261,32 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--font-arabic) !important;
 }
 
-/* Explicit alignment support in RTL pages */
-[dir="rtl"] .md-typeset [align="left"],
-[dir="rtl"] .md-typeset h3[align="left"],
-[dir="rtl"] .md-typeset h2[align="left"],
-[dir="rtl"] .md-typeset h1[align="left"] {
+/* Explicit alignment support in markdown typeset (both RTL and LTR) */
+.md-typeset [align="left"],
+.md-typeset h3[align="left"],
+.md-typeset h2[align="left"],
+.md-typeset h1[align="left"],
+.md-typeset p[align="left"],
+.md-typeset div[align="left"] {
   text-align: left !important;
 }
 
-[dir="rtl"] .md-typeset [align="center"],
-[dir="rtl"] .md-typeset h1[align="center"],
-[dir="rtl"] .md-typeset h2[align="center"],
-[dir="rtl"] .md-typeset h3[align="center"],
-[dir="rtl"] .md-typeset p[align="center"] {
+.md-typeset [align="center"],
+.md-typeset h1[align="center"],
+.md-typeset h2[align="center"],
+.md-typeset h3[align="center"],
+.md-typeset p[align="center"],
+.md-typeset div[align="center"] {
   text-align: center !important;
+}
+
+.md-typeset [align="right"],
+.md-typeset h1[align="right"],
+.md-typeset h2[align="right"],
+.md-typeset h3[align="right"],
+.md-typeset p[align="right"],
+.md-typeset div[align="right"] {
+  text-align: right !important;
 }
 
 [dir="rtl"] .md-typeset table:not([class]) th,
@@ -1316,7 +1328,9 @@ h1, h2, h3, h4, h5, h6,
 .modal-body-scroll [align="left"],
 .modal-body-scroll h3[align="left"],
 .modal-body-scroll h2[align="left"],
-.modal-body-scroll h1[align="left"] {
+.modal-body-scroll h1[align="left"],
+.modal-body-scroll p[align="left"],
+.modal-body-scroll div[align="left"] {
   text-align: left !important;
 }
 
@@ -1324,8 +1338,18 @@ h1, h2, h3, h4, h5, h6,
 .modal-body-scroll h1[align="center"],
 .modal-body-scroll h2[align="center"],
 .modal-body-scroll h3[align="center"],
-.modal-body-scroll p[align="center"] {
+.modal-body-scroll p[align="center"],
+.modal-body-scroll div[align="center"] {
   text-align: center !important;
+}
+
+.modal-body-scroll [align="right"],
+.modal-body-scroll h1[align="right"],
+.modal-body-scroll h2[align="right"],
+.modal-body-scroll h3[align="right"],
+.modal-body-scroll p[align="right"],
+.modal-body-scroll div[align="right"] {
+  text-align: right !important;
 }
 
 .modal-body-scroll p { margin-bottom: 1rem; }

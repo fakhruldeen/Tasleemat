@@ -50,34 +50,31 @@
 
     // Escape raw HTML entities except supported tags
     text = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    text = text.replace(/&lt;(\/?)div(.*?)&gt;/g, "<$1div$2>");
-    text = text.replace(/&lt;(\/?)span(.*?)&gt;/g, "<$1span$2>");
-    text = text.replace(/&lt;(\/?)strong(.*?)&gt;/g, "<$1strong$2>");
-    text = text.replace(/&lt;(\/?)em(.*?)&gt;/g, "<$1em$2>");
-    text = text.replace(/&lt;(\/?)i(.*?)&gt;/g, "<$1i$2>");
-    text = text.replace(/&lt;(\/?)b(.*?)&gt;/g, "<$1b$2>");
-    text = text.replace(/&lt;(\/?)p(.*?)&gt;/g, "<$1p$2>");
-    text = text.replace(/&lt;(\/?)br&gt;/g, "<br>");
-    text = text.replace(/&lt;a href="(.*?)"(.*?)&gt;(.*?)&lt;\/a&gt;/g, '<a href="$1"$2 target="_blank">$3</a>');
+    const allowedTagRegex = /&lt;(\/?)(h[1-6]|div|span|p|a|strong|em|i|b|u|s|small|sub|sup|mark|hr|br|center|table|thead|tbody|tfoot|tr|th|td|ul|ol|li|blockquote|pre|code|details|summary|button|img)(\s[\s\S]*?)?(\/?)&gt;/gi;
+    text = text.replace(allowedTagRegex, function (match, p1, p2, p3, p4) {
+      let attrs = p3 || "";
+      attrs = attrs.replace(/&amp;/g, "&");
+      return "<" + p1 + p2.toLowerCase() + attrs + (p4 ? "/" : "") + ">";
+    });
 
     // Code blocks (fenced ```)
     text = text.replace(/```([a-z]*)\n([\s\S]*?)```/g, function (_, lang, code) {
-      return '<pre class="code-block"><code class="language-' + (lang || "text") + '">' + code.trim() + "</code></pre>";
+      return '\n<pre class="code-block"><code class="language-' + (lang || "text") + '">' + code.trim() + "</code></pre>\n";
     });
 
     // Inline code `code`
     text = text.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
 
-    // Headers
-    text = text.replace(/^###### (.*$)/gim, '<h6 class="md-h6">$1</h6>');
-    text = text.replace(/^##### (.*$)/gim, '<h5 class="md-h5">$1</h5>');
-    text = text.replace(/^#### (.*$)/gim, '<h4 class="md-h4">$1</h4>');
-    text = text.replace(/^### (.*$)/gim, '<h3 class="md-h3">$1</h3>');
-    text = text.replace(/^## (.*$)/gim, '<h2 class="md-h2">$1</h2>');
-    text = text.replace(/^# (.*$)/gim, '<h1 class="md-h1">$1</h1>');
+    // Markdown Headers (#)
+    text = text.replace(/^###### (.*$)/gim, '\n<h6 class="md-h6">$1</h6>\n');
+    text = text.replace(/^##### (.*$)/gim, '\n<h5 class="md-h5">$1</h5>\n');
+    text = text.replace(/^#### (.*$)/gim, '\n<h4 class="md-h4">$1</h4>\n');
+    text = text.replace(/^### (.*$)/gim, '\n<h3 class="md-h3">$1</h3>\n');
+    text = text.replace(/^## (.*$)/gim, '\n<h2 class="md-h2">$1</h2>\n');
+    text = text.replace(/^# (.*$)/gim, '\n<h1 class="md-h1">$1</h1>\n');
 
     // Horizontal Rule
-    text = text.replace(/^---$/gim, '<hr class="md-hr" />');
+    text = text.replace(/^---$/gim, '\n<hr class="md-hr" />\n');
 
     // Bold & Italic
     text = text.replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>");
@@ -154,11 +151,11 @@
     text = blocks.map(b => {
       b = b.trim();
       if (!b) return "";
-      if (b.startsWith("<h") || b.startsWith("<ul") || b.startsWith("<ol") || b.startsWith("<div") || b.startsWith("<pre") || b.startsWith("<blockquote") || b.startsWith("<hr")) {
+      if (b.startsWith("<h") || b.startsWith("<ul") || b.startsWith("<ol") || b.startsWith("<div") || b.startsWith("<pre") || b.startsWith("<blockquote") || b.startsWith("<hr") || b.startsWith("<table") || b.startsWith("<details")) {
         return b;
       }
       return '<p class="md-p">' + b.replace(/\n/g, "<br />") + '</p>';
-    }).join("\n");
+    }).join("\n\n");
 
     return text;
   }
