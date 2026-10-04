@@ -6,7 +6,7 @@ has_children: true
 nav_order: 5
 ---
 
-<div dir="rtl">
+<div>
 
 # البدء
 

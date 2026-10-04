@@ -6,7 +6,7 @@ has_children: true
 nav_order: 8
 ---
 
-<div dir="rtl">
+<div>
 
 # المراقبة والتحكم
 

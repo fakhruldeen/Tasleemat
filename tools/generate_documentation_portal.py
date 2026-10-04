@@ -516,7 +516,7 @@ def build_portal():
 
         # 4. AR Template
         content_tpl_ar = sanitize_content_links(d["tpl_ar"].read_text(encoding="utf-8"), d["doc_tpl_ar"], d)
-        nav_header_tpl_ar = f"""<div class="lang-switch-bar" dir="rtl">
+        nav_header_tpl_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="{d['gh_tpl_ar']}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -524,7 +524,7 @@ def build_portal():
   </div>
 </div>
 
-<div class="deliverable-header-card rtl-card" dir="rtl">
+<div class="deliverable-header-card rtl-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">{d['code']}</span>
     <span class="badge badge-phase">{PHASE_META[d['phase']]['ar_title']}</span>
@@ -546,7 +546,7 @@ def build_portal():
 
         # 5. AR Guide
         content_guide_ar = sanitize_content_links(d["guide_ar"].read_text(encoding="utf-8"), d["doc_guide_ar"], d)
-        nav_header_guide_ar = f"""<div class="lang-switch-bar" dir="rtl">
+        nav_header_guide_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="{d['gh_guide_ar']}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -554,7 +554,7 @@ def build_portal():
   </div>
 </div>
 
-<div class="deliverable-header-card rtl-card" dir="rtl">
+<div class="deliverable-header-card rtl-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">{d['code']}</span>
     <span class="badge badge-phase">{PHASE_META[d['phase']]['ar_title']}</span>
@@ -576,7 +576,7 @@ def build_portal():
 
         # 6. AR Example
         content_ex_ar = sanitize_content_links(d["ex_ar"].read_text(encoding="utf-8"), d["doc_ex_ar"], d)
-        nav_header_ex_ar = f"""<div class="lang-switch-bar" dir="rtl">
+        nav_header_ex_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="{d['gh_ex_ar']}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -584,7 +584,7 @@ def build_portal():
   </div>
 </div>
 
-<div class="deliverable-header-card rtl-card" dir="rtl">
+<div class="deliverable-header-card rtl-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">{d['code']}</span>
     <span class="badge badge-phase">{PHASE_META[d['phase']]['ar_title']}</span>
@@ -856,7 +856,7 @@ flowchart TD
     (DOCS_DIR / "index.md").write_text(index_en, encoding="utf-8")
 
     # 2. Arabic Landing Page
-    index_ar = """<div class="hero-wrapper" dir="rtl">
+    index_ar = """<div class="hero-wrapper">
   <div class="hero-tag">
     <span class="pulse-dot"></span> نظام التشغيل الحوكمي لإدارة المشاريع 2.0 • PMI PMBOK® 6/7/8 وأخلاقيات الذكاء الاصطناعي (سدايا)
   </div>
@@ -929,7 +929,7 @@ flowchart TD
 
 ## 🏛️ تصفح النماذج والمخرجات حسب مراحل دورة الحياة
 
-<div class="phase-cards-grid" dir="rtl">
+<div class="phase-cards-grid">
   <div class="phase-hub-card">
     <div class="phase-hub-header">
       <span class="badge badge-phase">المرحلة 00</span>
@@ -1112,7 +1112,7 @@ def update_governance_manuals_lang_bars():
             en_f.write_text(bar_en + en_content.lstrip(), encoding="utf-8")
 
             ar_content = clean_manual_content_string(ar_f.read_text(encoding="utf-8"))
-            bar_ar = f"""<div class="lang-switch-bar" dir="rtl">
+            bar_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/{ar_f.name}" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -1343,7 +1343,7 @@ def build_master_catalogs(deliverables):
     target_ar.parent.mkdir(parents=True, exist_ok=True)
     rel_en_catalog = os.path.relpath(DOCS_DIR / "catalog/en/index.md", target_ar.parent).replace(".md", ".html")
 
-    catalog_ar = f"""<div class="lang-switch-bar" dir="rtl">
+    catalog_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الفهرس العام باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/docs/catalog/ar" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -1357,7 +1357,7 @@ def build_master_catalogs(deliverables):
 
 ---
 
-<div id="tasleemat-explorer" class="explorer-wrapper" dir="rtl">
+<div id="tasleemat-explorer" class="explorer-wrapper">
   <div class="explorer-toolbar">
     <input type="text" id="explorer-search" class="explorer-search-box" placeholder="🔍 بحث فوري بالرمز (مثل PMO-03.01)، الاسم، المرحلة، المستوى، أو الكلمات المفتاحية..." />
     
@@ -1507,7 +1507,7 @@ def build_section_indexes(deliverables):
     target_tpl_ar = DOCS_DIR / "forms/ar/index.md"
     target_tpl_ar.parent.mkdir(parents=True, exist_ok=True)
     rel_en_tpl_idx = os.path.relpath(DOCS_DIR / "forms/en/index.md", target_tpl_ar.parent).replace(".md", ".html")
-    tpl_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
+    tpl_idx_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
@@ -1574,7 +1574,7 @@ def build_section_indexes(deliverables):
     target_g_ar = DOCS_DIR / "guides/ar/index.md"
     target_g_ar.parent.mkdir(parents=True, exist_ok=True)
     rel_en_g_idx = os.path.relpath(DOCS_DIR / "guides/en/index.md", target_g_ar.parent).replace(".md", ".html")
-    guides_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
+    guides_idx_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
@@ -1640,7 +1640,7 @@ def build_section_indexes(deliverables):
     target_ex_ar = DOCS_DIR / "examples/ar/index.md"
     target_ex_ar.parent.mkdir(parents=True, exist_ok=True)
     rel_en_ex_idx = os.path.relpath(DOCS_DIR / "examples/en/index.md", target_ex_ar.parent).replace(".md", ".html")
-    ex_idx_ar = f"""<div class="lang-switch-bar" dir="rtl">
+    ex_idx_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/ar" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
@@ -1712,7 +1712,7 @@ def build_phase_indexes(deliverables):
         target_t_ar = DOCS_DIR / "forms" / "ar" / phase_dir_ar / "index.md"
         target_t_ar.parent.mkdir(parents=True, exist_ok=True)
         rel_en_phase_tpl = os.path.relpath(DOCS_DIR / "forms" / "en" / phase_dir_en / "index.md", target_t_ar.parent).replace(".md", ".html")
-        idx_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
+        idx_content_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar/{phase_dir_ar}" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
@@ -1770,7 +1770,7 @@ def build_phase_indexes(deliverables):
         target_g_ar = DOCS_DIR / "guides" / "ar" / phase_dir_ar / "index.md"
         target_g_ar.parent.mkdir(parents=True, exist_ok=True)
         rel_en_phase_g = os.path.relpath(DOCS_DIR / "guides" / "en" / phase_dir_en / "index.md", target_g_ar.parent).replace(".md", ".html")
-        g_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
+        g_content_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar/{phase_dir_ar}" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>
@@ -1828,7 +1828,7 @@ def build_phase_indexes(deliverables):
         target_e_ar = DOCS_DIR / "examples" / "ar" / phase_dir_ar / "index.md"
         target_e_ar.parent.mkdir(parents=True, exist_ok=True)
         rel_en_phase_e = os.path.relpath(DOCS_DIR / "examples" / "en" / phase_dir_en / "index.md", target_e_ar.parent).replace(".md", ".html")
-        e_content_ar = f"""<div class="lang-switch-bar" dir="rtl">
+        e_content_ar = f"""<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/examples/ar/{phase_dir_ar}" target="_blank" rel="noopener noreferrer">🐙 مصدر GitHub ↗</a>

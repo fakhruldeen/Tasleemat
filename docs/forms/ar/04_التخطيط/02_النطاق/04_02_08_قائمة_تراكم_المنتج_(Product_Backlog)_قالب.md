@@ -1,4 +1,4 @@
-<div class="lang-switch-bar" dir="rtl">
+<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<div class="deliverable-header-card rtl-card" dir="rtl">
+<div class="deliverable-header-card rtl-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-04.02.08</span>
     <span class="badge badge-phase">04. التخطيط</span>
@@ -69,11 +69,10 @@
 - **الفئة:** فئة، وهو ما يفيد في المشاريع الكبيرة حيث تكون قائمة التراكم أكبر من أن تُعرض في منظور واحد. وينبغي أن تعكس الفئات تسلسل العمل الفعللي، لا التقسيم الحالي للفريق.
 -->
 
-<div dir="rtl" markdown="1">
 
-<h3 dir="rtl" align="left">{{اسم_الشركة}}</h3>
-<h2 dir="rtl" align="left">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
-<h1 dir="rtl" align="center">قائمة تراكم المنتج</h1>
+<h3 align="left">{{اسم_الشركة}}</h3>
+<h2 align="left">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
+<h1 align="center">قائمة تراكم المنتج</h1>
 
 | **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير المشروع:** {{اسم_مدير_المشروع}} | **إعداد:** {{معد_الوثيقة}} |
 | ---: | ---: | ---: | 
@@ -105,7 +104,7 @@
 | **قائد فريق التطوير** | {{اسم_قائد_فريق_التطوير}} | _______________________ | [.... -.... -.... ] |
 ---
 
-<div dir="rtl" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
  <strong>القالب:</strong> قائمة تراكم المنتج | <strong>المرجع:</strong> PMO-04.02.08 <br>
  <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

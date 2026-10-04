@@ -5,7 +5,7 @@ title: الرئيسية
 nav_order: 1
 ---
 
-<div dir="rtl">
+<div>
 
 <p align="center">
   <img src="../../docs/img/logo-ar.png" alt="شعار حزمة أدوات تسليمات لإدارة المشاريع" width="280">

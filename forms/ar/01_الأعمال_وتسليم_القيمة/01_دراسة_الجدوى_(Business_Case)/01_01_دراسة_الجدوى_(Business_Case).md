@@ -3,7 +3,7 @@ lang: ar
 Form: دراسة الجدوى (Instructions)
 ---
 
-<div dir="rtl">
+<div>
 
 # دراسة الجدوى - دليل التوليد الذكي
 

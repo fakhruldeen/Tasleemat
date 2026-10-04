@@ -1,4 +1,4 @@
-<div class="lang-switch-bar" dir="rtl">
+<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/06_raci_authority_matrix.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>

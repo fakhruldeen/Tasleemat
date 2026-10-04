@@ -6,7 +6,7 @@ has_children: true
 nav_order: 6
 ---
 
-<div dir="rtl">
+<div>
 
 # التخطيط
 

@@ -1,4 +1,4 @@
-<div class="lang-switch-bar" dir="rtl">
+<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<div class="deliverable-header-card rtl-card" dir="rtl">
+<div class="deliverable-header-card rtl-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-05.09</span>
     <span class="badge badge-phase">05. التنفيذ</span>

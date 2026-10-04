@@ -1,7 +1,7 @@
 ---
 lang: ar
 ---
-<div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 # المتغيرات العامة للمشروع (Project Parameters)
 

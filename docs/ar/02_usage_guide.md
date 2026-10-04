@@ -1,4 +1,4 @@
-<div class="lang-switch-bar" dir="rtl">
+<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/02_usage_guide.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -10,7 +10,7 @@
   <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
 </p>
 
-<div dir="rtl" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;" markdown="1">
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;" markdown="1">
 
 # 📙 دليل استخدام حزمة تسليمات (Tasleemat PMO Practitioner & Automation Guide)
 **مرجع الوثيقة:** `TASLEEMAT-GUIDE-02-USAGE-GUIDE-AR`  

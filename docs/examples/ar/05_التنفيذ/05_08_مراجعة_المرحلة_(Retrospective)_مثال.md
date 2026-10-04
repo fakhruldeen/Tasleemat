@@ -1,4 +1,4 @@
-<div class="lang-switch-bar" dir="rtl">
+<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective)_مثال.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<div class="deliverable-header-card rtl-card" dir="rtl">
+<div class="deliverable-header-card rtl-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-05.08</span>
     <span class="badge badge-phase">05. التنفيذ</span>
@@ -23,7 +23,7 @@
 
 ---
 
-<div dir="rtl" markdown="1">
+<div>
 
 # مراجعة المرحلة (Retrospective) (نموذج تطبيقي معبأ)
 > 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-05.08`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
@@ -32,9 +32,9 @@
 
 
 
-<h3 dir="rtl" align="right">شركة القمة للحلول المؤسسية المتقدمة</h3>
-<h2 dir="rtl" align="right">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
-<h1 dir="rtl" align="center">مراجعة المرحلة</h1>
+<h3 align="right">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="right">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
+<h1 align="center">مراجعة المرحلة</h1>
 
 | **تاريخ الإعداد:** 2026-03-15 | **مدير المشروع:** م. فيصل الحربي، PMP | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
 | ---: | ---: | ---: | 
@@ -95,7 +95,7 @@
 | **ممثل فريق العمل** | أ. سارة الرشيدي (محلل نظم أعمال) | [معتمد إلكترونياً] | 2026-03-18 |
 ---
 
-<div dir="rtl" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
  <strong>القالب:</strong> مراجعة المرحلة | <strong>المرجع:</strong> PMO-05.08 <br>
  <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

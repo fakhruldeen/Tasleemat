@@ -1,4 +1,4 @@
-<div class="lang-switch-bar" dir="rtl">
+<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الفهرس العام باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/tree/main/docs/catalog/ar" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -12,7 +12,7 @@
 
 ---
 
-<div id="tasleemat-explorer" class="explorer-wrapper" dir="rtl">
+<div id="tasleemat-explorer" class="explorer-wrapper">
   <div class="explorer-toolbar">
     <input type="text" id="explorer-search" class="explorer-search-box" placeholder="🔍 بحث فوري بالرمز (مثل PMO-03.01)، الاسم، المرحلة، المستوى، أو الكلمات المفتاحية..." />
     

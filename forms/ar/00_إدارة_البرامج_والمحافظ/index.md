@@ -6,7 +6,7 @@ has_children: true
 nav_order: 2
 ---
 
-<div dir="rtl">
+<div>
 
 # إدارة البرامج والمحافظ
 

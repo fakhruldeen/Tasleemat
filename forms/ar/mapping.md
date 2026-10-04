@@ -4,7 +4,7 @@ title: دليل ربط الوثائق (Document Mapping)
 nav_order: 1
 ---
 
-<div dir="rtl">
+<div>
 
 # 🔗 دليل ربط الوثائق (Arabic to English Mapping)
 

@@ -1,4 +1,4 @@
-<div class="hero-wrapper" dir="rtl">
+<div class="hero-wrapper">
   <div class="hero-tag">
     <span class="pulse-dot"></span> نظام التشغيل الحوكمي لإدارة المشاريع 2.0 • PMI PMBOK® 6/7/8 وأخلاقيات الذكاء الاصطناعي (سدايا)
   </div>
@@ -71,7 +71,7 @@ flowchart TD
 
 ## 🏛️ تصفح النماذج والمخرجات حسب مراحل دورة الحياة
 
-<div class="phase-cards-grid" dir="rtl">
+<div class="phase-cards-grid">
   <div class="phase-hub-card">
     <div class="phase-hub-header">
       <span class="badge badge-phase">المرحلة 00</span>

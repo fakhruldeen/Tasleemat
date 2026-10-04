@@ -1,4 +1,4 @@
-<div class="lang-switch-bar" dir="rtl">
+<div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/01_الأعمال_وتسليم_القيمة/01_دراسة_الجدوى_(Business_Case)/01_01_دراسة_الجدوى_(Business_Case)_قالب.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<div class="deliverable-header-card rtl-card" dir="rtl">
+<div class="deliverable-header-card rtl-card">
   <div class="deliverable-badge-row">
     <span class="badge badge-code">PMO-01.01</span>
     <span class="badge badge-phase">01. الأعمال وتسليم القيمة</span>
@@ -54,11 +54,10 @@
 *  **محفّز إعادة النظر:** الحدث الذي يعيد فتح الدراسة، مثل تغيّر كلفة المدخلات أو تحوّل جوهري في المنفعة. والدراسة التي لا محفّز لإعادة النظر لها وثيقة لا يمكن أن تكون خاطئة.
 -->
 
-<div dir="rtl" markdown="1">
 
-<h3 dir="rtl" align="left">{{اسم_الشركة}}</h3>
-<h2 dir="rtl" align="left">{{اسم_المبادرة}} - {{معرف_المقترح}}</h2>
-<h1 dir="rtl" align="center">دراسة الجدوى</h1>
+<h3 align="left">{{اسم_الشركة}}</h3>
+<h2 align="left">{{اسم_المبادرة}} - {{معرف_المقترح}}</h2>
+<h1 align="center">دراسة الجدوى</h1>
 
 | **تاريخ الإعداد:** {{التاريخ_الحالي}} | **راعي المبادرة:** {{اسم_راعي_المبادرة}} | **كبير المحللين:** {{المُعِد}} |
 | ---: | ---: | ---: |
@@ -124,7 +123,7 @@
 | **راعي المشروع** | {{اسم_راعي_المشروع}} | _______________________ | [.... -.... -.... ] |
 ---
 
-<div dir="rtl" align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
  <strong>النموذج:</strong> دراسة الجدوى | <strong>المرجع:</strong> PMO-01.01 <br>
  <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

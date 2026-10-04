@@ -6,7 +6,7 @@ has_children: true
 nav_order: 3
 ---
 
-<div dir="rtl">
+<div>
 
 # الأعمال وتسليم القيمة
 
