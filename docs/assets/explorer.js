@@ -417,6 +417,17 @@
         }
       } else {
         modalBody.innerHTML = renderMarkdown(rawContent);
+        if (typeof renderMathInElement === "function") {
+          renderMathInElement(modalBody, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "$", right: "$", display: false },
+              { left: "\\(", right: "\\)", display: false },
+              { left: "\\[", right: "\\]", display: true }
+            ],
+            throwOnError: false
+          });
+        }
       }
 
       modalBody.setAttribute("dir", isAr ? "rtl" : "ltr");

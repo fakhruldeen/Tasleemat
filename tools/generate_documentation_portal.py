@@ -2086,10 +2086,14 @@ theme:
 
 extra_css:
   - assets/custom.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 extra_javascript:
   - assets/tasleemat_data.js
   - assets/explorer.js
+  - assets/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 plugins:
   - search
@@ -2106,6 +2110,8 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
   - tables
   - attr_list
   - md_in_html
