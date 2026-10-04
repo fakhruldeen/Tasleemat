@@ -66,7 +66,7 @@ Section Instructions:
 ## Training Activities
 
 | Target Audience | Training Module | Delivery Method | Target Date | Completion Status |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
@@ -76,7 +76,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Training Coordinator** | {{Training_Coordinator_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Change / Team Lead** | {{Change_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

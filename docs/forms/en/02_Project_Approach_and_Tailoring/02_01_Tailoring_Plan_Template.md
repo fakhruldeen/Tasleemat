@@ -99,7 +99,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Methodology Lead** | {{Methodology_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

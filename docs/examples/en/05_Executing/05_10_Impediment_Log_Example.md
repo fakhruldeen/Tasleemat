@@ -40,7 +40,7 @@
 ## Impediment Log
 
 | Impediment ID | Date Raised | Description | Impact | Owner | Status |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :--- | :--- | :--- | :---: |
 | INIT-01 | 2026-06-30 | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | In Progress |
 | REQ-02 | 2026-09-30 | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | Completed |
 | ACT-03 | 2026-11-30 | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | Planned |
@@ -50,7 +50,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Scrum Master / Agile Coach** | Hassan Al-Majid, CSM | [Electronically Signed] | 2026-03-18 |
 | **Team Member / Contributor** | Ahmed Al-Shehri (Senior Systems Analyst) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

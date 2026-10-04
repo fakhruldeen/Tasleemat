@@ -15,7 +15,7 @@
 ## 1. Variance Analysis Table
 
 | Category | Planned Result | Actual Result | Variance | Root Cause | Planned Response |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | ---: | :--- | :--- |
 | **Schedule** | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months | Complete end-to-end system rollout and cutover within 18 months |
 | **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
 | **Quality** | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience | Deliver high system reliability (99.95% uptime) and superior user experience |
@@ -44,7 +44,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Cost & Schedule Controller** | Bader Al-Mutairi (Chief Financial Officer) | [Electronically Signed] | 2026-03-18 |
 | **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |

@@ -84,7 +84,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Value Stream / Delivery Lead** | {{Delivery_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Agile Coach / Scrum Master** | {{Agile_Coach_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |

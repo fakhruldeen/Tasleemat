@@ -158,7 +158,7 @@
 **Findings Register:**
 
 | Finding | Risk to Individuals | Severity | Owner | Action |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- | :--- |
 | Approved and aligned with Apex Global Solutions governance baseline | INIT-01 | Medium (Subject to quarterly audit) | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
 | Approved and aligned with Apex Global Solutions governance baseline | REQ-02 | Low (Within acceptable operating bounds) | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline |
 | Approved and aligned with Apex Global Solutions governance baseline | ACT-03 | High (Requires mandatory human approval) | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline |
@@ -176,7 +176,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Data Protection Officer (DPO)** | Abdulaziz Al-Zahrani (Data Protection Officer) | [Electronically Signed] | 2026-03-18 |
 | **Legal / Compliance Counsel** | Adv. Majed Al-Farooq (Senior Legal Counsel) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

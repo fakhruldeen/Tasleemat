@@ -53,7 +53,7 @@ Section Instructions:
 <!-- One row per benefit: what it is, who owns it, how it is measured, and where it stands against its target. -->
 
 | Benefit ID | Benefit Description | Benefit Owner | Measurement Method | Baseline Value | Target Value and Date | Actual Value and Date | Variance | Status |
-| :--- | :--- | :--- | :--- | ---: | ---: | ---: | ---: | :--- |
+| :---: | :--- | :--- | :--- | ---: | :---: | :---: | ---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -64,7 +64,7 @@ Section Instructions:
 <!-- What is causing the variance, what is being done about it, and when a benefit is escalated or withdrawn. -->
 
 | Benefit ID | Variance Explanation | Corrective Action | Action Owner | Action Date | Escalation Trigger | Benefit Withdrawal |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
@@ -81,7 +81,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Benefit Owner** | {{Benefit_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

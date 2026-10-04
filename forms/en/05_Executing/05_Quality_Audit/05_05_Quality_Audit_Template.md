@@ -43,7 +43,7 @@ Check the box for the area or areas audited.
 ## 4. Deficiencies or Defects
 
 | ID | Defect | Action | Responsible Party | Due Date |
-| :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
@@ -67,7 +67,7 @@ Check the box for the area or areas audited.
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Quality Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Quality Assurance (QA) Manager** | {{QA_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

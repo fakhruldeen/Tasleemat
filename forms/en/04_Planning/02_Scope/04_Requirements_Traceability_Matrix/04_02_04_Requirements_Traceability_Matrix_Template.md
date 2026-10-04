@@ -51,7 +51,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Requirements Analyst Lead** | {{Requirements_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Quality Assurance (QA) Lead** | {{QA_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

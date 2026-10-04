@@ -50,7 +50,7 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Risk Analyst** | Layla Al-Omari, PMI-RMP | [Electronically Signed] | 2026-03-18 |
 | **Subject Matter Expert** | Dr. Fahad Al-Qahtani (Subject Matter Expert - ERP) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

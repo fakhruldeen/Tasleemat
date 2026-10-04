@@ -76,7 +76,7 @@ Column guidance, by column:
 <!-- A retrospective that does not say which sprint it covers cannot be compared with the previous one, and someone who was not in the room cannot act on what was agreed. -->
 
 | Sprint or Iteration | Team Members Present | Date |
-| ---: | ---: | ---: |
+| :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
@@ -85,7 +85,7 @@ Column guidance, by column:
 <!-- One item per row, one sentence each. The columns are not interchangeable: Stop means cease and Less means too much of something, so putting the same item in both to hedge is how a retrospective stops being honest. Add or remove rows as needed. -->
 
 | Start | Stop | Keep | More | Less |
-| ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -99,7 +99,7 @@ Column guidance, by column:
 <!-- Every action taken from the Start, Stop, More, and Less columns, with one named owner and a review date. Carry each row into the next retrospective and fill in the outcome: an action reviewed only once is an action nobody checked, and a retrospective without an outcome column becomes a ritual rather than a feedback loop. -->
 
 | Action | Owner | By When | Outcome |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | :---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -114,13 +114,13 @@ Column guidance, by column:
 ---
 
 | Accomplishments | Problems | Lessons | Future Considerations |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ## 5. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Scrum Master / Facilitator** | {{Scrum_Master_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Team Representative** | {{Team_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

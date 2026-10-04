@@ -41,7 +41,7 @@
 
 
 | ID | Requirement | Acceptance Criteria | Validation Method | Verification Method | Status | Sign-off | Date |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | In Progress | [ Sign here... ] | 2026-03-18 |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Completed | [ Sign here... ] | 2026-03-18 |
 | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Planned | [ Sign here... ] | 2026-03-18 |
@@ -58,7 +58,7 @@ Comment guidance: Record any conditions attached to the acceptance, or items def
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product / Business Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Client / Customer Representative** | Nasser Al-Ghamdi (Commercial Client Director) | [Electronically Signed] | 2026-03-18 |

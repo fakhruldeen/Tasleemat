@@ -73,7 +73,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Risk Manager** | {{Risk_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

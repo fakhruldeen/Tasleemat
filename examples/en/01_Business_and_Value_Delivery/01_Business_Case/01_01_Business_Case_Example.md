@@ -42,7 +42,7 @@
 <!-- Each option considered against the do-nothing baseline, with life-of costs, the risks, and the discounted result. -->
 
 | Option | Description | Benefits | Costs | Risks | Net Present Value |
-| :--- | :--- | :--- | :--- | :--- | ---: |
+| :--- | :--- | :--- | ---: | :--- | ---: |
 | A | Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | $950,000 USD | Approved and aligned with Apex Global Solutions governance baseline | $950,000 USD |
 | B | Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | $1,150,000 USD | Approved and aligned with Apex Global Solutions governance baseline | $1,150,000 USD |
 | Do Nothing | Build interactive executive dashboards and KPI reports | Approved and aligned with Apex Global Solutions governance baseline | $780,000 USD | Approved and aligned with Apex Global Solutions governance baseline | $780,000 USD |
@@ -65,7 +65,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Business Owner** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 | **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

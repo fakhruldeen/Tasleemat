@@ -90,7 +90,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Communications Lead** | Huda Al-Hashimi (Director of Corporate Communications) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

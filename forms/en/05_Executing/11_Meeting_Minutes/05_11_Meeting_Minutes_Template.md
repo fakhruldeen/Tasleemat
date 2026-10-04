@@ -83,7 +83,7 @@ Section Instructions:
 ## Action Items
 
 | Action | Owner | Due Date | Status |
-| --- | --- | --- | --- |
+| :--- | :--- | :---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
@@ -93,7 +93,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Meeting Chair** | {{Meeting_Chair_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Minute Taker** | {{Minute_Taker_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

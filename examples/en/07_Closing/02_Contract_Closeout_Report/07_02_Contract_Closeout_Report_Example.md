@@ -69,7 +69,7 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 
 | Change ID | Change Description | Date Approved |
-| :--- | :--- | :--- |
+| :---: | :--- | :---: |
 | CR-2026-01 | Deploy hardened cloud environment and master databases | 2026-06-30 |
 | CR-2026-02 | Automate procurement requisition and inventory workflows | 2026-09-30 |
 | CR-2026-03 | Build interactive executive dashboards and KPI reports | 2026-11-30 |
@@ -82,7 +82,7 @@ Comment guidance: State the deficiency, its effect, and what should be done inst
 
 
 | Dispute Description | Resolution | Date Resolved |
-| :--- | :--- | :--- |
+| :--- | :--- | :---: |
 | Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
 | Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
 | Build interactive executive dashboards and KPI reports | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 |
@@ -117,7 +117,7 @@ the project closeout report. -->
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Contract Manager** | Approved - Contract Manager Name | [Electronically Signed] | 2026-03-18 |
 | **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
 | **Finance Controller / Legal Counsel** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |

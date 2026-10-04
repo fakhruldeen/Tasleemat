@@ -93,15 +93,27 @@
     let tableHtml = "";
     let processedLines = [];
 
+    let tableAlignments = [];
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
       if (line.startsWith("|") && line.endsWith("|")) {
         const cells = line.split("|").slice(1, -1).map(c => c.trim());
         if (!inTable) {
           inTable = true;
+          tableAlignments = [];
+          if (i + 1 < lines.length && lines[i + 1].trim().includes("---")) {
+            const sepCells = lines[i + 1].trim().split("|").slice(1, -1).map(c => c.trim());
+            tableAlignments = sepCells.map(c => {
+              if (c.startsWith(":") && c.endsWith(":")) return "center";
+              if (c.endsWith(":")) return "right";
+              if (c.startsWith(":")) return "left";
+              return "";
+            });
+          }
           tableHtml = '<div class="table-responsive"><table class="md-table"><thead><tr>';
-          cells.forEach(c => {
-            tableHtml += `<th>${c}</th>`;
+          cells.forEach((c, idx) => {
+            const alignStyle = tableAlignments[idx] ? ` style="text-align: ${tableAlignments[idx]};"` : "";
+            tableHtml += `<th${alignStyle}>${c}</th>`;
           });
           tableHtml += "</tr></thead><tbody>";
         } else if (line.includes("---")) {
@@ -109,14 +121,16 @@
           continue;
         } else {
           tableHtml += "<tr>";
-          cells.forEach(c => {
-            tableHtml += `<td>${c}</td>`;
+          cells.forEach((c, idx) => {
+            const alignStyle = tableAlignments[idx] ? ` style="text-align: ${tableAlignments[idx]};"` : "";
+            tableHtml += `<td${alignStyle}>${c}</td>`;
           });
           tableHtml += "</tr>";
         }
       } else {
         if (inTable) {
           inTable = false;
+          tableAlignments = [];
           tableHtml += "</tbody></table></div>";
           processedLines.push(tableHtml);
           tableHtml = "";

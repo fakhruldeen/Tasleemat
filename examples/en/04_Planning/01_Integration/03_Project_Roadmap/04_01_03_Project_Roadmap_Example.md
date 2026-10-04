@@ -73,7 +73,7 @@ Assumptions and Constraints:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Product / Delivery Lead** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

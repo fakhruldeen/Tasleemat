@@ -40,7 +40,7 @@
 ## Operational Handover Items
 
 | Handover Item | Responsible Party | Acceptance Criteria | Handover Date | Sign-off Status |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :---: | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | In Progress |
 | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | Completed |
 | Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | Planned |
@@ -50,7 +50,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Operations / Maintenance Lead** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Business Owner / Client Representative** | Nasser Al-Ghamdi (Commercial Client Director) | [Electronically Signed] | 2026-03-18 |

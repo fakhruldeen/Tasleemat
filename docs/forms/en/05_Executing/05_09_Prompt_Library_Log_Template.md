@@ -79,7 +79,7 @@ Section Instructions:
 ## Prompt Library
 
 | Prompt ID | Use Case | Prompt Text | Expected Output | Status/Version |
-| --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -89,7 +89,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **AI Engineer / Prompt Designer** | {{AI_Engineer_Name}} | _______________________ | [ .... - .... - .... ] |
 | **AI Technical Lead** | {{AI_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

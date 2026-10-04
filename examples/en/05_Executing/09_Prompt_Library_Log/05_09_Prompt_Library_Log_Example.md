@@ -15,7 +15,7 @@
 ## Prompt Library
 
 | Prompt ID | Use Case | Prompt Text | Expected Output | Status/Version |
-| --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | :--- | :--- |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | In Progress |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Completed |
 | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Planned |
@@ -25,7 +25,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **AI Engineer / Prompt Designer** | Eng. Layth Al-Husseini (Senior AI/ML Engineer) | [Electronically Signed] | 2026-03-18 |
 | **AI Technical Lead** | Dr. Rayan Al-Sulaiman (Lead AI & Data Scientist) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

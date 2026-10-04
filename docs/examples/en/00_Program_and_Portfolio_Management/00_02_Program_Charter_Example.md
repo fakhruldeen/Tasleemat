@@ -69,7 +69,7 @@
  Add or remove rows as needed. -->
 
 | ID | Objective | Measure | Target Date | Owner | Status |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :---: | :--- | :---: |
 | INIT-01 | Digital Transformation & Operational Agility | Model inference accuracy & data reconciliation >= 95% | 2026-06-30 | Elena Vance, PfMP | In Progress |
 | REQ-02 | Process Automation & 40% Cycle Time Reduction | Annual recurring operational savings >= $950K USD | 2026-09-30 | Faisal Al-Harbi, PMP | Completed |
 | ACT-03 | Real-time Data-Driven Executive Decision Making | Sub-second transaction response latency (< 800ms) | 2026-11-30 | Tariq Al-Mansoor, PfMP | Planned |
@@ -82,7 +82,7 @@
 
 
 | Component ID | Component Name | Objective Linkage | Status | Owner |
-| ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :---: | :--- |
 | INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Digital Transformation & Operational Agility | In Progress | Elena Vance, PfMP |
 | REQ-02 | Sultan Al-Dossary (VP of Operations) | Process Automation & 40% Cycle Time Reduction | Completed | Faisal Al-Harbi, PMP |
 | ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Real-time Data-Driven Executive Decision Making | Planned | Tariq Al-Mansoor, PfMP |
@@ -94,7 +94,7 @@
 
 
 | Benefit ID | Benefit | Category | Beneficiary | Realization Mechanism | Realization Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration | Elena Vance, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional | Faisal Al-Harbi, PMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
 | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance | Tariq Al-Mansoor, PfMP | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 |
@@ -118,7 +118,7 @@
 **Funding Position:** Fully funded and pre-approved under FY2026-2027 Capital Expenditure (CAPEX) budget.
 
 | Decision Type | Authority Level | Escalation Path | Limits or Conditions |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | :--- | :--- |
 | Technical & Integration | Full executive authority to charter project, approve budget envelope, and commit resources | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | Operational & Functional | Business requirements sign-off and final operational acceptance authority | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | Governance & Compliance | Governance oversight, stage-gate audit validation, and method compliance | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
@@ -129,7 +129,7 @@
 
 
 | ID | Type | Description | Impact on Program | Owner | Review Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | 2026-06-30 |
 | REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | 2026-09-30 |
 | ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | 2026-11-30 |
@@ -156,7 +156,7 @@
 ## 8. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Program Manager** | Khalid Al-Otaibi, PgMP | [Electronically Signed] | 2026-03-18 |
 | **Program Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |
 | **Business Owner** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |

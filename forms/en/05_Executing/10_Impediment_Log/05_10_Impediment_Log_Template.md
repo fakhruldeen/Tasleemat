@@ -53,7 +53,7 @@ Section Instructions:
 ## Impediment Log
 
 | Impediment ID | Date Raised | Description | Impact | Owner | Status |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -63,7 +63,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Scrum Master / Agile Coach** | {{Scrum_Master_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Team Member / Contributor** | {{Contributor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

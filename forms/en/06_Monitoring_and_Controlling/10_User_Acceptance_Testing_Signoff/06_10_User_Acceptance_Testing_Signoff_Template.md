@@ -101,7 +101,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Quality Assurance (QA) Manager** | {{QA_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Client Representative / Business Owner** | {{Client_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

@@ -93,7 +93,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Lead Systems Engineer** | {{Systems_Engineer_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

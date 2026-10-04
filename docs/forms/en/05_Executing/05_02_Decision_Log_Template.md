@@ -40,7 +40,7 @@ Section-by-Section Instructions:
 ## Decision Log Entries
 
 | ID | Category | Decision | Impacts on Deliverables/Objectives | Impacted Stakeholders | Responsible Party | Date | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
@@ -49,7 +49,7 @@ Section-by-Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Decision Maker / PM** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Key Stakeholder Representative** | {{Stakeholder_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

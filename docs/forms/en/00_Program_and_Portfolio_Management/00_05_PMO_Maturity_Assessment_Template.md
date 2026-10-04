@@ -90,7 +90,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **PMO Director** | {{PMO_Director_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Executive Sponsor** | {{Executive_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Lead Assessor** | {{Lead_Assessor_Name}} | _______________________ | [ .... - .... - .... ] |

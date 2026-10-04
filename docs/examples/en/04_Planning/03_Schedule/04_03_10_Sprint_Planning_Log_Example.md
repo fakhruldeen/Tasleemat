@@ -55,19 +55,19 @@
 **Stories Committed:**
 
 | Story ID | Story Title | Story Points | Priority | Status |
-| :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | ---: | :---: | :---: |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | In Progress |
 
 **Acceptance Criteria:**
 
 | Story ID | Acceptance Criteria | Verified By |
-| :--- | :--- | :--- |
+| :---: | :--- | :--- |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 **Scope Added After Planning:**
 
 | Story ID | Reason Added | Requested By | Effect on Sprint |
-| :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | INIT-01 | Security baseline compliance enhancement | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
 ---
@@ -103,7 +103,7 @@
 ## 5. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Site / Execution Lead** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Project Planner / Scheduler** | Ibrahim Al-Dosari, PMI-SP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

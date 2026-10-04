@@ -69,7 +69,7 @@ for the product rather than only the role, so the acceptance is traceable.
   acceptance. -->
 
 | ID | Requirement | Acceptance Criteria | Validation Method | Verification Method | Status | Sign-off | Date |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
 | [ Add ID... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Sign here... ] | [ .... - .... - .... ] |
 | [ Add ID... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Sign here... ] | [ .... - .... - .... ] |
 | [ Add ID... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Sign here... ] | [ .... - .... - .... ] |
@@ -88,7 +88,7 @@ Comment guidance: Record any conditions attached to the acceptance, or items def
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product / Business Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Client / Customer Representative** | {{Client_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

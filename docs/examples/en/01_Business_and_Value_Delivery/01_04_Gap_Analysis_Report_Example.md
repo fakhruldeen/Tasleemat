@@ -82,7 +82,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Business Analyst** | Sarah Jenkins, CBAP | [Electronically Signed] | 2026-03-18 |
 | **Business Domain Owner** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

@@ -62,7 +62,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Business Analyst** | {{Lead_BA_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Client / Stakeholder Representative** | {{Client_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

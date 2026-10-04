@@ -83,7 +83,7 @@ mindmap
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Resource Manager** | Sami Al-Ghamdi (Resource Management Lead) | [Electronically Signed] | 2026-03-18 |
 | **PMO Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |

@@ -40,7 +40,7 @@
 ## Change Log Entries
 
 | ID | Category | Description | Requestor | Submission Date | Status | Disposition | Cost/Schedule Impact | Type (Mandatory/Discretionary) | Configurable Items Impacted |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :---: | :---: | :--- | :--- | :--- | :--- |
 | INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | In Progress | Approved and aligned with Apex Global Solutions governance baseline | $950,000 USD | Technical & Integration | 2-week schedule slippage on integration testing window |
 | REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Completed | Approved and aligned with Apex Global Solutions governance baseline | $1,150,000 USD | Operational & Functional | Rescheduling of operational pilot rollout date |
 
@@ -49,7 +49,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Change Control Board (CCB) Chair** | Dr. Muna Al-Ghamdi (CCB Chairperson) | [Electronically Signed] | 2026-03-18 |
 | **PMO Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |

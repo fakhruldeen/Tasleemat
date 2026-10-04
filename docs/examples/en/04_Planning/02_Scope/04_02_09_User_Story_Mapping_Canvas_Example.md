@@ -55,7 +55,7 @@
 **Activities in Order:**
 
 | # | Activity | Purpose for the Persona | Source of Evidence |
-| :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | 1 | Unified Cloud ERP Core Architecture | Approved and aligned with Apex Global Solutions governance baseline | INIT-01 |
 | 2 | Automated Procurement & Smart Supply Chain Engine | Approved and aligned with Apex Global Solutions governance baseline | REQ-02 |
 | 3 | Executive Business Intelligence & Reporting Platform | Approved and aligned with Apex Global Solutions governance baseline | ACT-03 |
@@ -129,7 +129,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **UX / BA Lead** | Leena Al-Bahrani (Lead UX Architect) | [Electronically Signed] | 2026-03-18 |
 | **Development Team Lead** | Eng. Walid Al-Hammad (Development Lead) | [Electronically Signed] | 2026-03-18 |

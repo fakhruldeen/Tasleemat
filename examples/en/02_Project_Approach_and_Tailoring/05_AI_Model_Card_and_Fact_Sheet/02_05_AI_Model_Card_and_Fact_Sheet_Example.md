@@ -72,7 +72,7 @@
 <!-- One row per consideration: which group is affected, the specific way this model is unfair, the harm it could cause and its severity, how it could be misused, what it can reveal, and its resource cost. -->
 
 | Consideration | Groups Affected | Specific Finding | Severity | What Was Done |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :---: | :--- |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Medium (Subject to quarterly audit) | Approved and aligned with Apex Global Solutions governance baseline |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Low (Within acceptable operating bounds) | Approved and aligned with Apex Global Solutions governance baseline |
 | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | High (Requires mandatory human approval) | Approved and aligned with Apex Global Solutions governance baseline |
@@ -101,7 +101,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Model Developer / ML Lead** | Dr. Rayan Al-Sulaiman (Lead ML Scientist) | [Electronically Signed] | 2026-03-18 |
 | **AI Ethics / QA Reviewer** | Approved - QA Reviewer Name | [Electronically Signed] | 2026-03-18 |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |

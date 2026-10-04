@@ -184,7 +184,7 @@ Section Instructions:
 **Findings Register:**
 
 | Finding | Risk to Individuals | Severity | Owner | Action |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -202,7 +202,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Data Protection Officer (DPO)** | {{DPO_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Legal / Compliance Counsel** | {{Legal_Counsel_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

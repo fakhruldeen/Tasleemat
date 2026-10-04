@@ -41,7 +41,7 @@
 <!-- One row per release. The release is the unit the customer receives, so name it the way the customer would recognise it. Reference the user stories by their backlog identifier rather than restating them. Until a sprint starts this table is a forecast, and a reader must be able to tell a forecast from a commitment. -->
 
 | Release | Start Date | End Date | User Stories | Release Goal | Status |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :---: | :---: | :--- | :--- | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | 2026-04-01 | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | Digital Transformation & Operational Agility | In Progress |
 | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-01 | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | Process Automation & 40% Cycle Time Reduction | Completed |
 | Approved and aligned with Apex Global Solutions governance baseline | 2026-08-15 | 2026-11-30 | Approved and aligned with Apex Global Solutions governance baseline | Real-time Data-Driven Executive Decision Making | Planned |
@@ -53,7 +53,7 @@
 <!-- One block per sprint. A release may have several sprints, and a sprint's contents are fixed once it starts, so a plan that shows a sprint without a date does not tell the reader whether it is already committed or still negotiable. List the user stories by backlog identifier. -->
 
 | Sprint | Dates | Sprint Goal | Sprint User Stories | Sprint Status |
-| ---: | ---: | ---: | ---: | ---: |
+| :---: | :---: | :--- | :--- | :---: |
 | **Sprint 1** | 2026-06-30 | Digital Transformation & Operational Agility | Approved and aligned with Apex Global Solutions governance baseline | In Progress |
 | **Sprint 2** | 2026-09-30 | Process Automation & 40% Cycle Time Reduction | Approved and aligned with Apex Global Solutions governance baseline | Completed |
 | **Sprint 3** | 2026-11-30 | Real-time Data-Driven Executive Decision Making | Approved and aligned with Apex Global Solutions governance baseline | Planned |
@@ -65,7 +65,7 @@
 ## 3. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **Release / DevOps Lead** | Eng. Walid Al-Hammad (Release Coordinator) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

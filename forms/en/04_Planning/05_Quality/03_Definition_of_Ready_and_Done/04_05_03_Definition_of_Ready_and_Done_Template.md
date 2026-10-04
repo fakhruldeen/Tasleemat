@@ -91,7 +91,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Scrum Master / Agile Coach** | {{Scrum_Master_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Development Team Lead** | {{Dev_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

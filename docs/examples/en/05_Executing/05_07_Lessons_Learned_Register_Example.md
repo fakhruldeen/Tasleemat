@@ -40,7 +40,7 @@
 ## Lessons Learned Entries
 
 | ID | Category | Trigger | Lesson | Responsible Party | Identifier/Submitter | Next Implementation Opportunity & Date | Organizational Impact (Y/N) | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :--- |
 | INIT-01 | Technical & Integration | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | INIT-01 | 2026-06-30 | 2-week schedule slippage on integration testing window | Validated against enterprise ISO27001 cloud security standards. |
 | REQ-02 | Operational & Functional | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | REQ-02 | 2026-09-30 | Rescheduling of operational pilot rollout date | Weekly steering coordination meetings on schedule. |
 
@@ -49,7 +49,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Knowledge / PMO Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Team Member / Contributor** | Ahmed Al-Shehri (Senior Systems Analyst) | [Electronically Signed] | 2026-03-18 |

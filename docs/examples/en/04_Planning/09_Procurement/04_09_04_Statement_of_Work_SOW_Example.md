@@ -128,7 +128,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
 | **Technical Lead / Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Vendor / Contractor Representative** | Robert Vance (Apex Global Services Lead) | [Electronically Signed] | 2026-03-18 |

@@ -80,7 +80,7 @@ Column guidance, by column:
 <!-- One row per release. The release is the unit the customer receives, so name it the way the customer would recognise it. Reference the user stories by their backlog identifier rather than restating them. Until a sprint starts this table is a forecast, and a reader must be able to tell a forecast from a commitment. -->
 
 | Release | Start Date | End Date | User Stories | Release Goal | Status |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :---: | :---: | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -92,7 +92,7 @@ Column guidance, by column:
 <!-- One block per sprint. A release may have several sprints, and a sprint's contents are fixed once it starts, so a plan that shows a sprint without a date does not tell the reader whether it is already committed or still negotiable. List the user stories by backlog identifier. -->
 
 | Sprint | Dates | Sprint Goal | Sprint User Stories | Sprint Status |
-| ---: | ---: | ---: | ---: | ---: |
+| :---: | :---: | :--- | :--- | :---: |
 | **Sprint 1** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Sprint 2** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Sprint 3** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -104,7 +104,7 @@ Column guidance, by column:
 ## 3. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Release / DevOps Lead** | {{Release_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

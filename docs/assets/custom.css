@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6,
 
 [dir="rtl"] .md-typeset table:not([class]) th,
 [dir="rtl"] .md-typeset table:not([class]) td {
-  text-align: right !important;
+  text-align: right;
 }
 
 [dir="rtl"] .md-header__title {

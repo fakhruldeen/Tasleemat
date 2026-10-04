@@ -17,7 +17,7 @@ Section-by-Section Instructions:
 ## 1. Variance Analysis Table
 
 | Category | Planned Result | Actual Result | Variance | Root Cause | Planned Response |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | ---: | :--- | :--- |
 | **Schedule** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Cost** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Quality** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -46,7 +46,7 @@ Section-by-Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Cost & Schedule Controller** | {{Cost_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |

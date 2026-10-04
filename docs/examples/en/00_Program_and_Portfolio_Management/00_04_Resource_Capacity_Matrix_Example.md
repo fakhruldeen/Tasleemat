@@ -75,7 +75,7 @@
  remove rows as needed. -->
 
 | ID | Resource Role or Team | Period | Total Available | Allocated | Remaining | Constraints or Single Points of Failure | Notes |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :---: | ---: | ---: | ---: | :--- | :--- |
 | INIT-01 | Automated database ETL pipeline extraction | 2026-Q2 | 60 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 | REQ-02 | Secure electronic archiving with compliance audit | 2026-Q3 | 40 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Weekly steering coordination meetings on schedule. |
 | ACT-03 | API ingestion streams with tokenized logging | 2026-Q4 | 50 FTE Hours (Buffer) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Contingency reserve allocated for critical path dependencies. |
@@ -88,7 +88,7 @@
 
 
 | ID | Resource Role | Period | Required Capacity | Source of Demand | Priority |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :---: | ---: | :--- | :---: |
 | INIT-01 | Automated database ETL pipeline extraction | 2026-Q2 | 480 FTE Hours / mo | Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline |
 | REQ-02 | Secure electronic archiving with compliance audit | 2026-Q3 | 620 FTE Hours / mo | Secure electronic archiving with compliance audit | Approved and aligned with Apex Global Solutions governance baseline |
 | ACT-03 | API ingestion streams with tokenized logging | 2026-Q4 | 540 FTE Hours / mo | API ingestion streams with tokenized logging | Approved and aligned with Apex Global Solutions governance baseline |
@@ -107,7 +107,7 @@
  than leaving the row open. Add or remove rows as needed. -->
 
 | Resource Role | Gap | Period | Resolution Planned | Resolution Owner | Resolution Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :--- | ---: | :---: | :--- | :--- | :---: |
 | Automated database ETL pipeline extraction | Approved and aligned with Apex Global Solutions governance baseline | 2026-Q2 | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-06-30 |
 | Secure electronic archiving with compliance audit | Approved and aligned with Apex Global Solutions governance baseline | 2026-Q3 | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
 | API ingestion streams with tokenized logging | Approved and aligned with Apex Global Solutions governance baseline | 2026-Q4 | Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | 2026-11-30 |
@@ -119,7 +119,7 @@
 
 
 | Resource Role | Contingency Type | Contingency Amount | How It Would Be Used |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | ---: | :--- |
 | Automated database ETL pipeline extraction | Technical & Integration | $950,000 USD | Approved and aligned with Apex Global Solutions governance baseline |
 | Secure electronic archiving with compliance audit | Operational & Functional | $1,150,000 USD | Approved and aligned with Apex Global Solutions governance baseline |
 | API ingestion streams with tokenized logging | Governance & Compliance | $780,000 USD | Approved and aligned with Apex Global Solutions governance baseline |
@@ -129,7 +129,7 @@
 ## 6. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Resource Planning Lead** | Sami Al-Ghamdi (Resource Management Lead) | [Electronically Signed] | 2026-03-18 |
 | **Program Manager** | Khalid Al-Otaibi, PgMP | [Electronically Signed] | 2026-03-18 |
 | **PMO Director** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |

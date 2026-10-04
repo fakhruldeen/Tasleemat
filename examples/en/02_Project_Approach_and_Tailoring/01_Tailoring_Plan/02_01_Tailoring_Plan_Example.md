@@ -52,7 +52,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Methodology Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 | **PMO Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

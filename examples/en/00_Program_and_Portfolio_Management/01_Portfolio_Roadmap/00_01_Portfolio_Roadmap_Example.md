@@ -46,7 +46,7 @@
  or remove rows as needed. -->
 
 | ID | Initiative Name | Type | Strategic Objective | Start | End | Budget | Status |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :---: | :---: | ---: | :---: |
 | INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Technical & Integration | Digital Transformation & Operational Agility | 2026-04-01 | 2026-06-30 | $950,000 USD | In Progress |
 | REQ-02 | Sultan Al-Dossary (VP of Operations) | Operational & Functional | Process Automation & 40% Cycle Time Reduction | 2026-06-01 | 2026-09-30 | $1,150,000 USD | Completed |
 | ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Governance & Compliance | Real-time Data-Driven Executive Decision Making | 2026-08-15 | 2026-11-30 | $780,000 USD | Planned |
@@ -59,7 +59,7 @@
 
 
 | ID | Dependent Initiative | Dependency Type | Predecessor | Required By | Impact if Late |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :--- |
 | INIT-01 | Unified Cloud ERP Core Architecture | Finish-to-Start (FS) | INIT-01 (Cloud ERP Core) | 2026-06-30 | 2-week schedule slippage on integration testing window |
 | REQ-02 | Automated Procurement & Smart Supply Chain Engine | Start-to-Start (SS) | INIT-02 (Supply Chain) | 2026-09-30 | Rescheduling of operational pilot rollout date |
 | ACT-03 | Executive Business Intelligence & Reporting Platform | Finish-to-Finish (FF) | INIT-01 (Cloud Architecture) | 2026-11-30 | Minor reallocation of cloud professional services |
@@ -77,7 +77,7 @@
  rows as needed. -->
 
 | Period | Planned Funding | Planned Capacity | Committed Load | Available | Notes |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | ---: | ---: | ---: | ---: | :--- |
 | 2026-Q2 | $950,000 USD | 480 FTE Hours / mo | 420 FTE Hours / mo | 60 FTE Hours (Buffer) | Validated against enterprise ISO27001 cloud security standards. |
 | 2026-Q3 | $1,150,000 USD | 620 FTE Hours / mo | 580 FTE Hours / mo | 40 FTE Hours (Buffer) | Weekly steering coordination meetings on schedule. |
 | 2026-Q4 | $780,000 USD | 540 FTE Hours / mo | 490 FTE Hours / mo | 50 FTE Hours (Buffer) | Contingency reserve allocated for critical path dependencies. |
@@ -88,7 +88,7 @@
 
 
 | ID | Type | Description | Impact on Roadmap | Owner | Review Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | INIT-01 | Technical & Integration | Deploy hardened cloud environment and master databases | 2-week schedule slippage on integration testing window | Elena Vance, PfMP | 2026-06-30 |
 | REQ-02 | Operational & Functional | Automate procurement requisition and inventory workflows | Rescheduling of operational pilot rollout date | Faisal Al-Harbi, PMP | 2026-09-30 |
 | ACT-03 | Governance & Compliance | Build interactive executive dashboards and KPI reports | Minor reallocation of cloud professional services | Tariq Al-Mansoor, PfMP | 2026-11-30 |
@@ -103,7 +103,7 @@
  nobody owns. Add or remove rows as needed. -->
 
 | Change ID | Description | Reason | Affected Initiatives | Approved By | Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | CR-2026-01 | Deploy hardened cloud environment and master databases | Security baseline compliance enhancement | Unified Cloud ERP Core Architecture | Elena Vance, PfMP | 2026-06-30 |
 | CR-2026-02 | Automate procurement requisition and inventory workflows | Operational scope extension for branch logistics | Automated Procurement & Smart Supply Chain Engine | Faisal Al-Harbi, PMP | 2026-09-30 |
 | CR-2026-03 | Build interactive executive dashboards and KPI reports | Alignment with quarterly fiscal cutover milestones | Executive Business Intelligence & Reporting Platform | Tariq Al-Mansoor, PfMP | 2026-11-30 |
@@ -113,7 +113,7 @@
 ## 7. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Portfolio Manager** | Elena Vance, PfMP | [Electronically Signed] | 2026-03-18 |
 | **Head of PMO** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 | **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |

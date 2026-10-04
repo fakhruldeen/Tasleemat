@@ -113,7 +113,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Procurement Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |

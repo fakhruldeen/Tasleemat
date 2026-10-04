@@ -60,7 +60,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **PMO Director** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |
 | **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |
 | **Lead Assessor** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |

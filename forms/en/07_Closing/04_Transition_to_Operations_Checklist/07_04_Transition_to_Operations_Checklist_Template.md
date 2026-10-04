@@ -41,7 +41,7 @@ Section Instructions:
 ## Operational Handover Items
 
 | Handover Item | Responsible Party | Acceptance Criteria | Handover Date | Sign-off Status |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
@@ -51,7 +51,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Operations / Maintenance Lead** | {{Operations_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Business Owner / Client Representative** | {{Client_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

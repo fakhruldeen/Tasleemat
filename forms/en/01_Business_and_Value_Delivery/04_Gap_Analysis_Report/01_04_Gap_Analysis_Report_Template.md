@@ -62,7 +62,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Business Analyst** | {{Lead_BA_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Business Domain Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

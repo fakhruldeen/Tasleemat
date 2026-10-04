@@ -212,7 +212,7 @@ Risk and assumption rows:
  Add or remove rows as needed. -->
 
 | ID | Objective | Measure | Target Date | Owner | Status |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :---: | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -231,7 +231,7 @@ Risk and assumption rows:
  rows as needed. -->
 
 | Component ID | Component Name | Objective Linkage | Status | Owner |
-| ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -249,7 +249,7 @@ Risk and assumption rows:
  the component that created it has closed. Add or remove rows as needed. -->
 
 | Benefit ID | Benefit | Category | Beneficiary | Realization Mechanism | Realization Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -280,7 +280,7 @@ Risk and assumption rows:
 **Funding Position:** [ Add details... ]
 
 | Decision Type | Authority Level | Escalation Path | Limits or Conditions |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -297,7 +297,7 @@ Risk and assumption rows:
  simply not looked. Add or remove rows as needed. -->
 
 | ID | Type | Description | Impact on Program | Owner | Review Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -324,7 +324,7 @@ Risk and assumption rows:
 ## 8. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Program Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Program Sponsor** | {{Program_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |

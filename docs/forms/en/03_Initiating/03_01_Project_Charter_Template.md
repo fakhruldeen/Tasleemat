@@ -112,7 +112,7 @@ Section Instructions:
 ## Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
 | # | Summary milestones | Due Date |
-| :--- | :--- | :--- |
+| :---: | :--- | :---: |
 | 1 | [ Add details... ] | [ Add details... ] |
 | 2 | [ Add details... ] | [ Add details... ] |
 | 3 | [ Add details... ] | [ Add details... ] |
@@ -169,7 +169,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Key Stakeholder / Client** | {{Client_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

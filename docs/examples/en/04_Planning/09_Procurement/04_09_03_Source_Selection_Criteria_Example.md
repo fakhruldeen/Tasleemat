@@ -79,7 +79,7 @@ Earned Value Analysis (EVA) confirms robust cost control for the active reportin
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
 | **Technical Evaluation Lead** | Alex Mercer (Lead Solution Architect) | [Electronically Signed] | 2026-03-18 |
 | **Tender Committee Chair** | Approved - Tender Committee Chair Name | [Electronically Signed] | 2026-03-18 |

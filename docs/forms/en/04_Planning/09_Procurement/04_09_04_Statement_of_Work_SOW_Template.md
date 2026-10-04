@@ -150,7 +150,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Technical Lead / Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Vendor / Contractor Representative** | {{Vendor_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

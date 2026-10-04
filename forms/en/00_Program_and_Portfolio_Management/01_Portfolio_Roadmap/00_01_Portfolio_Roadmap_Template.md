@@ -201,7 +201,7 @@ Roadmap change rows:
  or remove rows as needed. -->
 
 | ID | Initiative Name | Type | Strategic Objective | Start | End | Budget | Status |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :---: | :---: | ---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -220,7 +220,7 @@ Roadmap change rows:
  actionable when the predecessor slips. -->
 
 | ID | Dependent Initiative | Dependency Type | Predecessor | Required By | Impact if Late |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -238,7 +238,7 @@ Roadmap change rows:
  rows as needed. -->
 
 | Period | Planned Funding | Planned Capacity | Committed Load | Available | Notes |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | ---: | ---: | ---: | ---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -254,7 +254,7 @@ Roadmap change rows:
  Add or remove rows as needed. -->
 
 | ID | Type | Description | Impact on Roadmap | Owner | Review Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -269,7 +269,7 @@ Roadmap change rows:
  nobody owns. Add or remove rows as needed. -->
 
 | Change ID | Description | Reason | Affected Initiatives | Approved By | Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -279,7 +279,7 @@ Roadmap change rows:
 ## 7. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Portfolio Manager** | {{Portfolio_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Head of PMO** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Executive Sponsor** | {{Executive_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

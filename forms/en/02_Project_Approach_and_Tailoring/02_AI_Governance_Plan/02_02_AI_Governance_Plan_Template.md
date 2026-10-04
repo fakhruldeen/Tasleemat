@@ -137,7 +137,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **AI Technical Lead** | {{AI_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Data Protection Officer (DPO)** | {{DPO_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor / Executive** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

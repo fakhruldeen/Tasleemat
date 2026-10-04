@@ -92,7 +92,7 @@ Project Exit & Acceptance Criteria:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Quality Assurance (QA) Manager** | Noura Al-Sayed (Director of Quality Assurance) | [Electronically Signed] | 2026-03-18 |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **Client Representative / Business Owner** | Nasser Al-Ghamdi (Commercial Client Director) | [Electronically Signed] | 2026-03-18 |

@@ -112,6 +112,7 @@ TIER_MAP = {
 
 def sanitize_content_links(content, current_doc_path, deliverable):
     """Sanitize all relative markdown links and ensure HTML block elements have markdown="1"."""
+    is_ar = "/ar/" in str(current_doc_path) or "_قالب" in str(current_doc_path) or "_دليل" in str(current_doc_path) or "_مثال" in str(current_doc_path)
     pat = re.compile(r'\[((?:[^\[\]]|\[[^\[\]]*\])*)\]\(((?:[^()]+|\([^()]*\))+)\)')
 
     def replacer(match):
@@ -122,7 +123,6 @@ def sanitize_content_links(content, current_doc_path, deliverable):
             return f"[{text}]({url})"
 
         clean_url = url.strip("<>").split('#')[0].split('?')[0].strip()
-        is_ar = "/ar/" in str(current_doc_path) or "_قالب" in str(current_doc_path) or "_دليل" in str(current_doc_path) or "_مثال" in str(current_doc_path)
 
         # 1. Example links
         if "_Example.md" in clean_url or "_مثال.md" in clean_url:
@@ -172,7 +172,91 @@ def sanitize_content_links(content, current_doc_path, deliverable):
         return f'<div {tag_attrs} markdown="1">'
 
     content = re.sub(r'<div\s+([^>]+)>', add_markdown_attr, content)
+
+    if not is_ar:
+        content = align_tables_in_markdown(content)
+
     return content
+
+def determine_col_alignment_en(col_name: str) -> str:
+    clean = col_name.strip()
+    clean = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', clean)
+    clean = re.sub(r'[*_`]', '', clean).strip()
+    low = clean.lower()
+
+    if not low:
+        return ':---'
+
+    numeric_exact = {
+        'budget', 'costs', 'cost', 'planned funding', 'price', 'npv', 'net present value', 
+        'roi', 'rate', 'contingency amount', 'baseline value', 'target value', 
+        'actual value', 'variance', 'gap', 'total available', 'allocated', 'remaining', 
+        'committed load', 'available', 'required capacity', 'hours', 'story points', 
+        'target score', 'actual score', 'weight', 'points', '%', 'amount', 'net value',
+        'funding', 'planned capacity', 'estimate', 'estimated cost', 'actual cost',
+        'cost variance', 'schedule variance', 'cpi', 'spi', 'ev', 'pv', 'ac', 'bac', 'eac', 'etc',
+        'planned budget', 'actual budget', 'variance ($)', 'variance (%)', 'actual cost ($)',
+        'estimated cost ($)', 'total cost', 'unit cost', 'hourly rate', 'daily rate'
+    }
+    if low in numeric_exact:
+        return '---:'
+    if any(low.endswith(sfx) for sfx in [' ($)', ' (%)', ' (hrs)', ' (hours)', ' (days)', ' (points)', ' (sar)', ' (usd)', ' (eur)', ' (gbp)']):
+        return '---:'
+    if any(k in low for k in ['budget', 'planned funding', 'net present value', 'contingency amount', 'total available', 'allocated', 'remaining', 'committed load']):
+        return '---:'
+
+    center_exact = {
+        'id', 'doc id', 'change id', 'component id', 'benefit id', 'dependency id', 
+        'req id', 'requirement id', 'risk id', 'issue id', 'action id', 'defect id',
+        'item #', 'ref #', 'step #', 'no.', '#', 'code', 'guide #', 'template #', 'example #',
+        'status', 'sprint status', 'sign-off status', 'status at closure', 'approval status',
+        'priority', 'severity', 'rag', 'tier', 'level', 'phase', 'sprint', 'release', 
+        'iteration', 'version', 'signature', 'by when', 'date', 'dates', 'start date', 
+        'end date', 'target date', 'review date', 'agreed date', 'resolution date', 
+        'realization date', 'handover date', 'date approved', 'date resolved', 'start', 'end',
+        'period', 'frequency', 'criticality', 'probability', 'impact score', 'raci',
+        'language', 'target sprint or release'
+    }
+    if low in center_exact:
+        return ':---:'
+    if low.endswith(' id') or low.startswith('id ') or low.endswith(' status') or low.endswith(' date') or low.startswith('date '):
+        return ':---:'
+    if low in ['start', 'end'] and ('start date' in low or 'end date' in low or low == 'start' or low == 'end'):
+        return ':---:'
+
+    return ':---'
+
+def align_tables_in_markdown(text: str) -> str:
+    lines = text.splitlines(keepends=True)
+    new_lines = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        line_s = line.strip()
+        
+        if line_s.startswith('|') and ('---' in line_s) and i > 0:
+            prev_line = lines[i-1].strip()
+            if prev_line.startswith('|') and not ('---' in prev_line and prev_line.count('|') == line_s.count('|')):
+                if '{{' in prev_line or 'Date Prepared:' in prev_line or 'تاريخ الإعداد:' in prev_line:
+                    new_lines.append(line)
+                    i += 1
+                    continue
+                
+                header_cols = [c.strip() for c in prev_line.strip('|').split('|')]
+                sep_cols = [c.strip() for c in line_s.strip('|').split('|')]
+                
+                if len(header_cols) == len(sep_cols) and len(header_cols) > 0:
+                    new_alignments = [determine_col_alignment_en(col) for col in header_cols]
+                    new_sep = '| ' + ' | '.join(new_alignments) + ' |\n'
+                    indent = len(line) - len(line.lstrip())
+                    new_lines.append(' ' * indent + new_sep)
+                    i += 1
+                    continue
+
+        new_lines.append(line)
+        i += 1
+        
+    return ''.join(new_lines)
 
 def collect_deliverables():
     """Scan all 102 deliverable folders in forms/en and forms/ar and construct full mappings."""

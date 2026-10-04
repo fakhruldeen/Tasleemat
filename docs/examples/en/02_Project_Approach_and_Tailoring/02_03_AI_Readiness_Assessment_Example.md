@@ -67,7 +67,7 @@
 <!-- One row per platform concern: capacity, tooling, integration, resilience, and what happens as volume grows. -->
 
 | Concern | Current State | Gap | Cost and Effort to Close | Severity |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | ---: | :--- | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | In Progress | Approved and aligned with Apex Global Solutions governance baseline | $950,000 USD | Medium (Subject to quarterly audit) |
 | Approved and aligned with Apex Global Solutions governance baseline | Completed | Approved and aligned with Apex Global Solutions governance baseline | $1,150,000 USD | Low (Within acceptable operating bounds) |
 | Approved and aligned with Apex Global Solutions governance baseline | Planned | Approved and aligned with Apex Global Solutions governance baseline | $780,000 USD | High (Requires mandatory human approval) |
@@ -78,7 +78,7 @@
 <!-- One row per role: whether it is filled, what the person can actually do, and how the gap closes. -->
 
 | Role | Filled | Level | Domain Knowledge | How the Gap Closes |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- | :--- |
 | Strategic executive oversight and resource authorization | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration | Approved and aligned with Apex Global Solutions governance baseline |
 | Business process owner and final acceptance authority | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional | Approved and aligned with Apex Global Solutions governance baseline |
 | Primary commercial user champion and UAT stakeholder | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance | Approved and aligned with Apex Global Solutions governance baseline |
@@ -116,7 +116,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **AI / Data Lead** | Dr. Rayan Al-Sulaiman (Lead AI & Data Scientist) | [Electronically Signed] | 2026-03-18 |
 | **Enterprise Architect / IT Lead** | Approved - IT Lead Name | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

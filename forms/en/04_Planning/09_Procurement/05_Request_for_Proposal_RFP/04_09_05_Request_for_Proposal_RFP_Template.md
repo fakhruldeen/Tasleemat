@@ -136,7 +136,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Procurement Committee Chair** | {{Procurement_Committee_Chair_Name}} | _______________________ | [ .... - .... - .... ] |

@@ -73,7 +73,7 @@
  needed. -->
 
 | ID | Predecessor | Successor | Deliverable or Condition | Dependency Type | Required By | Agreed Date | Status | Impact if Late |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :--- | :---: | :---: | :--- |
 | INIT-01 | INIT-01 (Cloud ERP Core) | Smart Supply Chain Engine | Approved and aligned with Apex Global Solutions governance baseline | Finish-to-Start (FS) | 2026-06-30 | 2026-06-30 | In Progress | 2-week schedule slippage on integration testing window |
 | REQ-02 | INIT-02 (Supply Chain) | Executive BI Platform | Approved and aligned with Apex Global Solutions governance baseline | Start-to-Start (SS) | 2026-09-30 | 2026-09-30 | Completed | Rescheduling of operational pilot rollout date |
 | ACT-03 | INIT-01 (Cloud Architecture) | Employee Self-Service Portal | Approved and aligned with Apex Global Solutions governance baseline | Finish-to-Finish (FF) | 2026-11-30 | 2026-11-30 | Planned | Minor reallocation of cloud professional services |
@@ -93,7 +93,7 @@
  the person who needs the deliverable. Add or remove rows as needed. -->
 
 | ID | External Party | Dependency Description | Contractual Basis | Required By | Status | Owner |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: | :--- |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | In Progress | Elena Vance, PfMP |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Completed | Faisal Al-Harbi, PMP |
 | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 | Planned | Tariq Al-Mansoor, PfMP |
@@ -109,7 +109,7 @@
  with the same result. Add or remove rows as needed. -->
 
 | Dependency ID | Trigger | Escalated To | Action Agreed | Date |
-| ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :---: |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 |
 | ACT-03 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-11-30 |
@@ -120,7 +120,7 @@
 ## 5. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Program / Portfolio Manager** | Khalid Al-Otaibi, PgMP | [Electronically Signed] | 2026-03-18 |
 | **Delivery / Component Lead** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **PMO Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |

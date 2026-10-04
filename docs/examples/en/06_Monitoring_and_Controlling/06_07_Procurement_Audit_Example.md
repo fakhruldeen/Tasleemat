@@ -105,7 +105,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Procurement Auditor** | Adel Al-Mutairi, CIA | [Electronically Signed] | 2026-03-18 |
 | **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
 | **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |

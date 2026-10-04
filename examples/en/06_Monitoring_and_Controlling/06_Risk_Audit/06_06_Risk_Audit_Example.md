@@ -92,7 +92,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Risk Auditor** | Adel Al-Mutairi, CIA | [Electronically Signed] | 2026-03-18 |
 | **Risk Manager** | Layla Al-Omari, PMI-RMP | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

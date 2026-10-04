@@ -200,7 +200,7 @@ Contingency rows:
  remove rows as needed. -->
 
 | ID | Resource Role or Team | Period | Total Available | Allocated | Remaining | Constraints or Single Points of Failure | Notes |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :---: | ---: | ---: | ---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -222,7 +222,7 @@ Contingency rows:
  needed. -->
 
 | ID | Resource Role | Period | Required Capacity | Source of Demand | Priority |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :---: | ---: | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -241,7 +241,7 @@ Contingency rows:
  than leaving the row open. Add or remove rows as needed. -->
 
 | Resource Role | Gap | Period | Resolution Planned | Resolution Owner | Resolution Date |
-| ---: | ---: | ---: | ---: | ---: | ---: |
+| :--- | ---: | :---: | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -260,7 +260,7 @@ Contingency rows:
  rows as needed. -->
 
 | Resource Role | Contingency Type | Contingency Amount | How It Would Be Used |
-| ---: | ---: | ---: | ---: |
+| :--- | :--- | ---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -270,7 +270,7 @@ Contingency rows:
 ## 6. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Resource Planning Lead** | {{Resource_Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Program Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Director** | {{PMO_Director_Name}} | _______________________ | [ .... - .... - .... ] |

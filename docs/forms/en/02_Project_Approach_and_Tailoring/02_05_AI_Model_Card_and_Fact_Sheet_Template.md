@@ -149,7 +149,7 @@ Section Instructions:
 <!-- One row per consideration: which group is affected, the specific way this model is unfair, the harm it could cause and its severity, how it could be misused, what it can reveal, and its resource cost. -->
 
 | Consideration | Groups Affected | Specific Finding | Severity | What Was Done |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -178,7 +178,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Model Developer / ML Lead** | {{ML_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **AI Ethics / QA Reviewer** | {{QA_Reviewer_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |

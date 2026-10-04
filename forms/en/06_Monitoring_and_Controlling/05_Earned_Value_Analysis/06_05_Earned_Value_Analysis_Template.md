@@ -89,7 +89,7 @@ Section-by-Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Cost / EVM Specialist** | {{EVM_Specialist_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller / PMO Lead** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |

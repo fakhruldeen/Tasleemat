@@ -68,7 +68,7 @@ Section Instructions:
 ## Vendor Performance Scorecard Entries
 
 | Metric/KPI | Target Score | Actual Score | Variance | Corrective Action |
-| --- | --- | --- | --- | --- |
+| :--- | ---: | ---: | ---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -78,7 +78,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Vendor Representative** | {{Vendor_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

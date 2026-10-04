@@ -52,7 +52,7 @@ Please populate the table below with the following details:
 - **Attitude:** The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).
 -->
 | ID | Name or Role | Interest | Influence | Attitude |
-| --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -63,7 +63,7 @@ Please populate the table below with the following details:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Change & Communications Lead** | {{Change_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

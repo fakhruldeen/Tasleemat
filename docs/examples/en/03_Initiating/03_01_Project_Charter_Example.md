@@ -114,7 +114,7 @@ Overall risk is classified as 'Moderate-High' due to multi-system integration co
 ## Summary milestone schedule
 <!-- Significant events in the project. Examples include the completion of key deliverables, the beginning or completion of a project phase, or product acceptance. -->
 | # | Summary milestones | Due Date |
-| :--- | :--- | :--- |
+| :---: | :--- | :---: |
 | 1 | Architecture Design & Requirements Sign-off | 2026-06-30 |
 | 2 | Cloud Infrastructure & Sandbox Readiness | 2026-09-30 |
 | 3 | Historical Data Migration & Verification | 2026-11-30 |
@@ -183,7 +183,7 @@ Project Approval Requirements:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Key Stakeholder / Client** | Nasser Al-Ghamdi (Commercial Client Director) | [Electronically Signed] | 2026-03-18 |

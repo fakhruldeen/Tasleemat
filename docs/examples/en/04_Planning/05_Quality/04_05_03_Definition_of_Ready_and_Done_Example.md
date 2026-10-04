@@ -54,7 +54,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **Scrum Master / Agile Coach** | Hassan Al-Majid, CSM | [Electronically Signed] | 2026-03-18 |
 | **Development Team Lead** | Eng. Walid Al-Hammad (Development Lead) | [Electronically Signed] | 2026-03-18 |

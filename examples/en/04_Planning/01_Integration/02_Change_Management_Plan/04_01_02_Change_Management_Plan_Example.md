@@ -83,7 +83,7 @@ A structured Prosci ADKAR change campaign engages 450+ enterprise users across b
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Change Control Board (CCB) Chair** | Dr. Muna Al-Ghamdi (CCB Chairperson) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

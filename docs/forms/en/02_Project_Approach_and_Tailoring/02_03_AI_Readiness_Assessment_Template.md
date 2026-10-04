@@ -111,7 +111,7 @@ Section Instructions:
 <!-- One row per platform concern: capacity, tooling, integration, resilience, and what happens as volume grows. -->
 
 | Concern | Current State | Gap | Cost and Effort to Close | Severity |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | ---: | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -122,7 +122,7 @@ Section Instructions:
 <!-- One row per role: whether it is filled, what the person can actually do, and how the gap closes. -->
 
 | Role | Filled | Level | Domain Knowledge | How the Gap Closes |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -160,7 +160,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **AI / Data Lead** | {{AI_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Enterprise Architect / IT Lead** | {{IT_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

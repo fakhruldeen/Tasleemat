@@ -80,7 +80,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Estimator / Technical Lead** | Approved - Estimator Name | [Electronically Signed] | 2026-03-18 |
 | **Project Planner / Scheduler** | Ibrahim Al-Dosari, PMI-SP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

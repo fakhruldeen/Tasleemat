@@ -77,7 +77,7 @@ Section-by-Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Requester** | {{Requester_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Change Control Board (CCB) Chair** | {{CCB_Chair_Name}} | _______________________ | [ .... - .... - .... ] |

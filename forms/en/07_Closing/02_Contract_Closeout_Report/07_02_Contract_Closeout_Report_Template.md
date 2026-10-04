@@ -130,7 +130,7 @@ change log so the two records can be reconciled.
 - **Date Approved:** the date approved from the change log. -->
 
 | Change ID | Change Description | Date Approved |
-| :--- | :--- | :--- |
+| :---: | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -152,7 +152,7 @@ the contract.
 - **Date Resolved:** the date the dispute or claim was resolved. -->
 
 | Dispute Description | Resolution | Date Resolved |
-| :--- | :--- | :--- |
+| :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -196,7 +196,7 @@ the project closeout report. -->
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Contract Manager** | {{Contract_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller / Legal Counsel** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |

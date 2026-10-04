@@ -135,7 +135,7 @@ Row guidance:
 <!-- Time and Cost as rows, against Objectives, Final Outcome, Variance, and Comments as columns. Give the variance as a number, not a word, and say which way it went. Where the project finished early or under budget, explain why: an unexplained favourable variance hides a planning error just as a delay does, and a reader cannot repeat the favourable outcome if they cannot see what produced it. Use the Comments column for anything still open at closure. Add a row per additional measure if the project tracks one. -->
 
 | Measure | Objectives | Final Outcome | Variance | Comments |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | ---: | :--- |
 | **Time** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | **Cost** | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
@@ -181,7 +181,7 @@ Row guidance:
 <!-- The information from the procurement closeout. Where procurement was not used, state that plainly in the first row rather than leaving the section blank, so a reader knows it was considered. Any claim or dispute not settled before closure is a liability being handed on, and belongs in the status column. -->
 
 | Item | Details | Status at Closure |
-| :--- | :--- | :--- |
+| :--- | :--- | :---: |
 | **Contracts Closed** | [ Add details... ] | [ Add details... ] |
 | **Obligations Discharged** | [ Add details... ] | [ Add details... ] |
 | **Claims and Disputes Settled** | [ Add details... ] | [ Add details... ] |
@@ -201,7 +201,7 @@ Row guidance:
 ## 8. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Operations / Service Owner** | {{Operations_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

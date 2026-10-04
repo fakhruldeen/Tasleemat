@@ -41,7 +41,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ## Action Items
 
 | Action | Owner | Due Date | Status |
-| --- | --- | --- | --- |
+| :--- | :--- | :---: | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-03-18 | In Progress |
 | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-03-18 | Completed |
 | Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | 2026-03-18 | Planned |
@@ -51,7 +51,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Meeting Chair** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Minute Taker** | Amal Al-Obeid (PMO Coordinator) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

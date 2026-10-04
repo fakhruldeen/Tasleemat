@@ -69,7 +69,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Sustainability / ESG Officer** | Eng. Yasser Al-Subaie (ESG & Sustainability Director) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Procurement / Operations Lead** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |

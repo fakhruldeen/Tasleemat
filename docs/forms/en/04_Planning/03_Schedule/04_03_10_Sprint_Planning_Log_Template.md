@@ -80,19 +80,19 @@ Section Instructions:
 **Stories Committed:**
 
 | Story ID | Story Title | Story Points | Priority | Status |
-| :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | ---: | :---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 **Acceptance Criteria:**
 
 | Story ID | Acceptance Criteria | Verified By |
-| :--- | :--- | :--- |
+| :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 **Scope Added After Planning:**
 
 | Story ID | Reason Added | Requested By | Effect on Sprint |
-| :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
 ---
@@ -128,7 +128,7 @@ Section Instructions:
 ## 5. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Site / Execution Lead** | {{Execution_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Planner / Scheduler** | {{Scheduler_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

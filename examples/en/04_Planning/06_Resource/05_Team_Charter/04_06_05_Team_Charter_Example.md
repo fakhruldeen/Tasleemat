@@ -60,7 +60,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Team Lead / Scrum Master** | Eng. Walid Al-Hammad (Tech Lead) | [Electronically Signed] | 2026-03-18 |
 | **Team Representative** | Sarah Al-Rashidi (Team Representative) | [Electronically Signed] | 2026-03-18 |

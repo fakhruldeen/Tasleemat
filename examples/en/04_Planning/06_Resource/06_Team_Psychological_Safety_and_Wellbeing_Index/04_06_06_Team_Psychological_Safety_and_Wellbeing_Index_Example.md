@@ -54,7 +54,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Team Lead / Scrum Master** | Hassan Al-Majid, CSM | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **People & Culture Partner** | Sami Al-Ghamdi (HR Business Partner) | [Electronically Signed] | 2026-03-18 |

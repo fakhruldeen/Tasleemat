@@ -48,7 +48,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Quality Assurance (QA) Lead** | {{QA_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Engineering / Technical Lead** | {{Engineering_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

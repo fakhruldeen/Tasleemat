@@ -61,7 +61,7 @@ A structured Prosci ADKAR change campaign engages 450+ enterprise users across b
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Change Manager** | Dr. Sarah Al-Kuwaiti, Prosci CCP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Executive Sponsor / HR Lead** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |

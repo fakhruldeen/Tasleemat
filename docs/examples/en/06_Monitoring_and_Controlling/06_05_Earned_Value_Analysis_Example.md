@@ -108,7 +108,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Cost / EVM Specialist** | Ibrahim Al-Dosari, PMI-SP | [Electronically Signed] | 2026-03-18 |
 | **Finance Controller / PMO Lead** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |

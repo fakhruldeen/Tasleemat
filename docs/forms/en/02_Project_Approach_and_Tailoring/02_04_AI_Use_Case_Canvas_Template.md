@@ -109,7 +109,7 @@ Section Instructions:
 <!-- One row per source: where it comes from, what it is, what is known about its quality, what labelling is required, and what use is permitted. -->
 
 | Data Source | Data Category and Volume | Data Quality Status | Labelling Requirement | Permitted Use and Access |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -153,7 +153,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product / Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **AI Technical Lead** | {{AI_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

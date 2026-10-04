@@ -29,7 +29,7 @@
 <!-- One row per benefit: what it is, who owns it, how it is measured, and where it stands against its target. -->
 
 | Benefit ID | Benefit Description | Benefit Owner | Measurement Method | Baseline Value | Target Value and Date | Actual Value and Date | Variance | Status |
-| :--- | :--- | :--- | :--- | ---: | ---: | ---: | ---: | :--- |
+| :---: | :--- | :--- | :--- | ---: | :---: | :---: | ---: | :---: |
 | INIT-01 | Deploy hardened cloud environment and master databases | Elena Vance, PfMP | Model inference accuracy & data reconciliation >= 95% | +28% throughput increase over legacy manual flow | 2026-06-30 | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | In Progress |
 | REQ-02 | Automate procurement requisition and inventory workflows | Faisal Al-Harbi, PMP | Annual recurring operational savings >= $950K USD | 65% error reduction compared to legacy baseline | 2026-09-30 | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | Completed |
 | ACT-03 | Build interactive executive dashboards and KPI reports | Tariq Al-Mansoor, PfMP | Sub-second transaction response latency (< 800ms) | +18% speedup over existing ERP workflow | 2026-11-30 | 2026-11-30 | Approved and aligned with Apex Global Solutions governance baseline | Planned |
@@ -40,7 +40,7 @@
 <!-- What is causing the variance, what is being done about it, and when a benefit is escalated or withdrawn. -->
 
 | Benefit ID | Variance Explanation | Corrective Action | Action Owner | Action Date | Escalation Trigger | Benefit Withdrawal |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :---: | :--- | :--- |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 
@@ -57,7 +57,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Benefit Owner** | Sultan Al-Dossary (VP Operations) | [Electronically Signed] | 2026-03-18 |
 | **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |
 | **PMO Lead** | Tariq Al-Mansoor, PfMP | [Electronically Signed] | 2026-03-18 |

@@ -27,7 +27,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Risk Action Owner** | Approved - Action Owner Name | [Electronically Signed] | 2026-03-18 |
 | **Risk Manager** | Layla Al-Omari, PMI-RMP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

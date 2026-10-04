@@ -73,7 +73,7 @@ Section Instructions:
 ## 3. Forecast Performance for Future Reporting Periods
 
 | Forecast Item | Estimate | Basis |
-| :--- | :--- | :--- |
+| :--- | ---: | :--- |
 | **Estimated Completion Date** | [ Add details... ] | [ Add details... ] |
 | **Estimated Final Cost** | [ Add details... ] | [ Add details... ] |
 | **Key Forecast Assumptions** | [ Add details... ] | [ Add details... ] |
@@ -83,7 +83,7 @@ Section Instructions:
 ## 4. Claims or Disputes
 
 | Reference | Description | Date Raised | Amount | Status |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | ---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -93,7 +93,7 @@ Section Instructions:
 ## 5. Risks
 
 | Risk ID and Description | Probability | Impact | Planned Response |
-| :--- | :--- | :--- | :--- |
+| :--- | :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -103,7 +103,7 @@ Section Instructions:
 ## 6. Planned Corrective or Preventive Action
 
 | Related Variance | Corrective or Preventive Action | Owner | Due Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -113,7 +113,7 @@ Section Instructions:
 ## 7. Issues
 
 | Issue ID and Description | Category | Status | Impact |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -132,7 +132,7 @@ Section Instructions:
 ## 9. Contract Change Requests
 
 | Change Request Reference | Description | Status |
-| :--- | :--- | :--- |
+| :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
@@ -146,7 +146,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Contractor / Vendor Representative** | {{Contractor_Representative_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Procurement / Contract Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

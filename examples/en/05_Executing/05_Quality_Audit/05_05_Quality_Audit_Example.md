@@ -37,7 +37,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ## 4. Deficiencies or Defects
 
 | ID | Defect | Action | Responsible Party | Due Date |
-| :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :---: |
 | INIT-01 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-06-30 |
 | REQ-02 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
 
@@ -62,7 +62,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Quality Auditor** | Adel Al-Mutairi, CIA | [Electronically Signed] | 2026-03-18 |
 | **Quality Assurance (QA) Manager** | Noura Al-Sayed (Director of Quality Assurance) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

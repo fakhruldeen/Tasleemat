@@ -79,7 +79,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Estimator / Technical Lead** | {{Estimator_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Planner / Scheduler** | {{Scheduler_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

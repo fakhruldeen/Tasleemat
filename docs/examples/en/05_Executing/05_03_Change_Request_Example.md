@@ -98,7 +98,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Requester** | Sultan Al-Dossary (VP Operations) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Change Control Board (CCB) Chair** | Dr. Muna Al-Ghamdi (CCB Chairperson) | [Electronically Signed] | 2026-03-18 |

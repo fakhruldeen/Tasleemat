@@ -51,7 +51,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Technical Lead** | {{Technical_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Resource / Functional Manager** | {{Resource_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

@@ -41,7 +41,7 @@
 <!-- One row per requirement, feature, function, or user story. The backlog is developed at the start of the project and is updated throughout it, so a row that has not been revisited in months is worse than no row: it looks current and is not. Add or remove rows and columns as the project needs. -->
 
 | ID | Summary Description | Priority | Story | Status | Story Points | Target Sprint or Release | User Type | Category |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :---: | :--- | :---: | ---: | :---: | :--- | :--- |
 | INIT-01 | Deploy hardened cloud environment and master databases | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | In Progress | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration | Technical & Integration |
 | REQ-02 | Automate procurement requisition and inventory workflows | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Completed | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional | Operational & Functional |
 | ACT-03 | Build interactive executive dashboards and KPI reports | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Planned | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance | Governance & Compliance |
@@ -56,7 +56,7 @@
 ## 2. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **Scrum Master / Agile Coach** | Hassan Al-Majid, CSM | [Electronically Signed] | 2026-03-18 |
 | **Development Team Lead** | Eng. Walid Al-Hammad (Development Lead) | [Electronically Signed] | 2026-03-18 |

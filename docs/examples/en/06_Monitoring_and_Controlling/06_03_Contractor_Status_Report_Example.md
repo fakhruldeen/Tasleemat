@@ -62,7 +62,7 @@
 ## 3. Forecast Performance for Future Reporting Periods
 
 | Forecast Item | Estimate | Basis |
-| :--- | :--- | :--- |
+| :--- | ---: | :--- |
 | **Estimated Completion Date** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | **Estimated Final Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
 | **Key Forecast Assumptions** | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
@@ -72,7 +72,7 @@
 ## 4. Claims or Disputes
 
 | Reference | Description | Date Raised | Amount | Status |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | ---: | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | Deploy hardened cloud environment and master databases | 2026-06-30 | $950,000 USD | In Progress |
 | Approved and aligned with Apex Global Solutions governance baseline | Automate procurement requisition and inventory workflows | 2026-09-30 | $1,150,000 USD | Completed |
 | Approved and aligned with Apex Global Solutions governance baseline | Build interactive executive dashboards and KPI reports | 2026-11-30 | $780,000 USD | Planned |
@@ -82,7 +82,7 @@
 ## 5. Risks
 
 | Risk ID and Description | Probability | Impact | Planned Response |
-| :--- | :--- | :--- | :--- |
+| :--- | :---: | :--- | :--- |
 | RSK-01 | Approved and aligned with Apex Global Solutions governance baseline | 2-week schedule slippage on integration testing window | Approved and aligned with Apex Global Solutions governance baseline |
 | RSK-02 | Approved and aligned with Apex Global Solutions governance baseline | Rescheduling of operational pilot rollout date | Approved and aligned with Apex Global Solutions governance baseline |
 | RSK-03 | Approved and aligned with Apex Global Solutions governance baseline | Minor reallocation of cloud professional services | Approved and aligned with Apex Global Solutions governance baseline |
@@ -92,7 +92,7 @@
 ## 6. Planned Corrective or Preventive Action
 
 | Related Variance | Corrective or Preventive Action | Owner | Due Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Elena Vance, PfMP | 2026-06-30 |
 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Faisal Al-Harbi, PMP | 2026-09-30 |
 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Tariq Al-Mansoor, PfMP | 2026-11-30 |
@@ -102,7 +102,7 @@
 ## 7. Issues
 
 | Issue ID and Description | Category | Status | Impact |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- |
 | INIT-01 | Technical & Integration | In Progress | 2-week schedule slippage on integration testing window |
 | REQ-02 | Operational & Functional | Completed | Rescheduling of operational pilot rollout date |
 | ACT-03 | Governance & Compliance | Planned | Minor reallocation of cloud professional services |
@@ -121,7 +121,7 @@
 ## 9. Contract Change Requests
 
 | Change Request Reference | Description | Status |
-| :--- | :--- | :--- |
+| :--- | :--- | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | Deploy hardened cloud environment and master databases | In Progress |
 | Approved and aligned with Apex Global Solutions governance baseline | Automate procurement requisition and inventory workflows | Completed |
 
@@ -135,7 +135,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Contractor / Vendor Representative** | Robert Vance (Lead Contractor Project Manager) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Procurement / Contract Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |

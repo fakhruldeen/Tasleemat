@@ -182,7 +182,7 @@ Escalation rows:
  needed. -->
 
 | ID | Predecessor | Successor | Deliverable or Condition | Dependency Type | Required By | Agreed Date | Status | Impact if Late |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :--- | :---: | :---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -202,7 +202,7 @@ Escalation rows:
  the person who needs the deliverable. Add or remove rows as needed. -->
 
 | ID | External Party | Dependency Description | Contractual Basis | Required By | Status | Owner |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :--- | :---: | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -218,7 +218,7 @@ Escalation rows:
  with the same result. Add or remove rows as needed. -->
 
 | Dependency ID | Trigger | Escalated To | Action Agreed | Date |
-| ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :--- | :--- | :---: |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -229,7 +229,7 @@ Escalation rows:
 ## 5. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Program / Portfolio Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Delivery / Component Lead** | {{Delivery_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

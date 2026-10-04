@@ -59,7 +59,7 @@ Section Instructions:
 ## Onboarding Tasks
 
 | Task | Assigned To | Due Date | Status |
-| --- | --- | --- | --- |
+| :--- | :--- | :---: | :---: |
 | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ .... - .... - .... ] | [ Add details... ] |
@@ -69,7 +69,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **HR / Onboarding Coordinator** | {{HR_Coordinator_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Team Lead** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

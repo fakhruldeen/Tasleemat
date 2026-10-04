@@ -66,7 +66,7 @@ Section Instructions:
 **Activities in Order:**
 
 | # | Activity | Purpose for the Persona | Source of Evidence |
-| :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -140,7 +140,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **UX / BA Lead** | {{UX_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Development Team Lead** | {{Dev_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

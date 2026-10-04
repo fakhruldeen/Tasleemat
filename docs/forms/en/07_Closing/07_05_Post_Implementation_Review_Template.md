@@ -86,7 +86,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Evaluator** | {{Lead_Evaluator_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Investment Committee Chair** | {{Investment_Chair_Name}} | _______________________ | [ .... - .... - .... ] |

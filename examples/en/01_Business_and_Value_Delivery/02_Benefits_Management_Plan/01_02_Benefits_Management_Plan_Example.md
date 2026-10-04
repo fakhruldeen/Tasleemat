@@ -36,7 +36,7 @@
 <!-- When each benefit is expected to arrive, what will be visible beforehand, what harm is expected, and what it depends on. -->
 
 | Benefit | Realisation Date | Lead Indicator | Lead and Lag | Dependencies | Dis-benefits |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :--- | :--- | :--- | :--- |
 | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-06-30 | Approved and aligned with Apex Global Solutions governance baseline |
 | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-09-30 | Approved and aligned with Apex Global Solutions governance baseline |
 
@@ -84,7 +84,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Benefit / Business Owner** | Sultan Al-Dossary (VP Operations) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

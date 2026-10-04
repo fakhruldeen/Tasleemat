@@ -15,7 +15,7 @@
 ## Onboarding Tasks
 
 | Task | Assigned To | Due Date | Status |
-| --- | --- | --- | --- |
+| :--- | :--- | :---: | :---: |
 | Unified Cloud ERP Core Architecture | Elena Vance, PfMP | 2026-03-18 | In Progress |
 | Automated Procurement & Smart Supply Chain Engine | Faisal Al-Harbi, PMP | 2026-03-18 | Completed |
 | Executive Business Intelligence & Reporting Platform | Tariq Al-Mansoor, PfMP | 2026-03-18 | Planned |
@@ -25,7 +25,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **HR / Onboarding Coordinator** | Sami Al-Ghamdi (HR Specialist) | [Electronically Signed] | 2026-03-18 |
 | **Team Lead** | Eng. Walid Al-Hammad (Tech Lead) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

@@ -62,7 +62,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Team Lead / Scrum Master** | {{Team_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Team Representative** | {{Team_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

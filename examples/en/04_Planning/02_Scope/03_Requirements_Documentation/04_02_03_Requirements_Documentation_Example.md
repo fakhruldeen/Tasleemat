@@ -94,7 +94,7 @@ High-Level System & Business Requirements:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Business Analyst** | Sarah Jenkins, CBAP | [Electronically Signed] | 2026-03-18 |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |
 | **Client / Stakeholder Representative** | Nasser Al-Ghamdi (Commercial Client Director) | [Electronically Signed] | 2026-03-18 |

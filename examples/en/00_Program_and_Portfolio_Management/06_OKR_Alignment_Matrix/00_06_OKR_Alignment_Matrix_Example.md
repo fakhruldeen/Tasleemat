@@ -54,7 +54,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Head of Strategy / PMO** | Dr. Tariq Al-Mansoor (Chief Strategy Officer) | [Electronically Signed] | 2026-03-18 |
 | **Portfolio Manager** | Elena Vance, PfMP | [Electronically Signed] | 2026-03-18 |
 | **Executive Sponsor** | Dr. Muna Al-Ghamdi (Executive Vice President) | [Electronically Signed] | 2026-03-18 |

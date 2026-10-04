@@ -67,7 +67,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Risk Action Owner** | {{Action_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Risk Manager** | {{Risk_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

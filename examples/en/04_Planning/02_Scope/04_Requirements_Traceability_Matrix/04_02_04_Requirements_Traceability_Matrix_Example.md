@@ -68,7 +68,7 @@ High-Level System & Business Requirements:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Requirements Analyst Lead** | Sarah Jenkins, CBAP | [Electronically Signed] | 2026-03-18 |
 | **Quality Assurance (QA) Lead** | Noura Al-Sayed (Director of Quality Assurance) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

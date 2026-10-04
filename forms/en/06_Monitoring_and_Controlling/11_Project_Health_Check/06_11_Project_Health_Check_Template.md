@@ -68,7 +68,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead PMO Reviewer** | {{Lead_Reviewer_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Steering Committee Chair** | {{Steering_Chair_Name}} | _______________________ | [ .... - .... - .... ] |

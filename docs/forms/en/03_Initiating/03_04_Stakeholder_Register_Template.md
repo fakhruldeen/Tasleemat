@@ -56,7 +56,7 @@ Please populate the table below with the following details:
 - **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
 -->
 | ID | Name | Position/Role | Contact information | Requirements | Expectations | Classification |
-| --- | --- | --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -67,7 +67,7 @@ Please populate the table below with the following details:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Stakeholder Relations Lead** | {{Stakeholder_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

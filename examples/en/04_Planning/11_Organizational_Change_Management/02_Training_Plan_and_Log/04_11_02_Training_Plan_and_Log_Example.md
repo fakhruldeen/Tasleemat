@@ -15,7 +15,7 @@
 ## Training Activities
 
 | Target Audience | Training Module | Delivery Method | Target Date | Completion Status |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :---: | :---: |
 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | In Progress |
 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | Completed |
 | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | 2026-03-18 | Planned |
@@ -25,7 +25,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Training Coordinator** | Reem Al-Shammari (Lead Training Coordinator) | [Electronically Signed] | 2026-03-18 |
 | **Change / Team Lead** | Dr. Sarah Al-Kuwaiti, Prosci CCP | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |

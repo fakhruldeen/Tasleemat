@@ -100,7 +100,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Lead Risk Auditor** | {{Lead_Auditor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Risk Manager** | {{Risk_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

@@ -51,7 +51,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Risk Analyst** | {{Risk_Analyst_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Subject Matter Expert** | {{SME_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |

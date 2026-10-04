@@ -134,7 +134,7 @@ Earned Value Analysis (EVA) confirms robust cost control for the active reportin
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Procurement Manager** | Mansour Al-Shehri (Head of Strategic Sourcing) | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Procurement Committee Chair** | Approved - Procurement Committee Chair Name | [Electronically Signed] | 2026-03-18 |

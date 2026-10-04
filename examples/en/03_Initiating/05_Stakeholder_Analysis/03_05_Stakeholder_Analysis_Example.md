@@ -22,7 +22,7 @@ Please populate the table below with the following details:
 - **Attitude:** The stakeholder's attitude towards the project (e.g., Champion, Positive, Neutral, Negative, Blocker).
 -->
 | ID | Name or Role | Interest | Influence | Attitude |
-| --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | :--- | :--- |
 | INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | REQ-02 | Sultan Al-Dossary (VP of Operations) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
@@ -33,7 +33,7 @@ Please populate the table below with the following details:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Change & Communications Lead** | Dr. Sarah Al-Kuwaiti, Prosci CCP | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

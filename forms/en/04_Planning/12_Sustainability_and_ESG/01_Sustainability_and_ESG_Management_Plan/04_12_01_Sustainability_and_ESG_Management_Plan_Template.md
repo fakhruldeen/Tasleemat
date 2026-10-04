@@ -59,7 +59,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Sustainability / ESG Officer** | {{ESG_Officer_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Procurement / Operations Lead** | {{Operations_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

@@ -120,7 +120,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **AI Technical Lead** | Dr. Rayan Al-Sulaiman (Lead AI & Data Scientist) | [Electronically Signed] | 2026-03-18 |
 | **Data Protection Officer (DPO)** | Abdulaziz Al-Zahrani (Data Protection Officer) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor / Executive** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

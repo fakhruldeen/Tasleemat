@@ -46,7 +46,7 @@
 <!-- One row per source: where it comes from, what it is, what is known about its quality, what labelling is required, and what use is permitted. -->
 
 | Data Source | Data Category and Volume | Data Quality Status | Labelling Requirement | Permitted Use and Access |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :--- | :--- |
 | Automated database ETL pipeline extraction | Technical & Integration | In Progress | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | Secure electronic archiving with compliance audit | Operational & Functional | Completed | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
 | API ingestion streams with tokenized logging | Governance & Compliance | Planned | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline |
@@ -90,7 +90,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product / Business Owner** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 | **AI Technical Lead** | Dr. Rayan Al-Sulaiman (Lead AI & Data Scientist) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

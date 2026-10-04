@@ -54,7 +54,7 @@ This section has been thoroughly documented and validated in accordance with Ape
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Value Stream / Delivery Lead** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Agile Coach / Scrum Master** | Rania Al-Farhan, PMI-ACP | [Electronically Signed] | 2026-03-18 |
 | **Product Owner** | Mariam Al-Khatib (Principal Product Owner) | [Electronically Signed] | 2026-03-18 |

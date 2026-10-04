@@ -37,7 +37,7 @@
 ## Lessons Learned Entries
 
 | ID | Category | Trigger | Lesson | Responsible Party | Identifier/Submitter | Next Implementation Opportunity & Date | Organizational Impact (Y/N) | Comments |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
@@ -46,7 +46,7 @@
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Knowledge / PMO Lead** | {{PMO_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Team Member / Contributor** | {{Contributor_Name}} | _______________________ | [ .... - .... - .... ] |

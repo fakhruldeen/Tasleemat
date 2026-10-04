@@ -136,7 +136,7 @@ Preapproved Financial Resources & Budget Envelope:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Cost Estimator** | Zaid Al-Ghamdi, CCEA | [Electronically Signed] | 2026-03-18 |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Finance Controller** | Approved - Finance Controller Name | [Electronically Signed] | 2026-03-18 |

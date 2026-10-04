@@ -83,7 +83,7 @@ Preapproved Financial Resources & Budget Envelope:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Technical Lead** | Fahad Al-Subaie (Chief Solution Architect) | [Electronically Signed] | 2026-03-18 |
 | **Resource / Functional Manager** | Sami Al-Ghamdi (Resource Management Lead) | [Electronically Signed] | 2026-03-18 |

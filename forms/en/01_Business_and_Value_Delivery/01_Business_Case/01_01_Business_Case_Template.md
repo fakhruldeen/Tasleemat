@@ -68,7 +68,7 @@ Section Instructions:
 <!-- Each option considered against the do-nothing baseline, with life-of costs, the risks, and the discounted result. -->
 
 | Option | Description | Benefits | Costs | Risks | Net Present Value |
-| :--- | :--- | :--- | :--- | :--- | ---: |
+| :--- | :--- | :--- | ---: | :--- | ---: |
 | A | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | B | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | Do Nothing | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -91,7 +91,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Business Owner** | {{Business_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Finance Controller** | {{Finance_Controller_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

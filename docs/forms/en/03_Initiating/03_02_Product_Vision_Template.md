@@ -146,7 +146,7 @@ Section Instructions:
 ## 9. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Key User / Customer Representative** | {{Customer_Representative_Name}} | _______________________ | [ .... - .... - .... ] |

@@ -57,7 +57,7 @@ Column guidance, by column:
 <!-- One row per requirement, feature, function, or user story. The backlog is developed at the start of the project and is updated throughout it, so a row that has not been revisited in months is worse than no row: it looks current and is not. Add or remove rows and columns as the project needs. -->
 
 | ID | Summary Description | Priority | Story | Status | Story Points | Target Sprint or Release | User Type | Category |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :---: | :--- | :---: | :--- | :---: | ---: | :---: | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
@@ -72,7 +72,7 @@ Column guidance, by column:
 ## 2. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Scrum Master / Agile Coach** | {{Scrum_Master_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Development Team Lead** | {{Dev_Lead_Name}} | _______________________ | [ .... - .... - .... ] |

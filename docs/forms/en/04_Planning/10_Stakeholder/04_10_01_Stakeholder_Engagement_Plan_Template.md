@@ -76,7 +76,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Stakeholder Relations Lead** | {{Stakeholder_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Key Stakeholder / Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

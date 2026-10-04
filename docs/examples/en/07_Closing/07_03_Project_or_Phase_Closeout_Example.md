@@ -114,7 +114,7 @@ Row guidance:
 <!-- Time and Cost as rows, against Objectives, Final Outcome, Variance, and Comments as columns. Give the variance as a number, not a word, and say which way it went. Where the project finished early or under budget, explain why: an unexplained favourable variance hides a planning error just as a delay does, and a reader cannot repeat the favourable outcome if they cannot see what produced it. Use the Comments column for anything still open at closure. Add a row per additional measure if the project tracks one. -->
 
 | Measure | Objectives | Final Outcome | Variance | Comments |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | ---: | :--- |
 | **Time** | Digital Transformation & Operational Agility | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Validated against enterprise ISO27001 cloud security standards. |
 | **Cost** | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope | Execute project within pre-approved $3,500,000 USD budget envelope |
 
@@ -160,7 +160,7 @@ Row guidance:
 <!-- The information from the procurement closeout. Where procurement was not used, state that plainly in the first row rather than leaving the section blank, so a reader knows it was considered. Any claim or dispute not settled before closure is a liability being handed on, and belongs in the status column. -->
 
 | Item | Details | Status at Closure |
-| :--- | :--- | :--- |
+| :--- | :--- | :---: |
 | **Contracts Closed** | Deploy hardened cloud environment and master databases | In Progress |
 | **Obligations Discharged** | Automate procurement requisition and inventory workflows | Completed |
 | **Claims and Disputes Settled** | Build interactive executive dashboards and KPI reports | Planned |
@@ -180,7 +180,7 @@ Row guidance:
 ## 8. Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Operations / Service Owner** | Sultan Al-Dossary (VP of Operations) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor / Client** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

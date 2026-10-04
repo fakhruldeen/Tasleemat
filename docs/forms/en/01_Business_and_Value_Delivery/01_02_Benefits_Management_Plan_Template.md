@@ -87,7 +87,7 @@ Section Instructions:
 <!-- When each benefit is expected to arrive, what will be visible beforehand, what harm is expected, and what it depends on. -->
 
 | Benefit | Realisation Date | Lead Indicator | Lead and Lag | Dependencies | Dis-benefits |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :--- | :--- | :--- | :--- |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
 
@@ -135,7 +135,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Benefit / Business Owner** | {{Benefit_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Sponsor** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

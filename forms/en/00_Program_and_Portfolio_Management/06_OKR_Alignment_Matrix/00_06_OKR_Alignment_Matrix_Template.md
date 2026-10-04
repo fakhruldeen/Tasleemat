@@ -59,7 +59,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Head of Strategy / PMO** | {{Head_of_Strategy_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Portfolio Manager** | {{Portfolio_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Executive Sponsor** | {{Executive_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |

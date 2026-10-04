@@ -49,7 +49,7 @@ Please populate the table below with the following details:
 - **Classification:** Some projects may categorize stakeholders as friend, foe, or neutral; others may classify them as high, medium, or low impact.
 -->
 | ID | Name | Position/Role | Contact information | Requirements | Expectations | Classification |
-| --- | --- | --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | :--- | :--- | :--- | :--- |
 | INIT-01 | Dr. Muna Al-Ghamdi (Executive VP of Technology & Operations) | Strategic executive oversight and resource authorization | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Technical & Integration |
 | REQ-02 | Sultan Al-Dossary (VP of Operations) | Business process owner and final acceptance authority | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Operational & Functional |
 | ACT-03 | Nasser Al-Ghamdi (Commercial Client Director) | Primary commercial user champion and UAT stakeholder | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Approved and aligned with Apex Global Solutions governance baseline | Governance & Compliance |
@@ -60,7 +60,7 @@ Please populate the table below with the following details:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Project Manager** | Faisal Al-Harbi, PMP | [Electronically Signed] | 2026-03-18 |
 | **Stakeholder Relations Lead** | Huda Al-Hashimi (Stakeholder Engagement Lead) | [Electronically Signed] | 2026-03-18 |
 | **Project Sponsor** | Dr. Muna Al-Ghamdi (Executive VP of Technology) | [Electronically Signed] | 2026-03-18 |

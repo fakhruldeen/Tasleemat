@@ -59,7 +59,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Team Lead / Scrum Master** | {{Scrum_Master_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **People & Culture Partner** | {{HR_Partner_Name}} | _______________________ | [ .... - .... - .... ] |

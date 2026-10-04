@@ -82,7 +82,7 @@ Section Instructions:
 ### Sign-off and Approvals
 
 | Role | Name | Signature | Date |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: |
 | **Procurement Manager** | {{Procurement_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Technical Evaluation Lead** | {{Technical_Evaluation_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
 | **Tender Committee Chair** | {{Tender_Committee_Chair_Name}} | _______________________ | [ .... - .... - .... ] |

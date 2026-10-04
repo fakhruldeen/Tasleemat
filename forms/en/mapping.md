@@ -4,7 +4,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Program and Portfolio Management
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-00.01** | Portfolio Roadmap | `00_Program_and_Portfolio_Management/01_Portfolio_Roadmap` |
 | **PMO-00.02** | Program Charter | `00_Program_and_Portfolio_Management/02_Program_Charter` |
 | **PMO-00.03** | Interdependency Register | `00_Program_and_Portfolio_Management/03_Interdependency_Register` |
@@ -14,7 +14,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Business and Value Delivery
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-01.01** | Business Case | `01_Business_and_Value_Delivery/01_Business_Case` |
 | **PMO-01.02** | Benefits Management Plan | `01_Business_and_Value_Delivery/02_Benefits_Management_Plan` |
 | **PMO-01.03** | Value Realization Register | `01_Business_and_Value_Delivery/03_Value_Realization_Register` |
@@ -22,7 +22,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Project Approach and Tailoring
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-02.01** | Tailoring Plan | `02_Project_Approach_and_Tailoring/01_Tailoring_Plan` |
 | **PMO-02.02** | AI Governance Plan | `02_Project_Approach_and_Tailoring/02_AI_Governance_Plan` |
 | **PMO-02.03** | AI Readiness Assessment | `02_Project_Approach_and_Tailoring/03_AI_Readiness_Assessment` |
@@ -32,7 +32,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Initiating
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-03.01** | Project Charter | `03_Initiating/01_Project_Charter` |
 | **PMO-03.02** | Product Vision Statement | `03_Initiating/02_Product_Vision` |
 | **PMO-03.03** | Assumption Log | `03_Initiating/03_Assumption_Log` |
@@ -41,7 +41,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Planning
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-04.01.01** | Project Management Plan | `04_Planning/01_Integration/01_Project_Management_Plan` |
 | **PMO-04.01.02** | Change Management Plan | `04_Planning/01_Integration/02_Change_Management_Plan` |
 | **PMO-04.01.03** | Project Roadmap | `04_Planning/01_Integration/03_Project_Roadmap` |
@@ -97,7 +97,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Executing
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-05.01** | Issue Log | `05_Executing/01_Issue_Log` |
 | **PMO-05.02** | Decision Log | `05_Executing/02_Decision_Log` |
 | **PMO-05.03** | Change Request | `05_Executing/03_Change_Request` |
@@ -113,7 +113,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Monitoring and Controlling
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-06.01** | Project Status Report | `06_Monitoring_and_Controlling/01_Project_Status_Report` |
 | **PMO-06.02** | Team Member Status Report | `06_Monitoring_and_Controlling/02_Team_Member_Status_Report` |
 | **PMO-06.03** | Contractor Status Report | `06_Monitoring_and_Controlling/03_Contractor_Status_Report` |
@@ -129,7 +129,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 
 ## Closing
 | Doc ID | Artifact Name | Directory Path |
-| --- | --- | --- |
+| :---: | :--- | :--- |
 | **PMO-07.01** | Lessons Learned Summary | `07_Closing/01_Lessons_Learned_Summary` |
 | **PMO-07.02** | Contract Closeout Report | `07_Closing/02_Contract_Closeout_Report` |
 | **PMO-07.03** | Project or Phase Closeout Report | `07_Closing/03_Project_or_Phase_Closeout` |
