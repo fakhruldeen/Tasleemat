@@ -256,9 +256,25 @@ h1, h2, h3, h4, h5, h6,
 }
 
 [dir="rtl"] .md-typeset {
-  text-align: right !important;
+  text-align: right;
   direction: rtl !important;
   font-family: var(--font-arabic) !important;
+}
+
+/* Explicit alignment support in RTL pages */
+[dir="rtl"] .md-typeset [align="left"],
+[dir="rtl"] .md-typeset h3[align="left"],
+[dir="rtl"] .md-typeset h2[align="left"],
+[dir="rtl"] .md-typeset h1[align="left"] {
+  text-align: left !important;
+}
+
+[dir="rtl"] .md-typeset [align="center"],
+[dir="rtl"] .md-typeset h1[align="center"],
+[dir="rtl"] .md-typeset h2[align="center"],
+[dir="rtl"] .md-typeset h3[align="center"],
+[dir="rtl"] .md-typeset p[align="center"] {
+  text-align: center !important;
 }
 
 [dir="rtl"] .md-typeset table:not([class]) th,
@@ -1296,6 +1312,21 @@ h1, h2, h3, h4, h5, h6,
 .modal-body-scroll h1 { font-size: 1.6rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
 .modal-body-scroll h2 { font-size: 1.3rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem; }
 .modal-body-scroll h3 { font-size: 1.1rem; }
+
+.modal-body-scroll [align="left"],
+.modal-body-scroll h3[align="left"],
+.modal-body-scroll h2[align="left"],
+.modal-body-scroll h1[align="left"] {
+  text-align: left !important;
+}
+
+.modal-body-scroll [align="center"],
+.modal-body-scroll h1[align="center"],
+.modal-body-scroll h2[align="center"],
+.modal-body-scroll h3[align="center"],
+.modal-body-scroll p[align="center"] {
+  text-align: center !important;
+}
 
 .modal-body-scroll p { margin-bottom: 1rem; }
 
