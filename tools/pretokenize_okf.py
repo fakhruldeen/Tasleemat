@@ -31,15 +31,23 @@ def main():
             with open(filepath, 'r', encoding='utf-8') as f:
                 content = f.read()
                 
-            if not content.startswith('---'):
+            if not (content.startswith('---') or content.startswith('<!--
+---')):
                 continue
                 
-            end_idx = content.find('\n---', 3)
+            offset = 5 if content.startswith('<!--
+---') else 0
+            end_idx = content.find('
+---', offset + 3)
             if end_idx == -1:
                 continue
                 
-            frontmatter = content[3:end_idx]
+            frontmatter = content[offset+3:end_idx]
             body = content[end_idx+4:]
+            if content.startswith('<!--
+---') and body.startswith('
+-->'):
+                body = body[4:]
             
             # Tokenize body
             tokens = tokenizer.encode(body)

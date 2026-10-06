@@ -3,69 +3,86 @@ import os
 import sys
 import re
 
-FILES = [
-    "forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter_Template.md",
-    "forms/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register_Template.md",
-    "forms/en/06_Monitoring_and_Controlling/01_Project_Status_Report/06_01_Project_Status_Report_Template.md",
-    "forms/en/06_Monitoring_and_Controlling/05_Earned_Value_Analysis/06_05_Earned_Value_Analysis_Template.md",
-    "forms/en/07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist_Template.md",
-    "forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع_قالب.md",
-    "forms/ar/04_التخطيط/08_المخاطر/02_سجل_المخاطر/04_08_02_سجل_المخاطر_قالب.md",
-    "forms/ar/06_المراقبة_والتحكم/01_تقرير_حالة_المشروع/06_01_تقرير_حالة_المشروع_قالب.md",
-    "forms/ar/06_المراقبة_والتحكم/05_تحليل_القيمة_المكتسبة_(EVA)/06_05_تحليل_القيمة_المكتسبة_(EVA)_قالب.md",
-    "forms/ar/07_الإغلاق/04_قائمة_التحقق_للانتقال_إلى_العمليات/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.md"
-]
-
 def migrate():
-    for filepath in FILES:
-        if not os.path.exists(filepath):
-            print(f"Error: {filepath} not found")
-            continue
+    processed = 0
+    errors = 0
+    
+    for root_dir, dirs, files in os.walk('forms'):
+        for file in files:
+            if not file.endswith('.md'):
+                continue
+                
+            filepath = os.path.join(root_dir, file)
             
-        with open(filepath, 'r', encoding='utf-8') as f:
-            content = f.read()
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+                
+            if not (content.startswith('---') or content.startswith('<!--
+---')):
+                continue
+                
+            offset = 5 if content.startswith('<!--
+---') else 0
+            end_idx = content.find('
+---', offset + 3)
+            if end_idx == -1:
+                continue
+                
+            frontmatter = content[offset+3:end_idx]
+            body = content[end_idx+4:]
+            if content.startswith('<!--
+---') and body.startswith('
+-->'):
+                body = body[4:]
             
-        if not content.startswith('---'):
-            continue
+            # Identify if it's a template or guide
+            is_template = 'Template' in file or 'قالب' in file or 'نموذج' in file or file == 'index.md' or file == 'README.md'
+            # Actually, the profile says "Template" needs form_id. 
+            # We will apply form_id to any file that has an ID prefix like XX_XX_XX
+            id_match = re.match(r'^(\d+_\d+(?:_\d+)?).*', file)
+            form_id = f"PMO-{id_match.group(1).replace('_', '.')}" if id_match else None
             
-        end_idx = content.find('\n---', 3)
-        if end_idx == -1:
-            continue
+            # Language
+            lang = "en" if "/en/" in filepath else ("ar" if "/ar/" in filepath else None)
             
-        frontmatter = content[3:end_idx]
-        body = content[end_idx+4:]
-        
-        # Extract ID (e.g. 03_01 or 04_08_02)
-        basename = os.path.basename(filepath)
-        id_match = re.match(r'^(\d+_\d+(?:_\d+)?).*', basename)
-        if not id_match:
-            continue
+            changed = False
             
-        form_id = f"PMO-{id_match.group(1).replace('_', '.')}"
-        
-        # Language
-        lang = "en" if "/en/" in filepath else "ar"
-        
-        # We need to make sure form_id, language, status are present.
-        # But we must be idempotent.
-        if "form_id:" not in frontmatter:
-            frontmatter += f"\nform_id: {form_id}"
-            
-        if "language:" not in frontmatter and "lang:" not in frontmatter:
-            frontmatter += f"\nlanguage: {lang}"
-            
-        if "status:" not in frontmatter:
-            frontmatter += f"\nstatus: approved"
-            
-        # Clean up double newlines in frontmatter
-        frontmatter = re.sub(r'\n\n+', '\n', frontmatter)
-        
-        new_content = f"---{frontmatter}\n---{body}"
-        
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(new_content)
-            
-    print("Migration pilot successful.")
+            # We must be idempotent.
+            if form_id and "form_id:" not in frontmatter:
+                # Some files might have missing form_id, wait, the profile says Templates and Forms need form_id.
+                type_match = re.search(r'^type:\s*(.+)$', frontmatter, re.MULTILINE)
+                type_val = type_match.group(1).strip() if type_match else ""
+                
+                if 'Template' in type_val or 'Form' in type_val or 'قالب' in type_val or 'نموذج' in type_val:
+                    frontmatter += f"\nform_id: {form_id}"
+                    changed = True
+                elif 'Guide' in type_val or 'دليل' in type_val:
+                    # Guides also share the same form_id
+                    frontmatter += f"\nform_id: {form_id}"
+                    changed = True
+                    
+            if lang and "language:" not in frontmatter and "lang:" not in frontmatter:
+                frontmatter += f"\nlanguage: {lang}"
+                changed = True
+                
+            if "status:" not in frontmatter and file != 'index.md' and file != 'README.md':
+                frontmatter += f"\nstatus: approved"
+                changed = True
+                
+            if changed:
+                # Clean up double newlines
+                frontmatter = re.sub(r'\n\n+', '\n', frontmatter)
+                new_content = f"<!--
+---{frontmatter}
+---
+-->{body}" if content.startswith('<!--
+---') else f"---{frontmatter}
+---{body}" 
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                processed += 1
+
+    print(f"Migration completed. Processed/Updated {processed} files.")
 
 if __name__ == '__main__':
     migrate()
