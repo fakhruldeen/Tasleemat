@@ -201,6 +201,16 @@ python3 tools/tasleemat_cli.py test -v
 
 ---
 
+## 📚 Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193524.svg)](https://doi.org/10.5281/zenodo.23193524)
+
+If you use Tasleemat in your research or PMO operations, please cite it as follows:
+
+> Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.0.2 (Version v2.0.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193524
+
+---
+
 ## 📄 License & Attribution
 
 This project is open-source under the **[MIT License](LICENSE)**. You are free to use, adapt, and integrate these templates in commercial and non-commercial enterprise projects.
