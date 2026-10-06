@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/09_Procurement/01_Procurement_Management_Plan/04_09_01_Procurement_Management_Plan_Example.npy
+token_count: 818
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.240950+00:00'
 ---
 
 # Procurement Management Plan (Reference Example)

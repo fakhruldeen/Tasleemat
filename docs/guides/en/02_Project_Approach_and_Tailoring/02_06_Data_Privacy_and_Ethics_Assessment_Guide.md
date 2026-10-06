@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Guide.npy
+token_count: 4404
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.380011+00:00'
 ---
 
 <div class="lang-switch-bar">

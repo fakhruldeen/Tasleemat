@@ -1,6 +1,10 @@
 ---
 type: Form
 lang: ar
+token_pointer: /_tokens/forms/ar/parameters.npy
+token_count: 1409
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.702904+00:00'
 ---
 <div style="font-family: Arial, sans-serif; line-height: 1.6;">
 

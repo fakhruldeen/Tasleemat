@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: PRODUCT BACKLOG (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/08_Product_Backlog/04_02_08_Product_Backlog.npy
+token_count: 792
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.938691+00:00'
 ---
 
 # PRODUCT BACKLOG - LLM GENERATION GUIDE

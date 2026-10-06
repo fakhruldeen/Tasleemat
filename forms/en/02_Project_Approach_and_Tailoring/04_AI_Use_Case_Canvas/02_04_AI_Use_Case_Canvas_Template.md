@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas/02_04_AI_Use_Case_Canvas_Template.npy
+token_count: 2191
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.024644+00:00'
 ---
 
 <!--

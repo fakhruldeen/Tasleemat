@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/04_Planning/08_Risk/04_08_04_Probability_and_Impact_Matrix_Template.npy
+token_count: 1069
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.162806+00:00'
 ---
 
 <div class="lang-switch-bar">

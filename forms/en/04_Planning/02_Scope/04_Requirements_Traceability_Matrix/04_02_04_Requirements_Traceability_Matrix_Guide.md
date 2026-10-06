@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Requirements Traceability Matrix
 nav_order: 4
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/04_Requirements_Traceability_Matrix/04_02_04_Requirements_Traceability_Matrix_Guide.npy
+token_count: 716
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.942052+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

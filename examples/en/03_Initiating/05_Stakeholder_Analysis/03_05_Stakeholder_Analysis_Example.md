@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/03_Initiating/05_Stakeholder_Analysis/03_05_Stakeholder_Analysis_Example.npy
+token_count: 745
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.270916+00:00'
 ---
 
 # Stakeholder Analysis (Reference Example)

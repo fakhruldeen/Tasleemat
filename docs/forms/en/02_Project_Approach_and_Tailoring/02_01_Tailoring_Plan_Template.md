@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Template.npy
+token_count: 2013
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.179389+00:00'
 ---
 
 <div class="lang-switch-bar">

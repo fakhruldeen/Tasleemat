@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Requirements Management Plan (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/02_Requirements_Management_Plan/04_02_02_Requirements_Management_Plan.npy
+token_count: 623
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.940757+00:00'
 ---
 
 # Requirements Management Plan - Generation Prompt

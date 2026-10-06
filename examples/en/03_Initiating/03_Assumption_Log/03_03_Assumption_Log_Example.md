@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/03_Initiating/03_Assumption_Log/03_03_Assumption_Log_Example.npy
+token_count: 919
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.269637+00:00'
 ---
 
 # Assumption Log (Reference Example)

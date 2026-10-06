@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/05_Quality/02_Quality_Metrics/04_05_02_Quality_Metrics_Example.npy
+token_count: 839
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.233848+00:00'
 ---
 
 # Quality Metrics (Reference Example)

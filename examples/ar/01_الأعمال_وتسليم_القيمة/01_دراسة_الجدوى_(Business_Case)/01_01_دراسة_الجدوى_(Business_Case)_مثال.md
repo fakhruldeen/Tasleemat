@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/ar/01_الأعمال_وتسليم_القيمة/01_دراسة_الجدوى_(Business_Case)/01_01_دراسة_الجدوى_(Business_Case)_مثال.npy
+token_count: 1311
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.198800+00:00'
 ---
 
 <div>

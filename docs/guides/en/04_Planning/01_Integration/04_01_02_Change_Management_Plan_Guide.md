@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/04_Planning/01_Integration/04_01_02_Change_Management_Plan_Guide.npy
+token_count: 1350
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.351929+00:00'
 ---
 
 <div class="lang-switch-bar">

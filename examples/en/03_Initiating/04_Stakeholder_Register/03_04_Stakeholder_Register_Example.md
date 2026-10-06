@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/03_Initiating/04_Stakeholder_Register/03_04_Stakeholder_Register_Example.npy
+token_count: 846
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.268562+00:00'
 ---
 
 # Stakeholder Register (Reference Example)

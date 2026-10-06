@@ -5,6 +5,10 @@ layout: default
 title: Closing
 has_children: true
 nav_order: 9
+token_pointer: /_tokens/forms/en/07_Closing/index.npy
+token_count: 210
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.076755+00:00'
 ---
 
 # Closing

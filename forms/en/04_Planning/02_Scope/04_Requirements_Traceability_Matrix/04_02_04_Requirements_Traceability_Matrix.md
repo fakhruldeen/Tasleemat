@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Requirements Traceability Matrix (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/04_Requirements_Traceability_Matrix/04_02_04_Requirements_Traceability_Matrix.npy
+token_count: 499
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.942395+00:00'
 ---
 
 # Requirements Traceability Matrix - Generation Prompt

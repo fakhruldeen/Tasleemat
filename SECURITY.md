@@ -1,5 +1,9 @@
 ---
 type: Document
+token_pointer: /_tokens/SECURITY.npy
+token_count: 140
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.022615+00:00'
 ---
 
 # 🔒 Security Policy

@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: FLOW METRICS AND VALUE STREAM DASHBOARD (Instructions)
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream/06_12_Flow_Metrics_and_Value_Stream.npy
+token_count: 541
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.060439+00:00'
 ---
 
 # FLOW METRICS AND VALUE STREAM DASHBOARD - LLM GENERATION GUIDE

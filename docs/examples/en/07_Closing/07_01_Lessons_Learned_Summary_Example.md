@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/07_Closing/07_01_Lessons_Learned_Summary_Example.npy
+token_count: 3191
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.692743+00:00'
 ---
 
 <div class="lang-switch-bar">

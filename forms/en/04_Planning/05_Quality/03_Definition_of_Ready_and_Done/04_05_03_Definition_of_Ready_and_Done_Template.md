@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done_Template.npy
+token_count: 1089
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.992107+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

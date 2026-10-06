@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.npy
+token_count: 2440
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.119892+00:00'
 ---
 
 <div class="lang-switch-bar">

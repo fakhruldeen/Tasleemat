@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Project or Phase Closeout
 nav_order: 1
+token_pointer: /_tokens/forms/en/07_Closing/03_Project_or_Phase_Closeout/07_03_Project_or_Phase_Closeout_Guide.npy
+token_count: 1843
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.079713+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

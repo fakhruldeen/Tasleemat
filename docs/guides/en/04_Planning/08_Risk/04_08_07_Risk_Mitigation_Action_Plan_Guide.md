@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Guide.npy
+token_count: 1915
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.364943+00:00'
 ---
 
 <div class="lang-switch-bar">

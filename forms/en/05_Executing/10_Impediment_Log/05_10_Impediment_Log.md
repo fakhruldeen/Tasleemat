@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Impediment Log (Instructions)
+token_pointer: /_tokens/forms/en/05_Executing/10_Impediment_Log/05_10_Impediment_Log.npy
+token_count: 648
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.070909+00:00'
 ---
 
 # Impediment Log - LLM Generation Prompt

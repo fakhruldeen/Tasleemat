@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Project Management Plan (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/01_Integration/01_Project_Management_Plan/04_01_01_Project_Management_Plan.npy
+token_count: 927
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.960930+00:00'
 ---
 
 # Project Management Plan - Generation Prompt

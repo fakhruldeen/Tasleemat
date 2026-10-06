@@ -1,5 +1,9 @@
 ---
 type: Tool
+token_pointer: /_tokens/tools/OKF_IMPROVEMENT_PLAN.npy
+token_count: 1435
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.274522+00:00'
 ---
 
 # Open Knowledge Foundation (OKF) Compliance & Repository Improvement Plan

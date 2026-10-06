@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/08_Product_Acceptance_Form/06_08_Product_Acceptance_Form_Example.npy
+token_count: 792
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.252383+00:00'
 ---
 
 # Product Acceptance Form (Reference Example)

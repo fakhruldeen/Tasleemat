@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/04_Planning/01_Integration/01_Project_Management_Plan/04_01_01_Project_Management_Plan_Template.npy
+token_count: 762
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.961337+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

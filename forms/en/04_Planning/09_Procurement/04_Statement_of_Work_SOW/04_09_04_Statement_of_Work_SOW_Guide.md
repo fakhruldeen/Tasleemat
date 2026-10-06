@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Statement of Work
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/04_Statement_of_Work_SOW/04_09_04_Statement_of_Work_SOW_Guide.npy
+token_count: 1674
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.006796+00:00'
 ---
 
 ## Tasleemat Forms Guide

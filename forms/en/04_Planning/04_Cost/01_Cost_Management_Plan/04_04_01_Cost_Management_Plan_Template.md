@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/04_Planning/04_Cost/01_Cost_Management_Plan/04_04_01_Cost_Management_Plan_Template.npy
+token_count: 634
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.952106+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

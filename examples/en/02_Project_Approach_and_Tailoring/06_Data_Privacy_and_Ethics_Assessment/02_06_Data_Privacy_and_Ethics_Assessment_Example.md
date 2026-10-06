@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Example.npy
+token_count: 2204
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.241910+00:00'
 ---
 
 # Data Privacy and Ethics Assessment (Reference Example)

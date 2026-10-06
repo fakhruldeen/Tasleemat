@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/ar/04_التخطيط/03_الجدول_الزمني/04_قائمة_المعالم_(Milestones)/04_03_04_قائمة_المعالم_(Milestones)_مثال.npy
+token_count: 1065
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.167325+00:00'
 ---
 
 <div>

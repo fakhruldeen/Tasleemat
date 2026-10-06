@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Guide.npy
+token_count: 2566
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.443105+00:00'
 ---
 
 <div class="lang-switch-bar">

@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Stakeholder Analysis (Instructions)
+token_pointer: /_tokens/forms/en/03_Initiating/05_Stakeholder_Analysis/03_05_Stakeholder_Analysis.npy
+token_count: 392
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.099703+00:00'
 ---
 
 # Stakeholder Analysis - Generation Prompt

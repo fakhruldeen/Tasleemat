@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Communications Management Plan (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/07_Communications/01_Communications_Management_Plan/04_07_01_Communications_Management_Plan.npy
+token_count: 563
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.957453+00:00'
 ---
 
 # Communications Management Plan - Generation Prompt

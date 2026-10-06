@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Template.npy
+token_count: 598
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.942796+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

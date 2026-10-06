@@ -5,6 +5,10 @@ layout: default
 title: Project Approach and Tailoring
 has_children: true
 nav_order: 4
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/index.npy
+token_count: 264
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.011075+00:00'
 ---
 
 # Project Approach and Tailoring

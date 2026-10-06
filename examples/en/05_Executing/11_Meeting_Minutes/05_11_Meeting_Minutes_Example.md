@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/05_Executing/11_Meeting_Minutes/05_11_Meeting_Minutes_Example.npy
+token_count: 670
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.257296+00:00'
 ---
 
 # Meeting Minutes (Reference Example)

@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/04_Cost/02_Cost_Estimates/04_04_02_Cost_Estimates_Example.npy
+token_count: 1144
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.217962+00:00'
 ---
 
 # Cost Estimates (Reference Example)

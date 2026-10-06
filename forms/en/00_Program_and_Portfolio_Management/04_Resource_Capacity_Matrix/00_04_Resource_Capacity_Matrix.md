@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: RESOURCE CAPACITY MATRIX (Instructions)
+token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix/00_04_Resource_Capacity_Matrix.npy
+token_count: 2240
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.029217+00:00'
 ---
 
 # RESOURCE CAPACITY MATRIX - LLM GENERATION GUIDE

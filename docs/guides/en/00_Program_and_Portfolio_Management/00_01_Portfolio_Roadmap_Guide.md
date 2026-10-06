@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Guide.npy
+token_count: 3581
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.384784+00:00'
 ---
 
 <div class="lang-switch-bar">

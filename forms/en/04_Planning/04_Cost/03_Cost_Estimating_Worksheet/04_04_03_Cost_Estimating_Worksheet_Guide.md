@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Cost Estimating Worksheet
 nav_order: 3
+token_pointer: /_tokens/forms/en/04_Planning/04_Cost/03_Cost_Estimating_Worksheet/04_04_03_Cost_Estimating_Worksheet_Guide.npy
+token_count: 806
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.956420+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

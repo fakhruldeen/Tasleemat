@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Change Management Plan
 nav_order: 2
+token_pointer: /_tokens/forms/en/04_Planning/01_Integration/02_Change_Management_Plan/04_01_02_Change_Management_Plan_Guide.npy
+token_count: 806
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.958426+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

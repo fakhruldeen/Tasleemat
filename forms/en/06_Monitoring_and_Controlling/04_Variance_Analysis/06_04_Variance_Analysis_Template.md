@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/04_Variance_Analysis/06_04_Variance_Analysis_Template.npy
+token_count: 657
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.048016+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Populate the Variance Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.

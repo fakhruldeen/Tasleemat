@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Guide.npy
+token_count: 3907
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.382018+00:00'
 ---
 
 <div class="lang-switch-bar">

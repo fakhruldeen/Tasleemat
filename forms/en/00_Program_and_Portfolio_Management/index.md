@@ -5,6 +5,10 @@ layout: default
 title: Program and Portfolio Management
 has_children: true
 nav_order: 2
+token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/index.npy
+token_count: 240
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.027518+00:00'
 ---
 
 # Program and Portfolio Management

@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.npy
+token_count: 2761
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.176722+00:00'
 ---
 
 <div class="lang-switch-bar">

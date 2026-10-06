@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Guide.npy
+token_count: 1989
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.397587+00:00'
 ---
 
 <div class="lang-switch-bar">

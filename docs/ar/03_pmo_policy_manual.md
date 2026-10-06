@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/ar/03_pmo_policy_manual.npy
+token_count: 3075
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.221422+00:00'
 ---
 
 <div class="lang-switch-bar">

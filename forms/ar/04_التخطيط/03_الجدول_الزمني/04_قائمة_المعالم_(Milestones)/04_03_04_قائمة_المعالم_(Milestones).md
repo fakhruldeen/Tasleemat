@@ -2,6 +2,10 @@
 type: Form
 lang: ar
 Form: قائمة المعالم (Instructions)
+token_pointer: /_tokens/forms/ar/04_التخطيط/03_الجدول_الزمني/04_قائمة_المعالم_(Milestones)/04_03_04_قائمة_المعالم_(Milestones).npy
+token_count: 701
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.835773+00:00'
 ---
 
 # قائمة المعالم - مطالبة التوليد (Generation Prompt)

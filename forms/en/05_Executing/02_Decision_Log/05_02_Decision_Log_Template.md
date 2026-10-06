@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/05_Executing/02_Decision_Log/05_02_Decision_Log_Template.npy
+token_count: 528
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.064810+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Populate the Decision Log based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.

@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: RISK MITIGATION ACTION PLAN (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/08_Risk/07_Risk_Mitigation_Action_Plan/04_08_07_Risk_Mitigation_Action_Plan.npy
+token_count: 718
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.986652+00:00'
 ---
 
 # RISK MITIGATION ACTION PLAN - LLM Generation Prompt

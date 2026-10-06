@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary_Template.npy
+token_count: 2926
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.081555+00:00'
 ---
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

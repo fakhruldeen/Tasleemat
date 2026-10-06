@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/ar/04_التخطيط/03_الجدول_الزمني/04_قائمة_المعالم_(Milestones)/04_03_04_قائمة_المعالم_(Milestones)_قالب.npy
+token_count: 657
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.836220+00:00'
 ---
 
 <!-- تعليمات للنموذج الذكي: قم بتعبئة العناصر النائبة [ أضف التفاصيل... ] بناءً على سياق المشروع.

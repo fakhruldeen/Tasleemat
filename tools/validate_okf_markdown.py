@@ -4,7 +4,7 @@ Validate Markdown files for OKF (Open Knowledge Format) conformance.
 Rules:
 1. Every non-reserved `.md` file contains a parseable YAML frontmatter block.
 2. Every frontmatter block contains a non-empty `type` field.
-3. Reserved filenames (index.md, log.md) follow spec (e.g. no frontmatter in index.md except root).
+3. If LLM pre-tokenization is used, token_pointer, token_count, and tokenizer_model_id must be valid.
 """
 
 import os
@@ -12,7 +12,7 @@ import sys
 import re
 
 def validate_okf():
-    exclude_dirs = {'.venv', 'scratch', '.github', '.pytest_cache', '__pycache__', '.git'}
+    exclude_dirs = {'.venv', 'scratch', '.github', '.pytest_cache', '__pycache__', '.git', '_tokens'}
     errors = 0
     checked = 0
 
@@ -29,21 +29,9 @@ def validate_okf():
             with open(filepath, 'r', encoding='utf-8') as f:
                 content = f.read()
                 
-            if False:  # Relaxed rule 3 check as per golden rule
-                # Rule 3: index.md shouldn't have frontmatter unless it's root
-                if not is_root and content.startswith('---'):
-                    print(f"❌ FAIL: {filepath} is an index.md but contains frontmatter.")
-                    errors += 1
-                elif is_root and content.startswith('---'):
-                    # Root index.md can have frontmatter but typically only okf_version
-                    pass
-                continue
-                
             if file == 'log.md':
-                # Rule 3: log.md follows specific structure (not checked here in detail yet)
                 continue
                 
-            # Rule 1 & 2: non-reserved .md must have frontmatter with type
             if not content.startswith('---'):
                 print(f"❌ FAIL: {filepath} is missing YAML frontmatter.")
                 errors += 1
@@ -64,11 +52,31 @@ def validate_okf():
                 print(f"❌ FAIL: {filepath} has an empty 'type' field.")
                 errors += 1
                 
+            # LLM Pre-tokenization check
+            token_pointer_match = re.search(r'^token_pointer:\s*(.+)$', frontmatter, re.MULTILINE)
+            if token_pointer_match:
+                pointer = token_pointer_match.group(1).strip()
+                # Remove leading slash for local path check
+                if pointer.startswith('/'):
+                    pointer = pointer[1:]
+                    
+                if not os.path.exists(pointer):
+                    print(f"❌ FAIL: {filepath} token_pointer '{pointer}' does not exist.")
+                    errors += 1
+                    
+                if not re.search(r'^token_count:\s*\d+$', frontmatter, re.MULTILINE):
+                    print(f"❌ FAIL: {filepath} has token_pointer but missing valid token_count.")
+                    errors += 1
+                    
+                if not re.search(r'^tokenizer_model_id:\s*.+$', frontmatter, re.MULTILINE):
+                    print(f"❌ FAIL: {filepath} has token_pointer but missing tokenizer_model_id.")
+                    errors += 1
+                    
             checked += 1
 
-    print(f"\nChecked {checked} non-reserved markdown files.")
+    print(f"\nChecked {checked} markdown files.")
     if errors == 0:
-        print("✨ SUCCESS: All markdown files are OKF conformant!")
+        print("✨ SUCCESS: All markdown files are OKF conformant (including token pointers)!")
         return 0
     else:
         print(f"❌ FAILED: {errors} OKF compliance errors found.")

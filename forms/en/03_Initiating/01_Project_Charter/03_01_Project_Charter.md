@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Project Charter (Instructions)
+token_pointer: /_tokens/forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter.npy
+token_count: 1027
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.098155+00:00'
 ---
 
 # Project Charter - Generation Prompt

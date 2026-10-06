@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Example.npy
+token_count: 1743
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.639338+00:00'
 ---
 
 <div class="lang-switch-bar">

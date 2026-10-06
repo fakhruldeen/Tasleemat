@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: PRODUCT ACCEPTANCE FORM (Instructions)
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/08_Product_Acceptance_Form/06_08_Product_Acceptance_Form.npy
+token_count: 472
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.048901+00:00'
 ---
 
 # PRODUCT ACCEPTANCE FORM - LLM GENERATION GUIDE

@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/07_Closing/03_Project_or_Phase_Closeout/07_03_Project_or_Phase_Closeout_Example.npy
+token_count: 2721
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.263943+00:00'
 ---
 
 # Project or Phase Closeout (Reference Example)

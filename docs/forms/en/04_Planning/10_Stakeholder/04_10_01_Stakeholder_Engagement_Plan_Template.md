@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Template.npy
+token_count: 1094
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.154940+00:00'
 ---
 
 <div class="lang-switch-bar">

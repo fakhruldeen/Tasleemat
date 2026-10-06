@@ -1,5 +1,9 @@
 ---
 type: Tool
+token_pointer: /_tokens/tools/future-plans.npy
+token_count: 2948
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.275887+00:00'
 ---
 
 # 🚀 Tasleemat Strategic Roadmap & Future PMO Director Improvements

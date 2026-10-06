@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan/04_12_01_Sustainability_and_ESG_Management_Plan_Example.npy
+token_count: 998
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.223561+00:00'
 ---
 
 # Sustainability and ESG Management Plan (Reference Example)

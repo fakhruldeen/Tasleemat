@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: TEAM PSYCHOLOGICAL SAFETY AND WELLBEING INDEX (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index.npy
+token_count: 536
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.996611+00:00'
 ---
 
 # TEAM PSYCHOLOGICAL SAFETY AND WELLBEING INDEX - LLM GENERATION GUIDE

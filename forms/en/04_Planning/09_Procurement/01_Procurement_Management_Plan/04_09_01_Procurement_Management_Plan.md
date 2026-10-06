@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Procurement Management Plan (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/01_Procurement_Management_Plan/04_09_01_Procurement_Management_Plan.npy
+token_count: 578
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.010765+00:00'
 ---
 
 # Procurement Management Plan - Generation Prompt

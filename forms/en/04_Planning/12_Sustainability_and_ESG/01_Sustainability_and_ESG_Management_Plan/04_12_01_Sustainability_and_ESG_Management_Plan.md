@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: SUSTAINABILITY AND ESG MANAGEMENT PLAN (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan/04_12_01_Sustainability_and_ESG_Management_Plan.npy
+token_count: 523
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.966060+00:00'
 ---
 
 # SUSTAINABILITY AND ESG MANAGEMENT PLAN - LLM GENERATION GUIDE

@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: PRODUCT VISION (Instructions)
+token_pointer: /_tokens/forms/en/03_Initiating/02_Product_Vision/03_02_Product_Vision.npy
+token_count: 755
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.095234+00:00'
 ---
 
 # PRODUCT VISION - LLM GENERATION GUIDE

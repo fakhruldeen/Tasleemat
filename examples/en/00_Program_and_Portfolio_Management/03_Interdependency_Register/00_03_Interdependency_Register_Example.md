@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/00_Program_and_Portfolio_Management/03_Interdependency_Register/00_03_Interdependency_Register_Example.npy
+token_count: 1875
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.248579+00:00'
 ---
 
 # Interdependency Register (Reference Example)

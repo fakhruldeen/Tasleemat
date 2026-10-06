@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/01_Integration/03_Project_Roadmap/04_01_03_Project_Roadmap_Example.npy
+token_count: 1224
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.221419+00:00'
 ---
 
 # Project Roadmap (Reference Example)

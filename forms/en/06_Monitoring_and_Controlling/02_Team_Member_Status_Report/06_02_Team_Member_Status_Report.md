@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Team Member Status Report (Instructions)
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/02_Team_Member_Status_Report/06_02_Team_Member_Status_Report.npy
+token_count: 834
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.043882+00:00'
 ---
 
 # Team Member Status Report - Generation Prompt

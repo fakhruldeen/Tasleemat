@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Network Diagram (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/05_Network_Diagram/04_03_05_Network_Diagram.npy
+token_count: 489
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.969382+00:00'
 ---
 
 # Network Diagram - Generation Prompt

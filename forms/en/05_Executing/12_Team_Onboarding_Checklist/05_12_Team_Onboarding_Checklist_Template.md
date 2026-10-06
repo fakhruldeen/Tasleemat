@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/05_Executing/12_Team_Onboarding_Checklist/05_12_Team_Onboarding_Checklist_Template.npy
+token_count: 908
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.075578+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

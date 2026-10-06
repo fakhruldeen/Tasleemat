@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/07_Closing/07_02_Contract_Closeout_Report_Guide.npy
+token_count: 1367
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.436844+00:00'
 ---
 
 <div class="lang-switch-bar">

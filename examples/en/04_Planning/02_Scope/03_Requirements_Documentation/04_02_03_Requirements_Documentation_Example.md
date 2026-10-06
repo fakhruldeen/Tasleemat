@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/03_Requirements_Documentation/04_02_03_Requirements_Documentation_Example.npy
+token_count: 1308
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.216783+00:00'
 ---
 
 # Requirements Documentation (Reference Example)

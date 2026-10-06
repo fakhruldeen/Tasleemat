@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/03_Initiating/03_05_Stakeholder_Analysis_Example.npy
+token_count: 1229
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.698298+00:00'
 ---
 
 <div class="lang-switch-bar">

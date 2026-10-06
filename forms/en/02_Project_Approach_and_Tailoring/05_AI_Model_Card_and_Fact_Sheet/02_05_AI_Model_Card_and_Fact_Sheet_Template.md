@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet/02_05_AI_Model_Card_and_Fact_Sheet_Template.npy
+token_count: 3299
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.015583+00:00'
 ---
 
 <!--

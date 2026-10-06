@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Decision Log (Instructions)
+token_pointer: /_tokens/forms/en/05_Executing/02_Decision_Log/05_02_Decision_Log.npy
+token_count: 460
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.065137+00:00'
 ---
 
 # Decision Log - Generation Prompt

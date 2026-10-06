@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.npy
+token_count: 1046
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.747223+00:00'
 ---
 
 <!-- تعليمات النموذج الذكي: املأ مواضع [ أضف التفاصيل... ] استنادًا إلى

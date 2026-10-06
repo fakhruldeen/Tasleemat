@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan/04_10_01_Stakeholder_Engagement_Plan_Example.npy
+token_count: 695
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.224039+00:00'
 ---
 
 # Stakeholder Engagement Plan (Reference Example)

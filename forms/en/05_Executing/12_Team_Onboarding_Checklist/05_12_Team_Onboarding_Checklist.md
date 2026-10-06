@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Team Onboarding Checklist (Instructions)
+token_pointer: /_tokens/forms/en/05_Executing/12_Team_Onboarding_Checklist/05_12_Team_Onboarding_Checklist.npy
+token_count: 543
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.076447+00:00'
 ---
 
 # Team Onboarding Checklist - LLM Generation Prompt

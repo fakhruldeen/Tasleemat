@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Stakeholder Register (Instructions)
+token_pointer: /_tokens/forms/en/03_Initiating/04_Stakeholder_Register/03_04_Stakeholder_Register.npy
+token_count: 429
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.094034+00:00'
 ---
 
 # Stakeholder Register - Generation Prompt

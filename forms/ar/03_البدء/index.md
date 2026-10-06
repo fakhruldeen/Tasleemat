@@ -5,6 +5,10 @@ layout: default
 title: البدء
 has_children: true
 nav_order: 5
+token_pointer: /_tokens/forms/ar/03_البدء/index.npy
+token_count: 239
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.901275+00:00'
 ---
 
 <div>

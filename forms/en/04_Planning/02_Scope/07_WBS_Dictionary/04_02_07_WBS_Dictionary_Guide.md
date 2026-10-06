@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: WBS Dictionary
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/07_WBS_Dictionary/04_02_07_WBS_Dictionary_Guide.npy
+token_count: 785
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.939184+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

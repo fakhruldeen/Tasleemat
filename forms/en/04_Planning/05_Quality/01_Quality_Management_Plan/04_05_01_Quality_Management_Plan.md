@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Quality Management Plan (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/05_Quality/01_Quality_Management_Plan/04_05_01_Quality_Management_Plan.npy
+token_count: 576
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.994438+00:00'
 ---
 
 # Quality Management Plan - Generation Prompt

@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Stakeholder Register
 nav_order: 4
+token_pointer: /_tokens/forms/en/03_Initiating/04_Stakeholder_Register/03_04_Stakeholder_Register_Guide.npy
+token_count: 639
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.094819+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas/02_04_AI_Use_Case_Canvas_Example.npy
+token_count: 1289
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.244769+00:00'
 ---
 
 # AI Use Case Canvas (Reference Example)

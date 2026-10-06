@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Procurement Strategy
 nav_order: 2
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/02_Procurement_Strategy/04_09_02_Procurement_Strategy_Guide.npy
+token_count: 751
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.007330+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/01_Schedule_Management_Plan/04_03_01_Schedule_Management_Plan_Example.npy
+token_count: 802
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.224568+00:00'
 ---
 
 # Schedule Management Plan (Reference Example)

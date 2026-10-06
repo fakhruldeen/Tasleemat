@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/06_Risk_Audit/06_06_Risk_Audit_Template.npy
+token_count: 1202
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.052764+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

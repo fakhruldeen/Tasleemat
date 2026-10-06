@@ -5,6 +5,10 @@ layout: default
 title: المراقبة والتحكم
 has_children: true
 nav_order: 8
+token_pointer: /_tokens/forms/ar/06_المراقبة_والتحكم/index.npy
+token_count: 643
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.852163+00:00'
 ---
 
 <div>

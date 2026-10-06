@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Work Breakdown Structure (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/06_Work_Breakdown_Structure/04_02_06_Work_Breakdown_Structure.npy
+token_count: 542
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.946940+00:00'
 ---
 
 # Work Breakdown Structure - Generation Prompt

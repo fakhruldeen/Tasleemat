@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Flow Metrics and Value Stream Dashboard
 nav_order: 12
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream/06_12_Flow_Metrics_and_Value_Stream_Guide.npy
+token_count: 761
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.059738+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

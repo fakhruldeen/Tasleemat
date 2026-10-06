@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/08_Project_Schedule/04_03_08_Project_Schedule_Example.npy
+token_count: 743
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.226898+00:00'
 ---
 
 # Project Schedule (Reference Example)

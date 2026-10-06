@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/03_Initiating/02_Product_Vision/03_02_Product_Vision_Example.npy
+token_count: 1271
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.269165+00:00'
 ---
 
 # Product Vision (Reference Example)

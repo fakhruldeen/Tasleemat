@@ -5,6 +5,10 @@ layout: default
 title: الإغلاق
 has_children: true
 nav_order: 9
+token_pointer: /_tokens/forms/ar/07_الإغلاق/index.npy
+token_count: 298
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.877029+00:00'
 ---
 
 <div>

@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Transition to Operations Checklist (Instructions)
+token_pointer: /_tokens/forms/en/07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist.npy
+token_count: 467
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.084478+00:00'
 ---
 
 # Transition to Operations Checklist - Generation Prompt

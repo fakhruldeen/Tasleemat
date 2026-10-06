@@ -1,5 +1,9 @@
 ---
 type: Overview
+token_pointer: /_tokens/README.npy
+token_count: 3793
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.026269+00:00'
 ---
 
 <div align="center">

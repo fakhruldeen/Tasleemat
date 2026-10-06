@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/05_Executing/04_Change_Log/05_04_Change_Log_Example.npy
+token_count: 619
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.261487+00:00'
 ---
 
 # Change Log (Reference Example)

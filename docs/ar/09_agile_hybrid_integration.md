@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/ar/09_agile_hybrid_integration.npy
+token_count: 1703
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.231049+00:00'
 ---
 
 <div class="lang-switch-bar">

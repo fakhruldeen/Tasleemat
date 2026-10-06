@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff/06_10_User_Acceptance_Testing_Signoff_Example.npy
+token_count: 902
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.256323+00:00'
 ---
 
 # User Acceptance Testing Signoff (Reference Example)

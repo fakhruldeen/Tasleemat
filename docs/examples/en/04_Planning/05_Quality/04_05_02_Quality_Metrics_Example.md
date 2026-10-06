@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Example.npy
+token_count: 1354
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.656284+00:00'
 ---
 
 <div class="lang-switch-bar">

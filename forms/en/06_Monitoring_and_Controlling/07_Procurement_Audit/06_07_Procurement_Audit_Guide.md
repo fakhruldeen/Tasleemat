@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Procurement Audit
 nav_order: 7
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/07_Procurement_Audit/06_07_Procurement_Audit_Guide.npy
+token_count: 767
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.045925+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

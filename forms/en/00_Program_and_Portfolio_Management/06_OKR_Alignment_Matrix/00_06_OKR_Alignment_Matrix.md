@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: OKR ALIGNMENT MATRIX (Instructions)
+token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix/00_06_OKR_Alignment_Matrix.npy
+token_count: 485
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.040237+00:00'
 ---
 
 # OKR ALIGNMENT MATRIX - LLM GENERATION GUIDE

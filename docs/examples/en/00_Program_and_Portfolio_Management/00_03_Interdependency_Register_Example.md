@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Example.npy
+token_count: 2397
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.674232+00:00'
 ---
 
 <div class="lang-switch-bar">

@@ -5,6 +5,10 @@ layout: default
 title: منهجية المشروع وتخصيصه
 has_children: true
 nav_order: 4
+token_pointer: /_tokens/forms/ar/02_منهجية_المشروع_وتخصيصه/index.npy
+token_count: 412
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.709373+00:00'
 ---
 
 <div>

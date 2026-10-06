@@ -5,6 +5,10 @@ layout: default
 title: الأعمال وتسليم القيمة
 has_children: true
 nav_order: 3
+token_pointer: /_tokens/forms/ar/01_الأعمال_وتسليم_القيمة/index.npy
+token_count: 221
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.890657+00:00'
 ---
 
 <div>

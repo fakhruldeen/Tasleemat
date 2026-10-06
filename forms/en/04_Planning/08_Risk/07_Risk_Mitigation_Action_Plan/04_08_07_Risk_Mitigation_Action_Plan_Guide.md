@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Risk Mitigation Action Plan
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/08_Risk/07_Risk_Mitigation_Action_Plan/04_08_07_Risk_Mitigation_Action_Plan_Guide.npy
+token_count: 1229
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.987184+00:00'
 ---
 
 ## Tasleemat Forms Guide

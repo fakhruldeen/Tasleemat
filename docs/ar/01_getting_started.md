@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/ar/01_getting_started.npy
+token_count: 2908
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.230099+00:00'
 ---
 
 <div class="lang-switch-bar">

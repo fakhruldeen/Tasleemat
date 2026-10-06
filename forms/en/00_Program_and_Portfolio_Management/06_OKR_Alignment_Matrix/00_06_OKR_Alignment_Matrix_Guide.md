@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: OKR Alignment Matrix
 nav_order: 6
+token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix/00_06_OKR_Alignment_Matrix_Guide.npy
+token_count: 706
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.039363+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

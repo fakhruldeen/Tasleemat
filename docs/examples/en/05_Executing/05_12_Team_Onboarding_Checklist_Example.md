@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/05_Executing/05_12_Team_Onboarding_Checklist_Example.npy
+token_count: 1060
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.686699+00:00'
 ---
 
 <div class="lang-switch-bar">

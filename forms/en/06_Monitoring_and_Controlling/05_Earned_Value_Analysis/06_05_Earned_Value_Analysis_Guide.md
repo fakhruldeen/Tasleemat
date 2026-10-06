@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Earned Value Analysis
 nav_order: 5
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/05_Earned_Value_Analysis/06_05_Earned_Value_Analysis_Guide.npy
+token_count: 1787
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.057068+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

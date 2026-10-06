@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/02_Project_Approach_and_Tailoring/03_AI_Readiness_Assessment/02_03_AI_Readiness_Assessment_Example.npy
+token_count: 1573
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.244115+00:00'
 ---
 
 # AI Readiness Assessment (Reference Example)

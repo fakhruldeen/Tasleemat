@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective)_مثال.npy
+token_count: 1739
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.131474+00:00'
 ---
 
 <div>

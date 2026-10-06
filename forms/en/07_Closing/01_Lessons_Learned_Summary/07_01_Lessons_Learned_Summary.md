@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: LESSONS LEARNED SUMMARY (Instructions)
+token_pointer: /_tokens/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary.npy
+token_count: 1873
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.082933+00:00'
 ---
 
 # LESSONS LEARNED SUMMARY - LLM GENERATION GUIDE

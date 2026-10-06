@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Definition of Ready and Done Standard
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done_Guide.npy
+token_count: 1212
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.991592+00:00'
 ---
 
 ## Tasleemat Forms Guide

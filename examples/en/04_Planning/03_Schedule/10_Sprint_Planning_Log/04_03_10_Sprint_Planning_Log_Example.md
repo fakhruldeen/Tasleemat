@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/04_03_10_Sprint_Planning_Log_Example.npy
+token_count: 1055
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.228766+00:00'
 ---
 
 # Sprint Planning Log (Reference Example)

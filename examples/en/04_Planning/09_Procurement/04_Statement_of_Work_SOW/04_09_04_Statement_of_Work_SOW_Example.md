@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/09_Procurement/04_Statement_of_Work_SOW/04_09_04_Statement_of_Work_SOW_Example.npy
+token_count: 1045
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.239391+00:00'
 ---
 
 # Statement of Work SOW (Reference Example)

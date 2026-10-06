@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_دليل.npy
+token_count: 1349
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.297920+00:00'
 ---
 
 <div class="lang-switch-bar">

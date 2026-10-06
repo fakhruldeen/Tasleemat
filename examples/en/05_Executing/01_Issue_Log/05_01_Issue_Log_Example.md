@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/05_Executing/01_Issue_Log/05_01_Issue_Log_Example.npy
+token_count: 669
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.261892+00:00'
 ---
 
 # Issue Log (Reference Example)

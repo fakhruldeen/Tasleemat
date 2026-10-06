@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Example.npy
+token_count: 990
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.266811+00:00'
 ---
 
 # Business Case (Reference Example)

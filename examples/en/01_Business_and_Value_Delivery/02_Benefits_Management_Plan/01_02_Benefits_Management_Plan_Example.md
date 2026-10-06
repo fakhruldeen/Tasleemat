@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/01_Business_and_Value_Delivery/02_Benefits_Management_Plan/01_02_Benefits_Management_Plan_Example.npy
+token_count: 1351
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.267395+00:00'
 ---
 
 # Benefits Management Plan (Reference Example)

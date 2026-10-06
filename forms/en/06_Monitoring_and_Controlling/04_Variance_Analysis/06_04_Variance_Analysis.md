@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Variance Analysis (Instructions)
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/04_Variance_Analysis/06_04_Variance_Analysis.npy
+token_count: 1001
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.048501+00:00'
 ---
 
 # Variance Analysis - Generation Prompt

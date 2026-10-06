@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/06_Duration_Estimates/04_03_06_Duration_Estimates_Example.npy
+token_count: 805
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.227766+00:00'
 ---
 
 # Duration Estimates (Reference Example)

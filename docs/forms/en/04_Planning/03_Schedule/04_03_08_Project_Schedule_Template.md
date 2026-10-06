@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Template.npy
+token_count: 1076
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.155525+00:00'
 ---
 
 <div class="lang-switch-bar">

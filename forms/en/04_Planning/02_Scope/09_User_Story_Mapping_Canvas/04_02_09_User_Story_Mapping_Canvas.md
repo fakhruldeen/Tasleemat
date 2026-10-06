@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: USER STORY MAPPING CANVAS (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas.npy
+token_count: 2845
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.945408+00:00'
 ---
 
 # USER STORY MAPPING CANVAS - LLM GENERATION GUIDE

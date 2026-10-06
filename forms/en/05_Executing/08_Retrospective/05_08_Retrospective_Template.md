@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/05_Executing/08_Retrospective/05_08_Retrospective_Template.npy
+token_count: 1792
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.063365+00:00'
 ---
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

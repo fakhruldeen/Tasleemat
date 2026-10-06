@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/05_Executing/05_02_Decision_Log_Example.npy
+token_count: 1072
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.687843+00:00'
 ---
 
 <div class="lang-switch-bar">

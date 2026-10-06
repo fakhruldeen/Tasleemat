@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Probability and Impact Matrix
 nav_order: 4
+token_pointer: /_tokens/forms/en/04_Planning/08_Risk/04_Probability_and_Impact_Matrix/04_08_04_Probability_and_Impact_Matrix_Guide.npy
+token_count: 705
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.983585+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

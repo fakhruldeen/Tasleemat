@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/07_Closing/05_Post_Implementation_Review/07_05_Post_Implementation_Review_Example.npy
+token_count: 862
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.265309+00:00'
 ---
 
 # Post Implementation Review (Reference Example)

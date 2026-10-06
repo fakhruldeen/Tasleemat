@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/05_Executing/10_Impediment_Log/05_10_Impediment_Log_Template.npy
+token_count: 923
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.070506+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

@@ -2,6 +2,10 @@
 type: Form
 lang: ar
 Form: سجل مكتبة الأوامر (Instructions)
+token_pointer: /_tokens/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts).npy
+token_count: 764
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.746656+00:00'
 ---
 
 # سجل مكتبة الأوامر - موجّه التوليد

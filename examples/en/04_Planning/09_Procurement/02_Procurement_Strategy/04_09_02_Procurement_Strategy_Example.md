@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/09_Procurement/02_Procurement_Strategy/04_09_02_Procurement_Strategy_Example.npy
+token_count: 663
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.239886+00:00'
 ---
 
 # Procurement Strategy (Reference Example)

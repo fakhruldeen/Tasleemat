@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/08_Risk/05_Risk_Data_Sheet/04_08_05_Risk_Data_Sheet_Example.npy
+token_count: 953
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.232072+00:00'
 ---
 
 # Risk Data Sheet (Reference Example)

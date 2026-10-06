@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: AI Model Card and Fact Sheet
 nav_order: 1
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet/02_05_AI_Model_Card_and_Fact_Sheet_Guide.npy
+token_count: 3199
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.016567+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

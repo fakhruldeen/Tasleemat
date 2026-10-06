@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: User Story Mapping Canvas
 nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Guide.npy
+token_count: 2861
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.944551+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

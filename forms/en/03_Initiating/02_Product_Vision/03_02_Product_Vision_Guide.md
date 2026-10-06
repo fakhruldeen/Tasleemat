@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Product Vision
 nav_order: 1
+token_pointer: /_tokens/forms/en/03_Initiating/02_Product_Vision/03_02_Product_Vision_Guide.npy
+token_count: 1242
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.095755+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

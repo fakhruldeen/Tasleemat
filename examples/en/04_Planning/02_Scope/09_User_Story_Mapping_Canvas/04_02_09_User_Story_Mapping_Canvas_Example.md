@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Example.npy
+token_count: 1444
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.215159+00:00'
 ---
 
 # User Story Mapping Canvas (Reference Example)

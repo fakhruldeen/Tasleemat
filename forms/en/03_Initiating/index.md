@@ -5,6 +5,10 @@ layout: default
 title: Initiating
 has_children: true
 nav_order: 5
+token_pointer: /_tokens/forms/en/03_Initiating/index.npy
+token_count: 181
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.093638+00:00'
 ---
 
 # Initiating

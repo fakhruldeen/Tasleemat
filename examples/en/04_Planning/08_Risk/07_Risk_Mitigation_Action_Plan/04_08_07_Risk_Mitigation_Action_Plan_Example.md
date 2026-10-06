@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/08_Risk/07_Risk_Mitigation_Action_Plan/04_08_07_Risk_Mitigation_Action_Plan_Example.npy
+token_count: 554
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.231219+00:00'
 ---
 
 # Risk Mitigation Action Plan (Reference Example)

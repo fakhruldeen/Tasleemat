@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/en/04_stage_gates_and_governance.npy
+token_count: 3078
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.496415+00:00'
 ---
 
 <div class="lang-switch-bar">

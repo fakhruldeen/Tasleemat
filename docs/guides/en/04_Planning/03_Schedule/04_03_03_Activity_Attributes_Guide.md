@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/04_Planning/03_Schedule/04_03_03_Activity_Attributes_Guide.npy
+token_count: 1272
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.360475+00:00'
 ---
 
 <div class="lang-switch-bar">

@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan/04_11_01_OCM_Strategy_and_Plan_Template.npy
+token_count: 816
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.963275+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

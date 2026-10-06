@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/05_Executing/11_Meeting_Minutes/05_11_Meeting_Minutes_Template.npy
+token_count: 902
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.061351+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

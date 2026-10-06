@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: OCM Strategy and Plan
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan/04_11_01_OCM_Strategy_and_Plan_Guide.npy
+token_count: 1111
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.962485+00:00'
 ---
 
 ## Tasleemat Forms Guide

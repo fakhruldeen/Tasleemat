@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/05_Executing/08_Retrospective/05_08_Retrospective_Example.npy
+token_count: 1314
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.257907+00:00'
 ---
 
 # Retrospective (Reference Example)

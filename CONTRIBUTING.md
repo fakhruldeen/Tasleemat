@@ -1,5 +1,9 @@
 ---
 type: Document
+token_pointer: /_tokens/CONTRIBUTING.npy
+token_count: 662
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.021714+00:00'
 ---
 
 # 🤝 Contributing to Tasleemat PMO Operating System

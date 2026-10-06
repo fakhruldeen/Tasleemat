@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix/00_04_Resource_Capacity_Matrix_Example.npy
+token_count: 2019
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.246118+00:00'
 ---
 
 # Resource Capacity Matrix (Reference Example)

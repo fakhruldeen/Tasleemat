@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Team Member Status Report
 nav_order: 2
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/02_Team_Member_Status_Report/06_02_Team_Member_Status_Report_Guide.npy
+token_count: 922
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.042896+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

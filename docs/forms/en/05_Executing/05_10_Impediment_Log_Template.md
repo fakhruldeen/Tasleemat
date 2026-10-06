@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/05_Executing/05_10_Impediment_Log_Template.npy
+token_count: 1412
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.194683+00:00'
 ---
 
 <div class="lang-switch-bar">

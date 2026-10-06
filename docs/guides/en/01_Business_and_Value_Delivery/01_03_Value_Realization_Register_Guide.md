@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Guide.npy
+token_count: 2490
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.442187+00:00'
 ---
 
 <div class="lang-switch-bar">

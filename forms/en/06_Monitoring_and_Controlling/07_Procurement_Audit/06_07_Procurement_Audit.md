@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Procurement Audit (Instructions)
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/07_Procurement_Audit/06_07_Procurement_Audit.npy
+token_count: 616
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.046776+00:00'
 ---
 
 # Procurement Audit - Generation Prompt

@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/01_Project_Status_Report/06_01_Project_Status_Report_Example.npy
+token_count: 1411
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.252959+00:00'
 ---
 
 # Project Status Report (Reference Example)

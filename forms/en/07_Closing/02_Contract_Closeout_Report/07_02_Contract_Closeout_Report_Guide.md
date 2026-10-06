@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Contract Closeout Report
 nav_order: 1
+token_pointer: /_tokens/forms/en/07_Closing/02_Contract_Closeout_Report/07_02_Contract_Closeout_Report_Guide.npy
+token_count: 778
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.077235+00:00'
 ---
 
 

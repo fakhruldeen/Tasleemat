@@ -5,6 +5,10 @@ layout: default
 title: Planning
 has_children: true
 nav_order: 6
+token_pointer: /_tokens/forms/en/04_Planning/index.npy
+token_count: 2372
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.936695+00:00'
 ---
 
 # Planning

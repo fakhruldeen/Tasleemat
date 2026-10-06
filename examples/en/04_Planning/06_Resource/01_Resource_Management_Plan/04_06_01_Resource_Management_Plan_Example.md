@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/06_Resource/01_Resource_Management_Plan/04_06_01_Resource_Management_Plan_Example.npy
+token_count: 1139
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.235142+00:00'
 ---
 
 # Resource Management Plan (Reference Example)

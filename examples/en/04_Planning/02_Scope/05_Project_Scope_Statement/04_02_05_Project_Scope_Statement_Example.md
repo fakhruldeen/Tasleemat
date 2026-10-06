@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Example.npy
+token_count: 1353
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.214514+00:00'
 ---
 
 # Project Scope Statement (Reference Example)

@@ -5,6 +5,10 @@ layout: default
 title: إدارة البرامج والمحافظ
 has_children: true
 nav_order: 2
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/index.npy
+token_count: 370
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.911617+00:00'
 ---
 
 <div>

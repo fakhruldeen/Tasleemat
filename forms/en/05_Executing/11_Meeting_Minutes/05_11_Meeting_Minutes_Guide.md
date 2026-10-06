@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Meeting Minutes
 nav_order: 7
+token_pointer: /_tokens/forms/en/05_Executing/11_Meeting_Minutes/05_11_Meeting_Minutes_Guide.npy
+token_count: 1111
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.062171+00:00'
 ---
 
 ## Tasleemat Forms Guide

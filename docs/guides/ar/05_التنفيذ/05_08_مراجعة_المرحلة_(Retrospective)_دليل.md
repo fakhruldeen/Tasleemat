@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.npy
+token_count: 2409
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.248022+00:00'
 ---
 
 <div class="lang-switch-bar">

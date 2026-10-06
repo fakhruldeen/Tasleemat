@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Network Diagram
 nav_order: 5
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/05_Network_Diagram/04_03_05_Network_Diagram_Guide.npy
+token_count: 699
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.969021+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

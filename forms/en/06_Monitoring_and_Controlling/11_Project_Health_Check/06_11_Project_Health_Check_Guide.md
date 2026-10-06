@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Project Health Check Matrix
 nav_order: 11
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/11_Project_Health_Check/06_11_Project_Health_Check_Guide.npy
+token_count: 734
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.053274+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

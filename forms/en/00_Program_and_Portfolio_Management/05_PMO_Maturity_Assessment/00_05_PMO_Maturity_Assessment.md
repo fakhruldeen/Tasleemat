@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: PMO MATURITY ASSESSMENT (Instructions)
+token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment.npy
+token_count: 585
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.041248+00:00'
 ---
 
 # PMO MATURITY ASSESSMENT - LLM GENERATION GUIDE

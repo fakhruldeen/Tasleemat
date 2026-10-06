@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Guide.npy
+token_count: 1770
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.370349+00:00'
 ---
 
 <div class="lang-switch-bar">

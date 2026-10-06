@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Statement of Work (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/04_Statement_of_Work_SOW/04_09_04_Statement_of_Work_SOW.npy
+token_count: 1058
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.005616+00:00'
 ---
 
 # Statement of Work - LLM Generation Prompt

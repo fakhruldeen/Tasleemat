@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/00_Program_and_Portfolio_Management/01_Portfolio_Roadmap/00_01_Portfolio_Roadmap_Example.npy
+token_count: 2091
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.246995+00:00'
 ---
 
 # Portfolio Roadmap (Reference Example)

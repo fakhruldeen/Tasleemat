@@ -5,6 +5,10 @@ layout: default
 title: التنفيذ
 has_children: true
 nav_order: 7
+token_pointer: /_tokens/forms/ar/05_التنفيذ/index.npy
+token_count: 581
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.733438+00:00'
 ---
 
 <div>

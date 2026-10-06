@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/04_Cost/01_Cost_Management_Plan/04_04_01_Cost_Management_Plan_Example.npy
+token_count: 1112
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.217420+00:00'
 ---
 
 # Cost Management Plan (Reference Example)

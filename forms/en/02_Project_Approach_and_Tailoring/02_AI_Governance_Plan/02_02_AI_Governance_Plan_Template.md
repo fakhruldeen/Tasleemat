@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan_Template.npy
+token_count: 2476
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.018330+00:00'
 ---
 
 <!--

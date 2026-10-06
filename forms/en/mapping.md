@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/mapping.npy
+token_count: 3581
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.935802+00:00'
 ---
 
 # PMO Lifecycle Artifacts Mapping

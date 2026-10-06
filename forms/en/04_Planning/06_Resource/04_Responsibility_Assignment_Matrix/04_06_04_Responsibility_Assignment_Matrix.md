@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Responsibility Assignment Matrix (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/06_Resource/04_Responsibility_Assignment_Matrix/04_06_04_Responsibility_Assignment_Matrix.npy
+token_count: 576
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.998772+00:00'
 ---
 
 # Responsibility Assignment Matrix - Generation Prompt

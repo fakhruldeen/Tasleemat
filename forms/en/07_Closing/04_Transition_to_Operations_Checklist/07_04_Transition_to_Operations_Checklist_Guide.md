@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Transition to Operations Checklist
 nav_order: 7
+token_pointer: /_tokens/forms/en/07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist_Guide.npy
+token_count: 909
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.085386+00:00'
 ---
 
 ## Tasleemat Forms Guide

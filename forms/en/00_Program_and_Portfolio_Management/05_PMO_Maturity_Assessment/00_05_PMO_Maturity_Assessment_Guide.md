@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: PMO Maturity Assessment
 nav_order: 5
+token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/05_PMO_Maturity_Assessment/00_05_PMO_Maturity_Assessment_Guide.npy
+token_count: 762
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.040805+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

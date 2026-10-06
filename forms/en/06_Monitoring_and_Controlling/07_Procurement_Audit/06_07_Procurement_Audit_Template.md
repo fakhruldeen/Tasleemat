@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/07_Procurement_Audit/06_07_Procurement_Audit_Template.npy
+token_count: 1068
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.046412+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

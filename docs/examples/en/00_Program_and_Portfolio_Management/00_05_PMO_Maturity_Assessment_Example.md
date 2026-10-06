@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Example.npy
+token_count: 1556
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.669264+00:00'
 ---
 
 <div class="lang-switch-bar">

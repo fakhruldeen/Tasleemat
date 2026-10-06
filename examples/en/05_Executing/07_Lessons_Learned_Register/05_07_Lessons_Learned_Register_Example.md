@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/05_Executing/07_Lessons_Learned_Register/05_07_Lessons_Learned_Register_Example.npy
+token_count: 615
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.261073+00:00'
 ---
 
 # Lessons Learned Register (Reference Example)

@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Guide.npy
+token_count: 1284
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.348110+00:00'
 ---
 
 <div class="lang-switch-bar">

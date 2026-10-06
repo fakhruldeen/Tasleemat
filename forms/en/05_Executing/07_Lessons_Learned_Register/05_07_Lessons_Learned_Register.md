@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Lessons Learned Register (Instructions)
+token_pointer: /_tokens/forms/en/05_Executing/07_Lessons_Learned_Register/05_07_Lessons_Learned_Register.npy
+token_count: 502
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.072772+00:00'
 ---
 
 # Lessons Learned Register - Generation Prompt

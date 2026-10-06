@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Duration Estimates (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/06_Duration_Estimates/04_03_06_Duration_Estimates.npy
+token_count: 523
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.977342+00:00'
 ---
 
 # Duration Estimates - Generation Prompt

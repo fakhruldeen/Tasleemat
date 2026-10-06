@@ -1,5 +1,9 @@
 ---
 type: Document
+token_pointer: /_tokens/CODE_OF_CONDUCT.npy
+token_count: 300
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.022285+00:00'
 ---
 
 # Contributor Covenant Code of Conduct

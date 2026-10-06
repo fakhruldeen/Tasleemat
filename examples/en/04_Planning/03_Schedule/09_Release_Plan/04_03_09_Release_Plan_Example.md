@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/09_Release_Plan/04_03_09_Release_Plan_Example.npy
+token_count: 978
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.226483+00:00'
 ---
 
 # Release Plan (Reference Example)

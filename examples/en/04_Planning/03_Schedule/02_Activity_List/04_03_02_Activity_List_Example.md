@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/02_Activity_List/04_03_02_Activity_List_Example.npy
+token_count: 813
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.227334+00:00'
 ---
 
 # Activity List (Reference Example)

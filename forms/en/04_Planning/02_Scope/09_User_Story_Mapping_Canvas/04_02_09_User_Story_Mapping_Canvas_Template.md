@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Template.npy
+token_count: 2435
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.946186+00:00'
 ---
 
 <!--

@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Risk Data Sheet
 nav_order: 5
+token_pointer: /_tokens/forms/en/04_Planning/08_Risk/05_Risk_Data_Sheet/04_08_05_Risk_Data_Sheet_Guide.npy
+token_count: 802
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.988835+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

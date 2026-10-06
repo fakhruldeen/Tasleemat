@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/01_Business_and_Value_Delivery/03_Value_Realization_Register/01_03_Value_Realization_Register_Example.npy
+token_count: 1109
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.268005+00:00'
 ---
 
 # Value Realization Register (Reference Example)

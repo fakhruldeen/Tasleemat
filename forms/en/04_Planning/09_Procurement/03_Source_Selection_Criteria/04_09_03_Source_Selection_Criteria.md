@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Source Selection Criteria (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/03_Source_Selection_Criteria/04_09_03_Source_Selection_Criteria.npy
+token_count: 599
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.009578+00:00'
 ---
 
 # Source Selection Criteria - Generation Prompt

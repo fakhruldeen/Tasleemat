@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/01_Project_Status_Report/06_01_Project_Status_Report_Template.npy
+token_count: 871
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.050404+00:00'
 ---
 
 <!-- LLM INSTRUCTIONS: Populate the Project Status Report based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.

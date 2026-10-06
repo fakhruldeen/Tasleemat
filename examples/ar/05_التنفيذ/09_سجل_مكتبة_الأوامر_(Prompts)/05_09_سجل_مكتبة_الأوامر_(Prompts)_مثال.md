@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.npy
+token_count: 778
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.128967+00:00'
 ---
 
 <div>

@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/05_Network_Diagram/04_03_05_Network_Diagram_Example.npy
+token_count: 670
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.225082+00:00'
 ---
 
 # Network Diagram (Reference Example)

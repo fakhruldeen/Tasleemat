@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/03_Initiating/03_01_Project_Charter_Guide.npy
+token_count: 1624
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.447802+00:00'
 ---
 
 <div class="lang-switch-bar">

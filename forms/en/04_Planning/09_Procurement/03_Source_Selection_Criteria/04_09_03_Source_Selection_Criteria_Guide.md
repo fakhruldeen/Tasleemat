@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Source Selection Criteria
 nav_order: 3
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/03_Source_Selection_Criteria/04_09_03_Source_Selection_Criteria_Guide.npy
+token_count: 800
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.008555+00:00'
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

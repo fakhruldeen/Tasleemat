@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream/06_12_Flow_Metrics_and_Value_Stream_Example.npy
+token_count: 765
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.256771+00:00'
 ---
 
 # Flow Metrics and Value Stream (Reference Example)

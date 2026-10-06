@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/01_Business_and_Value_Delivery/index.npy
+token_count: 615
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.206225+00:00'
 ---
 
 <div class="lang-switch-bar">

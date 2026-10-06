@@ -1,5 +1,9 @@
 ---
 type: Overview
+token_pointer: /_tokens/examples/README.npy
+token_count: 10845
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.117102+00:00'
 ---
 
 # 🏆 Tasleemat Gold-Standard Reference Examples

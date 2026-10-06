@@ -1,5 +1,9 @@
 ---
 type: Document
+token_pointer: /_tokens/CONTRIBUTING_AR.npy
+token_count: 860
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.027429+00:00'
 ---
 
 # 🤝 دليل المساهمة في نظام تشغيل مكاتب إدارة المشاريع «تسليمات»

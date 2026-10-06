@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Team Charter (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/06_Resource/05_Team_Charter/04_06_05_Team_Charter.npy
+token_count: 584
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.997423+00:00'
 ---
 
 # Team Charter - Generation Prompt

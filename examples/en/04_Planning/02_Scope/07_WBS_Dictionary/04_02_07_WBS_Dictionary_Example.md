@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/07_WBS_Dictionary/04_02_07_WBS_Dictionary_Example.npy
+token_count: 1299
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.212730+00:00'
 ---
 
 # WBS Dictionary (Reference Example)

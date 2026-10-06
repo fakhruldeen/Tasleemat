@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/00_Program_and_Portfolio_Management/02_Program_Charter/00_02_Program_Charter_Example.npy
+token_count: 2124
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.247824+00:00'
 ---
 
 # Program Charter (Reference Example)

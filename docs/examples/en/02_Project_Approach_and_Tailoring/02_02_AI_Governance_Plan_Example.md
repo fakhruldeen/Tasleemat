@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Example.npy
+token_count: 1941
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.667828+00:00'
 ---
 
 <div class="lang-switch-bar">

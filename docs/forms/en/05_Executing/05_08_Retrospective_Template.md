@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/forms/en/05_Executing/05_08_Retrospective_Template.npy
+token_count: 2279
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.197435+00:00'
 ---
 
 <div class="lang-switch-bar">

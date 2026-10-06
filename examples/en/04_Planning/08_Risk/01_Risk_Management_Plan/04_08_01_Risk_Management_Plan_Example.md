@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/08_Risk/01_Risk_Management_Plan/04_08_01_Risk_Management_Plan_Example.npy
+token_count: 1204
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.229404+00:00'
 ---
 
 # Risk Management Plan (Reference Example)

@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/03_AI_Readiness_Assessment/02_03_AI_Readiness_Assessment_Template.npy
+token_count: 2700
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.021048+00:00'
 ---
 
 <!--

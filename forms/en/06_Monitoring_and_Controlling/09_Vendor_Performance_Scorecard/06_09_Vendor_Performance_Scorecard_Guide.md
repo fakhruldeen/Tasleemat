@@ -4,6 +4,10 @@ lang: en
 layout: default
 title: Vendor Performance Scorecard
 nav_order: 7
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard/06_09_Vendor_Performance_Scorecard_Guide.npy
+token_count: 1185
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.045021+00:00'
 ---
 
 ## Tasleemat Forms Guide

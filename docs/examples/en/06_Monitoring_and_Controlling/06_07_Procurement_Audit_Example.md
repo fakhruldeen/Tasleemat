@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Example.npy
+token_count: 1803
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.675733+00:00'
 ---
 
 <div class="lang-switch-bar">

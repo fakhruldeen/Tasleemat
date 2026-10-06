@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: Cost Estimates (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/04_Cost/02_Cost_Estimates/04_04_02_Cost_Estimates.npy
+token_count: 542
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.952964+00:00'
 ---
 
 # Cost Estimates - Generation Prompt

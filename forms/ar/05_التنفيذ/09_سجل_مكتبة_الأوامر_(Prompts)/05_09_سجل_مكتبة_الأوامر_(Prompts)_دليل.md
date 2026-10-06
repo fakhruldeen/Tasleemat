@@ -4,6 +4,10 @@ lang: ar
 layout: default
 title: سجل مكتبة الأوامر
 nav_order: 7
+token_pointer: /_tokens/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_دليل.npy
+token_count: 1244
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.747894+00:00'
 ---
 
 ## دليل نماذج تسليمات

@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/02_Requirements_Management_Plan/04_02_02_Requirements_Management_Plan_Example.npy
+token_count: 1122
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.213313+00:00'
 ---
 
 # Requirements Management Plan (Reference Example)

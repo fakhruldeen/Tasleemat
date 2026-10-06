@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/guides/en/07_Closing/07_03_Project_or_Phase_Closeout_Guide.npy
+token_count: 2448
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.437758+00:00'
 ---
 
 <div class="lang-switch-bar">

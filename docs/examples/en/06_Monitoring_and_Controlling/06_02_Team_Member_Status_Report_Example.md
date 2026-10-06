@@ -1,5 +1,9 @@
 ---
 type: Guide
+token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_02_Team_Member_Status_Report_Example.npy
+token_count: 2023
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.681702+00:00'
 ---
 
 <div class="lang-switch-bar">

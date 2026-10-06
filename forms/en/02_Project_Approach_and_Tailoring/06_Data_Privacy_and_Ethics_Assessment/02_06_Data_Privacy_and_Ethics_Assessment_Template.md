@@ -1,5 +1,9 @@
 ---
 type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Template.npy
+token_count: 3800
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.014532+00:00'
 ---
 
 <!--

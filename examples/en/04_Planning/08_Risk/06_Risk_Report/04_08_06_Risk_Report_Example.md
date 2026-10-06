@@ -1,5 +1,9 @@
 ---
 type: Example
+token_pointer: /_tokens/examples/en/04_Planning/08_Risk/06_Risk_Report/04_08_06_Risk_Report_Example.npy
+token_count: 1295
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.232741+00:00'
 ---
 
 # Risk Report (Reference Example)

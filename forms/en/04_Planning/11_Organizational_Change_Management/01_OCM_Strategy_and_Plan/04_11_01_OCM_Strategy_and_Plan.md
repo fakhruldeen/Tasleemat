@@ -2,6 +2,10 @@
 type: Form
 lang: en
 Form: OCM Strategy and Plan (Instructions)
+token_pointer: /_tokens/forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan/04_11_01_OCM_Strategy_and_Plan.npy
+token_count: 622
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.962869+00:00'
 ---
 
 # OCM Strategy and Plan - Generation Prompt
