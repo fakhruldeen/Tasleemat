@@ -1,3 +1,8 @@
+<!--
+---
+type: Guide
+---
+-->
 # Tasleemat Python SDK
 
 This directory contains the Python packaging pipeline for the **Tasleemat** PMO Governance & Quality Assurance framework.
