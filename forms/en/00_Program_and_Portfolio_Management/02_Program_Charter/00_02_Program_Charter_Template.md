@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/02_Program_Charter/00_02_Program_Charter_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-00.02
 language: en
 status: approved
 ---
+-->
 
 <!--  
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/08_Risk/06_Risk_Report/04_08_06_Risk_Report_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.08.06
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/04_Change_Log/05_04_Change_Log_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.04
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Change Log based on the project context. Note: This log must output an array of objects matching the flat table headers. -->
 

@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.02.08
 language: ar
 status: approved
 ---
+-->
 
 <!-- تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
 

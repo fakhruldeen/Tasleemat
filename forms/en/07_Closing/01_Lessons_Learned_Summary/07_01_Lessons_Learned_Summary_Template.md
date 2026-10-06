@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/07_Closing/01_Lessons_Learned_Summary/07_01_Lessons_Learned_Summary_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-07.01
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

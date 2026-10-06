@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/06_Team_Performance_Assessment/05_06_Team_Performance_Assessment_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.06
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Team Performance Assessment based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 

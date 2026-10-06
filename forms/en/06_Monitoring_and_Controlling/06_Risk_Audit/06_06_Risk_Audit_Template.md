@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/06_Risk_Audit/06_06_Risk_Audit_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-06.06
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

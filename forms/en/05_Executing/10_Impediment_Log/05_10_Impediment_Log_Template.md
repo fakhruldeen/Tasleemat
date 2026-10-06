@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/10_Impediment_Log/05_10_Impediment_Log_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.10
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

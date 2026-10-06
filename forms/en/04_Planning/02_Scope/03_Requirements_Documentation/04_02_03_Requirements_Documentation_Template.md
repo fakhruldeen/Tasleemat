@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/02_Scope/03_Requirements_Documentation/04_02_03_Requirements_Documentation_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.02.03
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

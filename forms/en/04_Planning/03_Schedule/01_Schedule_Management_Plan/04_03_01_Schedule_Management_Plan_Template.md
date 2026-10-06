@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/01_Schedule_Management_Plan/04_03_01_Schedule_Management_Plan_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.03.01
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

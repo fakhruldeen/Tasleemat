@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.02.09
 language: en
 status: approved
 ---
+-->
 
 <!--
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

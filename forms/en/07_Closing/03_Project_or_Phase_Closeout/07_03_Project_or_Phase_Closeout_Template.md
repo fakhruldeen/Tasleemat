@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/07_Closing/03_Project_or_Phase_Closeout/07_03_Project_or_Phase_Closeout_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-07.03
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

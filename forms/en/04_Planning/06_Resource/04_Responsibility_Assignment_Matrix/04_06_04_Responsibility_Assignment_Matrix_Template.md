@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/06_Resource/04_Responsibility_Assignment_Matrix/04_06_04_Responsibility_Assignment_Matrix_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.06.04
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

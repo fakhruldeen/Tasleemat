@@ -1,3 +1,6 @@
+---
+type: Guide
+---
 # Tasleemat v2.0.0: The AI-Native OKF Framework
 
 We are thrilled to announce **Tasleemat v2.0.0**, marking a massive architectural leap forward. With this release, Tasleemat transforms from a standard PMO documentation repository into a globally compliant, AI-native **Open Knowledge Format (OKF) v0.2** framework.

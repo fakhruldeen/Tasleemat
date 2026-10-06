@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/09_Release_Plan/04_03_09_Release_Plan_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.03.09
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

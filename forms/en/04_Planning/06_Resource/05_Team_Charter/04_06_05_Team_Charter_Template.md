@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/06_Resource/05_Team_Charter/04_06_05_Team_Charter_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.06.05
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

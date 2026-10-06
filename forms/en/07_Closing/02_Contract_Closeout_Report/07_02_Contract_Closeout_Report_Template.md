@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/07_Closing/02_Contract_Closeout_Report/07_02_Contract_Closeout_Report_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-07.02
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-01.01
 language: en
 status: approved
 ---
+-->
 
 <!--  
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

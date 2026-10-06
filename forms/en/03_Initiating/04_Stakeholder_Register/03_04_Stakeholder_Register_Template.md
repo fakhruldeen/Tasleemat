@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/03_Initiating/04_Stakeholder_Register/03_04_Stakeholder_Register_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-03.04
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

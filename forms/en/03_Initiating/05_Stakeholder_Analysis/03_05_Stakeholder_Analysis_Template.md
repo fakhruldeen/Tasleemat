@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/03_Initiating/05_Stakeholder_Analysis/03_05_Stakeholder_Analysis_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-03.05
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/03_Activity_Attributes/04_03_03_Activity_Attributes_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.03.03
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

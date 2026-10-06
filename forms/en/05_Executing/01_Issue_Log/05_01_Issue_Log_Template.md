@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/01_Issue_Log/05_01_Issue_Log_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.01
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Issue Log based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 

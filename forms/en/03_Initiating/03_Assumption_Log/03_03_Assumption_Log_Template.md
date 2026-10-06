@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/03_Initiating/03_Assumption_Log/03_03_Assumption_Log_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-03.03
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

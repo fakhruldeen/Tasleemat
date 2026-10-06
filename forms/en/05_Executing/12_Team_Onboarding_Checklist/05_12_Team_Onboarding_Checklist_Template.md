@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/12_Team_Onboarding_Checklist/05_12_Team_Onboarding_Checklist_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.12
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

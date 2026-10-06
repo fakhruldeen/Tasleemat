@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/05_Request_for_Proposal_RFP/04_09_05_Request_for_Proposal_RFP_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.09.05
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders
  based on project context.

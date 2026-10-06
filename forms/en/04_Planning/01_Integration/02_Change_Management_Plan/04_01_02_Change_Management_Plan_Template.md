@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/01_Integration/02_Change_Management_Plan/04_01_02_Change_Management_Plan_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.01.02
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

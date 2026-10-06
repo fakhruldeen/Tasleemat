@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/03_Interdependency_Register/00_03_Interdependency_Register_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-00.03
 language: en
 status: approved
 ---
+-->
 
 <!--  
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

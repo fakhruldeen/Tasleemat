@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/03_Contractor_Status_Report/06_03_Contractor_Status_Report_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-06.03
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/11_Meeting_Minutes/05_11_Meeting_Minutes_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.11
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

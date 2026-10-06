@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/ar/01_الأعمال_وتسليم_القيمة/01_دراسة_الجدوى_(Business_Case)/01_01_دراسة_الجدوى_(Business_Case)_قالب.npy
@@ -8,6 +9,7 @@ form_id: PMO-01.01
 language: ar
 status: approved
 ---
+-->
 
 <!-- 
 تعليمات النموذج الذكي: املأ المسافات الفارغة [ أضف التفاصيل... ] بناءً على سياق المشروع.

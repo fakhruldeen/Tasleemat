@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/07_Lessons_Learned_Register/05_07_Lessons_Learned_Register_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.07
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Lessons Learned Register based on the project context. Note: This log must output an array of objects matching the flat table headers. -->
 

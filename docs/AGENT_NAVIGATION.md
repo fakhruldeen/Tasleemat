@@ -1,3 +1,6 @@
+---
+type: Guide
+---
 # Tasleemat AI Agent Navigation Guidance
 
 ## Overview

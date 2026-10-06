@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/03_Initiating/02_Product_Vision/03_02_Product_Vision_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-03.02
 language: en
 status: approved
 ---
+-->
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

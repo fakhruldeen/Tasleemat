@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective)_قالب.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.08
 language: ar
 status: approved
 ---
+-->
 
 <!-- تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
 

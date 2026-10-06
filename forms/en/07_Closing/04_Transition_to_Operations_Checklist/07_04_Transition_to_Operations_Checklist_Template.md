@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/07_Closing/04_Transition_to_Operations_Checklist/07_04_Transition_to_Operations_Checklist_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-07.04
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

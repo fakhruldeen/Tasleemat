@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/05_Executing/09_Prompt_Library_Log/05_09_Prompt_Library_Log_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-05.09
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

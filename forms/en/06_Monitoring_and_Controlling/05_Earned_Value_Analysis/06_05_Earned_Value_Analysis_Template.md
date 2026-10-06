@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/05_Earned_Value_Analysis/06_05_Earned_Value_Analysis_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-06.05
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Earned Value Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 

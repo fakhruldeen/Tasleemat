@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/01_Business_and_Value_Delivery/04_Gap_Analysis_Report/01_04_Gap_Analysis_Report_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-01.04
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

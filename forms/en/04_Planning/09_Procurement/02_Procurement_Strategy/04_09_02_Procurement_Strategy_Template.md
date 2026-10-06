@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/02_Procurement_Strategy/04_09_02_Procurement_Strategy_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.09.02
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

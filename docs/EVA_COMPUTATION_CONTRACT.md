@@ -1,3 +1,6 @@
+---
+type: Guide
+---
 # Attested Computation Contract: Earned Value Analysis (PMO-06.05)
 
 ## 1. Concept Definition

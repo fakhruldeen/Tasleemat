@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-02.06
 language: en
 status: approved
 ---
+-->
 
 <!--
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

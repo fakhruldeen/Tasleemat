@@ -1,3 +1,4 @@
+<!--
 ---
 type: Form
 token_pointer: /_tokens/forms/en/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log/04_11_02_Training_Plan_and_Log_Template.npy
@@ -8,6 +9,7 @@ form_id: PMO-04.11.02
 language: en
 status: approved
 ---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

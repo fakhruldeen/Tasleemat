@@ -33,18 +33,19 @@ def validate_okf():
                 continue
                 
             # OKF Conformance
-            if not content.startswith('---'):
+            if not content.startswith('---') and not content.startswith('<!--\n---'):
                 print(f"❌ OKF FAIL: {filepath} is missing YAML frontmatter.")
                 okf_errors += 1
                 continue
                 
-            end_idx = content.find('\n---', 3)
+            offset = 5 if content.startswith('<!--\n---') else 0
+            end_idx = content.find('\n---', offset + 3)
             if end_idx == -1:
                 print(f"❌ OKF FAIL: {filepath} has unclosed YAML frontmatter.")
                 okf_errors += 1
                 continue
                 
-            frontmatter = content[3:end_idx]
+            frontmatter = content[offset+3:end_idx]
             match = re.search(r'^type:\s*(.+)$', frontmatter, re.MULTILINE)
             if not match or not match.group(1).strip():
                 print(f"❌ OKF FAIL: {filepath} is missing a valid 'type' field.")
@@ -62,21 +63,15 @@ def validate_okf():
                     
             # Tasleemat Profile Conformance (Only inside forms/)
             if in_forms and file != 'index.md' and file != 'README.md':
-                # Check for language
                 lang_match = re.search(r'^language:\s*(en|ar)$', frontmatter, re.MULTILINE)
                 lang_alt_match = re.search(r'^lang:\s*(en|ar)$', frontmatter, re.MULTILINE)
                 if not lang_match and not lang_alt_match:
-                    # In Tasleemat, path often contains /en/ or /ar/
                     if '/en/' not in filepath and '/ar/' not in filepath:
                         print(f"⚠️ PROFILE WARN: {filepath} lacks explicit language frontmatter.")
                         profile_errors += 1
                 
-                # Check for status
                 status_match = re.search(r'^status:\s*(draft|review|approved)$', frontmatter, re.MULTILINE)
-                if not status_match:
-                    pass # We will warn about this later if it's a template
-                    
-                # If it's a template, it should have a form_id
+                
                 type_val = match.group(1).strip() if match else ""
                 if 'Template' in type_val or 'Form' in type_val:
                     form_id_match = re.search(r'^form_id:\s*(.+)$', frontmatter, re.MULTILINE)
