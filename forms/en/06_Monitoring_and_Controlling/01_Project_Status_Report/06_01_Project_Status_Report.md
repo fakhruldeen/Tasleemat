@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/01_Project_Status
 token_count: 875
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.050911+00:00'
+form_id: PMO-06.01
+status: approved
 ---
 
 # Project Status Report - Generation Prompt

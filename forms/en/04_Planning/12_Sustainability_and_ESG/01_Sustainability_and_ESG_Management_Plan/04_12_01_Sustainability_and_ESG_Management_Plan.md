@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustai
 token_count: 523
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.966060+00:00'
+form_id: PMO-04.12.01
+status: approved
 ---
 
 # SUSTAINABILITY AND ESG MANAGEMENT PLAN - LLM GENERATION GUIDE

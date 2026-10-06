@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/07_Communications/01_Communications
 token_count: 563
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.957453+00:00'
+form_id: PMO-04.07.01
+status: approved
 ---
 
 # Communications Management Plan - Generation Prompt

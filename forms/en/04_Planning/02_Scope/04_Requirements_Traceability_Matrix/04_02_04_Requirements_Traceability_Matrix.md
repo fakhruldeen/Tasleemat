@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/02_Scope/04_Requirements_Traceabili
 token_count: 499
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.942395+00:00'
+form_id: PMO-04.02.04
+status: approved
 ---
 
 # Requirements Traceability Matrix - Generation Prompt

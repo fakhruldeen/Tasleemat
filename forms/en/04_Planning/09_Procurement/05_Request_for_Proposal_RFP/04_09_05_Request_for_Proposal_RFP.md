@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/05_Request_for_Propo
 token_count: 1125
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.004972+00:00'
+form_id: PMO-04.09.05
+status: approved
 ---
 
 # Request for Proposal - LLM Generation Prompt

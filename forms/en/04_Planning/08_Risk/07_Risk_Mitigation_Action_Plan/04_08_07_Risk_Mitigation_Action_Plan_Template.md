@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/04_Planning/08_Risk/07_Risk_Mitigation_Action_P
 token_count: 831
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.987817+00:00'
+form_id: PMO-04.08.07
+language: en
+status: approved
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the Risk Mitigation Action Plan based on

@@ -8,6 +8,8 @@ token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/04_Resource
 token_count: 2848
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.028444+00:00'
+form_id: PMO-00.04
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

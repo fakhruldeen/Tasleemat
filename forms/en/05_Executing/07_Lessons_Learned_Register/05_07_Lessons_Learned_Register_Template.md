@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/05_Executing/07_Lessons_Learned_Register/05_07_
 token_count: 510
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.071924+00:00'
+form_id: PMO-05.07
+language: en
+status: approved
 ---
 
 <!-- LLM INSTRUCTIONS: Populate the Lessons Learned Register based on the project context. Note: This log must output an array of objects matching the flat table headers. -->

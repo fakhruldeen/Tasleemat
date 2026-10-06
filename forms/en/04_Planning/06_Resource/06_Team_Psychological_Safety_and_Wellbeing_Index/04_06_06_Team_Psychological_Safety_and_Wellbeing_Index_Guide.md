@@ -8,6 +8,8 @@ token_pointer: /_tokens/forms/en/04_Planning/06_Resource/06_Team_Psychological_S
 token_count: 772
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.996237+00:00'
+form_id: PMO-04.06.06
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

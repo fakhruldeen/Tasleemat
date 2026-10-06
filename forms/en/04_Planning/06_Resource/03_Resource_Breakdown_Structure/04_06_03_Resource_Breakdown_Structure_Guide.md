@@ -8,6 +8,8 @@ token_pointer: /_tokens/forms/en/04_Planning/06_Resource/03_Resource_Breakdown_S
 token_count: 1096
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.000977+00:00'
+form_id: PMO-04.06.03
+status: approved
 ---
 
 ## Tasleemat Forms Guide

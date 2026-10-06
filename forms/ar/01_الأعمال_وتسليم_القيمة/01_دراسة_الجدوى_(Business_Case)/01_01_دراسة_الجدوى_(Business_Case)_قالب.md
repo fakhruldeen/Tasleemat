@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/ar/01_الأعمال_وتسليم_القيمة/01_
 token_count: 1868
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.896118+00:00'
+form_id: PMO-01.01
+language: ar
+status: approved
 ---
 
 <!-- 

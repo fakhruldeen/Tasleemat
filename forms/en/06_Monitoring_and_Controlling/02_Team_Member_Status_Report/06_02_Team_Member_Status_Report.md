@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/02_Team_Member_St
 token_count: 834
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.043882+00:00'
+form_id: PMO-06.02
+status: approved
 ---
 
 # Team Member Status Report - Generation Prompt

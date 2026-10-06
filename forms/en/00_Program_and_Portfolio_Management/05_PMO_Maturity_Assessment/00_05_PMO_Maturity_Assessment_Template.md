@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/05_PMO_Matu
 token_count: 579
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.041670+00:00'
+form_id: PMO-00.05
+language: en
+status: approved
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

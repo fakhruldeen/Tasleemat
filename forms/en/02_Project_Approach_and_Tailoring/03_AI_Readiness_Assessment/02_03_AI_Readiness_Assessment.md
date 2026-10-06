@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/03_AI_Readine
 token_count: 2418
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.021988+00:00'
+form_id: PMO-02.03
+status: approved
 ---
 
 # AI GOVERNANCE PLAN - LLM GENERATION GUIDE

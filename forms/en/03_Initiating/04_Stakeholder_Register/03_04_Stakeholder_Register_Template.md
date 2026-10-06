@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/03_Initiating/04_Stakeholder_Register/03_04_Sta
 token_count: 876
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.094464+00:00'
+form_id: PMO-03.04
+language: en
+status: approved
 ---
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

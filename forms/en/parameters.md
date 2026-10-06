@@ -1,9 +1,11 @@
 ---
-type: Form
+type: PMO Parameter Reference
 token_pointer: /_tokens/forms/en/parameters.npy
 token_count: 1399
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.934388+00:00'
+language: en
+status: approved
 ---
 
 # Global Project Parameters

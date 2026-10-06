@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/05_Executing/08_Retrospective/05_08_Retrospecti
 token_count: 991
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.062669+00:00'
+form_id: PMO-05.08
+status: approved
 ---
 
 # RETROSPECTIVE - LLM GENERATION GUIDE

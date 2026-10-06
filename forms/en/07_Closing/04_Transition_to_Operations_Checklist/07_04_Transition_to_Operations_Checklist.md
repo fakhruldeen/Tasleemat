@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/07_Closing/04_Transition_to_Operations_Checklis
 token_count: 467
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.084478+00:00'
+form_id: PMO-07.04
+status: approved
 ---
 
 # Transition to Operations Checklist - Generation Prompt

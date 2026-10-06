@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/03_Initiating/03_Assumption_Log/03_03_Assumptio
 token_count: 1020
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.097301+00:00'
+form_id: PMO-03.03
+language: en
+status: approved
 ---
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

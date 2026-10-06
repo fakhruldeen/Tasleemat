@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/05_Executing/07_Lessons_Learned_Register/05_07_
 token_count: 502
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.072772+00:00'
+form_id: PMO-05.07
+status: approved
 ---
 
 # Lessons Learned Register - Generation Prompt

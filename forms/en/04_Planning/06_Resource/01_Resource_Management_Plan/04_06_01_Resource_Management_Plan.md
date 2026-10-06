@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/06_Resource/01_Resource_Management_
 token_count: 615
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.995729+00:00'
+form_id: PMO-04.06.01
+status: approved
 ---
 
 # Resource Management Plan - Generation Prompt

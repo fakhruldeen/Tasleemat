@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/07_Procurement_Au
 token_count: 616
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.046776+00:00'
+form_id: PMO-06.07
+status: approved
 ---
 
 # Procurement Audit - Generation Prompt

@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأو
 token_count: 764
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.746656+00:00'
+form_id: PMO-05.09
+status: approved
 ---
 
 # سجل مكتبة الأوامر - موجّه التوليد

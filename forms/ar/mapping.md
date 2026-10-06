@@ -1,5 +1,5 @@
 ---
-type: Form
+type: PMO Mapping
 layout: default
 title: دليل ربط الوثائق (Document Mapping)
 nav_order: 1
@@ -7,6 +7,8 @@ token_pointer: /_tokens/forms/ar/mapping.npy
 token_count: 22808
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.708563+00:00'
+language: ar
+status: approved
 ---
 
 <div>

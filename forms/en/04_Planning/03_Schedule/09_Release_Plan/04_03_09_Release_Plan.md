@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/09_Release_Plan/04_03_0
 token_count: 863
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.974554+00:00'
+form_id: PMO-04.03.09
+status: approved
 ---
 
 # RELEASE PLAN - LLM GENERATION GUIDE

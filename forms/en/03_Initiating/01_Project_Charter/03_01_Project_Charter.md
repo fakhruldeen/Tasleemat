@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/03_Initiating/01_Project_Charter/03_01_Project_
 token_count: 1027
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.098155+00:00'
+form_id: PMO-03.01
+status: approved
 ---
 
 # Project Charter - Generation Prompt

@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/
 token_count: 1522
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.980506+00:00'
+form_id: PMO-04.03.10
+language: en
+status: approved
 ---
 
 <!--

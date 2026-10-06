@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/06_Data_Priva
 token_count: 3480
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.013450+00:00'
+form_id: PMO-02.06
+status: approved
 ---
 
 # DATA PRIVACY AND ETHICS ASSESSMENT - LLM GENERATION GUIDE

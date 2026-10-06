@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/02_Procurement_Strat
 token_count: 519
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.008057+00:00'
+form_id: PMO-04.09.02
+status: approved
 ---
 
 # Procurement Strategy - Generation Prompt

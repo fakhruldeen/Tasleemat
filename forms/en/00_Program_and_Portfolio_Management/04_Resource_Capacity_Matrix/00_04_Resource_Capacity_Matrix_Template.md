@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/04_Resource
 token_count: 3440
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.030204+00:00'
+form_id: PMO-00.04
+language: en
+status: approved
 ---
 
 <!--  

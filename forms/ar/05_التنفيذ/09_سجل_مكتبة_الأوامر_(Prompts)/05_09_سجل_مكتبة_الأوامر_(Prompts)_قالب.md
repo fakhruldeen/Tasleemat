@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/ar/05_التنفيذ/09_سجل_مكتبة_الأو
 token_count: 1046
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.747223+00:00'
+form_id: PMO-05.09
+language: ar
+status: approved
 ---
 
 <!-- تعليمات النموذج الذكي: املأ مواضع [ أضف التفاصيل... ] استنادًا إلى

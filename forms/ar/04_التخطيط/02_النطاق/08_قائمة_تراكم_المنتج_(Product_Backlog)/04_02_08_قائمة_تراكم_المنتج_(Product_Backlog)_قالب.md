@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/ar/04_التخطيط/02_النطاق/08_قائمة
 token_count: 2059
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.789652+00:00'
+form_id: PMO-04.02.08
+language: ar
+status: approved
 ---
 
 <!-- تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.

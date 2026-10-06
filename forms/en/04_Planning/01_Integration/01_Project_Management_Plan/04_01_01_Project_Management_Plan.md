@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/01_Integration/01_Project_Managemen
 token_count: 927
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.960930+00:00'
+form_id: PMO-04.01.01
+status: approved
 ---
 
 # Project Management Plan - Generation Prompt

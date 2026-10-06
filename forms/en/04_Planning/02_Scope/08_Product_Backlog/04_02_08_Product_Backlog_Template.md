@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/04_Planning/02_Scope/08_Product_Backlog/04_02_0
 token_count: 1695
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.938266+00:00'
+form_id: PMO-04.02.08
+language: en
+status: approved
 ---
 
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

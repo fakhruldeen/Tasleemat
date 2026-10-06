@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/07_Closing/03_Project_or_Phase_Closeout/07_03_P
 token_count: 1437
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.079019+00:00'
+form_id: PMO-07.03
+status: approved
 ---
 
 # PROJECT OR PHASE CLOSEOUT - LLM GENERATION GUIDE

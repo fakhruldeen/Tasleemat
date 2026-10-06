@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/04_Planning/08_Risk/05_Risk_Data_Sheet/04_08_05
 token_count: 653
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.989267+00:00'
+form_id: PMO-04.08.05
+status: approved
 ---
 
 # Risk Data Sheet - Generation Prompt

@@ -8,6 +8,8 @@ token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/07_Duration_Estimating_
 token_count: 819
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.972535+00:00'
+form_id: PMO-04.03.07
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

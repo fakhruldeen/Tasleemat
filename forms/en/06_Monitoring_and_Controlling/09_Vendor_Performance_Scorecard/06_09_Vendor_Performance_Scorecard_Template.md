@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/09_Vendor_Perform
 token_count: 1055
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.044447+00:00'
+form_id: PMO-06.09
+language: en
+status: approved
 ---
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders

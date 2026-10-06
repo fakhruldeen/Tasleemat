@@ -8,6 +8,8 @@ token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/01_Procurement_Manag
 token_count: 792
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.010417+00:00'
+form_id: PMO-04.09.01
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">

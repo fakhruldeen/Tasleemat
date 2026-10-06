@@ -4,6 +4,9 @@ token_pointer: /_tokens/forms/en/05_Executing/06_Team_Performance_Assessment/05_
 token_count: 963
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.069980+00:00'
+form_id: PMO-05.06
+language: en
+status: approved
 ---
 
 <!-- LLM INSTRUCTIONS: Populate the Team Performance Assessment based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.

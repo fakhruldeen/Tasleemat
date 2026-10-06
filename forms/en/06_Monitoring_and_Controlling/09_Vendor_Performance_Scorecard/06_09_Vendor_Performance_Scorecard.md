@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/09_Vendor_Perform
 token_count: 625
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.045422+00:00'
+form_id: PMO-06.09
+status: approved
 ---
 
 # Vendor Performance Scorecard - LLM Generation Prompt

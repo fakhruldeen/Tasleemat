@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/03_Initiating/05_Stakeholder_Analysis/03_05_Sta
 token_count: 392
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.099703+00:00'
+form_id: PMO-03.05
+status: approved
 ---
 
 # Stakeholder Analysis - Generation Prompt

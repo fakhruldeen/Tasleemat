@@ -6,6 +6,8 @@ token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/05_Earned_Value_A
 token_count: 1963
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.057757+00:00'
+form_id: PMO-06.05
+status: approved
 ---
 
 # Earned Value Analysis - Generation Prompt
