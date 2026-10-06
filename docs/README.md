@@ -1,3 +1,4 @@
+<!--
 ---
 type: Overview
 token_pointer: /_tokens/docs/README.npy
@@ -5,6 +6,7 @@ token_count: 1243
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.037976+00:00'
 ---
+-->
 
 <p align="center">
   <img src="img/logo.png" alt="Tasleemat Logo" width="340" />

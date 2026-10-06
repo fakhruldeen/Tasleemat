@@ -1,3 +1,6 @@
+---
+type: Guide
+---
 # Tasleemat v2.0.2
 
 ### 🛠️ Bug Fixes & Refinements
