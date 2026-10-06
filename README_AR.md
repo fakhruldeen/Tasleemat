@@ -16,6 +16,8 @@ created_at: '2026-10-06T16:05:28.024779+00:00'
 ### *المكتبة المؤسسية الموحدة لنماذج إدارة المشاريع ثنائية اللغة (عربي / إنجليزي) والأتمتة بالذكاء الاصطناعي*
 #### *متوافقة بالكامل مع معايير معهد إدارة المشاريع الدليل المعرفي PMBOK® (الإصدارات السادس والسابع والجاهزية للإصدار الثامن)*
 
+[![PyPI version](https://badge.fury.io/py/tasleemat.svg?style=for-the-badge)](https://pypi.org/project/tasleemat/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg?style=for-the-badge)](https://doi.org/10.5281/zenodo.23193523)
 [![الترخيص: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![معايير PMI](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc?style=for-the-badge)](docs/LEXICON.md)
 [![النماذج](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-success?style=for-the-badge)](forms/)
@@ -131,15 +133,18 @@ flowchart LR
 
 ## ⚡ خطوات البدء السريع: 4 طرق للاستخدام
 
-### 1. تأسيس مساحة عمل المشروع عبر سطر الأوامر *(الأسرع)*
-توليد مجلد مشروع مخصص بحسب الحجم والمنهجية في أقل من ثانيتين:
+### 1. الأداة التفاعلية لتأسيس مساحة عمل المشروع *(الأسرع)*
+نظام تسليمات متاح الآن رسمياً عبر مستودع PyPI! يمكنك تثبيته عالمياً للوصول إلى أداة سطر الأوامر:
 ```bash
-# تأسيس مشروع جديد (معالج تفاعلي أو معاملات)
-python3 tools/tasleemat_cli.py init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
+# تثبيت حزمة تسليمات
+pip install tasleemat
+
+# تأسيس مشروع جديد (معالج تفاعلي أو معاملات سريعة)
+tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
 
 # البحث في النماذج بالكلمات المفتاحية
-python3 tools/tasleemat_cli.py search "مخاطر" --lang ar
-python3 tools/tasleemat_cli.py search "ميثاق" --lang ar
+tasleemat search "مخاطر" --lang ar
+tasleemat search "ميثاق" --lang ar
 ```
 
 ### 2. الاستخدام اليدوي المباشر
@@ -185,7 +190,7 @@ python3 tools/tasleemat_cli.py search "ميثاق" --lang ar
 python3 -m unittest discover -s tests -v
 
 # أو تشغيل الفحص مباشرة عبر واجهة تسليمات للأوامر (CLI)
-python3 tools/tasleemat_cli.py test -v
+tasleemat test -v
 ```
 
 | وحدة الاختبار | نطاق الفحص والتحقق الحوكمي |

@@ -18,6 +18,8 @@ created_at: '2026-10-06T16:05:28.026269+00:00'
 ### *The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Automation Library*
 #### *Fully Aligned with PMI PMBOK® Guide 6th, 7th & 8th Edition Ready Standards*
 
+[![PyPI version](https://badge.fury.io/py/tasleemat.svg?style=for-the-badge)](https://pypi.org/project/tasleemat/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg?style=for-the-badge)](https://doi.org/10.5281/zenodo.23193523)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc?style=for-the-badge)](docs/LEXICON.md)
 [![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-success?style=for-the-badge)](forms/)
@@ -191,7 +193,7 @@ Tasleemat features an enterprise-grade automated testing suite (`tests/`) coveri
 python3 -m unittest discover -s tests -v
 
 # Or execute tests directly via the Tasleemat CLI
-python3 tools/tasleemat_cli.py test -v
+tasleemat test -v
 ```
 
 | Test Module | Coverage & Verification Scope |
