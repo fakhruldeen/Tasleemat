@@ -42,19 +42,23 @@ flowchart LR
 
 ---
 
-## 🚀 1. أداة سطر الأوامر الرسمية (`tools/tasleemat_cli.py`)
+## 🚀 1. أداة سطر الأوامر الرسمية (`tasleemat`)
 
-يوفر المستودع أداة سطر أوامر مستقلة ومبنية بلغة بايثون دون الحاجة إلى أي مكتبات خارجية معقدة؛ لتسهيل تأسيس مساحات عمل المشاريع واستكشاف النماذج.
+يوفر نظام "تسليمات" حزمة بايثون (SDK) وأداة سطر أوامر رسمية لتسهيل تأسيس مساحات عمل المشاريع واستكشاف النماذج. يمكنك تثبيتها عالمياً عبر PyPI:
+
+```bash
+pip install tasleemat
+```
 
 ### أ. تأسيس مساحة عمل مخصصة لمشروع جديد (`init`)
 توليد مجلد مشروع متكامل يضم فقط النماذج الإلزامية وفقاً لمستوى الحوكمة (Tier 1 أو 2 أو 3) وحزمة المنهجية المختارة:
 
 ```bash
 # وضع المعالج التفاعلي (يسألك خطوة بخطوة في الطرفية)
-python3 tools/tasleemat_cli.py init
+tasleemat init
 
 # وضع المعاملات السريعة: المستوى 2 (المتوسط) مع حزمة أجايل باللغة العربية
-python3 tools/tasleemat_cli.py init \
+tasleemat init \
   --tier 2 \
   --pack agile \
   --lang ar \
@@ -65,7 +69,7 @@ python3 tools/tasleemat_cli.py init \
   --out ./my_new_project
 
 # مشروع استراتيجي من المستوى 1 باللغتين العربية والإنجليزية
-python3 tools/tasleemat_cli.py init \
+tasleemat init \
   --tier 1 \
   --pack hybrid \
   --lang both \
@@ -89,15 +93,15 @@ python3 tools/tasleemat_cli.py init \
 
 ```bash
 # البحث باللغة العربية
-python3 tools/tasleemat_cli.py search "مخاطر" --lang ar
-python3 tools/tasleemat_cli.py search "ميثاق" --lang ar
-python3 tools/tasleemat_cli.py search "ذكاء اصطناعي" --lang ar
-python3 tools/tasleemat_cli.py search "سبرنت" --lang ar
+tasleemat search "مخاطر" --lang ar
+tasleemat search "ميثاق" --lang ar
+tasleemat search "ذكاء اصطناعي" --lang ar
+tasleemat search "سبرنت" --lang ar
 
 # البحث باللغة الإنجليزية
-python3 tools/tasleemat_cli.py search "Risk" --lang en
-python3 tools/tasleemat_cli.py search "Charter" --lang en
-python3 tools/tasleemat_cli.py search "Model Card" --lang en
+tasleemat search "Risk" --lang en
+tasleemat search "Charter" --lang en
+tasleemat search "Model Card" --lang en
 ```
 
 ---
@@ -106,8 +110,8 @@ python3 tools/tasleemat_cli.py search "Model Card" --lang en
 عرض قائمة النماذج الكاملة مع رموزها ومجلداتها:
 
 ```bash
-python3 tools/tasleemat_cli.py list --lang ar
-python3 tools/tasleemat_cli.py list --lang en
+tasleemat list --lang ar
+tasleemat list --lang en
 ```
 
 ### د. تشغيل حزمة الفحوصات والاختبارات الآلية (`test`)
@@ -115,10 +119,10 @@ python3 tools/tasleemat_cli.py list --lang en
 
 ```bash
 # تشغيل حزمة الاختبارات مع الملخص
-python3 tools/tasleemat_cli.py test
+tasleemat test
 
 # تشغيل الاختبارات بالوضع المفصل
-python3 tools/tasleemat_cli.py test -v
+tasleemat test -v
 
 # أو التشغيل عبر أداة unittest القياسية في بايثون
 python3 -m unittest discover -s tests -v

@@ -42,19 +42,23 @@ flowchart LR
 
 ---
 
-## 🚀 1. Official Tasleemat CLI Tool (`tools/tasleemat_cli.py`)
+## 🚀 1. Official Tasleemat CLI Tool (`tasleemat`)
 
-The repository includes a standalone, zero-dependency Python CLI tool designed to streamline project initialization and form exploration.
+Tasleemat provides an official Python SDK and CLI tool designed to streamline project initialization and form exploration. You can install it globally via PyPI:
+
+```bash
+pip install tasleemat
+```
 
 ### A. Scaffolding a New Tailored Project (`init`)
 Generate a complete, ready-to-use project workspace tailored to your exact governance tier and methodology pack:
 
 ```bash
 # Interactive Wizard Mode (prompts you step-by-step)
-python3 tools/tasleemat_cli.py init
+tasleemat init
 
 # Fast-Track Flag Mode: Tier 2 (Standard) with Agile Pack in Arabic
-python3 tools/tasleemat_cli.py init \
+tasleemat init \
   --tier 2 \
   --pack agile \
   --lang ar \
@@ -65,7 +69,7 @@ python3 tools/tasleemat_cli.py init \
   --out ./my_new_project
 
 # Enterprise Tier 1 Project in both English and Arabic
-python3 tools/tasleemat_cli.py init \
+tasleemat init \
   --tier 1 \
   --pack hybrid \
   --lang both \
@@ -89,14 +93,14 @@ Search across all 102 forms by keyword in Arabic or English:
 
 ```bash
 # Search in English
-python3 tools/tasleemat_cli.py search "Risk" --lang en
-python3 tools/tasleemat_cli.py search "Sprint" --lang en
-python3 tools/tasleemat_cli.py search "Model Card" --lang en
+tasleemat search "Risk" --lang en
+tasleemat search "Sprint" --lang en
+tasleemat search "Model Card" --lang en
 
 # Search in Arabic
-python3 tools/tasleemat_cli.py search "مخاطر" --lang ar
-python3 tools/tasleemat_cli.py search "ميثاق" --lang ar
-python3 tools/tasleemat_cli.py search "ذكاء اصطناعي" --lang ar
+tasleemat search "مخاطر" --lang ar
+tasleemat search "ميثاق" --lang ar
+tasleemat search "ذكاء اصطناعي" --lang ar
 ```
 
 ---
@@ -105,8 +109,8 @@ python3 tools/tasleemat_cli.py search "ذكاء اصطناعي" --lang ar
 Inspect the complete 102-form catalog with IDs and folder mappings:
 
 ```bash
-python3 tools/tasleemat_cli.py list --lang en
-python3 tools/tasleemat_cli.py list --lang ar
+tasleemat list --lang en
+tasleemat list --lang ar
 ```
 
 ### D. Running the Automated Test Suite (`test`)
@@ -114,10 +118,10 @@ Run the entire 28-test verification suite directly from the CLI:
 
 ```bash
 # Run tests with summary
-python3 tools/tasleemat_cli.py test
+tasleemat test
 
 # Run tests with verbose output
-python3 tools/tasleemat_cli.py test -v
+tasleemat test -v
 
 # Or run via standard Python unittest
 python3 -m unittest discover -s tests -v

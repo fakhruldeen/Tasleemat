@@ -134,14 +134,17 @@ flowchart LR
 ## ⚡ Quick Start: 4 Ways to Use Tasleemat
 
 ### 1. Interactive CLI Project Scaffolder *(Fastest)*
-Initialize a complete project workspace tailored to your project size in under 2 seconds:
+Tasleemat is now officially available on PyPI! Install the SDK globally to access the interactive CLI scaffolding tool:
 ```bash
+# Install the Tasleemat SDK
+pip install tasleemat
+
 # Scaffold a new project (interactive wizard or flags)
-python3 tools/tasleemat_cli.py init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
+tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
 
 # Search forms by keyword in Arabic or English
-python3 tools/tasleemat_cli.py search "Risk" --lang en
-python3 tools/tasleemat_cli.py search "ميثاق" --lang ar
+tasleemat search "Risk" --lang en
+tasleemat search "ميثاق" --lang ar
 ```
 
 ### 2. Manual Project Management Workflow
