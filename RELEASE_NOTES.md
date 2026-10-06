@@ -1,19 +1,5 @@
----
-type: Guide
----
-# Tasleemat v2.0.0: The AI-Native OKF Framework
+# Tasleemat v2.0.2
 
-We are thrilled to announce **Tasleemat v2.0.0**, marking a massive architectural leap forward. With this release, Tasleemat transforms from a standard PMO documentation repository into a globally compliant, AI-native **Open Knowledge Format (OKF) v0.2** framework.
-
-### 🌟 Major Highlights
-- **OKF v0.2 Conformance**: Over 600 PMO templates and guides across all 5 project phases have been fully converted to the Open Knowledge Format, embedding strict machine-readable YAML frontmatter into every artifact.
-- **LLM Pre-tokenization**: Introduced a cutting-edge AI optimization. All markdown documents are now pre-tokenized (using the `tiktoken/o200k_base` vocabulary), with exact binary arrays hosted in `_tokens/`. AI Agents reading this framework will experience up to 30% faster Time-To-First-Token (TTFT) by bypassing tokenization via the `token_pointer` protocol.
-- **Bilingual Identity Mapping**: English and Arabic templates are now strictly mapped to one another using a unique deterministic `form_id` (e.g., `PMO-06.05`), ensuring LLMs never hallucinate translation boundaries.
-- **Attested Computations (EVA)**: Core analytical templates (like Earned Value Analysis) are now protected by **Attested Computation Contracts**, featuring a deterministic Python execution engine that guarantees zero mathematical hallucinations.
-- **Agent Navigation Guardrails**: Shipped `docs/AGENT_NAVIGATION.md` and an automated evaluation suite to guide RAG systems and autonomous agents on how to strictly parse status, dependencies, and translations.
-
-### 🛠️ Tooling & Infrastructure
-- Dual-validator support: Coexistence of `validate_okf_markdown.py` (Google OKF v0.2 + Local Profile) and `validate_frictionless.py` (JSON Data Packages).
-- Frictionless GitHub Actions integration for continuous quality assurance.
-
-*This release makes Tasleemat the definitive, interoperable, and agent-ready project management framework.*
+### 🛠️ Bug Fixes & Refinements
+- **Hidden Template Frontmatter**: Wrapped the OKF YAML frontmatter in `<!-- -->` HTML comments across all `_Template.md`, `_قالب.md`, and `README.md` files. This ensures that browsers (e.g., GitHub Web UI) do not render the machine-readable metadata tables directly to human end-users.
+- **Audit Tooling Patch**: Re-engineered `tools/audit_forms.py` to correctly strip the content *inside* HTML comments prior to evaluating English/Arabic character parity. This resolves the CI/CD pipeline failure where the English OKF metadata inside Arabic templates was incorrectly flagged as "untranslated Latin".

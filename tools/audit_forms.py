@@ -152,7 +152,7 @@ def rel(form: dict) -> str:
 # --------------------------------------------------------------------------
 
 def strip_comments(text: str) -> str:
-    return COMMENT_OPEN.sub("", COMMENT_CLOSE.sub("", text))
+    return re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
 
 
 def heading_titles(text: str) -> list[str]:
