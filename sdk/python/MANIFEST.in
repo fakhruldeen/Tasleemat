@@ -1,0 +1,6 @@
+recursive-include tasleemat/forms *
+recursive-include tasleemat/docs *
+recursive-include tasleemat/_tokens *
+include README.md
+include RELEASE_NOTES.md
+include LICENSE
