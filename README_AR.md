@@ -153,23 +153,36 @@ tasleemat search "ميثاق" --lang ar
 3. انسخ قالب `03_01_ميثاق_المشروع_قالب.md` إلى محرر النصوص لديك أو صدّره مباشرة إلى PDF عبر أداة `python3 tools/export_deliverables.py`.
 
 ### 3. التوليد التلقائي بالذكاء الاصطناعي (Gemini, OpenAI, Claude, Ollama)
-توليد واستيفاء نماذج المشروع تلقائياً في ثوانٍ معدودة باستخدام حسابك ومفتاح الربط البرمجي للذكاء الاصطناعي:
+استيفاء مخرجات المشروع وتوليد النماذج تلقائياً في ثوانٍ معدودة باستخدام حسابك ومفتاح الربط البرمجي للذكاء الاصطناعي:
 
 ```bash
-# ضبط مفتاح الربط البرمجي لنموذج الذكاء الاصطناعي
-tasleemat config set --provider gemini --key "YOUR_API_KEY"
+# 1. ضبط المفتاح البرمجي والمزود الافتراضي (يدعم: gemini, openai, anthropic, ollama, mock)
+tasleemat config set --provider gemini --model gemini-2.5-flash --key "YOUR_GEMINI_API_KEY"
 
-# استيفاء ميثاق المشروع تلقائياً من ملاحظات الاجتماع
-tasleemat generate --form PMO-03.01 --notes ./notes.txt --out ./Project_Charter.md
+# 2. استيفاء ميثاق المشروع (PMO-03.01) تلقائياً من ملاحظات الاجتماع
+tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./03_01_Project_Charter.md
+
+# 3. تشغيل تجربة توليد وهمية (Mock) دون استهلاك رصيد المفتاح البرمجي
+tasleemat generate --form PMO-03.01 --notes "مشروع التحول الرقمي السحابي" --mock
 ```
 
-أو يمكنك توجيه النماذج يدوياً عبر [`forms/ar/parameters.md`](forms/ar/parameters.md) وتغذية النماذج الذكية (ChatGPT, Claude, Gemini):
-   ```text
-   أنت مدير مكتب إدارة مشاريع خبير. يرجى تعبئة هذا النموذج بناءً على متغيرات المشروع 
-   والملاحظات التالية: [أدخل الملاحظات هنا].
-   التزم بدقة بالإرشادات الواردة في كل حقل واجعل المخرج بصيغة Markdown مطابقة لهيكل القالب.
-   ```
-4. ستحصل على وثيقة مشروع متكاملة ومهنية في ثوانٍ معدودة!
+#### الاستخدام البرمجي في حزمة بايثون (`tasleemat.ai`)
+يمكنك أيضاً استدعاء محرك الذكاء الاصطناعي مباشرة من خلال سكريبت بايثون أو خطوط أنابيب البيانات:
+
+```python
+from tasleemat.ai import AIClient
+
+# تهيئة العميل (يتم استخراج المفتاح التلقائي من الإعدادات أو متغيرات البيئة)
+client = AIClient(provider="gemini", model="gemini-2.5-flash")
+
+# توليد واستيفاء نموذج حوكمي
+deliverable_markdown = client.generate(
+    prompt="توليد ميثاق مشروع لمشروع تحول رقمي بميزانية 2 مليون ريال",
+    system_instruction="أنت مدير مكتب إدارة مشاريع خبير. التزم بالمعايير الدولية."
+)
+
+print(deliverable_markdown)
+```
 
 ### 4. المعالجة البرمجية وتحليل البيانات
 - يمكن استيراد ملف [`docs/LEXICON.json`](docs/LEXICON.json) أو ملفات `*.csv` مباشرة في بايثون (`pandas`) أو أدوات ذكاء الأعمال مثل PowerBI لمتابعة حالة تسليم الوثائق ونضج المحفظة.

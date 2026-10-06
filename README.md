@@ -155,23 +155,37 @@ tasleemat search "ميثاق" --lang ar
 3. Copy `03_01_Project_Charter_Template.md` into your editor (VS Code, Obsidian, Notion, or Confluence) or export directly to PDF using `python3 tools/export_deliverables.py`.
 
 ### 3. AI-Powered Generation Workflow (Gemini, OpenAI, Claude, Ollama)
-Generate complete, compliant PMO documents in seconds automatically using your LLM account or API key:
+Automatically auto-fill publication-ready PMO deliverables in seconds using your LLM account or API key:
 
 ```bash
-# Set your LLM API Key (or export GEMINI_API_KEY / OPENAI_API_KEY)
-tasleemat config set --provider gemini --key "YOUR_API_KEY"
+# 1. Configure default LLM API key & provider
+tasleemat config set --provider gemini --model gemini-2.5-flash --key "YOUR_GEMINI_API_KEY"
+# Or OpenAI: tasleemat config set --provider openai --model gpt-4o --key "YOUR_OPENAI_KEY"
 
-# Auto-fill Project Charter (PMO-03.01) from raw meeting notes
-tasleemat generate --form PMO-03.01 --notes ./notes.txt --out ./Project_Charter.md
+# 2. Auto-fill Project Charter (PMO-03.01) from raw meeting notes
+tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./03_01_Project_Charter.md
+
+# 3. Test prompt generation offline via Mock engine
+tasleemat generate --form PMO-03.01 --notes "Enterprise Cloud Migration" --mock
 ```
 
-Alternatively, you can manually feed [`forms/en/parameters.md`](forms/en/parameters.md) and artifact prompts into web LLMs (ChatGPT, Claude, Gemini):
-   ```text
-   You are an expert PMO Lead. Fill out this artifact based on the project parameters 
-   and the following rough notes: [Insert notes here]. 
-   Adhere strictly to the field guidance and output the result in Markdown matching the template structure.
-   ```
-4. Receive a perfectly structured, publication-ready project document!
+#### Programmatic Python SDK (`tasleemat.ai`)
+You can also call the LLM engine directly from your custom Python scripts or enterprise data pipelines:
+
+```python
+from tasleemat.ai import AIClient
+
+# Initialize client (resolves API key from config or env vars)
+client = AIClient(provider="gemini", model="gemini-2.5-flash")
+
+# Auto-fill a PMO deliverable
+deliverable_markdown = client.generate(
+    prompt="Generate Project Charter for $2M E-Commerce Migration",
+    system_instruction="You are a PMO Director. Adhere strictly to PMI standards."
+)
+
+print(deliverable_markdown)
+```
 
 ### 4. Programmatic & Data Engineering Workflow
 - Ingest [`docs/LEXICON.json`](docs/LEXICON.json) or individual `*.json` / `*.csv` files directly into Python (`pandas`), PowerBI, or internal web dashboards to track deliverable completion across enterprise portfolios.
