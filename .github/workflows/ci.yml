@@ -37,9 +37,13 @@ jobs:
         run: |
           python3 tools/parity.py forms/en forms/ar
 
+      - name: Run Google Open Knowledge Format (OKF) v0.2 Validation
+        run: |
+          python3 tools/validate_okf_markdown.py
+
       - name: Run Open Knowledge Foundation (OKF) Frictionless Validation
         run: |
-          python3 tools/validate_okf.py
+          python3 tools/validate_frictionless.py
 
       - name: Run Complete Automated Test Suite (28 Unit & Integration Tests)
         run: |
