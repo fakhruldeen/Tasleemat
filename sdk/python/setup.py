@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tasleemat",
-    version="2.0.3",
+    version="2.1.0",
     description="AI-Native Project Management OKF Framework",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
