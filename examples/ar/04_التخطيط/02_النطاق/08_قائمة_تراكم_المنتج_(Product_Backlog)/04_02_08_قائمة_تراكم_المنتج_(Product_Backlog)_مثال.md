@@ -1,3 +1,7 @@
+---
+type: Example
+---
+
 <div>
 
 # قائمة تراكم المنتج (Product Backlog) (نموذج تطبيقي معبأ)

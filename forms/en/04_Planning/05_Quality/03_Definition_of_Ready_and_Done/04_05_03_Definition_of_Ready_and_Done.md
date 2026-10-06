@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: Definition of Ready and Done Standard (Instructions)
 ---

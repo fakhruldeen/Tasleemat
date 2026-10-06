@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: RISK MITIGATION ACTION PLAN (Instructions)
 ---

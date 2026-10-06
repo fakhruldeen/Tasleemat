@@ -1,3 +1,7 @@
+---
+type: Overview
+---
+
 <p align="center">
   <img src="img/logo.png" alt="Tasleemat Logo" width="340" />
 </p>
@@ -67,8 +71,13 @@ flowchart TD
 
 ## 👤 Persona-Based Reading Pathways
 
-* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) $ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) $ightarrow$ [`02_usage_guide.md`](en/02_usage_guide.md).
-* **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) $ightarrow$ [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) $ightarrow$ [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
-* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) $ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md).
+* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) $
+ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) $
+ightarrow$ [`02_usage_guide.md`](en/02_usage_guide.md).
+* **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) $
+ightarrow$ [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) $
+ightarrow$ [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
+* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) $
+ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md).
 * **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md).
 * **For DevOps & Tool Admins:** Explore [`11_tools_and_automation.md`](en/11_tools_and_automation.md).

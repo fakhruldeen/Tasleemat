@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Context and Definition: A formal strategic governance document connecting enterprise Objectives and Key Results (OKRs) directly with project deliverables to enable continuous value tracking and dynamic portfolio alignment.

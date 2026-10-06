@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Populate the Change Log based on the project context. Note: This log must output an array of objects matching the flat table headers. -->
 
 <h3 align="right">{{Company_Name}}</h3>

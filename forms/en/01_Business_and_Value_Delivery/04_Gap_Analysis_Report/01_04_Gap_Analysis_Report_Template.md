@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Context and Definition: A formal pre-project and value delivery document systematically comparing an organization's Current State (As-Is) with its Desired Target State (To-Be) to define capability discrepancies, risks, and bridge actions.

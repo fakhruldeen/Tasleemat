@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the Resource Breakdown Structure based on the
 project context.
 

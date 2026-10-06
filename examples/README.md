@@ -1,3 +1,7 @@
+---
+type: Overview
+---
+
 # 🏆 Tasleemat Gold-Standard Reference Examples
 **Directory:** `examples/`  
 **Coverage:** 102 Bilingual Forms (204 Completed Reference Artifacts)  

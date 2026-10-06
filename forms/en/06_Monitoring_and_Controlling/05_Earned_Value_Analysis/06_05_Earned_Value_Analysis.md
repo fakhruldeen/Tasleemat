@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: Earned Value Analysis (Instructions)
 ---

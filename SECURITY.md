@@ -1,3 +1,7 @@
+---
+type: Document
+---
+
 # 🔒 Security Policy
 
 ## Supported Versions

@@ -1,3 +1,7 @@
+---
+type: Guide
+---
+
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Bilingual Resource:</strong> Master Lexicon & Deliverables Catalog | المعجم الموحد للمصطلحات</span>
   <div class="lang-switch-actions">

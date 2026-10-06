@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: ar
 layout: default
 title: إدارة البرامج والمحافظ

@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Context and Definition: A formal project planning baseline defining measurable environmental, social, and governance (ESG) targets, carbon reduction strategies, circular resource utilization, and ethical compliance standards.

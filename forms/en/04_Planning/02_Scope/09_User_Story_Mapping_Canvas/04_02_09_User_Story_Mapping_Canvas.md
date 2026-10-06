@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: USER STORY MAPPING CANVAS (Instructions)
 ---

@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 The release plan is similar to a roadmap. It functions as a high-level schedule that indicates which release each requirement or user story will be assigned to. The elements in a particular release can be updated based on the relative priority of the requirements in the backlog and the availability of resources needed to work on the specific requirements.

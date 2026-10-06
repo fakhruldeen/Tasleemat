@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Context and Definition: A formal human-centered leadership diagnostic tool measuring team psychological safety, cognitive load distribution, and collaborative well-being to sustain high performance.

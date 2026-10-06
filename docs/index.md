@@ -1,3 +1,7 @@
+---
+type: Guide
+---
+
 <div class="hero-wrapper">
   <div class="hero-tag">
     <span class="pulse-dot"></span> Enterprise PMO Operating System 2.0 • PMI PMBOK® 6/7/8 & NIST AI RMF

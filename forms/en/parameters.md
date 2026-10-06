@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 # Global Project Parameters
 
 This file holds all the global variables and placeholders needed across the project forms. When using an LLM to generate or fill out forms, provide these parameters so the LLM can accurately populate the templates.

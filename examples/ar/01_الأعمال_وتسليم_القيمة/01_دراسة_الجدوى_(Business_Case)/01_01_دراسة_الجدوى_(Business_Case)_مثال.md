@@ -1,3 +1,7 @@
+---
+type: Example
+---
+
 <div>
 
 # دراسة الجدوى (Business Case) (نموذج تطبيقي معبأ)

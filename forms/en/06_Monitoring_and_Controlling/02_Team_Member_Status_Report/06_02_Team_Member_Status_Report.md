@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: Team Member Status Report (Instructions)
 ---

@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 layout: default
 title: Definition of Ready and Done Standard

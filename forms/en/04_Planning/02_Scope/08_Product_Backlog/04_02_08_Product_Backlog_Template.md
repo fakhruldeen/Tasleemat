@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 The product backlog is developed at the very beginning of a project, often in conjunction with the product vision. It keeps track of all the requirements along with their priority and the release they will be incorporated into.

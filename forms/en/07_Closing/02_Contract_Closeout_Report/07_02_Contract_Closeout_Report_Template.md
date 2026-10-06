@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Contract closeout involves documenting vendor performance so that the information can be used

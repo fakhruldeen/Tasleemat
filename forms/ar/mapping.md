@@ -1,4 +1,5 @@
 ---
+type: Form
 layout: default
 title: دليل ربط الوثائق (Document Mapping)
 nav_order: 1

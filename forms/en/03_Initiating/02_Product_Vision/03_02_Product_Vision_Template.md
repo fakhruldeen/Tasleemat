@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 The product vision provides the future view of the product being developed. The product vision is aspirational, yet achievable and realistic. It is developed at the very beginning of a project, and is often an input to the business case.

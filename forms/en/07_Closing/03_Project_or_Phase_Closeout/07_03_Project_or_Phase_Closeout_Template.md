@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Project closeout involves documenting the final project performance as compared to the project objectives. The objectives from the project charter are reviewed and evidence of meeting them is documented. If an objective was not met, or if there is a variance, that is documented as well. In addition, information from the procurement closeout is documented.

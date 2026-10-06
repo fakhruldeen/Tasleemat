@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 # 🚀 Tasleemat Strategic Roadmap & Future PMO Director Improvements
 # خارطة الطريق الاستراتيجية ومقترحات التطوير المستقبلية (منظور مدير PMO)
 

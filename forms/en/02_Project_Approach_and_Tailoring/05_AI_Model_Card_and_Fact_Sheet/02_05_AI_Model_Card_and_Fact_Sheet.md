@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: AI MODEL CARD AND FACT SHEET (Instructions)
 ---

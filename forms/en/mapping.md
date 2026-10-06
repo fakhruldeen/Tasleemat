@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 # PMO Lifecycle Artifacts Mapping
 
 This document is the ultimate index of all PMO artifacts, templates, and forms currently available in the repository. They are organized sequentially by the project lifecycle and assigned a unique Document Reference ID.

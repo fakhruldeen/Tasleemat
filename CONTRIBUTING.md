@@ -1,3 +1,7 @@
+---
+type: Document
+---
+
 # 🤝 Contributing to Tasleemat PMO Operating System
 
 Thank you for your interest in contributing to **Tasleemat (تسليمات)**! As an enterprise-grade, open-source project management standard, we maintain rigorous quality and parity standards to ensure trust and consistency for practitioners worldwide.

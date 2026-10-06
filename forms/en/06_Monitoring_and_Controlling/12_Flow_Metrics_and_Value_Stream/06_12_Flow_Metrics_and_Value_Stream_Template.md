@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Context and Definition: A formal modern delivery telemetry instrument tracking Lean/Agile flow metrics (Lead Time, Cycle Time, WIP limits, Flow Efficiency, and Throughput) across product value streams.

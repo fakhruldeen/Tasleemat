@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 # Open Knowledge Foundation (OKF) Compliance & Repository Improvement Plan
 
 ## 1. Executive Summary

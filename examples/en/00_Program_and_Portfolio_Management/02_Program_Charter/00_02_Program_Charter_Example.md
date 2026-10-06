@@ -1,3 +1,7 @@
+---
+type: Example
+---
+
 # Program Charter (Reference Example)
 > 🏆 **Gold Standard Reference Example:** This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (`PMO-00.02`). All company names, project references, and figures are realistic fictional simulations.
 

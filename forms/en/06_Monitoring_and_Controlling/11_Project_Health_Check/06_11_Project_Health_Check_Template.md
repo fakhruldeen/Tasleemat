@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Context and Definition: A structured diagnostic assurance instrument designed to perform an objective evaluation of project vitality across seven core dimensions to safeguard successful delivery.

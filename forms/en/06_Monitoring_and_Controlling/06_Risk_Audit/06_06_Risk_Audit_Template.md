@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Risk audits evaluate the effectiveness of risk identification, risk responses, and the risk management process as a whole. Information reviewed includes risk event audits, risk response audits, risk management process audits, good practices, and areas for improvement.

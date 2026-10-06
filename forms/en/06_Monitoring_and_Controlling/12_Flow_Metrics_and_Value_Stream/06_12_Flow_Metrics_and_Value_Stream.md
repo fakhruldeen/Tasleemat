@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: FLOW METRICS AND VALUE STREAM DASHBOARD (Instructions)
 ---

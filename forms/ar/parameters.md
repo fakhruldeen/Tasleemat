@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: ar
 ---
 <div style="font-family: Arial, sans-serif; line-height: 1.6;">

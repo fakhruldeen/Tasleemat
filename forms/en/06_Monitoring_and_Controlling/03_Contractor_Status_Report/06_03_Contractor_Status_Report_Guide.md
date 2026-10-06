@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 layout: default
 title: Contractor Status Report

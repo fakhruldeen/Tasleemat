@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 The contractor status report is completed by the contractor and submitted to the project manager at pre-defined intervals throughout the project. It tracks status for the current reporting period, provides forecasts for future reporting periods, and gathers information on new risks, disputes, and issues.

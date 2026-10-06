@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 The retrospective is an activity that is performed at the end of every sprint. The information is usually recorded on sticky notes or recorded in software. A common retrospective approach is called a "starfish," which collects Start, Stop, Keep, More, and Less.

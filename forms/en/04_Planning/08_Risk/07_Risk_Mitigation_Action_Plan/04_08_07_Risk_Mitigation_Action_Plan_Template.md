@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the Risk Mitigation Action Plan based on
 the project context.
 

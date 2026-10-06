@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Context and Definition: A formal strategic evaluation instrument measuring the capability, governance rigor, delivery consistency, and value enablement of a Project Management Office across five maturity levels.

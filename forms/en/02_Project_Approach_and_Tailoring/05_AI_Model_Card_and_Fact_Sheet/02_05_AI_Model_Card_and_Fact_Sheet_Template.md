@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

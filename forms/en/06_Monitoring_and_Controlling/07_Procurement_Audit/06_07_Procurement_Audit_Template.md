@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 The procurement audit is the review of contracts and contracting processes for completeness, accuracy, and effectiveness. Information recorded in the audit can be used to improve the process and results of current and future contracts.

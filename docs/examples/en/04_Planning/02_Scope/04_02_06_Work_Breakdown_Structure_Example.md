@@ -1,3 +1,7 @@
+---
+type: Guide
+---
+
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">

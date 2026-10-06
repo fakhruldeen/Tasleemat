@@ -1,3 +1,7 @@
+---
+type: Form
+---
+
 <!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 Lessons learned are compiled throughout the project or at specific intervals, such as at the end of a life cycle phase. Individual lessons are recorded in the lessons learned register. This summary compiles and organizes what the project team did that worked very well and should be passed along to other project teams, and identifies what should be improved for future project work.

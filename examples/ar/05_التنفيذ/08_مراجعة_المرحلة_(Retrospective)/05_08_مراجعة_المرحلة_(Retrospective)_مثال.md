@@ -1,3 +1,7 @@
+---
+type: Example
+---
+
 <div>
 
 # مراجعة المرحلة (Retrospective) (نموذج تطبيقي معبأ)

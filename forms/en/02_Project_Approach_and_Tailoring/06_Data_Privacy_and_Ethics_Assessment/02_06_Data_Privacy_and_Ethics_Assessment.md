@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: DATA PRIVACY AND ETHICS ASSESSMENT (Instructions)
 ---

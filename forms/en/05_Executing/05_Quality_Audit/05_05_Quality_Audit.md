@@ -1,4 +1,5 @@
 ---
+type: Form
 lang: en
 Form: Quality Audit Report (Instructions)
 ---

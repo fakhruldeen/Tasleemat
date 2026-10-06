@@ -1,3 +1,7 @@
+---
+type: Document
+---
+
 # 📜 Changelog
 
 All notable changes to the **Tasleemat (تسليمات)** PMO Operating System will be documented in this file.
