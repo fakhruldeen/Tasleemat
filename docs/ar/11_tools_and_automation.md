@@ -114,8 +114,41 @@ tasleemat list --lang ar
 tasleemat list --lang en
 ```
 
-### د. تشغيل حزمة الفحوصات والاختبارات الآلية (`test`)
-تشغيل حزمة الفحص الشاملة المكونة من 28 فحصاً برمجياً:
+### د. إدارة إعدادات وحسابات الذكاء الاصطناعي (`config`)
+ضبط وتكوين مفاتيح الربط البرمجي (API Keys) ومزودي نماذج الذكاء الاصطناعي للتوليد التلقائي للوثائق:
+
+```bash
+# عرض الإعدادات الحالية
+tasleemat config show
+
+# ضبط المزود والنموذج الافتراضي (يدعم: gemini, openai, anthropic, ollama, mock)
+tasleemat config set --provider gemini --model gemini-2.5-flash
+tasleemat config set --provider openai --model gpt-4o
+
+# ضبط المفتاح البرمجي مباشرة (أو تعيين المتغير GEMINI_API_KEY في البيئة)
+tasleemat config set --provider gemini --key "AIzaSy..."
+```
+
+---
+
+### هـ. التوليد والاستيفاء التلقائي للوثائق بالذكاء الاصطناعي (`generate`)
+توليد واستيفاء مخرجات المشروع الاحترافية تلقائياً باستخدام حساب الذكاء الاصطناعي وملاحظات الاجتماعات:
+
+```bash
+# استيفاء ميثاق المشروع (PMO-03.01) تلقائياً من ملاحظات الاجتماع
+tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./03_01_Project_Charter.md
+
+# استيفاء سجل المخاطر باللغة العربية باستخدام نموذج OpenAI
+tasleemat generate --form PMO-04.08.02 --notes ./risk_workshop_notes.txt --lang ar --provider openai --out ./04_08_02_Risk_Register.md
+
+# تشغيل تجربة توليد وهمية (Mock) دون استهلاك رصيد المفتاح البرمجي
+tasleemat generate --form PMO-03.01 --notes "مشروع التحول الرقمي السحابي" --mock
+```
+
+---
+
+### و. تشغيل حزمة الفحوصات والاختبارات الآلية (`test`)
+تشغيل حزمة الفحص الشاملة (بما في ذلك فحوصات عميل الذكاء الاصطناعي):
 
 ```bash
 # تشغيل حزمة الاختبارات مع الملخص

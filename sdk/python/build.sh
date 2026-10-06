@@ -10,6 +10,7 @@ cp -r ../../forms tasleemat/
 cp -r ../../docs tasleemat/
 cp -r ../../_tokens tasleemat/
 cp -r ../../tools tasleemat/
+cp -r ../../tools/ai tasleemat/ai
 cp ../../LICENSE .
 # Do not overwrite the SDK README.md
 

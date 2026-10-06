@@ -154,11 +154,18 @@ tasleemat search "ميثاق" --lang ar
 2. Open `03_01_Project_Charter_Guide.md` to review best practices and required inputs.
 3. Copy `03_01_Project_Charter_Template.md` into your editor (VS Code, Obsidian, Notion, or Confluence) or export directly to PDF using `python3 tools/export_deliverables.py`.
 
-### 3. AI-Powered Generation Workflow (ChatGPT, Claude, Gemini)
-Generate complete, compliant PMO documents in seconds:
-1. Open [`forms/en/parameters.md`](forms/en/parameters.md) (or [`forms/ar/parameters.md`](forms/ar/parameters.md)) and enter your project parameters (Title, Sponsor, Budget, Scope boundaries).
-2. Open the prompt file `*.md` of the desired artifact (e.g., `04_08_02_Risk_Register.md`).
-3. Feed both files along with your rough meeting notes into your LLM:
+### 3. AI-Powered Generation Workflow (Gemini, OpenAI, Claude, Ollama)
+Generate complete, compliant PMO documents in seconds automatically using your LLM account or API key:
+
+```bash
+# Set your LLM API Key (or export GEMINI_API_KEY / OPENAI_API_KEY)
+tasleemat config set --provider gemini --key "YOUR_API_KEY"
+
+# Auto-fill Project Charter (PMO-03.01) from raw meeting notes
+tasleemat generate --form PMO-03.01 --notes ./notes.txt --out ./Project_Charter.md
+```
+
+Alternatively, you can manually feed [`forms/en/parameters.md`](forms/en/parameters.md) and artifact prompts into web LLMs (ChatGPT, Claude, Gemini):
    ```text
    You are an expert PMO Lead. Fill out this artifact based on the project parameters 
    and the following rough notes: [Insert notes here]. 

@@ -240,17 +240,20 @@ def get_ai_client(provider=None, model=None, api_key=None):
         from tasleemat.ai import AIClient
         return AIClient(provider=provider, model=model, api_key=api_key)
     except ImportError:
-        sys.path.insert(0, str(ROOT / "sdk" / "python"))
-        from tasleemat.ai import AIClient
-        return AIClient(provider=provider, model=model, api_key=api_key)
+        try:
+            from tools.ai import AIClient
+            return AIClient(provider=provider, model=model, api_key=api_key)
+        except ImportError:
+            sys.path.insert(0, str(ROOT))
+            from tools.ai import AIClient
+            return AIClient(provider=provider, model=model, api_key=api_key)
 
 def configure_llm(args):
     """Configure default LLM provider, model, or API key."""
     try:
         from tasleemat.ai import load_config, save_config
     except ImportError:
-        sys.path.insert(0, str(ROOT / "sdk" / "python"))
-        from tasleemat.ai import load_config, save_config
+        from tools.ai import load_config, save_config
 
     cfg = load_config()
     if args.action == "set":

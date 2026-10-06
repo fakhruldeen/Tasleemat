@@ -113,8 +113,41 @@ tasleemat list --lang en
 tasleemat list --lang ar
 ```
 
-### D. Running the Automated Test Suite (`test`)
-Run the entire 28-test verification suite directly from the CLI:
+### D. Managing LLM Account Credentials (`config`)
+Configure default Large Language Model (LLM) API credentials and providers for automated document generation:
+
+```bash
+# View active configuration
+tasleemat config show
+
+# Set default provider and model (supports: gemini, openai, anthropic, ollama, mock)
+tasleemat config set --provider gemini --model gemini-2.5-flash
+tasleemat config set --provider openai --model gpt-4o
+
+# Pass API key directly (or set GEMINI_API_KEY / OPENAI_API_KEY in environment)
+tasleemat config set --provider gemini --key "AIzaSy..."
+```
+
+---
+
+### E. AI-Powered Artifact Auto-Filling (`generate`)
+Automatically generate and auto-fill publication-ready PMO deliverables using your configured LLM API account and project notes:
+
+```bash
+# Auto-fill Project Charter (PMO-03.01) using raw meeting notes
+tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./03_01_Project_Charter.md
+
+# Auto-fill Risk Register in Arabic using OpenAI
+tasleemat generate --form PMO-04.08.02 --notes ./risk_workshop_notes.txt --lang ar --provider openai --out ./04_08_02_Risk_Register.md
+
+# Run mock generation test without consuming API tokens
+tasleemat generate --form PMO-03.01 --notes "Enterprise cloud migration project" --mock
+```
+
+---
+
+### F. Running the Automated Test Suite (`test`)
+Run the entire automated verification suite (including AI Client tests) directly from the CLI:
 
 ```bash
 # Run tests with summary

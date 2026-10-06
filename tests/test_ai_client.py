@@ -6,9 +6,9 @@ import json
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "sdk" / "python"))
+sys.path.insert(0, str(ROOT))
 
-from tasleemat.ai import AIClient, load_config, save_config
+from tools.ai import AIClient, load_config, save_config
 
 class TestAIClient(unittest.TestCase):
 
