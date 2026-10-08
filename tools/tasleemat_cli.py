@@ -353,8 +353,127 @@ def run_tests(args):
         print(f"\n{Colors.FAIL}{Colors.BOLD}❌ Test failures detected!{Colors.ENDC}\n")
         sys.exit(1)
 
+def print_comprehensive_help(target_cmd=None):
+    """Print complete, comprehensive CLI help listing all commands, flags, arguments, choices, and examples."""
+    header = f"{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}\n"
+    header += f"{Colors.HEADER}{Colors.BOLD}   🚀 Tasleemat PMO Operating System CLI — Complete Help & Parameter Reference   {Colors.ENDC}\n"
+    header += f"{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}\n"
+
+    usage = f"{Colors.BOLD}USAGE:{Colors.ENDC}\n"
+    usage += f"  {Colors.OKBLUE}tasleemat{Colors.ENDC} <command> [options] [arguments]\n"
+    usage += f"  {Colors.OKBLUE}tasleemat{Colors.ENDC} --help | -h | help [subcommand]\n\n"
+
+    cmds = {
+        "init": {
+            "title": "init — Scaffold a new tailored project workspace",
+            "desc": "Interactively or via flags, builds a complete project folder populated with 5-file deliverable bundles.",
+            "args": [
+                ("-n, --name TEXT", "Project name (e.g., 'Enterprise Cloud Migration')"),
+                ("-c, --code TEXT", "Project ID code (e.g., 'PRJ-2026-001')"),
+                ("--pm TEXT", "Project Manager name"),
+                ("--sponsor TEXT", "Executive Sponsor name"),
+                ("-t, --tier {1,2,3}", "Governance Tier: 1=Enterprise (52+ forms), 2=Standard (14+ forms), 3=Lean (6+ forms)"),
+                ("-p, --pack {general,agile,ai,predictive,hybrid}", "Methodology Pack (Default: general)"),
+                ("-l, --lang {ar,en,both}", "Deliverable language selection (Default: both)"),
+                ("-o, --out PATH", "Target output directory (Default: ./<code_Workspace>)")
+            ],
+            "example": "tasleemat init --tier 2 --pack agile --lang ar --name 'منصة التحول الرقمي' --code 'PRJ-2026-01'"
+        },
+        "list": {
+            "title": "list — List all available project management forms & templates",
+            "desc": "Displays the complete catalog of 102 bilingual forms indexed by phase and form code.",
+            "args": [
+                ("-l, --lang {ar,en}", "Catalog language filter (Default: en)")
+            ],
+            "example": "tasleemat list --lang en"
+        },
+        "search": {
+            "title": "search — Search deliverable templates by keyword or form ID",
+            "desc": "Searches the bilingual catalog for matching form titles or PMO form codes.",
+            "args": [
+                ("query TEXT", "Search keyword or code (e.g., 'Risk', 'Charter', 'ميثاق', 'PMO-03.01')"),
+                ("-l, --lang {ar,en}", "Search catalog language (Default: en)")
+            ],
+            "example": "tasleemat search 'Risk' --lang en"
+        },
+        "config": {
+            "title": "config — Manage default LLM AI provider & API credentials",
+            "desc": "Saves or displays LLM credentials at ~/.tasleemat/config.json for automated AI drafting.",
+            "args": [
+                ("action {set,show}", "Configuration action to perform (Default: show)"),
+                ("--provider {gemini,openai,anthropic,ollama,mock}", "LLM AI Provider selection"),
+                ("--model TEXT", "Model ID (e.g., 'gemini-2.5-flash', 'gpt-4o', 'claude-3-5-sonnet')"),
+                ("--key TEXT", "API Key string"),
+                ("--endpoint TEXT", "Custom Endpoint URL for local models (e.g., http://localhost:11434)")
+            ],
+            "example": "tasleemat config set --provider gemini --model gemini-2.5-flash --key 'YOUR_GEMINI_API_KEY'"
+        },
+        "generate": {
+            "title": "generate — Auto-fill PMO artifact using LLM AI client",
+            "desc": "Passes raw project notes and template prompt schemas to LLMs to auto-fill deliverables.",
+            "args": [
+                ("-f, --form TEXT", "Form ID or keyword [REQUIRED] (e.g., 'PMO-03.01' or 'Charter')"),
+                ("-n, --notes TEXT/PATH", "Path to text file with meeting notes or direct prompt context string"),
+                ("-l, --lang {ar,en}", "Deliverable output language (Default: en)"),
+                ("-p, --provider {gemini,openai,anthropic,ollama,mock}", "Override default LLM Provider"),
+                ("-m, --model TEXT", "Override default Model ID"),
+                ("-k, --key TEXT", "Override default API Key"),
+                ("-o, --out PATH", "Output Markdown file path"),
+                ("--mock", "Run mock generation offline without calling API APIs")
+            ],
+            "example": "tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./Project_Charter.md"
+        },
+        "test": {
+            "title": "test — Run complete automated test suite",
+            "desc": "Executes 38 unit & integration tests covering forms, schemas, data packages, CLI, and links.",
+            "args": [
+                ("-v, --verbose", "Enable verbose detailed test output")
+            ],
+            "example": "tasleemat test -v"
+        },
+        "help": {
+            "title": "help — Display complete CLI help reference manual",
+            "desc": "Shows help and argument documentation for all commands or a specific command.",
+            "args": [
+                ("subcommand TEXT", "Optional: Specific subcommand to view help for (e.g., init, generate)")
+            ],
+            "example": "tasleemat help init"
+        }
+    }
+
+    if target_cmd and target_cmd in cmds:
+        info = cmds[target_cmd]
+        out = header + usage
+        out += f"{Colors.BOLD}{info['title']}{Colors.ENDC}\n"
+        out += f"  {Colors.OKCYAN}{info['desc']}{Colors.ENDC}\n\n"
+        out += f"  {Colors.BOLD}Arguments & Options:{Colors.ENDC}\n"
+        for opt, opt_desc in info["args"]:
+            out += f"    {Colors.OKGREEN}{opt:<36}{Colors.ENDC} {opt_desc}\n"
+        out += f"\n  {Colors.BOLD}Example:{Colors.ENDC}\n"
+        out += f"    {Colors.OKBLUE}{info['example']}{Colors.ENDC}\n\n"
+        print(out)
+        return
+
+    commands_detail = f"{Colors.BOLD}AVAILABLE COMMANDS & DETAILED ARGUMENTS:{Colors.ENDC}\n\n"
+    body = ""
+    for cmd_key, info in cmds.items():
+        body += f"{Colors.BOLD}• {info['title']}{Colors.ENDC}\n"
+        body += f"  {Colors.OKCYAN}{info['desc']}{Colors.ENDC}\n"
+        body += f"  {Colors.BOLD}Arguments & Flags:{Colors.ENDC}\n"
+        for opt, opt_desc in info["args"]:
+            body += f"    {Colors.OKGREEN}{opt:<36}{Colors.ENDC} {opt_desc}\n"
+        body += f"  {Colors.BOLD}Example:{Colors.ENDC} {Colors.OKBLUE}{info['example']}{Colors.ENDC}\n\n"
+
+    print(header + usage + commands_detail + body)
+
 def main():
-    parser = argparse.ArgumentParser(description="Tasleemat PMO Operating System CLI & AI Generator")
+    if len(sys.argv) > 1 and sys.argv[1] in ["-h", "--help", "help"]:
+        subcmd = sys.argv[2] if len(sys.argv) > 2 else None
+        print_comprehensive_help(subcmd)
+        sys.exit(0)
+
+    parser = argparse.ArgumentParser(description="Tasleemat PMO Operating System CLI & AI Generator", add_help=False)
+    parser.add_argument("-h", "--help", action="store_true", help="Show complete help manual for all commands")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
     # init / scaffold command
@@ -400,8 +519,15 @@ def main():
     test_parser = subparsers.add_parser("test", help="Run automated test suite")
     test_parser.add_argument("-v", "--verbose", action="store_true", help="Verbose test output")
 
+    # help command
+    help_parser = subparsers.add_parser("help", help="Display complete CLI help manual")
+    help_parser.add_argument("subcommand", nargs="?", help="Optional subcommand for specific help")
+
     args = parser.parse_args()
-    if args.command == "init":
+    if args.help or args.command == "help":
+        target = getattr(args, "subcommand", None)
+        print_comprehensive_help(target)
+    elif args.command == "init":
         scaffold_project(args)
     elif args.command == "list":
         list_forms(args)
@@ -414,7 +540,8 @@ def main():
     elif args.command == "test":
         run_tests(args)
     else:
-        parser.print_help()
+        print_comprehensive_help()
 
 if __name__ == "__main__":
     main()
+

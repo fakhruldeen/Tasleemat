@@ -1,49 +1,176 @@
-<!--
+# 🚀 Tasleemat (تسليمات) — Enterprise Bilingual PMO Toolkit & AI Library
+
+[![PyPI version](https://badge.fury.io/py/tasleemat.svg)](https://pypi.org/project/tasleemat/)
+[![Live Documentation Portal](https://img.shields.io/badge/Live_Portal-fakhr.me%2FTasleemat-2563eb?logo=google-chrome&logoColor=white)](https://fakhr.me/Tasleemat/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://fakhr.me/Tasleemat/)
+
+**Tasleemat (تسليمات)** is a production-grade, open-source Project Management Office (PMO) toolkit and Python library designed for **Project Managers, PMO Directors, Business Leaders, and AI Engineers**.
+
+It provides **102 standardized, bilingual (English & Arabic) project management deliverables** (204 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
+
 ---
-type: Guide
+
+## 🌟 Core Highlights
+
+- **📚 102 Full-Lifecycle Artifacts (204 Form Bundles):** Complete 1-to-1 English and Arabic coverage across 8 lifecycle phases and 12 planning domains.
+- **⚡ PMI PMBOK® Guide Aligned (6th, 7th & 8th Edition Ready):** Fully compliant with PMI standards, ISO 21500/21502 governance, Agile/Lean practice guides, ESG sustainability tracking, and NIST AI RMF.
+- **🤖 Built-in AI Generation Engine (`tasleemat.ai`):** Instantly auto-fill publication-ready project documents using Google Gemini, OpenAI GPT-4, Anthropic Claude, or local Ollama LLMs.
+- **📂 5-File Synchronized Artifact Bundles:** Every deliverable includes a printable Markdown template, practitioner writing guide, LLM prompt instruction, machine-readable JSON schema, and tabular CSV dictionary.
+- **🚀 Global CLI Project Scaffolder (`tasleemat`):** Interactively or programmatically scaffold complete project workspaces tailored to your project size (Enterprise, Standard, Lean, Agile/AI).
+
 ---
--->
-# Tasleemat Python SDK
 
-This directory contains the Python packaging pipeline for the **Tasleemat** PMO Governance & Quality Assurance framework.
+## 💻 CLI Installation & Usage
 
-The build scripts in this folder transform the open-source Markdown template repository into a fully compliant, pip-installable Python package, giving users access to the global `tasleemat` CLI scaffolding tool.
-
-## Build Requirements
-- Python 3.9+
-- `build` module (`pip install build`)
-
-## How to Build
-Because Tasleemat acts primarily as a data-first GitHub template library, the actual source files (`forms/`, `docs/`, `tools/`) reside in the root of the repository.
-
-To build the Python SDK, run the included build script. This will temporarily copy the necessary assets from the repository root into a localized package namespace before building the wheel:
+Install the official package globally via `pip`:
 
 ```bash
-cd sdk/python
-./build.sh
+pip install tasleemat
 ```
 
-## Build Artifacts
-Upon a successful build, the `.whl` and `.tar.gz` distribution files will be located in the newly created `dist/` directory:
+### 1. Help & Parameter Reference (`--help` / `-h`)
+View detailed documentation for all CLI commands, arguments, choices, and practical examples:
 
 ```bash
-ls -l dist/
+# Complete CLI manual for all commands & arguments
+tasleemat --help
+tasleemat -h
+tasleemat help
+
+# Specific command help
+tasleemat help init
+tasleemat generate --help
 ```
 
-## How to Install Locally
-You can install the compiled wheel into your local environment (or any virtual environment) to test the CLI tool:
+### 2. Project Workspace Scaffolding (`tasleemat init`)
+Scaffold a complete project workspace with pre-populated bilingual templates matching your project tier:
 
 ```bash
-pip install dist/tasleemat-2.0.3-py3-none-any.whl
+# Interactive scaffolding wizard
+tasleemat init
+
+# Fast-track command with flags (Tier 2, Agile Pack, Arabic templates)
+tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01" --out ./My_Project
 ```
 
-## Usage
-Once installed, the `tasleemat` CLI is globally accessible on your terminal. You can use it to instantly scaffold complete PMO project workspaces out of the bundled OKF templates:
+### 3. Catalog Search & Listing (`tasleemat search` / `tasleemat list`)
+Browse and search forms by keyword or PMO form code:
 
 ```bash
-# List all available deliverables in English
+# Search deliverable forms by keyword
+tasleemat search "Risk" --lang en
+tasleemat search "ميثاق" --lang ar
+
+# List all 102 forms in catalog
 tasleemat list --lang en
-
-# Initialize a new Tier 1 Agile project workspace
-tasleemat init --tier 1 --pack agile --lang both --name "My_Project" --code "PRJ-001" --out ./workspace
 ```
+
+### 4. LLM AI Configuration (`tasleemat config`)
+Configure your default LLM AI provider and API credentials:
+
+```bash
+# Configure Google Gemini
+tasleemat config set --provider gemini --model gemini-2.5-flash --key "YOUR_GEMINI_API_KEY"
+
+# Or configure OpenAI
+tasleemat config set --provider openai --model gpt-4o --key "YOUR_OPENAI_KEY"
+
+# View current configuration
+tasleemat config show
+```
+
+### 5. Automated AI Document Generation (`tasleemat generate`)
+Auto-fill publication-ready project deliverables directly from meeting notes:
+
+```bash
+# Auto-fill Project Charter (PMO-03.01) from meeting notes
+tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./03_01_Project_Charter.md
+
+# Test offline with mock engine (no API tokens consumed)
+tasleemat generate --form PMO-03.01 --notes "Enterprise Cloud Migration" --mock
+```
+
+### 6. Automated Test Suite (`tasleemat test`)
+Execute the built-in repository verification suite:
+
+```bash
+tasleemat test -v
+```
+
+---
+
+## 🤖 Programmatic Python SDK (`tasleemat.ai`)
+
+You can also import `tasleemat.ai` directly into custom Python pipelines, internal dashboards, or automated AI workflows:
+
+```python
+from tasleemat.ai import AIClient
+
+# Initialize client (resolves API credentials automatically)
+client = AIClient(provider="gemini", model="gemini-2.5-flash")
+
+# Auto-fill a PMO deliverable
+charter_markdown = client.generate(
+    prompt="Generate Project Charter for $2M E-Commerce Platform Modernization",
+    system_instruction="You are an enterprise PMO Director. Adhere strictly to PMI PMBOK standards."
+)
+
+print(charter_markdown)
+```
+
+---
+
+## 📦 5-File Synchronized Artifact Architecture
+
+Inside every form folder (e.g., `forms/en/03_Initiating/01_Project_Charter/`), Tasleemat provides 5 synchronized files:
+
+| File Type | Pattern | Purpose |
+| :--- | :--- | :--- |
+| **Printable Template** | `*_Template.md` / `*_قالب.md` | Human-facing document structure with sign-off headers |
+| **Practitioner Guide** | `*_Guide.md` / `*_دليل.md` | In-depth operational guide & dependency rules |
+| **LLM Generation Prompt** | `*.md` | Engineered system prompt for automated LLM drafting |
+| **JSON Data Schema** | `*.json` | Machine-readable schema for API integrations & validation |
+| **Tabular Dictionary** | `*.csv` | 4-column structured dictionary for Excel/PowerBI ingestion |
+
+---
+
+## 🗺️ Project Lifecycle Overview (102 Forms)
+
+| Phase Code | Phase Name | Deliverables Count | Focus Area |
+| :---: | :--- | :---: | :--- |
+| **00** | **Program & Portfolio Management** | **6 Forms** | Portfolio roadmaps, OKR alignment, capacity planning, PMO maturity |
+| **01** | **Business & Value Delivery** | **4 Forms** | Business cases, benefits realization plans, value registers |
+| **02** | **Project Approach & Tailoring** | **6 Forms** | Tailoring strategy, AI governance, AI ethics baselines, model cards |
+| **03** | **Initiating** | **5 Forms** | Project charter, product vision, assumption log, stakeholder register |
+| **04** | **Planning** | **52 Forms** | Scope/WBS, schedule, cost, quality, risk, ESG sustainability |
+| **05** | **Executing** | **12 Forms** | Issue log, change requests, retrospectives, team performance |
+| **06** | **Monitoring & Controlling** | **12 Forms** | Status reports, Earned Value (EVA), UAT signoff, flow metrics |
+| **07** | **Closing** | **5 Forms** | Lessons learned, contract closeouts, operational handover |
+
+---
+
+## 📜 Standards & Compliance Alignment
+
+- **PMI PMBOK® Guide** (6th, 7th & 8th Edition Ready)
+- **ISO 21500:2021 & ISO 21502:2020** (Project & Portfolio Governance)
+- **Agile & Lean Practice Guides** (Scrum, Kanban, Value Streams)
+- **NIST AI Risk Management Framework & EU AI Act** (AI Artifacts)
+- **UN Sustainable Development Goals & ESG Frameworks**
+
+---
+
+## 🔗 Useful Links & Citation
+
+- **🌐 Live Web Documentation Portal:** [fakhr.me/Tasleemat/](https://fakhr.me/Tasleemat/)
+- **🐙 GitHub Repository:** [github.com/fakhruldeen/Tasleemat](https://github.com/fakhruldeen/Tasleemat)
+- **📚 Citation (Zenodo DOI):** [10.5281/zenodo.23193523](https://doi.org/10.5281/zenodo.23193523)
+
+> Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.1.0 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523
+
+---
+
+<div align="center">
+  <sub>Open Source under <a href="https://opensource.org/licenses/MIT">MIT License</a>. Maintained by <a href="https://github.com/fakhruldeen">Fakhruldeen</a>.</sub>
+</div>

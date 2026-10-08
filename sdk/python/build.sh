@@ -19,7 +19,13 @@ touch tasleemat/__init__.py
 touch tasleemat/tools/__init__.py
 touch tasleemat/tools/attested_computations/__init__.py
 
-echo "Building Python package..."
-../../.venv/bin/python -m build
+PYTHON_BIN="python3"
+if [ -f "../../sdk_test_venv/bin/python" ]; then
+    PYTHON_BIN="../../sdk_test_venv/bin/python"
+elif [ -f "../../.venv/bin/python" ]; then
+    PYTHON_BIN="../../.venv/bin/python"
+fi
+
+$PYTHON_BIN -m build
 
 echo "Build complete! Artifacts are in sdk/python/dist/"
