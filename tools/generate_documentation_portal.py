@@ -2146,6 +2146,8 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
         "catalog_en": "102 Deliverables & Templates Catalog | Tasleemat PMO Explorer",
         "catalog_ar": "كتالوج النماذج والتسليمات القياسية (102 تسليمة) | مستكشف تسليمات",
         "form_viewer": "معاينة النماذج التفاعلية | ميثاق المشروع القياسي FORM-03-01",
+        "form_viewer_ar": "معاينة النماذج التفاعلية | ميثاق المشروع القياسي FORM-03-01",
+        "form_viewer_en": "Interactive Form Viewer | Standard Project Charter FORM-03-01",
     }
     
     # 1. Update Title
@@ -2161,13 +2163,16 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
         fav = soup.new_tag("link", rel="icon", type="image/png", href=f"{rel_root}img/logo.png")
         soup.head.append(fav)
 
-    is_ar = page_type in ["home_ar", "catalog_ar", "form_viewer"]
+    is_ar = page_type in ["home_ar", "catalog_ar", "form_viewer", "form_viewer_ar"]
     
     # Nav mappings
+    cat_en_link = "./index.html" if page_type == "catalog_en" else f"{rel_root}catalog/en/index.html"
+    cat_ar_link = "./index.html" if page_type == "catalog_ar" else f"{rel_root}catalog/ar/index.html"
+
     nav_map_en = {
         "overview": f"{rel_root}index.html",
         "home": f"{rel_root}index.html",
-        "templates-catalog": f"{rel_root}catalog/en/index.html" if rel_root != "../../" else "./index.html",
+        "templates-catalog": cat_en_link,
         "stage-gate-governance": f"{rel_root}governance.html",
         "stage-gates": f"{rel_root}governance.html",
         "tailoring-profiles": f"{rel_root}governance.html#tailoring-matrix",
@@ -2177,7 +2182,7 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
     nav_map_ar = {
         "overview": f"{rel_root}README_AR.html",
         "home": f"{rel_root}README_AR.html",
-        "templates-catalog": f"{rel_root}catalog/ar/index.html" if rel_root != "../../" else "./index.html",
+        "templates-catalog": cat_ar_link,
         "stage-gate-governance": f"{rel_root}governance.html",
         "stage-gates": f"{rel_root}governance.html",
         "tailoring-profiles": f"{rel_root}governance.html#tailoring-matrix",
@@ -2190,19 +2195,59 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
         dp = a.get("data-path")
         if dp and dp in nav_map:
             a["href"] = nav_map[dp]
-        elif a.get("href") == "#" and any(k in a.get_text().lower() for k in ["star", "fork", "github", "repo"]):
-            a["href"] = "https://github.com/fakhruldeen/Tasleemat"
-            a["target"] = "_blank"
+        elif a.get("href") == "#":
+            txt_lower = a.get_text().strip().lower()
+            if any(k in txt_lower for k in ["star", "fork", "github", "repo"]):
+                a["href"] = "https://github.com/fakhruldeen/Tasleemat"
+                a["target"] = "_blank"
+            elif any(k in txt_lower for k in ["الرئيسية", "home", "overview"]):
+                a["href"] = nav_map["home"]
+            elif any(k in txt_lower for k in ["كتالوج", "catalog", "نماذج", "templates"]):
+                a["href"] = nav_map["templates-catalog"]
+            elif any(k in txt_lower for k in ["بوابات", "governance", "stage-gate"]):
+                a["href"] = nav_map["stage-gates"]
+            elif any(k in txt_lower for k in ["مطور", "developer", "cli"]):
+                a["href"] = nav_map["developer-cli"]
+            elif any(k in txt_lower for k in ["معجم", "lexicon"]):
+                a["href"] = nav_map["bilingual-lexicon"]
             
-    for btn in soup.find_all("button"):
+    for btn in soup.find_all(["button", "a"]):
         txt = btn.get_text(strip=True)
         lbl = btn.get("aria-label") or ""
-        if ("EN" in txt and ("عرب" in txt or "🇸🇦" in txt)) or "Toggle Language" in lbl or "translate" in txt:
-            if rel_root == "../../":
-                target_lang_url = "../ar/index.html" if not is_ar else "../en/index.html"
+        if ("EN" in txt and ("عرب" in txt or "🇸🇦" in txt)) or "Toggle Language" in lbl or "translate" in txt or "translate" in str(btn.get("class", [])):
+            if page_type == "catalog_en":
+                target_lang_url = "../ar/index.html"
+            elif page_type == "catalog_ar":
+                target_lang_url = "../en/index.html"
+            elif page_type in ["form_viewer", "form_viewer_ar"]:
+                target_lang_url = "../en/form-viewer.html"
+            elif page_type == "form_viewer_en":
+                target_lang_url = "../ar/form-viewer.html"
+            elif is_ar:
+                target_lang_url = f"{rel_root}index.html"
             else:
-                target_lang_url = f"{rel_root}README_AR.html" if not is_ar else f"{rel_root}index.html"
-            btn["onclick"] = f"window.location.href=\"{target_lang_url}\""
+                target_lang_url = f"{rel_root}README_AR.html"
+            
+            if btn.name == "button":
+                btn["onclick"] = f"window.location.href=\"{target_lang_url}\""
+            else:
+                btn["href"] = target_lang_url
+
+    # Normalize image logos
+    for img in soup.find_all("img"):
+        alt = img.get("alt", "").lower()
+        src = img.get("src", "")
+        if "logo" in alt or "logo" in src.lower() or "AEtjO1W1bBjeEtD2SY4dM8l6zdLn5Fkp" in src:
+            img["src"] = f"{rel_root}img/logo.png"
+
+    # Make brand logo header clickable
+    for header in soup.find_all("header"):
+        for div in header.find_all("div", class_=lambda c: c and "items-center" in c and "gap-space-sm" in c):
+            if "Tasleemat" in div.get_text() or "تسليمات" in div.get_text():
+                if not div.find_parent("a") and div.name != "a":
+                    div["onclick"] = f"window.location.href='{nav_map['home']}'"
+                    div["style"] = (div.get("style", "") + "; cursor: pointer;").strip(" ;")
+                break
 
     return str(soup)
 
@@ -2270,14 +2315,22 @@ def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path, deliv
     (site_dir / "catalog" / "ar" / "index.html").write_text(html_cat_ar, encoding="utf-8")
     (docs_dir / "catalog" / "ar" / "index.html").write_text(html_cat_ar, encoding="utf-8")
 
-    # 6. Form Viewer & FORM-03-01
-    html_form = process_stitch_screen(s_map["form_viewer"], "form_viewer", rel_root="../../")
+    # 6. Form Viewer & FORM-03-01 (Arabic & English)
+    html_form_ar = process_stitch_screen(s_map["form_viewer"], "form_viewer_ar", rel_root="../../")
     (site_dir / "forms" / "ar").mkdir(parents=True, exist_ok=True)
     (docs_dir / "forms" / "ar").mkdir(parents=True, exist_ok=True)
-    (site_dir / "forms" / "ar" / "form-viewer.html").write_text(html_form, encoding="utf-8")
-    (docs_dir / "forms" / "ar" / "form-viewer.html").write_text(html_form, encoding="utf-8")
-    (site_dir / "forms" / "ar" / "FORM-03-01.html").write_text(html_form, encoding="utf-8")
-    (docs_dir / "forms" / "ar" / "FORM-03-01.html").write_text(html_form, encoding="utf-8")
+    (site_dir / "forms" / "ar" / "form-viewer.html").write_text(html_form_ar, encoding="utf-8")
+    (docs_dir / "forms" / "ar" / "form-viewer.html").write_text(html_form_ar, encoding="utf-8")
+    (site_dir / "forms" / "ar" / "FORM-03-01.html").write_text(html_form_ar, encoding="utf-8")
+    (docs_dir / "forms" / "ar" / "FORM-03-01.html").write_text(html_form_ar, encoding="utf-8")
+
+    html_form_en = process_stitch_screen(s_map["form_viewer"], "form_viewer_en", rel_root="../../")
+    (site_dir / "forms" / "en").mkdir(parents=True, exist_ok=True)
+    (docs_dir / "forms" / "en").mkdir(parents=True, exist_ok=True)
+    (site_dir / "forms" / "en" / "form-viewer.html").write_text(html_form_en, encoding="utf-8")
+    (docs_dir / "forms" / "en" / "form-viewer.html").write_text(html_form_en, encoding="utf-8")
+    (site_dir / "forms" / "en" / "FORM-03-01.html").write_text(html_form_en, encoding="utf-8")
+    (docs_dir / "forms" / "en" / "FORM-03-01.html").write_text(html_form_en, encoding="utf-8")
 
     print("Successfully compiled all 6 Stitch screen designs into site/ and docs/!")
 
