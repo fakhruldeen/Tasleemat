@@ -1,3 +1,9 @@
+<!--
+---
+type: Guide
+---
+-->
+
 # 💻 Tasleemat Technical & Developer Guide
 
 Welcome to the technical engineering reference manual for **Tasleemat (تسليمات)**. This document contains developer-focused instructions for the Python SDK, CLI project scaffolder, JSON Schema architecture, OKF Data Packages, automated test suites, and CI/CD documentation workflows.

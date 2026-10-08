@@ -636,7 +636,13 @@ def build_portal():
 def build_landing_pages():
     """Build modern Hero Landing pages for English (docs/index.md) and Arabic (docs/README_AR.md)."""
     # 1. English Landing Page
-    index_en = """<div class="hero-wrapper">
+    index_en = """<!--
+---
+type: Guide
+---
+-->
+
+<div class="hero-wrapper">
   <div class="hero-tag">
     <span class="pulse-dot"></span> Enterprise PMO Operating System 2.0 • PMI PMBOK® 6/7/8 & NIST AI RMF
   </div>
@@ -856,7 +862,13 @@ flowchart TD
     (DOCS_DIR / "index.md").write_text(index_en, encoding="utf-8")
 
     # 2. Arabic Landing Page
-    index_ar = """<div class="hero-wrapper">
+    index_ar = """<!--
+---
+type: Guide
+---
+-->
+
+<div class="hero-wrapper">
   <div class="hero-tag">
     <span class="pulse-dot"></span> نظام التشغيل الحوكمي لإدارة المشاريع 2.0 • PMI PMBOK® 6/7/8 وأخلاقيات الذكاء الاصطناعي (سدايا)
   </div>

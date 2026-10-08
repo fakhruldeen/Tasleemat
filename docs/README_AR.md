@@ -1,3 +1,9 @@
+<!--
+---
+type: Guide
+---
+-->
+
 <div class="hero-wrapper">
   <div class="hero-tag">
     <span class="pulse-dot"></span> نظام التشغيل الحوكمي لإدارة المشاريع 2.0 • PMI PMBOK® 6/7/8 وأخلاقيات الذكاء الاصطناعي (سدايا)

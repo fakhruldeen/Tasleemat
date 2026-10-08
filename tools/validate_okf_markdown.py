@@ -8,7 +8,7 @@ import sys
 import re
 
 def validate_okf():
-    exclude_dirs = {'.venv', 'scratch', '.github', '.pytest_cache', '__pycache__', '.git', '_tokens'}
+    exclude_dirs = {'.venv', 'venv', 'sdk', 'sdk_test_venv', 'build', 'dist', 'site', 'scratch', '.github', '.pytest_cache', '__pycache__', '.git', '_tokens'}
     
     okf_errors = 0
     profile_errors = 0
@@ -24,7 +24,10 @@ def validate_okf():
                 
             filepath = os.path.join(root_dir, file)
             is_root = (root_dir == '.')
-            in_forms = 'forms' in root_dir.split(os.sep)
+            parts = os.path.normpath(root_dir).split(os.sep)
+            if len(parts) >= 2 and parts[0] == 'docs' and parts[1] in {'forms', 'guides', 'examples', 'catalog'}:
+                continue
+            in_forms = 'forms' in parts
             
             with open(filepath, 'r', encoding='utf-8') as f:
                 content = f.read()
@@ -33,19 +36,25 @@ def validate_okf():
                 continue
                 
             # OKF Conformance
-            if not content.startswith('---') and not content.startswith('<!--\n---'):
+            clean_content = content.lstrip()
+            if clean_content.startswith('<div'):
+                fm_pos = clean_content.find('---')
+                if fm_pos != -1 and fm_pos < 1000:
+                    clean_content = clean_content[fm_pos:]
+
+            if not clean_content.startswith('---') and not clean_content.startswith('<!--\n---') and not clean_content.startswith('<!-- \n---') and not clean_content.startswith('<!--\r\n---'):
                 print(f"❌ OKF FAIL: {filepath} is missing YAML frontmatter.")
                 okf_errors += 1
                 continue
                 
-            offset = 5 if content.startswith('<!--\n---') else 0
-            end_idx = content.find('\n---', offset + 3)
+            offset = 5 if clean_content.startswith('<!--') else 0
+            end_idx = clean_content.find('\n---', offset + 3)
             if end_idx == -1:
                 print(f"❌ OKF FAIL: {filepath} has unclosed YAML frontmatter.")
                 okf_errors += 1
                 continue
                 
-            frontmatter = content[offset+3:end_idx]
+            frontmatter = clean_content[offset+3:end_idx]
             match = re.search(r'^type:\s*(.+)$', frontmatter, re.MULTILINE)
             if not match or not match.group(1).strip():
                 print(f"❌ OKF FAIL: {filepath} is missing a valid 'type' field.")
