@@ -1940,41 +1940,36 @@ def update_mkdocs_config(deliverables):
                 nav_list.append({f"{d['code']} {d['name_ar']}": target})
         return nav_list
 
-    # Top Navigation Tabs Architecture
+    # Un-cluttered 5-Tab Architecture (Zero Sidebar Overload)
     nav = [
         # === TAB 1: HOME & OVERVIEW ===
         {"🏠 Home": "index.md"},
 
-        # === TAB 2: TEMPLATES LIBRARY ===
-        {"📋 Templates": [
-            {"Templates Overview": "forms/en/index.md"},
-            {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "forms")},
-            {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "forms")},
-            {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "forms")},
-            {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "forms")},
-            {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "forms")},
-            {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "forms")},
-            {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "forms")},
-            {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "forms")}
+        # === TAB 2: GETTING STARTED & STAGE-GATES ===
+        {"🚪 Stage-Gates & Quick Start": [
+            {"01. Getting Started": "en/01_getting_started.md"},
+            {"04. Stage-Gates & Governance": "en/04_stage_gates_and_governance.md"},
+            {"05. Tailoring Profiles": "en/05_tailoring_profiles.md"},
+            {"06. RACI Authority Matrix": "en/06_raci_authority_matrix.md"}
         ]},
 
-        # === TAB 3: STAGE-GATES & GOVERNANCE ===
-        {"🚪 Governance & Stage-Gates": [
-            {"04. Stage-Gates & Governance": "en/04_stage_gates_and_governance.md"},
-            {"01. Getting Started": "en/01_getting_started.md"},
+        # === TAB 3: DELIVERABLES LIBRARY & EXPLORER ===
+        {"📋 Deliverables Library": [
+            {"Interactive Explorer Hub": "catalog/en/index.md"},
+            {"Standard Templates Index": "forms/en/index.md"}
+        ]},
+
+        # === TAB 4: PMO GOVERNANCE MANUALS ===
+        {"📚 PMO Manuals": [
             {"02. Usage Guide": "en/02_usage_guide.md"},
             {"03. PMO Policy Manual": "en/03_pmo_policy_manual.md"},
-            {"05. Tailoring Profiles": "en/05_tailoring_profiles.md"},
-            {"06. RACI Authority Matrix": "en/06_raci_authority_matrix.md"},
             {"07. Document Dependencies": "en/07_document_dependencies.md"},
             {"09. Agile & Hybrid Integration": "en/09_agile_hybrid_integration.md"}
         ]},
 
-        # === TAB 4: INTERACTIVE CATALOG ===
-        {"📑 Deliverables Catalog": "catalog/en/index.md"},
-
         # === TAB 5: DEVELOPER & AI HUB ===
         {"💻 Developer & AI Hub": [
+            {"Developer Reference": "TECHNICAL.md"},
             {"11. Tools & Automation": "en/11_tools_and_automation.md"},
             {"08. AI Governance Framework": "en/08_ai_governance_framework.md"},
             {"10. FAQ & Troubleshooting": "en/10_faq_and_troubleshooting.md"},
@@ -1985,7 +1980,8 @@ def update_mkdocs_config(deliverables):
         # === TAB 6: ARABIC PORTAL ===
         {"🇸🇦 البوابة العربية": [
             {"الرئيسية ودليل الانطلاق": "README_AR.md"},
-            {"📑 الفهرس التفاعلي الشامل": "catalog/ar/index.md"},
+            {"📑 مكتبة القوالب والتصفح التفاعلي": "catalog/ar/index.md"},
+            {"📋 فهرس القوالب القياسية": "forms/ar/index.md"},
             {"📚 الأدلة والسياسات الحوكمية": [
                 {"01. دليل البدء السريع": "ar/01_getting_started.md"},
                 {"02. دليل الممارس الشامل": "ar/02_usage_guide.md"},
@@ -1999,17 +1995,6 @@ def update_mkdocs_config(deliverables):
                 {"10. الأسئلة الشائعة وحل المشكلات": "ar/10_faq_and_troubleshooting.md"},
                 {"11. دليل الأدوات والأتمتة": "ar/11_tools_and_automation.md"},
                 {"12. معيار المعرفة المفتوحة (OKF)": "ar/12_open_knowledge_framework.md"}
-            ]},
-            {"📋 مكتبة القوالب والنماذج": [
-                {"الفهرس العام للقوالب": "forms/ar/index.md"},
-                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "forms")},
-                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "forms")},
-                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "forms")},
-                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "forms")},
-                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "forms")},
-                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "forms")},
-                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "forms")},
-                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "forms")}
             ]}
         ]}
     ]
@@ -2096,6 +2081,11 @@ markdown_extensions:
     nav_yaml = yaml.dump({"nav": nav}, allow_unicode=True, sort_keys=False, default_flow_style=False)
     mkdocs_file.write_text(header_yaml.strip() + "\n\n" + nav_yaml + "\n", encoding="utf-8")
     print("mkdocs.yml navigation updated successfully.")
+
+    tech_file = ROOT / "TECHNICAL.md"
+    if tech_file.exists():
+        shutil.copyfile(tech_file, DOCS_DIR / "TECHNICAL.md")
+
 
 def generate_tasleemat_data_js(deliverables):
     """Generate docs/assets/tasleemat_data.js containing full client-side bundles for all 102 deliverables."""
