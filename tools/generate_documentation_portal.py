@@ -17,6 +17,8 @@ import yaml
 import json
 import shutil
 import pathlib
+import markdown
+
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DOCS_DIR = ROOT / "docs"
@@ -628,8 +630,9 @@ def build_portal():
     # 8. Audit and repair all internal markdown links across all docs/ files
     fix_all_internal_links(deliverables)
 
-    # 9. Update mkdocs.yml navigation
-    update_mkdocs_config(deliverables)
+    # 9. Compile complete static HTML documentation portal to site/
+    compile_static_site(deliverables)
+
 
     print("Documentation portal successfully generated!")
 
@@ -1865,227 +1868,125 @@ def build_phase_indexes(deliverables):
             e_content_ar += f"| **`{d['code']}`** | **{d['name_ar']}** | [📋 القالب]({rel_t}) | [📖 الدليل]({rel_g}) | [💡 المثال]({rel_e}) |\n"
         target_e_ar.write_text(e_content_ar, encoding="utf-8")
 
-def update_mkdocs_config(deliverables):
-    """Update mkdocs.yml with sleek, streamlined 3-tab top navigation and use_directory_urls: false."""
-    mkdocs_file = ROOT / "mkdocs.yml"
+def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: bool = False, lang_switch_url: str = "") -> str:
+    dir_attr = "rtl" if is_ar else "ltr"
+    lang_attr = "ar" if is_ar else "en"
+    font_class = "font-arabic" if is_ar else "font-sans"
 
-    def make_phase_nav_en(phase_prefix, section_type="templates"):
-        items = [d for d in deliverables if d["phase"] == phase_prefix]
-        nav_list = []
+    nav_home = f"{rel_root}index.html" if not is_ar else f"{rel_root}README_AR.html"
+    nav_gates = f"{rel_root}en/04_stage_gates_and_governance.html" if not is_ar else f"{rel_root}ar/04_stage_gates_and_governance.html"
+    nav_catalog = f"{rel_root}catalog/en/index.html" if not is_ar else f"{rel_root}catalog/ar/index.html"
+    nav_manuals = f"{rel_root}en/03_pmo_policy_manual.html" if not is_ar else f"{rel_root}ar/03_pmo_policy_manual.html"
+    nav_tech = f"{rel_root}TECHNICAL.html"
+    
+    lang_btn = ""
+    if lang_switch_url:
+        target = f"{rel_root}{lang_switch_url}"
+        lbl = "🇸🇦 البوابة العربية" if not is_ar else "🇬🇧 English Portal"
+        lang_btn = f'<a href="{target}" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition">{lbl}</a>'
+
+    return f"""<!DOCTYPE html>
+<html lang="{lang_attr}" dir="{dir_attr}" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | Tasleemat PMO Operating System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="{rel_root}assets/custom.css">
+  <link rel="icon" type="image/png" href="{rel_root}img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="{rel_root}assets/tasleemat_data.js"></script>
+  <script src="{rel_root}assets/search.js"></script>
+  <script src="{rel_root}assets/explorer.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col {font_class}">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="{nav_home}" class="flex items-center gap-2 text-decoration-none">
+          <img src="{rel_root}img/logo.png" alt="Tasleemat Logo" class="h-9 w-auto">
+          <span class="font-bold text-lg tracking-tight text-slate-900">تسليمات | <span class="text-blue-700">Tasleemat</span></span>
+        </a>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-1 font-medium text-sm">
+        <a href="{nav_home}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🏠 {"Home" if not is_ar else "الرئيسية"}</a>
+        <a href="{nav_gates}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🚀 {"Stage-Gates" if not is_ar else "بوابات العبور"}</a>
+        <a href="{nav_catalog}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📑 {"Deliverables" if not is_ar else "المكتبة التفاعلية"}</a>
+        <a href="{nav_manuals}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📚 {"PMO Manuals" if not is_ar else "أدلة PMO"}</a>
+        <a href="{nav_tech}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">💻 {"Developer Hub" if not is_ar else "مركز التطوير"}</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-200 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">{"Search..." if not is_ar else "بحث..."}</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
         
-        if phase_prefix == "04":
-            sub_groups = {}
-            for d in items:
-                sub_name = d["dest_dir_en"].parts[1]
-                if sub_name not in sub_groups:
-                    sub_groups[sub_name] = []
-                sub_groups[sub_name].append(d)
-            
-            for sub_k in sorted(sub_groups.keys()):
-                sub_title = PLANNING_SUBS.get(sub_k, (sub_k.replace("_", " "), ""))[0]
-                sub_items = []
-                for d in sub_groups[sub_k]:
-                    if section_type == "forms":
-                        target = os.path.relpath(d["doc_tpl_en"], DOCS_DIR)
-                    elif section_type == "guides":
-                        target = os.path.relpath(d["doc_guide_en"], DOCS_DIR)
-                    else:
-                        target = os.path.relpath(d["doc_ex_en"], DOCS_DIR)
-                    sub_items.append({f"{d['code']} {d['name_en']}": target})
-                nav_list.append({sub_title: sub_items})
-        else:
-            for d in items:
-                if section_type == "forms":
-                    target = os.path.relpath(d["doc_tpl_en"], DOCS_DIR)
-                elif section_type == "guides":
-                    target = os.path.relpath(d["doc_guide_en"], DOCS_DIR)
-                else:
-                    target = os.path.relpath(d["doc_ex_en"], DOCS_DIR)
-                nav_list.append({f"{d['code']} {d['name_en']}": target})
-        return nav_list
+        {lang_btn}
 
-    def make_phase_nav_ar(phase_prefix, section_type="templates"):
-        items = [d for d in deliverables if d["phase"] == phase_prefix]
-        nav_list = []
-        
-        if phase_prefix == "04":
-            sub_groups = {}
-            for d in items:
-                sub_name = d["dest_dir_ar"].parts[1]
-                if sub_name not in sub_groups:
-                    sub_groups[sub_name] = []
-                sub_groups[sub_name].append(d)
-            
-            for sub_k in sorted(sub_groups.keys()):
-                en_match = [k for k in PLANNING_SUBS.keys() if k[:2] == sub_k[:2]]
-                sub_title = PLANNING_SUBS[en_match[0]][1] if en_match else sub_k.replace("_", " ")
-                sub_items = []
-                for d in sub_groups[sub_k]:
-                    if section_type == "forms":
-                        target = os.path.relpath(d["doc_tpl_ar"], DOCS_DIR)
-                    elif section_type == "guides":
-                        target = os.path.relpath(d["doc_guide_ar"], DOCS_DIR)
-                    else:
-                        target = os.path.relpath(d["doc_ex_ar"], DOCS_DIR)
-                    sub_items.append({f"{d['code']} {d['name_ar']}": target})
-                nav_list.append({sub_title: sub_items})
-        else:
-            for d in items:
-                if section_type == "forms":
-                    target = os.path.relpath(d["doc_tpl_ar"], DOCS_DIR)
-                elif section_type == "guides":
-                    target = os.path.relpath(d["doc_guide_ar"], DOCS_DIR)
-                else:
-                    target = os.path.relpath(d["doc_ex_ar"], DOCS_DIR)
-                nav_list.append({f"{d['code']} {d['name_ar']}": target})
-        return nav_list
+        <button id="theme-toggle" class="p-2 rounded-lg text-slate-500 hover:bg-slate-100 transition" title="Toggle Theme">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
 
-    # Un-cluttered 5-Tab Architecture (Zero Sidebar Overload)
-    nav = [
-        # === TAB 1: HOME & OVERVIEW ===
-        {"🏠 Home": "index.md"},
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-slate-200 shadow-sm">
+      {body_html}
+    </div>
+  </main>
 
-        # === TAB 2: GETTING STARTED & STAGE-GATES ===
-        {"🚪 Stage-Gates & Quick Start": [
-            {"01. Getting Started": "en/01_getting_started.md"},
-            {"04. Stage-Gates & Governance": "en/04_stage_gates_and_governance.md"},
-            {"05. Tailoring Profiles": "en/05_tailoring_profiles.md"},
-            {"06. RACI Authority Matrix": "en/06_raci_authority_matrix.md"}
-        ]},
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>
+        <p class="font-medium text-slate-300">Tasleemat PMO Operating System (تسليمات)</p>
+        <p class="text-slate-500 mt-1">PMI PMBOK® 6th, 7th & 8th Edition Compliant | OKF v0.2 Standard</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hover:text-white transition">GitHub Repository</a>
+        <a href="{rel_root}LEXICON.html" class="hover:text-white transition">Master Lexicon</a>
+        <a href="{rel_root}TECHNICAL.html" class="hover:text-white transition">Developer SDK</a>
+      </div>
+    </div>
+  </footer>
 
-        # === TAB 3: DELIVERABLES LIBRARY & EXPLORER ===
-        {"📋 Deliverables Library": [
-            {"Interactive Explorer Hub": "catalog/en/index.md"},
-            {"Standard Templates Index": "forms/en/index.md"}
-        ]},
-
-        # === TAB 4: PMO GOVERNANCE MANUALS ===
-        {"📚 PMO Manuals": [
-            {"02. Usage Guide": "en/02_usage_guide.md"},
-            {"03. PMO Policy Manual": "en/03_pmo_policy_manual.md"},
-            {"07. Document Dependencies": "en/07_document_dependencies.md"},
-            {"09. Agile & Hybrid Integration": "en/09_agile_hybrid_integration.md"}
-        ]},
-
-        # === TAB 5: DEVELOPER & AI HUB ===
-        {"💻 Developer & AI Hub": [
-            {"Developer Reference": "TECHNICAL.md"},
-            {"11. Tools & Automation": "en/11_tools_and_automation.md"},
-            {"08. AI Governance Framework": "en/08_ai_governance_framework.md"},
-            {"10. FAQ & Troubleshooting": "en/10_faq_and_troubleshooting.md"},
-            {"12. Open Knowledge Framework": "en/12_open_knowledge_framework.md"},
-            {"📖 Master Bilingual Lexicon": "LEXICON.md"}
-        ]},
-
-        # === TAB 6: ARABIC PORTAL ===
-        {"🇸🇦 البوابة العربية": [
-            {"الرئيسية ودليل الانطلاق": "README_AR.md"},
-            {"📑 مكتبة القوالب والتصفح التفاعلي": "catalog/ar/index.md"},
-            {"📋 فهرس القوالب القياسية": "forms/ar/index.md"},
-            {"📚 الأدلة والسياسات الحوكمية": [
-                {"01. دليل البدء السريع": "ar/01_getting_started.md"},
-                {"02. دليل الممارس الشامل": "ar/02_usage_guide.md"},
-                {"03. دليل سياسات PMO": "ar/03_pmo_policy_manual.md"},
-                {"04. بوابات العبور والمراجعات": "ar/04_stage_gates_and_governance.md"},
-                {"05. ملفات التخصيص وتصنيف المشاريع": "ar/05_tailoring_profiles.md"},
-                {"06. مصفوفة الصلاحيات RACI": "ar/06_raci_authority_matrix.md"},
-                {"07. شبكة اعتماديات الوثائق": "ar/07_document_dependencies.md"},
-                {"08. إطار حوكمة الذكاء الاصطناعي": "ar/08_ai_governance_framework.md"},
-                {"09. دليل المنهجيات الرشيقة والهجينة": "ar/09_agile_hybrid_integration.md"},
-                {"10. الأسئلة الشائعة وحل المشكلات": "ar/10_faq_and_troubleshooting.md"},
-                {"11. دليل الأدوات والأتمتة": "ar/11_tools_and_automation.md"},
-                {"12. معيار المعرفة المفتوحة (OKF)": "ar/12_open_knowledge_framework.md"}
-            ]}
-        ]}
-    ]
-
-    header_yaml = """site_name: Tasleemat PMO Operating System | تسليمات
-site_url: https://fakhr.me/Tasleemat/
-site_description: Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Automation Library aligned with PMI PMBOK® 6th, 7th & 8th Edition standards.
-site_author: Fakhruldeen & Tasleemat Contributors
-repo_url: https://github.com/fakhruldeen/Tasleemat
-repo_name: fakhruldeen/Tasleemat
-docs_dir: docs
-use_directory_urls: false
-
-theme:
-  name: material
-  language: en
-  palette:
-    # Light mode (Executive Corporate Navy Default)
-    - scheme: default
-      primary: indigo
-      accent: blue
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    # Dark mode (Clean Executive Slate)
-    - scheme: slate
-      primary: slate
-      accent: cyan
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - navigation.tracking
-    - navigation.path
-    - navigation.indexes
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.copy
-    - content.code.annotate
-    - content.tabs.link
-    - content.tooltips
-  logo: img/logo.png
-  favicon: img/logo.png
-
-extra_css:
-  - assets/custom.css
-  - https://unpkg.com/katex@0/dist/katex.min.css
-
-extra_javascript:
-  - assets/tasleemat_data.js
-  - assets/explorer.js
-  - assets/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-
-plugins:
-  - search
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.arithmatex:
-      generic: true
-  - tables
-  - attr_list
-  - md_in_html
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {{
+      if (window.renderMathInElement) {{
+        renderMathInElement(document.body, {{
+          delimiters: [
+            {{left: "$$", right: "$$", display: true}},
+            {{left: "$", right: "$", display: false}},
+            {{left: "\\\\(", right: "\\\\)", display: false}},
+            {{left: "\\\\[", right: "\\\\]", display: true}}
+          ]
+        }});
+      }}
+      if (window.mermaid) {{
+        mermaid.initialize({{ startOnLoad: true, theme: 'default' }});
+      }}
+      
+      const toggleBtn = document.getElementById("theme-toggle");
+      if (toggleBtn) {{
+        toggleBtn.addEventListener("click", function() {{
+          const html = document.documentElement;
+          const current = html.getAttribute("data-md-color-scheme");
+          const next = current === "slate" ? "default" : "slate";
+          html.setAttribute("data-md-color-scheme", next);
+          toggleBtn.textContent = next === "slate" ? "☀️" : "🌙";
+        }});
+      }}
+    }});
+  </script>
+</body>
+</html>
 """
-
-    nav_yaml = yaml.dump({"nav": nav}, allow_unicode=True, sort_keys=False, default_flow_style=False)
-    mkdocs_file.write_text(header_yaml.strip() + "\n\n" + nav_yaml + "\n", encoding="utf-8")
-    print("mkdocs.yml navigation updated successfully.")
-
-    tech_file = ROOT / "TECHNICAL.md"
-    if tech_file.exists():
-        shutil.copyfile(tech_file, DOCS_DIR / "TECHNICAL.md")
-
 
 def generate_tasleemat_data_js(deliverables):
     """Generate docs/assets/tasleemat_data.js containing full client-side bundles for all 102 deliverables."""
@@ -2159,5 +2060,101 @@ def generate_tasleemat_data_js(deliverables):
     out_file.write_text(f"window.TASLEEMAT_DATA = {json_str};\n", encoding="utf-8")
     print(f"Generated {out_file} with {len(data_list)} deliverables ({len(json_str)} bytes).")
 
+def compile_static_site(deliverables):
+    """Compile all markdown files in docs/ into a standalone Executive Static HTML site in site/."""
+    SITE_DIR = ROOT / "site"
+    if SITE_DIR.exists():
+        shutil.rmtree(SITE_DIR)
+    SITE_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Process TECHNICAL.md
+    tech_file = ROOT / "TECHNICAL.md"
+    if tech_file.exists():
+        shutil.copyfile(tech_file, DOCS_DIR / "TECHNICAL.md")
+
+    # Generate tasleemat_data.js in docs/assets
+    generate_tasleemat_data_js(deliverables)
+
+    # Copy assets & img to site/
+    shutil.copytree(DOCS_DIR / "assets", SITE_DIR / "assets")
+    shutil.copytree(DOCS_DIR / "img", SITE_DIR / "img")
+
+    md_files = list(DOCS_DIR.rglob("*.md"))
+    print(f"Compiling {len(md_files)} markdown files to static HTML portal...")
+
+    for md_file in md_files:
+        rel_path = md_file.relative_to(DOCS_DIR)
+        out_html = SITE_DIR / rel_path.with_suffix(".html")
+        out_html.parent.mkdir(parents=True, exist_ok=True)
+
+        depth = len(rel_path.parts) - 1
+        rel_root = "../" * depth if depth > 0 else "./"
+
+        is_ar = "/ar/" in str(rel_path) or "README_AR" in str(rel_path) or "_قالب" in str(rel_path) or "_دليل" in str(rel_path) or "_مثال" in str(rel_path)
+
+        lang_switch_url = ""
+        if is_ar:
+            if str(rel_path) == "README_AR.md":
+                lang_switch_url = "index.html"
+            else:
+                candidate = str(rel_path).replace("/ar/", "/en/").replace("_قالب", "_Template").replace("_دليل", "_Guide").replace("_مثال", "_Example").replace(".md", ".html")
+                if (DOCS_DIR / candidate.replace(".html", ".md")).exists():
+                    lang_switch_url = candidate
+        else:
+            if str(rel_path) == "index.md":
+                lang_switch_url = "README_AR.html"
+            else:
+                candidate = str(rel_path).replace("/en/", "/ar/").replace("_Template", "_قالب").replace("_Guide", "_دليل").replace("_Example", "_مثال").replace(".md", ".html")
+                if (DOCS_DIR / candidate.replace(".html", ".md")).exists():
+                    lang_switch_url = candidate
+
+        content = md_file.read_text(encoding="utf-8")
+
+        # Clean frontmatter
+        if content.startswith("<!--") and "-->" in content:
+            content = content.split("-->", 1)[1]
+
+        h1_match = re.search(r"^#\s+(.+)$", content, re.MULTILINE)
+        title = h1_match.group(1).strip() if h1_match else md_file.stem.replace("_", " ").title()
+
+        # Convert Callouts (> [!NOTE], etc.)
+        def repl_callout(match):
+            kind = match.group(1).upper()
+            body = match.group(2).strip()
+            color_map = {
+                "NOTE": ("border-blue-500", "bg-blue-50", "text-blue-900", "ℹ️ Note"),
+                "TIP": ("border-emerald-500", "bg-emerald-50", "text-emerald-900", "💡 Tip"),
+                "IMPORTANT": ("border-purple-500", "bg-purple-50", "text-purple-900", "❗ Important"),
+                "WARNING": ("border-amber-500", "bg-amber-50", "text-amber-900", "⚠️ Warning"),
+                "CAUTION": ("border-rose-500", "bg-rose-50", "text-rose-900", "🛑 Caution")
+            }
+            border, bg, txt, label = color_map.get(kind, ("border-blue-500", "bg-blue-50", "text-blue-900", f"ℹ️ {kind}"))
+            return f'<div class="my-4 p-4 border-l-4 {border} {bg} rounded-r-md"><div class="font-bold text-sm {txt} mb-1">{label}</div><div class="text-sm {txt}">{body}</div></div>'
+
+        content = re.sub(r"^\>\s*\[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*(.*)$", repl_callout, content, flags=re.MULTILINE | re.IGNORECASE)
+
+        # Convert markdown relative links to .html
+        def repl_md_link(match):
+            text = match.group(1)
+            url = match.group(2).strip()
+            if not url.startswith(("http://", "https://", "mailto:", "#")):
+                clean_u = url.split("#")[0].split("?")[0].strip()
+                if clean_u.endswith(".md"):
+                    url = url.replace(".md", ".html")
+            return f"[{text}]({url})"
+
+        content = re.sub(r"\[((?:[^\[\]]|\[[^\[\]]*\])*)\]\(((?:[^()]+|\([^()]*\))+)\)", repl_md_link, content)
+
+        body_html = markdown.markdown(
+            content,
+            extensions=["tables", "fenced_code", "toc", "attr_list", "admonition"]
+        )
+
+        final_html = wrap_html_in_shell(title, body_html, rel_root=rel_root, is_ar=is_ar, lang_switch_url=lang_switch_url)
+        out_html.write_text(final_html, encoding="utf-8")
+
+    print(f"Executive static HTML portal compiled successfully to {SITE_DIR}!")
+
 if __name__ == "__main__":
     build_portal()
+

@@ -66,33 +66,29 @@ class TestDocumentation(unittest.TestCase):
         self.assertEqual(data.get("total_forms"), 102)
         self.assertEqual(len(data.get("forms", [])), 102)
 
-    def test_mkdocs_navigation_targets_exist(self):
-        """Verify mkdocs.yml loads correctly and all referenced files exist on disk."""
-        mkdocs_path = ROOT / "mkdocs.yml"
-        self.assertTrue(mkdocs_path.exists(), "mkdocs.yml must exist at repo root")
+    def test_static_portal_site_generation(self):
+        """Verify the custom static HTML portal generates site/ with core HTML pages and assets."""
+        site_dir = ROOT / "site"
+        self.assertTrue(site_dir.exists(), "site/ directory must exist after portal generation")
 
-        with open(mkdocs_path, "r", encoding="utf-8") as f:
-            conf = yaml.load(f, Loader=CustomYamlLoader)
+        required_pages = [
+            "index.html",
+            "README_AR.html",
+            "TECHNICAL.html",
+            "LEXICON.html",
+            "catalog/en/index.html",
+            "catalog/ar/index.html",
+            "en/01_getting_started.html",
+            "ar/01_getting_started.html",
+            "assets/custom.css",
+            "assets/tasleemat_data.js",
+            "assets/search.js",
+            "assets/explorer.js",
+        ]
+        for rel in required_pages:
+            p = site_dir / rel
+            self.assertTrue(p.exists(), f"Static portal page {rel} missing in site/")
 
-        self.assertIn("site_name", conf)
-        nav = conf.get("nav", [])
-        self.assertTrue(len(nav) > 0, "mkdocs.yml navigation must not be empty")
-
-        missing_files = []
-        def check_nav(item):
-            if isinstance(item, dict):
-                for k, v in item.items():
-                    check_nav(v)
-            elif isinstance(item, list):
-                for sub in item:
-                    check_nav(sub)
-            elif isinstance(item, str):
-                target = DOCS_DIR / item
-                if not target.exists():
-                    missing_files.append((item, str(target)))
-
-        check_nav(nav)
-        self.assertEqual(len(missing_files), 0, f"mkdocs.yml references missing files: {missing_files}")
 
     def test_repo_readmes(self):
         """Verify root README.md and README_AR.md are rich, present, and valid."""
