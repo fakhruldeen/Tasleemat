@@ -18,6 +18,7 @@ import json
 import shutil
 import pathlib
 import markdown
+from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from tools.stitch_screens_builder import (
@@ -1897,18 +1898,23 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
     font_class = "font-arabic" if is_ar else "font-sans"
 
     nav_home = f"{rel_root}index.html" if not is_ar else f"{rel_root}README_AR.html"
-    nav_gates = f"{rel_root}governance.html"
     nav_catalog = f"{rel_root}catalog/en/index.html" if not is_ar else f"{rel_root}catalog/ar/index.html"
+    nav_gates = f"{rel_root}governance.html"
+    nav_tailoring = f"{rel_root}governance.html#tailoring-matrix"
+    nav_tech = f"{rel_root}developer.html"
+    nav_lexicon = f"{rel_root}developer.html#lexicon"
     nav_viewer = f"{rel_root}forms/ar/form-viewer.html"
     nav_manuals = f"{rel_root}en/01_getting_started.html" if not is_ar else f"{rel_root}ar/01_getting_started.html"
-    nav_tech = f"{rel_root}developer.html"
-    nav_lexicon = f"{rel_root}LEXICON.html"
     
     lang_btn = ""
     if lang_switch_url:
         target = f"{rel_root}{lang_switch_url}"
-        lbl = "🇸🇦 البوابة العربية" if not is_ar else "🇬🇧 English Portal"
-        lang_btn = f'<a href="{target}" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition">{lbl}</a>'
+        lbl = "🇸🇦 العربية" if not is_ar else "🇬🇧 English"
+        lang_btn = f'<a href="{target}" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">{lbl}</a>'
+    else:
+        target = f"{rel_root}README_AR.html" if not is_ar else f"{rel_root}index.html"
+        lbl = "🇸🇦 العربية" if not is_ar else "🇬🇧 English"
+        lang_btn = f'<a href="{target}" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">{lbl}</a>'
 
     return f"""<!DOCTYPE html>
 <html lang="{lang_attr}" dir="{dir_attr}" data-md-color-scheme="default">
@@ -1916,6 +1922,10 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
   <link rel="stylesheet" href="{rel_root}assets/custom.css">
@@ -1927,28 +1937,33 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
   <script src="{rel_root}assets/search.js"></script>
   <script src="{rel_root}assets/explorer.js"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col {font_class}">
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <a href="{nav_home}" class="flex items-center gap-2 text-decoration-none">
-          <img src="{rel_root}img/logo.png" alt="Tasleemat Logo" class="h-9 w-auto">
-          <span class="font-bold text-lg tracking-tight text-slate-900">تسليمات | <span class="text-blue-700">Tasleemat</span></span>
+        <a href="{nav_home}" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="{rel_root}img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
         </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.0.2</span>
       </div>
 
-      <nav class="hidden md:flex items-center gap-1 font-medium text-sm">
-        <a href="{nav_home}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🏠 {"Home" if not is_ar else "الرئيسية"}</a>
-        <a href="{nav_gates}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🚀 {"Stage-Gates" if not is_ar else "بوابات العبور"}</a>
-        <a href="{nav_catalog}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📑 {"Deliverables" if not is_ar else "المكتبة التفاعلية"}</a>
-        <a href="{nav_viewer}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📝 {"Form Viewer" if not is_ar else "معاينة النماذج"}</a>
-        <a href="{nav_manuals}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📚 {"PMO Manuals" if not is_ar else "أدلة PMO"}</a>
-        <a href="{nav_tech}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">💻 {"Developer Hub" if not is_ar else "مركز التطوير"}</a>
-        <a href="{nav_lexicon}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📖 {"Lexicon" if not is_ar else "المعجم"}</a>
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="{nav_home}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Home / Overview" if not is_ar else "الرئيسية"}</a>
+        <a href="{nav_catalog}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"102 Templates Catalog" if not is_ar else "كتالوج النماذج"}</a>
+        <a href="{nav_gates}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Stage-Gate Governance" if not is_ar else "بوابات العبور"}</a>
+        <a href="{nav_tailoring}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Tailoring Profiles" if not is_ar else "مستويات التخصيص"}</a>
+        <a href="{nav_viewer}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Form Viewer" if not is_ar else "معاينة النماذج"}</a>
+        <a href="{nav_manuals}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"PMO Manuals" if not is_ar else "أدلة PMO"}</a>
+        <a href="{nav_tech}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Developer & CLI" if not is_ar else "أدوات المطورين"}</a>
+        <a href="{nav_lexicon}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Bilingual Lexicon" if not is_ar else "المعجم الموحد"}</a>
       </nav>
 
       <div class="flex items-center gap-2">
-        <button class="tasleemat-search-btn flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-200 transition">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
           <span>🔍</span>
           <span class="hidden sm:inline">{"Search..." if not is_ar else "بحث..."}</span>
           <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
@@ -1956,31 +1971,66 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
         
         {lang_btn}
 
-        <button id="theme-toggle" class="p-2 rounded-lg text-slate-500 hover:bg-slate-100 transition" title="Toggle Theme">
-          🌙
-        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
       </div>
     </div>
   </header>
 
   <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-slate-200 shadow-sm">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
       {body_html}
     </div>
   </main>
 
-  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div>
-        <p class="font-medium text-slate-300">Tasleemat PMO Operating System (تسليمات)</p>
-        <p class="text-slate-500 mt-1">PMI PMBOK® 6th, 7th & 8th Edition Compliant | OKF v0.2 Standard</p>
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="{nav_catalog}">102 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="{nav_gates}">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="{nav_tailoring}">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="{nav_lexicon}">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="{nav_tech}">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hover:text-white transition">GitHub Repository</a>
-        <a href="{rel_root}governance.html" class="hover:text-white transition">Stage-Gates & Tailoring</a>
-        <a href="{rel_root}forms/ar/form-viewer.html" class="hover:text-white transition">Interactive Form Viewer</a>
-        <a href="{rel_root}LEXICON.html" class="hover:text-white transition">Master Lexicon</a>
-        <a href="{rel_root}developer.html" class="hover:text-white transition">Developer SDK</a>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="{nav_home}">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="{nav_gates}">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="{nav_tech}">Developer SDK</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -1998,17 +2048,10 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
         }});
       }}
       if (window.mermaid) {{
-        mermaid.initialize({{ startOnLoad: true, theme: 'default' }});
-      }}
-      
-      const toggleBtn = document.getElementById("theme-toggle");
-      if (toggleBtn) {{
-        toggleBtn.addEventListener("click", function() {{
-          const html = document.documentElement;
-          const current = html.getAttribute("data-md-color-scheme");
-          const next = current === "slate" ? "default" : "slate";
-          html.setAttribute("data-md-color-scheme", next);
-          toggleBtn.textContent = next === "slate" ? "☀️" : "🌙";
+        mermaid.initialize({{
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
         }});
       }}
     }});
@@ -2089,6 +2132,149 @@ def generate_tasleemat_data_js(deliverables):
     out_file.write_text(f"window.TASLEEMAT_DATA = {json_str};\n", encoding="utf-8")
     print(f"Generated {out_file} with {len(data_list)} deliverables ({len(json_str)} bytes).")
 
+def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str = "./") -> str:
+    """Process a raw Stitch screen HTML, injecting titles, favicons, relative links, and language toggles."""
+    html_content = html_path.read_text(encoding="utf-8")
+    soup = BeautifulSoup(html_content, "html.parser")
+    
+    titles = {
+        "home_en": "Tasleemat (تسليمات) | Enterprise PMO Operating System & Deliverables Framework",
+        "home_ar": "تسليمات | دليل النماذج والتسليمات القياسية الموثقة (102 تسليمة)",
+        "developer": "Developer Manual & Bilingual Lexicon | Tasleemat PMO CLI & Python SDK",
+        "governance": "Stage-Gate Governance & Tailoring Matrix | Tasleemat PMO Framework",
+        "catalog_en": "102 Deliverables & Templates Catalog | Tasleemat PMO Explorer",
+        "catalog_ar": "كتالوج النماذج والتسليمات القياسية (102 تسليمة) | مستكشف تسليمات",
+        "form_viewer": "معاينة النماذج التفاعلية | ميثاق المشروع القياسي FORM-03-01",
+    }
+    
+    # 1. Update Title
+    if not soup.find("title"):
+        t = soup.new_tag("title")
+        t.string = titles.get(page_type, "Tasleemat PMO Framework")
+        soup.head.insert(0, t)
+    else:
+        soup.find("title").string = titles.get(page_type, soup.find("title").string)
+        
+    # 2. Add Favicon if missing
+    if not soup.find("link", rel=lambda r: r and "icon" in r):
+        fav = soup.new_tag("link", rel="icon", type="image/png", href=f"{rel_root}img/logo.png")
+        soup.head.append(fav)
+
+    is_ar = page_type in ["home_ar", "catalog_ar", "form_viewer"]
+    
+    # Nav mappings
+    nav_map_en = {
+        "overview": f"{rel_root}index.html",
+        "home": f"{rel_root}index.html",
+        "templates-catalog": f"{rel_root}catalog/en/index.html" if rel_root != "../../" else "./index.html",
+        "stage-gate-governance": f"{rel_root}governance.html",
+        "stage-gates": f"{rel_root}governance.html",
+        "tailoring-profiles": f"{rel_root}governance.html#tailoring-matrix",
+        "developer-cli": f"{rel_root}developer.html",
+        "bilingual-lexicon": f"{rel_root}developer.html#lexicon",
+    }
+    nav_map_ar = {
+        "overview": f"{rel_root}README_AR.html",
+        "home": f"{rel_root}README_AR.html",
+        "templates-catalog": f"{rel_root}catalog/ar/index.html" if rel_root != "../../" else "./index.html",
+        "stage-gate-governance": f"{rel_root}governance.html",
+        "stage-gates": f"{rel_root}governance.html",
+        "tailoring-profiles": f"{rel_root}governance.html#tailoring-matrix",
+        "developer-cli": f"{rel_root}developer.html",
+        "bilingual-lexicon": f"{rel_root}developer.html#lexicon",
+    }
+    nav_map = nav_map_ar if is_ar else nav_map_en
+
+    for a in soup.find_all("a"):
+        dp = a.get("data-path")
+        if dp and dp in nav_map:
+            a["href"] = nav_map[dp]
+        elif a.get("href") == "#" and any(k in a.get_text().lower() for k in ["star", "fork", "github", "repo"]):
+            a["href"] = "https://github.com/fakhruldeen/Tasleemat"
+            a["target"] = "_blank"
+            
+    for btn in soup.find_all("button"):
+        txt = btn.get_text(strip=True)
+        lbl = btn.get("aria-label") or ""
+        if ("EN" in txt and ("عرب" in txt or "🇸🇦" in txt)) or "Toggle Language" in lbl or "translate" in txt:
+            if rel_root == "../../":
+                target_lang_url = "../ar/index.html" if not is_ar else "../en/index.html"
+            else:
+                target_lang_url = f"{rel_root}README_AR.html" if not is_ar else f"{rel_root}index.html"
+            btn["onclick"] = f"window.location.href=\"{target_lang_url}\""
+
+    return str(soup)
+
+def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path):
+    """Compile the 6 actual Stitch designs into the primary landing and functional pages."""
+    screens_dir = ROOT / "_stitch_designs" / "screens"
+    if not screens_dir.exists():
+        print("Warning: _stitch_designs/screens directory not found. Skipping stitch screens.")
+        return
+
+    s_map = {
+        "home_en": screens_dir / "d5a82735c4a448e9962ccd685a4394ed_actual.html",
+        "home_ar": screens_dir / "66631fc7bc5a4c4c91bf53e0e074c0aa_actual.html",
+        "developer": screens_dir / "f699bea80c2c4c0dab54430a6b8e8378_actual.html",
+        "governance": screens_dir / "f3e5b34906a04a2eb2c99a7262a48939_actual.html",
+        "catalog_en": screens_dir / "fe772f47175f48ab924c1b977d680f4a_actual.html",
+        "form_viewer": screens_dir / "80e3594dd2de4c31a6b3f5ddd4bed3b5_actual.html",
+    }
+
+    # Verify all actual files exist
+    for k, p in s_map.items():
+        if not p.exists():
+            print(f"Warning: Stitch actual screen {p} not found.")
+            return
+
+    # 1. English Home
+    html_home_en = process_stitch_screen(s_map["home_en"], "home_en", rel_root="./")
+    (site_dir / "index.html").write_text(html_home_en, encoding="utf-8")
+    (docs_dir / "index.html").write_text(html_home_en, encoding="utf-8")
+
+    # 2. Arabic Home
+    html_home_ar = process_stitch_screen(s_map["home_ar"], "home_ar", rel_root="./")
+    (site_dir / "README_AR.html").write_text(html_home_ar, encoding="utf-8")
+    (docs_dir / "README_AR.html").write_text(html_home_ar, encoding="utf-8")
+
+    # 3. Developer & CLI & Lexicon & Technical
+    html_dev = process_stitch_screen(s_map["developer"], "developer", rel_root="./")
+    (site_dir / "developer.html").write_text(html_dev, encoding="utf-8")
+    (docs_dir / "developer.html").write_text(html_dev, encoding="utf-8")
+    (site_dir / "TECHNICAL.html").write_text(html_dev, encoding="utf-8")
+    (docs_dir / "TECHNICAL.html").write_text(html_dev, encoding="utf-8")
+    (site_dir / "LEXICON.html").write_text(html_dev, encoding="utf-8")
+    (docs_dir / "LEXICON.html").write_text(html_dev, encoding="utf-8")
+
+    # 4. Governance & Stage-Gates & Tailoring
+    html_gov = process_stitch_screen(s_map["governance"], "governance", rel_root="./")
+    (site_dir / "governance.html").write_text(html_gov, encoding="utf-8")
+    (docs_dir / "governance.html").write_text(html_gov, encoding="utf-8")
+
+    # 5. Catalog EN & AR
+    html_cat_en = process_stitch_screen(s_map["catalog_en"], "catalog_en", rel_root="../../")
+    (site_dir / "catalog" / "en").mkdir(parents=True, exist_ok=True)
+    (docs_dir / "catalog" / "en").mkdir(parents=True, exist_ok=True)
+    (site_dir / "catalog" / "en" / "index.html").write_text(html_cat_en, encoding="utf-8")
+    (docs_dir / "catalog" / "en" / "index.html").write_text(html_cat_en, encoding="utf-8")
+
+    html_cat_ar = process_stitch_screen(s_map["catalog_en"], "catalog_ar", rel_root="../../")
+    (site_dir / "catalog" / "ar").mkdir(parents=True, exist_ok=True)
+    (docs_dir / "catalog" / "ar").mkdir(parents=True, exist_ok=True)
+    (site_dir / "catalog" / "ar" / "index.html").write_text(html_cat_ar, encoding="utf-8")
+    (docs_dir / "catalog" / "ar" / "index.html").write_text(html_cat_ar, encoding="utf-8")
+
+    # 6. Form Viewer & FORM-03-01
+    html_form = process_stitch_screen(s_map["form_viewer"], "form_viewer", rel_root="../../")
+    (site_dir / "forms" / "ar").mkdir(parents=True, exist_ok=True)
+    (docs_dir / "forms" / "ar").mkdir(parents=True, exist_ok=True)
+    (site_dir / "forms" / "ar" / "form-viewer.html").write_text(html_form, encoding="utf-8")
+    (docs_dir / "forms" / "ar" / "form-viewer.html").write_text(html_form, encoding="utf-8")
+    (site_dir / "forms" / "ar" / "FORM-03-01.html").write_text(html_form, encoding="utf-8")
+    (docs_dir / "forms" / "ar" / "FORM-03-01.html").write_text(html_form, encoding="utf-8")
+
+    print("Successfully compiled all 6 Stitch screen designs into site/ and docs/!")
+
 def compile_static_site(deliverables):
     """Compile all markdown files in docs/ into a standalone Executive Static HTML site in site/."""
     SITE_DIR = ROOT / "site"
@@ -2115,10 +2301,16 @@ def compile_static_site(deliverables):
         out_html.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(html_file, out_html)
 
+    # Markdown pages that have dedicated Stitch screens should NOT be overwritten by markdown prose
+    SKIP_MD_PAGES = {"index.md", "README_AR.md", "developer.md", "governance.md", "TECHNICAL.md"}
+
     md_files = list(DOCS_DIR.rglob("*.md"))
     print(f"Compiling {len(md_files)} markdown files to static HTML portal...")
 
     for md_file in md_files:
+        if md_file.name in SKIP_MD_PAGES:
+            continue
+
         rel_path = md_file.relative_to(DOCS_DIR)
         out_html = SITE_DIR / rel_path.with_suffix(".html")
         out_html.parent.mkdir(parents=True, exist_ok=True)
@@ -2130,23 +2322,13 @@ def compile_static_site(deliverables):
 
         lang_switch_url = ""
         if is_ar:
-            if str(rel_path) == "README_AR.md":
-                lang_switch_url = "index.html"
-            else:
-                candidate = str(rel_path).replace("/ar/", "/en/").replace("_قالب", "_Template").replace("_دليل", "_Guide").replace("_مثال", "_Example").replace(".md", ".html")
-                if (DOCS_DIR / candidate.replace(".html", ".md")).exists():
-                    lang_switch_url = candidate
+            candidate = str(rel_path).replace("/ar/", "/en/").replace("_قالب", "_Template").replace("_دليل", "_Guide").replace("_مثال", "_Example").replace(".md", ".html")
+            if (DOCS_DIR / candidate.replace(".html", ".md")).exists():
+                lang_switch_url = candidate
         else:
-            if str(rel_path) == "index.md":
-                lang_switch_url = "README_AR.html"
-            elif str(rel_path) == "governance.md":
-                lang_switch_url = "ar/04_stage_gates_and_governance.html"
-            elif str(rel_path) == "developer.md":
-                lang_switch_url = "ar/11_tools_and_automation.html"
-            else:
-                candidate = str(rel_path).replace("/en/", "/ar/").replace("_Template", "_قالب").replace("_Guide", "_دليل").replace("_Example", "_مثال").replace(".md", ".html")
-                if (DOCS_DIR / candidate.replace(".html", ".md")).exists():
-                    lang_switch_url = candidate
+            candidate = str(rel_path).replace("/en/", "/ar/").replace("_Template", "_قالب").replace("_Guide", "_دليل").replace("_Example", "_مثال").replace(".md", ".html")
+            if (DOCS_DIR / candidate.replace(".html", ".md")).exists():
+                lang_switch_url = candidate
 
         content = md_file.read_text(encoding="utf-8")
 
@@ -2195,6 +2377,9 @@ def compile_static_site(deliverables):
 
         final_html = wrap_html_in_shell(title, body_html, rel_root=rel_root, is_ar=is_ar, lang_switch_url=lang_switch_url)
         out_html.write_text(final_html, encoding="utf-8")
+
+    # Compile the 6 core Stitch screens directly into site/ and docs/
+    compile_stitch_screens(SITE_DIR, DOCS_DIR)
 
     print(f"Executive static HTML portal compiled successfully to {SITE_DIR}!")
 

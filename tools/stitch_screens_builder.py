@@ -500,32 +500,23 @@ def get_screen1_form_viewer_html(rel_root: str = "../../") -> str:
 
 
 def get_screen4_governance_md() -> str:
-    """Generates Stitch Screen 4: Stage-Gate Governance & Tailoring Profiles Portal."""
+    """Generates Stitch Screen 4: Stage-Gate Governance & Tailoring Profiles Portal in clean GitHub-flavored Markdown."""
     return """<!--
 ---
 type: Guide
 ---
 -->
 
-<div class="hero-wrapper">
-  <div class="hero-tag">
-    <span class="pulse-dot"></span> Stage-Gate Governance & Tailoring Architecture • PMI PMBOK® 6/7/8 & ISO 21500
-  </div>
-  <h1 class="hero-title">Tasleemat Stage-Gate Governance & Tailoring Profiles</h1>
-  <div class="hero-title-ar">منظومة بوابات العبور الحوكمية ومستويات تخصيص المشاريع</div>
-  <p class="hero-subtitle">
-    Structured gatekeeper decision checkpoints (Gate 0 Idea to Gate 5 Closeout) paired with 4 scalable project sizing tiers to ensure auditability, rigorous fiscal control, and zero governance bloat.
-  </p>
-  <div class="hero-actions">
-    <a href="#six-gates" class="btn-primary">🚪 Inspect 6 Stage-Gates</a>
-    <a href="#tailoring-matrix" class="btn-secondary">⚖️ Tailoring Tiers Matrix</a>
-    <a href="#calculator" class="btn-emerald">🧮 Launch Sizing Calculator</a>
-  </div>
-</div>
+# Stage-Gate Governance & Tailoring Architecture
+
+> **منظومة بوابات العبور الحوكمية ومستويات تخصيص المشاريع**  
+> *PMI PMBOK® 6/7/8 & ISO 21500 / ISO 21502:2021 Compliant*
+
+Structured gatekeeper decision checkpoints (Gate 0 Idea to Gate 5 Closeout) paired with 4 scalable project sizing tiers to ensure auditability, rigorous fiscal control, and zero governance bloat.
 
 ---
 
-<h2 id="executive-framework">🏛️ 1. Executive Governance Framework</h2>
+## 🏛️ 1. Executive Governance Framework
 
 Every project passing through Tasleemat undergoes rigorous stage-gate governance. Each gate represents a formal review where a designated governing authority evaluates deliverables and decides between **Three Gate Outcomes**:
 
@@ -551,160 +542,111 @@ flowchart LR
 
 ---
 
-<h2 id="six-gates">🚪 2. Interactive 6 Stage-Gates Visual Inspector</h2>
+## 🚪 2. Six Stage-Gates Specification
 
-<div class="space-y-6">
+### Gate 0: Strategic Concept & Portfolio Alignment
+*بوابة 0: دراسة الفكرة والمواءمة الاستراتيجية*
 
-  <!-- Gate 0 Card -->
-  <div class="dash-card">
-    <div class="dash-card-header">
-      <span class="badge badge-phase">Gate 0: Strategic Concept & Portfolio Alignment</span>
-      <span class="badge badge-code">Phase 00 & 01</span>
-      <span class="badge" style="background:#f0fdf4;color:#166534;">Authority: Investment Review Board / CFO</span>
-    </div>
-    <h3 class="dash-card-title">بوابة 0: دراسة الفكرة والمواءمة الاستراتيجية</h3>
-    <p class="dash-card-desc">
-      Validates strategic alignment, OKR linkage, high-level feasibility, and preliminary ROI before allocating capital or assigning project teams.
-    </p>
-    <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-2 mb-3">
-      <div class="font-bold text-slate-800">📋 Auditable Gate Checklist:</div>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>Initiative directly aligns with corporate OKRs or Vision 2030 strategic objectives.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>Business Case contains quantified cost of inaction and preliminary NPV/IRR analysis.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded text-teal-600"> <span>Initial feasibility study verifies technical and legal compliance.</span></label>
-    </div>
-    <div class="dash-card-actions">
-      <span class="badge badge-code">FORM-00-06: OKR Alignment</span>
-      <span class="badge badge-code">FORM-01-01: Business Case</span>
-      <span class="badge badge-code">FORM-01-02: Feasibility Study</span>
-    </div>
-  </div>
-
-  <!-- Gate 1 Card -->
-  <div class="dash-card">
-    <div class="dash-card-header">
-      <span class="badge badge-phase">Gate 1: Project Charter & Authorization</span>
-      <span class="badge badge-code">Phase 02 & 03</span>
-      <span class="badge" style="background:#eff6ff;color:#1e3a8a;">Authority: Executive Sponsor & PMO Director</span>
-    </div>
-    <h3 class="dash-card-title">بوابة 1: ميثاق المشروع والترخيص الرسمي</h3>
-    <p class="dash-card-desc">
-      Formally authorizes project existence, assigns the Project Manager, establishes high-level scope boundaries, and defines the initial budget envelope.
-    </p>
-    <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-2 mb-3">
-      <div class="font-bold text-slate-800">📋 Auditable Gate Checklist:</div>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>Signed Project Charter by Executive Sponsor and PMO Director.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>Governance tier selected (Tier 1-4) with tailored deliverable bundle.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>Initial stakeholder register and assumption log established.</span></label>
-    </div>
-    <div class="dash-card-actions">
-      <a href="forms/ar/form-viewer.html" class="card-btn" style="background:#0d9488;color:#fff!important;">🎯 معاينة تفاعلية (FORM-03-01)</a>
-      <span class="badge badge-code">FORM-03-01: Project Charter</span>
-      <span class="badge badge-code">FORM-03-04: Stakeholder Register</span>
-      <span class="badge badge-code">FORM-02-01: Tailoring Plan</span>
-    </div>
-  </div>
-
-  <!-- Gate 2 Card -->
-  <div class="dash-card">
-    <div class="dash-card-header">
-      <span class="badge badge-phase">Gate 2: Integrated Baselines Approval</span>
-      <span class="badge badge-code">Phase 04</span>
-      <span class="badge" style="background:#eff6ff;color:#1e3a8a;">Authority: PMO Steering Committee</span>
-    </div>
-    <h3 class="dash-card-title">بوابة 2: اعتماد خطوط الأساس المتكاملة</h3>
-    <p class="dash-card-desc">
-      Rigorous lock-in of Scope Baseline (WBS), Critical Path Schedule, Cost Baseline, and Risk Response Plans before major expenditure.
-    </p>
-    <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-2 mb-3">
-      <div class="font-bold text-slate-800">📋 Auditable Gate Checklist:</div>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>100% WBS Work Package coverage matching agreed scope dictionary.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>Cost baseline includes validated contingency and management reserves.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded text-teal-600"> <span>Risk Register contains proactive response plans for all High/Critical risks.</span></label>
-    </div>
-    <div class="dash-card-actions">
-      <span class="badge badge-code">FORM-04-03: Scope & WBS</span>
-      <span class="badge badge-code">FORM-04-12: Schedule Baseline</span>
-      <span class="badge badge-code">FORM-04-15: Cost Baseline</span>
-      <span class="badge badge-code">FORM-04-18: Risk Register</span>
-    </div>
-  </div>
-
-  <!-- Gate 3 Card -->
-  <div class="dash-card">
-    <div class="dash-card-header">
-      <span class="badge badge-phase">Gate 3: Execution Mid-Stage Health Check</span>
-      <span class="badge badge-code">Phase 05 & 06</span>
-      <span class="badge" style="background:#fef3c7;color:#92400e;">Authority: PMO Performance Board</span>
-    </div>
-    <h3 class="dash-card-title">بوابة 3: مراقبة الأداء وتحليل القيمة المكتسبة</h3>
-    <p class="dash-card-desc">
-      Continuous monitoring using Earned Value Analysis (EVA): verifies Cost Performance Index (CPI >= 0.95) and Schedule Performance Index (SPI >= 0.95).
-    </p>
-    <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-2 mb-3">
-      <div class="font-bold text-slate-800">📋 Auditable Gate Checklist:</div>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>SPI and CPI within acceptable control thresholds (>= 0.95).</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>All major issues have assigned owners and active remediation dates.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded text-teal-600"> <span>Change requests vetted through formal Change Control Board (CCB).</span></label>
-    </div>
-    <div class="dash-card-actions">
-      <span class="badge badge-code">FORM-06-03: Earned Value Report</span>
-      <span class="badge badge-code">FORM-05-03: Issue Log</span>
-      <span class="badge badge-code">FORM-05-04: Change Request</span>
-    </div>
-  </div>
-
-  <!-- Gate 4 Card -->
-  <div class="dash-card">
-    <div class="dash-card-header">
-      <span class="badge badge-phase">Gate 4: Operational Handover & UAT</span>
-      <span class="badge badge-code">Phase 06 & 07</span>
-      <span class="badge" style="background:#f0fdf4;color:#166534;">Authority: Operations Director & End-User Sponsor</span>
-    </div>
-    <h3 class="dash-card-title">بوابة 4: القبول والتسليم التشغيلي</h3>
-    <p class="dash-card-desc">
-      Formal transition of project deliverables into business-as-usual (BAU) operations, warranty signoffs, and training sign-off.
-    </p>
-    <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-2 mb-3">
-      <div class="font-bold text-slate-800">📋 Auditable Gate Checklist:</div>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>100% user acceptance testing (UAT) test cases verified and signed off.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded text-teal-600"> <span>Operational handover protocols and SLA agreements executed.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded text-teal-600"> <span>Operations team fully trained with operational manuals delivered.</span></label>
-    </div>
-    <div class="dash-card-actions">
-      <span class="badge badge-code">FORM-06-05: Quality Acceptance</span>
-      <span class="badge badge-code">FORM-07-02: Operational Handover</span>
-    </div>
-  </div>
-
-  <!-- Gate 5 Card -->
-  <div class="dash-card">
-    <div class="dash-card-header">
-      <span class="badge badge-phase">Gate 5: Contract Closeout & Value Realization</span>
-      <span class="badge badge-code">Phase 07</span>
-      <span class="badge" style="background:#f8fafc;color:#0b132b;">Authority: Executive Sponsor & Audit Committee</span>
-    </div>
-    <h3 class="dash-card-title">بوابة 5: الإغلاق النهائي وتقييم الفوائد</h3>
-    <p class="dash-card-desc">
-      Final contract reconciliation, vendor evaluations, lessons learned archive, and post-implementation review (PIR) schedule.
-    </p>
-    <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-2 mb-3">
-      <div class="font-bold text-slate-800">📋 Auditable Gate Checklist:</div>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>All procurement contracts closed with final settlements executed.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked class="rounded text-teal-600"> <span>Comprehensive Lessons Learned Register archived in organizational repository.</span></label>
-      <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded text-teal-600"> <span>Post-Implementation Review (PIR) calendar established with Value Lead.</span></label>
-    </div>
-    <div class="dash-card-actions">
-      <span class="badge badge-code">FORM-07-01: Lessons Learned</span>
-      <span class="badge badge-code">FORM-07-03: Contract Closeout</span>
-      <span class="badge badge-code">FORM-07-05: Post-Implementation Review</span>
-    </div>
-  </div>
-
-</div>
+- **Lifecycle Phases:** Phase 00 (Discovery) & Phase 01 (Ideation)
+- **Governing Authority:** Investment Review Board / CFO / Portfolio Steering Committee
+- **Purpose:** Validates strategic alignment, OKR linkage, high-level feasibility, and preliminary ROI before allocating capital or assigning project teams.
+- **Auditable Gate Checklist:**
+  - [x] Initiative directly aligns with corporate OKRs or Vision 2030 strategic objectives.
+  - [x] Business Case contains quantified cost of inaction and preliminary NPV/IRR analysis.
+  - [ ] Initial feasibility study verifies technical and legal compliance.
+- **Key Artifacts:**
+  - `FORM-00-06`: OKR Alignment
+  - `FORM-01-01`: Business Case
+  - `FORM-01-02`: Feasibility Study
 
 ---
 
-<h2 id="tailoring-matrix">⚖️ 3. Tailoring Profiles Matrix (4 Project Sizing Tiers)</h2>
+### Gate 1: Project Charter & Authorization
+*بوابة 1: ميثاق المشروع والترخيص الرسمي*
+
+- **Lifecycle Phases:** Phase 02 (Preparation) & Phase 03 (Initiation)
+- **Governing Authority:** Executive Sponsor & PMO Director
+- **Purpose:** Formally authorizes project existence, assigns the Project Manager, establishes high-level scope boundaries, and defines the initial budget envelope.
+- **Auditable Gate Checklist:**
+  - [x] Signed Project Charter by Executive Sponsor and PMO Director.
+  - [x] Governance tier selected (Tier 1-4) with tailored deliverable bundle.
+  - [x] Initial stakeholder register and assumption log established.
+- **Key Artifacts:**
+  - `FORM-03-01`: Project Charter ([معاينة تفاعلية](forms/ar/form-viewer.html))
+  - `FORM-03-04`: Stakeholder Register
+  - `FORM-02-01`: Tailoring Plan
+
+---
+
+### Gate 2: Integrated Baselines Approval
+*بوابة 2: اعتماد خطوط الأساس المتكاملة*
+
+- **Lifecycle Phases:** Phase 04 (Planning)
+- **Governing Authority:** PMO Steering Committee
+- **Purpose:** Rigorous lock-in of Scope Baseline (WBS), Critical Path Schedule, Cost Baseline, and Risk Response Plans before major expenditure.
+- **Auditable Gate Checklist:**
+  - [x] 100% WBS Work Package coverage matching agreed scope dictionary.
+  - [x] Cost baseline includes validated contingency and management reserves.
+  - [ ] Risk Register contains proactive response plans for all High/Critical risks.
+- **Key Artifacts:**
+  - `FORM-04-03`: Scope & WBS
+  - `FORM-04-12`: Schedule Baseline
+  - `FORM-04-15`: Cost Baseline
+  - `FORM-04-18`: Risk Register
+
+---
+
+### Gate 3: Execution Mid-Stage Health Check
+*بوابة 3: مراقبة الأداء وتحليل القيمة المكتسبة*
+
+- **Lifecycle Phases:** Phase 05 (Execution) & Phase 06 (Monitoring & Controlling)
+- **Governing Authority:** PMO Performance Board
+- **Purpose:** Continuous monitoring using Earned Value Analysis (EVA): verifies Cost Performance Index (CPI ≥ 0.95) and Schedule Performance Index (SPI ≥ 0.95).
+- **Auditable Gate Checklist:**
+  - [x] SPI and CPI within acceptable control thresholds (≥ 0.95).
+  - [x] All major issues have assigned owners and active remediation dates.
+  - [ ] Change requests vetted through formal Change Control Board (CCB).
+- **Key Artifacts:**
+  - `FORM-06-03`: Earned Value Report
+  - `FORM-05-03`: Issue Log
+  - `FORM-05-04`: Change Request
+
+---
+
+### Gate 4: Operational Handover & UAT
+*بوابة 4: القبول والتسليم التشغيلي*
+
+- **Lifecycle Phases:** Phase 06 (Controlling) & Phase 07 (Closing)
+- **Governing Authority:** Operations Director & End-User Sponsor
+- **Purpose:** Formal transition of project deliverables into business-as-usual (BAU) operations, warranty signoffs, and training sign-off.
+- **Auditable Gate Checklist:**
+  - [x] 100% user acceptance testing (UAT) test cases verified and signed off.
+  - [ ] Operational handover protocols and SLA agreements executed.
+  - [ ] Operations team fully trained with operational manuals delivered.
+- **Key Artifacts:**
+  - `FORM-06-05`: Quality Acceptance
+  - `FORM-07-02`: Operational Handover
+
+---
+
+### Gate 5: Contract Closeout & Value Realization
+*بوابة 5: الإغلاق النهائي وتقييم الفوائد*
+
+- **Lifecycle Phases:** Phase 07 (Closing)
+- **Governing Authority:** Executive Sponsor & Audit Committee
+- **Purpose:** Final contract reconciliation, vendor evaluations, lessons learned archive, and post-implementation review (PIR) schedule.
+- **Auditable Gate Checklist:**
+  - [x] All procurement contracts closed with final settlements executed.
+  - [x] Comprehensive Lessons Learned Register archived in organizational repository.
+  - [ ] Post-Implementation Review (PIR) calendar established with Value Lead.
+- **Key Artifacts:**
+  - `FORM-07-01`: Lessons Learned
+  - `FORM-07-03`: Contract Closeout
+  - `FORM-07-05`: Post-Implementation Review
+
+---
+
+## ⚖️ 3. Tailoring Profiles Matrix (4 Project Sizing Tiers)
 
 | Tier | Project Profile | Artifact Bundle | Governance Cadence | Required Approvals |
 | :--- | :--- | :---: | :--- | :--- |
@@ -715,237 +657,115 @@ flowchart LR
 
 ---
 
-<h2 id="calculator">🧮 4. Interactive Project Tailoring Calculator</h2>
+## 🧮 4. Project Tailoring Decision Matrix & CLI Automation
 
-<div class="tailoring-calculator-card">
-  <div class="calc-grid">
-    <div class="calc-field">
-      <label>Project Budget Envelope:</label>
-      <select id="calc-budget" class="calc-select" onchange="runTailoringCalc()">
-        <option value="1">Small (Under $100K / 400K SAR)</option>
-        <option value="2" selected>Medium ($100K – $1M / 400K - 4M SAR)</option>
-        <option value="3">Enterprise (Over $1M / 4M+ SAR)</option>
-      </select>
-    </div>
+Use the project parameter table below to determine the recommended governance pack:
 
-    <div class="calc-field">
-      <label>Estimated Project Duration:</label>
-      <select id="calc-duration" class="calc-select" onchange="runTailoringCalc()">
-        <option value="1">Under 3 Months</option>
-        <option value="2" selected>3 to 12 Months</option>
-        <option value="3">Over 1 Year (Multi-Year)</option>
-      </select>
-    </div>
+| Parameter | Options | Recommended Action / Pack |
+| :--- | :--- | :--- |
+| **Budget Envelope** | Small (< $100K) / Medium ($100K–$1M) / Enterprise (> $1M) | Low budgets qualify for Tier 1; Enterprise requires Tier 3 |
+| **Duration** | < 3 months / 3–12 months / Multi-Year | Short durations qualify for Tier 1; Multi-year requires Tier 3 |
+| **Methodology** | Traditional Waterfall / Agile Scrum / AI & Data Science | Agile & AI use Tier 4 specialized bundles |
+| **Compliance** | Standard Enterprise / High Regulatory (Gov, DGA, SAMA) | High regulatory triggers mandatory Tier 3 oversight |
 
-    <div class="calc-field">
-      <label>Delivery Methodology:</label>
-      <select id="calc-method" class="calc-select" onchange="runTailoringCalc()">
-        <option value="predictive" selected>Traditional / Predictive (Waterfall)</option>
-        <option value="agile">Agile / Scrum / Kanban</option>
-        <option value="ai">AI / Machine Learning / Data Science</option>
-      </select>
-    </div>
+### Automated Project Initialization via CLI
 
-    <div class="calc-field">
-      <label>Regulatory & Compliance Level:</label>
-      <select id="calc-reg" class="calc-select" onchange="runTailoringCalc()">
-        <option value="standard" selected>Standard Enterprise Compliance</option>
-        <option value="high">High Regulatory (Gov / Financial / DGA)</option>
-      </select>
-    </div>
-  </div>
+Initialize tailored project structures directly with the CLI:
 
-  <div id="calc-result" class="calc-result-box">
-    <div>
-      <div class="text-xs text-emerald-800 font-bold uppercase tracking-wider">Recommended Governance Profile:</div>
-      <div id="calc-tier-title" class="text-lg font-bold text-emerald-950 mt-1">Tier 2: Standard Core Pack (18 Artifacts)</div>
-      <div id="calc-tier-desc" class="text-xs text-emerald-800 mt-1">Full Baselines (Scope, Schedule, Cost, Risk, Communications) with formal stage-gate approval at Gates 1, 2, and 4.</div>
-    </div>
-    <div>
-      <span id="calc-cli-btn" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900 text-slate-100 font-mono text-xs rounded-lg border border-slate-700 shadow-sm cursor-pointer" onclick="copyCalcCLI()">
-        <span class="text-emerald-400">$</span> <span id="calc-cli-cmd">tasleemat init --tier 2 --pack standard --lang both</span>
-        <span class="text-[10px] bg-slate-800 text-slate-400 px-1 py-0.5 rounded">📋 Copy</span>
-      </span>
-    </div>
-  </div>
-</div>
+```bash
+# Tier 1: Micro / Small Fast-Track (5 Core Artifacts)
+tasleemat init --tier 1 --pack lean --lang both
 
-<script>
-function runTailoringCalc() {
-  const budget = parseInt(document.getElementById("calc-budget").value);
-  const duration = parseInt(document.getElementById("calc-duration").value);
-  const method = document.getElementById("calc-method").value;
-  const reg = document.getElementById("calc-reg").value;
+# Tier 2: Standard Core Pack (18 Artifacts)
+tasleemat init --tier 2 --pack standard --lang both
 
-  let tier = 2;
-  let pack = "standard";
-  let title = "Tier 2: Standard Core Pack (18 Artifacts)";
-  let desc = "Full Baselines (Scope, Schedule, Cost, Risk, Communications) with formal stage-gate approval at Gates 1, 2, and 4.";
+# Tier 3: Enterprise Transformation Pack (45+ Artifacts)
+tasleemat init --tier 3 --pack enterprise --lang both
 
-  if (method === "ai") {
-    tier = 4;
-    pack = "ai";
-    title = "Tier 4: AI & Machine Learning Governance (25 Artifacts)";
-    desc = "AI Canvas, Model Cards, Bias Assessment, NIST AI RMF compliance, and iterative MLOps monitoring.";
-  } else if (method === "agile" && budget < 3) {
-    tier = 4;
-    pack = "agile";
-    title = "Tier 4: Agile / Lean Iterative Pack (25 Artifacts)";
-    desc = "Sprint Backlog, Retrospectives, Flow Metrics, Product Vision, and Definition of Done checklists.";
-  } else if (budget === 3 || reg === "high") {
-    tier = 3;
-    pack = "enterprise";
-    title = "Tier 3: Enterprise Transformation Pack (45+ Artifacts)";
-    desc = "Full institutional governance: Multi-vendor procurement, ESG compliance, steering committee signoffs, and independent audit trails.";
-  } else if (budget === 1 && duration === 1) {
-    tier = 1;
-    pack = "lean";
-    title = "Tier 1: Micro / Small Fast-Track (5 Core Artifacts)";
-    desc = "Charter, Action Log, Milestones Schedule, Status Report, and Operational Closeout.";
-  }
+# Tier 4: Agile / Lean Iterative Pack (25 Artifacts)
+tasleemat init --tier 4 --pack agile --lang both
 
-  document.getElementById("calc-tier-title").textContent = title;
-  document.getElementById("calc-tier-desc").textContent = desc;
-  document.getElementById("calc-cli-cmd").textContent = `tasleemat init --tier ${tier} --pack ${pack} --lang both`;
-}
-
-function copyCalcCLI() {
-  const cmd = document.getElementById("calc-cli-cmd").textContent;
-  navigator.clipboard.writeText(cmd);
-  alert("Copied to clipboard: " + cmd);
-}
-</script>
+# Tier 4: AI & Machine Learning Governance (25 Artifacts)
+tasleemat init --tier 4 --pack ai --lang both
+```
 """
 
 
 def get_screen3_developer_md() -> str:
-    """Generates Stitch Screen 3: Developer CLI, Python SDK & Bilingual Lexicon."""
+    """Generates Stitch Screen 3: Developer CLI, Python SDK & Bilingual Lexicon in clean GitHub-flavored Markdown."""
     return """<!--
 ---
 type: Guide
 ---
 -->
 
-<div class="hero-wrapper">
-  <div class="hero-tag">
-    <span class="pulse-dot"></span> Developer Manual, CLI Scaffolder & Python SDK • OKF Compliant
-  </div>
-  <h1 class="hero-title">Tasleemat Developer Tooling, Python SDK & Bilingual Lexicon</h1>
-  <div class="hero-title-ar">دليل المطورين، أدوات سطر الأوامر (CLI)، وحزمة بايثون، والمعجم الموحد</div>
-  <p class="hero-subtitle">
-    Programmatic scaffolding, friction-free schema validation, AI agent integration via <code>tasleemat.ai</code>, and standardized bilingual project management terminology.
-  </p>
-  <div class="hero-actions">
-    <span class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900 text-slate-100 font-mono text-xs rounded-lg border border-slate-700 shadow-sm cursor-pointer" onclick="navigator.clipboard.writeText('pip install tasleemat'); alert('Copied: pip install tasleemat');">
-      <span class="text-emerald-400">$</span> pip install tasleemat
-      <span class="text-[10px] bg-slate-800 text-slate-400 px-1 py-0.5 rounded">📋 Copy</span>
-    </span>
-    <a href="https://pypi.org/project/tasleemat/" target="_blank" class="btn-secondary">📦 PyPI Release ↗</a>
-    <a href="#cli-builder" class="btn-emerald">⚡ Interactive CLI Builder</a>
-    <a href="#lexicon" class="btn-secondary">📖 Master Lexicon Glossary</a>
-  </div>
-</div>
+# Developer Manual, CLI Scaffolder & Python SDK (`tasleemat.ai`)
+
+> **Bilingual PMO Governance, Automated Scaffolding & Standardized Terminology**  
+> *دليل المطورين، أدوات سطر الأوامر (CLI)، وحزمة بايثون، والمعجم الموحد*
+
+[![PyPI Version](https://img.shields.io/pypi/v/tasleemat.svg?color=blue)](https://pypi.org/project/tasleemat/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/tasleemat.svg)](https://pypi.org/project/tasleemat/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23193523-blue)](https://doi.org/10.5281/zenodo.23193523)
 
 ---
 
-<h2 id="installation">📦 1. Installation & Environment Verification</h2>
+## ⚡ Quick Start & Installation
+
+Install the official Tasleemat distribution package directly from PyPI:
 
 ```bash
-# Install the official global package
+# Install the core CLI and Python SDK
 pip install --upgrade tasleemat
 
-# Verify CLI version and environment readiness
+# Verify CLI version and environment health
 tasleemat --version
 tasleemat doctor
 ```
 
----
+### Standards & Compliance Grounding
 
-<h2 id="cli-builder">⚡ 2. Interactive CLI Command Generator</h2>
-
-Use the interactive generator below to build customized scaffolding commands:
-
-<div class="tailoring-calculator-card">
-  <div class="calc-grid">
-    <div class="calc-field">
-      <label>Governance Tier:</label>
-      <select id="cli-gen-tier" class="calc-select" onchange="updateCLICmd()">
-        <option value="1">Tier 1: Micro / Small (5 Artifacts)</option>
-        <option value="2" selected>Tier 2: Standard Core (18 Artifacts)</option>
-        <option value="3">Tier 3: Enterprise Transformation (45+ Artifacts)</option>
-        <option value="4">Tier 4: Agile / AI Iterative (25 Artifacts)</option>
-      </select>
-    </div>
-
-    <div class="calc-field">
-      <label>Package Pack Type:</label>
-      <select id="cli-gen-pack" class="calc-select" onchange="updateCLICmd()">
-        <option value="standard" selected>Standard Predictive / PMBOK</option>
-        <option value="agile">Agile / Scrum / Kanban</option>
-        <option value="gov">Saudi Gov / DGA Digital Transformation</option>
-      </select>
-    </div>
-
-    <div class="calc-field">
-      <label>Artifact Language:</label>
-      <select id="cli-gen-lang" class="calc-select" onchange="updateCLICmd()">
-        <option value="ar" selected>🇸🇦 Arabic Standardized (العربية)</option>
-        <option value="en">🇬🇧 English Only</option>
-        <option value="both">🌐 Bilingual Synchronized (Both)</option>
-      </select>
-    </div>
-
-    <div class="calc-field">
-      <label>Project Directory Name:</label>
-      <input type="text" id="cli-gen-name" class="calc-select" value="منصة_التحول_الرقمي" oninput="updateCLICmd()" />
-    </div>
-  </div>
-
-  <div class="cli-terminal-window">
-    <div class="terminal-header">
-      <div class="terminal-dots">
-        <span class="terminal-dot dot-red"></span>
-        <span class="terminal-dot dot-yellow"></span>
-        <span class="terminal-dot dot-green"></span>
-      </div>
-      <span class="terminal-title">bash — tasleemat cli scaffolder</span>
-      <button class="card-btn" style="padding: 2px 8px; font-size: 11px;" onclick="copyLiveCLI()">📋 Copy Command</button>
-    </div>
-    <div class="terminal-body">
-      <div class="flex items-center gap-2">
-        <span class="terminal-prompt">$</span>
-        <span id="live-cli-display" class="terminal-cmd">tasleemat init --tier 2 --pack standard --lang ar --name "منصة_التحول_الرقمي"</span>
-      </div>
-      <div class="terminal-output">
-        <span class="text-slate-400">[INFO] Initializing Tasleemat project directory structure...</span><br>
-        <span class="text-slate-400">[INFO] Generating 18 synchronized artifact bundles in Arabic (RTL)...</span><br>
-        <span class="terminal-badge-ok">[OK] Successfully generated project scaffold! Ready for delivery.</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-function updateCLICmd() {
-  const tier = document.getElementById("cli-gen-tier").value;
-  const pack = document.getElementById("cli-gen-pack").value;
-  const lang = document.getElementById("cli-gen-lang").value;
-  const name = document.getElementById("cli-gen-name").value || "my_pmo_project";
-
-  const cmd = `tasleemat init --tier ${tier} --pack ${pack} --lang ${lang} --name "${name}"`;
-  document.getElementById("live-cli-display").textContent = cmd;
-}
-
-function copyLiveCLI() {
-  const cmd = document.getElementById("live-cli-display").textContent;
-  navigator.clipboard.writeText(cmd);
-  alert("Copied to clipboard: " + cmd);
-}
-</script>
+| Dimension | Specification | Notes |
+|:---|:---|:---|
+| **Global Standard** | PMI PMBOK® 6th, 7th & 8th Edition | Complete alignment with Performance Domains |
+| **Data Architecture** | OKF Frictionless Datapackage (v0.2) | Machine-readable schema validation |
+| **International Quality**| ISO 21500 / ISO 21502:2021 | Governance and guidance for project management |
+| **AI Governance** | NIST AI RMF 1.0 & ISO 42001 | Grounded prompts and audit checklists |
+| **Language Parity** | Dual RTL/LTR (Arabic & English) | 1:1 bilingual field parity |
 
 ---
 
-<h2 id="python-sdk">🤖 3. Programmatic Python SDK (`tasleemat.ai`)</h2>
+## 🛠️ CLI Automation & Project Scaffolding
+
+Tasleemat includes an interactive scaffolding engine designed for command-line automation and CI/CD pipelines.
+
+### Common CLI Commands
+
+```bash
+# 1. Initialize a Standard Tier 2 Project in Arabic
+tasleemat init --tier 2 --pack standard --lang ar --name "منصة_التحول_الرقمي"
+
+# 2. Initialize a Fast Agile / Scrum Project with Dual Language
+tasleemat init --tier 4 --pack agile --lang both --name "digital_agile_hub"
+
+# 3. Scaffold an Individual Deliverable Template
+tasleemat scaffold FORM-03-01 --lang dual --out ./deliverables/
+
+# 4. Validate All Deliverables against Frictionless Data Schemas
+tasleemat validate ./deliverables/ --strict
+```
+
+### Supported Governance Sizing Tiers
+
+1. **Tier 1 (Micro / Small - 5 Artifacts):** Lean execution for experimental or internal departmental initiatives.
+2. **Tier 2 (Standard Core - 18 Artifacts):** Standard enterprise project delivery with foundational governance.
+3. **Tier 3 (Enterprise Transformation - 45+ Artifacts):** High-budget, mission-critical transformations with strict oversight.
+4. **Tier 4 (Agile / AI Iterative - 25 Artifacts):** Sprint-based delivery with continuous AI validation loops.
+
+---
+
+## 🤖 Programmatic Python SDK (`tasleemat.ai`)
 
 Automate document drafting and LLM verification using the Python SDK:
 
@@ -972,115 +792,31 @@ print(charter_md)
 
 ---
 
-<h2 id="lexicon">📖 4. Bilingual PMO Terminology Lexicon & Search</h2>
+## 📖 Master Bilingual PMO Lexicon
 
-Searchable glossary of core project management terminology aligned with PMI PMBOK® Lexicon and Arab regional standards:
+Core terminology aligned with the official PMI PMBOK® Lexicon and MENA government project standards:
 
-<div class="mb-4">
-  <input type="text" id="lex-search-input" class="dash-search-box" placeholder="🔍 ابحث في المعجم (مثال: الخط الأساسي، WBS، EVA، المخاطر)..." oninput="filterLexicon()" />
-</div>
+| English Term | المصطلح العربي المعتمد | Definition & Context (التعريف والسياق) | Lifecycle Domain | Standard Reference |
+|:---|:---|:---|:---|:---|
+| **Baseline** | **الخط الأساسي** | The approved version of a work product, schedule, or cost envelope that can only be changed through formal change control. | Planning | PMBOK® 6/7/8 |
+| **Work Breakdown Structure (WBS)** | **هيكل تجزئة العمل** | A hierarchical decomposition of the total scope of work to be carried out by the project team. | Scope (04.02) | ISO 21502 / PMBOK® |
+| **Earned Value Analysis (EVA)** | **تحليل القيمة المكتسبة** | Methodology that combines scope, schedule, and resource measurements to assess project performance and progress. | Monitoring (06) | ANSI/EIA-748 |
+| **Stage-Gate Review** | **مراجعة بوابة المرحلة** | A formal checkpoint at the end of a phase where a decision is made to continue, conditionally proceed, or terminate. | Governance (00-07) | PMI Standard |
+| **Deliverable** | **المُسلَّم / التسليمة القياسية** | Any unique and verifiable product, result, or capability to perform a service that is required to be produced to complete a phase. | All Lifecycle | OKF / PMBOK® |
+| **Stakeholder Engagement** | **إشراك أصحاب المصلحة** | Strategies and actions to involve individuals and groups in project decisions and execution based on interests and influence. | Initiating (03) | PMBOK® Principle 3 |
+| **Risk Appetite** | **القابلية للمخاطر** | The degree of uncertainty an organization or individual is willing to accept in anticipation of a reward. | Risk (04.08) | ISO 31000 |
+| **Contingency Reserve** | **احتياطي الطوارئ** | Time or budget allocated within the cost baseline for known-unknown risks managed by the Project Manager. | Cost (04.04) | PMBOK® 6th/7th |
 
-<div class="overflow-x-auto">
-  <table id="lex-table">
-    <thead>
-      <tr>
-        <th>English Term</th>
-        <th>المصطلح العربي المعتمد</th>
-        <th>Definition & Context (التعريف والسياق)</th>
-        <th>Lifecycle Domain</th>
-        <th>PMBOK Reference</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="font-bold">Baseline</td>
-        <td class="font-bold text-blue-700">الخط الأساسي</td>
-        <td>The approved version of a work product, schedule, or cost envelope that can only be changed through formal change control.</td>
-        <td><span class="badge badge-phase">Planning</span></td>
-        <td>PMBOK® 6/7/8</td>
-      </tr>
-      <tr>
-        <td class="font-bold">Work Breakdown Structure (WBS)</td>
-        <td class="font-bold text-blue-700">هيكل تجزئة العمل</td>
-        <td>A hierarchical decomposition of the total scope of work to be carried out by the project team.</td>
-        <td><span class="badge badge-phase">Scope (04.02)</span></td>
-        <td>ISO 21502 / PMBOK®</td>
-      </tr>
-      <tr>
-        <td class="font-bold">Earned Value Analysis (EVA)</td>
-        <td class="font-bold text-blue-700">تحليل القيمة المكتسبة</td>
-        <td>Methodology that combines scope, schedule, and resource measurements to assess project performance and progress.</td>
-        <td><span class="badge badge-phase">Monitoring (06)</span></td>
-        <td>ANSI/EIA-748</td>
-      </tr>
-      <tr>
-        <td class="font-bold">Stage-Gate Review</td>
-        <td class="font-bold text-blue-700">مراجعة بوابة المرحلة</td>
-        <td>A formal checkpoint at the end of a phase where a decision is made to continue, conditionally proceed, or terminate.</td>
-        <td><span class="badge badge-phase">Governance (00-07)</span></td>
-        <td>PMI Standard</td>
-      </tr>
-      <tr>
-        <td class="font-bold">Deliverable</td>
-        <td class="font-bold text-blue-700">المُسلَّم / التسليمة القياسية</td>
-        <td>Any unique and verifiable product, result, or capability to perform a service that is required to be produced to complete a phase.</td>
-        <td><span class="badge badge-phase">All Lifecycle</span></td>
-        <td>OKF / PMBOK®</td>
-      </tr>
-      <tr>
-        <td class="font-bold">Stakeholder Engagement</td>
-        <td class="font-bold text-blue-700">إشراك أصحاب المصلحة</td>
-        <td>Strategies and actions to involve individuals and groups in project decisions and execution based on interests and influence.</td>
-        <td><span class="badge badge-phase">Initiating (03)</span></td>
-        <td>PMBOK® Principle 3</td>
-      </tr>
-      <tr>
-        <td class="font-bold">Risk Appetite</td>
-        <td class="font-bold text-blue-700">القابلية للمخاطر</td>
-        <td>The degree of uncertainty an organization or individual is willing to accept in anticipation of a reward.</td>
-        <td><span class="badge badge-phase">Risk (04.08)</span></td>
-        <td>ISO 31000</td>
-      </tr>
-      <tr>
-        <td class="font-bold">Contingency Reserve</td>
-        <td class="font-bold text-blue-700">احتياطي الطوارئ</td>
-        <td>Time or budget allocated within the cost baseline for known-unknown risks managed by the Project Manager.</td>
-        <td><span class="badge badge-phase">Cost (04.04)</span></td>
-        <td>PMBOK® 6th/7th</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<script>
-function filterLexicon() {
-  const query = document.getElementById("lex-search-input").value.toLowerCase();
-  const rows = document.querySelectorAll("#lex-table tbody tr");
-  rows.forEach(r => {
-    const text = r.textContent.toLowerCase();
-    r.style.display = text.includes(query) ? "" : "none";
-  });
-}
-</script>
+*For the complete interactive lexicon with instant search and filtering, visit the web portal at [developer.html](developer.html#lexicon) or [docs/LEXICON.md](LEXICON.md).*
 
 ---
 
-<h2 id="citation">📚 5. Academic Citation & Zenodo DOI</h2>
+## 📚 Academic Citation & Zenodo DOI
 
 If you utilize the Tasleemat framework or dataset in enterprise research, audit manuals, or academia, please cite:
 
-<div class="dash-card">
-  <div class="flex items-center justify-between mb-3">
-    <div class="flex items-center gap-2">
-      <span class="badge badge-code">DOI: 10.5281/zenodo.23193523</span>
-      <span class="badge" style="background:#f0fdf4;color:#166534;">Open Access • MIT License</span>
-    </div>
-    <div class="flex gap-2">
-      <button class="card-btn" onclick="copyBibTeX()">📋 Copy BibTeX</button>
-      <button class="card-btn" onclick="copyAPA()">📋 Copy APA</button>
-    </div>
-  </div>
-  <pre class="bg-slate-900 text-slate-100 p-4 rounded-lg text-xs font-mono overflow-x-auto"><code id="bibtex-code">@software{fakhruldeen_tasleemat_2026,
+```bibtex
+@software{fakhruldeen_tasleemat_2026,
   author       = {Fakhruldeen, Mohamed (Fouad)},
   title        = {Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework},
   year         = {2026},
@@ -1088,21 +824,18 @@ If you utilize the Tasleemat framework or dataset in enterprise research, audit 
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.23193523},
   url          = {https://doi.org/10.5281/zenodo.23193523}
-}</code></pre>
-</div>
+}
+```
 
-<script>
-function copyBibTeX() {
-  const code = document.getElementById("bibtex-code").textContent;
-  navigator.clipboard.writeText(code);
-  alert("BibTeX citation copied to clipboard!");
-}
-function copyAPA() {
-  const apa = "Fakhruldeen, M. (F.). (2026). Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework (Version v2.0.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523";
-  navigator.clipboard.writeText(apa);
-  alert("APA citation copied to clipboard!");
-}
-</script>
+---
+
+## 🔗 Related Resources
+
+- [Stage-Gate Governance & Tailoring](governance.md)
+- [Master Bilingual Lexicon](LEXICON.md)
+- [Getting Started Guide (English)](en/01_getting_started.md)
+- [دليل البدء السريع (العربية)](ar/01_getting_started.md)
+- [GitHub Repository](https://github.com/fakhruldeen/Tasleemat)
 """
 
 

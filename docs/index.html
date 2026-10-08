@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>Tasleemat (تسليمات) | Enterprise PMO Operating System &amp; Deliverables Framework</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#7b83a0","on-error-container":"#93000a","outline-variant":"#c6c6ce","on-primary-fixed":"#131a33","on-surface":"#131b2e","surface-container-highest":"#dae2fd","error":"#ba1a1a","on-surface-variant":"#45464d","on-tertiary":"#ffffff","primary":"#000000","surface-container-low":"#f2f3ff","surface-tint":"#565d79","background":"#faf8ff","primary-fixed":"#dbe1ff","on-secondary":"#ffffff","on-error":"#ffffff","on-tertiary-fixed":"#2a1700","surface-container":"#eaedff","inverse-surface":"#283044","secondary":"#006a61","primary-fixed-dim":"#bec5e5","on-background":"#131b2e","outline":"#76767e","surface-container-high":"#e2e7ff","inverse-on-surface":"#eef0ff","on-primary":"#ffffff","surface":"#faf8ff","surface-bright":"#faf8ff","tertiary-fixed":"#ffddb8","on-secondary-fixed-variant":"#005049","surface-variant":"#dae2fd","tertiary-fixed-dim":"#ffb95f","inverse-primary":"#bec5e5","on-secondary-container":"#006f66","on-primary-fixed-variant":"#3e4660","error-container":"#ffdad6","tertiary":"#000000","surface-container-lowest":"#ffffff","surface-dim":"#d2d9f4","on-secondary-fixed":"#00201d","primary-container":"#131a33","secondary-fixed-dim":"#6bd8cb","on-tertiary-fixed-variant":"#653e00","secondary-fixed":"#89f5e7","secondary-container":"#86f2e4","tertiary-container":"#2a1700","on-tertiary-container":"#b87500"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-tablet":"1.5rem","space-xs":"0.25rem","margin-desktop":"2rem",margin:"1rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-lg":"1.5rem","space-sm":"0.5rem",gutter:"1rem","space-xl":"2rem","space-md":"1rem"},fontFamily:{"headline-lg":["IBM Plex Sans"],"badge-caps":["JetBrains Mono"],"body-base":["Inter"],"display-hero-mobile":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],"label-code":["JetBrains Mono"],"display-hero":["IBM Plex Sans"],"body-sm":["Inter"],"headline-md":["IBM Plex Sans"]},fontSize:{"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"badge-caps":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"600"}],"body-base":["15px",{lineHeight:"24px",fontWeight:"400"}],"display-hero-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-code":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"700"}],"display-hero":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"body-sm":["13.5px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}]}}}};</script><link href="./img/logo.png" rel="icon" type="image/png"/></head><body class="bg-background font-body-base text-body-base text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-surface-container-high"><div class="h-16 max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><a class="flex items-center gap-space-sm" data-path="overview" href="./index.html"><img alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W1bBjeEtD2SY4dM8l6zdLn5Fkp_wm312LymBZQF2ZBOk909QRD5GPkZe8TqgNJs2xCMPnjdx9f7k65w8q9R14aphOQeLV_DCU2T8K0DKhjbE16SLqTcom_Grr_gEp0AZbfEt9tZV3Z4hzNObQNIvrWVkPuiIwqDJV3QmpZ1d4PgHvE0o6H-iTMBHEAVwWSEjCnIiXAvF_oeyigsYUZl_tH-7e2YIRSPU3TZRWRSfk"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Tasleemat (تسليمات)</span><span class="font-badge-caps text-badge-caps text-on-surface-variant uppercase tracking-wider">Enterprise PMO Toolkit</span></div></a><span class="hidden sm:inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code border border-outline-variant/40">v2.0.2</span></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-space-sm py-1.5 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="overview" href="./index.html">Home / Overview</a><a class="px-space-sm py-1.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="templates-catalog" href="./catalog/en/index.html">102 Templates Catalog</a><a class="px-space-sm py-1.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="stage-gate-governance" href="./governance.html">Stage-Gate Governance</a><a class="px-space-sm py-1.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tailoring-profiles" href="./governance.html#tailoring-matrix">Tailoring Profiles</a><a class="px-space-sm py-1.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="developer-cli" href="./developer.html">Developer &amp; CLI</a><a class="px-space-sm py-1.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bilingual-lexicon" href="./developer.html#lexicon">Bilingual Lexicon</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="Toggle Language" class="inline-flex items-center gap-1 px-space-sm py-1 rounded-lg border border-outline-variant/60 bg-surface-container-low text-on-surface font-label-code text-label-code hover:bg-surface-container transition-colors" onclick='window.location.href="./README_AR.html"' type="button"><span class="text-xs">🇸🇦</span><span>EN / العربية</span></button><a class="hidden sm:inline-flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-code text-label-code border border-outline-variant/40 hover:bg-surface-container-high hover:text-on-surface transition-colors" href="https://github.com/fakhruldeen/Tasleemat" target="_blank" title="GitHub Repository"><span class="text-sm leading-none">★</span><span>2 Stars</span><span class="text-outline-variant">|</span><span>Fork 1</span></a><div class="flex items-center pl-1 border-l border-outline-variant/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbu4bZgt1zT6B_YO7yWjlVXcD-EDnhTdnWNDjQd4WKKOZEeeySwZRTpNdOQedRAWldQ7xd8Wx8dx8vagLWrxKnai1oufEM2BKUDw-aEJmPYLNJNkzqP0J1EyQ2sVcFNqih5OOcUSF-KCYQREGqGSzXNkUAC1l_MsIkdQ-tdlPCyfsGY23ArqrhKR3fEkoW_4L7OpV54m7Q6tZgY7SheWK7hZcnruxY9wCyMCcPJNk"/></div></div></div></header><main class="w-full pt-16 bg-background min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<!-- Top Executive Announcement Bar -->
+<section class="w-full bg-surface-container-low border-b border-surface-container-high py-space-xs px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-code text-label-code">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-secondary-container/40 text-on-secondary-container">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>v2.0.2 Stable Release</span>
+</span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="text-on-surface">PMI PMBOK® 6th, 7th &amp; 8th Edition Ready</span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="hidden md:inline">ISO 21500 / 21502:2021 Compliant</span>
+<span class="hidden lg:inline text-outline-variant">•</span>
+<span class="hidden lg:inline">Saudi DGA / National PMO Standard Matched</span>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-1 hover:text-secondary transition-colors" href="https://doi.org/10.5281/zenodo.23193523" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>DOI: 10.5281/zenodo.23193523</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Hero & Executive Header Section -->
+<section class="w-full relative overflow-hidden bg-surface-container-lowest border-b border-surface-container-high py-space-2xl px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Ambient Structural Grid Decors -->
+<div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(#bec5e5_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col gap-space-xl">
+<!-- Top Meta Eyebrow -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-sm py-1 rounded bg-surface-container font-label-code text-label-code text-secondary tracking-wide uppercase">
+          🚀 Open PMO Governance Framework
+        </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-badge-caps text-badge-caps">
+          BILINGUAL MATRIX (EN / AR)
+        </span>
+<span class="px-space-sm py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-badge-caps text-badge-caps">
+          MIT LICENSED
+        </span>
+</div>
+<!-- Hero Main Headings -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-8 space-y-space-md">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+            Systemic Governance for End-to-End Enterprise Deliverables
+          </h1>
+<p class="font-headline-md text-headline-md text-secondary dir-rtl text-right font-medium" dir="rtl">
+            الحوكمة المؤسسية لتسليمات المشاريع، البوابات المرحلية، والجاهزية التشغيلية الذكية
+          </p>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-3xl leading-relaxed">
+<strong class="text-on-surface">102 standardized, bilingual (English &amp; Arabic) project management deliverables</strong> (204 synchronized form bundles) spanning 8 lifecycle stages. Purpose-built to transform raw project effort into structured, auditable enterprise assets that satisfy contractual compliance, C-suite oversight, and operational stage-gate readiness.
+          </p>
+<!-- Executive CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-2 px-space-lg py-3 rounded-lg bg-secondary text-on-secondary font-headline-sm text-headline-sm hover:bg-secondary/90 shadow-sm transition-all hover:translate-y-[-1px]" href="#pipeline-section">
+<span class="material-symbols-outlined text-lg">folder_open</span>
+<span>Explore 102 Templates (تصفح النماذج)</span>
+</a>
+<!-- Interactive CLI Copy Button -->
+<div class="inline-flex items-center rounded-lg bg-primary-container text-surface-container-lowest p-1 shadow-sm font-label-code text-label-code">
+<span class="px-space-sm text-primary-fixed-dim select-all flex items-center gap-1.5">
+<span class="text-secondary-fixed">$</span> pip install tasleemat
+              </span>
+<button class="ml-1 px-space-sm py-1.5 rounded bg-surface-container-high/20 hover:bg-surface-container-high/40 text-surface-bright flex items-center gap-1 transition-colors" id="copyPipBtn" onclick="navigator.clipboard.writeText('pip install tasleemat'); document.getElementById('copyPipLabel').innerText='Copied!';" type="button">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+<span id="copyPipLabel">Copy</span>
+</button>
+</div>
+<a class="inline-flex items-center gap-1.5 px-space-md py-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-headline-sm text-headline-sm transition-colors border border-outline-variant/40" href="https://github.com/fakhruldeen/Tasleemat" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">star</span>
+<span>GitHub (★ 2)</span>
+</a>
+</div>
+</div>
+<!-- Metric KPI Showcase Card -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-space-lg border border-surface-container-high space-y-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<span class="font-headline-sm text-headline-sm text-on-surface">Catalog Telemetry</span>
+<span class="font-label-code text-label-code text-secondary">Verified Sync</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border border-surface-container-high/70">
+<span class="block font-label-code text-label-code text-on-surface-variant uppercase">Artifacts</span>
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold leading-none">102</span>
+<span class="block font-badge-caps text-badge-caps text-secondary mt-1">Individual Specs</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border border-surface-container-high/70">
+<span class="block font-label-code text-label-code text-on-surface-variant uppercase">Form Bundles</span>
+<span class="font-display-hero text-display-hero text-secondary font-extrabold leading-none">204</span>
+<span class="block font-badge-caps text-badge-caps text-on-surface-variant mt-1">EN + AR 1:1 Parity</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border border-surface-container-high/70">
+<span class="block font-label-code text-label-code text-on-surface-variant uppercase">Phases</span>
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold leading-none">8</span>
+<span class="block font-badge-caps text-badge-caps text-on-surface-variant mt-1">Lifecycle Segments</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border border-surface-container-high/70">
+<span class="block font-label-code text-label-code text-on-surface-variant uppercase">Stage-Gates</span>
+<span class="font-display-hero text-display-hero text-secondary font-extrabold leading-none">6</span>
+<span class="block font-badge-caps text-badge-caps text-secondary mt-1">Mandatory Audits</span>
+</div>
+</div>
+<div class="pt-space-xs">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant font-label-code">
+<span>Framework Compliance</span>
+<span class="font-semibold text-on-surface">100% Coverage</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high mt-1.5 overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Lifecycle Pipeline & Stepper -->
+<section class="w-full py-space-2xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface" id="pipeline-section">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md border-b border-surface-container-high">
+<div>
+<span class="font-label-code text-label-code text-secondary uppercase tracking-widest">End-to-End Orchestration</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+            The 8-Phase Project Lifecycle Architecture
+          </h2>
+<p class="font-body-base text-body-base text-on-surface-variant mt-1">
+            Chronological navigation from portfolio inception through operational handover with stage-gate verification.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">
+            Total 102 Core Deliverables
+          </span>
+</div>
+</div>
+<!-- Linear Stepper Horizontal Bar -->
+<div class="w-full overflow-x-auto pb-space-sm">
+<div class="flex items-center min-w-[920px] justify-between relative px-2">
+<div class="absolute left-6 right-6 top-1/2 -translate-y-1/2 h-0.5 bg-surface-container-high -z-0"></div>
+<!-- Stepper Item 00 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">00</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Portfolio</span>
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">6 Forms</span>
+</div>
+<!-- Stepper Item 01 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest text-secondary border border-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">01</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Business</span>
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">4 Forms</span>
+</div>
+<!-- Stepper Item 02 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest text-secondary border border-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">02</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Tailoring</span>
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">6 Forms</span>
+</div>
+<!-- Stepper Item 03 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest text-secondary border border-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">03</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Initiating</span>
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">5 Forms</span>
+</div>
+<!-- Stepper Item 04 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">04</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Planning</span>
+<span class="font-badge-caps text-badge-caps text-secondary font-bold">52 Forms</span>
+</div>
+<!-- Stepper Item 05 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest text-secondary border border-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">05</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Executing</span>
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">12 Forms</span>
+</div>
+<!-- Stepper Item 06 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest text-secondary border border-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">06</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Controlling</span>
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">12 Forms</span>
+</div>
+<!-- Stepper Item 07 -->
+<div class="flex flex-col items-center gap-2 relative z-10 text-center">
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest text-secondary border border-secondary font-label-code text-label-code flex items-center justify-center ring-4 ring-surface shadow-sm">07</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Closing</span>
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">5 Forms</span>
+</div>
+</div>
+</div>
+<!-- Phase Grid Matrix (8 Phase Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Phase 00 Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-surface-container-high hover:border-secondary transition-all hover:shadow-md flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 00</span>
+<span class="font-badge-caps text-badge-caps text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">6 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Program &amp; Portfolio Strategy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Strategic alignment, PMO maturity assessments, cross-program dependency mapping, and multi-year roadmaps.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Portfolio Strategic Roadmap</li>
+<li>OKR &amp; Vision Mapping Matrix</li>
+<li>PMO Capability Maturity Model</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-outline">EN • AR Parity</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/00_Program_and_Portfolio_Management">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Phase 01 Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-surface-container-high hover:border-secondary transition-all hover:shadow-md flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 01</span>
+<span class="font-badge-caps text-badge-caps text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">4 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Business &amp; Value Delivery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Commercial viability, strategic business case, investment appraisal, and measurable benefits realization.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Strategic Business Case (Capital)</li>
+<li>Benefits Realization Plan</li>
+<li>Feasibility &amp; Economic Study</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-outline">Stage-Gate 1</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/01_Business_and_Value_Delivery">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Phase 02 Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-surface-container-high hover:border-secondary transition-all hover:shadow-md flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 02</span>
+<span class="font-badge-caps text-badge-caps text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">6 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Approach &amp; Tailoring</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Lifecycle method selection, agile vs waterfall governance tailoring, and AI model readiness diagnostics.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Governance Tailoring Matrix</li>
+<li>AI Readiness &amp; Ethics Audit</li>
+<li>Methodology Selection Filter</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-outline">Tier Filter</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/02_Project_Approach_and_Tailoring">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Phase 03 Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-surface-container-high hover:border-secondary transition-all hover:shadow-md flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 03</span>
+<span class="font-badge-caps text-badge-caps text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">5 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Initiating</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Formal project authorization, sponsor charter sign-off, stakeholder registry, and assumption baseline.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Project Charter (ميثاق المشروع)</li>
+<li>Stakeholder Register &amp; Power Grid</li>
+<li>Assumptions &amp; Constraints Log</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-outline">Stage-Gate 2</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/03_Initiating">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Phase 04 Card (Hero Highlighted Phase) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border-2 border-secondary hover:shadow-lg transition-all flex flex-col justify-between group relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary text-on-secondary px-3 py-0.5 font-badge-caps text-badge-caps uppercase tracking-wider">
+            Most Comprehensive
+          </div>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 04</span>
+<span class="font-badge-caps text-badge-caps text-on-secondary bg-secondary px-2 py-0.5 rounded">52 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Planning (Integrated Baseline)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Comprehensive baseline engineering: scope, WBS, critical path schedule, cost, risk, ESG, and procurement.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Scope Baseline &amp; WBS Dictionary</li>
+<li>Quantitative Risk Register (Monte Carlo)</li>
+<li>Procurement &amp; ESG Sustainable Plan</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-secondary font-bold">Stage-Gate 3 Audit</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline font-bold" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/04_Planning">
+<span>Inspect (52 Files)</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Phase 05 Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-surface-container-high hover:border-secondary transition-all hover:shadow-md flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 05</span>
+<span class="font-badge-caps text-badge-caps text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">12 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Executing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Sprint backlog execution, issue logs, formal change requests, deliverables quality acceptance, team velocity.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Sprint Backlog &amp; Daily Standup Log</li>
+<li>Formal Change Request Form (CRF)</li>
+<li>Issue Log &amp; Escalation Path</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-outline">Sprint Velocity</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/05_Executing">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Phase 06 Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-surface-container-high hover:border-secondary transition-all hover:shadow-md flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 06</span>
+<span class="font-badge-caps text-badge-caps text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">12 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Monitoring &amp; Controlling</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Earned Value Analysis (EVA), executive dashboard status, flow metrics, variance tracking, and QA inspection.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Earned Value Analysis Sheet (CPI/SPI)</li>
+<li>Executive Monthly PMO Dashboard</li>
+<li>Quality Audit Inspection Sheet</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-outline">Stage-Gate 4 &amp; 5</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/06_Monitoring_and_Controlling">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Phase 07 Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-surface-container-high hover:border-secondary transition-all hover:shadow-md flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-bold">Phase 07</span>
+<span class="font-badge-caps text-badge-caps text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">5 Forms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Closing &amp; Handover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Operational handover to business-as-usual, vendor contract closeout, and institutional lessons learned.
+            </p>
+<div class="pt-space-xs space-y-1">
+<span class="block font-label-code text-label-code text-on-surface-variant">Key Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 pl-4 list-disc marker:text-secondary">
+<li>Operational Handover Protocol</li>
+<li>Institutional Lessons Learned</li>
+<li>Vendor Contract Closeout Certificate</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-high/60 flex items-center justify-between mt-space-md">
+<span class="font-badge-caps text-badge-caps text-outline">Stage-Gate 6 Final</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en/07_Closing">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Audience Pathways: PMO Leadership vs Developer / AI Engineers -->
+<section class="w-full py-space-2xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low border-y border-surface-container-high">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="text-center max-w-3xl mx-auto space-y-space-xs">
+<span class="font-label-code text-label-code text-secondary uppercase tracking-widest">Tailored Delivery Paths</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Choose Your Operational Journey</h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          Tasleemat is structured for simultaneous consumption by executive project leaders and software automation engineers.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<!-- Pathway 1: For PMO Leaders -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl border border-surface-container-high hover:border-secondary transition-all shadow-sm flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">cases</span>
+</div>
+<div>
+<span class="font-badge-caps text-badge-caps text-secondary uppercase">Institutional Practice</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">For Project Managers &amp; PMO Leaders</h3>
+</div>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant">
+              Structured templates ready for instant export to Word, Notion, and Confluence. Ensure governance rigor across multi-million dollar portfolios with pre-built inspection gates.
+            </p>
+<div class="space-y-space-sm pt-space-xs">
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/en">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">checklist</span>
+<span>Browse 102 Complete Deliverables by Phase</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/04_stage_gates_and_governance.md">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">gate</span>
+<span>6 Stage-Gate Governance Checklists &amp; Audit Matrices</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/05_tailoring_profiles.md">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">tune</span>
+<span>Select Project Sizing Tiers (Micro to Enterprise)</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/LEXICON.md">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">translate</span>
+<span>Bilingual Terminology Lexicon (المعجم الثنائي الموحد)</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary font-headline-sm text-headline-sm hover:bg-secondary/90 transition-colors" href="https://fakhr.me/Tasleemat/">
+<span>Open PMO Web Portal</span>
+<span class="material-symbols-outlined text-base">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Pathway 2: For Developers & AI Engineers -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl border border-surface-container-high hover:border-secondary transition-all shadow-sm flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">terminal</span>
+</div>
+<div>
+<span class="font-badge-caps text-badge-caps text-primary-container uppercase">Programmatic Infrastructure</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">For Developers &amp; AI Engineers</h3>
+</div>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant">
+              Scaffold repositories with standardized directory layouts, automate compliance via GitHub Actions, and invoke the Python SDK to generate model cards and OKF data packages.
+            </p>
+<div class="space-y-space-sm pt-space-xs">
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://github.com/fakhruldeen/Tasleemat/blob/main/TECHNICAL.md">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">menu_book</span>
+<span>TECHNICAL.md Developer Manual &amp; Architecture</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://github.com/fakhruldeen/Tasleemat/blob/main/TECHNICAL.md#2-programmatic-python-sdk-tasleematai">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">code</span>
+<span>Python SDK (<code class="font-label-code text-label-code">tasleemat.ai</code>) Specification</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://pypi.org/project/tasleemat/">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">download</span>
+<span>PyPI Package Scaffolder (<code class="font-label-code text-label-code">tasleemat-cli</code>)</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://github.com/fakhruldeen/Tasleemat/blob/main/datapackage.json">
+<span class="font-body-sm text-body-sm text-on-surface font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">data_object</span>
+<span>JSON Schemas &amp; OKF Open Data Packages</span>
+</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-surface-bright font-headline-sm text-headline-sm hover:bg-primary transition-colors" href="https://github.com/fakhruldeen/Tasleemat">
+<span>View GitHub Source</span>
+<span class="material-symbols-outlined text-base">code</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Terminal & CLI Scaffolder Preview -->
+<section class="w-full py-space-2xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-label-code text-label-code text-secondary uppercase tracking-widest">Developer Ergonomics</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Instant PMO Scaffolding in One Terminal Command
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+          Forget blank-page syndrome. The <code class="font-label-code text-label-code bg-surface-container px-1 py-0.5 rounded text-on-surface">tasleemat</code> CLI generates production-grade artifact structures tailored by phase, tier, and language directly into your Git workspace.
+        </p>
+<div class="space-y-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">check_circle</span>
+<span>Generates 5-file bundles: Template, Guide, Example, AI Prompt, and JSON Schema</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">check_circle</span>
+<span>Supports bilateral Arabic/English bidirectional metadata injection</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">check_circle</span>
+<span>Ready-to-use GitHub Actions workflow for stage-gate PR validation</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-space-md">
+<a class="inline-flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-headline-sm border border-outline-variant/40" href="https://pypi.org/project/tasleemat/" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">terminal</span>
+<span>CLI Docs on PyPI</span>
+</a>
+</div>
+</div>
+<!-- Terminal Window -->
+<div class="lg:col-span-7">
+<div class="rounded-xl overflow-hidden shadow-2xl border border-inverse-surface/30 bg-primary-container text-on-primary font-label-code text-label-code">
+<!-- Terminal Title Bar -->
+<div class="bg-primary/90 px-space-md py-space-sm flex items-center justify-between border-b border-surface-container-high/10">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="ml-2 text-on-primary-fixed-variant text-xs font-medium">bash — tasleemat-cli v2.0.2</span>
+</div>
+<button class="text-xs text-on-primary-container hover:text-white flex items-center gap-1" onclick="navigator.clipboard.writeText('tasleemat init --tier 2 --pack agile --lang ar --name &quot;منصة التحول الرقمي&quot;');" type="button">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+<span>Copy snippet</span>
+</button>
+</div>
+<!-- Terminal Content Body -->
+<div class="p-space-lg space-y-3 leading-relaxed text-xs md:text-sm">
+<p class="text-outline-variant"># 1. Install official PMO scaffolder from PyPI</p>
+<p class="flex items-center gap-2">
+<span class="text-secondary-fixed">$</span>
+<span class="text-white font-semibold">pip install tasleemat</span>
+</p>
+<p class="text-on-primary-fixed-variant">Collecting tasleemat &gt; Successfully installed tasleemat-2.0.2</p>
+<p class="text-outline-variant pt-2"># 2. Scaffold bilingual project workspace for Tier 2 Agile</p>
+<p class="flex items-start gap-2">
+<span class="text-secondary-fixed">$</span>
+<span class="text-white font-semibold leading-normal">tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي"</span>
+</p>
+<!-- Execution Logs -->
+<div class="space-y-1 text-on-primary-fixed-variant pl-4 border-l border-secondary/40 my-2">
+<p class="text-secondary-fixed-dim">[INFO] Reading tailoring profile: Tier 2 (Standard Agile Core)</p>
+<p class="text-secondary-fixed-dim">[INFO] Synchronizing 18 baseline artifact definitions...</p>
+<p class="text-surface-dim">↳ 03_Charter_Template.md ... [OK]</p>
+<p class="text-surface-dim">↳ 04_WBS_Scope_Baseline.md ... [OK]</p>
+<p class="text-surface-dim">↳ 04_Agile_Release_Plan.md ... [OK]</p>
+<p class="text-surface-dim">↳ 05_Sprint_Backlog_Matrix.json ... [OK]</p>
+<p class="text-surface-dim">↳ 06_Earned_Value_EVA_Sheet.csv ... [OK]</p>
+<p class="text-secondary-fixed font-bold">[SUCCESS] 18 Synchronized Arabic/English PMO artifacts scaffolded.</p>
+</div>
+<p class="text-outline-variant pt-2"># 3. Ready to inspect with stage-gate verification</p>
+<p class="flex items-center gap-2">
+<span class="text-secondary-fixed">$</span>
+<span class="text-white font-semibold">tasleemat audit --gate 1</span>
+<span class="text-secondary-fixed-dim"># Gate 1 Status: Passed (4/4 complete)</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tailoring Matrix: 4 Enterprise Tiers Preview -->
+<section class="w-full py-space-2xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-code text-label-code text-secondary uppercase tracking-widest">Scalable Governance</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+            Governance Tailoring Profiles (4 Sizing Tiers)
+          </h2>
+<p class="font-body-base text-body-base text-on-surface-variant mt-1">
+            Right-size documentation overhead. Deploy only what matches your delivery risk, budget, and cadence.
+          </p>
+</div>
+<div>
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-secondary hover:underline" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/05_tailoring_profiles.md">
+<span>Read full tailoring guide</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- 4 Tiers Comparison Bento -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Tier 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg border border-surface-container-high flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-on-surface-variant font-bold">Tier 01</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-code text-label-code">5 Core</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Micro / Small</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Short duration, localized budget, small teams (&lt;5 members), and low operational risk. Zero ceremony.
+            </p>
+<div class="pt-space-xs">
+<span class="font-label-code text-label-code text-on-surface block mb-2">Essential Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 list-disc pl-4 marker:text-secondary">
+<li>Lean Project Charter</li>
+<li>Action &amp; Decision Log</li>
+<li>Weekly Milestone Tracker</li>
+<li>Monthly One-Pager Status</li>
+<li>Closing &amp; Sign-off Memo</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high/60">
+<span class="font-label-code text-label-code text-outline-variant uppercase">Time to Deploy: &lt; 2 hrs</span>
+</div>
+</div>
+<!-- Tier 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg border border-surface-container-high flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">Tier 02</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/40 text-secondary font-label-code text-label-code">18 Baselines</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Standard Core</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Medium budget, multi-department stakeholders. Requires validated baseline tracking and risk mitigation.
+            </p>
+<div class="pt-space-xs">
+<span class="font-label-code text-label-code text-on-surface block mb-2">Essential Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 list-disc pl-4 marker:text-secondary">
+<li>Charter &amp; Scope Baseline (WBS)</li>
+<li>Gantt Critical Path Schedule</li>
+<li>Cost Management Baseline</li>
+<li>Qualitative Risk Log</li>
+<li>Stage-Gate Signoff Record</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high/60">
+<span class="font-label-code text-label-code text-outline-variant uppercase">Most Recommended</span>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg border-2 border-on-surface-variant/20 flex flex-col justify-between bg-gradient-to-b from-surface-container-lowest to-surface-container-high/20">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-on-surface font-bold">Tier 03</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-surface-bright font-label-code text-label-code">45+ Artifacts</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Enterprise Full</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Multi-million SAR/USD budgets, multi-vendor tenders, regulatory audits, and C-level Steering Committees.
+            </p>
+<div class="pt-space-xs">
+<span class="font-label-code text-label-code text-on-surface block mb-2">Essential Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 list-disc pl-4 marker:text-secondary">
+<li>Full 6 Stage-Gate Dossiers</li>
+<li>Monte Carlo Quantitative Risk</li>
+<li>Procurement &amp; RFP Evaluation</li>
+<li>Earned Value Analysis (EVA)</li>
+<li>ESG &amp; Sustainability Matrix</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high/60">
+<span class="font-label-code text-label-code text-secondary font-bold uppercase">Auditable Compliance</span>
+</div>
+</div>
+<!-- Tier 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg border border-surface-container-high flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">Tier 04</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-code text-label-code">25 Artifacts</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Agile / AI Tech</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Iterative software engineering, LLM model training, and continuous deployment environments.
+            </p>
+<div class="pt-space-xs">
+<span class="font-label-code text-label-code text-on-surface block mb-2">Essential Deliverables:</span>
+<ul class="text-body-sm text-on-surface font-body-sm space-y-1 list-disc pl-4 marker:text-secondary">
+<li>AI Model Governance Card</li>
+<li>NIST AI Risk Matrix</li>
+<li>Sprint Backlog &amp; Burndown</li>
+<li>Cycle Time &amp; Flow Metrics</li>
+<li>Automated Release Notes</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high/60">
+<span class="font-label-code text-label-code text-outline-variant uppercase">NIST AI RMF 1.0</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Standards Compliance & Institutional Endorsements -->
+<section class="w-full py-space-2xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface border-b border-surface-container-high">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="text-center max-w-2xl mx-auto space-y-space-xs">
+<span class="font-label-code text-label-code text-secondary uppercase tracking-widest">Global Interoperability</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Aligned with Recognized Standards</h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          Built according to ISO principles and professional delivery governance institutes worldwide.
+        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-space-md">
+<!-- Standard 1 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container-high flex flex-col items-center text-center space-y-2">
+<span class="material-symbols-outlined text-secondary text-3xl">verified</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">PMI PMBOK®</h4>
+<p class="font-badge-caps text-badge-caps text-on-surface-variant">6th, 7th &amp; 8th Edition Ready</p>
+</div>
+<!-- Standard 2 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container-high flex flex-col items-center text-center space-y-2">
+<span class="material-symbols-outlined text-secondary text-3xl">security</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">ISO 21500 / 21502</h4>
+<p class="font-badge-caps text-badge-caps text-on-surface-variant">Project &amp; Portfolio Standard</p>
+</div>
+<!-- Standard 3 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container-high flex flex-col items-center text-center space-y-2">
+<span class="material-symbols-outlined text-secondary text-3xl">psychology</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">NIST AI RMF 1.0</h4>
+<p class="font-badge-caps text-badge-caps text-on-surface-variant">AI Risk Management Matrix</p>
+</div>
+<!-- Standard 4 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container-high flex flex-col items-center text-center space-y-2">
+<span class="material-symbols-outlined text-secondary text-3xl">nature</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">UN SDGs &amp; ESG</h4>
+<p class="font-badge-caps text-badge-caps text-on-surface-variant">Sustainable Governance KPI</p>
+</div>
+<!-- Standard 5 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container-high flex flex-col items-center text-center space-y-2 col-span-2 md:col-span-1">
+<span class="material-symbols-outlined text-secondary text-3xl">lan</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Saudi DGA / NCGR</h4>
+<p class="font-badge-caps text-badge-caps text-on-surface-variant">Bilateral National Compliance</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Endorsement, Zenodo Citation & Author Attribution -->
+<section class="w-full py-space-2xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left: Citation Card -->
+<div class="lg:col-span-7 space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">menu_book</span>
+<span class="font-label-code text-label-code text-secondary uppercase font-bold">Academic &amp; Institutional Citation</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+          Cite Tasleemat in Research and Corporate Governance Charters
+        </h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          If you utilize Tasleemat within your institutional PMO methodology, scientific research papers, or digital governance tenders, please use the registered Zenodo DOI reference:
+        </p>
+<!-- Blockquote Citation -->
+<div class="p-space-md bg-surface-container-low rounded-xl border border-surface-container-high text-on-surface font-body-sm text-body-sm leading-relaxed space-y-2">
+<p class="font-medium italic">
+            “Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.0.2 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523”
+          </p>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container-high/60 text-xs text-on-surface-variant">
+<span>DOI Identifier: 10.5281/zenodo.23193523</span>
+<button class="text-secondary font-label-code hover:underline" onclick="navigator.clipboard.writeText('Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.0.2 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523'); this.innerText='Copied BibTeX';" type="button">
+              Copy APA / BibTeX
+            </button>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container font-label-code text-label-code text-on-surface hover:bg-surface-container-high border border-outline-variant/40 transition-colors" href="https://doi.org/10.5281/zenodo.23193523" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xs">link</span>
+<span>View Zenodo Archive</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container font-label-code text-label-code text-on-surface hover:bg-surface-container-high border border-outline-variant/40 transition-colors" href="https://github.com/fakhruldeen/Tasleemat/blob/main/LICENSE">
+<span class="material-symbols-outlined text-xs">policy</span>
+<span>MIT License Terms</span>
+</a>
+</div>
+</div>
+<!-- Right: Author & Maintainer Profile Card -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-lg border border-surface-container-high flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-md">
+<img alt="Mohamed Fouad Fakhruldeen" class="w-16 h-16 rounded-full object-cover border-2 border-secondary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbu4bZgt1zT6B_YO7yWjlVXcD-EDnhTdnWNDjQd4WKKOZEeeySwZRTpNdOQedRAWldQ7xd8Wx8dx8vagLWrxKnai1oufEM2BKUDw-aEJmPYLNJNkzqP0J1EyQ2sVcFNqih5OOcUSF-KCYQREGqGSzXNkUAC1l_MsIkdQ-tdlPCyfsGY23ArqrhKR3fEkoW_4L7OpV54m7Q6tZgY7SheWK7hZcnruxY9wCyMCcPJNk"/>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Mohamed (Fouad) Fakhruldeen</h4>
+<p class="font-badge-caps text-badge-caps text-secondary">Author &amp; Framework Lead</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enterprise PMO &amp; AI Architect</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Tasleemat was conceived to bridge the gap between English-first global standards (PMI, ISO) and the bilingual, highly regulated delivery mandates of governmental and private mega-programs across the MENA region.
+          </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border border-surface-container-high/60 space-y-1">
+<div class="flex items-center justify-between font-label-code text-label-code text-xs">
+<span class="text-on-surface-variant">GitHub Repository:</span>
+<a class="text-secondary hover:underline" href="https://github.com/fakhruldeen/Tasleemat">fakhruldeen/Tasleemat</a>
+</div>
+<div class="flex items-center justify-between font-label-code text-label-code text-xs">
+<span class="text-on-surface-variant">Portal:</span>
+<a class="text-secondary hover:underline" href="https://fakhr.me/Tasleemat/">fakhr.me/Tasleemat</a>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high/60 flex items-center justify-between">
+<span class="font-badge-caps text-badge-caps text-on-surface-variant">COMMUNITY SUPPORTED</span>
+<a class="font-label-code text-label-code text-secondary flex items-center gap-1 hover:underline" href="https://github.com/fakhruldeen/Tasleemat" rel="noreferrer" target="_blank">
+<span>Star on GitHub</span>
+<span class="material-symbols-outlined text-xs">star</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Quickstart Modal Drawer / Interactive Sheet (Hidden by default, triggered by JS) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-4" id="quickviewDrawer">
+<div class="bg-surface-container-lowest max-w-xl w-full rounded-2xl p-space-xl shadow-2xl border border-surface-container-high space-y-space-md relative">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">CLI Fast Scaffold Setup</h4>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('quickviewDrawer').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant">
+        Execute in any empty repository to install templates, GitHub Actions CI stage-gate validator, and bilingual Markdown forms.
+      </p>
+<div class="p-space-md bg-primary-container text-surface-bright rounded-lg font-label-code text-label-code">
+        pip install tasleemat &amp;&amp; tasleemat init
+      </div>
+<div class="flex justify-end pt-2">
+<button class="px-space-md py-2 bg-secondary text-on-secondary rounded-lg font-headline-sm text-headline-sm" onclick="document.getElementById('quickviewDrawer').classList.add('hidden')" type="button">
+          Got it
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Micro-Interaction Vanilla Scripts -->
+<script>
+    // Smooth scrolling for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-surface-container-high mt-space-2xl"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl pb-space-lg border-b border-surface-container-high"><div class="space-y-space-sm md:col-span-2"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Tasleemat (تسليمات)</span><span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-code text-label-code">PMO Framework</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-lg leading-relaxed">An institutional-grade, bilingual Project Management &amp; AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.</p><div class="flex flex-wrap items-center gap-space-xs pt-space-xs"><span class="px-space-xs py-1 rounded bg-surface-container text-secondary font-label-code text-label-code border border-secondary-container/50">PMI PMBOK® 6th/7th/8th</span><span class="px-space-xs py-1 rounded bg-surface-container text-secondary font-label-code text-label-code border border-secondary-container/50">ISO 21500:2021</span><span class="px-space-xs py-1 rounded bg-surface-container text-secondary font-label-code text-label-code border border-secondary-container/50">NIST AI RMF 1.0</span><span class="px-space-xs py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code border border-outline-variant/40">MIT License</span></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Artifact Repositories</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="templates-catalog" href="./catalog/en/index.html">102 Deliverables Library</a></li><li><a class="hover:text-on-surface transition-colors" data-path="stage-gate-governance" href="./governance.html">Stage-Gate Inspection</a></li><li><a class="hover:text-on-surface transition-colors" data-path="tailoring-profiles" href="./governance.html#tailoring-matrix">Enterprise &amp; Lean Profiles</a></li><li><a class="hover:text-on-surface transition-colors" data-path="bilingual-lexicon" href="./developer.html#lexicon">AR/EN Standard Lexicon</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Developer Resources</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="developer-cli" href="./developer.html">CLI Documentation</a></li><li><code class="font-label-code text-label-code px-space-xs py-0.5 rounded bg-surface-container text-on-surface">pip install tasleemat</code></li><li><a class="hover:text-on-surface transition-colors" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Releases &amp; Changelog</a></li></ul></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><div>© 2025 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Documentation</a><a class="hover:text-on-surface transition-colors" href="#">Contributing</a><a class="hover:text-on-surface transition-colors" href="#">Governance Council</a></div></div></div></footer></body></html>
