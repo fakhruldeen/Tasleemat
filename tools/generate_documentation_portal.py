@@ -26,6 +26,7 @@ from tools.stitch_screens_builder import (
     get_screen2_home_ar,
     get_screen3_developer_md,
     get_screen4_governance_md,
+    get_screen5_catalog_html,
     get_screen6_home_en
 )
 
@@ -2205,7 +2206,7 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
 
     return str(soup)
 
-def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path):
+def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path, deliverables: list = None):
     """Compile the 6 actual Stitch designs into the primary landing and functional pages."""
     screens_dir = ROOT / "_stitch_designs" / "screens"
     if not screens_dir.exists():
@@ -2251,14 +2252,19 @@ def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path):
     (site_dir / "governance.html").write_text(html_gov, encoding="utf-8")
     (docs_dir / "governance.html").write_text(html_gov, encoding="utf-8")
 
-    # 5. Catalog EN & AR
-    html_cat_en = process_stitch_screen(s_map["catalog_en"], "catalog_en", rel_root="../../")
+    # 5. Catalog EN & AR (Generated using full 102 Deliverables with exact Stitch design & interactive filtering)
+    if deliverables:
+        html_cat_en = get_screen5_catalog_html(deliverables, lang="en", rel_root="../../")
+        html_cat_ar = get_screen5_catalog_html(deliverables, lang="ar", rel_root="../../")
+    else:
+        html_cat_en = process_stitch_screen(s_map["catalog_en"], "catalog_en", rel_root="../../")
+        html_cat_ar = process_stitch_screen(s_map["catalog_en"], "catalog_ar", rel_root="../../")
+
     (site_dir / "catalog" / "en").mkdir(parents=True, exist_ok=True)
     (docs_dir / "catalog" / "en").mkdir(parents=True, exist_ok=True)
     (site_dir / "catalog" / "en" / "index.html").write_text(html_cat_en, encoding="utf-8")
     (docs_dir / "catalog" / "en" / "index.html").write_text(html_cat_en, encoding="utf-8")
 
-    html_cat_ar = process_stitch_screen(s_map["catalog_en"], "catalog_ar", rel_root="../../")
     (site_dir / "catalog" / "ar").mkdir(parents=True, exist_ok=True)
     (docs_dir / "catalog" / "ar").mkdir(parents=True, exist_ok=True)
     (site_dir / "catalog" / "ar" / "index.html").write_text(html_cat_ar, encoding="utf-8")
@@ -2379,7 +2385,7 @@ def compile_static_site(deliverables):
         out_html.write_text(final_html, encoding="utf-8")
 
     # Compile the 6 core Stitch screens directly into site/ and docs/
-    compile_stitch_screens(SITE_DIR, DOCS_DIR)
+    compile_stitch_screens(SITE_DIR, DOCS_DIR, deliverables)
 
     print(f"Executive static HTML portal compiled successfully to {SITE_DIR}!")
 

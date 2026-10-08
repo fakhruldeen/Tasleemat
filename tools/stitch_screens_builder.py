@@ -1477,3 +1477,1007 @@ flowchart TD
 
 </div>
 """
+
+
+def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str = "../../") -> str:
+    """Generates Stitch Screen 5: Interactive 102 Deliverables Catalog for English or Arabic."""
+    import html as pyhtml
+    is_ar = (lang == "ar")
+
+    def get_tiers(d):
+        code_raw = d.get("code_raw", "")
+        tiers = []
+        if code_raw in {"03_01", "04_03_04", "04_03_08", "05_01", "06_01", "07_02", "07_01"}:
+            tiers.append("t1")
+        if "t1" in tiers or code_raw in {
+            "01_01", "02_01", "03_04", "04_02_01", "04_02_06", "04_04_04", 
+            "04_05_01", "04_06_01", "04_07_01", "04_08_02", "04_09_01", "04_10_01", 
+            "05_02", "05_03", "06_03"
+        }:
+            tiers.append("t2")
+        if code_raw.startswith("02_") or code_raw in {
+            "03_01", "03_02", "04_02_08", "04_02_09", "04_03_09", "04_03_10", 
+            "04_05_03", "04_06_05", "04_06_06", "04_08_02", "05_01", "05_04", 
+            "05_05", "05_06", "05_07", "06_01", "06_02", "06_06", "06_07", 
+            "07_01", "07_02"
+        } or "AI" in d.get("tier", ""):
+            tiers.append("t4")
+        if "t1" in tiers or "t2" in tiers or code_raw.startswith("00_") or code_raw.startswith("01_") or "04_11" in code_raw or "04_12" in code_raw or code_raw in {"05_08", "05_09", "05_10", "06_04", "06_05", "06_08", "06_09", "07_03", "07_04", "07_05"}:
+            tiers.append("t3")
+        if not tiers:
+            tiers = ["t3"]
+        return tiers
+
+    cards_html = []
+    for d in deliverables:
+        code_pmo = d.get("code", "")
+        code_raw = d.get("code_raw", "")
+        code_form = code_pmo.replace("PMO-", "FORM-").replace(".", "-")
+        phase = d.get("phase", "00")
+        name_en = d.get("name_en", "")
+        name_ar = d.get("name_ar", "")
+        phase_name_en = d.get("phase_name_en", "")
+        phase_name_ar = d.get("phase_name_ar", "")
+        tier_list = get_tiers(d)
+        data_tier = ",".join(tier_list)
+
+        tier_badges_labels = {
+            "t1": "Tier 1" if not is_ar else "المستوى 1",
+            "t2": "Tier 2" if not is_ar else "المستوى 2",
+            "t3": "Tier 3" if not is_ar else "المستوى 3",
+            "t4": "Tier 4 AI" if not is_ar else "المستوى 4 AI",
+        }
+        if "t1" in tier_list and "t3" in tier_list:
+            tier_badge = "Tier 1-3" if not is_ar else "المستويات 1-3"
+        elif "t2" in tier_list and "t3" in tier_list:
+            tier_badge = "Tier 2-3" if not is_ar else "المستويات 2-3"
+        elif "t4" in tier_list:
+            tier_badge = "Tier 4 AI" if not is_ar else "المستوى 4 ذكاء اصطناعي"
+        else:
+            tier_badge = tier_badges_labels.get(tier_list[0], "Standard")
+
+        short_phase_en = phase_name_en.split(".")[1].strip().split("&")[0].strip() if "." in phase_name_en else phase_name_en
+        short_phase_ar = phase_name_ar.split(".")[1].strip().split("و")[0].strip() if "." in phase_name_ar else phase_name_ar
+        phase_badge = f"{phase} {short_phase_en}" if not is_ar else f"{phase} {short_phase_ar}"
+
+        desc_en = f"Standard {name_en} deliverable and specification within {short_phase_en}. Includes bilingual markdown template, OKF data schema, and authoring guide."
+        desc_ar = f"تسليمة معتمدة لـ {name_ar} ضمن مرحلة {short_phase_ar}. تتضمن قالب ماركداون ثنائي اللغة، مخطط بيانات OKF، ودليلاً إرشادياً تطبيقياً."
+        desc = desc_ar if is_ar else desc_en
+
+        search_tokens = f"{code_form} {code_pmo} {code_raw} {name_en} {name_ar} {phase_name_en} {phase_name_ar} {phase} pmi pmbok iso nist okf"
+        
+        url_tpl = f"{rel_root}{d.get('url_tpl_ar' if is_ar else 'url_tpl_en', '')}"
+        url_guide = f"{rel_root}{d.get('url_guide_ar' if is_ar else 'url_guide_en', '')}"
+
+        tag1 = "PMBOK 7/8"
+        tag2 = "Schema OKF" if "04" in phase or "06" in phase else "ISO 21500"
+        tag3 = "5-File Bundle"
+
+        card = f"""<div class="deliverable-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" 
+     data-code="{code_form}" 
+     data-code-alt="{code_pmo}" 
+     data-phase="{phase}" 
+     data-tier="{data_tier}" 
+     data-search="{pyhtml.escape(search_tokens.lower())}">
+  <div class="space-y-space-sm">
+    <div class="flex items-center justify-between">
+      <span class="font-label-code text-badge-caps px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold">{code_form}</span>
+      <div class="flex items-center gap-1">
+        <span class="px-2 py-0.5 rounded text-badge-caps font-badge-caps bg-surface-container text-secondary">{phase_badge}</span>
+        <span class="px-1.5 py-0.5 rounded text-badge-caps font-badge-caps bg-secondary/15 text-secondary">{tier_badge}</span>
+      </div>
+    </div>
+    <div>
+      {f'''<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors" dir="rtl">{pyhtml.escape(name_ar)}</h2>
+      <div class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-0.5" dir="ltr">{pyhtml.escape(name_en)}</div>''' if is_ar else f'''<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">{pyhtml.escape(name_en)}</h2>
+      <div class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-0.5" dir="rtl">{pyhtml.escape(name_ar)}</div>'''}
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+      {pyhtml.escape(desc)}
+    </p>
+    <div class="flex items-center gap-1.5 flex-wrap pt-1 font-label-code text-[11px] text-on-surface-variant">
+      <span class="bg-surface-container-low px-1.5 py-0.5 rounded">{tag1}</span>
+      <span class="bg-surface-container-low px-1.5 py-0.5 rounded">{tag2}</span>
+      <span class="bg-surface-container-low px-1.5 py-0.5 rounded">{tag3}</span>
+    </div>
+  </div>
+  <div class="pt-space-md mt-space-sm flex items-center justify-between border-t border-surface-container-high/40">
+    <button class="inline-flex items-center gap-1 text-label-code font-label-code text-secondary hover:text-on-surface font-bold transition-colors" onclick="openFormDrawer('{code_pmo}')">
+      <span class="material-symbols-outlined text-[17px]">visibility</span>
+      <span>{'معاينة التسليمة' if is_ar else 'Inspect Spec'}</span>
+    </button>
+    <div class="flex items-center gap-1">
+      <button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="copySnippet('{code_form}')" title="{'نسخ أمر CLI' if is_ar else 'Copy CLI Command'}">
+        <span class="material-symbols-outlined text-[18px]">content_copy</span>
+      </button>
+      <a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center" href="{url_tpl}" title="{'عرض القالب المعتمد' if is_ar else 'View Markdown Template'}">
+        <span class="material-symbols-outlined text-[18px]">description</span>
+      </a>
+      <a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center" href="{url_guide}" title="{'عرض الدليل الإرشادي' if is_ar else 'View Practice Guide'}">
+        <span class="material-symbols-outlined text-[18px]">menu_book</span>
+      </a>
+    </div>
+  </div>
+</div>"""
+        cards_html.append(card)
+
+    rendered_cards = "\n".join(cards_html)
+
+    # Dynamic language variables
+    doc_lang = "ar" if is_ar else "en"
+    doc_dir = "rtl" if is_ar else "ltr"
+    page_title = "كتالوج النماذج والتسليمات القياسية (102 تسليمة) | مستكشف تسليمات" if is_ar else "102 Deliverables & Templates Catalog | Tasleemat PMO Explorer"
+    
+    sidebar_class = "fixed right-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 border-l border-surface-container-high overflow-y-auto p-space-md" if is_ar else "fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 border-r border-surface-container-high overflow-y-auto p-space-md"
+    main_wrapper_class = "pr-64" if is_ar else "pl-64"
+
+    nav_home = f"{rel_root}README_AR.html" if is_ar else f"{rel_root}index.html"
+    nav_gov = f"{rel_root}governance.html"
+    nav_tailor = f"{rel_root}governance.html#tailoring-matrix"
+    nav_dev = f"{rel_root}developer.html"
+    nav_lex = f"{rel_root}developer.html#lexicon"
+    lang_toggle_url = "../en/index.html" if is_ar else "../ar/index.html"
+    lang_toggle_text = "🇬🇧 English" if is_ar else "🇸🇦 العربية"
+
+    hero_badge = "متوافق مع PMI PMBOK® 6/7/8th و ISO 21500 و هيئة الحكومة الرقمية" if is_ar else "PMI PMBOK® 6/7/8th & ISO 21500 Aligned"
+    hero_title = "فهرس النماذج والتسليمات القياسية الموحدة" if is_ar else "Bilingual Deliverables & Templates Catalog"
+    hero_subtitle = "Bilingual Deliverables & Templates Catalog (102 Forms)" if is_ar else "فهرس نماذج وتسليمات المشاريع الموحدة (102 تسليمة)"
+    hero_desc = "استكشف وابحث وفلتر كافة النماذج القياسية الـ 102 لمكاتب إدارة المشاريع (PMO)، المتوفرة بحزم ماركداون ثنائية اللغة، ومخططات بيانات OKF JSON، وضوابط حوكمة الذكاء الاصطناعي NIST AI RMF." if is_ar else "Search, filter, and inspect all 102 standardized PMO forms with synchronized English & Arabic markdown bundles, OKF JSON data schemas, and NIST AI RMF governance controls."
+
+    search_placeholder = "ابحث باسم النموذج، الرمز (مثل FORM-03-01)، الكلمة المفتاحية، أو المرحلة..." if is_ar else "Search templates by name, code (e.g. FORM-03-01), keyword or Arabic term..."
+    filter_phase_label = "تصفية حسب المرحلة (دورة حياة المشروع)" if is_ar else "Filter By Phase (Project Lifecycle)"
+    filter_tier_label = "مستوى التخصيص الحوكمي:" if is_ar else "Tailoring Tier:"
+    showing_label_init = f"عرض {len(deliverables)} تسليمة من إجمالي {len(deliverables)}" if is_ar else f"Showing {len(deliverables)} of {len(deliverables)} Deliverables"
+
+    phase_btns = [
+        ("all", "الكل (102)" if is_ar else "All (102)"),
+        ("00", "00 إدارة المحفظة (6)" if is_ar else "00 Portfolio (6)"),
+        ("01", "01 دراسة الجدوى (4)" if is_ar else "01 Business (4)"),
+        ("02", "02 المنهجية والتخصيص (6)" if is_ar else "02 Approach (6)"),
+        ("03", "03 البدء (5)" if is_ar else "03 Initiating (5)"),
+        ("04", "04 التخطيط (52)" if is_ar else "04 Planning (52)"),
+        ("05", "05 التنفيذ (12)" if is_ar else "05 Executing (12)"),
+        ("06", "06 المراقبة والتحكم (12)" if is_ar else "06 Controlling (12)"),
+        ("07", "07 الإغلاق (5)" if is_ar else "07 Closing (5)"),
+    ]
+    phase_btns_html = "\n".join([
+        f'<button class="phase-btn {"active" if p[0] == "all" else ""} px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap {"bg-primary text-on-primary" if p[0] == "all" else "bg-surface-container-low text-on-surface hover:bg-surface-container"} transition-all" data-phase="{p[0]}" onclick="filterPhase(\'{p[0]}\')">{p[1]}</button>'
+        for p in phase_btns
+    ])
+
+    tier_btns = [
+        ("all", "كافة المستويات" if is_ar else "All Tiers"),
+        ("t1", "المستوى 1: مصغر (7)" if is_ar else "Tier 1: Small (7)"),
+        ("t2", "المستوى 2: أساسي (22)" if is_ar else "Tier 2: Core (22)"),
+        ("t3", "المستوى 3: مؤسسي (78)" if is_ar else "Tier 3: Enterprise (78)"),
+        ("t4", "المستوى 4: مرن / ذكاء اصطناعي (32)" if is_ar else "Tier 4: Agile/AI (32)"),
+    ]
+    tier_btns_html = "\n".join([
+        f'<button class="tier-btn {"active" if t[0] == "all" else ""} px-2.5 py-1 rounded text-badge-caps font-badge-caps {"bg-surface-container-highest text-on-surface" if t[0] == "all" else "bg-surface-container-low text-on-surface hover:bg-surface-container"} transition-all" data-tier="{t[0]}" onclick="filterTier(\'{t[0]}\')">{t[1]}</button>'
+        for t in tier_btns
+    ])
+
+    return f"""<!DOCTYPE html>
+<html lang="{doc_lang}" dir="{doc_dir}">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_dashboard" name="shell-type"/>
+  <title>{page_title}</title>
+  <link rel="icon" type="image/png" href="{rel_root}img/logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    @layer base {{
+      html, body {{ margin: 0; padding: 0; }}
+      body {{ overscroll-behavior: none; }}
+      main > :first-child {{ margin-top: 0 !important; }}
+      main > :last-child {{ margin-bottom: 0 !important; }}
+    }}
+    ::-webkit-scrollbar {{ display: none; }}
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {{
+      darkMode: "class",
+      theme: {{
+        extend: {{
+          colors: {{
+            "on-primary-container": "#7b83a0",
+            "on-error-container": "#93000a",
+            "outline-variant": "#c6c6ce",
+            "on-primary-fixed": "#131a33",
+            "on-surface": "#131b2e",
+            "surface-container-highest": "#dae2fd",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#45464d",
+            "on-tertiary": "#ffffff",
+            "primary": "#000000",
+            "surface-container-low": "#f2f3ff",
+            "surface-tint": "#565d79",
+            "background": "#faf8ff",
+            "primary-fixed": "#dbe1ff",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#2a1700",
+            "surface-container": "#eaedff",
+            "inverse-surface": "#283044",
+            "secondary": "#006a61",
+            "primary-fixed-dim": "#bec5e5",
+            "on-background": "#131b2e",
+            "outline": "#76767e",
+            "surface-container-high": "#e2e7ff",
+            "inverse-on-surface": "#eef0ff",
+            "on-primary": "#ffffff",
+            "surface": "#faf8ff",
+            "surface-bright": "#faf8ff",
+            "tertiary-fixed": "#ffddb8",
+            "on-secondary-fixed-variant": "#005049",
+            "surface-variant": "#dae2fd",
+            "tertiary-fixed-dim": "#ffb95f",
+            "inverse-primary": "#bec5e5",
+            "on-secondary-container": "#006f66",
+            "on-primary-fixed-variant": "#3e4660",
+            "error-container": "#ffdad6",
+            "tertiary": "#000000",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#d2d9f4",
+            "on-secondary-fixed": "#00201d",
+            "primary-container": "#131a33",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-tertiary-fixed-variant": "#653e00",
+            "secondary-fixed": "#89f5e7",
+            "secondary-container": "#86f2e4",
+            "tertiary-container": "#2a1700",
+            "on-tertiary-container": "#b87500"
+          }},
+          borderRadius: {{ DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }},
+          spacing: {{ "margin-tablet": "1.5rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "margin": "1rem", "gutter-desktop": "1.5rem", "space-2xl": "3rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "2rem", "space-md": "1rem" }},
+          fontFamily: {{
+            "headline-lg": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "badge-caps": ["JetBrains Mono", "monospace"],
+            "body-base": ["Inter", "Noto Sans Arabic", "sans-serif"],
+            "display-hero-mobile": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "headline-sm": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "label-code": ["JetBrains Mono", "monospace"],
+            "display-hero": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "body-sm": ["Inter", "Noto Sans Arabic", "sans-serif"],
+            "headline-md": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"]
+          }},
+          fontSize: {{
+            "headline-lg": ["24px", {{ lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }}],
+            "badge-caps": ["11px", {{ lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }}],
+            "body-base": ["15px", {{ lineHeight: "24px", fontWeight: "400" }}],
+            "display-hero-mobile": ["28px", {{ lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "800" }}],
+            "headline-sm": ["16px", {{ lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "600" }}],
+            "label-code": ["12px", {{ lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "700" }}],
+            "display-hero": ["36px", {{ lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "800" }}],
+            "body-sm": ["13.5px", {{ lineHeight: "20px", fontWeight: "400" }}],
+            "headline-md": ["20px", {{ lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }}]
+          }}
+        }}
+      }}
+    }};
+  </script>
+  <script src="{rel_root}assets/tasleemat_data.js"></script>
+</head>
+<body class="bg-background font-body-base text-body-base text-on-surface antialiased">
+  <!-- Top Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 w-full h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-surface-container-high">
+    <div class="h-16 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm" data-path="overview" href="{nav_home}">
+          <img alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain" src="{rel_root}img/logo.png"/>
+          <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Tasleemat (تسليمات)</span>
+        </a>
+        <span class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code border border-outline-variant/40">v2.0.2</span>
+      </div>
+      <div class="flex items-center gap-space-sm">
+        <a class="inline-flex items-center gap-1 px-space-sm py-1 rounded-lg border border-outline-variant/60 bg-surface-container-low text-on-surface font-label-code text-label-code hover:bg-surface-container transition-colors" href="{lang_toggle_url}">
+          <span>{lang_toggle_text}</span>
+        </a>
+        <a class="hidden sm:inline-flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-code text-label-code border border-outline-variant/40 hover:bg-surface-container-high hover:text-on-surface transition-colors" href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener noreferrer">
+          <span class="text-sm leading-none">★</span><span>GitHub</span><span class="text-outline-variant">|</span><span>v2.0.2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="{sidebar_class}">
+    <div class="mb-space-md px-space-sm">
+      <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-on-surface-variant">{'التنقل والحوكمة' if is_ar else 'Navigation & Governance'}</span>
+    </div>
+    <nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg">
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="{nav_home}">
+        <span class="material-symbols-outlined text-[18px]">home</span>
+        <span class="font-body-sm text-body-sm">{'الرئيسية / نظرة عامة' if is_ar else 'Home / Overview'}</span>
+      </a>
+      <a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="templates-catalog" href="./index.html">
+        <span class="material-symbols-outlined text-[18px]">library_books</span>
+        <span class="font-body-sm text-body-sm">{'فهرس النماذج (102 تسليمة)' if is_ar else '102 Templates Catalog'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="stage-gate-governance" href="{nav_gov}">
+        <span class="material-symbols-outlined text-[18px]">verified</span>
+        <span class="font-body-sm text-body-sm">{'بوابات العبور الحوكمية' if is_ar else 'Stage-Gate Governance'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tailoring-profiles" href="{nav_tailor}">
+        <span class="material-symbols-outlined text-[18px]">tune</span>
+        <span class="font-body-sm text-body-sm">{'مستويات التخصيص' if is_ar else 'Tailoring Profiles'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="developer-cli" href="{nav_dev}">
+        <span class="material-symbols-outlined text-[18px]">terminal</span>
+        <span class="font-body-sm text-body-sm">{'دليل المطورين وCLI' if is_ar else 'Developer & CLI'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bilingual-lexicon" href="{nav_lex}">
+        <span class="material-symbols-outlined text-[18px]">translate</span>
+        <span class="font-body-sm text-body-sm">{'المعجم الموحد للمصطلحات' if is_ar else 'Bilingual Lexicon'}</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content Container -->
+  <div class="{main_wrapper_class}">
+    <main class="w-full pt-16 bg-background min-h-screen px-space-md py-space-lg">
+      <div class="flex flex-col w-full">
+        <div class="max-w-[1400px] w-full mx-auto space-y-space-lg pb-space-2xl">
+          <!-- Hero / Metrics Ribbon -->
+          <div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+            <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+              <div class="max-w-3xl space-y-space-xs">
+                <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-code text-badge-caps uppercase tracking-wider">
+                  <span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                  {hero_badge}
+                </div>
+                <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                  {hero_title}
+                  <span class="block text-secondary font-body-base text-body-base mt-1" dir="{'ltr' if is_ar else 'rtl'}">{hero_subtitle}</span>
+                </h1>
+                <p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+                  {hero_desc}
+                </p>
+              </div>
+              <!-- Quick Lifecycle Counter Chips -->
+              <div class="flex flex-wrap sm:flex-nowrap gap-space-sm items-center">
+                <div class="p-space-sm rounded-lg bg-surface-container-low text-center min-w-[90px]">
+                  <span class="block font-headline-md text-headline-md text-on-surface">102</span>
+                  <span class="font-label-code text-badge-caps text-on-surface-variant">{'نماذج قياسية' if is_ar else 'FORMS'}</span>
+                </div>
+                <div class="p-space-sm rounded-lg bg-surface-container-low text-center min-w-[90px]">
+                  <span class="block font-headline-md text-headline-md text-secondary">204</span>
+                  <span class="font-label-code text-badge-caps text-on-surface-variant">{'حزم ثنائية' if is_ar else 'BUNDLES (EN/AR)'}</span>
+                </div>
+                <div class="p-space-sm rounded-lg bg-surface-container-low text-center min-w-[90px]">
+                  <span class="block font-headline-md text-headline-md text-on-surface">8</span>
+                  <span class="font-label-code text-badge-caps text-on-surface-variant">{'مراحل' if is_ar else 'PHASES'}</span>
+                </div>
+                <div class="p-space-sm rounded-lg bg-surface-container-low text-center min-w-[90px]">
+                  <span class="block font-headline-md text-headline-md text-secondary">4</span>
+                  <span class="font-label-code text-badge-caps text-on-surface-variant">{'مستويات' if is_ar else 'TIERS'}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Filter & Control Deck -->
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+            <!-- Search row & high-level toggles -->
+            <div class="flex flex-col md:flex-row gap-space-md items-stretch md:items-center justify-between">
+              <!-- Search bar with kbd -->
+              <div class="relative flex-1 max-w-2xl">
+                <span class="material-symbols-outlined absolute {'right-3' if is_ar else 'left-3'} top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+                <input class="w-full bg-surface-container-low text-on-surface {'pr-10 pl-16' if is_ar else 'pl-10 pr-16'} py-2.5 rounded-lg text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-outline" 
+                       id="template-search" 
+                       placeholder="{search_placeholder}" 
+                       type="text"/>
+                <div class="absolute {'left-3' if is_ar else 'right-3'} top-1/2 -translate-y-1/2 hidden sm:flex items-center gap-1 font-label-code text-[11px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+                  <span>/</span>
+                </div>
+              </div>
+              <!-- Utility Action Buttons -->
+              <div class="flex items-center gap-space-sm flex-wrap">
+                <div class="inline-flex items-center rounded-lg bg-surface-container-low p-1 text-on-surface-variant">
+                  <button class="px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-lowest text-on-surface shadow-xs transition-all flex items-center gap-1" id="view-mode-dual" onclick="setDualMode('dual')">
+                    <span class="material-symbols-outlined text-[15px]">splitscreen</span>
+                    <span>{'عرض مزدوج' if is_ar else 'Dual View'}</span>
+                  </button>
+                  <button class="px-2.5 py-1 rounded text-badge-caps font-badge-caps hover:text-on-surface transition-all flex items-center gap-1" id="view-mode-en" onclick="setDualMode('en')">
+                    <span>English</span>
+                  </button>
+                  <button class="px-2.5 py-1 rounded text-badge-caps font-badge-caps hover:text-on-surface transition-all flex items-center gap-1" id="view-mode-ar" onclick="setDualMode('ar')">
+                    <span>العربية</span>
+                  </button>
+                </div>
+                <!-- Quick Actions / Scaffolder Trigger -->
+                <button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-code text-label-code" onclick="openScaffolderModal()">
+                  <span class="material-symbols-outlined text-[17px]">terminal</span>
+                  <span>{'أداة Scaffolder' if is_ar else 'CLI Scaffolder'}</span>
+                </button>
+                <button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary text-on-primary hover:opacity-90 transition-opacity font-label-code text-label-code" onclick="batchExportZip()">
+                  <span class="material-symbols-outlined text-[17px]">folder_zip</span>
+                  <span>{'تصدير الحزمة (.ZIP)' if is_ar else 'Export Pack (.ZIP)'}</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Phase Selector Pills -->
+            <div class="space-y-space-xs">
+              <div class="flex items-center justify-between text-on-surface-variant">
+                <span class="font-badge-caps text-badge-caps uppercase tracking-wider">{filter_phase_label}</span>
+                <span class="font-label-code text-badge-caps text-secondary font-bold" id="active-count-label">{showing_label_init}</span>
+              </div>
+              <div class="flex items-center gap-1.5 overflow-x-auto pb-1" id="phase-filter-bar">
+                {phase_btns_html}
+              </div>
+            </div>
+
+            <!-- Secondary Filters: Tiers and Formats -->
+            <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-high/40">
+              <div class="flex items-center gap-space-sm flex-wrap">
+                <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-on-surface-variant">{filter_tier_label}</span>
+                <div class="flex items-center gap-1">
+                  {tier_btns_html}
+                </div>
+              </div>
+              <div class="flex items-center gap-space-sm text-on-surface-variant font-label-code text-badge-caps">
+                <span>{'الحزم المتضمنة:' if is_ar else 'Format Assets Included:'}</span>
+                <span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-on-surface">
+                  <span class="material-symbols-outlined text-[13px] text-secondary">check</span> Markdown .md
+                </span>
+                <span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-on-surface">
+                  <span class="material-symbols-outlined text-[13px] text-secondary">check</span> OKF JSON
+                </span>
+                <span class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-on-surface">
+                  <span class="material-symbols-outlined text-[13px] text-secondary">check</span> AI Prompt
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deliverables Grid / Catalog View (All 102 Cards) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="catalog-card-grid">
+            {rendered_cards}
+          </div>
+
+          <!-- Empty State (Hidden by default) -->
+          <div class="hidden p-space-2xl text-center bg-surface-container-lowest rounded-xl space-y-space-sm" id="no-results-state">
+            <span class="material-symbols-outlined text-[48px] text-outline">search_off</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">{'لم يتم العثور على أي تسليمات' if is_ar else 'No deliverables found'}</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mx-auto">
+              {'لا توجد نماذج تسليمات تطابق معايير البحث أو تصفيات المراحل والمستويات المحددة. جرب كلمة بحث أخرى أو أعد تعيين الفلاتر.' if is_ar else 'No PMO forms match your active search terms and tier filters. Clear filters or explore other lifecycle phases.'}
+            </p>
+            <button class="px-4 py-2 bg-surface-container-high rounded-lg text-label-code font-label-code text-on-surface hover:bg-surface-container transition-colors" onclick="resetAllFilters()">
+              {'إعادة تعيين كافة الفلاتر' if is_ar else 'Reset All Filters'}
+            </button>
+          </div>
+
+          <!-- Enterprise Standards Compliance Banner -->
+          <div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+            <div class="space-y-1">
+              <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">{'مصفوفة الامتثال والمعايير الدولية' if is_ar else 'Standard Alignment Matrix'}</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">{'الاعتماد المؤسسي والتوثيق القياسي' if is_ar else 'Institutional Compliance & Certifications'}</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                {'كل نموذج ومخرج مصمم ليتوافق بدقة مع معايير ISO 21500 / 21502، ومجالات الأداء في PMBOK 7/8، وأطر حوكمة الذكاء الاصطناعي NIST AI RMF.' if is_ar else 'Every form is structured to meet auditable ISO 21500 / 21502 tranches, PMBOK 7th performance domains, and NIST AI RMF governance frameworks.'}
+              </p>
+            </div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-code text-label-code shadow-xs">PMI PMBOK® 8th Ready</span>
+              <span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-code text-label-code shadow-xs">ISO 21500:2021</span>
+              <span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-code text-label-code shadow-xs">NIST AI 100-1</span>
+              <span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-code text-label-code shadow-xs">ESG / UN SDGs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Multi-Artifact Slide-Over Drawer / Inspector Modal -->
+  <div class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300" id="artifact-drawer">
+    <div class="absolute inset-0 bg-on-surface/40 backdrop-blur-xs transition-opacity cursor-pointer" onclick="closeFormDrawer()"></div>
+    <div class="absolute top-0 {'left-0 -translate-x-full' if is_ar else 'right-0 translate-x-full'} bottom-0 w-full max-w-4xl bg-surface-container-lowest shadow-2xl flex flex-col transition-transform duration-300 ease-out pointer-events-auto" id="drawer-panel">
+      <!-- Drawer Header -->
+      <div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-md border-b border-surface-container-high">
+        <div class="flex items-center gap-space-sm min-w-0">
+          <span class="font-label-code text-label-code px-2 py-0.5 rounded bg-primary text-on-primary" id="drawer-code">FORM-03-01</span>
+          <div class="min-w-0">
+            <h2 class="font-headline-sm text-headline-sm text-on-surface truncate" id="drawer-title-primary">Project Charter Spec</h2>
+            <p class="font-body-sm text-body-sm text-secondary truncate" id="drawer-title-secondary">ميثاق المشروع والاعتماد الرسمي</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 flex-shrink-0">
+          <button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-code text-label-code transition-colors" onclick="copyCurrentBundle()">
+            <span class="material-symbols-outlined text-[16px]">content_copy</span>
+            <span>{'نسخ الحزمة' if is_ar else 'Copy Bundle'}</span>
+          </button>
+          <button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="closeFormDrawer()">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Drawer Tabs -->
+      <div class="px-space-md bg-surface-container-low flex items-center gap-2 overflow-x-auto border-b border-surface-container-high">
+        <button class="drawer-tab active px-3 py-2 text-label-code font-label-code text-on-surface bg-surface-container-lowest rounded-t-lg transition-colors" id="tab-btn-spec" onclick="switchTab('spec')">
+          {'الهيكل والبيانات' if is_ar else 'Bilingual Schema'}
+        </button>
+        <button class="drawer-tab px-3 py-2 text-label-code font-label-code text-on-surface-variant hover:text-on-surface transition-colors" id="tab-btn-template" onclick="switchTab('template')">
+          {'قالب ماركداون' if is_ar else 'Markdown Template'}
+        </button>
+        <button class="drawer-tab px-3 py-2 text-label-code font-label-code text-on-surface-variant hover:text-on-surface transition-colors" id="tab-btn-guide" onclick="switchTab('guide')">
+          {'الدليل الإرشادي' if is_ar else 'Practice Guide'}
+        </button>
+        <button class="drawer-tab px-3 py-2 text-label-code font-label-code text-on-surface-variant hover:text-on-surface transition-colors" id="tab-btn-prompt" onclick="switchTab('prompt')">
+          {'موجه الذكاء الاصطناعي' if is_ar else 'AI Prompt'}
+        </button>
+        <button class="drawer-tab px-3 py-2 text-label-code font-label-code text-on-surface-variant hover:text-on-surface transition-colors" id="tab-btn-cli" onclick="switchTab('cli')">
+          CLI & SDK
+        </button>
+      </div>
+
+      <!-- Drawer Body -->
+      <div class="flex-1 overflow-y-auto p-space-lg space-y-space-lg bg-surface-container-lowest" id="drawer-body-container">
+        <div class="tab-pane space-y-space-md" id="tab-content-spec"></div>
+        <div class="tab-pane hidden space-y-space-md" id="tab-content-template"></div>
+        <div class="tab-pane hidden space-y-space-md" id="tab-content-guide"></div>
+        <div class="tab-pane hidden space-y-space-md" id="tab-content-prompt"></div>
+        <div class="tab-pane hidden space-y-space-md" id="tab-content-cli"></div>
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="p-space-md bg-surface-container-low flex items-center justify-between border-t border-surface-container-high">
+        <span class="font-label-code text-xs text-on-surface-variant">{'حزمة متزامنة: 5 ملفات موثقة (.md, .json, .prompt, .py)' if is_ar else 'Bundle: 5 Synchronized Files (.md, .json, .prompt, .py)'}</span>
+        <div class="flex items-center gap-space-sm">
+          <button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-code text-label-code transition-colors" onclick="closeFormDrawer()">
+            {'إغلاق' if is_ar else 'Close Inspector'}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLI Scaffolder Modal -->
+  <div class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-200" id="scaffolder-modal">
+    <div class="absolute inset-0 bg-on-surface/50 backdrop-blur-xs cursor-pointer" onclick="closeScaffolderModal()"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-xl bg-surface-container-lowest rounded-xl shadow-2xl p-space-lg space-y-space-md pointer-events-auto">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-secondary text-[24px]">terminal</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">{'مساعد أوامر CLI لتسليمات' if is_ar else 'Tasleemat CLI Scaffolder Helper'}</h3>
+        </div>
+        <button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" onclick="closeScaffolderModal()">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant">
+        {'حدد خصائص مشروعك لتوليد الأمر التنفيذي التلقائي لإنشاء كافة مجلدات وتسليمات المشروع:' if is_ar else 'Configure your project attributes to generate the automated terminal command for scaffolding full delivery structures:'}
+      </p>
+      <div class="space-y-space-sm">
+        <div>
+          <label class="block font-label-code text-badge-caps uppercase tracking-wider text-on-surface-variant mb-1">{'مستوى الحوكمة (Tier)' if is_ar else 'Tailoring Tier'}</label>
+          <select class="w-full bg-surface-container-low px-3 py-2 rounded-lg text-body-sm font-body-sm focus:outline-none" id="cli-tier-select">
+            <option value="1">Tier 1: Small Project (5 Core Artifacts)</option>
+            <option selected="" value="2">Tier 2: Standard Core (18 Artifacts)</option>
+            <option value="3">Tier 3: Enterprise Program (45+ Artifacts)</option>
+            <option value="4">Tier 4: Agile / AI Governance (25 Artifacts)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-label-code text-badge-caps uppercase tracking-wider text-on-surface-variant mb-1">{'حزمة اللغة' if is_ar else 'Language Pack'}</label>
+          <select class="w-full bg-surface-container-low px-3 py-2 rounded-lg text-body-sm font-body-sm focus:outline-none" id="cli-lang-select">
+            <option selected="" value="both">Dual Bundle (English + العربية)</option>
+            <option value="ar">Arabic Only (العربية فقط)</option>
+            <option value="en">English Only</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-label-code text-badge-caps uppercase tracking-wider text-on-surface-variant mb-1">{'اسم المشروع (أو المجلد)' if is_ar else 'Project Name (or Directory)'}</label>
+          <input class="w-full bg-surface-container-low px-3 py-2 rounded-lg text-body-sm font-body-sm focus:outline-none" id="cli-name-input" type="text" value="Digital-Transformation-PMO"/>
+        </div>
+      </div>
+      <div class="space-y-1">
+        <span class="font-label-code text-badge-caps uppercase text-on-surface-variant">{'الأمر المولد:' if is_ar else 'Generated Command:'}</span>
+        <div class="p-3 rounded-lg bg-primary-container text-on-primary font-label-code text-xs flex items-center justify-between">
+          <code id="cli-generated-code">tasleemat init --tier 2 --pack standard --lang both --name "Digital-Transformation-PMO"</code>
+          <button class="ml-2 hover:underline" onclick="copySnippetText(document.getElementById('cli-generated-code').innerText)">
+            <span class="material-symbols-outlined text-[16px]">content_copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-end gap-2 pt-2">
+        <button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-code text-label-code" onclick="closeScaffolderModal()">
+          {'تم' if is_ar else 'Done'}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-lg shadow-xl font-label-code text-xs flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300" id="catalog-toast">
+    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+    <span id="toast-message">Snippet copied to clipboard</span>
+  </div>
+
+  <!-- Interactive Logic Script -->
+  <script>
+    const isArabic = {'true' if is_ar else 'false'};
+    const relRoot = "{rel_root}";
+    let activePhase = 'all';
+    let activeTier = 'all';
+    let currentDrawerForm = 'PMO-03.01';
+
+    const searchInput = document.getElementById('template-search');
+    const cards = Array.from(document.querySelectorAll('.deliverable-card'));
+    const noResults = document.getElementById('no-results-state');
+    const activeCountLabel = document.getElementById('active-count-label');
+
+    function normStr(str) {{
+      if (!str) return '';
+      return str.toLowerCase()
+        .replace(/[أإآ]/g, 'ا')
+        .replace(/ة/g, 'ه')
+        .replace(/ى/g, 'ي')
+        .replace(/[\u064B-\u065F]/g, '') // remove tashkeel
+        .replace(/[-_.\\s]/g, ''); // ignore separators
+    }}
+
+    function applyFilters() {{
+      let visibleCount = 0;
+      const qRaw = (searchInput.value || '').trim().toLowerCase();
+      const qNorm = normStr(qRaw);
+      const qWords = qRaw.split(/\\s+/).filter(Boolean);
+
+      cards.forEach(card => {{
+        const cPhase = card.dataset.phase;
+        const cTiers = card.dataset.tier ? card.dataset.tier.split(',') : [];
+        const cSearch = (card.dataset.search || '').toLowerCase();
+        const cCode = (card.dataset.code || '').toLowerCase();
+        const cCodeAlt = (card.dataset.codeAlt || '').toLowerCase();
+        const cSearchNorm = normStr(card.dataset.search || '');
+
+        const matchesPhase = (activePhase === 'all' || cPhase === activePhase);
+        const matchesTier = (activeTier === 'all' || cTiers.includes(activeTier));
+
+        let matchesSearch = true;
+        if (qRaw) {{
+          const matchesWords = qWords.every(w => cSearch.includes(w));
+          const matchesNorm = cSearchNorm.includes(qNorm) || cCode.includes(qRaw) || cCodeAlt.includes(qRaw);
+          matchesSearch = matchesWords || matchesNorm;
+        }}
+
+        if (matchesPhase && matchesTier && matchesSearch) {{
+          card.classList.remove('hidden');
+          visibleCount++;
+        }} else {{
+          card.classList.add('hidden');
+        }}
+      }});
+
+      if (activeCountLabel) {{
+        activeCountLabel.innerText = isArabic 
+          ? `عرض ${{visibleCount}} تسليمة من إجمالي ${{cards.length}}`
+          : `Showing ${{visibleCount}} of ${{cards.length}} Deliverables`;
+      }}
+
+      if (noResults) {{
+        if (visibleCount === 0) {{
+          noResults.classList.remove('hidden');
+        }} else {{
+          noResults.classList.add('hidden');
+        }}
+      }}
+    }}
+
+    searchInput.addEventListener('input', applyFilters);
+
+    window.addEventListener('keydown', (e) => {{
+      if (e.key === '/' && document.activeElement !== searchInput) {{
+        e.preventDefault();
+        searchInput.focus();
+      }}
+      if (e.key === 'Escape') {{
+        closeFormDrawer();
+        closeScaffolderModal();
+      }}
+    }});
+
+    function filterPhase(phase) {{
+      activePhase = phase;
+      document.querySelectorAll('.phase-btn').forEach(btn => {{
+        if (btn.dataset.phase === phase) {{
+          btn.className = "phase-btn px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap bg-primary text-on-primary transition-all";
+        }} else {{
+          btn.className = "phase-btn px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all";
+        }}
+      }});
+      applyFilters();
+    }}
+
+    function filterTier(tier) {{
+      activeTier = tier;
+      document.querySelectorAll('.tier-btn').forEach(btn => {{
+        if (btn.dataset.tier === tier) {{
+          btn.className = "tier-btn px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-highest text-on-surface";
+        }} else {{
+          btn.className = "tier-btn px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-low text-on-surface hover:bg-surface-container";
+        }}
+      }});
+      applyFilters();
+    }}
+
+    function resetAllFilters() {{
+      searchInput.value = '';
+      filterPhase('all');
+      filterTier('all');
+    }}
+
+    function setDualMode(mode) {{
+      const bDual = document.getElementById('view-mode-dual');
+      const bEn = document.getElementById('view-mode-en');
+      const bAr = document.getElementById('view-mode-ar');
+      [bDual, bEn, bAr].forEach(b => {{
+        if (b) b.className = "px-2.5 py-1 rounded text-badge-caps font-badge-caps hover:text-on-surface transition-all flex items-center gap-1";
+      }});
+
+      if (mode === 'dual' && bDual) {{
+        bDual.className = "px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-lowest text-on-surface shadow-xs transition-all flex items-center gap-1";
+        showToast(isArabic ? "تم تفعيل العرض المزدوج" : "Switched to Dual English / Arabic View");
+      }} else if (mode === 'en' && bEn) {{
+        bEn.className = "px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-lowest text-on-surface shadow-xs transition-all flex items-center gap-1";
+        showToast(isArabic ? "تم تفعيل العرض بالإنجليزية" : "Switched to English View");
+      }} else if (mode === 'ar' && bAr) {{
+        bAr.className = "px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-lowest text-on-surface shadow-xs transition-all flex items-center gap-1";
+        showToast(isArabic ? "تم تفعيل العرض بالعربية" : "Switched to Arabic View");
+      }}
+    }}
+
+    // Drawer Management
+    const drawer = document.getElementById('artifact-drawer');
+    const drawerPanel = document.getElementById('drawer-panel');
+
+    function escapeHtml(s) {{
+      if (!s) return '';
+      return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }}
+
+    function openFormDrawer(code) {{
+      currentDrawerForm = code;
+      let item = null;
+      if (window.TASLEEMAT_DATA) {{
+        item = window.TASLEEMAT_DATA.find(d => 
+          d.code === code || 
+          d.code_raw === code || 
+          d.code.replace('PMO-', 'FORM-').replace('.', '-') === code ||
+          d.code_raw.replace('_', '-') === code
+        );
+      }}
+
+      if (!item) {{
+        const card = document.querySelector(`.deliverable-card[data-code="${{code}}"], .deliverable-card[data-code-alt="${{code}}"]`);
+        if (card) {{
+          item = {{
+            code: card.dataset.codeAlt || code,
+            name_en: card.querySelector('h2').innerText,
+            name_ar: card.querySelector('[dir="rtl"], [dir="ltr"]').innerText,
+            phase: card.dataset.phase,
+            tier: card.dataset.tier,
+            template_en: "# " + code,
+            template_ar: "# " + code
+          }};
+        }}
+      }}
+
+      if (item) {{
+        const formCode = item.code.replace('PMO-', 'FORM-').replace('.', '-');
+        document.getElementById('drawer-code').innerText = formCode;
+        document.getElementById('drawer-title-primary').innerText = isArabic ? item.name_ar : item.name_en;
+        document.getElementById('drawer-title-secondary').innerText = isArabic ? item.name_en : item.name_ar;
+
+        // Tab 1: Spec Overview
+        const specTab = document.getElementById('tab-content-spec');
+        if (specTab) {{
+          specTab.innerHTML = `
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+              <div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm">
+                <span class="font-label-code text-badge-caps uppercase tracking-wider text-secondary font-bold">English Deliverable Spec</span>
+                <div class="space-y-2 text-body-sm text-on-surface">
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">Standard Code:</span> ${{item.code}} (${{formCode}})
+                  </div>
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">Lifecycle Phase:</span> ${{item.phase_name_en || item.phase}}
+                  </div>
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">Governance Tier:</span> ${{item.tier || 'Tier 1 | Tier 2 | Tier 3'}}
+                  </div>
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">Standard Reference:</span> PMI PMBOK® 6/7/8 • ISO 21500
+                  </div>
+                </div>
+              </div>
+              <div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm" dir="rtl">
+                <span class="font-label-code text-badge-caps uppercase tracking-wider text-secondary font-bold">المواصفة المعتمدة بالعربية</span>
+                <div class="space-y-2 text-body-sm text-on-surface">
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">الرمز المعتمد:</span> ${{formCode}}
+                  </div>
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">مرحلة دورة الحياة:</span> ${{item.phase_name_ar || item.phase}}
+                  </div>
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">مستوى التخصيص:</span> ${{item.tier || 'المستويات 1-3'}}
+                  </div>
+                  <div class="p-2.5 rounded bg-surface-container-lowest">
+                    <span class="font-bold text-xs">التوافق الوطني:</span> هيئة الحكومة الرقمية (DGA) • رؤية 2030
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 bg-surface-container-low rounded-xl border border-surface-container-high text-xs flex justify-between items-center">
+              <span>Frictionless Datapackage (JSON Schema) & CSV data tables validated.</span>
+              <button onclick="copySnippet('${{formCode}}')" class="font-bold text-secondary hover:underline">Copy CLI Scaffold</button>
+            </div>
+          `;
+        }}
+
+        // Tab 2: Markdown Template
+        const tplTab = document.getElementById('tab-content-template');
+        if (tplTab) {{
+          const tplText = isArabic ? (item.template_ar || item.template_en) : (item.template_en || item.template_ar);
+          tplTab.innerHTML = `
+            <div class="flex items-center justify-between pb-2">
+              <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} Markdown Template</span>
+              <button class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-tpl-raw')">📋 ${{isArabic ? 'نسخ القالب' : 'Copy Template'}}</button>
+            </div>
+            <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-tpl-raw">${{escapeHtml(tplText)}}</code></pre>
+          `;
+        }}
+
+        // Tab 3: Practice Guide
+        const guideTab = document.getElementById('tab-content-guide');
+        if (guideTab) {{
+          const guideText = isArabic ? (item.guide_ar || item.guide_en) : (item.guide_en || item.guide_ar);
+          guideTab.innerHTML = `
+            <div class="flex items-center justify-between pb-2">
+              <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} Authoring Practice Guide</span>
+              <a class="px-2.5 py-1 rounded bg-secondary/10 text-secondary text-xs font-label-code font-bold hover:bg-secondary/20 transition" href="${{relRoot}}${{isArabic ? item.url_guide_ar : item.url_guide_en}}" target="_blank">${{isArabic ? 'فتح الدليل كاملاً ↗' : 'Open Full Guide ↗'}}</a>
+            </div>
+            <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-guide-raw">${{escapeHtml(guideText)}}</code></pre>
+          `;
+        }}
+
+        // Tab 4: AI Copilot Prompt
+        const promptTab = document.getElementById('tab-content-prompt');
+        if (promptTab) {{
+          const promptText = isArabic ? (item.prompt_ar || item.prompt_en) : (item.prompt_en || item.prompt_ar);
+          promptTab.innerHTML = `
+            <div class="flex items-center justify-between pb-2">
+              <span class="font-label-code text-xs text-on-surface-variant font-bold">NIST AI RMF Compliant Prompt</span>
+              <button class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-prompt-raw')">📋 ${{isArabic ? 'نسخ الموجه' : 'Copy Prompt'}}</button>
+            </div>
+            <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-prompt-raw">${{escapeHtml(promptText || 'Standard System Prompt for AI copilots.')}}</code></pre>
+          `;
+        }}
+
+        // Tab 5: CLI
+        const cliTab = document.getElementById('tab-content-cli');
+        if (cliTab) {{
+          cliTab.innerHTML = `
+            <div class="space-y-4">
+              <div class="bg-surface-container-low p-4 rounded-xl space-y-2 border border-surface-container-high">
+                <span class="font-label-code text-xs text-secondary font-bold">1. Scaffold Single Deliverable:</span>
+                <pre class="p-3 bg-surface-container-lowest text-on-surface font-mono text-xs rounded-lg flex justify-between items-center"><code>tasleemat scaffold ${{formCode}} --lang both</code><button onclick="copySnippetText('tasleemat scaffold ${{formCode}} --lang both')" class="text-xs text-secondary font-bold">${{isArabic ? 'نسخ' : 'Copy'}}</button></pre>
+              </div>
+              <div class="bg-surface-container-low p-4 rounded-xl space-y-2 border border-surface-container-high">
+                <span class="font-label-code text-xs text-secondary font-bold">2. Python SDK Access:</span>
+                <pre class="p-3 bg-surface-container-lowest text-on-surface font-mono text-xs rounded-lg"><code>from tasleemat import Catalog\nitem = Catalog.get("${{formCode}}")\nprint(item.template(lang="${{isArabic ? 'ar' : 'en'}}"))</code></pre>
+              </div>
+            </div>
+          `;
+        }}
+      }}
+
+      switchTab('spec');
+      drawer.classList.remove('pointer-events-none', 'opacity-0');
+      drawerPanel.classList.remove(isArabic ? '-translate-x-full' : 'translate-x-full');
+    }}
+
+    function closeFormDrawer() {{
+      drawerPanel.classList.add(isArabic ? '-translate-x-full' : 'translate-x-full');
+      setTimeout(() => {{
+        drawer.classList.add('pointer-events-none', 'opacity-0');
+      }}, 200);
+    }}
+
+    function switchTab(tabName) {{
+      document.querySelectorAll('.drawer-tab').forEach(btn => {{
+        btn.classList.remove('active', 'bg-surface-container-lowest', 'text-on-surface');
+        btn.classList.add('text-on-surface-variant');
+      }});
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
+
+      const activeBtn = document.getElementById(`tab-btn-${{tabName}}`);
+      const activePane = document.getElementById(`tab-content-${{tabName}}`);
+      if (activeBtn) {{
+        activeBtn.classList.add('active', 'bg-surface-container-lowest', 'text-on-surface');
+        activeBtn.classList.remove('text-on-surface-variant');
+      }}
+      if (activePane) {{
+        activePane.classList.remove('hidden');
+      }}
+    }}
+
+    // Scaffolder Modal
+    const scaffolderModal = document.getElementById('scaffolder-modal');
+    function openScaffolderModal() {{
+      scaffolderModal.classList.remove('pointer-events-none', 'opacity-0');
+      updateCliCode();
+    }}
+    function closeScaffolderModal() {{
+      scaffolderModal.classList.add('pointer-events-none', 'opacity-0');
+    }}
+
+    const cliTierSelect = document.getElementById('cli-tier-select');
+    const cliLangSelect = document.getElementById('cli-lang-select');
+    const cliNameInput = document.getElementById('cli-name-input');
+    const cliGeneratedCode = document.getElementById('cli-generated-code');
+
+    function updateCliCode() {{
+      const tier = cliTierSelect ? cliTierSelect.value : '2';
+      const lang = cliLangSelect ? cliLangSelect.value : 'both';
+      const name = (cliNameInput ? cliNameInput.value.trim() : '') || 'Digital-Transformation-PMO';
+      if (cliGeneratedCode) {{
+        cliGeneratedCode.innerText = `tasleemat init --tier ${{tier}} --pack standard --lang ${{lang}} --name "${{name}}"`;
+      }}
+    }}
+
+    [cliTierSelect, cliLangSelect, cliNameInput].forEach(el => {{
+      if (el) {{
+        el.addEventListener('change', updateCliCode);
+        el.addEventListener('input', updateCliCode);
+      }}
+    }});
+
+    // Toast Utilities
+    function showToast(msg) {{
+      const toast = document.getElementById('catalog-toast');
+      document.getElementById('toast-message').innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {{
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }}, 2400);
+    }}
+
+    function copySnippet(code) {{
+      navigator.clipboard.writeText(`tasleemat scaffold ${{code}} --lang both`);
+      showToast(isArabic ? `تم نسخ أمر ${{code}}` : `Copied scaffold command for ${{code}}`);
+    }}
+
+    function copySnippetText(text) {{
+      navigator.clipboard.writeText(text);
+      showToast(isArabic ? 'تم النسخ إلى الحافظة' : 'CLI command copied to clipboard');
+    }}
+
+    function copyDrawerCode(elementId) {{
+      const el = document.getElementById(elementId);
+      if (el) {{
+        navigator.clipboard.writeText(el.innerText);
+        showToast(isArabic ? 'تم النسخ بنجاح' : 'Content copied to clipboard');
+      }}
+    }}
+
+    function copyCurrentBundle() {{
+      navigator.clipboard.writeText(`tasleemat scaffold ${{currentDrawerForm}} --lang both`);
+      showToast(isArabic ? `تم نسخ حزمة ${{currentDrawerForm}}` : `Copied bundle command for ${{currentDrawerForm}}`);
+    }}
+
+    function batchExportZip() {{
+      showToast(isArabic ? 'جاري تجهيز حزمة الـ 102 تسليمة بصيغة ZIP...' : 'Generating complete 102 Deliverables ZIP archive...');
+    }}
+  </script>
+</body>
+</html>
+"""
+
