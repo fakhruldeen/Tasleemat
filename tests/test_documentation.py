@@ -69,6 +69,10 @@ class TestDocumentation(unittest.TestCase):
     def test_static_portal_site_generation(self):
         """Verify the custom static HTML portal generates site/ with core HTML pages and assets."""
         site_dir = ROOT / "site"
+        if not site_dir.exists():
+            import subprocess
+            subprocess.run(["python3", str(ROOT / "tools" / "generate_documentation_portal.py")], check=True)
+
         self.assertTrue(site_dir.exists(), "site/ directory must exist after portal generation")
 
         required_pages = [
@@ -88,6 +92,7 @@ class TestDocumentation(unittest.TestCase):
         for rel in required_pages:
             p = site_dir / rel
             self.assertTrue(p.exists(), f"Static portal page {rel} missing in site/")
+
 
 
     def test_repo_readmes(self):

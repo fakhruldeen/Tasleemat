@@ -45,9 +45,15 @@ jobs:
         run: |
           python3 tools/validate_frictionless.py
 
-      - name: Run Complete Automated Test Suite (28 Unit & Integration Tests)
+      - name: Generate Complete Static HTML Documentation Portal
+        run: |
+          python3 tools/generate_documentation_portal.py
+
+
+      - name: Run Complete Automated Test Suite (38 Unit & Integration Tests)
         run: |
           python3 -m unittest discover -s tests -v
+
 
       - name: Test Tasleemat CLI Scaffolder & Exporter
         run: |
