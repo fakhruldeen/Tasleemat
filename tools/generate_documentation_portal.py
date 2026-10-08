@@ -13,12 +13,15 @@ Features:
 import os
 import re
 import sys
-import yaml
 import json
 import shutil
 import pathlib
 import markdown
-from bs4 import BeautifulSoup
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    print("Error: beautifulsoup4 is required for portal processing. Please run: pip install -r requirements.txt")
+    sys.exit(1)
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from tools.stitch_screens_builder import (
