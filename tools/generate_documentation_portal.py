@@ -19,6 +19,15 @@ import shutil
 import pathlib
 import markdown
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from tools.stitch_screens_builder import (
+    get_screen1_form_viewer_html,
+    get_screen2_home_ar,
+    get_screen3_developer_md,
+    get_screen4_governance_md,
+    get_screen6_home_en
+)
+
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DOCS_DIR = ROOT / "docs"
@@ -609,6 +618,16 @@ def build_portal():
     # 2. Build Landing Pages (Hero Banners + Metric Stat Grids)
     build_landing_pages()
 
+    # 2b. Build Stitch Specific Pages: Governance & Developer Portals
+    (DOCS_DIR / "governance.md").write_text(get_screen4_governance_md(), encoding="utf-8")
+    (DOCS_DIR / "developer.md").write_text(get_screen3_developer_md(), encoding="utf-8")
+
+    # 2c. Write Stitch Screen 1 Interactive Form Viewer
+    form_viewer_dir = DOCS_DIR / "forms" / "ar"
+    form_viewer_dir.mkdir(parents=True, exist_ok=True)
+    (form_viewer_dir / "form-viewer.html").write_text(get_screen1_form_viewer_html(rel_root="../../"), encoding="utf-8")
+
+
     # 3. Generate Client-Side Data JS for Interactive Explorer
     generate_tasleemat_data_js(deliverables)
 
@@ -637,7 +656,11 @@ def build_portal():
     print("Documentation portal successfully generated!")
 
 def build_landing_pages():
-    """Build modern Hero Landing pages for English (docs/index.md) and Arabic (docs/README_AR.md)."""
+    """Build modern Hero Landing pages using Stitch Screen 6 (EN) and Screen 2 (AR)."""
+    (DOCS_DIR / "index.md").write_text(get_screen6_home_en(), encoding="utf-8")
+    (DOCS_DIR / "README_AR.md").write_text(get_screen2_home_ar(), encoding="utf-8")
+    return
+
     # 1. English Landing Page
     index_en = """<!--
 ---
@@ -1874,10 +1897,12 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
     font_class = "font-arabic" if is_ar else "font-sans"
 
     nav_home = f"{rel_root}index.html" if not is_ar else f"{rel_root}README_AR.html"
-    nav_gates = f"{rel_root}en/04_stage_gates_and_governance.html" if not is_ar else f"{rel_root}ar/04_stage_gates_and_governance.html"
+    nav_gates = f"{rel_root}governance.html"
     nav_catalog = f"{rel_root}catalog/en/index.html" if not is_ar else f"{rel_root}catalog/ar/index.html"
-    nav_manuals = f"{rel_root}en/03_pmo_policy_manual.html" if not is_ar else f"{rel_root}ar/03_pmo_policy_manual.html"
-    nav_tech = f"{rel_root}TECHNICAL.html"
+    nav_viewer = f"{rel_root}forms/ar/form-viewer.html"
+    nav_manuals = f"{rel_root}en/01_getting_started.html" if not is_ar else f"{rel_root}ar/01_getting_started.html"
+    nav_tech = f"{rel_root}developer.html"
+    nav_lexicon = f"{rel_root}LEXICON.html"
     
     lang_btn = ""
     if lang_switch_url:
@@ -1916,8 +1941,10 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
         <a href="{nav_home}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🏠 {"Home" if not is_ar else "الرئيسية"}</a>
         <a href="{nav_gates}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🚀 {"Stage-Gates" if not is_ar else "بوابات العبور"}</a>
         <a href="{nav_catalog}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📑 {"Deliverables" if not is_ar else "المكتبة التفاعلية"}</a>
+        <a href="{nav_viewer}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📝 {"Form Viewer" if not is_ar else "معاينة النماذج"}</a>
         <a href="{nav_manuals}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📚 {"PMO Manuals" if not is_ar else "أدلة PMO"}</a>
         <a href="{nav_tech}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">💻 {"Developer Hub" if not is_ar else "مركز التطوير"}</a>
+        <a href="{nav_lexicon}" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📖 {"Lexicon" if not is_ar else "المعجم"}</a>
       </nav>
 
       <div class="flex items-center gap-2">
@@ -1950,8 +1977,10 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
       </div>
       <div class="flex items-center gap-4">
         <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hover:text-white transition">GitHub Repository</a>
+        <a href="{rel_root}governance.html" class="hover:text-white transition">Stage-Gates & Tailoring</a>
+        <a href="{rel_root}forms/ar/form-viewer.html" class="hover:text-white transition">Interactive Form Viewer</a>
         <a href="{rel_root}LEXICON.html" class="hover:text-white transition">Master Lexicon</a>
-        <a href="{rel_root}TECHNICAL.html" class="hover:text-white transition">Developer SDK</a>
+        <a href="{rel_root}developer.html" class="hover:text-white transition">Developer SDK</a>
       </div>
     </div>
   </footer>
@@ -2079,6 +2108,13 @@ def compile_static_site(deliverables):
     shutil.copytree(DOCS_DIR / "assets", SITE_DIR / "assets")
     shutil.copytree(DOCS_DIR / "img", SITE_DIR / "img")
 
+    # Copy any standalone HTML files from docs/ to site/
+    for html_file in DOCS_DIR.rglob("*.html"):
+        rel_path = html_file.relative_to(DOCS_DIR)
+        out_html = SITE_DIR / rel_path
+        out_html.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(html_file, out_html)
+
     md_files = list(DOCS_DIR.rglob("*.md"))
     print(f"Compiling {len(md_files)} markdown files to static HTML portal...")
 
@@ -2103,6 +2139,10 @@ def compile_static_site(deliverables):
         else:
             if str(rel_path) == "index.md":
                 lang_switch_url = "README_AR.html"
+            elif str(rel_path) == "governance.md":
+                lang_switch_url = "ar/04_stage_gates_and_governance.html"
+            elif str(rel_path) == "developer.md":
+                lang_switch_url = "ar/11_tools_and_automation.html"
             else:
                 candidate = str(rel_path).replace("/en/", "/ar/").replace("_Template", "_قالب").replace("_Guide", "_دليل").replace("_Example", "_مثال").replace(".md", ".html")
                 if (DOCS_DIR / candidate.replace(".html", ".md")).exists():
@@ -2114,8 +2154,11 @@ def compile_static_site(deliverables):
         if content.startswith("<!--") and "-->" in content:
             content = content.split("-->", 1)[1]
 
-        h1_match = re.search(r"^#\s+(.+)$", content, re.MULTILINE)
-        title = h1_match.group(1).strip() if h1_match else md_file.stem.replace("_", " ").title()
+        h1_match = re.search(r'<h1[^>]*>(.+?)</h1>', content, re.DOTALL) or re.search(r"^#\s+(.+)$", content, re.MULTILINE)
+        if h1_match:
+            title = re.sub(r'<[^>]+>', '', h1_match.group(1)).strip()
+        else:
+            title = md_file.stem.replace("_", " ").title()
 
         # Convert Callouts (> [!NOTE], etc.)
         def repl_callout(match):

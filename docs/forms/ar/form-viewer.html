@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معاينة وتخصيص ميثاق المشروع القياسي | FORM-03-01 | Tasleemat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../img/logo.png">
+  <script src="../../assets/tasleemat_data.js"></script>
+  <script src="../../assets/search.js"></script>
+  <script src="../../assets/explorer.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col font-arabic" dir="rtl">
+  <!-- Top Global Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../README_AR.html" class="flex items-center gap-2 text-decoration-none">
+          <img src="../../img/logo.png" alt="Tasleemat Logo" class="h-9 w-auto">
+          <span class="font-bold text-lg tracking-tight text-slate-900">تسليمات | <span class="text-blue-700">Tasleemat</span></span>
+        </a>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-1 font-medium text-sm">
+        <a href="../../README_AR.html" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🏠 الرئيسية</a>
+        <a href="../../ar/04_stage_gates_and_governance.html" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">🚀 بوابات العبور</a>
+        <a href="../../catalog/ar/index.html" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📑 كتالوج النماذج</a>
+        <a href="../../forms/ar/form-viewer.html" class="px-3 py-2 rounded-md bg-blue-50 text-blue-700 font-semibold transition">📝 معاينة النماذج</a>
+        <a href="../../LEXICON.html" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">📖 المعجم</a>
+        <a href="../../TECHNICAL.html" class="px-3 py-2 rounded-md hover:bg-slate-100 text-slate-700 transition">💻 مركز التطوير</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-200 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        <a href="../../index.html" class="btn-lang">🇬🇧 English Portal</a>
+        <button id="theme-toggle" class="p-2 rounded-lg text-slate-500 hover:bg-slate-100 transition" title="تبديل الوضع الليلي">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Viewer Content -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <!-- 1. Breadcrumbs & Document Header -->
+    <div class="mb-4">
+      <nav class="flex text-xs text-slate-500 gap-1 items-center mb-2">
+        <a href="../../README_AR.html" class="hover:text-blue-700 transition">الرئيسية</a>
+        <span>/</span>
+        <a href="../../catalog/ar/index.html" class="hover:text-blue-700 transition">كتالوج النماذج</a>
+        <span>/</span>
+        <a href="../../forms/ar/03_البدء/index.html" class="hover:text-blue-700 transition">03. مرحلة البدء</a>
+        <span>/</span>
+        <span class="text-slate-800 font-semibold">FORM-03-01: ميثاق المشروع</span>
+      </nav>
+
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="badge badge-code">FORM-03-01</span>
+            <span class="badge badge-phase">🚀 مرحلة البدء والترخيص</span>
+            <span class="badge badge-tier-1">المستوى 1-3 (إلزامي لكافة المشاريع)</span>
+            <span class="badge" style="background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;">✓ معتمد ومطابق لـ PMI PMBOK®</span>
+          </div>
+          <h1 class="text-2xl font-bold text-slate-900 m-0">ميثاق المشروع القياسي المعتمد (Project Charter)</h1>
+          <p class="text-xs text-slate-500 mt-1">الرمز المرجعي: <code class="font-mono text-slate-700 font-semibold">TASLEEMAT-FORM-03-01</code> | الإصدار: 2.1 | حالة الوثيقة: معتمدة ومطابقة للمواصفات الحكومية</p>
+        </div>
+
+        <!-- Action Bar -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="window.print()" class="btn-secondary text-xs">📄 تصدير إلى Word / PDF</button>
+          <button onclick="navigator.clipboard.writeText('# ميثاق المشروع القياسي\n...'); alert('تم نسخ قالب Markdown إلى الحافظة!');" class="btn-secondary text-xs">📋 نسخ قالب Markdown</button>
+          <button onclick="populateAIModal()" class="btn-emerald text-xs font-semibold">🤖 توليد تلقائي بالذكاء الاصطناعي (AI Populate)</button>
+          <a href="https://github.com/fakhruldeen/Tasleemat/tree/main/forms/ar/03_البدء" target="_blank" class="btn-secondary text-xs">🐙 مزامنة مع GitHub ↗</a>
+          <button onclick="alert('تم حفظ المسودة بنجاح في التخزين المحلي للمتصفح!');" class="btn-primary text-xs">💾 حفظ كمسودة</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Document Meta Bar (4 Stat Cards) -->
+    <div class="doc-meta-bar rounded-xl mb-6 shadow-sm">
+      <div class="doc-meta-chip">
+        <div class="meta-chip-label">راعي المشروع (Project Sponsor)</div>
+        <div class="meta-chip-val text-slate-900">معالي رئيس الهيئة / وكيل الوزارة</div>
+        <div class="text-[11px] text-slate-400 mt-1">صاحب الصلاحية المالية والترخيص المؤسسي</div>
+      </div>
+      <div class="doc-meta-chip">
+        <div class="meta-chip-label">مدير المشروع (Project Manager)</div>
+        <div class="meta-chip-val text-slate-900">م. فهد بن خالد السالم (PMP®)</div>
+        <div class="text-[11px] text-slate-400 mt-1">المفوض بإدارة الموارد وتطبيق النطاق</div>
+      </div>
+      <div class="doc-meta-chip">
+        <div class="meta-chip-label">تاريخ الاعتماد الرسمي</div>
+        <div class="meta-chip-val text-slate-900">15 رجب 1447هـ (الموافق 2026م)</div>
+        <div class="text-[11px] text-slate-400 mt-1">بوابة الاعتماد: Gate 1 (Charter Sign-off)</div>
+      </div>
+      <div class="doc-meta-chip">
+        <div class="meta-chip-label">الميزانية التقديرية المعتمدة</div>
+        <div class="meta-chip-val text-emerald-600 font-mono">4,500,000 ر.س (SAR)</div>
+        <div class="text-[11px] text-slate-400 mt-1">تشمل احتياطي الطوارئ والاحتياطي الإداري</div>
+      </div>
+    </div>
+
+    <!-- Layout: 2 Columns (Main Form Sections + Sidebar) -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <!-- 3. Form Sections (Interactive Accordions) - 3 Columns -->
+      <div class="lg:col-span-3 space-y-4">
+        <div class="form-viewer-container">
+          <!-- Section 1 -->
+          <details class="form-section-item" open>
+            <summary class="form-section-header">
+              <span class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">1</span>
+                <span>مبررات المشروع والأهداف الاستراتيجية (Business Need & Objectives)</span>
+              </span>
+              <span class="text-xs text-slate-400 font-normal">انقر للتوسيع / الطي ▾</span>
+            </summary>
+            <div class="form-section-body space-y-4">
+              <p class="text-sm text-slate-600">يهدف المشروع إلى أتمتة حوكمة المشاريع الحكومية والتحول الرقمي الشامل لرفع كفاءة الإنفاق وتحقيق مستهدفات رؤية 2030.</p>
+              <div class="overflow-x-auto">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>الهدف الاستراتيجي</th>
+                      <th>المؤشر المستهدف (KPI)</th>
+                      <th>المستهدف الرقمي</th>
+                      <th>الارتباط ببرامج رؤية 2030</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font-semibold text-slate-800">أتمتة إدارة التسليمات والمراحل</td>
+                      <td>نسبة التسليمات المؤتمتة عبر المنصة</td>
+                      <td class="font-mono text-blue-600 font-bold">100%</td>
+                      <td>برنامج التحول الرقمي الحكومي</td>
+                    </tr>
+                    <tr>
+                      <td class="font-semibold text-slate-800">تقليص مدة دورة تدقيق المخرجات</td>
+                      <td>متوسط أيام اعتماد التسليمة (Cycle Time)</td>
+                      <td class="font-mono text-emerald-600 font-bold">انخفاض من 14 إلى 3 أيام</td>
+                      <td>برنامج تطوير القطاع المالي ورفع الكفاءة</td>
+                    </tr>
+                    <tr>
+                      <td class="font-semibold text-slate-800">الامتثال لحوكمة الذكاء الاصطناعي</td>
+                      <td>نسبة النماذج الموثقة ببطاقات Model Cards</td>
+                      <td class="font-mono text-purple-600 font-bold">100% امتثال لمعايير سدايا / NIST</td>
+                      <td>الاستراتيجية الوطنية للبيانات والذكاء الاصطناعي</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </details>
+
+          <!-- Section 2 -->
+          <details class="form-section-item" open>
+            <summary class="form-section-header">
+              <span class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">2</span>
+                <span>حدود ونطاق العمل العام (High-Level Scope & Boundaries)</span>
+              </span>
+              <span class="text-xs text-slate-400 font-normal">انقر للتوسيع / الطي ▾</span>
+            </summary>
+            <div class="form-section-body grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-4 bg-emerald-50/50 border border-emerald-200 rounded-lg">
+                <h4 class="text-sm font-bold text-emerald-900 mb-2 flex items-center gap-1.5">
+                  <span>✓</span> داخل النطاق المعتمد (In Scope)
+                </h4>
+                <ul class="scope-in-list text-xs space-y-1.5 text-slate-700">
+                  <li>بناء وتطوير بوابة إدارة التسليمات ثنائية اللغة (102 تسليمة).</li>
+                  <li>توفير حزم النماذج الكاملة بصيغ Markdown وJSON Schema وPython SDK.</li>
+                  <li>تنفيذ بوابات العبور الست (Stage-Gates 0-5) والتحقق التلقائي.</li>
+                  <li>تدريب مدراء المشاريع وضباط الحوكمة في الهيئة على المنصة.</li>
+                </ul>
+              </div>
+
+              <div class="p-4 bg-rose-50/50 border border-rose-200 rounded-lg">
+                <h4 class="text-sm font-bold text-rose-900 mb-2 flex items-center gap-1.5">
+                  <span>✕</span> خارج النطاق لمنع زحف النطاق (Out of Scope)
+                </h4>
+                <ul class="scope-out-list text-xs space-y-1.5 text-slate-700">
+                  <li>تخصيص أنظمة ERP الخارجية مثل SAP وOracle (سيتم عبر واجهات API لاحقة).</li>
+                  <li>إدارة العقود القانونية الخارجية والمشتريات خارج نطاق بوابة PMO.</li>
+                  <li>تطوير خوارزميات تعلم آلي مخصصة للجهات التابعة خارج الهيئة.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <!-- Section 3 -->
+          <details class="form-section-item" open>
+            <summary class="form-section-header">
+              <span class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">3</span>
+                <span>المعالم الرئيسية والجدول الزمني التقديري (Key Milestones & Schedule)</span>
+              </span>
+              <span class="text-xs text-slate-400 font-normal">انقر للتوسيع / الطي ▾</span>
+            </summary>
+            <div class="form-section-body overflow-x-auto">
+              <table>
+                <thead>
+                  <tr>
+                    <th>رمز المعلم</th>
+                    <th>المعلم الرئيسي (Milestone)</th>
+                    <th>التاريخ المستهدف</th>
+                    <th>بوابة المراجعة المرتبطة</th>
+                    <th>الحالة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="font-mono text-xs">M-01</td>
+                    <td class="font-semibold">اعتماد دراسة الجدوى وميثاق المشروع</td>
+                    <td>15 رجب 1447هـ</td>
+                    <td><span class="badge badge-phase">Gate 1: Charter</span></td>
+                    <td><span class="text-emerald-600 font-bold">✓ مكتمل</span></td>
+                  </tr>
+                  <tr>
+                    <td class="font-mono text-xs">M-02</td>
+                    <td class="font-semibold">اعتماد خط الأساس المتكامل (النطاق، الجدول، التكلفة)</td>
+                    <td>30 شعبان 1447هـ</td>
+                    <td><span class="badge badge-phase">Gate 2: Baseline</span></td>
+                    <td><span class="text-blue-600 font-bold">قيد التنفيذ</span></td>
+                  </tr>
+                  <tr>
+                    <td class="font-mono text-xs">M-03</td>
+                    <td class="font-semibold">إطلاق النسخة التجريبية الأولى (MVP)</td>
+                    <td>15 شوال 1447هـ</td>
+                    <td><span class="badge badge-phase">Gate 3: Execution</span></td>
+                    <td><span class="text-slate-400">مجدول</span></td>
+                  </tr>
+                  <tr>
+                    <td class="font-mono text-xs">M-04</td>
+                    <td class="font-semibold">اختبارات القبول والتسليم التشغيلي (UAT)</td>
+                    <td>30 ذو القعدة 1447هـ</td>
+                    <td><span class="badge badge-phase">Gate 4: Handover</span></td>
+                    <td><span class="text-slate-400">مجدول</span></td>
+                  </tr>
+                  <tr>
+                    <td class="font-mono text-xs">M-05</td>
+                    <td class="font-semibold">إغلاق العقود وتقرير الدروس المستفادة النهائي</td>
+                    <td>15 ذو الحجة 1447هـ</td>
+                    <td><span class="badge badge-phase">Gate 5: Closeout</span></td>
+                    <td><span class="text-slate-400">مجدول</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+
+          <!-- Section 4 -->
+          <details class="form-section-item">
+            <summary class="form-section-header">
+              <span class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">4</span>
+                <span>مصفوفة أصحاب المصلحة والحوكمة (RACI Governance Matrix)</span>
+              </span>
+              <span class="text-xs text-slate-400 font-normal">انقر للتوسيع / الطي ▾</span>
+            </summary>
+            <div class="form-section-body overflow-x-auto">
+              <table class="raci-table">
+                <thead>
+                  <tr>
+                    <th>المهمة / المخرج الإداري</th>
+                    <th>راعي المشروع (Sponsor)</th>
+                    <th>مدير المشروع (PM)</th>
+                    <th>فريق التطوير الفني</th>
+                    <th>مدير مكتب PMO</th>
+                    <th>لجنة المراجعة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="font-semibold">اعتماد ميثاق المشروع وتخصيص الميزانية</td>
+                    <td class="text-center font-bold text-emerald-600">A (المعتمد)</td>
+                    <td class="text-center font-bold text-blue-600">R (المسؤول)</td>
+                    <td class="text-center text-slate-400">I (مطلع)</td>
+                    <td class="text-center font-bold text-purple-600">C (مستشار)</td>
+                    <td class="text-center font-bold text-purple-600">C (مستشار)</td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold">إعداد وتحديث خطط الأساس (WBS، الجدول، التكلفة)</td>
+                    <td class="text-center text-slate-400">I</td>
+                    <td class="text-center font-bold text-blue-600">R / A</td>
+                    <td class="text-center font-bold text-blue-600">R</td>
+                    <td class="text-center font-bold text-purple-600">C</td>
+                    <td class="text-center text-slate-400">I</td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold">إدارة التغييرات والتجاوزات المالية (>10%)</td>
+                    <td class="text-center font-bold text-emerald-600">A</td>
+                    <td class="text-center font-bold text-blue-600">R</td>
+                    <td class="text-center text-slate-400">C</td>
+                    <td class="text-center font-bold text-purple-600">C</td>
+                    <td class="text-center font-bold text-purple-600">C</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+
+          <!-- Section 5 -->
+          <details class="form-section-item">
+            <summary class="form-section-header">
+              <span class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">5</span>
+                <span>المخاطر الأولية والافتراضات (Initial Risks & Assumptions)</span>
+              </span>
+              <span class="text-xs text-slate-400 font-normal">انقر للتوسيع / الطي ▾</span>
+            </summary>
+            <div class="form-section-body overflow-x-auto">
+              <table>
+                <thead>
+                  <tr>
+                    <th>رمز الخطر</th>
+                    <th>وصف الخطر المحتمل</th>
+                    <th>درجة الأثر</th>
+                    <th>خطة الاستجابة الأولية</th>
+                    <th>مسؤول المتابعة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="font-mono text-xs">RSK-01</td>
+                    <td>تأخر تدقيق النماذج ثنائية اللغة من اللجان الاستشارية</td>
+                    <td><span class="badge" style="background:#fee2e2;color:#991b1b;">مرتفع</span></td>
+                    <td>جدولة جلسات اعتماد أسبوعية متزامنة مع مدير PMO</td>
+                    <td>مدير المشروع</td>
+                  </tr>
+                  <tr>
+                    <td class="font-mono text-xs">RSK-02</td>
+                    <td>تغييرات في المعايير التنظيمية لأخلاقيات الذكاء الاصطناعي</td>
+                    <td><span class="badge" style="background:#fef3c7;color:#92400e;">متوسط</span></td>
+                    <td>تضمين معايير NIST AI RMF المرنة والقابلة للتحديث التلقائي</td>
+                    <td>مسؤول حوكمة الذكاء الاصطناعي</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+
+          <!-- Section 6 -->
+          <details class="form-section-item" open>
+            <summary class="form-section-header">
+              <span class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">6</span>
+                <span>قسم الاعتماد والتوقيعات الرسمية (Formal Sign-off & Authorizations)</span>
+              </span>
+              <span class="text-xs text-slate-400 font-normal">انقر للتوسيع / الطي ▾</span>
+            </summary>
+            <div class="form-section-body">
+              <p class="text-xs text-slate-500 mb-3">توقيع الأطراف المعنية يفوض رسميًا استخدام الموارد المالية والبشرية المخصصة للمشروع وفق ما ورد في هذا الميثاق:</p>
+              <div class="signoff-grid">
+                <div class="signoff-box border-emerald-300 bg-emerald-50/30">
+                  <div class="signoff-role">راعي المشروع (Project Sponsor)</div>
+                  <div class="text-xs font-semibold text-slate-800 mt-1">معالي رئيس الهيئة</div>
+                  <div class="signoff-status text-emerald-700">✓ تم التوقيع والاعتماد الرقمي</div>
+                  <div class="text-[10px] text-slate-400 mt-2 font-mono">HASH: 8F7E21...9B02 (15/07/1447H)</div>
+                </div>
+
+                <div class="signoff-box border-blue-300 bg-blue-50/30">
+                  <div class="signoff-role">مدير مكتب PMO (PMO Director)</div>
+                  <div class="text-xs font-semibold text-slate-800 mt-1">د. عبدالله بن سليمان المنصور</div>
+                  <div class="signoff-status text-emerald-700">✓ تم التدقيق والتحقق المؤسسي</div>
+                  <div class="text-[10px] text-slate-400 mt-2 font-mono">HASH: 3A1C90...4D11 (14/07/1447H)</div>
+                </div>
+
+                <div class="signoff-box border-slate-300 bg-slate-50">
+                  <div class="signoff-role">المدير المالي التنفيذي (CFO)</div>
+                  <div class="text-xs font-semibold text-slate-800 mt-1">أ. سامي بن أحمد الشريف</div>
+                  <div class="signoff-status text-emerald-700">✓ تم حجز الميزانية وتأكيد التدفقات</div>
+                  <div class="text-[10px] text-slate-400 mt-2 font-mono">HASH: 6C9B44...11F7 (15/07/1447H)</div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- 4. Context Sidebar - 1 Column -->
+      <div class="lg:col-span-1 space-y-4">
+        <!-- Chapters Index -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <h3 class="text-sm font-bold text-slate-900 mb-3 flex items-center gap-1.5">
+            <span>📑</span> فهرس أقسام الوثيقة
+          </h3>
+          <ul class="text-xs space-y-2 text-slate-600">
+            <li class="flex items-center justify-between font-semibold text-blue-700">
+              <span>1. مبررات المشروع</span>
+              <span class="text-[10px] bg-blue-100 px-1.5 py-0.5 rounded">مكتمل</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>2. حدود ونطاق العمل</span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">مكتمل</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>3. المعالم الرئيسية</span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">مكتمل</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>4. مصفوفة RACI</span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">مكتمل</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>5. المخاطر والافتراضات</span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">مكتمل</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>6. التوقيعات الرسمية</span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">معتمد</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI Assistant Widget -->
+        <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white p-4 rounded-xl border border-indigo-800 shadow-md">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-base">🤖</span>
+            <h3 class="text-xs font-bold tracking-tight">مساعد تسليمات الذكي (AI Assistant)</h3>
+          </div>
+          <p class="text-[11px] text-slate-300 leading-relaxed mb-3">
+            المساعد مدرب على معايير PMBOK وأدلة هيئة الحكومة الرقمية للمساعدة في صياغة الأهداف وتحديد المخاطر.
+          </p>
+          <button onclick="suggestOKRs()" class="w-full text-xs font-semibold py-2 px-3 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition text-center mb-2">
+            ✨ اقتراح أهداف متوافقة مع OKR
+          </button>
+          <div id="ai-response-box" class="hidden text-[11px] p-2 bg-slate-800/80 rounded border border-indigo-500/30 text-indigo-200 mt-2"></div>
+        </div>
+
+        <!-- Related Artifacts -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <h3 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-1.5">
+            <span>🔗</span> النماذج المرتبطة
+          </h3>
+          <ul class="text-xs space-y-2 text-slate-600">
+            <li>
+              <a href="../../catalog/ar/index.html" class="hover:text-blue-700 font-medium">FORM-03-02: سجل أصحاب المصلحة</a>
+            </li>
+            <li>
+              <a href="../../catalog/ar/index.html" class="hover:text-blue-700 font-medium">FORM-03-03: سجل الافتراضات والقيود</a>
+            </li>
+            <li>
+              <a href="../../catalog/ar/index.html" class="hover:text-blue-700 font-medium">FORM-04-03: خطة إدارة النطاق (WBS)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>
+        <p class="font-medium text-slate-300">منظومة تسليمات لإدارة المشاريع المؤسسية (Tasleemat PMO)</p>
+        <p class="text-slate-500 mt-1">PMI PMBOK® 6th, 7th & 8th Edition Compliant | ISO 21500 & OKF v0.2 Standard</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hover:text-white transition">مستودع GitHub</a>
+        <a href="../../LEXICON.html" class="hover:text-white transition">المعجم الموحد</a>
+        <a href="../../TECHNICAL.html" class="hover:text-white transition">دليل المطورين</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function suggestOKRs() {
+      const box = document.getElementById("ai-response-box");
+      box.classList.remove("hidden");
+      box.innerHTML = "<strong>💡 مقترح المساعد الذكي:</strong><br/>1. خفض التباين في الجدول الزمني (SV) بنسبة 25%.<br/>2. تحقيق معدل رضا المستفيدين (CSAT) لا يقل عن 92% عند تسليم المعلم M-03.";
+    }
+    function populateAIModal() {
+      alert("تم تفعيل أمر التوليد الذكي (Tasleemat AI Engine) لتعبئة حقول الميثاق تلقائياً بناءً على بيانات دراسة الجدوى!");
+    }
+  </script>
+</body>
+</html>

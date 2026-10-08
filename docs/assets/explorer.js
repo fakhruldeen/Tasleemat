@@ -315,6 +315,10 @@
           const title = isArabic ? item.name_ar : item.name_en;
           const altTitle = isArabic ? item.name_en : item.name_ar;
 
+          const isCharter = item.code.includes("03.01") || item.code.includes("03-01");
+          const viewerPath = isArabic ? "../../forms/ar/form-viewer.html" : "../forms/ar/form-viewer.html";
+          const liveBtn = isCharter ? `<a href="${viewerPath}" class="card-btn" style="background: #0d9488; color: #ffffff !important; border-color: #0d9488;" onclick="event.stopPropagation();">🎯 ${isArabic ? 'معاينة تفاعلية' : 'Live Interactive Viewer'}</a>` : "";
+
           card.innerHTML = `
             <div class="dash-card-header">
               <span class="badge badge-code">${item.code}</span>
@@ -323,7 +327,13 @@
             </div>
             <h3 class="dash-card-title">${title}</h3>
             <div class="dash-card-sub">${altTitle}</div>
+            <div style="display:flex;gap:4px;margin-bottom:8px;flex-wrap:wrap;">
+              <span class="badge" style="background:#f1f5f9;color:#475569;font-size:10px;">Markdown</span>
+              <span class="badge" style="background:#f1f5f9;color:#475569;font-size:10px;">JSON Schema</span>
+              <span class="badge" style="background:#f1f5f9;color:#475569;font-size:10px;">Python AI</span>
+            </div>
             <div class="dash-card-actions">
+              ${liveBtn}
               <button class="card-btn btn-primary-act" data-code="${item.code}" data-tab="template">📋 ${isArabic ? 'القالب' : 'Template'}</button>
               <button class="card-btn btn-sec-act" data-code="${item.code}" data-tab="guide">📖 ${isArabic ? 'الدليل' : 'Guide'}</button>
               <button class="card-btn btn-sec-act" data-code="${item.code}" data-tab="example">💡 ${isArabic ? 'المثال' : 'Example'}</button>
