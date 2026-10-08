@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Guide.npy
-token_count: 3241
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.383608+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.383608+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: AI Readiness Assessment
 nav_order: 1
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/03_AI_Readiness_Assessment/02_03_AI_Readiness_Assessment_Guide.npy
+token_count: 2569
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.022967+00:00'
+form_id: PMO-02.03
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Example.npy
-token_count: 1250
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.643484+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.643484+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan/04_10_01_Stakeholder_Engagement_Plan_Example.npy
+token_count: 695
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.224039+00:00'
 ---
 
 # Stakeholder Engagement Plan (Reference Example)

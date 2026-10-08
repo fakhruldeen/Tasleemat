@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Guide.npy
-token_count: 1243
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.357961+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.357961+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Network Diagram
 nav_order: 5
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/05_Network_Diagram/04_03_05_Network_Diagram_Guide.npy
+token_count: 699
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.969021+00:00'
+form_id: PMO-04.03.05
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

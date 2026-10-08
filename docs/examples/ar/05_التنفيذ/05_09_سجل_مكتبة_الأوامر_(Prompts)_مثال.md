@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.npy
-token_count: 1326
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.520125+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.520125+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.npy
+token_count: 778
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.128967+00:00'
 ---
 
 <div>

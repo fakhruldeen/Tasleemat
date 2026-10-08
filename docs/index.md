@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/index.npy
-token_count: 3379
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.035743+00:00'
----
-
 <div class="hero-wrapper">
   <div class="hero-tag">
     <span class="pulse-dot"></span> Enterprise PMO Operating System 2.0 • PMI PMBOK® 6/7/8 & NIST AI RMF

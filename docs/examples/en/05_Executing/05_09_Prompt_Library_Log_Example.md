@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/05_Executing/05_09_Prompt_Library_Log_Example.npy
-token_count: 1095
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.684468+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.684468+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/05_Executing/09_Prompt_Library_Log/05_09_Prompt_Library_Log_Example.npy
+token_count: 603
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.259759+00:00'
 ---
 
 # Prompt Library Log (Reference Example)

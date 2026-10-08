@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.npy
-token_count: 1119
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.183838+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.183838+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/00_Program_and_Portfolio_Management/06_OKR_Alignment_Matrix/00_06_OKR_Alignment_Matrix_Template.npy
+token_count: 560
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.039837+00:00'
+form_id: PMO-00.06
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

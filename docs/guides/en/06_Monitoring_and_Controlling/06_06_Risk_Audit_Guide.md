@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/06_Monitoring_and_Controlling/06_06_Risk_Audit_Guide.npy
-token_count: 1273
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.396291+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.396291+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Risk Audit
 nav_order: 6
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/06_Risk_Audit/06_06_Risk_Audit_Guide.npy
+token_count: 756
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.052262+00:00'
+form_id: PMO-06.06
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

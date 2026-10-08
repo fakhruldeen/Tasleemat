@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Example.npy
-token_count: 1887
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.663289+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.663289+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/09_Procurement/05_Request_for_Proposal_RFP/04_09_05_Request_for_Proposal_RFP_Example.npy
+token_count: 1348
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.238786+00:00'
 ---
 
 # Request for Proposal RFP (Reference Example)

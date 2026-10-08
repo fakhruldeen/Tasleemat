@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/05_Executing/05_03_Change_Request_Template.npy
-token_count: 1267
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.198578+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.198578+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/05_Executing/03_Change_Request/05_03_Change_Request_Template.npy
+token_count: 794
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.065975+00:00'
+form_id: PMO-05.03
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Change Request based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 

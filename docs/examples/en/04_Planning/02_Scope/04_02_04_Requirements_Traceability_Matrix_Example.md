@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/02_Scope/04_02_04_Requirements_Traceability_Matrix_Example.npy
-token_count: 1537
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.631813+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.631813+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/04_Requirements_Traceability_Matrix/04_02_04_Requirements_Traceability_Matrix_Example.npy
+token_count: 994
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.213875+00:00'
 ---
 
 # Requirements Traceability Matrix (Reference Example)

@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Example.npy
-token_count: 2397
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.674232+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.674232+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/00_Program_and_Portfolio_Management/03_Interdependency_Register/00_03_Interdependency_Register_Example.npy
+token_count: 1875
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.248579+00:00'
 ---
 
 # Interdependency Register (Reference Example)

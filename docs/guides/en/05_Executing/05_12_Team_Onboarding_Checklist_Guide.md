@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/05_Executing/05_12_Team_Onboarding_Checklist_Guide.npy
-token_count: 1696
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.431335+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.431335+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Team Onboarding Checklist
 nav_order: 7
+token_pointer: /_tokens/forms/en/05_Executing/12_Team_Onboarding_Checklist/05_12_Team_Onboarding_Checklist_Guide.npy
+token_count: 1084
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.076091+00:00'
+form_id: PMO-05.12
+status: approved
 ---
 
 ## Tasleemat Forms Guide

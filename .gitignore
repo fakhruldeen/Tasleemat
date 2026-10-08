@@ -32,3 +32,9 @@ PMO-templates/
 arabic.pdf
 .staging/
 scratch/
+
+# Build artifacts
+site/
+build/
+dist/
+*.egg-info/

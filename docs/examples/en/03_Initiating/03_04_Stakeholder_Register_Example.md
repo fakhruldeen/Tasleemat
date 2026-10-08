@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/03_Initiating/03_04_Stakeholder_Register_Example.npy
-token_count: 1324
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.699526+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.699526+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/03_Initiating/04_Stakeholder_Register/03_04_Stakeholder_Register_Example.npy
+token_count: 846
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.268562+00:00'
 ---
 
 # Stakeholder Register (Reference Example)

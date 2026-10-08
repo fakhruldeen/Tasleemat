@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/03_Initiating/03_05_Stakeholder_Analysis_Guide.npy
-token_count: 1107
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.446981+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.446981+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Stakeholder Analysis
 nav_order: 5
+token_pointer: /_tokens/forms/en/03_Initiating/05_Stakeholder_Analysis/03_05_Stakeholder_Analysis_Guide.npy
+token_count: 610
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.100469+00:00'
+form_id: PMO-03.05
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

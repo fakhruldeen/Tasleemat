@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/ar/02_منهجية_المشروع_وتخصيصه/index.npy
-token_count: 1178
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.050056+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">

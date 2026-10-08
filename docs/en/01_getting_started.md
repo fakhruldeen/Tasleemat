@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/en/01_getting_started.npy
-token_count: 2115
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.501242+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
   <div class="lang-switch-actions">
@@ -13,6 +5,14 @@ created_at: '2026-10-06T16:05:28.501242+00:00'
     <a class="lang-switch-btn" href="../ar/01_getting_started.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
   </div>
 </div>
+
+---
+type: Guide
+token_pointer: /_tokens/docs/en/01_getting_started.npy
+token_count: 2115
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.501242+00:00'
+---
 
 <p align="center">
   <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />

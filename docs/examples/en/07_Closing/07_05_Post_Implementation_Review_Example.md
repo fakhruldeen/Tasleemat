@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/07_Closing/07_05_Post_Implementation_Review_Example.npy
-token_count: 1347
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.694093+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.694093+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/07_Closing/05_Post_Implementation_Review/07_05_Post_Implementation_Review_Example.npy
+token_count: 862
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.265309+00:00'
 ---
 
 # Post Implementation Review (Reference Example)

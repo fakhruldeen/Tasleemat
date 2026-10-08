@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.npy
-token_count: 2287
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.270180+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.270180+00:00'
 ---
 
 ---
+type: Form
 lang: ar
 layout: default
 title: قائمة تراكم المنتج
 nav_order: 1
+token_pointer: /_tokens/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.npy
+token_count: 1533
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.790498+00:00'
+form_id: PMO-04.02.08
+status: approved
 ---
 
 <div style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

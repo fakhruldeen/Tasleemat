@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Guide.npy
-token_count: 3395
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.378704+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.378704+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: AI Governance Plan
 nav_order: 1
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan_Guide.npy
+token_count: 2716
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.020011+00:00'
+form_id: PMO-02.02
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

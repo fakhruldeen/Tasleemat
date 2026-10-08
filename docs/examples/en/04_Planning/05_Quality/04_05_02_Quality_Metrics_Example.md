@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Example.npy
-token_count: 1354
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.656284+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.656284+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/05_Quality/02_Quality_Metrics/04_05_02_Quality_Metrics_Example.npy
+token_count: 839
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.233848+00:00'
 ---
 
 # Quality Metrics (Reference Example)

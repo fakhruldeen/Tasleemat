@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Example.npy
-token_count: 1169
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.682810+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.682810+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard/06_09_Vendor_Performance_Scorecard_Example.npy
+token_count: 645
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.250904+00:00'
 ---
 
 # Vendor Performance Scorecard (Reference Example)

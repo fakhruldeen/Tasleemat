@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Example.npy
-token_count: 1927
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.676458+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.676458+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/05_Earned_Value_Analysis/06_05_Earned_Value_Analysis_Example.npy
+token_count: 1401
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.255820+00:00'
 ---
 
 # Earned Value Analysis (Reference Example)

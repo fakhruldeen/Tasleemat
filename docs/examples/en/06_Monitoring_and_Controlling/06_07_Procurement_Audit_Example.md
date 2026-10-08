@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Example.npy
-token_count: 1803
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.675733+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.675733+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/07_Procurement_Audit/06_07_Procurement_Audit_Example.npy
+token_count: 1293
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.251467+00:00'
 ---
 
 # Procurement Audit (Reference Example)

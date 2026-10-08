@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.npy
-token_count: 1435
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.355541+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.355541+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Sustainability and ESG Management Plan
 nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.npy
+token_count: 771
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.965362+00:00'
+form_id: PMO-04.12.01
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

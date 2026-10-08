@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/05_Executing/05_07_Lessons_Learned_Register_Template.npy
-token_count: 1011
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.199030+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.199030+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/05_Executing/07_Lessons_Learned_Register/05_07_Lessons_Learned_Register_Template.npy
+token_count: 510
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.071924+00:00'
+form_id: PMO-05.07
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Lessons Learned Register based on the project context. Note: This log must output an array of objects matching the flat table headers. -->
 

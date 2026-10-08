@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Example.npy
-token_count: 1458
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.638505+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.638505+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/07_Communications/01_Communications_Management_Plan/04_07_01_Communications_Management_Plan_Example.npy
+token_count: 919
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.219734+00:00'
 ---
 
 # Communications Management Plan (Reference Example)

@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.npy
-token_count: 3032
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.173366+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.173366+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan_Template.npy
+token_count: 2476
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.018330+00:00'
+form_id: PMO-02.02
+language: en
+status: approved
+---
+-->
 
 <!--
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

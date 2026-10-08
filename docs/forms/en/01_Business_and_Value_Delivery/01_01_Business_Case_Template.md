@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/01_Business_and_Value_Delivery/01_01_Business_Case_Template.npy
-token_count: 2102
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.205801+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.205801+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Template.npy
+token_count: 1581
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.087941+00:00'
+form_id: PMO-01.01
+language: en
+status: approved
+---
+-->
 
 <!--  
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

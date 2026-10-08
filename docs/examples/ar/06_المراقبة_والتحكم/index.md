@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/ar/06_المراقبة_والتحكم/index.npy
-token_count: 1783
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.593035+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">

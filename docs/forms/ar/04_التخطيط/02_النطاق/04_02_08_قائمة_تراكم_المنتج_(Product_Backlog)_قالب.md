@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.npy
-token_count: 2663
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.072163+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.072163+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_قالب.npy
+token_count: 2059
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.789652+00:00'
+form_id: PMO-04.02.08
+language: ar
+status: approved
+---
+-->
 
 <!-- تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
 

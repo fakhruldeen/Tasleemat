@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.npy
-token_count: 2440
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.119892+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.119892+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/01_الأعمال_وتسليم_القيمة/01_دراسة_الجدوى_(Business_Case)/01_01_دراسة_الجدوى_(Business_Case)_قالب.npy
+token_count: 1868
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.896118+00:00'
+form_id: PMO-01.01
+language: ar
+status: approved
+---
+-->
 
 <!-- 
 تعليمات النموذج الذكي: املأ المسافات الفارغة [ أضف التفاصيل... ] بناءً على سياق المشروع.

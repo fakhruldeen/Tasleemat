@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/02_Scope/04_02_01_Scope_Management_Plan_Example.npy
-token_count: 1852
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.629477+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.629477+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/01_Scope_Management_Plan/04_02_01_Scope_Management_Plan_Example.npy
+token_count: 1323
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.216175+00:00'
 ---
 
 # Scope Management Plan (Reference Example)

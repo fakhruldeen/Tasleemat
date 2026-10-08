@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/05_Executing/05_05_Quality_Audit_Example.npy
-token_count: 1265
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.686185+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.686185+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/05_Executing/05_Quality_Audit/05_05_Quality_Audit_Example.npy
+token_count: 793
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.259352+00:00'
 ---
 
 # Quality Audit (Reference Example)

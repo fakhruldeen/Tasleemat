@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Guide.npy
-token_count: 2338
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.376506+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.376506+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Statement of Work
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/04_Statement_of_Work_SOW/04_09_04_Statement_of_Work_SOW_Guide.npy
+token_count: 1674
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.006796+00:00'
+form_id: PMO-04.09.04
+status: approved
 ---
 
 ## Tasleemat Forms Guide

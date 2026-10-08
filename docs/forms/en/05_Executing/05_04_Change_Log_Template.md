@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/05_Executing/05_04_Change_Log_Template.npy
-token_count: 1004
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.200010+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.200010+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/05_Executing/04_Change_Log/05_04_Change_Log_Template.npy
+token_count: 527
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.073968+00:00'
+form_id: PMO-05.04
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Change Log based on the project context. Note: This log must output an array of objects matching the flat table headers. -->
 

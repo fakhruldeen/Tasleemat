@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Guide.npy
-token_count: 1337
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.364280+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.364280+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Risk Management Plan
 nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/08_Risk/01_Risk_Management_Plan/04_08_01_Risk_Management_Plan_Guide.npy
+token_count: 791
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.981950+00:00'
+form_id: PMO-04.08.01
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

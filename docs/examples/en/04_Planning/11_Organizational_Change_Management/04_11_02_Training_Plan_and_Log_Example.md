@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Example.npy
-token_count: 1178
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.641548+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.641548+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log/04_11_02_Training_Plan_and_Log_Example.npy
+token_count: 607
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.222981+00:00'
 ---
 
 # Training Plan and Log (Reference Example)

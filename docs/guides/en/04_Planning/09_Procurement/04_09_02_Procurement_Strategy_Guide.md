@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Guide.npy
-token_count: 1289
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.373180+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.373180+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Procurement Strategy
 nav_order: 2
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/02_Procurement_Strategy/04_09_02_Procurement_Strategy_Guide.npy
+token_count: 751
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.007330+00:00'
+form_id: PMO-04.09.02
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

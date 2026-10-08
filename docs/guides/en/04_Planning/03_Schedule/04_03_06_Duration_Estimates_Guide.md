@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/03_Schedule/04_03_06_Duration_Estimates_Guide.npy
-token_count: 1258
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.361879+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.361879+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Duration Estimates
 nav_order: 6
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/06_Duration_Estimates/04_03_06_Duration_Estimates_Guide.npy
+token_count: 716
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.977746+00:00'
+form_id: PMO-04.03.06
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

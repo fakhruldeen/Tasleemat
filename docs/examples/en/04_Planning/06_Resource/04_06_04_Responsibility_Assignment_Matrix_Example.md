@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Example.npy
-token_count: 1306
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.656976+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.656976+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/06_Resource/04_Responsibility_Assignment_Matrix/04_06_04_Responsibility_Assignment_Matrix_Example.npy
+token_count: 755
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.236733+00:00'
 ---
 
 # Responsibility Assignment Matrix (Reference Example)

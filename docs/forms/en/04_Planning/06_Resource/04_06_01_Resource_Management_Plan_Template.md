@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/04_Planning/06_Resource/04_06_01_Resource_Management_Plan_Template.npy
-token_count: 1151
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.167575+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.167575+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/06_Resource/01_Resource_Management_Plan/04_06_01_Resource_Management_Plan_Template.npy
+token_count: 607
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.995378+00:00'
+form_id: PMO-04.06.01
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

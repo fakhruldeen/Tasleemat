@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Guide.npy
-token_count: 1839
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.392547+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.392547+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Vendor Performance Scorecard
 nav_order: 7
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/09_Vendor_Performance_Scorecard/06_09_Vendor_Performance_Scorecard_Guide.npy
+token_count: 1185
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.045021+00:00'
+form_id: PMO-06.09
+status: approved
 ---
 
 ## Tasleemat Forms Guide

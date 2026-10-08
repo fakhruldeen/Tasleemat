@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Template.npy
-token_count: 1418
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.153555+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.153555+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan/04_11_01_OCM_Strategy_and_Plan_Template.npy
+token_count: 816
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.963275+00:00'
+form_id: PMO-04.11.01
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

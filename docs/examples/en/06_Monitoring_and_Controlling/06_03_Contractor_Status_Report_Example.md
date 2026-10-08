@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_03_Contractor_Status_Report_Example.npy
-token_count: 2063
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.678897+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.678897+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/03_Contractor_Status_Report/06_03_Contractor_Status_Report_Example.npy
+token_count: 1549
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.255147+00:00'
 ---
 
 # Contractor Status Report (Reference Example)

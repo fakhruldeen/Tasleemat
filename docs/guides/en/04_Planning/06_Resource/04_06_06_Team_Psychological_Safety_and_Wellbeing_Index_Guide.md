@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Guide.npy
-token_count: 1366
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.369712+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.369712+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Team Psychological Safety and Wellbeing Index
 nav_order: 6
+token_pointer: /_tokens/forms/en/04_Planning/06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Guide.npy
+token_count: 772
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.996237+00:00'
+form_id: PMO-04.06.06
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

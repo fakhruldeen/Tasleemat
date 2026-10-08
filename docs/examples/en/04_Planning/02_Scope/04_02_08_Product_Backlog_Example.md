@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Example.npy
-token_count: 1606
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.632470+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.632470+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/08_Product_Backlog/04_02_08_Product_Backlog_Example.npy
+token_count: 1083
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.212068+00:00'
 ---
 
 # Product Backlog (Reference Example)

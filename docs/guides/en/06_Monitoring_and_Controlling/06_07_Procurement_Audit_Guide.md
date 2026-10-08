@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Guide.npy
-token_count: 1289
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.391890+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.391890+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Procurement Audit
 nav_order: 7
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/07_Procurement_Audit/06_07_Procurement_Audit_Guide.npy
+token_count: 767
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.045925+00:00'
+form_id: PMO-06.07
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

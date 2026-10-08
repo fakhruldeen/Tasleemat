@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/03_Initiating/03_03_Assumption_Log_Guide.npy
-token_count: 1189
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.445014+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.445014+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Assumption Log
 nav_order: 3
+token_pointer: /_tokens/forms/en/03_Initiating/03_Assumption_Log/03_03_Assumption_Log_Guide.npy
+token_count: 702
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.097674+00:00'
+form_id: PMO-03.03
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

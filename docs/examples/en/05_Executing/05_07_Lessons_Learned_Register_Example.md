@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/05_Executing/05_07_Lessons_Learned_Register_Example.npy
-token_count: 1105
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.689021+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.689021+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/05_Executing/07_Lessons_Learned_Register/05_07_Lessons_Learned_Register_Example.npy
+token_count: 615
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.261073+00:00'
 ---
 
 # Lessons Learned Register (Reference Example)

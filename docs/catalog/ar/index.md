@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/catalog/ar/index.npy
-token_count: 88560
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.467737+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الفهرس العام باللغة العربية</span>
   <div class="lang-switch-actions">

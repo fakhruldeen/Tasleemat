@@ -1928,66 +1928,53 @@ def update_mkdocs_config(deliverables):
                 nav_list.append({f"{d['code']} {d['name_ar']}": target})
         return nav_list
 
-    # Streamlined 3-Tab Architecture
+    # Top Navigation Tabs Architecture
     nav = [
-        # === 🇬🇧 ENGLISH PORTAL TAB ===
-        {"🇬🇧 English Portal": [
-            {"Home & Overview": "index.md"},
-            {"📑 Interactive Master Catalog": "catalog/en/index.md"},
-            {"📚 PMO Governance Manuals (01-12)": [
-                {"01. Getting Started": "en/01_getting_started.md"},
-                {"02. Usage Guide": "en/02_usage_guide.md"},
-                {"03. PMO Policy Manual": "en/03_pmo_policy_manual.md"},
-                {"04. Stage-Gates & Governance": "en/04_stage_gates_and_governance.md"},
-                {"05. Tailoring Profiles": "en/05_tailoring_profiles.md"},
-                {"06. RACI Authority Matrix": "en/06_raci_authority_matrix.md"},
-                {"07. Document Dependencies": "en/07_document_dependencies.md"},
-                {"08. AI Governance Framework": "en/08_ai_governance_framework.md"},
-                {"09. Agile & Hybrid Integration": "en/09_agile_hybrid_integration.md"},
-                {"10. FAQ & Troubleshooting": "en/10_faq_and_troubleshooting.md"},
-                {"11. Tools & Automation": "en/11_tools_and_automation.md"},
-                {"12. Open Knowledge Framework (OKF)": "en/12_open_knowledge_framework.md"}
-            ]},
-            {"📋 Standard Templates Library": [
-                {"Templates Overview": "forms/en/index.md"},
-                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "forms")},
-                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "forms")},
-                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "forms")},
-                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "forms")},
-                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "forms")},
-                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "forms")},
-                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "forms")},
-                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "forms")}
-            ]},
-            {"📖 Deliverable Authoring Guides": [
-                {"Guides Overview": "guides/en/index.md"},
-                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "guides")},
-                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "guides")},
-                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "guides")},
-                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "guides")},
-                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "guides")},
-                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "guides")},
-                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "guides")},
-                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "guides")}
-            ]},
-            {"💡 Real-World Reference Examples": [
-                {"Case Studies Showcase": "examples/en/index.md"},
-                {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "examples")},
-                {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "examples")},
-                {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "examples")},
-                {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "examples")},
-                {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "examples")},
-                {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "examples")},
-                {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "examples")},
-                {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "examples")}
-            ]}
+        # === TAB 1: HOME & OVERVIEW ===
+        {"🏠 Home": "index.md"},
+
+        # === TAB 2: TEMPLATES LIBRARY ===
+        {"📋 Templates": [
+            {"Templates Overview": "forms/en/index.md"},
+            {PHASE_META["00"]["en_title"]: make_phase_nav_en("00", "forms")},
+            {PHASE_META["01"]["en_title"]: make_phase_nav_en("01", "forms")},
+            {PHASE_META["02"]["en_title"]: make_phase_nav_en("02", "forms")},
+            {PHASE_META["03"]["en_title"]: make_phase_nav_en("03", "forms")},
+            {PHASE_META["04"]["en_title"]: make_phase_nav_en("04", "forms")},
+            {PHASE_META["05"]["en_title"]: make_phase_nav_en("05", "forms")},
+            {PHASE_META["06"]["en_title"]: make_phase_nav_en("06", "forms")},
+            {PHASE_META["07"]["en_title"]: make_phase_nav_en("07", "forms")}
         ]},
 
-        # === 🇸🇦 ARABIC PORTAL TAB ===
-        {"🇸🇦 البوابة التوثيقية (Arabic)": [
+        # === TAB 3: STAGE-GATES & GOVERNANCE ===
+        {"🚪 Governance & Stage-Gates": [
+            {"04. Stage-Gates & Governance": "en/04_stage_gates_and_governance.md"},
+            {"01. Getting Started": "en/01_getting_started.md"},
+            {"02. Usage Guide": "en/02_usage_guide.md"},
+            {"03. PMO Policy Manual": "en/03_pmo_policy_manual.md"},
+            {"05. Tailoring Profiles": "en/05_tailoring_profiles.md"},
+            {"06. RACI Authority Matrix": "en/06_raci_authority_matrix.md"},
+            {"07. Document Dependencies": "en/07_document_dependencies.md"},
+            {"09. Agile & Hybrid Integration": "en/09_agile_hybrid_integration.md"}
+        ]},
+
+        # === TAB 4: INTERACTIVE CATALOG ===
+        {"📑 Deliverables Catalog": "catalog/en/index.md"},
+
+        # === TAB 5: DEVELOPER & AI HUB ===
+        {"💻 Developer & AI Hub": [
+            {"11. Tools & Automation": "en/11_tools_and_automation.md"},
+            {"08. AI Governance Framework": "en/08_ai_governance_framework.md"},
+            {"10. FAQ & Troubleshooting": "en/10_faq_and_troubleshooting.md"},
+            {"12. Open Knowledge Framework": "en/12_open_knowledge_framework.md"},
+            {"📖 Master Bilingual Lexicon": "LEXICON.md"}
+        ]},
+
+        # === TAB 6: ARABIC PORTAL ===
+        {"🇸🇦 البوابة العربية": [
             {"الرئيسية ودليل الانطلاق": "README_AR.md"},
             {"📑 الفهرس التفاعلي الشامل": "catalog/ar/index.md"},
-            {"📚 الأدلة والسياسات الحوكمية (01-12)": [
+            {"📚 الأدلة والسياسات الحوكمية": [
                 {"01. دليل البدء السريع": "ar/01_getting_started.md"},
                 {"02. دليل الممارس الشامل": "ar/02_usage_guide.md"},
                 {"03. دليل سياسات PMO": "ar/03_pmo_policy_manual.md"},
@@ -1999,7 +1986,7 @@ def update_mkdocs_config(deliverables):
                 {"09. دليل المنهجيات الرشيقة والهجينة": "ar/09_agile_hybrid_integration.md"},
                 {"10. الأسئلة الشائعة وحل المشكلات": "ar/10_faq_and_troubleshooting.md"},
                 {"11. دليل الأدوات والأتمتة": "ar/11_tools_and_automation.md"},
-                {"12. معيار مؤسسة المعرفة المفتوحة (OKF)": "ar/12_open_knowledge_framework.md"}
+                {"12. معيار المعرفة المفتوحة (OKF)": "ar/12_open_knowledge_framework.md"}
             ]},
             {"📋 مكتبة القوالب والنماذج": [
                 {"الفهرس العام للقوالب": "forms/ar/index.md"},
@@ -2011,33 +1998,8 @@ def update_mkdocs_config(deliverables):
                 {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "forms")},
                 {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "forms")},
                 {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "forms")}
-            ]},
-            {"📖 أدلة إعداد النماذج": [
-                {"الفهرس العام للأدلة": "guides/ar/index.md"},
-                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "guides")},
-                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "guides")},
-                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "guides")},
-                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "guides")},
-                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "guides")},
-                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "guides")},
-                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "guides")},
-                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "guides")}
-            ]},
-            {"💡 معرض الأمثلة الواقعية": [
-                {"معرض دراسات الحالة": "examples/ar/index.md"},
-                {PHASE_META["00"]["ar_title"]: make_phase_nav_ar("00", "examples")},
-                {PHASE_META["01"]["ar_title"]: make_phase_nav_ar("01", "examples")},
-                {PHASE_META["02"]["ar_title"]: make_phase_nav_ar("02", "examples")},
-                {PHASE_META["03"]["ar_title"]: make_phase_nav_ar("03", "examples")},
-                {PHASE_META["04"]["ar_title"]: make_phase_nav_ar("04", "examples")},
-                {PHASE_META["05"]["ar_title"]: make_phase_nav_ar("05", "examples")},
-                {PHASE_META["06"]["ar_title"]: make_phase_nav_ar("06", "examples")},
-                {PHASE_META["07"]["ar_title"]: make_phase_nav_ar("07", "examples")}
             ]}
-        ]},
-
-        # === 📖 BILINGUAL LEXICON TAB ===
-        {"📖 Master Bilingual Lexicon": "LEXICON.md"}
+        ]}
     ]
 
     header_yaml = """site_name: Tasleemat PMO Operating System | تسليمات
@@ -2053,21 +2015,23 @@ theme:
   name: material
   language: en
   palette:
-    # Dark mode (PMOSkills Obsidian Default)
+    # Light mode (Executive Corporate Navy Default)
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode (Clean Executive Slate)
     - scheme: slate
       primary: slate
       accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-    # Light mode (Clean Professional Theme)
-    - scheme: default
-      primary: white
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top

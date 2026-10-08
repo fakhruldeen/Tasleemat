@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Guide.npy
-token_count: 1354
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.396867+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.396867+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Product Acceptance Form
 nav_order: 1
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/08_Product_Acceptance_Form/06_08_Product_Acceptance_Form_Guide.npy
+token_count: 701
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.049322+00:00'
+form_id: PMO-06.08
+status: approved
 ---
 
 

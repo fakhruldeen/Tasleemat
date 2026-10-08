@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Guide.npy
-token_count: 2596
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.361312+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.361312+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Sprint Planning Log
 nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/04_03_10_Sprint_Planning_Log_Guide.npy
+token_count: 1932
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.981297+00:00'
+form_id: PMO-04.03.10
+status: approved
 ---
 
 ## Tasleemat Forms Guide

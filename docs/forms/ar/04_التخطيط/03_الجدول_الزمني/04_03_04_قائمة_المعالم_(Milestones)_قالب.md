@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_قالب.npy
-token_count: 1253
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.092169+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.092169+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/04_التخطيط/03_الجدول_الزمني/04_قائمة_المعالم_(Milestones)/04_03_04_قائمة_المعالم_(Milestones)_قالب.npy
+token_count: 657
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.836220+00:00'
+form_id: PMO-04.03.04
+language: ar
+status: approved
+---
+-->
 
 <!-- تعليمات للنموذج الذكي: قم بتعبئة العناصر النائبة [ أضف التفاصيل... ] بناءً على سياق المشروع.
 

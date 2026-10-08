@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/05_Executing/05_06_Team_Performance_Assessment_Guide.npy
-token_count: 1123
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.424847+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.424847+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Team Performance Assessment
 nav_order: 6
+token_pointer: /_tokens/forms/en/05_Executing/06_Team_Performance_Assessment/05_06_Team_Performance_Assessment_Guide.npy
+token_count: 623
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.069135+00:00'
+form_id: PMO-05.06
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

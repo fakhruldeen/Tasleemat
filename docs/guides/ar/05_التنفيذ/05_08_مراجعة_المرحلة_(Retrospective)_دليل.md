@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.npy
-token_count: 2409
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.248022+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.248022+00:00'
 ---
 
 ---
+type: Form
 lang: ar
 layout: default
 title: مراجعة المرحلة
 nav_order: 1
+token_pointer: /_tokens/forms/ar/05_التنفيذ/08_مراجعة_المرحلة_(Retrospective)/05_08_مراجعة_المرحلة_(Retrospective)_دليل.npy
+token_count: 1747
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.754098+00:00'
+form_id: PMO-05.08
+status: approved
 ---
 
 <div style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

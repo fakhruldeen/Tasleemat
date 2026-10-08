@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Template.npy
-token_count: 1589
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.192485+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.192485+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/07_Procurement_Audit/06_07_Procurement_Audit_Template.npy
+token_count: 1068
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.046412+00:00'
+form_id: PMO-06.07
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

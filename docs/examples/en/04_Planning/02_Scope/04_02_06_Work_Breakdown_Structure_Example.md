@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Example.npy
-token_count: 1234
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.634529+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.634529+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/06_Work_Breakdown_Structure/04_02_06_Work_Breakdown_Structure_Example.npy
+token_count: 703
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.215597+00:00'
 ---
 
 # Work Breakdown Structure (Reference Example)

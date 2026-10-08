@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/01_Business_and_Value_Delivery/01_04_Gap_Analysis_Report_Guide.npy
-token_count: 1215
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.441301+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.441301+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Gap Analysis Report
 nav_order: 4
+token_pointer: /_tokens/forms/en/01_Business_and_Value_Delivery/04_Gap_Analysis_Report/01_04_Gap_Analysis_Report_Guide.npy
+token_count: 688
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.086233+00:00'
+form_id: PMO-01.04
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

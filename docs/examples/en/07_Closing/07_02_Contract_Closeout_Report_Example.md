@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/07_Closing/07_02_Contract_Closeout_Report_Example.npy
-token_count: 1940
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.693502+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.693502+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/07_Closing/02_Contract_Closeout_Report/07_02_Contract_Closeout_Report_Example.npy
+token_count: 1461
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.262985+00:00'
 ---
 
 # Contract Closeout Report (Reference Example)

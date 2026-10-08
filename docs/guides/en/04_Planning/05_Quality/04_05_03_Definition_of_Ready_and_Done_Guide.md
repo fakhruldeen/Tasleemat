@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Guide.npy
-token_count: 1891
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.368479+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.368479+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Definition of Ready and Done Standard
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/05_Quality/03_Definition_of_Ready_and_Done/04_05_03_Definition_of_Ready_and_Done_Guide.npy
+token_count: 1212
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.991592+00:00'
+form_id: PMO-04.05.03
+status: approved
 ---
 
 ## Tasleemat Forms Guide

@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/ar/06_raci_authority_matrix.npy
-token_count: 7331
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.227210+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -13,6 +5,14 @@ created_at: '2026-10-06T16:05:28.227210+00:00'
     <a class="lang-switch-btn" href="../en/06_raci_authority_matrix.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
   </div>
 </div>
+
+---
+type: Guide
+token_pointer: /_tokens/docs/ar/06_raci_authority_matrix.npy
+token_count: 7331
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.227210+00:00'
+---
 
 <p align="center">
   <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />

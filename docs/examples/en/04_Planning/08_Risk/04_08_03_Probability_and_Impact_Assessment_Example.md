@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Example.npy
-token_count: 1450
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.652097+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.652097+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/08_Risk/03_Probability_and_Impact_Assessment/04_08_03_Probability_and_Impact_Assessment_Example.npy
+token_count: 907
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.230350+00:00'
 ---
 
 # Probability and Impact Assessment (Reference Example)

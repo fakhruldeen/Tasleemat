@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.npy
-token_count: 2092
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.540890+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.540890+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/ar/04_التخطيط/02_النطاق/08_قائمة_تراكم_المنتج_(Product_Backlog)/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.npy
+token_count: 1497
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.148951+00:00'
 ---
 
 <div>

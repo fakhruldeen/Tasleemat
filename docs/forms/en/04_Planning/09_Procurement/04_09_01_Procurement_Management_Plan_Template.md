@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/04_Planning/09_Procurement/04_09_01_Procurement_Management_Plan_Template.npy
-token_count: 1131
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.169675+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.169675+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/09_Procurement/01_Procurement_Management_Plan/04_09_01_Procurement_Management_Plan_Template.npy
+token_count: 577
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.009966+00:00'
+form_id: PMO-04.09.01
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

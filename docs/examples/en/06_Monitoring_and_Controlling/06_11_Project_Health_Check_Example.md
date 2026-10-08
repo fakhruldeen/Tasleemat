@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Example.npy
-token_count: 1559
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.677068+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.677068+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/11_Project_Health_Check/06_11_Project_Health_Check_Example.npy
+token_count: 1051
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.254269+00:00'
 ---
 
 # Project Health Check (Reference Example)

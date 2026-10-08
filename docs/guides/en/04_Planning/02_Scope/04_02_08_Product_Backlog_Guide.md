@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Guide.npy
-token_count: 1982
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.345696+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.345696+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Product Backlog
 nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/08_Product_Backlog/04_02_08_Product_Backlog_Guide.npy
+token_count: 1337
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.937560+00:00'
+form_id: PMO-04.02.08
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

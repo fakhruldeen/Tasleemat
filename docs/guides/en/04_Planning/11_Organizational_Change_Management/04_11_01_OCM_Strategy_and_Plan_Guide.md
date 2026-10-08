@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Guide.npy
-token_count: 1855
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.353981+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.353981+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: OCM Strategy and Plan
 nav_order: 7
+token_pointer: /_tokens/forms/en/04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan/04_11_01_OCM_Strategy_and_Plan_Guide.npy
+token_count: 1111
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.962485+00:00'
+form_id: PMO-04.11.01
+status: approved
 ---
 
 ## Tasleemat Forms Guide

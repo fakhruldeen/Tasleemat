@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Template.npy
-token_count: 1561
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.167087+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.167087+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/06_Resource/03_Resource_Breakdown_Structure/04_06_03_Resource_Breakdown_Structure_Template.npy
+token_count: 1003
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.000095+00:00'
+form_id: PMO-04.06.03
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the Resource Breakdown Structure based on the
 project context.

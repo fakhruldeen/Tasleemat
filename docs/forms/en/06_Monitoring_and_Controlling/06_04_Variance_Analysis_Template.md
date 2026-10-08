@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/06_Monitoring_and_Controlling/06_04_Variance_Analysis_Template.npy
-token_count: 1170
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.189059+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.189059+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/04_Variance_Analysis/06_04_Variance_Analysis_Template.npy
+token_count: 657
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.048016+00:00'
+form_id: PMO-06.04
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Populate the Variance Analysis based on the project context. Ensure the JSON keys map exactly to the corresponding flat markdown fields.
 

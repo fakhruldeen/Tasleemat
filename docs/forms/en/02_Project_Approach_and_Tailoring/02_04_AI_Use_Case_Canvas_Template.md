@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.npy
-token_count: 2761
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.176722+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.176722+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas/02_04_AI_Use_Case_Canvas_Template.npy
+token_count: 2191
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.024644+00:00'
+form_id: PMO-02.04
+language: en
+status: approved
+---
+-->
 
 <!--
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

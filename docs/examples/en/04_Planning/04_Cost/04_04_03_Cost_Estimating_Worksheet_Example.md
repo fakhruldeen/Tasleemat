@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Example.npy
-token_count: 2064
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.636760+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.636760+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/04_Cost/03_Cost_Estimating_Worksheet/04_04_03_Cost_Estimating_Worksheet_Example.npy
+token_count: 1519
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.219147+00:00'
 ---
 
 # Cost Estimating Worksheet (Reference Example)

@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Template.npy
-token_count: 2250
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.208919+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.208919+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/01_Business_and_Value_Delivery/03_Value_Realization_Register/01_03_Value_Realization_Register_Template.npy
+token_count: 1727
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.093327+00:00'
+form_id: PMO-01.03
+language: en
+status: approved
+---
+-->
 
 <!--  
 LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.

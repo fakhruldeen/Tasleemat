@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Example.npy
-token_count: 1621
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.697322+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.697322+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/01_Business_and_Value_Delivery/03_Value_Realization_Register/01_03_Value_Realization_Register_Example.npy
+token_count: 1109
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.268005+00:00'
 ---
 
 # Value Realization Register (Reference Example)

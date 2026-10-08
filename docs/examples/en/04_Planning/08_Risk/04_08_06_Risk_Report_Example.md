@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/04_Planning/08_Risk/04_08_06_Risk_Report_Example.npy
-token_count: 1804
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.654057+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.654057+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/04_Planning/08_Risk/06_Risk_Report/04_08_06_Risk_Report_Example.npy
+token_count: 1295
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.232741+00:00'
 ---
 
 # Risk Report (Reference Example)

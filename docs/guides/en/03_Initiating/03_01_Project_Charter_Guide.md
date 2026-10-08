@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/03_Initiating/03_01_Project_Charter_Guide.npy
-token_count: 1624
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.447802+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.447802+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Project Charter
 nav_order: 1
+token_pointer: /_tokens/forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter_Guide.npy
+token_count: 1135
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.098706+00:00'
+form_id: PMO-03.01
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/examples/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Example.npy
-token_count: 1911
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.680953+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -29,6 +21,14 @@ created_at: '2026-10-06T16:05:28.680953+00:00'
   </div>
 </div>
 
+---
+
+---
+type: Example
+token_pointer: /_tokens/examples/en/06_Monitoring_and_Controlling/01_Project_Status_Report/06_01_Project_Status_Report_Example.npy
+token_count: 1411
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.252959+00:00'
 ---
 
 # Project Status Report (Reference Example)

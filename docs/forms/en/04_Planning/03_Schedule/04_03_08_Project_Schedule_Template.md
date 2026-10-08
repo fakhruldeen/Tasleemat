@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Template.npy
-token_count: 1076
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.155525+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.155525+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/08_Project_Schedule/04_03_08_Project_Schedule_Template.npy
+token_count: 538
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.975338+00:00'
+form_id: PMO-04.03.08
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 

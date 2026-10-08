@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Guide.npy
-token_count: 1313
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.395695+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.395695+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Flow Metrics and Value Stream Dashboard
 nav_order: 12
+token_pointer: /_tokens/forms/en/06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream/06_12_Flow_Metrics_and_Value_Stream_Guide.npy
+token_count: 761
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.059738+00:00'
+form_id: PMO-06.12
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

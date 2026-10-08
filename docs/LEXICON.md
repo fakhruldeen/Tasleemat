@@ -1,3 +1,10 @@
+<div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Bilingual Resource:</strong> Master Lexicon & Deliverables Catalog | المعجم الموحد للمصطلحات</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/LEXICON.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+  </div>
+</div>
+
 ---
 type: Guide
 token_pointer: /_tokens/docs/LEXICON.npy
@@ -5,13 +12,6 @@ token_count: 14841
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:28.042021+00:00'
 ---
-
-<div class="lang-switch-bar">
-  <span class="lang-switch-label">🌐 <strong>Bilingual Resource:</strong> Master Lexicon & Deliverables Catalog | المعجم الموحد للمصطلحات</span>
-  <div class="lang-switch-actions">
-    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/LEXICON.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
-  </div>
-</div>
 
 <p align="center">
   <img src="img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">

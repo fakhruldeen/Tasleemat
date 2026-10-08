@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Guide.npy
-token_count: 2490
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.442187+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.442187+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Value Realization Register
 nav_order: 1
+token_pointer: /_tokens/forms/en/01_Business_and_Value_Delivery/03_Value_Realization_Register/01_03_Value_Realization_Register_Guide.npy
+token_count: 1853
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.092686+00:00'
+form_id: PMO-01.03
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

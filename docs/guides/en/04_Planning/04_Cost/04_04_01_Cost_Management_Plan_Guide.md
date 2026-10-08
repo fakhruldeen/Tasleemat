@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/04_Cost/04_04_01_Cost_Management_Plan_Guide.npy
-token_count: 1371
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.349925+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -32,10 +24,17 @@ created_at: '2026-10-06T16:05:28.349925+00:00'
 ---
 
 ---
+type: Form
 lang: en
 layout: default
 title: Cost Management Plan
 nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/04_Cost/01_Cost_Management_Plan/04_04_01_Cost_Management_Plan_Guide.npy
+token_count: 825
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.951735+00:00'
+form_id: PMO-04.04.01
+status: approved
 ---
 
 <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">

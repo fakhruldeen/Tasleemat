@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/guides/en/04_Planning/index.npy
-token_count: 6036
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.341721+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">

@@ -11,21 +11,23 @@ theme:
   name: material
   language: en
   palette:
-    # Dark mode (PMOSkills Obsidian Default)
+    # Light mode (Executive Corporate Navy Default)
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode (Clean Executive Slate)
     - scheme: slate
       primary: slate
       accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-    # Light mode (Clean Professional Theme)
-    - scheme: default
-      primary: white
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
@@ -75,398 +77,151 @@ markdown_extensions:
   - md_in_html
 
 nav:
-- 🇬🇧 English Portal:
-  - Home & Overview: index.md
-  - 📑 Interactive Master Catalog: catalog/en/index.md
-  - 📚 PMO Governance Manuals (01-12):
-    - 01. Getting Started: en/01_getting_started.md
-    - 02. Usage Guide: en/02_usage_guide.md
-    - 03. PMO Policy Manual: en/03_pmo_policy_manual.md
-    - 04. Stage-Gates & Governance: en/04_stage_gates_and_governance.md
-    - 05. Tailoring Profiles: en/05_tailoring_profiles.md
-    - 06. RACI Authority Matrix: en/06_raci_authority_matrix.md
-    - 07. Document Dependencies: en/07_document_dependencies.md
-    - 08. AI Governance Framework: en/08_ai_governance_framework.md
-    - 09. Agile & Hybrid Integration: en/09_agile_hybrid_integration.md
-    - 10. FAQ & Troubleshooting: en/10_faq_and_troubleshooting.md
-    - 11. Tools & Automation: en/11_tools_and_automation.md
-    - 12. Open Knowledge Framework (OKF): en/12_open_knowledge_framework.md
-  - 📋 Standard Templates Library:
-    - Templates Overview: forms/en/index.md
-    - 00. Program & Portfolio Management:
-      - PMO-00.01 Portfolio Roadmap: forms/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Template.md
-      - PMO-00.02 Program Charter: forms/en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Template.md
-      - PMO-00.03 Interdependency Register: forms/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.md
-      - PMO-00.04 Resource Capacity Matrix: forms/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.md
-      - PMO-00.05 PMO Maturity Assessment: forms/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Template.md
-      - PMO-00.06 OKR Alignment Matrix: forms/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.md
-    - 01. Business & Value Delivery:
-      - PMO-01.01 Business Case: forms/en/01_Business_and_Value_Delivery/01_01_Business_Case_Template.md
-      - PMO-01.02 Benefits Management Plan: forms/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Template.md
-      - PMO-01.03 Value Realization Register: forms/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Template.md
-      - PMO-01.04 Gap Analysis Report: forms/en/01_Business_and_Value_Delivery/01_04_Gap_Analysis_Report_Template.md
-    - 02. Project Approach & Tailoring:
-      - PMO-02.01 Tailoring Plan: forms/en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Template.md
-      - PMO-02.02 AI Governance Plan: forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.md
-      - PMO-02.03 AI Readiness Assessment: forms/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Template.md
-      - PMO-02.04 AI Use Case Canvas: forms/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.md
-      - PMO-02.05 AI Model Card and Fact Sheet: forms/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.md
-      - PMO-02.06 Data Privacy and Ethics Assessment: forms/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.md
-    - 03. Initiating:
-      - PMO-03.01 Project Charter: forms/en/03_Initiating/03_01_Project_Charter_Template.md
-      - PMO-03.02 Product Vision: forms/en/03_Initiating/03_02_Product_Vision_Template.md
-      - PMO-03.03 Assumption Log: forms/en/03_Initiating/03_03_Assumption_Log_Template.md
-      - PMO-03.04 Stakeholder Register: forms/en/03_Initiating/03_04_Stakeholder_Register_Template.md
-      - PMO-03.05 Stakeholder Analysis: forms/en/03_Initiating/03_05_Stakeholder_Analysis_Template.md
-    - 04. Planning:
-      - 01. Integration Management:
-        - PMO-04.01.01 Project Management Plan: forms/en/04_Planning/01_Integration/04_01_01_Project_Management_Plan_Template.md
-        - PMO-04.01.02 Change Management Plan: forms/en/04_Planning/01_Integration/04_01_02_Change_Management_Plan_Template.md
-        - PMO-04.01.03 Project Roadmap: forms/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Template.md
-      - 02. Scope Management:
-        - PMO-04.02.01 Scope Management Plan: forms/en/04_Planning/02_Scope/04_02_01_Scope_Management_Plan_Template.md
-        - PMO-04.02.02 Requirements Management Plan: forms/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Template.md
-        - PMO-04.02.03 Requirements Documentation: forms/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Template.md
-        - PMO-04.02.04 Requirements Traceability Matrix: forms/en/04_Planning/02_Scope/04_02_04_Requirements_Traceability_Matrix_Template.md
-        - PMO-04.02.05 Project Scope Statement: forms/en/04_Planning/02_Scope/04_02_05_Project_Scope_Statement_Template.md
-        - PMO-04.02.06 Work Breakdown Structure: forms/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Template.md
-        - PMO-04.02.07 WBS Dictionary: forms/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Template.md
-        - PMO-04.02.08 Product Backlog: forms/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.md
-        - PMO-04.02.09 User Story Mapping Canvas: forms/en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Template.md
-      - 03. Schedule Management:
-        - PMO-04.03.01 Schedule Management Plan: forms/en/04_Planning/03_Schedule/04_03_01_Schedule_Management_Plan_Template.md
-        - PMO-04.03.02 Activity List: forms/en/04_Planning/03_Schedule/04_03_02_Activity_List_Template.md
-        - PMO-04.03.03 Activity Attributes: forms/en/04_Planning/03_Schedule/04_03_03_Activity_Attributes_Template.md
-        - PMO-04.03.04 Milestone List: forms/en/04_Planning/03_Schedule/04_03_04_Milestone_List_Template.md
-        - PMO-04.03.05 Network Diagram: forms/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Template.md
-        - PMO-04.03.06 Duration Estimates: forms/en/04_Planning/03_Schedule/04_03_06_Duration_Estimates_Template.md
-        - PMO-04.03.07 Duration Estimating Worksheet: forms/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Template.md
-        - PMO-04.03.08 Project Schedule: forms/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Template.md
-        - PMO-04.03.09 Release Plan: forms/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Template.md
-        - PMO-04.03.10 Sprint Planning Log: forms/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.md
-      - 04. Cost Management:
-        - PMO-04.04.01 Cost Management Plan: forms/en/04_Planning/04_Cost/04_04_01_Cost_Management_Plan_Template.md
-        - PMO-04.04.02 Cost Estimates: forms/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Template.md
-        - PMO-04.04.03 Cost Estimating Worksheet: forms/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Template.md
-        - PMO-04.04.04 Cost Baseline: forms/en/04_Planning/04_Cost/04_04_04_Cost_Baseline_Template.md
-      - 05. Quality Management:
-        - PMO-04.05.01 Quality Management Plan: forms/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Template.md
-        - PMO-04.05.02 Quality Metrics: forms/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Template.md
-        - PMO-04.05.03 Definition of Ready and Done: forms/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Template.md
-      - 06. Resource Management:
-        - PMO-04.06.01 Resource Management Plan: forms/en/04_Planning/06_Resource/04_06_01_Resource_Management_Plan_Template.md
-        - PMO-04.06.02 Resource Requirements: forms/en/04_Planning/06_Resource/04_06_02_Resource_Requirements_Template.md
-        - PMO-04.06.03 Resource Breakdown Structure: forms/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Template.md
-        - PMO-04.06.04 Responsibility Assignment Matrix: forms/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Template.md
-        - PMO-04.06.05 Team Charter: forms/en/04_Planning/06_Resource/04_06_05_Team_Charter_Template.md
-        - PMO-04.06.06 Team Psychological Safety and Wellbeing Index: forms/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Template.md
-      - 07. Communications Management:
-        - PMO-04.07.01 Communications Management Plan: forms/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Template.md
-      - 08. Risk Management:
-        - PMO-04.08.01 Risk Management Plan: forms/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Template.md
-        - PMO-04.08.02 Risk Register: forms/en/04_Planning/08_Risk/04_08_02_Risk_Register_Template.md
-        - PMO-04.08.03 Probability and Impact Assessment: forms/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Template.md
-        - PMO-04.08.04 Probability and Impact Matrix: forms/en/04_Planning/08_Risk/04_08_04_Probability_and_Impact_Matrix_Template.md
-        - PMO-04.08.05 Risk Data Sheet: forms/en/04_Planning/08_Risk/04_08_05_Risk_Data_Sheet_Template.md
-        - PMO-04.08.06 Risk Report: forms/en/04_Planning/08_Risk/04_08_06_Risk_Report_Template.md
-        - PMO-04.08.07 Risk Mitigation Action Plan: forms/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.md
-      - 09. Procurement Management:
-        - PMO-04.09.01 Procurement Management Plan: forms/en/04_Planning/09_Procurement/04_09_01_Procurement_Management_Plan_Template.md
-        - PMO-04.09.02 Procurement Strategy: forms/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.md
-        - PMO-04.09.03 Source Selection Criteria: forms/en/04_Planning/09_Procurement/04_09_03_Source_Selection_Criteria_Template.md
-        - PMO-04.09.04 Statement of Work SOW: forms/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Template.md
-        - PMO-04.09.05 Request for Proposal RFP: forms/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.md
-      - 10. Stakeholder Management:
-        - PMO-04.10.01 Stakeholder Engagement Plan: forms/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Template.md
-      - 11. Organizational Change Management:
-        - PMO-04.11.01 OCM Strategy and Plan: forms/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Template.md
-        - PMO-04.11.02 Training Plan and Log: forms/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.md
-      - 12. Sustainability & ESG:
-        - PMO-04.12.01 Sustainability and ESG Management Plan: forms/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.md
-    - 05. Executing:
-      - PMO-05.01 Issue Log: forms/en/05_Executing/05_01_Issue_Log_Template.md
-      - PMO-05.02 Decision Log: forms/en/05_Executing/05_02_Decision_Log_Template.md
-      - PMO-05.03 Change Request: forms/en/05_Executing/05_03_Change_Request_Template.md
-      - PMO-05.04 Change Log: forms/en/05_Executing/05_04_Change_Log_Template.md
-      - PMO-05.05 Quality Audit: forms/en/05_Executing/05_05_Quality_Audit_Template.md
-      - PMO-05.06 Team Performance Assessment: forms/en/05_Executing/05_06_Team_Performance_Assessment_Template.md
-      - PMO-05.07 Lessons Learned Register: forms/en/05_Executing/05_07_Lessons_Learned_Register_Template.md
-      - PMO-05.08 Retrospective: forms/en/05_Executing/05_08_Retrospective_Template.md
-      - PMO-05.09 Prompt Library Log: forms/en/05_Executing/05_09_Prompt_Library_Log_Template.md
-      - PMO-05.10 Impediment Log: forms/en/05_Executing/05_10_Impediment_Log_Template.md
-      - PMO-05.11 Meeting Minutes: forms/en/05_Executing/05_11_Meeting_Minutes_Template.md
-      - PMO-05.12 Team Onboarding Checklist: forms/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.md
-    - 06. Monitoring & Controlling:
-      - PMO-06.01 Project Status Report: forms/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Template.md
-      - PMO-06.02 Team Member Status Report: forms/en/06_Monitoring_and_Controlling/06_02_Team_Member_Status_Report_Template.md
-      - PMO-06.03 Contractor Status Report: forms/en/06_Monitoring_and_Controlling/06_03_Contractor_Status_Report_Template.md
-      - PMO-06.04 Variance Analysis: forms/en/06_Monitoring_and_Controlling/06_04_Variance_Analysis_Template.md
-      - PMO-06.05 Earned Value Analysis: forms/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Template.md
-      - PMO-06.06 Risk Audit: forms/en/06_Monitoring_and_Controlling/06_06_Risk_Audit_Template.md
-      - PMO-06.07 Procurement Audit: forms/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Template.md
-      - PMO-06.08 Product Acceptance Form: forms/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Template.md
-      - PMO-06.09 Vendor Performance Scorecard: forms/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Template.md
-      - PMO-06.10 User Acceptance Testing Signoff: forms/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Template.md
-      - PMO-06.11 Project Health Check: forms/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Template.md
-      - PMO-06.12 Flow Metrics and Value Stream: forms/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.md
-    - 07. Closing:
-      - PMO-07.01 Lessons Learned Summary: forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.md
-      - PMO-07.02 Contract Closeout Report: forms/en/07_Closing/07_02_Contract_Closeout_Report_Template.md
-      - PMO-07.03 Project or Phase Closeout: forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.md
-      - PMO-07.04 Transition to Operations Checklist: forms/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.md
-      - PMO-07.05 Post Implementation Review: forms/en/07_Closing/07_05_Post_Implementation_Review_Template.md
-  - 📖 Deliverable Authoring Guides:
-    - Guides Overview: guides/en/index.md
-    - 00. Program & Portfolio Management:
-      - PMO-00.01 Portfolio Roadmap: guides/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Guide.md
-      - PMO-00.02 Program Charter: guides/en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Guide.md
-      - PMO-00.03 Interdependency Register: guides/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Guide.md
-      - PMO-00.04 Resource Capacity Matrix: guides/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Guide.md
-      - PMO-00.05 PMO Maturity Assessment: guides/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Guide.md
-      - PMO-00.06 OKR Alignment Matrix: guides/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Guide.md
-    - 01. Business & Value Delivery:
-      - PMO-01.01 Business Case: guides/en/01_Business_and_Value_Delivery/01_01_Business_Case_Guide.md
-      - PMO-01.02 Benefits Management Plan: guides/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Guide.md
-      - PMO-01.03 Value Realization Register: guides/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Guide.md
-      - PMO-01.04 Gap Analysis Report: guides/en/01_Business_and_Value_Delivery/01_04_Gap_Analysis_Report_Guide.md
-    - 02. Project Approach & Tailoring:
-      - PMO-02.01 Tailoring Plan: guides/en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Guide.md
-      - PMO-02.02 AI Governance Plan: guides/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Guide.md
-      - PMO-02.03 AI Readiness Assessment: guides/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Guide.md
-      - PMO-02.04 AI Use Case Canvas: guides/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Guide.md
-      - PMO-02.05 AI Model Card and Fact Sheet: guides/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Guide.md
-      - PMO-02.06 Data Privacy and Ethics Assessment: guides/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Guide.md
-    - 03. Initiating:
-      - PMO-03.01 Project Charter: guides/en/03_Initiating/03_01_Project_Charter_Guide.md
-      - PMO-03.02 Product Vision: guides/en/03_Initiating/03_02_Product_Vision_Guide.md
-      - PMO-03.03 Assumption Log: guides/en/03_Initiating/03_03_Assumption_Log_Guide.md
-      - PMO-03.04 Stakeholder Register: guides/en/03_Initiating/03_04_Stakeholder_Register_Guide.md
-      - PMO-03.05 Stakeholder Analysis: guides/en/03_Initiating/03_05_Stakeholder_Analysis_Guide.md
-    - 04. Planning:
-      - 01. Integration Management:
-        - PMO-04.01.01 Project Management Plan: guides/en/04_Planning/01_Integration/04_01_01_Project_Management_Plan_Guide.md
-        - PMO-04.01.02 Change Management Plan: guides/en/04_Planning/01_Integration/04_01_02_Change_Management_Plan_Guide.md
-        - PMO-04.01.03 Project Roadmap: guides/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Guide.md
-      - 02. Scope Management:
-        - PMO-04.02.01 Scope Management Plan: guides/en/04_Planning/02_Scope/04_02_01_Scope_Management_Plan_Guide.md
-        - PMO-04.02.02 Requirements Management Plan: guides/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Guide.md
-        - PMO-04.02.03 Requirements Documentation: guides/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Guide.md
-        - PMO-04.02.04 Requirements Traceability Matrix: guides/en/04_Planning/02_Scope/04_02_04_Requirements_Traceability_Matrix_Guide.md
-        - PMO-04.02.05 Project Scope Statement: guides/en/04_Planning/02_Scope/04_02_05_Project_Scope_Statement_Guide.md
-        - PMO-04.02.06 Work Breakdown Structure: guides/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Guide.md
-        - PMO-04.02.07 WBS Dictionary: guides/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Guide.md
-        - PMO-04.02.08 Product Backlog: guides/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Guide.md
-        - PMO-04.02.09 User Story Mapping Canvas: guides/en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Guide.md
-      - 03. Schedule Management:
-        - PMO-04.03.01 Schedule Management Plan: guides/en/04_Planning/03_Schedule/04_03_01_Schedule_Management_Plan_Guide.md
-        - PMO-04.03.02 Activity List: guides/en/04_Planning/03_Schedule/04_03_02_Activity_List_Guide.md
-        - PMO-04.03.03 Activity Attributes: guides/en/04_Planning/03_Schedule/04_03_03_Activity_Attributes_Guide.md
-        - PMO-04.03.04 Milestone List: guides/en/04_Planning/03_Schedule/04_03_04_Milestone_List_Guide.md
-        - PMO-04.03.05 Network Diagram: guides/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Guide.md
-        - PMO-04.03.06 Duration Estimates: guides/en/04_Planning/03_Schedule/04_03_06_Duration_Estimates_Guide.md
-        - PMO-04.03.07 Duration Estimating Worksheet: guides/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Guide.md
-        - PMO-04.03.08 Project Schedule: guides/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Guide.md
-        - PMO-04.03.09 Release Plan: guides/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Guide.md
-        - PMO-04.03.10 Sprint Planning Log: guides/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Guide.md
-      - 04. Cost Management:
-        - PMO-04.04.01 Cost Management Plan: guides/en/04_Planning/04_Cost/04_04_01_Cost_Management_Plan_Guide.md
-        - PMO-04.04.02 Cost Estimates: guides/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Guide.md
-        - PMO-04.04.03 Cost Estimating Worksheet: guides/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Guide.md
-        - PMO-04.04.04 Cost Baseline: guides/en/04_Planning/04_Cost/04_04_04_Cost_Baseline_Guide.md
-      - 05. Quality Management:
-        - PMO-04.05.01 Quality Management Plan: guides/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Guide.md
-        - PMO-04.05.02 Quality Metrics: guides/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Guide.md
-        - PMO-04.05.03 Definition of Ready and Done: guides/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Guide.md
-      - 06. Resource Management:
-        - PMO-04.06.01 Resource Management Plan: guides/en/04_Planning/06_Resource/04_06_01_Resource_Management_Plan_Guide.md
-        - PMO-04.06.02 Resource Requirements: guides/en/04_Planning/06_Resource/04_06_02_Resource_Requirements_Guide.md
-        - PMO-04.06.03 Resource Breakdown Structure: guides/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Guide.md
-        - PMO-04.06.04 Responsibility Assignment Matrix: guides/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Guide.md
-        - PMO-04.06.05 Team Charter: guides/en/04_Planning/06_Resource/04_06_05_Team_Charter_Guide.md
-        - PMO-04.06.06 Team Psychological Safety and Wellbeing Index: guides/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Guide.md
-      - 07. Communications Management:
-        - PMO-04.07.01 Communications Management Plan: guides/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Guide.md
-      - 08. Risk Management:
-        - PMO-04.08.01 Risk Management Plan: guides/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Guide.md
-        - PMO-04.08.02 Risk Register: guides/en/04_Planning/08_Risk/04_08_02_Risk_Register_Guide.md
-        - PMO-04.08.03 Probability and Impact Assessment: guides/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Guide.md
-        - PMO-04.08.04 Probability and Impact Matrix: guides/en/04_Planning/08_Risk/04_08_04_Probability_and_Impact_Matrix_Guide.md
-        - PMO-04.08.05 Risk Data Sheet: guides/en/04_Planning/08_Risk/04_08_05_Risk_Data_Sheet_Guide.md
-        - PMO-04.08.06 Risk Report: guides/en/04_Planning/08_Risk/04_08_06_Risk_Report_Guide.md
-        - PMO-04.08.07 Risk Mitigation Action Plan: guides/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Guide.md
-      - 09. Procurement Management:
-        - PMO-04.09.01 Procurement Management Plan: guides/en/04_Planning/09_Procurement/04_09_01_Procurement_Management_Plan_Guide.md
-        - PMO-04.09.02 Procurement Strategy: guides/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Guide.md
-        - PMO-04.09.03 Source Selection Criteria: guides/en/04_Planning/09_Procurement/04_09_03_Source_Selection_Criteria_Guide.md
-        - PMO-04.09.04 Statement of Work SOW: guides/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Guide.md
-        - PMO-04.09.05 Request for Proposal RFP: guides/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Guide.md
-      - 10. Stakeholder Management:
-        - PMO-04.10.01 Stakeholder Engagement Plan: guides/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Guide.md
-      - 11. Organizational Change Management:
-        - PMO-04.11.01 OCM Strategy and Plan: guides/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Guide.md
-        - PMO-04.11.02 Training Plan and Log: guides/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Guide.md
-      - 12. Sustainability & ESG:
-        - PMO-04.12.01 Sustainability and ESG Management Plan: guides/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.md
-    - 05. Executing:
-      - PMO-05.01 Issue Log: guides/en/05_Executing/05_01_Issue_Log_Guide.md
-      - PMO-05.02 Decision Log: guides/en/05_Executing/05_02_Decision_Log_Guide.md
-      - PMO-05.03 Change Request: guides/en/05_Executing/05_03_Change_Request_Guide.md
-      - PMO-05.04 Change Log: guides/en/05_Executing/05_04_Change_Log_Guide.md
-      - PMO-05.05 Quality Audit: guides/en/05_Executing/05_05_Quality_Audit_Guide.md
-      - PMO-05.06 Team Performance Assessment: guides/en/05_Executing/05_06_Team_Performance_Assessment_Guide.md
-      - PMO-05.07 Lessons Learned Register: guides/en/05_Executing/05_07_Lessons_Learned_Register_Guide.md
-      - PMO-05.08 Retrospective: guides/en/05_Executing/05_08_Retrospective_Guide.md
-      - PMO-05.09 Prompt Library Log: guides/en/05_Executing/05_09_Prompt_Library_Log_Guide.md
-      - PMO-05.10 Impediment Log: guides/en/05_Executing/05_10_Impediment_Log_Guide.md
-      - PMO-05.11 Meeting Minutes: guides/en/05_Executing/05_11_Meeting_Minutes_Guide.md
-      - PMO-05.12 Team Onboarding Checklist: guides/en/05_Executing/05_12_Team_Onboarding_Checklist_Guide.md
-    - 06. Monitoring & Controlling:
-      - PMO-06.01 Project Status Report: guides/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Guide.md
-      - PMO-06.02 Team Member Status Report: guides/en/06_Monitoring_and_Controlling/06_02_Team_Member_Status_Report_Guide.md
-      - PMO-06.03 Contractor Status Report: guides/en/06_Monitoring_and_Controlling/06_03_Contractor_Status_Report_Guide.md
-      - PMO-06.04 Variance Analysis: guides/en/06_Monitoring_and_Controlling/06_04_Variance_Analysis_Guide.md
-      - PMO-06.05 Earned Value Analysis: guides/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Guide.md
-      - PMO-06.06 Risk Audit: guides/en/06_Monitoring_and_Controlling/06_06_Risk_Audit_Guide.md
-      - PMO-06.07 Procurement Audit: guides/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Guide.md
-      - PMO-06.08 Product Acceptance Form: guides/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Guide.md
-      - PMO-06.09 Vendor Performance Scorecard: guides/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Guide.md
-      - PMO-06.10 User Acceptance Testing Signoff: guides/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Guide.md
-      - PMO-06.11 Project Health Check: guides/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Guide.md
-      - PMO-06.12 Flow Metrics and Value Stream: guides/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Guide.md
-    - 07. Closing:
-      - PMO-07.01 Lessons Learned Summary: guides/en/07_Closing/07_01_Lessons_Learned_Summary_Guide.md
-      - PMO-07.02 Contract Closeout Report: guides/en/07_Closing/07_02_Contract_Closeout_Report_Guide.md
-      - PMO-07.03 Project or Phase Closeout: guides/en/07_Closing/07_03_Project_or_Phase_Closeout_Guide.md
-      - PMO-07.04 Transition to Operations Checklist: guides/en/07_Closing/07_04_Transition_to_Operations_Checklist_Guide.md
-      - PMO-07.05 Post Implementation Review: guides/en/07_Closing/07_05_Post_Implementation_Review_Guide.md
-  - 💡 Real-World Reference Examples:
-    - Case Studies Showcase: examples/en/index.md
-    - 00. Program & Portfolio Management:
-      - PMO-00.01 Portfolio Roadmap: examples/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Example.md
-      - PMO-00.02 Program Charter: examples/en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Example.md
-      - PMO-00.03 Interdependency Register: examples/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Example.md
-      - PMO-00.04 Resource Capacity Matrix: examples/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Example.md
-      - PMO-00.05 PMO Maturity Assessment: examples/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Example.md
-      - PMO-00.06 OKR Alignment Matrix: examples/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Example.md
-    - 01. Business & Value Delivery:
-      - PMO-01.01 Business Case: examples/en/01_Business_and_Value_Delivery/01_01_Business_Case_Example.md
-      - PMO-01.02 Benefits Management Plan: examples/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Example.md
-      - PMO-01.03 Value Realization Register: examples/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Example.md
-      - PMO-01.04 Gap Analysis Report: examples/en/01_Business_and_Value_Delivery/01_04_Gap_Analysis_Report_Example.md
-    - 02. Project Approach & Tailoring:
-      - PMO-02.01 Tailoring Plan: examples/en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Example.md
-      - PMO-02.02 AI Governance Plan: examples/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Example.md
-      - PMO-02.03 AI Readiness Assessment: examples/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Example.md
-      - PMO-02.04 AI Use Case Canvas: examples/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Example.md
-      - PMO-02.05 AI Model Card and Fact Sheet: examples/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Example.md
-      - PMO-02.06 Data Privacy and Ethics Assessment: examples/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Example.md
-    - 03. Initiating:
-      - PMO-03.01 Project Charter: examples/en/03_Initiating/03_01_Project_Charter_Example.md
-      - PMO-03.02 Product Vision: examples/en/03_Initiating/03_02_Product_Vision_Example.md
-      - PMO-03.03 Assumption Log: examples/en/03_Initiating/03_03_Assumption_Log_Example.md
-      - PMO-03.04 Stakeholder Register: examples/en/03_Initiating/03_04_Stakeholder_Register_Example.md
-      - PMO-03.05 Stakeholder Analysis: examples/en/03_Initiating/03_05_Stakeholder_Analysis_Example.md
-    - 04. Planning:
-      - 01. Integration Management:
-        - PMO-04.01.01 Project Management Plan: examples/en/04_Planning/01_Integration/04_01_01_Project_Management_Plan_Example.md
-        - PMO-04.01.02 Change Management Plan: examples/en/04_Planning/01_Integration/04_01_02_Change_Management_Plan_Example.md
-        - PMO-04.01.03 Project Roadmap: examples/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Example.md
-      - 02. Scope Management:
-        - PMO-04.02.01 Scope Management Plan: examples/en/04_Planning/02_Scope/04_02_01_Scope_Management_Plan_Example.md
-        - PMO-04.02.02 Requirements Management Plan: examples/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Example.md
-        - PMO-04.02.03 Requirements Documentation: examples/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Example.md
-        - PMO-04.02.04 Requirements Traceability Matrix: examples/en/04_Planning/02_Scope/04_02_04_Requirements_Traceability_Matrix_Example.md
-        - PMO-04.02.05 Project Scope Statement: examples/en/04_Planning/02_Scope/04_02_05_Project_Scope_Statement_Example.md
-        - PMO-04.02.06 Work Breakdown Structure: examples/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Example.md
-        - PMO-04.02.07 WBS Dictionary: examples/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Example.md
-        - PMO-04.02.08 Product Backlog: examples/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Example.md
-        - PMO-04.02.09 User Story Mapping Canvas: examples/en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Example.md
-      - 03. Schedule Management:
-        - PMO-04.03.01 Schedule Management Plan: examples/en/04_Planning/03_Schedule/04_03_01_Schedule_Management_Plan_Example.md
-        - PMO-04.03.02 Activity List: examples/en/04_Planning/03_Schedule/04_03_02_Activity_List_Example.md
-        - PMO-04.03.03 Activity Attributes: examples/en/04_Planning/03_Schedule/04_03_03_Activity_Attributes_Example.md
-        - PMO-04.03.04 Milestone List: examples/en/04_Planning/03_Schedule/04_03_04_Milestone_List_Example.md
-        - PMO-04.03.05 Network Diagram: examples/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Example.md
-        - PMO-04.03.06 Duration Estimates: examples/en/04_Planning/03_Schedule/04_03_06_Duration_Estimates_Example.md
-        - PMO-04.03.07 Duration Estimating Worksheet: examples/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Example.md
-        - PMO-04.03.08 Project Schedule: examples/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Example.md
-        - PMO-04.03.09 Release Plan: examples/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Example.md
-        - PMO-04.03.10 Sprint Planning Log: examples/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Example.md
-      - 04. Cost Management:
-        - PMO-04.04.01 Cost Management Plan: examples/en/04_Planning/04_Cost/04_04_01_Cost_Management_Plan_Example.md
-        - PMO-04.04.02 Cost Estimates: examples/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Example.md
-        - PMO-04.04.03 Cost Estimating Worksheet: examples/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Example.md
-        - PMO-04.04.04 Cost Baseline: examples/en/04_Planning/04_Cost/04_04_04_Cost_Baseline_Example.md
-      - 05. Quality Management:
-        - PMO-04.05.01 Quality Management Plan: examples/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Example.md
-        - PMO-04.05.02 Quality Metrics: examples/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Example.md
-        - PMO-04.05.03 Definition of Ready and Done: examples/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Example.md
-      - 06. Resource Management:
-        - PMO-04.06.01 Resource Management Plan: examples/en/04_Planning/06_Resource/04_06_01_Resource_Management_Plan_Example.md
-        - PMO-04.06.02 Resource Requirements: examples/en/04_Planning/06_Resource/04_06_02_Resource_Requirements_Example.md
-        - PMO-04.06.03 Resource Breakdown Structure: examples/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Example.md
-        - PMO-04.06.04 Responsibility Assignment Matrix: examples/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Example.md
-        - PMO-04.06.05 Team Charter: examples/en/04_Planning/06_Resource/04_06_05_Team_Charter_Example.md
-        - PMO-04.06.06 Team Psychological Safety and Wellbeing Index: examples/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Example.md
-      - 07. Communications Management:
-        - PMO-04.07.01 Communications Management Plan: examples/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Example.md
-      - 08. Risk Management:
-        - PMO-04.08.01 Risk Management Plan: examples/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Example.md
-        - PMO-04.08.02 Risk Register: examples/en/04_Planning/08_Risk/04_08_02_Risk_Register_Example.md
-        - PMO-04.08.03 Probability and Impact Assessment: examples/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Example.md
-        - PMO-04.08.04 Probability and Impact Matrix: examples/en/04_Planning/08_Risk/04_08_04_Probability_and_Impact_Matrix_Example.md
-        - PMO-04.08.05 Risk Data Sheet: examples/en/04_Planning/08_Risk/04_08_05_Risk_Data_Sheet_Example.md
-        - PMO-04.08.06 Risk Report: examples/en/04_Planning/08_Risk/04_08_06_Risk_Report_Example.md
-        - PMO-04.08.07 Risk Mitigation Action Plan: examples/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Example.md
-      - 09. Procurement Management:
-        - PMO-04.09.01 Procurement Management Plan: examples/en/04_Planning/09_Procurement/04_09_01_Procurement_Management_Plan_Example.md
-        - PMO-04.09.02 Procurement Strategy: examples/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Example.md
-        - PMO-04.09.03 Source Selection Criteria: examples/en/04_Planning/09_Procurement/04_09_03_Source_Selection_Criteria_Example.md
-        - PMO-04.09.04 Statement of Work SOW: examples/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Example.md
-        - PMO-04.09.05 Request for Proposal RFP: examples/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Example.md
-      - 10. Stakeholder Management:
-        - PMO-04.10.01 Stakeholder Engagement Plan: examples/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Example.md
-      - 11. Organizational Change Management:
-        - PMO-04.11.01 OCM Strategy and Plan: examples/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Example.md
-        - PMO-04.11.02 Training Plan and Log: examples/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Example.md
-      - 12. Sustainability & ESG:
-        - PMO-04.12.01 Sustainability and ESG Management Plan: examples/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Example.md
-    - 05. Executing:
-      - PMO-05.01 Issue Log: examples/en/05_Executing/05_01_Issue_Log_Example.md
-      - PMO-05.02 Decision Log: examples/en/05_Executing/05_02_Decision_Log_Example.md
-      - PMO-05.03 Change Request: examples/en/05_Executing/05_03_Change_Request_Example.md
-      - PMO-05.04 Change Log: examples/en/05_Executing/05_04_Change_Log_Example.md
-      - PMO-05.05 Quality Audit: examples/en/05_Executing/05_05_Quality_Audit_Example.md
-      - PMO-05.06 Team Performance Assessment: examples/en/05_Executing/05_06_Team_Performance_Assessment_Example.md
-      - PMO-05.07 Lessons Learned Register: examples/en/05_Executing/05_07_Lessons_Learned_Register_Example.md
-      - PMO-05.08 Retrospective: examples/en/05_Executing/05_08_Retrospective_Example.md
-      - PMO-05.09 Prompt Library Log: examples/en/05_Executing/05_09_Prompt_Library_Log_Example.md
-      - PMO-05.10 Impediment Log: examples/en/05_Executing/05_10_Impediment_Log_Example.md
-      - PMO-05.11 Meeting Minutes: examples/en/05_Executing/05_11_Meeting_Minutes_Example.md
-      - PMO-05.12 Team Onboarding Checklist: examples/en/05_Executing/05_12_Team_Onboarding_Checklist_Example.md
-    - 06. Monitoring & Controlling:
-      - PMO-06.01 Project Status Report: examples/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Example.md
-      - PMO-06.02 Team Member Status Report: examples/en/06_Monitoring_and_Controlling/06_02_Team_Member_Status_Report_Example.md
-      - PMO-06.03 Contractor Status Report: examples/en/06_Monitoring_and_Controlling/06_03_Contractor_Status_Report_Example.md
-      - PMO-06.04 Variance Analysis: examples/en/06_Monitoring_and_Controlling/06_04_Variance_Analysis_Example.md
-      - PMO-06.05 Earned Value Analysis: examples/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Example.md
-      - PMO-06.06 Risk Audit: examples/en/06_Monitoring_and_Controlling/06_06_Risk_Audit_Example.md
-      - PMO-06.07 Procurement Audit: examples/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Example.md
-      - PMO-06.08 Product Acceptance Form: examples/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Example.md
-      - PMO-06.09 Vendor Performance Scorecard: examples/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Example.md
-      - PMO-06.10 User Acceptance Testing Signoff: examples/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Example.md
-      - PMO-06.11 Project Health Check: examples/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Example.md
-      - PMO-06.12 Flow Metrics and Value Stream: examples/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Example.md
-    - 07. Closing:
-      - PMO-07.01 Lessons Learned Summary: examples/en/07_Closing/07_01_Lessons_Learned_Summary_Example.md
-      - PMO-07.02 Contract Closeout Report: examples/en/07_Closing/07_02_Contract_Closeout_Report_Example.md
-      - PMO-07.03 Project or Phase Closeout: examples/en/07_Closing/07_03_Project_or_Phase_Closeout_Example.md
-      - PMO-07.04 Transition to Operations Checklist: examples/en/07_Closing/07_04_Transition_to_Operations_Checklist_Example.md
-      - PMO-07.05 Post Implementation Review: examples/en/07_Closing/07_05_Post_Implementation_Review_Example.md
-- 🇸🇦 البوابة التوثيقية (Arabic):
+- 🏠 Home: index.md
+- 📋 Templates:
+  - Templates Overview: forms/en/index.md
+  - 00. Program & Portfolio Management:
+    - PMO-00.01 Portfolio Roadmap: forms/en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Template.md
+    - PMO-00.02 Program Charter: forms/en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Template.md
+    - PMO-00.03 Interdependency Register: forms/en/00_Program_and_Portfolio_Management/00_03_Interdependency_Register_Template.md
+    - PMO-00.04 Resource Capacity Matrix: forms/en/00_Program_and_Portfolio_Management/00_04_Resource_Capacity_Matrix_Template.md
+    - PMO-00.05 PMO Maturity Assessment: forms/en/00_Program_and_Portfolio_Management/00_05_PMO_Maturity_Assessment_Template.md
+    - PMO-00.06 OKR Alignment Matrix: forms/en/00_Program_and_Portfolio_Management/00_06_OKR_Alignment_Matrix_Template.md
+  - 01. Business & Value Delivery:
+    - PMO-01.01 Business Case: forms/en/01_Business_and_Value_Delivery/01_01_Business_Case_Template.md
+    - PMO-01.02 Benefits Management Plan: forms/en/01_Business_and_Value_Delivery/01_02_Benefits_Management_Plan_Template.md
+    - PMO-01.03 Value Realization Register: forms/en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Template.md
+    - PMO-01.04 Gap Analysis Report: forms/en/01_Business_and_Value_Delivery/01_04_Gap_Analysis_Report_Template.md
+  - 02. Project Approach & Tailoring:
+    - PMO-02.01 Tailoring Plan: forms/en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Template.md
+    - PMO-02.02 AI Governance Plan: forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.md
+    - PMO-02.03 AI Readiness Assessment: forms/en/02_Project_Approach_and_Tailoring/02_03_AI_Readiness_Assessment_Template.md
+    - PMO-02.04 AI Use Case Canvas: forms/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Template.md
+    - PMO-02.05 AI Model Card and Fact Sheet: forms/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.md
+    - PMO-02.06 Data Privacy and Ethics Assessment: forms/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Template.md
+  - 03. Initiating:
+    - PMO-03.01 Project Charter: forms/en/03_Initiating/03_01_Project_Charter_Template.md
+    - PMO-03.02 Product Vision: forms/en/03_Initiating/03_02_Product_Vision_Template.md
+    - PMO-03.03 Assumption Log: forms/en/03_Initiating/03_03_Assumption_Log_Template.md
+    - PMO-03.04 Stakeholder Register: forms/en/03_Initiating/03_04_Stakeholder_Register_Template.md
+    - PMO-03.05 Stakeholder Analysis: forms/en/03_Initiating/03_05_Stakeholder_Analysis_Template.md
+  - 04. Planning:
+    - 01. Integration Management:
+      - PMO-04.01.01 Project Management Plan: forms/en/04_Planning/01_Integration/04_01_01_Project_Management_Plan_Template.md
+      - PMO-04.01.02 Change Management Plan: forms/en/04_Planning/01_Integration/04_01_02_Change_Management_Plan_Template.md
+      - PMO-04.01.03 Project Roadmap: forms/en/04_Planning/01_Integration/04_01_03_Project_Roadmap_Template.md
+    - 02. Scope Management:
+      - PMO-04.02.01 Scope Management Plan: forms/en/04_Planning/02_Scope/04_02_01_Scope_Management_Plan_Template.md
+      - PMO-04.02.02 Requirements Management Plan: forms/en/04_Planning/02_Scope/04_02_02_Requirements_Management_Plan_Template.md
+      - PMO-04.02.03 Requirements Documentation: forms/en/04_Planning/02_Scope/04_02_03_Requirements_Documentation_Template.md
+      - PMO-04.02.04 Requirements Traceability Matrix: forms/en/04_Planning/02_Scope/04_02_04_Requirements_Traceability_Matrix_Template.md
+      - PMO-04.02.05 Project Scope Statement: forms/en/04_Planning/02_Scope/04_02_05_Project_Scope_Statement_Template.md
+      - PMO-04.02.06 Work Breakdown Structure: forms/en/04_Planning/02_Scope/04_02_06_Work_Breakdown_Structure_Template.md
+      - PMO-04.02.07 WBS Dictionary: forms/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Template.md
+      - PMO-04.02.08 Product Backlog: forms/en/04_Planning/02_Scope/04_02_08_Product_Backlog_Template.md
+      - PMO-04.02.09 User Story Mapping Canvas: forms/en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Template.md
+    - 03. Schedule Management:
+      - PMO-04.03.01 Schedule Management Plan: forms/en/04_Planning/03_Schedule/04_03_01_Schedule_Management_Plan_Template.md
+      - PMO-04.03.02 Activity List: forms/en/04_Planning/03_Schedule/04_03_02_Activity_List_Template.md
+      - PMO-04.03.03 Activity Attributes: forms/en/04_Planning/03_Schedule/04_03_03_Activity_Attributes_Template.md
+      - PMO-04.03.04 Milestone List: forms/en/04_Planning/03_Schedule/04_03_04_Milestone_List_Template.md
+      - PMO-04.03.05 Network Diagram: forms/en/04_Planning/03_Schedule/04_03_05_Network_Diagram_Template.md
+      - PMO-04.03.06 Duration Estimates: forms/en/04_Planning/03_Schedule/04_03_06_Duration_Estimates_Template.md
+      - PMO-04.03.07 Duration Estimating Worksheet: forms/en/04_Planning/03_Schedule/04_03_07_Duration_Estimating_Worksheet_Template.md
+      - PMO-04.03.08 Project Schedule: forms/en/04_Planning/03_Schedule/04_03_08_Project_Schedule_Template.md
+      - PMO-04.03.09 Release Plan: forms/en/04_Planning/03_Schedule/04_03_09_Release_Plan_Template.md
+      - PMO-04.03.10 Sprint Planning Log: forms/en/04_Planning/03_Schedule/04_03_10_Sprint_Planning_Log_Template.md
+    - 04. Cost Management:
+      - PMO-04.04.01 Cost Management Plan: forms/en/04_Planning/04_Cost/04_04_01_Cost_Management_Plan_Template.md
+      - PMO-04.04.02 Cost Estimates: forms/en/04_Planning/04_Cost/04_04_02_Cost_Estimates_Template.md
+      - PMO-04.04.03 Cost Estimating Worksheet: forms/en/04_Planning/04_Cost/04_04_03_Cost_Estimating_Worksheet_Template.md
+      - PMO-04.04.04 Cost Baseline: forms/en/04_Planning/04_Cost/04_04_04_Cost_Baseline_Template.md
+    - 05. Quality Management:
+      - PMO-04.05.01 Quality Management Plan: forms/en/04_Planning/05_Quality/04_05_01_Quality_Management_Plan_Template.md
+      - PMO-04.05.02 Quality Metrics: forms/en/04_Planning/05_Quality/04_05_02_Quality_Metrics_Template.md
+      - PMO-04.05.03 Definition of Ready and Done: forms/en/04_Planning/05_Quality/04_05_03_Definition_of_Ready_and_Done_Template.md
+    - 06. Resource Management:
+      - PMO-04.06.01 Resource Management Plan: forms/en/04_Planning/06_Resource/04_06_01_Resource_Management_Plan_Template.md
+      - PMO-04.06.02 Resource Requirements: forms/en/04_Planning/06_Resource/04_06_02_Resource_Requirements_Template.md
+      - PMO-04.06.03 Resource Breakdown Structure: forms/en/04_Planning/06_Resource/04_06_03_Resource_Breakdown_Structure_Template.md
+      - PMO-04.06.04 Responsibility Assignment Matrix: forms/en/04_Planning/06_Resource/04_06_04_Responsibility_Assignment_Matrix_Template.md
+      - PMO-04.06.05 Team Charter: forms/en/04_Planning/06_Resource/04_06_05_Team_Charter_Template.md
+      - PMO-04.06.06 Team Psychological Safety and Wellbeing Index: forms/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Template.md
+    - 07. Communications Management:
+      - PMO-04.07.01 Communications Management Plan: forms/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Template.md
+    - 08. Risk Management:
+      - PMO-04.08.01 Risk Management Plan: forms/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Template.md
+      - PMO-04.08.02 Risk Register: forms/en/04_Planning/08_Risk/04_08_02_Risk_Register_Template.md
+      - PMO-04.08.03 Probability and Impact Assessment: forms/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Template.md
+      - PMO-04.08.04 Probability and Impact Matrix: forms/en/04_Planning/08_Risk/04_08_04_Probability_and_Impact_Matrix_Template.md
+      - PMO-04.08.05 Risk Data Sheet: forms/en/04_Planning/08_Risk/04_08_05_Risk_Data_Sheet_Template.md
+      - PMO-04.08.06 Risk Report: forms/en/04_Planning/08_Risk/04_08_06_Risk_Report_Template.md
+      - PMO-04.08.07 Risk Mitigation Action Plan: forms/en/04_Planning/08_Risk/04_08_07_Risk_Mitigation_Action_Plan_Template.md
+    - 09. Procurement Management:
+      - PMO-04.09.01 Procurement Management Plan: forms/en/04_Planning/09_Procurement/04_09_01_Procurement_Management_Plan_Template.md
+      - PMO-04.09.02 Procurement Strategy: forms/en/04_Planning/09_Procurement/04_09_02_Procurement_Strategy_Template.md
+      - PMO-04.09.03 Source Selection Criteria: forms/en/04_Planning/09_Procurement/04_09_03_Source_Selection_Criteria_Template.md
+      - PMO-04.09.04 Statement of Work SOW: forms/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Template.md
+      - PMO-04.09.05 Request for Proposal RFP: forms/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.md
+    - 10. Stakeholder Management:
+      - PMO-04.10.01 Stakeholder Engagement Plan: forms/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Template.md
+    - 11. Organizational Change Management:
+      - PMO-04.11.01 OCM Strategy and Plan: forms/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Template.md
+      - PMO-04.11.02 Training Plan and Log: forms/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.md
+    - 12. Sustainability & ESG:
+      - PMO-04.12.01 Sustainability and ESG Management Plan: forms/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.md
+  - 05. Executing:
+    - PMO-05.01 Issue Log: forms/en/05_Executing/05_01_Issue_Log_Template.md
+    - PMO-05.02 Decision Log: forms/en/05_Executing/05_02_Decision_Log_Template.md
+    - PMO-05.03 Change Request: forms/en/05_Executing/05_03_Change_Request_Template.md
+    - PMO-05.04 Change Log: forms/en/05_Executing/05_04_Change_Log_Template.md
+    - PMO-05.05 Quality Audit: forms/en/05_Executing/05_05_Quality_Audit_Template.md
+    - PMO-05.06 Team Performance Assessment: forms/en/05_Executing/05_06_Team_Performance_Assessment_Template.md
+    - PMO-05.07 Lessons Learned Register: forms/en/05_Executing/05_07_Lessons_Learned_Register_Template.md
+    - PMO-05.08 Retrospective: forms/en/05_Executing/05_08_Retrospective_Template.md
+    - PMO-05.09 Prompt Library Log: forms/en/05_Executing/05_09_Prompt_Library_Log_Template.md
+    - PMO-05.10 Impediment Log: forms/en/05_Executing/05_10_Impediment_Log_Template.md
+    - PMO-05.11 Meeting Minutes: forms/en/05_Executing/05_11_Meeting_Minutes_Template.md
+    - PMO-05.12 Team Onboarding Checklist: forms/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.md
+  - 06. Monitoring & Controlling:
+    - PMO-06.01 Project Status Report: forms/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Template.md
+    - PMO-06.02 Team Member Status Report: forms/en/06_Monitoring_and_Controlling/06_02_Team_Member_Status_Report_Template.md
+    - PMO-06.03 Contractor Status Report: forms/en/06_Monitoring_and_Controlling/06_03_Contractor_Status_Report_Template.md
+    - PMO-06.04 Variance Analysis: forms/en/06_Monitoring_and_Controlling/06_04_Variance_Analysis_Template.md
+    - PMO-06.05 Earned Value Analysis: forms/en/06_Monitoring_and_Controlling/06_05_Earned_Value_Analysis_Template.md
+    - PMO-06.06 Risk Audit: forms/en/06_Monitoring_and_Controlling/06_06_Risk_Audit_Template.md
+    - PMO-06.07 Procurement Audit: forms/en/06_Monitoring_and_Controlling/06_07_Procurement_Audit_Template.md
+    - PMO-06.08 Product Acceptance Form: forms/en/06_Monitoring_and_Controlling/06_08_Product_Acceptance_Form_Template.md
+    - PMO-06.09 Vendor Performance Scorecard: forms/en/06_Monitoring_and_Controlling/06_09_Vendor_Performance_Scorecard_Template.md
+    - PMO-06.10 User Acceptance Testing Signoff: forms/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Template.md
+    - PMO-06.11 Project Health Check: forms/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Template.md
+    - PMO-06.12 Flow Metrics and Value Stream: forms/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.md
+  - 07. Closing:
+    - PMO-07.01 Lessons Learned Summary: forms/en/07_Closing/07_01_Lessons_Learned_Summary_Template.md
+    - PMO-07.02 Contract Closeout Report: forms/en/07_Closing/07_02_Contract_Closeout_Report_Template.md
+    - PMO-07.03 Project or Phase Closeout: forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.md
+    - PMO-07.04 Transition to Operations Checklist: forms/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.md
+    - PMO-07.05 Post Implementation Review: forms/en/07_Closing/07_05_Post_Implementation_Review_Template.md
+- 🚪 Governance & Stage-Gates:
+  - 04. Stage-Gates & Governance: en/04_stage_gates_and_governance.md
+  - 01. Getting Started: en/01_getting_started.md
+  - 02. Usage Guide: en/02_usage_guide.md
+  - 03. PMO Policy Manual: en/03_pmo_policy_manual.md
+  - 05. Tailoring Profiles: en/05_tailoring_profiles.md
+  - 06. RACI Authority Matrix: en/06_raci_authority_matrix.md
+  - 07. Document Dependencies: en/07_document_dependencies.md
+  - 09. Agile & Hybrid Integration: en/09_agile_hybrid_integration.md
+- 📑 Deliverables Catalog: catalog/en/index.md
+- 💻 Developer & AI Hub:
+  - 11. Tools & Automation: en/11_tools_and_automation.md
+  - 08. AI Governance Framework: en/08_ai_governance_framework.md
+  - 10. FAQ & Troubleshooting: en/10_faq_and_troubleshooting.md
+  - 12. Open Knowledge Framework: en/12_open_knowledge_framework.md
+  - 📖 Master Bilingual Lexicon: LEXICON.md
+- 🇸🇦 البوابة العربية:
   - الرئيسية ودليل الانطلاق: README_AR.md
   - 📑 الفهرس التفاعلي الشامل: catalog/ar/index.md
-  - 📚 الأدلة والسياسات الحوكمية (01-12):
+  - 📚 الأدلة والسياسات الحوكمية:
     - 01. دليل البدء السريع: ar/01_getting_started.md
     - 02. دليل الممارس الشامل: ar/02_usage_guide.md
     - 03. دليل سياسات PMO: ar/03_pmo_policy_manual.md
@@ -478,7 +233,7 @@ nav:
     - 09. دليل المنهجيات الرشيقة والهجينة: ar/09_agile_hybrid_integration.md
     - 10. الأسئلة الشائعة وحل المشكلات: ar/10_faq_and_troubleshooting.md
     - 11. دليل الأدوات والأتمتة: ar/11_tools_and_automation.md
-    - 12. معيار مؤسسة المعرفة المفتوحة (OKF): ar/12_open_knowledge_framework.md
+    - 12. معيار المعرفة المفتوحة (OKF): ar/12_open_knowledge_framework.md
   - 📋 مكتبة القوالب والنماذج:
     - الفهرس العام للقوالب: forms/ar/index.md
     - 00. إدارة البرامج والمحافظ:
@@ -603,253 +358,4 @@ nav:
       - PMO-07.03 إغلاق المشروع أو المرحلة: forms/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_قالب.md
       - PMO-07.04 قائمة التحقق للانتقال إلى العمليات: forms/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_قالب.md
       - PMO-07.05 مراجعة ما بعد التنفيذ: forms/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_قالب.md
-  - 📖 أدلة إعداد النماذج:
-    - الفهرس العام للأدلة: guides/ar/index.md
-    - 00. إدارة البرامج والمحافظ:
-      - PMO-00.01 خارطة طريق المحفظة: guides/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_دليل.md
-      - PMO-00.02 ميثاق البرنامج: guides/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_دليل.md
-      - PMO-00.03 سجل الاعتماديات المتبادلة: guides/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_دليل.md
-      - PMO-00.04 مصفوفة سعة الموارد: guides/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_دليل.md
-      - PMO-00.05 تقييم نضج مكتب إدارة المشاريع: guides/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_دليل.md
-      - PMO-00.06 مصفوفة مواءمة الأهداف والنتائج الرئيسية: guides/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_دليل.md
-    - 01. الأعمال وتسليم القيمة:
-      - PMO-01.01 دراسة الجدوى (Business Case): guides/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_دليل.md
-      - PMO-01.02 خطة إدارة الفوائد: guides/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_دليل.md
-      - PMO-01.03 سجل تحقيق القيمة: guides/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_دليل.md
-      - PMO-01.04 تقرير تحليل الفجوات: guides/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_دليل.md
-    - 02. منهجية المشروع وتخصيصه:
-      - PMO-02.01 خطة التخصيص: guides/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_دليل.md
-      - PMO-02.02 خطة حوكمة الذكاء الاصطناعي: guides/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_دليل.md
-      - PMO-02.03 تقييم جاهزية الذكاء الاصطناعي: guides/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_دليل.md
-      - PMO-02.04 نموذج حالة استخدام الذكاء الاصطناعي: guides/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_دليل.md
-      - PMO-02.05 بطاقة نموذج الذكاء الاصطناعي: guides/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.md
-      - PMO-02.06 تقييم خصوصية البيانات وأخلاقياتها: guides/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_دليل.md
-    - 03. البدء:
-      - PMO-03.01 ميثاق المشروع: guides/ar/03_البدء/03_01_ميثاق_المشروع_دليل.md
-      - PMO-03.02 رؤية المنتج: guides/ar/03_البدء/03_02_رؤية_المنتج_دليل.md
-      - PMO-03.03 سجل الافتراضات: guides/ar/03_البدء/03_03_سجل_الافتراضات_دليل.md
-      - PMO-03.04 سجل المعنيين: guides/ar/03_البدء/03_04_سجل_المعنيين_دليل.md
-      - PMO-03.05 تحليل المعنيين: guides/ar/03_البدء/03_05_تحليل_المعنيين_دليل.md
-    - 04. التخطيط:
-      - 01. إدارة التكامل:
-        - PMO-04.01.01 خطة إدارة المشروع: guides/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_دليل.md
-        - PMO-04.01.02 خطة إدارة التغيير: guides/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_دليل.md
-        - PMO-04.01.03 خارطة طريق المشروع: guides/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_دليل.md
-      - 02. إدارة النطاق:
-        - PMO-04.02.01 خطة إدارة النطاق: guides/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_دليل.md
-        - PMO-04.02.02 خطة إدارة المتطلبات: guides/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_دليل.md
-        - PMO-04.02.03 وثائق المتطلبات: guides/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_دليل.md
-        - PMO-04.02.04 مصفوفة تتبع المتطلبات: guides/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_دليل.md
-        - PMO-04.02.05 بيان نطاق المشروع: guides/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_دليل.md
-        - PMO-04.02.06 هيكل تجزئة العمل: guides/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_دليل.md
-        - PMO-04.02.07 قاموس هيكل تجزئة العمل: guides/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_دليل.md
-        - PMO-04.02.08 قائمة تراكم المنتج (Product Backlog): guides/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_دليل.md
-        - PMO-04.02.09 نموذج تخطيط قصص المستخدم: guides/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_دليل.md
-      - 03. إدارة الجدول الزمني:
-        - PMO-04.03.01 خطة إدارة الجدول الزمني: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_دليل.md
-        - PMO-04.03.02 قائمة الأنشطة: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_دليل.md
-        - PMO-04.03.03 سمات النشاط: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_دليل.md
-        - PMO-04.03.04 قائمة المعالم (Milestones): guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_دليل.md
-        - PMO-04.03.05 المخطط الشبكي: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_دليل.md
-        - PMO-04.03.06 تقديرات المدة: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_دليل.md
-        - PMO-04.03.07 ورقة عمل تقدير المدة: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_دليل.md
-        - PMO-04.03.08 الجدول الزمني للمشروع: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_دليل.md
-        - PMO-04.03.09 خطة الإصدار: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_دليل.md
-        - PMO-04.03.10 سجل تخطيط أسبوع العمل: guides/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_دليل.md
-      - 04. إدارة التكلفة:
-        - PMO-04.04.01 خطة إدارة التكلفة: guides/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_دليل.md
-        - PMO-04.04.02 تقديرات التكلفة: guides/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_دليل.md
-        - PMO-04.04.03 ورقة عمل تقدير التكلفة: guides/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_دليل.md
-        - PMO-04.04.04 الخط المرجعي للتكلفة: guides/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_دليل.md
-      - 05. إدارة الجودة:
-        - PMO-04.05.01 خطة إدارة الجودة: guides/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_دليل.md
-        - PMO-04.05.02 مقاييس الجودة: guides/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_دليل.md
-        - PMO-04.05.03 تعريف الجاهزية والاكتمال: guides/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_دليل.md
-      - 06. إدارة الموارد:
-        - PMO-04.06.01 خطة إدارة الموارد: guides/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_دليل.md
-        - PMO-04.06.02 متطلبات الموارد: guides/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_دليل.md
-        - PMO-04.06.03 هيكل تجزئة الموارد (RBS): guides/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_دليل.md
-        - PMO-04.06.04 مصفوفة تعيين المسؤوليات (RAM): guides/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_دليل.md
-        - PMO-04.06.05 ميثاق الفريق: guides/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_دليل.md
-        - PMO-04.06.06 مؤشر الأمان النفسي وصحة الفريق: guides/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_دليل.md
-      - 07. إدارة التواصل:
-        - PMO-04.07.01 خطة إدارة الاتصالات: guides/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_دليل.md
-      - 08. إدارة المخاطر:
-        - PMO-04.08.01 خطة إدارة المخاطر: guides/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_دليل.md
-        - PMO-04.08.02 سجل المخاطر: guides/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_دليل.md
-        - PMO-04.08.03 تقييم الاحتمالية والأثر: guides/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_دليل.md
-        - PMO-04.08.04 مصفوفة الاحتمالية والأثر: guides/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_دليل.md
-        - PMO-04.08.05 ورقة بيانات المخاطر: guides/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_دليل.md
-        - PMO-04.08.06 تقرير المخاطر: guides/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_دليل.md
-        - PMO-04.08.07 خطة عمل التخفيف من المخاطر: guides/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_دليل.md
-      - 09. إدارة المشتريات:
-        - PMO-04.09.01 خطة إدارة المشتريات: guides/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_دليل.md
-        - PMO-04.09.02 استراتيجية المشتريات: guides/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_دليل.md
-        - PMO-04.09.03 معايير اختيار المصدر: guides/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_دليل.md
-        - PMO-04.09.04 بيان العمل (SOW): guides/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_دليل.md
-        - PMO-04.09.05 طلب تقديم عروض (RFP): guides/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_دليل.md
-      - 10. إدارة المعنيين:
-        - PMO-04.10.01 خطة إشراك المعنيين: guides/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_دليل.md
-      - 11. إدارة التغيير المؤسسي:
-        - PMO-04.11.01 استراتيجية وخطة إدارة التغيير المؤسسي: guides/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_دليل.md
-        - PMO-04.11.02 خطة وسجل التدريب: guides/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_دليل.md
-      - 12. الاستدامة والمعايير البيئية والحوكمة:
-        - PMO-04.12.01 خطة إدارة الاستدامة والمعايير البيئية والاجتماعية والحوكمة: guides/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_دليل.md
-    - 05. التنفيذ:
-      - PMO-05.01 سجل المشكلات: guides/ar/05_التنفيذ/05_01_سجل_المشكلات_دليل.md
-      - PMO-05.02 سجل القرارات: guides/ar/05_التنفيذ/05_02_سجل_القرارات_دليل.md
-      - PMO-05.03 طلب تغيير: guides/ar/05_التنفيذ/05_03_طلب_تغيير_دليل.md
-      - PMO-05.04 سجل التغييرات: guides/ar/05_التنفيذ/05_04_سجل_التغييرات_دليل.md
-      - PMO-05.05 تدقيق الجودة: guides/ar/05_التنفيذ/05_05_تدقيق_الجودة_دليل.md
-      - PMO-05.06 تقييم أداء الفريق: guides/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_دليل.md
-      - PMO-05.07 سجل الدروس المستفادة: guides/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_دليل.md
-      - PMO-05.08 مراجعة المرحلة (Retrospective): guides/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_دليل.md
-      - PMO-05.09 سجل مكتبة الأوامر (Prompts): guides/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_دليل.md
-      - PMO-05.10 سجل العوائق: guides/ar/05_التنفيذ/05_10_سجل_العوائق_دليل.md
-      - PMO-05.11 محضر الاجتماع: guides/ar/05_التنفيذ/05_11_محضر_الاجتماع_دليل.md
-      - PMO-05.12 قائمة التحقق لتهيئة فريق العمل: guides/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_دليل.md
-    - 06. المراقبة والتحكم:
-      - PMO-06.01 تقرير حالة المشروع: guides/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_دليل.md
-      - PMO-06.02 تقرير حالة عضو الفريق: guides/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_دليل.md
-      - PMO-06.03 تقرير حالة المقاول: guides/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_دليل.md
-      - PMO-06.04 تحليل التباين: guides/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_دليل.md
-      - PMO-06.05 تحليل القيمة المكتسبة (EVA): guides/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_دليل.md
-      - PMO-06.06 تدقيق المخاطر: guides/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_دليل.md
-      - PMO-06.07 تدقيق المشتريات: guides/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_دليل.md
-      - PMO-06.08 نموذج قبول المنتج: guides/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_دليل.md
-      - PMO-06.09 بطاقة أداء المورد: guides/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_دليل.md
-      - PMO-06.10 نموذج اعتماد اختبار قبول المستخدم (UAT): guides/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_دليل.md
-      - PMO-06.11 الفحص الصحي للمشروع: guides/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_دليل.md
-      - PMO-06.12 مقاييس التدفق وتدفق القيمة: guides/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_دليل.md
-    - 07. الإغلاق:
-      - PMO-07.01 ملخص الدروس المستفادة: guides/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_دليل.md
-      - PMO-07.02 تقرير إغلاق العقد: guides/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_دليل.md
-      - PMO-07.03 إغلاق المشروع أو المرحلة: guides/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_دليل.md
-      - PMO-07.04 قائمة التحقق للانتقال إلى العمليات: guides/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_دليل.md
-      - PMO-07.05 مراجعة ما بعد التنفيذ: guides/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_دليل.md
-  - 💡 معرض الأمثلة الواقعية:
-    - معرض دراسات الحالة: examples/ar/index.md
-    - 00. إدارة البرامج والمحافظ:
-      - PMO-00.01 خارطة طريق المحفظة: examples/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_مثال.md
-      - PMO-00.02 ميثاق البرنامج: examples/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_مثال.md
-      - PMO-00.03 سجل الاعتماديات المتبادلة: examples/ar/00_إدارة_البرامج_والمحافظ/00_03_سجل_الاعتماديات_المتبادلة_مثال.md
-      - PMO-00.04 مصفوفة سعة الموارد: examples/ar/00_إدارة_البرامج_والمحافظ/00_04_مصفوفة_سعة_الموارد_مثال.md
-      - PMO-00.05 تقييم نضج مكتب إدارة المشاريع: examples/ar/00_إدارة_البرامج_والمحافظ/00_05_تقييم_نضج_مكتب_إدارة_المشاريع_مثال.md
-      - PMO-00.06 مصفوفة مواءمة الأهداف والنتائج الرئيسية: examples/ar/00_إدارة_البرامج_والمحافظ/00_06_مصفوفة_مواءمة_الأهداف_والنتائج_الرئيسية_مثال.md
-    - 01. الأعمال وتسليم القيمة:
-      - PMO-01.01 دراسة الجدوى (Business Case): examples/ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_مثال.md
-      - PMO-01.02 خطة إدارة الفوائد: examples/ar/01_الأعمال_وتسليم_القيمة/01_02_خطة_إدارة_الفوائد_مثال.md
-      - PMO-01.03 سجل تحقيق القيمة: examples/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_مثال.md
-      - PMO-01.04 تقرير تحليل الفجوات: examples/ar/01_الأعمال_وتسليم_القيمة/01_04_تقرير_تحليل_الفجوات_مثال.md
-    - 02. منهجية المشروع وتخصيصه:
-      - PMO-02.01 خطة التخصيص: examples/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_مثال.md
-      - PMO-02.02 خطة حوكمة الذكاء الاصطناعي: examples/ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_مثال.md
-      - PMO-02.03 تقييم جاهزية الذكاء الاصطناعي: examples/ar/02_منهجية_المشروع_وتخصيصه/02_03_تقييم_جاهزية_الذكاء_الاصطناعي_مثال.md
-      - PMO-02.04 نموذج حالة استخدام الذكاء الاصطناعي: examples/ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_مثال.md
-      - PMO-02.05 بطاقة نموذج الذكاء الاصطناعي: examples/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.md
-      - PMO-02.06 تقييم خصوصية البيانات وأخلاقياتها: examples/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_مثال.md
-    - 03. البدء:
-      - PMO-03.01 ميثاق المشروع: examples/ar/03_البدء/03_01_ميثاق_المشروع_مثال.md
-      - PMO-03.02 رؤية المنتج: examples/ar/03_البدء/03_02_رؤية_المنتج_مثال.md
-      - PMO-03.03 سجل الافتراضات: examples/ar/03_البدء/03_03_سجل_الافتراضات_مثال.md
-      - PMO-03.04 سجل المعنيين: examples/ar/03_البدء/03_04_سجل_المعنيين_مثال.md
-      - PMO-03.05 تحليل المعنيين: examples/ar/03_البدء/03_05_تحليل_المعنيين_مثال.md
-    - 04. التخطيط:
-      - 01. إدارة التكامل:
-        - PMO-04.01.01 خطة إدارة المشروع: examples/ar/04_التخطيط/01_التكامل/04_01_01_خطة_إدارة_المشروع_مثال.md
-        - PMO-04.01.02 خطة إدارة التغيير: examples/ar/04_التخطيط/01_التكامل/04_01_02_خطة_إدارة_التغيير_مثال.md
-        - PMO-04.01.03 خارطة طريق المشروع: examples/ar/04_التخطيط/01_التكامل/04_01_03_خارطة_طريق_المشروع_مثال.md
-      - 02. إدارة النطاق:
-        - PMO-04.02.01 خطة إدارة النطاق: examples/ar/04_التخطيط/02_النطاق/04_02_01_خطة_إدارة_النطاق_مثال.md
-        - PMO-04.02.02 خطة إدارة المتطلبات: examples/ar/04_التخطيط/02_النطاق/04_02_02_خطة_إدارة_المتطلبات_مثال.md
-        - PMO-04.02.03 وثائق المتطلبات: examples/ar/04_التخطيط/02_النطاق/04_02_03_وثائق_المتطلبات_مثال.md
-        - PMO-04.02.04 مصفوفة تتبع المتطلبات: examples/ar/04_التخطيط/02_النطاق/04_02_04_مصفوفة_تتبع_المتطلبات_مثال.md
-        - PMO-04.02.05 بيان نطاق المشروع: examples/ar/04_التخطيط/02_النطاق/04_02_05_بيان_نطاق_المشروع_مثال.md
-        - PMO-04.02.06 هيكل تجزئة العمل: examples/ar/04_التخطيط/02_النطاق/04_02_06_هيكل_تجزئة_العمل_مثال.md
-        - PMO-04.02.07 قاموس هيكل تجزئة العمل: examples/ar/04_التخطيط/02_النطاق/04_02_07_قاموس_هيكل_تجزئة_العمل_مثال.md
-        - PMO-04.02.08 قائمة تراكم المنتج (Product Backlog): examples/ar/04_التخطيط/02_النطاق/04_02_08_قائمة_تراكم_المنتج_(Product_Backlog)_مثال.md
-        - PMO-04.02.09 نموذج تخطيط قصص المستخدم: examples/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_مثال.md
-      - 03. إدارة الجدول الزمني:
-        - PMO-04.03.01 خطة إدارة الجدول الزمني: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_01_خطة_إدارة_الجدول_الزمني_مثال.md
-        - PMO-04.03.02 قائمة الأنشطة: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_02_قائمة_الأنشطة_مثال.md
-        - PMO-04.03.03 سمات النشاط: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_03_سمات_النشاط_مثال.md
-        - PMO-04.03.04 قائمة المعالم (Milestones): examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_04_قائمة_المعالم_(Milestones)_مثال.md
-        - PMO-04.03.05 المخطط الشبكي: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_05_المخطط_الشبكي_مثال.md
-        - PMO-04.03.06 تقديرات المدة: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_06_تقديرات_المدة_مثال.md
-        - PMO-04.03.07 ورقة عمل تقدير المدة: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_07_ورقة_عمل_تقدير_المدة_مثال.md
-        - PMO-04.03.08 الجدول الزمني للمشروع: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_08_الجدول_الزمني_للمشروع_مثال.md
-        - PMO-04.03.09 خطة الإصدار: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_09_خطة_الإصدار_مثال.md
-        - PMO-04.03.10 سجل تخطيط أسبوع العمل: examples/ar/04_التخطيط/03_الجدول_الزمني/04_03_10_سجل_تخطيط_أسبوع_العمل_مثال.md
-      - 04. إدارة التكلفة:
-        - PMO-04.04.01 خطة إدارة التكلفة: examples/ar/04_التخطيط/04_التكلفة/04_04_01_خطة_إدارة_التكلفة_مثال.md
-        - PMO-04.04.02 تقديرات التكلفة: examples/ar/04_التخطيط/04_التكلفة/04_04_02_تقديرات_التكلفة_مثال.md
-        - PMO-04.04.03 ورقة عمل تقدير التكلفة: examples/ar/04_التخطيط/04_التكلفة/04_04_03_ورقة_عمل_تقدير_التكلفة_مثال.md
-        - PMO-04.04.04 الخط المرجعي للتكلفة: examples/ar/04_التخطيط/04_التكلفة/04_04_04_الخط_المرجعي_للتكلفة_مثال.md
-      - 05. إدارة الجودة:
-        - PMO-04.05.01 خطة إدارة الجودة: examples/ar/04_التخطيط/05_الجودة/04_05_01_خطة_إدارة_الجودة_مثال.md
-        - PMO-04.05.02 مقاييس الجودة: examples/ar/04_التخطيط/05_الجودة/04_05_02_مقاييس_الجودة_مثال.md
-        - PMO-04.05.03 تعريف الجاهزية والاكتمال: examples/ar/04_التخطيط/05_الجودة/04_05_03_تعريف_الجاهزية_والاكتمال_مثال.md
-      - 06. إدارة الموارد:
-        - PMO-04.06.01 خطة إدارة الموارد: examples/ar/04_التخطيط/06_الموارد/04_06_01_خطة_إدارة_الموارد_مثال.md
-        - PMO-04.06.02 متطلبات الموارد: examples/ar/04_التخطيط/06_الموارد/04_06_02_متطلبات_الموارد_مثال.md
-        - PMO-04.06.03 هيكل تجزئة الموارد (RBS): examples/ar/04_التخطيط/06_الموارد/04_06_03_هيكل_تجزئة_الموارد_(RBS)_مثال.md
-        - PMO-04.06.04 مصفوفة تعيين المسؤوليات (RAM): examples/ar/04_التخطيط/06_الموارد/04_06_04_مصفوفة_تعيين_المسؤوليات_(RAM)_مثال.md
-        - PMO-04.06.05 ميثاق الفريق: examples/ar/04_التخطيط/06_الموارد/04_06_05_ميثاق_الفريق_مثال.md
-        - PMO-04.06.06 مؤشر الأمان النفسي وصحة الفريق: examples/ar/04_التخطيط/06_الموارد/04_06_06_مؤشر_الأمان_النفسي_وصحة_الفريق_مثال.md
-      - 07. إدارة التواصل:
-        - PMO-04.07.01 خطة إدارة الاتصالات: examples/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_مثال.md
-      - 08. إدارة المخاطر:
-        - PMO-04.08.01 خطة إدارة المخاطر: examples/ar/04_التخطيط/08_المخاطر/04_08_01_خطة_إدارة_المخاطر_مثال.md
-        - PMO-04.08.02 سجل المخاطر: examples/ar/04_التخطيط/08_المخاطر/04_08_02_سجل_المخاطر_مثال.md
-        - PMO-04.08.03 تقييم الاحتمالية والأثر: examples/ar/04_التخطيط/08_المخاطر/04_08_03_تقييم_الاحتمالية_والأثر_مثال.md
-        - PMO-04.08.04 مصفوفة الاحتمالية والأثر: examples/ar/04_التخطيط/08_المخاطر/04_08_04_مصفوفة_الاحتمالية_والأثر_مثال.md
-        - PMO-04.08.05 ورقة بيانات المخاطر: examples/ar/04_التخطيط/08_المخاطر/04_08_05_ورقة_بيانات_المخاطر_مثال.md
-        - PMO-04.08.06 تقرير المخاطر: examples/ar/04_التخطيط/08_المخاطر/04_08_06_تقرير_المخاطر_مثال.md
-        - PMO-04.08.07 خطة عمل التخفيف من المخاطر: examples/ar/04_التخطيط/08_المخاطر/04_08_07_خطة_عمل_التخفيف_من_المخاطر_مثال.md
-      - 09. إدارة المشتريات:
-        - PMO-04.09.01 خطة إدارة المشتريات: examples/ar/04_التخطيط/09_المشتريات/04_09_01_خطة_إدارة_المشتريات_مثال.md
-        - PMO-04.09.02 استراتيجية المشتريات: examples/ar/04_التخطيط/09_المشتريات/04_09_02_استراتيجية_المشتريات_مثال.md
-        - PMO-04.09.03 معايير اختيار المصدر: examples/ar/04_التخطيط/09_المشتريات/04_09_03_معايير_اختيار_المصدر_مثال.md
-        - PMO-04.09.04 بيان العمل (SOW): examples/ar/04_التخطيط/09_المشتريات/04_09_04_بيان_العمل_(SOW)_مثال.md
-        - PMO-04.09.05 طلب تقديم عروض (RFP): examples/ar/04_التخطيط/09_المشتريات/04_09_05_طلب_تقديم_عروض_(RFP)_مثال.md
-      - 10. إدارة المعنيين:
-        - PMO-04.10.01 خطة إشراك المعنيين: examples/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_مثال.md
-      - 11. إدارة التغيير المؤسسي:
-        - PMO-04.11.01 استراتيجية وخطة إدارة التغيير المؤسسي: examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_مثال.md
-        - PMO-04.11.02 خطة وسجل التدريب: examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/04_11_02_خطة_وسجل_التدريب_مثال.md
-      - 12. الاستدامة والمعايير البيئية والحوكمة:
-        - PMO-04.12.01 خطة إدارة الاستدامة والمعايير البيئية والاجتماعية والحوكمة: examples/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.md
-    - 05. التنفيذ:
-      - PMO-05.01 سجل المشكلات: examples/ar/05_التنفيذ/05_01_سجل_المشكلات_مثال.md
-      - PMO-05.02 سجل القرارات: examples/ar/05_التنفيذ/05_02_سجل_القرارات_مثال.md
-      - PMO-05.03 طلب تغيير: examples/ar/05_التنفيذ/05_03_طلب_تغيير_مثال.md
-      - PMO-05.04 سجل التغييرات: examples/ar/05_التنفيذ/05_04_سجل_التغييرات_مثال.md
-      - PMO-05.05 تدقيق الجودة: examples/ar/05_التنفيذ/05_05_تدقيق_الجودة_مثال.md
-      - PMO-05.06 تقييم أداء الفريق: examples/ar/05_التنفيذ/05_06_تقييم_أداء_الفريق_مثال.md
-      - PMO-05.07 سجل الدروس المستفادة: examples/ar/05_التنفيذ/05_07_سجل_الدروس_المستفادة_مثال.md
-      - PMO-05.08 مراجعة المرحلة (Retrospective): examples/ar/05_التنفيذ/05_08_مراجعة_المرحلة_(Retrospective)_مثال.md
-      - PMO-05.09 سجل مكتبة الأوامر (Prompts): examples/ar/05_التنفيذ/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.md
-      - PMO-05.10 سجل العوائق: examples/ar/05_التنفيذ/05_10_سجل_العوائق_مثال.md
-      - PMO-05.11 محضر الاجتماع: examples/ar/05_التنفيذ/05_11_محضر_الاجتماع_مثال.md
-      - PMO-05.12 قائمة التحقق لتهيئة فريق العمل: examples/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.md
-    - 06. المراقبة والتحكم:
-      - PMO-06.01 تقرير حالة المشروع: examples/ar/06_المراقبة_والتحكم/06_01_تقرير_حالة_المشروع_مثال.md
-      - PMO-06.02 تقرير حالة عضو الفريق: examples/ar/06_المراقبة_والتحكم/06_02_تقرير_حالة_عضو_الفريق_مثال.md
-      - PMO-06.03 تقرير حالة المقاول: examples/ar/06_المراقبة_والتحكم/06_03_تقرير_حالة_المقاول_مثال.md
-      - PMO-06.04 تحليل التباين: examples/ar/06_المراقبة_والتحكم/06_04_تحليل_التباين_مثال.md
-      - PMO-06.05 تحليل القيمة المكتسبة (EVA): examples/ar/06_المراقبة_والتحكم/06_05_تحليل_القيمة_المكتسبة_(EVA)_مثال.md
-      - PMO-06.06 تدقيق المخاطر: examples/ar/06_المراقبة_والتحكم/06_06_تدقيق_المخاطر_مثال.md
-      - PMO-06.07 تدقيق المشتريات: examples/ar/06_المراقبة_والتحكم/06_07_تدقيق_المشتريات_مثال.md
-      - PMO-06.08 نموذج قبول المنتج: examples/ar/06_المراقبة_والتحكم/06_08_نموذج_قبول_المنتج_مثال.md
-      - PMO-06.09 بطاقة أداء المورد: examples/ar/06_المراقبة_والتحكم/06_09_بطاقة_أداء_المورد_مثال.md
-      - PMO-06.10 نموذج اعتماد اختبار قبول المستخدم (UAT): examples/ar/06_المراقبة_والتحكم/06_10_نموذج_اعتماد_اختبار_قبول_المستخدم_(UAT)_مثال.md
-      - PMO-06.11 الفحص الصحي للمشروع: examples/ar/06_المراقبة_والتحكم/06_11_الفحص_الصحي_للمشروع_مثال.md
-      - PMO-06.12 مقاييس التدفق وتدفق القيمة: examples/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_مثال.md
-    - 07. الإغلاق:
-      - PMO-07.01 ملخص الدروس المستفادة: examples/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_مثال.md
-      - PMO-07.02 تقرير إغلاق العقد: examples/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.md
-      - PMO-07.03 إغلاق المشروع أو المرحلة: examples/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_مثال.md
-      - PMO-07.04 قائمة التحقق للانتقال إلى العمليات: examples/ar/07_الإغلاق/07_04_قائمة_التحقق_للانتقال_إلى_العمليات_مثال.md
-      - PMO-07.05 مراجعة ما بعد التنفيذ: examples/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_مثال.md
-- 📖 Master Bilingual Lexicon: LEXICON.md
 

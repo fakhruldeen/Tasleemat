@@ -1,11 +1,3 @@
----
-type: Guide
-token_pointer: /_tokens/docs/forms/en/05_Executing/05_09_Prompt_Library_Log_Template.npy
-token_count: 1370
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:28.198025+00:00'
----
-
 <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
   <div class="lang-switch-actions">
@@ -30,6 +22,19 @@ created_at: '2026-10-06T16:05:28.198025+00:00'
 </div>
 
 ---
+
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/05_Executing/09_Prompt_Library_Log/05_09_Prompt_Library_Log_Template.npy
+token_count: 867
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.068247+00:00'
+form_id: PMO-05.09
+language: en
+status: approved
+---
+-->
 
 <!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
