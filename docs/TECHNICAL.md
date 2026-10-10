@@ -96,7 +96,7 @@ df_resources = pd.read_json("datapackage.json")
 
 ## 🧪 4. Automated Testing Suite
 
-Tasleemat features an extensive automated unit and integration test suite (`tests/`) covering 100% of all 102 forms, 204 reference examples, JSON schemas, OKF data packages, and CLI commands.
+Tasleemat features an extensive automated unit and integration test suite (`tests/`) covering 100% of all 114 forms, 228 reference examples, JSON schemas, OKF data packages, and CLI commands.
 
 ### Running Unit Tests
 ```bash
@@ -110,9 +110,9 @@ tasleemat test -v
 ### Test Suite Modules
 | Test Module | Coverage & Verification Scope |
 | :--- | :--- |
-| **`test_parity.py`** | 1:1 English/Arabic structural symmetry across all 8 phases and 102 form folders |
+| **`test_parity.py`** | 1:1 English/Arabic structural symmetry across all 8 phases and 114 form folders |
 | **`test_schemas.py`** | JSON schema parsing, top-level keys, field definitions, and JSON-CSV alignment |
-| **`test_okf_datapackage.py`** | Frictionless JSON Schema standard compliance for all 204 package resources |
+| **`test_okf_datapackage.py`** | Frictionless JSON Schema standard compliance for all 228 package resources |
 | **`test_governance_templates.py`** | Executive Document Control tables and relative link integrity |
 | **`test_fictional_compliance.py`** | Sample data integrity, non-empty content checks, zero unresolved placeholders |
 | **`test_cli_and_exporters.py`** | Multi-tier project scaffolding, parameter substitution, and catalog search |
@@ -122,7 +122,7 @@ tasleemat test -v
 
 ## 🛠️ 5. Documentation Architecture
 
-Tasleemat follows a pure **Repository-First** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](.) and [`forms/`](../forms/) directories as native GitHub-flavored Markdown.
+Tasleemat follows a pure **Repository-First** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](README.md) and [`forms/`](../forms/en/) directories as native GitHub-flavored Markdown.
 
 The previous GitHub Pages deployment portal has been retired. Documentation is directly accessible, searchable, and navigable within the repository.
 

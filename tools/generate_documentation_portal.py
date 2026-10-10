@@ -2344,10 +2344,7 @@ def compile_static_site(deliverables):
         shutil.rmtree(SITE_DIR)
     SITE_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Process TECHNICAL.md
-    tech_file = ROOT / "TECHNICAL.md"
-    if tech_file.exists():
-        shutil.copyfile(tech_file, DOCS_DIR / "TECHNICAL.md")
+    # Process TECHNICAL.md: do not overwrite docs/TECHNICAL.md with root TECHNICAL.md because relative paths differ
 
     # Generate tasleemat_data.js in docs/assets
     generate_tasleemat_data_js(deliverables)
