@@ -112,7 +112,7 @@ Core terminology aligned with the official PMI PMBOK® Lexicon and MENA governme
 | **Risk Appetite** | **القابلية للمخاطر** | The degree of uncertainty an organization or individual is willing to accept in anticipation of a reward. | Risk (04.08) | ISO 31000 |
 | **Contingency Reserve** | **احتياطي الطوارئ** | Time or budget allocated within the cost baseline for known-unknown risks managed by the Project Manager. | Cost (04.04) | PMBOK® 6th/7th |
 
-*For the complete bilingual lexicon of standardized project terminology, see [docs/LEXICON.md](LEXICON.md).*
+*For the complete interactive lexicon with instant search and filtering, visit the web portal at [developer.html](developer.html#lexicon) or [docs/LEXICON.md](LEXICON.md).*
 
 ---
 
@@ -125,7 +125,7 @@ If you utilize the Tasleemat framework or dataset in enterprise research, audit 
   author       = {Fakhruldeen, Mohamed (Fouad)},
   title        = {Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework},
   year         = {2026},
-  version      = {v2.0.2},
+  version      = {v2.3.0},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.23193523},
   url          = {https://doi.org/10.5281/zenodo.23193523}

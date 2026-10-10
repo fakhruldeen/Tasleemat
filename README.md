@@ -15,12 +15,13 @@ type: Overview
 #### *Aligned with PMI PMBOK® Guide (6th, 7th & 8th Edition Ready) Standards*
 
 [![PyPI version](https://badge.fury.io/py/tasleemat.svg?style=for-the-badge)](https://pypi.org/project/tasleemat/)
-[![Templates](https://img.shields.io/badge/Templates-114%20Bilingual%20Pairs%20(228%20Total)-059669?style=for-the-badge)](forms/)
+[![Live Portal](https://img.shields.io/badge/Live%20Portal-GitHub%20Pages-006a61?style=for-the-badge)](https://fakhruldeen.github.io/Tasleemat/)
+[![Templates](https://img.shields.io/badge/Templates-114%20Bilingual%20Pairs%20(228%20Total)-059669?style=for-the-badge)](https://fakhruldeen.github.io/Tasleemat/catalog/en/index.html)
 [![Language](https://img.shields.io/badge/Language-English%20%7C%20العربية-0052cc?style=for-the-badge)](README_AR.md)
 
 <br/>
 
-**[📚 Repository Documentation Index](docs/README.md)** • **[🇸🇦 النسخة العربية](README_AR.md)** • **[👔 PM Quick Start](docs/en/01_getting_started.md)** • **[📋 Browse Templates](forms/en/)** • **[🚪 Stage-Gates Guide](docs/en/04_stage_gates_and_governance.md)** • **[📖 Terminology Lexicon](docs/LEXICON.md)** • **[💻 Technical & Developer Guide](TECHNICAL.md)**
+**[🌐 Live Interactive Portal](https://fakhruldeen.github.io/Tasleemat/)** • **[📚 Repository Documentation](docs/README.md)** • **[🇸🇦 النسخة العربية](README_AR.md)** • **[👔 PM Quick Start](docs/en/01_getting_started.md)** • **[📋 Browse Templates](forms/en/)** • **[🚪 Stage-Gates Guide](docs/en/04_stage_gates_and_governance.md)** • **[📖 Terminology Lexicon](docs/LEXICON.md)** • **[💻 Technical & Developer Guide](TECHNICAL.md)**
 
 ---
 

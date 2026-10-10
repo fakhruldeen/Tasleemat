@@ -11,7 +11,7 @@ Directing work, managing issues, decision logs, change control, and team perform
 
 ---
 
-## 📑 Phase Templates (12 Artifacts)
+## 📑 Phase Templates (15 Artifacts)
 
 | Code | Deliverable Name | Template | Guide | Completed Example |
 | :---: | :--- | :---: | :---: | :---: |
@@ -27,3 +27,6 @@ Directing work, managing issues, decision logs, change control, and team perform
 | **`PMO-05.10`** | **Impediment Log** | [📋 Template](05_10_Impediment_Log_Template.md) | [📖 Guide](../../../guides/en/05_Executing/05_10_Impediment_Log_Guide.md) | [💡 Example](../../../examples/en/05_Executing/05_10_Impediment_Log_Example.md) |
 | **`PMO-05.11`** | **Meeting Minutes** | [📋 Template](05_11_Meeting_Minutes_Template.md) | [📖 Guide](../../../guides/en/05_Executing/05_11_Meeting_Minutes_Guide.md) | [💡 Example](../../../examples/en/05_Executing/05_11_Meeting_Minutes_Example.md) |
 | **`PMO-05.12`** | **Team Onboarding Checklist** | [📋 Template](05_12_Team_Onboarding_Checklist_Template.md) | [📖 Guide](../../../guides/en/05_Executing/05_12_Team_Onboarding_Checklist_Guide.md) | [💡 Example](../../../examples/en/05_Executing/05_12_Team_Onboarding_Checklist_Example.md) |
+| **`PMO-05.13`** | **Action Items Log** | [📋 Template](05_13_Action_Items_Log_Template.md) | [📖 Guide](../../../guides/en/05_Executing/05_13_Action_Items_Log_Guide.md) | [💡 Example](../../../examples/en/05_Executing/05_13_Action_Items_Log_Example.md) |
+| **`PMO-05.14`** | **Workstream Coordination and Standup Log** | [📋 Template](05_14_Workstream_Coordination_and_Standup_Log_Template.md) | [📖 Guide](../../../guides/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Guide.md) | [💡 Example](../../../examples/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Example.md) |
+| **`PMO-05.15`** | **Deliverable Technical Inspection Checklist** | [📋 Template](05_15_Deliverable_Technical_Inspection_Checklist_Template.md) | [📖 Guide](../../../guides/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Guide.md) | [💡 Example](../../../examples/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Example.md) |

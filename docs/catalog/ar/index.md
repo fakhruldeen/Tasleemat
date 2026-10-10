@@ -8,7 +8,7 @@
 
 # 📑 الفهرس العام والمستكشف التفاعلي للمخرجات والنماذج
 **التوافق مع المعايير:** معهد إدارة المشاريع PMI PMBOK® الإصدارات 6 و 7 و 8 • أخلاقيات الذكاء الاصطناعي (سدايا) • ISO 21500  
-**إجمالي المخرجات:** 102 مخرجاً إدارياً ثنائياً (204 قوالب قياسية • 204 أدلة إرشادية • 204 دراسات حالة وأمثلة واقعية)
+**إجمالي المخرجات:** 114 مخرجاً إدارياً ثنائياً (228 قالباً قياسياً • 228 دليلاً إرشادياً • 228 دراسة حالة وأمثلة واقعية)
 
 ---
 
@@ -18,7 +18,7 @@
     
     <div class="explorer-filter-group">
       <span class="explorer-filter-label">المرحلة:</span>
-      <button class="filter-chip filter-phase-btn active" data-phase="all">الكل (102)</button>
+      <button class="filter-chip filter-phase-btn active" data-phase="all">الكل (114)</button>
       <button class="filter-chip filter-phase-btn" data-phase="00">00. البرامج والمحافظ (6)</button>
       <button class="filter-chip filter-phase-btn" data-phase="01">01. الأعمال والقيمة (4)</button>
       <button class="filter-chip filter-phase-btn" data-phase="02">02. التخصيص والمنهجية (6)</button>
@@ -39,7 +39,7 @@
     </div>
 
     <div class="explorer-filter-group" style="justify-content: space-between; margin-top: 6px;">
-      <span style="font-size: 0.86rem; color: var(--text-muted); font-weight: 600;">يتم عرض <span id="results-count" style="color: var(--brand-primary); font-weight: 800;">102</span> نموذجاً</span>
+      <span style="font-size: 0.86rem; color: var(--text-muted); font-weight: 600;">يتم عرض <span id="results-count" style="color: var(--brand-primary); font-weight: 800;">114</span> نموذجاً</span>
       <div style="display: flex; gap: 6px;">
         <button class="filter-chip view-toggle-btn active" data-view="cards">🗂️ عرض البطاقات</button>
         <button class="filter-chip view-toggle-btn" data-view="table">📊 عرض الجدول</button>
@@ -1017,6 +1017,23 @@
         <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.07.02 communications distribution matrix مصفوفة توزيع وقنوات التواصل 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-04.07.02</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>مصفوفة توزيع وقنوات التواصل</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Communications Distribution Matrix</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/07_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/04_التخطيط/07_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/04_التخطيط/07_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.01 risk management plan خطة إدارة المخاطر 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1238,6 +1255,23 @@
         <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.10.02 stakeholder engagement assessment matrix مصفوفة تقييم انخراط المعنيين 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-04.10.02</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>مصفوفة تقييم انخراط المعنيين</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Stakeholder Engagement Assessment Matrix</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/10_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/04_التخطيط/10_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/04_التخطيط/10_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.11.01 ocm strategy and plan استراتيجية وخطة إدارة التغيير المؤسسي 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1287,6 +1321,23 @@
         <a class="card-action-link" href="../../guides/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.html">💡 مثال واقعي</a>
         <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.13.01 information security and compliance plan خطة أمن المعلومات والامتثال التنظيمي 04. التخطيط tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-04.13.01</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>خطة أمن المعلومات والامتثال التنظيمي</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Information Security and Compliance Plan</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. التخطيط</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Template.html">🇬🇧 EN</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.01 issue log سجل المشكلات 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
@@ -1493,6 +1544,57 @@
         <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.html">🇬🇧 EN</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.13 action items log سجل بنود العمل والتكليفات 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-05.13</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>سجل بنود العمل والتكليفات</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Action Items Log</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_13_سجل_بنود_العمل_والتكليفات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_13_سجل_بنود_العمل_والتكليفات_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_13_سجل_بنود_العمل_والتكليفات_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_13_Action_Items_Log_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.14 workstream coordination and standup log سجل التنسيق بين مسارات العمل واللقاءات اليومية 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-05.14</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>سجل التنسيق بين مسارات العمل واللقاءات اليومية</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Workstream Coordination and Standup Log</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.15 deliverable technical inspection checklist قائمة فحص وتثبت المخرجات الفنية 05. التنفيذ tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-05.15</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>قائمة فحص وتثبت المخرجات الفنية</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Deliverable Technical Inspection Checklist</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. التنفيذ</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.01 project status report تقرير حالة المشروع 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1697,6 +1799,74 @@
         <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.html">🇬🇧 EN</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.13 executive steering committee dashboard لوحة معلومات اللجنة التوجيهية التنفيذية 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.13</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>لوحة معلومات اللجنة التوجيهية التنفيذية</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Executive Steering Committee Dashboard</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.14 milestone trend analysis and slip chart تحليل اتجاهات المعالم والانزلاق الزمني 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.14</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>تحليل اتجاهات المعالم والانزلاق الزمني</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Milestone Trend Analysis and Slip Chart</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.15 defect and bug tracking log سجل تتبع العيوب والملاحظات 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.15</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>سجل تتبع العيوب والملاحظات</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Defect and Bug Tracking Log</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_15_سجل_تتبع_العيوب_والملاحظات_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_15_سجل_تتبع_العيوب_والملاحظات_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_15_سجل_تتبع_العيوب_والملاحظات_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.16 risk and issue escalation report تقرير تصعيد المخاطر والمشكلات الحرجة 06. المراقبة والتحكم tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.16</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>تقرير تصعيد المخاطر والمشكلات الحرجة</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Risk and Issue Escalation Report</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. المراقبة والتحكم</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.01 lessons learned summary ملخص الدروس المستفادة 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1780,6 +1950,40 @@
         <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_دليل.html">📖 الدليل</a>
         <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_مثال.html">💡 مثال واقعي</a>
         <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_05_Post_Implementation_Review_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.06 knowledge transfer and asset archival signoff محضر نقل المعرفة وأرشفة الأصول الرقمية 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-07.06</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>محضر نقل المعرفة وأرشفة الأصول الرقمية</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Knowledge Transfer and Asset Archival Signoff</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. الإغلاق</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Template.html">🇬🇧 EN</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.07 administrative and resource release form نموذج إبراء الذمة وتسريح الموارد 07. الإغلاق tier 1 | tier 2 | tier 3 ميثاق خطة سجل">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-07.07</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>نموذج إبراء الذمة وتسريح الموارد</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇬🇧 Administrative and Resource Release Form</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. الإغلاق</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد_قالب.html">📋 القالب</a>
+        <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد_دليل.html">📖 الدليل</a>
+        <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد_مثال.html">💡 مثال واقعي</a>
+        <a class="card-action-link" style="background: rgba(56, 189, 248, 0.1); color: var(--color-ref) !important;" href="../../forms/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Template.html">🇬🇧 EN</a>
       </div>
     </div>
   </div>
@@ -2423,6 +2627,17 @@
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_مثال.html">💡 المثال</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.07.02 communications distribution matrix مصفوفة توزيع وقنوات التواصل 04. التخطيط tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-04.07.02</code></strong></td>
+          <td><strong>مصفوفة توزيع وقنوات التواصل</strong><br/><small style="color: var(--text-muted);">🇬🇧 Communications Distribution Matrix</small></td>
+          <td>04. التخطيط</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/07_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/04_التخطيط/07_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/04_التخطيط/07_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.01 risk management plan خطة إدارة المخاطر 04. التخطيط tier 1 | tier 2 | tier 3">
           <td style="text-align: center;"><strong><code>PMO-04.08.01</code></strong></td>
           <td><strong>خطة إدارة المخاطر</strong><br/><small style="color: var(--text-muted);">🇬🇧 Risk Management Plan</small></td>
@@ -2566,6 +2781,17 @@
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_مثال.html">💡 المثال</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.10.02 stakeholder engagement assessment matrix مصفوفة تقييم انخراط المعنيين 04. التخطيط tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-04.10.02</code></strong></td>
+          <td><strong>مصفوفة تقييم انخراط المعنيين</strong><br/><small style="color: var(--text-muted);">🇬🇧 Stakeholder Engagement Assessment Matrix</small></td>
+          <td>04. التخطيط</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/10_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/04_التخطيط/10_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/04_التخطيط/10_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.11.01 ocm strategy and plan استراتيجية وخطة إدارة التغيير المؤسسي 04. التخطيط tier 1 | tier 2 | tier 3">
           <td style="text-align: center;"><strong><code>PMO-04.11.01</code></strong></td>
           <td><strong>استراتيجية وخطة إدارة التغيير المؤسسي</strong><br/><small style="color: var(--text-muted);">🇬🇧 OCM Strategy and Plan</small></td>
@@ -2597,6 +2823,17 @@
             <a class="card-action-link" href="../../forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.13.01 information security and compliance plan خطة أمن المعلومات والامتثال التنظيمي 04. التخطيط tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-04.13.01</code></strong></td>
+          <td><strong>خطة أمن المعلومات والامتثال التنظيمي</strong><br/><small style="color: var(--text-muted);">🇬🇧 Information Security and Compliance Plan</small></td>
+          <td>04. التخطيط</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي_مثال.html">💡 المثال</a>
           </td>
         </tr>
         <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.01 issue log سجل المشكلات 05. التنفيذ tier 1 | tier 2 | tier 3">
@@ -2731,6 +2968,39 @@
             <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_مثال.html">💡 المثال</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.13 action items log سجل بنود العمل والتكليفات 05. التنفيذ tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-05.13</code></strong></td>
+          <td><strong>سجل بنود العمل والتكليفات</strong><br/><small style="color: var(--text-muted);">🇬🇧 Action Items Log</small></td>
+          <td>05. التنفيذ</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_13_سجل_بنود_العمل_والتكليفات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_13_سجل_بنود_العمل_والتكليفات_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_13_سجل_بنود_العمل_والتكليفات_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.14 workstream coordination and standup log سجل التنسيق بين مسارات العمل واللقاءات اليومية 05. التنفيذ tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-05.14</code></strong></td>
+          <td><strong>سجل التنسيق بين مسارات العمل واللقاءات اليومية</strong><br/><small style="color: var(--text-muted);">🇬🇧 Workstream Coordination and Standup Log</small></td>
+          <td>05. التنفيذ</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.15 deliverable technical inspection checklist قائمة فحص وتثبت المخرجات الفنية 05. التنفيذ tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-05.15</code></strong></td>
+          <td><strong>قائمة فحص وتثبت المخرجات الفنية</strong><br/><small style="color: var(--text-muted);">🇬🇧 Deliverable Technical Inspection Checklist</small></td>
+          <td>05. التنفيذ</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/05_التنفيذ/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/05_التنفيذ/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/05_التنفيذ/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.01 project status report تقرير حالة المشروع 06. المراقبة والتحكم tier 1 | tier 2 | tier 3">
           <td style="text-align: center;"><strong><code>PMO-06.01</code></strong></td>
           <td><strong>تقرير حالة المشروع</strong><br/><small style="color: var(--text-muted);">🇬🇧 Project Status Report</small></td>
@@ -2863,6 +3133,50 @@
             <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_مثال.html">💡 المثال</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.13 executive steering committee dashboard لوحة معلومات اللجنة التوجيهية التنفيذية 06. المراقبة والتحكم tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-06.13</code></strong></td>
+          <td><strong>لوحة معلومات اللجنة التوجيهية التنفيذية</strong><br/><small style="color: var(--text-muted);">🇬🇧 Executive Steering Committee Dashboard</small></td>
+          <td>06. المراقبة والتحكم</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.14 milestone trend analysis and slip chart تحليل اتجاهات المعالم والانزلاق الزمني 06. المراقبة والتحكم tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-06.14</code></strong></td>
+          <td><strong>تحليل اتجاهات المعالم والانزلاق الزمني</strong><br/><small style="color: var(--text-muted);">🇬🇧 Milestone Trend Analysis and Slip Chart</small></td>
+          <td>06. المراقبة والتحكم</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.15 defect and bug tracking log سجل تتبع العيوب والملاحظات 06. المراقبة والتحكم tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-06.15</code></strong></td>
+          <td><strong>سجل تتبع العيوب والملاحظات</strong><br/><small style="color: var(--text-muted);">🇬🇧 Defect and Bug Tracking Log</small></td>
+          <td>06. المراقبة والتحكم</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_15_سجل_تتبع_العيوب_والملاحظات_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_15_سجل_تتبع_العيوب_والملاحظات_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_15_سجل_تتبع_العيوب_والملاحظات_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.16 risk and issue escalation report تقرير تصعيد المخاطر والمشكلات الحرجة 06. المراقبة والتحكم tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-06.16</code></strong></td>
+          <td><strong>تقرير تصعيد المخاطر والمشكلات الحرجة</strong><br/><small style="color: var(--text-muted);">🇬🇧 Risk and Issue Escalation Report</small></td>
+          <td>06. المراقبة والتحكم</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/06_المراقبة_والتحكم/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/06_المراقبة_والتحكم/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/06_المراقبة_والتحكم/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.01 lessons learned summary ملخص الدروس المستفادة 07. الإغلاق tier 1 | tier 2 | tier 3">
           <td style="text-align: center;"><strong><code>PMO-07.01</code></strong></td>
           <td><strong>ملخص الدروس المستفادة</strong><br/><small style="color: var(--text-muted);">🇬🇧 Lessons Learned Summary</small></td>
@@ -2916,6 +3230,28 @@
             <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_قالب.html">📋 القالب</a>
             <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_دليل.html">📖 الدليل</a>
             <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.06 knowledge transfer and asset archival signoff محضر نقل المعرفة وأرشفة الأصول الرقمية 07. الإغلاق tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-07.06</code></strong></td>
+          <td><strong>محضر نقل المعرفة وأرشفة الأصول الرقمية</strong><br/><small style="color: var(--text-muted);">🇬🇧 Knowledge Transfer and Asset Archival Signoff</small></td>
+          <td>07. الإغلاق</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية_مثال.html">💡 المثال</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.07 administrative and resource release form نموذج إبراء الذمة وتسريح الموارد 07. الإغلاق tier 1 | tier 2 | tier 3">
+          <td style="text-align: center;"><strong><code>PMO-07.07</code></strong></td>
+          <td><strong>نموذج إبراء الذمة وتسريح الموارد</strong><br/><small style="color: var(--text-muted);">🇬🇧 Administrative and Resource Release Form</small></td>
+          <td>07. الإغلاق</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/ar/07_الإغلاق/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد_قالب.html">📋 القالب</a>
+            <a class="card-action-link" href="../../guides/ar/07_الإغلاق/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد_دليل.html">📖 الدليل</a>
+            <a class="card-action-link" href="../../examples/ar/07_الإغلاق/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد_مثال.html">💡 المثال</a>
           </td>
         </tr>
       </tbody>

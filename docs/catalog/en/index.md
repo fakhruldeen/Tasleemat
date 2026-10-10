@@ -8,7 +8,7 @@
 
 # 📑 Master Deliverables & Artifacts Catalog
 **Standard Alignment:** PMI PMBOK® 6th, 7th & 8th Editions • NIST AI RMF • ISO 21500  
-**Total Matrix:** 102 Bilingual Forms (204 Standard Templates • 204 Authoring Guides • 204 Case Studies)
+**Total Matrix:** 114 Bilingual Forms (228 Standard Templates • 228 Authoring Guides • 228 Case Studies)
 
 ---
 
@@ -18,7 +18,7 @@
     
     <div class="explorer-filter-group">
       <span class="explorer-filter-label">Phase:</span>
-      <button class="filter-chip filter-phase-btn active" data-phase="all">All (102)</button>
+      <button class="filter-chip filter-phase-btn active" data-phase="all">All (114)</button>
       <button class="filter-chip filter-phase-btn" data-phase="00">00. Portfolio (6)</button>
       <button class="filter-chip filter-phase-btn" data-phase="01">01. Value (4)</button>
       <button class="filter-chip filter-phase-btn" data-phase="02">02. Tailoring (6)</button>
@@ -39,7 +39,7 @@
     </div>
 
     <div class="explorer-filter-group" style="justify-content: space-between; margin-top: 6px;">
-      <span style="font-size: 0.86rem; color: var(--text-muted); font-weight: 600;">Showing <span id="results-count" style="color: var(--brand-primary); font-weight: 800;">102</span> deliverables</span>
+      <span style="font-size: 0.86rem; color: var(--text-muted); font-weight: 600;">Showing <span id="results-count" style="color: var(--brand-primary); font-weight: 800;">114</span> deliverables</span>
       <div style="display: flex; gap: 6px;">
         <button class="filter-chip view-toggle-btn active" data-view="cards">🗂️ Card Grid View</button>
         <button class="filter-chip view-toggle-btn" data-view="table">📊 Table View</button>
@@ -1017,6 +1017,23 @@
         <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/04_التخطيط/07_التواصل/04_07_01_خطة_إدارة_الاتصالات_قالب.html">🇸🇦 عربي</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.07.02 communications distribution matrix مصفوفة توزيع وقنوات التواصل 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-04.07.02</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Communications Distribution Matrix</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 مصفوفة توزيع وقنوات التواصل</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. Planning</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/04_التخطيط/07_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.01 risk management plan خطة إدارة المخاطر 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1238,6 +1255,23 @@
         <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/04_التخطيط/10_المعنيين/04_10_01_خطة_إشراك_المعنيين_قالب.html">🇸🇦 عربي</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.10.02 stakeholder engagement assessment matrix مصفوفة تقييم انخراط المعنيين 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-04.10.02</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Stakeholder Engagement Assessment Matrix</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 مصفوفة تقييم انخراط المعنيين</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. Planning</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/04_التخطيط/10_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.11.01 ocm strategy and plan استراتيجية وخطة إدارة التغيير المؤسسي 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1287,6 +1321,23 @@
         <a class="card-action-link" href="../../guides/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.html">📖 Guide</a>
         <a class="card-action-link" href="../../examples/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Example.html">💡 Example</a>
         <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.13.01 information security and compliance plan خطة أمن المعلومات والامتثال التنظيمي 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-04.13.01</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Information Security and Compliance Plan</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 خطة أمن المعلومات والامتثال التنظيمي</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">04. Planning</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي_قالب.html">🇸🇦 عربي</a>
       </div>
     </div>
     <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.01 issue log سجل المشكلات 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
@@ -1493,6 +1544,57 @@
         <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/05_التنفيذ/05_12_قائمة_التحقق_لتهيئة_فريق_العمل_قالب.html">🇸🇦 عربي</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.13 action items log سجل بنود العمل والتكليفات 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-05.13</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Action Items Log</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 سجل بنود العمل والتكليفات</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. Executing</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/05_Executing/05_13_Action_Items_Log_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/05_Executing/05_13_Action_Items_Log_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/05_Executing/05_13_Action_Items_Log_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/05_التنفيذ/05_13_سجل_بنود_العمل_والتكليفات_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.14 workstream coordination and standup log سجل التنسيق بين مسارات العمل واللقاءات اليومية 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-05.14</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Workstream Coordination and Standup Log</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 سجل التنسيق بين مسارات العمل واللقاءات اليومية</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. Executing</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/05_التنفيذ/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.15 deliverable technical inspection checklist قائمة فحص وتثبت المخرجات الفنية 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-05.15</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Deliverable Technical Inspection Checklist</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 قائمة فحص وتثبت المخرجات الفنية</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">05. Executing</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/05_التنفيذ/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.01 project status report تقرير حالة المشروع 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1697,6 +1799,74 @@
         <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/06_المراقبة_والتحكم/06_12_مقاييس_التدفق_وتدفق_القيمة_قالب.html">🇸🇦 عربي</a>
       </div>
     </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.13 executive steering committee dashboard لوحة معلومات اللجنة التوجيهية التنفيذية 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.13</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Executive Steering Committee Dashboard</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 لوحة معلومات اللجنة التوجيهية التنفيذية</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. Monitoring & Controlling</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/06_المراقبة_والتحكم/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.14 milestone trend analysis and slip chart تحليل اتجاهات المعالم والانزلاق الزمني 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.14</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Milestone Trend Analysis and Slip Chart</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 تحليل اتجاهات المعالم والانزلاق الزمني</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. Monitoring & Controlling</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/06_المراقبة_والتحكم/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.15 defect and bug tracking log سجل تتبع العيوب والملاحظات 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.15</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Defect and Bug Tracking Log</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 سجل تتبع العيوب والملاحظات</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. Monitoring & Controlling</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/06_المراقبة_والتحكم/06_15_سجل_تتبع_العيوب_والملاحظات_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.16 risk and issue escalation report تقرير تصعيد المخاطر والمشكلات الحرجة 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-06.16</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Risk and Issue Escalation Report</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 تقرير تصعيد المخاطر والمشكلات الحرجة</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">06. Monitoring & Controlling</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/06_المراقبة_والتحكم/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
     <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.01 lessons learned summary ملخص الدروس المستفادة 07. closing tier 1 | tier 2 | tier 3 pmi pmbok">
       <div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
@@ -1780,6 +1950,40 @@
         <a class="card-action-link" href="../../guides/en/07_Closing/07_05_Post_Implementation_Review_Guide.html">📖 Guide</a>
         <a class="card-action-link" href="../../examples/en/07_Closing/07_05_Post_Implementation_Review_Example.html">💡 Example</a>
         <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/07_الإغلاق/07_05_مراجعة_ما_بعد_التنفيذ_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.06 knowledge transfer and asset archival signoff محضر نقل المعرفة وأرشفة الأصول الرقمية 07. closing tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-07.06</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Knowledge Transfer and Asset Archival Signoff</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 محضر نقل المعرفة وأرشفة الأصول الرقمية</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. Closing</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/07_الإغلاق/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية_قالب.html">🇸🇦 عربي</a>
+      </div>
+    </div>
+    <div class="explorer-card-item" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.07 administrative and resource release form نموذج إبراء الذمة وتسريح الموارد 07. closing tier 1 | tier 2 | tier 3 pmi pmbok">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <span class="badge badge-code">PMO-07.07</span>
+          <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">Tier 1 | Tier 2 | Tier 3</span>
+        </div>
+        <h5>Administrative and Resource Release Form</h5>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px;">🇸🇦 نموذج إبراء الذمة وتسريح الموارد</div>
+        <div style="font-size: 0.75rem; color: #0284c7; font-weight: 600;">07. Closing</div>
+      </div>
+      <div class="explorer-card-actions">
+        <a class="card-action-link" href="../../forms/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Template.html">📋 Template</a>
+        <a class="card-action-link" href="../../guides/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Guide.html">📖 Guide</a>
+        <a class="card-action-link" href="../../examples/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Example.html">💡 Example</a>
+        <a class="card-action-link" style="background: rgba(16, 185, 129, 0.1); color: #34d399 !important;" href="../../forms/ar/07_الإغلاق/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد_قالب.html">🇸🇦 عربي</a>
       </div>
     </div>
   </div>
@@ -2423,6 +2627,17 @@
             <a class="card-action-link" href="../../examples/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Example.html">💡 Example</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.07.02 communications distribution matrix مصفوفة توزيع وقنوات التواصل 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-04.07.02</code></strong></td>
+          <td><strong>Communications Distribution Matrix</strong><br/><small style="color: var(--text-muted);">🇸🇦 مصفوفة توزيع وقنوات التواصل</small></td>
+          <td>04. Planning</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Example.html">💡 Example</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.08.01 risk management plan خطة إدارة المخاطر 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
           <td style="text-align: center;"><strong><code>PMO-04.08.01</code></strong></td>
           <td><strong>Risk Management Plan</strong><br/><small style="color: var(--text-muted);">🇸🇦 خطة إدارة المخاطر</small></td>
@@ -2566,6 +2781,17 @@
             <a class="card-action-link" href="../../examples/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Example.html">💡 Example</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.10.02 stakeholder engagement assessment matrix مصفوفة تقييم انخراط المعنيين 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-04.10.02</code></strong></td>
+          <td><strong>Stakeholder Engagement Assessment Matrix</strong><br/><small style="color: var(--text-muted);">🇸🇦 مصفوفة تقييم انخراط المعنيين</small></td>
+          <td>04. Planning</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Example.html">💡 Example</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.11.01 ocm strategy and plan استراتيجية وخطة إدارة التغيير المؤسسي 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
           <td style="text-align: center;"><strong><code>PMO-04.11.01</code></strong></td>
           <td><strong>OCM Strategy and Plan</strong><br/><small style="color: var(--text-muted);">🇸🇦 استراتيجية وخطة إدارة التغيير المؤسسي</small></td>
@@ -2597,6 +2823,17 @@
             <a class="card-action-link" href="../../forms/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.html">📋 Template</a>
             <a class="card-action-link" href="../../guides/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.html">📖 Guide</a>
             <a class="card-action-link" href="../../examples/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="04" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-04.13.01 information security and compliance plan خطة أمن المعلومات والامتثال التنظيمي 04. planning tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-04.13.01</code></strong></td>
+          <td><strong>Information Security and Compliance Plan</strong><br/><small style="color: var(--text-muted);">🇸🇦 خطة أمن المعلومات والامتثال التنظيمي</small></td>
+          <td>04. Planning</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Example.html">💡 Example</a>
           </td>
         </tr>
         <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.01 issue log سجل المشكلات 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
@@ -2731,6 +2968,39 @@
             <a class="card-action-link" href="../../examples/en/05_Executing/05_12_Team_Onboarding_Checklist_Example.html">💡 Example</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.13 action items log سجل بنود العمل والتكليفات 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-05.13</code></strong></td>
+          <td><strong>Action Items Log</strong><br/><small style="color: var(--text-muted);">🇸🇦 سجل بنود العمل والتكليفات</small></td>
+          <td>05. Executing</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/05_Executing/05_13_Action_Items_Log_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/05_Executing/05_13_Action_Items_Log_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/05_Executing/05_13_Action_Items_Log_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.14 workstream coordination and standup log سجل التنسيق بين مسارات العمل واللقاءات اليومية 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-05.14</code></strong></td>
+          <td><strong>Workstream Coordination and Standup Log</strong><br/><small style="color: var(--text-muted);">🇸🇦 سجل التنسيق بين مسارات العمل واللقاءات اليومية</small></td>
+          <td>05. Executing</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="05" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-05.15 deliverable technical inspection checklist قائمة فحص وتثبت المخرجات الفنية 05. executing tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-05.15</code></strong></td>
+          <td><strong>Deliverable Technical Inspection Checklist</strong><br/><small style="color: var(--text-muted);">🇸🇦 قائمة فحص وتثبت المخرجات الفنية</small></td>
+          <td>05. Executing</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Example.html">💡 Example</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.01 project status report تقرير حالة المشروع 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
           <td style="text-align: center;"><strong><code>PMO-06.01</code></strong></td>
           <td><strong>Project Status Report</strong><br/><small style="color: var(--text-muted);">🇸🇦 تقرير حالة المشروع</small></td>
@@ -2863,6 +3133,50 @@
             <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Example.html">💡 Example</a>
           </td>
         </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.13 executive steering committee dashboard لوحة معلومات اللجنة التوجيهية التنفيذية 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-06.13</code></strong></td>
+          <td><strong>Executive Steering Committee Dashboard</strong><br/><small style="color: var(--text-muted);">🇸🇦 لوحة معلومات اللجنة التوجيهية التنفيذية</small></td>
+          <td>06. Monitoring & Controlling</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.14 milestone trend analysis and slip chart تحليل اتجاهات المعالم والانزلاق الزمني 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-06.14</code></strong></td>
+          <td><strong>Milestone Trend Analysis and Slip Chart</strong><br/><small style="color: var(--text-muted);">🇸🇦 تحليل اتجاهات المعالم والانزلاق الزمني</small></td>
+          <td>06. Monitoring & Controlling</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.15 defect and bug tracking log سجل تتبع العيوب والملاحظات 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-06.15</code></strong></td>
+          <td><strong>Defect and Bug Tracking Log</strong><br/><small style="color: var(--text-muted);">🇸🇦 سجل تتبع العيوب والملاحظات</small></td>
+          <td>06. Monitoring & Controlling</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="06" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-06.16 risk and issue escalation report تقرير تصعيد المخاطر والمشكلات الحرجة 06. monitoring & controlling tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-06.16</code></strong></td>
+          <td><strong>Risk and Issue Escalation Report</strong><br/><small style="color: var(--text-muted);">🇸🇦 تقرير تصعيد المخاطر والمشكلات الحرجة</small></td>
+          <td>06. Monitoring & Controlling</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Example.html">💡 Example</a>
+          </td>
+        </tr>
         <tr class="explorer-table-row" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.01 lessons learned summary ملخص الدروس المستفادة 07. closing tier 1 | tier 2 | tier 3 pmi pmbok">
           <td style="text-align: center;"><strong><code>PMO-07.01</code></strong></td>
           <td><strong>Lessons Learned Summary</strong><br/><small style="color: var(--text-muted);">🇸🇦 ملخص الدروس المستفادة</small></td>
@@ -2916,6 +3230,28 @@
             <a class="card-action-link" href="../../forms/en/07_Closing/07_05_Post_Implementation_Review_Template.html">📋 Template</a>
             <a class="card-action-link" href="../../guides/en/07_Closing/07_05_Post_Implementation_Review_Guide.html">📖 Guide</a>
             <a class="card-action-link" href="../../examples/en/07_Closing/07_05_Post_Implementation_Review_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.06 knowledge transfer and asset archival signoff محضر نقل المعرفة وأرشفة الأصول الرقمية 07. closing tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-07.06</code></strong></td>
+          <td><strong>Knowledge Transfer and Asset Archival Signoff</strong><br/><small style="color: var(--text-muted);">🇸🇦 محضر نقل المعرفة وأرشفة الأصول الرقمية</small></td>
+          <td>07. Closing</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.html">💡 Example</a>
+          </td>
+        </tr>
+        <tr class="explorer-table-row" data-phase="07" data-tier="Tier 1 | Tier 2 | Tier 3" data-search="pmo-07.07 administrative and resource release form نموذج إبراء الذمة وتسريح الموارد 07. closing tier 1 | tier 2 | tier 3 pmi pmbok">
+          <td style="text-align: center;"><strong><code>PMO-07.07</code></strong></td>
+          <td><strong>Administrative and Resource Release Form</strong><br/><small style="color: var(--text-muted);">🇸🇦 نموذج إبراء الذمة وتسريح الموارد</small></td>
+          <td>07. Closing</td>
+          <td><span class="badge badge-phase">Tier 1 | Tier 2 | Tier 3</span></td>
+          <td style="text-align: center; white-space: nowrap;">
+            <a class="card-action-link" href="../../forms/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Template.html">📋 Template</a>
+            <a class="card-action-link" href="../../guides/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Guide.html">📖 Guide</a>
+            <a class="card-action-link" href="../../examples/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Example.html">💡 Example</a>
           </td>
         </tr>
       </tbody>

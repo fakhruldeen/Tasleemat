@@ -15,12 +15,13 @@ type: Overview
 #### *متوافقة مع معايير الدليل المعرفي لإدارة المشاريع PMI PMBOK® الإصدار 6 و7 والجاهزية للإصدار 8*
 
 [![نسخة PyPI](https://badge.fury.io/py/tasleemat.svg?style=for-the-badge)](https://pypi.org/project/tasleemat/)
-[![القوالب المتاحة](https://img.shields.io/badge/القوالب-114%20زوج%20مزدوج%20(228%20حزمة)-059669?style=for-the-badge)](forms/ar/)
+[![البوابة الرقمية التفاعلية](https://img.shields.io/badge/البوابة%20التفاعلية-GitHub%20Pages-006a61?style=for-the-badge)](https://fakhruldeen.github.io/Tasleemat/README_AR.html)
+[![القوالب المتاحة](https://img.shields.io/badge/القوالب-114%20زوج%20مزدوج%20(228%20حزمة)-059669?style=for-the-badge)](https://fakhruldeen.github.io/Tasleemat/catalog/ar/index.html)
 [![اللغات](https://img.shields.io/badge/اللغة-العربية%20%7C%20English-0052cc?style=for-the-badge)](README.md)
 
 <br/>
 
-**[📚 فهرس توثيق المستودع](docs/README.md)** • **[🇬🇧 English Readme](README.md)** • **[👔 دليل البدء للممارسين](docs/ar/01_getting_started.md)** • **[📋 استعراض القوالب](forms/ar/)** • **[🚪 دليل البوابات المرحلية](docs/ar/04_stage_gates_and_governance.md)** • **[📖 قاموس المصطلحات الموحد](docs/LEXICON.md)** • **[💻 دليل المطورين والمهندسين](TECHNICAL_AR.md)**
+**[🌐 البوابة التفاعلية المباشرة](https://fakhruldeen.github.io/Tasleemat/README_AR.html)** • **[📚 فهرس توثيق المستودع](docs/README.md)** • **[🇬🇧 English Readme](README.md)** • **[👔 دليل البدء للممارسين](docs/ar/01_getting_started.md)** • **[📋 استعراض القوالب](forms/ar/)** • **[🚪 دليل البوابات المرحلية](docs/ar/04_stage_gates_and_governance.md)** • **[📖 قاموس المصطلحات الموحد](docs/LEXICON.md)** • **[💻 دليل المطورين والمهندسين](TECHNICAL_AR.md)**
 
 ---
 

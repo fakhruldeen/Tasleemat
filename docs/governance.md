@@ -69,7 +69,7 @@ flowchart LR
   - [x] Governance tier selected (Tier 1-4) with tailored deliverable bundle.
   - [x] Initial stakeholder register and assumption log established.
 - **Key Artifacts:**
-  - `FORM-03-01`: Project Charter ([English](../forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter_Template.md) • [العربية](../forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع_قالب.md))
+  - `FORM-03-01`: Project Charter ([معاينة تفاعلية](forms/ar/form-viewer.html))
   - `FORM-03-04`: Stakeholder Register
   - `FORM-02-01`: Tailoring Plan
 

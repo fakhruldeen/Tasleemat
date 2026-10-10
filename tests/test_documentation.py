@@ -66,6 +66,33 @@ class TestDocumentation(unittest.TestCase):
         self.assertEqual(data.get("total_forms"), 114)
         self.assertEqual(len(data.get("forms", [])), 114)
 
+    def test_static_portal_site_generation(self):
+        """Verify the custom static HTML portal generates site/ with core HTML pages and assets."""
+        site_dir = ROOT / "site"
+        if not site_dir.exists():
+            import subprocess
+            subprocess.run(["python3", str(ROOT / "tools" / "generate_documentation_portal.py")], check=True)
+
+        self.assertTrue(site_dir.exists(), "site/ directory must exist after portal generation")
+
+        required_pages = [
+            "index.html",
+            "README_AR.html",
+            "TECHNICAL.html",
+            "LEXICON.html",
+            "catalog/en/index.html",
+            "catalog/ar/index.html",
+            "en/01_getting_started.html",
+            "ar/01_getting_started.html",
+            "assets/custom.css",
+            "assets/tasleemat_data.js",
+            "assets/search.js",
+            "assets/explorer.js",
+        ]
+        for rel in required_pages:
+            p = site_dir / rel
+            self.assertTrue(p.exists(), f"Static portal page {rel} missing in site/")
+
     def test_repo_readmes(self):
         """Verify root README.md and README_AR.md are rich, present, and valid."""
         readme_en = ROOT / "README.md"

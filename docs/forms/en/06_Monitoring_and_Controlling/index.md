@@ -11,7 +11,7 @@ Status reporting, Earned Value Analysis (EVA), variance tracking, and quality ac
 
 ---
 
-## 📑 Phase Templates (12 Artifacts)
+## 📑 Phase Templates (16 Artifacts)
 
 | Code | Deliverable Name | Template | Guide | Completed Example |
 | :---: | :--- | :---: | :---: | :---: |
@@ -27,3 +27,7 @@ Status reporting, Earned Value Analysis (EVA), variance tracking, and quality ac
 | **`PMO-06.10`** | **User Acceptance Testing Signoff** | [📋 Template](06_10_User_Acceptance_Testing_Signoff_Template.md) | [📖 Guide](../../../guides/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Guide.md) | [💡 Example](../../../examples/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Example.md) |
 | **`PMO-06.11`** | **Project Health Check** | [📋 Template](06_11_Project_Health_Check_Template.md) | [📖 Guide](../../../guides/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Guide.md) | [💡 Example](../../../examples/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Example.md) |
 | **`PMO-06.12`** | **Flow Metrics and Value Stream** | [📋 Template](06_12_Flow_Metrics_and_Value_Stream_Template.md) | [📖 Guide](../../../guides/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Guide.md) | [💡 Example](../../../examples/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Example.md) |
+| **`PMO-06.13`** | **Executive Steering Committee Dashboard** | [📋 Template](06_13_Executive_Steering_Committee_Dashboard_Template.md) | [📖 Guide](../../../guides/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Guide.md) | [💡 Example](../../../examples/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Example.md) |
+| **`PMO-06.14`** | **Milestone Trend Analysis and Slip Chart** | [📋 Template](06_14_Milestone_Trend_Analysis_and_Slip_Chart_Template.md) | [📖 Guide](../../../guides/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Guide.md) | [💡 Example](../../../examples/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.md) |
+| **`PMO-06.15`** | **Defect and Bug Tracking Log** | [📋 Template](06_15_Defect_and_Bug_Tracking_Log_Template.md) | [📖 Guide](../../../guides/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Guide.md) | [💡 Example](../../../examples/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Example.md) |
+| **`PMO-06.16`** | **Risk and Issue Escalation Report** | [📋 Template](06_16_Risk_and_Issue_Escalation_Report_Template.md) | [📖 Guide](../../../guides/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Guide.md) | [💡 Example](../../../examples/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Example.md) |

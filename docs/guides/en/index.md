@@ -7,7 +7,7 @@
 </div>
 
 # 📖 Deliverable Authoring & Governance Guides (English)
-**Step-by-step instructions, RACI authority assignments, required inputs, and stage-gate acceptance criteria for all 102 deliverables.**
+**Step-by-step instructions, RACI authority assignments, required inputs, and stage-gate acceptance criteria for all 114 deliverables.**
 
 ---
 
@@ -62,7 +62,7 @@
 
 ---
 
-### 📐 04. Planning (52 Guides)
+### 📐 04. Planning (55 Guides)
 
 | Code | Guide Title | Links |
 | :---: | :--- | :---: |
@@ -102,6 +102,7 @@
 | **`PMO-04.06.05`** | [**Team Charter Guide**](04_Planning/06_Resource/04_06_05_Team_Charter_Guide.md) | [📋 Template](../../forms/en/04_Planning/06_Resource/04_06_05_Team_Charter_Template.md) • [💡 Example](../../examples/en/04_Planning/06_Resource/04_06_05_Team_Charter_Example.md) |
 | **`PMO-04.06.06`** | [**Team Psychological Safety and Wellbeing Index Guide**](04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Guide.md) | [📋 Template](../../forms/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Template.md) • [💡 Example](../../examples/en/04_Planning/06_Resource/04_06_06_Team_Psychological_Safety_and_Wellbeing_Index_Example.md) |
 | **`PMO-04.07.01`** | [**Communications Management Plan Guide**](04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Guide.md) | [📋 Template](../../forms/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Template.md) • [💡 Example](../../examples/en/04_Planning/07_Communications/04_07_01_Communications_Management_Plan_Example.md) |
+| **`PMO-04.07.02`** | [**Communications Distribution Matrix Guide**](04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Guide.md) | [📋 Template](../../forms/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Template.md) • [💡 Example](../../examples/en/04_Planning/07_Communications/04_07_02_Communications_Distribution_Matrix_Example.md) |
 | **`PMO-04.08.01`** | [**Risk Management Plan Guide**](04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Guide.md) | [📋 Template](../../forms/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Template.md) • [💡 Example](../../examples/en/04_Planning/08_Risk/04_08_01_Risk_Management_Plan_Example.md) |
 | **`PMO-04.08.02`** | [**Risk Register Guide**](04_Planning/08_Risk/04_08_02_Risk_Register_Guide.md) | [📋 Template](../../forms/en/04_Planning/08_Risk/04_08_02_Risk_Register_Template.md) • [💡 Example](../../examples/en/04_Planning/08_Risk/04_08_02_Risk_Register_Example.md) |
 | **`PMO-04.08.03`** | [**Probability and Impact Assessment Guide**](04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Guide.md) | [📋 Template](../../forms/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Template.md) • [💡 Example](../../examples/en/04_Planning/08_Risk/04_08_03_Probability_and_Impact_Assessment_Example.md) |
@@ -115,13 +116,15 @@
 | **`PMO-04.09.04`** | [**Statement of Work SOW Guide**](04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Guide.md) | [📋 Template](../../forms/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Template.md) • [💡 Example](../../examples/en/04_Planning/09_Procurement/04_09_04_Statement_of_Work_SOW_Example.md) |
 | **`PMO-04.09.05`** | [**Request for Proposal RFP Guide**](04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Guide.md) | [📋 Template](../../forms/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Template.md) • [💡 Example](../../examples/en/04_Planning/09_Procurement/04_09_05_Request_for_Proposal_RFP_Example.md) |
 | **`PMO-04.10.01`** | [**Stakeholder Engagement Plan Guide**](04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Guide.md) | [📋 Template](../../forms/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Template.md) • [💡 Example](../../examples/en/04_Planning/10_Stakeholder/04_10_01_Stakeholder_Engagement_Plan_Example.md) |
+| **`PMO-04.10.02`** | [**Stakeholder Engagement Assessment Matrix Guide**](04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Guide.md) | [📋 Template](../../forms/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Template.md) • [💡 Example](../../examples/en/04_Planning/10_Stakeholder/04_10_02_Stakeholder_Engagement_Assessment_Matrix_Example.md) |
 | **`PMO-04.11.01`** | [**OCM Strategy and Plan Guide**](04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Guide.md) | [📋 Template](../../forms/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Template.md) • [💡 Example](../../examples/en/04_Planning/11_Organizational_Change_Management/04_11_01_OCM_Strategy_and_Plan_Example.md) |
 | **`PMO-04.11.02`** | [**Training Plan and Log Guide**](04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Guide.md) | [📋 Template](../../forms/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Template.md) • [💡 Example](../../examples/en/04_Planning/11_Organizational_Change_Management/04_11_02_Training_Plan_and_Log_Example.md) |
 | **`PMO-04.12.01`** | [**Sustainability and ESG Management Plan Guide**](04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Guide.md) | [📋 Template](../../forms/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Template.md) • [💡 Example](../../examples/en/04_Planning/12_Sustainability_and_ESG/04_12_01_Sustainability_and_ESG_Management_Plan_Example.md) |
+| **`PMO-04.13.01`** | [**Information Security and Compliance Plan Guide**](04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Guide.md) | [📋 Template](../../forms/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Template.md) • [💡 Example](../../examples/en/04_Planning/13_Information_Security_and_Compliance/04_13_01_Information_Security_and_Compliance_Plan_Example.md) |
 
 ---
 
-### ⚡ 05. Executing (12 Guides)
+### ⚡ 05. Executing (15 Guides)
 
 | Code | Guide Title | Links |
 | :---: | :--- | :---: |
@@ -137,10 +140,13 @@
 | **`PMO-05.10`** | [**Impediment Log Guide**](05_Executing/05_10_Impediment_Log_Guide.md) | [📋 Template](../../forms/en/05_Executing/05_10_Impediment_Log_Template.md) • [💡 Example](../../examples/en/05_Executing/05_10_Impediment_Log_Example.md) |
 | **`PMO-05.11`** | [**Meeting Minutes Guide**](05_Executing/05_11_Meeting_Minutes_Guide.md) | [📋 Template](../../forms/en/05_Executing/05_11_Meeting_Minutes_Template.md) • [💡 Example](../../examples/en/05_Executing/05_11_Meeting_Minutes_Example.md) |
 | **`PMO-05.12`** | [**Team Onboarding Checklist Guide**](05_Executing/05_12_Team_Onboarding_Checklist_Guide.md) | [📋 Template](../../forms/en/05_Executing/05_12_Team_Onboarding_Checklist_Template.md) • [💡 Example](../../examples/en/05_Executing/05_12_Team_Onboarding_Checklist_Example.md) |
+| **`PMO-05.13`** | [**Action Items Log Guide**](05_Executing/05_13_Action_Items_Log_Guide.md) | [📋 Template](../../forms/en/05_Executing/05_13_Action_Items_Log_Template.md) • [💡 Example](../../examples/en/05_Executing/05_13_Action_Items_Log_Example.md) |
+| **`PMO-05.14`** | [**Workstream Coordination and Standup Log Guide**](05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Guide.md) | [📋 Template](../../forms/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Template.md) • [💡 Example](../../examples/en/05_Executing/05_14_Workstream_Coordination_and_Standup_Log_Example.md) |
+| **`PMO-05.15`** | [**Deliverable Technical Inspection Checklist Guide**](05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Guide.md) | [📋 Template](../../forms/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Template.md) • [💡 Example](../../examples/en/05_Executing/05_15_Deliverable_Technical_Inspection_Checklist_Example.md) |
 
 ---
 
-### 📊 06. Monitoring & Controlling (12 Guides)
+### 📊 06. Monitoring & Controlling (16 Guides)
 
 | Code | Guide Title | Links |
 | :---: | :--- | :---: |
@@ -156,10 +162,14 @@
 | **`PMO-06.10`** | [**User Acceptance Testing Signoff Guide**](06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Guide.md) | [📋 Template](../../forms/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Template.md) • [💡 Example](../../examples/en/06_Monitoring_and_Controlling/06_10_User_Acceptance_Testing_Signoff_Example.md) |
 | **`PMO-06.11`** | [**Project Health Check Guide**](06_Monitoring_and_Controlling/06_11_Project_Health_Check_Guide.md) | [📋 Template](../../forms/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Template.md) • [💡 Example](../../examples/en/06_Monitoring_and_Controlling/06_11_Project_Health_Check_Example.md) |
 | **`PMO-06.12`** | [**Flow Metrics and Value Stream Guide**](06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Guide.md) | [📋 Template](../../forms/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Template.md) • [💡 Example](../../examples/en/06_Monitoring_and_Controlling/06_12_Flow_Metrics_and_Value_Stream_Example.md) |
+| **`PMO-06.13`** | [**Executive Steering Committee Dashboard Guide**](06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Guide.md) | [📋 Template](../../forms/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Template.md) • [💡 Example](../../examples/en/06_Monitoring_and_Controlling/06_13_Executive_Steering_Committee_Dashboard_Example.md) |
+| **`PMO-06.14`** | [**Milestone Trend Analysis and Slip Chart Guide**](06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Guide.md) | [📋 Template](../../forms/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Template.md) • [💡 Example](../../examples/en/06_Monitoring_and_Controlling/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.md) |
+| **`PMO-06.15`** | [**Defect and Bug Tracking Log Guide**](06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Guide.md) | [📋 Template](../../forms/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Template.md) • [💡 Example](../../examples/en/06_Monitoring_and_Controlling/06_15_Defect_and_Bug_Tracking_Log_Example.md) |
+| **`PMO-06.16`** | [**Risk and Issue Escalation Report Guide**](06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Guide.md) | [📋 Template](../../forms/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Template.md) • [💡 Example](../../examples/en/06_Monitoring_and_Controlling/06_16_Risk_and_Issue_Escalation_Report_Example.md) |
 
 ---
 
-### 🏁 07. Closing (5 Guides)
+### 🏁 07. Closing (7 Guides)
 
 | Code | Guide Title | Links |
 | :---: | :--- | :---: |
@@ -168,6 +178,8 @@
 | **`PMO-07.03`** | [**Project or Phase Closeout Guide**](07_Closing/07_03_Project_or_Phase_Closeout_Guide.md) | [📋 Template](../../forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.md) • [💡 Example](../../examples/en/07_Closing/07_03_Project_or_Phase_Closeout_Example.md) |
 | **`PMO-07.04`** | [**Transition to Operations Checklist Guide**](07_Closing/07_04_Transition_to_Operations_Checklist_Guide.md) | [📋 Template](../../forms/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.md) • [💡 Example](../../examples/en/07_Closing/07_04_Transition_to_Operations_Checklist_Example.md) |
 | **`PMO-07.05`** | [**Post Implementation Review Guide**](07_Closing/07_05_Post_Implementation_Review_Guide.md) | [📋 Template](../../forms/en/07_Closing/07_05_Post_Implementation_Review_Template.md) • [💡 Example](../../examples/en/07_Closing/07_05_Post_Implementation_Review_Example.md) |
+| **`PMO-07.06`** | [**Knowledge Transfer and Asset Archival Signoff Guide**](07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Guide.md) | [📋 Template](../../forms/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Template.md) • [💡 Example](../../examples/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.md) |
+| **`PMO-07.07`** | [**Administrative and Resource Release Form Guide**](07_Closing/07_07_Administrative_and_Resource_Release_Form_Guide.md) | [📋 Template](../../forms/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Template.md) • [💡 Example](../../examples/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Example.md) |
 
 ---
 

@@ -11,7 +11,7 @@ Formal transition to operations, contract closure, final lessons learned, and po
 
 ---
 
-## 💡 Phase Case Studies (5 Examples)
+## 💡 Phase Case Studies (7 Examples)
 
 | Code | Case Study Title | Template | Guide | Completed Example |
 | :---: | :--- | :---: | :---: | :---: |
@@ -20,3 +20,5 @@ Formal transition to operations, contract closure, final lessons learned, and po
 | **`PMO-07.03`** | **Project or Phase Closeout** | [📋 Template](../../../forms/en/07_Closing/07_03_Project_or_Phase_Closeout_Template.md) | [📖 Guide](../../../guides/en/07_Closing/07_03_Project_or_Phase_Closeout_Guide.md) | [💡 Example](07_03_Project_or_Phase_Closeout_Example.md) |
 | **`PMO-07.04`** | **Transition to Operations Checklist** | [📋 Template](../../../forms/en/07_Closing/07_04_Transition_to_Operations_Checklist_Template.md) | [📖 Guide](../../../guides/en/07_Closing/07_04_Transition_to_Operations_Checklist_Guide.md) | [💡 Example](07_04_Transition_to_Operations_Checklist_Example.md) |
 | **`PMO-07.05`** | **Post Implementation Review** | [📋 Template](../../../forms/en/07_Closing/07_05_Post_Implementation_Review_Template.md) | [📖 Guide](../../../guides/en/07_Closing/07_05_Post_Implementation_Review_Guide.md) | [💡 Example](07_05_Post_Implementation_Review_Example.md) |
+| **`PMO-07.06`** | **Knowledge Transfer and Asset Archival Signoff** | [📋 Template](../../../forms/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Template.md) | [📖 Guide](../../../guides/en/07_Closing/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Guide.md) | [💡 Example](07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.md) |
+| **`PMO-07.07`** | **Administrative and Resource Release Form** | [📋 Template](../../../forms/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Template.md) | [📖 Guide](../../../guides/en/07_Closing/07_07_Administrative_and_Resource_Release_Form_Guide.md) | [💡 Example](07_07_Administrative_and_Resource_Release_Form_Example.md) |
