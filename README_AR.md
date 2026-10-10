@@ -14,14 +14,13 @@ type: Overview
 ### *المكتبة المؤسسية المزدوجة (عربي - إنجليزي) لمخرجات إدارة المشاريع والذكاء الاصطناعي*
 #### *متوافقة مع معايير الدليل المعرفي لإدارة المشاريع PMI PMBOK® الإصدار 6 و7 والجاهزية للإصدار 8*
 
-[![بوابة التوثيق التفاعلية](https://img.shields.io/badge/البوابة_التفاعلية-fakhr.me%2FTasleemat-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://fakhr.me/Tasleemat/)
 [![نسخة PyPI](https://badge.fury.io/py/tasleemat.svg?style=for-the-badge)](https://pypi.org/project/tasleemat/)
 [![القوالب المتاحة](https://img.shields.io/badge/القوالب-102%20زوج%20مزدوج%20(204%20حزمة)-059669?style=for-the-badge)](forms/ar/)
 [![اللغات](https://img.shields.io/badge/اللغة-العربية%20%7C%20English-0052cc?style=for-the-badge)](README.md)
 
 <br/>
 
-**[🌐 البوابة الإلكترونية الشاملة](https://fakhr.me/Tasleemat/)** • **[🇬🇧 English Readme](README.md)** • **[👔 دليل البدء للممارسين](docs/ar/01_getting_started.md)** • **[📋 استعراض القوالب](forms/ar/)** • **[🚪 دليل البوابات المرحلية](docs/ar/04_stage_gates_and_governance.md)** • **[📖 قاموس المصطلحات الموحد](docs/LEXICON.md)** • **[💻 دليل المطورين والمهندسين](TECHNICAL_AR.md)**
+**[📚 فهرس توثيق المستودع](docs/README.md)** • **[🇬🇧 English Readme](README.md)** • **[👔 دليل البدء للممارسين](docs/ar/01_getting_started.md)** • **[📋 استعراض القوالب](forms/ar/)** • **[🚪 دليل البوابات المرحلية](docs/ar/04_stage_gates_and_governance.md)** • **[📖 قاموس المصطلحات الموحد](docs/LEXICON.md)** • **[💻 دليل المطورين والمهندسين](TECHNICAL_AR.md)**
 
 ---
 
@@ -93,10 +92,10 @@ flowchart RL
 ---
 
 ## ⚡ 3 طرق لاستخدام مكتبة تسليمات
-
-### 1. البوابة الإلكترونية التفاعلية *(الأسهل)*
-قم بزيارة **[fakhr.me/Tasleemat/](https://fakhr.me/Tasleemat/)** للبحث في القوالب وتصفيتها حسب المرحلة أو الحجم ونسخ المحتوى مباشرة.
-
+ 
+### 1. استعراض ملفات المستودع مباشرة *(الموصى به)*
+تصفح [فهرس التوثيق](docs/README.md) وملفات النماذج بصيغة ماركداون الأصلية مباشرة داخل المستودع دون الحاجة لبوابة خارجية.
+ 
 ### 2. التنزيل والتصدير المباشر
 انتقل لأي مجلد (مثل [`forms/ar/03_البدء/01_ميثاق_المشروع/`](forms/ar/03_البدء/01_ميثاق_المشروع/)) وافتح القالب `*_قالب.md` لتصديره لـ PDF أو Word.
 
