@@ -69,6 +69,6 @@ To accurately and professionally complete the **Risk and Issue Escalation Report
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [06_16_Risk_and_Issue_Escalation_Report_Example.md](../../../../../examples/en/06_Monitoring_and_Controlling/16_Risk_and_Issue_Escalation_Report/06_16_Risk_and_Issue_Escalation_Report_Example.md)
+> 📖 **Completed Example:** [06_16_Risk_and_Issue_Escalation_Report_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/16_Risk_and_Issue_Escalation_Report/06_16_Risk_and_Issue_Escalation_Report_Example.md)
 
 </div>

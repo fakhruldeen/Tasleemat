@@ -69,6 +69,6 @@ To accurately and professionally complete the **Executive Steering Committee Das
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [06_13_Executive_Steering_Committee_Dashboard_Example.md](../../../../../examples/en/06_Monitoring_and_Controlling/13_Executive_Steering_Committee_Dashboard/06_13_Executive_Steering_Committee_Dashboard_Example.md)
+> 📖 **Completed Example:** [06_13_Executive_Steering_Committee_Dashboard_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/13_Executive_Steering_Committee_Dashboard/06_13_Executive_Steering_Committee_Dashboard_Example.md)
 
 </div>

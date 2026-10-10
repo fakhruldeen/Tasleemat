@@ -69,6 +69,6 @@ To accurately and professionally complete the **Deliverable Technical Inspection
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [05_15_Deliverable_Technical_Inspection_Checklist_Example.md](../../../../../examples/en/05_Executing/15_Deliverable_Technical_Inspection_Checklist/05_15_Deliverable_Technical_Inspection_Checklist_Example.md)
+> 📖 **Completed Example:** [05_15_Deliverable_Technical_Inspection_Checklist_Example.md](../../../../examples/en/05_Executing/15_Deliverable_Technical_Inspection_Checklist/05_15_Deliverable_Technical_Inspection_Checklist_Example.md)
 
 </div>

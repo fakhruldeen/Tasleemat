@@ -69,6 +69,6 @@ To accurately and professionally complete the **Milestone Trend Analysis and Sli
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.md](../../../../../examples/en/06_Monitoring_and_Controlling/14_Milestone_Trend_Analysis_and_Slip_Chart/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.md)
+> 📖 **Completed Example:** [06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/14_Milestone_Trend_Analysis_and_Slip_Chart/06_14_Milestone_Trend_Analysis_and_Slip_Chart_Example.md)
 
 </div>

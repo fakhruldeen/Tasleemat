@@ -69,6 +69,6 @@ To accurately and professionally complete the **Administrative and Resource Rele
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [07_07_Administrative_and_Resource_Release_Form_Example.md](../../../../../examples/en/07_Closing/07_Administrative_and_Resource_Release_Form/07_07_Administrative_and_Resource_Release_Form_Example.md)
+> 📖 **Completed Example:** [07_07_Administrative_and_Resource_Release_Form_Example.md](../../../../examples/en/07_Closing/07_Administrative_and_Resource_Release_Form/07_07_Administrative_and_Resource_Release_Form_Example.md)
 
 </div>

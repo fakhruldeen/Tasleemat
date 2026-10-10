@@ -69,6 +69,6 @@ To accurately and professionally complete the **Defect and Bug Tracking Log**, p
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [06_15_Defect_and_Bug_Tracking_Log_Example.md](../../../../../examples/en/06_Monitoring_and_Controlling/15_Defect_and_Bug_Tracking_Log/06_15_Defect_and_Bug_Tracking_Log_Example.md)
+> 📖 **Completed Example:** [06_15_Defect_and_Bug_Tracking_Log_Example.md](../../../../examples/en/06_Monitoring_and_Controlling/15_Defect_and_Bug_Tracking_Log/06_15_Defect_and_Bug_Tracking_Log_Example.md)
 
 </div>

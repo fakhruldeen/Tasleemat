@@ -69,6 +69,6 @@ To accurately and professionally complete the **Workstream Coordination and Stan
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [05_14_Workstream_Coordination_and_Standup_Log_Example.md](../../../../../examples/en/05_Executing/14_Workstream_Coordination_and_Standup_Log/05_14_Workstream_Coordination_and_Standup_Log_Example.md)
+> 📖 **Completed Example:** [05_14_Workstream_Coordination_and_Standup_Log_Example.md](../../../../examples/en/05_Executing/14_Workstream_Coordination_and_Standup_Log/05_14_Workstream_Coordination_and_Standup_Log_Example.md)
 
 </div>

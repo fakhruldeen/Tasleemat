@@ -69,6 +69,6 @@ To accurately and professionally complete the **Action Items Log**, populate all
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [05_13_Action_Items_Log_Example.md](../../../../../examples/en/05_Executing/13_Action_Items_Log/05_13_Action_Items_Log_Example.md)
+> 📖 **Completed Example:** [05_13_Action_Items_Log_Example.md](../../../../examples/en/05_Executing/13_Action_Items_Log/05_13_Action_Items_Log_Example.md)
 
 </div>

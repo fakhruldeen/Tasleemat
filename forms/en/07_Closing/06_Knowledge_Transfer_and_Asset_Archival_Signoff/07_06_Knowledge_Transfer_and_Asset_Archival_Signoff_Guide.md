@@ -69,6 +69,6 @@ To accurately and professionally complete the **Knowledge Transfer and Asset Arc
 
 ### 6. Reference Example
 A fully completed, gold-standard reference example illustrating this artifact in practice is available:
-> 📖 **Completed Example:** [07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.md](../../../../../examples/en/07_Closing/06_Knowledge_Transfer_and_Asset_Archival_Signoff/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.md)
+> 📖 **Completed Example:** [07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.md](../../../../examples/en/07_Closing/06_Knowledge_Transfer_and_Asset_Archival_Signoff/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff_Example.md)
 
 </div>
