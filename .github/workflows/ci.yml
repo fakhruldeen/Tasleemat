@@ -25,7 +25,7 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run Form Quality & Schema Audit (204 Forms)
+      - name: Run Form Quality & Schema Audit (228 Forms)
         run: |
           python3 tools/audit_forms.py
 

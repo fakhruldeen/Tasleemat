@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the root datapackage.json and all 204 JSON Schema resources
+"""Validate the root datapackage.json and all 228 JSON Schema resources
 against Open Knowledge Foundation (OKF) Frictionless Data specifications.
 """
 
@@ -29,8 +29,8 @@ def validate_datapackage():
     resources = data.get("resources", [])
     print(f"Checking {len(resources)} JSON Schema resources...")
 
-    if len(resources) != 204:
-        print(f"❌ Error: Expected 204 resources, found {len(resources)}")
+    if len(resources) != 228:
+        print(f"❌ Error: Expected 228 resources, found {len(resources)}")
         sys.exit(1)
 
     errors = 0
