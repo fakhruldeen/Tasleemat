@@ -18,8 +18,8 @@ class TestGovernanceTemplates(unittest.TestCase):
         en_templates = list(FORMS_EN.rglob("*_Template.md"))
         ar_templates = list(FORMS_AR.rglob("*_قالب.md"))
 
-        self.assertEqual(len(en_templates), 102)
-        self.assertEqual(len(ar_templates), 102)
+        self.assertEqual(len(en_templates), 114)
+        self.assertEqual(len(ar_templates), 114)
 
         for t in en_templates:
             content = t.read_text(encoding="utf-8")
@@ -32,7 +32,7 @@ class TestGovernanceTemplates(unittest.TestCase):
             self.assertTrue(has_doc_control, f"Missing Arabic Document Control table in {t.name}")
 
     def test_guides_link_to_completed_examples(self):
-        """Verify all 204 guide files link to their completed reference example."""
+        """Verify all 228 guide files link to their completed reference example."""
         en_guides = list(FORMS_EN.rglob("*_Guide.md"))
         ar_guides = list(FORMS_AR.rglob("*_دليل.md"))
 

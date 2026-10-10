@@ -26,7 +26,7 @@ class TestCliAndExporters(unittest.TestCase):
         )
         self.assertEqual(res_en.returncode, 0)
         self.assertIn("Tasleemat Master Forms Catalog (EN)", res_en.stdout)
-        self.assertIn("Total forms found: 102", res_en.stdout)
+        self.assertIn("Total forms found: 114", res_en.stdout)
 
         res_ar = subprocess.run(
             [sys.executable, str(CLI_PATH), "list", "-l", "ar"],
@@ -34,7 +34,7 @@ class TestCliAndExporters(unittest.TestCase):
         )
         self.assertEqual(res_ar.returncode, 0)
         self.assertIn("Tasleemat Master Forms Catalog (AR)", res_ar.stdout)
-        self.assertIn("Total forms found: 102", res_ar.stdout)
+        self.assertIn("Total forms found: 114", res_ar.stdout)
 
     def test_cli_search_commands(self):
         """Test searching for deliverable forms via CLI."""

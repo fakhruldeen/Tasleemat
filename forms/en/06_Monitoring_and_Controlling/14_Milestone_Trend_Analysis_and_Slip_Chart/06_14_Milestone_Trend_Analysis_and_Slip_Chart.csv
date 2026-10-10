@@ -1,0 +1,6 @@
+Section,Field,Guidance,LLM_Generated_Value
+Milestone Schedule & Historical Tracking,Milestone Identifier and Baseline Target Date,"Milestone code, deliverable name, and original approved baseline completion date.",
+Milestone Schedule & Historical Tracking,Historical Forecast Trend Data Points,Bi-weekly or monthly sequential forecasts tracking milestone date movements over time.,
+Slip Analysis & Root Cause Diagnosis,Current Variance and Slip Days Calculated,Net difference in working days between current forecast and baseline date.,
+Slip Analysis & Root Cause Diagnosis,Root Cause of Schedule Drift and Dependencies,"Underlying drivers (supplier delay, scope change, technical hurdles) causing milestone slippage.",
+Corrective Recovery & Path Stabilization,Schedule Recovery Actions and Target Stabilization,"Crashing, fast-tracking, or resource reallocations committed to recover milestone timing.",

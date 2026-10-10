@@ -1,0 +1,39 @@
+{
+    "form_name": "ACTION ITEMS LOG",
+    "document_reference": "PMO-05.13",
+    "_llm_instructions": "Populate the fields of 'ACTION ITEMS LOG' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.13.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Action_Item_Identifier_and_Description": {
+            "section": "Action Identification & Assignment",
+            "label": "Action Item Identifier and Description",
+            "guidance": "Unique tracking ID and concise, actionable statement of the specific task or decision follow-up.",
+            "value": ""
+        },
+        "f02_Action_Owner_and_Accountable_Role": {
+            "section": "Action Identification & Assignment",
+            "label": "Action Owner and Accountable Role",
+            "guidance": "Single designated individual with primary execution and delivery accountability.",
+            "value": ""
+        },
+        "f03_Target_Completion_Date_and_Priority": {
+            "section": "Action Identification & Assignment",
+            "label": "Target Completion Date and Priority",
+            "guidance": "Firm committed due date and priority weighting (Critical, High, Medium, Low).",
+            "value": ""
+        },
+        "f04_Current_Execution_Status_and_Notes": {
+            "section": "Status Tracking & Verification Signoff",
+            "label": "Current Execution Status and Notes",
+            "guidance": "Real-time status (Open, In Progress, Blocked, Complete) with recent progress notes.",
+            "value": ""
+        },
+        "f05_Resolution_Evidence_and_Verification_Signoff": {
+            "section": "Status Tracking & Verification Signoff",
+            "label": "Resolution Evidence and Verification Signoff",
+            "guidance": "Deliverable link, test evidence, or Project Manager formal verification confirming closure.",
+            "value": ""
+        }
+    }
+}

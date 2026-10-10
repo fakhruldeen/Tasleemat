@@ -1,0 +1,6 @@
+Section,Field,Guidance,LLM_Generated_Value
+Defect Logging & Severity Assessment,Defect Identifier and Title,"Unique defect ID, summary title, and affected component or module name.",
+Defect Logging & Severity Assessment,Severity Priority and Business Impact,"Severity rating (Blocker, Critical, Major, Minor) and SLA turnaround requirement.",
+Defect Logging & Severity Assessment,Steps to Reproduce and Observed versus Expected,"Detailed reproduction instructions, environment context, and expected versus actual result.",
+Remediation & Re-testing Signoff,Root Cause Diagnosis and Assigned Fixer,"Technical root cause classification (Code, Requirement, Environment) and assigned developer.",
+Remediation & Re-testing Signoff,Resolution Status and QA Retest Signoff,"Status (Open, In Fix, Retest, Verified Closed) and QA engineer verification signoff.",

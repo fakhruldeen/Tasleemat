@@ -1,0 +1,39 @@
+{
+    "form_name": "KNOWLEDGE TRANSFER AND ASSET ARCHIVAL SIGNOFF",
+    "document_reference": "PMO-07.06",
+    "_llm_instructions": "Populate the fields of 'KNOWLEDGE TRANSFER AND ASSET ARCHIVAL SIGNOFF' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-07.06.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Knowledge_Transfer_Scope_and_Target_Operations_Team": {
+            "section": "Knowledge Handover & Documentation Repository",
+            "label": "Knowledge Transfer Scope and Target Operations Team",
+            "guidance": "Designated operational entities, support teams, and technical domains covered by handover.",
+            "value": ""
+        },
+        "f02_Technical_Documentation_Repository_and_Architecture_Assets": {
+            "section": "Knowledge Handover & Documentation Repository",
+            "label": "Technical Documentation Repository and Architecture Assets",
+            "guidance": "Source code repositories, architecture diagrams, runbooks, and API documentation URLs archived.",
+            "value": ""
+        },
+        "f03_Operational_Training_and_Shadowing_Completion_Record": {
+            "section": "Operational Readiness & Access Transfer",
+            "label": "Operational Training and Shadowing Completion Record",
+            "guidance": "Completed hands-on workshops, admin shadowing sessions, and formal trainee attendance records.",
+            "value": ""
+        },
+        "f04_System_Credentials_Access_Keys_and_License_Transfers": {
+            "section": "Operational Readiness & Access Transfer",
+            "label": "System Credentials Access Keys and License Transfers",
+            "guidance": "Secure handover of production administrative accounts, cloud root keys, certificates, and software licenses.",
+            "value": ""
+        },
+        "f05_Formal_Operational_Acceptance_and_Custody_Signoff": {
+            "section": "Formal Acceptance & Archival Custody",
+            "label": "Formal Operational Acceptance and Custody Signoff",
+            "guidance": "Operations Director and Project Manager joint authorization confirming complete custody transfer.",
+            "value": ""
+        }
+    }
+}

@@ -15,7 +15,7 @@ type: Overview
 #### *Aligned with PMI PMBOK® Guide (6th, 7th & 8th Edition Ready) Standards*
 
 [![PyPI version](https://badge.fury.io/py/tasleemat.svg?style=for-the-badge)](https://pypi.org/project/tasleemat/)
-[![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-059669?style=for-the-badge)](forms/)
+[![Templates](https://img.shields.io/badge/Templates-114%20Bilingual%20Pairs%20(228%20Total)-059669?style=for-the-badge)](forms/)
 [![Language](https://img.shields.io/badge/Language-English%20%7C%20العربية-0052cc?style=for-the-badge)](README_AR.md)
 
 <br/>
@@ -30,7 +30,7 @@ type: Overview
 
 **Tasleemat (تسليمات)** is a complete open-source Project Management Office (PMO) toolkit designed for **Project Managers, PMO Directors, Business Leaders, and Project Officers**. 
 
-It provides **102 standardized, bilingual (English & Arabic) project management deliverables** (204 synchronized form bundles) covering the full project lifecycle—from portfolio strategy and business case development to scope baselines, risk registers, stage-gate reviews, and project closeouts.
+It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles) covering the full project lifecycle—from portfolio strategy and business case development to scope baselines, risk registers, stage-gate reviews, and project closeouts.
 
 Whether you are launching a startup project, managing an enterprise digital transformation, or running an Agile sprint, Tasleemat gives you instant access to production-grade, print-ready, and AI-compatible templates.
 
@@ -42,13 +42,13 @@ Whether you are launching a startup project, managing an enterprise digital tran
 
 | 👔 For Project Managers & PMO Leaders | 💻 For Developers & AI Engineers |
 | :--- | :--- |
-| • **[Browse 102 Templates by Phase](forms/en/)**<br/>• **[Explore 6 Stage-Gate Governance Checklists](docs/en/04_stage_gates_and_governance.md)**<br/>• **[Select Project Sizing Tiers (Small to Enterprise)](docs/en/05_tailoring_profiles.md)**<br/>• **[View Bilingual Lexicon & Terminology](docs/LEXICON.md)** | • **[Read TECHNICAL.md Developer Manual](TECHNICAL.md)**<br/>• **[Python SDK (`tasleemat.ai`) Usage](TECHNICAL.md#2-programmatic-python-sdk-tasleematai)**<br/>• **[CLI Scaffolder Setup (`pip install tasleemat`)](TECHNICAL.md#1-tasleemat-cli-scaffolder--search-tool)**<br/>• **[JSON Schemas & OKF Data Packages](TECHNICAL.md#3-data-architecture--synchronized-5-file-bundles)** |
+| • **[Browse 114 Templates by Phase](forms/en/)**<br/>• **[Explore 6 Stage-Gate Governance Checklists](docs/en/04_stage_gates_and_governance.md)**<br/>• **[Select Project Sizing Tiers (Small to Enterprise)](docs/en/05_tailoring_profiles.md)**<br/>• **[View Bilingual Lexicon & Terminology](docs/LEXICON.md)** | • **[Read TECHNICAL.md Developer Manual](TECHNICAL.md)**<br/>• **[Python SDK (`tasleemat.ai`) Usage](TECHNICAL.md#2-programmatic-python-sdk-tasleematai)**<br/>• **[CLI Scaffolder Setup (`pip install tasleemat`)](TECHNICAL.md#1-tasleemat-cli-scaffolder--search-tool)**<br/>• **[JSON Schemas & OKF Data Packages](TECHNICAL.md#3-data-architecture--synchronized-5-file-bundles)** |
 
 </div>
 
 ---
 
-## 🗺️ Project Lifecycle Navigation (102 Deliverables)
+## 🗺️ Project Lifecycle Navigation (114 Deliverables)
 
 The toolkit is organized chronologically into **8 Lifecycle Phases**. Every phase contains standardized English and Arabic templates with field guidance:
 
@@ -80,7 +80,7 @@ flowchart LR
 
 ## 🎯 Tailoring: Pick the Right Pack for Your Project
 
-Not every project requires all 102 templates. Tasleemat defines **4 Tailoring Tiers** to match your project size and risk level:
+Not every project requires all 114 templates. Tasleemat defines **4 Tailoring Tiers** to match your project size and risk level:
 
 | Tier | Project Sizing | Recommended Template Count | Focus Area |
 | :--- | :--- | :---: | :--- |

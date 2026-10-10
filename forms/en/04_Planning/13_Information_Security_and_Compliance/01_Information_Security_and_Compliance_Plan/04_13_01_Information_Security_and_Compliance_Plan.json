@@ -1,0 +1,45 @@
+{
+    "form_name": "INFORMATION SECURITY AND COMPLIANCE PLAN",
+    "document_reference": "PMO-04.13.01",
+    "_llm_instructions": "Populate the fields of 'INFORMATION SECURITY AND COMPLIANCE PLAN' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.13.01.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Regulatory_Framework_and_Applicable_Standards": {
+            "section": "Compliance Governance & Data Classification",
+            "label": "Regulatory Framework and Applicable Standards",
+            "guidance": "Mandatory national regulations (NCA ECC, NDMO, GDPR, ISO 27001) governing project delivery.",
+            "value": ""
+        },
+        "f02_Data_Classification_and_Privacy_Tiering": {
+            "section": "Compliance Governance & Data Classification",
+            "label": "Data Classification and Privacy Tiering",
+            "guidance": "Information classification scheme (Public, Internal, Confidential, Highly Confidential) and PII protections.",
+            "value": ""
+        },
+        "f03_Technical_and_Administrative_Security_Controls": {
+            "section": "Security Architecture & Incident Management",
+            "label": "Technical and Administrative Security Controls",
+            "guidance": "Encryption at rest/in transit, identity and access management (IAM), multi-factor authentication, and audit trails.",
+            "value": ""
+        },
+        "f04_Security_Assessment_and_Penetration_Testing_Cadence": {
+            "section": "Security Architecture & Incident Management",
+            "label": "Security Assessment and Penetration Testing Cadence",
+            "guidance": "Vulnerability scanning, automated code analysis (SAST/DAST), and third-party penetration testing gateways.",
+            "value": ""
+        },
+        "f05_Incident_Response_Protocol_and_Breach_Notification": {
+            "section": "Audit Governance & Sign-off Roles",
+            "label": "Incident Response Protocol and Breach Notification",
+            "guidance": "Escalation procedure, root cause containment, and mandatory regulatory reporting timeframes.",
+            "value": ""
+        },
+        "f06_Compliance_Audit_Gateways_and_Signoff_Criteria": {
+            "section": "Audit Governance & Sign-off Roles",
+            "label": "Compliance Audit Gateways and Signoff Criteria",
+            "guidance": "Stage-gate evidence packages required by Chief Information Security Officer (CISO) and legal counsel.",
+            "value": ""
+        }
+    }
+}

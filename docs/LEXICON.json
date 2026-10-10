@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "standard": "PMI PMBOK Guide 6th/7th Edition & PMI Lexicon of Project Management Terms",
-  "total_forms": 102,
+  "total_forms": 114,
   "forms": [
     {
       "code": "PMO-00.01",
@@ -513,6 +513,15 @@
       "ar_dir": "forms/ar/04_التخطيط/07_التواصل/01_خطة_إدارة_الاتصالات"
     },
     {
+      "code": "PMO-04.07.02",
+      "en_name": "Communications Distribution Matrix",
+      "ar_name": "مصفوفة توزيع وقنوات التواصل",
+      "group": "04_Planning",
+      "subgroup": "07_Communications",
+      "en_dir": "forms/en/04_Planning/07_Communications/02_Communications_Distribution_Matrix",
+      "ar_dir": "forms/ar/04_التخطيط/07_التواصل/02_مصفوفة_توزيع_وقنوات_التواصل"
+    },
+    {
       "code": "PMO-04.08.01",
       "en_name": "RISK MANAGEMENT PLAN",
       "ar_name": "خطة إدارة المخاطر",
@@ -630,6 +639,15 @@
       "ar_dir": "forms/ar/04_التخطيط/10_المعنيين/01_خطة_إشراك_المعنيين"
     },
     {
+      "code": "PMO-04.10.02",
+      "en_name": "Stakeholder Engagement Assessment Matrix",
+      "ar_name": "مصفوفة تقييم انخراط المعنيين",
+      "group": "04_Planning",
+      "subgroup": "10_Stakeholder",
+      "en_dir": "forms/en/04_Planning/10_Stakeholder/02_Stakeholder_Engagement_Assessment_Matrix",
+      "ar_dir": "forms/ar/04_التخطيط/10_المعنيين/02_مصفوفة_تقييم_انخراط_المعنيين"
+    },
+    {
       "code": "PMO-04.11.01",
       "en_name": "OCM Strategy and Plan",
       "ar_name": "استراتيجية وخطة إدارة التغيير المؤسسي",
@@ -654,6 +672,15 @@
       "pmi_standard_term": "Sustainable Project Management / ESG Integration Plan",
       "en_path": "forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan",
       "ar_path": "forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة"
+    },
+    {
+      "code": "PMO-04.13.01",
+      "en_name": "Information Security and Compliance Plan",
+      "ar_name": "خطة أمن المعلومات والامتثال التنظيمي",
+      "group": "04_Planning",
+      "subgroup": "13_Information_Security_and_Compliance",
+      "en_dir": "forms/en/04_Planning/13_Information_Security_and_Compliance/01_Information_Security_and_Compliance_Plan",
+      "ar_dir": "forms/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/01_خطة_أمن_المعلومات_والامتثال"
     },
     {
       "code": "PMO-05.01",
@@ -764,6 +791,33 @@
       "ar_dir": "forms/ar/05_التنفيذ/12_قائمة_التحقق_لتهيئة_فريق_العمل"
     },
     {
+      "code": "PMO-05.13",
+      "en_name": "Action Items Log",
+      "ar_name": "سجل بنود العمل والتكليفات",
+      "group": "05_Executing",
+      "subgroup": "",
+      "en_dir": "forms/en/05_Executing/13_Action_Items_Log",
+      "ar_dir": "forms/ar/05_التنفيذ/13_سجل_بنود_العمل_والتكليفات"
+    },
+    {
+      "code": "PMO-05.14",
+      "en_name": "Workstream Coordination and Standup Log",
+      "ar_name": "سجل التنسيق بين مسارات العمل واللقاءات اليومية",
+      "group": "05_Executing",
+      "subgroup": "",
+      "en_dir": "forms/en/05_Executing/14_Workstream_Coordination_and_Standup_Log",
+      "ar_dir": "forms/ar/05_التنفيذ/14_سجل_التنسيق_بين_فرق_العمل_والاجتماعات_اليومية"
+    },
+    {
+      "code": "PMO-05.15",
+      "en_name": "Deliverable Technical Inspection Checklist",
+      "ar_name": "قائمة فحص وتثبت المخرجات الفنية",
+      "group": "05_Executing",
+      "subgroup": "",
+      "en_dir": "forms/en/05_Executing/15_Deliverable_Technical_Inspection_Checklist",
+      "ar_dir": "forms/ar/05_التنفيذ/15_قائمة_فحص_وتثبت_المخرجات_الفنية"
+    },
+    {
       "code": "PMO-06.01",
       "en_name": "PROJECT STATUS REPORT",
       "ar_name": "تقرير حالة المشروع",
@@ -870,6 +924,42 @@
       "ar_path": "forms/ar/06_المراقبة_والتحكم/12_مقاييس_التدفق_وتدفق_القيمة"
     },
     {
+      "code": "PMO-06.13",
+      "en_name": "Executive Steering Committee Dashboard",
+      "ar_name": "لوحة معلومات اللجنة التوجيهية التنفيذية",
+      "group": "06_Monitoring_and_Controlling",
+      "subgroup": "",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/13_Executive_Steering_Committee_Dashboard",
+      "ar_dir": "forms/ar/06_المراقبة_والتحكم/13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية"
+    },
+    {
+      "code": "PMO-06.14",
+      "en_name": "Milestone Trend Analysis and Slip Chart",
+      "ar_name": "تحليل اتجاهات المعالم والانزلاق الزمني",
+      "group": "06_Monitoring_and_Controlling",
+      "subgroup": "",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/14_Milestone_Trend_Analysis_and_Slip_Chart",
+      "ar_dir": "forms/ar/06_المراقبة_والتحكم/14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني"
+    },
+    {
+      "code": "PMO-06.15",
+      "en_name": "Defect and Bug Tracking Log",
+      "ar_name": "سجل تتبع العيوب والملاحظات",
+      "group": "06_Monitoring_and_Controlling",
+      "subgroup": "",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/15_Defect_and_Bug_Tracking_Log",
+      "ar_dir": "forms/ar/06_المراقبة_والتحكم/15_سجل_تتبع_العيوب_والملاحظات"
+    },
+    {
+      "code": "PMO-06.16",
+      "en_name": "Risk and Issue Escalation Report",
+      "ar_name": "تقرير تصعيد المخاطر والمشكلات الحرجة",
+      "group": "06_Monitoring_and_Controlling",
+      "subgroup": "",
+      "en_dir": "forms/en/06_Monitoring_and_Controlling/16_Risk_and_Issue_Escalation_Report",
+      "ar_dir": "forms/ar/06_المراقبة_والتحكم/16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة"
+    },
+    {
       "code": "PMO-07.01",
       "en_name": "LESSONS LEARNED SUMMARY",
       "ar_name": "ملخص الدروس المستفادة",
@@ -912,6 +1002,24 @@
       "pmi_standard_term": "Post-Implementation Review (PIR) / Benefits Realization Audit",
       "en_path": "forms/en/07_Closing/05_Post_Implementation_Review",
       "ar_path": "forms/ar/07_الإغلاق/05_مراجعة_ما_بعد_التنفيذ"
+    },
+    {
+      "code": "PMO-07.06",
+      "en_name": "Knowledge Transfer and Asset Archival Signoff",
+      "ar_name": "محضر نقل المعرفة وأرشفة الأصول الرقمية",
+      "group": "07_Closing",
+      "subgroup": "",
+      "en_dir": "forms/en/07_Closing/06_Knowledge_Transfer_and_Asset_Archival_Signoff",
+      "ar_dir": "forms/ar/07_الإغلاق/06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية"
+    },
+    {
+      "code": "PMO-07.07",
+      "en_name": "Administrative and Resource Release Form",
+      "ar_name": "نموذج إبراء الذمة وتسريح الموارد",
+      "group": "07_Closing",
+      "subgroup": "",
+      "en_dir": "forms/en/07_Closing/07_Administrative_and_Resource_Release_Form",
+      "ar_dir": "forms/ar/07_الإغلاق/07_نموذج_إبراء_الذمة_وتسريح_الموارد"
     }
   ]
 }

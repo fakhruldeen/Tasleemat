@@ -63,8 +63,8 @@ class TestDocumentation(unittest.TestCase):
         with open(lex_json, "r", encoding="utf-8") as f:
             data = json.load(f)
         self.assertIsInstance(data, dict)
-        self.assertEqual(data.get("total_forms"), 102)
-        self.assertEqual(len(data.get("forms", [])), 102)
+        self.assertEqual(data.get("total_forms"), 114)
+        self.assertEqual(len(data.get("forms", [])), 114)
 
     def test_repo_readmes(self):
         """Verify root README.md and README_AR.md are rich, present, and valid."""

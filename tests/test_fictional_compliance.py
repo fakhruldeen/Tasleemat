@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 tests/test_fictional_compliance.py
-Verifies that all 204 reference examples in Tasleemat are rich, realistic,
+Verifies that all 228 reference examples in Tasleemat are rich, realistic,
 fully populated without unresolved placeholders, and contain proper fictional governance data.
 """
 
@@ -19,9 +19,9 @@ class TestFictionalCompliance(unittest.TestCase):
         self.ar_examples = list(EXAMPLES_DIR.glob("ar/**/*_مثال.md"))
 
     def test_example_counts_and_symmetry(self):
-        """Verify that exactly 102 EN examples and 102 AR examples exist."""
-        self.assertEqual(len(self.en_examples), 102, f"Expected 102 EN examples, got {len(self.en_examples)}")
-        self.assertEqual(len(self.ar_examples), 102, f"Expected 102 AR examples, got {len(self.ar_examples)}")
+        """Verify that exactly 114 EN examples and 114 AR examples exist."""
+        self.assertEqual(len(self.en_examples), 114, f"Expected 114 EN examples, got {len(self.en_examples)}")
+        self.assertEqual(len(self.ar_examples), 114, f"Expected 114 AR examples, got {len(self.ar_examples)}")
 
     def test_example_files_non_empty_and_substantive(self):
         """Verify that all example files contain substantive, realistic project content (> 400 chars)."""

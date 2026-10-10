@@ -1,0 +1,6 @@
+Section,Field,Guidance,LLM_Generated_Value
+Action Identification & Assignment,Action Item Identifier and Description,"Unique tracking ID and concise, actionable statement of the specific task or decision follow-up.",
+Action Identification & Assignment,Action Owner and Accountable Role,Single designated individual with primary execution and delivery accountability.,
+Action Identification & Assignment,Target Completion Date and Priority,"Firm committed due date and priority weighting (Critical, High, Medium, Low).",
+Status Tracking & Verification Signoff,Current Execution Status and Notes,"Real-time status (Open, In Progress, Blocked, Complete) with recent progress notes.",
+Status Tracking & Verification Signoff,Resolution Evidence and Verification Signoff,"Deliverable link, test evidence, or Project Manager formal verification confirming closure.",

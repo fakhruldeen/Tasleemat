@@ -1,0 +1,6 @@
+Section,Field,Guidance,LLM_Generated_Value
+Session Context & Workstream Alignments,Coordination Session Date and Attendees,"Meeting timestamp, participating workstream leads, Scrum Masters, and engineering facilitators.",
+Session Context & Workstream Alignments,Accomplished Items since Previous Sync,"Key deliverable increments, completed user stories, or milestones achieved across streams.",
+Session Context & Workstream Alignments,Planned Focus for Current Cycle,Immediate priority work packages and sprint goals committed for the next 24-48 hours.,
+"Dependencies, Blockers & Resolutions",Cross Stream Dependencies and Handoffs,"Critical interface handoffs, API integrations, or hardware prerequisites between teams.",
+"Dependencies, Blockers & Resolutions",Active Impediments and Escalation Owners,Blockers requiring Scrum of Scrums intervention or PMO escalation with assigned lead.,

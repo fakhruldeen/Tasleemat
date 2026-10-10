@@ -1,0 +1,7 @@
+Section,Field,Guidance,LLM_Generated_Value
+Communication Artifact & Content Details,Information Item and Description,"Specific reporting artifact, dashboard, or operational update item being distributed.",
+Communication Artifact & Content Details,Target Audience and Stakeholder Tier,"Designated recipient groups, stakeholder classification, and information consumption level.",
+"Channels, Protocols & Cadence",Distribution Channel and Delivery Format,"Approved transmission medium (email, portal, automated webhook, executive briefing) and file format.",
+"Channels, Protocols & Cadence",Cadence Trigger and Schedule,"Recurrence frequency (weekly, monthly, sprint boundary) or specific milestone event triggers.",
+Governance & Information Security,Responsible Sender and Author,"Designated role or individual accountable for preparing, validating, and sending the update.",
+Governance & Information Security,Confidentiality Classification and Access Controls,"Data sensitivity level (Public, Internal, Confidential, Restricted) and access control policies.",

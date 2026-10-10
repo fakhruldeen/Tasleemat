@@ -1,0 +1,6 @@
+Section,Field,Guidance,LLM_Generated_Value
+Escalation Event & Impact Diagnosis,Escalation Trigger and Urgency Classification,"Threshold breach triggering escalation (Budget +10%, Critical Path +14 days, Contractual dispute) and urgency rating.",
+Escalation Event & Impact Diagnosis,Detailed Context of Risk or Issue,"Factual, chronological narrative of the unresolved threat or materialized impediment.",
+Escalation Event & Impact Diagnosis,Project Impact Analysis Schedule Cost Scope Reputation,"Quantifiable financial, milestone delay, operational, and stakeholder reputation ramifications.",
+Options Analysis & Leadership Decision Request,Evaluated Options and Recommended Course of Action,"Alternative scenarios analyzed with pros, cons, costs, and the Project Manager recommended option.",
+Options Analysis & Leadership Decision Request,Required Executive Intervention and Decision Deadline,"Specific executive authority, budget release, or legal intervention required and hard deadline for decision.",

@@ -1,0 +1,7 @@
+Section,Field,Guidance,LLM_Generated_Value
+Compliance Governance & Data Classification,Regulatory Framework and Applicable Standards,"Mandatory national regulations (NCA ECC, NDMO, GDPR, ISO 27001) governing project delivery.",
+Compliance Governance & Data Classification,Data Classification and Privacy Tiering,"Information classification scheme (Public, Internal, Confidential, Highly Confidential) and PII protections.",
+Security Architecture & Incident Management,Technical and Administrative Security Controls,"Encryption at rest/in transit, identity and access management (IAM), multi-factor authentication, and audit trails.",
+Security Architecture & Incident Management,Security Assessment and Penetration Testing Cadence,"Vulnerability scanning, automated code analysis (SAST/DAST), and third-party penetration testing gateways.",
+Audit Governance & Sign-off Roles,Incident Response Protocol and Breach Notification,"Escalation procedure, root cause containment, and mandatory regulatory reporting timeframes.",
+Audit Governance & Sign-off Roles,Compliance Audit Gateways and Signoff Criteria,Stage-gate evidence packages required by Chief Information Security Officer (CISO) and legal counsel.,

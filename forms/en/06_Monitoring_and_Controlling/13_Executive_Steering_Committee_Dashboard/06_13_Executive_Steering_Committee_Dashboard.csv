@@ -1,0 +1,6 @@
+Section,Field,Guidance,LLM_Generated_Value
+Executive Health & Baseline Indicators,Executive Summary and Overall Health RAG,"High-level synthesis of progress and overall project health color code (Red, Amber, Green).",
+Executive Health & Baseline Indicators,Baseline Variance Summary Schedule Cost Scope,"Quantitative variance snapshot across CPI, SPI, budget burn rate, and major milestones.",
+Strategic Milestones & Resource Health,Key Milestone Roadmap and Forecast Dates,Target completion versus revised forecast for the next 3 to 6 strategic stage gates.,
+"Risks, Decisions & Leadership Actions",Top Three Strategic Risks and Mitigations,Highest-exposure threats with potential business impact and active contingency measures.,
+"Risks, Decisions & Leadership Actions",Required Steering Committee Decisions and Guidance,"Explicit governance approvals, budget reallocations, or policy waivers requested from executive sponsors.",

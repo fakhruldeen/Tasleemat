@@ -1,0 +1,39 @@
+{
+    "form_name": "WORKSTREAM COORDINATION AND STANDUP LOG",
+    "document_reference": "PMO-05.14",
+    "_llm_instructions": "Populate the fields of 'WORKSTREAM COORDINATION AND STANDUP LOG' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.14.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Coordination_Session_Date_and_Attendees": {
+            "section": "Session Context & Workstream Alignments",
+            "label": "Coordination Session Date and Attendees",
+            "guidance": "Meeting timestamp, participating workstream leads, Scrum Masters, and engineering facilitators.",
+            "value": ""
+        },
+        "f02_Accomplished_Items_since_Previous_Sync": {
+            "section": "Session Context & Workstream Alignments",
+            "label": "Accomplished Items since Previous Sync",
+            "guidance": "Key deliverable increments, completed user stories, or milestones achieved across streams.",
+            "value": ""
+        },
+        "f03_Planned_Focus_for_Current_Cycle": {
+            "section": "Session Context & Workstream Alignments",
+            "label": "Planned Focus for Current Cycle",
+            "guidance": "Immediate priority work packages and sprint goals committed for the next 24-48 hours.",
+            "value": ""
+        },
+        "f04_Cross_Stream_Dependencies_and_Handoffs": {
+            "section": "Dependencies, Blockers & Resolutions",
+            "label": "Cross Stream Dependencies and Handoffs",
+            "guidance": "Critical interface handoffs, API integrations, or hardware prerequisites between teams.",
+            "value": ""
+        },
+        "f05_Active_Impediments_and_Escalation_Owners": {
+            "section": "Dependencies, Blockers & Resolutions",
+            "label": "Active Impediments and Escalation Owners",
+            "guidance": "Blockers requiring Scrum of Scrums intervention or PMO escalation with assigned lead.",
+            "value": ""
+        }
+    }
+}
