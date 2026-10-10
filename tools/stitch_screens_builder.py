@@ -2207,6 +2207,23 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
       applyFilters();
     }}
 
+    // Initialize filters from URL parameters if present
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialQuery = urlParams.get('q');
+    const initialPhase = urlParams.get('phase');
+    const initialTier = urlParams.get('tier');
+
+    if (initialQuery && searchInput) {{
+      searchInput.value = initialQuery;
+    }}
+    if (initialPhase) {{
+      filterPhase(initialPhase);
+    }}
+    if (initialTier) {{
+      filterTier(initialTier);
+    }}
+    applyFilters();
+
     function resetAllFilters() {{
       searchInput.value = '';
       filterPhase('all');

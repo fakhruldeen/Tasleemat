@@ -2217,7 +2217,15 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
     for btn in soup.find_all(["button", "a"]):
         txt = btn.get_text(strip=True)
         lbl = btn.get("aria-label") or ""
-        if ("EN" in txt and ("عرب" in txt or "🇸🇦" in txt)) or "Toggle Language" in lbl or "translate" in txt or "translate" in str(btn.get("class", [])):
+        # Match only actual language toggles (not elements with Tailwind CSS transition translate-y-* classes, or navigation links like Bilingual Lexicon)
+        has_translate_icon = any(span.get_text(strip=True) == "translate" for span in btn.find_all("span", class_=lambda c: c and "material-symbols" in str(c)))
+        is_lang_toggle = (
+            ("EN" in txt and ("عرب" in txt or "🇸🇦" in txt))
+            or "Toggle Language" in lbl
+            or (txt.strip() in ["EN / العربية", "العربية (RTL) / EN", "العربية / EN", "EN", "العربية", "🇸🇦 العربية", "🇬🇧 English"])
+            or (has_translate_icon and ("EN" in txt or "العربية" in txt or "Language" in lbl or txt.strip() in ["EN / العربية", "العربية (RTL) / EN"]))
+        )
+        if is_lang_toggle:
             if page_type == "catalog_en":
                 target_lang_url = "../ar/index.html"
             elif page_type == "catalog_ar":
@@ -2302,6 +2310,16 @@ def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path, deliv
 
     # 5. Catalog EN & AR (Generated using full 114 Deliverables with exact Stitch design & interactive filtering)
     if deliverables:
+        for d in deliverables:
+            if not d.get("url_tpl_en") and d.get("doc_tpl_en"):
+                d["url_tpl_en"] = os.path.relpath(d["doc_tpl_en"], docs_dir).replace(".md", ".html")
+            if not d.get("url_guide_en") and d.get("doc_guide_en"):
+                d["url_guide_en"] = os.path.relpath(d["doc_guide_en"], docs_dir).replace(".md", ".html")
+            if not d.get("url_tpl_ar") and d.get("doc_tpl_ar"):
+                d["url_tpl_ar"] = os.path.relpath(d["doc_tpl_ar"], docs_dir).replace(".md", ".html")
+            if not d.get("url_guide_ar") and d.get("doc_guide_ar"):
+                d["url_guide_ar"] = os.path.relpath(d["doc_guide_ar"], docs_dir).replace(".md", ".html")
+
         html_cat_en = get_screen5_catalog_html(deliverables, lang="en", rel_root="../../")
         html_cat_ar = get_screen5_catalog_html(deliverables, lang="ar", rel_root="../../")
     else:
