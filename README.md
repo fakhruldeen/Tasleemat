@@ -14,14 +14,13 @@ type: Overview
 ### *The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Library*
 #### *Aligned with PMI PMBOK® Guide (6th, 7th & 8th Edition Ready) Standards*
 
-[![Live Documentation Portal](https://img.shields.io/badge/Live_Portal-fakhr.me%2FTasleemat-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://fakhr.me/Tasleemat/)
 [![PyPI version](https://badge.fury.io/py/tasleemat.svg?style=for-the-badge)](https://pypi.org/project/tasleemat/)
 [![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-059669?style=for-the-badge)](forms/)
 [![Language](https://img.shields.io/badge/Language-English%20%7C%20العربية-0052cc?style=for-the-badge)](README_AR.md)
 
 <br/>
 
-**[🌐 Web Documentation Portal](https://fakhr.me/Tasleemat/)** • **[🇸🇦 النسخة العربية](README_AR.md)** • **[👔 PM Quick Start](docs/en/01_getting_started.md)** • **[📋 Browse Templates](forms/en/)** • **[🚪 Stage-Gates Guide](docs/en/04_stage_gates_and_governance.md)** • **[📖 Terminology Lexicon](docs/LEXICON.md)** • **[💻 Technical & Developer Guide](TECHNICAL.md)**
+**[📚 Repository Documentation Index](docs/README.md)** • **[🇸🇦 النسخة العربية](README_AR.md)** • **[👔 PM Quick Start](docs/en/01_getting_started.md)** • **[📋 Browse Templates](forms/en/)** • **[🚪 Stage-Gates Guide](docs/en/04_stage_gates_and_governance.md)** • **[📖 Terminology Lexicon](docs/LEXICON.md)** • **[💻 Technical & Developer Guide](TECHNICAL.md)**
 
 ---
 
@@ -95,10 +94,10 @@ Not every project requires all 102 templates. Tasleemat defines **4 Tailoring Ti
 ---
 
 ## ⚡ 3 Simple Ways to Use Tasleemat
-
-### 1. Interactive Web Portal *(Easiest)*
-Visit **[fakhr.me/Tasleemat/](https://fakhr.me/Tasleemat/)** to search deliverables, filter by phase or project tier, and copy templates directly to your editor.
-
+ 
+### 1. Direct Repository Markdown & Guides *(Recommended)*
+Browse the structured [documentation index](docs/README.md) and deliverable forms directly in this repository. All templates and guidance are maintained as native GitHub Markdown.
+ 
 ### 2. Manual Markdown / PDF Export
 Navigate to any form directory (e.g. [`forms/en/03_Initiating/01_Project_Charter/`](forms/en/03_Initiating/01_Project_Charter/)), open `*_Template.md`, and export to PDF, Notion, Confluence, or Word.
 

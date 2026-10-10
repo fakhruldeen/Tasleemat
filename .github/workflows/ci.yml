@@ -45,10 +45,6 @@ jobs:
         run: |
           python3 tools/validate_frictionless.py
 
-      - name: Generate Complete Static HTML Documentation Portal
-        run: |
-          python3 tools/generate_documentation_portal.py
-
 
       - name: Run Complete Automated Test Suite (38 Unit & Integration Tests)
         run: |

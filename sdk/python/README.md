@@ -1,11 +1,10 @@
 # 🚀 Tasleemat (تسليمات) — Enterprise Bilingual PMO Toolkit & AI Automation Library
 
 [![PyPI version](https://badge.fury.io/py/tasleemat.svg)](https://pypi.org/project/tasleemat/)
-[![Live Documentation Portal](https://img.shields.io/badge/Live_Portal-fakhr.me%2FTasleemat-2563eb?logo=google-chrome&logoColor=white)](https://fakhr.me/Tasleemat/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://fakhr.me/Tasleemat/)
-[![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-059669)](https://fakhr.me/Tasleemat/)
+[![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://github.com/fakhruldeen/Tasleemat)
+[![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat/tree/main/forms)
 
 **Tasleemat (تسليمات)** is a production-grade, open-source Project Management Office (PMO) operating system and Python library designed for **Project Managers, PMO Directors, Business Leaders, Data Engineers, and AI Engineers**.
 
@@ -200,8 +199,8 @@ Inside every form folder (e.g., `forms/en/03_Initiating/01_Project_Charter/`), T
 
 ## 🔗 Useful Links & Citation
 
-- **🌐 Live Web Documentation Portal:** [fakhr.me/Tasleemat/](https://fakhr.me/Tasleemat/)
 - **🐙 GitHub Repository:** [github.com/fakhruldeen/Tasleemat](https://github.com/fakhruldeen/Tasleemat)
+- **📚 Documentation Index:** [docs/README.md](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/README.md)
 - **📚 Citation (Zenodo DOI):** [10.5281/zenodo.23193523](https://doi.org/10.5281/zenodo.23193523)
 
 > Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.2.0 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523

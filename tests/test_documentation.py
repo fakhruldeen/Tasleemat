@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 tests/test_documentation.py
-Validates the documentation portal, 24 comprehensive operational manuals (12 EN / 12 AR),
-bilingual README files, Lexicon dictionaries, and mkdocs.yml navigation integrity.
+Validates repository documentation, 24 comprehensive operational manuals (12 EN / 12 AR),
+bilingual README files, Lexicon dictionaries, and Markdown link integrity.
 """
 
 import unittest
@@ -65,35 +65,6 @@ class TestDocumentation(unittest.TestCase):
         self.assertIsInstance(data, dict)
         self.assertEqual(data.get("total_forms"), 102)
         self.assertEqual(len(data.get("forms", [])), 102)
-
-    def test_static_portal_site_generation(self):
-        """Verify the custom static HTML portal generates site/ with core HTML pages and assets."""
-        site_dir = ROOT / "site"
-        if not site_dir.exists():
-            import subprocess
-            subprocess.run(["python3", str(ROOT / "tools" / "generate_documentation_portal.py")], check=True)
-
-        self.assertTrue(site_dir.exists(), "site/ directory must exist after portal generation")
-
-        required_pages = [
-            "index.html",
-            "README_AR.html",
-            "TECHNICAL.html",
-            "LEXICON.html",
-            "catalog/en/index.html",
-            "catalog/ar/index.html",
-            "en/01_getting_started.html",
-            "ar/01_getting_started.html",
-            "assets/custom.css",
-            "assets/tasleemat_data.js",
-            "assets/search.js",
-            "assets/explorer.js",
-        ]
-        for rel in required_pages:
-            p = site_dir / rel
-            self.assertTrue(p.exists(), f"Static portal page {rel} missing in site/")
-
-
 
     def test_repo_readmes(self):
         """Verify root README.md and README_AR.md are rich, present, and valid."""

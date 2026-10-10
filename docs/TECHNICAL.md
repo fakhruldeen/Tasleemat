@@ -8,7 +8,7 @@ type: Guide
 
 Welcome to the technical engineering reference manual for **Tasleemat (تسليمات)**. This document contains developer-focused instructions for the Python SDK, CLI project scaffolder, JSON Schema architecture, OKF Data Packages, automated test suites, and CI/CD documentation workflows.
 
-> 👔 **Looking for Project Management Templates & Guides?** Return to the main **[README.md](README.md)** or **[README_AR.md](README_AR.md)**.
+> 👔 **Looking for Project Management Templates & Guides?** Return to the main **[README.md](../README.md)** or **[README_AR.md](../README_AR.md)**.
 
 ---
 
@@ -116,24 +116,15 @@ tasleemat test -v
 | **`test_governance_templates.py`** | Executive Document Control tables and relative link integrity |
 | **`test_fictional_compliance.py`** | Sample data integrity, non-empty content checks, zero unresolved placeholders |
 | **`test_cli_and_exporters.py`** | Multi-tier project scaffolding, parameter substitution, and catalog search |
-| **`test_documentation.py`** | 24 operational manuals, LEXICON integrity, and MkDocs navigation |
+| **`test_documentation.py`** | 24 operational manuals, LEXICON integrity, and repository Markdown link integrity |
 
 ---
 
-## 🛠️ 5. Documentation Portal Generator
+## 🛠️ 5. Documentation Architecture
 
-The static documentation site ([fakhr.me/Tasleemat/](https://fakhr.me/Tasleemat/)) is generated using MkDocs Material and custom Python tooling.
+Tasleemat follows a pure **Repository-First** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](.) and [`forms/`](../forms/) directories as native GitHub-flavored Markdown.
 
-```bash
-# Regenerate documentation assets and Navigation structure
-python3 tools/generate_documentation_portal.py
-
-# Build static HTML site
-mkdocs build --clean
-
-# Serve site locally for development
-mkdocs serve
-```
+The previous GitHub Pages deployment portal has been retired. Documentation is directly accessible, searchable, and navigable within the repository.
 
 ---
 

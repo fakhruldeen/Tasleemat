@@ -37,7 +37,7 @@ flowchart LR
     A --> C["Python Validation Suite"]
     C --> D["GitHub Actions CI Pipeline"]
     A --> E["Batch Exporter (HTML/PDF)"]
-    A --> F["MkDocs Interactive Portal"]
+    A --> F["Repository Markdown Documentation"]
 ```
 
 ---
@@ -179,20 +179,9 @@ python3 tools/export_deliverables.py my_project_workspace/
 
 ---
 
-## 🌐 3. Live Web Documentation Portal (MkDocs Material)
+## 🌐 3. Repository-First Documentation Architecture
 
-Tasleemat includes a pre-configured `mkdocs.yml` setup leveraging **Material for MkDocs** with dark/light themes, search index, and Mermaid diagram rendering.
-
-```bash
-# Install dependencies
-pip install mkdocs-material
-
-# Serve locally with live-reload
-mkdocs serve
-
-# Build static production site
-mkdocs build
-```
+Tasleemat maintains all governance guides, operational manuals, and bilingual templates directly within the GitHub repository as structured Markdown. The previous web portal has been retired to keep documentation version-controlled, auditable, and directly accessible alongside code and templates. All guides can be navigated starting from [`docs/README.md`](../README.md).
 
 ---
 
