@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقرير إغلاق العقد | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/02_تقرير_إغلاق_العقد/07_02_تقرير_إغلاق_العقد_قالب.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/07_Closing/07_02_Contract_Closeout_Report_Template.html">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-07.02</span>
+    <span class="badge badge-phase">07. الإغلاق</span>
+    <span class="badge badge-standard">معايير PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../guides/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_دليل.html">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/07_الإغلاق/07_02_تقرير_إغلاق_العقد_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/02_تقرير_إغلاق_العقد/07_02_تقرير_إغلاق_العقد_قالب.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/07_Closing/07_02_Contract_Closeout_Report_Template.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/07_الإغلاق/02_تقرير_إغلاق_العقد/07_02_تقرير_إغلاق_العقد_قالب.npy
+token_count: 2770
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.878822+00:00'
+form_id: PMO-07.02
+language: ar
+status: approved
+---
+-->
+
+<!-- تعليمات للنموذج الذكي (LLM): قم بتوليد واستيفاء الحقول وعناصر البيانات [ أضف التفاصيل... ] بدقة واحترافية استناداً إلى سياق المشروع وبيانات الإدخال المعتمدة..
+
+يتضمن إغلاق توثيق أداء المورد حتى يمكن استخدام تلك المعلومات لتقييم المورد في الأعمال
+المستقبلية. ويدعم إغلاق العقد عملية إغلاق المشروع ويساعد على ضمان استكمال اتفاقيات العقد أو
+إنهائها.
+
+وقبل أن يمكن إغلاق العقد أو إنهائه بالكامل، يجب حل جميع النزاعات، وقبول المنتج أو النتيجة،
+ودفع الدفعات النهائية. وسجل تاريخ إتمام العقد، ومن اعتمده، وتاريخ الدفعة النهائية.
+
+ويستند تقرير إغلاق العقد إلى الجدول 4.8، عناصر إغلاق العقد.
+
+ملاحظات التخصيص:
+*  في حالة العقد الصغير، يمكنك دمج جميع المعلومات في تحليل أداء المورد في فقرة ملخص واحدة.
+*  في حالة العقود الصغيرة، قد لا تحتاج إلى معلومات عن تغييرات العقد أو نزاعاته.
+*  إذا كان المشروع قائمًا حول عقد كبير واحد، يمكنك دمج المعلومات الواردة في تقرير إغلاق
+  المشروع مع هذا النموذج.
+
+المحاذاة: يجب أن يتسق التقرير ويتوافق مع خطة إدارة المشتريات وتدقيق المشتريات وسجل التغييرات
+وتقرير إغلاق المشروع.
+
+توجيهات استيفاء الأقسام:
+*  **تحديد العقد:** سجل مرجع العقد والمورد ونوع العقد وقيمته وحالة الإغلاق.
+*  **ما تمت معالجته بشكل جيد:** في تحليل أداء المورد، صف ما تمت معالجته بشكل جيد في النطاق
+  والجودة والجدول الزمني والتكلفة، إلى جانب أي جانب آخر من العقد أو الشراء.
+*  **ما يمكن تحسينه:** في الأبعاد الخمسة نفسها، صف ما كان يمكن تحسينه. وينبغي أن يكون كل بند
+  محددًا وقابلًا للتنفيذ.
+*  **سجل تغييرات العقد:** لكل تغيير، أدخل المعرف والوصف وتاريخ الاعتماد من سجل التغييرات.
+*  **سجل نزاعات العقد:** لكل نزاع أو مطالبة، صفه وتسويته وتاريخ حله. ويجب حل جميع النزاعات
+  قبل الإغلاق.
+*  **إتمام العقد والدفعة النهائية:** سجل تاريخ الإتمام ومن اعتمده وتاريخ الدفعة النهائية.
+*  **التعليقات:** أضف أي تعليقات تضفي على التقرير صلة إضافية. -->
+
+<h3 align="left">{{اسم_الشركة}}</h3>
+<h2 align="left">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
+<h1 align="center">تقرير إغلاق العقد</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><strong>تاريخ الإعداد:</strong> {{التاريخ_الحالي}}</th>
+<th style="text-align: right;"><strong>مدير المشروع:</strong> {{اسم_مدير_المشروع}}</th>
+<th style="text-align: right;"><strong>إعداد:</strong> {{معد_الوثيقة}}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1">1. تحديد العقد</h2>
+<!-- حدد العقد الجاري إغلاقه حتى يمكن حفظ هذا السجل في مكانه الصحيح وإعادة استخدامه عند
+تقييم المورد في أعمال مستقبلية. سجل مرجع العقد والمورد ونوع العقد وقيمته، وما إذا كان العقد
+يُغلق كمكتمل أو كمنتهٍ. وحالة الإغلاق مهمة لأن العقد المنهي يُغلق أيضًا، لكن تفسير سجل
+الأداء يختلف بينهما.
+- **مرجع العقد:** رقم العقد أو أمر الشراء.
+- **المورد:** الكيان القانوني الذي تنفيذ العمل.
+- **نوع العقد وقيمته:** نوع العقد، مثل السعر الثابت أو تعويض التكلفة، وإجمالي القيمة
+ التعاقدية.
+- **حالة الإغلاق:** مكتمل أو منتهٍ، وتاريخ بدء الإغلاق. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الحقل</th>
+<th style="text-align: right;">الإدخال</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مرجع العقد</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>المورد</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>نوع العقد وقيمته</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>حالة الإغلاق</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2">2. تحليل أداء المورد: ما تمت معالجته بشكل جيد</h2>
+<!-- سجل ما فعله المورد بشكل جيد، في الأبعاد الخمسة الواردة في الجدول 4.8. ويوجد هذا
+السجل ليُستخدم في تقييم المورد للعمل المستقبلي، لذا اذكر الممارسة محددة والدليل عليها بدلًا من
+تقييم عام. وأبقي الأبعاد منفصلة، فالاستنتاج الذي يخلط بين الجودة والتكلفة لا يمكن اتخاذ
+إجراء بشأنه. ويخص صف "أخرى" النقاط النوعية، مثل مدى سهولة التعامل مع المورد.
+- **النطاق:** جوانب نطاق العقد التي تمت معالجتها بشكل جيد.
+- **الجودة:** جوانب جودة المنتج التي تمت معالجتها بشكل جيد.
+- **الجدول الزمني:** جوانب الجدول الزمني للعقد التي تمت معالجتها بشكل جيد.
+- **التكلفة:** جوانب ميزانية العقد التي تمت معالجتها بشكل جيد.
+- **أخرى:** أي جانب آخر من العقد أو الشراء تمت معالجته بشكل جيد، بما في ذلك مدى سهولة
+ التعامل مع المورد. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">البُعد</th>
+<th style="text-align: right;">ما تمت معالجته بشكل جيد</th>
+<th style="text-align: right;">الدليل أو المثال</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>النطاق</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>الجودة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>الجدول الزمني</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>التكلفة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>أخرى</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!--
+ملاحظة تخصيص: في حالة العقد الصغير، يمكن دمج جميع معلومات أداء المورد في فقرة ملخص واحدة.
+-->
+
+<hr />
+<h2 id="3">3. تحليل أداء المورد: ما يمكن تحسينه</h2>
+<!-- سجل ما كان ينبغي فعله بشكل أفضل، في الأبعاد الخمسة نفسها. وينبغي أن يكون كل بند محددًا
+وقابلًا للتنفيذ: حدد النقص وأثره على العقد أو المشروع وما ينبغي فعله بدلًا منه. وتُعد هذه
+القسم الأكثر قيمة للمشتريات المستقبلية، لأن أي عيب يُسجل هنا سيغيّر طريقة كتابة العقد
+التالي أو إدارته. وإذا كان السبب مؤسسيًا وليس خاصًا بالمورد، فاذكر ذلك.
+- **النطاق:** جوانب نطاق العقد التي يمكن تحسينها.
+- **الجودة:** جوانب جودة المنتج التي يمكن تحسينها.
+- **الجدول الزمني:** جوانب الجدول الزمني للعقد التي يمكن تحسينها.
+- **التكلفة:** جوانب ميزانية العقد التي يمكن تحسينها.
+- **أخرى:** أي جانب آخر من العقد أو الشراء يمكن تحسينه. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">البُعد</th>
+<th style="text-align: right;">ما يمكن تحسينه</th>
+<th style="text-align: right;">الإجراء الموصى به</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>النطاق</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>الجودة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>الجدول الزمني</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>التكلفة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>أخرى</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!--
+إرشادات التعليق: حدد النقص وأثره وما ينبغي فعله بدلًا منه.
+-->
+
+<hr />
+<h2 id="4">4. سجل تغييرات العقد</h2>
+<!-- سجل كل تغيير تم إجراءه على العقد أثناء تنفيذه، مع الأخذ بالعناصر الثلاثة جميعها من
+سجل التغييرات بدلاً من إعادة كتابتها من الذاكرة. فالتغيير يعدل النطاق أو السعر أو الجدول
+الزمني المتعاقد عليه، ولذلك فإن أي تغيير غير مسجل يترك العقد غير مطابق للحساب النهائي.
+وأدخل معرف التغيير كما هو تمامًا في سجل التغييرات حتى يمكن مطابقة السجلين.
+- **معرف التغيير:** معرف التغيير من سجل التغييرات.
+- **وصف التغيير:** الوصف من سجل التغييرات.
+- **تاريخ الاعتماد:** تاريخ الاعتماد من سجل التغييرات. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرف التغيير</th>
+<th style="text-align: right;">وصف التغيير</th>
+<th style="text-align: right;">تاريخ الاعتماد</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!--
+ملاحظة تخصيص: في حالة العقود الصغيرة، قد لا يكون هذا القسم ضروريًا.
+-->
+
+<hr />
+<h2 id="5">5. سجل نزاعات العقد</h2>
+<!-- سجل كل نزاع أو مطالبة مرفوعة ضد العقد ونتيجتها. ويجب حل جميع النزاعات قبل أن يمكن
+إغلاق العقد أو إنهائه بالكامل، لذلك فإن أي بند ما زال مفتوحًا في تاريخ هذا التقرير يمنع
+الإغلاق. واذكر التسوية بصيغة محددة، بما في ذلك أي مبلغ تسوية، لأن التسوية هي التي تُحرر
+العقد.
+- **وصف النزاع:** صف النزاع أو المطالبة.
+- **التسوية:** صف التسوية.
+- **تاريخ الحل:** تاريخ حل النزاع أو المطالبة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">وصف النزاع</th>
+<th style="text-align: right;">التسوية</th>
+<th style="text-align: right;">تاريخ الحل</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!--
+ملاحظة تخصيص: في حالة العقود الصغيرة، قد لا يكون هذا القسم ضروريًا.
+-->
+
+<hr />
+<h2 id="6">6. إتمام العقد والدفعة النهائية</h2>
+<!-- سجل العناصر الثلاثة التي تُثبت الإغلاق. يجب حل جميع النزاعات، وقبول المنتج أو النتيجة،
+ودفع الدفعات النهائية قبل أن يمكن إغلاق العقد أو إنهائه بالكامل. واذكر اسم من اعتمد الإنجاز
+وليس الدور فقط، حتى يكون القبول قابلًا للتتبع. وإذا كان العقد يُنهى بدلًا من إكماله، فاذكر
+ذلك هنا واشرح السبب في قسم التعليقات.
+- **تاريخ إتمام العقد:** التاريخ الذي اكتمل فيه العقد.
+- **تم الاعتماد من:** من اعتمد إتمام العقد.
+- **تاريخ الدفعة النهائية:** تاريخ الدفعة النهائية. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الحقل</th>
+<th style="text-align: right;">الإدخال</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>تاريخ إتمام العقد</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>تم الاعتماد من</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>تاريخ الدفعة النهائية</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!--
+إرشادات التعليق: يجب حل جميع النزاعات وقبول النتيجة ودفع الدفعة النهائية قبل الإغلاق.
+-->
+
+<hr />
+<h2 id="7">7. التعليقات</h2>
+<!-- أضف أي تعليقات تضفي على التقرير صلة إضافية، مثل سبب إنهاء العقد بدلًا من إكماله، أو
+حدود النطاق، أو السياق الذي يحتاجه تقرير إغلاق المشروع. -->
+
+<hr />
+<h3 id="_1">الاعتماد والموافقات</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مدير العقود</strong></td>
+<td style="text-align: right;">{{اسم_مدير_العقود}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مدير المشتريات</strong></td>
+<td style="text-align: right;">{{اسم_مدير_المشتريات}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>المراقب المالي / المستشار القانوني</strong></td>
+<td style="text-align: right;">{{اسم_المراقب_المالي}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+ <strong>القالب:</strong> تقرير إغلاق العقد | <strong>المرجع:</strong> PMO-07.02 <br>
+ <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

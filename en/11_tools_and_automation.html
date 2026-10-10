@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛠️ Developer Tools, Automation, & CI/CD Integration Guide | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../en/11_tools_and_automation.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/11_tools_and_automation.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/11_tools_and_automation.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/en/11_tools_and_automation.npy
+token_count: 1753
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.492539+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
+</p>
+
+<hr />
+<h1 id="developer-tools-automation-cicd-integration-guide">🛠️ Developer Tools, Automation, &amp; CI/CD Integration Guide</h1>
+<p><strong>Document ID:</strong> <code>TASLEEMAT-GUIDE-11-TOOLS-AUTOMATION</code><br />
+<strong>Version:</strong> 2.0<br />
+<strong>Target Audience:</strong> DevOps Engineers, PMO Tool Administrators, Software Developers, Project Managers  </p>
+<hr />
+<h2 id="automation-capabilities">🎯 Automation Capabilities</h2>
+<p>Tasleemat is built with a <strong>Docs-as-Code</strong> and <strong>Governance-as-Code</strong> philosophy. Everything is version-controllable, programmatically verifiable, and pipeline-friendly.</p>
+<pre><code class="language-mermaid">flowchart LR
+    A[&quot;102 Bilingual Deliverables&quot;] --&gt; B[&quot;tasleemat-cli Scaffolder&quot;]
+    A --&gt; C[&quot;Python Validation Suite&quot;]
+    C --&gt; D[&quot;GitHub Actions CI Pipeline&quot;]
+    A --&gt; E[&quot;Batch Exporter (HTML/PDF)&quot;]
+    A --&gt; F[&quot;Repository Markdown Documentation&quot;]
+</code></pre>
+<hr />
+<h2 id="1-official-tasleemat-cli-tool-tasleemat">🚀 1. Official Tasleemat CLI Tool (<code>tasleemat</code>)</h2>
+<p>Tasleemat provides an official Python SDK and CLI tool designed to streamline project initialization and form exploration. You can install it globally via PyPI:</p>
+<pre><code class="language-bash">pip install tasleemat
+</code></pre>
+<h3 id="a-scaffolding-a-new-tailored-project-init">A. Scaffolding a New Tailored Project (<code>init</code>)</h3>
+<p>Generate a complete, ready-to-use project workspace tailored to your exact governance tier and methodology pack:</p>
+<pre><code class="language-bash"># Interactive Wizard Mode (prompts you step-by-step)
+tasleemat init
+
+# Fast-Track Flag Mode: Tier 2 (Standard) with Agile Pack in Arabic
+tasleemat init \
+  --tier 2 \
+  --pack agile \
+  --lang ar \
+  --name &quot;منصة الخدمات الرقمية الموحدة&quot; \
+  --code &quot;PRJ-2026-DIGITAL-01&quot; \
+  --pm &quot;سارة الأحمد&quot; \
+  --sponsor &quot;خالد المنصور&quot; \
+  --out ./my_new_project
+
+# Enterprise Tier 1 Project in both English and Arabic
+tasleemat init \
+  --tier 1 \
+  --pack hybrid \
+  --lang both \
+  --name &quot;Enterprise Core Transformation&quot; \
+  --code &quot;PRJ-2026-CORE-01&quot; \
+  --pm &quot;John Doe&quot; \
+  --sponsor &quot;Jane Smith&quot; \
+  --out ./enterprise_workspace
+</code></pre>
+<h4 id="what-init-does-automatically">What <code>init</code> Does Automatically:</h4>
+<ol>
+<li>Filters the 102 forms down to the exact mandatory subset for your selected tier (1, 2, or 3) and pack (<code>agile</code>, <code>ai</code>, <code>predictive</code>, <code>hybrid</code>).</li>
+<li>Copies all templates, guides, JSON schemas, and CSV field dictionaries.</li>
+<li>Automatically pre-populates document headers (Project Name, Code, PM Name, Sponsor, Date) across all generated files.</li>
+<li>Creates a custom <code>PROJECT_README.md</code> with an actionable Stage-Gate checklist and direct deliverable links.</li>
+</ol>
+<hr />
+<h3 id="b-searching-the-forms-catalog-search">B. Searching the Forms Catalog (<code>search</code>)</h3>
+<p>Search across all 102 forms by keyword in Arabic or English:</p>
+<pre><code class="language-bash"># Search in English
+tasleemat search &quot;Risk&quot; --lang en
+tasleemat search &quot;Sprint&quot; --lang en
+tasleemat search &quot;Model Card&quot; --lang en
+
+# Search in Arabic
+tasleemat search &quot;مخاطر&quot; --lang ar
+tasleemat search &quot;ميثاق&quot; --lang ar
+tasleemat search &quot;ذكاء اصطناعي&quot; --lang ar
+</code></pre>
+<hr />
+<h3 id="c-listing-all-available-forms-list">C. Listing All Available Forms (<code>list</code>)</h3>
+<p>Inspect the complete 102-form catalog with IDs and folder mappings:</p>
+<pre><code class="language-bash">tasleemat list --lang en
+tasleemat list --lang ar
+</code></pre>
+<h3 id="d-managing-llm-account-credentials-config">D. Managing LLM Account Credentials (<code>config</code>)</h3>
+<p>Configure default Large Language Model (LLM) API credentials and providers for automated document generation:</p>
+<pre><code class="language-bash"># View active configuration
+tasleemat config show
+
+# Set default provider and model (supports: gemini, openai, anthropic, ollama, mock)
+tasleemat config set --provider gemini --model gemini-2.5-flash
+tasleemat config set --provider openai --model gpt-4o
+
+# Pass API key directly (or set GEMINI_API_KEY / OPENAI_API_KEY in environment)
+tasleemat config set --provider gemini --key &quot;AIzaSy...&quot;
+</code></pre>
+<hr />
+<h3 id="e-ai-powered-artifact-auto-filling-generate">E. AI-Powered Artifact Auto-Filling (<code>generate</code>)</h3>
+<p>Automatically generate and auto-fill publication-ready PMO deliverables using your configured LLM API account and project notes:</p>
+<pre><code class="language-bash"># Auto-fill Project Charter (PMO-03.01) using raw meeting notes
+tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./03_01_Project_Charter.md
+
+# Auto-fill Risk Register in Arabic using OpenAI
+tasleemat generate --form PMO-04.08.02 --notes ./risk_workshop_notes.txt --lang ar --provider openai --out ./04_08_02_Risk_Register.md
+
+# Run mock generation test without consuming API tokens
+tasleemat generate --form PMO-03.01 --notes &quot;Enterprise cloud migration project&quot; --mock
+</code></pre>
+<hr />
+<h3 id="f-running-the-automated-test-suite-test">F. Running the Automated Test Suite (<code>test</code>)</h3>
+<p>Run the entire automated verification suite (including AI Client tests) directly from the CLI:</p>
+<pre><code class="language-bash"># Run tests with summary
+tasleemat test
+
+# Run tests with verbose output
+tasleemat test -v
+
+# Or run via standard Python unittest
+python3 -m unittest discover -s tests -v
+</code></pre>
+<hr />
+<h2 id="2-batch-deliverable-exporter-toolsexport_deliverablespy">🖨️ 2. Batch Deliverable Exporter (<code>tools/export_deliverables.py</code>)</h2>
+<p>Convert single Markdown forms or entire project directories into executive, print-ready HTML documents with embedded CSS and full Arabic RTL typography support:</p>
+<pre><code class="language-bash"># Export a single document to HTML
+python3 tools/export_deliverables.py forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter_Template.md -o output.html
+
+# Export an Arabic deliverable with native RTL styling
+python3 tools/export_deliverables.py forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع_قالب.md -o charter.html
+
+# Batch export an entire directory
+python3 tools/export_deliverables.py my_project_workspace/
+</code></pre>
+<hr />
+<h2 id="3-repository-first-documentation-architecture">🌐 3. Repository-First Documentation Architecture</h2>
+<p>Tasleemat maintains all governance guides, operational manuals, and bilingual templates directly within the GitHub repository as structured Markdown. The previous web portal has been retired to keep documentation version-controlled, auditable, and directly accessible alongside code and templates. All guides can be navigated starting from <a href="../README.html"><code>docs/README.md</code></a>.</p>
+<hr />
+<h2 id="4-python-quality-parity-audit-suite">🛡️ 4. Python Quality &amp; Parity Audit Suite</h2>
+<p>The repository includes built-in verification scripts and full unit test coverage executed automatically by our CI/CD pipeline:</p>
+<h3 id="1-master-test-suite-tests">1. Master Test Suite (<code>tests/</code>)</h3>
+<ul>
+<li><strong>Execution:</strong> <code>python3 -m unittest discover -s tests -v</code></li>
+<li><strong>Modules:</strong> <code>test_parity.py</code>, <code>test_schemas.py</code>, <code>test_okf_datapackage.py</code>, <code>test_governance_templates.py</code>, <code>test_fictional_compliance.py</code>, <code>test_cli_and_exporters.py</code>, <code>test_documentation.py</code>.</li>
+</ul>
+<h3 id="2-form-quality-schema-auditor-toolsaudit_formspy">2. Form Quality &amp; Schema Auditor (<code>tools/audit_forms.py</code>)</h3>
+<ul>
+<li><strong>Execution:</strong> <code>python3 tools/audit_forms.py</code></li>
+<li><strong>Function:</strong> Scans all 204 form files for governance table compliance, section depth, and formatting.</li>
+</ul>
+<h3 id="3-open-knowledge-foundation-frictionless-validator-toolsvalidate_okfpy">3. Open Knowledge Foundation Frictionless Validator (<code>tools/validate_okf.py</code>)</h3>
+<ul>
+<li><strong>Execution:</strong> <code>python3 tools/validate_okf.py</code></li>
+<li><strong>Function:</strong> Validates <code>datapackage.json</code> and all 204 frictionless JSON schemas against international open data standards.</li>
+</ul>
+<h3 id="4-bilingual-parity-checker-toolsparitypy">4. Bilingual Parity Checker (<code>tools/parity.py</code>)</h3>
+<ul>
+<li><strong>Execution:</strong> <code>python3 tools/parity.py forms/en forms/ar</code></li>
+<li><strong>Function:</strong> Ensures exact 1:1 structural symmetry between English and Arabic deliverable catalogs.</li>
+</ul>
+<hr />
+<h2 id="5-github-actions-cicd-pipeline-githubworkflowsciyml">⚙️ 5. GitHub Actions CI/CD Pipeline (<code>.github/workflows/ci.yml</code>)</h2>
+<p>Every push and pull request to the <code>main</code> branch triggers an automated GitHub Actions workflow that:
+1. Validates schema integrity across all 204 form bundles (<code>audit_forms.py</code>).
+2. Checks web rendering syntax (<code>check_rendering.py</code>).
+3. Enforces 1:1 English-Arabic structural parity (<code>parity.py</code>).
+4. Validates Frictionless Open Data Package (<code>validate_okf.py</code>).
+5. Executes the complete 28-test automated test suite (<code>tests/</code>).
+6. Runs end-to-end integration tests on <code>tasleemat_cli.py</code>.</p>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

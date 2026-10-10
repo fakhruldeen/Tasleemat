@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❓ Frequently Asked Questions & Troubleshooting Guide | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../en/10_faq_and_troubleshooting.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/10_faq_and_troubleshooting.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/10_faq_and_troubleshooting.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/en/10_faq_and_troubleshooting.npy
+token_count: 1153
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.497865+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
+</p>
+
+<hr />
+<h1 id="frequently-asked-questions-troubleshooting-guide">❓ Frequently Asked Questions &amp; Troubleshooting Guide</h1>
+<p><strong>Document ID:</strong> <code>TASLEEMAT-GUIDE-10-FAQ-TROUBLESHOOTING</code><br />
+<strong>Version:</strong> 2.0<br />
+<strong>Target Audience:</strong> Project Managers, PMO Officers, Auditors, System Integrators  </p>
+<hr />
+<h2 id="top-frequently-asked-questions">💡 Top Frequently Asked Questions</h2>
+<h3 id="general-architecture-standards">General Architecture &amp; Standards</h3>
+<h4 id="q1-do-i-have-to-fill-out-all-102-forms-for-every-project">Q1: Do I have to fill out all 102 forms for every project?</h4>
+<p><strong>Answer:</strong> Absolutely not. Tasleemat is strictly tailored based on project size and category. Consult <a href="05_tailoring_profiles.html"><code>05_tailoring_profiles.md</code></a>. Tier 3 (Small/Agile) projects only require <strong>12 core deliverables</strong>, whereas Tier 1 (Strategic Enterprise) projects utilize up to 45 forms.</p>
+<h4 id="q2-what-international-standards-does-tasleemat-align-with">Q2: What international standards does Tasleemat align with?</h4>
+<p><strong>Answer:</strong> Tasleemat aligns with:
+- <strong>PMI PMBOK® Guide:</strong> 6th Edition (Process Groups &amp; Knowledge Areas), 7th Edition (Performance Domains &amp; Principles), and 8th Edition concepts.
+- <strong>NIST AI RMF 1.0 &amp; ISO/IEC 42001:</strong> For Artificial Intelligence governance.
+- <strong>SDAIA AI Ethics &amp; Saudi PDPL:</strong> For data privacy, ethics, and national regulatory compliance.
+- <strong>ISO 21500:</strong> Project, programme, and portfolio management guidance.</p>
+<h4 id="q3-how-do-the-markdown-json-and-csv-files-work-together">Q3: How do the Markdown, JSON, and CSV files work together?</h4>
+<p><strong>Answer:</strong> 
+- The <strong><code>*_Template.md</code></strong> is the human-readable deliverable to be edited and signed.
+- The <strong><code>*.json</code></strong> contains the schema definition and field constraints for programmatic validation and API integration.
+- The <strong><code>*.csv</code></strong> provides standard table columns for direct import into Excel, Google Sheets, or PowerBI.</p>
+<hr />
+<h3 id="customization-workflow">Customization &amp; Workflow</h3>
+<h4 id="q4-can-i-modify-the-tables-or-add-custom-fields-to-a-template">Q4: Can I modify the tables or add custom fields to a template?</h4>
+<p><strong>Answer:</strong> Yes. You may add domain-specific columns or appendices. However, to maintain PMO audit compliance, <strong>do not remove the Document Control &amp; Sign-off table</strong> at the bottom of the template.</p>
+<h4 id="q5-who-has-the-legalgovernance-authority-to-sign-off-on-baselines">Q5: Who has the legal/governance authority to sign off on baselines?</h4>
+<p><strong>Answer:</strong> Refer to <a href="06_raci_authority_matrix.html"><code>06_raci_authority_matrix.md</code></a>. The Project Manager is <strong>Responsible (Author)</strong>, while the Project Sponsor or Steering Committee is <strong>Accountable (Sign-off Authority)</strong>.</p>
+<h4 id="q6-how-do-we-handle-project-changes-during-execution">Q6: How do we handle project changes during execution?</h4>
+<p><strong>Answer:</strong> Any deviation from the approved baseline (Scope, Schedule, Budget) exceeding threshold limits must go through <a href="../forms/en/05_Executing/05_03_Change_Request_Template.html"><code>PMO-05.03 Change Request</code></a> and be logged in <a href="../forms/en/05_Executing/05_04_Change_Log_Template.html"><code>PMO-05.04 Change Log</code></a> with formal Change Control Board (CCB) approval.</p>
+<hr />
+<h2 id="practical-troubleshooting-common-pitfalls">🔧 Practical Troubleshooting &amp; Common Pitfalls</h2>
+<h3 id="problem-1-the-project-team-complains-about-too-much-paperwork">Problem 1: "The project team complains about too much paperwork."</h3>
+<ul>
+<li><strong>Root Cause:</strong> The PM selected Tier 1 (Enterprise) forms for a small Tier 3 initiative.</li>
+<li><strong>Solution:</strong> Re-run the project sizing assessment in <a href="05_tailoring_profiles.html"><code>05_tailoring_profiles.md</code></a>. Strip out non-mandatory forms immediately. Consolidate status tracking into <a href="../forms/en/06_Monitoring_and_Controlling/06_01_Project_Status_Report_Template.html"><code>06_01 Project Status Report</code></a>.</li>
+</ul>
+<h3 id="problem-2-earned-value-analysis-numbers-cpispi-do-not-match-the-status-report">Problem 2: "Earned Value Analysis numbers (CPI/SPI) do not match the status report."</h3>
+<ul>
+<li><strong>Root Cause:</strong> Discrepancy between Planned Value (PV) in the cost baseline and Actual Cost (AC) from accounting ledgers.</li>
+<li><strong>Solution:</strong> Ensure that Earned Value (EV) is calculated strictly against completed WBS work packages as defined in <a href="../forms/en/04_Planning/02_Scope/04_02_07_WBS_Dictionary_Template.html"><code>PMO-04.02.07 WBS Dictionary</code></a>.</li>
+</ul>
+<h3 id="problem-3-our-ai-models-accuracy-dropped-in-production-after-deployment">Problem 3: "Our AI model's accuracy dropped in production after deployment."</h3>
+<ul>
+<li><strong>Root Cause:</strong> Data drift or undetected distribution shifts in inference inputs.</li>
+<li><strong>Solution:</strong> Check <a href="../forms/en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.html"><code>PMO-02.05 AI Model Card</code></a> for baseline performance slices. Execute remediation protocols specified in <a href="../forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.html"><code>PMO-02.02 AI Governance Plan</code></a>.</li>
+</ul>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

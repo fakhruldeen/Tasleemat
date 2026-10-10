@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖 إطار حوكمة وأخلاقيات مشاريع الذكاء الاصطناعي والتعلم الآلي | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/08_ai_governance_framework.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/08_ai_governance_framework.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/08_ai_governance_framework.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/ar/08_ai_governance_framework.npy
+token_count: 1742
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.214044+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+</p>
+
+<hr />
+<h1 id="_1">🤖 إطار حوكمة وأخلاقيات مشاريع الذكاء الاصطناعي والتعلم الآلي</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>TASLEEMAT-GUIDE-08-AI-GOVERNANCE-AR</code><br />
+<strong>الإصدار:</strong> 2.0<br />
+<strong>المعايير المرجعية:</strong> مبادئ أخلاقيات الذكاء الاصطناعي الصادرة عن الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا - SDAIA)، إطار إدارة مخاطر الذكاء الاصطناعي (NIST AI RMF 1.0)، وقانون الذكاء الاصطناعي الأوروبي (EU AI Act).  </p>
+<hr />
+<h2 id="_2">🎯 نظرة عامة تنفيذية</h2>
+<p>مع تحول نماذج الذكاء الاصطناعي والتعلم الآلي والنماذج اللغوية الكبيرة (LLMs) من بيئات التجارب المعملية إلى صلب العمليات المؤسسية، باتت أدوات إدارة المشاريع التقليدية غير كافية بمفردها. تتميز مشاريع الذكاء الاصطناعي بمخاطر نوعية مثل: انحراف أداء النموذج (Model Drift)، والهلوسة التوليدية، والتحيز الخوارزمي، وتسريب خصوصية البيانات.</p>
+<p>يوفر نظام <strong>«تسليمات»</strong> حزمة متكاملة لحوكمة الذكاء الاصطناعي مدمجة في دورة حياة المشروع، لتمكين المؤسسات من الابتكار بسرعة فائقة مع ضمان أعلى درجات الامتثال والأخلاقيات والجاهزية للتدقيق المؤسسي.</p>
+<pre><code class="language-mermaid">flowchart TD
+    subgraph &quot;1. التقييم والتأطير&quot;
+        A1[&quot;PMO-02.03 تقييم الجاهزية للذكاء الاصطناعي&quot;] --&gt; A2[&quot;PMO-02.04 لوحة حالة استخدام الذكاء الاصطناعي&quot;]
+        A2 --&gt; A3[&quot;PMO-02.06 تقييم الخصوصية والأخلاقيات&quot;]
+    end
+
+    subgraph &quot;2. التخطيط وخط الأساس&quot;
+        A3 --&gt; B1[&quot;PMO-02.02 خطة حوكمة الذكاء الاصطناعي&quot;]
+        B1 --&gt; B2[&quot;PMO-02.05 بطاقة النموذج ووثيقة الحقائق&quot;]
+    end
+
+    subgraph &quot;3. التنفيذ والتحسين&quot;
+        B2 --&gt; C1[&quot;PMO-05.09 سجل مكتبة الأوامر البرمجية والمدخلات&quot;]
+        C1 --&gt; C2[&quot;PMO-06.11 الفحص الدوري للمشروع (شريحة AI)&quot;]
+    end
+
+    subgraph &quot;4. الإطلاق والتشغيل المستمر&quot;
+        C2 --&gt; D1[&quot;PMO-07.04 التحول للعمليات التشغيلية (MLOps)&quot;]
+        D1 --&gt; D2[&quot;PMO-07.05 مراجعة القيمة المتحققة بعد التنفيذ&quot;]
+    end
+</code></pre>
+<hr />
+<h2 id="_3">🏛️ وثائق حوكمة الذكاء الاصطناعي الست الأساسية</h2>
+<h3 id="1-pmo-0203-ai-readiness-assessment">1. <code>PMO-02.03</code> تقييم الجاهزية للذكاء الاصطناعي (AI Readiness Assessment)</h3>
+<ul>
+<li><strong>الهدف:</strong> قياس مدى جاهزية البنية التحتية، وجودة البيانات، والكوادر البشرية، والأمن السيبراني قبل ضخ الميزانيات.</li>
+<li><strong>المعايير:</strong> اكتمال البيانات، نضج مسارات MLOps، زمن الاستجابة، والتوافق الأمني.</li>
+<li><strong>بوابة العبور:</strong> يشترط تحقيق نسبة نضج $\ge 70\%$ لاجتياز بوابة العبور 0.</li>
+</ul>
+<h3 id="2-pmo-0204-ai-use-case-canvas">2. <code>PMO-02.04</code> لوحة حالة استخدام الذكاء الاصطناعي (AI Use Case Canvas)</h3>
+<ul>
+<li><strong>الهدف:</strong> وثيقة استراتيجية من صفحة واحدة تربط المشكلة المستهدفة بالأثر التجاري والتقنية المستخدمة (RAG، تدريب مخصص، أو واجهات API).</li>
+<li><strong>المحتويات:</strong> المستفيد المستهدف، مؤشرات الأداء، مصادر البيانات، آلية التدخل البشري والرجوع التلقائي، وعائد الاستثمار المتوقع.</li>
+</ul>
+<h3 id="3-pmo-0206-data-privacy-ethics">3. <code>PMO-02.06</code> تقييم خصوصية البيانات والأخلاقيات (Data Privacy &amp; Ethics)</h3>
+<ul>
+<li><strong>الهدف:</strong> الفحص الدقيق لحماية البيانات الشخصية، والامتثال لنظام حماية البيانات الشخصية (PDPL) ومعايير سدايا، وخلو النماذج من التحيز التمييزي.</li>
+<li><strong>الفحوصات الإلزامية:</strong> تحليل السمات الحساسة، آليات إخفاء الهوية، وضمانات الخصوصية التفاضلية.</li>
+</ul>
+<h3 id="4-pmo-0202-ai-governance-plan">4. <code>PMO-02.02</code> خطة حوكمة الذكاء الاصطناعي (AI Governance Plan)</h3>
+<ul>
+<li><strong>الهدف:</strong> الميثاق المؤسسي الحاكم لدورة حياة النماذج، ومستويات المخاطر، وقواعد التدخل البشري (HITL)، ومؤشرات انحراف النماذج.</li>
+<li><strong>القواعد الصارمة:</strong> حدود إعادة التدريب (مثل انخفاض مقياس F1 بأكثر من 5%) وصلاحيات إيقاف النماذج في بيئة الإنتاج.</li>
+</ul>
+<h3 id="5-pmo-0205-ai-model-card-fact-sheet">5. <code>PMO-02.05</code> بطاقة النموذج ووثيقة الحقائق (AI Model Card &amp; Fact Sheet)</h3>
+<ul>
+<li><strong>الهدف:</strong> جواز سفر فني ومعرفي يوثق سلسلة إمداد النموذج ومصادر بيانات التدريب ونتائج الاختبارات والقيود الفنية.</li>
+<li><strong>الجداول الحيوية:</strong> مقاييس الدقة عبر الشرائح السكانية، الحالات غير المصرح باستخدام النموذج فيها، وإجراءات الحد من المخاطر.</li>
+</ul>
+<h3 id="6-pmo-0509-prompt-library-log">6. <code>PMO-05.09</code> سجل مكتبة الأوامر البرمجية والمدخلات (Prompt Library Log)</h3>
+<ul>
+<li><strong>الهدف:</strong> إدارة النسخ والتعديلات لأوامر النماذج التوليدية (System Prompts) وضبط المعاملات (Temperature, Top-p) واختبارات الانحدار.</li>
+<li><strong>التحكم بالتغيير:</strong> منع التدهور المفاجئ في جودة المخرجات وضمان ثبات السلوك عبر إصدارات التطبيق.</li>
+</ul>
+<hr />
+<h2 id="hitl">🛡️ تصنيف المخاطر وسياسات التدخل البشري (HITL)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">مستوى المخاطرة</th>
+<th style="text-align: left;">التعريف والأمثلة</th>
+<th style="text-align: left;">النماذج الإلزامية</th>
+<th style="text-align: left;">سياسة التدخل البشري (Human-in-the-Loop)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>المستوى 1: عالي المخاطر</strong></td>
+<td style="text-align: left;">تقييم الجدارة الائتمانية، التشخيص الطبي، الفرز الوظيفي الآلي، البنية التحتية الحرجة</td>
+<td style="text-align: left;">كافة نماذج AI الستة + تدقيق قانوني خارجي</td>
+<td style="text-align: left;"><strong>موافقة بشرية إلزامية مسبقة</strong> لكل معاملة أو قرار عالي التأثير.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>المستوى 2: متوسط المخاطر</strong></td>
+<td style="text-align: left;">روبوتات خدمة العملاء التفاعلية، تلخيص الوثائق الداخلية، الصيانة التنبؤية</td>
+<td style="text-align: left;">لوحة الاستخدام، بطاقة النموذج، سجل الأوامر</td>
+<td style="text-align: left;"><strong>تدخل بشري عند الاستثناء</strong> (تحويل الحالات ذات الثقة المنخفضة للبشر).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>المستوى 3: منخفض المخاطر</strong></td>
+<td style="text-align: left;">مسودات الإنتاجية الداخلية، تحليل المشاعر للمنشورات العامة</td>
+<td style="text-align: left;">لوحة الاستخدام، بطاقة النموذج</td>
+<td style="text-align: left;"><strong>مراجعة دورية بالعينات</strong> لضمان الجودة.</td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

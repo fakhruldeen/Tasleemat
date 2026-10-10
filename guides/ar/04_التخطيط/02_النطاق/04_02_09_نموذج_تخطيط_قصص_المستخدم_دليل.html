@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المخرج: نموذج تخطيط قصص المستخدم | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../../assets/tasleemat_data.js"></script>
+  <script src="../../../../assets/search.js"></script>
+  <script src="../../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/09_نموذج_تخطيط_قصص_المستخدم/04_02_09_نموذج_تخطيط_قصص_المستخدم_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../../en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-04.02.09</span>
+    <span class="badge badge-phase">04. التخطيط</span>
+    <span class="badge badge-type">دليل إرشادي وحوكمي</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../../forms/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../../examples/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/09_نموذج_تخطيط_قصص_المستخدم/04_02_09_نموذج_تخطيط_قصص_المستخدم_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../../en/04_Planning/02_Scope/04_02_09_User_Story_Mapping_Canvas_Guide.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Form
+lang: ar
+layout: default
+title: نموذج تخطيط قصص المستخدم
+nav_order: 1
+token_pointer: /_tokens/forms/ar/04_التخطيط/02_النطاق/09_نموذج_تخطيط_قصص_المستخدم/04_02_09_نموذج_تخطيط_قصص_المستخدم_دليل.npy
+token_count: 3243
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.778240+00:00'
+form_id: PMO-04.02.09
+status: approved</p>
+<hr />
+<div>
+
+## دليل نماذج تسليمات
+# المخرج: نموذج تخطيط قصص المستخدم
+
+**مرجع الوثيقة:** `PMO-04.02.09`
+
+يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من **نموذج تخطيط قصص المستخدم**
+واستخدامه بفعالية بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+صورة لكيفية إنجاز شخص واحد لشيء، والتعليل وراءها: من هو ذلك الشخص، وما الذي يحاول إنجازه، وما يفعله اليوم بدلًا من ذلك، وكم مرة يفعله وكم يكلّفه، وأي الأدوار الأخرى يمسّها التغيير. ثم الأنشطة العالية بالترتيب الذي تؤدّى به، ومن أين جاء ذلك الترتيب، وما الذي أُرجئ عمدًا، وأين يتفرّع المسار. ثم الخطوات تحت كل نشاط بصف واحد لكل نشاط بحيث يكون كل عمود زيادة صالحة للاستعمال لا طبقة أفقية، والهيكل العظمي الذي يثبت التكامل، وما يدل على حجم الشريحة. ثم أين يقع حدّ الإصدار الأول، وما يستطيع الشخص فعله بعده، وكيف سيُحكم على ذلك، وأي الشرائح أُرجئت ولماذا. ثم مرشّحو الإصدارات اللاحقة وتبعاتهم، والعمل الذي لا تحتويه الخريطة بعد، وما لن يفعله المنتج، وما تفترضه الخريطة، وما يعيد رسمها، ومن يملكها.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن قائمة التراكم تسجّل قرارات اتُّخذت، والخريطة تسجّل التعليل، والتعليل هو الجزء الذي يمكن الجدال فيه. والجدال هو المقصود، فنقل عمود على لوح أيسر من تفكيك إصدار. والخريطة هي أيضًا المخرج الذي يجعل الافتراض الخاطئ ظاهرًا رخيصًا، وهو ما لا تستطيعه قائمة متطلبات، فحين تُكتب المتطلبات يكون الافتراض قد بني فيها.
+
+والخانات الفارغة هي الدليل. خريطة بلا حل قائم، وبلا مصدر للهيكل، وبلا أسباب للشرائح المؤجَّلة، وبلا نتيجة، وبلا خطة تحقّق، تصف منتجًا لم يتفق عليه أحد. وهيكل مشتق من مخطط إجراءات يصف كيف تقول المؤسسة أن العمل يجري، لا كيف يجري فعلًا. وحدّ إصدار مرسوم بما هو أسهل تقديرًا يقدّم مزايا ونتيجة، وإصدار موصوف بمزاياه لا اختبار لنجاحه، فيُقرَّر نجاحه بعد ذلك بمن يشعر به أكثر من غيره.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعدّ هذا المخرج ويستخدم أساسًا في مجموعة **التخطيط** من دورة حياة المشروع. يُعدّ قبل الالتزام بقائمة التراكم، ويُعدَّل كلما تغيّر الشخص أو الحل القائم أو التسلسل، وكلما رُسم حدّ إصدار أو نُقل، وكلما وصل عمل جديد لا تحتويه الخريطة. ويُقرأ عند تنقية قائمة التراكم، وعند تخطيط الإصدار، ومن يقترح قصة ويحتاج أن يعرف في أي عمود تقع وهل ذلك العمود مجدول.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يُعدّه مالك المنتج، المسؤول عن الشخص وعن حدّ الإصدار الأول، فالحدّ قرار عمّا عليه المنتج. ويراجعه محلل الأعمال، المسؤول عن تسلسل الهيكل وعن مصدر دليله، وممارس تجربة المستخدم الذي عاين الحل القائم. ويعتمده مالك الأعمال، الذي يؤكد أن مشكلة الشخص الذي اختاره تستحق الحل. وحيث تكون خانة بلا سبب أو شريحة مؤجَّلة بلا تبرير، فلتُسجَّل كما هي، لا تُترك فارغة، فالخانة الفارغة على خريطة تُقرأ قرارًا ممن يقرأ الخريطة بعدك.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  خريطة لشخص واحد مفهوم جيدًا قد تختصر قسم الشخص إلى جملة، لكن الحل القائم والتكرار يجب أن يبقيا، فهما ما يرتّب الهيكل ويبرر البناء أصلًا.
+*  حيث يحتفظ الفريق بقائمة تراكم ناضجة، يجوز استعمال الخريطة بصورة استرجاعية لاختبار إن كانت القائمة رأسية، بشرط تطبيق الاختبار بصدق؛ والقائمة التي تطلع أفقية نتيجة، والخريطة هي المخرج الوحيد الذي يبيّنها.
+*  يجوز تشغيل الهيكل العظمي على بيانات حقيقية في تجربة محدودة، بشرط ضبط التجربة ومعالجة بياناتها، فالغرض إثبات التكامل، والتجربة الحقيقية تثبت أكثر.
+*  يجوز تقسيم الشريحة على أكثر من إصدار إن كان العمود كبيرًا جدًا، بشرط أن يبقى كل جزء صالحًا للاستعمال وحده، فالعمود المقسوم نصفين قد أعاد الطبقة الأفقية.
+*  من المفيد تسجيل الأنشطة التي فُكِّر فيها وتركت رقيقة عمدًا، فهي التي تميّز خريطة مُتأمَّلة عن خريطة ناقصة.
+*  خريطة لأداة داخلية بمستخدم واحد قد تكون صفًا واحدًا، لكن يبقى من اللازم ذكر ما يفعله ذلك الشخص اليوم، فأداة بلا حل قائم مذكور تحلّ غالبًا مشكلة لم يعرفها أحد.
+*  تُحفظ الخرائط المستبدلة ولا تُطمس، فالسؤال الذي يعود فيه الفريق بعد سنة هو غالبًا ما آمنوا به حينها.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن يتسق نموذج تخطيط قصص المستخدم مع المستندات التالية:
+*  قائمة تراكم المنتج
+*  بيان نطاق المشروع
+*  مصفوفة تتبّع المتطلبات
+*  خطة الإصدار
+*  الجدول الزمني للمشروع
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإتمام **نموذج تخطيط قصص المستخدم** بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية
+استنادًا إلى سياق المشروع (مع التأكد من الرجوع إلى `parameters.md`
+للمتغيرات العامة للمشروع):
+
+*  **الشخص الرئيس:** الشخص المعني، موصوفًا بحيث يستطيع الفريق أن يبيّن إن كانت قصة مقترحة تخدمه. والشخص المكتوب عنوان دور لا شخصًا هو سبب أن يبني فريقان منتجين مختلفين من الخريطة نفسها، ثم يكتشفان الفرق عند الإطلاق.
+*  **ما الذي يحاول إنجازه:** ما الذي يحاول الشخص إنجازه بعبارته هو، وما يفعله اليوم بدلًا من ذلك. الحل القائم هو خط الأساس، والمقترح الذي لا يذكر ما يحل محلّه لا يذكر ما يطوّره، وأي تقدير بعد ذلك يصبح تخمينًا.
+*  **التكرار والرهانات:** كم مرة يفعل الشخص هذا، وماذا يكلّفه حين يسوء. التكرار هو ما يرتّب الهيكل، والرهانات هي ما يفصل المهمة التي تستحق الأتمتة من التي تستحق الأتمتة بعناية.
+*  **المنظمات والأدوار المتأثرة:** الأدوار الأخرى التي يمسّها التغيير، بمن فيهم من يعتمد أو يراجع أو يتأثر بقرار يُتخذ من المخرج. والخريطة التي تسمّي المشغّل وحده تنتج نظامًا يكتشف بقية مستخدميه بعد الإصدار.
+*  **الأنشطة بالترتيب:** الأنشطة الرئيسية التي يؤديها الشخص، مرتّبة من اليسار إلى اليمين بالترتيب الذي تؤدّى به. والترتيب دعوى عن الكيفية التي يجري بها العمل فعلًا، وهو أكثر ما يُرتَّب خطأ.
+*  **مصدر الهيكل:** كيف ثبت هذا الترتيب: بالملاحظة، أو بمقابلة، أو بوثيقة إجراءات قائمة، أو بافتراض. هيكل مشتق من مخطط إجراءات يصف كيف تقول المؤسسة أن العمل يجري، لا كيف يجري فعلًا.
+*  **الأنشطة المؤجَّلة:** الأنشطة التي يؤديها الشخص وقد أُخرجت من الخريطة عمدًا، ولماذا. والخريطة التي تسرد كل شيء قائمة أنشطة، والحجة فيما تُرك.
+*  **المسارات الاختيارية والمتغيّرة:** أين يتفرّع التسلسل، وأي الفروع شائع وأيها نادر. الهيكل المرسوم خطًا واحدًا يدفع المسارات النادرة إلى المسار الرئيسي، ومن هناك تأتي معظم الأعمال المهدورة في الإصدار.
+*  **المهام تحت كل نشاط:** صف واحد لكل نشاط من أنشطة الهيكل، يبيّن خطوات ذلك النشاط. الخطوة التي لا تخدم نشاطًا واحدًا هي طبقة أفقية، والطبقة الأفقية لا يمكن إصدارها وحدها.
+*  **الشرائح كأعمدة رأسية:** كل عمود في الخريطة يجب أن يكون زيادة صالحة للاستعمال: لكل نشاط في الهيكل شيء فيه، ويستطيع المستخدم إتمام الرحلة كاملة بهذا العمود وحده. هذا هو الانضباط المميّز للطريقة، والخريطة التي تخفق فيه تكون قد أنتجت طبقات تقنية ملبَّسة بلباس خريطة قصص.
+*  **الهيكل العظمي الدقيق:** أضيق عمود ممكن من أوله إلى آخره، بأبسط تنفيذ صالح لكل نشاط. غرضه إثبات التكامل لا المزايا، ويُرمى عادةً بعد أن يكون قد أدّى وظيفته، وهو سبب تردد الفرق في بنائه.
+*  **دليل حجم الشريحة:** ما يدل على أن الشريحة صغيرة بما يكفي للتسليم، مثل تجربة محددة بوقت أو تشغيل يدوي مقيس. التقدير دعوى عن شريحة لم يجربها أحد، والشريحة الأولى هي التي يكون فيها التقدير خاطئًا عادة.
+*  **حدّ النسخة الأولى:** أي الأعمدة في الإصدار الأول وأيها ليس فيه، والنتيجة الواحدة التي يقدّمها ذلك الإصدار. يُرسم الحدّ بقدرة الشخص على إنجاز شيء جاء لأجله، لا بما هو الأنفع أو الأقرب إلى الانتهاء، وإصدار مبني من أسهل الأعمدة يقدّم لا شيء أراده أحد.
+*  **نتيجة الإصدار الأول:** ما يستطيع الشخص فعله بعده ولم يكن يستطيعه قبله، بصيغة قدرة لا بصيغة قائمة مزايا. الإصدار الموصوف بمزاياه لا اختبار لنجاحه، فيُقرَّر نجاحه بعد ذلك بمن يشعر به أكثر من غيره.
+*  **خطة التحقّق:** كيف سيُحكم على الإصدار الأول، ومقابل أي خط أساس، ومن سيحكم. يُسجَّل قبل الإصدار، لأن خطة تحقّق تُصمَّم بعده تصير وصفًا لما وُجد.
+*  **الشرائح المؤجَّلة بعد النسخة الأولى:** الأعمدة التي ليست في الإصدار الأول، وسبب تأجيل كل منها. كلمة لاحقًا ليست سببًا، والأسباب الحقيقية إما تبعية أو قرار ناقص أو مخاطرة أكبر من أن تُحمّل في إصدار أول.
+*  **مرشّحو الإصدارات اللاحقة:** الأعمدة التي يُنظر فيها لإصدارات لاحقة، مع ذكر تبعياتها بالاسم. المرشّح بلا تبعية مذكورة أمنية، والأمنية الموضوعة على خريطة تُقرأ التزامًا ممن يقرأ الخريطة بعدك.
+*  **العمل الناشئ المتوقَّع:** العمل الذي لا تحتويه الخريطة لأنه لم يُكتشف بعد، وكيف ستُضاف العناصر الجديدة. والخريطة التي تدّعي الاكتمال ترسل العمل إلى مكان غير مسجَّل، حيث يُكتشف لاحقًا في أسوأ لحظة ممكنة.
+*  **خارج النطاق صراحةً:** ما لن يفعله هذا المنتج، مصوغة بحيث تقال بصوت مسموع. وهذا القسم هو ما يجعل الخريطة آمنة للنشر، فالإستثناء غير المذكور يكتشفه المستخدم لا الفريق.
+*  **الافتراضات والمعتقدات غير المختبَرة:** ما تأخذه الخريطة على الثقة، وما الذي يجب أن يتحقق لتبقى صالحة. كل خريطة تستند إلى معتقدات لم يختبرها أحد، وتعدادها هو الطريقة الوحيدة لمعرفة أيّها يُختبر أولًا.
+*  **المخاطر التي تمسّ الخريطة:** ما يفرض إعادة رسم الخريطة، مثل تغيّر في تنظيم أو إطلاق منافس أو اكتشاف أن التسلسل الحقيقي غير التسلسل المرسوم. يُسجَّل كمحفّزات لا كملاحظات، لأن الملاحظة بلا تاريخ والمحفّز له تاريخ.
+*  **وتيرة التحديث والملكية:** كم مرة تُراجَع الخريطة، وما الذي يستدعي إعادة رسمها، ومن يملكها. والخريطة التي لا مالك لها ولا وتيرة هي صورة لما كان مفهومًا مرة واحدة، ولا تزال تُعرض على الناس كأنها حالية.
+*  **التتبّع إلى قائمة التراكم والإصدار:** كيف تصل قصة على هذه الخريطة إلى قائمة التراكم، وماذا يحدث حين يعارض بند في القائمة الخريطة. ويتّفق الاثنان بقاعدة وشخص، أو ينفصلان بهدوء فتصف الخريطة عن الصنف.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](../../../../forms/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_قالب.html)
+* [🤖 موجّه التوليد الذكي](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/09_نموذج_تخطيط_قصص_المستخدم/04_02_09_نموذج_تخطيط_قصص_المستخدم.md)
+* [📊 بنية البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/09_نموذج_تخطيط_قصص_المستخدم/04_02_09_نموذج_تخطيط_قصص_المستخدم.json)
+* [📈 البيانات الجدولية (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/04_التخطيط/02_النطاق/09_نموذج_تخطيط_قصص_المستخدم/04_02_09_نموذج_تخطيط_قصص_المستخدم.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [04_02_09_نموذج_تخطيط_قصص_المستخدم_مثال.md](../../../../examples/ar/04_التخطيط/02_النطاق/04_02_09_نموذج_تخطيط_قصص_المستخدم_مثال.html)
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

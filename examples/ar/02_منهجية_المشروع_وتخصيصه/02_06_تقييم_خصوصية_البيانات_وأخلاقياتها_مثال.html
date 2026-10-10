@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقييم خصوصية البيانات وأخلاقياتها | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/02_منهجية_المشروع_وتخصيصه/06_تقييم_خصوصية_البيانات_وأخلاقياتها/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_مثال.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Example.html">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-02.06</span>
+    <span class="badge badge-phase">02. منهجية المشروع وتخصيصه</span>
+    <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_دليل.html">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill active" href="#">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/02_منهجية_المشروع_وتخصيصه/06_تقييم_خصوصية_البيانات_وأخلاقياتها/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_مثال.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Example.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/02_منهجية_المشروع_وتخصيصه/06_تقييم_خصوصية_البيانات_وأخلاقياتها/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_مثال.npy
+token_count: 3410
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.121638+00:00'</p>
+<hr />
+<div>
+
+# تقييم خصوصية البيانات وأخلاقياتها (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-02.06`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">المنظومة السحابية الموحدة لتخطيط الموارد - ASSESS-2026-01</h2>
+ <h1 align="center">تقييم خصوصية البيانات وأخلاقياتها</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مسؤول خصوصية البيانات:** أ. عبد العزيز الزهراني (مسؤول حماية البيانات) | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| ---: | ---: | ---: |
+---
+
+## ١. النطاق وجرد البيانات والملكية
+<!-- ما الذي يشمله هذا التقييم، ومن يملك كل أصل بياني ومن يديره، وما الغرض الذي يُحفظ لأجله، وهل يحوي بيانات شخصية أو فئة خاصة، وأين تتدفّق البيانات. -->
+
+**نطاق التقييم:** تحقيق التميز التشغيلي وأتمتة العمليات والربط السحابي الموحد وفق أعلى المعايير القياسية.
+
+**معالجة غير مشمولة:** القرارات التأديبية، التقييم الائتماني المباشر للعملاء، وتخزين البيانات غير المصنفة
+
+**ملّاك البيانات وأمناؤها:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**جرد البيانات:**
+| الأصل البياني | المالك | الغرض المصرّح به | بيانات شخصية | فئة خاصة | الحجم ومعدّل التحديث |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | أ. إلينا فانس، PfMP | معتمد ومطابق للمعايير القياسية لشركة القمة | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| أتمتة دورة المشتريات والمستودعات والربط المباشر | م. فيصل الحربي، PMP | معتمد ومطابق للمعايير القياسية لشركة القمة | أتمتة دورة المشتريات والمستودعات والربط المباشر | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | د. طارق المنصور، PfMP | معتمد ومطابق للمعايير القياسية لشركة القمة | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+**تدفّق البيانات والمستلمون:** تدفق مشفر (TLS 1.3) داخل الشبكة الافتراضية الخاصة للشركة دون مشاركة مع أطراف ثالثة.
+
+---
+
+## ٢. السند القانوني وحدود الغرض
+<!-- ما الغرض من كل معالجة ولماذا تحتاج هذه البيانات بقدرها، والسند القانوني لكل غرض على حدة، وأي استعمال خارج الغرض الأصلي، وأي قرار يتخذ عن شخص آليًا. -->
+
+**أغراض المعالجة وضرورتها:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**السند القانوني حسب الغرض:**
+| الغرض | البيانات المعالَجة | السند القانوني | سند الفئة الخاصة | المبرّر |
+| ---: | ---: | ---: | ---: | ---: |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | معتمد ومطابق للمعايير القياسية لشركة القمة | تقني وتكاملي | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | أتمتة دورة المشتريات والمستودعات والربط المباشر | معتمد ومطابق للمعايير القياسية لشركة القمة | تنظيمي وتشغيلي | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | معتمد ومطابق للمعايير القياسية لشركة القمة | حوكمة وامتثال | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+**توافق الغرض والاستخدام الثانوي:** توليد ملخصات الأداء التشغيلي ومسودات تقارير التدقيق لإدارة العمليات
+
+**اتخاذ القرار الآلي:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+---
+
+## ٣. الموافقة والشفافية
+<!-- كيف تُطلب الموافقة وماذا قيل للشخص، وكيف تُسجَّل الموافقة، وكيف تُسحب، وما يُبلَّغ عنه في لحظة الاستعمال. -->
+
+**آلية الموافقة:** الامتثال التام للوائح حماية البيانات الشخصية والأطر الأخلاقية المؤسسية لمنع التحيز وضمان الشفافية.
+
+**تحديد الموافقة ودرجتها:** الامتثال التام للوائح حماية البيانات الشخصية والأطر الأخلاقية المؤسسية لمنع التحيز وضمان الشفافية.
+
+**تسجيل الموافقة وإثباتها:** سجل إلكتروني مشفر وموثق بالطابع الزمني لكل موافقة أو تعديل على البيانات الشخصية.
+
+**السحب:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**إشعارات الخصوصية والإفصاح في اللحظة:** الامتثال التام للوائح حماية البيانات الشخصية والأطر الأخلاقية المؤسسية لمنع التحيز وضمان الشفافية.
+
+---
+
+## ٤. حقوق الأفراد
+<!-- كيف يُستقبل طلب الفرد ويُبتّ فيه ويُجاب عنه في مهله، وماذا يحدث إذا كانت البيانات مشتقّة أو مشاركة أو قد دُرِّب عليها نموذج. -->
+
+**مسار معالجة الطلبات:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**التحقق من الهوية:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**مهل الاستجابة والتصعيد:** مراقبة مستمرة للمؤشرات التشغيلية ورفع تقارير دورية مع تفعيل خطط الاستجابة الفورية عند تجاوز العتبات.
+
+**الطلب على البيانات المشتقّة والمشاركة والمصوّدة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+---
+
+## ٥. الاحتفاظ والأمن والمشاركة
+<!-- مدة احتفاظ كل أصل ومبررها، وكيف يصل الحذف إلى النسخ والسجلات والمشتقات، ومن يصل إلى البيانات ومن يملك المفاتيح، ومن المستلم وأي ضمان تعاقدي، وأين تُعالَج، وما الذي يُعدّ اختراقًا وما يُشترط عنده. -->
+
+**جدول الاحتفاظ:**
+| الأصل البياني | مدة الاحتفاظ | مبرر المدة | محفّز الحذف | التحقق من الحذف |
+| ---: | ---: | ---: | ---: | ---: |
+| نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| أتمتة دورة المشتريات والمستودعات والربط المباشر | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+**آلية الحذف وشمولها:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**النسخ الاحتياطية والبيانات المشتقّة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**ضوابط الوصول وأدنى امتياز:** صلاحيات قائمة على الأدوار (RBAC) مع تحقق ثنائي (MFA) وتسجيل كامل للعمليات.
+
+**التشفير وإدارة المفاتيح:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**المشاركة مع الأطراف:**
+| المستلم | الغرض | البيانات المشتركة | الضمان التعاقدي | المنطقة |
+| ---: | ---: | ---: | ---: | ---: |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | أتمتة دورة المشتريات والمستودعات والربط المباشر | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+**النقول عبر الحدود:** تخزين ومعالجة البيانات بالكامل داخل مراكز البيانات السحابية المحلية المعتمدة داخل المملكة.
+
+**إشعار الاختراق:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+---
+
+## ٦. الأخلاقيات فوق حدود الامتثال
+<!-- أين يضر هذا العمل ولا يمنعه قانون، ومن يتأثر في حالة ضعف القدرة على الرفض، وما يُقال للأشخاص فعلًا، وهل يسمح التصميم باختيار حقيقي، وكيف تقع نتائج القرارات الآلية على الفئات. -->
+
+**الضرر خارج المساءلة القانونية:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**الأشخاص والفئات الهشّة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**الشفافية تجاه المتأثرين:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**التلاعب والأنماط الخفية وإرهاق الموافقة:** الامتثال التام للوائح حماية البيانات الشخصية والأطر الأخلاقية المؤسسية لمنع التحيز وضمان الشفافية.
+
+**عدالة القرارات الآلية:** الامتثال التام للوائح حماية البيانات الشخصية والأطر الأخلاقية المؤسسية لمنع التحيز وضمان الشفافية.
+
+---
+
+## ٧. النتائج والمعالجة والمراجعة
+<!-- ما الذي وجدناه، والخطر المتبقي بعد الإجراءات المخططة ومن يقبله ومتى، وماذا يحدث في الفترة الفاصلة، وما الذي يعيد فتح هذا التقييم. -->
+
+**سجل النتائج:**
+| النتيجة | الخطر على الأفراد | الخطورة | المالك | الإجراء |
+| ---: | ---: | ---: | ---: | ---: |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | متوسطة (تتطلب مراجعة دورية) | أ. إلينا فانس، PfMP | تم التحقق من الجاهزية والامتثال لضوابط الأمن السيبراني |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | منخفضة (ضمن الحدود المقبولة) | م. فيصل الحربي، PMP | جلسات المتابعة والتنسيق مستمرة وفق الجدول المعتمد |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | عالية (تتطلب إشرافاً بشرياً إلزامياً) | د. طارق المنصور، PfMP | تم رصد مخصص الطوارئ المعتمد لهذه المرحلة |
+
+**المخاطر المتبقّية وقبولها:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**خطة المعالجة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**محفّزات المراجعة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**محفّزات إعادة التقييم:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+---
+
+### الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مسؤول حماية البيانات** | أ. عبد العزيز الزهراني (مسؤول حماية البيانات) | [معتمد إلكترونياً] | 2026-03-18 |
+| **المستشار القانوني / الامتثال** | المستشار ماجد الفاروق (المستشار القانوني العام) | [معتمد إلكترونياً] | 2026-03-18 |
+| **مدير المشروع** | م. فيصل الحربي، PMP | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+ <strong>النموذج:</strong> تقييم خصوصية البيانات وأخلاقياتها | <strong>المرجع:</strong> PMO-02.06 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

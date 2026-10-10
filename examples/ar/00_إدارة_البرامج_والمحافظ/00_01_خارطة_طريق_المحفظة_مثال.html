@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خارطة طريق المحفظة | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_مثال.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Example.html">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-00.01</span>
+    <span class="badge badge-phase">00. إدارة البرامج والمحافظ</span>
+    <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../guides/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_دليل.html">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill active" href="#">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_مثال.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Example.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_مثال.npy
+token_count: 2772
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.208923+00:00'</p>
+<hr />
+<div>
+
+# خارطة طريق المحفظة (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-00.01`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">محفظة التحول الرقمي وتحديث العمليات المؤسسية - PORT-2026-X01</h2>
+<h1 align="center">خارطة طريق المحفظة</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مدير المحفظة:** أ. إلينا فانس، PfMP | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| :--- | :--- | :--- |
+
+---
+
+## 1. سياق المحفظة وأساس التخطيط
+<!-- ما الذي تغطيه هذه المحفظة، وعلى أي فترة، وكم مرة تُحدَّث خارطة الطريق. سجل دورة التخطيط هنا لا في ملاحظة، فالخرائط المتعاقبة لا تكون قابلة للمقارنة إلا إذا بُنيت على أساس واحد. وسجل حالة الخارطة بوصفها بيان نسخة: أي دورة تخطيط تمثلها وأي اجتماع اعتمدها. فبدون ذلك لا يمكن قراءة خريطتين تختلفان في مبادرات قليلة بوصفهما تغيرًا في الاتجاه لا بوصفهماالرأيَينين في المحفظة نفسها. -->
+
+**غرض المحفظة ونطاقها:** قيادة التحول الرقمي الشامل، تحديث البنية التقنية، وأتمتة سلاسل الإمداد والعمليات التشغيلية لشركة القمة عبر كافة الفروع ومراكز التوزيع.
+
+**فترة التخطيط:** 2026 - 2028 (خطة ثلاثية متجددة)
+
+**أفق الخارطة:** 24 شهراً مع مراجعة ربع سنوية لأولويات المبادرات
+
+**مالك المحفظة:** أ. إلينا فانس، PfMP (مدير المحفظة والتحول المؤسسي)
+
+**دورة التخطيط:** دورة التخطيط الاستراتيجي السنوية (تحديث ربع سنوي)
+
+**نسخة الخارطة وحالتها:** الإصدار 2.0 (معتمد من لجنة التوجيه الاستراتيجي في 15 مارس 2026)
+
+---
+
+## 2. مبادرات خارطة الطريق
+<!-- صف واحد لكل برنامج أو مشروع أو عملية، مرتبًا حسب تاريخ البدء. استخدم الأسماء الواردة في ميثاق كل مبادرة حتى لا تُتابع المبادرة نفسها باسمين عبر الدورات. وسجل الحالة من المجموعة الثابتة المتفق عليها في خارطة الطريق هذه، فالحالة النصية الحرة لا يمكن ترشيحها، وخارطة الطريق التي لا يمكن ترشيحها عرض وصفي غير قابل للتنفيذ والقياس. وحيث لا تخدم مبادرة أي هدف استراتيجي، فاكتب في الخلية أنها لا تخدم هدفًا صراحةً لا واتركها فارغة، فالفراغ لا يميز بينه وبين السهو. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | اسم المبادرة | النوع | الهدف الاستراتيجي | البداية | النهاية | الميزانية | الحالة |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | المنظومة السحابية الموحدة لتخطيط الموارد | تقني وتكاملي | التحول الرقمي والتميز التشغيلي | 2026-04-01 | 2026-06-30 | 3,500,000 ريال | قيد التنفيذ |
+| REQ-02 | أتمتة سلاسل الإمداد والمستودعات الذكية | تنظيمي وتشغيلي | أتمتة العمليات وخفض التكاليف بنسبة 40% | 2026-06-01 | 2026-09-30 | 4,200,000 ريال | مكتمل |
+| ACT-03 | منصة التقارير التحليلية والذكاء المؤسسي | حوكمة وامتثال | تمكين اتخاذ القرار بالبيانات اللحظية | 2026-08-15 | 2026-11-30 | 2,800,000 ريال | مخطط |
+| BEN-04 | بوابة الخدمات الذاتية وإدارة رأس المال البشري | بنية سحابية | ضمان الامتثال التنظيمي والأمني بنسبة 100% | 2026-10-01 | 2027-01-31 | 1,950,000 ريال | معتمد |
+| WBS-05 | طبقة التكامل السحابي والربط البرمجي API | أمن معلومات | التحول الرقمي والتميز التشغيلي | 2026-12-01 | 2027-03-31 | 1,250,000 ريال | قيد التنفيذ |
+
+---
+
+## 3. الاعتماديات والترتيب
+<!-- حيث لا يمكن لمبادرة أن تبدأ قبل أن تسلّم أخرى، سجل ذلك هنا باعتمادية محددة النوع لا في ملاحظة نصية، فالاعتمادية المسجلة في نص فقط لا يمكن الاستعلام عنها. وانتهاء إلى بدء هي الحالة الشائعة، أما بدء إلى بدء وانتهاء إلى انتهاء فت تنشأ حيث يجب أن تتحرك مبادرتان معًا. واذكر أثر تأخر السابقة في المال أو الجدول أو كليهما، فالاعتمادية التي لا يذكر أثرها لا يمكن التصرف بشأنها عند تأخر السابقة. -->
+
+| المعرف | المبادرة التابعة | نوع الاعتمادية | السابقة | مطلوب بحلول | الأثر عند التأخر |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | المنظومة السحابية الموحدة لتخطيط الموارد | نهاية إلى بداية (FS) | INIT-01 (المنظومة السحابية) | 2026-06-30 | تأخير بدء اختبارات التكامل لمدة أسبوعين |
+| REQ-02 | أتمتة سلاسل الإمداد والمستودعات الذكية | بداية إلى بداية (SS) | INIT-02 (سلاسل الإمداد) | 2026-09-30 | إعادة جدولة نافذة الإطلاق التشغيلي التجريبي |
+| ACT-03 | منصة التقارير التحليلية والذكاء المؤسسي | نهاية إلى نهاية (FF) | INIT-01 (البنية التحتية) | 2026-11-30 | زيادة طفيفة في استهلاك ساعات الاستشارات التقنية |
+| BEN-04 | بوابة الخدمات الذاتية وإدارة رأس المال البشري | نهاية إلى بداية (FS) | INIT-03 (البيانات) | 2027-01-31 | ترحيل تاريخ التدريب للمجموعة الثانية |
+---
+
+## 4. التمويل والسعة حسب الفترة
+<!-- هل الخطة مجدية، لا مجرد ما هو مخطط. وعمود «المتاح» هو المهم: هو التمويل أو السعة المخطط ناقص الملتزم به، وخارطة الطريق التي يكون فيها هذا الرقم سالبًا في فترة ما هي خارطة طريق ستنكسر في تلك الفترة. وسجل الافتراضات التي يعتمد عليها الصف، مثل تاريخ توظيف أو قرار تمويل لم يُتخذ بعد، لأن صف السعة بلا افتراضاته يُقرأ كالتزام والقارئ يعامله كذلك. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| الفترة | التمويل المخطط | السعة المخططة | العبء الملتزم | المتاح | ملاحظات |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| الربع الثاني 2026 | 3,500,000 ريال | 480 ساعة عمل / شهر | 420 ساعة عمل / شهر | 60 ساعة عمل (فائض) | تم التحقق من الجاهزية والامتثال لضوابط الأمن السيبراني |
+| الربع الثالث 2026 | 4,200,000 ريال | 620 ساعة عمل / شهر | 580 ساعة عمل / شهر | 40 ساعة عمل (فائض) | جلسات المتابعة والتنسيق مستمرة وفق الجدول المعتمد |
+| الربع الرابع 2026 | 2,800,000 ريال | 540 ساعة عمل / شهر | 490 ساعة عمل / شهر | 50 ساعة عمل (فائض) | تم رصد مخصص الطوارئ المعتمد لهذه المرحلة |
+
+---
+
+## 5. الافتراضات والقيود
+<!-- ما تفترضه خارطة الطريق وما الذي يحدّها. فالافتراض بلا مالك ولا تاريخ مراجعة لا يميز بينه وبين الحقيقة، فتمرر خارطة الطريق هذا الافتراض إلى الأمام إلى ما لا نهاية بعد أن تنتهي الظروف التي جعلته صحيحًا. وسجل القيود بالجدية نفسها، لأن القيد المسجل بلا أثر لا يمكن مقابلته بشيء. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | النوع | الوصف | الأثر على خارطة الطريق | المالك | تاريخ المراجعة |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | تقني وتكاملي | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | تأخير بدء اختبارات التكامل لمدة أسبوعين | أ. إلينا فانس، PfMP | 2026-06-30 |
+| REQ-02 | تنظيمي وتشغيلي | أتمتة دورة المشتريات والمستودعات والربط المباشر | إعادة جدولة نافذة الإطلاق التشغيلي التجريبي | م. فيصل الحربي، PMP | 2026-09-30 |
+| ACT-03 | حوكمة وامتثال | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | زيادة طفيفة في استهلاك ساعات الاستشارات التقنية | د. طارق المنصور، PfMP | 2026-11-30 |
+
+---
+
+## 6. تغييرات خارطة الطريق
+<!-- ما الذي تغير بين هذه النسخة من خارطة الطريق وبين السابقة، ولماذا. القارئ الذي يقارن بين خريطتين يحتاج السبب بقدر ما يحتاج التغيير، لأن السبب هو ما يخبره بصلاحية السبب نفسه في التغيير التالي. وسجل المعتمد، فخارطة الطريق التي تُعدَّل بلا معتمد خارطة طريق لا يملكها أحد. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| معرف التغيير | الوصف | السبب | المبادرات المتأثرة | اعتمده | التاريخ |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| CR-2026-01 | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | تحديث متطلبات التكامل الأمني السحابي | INIT-01, INIT-02 | أ. إلينا فانس، PfMP | 2026-06-30 |
+| CR-2026-02 | أتمتة دورة المشتريات والمستودعات والربط المباشر | توسيع نطاق التقارير التحليلية لإدارة العمليات | INIT-01, INIT-02 | م. فيصل الحربي، PMP | 2026-09-30 |
+| CR-2026-03 | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | مواءمة مسارات النشر مع إغلاق الربع المالي | INIT-01, INIT-02 | د. طارق المنصور، PfMP | 2026-11-30 |
+
+---
+
+## 7. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير المحفظة** | أ. إلينا فانس، PfMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **رئيس مكتب إدارة المشاريع** | د. طارق المنصور، PfMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **الراعي التنفيذي** | د. منى الغامدي (نائب الرئيس التنفيذي) | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+ <strong>النموذج:</strong> خارطة طريق المحفظة | <strong>المرجع:</strong> PMO-00.01 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI USE CASE CANVAS | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../../../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../../../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../README_AR.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas/02_04_AI_Use_Case_Canvas_Template.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-02.04</span>
+    <span class="badge badge-phase">02. Project Approach & Tailoring</span>
+    <span class="badge badge-standard">PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../guides/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Guide.html">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../examples/en/02_Project_Approach_and_Tailoring/02_04_AI_Use_Case_Canvas_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas/02_04_AI_Use_Case_Canvas_Template.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_04_نموذج_حالة_استخدام_الذكاء_الاصطناعي_قالب.html">🇸🇦 النسخة العربية</a>
+  </div>
+</div>
+
+<hr />
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/04_AI_Use_Case_Canvas/02_04_AI_Use_Case_Canvas_Template.npy
+token_count: 2191
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.024644+00:00'
+form_id: PMO-02.04
+language: en
+status: approved
+---
+-->
+
+<!--
+LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+
+**1. Use Case Identification**
+*   **Use Case Name:** What this use case is called, and where it sits in the portfolio. Naming it makes it possible to say that a later system is the same use case grown, which is usually the difference between a second business case and a repeat of the first.
+*   **Business Owner:** The person accountable for the outcome, who must be able to say what the system is for without reference to the model. An owner who describes the technology has not been identified.
+*   **Problem Statement:** The specific problem, in the words of the person who has it, with the cost of leaving it unsolved. "Improve efficiency" is a goal; "a specialist spends forty minutes a day reconciling three spreadsheets" is a problem that can be sized and later checked.
+*   **Affected Population:** Who experiences the problem, how many, and how often. The population is what converts an annoyance into a cost, and it is also the population the system will act upon.
+*   **Current Workaround:** What people do today, and what it costs them. A workaround with no stated cost cannot be beaten, so the baseline here is what any proposal is measured against.
+
+**2. Proposed Solution**
+*   **AI Pattern:** The class of approach, and what makes it fit this problem rather than a neighbouring one. Classification, ranking, generation, forecasting and anomaly detection fail differently, and naming the pattern is what lets the failure modes be anticipated.
+*   **Solution Description:** What the system does, in one paragraph a non-specialist can check. If the description requires the model architecture to be understood, the description is not yet a description.
+*   **Human Role:** What a person still does, and at which points they can stop the system. A system described as assisting usually replaces something, and the thing replaced should be named so the change is visible to those affected.
+*   **Scope Boundary:** What this use case explicitly does not include. Scope stated only as a positive is unbounded, and an unbounded use case absorbs its neighbours' costs.
+*   **Assumptions:** What must be true for the solution to work, and what happens if each is not. Assumptions recorded after the build are records of what was believed, not of what was assumed.
+
+**3. Data**
+*   **Data Sources:** Where each input comes from, as a named system or collection with an owner. A source named only as "historical data" cannot be checked for permission, and permission is the first thing that blocks.
+*   **Data Category and Volume:** What kind of data, at what volume and frequency. Frequency is the field most often omitted and the one that determines whether the system is retrained, refreshed or left to drift.
+*   **Data Quality Status:** What is known about completeness, consistency and timeliness, and what has not been checked. Recording what was not checked is as useful as recording what was, because it bounds the confidence of the estimate.
+*   **Labelling Requirement:** Whether labelled examples exist, who will produce them, and at what cost. This is usually the largest single line in the business case, and it is usually absent from it.
+*   **Permitted Use and Access:** What the data may be used for within this use case, and who approves it. Where the data cannot be used for model training, the shape of the solution changes, and that is better known before than after.
+
+**4. Value and Cost**
+*   **Value Proposition:** What changes for whom, expressed as a change in the process rather than a return figure. A return calculated before the operating cost is a number that survives no review.
+*   **Value Measurement Method:** How the value will be measured, against what baseline, and by whom. Value stated without a baseline is a claim, and the baseline is usually already recorded in the current-workaround cost above.
+*   **Beneficiaries:** Who gains, and who bears the cost of the change. These are rarely the same people, and the form is the place where the second group becomes visible.
+*   **Build Cost:** What it will cost to build, and what is included. The cost that is excluded is the operating cost below, and stating the exclusion is what keeps the total honest.
+*   **Operating Cost:** What it will cost to run per unit of work, and at what volume. Cost per unit rather than total, because the total scales with volume and the viability question is asked per unit.
+*   **Value Realisation Condition:** What must be true for the value to be realised, as distinct from for the system to be built. Most systems are built successfully and deliver nothing, and the difference is nearly always one of these conditions.
+
+**5. Risks, Controls and Governance Route**
+*   **Key Risks:** The risks specific to this use case, ranked, with the consequence if each materialises. A generic risk register applied here records that data may be biased without saying for whom or how it would be detected.
+*   **Risk Controls:** What is in place for each risk, and what it does not cover. The second half is the useful half, and a control that covers everything is a control that has been described rather than designed.
+*   **Feasibility Assessment:** Whether this is technically feasible, at what maturity, and what is unproven. A feasibility statement that does not say which part is unproven is a statement that all of it is proven.
+*   **Governance Route:** Which governance artefacts this use case must pass through, and in what order. The order is the content: privacy, then fairness, then approval, because a system approved before its data is assessed cannot be un-approved.
+*   **Kill Criteria:** What result would cause this use case to be stopped. A use case with no kill criteria is a commitment, and a commitment entered without an exit condition is the failure mode this field exists to prevent.
+*   **Related Artefacts:** The business case, AI governance plan, model card and privacy assessment for this use case, so that a reader holding the canvas can find the decisions that depend on it.
+-->
+
+<h3 dir="ltr" align="right">{{Company_Name}}</h3>
+<h2 dir="ltr" align="right">{{AI_Solution_Name}} - {{Use_Case_ID}}</h2>
+<h1 dir="ltr" align="center">AI USE CASE CANVAS</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Date Prepared:</strong> {{Current_Date}}</th>
+<th style="text-align: left;"><strong>AI Product Owner:</strong> {{AI_Product_Owner_Name}}</th>
+<th style="text-align: left;"><strong>Prepared By:</strong> {{Prepared_By}}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-use-case-identification">1. Use Case Identification</h2>
+<!-- What this is called, who owns the outcome, the problem in the words of the person who has it, who it affects, and what people do today. -->
+
+<p><strong>Use Case Name:</strong> [ Add details... ]</p>
+<p><strong>Business Owner:</strong> [ Add details... ]</p>
+<p><strong>Problem Statement:</strong> [ Add details... ]</p>
+<p><strong>Affected Population:</strong> [ Add details... ]</p>
+<p><strong>Current Workaround:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="2-proposed-solution">2. Proposed Solution</h2>
+<!-- The class of approach, what the system does in terms a non-specialist can check, what a person still does, what is out of scope, and what must be true for it to work. -->
+
+<p><strong>AI Pattern:</strong> [ Add details... ]</p>
+<p><strong>Solution Description:</strong> [ Add details... ]</p>
+<p><strong>Human Role:</strong> [ Add details... ]</p>
+<p><strong>Scope Boundary:</strong> [ Add details... ]</p>
+<p><strong>Assumptions:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="3-data">3. Data</h2>
+<!-- One row per source: where it comes from, what it is, what is known about its quality, what labelling is required, and what use is permitted. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Data Source</th>
+<th style="text-align: left;">Data Category and Volume</th>
+<th style="text-align: center;">Data Quality Status</th>
+<th style="text-align: left;">Labelling Requirement</th>
+<th style="text-align: left;">Permitted Use and Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: center;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: center;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: center;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-value-and-cost">4. Value and Cost</h2>
+<!-- The value, how it will be measured and against what baseline, who gains and who bears the cost, and the build and operating costs kept separate. -->
+
+<p><strong>Value Proposition:</strong> [ Add details... ]</p>
+<p><strong>Value Measurement Method:</strong> [ Add details... ]</p>
+<p><strong>Beneficiaries:</strong> [ Add details... ]</p>
+<p><strong>Build Cost:</strong> [ Add details... ]</p>
+<p><strong>Operating Cost:</strong> [ Add details... ]</p>
+<p><strong>Value Realisation Condition:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="5-risks-controls-and-governance-route">5. Risks, Controls and Governance Route</h2>
+<!-- The risks specific to this use case and what they would cause, what is in place and what it does not cover, whether it is feasible, which governance it passes through, and what would stop it. -->
+
+<p><strong>Key Risks:</strong> [ Add details... ]</p>
+<p><strong>Risk Controls:</strong> [ Add details... ]</p>
+<p><strong>Feasibility Assessment:</strong> [ Add details... ]</p>
+<p><strong>Governance Route:</strong> [ Add details... ]</p>
+<p><strong>Kill Criteria:</strong> [ Add details... ]</p>
+<p><strong>Related Artefacts:</strong> [ Add details... ]</p>
+<hr />
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Signature</th>
+<th style="text-align: center;">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Product / Business Owner</strong></td>
+<td style="text-align: left;">{{Business_Owner_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AI Technical Lead</strong></td>
+<td style="text-align: left;">{{AI_Lead_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Project Sponsor</strong></td>
+<td style="text-align: left;">{{Project_Sponsor_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+  <strong>Template:</strong> AI USE CASE CANVAS | <strong>Ref:</strong> PMO-02.04 <br>
+  <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

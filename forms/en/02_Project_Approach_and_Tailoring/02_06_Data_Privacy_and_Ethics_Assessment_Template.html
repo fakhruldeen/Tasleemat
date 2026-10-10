@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DATA PRIVACY AND ETHICS ASSESSMENT | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../../../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../../../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../README_AR.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Template.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-02.06</span>
+    <span class="badge badge-phase">02. Project Approach & Tailoring</span>
+    <span class="badge badge-standard">PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../guides/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Guide.html">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../examples/en/02_Project_Approach_and_Tailoring/02_06_Data_Privacy_and_Ethics_Assessment_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Template.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_06_تقييم_خصوصية_البيانات_وأخلاقياتها_قالب.html">🇸🇦 النسخة العربية</a>
+  </div>
+</div>
+
+<hr />
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Template.npy
+token_count: 3800
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.014532+00:00'
+form_id: PMO-02.06
+language: en
+status: approved
+---
+-->
+
+<!--
+LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+
+**1. Scope, Data Inventory and Ownership**
+*   **Assessment Scope:** The processing, systems, and periods this assessment covers, stated so that its edges are visible. An assessment that does not say what it excludes will be read as covering everything, and the gap between the two is where the untested processing lives.
+*   **Processing Out of Scope:** What is explicitly not covered, and why. Excluded because another assessment covers it, or excluded because it was not looked at, are very different statements and only the second one is a finding.
+*   **Data Owners and Custodians:** Who owns each data asset and who administers it day to day. Ownership and custody differ, and the accountability clause follows the custodian while the budget follows the owner.
+*   **Data Inventory:** One row per data asset: what it is, who owns it, the purpose it is held for, whether it holds personal data, whether that data is special category, and its volume and refresh rate. An inventory described as a count rather than as a list cannot answer any of the questions that follow.
+*   **Data Flow and Recipients:** Where the data moves, and who receives it. The flow is what determines which transfers need a mechanism, and a flow that shows only the primary store hides the copies.
+
+**2. Lawful Basis and Purpose Limitation**
+*   **Processing Purposes and Necessity:** What each processing activity is for, and why it cannot be achieved with less data or a shorter reach. Necessity is assessed per purpose rather than per dataset, because one dataset frequently serves several purposes with very different necessity.
+*   **Lawful Basis by Purpose:** One row per purpose: the data processed, the basis relied on, the basis for special category data where any is present, and the justification. A form that records a basis once for a dataset will carry one basis across purposes that do not share it.
+*   **Purpose Compatibility and Secondary Use:** Whether the data is used for any purpose other than the one collected for, and on what basis. Secondary use is the most common privacy failure in analytics work and the one least likely to be noticed, because every individual field still has a lawful origin.
+*   **Automated Decision-Making:** Any decision made about a person with no meaningful human involvement, the logic involved, and the consequences for them. Recorded because the assessment of a legal basis does not by itself establish that a decision is one a person could contest.
+
+**3. Consent and Transparency**
+*   **Consent Mechanism:** How consent is requested, and where in the flow it appears. Consent collected after the data is already in use is a record, not a request, and the difference determines what the record is worth.
+*   **Consent Specificity and Granularity:** What the person was told they were consenting to, and whether the choices are separate. A single consent covering several purposes is consent to none of them in particular, and a bundle of pre-ticked boxes is not a choice.
+*   **Consent Recording and Evidence:** Where each consent is stored, with the timestamp, the version of the text shown, and the interface shown. A consent record without the version of the text cannot be defended later, because the terms the person agreed to are then unrecoverable.
+*   **Withdrawal:** How a person withdraws, how much easier it is than granting, and what happens to data already processed on that basis. Asymmetry between granting and withdrawing is the standard test, and a withdrawal that is honoured prospectively only leaves the processing intact behind it.
+*   **Privacy Notices and Just-in-Time Disclosure:** What is told at collection, what is told at the point the data is used, and where either may be found. A notice published once and never revisited informs nobody who meets the processing for the first time in month three.
+
+**4. Individual Rights**
+*   **Rights Handling Process:** How a request is received, routed, decided and answered, and by whom. A right stated in a policy with no route to exercise it is a stated right, and it is tested only when someone uses it.
+*   **Identity Verification:** How the requester is confirmed to be who they claim, and what is refused when that cannot be done. Verification that accepts anyone discloses data; verification that refuses everyone denies the right, and the balance is a decision to record rather than a default.
+*   **Response Timeframes and Escalation:** The deadline for each type of request, what happens when it is missed, and who is told. The clock is the whole of the right in practice, because a correct answer delivered late is still a breach.
+*   **Rights Over Derived, Shared and Retired Data:** What happens to a request where the data has been aggregated, shared with a third party, or placed in a model. Deletion cannot reach a trained model by deleting a row, and the form that does not say so will be read as having deleted it.
+
+**5. Retention, Security and Sharing**
+*   **Retention Schedule:** One row per data asset: the retention period, the basis for that period rather than the convention, what triggers deletion, and how deletion is verified. A period adopted as a default and recorded as a decision is the most common entry, and it is the reason data outlives every justification that justified it.
+*   **Deletion Mechanism and Coverage:** How deletion is carried out, across primary stores, replicas, logs, exports and derived copies. Deleting a row from one table while the data persists in five other places is the most frequent finding in any such assessment, and it is invisible without a coverage statement.
+*   **Backups and Derived Data:** How deletion propagates to backups and to models trained on the data, and over what period. Backups are the usual reason a deletion is incomplete, and a trained model is a copy no deletion request reaches.
+*   **Access Controls and Least Privilege:** Who can reach the data, by what route, under what approval, and how access is reviewed. Access is the control that fails quietly, since misuse of legitimate credentials is indistinguishable from legitimate use without a review.
+*   **Encryption and Key Management:** What is encrypted in transit and at rest, and who holds the keys. Encryption whose keys sit beside the data is a control on paper, and the key custody arrangement is the part that is not written down.
+*   **Third-Party Sharing:** One row per recipient: the recipient, the purpose, the data shared, the contractual safeguard relied on, and the region processed in. Each row needs its own basis, because a processor bound by contract to a controller is not the same arrangement as a controller sharing on its own purpose.
+*   **Cross-Border Transfers:** Where data or processing leaves the jurisdiction, under which transfer mechanism, and what supplementary measures apply. A hosting region is not a transfer analysis, and remote access by a foreign staff member is a transfer that no region setting records.
+*   **Breach Notification:** What constitutes a breach here, who is notified, within what time, and who decides. Recorded because a response plan written after an incident is always written for that incident, and the decision threshold is the part that is usually left out.
+
+**6. Ethics Beyond Compliance**
+*   **Harm Beyond Legal Exposure:** Where this processing causes harm that no law prohibits. This section exists because compliance is a floor: processing can be lawful, consented, retained properly and shared properly, and still be wrong, and a form that stops at lawful has answered the question it was easy to answer.
+*   **Vulnerable Individuals and Groups:** Who is affected in a state of reduced ability to refuse, to understand, or to bear the consequence. Vulnerability here is a property of the situation rather than of the person, and it is invisible to a record of categories and volumes.
+*   **Transparency to Affected People:** What the people in the data are actually told, in language they use, as distinct from what the notice says. A notice that is accurate, complete and unread is the standard failure, and reading it as a recipient rather than as a drafter is the only way to see it.
+*   **Manipulation, Dark Patterns and Consent Fatigue:** Whether the interface nudges, pre-ticks, buries refusal, or asks repeatedly, and whether the volume of requests is such that a refusal is impractical. Consent obtained by a design choice is not freely given, whatever the record says.
+*   **Fairness of Automated Decisions:** Whether the processing produces outcomes for people, and what the distribution of those outcomes is across groups. A lawful basis for a decision is not a defence of its fairness, and the two are assessed against different questions.
+
+**7. Findings, Remediation and Review**
+*   **Findings Register:** One row per finding: the finding, the risk it poses to individuals, the severity, the owner, and the action being taken. Severity is what determines the order of work, and a register with no severity column is a list of observations.
+*   **Residual Risk and Acceptance:** The risk remaining after the planned actions, who accepts it, and until when. Acceptance is a decision with an owner and an expiry date; an acceptance with neither is an unowned risk that will be rediscovered at the next assessment.
+*   **Remediation Plan:** The actions, their owners and their dates, and what is being done in the interim. The interim period is where a known finding actually operates, so it is the part of the plan most worth writing down.
+*   **Review Triggers:** What would cause this assessment to be revisited before its scheduled date, such as a new purpose, a new recipient, a new model, or a regulatory change. Triggers stated after the change have occurred are a record of the change.
+*   **Reassessment Triggers:** When this assessment expires and on what cycle. An assessment with no expiry is treated as permanent by everyone who did not write it, including the people who inherited it.
+-->
+
+<h3 dir="ltr" align="right">{{Company_Name}}</h3>
+<h2 dir="ltr" align="right">{{System_or_Initiative_Name}} - {{Assessment_ID}}</h2>
+<h1 dir="ltr" align="center">DATA PRIVACY AND ETHICS ASSESSMENT</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Date Prepared:</strong> {{Current_Date}}</th>
+<th style="text-align: left;"><strong>Data Privacy Officer:</strong> {{Data_Privacy_Officer_Name}}</th>
+<th style="text-align: left;"><strong>Prepared By:</strong> {{Prepared_By}}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-scope-data-inventory-and-ownership">1. Scope, Data Inventory and Ownership</h2>
+<!-- What this assessment covers, what it does not, who owns and administers the data, what assets exist, and where the data moves. -->
+
+<p><strong>Assessment Scope:</strong> [ Add details... ]</p>
+<p><strong>Processing Out of Scope:</strong> [ Add details... ]</p>
+<p><strong>Data Owners and Custodians:</strong> [ Add details... ]</p>
+<p><strong>Data Inventory:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Data Asset</th>
+<th style="text-align: left;">Owner</th>
+<th style="text-align: left;">Stated Purpose</th>
+<th style="text-align: left;">Personal Data</th>
+<th style="text-align: left;">Special Category</th>
+<th style="text-align: left;">Volume and Refresh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data Flow and Recipients:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="2-lawful-basis-and-purpose-limitation">2. Lawful Basis and Purpose Limitation</h2>
+<!-- What each processing is for and why it needs the data it uses, the basis relied on per purpose, any use beyond the original purpose, and any decision made about a person automatically. -->
+
+<p><strong>Processing Purposes and Necessity:</strong> [ Add details... ]</p>
+<p><strong>Lawful Basis by Purpose:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Purpose</th>
+<th style="text-align: left;">Data Processed</th>
+<th style="text-align: left;">Lawful Basis</th>
+<th style="text-align: left;">Special Category Basis</th>
+<th style="text-align: left;">Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Purpose Compatibility and Secondary Use:</strong> [ Add details... ]</p>
+<p><strong>Automated Decision-Making:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="3-consent-and-transparency">3. Consent and Transparency</h2>
+<!-- How consent is requested, what it covers, how it is evidenced, how it is withdrawn, and what the people in the data are told. -->
+
+<p><strong>Consent Mechanism:</strong> [ Add details... ]</p>
+<p><strong>Consent Specificity and Granularity:</strong> [ Add details... ]</p>
+<p><strong>Consent Recording and Evidence:</strong> [ Add details... ]</p>
+<p><strong>Withdrawal:</strong> [ Add details... ]</p>
+<p><strong>Privacy Notices and Just-in-Time Disclosure:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="4-individual-rights">4. Individual Rights</h2>
+<!-- How a request for an individual's data is received, decided and answered in time, and what happens where the data has been derived, shared or used to build a model. -->
+
+<p><strong>Rights Handling Process:</strong> [ Add details... ]</p>
+<p><strong>Identity Verification:</strong> [ Add details... ]</p>
+<p><strong>Response Timeframes and Escalation:</strong> [ Add details... ]</p>
+<p><strong>Rights Over Derived, Shared and Retired Data:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="5-retention-security-and-sharing">5. Retention, Security and Sharing</h2>
+<!-- How long each asset is kept and on what basis, how deletion reaches every copy, who can reach the data, who else receives it, where it crosses a border, and what happens on a breach. -->
+
+<p><strong>Retention Schedule:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Data Asset</th>
+<th style="text-align: left;">Retention Period</th>
+<th style="text-align: left;">Basis for Period</th>
+<th style="text-align: left;">Deletion Trigger</th>
+<th style="text-align: left;">Deletion Verified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Deletion Mechanism and Coverage:</strong> [ Add details... ]</p>
+<p><strong>Backups and Derived Data:</strong> [ Add details... ]</p>
+<p><strong>Access Controls and Least Privilege:</strong> [ Add details... ]</p>
+<p><strong>Encryption and Key Management:</strong> [ Add details... ]</p>
+<p><strong>Third-Party Sharing:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Recipient</th>
+<th style="text-align: left;">Purpose</th>
+<th style="text-align: left;">Data Shared</th>
+<th style="text-align: left;">Contractual Safeguard</th>
+<th style="text-align: left;">Region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cross-Border Transfers:</strong> [ Add details... ]</p>
+<p><strong>Breach Notification:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="6-ethics-beyond-compliance">6. Ethics Beyond Compliance</h2>
+<!-- Where this processing causes harm that no law prohibits, who is affected while unable to refuse, what people are actually told, whether the interface permits a real choice, and how automated outcomes fall across groups. -->
+
+<p><strong>Harm Beyond Legal Exposure:</strong> [ Add details... ]</p>
+<p><strong>Vulnerable Individuals and Groups:</strong> [ Add details... ]</p>
+<p><strong>Transparency to Affected People:</strong> [ Add details... ]</p>
+<p><strong>Manipulation, Dark Patterns and Consent Fatigue:</strong> [ Add details... ]</p>
+<p><strong>Fairness of Automated Decisions:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="7-findings-remediation-and-review">7. Findings, Remediation and Review</h2>
+<!-- What was found, the risk remaining after the planned actions, what happens in the meantime, and what would cause this assessment to be reopened. -->
+
+<p><strong>Findings Register:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Finding</th>
+<th style="text-align: left;">Risk to Individuals</th>
+<th style="text-align: center;">Severity</th>
+<th style="text-align: left;">Owner</th>
+<th style="text-align: left;">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: center;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: center;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: center;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Residual Risk and Acceptance:</strong> [ Add details... ]</p>
+<p><strong>Remediation Plan:</strong> [ Add details... ]</p>
+<p><strong>Review Triggers:</strong> [ Add details... ]</p>
+<p><strong>Reassessment Triggers:</strong> [ Add details... ]</p>
+<hr />
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Signature</th>
+<th style="text-align: center;">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Data Protection Officer (DPO)</strong></td>
+<td style="text-align: left;">{{DPO_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Legal / Compliance Counsel</strong></td>
+<td style="text-align: left;">{{Legal_Counsel_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Project Manager</strong></td>
+<td style="text-align: left;">{{Project_Manager_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+  <strong>Template:</strong> DATA PRIVACY AND ETHICS ASSESSMENT | <strong>Ref:</strong> PMO-02.06 <br>
+  <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

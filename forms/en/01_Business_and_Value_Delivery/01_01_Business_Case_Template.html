@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUSINESS CASE | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../../../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../../../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../README_AR.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Template.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.html">🇸🇦 الانتقال للنسخة العربية (Arabic Template) →</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-01.01</span>
+    <span class="badge badge-phase">01. Business & Value Delivery</span>
+    <span class="badge badge-standard">PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 Blank Template</a>
+    <a class="nav-pill" href="../../../guides/en/01_Business_and_Value_Delivery/01_01_Business_Case_Guide.html">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../examples/en/01_Business_and_Value_Delivery/01_01_Business_Case_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Template.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="nav-pill lang-pill" href="../../ar/01_الأعمال_وتسليم_القيمة/01_01_دراسة_الجدوى_(Business_Case)_قالب.html">🇸🇦 النسخة العربية</a>
+  </div>
+</div>
+
+<hr />
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/01_Business_and_Value_Delivery/01_Business_Case/01_01_Business_Case_Template.npy
+token_count: 1581
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.087941+00:00'
+form_id: PMO-01.01
+language: en
+status: approved
+---
+-->
+
+<!--  
+LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+
+**1. Business Need**
+*   **Need Statement:** The problem or opportunity in one sentence, stated so that a reader who has never met the organisation can tell whether it has been solved. A need written as a goal cannot be falsified, and an unfalsifiable need is the reason a project that delivered everything it promised can still be judged a failure.
+*   **Why Now:** What makes this the moment to act. A need that has been true for a decade is not refuted by a business case, it is only dated by one, so the trigger has to be named: a regulation, a contract expiry, a competitor move, a cost that has crossed a threshold, a capability that has become scarce.
+*   **Who Feels It:** The stakeholder group that experiences the problem, and the one that pays for the remedy. These are often not the same group, and a case written only from the sufferer's point of view produces an approval that the payer later withdraws.
+*   **Cost of Inaction:** What happens if nothing is done, stated as a figure or a dated event rather than as a risk. This is the only number that competes with the cost of the investment, and a business case without it is an assertion of desire.
+
+**2. Analysis of Situation**
+*   **Current State:** How things stand now, with the figures that would be measured today. Record the baseline, because every later claim of improvement is measured against it and a baseline invented after the project is a baseline chosen to flatter the project.
+*   **Future State Without the Project:** What the situation becomes if the project is not funded, in the same terms as the current state. This is the counterfactual, and it is the only part of the analysis that makes the investment comparable to anything.
+*   **Root Causes:** The causes beneath the symptoms, distinguishing causes from the constraints that merely limit the damage. A business case that treats a constraint as a cause proposes a project that removes the constraint and leaves the cause in place.
+*   **Constraints and Assumptions:** What must hold for the analysis to be valid, and what is being assumed rather than known. Assumptions recorded here can be tested later; assumptions buried in prose cannot.
+
+**3. Options and Recommendation**
+*   **Option Description:** The distinct options considered, including the do-nothing option, since it is the baseline every other option is measured against and it is the one most often left out of the table.
+*   **Benefits:** The benefits of the option, each with how it will be measured. A benefit with no measure is a hope, and hopes do not survive a funding review.
+*   **Costs:** The full life of costs, not only the build. A case that counts only build cost is comparing a number to a number, and the difference between the two is usually the whole argument.
+*   **Risks:** The risks that would change the outcome, and what happens to the case if each occurs. A business case with no risks section is asserting that none exist, which is itself a risk and always an unconvincing one.
+*   **Net Present Value:** The net present value, with the discount rate and the period stated. Without them the figure is not reproducible and cannot be compared with any other case competing for the same money.
+*   **Recommendation:** The recommended option and the reason, stated so that a reader can disagree with the recommendation without being disagreeing with the analysis. A recommendation that can only be accepted whole is not a recommendation.
+
+**4. Evaluation and Approval**
+*   **Evaluation Criteria:** The measures by which success will be judged, each with a baseline, a target and a date.
+*   **Review and Approval:** Who reviews the case, when, and what decision each reviewer is being asked to make. A review that asks for information rather than for a decision produces a meeting rather than an approval.
+*   **Trigger to Reconsider:** The event that would cause the case to be reopened, such as a change in the cost of the inputs or a material shift in the benefit. A business case with no reopening trigger is a document that can never be wrong.
+-->
+
+<h3 dir="ltr" align="right">{{Company_Name}}</h3>
+<h2 dir="ltr" align="right">{{Initiative_Name}} - {{Proposal_ID}}</h2>
+<h1 dir="ltr" align="center">BUSINESS CASE</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Date Prepared:</strong> {{Current_Date}}</th>
+<th style="text-align: left;"><strong>Business Sponsor:</strong> {{Business_Sponsor_Name}}</th>
+<th style="text-align: left;"><strong>Lead Analyst:</strong> {{Prepared_By}}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-business-need">1. Business Need</h2>
+<!-- The problem or opportunity, the trigger that makes it current, who feels it and who pays, and what inaction costs. -->
+
+<p><strong>Need Statement:</strong> [ Add details... ]</p>
+<p><strong>Why Now:</strong> [ Add details... ]</p>
+<p><strong>Who Feels It:</strong> [ Add details... ]</p>
+<p><strong>Cost of Inaction:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="2-analysis-of-situation">2. Analysis of Situation</h2>
+<!-- The baseline, the counterfactual, the causes beneath the symptoms, and the assumptions the analysis rests on. -->
+
+<p><strong>Current State:</strong> [ Add details... ]</p>
+<p><strong>Future State Without the Project:</strong> [ Add details... ]</p>
+<p><strong>Root Causes:</strong> [ Add details... ]</p>
+<p><strong>Constraints and Assumptions:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="3-options-and-recommendation">3. Options and Recommendation</h2>
+<!-- Each option considered against the do-nothing baseline, with life-of costs, the risks, and the discounted result. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Option</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Benefits</th>
+<th style="text-align: right;">Costs</th>
+<th style="text-align: left;">Risks</th>
+<th style="text-align: right;">Net Present Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: right;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: right;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: right;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: right;">[ Add details... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Do Nothing</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: right;">[ Add details... ]</td>
+<td style="text-align: left;">[ Add details... ]</td>
+<td style="text-align: right;">[ Add details... ]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommendation:</strong> [ Add details... ]</p>
+<hr />
+<h2 id="4-evaluation-and-approval">4. Evaluation and Approval</h2>
+<!-- The measures that decide success, and the decision each reviewer is actually being asked to make. -->
+
+<p><strong>Evaluation Criteria:</strong> [ Add details... ]</p>
+<p><strong>Review and Approval:</strong> [ Add details... ]</p>
+<p><strong>Trigger to Reconsider:</strong> [ Add details... ]</p>
+<hr />
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Signature</th>
+<th style="text-align: center;">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Business Owner</strong></td>
+<td style="text-align: left;">{{Business_Owner_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Finance Controller</strong></td>
+<td style="text-align: left;">{{Finance_Controller_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Project Sponsor</strong></td>
+<td style="text-align: left;">{{Project_Sponsor_Name}}</td>
+<td style="text-align: center;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: center;">[ .... - .... - .... ]</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+  <strong>Template:</strong> BUSINESS CASE | <strong>Ref:</strong> PMO-01.01 <br>
+  <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

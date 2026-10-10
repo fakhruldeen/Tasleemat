@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مخرج المشروع: خارطة طريق المحفظة | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-00.01</span>
+    <span class="badge badge-phase">00. إدارة البرامج والمحافظ</span>
+    <span class="badge badge-type">دليل إرشادي وحوكمي</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/00_Program_and_Portfolio_Management/00_01_Portfolio_Roadmap_Guide.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Form
+lang: ar
+layout: default
+title: خارطة طريق المحفظة
+nav_order: 1
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_دليل.npy
+token_count: 3585
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.924267+00:00'
+form_id: PMO-00.01
+status: approved</p>
+<hr />
+<div style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
+
+## دليل نماذج تسليمات
+# مخرج المشروع: خارطة طريق المحفظة
+
+**المرجع الوثيقي:** `PMO-00.01`
+
+توفر هذه الوثيقة مرجعًا شاملًا ومهنيًا لفهم الغرض من **خارطة طريق المحفظة**
+واستخدامها الفعال بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة رسمية متوافقة مع تسليمات تُعرف بـ **خارطة طريق المحفظة**، وهي عرض بصري
+مرحلي زمنيًا للبرامج والمشاريع والعمليات في المحفظة، يُظهر ترتيبها ونتائجها
+المتوقعة والاعتماديات بينها.
+
+وتسجل الأساس الذي تُخطط على أساسه المحفظة، والمبادرات نفسها بنوعها وهدفها
+الاستراتيجي وتواريخها وميزانيتها وحالتها، والاعتماديات بينها، وما إذا كان
+التمويل والسعة خلف الخطة متاحين فعلًا، والافتراضات والقيود التي تقوم عليها
+الخطة، وما الذي تغير بين هذه النسخة من الخارطة وبين السابقة.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن خارطة الطريق التي تقتصر على سرد المبادرات والتواريخ دون توضيح الاعتماديات والتمويل جدول زمني مجرد يفتقر إلى البعد الاستراتيجي وآليات الحوكمة. فهي تبدو
+كاملة وهي لا تقدم للإدارة تحليلاً كافياً عمّا سيحدث إذا تأخرت مبادرة، وقسم التمويل والسعة
+هو الإطار الحاكم الذي يظهر فيه ذلك. وبدون رقم نسخة وسجل تغييرات، لا يمكن قراءة
+خريطتين تختلفان في مبادرات قليلة بوصفهما تغيرًا في الاتجاه لا بوصفهما رأيَين
+في المحفظة نفسها.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعد هذا المخرج في مجموعة **إدارة البرامج والمحفظة**، ويُحدَّث وفق دورة التخطيط
+المسجلة في قسم السياق، عادةً في بداية كل فترة مالية أو قبيل كل مراجعة
+استثمارية.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكها مدير المحفظة وتُعد بالاشتراك مع ملاك المبادرات في
+المحفظة. ويعتمدها مجلس الحوكمة الذي يحتفظ بالتمويل، عادةً لجنة الاستثمار،
+ويوقّعها الراعي والشريك المالي للأعمال الذي يستطيع تأكيد أن صفوف التمويل
+واقعية.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  قد تختصر خارطة طريق المحفظة على مستوى البرنامج إلى البرامج فقط، وقد تكون
+  صفوف المبادرات على مستوى أعمق حيث تخطط الإدارة الفرعية محفظتها الخاصة.
+*  قد تُعرض خارطة الطريق بيانيًا لا كجدول، والأقسام أدناه تحمل المحتوى نفسه
+  بأي من الصورتين، وينبغي أن يحدد النموذج أيّهما متوقعة.
+*  أضف صفوفًا أو احذفها حسب الحاجة، فإذا حملت مبادرة تفصيلًا يفوق ما تتسع له
+  خارطة الطريق فاربط بميثاقها أو دراستها بدل ضغطها هنا.
+*  حيث تعمل المؤسسة بدورة تخطيط ثابتة، سجل الدورة في قسم السياق وأعد
+  استخدامها، فتصبح خرائط الطريق المتعاقبة قابلة للمقارنة.
+*  قد يُحذف قسم التمويل إذا كانت الخارطة تركز على الترتيب فقط، لكن ينبغي
+  أن يذكر النموذج ذلك صراحةً لا أن يترك القارئ يفترض أن التمويل قد أُخذ في
+  الحسبان.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن تكون خارطة طريق المحفظة متسقة مع الوثائق التالية:
+*  ميثاق البرنامج
+*  دراسة الجدوى
+*  خطة إدارة المحفظة
+*  مصفوفة سعة الموارد
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإكمال **خارطة طريق المحفظة** على نحو دقيق ومهني، على المسؤول أن يملأ
+الحقول التالية بناءً على سياق المشروع (مع الرجوع إلى `parameters.md` للمتغيرات العامة
+للمشروع):
+
+*  **غرض المحفظة ونطاقها:** ما الذي تغطيه هذه المحفظة وما الذي تستبعده عمدًا، بمصطلحات الاستراتيجية نفسها. فخارطة الطريق التي لا تذكر حدودها لا يمكن قراءتها في مقابل استراتيجية أوسع من المحفظة، ويُحسب الفارق مبادرات مفقودة.
+*  **فترة التخطيط:** الفترة التي تخطط لها خارطة الطريق، وهل هي سنة مالية أم متحركة أم دورة متفق عليها في مكان آخر. فخرائط الطريق المتعاقبة لا تكون قابلة للمقارنة إلا إذا كانت هذه الفترة واحدة كل مرة.
+*  **أفق الخارطة:** إلى أي مدى تنظر خارطة الطريق. سجل الأفق حتى حين يساوي فترة التخطيط، فالأمرين يختلطان كثيرًا ويظهر الالتباس لاحقًا بوصفه فجوة بين المخطط الزمني المستهدف والتوقعات الفعلية للتنفيذ.
+*  **مالك المحفظة:** الدور الواحد المسؤول عن المحفظة ككل، وهو عادةً ليس مالك أي مبادرة فيها. وحين يُترك هذا فارغًا تكون للخارطة مسؤول عن الصياغة دون صلاحية اتخاذ القرار، فتصبح إعادة الترتيب قرارًا لا يتخذه أحد.
+*  **دورة التخطيط:** كم مرة تُحدَّث خارطة الطريق وبأي جهة حاكمة تُعرض، مثل لجنة استثمارية ربع سنوية. والدورة هي ما يجعل نسختين من الخارطة قابلتين للمقارنة، وخارطة الطريق التي لا دورة لها وثائق تفتقر للمرجعية الزمنية والمقارنة المعيارية.
+*  **نسخة الخارطة وحالتها:** أي دورة تخطيط تمثلها هذه النسخة، ورقم نسختها، وهل هي مسودة أم معتمدة. فبدون رقم نسخة لا يمكن قراءة خريطتين تختلفان في مبادرات قليلة بوصفهما تغيرًا في الاتجاه لا بوصفهما وجهتي نظر متباينتين حول اتجاهات المحفظة.
+*  **المعرف:** المعرف الثابت للمبادرة، يُستخدم في كل دورة لاحقة من هذه الخارطة وفي قسمَي الاعتماديات والتمويل. فخارطة الطريق التي تُراجع عبر دورات متعددة لا تُقرأ إن وردت المبادرة باسم مختلف كل مرة، إذ يتعذر التمييز بين ما إذا كان الصفان مبادرة واحدة أم مبادرتين.
+*  **اسم المبادرة:** اسم البرنامج أو المشروع أو العملية، مأخوذًا من الميثاق حتى لا تُتابع المبادرة نفسها باسمين. وحين يُغيَّر الاسم، سجل الاسم السابق لا أن يستبدل، وإلا صار تتبع التاريخ مستحيلًا.
+*  **النوع:** هل الصف برنامج أم مشروع أم عملية. والنوع يحدد الحوكمة المنطبقة، فالمبادرة المسجلة دون نوع تفتقر إلى مسار واضح للحوكمة والاعتماد الرسمي، ولا تستطيع الخارطة الإجابة عن نوع القرار اللازم بشأنها.
+*  **الهدف الاستراتيجي:** الهدف المحدد الذي تخدمه هذه المبادرة، مذكورًا من الاستراتيجية لا من ميثاق المبادرة نفسه. والمبادرة التي لا ترتبط بهدف عرضة للاستبعاد أو إعادة التوجيه، وخارطة الطريق هي الموضع الوحيد الذي يظهر فيه ذلك؛ وحين ينعدم الربط فعلًا فاكتب في الخلية أنه «لا ينطبق» بدلاً من ترك الحقل فارغاً فارغة.
+*  **البداية:** متى يُتوقع بدء المبادرة، بالدقة المستخدمة في هذا الجدول بأكمله. فالدقة المختلطة في جدول واحد هي ما يجب تجنبه، لأن القارئ يقارن الصفوف ببعضها وشهر بجوار ربع يدعو إلى استنتاج خاطئ.
+*  **النهاية:** متى يُتوقع أن تحقق المبادرة نتائجها، وهو ليس متى يُنفق اعتمادها. فالمبادرة التي تسلّم مبكرًا وتغلق حساباتها لاحقًا أمر طبيعي، وتسجيل تاريخ الحسابات كتاريخ نهاية يؤثر سلباً على تواريخ المبادرات التابعة ومساراتها الحرجة.
+*  **الميزانية:** حد التمويل المخصص للمبادرة خلال فترة التخطيط، لا تنبؤ بالإنفاق. فخارطة الطريق تركز على تخصيص واعتماد سقف التمويل للفترة المحددة لضمان الجاهزية المالية للمبادرات.
+*  **الحالة:** أين تقف المبادرة حاليًا مقابل المجموعة الثابتة المتفق عليها في خارطة الطريق هذه، مثل: مقترح، مموَّل، قيد التنفيذ، معلَّق، مكتمل. فالحالة النصية الحرة لا يمكن ترتيبها أو ترشيحها، وخارطة الطريق التي لا يمكن ترشيحها عرض وصفي غير قابل للتنفيذ والقياس.
+*  **المعرف:** معرف المبادرة التي تُسجَّل اعتماديتها، مطابقًا للمعرف المستخدم في قسم المبادرات حتى يمكن وصل الصف بها.
+*  **المبادرة التابعة:** المبادرة التي لا يمكنها البدء، أو لا يمكنها البدء بتواريخها، دون السابقة. سمِّها لا صفها، فالاعتمادية المعبَّرة بصنف لا بمبادرة محددة لا يمكن التصرف بشأنها حين تُهدَّد.
+*  **نوع الاعتمادية:** هل الاعتمادية انتهاء إلى بدء، أم بدء إلى بدء، أم انتهاء إلى انتهاء، أم بدء إلى انتهاء. والنوع يحدد المساحة المتوفرة للمتابعة، فالاعتمادية غير المحددة النوع لا يمكن التخطيط لها؛ وانتهاء إلى بدء هي الحالة الشائعة، وتنشأ البقية حيث يجب أن تتحرك مبادرتان معًا.
+*  **السابقة:** المبادرة التي تعتمد عليها هذه، مسماة ومعرَّفة. فالاعتمادية المسجلة في نص فقط لا يمكن الاستعلام عنها، ولذلك لا تُراجع قبل أن تتأخر السابقة.
+*  **مطلوب بحلول:** التاريخ الذي يجب أن تتحقق فيه الاعتمادية كي تحافظ المبادرة التابعة على تواريخها. وحين يكون التاريخ المطلوب متأخرًا عن انتهاء السابقة المخطط، فالفجوة هي الخطر ويجب أن تظهر هنا لا أن تُكتشف لاحقًا.
+*  **الأثر عند التأخر:** ما يحدث للمبادرة التابعة إذا لم تسلّم السابقة في موعدها، في المال أو الجدول أو النطاق. فالاعتمادية التي لا يذكر أثرها لا يمكن التصرف بشأنها عند تأخر السابقة، إذ لا يعرف أحد هل يُصعَّد أم يُعاد الترتيب أم يُتحمَّل التأخير.
+*  **الفترة:** فترة التخطيط التي يغطيها الصف، بالفترات نفسها المستخدمة في قسم أساس التخطيط حتى تُقرأ الجداول معًا. وحين يظهر ربع في جدول وشهر في آخر، يتحتم على القارئ أن يوفّق بينهما قبل أي استنتاج.
+*  **التمويل المخطط:** المال المتاح في الفترة على مستوى المحفظة كلها، من الميزانية المعتمدة لا من الطلبات. وغرض الخارطة اختبار الخطة مقابل المتاح فعلًا، فالرقم المأخوذ من الطلبات لا يختبر شيئًا.
+*  **السعة المخططة:** سعة الموارد المتاحة في الفترة، بالوحدة التي تستخدمها المؤسسة، سواء كانت أيام عمل أو وظائف بدوام كامل أو ساعات آلات. والوحدة مهمة لأن صف السعة المُعَبَّر عنها بوحدة مختلفة عن باقي الخارطة لا يجمع بشيء.
+*  **العبء الملتزم:** السعة الملتزم بها بالفعل للمبادرات في الفترة، بما فيها العمل الذي لن ينتهي داخلها. واستثناء الجزء الذي يمتد إلى الفترة التالية هو أشيع سبب لمبالغة جدول السعة في ما هو متاح.
+*  **المتاح:** الفرق بين المخطط والملتزم. وهذا العمود هو ما يخبر القارئ بجدوى الخطة؛ فخارطة الطريق التي يكون فيها هذا الرقم سالبًا في فترة ما هي خارطة طريق ستنكسر في تلك الفترة، والنقص يظهر هنا أو لا يظهر.
+*  **ملاحظات:** ما يغير كيفية قراءة الصف، مثل نقص معروف أو افتراض توظيف يعتمد عليه الصف أو قرار تمويل لم يُتخذ بعد. وصف السعة بلا افتراضاته يُقرأ كالتزام، والقارئ يعامله كذلك.
+*  **المعرف:** معرف الافتراض أو القيد، ليُشار إليه من سجل التغييرات ومن صفوف المبادرات التي تعتمد عليه.
+*  **النوع:** هل الصف افتراض أم قيد. فالافتراض قد يثبت خطأه فيُستبدل، والقيد لا يُستبدل بل يُخطَّط حوله، وجمعهما تحت عنوان واحد يفقد هذا التمييز تحديدًا حيث هو مهم.
+*  **الوصف:** ما الذي يُفترض، أو ما الذي يقيّد المحفظة. اذكره على صورة قابلة للاختبار لا على صورة أمنية، فالافتراض المصوغ أمنية لا يمكن إثبات خطئه.
+*  **الأثر على خارطة الطريق:** الأثر على خارطة الطريق إذا ثبت خطأ هذا الافتراض، أو ثبت تشدده على ما ورد. فالافتراض المسجل بلا أثر لا يمكن تحديد أولوياته للاختبار، إذ لا شيء يميز الفرضيات الجوهرية من الثانوية.
+*  **المالك:** من المسؤول عن تأكيده أو إدارته. فالافتراض بلا مالك ليس مراقبًا، وتمرر خارطة الطريق إلى الأمام إلى ما لا نهاية بعد أن تنتهي الظروف التي جعلته صحيحًا.
+*  **تاريخ المراجعة:** متى يُراجع الافترض مرة أخرى. هذا ما يفصل الافتراض عن الحقيقة في الواقع: الافتراض الذي لا يراجعه أحد لا يميز بينه وبين الحقيقة، ويتوقف عن التساؤل عنه في الوقت الذي ينبغي أن يُسأل فيه.
+*  **معرف التغيير:** معرف التغيير، ليُربط بسجل القرار وبالاجتماع الذي اعتمده.
+*  **الوصف:** ما الذي تغير في خارطة الطريق، بوصف دقيق يكفي لعقد فرق بينه وبين النسخة السابقة. فالتغيير الموصوف بأنه مجرد إعادة تنظيم لا يمكن التحقق من وقوعه.
+*  **السبب:** سبب التغيير. والقارئ الذي يقارن بين خريطتين يحتاج السبب بقدر ما يحتاج التغيير نفسه، لأن السبب هو ما يخبره بصلاحية هذا السبب في التغيير التالي أو تجاوزه.
+*  **المبادرات المتأثرة:** المبادرات التي يمسها التغيير، بالمعرف حيثما أمكن. وهذا ما يتيح للقارئ أن يرى إن كان تغيير موصوف بأنه صغير قد أخّر فعلًا تاريخًا ملتزمًا به.
+*  **اعتمده:** من اعتمد التغيير. فخارطة الطريق التي تُعدَّل بلا معتمد خارطة طريق لا يملكها أحد، والتعديل التالي محتمل أن يكون خطأً كما يحتمل أن يكون قرارًا.
+*  **التاريخ:** متى اعتُمد التغيير، وهو ما يحدد نسخة خارطة الطريق التي نُفِّذ فيها، ويتيح قراءة سجل التغييرات بترتيب.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 نموذج قابل للطباعة (Markdown)](../../../forms/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_قالب.html)
+* [🤖 موجّه التوليد بالنموذج الذكي](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة.md)
+* [📊 بنية البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة.json)
+* [📈 البيانات الجدولية (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [00_01_خارطة_طريق_المحفظة_مثال.md](../../../examples/ar/00_إدارة_البرامج_والمحافظ/00_01_خارطة_طريق_المحفظة_مثال.html)
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

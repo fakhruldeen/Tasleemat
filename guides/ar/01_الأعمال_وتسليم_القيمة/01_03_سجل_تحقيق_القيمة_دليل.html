@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المخرج: سجل تحقيق القيمة | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة/01_03_سجل_تحقيق_القيمة_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-01.03</span>
+    <span class="badge badge-phase">01. الأعمال وتسليم القيمة</span>
+    <span class="badge badge-type">دليل إرشادي وحوكمي</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة/01_03_سجل_تحقيق_القيمة_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/01_Business_and_Value_Delivery/01_03_Value_Realization_Register_Guide.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Form
+lang: ar
+layout: default
+title: سجل تحقيق القيمة
+nav_order: 1
+token_pointer: /_tokens/forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة/01_03_سجل_تحقيق_القيمة_دليل.npy
+token_count: 2089
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.895156+00:00'
+form_id: PMO-01.03
+status: approved</p>
+<hr />
+<div>
+
+## دليل نماذج تسليمات
+# المخرج: سجل تحقيق القيمة
+
+**مرجع الوثيقة:** `PMO-01.03`
+
+يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من **سجل تحقيق القيمة**
+واستخدامه بفعالية بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+سجل يقيّد لكل فائدة صرّحت بها دراسة الجدوى، ما كانت قيمة المقياس قبل
+المشروع، وما كان متوقعًا له، وما قد قيس عليه، ومتى. ويحمل طريقة قياس كل
+فائدة ومالكها المساءل عنها والفارق بإشارته وما يجري بشأنه. وهو سجل حركة لا
+خطة، ومن المتوقَّع أن يبقى مفتوحًا بعد إغلاق المشروع بوقت طويل.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن قيمة بلا تاريخ وبلا خط أساس ليست دليلًا على شيء. فالرقم وحده قد يكون
+أي شيء: مقيسًا في لحظة خاطئة، أو بتعريف متغير، أو مقابل خط أساس اختير
+بعد وقوعه. والسجل هو ما يجعل الدعوى قابلة للتحقق من قارئ لم يكن هناك،
+وهو المخرج الوحيد الذي يبقى حين يتفرّق فريق المشروع الذي كان يستطيع شرح
+الأرقام.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعدّ هذا المخرج ويستخدم ويُحدَّث أساسًا في مجموعة **الأعمال وتسليم
+القيمة** من دورة حياة المشروع. يُفتح مع الفوائد ويستمر حتى تتحقق آخر فائدة
+أو تُسحب رسميًا، وهو ما يقع عادة بعد إغلاق المشروع ويتبع مالك الأعمال لا
+فريق المشروع.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكه مالك الأعمال، ويتولى المراقب المالي مسؤولية الطريقة
+التي تُقاس بها القيمة. ويدير مدير المشروع المدخلات ولا يملك الفوائد، وتوقيعه
+السجل قبول بأن الأرقام فيه أرقام المؤسسة لا أرقام المشروع.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  يجوز أن يغطي سجل واحد برنامجًا كاملًا، وعندئذٍ تُجمَّع المدخلات حسب
+  المكوّن أو المبادرة ويُعرض المجموع على مستوى البرنامج على حدة، إذ لا
+  يعد الفارق المدمج بين فوائد مختلفة الحجم والثقة رقمًا ذا معنى.
+*  حيث تُتابع الفوائد بتواتر مختلفة، يجوز إصدار السجل أكثر من مرة في
+  الفترة الواحدة، لكن كل نسخة تحمل تاريخ القياس، إذ لا يمكن مقارنة رقم
+  بلا تاريخ بأي شيء.
+*  يجوز إدخال الفوائد التي يحققها طرف ثالث مع بيان الطرف الثالث مصدرًا
+  للبيانات، لكن ينبغي ذكر الطريقة، لأن توفّر الرقم ليس هو موثوقيته.
+*  الفائدة التي لن تُطلب ينبغي سحبها بسبب معلن لا تركها عند
+  آخر قيمة مُبلَّغ عنها، إذ لا يمكن تمييز الفائدة المسحوبة من المتوقفة
+  على أي حال.
+*  يجوز تسليم السجل لوظيفة العمليات عند الإغلاق، لكن ينبغي الاتفاق على
+  طريقة القياس ومحفّز التصعيد مع تلك الوظيفة أولًا، إذ لا يمكن فرض أيٍّ منهما
+  بعد ذهاب المشروع.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن يتسق سجل تحقيق القيمة مع المستندات التالية:
+*  دراسة الجدوى
+*  خطة إدارة الفوائد
+*  ميثاق البرنامج
+*  خطة إدارة المشروع
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإتمام **سجل تحقيق القيمة** بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية
+استنادًا إلى سياق المشروع (مع التأكد من الرجوع إلى `parameters.md`
+للمتغيرات العامة للمشروع):
+
+*  **غرض السجل:** ما الذي يتتبعه هذا السجل والفوائد التي يغطيها. بين النطاق، لأن السجل الذي يُسقط فائدة بصمت يُقرأ كأنه فائدة لم تُطالب بها أصلًا، والاثنان لا يمكن تمييزهما لقارئ لاحق.
+*  **فترة البلاغ:** الفترة التي تغطيها المدخلات وتاريخ آخر تحديث للسجل. ومن دون تاريخ لا يمكن تمييز سجل قيم متحركة عن سجل مهجور، والنوعان متماهيان في الصفحة.
+*  **المستندات المصدر:** دراسة الجدوى وخطة إدارة الفوائد التي تشتق منها المدخلات. فالسجل لا ينشئ فوائد، بل يتتبع فوائد معرَّفة في مكان آخر، والمصدر هو ما يتيح للقارئ أن يقارن الهدف بالحالة التي صرّحت به.
+*  **قواعد الإدخال:** ما الذي يستحق الإدخال وما الذي لا يستحق. فالسجل الذي يجمع كل شيء لا يطالب بانتباه أحد، والمدخلات التي تُراجَع فعلًا هي التي كان أسهل كتابتها.
+*  **معرف الفائدة:** معرف الفائدة، مطابقًا لخطة إدارة الفوائد. ومن دون معرف مشترك لا يمكن تسوية السجل مقابل الخطة، وقد تُتابع فائدة في أحدهما وتُسقط من الآخر دون أن يقرر أحد إسقاطها.
+*  **وصف الفائدة:** الفائدة في صورة تغيير قابل للقياس، بصياغة تُعاد في الصورة التي ستُقاس بها. فالسجل هو المكان الذي تتحول فيه فائدة مكتوبة في النثر إلى رقم، فيجب أن يكون الوصف هو الذي يشير إليه المقياس فعلًا.
+*  **مالك الفوائد:** الدور المساءل عن تحقيق الفوائد، وهو عادة ليس مدير المشروع. فمدير المشروع يستطيع بلوغ القيمة، أما تغيير الممارسة التي تقوم عليها القيمة فيستطيعه الدور التشغيلي وحده.
+*  **طريقة القياس:** كيف تُحسب القيمة، مصوغةً بحيث يحسبها شخصان بالطريقة نفسها. وأغلب الخلاف على القيمة المحققة يعود إلى الطريقة لا إلى النتيجة، والطريقة غير المذكورة تدعو كل قارئ إلى تأويله لصالحه.
+*  **قيمة خط الأساس:** قيمة المقياس قبل المشروع. ومن دونها لا يجد الرقم الفعلي ما يقارَن به، ويصير السجل قائمة أرقام لا دليل على حدوث تغيير.
+*  **القيمة المستهدفة وتاريخها:** القيمة المتوقعة والتاريخ المتوقع لها. والهدف بلا تاريخ لا يتأخر، والهدف غير المؤرخ يتحقق كل يوم لا يُنظر فيه.
+*  **القيمة الفعلية وتاريخها:** القيمة المقيسة وتاريخ قياسها. وتاريخ القياس يهمّ بقدر الرقم، فالقيمة المقيسة في أول الفترة والمُبلَّغ عنها على أنها نهائية هي أشيع طريقة يُبلَّغ بها عن نقص على أنه نجاح.
+*  **الفارق:** الفرق بين الفعلي والمستهدف، بإشارته. وهذا هو العمود الذي وُجد السجل لينتجه، والسجل الذي يسجّل الفعليات وحدها قد أسقط المؤشر الرئيسي الذي يقرؤه أحد.
+*  **الحالة:** أين تقف الفائدة مقابل خطتها. وينبغي أن تتبع الحالة قاعدة معلنة لا حكماً، فالحالة التي تُختار لتطابق البلاغ هي حالة لا تبلّغ عن شيء.
+*  **شرح الفارق:** لماذا يختلف الفعلي عن المستهدف، مسجلاً في صورة سبب لا في صورة فجوة. فالفارق الذي لا سبب له لا يمكن التصرف بشأنه، والفائدة المنحرفة لأسباب لم يثبتها أحد ستبقى منحرفة لأسباب لم يثبتها أحد.
+*  **الإجراء التصحيحي:** ما الذي سيُعمل، ومن يقوم به، ومتى. والإجراء الذي لا مالك له ملاحظة، والملاحظات تظهر في النسخة التالية من السجل على أنها غير محلولة.
+*  **محفّز التصعيد:** الحدث الذي يستلزم تصعيد الفائدة بدل تعديله. ومن دون محفّز يُستوعَب الفارق في كل مراجعة حتى يصير ليس فارقًا بل الخطة، والخطة قد تحوّلت بهدوء إلى سجل لما حدث.
+*  **سحب الفائدة:** الأسانيد التي يُسحب بناءً عليها فائدة من السجل. ومن دونها لا تُسحب الفوائد أبدًا بل تُترك عند آخر قيمة مُبلَّغ عنها، وتبقى الفائدة المسحوبة والفائدة المتوقفة متشابهتين إلى الأبد.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](../../../forms/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_قالب.html)
+* [🤖 موجّه التوليد الذكي](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة/01_03_سجل_تحقيق_القيمة.md)
+* [📊 بنية البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة/01_03_سجل_تحقيق_القيمة.json)
+* [📈 البيانات الجدولية (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/01_الأعمال_وتسليم_القيمة/03_سجل_تحقيق_القيمة/01_03_سجل_تحقيق_القيمة.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [01_03_سجل_تحقيق_القيمة_مثال.md](../../../examples/ar/01_الأعمال_وتسليم_القيمة/01_03_سجل_تحقيق_القيمة_مثال.html)
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

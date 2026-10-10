@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📙 دليل استخدام حزمة تسليمات (Tasleemat PMO Practitioner & Automation Guide) | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/02_usage_guide.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/02_usage_guide.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/02_usage_guide.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/ar/02_usage_guide.npy
+token_count: 3604
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.228756+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+</p>
+
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;" markdown="1">
+
+# 📙 دليل استخدام حزمة تسليمات (Tasleemat PMO Practitioner & Automation Guide)
+**مرجع الوثيقة:** `TASLEEMAT-GUIDE-02-USAGE-GUIDE-AR`  
+**المعيار:** متوافق مع معايير معهد إدارة المشاريع العالمي PMI PMBOK® الإصدارات 6 و 7 و 8  
+**الفئات المستهدفة:** مدراء المشاريع، مدراء PMO، مهندسو الذكاء الاصطناعي، وقادة سكرم  
+### *الدليل العملي الشامل لإدارة المخرجات والتوليد الذكي والأتمتة المؤسسية*
+
+مرحباً بك في الدليل الشامل لاستخدام وتطبيق **حزمة تسليمات لإدارة المشاريع**. سواء كنت مديراً لمشروع ترغب في توحيد وتوثيق التسليمات، أو مديراً لمكتب إدارة مشاريع (PMO) يسعى لتطبيق حوكمة مؤسسية رصينة، أو مهندس ذكاء اصطناعي يبني وكلاء أتمتة لإدارة المشاريع، فإن هذا الدليل يشرح كافة مسارات العمل خطوة بخطوة.
+
+---
+
+## 📑 فهرس المحتويات
+1. [هيكل حزمة الـ 5 ملفات](#1-هيكل-حزمة-الـ-5-ملفات)
+2. [تهيئة المتغيرات العامة للمشروع](#2-تهيئة-المتغيرات-العامة-للمشروع)
+3. [مسارات التوليد بالذكاء الاصطناعي](#3-مسارات-التوليد-بالذكاء-الاصطناعي)
+   - [المسار الأول: التوليد التفاعلي عبر المحادثة (ChatGPT / Claude / Gemini)](#المسار-الأول-التوليد-التفاعلي-عبر-المحادثة-chatgpt--claude--gemini)
+   - [المسار الثاني: الأتمتة البرمجية عبر الـ API وهياكل JSON](#المسار-الثاني-الأتمتة-البرمجية-عبر-الـ-api-وهياكل-json)
+   - [المسار الثالث: التشغيل المحلي الآمن (Ollama / Local LLMs)](#المسار-الثالث-التشغيل-المحلي-الآمن-ollama--local-llms)
+4. [إدارة الاعتماديات وتدفق المخرجات](#4-إدارة-الاعتماديات-وتدفق-المخرجات)
+5. [تصدير الوثائق كـ PDF والنشر المؤسسي](#5-تصدير-الوثائق-كـ-pdf-والنشر-المؤسسي)
+6. [تحليل البيانات وإنشاء لوحات التحكم (Dashboards)](#6-تحليل-البيانات-وإنشاء-لوحات-التحكم-dashboards)
+7. [مصفوفة الحوكمة وصلاحيات التوقيع والاعتماد](#7-مصفوفة-الحوكمة-وصلاحيات-التوقيع-والاعتماد)
+
+---
+
+## 1. هيكل حزمة الـ 5 ملفات
+
+يحتوي كل مجلد من مجلدات النماذج الـ 102 في [`../../forms/ar/`](../forms/ar/index.html) على 5 ملفات متكاملة ومتزامنة تخدم مختلف مراحل دورة حياة الوثيقة:
+
+
+<pre><code class="language-text">01_ميثاق_المشروع/
+├── 03_01_ميثاق_المشروع_دليل.md    # 1. الدليل الإرشادي وقواعد الاعتماديات
+├── 03_01_ميثاق_المشروع_قالب.md    # 2. القالب التنفيذي القابل للطباعة والتوقيع
+├── 03_01_ميثاق_المشروع.md         # 3. موجه التوليد بالذكاء الاصطناعي (Prompt)
+├── 03_01_ميثاق_المشروع.json       # 4. مخطط البيانات الرقمي (JSON Schema)
+└── 03_01_ميثاق_المشروع.csv        # 5. قاموس الحقول الجدولي (Data Dictionary)
+</code></pre>
+
+
+### 1.1 الدليل الإرشادي (`*_دليل.md`)
+- **متى يُستخدم:** قبل البدء في صياغة أو مراجعة أي وثيقة.
+- **الأقسام الرئيسية:**
+  - **الغرض والقيمة الحوكمية:** المشكلة التي يعالجها المخرج والمخاطر المترتبة على إهماله.
+  - **قواعد الصياغة والكتابة:** معايير الجودة ومحاذير الصياغة العامة.
+  - **إرشادات الحقول والأعمدة:** تفصيل دقيق لما يجب كتابته في كل عمود أو قسم.
+  - **المحاذاة والاعتماديات:** قائمة واضحة بالمدخلات الإلزامية والاختيارية السابقة، والمخرجات اللاحقة المعتمدة على هذه الوثيقة بأرقامها المرجعية (مثل `PMO-03.01`).
+
+### 1.2 القالب التنفيذي (`*_قالب.md`)
+- **متى يُستخدم:** المستند النهائي المعد للمراجعة، والأرشفة في ويكي المؤسسة، والتوقيع الرسمي.
+- **المميزات:**
+  - ترويسة بيانات موحدة (`تاريخ الإعداد`، `مدير المشروع`، `تم الإعداد بواسطة`).
+  - هوية المشروع المؤسسية (`{{اسم_الشركة}}`، `{{اسم_المشروع}}`).
+  - جدول اعتمادات وتوقيعات حوكمي يحدد أصحاب الصلاحية المعنيين (مثل راعي المشروع، المراقب المالي، رئيس مجلس التغيير).
+
+### 1.3 موجه الذكاء الاصطناعي (`*.md`)
+- **متى يُستخدم:** يُنسخ ويُلصق في واجهة الذكاء الاصطناعي مع سياق المشروع لتوليد مسودة الوثيقة.
+
+### 1.4 مخطط البيانات الرقمي (`*.json`)
+- **متى يُستخدم:** أتمتة خطوط الأنابيب البرمجية (Pipelines)، ووضع الـ JSON Mode في النماذج التوليدية.
+
+### 1.5 قاموس الحقول الجدولي (`*.csv`)
+- **متى يُستخدم:** الاستيراد إلى Excel أو Google Sheets أو PowerBI لإنشاء لوحات المتابعة.
+
+---
+
+## 2. تهيئة المتغيرات العامة للمشروع
+
+قبل البدء في توليد الوثائق، قم بتعبئة بيانات مشروعك الأساسية في ملف [`../../forms/ar/parameters.md`](../../forms/ar/parameters.html):
+
+
+<pre><code class="language-markdown"># معاملات المشروع العامة (Project Global Parameters)
+
+* **اسم_الشركة:** الشركة الوطنية لحلول التحول الرقمي
+* **اسم_المشروع:** منصة خدمات المستفيدين السحابية
+* **معرف_المشروع:** PRJ-2026-088
+* **اسم_مدير_المشروع:** م. فهد الأحمدي (PMP)
+* **راعي_المشروع:** د. سارة القحطاني (نائب الرئيس للتحول الرقمي)
+* **تم_الإعداد_بواسطة:** أخصائي مكتب إدارة المشاريع
+* **تاريخ_البدء_المستهدف:** 2026-11-01
+* **تاريخ_الانتهاء_المستهدف:** 2027-05-31
+* **الميزانية_الإجمالية_المعتمدة:** 4,500,000 ريال سعودي
+* **العملة:** SAR
+</code></pre>
+
+
+---
+
+## 3. مسارات التوليد بالذكاء الاصطناعي
+
+### المسار الأول: التوليد التفاعلي عبر المحادثة (ChatGPT / Claude / Gemini)
+
+1. افتح واجهة المحادثة مع النموذج التوليدي.
+2. زوّد النموذج بالتعليمات العامة:
+   ```text
+   أنت مدير مكتب إدارة مشاريع (PMO Lead) معتمد وخبير.
+   سأزودك بـ:
+   1. المتغيرات العامة للمشروع
+   2. مسودة وملاحظات الاجتماعات الأولية
+   3. الموجه الرسمي للوثيقة المستهدفة
+
+   مهمتك هي صياغة مستند Markdown رسمي واحترافي ومتكامل يطابق تماماً أقسام وجداول القالب المعتمد دون اختصار أو حذف.
+   ```
+3. الصق محتوى ملف `parameters.md`.
+4. الصق محتوى ملف الموجه `*.md` الخاص بالمخرج (مثال: [`../../forms/ar/04_التخطيط/08_المخاطر/02_سجل_المخاطر/04_08_02_سجل_المخاطر.md`](../../forms/ar/04_التخطيط/08_المخاطر/02_سجل_المخاطر/04_08_02_سجل_المخاطر.html)).
+5. أضف ملاحظاتك ومخرجات ورشة العمل، واطلب التوليد.
+6. ستحصل على وثيقة Markdown منسقة بالكامل وجاهزة للنشر والاعتماد!
+
+---
+
+### المسار الثاني: الأتمتة البرمجية عبر الـ API وهياكل JSON
+
+لإنشاء مسار توليد آلي متكامل باستخدام بايثون ونماذج الذكاء الاصطناعي:
+
+
+<pre><code class="language-python">import json
+import openai
+
+# 1. قراءة مخطط البيانات للنموذج
+with open(&quot;../../forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع.json&quot;, encoding=&quot;utf-8&quot;) as f:
+    schema = json.load(f)
+
+# 2. استدعاء النموذج باستخدام وضع JSON
+response = openai.chat.completions.create(
+    model=&quot;gpt-4o&quot;,
+    response_format={&quot;type&quot;: &quot;json_object&quot;},
+    messages=[
+        {
+            &quot;role&quot;: &quot;system&quot;,
+            &quot;content&quot;: f&quot;أنت خبير PMO. املأ خاصية 'value' لكل حقل بناءً على السياق: {json.dumps(schema, ensure_ascii=False)}&quot;
+        },
+        {
+            &quot;role&quot;: &quot;user&quot;,
+            &quot;content&quot;: &quot;مشروع: تطوير البوابة الرقمية. الميزانية: 3 مليون ريال. الراعي: الرئيس التنفيذي.&quot;
+        }
+    ]
+)
+
+# 3. حفظ النتيجة بتنسيق JSON
+output_data = json.loads(response.choices[0].message.content)
+with open(&quot;ميثاق_المشروع_المولد.json&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as out:
+    json.dump(output_data, out, ensure_ascii=False, indent=2)
+</code></pre>
+
+
+---
+
+### المسار الثالث: التشغيل المحلي الآمن (Ollama / Local LLMs)
+
+للمؤسسات والجهات ذات المتطلبات الأمنية الصارمة لسرية البيانات:
+
+
+<pre><code class="language-bash"># تشغيل نموذج محلي بالكامل عبر Ollama دون إرسال البيانات خارج الشبكة
+ollama run llama3:70b &quot;$(cat ../../forms/ar/parameters.md) $(cat ../../forms/ar/05_التنفيذ/01_سجل_المشكلات/05_01_سجل_المشكلات.md) ملاحظات: [أدخل الملاحظات هنا]&quot; &gt; مسودة_سجل_المشكلات.md
+</code></pre>
+
+
+---
+
+## 4. إدارة الاعتماديات وتدفق المخرجات
+
+تترابط وثائق تسليمات في شبكة متكاملة تضمن عدم إغفال أي مدخل رئيسي قبل اعتماد خطوط الأساس:
+
+
+<pre><code class="language-mermaid">graph TD
+    A[&quot;دراسة الجدوى (PMO-01.01)&quot;] --&gt; B[&quot;ميثاق المشروع (PMO-03.01)&quot;]
+    B --&gt; C[&quot;هيكل تجزئة العمل WBS (PMO-04.02.06)&quot;]
+    B --&gt; D[&quot;سجل المعنيين (PMO-03.04)&quot;]
+    C --&gt; E[&quot;الجدول الزمني للمشروع (PMO-04.03.08)&quot;]
+    C --&gt; F[&quot;الخط المرجعي للتكلفة (PMO-04.04.04)&quot;]
+    E &amp; F --&gt; G[&quot;تحليل القيمة المكتسبة (PMO-06.05)&quot;]
+    G --&gt; H[&quot;إغلاق المشروع أو المرحلة (PMO-07.03)&quot;]
+</code></pre>
+
+
+- **مدخل إلزامي أساسي:** يجب اعتماد **ميثاق المشروع (PMO-03.01)** قبل إصدار **خطة إدارة المشروع (PMO-04.01.01)**.
+- **مخرج لاحق مستهلك:** تحديثات **سجل المخاطر (PMO-04.08.02)** تغذي مباشرة **تقارير المخاطر (PMO-04.08.06)** و**طلبات التغيير (PMO-05.03)**.
+
+---
+
+## 5. تصدير الوثائق كـ PDF والنشر المؤسسي
+
+صُممت قوالب تسليمات لتُعرض بشكل أنيق داخل مستعرضات Markdown وتُصدّر مباشرة إلى وثائق PDF رسمية:
+
+1. **إضافة Markdown PDF في VS Code:**
+   - افتح أي قالب `*_قالب.md`.
+   - اضغط `Ctrl+Shift+P` ثم اختر `Markdown PDF: Export (pdf)`.
+2. **منصات التوثيق المؤسسي (Confluence / Notion):**
+   - انسخ كود Markdown والصقه مباشرة ليتحول إلى جداول منسقة وعناوين واضحة.
+
+---
+
+## 6. تحليل البيانات وإنشاء لوحات التحكم (Dashboards)
+
+بفضل توحيد هيكل ملفات CSV عبر كافة النماذج، يمكنك تجميع بيانات كافة مشاريع المؤسسة وتحليلها برمجياً:
+
+
+<pre><code class="language-python">import pathlib
+import pandas as pd
+
+# تجميع حقول النماذج العربية في جدول بيانات موحد
+records = []
+for csv_file in pathlib.Path(&quot;forms/ar&quot;).rglob(&quot;*.csv&quot;):
+    df = pd.read_csv(csv_file)
+    df[&quot;form_name&quot;] = csv_file.stem
+    records.append(df)
+
+master_df = pd.concat(records, ignore_index=True)
+print(f&quot;إجمالي حقول بيانات الـ PMO الموثقة: {len(master_df)}&quot;)
+print(master_df.head())
+</code></pre>
+
+
+---
+
+## 7. مصفوفة الحوكمة وصلاحيات التوقيع والاعتماد
+
+ينتهي كل قالب بجدول اعتماد وتوقيع مخصص للمسؤولين الحوكميين المعنيين بكل وثيقة:
+
+| فئة الوثيقة | المسؤول الرئيسي عن الاعتماد | الموقعون الإلزاميون |
+| :--- | :--- | :--- |
+| **المواثيق وخطوط الأساس الاستراتيجية** | راعي المشروع (Project Sponsor) | راعي المشروع، مدير الـ PMO، مدير المشروع |
+| **النطاق وهيكل تجزئة العمل والوثائق الفنية** | كبير مهندسي النظم (Lead Systems Engineer) | كبير المهندسين، المعماري التقني، مدير المشروع |
+| **التكلفة والمشتريات والتعاقدات** | المراقب المالي (Finance Controller) | المراقب المالي / CFO، رئيس المشتريات، مدير المشروع |
+| **الجودة واعتماد التسليمات** | مدير ضمان الجودة / العميل المستفيد | مسؤول الجودة، المعني الرئيسي، مدير المشروع |
+| **حوكمة الذكاء الاصطناعي وبطاقات النماذج** | مسؤول أخلاقيات الذكاء الاصطناعي | مسؤول الأخلاقيات، مسؤول حماية البيانات (DPO)، قائد الـ ML |
+| **ضبط التغيير والاستثناءات** | رئيس مجلس ضبط التغيير (CCB Chair) | أعضاء مجلس التغيير (CCB)، راعي المشروع |
+
+---
+
+<div align="center" markdown="1">
+  <sub>للاطلاع على الترجمات المعتمدة والفهرس الشامل، راجع <a href="../LEXICON.md"><b>../LEXICON.md</b></a>.</sub>
+</div>
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

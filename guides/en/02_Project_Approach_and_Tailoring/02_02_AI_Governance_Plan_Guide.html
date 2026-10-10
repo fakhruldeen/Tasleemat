@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Artifact: AI Governance Plan | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../../../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../../../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../README_AR.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Documentation</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan_Guide.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_دليل.html">🇸🇦 الانتقال للدليل بالعربية (Arabic Guide) →</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-02.02</span>
+    <span class="badge badge-phase">02. Project Approach & Tailoring</span>
+    <span class="badge badge-type">Authoring & Governance Guide</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.html">📋 Blank Template</a>
+    <a class="nav-pill active" href="#">📖 Authoring Guide</a>
+    <a class="nav-pill" href="../../../examples/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Example.html">💡 Completed Example</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan_Guide.md" target="_blank" rel="noopener noreferrer">🐙 GitHub Source ↗</a>
+    <a class="nav-pill lang-pill" href="../../ar/02_منهجية_المشروع_وتخصيصه/02_02_خطة_حوكمة_الذكاء_الاصطناعي_دليل.html">🇸🇦 النسخة العربية</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Form
+lang: en
+layout: default
+title: AI Governance Plan
+nav_order: 1
+token_pointer: /_tokens/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan_Guide.npy
+token_count: 2716
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.020011+00:00'
+form_id: PMO-02.02
+status: approved</p>
+<hr />
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
+
+## Tasleemat Forms Guide
+# Project Artifact: AI Governance Plan
+
+**Document Reference:** `PMO-02.02`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **AI Governance Plan** in alignment
+with the Tasleemat framework.
+
+---
+
+### 1. What?
+A record of the constraints, permissions, test results and named owners
+governing a specific AI system, at a specific version, for a specific set of
+affected people. It states what the system is and what it excludes, the uses
+prohibited outright and the uses approved within stated limits, the lawful
+basis and permitted use of each data category together with the control
+applied and the deletion date, the fairness test for each affected group with
+the threshold that triggers action, the obligations each control satisfies, and
+the named individual who may stop the system. It is baselined, and it is
+reopened by events rather than by preference.
+
+---
+
+### 2. Why?
+Because an AI system's behaviour is not visible from its outputs. The same
+model behaves differently on different data, and the configuration, the
+approved use, and the threshold in force are all invisible to the person the
+output affects. Without a baselined record, every question about a past
+decision becomes unanswerable, and the questions that arrive are always
+retroactive: why was this data used, who approved this classification, what
+happened when the drift test failed. Governance is worth what those questions
+are worth, and they are the ones that arrive at the worst possible moment.
+
+The specific discipline the form imposes is naming rather than classifying. A
+plan that records 'minimised' and 'monitored' will pass review and tell a
+reader nothing, because those words describe a class of control and not the
+control in force. The version number, the key holder, the numeric threshold
+and the named owner are what make the record usable later.
+
+---
+
+### 3. When?
+This artifact is primarily prepared, utilized, and updated during the
+**PROJECT APPROACH AND TAILORING Process Group** of the project lifecycle. It
+is drafted before the system is used in production and baselined at the point
+of release, and it is reopened on a model version change, a new data source, a
+new approved use, or a regulatory change. Those events are frequent; a plan
+reviewed only on a calendar will miss all of them.
+
+---
+
+### 4. Who?
+**Responsibilities:** Prepared by the AI or ML Lead with the Data Protection
+Officer, since the plan is only credible if the person who assessed the data
+and the person accountable for the system are both signatories. Approved by
+the Accountable Owner, who must be an individual with the authority to halt the
+system without convening anyone, and by the sponsor where the system affects
+external parties. Reviewed by the same signatories on each triggering event.
+
+---
+
+### Tailoring Tips
+*   A plan may cover several models as a portfolio rather than writing one per
+    model, provided the inventory names the version each constraint applies to,
+    since the failure this prevents is a constraint quoted against the wrong
+    one.
+*   Where a system is procured rather than built, governance applies to the
+    supplier too. Record what was contractually required, since a control the
+    organisation assumed it had is not a control it has.
+*   A material model or intent change in performance should reopen the plan
+    even where the system is unchanged, because a model that performs well on
+    yesterday's population is not thereby fit for tomorrow's.
+*   Plans for lower-risk internal uses may be abbreviated, but the sections to
+    keep regardless of tier are the prohibited-use list, the named owner and
+    the incident definition, since those are the three a reader needs in the
+    first hour of an incident.
+*   The plan should be kept with the model card rather than merged into it, as
+    the card describes what the system is and this document describes what is
+    permitted, and the two diverge at every review.
+*   Superseded plans should be retained rather than overwritten, since the
+    question an incident generates is almost always about what was in force at
+    the time.
+
+---
+
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   AI Use Case Canvas (PMO-02.04)
+    *   AI Readiness Assessment (PMO-02.03)
+    *   Organizational AI Ethics Policy
+*   **Optional / Contextual:**
+    *   Data Privacy & Ethics Assessment (PMO-02.06)
+    *   Project Charter (PMO-03.01)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   AI Model Card (PMO-02.05)
+    *   Quality Metrics (PMO-04.05.02)
+    *   Risk Management Plan (PMO-04.08.01)
+*   **Optional / Contextual:**
+    *   Prompt Library Register (PMO-05.09)
+    *   UAT Sign-off Form (PMO-06.10)
+
+---
+
+### 5. How?
+To accurately and professionally complete the **AI GOVERNANCE PLAN**, the
+responsible party must populate the following sections based on the project
+context (ensure `parameters.md` is referenced for global project variables):
+
+*   **AI System Inventory:** What the system is, at the version that will actually run, and who operates it. Record the version, because a governance plan that covers "the model" covers whichever model happens to be deployed when someone asks, and the answer is rarely the one that was assessed.
+*   **Intended Purpose and Affected Users:** What the system is for, and who is subject to its output rather than merely its user. The two are routinely confused, and the confusion is how a system that screens applicants comes to be described as a tool that helps recruiters write better.
+*   **Risk Classification:** The tier assigned and the criteria that put it there, not the tier alone. A classification with no stated criteria cannot be challenged, and an unchallengeable classification is the same as no classification.
+*   **Scope Exclusions:** What this plan explicitly does not cover, and who owns it instead. Governance plans fail at the boundary: the component nobody assigned sits under a plan that assumed it was included.
+*   **Ethical Principles:** The principles that constrain use on this project, and the case in which one yields to another. Principles that cannot yield to each other are not a decision rule, and a project under time pressure will resolve the conflict silently and after the fact.
+*   **Prohibited Uses:** Uses that are refused regardless of benefit. This section is what the plan is for, and a plan listing only permitted uses has no way to refuse anything.
+*   **Approved Use Cases:** The uses that are approved, each with the limits within which it stays approved. An approved use without stated limits is an approved capability, not an approved use.
+*   **Human Impact Assessment:** Who bears the consequences of a wrong output, and whether they can tell it was wrong. A system whose subject cannot detect its own errors transfers the cost of error to the person least able to contest it.
+*   **Data Category:** What kind of data, in terms a data subject would recognise as being about them.
+*   **Provenance and Lawful Basis:** Where the data came from and under what basis it is processed. Data that arrived with the model cannot have its basis added later, so a model trained before this question was asked holds data whose status nobody can now evidence.
+*   **Permitted Use:** What the data may be used for within this system, and what it may not. The most common governance failure is not a leak but reuse for a purpose nobody re-approved.
+*   **Protection Control:** The specific control applied, not the category of control. "Encrypted" is a category, and the sentence that matters is which key, held by whom, and rotated how.
+*   **Retention and Deletion:** When the data is deleted, and how deletion is verified. Deletion that is asserted rather than evidenced is how a training set outlives the project that justified it.
+*   **Affected Group:** The group whose outcomes are affected, named. Groups are described in aggregate on the basis of a test, and the group that matters is the one that performs worst on it.
+*   **Bias Risk:** The specific way this system could be unfair to this group, stated so it could be false. "Bias risk" as a heading is not a risk; "the model scores this group lower on historic completion rates" is a risk that can be measured and can turn out to be wrong.
+*   **Test Method and Threshold:** How it is tested and what result triggers action, with the threshold written before the result is known. A threshold set after seeing the number is a description of that number.
+*   **Mitigation:** What will be done about a confirmed disparity, and what the system does in the meantime. Most bias mitigation plans describe the end state and are silent on whether the system runs while the question is open.
+*   **Ongoing Indicator:** The metric watched after release, and its frequency. Bias is not a property of a model at launch but of the data it keeps meeting, so the launch measurement is the first of a series and not the last.
+*   **Applicable Regulations:** The instruments that bind this system, named, with the clause where the obligation is specific. A list of regulation names is a research note, not a compliance position.
+*   **Control Mapping:** Which control satisfies which obligation, and which obligations have no control yet. The second half is the useful half, and a mapping that covers every obligation is nearly always a mapping that was written to be complete rather than to be true.
+*   **Evidence and Records:** What is retained to demonstrate compliance, for how long, and who may inspect it. Compliance demonstrated only by assertion cannot be audited, and what cannot be audited is not demonstrable to a regulator.
+*   **Compliance Review Cadence:** How often compliance is revisited and what triggers an off-cycle review. A model version change, a new data source, and a new use are all events, and a plan that reviews only on a calendar will miss all three.
+*   **Accountable Owner:** The named person answerable for this system's behaviour, with the authority to stop it. Accountability assigned to a committee is distributed to nobody, and the test is whether the named person can halt the system without convening anyone.
+*   **Human Oversight Points:** The specific points where a human can override, and where they cannot. Oversight that exists everywhere in principle and nowhere in the workflow is a statement of values, and the points that matter are the ones where override is expensive.
+*   **Decision Rights and Redress:** Who decides what the system is permitted to do after launch, and how a person affected by its output contests that output. Redress is the only mechanism that makes accountability reachable by the person who needs it.
+*   **Incident Reporting:** What counts as an incident, to whom it is reported, and within what time. An incident definition written broadly enough to catch everything is one nobody can apply under time pressure, and a narrow one misses precisely the cases that were not foreseeable when it was written.
+*   **Performance and Drift Monitoring:** What is watched in operation, and against what baseline. A production model is a different system from the one assessed, and the difference accumulates rather than announcing itself.
+*   **Reassessment Triggers:** The events that require the plan to be reopened, stated so they can be recognised by someone who was not in the room. Triggers described in terms of materiality always resolve towards not triggering.
+*   **Change Control Link:** How a change to the system is raised, since the system, its data, and its approved uses are all governed by this plan and a change to any of them is a change to the plan.
+
+---
+
+### 📥 Associated Templates
+* [📄 Printable Template (Markdown)](../../../forms/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Template.html)
+* [🤖 LLM Generation Prompt](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan.md)
+* [📊 Data Structure (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan.json)
+* [📈 Tabular Data (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/en/02_Project_Approach_and_Tailoring/02_AI_Governance_Plan/02_02_AI_Governance_Plan.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [02_02_AI_Governance_Plan_Example.md](../../../examples/en/02_Project_Approach_and_Tailoring/02_02_AI_Governance_Plan_Example.html)
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

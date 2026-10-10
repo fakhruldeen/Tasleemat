@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.html">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-02.05</span>
+    <span class="badge badge-phase">02. منهجية المشروع وتخصيصه</span>
+    <span class="badge badge-standard">معايير PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../guides/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.html">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Template.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.npy
+token_count: 2227
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.712214+00:00'
+form_id: PMO-02.05
+language: ar
+status: approved
+---
+-->
+
+<!--
+تعليمات النموذج الذكي: املأ العناصر النائبة [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+توجيهات استيفاء الأقسام:
+
+**١. تعريف النموذج ومصدره**
+*  **اسم النموذج وإصداره:**
+*  **المطوّر ومصدر النموذج:**
+*  **البنية والإعداد:**
+*  **أسلوب التدريب والحوسبة:**
+*  **الترخيص وشروط الاستعمال:**
+*  **المخرجات المرتبطة:**
+
+**٢. الاستخدام المقصود وغير المشمول**
+*  **الاستخدام الرئيس:**
+*  **الاستخدام الثانوي:**
+*  **الاستخدام غير المشمول:**
+*  **المستخدم والجمهور:**
+*  **شروط التشغيل:**
+*  **متطلب الإشراف البشري:**
+
+**٣. بيانات التدريب**
+*  **مجموعات البيانات:**
+*  **المصدر وطريقة الجمع:**
+*  **التغطية السكانية والجغرافية:**
+*  **الفترة الزمنية المشمولة:**
+*  **الترخيص وسند الموافقة:**
+*  **ما قبل المعالجة والترشيح:**
+*  **قيود مجموعة البيانات المعروفة:**
+
+**٤. التقييم والأداء**
+*  **بيانات التقييم:**
+*  **المقاييس:**
+*  **الأداء بحسب الفئة:**
+*  **المقارنة بخط الأساس:**
+*  **العتبة ونقطة التشغيل:**
+*  **منهج التقييم وقيوده:**
+*  **المتانة وأنماط الفشل:**
+
+**٥. الاعتبارات الأخلاقية والعدالة والسلامة**
+*  **الفئات المتأثرة:**
+*  **التحيّز المعروف:**
+*  **مخاطر السلامة:**
+*  **إمكانية الاستخدام المزدوج وإساءة الاستعمال:**
+*  **الأثر البيئي وعلى الموارد:**
+*  **الأثر على خصوصية البيانات:**
+
+**٦. القيود والمراقبة وضبط التغيير**
+*  **القيود المعروفة:**
+*  **السلوك خارج نطاق التوزيع:**
+*  **المراقبة في الإنتاج:**
+*  **عتبات المراقبة:**
+*  **سياسة إعادة التدريب والتحديث:**
+*  **سجل تغييرات الإصدار:**
+*  **خطة الإحالة للتقاعد:**
+-->
+
+<h3 align="left">{{اسم_الشركة}}</h3>
+<h2 align="left">{{نطاق_الحوكمة}} - {{معرف_إطار_العمل}}</h2>
+<h1 align="center">بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><strong>تاريخ الإعداد:</strong> {{التاريخ_الحالي}}</th>
+<th style="text-align: right;"><strong>مسؤول الامتثال:</strong> {{اسم_مسؤول_الامتثال}}</th>
+<th style="text-align: right;"><strong>إعداد:</strong> {{المُعِد}}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">١. تعريف النموذج ومصدره</h2>
+<!-- ما هو النموذج عند إصدار بعينه، ومن بناه ومن أيّ، والإعدادات التي تؤثر في سلوكه، وتحت أي ترخيص يُستعمل، وأين توجد المخرجات. -->
+
+<p><strong>اسم النموذج وإصداره:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>المطوّر ومصدر النموذج:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>البنية والإعداد:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>أسلوب التدريب والحوسبة:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>الترخيص وشروط الاستعمال:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>المخرجات المرتبطة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_2">٢. الاستخدام المقصود وغير المشمول</h2>
+<!-- المهمة مُدخَلاً ومُخرَجًا، وما يجوز استعماله لأغراض أخرى، وما يجب ألا يُستعمل له، ومن يشغّله ومن يخضع لمخرجه، والشروط التي تصلح فيها قياسات القسم الرابع. -->
+
+<p><strong>الاستخدام الرئيس:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>الاستخدام الثانوي:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>الاستخدام غير المشمول:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>المستخدم والجمهور:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>شروط التشغيل:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>متطلب الإشراف البشري:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_3">٣. بيانات التدريب</h2>
+<!-- صف واحد لكل مجموعة بيانات: ما هي ومن يملكها، ومن أين جاءت، ومن تمثّلهم وأين تمثّل، وأي فترة تغطي، وبأي سند يُستعمل بها، وما جرى لها، وما لا تستطيع تمثيله. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">مجموعة البيانات</th>
+<th style="text-align: right;">المصدر وطريقة الجمع</th>
+<th style="text-align: right;">التغطية السكانية والجغرافية</th>
+<th style="text-align: right;">الفترة الزمنية المشمولة</th>
+<th style="text-align: right;">الترخيص وسند الموافقة</th>
+<th style="text-align: right;">ما قبل المعالجة والترشيح</th>
+<th style="text-align: right;">القيود المعروفة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">٤. التقييم والأداء</h2>
+<!-- صف واحد لكل مقياس: ما قيس عليه، وقيمته مع حجم العينة، ونفس الرقم لكل فئة متأثرة، وخط الأساس الذي يتفوق عليه، والعتبة السارية، وما لا يثبته المنهج. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المقياس</th>
+<th style="text-align: right;">بيانات التقييم واستقلالها</th>
+<th style="text-align: right;">القيمة وحجم العينة</th>
+<th style="text-align: right;">الأداء بحسب الفئة</th>
+<th style="text-align: right;">المقارنة بخط الأساس</th>
+<th style="text-align: right;">العتبة السارية</th>
+<th style="text-align: right;">قيود المنهج</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_5">٥. الاعتبارات الأخلاقية والعدالة والسلامة</h2>
+<!-- صف واحد لكل اعتبار: من الفئات المتأثرة، والطريقة المحددة التي يكون النموذج بها غير عادل، والضرر ودرجته، وما أُخذ من إجراء. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الاعتبار</th>
+<th style="text-align: right;">الفئات المتأثرة</th>
+<th style="text-align: right;">النتيجة المحددة</th>
+<th style="text-align: right;">الخطورة</th>
+<th style="text-align: right;">ما أُخذ من إجراء</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_6">٦. القيود والمراقبة وضبط التغيير</h2>
+<!-- ما لا يستطيع النموذج فعله، وسلوكه خارج نطاقه، وما يراقب في الإنتاج، وما يستدعي إجراءً، ومتى يُعاد تدريبه، وما تغيّر في هذا الإصدار، وكيف يُحال إلى التقاعد. -->
+
+<p><strong>القيود المعروفة:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>السلوك خارج نطاق التوزيع:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>المراقبة في الإنتاج:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>عتبات المراقبة:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>سياسة إعادة التدريب والتحديث:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>سجل تغييرات الإصدار:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>خطة الإحالة للتقاعد:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_7">الاعتماد والموافقات</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مطور النموذج / مسؤول تعلم الآلة</strong></td>
+<td style="text-align: right;">{{اسم_مسؤول_تعلم_الآلة}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مراجع جودة وأخلاقيات الذكاء الاصطناعي</strong></td>
+<td style="text-align: right;">{{اسم_مراجع_الجودة_والأخلاقيات}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مالك المنتج</strong></td>
+<td style="text-align: right;">{{اسم_مالك_المنتج}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+ <strong>النموذج:</strong> بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق | <strong>المرجع:</strong> PMO-02.05 <br>
+ <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

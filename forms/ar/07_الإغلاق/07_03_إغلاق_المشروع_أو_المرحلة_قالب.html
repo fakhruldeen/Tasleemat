@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقرير إغلاق المشروع أو المرحلة | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/03_إغلاق_المشروع_أو_المرحلة/07_03_إغلاق_المشروع_أو_المرحلة_قالب.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/07_Closing/07_03_Project_or_Phase_Closeout_Template.html">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-07.03</span>
+    <span class="badge badge-phase">07. الإغلاق</span>
+    <span class="badge badge-standard">معايير PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../guides/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_دليل.html">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/07_الإغلاق/07_03_إغلاق_المشروع_أو_المرحلة_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/03_إغلاق_المشروع_أو_المرحلة/07_03_إغلاق_المشروع_أو_المرحلة_قالب.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/07_Closing/07_03_Project_or_Phase_Closeout_Template.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/07_الإغلاق/03_إغلاق_المشروع_أو_المرحلة/07_03_إغلاق_المشروع_أو_المرحلة_قالب.npy
+token_count: 3426
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.889229+00:00'
+form_id: PMO-07.03
+language: ar
+status: approved
+---
+-->
+
+<!-- تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+يشمل إغلاق المشروع توثيق أداء المشروع النهائي مقارنةً بأهداف المشروع. تُراجع الأهداف الواردة في ميثاق المشروع ويُوثَّق دليل على تحقيقها. وإذا لم يتحقق هدف، أو كان هناك انحراف، فيُوثَّق ذلك أيضًا. كما تُوثَّق معلومات إغلاق المشتريات.
+
+يدعم هذا النموذج العملية 4.7 إغلاق المشروع أو المرحلة في دليل PMBOK - الطبعة السادسة.
+
+إرشادات الكتابة:
+*  هذه هي الوثيقة التي تقرأها المؤسسة بعد انفصال فريق المشروع، فاكتبها لمقرئ لم يشارك في المشروع. ولا تفترض سياقًا غير مكتوب.
+*  سجّل الأهداف التي لم تتحقق والانحرافات غير المواتية. فالإغلاق الذي لا يذكر إلا النجاحات هو الوثيقة الأكثر عرضة لثقة زائدة.
+*  اذكر مصدر كل دليل، لا الاستنتاج المستخلص منه. فعبارة "تم التحقق، بتقرير الاختبار TR-114" يمكن تتبعها، أما "تم التحقق" فلا يمكن.
+*  حيث بقي بند مفتوحًا عند الإغلاق، اذكره واذكر من يملكه الآن. والبند المنقول دون مستلم محدد لم ينتقل فعليًا، وسيضيع.
+*  أشِر إلى نموذج قبول المنتج وملخص الدروس المستفادة وتقرير إغلاق العقد بدلًا من إعادة كتابتها، حتى لا تتباعد السجلات.
+*  القسم الذي لا ينطبق، اذكر ذلك في سطر واحد. لا تحذف القسم ولا تملأه بالحشو؛ فالقارئ يحتاج إلى معرفة أنه قد نظر فيه ووجده فارغًا.
+
+المحاذاة: ينبغي أن يتسق هذا الإغلاق مع خطة إدارة المشروع (جميع المكونات)، وقبول المنتج، وملخص الدروس المستفادة.
+
+ملاحظات التخصيص:
+*  عند العمل بدورة حياة تزايدي أو منهجية تطوير رشيقة، قد يفيد تسليم عنصر أو خدمة أو قدرة رئيسية بتقرير إغلاق رسمي للمرحلة.
+*  للمشاريع التي تنتمي إلى برنامج، خصص المحتوى لتلبية احتياجات البرنامج.
+*  استخدم معلومات مشروعك لتحديد أفضل نهج.
+
+توجيهات استيفاء الأقسام:
+*  **وصف المشروع:** قدّم وصفًا على مستوى ملخص للمشروع أو المرحلة.
+*  **ملخص الأداء:** للنطاق وللجودة، اذكر الأهداف، ومعايير الإنجاز التي تقرر تحققها، والدليل على تحققها. خذ الأهداف من الخطة المعتمدة لا من الذاكرة.
+*  **الانحرافات:** للوقت وللتكلفة، اذكر الهدف، والنتيجة النهائية، والانحراف، وسببه.
+*  **إدارة الفوائد:** صف كيف حقق المنتج أو الخدمة أو النتيجة النهائية الفوائد التي أُنشئ المشروع لتحقيقها.
+*  **الاحتياجات التجارية:** صف كيف حقق المنتج أو الخدمة أو النتيجة النهائية الاحتياجات التجارية المحددة في خطة الأعمال.
+*  **المخاطر والمشكلات:** لخّص المخاطر أو المشكلات الجوهرية، أو تعرض المخاطر الإجمالي، والاستجابة والحل، وما بقي مفتوحًا.
+*  **إغلاق المشتريات:** وثّق معلومات إغلاق المشتريات.
+-->
+
+<h3 align="left">{{اسم_الشركة}}</h3>
+<h2 align="left">{{اسم_المشروع}} - {{معرف_المشروع}}</h2>
+<h1 align="center">تقرير إغلاق المشروع أو المرحلة</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><strong>تاريخ الإعداد:</strong> {{التاريخ_الحالي}}</th>
+<th style="text-align: right;"><strong>مدير المشروع:</strong> {{اسم_مدير_المشروع}}</th>
+<th style="text-align: right;"><strong>إعداد:</strong> {{معد_الوثيقة}}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1">1. وصف المشروع</h2>
+<!--
+- **الوصف:** قدّم وصفًا على مستوى ملخص للمشروع أو المرحلة: ما هو، وهدفه، وحدوده. اجعل ذلك على مستوى الملخص، وأشر إلى ميثاق المشروع للتفاصيل.
+-->
+
+<p><strong>الوصف:</strong></p>
+<p>[ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="2">2. إدارة الفوائد</h2>
+<!--
+- **كيف تحققت الفوائد:** صف كيف حقق المنتج أو الخدمة أو النتيجة النهائية الفوائد التي أُنشئ المشروع لتحقيقها. حدد الفائد والدليل على تحققها، مع التمييز بين فائدة تحقق فعلًا وأخرى لم تتحقق بعد.
+- **حالة تحقق الفوائد:** حالة تحقق كل فائدة حاليًا، ومن المسؤول عن متابعتها بعد انفصال فريق المشروع. الفائدة التي لا يوجد لها مالك عند الإغلاق هي فائدة لن يتم قياسها.
+-->
+
+<p><strong>كيف تحققت الفوائد:</strong></p>
+<p>[ أضف التفاصيل... ]</p>
+<p><strong>حالة تحقق الفوائد:</strong></p>
+<p>[ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="3">3. الاحتياجات التجارية</h2>
+<!--
+- **كيف تحققت الاحتياجات التجارية:** صف كيف حقق المنتج أو الخدمة أو النتيجة النهائية الاحتياجات التجارية المحددة في خطة الأعمال.
+- **الاحتياجات غير المحققة:** أي حاجة تجارية لم تتحقق، وما الخطوة التالية بعد إغلاق المشروع. الحاجة التي لا تُذكر هنا سيفترضها من يرث المنتج أنها تحققت.
+-->
+
+<p><strong>كيف تحققت الاحتياجات التجارية:</strong></p>
+<p>[ أضف التفاصيل... ]</p>
+<p><strong>الاحتياجات غير المحققة:</strong></p>
+<p>[ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="4">4. ملخص الأداء</h2>
+<!-- النطاق والجودة صفوفًا، مقابل الأهداف ومعايير الإنجاز وكيف تحققت أعمدة. الأعمدة الثلاثة تجيب عن ثلاثة أسئلة مختلفة، وكثيرًا ما يخلط بينها: الهدف هو ما حُدد، ومعايير الإنجاز هي الاختبار الذي يقرر التحقق منه، وكيف تحققت هي الدليل على اجتياز ذلك الاختبار. صُغ المعايير بحيث يمكن الإجابة عنها بنعم أو لا، واذكر مصدر الدليل لا النتيجة فقط. أما الجودة فأشر إلى نموذج قبول المنتج بدلًا من إعادة كتابته. وأضف صفًا لكل مجال إضافي يحتاجه المشروع. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المجال</th>
+<th style="text-align: right;">الأهداف</th>
+<th style="text-align: right;">معايير الإنجاز</th>
+<th style="text-align: right;">كيف تحققت</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>النطاق</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>الجودة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!-- إرشادات الأعمدة:
+- **الأهداف:** ما الذيسعى إلى تحقيقه المشروع في هذا المجال، مستمدًا من الخطة المعتمدة لا من الذاكرة.
+- **معايير الإنجاز:** الاختبار المحدد والقابل للقياس الذي يقرر ما إذا كان الهدف قد تحقق.
+- **كيف تحققت:** الدليل على تحقق المعايير، مع ذكر مصدره.
+إرشادات الصفوف:
+- **النطاق**
+  - *الأهداف:* صف أهداف النطاق اللازمة لتحقيق الفوائد المخطط لها للمشروع.
+  - *معايير الإنجاز:* وثّق معايير محددة وقابلة للقياس اللازمة لإكمال أهداف النطاق. اذكر كل معيار بحيث يمكن الإجابة عنه بتحقق أو عدم تحقق، وأشر إلى خط أساس النطاق.
+  - *كيف تحققت:* اذكر الدليل على تحقّق معايير الإنجاز. وقدّم مصدر الدليل، مثل الوثيقة أو نتيجة الاختبار أو سجل القبول، وليس الاستنتاج المستخلص منه فقط.
+- **الجودة**
+  - *الأهداف:* صف أهداف الجودة والمعايير اللازمة لتحقيق الفوائد المخطط لها للمشروع.
+  - *معايير الإنجاز:* وثّق المعايير المحددة والقابلة للقياس اللازمة لتحقيق أهداف جودة المنتج والمشروع.
+  - *كيف تحققت:* أدخل معلومات التحقق والإثبات من نموذج قبول المنتج. وأشر إلى ذلك النموذج بدلًا من إعادة كتابته، حتى لا تتباعد السجلات.
+-->
+
+<hr />
+<h2 id="5">5. الانحرافات</h2>
+<!-- الوقت والتكلفة صفوفًا، مقابل الأهداف والنتيجة النهائية والانحراف والتعليقات أعمدة. اذكر الانحراف رقمًا لا عبارة، وحدد اتجاهه. وإذا أُنجز المشروع مبكرًا أو دون التكلفة المقدرة، فاشرح السبب: فالانحراف الإيجابي غير المفسّر يخفي خطأ في التخطيط تمامًا كما يخفيه التأخير، ويتعذر على المعنيين تكرار النتيجة الإيجابية إذا لم يرَ ما أنتجها. واستخدم عمود التعليقات لأي بند ما زال مفتوحًا عند الإغلاق. وأضف صفًا لكل مقياس إضافي يتابعه المشروع. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المقياس</th>
+<th style="text-align: right;">الأهداف</th>
+<th style="text-align: right;">النتيجة النهائية</th>
+<th style="text-align: right;">الانحراف</th>
+<th style="text-align: right;">التعليقات</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>الوقت</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>التكلفة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!-- إرشادات الأعمدة:
+- **الأهداف:** رقم خط الأساس أو الخطة المعتمد.
+- **النتيجة النهائية:** ما حدث فعليًا عند الإنجاز.
+- **الانحراف:** الفرق، معبَّرًا عنه رقميًا، مع سببه.
+- **التعليقات:** ما يعنيه الانحراف، وأي بند ما زال مفتوحًا.
+إرشادات الصفوف:
+- **الوقت**
+  - *الأهداف:* أهداف الوقت المخطط لها: المدة المعتمدة في خط أساس الجدول الزمني وتاريخ الإنجاز المخطط.
+  - *النتيجة النهائية:* تاريخ الإنجاز الفعلي والمدة الفعلية.
+  - *الانحراف:* الفرق بين المخطط والفعلي بالأيام أو الأسابيع، مع السبب. وإذا أُنجز المشروع مبكرًا، فاذكر ذلك واشرح السبب، فالانحراف الإيجابي غير المفسّر يخفي خطأ في التخطيط تمامًا كما يخفيه التأخير.
+  - *التعليقات:* أي ترتب على انحراف الوقت للمؤسسة، مثل تفويت نافذة سوقية، وأي بند ما زال مفتوحًا عند الإغلاق.
+- **التكلفة**
+  - *الأهداف:* خط أساس التكلفة المعتمد، أو إجمالي الميزانية عند الإنجاز إذا لم ينطبق خط أساس.
+  - *النتيجة النهائية:* إجمالي ما أنفق فعليًا عند الإنجاز، مع بيان ما إذا كان يشمل مبلغ الاحتياطي المستهلك أو الاحتياطي المُحرَّر.
+  - *الانحراف:* الفرق بين المخطط والفعلي بالعملة ونسبة مئوية، مع السبب.
+  - *التعليقات:* أي ترتب على انحراف التكلفة للمؤسسة، مثل مطالبة أو تحويل ميزانية لا يزال مطلوبًا، وأي بند ما زال مفتوحًا.
+-->
+
+<hr />
+<h2 id="6">6. المخاطر والمشكلات</h2>
+<!-- صف واحد لكل مخاطرة أو مشكلة جوهرية. حدد كل منها من سجل المخاطر أو المشكلات بمرجع بدلًا من إعادة كتابته، واذكر ما تم وفعلته وكم كان فعّالًا، واستخدم عمود التعليقات لما بقي مفتوحًا. يتعين تحديد جهة استلام ومسؤولية تشغيلية واضحة لكل مسألة أو بند معلق عند الإغلاق لضمان استمرارية المتابعة وتفادي تعثر العمليات. وأضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المخاطرة أو المشكلة</th>
+<th style="text-align: right;">الاستجابة والحل</th>
+<th style="text-align: right;">التعليقات</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!--
+- **المخاطرة أو المشكلة:** المخاطرة أو المشكلة، ومصدرها. اذكر المرجع من سجل المخاطر أو المشكلات بدلًا من إعادة كتابته.
+- **الاستجابة والحل:** ما تم بشأنه وفعاليته. واذكر بوضوح ما إذا كان ناجحًا.
+- **التعليقات:** ما بقي مفتوحًا، ومن يملكه بعد الإغلاق. والبند غير المحلول المتنقل دون مستلم محدد لم ينتقل فعليًا.
+-->
+
+<hr />
+<h2 id="7">7. إغلاق المشتريات</h2>
+<!-- معلومات إغلاق المشتريات. وإذا لم تُستخدم المشتريات، فاذكر ذلك بوضوح في الصف الأول بدلًا من ترك القسم فارغًا، ليعلم القارئ أنه قد نظر فيه. وأي مطالبة أو منازعة لم تُسوَّ قبل الإغلاق هي التزام يُسلَّم، وتنتمي إلى عمود الحالة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">البند</th>
+<th style="text-align: right;">التفاصيل</th>
+<th style="text-align: right;">الحالة عند الإغلاق</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>العقود المغلقة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>الالتزامات المُباة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>المطالبات والمنازعات المسوّاة</strong></td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<!--
+- **البند:** موضوع الصف.
+- **التفاصيل:** الوقائع، بالأرقام حيثما وُجدت.
+- **الحالة عند الإغلاق:** مغلق أو متنقل أو ما زال مفتوحًا، مع ذكر المالك لكل بند متنقل.
+إرشادات الصفوف:
+- **العقود المغلقة:** العقود التي تم إغلاقها، مع القيمة النهائية وتاريخ إغلاق كل منها. وإذا لم تُستخدم المشتريات، فاذكر ذلك بوضوح بدلًا من ترك القسم فارغًا.
+- **الالتزامات المُباة:** الالتزامات والضمانات ومستويات الخدمة التي تم الوفاء بها أو نقلها أو ما زالت قائمة، مع ذكر المالك لكل منها.
+- **المطالبات والمنازعات المسوّاة:** أي مطالبة أو منازعة سُوّت قبل الإغلاق، وأي لم تُسوَّ. فالمطالبة غير المسوّاة التزام يسلّمه المشروع.
+-->
+
+<hr />
+<h2 id="8">8. الاعتماد والموافقات</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مدير المشروع</strong></td>
+<td style="text-align: right;">{{اسم_مدير_المشروع}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مالك العمليات / الخدمة</strong></td>
+<td style="text-align: right;">{{اسم_مالك_العمليات}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>راعي المشروع / العميل</strong></td>
+<td style="text-align: right;">{{اسم_راعي_المشروع}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+ <strong>القالب:</strong> تقرير إغلاق المشروع أو المرحلة | <strong>المرجع:</strong> PMO-07.03 <br>
+ <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

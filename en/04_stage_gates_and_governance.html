@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚪 Tasleemat Stage-Gate Governance Kits Guide | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../en/04_stage_gates_and_governance.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/04_stage_gates_and_governance.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/04_stage_gates_and_governance.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/en/04_stage_gates_and_governance.npy
+token_count: 3078
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.496415+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
+</p>
+
+<h1 id="tasleemat-stage-gate-governance-kits-guide">🚪 Tasleemat Stage-Gate Governance Kits Guide</h1>
+<p><strong>Document Reference:</strong> <code>TASLEEMAT-STAGE-GATES-v2.0</code><br />
+<strong>Standard:</strong> PMI PMBOK® Guide 6th, 7th &amp; 8th Edition Standard  </p>
+<hr />
+<h2 id="executive-overview">🎯 Executive Overview</h2>
+<p>The <strong>Stage-Gate Governance Framework</strong> structures the 102 Tasleemat PMO forms into 6 formal, sequential decision checkpoints (Gates 0 through 5). Instead of burdening project teams with all artifacts at once, this framework establishes clear <strong>Entry Criteria</strong>, <strong>Mandatory Artifact Bundles</strong>, <strong>Review Checklists</strong>, and <strong>Exit Criteria</strong> required to authorize resources and release funding for each subsequent phase.</p>
+<pre><code class="language-mermaid">flowchart LR
+    G0[&quot;&lt;b&gt;Gate 0&lt;/b&gt;&lt;br/&gt;Concept &amp; Strategy&quot;] --&gt; G1[&quot;&lt;b&gt;Gate 1&lt;/b&gt;&lt;br/&gt;Initiation &amp; Charter&quot;]
+    G1 --&gt; G2[&quot;&lt;b&gt;Gate 2&lt;/b&gt;&lt;br/&gt;Integrated Baseline&quot;]
+    G2 --&gt; G3[&quot;&lt;b&gt;Gate 3&lt;/b&gt;&lt;br/&gt;Execution Control&quot;]
+    G3 --&gt; G4[&quot;&lt;b&gt;Gate 4&lt;/b&gt;&lt;br/&gt;Handover &amp; UAT&quot;]
+    G4 --&gt; G5[&quot;&lt;b&gt;Gate 5&lt;/b&gt;&lt;br/&gt;Closeout &amp; Benefits&quot;]
+</code></pre>
+<hr />
+<h2 id="the-six-governance-stage-gates">🏛️ The Six Governance Stage-Gates</h2>
+<h3 id="gate-0-concept-strategic-justification">🚪 Gate 0: Concept &amp; Strategic Justification (دراسة الفكرة والجدوى)</h3>
+<ul>
+<li><strong>Objective:</strong> Validate strategic alignment, business justification, and preliminary feasibility before committing capital and project resources.</li>
+<li><strong>Governing Body:</strong> Executive Strategy Committee / Investment Review Board / CFO.</li>
+<li><strong>Entry Criteria:</strong> Business opportunity or strategic need identified; initial sponsorship established.</li>
+<li><strong>Mandatory Artifact Kit:</strong></li>
+<li><code>PMO-00.06</code> <strong>OKR Alignment Matrix:</strong> Maps initiative to enterprise strategic objectives and Key Results.</li>
+<li><code>PMO-01.01</code> <strong>Business Case:</strong> Need statement, options analysis, cost of inaction, and financial metrics (NPV/ROI).</li>
+<li><code>PMO-01.02</code> <strong>Feasibility Study:</strong> Technical, operational, legal, and economic feasibility.</li>
+<li><code>PMO-01.04</code> <strong>Value Proposition Canvas:</strong> Customer segments, pains, gains, and value drivers.</li>
+<li><code>PMO-02.04</code> <strong>AI Canvas &amp; Use Case Card:</strong> (For AI initiatives) Data availability, model viability, and value hypothesis.</li>
+<li><strong>Gate Review Checklist:</strong></li>
+<li>[ ] Does the initiative directly support a corporate strategic objective or mandate?</li>
+<li>[ ] Is the cost of inaction clearly quantified against the required investment envelope?</li>
+<li>[ ] Are strategic risks and high-level constraints within organizational tolerance?</li>
+<li><strong>Exit Criteria:</strong> Formal approval of the Business Case and inclusion in the Portfolio Roadmap (<code>PMO-00.01</code>).</li>
+</ul>
+<hr />
+<h3 id="gate-1-initiation-authorization">🚪 Gate 1: Initiation &amp; Authorization (الاعتماد المؤسسي والبدء)</h3>
+<ul>
+<li><strong>Objective:</strong> Formally authorize the project, appoint the Project Manager, define initial scope boundaries, and identify key stakeholders.</li>
+<li><strong>Governing Body:</strong> Project Sponsor &amp; PMO Director.</li>
+<li><strong>Entry Criteria:</strong> Approved Gate 0 Business Case and resource allocation approval.</li>
+<li><strong>Mandatory Artifact Kit:</strong></li>
+<li><code>PMO-03.01</code> <strong>Project Charter:</strong> Authorizes project manager and defines high-level scope, budget, and milestones.</li>
+<li><code>PMO-03.04</code> <strong>Stakeholder Register:</strong> Catalogs internal and external stakeholders, expectations, and influence.</li>
+<li><code>PMO-03.03</code> <strong>Assumption Log:</strong> Documents initial assumptions, constraints, and validation owners.</li>
+<li><code>PMO-02.01</code> <strong>Development Approach Assessment:</strong> Selects delivery methodology (Predictive, Agile, or Hybrid).</li>
+<li><code>PMO-02.02</code> <strong>Complexity Assessment Model:</strong> Determines governance tier (Tier 1 Mega, Tier 2 Standard, Tier 3 Lean).</li>
+<li><code>PMO-03.02</code> <strong>Product Vision:</strong> (For Agile/Product initiatives) Product vision statement and target outcomes.</li>
+<li><strong>Gate Review Checklist:</strong></li>
+<li>[ ] Is the Project Charter signed by the executive sponsor and PMO lead?</li>
+<li>[ ] Is the project management methodology and governance tier assigned?</li>
+<li>[ ] Are initial project assumptions and high-risk dependencies cataloged?</li>
+<li><strong>Exit Criteria:</strong> Signed Project Charter and authorization to proceed to integrated baseline planning.</li>
+</ul>
+<hr />
+<h3 id="gate-2-integrated-baseline-sign-off">🚪 Gate 2: Integrated Baseline Sign-off (اعتماد خط الأساس للتخطيط)</h3>
+<ul>
+<li><strong>Objective:</strong> Establish and freeze the performance measurement baselines (Scope, Schedule, Cost) and approve subsidiary management plans.</li>
+<li><strong>Governing Body:</strong> Project Sponsor, PMO Director &amp; Departmental Stakeholders.</li>
+<li><strong>Entry Criteria:</strong> Authorized Project Charter and mobilized project planning team.</li>
+<li><strong>Mandatory Artifact Kit:</strong></li>
+<li><code>PMO-04.01.01</code> <strong>Project Management Plan:</strong> Integrated master plan governing project execution.</li>
+<li><code>PMO-04.02.05</code> &amp; <code>PMO-04.02.06</code> <strong>Scope Statement &amp; WBS Dictionary:</strong> 100% scope decomposition and deliverables.</li>
+<li><code>PMO-04.03.07</code> <strong>Project Schedule Baseline:</strong> Critical path network diagram, duration estimates, and milestone dates.</li>
+<li><code>PMO-04.04.04</code> <strong>Cost Baseline &amp; Budget Allocation:</strong> Work package cost estimates, contingency reserves, and cash flow curve.</li>
+<li><code>PMO-04.08.02</code> <strong>Risk Register &amp; Mitigation Plan:</strong> Identified risks, probability/impact scores, and response strategies.</li>
+<li><code>PMO-04.06.04</code> <strong>RACI Matrix:</strong> Responsibility Assignment Matrix for all deliverables and activities.</li>
+<li><code>PMO-04.05.01</code> <strong>Quality Management Plan:</strong> Quality standards, metrics, and Definition of Done (DoD).</li>
+<li><code>PMO-04.07.01</code> <strong>Communications Plan:</strong> Stakeholder communication frequency, channels, and reporting formats.</li>
+<li><strong>Gate Review Checklist:</strong></li>
+<li>[ ] Are Scope, Schedule, and Cost baselines fully reconciled and realistic?</li>
+<li>[ ] Are resource requirements committed by functional managers?</li>
+<li>[ ] Is the contingency reserve justified by quantitative risk modeling?</li>
+<li><strong>Exit Criteria:</strong> Formal sign-off on the Integrated Project Baseline; authorization to expend capital and commence execution.</li>
+</ul>
+<hr />
+<h3 id="gate-3-operational-execution-governance-reviews">🚪 Gate 3: Operational Execution &amp; Governance Reviews (المراجعات التشغيلية والتحكم)</h3>
+<ul>
+<li><strong>Objective:</strong> Ensure delivery stays aligned with baseline targets, manage changes through formal CCB, and resolve operational issues.</li>
+<li><strong>Governing Body:</strong> Steering Committee, Project Manager &amp; PMO Lead.</li>
+<li><strong>Cadence:</strong> Weekly team reviews, bi-weekly PMO checkpoints, and monthly Steering Committee reviews.</li>
+<li><strong>Mandatory Artifact Kit:</strong></li>
+<li><code>PMO-06.01</code> <strong>Project Status Report:</strong> Executive summary, milestone health, RAG indicators, and key risks.</li>
+<li><code>PMO-06.05</code> <strong>Earned Value Analysis (EVM):</strong> CPI, SPI, CV, SV, EAC, and TCPI quantitative metrics.</li>
+<li><code>PMO-06.12</code> <strong>Flow Metrics &amp; Value Stream:</strong> (For Agile/Hybrid) Lead Time, Cycle Time, WIP limits, and throughput.</li>
+<li><code>PMO-05.01</code> <strong>Issue Log:</strong> Active operational issues, priority, impact, owners, and resolution target dates.</li>
+<li><code>PMO-05.02</code> <strong>Decision Log:</strong> Context, options considered, rationale, and authority sign-offs for decisions.</li>
+<li><code>PMO-05.04</code> <strong>Change Log &amp; Requests (<code>PMO-05.03</code>):</strong> Approved, rejected, and pending change requests with budget/time impact.</li>
+<li><strong>Gate Review Checklist:</strong></li>
+<li>[ ] Are cost and schedule variances (CPI/SPI) within approved governance tolerances ($0.90 \le \text{CPI/SPI} \le 1.10$)?</li>
+<li>[ ] Are all scope changes approved by the Change Control Board (CCB) before work begins?</li>
+<li>[ ] Are critical impediments escalated within the defined SLA timeframes?</li>
+<li><strong>Exit Criteria:</strong> Continuous green/amber governance health; all stage deliverables completed and verified by QA.</li>
+</ul>
+<hr />
+<h3 id="gate-4-acceptance-operational-handover">🚪 Gate 4: Acceptance &amp; Operational Handover (القبول والجاهزية التشغيلية)</h3>
+<ul>
+<li><strong>Objective:</strong> Validate that all deliverables meet technical and quality specifications, conduct user acceptance testing, and transition outputs to operations.</li>
+<li><strong>Governing Body:</strong> Business Owner, Quality Director, Operations Lead &amp; Client Representative.</li>
+<li><strong>Entry Criteria:</strong> 100% development/construction completed; all unit and integration testing passed.</li>
+<li><strong>Mandatory Artifact Kit:</strong></li>
+<li><code>PMO-06.10</code> <strong>User Acceptance Testing (UAT) Sign-off:</strong> Test scenarios, pass/fail results, and defect clearance.</li>
+<li><code>PMO-06.08</code> <strong>Deliverable Acceptance Form:</strong> Formal sign-off on contractual acceptance criteria.</li>
+<li><code>PMO-07.04</code> <strong>Transition to Operations Checklist:</strong> Knowledge transfer, training completion, operational documentation, and support SLAs.</li>
+<li><code>PMO-04.11.02</code> <strong>Training Plan &amp; Log:</strong> End-user training completion metrics and operational readiness sign-off.</li>
+<li><strong>Gate Review Checklist:</strong></li>
+<li>[ ] Have all Severity 1 &amp; 2 defects been resolved and retested?</li>
+<li>[ ] Is operational documentation (runbooks, manuals, SLAs) handed over to support teams?</li>
+<li>[ ] Has end-user training been delivered with passing competency scores?</li>
+<li><strong>Exit Criteria:</strong> Signed Deliverable Acceptance and Operations Transition confirmation; system live in production.</li>
+</ul>
+<hr />
+<h3 id="gate-5-formal-closeout-benefits-realization">🚪 Gate 5: Formal Closeout &amp; Benefits Realization (الإغلاق المؤسسي وتحقيق المنافع)</h3>
+<ul>
+<li><strong>Objective:</strong> Administratively close the project, release resources, archive assets, capture lessons learned, and establish benefits monitoring.</li>
+<li><strong>Governing Body:</strong> Project Sponsor, PMO Director &amp; Benefits Owner.</li>
+<li><strong>Entry Criteria:</strong> Successful operational cutover (Gate 4 passed); transition period concluded.</li>
+<li><strong>Mandatory Artifact Kit:</strong></li>
+<li><code>PMO-07.03</code> <strong>Project Closure Report:</strong> Summary of planned vs. actual performance, financial closeout, and sign-offs.</li>
+<li><code>PMO-07.01</code> <strong>Lessons Learned Summary:</strong> Root-cause analysis of successes, challenges, and recommendations for organizational knowledge base.</li>
+<li><code>PMO-07.02</code> <strong>Contract Closeout Report:</strong> Verification of vendor deliverables, final invoicing, and release of retentions.</li>
+<li><code>PMO-07.05</code> <strong>Post-Implementation Review (PIR):</strong> 3-to-6-month post-launch assessment of operational stability.</li>
+<li><code>PMO-01.03</code> <strong>Benefits Realization Plan Update:</strong> Baseline vs. actual benefits realized, KPIs, and long-term ownership transfer.</li>
+<li><strong>Gate Review Checklist:</strong></li>
+<li>[ ] Are all vendor contracts administratively and financially closed?</li>
+<li>[ ] Have project team resources been formally reassigned or released?</li>
+<li>[ ] Are lessons learned cataloged in the enterprise PMO knowledge repository?</li>
+<li>[ ] Is benefits realization assigned to an operational business owner?</li>
+<li><strong>Exit Criteria:</strong> Formal project closure certificate signed by Sponsor and PMO Director; project archived in PMO records.</li>
+</ul>
+<hr />
+<h2 id="summary-matrix-forms-by-stage-gate">📊 Summary Matrix: Forms by Stage-Gate</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Stage-Gate</th>
+<th style="text-align: left;">Key Focus</th>
+<th style="text-align: left;">Primary Authority</th>
+<th style="text-align: center;">Mandatory Form Count</th>
+<th style="text-align: left;">Core Reference Codes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Gate 0</strong></td>
+<td style="text-align: left;">Strategic Alignment &amp; Business Justification</td>
+<td style="text-align: left;">Investment Board / CFO</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><code>PMO-00.06</code>, <code>PMO-01.01</code>, <code>PMO-01.02</code>, <code>PMO-01.04</code>, <code>PMO-02.04</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gate 1</strong></td>
+<td style="text-align: left;">Initiation &amp; Authorization</td>
+<td style="text-align: left;">Sponsor &amp; PMO Director</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><code>PMO-03.01</code>, <code>PMO-03.03</code>, <code>PMO-03.04</code>, <code>PMO-02.01</code>, <code>PMO-02.02</code>, <code>PMO-03.02</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gate 2</strong></td>
+<td style="text-align: left;">Integrated Baseline Sign-off</td>
+<td style="text-align: left;">Sponsor &amp; PMO Director</td>
+<td style="text-align: center;">8–15</td>
+<td style="text-align: left;"><code>PMO-04.01.01</code>, <code>PMO-04.02.06</code>, <code>PMO-04.03.07</code>, <code>PMO-04.04.04</code>, <code>PMO-04.08.02</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gate 3</strong></td>
+<td style="text-align: left;">Operational Execution &amp; Control</td>
+<td style="text-align: left;">Steering Committee &amp; PM</td>
+<td style="text-align: center;">6–10</td>
+<td style="text-align: left;"><code>PMO-06.01</code>, <code>PMO-06.05</code>, <code>PMO-06.12</code>, <code>PMO-05.01</code>, <code>PMO-05.02</code>, <code>PMO-05.04</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gate 4</strong></td>
+<td style="text-align: left;">Acceptance &amp; Handover</td>
+<td style="text-align: left;">Business Owner &amp; QA</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><code>PMO-06.08</code>, <code>PMO-06.10</code>, <code>PMO-07.04</code>, <code>PMO-04.11.02</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gate 5</strong></td>
+<td style="text-align: left;">Closeout &amp; Benefits</td>
+<td style="text-align: left;">Sponsor &amp; Benefits Owner</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><code>PMO-07.03</code>, <code>PMO-07.01</code>, <code>PMO-07.02</code>, <code>PMO-07.05</code>, <code>PMO-01.03</code></td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ميثاق البرنامج | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج/00_02_ميثاق_البرنامج_قالب.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Template.html">🇬🇧 Switch to English Template (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-00.02</span>
+    <span class="badge badge-phase">00. إدارة البرامج والمحافظ</span>
+    <span class="badge badge-standard">معايير PMI PMBOK® 6/7/8 • ISO 21500</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill active" href="#">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../guides/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_دليل.html">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج/00_02_ميثاق_البرنامج_قالب.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Template.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج/00_02_ميثاق_البرنامج_قالب.npy
+token_count: 4151
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.933640+00:00'
+form_id: PMO-00.02
+language: ar
+status: approved
+---
+-->
+
+<!-- 
+تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+ميثاق البرنامج هو الوثيقة التي تجيز البرنامج. فهي تذكر لماذا يوجد البرنامج، وما الذي يُحاسب عليه مقابل الإنجاز، وما الذي مُنح لمدير البرنامج من صلاحية وموارد لإنجازه. وهو نقطة التحول المحورية التي يتم فيها توحيد المشاريع الفردية المترابطة تحت مظلة برنامج متكامل ذي حوكمة استراتيجية ومسؤولية موحدة.
+
+والغرض من فصل المكونات عن الأهداف هو أن الأمرين يختلطان كثيرًا: المكونات تصف القائم، والأهداف تصف ما يجب أن يتغير. والبرنامج الذي يمكن نسخ قائمة مكوناته إلى قسم الأهداف لم يقرر بعد ما هو الغرض منه.
+
+المحاذاة: ينبغي أن يكون ميثاق البرنامج متسقًا مع الوثائق التالية: خارطة طريق المحفظة، دراسة الجدوى، خطة إدارة البرنامج، خطة إدارة التغيير المؤسسي.
+
+إرشادات الكتابة:
+
+*  اذكر الغرض بوصفه التغيير الذي وجود البرنامج لإحداثه، لا بوصفه وصفًا للعمل. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به.
+
+*  اجعل لكل هدف مقياسًا وتاريخًا. ف الهدف الذي لا يمكن اختباره لا يمكن التقرير في شأنه، والهدف الذي يُبلَّغ عنه بالرأي فقط لا يميز بينه وبين التمني.
+
+*  سمِّ الصلاحية التي يملكها مدير البرنامج، وكذلك ما لا يملكه. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع.
+
+*  سجل حد التمويل المخصص كافتراض حيث لم يُعتمد بعد. فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة.
+
+*  سجل ما يحدث عند عدم بلوغ الهدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر في الغرفة حين يحين الأمر.
+
+ملاحظات التخصيص:
+
+*  قد يُدمج ميثاق البرنامج مع دراسة الجدوى حين تعامل المؤسسةهما كوثيقة إجازة واحدة. وعند الدمج، احتفظ بمحتوى الاثنتين: فدراسة الجدوى تجيب هل يستحق البرنامج التنفيذ، والميثاق يجيب من المسؤول عن تنفيذه.
+
+*  قد يكون قسم المكونات مقتطفًا من المحفظة لا قائمة مُدارة، حين تتغير المكونات أسرع من مراجعة الميثاق. وينبغي أن يحدد النموذج أيّهما، حتى لا يتعامل القارئ مع المقتطف على أنه مرجع ملزم.
+
+*  أضف الأقسام أو احذفها بحسب ما تتطلبه حوكمة البرنامج. فالبرنامج الذي يفرض إدارة منافع رسمية يحمل قسم منافع لا يحتاجه برنامج بلا ذلك الالتزام.
+
+*  وحين يكون البرنامج صغيرًا بما يكفي ليحتفظ شخص واحد بكل الصلاحيات، فذلك صراحةً لا ترك الحقل فارغًا، مع تسجيل أي صلاحية تبقى محفوظة في مكان آخر.
+
+إرشادات الأعمدة، حسب العمود:
+
+صفوف الأهداف:
+
+*  **المعرف:** معرف الهدف، يُستخدم في أقسام المكونات والمنافع والتقارير ليتتبع التقدم في تحقيقه ربطًا بالعمل الذي قصد به.
+
+*  **الهدف:** ما يجب أن يكون عليه حال البرنامج عند نجاحه، بصيغة يمكن لشخص معترض أن يبيّن سبب اعتراضه.
+
+*  **المقياس:** كيف سيُتحقق من الإنجاز، مع ذكر مصدر الرقم لا الشعور الكامن وراءه. فالمقياس بلا مصدر لا يستطيع أحد إعادة إنتاجه عند التحقق.
+
+*  **تاريخ الاستحقاق:** متى يجب بلوغ الهدف، وهو ما يجعله مستهدفًا لا اتجاهًا.
+
+*  **المالك:** الدور الواحد المسؤول عن الهدف، وهو عادةً ليس مدير البرنامج لكل الأهداف.
+
+*  **الحالة:** أين يقف الهدف حاليًا، من مجموعة ثابتة متفق عليها.
+
+صفوف المكونات:
+
+*  **معرف المكون:** معرف مشروع المكون الثابت، مطابقًا للمعرف المستخدم في خارطة طريق المحفظة.
+
+*  **اسم المكون:** اسم المشروع أو العملية ضمن البرنامج.
+
+*  **الارتباط بالأهداف:** أهداف البرنامج التي يخدمها المكون. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق هو الموضع الأخير الذي يظهر فيه ذلك قبل الالتزام بالمال.
+
+*  **الحالة:** أين يقف المكون حاليًا.
+
+*  **المالك:** من المسؤول عن المكون، وهو عادةً ليس مدير البرنامج.
+
+صفوف المنافع:
+
+*  **معرف المنفعة:** معرف المنفعة.
+
+*  **المنفعة:** المنفعة المتوقعة من البرنامج.
+
+*  **التصنيف:** هل هي مالية أم غير مالية. فالاثنتان تُداران على نحو مختلفتين، والمنفعة المسجلة دون تصنيف تُقدَّر عادةً بالقيمة التي وجدها كاتبها أكثر ملاءمة.
+
+*  **المستفيد:** من ينتفع بالمنفعة، مذكورًا لا موصوفًا. فالمنفعة التي لا مستفيد محدد لها لا يمكن تحقيقها.
+
+*  **آلية التحقيق:** كيف ستُحصَّل المنفعة فعليًا، وهنا تتحول معظم المنافع المفترضة إلى لا شيء. فالآلية هي التي تميز المنفعة التي سينجزها البرنامج عن المنفعة التي تأمل المؤسسة حدوثها.
+
+*  **تاريخ التحقيق:** متى يُتوقع تحقيق المنفعة، وقد يكون بعد إغلاق المكون الذي أنشأها بوقت طويل.
+
+صفوف الصلاحيات:
+
+*  **نوع القرار:** نوع القرار الذي يعنيه هذا الصف.
+
+*  **مستوى الصلاحية:** المستوى الذي يحق لمدير البرنامج أن يقرر فيه، كالفريق أو القسم أو وحدة الأعمال.
+
+*  **مسار التصعيد:** من يقرر عند تجاوز مستوى الصلاحية، مذكورًا بالاسم كي لا يُتفاوض على التصعيد لحظة الحاجة إليه.
+
+*  **الحدود أو الشروط:** ما لا تمتد إليه هذه الصلاحية، وهي نصف الصف الذي يمنع الخلاف لاحقًا.
+
+صفوف المخاطر والافتراضات:
+
+*  **المعرف:** معرف المخاطرة أو الافتراض.
+
+*  **النوع:** هل هو مخاطرة أم افتراض.
+
+*  **الوصف:** ما هو محل المخاطرة، أو ما هو مفترض.
+
+*  **الأثر على البرنامج:** ما يحدث للبرنامج إذا وقعت المخاطرة أو ثبت خطأ الافتراض.
+
+*  **المالك:** من يراقب هذا البند.
+
+*  **تاريخ المراجعة:** متى سيُراجع مرة أخرى.
+-->
+
+<h3 align="left">{{اسم_الشركة}}</h3>
+<h2 align="left">{{اسم_البرنامج}} - {{معرف_البرنامج}}</h2>
+<h1 align="center">ميثاق البرنامج</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>تاريخ الإعداد:</strong> {{التاريخ_الحالي}}</th>
+<th style="text-align: left;"><strong>مدير البرنامج:</strong> {{اسم_مدير_البرنامج}}</th>
+<th style="text-align: left;"><strong>إعداد:</strong> {{معد_الوثيقة}}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1">1. غرض البرنامج ومبرراته</h2>
+<!-- التغيير الذي وجود البرنامج لإحداثه، لا وصف العمل الذي سيؤديه. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به. سجل المحرّك التجاري من خارطة طريق المحفظة ليُتتبَع البرنامج إلى الاستراتيجية التي يخدمها. واذكر ما يحدث إذا لم يُنفَّذ البرنامج، فهذا هو الاختبار الذي يُقاس عليه كل ميثاق في النهاية، عادةً بعد سنوات من شخص لم يكن حاضرًا عند كتابته. -->
+
+<p><strong>غرض البرنامج:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>المحرّك التجاري والتسلسل مع الاستراتيجية:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>بيان المشكلة أو الفرصة:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>عاقبة عدم التنفيذ:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>بيان رؤية البرنامج:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="2">2. أهداف البرنامج</h2>
+<!-- ما يجب أن يكون عليه الحال عند نجاح البرنامج. ولكل هدف مقياس وتاريخ استحقاق، فالهدف الذي لا يمكن اختباره لا يمكن التقرير في شأنه، والذي يُبلَّغ عنه بالرأي فقط لا يميز بينه وبين التمني. وحين يكون أحد المكونات قد مُوّل قبل كتابة الميثاق، فكثيرًا ما يُكتب الهدف ليطابق المكون؛ فاحسب اتجاه هذه المطابقة، فالبرنامج الذي اشتُقّت أهدافه من مكوناته قد ورث نطاقها دون أن يختاره. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المعرف</th>
+<th style="text-align: right;">الهدف</th>
+<th style="text-align: right;">المقياس</th>
+<th style="text-align: right;">تاريخ الاستحقاق</th>
+<th style="text-align: right;">المالك</th>
+<th style="text-align: right;">الحالة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3">3. مشاريع البرنامج وعملياته</h2>
+<!-- ما يتكون منه البرنامج، تمييزًا لما يجب أن يحققه. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق هو الإطار الحاكم الذي يظهر فيه ذلك قبل الالتزام بالمال لا بعده. استخدم معرّفات المكونات من خارطة طريق المحفظة ليتم ربط القائمتين. وأشر حيث يكون المكون مشتركًا مع برنامج آخر، فالمكون المُبلَّغ إلى مالكين لا يُبلَّغ إلى أيّ منهما حين يختلفان. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرف المكون</th>
+<th style="text-align: right;">اسم المكون</th>
+<th style="text-align: right;">الارتباط بالأهداف</th>
+<th style="text-align: right;">الحالة</th>
+<th style="text-align: right;">المالك</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4">4. منافع البرنامج</h2>
+<!-- ما يتوقع البرنامج أن ينتجه ولا ينتجه المكونات منفردة. والمنفعة التي ليس لها مستفيد محدد ليست منفعة يمكن محاسبة البرنامج عليها، والمنفعة التي ليس لها آلية تحقيق هي افتراض لا خطة: فآلية التحقيق هي التي تميز منفعة سينجزها البرنامج عن منفعة تأمل المؤسسة حدوثها. وف المنفعة المالية، فسجل متى تتحقق، وهو غالبًا بعد إغلاق المكون الذي أنشأها بوقت طويل. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرف المنفعة</th>
+<th style="text-align: right;">المنفعة</th>
+<th style="text-align: right;">التصنيف</th>
+<th style="text-align: right;">المستفيد</th>
+<th style="text-align: right;">آلية التحقيق</th>
+<th style="text-align: right;">تاريخ التحقيق</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. صلاحية مدير البرنامج وحوكمته</h2>
+<!-- ما يحق لمدير البرنامج أن يقرره، وما لا يحق له بالقدر نفسه. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع لخلو رسم الخط الذي يُتصعَّد عبره. وسمِّ مسار التصعيد، حتى لا يُتفاوض عليه لحظة الحاجة. وسجل وضع التمويل بصدق، بما فيه ما لم يُعتمد بعد: فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<p><strong>بيان صلاحية مدير البرنامج:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>الصلاحية المحفوظة للراعي:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>مجلس حوكمة البرنامج:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>وتيرة التقارير وجمهورها:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>مسار التصعيد:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>وضع التمويل:</strong> [ أضف التفاصيل... ]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">نوع القرار</th>
+<th style="text-align: right;">مستوى الصلاحية</th>
+<th style="text-align: right;">مسار التصعيد</th>
+<th style="text-align: right;">الحدود أو الشروط</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6">6. المخاطر والافتراضات</h2>
+<!-- ما يفترضه الميثاق وما يمكن أن يفسده. وهذه بنود مستوى البرنامج؛ فمخاطر المكونات تُسجَّل في سجلات المكونات الخاصة ولا تُكرر هنا. والمخاطرة بلا مالك لا تُراقب، والافتراض بلا تاريخ مراجعة يصبح حقيقةً بالافتراض في الوقت نفسه الذي ينبغي أن يظل فيه مسائلًا. وحين لا يملك البرنامج أي احتياطي ممول، فذلك صراحةً، فالبرنامج الذي لا يتوقع أيًا منها لم يبحث ببساطة. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المعرف</th>
+<th style="text-align: right;">النوع</th>
+<th style="text-align: right;">الوصف</th>
+<th style="text-align: right;">الأثر على البرنامج</th>
+<th style="text-align: right;">المالك</th>
+<th style="text-align: right;">تاريخ المراجعة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+<td style="text-align: right;">[ أضف التفاصيل... ]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7">7. الاستجابة عند عدم بلوغ الهدف</h2>
+<!-- ما يحدث عند عدم بلوغ هدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر في الغرفة حين يحيء الأمر، وهو عادةً أقل من يملك الوقت لذلك. وسجل ما إذا كانت الاستجابة إعادة تخطيط أم تقليص نطاق أم تمديد تاريخ أم إغلاق الهدف، ومن يتخذ ذلك القرار. أضف صفوفًا أو احذفها بحسب ما تتطلبه حوكمة البرنامج. -->
+
+<p><strong>الاستجابة المحددة:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>صلاحية القرار:</strong> [ أضف التفاصيل... ]</p>
+<p><strong>محفِّز إعادة التقييم:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="8">8. الاعتماد والموافقات</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مدير البرنامج</strong></td>
+<td style="text-align: right;">{{اسم_مدير_البرنامج}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>راعي البرنامج</strong></td>
+<td style="text-align: right;">{{اسم_راعي_البرنامج}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مالك الأعمال</strong></td>
+<td style="text-align: right;">{{اسم_مالك_الأعمال}}</td>
+<td style="text-align: right;"><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</td>
+<td style="text-align: right;">[.... -.... -.... ]</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+ <strong>النموذج:</strong> ميثاق البرنامج | <strong>المرجع:</strong> PMO-00.02 <br>
+ <i>تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المخرج: بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-02.05</span>
+    <span class="badge badge-phase">02. منهجية المشروع وتخصيصه</span>
+    <span class="badge badge-type">دليل إرشادي وحوكمي</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/02_Project_Approach_and_Tailoring/02_05_AI_Model_Card_and_Fact_Sheet_Guide.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Form
+lang: ar
+layout: default
+title: بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق
+nav_order: 1
+token_pointer: /_tokens/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.npy
+token_count: 4047
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.711163+00:00'
+form_id: PMO-02.05
+status: approved</p>
+<hr />
+<div>
+
+## دليل نماذج تسليمات
+# المخرج: بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق
+
+**مرجع الوثيقة:** `PMO-02.05`
+
+يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من **بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق**
+واستخدامه بفعالية بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+بيان موثَّق لنموذج ذكاء اصطناعي عند إصدار بعينه، يوثّق هويته ومصدره وبيانات
+تدريبه وتقييمه وأخلاقياته وقيوده. يسمّي النموذج بإصداره لا باسمه المجرد، ويسجّل
+من بناه ومن أي نموذج أساسي، والفئة التي كان الإصدار في داخلها، ولكل مجموعة
+بيانات صف باسمها ومالكها وسند استعمالها ومن تمثّلهم ومن لا تمثّلهم، ولكل
+مقياس صف بقيمة تقف خلفها عينة معلومة، وأداء كل فئة متأثرة، وخط أساس يُقارَن
+به، وعتبة سارية، وحدود المنهج، ولكل اعتبار أخلاقي أو أمني صف بالفئات المتأثرة
+وطريقة التحيّز المحددة ودرجة الخطورة والإجراء المتخذ، ويختم بالقيود المعروفة
+ورقابة الإنتاج وعتبات المراقبة وسياسة إعادة التدريب وسجل تغييرات الإصدار
+وخطة الإحالة إلى التقاعد.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن البطاقة هي ما يحوّل ادعاءً إلى سجل يمكن الرجوع إليه. ومن يعمل بنموذج
+يحتاج أن يعرف: أي إصدار بالضبط، ومن أين جاءت البيانات، وما الذي قيس وما
+الذي لم يُقَس، وما لا يفعله النموذج. وغالبًا ما يجيب مالك النموذج عن السؤال
+الأخير بإجابة لا صلة لها بالواقع، لأن الاعتراف بحدّ يُقرأ كضعف، وغياب الحدّ
+يُقرأ كقوة. والبطاقة هي الموضع الوحيد الذي يصبح فيه هذا الحدّ جزءًا من السجل
+لا من التقدير.
+
+والانضباط الذي تفرضه هو الفصل. الإصدار ليس الاسم، والرقم ليس بلا عينة، ودقة
+التقييم ليست بلا استقلال عن التدريب، والموافقة ليست تقييمًا، والاستخدام
+المؤيَّد ليس الحصر. كل من هذه دعوى مستقلة، ودمجها في دعوى واحدة هو بالضبط
+ما يجعل بطاقات تظهر مطمئنة وتصير خاطئة. وأخطر ما يمرّ في المراجعة غير المكتشَف هو
+قيمة بلا حجم عينة، ورقم أداء لفئة من عينة صغيرة، وحالة تحيّز مكتوبة بصيغة
+احتمال لا بصيغة دعوى.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعدّ هذا المخرج ويستخدم أساسًا في مجموعة **منهجية المشروع وتخصيصه** من دورة
+حياة المشروع. يُعدّ عند ورود النموذج أول مرة، ويُعاد عند كل إصدار جديد، ويُفتح
+مراجعته عند إطلاق النظام في الإنتاج وعند أي تغيّر في البيانات أو في خط الأساس،
+ويُقرأ ثانية عند وقوع حادثة أو عند التحديث الدوري للبطاقة.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكه مالك النموذج، ويجب أن يجيب عن كل خانة فيه بسجل لا
+بتحمّل؛ وهو الشخص الذي سيُسأل عن أي رقم فيه. ويُستكمل مع مسؤول الذكاء
+الاصطناعي أو تعلّم الآلة، المسؤول عن بيانات التدريب والتقييم ومبرر كل مقياس،
+ومع مسؤول حماية البيانات، المسؤول عن سند استعمال البيانات ومن تمثّلهم،
+ومع مسؤول المخاطر أو الأمن، المسؤول عن ترتيب مخاطر السلامة وضوابطها. يراجعه
+مدير المشروع في ضوء خطة الحوكمة، ويعتمده راعي المشروع، ويُوقّعه مسؤول حماية
+البيانات لأن البطاقة وثيقةُ قولٍ عن بيانات لا عن نموذج فقط.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  سمِّ الإصدار لا الاسم. البطاقة التي تصف عائلة النماذج لا تصف أي شيء عند
+  المقارنة، واسمُ الشركة لا يتغيّر بين بناءين أحدهما أفضل والآخر أضعف.
+*  افصل بيانات التقييم عن بيانات التدريب في خانة مستقلة، فالاستقلال أول ما
+  يُفحص، ودمجُه في عمود القيمة يخفي أهم خاصية في القسم كله.
+*  لا تكتب رقمًا بلا حجم عينة. فالفارق بين أداء فئة من ألف عينة وفئة من
+  عشرين فارق بين قياس ورقم.
+*  اكتب حدود المنهج في خانتها، فالخانة المملوءة وحدها تجعل الرقم يبدو
+  مسحًا شاملًا وهو ليس كذلك.
+*  صُغ دعوى التحيّز بحيث يمكن أن تكون خاطئة. «قد يكون متحيّزًا» عنوان،
+  أما «يمنح هذه الفئة درجات أدنى بناءً على معدلات إتمام تاريخية» فمقيس.
+*  اجعل لكل مقياس خط أساس، فالمقارنة بخط أساس ساذج تُنتج نموذجًا أفضل من لا شيء ونافدًا في آن واحد.
+  شيء ونافدًا في آن واحد.
+*  سمِّ الفئات المتأثرة بالاسم. الوصف الجامع لفئة وفق اختبار ليس الفئة التي
+  يكون أداء النموذج الأسوأ عليها.
+*  عتبات المراقبة تُكتب قبل معرفة النتيجة؛ والعتبة التي تُحدد بعد رؤية
+  الرقم وصف لذلك الرقم.
+*  سجّل قيودًا معروفة صريحة. البطاقة المتفائلة في هذا القسم هي بطاقة لن
+  يُرجع إليها أحد بعد الحادثة.
+*  استبدل البطاقة عند كل إصدار ولا ترقّمها في مكانها، فيبقى ما رُئي على قرار
+  الاعتماد هو ما رُئي عليه.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن يتسق نموذج بطاقة الذكاء الاصطناعي مع المستندات التالية:
+*  خطة حوكمة الذكاء الاصطناعي
+*  تقييم جاهزية الذكاء الاصطناعي
+*  نموذج حالة استخدام الذكاء الاصطناعي
+*  تقييم خصوصية البيانات وأخلاقياتها
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإتمام **بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق** بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية
+استنادًا إلى سياق المشروع (مع التأكد من الرجوع إلى `parameters.md`
+للمتغيرات العامة للمشروع):
+
+*  **اسم النموذج وإصداره:** النموذج عند إصدار بعينه، مع تاريخ إنتاج ذلك الإصدار. البطاقة التي تسمّي النموذج لا الإصدار تصف أي بناء كان منشورًا حين تُقرأ، والجواب نادرًا ما يكون الذي خُصص.
+*  **المطوّر ومصدر النموذج:** من بناه، أهو مدرَّب داخلي أم مُهيَّأ أم مُكتسَب، ومن أيّ نموذج أساسي. والمصدر يحدد أي الأقسام التالية يمكن الإجابة عنها أصلًا، وهو القسم الغائب عادة حين يُطرح سؤال.
+*  **البنية والإعداد:** عائلة البنية، وعدد المعاملات، والإعدادات التي تؤثر في السلوك. والإعدادات هي الجزء المهم، فالبنية نفسها بإعدادات فك الترميز المختلفة نظام مختلف.
+*  **أسلوب التدريب والحوسبة:** كيف دُرِّب، وفي أي فترة، وبأي كلفة. والحوسبة تُسجَّل لأنها تحدّ إعادة الإنتاج: فالنتيجة التي تطلبت توزيع حوسبة لا يستطيع أحد الحصول عليه ثانية ليست نتيجة يمكن اشتقاقها من جديد.
+*  **الترخيص وشروط الاستعمال:** الترخيص، ومن يجوز له الاستعمال، وتحت أي قيود. والنموذج المستعمل خارج ترخيصه تعرض قانوني لا يعالجه أي قسم تقني في هذه البطاقة.
+*  **المخرجات المرتبطة:** النموذج، والشيفرة، والأوزان، والبيانات، مع مكان كل منها. البطاقة التي لا تسرد مواقع هي وصف، والوصف لا يمكن مطابقته على شيء.
+*  **الاستخدام الرئيس:** المهمة التي النموذج لها، مصوغةً مدخلًا ومخرجًا. فالمدخل والمخرج يمكن اختبارهما، أما الغرض فلا.
+*  **الاستخدام الثانوي:** ما يجوز استعماله له أيضًا، إن وُجد. يُسجَّل منفصلًا لأن الاستعمال المحتمل على مضض والمؤيَّد يحتاجان ضوابط مختلفة، وبطاقة تسرد المؤيَّد وحده تخفي المحتمل.
+*  **الاستخدام غير المشمول:** الاستخدامات التي يجب ألا يُستعمل لها، مع سبب كل منها. وهذا القسم هو ما يجعل البطاقة نافعة لمن يقرر النشر، وبطاقة خالية منه لا تستطيع إلا أن تقول ما هو النموذج له.
+*  **المستخدم والجمهور:** من يشغّل النظام، ومن يخضع لمخرجه. والاثنان يُعاملان كواحد عادة، وفي هذا الخلط يصير النظام الذي يفرز المرشحين موصوفًا بأنه أداة يساعد المُوظِّفين على كتابة إعلانات أفضل.
+*  **شروط التشغيل:** المدخلات التي يتوقعها، والظروف التي اختُبر فيها، والظروف التي يجب ألا يُستعمل فيها. وهذه حدود التقييم في القسم الرابع، ومقياس قُرئ خارجها ليس دعوى أضعف بل دعوى خاطئة.
+*  **متطلب الإشراف البشري:** أين يجب أن يراجع الإنسان المخرج قبل العمل به. والإشراف المعرَّف بوصفه مبدأً عامًا لا كنقاط في سير العمل لا يصمد أمام موعد نهائي.
+*  **مجموعات البيانات:** المجموعات التي دُرِّب النموذج عليها، كل منها باسمها ومالكها.
+*  **المصدر وطريقة الجمع:** من أين جاءت كل مجموعة وكيف جُمعت. والبيانات المجموعة تحمل ممارسات الفترة والمكان اللذين جاءتا منها، سواء فُحصت تلك الممارسات أو لم تُفحص.
+*  **التغطية السكانية والجغرافية:** من يمثّلهم البيانات وأين تمثّل، ومن لا تمثّلهم ولا أين. والمجموعة التي تمثّل فئة بدقة تقول ذلك، والخانة مهمة لأن غيابها هو ما يسمح بتطبيق النموذج على فئة لم يقسها أحد.
+*  **الفترة الزمنية المشمولة:** المدى الذي تغطيه البيانات، وماذا حدث فيه. والنموذج المدرَّب على فترة من الظروف المستقرة يرث افتراض بقائها، والبطاقة هي المكان الذي يُكتب فيه ذلك الافتراض.
+*  **الترخيص وسند الموافقة:** السند الذي يجيز استعمال كل مجموعة، وهل أُخذت الموافقة حيث كانت مطلوبة. وحيث لم تُؤخذ الموافقة، فتلك هي الحقيقة التي تُسجَّل لا غيابٌ يُترك فارغًا.
+*  **ما قبل المعالجة والترشيح:** ما أُزيل أو أُعيدت عيّنته أو كُمِّل، وعلى أي أساس. والترشيح هو المكان الذي تكتسب فيه المجموعة شكل الفئة التي سيخفق النموذج عليها لاحقًا، وهو الخطوة التي نادرًا ما تفحص.
+*  **قيود مجموعة البيانات المعروفة:** ما لا تستطيع المجموعة تمثيله. وهذه الخانة هي ما يمنع قراء المقياس بوصفه دعوى عامة، وهي خالية في الغالب.
+*  **بيانات التقييم:** البيانات التي أُجري عليها التقييم، وهل هي منفصلة عن بيانات التدريب. والاستقلال هو أول ما يُفحص في أي تقييم، وغيابه يُبطل كل رقم في القسم.
+*  **المقاييس:** ما الذي تُقاس، وكيف حُسب كل مقياس. وشرح المقياس أهم من رقمه، لأن رقمًا بلا تعريف يمكن أن يُقارَن بما ليس له، ولا يكشف القارئ ذلك من الرقم نفسه.
+*  **الأداء بحسب الفئة:** نفس المقاييس لكل فئة يؤثر فيها النموذج، مع حجم العينة لكل منها. ورقم فئة من عينة صغيرة ليس قياسًا، وحجم العينة هو ما يميز بين الاثنين.
+*  **المقارنة بخط الأساس:** بماذا يُقارَن النموذج، وبكم يتفوق. والنموذج المقارَن بخط أساس ساذج فقط قد يكون أفضل منه ونافدًا في آن واحد.
+*  **العتبة ونقطة التشغيل:** العتبة المطبَّقة، وما الذي يتغير عند كل بديل. النموذج مجموعة مبادلات لا نظام واحد: خفض العتبة يزيد الاسترجاع يزيد الإنذارات الكاذبة، وهذه المبادلة لا تظهر إلا بعد تثبيت عتبة.
+*  **منهج التقييم وقيوده:** كيف أُجري التقييم، ومن أجراه، وما لا يثبته. والتقييم الذي أجراه الفريق الذي بنى النموذج مشروع، وهذه حقيقة تُكتب على البطاقة.
+*  **المتانة وأنماط الفشل:** كيف يتصرف النموذج أمام مدخلات لم يُختبر عليها، وطرق فشله المعروفة. وأنماط الفشل المعروفة أنفع من درجة متانة، لأن القارئ يستطيع التصرف بناءً عليها ولا يستطيع التصرف بناءً على درجة.
+*  **الفئات المتأثرة:** الفئات التي يحدد النموذج نتائجها، مذكورة بالاسم. والفئات الموصوفة في مجملها العام على أساس الاختبار ليست بالضرورة هي الفئة التي يكون أداؤها الأسوأ.
+*  **التحيّز المعروف:** الطريقة المحددة التي يكون النموذج بها غير عادل، مصوغة بحيث يمكن أن تكون خاطئة. وخانة عنوانها «التحيّز» وتقول قد يكون النموذج متحيّزًا عنوان، أما «يمنح هذه الفئة درجات أدنى بناءً على معدلات إتمام تاريخية» فدعوى يمكن قياسها ويمكن أن يثبت خطؤها.
+*  **مخاطر السلامة:** الطرق التي يمكن أن يضرّ بها النموذج، مرتبة بالخطورة، مع الظروف التي تنشأ فيها. والخطورة هي ما يحدد الضابط، والخطر بلا درجة قائمة احتمالات.
+*  **إمكانية الاستخدام المزدوج وإساءة الاستعمال:** كيف يمكن إساءة استعمال النموذج لإيذاء، وما أُخذ بشأن ذلك. وذات الصلة لنموذج يولّد أكثر من صلتها بنموذج يصنّف، وهي غير مذكورة في الغالب.
+*  **الأثر البيئي وعلى الموارد:** الطاقة والحوسبة المستهلكة، ومن يتحملها. وتُسجَّل لأنها كلفة حقيقية لا تظهر في أي قسم آخر، ولأنها في الغالب المؤشر الرئيسي الذي يستطيع طرف خارجي التحقق منه.
+*  **الأثر على خصوصية البيانات:** ما يمكن أن يكشفه النموذج عن الأفراد في بيانات تدريبه، وهل اختُبر ذلك. والاستخراج والحفظ قابلان للاختبار، والاختبار هو ما يميز الجواب المتدبر عن الافتراض.
+*  **القيود المعروفة:** ما لا يستطيع النموذج فعله، مصرَّحًا به. وهذا القسم يرجع إليه القارئ بعد حادثة، وبطاقة متفائلة فيه هي بطاقة لن يُرجع إليها ثانية.
+*  **السلوك خارج نطاق التوزيع:** كيف يتصرف النموذج أمام مدخلات تشبه بيانات تدريبه، وهل قيس ذلك. والنموذج الذي يُعطى فئة لم يرها لا يخفق بصوت عالٍ، وهذا ما يجعل تسجيله مفيدًا.
+*  **المراقبة في الإنتاج:** ما يراقب بعد النشر، مقابل أي خط أساس، وكم مرة. والانحراف خاصية للعلاقة بين النموذج والعالم لا للنموذج، فقياس الإطلاق هو أول سلسلة.
+*  **عتبات المراقبة:** ما النتيجة التي تستدعي إجراءً، مكتوبة قبل معرفة النتيجة. والعتبة التي تُحدد بعد رؤية الرقم وصف لذلك الرقم.
+*  **سياسة إعادة التدريب والتحديث:** متى يُعاد تدريب النموذج، وما يستدعيه، ومن يوافق. وبدون ذلك يُحدَّث النموذج متى ما تفرّغ أحدهم، فيصبح التغيير خفيًا على كل ما فوقه في هذه البطاقة.
+*  **سجل تغييرات الإصدار:** ما الذي تغيّر بين هذا الإصدار وسابقه، ولماذا. النماذج تتغير كثيرًا بهدوء، وبطاقة بلا سجل تغييرات لا تستطيع أن تجيب بما كان ساريًا عند وقوع حادثة.
+*  **خطة الإحالة للتقاعد:** متى وكيف يُحال النموذج إلى التقاعد، وماذا يحدث للبيانات التي يحملها. والنموذج في الإنتاج بلا خطة تقاعد نظام تتراكم كلفته ولا تُسدّد التزاماته أبدًا.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](../../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.html)
+* [🤖 موجّه التوليد الذكي](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي.md)
+* [📊 بنية البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي.json)
+* [📈 البيانات الجدولية (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.md](../../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.html)
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

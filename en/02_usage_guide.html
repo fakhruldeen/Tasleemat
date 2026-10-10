@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📘 Tasleemat PMO Toolkit — Comprehensive Practitioner & Automation Guide | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../en/02_usage_guide.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/02_usage_guide.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/02_usage_guide.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/en/02_usage_guide.npy
+token_count: 2999
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.500388+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
+</p>
+
+<h1 id="tasleemat-pmo-toolkit-comprehensive-practitioner-automation-guide">📘 Tasleemat PMO Toolkit — Comprehensive Practitioner &amp; Automation Guide</h1>
+<p><strong>Document Reference:</strong> <code>TASLEEMAT-GUIDE-02-USAGE-GUIDE</code><br />
+<strong>Standard:</strong> PMI PMBOK® Guide 6th, 7th &amp; 8th Edition Standard<br />
+<strong>Target Audience:</strong> Project Managers, PMO Directors, AI Engineers, Scrum Masters  </p>
+<p>Welcome to the definitive practitioner and automation guide for the <strong>Tasleemat PMO Toolkit</strong>. Whether you are a project manager looking to standardize physical deliverables, a PMO director establishing enterprise governance, or an AI engineer building autonomous project management agents, this guide covers every workflow end-to-end.</p>
+<hr />
+<h2 id="table-of-contents">📑 Table of Contents</h2>
+<ol>
+<li><a href="#1-the-5-file-architecture">The 5-File Architecture</a></li>
+<li><a href="#2-global-parameters-configuration">Global Parameters Configuration</a></li>
+<li><a href="#3-ai-powered-document-generation-workflows">AI-Powered Document Generation Workflows</a></li>
+<li><a href="#workflow-a-interactive-chat-prompting-claude--chatgpt--gemini">Workflow A: Interactive Chat Prompting (Claude / ChatGPT / Gemini)</a></li>
+<li><a href="#workflow-b-structured-json--api-automation">Workflow B: Structured JSON &amp; API Automation</a></li>
+<li><a href="#workflow-c-local-llm-execution-ollama--vllm">Workflow C: Local LLM Execution (Ollama / vLLM)</a></li>
+<li><a href="#4-managing-lifecycle-dependencies">Managing Lifecycle Dependencies</a></li>
+<li><a href="#5-enterprise-publishing--pdf-export">Enterprise Publishing &amp; PDF Export</a></li>
+<li><a href="#6-data-analytics--dashboard-automation">Data Analytics &amp; Dashboard Automation</a></li>
+<li><a href="#7-governance--sign-off-matrix">Governance &amp; Sign-off Matrix</a></li>
+</ol>
+<hr />
+<h2 id="1-the-5-file-architecture">1. The 5-File Architecture</h2>
+<p>Every one of the <strong>102 form directories</strong> across <a href="../forms/en/index.html"><code>../../forms/en/</code></a> and <a href="../forms/ar/index.html"><code>../../forms/ar/</code></a> contains exactly five synchronized files engineered for specific stages of the document lifecycle:</p>
+<pre><code class="language-text">01_Project_Charter/
+├── 03_01_Project_Charter_Guide.md     # 1. Human Practitioner Guide &amp; Dependency Rules
+├── 03_01_Project_Charter_Template.md  # 2. Production Markdown Template with Sign-offs
+├── 03_01_Project_Charter.md           # 3. LLM System Prompt &amp; Field Constraints
+├── 03_01_Project_Charter.json         # 4. Machine-Readable Schema (API &amp; JSON Mode)
+└── 03_01_Project_Charter.csv          # 5. 4-Column Data Dictionary for BI &amp; Analytics
+</code></pre>
+<h3 id="11-the-practitioner-guide-_guidemd-_md">1.1 The Practitioner Guide (<code>*_Guide.md</code> / <code>*_دليل.md</code>)</h3>
+<ul>
+<li><strong>When to use:</strong> Read before drafting or reviewing the artifact.</li>
+<li><strong>Key Sections:</strong></li>
+<li><strong>Purpose &amp; Core Value:</strong> What problem this document solves and what risks arise if it is omitted.</li>
+<li><strong>Writing Guidelines:</strong> Quality standards, anti-patterns, and precision rules.</li>
+<li><strong>Column &amp; Field Definitions:</strong> Guidance on each table column and metadata field.</li>
+<li><strong>Alignment &amp; Dependencies:</strong> Explicit <strong>Mandatory</strong> and <strong>Optional</strong> upstream prerequisites and downstream dependents with official document IDs (e.g. <code>PMO-03.01</code>).</li>
+</ul>
+<h3 id="12-the-production-template-_templatemd-_md">1.2 The Production Template (<code>*_Template.md</code> / <code>*_قالب.md</code>)</h3>
+<ul>
+<li><strong>When to use:</strong> The final deliverable document for stakeholder review, wiki storage, and formal sign-offs.</li>
+<li><strong>Key Features:</strong></li>
+<li>Standardized metadata header (<code>Date Prepared</code>, <code>Project Manager</code>, <code>Prepared By</code>).</li>
+<li>Document reference code and organizational branding placeholders (<code>{{Company_Name}}</code>, <code>{{Project_Name}}</code>).</li>
+<li>Role-based governance approval table assigning sign-off responsibility to appropriate governance roles (e.g., Project Sponsor, Finance Controller, CCB Chair, QA Lead).</li>
+</ul>
+<h3 id="13-the-llm-generation-prompt-md">1.3 The LLM Generation Prompt (<code>*.md</code>)</h3>
+<ul>
+<li><strong>When to use:</strong> Copy and paste into an LLM interface along with project context to generate a draft.</li>
+<li><strong>Key Features:</strong></li>
+<li>Structured prompt block quoting alignment rules and dependencies.</li>
+<li>Detailed system instructions specifying exactly what each section must contain.</li>
+</ul>
+<h3 id="14-the-data-schema-json">1.4 The Data Schema (<code>*.json</code>)</h3>
+<ul>
+<li><strong>When to use:</strong> Programmatic document generation pipelines, LLM JSON mode, and schema validation.</li>
+<li><strong>Key Structure:</strong>
+  <code>json
+  {
+    "_llm_instructions": "Fill in the project_title and value properties...",
+    "form_name": "Project Charter",
+    "document_reference": "PMO-03.01",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+      "f01_Project_Purpose": {
+        "section": "1. Project Purpose and Business Case",
+        "label": "Project Purpose",
+        "guidance": "Clear business rationale...",
+        "value": ""
+      }
+    }
+  }</code></li>
+</ul>
+<h3 id="15-the-tabular-data-dictionary-csv">1.5 The Tabular Data Dictionary (<code>*.csv</code>)</h3>
+<ul>
+<li><strong>When to use:</strong> Importing into Excel, Google Sheets, PowerBI, or enterprise database tables.</li>
+<li><strong>Structure:</strong> Exactly 4 columns: <code>Section</code>, <code>Field</code>, <code>Guidance</code>, <code>LLM_Generated_Value</code>.</li>
+</ul>
+<hr />
+<h2 id="2-global-parameters-configuration">2. Global Parameters Configuration</h2>
+<p>Before generating documents with AI, define your project's global baseline variables in <a href="../../forms/en/parameters.html"><code>../../forms/en/parameters.md</code></a> (or <a href="../../forms/ar/parameters.html"><code>../../forms/ar/parameters.md</code></a> for Arabic):</p>
+<pre><code class="language-markdown"># Project Global Parameters (معاملات المشروع العامة)
+
+* **Company_Name:** Enterprise Solutions Corp
+* **Project_Name:** Customer Portal 2.0 Modernization
+* **Project_ID:** PRJ-2026-088
+* **Project_Manager_Name:** John Doe, PMP
+* **Project_Sponsor:** Jane Smith (VP of Digital Transformation)
+* **Prepared_By:** PMO Lead Analyst
+* **Target_Start_Date:** 2026-11-01
+* **Target_Finish_Date:** 2027-05-31
+* **Total_Budget_BAC:** $1,250,000 USD
+* **Currency:** USD
+</code></pre>
+<hr />
+<h2 id="3-ai-powered-document-generation-workflows">3. AI-Powered Document Generation Workflows</h2>
+<h3 id="workflow-a-interactive-chat-prompting-claude-chatgpt-gemini">Workflow A: Interactive Chat Prompting (Claude / ChatGPT / Gemini)</h3>
+<ol>
+<li>Open your LLM chat interface.</li>
+<li>Provide the system instructions and global parameters:
+   ```text
+   System: You are an expert Enterprise PMO Lead and Senior Project Manager.
+   I will provide you with:</li>
+<li>Global project parameters</li>
+<li>Rough stakeholder meeting notes</li>
+<li>The exact PMO prompt specification for the target artifact</li>
+</ol>
+<p>Your task is to generate a comprehensive, professional, audit-ready Markdown document 
+   matching the exact structure and tables of the target template. Do not summarize or omit sections.
+   <code>``
+3. Paste the contents of</code>../../forms/en/parameters.md<code>.
+4. Paste the specific prompt file (e.g., [</code>../../forms/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register.md<code>](../../forms/en/04_Planning/08_Risk/02_Risk_Register/04_08_02_Risk_Register.html)).
+5. Paste your raw project notes (e.g., transcripts, bullet points, or email summaries).
+6. The AI will return the complete, filled-out Markdown document ready to paste into</code>_Template.md`.</p>
+<hr />
+<h3 id="workflow-b-structured-json-api-automation">Workflow B: Structured JSON &amp; API Automation</h3>
+<p>For automated backend pipelines (e.g. Python, LangChain, LlamaIndex, or OpenAI Function Calling):</p>
+<pre><code class="language-python">import json
+import openai
+
+# 1. Load schema
+with open(&quot;../../forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter.json&quot;) as f:
+    schema = json.load(f)
+
+# 2. Call OpenAI with JSON Mode
+response = openai.chat.completions.create(
+    model=&quot;gpt-4o&quot;,
+    response_format={&quot;type&quot;: &quot;json_object&quot;},
+    messages=[
+        {
+            &quot;role&quot;: &quot;system&quot;,
+            &quot;content&quot;: f&quot;You are a PMO document generator. Populate the 'value' properties of this schema based on context: {json.dumps(schema)}&quot;
+        },
+        {
+            &quot;role&quot;: &quot;user&quot;,
+            &quot;content&quot;: &quot;Project: Enterprise ERP Upgrade. Budget: $2M. Sponsor: CFO. Notes: Phase 1 replaces legacy billing.&quot;
+        }
+    ]
+)
+
+# 3. Save populated JSON
+populated_data = json.loads(response.choices[0].message.content)
+with open(&quot;ERP_Project_Charter.json&quot;, &quot;w&quot;) as out:
+    json.dump(populated_data, out, indent=2)
+</code></pre>
+<hr />
+<h3 id="workflow-c-local-llm-execution-ollama-vllm">Workflow C: Local LLM Execution (Ollama / vLLM)</h3>
+<p>Run complete document generation locally and securely without external data transmission:</p>
+<pre><code class="language-bash"># Run local generation with Llama 3 or Mistral via Ollama
+ollama run llama3:70b &quot;$(cat ../../forms/en/parameters.md) $(cat ../../forms/en/05_Executing/01_Issue_Log/05_01_Issue_Log.md) Meeting notes: [insert notes]&quot; &gt; Issue_Log_Draft.md
+</code></pre>
+<hr />
+<h2 id="4-managing-lifecycle-dependencies">4. Managing Lifecycle Dependencies</h2>
+<p>Tasleemat forms are interconnected through upstream prerequisites and downstream consumers. Refer to <a href="../LEXICON.html"><code>../LEXICON.md</code></a> or section <code>### Alignment &amp; Dependencies</code> in any <code>*_Guide.md</code> before approving baselines:</p>
+<pre><code class="language-mermaid">graph TD
+    A[&quot;Business Case (PMO-01.01)&quot;] --&gt; B[&quot;Project Charter (PMO-03.01)&quot;]
+    B --&gt; C[&quot;Scope Baseline / WBS (PMO-04.02.06)&quot;]
+    B --&gt; D[&quot;Stakeholder Register (PMO-03.04)&quot;]
+    C --&gt; E[&quot;Project Schedule (PMO-04.03.08)&quot;]
+    C --&gt; F[&quot;Cost Baseline (PMO-04.04.04)&quot;]
+    E &amp; F --&gt; G[&quot;Earned Value Analysis (PMO-06.05)&quot;]
+    G --&gt; H[&quot;Project Closeout (PMO-07.03)&quot;]
+</code></pre>
+<ul>
+<li><strong>Mandatory Prerequisite:</strong> You must have an approved <strong>Project Charter (PMO-03.01)</strong> before establishing the <strong>Project Management Plan (PMO-04.01.01)</strong>.</li>
+<li><strong>Downstream Consumer:</strong> Updates to the <strong>Risk Register (PMO-04.08.02)</strong> directly feed into <strong>Risk Reports (PMO-04.08.06)</strong> and <strong>Change Requests (PMO-05.03)</strong>.</li>
+</ul>
+<hr />
+<h2 id="5-enterprise-publishing-pdf-export">5. Enterprise Publishing &amp; PDF Export</h2>
+<p>The templates in Tasleemat are engineered to render cleanly across modern Markdown viewers and export into executive PDF reports:</p>
+<h3 id="51-recommended-export-methods">5.1 Recommended Export Methods</h3>
+<ol>
+<li><strong>VS Code (Markdown PDF Extension):</strong></li>
+<li>Open any <code>_Template.md</code> or populated Markdown file.</li>
+<li>Press <code>Ctrl+Shift+P</code> (or <code>Cmd+Shift+P</code> on Mac) $\rightarrow$ <code>Markdown PDF: Export (pdf)</code>.</li>
+<li><strong>Obsidian / Logseq:</strong></li>
+<li>Open the note $\rightarrow$ Click <code>Export to PDF</code> (select standard A4 format with 1-inch margins).</li>
+<li><strong>Enterprise Wikis (Confluence / Notion):</strong></li>
+<li>Copy and paste the Markdown directly. HTML tables and headers will convert natively into rich tables.</li>
+</ol>
+<hr />
+<h2 id="6-data-analytics-dashboard-automation">6. Data Analytics &amp; Dashboard Automation</h2>
+<p>Because every form maintains an identical 4-column CSV data structure, you can aggregate and analyze project health across multiple teams in minutes:</p>
+<pre><code class="language-python">import pathlib
+import pandas as pd
+
+# Load all Arabic and English project fields into a unified DataFrame
+records = []
+for csv_file in pathlib.Path(&quot;forms&quot;).rglob(&quot;*.csv&quot;):
+    df = pd.read_csv(csv_file)
+    df[&quot;form_name&quot;] = csv_file.stem
+    df[&quot;language&quot;] = &quot;ar&quot; if &quot;ar&quot; in csv_file.parts else &quot;en&quot;
+    records.append(df)
+
+master_df = pd.concat(records, ignore_index=True)
+print(f&quot;Total PMO data fields cataloged: {len(master_df)}&quot;)
+print(master_df.head())
+</code></pre>
+<hr />
+<h2 id="7-governance-sign-off-matrix">7. Governance &amp; Sign-off Matrix</h2>
+<p>Every template concludes with an <strong>Approval and Sign-off Table</strong> tailored to the governance authority required for that document:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Document Category</th>
+<th style="text-align: left;">Primary Approver</th>
+<th style="text-align: left;">Mandatory Signatories</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Charters &amp; Strategic Baselines</strong></td>
+<td style="text-align: left;">Project Sponsor</td>
+<td style="text-align: left;">Project Sponsor, PMO Director, Project Manager</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Scope, WBS &amp; Technical Baselines</strong></td>
+<td style="text-align: left;">Lead Systems Engineer</td>
+<td style="text-align: left;">Lead Systems Engineer, Technical Architect, PM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cost &amp; Procurement Baselines</strong></td>
+<td style="text-align: left;">Finance Controller</td>
+<td style="text-align: left;">Finance Controller / CFO, Procurement Lead, PM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Quality &amp; Acceptance Records</strong></td>
+<td style="text-align: left;">QA Lead / Business Client</td>
+<td style="text-align: left;">Quality Lead, Key Stakeholder, PM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AI Governance &amp; Model Cards</strong></td>
+<td style="text-align: left;">AI Ethics Lead</td>
+<td style="text-align: left;">AI Ethics Officer, Data Protection Officer (DPO), ML Lead</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Change Control &amp; Exceptions</strong></td>
+<td style="text-align: left;">CCB Chair</td>
+<td style="text-align: left;">Change Control Board (CCB) Members, Project Sponsor</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div align="center" markdown="1">
+  <sub>For terminology translations and full index, consult <a href="../LEXICON.md"><b>../LEXICON.md</b></a>.</sub>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

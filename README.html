@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📚 Tasleemat Knowledge Base & Governance Documentation | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="./assets/custom.css">
+  <link rel="icon" type="image/png" href="./img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="./assets/tasleemat_data.js"></script>
+  <script src="./assets/search.js"></script>
+  <script src="./assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="./index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="./img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="./index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="./catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="./governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="./governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="./forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="./en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="./developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="./developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="./README.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <p align="center">
+  <img src="img/logo.png" alt="Tasleemat Logo" width="340" />
+</p>
+
+<h1 id="tasleemat-knowledge-base-governance-documentation">📚 Tasleemat Knowledge Base &amp; Governance Documentation</h1>
+<p><strong>Version:</strong> 2.0<br />
+<strong>Standard Alignment:</strong> PMI PMBOK® 6th, 7th &amp; 8th Editions • NIST AI RMF • SDAIA AI Ethics • ISO 21500  </p>
+<hr />
+<h2 id="master-documentation-directory">🧭 Master Documentation Directory</h2>
+<p>Welcome to the central documentation portal of <strong>Tasleemat (تسليمات)</strong>. Below is the curated index of practical guides, governance manuals, and integration frameworks designed to empower project practitioners, PMO directors, agile teams, and enterprise auditors.</p>
+<pre><code class="language-mermaid">flowchart TD
+    subgraph &quot;Foundation &amp; Onboarding&quot;
+        D1[&quot;01. Getting Started&quot;]
+        D2[&quot;02. Practitioner Usage Guide&quot;]
+        D3[&quot;03. PMO Policy Manual&quot;]
+    end
+
+    subgraph &quot;Governance &amp; Architecture&quot;
+        D4[&quot;04. Stage-Gates Framework&quot;]
+        D5[&quot;05. Tailoring Profiles &amp; Sizing&quot;]
+        D6[&quot;06. RACI Authority Matrix&quot;]
+        D7[&quot;07. Document Dependencies DAG&quot;]
+    end
+
+    subgraph &quot;Modern Delivery Frameworks&quot;
+        D8[&quot;08. AI Governance Framework&quot;]
+        D9[&quot;09. Agile &amp; Hybrid Integration&quot;]
+    end
+
+    subgraph &quot;Support &amp; Operations&quot;
+        D10[&quot;10. FAQ &amp; Troubleshooting&quot;]
+        D11[&quot;11. Developer Tools &amp; CI/CD&quot;]
+    end
+
+    D1 --&gt; D4
+    D4 --&gt; D5
+    D5 --&gt; D8
+    D5 --&gt; D9
+</code></pre>
+<hr />
+<h2 id="core-documentation-index">📑 Core Documentation Index</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Guide #</th>
+<th style="text-align: left;">Document Title</th>
+<th style="text-align: center;">Language</th>
+<th style="text-align: left;">Description &amp; Key Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>01</strong></td>
+<td style="text-align: left;"><a href="en/01_getting_started.html"><strong>Getting Started</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Quick-start lifecycle overview, onboarding steps from Day 1 to Day 30.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>02</strong></td>
+<td style="text-align: left;"><a href="en/02_usage_guide.html"><strong>Practitioner Usage Guide</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Field syntax, Markdown conventions, JSON/CSV integration, and authoring guidelines.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>03</strong></td>
+<td style="text-align: left;"><a href="en/03_pmo_policy_manual.html"><strong>PMO Policy Manual</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Enterprise governance mandates, change control thresholds, and audit rules.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>04</strong></td>
+<td style="text-align: left;"><a href="en/04_stage_gates_and_governance.html"><strong>Stage-Gates Framework</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">6 Stage-Gates (Gate 0 to 5), entry/exit criteria, and executive review gates.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>05</strong></td>
+<td style="text-align: left;"><a href="en/05_tailoring_profiles.html"><strong>Tailoring Profiles</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">4 project tiers (Enterprise, Medium, Agile, AI) and deliverable requirements.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>06</strong></td>
+<td style="text-align: left;"><a href="en/06_raci_authority_matrix.html"><strong>RACI Authority Matrix</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Full 114-form governance matrix defining author and approval sign-off roles.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>07</strong></td>
+<td style="text-align: left;"><a href="en/07_document_dependencies.html"><strong>Document Dependencies</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Directed acyclic graph (DAG) mapping upstream inputs to downstream outputs.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>08</strong></td>
+<td style="text-align: left;"><a href="en/08_ai_governance_framework.html"><strong>AI Governance Framework</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">AI Canvas, Model Cards, Ethics, NIST AI RMF, and MLOps monitoring.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>09</strong></td>
+<td style="text-align: left;"><a href="en/09_agile_hybrid_integration.html"><strong>Agile &amp; Hybrid Integration</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Mapping forms to Scrum/Kanban ceremonies, Flow metrics, and DoD/DoR.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: left;"><a href="en/10_faq_and_troubleshooting.html"><strong>FAQ &amp; Troubleshooting</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">25+ practical answers to governance hurdles, sizing disputes, and EVM issues.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>11</strong></td>
+<td style="text-align: left;"><a href="en/11_tools_and_automation.html"><strong>Tools &amp; Automation Guide</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Python validation suite, CI/CD pipelines, JIRA/Azure DevOps integration.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: left;"><a href="en/12_open_knowledge_framework.html"><strong>Open Knowledge Framework (OKF)</strong></a></td>
+<td style="text-align: center;">🇬🇧 EN</td>
+<td style="text-align: left;">Frictionless Data Package standard, FAIR data principles, datapackage.json.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>LEX</strong></td>
+<td style="text-align: left;"><a href="LEXICON.html"><strong>Master Lexicon &amp; Catalog</strong></a></td>
+<td style="text-align: center;">🌐 Bi</td>
+<td style="text-align: left;">Master bilingual terminology glossary and cross-reference table.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="persona-based-reading-pathways">👤 Persona-Based Reading Pathways</h2>
+<ul>
+<li><strong>For Project Managers:</strong> Start with <a href="en/01_getting_started.html"><code>01_getting_started.md</code></a> $
+ightarrow$ <a href="en/05_tailoring_profiles.html"><code>05_tailoring_profiles.md</code></a> $
+ightarrow$ <a href="en/02_usage_guide.html"><code>02_usage_guide.md</code></a>.</li>
+<li><strong>For PMO Directors &amp; Governance Leads:</strong> Read <a href="en/03_pmo_policy_manual.html"><code>03_pmo_policy_manual.md</code></a> $
+ightarrow$ <a href="en/04_stage_gates_and_governance.html"><code>04_stage_gates_and_governance.md</code></a> $
+ightarrow$ <a href="en/06_raci_authority_matrix.html"><code>06_raci_authority_matrix.md</code></a>.</li>
+<li><strong>For Scrum Masters &amp; Product Owners:</strong> Focus on <a href="en/09_agile_hybrid_integration.html"><code>09_agile_hybrid_integration.md</code></a> $
+ightarrow$ <a href="en/05_tailoring_profiles.html"><code>05_tailoring_profiles.md</code></a>.</li>
+<li><strong>For AI Engineers &amp; Tech PMs:</strong> Deep dive into <a href="en/08_ai_governance_framework.html"><code>08_ai_governance_framework.md</code></a>.</li>
+<li><strong>For DevOps &amp; Tool Admins:</strong> Explore <a href="en/11_tools_and_automation.html"><code>11_tools_and_automation.md</code></a>.</li>
+</ul>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="./catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="./governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="./governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="./developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="./developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="./index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="./governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="./developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المخرج: خطة التخصيص | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/01_خطة_التخصيص/02_01_خطة_التخصيص_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-02.01</span>
+    <span class="badge badge-phase">02. منهجية المشروع وتخصيصه</span>
+    <span class="badge badge-type">دليل إرشادي وحوكمي</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/01_خطة_التخصيص/02_01_خطة_التخصيص_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/02_Project_Approach_and_Tailoring/02_01_Tailoring_Plan_Guide.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Form
+lang: ar
+layout: default
+title: خطة التخصيص
+nav_order: 1
+token_pointer: /_tokens/forms/ar/02_منهجية_المشروع_وتخصيصه/01_خطة_التخصيص/02_01_خطة_التخصيص_دليل.npy
+token_count: 2122
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.728432+00:00'
+form_id: PMO-02.01
+status: approved</p>
+<hr />
+<div>
+
+## دليل نماذج تسليمات
+# المخرج: خطة التخصيص
+
+**مرجع الوثيقة:** `PMO-02.01`
+
+يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من **خطة التخصيص**
+واستخدامه بفعالية بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة تقرّر أي أجزاء المنهجية يخصصها المشروع وأيها يُلغى، وتذكر لكل قرار
+متطلبه القياسي وسببه ونتيجته وقابليته للعكس وأثره على المخرجات اللاحقة. وهي
+تحمل أيضًا قواعد الحوكمة: من يعتمد، ومتى تُراجَع، وكيف يُفحص الامتثال، وكيف
+يرتبط تعديلها بضبط التغيير.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن المشروع لا يتبع المنهجية أو ينحرف عنها في الحالتين، والفرق أن أحدهما
+مكتوب والآخر لا. فما يعمل خارج المنهجية دون أن يعرف أحد أنه يفعل ذلك لا يُكتشف
+إلا عند المراجعة، وحينها يكون الأثر قد استقرَّ على المخرجات. والتخصيص المكتوب
+هو ما يحوّل الانحراف من اكتشاف متأخر إلى قرار مسجَّل.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعدّ هذا المخرج ويستخدم أساسًا في مجموعة **منهجية المشروع وتخصيصه** من دورة
+حياة المشروع. يُعدّ مبكرًا مع خطة إدارة المشروع، ويُراجع كلما تغيّرت محفّزات
+المشروع أو ظهرت كلفة التخصيص، ويبقى قائمًا ما دام المشروع قائمًا لأن كل تخصيص
+جديد يُضاف إليه.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكها مدير المشروع ويعرضها على راعي المشروع عند الاعتماد.
+ويجوز أن تُفوّض صلاحية الاعتماد إلى مراقب أو لجنة معايير بحسب حجم المشروع،
+لكن فصل صاحب الخطة عن صاحب الاعتماد يجعل الخطة وصفًا للقرار لا سجلًا له.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  يجوز أن يلتقط المشروع تخصيصًا موروثًا من البرنامج بدل أن يبتدئ من الصفر،
+  لكن يلزم تسجيله في هذا المشروع بوصفه موروثًا حتى لا يُقرأ على أنه مبتدأ
+  منه ولا يظن أنه رأيه.
+*  حيث تكون المنهجية مرنة عمدًا، ينبغي كتابة المرونة بوصفها تفويضًا: من
+  يقرر، وبأي حدود، ومتى يُستشار. فالمرونة غير المحددة ليست مرونة بل فراغ.
+*  لا يلزم أن يكون لكل تغيير متطلب قياسي، فقد يكون إضافة لأمر لم تتكلم فيه
+  المنهجية. لكن يلزم عندئذٍ بيان أن الأمر جديد لا مخالف، فالجمع بين القسمين
+  دون تمييز يجعل كل إضافة تبدو انحرافًا.
+*  التخصيص الذي يغيّر وتيرة تدقيق أو صلاحية اعتماد ليس تخصيصًا بل تغيير في
+  ضابط، ويستحق مسارًا أثقل من مسار التخصيص العادي.
+*  يُفضَّل حفظ التخصيصات الملغاة في الخطة مع سبب الإلغاء، فإلغاء التخصيص
+  قرار يُتخذ كما اتُّخذ قراره، وحذفه يجعل تكرار الخطأ ممكنًا.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن تتسق خطة التخصيص مع المستندات التالية:
+*  ميثاق المشروع
+*  خطة إدارة المشروع
+*  سجل الافتراضات
+*  سجل المخاطر
+*  دليل المعايير
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإتمام **خطة التخصيص** بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية
+استنادًا إلى سياق المشروع (مع التأكد من الرجوع إلى `parameters.md`
+للمتغيرات العامة للمشروع):
+
+*  **منهجية المؤسسة:** المنهجية التي يخصص هذا المشروع منطلقًا منها، مع رقم إصدارها. والإصدار مهم لأن قرار الانحراف عن منهجية لا معنى له دون معرفة أيّها، ومشروعان يدّعيان اتباع المنهجية نفسها قد يتبعان إصدارين منها.
+*  **محفّزات التخصيص:** ما الذي يجعل هذا المشروع مختلفًا عن المعيار: الحجم، أو المخاطر، أو التعقيد، أو السياق التنظيمي، أو قيد مؤسسي. وخطة تخصيص مكتوبة دون محفّزات تسرد قرارات اعتباطية، لأن حين لا شيء يفرض تغييرًا يبدو أي تغيير معقولًا بالقدر نفسه.
+*  **المعايير المنطبقة:** معايير الحوكمة أو الجودة أو التنظيم التي تنطبق بغضّ النظر عن التخصيص ولا يمكن التصرف فيها. وهذه هي القاعدة التي يعمل التخصيص فوقها، والخطة التي لا تذكرها تدعو إلى اتخاذ قرار بحذف ضابط إلزامي باعتباره مجرد إجراء ترشيدي.
+*  **التخصيص الموروث:** أي تخصيص سبق قراره على مستوى البرنامج أو المحفظة ويفترضه هذا المشروع لا يصنعه. وأكثر الانحرافات في المشروع موروثة، والخطة التي تسجّل قراراتها وحدها توحي بأنها تتحكم في المنهجية بالكامل وهي لا تتحكم.
+*  **العملية أو المخرج:** ما الذي يجري تخصيصه، مذكورًا بقدر من التحديد يكفي للعثور عليه في المنهجية. فعبارة «عملية المخاطر» ليست قرارًا يستطيع أحد المصادقة عليه، لأن منها عدة والمصادق عليها قد لا تكون المنفَّذة.
+*  **المتطلب القياسي:** ما تشترطه المنهجية افتراضيًا، يُذكر قبل التغيير. فمن دون كتابة الافتراضي يتعذر على المعنيين أن يميز بين تخصيص خفّف متطلبًا وتخصيصًا غيّر اسمه فقط، وهو أشيع أشكال التخصيص غير المصرَّح به.
+*  **القرار:** مضاف أو محذوف أو معدَّل، وماذا يتغير بالتحديد. سجّل الأثر على العملية نفسها لا النيّة، فكلمة «مبسَّط» نيّة، وعبارة «يُستبدل المراجعة الأسبوعية للمخاطر بمراجعة كل أسبوعين» أثر.
+*  **السبب:** لماذا هذا التغيير صحيح لهذا المشروع، مربوطًا بمحفّز. والسبب الذي يصلح لأي مشروع على قدم المساواة ليس سببًا، وهو السبب المعتاد لعجز قرار تخصيص عن الصمود عند المراجعة لاحقًا.
+*  **النتيجة:** ما الذي يصعب بسبب التغيير. فكل تخصيص له كلفة، والخطة التي تسجّل ما يتحسّن فقط ملخّص نوايا، وتسجيل ما يُضحّى به هو ما يجعل القرار قابلًا للمراجعة.
+*  **قابلية العكس:** هل يمكن التراجع عن التغيير، وما الذي يستدعي عكسه. وأغلب التخصيصات قابلة للعكس من حيث المبدأ وغير قابلة للعكس من حيث الواقع، لأن الفريق يكون قد بنى طريقه حول التغيير قبل أن تظهر كلفته.
+*  **الأثر على المخرجات:** أي المخرجات اللاحقة تتغير نتيجة لذلك، كسجل المخاطر أو صيغة الجدول الزمني أو وتيرة البلاغ. والقرار الذي يغيّر عملية دون أن يغيّر المخرجات التي تنتجها يترك نسختين من الحقيقة قيد التداول.
+*  **صلاحية القرار:** من يملك صلاحية اعتماد قرار التخصيص، وعند أي مستوى يُعتمد كل صنف من التغييرات. ومن دون خريطة صلاحيات إما أن يصعّد المشروع كل شيء أو يتخذ قرارات لم يجرِّحها أحد.
+*  **المراجعة وإعادة الاعتماد:** متى تُراجَع الخطة، وما الذي يعيد فتح قرار. وقرارات التخصيص نادرًا ما تُعاد مناقشتها، فيجب أن يكون المحفّز موجودًا قبل القرار لا مُختلقًا بعد أن تظهر الكلفة.
+*  **فحص الامتثال:** كيف تُفحص الخطة مقابل المعايير المنطبقة، ومن يقوم بالفحص. والفحص الذاتي الذي يؤديه الطرف الذي أراد التغيير ليس فحصًا.
+*  **ارتباط ضبط التغيير:** كيف يُرفع التعديل اللاحق على قرار معتمد، لأن التخصيص يُعتمد بخط أساس، وأي تغيير بعده هو تغيير في الخطة لا تحديث لها.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](../../../forms/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_قالب.html)
+* [🤖 موجّه التوليد الذكي](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/01_خطة_التخصيص/02_01_خطة_التخصيص.md)
+* [📊 بنية البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/01_خطة_التخصيص/02_01_خطة_التخصيص.json)
+* [📈 البيانات الجدولية (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/02_منهجية_المشروع_وتخصيصه/01_خطة_التخصيص/02_01_خطة_التخصيص.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [02_01_خطة_التخصيص_مثال.md](../../../examples/ar/02_منهجية_المشروع_وتخصيصه/02_01_خطة_التخصيص_مثال.html)
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

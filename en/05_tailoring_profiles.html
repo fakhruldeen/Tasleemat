@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚖️ Tasleemat Project Sizing & Tailoring Profiles Guide | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../en/05_tailoring_profiles.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/05_tailoring_profiles.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/05_tailoring_profiles.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/en/05_tailoring_profiles.npy
+token_count: 2939
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.491597+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
+</p>
+
+<h1 id="tasleemat-project-sizing-tailoring-profiles-guide">⚖️ Tasleemat Project Sizing &amp; Tailoring Profiles Guide</h1>
+<p><strong>Document Reference:</strong> <code>TASLEEMAT-TAILORING-PROFILES-v2.0</code><br />
+<strong>Standard:</strong> PMI PMBOK® Guide 6th, 7th &amp; 8th Edition Standard  </p>
+<hr />
+<h2 id="executive-overview">🎯 Executive Overview</h2>
+<p>To prevent administrative bureaucracy on simple initiatives and ensure rigorous governance on critical investments, the <strong>Tasleemat Sizing and Tailoring Framework</strong> categorizes projects into <strong>3 Governance Tiers</strong> and provides <strong>4 Methodology Archetype Packs</strong>. </p>
+<p>Project Managers and PMO Directors use the <strong>Complexity Assessment Model (<code>PMO-02.02</code>)</strong> and <strong>Development Approach Assessment (<code>PMO-02.01</code>)</strong> at Gate 1 to select the minimum mandatory artifact set required for their specific project.</p>
+<pre><code class="language-mermaid">flowchart TD
+    subgraph Assessment[&quot;Gate 1: Project Categorization&quot;]
+        C1[&quot;PMO-02.02 Complexity Assessment&quot;]
+        C2[&quot;PMO-02.01 Development Approach&quot;]
+        C1 --&gt; Decision[&quot;Select Governance Tier &amp; Archetype&quot;]
+        C2 --&gt; Decision
+    end
+
+    subgraph Tiers[&quot;Governance Sizing Tiers&quot;]
+        Decision --&gt; T1[&quot;&lt;b&gt;Tier 1: Mega / Critical&lt;/b&gt;&lt;br/&gt;(&gt;$10M | 35–50 Forms)&quot;]
+        Decision --&gt; T2[&quot;&lt;b&gt;Tier 2: Standard&lt;/b&gt;&lt;br/&gt;($1M–$10M | 18–25 Forms)&quot;]
+        Decision --&gt; T3[&quot;&lt;b&gt;Tier 3: Lean / Fast-Track&lt;/b&gt;&lt;br/&gt;(&lt;$1M | 7–9 Forms)&quot;]
+    end
+
+    subgraph Packs[&quot;Methodology Archetype Packs&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P1[&quot;Agile / Scrum Pack&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P2[&quot;Predictive / EPC Pack&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P3[&quot;AI &amp; Data Product Pack&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P4[&quot;Hybrid Transformation Pack&quot;]
+    end
+</code></pre>
+<hr />
+<h2 id="the-three-project-governance-tiers">🏛️ The Three Project Governance Tiers</h2>
+<h3 id="tier-1-mega-high-complexity-projects-strategic-tier">🔴 Tier 1: Mega &amp; High-Complexity Projects (Strategic Tier)</h3>
+<ul>
+<li><strong>Profile Criteria:</strong></li>
+<li><strong>Budget:</strong> $&gt; \$10\text{M}$ (or $&gt; 40\text{M}$ SAR).</li>
+<li><strong>Duration:</strong> $&gt; 12\text{ months}$.</li>
+<li><strong>Complexity:</strong> High regulatory impact, cross-entity dependencies, multi-vendor contracting, high public exposure, or critical infrastructure impact.</li>
+<li><strong>Governance Cadence:</strong> Monthly Executive Steering Committee, bi-weekly PMO tollgates, weekly project core reviews.</li>
+<li><strong>Artifact Count:</strong> <strong>35–50 Standardized Forms</strong>.</li>
+<li><strong>Mandatory Artifact Set:</strong></li>
+<li><strong>Initiation:</strong> <code>PMO-00.06</code>, <code>PMO-01.01</code>, <code>PMO-01.02</code>, <code>PMO-03.01</code>, <code>PMO-03.04</code>, <code>PMO-03.05</code>, <code>PMO-03.03</code>.</li>
+<li><strong>Planning:</strong> Complete Project Management Plan (<code>PMO-04.01.01</code>), Scope Statement &amp; WBS (<code>PMO-04.02.05</code>/<code>06</code>), Master Schedule Baseline (<code>PMO-04.03.07</code>), Cost Baseline &amp; Reserves (<code>PMO-04.04.04</code>), Quality Plan (<code>PMO-04.05.01</code>), RACI Matrix (<code>PMO-04.06.04</code>), Communications Plan (<code>PMO-04.07.01</code>), Risk Register &amp; Quantitative Modeling (<code>PMO-04.08.02</code>/<code>04</code>/<code>07</code>), Procurement Strategy &amp; SOW (<code>PMO-04.09.02</code>/<code>04</code>), Stakeholder Engagement Plan (<code>PMO-04.10.01</code>), OCM Plan (<code>PMO-04.11.01</code>), ESG Plan (<code>PMO-04.12.01</code>).</li>
+<li><strong>Execution &amp; Control:</strong> Status Reports (<code>PMO-06.01</code>), Earned Value Analysis (<code>PMO-06.05</code>), Issue Log (<code>PMO-05.01</code>), Decision Log (<code>PMO-05.02</code>), Change Control Log (<code>PMO-05.04</code>), Quality &amp; Procurement Audits (<code>PMO-05.05</code>/<code>PMO-06.07</code>), Vendor Scorecards (<code>PMO-06.09</code>).</li>
+<li><strong>Closing:</strong> Deliverable Acceptance (<code>PMO-06.08</code>), UAT Sign-off (<code>PMO-06.10</code>), Handover Checklist (<code>PMO-07.04</code>), Contract Closeouts (<code>PMO-07.02</code>), Project Closure Report (<code>PMO-07.03</code>), Lessons Learned Summary (<code>PMO-07.01</code>), Post-Implementation Review (<code>PMO-07.05</code>), Benefits Plan (<code>PMO-01.03</code>).</li>
+</ul>
+<hr />
+<h3 id="tier-2-standard-enterprise-projects-standard-tier">🟡 Tier 2: Standard Enterprise Projects (Standard Tier)</h3>
+<ul>
+<li><strong>Profile Criteria:</strong></li>
+<li><strong>Budget:</strong> $\$1\text{M} - \$10\text{M}$ (or $4\text{M} - 40\text{M}$ SAR).</li>
+<li><strong>Duration:</strong> $3 - 12\text{ months}$.</li>
+<li><strong>Complexity:</strong> Standard organizational changes, internal systems development, moderate risk profile.</li>
+<li><strong>Governance Cadence:</strong> Bi-weekly Sponsor checkpoints, monthly PMO health checks.</li>
+<li><strong>Artifact Count:</strong> <strong>18–25 Standardized Forms</strong>.</li>
+<li><strong>Mandatory Artifact Set:</strong></li>
+<li><strong>Initiation:</strong> <code>PMO-01.01</code>, <code>PMO-03.01</code>, <code>PMO-03.04</code>, <code>PMO-03.03</code>, <code>PMO-02.01</code>.</li>
+<li><strong>Planning:</strong> Project Management Plan (<code>PMO-04.01.01</code>), Scope Baseline / WBS (<code>PMO-04.02.06</code>), Schedule Baseline (<code>PMO-04.03.07</code>), Cost Baseline (<code>PMO-04.04.04</code>), RACI Matrix (<code>PMO-04.06.04</code>), Risk Register (<code>PMO-04.08.02</code>), Communications Matrix (<code>PMO-04.07.01</code>).</li>
+<li><strong>Execution &amp; Control:</strong> Project Status Report (<code>PMO-06.01</code>), Issue Log (<code>PMO-05.01</code>), Decision Log (<code>PMO-05.02</code>), Change Log &amp; Requests (<code>PMO-05.04</code>/<code>03</code>), Variance Analysis (<code>PMO-06.04</code>).</li>
+<li><strong>Closing:</strong> UAT Sign-off (<code>PMO-06.10</code>), Deliverable Acceptance (<code>PMO-06.08</code>), Handover Checklist (<code>PMO-07.04</code>), Project Closure Report (<code>PMO-07.03</code>), Lessons Learned (<code>PMO-07.01</code>).</li>
+</ul>
+<hr />
+<h3 id="tier-3-lean-fast-track-projects-lightweight-tier">🟢 Tier 3: Lean &amp; Fast-Track Projects (Lightweight Tier)</h3>
+<ul>
+<li><strong>Profile Criteria:</strong></li>
+<li><strong>Budget:</strong> $&lt; \$1\text{M}$ (or $&lt; 4\text{M}$ SAR).</li>
+<li><strong>Duration:</strong> $&lt; 3\text{ months}$.</li>
+<li><strong>Complexity:</strong> Low technical risk, small collocated team ($&lt; 8$ members), minimal cross-departmental impact.</li>
+<li><strong>Governance Cadence:</strong> Weekly standup, milestone sign-off with Sponsor.</li>
+<li><strong>Artifact Count:</strong> <strong>7–9 Standardized Forms (Maximum Lean)</strong>.</li>
+<li><strong>Mandatory Artifact Set:</strong></li>
+<li><code>PMO-03.01</code> <strong>Project Charter (Lean):</strong> High-level objectives, timeline, budget, and single-page scope statement.</li>
+<li><code>PMO-04.02.08</code> <strong>Product Backlog / Activity List (<code>PMO-04.03.02</code>):</strong> Prioritized list of deliverable tasks and deliverables.</li>
+<li><code>PMO-04.08.02</code> <strong>Risk Register (Simplified):</strong> Top 5 risks and immediate mitigations.</li>
+<li><code>PMO-05.01</code> <strong>Issue &amp; Decision Log (<code>PMO-05.02</code>):</strong> Operational tracking of blockers and decisions.</li>
+<li><code>PMO-06.01</code> <strong>Project Status Report (One-Pager):</strong> Bi-weekly status flash for sponsor.</li>
+<li><code>PMO-06.08</code> <strong>Deliverable Acceptance Form:</strong> Formal sign-off on delivered product.</li>
+<li><code>PMO-07.04</code> <strong>Transition &amp; Handover Checklist:</strong> Verification of handoff to operations.</li>
+<li><code>PMO-07.03</code> <strong>Project Closure Summary:</strong> Final acceptance and lessons learned.</li>
+</ul>
+<hr />
+<h2 id="delivery-methodology-archetype-packs">📦 Delivery Methodology Archetype Packs</h2>
+<p>Regardless of project size, teams augment their governance tier with specific <strong>Methodology Archetype Packs</strong>:</p>
+<h3 id="1-agile-scrum-delivery-pack">1. 🏃 Agile &amp; Scrum Delivery Pack</h3>
+<ul>
+<li><strong>Best for:</strong> Web applications, mobile apps, MVP releases, iterative digital solutions.</li>
+<li><strong>Specialized Forms:</strong></li>
+<li><code>PMO-03.02</code> Product Vision</li>
+<li><code>PMO-04.02.08</code> Product Backlog</li>
+<li><code>PMO-04.02.09</code> User Story Mapping Canvas</li>
+<li><code>PMO-04.03.10</code> Sprint Planning Log</li>
+<li><code>PMO-04.05.03</code> Definition of Ready (DoR) &amp; Definition of Done (DoD)</li>
+<li><code>PMO-04.06.05</code> Team Charter &amp; Working Agreements</li>
+<li><code>PMO-05.08</code> Sprint Retrospective</li>
+<li><code>PMO-05.10</code> Impediment Log</li>
+<li><code>PMO-06.12</code> Agile Flow Metrics &amp; Cumulative Flow Diagram</li>
+</ul>
+<hr />
+<h3 id="2-predictive-epc-engineering-pack">2. 🏗️ Predictive &amp; EPC Engineering Pack</h3>
+<ul>
+<li><strong>Best for:</strong> Civil engineering, construction, physical infrastructure, industrial procurement.</li>
+<li><strong>Specialized Forms:</strong></li>
+<li><code>PMO-04.02.05</code> Detailed Project Scope Statement</li>
+<li><code>PMO-04.02.06</code> Work Breakdown Structure (WBS) &amp; Dictionary</li>
+<li><code>PMO-04.03.05</code> Schedule Network Diagram (Critical Path Method)</li>
+<li><code>PMO-04.04.04</code> Cost Baseline &amp; S-Curve Cash Flow</li>
+<li><code>PMO-04.09.02</code> Procurement Strategy &amp; RFP Packaging</li>
+<li><code>PMO-04.09.04</code> Statement of Work (SOW)</li>
+<li><code>PMO-05.05</code> Quality Audit Log</li>
+<li><code>PMO-06.05</code> Earned Value Analysis (EVM Report)</li>
+<li><code>PMO-07.02</code> Contract Closeout Report</li>
+</ul>
+<hr />
+<h3 id="3-ai-data-product-governance-pack">3. 🤖 AI &amp; Data Product Governance Pack</h3>
+<ul>
+<li><strong>Best for:</strong> Machine Learning models, LLM agents, Enterprise Data Warehouses, GenAI implementations.</li>
+<li><strong>Specialized Forms:</strong></li>
+<li><code>PMO-02.04</code> AI Canvas and Use Case Card</li>
+<li><code>PMO-02.03</code> AI Ethics and Governance Checklist</li>
+<li><code>PMO-02.06</code> Data Privacy and Ethics Assessment</li>
+<li><code>PMO-02.05</code> AI Model Card and Fact Sheet</li>
+<li><code>PMO-05.09</code> Prompt Library &amp; Prompt Engineering Log</li>
+<li><code>PMO-06.10</code> UAT Sign-off &amp; Model Performance Validation</li>
+</ul>
+<hr />
+<h3 id="4-hybrid-value-delivery-pack">4. 🌐 Hybrid Value Delivery Pack</h3>
+<ul>
+<li><strong>Best for:</strong> Enterprise ERP implementations, Core Banking replacements, Government Digital Transformation.</li>
+<li><strong>Specialized Forms:</strong> Combines Predictive Stage-Gates (0–2, 4–5) with Agile iterative execution during Stage 3 (Sprint Backlogs, Flow Metrics, Retrospectives).</li>
+</ul>
+<hr />
+<h2 id="summary-tailoring-matrix">📊 Summary Tailoring Matrix</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Project Attribute</th>
+<th style="text-align: center;">Tier 1 (Mega)</th>
+<th style="text-align: center;">Tier 2 (Standard)</th>
+<th style="text-align: center;">Tier 3 (Lean)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Budget</strong></td>
+<td style="text-align: center;">$&gt; \$10\text{M}$</td>
+<td style="text-align: center;">$\$1\text{M} - \$10\text{M}$</td>
+<td style="text-align: center;">$&lt; \$1\text{M}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Duration</strong></td>
+<td style="text-align: center;">$&gt; 12\text{ months}$</td>
+<td style="text-align: center;">$3 - 12\text{ months}$</td>
+<td style="text-align: center;">$&lt; 3\text{ months}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Form Set Size</strong></td>
+<td style="text-align: center;">35–50 Forms</td>
+<td style="text-align: center;">18–25 Forms</td>
+<td style="text-align: center;">7–9 Forms</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Steering Committee</strong></td>
+<td style="text-align: center;">Mandatory (Monthly)</td>
+<td style="text-align: center;">Optional / Ad-hoc</td>
+<td style="text-align: center;">None (Sponsor Direct)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Earned Value (EVM)</strong></td>
+<td style="text-align: center;">Mandatory (<code>PMO-06.05</code>)</td>
+<td style="text-align: center;">Recommended</td>
+<td style="text-align: center;">Optional / Variance only</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Risk Management</strong></td>
+<td style="text-align: center;">Quantitative Modeling</td>
+<td style="text-align: center;">Standard Register</td>
+<td style="text-align: center;">Top 5 Log</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Change Control</strong></td>
+<td style="text-align: center;">Formal CCB Board</td>
+<td style="text-align: center;">Sponsor Approval</td>
+<td style="text-align: center;">PM / Sponsor Verbal+Log</td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

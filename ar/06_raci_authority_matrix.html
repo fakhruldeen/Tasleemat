@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👥 مصفوفة RACI والصلاحيات والاعتماد المؤسسي لمكتب إدارة المشاريع | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/06_raci_authority_matrix.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/06_raci_authority_matrix.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/06_raci_authority_matrix.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/ar/06_raci_authority_matrix.npy
+token_count: 7331
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.227210+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+</p>
+
+<h1 id="raci">👥 مصفوفة RACI والصلاحيات والاعتماد المؤسسي لمكتب إدارة المشاريع</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>TASLEEMAT-GOVERNANCE-RACI-AR-v2.0</code><br />
+<strong>النطاق:</strong> مصفوفة الحوكمة والاعتمادات الشاملة لكافة النماذج الـ 102<br />
+<strong>المعايير:</strong> متوافق مع معايير معهد إدارة المشاريع العالمي PMI PMBOK®</p>
+<hr />
+<h2 id="_1">🎯 نظرة عامة تنفيذية</h2>
+<p>تحدد هذه المصفوفة الصلاحيات والحوكمة المؤسسية لإعداد، واعتماد، واستشارة، وإبلاغ كافة الوثائق في منظومة مكاتب إدارة المشاريع:
+* <strong>المسؤول عن الإعداد (Responsible / Author):</strong> الدور التشغيلي المكلف بصياغة الوثيقة وتحديث بياناتها.
+* <strong>المعتمد والموقع (Accountable / Sign-off Authority):</strong> السلطة التنفيذية المسؤولة نظامياً عن اعتماد الوثيقة وخط الأساس.
+* <strong>المستشار (Consulted):</strong> الخبراء والمعنيون الذين يقدمون المدخلات الفنية والتشغيلية.
+* <strong>المُبَلَّغ (Informed / Reported To):</strong> الجهات التي تتلقى التقارير والنسخ المعتمدة.</p>
+<hr />
+<h2 id="raci-102">🏛️ جدول مصفوفة الصلاحيات والحوكمة RACI (كافة الـ 102 مخرجاً)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">الرمز</th>
+<th style="text-align: left;">اسم المخرج الإداري</th>
+<th style="text-align: left;">المسؤول عن الإعداد (Author)</th>
+<th style="text-align: left;">المعتمد والموقع (Sign-off)</th>
+<th style="text-align: left;">المستشارون (Consulted)</th>
+<th style="text-align: left;">المُبَلَّغون (Informed)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.01</code></strong></td>
+<td style="text-align: left;">خارطة طريق المحفظة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.02</code></strong></td>
+<td style="text-align: left;">ميثاق البرنامج</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.03</code></strong></td>
+<td style="text-align: left;">سجل الاعتماديات المتبادلة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.04</code></strong></td>
+<td style="text-align: left;">مصفوفة سعة الموارد</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.05</code></strong></td>
+<td style="text-align: left;">تقييم نضج مكتب إدارة المشاريع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.06</code></strong></td>
+<td style="text-align: left;">مصفوفة مواءمة الأهداف والنتائج الرئيسية</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.01</code></strong></td>
+<td style="text-align: left;">دراسة الجدوى (Business Case)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.02</code></strong></td>
+<td style="text-align: left;">خطة إدارة الفوائد</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.03</code></strong></td>
+<td style="text-align: left;">سجل تحقيق القيمة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.04</code></strong></td>
+<td style="text-align: left;">تقرير تحليل الفجوات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.01</code></strong></td>
+<td style="text-align: left;">خطة التخصيص</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.02</code></strong></td>
+<td style="text-align: left;">خطة حوكمة الذكاء الاصطناعي</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.03</code></strong></td>
+<td style="text-align: left;">تقييم جاهزية الذكاء الاصطناعي</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.04</code></strong></td>
+<td style="text-align: left;">نموذج حالة استخدام الذكاء الاصطناعي</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.05</code></strong></td>
+<td style="text-align: left;">بطاقة نموذج الذكاء الاصطناعي</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.06</code></strong></td>
+<td style="text-align: left;">تقييم خصوصية البيانات وأخلاقياتها</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.01</code></strong></td>
+<td style="text-align: left;">ميثاق المشروع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.02</code></strong></td>
+<td style="text-align: left;">رؤية المنتج</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.03</code></strong></td>
+<td style="text-align: left;">سجل الافتراضات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.04</code></strong></td>
+<td style="text-align: left;">سجل المعنيين</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.05</code></strong></td>
+<td style="text-align: left;">تحليل المعنيين</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.01.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة المشروع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.01.02</code></strong></td>
+<td style="text-align: left;">خطة إدارة التغيير</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.01.03</code></strong></td>
+<td style="text-align: left;">خارطة طريق المشروع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة النطاق</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.02</code></strong></td>
+<td style="text-align: left;">خطة إدارة المتطلبات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.03</code></strong></td>
+<td style="text-align: left;">وثائق المتطلبات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.04</code></strong></td>
+<td style="text-align: left;">مصفوفة تتبع المتطلبات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.05</code></strong></td>
+<td style="text-align: left;">بيان نطاق المشروع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.06</code></strong></td>
+<td style="text-align: left;">هيكل تجزئة العمل</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.07</code></strong></td>
+<td style="text-align: left;">قاموس هيكل تجزئة العمل</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.08</code></strong></td>
+<td style="text-align: left;">قائمة تراكم المنتج (Product Backlog)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.09</code></strong></td>
+<td style="text-align: left;">نموذج تخطيط قصص المستخدم</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة الجدول الزمني</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.02</code></strong></td>
+<td style="text-align: left;">قائمة الأنشطة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.03</code></strong></td>
+<td style="text-align: left;">سمات النشاط</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.04</code></strong></td>
+<td style="text-align: left;">قائمة المعالم (Milestones)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.05</code></strong></td>
+<td style="text-align: left;">المخطط الشبكي</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.06</code></strong></td>
+<td style="text-align: left;">تقديرات المدة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.07</code></strong></td>
+<td style="text-align: left;">ورقة عمل تقدير المدة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.08</code></strong></td>
+<td style="text-align: left;">الجدول الزمني للمشروع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.09</code></strong></td>
+<td style="text-align: left;">خطة الإصدار</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.10</code></strong></td>
+<td style="text-align: left;">سجل تخطيط أسبوع العمل</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة التكلفة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.02</code></strong></td>
+<td style="text-align: left;">تقديرات التكلفة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.03</code></strong></td>
+<td style="text-align: left;">ورقة عمل تقدير التكلفة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.04</code></strong></td>
+<td style="text-align: left;">الخط المرجعي للتكلفة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.05.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة الجودة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.05.02</code></strong></td>
+<td style="text-align: left;">مقاييس الجودة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.05.03</code></strong></td>
+<td style="text-align: left;">تعريف الجاهزية والاكتمال</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة الموارد</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.02</code></strong></td>
+<td style="text-align: left;">متطلبات الموارد</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.03</code></strong></td>
+<td style="text-align: left;">هيكل تجزئة الموارد (RBS)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.04</code></strong></td>
+<td style="text-align: left;">مصفوفة تعيين المسؤوليات (RAM)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.05</code></strong></td>
+<td style="text-align: left;">ميثاق الفريق</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.06</code></strong></td>
+<td style="text-align: left;">مؤشر الأمان النفسي وصحة الفريق</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.07.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة الاتصالات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة المخاطر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.02</code></strong></td>
+<td style="text-align: left;">سجل المخاطر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.03</code></strong></td>
+<td style="text-align: left;">تقييم الاحتمالية والأثر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.04</code></strong></td>
+<td style="text-align: left;">مصفوفة الاحتمالية والأثر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.05</code></strong></td>
+<td style="text-align: left;">ورقة بيانات المخاطر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.06</code></strong></td>
+<td style="text-align: left;">تقرير المخاطر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.07</code></strong></td>
+<td style="text-align: left;">خطة عمل التخفيف من المخاطر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة المشتريات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.02</code></strong></td>
+<td style="text-align: left;">استراتيجية المشتريات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.03</code></strong></td>
+<td style="text-align: left;">معايير اختيار المصدر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.04</code></strong></td>
+<td style="text-align: left;">بيان العمل (SOW)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.05</code></strong></td>
+<td style="text-align: left;">طلب تقديم عروض (RFP)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.10.01</code></strong></td>
+<td style="text-align: left;">خطة إشراك المعنيين</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.11.01</code></strong></td>
+<td style="text-align: left;">استراتيجية وخطة إدارة التغيير المؤسسي</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.11.02</code></strong></td>
+<td style="text-align: left;">خطة وسجل التدريب</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.12.01</code></strong></td>
+<td style="text-align: left;">خطة إدارة الاستدامة والمعايير البيئية والاجتماعية والحوكمة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.01</code></strong></td>
+<td style="text-align: left;">سجل المشكلات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.02</code></strong></td>
+<td style="text-align: left;">سجل القرارات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.03</code></strong></td>
+<td style="text-align: left;">طلب تغيير</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.04</code></strong></td>
+<td style="text-align: left;">سجل التغييرات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.05</code></strong></td>
+<td style="text-align: left;">تدقيق الجودة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.06</code></strong></td>
+<td style="text-align: left;">تقييم أداء الفريق</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.07</code></strong></td>
+<td style="text-align: left;">سجل الدروس المستفادة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.08</code></strong></td>
+<td style="text-align: left;">مراجعة المرحلة (Retrospective)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.09</code></strong></td>
+<td style="text-align: left;">سجل مكتبة الأوامر (Prompts)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.10</code></strong></td>
+<td style="text-align: left;">سجل العوائق</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.11</code></strong></td>
+<td style="text-align: left;">محضر الاجتماع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.12</code></strong></td>
+<td style="text-align: left;">قائمة التحقق لتهيئة فريق العمل</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.01</code></strong></td>
+<td style="text-align: left;">تقرير حالة المشروع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.02</code></strong></td>
+<td style="text-align: left;">تقرير حالة عضو الفريق</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.03</code></strong></td>
+<td style="text-align: left;">تقرير حالة المقاول</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.04</code></strong></td>
+<td style="text-align: left;">تحليل التباين</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.05</code></strong></td>
+<td style="text-align: left;">تحليل القيمة المكتسبة (EVA)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.06</code></strong></td>
+<td style="text-align: left;">تدقيق المخاطر</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.07</code></strong></td>
+<td style="text-align: left;">تدقيق المشتريات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.08</code></strong></td>
+<td style="text-align: left;">نموذج قبول المنتج</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.09</code></strong></td>
+<td style="text-align: left;">بطاقة أداء المورد</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.10</code></strong></td>
+<td style="text-align: left;">نموذج اعتماد اختبار قبول المستخدم (UAT)</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.11</code></strong></td>
+<td style="text-align: left;">الفحص الصحي للمشروع</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.12</code></strong></td>
+<td style="text-align: left;">مقاييس التدفق وتدفق القيمة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.01</code></strong></td>
+<td style="text-align: left;">ملخص الدروس المستفادة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.02</code></strong></td>
+<td style="text-align: left;">تقرير إغلاق العقد</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.03</code></strong></td>
+<td style="text-align: left;">إغلاق المشروع أو المرحلة</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.04</code></strong></td>
+<td style="text-align: left;">قائمة التحقق للانتقال إلى العمليات</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.05</code></strong></td>
+<td style="text-align: left;">مراجعة ما بعد التنفيذ</td>
+<td style="text-align: left;">مدير المشروع / قائد الانتقال التشغيلي</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير العمليات التشغيلية</strong></td>
+<td style="text-align: left;">خبراء المجال، القادة التقنيون، فريق العمل</td>
+<td style="text-align: left;">اللجنة التوجيهية، مكتب إدارة المشاريع، أصحاب المصلحة</td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

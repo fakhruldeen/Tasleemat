@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏛️ دليل سياسات وإجراءات مكتب إدارة المشاريع المؤسسي (SOPs) | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/03_pmo_policy_manual.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/03_pmo_policy_manual.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/03_pmo_policy_manual.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/ar/03_pmo_policy_manual.npy
+token_count: 3075
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.221422+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+</p>
+
+<h1 id="sops">🏛️ دليل سياسات وإجراءات مكتب إدارة المشاريع المؤسسي (SOPs)</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>PMO-POL-MANUAL-AR-v2.0</code><br />
+<strong>المعيار:</strong> متوافق بالكامل مع معايير معهد إدارة المشاريع العالمي PMI PMBOK® الإصدارات السادس والسابع والجاهزية للإصدار الثامن<br />
+<strong>الفئات المستهدفة:</strong> الإدارة العليا، مدراء مكاتب إدارة المشاريع (PMO Directors)، مدراء المشاريع، اللجان التوجيهية، وفرق التسليم  </p>
+<hr />
+<h2 id="1">1. 📜 الغرض، النطاق والتكليف المؤسسي للحوكمة</h2>
+<h3 id="11">1.1 الغرض من الدليل</h3>
+<p>يحدد هذا الدليل إجراءات التشغيل القياسية (SOPs)، وحدود الصلاحيات، ومسارات التصعيد، وبوابات الجودة الحاكمة لكافة البرامج والمشاريع والمبادرات الاستراتيجية في المنظمة. ويربط هذا الدليل <strong>نماذج واستمارات «تسليمات» الـ 102</strong> في إطار حوكمي تشغيلي ملزم.</p>
+<h3 id="12-pmo">1.2 نطاق الحوكمة ونموذج صلاحيات PMO</h3>
+<p>يعمل مكتب إدارة المشاريع المؤسسي (PMO) بموجب <strong>تكليف حوكمي توجيهي ورقابي (Directive &amp; Controlling Mandate)</strong> مسؤول عن:
+1. <strong>تحسين ومواءمة المحفظة:</strong> مواءمة تخصيص الميزانيات مع الأهداف الاستراتيجية والنتائج الرئيسية (OKRs) للمنظمة (<code>PMO-00.06</code>).
+2. <strong>التوحيد القياسي وضمان الجودة:</strong> تطبيق المنهجيات الموحدة، وخطوط الأساس للأداء، وبوابات الجودة عبر كافة القطاعات.
+3. <strong>الشفافية والتقارير التنفيذية:</strong> توفير بيانات وتقارير دقيقة وموثوقة للإدارة العليا حول أداء الميزانيات، الجداول الزمنية، المخاطر، وتحقيق القيمة.
+4. <strong>حوكمة بوابات العبور المرحلية:</strong> إدارة مراجعات بوابات العبور والتحقق من استيفاء المعايير قبل تحرير دفعات الميزانية.</p>
+<pre><code class="language-mermaid">flowchart TD
+    Steering[&quot;&lt;b&gt;اللجنة التوجيهية التنفيذية&lt;/b&gt;&lt;br/&gt;(القرارات الاستثمارية والاستراتيجية الكبرى)&quot;]
+    PMO[&quot;&lt;b&gt;مكتب إدارة المشاريع المؤسسي (PMO)&lt;/b&gt;&lt;br/&gt;(الحوكمة، المعايير، بوابات العبور والمتابعة)&quot;]
+    PM[&quot;&lt;b&gt;مدراء المشاريع وملاك المنتجات&lt;/b&gt;&lt;br/&gt;(التنفيذ، ضبط خطوط الأساس وإصدار التقارير)&quot;]
+    Delivery[&quot;&lt;b&gt;فرق التسليم وفرق العمل التخصصية&lt;/b&gt;&lt;br/&gt;(التطوير، الاختبارات والتحول للتشغيل)&quot;]
+
+    Steering ==&gt; PMO
+    PMO ==&gt; PM
+    PM ==&gt; Delivery
+</code></pre>
+<hr />
+<h2 id="2">2. 🚪 سياسة بوابات العبور المرحلية وإطلاق دفعات الميزانية</h2>
+<h3 id="21-stage-gate-reviews">2.1 إجراءات مراجعة بوابات العبور (Stage-Gate Reviews)</h3>
+<ul>
+<li><strong>الموعد النهائي للتقديم:</strong> يجب تقديم حزمة نماذج بوابة العبور الإلزامية إلى مكتب PMO قبل <strong>5 أيام عمل</strong> من موعد اجتماع المراجعة المحدد.</li>
+<li><strong>التدقيق المبدئي للاكتمال:</strong> يجري مكتب PMO مراجعة تدقيقية للاكتمال. وفي حال وجود نقص جوهري، تُعاد الوثائق للاستكمال دون عقد اجتماع اللجنة.</li>
+<li><strong>قرارات بوابات العبور:</strong></li>
+<li><strong>الموافقة غير المشروطة (Go):</strong> استيفاء 100% من معايير البوابة؛ تحرير الميزانية والموارد للمرحلة التالية.</li>
+<li><strong>الموافقة المشروطة (Go with Conditions):</strong> وجود ملاحظات طفيفة غير حرجة؛ يُسمح ببدء المرحلة مع خطة تصحيحية محددة زمنياً ($\le 10$ أيام عمل).</li>
+<li><strong>إعادة العمل والتعليق (Hold):</strong> عدم استيفاء معايير جوهرية؛ يبقى المشروع في مرحلته الحالية حتى استكمال المتطلبات وإعادة التقديم.</li>
+<li><strong>إلغاء أو إنهاء المشروع (Kill):</strong> انتفاء الجدوى الاقتصادية، تجاوز تكلفة عدم التنفيذ، أو عدم المواءمة الاستراتيجية؛ البدء في الإغلاق الرسمي فوراً (<code>PMO-07.03</code>).</li>
+</ul>
+<pre><code class="language-mermaid">flowchart LR
+    Submit[&quot;تقديم حزمة البوابة&lt;br/&gt;(قبل 5 أيام عمل)&quot;] --&gt; Audit[&quot;تدقيق اكتمال الوثائق&lt;br/&gt;من مكتب PMO&quot;]
+    Audit --&gt; Decision{&quot;قرار مراجعة&lt;br/&gt;بوابة العبور&quot;}
+    Decision --&gt;|مكتمل| Go[&quot;&lt;b&gt;موافقة تامة&lt;/b&gt;&lt;br/&gt;تحرير الميزانية&quot;]
+    Decision --&gt;|ملاحظات طفيفة| Cond[&quot;&lt;b&gt;موافقة مشروطة&lt;/b&gt;&lt;br/&gt;تصحيح خلال 10 أيام&quot;]
+    Decision --&gt;|غير مكتمل| Hold[&quot;&lt;b&gt;تعليق وإعادة تقديم&lt;/b&gt;&lt;br/&gt;استكمال النواقص&quot;]
+    Decision --&gt;|انتفاء الجدوى| Kill[&quot;&lt;b&gt;إنهاء وإلغاء&lt;/b&gt;&lt;br/&gt;إغلاق رسمي&quot;]
+</code></pre>
+<hr />
+<h2 id="3-doa">3. 🔄 سياسة إدارة التغيير ومصفوفة تفويض الصلاحيات (DoA)</h2>
+<h3 id="31">3.1 إدارة الانحرافات وعتبات الموافقة</h3>
+<p>يجب أن تخضع أي تعديلات على نطاق المشروع، أو خط الأساس للجدول الزمني (<code>PMO-04.03.07</code>)، أو خط الأساس للتكلفة (<code>PMO-04.04.04</code>) لـ <strong>مصفوفة تفويض الصلاحيات (DoA)</strong> المعتمدة:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">مستوى التغيير</th>
+<th style="text-align: center;">انحراف الجدول الزمني (SV)</th>
+<th style="text-align: center;">انحراف التكلفة (CV)</th>
+<th style="text-align: left;">الأثر على النطاق</th>
+<th style="text-align: left;">سلطة الاعتماد المطلوبة</th>
+<th style="text-align: left;">النماذج الإلزامية</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>المستوى 1 (تغيير طفيف)</strong></td>
+<td style="text-align: center;">$&lt; \pm 5\%$ (أو $\le 5$ أيام)</td>
+<td style="text-align: center;">$&lt; \pm 5\%$ (أو $\le 100\text{k}$ ريال)</td>
+<td style="text-align: left;">لا يوجد تغيير في المخرجات التعاقدية</td>
+<td style="text-align: left;"><strong>مدير المشروع</strong></td>
+<td style="text-align: left;">تحديث سجل التغييرات <code>PMO-05.04</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>المستوى 2 (تغيير متوسط)</strong></td>
+<td style="text-align: center;">$\pm 5\% - 10\%$ (أو $\le 15$ يوماً)</td>
+<td style="text-align: center;">$\pm 5\% - 10\%$ (أو $\le 500\text{k}$ ريال)</td>
+<td style="text-align: left;">تعديل طفيف داخل حزمة العمل</td>
+<td style="text-align: left;"><strong>راعي المشروع ومدير PMO</strong></td>
+<td style="text-align: left;">طلب تغيير <code>PMO-05.03</code> + تحديث خط الأساس</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>المستوى 3 (تغيير جوهري)</strong></td>
+<td style="text-align: center;">$&gt; \pm 10\%$ (أو $&gt; 15$ يوماً)</td>
+<td style="text-align: center;">$&gt; \pm 10\%$ (أو $&gt; 500\text{k}$ ريال)</td>
+<td style="text-align: left;">إضافة/حذف مخرجات رئيسية</td>
+<td style="text-align: left;"><strong>مجلس التحكم بالتغيير (CCB) / اللجنة التوجيهية</strong></td>
+<td style="text-align: left;">اعتماد كامل من CCB + تحديث دراسة الجدوى <code>PMO-01.01</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-ccb">3.2 قواعد عمل مجلس التحكم بالتغيير (CCB)</h3>
+<ul>
+<li>يجتمع مجلس CCB بصورة دورية كل أسبوعين، أو بصورة طارئة لتغييرات المستوى الثالث الحرجة.</li>
+<li><strong>النصاب القانوني:</strong> مدير مكتب PMO (رئيساً)، راعي المشروع، المدير المالي، القائد التقني، ومسؤول العقود/القانونية (للتغييرات التعاقدية).</li>
+<li>يُحظر تماماً بدء العمل على أي تغيير في النطاق قبل صدور الموافقة الرسمية الموقعة من مجلس CCB.</li>
+</ul>
+<hr />
+<h2 id="4-sop">4. 🚨 حوكمة المخاطر وإجراءات تصعيد المشكلات (SOP)</h2>
+<h3 id="41">4.1 معايير إدارة المخاطر</h3>
+<ul>
+<li>تلتزم كافة المشاريع بتحديث <strong>سجل المخاطر (<code>PMO-04.08.02</code>)</strong> كل أسبوعين على الأقل.</li>
+<li>تُصنف المخاطر التي تبلغ درجتها المركبة (الاحتمالية $\times$ الأثر) $\ge 15$ بوصفها <strong>مخاطر مؤسسية حرجة</strong> ويجب إدراجها فوراً في التقرير التنفيذي (<code>PMO-06.01</code>).</li>
+</ul>
+<h3 id="42">4.2 مصفوفة التصعيد الزمني للمشكلات التشغيلية</h3>
+<p>عند تحول أي عائق أو خطر إلى مشكلة تشغيلية واقعة (<code>PMO-05.01</code>)، يتم اتباع مسار التصعيد الزمني الصارم:</p>
+<pre><code class="language-mermaid">flowchart TD
+    L1[&quot;&lt;b&gt;المستوى 1: فريق المشروع&lt;/b&gt;&lt;br/&gt;الحل خلال 48 ساعة&quot;] --&gt;|عدم الحل| L2[&quot;&lt;b&gt;المستوى 2: مدير المشروع ومدير الإدارة المعنية&lt;/b&gt;&lt;br/&gt;الحل خلال 5 أيام عمل&quot;]
+    L2 --&gt;|عدم الحل| L3[&quot;&lt;b&gt;المستوى 3: مدير مكتب PMO وراعي المشروع&lt;/b&gt;&lt;br/&gt;الحل خلال 10 أيام عمل&quot;]
+    L3 --&gt;|عدم الحل| L4[&quot;&lt;b&gt;المستوى 4: اللجنة التوجيهية التنفيذية&lt;/b&gt;&lt;br/&gt;تدخل استراتيجي واجتماع طارئ&quot;]
+</code></pre>
+<hr />
+<h2 id="5">5. ✅ سياسة قبول المخرجات وضمان الجودة</h2>
+<h3 id="51">5.1 معايير التحقق من الجودة</h3>
+<ul>
+<li>لا يجوز تقديم أي مخرج لاعتماد العميل أو المستفيد النهائي قبل اجتياز تدقيق الجودة الداخلي (<code>PMO-05.05</code>) واستيفاء <strong>تعريف الإنجاز النهائي DoD (<code>PMO-04.05.03</code>)</strong>.</li>
+</ul>
+<h3 id="52-uat">5.2 سياسة اختبارات قبول المستخدم (UAT)</h3>
+<ul>
+<li><strong>معايير بدء UAT:</strong> تنفيذ 100% من سيناريوهات الاختبارات الوظيفية والتكاملية، مع وجود صفر عيوب وملاحظات حرجة من الدرجة الأولى والثانية (Severity 1 &amp; 2).</li>
+<li><strong>اعتماد UAT:</strong> يتطلب توقيع <strong>نموذج اعتماد UAT (<code>PMO-06.10</code>)</strong> من منسق الاختبارات وممثل أعمال المستفيدين.</li>
+<li><strong>القبول النهائي للمخرج:</strong> يُعتمد القبول التعاقدي النهائي بموجب <strong>نموذج قبول المخرجات (<code>PMO-06.08</code>)</strong> موقعاً من المفوض الرسمي.</li>
+</ul>
+<hr />
+<h2 id="6">6. 🤝 سياسة المشتريات وحوكمة أداء الموردين</h2>
+<h3 id="61">6.1 بروتوكولات إدارة الموردين والعقود</h3>
+<ul>
+<li>تخضع جميع المشتريات الخارجية لمراجعة وتدقيق <strong>استراتيجية المشتريات (<code>PMO-04.09.02</code>)</strong> ونطاق العمل التفصيلي <strong>SOW (<code>PMO-04.09.04</code>)</strong> من قِبل مكتب PMO والإدارة القانونية.</li>
+<li><strong>بطاقات تقييم أداء الموردين (<code>PMO-06.09</code>):</strong> تقييم ربع سنوي إلزامي لجميع الموردين والاستشاريين المتعاقد معهم.</li>
+<li><strong>اعتماد المستحقات والدفعات:</strong> لا يُصرف أي مستخلص مالي لمورد دون إرفاق <strong>نموذج قبول المخرج المعتمد (<code>PMO-06.08</code>)</strong>.</li>
+</ul>
+<hr />
+<h2 id="7">7. 🗄️ الأرشفة، إدارة المعرفة وحفظ السجلات المؤسسية</h2>
+<h3 id="71">7.1 المتطلبات الإلزامية لإغلاق المشروع</h3>
+<p>لا يُعتبر المشروع مغلقاً بصورة رسمية وقانونية إلا بعد اعتماد وأرشفة الوثائق التالية:
+1. <strong>وثيقة إغلاق المشروع المعتمدة (<code>PMO-07.03</code>)</strong>.
+2. <strong>ملخص الدروس المستفادة (<code>PMO-07.01</code>)</strong> ومشاركته في قاعدة المعرفة المؤسسية لـ PMO.
+3. <strong>قائمة التحقق للتسليم التشغيلي (<code>PMO-07.04</code>)</strong> واتفاقيات مستوى الدعم (SLAs).
+4. <strong>تقرير إغلاق العقود والمشتريات (<code>PMO-07.02</code>)</strong> وتأكيد المخالصات المالية النهائية.</p>
+<h3 id="72">7.2 مدد حفظ وثائق وسجلات المشاريع</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">فئة الوثائق</th>
+<th style="text-align: center;">مدة الحفظ الإلزامية</th>
+<th style="text-align: left;">معيار الحفظ والأرشفة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>العقود، كراسات الشروط والمستخلصات المالية</strong></td>
+<td style="text-align: center;">10 سنوات</td>
+<td style="text-align: left;">أرشفة مؤسسية مشفرة (امتثال قانوني وتدقيقي)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>مواثيق المشاريع، خطوط الأساس وتقارير الإغلاق</strong></td>
+<td style="text-align: center;">7 سنوات</td>
+<td style="text-align: left;">مستودع PMO المؤسسي الدائم</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>سجلات المتابعة (المخاطر، المشكلات، القرارات، التغييرات)</strong></td>
+<td style="text-align: center;">5 سنوات</td>
+<td style="text-align: left;">أرشيف مشاريع PMO التاريخي</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>تقارير الحالة ومحاضر الاجتماعات الدورية</strong></td>
+<td style="text-align: center;">3 سنوات</td>
+<td style="text-align: left;">أرشيف بيئة العمل المشتركة للمشروع</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8">8. 🛡️ التدقيق الحوكمي والامتثال</h2>
+<ul>
+<li>يحق لمكتب إدارة المشاريع (PMO) إجراء <strong>فحص صحة مفاجئ للمشروع (<code>PMO-06.11</code>)</strong> و<strong>تدقيق جودة (<code>PMO-05.05</code>)</strong> على أي مشروع نشط في أي وقت.</li>
+<li>قد يؤدي عدم الامتثال لخطوط الأساس المعتمدة أو الامتناع عن تقديم التقارير الإلزامية إلى تجميد صلاحيات الصرف المالي للمشروع مؤقتاً.</li>
+</ul>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

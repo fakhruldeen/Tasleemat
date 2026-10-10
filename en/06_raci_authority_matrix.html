@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👥 Tasleemat Master Governance RACI & Signature Authority Matrix | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../en/06_raci_authority_matrix.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Manual</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/06_raci_authority_matrix.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/06_raci_authority_matrix.html">🇸🇦 الانتقال للنسخة العربية (Arabic Manual) →</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/en/06_raci_authority_matrix.npy
+token_count: 5584
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.499236+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
+</p>
+
+<h1 id="tasleemat-master-governance-raci-signature-authority-matrix">👥 Tasleemat Master Governance RACI &amp; Signature Authority Matrix</h1>
+<p><strong>Document Reference:</strong> <code>TASLEEMAT-GOVERNANCE-RACI-v2.0</code><br />
+<strong>Scope:</strong> Complete RACI authority framework across all 102 PMO deliverables<br />
+<strong>Standards:</strong> PMI PMBOK® 6th, 7th &amp; 8th Edition Standard Governance</p>
+<hr />
+<h2 id="executive-overview">🎯 Executive Overview</h2>
+<p>This matrix defines the governance authority and accountability for creating, approving, consulting on, and reporting every artifact across the entire project lifecycle:
+* <strong>Responsible (Prepared By / Author):</strong> The operational lead or project role accountable for drafting and maintaining the deliverable.
+* <strong>Accountable (Signed / Approved By):</strong> The executive or governing authority who formally approves and signs off on the artifact.
+* <strong>Consulted (Contributors):</strong> Subject matter experts, domain specialists, and stakeholders who provide active technical or operational input.
+* <strong>Informed (Reported To):</strong> Stakeholders and steering committees who receive published versions and status updates.</p>
+<hr />
+<h2 id="master-raci-authority-index-all-102-deliverables">🏛️ Master RACI Authority Index (All 102 Deliverables)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Code</th>
+<th style="text-align: left;">Deliverable Name</th>
+<th style="text-align: left;">Responsible (Author)</th>
+<th style="text-align: left;">Accountable (Sign-off Authority)</th>
+<th style="text-align: left;">Consulted (Contributors)</th>
+<th style="text-align: left;">Informed (Reported To)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.01</code></strong></td>
+<td style="text-align: left;">Portfolio Roadmap</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.02</code></strong></td>
+<td style="text-align: left;">Program Charter</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.03</code></strong></td>
+<td style="text-align: left;">Interdependency Register</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.04</code></strong></td>
+<td style="text-align: left;">Resource Capacity Matrix</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.05</code></strong></td>
+<td style="text-align: left;">PMO Maturity Assessment</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-00.06</code></strong></td>
+<td style="text-align: left;">OKR Alignment Matrix</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.01</code></strong></td>
+<td style="text-align: left;">Business Case</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.02</code></strong></td>
+<td style="text-align: left;">Benefits Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.03</code></strong></td>
+<td style="text-align: left;">Value Realization Register</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-01.04</code></strong></td>
+<td style="text-align: left;">Gap Analysis Report</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.01</code></strong></td>
+<td style="text-align: left;">Tailoring Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.02</code></strong></td>
+<td style="text-align: left;">AI Governance Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.03</code></strong></td>
+<td style="text-align: left;">AI Readiness Assessment</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.04</code></strong></td>
+<td style="text-align: left;">AI Use Case Canvas</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.05</code></strong></td>
+<td style="text-align: left;">AI Model Card and Fact Sheet</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-02.06</code></strong></td>
+<td style="text-align: left;">Data Privacy and Ethics Assessment</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.01</code></strong></td>
+<td style="text-align: left;">Project Charter</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.02</code></strong></td>
+<td style="text-align: left;">Product Vision</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.03</code></strong></td>
+<td style="text-align: left;">Assumption Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.04</code></strong></td>
+<td style="text-align: left;">Stakeholder Register</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-03.05</code></strong></td>
+<td style="text-align: left;">Stakeholder Analysis</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.01.01</code></strong></td>
+<td style="text-align: left;">Project Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.01.02</code></strong></td>
+<td style="text-align: left;">Change Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.01.03</code></strong></td>
+<td style="text-align: left;">Project Roadmap</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.01</code></strong></td>
+<td style="text-align: left;">Scope Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.02</code></strong></td>
+<td style="text-align: left;">Requirements Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.03</code></strong></td>
+<td style="text-align: left;">Requirements Documentation</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.04</code></strong></td>
+<td style="text-align: left;">Requirements Traceability Matrix</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.05</code></strong></td>
+<td style="text-align: left;">Project Scope Statement</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.06</code></strong></td>
+<td style="text-align: left;">Work Breakdown Structure</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.07</code></strong></td>
+<td style="text-align: left;">WBS Dictionary</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.08</code></strong></td>
+<td style="text-align: left;">Product Backlog</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.02.09</code></strong></td>
+<td style="text-align: left;">User Story Mapping Canvas</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.01</code></strong></td>
+<td style="text-align: left;">Schedule Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.02</code></strong></td>
+<td style="text-align: left;">Activity List</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.03</code></strong></td>
+<td style="text-align: left;">Activity Attributes</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.04</code></strong></td>
+<td style="text-align: left;">Milestone List</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.05</code></strong></td>
+<td style="text-align: left;">Network Diagram</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.06</code></strong></td>
+<td style="text-align: left;">Duration Estimates</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.07</code></strong></td>
+<td style="text-align: left;">Duration Estimating Worksheet</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.08</code></strong></td>
+<td style="text-align: left;">Project Schedule</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.09</code></strong></td>
+<td style="text-align: left;">Release Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.03.10</code></strong></td>
+<td style="text-align: left;">Sprint Planning Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.01</code></strong></td>
+<td style="text-align: left;">Cost Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.02</code></strong></td>
+<td style="text-align: left;">Cost Estimates</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.03</code></strong></td>
+<td style="text-align: left;">Cost Estimating Worksheet</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.04.04</code></strong></td>
+<td style="text-align: left;">Cost Baseline</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.05.01</code></strong></td>
+<td style="text-align: left;">Quality Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.05.02</code></strong></td>
+<td style="text-align: left;">Quality Metrics</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.05.03</code></strong></td>
+<td style="text-align: left;">Definition of Ready and Done</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.01</code></strong></td>
+<td style="text-align: left;">Resource Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.02</code></strong></td>
+<td style="text-align: left;">Resource Requirements</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.03</code></strong></td>
+<td style="text-align: left;">Resource Breakdown Structure</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.04</code></strong></td>
+<td style="text-align: left;">Responsibility Assignment Matrix</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.05</code></strong></td>
+<td style="text-align: left;">Team Charter</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.06.06</code></strong></td>
+<td style="text-align: left;">Team Psychological Safety and Wellbeing Index</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.07.01</code></strong></td>
+<td style="text-align: left;">Communications Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.01</code></strong></td>
+<td style="text-align: left;">Risk Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.02</code></strong></td>
+<td style="text-align: left;">Risk Register</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.03</code></strong></td>
+<td style="text-align: left;">Probability and Impact Assessment</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.04</code></strong></td>
+<td style="text-align: left;">Probability and Impact Matrix</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.05</code></strong></td>
+<td style="text-align: left;">Risk Data Sheet</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.06</code></strong></td>
+<td style="text-align: left;">Risk Report</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.08.07</code></strong></td>
+<td style="text-align: left;">Risk Mitigation Action Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.01</code></strong></td>
+<td style="text-align: left;">Procurement Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.02</code></strong></td>
+<td style="text-align: left;">Procurement Strategy</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.03</code></strong></td>
+<td style="text-align: left;">Source Selection Criteria</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.04</code></strong></td>
+<td style="text-align: left;">Statement of Work SOW</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.09.05</code></strong></td>
+<td style="text-align: left;">Request for Proposal RFP</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.10.01</code></strong></td>
+<td style="text-align: left;">Stakeholder Engagement Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.11.01</code></strong></td>
+<td style="text-align: left;">OCM Strategy and Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.11.02</code></strong></td>
+<td style="text-align: left;">Training Plan and Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-04.12.01</code></strong></td>
+<td style="text-align: left;">Sustainability and ESG Management Plan</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.01</code></strong></td>
+<td style="text-align: left;">Issue Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.02</code></strong></td>
+<td style="text-align: left;">Decision Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.03</code></strong></td>
+<td style="text-align: left;">Change Request</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.04</code></strong></td>
+<td style="text-align: left;">Change Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.05</code></strong></td>
+<td style="text-align: left;">Quality Audit</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.06</code></strong></td>
+<td style="text-align: left;">Team Performance Assessment</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.07</code></strong></td>
+<td style="text-align: left;">Lessons Learned Register</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.08</code></strong></td>
+<td style="text-align: left;">Retrospective</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.09</code></strong></td>
+<td style="text-align: left;">Prompt Library Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.10</code></strong></td>
+<td style="text-align: left;">Impediment Log</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.11</code></strong></td>
+<td style="text-align: left;">Meeting Minutes</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-05.12</code></strong></td>
+<td style="text-align: left;">Team Onboarding Checklist</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.01</code></strong></td>
+<td style="text-align: left;">Project Status Report</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.02</code></strong></td>
+<td style="text-align: left;">Team Member Status Report</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.03</code></strong></td>
+<td style="text-align: left;">Contractor Status Report</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.04</code></strong></td>
+<td style="text-align: left;">Variance Analysis</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.05</code></strong></td>
+<td style="text-align: left;">Earned Value Analysis</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.06</code></strong></td>
+<td style="text-align: left;">Risk Audit</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.07</code></strong></td>
+<td style="text-align: left;">Procurement Audit</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.08</code></strong></td>
+<td style="text-align: left;">Product Acceptance Form</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.09</code></strong></td>
+<td style="text-align: left;">Vendor Performance Scorecard</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.10</code></strong></td>
+<td style="text-align: left;">User Acceptance Testing Signoff</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.11</code></strong></td>
+<td style="text-align: left;">Project Health Check</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-06.12</code></strong></td>
+<td style="text-align: left;">Flow Metrics and Value Stream</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.01</code></strong></td>
+<td style="text-align: left;">Lessons Learned Summary</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.02</code></strong></td>
+<td style="text-align: left;">Contract Closeout Report</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.03</code></strong></td>
+<td style="text-align: left;">Project or Phase Closeout</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.04</code></strong></td>
+<td style="text-align: left;">Transition to Operations Checklist</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong><code>PMO-07.05</code></strong></td>
+<td style="text-align: left;">Post Implementation Review</td>
+<td style="text-align: left;">Project Manager / Transition Lead</td>
+<td style="text-align: left;"><strong>Project Sponsor &amp; Operations Director</strong></td>
+<td style="text-align: left;">Domain SMEs, Technical Leads, Team Leads</td>
+<td style="text-align: left;">Steering Committee, PMO, Project Stakeholders</td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

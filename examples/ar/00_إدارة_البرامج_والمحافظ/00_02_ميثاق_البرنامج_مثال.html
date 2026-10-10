@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ميثاق البرنامج | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج/00_02_ميثاق_البرنامج_مثال.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Example.html">🇬🇧 Switch to English Example (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-00.02</span>
+    <span class="badge badge-phase">00. إدارة البرامج والمحافظ</span>
+    <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill" href="../../../guides/ar/00_إدارة_البرامج_والمحافظ/00_02_ميثاق_البرنامج_دليل.html">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill active" href="#">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/examples/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج/00_02_ميثاق_البرنامج_مثال.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/00_Program_and_Portfolio_Management/00_02_Program_Charter_Example.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج/00_02_ميثاق_البرنامج_مثال.npy
+token_count: 3229
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.211180+00:00'</p>
+<hr />
+<div>
+
+# ميثاق البرنامج (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-00.02`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">برنامج البنية التحتية السحابية والخدمات الرقمية الموحدة - PGM-2026-CX</h2>
+<h1 align="center">ميثاق البرنامج</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مدير البرنامج:** م. خالد العتيبي، PgMP | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| :--- | :--- | :--- |
+
+---
+
+## 1. غرض البرنامج ومبرراته
+<!-- التغيير الذي وجود البرنامج لإحداثه، لا وصف العمل الذي سيؤديه. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به. سجل المحرّك التجاري من خارطة طريق المحفظة ليُتتبَع البرنامج إلى الاستراتيجية التي يخدمها. واذكر ما يحدث إذا لم يُنفَّذ البرنامج، فهذا هو الاختبار الذي يُقاس عليه كل ميثاق في النهاية، عادةً بعد سنوات من شخص لم يكن حاضرًا عند كتابته. -->
+
+**غرض البرنامج:** تحديث البنية التحتية والأنظمة المؤسسية وتوحيد قنوات الخدمات الرقمية.
+
+**المحرّك التجاري والتسلسل مع الاستراتيجية:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**بيان المشكلة أو الفرصة:** تشتت البيانات عبر أنظمة قديمة معزولة يؤدي إلى بطء معالجة الطلبات وارتفاع تكاليف التشغيل
+
+**عاقبة عدم التنفيذ:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**بيان رؤية البرنامج:** الوصول إلى منظومة مؤسسية ذكية ومؤتمتة بالكامل تحقق أعلى معايير الكفاءة بحلول 2028.
+
+---
+
+## 2. أهداف البرنامج
+<!-- ما يجب أن يكون عليه الحال عند نجاح البرنامج. ولكل هدف مقياس وتاريخ استحقاق، فالهدف الذي لا يمكن اختباره لا يمكن التقرير في شأنه، والذي يُبلَّغ عنه بالرأي فقط لا يميز بينه وبين التمني. وحين يكون أحد المكونات قد مُوّل قبل كتابة الميثاق، فكثيرًا ما يُكتب الهدف ليطابق المكون؛ فاحسب اتجاه هذه المطابقة، فالبرنامج الذي اشتُقّت أهدافه من مكوناته قد ورث نطاقها دون أن يختاره. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | الهدف | المقياس | تاريخ الاستحقاق | المالك | الحالة |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | التحول الرقمي والتميز التشغيلي | دقة النموذج ومطابقة البيانات >= 95% | 2026-06-30 | أ. إلينا فانس، PfMP | قيد التنفيذ |
+| REQ-02 | أتمتة العمليات وخفض التكاليف بنسبة 40% | تحقيق وفورات تشغيلية سنوية >= 3.5M ريال | 2026-09-30 | م. فيصل الحربي، PMP | مكتمل |
+| ACT-03 | تمكين اتخاذ القرار بالبيانات اللحظية | زمن استجابة للعمليات < 800 ميلي ثانية | 2026-11-30 | د. طارق المنصور، PfMP | مخطط |
+| BEN-04 | ضمان الامتثال التنظيمي والأمني بنسبة 100% | نسبة رضا المستخدمين النهائيين >= 90% | 2027-01-31 | أ. سلطان الدوسري | معتمد |
+| WBS-05 | التحول الرقمي والتميز التشغيلي | دقة النموذج ومطابقة البيانات >= 95% | 2027-03-31 | أ. إلينا فانس، PfMP | قيد التنفيذ |
+
+---
+
+## 3. مشاريع البرنامج وعملياته
+<!-- ما يتكون منه البرنامج، تمييزًا لما يجب أن يحققه. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق هو الإطار الحاكم الذي يظهر فيه ذلك قبل الالتزام بالمال لا بعده. استخدم معرّفات المكونات من خارطة طريق المحفظة ليتم ربط القائمتين. وأشر حيث يكون المكون مشتركًا مع برنامج آخر، فالمكون المُبلَّغ إلى مالكين لا يُبلَّغ إلى أيّ منهما حين يختلفان. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| معرف المكون | اسم المكون | الارتباط بالأهداف | الحالة | المالك |
+| ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | المنظومة السحابية الموحدة لتخطيط الموارد | معتمد ومطابق للمعايير القياسية لشركة القمة | قيد التنفيذ | أ. إلينا فانس، PfMP |
+| REQ-02 | أتمتة سلاسل الإمداد والمستودعات الذكية | معتمد ومطابق للمعايير القياسية لشركة القمة | مكتمل | م. فيصل الحربي، PMP |
+| ACT-03 | منصة التقارير التحليلية والذكاء المؤسسي | معتمد ومطابق للمعايير القياسية لشركة القمة | مخطط | د. طارق المنصور، PfMP |
+| BEN-04 | بوابة الخدمات الذاتية وإدارة رأس المال البشري | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد | أ. سلطان الدوسري |
+
+---
+
+## 4. منافع البرنامج
+<!-- ما يتوقع البرنامج أن ينتجه ولا ينتجه المكونات منفردة. والمنفعة التي ليس لها مستفيد محدد ليست منفعة يمكن محاسبة البرنامج عليها، والمنفعة التي ليس لها آلية تحقيق هي افتراض لا خطة: فآلية التحقيق هي التي تميز منفعة سينجزها البرنامج عن منفعة تأمل المؤسسة حدوثها. وف المنفعة المالية، فسجل متى تتحقق، وهو غالبًا بعد إغلاق المكون الذي أنشأها بوقت طويل. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| معرف المنفعة | المنفعة | التصنيف | المستفيد | آلية التحقيق | تاريخ التحقيق |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | معتمد ومطابق للمعايير القياسية لشركة القمة | تقني وتكاملي | أ. إلينا فانس، PfMP | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-06-30 |
+| REQ-02 | معتمد ومطابق للمعايير القياسية لشركة القمة | تنظيمي وتشغيلي | م. فيصل الحربي، PMP | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-09-30 |
+| ACT-03 | معتمد ومطابق للمعايير القياسية لشركة القمة | حوكمة وامتثال | د. طارق المنصور، PfMP | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-11-30 |
+| BEN-04 | معتمد ومطابق للمعايير القياسية لشركة القمة | بنية سحابية | أ. سلطان الدوسري | معتمد ومطابق للمعايير القياسية لشركة القمة | 2027-01-31 |
+
+---
+
+## 5. صلاحية مدير البرنامج وحوكمته
+<!-- ما يحق لمدير البرنامج أن يقرره، وما لا يحق له بالقدر نفسه. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع لخلو رسم الخط الذي يُتصعَّد عبره. وسمِّ مسار التصعيد، حتى لا يُتفاوض عليه لحظة الحاجة. وسجل وضع التمويل بصدق، بما فيه ما لم يُعتمد بعد: فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+**بيان صلاحية مدير البرنامج:** صلاحية إدارة وتوجيه كافة مسارات البرنامج، اعتماد المخرجات المرحلية، وتخصيص الموارد حتى 500,000 ريال.
+
+**الصلاحية المحفوظة للراعي:** مراجعة واعتماد بشري إلزامي من قِبل مدراء القطاعات المعنية لكافة العمليات الاستثنائية وذات الأثر المالي.
+
+**مجلس حوكمة البرنامج:** مراجعة واعتماد بشري إلزامي من قِبل مدراء القطاعات المعنية لكافة العمليات الاستثنائية وذات الأثر المالي.
+
+**وتيرة التقارير وجمهورها:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**مسار التصعيد:** المشرف المباشر -> مدير المشروع -> رئيس مكتب إدارة المشاريع (PMO) -> لجنة التوجيه التنفيذية.
+
+**وضع التمويل:** تمويل معتمد بالكامل من الميزانية الرأسمالية (CAPEX) للعام المالي 2026-2027.
+
+| نوع القرار | مستوى الصلاحية | مسار التصعيد | الحدود أو الشروط |
+| ---: | ---: | ---: | ---: |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | كامل الصلاحية لاعتماد ميثاق المشروع وتخصيص الميزانية والموارد المؤسسية | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | اعتماد متطلبات الأعمال وقبول التسليمات المرحلية والنهائية | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | حوكمة المنهجية واعتماد تقارير الأداء وبوابات العبور الرسمية | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+---
+
+## 6. المخاطر والافتراضات
+<!-- ما يفترضه الميثاق وما يمكن أن يفسده. وهذه بنود مستوى البرنامج؛ فمخاطر المكونات تُسجَّل في سجلات المكونات الخاصة ولا تُكرر هنا. والمخاطرة بلا مالك لا تُراقب، والافتراض بلا تاريخ مراجعة يصبح حقيقةً بالافتراض في الوقت نفسه الذي ينبغي أن يظل فيه مسائلًا. وحين لا يملك البرنامج أي احتياطي ممول، فذلك صراحةً، فالبرنامج الذي لا يتوقع أيًا منها لم يبحث ببساطة. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | النوع | الوصف | الأثر على البرنامج | المالك | تاريخ المراجعة |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | تقني وتكاملي | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | تأخير بدء اختبارات التكامل لمدة أسبوعين | أ. إلينا فانس، PfMP | 2026-06-30 |
+| REQ-02 | تنظيمي وتشغيلي | أتمتة دورة المشتريات والمستودعات والربط المباشر | إعادة جدولة نافذة الإطلاق التشغيلي التجريبي | م. فيصل الحربي، PMP | 2026-09-30 |
+| ACT-03 | حوكمة وامتثال | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | زيادة طفيفة في استهلاك ساعات الاستشارات التقنية | د. طارق المنصور، PfMP | 2026-11-30 |
+| BEN-04 | بنية سحابية | تفعيل قنوات الدعم الفني والتدريب للمستخدمين | ترحيل تاريخ التدريب للمجموعة الثانية | أ. سلطان الدوسري | 2027-01-31 |
+
+---
+
+## 7. الاستجابة عند عدم بلوغ الهدف
+<!-- ما يحدث عند عدم بلوغ هدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر في الغرفة حين يحيء الأمر، وهو عادةً أقل من يملك الوقت لذلك. وسجل ما إذا كانت الاستجابة إعادة تخطيط أم تقليص نطاق أم تمديد تاريخ أم إغلاق الهدف، ومن يتخذ ذلك القرار. أضف صفوفًا أو احذفها بحسب ما تتطلبه حوكمة البرنامج. -->
+
+**الاستجابة المحددة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**صلاحية القرار:** مراجعة واعتماد بشري إلزامي من قِبل مدراء القطاعات المعنية لكافة العمليات الاستثنائية وذات الأثر المالي.
+
+**محفِّز إعادة التقييم:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+---
+
+## 8. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير البرنامج** | م. خالد العتيبي، PgMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **راعي البرنامج** | د. منى الغامدي (نائب الرئيس التنفيذي) | [معتمد إلكترونياً] | 2026-03-18 |
+| **مالك الأعمال** | أ. سلطان الدوسري (نائب الرئيس للعمليات) | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+ <strong>النموذج:</strong> ميثاق البرنامج | <strong>المرجع:</strong> PMO-00.02 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

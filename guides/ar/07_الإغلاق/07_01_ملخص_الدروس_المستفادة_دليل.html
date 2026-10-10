@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أثر المشروع: ملخص الدروس المستفادة | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../../../assets/custom.css">
+  <link rel="icon" type="image/png" href="../../../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../../../assets/tasleemat_data.js"></script>
+  <script src="../../../assets/search.js"></script>
+  <script src="../../../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../../../README_AR.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../../../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../../../README_AR.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">الرئيسية</a>
+        <a href="../../../catalog/ar/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">كتالوج النماذج</a>
+        <a href="../../../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">بوابات العبور</a>
+        <a href="../../../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">مستويات التخصيص</a>
+        <a href="../../../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">معاينة النماذج</a>
+        <a href="../../../ar/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدلة PMO</a>
+        <a href="../../../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">أدوات المطورين</a>
+        <a href="../../../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">المعجم الموحد</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../../../index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇬🇧 English</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> التوثيق باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/01_ملخص_الدروس_المستفادة/07_01_ملخص_الدروس_المستفادة_دليل.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../../en/07_Closing/07_01_Lessons_Learned_Summary_Guide.html">🇬🇧 Switch to English Guide (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<div class="deliverable-header-card rtl-card">
+  <div class="deliverable-badge-row">
+    <span class="badge badge-code">PMO-07.01</span>
+    <span class="badge badge-phase">07. الإغلاق</span>
+    <span class="badge badge-type">دليل إرشادي وحوكمي</span>
+  </div>
+  <div class="deliverable-nav-pills">
+    <a class="nav-pill" href="../../../forms/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_قالب.html">📋 القالب الفارغ</a>
+    <a class="nav-pill active" href="#">📖 دليل الاستخدام والتحرير</a>
+    <a class="nav-pill" href="../../../examples/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_مثال.html">💡 مثال واقعي مكتمل</a>
+    <a class="nav-pill github-pill" href="https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/01_ملخص_الدروس_المستفادة/07_01_ملخص_الدروس_المستفادة_دليل.md" target="_blank" rel="noopener noreferrer">🐙 مستند GitHub ↗</a>
+    <a class="nav-pill lang-pill" href="../../en/07_Closing/07_01_Lessons_Learned_Summary_Guide.html">🇬🇧 English Version</a>
+  </div>
+</div>
+
+<hr />
+<hr />
+<p>type: Form
+lang: ar
+layout: default
+title: ملخص الدروس المستفادة
+nav_order: 1
+token_pointer: /_tokens/forms/ar/07_الإغلاق/01_ملخص_الدروس_المستفادة/07_01_ملخص_الدروس_المستفادة_دليل.npy
+token_count: 2612
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.882120+00:00'
+form_id: PMO-07.01
+status: approved</p>
+<hr />
+<div style="font-family: Arial, sans-serif; line-height: 1.6;" markdown="1">
+
+## دليل نماذج تسليمات
+# أثر المشروع: ملخص الدروس المستفادة
+
+**مرجع الوثيقة:** `PMO-07.01`
+
+توفر هذه الوثيقة مرجعًا شاملًا واحترافيًا لفهم الغرض من **ملخص الدروس
+المستفادة** واستخدامه الفعال بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة مشروع رسمية متوافقة مع تسليمات تُعرف بـ **ملخص الدروس المستفادة**،
+تُستخدم لتجميع وتنظيم ما قام به فريق المشروع ونجح إلى حد كبير وينبغي نقله
+إلى فرق المشروع الأخرى، وتحديد ما ينبغي تحسينه في أعمال المشاريع المستقبلية.
+وتغطي أداء المشروع، والمخاطر والمشكلات، وعيوب الجودة، وإدارة الموردين،
+ومجالات الأداء الاستثنائي، ومجالات التحسين.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+للحفاظ على التعلم المؤسسي حتى تستفيد المشاريع القادمة مما نجح وتتجنب ما لم
+ينجح، وضمان الالتزام بمعايير تسليمات.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعد هذا المخرج ضمن مجموعة **الإغلاق** في دورة حياة المشروع: عند إغلاق المرحلة
+في المشاريع الطويلة، وعند إغلاق المشروع في المشاريع الأقصر. وهو يدعم
+العملية 4.7 إغلاق المشروع أو المرحلة.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يُعده مدير المشروع بالتعاون مع فريق المشروع، ويُعتمد
+للاعتماد من راعي المشروع أو العميل، ويُؤرشف في مستودع الدروس المستفادة إلى
+جانب سجل الدروس المستفادة.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  أضف صفوفًا أو ادمجها أو احذفها حسب الحاجة لالتقاط جوانب مشروعك المهمة.
+*  يُنصح بإضافة قسم حول إدارة التغيير، لأنها أحيانًا جانبٌ صعب من جوانب
+  إدارة المشاريع.
+*  قد ترغب في إضافة قسم حول إدارة المرحلة إذا كنت تُعد الملخص في نهاية
+  المشروع.
+*  إدارة التكامل جانب مهم للمشاريع التي تنتمي إلى برنامج أو التي تعمل فيها
+  عدة منظمات على مشروع واحد.
+*  إذا استخدم مشروعك منهجية تطوير جديدة، مثل منهجية تجمع بين التنبؤي
+  والتكيفي (رشيقة)، ففكر في إضافة دروس مستفادة ذات صلة.
+*  يمكن أن يكون مستودع الدروس المستفادة دفترًا بسيطًا، أو قاعدة بيانات
+  قابلة للبحث، أو أي شيء بينهما.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن يكون هذا الملخص متسقًا مع الوثائق التالية:
+*  سجل المشكلات
+*  سجل المخاطر
+*  سجل القرارات
+*  سجل الدروس المستفادة
+*  مراجعات المرحلة (Retrospectives)
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإكمال **ملخص الدروس المستفادة** بشكل دقيق واحترافي، يجب على المسؤول المكلف
+تعبئة الأقسام التالية بناءً على سياق المشروع (مع التأكد من مراجعة
+`parameters.md` للتحقق من المتغيرات العامة للمشروع):
+
+*  **أداء المشروع / تعريف المتطلبات وإدارتها / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تعريف المتطلبات وإدارتها. اذكر الممارسة نفسها، لا الاجتماع الذي نُوقشت فيه.
+*  **أداء المشروع / تعريف المتطلبات وإدارتها / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تعريف المتطلبات وإدارتها، وما الذي ينبغي أن يكون التحسين.
+*  **أداء المشروع / تعريف النطاق وإدارته / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تعريف النطاق وإدارته. إذا تم الالتزام بخط الأساس، فاذكر ذلك.
+*  **أداء المشروع / تعريف النطاق وإدارته / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تعريف النطاق وإدارته.
+*  **أداء المشروع / تطوير الجدول الزمني والتحكم فيه / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تطوير الجدول الزمني والتحكم فيه.
+*  **أداء المشروع / تطوير الجدول الزمني والتحكم فيه / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تطوير الجدول الزمني والتحكم فيه.
+*  **أداء المشروع / تقدير التكلفة والتحكم فيها / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في إعداد التقديرات والتحكم في التكاليف.
+*  **أداء المشروع / تقدير التكلفة والتحكم فيها / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في إعداد التقديرات والتحكم في التكاليف.
+*  **أداء المشروع / تخطيط الجودة والتحكم فيها / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تخطيط الجودة وإدارتها والتحكم فيها.
+*  **أداء المشروع / تخطيط الجودة والتحكم فيها / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تخطيط الجودة وإدارتها والتحكم فيها. تُسجَّل عيوب الجودة تحديدًا في قسم عيوب الجودة أدناه.
+*  **أداء المشروع / تخطيط الموارد المادية والتحكم فيها / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تخطيط الموارد المادية واكتسابها وإدارتها.
+*  **أداء المشروع / تخطيط الموارد المادية والتحكم فيها / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تخطيط الموارد المادية واكتسابها وإدارتها.
+*  **أداء المشروع / تخطيط الفريق وتطويره وأداؤه / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في العمل مع أعضاء الفريق وتطويره وإدارته.
+*  **أداء المشروع / تخطيط الفريق وتطويره وأداؤه / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في العمل مع أعضاء الفريق وتطويره وإدارته.
+*  **أداء المشروع / إدارة الاتصالات / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تخطيط المعلومات وتوزيعها.
+*  **أداء المشروع / إدارة الاتصالات / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تخطيط المعلومات وتوزيعها.
+*  **أداء المشروع / التقارير / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في إعداد تقارير أداء المشروع.
+*  **أداء المشروع / التقارير / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في إعداد تقارير أداء المشروع.
+*  **أداء المشروع / إدارة المخاطر / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في عملية إدارة المخاطر. تُسجَّل المخاطر تحديدًا في قسم المخاطر والمشكلات أدناه.
+*  **أداء المشروع / إدارة المخاطر / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في عملية إدارة المخاطر. تُسجَّل المخاطر تحديدًا في قسم المخاطر والمشكلات أدناه.
+*  **أداء المشروع / تخطيط المشتريات وإدارتها / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تخطيط العقود وتنفيذها وإدارتها.
+*  **أداء المشروع / تخطيط المشتريات وإدارتها / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تخطيط العقود وتنفيذها وإدارتها.
+*  **أداء المشروع / إشراك أصحاب المصلحة / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في إشراك أصحاب المصلحة.
+*  **أداء المشروع / إشراك أصحاب المصلحة / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في إشراك أصحاب المصلحة.
+*  **أداء المشروع / معلومات تحسين العمليات / ما نجح بشكل جيد:** العمليات التي تم تطويرها وينبغي الاستمرار في تطبيقها في المشاريع القادمة.
+*  **أداء المشروع / معلومات تحسين العمليات / ما يمكن تحسينه:** العمليات التي ينبغي تغييرها أو وقفها.
+*  **أداء المشروع / معلومات خاصة بالمنتج / ما نجح بشكل جيد:** الممارسات أو الحوادث التي كانت فعّالة في تسليم المنتج أو الخدمة أو النتيجة المحددة.
+*  **أداء المشروع / معلومات خاصة بالمنتج / ما يمكن تحسينه:** الممارسات أو الحوادث التي يمكن تحسينها في تسليم المنتج أو الخدمة أو النتيجة المحددة.
+*  **أداء المشروع / أخرى / ما نجح بشكل جيد:** ممارسات أو حوادث أخرى كانت فعّالة، مثل إدارة التغيير أو إدارة التهيئة أو إدارة التكامل.
+*  **أداء المشروع / أخرى / ما يمكن تحسينه:** ممارسات أو حوادث أخرى يمكن تحسينها، مثل إدارة التغيير أو إدارة التهيئة أو إدارة التكامل.
+*  **المخاطر والمشكلات / المخاطرة أو المشكلة:** صف المخاطرة أو المشكلة التي وقعت والتي ينبغي أخذها في الاعتبار لتحسين التعلم المؤسسي.
+*  **المخاطر والمشكلات / الاستجابة:** صف الاستجابة التي تم اتخاذها وفعاليتها. واذكر بوضوح ما إذا كانت الاستجابة ناجحة.
+*  **المخاطر والمشكلات / التعليقات:** اذكر أي معلومات إضافية مطلوبة لتحسين أداء المشاريع في المستقبل.
+*  **عيوب الجودة / العيب:** صف عيب الجودة الذي ينبغي أخذه في الاعتبار لتحسين الفعالية المؤسسية.
+*  **عيوب الجودة / الحل:** صف كيف تم حل العيب وما إذا كان الحل ثابتًا.
+*  **عيوب الجودة / التعليقات:** اذكر ما ينبغي عمله لتحسين أداء المشاريع في المستقبل.
+*  **إدارة الموردين / المورد:** اذكر المورد أو الموردين المعنيين.
+*  **إدارة الموردين / المشكلة:** صف أي مشكلات أو مطالبات أو منازعات حدثت مع هذا المورد.
+*  **إدارة الموردين / الحل:** صف النتيجة أو الحل الذي تم الوصول إليه.
+*  **إدارة الموردين / التعليقات:** اذكر ما ينبغي عمله لتحسين أداء إدارة الموردين في المستقبل.
+*  **مجالات الأداء الاستثنائي / مخرج:** حدّد مجالات الأداء الاستثنائي التي يمكن نقلها إلى فرق أخرى. اذكر ما تم عمله وما جعله ناجحًا.
+*  **مجالات التحسين / مخرج:** حدّد المجالات التي يمكن تحسينها لأداء المستقبل. اذكر التحسين المطلوب، وليس المشكلة فحسب.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](../../../forms/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_قالب.html)
+* [🤖 تعليمات النموذج الذكي (LLM)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/01_ملخص_الدروس_المستفادة/07_01_ملخص_الدروس_المستفادة.md)
+* [📊 هيكل البيانات (JSON)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/01_ملخص_الدروس_المستفادة/07_01_ملخص_الدروس_المستفادة.json)
+* [📈 البيانات المجدولة (CSV)](https://github.com/fakhruldeen/Tasleemat/blob/main/forms/ar/07_الإغلاق/01_ملخص_الدروس_المستفادة/07_01_ملخص_الدروس_المستفادة.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [07_01_ملخص_الدروس_المستفادة_مثال.md](../../../examples/ar/07_الإغلاق/07_01_ملخص_الدروس_المستفادة_مثال.html)
+
+</div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../catalog/ar/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../../../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../../../README_AR.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../../../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

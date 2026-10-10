@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐 معيار مؤسسة المعرفة المفتوحة (OKF) وهيكلية مخططات JSON الرقمية | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/ar/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../developer.html#lexicon" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/12_open_knowledge_framework.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/12_open_knowledge_framework.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/12_open_knowledge_framework.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<p>type: Guide
+token_pointer: /_tokens/docs/ar/12_open_knowledge_framework.npy
+token_count: 1290
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.224180+00:00'</p>
+<hr />
+<p align="center">
+  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+</p>
+
+<hr />
+<h1 id="okf-json">🌐 معيار مؤسسة المعرفة المفتوحة (OKF) وهيكلية مخططات JSON الرقمية</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>TASLEEMAT-GUIDE-12-OPEN-KNOWLEDGE-AR</code><br />
+<strong>الإصدار:</strong> 2.0<br />
+<strong>المعايير المرجعية:</strong> معيار حزم البيانات الصادر عن مؤسسة المعرفة المفتوحة (Open Knowledge Foundation - OKF)، ومعيار JSON Schema (Draft 2020-12)، ومبادئ FAIR للبيانات المفتوحة.  </p>
+<hr />
+<h2 id="_1">🎯 نظرة عامة تنفيذية</h2>
+<p>تلتزم حزمة <strong>«تسليمات»</strong> بمواصفات حزم البيانات الصادرة عن <strong>مؤسسة المعرفة المفتوحة (OKF)</strong> بالاعتماد على <strong>مخططات JSON الرقمية القياسية</strong>؛ مما يجعلها إطار عمل مكاتب إدارة المشاريع (PMO) الأكثر ملاءمة للأتمتة ووكلاء الذكاء الاصطناعي عالمياً.</p>
+<p>من خلال توفير ملف البيان الموحد <a href="../../datapackage.json"><code>datapackage.json</code></a> في جذر المستودع، تمكّن تسليمات المطورين ووكلاء الذكاء الاصطناعي (AI Agents) ومهندسي النظم من قراءة وتدقيق واستدعاء كافة مخططات النماذج الـ 204 مباشرة عبر واجهات البرمجة (APIs) دون الحاجة إلى أي وسائط تحويل وسيطة.</p>
+<pre><code class="language-mermaid">flowchart TD
+    subgraph &quot;هيكلية حزم بيانات مؤسسة المعرفة المفتوحة&quot;
+        DP[&quot;&lt;b&gt;datapackage.json&lt;/b&gt;&lt;br/&gt;(البيان الموحد)&quot;]
+        JS[&quot;&lt;b&gt;معيار JSON Schema&lt;/b&gt;&lt;br/&gt;(الحقول المنظمة والتوجيهات والموجهات)&quot;]
+        FAIR[&quot;&lt;b&gt;مبادئ FAIR&lt;/b&gt;&lt;br/&gt;(سهولة الاكتشاف والوصول والتكامل وإعادة الاستخدام)&quot;]
+        DP --&gt; JS
+        DP --&gt; FAIR
+    end
+
+    subgraph &quot;موارد مخططات JSON في تسليمات&quot;
+        EN_RES[&quot;102 مخطط JSON إنجليزي&lt;br/&gt;(forms/en/**/*.json)&quot;]
+        AR_RES[&quot;102 مخطط JSON عربي&lt;br/&gt;(forms/ar/**/*.json)&quot;]
+        DP --&gt; EN_RES
+        DP --&gt; AR_RES
+    end
+
+    subgraph &quot;التكامل المؤسسي ووكلاء الذكاء الاصطناعي&quot;
+        V[&quot;أداة التحقق validate_okf.py&quot;]
+        LLM[&quot;استدعاء وظائف وكلاء الذكاء الاصطناعي&quot;]
+        API[&quot;واجهات البرمجة REST APIs ولوحات التحكم&quot;]
+        EN_RES &amp; AR_RES --&gt; V
+        EN_RES &amp; AR_RES --&gt; LLM
+        EN_RES &amp; AR_RES --&gt; API
+    end
+</code></pre>
+<hr />
+<h2 id="datapackagejson">📦 مواصفة ملف <code>datapackage.json</code></h2>
+<p>يقوم ملف <a href="../../datapackage.json"><code>datapackage.json</code></a> بفهرسة كافة المخططات الـ 204 كموارد JSON رقمية:</p>
+<pre><code class="language-json">{
+  &quot;profile&quot;: &quot;data-package&quot;,
+  &quot;name&quot;: &quot;tasleemat-pmo-framework&quot;,
+  &quot;title&quot;: &quot;Tasleemat: Enterprise Bilingual (English &amp; Arabic) Project Management Framework&quot;,
+  &quot;version&quot;: &quot;2.0.0&quot;,
+  &quot;licenses&quot;: [{&quot;name&quot;: &quot;MIT&quot;, &quot;path&quot;: &quot;https://opensource.org/licenses/MIT&quot;}],
+  &quot;resources&quot;: [
+    {
+      &quot;name&quot;: &quot;ar-03-01-project-charter&quot;,
+      &quot;title&quot;: &quot;ميثاق المشروع&quot;,
+      &quot;reference&quot;: &quot;PMO-03.01&quot;,
+      &quot;path&quot;: &quot;forms/ar/03_البدء/01_ميثاق_المشروع/03_01_ميثاق_المشروع.json&quot;,
+      &quot;format&quot;: &quot;json&quot;,
+      &quot;mediatype&quot;: &quot;application/json&quot;,
+      &quot;encoding&quot;: &quot;utf-8&quot;,
+      &quot;language&quot;: &quot;ar-SA&quot;,
+      &quot;direction&quot;: &quot;rtl&quot;,
+      &quot;schema&quot;: {
+        &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [&quot;form_name&quot;, &quot;document_reference&quot;, &quot;fields&quot;]
+      }
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h2 id="okf">🛠️ التحقق من الامتثال لمعايير OKF</h2>
+<p>يتضمن المستودع أداة فحص آلية مدمجة:</p>
+<pre><code class="language-bash"># تشغيل أداة التحقق لمخططات JSON
+python3 tools/validate_okf.py
+</code></pre>
+<hr />
+<h2 id="json-okf">💡 مزايا اعتماد مخططات JSON في معايير OKF</h2>
+<ol>
+<li><strong>الاستدعاء المباشر لوكلاء الذكاء الاصطناعي (Function Calling):</strong> تستخدم نماذج الذكاء الاصطناعي الحديثة مخططات JSON بشكل طبيعي لتوليد المخرجات المنسقة دون أخطاء هيكلية.</li>
+<li><strong>شجرة بيانات هرمية ومتكاملة:</strong> يحمل كل حقل خصائص <code>section</code> (القسم) و <code>label</code> (المسمى) و <code>guidance</code> (الإرشادات التفصيلية) و <code>value</code> (القيمة المستهدفة).</li>
+<li><strong>التماثل الثنائي الكامل (en / ar-SA):</strong> دعم كامل لاتجاه النص العربي (<code>rtl</code>) والترميز الموحد <code>utf-8</code> عبر كافة المخططات الـ 204.</li>
+</ol>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html#lexicon">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>
