@@ -4,17 +4,17 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://github.com/fakhruldeen/Tasleemat)
-[![Templates](https://img.shields.io/badge/Templates-102%20Bilingual%20Pairs%20(204%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat/tree/main/forms)
+[![Templates](https://img.shields.io/badge/Templates-114%20Bilingual%20Pairs%20(228%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat/tree/main/forms)
 
 **Tasleemat (تسليمات)** is a production-grade, open-source Project Management Office (PMO) operating system and Python library designed for **Project Managers, PMO Directors, Business Leaders, Data Engineers, and AI Engineers**.
 
-It provides **102 standardized, bilingual (English & Arabic) project management deliverables** (204 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
+It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
 ---
 
 ## 🌟 Core Highlights
 
-- **📚 102 Full-Lifecycle Artifacts (204 Form Bundles):** Complete 1-to-1 English and Arabic coverage across 8 lifecycle phases and 12 planning domains.
+- **📚 114 Full-Lifecycle Artifacts (228 Form Bundles):** Complete 1-to-1 English and Arabic coverage across 8 lifecycle phases and 12 planning domains.
 - **⚡ PMI PMBOK® Guide Aligned (6th, 7th & 8th Edition Ready):** Fully compliant with PMI standards, ISO 21500/21502 governance, Agile/Lean practice guides, ESG sustainability tracking, and NIST AI RMF.
 - **🤖 Built-in AI Generation Engine (`tasleemat.ai`):** Instantly auto-fill publication-ready project documents using Google Gemini, OpenAI GPT-4, Anthropic Claude, or local Ollama LLMs.
 - **📂 5-File Synchronized Artifact Bundles:** Every deliverable includes a printable Markdown template, practitioner writing guide, LLM prompt instruction, machine-readable JSON schema, and tabular CSV dictionary.
@@ -78,7 +78,7 @@ Browse and search forms by keyword or PMO form code:
 tasleemat search "Risk" --lang en
 tasleemat search "ميثاق" --lang ar
 
-# List all 102 forms in catalog
+# List all 114 forms in catalog
 tasleemat list --lang en
 ```
 
@@ -172,7 +172,7 @@ Inside every form folder (e.g., `forms/en/03_Initiating/01_Project_Charter/`), T
 
 ---
 
-## 🗺️ Project Lifecycle Overview (102 Forms)
+## 🗺️ Project Lifecycle Overview (114 Forms)
 
 | Phase Code | Phase Name | Deliverables Count | Focus Area |
 | :---: | :--- | :---: | :--- |
