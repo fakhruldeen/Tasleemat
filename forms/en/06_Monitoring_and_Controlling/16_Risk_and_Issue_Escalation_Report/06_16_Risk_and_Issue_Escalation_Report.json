@@ -1,0 +1,39 @@
+{
+    "form_name": "RISK AND ISSUE ESCALATION REPORT",
+    "document_reference": "PMO-06.16",
+    "_llm_instructions": "Populate the fields of 'RISK AND ISSUE ESCALATION REPORT' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.16.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Escalation_Trigger_and_Urgency_Classification": {
+            "section": "Escalation Event & Impact Diagnosis",
+            "label": "Escalation Trigger and Urgency Classification",
+            "guidance": "Threshold breach triggering escalation (Budget +10%, Critical Path +14 days, Contractual dispute) and urgency rating.",
+            "value": ""
+        },
+        "f02_Detailed_Context_of_Risk_or_Issue": {
+            "section": "Escalation Event & Impact Diagnosis",
+            "label": "Detailed Context of Risk or Issue",
+            "guidance": "Factual, chronological narrative of the unresolved threat or materialized impediment.",
+            "value": ""
+        },
+        "f03_Project_Impact_Analysis_Schedule_Cost_Reputation": {
+            "section": "Escalation Event & Impact Diagnosis",
+            "label": "Project Impact Analysis Schedule Cost Scope Reputation",
+            "guidance": "Quantifiable financial, milestone delay, operational, and stakeholder reputation ramifications.",
+            "value": ""
+        },
+        "f04_Evaluated_Options_and_Recommended_Course_of_Action": {
+            "section": "Options Analysis & Leadership Decision Request",
+            "label": "Evaluated Options and Recommended Course of Action",
+            "guidance": "Alternative scenarios analyzed with pros, cons, costs, and the Project Manager recommended option.",
+            "value": ""
+        },
+        "f05_Required_Executive_Intervention_and_Decision_Deadline": {
+            "section": "Options Analysis & Leadership Decision Request",
+            "label": "Required Executive Intervention and Decision Deadline",
+            "guidance": "Specific executive authority, budget release, or legal intervention required and hard deadline for decision.",
+            "value": ""
+        }
+    }
+}

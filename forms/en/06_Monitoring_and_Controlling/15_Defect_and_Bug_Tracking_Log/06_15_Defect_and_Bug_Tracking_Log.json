@@ -1,0 +1,39 @@
+{
+    "form_name": "DEFECT AND BUG TRACKING LOG",
+    "document_reference": "PMO-06.15",
+    "_llm_instructions": "Populate the fields of 'DEFECT AND BUG TRACKING LOG' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.15.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Defect_Identifier_and_Title": {
+            "section": "Defect Logging & Severity Assessment",
+            "label": "Defect Identifier and Title",
+            "guidance": "Unique defect ID, summary title, and affected component or module name.",
+            "value": ""
+        },
+        "f02_Severity_Priority_and_Business_Impact": {
+            "section": "Defect Logging & Severity Assessment",
+            "label": "Severity Priority and Business Impact",
+            "guidance": "Severity rating (Blocker, Critical, Major, Minor) and SLA turnaround requirement.",
+            "value": ""
+        },
+        "f03_Steps_to_Reproduce_and_Observed_versus_Expected": {
+            "section": "Defect Logging & Severity Assessment",
+            "label": "Steps to Reproduce and Observed versus Expected",
+            "guidance": "Detailed reproduction instructions, environment context, and expected versus actual result.",
+            "value": ""
+        },
+        "f04_Root_Cause_Diagnosis_and_Assigned_Fixer": {
+            "section": "Remediation & Re-testing Signoff",
+            "label": "Root Cause Diagnosis and Assigned Fixer",
+            "guidance": "Technical root cause classification (Code, Requirement, Environment) and assigned developer.",
+            "value": ""
+        },
+        "f05_Resolution_Status_and_QA_Retest_Signoff": {
+            "section": "Remediation & Re-testing Signoff",
+            "label": "Resolution Status and QA Retest Signoff",
+            "guidance": "Status (Open, In Fix, Retest, Verified Closed) and QA engineer verification signoff.",
+            "value": ""
+        }
+    }
+}

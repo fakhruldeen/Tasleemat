@@ -1,0 +1,39 @@
+{
+    "form_name": "MILESTONE TREND ANALYSIS AND SLIP CHART",
+    "document_reference": "PMO-06.14",
+    "_llm_instructions": "Populate the fields of 'MILESTONE TREND ANALYSIS AND SLIP CHART' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.14.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Milestone_Identifier_and_Baseline_Target_Date": {
+            "section": "Milestone Schedule & Historical Tracking",
+            "label": "Milestone Identifier and Baseline Target Date",
+            "guidance": "Milestone code, deliverable name, and original approved baseline completion date.",
+            "value": ""
+        },
+        "f02_Historical_Forecast_Trend_Data_Points": {
+            "section": "Milestone Schedule & Historical Tracking",
+            "label": "Historical Forecast Trend Data Points",
+            "guidance": "Bi-weekly or monthly sequential forecasts tracking milestone date movements over time.",
+            "value": ""
+        },
+        "f03_Current_Variance_and_Slip_Days_Calculated": {
+            "section": "Slip Analysis & Root Cause Diagnosis",
+            "label": "Current Variance and Slip Days Calculated",
+            "guidance": "Net difference in working days between current forecast and baseline date.",
+            "value": ""
+        },
+        "f04_Root_Cause_of_Schedule_Drift_and_Dependencies": {
+            "section": "Slip Analysis & Root Cause Diagnosis",
+            "label": "Root Cause of Schedule Drift and Dependencies",
+            "guidance": "Underlying drivers (supplier delay, scope change, technical hurdles) causing milestone slippage.",
+            "value": ""
+        },
+        "f05_Schedule_Recovery_Actions_and_Target_Stabilization": {
+            "section": "Corrective Recovery & Path Stabilization",
+            "label": "Schedule Recovery Actions and Target Stabilization",
+            "guidance": "Crashing, fast-tracking, or resource reallocations committed to recover milestone timing.",
+            "value": ""
+        }
+    }
+}

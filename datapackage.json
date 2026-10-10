@@ -2,7 +2,7 @@
   "profile": "data-package",
   "name": "tasleemat-pmo-framework",
   "title": "Tasleemat: Enterprise Bilingual (English & Arabic) Project Management Framework",
-  "description": "Complete open, machine-readable Project Management Office (PMO) artifact library with 102 bilingual deliverable JSON schemas conforming to PMI PMBOK® 6th, 7th & 8th Edition standards and the Open Knowledge Foundation (OKF) Frictionless Data specification.",
+  "description": "Complete open, machine-readable Project Management Office (PMO) artifact library with 114 bilingual deliverable JSON schemas conforming to PMI PMBOK® 6th, 7th & 8th Edition standards and the Open Knowledge Foundation (OKF) Frictionless Data specification.",
   "version": "2.0.0",
   "homepage": "https://github.com/fakhruldeen/Tasleemat",
   "licenses": [
@@ -3909,6 +3909,74 @@
       }
     },
     {
+      "name": "en-04_07_02_communications_distribution_matrix",
+      "title": "COMMUNICATIONS DISTRIBUTION MATRIX",
+      "reference": "PMO-04.07.02",
+      "path": "forms/en/04_Planning/07_Communications/02_Communications_Distribution_Matrix/04_07_02_Communications_Distribution_Matrix.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "en-04_08_01_risk_management_plan",
       "title": "RISK MANAGEMENT PLAN",
       "reference": "PMO-04.08.01",
@@ -4793,6 +4861,74 @@
       }
     },
     {
+      "name": "en-04_10_02_stakeholder_engagement_assessment_matrix",
+      "title": "STAKEHOLDER ENGAGEMENT ASSESSMENT MATRIX",
+      "reference": "PMO-04.10.02",
+      "path": "forms/en/04_Planning/10_Stakeholder/02_Stakeholder_Engagement_Assessment_Matrix/04_10_02_Stakeholder_Engagement_Assessment_Matrix.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "en-04_11_01_ocm_strategy_and_plan",
       "title": "OCM Strategy and Plan",
       "reference": "PMO-04.11.01",
@@ -4933,6 +5069,74 @@
       "title": "Sustainability and ESG Management Plan",
       "reference": "PMO-04.12.01",
       "path": "forms/en/04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan/04_12_01_Sustainability_and_ESG_Management_Plan.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-04_13_01_information_security_and_compliance_plan",
+      "title": "INFORMATION SECURITY AND COMPLIANCE PLAN",
+      "reference": "PMO-04.13.01",
+      "path": "forms/en/04_Planning/13_Information_Security_and_Compliance/01_Information_Security_and_Compliance_Plan/04_13_01_Information_Security_and_Compliance_Plan.json",
       "format": "json",
       "mediatype": "application/json",
       "encoding": "utf-8",
@@ -5813,6 +6017,210 @@
       }
     },
     {
+      "name": "en-05_13_action_items_log",
+      "title": "ACTION ITEMS LOG",
+      "reference": "PMO-05.13",
+      "path": "forms/en/05_Executing/13_Action_Items_Log/05_13_Action_Items_Log.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-05_14_workstream_coordination_and_standup_log",
+      "title": "WORKSTREAM COORDINATION AND STANDUP LOG",
+      "reference": "PMO-05.14",
+      "path": "forms/en/05_Executing/14_Workstream_Coordination_and_Standup_Log/05_14_Workstream_Coordination_and_Standup_Log.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-05_15_deliverable_technical_inspection_checklist",
+      "title": "DELIVERABLE TECHNICAL INSPECTION CHECKLIST",
+      "reference": "PMO-05.15",
+      "path": "forms/en/05_Executing/15_Deliverable_Technical_Inspection_Checklist/05_15_Deliverable_Technical_Inspection_Checklist.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "en-06_01_project_status_report",
       "title": "PROJECT STATUS REPORT",
       "reference": "PMO-06.01",
@@ -6629,6 +7037,278 @@
       }
     },
     {
+      "name": "en-06_13_executive_steering_committee_dashboard",
+      "title": "EXECUTIVE STEERING COMMITTEE DASHBOARD",
+      "reference": "PMO-06.13",
+      "path": "forms/en/06_Monitoring_and_Controlling/13_Executive_Steering_Committee_Dashboard/06_13_Executive_Steering_Committee_Dashboard.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-06_14_milestone_trend_analysis_and_slip_chart",
+      "title": "MILESTONE TREND ANALYSIS AND SLIP CHART",
+      "reference": "PMO-06.14",
+      "path": "forms/en/06_Monitoring_and_Controlling/14_Milestone_Trend_Analysis_and_Slip_Chart/06_14_Milestone_Trend_Analysis_and_Slip_Chart.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-06_15_defect_and_bug_tracking_log",
+      "title": "DEFECT AND BUG TRACKING LOG",
+      "reference": "PMO-06.15",
+      "path": "forms/en/06_Monitoring_and_Controlling/15_Defect_and_Bug_Tracking_Log/06_15_Defect_and_Bug_Tracking_Log.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-06_16_risk_and_issue_escalation_report",
+      "title": "RISK AND ISSUE ESCALATION REPORT",
+      "reference": "PMO-06.16",
+      "path": "forms/en/06_Monitoring_and_Controlling/16_Risk_and_Issue_Escalation_Report/06_16_Risk_and_Issue_Escalation_Report.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "en-07_01_lessons_learned_summary",
       "title": "LESSONS LEARNED SUMMARY",
       "reference": "PMO-07.01",
@@ -6905,6 +7585,142 @@
       "title": "Post-Implementation Review Report",
       "reference": "PMO-07.05",
       "path": "forms/en/07_Closing/05_Post_Implementation_Review/07_05_Post_Implementation_Review.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-07_06_knowledge_transfer_and_asset_archival_signoff",
+      "title": "KNOWLEDGE TRANSFER AND ASSET ARCHIVAL SIGNOFF",
+      "reference": "PMO-07.06",
+      "path": "forms/en/07_Closing/06_Knowledge_Transfer_and_Asset_Archival_Signoff/07_06_Knowledge_Transfer_and_Asset_Archival_Signoff.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "en",
+      "direction": "ltr",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "en-07_07_administrative_and_resource_release_form",
+      "title": "ADMINISTRATIVE AND RESOURCE RELEASE FORM",
+      "reference": "PMO-07.07",
+      "path": "forms/en/07_Closing/07_Administrative_and_Resource_Release_Form/07_07_Administrative_and_Resource_Release_Form.json",
       "format": "json",
       "mediatype": "application/json",
       "encoding": "utf-8",
@@ -10845,6 +11661,74 @@
       }
     },
     {
+      "name": "ar-04_07_02_مصفوفة_توزيع_وقنوات_التواصل",
+      "title": "مصفوفة توزيع وقنوات التواصل",
+      "reference": "PMO-04.07.02",
+      "path": "forms/ar/04_التخطيط/07_التواصل/02_مصفوفة_توزيع_وقنوات_التواصل/04_07_02_مصفوفة_توزيع_وقنوات_التواصل.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "ar-04_08_01_خطة_إدارة_المخاطر",
       "title": "خطة إدارة المخاطر",
       "reference": "PMO-04.08.01",
@@ -11729,6 +12613,74 @@
       }
     },
     {
+      "name": "ar-04_10_02_مصفوفة_تقييم_انخراط_المعنيين",
+      "title": "مصفوفة تقييم انخراط المعنيين",
+      "reference": "PMO-04.10.02",
+      "path": "forms/ar/04_التخطيط/10_المعنيين/02_مصفوفة_تقييم_انخراط_المعنيين/04_10_02_مصفوفة_تقييم_انخراط_المعنيين.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "ar-04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي",
       "title": "استراتيجية وخطة إدارة التغيير المؤسسي",
       "reference": "PMO-04.11.01",
@@ -11869,6 +12821,74 @@
       "title": "خطة إدارة الاستدامة والمعايير البيئية والاجتماعية والحوكمة",
       "reference": "PMO-04.12.01",
       "path": "forms/ar/04_التخطيط/12_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة/04_12_01_خطة_إدارة_الاستدامة_والمعايير_البيئية_والاجتماعية_والحوكمة.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي",
+      "title": "خطة أمن المعلومات والامتثال التنظيمي",
+      "reference": "PMO-04.13.01",
+      "path": "forms/ar/04_التخطيط/13_أمن_المعلومات_والامتثال/01_خطة_أمن_المعلومات_والامتثال/04_13_01_خطة_أمن_المعلومات_والامتثال_التنظيمي.json",
       "format": "json",
       "mediatype": "application/json",
       "encoding": "utf-8",
@@ -12749,6 +13769,210 @@
       }
     },
     {
+      "name": "ar-05_13_سجل_بنود_العمل_والتكليفات",
+      "title": "سجل بنود العمل والتكليفات",
+      "reference": "PMO-05.13",
+      "path": "forms/ar/05_التنفيذ/13_سجل_بنود_العمل_والتكليفات/05_13_سجل_بنود_العمل_والتكليفات.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية",
+      "title": "سجل التنسيق بين مسارات العمل واللقاءات اليومية",
+      "reference": "PMO-05.14",
+      "path": "forms/ar/05_التنفيذ/14_سجل_التنسيق_بين_فرق_العمل_والاجتماعات_اليومية/05_14_سجل_التنسيق_بين_مسارات_العمل_واللقاءات_اليومية.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-05_15_قائمة_فحص_وتثبت_المخرجات_الفنية",
+      "title": "قائمة فحص وتثبت المخرجات الفنية",
+      "reference": "PMO-05.15",
+      "path": "forms/ar/05_التنفيذ/15_قائمة_فحص_وتثبت_المخرجات_الفنية/05_15_قائمة_فحص_وتثبت_المخرجات_الفنية.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "ar-06_01_تقرير_حالة_المشروع",
       "title": "تقرير حالة المشروع",
       "reference": "PMO-06.01",
@@ -13565,6 +14789,278 @@
       }
     },
     {
+      "name": "ar-06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية",
+      "title": "لوحة معلومات اللجنة التوجيهية التنفيذية",
+      "reference": "PMO-06.13",
+      "path": "forms/ar/06_المراقبة_والتحكم/13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية/06_13_لوحة_معلومات_اللجنة_التوجيهية_التنفيذية.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني",
+      "title": "تحليل اتجاهات المعالم والانزلاق الزمني",
+      "reference": "PMO-06.14",
+      "path": "forms/ar/06_المراقبة_والتحكم/14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني/06_14_تحليل_اتجاهات_المعالم_والانزلاق_الزمني.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-06_15_سجل_تتبع_العيوب_والملاحظات",
+      "title": "سجل تتبع العيوب والملاحظات",
+      "reference": "PMO-06.15",
+      "path": "forms/ar/06_المراقبة_والتحكم/15_سجل_تتبع_العيوب_والملاحظات/06_15_سجل_تتبع_العيوب_والملاحظات.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة",
+      "title": "تقرير تصعيد المخاطر والمشكلات الحرجة",
+      "reference": "PMO-06.16",
+      "path": "forms/ar/06_المراقبة_والتحكم/16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة/06_16_تقرير_تصعيد_المخاطر_والمشكلات_الحرجة.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
       "name": "ar-07_01_ملخص_الدروس_المستفادة",
       "title": "ملخص الدروس المستفادة",
       "reference": "PMO-07.01",
@@ -13841,6 +15337,142 @@
       "title": "تقرير مراجعة ما بعد التنفيذ",
       "reference": "PMO-07.05",
       "path": "forms/ar/07_الإغلاق/05_مراجعة_ما_بعد_التنفيذ/07_05_مراجعة_ما_بعد_التنفيذ.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية",
+      "title": "محضر نقل المعرفة وأرشفة الأصول الرقمية",
+      "reference": "PMO-07.06",
+      "path": "forms/ar/07_الإغلاق/06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية/07_06_محضر_نقل_المعرفة_وأرشفة_الأصول_الرقمية.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "language": "ar-SA",
+      "direction": "rtl",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "form_name": {
+            "type": "string",
+            "description": "The official standard name of the PMO deliverable."
+          },
+          "document_reference": {
+            "type": "string",
+            "description": "Standardized PMO governance code (e.g. PMO-03.01)."
+          },
+          "_llm_instructions": {
+            "type": "string",
+            "description": "System prompt and execution instructions for AI LLM generation."
+          },
+          "project_title": {
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          "date_prepared": {
+            "type": "string",
+            "description": "ISO date of deliverable preparation."
+          },
+          "fields": {
+            "type": "object",
+            "description": "Dictionary of standardized deliverable sections, labels, guidance, and values.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "section": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section",
+                "label",
+                "guidance"
+              ]
+            }
+          }
+        },
+        "required": [
+          "form_name",
+          "document_reference",
+          "fields"
+        ]
+      }
+    },
+    {
+      "name": "ar-07_07_نموذج_إبراء_الذمة_وتسريح_الموارد",
+      "title": "نموذج إبراء الذمة وتسريح الموارد",
+      "reference": "PMO-07.07",
+      "path": "forms/ar/07_الإغلاق/07_نموذج_إبراء_الذمة_وتسريح_الموارد/07_07_نموذج_إبراء_الذمة_وتسريح_الموارد.json",
       "format": "json",
       "mediatype": "application/json",
       "encoding": "utf-8",

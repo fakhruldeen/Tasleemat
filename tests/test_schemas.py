@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for JSON Schemas and Field Data Integrity across all 204 form bundles.
+"""Tests for JSON Schemas and Field Data Integrity across all 228 form bundles.
 """
 
 import unittest
@@ -15,9 +15,9 @@ FORMS_AR = ROOT / "forms" / "ar"
 class TestSchemas(unittest.TestCase):
 
     def test_json_parse_and_top_level_keys(self):
-        """Verify all 204 JSON files parse cleanly and have required top-level keys."""
+        """Verify all 228 JSON files parse cleanly and have required top-level keys."""
         all_jsons = list(FORMS_EN.rglob("*.json")) + list(FORMS_AR.rglob("*.json"))
-        self.assertEqual(len(all_jsons), 204, f"Expected 204 JSON files, found {len(all_jsons)}")
+        self.assertEqual(len(all_jsons), 228, f"Expected 228 JSON files, found {len(all_jsons)}")
 
         for jf in all_jsons:
             try:

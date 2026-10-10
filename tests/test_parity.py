@@ -28,12 +28,12 @@ class TestBilingualParity(unittest.TestCase):
         self.assertEqual(en_prefixes, ar_prefixes)
 
     def test_form_bundle_counts(self):
-        """Verify exactly 102 form folders exist in both EN and AR."""
+        """Verify exactly 114 form folders exist in both EN and AR."""
         en_templates = list(FORMS_EN.rglob("*_Template.md"))
         ar_templates = list(FORMS_AR.rglob("*_قالب.md"))
         
-        self.assertEqual(len(en_templates), 102, f"Expected 102 EN templates, found {len(en_templates)}")
-        self.assertEqual(len(ar_templates), 102, f"Expected 102 AR templates, found {len(ar_templates)}")
+        self.assertEqual(len(en_templates), 114, f"Expected 114 EN templates, found {len(en_templates)}")
+        self.assertEqual(len(ar_templates), 114, f"Expected 114 AR templates, found {len(ar_templates)}")
 
     def test_five_file_bundle_integrity(self):
         """Verify every form folder contains all 5 required files."""
@@ -66,12 +66,12 @@ class TestBilingualParity(unittest.TestCase):
             self.assertEqual(len(csvs), 1, f"Missing Arabic CSV Dictionary in {folder}")
 
     def test_examples_symmetry(self):
-        """Verify 102 reference examples in EN match 102 in AR."""
+        """Verify 114 reference examples in EN match 114 in AR."""
         en_examples = list(EXAMPLES_EN.rglob("*_Example.md"))
         ar_examples = list(EXAMPLES_AR.rglob("*_مثال.md"))
         
-        self.assertEqual(len(en_examples), 102, f"Expected 102 EN examples, found {len(en_examples)}")
-        self.assertEqual(len(ar_examples), 102, f"Expected 102 AR examples, found {len(ar_examples)}")
+        self.assertEqual(len(en_examples), 114, f"Expected 114 EN examples, found {len(en_examples)}")
+        self.assertEqual(len(ar_examples), 114, f"Expected 114 AR examples, found {len(ar_examples)}")
 
 if __name__ == "__main__":
     unittest.main()

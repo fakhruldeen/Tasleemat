@@ -1,0 +1,39 @@
+{
+    "form_name": "EXECUTIVE STEERING COMMITTEE DASHBOARD",
+    "document_reference": "PMO-06.13",
+    "_llm_instructions": "Populate the fields of 'EXECUTIVE STEERING COMMITTEE DASHBOARD' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-06.13.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Executive_Summary_and_Overall_Health_RAG": {
+            "section": "Executive Health & Baseline Indicators",
+            "label": "Executive Summary and Overall Health RAG",
+            "guidance": "High-level synthesis of progress and overall project health color code (Red, Amber, Green).",
+            "value": ""
+        },
+        "f02_Baseline_Variance_Summary_Schedule_Cost_Scope": {
+            "section": "Executive Health & Baseline Indicators",
+            "label": "Baseline Variance Summary Schedule Cost Scope",
+            "guidance": "Quantitative variance snapshot across CPI, SPI, budget burn rate, and major milestones.",
+            "value": ""
+        },
+        "f03_Key_Milestone_Roadmap_and_Forecast_Dates": {
+            "section": "Strategic Milestones & Resource Health",
+            "label": "Key Milestone Roadmap and Forecast Dates",
+            "guidance": "Target completion versus revised forecast for the next 3 to 6 strategic stage gates.",
+            "value": ""
+        },
+        "f04_Top_Three_Strategic_Risks_and_Mitigations": {
+            "section": "Risks, Decisions & Leadership Actions",
+            "label": "Top Three Strategic Risks and Mitigations",
+            "guidance": "Highest-exposure threats with potential business impact and active contingency measures.",
+            "value": ""
+        },
+        "f05_Required_Steering_Committee_Decisions_and_Guidance": {
+            "section": "Risks, Decisions & Leadership Actions",
+            "label": "Required Steering Committee Decisions and Guidance",
+            "guidance": "Explicit governance approvals, budget reallocations, or policy waivers requested from executive sponsors.",
+            "value": ""
+        }
+    }
+}

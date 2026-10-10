@@ -1,0 +1,6 @@
+Section,Field,Guidance,LLM_Generated_Value
+Deliverable Verification & Inspection Scope,Deliverable Item and WBS Work Package,"Deliverable title, WBS code, and associated technical design specification reference.",
+Deliverable Verification & Inspection Scope,Technical Specification Compliance Verification,Objective verification criteria evaluating functional and architectural conformity.,
+Inspection Evidence & Defect Triage,Quality Criteria and Testing Protocol Results,"Automated unit test coverage, performance benchmark results, and physical inspection metrics.",
+Inspection Evidence & Defect Triage,Observed Non Conformances and Defects,"Specific defects, punch list items, or documentation discrepancies requiring rectification.",
+Verification Decision & Authorization,Technical Inspection Verdict and Formal Signoff,"Final technical recommendation: Approved for UAT, Approved with Minor punch-list, or Rejected.",

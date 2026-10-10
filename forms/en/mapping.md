@@ -88,6 +88,7 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-04.06.05** | Team Charter | `04_Planning/06_Resource/05_Team_Charter` |
 | **PMO-04.06.06** | Team Psychological Safety and Wellbeing Index | `04_Planning/06_Resource/06_Team_Psychological_Safety_and_Wellbeing_Index` |
 | **PMO-04.07.01** | Communications Management Plan | `04_Planning/07_Communications/01_Communications_Management_Plan` |
+| **PMO-04.07.02** | Communications Distribution Matrix | `04_Planning/07_Communications/02_Communications_Distribution_Matrix` |
 | **PMO-04.08.01** | Risk Management Plan | `04_Planning/08_Risk/01_Risk_Management_Plan` |
 | **PMO-04.08.02** | Risk Register | `04_Planning/08_Risk/02_Risk_Register` |
 | **PMO-04.08.03** | Probability and Impact Assessment | `04_Planning/08_Risk/03_Probability_and_Impact_Assessment` |
@@ -101,9 +102,11 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-04.09.04** | Statement of Work SOW | `04_Planning/09_Procurement/04_Statement_of_Work_SOW` |
 | **PMO-04.09.05** | Request for Proposal RFP | `04_Planning/09_Procurement/05_Request_for_Proposal_RFP` |
 | **PMO-04.10.01** | Stakeholder Engagement Plan | `04_Planning/10_Stakeholder/01_Stakeholder_Engagement_Plan` |
+| **PMO-04.10.02** | Stakeholder Engagement Assessment Matrix | `04_Planning/10_Stakeholder/02_Stakeholder_Engagement_Assessment_Matrix` |
 | **PMO-04.11.01** | OCM Strategy and Plan | `04_Planning/11_Organizational_Change_Management/01_OCM_Strategy_and_Plan` |
 | **PMO-04.11.02** | Training Plan and Log | `04_Planning/11_Organizational_Change_Management/02_Training_Plan_and_Log` |
 | **PMO-04.12.01** | Sustainability and ESG Management Plan | `04_Planning/12_Sustainability_and_ESG/01_Sustainability_and_ESG_Management_Plan` |
+| **PMO-04.13.01** | Information Security and Compliance Plan | `04_Planning/13_Information_Security_and_Compliance/01_Information_Security_and_Compliance_Plan` |
 
 ## Executing
 | Doc ID | Artifact Name | Directory Path |
@@ -120,6 +123,9 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-05.10** | Impediment Log | `05_Executing/10_Impediment_Log` |
 | **PMO-05.11** | Meeting Minutes | `05_Executing/11_Meeting_Minutes` |
 | **PMO-05.12** | Team Onboarding Checklist | `05_Executing/12_Team_Onboarding_Checklist` |
+| **PMO-05.13** | Action Items Log | `05_Executing/13_Action_Items_Log` |
+| **PMO-05.14** | Workstream Coordination and Standup Log | `05_Executing/14_Workstream_Coordination_and_Standup_Log` |
+| **PMO-05.15** | Deliverable Technical Inspection Checklist | `05_Executing/15_Deliverable_Technical_Inspection_Checklist` |
 
 ## Monitoring and Controlling
 | Doc ID | Artifact Name | Directory Path |
@@ -136,6 +142,10 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-06.10** | User Acceptance Testing Signoff | `06_Monitoring_and_Controlling/10_User_Acceptance_Testing_Signoff` |
 | **PMO-06.11** | Project Health Check Matrix | `06_Monitoring_and_Controlling/11_Project_Health_Check` |
 | **PMO-06.12** | Flow Metrics and Value Stream Dashboard | `06_Monitoring_and_Controlling/12_Flow_Metrics_and_Value_Stream` |
+| **PMO-06.13** | Executive Steering Committee Dashboard | `06_Monitoring_and_Controlling/13_Executive_Steering_Committee_Dashboard` |
+| **PMO-06.14** | Milestone Trend Analysis and Slip Chart | `06_Monitoring_and_Controlling/14_Milestone_Trend_Analysis_and_Slip_Chart` |
+| **PMO-06.15** | Defect and Bug Tracking Log | `06_Monitoring_and_Controlling/15_Defect_and_Bug_Tracking_Log` |
+| **PMO-06.16** | Risk and Issue Escalation Report | `06_Monitoring_and_Controlling/16_Risk_and_Issue_Escalation_Report` |
 
 ## Closing
 | Doc ID | Artifact Name | Directory Path |
@@ -145,4 +155,6 @@ This document is the ultimate index of all PMO artifacts, templates, and forms c
 | **PMO-07.03** | Project or Phase Closeout Report | `07_Closing/03_Project_or_Phase_Closeout` |
 | **PMO-07.04** | Transition to Operations Checklist | `07_Closing/04_Transition_to_Operations_Checklist` |
 | **PMO-07.05** | Post-Implementation Review Report | `07_Closing/05_Post_Implementation_Review` |
+| **PMO-07.06** | Knowledge Transfer and Asset Archival Signoff | `07_Closing/06_Knowledge_Transfer_and_Asset_Archival_Signoff` |
+| **PMO-07.07** | Administrative and Resource Release Form | `07_Closing/07_Administrative_and_Resource_Release_Form` |
 

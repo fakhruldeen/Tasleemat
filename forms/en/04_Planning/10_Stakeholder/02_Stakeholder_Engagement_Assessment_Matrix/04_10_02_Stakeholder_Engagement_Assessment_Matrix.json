@@ -1,0 +1,39 @@
+{
+    "form_name": "STAKEHOLDER ENGAGEMENT ASSESSMENT MATRIX",
+    "document_reference": "PMO-04.10.02",
+    "_llm_instructions": "Populate the fields of 'STAKEHOLDER ENGAGEMENT ASSESSMENT MATRIX' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.10.02.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Stakeholder_Identity_and_Project_Role": {
+            "section": "Stakeholder Classification & Engagement Gap",
+            "label": "Stakeholder Identity and Project Role",
+            "guidance": "Name, organizational entity, and specific project touchpoint role of the stakeholder.",
+            "value": ""
+        },
+        "f02_Current_versus_Desired_Engagement_Level": {
+            "section": "Stakeholder Classification & Engagement Gap",
+            "label": "Current versus Desired Engagement Level",
+            "guidance": "Assessment of current engagement (C) versus desired engagement (D): Unaware, Resistant, Neutral, Supportive, Leading.",
+            "value": ""
+        },
+        "f03_Engagement_Gap_and_Risk_Impact_Analysis": {
+            "section": "Stakeholder Classification & Engagement Gap",
+            "label": "Engagement Gap and Risk Impact Analysis",
+            "guidance": "Strategic risks and schedule or governance exposure resulting from any delta between current and desired state.",
+            "value": ""
+        },
+        "f04_Targeted_Engagement_Strategy_and_Action_Plan": {
+            "section": "Action Strategy & Monitoring Feedback",
+            "label": "Targeted Engagement Strategy and Action Plan",
+            "guidance": "Specific relationship management actions, executive touchpoints, or incentives designed to close the gap.",
+            "value": ""
+        },
+        "f05_Monitoring_Cadence_and_Feedback_Indicators": {
+            "section": "Action Strategy & Monitoring Feedback",
+            "label": "Monitoring Cadence and Feedback Indicators",
+            "guidance": "Schedule for re-assessing stakeholder sentiment and quantifiable indicators of active support.",
+            "value": ""
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "form_name": "ADMINISTRATIVE AND RESOURCE RELEASE FORM",
+    "document_reference": "PMO-07.07",
+    "_llm_instructions": "Populate the fields of 'ADMINISTRATIVE AND RESOURCE RELEASE FORM' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-07.07.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Resource_Release_Scope_and_Demobilization_Schedule": {
+            "section": "Resource Demobilization & Asset Clearance",
+            "label": "Resource Release Scope and Demobilization Schedule",
+            "guidance": "Staff members, contractors, and specialized consultants slated for scheduled release back to functional pools.",
+            "value": ""
+        },
+        "f02_Equipment_Hardware_and_Physical_Asset_Return_Log": {
+            "section": "Resource Demobilization & Asset Clearance",
+            "label": "Equipment Hardware and Physical Asset Return Log",
+            "guidance": "Inventory of laptops, test devices, security tokens, and field equipment inspected and returned.",
+            "value": ""
+        },
+        "f03_IT_Access_Revocation_and_Account_Deprovisioning": {
+            "section": "Security Deprovisioning & Financial Closure",
+            "label": "IT Access Revocation and Account Deprovisioning",
+            "guidance": "Revocation of VPN credentials, code repository commit access, cloud IAM roles, and facility badge access.",
+            "value": ""
+        },
+        "f04_Financial_Cost_Center_Closure_and_Invoice_Clearance": {
+            "section": "Security Deprovisioning & Financial Closure",
+            "label": "Financial Cost Center Closure and Invoice Clearance",
+            "guidance": "Reconciliation of expense reports, settlement of pending vendor invoices, and freezing project cost centers.",
+            "value": ""
+        },
+        "f05_HR_and_Functional_Manager_Demobilization_Signoff": {
+            "section": "Security Deprovisioning & Financial Closure",
+            "label": "HR and Functional Manager Demobilization Signoff",
+            "guidance": "Joint sign-off between Project Manager, HR, and Functional Manager releasing resource obligations.",
+            "value": ""
+        }
+    }
+}

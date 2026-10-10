@@ -1,0 +1,39 @@
+{
+    "form_name": "DELIVERABLE TECHNICAL INSPECTION CHECKLIST",
+    "document_reference": "PMO-05.15",
+    "_llm_instructions": "Populate the fields of 'DELIVERABLE TECHNICAL INSPECTION CHECKLIST' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-05.15.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Deliverable_Item_and_WBS_Work_Package": {
+            "section": "Deliverable Verification & Inspection Scope",
+            "label": "Deliverable Item and WBS Work Package",
+            "guidance": "Deliverable title, WBS code, and associated technical design specification reference.",
+            "value": ""
+        },
+        "f02_Technical_Specification_Compliance_Verification": {
+            "section": "Deliverable Verification & Inspection Scope",
+            "label": "Technical Specification Compliance Verification",
+            "guidance": "Objective verification criteria evaluating functional and architectural conformity.",
+            "value": ""
+        },
+        "f03_Quality_Criteria_and_Testing_Protocol_Results": {
+            "section": "Inspection Evidence & Defect Triage",
+            "label": "Quality Criteria and Testing Protocol Results",
+            "guidance": "Automated unit test coverage, performance benchmark results, and physical inspection metrics.",
+            "value": ""
+        },
+        "f04_Observed_Non_Conformances_and_Defects": {
+            "section": "Inspection Evidence & Defect Triage",
+            "label": "Observed Non Conformances and Defects",
+            "guidance": "Specific defects, punch list items, or documentation discrepancies requiring rectification.",
+            "value": ""
+        },
+        "f05_Technical_Inspection_Verdict_and_Formal_Signoff": {
+            "section": "Verification Decision & Authorization",
+            "label": "Technical Inspection Verdict and Formal Signoff",
+            "guidance": "Final technical recommendation: Approved for UAT, Approved with Minor punch-list, or Rejected.",
+            "value": ""
+        }
+    }
+}

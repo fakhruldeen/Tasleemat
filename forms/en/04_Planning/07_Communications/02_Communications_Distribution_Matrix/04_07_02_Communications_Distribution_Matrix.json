@@ -1,0 +1,45 @@
+{
+    "form_name": "COMMUNICATIONS DISTRIBUTION MATRIX",
+    "document_reference": "PMO-04.07.02",
+    "_llm_instructions": "Populate the fields of 'COMMUNICATIONS DISTRIBUTION MATRIX' and write the value of each field under 'Generated Value', based on the project context. Context: the project carrying reference PMO-04.07.02.",
+    "project_title": "",
+    "date_prepared": "",
+    "fields": {
+        "f01_Information_Item_and_Description": {
+            "section": "Communication Artifact & Content Details",
+            "label": "Information Item and Description",
+            "guidance": "Specific reporting artifact, dashboard, or operational update item being distributed.",
+            "value": ""
+        },
+        "f02_Target_Audience_and_Stakeholder_Tier": {
+            "section": "Communication Artifact & Content Details",
+            "label": "Target Audience and Stakeholder Tier",
+            "guidance": "Designated recipient groups, stakeholder classification, and information consumption level.",
+            "value": ""
+        },
+        "f03_Distribution_Channel_and_Delivery_Format": {
+            "section": "Channels, Protocols & Cadence",
+            "label": "Distribution Channel and Delivery Format",
+            "guidance": "Approved transmission medium (email, portal, automated webhook, executive briefing) and file format.",
+            "value": ""
+        },
+        "f04_Cadence_Trigger_and_Schedule": {
+            "section": "Channels, Protocols & Cadence",
+            "label": "Cadence Trigger and Schedule",
+            "guidance": "Recurrence frequency (weekly, monthly, sprint boundary) or specific milestone event triggers.",
+            "value": ""
+        },
+        "f05_Responsible_Sender_and_Author": {
+            "section": "Governance & Information Security",
+            "label": "Responsible Sender and Author",
+            "guidance": "Designated role or individual accountable for preparing, validating, and sending the update.",
+            "value": ""
+        },
+        "f06_Confidentiality_Classification_and_Access_Controls": {
+            "section": "Governance & Information Security",
+            "label": "Confidentiality Classification and Access Controls",
+            "guidance": "Data sensitivity level (Public, Internal, Confidential, Restricted) and access control policies.",
+            "value": ""
+        }
+    }
+}

@@ -26,9 +26,9 @@ class TestOKFDataPackage(unittest.TestCase):
         self.assertEqual(self.data["licenses"][0]["name"], "MIT")
 
     def test_resource_count_and_uniqueness(self):
-        """Verify exactly 204 unique resources exist in datapackage.json."""
+        """Verify exactly 228 unique resources exist in datapackage.json."""
         resources = self.data.get("resources", [])
-        self.assertEqual(len(resources), 204, f"Expected 204 resources, got {len(resources)}")
+        self.assertEqual(len(resources), 228, f"Expected 228 resources, got {len(resources)}")
 
         names = [r["name"] for r in resources]
         self.assertEqual(len(names), len(set(names)), "Duplicate resource names found in datapackage.json")
@@ -65,8 +65,8 @@ class TestOKFDataPackage(unittest.TestCase):
             ref = r.get("reference")
             self.assertTrue(ref.startswith("PMO-"), f"Invalid reference '{ref}' in {r.get('name')}")
 
-        self.assertEqual(en_count, 102)
-        self.assertEqual(ar_count, 102)
+        self.assertEqual(en_count, 114)
+        self.assertEqual(ar_count, 114)
 
 if __name__ == "__main__":
     unittest.main()
