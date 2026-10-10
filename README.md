@@ -128,7 +128,7 @@ Tasleemat is fully aligned with recognized international standards:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
 
 If you use Tasleemat in your PMO operations or research, please cite:
-> Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.0.2 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523
+> Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.3.0 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523
 
 This project is licensed under the **[MIT License](LICENSE)**.
 

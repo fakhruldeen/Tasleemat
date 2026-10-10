@@ -203,7 +203,7 @@ Inside every form folder (e.g., `forms/en/03_Initiating/01_Project_Charter/`), T
 - **📚 Documentation Index:** [docs/README.md](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/README.md)
 - **📚 Citation (Zenodo DOI):** [10.5281/zenodo.23193523](https://doi.org/10.5281/zenodo.23193523)
 
-> Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.2.0 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523
+> Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.3.0 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523
 
 ---
 
