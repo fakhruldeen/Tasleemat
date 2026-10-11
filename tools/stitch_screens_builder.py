@@ -1613,8 +1613,8 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
     doc_dir = "rtl" if is_ar else "ltr"
     page_title = "كتالوج النماذج والتسليمات القياسية (114 تسليمة) | مستكشف تسليمات" if is_ar else "114 Deliverables & Templates Catalog | Tasleemat PMO Explorer"
     
-    sidebar_class = "fixed right-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 border-l border-surface-container-high overflow-y-auto p-space-md" if is_ar else "fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 border-r border-surface-container-high overflow-y-auto p-space-md"
-    main_wrapper_class = "pr-64" if is_ar else "pl-64"
+    sidebar_class = "hidden lg:block fixed right-0 top-16 bottom-0 w-64 bg-surface-container-low z-30 border-l border-surface-container-high overflow-y-auto p-space-md" if is_ar else "hidden lg:block fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-30 border-r border-surface-container-high overflow-y-auto p-space-md"
+    main_wrapper_class = "lg:pr-64 w-full" if is_ar else "lg:pl-64 w-full"
 
     nav_home = f"{rel_root}README_AR.html" if is_ar else f"{rel_root}index.html"
     nav_gov = f"{rel_root}governance_ar.html" if is_ar else f"{rel_root}governance.html"
@@ -1646,7 +1646,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         ("07", "07 الإغلاق (5)" if is_ar else "07 Closing (5)"),
     ]
     phase_btns_html = "\n".join([
-        f'<button class="phase-btn {"active ring-2 ring-primary ring-offset-1" if p[0] == "all" else ""} px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap cursor-pointer {"bg-primary text-on-primary font-bold shadow-sm" if p[0] == "all" else "bg-surface-container text-on-surface hover:bg-surface-container-high"} transition-all" data-phase="{p[0]}" onclick="filterPhase(\'{p[0]}\')">{p[1]}</button>'
+        f'<button type="button" class="phase-btn {"active ring-2 ring-primary ring-offset-1" if p[0] == "all" else ""} px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap cursor-pointer relative z-10 pointer-events-auto {"bg-primary text-on-primary font-bold shadow-sm" if p[0] == "all" else "bg-surface-container text-on-surface hover:bg-surface-container-high"} transition-all" data-phase="{p[0]}" onclick="filterPhase(\'{p[0]}\')">{p[1]}</button>'
         for p in phase_btns
     ])
 
@@ -1658,7 +1658,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         ("t4", "المستوى 4: مرن / ذكاء اصطناعي (32)" if is_ar else "Tier 4: Agile/AI (32)"),
     ]
     tier_btns_html = "\n".join([
-        f'<button class="tier-btn {"active ring-2 ring-secondary ring-offset-1" if t[0] == "all" else ""} px-2.5 py-1 rounded text-badge-caps font-badge-caps cursor-pointer {"bg-secondary text-on-secondary font-bold shadow-sm" if t[0] == "all" else "bg-surface-container text-on-surface hover:bg-surface-container-high"} transition-all" data-tier="{t[0]}" onclick="filterTier(\'{t[0]}\')">{t[1]}</button>'
+        f'<button type="button" class="tier-btn {"active ring-2 ring-secondary ring-offset-1" if t[0] == "all" else ""} px-2.5 py-1 rounded text-badge-caps font-badge-caps cursor-pointer relative z-10 pointer-events-auto {"bg-secondary text-on-secondary font-bold shadow-sm" if t[0] == "all" else "bg-surface-container text-on-surface hover:bg-surface-container-high"} transition-all" data-tier="{t[0]}" onclick="filterTier(\'{t[0]}\')">{t[1]}</button>'
         for t in tier_btns
     ])
 
@@ -1674,6 +1674,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     @layer base {{
       html, body {{ margin: 0; padding: 0; }}
@@ -1682,6 +1683,24 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
       main > :last-child {{ margin-bottom: 0 !important; }}
     }}
     ::-webkit-scrollbar {{ display: none; }}
+    .markdown-rendered-body {{
+      color: #131b2e;
+      line-height: 1.7;
+    }}
+    .markdown-rendered-body h1 {{ font-size: 1.4rem; font-weight: 800; margin: 1rem 0 0.5rem; border-bottom: 2px solid #e2e7ff; padding-bottom: 0.35rem; }}
+    .markdown-rendered-body h2 {{ font-size: 1.2rem; font-weight: 700; margin: 0.85rem 0 0.4rem; border-bottom: 1px solid #eaedff; padding-bottom: 0.25rem; }}
+    .markdown-rendered-body h3 {{ font-size: 1.05rem; font-weight: 700; margin: 0.75rem 0 0.3rem; }}
+    .markdown-rendered-body p {{ margin-bottom: 0.75rem; }}
+    .markdown-rendered-body table {{ width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }}
+    .markdown-rendered-body th, .markdown-rendered-body td {{ border: 1px solid #dae2fd; padding: 0.45rem 0.65rem; text-align: start; }}
+    .markdown-rendered-body th {{ background: #eaedff; font-weight: 700; }}
+    .markdown-rendered-body tr:nth-child(even) {{ background: #f8f9fe; }}
+    .markdown-rendered-body ul, .markdown-rendered-body ol {{ margin: 0.5rem 0 0.75rem; padding-inline-start: 1.5rem; }}
+    .markdown-rendered-body li {{ margin-bottom: 0.25rem; }}
+    .markdown-rendered-body code {{ background: #eaedff; padding: 0.15rem 0.35rem; border-radius: 4px; font-family: monospace; font-size: 0.85em; }}
+    .markdown-rendered-body pre code {{ background: transparent; padding: 0; }}
+    .markdown-rendered-body blockquote {{ border-inline-start: 4px solid #006a61; padding-inline-start: 0.75rem; color: #45464d; margin: 0.75rem 0; font-style: italic; }}
+    .markdown-rendered-body hr {{ border: none; border-top: 1px solid #e2e7ff; margin: 1rem 0; }}
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script id="tailwind-config">
@@ -1980,7 +1999,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
   </div>
 
   <!-- Multi-Artifact Slide-Over Drawer / Inspector Modal -->
-  <div class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300" id="artifact-drawer">
+  <div class="fixed inset-0 z-50 pointer-events-none opacity-0 hidden transition-opacity duration-300" id="artifact-drawer">
     <div class="absolute inset-0 bg-on-surface/40 backdrop-blur-xs transition-opacity cursor-pointer" onclick="closeFormDrawer()"></div>
     <div class="absolute top-0 {'left-0 -translate-x-full' if is_ar else 'right-0 translate-x-full'} bottom-0 w-full max-w-4xl bg-surface-container-lowest shadow-2xl flex flex-col transition-transform duration-300 ease-out pointer-events-auto" id="drawer-panel">
       <!-- Drawer Header -->
@@ -2044,7 +2063,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
   </div>
 
   <!-- CLI Scaffolder Modal -->
-  <div class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-200" id="scaffolder-modal">
+  <div class="fixed inset-0 z-50 pointer-events-none opacity-0 hidden transition-opacity duration-200" id="scaffolder-modal">
     <div class="absolute inset-0 bg-on-surface/50 backdrop-blur-xs cursor-pointer" onclick="closeScaffolderModal()"></div>
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-xl bg-surface-container-lowest rounded-xl shadow-2xl p-space-lg space-y-space-md pointer-events-auto">
       <div class="flex items-center justify-between">
@@ -2212,6 +2231,23 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
       applyFilters();
     }}
 
+    // Attach explicit click listeners to avoid any inline handler blocking
+    document.querySelectorAll('.phase-btn').forEach(btn => {{
+      btn.addEventListener('click', (e) => {{
+        e.preventDefault();
+        e.stopPropagation();
+        filterPhase(btn.dataset.phase);
+      }});
+    }});
+
+    document.querySelectorAll('.tier-btn').forEach(btn => {{
+      btn.addEventListener('click', (e) => {{
+        e.preventDefault();
+        e.stopPropagation();
+        filterTier(btn.dataset.tier);
+      }});
+    }});
+
     // Initialize filters from URL parameters if present
     const urlParams = new URLSearchParams(window.location.search);
     const initialQuery = urlParams.get('q');
@@ -2344,20 +2380,44 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
           `;
         }}
 
+        // Markdown cleaner & renderer helper
+        function renderMarkdownContent(rawMd) {{
+          if (!rawMd) return '<div class="p-4 text-outline text-xs">No content provided.</div>';
+          let cleanMd = rawMd.replace(/<!--[\s\S]*?-->/g, '').trim();
+          if (cleanMd.startsWith('---')) {{
+            const secondDash = cleanMd.indexOf('---', 3);
+            if (secondDash !== -1) {{
+              cleanMd = cleanMd.slice(secondDash + 3).trim();
+            }}
+          }}
+          if (window.marked && window.marked.parse) {{
+            return window.marked.parse(cleanMd);
+          }}
+          return `<pre class="p-3 bg-surface-container-low font-mono text-xs rounded-lg whitespace-pre-wrap">${{escapeHtml(cleanMd)}}</pre>`;
+        }}
+
         // Tab 2: Markdown Template
         const tplTab = document.getElementById('tab-content-template');
         if (tplTab) {{
           const tplText = isArabic ? (item.template_ar || item.template_en) : (item.template_en || item.template_ar);
           const ghTpl = isArabic ? (item.gh_tpl_ar || item.gh_tpl_en) : (item.gh_tpl_en || item.gh_tpl_ar);
+          const renderedHtml = renderMarkdownContent(tplText);
           tplTab.innerHTML = `
-            <div class="flex items-center justify-between pb-2">
-              <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} Markdown Template</span>
+            <div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
+              <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} ${{isArabic ? 'قالب تسليمة' : 'Markdown Template'}}</span>
               <div class="flex items-center gap-2">
+                <div class="inline-flex rounded-lg bg-surface-container-low p-0.5 border border-surface-container-high text-xs font-label-code">
+                  <button type="button" id="btn-tpl-view-rendered" onclick="toggleTplView('rendered')" class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-bold shadow-xs transition">${{isArabic ? 'مُنسق (HTML)' : 'Rendered'}}</button>
+                  <button type="button" id="btn-tpl-view-raw" onclick="toggleTplView('raw')" class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface transition">${{isArabic ? 'نص خام' : 'Raw Markdown'}}</button>
+                </div>
                 ${{ghTpl ? `<a class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-secondary hover:bg-surface-container-high flex items-center gap-1 transition" href="${{ghTpl}}" target="_blank" rel="noreferrer"><span>GitHub</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a>` : ''}}
-                <button class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-tpl-raw')">📋 ${{isArabic ? 'نسخ القالب' : 'Copy Template'}}</button>
+                <button type="button" class="px-2.5 py-1 rounded bg-secondary text-on-secondary text-xs font-label-code font-bold hover:opacity-90 transition" onclick="copyDrawerCode('drawer-tpl-raw')">📋 ${{isArabic ? 'نسخ القالب' : 'Copy Template'}}</button>
               </div>
             </div>
-            <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-tpl-raw">${{escapeHtml(tplText)}}</code></pre>
+            <div id="drawer-tpl-rendered" class="markdown-rendered-body p-4 bg-surface-container-lowest rounded-xl border border-surface-container-high overflow-y-auto max-h-[60vh] text-body-sm" dir="${{isArabic ? 'rtl' : 'ltr'}}">
+              ${{renderedHtml}}
+            </div>
+            <pre id="drawer-tpl-raw-container" class="hidden p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-tpl-raw">${{escapeHtml(tplText)}}</code></pre>
           `;
         }}
 
@@ -2366,15 +2426,24 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         if (guideTab) {{
           const guideText = isArabic ? (item.guide_ar || item.guide_en) : (item.guide_en || item.guide_ar);
           const ghGuide = isArabic ? (item.gh_guide_ar || item.gh_guide_en) : (item.gh_guide_en || item.gh_guide_ar);
+          const renderedGuideHtml = renderMarkdownContent(guideText);
           guideTab.innerHTML = `
-            <div class="flex items-center justify-between pb-2">
-              <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} Authoring Practice Guide</span>
+            <div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
+              <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} ${{isArabic ? 'الدليل الإرشادي' : 'Practice Guide'}}</span>
               <div class="flex items-center gap-2">
+                <div class="inline-flex rounded-lg bg-surface-container-low p-0.5 border border-surface-container-high text-xs font-label-code">
+                  <button type="button" id="btn-guide-view-rendered" onclick="toggleGuideView('rendered')" class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-bold shadow-xs transition">${{isArabic ? 'مُنسق (HTML)' : 'Rendered'}}</button>
+                  <button type="button" id="btn-guide-view-raw" onclick="toggleGuideView('raw')" class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface transition">${{isArabic ? 'نص خام' : 'Raw Markdown'}}</button>
+                </div>
                 ${{ghGuide ? `<a class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-secondary hover:bg-surface-container-high flex items-center gap-1 transition" href="${{ghGuide}}" target="_blank" rel="noreferrer"><span>GitHub</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a>` : ''}}
                 <a class="px-2.5 py-1 rounded bg-secondary/10 text-secondary text-xs font-label-code font-bold hover:bg-secondary/20 transition" href="${{relRoot}}${{isArabic ? item.url_guide_ar : item.url_guide_en}}" target="_blank">${{isArabic ? 'فتح الدليل كاملاً ↗' : 'Open Full Guide ↗'}}</a>
+                <button type="button" class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-guide-raw')">📋 ${{isArabic ? 'نسخ' : 'Copy'}}</button>
               </div>
             </div>
-            <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-guide-raw">${{escapeHtml(guideText)}}</code></pre>
+            <div id="drawer-guide-rendered" class="markdown-rendered-body p-4 bg-surface-container-lowest rounded-xl border border-surface-container-high overflow-y-auto max-h-[60vh] text-body-sm" dir="${{isArabic ? 'rtl' : 'ltr'}}">
+              ${{renderedGuideHtml}}
+            </div>
+            <pre id="drawer-guide-raw-container" class="hidden p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-guide-raw">${{escapeHtml(guideText)}}</code></pre>
           `;
         }}
 
@@ -2414,16 +2483,55 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
       }}
 
       switchTab('spec');
-      drawer.classList.remove('pointer-events-none', 'opacity-0');
-      drawerPanel.classList.remove(isArabic ? '-translate-x-full' : 'translate-x-full');
+      drawer.classList.remove('hidden');
+      setTimeout(() => {{
+        drawer.classList.remove('pointer-events-none', 'opacity-0');
+        drawerPanel.classList.remove(isArabic ? '-translate-x-full' : 'translate-x-full');
+      }}, 10);
+    }}
+
+    function toggleTplView(mode) {{
+      const renderedBox = document.getElementById('drawer-tpl-rendered');
+      const rawBox = document.getElementById('drawer-tpl-raw-container');
+      const btnRendered = document.getElementById('btn-tpl-view-rendered');
+      const btnRaw = document.getElementById('btn-tpl-view-raw');
+      if (mode === 'rendered') {{
+        renderedBox.classList.remove('hidden');
+        rawBox.classList.add('hidden');
+        btnRendered.className = "px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-bold shadow-xs transition";
+        btnRaw.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface transition";
+      }} else {{
+        renderedBox.classList.add('hidden');
+        rawBox.classList.remove('hidden');
+        btnRaw.className = "px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-bold shadow-xs transition";
+        btnRendered.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface transition";
+      }}
+    }}
+
+    function toggleGuideView(mode) {{
+      const renderedBox = document.getElementById('drawer-guide-rendered');
+      const rawBox = document.getElementById('drawer-guide-raw-container');
+      const btnRendered = document.getElementById('btn-guide-view-rendered');
+      const btnRaw = document.getElementById('btn-guide-view-raw');
+      if (mode === 'rendered') {{
+        renderedBox.classList.remove('hidden');
+        rawBox.classList.add('hidden');
+        btnRendered.className = "px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-bold shadow-xs transition";
+        btnRaw.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface transition";
+      }} else {{
+        renderedBox.classList.add('hidden');
+        rawBox.classList.remove('hidden');
+        btnRaw.className = "px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-bold shadow-xs transition";
+        btnRendered.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface transition";
+      }}
     }}
 
     function closeFormDrawer() {{
       drawer.classList.add('pointer-events-none');
       drawerPanel.classList.add(isArabic ? '-translate-x-full' : 'translate-x-full');
       setTimeout(() => {{
-        drawer.classList.add('opacity-0');
-      }}, 200);
+        drawer.classList.add('opacity-0', 'hidden');
+      }}, 250);
     }}
 
     function switchTab(tabName) {{
@@ -2447,11 +2555,17 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
     // Scaffolder Modal
     const scaffolderModal = document.getElementById('scaffolder-modal');
     function openScaffolderModal() {{
-      scaffolderModal.classList.remove('pointer-events-none', 'opacity-0');
+      scaffolderModal.classList.remove('hidden');
+      setTimeout(() => {{
+        scaffolderModal.classList.remove('pointer-events-none', 'opacity-0');
+      }}, 10);
       updateCliCode();
     }}
     function closeScaffolderModal() {{
       scaffolderModal.classList.add('pointer-events-none', 'opacity-0');
+      setTimeout(() => {{
+        scaffolderModal.classList.add('hidden');
+      }}, 200);
     }}
 
     const cliTierSelect = document.getElementById('cli-tier-select');

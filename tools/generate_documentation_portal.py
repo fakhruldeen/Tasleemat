@@ -32,6 +32,7 @@ from tools.stitch_screens_builder import (
     get_screen5_catalog_html,
     get_screen6_home_en
 )
+from tools.stitch_governance_builder import get_screen4_governance_html
 from tools.lexicon_builder import get_standalone_lexicon_html
 
 
@@ -2392,14 +2393,16 @@ def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path, deliv
     (docs_dir / "LEXICON.html").write_text(html_lex, encoding="utf-8")
 
 
-    # 4. Governance & Stage-Gates & Tailoring
-    html_gov = process_stitch_screen(s_map["governance"], "governance", rel_root="./")
-    (site_dir / "governance.html").write_text(html_gov, encoding="utf-8")
-    (docs_dir / "governance.html").write_text(html_gov, encoding="utf-8")
+    # 4. Governance & Stage-Gates & Tailoring (Full EN & AR Symmetrical Portals)
+    html_gov_en = get_screen4_governance_html(lang="en", rel_root="./")
+    (site_dir / "governance.html").write_text(html_gov_en, encoding="utf-8")
+    (docs_dir / "governance.html").write_text(html_gov_en, encoding="utf-8")
 
-    # 4b. Arabic Governance & Developer Symmetrical Counterparts
-    create_ar_counterpart(site_dir / "governance.html", site_dir / "governance_ar.html", "governance")
-    create_ar_counterpart(docs_dir / "governance.html", docs_dir / "governance_ar.html", "governance")
+    html_gov_ar = get_screen4_governance_html(lang="ar", rel_root="./")
+    (site_dir / "governance_ar.html").write_text(html_gov_ar, encoding="utf-8")
+    (docs_dir / "governance_ar.html").write_text(html_gov_ar, encoding="utf-8")
+
+    # 4b. Arabic Developer Symmetrical Counterpart
     create_ar_counterpart(site_dir / "developer.html", site_dir / "developer_ar.html", "developer")
     create_ar_counterpart(docs_dir / "developer.html", docs_dir / "developer_ar.html", "developer")
 

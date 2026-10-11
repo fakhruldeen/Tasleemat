@@ -1,0 +1,1279 @@
+#!/usr/bin/env python3
+"""tools/stitch_governance_builder.py
+Generates the complete Stitch Screen 4: Stage-Gate Governance & Tailoring Profiles Portal
+for both English (governance.html) and Arabic (governance_ar.html) with full bilingual parity.
+"""
+
+def get_screen4_governance_html(lang: str = "en", rel_root: str = "./") -> str:
+    """Generates the full HTML for governance portal in English or Arabic."""
+    is_ar = (lang == "ar")
+    doc_lang = "ar" if is_ar else "en"
+    doc_dir = "rtl" if is_ar else "ltr"
+    
+    page_title = "مصفوفة حوكمة بوابات المراحل ومعايير تخصيص المشاريع | تسليمات" if is_ar else "Stage-Gate Governance & Sizing Tailoring | Tasleemat"
+    
+    sidebar_class = "hidden lg:block fixed right-0 top-16 bottom-0 w-64 bg-surface-container-low z-30 border-l border-surface-container-high overflow-y-auto p-space-md" if is_ar else "hidden lg:block fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-30 border-r border-surface-container-high overflow-y-auto p-space-md"
+    main_wrapper_class = "lg:pr-64 w-full" if is_ar else "lg:pl-64 w-full"
+
+    nav_home = f"{rel_root}README_AR.html" if is_ar else f"{rel_root}index.html"
+    nav_cat = f"{rel_root}catalog/ar/index.html" if is_ar else f"{rel_root}catalog/en/index.html"
+    nav_gov = f"{rel_root}governance_ar.html" if is_ar else f"{rel_root}governance.html"
+    nav_tailor = f"{rel_root}governance_ar.html#tailoring-matrix" if is_ar else f"{rel_root}governance.html#tailoring-matrix"
+    nav_dev = f"{rel_root}developer_ar.html" if is_ar else f"{rel_root}developer.html"
+    nav_lex = f"{rel_root}LEXICON.html"
+    
+    lang_toggle_url = f"{rel_root}governance.html" if is_ar else f"{rel_root}governance_ar.html"
+    lang_toggle_text = "🇬🇧 English" if is_ar else "🇸🇦 العربية"
+
+    hero_badge = "PMI PMBOK® 8th Ready • ISO 21500 / 21502 • إطار NIST AI RMF" if is_ar else "PMI PMBOK® 8th Ready • ISO 21500 / 21502 • NIST AI RMF"
+    hero_chapter = "الفصل 04 و 05" if is_ar else "Chapter 04 & 05"
+    hero_title = "حوكمة بوابات العبور المرحلية ومعايير تخصيص المشاريع" if is_ar else "Stage-Gate Governance & Sizing Tailoring"
+    hero_desc = "محطات تدقيق مؤسسية تبدأ من دراسة فكرة المشروع وصولاً إلى التحقق من تحقيق القيمة بعد الإغلاق. تجمع بين معايير تدقيق معتمدة ومستويات تخصيص ديناميكية عبر 4 مستويات حوكمية." if is_ar else "Institutional checkpoints from initial concept validation to formal post-closeout value realization. Pair audit-proof stage criteria with dynamic project sizing across 4 governance tiers."
+
+    stat1_val = "6 بوابات (0→5)" if is_ar else "6 Gates (0→5)"
+    stat1_label = "بوابات معيارية" if is_ar else "Standardized Gates"
+    stat2_val = "4 مستويات" if is_ar else "4 Sizing Tiers"
+    stat2_label = "ملفات التخصيص" if is_ar else "Profiles"
+    stat3_val = "114 تسليمة" if is_ar else "114 Deliverables"
+    stat3_label = "حزم ثنائية اللغة" if is_ar else "Bilingual Corpus"
+
+    # Section 1 texts
+    sec1_eyebrow = "رقابة وحوكمة مؤسسية صارمة" if is_ar else "Rigorous Institutional Control"
+    sec1_audit_std = "معيار التدقيق المؤسسي OKF-2026" if is_ar else "Audit Standard OKF-2026"
+    sec1_title = "النتائج الثلاث لقرارات بوابات العبور" if is_ar else "The 3 Gate Decision Outcomes"
+    sec1_desc = "بوابة العبور (Stage-Gate) هي نقطة قرار رسمي لمجلس توجيه المشروع لمراجعة سلامة المخرجات، والمواءمة الاستراتيجية، واستمرارية جدوى دراسة الأعمال قبل الإذن بصرف الشريحة المالية للمرحلة التالية." if is_ar else "A stage-gate is a formal business decision event where the Steering Committee reviews deliverable integrity, strategic fit, and business case viability prior to authorising subsequent capital expenditure."
+    sec1_bar_label = "نسبة رأس مال المحفظة الخاضع للبوابات" if is_ar else "Portfolio Capital Gated"
+    sec1_bar_val = "100% إلزامي" if is_ar else "100% Mandated"
+    sec1_pct1 = "موافقة (عبور) 68%" if is_ar else "Proceed (68%)"
+    sec1_pct2 = "موافقة مشروطة 22%" if is_ar else "Conditional (22%)"
+    sec1_pct3 = "رفض / إنهاء 10%" if is_ar else "Terminated (10%)"
+    sec1_duty = "فصل صارم للمسؤوليات: <strong>مدراء المشاريع يقترحون</strong> المخرجات؛ و<strong>مكتب إدارة المشاريع (PMO) يعتمد الاكتمال</strong>؛ و<strong>الراعي التنفيذي يعتمد الإفراج المالي</strong>." if is_ar else "Strict separation of duty: <strong>Project Managers propose</strong> artifacts; the <strong>PMO certifies completeness</strong>; and the <strong>Executive Sponsor signs financial release</strong>."
+
+    card1_alpha = "القرار الأول (أ)" if is_ar else "Decision Alpha"
+    card1_title = "موافقة كاملة والعبور (Proceed / Go)" if is_ar else "Proceed (Go)"
+    card1_desc = "استيفاء كافة معايير الخروج الإلزامية. تثبيت خطوط الأساس، والإذن بصرف شريحة الميزانية للمرحلة التالية دون أي عوائق حوكمية معلقة." if is_ar else "All mandatory exit criteria satisfied. Baselines confirmed, budget release authorized for next phase tranche without pending governance impediments."
+    card1_meta = "إتاحة الشريحة المالية (100%)" if is_ar else "Tranche Unlocked (100%)"
+    card1_sub = "مصفوفة الأثر" if is_ar else "Impact Matrix"
+
+    card2_beta = "القرار الثاني (ب)" if is_ar else "Decision Beta"
+    card2_title = "موافقة مشروطة (Conditional Approval)" if is_ar else "Conditional Approval"
+    card2_desc = "الموافقة مع خطة عمل تصحيحية (CAPA) بمهلة إلزامية لا تتجاوز 14 يوماً تقويمياً لاستكمال الملاحظات غير الحرجة دون تعطيل المسار الحرج." if is_ar else "Go-with-actions. Work may commence on lead-time items under an active CAPA (Corrective Action Plan) with a mandatory 14-calendar-day clearance window."
+    card2_meta = "حجز 15% من الشريحة كضمان" if is_ar else "15% Cap Held in Escrow"
+    card2_sub = "بروتوكول الحجز" if is_ar else "Escrow Protocol"
+
+    card3_gamma = "القرار الثالث (ج)" if is_ar else "Decision Gamma"
+    card3_title = "رفض / إنهاء المشروع (Reject / Terminate)" if is_ar else "Reject / Terminate"
+    card3_desc = "انحراف غير مقبول، أو تدني الجدوى المالية، أو إخفاق حرج في الامتثال. يتم توجيه المشروع لإعادة التخطيط أو إيقافه رسمياً لحماية أموال المنظمة." if is_ar else "Unacceptable variance, negative NPV forecast, or critical compliance failure. Project is redirected to re-plan or orderly terminated to protect capital."
+    card3_meta = "إيقاف التعاقد واسترداد الأصول (FORM-07-05)" if is_ar else "Form 07-05 Contract Halt"
+    card3_sub = "إجراءات الإنهاء" if is_ar else "Termination Sequence"
+
+    # Section 2 texts
+    sec2_badge1 = "محطات دورة حياة المشروع" if is_ar else "Lifecycle Checkpoints"
+    sec2_badge2 = "مستكشف بوابات العبور الست" if is_ar else "6 Stage-Gates Inspector"
+    sec2_title = "مصفوفة بوابات العبور المعتمدة للتدقيق" if is_ar else "Audit-Proof Stage-Gate Matrix"
+    sec2_desc = "حدد أي بوابة لاستعراض شروط التدقيق الإلزامية، معايير العبور الدنيا، مصفوفة الصلاحيات (RACI)، وتوليد ملف الحوكمة المباشر." if is_ar else "Select a gate node to inspect required exit deliverables, RACI sign-off role matrix, and trigger real-time checklist audits."
+
+    gate_tabs = [
+        ("GATE 0", "المفهوم والأهداف" if is_ar else "Concept & OKR", "Phase 00 → 01"),
+        ("GATE 1", "دراسة الجدوى" if is_ar else "Business Case", "Phase 01 → 02"),
+        ("GATE 2", "ميثاق المشروع" if is_ar else "Charter Sign-Off", "Phase 03 → 04"),
+        ("GATE 3", "اعتماد خطوط الأساس" if is_ar else "Baselines Approval", "Phase 04 → 05"),
+        ("GATE 4", "الصحة والتقدم" if is_ar else "Mid-Stage Health", "Phase 05 → 06"),
+        ("GATE 5", "التسليم والإغلاق" if is_ar else "Handover & Close", "Phase 07 Value"),
+    ]
+    gate_tabs_html = "\n".join([
+        f'<button class="gate-btn {"active bg-primary text-on-primary" if i == 0 else "bg-surface-container text-on-surface hover:bg-surface-container-high"} p-space-sm rounded-lg flex flex-col items-start transition-all shadow-sm cursor-pointer" onclick="selectGate({i})" type="button">'
+        f'<span class="font-label-code text-[11px] {"opacity-75" if i == 0 else "text-on-surface-variant"}">{t[0]}</span>'
+        f'<span class="font-headline-sm text-[14px] leading-tight mt-0.5 {"text-right" if is_ar else "text-left"}">{t[1]}</span>'
+        f'<span class="font-label-code text-[10px] {"opacity-75" if i == 0 else "text-on-surface-variant"} mt-2">{t[2]}</span>'
+        f'</button>'
+        for i, t in enumerate(gate_tabs)
+    ])
+
+    # Section 3 texts (Tailoring)
+    sec3_eyebrow = "حوكمة مخصصة ومرنة" if is_ar else "Governance Tailoring"
+    sec3_title = "مصفوفة ملفات تخصيص أحجام المشاريع الأربعة" if is_ar else "The 4 PMO Sizing Profiles Matrix"
+    sec3_sub = "114 تسليمة مقسمة حسب الاحتياج" if is_ar else "114 Forms Partitioned"
+    sec3_desc = "منع الهدر الإداري والبيروقراطية الزائدة مع حماية الأصول المؤسسية. مطابقة درجة تعقيد المشروع مع مستوى الحوكمة المعتمد:" if is_ar else "Prevent bureaucratic overhead while securing institutional risk. Match project complexity to an authorized governance tier:"
+
+    calc_eyebrow = "أداة PMO تفاعلية" if is_ar else "Interactive PMO Tool"
+    calc_title = "حاسبة تخصيص مستوى الحوكمة" if is_ar else "Tailoring Sizing Calculator"
+    calc_desc = "عدل معايير المشروع لحساب درجة المخاطر والحصول على توصية فورية لحزمة النماذج المناسبة:" if is_ar else "Adjust project parameters to calculate governance risk score and receive an automated template pack recommendation."
+
+    calc_budget_label = "ميزانية المشروع التقديرية" if is_ar else "Estimated Project Budget"
+    calc_duration_label = "المدة الزمنية للتنفيذ" if is_ar else "Delivery Duration"
+    calc_method_label = "منهجية التنفيذ والتقنيات" if is_ar else "Delivery Paradigm & Technology Stack"
+    calc_method_opt1 = "تنبؤية / شلالية / هجينة" if is_ar else "Predictive / Hybrid"
+    calc_method_opt2 = "رشيقة / ذكاء اصطناعي وتعلم آلي" if is_ar else "Agile / AI Machine Learning"
+    calc_comp_label = "متطلبات رقابية وتنظيمية صارمة (SAMA / NCA / ISO / ESG)" if is_ar else "High Regulatory Oversight (SAMA / NCA / ISO / ESG Audits)"
+
+    rec_badge_label = "الملف الحوكمي الموصى به" if is_ar else "Recommended Sizing Profile"
+    download_pack_btn = "تنزيل حزمة النماذج الموصى بها" if is_ar else "Download Profile Pack"
+
+    # Section 4 texts (Lexicon)
+    sec4_eyebrow = "المصطلحات المعتمدة" if is_ar else "Terminology Alignment"
+    sec4_title = "المعجم المرجعي الموحد للحوكمة" if is_ar else "Official Bilingual Governance Cross-Reference"
+    sec4_desc = "مصطلحات إدارة المشاريع المعتمدة عبر الإنجليزية (PMBOK®) والمعايير الوطنية لمشاريع رؤية 2030." if is_ar else "Standardized PMO vocabulary across English (PMBOK®) and Arabic enterprise project mandates across government entities and Vision 2030 initiatives."
+
+    return f"""<!DOCTYPE html>
+<html lang="{doc_lang}" dir="{doc_dir}">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_dashboard" name="shell-type"/>
+  <title>{page_title}</title>
+  <link rel="icon" type="image/png" href="{rel_root}img/logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    @layer base {{
+      html, body {{ margin: 0; padding: 0; }}
+      body {{ overscroll-behavior: none; }}
+      main > :first-child {{ margin-top: 0 !important; }}
+      main > :last-child {{ margin-bottom: 0 !important; }}
+    }}
+    ::-webkit-scrollbar {{ display: none; }}
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {{
+      darkMode: "class",
+      theme: {{
+        extend: {{
+          colors: {{
+            "on-primary-container": "#7b83a0",
+            "on-error-container": "#93000a",
+            "outline-variant": "#c6c6ce",
+            "on-primary-fixed": "#131a33",
+            "on-surface": "#131b2e",
+            "surface-container-highest": "#dae2fd",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#45464d",
+            "on-tertiary": "#ffffff",
+            "primary": "#000000",
+            "surface-container-low": "#f2f3ff",
+            "surface-tint": "#565d79",
+            "background": "#faf8ff",
+            "primary-fixed": "#dbe1ff",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#2a1700",
+            "surface-container": "#eaedff",
+            "inverse-surface": "#283044",
+            "secondary": "#006a61",
+            "primary-fixed-dim": "#bec5e5",
+            "on-background": "#131b2e",
+            "outline": "#76767e",
+            "surface-container-high": "#e2e7ff",
+            "inverse-on-surface": "#eef0ff",
+            "on-primary": "#ffffff",
+            "surface": "#faf8ff",
+            "surface-bright": "#faf8ff",
+            "tertiary-fixed": "#ffddb8",
+            "on-secondary-fixed-variant": "#005049",
+            "surface-variant": "#dae2fd",
+            "tertiary-fixed-dim": "#ffb95f",
+            "inverse-primary": "#bec5e5",
+            "on-secondary-container": "#006f66",
+            "on-primary-fixed-variant": "#3e4660",
+            "error-container": "#ffdad6",
+            "tertiary": "#000000",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#d2d9f4",
+            "on-secondary-fixed": "#00201d",
+            "primary-container": "#131a33",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-tertiary-fixed-variant": "#653e00",
+            "secondary-fixed": "#89f5e7",
+            "secondary-container": "#86f2e4",
+            "tertiary-container": "#2a1700",
+            "on-tertiary-container": "#b87500"
+          }},
+          borderRadius: {{ DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }},
+          spacing: {{ "margin-tablet": "1.5rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "margin": "1rem", "gutter-desktop": "1.5rem", "space-2xl": "3rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "2rem", "space-md": "1rem" }},
+          fontFamily: {{
+            "headline-lg": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "badge-caps": ["JetBrains Mono", "monospace"],
+            "body-base": ["Inter", "Noto Sans Arabic", "sans-serif"],
+            "display-hero-mobile": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "headline-sm": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "label-code": ["JetBrains Mono", "monospace"],
+            "display-hero": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"],
+            "body-sm": ["Inter", "Noto Sans Arabic", "sans-serif"],
+            "headline-md": ["IBM Plex Sans", "Noto Sans Arabic", "sans-serif"]
+          }},
+          fontSize: {{
+            "headline-lg": ["24px", {{ lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }}],
+            "badge-caps": ["11px", {{ lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }}],
+            "body-base": ["15px", {{ lineHeight: "24px", fontWeight: "400" }}],
+            "display-hero-mobile": ["28px", {{ lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "800" }}],
+            "headline-sm": ["16px", {{ lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "600" }}],
+            "label-code": ["12px", {{ lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "700" }}],
+            "display-hero": ["36px", {{ lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "800" }}],
+            "body-sm": ["13.5px", {{ lineHeight: "20px", fontWeight: "400" }}],
+            "headline-md": ["20px", {{ lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }}]
+          }}
+        }}
+      }}
+    }};
+  </script>
+</head>
+<body class="bg-background font-body-base text-body-base text-on-surface antialiased">
+  <!-- Top Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 w-full h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-surface-container-high">
+    <div class="h-16 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm" data-path="overview" href="{nav_home}">
+          <img alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain" src="{rel_root}img/logo.png"/>
+          <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Tasleemat (تسليمات)</span>
+        </a>
+        <span class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code border border-outline-variant/40">v2.3.0</span>
+      </div>
+      <div class="flex items-center gap-space-sm">
+        <a class="inline-flex items-center gap-1 px-space-sm py-1 rounded-lg border border-outline-variant/60 bg-surface-container-low text-on-surface font-label-code text-label-code hover:bg-surface-container transition-colors" href="{lang_toggle_url}">
+          <span>{lang_toggle_text}</span>
+        </a>
+        <a class="hidden sm:inline-flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-code text-label-code border border-outline-variant/40 hover:bg-surface-container-high hover:text-on-surface transition-colors" href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener noreferrer">
+          <span class="text-sm leading-none">★</span><span>GitHub</span><span class="text-outline-variant">|</span><span>v2.3.0</span>
+        </a>
+        <a href="https://github.com/fakhruldeen" rel="noreferrer" target="_blank" title="Mohamed Fakhruldeen (GitHub / LinkedIn / Website)">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/40" src="https://avatars.githubusercontent.com/u/1162549?v=4"/>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="{sidebar_class}">
+    <div class="mb-space-md px-space-sm">
+      <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-on-surface-variant">{'التنقل والحوكمة' if is_ar else 'Navigation & Governance'}</span>
+    </div>
+    <nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg">
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="{nav_home}">
+        <span class="material-symbols-outlined text-[18px]">home</span>
+        <span class="font-body-sm text-body-sm">{'الرئيسية / نظرة عامة' if is_ar else 'Home / Overview'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="templates-catalog" href="{nav_cat}">
+        <span class="material-symbols-outlined text-[18px]">library_books</span>
+        <span class="font-body-sm text-body-sm">{'فهرس النماذج (114 تسليمة)' if is_ar else '114 Templates Catalog'}</span>
+      </a>
+      <a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="stage-gate-governance" href="{nav_gov}">
+        <span class="material-symbols-outlined text-[18px]">verified</span>
+        <span class="font-body-sm text-body-sm">{'بوابات العبور الحوكمية' if is_ar else 'Stage-Gate Governance'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tailoring-profiles" href="{nav_tailor}">
+        <span class="material-symbols-outlined text-[18px]">tune</span>
+        <span class="font-body-sm text-body-sm">{'مستويات التخصيص' if is_ar else 'Tailoring Profiles'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="developer-cli" href="{nav_dev}">
+        <span class="material-symbols-outlined text-[18px]">terminal</span>
+        <span class="font-body-sm text-body-sm">{'دليل المطورين وCLI' if is_ar else 'Developer & CLI'}</span>
+      </a>
+      <a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bilingual-lexicon" href="{nav_lex}">
+        <span class="material-symbols-outlined text-[18px]">translate</span>
+        <span class="font-body-sm text-body-sm">{'المعجم الموحد للمصطلحات' if is_ar else 'Bilingual Lexicon'}</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content Container -->
+  <div class="{main_wrapper_class}">
+    <main class="w-full pt-16 bg-background min-h-screen px-space-md py-space-lg">
+      <div class="flex flex-col w-full max-w-[1400px] mx-auto">
+        
+        <!-- Top Governance Meta Strip -->
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between pb-space-lg gap-space-md">
+          <div>
+            <div class="flex items-center gap-space-sm mb-1">
+              <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">{hero_badge}</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              <span class="font-label-code text-label-code text-on-surface-variant">{hero_chapter}</span>
+            </div>
+            <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">{hero_title}</h1>
+            <p class="font-body-base text-body-base text-on-surface-variant mt-1 max-w-4xl">
+              {hero_desc}
+            </p>
+          </div>
+          <!-- Quick Stat Pill Group -->
+          <div class="flex items-center gap-space-xs flex-wrap self-start lg:self-center">
+            <div class="flex items-center gap-2 bg-surface-container px-space-md py-space-sm rounded-lg shadow-sm">
+              <span class="material-symbols-outlined text-secondary text-lg">verified_user</span>
+              <div class="flex flex-col">
+                <span class="font-label-code text-[11px] text-on-surface-variant leading-none">{stat1_label}</span>
+                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">{stat1_val}</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 bg-surface-container px-space-md py-space-sm rounded-lg shadow-sm">
+              <span class="material-symbols-outlined text-on-surface-variant text-lg">layers</span>
+              <div class="flex flex-col">
+                <span class="font-label-code text-[11px] text-on-surface-variant leading-none">{stat2_label}</span>
+                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">{stat2_val}</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 bg-surface-container px-space-md py-space-sm rounded-lg shadow-sm">
+              <span class="material-symbols-outlined text-secondary text-lg">library_books</span>
+              <div class="flex flex-col">
+                <span class="font-label-code text-[11px] text-on-surface-variant leading-none">{stat3_label}</span>
+                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">{stat3_val}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 1: Executive Governance & 3 Gate Decision Outcomes -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-2xl">
+          <!-- Framework Narrative -->
+          <div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-space-sm">
+                <span class="font-badge-caps text-badge-caps text-secondary uppercase tracking-wider font-bold">{sec1_eyebrow}</span>
+                <span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">{sec1_audit_std}</span>
+              </div>
+              <h2 class="font-headline-md text-headline-md text-on-surface mb-space-sm">{sec1_title}</h2>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+                {sec1_desc}
+              </p>
+              <!-- Metric Bars -->
+              <div class="bg-surface-container-low p-space-md rounded-lg space-y-space-sm mb-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="font-body-sm text-body-sm text-on-surface font-semibold">{sec1_bar_label}</span>
+                  <span class="font-label-code text-label-code text-secondary font-bold">{sec1_bar_val}</span>
+                </div>
+                <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                  <div class="bg-secondary h-full" style="width: 68%;"></div>
+                  <div class="bg-primary-container h-full" style="width: 22%;"></div>
+                  <div class="bg-error h-full" style="width: 10%;"></div>
+                </div>
+                <div class="flex items-center justify-between font-label-code text-[11px] text-on-surface-variant pt-1">
+                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> {sec1_pct1}</span>
+                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary-container"></span> {sec1_pct2}</span>
+                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-error"></span> {sec1_pct3}</span>
+                </div>
+              </div>
+            </div>
+            <!-- Compliance callout -->
+            <div class="flex items-start gap-space-sm bg-surface-container p-space-sm rounded-lg text-on-surface">
+              <span class="material-symbols-outlined text-secondary text-base mt-0.5">verified</span>
+              <p class="font-body-sm text-[12.5px] leading-snug text-on-surface-variant">
+                {sec1_duty}
+              </p>
+            </div>
+          </div>
+
+          <!-- 3 Outcome Cards (Asymmetric Bento) -->
+          <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-space-md">
+            <!-- Card 1: GO -->
+            <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary mb-space-md">
+                  <span class="material-symbols-outlined text-2xl">check_circle</span>
+                </div>
+                <span class="font-label-code text-label-code uppercase tracking-wider text-secondary">{card1_alpha}</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">{card1_title}</h3>
+                <p class="font-body-sm text-[13px] text-on-surface-variant mt-2 leading-relaxed">
+                  {card1_desc}
+                </p>
+              </div>
+              <div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+                <span class="font-label-code text-[11px] uppercase tracking-wide text-on-surface-variant block mb-1">{card1_sub}</span>
+                <div class="flex items-center gap-1 font-label-code text-label-code text-secondary">
+                  <span class="material-symbols-outlined text-sm">lock_open</span>
+                  <span>{card1_meta}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: CONDITIONAL -->
+            <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container mb-space-md">
+                  <span class="material-symbols-outlined text-2xl">published_with_changes</span>
+                </div>
+                <span class="font-label-code text-label-code uppercase tracking-wider text-primary-container font-semibold">{card2_beta}</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">{card2_title}</h3>
+                <p class="font-body-sm text-[13px] text-on-surface-variant mt-2 leading-relaxed">
+                  {card2_desc}
+                </p>
+              </div>
+              <div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+                <span class="font-label-code text-[11px] uppercase tracking-wide text-on-surface-variant block mb-1">{card2_sub}</span>
+                <div class="flex items-center gap-1 font-label-code text-label-code text-primary-container">
+                  <span class="material-symbols-outlined text-sm">hourglass_top</span>
+                  <span>{card2_meta}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: NO-GO -->
+            <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-error mb-space-md">
+                  <span class="material-symbols-outlined text-2xl">cancel</span>
+                </div>
+                <span class="font-label-code text-label-code uppercase tracking-wider text-error font-semibold">{card3_gamma}</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">{card3_title}</h3>
+                <p class="font-body-sm text-[13px] text-on-surface-variant mt-2 leading-relaxed">
+                  {card3_desc}
+                </p>
+              </div>
+              <div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+                <span class="font-label-code text-[11px] uppercase tracking-wide text-on-surface-variant block mb-1">{card3_sub}</span>
+                <div class="flex items-center gap-1 font-label-code text-label-code text-error">
+                  <span class="material-symbols-outlined text-sm">emergency_home</span>
+                  <span>{card3_meta}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: Interactive 6 Stage-Gates Visual Inspector -->
+        <section class="mb-space-2xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-md gap-space-sm">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">{sec2_badge1}</span>
+                <span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">{sec2_badge2}</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">{sec2_title}</h2>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+              {sec2_desc}
+            </p>
+          </div>
+
+          <!-- Interactive Gate Node Tabs -->
+          <div class="grid grid-cols-2 md:grid-cols-6 gap-space-xs mb-space-md" id="gate-tabs">
+            {gate_tabs_html}
+          </div>
+
+          <!-- Inspector Panel Container -->
+          <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md" id="gate-detail-container">
+            <div id="gate-content-render">
+              <!-- Dynamically populated by JS selectGate(0) -->
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: Tailoring Profiles Matrix & Sizing Calculator -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-2xl" id="tailoring-matrix">
+          <!-- Tailoring Profiles Matrix (Left 7 Cols) -->
+          <div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-space-sm">
+                <div>
+                  <span class="font-badge-caps text-badge-caps text-secondary uppercase tracking-wider font-bold">{sec3_eyebrow}</span>
+                  <h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">{sec3_title}</h2>
+                </div>
+                <span class="font-label-code text-label-code px-space-sm py-0.5 rounded bg-surface-container text-on-surface-variant">{sec3_sub}</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+                {sec3_desc}
+              </p>
+
+              <!-- Detailed Matrix Cards -->
+              <div class="space-y-space-sm">
+                <!-- Tier 1 -->
+                <div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+                  <div class="space-y-1">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[11px] font-label-code font-bold bg-surface-container text-on-surface">{'المستوى 1 • مصغر ورشيق' if is_ar else 'Tier 1 • Micro / Lean'}</span>
+                      <span class="font-label-code text-[11px] text-secondary font-bold">{'5 نماذج أساسية' if is_ar else '5 Core Artifacts'}</span>
+                    </div>
+                    <h4 class="font-headline-sm text-headline-sm text-on-surface">{'مخاطر منخفضة / مبادرات تكتيكية داخلية' if is_ar else 'Low Risk / Internal Tactical'}</h4>
+                    <p class="font-body-sm text-[12.5px] text-on-surface-variant">
+                      {'ميثاق مصغر، جدول معالم، سجل مهام ومشاكل موحد، تقرير حالة موجز، محضر تسليم أولي.' if is_ar else 'Project Charter, Milestone Schedule, Consolidated Action/Issue Log, Bi-weekly Status Flash, Handover Note.'}
+                    </p>
+                  </div>
+                  <div class="flex sm:flex-col items-center sm:items-end justify-between font-label-code text-[11px] text-on-surface-variant whitespace-nowrap">
+                    <span>{'ميزانية < 200,000 ر.س' if is_ar else 'Budget < $100k'}</span>
+                    <span class="text-secondary font-bold">{'بوابتان فقط (2 و 5)' if is_ar else 'Gate 2 & Gate 5 Only'}</span>
+                  </div>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+                  <div class="space-y-1">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[11px] font-label-code font-bold bg-surface-container text-on-surface">{'المستوى 2 • قياسي معتمد' if is_ar else 'Tier 2 • Standard Core'}</span>
+                      <span class="font-label-code text-[11px] text-secondary font-bold">{'18 تسليمة رئيسية' if is_ar else '18 Core Artifacts'}</span>
+                    </div>
+                    <h4 class="font-headline-sm text-headline-sm text-on-surface">{'تعقيد متوسط / فرق عمل متعددة التخصصات' if is_ar else 'Medium Complexity / Cross-Functional'}</h4>
+                    <p class="font-body-sm text-[12.5px] text-on-surface-variant">
+                      {'خطوط الأساس الثلاثة الكاملة (نطاق WBS، جدول المسار الحرج، منحنى التكلفة S)، سجل المخاطر، خطة التواصل، ضمان الجودة.' if is_ar else 'Full 3 Baselines (Scope WBS, Critical Path Schedule, Cost S-Curve), Risk Register, Comm Matrix, QA Plan.'}
+                    </p>
+                  </div>
+                  <div class="flex sm:flex-col items-center sm:items-end justify-between font-label-code text-[11px] text-on-surface-variant whitespace-nowrap">
+                    <span>{'ميزانية 200 ألف - 2 مليون' if is_ar else 'Budget $100k - $1M'}</span>
+                    <span class="text-secondary font-bold">{'البوابات: 1، 2، 3، 5' if is_ar else 'Gates 1, 2, 3, 5'}</span>
+                  </div>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+                  <div class="space-y-1">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[11px] font-label-code font-bold bg-surface-container text-on-surface">{'المستوى 3 • تحول مؤسسي شامل' if is_ar else 'Tier 3 • Enterprise Transformation'}</span>
+                      <span class="font-label-code text-[11px] text-secondary font-bold">{'45+ تسليمة إلزامية' if is_ar else '45+ Mandatory Artifacts'}</span>
+                    </div>
+                    <h4 class="font-headline-sm text-headline-sm text-on-surface">{'رأسمالي استراتيجي / موردين متعددين' if is_ar else 'Strategic Capex / Multi-Vendor'}</h4>
+                    <p class="font-body-sm text-[12.5px] text-on-surface-variant">
+                      {'مراجعات لجنة التوجيه، كراسة شروط ومنافسات، تدقيق الاستدامة، مؤشرات القيمة المكتسبة EVA، بوابات عبور كاملة.' if is_ar else 'Steering Committee reviews, Multi-vendor RFP/SOW, ESG & Sustainability Audit, EVA EVM metrics, Rigorous Stage-Gates.'}
+                    </p>
+                  </div>
+                  <div class="flex sm:flex-col items-center sm:items-end justify-between font-label-code text-[11px] text-on-surface-variant whitespace-nowrap">
+                    <span>{'ميزانية > 2,000,000 ر.س' if is_ar else 'Budget > $1,000,000'}</span>
+                    <span class="text-secondary font-bold">{'البوابات الست كاملة (0→5)' if is_ar else 'Full 6 Gates (0→5)'}</span>
+                  </div>
+                </div>
+
+                <!-- Tier 4 -->
+                <div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+                  <div class="space-y-1">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[11px] font-label-code font-bold bg-surface-container text-on-surface">{'المستوى 4 • رشيق وحوكمة ذكاء اصطناعي' if is_ar else 'Tier 4 • Agile & AI Iterative'}</span>
+                      <span class="font-label-code text-[11px] text-secondary font-bold">{'25 تسليمة متخصصة' if is_ar else '25 Specialized Artifacts'}</span>
+                    </div>
+                    <h4 class="font-headline-sm text-headline-sm text-on-surface">{'إطار NIST AI RMF، عمليات نماذج التعلم، تسليم برمجي' if is_ar else 'AI RMF, LLM Ops, Software Delivery'}</h4>
+                    <p class="font-body-sm text-[12.5px] text-on-surface-variant">
+                      {'قائمة تراكم السبرنت، مخططات التدفق CFD، بطاقات النماذج Model Cards، تدقيق مخاطر وانحياز الذكاء الاصطناعي، الدروس المستفادة المستمرة.' if is_ar else 'Sprint Backlog, Flow Metrics & CFD, Model Cards, AI Bias Risk Audit (NIST RMF), Continuous Retrospectives.'}
+                    </p>
+                  </div>
+                  <div class="flex sm:flex-col items-center sm:items-end justify-between font-label-code text-[11px] text-on-surface-variant whitespace-nowrap">
+                    <span>{'دورات سبرنت سريعة' if is_ar else 'Sprint / Flow Cycles'}</span>
+                    <span class="text-secondary font-bold">{'البوابات 2، 3 + مراجعات السبرنت' if is_ar else 'Gates 2, 3 + Sprint Reviews'}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scaffolder CLI hint -->
+            <div class="mt-space-md p-space-sm rounded-lg bg-surface-container flex items-center justify-between font-label-code text-label-code">
+              <div class="flex items-center gap-2 text-on-surface">
+                <span class="material-symbols-outlined text-secondary text-sm">terminal</span>
+                <span>{'أمر التوليد الآلي:' if is_ar else 'CLI Scaffolding:'} <code class="text-secondary">tasleemat init --tier [1|2|3|4]</code></span>
+              </div>
+              <a class="text-secondary hover:underline" href="{nav_dev}">{'عرض دليل الأوامر →' if is_ar else 'View Manual →'}</a>
+            </div>
+          </div>
+
+          <!-- Interactive Sizing Calculator Widget (Right 5 Cols) -->
+          <div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="material-symbols-outlined text-secondary text-xl">tune</span>
+                <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">{calc_eyebrow}</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface">{calc_title}</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">
+                {calc_desc}
+              </p>
+
+              <!-- Calculator Form -->
+              <div class="space-y-space-md">
+                <!-- Budget Slider -->
+                <div>
+                  <div class="flex justify-between font-body-sm text-body-sm mb-1">
+                    <span class="text-on-surface font-medium">{calc_budget_label}</span>
+                    <span class="font-label-code text-label-code text-secondary font-bold" id="calc-budget-label">{'200 ألف - 2 مليون ر.س (متوسط)' if is_ar else '$450,000 (Medium)'}</span>
+                  </div>
+                  <input class="w-full accent-secondary cursor-pointer" id="calc-budget" max="4" min="1" oninput="calculateTier()" type="range" value="2"/>
+                  <div class="flex justify-between font-label-code text-[10px] text-on-surface-variant mt-0.5">
+                    <span>{'< 200 ألف' if is_ar else '< $50k'}</span>
+                    <span>{'1 مليون' if is_ar else '$250k'}</span>
+                    <span>{'2 مليون' if is_ar else '$750k'}</span>
+                    <span>{'> 10 مليون' if is_ar else '> $2M+'}</span>
+                  </div>
+                </div>
+
+                <!-- Duration Slider -->
+                <div>
+                  <div class="flex justify-between font-body-sm text-body-sm mb-1">
+                    <span class="text-on-surface font-medium">{calc_duration_label}</span>
+                    <span class="font-label-code text-label-code text-secondary font-bold" id="calc-duration-label">{'6 - 12 شهراً' if is_ar else '6 - 12 Months'}</span>
+                  </div>
+                  <input class="w-full accent-secondary cursor-pointer" id="calc-duration" max="4" min="1" oninput="calculateTier()" type="range" value="2"/>
+                  <div class="flex justify-between font-label-code text-[10px] text-on-surface-variant mt-0.5">
+                    <span>{'< 3 أشهر' if is_ar else '< 3 Mos'}</span>
+                    <span>{'6 أشهر' if is_ar else '6 Mos'}</span>
+                    <span>{'12 شهراً' if is_ar else '12 Mos'}</span>
+                    <span>{'> 18 شهراً' if is_ar else '> 18 Mos'}</span>
+                  </div>
+                </div>
+
+                <!-- Delivery Methodology Radio -->
+                <div>
+                  <label class="block font-body-sm text-body-sm font-medium text-on-surface mb-2">{calc_method_label}</label>
+                  <div class="grid grid-cols-2 gap-space-xs font-body-sm text-body-sm">
+                    <label class="p-2 rounded bg-surface-container-low flex items-center gap-2 cursor-pointer hover:bg-surface-container">
+                      <input checked="" class="accent-secondary" name="delivery_type" onchange="calculateTier()" type="radio" value="predictive"/>
+                      <span class="text-[13px] text-on-surface">{calc_method_opt1}</span>
+                    </label>
+                    <label class="p-2 rounded bg-surface-container-low flex items-center gap-2 cursor-pointer hover:bg-surface-container">
+                      <input class="accent-secondary" name="delivery_type" onchange="calculateTier()" type="radio" value="agile"/>
+                      <span class="text-[13px] text-on-surface">{calc_method_opt2}</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Regulatory / Compliance Checkbox -->
+                <div>
+                  <label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+                    <input class="accent-secondary w-4 h-4 rounded" id="calc-compliance" onchange="calculateTier()" type="checkbox"/>
+                    <div class="font-body-sm text-[12.5px] text-on-surface">
+                      <strong>{calc_comp_label}</strong>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recommendation Result Card -->
+            <div class="mt-space-lg p-space-md rounded-xl bg-surface-container text-on-surface">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">{rec_badge_label}</span>
+                <span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-bold" id="rec-tier-badge">{'المستوى 2: أساسي معتمد' if is_ar else 'Tier 2: Standard Core'}</span>
+              </div>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface" id="rec-title">{'حزمة حوكمة خط الأساس المتوازن' if is_ar else 'Balanced Baseline Governance Pack'}</h4>
+              <p class="font-body-sm text-[12.5px] text-on-surface-variant mt-1" id="rec-desc">
+                {'تلزم 18 تسليمة رئيسية بما يشمل نطاق WBS، الجدول الزمني، خطوط أساس التكلفة ومصفوفة RACI. تتطلب اعتماد البوابات 1، 2، 3 و5.' if is_ar else 'Enforces 18 critical artifacts including Scope WBS, Schedule, Cost Baselines, and RACI. Requires Gate 1, Gate 2, Gate 3, and Gate 5 formal signoffs.'}
+              </p>
+              <div class="mt-space-md pt-space-sm flex items-center justify-between flex-wrap gap-2">
+                <div class="font-label-code text-[11px] text-on-surface-variant">
+                  {'حجم الحزمة:' if is_ar else 'Bundle Size:'} <strong class="text-secondary font-bold" id="rec-count">{'18 تسليمة ثنائية اللغة' if is_ar else '18 Bilingual Deliverables'}</strong>
+                </div>
+                <button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold cursor-pointer" onclick="downloadProfilePack()" type="button">
+                  {download_pack_btn}
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 4: Bilingual Governance Lexicon & Standards Alignment Strip -->
+        <section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md mb-space-lg">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between pb-space-md gap-space-sm">
+            <div>
+              <span class="font-badge-caps text-badge-caps text-secondary uppercase tracking-wider font-bold">{sec4_eyebrow}</span>
+              <h3 class="font-headline-md text-headline-md text-on-surface mt-0.5">{sec4_title}</h3>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant max-w-lg">
+              {sec4_desc}
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-sm font-body-sm text-body-sm">
+            <div class="bg-surface-container-low p-space-md rounded-lg">
+              <span class="font-label-code text-[11px] text-on-surface-variant uppercase block">Stage-Gate Review</span>
+              <div class="font-headline-sm text-[15px] text-on-surface mt-1 font-semibold">مراجعة بوابات المراحل</div>
+              <p class="font-body-sm text-[12px] text-on-surface-variant mt-1">{'جلسة مراجعة رسمية لتقييم جدوى المشروع والموافقة على الانتقال للمرحلة التالية.' if is_ar else 'Formal review meeting to evaluate project feasibility and proceed to the next phase.'}</p>
+            </div>
+            <div class="bg-surface-container-low p-space-md rounded-lg">
+              <span class="font-label-code text-[11px] text-on-surface-variant uppercase block">Benefits Realization Plan</span>
+              <div class="font-headline-sm text-[15px] text-on-surface mt-1 font-semibold">خطة تحقيق المنافع</div>
+              <p class="font-body-sm text-[12px] text-on-surface-variant mt-1">{'تقيس العائد الملموس على الاستثمار (ROI)، والمخرجات الاستراتيجية ومؤشرات الأداء بعد الإطلاق.' if is_ar else 'Measures tangible ROI, strategic outcomes, and post-implementation KPIs.'}</p>
+            </div>
+            <div class="bg-surface-container-low p-space-md rounded-lg">
+              <span class="font-label-code text-[11px] text-on-surface-variant uppercase block">Baseline Authorization</span>
+              <div class="font-headline-sm text-[15px] text-on-surface mt-1 font-semibold">اعتماد خطوط الأساس المرجعية</div>
+              <p class="font-body-sm text-[12px] text-on-surface-variant mt-1">{'تثبيت النطاق والجدول الزمني والتكلفة المعتمدة بحيث لا تتغير إلا عبر طلب تغيير رسمي (CR).' if is_ar else 'Approved scope, schedule, and cost baseline that can only change via formal CR.'}</p>
+            </div>
+            <div class="bg-surface-container-low p-space-md rounded-lg">
+              <span class="font-label-code text-[11px] text-on-surface-variant uppercase block">Handover &amp; Operational Transition</span>
+              <div class="font-headline-sm text-[15px] text-on-surface mt-1 font-semibold">التسليم التشغيلي والإغلاق</div>
+              <p class="font-body-sm text-[12px] text-on-surface-variant mt-1">{'نقل الملكية والوثائق والضمانات إلى العمليات التشغيلية والإغلاق الإداري والعقدي التام.' if is_ar else 'Final transfer of ownership, documentation, warranty, and administrative closure.'}</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    const isArabic = {'true' if is_ar else 'false'};
+    const relRoot = "{rel_root}";
+
+    const gatesData = [
+      {{
+        id: 0,
+        code: "GATE 00",
+        title: isArabic ? "فكرة المشروع والمواءمة الاستراتيجية للمحفظة" : "Concept & Strategic Portfolio Alignment",
+        arabicTitle: "فكرة المشروع والمواءمة الاستراتيجية",
+        phaseRange: isArabic ? "المرحلة 00 → 01" : "Phase 00 → 01",
+        description: isArabic 
+          ? "تقييم المواءمة الاستراتيجية المؤسسية، والجدوى المبدئية، وتحديد أولوية المبادرة في المحفظة قبل تخصيص ميزانيات الاستكشاف أو إعداد دراسة الجدوى المفصلة."
+          : "Evaluates organizational strategic alignment, initial high-level feasibility, and portfolio prioritization rank before funding discovery or detailed business case resources.",
+        metric1Label: isArabic ? "حد المواءمة الاستراتيجية" : "Strategic Fit Threshold",
+        metric1Val: "> 78%",
+        metric1Sub: isArabic ? "متوافق مع مستهدفات رؤية 2030 و OKRs" : "Aligned with Vision 2030 OKRs",
+        metric2Label: isArabic ? "سقف ميزانية الاستكشاف" : "Discovery Budget Cap",
+        metric2Val: isArabic ? "130,000 ر.س" : "$35,000",
+        metric2Sub: isArabic ? "الحد الأقصى لتخصيص دراسة الجدوى" : "Max Feasibility Allocation",
+        raci: {{
+          sponsor: isArabic ? "مسؤول الحساب (A)" : "Accountable (A)",
+          pmo: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          lead: isArabic ? "مستشار (C)" : "Consulted (C)",
+          comm: isArabic ? "إحاطة وإعلام (I)" : "Informed (I)"
+        }},
+        checklist: [
+          {{
+            name: isArabic ? "تقييم المواءمة مع الأهداف الاستراتيجية (OKR)" : "OKR & Strategic Alignment Evaluation",
+            code: "OKF-00-02",
+            desc: isArabic ? "توثيق الارتباط الرسمي بالأهداف السنوية للمؤسسة مع تحديد الراعي التنفيذي المعتمد." : "Formal link documented to corporate annual pillar objectives with validated executive champion."
+          }},
+          {{
+            name: isArabic ? "رادار المخاطر والجدوى الأولية" : "Preliminary Risk & Feasibility Radar",
+            code: "OKF-00-04",
+            desc: isArabic ? "تحديد مبدئي للاعتماديات المؤسسية، والعوائق التنظيمية، والموانع التقنية المحتملة." : "High-level identification of enterprise dependencies, regulatory hurdles, and technical blockers."
+          }},
+          {{
+            name: isArabic ? "مؤشر أولوية القبول في المحفظة" : "Portfolio Intake Scoring & Priority Tier",
+            code: "OKF-00-06",
+            desc: isArabic ? "الحصول على درجة أولوية تتجاوز 65 نقطة كشرط إلزامي للترقية إلى دراسة الجدوى." : "Assigned portfolio priority score index (>65 points required for approval to Stage 1 Business Case)."
+          }}
+        ],
+        artifacts: [
+          {{ id: "00-01", name: isArabic ? "موجز خارطة الطريق" : "Roadmap Brief" }},
+          {{ id: "00-02", name: isArabic ? "خريطة الأهداف والنتائج" : "خريطة الأهداف (OKR)" }},
+          {{ id: "00-05", name: isArabic ? "بطاقة تقييم المحفظة" : "Scorecard JSON" }}
+        ]
+      }},
+      {{
+        id: 1,
+        code: "GATE 01",
+        title: isArabic ? "دراسة الجدوى وتبرير الأعمال" : "Business Case & Feasibility Sign-off",
+        arabicTitle: "دراسة الجدوى وحالة العمل",
+        phaseRange: isArabic ? "المرحلة 01 → 02" : "Phase 01 → 02",
+        description: isArabic
+          ? "التحقق الاقتصادي والمالي الصارم. تأكيد نسبة المنافع إلى التكاليف، وصافي القيمة الحالية (NPV)، ومعدل العائد الداخلي (IRR)، والتكلفة الإجمالية للملكية (TCO) على مدى 3 سنوات."
+          : "Rigorous economic verification. Confirms cost-benefit ratio, Net Present Value (NPV), Internal Rate of Return (IRR), and total cost of ownership (TCO) across 3-year timeline.",
+        metric1Label: isArabic ? "صافي القيمة الحالية الأدنى" : "Minimum Hurdle NPV",
+        metric1Val: isArabic ? "675,000 ر.س" : "$180,000",
+        metric1Sub: isArabic ? "معدل العائد الداخلي IRR > 18.5%" : "IRR > 18.5% over 3-years",
+        metric2Label: isArabic ? "فترة استرداد رأس المال" : "Payback Period",
+        metric2Val: isArabic ? "< 14 شهراً" : "< 14 Months",
+        metric2Sub: isArabic ? "الحد الأقصى لاسترداد Capex" : "Capex recovery limit",
+        raci: {{
+          sponsor: isArabic ? "مسؤول الحساب (A)" : "Accountable (A)",
+          pmo: isArabic ? "مستشار (C)" : "Consulted (C)",
+          lead: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          comm: isArabic ? "مسؤول الحساب (A)" : "Accountable (A)"
+        }},
+        checklist: [
+          {{
+            name: isArabic ? "النموذج المالي لدراسة الجدوى (DCF / NPV / IRR)" : "Certified Business Case Model (DCF / NPV / IRR)",
+            code: "OKF-01-01",
+            desc: isArabic ? "نموذج مالي مدقق ومصدق من الإدارة المالية مع تحليل الحساسية وتقييم السيناريوهات." : "Financial model audited by corporate finance controller including sensitivity analysis."
+          }},
+          {{
+            name: isArabic ? "إطار تحقيق المنافع ومؤشرات القيمة" : "Benefits Realization Framework",
+            code: "OKF-01-02",
+            desc: isArabic ? "تحديد ملاك المنافع مع مؤشرات قياس كمية وجدول زمني فصلي للقياس بعد الإطلاق." : "Identified benefit owners with measurable KPIs and quarterly post-launch measurement timetable."
+          }},
+          {{
+            name: isArabic ? "تقرير تقييم البدائل والخيارات التقنية" : "Feasibility & Alternative Evaluation Report",
+            code: "OKF-01-04",
+            desc: isArabic ? "مقارنة منهجية لسيناريوهات البناء الذاتي مقابل الشراء أو الشراكة مع وزن المخاطر." : "Comparison of Build vs Buy vs Partner scenarios with operational risk weighting."
+          }}
+        ],
+        artifacts: [
+          {{ id: "01-01", name: isArabic ? "نموذج دراسة الجدوى" : "Business Case Model" }},
+          {{ id: "01-02", name: isArabic ? "خطة تحقيق المنافع" : "خطة تحقيق المنافع" }},
+          {{ id: "01-04", name: isArabic ? "تقرير الجدوى الفنية" : "Feasibility Schema" }}
+        ]
+      }},
+      {{
+        id: 2,
+        code: "GATE 02",
+        title: isArabic ? "اعتماد ميثاق المشروع والترخيص الرسمي" : "Charter & Project Authorization",
+        arabicTitle: "ميثاق المشروع والتفويض الرسمي",
+        phaseRange: isArabic ? "المرحلة 03 → 04" : "Phase 03 → 04",
+        description: isArabic
+          ? "الترخيص المؤسسي الرسمي الذي يمنح مدير المشروع الصلاحية لتطبيق الموارد الرأسمالية والبشرية للمنظمة في أنشطة المشروع المعتمدة."
+          : "Formal authorization charter granting the Project Manager institutional authority to apply organizational capital and resources to project activities.",
+        metric1Label: isArabic ? "سقف الميزانية المفوضة بالميثاق" : "Charter Delegated Cap",
+        metric1Val: isArabic ? "2,400,000 ر.س" : "$650,000",
+        metric1Sub: isArabic ? "الحد المصرح به للشريحة الأولى" : "Tranche 1 Authorized Limit",
+        metric2Label: isArabic ? "إجماع أصحاب المصلحة" : "Stakeholder Consensus",
+        metric2Val: "100%",
+        metric2Sub: isArabic ? "توقيع الرعاة الرئيسيين" : "Key Sponsors Signed",
+        raci: {{
+          sponsor: isArabic ? "مسؤول الحساب (A)" : "Accountable (A)",
+          pmo: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          lead: isArabic ? "مستشار (C)" : "Consulted (C)",
+          comm: isArabic ? "إحاطة وإعلام (I)" : "Informed (I)"
+        }},
+        checklist: [
+          {{
+            name: isArabic ? "توقيع ميثاق المشروع التنفيذي" : "Executive Project Charter Sign-off",
+            code: "OKF-03-01",
+            desc: isArabic ? "تحديد حدود النطاق، والمعالم الرئيسية، والميزانية المعتمدة بتوقيع خطي من الراعي." : "Scope boundary, milestones, assigned PM, and authorized budget endorsed in writing by Sponsor."
+          }},
+          {{
+            name: isArabic ? "سجل أصحاب المصلحة ومصفوفة التأثير" : "Stakeholder Register & Power-Interest Grid",
+            code: "OKF-03-03",
+            desc: isArabic ? "تصنيف كافة المعنيين الداخليين والخارجيين ووضع استراتيجيات المشاركة والتواصل." : "Classification of all primary internal and external stakeholders with engagement strategies."
+          }},
+          {{
+            name: isArabic ? "سجل الافتراضات والقيود الأولية" : "Initial Assumption & Constraint Log",
+            code: "OKF-03-02",
+            desc: isArabic ? "توثيق الاعتماديات المرجعية والقيود التنظيمية ومحددات الحوكمة المؤسسية." : "Documented baseline dependencies, operational constraints, and governance parameters."
+          }}
+        ],
+        artifacts: [
+          {{ id: "03-01", name: isArabic ? "ميثاق المشروع المعتمد" : "Project Charter" }},
+          {{ id: "03-02", name: isArabic ? "سجل الافتراضات والقيود" : "سجل الافتراضات" }},
+          {{ id: "03-03", name: isArabic ? "سجل أصحاب المصلحة" : "Stakeholder Grid" }}
+        ]
+      }},
+      {{
+        id: 3,
+        code: "GATE 03",
+        title: isArabic ? "اعتماد خطوط الأساس المتكاملة (الخطة الشاملة)" : "Baselines & Integrated Plan Approval",
+        arabicTitle: "اعتماد خطوط الأساس المتكاملة",
+        phaseRange: isArabic ? "المرحلة 04 → 05" : "Phase 04 → 05",
+        description: isArabic
+          ? "تثبيت القيد الثلاثي للمشروع (النطاق، الجدول، التكلفة). اعتماد هيكل تجزئة العمل (WBS)، وجدول المسار الحرج (CPM)، ومنحنى التكلفة (S-Curve)، وسجل المخاطر الشامل."
+          : "The frozen triple constraint. Approval of Work Breakdown Structure (WBS), Critical Path Schedule, Cost S-Curve, and Comprehensive Risk Register.",
+        metric1Label: isArabic ? "احتياطي الطوارئ للجدول" : "Schedule Contingency",
+        metric1Val: "15% Buffer",
+        metric1Sub: isArabic ? "حماية المسار الحرج" : "Critical path protected",
+        metric2Label: isArabic ? "احتياطي الإدارة المالي" : "Management Reserve",
+        metric2Val: "10% Capex",
+        metric2Sub: isArabic ? "مخصص للمخاطر غير المتوقعة" : "Held for unpredicted risks",
+        raci: {{
+          sponsor: isArabic ? "مسؤول الحساب (A)" : "Accountable (A)",
+          pmo: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          lead: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          comm: isArabic ? "إحاطة وإعلام (I)" : "Informed (I)"
+        }},
+        checklist: [
+          {{
+            name: isArabic ? "خط أساس النطاق وقاموس WBS الكامل" : "Scope Baseline & 100% Rule WBS Dictionary",
+            code: "OKF-04-01",
+            desc: isArabic ? "تفكيك النطاق إلى أدنى مستوى لحزم العمل مع معايير قبول واضحة لجميع التسليمات." : "Decomposed scope to lowest work package level with clear acceptance criteria for all deliverables."
+          }},
+          {{
+            name: isArabic ? "خط الأساس للجدول الزمني بالمسار الحرج" : "CPM Master Schedule Baseline",
+            code: "OKF-04-08",
+            desc: isArabic ? "تحديد المسار الحرج، وتثبيت مواعيد المعالم الرئيسية، وتسوية الموارد المخصصة." : "Critical path identified, milestone deadlines anchored, resource leveled."
+          }},
+          {{
+            name: isArabic ? "خط أساس التكلفة ومنحنى التدفق المالي" : "Cost Baseline & Approved S-Curve",
+            code: "OKF-04-14",
+            desc: isArabic ? "ميزانية مرحلية زمنياً مرتبطة مباشرة بحسابات حزم العمل وهيكل التجزئة." : "Time-phased project budget mapped directly to work package accounts."
+          }},
+          {{
+            name: isArabic ? "سجل المخاطر والفرص المؤسسي" : "Enterprise Risk & Opportunity Register",
+            code: "OKF-04-20",
+            desc: isArabic ? "تقييم احتمالية وأثر المخاطر مع خطط استجابة معتمدة ومخصصات مالية مرصودة." : "Probabilistic scoring with assigned action owners and funded mitigation reserves."
+          }}
+        ],
+        artifacts: [
+          {{ id: "04-01", name: isArabic ? "مواصفة نطاق WBS" : "Scope WBS Spec" }},
+          {{ id: "04-08", name: isArabic ? "جدول خط الأساس" : "Schedule Baseline" }},
+          {{ id: "04-20", name: isArabic ? "سجل المخاطر الرقمي" : "Risk Register JSON" }}
+        ]
+      }},
+      {{
+        id: 4,
+        code: "GATE 04",
+        title: isArabic ? "مراجعة صحة المشروع والتقدم النصفي" : "Execution & Mid-Stage Health Check",
+        arabicTitle: "فحص الصحة التشغيلية ومنتصف التنفيذ",
+        phaseRange: isArabic ? "المرحلة 05 → 06" : "Phase 05 → 06",
+        description: isArabic
+          ? "تدقيق تشغيلي لمؤشرات القيمة المكتسبة (EVA)، وانحرافات التكلفة والجدول الزمني، ومعدل الاستنزاف، والمشاكل الحرجة، وأوامر التغيير المعتمدة."
+          : "Operational audit of Earned Value metrics, cost & schedule variance, burn rates, unmitigated critical issues, and approved change orders.",
+        metric1Label: isArabic ? "مؤشر أداء الجدول (SPI)" : "EVA SPI Hurdle",
+        metric1Val: "0.95 - 1.05",
+        metric1Sub: isArabic ? "مؤشر كفاءة الجدولة الزمنية" : "Schedule Performance Index",
+        metric2Label: isArabic ? "مؤشر أداء التكلفة (CPI)" : "EVA CPI Hurdle",
+        metric2Val: "0.95 - 1.02",
+        metric2Sub: isArabic ? "مؤشر كفاءة الإنفاق المالي" : "Cost Performance Index",
+        raci: {{
+          sponsor: isArabic ? "إحاطة وإعلام (I)" : "Informed (I)",
+          pmo: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          lead: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          comm: isArabic ? "مستشار (C)" : "Consulted (C)"
+        }},
+        checklist: [
+          {{
+            name: isArabic ? "تدقيق تحليل القيمة المكتسبة (EVM / EVA)" : "Earned Value Analysis Audit (EVA / EVM)",
+            code: "OKF-06-03",
+            desc: isArabic ? "تأكيد أن مؤشرات SPI و CPI >= 0.95 مع بقاء التقدير عند الاكتمال (EAC) ضمن التفاوت." : "Confirmed SPI >= 0.95 and CPI >= 0.95 with EAC within budget tolerance."
+          }},
+          {{
+            name: isArabic ? "مراجعة سجل المشاكل وطلبات التغيير" : "Issue Log & Change Request Status Review",
+            code: "OKF-05-02",
+            desc: isArabic ? "خلو المشروع من معوقات حرجة P1 غير معالجة؛ وتقييم الأثر التراكمي لكافة التغييرات." : "No unassigned P1 blockers; all active change orders evaluated for cumulative impact."
+          }},
+          {{
+            name: isArabic ? "ضمان الجودة واعتماد التسليمات" : "Quality Assurance & Deliverable Acceptance",
+            code: "OKF-06-05",
+            desc: isArabic ? "مطابقة المخرجات المفحوصة لمعايير القبول مع توقيع جهة الاعتماد الفنية للعميل." : "Tested artifacts conform to acceptance criteria signed off by client technical authority."
+          }}
+        ],
+        artifacts: [
+          {{ id: "05-02", name: isArabic ? "مركز طلبات التغيير" : "Change Request Hub" }},
+          {{ id: "06-01", name: isArabic ? "تقرير الحالة الشهري" : "Monthly Status Flash" }},
+          {{ id: "06-03", name: isArabic ? "ورقة حسابات EVA" : "EVA Calculation Sheet" }}
+        ]
+      }},
+      {{
+        id: 5,
+        code: "GATE 05",
+        title: isArabic ? "الإغلاق المؤسسي، التسليم التشغيلي وتحقيق القيمة" : "Operational Handover & Closure",
+        arabicTitle: "التسليم التشغيلي والإغلاق المؤسسي",
+        phaseRange: isArabic ? "المرحلة 07 والقيمة" : "Phase 07 Value",
+        description: isArabic
+          ? "النقل الرسمي للعمليات التشغيلية، ومطابقة الحسابات الختامية للموردين، وتوثيق الدروس المستفادة، وتفعيل جدول تتبع تحقيق المنافع."
+          : "Transfer to business operations, final vendor reconciliation, lessons learned knowledge capture, and benefits tracking schedule handoff.",
+        metric1Label: isArabic ? "معالجة قائمة الملاحظات (Punchlist)" : "Punchlist Resolution",
+        metric1Val: "100% Cleared",
+        metric1Sub: isArabic ? "خلو المشروع من عيوب الدرجة الأولى" : "Zero Sev-1 defects remaining",
+        metric2Label: isArabic ? "المطابقة المالية والعقدية" : "Contract Reconciliation",
+        metric2Val: isArabic ? "مكتملة ومدققة" : "Audited",
+        metric2Sub: isArabic ? "الإفراج عن الدفعة الختامية المحتجزة" : "Final retainage released",
+        raci: {{
+          sponsor: isArabic ? "مسؤول الحساب (A)" : "Accountable (A)",
+          pmo: isArabic ? "مسؤول التنفيذ (R)" : "Responsible (R)",
+          lead: isArabic ? "مستشار (C)" : "Consulted (C)",
+          comm: isArabic ? "إحاطة وإعلام (I)" : "Informed (I)"
+        }},
+        checklist: [
+          {{
+            name: isArabic ? "محضر التسليم والاعتماد التشغيلي النهائي" : "Operational Handover & Sign-Off Document",
+            code: "OKF-07-02",
+            desc: isArabic ? "قبول فرق التشغيل والصيانة لملكية الخدمة، وتأكيد اكتمال التدريب واتفاقيات SLA." : "Operations & Maintenance teams have accepted service ownership, training, and SLAs."
+          }},
+          {{
+            name: isArabic ? "مستودع الدروس المستفادة والتحليل الختامي" : "Retrospective & Lessons Learned Repository",
+            code: "OKF-07-01",
+            desc: isArabic ? "توثيق التغذية الراجعة وحفظها في مكتبة أصول PMO لتحديث معايير التقدير المؤسسية." : "Codified team feedback stored in PMO asset library to update corporate estimation norms."
+          }},
+          {{
+            name: isArabic ? "التدقيق المالي النهائي وإغلاق العقود" : "Final Financial Audit & Contract Closeouts",
+            code: "OKF-07-04",
+            desc: isArabic ? "تسوية كافة أوامر الشراء والمطالبات العقدية، والإفراج عن الضمانات البنكية، وإغلاق الحسابات." : "All vendor purchase orders liquidated, retainage reconciled, accounts closed."
+          }}
+        ],
+        artifacts: [
+          {{ id: "07-01", name: isArabic ? "قاعدة الدروس المستفادة" : "Lessons Learned DB" }},
+          {{ id: "07-02", name: isArabic ? "وثيقة التسليم التشغيلي" : "Operational Handover" }},
+          {{ id: "07-04", name: isArabic ? "شهادة الإغلاق النهائي" : "Closure Certificate" }}
+        ]
+      }}
+    ];
+
+    let currentGateIdx = 0;
+    let currentRecTier = 't2';
+
+    function selectGate(index) {{
+      currentGateIdx = index;
+      const btns = document.querySelectorAll('#gate-tabs .gate-btn');
+      btns.forEach((b, i) => {{
+        if (i === index) {{
+          b.className = "gate-btn active bg-primary text-on-primary p-space-sm rounded-lg flex flex-col items-start transition-all shadow-sm cursor-pointer";
+        }} else {{
+          b.className = "gate-btn bg-surface-container text-on-surface p-space-sm rounded-lg flex flex-col items-start transition-all hover:bg-surface-container-high shadow-sm cursor-pointer";
+        }}
+      }});
+
+      const g = gatesData[index];
+      const container = document.getElementById('gate-content-render');
+
+      let checklistHTML = g.checklist.map((item, idx) => `
+        <label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+          <input type="checkbox" checked class="mt-1 rounded text-secondary focus:ring-0 w-4 h-4 cursor-pointer" onchange="updateChecklist()">
+          <div class="flex-1">
+            <div class="flex items-center justify-between">
+              <span class="font-body-sm text-body-sm font-semibold text-on-surface">${{item.name}}</span>
+              <span class="font-label-code text-[11px] text-secondary font-bold">${{item.code}}</span>
+            </div>
+            <p class="font-body-sm text-[12.5px] text-on-surface-variant mt-0.5">${{item.desc}}</p>
+          </div>
+        </label>
+      `).join('');
+
+      let artifactsHTML = g.artifacts.map(art => `
+        <div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between">
+          <div>
+            <span class="font-label-code text-[11px] text-on-surface-variant block">${{art.id}}</span>
+            <span class="font-body-sm text-body-sm font-semibold text-on-surface">${{art.name}}</span>
+          </div>
+          <span class="material-symbols-outlined text-secondary text-base">download_for_offline</span>
+        </div>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+          <div class="lg:col-span-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-space-sm mb-2">
+                <span class="px-space-sm py-0.5 rounded bg-surface-container text-secondary font-label-code text-label-code font-bold">${{g.code}}</span>
+                <span class="font-label-code text-label-code text-on-surface-variant">${{g.phaseRange}}</span>
+              </div>
+              <h3 class="font-headline-lg text-headline-lg text-on-surface">${{g.title}}</h3>
+              <p class="font-body-base text-body-base text-on-surface-variant mt-2">
+                ${{g.description}}
+              </p>
+
+              <div class="mt-space-md grid grid-cols-2 gap-space-sm">
+                <div class="bg-surface-container-low p-space-sm rounded-lg">
+                  <span class="font-label-code text-[11px] text-on-surface-variant uppercase block">${{g.metric1Label}}</span>
+                  <span class="font-headline-md text-headline-md text-on-surface font-bold">${{g.metric1Val}}</span>
+                  <span class="font-body-sm text-[12px] text-secondary block mt-0.5">${{g.metric1Sub}}</span>
+                </div>
+                <div class="bg-surface-container-low p-space-sm rounded-lg">
+                  <span class="font-label-code text-[11px] text-on-surface-variant uppercase block">${{g.metric2Label}}</span>
+                  <span class="font-headline-md text-headline-md text-on-surface font-bold">${{g.metric2Val}}</span>
+                  <span class="font-body-sm text-[12px] text-on-surface-variant block mt-0.5">${{g.metric2Sub}}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-space-lg bg-surface-container p-space-md rounded-lg">
+              <span class="font-badge-caps text-badge-caps text-on-surface uppercase tracking-wider block mb-space-sm font-bold">${{isArabic ? 'مصفوفة صلاحيات الحوكمة (RACI)' : 'RACI Sign-Off Governance'}}</span>
+              <div class="grid grid-cols-4 gap-2 text-center font-label-code text-label-code">
+                <div class="bg-surface-container-lowest p-2 rounded">
+                  <span class="text-on-surface-variant text-[10px] block">${{isArabic ? 'الراعي' : 'Sponsor'}}</span>
+                  <span class="font-bold text-on-surface mt-1 block text-xs">${{g.raci.sponsor}}</span>
+                </div>
+                <div class="bg-surface-container-lowest p-2 rounded">
+                  <span class="text-on-surface-variant text-[10px] block">${{isArabic ? 'مدير PMO' : 'PMO Director'}}</span>
+                  <span class="font-bold text-secondary mt-1 block text-xs">${{g.raci.pmo}}</span>
+                </div>
+                <div class="bg-surface-container-lowest p-2 rounded">
+                  <span class="text-on-surface-variant text-[10px] block">${{isArabic ? 'المعماري' : 'Lead Arch'}}</span>
+                  <span class="font-bold text-on-surface-variant mt-1 block text-xs">${{g.raci.lead}}</span>
+                </div>
+                <div class="bg-surface-container-lowest p-2 rounded">
+                  <span class="text-on-surface-variant text-[10px] block">${{isArabic ? 'لجنة التوجيه' : 'Steering'}}</span>
+                  <span class="font-bold text-on-surface-variant mt-1 block text-xs">${{g.raci.comm}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-space-sm">
+                <span class="font-badge-caps text-badge-caps text-on-surface uppercase tracking-wider font-bold">${{g.code}} ${{isArabic ? 'قائمة التدقيق الإلزامية' : 'Mandatory Audit Checklist'}}</span>
+                <span class="font-label-code text-label-code text-secondary font-bold" id="checklist-counter">${{isArabic ? `تم التحقق من ${{g.checklist.length}} من ${{g.checklist.length}}` : `${{g.checklist.length}} of ${{g.checklist.length}} Verified`}}</span>
+              </div>
+
+              <div class="space-y-space-xs mb-space-md" id="checklist-group">
+                ${{checklistHTML}}
+              </div>
+
+              <span class="font-badge-caps text-badge-caps text-on-surface uppercase tracking-wider block mb-space-xs font-bold">${{isArabic ? 'حزم التسليمات المتزامنة (معيار 5 ملفات)' : 'Synchronized Artifact Bundles (5-File Standard)'}}</span>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
+                ${{artifactsHTML}}
+              </div>
+            </div>
+
+            <div class="mt-space-md pt-space-sm flex items-center justify-between flex-wrap gap-2">
+              <div class="flex items-center gap-space-sm">
+                <span class="font-label-code text-label-code text-on-surface-variant">${{isArabic ? 'حالة الاعتماد:' : 'Gate Audit Status:'}}</span>
+                <span class="inline-flex items-center gap-1 font-label-code text-label-code text-secondary font-bold">
+                  <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> ${{isArabic ? 'جاهز للاعتماد والتوقيع' : 'Ready for Sign-Off'}}
+                </span>
+              </div>
+              <div class="flex items-center gap-space-xs">
+                <button type="button" onclick="exportGateDossier()" class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors font-medium cursor-pointer">${{isArabic ? 'تصدير ملف الحوكمة' : 'Export Dossier'}}</button>
+                <button type="button" onclick="recordGateDecision()" class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold cursor-pointer">${{isArabic ? 'تسجيل قرار البوابة' : 'Record Decision'}}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }}
+
+    function updateChecklist() {{
+      const boxes = document.querySelectorAll('#gate-content-render input[type="checkbox"]');
+      const checked = Array.from(boxes).filter(b => b.checked).length;
+      const counter = document.getElementById('checklist-counter');
+      if (counter) {{
+        counter.innerText = isArabic
+          ? `تم التحقق من ${{checked}} من ${{boxes.length}}`
+          : `${{checked}} of ${{boxes.length}} Verified`;
+      }}
+    }}
+
+    function calculateTier() {{
+      const budget = parseInt(document.getElementById('calc-budget').value, 10);
+      const duration = parseInt(document.getElementById('calc-duration').value, 10);
+      const method = document.querySelector('input[name="delivery_type"]:checked').value;
+      const isCompliant = document.getElementById('calc-compliance').checked;
+
+      const budgetLabels = isArabic 
+        ? ["< 200,000 ر.س (مصغر)", "200 ألف - 2 مليون (متوسط)", "2 - 10 مليون (كبير)", "> 10 مليون ر.س (مؤسسي)"]
+        : ["< $50,000 (Micro)", "$100k - $500k (Medium)", "$500k - $1.5M (Major)", "> $2,000,000+ (Enterprise)"];
+      
+      const durationLabels = isArabic
+        ? ["< 3 أشهر", "3 - 6 أشهر", "6 - 12 شهراً", "> 18 شهراً"]
+        : ["< 3 Months", "3 - 6 Months", "6 - 12 Months", "> 18+ Months"];
+      
+      document.getElementById('calc-budget-label').innerText = budgetLabels[budget - 1];
+      document.getElementById('calc-duration-label').innerText = durationLabels[duration - 1];
+
+      let score = budget * 2.5 + duration * 1.5;
+      if (isCompliant) score += 3.5;
+
+      const badge = document.getElementById('rec-tier-badge');
+      const title = document.getElementById('rec-title');
+      const desc = document.getElementById('rec-desc');
+      const count = document.getElementById('rec-count');
+
+      if (method === 'agile') {{
+        currentRecTier = 't4';
+        badge.innerText = isArabic ? "المستوى 4: مرن وذكاء اصطناعي" : "Tier 4: Agile & AI Iterative";
+        title.innerText = isArabic ? "حزمة حوكمة الذكاء الاصطناعي والتسليم الرشيق" : "AI RMF & Iterative Delivery Pack";
+        desc.innerText = isArabic
+          ? "تتضمن قوائم تراكم السبرنت، مقاييس التدفق والاحتراق، بطاقات نماذج NIST AI Model Cards، وتحليل مخاطر الانحياز، والمراجعات الاسترجاعية المستمرة."
+          : "Includes Sprint Backlogs, Burndown & Flow Metrics, NIST AI Model Cards, Bias Risk Analysis, and continuous retrospective governance.";
+        count.innerText = isArabic ? "25 تسليمة متخصصة" : "25 Specialized Deliverables";
+      }} else if (score <= 5) {{
+        currentRecTier = 't1';
+        badge.innerText = isArabic ? "المستوى 1: مصغر ورشيق" : "Tier 1: Micro / Lean";
+        title.innerText = isArabic ? "حزمة السرعة وخفة الحركة للمشاريع" : "Lightweight Project Velocity Pack";
+        desc.innerText = isArabic
+          ? "الحد الأدنى من الحوكمة الكافية للمشاريع منخفضة المخاطر. تركز على ميثاق مصغر، جدول معالم، وسجل موحد للمهام والمشاكل، ومحضر تسليم."
+          : "Minimum viable governance for low-risk initiatives. Concentrates on Charter, Milestone schedule, Action item tracker, and Handover note.";
+        count.innerText = isArabic ? "5 نماذج أساسية" : "5 Core Bilingual Templates";
+      }} else if (score <= 10) {{
+        currentRecTier = 't2';
+        badge.innerText = isArabic ? "المستوى 2: أساسي معتمد" : "Tier 2: Standard Core";
+        title.innerText = isArabic ? "حزمة حوكمة خط الأساس المتوازن" : "Balanced Baseline Governance Pack";
+        desc.innerText = isArabic
+          ? "نطاق WBS كامل، جدول بالمسار الحرج، خطوط أساس التكلفة، ومصفوفة المخاطر والتواصل. تلزم البوابات 1 و 2 و 3 و 5."
+          : "Full scope WBS, Critical Path Schedule, Cost Baselines, Risk Matrix, and Communication Plan. Enforces Gates 1, 2, 3, and 5.";
+        count.innerText = isArabic ? "18 تسليمة معتمدة" : "18 Standard Deliverables";
+      }} else {{
+        currentRecTier = 't3';
+        badge.innerText = isArabic ? "المستوى 3: تحول مؤسسي شامل" : "Tier 3: Enterprise Transformation";
+        title.innerText = isArabic ? "حزمة المشاريع الرأسمالية المؤسسية الكبرى" : "Institutional Enterprise Capex Pack";
+        desc.innerText = isArabic
+          ? "إلزامية للمحافظ الكبرى والمشاريع متعددة الموردين. تتطلب مراجعات لجنة التوجيه، وكراسات الشروط، وتدقيق البوابات الست كاملة."
+          : "Mandated for multi-vendor portfolios and institutional capex. Requires formal Steering Committee reviews, SOWs, and complete 6-gate reviews.";
+        count.innerText = isArabic ? "45+ تسليمة إلزامية" : "45+ Complete Governance Artifacts";
+      }}
+    }}
+
+    function exportGateDossier() {{
+      const g = gatesData[currentGateIdx] || gatesData[0];
+      const boxes = document.querySelectorAll('#gate-content-render input[type="checkbox"]');
+      const checked = Array.from(boxes).filter(b => b.checked).length;
+
+      const dossierContent = `# ${{g.code}} Governance Dossier - ${{g.title}}
+**${{isArabic ? 'نطاق المرحلة:' : 'Phase Range:'}}** ${{g.phaseRange}}
+**${{isArabic ? 'تاريخ التوليد:' : 'Date Generated:'}}** ${{new Date().toISOString().split('T')[0]}}
+**${{isArabic ? 'حالة التدقيق:' : 'Audit Status:'}}** ${{checked}} of ${{g.checklist.length}} Checklist Items Verified
+
+---
+
+## 1. ${{isArabic ? 'الملخص التنفيذي والهدف' : 'Executive Summary & Purpose'}}
+${{g.description}}
+
+### ${{isArabic ? 'المؤشرات والحدود الدنيا:' : 'Key Thresholds & Metrics:'}}
+- **${{g.metric1Label}}:** ${{g.metric1Val}} (${{g.metric1Sub}})
+- **${{g.metric2Label}}:** ${{g.metric2Val}} (${{g.metric2Sub}})
+
+---
+
+## 2. ${{isArabic ? 'مصفوفة صلاحيات الحوكمة (RACI)' : 'RACI Governance Sign-Off Matrix'}}
+| Role | Responsibility |
+|---|---|
+| ${{isArabic ? 'الراعي التنفيذي (Sponsor)' : 'Project Sponsor'}} | ${{g.raci.sponsor}} |
+| ${{isArabic ? 'مدير مكتب إدارة المشاريع (PMO Director)' : 'PMO Director'}} | ${{g.raci.pmo}} |
+| ${{isArabic ? 'كبير المعماريين (Lead Enterprise Architect)' : 'Lead Enterprise Architect'}} | ${{g.raci.lead}} |
+| ${{isArabic ? 'مجلس التوجيه (Steering Committee)' : 'Steering Committee'}} | ${{g.raci.comm}} |
+
+---
+
+## 3. ${{isArabic ? 'حالة قائمة التدقيق الإلزامية' : 'Mandatory Audit Checklist Status'}}
+${{g.checklist.map((c, i) => `- [${{boxes[i] && boxes[i].checked ? 'x' : ' '}}] **${{c.name}}** (\`${{c.code}}\`): ${{c.desc}}`).join('\\n')}}
+
+---
+
+## 4. ${{isArabic ? 'التسليمات المعتمدة المرتبطة' : 'Minimum Required Deliverables'}}
+${{g.artifacts.map(a => `- **${{a.id}}:** ${{a.name}}`).join('\\n')}}
+
+---
+*Tasleemat Enterprise PMO Operating System • Institutional Governance Engine*
+`;
+
+      const blob = new Blob([dossierContent], {{ type: 'text/markdown;charset=utf-8' }});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Gate-Dossier-${{g.code.replace(/\\s+/g, '_')}}.md`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      alert(isArabic 
+        ? `تم تصدير ملف حوكمة ${{g.code}} بنجاح بصيغة Markdown!` 
+        : `Gate Dossier for ${{g.code}} exported successfully as Markdown!`);
+    }}
+
+    function recordGateDecision() {{
+      const g = gatesData[currentGateIdx] || gatesData[0];
+      const decision = prompt(
+        isArabic 
+          ? `تسجيل قرار حوكمة ${{g.code}} (${{g.title}}):\\nأدخل رقم القرار:\\n1. اعتماد رسمي وموافقة على العبور (Approved - GO)\\n2. موافقة مشروطة مع خطة تصحيحية (Conditional Pass)\\n3. تعليق أو إيقاف المشروع (Hold / Escalation)`
+          : `Record Gate Review Sign-off Decision for ${{g.code}} (${{g.title}}):\\nEnter choice number:\\n1. Formal Approval & Transition (Approved - GO)\\n2. Conditional Approval (Pending Actions)\\n3. Gate Hold / Escalation`,
+        "1"
+      );
+
+      if (!decision) return;
+
+      let decisionText = isArabic ? "معتمد رسمياً (Approved - GO)" : "Approved (GO)";
+      if (decision === "2") decisionText = isArabic ? "موافقة مشروطة (Conditional Pass)" : "Conditional Approval (Pending Actions)";
+      if (decision === "3") decisionText = isArabic ? "إيقاف مؤقت / تصعيد (Hold / Escalation)" : "Gate Hold / Escalated to Steering Committee";
+
+      const timestamp = new Date().toLocaleString();
+      const logEntry = `[${{timestamp}}] ${{g.code}} Sign-off Decision: ${{decisionText}}`;
+      
+      try {{
+        const existing = JSON.parse(localStorage.getItem('tasleemat_gate_decisions') || '[]');
+        existing.push({{ gate: g.code, decision: decisionText, timestamp: timestamp }});
+        localStorage.setItem('tasleemat_gate_decisions', JSON.stringify(existing));
+      }} catch (e) {{}}
+
+      alert(isArabic 
+        ? `تم تسجيل القرار رسمياً في سجل تدقيق الحوكمة:\\n${{logEntry}}` 
+        : `Gate Decision officially recorded in the Governance Audit Log:\\n${{logEntry}}`);
+    }}
+
+    function downloadProfilePack() {{
+      const catalogUrl = isArabic 
+        ? `${{relRoot}}catalog/ar/index.html?tier=${{currentRecTier}}`
+        : `${{relRoot}}catalog/en/index.html?tier=${{currentRecTier}}`;
+
+      const scaffoldCmd = `tasleemat init --tier ${{currentRecTier.replace('t', '')}} --pack standard --lang both`;
+      
+      if (navigator.clipboard) {{
+        navigator.clipboard.writeText(scaffoldCmd);
+      }}
+
+      alert(isArabic 
+        ? `تم نسخ أمر تجهيز الحزمة إلى الحافظة:\\n${{scaffoldCmd}}\\n\\nجاري نقلك إلى كتالوج النماذج المصفى لهذا المستوى...`
+        : `Scaffold CLI command copied to clipboard:\\n${{scaffoldCmd}}\\n\\nNavigating to filtered deliverables catalog...`);
+      
+      window.location.href = catalogUrl;
+    }}
+
+    // Initialize initial gate
+    document.addEventListener('DOMContentLoaded', () => {{
+      selectGate(0);
+      calculateTier();
+    }});
+  </script>
+</body>
+</html>
+"""
