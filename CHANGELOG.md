@@ -15,6 +15,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.3.1] - 2026-10-11 — Portal Enhancements, Cryptographic Audit Trail & Release Polish
+
+### 🔒 Governance & Cryptographic Integrity
+- **SHA-256 Electronic Audit Trail:** Embedded standardized audit trail placeholders (`{{Audit_Trail_SHA256_Hash}}` in English and `{{رمز_تجزئة_التدقيق_SHA256}}` in Arabic) across all 228 project templates, positioned directly above template reference lines for post-approval signing.
+- **Automated CLI Hash Calculation:** Updated `tasleemat init` and workspace scaffolder to automatically compute cryptographic SHA-256 document hashes upon workspace generation.
+
+### 🌐 Web Portal & Usability Overhaul
+- **Catalog Filter Hit-Testing Fix:** Eliminated modal/drawer click-blocking overlays (`display: none`), restoring full interactivity for Phase and Tailoring Tier filters across both English and Arabic portals.
+- **Dedicated Bilingual Stage-Gate Portal (`governance_ar.html`):** Built a 100% Arabic symmetrical governance portal with interactive exit checklists for all 6 gates (Gate 00 to 05), RACI matrices, live decision logging to local audit history, and Markdown dossier export.
+- **Rendered Markdown in Deliverable Inspector:** Integrated `marked.js` to render formatted HTML (tables, checklists, badges) by default with an instant raw Markdown toggle in catalog slide-over drawers.
+- **Bilingual PMO Lexicon Page (`LEXICON.html`):** Added a dedicated standalone reference page indexing 164+ standardized PMI and DGA PMO terminology pairs.
+- **Executive Navigation & Author Profile:** Overhauled root `README.md` and `README_AR.md` with persona-based jump-links, visual 8-phase lifecycle charts, 4 tailoring tiers, and official maintainer links.
+
+### 📦 Packaging & Standards
+- **Open Knowledge Foundation (OKF) Data Package v2.3.1:** Updated root `datapackage.json` with 228 verified JSON schemas conforming to Frictionless Data specs.
+- **PyPI Release (v2.3.1):** Bumped version to `2.3.1` in `sdk/python/setup.py` and synchronized package distributions.
+
+---
+
+## [2.3.0] - 2026-10-10 — 114 Deliverables & Bidirectional Web Portal
+
+### 🚀 Highlights
+- **Expanded Deliverables Corpus:** Scaled from 102 to 114 comprehensive deliverables (228 total bilingual bundles).
+- **Bidirectional GitHub Pages Portal:** Launched executive documentation portal with full RTL/LTR parity deployed via GitHub Actions.
+- **Interactive Tailoring Sizing Tool:** Sizing calculator mapping project budget, duration, and risk profile to 4 governance tiers.
+
+---
+
 ## [2.0.0] - 2026-10-03 — Enterprise Bilingual Release
 
 ### 🚀 Major Highlights

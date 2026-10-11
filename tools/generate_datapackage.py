@@ -121,8 +121,8 @@ def build_datapackage():
         "profile": "data-package",
         "name": "tasleemat-pmo-framework",
         "title": "Tasleemat: Enterprise Bilingual (English & Arabic) Project Management Framework",
-        "description": "Complete open, machine-readable Project Management Office (PMO) artifact library with 102 bilingual deliverable JSON schemas conforming to PMI PMBOK® 6th, 7th & 8th Edition standards and the Open Knowledge Foundation (OKF) Frictionless Data specification.",
-        "version": "2.0.0",
+        "description": "Complete open, machine-readable Project Management Office (PMO) artifact library with 114 bilingual deliverable JSON schemas conforming to PMI PMBOK® 6th, 7th & 8th Edition standards and the Open Knowledge Foundation (OKF) Frictionless Data specification.",
+        "version": "2.3.1",
         "homepage": "https://github.com/fakhruldeen/Tasleemat",
         "licenses": [
             {
