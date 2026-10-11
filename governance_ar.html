@@ -319,8 +319,8 @@
                 </span>
 </div>
 <div class="flex items-center gap-space-xs">
-<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors font-medium" type="button">Export Dossier</button>
-<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold" type="button">Record Decision</button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors font-medium" onclick="exportGateDossier()" type="button">Export Dossier</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold" onclick="recordGateDecision()" type="button">Record Decision</button>
 </div>
 </div>
 </div>
@@ -504,7 +504,7 @@
 <div class="font-label-code text-[11px] text-on-surface-variant">
             Bundle Size: <strong class="text-secondary font-bold" id="rec-count">18 Bilingual Deliverables</strong>
 </div>
-<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold" type="button">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold" onclick="downloadProfilePack()" type="button">
             Download Profile Pack
           </button>
 </div>
@@ -815,8 +815,8 @@
               </span>
             </div>
             <div class="flex items-center gap-space-xs">
-              <button type="button" class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors font-medium">Export Dossier</button>
-              <button type="button" class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold">Record Decision</button>
+              <button type="button" onclick="exportGateDossier()" class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors font-medium">Export Dossier</button>
+              <button type="button" onclick="recordGateDecision()" class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:opacity-90 transition-opacity font-semibold">Record Decision</button>
             </div>
           </div>
         </div>
@@ -832,6 +832,15 @@
       counter.innerText = `${checked} of ${boxes.length} Verified`;
     }
   }
+
+  let currentGateIdx = 0;
+  const originalSelectGate = selectGate;
+  selectGate = function(index) {
+    currentGateIdx = index;
+    originalSelectGate(index);
+  };
+
+  let currentRecTier = 't2';
 
   // Interactive Tailoring Calculator Logic
   function calculateTier() {
@@ -856,25 +865,139 @@
     const count = document.getElementById('rec-count');
 
     if (method === 'agile') {
+      currentRecTier = 't4';
       badge.innerText = "Tier 4: Agile & AI Iterative";
       title.innerText = "AI RMF & Iterative Delivery Pack";
       desc.innerText = "Includes Sprint Backlogs, Burndown & Flow Metrics, NIST AI Model Cards, Bias Risk Analysis, and continuous retrospective governance.";
       count.innerText = "25 Specialized Deliverables";
     } else if (score <= 5) {
+      currentRecTier = 't1';
       badge.innerText = "Tier 1: Micro / Lean";
       title.innerText = "Lightweight Project Velocity Pack";
       desc.innerText = "Minimum viable governance for low-risk initiatives. Concentrates on Charter, Milestone schedule, Action item tracker, and Handover note.";
       count.innerText = "5 Core Bilingual Templates";
     } else if (score <= 10) {
+      currentRecTier = 't2';
       badge.innerText = "Tier 2: Standard Core";
       title.innerText = "Balanced Baseline Governance Pack";
       desc.innerText = "Full scope WBS, Critical Path Schedule, Cost Baselines, Risk Matrix, and Communication Plan. Enforces Gates 1, 2, 3, and 5.";
       count.innerText = "18 Standard Deliverables";
     } else {
+      currentRecTier = 't3';
       badge.innerText = "Tier 3: Enterprise Transformation";
       title.innerText = "Institutional Enterprise Capex Pack";
       desc.innerText = "Mandated for multi-vendor portfolios and institutional capex. Requires formal Steering Committee reviews, SOWs, and complete 6-gate reviews.";
       count.innerText = "45+ Complete Governance Artifacts";
+    }
+  }
+
+  // Export Gate Dossier Function
+  function exportGateDossier() {
+    const g = gatesData[currentGateIdx] || gatesData[0];
+    const boxes = document.querySelectorAll('#gate-content-render input[type="checkbox"]');
+    const checked = Array.from(boxes).filter(b => b.checked).length;
+    const isAr = document.documentElement.lang === 'ar' || document.documentElement.dir === 'rtl';
+
+    const dossierContent = `# ${g.code} Governance Dossier - ${g.title} (${g.arabicTitle})
+**Phase Range:** ${g.phaseRange}
+**Date Generated:** ${new Date().toISOString().split('T')[0]}
+**Audit Status:** ${checked} of ${g.checklist.length} Checklist Items Verified
+
+---
+
+## 1. Executive Summary & Purpose
+${g.description}
+
+### Key Thresholds & Metrics:
+- **${g.metric1Label}:** ${g.metric1Val} (${g.metric1Sub})
+- **${g.metric2Label}:** ${g.metric2Val} (${g.metric2Sub})
+
+---
+
+## 2. RACI Governance Sign-Off Matrix
+| Role | Entity | Sign-off Responsibility |
+|---|---|---|
+| Project Sponsor | Executive | ${g.raci.sponsor} |
+| PMO Director | Governance PMO | ${g.raci.pmo} |
+| Lead Enterprise Architect | Technical Authority | ${g.raci.lead} |
+| Steering Committee | Governance Board | ${g.raci.comm} |
+
+---
+
+## 3. Mandatory Audit Checklist Status
+${g.checklist.map((c, i) => `- [${boxes[i] && boxes[i].checked ? 'x' : ' '}] **${c.name}** (\`${c.code}\`): ${c.desc}`).join('\n')}
+
+---
+
+## 4. Minimum Required Deliverables
+${g.artifacts.map(a => `- **${a.id}:** ${a.name}`).join('\n')}
+
+---
+*Tasleemat Enterprise PMO Operating System • Institutional Governance Engine*
+`;
+
+    const blob = new Blob([dossierContent], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Gate-Dossier-${g.code.replace(/\s+/g, '_')}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    alert(isAr ? `تم تصدير ملف حوكمة ${g.code} بنجاح بصيغة Markdown!` : `Gate Dossier for ${g.code} exported successfully as Markdown!`);
+  }
+
+  // Record Gate Decision Function
+  function recordGateDecision() {
+    const g = gatesData[currentGateIdx] || gatesData[0];
+    const isAr = document.documentElement.lang === 'ar' || document.documentElement.dir === 'rtl';
+
+    const decision = prompt(
+      isAr 
+        ? `تسجيل قرار حوكمة ${g.code} (${g.title}):\nأدخل رقم الخيار:\n1. اعتماد رسمي وموافقة على العبور (Approved - GO)\n2. موافقة مشروطة مع معالجة ملاحظات (Conditional Pass)\n3. تعليق أو إيقاف مؤقت (Hold / Escalation)`
+        : `Record Gate Review Sign-off Decision for ${g.code} (${g.title}):\nEnter choice number:\n1. Formal Approval & Transition (Approved - GO)\n2. Conditional Approval (Pending Actions)\n3. Gate Hold / Escalation`,
+      "1"
+    );
+
+    if (!decision) return;
+
+    let decisionText = "Approved (GO)";
+    if (decision === "2") decisionText = "Conditional Approval (Pending Actions)";
+    if (decision === "3") decisionText = "Gate Hold / Escalated to Steering Committee";
+
+    const timestamp = new Date().toLocaleString();
+    const logEntry = `[${timestamp}] ${g.code} Sign-off Decision: ${decisionText} (Logged by Authorized PMO Sign-off Authority)`;
+    
+    // Store in localStorage
+    try {
+      const existing = JSON.parse(localStorage.getItem('tasleemat_gate_decisions') || '[]');
+      existing.push({ gate: g.code, decision: decisionText, timestamp: timestamp });
+      localStorage.setItem('tasleemat_gate_decisions', JSON.stringify(existing));
+    } catch (e) {}
+
+    alert(isAr ? `تم تسجيل القرار رسمياً في سجل تدقيق الحوكمة:\n${logEntry}` : `Gate Decision officially recorded in the Governance Audit Log:\n${logEntry}`);
+  }
+
+  // Download Profile Pack Function
+  function downloadProfilePack() {
+    const isAr = document.documentElement.lang === 'ar' || document.documentElement.dir === 'rtl';
+    const catalogUrl = isAr 
+      ? `./catalog/ar/index.html?tier=${currentRecTier}`
+      : `./catalog/en/index.html?tier=${currentRecTier}`;
+
+    const scaffoldCmd = `tasleemat init --tier ${currentRecTier.replace('t', '')} --pack standard --lang both`;
+    
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(scaffoldCmd);
+    }
+
+    if (confirm(isAr 
+      ? `تم نسخ أمر تجهيز الحزمة إلى الحافظة:\n${scaffoldCmd}\n\nهل ترغب بالانتقال الآن إلى كتالوج النماذج لتصفح وتنزيل تسليمات هذا المستوى؟`
+      : `Scaffold CLI command copied to clipboard:\n${scaffoldCmd}\n\nWould you like to navigate to the 114 Deliverables Catalog filtered for this recommended tier?`
+    )) {
+      window.location.href = catalogUrl;
     }
   }
 </script></main></div></body></html>
