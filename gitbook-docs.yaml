@@ -1,0 +1,116 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Tasleemat
+  structure:
+    - type: section
+      key: section-manuals-en
+      title: Governance Manuals (EN)
+      path: manuals-en
+      default: true
+      children:
+        - type: space
+          key: space-manuals-en
+          title: Governance Manuals
+          path: manuals
+          default: true
+          content:
+            directory: ./docs/en
+            language: en
+
+    - type: section
+      key: section-guides-en
+      title: Deliverable Guides (EN)
+      path: guides-en
+      children:
+        - type: space
+          key: space-guides-en
+          title: Implementation Guides
+          path: guides
+          default: true
+          content:
+            directory: ./docs/guides/en
+            language: en
+
+    - type: section
+      key: section-forms-en
+      title: Templates & Forms (EN)
+      path: forms-en
+      children:
+        - type: space
+          key: space-forms-en
+          title: Forms & Templates
+          path: templates
+          default: true
+          content:
+            directory: ./docs/forms/en
+            language: en
+
+    - type: section
+      key: section-examples-en
+      title: Reference Examples (EN)
+      path: examples-en
+      children:
+        - type: space
+          key: space-examples-en
+          title: Completed Examples
+          path: examples
+          default: true
+          content:
+            directory: ./docs/examples/en
+            language: en
+
+    - type: section
+      key: section-manuals-ar
+      title: أدلة الحوكمة (AR)
+      path: manuals-ar
+      children:
+        - type: space
+          key: space-manuals-ar
+          title: أدلة الحوكمة المؤسسية
+          path: manuals
+          default: true
+          content:
+            directory: ./docs/ar
+            language: ar
+
+    - type: section
+      key: section-guides-ar
+      title: الإرشادات والمعايير (AR)
+      path: guides-ar
+      children:
+        - type: space
+          key: space-guides-ar
+          title: إرشادات المخرجات
+          path: guides
+          default: true
+          content:
+            directory: ./docs/guides/ar
+            language: ar
+
+    - type: section
+      key: section-forms-ar
+      title: القوالب والنماذج (AR)
+      path: forms-ar
+      children:
+        - type: space
+          key: space-forms-ar
+          title: نماذج وقوالب المخرجات
+          path: templates
+          default: true
+          content:
+            directory: ./docs/forms/ar
+            language: ar
+
+    - type: section
+      key: section-examples-ar
+      title: الأمثلة المكتملة (AR)
+      path: examples-ar
+      children:
+        - type: space
+          key: space-examples-ar
+          title: نماذج تطبيقية مكتملة
+          path: examples
+          default: true
+          content:
+            directory: ./docs/examples/ar
+            language: ar
