@@ -32,6 +32,8 @@ from tools.stitch_screens_builder import (
     get_screen5_catalog_html,
     get_screen6_home_en
 )
+from tools.lexicon_builder import get_standalone_lexicon_html
+
 
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -1906,7 +1908,7 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
     nav_gates = f"{rel_root}governance.html"
     nav_tailoring = f"{rel_root}governance.html#tailoring-matrix"
     nav_tech = f"{rel_root}developer.html"
-    nav_lexicon = f"{rel_root}developer.html#lexicon"
+    nav_lexicon = f"{rel_root}LEXICON.html"
     nav_viewer = f"{rel_root}forms/ar/form-viewer.html"
     nav_manuals = f"{rel_root}en/01_getting_started.html" if not is_ar else f"{rel_root}ar/01_getting_started.html"
     
@@ -2180,7 +2182,7 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
         "stage-gates": f"{rel_root}governance.html",
         "tailoring-profiles": f"{rel_root}governance.html#tailoring-matrix",
         "developer-cli": f"{rel_root}developer.html",
-        "bilingual-lexicon": f"{rel_root}developer.html#lexicon",
+        "bilingual-lexicon": f"{rel_root}LEXICON.html",
     }
     nav_map_ar = {
         "overview": f"{rel_root}README_AR.html",
@@ -2190,7 +2192,7 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
         "stage-gates": f"{rel_root}governance.html",
         "tailoring-profiles": f"{rel_root}governance.html#tailoring-matrix",
         "developer-cli": f"{rel_root}developer.html",
-        "bilingual-lexicon": f"{rel_root}developer.html#lexicon",
+        "bilingual-lexicon": f"{rel_root}LEXICON.html",
     }
     nav_map = nav_map_ar if is_ar else nav_map_en
 
@@ -2234,6 +2236,10 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
                 target_lang_url = "../en/form-viewer.html"
             elif page_type == "form_viewer_en":
                 target_lang_url = "../ar/form-viewer.html"
+            elif page_type == "governance":
+                target_lang_url = f"{rel_root}governance_ar.html"
+            elif page_type == "developer":
+                target_lang_url = f"{rel_root}developer_ar.html"
             elif is_ar:
                 target_lang_url = f"{rel_root}index.html"
             else:
@@ -2262,8 +2268,87 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
 
     return str(soup)
 
+def create_ar_counterpart(src_html_path: pathlib.Path, target_html_path: pathlib.Path, page_type: str):
+    """Generate Arabic mirrored counterpart for governance or developer pages."""
+    with open(src_html_path, "r", encoding="utf-8") as f:
+        soup = BeautifulSoup(f.read(), "html.parser")
+
+    if soup.html:
+        soup.html["lang"] = "ar"
+        soup.html["dir"] = "rtl"
+
+    if soup.body:
+        soup.body["dir"] = "rtl"
+        soup.body["class"] = [c.replace("font-sans", "font-arabic") for c in soup.body.get("class", [])]
+
+    for div in soup.find_all("div", class_=lambda c: c and "cursor-pointer" in c):
+        if "Tasleemat" in div.get_text():
+            sub = div.find("span", class_=lambda c: c and "text-xs" in c)
+            if sub and page_type == "governance":
+                sub.string = "مصفوفة الحوكمة وبوابات المرحلة"
+            elif sub and page_type == "developer":
+                sub.string = "دليل المطورين وأدوات الأتمتة"
+
+    nav = soup.find("nav")
+    if nav:
+        nav_items = nav.find_all("a")
+        for a in nav_items:
+            txt = a.get_text().strip()
+            if "Overview" in txt or "Home" in txt:
+                a.string = "الرئيسية"
+                a["href"] = "./README_AR.html"
+            elif "Templates" in txt or "114" in txt or "Catalog" in txt:
+                a.string = "114 نموذج"
+                a["href"] = "./catalog/ar/index.html"
+            elif "Stage-Gates" in txt or "Governance" in txt:
+                a.string = "بوابات المرحلة ومصفوفة RACI"
+                a["href"] = "./governance_ar.html"
+            elif "Developer" in txt or "CLI" in txt:
+                a.string = "المطور وأدوات CLI"
+                a["href"] = "./developer_ar.html"
+            elif "Lexicon" in txt:
+                a.string = "المعجم الموحد"
+                a["href"] = "./LEXICON.html"
+
+    for b in soup.find_all(["button", "a"]):
+        txt = b.get_text().strip()
+        if "EN" in txt or "العربية" in txt or b.get("id") == "lang-toggle-btn":
+            target_en = "./governance.html" if page_type == "governance" else "./developer.html"
+            if b.name == "button":
+                b["onclick"] = f"window.location.href='{target_en}'"
+            else:
+                b["href"] = target_en
+            for span in b.find_all("span"):
+                if "العربية" in span.get_text() or "EN" in span.get_text():
+                    span.string = "English / الإنجليزية"
+                elif "🇸🇦" in span.get_text():
+                    span.string = "🇬🇧"
+
+    if page_type == "governance":
+        if soup.title:
+            soup.title.string = "مصفوفة حوكمة بوابات المرحلة وتخصيص المشاريع | تسليمات"
+        h1 = soup.find("h1")
+        if h1 and "Stage-Gate" in h1.get_text():
+            h1.string = "مصفوفة حوكمة بوابات المراحل ومعايير التخصيص"
+        for p in soup.find_all("p"):
+            if "Rigorously audited gate checklists" in p.get_text():
+                p.string = "قوائم تدقيق صارمة لبوابات المراحل الست، مصفوفة صلاحيات RACI، ومعايير التخصيص عبر 4 مستويات حوكمة متوافقة مع معايير معهد إدارة المشاريع وهيئة الحكومة الرقمية."
+
+    elif page_type == "developer":
+        if soup.title:
+            soup.title.string = "دليل المطورين وحزمة أدوات الأتمتة SDK | تسليمات"
+        h1 = soup.find("h1")
+        if h1:
+            h1.string = "دليل المطورين وحزمة أتمتة إدارة المشاريع"
+        for p in soup.find_all("p"):
+            if "Programmatic scaffolding" in p.get_text():
+                p.string = "التوليد البرمجي المباشر للحزم، التعبئة الذكية للنماذج بواسطة الذكاء الاصطناعي، ومصطلحات معيارية موحدة للمشاريع الكبرى."
+
+    target_html_path.write_text(str(soup), encoding="utf-8")
+
 def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path, deliverables: list = None):
     """Compile the 6 actual Stitch designs into the primary landing and functional pages."""
+
     screens_dir = ROOT / "_stitch_designs" / "screens"
     if not screens_dir.exists():
         print("Warning: _stitch_designs/screens directory not found. Skipping stitch screens.")
@@ -2294,19 +2379,30 @@ def compile_stitch_screens(site_dir: pathlib.Path, docs_dir: pathlib.Path, deliv
     (site_dir / "README_AR.html").write_text(html_home_ar, encoding="utf-8")
     (docs_dir / "README_AR.html").write_text(html_home_ar, encoding="utf-8")
 
-    # 3. Developer & CLI & Lexicon & Technical
+    # 3. Developer & CLI & Technical
     html_dev = process_stitch_screen(s_map["developer"], "developer", rel_root="./")
     (site_dir / "developer.html").write_text(html_dev, encoding="utf-8")
     (docs_dir / "developer.html").write_text(html_dev, encoding="utf-8")
     (site_dir / "TECHNICAL.html").write_text(html_dev, encoding="utf-8")
     (docs_dir / "TECHNICAL.html").write_text(html_dev, encoding="utf-8")
-    (site_dir / "LEXICON.html").write_text(html_dev, encoding="utf-8")
-    (docs_dir / "LEXICON.html").write_text(html_dev, encoding="utf-8")
+
+    # 3b. Dedicated Bilingual Lexicon Page (164+ terms)
+    html_lex = get_standalone_lexicon_html(docs_dir, rel_root="./")
+    (site_dir / "LEXICON.html").write_text(html_lex, encoding="utf-8")
+    (docs_dir / "LEXICON.html").write_text(html_lex, encoding="utf-8")
+
 
     # 4. Governance & Stage-Gates & Tailoring
     html_gov = process_stitch_screen(s_map["governance"], "governance", rel_root="./")
     (site_dir / "governance.html").write_text(html_gov, encoding="utf-8")
     (docs_dir / "governance.html").write_text(html_gov, encoding="utf-8")
+
+    # 4b. Arabic Governance & Developer Symmetrical Counterparts
+    create_ar_counterpart(site_dir / "governance.html", site_dir / "governance_ar.html", "governance")
+    create_ar_counterpart(docs_dir / "governance.html", docs_dir / "governance_ar.html", "governance")
+    create_ar_counterpart(site_dir / "developer.html", site_dir / "developer_ar.html", "developer")
+    create_ar_counterpart(docs_dir / "developer.html", docs_dir / "developer_ar.html", "developer")
+
 
     # 5. Catalog EN & AR (Generated using full 114 Deliverables with exact Stitch design & interactive filtering)
     if deliverables:

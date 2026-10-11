@@ -807,7 +807,7 @@ Core terminology aligned with the official PMI PMBOK® Lexicon and MENA governme
 | **Risk Appetite** | **القابلية للمخاطر** | The degree of uncertainty an organization or individual is willing to accept in anticipation of a reward. | Risk (04.08) | ISO 31000 |
 | **Contingency Reserve** | **احتياطي الطوارئ** | Time or budget allocated within the cost baseline for known-unknown risks managed by the Project Manager. | Cost (04.04) | PMBOK® 6th/7th |
 
-*For the complete interactive lexicon with instant search and filtering, visit the web portal at [developer.html](developer.html#lexicon) or [docs/LEXICON.md](LEXICON.md).*
+*For the complete interactive lexicon with instant search and filtering, visit the web portal at [LEXICON.html](LEXICON.html) or [docs/LEXICON.md](LEXICON.md).*
 
 ---
 
@@ -1548,6 +1548,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         
         url_tpl = f"{rel_root}{d.get('url_tpl_ar' if is_ar else 'url_tpl_en', '')}"
         url_guide = f"{rel_root}{d.get('url_guide_ar' if is_ar else 'url_guide_en', '')}"
+        gh_src = d.get("gh_tpl_ar" if is_ar else "gh_tpl_en", "") or d.get("gh_tpl_en", "")
 
         tag1 = "PMBOK 7/8"
         tag2 = "Schema OKF" if "04" in phase or "06" in phase else "ISO 21500"
@@ -1596,6 +1597,9 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
       <a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center" href="{url_guide}" title="{'عرض الدليل الإرشادي' if is_ar else 'View Practice Guide'}">
         <span class="material-symbols-outlined text-[18px]">menu_book</span>
       </a>
+      {f'''<a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface transition-colors inline-flex items-center" href="{gh_src}" target="_blank" rel="noreferrer" title="{'المستودع في GitHub' if is_ar else 'GitHub Source'}">
+        <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+      </a>''' if gh_src else ""}
     </div>
   </div>
 </div>"""
@@ -1615,7 +1619,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
     nav_gov = f"{rel_root}governance.html"
     nav_tailor = f"{rel_root}governance.html#tailoring-matrix"
     nav_dev = f"{rel_root}developer.html"
-    nav_lex = f"{rel_root}developer.html#lexicon"
+    nav_lex = f"{rel_root}LEXICON.html"
     lang_toggle_url = "../en/index.html" if is_ar else "../ar/index.html"
     lang_toggle_text = "🇬🇧 English" if is_ar else "🇸🇦 العربية"
 
@@ -2343,10 +2347,14 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         const tplTab = document.getElementById('tab-content-template');
         if (tplTab) {{
           const tplText = isArabic ? (item.template_ar || item.template_en) : (item.template_en || item.template_ar);
+          const ghTpl = isArabic ? (item.gh_tpl_ar || item.gh_tpl_en) : (item.gh_tpl_en || item.gh_tpl_ar);
           tplTab.innerHTML = `
             <div class="flex items-center justify-between pb-2">
               <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} Markdown Template</span>
-              <button class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-tpl-raw')">📋 ${{isArabic ? 'نسخ القالب' : 'Copy Template'}}</button>
+              <div class="flex items-center gap-2">
+                ${{ghTpl ? `<a class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-secondary hover:bg-surface-container-high flex items-center gap-1 transition" href="${{ghTpl}}" target="_blank" rel="noreferrer"><span>GitHub</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a>` : ''}}
+                <button class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-tpl-raw')">📋 ${{isArabic ? 'نسخ القالب' : 'Copy Template'}}</button>
+              </div>
             </div>
             <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-tpl-raw">${{escapeHtml(tplText)}}</code></pre>
           `;
@@ -2356,10 +2364,14 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         const guideTab = document.getElementById('tab-content-guide');
         if (guideTab) {{
           const guideText = isArabic ? (item.guide_ar || item.guide_en) : (item.guide_en || item.guide_ar);
+          const ghGuide = isArabic ? (item.gh_guide_ar || item.gh_guide_en) : (item.gh_guide_en || item.gh_guide_ar);
           guideTab.innerHTML = `
             <div class="flex items-center justify-between pb-2">
               <span class="font-label-code text-xs text-on-surface-variant font-bold">${{formCode}} Authoring Practice Guide</span>
-              <a class="px-2.5 py-1 rounded bg-secondary/10 text-secondary text-xs font-label-code font-bold hover:bg-secondary/20 transition" href="${{relRoot}}${{isArabic ? item.url_guide_ar : item.url_guide_en}}" target="_blank">${{isArabic ? 'فتح الدليل كاملاً ↗' : 'Open Full Guide ↗'}}</a>
+              <div class="flex items-center gap-2">
+                ${{ghGuide ? `<a class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-secondary hover:bg-surface-container-high flex items-center gap-1 transition" href="${{ghGuide}}" target="_blank" rel="noreferrer"><span>GitHub</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a>` : ''}}
+                <a class="px-2.5 py-1 rounded bg-secondary/10 text-secondary text-xs font-label-code font-bold hover:bg-secondary/20 transition" href="${{relRoot}}${{isArabic ? item.url_guide_ar : item.url_guide_en}}" target="_blank">${{isArabic ? 'فتح الدليل كاملاً ↗' : 'Open Full Guide ↗'}}</a>
+              </div>
             </div>
             <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-guide-raw">${{escapeHtml(guideText)}}</code></pre>
           `;
@@ -2369,10 +2381,14 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         const promptTab = document.getElementById('tab-content-prompt');
         if (promptTab) {{
           const promptText = isArabic ? (item.prompt_ar || item.prompt_en) : (item.prompt_en || item.prompt_ar);
+          const ghPrompt = isArabic ? (item.gh_prompt_ar || item.gh_prompt_en) : (item.gh_prompt_en || item.gh_prompt_ar);
           promptTab.innerHTML = `
             <div class="flex items-center justify-between pb-2">
               <span class="font-label-code text-xs text-on-surface-variant font-bold">NIST AI RMF Compliant Prompt</span>
-              <button class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-prompt-raw')">📋 ${{isArabic ? 'نسخ الموجه' : 'Copy Prompt'}}</button>
+              <div class="flex items-center gap-2">
+                ${{ghPrompt ? `<a class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-secondary hover:bg-surface-container-high flex items-center gap-1 transition" href="${{ghPrompt}}" target="_blank" rel="noreferrer"><span>GitHub</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a>` : ''}}
+                <button class="px-2.5 py-1 rounded bg-surface-container text-xs font-label-code text-on-surface hover:bg-surface-container-high transition" onclick="copyDrawerCode('drawer-prompt-raw')">📋 ${{isArabic ? 'نسخ الموجه' : 'Copy Prompt'}}</button>
+              </div>
             </div>
             <pre class="p-4 bg-surface-container-low text-on-surface font-mono text-xs rounded-xl overflow-x-auto max-h-[60vh] border border-surface-container-high"><code id="drawer-prompt-raw">${{escapeHtml(promptText || 'Standard System Prompt for AI copilots.')}}</code></pre>
           `;
@@ -2497,4 +2513,5 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
 </body>
 </html>
 """
+
 
