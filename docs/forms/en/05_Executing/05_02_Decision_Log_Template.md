@@ -69,6 +69,7 @@ Section-by-Section Instructions:
 ---
 
 <div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+  <span>Electronic Audit Trail: Hash SHA256: (####)</span> <br>
   <strong>Template:</strong> DECISION LOG | <strong>Ref:</strong> PMO-05.02 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

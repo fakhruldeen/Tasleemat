@@ -104,6 +104,7 @@ Section Instructions:
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;" markdown="1">
+  <span>Electronic Audit Trail: Hash SHA256: (####)</span> <br>
   <strong>Template:</strong> FLOW METRICS AND VALUE STREAM DASHBOARD | <strong>Ref:</strong> PMO-06.12 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>

@@ -82,6 +82,7 @@ status: approved
 ---
 
 <div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <span>سجل التدقيق الإلكتروني: Hash SHA256: (####)</span> <br>
  <strong>النموذج:</strong> سجل مكتبة الأوامر | <strong>المرجع:</strong> PMO-05.09 <br>
  <i>تاريخ الإنشاء: {{وقت_الإنشاء}}, بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>

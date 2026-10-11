@@ -99,6 +99,7 @@ Column guidance, by column:
 ---
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <span>Electronic Audit Trail: Hash SHA256: (####)</span> <br>
   <strong>Template:</strong> RELEASE PLAN | <strong>Ref:</strong> PMO-04.03.09 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
 </div>
