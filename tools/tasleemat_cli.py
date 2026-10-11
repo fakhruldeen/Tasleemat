@@ -178,6 +178,11 @@ def scaffold_project(args):
                         content = content.replace("{{التاريخ_الحالي}}", date_str).replace("{{Current_Date}}", date_str)
                         content = content.replace("{{اسم_الشركة}}", "حلول القمة المؤسسية (Apex Solutions)").replace("{{Company_Name}}", "Apex Enterprise Solutions")
                         
+                        import hashlib
+                        content_for_hash = content.replace("{{رمز_تجزئة_التدقيق_SHA256}}", "").replace("{{Audit_Trail_SHA256_Hash}}", "")
+                        audit_hash = hashlib.sha256(content_for_hash.encode("utf-8")).hexdigest()
+                        content = content.replace("{{رمز_تجزئة_التدقيق_SHA256}}", audit_hash).replace("{{Audit_Trail_SHA256_Hash}}", audit_hash)
+                        
                         content = re.sub(r'(\*\*اسم المشروع:\*\*|\*\*Project Name:\*\*)\s*\[.*?\]', rf'\1 {name}', content)
                         content = re.sub(r'(\*\*رمز المشروع:\*\*|\*\*Project ID:\*\*|\*\*Project Code:\*\*)\s*\[.*?\]', rf'\1 {code}', content)
                         content = re.sub(r'(\*\*مدير المشروع:\*\*|\*\*Project Manager:\*\*)\s*\[.*?\]', rf'\1 {pm}', content)

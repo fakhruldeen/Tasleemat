@@ -99,7 +99,7 @@ Section Instructions:
 
 <div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7
 f8c8d;">
-  <span>Electronic Audit Trail: Hash SHA256: (####)</span> <br>
+  <span>Electronic Audit Trail: Hash SHA256: {{Audit_Trail_SHA256_Hash}}</span> <br>
   <strong>Template:</strong> VENDOR PERFORMANCE SCORECARD | <strong>Ref:</strong> PMO-06.09 <br>
   <i>Generated on: {{Current_Timestamp}}, by <a href="https://github.com/fak
 hruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
