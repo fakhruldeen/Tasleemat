@@ -50,7 +50,7 @@ ACRONYMS = {
     "PV", "EV", "AC", "BAC", "CV", "SV", "CPI", "SPI", "EAC", "ETC", "VAC", "TCPI",
     "md", "csv", "json", "ar", "en", "lang", "default", "true", "false",
     "Fill", "Field", "Section", "Guidance", "Value", "Generated", "Reference",
-    "and", "based", "align", "datetime", "iso", "utf",
+    "and", "based", "align", "datetime", "iso", "utf", "SHA", "HASH",
 }
 # Filename components such as (Product_Backlog) are carried across verbatim.
 FILENAME_COMPONENT = re.compile(r"\(([A-Za-z0-9_.\- ]+)\)")
