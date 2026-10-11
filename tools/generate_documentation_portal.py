@@ -1905,11 +1905,11 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
 
     nav_home = f"{rel_root}index.html" if not is_ar else f"{rel_root}README_AR.html"
     nav_catalog = f"{rel_root}catalog/en/index.html" if not is_ar else f"{rel_root}catalog/ar/index.html"
-    nav_gates = f"{rel_root}governance.html"
-    nav_tailoring = f"{rel_root}governance.html#tailoring-matrix"
-    nav_tech = f"{rel_root}developer.html"
+    nav_gates = f"{rel_root}governance.html" if not is_ar else f"{rel_root}governance_ar.html"
+    nav_tailoring = f"{rel_root}governance.html#tailoring-matrix" if not is_ar else f"{rel_root}governance_ar.html#tailoring-matrix"
+    nav_tech = f"{rel_root}developer.html" if not is_ar else f"{rel_root}developer_ar.html"
     nav_lexicon = f"{rel_root}LEXICON.html"
-    nav_viewer = f"{rel_root}forms/ar/form-viewer.html"
+    nav_viewer = f"{rel_root}forms/en/form-viewer.html" if not is_ar else f"{rel_root}forms/ar/form-viewer.html"
     nav_manuals = f"{rel_root}en/01_getting_started.html" if not is_ar else f"{rel_root}ar/01_getting_started.html"
     
     lang_btn = ""
@@ -2188,10 +2188,10 @@ def process_stitch_screen(html_path: pathlib.Path, page_type: str, rel_root: str
         "overview": f"{rel_root}README_AR.html",
         "home": f"{rel_root}README_AR.html",
         "templates-catalog": cat_ar_link,
-        "stage-gate-governance": f"{rel_root}governance.html",
-        "stage-gates": f"{rel_root}governance.html",
-        "tailoring-profiles": f"{rel_root}governance.html#tailoring-matrix",
-        "developer-cli": f"{rel_root}developer.html",
+        "stage-gate-governance": f"{rel_root}governance_ar.html",
+        "stage-gates": f"{rel_root}governance_ar.html",
+        "tailoring-profiles": f"{rel_root}governance_ar.html#tailoring-matrix",
+        "developer-cli": f"{rel_root}developer_ar.html",
         "bilingual-lexicon": f"{rel_root}LEXICON.html",
     }
     nav_map = nav_map_ar if is_ar else nav_map_en
@@ -2505,9 +2505,20 @@ def compile_static_site(deliverables):
 
         content = md_file.read_text(encoding="utf-8")
 
-        # Clean frontmatter
+        # Clean YAML frontmatter & comment blocks
         if content.startswith("<!--") and "-->" in content:
             content = content.split("-->", 1)[1]
+        
+        # Strip frontmatter blocks (both with and without comment markers)
+        content = re.sub(r'<!--\s*---\s*.*?---\s*-->', '', content, flags=re.DOTALL)
+        content = re.sub(r'---\s*\n\s*type:\s*Form.*?\n---\s*\n', '', content, flags=re.DOTALL)
+        content = re.sub(r'^---\s*\n.*?\n---\s*\n', '', content, flags=re.DOTALL)
+        
+        # Strip raw container divs that prevent python-markdown from parsing markdown inside them
+        content = re.sub(r'<div[^>]*markdown=[\"\x27]1[\"\x27][^>]*>', '', content)
+        content = re.sub(r'\n<div>\s*\n', '\n\n', content)
+        content = re.sub(r'\n<div\s+dir=[\"\x27](?:rtl|ltr)[\"\x27]>\s*\n', '\n\n', content)
+        content = re.sub(r'</div>\s*$', '', content)
 
         h1_match = re.search(r'<h1[^>]*>(.+?)</h1>', content, re.DOTALL) or re.search(r"^#\s+(.+)$", content, re.MULTILINE)
         if h1_match:
@@ -2545,7 +2556,7 @@ def compile_static_site(deliverables):
 
         body_html = markdown.markdown(
             content,
-            extensions=["tables", "fenced_code", "toc", "attr_list", "admonition"]
+            extensions=["tables", "fenced_code", "toc", "attr_list", "admonition", "md_in_html"]
         )
 
         final_html = wrap_html_in_shell(title, body_html, rel_root=rel_root, is_ar=is_ar, lang_switch_url=lang_switch_url)

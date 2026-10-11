@@ -1554,7 +1554,8 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         tag2 = "Schema OKF" if "04" in phase or "06" in phase else "ISO 21500"
         tag3 = "5-File Bundle"
 
-        card = f"""<div class="deliverable-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" 
+        card = f"""<div class="deliverable-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md hover:border-secondary/50 border border-transparent transition-all flex flex-col justify-between cursor-pointer" 
+     onclick="openFormDrawer('{code_pmo}')"
      data-code="{code_form}" 
      data-code-alt="{code_pmo}" 
      data-phase="{phase}" 
@@ -1583,12 +1584,12 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
     </div>
   </div>
   <div class="pt-space-md mt-space-sm flex items-center justify-between border-t border-surface-container-high/40">
-    <button class="inline-flex items-center gap-1 text-label-code font-label-code text-secondary hover:text-on-surface font-bold transition-colors" onclick="openFormDrawer('{code_pmo}')">
+    <button class="inline-flex items-center gap-1 text-label-code font-label-code text-secondary hover:text-on-surface font-bold transition-colors" onclick="event.stopPropagation(); openFormDrawer('{code_pmo}')">
       <span class="material-symbols-outlined text-[17px]">visibility</span>
       <span>{'معاينة التسليمة' if is_ar else 'Inspect Spec'}</span>
     </button>
-    <div class="flex items-center gap-1">
-      <button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="copySnippet('{code_form}')" title="{'نسخ أمر CLI' if is_ar else 'Copy CLI Command'}">
+    <div class="flex items-center gap-1" onclick="event.stopPropagation()">
+      <button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="event.stopPropagation(); copySnippet('{code_form}')" title="{'نسخ أمر CLI' if is_ar else 'Copy CLI Command'}">
         <span class="material-symbols-outlined text-[18px]">content_copy</span>
       </button>
       <a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center" href="{url_tpl}" title="{'عرض القالب المعتمد' if is_ar else 'View Markdown Template'}">
@@ -1616,9 +1617,9 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
     main_wrapper_class = "pr-64" if is_ar else "pl-64"
 
     nav_home = f"{rel_root}README_AR.html" if is_ar else f"{rel_root}index.html"
-    nav_gov = f"{rel_root}governance.html"
-    nav_tailor = f"{rel_root}governance.html#tailoring-matrix"
-    nav_dev = f"{rel_root}developer.html"
+    nav_gov = f"{rel_root}governance_ar.html" if is_ar else f"{rel_root}governance.html"
+    nav_tailor = f"{rel_root}governance_ar.html#tailoring-matrix" if is_ar else f"{rel_root}governance.html#tailoring-matrix"
+    nav_dev = f"{rel_root}developer_ar.html" if is_ar else f"{rel_root}developer.html"
     nav_lex = f"{rel_root}LEXICON.html"
     lang_toggle_url = "../en/index.html" if is_ar else "../ar/index.html"
     lang_toggle_text = "🇬🇧 English" if is_ar else "🇸🇦 العربية"
@@ -1645,7 +1646,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         ("07", "07 الإغلاق (5)" if is_ar else "07 Closing (5)"),
     ]
     phase_btns_html = "\n".join([
-        f'<button class="phase-btn {"active" if p[0] == "all" else ""} px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap {"bg-primary text-on-primary" if p[0] == "all" else "bg-surface-container-low text-on-surface hover:bg-surface-container"} transition-all" data-phase="{p[0]}" onclick="filterPhase(\'{p[0]}\')">{p[1]}</button>'
+        f'<button class="phase-btn {"active ring-2 ring-primary ring-offset-1" if p[0] == "all" else ""} px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap cursor-pointer {"bg-primary text-on-primary font-bold shadow-sm" if p[0] == "all" else "bg-surface-container text-on-surface hover:bg-surface-container-high"} transition-all" data-phase="{p[0]}" onclick="filterPhase(\'{p[0]}\')">{p[1]}</button>'
         for p in phase_btns
     ])
 
@@ -1657,7 +1658,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
         ("t4", "المستوى 4: مرن / ذكاء اصطناعي (32)" if is_ar else "Tier 4: Agile/AI (32)"),
     ]
     tier_btns_html = "\n".join([
-        f'<button class="tier-btn {"active" if t[0] == "all" else ""} px-2.5 py-1 rounded text-badge-caps font-badge-caps {"bg-surface-container-highest text-on-surface" if t[0] == "all" else "bg-surface-container-low text-on-surface hover:bg-surface-container"} transition-all" data-tier="{t[0]}" onclick="filterTier(\'{t[0]}\')">{t[1]}</button>'
+        f'<button class="tier-btn {"active ring-2 ring-secondary ring-offset-1" if t[0] == "all" else ""} px-2.5 py-1 rounded text-badge-caps font-badge-caps cursor-pointer {"bg-secondary text-on-secondary font-bold shadow-sm" if t[0] == "all" else "bg-surface-container text-on-surface hover:bg-surface-container-high"} transition-all" data-tier="{t[0]}" onclick="filterTier(\'{t[0]}\')">{t[1]}</button>'
         for t in tier_btns
     ])
 
@@ -1912,7 +1913,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
                 <span class="font-badge-caps text-badge-caps uppercase tracking-wider">{filter_phase_label}</span>
                 <span class="font-label-code text-badge-caps text-secondary font-bold" id="active-count-label">{showing_label_init}</span>
               </div>
-              <div class="flex items-center gap-1.5 overflow-x-auto pb-1" id="phase-filter-bar">
+              <div class="flex flex-wrap items-center gap-1.5 pb-1" id="phase-filter-bar">
                 {phase_btns_html}
               </div>
             </div>
@@ -1921,7 +1922,7 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
             <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-high/40">
               <div class="flex items-center gap-space-sm flex-wrap">
                 <span class="font-badge-caps text-badge-caps uppercase tracking-wider text-on-surface-variant">{filter_tier_label}</span>
-                <div class="flex items-center gap-1">
+                <div class="flex flex-wrap items-center gap-1">
                   {tier_btns_html}
                 </div>
               </div>
@@ -2191,9 +2192,9 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
       activePhase = phase;
       document.querySelectorAll('.phase-btn').forEach(btn => {{
         if (btn.dataset.phase === phase) {{
-          btn.className = "phase-btn px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap bg-primary text-on-primary transition-all";
+          btn.className = "phase-btn active ring-2 ring-primary ring-offset-1 px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap cursor-pointer bg-primary text-on-primary font-bold shadow-sm transition-all";
         }} else {{
-          btn.className = "phase-btn px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all";
+          btn.className = "phase-btn px-3 py-1.5 rounded-lg text-label-code font-label-code whitespace-nowrap cursor-pointer bg-surface-container text-on-surface hover:bg-surface-container-high transition-all";
         }}
       }});
       applyFilters();
@@ -2203,9 +2204,9 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
       activeTier = tier;
       document.querySelectorAll('.tier-btn').forEach(btn => {{
         if (btn.dataset.tier === tier) {{
-          btn.className = "tier-btn px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-highest text-on-surface";
+          btn.className = "tier-btn active ring-2 ring-secondary ring-offset-1 px-2.5 py-1 rounded text-badge-caps font-badge-caps cursor-pointer bg-secondary text-on-secondary font-bold shadow-sm transition-all";
         }} else {{
-          btn.className = "tier-btn px-2.5 py-1 rounded text-badge-caps font-badge-caps bg-surface-container-low text-on-surface hover:bg-surface-container";
+          btn.className = "tier-btn px-2.5 py-1 rounded text-badge-caps font-badge-caps cursor-pointer bg-surface-container text-on-surface hover:bg-surface-container-high transition-all";
         }}
       }});
       applyFilters();
@@ -2418,9 +2419,10 @@ def get_screen5_catalog_html(deliverables: list, lang: str = "en", rel_root: str
     }}
 
     function closeFormDrawer() {{
+      drawer.classList.add('pointer-events-none');
       drawerPanel.classList.add(isArabic ? '-translate-x-full' : 'translate-x-full');
       setTimeout(() => {{
-        drawer.classList.add('pointer-events-none', 'opacity-0');
+        drawer.classList.add('opacity-0');
       }}, 200);
     }}
 
