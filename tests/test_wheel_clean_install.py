@@ -51,7 +51,7 @@ import sys
 import tasleemat
 
 # Verify version and exports
-assert tasleemat.__version__ == "2.4.0", f"Unexpected version {tasleemat.__version__}"
+assert tasleemat.__version__ == "2.4.1", f"Unexpected version {tasleemat.__version__}"
 artifacts = tasleemat.list_artifacts()
 assert len(artifacts) == 114, f"Expected 114 artifacts, got {len(artifacts)}"
 

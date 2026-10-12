@@ -171,7 +171,7 @@ def build_catalog():
     print(f"Discovered {len(artifacts)} unique artifact definitions.")
 
     catalog_data = {
-        "version": "2.4.0",
+        "version": "2.4.1",
         "description": "Canonical Tasleemat PMO Artifact Registry",
         "generated_from": "datapackage.json & forms/ baseline",
         "total_artifacts": len(artifacts),

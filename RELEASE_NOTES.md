@@ -3,8 +3,49 @@ type: Guide
 ---
 # Tasleemat Release Notes
 
+## 🚀 Tasleemat v2.4.1 — Native Model Context Protocol (MCP) Server & LLM Ecosystem Integration
+
+**Release Date:** October 12, 2026  
+**PyPI Version:** [`tasleemat 2.4.1`](https://pypi.org/project/tasleemat/2.4.1/)  
+**Git Tag:** [`v2.4.1`](https://github.com/fakhruldeen/Tasleemat/releases/tag/v2.4.1)  
+
+---
+
+### ⚡ Standard Model Context Protocol (MCP) Server (`tasleemat.mcp`)
+- **Native JSON-RPC 2.0 Stdio Server:** Built a zero-dependency Model Context Protocol (MCP) server enabling instant, seamless plug-and-play integration with Claude Desktop, Cursor, OpenCode, and any MCP-compliant AI client.
+- **6 Standard PMO Tools:**
+  1. `tasleemat_list_artifacts`: Filter and discover deliverables by phase or tailoring tier.
+  2. `tasleemat_get_artifact`: Inspect metadata, available languages, and assets for any deliverable ID (`PMO-XX.YY`).
+  3. `tasleemat_get_asset`: Fetch raw bilingual templates, guides, checklists, or prompt templates.
+  4. `tasleemat_get_lexicon`: Query standardized English-Arabic PMI/DGA PMO terminology.
+  5. `tasleemat_validate_data`: Perform strict or draft JSON schema validation against completed deliverable payloads.
+  6. `tasleemat_render_artifact`: Render offline, print-ready HTML documents with document control headers.
+- **Direct MCP Resources:**
+  - `pmo://catalog`: Real-time JSON manifest of all 114 deliverables.
+  - `pmo://lexicon`: Full bilingual English-Arabic PMO terminology dictionary.
+- **Standard MCP Prompts:** Pre-engineered, parameterized prompt templates:
+  - `draft_project_charter`: Guided bilingual charter generation with scope, stakeholders, and milestones.
+  - `conduct_risk_assessment`: Systematic risk identification, scoring, and response planning.
+- **Dual Execution Entrypoints:** Launch directly via `tasleemat-mcp` or `tasleemat mcp`.
+
+---
+
+### 🤖 LLM Assistant Ecosystem & Workflows
+- **Multi-Client MCP Configuration Guide (`docs/MCP_INTEGRATION.md`):** Comprehensive instructions, step-by-step screenshots/JSON configs for Claude Desktop (`claude_desktop_config.json`), Cursor IDE, and OpenCode.
+- **Frictionless OKF Context Injection:** Detailed blueprints on feeding `datapackage.json` directly into LLM prompts (ChatGPT, Claude, Gemini, OpenCode) to ground agents on exact schema types, field names, and validation rules.
+- **Prompt Engineering Templates:** Ready-to-use prompt patterns for bilingual project document generation and review.
+
+---
+
+### 🧪 Test Coverage & Packaging Polish
+- **11 New MCP Server Tests:** Added `tests/test_mcp_server.py` verifying MCP protocol initialization, tools listing, tool invocation, resource reading, prompt fetching, and error formatting (expanding total test suite to 73 unit tests).
+- **Synchronized Distribution Builds:** Rebuilt wheel (`tasleemat-2.4.1-py3-none-any.whl`) and sdist archive (`tasleemat-2.4.1.tar.gz`).
+- **Complete Forms Immutability:** 100% preservation of all 1,162 files in the `forms/` directory verified against baseline SHA-256 manifests.
+
+---
+
 ## 🚀 Tasleemat v2.4.0 — Programmatic Python API, Structural Validation & Agent Integration
- 
+
 **Release Date:** October 12, 2026  
 **PyPI Version:** [`tasleemat 2.4.0`](https://pypi.org/project/tasleemat/2.4.0/)  
 **Git Tag:** [`v2.4.0`](https://github.com/fakhruldeen/Tasleemat/releases/tag/v2.4.0)  

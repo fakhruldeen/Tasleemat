@@ -13,11 +13,11 @@
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
-With **Version 2.4.0**, Tasleemat delivers a **complete programmatic Python API**, standard **Model Context Protocol (MCP)** server, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
+With **Version 2.4.1**, Tasleemat delivers a **complete programmatic Python API**, standard **Model Context Protocol (MCP)** server, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
 
 ---
 
-## 🌟 What's New in v2.4.0
+## 🌟 What's New in v2.4.1
 
 - ⚡ **Native Model Context Protocol (MCP) Server:** Plug Tasleemat directly into Claude Desktop, Cursor, and OpenCode via `tasleemat-mcp` or `python -m tasleemat.mcp`.
 - 🧩 **First-Class Programmatic Python API:** Access all 114 artifact definitions, bundles, templates, guides, prompts, and schemas directly via `import tasleemat`.

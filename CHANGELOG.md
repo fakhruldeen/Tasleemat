@@ -15,6 +15,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.4.1] - 2026-10-12 — Native Model Context Protocol (MCP) Server & LLM Ecosystem Integration
+
+### ⚡ Standard Model Context Protocol (MCP) Server
+- **Zero-Dependency Stdio MCP Server:** Introduced `tasleemat.mcp` module providing a standard JSON-RPC 2.0 stdio MCP server executable via `tasleemat-mcp` or `python -m tasleemat.mcp`.
+- **6 Enterprise PMO Tools:** Exposes `tasleemat_list_artifacts`, `tasleemat_get_artifact`, `tasleemat_get_asset`, `tasleemat_get_lexicon`, `tasleemat_validate_data`, and `tasleemat_render_artifact`.
+- **Standardized MCP Resources:** Exposes `pmo://catalog` (full 114 artifact catalog JSON) and `pmo://lexicon` (complete bilingual terminology dictionary) for direct LLM context retrieval.
+- **Pre-Engineered PMO Prompts:** Exposes `draft_project_charter` and `conduct_risk_assessment` parameterized workflows for AI agents.
+- **CLI Command:** Added `tasleemat mcp` subcommand to launch the server directly from the standard CLI.
+
+### 🤖 LLM Ecosystem Guides & Integration Docs
+- **Multi-Client MCP Guide (`docs/MCP_INTEGRATION.md`):** Complete setup guides and configuration snippets for Claude Desktop (`claude_desktop_config.json`), Cursor IDE, and OpenCode.
+- **Frictionless OKF in LLM Context:** Documented how to feed `datapackage.json` and artifact field dictionaries into LLM context windows to achieve 100% structural fidelity and eliminate hallucinations.
+- **Enhanced Documentation:** Updated `README.md`, `README_AR.md`, and `sdk/python/README.md` with instructions for ChatGPT, Claude, and OpenCode workflows.
+
+### 🧪 Test Coverage & Package Polish
+- **MCP Test Suite:** Added `tests/test_mcp_server.py` with 11 comprehensive unit tests covering protocol handshakes, tool executions, resource reads, prompt rendering, and error handling (bringing total suite to 73 tests).
+- **Distribution Packages:** Built updated wheel (`tasleemat-2.4.1-py3-none-any.whl`) and source distribution (`tasleemat-2.4.1.tar.gz`).
+- **Catalog & Version Synchronization:** Updated package versions across `datapackage.json`, `setup.py`, and `tasleemat/data/catalog.json`.
+
+---
+
 ## [2.4.0] - 2026-10-12 — Programmatic Python API, Structural Validation & Agent Integration
 
 ### 🧩 Programmatic Python API (`import tasleemat`)
