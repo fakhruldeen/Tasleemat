@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.fakhruldeen/tasleemat",
+  "version": "2.4.1",
+  "description": "Enterprise Bilingual (EN/AR) PMO Operating System providing 114 standardized project management deliverables, PMI PMBOK® & Saudi DGA governance, stage-gate reviews, and structural JSON schema validation.",
+  "packages": [
+    {
+      "registry_type": "pypi",
+      "identifier": "tasleemat",
+      "version": "2.4.1"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "repository": "https://github.com/fakhruldeen/Tasleemat",
+      "license": "MIT",
+      "categories": [
+        "Productivity",
+        "Business",
+        "Project Management"
+      ]
+    }
+  }
+}
