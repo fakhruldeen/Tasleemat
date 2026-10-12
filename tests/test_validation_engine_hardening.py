@@ -959,6 +959,74 @@ class TestValidationEngineHardening(unittest.TestCase):
         errs_n2, _ = _validate_with_builtin({"score": 15}, schema_no_type_num, "strict")
         self.assertEqual(len(errs_n2), 0)
 
+    def test_untyped_numeric_assertions_with_non_finite_values(self):
+        """Verify non-finite numbers (NaN, Infinity) are rejected when schema uses untyped numeric constraints."""
+        from tasleemat.validation import _validate_with_builtin
+
+        # Untyped minimum constraint
+        schema_untyped_min = {
+            "properties": {
+                "val": {"minimum": 0}
+            }
+        }
+        # NaN must be rejected as invalid JSON TYPE_MISMATCH
+        errs_nan, _ = _validate_with_builtin({"val": float("nan")}, schema_untyped_min, "strict")
+        self.assertEqual(len(errs_nan), 1)
+        self.assertEqual(errs_nan[0].code, "TYPE_MISMATCH")
+
+        # +Infinity must be rejected as invalid JSON TYPE_MISMATCH
+        errs_inf, _ = _validate_with_builtin({"val": float("inf")}, schema_untyped_min, "strict")
+        self.assertEqual(len(errs_inf), 1)
+        self.assertEqual(errs_inf[0].code, "TYPE_MISMATCH")
+
+        # Nested non-finite float inside array item
+        schema_arr = {
+            "properties": {
+                "items": {"items": {"minimum": 5}}
+            }
+        }
+        errs_arr, _ = _validate_with_builtin({"items": [10, float("nan")]}, schema_arr, "strict")
+        self.assertEqual(len(errs_arr), 1)
+        self.assertEqual(errs_arr[0].code, "TYPE_MISMATCH")
+
+    def test_arbitrary_large_integer_bounds(self):
+        """Verify arbitrary-size finite integers do not cause float conversion overflow or failure in preflight/runtime."""
+        from tasleemat.validation import preflight_schema, _validate_with_builtin
+
+        # 100-digit large integers
+        large_int_min = 10**80
+        large_int_max = 10**85
+        schema_large = {
+            "type": "object",
+            "properties": {
+                "counter": {
+                    "type": "integer",
+                    "minimum": large_int_min,
+                    "maximum": large_int_max,
+                }
+            }
+        }
+        # Preflight must pass without math.isinf conversion overflow
+        pre_errs = preflight_schema(schema_large)
+        self.assertEqual(len(pre_errs), 0)
+
+        # Value within range
+        val_within = 5 * (10**82)
+        errs_ok, _ = _validate_with_builtin({"counter": val_within}, schema_large, "strict")
+        self.assertEqual(len(errs_ok), 0)
+
+        # Value below minimum
+        val_below = 10**79
+        errs_below, _ = _validate_with_builtin({"counter": val_below}, schema_large, "strict")
+        self.assertEqual(len(errs_below), 1)
+        self.assertEqual(errs_below[0].code, "MINIMUM_VIOLATION")
+
+        # Value above maximum
+        val_above = 10**86
+        errs_above, _ = _validate_with_builtin({"counter": val_above}, schema_large, "strict")
+        self.assertEqual(len(errs_above), 1)
+        self.assertEqual(errs_above[0].code, "MAXIMUM_VIOLATION")
+
 
 if __name__ == "__main__":
     unittest.main()

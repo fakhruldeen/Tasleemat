@@ -254,8 +254,7 @@ def preflight_schema(schema: Any, path: str = "#") -> List[ValidationError]:
             if (
                 isinstance(val_num, bool)
                 or not isinstance(val_num, (int, float))
-                or math.isnan(val_num)
-                or math.isinf(val_num)
+                or (isinstance(val_num, float) and (math.isnan(val_num) or math.isinf(val_num)))
             ):
                 errors.append(
                     ValidationError(
@@ -376,6 +375,18 @@ def _validate_with_builtin(
     warnings: List[str] = []
 
     def check_node(val: Any, rule: Dict[str, Any], path: str):
+        # 0. Payload validity check: Reject non-finite floats (NaN, Infinity) per RFC 8259 JSON spec
+        if isinstance(val, float) and (math.isnan(val) or math.isinf(val)):
+            errors.append(
+                ValidationError(
+                    code="TYPE_MISMATCH",
+                    message=f"Non-finite numeric value '{val}' at {path or '/'} is not valid JSON.",
+                    field_path=path or "/",
+                    schema_rule="type:number",
+                )
+            )
+            return
+
         # 1. Evaluate universal assertions: enum and const across all types
         if "const" in rule:
             const_val = rule["const"]
@@ -592,29 +603,26 @@ def _validate_with_builtin(
             and not isinstance(val, bool)
             and (expected_type is None or expected_type in ("integer", "number"))
         ):
-            if isinstance(val, float) and (math.isnan(val) or math.isinf(val)):
-                pass
-            else:
-                minimum = rule.get("minimum")
-                if minimum is not None and val < minimum:
-                    errors.append(
-                        ValidationError(
-                            code="MINIMUM_VIOLATION",
-                            message=f"Value {val} at {path or '/'} is less than minimum {minimum}",
-                            field_path=path or "/",
-                            schema_rule=f"minimum:{minimum}",
-                        )
+            minimum = rule.get("minimum")
+            if minimum is not None and val < minimum:
+                errors.append(
+                    ValidationError(
+                        code="MINIMUM_VIOLATION",
+                        message=f"Value {val} at {path or '/'} is less than minimum {minimum}",
+                        field_path=path or "/",
+                        schema_rule=f"minimum:{minimum}",
                     )
-                maximum = rule.get("maximum")
-                if maximum is not None and val > maximum:
-                    errors.append(
-                        ValidationError(
-                            code="MAXIMUM_VIOLATION",
-                            message=f"Value {val} at {path or '/'} is greater than maximum {maximum}",
-                            field_path=path or "/",
-                            schema_rule=f"maximum:{maximum}",
-                        )
+                )
+            maximum = rule.get("maximum")
+            if maximum is not None and val > maximum:
+                errors.append(
+                    ValidationError(
+                        code="MAXIMUM_VIOLATION",
+                        message=f"Value {val} at {path or '/'} is greater than maximum {maximum}",
+                        field_path=path or "/",
+                        schema_rule=f"maximum:{maximum}",
                     )
+                )
 
     check_node(data, schema, "")
     return errors, warnings

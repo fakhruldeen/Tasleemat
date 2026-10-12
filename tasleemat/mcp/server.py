@@ -520,39 +520,74 @@ class MCPServer:
                 "error": {"code": -32600, "message": "Invalid Request: expected a JSON-RPC 2.0 object."},
             })
 
-        # Validate jsonrpc version if present
-        if "jsonrpc" in req and req.get("jsonrpc") != "2.0":
+        # Validate jsonrpc version field: MUST be present and exactly "2.0"
+        if "jsonrpc" not in req or req.get("jsonrpc") != "2.0":
+            req_id = req.get("id") if isinstance(req.get("id"), (str, int)) and not isinstance(req.get("id"), bool) else None
             return json.dumps({
                 "jsonrpc": "2.0",
-                "id": req.get("id"),
-                "error": {"code": -32600, "message": "Invalid Request: 'jsonrpc' must be exactly '2.0'."},
+                "id": req_id,
+                "error": {"code": -32600, "message": "Invalid Request: 'jsonrpc' must be present and exactly '2.0'."},
             })
 
-        # Extract message ID: can be int, string, or null/None. Note: 0 is falsey in Python but valid ID in JSON-RPC!
+        # Extract and validate message ID
+        # In JSON-RPC 2.0: An identifier established by the Client that MUST contain a String, Number, or NULL value if included.
+        # Numbers SHOULD NOT contain fractional parts. Booleans, Arrays, and Objects are invalid.
+        # A Notification is a Request object without an "id" member.
         has_id = "id" in req
         msg_id = req.get("id") if has_id else None
 
+        if has_id:
+            # Note: bool is a subclass of int in Python, so isinstance(True, int) is True!
+            if isinstance(msg_id, bool) or (msg_id is not None and not isinstance(msg_id, (str, int, float))):
+                return json.dumps({
+                    "jsonrpc": "2.0",
+                    "id": None,
+                    "error": {"code": -32600, "message": "Invalid Request: 'id' must be a string, integer, or null."},
+                })
+            if isinstance(msg_id, float):
+                if math.isnan(msg_id) or math.isinf(msg_id) or not msg_id.is_integer():
+                    return json.dumps({
+                        "jsonrpc": "2.0",
+                        "id": None,
+                        "error": {"code": -32600, "message": "Invalid Request: 'id' must not contain fractional or non-finite numbers."},
+                    })
+                msg_id = int(msg_id)
+
+        # Validate method member
         method = req.get("method")
-        if not isinstance(method, str):
+        if not isinstance(method, str) or not method:
             return json.dumps({
                 "jsonrpc": "2.0",
                 "id": msg_id,
-                "error": {"code": -32600, "message": "Invalid Request: 'method' must be a string."},
+                "error": {"code": -32600, "message": "Invalid Request: 'method' must be a non-empty string."},
             })
 
-        params = req.get("params", {})
-        if params is not None and not isinstance(params, (dict, list)):
-            return json.dumps({
-                "jsonrpc": "2.0",
-                "id": msg_id,
-                "error": {"code": -32600, "message": "Invalid params: 'params' must be an object or array."},
-            })
+        # Validate params member
+        params = req.get("params")
         if params is None:
             params = {}
+        elif isinstance(params, list):
+            # MCP handlers and tools expect named parameter objects; positional array params are rejected explicitly
+            if not has_id:
+                return None
+            return json.dumps({
+                "jsonrpc": "2.0",
+                "id": msg_id,
+                "error": {"code": -32602, "message": "Invalid params: Positional array parameters are not supported; expected a named parameter object."},
+            })
+        elif not isinstance(params, dict):
+            if not has_id:
+                return None
+            return json.dumps({
+                "jsonrpc": "2.0",
+                "id": msg_id,
+                "error": {"code": -32602, "message": "Invalid params: 'params' must be an object dictionary."},
+            })
 
+        # Dispatch method
         if method not in self.handlers:
             if not has_id:
-                # Unhandled notification is silently dropped
+                # Unhandled notification is silently dropped per JSON-RPC 2.0 notification specification
                 return None
             return json.dumps({
                 "jsonrpc": "2.0",

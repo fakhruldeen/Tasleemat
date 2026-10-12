@@ -104,8 +104,8 @@ Completed-data payload validation is executed through `validate_artifact_data` o
 1. **Zero Mandatory External Dependencies:** Built on a pure-Python validation engine guaranteeing no third-party runtime package requirements.
 2. **Schema Preflighting:** Every subschema, optional branch, and array item schema is statically preflighted before payload evaluation to reject unsupported keywords (`UNSUPPORTED_SCHEMA_ASSERTION`), invalid types (`UNSUPPORTED_TYPE_DECLARATION`), or broken patterns (`INVALID_PATTERN_SYNTAX`).
 3. **Supported Keywords & Contexts:**
-   - **Types:** `object`, `array`, `string`, `integer`, `number`, `boolean`, `null`. Python boolean subclass trap (`isinstance(True, int)`) is strictly guarded. Non-finite numbers (`NaN`, `Infinity`, `-Infinity`) are strictly rejected per RFC 8259.
-   - **Bounds:** `minimum`, `maximum`, `minLength`, `maxLength`, `minItems`, `maxItems`. Preflight verifies all numeric bounds are finite numbers.
+   - **Types:** `object`, `array`, `string`, `integer`, `number`, `boolean`, `null`. Python boolean subclass trap (`isinstance(True, int)`) is strictly guarded. Non-finite numbers (`NaN`, `Infinity`, `-Infinity`) are strictly rejected across untyped, typed, and nested payload values per RFC 8259.
+   - **Bounds:** `minimum`, `maximum`, `minLength`, `maxLength`, `minItems`, `maxItems`. Preflight verifies all numeric bounds are finite numbers without float conversion overflow on arbitrary-precision large integers.
    - **Universal Equality:** `enum` and `const` enforced across all data types under strict JSON equality semantics (booleans and numbers never cross-match).
    - **Dialect Alignment & Preflight Enforcement:** Every schema structure accepted by preflight is guaranteed to be executable by runtime validation. In JSON Schema Draft 2020-12, type unions (`type: ["string", "null"]`) and legacy tuple item lists (`items: [...]`) are rejected during preflight (`UNSUPPORTED_TYPE_DECLARATION`, `UNSUPPORTED_SCHEMA_ASSERTION`) to prevent silent runtime skips.
    - **Format Assertion Policy & Registry:** Format keywords operate under explicit assertion mode managed by the centralized registry (`tasleemat.formats`). Preflight independently verifies format validity before payload traversal (`UNSUPPORTED_FORMAT_ASSERTION`, `MALFORMED_SCHEMA_KEYWORD`). Supported formats include:
@@ -139,6 +139,11 @@ Completed-data payload validation is executed through `validate_artifact_data` o
    - `mode`: `"strict"` or `"draft"`.
    - `status`: Execution capability status.
 7. **Immutability Guarantee:** Validation never mutates input dictionaries or catalog cache structures.
+8. **MCP Server Protocol Conformance:** The Model Context Protocol (MCP) server strictly conforms to JSON-RPC 2.0:
+   - Requires `jsonrpc: "2.0"` envelope.
+   - Strictly validates request IDs (`string`, integer `number`, or `null`; rejects boolean, non-finite, fractional float, and structural container IDs with `-32600`).
+   - Requires object-shaped named parameters (`dict` or omitted); rejects positional parameter arrays with standard code `-32602` (`Invalid params`).
+   - Silently drops unhandled JSON-RPC notifications while returning standard errors for unhandled requests.
 
 ### Mock Generation Notice
 The built-in offline mock provider (`AIClient(provider="mock")`) emits structural placeholders labeled prominently with:

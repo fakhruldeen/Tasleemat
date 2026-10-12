@@ -384,7 +384,7 @@ class TestMCPServer(unittest.TestCase):
             "params": "not-an-object",
         }))
         resp_bp = json.loads(raw_bad_params)
-        self.assertEqual(resp_bp["error"]["code"], -32600)
+        self.assertEqual(resp_bp["error"]["code"], -32602)
 
         # 7. Valid falsey ID (id = 0)
         raw_zero_id = self.server.handle_message(json.dumps({
@@ -396,12 +396,74 @@ class TestMCPServer(unittest.TestCase):
         self.assertEqual(resp_zero["id"], 0)
         self.assertEqual(resp_zero["result"], {})
 
-        # 8. Unhandled notification drops silently
-        raw_notif = self.server.handle_message(json.dumps({
-            "jsonrpc": "2.0",
-            "method": "custom/unhandled_notification",
+        # 9. Missing jsonrpc member entirely
+        raw_missing_rpc = self.server.handle_message(json.dumps({
+            "id": 13,
+            "method": "ping",
         }))
-        self.assertIsNone(raw_notif)
+        resp_mr = json.loads(raw_missing_rpc)
+        self.assertEqual(resp_mr["error"]["code"], -32600)
+        self.assertEqual(resp_mr["id"], 13)
+
+        # 10. Invalid ID types: boolean True / False
+        raw_bool_id = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": True,
+            "method": "ping",
+        }))
+        resp_bi = json.loads(raw_bool_id)
+        self.assertEqual(resp_bi["error"]["code"], -32600)
+        self.assertIsNone(resp_bi["id"])
+
+        # 11. Invalid ID types: dictionary object
+        raw_obj_id = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": {"key": "val"},
+            "method": "ping",
+        }))
+        resp_oi = json.loads(raw_obj_id)
+        self.assertEqual(resp_oi["error"]["code"], -32600)
+        self.assertIsNone(resp_oi["id"])
+
+        # 12. Valid string ID, including empty string ID ""
+        raw_empty_id = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": "",
+            "method": "ping",
+        }))
+        resp_empty = json.loads(raw_empty_id)
+        self.assertEqual(resp_empty["id"], "")
+        self.assertEqual(resp_empty["result"], {})
+
+        # 13. Valid Null ID behavior
+        raw_null_id = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": None,
+            "method": "ping",
+        }))
+        resp_null = json.loads(raw_null_id)
+        self.assertIsNone(resp_null["id"])
+        self.assertEqual(resp_null["result"], {})
+
+        # 14. Positional array params rejected explicitly with -32602 (Invalid params)
+        raw_pos_params = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": 14,
+            "method": "tools/call",
+            "params": ["PMO-03.01"],
+        }))
+        resp_pos = json.loads(raw_pos_params)
+        self.assertEqual(resp_pos["error"]["code"], -32602)
+        self.assertEqual(resp_pos["id"], 14)
+
+        # 15. Tool argument validation error returns isError: True content
+        resp_tool_arg_err = self.send_request("tools/call", {
+            "name": "tasleemat_get_artifact",
+            "arguments": {},  # missing required 'artifact_id'
+        })
+        self.assertNotIn("error", resp_tool_arg_err)
+        self.assertTrue(resp_tool_arg_err["result"]["isError"])
+        self.assertIn("Error executing", resp_tool_arg_err["result"]["content"][0]["text"])
 
 
 if __name__ == "__main__":
