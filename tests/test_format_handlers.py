@@ -239,19 +239,49 @@ class TestPreflightAndFormatAssertions:
         assert codes == {"FORMAT_VIOLATION"}
         assert paths == {"/uid", "/target_date", "/contact_email"}
 
-    def test_payload_not_mutated_during_format_checks(self):
+    def test_strict_and_draft_modes_reject_malformed_supplied_dates(self):
         schema = {
             "type": "object",
+            "required": ["artifact_id", "metadata"],
             "properties": {
-                "uid": {"type": "string", "format": "uuid"},
-                "timestamp": {"type": "string", "format": "date-time"},
+                "artifact_id": {"type": "string", "const": "PMO-05.01"},
+                "metadata": {
+                    "type": "object",
+                    "properties": {
+                        "date_prepared": {"type": "string", "format": "date"}
+                    }
+                },
+                "issues": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "target_resolution_date": {"type": "string", "format": "date"}
+                        }
+                    }
+                }
+            }
+        }
+        # Incomplete payload (draft), but supplied date values are invalid
+        payload = {
+            "artifact_id": "PMO-05.01",
+            "metadata": {
+                "date_prepared": "2026-02-31"  # Invalid calendar date
             },
+            "issues": [
+                {
+                    "target_resolution_date": "2026-2-5"  # Non-zero-padded date
+                }
+            ]
         }
-        orig = {
-            "uid": "123e4567-e89b-12d3-a456-426614174000",
-            "timestamp": "2026-10-12T14:30:00Z",
-        }
-        copy_orig = copy.deepcopy(orig)
-        errors, warnings = _validate_with_builtin(orig, schema, mode="strict")
-        assert len(errors) == 0
-        assert orig == copy_orig
+        # Strict mode
+        strict_errors, _ = _validate_with_builtin(payload, schema, mode="strict")
+        # Draft mode
+        draft_errors, _ = _validate_with_builtin(payload, schema, mode="draft")
+
+        assert len(strict_errors) == 2
+        assert len(draft_errors) == 2
+        assert [e.code for e in strict_errors] == ["FORMAT_VIOLATION", "FORMAT_VIOLATION"]
+        assert [e.code for e in draft_errors] == ["FORMAT_VIOLATION", "FORMAT_VIOLATION"]
+        assert [e.field_path for e in strict_errors] == ["/metadata/date_prepared", "/issues/0/target_resolution_date"]
+        assert [e.field_path for e in draft_errors] == ["/metadata/date_prepared", "/issues/0/target_resolution_date"]
