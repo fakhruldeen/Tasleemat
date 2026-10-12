@@ -19,15 +19,14 @@ With **Version 2.4.1**, Tasleemat delivers a **complete programmatic Python API*
 
 ---
 
-## 🌟 What's New in v2.4.1
-
-- ⚡ **Native Model Context Protocol (MCP) Server:** Plug Tasleemat directly into Claude Desktop, Cursor, and OpenCode via `tasleemat-mcp` or `python -m tasleemat.mcp`.
-- 🧩 **First-Class Programmatic Python API:** Access all 114 artifact definitions, bundles, templates, guides, prompts, and schemas directly via `import tasleemat`.
-- 🔍 **Structural Data Validation Engine:** Validate artifact data payloads against formal Draft 2020-12 companion JSON schemas with field-level error reporting (`validate_artifact_data`).
-- 📝 **Strict & Draft Validation Modes:** Support production sign-offs with strict validation while enabling in-progress agent workflows with non-blocking draft warnings.
-- 🎨 **Standalone Document Rendering:** Render artifacts to styled, print-ready HTML with zero external services and strict immutability protection for source templates (`render_artifact`).
-- 🤖 **Agent Orchestrator Integration (Maharat Ready):** Machine-readable catalog, stable artifact IDs (`PMO-XX.YY`), cryptographic SHA-256 content fingerprints, and standardized bilingual terminology getters (`get_lexicon`).
-- 🔒 **Absolute Immutability & Traceability:** Guaranteed immutability of the source `forms/` catalog with runtime guards against unintended overwrites.
+## 🌟 What's New in v2.5.0
+ 
+- 💯 **100% Completed-Data Companion Schema Coverage:** All 114 PMO deliverables across all 8 lifecycle phases now possess formal Draft 2020-12 companion JSON schemas and comprehensive valid/invalid/draft fixture suites.
+- 🚀 **Zero-Dependency Pure-Python Validation Engine:** Robust structural JSON validation (`validate_artifact_data` / MCP `tasleemat_validate_data`) with static schema preflighting, strict RFC 8259 JSON compatibility, and universal equality semantics.
+- ⚡ **Hardened Model Context Protocol (MCP) Server:** Strict JSON-RPC 2.0 request envelope validation, robust ID handling (preserving falsey IDs, rejecting fractional/non-finite IDs with `-32600`), named-parameter enforcement, and non-crashing stdio transport.
+- 📐 **RFC Format Handlers & Registries:** Full support for `date`, `date-time`, `time`, `uuid`, `uri`, `uri-reference`, `email`, and `duration` format assertions.
+- 🛡️ **Arbitrary-Precision Safe Bounds:** Preflight schema checks safely evaluate extreme integer constraints (e.g. $10^{400}$) without float conversion overflow errors.
+- 🔒 **Absolute Immutability & Traceability:** Authoritative SHA-256 fingerprinting for every schema and deliverable definition with strict immutability protection for source templates.
 
 ---
 
