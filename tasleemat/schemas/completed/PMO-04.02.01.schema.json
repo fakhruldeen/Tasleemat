@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.01.schema.json",
+  "title": "Completed Scope Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Scope Management Plan artifact data payloads (PMO-04.02.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.02.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "project_manager", "prepared_by"]
+    },
+    "scope_definition_process": {
+      "type": "object",
+      "properties": {
+        "scope_planning_approach": { "type": "string", "minLength": 5 },
+        "roles_and_responsibilities": { "type": "string", "minLength": 5 },
+        "scope_statement_preparation_steps": { "type": "string", "minLength": 5 }
+      },
+      "required": ["scope_planning_approach", "roles_and_responsibilities", "scope_statement_preparation_steps"]
+    },
+    "wbs_creation_and_structure": {
+      "type": "object",
+      "properties": {
+        "wbs_decomposition_methodology": { "type": "string", "minLength": 5 },
+        "wbs_level_of_detail": { "type": "string", "minLength": 5 },
+        "wbs_identification_scheme": { "type": "string", "minLength": 5 }
+      },
+      "required": ["wbs_decomposition_methodology", "wbs_level_of_detail", "wbs_identification_scheme"]
+    },
+    "wbs_dictionary_and_baseline": {
+      "type": "object",
+      "properties": {
+        "wbs_dictionary_development": { "type": "string", "minLength": 5 },
+        "scope_baseline_approval_and_maintenance": { "type": "string", "minLength": 5 }
+      },
+      "required": ["wbs_dictionary_development", "scope_baseline_approval_and_maintenance"]
+    },
+    "scope_verification_and_acceptance": {
+      "type": "object",
+      "properties": {
+        "deliverable_verification_process": { "type": "string", "minLength": 5 },
+        "formal_acceptance_criteria": { "type": "string", "minLength": 5 }
+      },
+      "required": ["deliverable_verification_process", "formal_acceptance_criteria"]
+    },
+    "scope_control_and_integration": {
+      "type": "object",
+      "properties": {
+        "scope_change_control_integration": { "type": "string", "minLength": 5 },
+        "requirements_traceability_integration": { "type": "string", "minLength": 5 }
+      },
+      "required": ["scope_change_control_integration", "requirements_traceability_integration"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "scope_definition_process",
+    "wbs_creation_and_structure",
+    "wbs_dictionary_and_baseline",
+    "scope_verification_and_acceptance",
+    "scope_control_and_integration"
+  ]
+}

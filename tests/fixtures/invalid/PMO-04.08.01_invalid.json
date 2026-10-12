@@ -1,0 +1,32 @@
+{
+  "artifact_id": "PMO-04.08.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-08",
+    "date_prepared": "2026-13-99",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Enterprise Risk Management Office",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "strategy_and_methodology": {
+    "risk_strategy": "Bad",
+    "tools_and_repositories": "Bad"
+  },
+  "roles_and_funding": {
+    "roles_and_responsibilities": "Bad",
+    "contingency_funding": "Bad"
+  },
+  "probability_and_impact_definitions": {
+    "probability_scale": "Bad",
+    "impact_definitions": "Bad"
+  },
+  "scoring_and_matrix": {
+    "matrix_grid": "Bad",
+    "thresholds_and_triggers": "Bad"
+  },
+  "categories_and_cadence": {
+    "breakdown_categories": "Bad",
+    "audits_and_cadence": "Bad"
+  }
+}

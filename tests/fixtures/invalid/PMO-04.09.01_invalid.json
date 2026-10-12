@@ -1,0 +1,28 @@
+{
+  "artifact_id": "PMO-04.09.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-09",
+    "date_prepared": "2026-02-30",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Enterprise Procurement Office",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "integration_and_scheduling": {
+    "procurement_strategy": "Bad",
+    "timetable_alignment": "Bad"
+  },
+  "roles_authority_and_metrics": {
+    "roles_and_authority": "Bad",
+    "vendor_metrics_slas": "Bad"
+  },
+  "contract_types_and_vendors": {
+    "contract_types_selection": "Bad",
+    "vendor_selection_approach": "Bad"
+  },
+  "jurisdiction_and_risk": {
+    "jurisdiction_dispute_terms": "Bad",
+    "procurement_risk_mitigation": "Bad"
+  }
+}

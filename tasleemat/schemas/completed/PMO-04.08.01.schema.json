@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.08.01.schema.json",
+  "title": "Completed Risk Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Risk Management Plan artifact data payloads (PMO-04.08.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.08.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "project_manager", "prepared_by"]
+    },
+    "strategy_and_methodology": {
+      "type": "object",
+      "properties": {
+        "risk_strategy": { "type": "string", "minLength": 5 },
+        "tools_and_repositories": { "type": "string", "minLength": 5 }
+      },
+      "required": ["risk_strategy", "tools_and_repositories"]
+    },
+    "roles_and_funding": {
+      "type": "object",
+      "properties": {
+        "roles_and_responsibilities": { "type": "string", "minLength": 5 },
+        "contingency_funding": { "type": "string", "minLength": 5 }
+      },
+      "required": ["roles_and_responsibilities", "contingency_funding"]
+    },
+    "probability_and_impact_definitions": {
+      "type": "object",
+      "properties": {
+        "probability_scale": { "type": "string", "minLength": 5 },
+        "impact_definitions": { "type": "string", "minLength": 5 }
+      },
+      "required": ["probability_scale", "impact_definitions"]
+    },
+    "scoring_and_matrix": {
+      "type": "object",
+      "properties": {
+        "matrix_grid": { "type": "string", "minLength": 5 },
+        "thresholds_and_triggers": { "type": "string", "minLength": 5 }
+      },
+      "required": ["matrix_grid", "thresholds_and_triggers"]
+    },
+    "categories_and_cadence": {
+      "type": "object",
+      "properties": {
+        "breakdown_categories": { "type": "string", "minLength": 5 },
+        "audits_and_cadence": { "type": "string", "minLength": 5 }
+      },
+      "required": ["breakdown_categories", "audits_and_cadence"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "strategy_and_methodology",
+    "roles_and_funding",
+    "probability_and_impact_definitions",
+    "scoring_and_matrix",
+    "categories_and_cadence"
+  ]
+}

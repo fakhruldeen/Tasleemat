@@ -1,0 +1,34 @@
+{
+  "artifact_id": "PMO-04.02.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Enterprise Scope Governance Office",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "scope_definition_process": {
+    "scope_planning_approach": "Bad",
+    "roles_and_responsibilities": "Bad",
+    "scope_statement_preparation_steps": "Bad"
+  },
+  "wbs_creation_and_structure": {
+    "wbs_decomposition_methodology": "Bad",
+    "wbs_level_of_detail": "Bad",
+    "wbs_identification_scheme": "Bad"
+  },
+  "wbs_dictionary_and_baseline": {
+    "wbs_dictionary_development": "Bad",
+    "scope_baseline_approval_and_maintenance": "Bad"
+  },
+  "scope_verification_and_acceptance": {
+    "deliverable_verification_process": "Bad",
+    "formal_acceptance_criteria": "Bad"
+  },
+  "scope_control_and_integration": {
+    "scope_change_control_integration": "Bad",
+    "requirements_traceability_integration": "Bad"
+  }
+}

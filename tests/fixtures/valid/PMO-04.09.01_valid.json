@@ -1,0 +1,28 @@
+{
+  "artifact_id": "PMO-04.09.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-09",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Enterprise Procurement Office",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "integration_and_scheduling": {
+    "procurement_strategy": "Align major contract awards with project sprint release milestones and cloud infrastructure phases.",
+    "timetable_alignment": "RFP issuance completed by Month 2, vendor selection by Month 3, contract signoff by Month 4."
+  },
+  "roles_authority_and_metrics": {
+    "roles_and_authority": "Procurement Manager negotiates commercial terms, Legal approves contract templates, Project Manager authorizes scope SOWs.",
+    "vendor_metrics_slas": "99.9% uptime SLA, defect resolution SLA under 4 hours for Severity 1, and monthly deliverable audits."
+  },
+  "contract_types_and_vendors": {
+    "contract_types_selection": "Firm Fixed Price (FFP) for core platform software licenses; Time & Materials (T&M) for specialized architecture consulting.",
+    "vendor_selection_approach": "Evaluation through weighted scoring: 40% technical competence, 30% commercial cost, 30% vendor past performance."
+  },
+  "jurisdiction_and_risk": {
+    "jurisdiction_dispute_terms": "Governed by local commercial arbitration rules, billing denominated in SAR.",
+    "procurement_risk_mitigation": "Dual vendor sourcing strategy for mission-critical cloud components and escrow agreements for proprietary source code."
+  }
+}

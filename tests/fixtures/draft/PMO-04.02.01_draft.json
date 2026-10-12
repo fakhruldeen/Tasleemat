@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-04.02.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Enterprise Scope Governance Office",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "scope_definition_process": {
+    "scope_planning_approach": "Draft scope planning approach using progressive elaboration."
+  },
+  "wbs_creation_and_structure": {
+    "wbs_decomposition_methodology": "Draft WBS decomposition methodology."
+  },
+  "wbs_dictionary_and_baseline": {
+    "wbs_dictionary_development": "Draft WBS dictionary development procedure."
+  },
+  "scope_verification_and_acceptance": {
+    "deliverable_verification_process": "Draft deliverable verification procedure."
+  },
+  "scope_control_and_integration": {
+    "scope_change_control_integration": "Draft scope change control integration."
+  }
+}

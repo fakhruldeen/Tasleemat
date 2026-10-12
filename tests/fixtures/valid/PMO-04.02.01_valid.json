@@ -1,0 +1,34 @@
+{
+  "artifact_id": "PMO-04.02.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Enterprise Scope Governance Office",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "scope_definition_process": {
+    "scope_planning_approach": "Iterative product backlog grooming and progressive elaboration with stakeholders.",
+    "roles_and_responsibilities": "Product Owner defines features, Project Manager verifies scope baselines and signoffs.",
+    "scope_statement_preparation_steps": "Facilitate stakeholder discovery sessions, document deliverables, and define acceptance criteria."
+  },
+  "wbs_creation_and_structure": {
+    "wbs_decomposition_methodology": "Decompose high-level releases into modular epics, features, and verifiable work packages.",
+    "wbs_level_of_detail": "Granularity defined to the 8/80 hour rule: work packages span 8 to 80 person-hours.",
+    "wbs_identification_scheme": "Hierarchical numbering scheme matching lifecycle deliverable codes (e.g. 1.1.2.3)."
+  },
+  "wbs_dictionary_and_baseline": {
+    "wbs_dictionary_development": "Document detailed work package description, responsible owners, and completion criteria.",
+    "scope_baseline_approval_and_maintenance": "Formal signoff required by Steering Committee before locking scope baseline in project portal."
+  },
+  "scope_verification_and_acceptance": {
+    "deliverable_verification_process": "Peer review and quality checklist audits conducted before initiating customer inspection.",
+    "formal_acceptance_criteria": "Acceptance criteria signed off by customer leads on formal deliverable acceptance forms."
+  },
+  "scope_control_and_integration": {
+    "scope_change_control_integration": "Any requested variance is routed through formal Change Request Form PMO-06.01 evaluation.",
+    "requirements_traceability_integration": "All approved scope work packages trace directly to verified business requirements matrix."
+  }
+}

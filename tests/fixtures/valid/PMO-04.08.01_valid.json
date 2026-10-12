@@ -1,0 +1,32 @@
+{
+  "artifact_id": "PMO-04.08.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-08",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Enterprise Risk Management Office",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "strategy_and_methodology": {
+    "risk_strategy": "Continuous risk lifecycle covering identification, quantitative modeling, response execution, and audit.",
+    "tools_and_repositories": "Central PMO risk register repository and automated risk radar notification boards."
+  },
+  "roles_and_funding": {
+    "roles_and_responsibilities": "Risk Manager facilitates workshops, Risk Owners execute mitigation strategies and contingency actions.",
+    "contingency_funding": "Management reserves capped at 10% of total project baseline, allocated upon Steering Committee signoff."
+  },
+  "probability_and_impact_definitions": {
+    "probability_scale": "Five-point scoring scale from 1 (Very Low <10%) to 5 (Very High >70%).",
+    "impact_definitions": "Calibrated matrix assessing cost variance (>10%), schedule slippage (>2 weeks), and quality impact."
+  },
+  "scoring_and_matrix": {
+    "matrix_grid": "Standard 5x5 probability-impact matrix resulting in low, medium, and high severity tiers.",
+    "thresholds_and_triggers": "Risks with score >= 15 require mandatory escalation to Executive Sponsor within 24 hours."
+  },
+  "categories_and_cadence": {
+    "breakdown_categories": "Technical, External, Organizational, Commercial, and Project Management risk categories.",
+    "audits_and_cadence": "Bi-weekly sprint risk reviews and formal monthly independent risk governance audits."
+  }
+}
