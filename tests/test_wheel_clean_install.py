@@ -152,8 +152,17 @@ draft_payload = {
         "high_level_project_description": "Exploratory summary."
     }
 }
-report_draft = tasleemat.validate_artifact_data("PMO-03.01", draft_payload, mode="draft")
-assert report_draft.valid is True, f"Draft validation failed: {report_draft.errors}"
+# Verify definition reference contract in clean venv
+report_ref_ok = tasleemat.validate_artifact_data("PMO-03.01", valid_payload, definition_version=defn["fingerprint"])
+assert report_ref_ok.valid is True
+report_ref_bad = tasleemat.validate_artifact_data("PMO-03.01", valid_payload, definition_version="https://json-schema.org/draft/2020-12/schema")
+assert report_ref_bad.valid is False
+assert report_ref_bad.errors[0].code == "UNSUPPORTED_VERSION"
+
+# Verify unknown artifact status in clean venv
+report_unknown = tasleemat.validate_artifact_data("UNKNOWN-99.99", {"a": 1})
+assert report_unknown.status == "unknown_artifact"
+assert report_unknown.errors[0].code == "UNKNOWN_ARTIFACT"
 
 print("SUCCESS: Programmatic library test passed in clean venv!")
 """

@@ -106,7 +106,22 @@ In addition to the 114 template schema definitions, Tasleemat provides additive 
 - `PMO-06.01` (Project Status Report — Operational Monitoring)
 - `PMO-07.03` (Project or Phase Closeout — Archival & Benefits Handover)
 
-These schemas validate completed JSON payloads using `validate_artifact_data` or MCP `tasleemat_validate_data` in `strict` or `draft` modes. Unsupported deliverables return `status="unavailable"` with clear error diagnostic codes.
+#### Structural Validation Engine Architecture & Contracts
+Completed-data payload validation is executed through `validate_artifact_data` or MCP `tasleemat_validate_data`. The engine operates under strict deterministic contracts:
+1. **Zero Mandatory External Dependencies:** Built on a pure-Python validation engine guaranteeing no third-party runtime package requirements.
+2. **Schema Preflighting:** Every subschema, optional branch, and array item schema is statically preflighted before payload evaluation to reject unsupported keywords (`UNSUPPORTED_SCHEMA_ASSERTION`), invalid types (`UNSUPPORTED_TYPE_DECLARATION`), or broken patterns (`INVALID_PATTERN_SYNTAX`).
+3. **Supported Keywords & Contexts:**
+   - **Types:** `object`, `array`, `string`, `integer`, `number`, `boolean`, `null`. Python boolean subclass trap (`isinstance(True, int)`) is strictly guarded.
+   - **Bounds:** `minimum`, `maximum`, `minLength`, `maxLength`, `minItems`, `maxItems`.
+   - **Universal Equality:** `enum` and `const` enforced across all data types.
+   - **Format Validation:** `format="date"` strictly enforces ISO 8601 `YYYY-MM-DD` and calendar validity.
+4. **Availability & Error Outcomes:**
+   - `status="unknown_artifact"`: Deliverable ID not found in canonical catalog (`UNKNOWN_ARTIFACT`).
+   - `status="unavailable"`: Deliverable registered in catalog but companion schema not yet published (`SCHEMA_UNAVAILABLE`).
+   - `status="invalid_schema"`: Companion schema fails preflight inspection.
+   - `status="supported"`: Schema preflighted and executed. Returns `valid=True` or `valid=False` with line-item `errors`.
+5. **Definition Reference Contract:** The `definition_version` argument accepts the installed definition SHA-256 fingerprint, schema `$id`, schema fingerprint, or authoritative release version tag. Unknown tags or schema dialect URIs are rejected (`UNSUPPORTED_VERSION`).
+6. **Immutability Guarantee:** Validation never mutates input dictionaries or catalog cache structures.
 
 ### Mock Generation Notice
 The built-in offline mock provider (`AIClient(provider="mock")`) emits structural placeholders labeled prominently with:

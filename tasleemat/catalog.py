@@ -209,8 +209,8 @@ def get_artifact_assets(artifact_id: str, lang: str = "en") -> ArtifactAssets:
     )
 
 
-VALID_TIERS = {"1", "2", "3", "4"}
-VALID_PACKS = {"general", "predictive", "agile", "hybrid"}
+VALID_TIERS = {"1", "2", "3"}
+VALID_PACKS = {"general", "predictive", "agile", "hybrid", "ai"}
 
 
 def get_tailoring_profile(tier: str, pack: str = "general") -> List[str]:

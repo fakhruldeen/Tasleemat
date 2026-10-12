@@ -452,6 +452,140 @@ class TestValidationEngineHardening(unittest.TestCase):
         rep_dr = validate_artifact_data("PMO-05.01", dr_data, mode="draft")
         self.assertTrue(rep_dr.valid)
 
+    # ==================== ADVANCED PREFLIGHT & CONTRACT TESTS ====================
+
+    def test_definition_reference_contract(self):
+        """Verify definition reference supports fingerprint, schema ID, package version and rejects invalid."""
+        defn = get_artifact_definition("PMO-03.01")
+        real_fp = defn["fingerprint"]
+        schema_id = "https://tasleemat.pmo/schemas/completed/PMO-03.01.schema.json"
+
+        # 1. Exact catalog fingerprint
+        rep_fp = validate_artifact_data("PMO-03.01", self.charter_base, definition_version=real_fp)
+        self.assertTrue(rep_fp.valid)
+
+        # 2. Exact schema ID
+        rep_sid = validate_artifact_data("PMO-03.01", self.charter_base, definition_version=schema_id)
+        self.assertTrue(rep_sid.valid)
+
+        # 3. Exact package version
+        rep_ver = validate_artifact_data("PMO-03.01", self.charter_base, definition_version="2.5.0")
+        self.assertTrue(rep_ver.valid)
+
+        # 4. Mismatched fingerprint
+        wrong_fp = "0000000000000000000000000000000000000000000000000000000000000000"
+        rep_wrong_fp = validate_artifact_data("PMO-03.01", self.charter_base, definition_version=wrong_fp)
+        self.assertFalse(rep_wrong_fp.valid)
+        self.assertEqual(rep_wrong_fp.errors[0].code, "UNSUPPORTED_VERSION")
+
+        # 5. Schema dialect URI rejected
+        rep_dialect = validate_artifact_data("PMO-03.01", self.charter_base, definition_version="https://json-schema.org/draft/2020-12/schema")
+        self.assertFalse(rep_dialect.valid)
+        self.assertEqual(rep_dialect.errors[0].code, "UNSUPPORTED_VERSION")
+
+        # 6. Arbitrary artifact ID suffix rejected
+        rep_suffix = validate_artifact_data("PMO-03.01", self.charter_base, definition_version="release_PMO-03.01")
+        self.assertFalse(rep_suffix.valid)
+        self.assertEqual(rep_suffix.errors[0].code, "UNSUPPORTED_VERSION")
+
+    def test_schema_preflight_independent_of_payload(self):
+        """Verify schema preflight detects unsupported keywords, types, and invalid patterns in unexercised branches."""
+        from tasleemat.validation import preflight_schema, _validate_with_builtin
+
+        # 1. Unsupported assertion on absent optional property
+        schema_opt_bad = {
+            "type": "object",
+            "properties": {
+                "present_field": {"type": "string"},
+                "absent_field": {"type": "string", "unsupportedAssertion": True}
+            }
+        }
+        errs_preflight = preflight_schema(schema_opt_bad)
+        self.assertTrue(any(e.code == "UNSUPPORTED_SCHEMA_ASSERTION" for e in errs_preflight))
+        
+        # When validating payload that omits absent_field, it still fails due to schema preflight
+        errs_val, _ = _validate_with_builtin({"present_field": "hello"}, schema_opt_bad, "strict")
+        self.assertTrue(any(e.code == "UNSUPPORTED_SCHEMA_ASSERTION" for e in errs_val))
+
+        # 2. Unsupported item-schema assertion on empty array
+        schema_empty_arr = {
+            "type": "object",
+            "properties": {
+                "items_list": {
+                    "type": "array",
+                    "items": {"type": "string", "unsupportedKeyword": 123}
+                }
+            }
+        }
+        errs_arr, _ = _validate_with_builtin({"items_list": []}, schema_empty_arr, "strict")
+        self.assertTrue(any(e.code == "UNSUPPORTED_SCHEMA_ASSERTION" for e in errs_arr))
+
+        # 3. Unsupported declared type
+        schema_bad_type = {"type": "object", "properties": {"x": {"type": "unknown_primitive_type"}}}
+        errs_type = preflight_schema(schema_bad_type)
+        self.assertTrue(any(e.code == "UNSUPPORTED_TYPE_DECLARATION" for e in errs_type))
+
+        # 4. Invalid pattern syntax
+        schema_bad_regex = {"type": "object", "properties": {"x": {"type": "string", "pattern": "[unclosed-regex"}}}
+        errs_regex = preflight_schema(schema_bad_regex)
+        self.assertTrue(any(e.code == "INVALID_PATTERN_SYNTAX" for e in errs_regex))
+
+        # 5. Malformed keyword values
+        schema_bad_num = {"type": "object", "properties": {"x": {"type": "number", "minimum": "not_a_number"}}}
+        errs_num = preflight_schema(schema_bad_num)
+        self.assertTrue(any(e.code == "MALFORMED_SCHEMA_KEYWORD" for e in errs_num))
+
+    def test_universal_keywords_and_input_immutability(self):
+        """Verify enum and const apply across numbers/booleans and payload is not mutated."""
+        from tasleemat.validation import _validate_with_builtin
+        import copy
+
+        # Numeric enum & const
+        schema_num = {
+            "type": "object",
+            "properties": {
+                "rate": {"type": "number", "enum": [1.5, 2.0, 2.5]},
+                "fixed_code": {"type": "integer", "const": 42}
+            }
+        }
+        payload = {"rate": 2.0, "fixed_code": 42}
+        payload_copy = copy.deepcopy(payload)
+
+        errs_ok, _ = _validate_with_builtin(payload, schema_num, "strict")
+        self.assertEqual(len(errs_ok), 0)
+        self.assertEqual(payload, payload_copy)  # Immutability check
+
+        # Enum violation on number
+        errs_bad_enum, _ = _validate_with_builtin({"rate": 3.0, "fixed_code": 42}, schema_num, "strict")
+        self.assertTrue(any(e.code == "ENUM_VIOLATION" for e in errs_bad_enum))
+
+        # Const violation on integer
+        errs_bad_const, _ = _validate_with_builtin({"rate": 2.0, "fixed_code": 99}, schema_num, "strict")
+        self.assertTrue(any(e.code == "CONST_VIOLATION" for e in errs_bad_const))
+
+    def test_availability_and_unknown_artifact_distinction(self):
+        """Verify unknown artifacts, missing schemas, and malformed payloads are accurately categorized."""
+        # 1. Unknown artifact ID
+        rep_unknown = validate_artifact_data("UNKNOWN-99.99", {"some": "data"})
+        self.assertFalse(rep_unknown.valid)
+        self.assertEqual(rep_unknown.status, "unknown_artifact")
+        self.assertFalse(rep_unknown.is_available)
+        self.assertEqual(rep_unknown.errors[0].code, "UNKNOWN_ARTIFACT")
+
+        # 2. Known artifact without companion schema
+        rep_no_schema = validate_artifact_data("PMO-00.01", {"some": "data"})
+        self.assertFalse(rep_no_schema.valid)
+        self.assertEqual(rep_no_schema.status, "unavailable")
+        self.assertFalse(rep_no_schema.is_available)
+        self.assertEqual(rep_no_schema.errors[0].code, "SCHEMA_UNAVAILABLE")
+
+        # 3. Known artifact with supported schema but non-dict payload
+        rep_bad_payload = validate_artifact_data("PMO-03.01", ["not", "a", "dict"])
+        self.assertFalse(rep_bad_payload.valid)
+        self.assertEqual(rep_bad_payload.status, "supported")
+        self.assertTrue(rep_bad_payload.is_available)
+        self.assertEqual(rep_bad_payload.errors[0].code, "INVALID_PAYLOAD")
+
 
 if __name__ == "__main__":
     unittest.main()

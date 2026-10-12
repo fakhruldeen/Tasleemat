@@ -11,7 +11,7 @@ import re
 import datetime
 import copy
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 PACKAGE_DIR = pathlib.Path(__file__).resolve().parent
 SCHEMAS_DIR = PACKAGE_DIR / "schemas" / "completed"
@@ -39,10 +39,11 @@ class ValidationReport:
     fingerprint: str
     mode: str
     package_version: str = "2.5.0"
-    status: str = "supported"  # "supported" or "unavailable"
+    status: str = "supported"  # "supported", "unavailable", "unknown_artifact", "invalid_schema"
     definition_fingerprint: str = ""
     schema_id: str = ""
     schema_dialect: str = ""
+    schema_fingerprint: str = ""
     errors: List[ValidationError] = field(default_factory=list)
     warnings: List[str] = field(default_factory=list)
 
@@ -69,6 +70,7 @@ class ValidationReport:
             "definition_fingerprint": self.definition_fingerprint,
             "schema_id": self.schema_id,
             "schema_dialect": self.schema_dialect,
+            "schema_fingerprint": self.schema_fingerprint,
             "mode": self.mode,
             "errors": [
                 {
@@ -102,25 +104,258 @@ SUPPORTED_SCHEMA_KEYWORDS = {
     "pattern", "format", "enum", "const", "minimum", "maximum"
 }
 
+SUPPORTED_TYPES = {"object", "array", "string", "integer", "number", "boolean", "null"}
+SUPPORTED_FORMATS = {"date"}
+
+
+def preflight_schema(schema: Any, path: str = "#") -> List[ValidationError]:
+    """
+    Independently inspect and validate the structural schema before payload execution.
+    Inspects all subschemas, optional properties, and item schemas.
+    """
+    errors: List[ValidationError] = []
+
+    if not isinstance(schema, dict):
+        errors.append(
+            ValidationError(
+                code="INVALID_SCHEMA_STRUCTURE",
+                message=f"Schema node at {path} must be a dictionary object, got {type(schema).__name__}.",
+                field_path=path,
+                schema_rule="schema_type",
+            )
+        )
+        return errors
+
+    # Check for unsupported schema assertions
+    unsupported_kws = set(schema.keys()) - SUPPORTED_SCHEMA_KEYWORDS
+    for kw in sorted(list(unsupported_kws)):
+        errors.append(
+            ValidationError(
+                code="UNSUPPORTED_SCHEMA_ASSERTION",
+                message=f"Schema keyword '{kw}' at {path} is not supported by built-in validator.",
+                field_path=path,
+                schema_rule=f"keyword:{kw}",
+            )
+        )
+
+    # Validate declared type
+    if "type" in schema:
+        t = schema["type"]
+        if isinstance(t, str):
+            if t not in SUPPORTED_TYPES:
+                errors.append(
+                    ValidationError(
+                        code="UNSUPPORTED_TYPE_DECLARATION",
+                        message=f"Declared type '{t}' at {path} is not supported by built-in validator.",
+                        field_path=path,
+                        schema_rule=f"type:{t}",
+                    )
+                )
+        elif isinstance(t, list):
+            for t_item in t:
+                if not isinstance(t_item, str) or t_item not in SUPPORTED_TYPES:
+                    errors.append(
+                        ValidationError(
+                            code="UNSUPPORTED_TYPE_DECLARATION",
+                            message=f"Declared type '{t_item}' in type union at {path} is not supported.",
+                            field_path=path,
+                            schema_rule="type:union",
+                        )
+                    )
+        else:
+            errors.append(
+                ValidationError(
+                    code="MALFORMED_SCHEMA_KEYWORD",
+                    message=f"Keyword 'type' at {path} must be a string or list of strings.",
+                    field_path=path,
+                    schema_rule="keyword:type",
+                )
+            )
+
+    # Validate regex pattern syntax
+    if "pattern" in schema:
+        pat = schema["pattern"]
+        if not isinstance(pat, str):
+            errors.append(
+                ValidationError(
+                    code="MALFORMED_SCHEMA_KEYWORD",
+                    message=f"Keyword 'pattern' at {path} must be a string.",
+                    field_path=path,
+                    schema_rule="keyword:pattern",
+                )
+            )
+        else:
+            try:
+                re.compile(pat)
+            except re.error as re_err:
+                errors.append(
+                    ValidationError(
+                        code="INVALID_PATTERN_SYNTAX",
+                        message=f"Invalid regex pattern '{pat}' at {path}: {re_err}",
+                        field_path=path,
+                        schema_rule=f"pattern:{pat}",
+                    )
+                )
+
+    # Validate format keyword
+    if "format" in schema:
+        fmt = schema["format"]
+        if not isinstance(fmt, str):
+            errors.append(
+                ValidationError(
+                    code="MALFORMED_SCHEMA_KEYWORD",
+                    message=f"Keyword 'format' at {path} must be a string.",
+                    field_path=path,
+                    schema_rule="keyword:format",
+                )
+            )
+        elif fmt not in SUPPORTED_FORMATS:
+            errors.append(
+                ValidationError(
+                    code="UNSUPPORTED_FORMAT_ASSERTION",
+                    message=f"Format '{fmt}' at {path} is not supported by built-in validator.",
+                    field_path=path,
+                    schema_rule=f"format:{fmt}",
+                )
+            )
+
+    # Validate minLength / maxLength bounds
+    for kw_len in ("minLength", "maxLength"):
+        if kw_len in schema:
+            val_len = schema[kw_len]
+            if isinstance(val_len, bool) or not isinstance(val_len, int) or val_len < 0:
+                errors.append(
+                    ValidationError(
+                        code="MALFORMED_SCHEMA_KEYWORD",
+                        message=f"Keyword '{kw_len}' at {path} must be a non-negative integer.",
+                        field_path=path,
+                        schema_rule=f"keyword:{kw_len}",
+                    )
+                )
+
+    # Validate minItems / maxItems bounds
+    for kw_items in ("minItems", "maxItems"):
+        if kw_items in schema:
+            val_items = schema[kw_items]
+            if isinstance(val_items, bool) or not isinstance(val_items, int) or val_items < 0:
+                errors.append(
+                    ValidationError(
+                        code="MALFORMED_SCHEMA_KEYWORD",
+                        message=f"Keyword '{kw_items}' at {path} must be a non-negative integer.",
+                        field_path=path,
+                        schema_rule=f"keyword:{kw_items}",
+                    )
+                )
+
+    # Validate minimum / maximum numeric bounds
+    for kw_num in ("minimum", "maximum"):
+        if kw_num in schema:
+            val_num = schema[kw_num]
+            if isinstance(val_num, bool) or not isinstance(val_num, (int, float)):
+                errors.append(
+                    ValidationError(
+                        code="MALFORMED_SCHEMA_KEYWORD",
+                        message=f"Keyword '{kw_num}' at {path} must be a numeric value.",
+                        field_path=path,
+                        schema_rule=f"keyword:{kw_num}",
+                    )
+                )
+
+    # Validate required keyword
+    if "required" in schema:
+        req = schema["required"]
+        if not isinstance(req, list) or not all(isinstance(r, str) for r in req):
+            errors.append(
+                ValidationError(
+                    code="MALFORMED_SCHEMA_KEYWORD",
+                    message=f"Keyword 'required' at {path} must be a list of strings.",
+                    field_path=path,
+                    schema_rule="keyword:required",
+                )
+            )
+
+    # Validate enum keyword
+    if "enum" in schema:
+        enum_val = schema["enum"]
+        if not isinstance(enum_val, list):
+            errors.append(
+                ValidationError(
+                    code="MALFORMED_SCHEMA_KEYWORD",
+                    message=f"Keyword 'enum' at {path} must be a list of allowed values.",
+                    field_path=path,
+                    schema_rule="keyword:enum",
+                )
+            )
+
+    # Preflight child properties
+    if "properties" in schema:
+        props = schema["properties"]
+        if not isinstance(props, dict):
+            errors.append(
+                ValidationError(
+                    code="MALFORMED_SCHEMA_KEYWORD",
+                    message=f"Keyword 'properties' at {path} must be a dictionary.",
+                    field_path=path,
+                    schema_rule="keyword:properties",
+                )
+            )
+        else:
+            for prop_name, prop_subschema in props.items():
+                child_path = f"{path}/properties/{prop_name}"
+                errors.extend(preflight_schema(prop_subschema, child_path))
+
+    # Preflight array items
+    if "items" in schema:
+        items = schema["items"]
+        if isinstance(items, dict):
+            errors.extend(preflight_schema(items, f"{path}/items"))
+        elif isinstance(items, list):
+            for idx, item_subschema in enumerate(items):
+                errors.extend(preflight_schema(item_subschema, f"{path}/items/{idx}"))
+        else:
+            errors.append(
+                ValidationError(
+                    code="MALFORMED_SCHEMA_KEYWORD",
+                    message=f"Keyword 'items' at {path} must be a dictionary or list.",
+                    field_path=path,
+                    schema_rule="keyword:items",
+                )
+            )
+
+    return errors
+
 
 def _validate_with_builtin(
     data: Dict[str, Any], schema: Dict[str, Any], mode: str
-) -> tuple[list[ValidationError], list[str]]:
+) -> Tuple[List[ValidationError], List[str]]:
     """Pure-Python structural validator ensuring zero mandatory third-party requirements."""
-    errors: list[ValidationError] = []
-    warnings: list[str] = []
+    # Preflight schema assertions
+    errors: List[ValidationError] = list(preflight_schema(schema))
+    warnings: List[str] = []
 
     def check_node(val: Any, rule: Dict[str, Any], path: str):
-        # Verify rule does not rely on unsupported schema assertions
-        unsupported = set(rule.keys()) - SUPPORTED_SCHEMA_KEYWORDS
-        if unsupported:
-            for kw in sorted(list(unsupported)):
+        # 1. Evaluate universal assertions: enum and const across all types
+        if "const" in rule:
+            const_val = rule["const"]
+            if val != const_val:
                 errors.append(
                     ValidationError(
-                        code="UNSUPPORTED_SCHEMA_ASSERTION",
-                        message=f"Schema keyword '{kw}' at {path or '/'} is not supported by built-in validator.",
+                        code="CONST_VIOLATION",
+                        message=f"Value '{val}' at {path or '/'} does not match constant '{const_val}'",
                         field_path=path or "/",
-                        schema_rule=f"keyword:{kw}",
+                        schema_rule="const",
+                    )
+                )
+
+        if "enum" in rule:
+            enum_vals = rule["enum"]
+            if isinstance(enum_vals, list) and val not in enum_vals:
+                errors.append(
+                    ValidationError(
+                        code="ENUM_VIOLATION",
+                        message=f"Value '{val}' at {path or '/'} not in allowed options {enum_vals}",
+                        field_path=path or "/",
+                        schema_rule="enum",
                     )
                 )
 
@@ -161,8 +396,8 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="TYPE_MISMATCH",
-                        message=f"Expected array at {path}, got {type(val).__name__}",
-                        field_path=path,
+                        message=f"Expected array at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
                         schema_rule="type:array",
                     )
                 )
@@ -172,8 +407,8 @@ def _validate_with_builtin(
             if min_items is not None and len(val) < min_items:
                 err = ValidationError(
                     code="MIN_ITEMS_VIOLATION",
-                    message=f"Array at {path} must contain at least {min_items} items, got {len(val)}",
-                    field_path=path,
+                    message=f"Array at {path or '/'} must contain at least {min_items} items, got {len(val)}",
+                    field_path=path or "/",
                     schema_rule=f"minItems:{min_items}",
                 )
                 if mode == "draft":
@@ -186,14 +421,14 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="MAX_ITEMS_VIOLATION",
-                        message=f"Array at {path} must contain at most {max_items} items, got {len(val)}",
-                        field_path=path,
+                        message=f"Array at {path or '/'} must contain at most {max_items} items, got {len(val)}",
+                        field_path=path or "/",
                         schema_rule=f"maxItems:{max_items}",
                     )
                 )
 
             item_rule = rule.get("items")
-            if item_rule:
+            if item_rule and isinstance(item_rule, dict):
                 for idx, item in enumerate(val):
                     check_node(item, item_rule, f"{path}/{idx}")
 
@@ -202,8 +437,8 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="TYPE_MISMATCH",
-                        message=f"Expected string at {path}, got {type(val).__name__}",
-                        field_path=path,
+                        message=f"Expected string at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
                         schema_rule="type:string",
                     )
                 )
@@ -213,8 +448,8 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="MIN_LENGTH_VIOLATION",
-                        message=f"String at {path} is shorter than minimum length {min_len}",
-                        field_path=path,
+                        message=f"String at {path or '/'} is shorter than minimum length {min_len}",
+                        field_path=path or "/",
                         schema_rule=f"minLength:{min_len}",
                     )
                 )
@@ -223,8 +458,8 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="MAX_LENGTH_VIOLATION",
-                        message=f"String at {path} exceeds maximum length {max_len}",
-                        field_path=path,
+                        message=f"String at {path or '/'} exceeds maximum length {max_len}",
+                        field_path=path or "/",
                         schema_rule=f"maxLength:{max_len}",
                     )
                 )
@@ -234,45 +469,25 @@ def _validate_with_builtin(
                     errors.append(
                         ValidationError(
                             code="PATTERN_VIOLATION",
-                            message=f"String '{val}' at {path} does not match required pattern '{pattern}'",
-                            field_path=path,
+                            message=f"String '{val}' at {path or '/'} does not match required pattern '{pattern}'",
+                            field_path=path or "/",
                             schema_rule=f"pattern:{pattern}",
                         )
                     )
             fmt = rule.get("format")
             if fmt == "date":
-                # Validate standard YYYY-MM-DD
+                # Validate standard YYYY-MM-DD and calendar validity
                 try:
                     datetime.date.fromisoformat(val)
                 except (ValueError, TypeError):
                     errors.append(
                         ValidationError(
                             code="FORMAT_VIOLATION",
-                            message=f"String '{val}' at {path} does not match required format 'date' (YYYY-MM-DD)",
-                            field_path=path,
+                            message=f"String '{val}' at {path or '/'} does not match required format 'date' (YYYY-MM-DD)",
+                            field_path=path or "/",
                             schema_rule="format:date",
                         )
                     )
-            enum_vals = rule.get("enum")
-            if enum_vals and val not in enum_vals:
-                errors.append(
-                    ValidationError(
-                        code="ENUM_VIOLATION",
-                        message=f"Value '{val}' at {path} not in allowed options {enum_vals}",
-                        field_path=path,
-                        schema_rule="enum",
-                    )
-                )
-            const_val = rule.get("const")
-            if const_val is not None and val != const_val:
-                errors.append(
-                    ValidationError(
-                        code="CONST_VIOLATION",
-                        message=f"Value '{val}' at {path} does not match constant '{const_val}'",
-                        field_path=path,
-                        schema_rule="const",
-                    )
-                )
 
         elif expected_type in ("integer", "number"):
             # Avoid Python bool trap: bool is a subclass of int in Python
@@ -280,8 +495,8 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="TYPE_MISMATCH",
-                        message=f"Expected {expected_type} at {path}, got {type(val).__name__}",
-                        field_path=path,
+                        message=f"Expected {expected_type} at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
                         schema_rule=f"type:{expected_type}",
                     )
                 )
@@ -291,8 +506,8 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="MINIMUM_VIOLATION",
-                        message=f"Value {val} at {path} is less than minimum {minimum}",
-                        field_path=path,
+                        message=f"Value {val} at {path or '/'} is less than minimum {minimum}",
+                        field_path=path or "/",
                         schema_rule=f"minimum:{minimum}",
                     )
                 )
@@ -301,9 +516,31 @@ def _validate_with_builtin(
                 errors.append(
                     ValidationError(
                         code="MAXIMUM_VIOLATION",
-                        message=f"Value {val} at {path} is greater than maximum {maximum}",
-                        field_path=path,
+                        message=f"Value {val} at {path or '/'} is greater than maximum {maximum}",
+                        field_path=path or "/",
                         schema_rule=f"maximum:{maximum}",
+                    )
+                )
+
+        elif expected_type == "boolean":
+            if not isinstance(val, bool):
+                errors.append(
+                    ValidationError(
+                        code="TYPE_MISMATCH",
+                        message=f"Expected boolean at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
+                        schema_rule="type:boolean",
+                    )
+                )
+
+        elif expected_type == "null":
+            if val is not None:
+                errors.append(
+                    ValidationError(
+                        code="TYPE_MISMATCH",
+                        message=f"Expected null at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
+                        schema_rule="type:null",
                     )
                 )
 
@@ -321,58 +558,51 @@ def validate_artifact_data(
     Validate a completed artifact data payload against the artifact's companion schema.
 
     Parameters:
-        artifact_id: PMO identifier, e.g. "PMO-03.01"
+        artifact_id: Canonical PMO identifier, e.g. "PMO-03.01"
         data: Dict containing completed artifact data
-        definition_version: Optional schema version tag
+        definition_version: Optional definition fingerprint or release version tag
         mode: "strict" (default) or "draft" (lenient for in-progress documents)
 
     Returns:
-        ValidationReport with valid flag, errors, warnings, and field paths.
+        ValidationReport with valid flag, status, errors, warnings, and field paths.
     """
     import tasleemat
     from tasleemat.catalog import get_artifact_definition
 
-    current_pkg_version = getattr(tasleemat, "__version__", "2.4.2")
+    current_pkg_version = getattr(tasleemat, "__version__", "2.5.0")
     norm_id = artifact_id.upper().strip()
     norm_mode = mode.lower().strip()
     if norm_mode not in ("strict", "draft"):
         raise ValueError(f"Invalid validation mode '{mode}'. Choose 'strict' or 'draft'.")
 
-    # Resolve deliverable SHA-256 fingerprint from catalog
-    real_fingerprint = ""
+    # Step 1: Verify artifact existence in the canonical catalog
     try:
         art_def = get_artifact_definition(norm_id)
-        real_fingerprint = art_def.get("fingerprint", "")
+        real_definition_fingerprint = art_def.get("fingerprint", "")
     except KeyError:
-        # Unknown artifact ID
-        pass
-    except Exception as exc:
-        # Propagate unreadable or corrupted catalog errors
-        raise RuntimeError(f"Failed to access canonical catalog: {exc}") from exc
-
-    # Check payload type
-    if not isinstance(data, dict):
         return ValidationReport(
             valid=False,
             artifact_id=norm_id,
             schema_version="",
-            fingerprint=real_fingerprint,
-            definition_fingerprint=real_fingerprint,
+            fingerprint="",
+            definition_fingerprint="",
             package_version=current_pkg_version,
-            status="supported",
+            status="unknown_artifact",
             mode=norm_mode,
             errors=[
                 ValidationError(
-                    code="INVALID_PAYLOAD",
-                    message=f"Data payload must be a dictionary object, got {type(data).__name__}.",
+                    code="UNKNOWN_ARTIFACT",
+                    message=f"Artifact ID '{artifact_id}' does not exist in the canonical Tasleemat catalog.",
                     field_path="/",
-                    schema_rule="type:object",
+                    schema_rule="artifact_registration",
                 )
             ],
             warnings=[],
         )
+    except Exception as exc:
+        raise RuntimeError(f"Failed to access canonical catalog: {exc}") from exc
 
-    # Check companion schema availability
+    # Step 2: Verify companion schema availability
     try:
         schema = _load_schema(norm_id)
     except KeyError:
@@ -380,8 +610,8 @@ def validate_artifact_data(
             valid=False,
             artifact_id=norm_id,
             schema_version="",
-            fingerprint=real_fingerprint,
-            definition_fingerprint=real_fingerprint,
+            fingerprint=real_definition_fingerprint,
+            definition_fingerprint=real_definition_fingerprint,
             package_version=current_pkg_version,
             status="unavailable",
             mode=norm_mode,
@@ -401,54 +631,111 @@ def validate_artifact_data(
 
     schema_id = schema.get("$id", f"https://tasleemat.pmo/schemas/completed/{norm_id}.schema.json")
     schema_dialect = schema.get("$schema", "https://json-schema.org/draft/2020-12/schema")
+    comp_meta = art_def.get("completed_data_validation", {})
+    schema_fingerprint = comp_meta.get("schema_fingerprint", "")
 
-    # Verify version compatibility if requested
-    # Strict deterministic whitelist of supported versions
+    # Step 3: Preflight the schema independently of payload
+    preflight_errors = preflight_schema(schema)
+    if preflight_errors:
+        return ValidationReport(
+            valid=False,
+            artifact_id=norm_id,
+            schema_version=schema_id,
+            schema_id=schema_id,
+            schema_dialect=schema_dialect,
+            schema_fingerprint=schema_fingerprint,
+            fingerprint=real_definition_fingerprint,
+            definition_fingerprint=real_definition_fingerprint,
+            package_version=current_pkg_version,
+            status="invalid_schema",
+            mode=norm_mode,
+            errors=preflight_errors,
+            warnings=[],
+        )
+
+    # Step 4: Verify definition reference compatibility if requested
     if definition_version:
-        supported_versions = {
-            "2.5.0", "v2.5.0",
-            "2.4.2", "v2.4.2",
-            "2.4.1", "v2.4.1",
-            "2.4.0", "v2.4.0",
-            "2.3.1", "v2.3.1",
-        }
-        if definition_version not in supported_versions:
+        # Explicit definition reference contract:
+        # Accepts:
+        # 1. Exact catalog definition SHA-256 fingerprint
+        # 2. Exact companion schema $id URI
+        # 3. Exact companion schema SHA-256 fingerprint
+        # 4. Authoritative installed package version (e.g. "2.5.0", "v2.5.0")
+        is_matched = (
+            definition_version == real_definition_fingerprint
+            or definition_version == schema_id
+            or (schema_fingerprint and definition_version == schema_fingerprint)
+            or definition_version in (current_pkg_version, f"v{current_pkg_version}")
+            or definition_version in {"2.4.2", "v2.4.2", "2.4.1", "v2.4.1", "2.4.0", "v2.4.0", "2.3.1", "v2.3.1"}
+        )
+        if not is_matched:
             return ValidationReport(
                 valid=False,
                 package_version=current_pkg_version,
                 artifact_id=norm_id,
-                schema_version=schema_dialect,
+                schema_version=schema_id,
                 schema_id=schema_id,
                 schema_dialect=schema_dialect,
-                fingerprint=real_fingerprint,
-                definition_fingerprint=real_fingerprint,
+                schema_fingerprint=schema_fingerprint,
+                fingerprint=real_definition_fingerprint,
+                definition_fingerprint=real_definition_fingerprint,
+                status="supported",
                 mode=norm_mode,
                 errors=[
                     ValidationError(
                         code="UNSUPPORTED_VERSION",
                         message=(
-                            f"Requested definition version '{definition_version}' is not supported "
-                            f"by installed Tasleemat package (v{current_pkg_version})."
+                            f"Requested definition reference '{definition_version}' does not match "
+                            f"installed artifact definition fingerprint '{real_definition_fingerprint}', "
+                            f"schema ID '{schema_id}', or supported package versions."
                         ),
                         field_path="/",
-                        schema_rule="version_compatibility",
+                        schema_rule="definition_compatibility",
                     )
                 ],
                 warnings=[],
             )
 
+    # Step 5: Verify payload structure
+    if not isinstance(data, dict):
+        return ValidationReport(
+            valid=False,
+            artifact_id=norm_id,
+            schema_version=schema_id,
+            schema_id=schema_id,
+            schema_dialect=schema_dialect,
+            schema_fingerprint=schema_fingerprint,
+            fingerprint=real_definition_fingerprint,
+            definition_fingerprint=real_definition_fingerprint,
+            package_version=current_pkg_version,
+            status="supported",
+            mode=norm_mode,
+            errors=[
+                ValidationError(
+                    code="INVALID_PAYLOAD",
+                    message=f"Data payload must be a dictionary object, got {type(data).__name__}.",
+                    field_path="/",
+                    schema_rule="type:object",
+                )
+            ],
+            warnings=[],
+        )
+
+    # Step 6: Execute validation (payload immutability guaranteed)
     errors, warnings = _validate_with_builtin(data, schema, norm_mode)
     is_valid = len(errors) == 0
 
     return ValidationReport(
         valid=is_valid,
         artifact_id=norm_id,
-        schema_version=schema_dialect,
+        schema_version=schema_id,
         schema_id=schema_id,
         schema_dialect=schema_dialect,
-        fingerprint=real_fingerprint,
-        definition_fingerprint=real_fingerprint,
+        schema_fingerprint=schema_fingerprint,
+        fingerprint=real_definition_fingerprint,
+        definition_fingerprint=real_definition_fingerprint,
         package_version=current_pkg_version,
+        status="supported",
         mode=norm_mode,
         errors=errors,
         warnings=warnings,

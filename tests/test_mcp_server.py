@@ -178,6 +178,21 @@ class TestMCPServer(unittest.TestCase):
         self.assertFalse(rep_unavail["is_available"])
         self.assertTrue(any(e["code"] == "SCHEMA_UNAVAILABLE" for e in rep_unavail["errors"]))
 
+        # 4. Unknown artifact ID validation via MCP
+        resp_unknown = self.send_request("tools/call", {
+            "name": "tasleemat_validate_data",
+            "arguments": {
+                "artifact_id": "UNKNOWN-99.99",
+                "data": {"artifact_id": "UNKNOWN-99.99"},
+            },
+        })
+        self.assertNotIn("error", resp_unknown)
+        rep_unknown = json.loads(resp_unknown["result"]["content"][0]["text"])
+        self.assertFalse(rep_unknown["valid"])
+        self.assertEqual(rep_unknown["status"], "unknown_artifact")
+        self.assertFalse(rep_unknown["is_available"])
+        self.assertTrue(any(e["code"] == "UNKNOWN_ARTIFACT" for e in rep_unknown["errors"]))
+
     def test_tool_render_artifact(self):
         """Verify tasleemat_render_artifact renders HTML."""
         resp = self.send_request("tools/call", {
