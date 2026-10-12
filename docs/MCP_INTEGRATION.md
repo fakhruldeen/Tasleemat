@@ -24,10 +24,10 @@ The Tasleemat MCP server enables AI assistants to directly interact with:
 | Tool Name | Description | Key Arguments |
 | :--- | :--- | :--- |
 | `tasleemat_list_artifacts` | List deliverables filtered by phase or tailoring tier | `phase?: string`, `tier?: string` |
-| `tasleemat_get_artifact` | Get metadata and SHA-256 fingerprint for a deliverable | `artifact_id: string` (e.g. `PMO-03.01`) |
-| `tasleemat_get_asset` | Retrieve template, guide, prompt, schema, or example | `artifact_id: string`, `role: string`, `lang?: string` |
+| `tasleemat_get_artifact` | Get metadata and authoritative SHA-256 fingerprint for a deliverable | `artifact_id: string` (e.g. `PMO-03.01`) |
+| `tasleemat_get_asset` | Retrieve template, practitioner guide, prompt, schema, or example | `artifact_id: string`, `role: string`, `lang?: string` |
 | `tasleemat_get_lexicon` | Search bilingual PMI & DGA PMO terminology | `category?: string`, `query?: string` |
-| `tasleemat_validate_data` | Validate structured artifact data against JSON schema | `artifact_id: string`, `data: object`, `mode?: "strict" \| "draft"` |
+| `tasleemat_validate_data` | Validate structured data against JSON companion schema (structural check only) | `artifact_id: string`, `data: object`, `definition_version?: string`, `mode?: "strict" \| "draft"` |
 | `tasleemat_render_artifact` | Render deliverable to styled, print-ready HTML | `artifact_id: string`, `lang?: string`, `data?: object` |
 
 ---

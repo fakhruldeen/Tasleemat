@@ -239,11 +239,169 @@ class TestMCPServer(unittest.TestCase):
         self.assertIn("Smart City Riyadh", msg_text)
         self.assertIn("Project Charter", msg_text)
 
-    def test_unknown_method_error(self):
-        """Verify calling an unknown method returns standard JSON-RPC -32601."""
-        resp = self.send_request("non_existent_method")
-        self.assertIn("error", resp)
-        self.assertEqual(resp["error"]["code"], -32601)
+    def test_mcp_definition_version_forwarding_and_traceability(self):
+        """Verify MCP tasleemat_validate_data exposes definition_version and returns complete canonical traceability."""
+        from tasleemat.catalog import get_artifact_definition
+
+        defn = get_artifact_definition("PMO-03.01")
+        real_fp = defn["fingerprint"]
+        schema_fp = defn["completed_data_validation"]["schema_fingerprint"]
+        schema_id = defn["completed_data_validation"]["schema_id"]
+
+        valid_payload = {
+            "artifact_id": "PMO-03.01",
+            "metadata": {
+                "project_name": "MCP Project",
+                "project_code": "PRJ-MCP",
+                "date_prepared": "2026-03-15",
+                "prepared_by": "MCP Author",
+                "sponsor": "Sponsor",
+                "status": "approved",
+            },
+            "fields": {
+                "project_purpose": "Testing MCP definition version parameter.",
+                "high_level_project_description": "Valid description.",
+                "key_deliverables": ["Deliv 1"],
+                "project_objectives_and_related_success_criteria": [
+                    {"objective": "Obj 1", "success_criteria": "Crit 1"}
+                ],
+                "summary_milestone_schedule": [
+                    {"milestone": "M1", "target_date": "2026-06-01"}
+                ],
+            },
+        }
+
+        # 1. Exact supported definition fingerprint
+        resp_fp = self.send_request("tools/call", {
+            "name": "tasleemat_validate_data",
+            "arguments": {
+                "artifact_id": "PMO-03.01",
+                "data": valid_payload,
+                "definition_version": real_fp,
+            },
+        })
+        rep_fp = json.loads(resp_fp["result"]["content"][0]["text"])
+        self.assertTrue(rep_fp["valid"])
+        self.assertEqual(rep_fp["definition_fingerprint"], real_fp)
+        self.assertEqual(rep_fp["schema_fingerprint"], schema_fp)
+        self.assertEqual(rep_fp["schema_id"], schema_id)
+        self.assertEqual(rep_fp["schema_dialect"], "https://json-schema.org/draft/2020-12/schema")
+        self.assertEqual(rep_fp["mode"], "strict")
+
+        # 2. Exact supported schema fingerprint
+        resp_sfp = self.send_request("tools/call", {
+            "name": "tasleemat_validate_data",
+            "arguments": {
+                "artifact_id": "PMO-03.01",
+                "data": valid_payload,
+                "definition_version": schema_fp,
+            },
+        })
+        rep_sfp = json.loads(resp_sfp["result"]["content"][0]["text"])
+        self.assertTrue(rep_sfp["valid"])
+
+        # 3. Retained current-installed alias ('2.5.0' and 'v2.5.0')
+        resp_alias = self.send_request("tools/call", {
+            "name": "tasleemat_validate_data",
+            "arguments": {
+                "artifact_id": "PMO-03.01",
+                "data": valid_payload,
+                "definition_version": "2.5.0",
+            },
+        })
+        rep_alias = json.loads(resp_alias["result"]["content"][0]["text"])
+        self.assertTrue(rep_alias["valid"])
+
+        # 4. Mismatched / unsupported version rejected
+        resp_bad = self.send_request("tools/call", {
+            "name": "tasleemat_validate_data",
+            "arguments": {
+                "artifact_id": "PMO-03.01",
+                "data": valid_payload,
+                "definition_version": "3.0.0-unsupported",
+            },
+        })
+        rep_bad = json.loads(resp_bad["result"]["content"][0]["text"])
+        self.assertFalse(rep_bad["valid"])
+        self.assertTrue(any(e["code"] == "UNSUPPORTED_VERSION" for e in rep_bad["errors"]))
+
+        # 5. Schema dialect URI rejected per contract
+        resp_dialect = self.send_request("tools/call", {
+            "name": "tasleemat_validate_data",
+            "arguments": {
+                "artifact_id": "PMO-03.01",
+                "data": valid_payload,
+                "definition_version": "https://json-schema.org/draft/2020-12/schema",
+            },
+        })
+        rep_dialect = json.loads(resp_dialect["result"]["content"][0]["text"])
+        self.assertFalse(rep_dialect["valid"])
+        self.assertTrue(any(e["code"] == "UNSUPPORTED_VERSION" for e in rep_dialect["errors"]))
+
+    def test_mcp_protocol_robustness_and_malformed_inputs(self):
+        """Verify server robustly handles invalid JSON, scalars, arrays, bad jsonrpc versions, and falsey IDs."""
+        # 1. Invalid JSON string
+        raw_parse_err = self.server.handle_message("{invalid json")
+        self.assertIsNotNone(raw_parse_err)
+        resp_p = json.loads(raw_parse_err)
+        self.assertEqual(resp_p["error"]["code"], -32700)
+        self.assertIsNone(resp_p["id"])
+
+        # 2. JSON scalar (number, string, bool)
+        raw_scalar = self.server.handle_message("12345")
+        resp_s = json.loads(raw_scalar)
+        self.assertEqual(resp_s["error"]["code"], -32600)
+
+        # 3. JSON array (batch input)
+        raw_batch = self.server.handle_message('[{"jsonrpc": "2.0"}]')
+        resp_b = json.loads(raw_batch)
+        self.assertEqual(resp_b["error"]["code"], -32600)
+
+        # 4. Invalid jsonrpc version field
+        raw_bad_ver = self.server.handle_message(json.dumps({
+            "jsonrpc": "1.0",
+            "id": 10,
+            "method": "ping",
+        }))
+        resp_bv = json.loads(raw_bad_ver)
+        self.assertEqual(resp_bv["error"]["code"], -32600)
+        self.assertEqual(resp_bv["id"], 10)
+
+        # 5. Missing or invalid method type
+        raw_no_method = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": 11,
+            "method": 123,
+        }))
+        resp_nm = json.loads(raw_no_method)
+        self.assertEqual(resp_nm["error"]["code"], -32600)
+
+        # 6. Invalid params type
+        raw_bad_params = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": 12,
+            "method": "ping",
+            "params": "not-an-object",
+        }))
+        resp_bp = json.loads(raw_bad_params)
+        self.assertEqual(resp_bp["error"]["code"], -32600)
+
+        # 7. Valid falsey ID (id = 0)
+        raw_zero_id = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": 0,
+            "method": "ping",
+        }))
+        resp_zero = json.loads(raw_zero_id)
+        self.assertEqual(resp_zero["id"], 0)
+        self.assertEqual(resp_zero["result"], {})
+
+        # 8. Unhandled notification drops silently
+        raw_notif = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "method": "custom/unhandled_notification",
+        }))
+        self.assertIsNone(raw_notif)
 
 
 if __name__ == "__main__":

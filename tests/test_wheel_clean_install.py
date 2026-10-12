@@ -205,6 +205,138 @@ print("SUCCESS: Programmatic library test passed in clean venv!")
             self.assertEqual(res_cli_test.returncode, 0)
             self.assertIn("Test directory not found", res_cli_test.stdout)
 
+            # 6. Verify real stdio MCP interaction using installed tasleemat-mcp entrypoint
+            mcp_bin = venv_dir / "bin" / "tasleemat-mcp"
+            mcp_proc = subprocess.Popen(
+                [str(mcp_bin)],
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                cwd=str(tmp_path),
+            )
+
+            # Step 6a: Initialize
+            init_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "initialize",
+                "params": {
+                    "protocolVersion": "2024-11-05",
+                    "capabilities": {},
+                    "clientInfo": {"name": "clean-test-client", "version": "1.0"},
+                },
+            }) + "\n"
+            mcp_proc.stdin.write(init_msg)
+            mcp_proc.stdin.flush()
+            init_resp = json.loads(mcp_proc.stdout.readline())
+            self.assertEqual(init_resp.get("id"), 1)
+            self.assertEqual(init_resp["result"]["protocolVersion"], "2024-11-05")
+            self.assertIn("tools", init_resp["result"]["capabilities"])
+
+            # Step 6b: Initialized notification
+            notif_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "method": "notifications/initialized",
+                "params": {},
+            }) + "\n"
+            mcp_proc.stdin.write(notif_msg)
+            mcp_proc.stdin.flush()
+
+            # Step 6c: Tools list
+            tools_msg = json.dumps({"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}}) + "\n"
+            mcp_proc.stdin.write(tools_msg)
+            mcp_proc.stdin.flush()
+            tools_resp = json.loads(mcp_proc.stdout.readline())
+            self.assertEqual(tools_resp.get("id"), 2)
+            tool_names = [t["name"] for t in tools_resp["result"]["tools"]]
+            self.assertIn("tasleemat_validate_data", tool_names)
+
+            # Step 6d: Tools call - validate_data with definition_version forwarding
+            from tasleemat.catalog import get_artifact_definition
+            defn = get_artifact_definition("PMO-03.01")
+            valid_payload_dict = {
+                "artifact_id": "PMO-03.01",
+                "metadata": {
+                    "project_name": "Test Project",
+                    "project_code": "PRJ-01",
+                    "date_prepared": "2026-03-15",
+                    "prepared_by": "Test Author",
+                    "sponsor": "Test Sponsor",
+                    "status": "approved",
+                },
+                "fields": {
+                    "project_purpose": "Valid test purpose description for clean install test.",
+                    "high_level_project_description": "Valid high level description for verification.",
+                    "key_deliverables": ["Deliverable 1"],
+                    "project_objectives_and_related_success_criteria": [
+                        {"objective": "Obj 1", "success_criteria": "Crit 1"}
+                    ],
+                    "summary_milestone_schedule": [
+                        {"milestone": "M1", "target_date": "2026-05-01"}
+                    ],
+                },
+            }
+            val_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "tools/call",
+                "params": {
+                    "name": "tasleemat_validate_data",
+                    "arguments": {
+                        "artifact_id": "PMO-03.01",
+                        "data": valid_payload_dict,
+                        "definition_version": defn["fingerprint"],
+                    },
+                },
+            }) + "\n"
+            mcp_proc.stdin.write(val_msg)
+            mcp_proc.stdin.flush()
+            val_resp = json.loads(mcp_proc.stdout.readline())
+            self.assertEqual(val_resp.get("id"), 3)
+            val_data = json.loads(val_resp["result"]["content"][0]["text"])
+            self.assertTrue(val_data["valid"])
+            self.assertEqual(val_data["definition_fingerprint"], defn["fingerprint"])
+            self.assertEqual(val_data["schema_dialect"], "https://json-schema.org/draft/2020-12/schema")
+
+            # Step 6e: Resources read - pmo://catalog
+            res_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "resources/read",
+                "params": {"uri": "pmo://catalog"},
+            }) + "\n"
+            mcp_proc.stdin.write(res_msg)
+            mcp_proc.stdin.flush()
+            res_resp = json.loads(mcp_proc.stdout.readline())
+            self.assertEqual(res_resp.get("id"), 4)
+            cat_list = json.loads(res_resp["result"]["contents"][0]["text"])
+            self.assertEqual(len(cat_list), 114)
+
+            # Step 6f: Prompts get - draft_project_charter
+            pmt_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "prompts/get",
+                "params": {"name": "draft_project_charter", "arguments": {"project_notes": "Clean venv stdio test notes."}},
+            }) + "\n"
+            mcp_proc.stdin.write(pmt_msg)
+            mcp_proc.stdin.flush()
+            pmt_resp = json.loads(mcp_proc.stdout.readline())
+            self.assertEqual(pmt_resp.get("id"), 5)
+            self.assertIn("Clean venv stdio test notes.", pmt_resp["result"]["messages"][0]["content"]["text"])
+
+            # Step 6g: Negative case - malformed JSON string over transport
+            mcp_proc.stdin.write("{malformed json line\n")
+            mcp_proc.stdin.flush()
+            mal_resp = json.loads(mcp_proc.stdout.readline())
+            self.assertEqual(mal_resp["error"]["code"], -32700)
+
+            # Step 6h: Clean stdio shutdown
+            mcp_proc.stdin.close()
+            mcp_proc.wait(timeout=5)
+            self.assertEqual(mcp_proc.returncode, 0)
+
 
 if __name__ == "__main__":
     unittest.main()

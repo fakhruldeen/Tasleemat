@@ -69,8 +69,8 @@ class MCPServer:
                 "name": self.SERVER_NAME,
                 "version": self.SERVER_VERSION,
                 "description": (
-                    "Enterprise Bilingual (English & Arabic) PMO Operating System. "
-                    "Provides 114 standardized deliverables, templates, validation, and rendering."
+                    "Bilingual (English & Arabic) PMO artifact library and structural data validation interface. "
+                    "Provides 114 standardized deliverable templates, metadata, structural JSON validation, and HTML rendering."
                 ),
             },
         }
@@ -90,7 +90,8 @@ class MCPServer:
                 "name": "tasleemat_list_artifacts",
                 "description": (
                     "Discover and list standardized PMO deliverables from the Tasleemat catalog. "
-                    "Supports filtering by project lifecycle phase and tailoring tier."
+                    "Supports filtering by project lifecycle phase and tailoring tier. "
+                    "Exposes completed-data validation capability status."
                 ),
                 "inputSchema": {
                     "type": "object",
@@ -109,8 +110,8 @@ class MCPServer:
             {
                 "name": "tasleemat_get_artifact",
                 "description": (
-                    "Retrieve comprehensive metadata, English/Arabic names, lifecycle phase, "
-                    "tailoring applicability, and cryptographic SHA-256 fingerprint for a specific deliverable."
+                    "Retrieve deliverable metadata, English/Arabic titles, lifecycle phase, "
+                    "tailoring applicability, and authoritative SHA-256 asset fingerprints."
                 ),
                 "inputSchema": {
                     "type": "object",
@@ -126,8 +127,8 @@ class MCPServer:
             {
                 "name": "tasleemat_get_asset",
                 "description": (
-                    "Retrieve the exact content of a deliverable asset by role and language without filesystem parsing. "
-                    "Roles: 'template' (document structure), 'guide' (practitioner instructions), 'prompt' (LLM generation prompt), "
+                    "Retrieve the exact text content of a deliverable asset by role and language without filesystem parsing. "
+                    "Roles: 'template' (document structure), 'guide' (practitioner instructions), 'prompt' (LLM drafting prompt), "
                     "'schema' (data specification), 'dictionary' (tabular fields), 'example' (reference implementation)."
                 ),
                 "inputSchema": {
@@ -156,7 +157,7 @@ class MCPServer:
                 "name": "tasleemat_get_lexicon",
                 "description": (
                     "Search and retrieve standardized bilingual (English <-> Arabic) PMO terminology "
-                    "conforming to official PMI PMBOK® and Saudi Digital Government Authority (DGA) standards."
+                    "referencing standard PMI PMBOK® and Saudi Digital Government Authority (DGA) glossaries."
                 ),
                 "inputSchema": {
                     "type": "object",
@@ -176,8 +177,9 @@ class MCPServer:
                 "name": "tasleemat_validate_data",
                 "description": (
                     "Validate structured artifact data against formal companion JSON schemas. "
-                    "Supports 'strict' mode (for formal stage-gate approval) and 'draft' mode (with non-blocking warnings). "
-                    "Returns exact JSON Pointer error paths."
+                    "Verifies structural conformance only; does not constitute stage-gate approval or certification. "
+                    "Supports 'strict' mode (all schema constraints required) and 'draft' mode (non-blocking warnings for WIP). "
+                    "Supports optional definition_version reference (version tag, definition fingerprint, or schema fingerprint)."
                 ),
                 "inputSchema": {
                     "type": "object",
@@ -190,11 +192,15 @@ class MCPServer:
                             "type": "object",
                             "description": "The JSON payload representing the completed or draft artifact data.",
                         },
+                        "definition_version": {
+                            "type": "string",
+                            "description": "Optional definition version tag ('2.5.0', 'v2.5.0'), definition SHA-256 fingerprint, or schema SHA-256 fingerprint.",
+                        },
                         "mode": {
                             "type": "string",
                             "enum": ["strict", "draft"],
                             "default": "strict",
-                            "description": "'strict' enforces all constraints; 'draft' emits non-blocking warnings.",
+                            "description": "'strict' enforces all constraints; 'draft' emits non-blocking warnings for WIP documents.",
                         },
                     },
                     "required": ["artifact_id", "data"],
@@ -203,8 +209,8 @@ class MCPServer:
             {
                 "name": "tasleemat_render_artifact",
                 "description": (
-                    "Render a deliverable into a publication-ready, styled HTML document with full Arabic RTL support, "
-                    "responsive typography, status badges, and executive Document Control sign-off tables."
+                    "Render a deliverable into a styled HTML reference document with Arabic RTL support, "
+                    "typography, and document control blocks. Does not create legal signatures or audit attestations."
                 ),
                 "inputSchema": {
                     "type": "object",
@@ -247,7 +253,8 @@ class MCPServer:
                         "name_ar": a.name_ar,
                         "phase_code": a.phase_code,
                         "phase_name_en": a.phase_name_en,
-                        "fingerprint": a.fingerprint[:16] + "...",
+                        "fingerprint": a.fingerprint,
+                        "completed_data_validation": a.completed_data_validation,
                     }
                     for a in results
                 ]
@@ -312,29 +319,17 @@ class MCPServer:
                 artifact_id = args["artifact_id"]
                 data = args["data"]
                 mode = args.get("mode", "strict")
-                report = validate_artifact_data(artifact_id, data, mode=mode)
-                report_dict = {
-                    "valid": report.valid,
-                    "status": report.status,
-                    "is_available": report.is_available,
-                    "mode": report.mode,
-                    "artifact_id": report.artifact_id,
-                    "package_version": report.package_version,
-                    "definition_fingerprint": report.definition_fingerprint,
-                    "schema_id": report.schema_id,
-                    "schema_dialect": report.schema_dialect,
-                    "errors_count": len(report.errors),
-                    "warnings_count": len(report.warnings),
-                    "errors": [
-                        {
-                            "field_path": e.field_path,
-                            "code": e.code,
-                            "message": e.message,
-                        }
-                        for e in report.errors
-                    ],
-                    "warnings": report.warnings,
-                }
+                definition_version = args.get("definition_version")
+                report = validate_artifact_data(
+                    artifact_id,
+                    data,
+                    definition_version=definition_version,
+                    mode=mode,
+                )
+                report_dict = report.to_dict()
+                # Maintain legacy helper counts for consumer convenience
+                report_dict["errors_count"] = len(report.errors)
+                report_dict["warnings_count"] = len(report.warnings)
                 return {
                     "content": [
                         {"type": "text", "text": json.dumps(report_dict, indent=2, ensure_ascii=False)}
@@ -374,7 +369,7 @@ class MCPServer:
             {
                 "uri": "pmo://lexicon",
                 "name": "Bilingual PMO Lexicon",
-                "description": "Standardized PMI & Saudi DGA Arabic-English project management terminology.",
+                "description": "Standardized PMI & Saudi DGA Arabic-English project management terminology reference.",
                 "mimeType": "application/json",
             },
         ]
@@ -393,6 +388,7 @@ class MCPServer:
                     "phase_name_en": a.phase_name_en,
                     "phase_code": a.phase_code,
                     "fingerprint": a.fingerprint,
+                    "completed_data_validation": a.completed_data_validation,
                 }
                 for a in artifacts
             ]
@@ -424,7 +420,7 @@ class MCPServer:
         prompts = [
             {
                 "name": "draft_project_charter",
-                "description": "Draft a formal, audit-ready PMI Project Charter (PMO-03.01) from raw notes.",
+                "description": "Draft an initial Project Charter (PMO-03.01) structure from raw notes. Requires human PM review.",
                 "arguments": [
                     {
                         "name": "project_notes",
@@ -440,7 +436,7 @@ class MCPServer:
             },
             {
                 "name": "conduct_risk_assessment",
-                "description": "Formulate a PMI-compliant Risk Register (PMO-04.08.02) from workshop findings.",
+                "description": "Formulate an initial Risk Register (PMO-04.08.02) draft from workshop findings. Requires human PM review.",
                 "arguments": [
                     {
                         "name": "risk_findings",
@@ -466,7 +462,11 @@ class MCPServer:
             lang = args.get("lang", "en")
             notes = args.get("project_notes", "")
             system_prompt = get_artifact_asset("PMO-03.01", role="prompt", lang=lang)
-            user_msg = f"{system_prompt}\n\n## Project Input Notes:\n{notes}"
+            user_msg = (
+                f"{system_prompt}\n\n"
+                f"## Scope Note: This draft is for practitioner drafting only and requires formal PM and sponsor review.\n\n"
+                f"## Project Input Notes:\n{notes}"
+            )
             return {
                 "description": "Draft Project Charter Prompt",
                 "messages": [
@@ -480,7 +480,11 @@ class MCPServer:
             lang = args.get("lang", "en")
             findings = args.get("risk_findings", "")
             system_prompt = get_artifact_asset("PMO-04.08.02", role="prompt", lang=lang)
-            user_msg = f"{system_prompt}\n\n## Risk Workshop Findings:\n{findings}"
+            user_msg = (
+                f"{system_prompt}\n\n"
+                f"## Scope Note: This draft risk log requires qualitative and quantitative risk analysis by the project team.\n\n"
+                f"## Risk Workshop Findings:\n{findings}"
+            )
             return {
                 "description": "Conduct Risk Assessment Prompt",
                 "messages": [
@@ -507,13 +511,48 @@ class MCPServer:
                 "error": {"code": -32700, "message": f"Parse error: {str(e)}"},
             })
 
-        msg_id = req.get("id")
+        # Validate that request is a JSON object per JSON-RPC 2.0 single request spec
+        if not isinstance(req, dict):
+            # If batch array was sent or scalar, return Invalid Request error
+            return json.dumps({
+                "jsonrpc": "2.0",
+                "id": None,
+                "error": {"code": -32600, "message": "Invalid Request: expected a JSON-RPC 2.0 object."},
+            })
+
+        # Validate jsonrpc version if present
+        if "jsonrpc" in req and req.get("jsonrpc") != "2.0":
+            return json.dumps({
+                "jsonrpc": "2.0",
+                "id": req.get("id"),
+                "error": {"code": -32600, "message": "Invalid Request: 'jsonrpc' must be exactly '2.0'."},
+            })
+
+        # Extract message ID: can be int, string, or null/None. Note: 0 is falsey in Python but valid ID in JSON-RPC!
+        has_id = "id" in req
+        msg_id = req.get("id") if has_id else None
+
         method = req.get("method")
+        if not isinstance(method, str):
+            return json.dumps({
+                "jsonrpc": "2.0",
+                "id": msg_id,
+                "error": {"code": -32600, "message": "Invalid Request: 'method' must be a string."},
+            })
+
         params = req.get("params", {})
+        if params is not None and not isinstance(params, (dict, list)):
+            return json.dumps({
+                "jsonrpc": "2.0",
+                "id": msg_id,
+                "error": {"code": -32600, "message": "Invalid params: 'params' must be an object or array."},
+            })
+        if params is None:
+            params = {}
 
         if method not in self.handlers:
-            if msg_id is None:
-                # Notifications without handlers are ignored
+            if not has_id:
+                # Unhandled notification is silently dropped
                 return None
             return json.dumps({
                 "jsonrpc": "2.0",
@@ -523,13 +562,13 @@ class MCPServer:
 
         try:
             result = self.handlers[method](params)
-            if msg_id is None:
+            if not has_id:
                 # Notification - no response required
                 return None
             return json.dumps({"jsonrpc": "2.0", "id": msg_id, "result": result}, ensure_ascii=False)
         except Exception as e:
             logger.error(f"Error handling method {method}: {e}\n{traceback.format_exc()}")
-            if msg_id is None:
+            if not has_id:
                 return None
             return json.dumps({
                 "jsonrpc": "2.0",

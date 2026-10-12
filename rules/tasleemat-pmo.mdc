@@ -9,6 +9,7 @@ alwaysApply: false
 When assisting with project management, creating project plans, or drafting deliverables:
 - Use official Tasleemat Form IDs (e.g. `PMO-03.01` for Project Charter, `PMO-04.08.02` for Risk Register, `PMO-06.01` for Status Report).
 - Maintain 1:1 bilingual symmetry between English and Arabic.
-- Preserve Document Control and Sign-off blocks with electronic audit trail hashes.
-- Align with PMI PMBOK® 6th/7th/8th Editions and Saudi Digital Government Authority (DGA) governance standards.
+- Preserve Document Control and Sign-off metadata blocks for practitioner review.
+- Reference standard project management practices and terminology.
 - Use `tasleemat-mcp` tools (`tasleemat_get_asset`, `tasleemat_validate_data`, `tasleemat_render_artifact`) to fetch templates and validate structured project data.
+- Note: Structural data validation confirms schema compliance only; it does not replace independent stakeholder review, formal stage-gate approval, or organizational sign-off.

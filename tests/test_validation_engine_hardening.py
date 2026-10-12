@@ -887,6 +887,78 @@ class TestValidationEngineHardening(unittest.TestCase):
         self.assertEqual(len(errs_ninf), 1)
         self.assertEqual(errs_ninf[0].code, "TYPE_MISMATCH")
 
+    def test_recursive_json_equality_for_const_and_enum(self):
+        """Verify recursive JSON-aware equality distinguishes boolean True/False from 1/0 inside nested collections."""
+        from tasleemat.validation import _validate_with_builtin
+
+        # Const with nested list containing boolean True: [True] vs [1]
+        schema_const_list = {"type": "object", "properties": {"val": {"const": [True]}}}
+        errs_l1, _ = _validate_with_builtin({"val": [1]}, schema_const_list, "strict")
+        self.assertEqual(len(errs_l1), 1)
+        self.assertEqual(errs_l1[0].code, "CONST_VIOLATION")
+
+        errs_l2, _ = _validate_with_builtin({"val": [True]}, schema_const_list, "strict")
+        self.assertEqual(len(errs_l2), 0)
+
+        # Const with nested dict containing boolean False: {"flag": False} vs {"flag": 0}
+        schema_const_dict = {"type": "object", "properties": {"val": {"const": {"flag": False}}}}
+        errs_d1, _ = _validate_with_builtin({"val": {"flag": 0}}, schema_const_dict, "strict")
+        self.assertEqual(len(errs_d1), 1)
+        self.assertEqual(errs_d1[0].code, "CONST_VIOLATION")
+
+        errs_d2, _ = _validate_with_builtin({"val": {"flag": False}}, schema_const_dict, "strict")
+        self.assertEqual(len(errs_d2), 0)
+
+        # Enum with nested compound structures
+        schema_enum_nested = {
+            "type": "object",
+            "properties": {
+                "val": {"enum": [{"k": [1, 2]}, {"k": [True, False]}]}
+            }
+        }
+        # {"k": [1, 0]} should not match {"k": [True, False]}
+        errs_e1, _ = _validate_with_builtin({"val": {"k": [1, 0]}}, schema_enum_nested, "strict")
+        self.assertEqual(len(errs_e1), 1)
+        self.assertEqual(errs_e1[0].code, "ENUM_VIOLATION")
+
+        # Matching exact compound structure
+        errs_e2, _ = _validate_with_builtin({"val": {"k": [True, False]}}, schema_enum_nested, "strict")
+        self.assertEqual(len(errs_e2), 0)
+
+    def test_applicable_assertions_without_explicit_type(self):
+        """Verify schemas without explicit 'type' execute applicable keyword constraints based on domain type."""
+        from tasleemat.validation import _validate_with_builtin
+
+        # Schema with minLength constraint but no explicit "type": "string"
+        schema_no_type_str = {
+            "properties": {
+                "tag": {"minLength": 3}
+            }
+        }
+        # String with length < 3 must trigger MIN_LENGTH_VIOLATION
+        errs_s1, _ = _validate_with_builtin({"tag": "ab"}, schema_no_type_str, "strict")
+        self.assertEqual(len(errs_s1), 1)
+        self.assertEqual(errs_s1[0].code, "MIN_LENGTH_VIOLATION")
+
+        # Valid string
+        errs_s2, _ = _validate_with_builtin({"tag": "abc"}, schema_no_type_str, "strict")
+        self.assertEqual(len(errs_s2), 0)
+
+        # Schema with minimum constraint but no explicit "type": "number"
+        schema_no_type_num = {
+            "properties": {
+                "score": {"minimum": 10}
+            }
+        }
+        # Score < 10 must trigger MINIMUM_VIOLATION
+        errs_n1, _ = _validate_with_builtin({"score": 5}, schema_no_type_num, "strict")
+        self.assertEqual(len(errs_n1), 1)
+        self.assertEqual(errs_n1[0].code, "MINIMUM_VIOLATION")
+
+        # Valid number
+        errs_n2, _ = _validate_with_builtin({"score": 15}, schema_no_type_num, "strict")
+        self.assertEqual(len(errs_n2), 0)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -336,6 +336,37 @@ def preflight_schema(schema: Any, path: str = "#") -> List[ValidationError]:
     return errors
 
 
+def _json_equals(a: Any, b: Any) -> bool:
+    """
+    Strict recursive JSON-aware equality comparison.
+    - Booleans are strictly distinct from numbers (True != 1, False != 0).
+    - Numbers compare equal if numerically equal finite values (1 == 1.0).
+    - Lists compare element-by-element in exact sequence.
+    - Dicts compare key-for-key regardless of key insertion order.
+    - None equals None.
+    - Strings compare equal if string values are equal.
+    """
+    if type(a) is bool or type(b) is bool:
+        return type(a) is bool and type(b) is bool and a == b
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+        if isinstance(a, float) and (math.isnan(a) or math.isinf(a)):
+            return False
+        if isinstance(b, float) and (math.isnan(b) or math.isinf(b)):
+            return False
+        return a == b
+    if type(a) is not type(b):
+        return False
+    if isinstance(a, list):
+        if len(a) != len(b):
+            return False
+        return all(_json_equals(x, y) for x, y in zip(a, b))
+    if isinstance(a, dict):
+        if set(a.keys()) != set(b.keys()):
+            return False
+        return all(_json_equals(a[k], b[k]) for k in a)
+    return a == b
+
+
 def _validate_with_builtin(
     data: Dict[str, Any], schema: Dict[str, Any], mode: str
 ) -> Tuple[List[ValidationError], List[str]]:
@@ -348,17 +379,7 @@ def _validate_with_builtin(
         # 1. Evaluate universal assertions: enum and const across all types
         if "const" in rule:
             const_val = rule["const"]
-            # Strict JSON semantics: boolean is not equal to number (True != 1, False != 0)
-            is_type_match = (
-                type(val) is type(const_val)
-                or (
-                    isinstance(val, (int, float))
-                    and isinstance(const_val, (int, float))
-                    and not isinstance(val, bool)
-                    and not isinstance(const_val, bool)
-                )
-            )
-            if not is_type_match or val != const_val:
+            if not _json_equals(val, const_val):
                 errors.append(
                     ValidationError(
                         code="CONST_VIOLATION",
@@ -373,16 +394,7 @@ def _validate_with_builtin(
             matched = False
             if isinstance(enum_vals, list):
                 for opt in enum_vals:
-                    if type(val) is type(opt) and val == opt:
-                        matched = True
-                        break
-                    elif (
-                        isinstance(val, (int, float))
-                        and isinstance(opt, (int, float))
-                        and not isinstance(val, bool)
-                        and not isinstance(opt, bool)
-                        and val == opt
-                    ):
+                    if _json_equals(val, opt):
                         matched = True
                         break
             if not matched:
@@ -396,8 +408,10 @@ def _validate_with_builtin(
                 )
 
         expected_type = rule.get("type")
-        if expected_type == "object":
-            if not isinstance(val, dict):
+
+        # Check explicit type mismatch if 'type' is declared
+        if expected_type is not None:
+            if expected_type == "object" and not isinstance(val, dict):
                 errors.append(
                     ValidationError(
                         code="TYPE_MISMATCH",
@@ -407,7 +421,65 @@ def _validate_with_builtin(
                     )
                 )
                 return
+            elif expected_type == "array" and not isinstance(val, list):
+                errors.append(
+                    ValidationError(
+                        code="TYPE_MISMATCH",
+                        message=f"Expected array at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
+                        schema_rule="type:array",
+                    )
+                )
+                return
+            elif expected_type == "string" and not isinstance(val, str):
+                errors.append(
+                    ValidationError(
+                        code="TYPE_MISMATCH",
+                        message=f"Expected string at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
+                        schema_rule="type:string",
+                    )
+                )
+                return
+            elif expected_type in ("integer", "number"):
+                if (
+                    isinstance(val, bool)
+                    or not isinstance(val, (int, float))
+                    or (isinstance(val, float) and (math.isnan(val) or math.isinf(val)))
+                    or (expected_type == "integer" and not isinstance(val, int))
+                ):
+                    errors.append(
+                        ValidationError(
+                            code="TYPE_MISMATCH",
+                            message=f"Expected {expected_type} at {path or '/'}, got {type(val).__name__}",
+                            field_path=path or "/",
+                            schema_rule=f"type:{expected_type}",
+                        )
+                    )
+                    return
+            elif expected_type == "boolean" and not isinstance(val, bool):
+                errors.append(
+                    ValidationError(
+                        code="TYPE_MISMATCH",
+                        message=f"Expected boolean at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
+                        schema_rule="type:boolean",
+                    )
+                )
+                return
+            elif expected_type == "null" and val is not None:
+                errors.append(
+                    ValidationError(
+                        code="TYPE_MISMATCH",
+                        message=f"Expected null at {path or '/'}, got {type(val).__name__}",
+                        field_path=path or "/",
+                        schema_rule="type:null",
+                    )
+                )
+                return
 
+        # 2. Evaluate object-applicable assertions
+        if isinstance(val, dict) and (expected_type is None or expected_type == "object"):
             req = rule.get("required", [])
             for r in req:
                 if r not in val:
@@ -427,18 +499,8 @@ def _validate_with_builtin(
                 if k in props:
                     check_node(child_val, props[k], f"{path}/{k}")
 
-        elif expected_type == "array":
-            if not isinstance(val, list):
-                errors.append(
-                    ValidationError(
-                        code="TYPE_MISMATCH",
-                        message=f"Expected array at {path or '/'}, got {type(val).__name__}",
-                        field_path=path or "/",
-                        schema_rule="type:array",
-                    )
-                )
-                return
-
+        # 3. Evaluate array-applicable assertions
+        elif isinstance(val, list) and (expected_type is None or expected_type == "array"):
             min_items = rule.get("minItems")
             if min_items is not None and len(val) < min_items:
                 err = ValidationError(
@@ -468,17 +530,8 @@ def _validate_with_builtin(
                 for idx, item in enumerate(val):
                     check_node(item, item_rule, f"{path}/{idx}")
 
-        elif expected_type == "string":
-            if not isinstance(val, str):
-                errors.append(
-                    ValidationError(
-                        code="TYPE_MISMATCH",
-                        message=f"Expected string at {path or '/'}, got {type(val).__name__}",
-                        field_path=path or "/",
-                        schema_rule="type:string",
-                    )
-                )
-                return
+        # 4. Evaluate string-applicable assertions
+        elif isinstance(val, str) and (expected_type is None or expected_type == "string"):
             min_len = rule.get("minLength")
             if min_len is not None and len(val) < min_len:
                 errors.append(
@@ -533,66 +586,35 @@ def _validate_with_builtin(
                         )
                     )
 
-        elif expected_type in ("integer", "number"):
-            # Avoid Python bool trap: bool is a subclass of int in Python
-            # Explicitly reject non-finite numbers (NaN, Infinity) per RFC 8259 JSON spec
-            if (
-                isinstance(val, bool)
-                or not isinstance(val, (int, float))
-                or (isinstance(val, float) and (math.isnan(val) or math.isinf(val)))
-                or (expected_type == "integer" and not isinstance(val, int))
-            ):
-                errors.append(
-                    ValidationError(
-                        code="TYPE_MISMATCH",
-                        message=f"Expected {expected_type} at {path or '/'}, got {type(val).__name__}",
-                        field_path=path or "/",
-                        schema_rule=f"type:{expected_type}",
+        # 5. Evaluate numeric-applicable assertions
+        elif (
+            isinstance(val, (int, float))
+            and not isinstance(val, bool)
+            and (expected_type is None or expected_type in ("integer", "number"))
+        ):
+            if isinstance(val, float) and (math.isnan(val) or math.isinf(val)):
+                pass
+            else:
+                minimum = rule.get("minimum")
+                if minimum is not None and val < minimum:
+                    errors.append(
+                        ValidationError(
+                            code="MINIMUM_VIOLATION",
+                            message=f"Value {val} at {path or '/'} is less than minimum {minimum}",
+                            field_path=path or "/",
+                            schema_rule=f"minimum:{minimum}",
+                        )
                     )
-                )
-                return
-            minimum = rule.get("minimum")
-            if minimum is not None and val < minimum:
-                errors.append(
-                    ValidationError(
-                        code="MINIMUM_VIOLATION",
-                        message=f"Value {val} at {path or '/'} is less than minimum {minimum}",
-                        field_path=path or "/",
-                        schema_rule=f"minimum:{minimum}",
+                maximum = rule.get("maximum")
+                if maximum is not None and val > maximum:
+                    errors.append(
+                        ValidationError(
+                            code="MAXIMUM_VIOLATION",
+                            message=f"Value {val} at {path or '/'} is greater than maximum {maximum}",
+                            field_path=path or "/",
+                            schema_rule=f"maximum:{maximum}",
+                        )
                     )
-                )
-            maximum = rule.get("maximum")
-            if maximum is not None and val > maximum:
-                errors.append(
-                    ValidationError(
-                        code="MAXIMUM_VIOLATION",
-                        message=f"Value {val} at {path or '/'} is greater than maximum {maximum}",
-                        field_path=path or "/",
-                        schema_rule=f"maximum:{maximum}",
-                    )
-                )
-
-        elif expected_type == "boolean":
-            if not isinstance(val, bool):
-                errors.append(
-                    ValidationError(
-                        code="TYPE_MISMATCH",
-                        message=f"Expected boolean at {path or '/'}, got {type(val).__name__}",
-                        field_path=path or "/",
-                        schema_rule="type:boolean",
-                    )
-                )
-
-        elif expected_type == "null":
-            if val is not None:
-                errors.append(
-                    ValidationError(
-                        code="TYPE_MISMATCH",
-                        message=f"Expected null at {path or '/'}, got {type(val).__name__}",
-                        field_path=path or "/",
-                        schema_rule="type:null",
-                    )
-                )
 
     check_node(data, schema, "")
     return errors, warnings
