@@ -5,6 +5,7 @@ Provides structured, machine-readable discovery and asset retrieval.
 
 from __future__ import annotations
 
+import copy
 import json
 import pathlib
 from dataclasses import dataclass
@@ -50,14 +51,23 @@ class ArtifactAssets:
     def _resolve(self, rel_path: Optional[str]) -> Optional[pathlib.Path]:
         if not rel_path:
             return None
-        candidate = REPO_ROOT / rel_path
-        if candidate.exists():
-            return candidate
-        # Also check inside PACKAGE_DIR
-        alt = PACKAGE_DIR / rel_path
-        if alt.exists():
-            return alt
-        return candidate
+        # Defend against path traversal: relative paths must stay inside REPO_ROOT or PACKAGE_DIR
+        for base in (REPO_ROOT, PACKAGE_DIR):
+            candidate = (base / rel_path).resolve()
+            try:
+                candidate.relative_to(base.resolve())
+            except ValueError:
+                # Path escaped base directory
+                continue
+            if candidate.exists():
+                return candidate
+
+        fallback = (REPO_ROOT / rel_path).resolve()
+        try:
+            fallback.relative_to(REPO_ROOT.resolve())
+        except ValueError:
+            raise ValueError(f"Path traversal detected in asset path: {rel_path}")
+        return fallback
 
     def get_template_content(self) -> str:
         p = self._resolve(self.template_path)
@@ -160,7 +170,7 @@ def get_artifact_definition(artifact_id: str) -> Dict[str, Any]:
     norm_id = artifact_id.upper().strip()
     for item in catalog.get("artifacts", []):
         if item["artifact_id"] == norm_id:
-            return item
+            return copy.deepcopy(item)
     raise KeyError(f"Artifact ID '{artifact_id}' not found in Tasleemat catalog.")
 
 
@@ -187,10 +197,19 @@ def get_artifact_assets(artifact_id: str, lang: str = "en") -> ArtifactAssets:
     )
 
 
+VALID_TIERS = {"1", "2", "3", "4"}
+VALID_PACKS = {"general", "predictive", "agile", "hybrid"}
+
+
 def get_tailoring_profile(tier: str, pack: str = "general") -> List[str]:
     """Retrieve the list of required artifact IDs for a given governance tier and methodology pack."""
     norm_tier = str(tier).strip()
     norm_pack = pack.lower().strip()
+
+    if norm_tier not in VALID_TIERS:
+        raise ValueError(f"Invalid tailoring tier '{tier}'. Supported tiers: {sorted(list(VALID_TIERS))}")
+    if norm_pack not in VALID_PACKS:
+        raise ValueError(f"Invalid tailoring pack '{pack}'. Supported packs: {sorted(list(VALID_PACKS))}")
 
     catalog = _get_catalog()
     matched_ids = []

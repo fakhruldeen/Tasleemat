@@ -7,6 +7,9 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
+import datetime
+import copy
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
@@ -35,9 +38,18 @@ class ValidationReport:
     schema_version: str
     fingerprint: str
     mode: str
-    package_version: str = "2.4.2"
+    package_version: str = "2.5.0"
+    definition_fingerprint: str = ""
+    schema_id: str = ""
+    schema_dialect: str = ""
     errors: List[ValidationError] = field(default_factory=list)
     warnings: List[str] = field(default_factory=list)
+
+    def __post_init__(self):
+        if not self.definition_fingerprint and self.fingerprint:
+            self.definition_fingerprint = self.fingerprint
+        if not self.fingerprint and self.definition_fingerprint:
+            self.fingerprint = self.definition_fingerprint
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -46,6 +58,9 @@ class ValidationReport:
             "artifact_id": self.artifact_id,
             "schema_version": self.schema_version,
             "fingerprint": self.fingerprint,
+            "definition_fingerprint": self.definition_fingerprint,
+            "schema_id": self.schema_id,
+            "schema_dialect": self.schema_dialect,
             "mode": self.mode,
             "errors": [
                 {
@@ -125,7 +140,7 @@ def _validate_with_builtin(
                 return
 
             min_items = rule.get("minItems")
-            if min_items and len(val) < min_items:
+            if min_items is not None and len(val) < min_items:
                 err = ValidationError(
                     code="MIN_ITEMS_VIOLATION",
                     message=f"Array at {path} must contain at least {min_items} items, got {len(val)}",
@@ -136,6 +151,17 @@ def _validate_with_builtin(
                     warnings.append(f"Draft warning: {err.message}")
                 else:
                     errors.append(err)
+
+            max_items = rule.get("maxItems")
+            if max_items is not None and len(val) > max_items:
+                errors.append(
+                    ValidationError(
+                        code="MAX_ITEMS_VIOLATION",
+                        message=f"Array at {path} must contain at most {max_items} items, got {len(val)}",
+                        field_path=path,
+                        schema_rule=f"maxItems:{max_items}",
+                    )
+                )
 
             item_rule = rule.get("items")
             if item_rule:
@@ -154,7 +180,7 @@ def _validate_with_builtin(
                 )
                 return
             min_len = rule.get("minLength")
-            if min_len and len(val) < min_len:
+            if min_len is not None and len(val) < min_len:
                 errors.append(
                     ValidationError(
                         code="MIN_LENGTH_VIOLATION",
@@ -163,6 +189,41 @@ def _validate_with_builtin(
                         schema_rule=f"minLength:{min_len}",
                     )
                 )
+            max_len = rule.get("maxLength")
+            if max_len is not None and len(val) > max_len:
+                errors.append(
+                    ValidationError(
+                        code="MAX_LENGTH_VIOLATION",
+                        message=f"String at {path} exceeds maximum length {max_len}",
+                        field_path=path,
+                        schema_rule=f"maxLength:{max_len}",
+                    )
+                )
+            pattern = rule.get("pattern")
+            if pattern is not None:
+                if not re.search(pattern, val):
+                    errors.append(
+                        ValidationError(
+                            code="PATTERN_VIOLATION",
+                            message=f"String '{val}' at {path} does not match required pattern '{pattern}'",
+                            field_path=path,
+                            schema_rule=f"pattern:{pattern}",
+                        )
+                    )
+            fmt = rule.get("format")
+            if fmt == "date":
+                # Validate standard YYYY-MM-DD
+                try:
+                    datetime.date.fromisoformat(val)
+                except (ValueError, TypeError):
+                    errors.append(
+                        ValidationError(
+                            code="FORMAT_VIOLATION",
+                            message=f"String '{val}' at {path} does not match required format 'date' (YYYY-MM-DD)",
+                            field_path=path,
+                            schema_rule="format:date",
+                        )
+                    )
             enum_vals = rule.get("enum")
             if enum_vals and val not in enum_vals:
                 errors.append(
@@ -185,7 +246,8 @@ def _validate_with_builtin(
                 )
 
         elif expected_type in ("integer", "number"):
-            if not isinstance(val, (int, float)) or (expected_type == "integer" and not isinstance(val, int)):
+            # Avoid Python bool trap: bool is a subclass of int in Python
+            if isinstance(val, bool) or not isinstance(val, (int, float)) or (expected_type == "integer" and not isinstance(val, int)):
                 errors.append(
                     ValidationError(
                         code="TYPE_MISMATCH",
@@ -238,10 +300,22 @@ def validate_artifact_data(
     Returns:
         ValidationReport with valid flag, errors, warnings, and field paths.
     """
+    import tasleemat
+    from tasleemat.catalog import get_artifact_definition
+
+    current_pkg_version = getattr(tasleemat, "__version__", "2.4.2")
     norm_id = artifact_id.upper().strip()
     norm_mode = mode.lower().strip()
     if norm_mode not in ("strict", "draft"):
         raise ValueError(f"Invalid validation mode '{mode}'. Choose 'strict' or 'draft'.")
+
+    # Resolve deliverable SHA-256 fingerprint from catalog
+    real_fingerprint = ""
+    try:
+        art_def = get_artifact_definition(norm_id)
+        real_fingerprint = art_def.get("fingerprint", "")
+    except Exception:
+        pass
 
     # Check payload type
     if not isinstance(data, dict):
@@ -249,7 +323,9 @@ def validate_artifact_data(
             valid=False,
             artifact_id=norm_id,
             schema_version="",
-            fingerprint="",
+            fingerprint=real_fingerprint,
+            definition_fingerprint=real_fingerprint,
+            package_version=current_pkg_version,
             mode=norm_mode,
             errors=[
                 ValidationError(
@@ -270,7 +346,9 @@ def validate_artifact_data(
             valid=False,
             artifact_id=norm_id,
             schema_version="",
-            fingerprint="",
+            fingerprint=real_fingerprint,
+            definition_fingerprint=real_fingerprint,
+            package_version=current_pkg_version,
             mode=norm_mode,
             errors=[
                 ValidationError(
@@ -283,25 +361,36 @@ def validate_artifact_data(
             warnings=[],
         )
 
-    schema_id = schema.get("$id", norm_id)
+    schema_id = schema.get("$id", f"https://tasleemat.pmo/schemas/completed/{norm_id}.schema.json")
+    schema_dialect = schema.get("$schema", "https://json-schema.org/draft/2020-12/schema")
 
     # Verify version compatibility if requested
+    # Strict deterministic whitelist of supported versions
     if definition_version:
-        supported_versions = {"2.4.2", "v2.4.2", "2.4.1", "v2.4.1", "2.4.0", "v2.4.0", "2.3.1", "v2.3.1", schema_id, schema.get("$schema")}
-        if definition_version not in supported_versions and not definition_version.endswith(norm_id):
+        supported_versions = {
+            "2.5.0", "v2.5.0",
+            "2.4.2", "v2.4.2",
+            "2.4.1", "v2.4.1",
+            "2.4.0", "v2.4.0",
+            "2.3.1", "v2.3.1",
+        }
+        if definition_version not in supported_versions:
             return ValidationReport(
                 valid=False,
-                package_version="2.4.2",
+                package_version=current_pkg_version,
                 artifact_id=norm_id,
-                schema_version=definition_version,
-                fingerprint=schema_id,
+                schema_version=schema_dialect,
+                schema_id=schema_id,
+                schema_dialect=schema_dialect,
+                fingerprint=real_fingerprint,
+                definition_fingerprint=real_fingerprint,
                 mode=norm_mode,
                 errors=[
                     ValidationError(
                         code="UNSUPPORTED_VERSION",
                         message=(
                             f"Requested definition version '{definition_version}' is not supported "
-                            f"by installed Tasleemat package (v2.4.2)."
+                            f"by installed Tasleemat package (v{current_pkg_version})."
                         ),
                         field_path="/",
                         schema_rule="version_compatibility",
@@ -316,8 +405,12 @@ def validate_artifact_data(
     return ValidationReport(
         valid=is_valid,
         artifact_id=norm_id,
-        schema_version=schema.get("$schema", "https://json-schema.org/draft/2020-12/schema"),
-        fingerprint=schema_id,
+        schema_version=schema_dialect,
+        schema_id=schema_id,
+        schema_dialect=schema_dialect,
+        fingerprint=real_fingerprint,
+        definition_fingerprint=real_fingerprint,
+        package_version=current_pkg_version,
         mode=norm_mode,
         errors=errors,
         warnings=warnings,

@@ -318,6 +318,9 @@ class MCPServer:
                     "mode": report.mode,
                     "artifact_id": report.artifact_id,
                     "package_version": report.package_version,
+                    "definition_fingerprint": report.definition_fingerprint,
+                    "schema_id": report.schema_id,
+                    "schema_dialect": report.schema_dialect,
                     "errors_count": len(report.errors),
                     "warnings_count": len(report.warnings),
                     "errors": [

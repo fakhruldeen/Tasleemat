@@ -92,6 +92,19 @@ with open("docs/LEXICON.json", "r", encoding="utf-8") as f:
 df_resources = pd.read_json("datapackage.json")
 ```
 
+### Pilot Completed-Data Schemas (JSON Schema Draft 2020-12)
+In addition to the 114 template schema definitions, Tasleemat provides additive companion completed-data schemas for pilot deliverables:
+- `PMO-03.01` (Project Charter)
+- `PMO-04.08.02` (Risk Register)
+- `PMO-06.01` (Project Status Report)
+
+These schemas validate completed JSON payloads using `validate_artifact_data` or MCP `tasleemat_validate_data` in `strict` or `draft` modes.
+
+### Mock Generation Notice
+The built-in offline mock provider (`AIClient(provider="mock")`) emits structural placeholders labeled prominently with:
+`<!-- UNVALIDATED TEST OUTPUT: NOT SUITABLE FOR PRODUCTION USE -->`
+Mock deliverables are strictly intended for offline structural pipeline testing and require human PMO review and validation before use.
+
 ---
 
 ## 🧪 4. Automated Testing Suite

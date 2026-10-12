@@ -252,12 +252,14 @@ def render_artifact(
 
     if out_path:
         target = pathlib.Path(out_path).resolve()
-        # Strictly verify that out_path is NOT within forms/
-        if FORMS_DIR.exists() and (target == FORMS_DIR or FORMS_DIR in target.parents):
-            raise ValueError(
-                f"Prohibited output path: '{target}' is inside 'forms/'. "
-                f"Rendered outputs must be written outside forms/."
-            )
+        # Strictly verify that out_path is NOT within forms/ or package directory
+        prohibited_dirs = [FORMS_DIR, PACKAGE_DIR]
+        for pdir in prohibited_dirs:
+            if pdir.exists() and (target == pdir or pdir in target.parents):
+                raise ValueError(
+                    f"Prohibited output path: '{target}' is inside protected directory '{pdir.name}'. "
+                    f"Rendered outputs must be written outside package sources and forms/."
+                )
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(full_html, encoding="utf-8")
 

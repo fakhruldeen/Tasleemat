@@ -12,4 +12,4 @@ This skill equips agents with standard operating procedures for managing deliver
 1. Identify the required deliverable ID using `tasleemat_list_artifacts` or `tasleemat_get_artifact`.
 2. Retrieve the official template and practitioner guide using `tasleemat_get_asset`.
 3. Populate the deliverable adhering to Document Control headers and audit trail hashes.
-4. Validate structured payloads using `tasleemat_validate_data`.
+4. Validate structured payloads for pilot forms (`PMO-03.01`, `PMO-04.08.02`, `PMO-06.01`) using `tasleemat_validate_data`.

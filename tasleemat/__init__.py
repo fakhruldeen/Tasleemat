@@ -2,7 +2,7 @@
 Tasleemat (تسليمات) — Enterprise Bilingual PMO Framework & Automation Library
 """
 
-__version__ = "2.4.2"
+__version__ = "2.5.0"
 
 from tasleemat.catalog import (
     ArtifactAssets,

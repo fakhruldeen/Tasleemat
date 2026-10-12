@@ -41,7 +41,7 @@ class TestConsumerInterface(unittest.TestCase):
 
     def test_package_exports(self):
         """Verify public package exports at root tasleemat namespace."""
-        self.assertEqual(tasleemat.__version__, "2.4.2")
+        self.assertEqual(tasleemat.__version__, "2.5.0")
         self.assertTrue(callable(tasleemat.list_artifacts))
         self.assertTrue(callable(tasleemat.get_artifact_definition))
         self.assertTrue(callable(tasleemat.get_artifact_assets))

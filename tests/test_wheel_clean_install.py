@@ -34,12 +34,36 @@ class TestWheelCleanInstall(unittest.TestCase):
             py_bin = venv_dir / "bin" / "python"
             cli_bin = venv_dir / "bin" / "tasleemat"
 
-            # 2. Stage SDK assets using build script logic
-            subprocess.run(["bash", "build.sh"], cwd=str(SDK_DIR), check=True)
+            # 2. Stage SDK assets inside an isolated staging temp directory (outside source tree)
+            stage_dir = tmp_path / "sdk_stage"
+            stage_dir.mkdir(parents=True, exist_ok=True)
+            pkg_dest = stage_dir / "tasleemat"
+            pkg_dest.mkdir(parents=True, exist_ok=True)
 
-            # Find built wheel in SDK_DIR / "dist"
-            wheels = sorted((SDK_DIR / "dist").glob("*.whl"), key=os.path.getmtime)
-            self.assertTrue(len(wheels) > 0, "No built wheel found in sdk/python/dist")
+            import shutil
+            shutil.copytree(str(ROOT / "tasleemat"), str(pkg_dest), dirs_exist_ok=True)
+            shutil.copytree(str(ROOT / "forms"), str(pkg_dest / "forms"), dirs_exist_ok=True)
+            shutil.copytree(str(ROOT / "docs"), str(pkg_dest / "docs"), dirs_exist_ok=True)
+            shutil.copytree(str(ROOT / "_tokens"), str(pkg_dest / "_tokens"), dirs_exist_ok=True)
+            shutil.copytree(str(ROOT / "tools"), str(pkg_dest / "tools"), dirs_exist_ok=True)
+            shutil.copytree(str(ROOT / "tools" / "ai"), str(pkg_dest / "ai"), dirs_exist_ok=True)
+            shutil.copy(str(ROOT / "LICENSE"), str(stage_dir / "LICENSE"))
+            shutil.copy(str(SDK_DIR / "setup.py"), str(stage_dir / "setup.py"))
+            shutil.copy(str(SDK_DIR / "README.md"), str(stage_dir / "README.md"))
+
+            (pkg_dest / "tools" / "__init__.py").touch()
+            (pkg_dest / "tools" / "attested_computations" / "__init__.py").touch()
+
+            # Build wheel directly in stage_dir into dist_dir
+            subprocess.run(
+                [sys.executable, "-m", "pip", "wheel", ".", "-w", str(dist_dir), "--no-deps"],
+                cwd=str(stage_dir),
+                check=True,
+            )
+
+            # Find built wheel in dist_dir
+            wheels = sorted(dist_dir.glob("*.whl"), key=os.path.getmtime)
+            self.assertTrue(len(wheels) > 0, "No built wheel found in isolated dist dir")
             latest_wheel = wheels[-1]
 
             # 3. Install wheel in isolated venv (using --no-deps for speed in offline/sandboxed test)
@@ -51,7 +75,7 @@ import sys
 import tasleemat
 
 # Verify version and exports
-assert tasleemat.__version__ == "2.4.2", f"Unexpected version {tasleemat.__version__}"
+assert tasleemat.__version__ == "2.5.0", f"Unexpected version {tasleemat.__version__}"
 artifacts = tasleemat.list_artifacts()
 assert len(artifacts) == 114, f"Expected 114 artifacts, got {len(artifacts)}"
 
