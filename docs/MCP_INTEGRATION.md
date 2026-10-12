@@ -1,3 +1,7 @@
+---
+type: Guide
+---
+
 # 🔌 Tasleemat Model Context Protocol (MCP) Integration Guide
 
 This guide describes how to connect the **Tasleemat MCP Server** (`tasleemat-mcp`) to **Claude Desktop**, **Cursor**, **OpenCode**, and any standard Model Context Protocol client.
