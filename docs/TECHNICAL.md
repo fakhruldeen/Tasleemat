@@ -114,7 +114,15 @@ Completed-data payload validation is executed through `validate_artifact_data` o
    - **Types:** `object`, `array`, `string`, `integer`, `number`, `boolean`, `null`. Python boolean subclass trap (`isinstance(True, int)`) is strictly guarded.
    - **Bounds:** `minimum`, `maximum`, `minLength`, `maxLength`, `minItems`, `maxItems`.
    - **Universal Equality:** `enum` and `const` enforced across all data types.
-   - **Format Validation:** `format="date"` strictly enforces ISO 8601 `YYYY-MM-DD` and calendar validity.
+   - **Format Assertion Policy & Registry:** Format keywords operate under explicit assertion mode managed by the centralized registry (`tasleemat.formats`). Preflight independently verifies format validity before payload traversal (`UNSUPPORTED_FORMAT_ASSERTION`, `MALFORMED_SCHEMA_KEYWORD`). Supported formats include:
+     - `date`: RFC 3339 `YYYY-MM-DD` with strict leap year and calendar validity.
+     - `date-time`: RFC 3339 timezone-aware timestamps (`Z` or `+/-HH:MM`), fractional seconds, and leap seconds.
+     - `time`: RFC 3339 partial or offset time (`HH:MM:SS`).
+     - `uuid`: RFC 4122 plain hex UUIDs (`8-4-4-4-12`).
+     - `uri`: RFC 3986 absolute URIs with valid schemes.
+     - `uri-reference`: RFC 3986 absolute or relative URI references without unescaped whitespace.
+     - `email`: RFC 5322 standard address subset (`local-part@domain`).
+     - `duration`: ISO 8601 duration representations (e.g. `P3Y6M4DT12H30M5S`, `PT15M`).
 4. **Availability & Error Outcomes:**
    - `status="unknown_artifact"`: Deliverable ID not found in canonical catalog (`UNKNOWN_ARTIFACT`).
    - `status="unavailable"`: Deliverable registered in catalog but companion schema not yet published (`SCHEMA_UNAVAILABLE`).

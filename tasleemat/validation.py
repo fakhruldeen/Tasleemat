@@ -105,7 +105,8 @@ SUPPORTED_SCHEMA_KEYWORDS = {
 }
 
 SUPPORTED_TYPES = {"object", "array", "string", "integer", "number", "boolean", "null"}
-SUPPORTED_FORMATS = {"date"}
+
+from .formats import FORMAT_HANDLERS, SUPPORTED_FORMATS, check_format
 
 
 def preflight_schema(schema: Any, path: str = "#") -> List[ValidationError]:
@@ -475,17 +476,25 @@ def _validate_with_builtin(
                         )
                     )
             fmt = rule.get("format")
-            if fmt == "date":
-                # Validate standard YYYY-MM-DD and calendar validity
-                try:
-                    datetime.date.fromisoformat(val)
-                except (ValueError, TypeError):
+            if fmt:
+                if fmt in SUPPORTED_FORMATS:
+                    is_valid, desc = check_format(fmt, val)
+                    if not is_valid:
+                        errors.append(
+                            ValidationError(
+                                code="FORMAT_VIOLATION",
+                                message=f"String '{val}' at {path or '/'} does not match required format '{fmt}' ({desc})",
+                                field_path=path or "/",
+                                schema_rule=f"format:{fmt}",
+                            )
+                        )
+                else:
                     errors.append(
                         ValidationError(
-                            code="FORMAT_VIOLATION",
-                            message=f"String '{val}' at {path or '/'} does not match required format 'date' (YYYY-MM-DD)",
+                            code="UNSUPPORTED_FORMAT_ASSERTION",
+                            message=f"Format '{fmt}' at {path or '/'} is not supported by built-in validator.",
                             field_path=path or "/",
-                            schema_rule="format:date",
+                            schema_rule=f"format:{fmt}",
                         )
                     )
 
