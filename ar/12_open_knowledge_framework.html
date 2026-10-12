@@ -155,8 +155,43 @@ python3 tools/validate_okf.py
 <ol>
 <li><strong>الاستدعاء المباشر لوكلاء الذكاء الاصطناعي (Function Calling):</strong> تستخدم نماذج الذكاء الاصطناعي الحديثة مخططات JSON بشكل طبيعي لتوليد المخرجات المنسقة دون أخطاء هيكلية.</li>
 <li><strong>شجرة بيانات هرمية ومتكاملة:</strong> يحمل كل حقل خصائص <code>section</code> (القسم) و <code>label</code> (المسمى) و <code>guidance</code> (الإرشادات التفصيلية) و <code>value</code> (القيمة المستهدفة).</li>
-<li><strong>التماثل الثنائي الكامل (en / ar-SA):</strong> دعم كامل لاتجاه النص العربي (<code>rtl</code>) والترميز الموحد <code>utf-8</code> عبر كافة المخططات الـ 204.</li>
+<li><strong>التماثل الثنائي الكامل (en / ar-SA):</strong> دعم كامل لاتجاه النص العربي (<code>rtl</code>) والترميز الموحد <code>utf-8</code> عبر كافة المخططات الـ 228.</li>
 </ol>
+<hr />
+<p>## 🤖 التطبيق العملي لمخططات OKF مع نماذج الذكاء الاصطناعي (LLMs)</p>
+<p>### 1. تعريف الأدوات واستدعاء الدوال الذكية (OpenAI Tools &amp; Anthropic Claude)
+ يتيح تمرير مخططات JSON المعتمدة تقييد استجابة النماذج لتوليد بيانات هيكلية مطابقة بدقة متناهية:</p>
+<p>```python
+ import tasleemat</p>
+<p># 1. استخراج مخطط البيانات المعتمد للتسليمة باللغة العربية
+ schema = tasleemat.get_artifact_asset("PMO-03.01", role="schema", lang="ar")</p>
+<p># 2. تعريف الأداة الذكية لنماذج OpenAI أو Claude
+ pmo_tool = {
+     "name": "generate_project_charter",
+     "description": "توليد ميثاق مشروع رسمي معتمد وفق معايير PMI",
+     "parameters": schema
+ }
+ ```</p>
+<p>### 2. حلقة التحقق والتصحيح الذاتي التلقائي
+ عند قيام النموذج بتوليد بيانات معقدة للمشروع، يمكن ربط التحقق الهيكلي بإعادة التوجيه الذاتي التلقائي:</p>
+<p>```python
+ import tasleemat</p>
+<p>def generate_and_validate(llm_client, meeting_notes):
+     # طلب توليد JSON من النموذج
+     raw_payload = llm_client.generate_json(meeting_notes)</p>
+<pre><code> # التحقق البرمجي وفق عقد تسليمات الصارم
+ report = tasleemat.validate_artifact_data("PMO-03.01", raw_payload, mode="strict")
+
+ if not report.valid:
+     # بناء موجه تصحيحي دقيق يحدد مسارات الحقول غير المطابقة
+     errors_summary = [f"الحقل: {err.field_path} -&gt; {err.message}" for err in report.errors]
+     correction_prompt = "البيانات المولدة تحتوي أخطاء هيكلية:\n" + "\n".join(errors_summary)
+     # إعادة التوجيه ليصحح النموذج خطأه ذاتياً
+     return llm_client.generate_json(correction_prompt)
+
+ return raw_payload
+</code></pre>
+<p>```</p>
     </div>
   </main>
 

@@ -155,8 +155,44 @@ python3 tools/validate_okf.py
 <ol>
 <li><strong>AI Agent Tool Calling:</strong> Modern LLMs (Gemini, Claude, GPT-4) consume JSON schemas natively for function calling and structured document generation.</li>
 <li><strong>Hierarchical Field Metadata:</strong> Each field carries explicit <code>section</code>, <code>label</code>, <code>guidance</code>, and target <code>value</code> properties.</li>
-<li><strong>Bilingual Symmetry (en / ar-SA):</strong> Preserves bidirectional text orientation flags (<code>ltr</code> and <code>rtl</code>) and UTF-8 encoding across all 204 schemas.</li>
+<li><strong>Bilingual Symmetry (en / ar-SA):</strong> Preserves bidirectional text orientation flags (<code>ltr</code> and <code>rtl</code>) and UTF-8 encoding across all 228 schemas.</li>
 </ol>
+<hr />
+<h2 id="practical-llm-integration-with-okf-schemas">🤖 Practical LLM Integration with OKF Schemas</h2>
+<h3 id="1-function-calling-tool-definition-openai-anthropic-claude">1. Function Calling &amp; Tool Definition (OpenAI &amp; Anthropic Claude)</h3>
+<p>By passing Tasleemat schemas directly into LLM tool definitions, you constrain model responses to guaranteed structured data:</p>
+<pre><code class="language-python">import tasleemat
+
+# 1. Fetch schema definition from Tasleemat
+schema = tasleemat.get_artifact_asset(&quot;PMO-03.01&quot;, role=&quot;schema&quot;, lang=&quot;en&quot;)
+
+# 2. Define tool for Claude / OpenAI API
+pmo_tool = {
+    &quot;name&quot;: &quot;generate_project_charter&quot;,
+    &quot;description&quot;: &quot;Generate a formal PMI PMBOK® Project Charter document payload&quot;,
+    &quot;input_schema&quot;: schema  # Conforms to Draft 2020-12 / OpenAPI
+}
+</code></pre>
+<h3 id="2-in-context-self-correction-feedback-loop">2. In-Context Self-Correction Feedback Loop</h3>
+<p>When LLMs draft complex project data, schema validation can be coupled with automated retry loops:</p>
+<pre><code class="language-python">import tasleemat
+
+def generate_and_validate(llm_client, user_notes):
+    # Prompt LLM for structured output
+    raw_payload = llm_client.generate_json(user_notes)
+
+    # Validate against Tasleemat strict companion contract
+    report = tasleemat.validate_artifact_data(&quot;PMO-03.01&quot;, raw_payload, mode=&quot;strict&quot;)
+
+    if not report.valid:
+        # Construct surgical feedback prompt with exact JSON pointer paths
+        corrections = [f&quot;Field: {err.field_path} -&gt; {err.message}&quot; for err in report.errors]
+        feedback = f&quot;The generated payload had schema errors:\n&quot; + &quot;\n&quot;.join(corrections)
+        # LLM self-corrects based on exact validation errors
+        return llm_client.generate_json(feedback)
+
+    return raw_payload
+</code></pre>
     </div>
   </main>
 
