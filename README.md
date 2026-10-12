@@ -242,22 +242,121 @@ Every form folder in `forms/` contains a dedicated, pre-engineered LLM prompt fi
 
 ---
 
-### 2. In OpenCode, Cursor, Windsurf & GitHub Copilot
+### 2. In Coding Agents & IDEs (Cursor, OpenCode, Windsurf, Cline)
 
-When opening the cloned Tasleemat repository in **OpenCode**, **Cursor**, or any agentic IDE:
+Tasleemat runs natively as an MCP server (`tasleemat-mcp`) across all agentic IDEs:
 
-- **Reference via `@` Context**:
-  - In OpenCode / Cursor chat: `@03_01_Project_Charter_Template.md Fill this project charter for a modern mobile banking app with biometric authentication.`
-  - The AI assistant reads the exact template structure, Document Control table, and required sections to generate conforming documentation directly in your workspace.
-- **Repository Rules (`.cursorrules` / `.windsurfrules` / Agent Prompts)**:
-  - You can instruct your coding agent to scaffold PMO documents using:
-    ```markdown
-    When generating project documentation, always adhere to the schema and templates defined in forms/en/ and forms/ar/. Enforce Document Control blocks and never remove placeholder audit hashes.
-    ```
+#### A. Cursor IDE
+Add to `.cursor/mcp.json` or via **Cursor Settings** $\rightarrow$ **Features** $\rightarrow$ **MCP**:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+#### B. OpenCode Setup
+In your OpenCode MCP settings or workspace configuration:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+#### C. Windsurf (Codeium) Setup
+Configure in `~/.codeium/windsurf/mcp_config.json`:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+#### D. Cline / Roo Code (VS Code Extension)
+In `cline_mcp_settings.json`:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+- **Reference via `@` Context in Chat**:
+  - `@03_01_Project_Charter_Template.md Fill this project charter for a modern mobile banking app with biometric authentication.`
+- **Repository Rules (`.cursorrules` / `.windsurfrules`)**:
+  ```markdown
+  When generating project documentation, always adhere to the schema and templates defined in forms/en/ and forms/ar/. Enforce Document Control blocks and never remove placeholder audit hashes.
+  ```
 
 ---
 
-### 3. Using the Open Knowledge Foundation (OKF) Data Package with LLMs
+### 3. In Multi-Agent Frameworks (CrewAI, LangChain, LlamaIndex)
+
+Because `tasleemat` is a standard package on PyPI (`pip install tasleemat`), autonomous agent frameworks can import it directly:
+
+#### CrewAI Custom Tool:
+```python
+from crewai.tools import tool
+import tasleemat
+
+@tool("PMO Deliverable Retriever")
+def get_pmo_deliverable(artifact_id: str, role: str = "template", lang: str = "en") -> str:
+    """Fetches standardized PMO deliverable templates and guides (e.g. PMO-03.01)."""
+    return tasleemat.get_artifact_asset(artifact_id, role, lang)
+```
+
+#### LangChain Custom Tool:
+```python
+from langchain.tools import BaseTool
+from pydantic import BaseModel, Field
+import tasleemat
+
+class PMOFetchInput(BaseModel):
+    artifact_id: str = Field(description="Unique PMO artifact ID, e.g., 'PMO-03.01'")
+    role: str = Field(default="template", description="Role: 'template', 'guide', 'prompt', 'schema'")
+    lang: str = Field(default="en", description="Language: 'en' or 'ar'")
+
+class PMOFetchTool(BaseTool):
+    name: str = "pmo_fetch_asset"
+    description: str = "Retrieve standardized PMBOK-compliant PMO templates and guides in English or Arabic."
+    args_schema: type[BaseModel] = PMOFetchInput
+
+    def _run(self, artifact_id: str, role: str = "template", lang: str = "en") -> str:
+        return tasleemat.get_artifact_asset(artifact_id, role=role, lang=lang)
+```
+
+#### LlamaIndex Function Tool:
+```python
+from llama_index.core.tools import FunctionTool
+import tasleemat
+
+def fetch_pmo_template(artifact_id: str, lang: str = "en") -> str:
+    """Retrieve an authoritative bilingual PMO template by ID."""
+    return tasleemat.get_artifact_asset(artifact_id, role="template", lang=lang)
+
+pmo_tool = FunctionTool.from_defaults(
+    fn=fetch_pmo_template,
+    name="tasleemat_pmo_template",
+    description="Provides access to 114 standardized bilingual PMO deliverable templates."
+)
+```
+
+---
+
+### 4. Using the Open Knowledge Foundation (OKF) Data Package with LLMs
 
 Tasleemat includes a root [`datapackage.json`](datapackage.json) following the **OKF Frictionless Data Package** standard, which indexes all 228 form schema resources.
 

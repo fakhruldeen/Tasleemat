@@ -73,7 +73,7 @@ Or using `uvx` directly from PyPI without pre-installing:
 In Cursor, go to **Settings** $\rightarrow$ **Features** $\rightarrow$ **MCP** $\rightarrow$ **Add New MCP Server**:
 - **Name:** `tasleemat`
 - **Type:** `command`
-- **Command:** `python3 -m tasleemat.mcp`
+- **Command:** `tasleemat-mcp`
 
 Or configure via `.cursor/mcp.json` in your workspace root:
 
@@ -81,8 +81,7 @@ Or configure via `.cursor/mcp.json` in your workspace root:
 {
   "mcpServers": {
     "tasleemat": {
-      "command": "python3",
-      "args": ["-m", "tasleemat.mcp"]
+      "command": "tasleemat-mcp"
     }
   }
 }
@@ -90,7 +89,7 @@ Or configure via `.cursor/mcp.json` in your workspace root:
 
 ---
 
-### 3. OpenCode & Agentic IDEs
+### 3. OpenCode Setup
 
 In your OpenCode MCP settings or workspace configuration:
 
@@ -102,6 +101,108 @@ In your OpenCode MCP settings or workspace configuration:
     }
   }
 }
+```
+
+---
+
+### 4. Windsurf (Codeium) Setup
+
+In Windsurf, configure `~/.codeium/windsurf/mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+---
+
+### 5. Cline / Roo Code (VS Code Extension) Setup
+
+In VS Code with Cline or Roo Code installed, edit `cline_mcp_settings.json`:
+
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+---
+
+## 🐍 Multi-Agent Frameworks (CrewAI, LangChain, LlamaIndex)
+
+Because `tasleemat` is a first-class Python package (`pip install tasleemat`), it can be integrated directly into autonomous multi-agent pipelines:
+
+### 1. CrewAI Custom Tools
+
+Equip CrewAI agents with PMO document retrieval and structural validation capabilities:
+
+```python
+from crewai.tools import tool
+import tasleemat
+import json
+
+@tool("PMO Deliverable Retriever")
+def get_pmo_deliverable(artifact_id: str, role: str = "template", lang: str = "en") -> str:
+    """Fetches standardized PMO deliverable templates and guides (e.g. PMO-03.01)."""
+    return tasleemat.get_artifact_asset(artifact_id, role, lang)
+
+@tool("PMO Structural Validator")
+def validate_pmo_data(artifact_id: str, payload_json_str: str) -> str:
+    """Validates structured project data against formal JSON schema contracts."""
+    data = json.loads(payload_json_str)
+    report = tasleemat.validate_artifact_data(artifact_id, data, mode="draft")
+    return f"Valid: {report.valid}, Errors: {len(report.errors)}, Warnings: {len(report.warnings)}"
+```
+
+### 2. LangChain Custom BaseTool
+
+Expose Tasleemat deliverable lookups to LangGraph and LangChain agents:
+
+```python
+from langchain.tools import BaseTool
+from pydantic import BaseModel, Field
+import tasleemat
+
+class PMOFetchInput(BaseModel):
+    artifact_id: str = Field(description="Unique PMO artifact ID, e.g., 'PMO-03.01'")
+    role: str = Field(default="template", description="Role: 'template', 'guide', 'prompt', 'schema'")
+    lang: str = Field(default="en", description="Language: 'en' or 'ar'")
+
+class PMOFetchTool(BaseTool):
+    name: str = "pmo_fetch_asset"
+    description: str = "Retrieve standardized PMBOK-compliant PMO templates, guides, or prompts in English or Arabic."
+    args_schema: type[BaseModel] = PMOFetchInput
+
+    def _run(self, artifact_id: str, role: str = "template", lang: str = "en") -> str:
+        return tasleemat.get_artifact_asset(artifact_id, role=role, lang=lang)
+```
+
+### 3. LlamaIndex Tool Integration
+
+Integrate Tasleemat into LlamaIndex query engines or RAG workflows:
+
+```python
+from llama_index.core.tools import FunctionTool
+import tasleemat
+
+def fetch_pmo_template(artifact_id: str, lang: str = "en") -> str:
+    """Retrieve an authoritative bilingual PMO template by ID."""
+    return tasleemat.get_artifact_asset(artifact_id, role="template", lang=lang)
+
+pmo_tool = FunctionTool.from_defaults(
+    fn=fetch_pmo_template,
+    name="tasleemat_pmo_template",
+    description="Provides access to 114 standardized bilingual PMO deliverable templates."
+)
 ```
 
 ---

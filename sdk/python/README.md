@@ -220,8 +220,42 @@ Tasleemat is natively engineered for **Generative AI workflows**, **Large Langua
 - **In Standard Chat LLMs (Claude & ChatGPT)**:
   - Copy any engineered LLM prompt from `forms/en/` or `forms/ar/` (e.g. `03_01_Project_Charter.md`) and append raw kickoff/meeting notes. The LLM generates a complete, PMI-aligned deliverable with Document Control headers.
   - Upload `forms/` templates and `docs/LEXICON.json` into **Custom GPTs** or **Claude Projects** as persistent institutional knowledge.
-- **In Agentic IDEs (OpenCode, Cursor, Copilot)**:
+- **In Coding Agents & IDEs (Cursor, OpenCode, Windsurf, Cline)**:
+  - Connect via native MCP (`tasleemat-mcp`):
+    - **Cursor:** Add `tasleemat-mcp` in **Settings** $\rightarrow$ **Features** $\rightarrow$ **MCP**
+    - **OpenCode & Cline:** Add `{"mcpServers": {"tasleemat": {"command": "tasleemat-mcp"}}}` to `cline_mcp_settings.json`
+    - **Windsurf:** Add `tasleemat-mcp` to `~/.codeium/windsurf/mcp_config.json`
   - Use `@` context referencing (e.g. `@03_01_Project_Charter_Template.md Fill this project charter for...`) to have AI coding agents generate conforming deliverables directly into your workspace.
+- **In Multi-Agent Frameworks (CrewAI, LangChain, LlamaIndex)**:
+  - **CrewAI Tool:**
+    ```python
+    from crewai.tools import tool
+    import tasleemat
+
+    @tool("PMO Deliverable Retriever")
+    def get_pmo_deliverable(artifact_id: str, role: str = "template", lang: str = "en") -> str:
+        """Fetches standardized PMO deliverable templates and guides (e.g. PMO-03.01)."""
+        return tasleemat.get_artifact_asset(artifact_id, role, lang)
+    ```
+  - **LangChain Tool:**
+    ```python
+    from langchain.tools import BaseTool
+    from pydantic import BaseModel, Field
+    import tasleemat
+
+    class PMOFetchInput(BaseModel):
+        artifact_id: str = Field(description="Unique PMO artifact ID, e.g., 'PMO-03.01'")
+        role: str = Field(default="template", description="Role: 'template', 'guide', 'prompt', 'schema'")
+        lang: str = Field(default="en", description="Language: 'en' or 'ar'")
+
+    class PMOFetchTool(BaseTool):
+        name: str = "pmo_fetch_asset"
+        description: str = "Retrieve standardized PMBOK-compliant PMO templates and guides in English or Arabic."
+        args_schema: type[BaseModel] = PMOFetchInput
+
+        def _run(self, artifact_id: str, role: str = "template", lang: str = "en") -> str:
+            return tasleemat.get_artifact_asset(artifact_id, role=role, lang=lang)
+    ```
 - **Structured Tool Use & Function Calling via OKF**:
   - The root [`datapackage.json`](https://github.com/fakhruldeen/Tasleemat/blob/main/datapackage.json) conforms to the **Open Knowledge Foundation (OKF)** standard. Pass companion JSON schemas into OpenAI Tools or Claude Tool Use parameters to guarantee structured JSON outputs without hallucinated fields.
 - **Self-Correction Feedback Loops**:

@@ -240,22 +240,105 @@ cd Tasleemat
 
 ---
 
-### 2. داخل بيئات البرمجة الذكية (OpenCode و Cursor و Copilot)
+### 2. داخل وكلاء وبيئات البرمجة الذكية (Cursor و OpenCode و Windsurf و Cline)
 
-عند فتح المستودع في **OpenCode** أو **Cursor**:
+تعمل منظومة تسليمات كخادم بروتوكول سياق نموذج (MCP) قياسي (`tasleemat-mcp`) عبر جميع بيئات التطوير المعتمدة على الذكاء الاصطناعي:
+
+#### أ. بيئة Cursor IDE:
+أضف الإعداد في ملف `.cursor/mcp.json` أو عبر **Settings** $\rightarrow$ **Features** $\rightarrow$ **MCP**:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+#### ب. بيئة OpenCode:
+في إعدادات خوادم MCP الخاصة بـ OpenCode:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+#### ج. بيئة Windsurf (Codeium):
+في المسار `~/.codeium/windsurf/mcp_config.json`:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
+
+#### د. إضافة Cline / Roo Code في VS Code:
+في ملف `cline_mcp_settings.json`:
+```json
+{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp"
+    }
+  }
+}
+```
 
 - **الإشارة عبر سياق `@`**:
   - في نافذة المحادثة: `@03_01_Project_Charter_قالب.md املأ ميثاق المشروع لتطبيق بنكي ذكي يدعم المصادقة البيومترية.`
-  - سيقرأ المساعد الذكي الهيكل الدقيق للمستند وينشئ مخرجاً متوافقاً تماماً دون الحاجة لكتابة هيكل الوثيقة يدوياً.
-- **قواعد الوكلاء الذكية (`.cursorrules` / إرشادات المساعد)**:
-  - يمكنك توجيه المساعد بالالتزام التلقائي:
-    ```markdown
-    عند توليد وثائق المشاريع، التزم دائماً بالهيكل المحدد في forms/ar/ و forms/en/ وحافظ على جداول ضبط الوثيقة ورموز التجزئة التدقيقية.
-    ```
+- **قواعد الوكلاء الذكية (`.cursorrules` / `.windsurfrules`)**:
+  ```markdown
+  عند توليد وثائق المشاريع، التزم دائماً بالهيكل المحدد في forms/ar/ و forms/en/ وحافظ على جداول ضبط الوثيقة ورموز التجزئة التدقيقية.
+  ```
 
 ---
 
-### 3. استخدام حزمة بيانات Open Knowledge Foundation (OKF) برمجياً مع النماذج
+### 3. داخل أطر عمل الوكلاء متعددي المهام (CrewAI و LangChain و LlamaIndex)
+
+بفضل توفر مكتبة `tasleemat` الرسمية على PyPI (`pip install tasleemat`)، يمكن لوكلاء الذكاء الاصطناعي استدعاء وظائف الحوكمة مباشرة:
+
+#### أداة مخصصة لـ CrewAI:
+```python
+from crewai.tools import tool
+import tasleemat
+
+@tool("PMO Deliverable Retriever")
+def get_pmo_deliverable(artifact_id: str, role: str = "template", lang: str = "ar") -> str:
+    """استرجاع قوالب وأدلة وثائق إدارة المشاريع الرسمية (مثل PMO-03.01)."""
+    return tasleemat.get_artifact_asset(artifact_id, role, lang)
+```
+
+#### أداة مخصصة لـ LangChain:
+```python
+from langchain.tools import BaseTool
+from pydantic import BaseModel, Field
+import tasleemat
+
+class PMOFetchInput(BaseModel):
+    artifact_id: str = Field(description="معرّف المخرج الحوكمي مثل 'PMO-03.01'")
+    role: str = Field(default="template", description="نوع الأصل: 'template' أو 'guide' أو 'prompt' أو 'schema'")
+    lang: str = Field(default="ar", description="اللغة: 'ar' أو 'en'")
+
+class PMOFetchTool(BaseTool):
+    name: str = "pmo_fetch_asset"
+    description: str = "استرجاع قوالب وأدلة إدارة المشاريع المتوافقة مع معايير PMI وهيئة الحكومة الرقمية."
+    args_schema: type[BaseModel] = PMOFetchInput
+
+    def _run(self, artifact_id: str, role: str = "template", lang: str = "ar") -> str:
+        return tasleemat.get_artifact_asset(artifact_id, role=role, lang=lang)
+```
+
+---
+
+### 4. استخدام حزمة بيانات Open Knowledge Foundation (OKF) برمجياً مع النماذج
 
 تتوافق تسليمات مع معيار **OKF Frictionless Data Package** عبر ملف [`datapackage.json`](datapackage.json) الجذري الذي يفهرس 228 مخطط بيانات JSON:
 
