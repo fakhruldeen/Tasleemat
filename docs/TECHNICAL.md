@@ -104,9 +104,10 @@ Completed-data payload validation is executed through `validate_artifact_data` o
 1. **Zero Mandatory External Dependencies:** Built on a pure-Python validation engine guaranteeing no third-party runtime package requirements.
 2. **Schema Preflighting:** Every subschema, optional branch, and array item schema is statically preflighted before payload evaluation to reject unsupported keywords (`UNSUPPORTED_SCHEMA_ASSERTION`), invalid types (`UNSUPPORTED_TYPE_DECLARATION`), or broken patterns (`INVALID_PATTERN_SYNTAX`).
 3. **Supported Keywords & Contexts:**
-   - **Types:** `object`, `array`, `string`, `integer`, `number`, `boolean`, `null`. Python boolean subclass trap (`isinstance(True, int)`) is strictly guarded.
-   - **Bounds:** `minimum`, `maximum`, `minLength`, `maxLength`, `minItems`, `maxItems`.
-   - **Universal Equality:** `enum` and `const` enforced across all data types.
+   - **Types:** `object`, `array`, `string`, `integer`, `number`, `boolean`, `null`. Python boolean subclass trap (`isinstance(True, int)`) is strictly guarded. Non-finite numbers (`NaN`, `Infinity`, `-Infinity`) are strictly rejected per RFC 8259.
+   - **Bounds:** `minimum`, `maximum`, `minLength`, `maxLength`, `minItems`, `maxItems`. Preflight verifies all numeric bounds are finite numbers.
+   - **Universal Equality:** `enum` and `const` enforced across all data types under strict JSON equality semantics (booleans and numbers never cross-match).
+   - **Dialect Alignment & Preflight Enforcement:** Every schema structure accepted by preflight is guaranteed to be executable by runtime validation. In JSON Schema Draft 2020-12, type unions (`type: ["string", "null"]`) and legacy tuple item lists (`items: [...]`) are rejected during preflight (`UNSUPPORTED_TYPE_DECLARATION`, `UNSUPPORTED_SCHEMA_ASSERTION`) to prevent silent runtime skips.
    - **Format Assertion Policy & Registry:** Format keywords operate under explicit assertion mode managed by the centralized registry (`tasleemat.formats`). Preflight independently verifies format validity before payload traversal (`UNSUPPORTED_FORMAT_ASSERTION`, `MALFORMED_SCHEMA_KEYWORD`). Supported formats include:
      - `date`: RFC 3339 `YYYY-MM-DD` with strict leap year and calendar validity.
      - `date-time`: RFC 3339 timezone-aware timestamps (`Z` or `+/-HH:MM`), fractional seconds, and leap seconds.
@@ -121,8 +122,23 @@ Completed-data payload validation is executed through `validate_artifact_data` o
    - `status="unavailable"`: Deliverable registered in catalog but companion schema not yet published (`SCHEMA_UNAVAILABLE`).
    - `status="invalid_schema"`: Companion schema fails preflight inspection.
    - `status="supported"`: Schema preflighted and executed. Returns `valid=True` or `valid=False` with line-item `errors`.
-5. **Definition Reference Contract:** The `definition_version` argument accepts the installed definition SHA-256 fingerprint, schema `$id`, schema fingerprint, or authoritative release version tag. Unknown tags or schema dialect URIs are rejected (`UNSUPPORTED_VERSION`).
-6. **Immutability Guarantee:** Validation never mutates input dictionaries or catalog cache structures.
+5. **Deterministic Definition Reference Contract:** The `definition_version` parameter strictly accepts:
+   - The installed deliverable definition SHA-256 fingerprint (`defn["fingerprint"]`).
+   - The companion schema SHA-256 fingerprint (`defn["completed_data_validation"]["schema_fingerprint"]`).
+   - The companion schema canonical `$id` URI (documented alias for current installed schema).
+   - The authoritative installed release version tag (e.g. `"2.5.0"`, `"v2.5.0"`).
+   Unmapped older package versions, arbitrary artifact ID suffixes, and dialect URIs (`https://json-schema.org/draft/2020-12/schema`) are strictly rejected (`UNSUPPORTED_VERSION`).
+6. **Traceability Metadata:** `ValidationReport` clearly distinguishes:
+   - `package_version`: Authoritative release version (`tasleemat.__version__`).
+   - `artifact_id`: Canonical PMO identifier.
+   - `schema_version`: Revision/fingerprint of the schema.
+   - `schema_id`: Canonical Draft 2020-12 `$id` URI.
+   - `schema_dialect`: Canonical Draft 2020-12 `$schema` URI.
+   - `schema_fingerprint`: 64-character SHA-256 digest of the companion schema file.
+   - `definition_fingerprint`: 64-character SHA-256 digest of the catalog definition.
+   - `mode`: `"strict"` or `"draft"`.
+   - `status`: Execution capability status.
+7. **Immutability Guarantee:** Validation never mutates input dictionaries or catalog cache structures.
 
 ### Mock Generation Notice
 The built-in offline mock provider (`AIClient(provider="mock")`) emits structural placeholders labeled prominently with:

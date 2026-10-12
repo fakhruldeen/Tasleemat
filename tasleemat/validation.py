@@ -10,6 +10,7 @@ import pathlib
 import re
 import datetime
 import copy
+import math
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -153,21 +154,19 @@ def preflight_schema(schema: Any, path: str = "#") -> List[ValidationError]:
                     )
                 )
         elif isinstance(t, list):
-            for t_item in t:
-                if not isinstance(t_item, str) or t_item not in SUPPORTED_TYPES:
-                    errors.append(
-                        ValidationError(
-                            code="UNSUPPORTED_TYPE_DECLARATION",
-                            message=f"Declared type '{t_item}' in type union at {path} is not supported.",
-                            field_path=path,
-                            schema_rule="type:union",
-                        )
-                    )
+            errors.append(
+                ValidationError(
+                    code="UNSUPPORTED_TYPE_DECLARATION",
+                    message=f"Type union declarations {t} at {path} are not supported by built-in validator.",
+                    field_path=path,
+                    schema_rule="type:union",
+                )
+            )
         else:
             errors.append(
                 ValidationError(
                     code="MALFORMED_SCHEMA_KEYWORD",
-                    message=f"Keyword 'type' at {path} must be a string or list of strings.",
+                    message=f"Keyword 'type' at {path} must be a string.",
                     field_path=path,
                     schema_rule="keyword:type",
                 )
@@ -252,11 +251,16 @@ def preflight_schema(schema: Any, path: str = "#") -> List[ValidationError]:
     for kw_num in ("minimum", "maximum"):
         if kw_num in schema:
             val_num = schema[kw_num]
-            if isinstance(val_num, bool) or not isinstance(val_num, (int, float)):
+            if (
+                isinstance(val_num, bool)
+                or not isinstance(val_num, (int, float))
+                or math.isnan(val_num)
+                or math.isinf(val_num)
+            ):
                 errors.append(
                     ValidationError(
                         code="MALFORMED_SCHEMA_KEYWORD",
-                        message=f"Keyword '{kw_num}' at {path} must be a numeric value.",
+                        message=f"Keyword '{kw_num}' at {path} must be a finite numeric value.",
                         field_path=path,
                         schema_rule=f"keyword:{kw_num}",
                     )
@@ -311,13 +315,19 @@ def preflight_schema(schema: Any, path: str = "#") -> List[ValidationError]:
         if isinstance(items, dict):
             errors.extend(preflight_schema(items, f"{path}/items"))
         elif isinstance(items, list):
-            for idx, item_subschema in enumerate(items):
-                errors.extend(preflight_schema(item_subschema, f"{path}/items/{idx}"))
+            errors.append(
+                ValidationError(
+                    code="UNSUPPORTED_SCHEMA_ASSERTION",
+                    message=f"Tuple item array at {path}/items is not supported in Draft 2020-12; 'items' must be a schema object.",
+                    field_path=f"{path}/items",
+                    schema_rule="keyword:items",
+                )
+            )
         else:
             errors.append(
                 ValidationError(
                     code="MALFORMED_SCHEMA_KEYWORD",
-                    message=f"Keyword 'items' at {path} must be a dictionary or list.",
+                    message=f"Keyword 'items' at {path} must be a dictionary schema object.",
                     field_path=path,
                     schema_rule="keyword:items",
                 )
@@ -338,7 +348,17 @@ def _validate_with_builtin(
         # 1. Evaluate universal assertions: enum and const across all types
         if "const" in rule:
             const_val = rule["const"]
-            if val != const_val:
+            # Strict JSON semantics: boolean is not equal to number (True != 1, False != 0)
+            is_type_match = (
+                type(val) is type(const_val)
+                or (
+                    isinstance(val, (int, float))
+                    and isinstance(const_val, (int, float))
+                    and not isinstance(val, bool)
+                    and not isinstance(const_val, bool)
+                )
+            )
+            if not is_type_match or val != const_val:
                 errors.append(
                     ValidationError(
                         code="CONST_VIOLATION",
@@ -350,7 +370,22 @@ def _validate_with_builtin(
 
         if "enum" in rule:
             enum_vals = rule["enum"]
-            if isinstance(enum_vals, list) and val not in enum_vals:
+            matched = False
+            if isinstance(enum_vals, list):
+                for opt in enum_vals:
+                    if type(val) is type(opt) and val == opt:
+                        matched = True
+                        break
+                    elif (
+                        isinstance(val, (int, float))
+                        and isinstance(opt, (int, float))
+                        and not isinstance(val, bool)
+                        and not isinstance(opt, bool)
+                        and val == opt
+                    ):
+                        matched = True
+                        break
+            if not matched:
                 errors.append(
                     ValidationError(
                         code="ENUM_VIOLATION",
@@ -500,7 +535,13 @@ def _validate_with_builtin(
 
         elif expected_type in ("integer", "number"):
             # Avoid Python bool trap: bool is a subclass of int in Python
-            if isinstance(val, bool) or not isinstance(val, (int, float)) or (expected_type == "integer" and not isinstance(val, int)):
+            # Explicitly reject non-finite numbers (NaN, Infinity) per RFC 8259 JSON spec
+            if (
+                isinstance(val, bool)
+                or not isinstance(val, (int, float))
+                or (isinstance(val, float) and (math.isnan(val) or math.isinf(val)))
+                or (expected_type == "integer" and not isinstance(val, int))
+            ):
                 errors.append(
                     ValidationError(
                         code="TYPE_MISMATCH",
@@ -643,13 +684,15 @@ def validate_artifact_data(
     comp_meta = art_def.get("completed_data_validation", {})
     schema_fingerprint = comp_meta.get("schema_fingerprint", "")
 
+    schema_rev = schema_fingerprint or current_pkg_version
+
     # Step 3: Preflight the schema independently of payload
     preflight_errors = preflight_schema(schema)
     if preflight_errors:
         return ValidationReport(
             valid=False,
             artifact_id=norm_id,
-            schema_version=schema_id,
+            schema_version=schema_rev,
             schema_id=schema_id,
             schema_dialect=schema_dialect,
             schema_fingerprint=schema_fingerprint,
@@ -664,25 +707,24 @@ def validate_artifact_data(
 
     # Step 4: Verify definition reference compatibility if requested
     if definition_version:
-        # Explicit definition reference contract:
+        # Explicit deterministic definition reference contract:
         # Accepts:
         # 1. Exact catalog definition SHA-256 fingerprint
-        # 2. Exact companion schema $id URI
-        # 3. Exact companion schema SHA-256 fingerprint
+        # 2. Exact companion schema SHA-256 fingerprint
+        # 3. Exact companion schema $id URI (documented alias selecting current installed schema)
         # 4. Authoritative installed package version (e.g. "2.5.0", "v2.5.0")
         is_matched = (
             definition_version == real_definition_fingerprint
-            or definition_version == schema_id
             or (schema_fingerprint and definition_version == schema_fingerprint)
+            or definition_version == schema_id
             or definition_version in (current_pkg_version, f"v{current_pkg_version}")
-            or definition_version in {"2.4.2", "v2.4.2", "2.4.1", "v2.4.1", "2.4.0", "v2.4.0", "2.3.1", "v2.3.1"}
         )
         if not is_matched:
             return ValidationReport(
                 valid=False,
                 package_version=current_pkg_version,
                 artifact_id=norm_id,
-                schema_version=schema_id,
+                schema_version=schema_rev,
                 schema_id=schema_id,
                 schema_dialect=schema_dialect,
                 schema_fingerprint=schema_fingerprint,
@@ -696,7 +738,7 @@ def validate_artifact_data(
                         message=(
                             f"Requested definition reference '{definition_version}' does not match "
                             f"installed artifact definition fingerprint '{real_definition_fingerprint}', "
-                            f"schema ID '{schema_id}', or supported package versions."
+                            f"schema fingerprint '{schema_fingerprint}', or schema ID '{schema_id}'."
                         ),
                         field_path="/",
                         schema_rule="definition_compatibility",
@@ -710,7 +752,7 @@ def validate_artifact_data(
         return ValidationReport(
             valid=False,
             artifact_id=norm_id,
-            schema_version=schema_id,
+            schema_version=schema_rev,
             schema_id=schema_id,
             schema_dialect=schema_dialect,
             schema_fingerprint=schema_fingerprint,
@@ -737,7 +779,7 @@ def validate_artifact_data(
     return ValidationReport(
         valid=is_valid,
         artifact_id=norm_id,
-        schema_version=schema_id,
+        schema_version=schema_rev,
         schema_id=schema_id,
         schema_dialect=schema_dialect,
         schema_fingerprint=schema_fingerprint,

@@ -123,16 +123,23 @@ class TestValidationEngineHardening(unittest.TestCase):
     # ==================== TASK B: VERSION CONTRACT ====================
 
     def test_version_compatibility_strict_whitelist(self):
-        """Verify version compatibility strictly accepts valid versions and rejects unknown/dialect URIs."""
-        # Valid supported versions
-        for v in ["2.5.0", "v2.5.0", "2.4.2", "v2.4.2", "2.4.1", "2.4.0"]:
+        """Verify version compatibility strictly accepts valid references and rejects unmapped/dialect URIs."""
+        defn = get_artifact_definition("PMO-03.01")
+        real_fp = defn["fingerprint"]
+        schema_fp = defn["completed_data_validation"]["schema_fingerprint"]
+        schema_id = defn["completed_data_validation"]["schema_id"]
+
+        # Valid supported references
+        for v in ["2.5.0", "v2.5.0", real_fp, schema_fp, schema_id]:
             rep = validate_artifact_data("PMO-03.01", self.charter_base, definition_version=v)
             self.assertTrue(rep.valid, f"Expected {v} to be supported")
 
-        # Invalid arbitrary strings or dialect URIs must be rejected
+        # Invalid arbitrary strings, older unmapped versions, or dialect URIs must be rejected
         for bad_v in [
             "https://json-schema.org/draft/2020-12/schema",
             "custom_PMO-03.01",
+            "2.4.2",
+            "2.4.0",
             "3.0.0",
             "invalid_version",
         ]:
@@ -793,6 +800,92 @@ class TestValidationEngineHardening(unittest.TestCase):
         self.assertEqual(rep_bad_payload.status, "supported")
         self.assertTrue(rep_bad_payload.is_available)
         self.assertEqual(rep_bad_payload.errors[0].code, "INVALID_PAYLOAD")
+
+    def test_preflight_rejects_type_union_and_tuple_items(self):
+        """Verify preflight rejects type unions and tuple item lists instead of silently skipping them."""
+        # Type union
+        schema_union = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "type": "object",
+            "properties": {
+                "field": {"type": ["string", "null"]}
+            }
+        }
+        errs_union = preflight_schema(schema_union)
+        self.assertTrue(any(e.code == "UNSUPPORTED_TYPE_DECLARATION" for e in errs_union))
+
+        # Tuple item array
+        schema_tuple = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "type": "object",
+            "properties": {
+                "coords": {"type": "array", "items": [{"type": "number"}, {"type": "number"}]}
+            }
+        }
+        errs_tuple = preflight_schema(schema_tuple)
+        self.assertTrue(any(e.code == "UNSUPPORTED_SCHEMA_ASSERTION" for e in errs_tuple))
+
+        # Non-finite schema bounds
+        import math
+        schema_nan = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "type": "object",
+            "properties": {
+                "score": {"type": "number", "minimum": float("nan")}
+            }
+        }
+        errs_nan = preflight_schema(schema_nan)
+        self.assertTrue(any(e.code == "MALFORMED_SCHEMA_KEYWORD" for e in errs_nan))
+
+    def test_strict_json_equality_for_boolean_vs_number(self):
+        """Verify Python True/False does not match JSON numbers in const and enum assertions."""
+        from tasleemat.validation import _validate_with_builtin
+
+        # Const assertion: number 1 vs boolean True
+        schema_const_num = {"type": "object", "properties": {"val": {"const": 1}}}
+        errs_c1, _ = _validate_with_builtin({"val": True}, schema_const_num, "strict")
+        self.assertEqual(len(errs_c1), 1)
+        self.assertEqual(errs_c1[0].code, "CONST_VIOLATION")
+
+        # Const assertion: boolean True vs number 1
+        schema_const_bool = {"type": "object", "properties": {"val": {"const": True}}}
+        errs_c2, _ = _validate_with_builtin({"val": 1}, schema_const_bool, "strict")
+        self.assertEqual(len(errs_c2), 1)
+        self.assertEqual(errs_c2[0].code, "CONST_VIOLATION")
+
+        # Enum assertion: boolean True vs number in enum [1, 2, 3]
+        schema_enum_num = {"type": "object", "properties": {"val": {"enum": [1, 2, 3]}}}
+        errs_e1, _ = _validate_with_builtin({"val": True}, schema_enum_num, "strict")
+        self.assertEqual(len(errs_e1), 1)
+        self.assertEqual(errs_e1[0].code, "ENUM_VIOLATION")
+
+        # Enum assertion: number 1 vs boolean in enum [True, "other"]
+        schema_enum_bool = {"type": "object", "properties": {"val": {"enum": [True, "other"]}}}
+        errs_e2, _ = _validate_with_builtin({"val": 1}, schema_enum_bool, "strict")
+        self.assertEqual(len(errs_e2), 1)
+        self.assertEqual(errs_e2[0].code, "ENUM_VIOLATION")
+
+    def test_rejection_of_nan_and_infinity_in_payload(self):
+        """Verify non-finite float values (NaN, Infinity) in payloads are rejected."""
+        import math
+        from tasleemat.validation import _validate_with_builtin
+
+        schema = {"type": "object", "properties": {"rate": {"type": "number"}, "count": {"type": "integer"}}}
+
+        # NaN
+        errs_nan, _ = _validate_with_builtin({"rate": float("nan")}, schema, "strict")
+        self.assertEqual(len(errs_nan), 1)
+        self.assertEqual(errs_nan[0].code, "TYPE_MISMATCH")
+
+        # +Infinity
+        errs_inf, _ = _validate_with_builtin({"rate": float("inf")}, schema, "strict")
+        self.assertEqual(len(errs_inf), 1)
+        self.assertEqual(errs_inf[0].code, "TYPE_MISMATCH")
+
+        # -Infinity on integer
+        errs_ninf, _ = _validate_with_builtin({"count": float("-inf")}, schema, "strict")
+        self.assertEqual(len(errs_ninf), 1)
+        self.assertEqual(errs_ninf[0].code, "TYPE_MISMATCH")
 
 
 if __name__ == "__main__":
