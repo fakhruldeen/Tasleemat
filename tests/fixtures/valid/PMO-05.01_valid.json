@@ -1,0 +1,35 @@
+{
+  "artifact_id": "PMO-05.01",
+  "metadata": {
+    "project_name": "Core Financial Switch Migration",
+    "project_code": "FIN-SWITCH-2026",
+    "date_prepared": "2026-08-15",
+    "log_owner": "Hassan Al-Majid, Service Delivery Lead",
+    "version": "1.0",
+    "status": "active"
+  },
+  "issues": [
+    {
+      "issue_id": "ISS-101",
+      "type": "Technical",
+      "source": "Payment Gateway Adapter Sandbox",
+      "description": "ISO 20022 message parser rejects test transactions with non-standard BIC routing tags.",
+      "priority": "Critical",
+      "impact_on_objectives": "Blocks Gate 03 sandbox certification and end-to-end clearing dry run.",
+      "responsible_party": "Integration Team Lead",
+      "status": "In Progress",
+      "target_resolution_date": "2026-08-25"
+    },
+    {
+      "issue_id": "ISS-102",
+      "type": "Resource",
+      "source": "Security Operations Staffing",
+      "description": "Shortage of certified HSM security engineers for staging environment certificate installation.",
+      "priority": "High",
+      "impact_on_objectives": "3-day delay in staging cluster key rotation verification.",
+      "responsible_party": "Cybersecurity Lead",
+      "status": "Open",
+      "target_resolution_date": "2026-08-22"
+    }
+  ]
+}

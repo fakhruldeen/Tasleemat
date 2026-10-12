@@ -1,0 +1,42 @@
+{
+  "artifact_id": "PMO-04.10.01",
+  "metadata": {
+    "project_name": "Healthcare Telemedicine Network",
+    "project_code": "TELE-2026-MED",
+    "date_prepared": "2026-07-01",
+    "prepared_by": "Dr. Layla Al-Harbi",
+    "project_manager": "Omar Farooq, PMP",
+    "version": "1.0",
+    "status": "baselined"
+  },
+  "stakeholder_matrix": [
+    {
+      "stakeholder_name": "Ministry Health Informatics Committee",
+      "role_or_title": "Regulatory Compliance Authority",
+      "current_engagement": "Neutral",
+      "desired_engagement": "Supportive",
+      "gap_analysis": "Current state is passive review of compliance filings; desired state is proactive collaboration on telemedicine data privacy rules."
+    },
+    {
+      "stakeholder_name": "Regional Hospital Chief Medical Officers",
+      "role_or_title": "Clinical Operational Leaders",
+      "current_engagement": "Resistant",
+      "desired_engagement": "Supportive",
+      "gap_analysis": "Initial skepticism regarding electronic medical record sync latency; desired state is active clinical endorsement and participation in pilot trials."
+    }
+  ],
+  "engagement_strategies": [
+    {
+      "target_stakeholder": "Ministry Health Informatics Committee",
+      "key_expectations_and_concerns": "Strict alignment with patient data sovereignty and ISO 27799 healthcare security guidelines.",
+      "tailored_action_protocol": "Bi-weekly executive briefings with joint audit log inspectability demos.",
+      "feedback_cadence": "Bi-weekly"
+    },
+    {
+      "target_stakeholder": "Regional Hospital Chief Medical Officers",
+      "key_expectations_and_concerns": "Physician workflow disruption and UI complexity.",
+      "tailored_action_protocol": "Dedicated hands-on simulation clinics with physician advisory feedback council.",
+      "feedback_cadence": "Weekly"
+    }
+  ]
+}

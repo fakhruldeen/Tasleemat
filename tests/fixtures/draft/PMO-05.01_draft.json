@@ -1,0 +1,12 @@
+{
+  "artifact_id": "PMO-05.01",
+  "metadata": {
+    "project_name": "Core Financial Switch Migration",
+    "project_code": "FIN-SWITCH-2026",
+    "date_prepared": "2026-08-15",
+    "log_owner": "Hassan Al-Majid, Service Delivery Lead",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "issues": []
+}

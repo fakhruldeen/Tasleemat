@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-04.03.01",
+  "metadata": {
+    "project_name": "Smart Highway Toll Infrastructure",
+    "project_code": "TOLL-2026-HWY",
+    "date_prepared": "2026-06-01",
+    "schedule_manager": "David Chen, PMI-SP",
+    "project_manager": "Nouf Al-Sudairi, PMP",
+    "version": "1.0",
+    "status": "baselined"
+  },
+  "methodology_and_tools": {
+    "scheduling_methodology": "Critical Path Method (CPM)",
+    "scheduling_software": "Primavera P6 Enterprise Project Portfolio Management",
+    "units_of_measure": "Work Days (8-Hour Shifts)",
+    "estimating_accuracy_range": "+/- 10% Definitive Estimate"
+  },
+  "cadence_and_rules": {
+    "rolling_wave_approach": "Near-term activities within 90 days decomposed to daily level; future phases planned at milestone package level.",
+    "timeboxing_rules": "Sprint integration cadence fixed to 2-week timeboxes with strict gate criteria for gantry deployment."
+  },
+  "performance_and_variance": {
+    "evm_measurement_technique": "Physical percent complete based on sensor installation inspection milestones.",
+    "variance_threshold_days": 10,
+    "update_cadence": "Weekly baseline status update with bi-weekly critical path recalculation."
+  }
+}

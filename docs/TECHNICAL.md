@@ -98,8 +98,11 @@ In addition to the 114 template schema definitions, Tasleemat provides additive 
 - `PMO-03.01` (Project Charter — Project Authorization)
 - `PMO-04.01.01` (Project Management Plan — Master Integration Plan)
 - `PMO-04.02.05` (Project Scope Statement — Scope Definition & Acceptance)
+- `PMO-04.03.01` (Schedule Management Plan — CPM, Cadence & Thresholds)
 - `PMO-04.04.01` (Cost Management Plan — Budget, EVM & Thresholds)
 - `PMO-04.08.02` (Risk Register — Risk Assessment & Response Strategy)
+- `PMO-04.10.01` (Stakeholder Engagement Plan — Matrix & Engagement Actions)
+- `PMO-05.01` (Issue Log — Operational Impediments & Corrective Resolutions)
 - `PMO-06.01` (Project Status Report — Operational Monitoring)
 - `PMO-07.03` (Project or Phase Closeout — Archival & Benefits Handover)
 

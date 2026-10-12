@@ -1,0 +1,17 @@
+{
+  "artifact_id": "PMO-05.01",
+  "metadata": {
+    "project_name": "Core Financial Switch Migration",
+    "status": "unrecognized_status"
+  },
+  "issues": [
+    {
+      "issue_id": "NOT-AN-ISS-ID",
+      "type": "InvalidTypeEnum",
+      "description": "Short",
+      "priority": "ExtremePriority",
+      "responsible_party": "",
+      "status": "InvalidStatus"
+    }
+  ]
+}

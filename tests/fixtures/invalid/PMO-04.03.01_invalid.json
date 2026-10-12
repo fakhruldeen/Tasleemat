@@ -1,0 +1,22 @@
+{
+  "artifact_id": "PMO-04.03.01",
+  "metadata": {
+    "project_name": "Smart Highway Toll Infrastructure",
+    "schedule_manager": "David Chen",
+    "status": "not_an_allowed_status"
+  },
+  "methodology_and_tools": {
+    "scheduling_methodology": "AdHocGuesswork",
+    "scheduling_software": "P",
+    "units_of_measure": "D"
+  },
+  "cadence_and_rules": {
+    "rolling_wave_approach": "Short",
+    "timeboxing_rules": "None"
+  },
+  "performance_and_variance": {
+    "evm_measurement_technique": "None",
+    "variance_threshold_days": -5,
+    "update_cadence": "None"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.01.schema.json",
+  "title": "Completed Schedule Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Schedule Management Plan artifact data payloads (PMO-04.03.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "schedule_manager": { "type": "string", "minLength": 1 },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "schedule_manager", "project_manager"]
+    },
+    "methodology_and_tools": {
+      "type": "object",
+      "properties": {
+        "scheduling_methodology": {
+          "type": "string",
+          "enum": ["Critical Path Method (CPM)", "Agile Sprint Cadence", "Critical Chain (CCM)", "Hybrid Iterative"]
+        },
+        "scheduling_software": { "type": "string", "minLength": 2 },
+        "units_of_measure": { "type": "string", "minLength": 2 },
+        "estimating_accuracy_range": { "type": "string", "minLength": 2 }
+      },
+      "required": ["scheduling_methodology", "scheduling_software", "units_of_measure"]
+    },
+    "cadence_and_rules": {
+      "type": "object",
+      "properties": {
+        "rolling_wave_approach": { "type": "string", "minLength": 10 },
+        "timeboxing_rules": { "type": "string", "minLength": 10 }
+      },
+      "required": ["rolling_wave_approach", "timeboxing_rules"]
+    },
+    "performance_and_variance": {
+      "type": "object",
+      "properties": {
+        "evm_measurement_technique": { "type": "string", "minLength": 5 },
+        "variance_threshold_days": { "type": "integer", "minimum": 0 },
+        "update_cadence": { "type": "string", "minLength": 5 }
+      },
+      "required": ["evm_measurement_technique", "variance_threshold_days", "update_cadence"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "methodology_and_tools",
+    "cadence_and_rules",
+    "performance_and_variance"
+  ]
+}

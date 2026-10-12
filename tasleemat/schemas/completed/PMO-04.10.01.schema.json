@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.10.01.schema.json",
+  "title": "Completed Stakeholder Engagement Plan Data Contract",
+  "description": "Additive structural schema validating completed Stakeholder Engagement Plan artifact data payloads (PMO-04.10.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.10.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "prepared_by", "project_manager"]
+    },
+    "stakeholder_matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stakeholder_name": { "type": "string", "minLength": 1 },
+          "role_or_title": { "type": "string", "minLength": 1 },
+          "current_engagement": {
+            "type": "string",
+            "enum": ["Unaware", "Resistant", "Neutral", "Supportive", "Leading"]
+          },
+          "desired_engagement": {
+            "type": "string",
+            "enum": ["Unaware", "Resistant", "Neutral", "Supportive", "Leading"]
+          },
+          "gap_analysis": { "type": "string", "minLength": 5 }
+        },
+        "required": [
+          "stakeholder_name",
+          "role_or_title",
+          "current_engagement",
+          "desired_engagement",
+          "gap_analysis"
+        ]
+      },
+      "minItems": 1
+    },
+    "engagement_strategies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target_stakeholder": { "type": "string", "minLength": 1 },
+          "key_expectations_and_concerns": { "type": "string", "minLength": 5 },
+          "tailored_action_protocol": { "type": "string", "minLength": 10 },
+          "feedback_cadence": { "type": "string", "minLength": 3 }
+        },
+        "required": [
+          "target_stakeholder",
+          "key_expectations_and_concerns",
+          "tailored_action_protocol",
+          "feedback_cadence"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "stakeholder_matrix",
+    "engagement_strategies"
+  ]
+}

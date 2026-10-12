@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.01.schema.json",
+  "title": "Completed Issue Log Data Contract",
+  "description": "Additive structural schema validating completed Issue Log artifact data payloads (PMO-05.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "log_owner": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "active", "archived"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "log_owner"]
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string",
+            "pattern": "^ISS-\\d+$"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["Technical", "Resource", "Schedule", "Cost", "Scope", "Vendor", "Governance"]
+          },
+          "source": { "type": "string", "minLength": 3 },
+          "description": { "type": "string", "minLength": 10 },
+          "priority": {
+            "type": "string",
+            "enum": ["Critical", "High", "Medium", "Low"]
+          },
+          "impact_on_objectives": { "type": "string", "minLength": 5 },
+          "responsible_party": { "type": "string", "minLength": 1 },
+          "status": {
+            "type": "string",
+            "enum": ["Open", "In Progress", "Escalated", "Resolved", "Closed"]
+          },
+          "target_resolution_date": { "type": "string", "format": "date" }
+        },
+        "required": [
+          "issue_id",
+          "type",
+          "description",
+          "priority",
+          "responsible_party",
+          "status"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "issues"
+  ]
+}
