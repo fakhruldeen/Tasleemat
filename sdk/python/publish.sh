@@ -15,17 +15,24 @@ echo "2. Click 'Add API token'"
 echo "3. Copy the token (it starts with pypi-)"
 echo "-----------------------------------------"
 
-read -p "Enter your PyPI API token (or press Ctrl+C to abort): " PYPI_TOKEN
+if [ -z "$PYPI_TOKEN" ]; then
+    read -p "Enter your PyPI API token (or press Ctrl+C to abort): " PYPI_TOKEN
+fi
 
 if [ -z "$PYPI_TOKEN" ]; then
     echo "Token cannot be empty. Aborting."
     exit 1
 fi
 
-echo "Installing twine..."
-../../.venv/bin/python -m pip install --upgrade twine
+TWINE_BIN="twine"
+if ! command -v twine &> /dev/null; then
+    TWINE_BIN="python3 -m twine"
+fi
 
-echo "Uploading to PyPI..."
-TWINE_USERNAME="__token__" TWINE_PASSWORD="$PYPI_TOKEN" ../../.venv/bin/python -m twine upload dist/*
+echo "Verifying package metadata..."
+$TWINE_BIN check dist/*2.4.1*
 
-echo "✅ Successfully published to PyPI!"
+echo "Uploading v2.4.1 to PyPI..."
+TWINE_USERNAME="__token__" TWINE_PASSWORD="$PYPI_TOKEN" $TWINE_BIN upload dist/*2.4.1* --skip-existing
+
+echo "✅ Successfully published Tasleemat v2.4.1 to PyPI!"
