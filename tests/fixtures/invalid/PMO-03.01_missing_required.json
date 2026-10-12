@@ -1,0 +1,14 @@
+{
+  "artifact_id": "PMO-03.01",
+  "metadata": {
+    "project_name": "Incomplete Project",
+    "project_code": "PRJ-BAD-01",
+    "date_prepared": "2026-03-15",
+    "prepared_by": "Test Author",
+    "sponsor": "Test Sponsor"
+  },
+  "fields": {
+    "project_purpose": "Too short",
+    "key_deliverables": []
+  }
+}

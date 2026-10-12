@@ -12,11 +12,11 @@ type: Overview
 
 # 🚀 Tasleemat (تسليمات)
 ### *The Production-Grade, Bilingual PMO Artifact & AI Toolkit*
-**114 Standardized Deliverables • 228 English & Arabic Bundles • 6 Stage-Gates • 4 Sizing Tiers**  
+**114 Standardized Deliverables • 228 English & Arabic Bundles • 6 Stage-Gates • 3 Governance Tiers**  
 *Fully Aligned with PMI PMBOK® (6th, 7th & 8th Edition Ready), ISO 21500 / 21502 & NIST AI RMF*
 
 <p align="center">
-  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.3.1-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
+  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.4.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
   <a href="https://fakhr.me/Tasleemat/"><img src="https://img.shields.io/badge/🌐_Interactive_Portal-Live_Demo-006a61?style=for-the-badge" alt="Live Portal"></a>
   <a href="https://fakhr.me/Tasleemat/catalog/en/index.html"><img src="https://img.shields.io/badge/📋_114_Deliverables-Catalog_Explorer-059669?style=for-the-badge" alt="Catalog"></a>
   <a href="README_AR.md"><img src="https://img.shields.io/badge/🇸🇦_النسخة_العربية-Bilingual_RTL-1d4ed8?style=for-the-badge" alt="Arabic Version"></a>
@@ -72,7 +72,7 @@ Most Project Management Offices (PMOs) and Project Managers waste hundreds of ho
 
 ### 🏛️ For PMO Directors & Executives
 **Institutionalize standards across the enterprise**
-- ⚖️ **[Tailoring Matrix (Tiers 1–4)](docs/en/05_tailoring_profiles.md)**: Size governance to project risk
+- ⚖️ **[Tailoring Matrix (Tiers 1–3)](docs/en/05_tailoring_profiles.md)**: Size governance to project risk
 - 💎 **[Benefits Management Plan](forms/en/01_Business_and_Value_Delivery/02_Benefits_Management_Plan/01_02_Benefits_Management_Plan_Template.md)**: Strategic value tracking
 - 🛡️ **[Stage-Gate Governance Policy](docs/en/04_stage_gates_and_governance.md)**: 3-decision gating control
 - 📚 **[PMO Terminology Lexicon](docs/LEXICON.md)**: 164+ standardized bilingual definitions
@@ -153,10 +153,11 @@ Avoid governance paralysis by matching the paperwork to the actual risk and scal
 
 | Sizing Tier | Profile Description | Typical Scale | Artifact Count | Core Deliverables Included |
 | :--- | :--- | :--- | :---: | :--- |
-| **Tier 1: Micro** | Fast-paced, low-complexity projects | < \$50K • < 3 months | **5 Artifacts** | Project Charter, Schedule, Action Log, Monthly Status, Closeout Handover |
-| **Tier 2: Standard** | Departmental initiatives, medium risk | \$50K–\$500K • 3–9 months | **18 Artifacts** | Full Baselines (Scope, Schedule, Budget), Risk Register, RACI, Change Management |
-| **Tier 3: Enterprise** | Strategic transformations, multi-vendor | > \$500K • > 9 months | **45+ Artifacts** | All 6 Stage-Gates, Audit Dossiers, Procurement Pack, ESG & Security Baselines |
-| **Tier 4: Agile / AI** | Iterative software & AI model pipelines | Sprint-based / ML lifecycle | **25 Artifacts** | Product Vision, Sprint Backlogs, Flow Metrics, NIST AI Model Cards, Retrospectives |
+| **Tier 1: Enterprise / Mega** | Strategic transformations, multi-vendor | > \$10M • Critical | **45+ Artifacts** | All 6 Stage-Gates, Audit Dossiers, Procurement Pack, ESG & Security Baselines |
+| **Tier 2: Standard** | Departmental initiatives, medium risk | \$1M–\$10M • 3–9 months | **18–25 Artifacts** | Full Baselines (Scope, Schedule, Budget), Risk Register, RACI, Change Management |
+| **Tier 3: Lean / Fast-Track** | Fast-paced, low-complexity projects | < \$1M • < 3 months | **7–9 Artifacts** | Project Charter, Schedule, Action Log, Monthly Status, Closeout Handover |
+
+> 💡 **Methodology Packs**: Methodology packs (*General*, *Agile*, *AI Governance*, *Predictive*, *Hybrid*) apply orthogonally across all tiers.
 
 ---
 
@@ -167,21 +168,43 @@ Visit the interactive portal to search, preview, and copy templates with one cli
 - 🌐 **[https://fakhr.me/Tasleemat/](https://fakhr.me/Tasleemat/)**
 - 📋 **[114 Templates Explorer](https://fakhr.me/Tasleemat/catalog/en/index.html)**
 
-### Option 2: Clone & Use Native Markdown Directly in GitHub
+### Option 2: Programmatic Python Library (`import tasleemat`)
+Install directly from PyPI to access templates, data schemas, validation, and rendering in Python:
+```bash
+pip install tasleemat
+```
+```python
+import tasleemat
+
+# 1. Discover registered deliverables (114 artifacts)
+charter = tasleemat.get_artifact_definition("PMO-03.01")
+
+# 2. Retrieve bilingual templates or guides directly
+en_template = tasleemat.get_artifact_asset("PMO-03.01", role="template", lang="en")
+ar_template = tasleemat.get_artifact_asset("PMO-03.01", role="template", lang="ar")
+
+# 3. Validate structured data against JSON schemas
+report = tasleemat.validate_artifact_data("PMO-03.01", {"project_name": "Cloud Platform"}, mode="draft")
+print(f"Valid: {report.valid}, Warnings: {len(report.warnings)}")
+
+# 4. Render offline to publication-ready styled HTML
+tasleemat.render_artifact("PMO-03.01", lang="en", out_path="./charter.html")
+```
+
+### Option 3: Automate via CLI Scaffolder
+Scaffold an entire project governance directory with customized templates:
+```bash
+# Interactive wizard or fast-track command
+tasleemat init --tier 2 --pack agile --lang ar --out ./My_Project
+```
+
+### Option 4: Clone & Use Native Markdown Directly in GitHub
 All deliverables are plain, clean Markdown files. You can clone the repo and use them directly in VS Code, Obsidian, Notion, or Confluence:
 ```bash
 git clone https://github.com/fakhruldeen/Tasleemat.git
 cd Tasleemat
 # Browse English templates: forms/en/
 # Browse Arabic templates: forms/ar/
-```
-
-### Option 3: Automate via CLI Scaffolder
-Scaffold an entire project governance directory with customized templates:
-```bash
-# Clone and use CLI tool
-python3 -m cli.tasleemat_cli scaffold FORM-03-01 --lang both
-python3 -m cli.tasleemat_cli list --phase 04
 ```
 
 ---

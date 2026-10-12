@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-03.01.schema.json",
+  "title": "Completed Project Charter Data Contract",
+  "description": "Additive structural schema validating completed project charter artifact data payloads (PMO-03.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-03.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string", "pattern": "^[A-Z0-9_-]+$" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "sponsor": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "in_review", "approved", "rejected"]
+        }
+      },
+      "required": ["project_name", "project_code", "date_prepared", "prepared_by", "sponsor"]
+    },
+    "fields": {
+      "type": "object",
+      "properties": {
+        "project_purpose": { "type": "string", "minLength": 10 },
+        "high_level_project_description": { "type": "string", "minLength": 10 },
+        "project_boundaries": { "type": "string" },
+        "key_deliverables": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "high_level_requirements": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "high_level_assumptions_and_constraints": { "type": "string" },
+        "overall_project_risk": { "type": "string" },
+        "project_objectives_and_related_success_criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "objective": { "type": "string" },
+              "success_criteria": { "type": "string" }
+            },
+            "required": ["objective", "success_criteria"]
+          }
+        },
+        "summary_milestone_schedule": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "milestone": { "type": "string" },
+              "target_date": { "type": "string" }
+            },
+            "required": ["milestone", "target_date"]
+          }
+        },
+        "preapproved_financial_resources": { "type": "string" },
+        "key_stakeholder_list": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": { "type": "string" },
+              "name": { "type": "string" },
+              "organization": { "type": "string" }
+            },
+            "required": ["role", "name"]
+          }
+        },
+        "project_exit_criteria": { "type": "string" },
+        "project_approval_requirements": { "type": "string" },
+        "project_manager_authority_level": { "type": "string" },
+        "name_and_authority_of_the_sponsor": { "type": "string" }
+      },
+      "required": [
+        "project_purpose",
+        "high_level_project_description",
+        "key_deliverables",
+        "project_objectives_and_related_success_criteria",
+        "summary_milestone_schedule"
+      ]
+    }
+  },
+  "required": ["artifact_id", "metadata", "fields"]
+}

@@ -70,7 +70,7 @@ class AIClient:
             raise ValueError(f"Unsupported LLM provider '{self.provider}'. Supported: gemini, openai, anthropic, ollama, mock.")
 
     def _generate_mock(self, prompt):
-        return f"<!-- MOCK AI GENERATION -->\n# AI Generated Deliverable\n\nGenerated from prompt summary: {prompt[:120]}...\n\n- Status: Completed\n- Compliance: Verified\n- Generated via: Tasleemat AI Mock Engine"
+        return f"<!-- MOCK AI GENERATION -->\n# AI Generated Deliverable\n\nGenerated from prompt summary: {prompt[:120]}...\n\n- Status: Completed\n- Mock Output: Structural placeholder only (no verification performed)\n- Generated via: Tasleemat AI Mock Engine"
 
     def _generate_gemini(self, prompt, system_instruction=None):
         if not self.api_key:

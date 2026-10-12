@@ -1,0 +1,20 @@
+{
+  "artifact_id": "PMO-04.08.02",
+  "metadata": {
+    "project_name": "Invalid Risk Project",
+    "project_code": "PRJ-ERR-02",
+    "last_updated": "2026-03-20"
+  },
+  "risks": [
+    {
+      "risk_id": "INVALID-ID",
+      "category": "InvalidCategory",
+      "event_narrative": "Bad",
+      "probability_score": 10,
+      "impact_score": "high",
+      "response_strategy": "Ignore",
+      "owner": "",
+      "status": "Unknown"
+    }
+  ]
+}

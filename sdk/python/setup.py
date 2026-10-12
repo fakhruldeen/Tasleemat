@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tasleemat",
-    version="2.3.1",
+    version="2.4.0",
     description="Enterprise Bilingual (English & Arabic) Project Management & AI Automation Library",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
@@ -12,7 +12,9 @@ setup(
         "tasleemat": [
             "forms/**/*", 
             "docs/**/*", 
-            "_tokens/**/*"
+            "_tokens/**/*",
+            "data/**/*",
+            "schemas/**/*"
         ]
     },
     entry_points={

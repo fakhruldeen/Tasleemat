@@ -1,178 +1,202 @@
-# 🚀 Tasleemat (تسليمات) — Enterprise Bilingual PMO Toolkit & AI Automation Library
+# 🚀 Tasleemat (تسليمات) — Enterprise Bilingual PMO Operating System & Python SDK
 
 [![PyPI version](https://badge.fury.io/py/tasleemat.svg)](https://pypi.org/project/tasleemat/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
+[![Python Versions](https://img.shields.io/pypi/pyversions/tasleemat.svg)](https://pypi.org/project/tasleemat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://github.com/fakhruldeen/Tasleemat)
-[![Templates](https://img.shields.io/badge/Templates-114%20Bilingual%20Pairs%20(228%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat/tree/main/forms)
+[![Deliverables](https://img.shields.io/badge/Deliverables-114%20Bilingual%20Pairs%20(228%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat)
+[![Data Package](https://img.shields.io/badge/Data%20Package-OKF%20Frictionless-orange)](https://github.com/fakhruldeen/Tasleemat/blob/main/datapackage.json)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
 
-**Tasleemat (تسليمات)** is a production-grade, open-source Project Management Office (PMO) operating system and Python library designed for **Project Managers, PMO Directors, Business Leaders, Data Engineers, and AI Engineers**.
+**Tasleemat (تسليمات)** is a production-grade, open-source Project Management Office (PMO) operating system and programmatic Python library designed for **Project Managers, PMO Directors, Business Leaders, Data Engineers, and AI Agents**.
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
----
-
-## 🌟 Core Highlights
-
-- **📚 114 Full-Lifecycle Artifacts (228 Form Bundles):** Complete 1-to-1 English and Arabic coverage across 8 lifecycle phases and 12 planning domains.
-- **⚡ PMI PMBOK® Guide Aligned (6th, 7th & 8th Edition Ready):** Fully compliant with PMI standards, ISO 21500/21502 governance, Agile/Lean practice guides, ESG sustainability tracking, and NIST AI RMF.
-- **🤖 Built-in AI Generation Engine (`tasleemat.ai`):** Instantly auto-fill publication-ready project documents using Google Gemini, OpenAI GPT-4, Anthropic Claude, or local Ollama LLMs.
-- **📂 5-File Synchronized Artifact Bundles:** Every deliverable includes a printable Markdown template, practitioner writing guide, LLM prompt instruction, machine-readable JSON schema, and tabular CSV dictionary.
-- **🚀 Global CLI Project Scaffolder (`tasleemat`):** Interactively or programmatically scaffold complete project workspaces tailored to your project size (Enterprise, Standard, Lean, Agile/AI).
-- **🇸🇦 100% Arabic (RTL) Parity:** Native Arabic translations mapped directly to official PMI Lexicon terms.
+With **Version 2.4.0**, Tasleemat delivers a **complete programmatic Python API**, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
 
 ---
 
-## 💻 CLI Installation & Complete Usage Reference
+## 🌟 What's New in v2.4.0
 
-Install the official package globally via `pip`:
+- 🧩 **First-Class Programmatic Python API:** Access all 114 artifact definitions, bundles, templates, guides, prompts, and schemas directly via `import tasleemat`.
+- 🔍 **Structural Data Validation Engine:** Validate artifact data payloads against formal Draft 2020-12 companion JSON schemas with field-level error reporting (`validate_artifact_data`).
+- 📝 **Strict & Draft Validation Modes:** Support production sign-offs with strict validation while enabling in-progress agent workflows with non-blocking draft warnings.
+- 🎨 **Standalone Document Rendering:** Render artifacts to styled, print-ready HTML with zero external services and strict immutability protection for source templates (`render_artifact`).
+- 🤖 **Agent Orchestrator Integration (Maharat Ready):** Machine-readable catalog, stable artifact IDs (`PMO-XX.YY`), cryptographic SHA-256 content fingerprints, and standardized bilingual terminology getters (`get_lexicon`).
+- 🔒 **Absolute Immutability & Traceability:** Guaranteed immutability of the source `forms/` catalog with runtime guards against unintended overwrites.
+
+---
+
+## 💻 Installation
+
+Install the official package from PyPI:
 
 ```bash
 pip install tasleemat
 ```
 
-### 1. Help & Parameter Reference (`--help` / `-h` / `help`)
-View detailed documentation for all CLI commands, arguments, choices, and practical examples:
+Verify your installation:
 
 ```bash
-# Complete CLI manual for all commands & arguments
 tasleemat --help
-tasleemat -h
-tasleemat help
-
-# Specific subcommand help
-tasleemat help init
-tasleemat generate --help
 ```
-
-### 2. Project Workspace Scaffolding (`tasleemat init`)
-Scaffold a complete project workspace with pre-populated bilingual templates matching your project tier:
-
-```bash
-# Interactive scaffolding wizard
-tasleemat init
-
-# Fast-track command with flags (Tier 2, Agile Pack, Arabic templates)
-tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01" --out ./My_Project
-```
-
-#### Supported Scaffolding Tiers:
-- **Tier 1 (Enterprise):** 52+ full governance baselines for complex corporate programs.
-- **Tier 2 (Standard Core):** 14+ essential baselines for medium-sized projects.
-- **Tier 3 (Lean / Fast-Track):** 6 core deliverables for quick execution.
-
-#### Supported Methodology Packs:
-- `general`: Standard PMBOK alignment.
-- `agile`: Scrum, Kanban, Sprint Planning & Retrospectives.
-- `ai`: AI Governance, Ethics, Model Cards & Readiness Assessments.
-- `predictive`: Waterfall & Earned Value Management (EVM).
-- `hybrid`: Blended Agile/Predictive controls.
 
 ---
 
-### 3. Catalog Search & Listing (`tasleemat search` / `tasleemat list`)
-Browse and search forms by keyword or PMO form code:
+## 🚀 Python SDK Quickstart
+
+### 1. Catalog Discovery & Metadata Retrieval
+
+Discover registered PMO deliverables and inspect their phase, tailoring profile, and cryptographic fingerprints:
+
+```python
+import tasleemat
+
+# List all 114 registered artifacts
+artifacts = tasleemat.list_artifacts()
+print(f"Discovered {len(artifacts)} standardized deliverables.")
+
+# Filter by project lifecycle phase
+planning_artifacts = tasleemat.list_artifacts(phase="Planning")
+
+# Retrieve detailed metadata for a specific deliverable
+charter = tasleemat.get_artifact_definition("PMO-03.01")
+print(charter["name_en"])      # "PROJECT CHARTER"
+print(charter["name_ar"])      # "ميثاق المشروع"
+print(charter["phase"])        # "Initiating"
+print(charter["tier"])         # "Tier 3 (Lean)"
+print(charter["fingerprint"])   # SHA-256 content fingerprint
+```
+
+### 2. Bilingual Asset Retrieval
+
+Retrieve templates, guides, AI prompts, data schemas, and dictionaries without parsing directory structures:
+
+```python
+from tasleemat import get_artifact_asset, get_artifact_assets
+
+# Retrieve specific asset directly (by role and language)
+# Roles: "template", "guide", "prompt", "schema", "dictionary", "example"
+en_template = get_artifact_asset("PMO-03.01", role="template", lang="en")
+ar_template = get_artifact_asset("PMO-03.01", role="template", lang="ar")
+
+# Or fetch the entire asset bundle
+bundle_ar = get_artifact_assets("PMO-03.01", lang="ar")
+print(bundle_ar.get_guide_content())
+schema_dict = bundle_ar.get_schema_data()
+```
+
+### 3. Structural Data Validation (`strict` vs `draft`)
+
+Validate structured project data against formal companion schemas:
+
+```python
+from tasleemat import validate_artifact_data
+
+project_charter_data = {
+    "artifact_id": "PMO-03.01",
+    "project_name": "Digital Transformation Initiative",
+    "project_code": "PRJ-2026-001",
+    "project_manager": "Sarah Jenkins, PMP",
+    "sponsor": "Executive Committee",
+    "business_need": "Modernize legacy transaction platforms to reduce latency by 40%.",
+    "project_purpose": "Deploy enterprise microservices architecture.",
+    "objectives": [
+        {"objective": "Migrate 10 core services", "target_date": "2026-12-31"}
+    ],
+    "high_level_requirements": ["99.99% SLA availability", "Zero data loss during cutover"],
+    "summary_budget": {"total_budget": 1500000.0, "currency": "SAR"}
+}
+
+# Strict Mode: For formal stage-gate approvals and final baselines
+report = validate_artifact_data("PMO-03.01", project_charter_data, mode="strict")
+if report.valid:
+    print("✅ Document structure is strictly valid for stage-gate submission!")
+else:
+    for err in report.errors:
+        print(f"❌ Error at {err.field_path}: {err.message} (Code: {err.code})")
+
+# Draft Mode: For intermediate agent loops or draft authoring (produces warnings, does not fail)
+draft_report = validate_artifact_data("PMO-03.01", {"project_name": "Draft Project"}, mode="draft")
+print(f"Draft valid: {draft_report.valid}, Warnings: {len(draft_report.warnings)}")
+```
+
+### 4. Standalone Offline Document Rendering
+
+Render any artifact to publication-ready styled HTML:
+
+```python
+from tasleemat import render_artifact
+
+# Render Project Charter to a styled, print-ready HTML document
+html_output = render_artifact("PMO-03.01", lang="ar", out_path="./output/charter_ar.html")
+print("Rendered artifact saved to ./output/charter_ar.html")
+```
+
+### 5. Standardized Bilingual PMO Terminology
+
+Access standardized PMI/DGA English-Arabic terminology mappings:
+
+```python
+from tasleemat import get_lexicon
+
+# Retrieve full bilingual PMO lexicon
+lexicon = get_lexicon()
+print(f"Loaded {len(lexicon)} terms.")
+
+# Filter by lifecycle category
+initiating_terms = get_lexicon(category="Initiating")
+for item in initiating_terms[:3]:
+    print(f"{item['en_name']} <---> {item['ar_name']}")
+```
+
+---
+
+## 🛠️ Global Command-Line Interface (CLI)
+
+The `tasleemat` CLI provides workspace scaffolding, form searches, AI document auto-generation, and testing:
 
 ```bash
-# Search deliverable forms by keyword
+# 1. Complete CLI reference
+tasleemat --help
+
+# 2. Interactive project workspace scaffolder
+tasleemat init
+
+# 3. Fast-track automated scaffolding (Tier 2 Standard, Agile Pack, Arabic templates)
+tasleemat init --tier 2 --pack agile --lang ar --name "منصة السحابة" --code "PRJ-2026-02" --out ./My_Project
+
+# 4. Search deliverable forms by keyword
 tasleemat search "Risk" --lang en
 tasleemat search "ميثاق" --lang ar
 
-# List all 114 forms in catalog
+# 5. List all 114 forms in catalog
 tasleemat list --lang en
-```
 
----
+# 6. Auto-fill project deliverables using AI from meeting notes
+tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./Project_Charter.md
 
-### 4. LLM AI Configuration (`tasleemat config`)
-Configure your default LLM AI provider and API credentials (stored securely at `~/.tasleemat/config.json`):
-
-```bash
-# Configure Google Gemini
-tasleemat config set --provider gemini --model gemini-2.5-flash --key "YOUR_GEMINI_API_KEY"
-
-# Or configure OpenAI
-tasleemat config set --provider openai --model gpt-4o --key "YOUR_OPENAI_KEY"
-
-# View current configuration
-tasleemat config show
-```
-
----
-
-### 5. Automated AI Document Generation (`tasleemat generate`)
-Auto-fill publication-ready project deliverables directly from meeting notes:
-
-```bash
-# Auto-fill Project Charter (PMO-03.01) from meeting notes
-tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./03_01_Project_Charter.md
-
-# Test offline with mock engine (no API tokens consumed)
-tasleemat generate --form PMO-03.01 --notes "Enterprise Cloud Migration" --mock
-```
-
----
-
-### 6. Automated Test Suite (`tasleemat test`)
-Execute the built-in repository verification suite:
-
-```bash
+# 7. Run automated test suite
 tasleemat test -v
-```
-
----
-
-## 🤖 Programmatic Python SDK (`tasleemat.ai`)
-
-You can also import `tasleemat.ai` directly into custom Python pipelines, internal dashboards, or automated AI workflows:
-
-```python
-from tasleemat.ai import AIClient
-
-# Initialize client (resolves API credentials automatically)
-client = AIClient(provider="gemini", model="gemini-2.5-flash")
-
-# Auto-fill a PMO deliverable
-charter_markdown = client.generate(
-    prompt="Generate Project Charter for $2M E-Commerce Platform Modernization",
-    system_instruction="You are an enterprise PMO Director. Adhere strictly to PMI PMBOK standards."
-)
-
-print(charter_markdown)
-```
-
-### Data Engineering & Metadata Ingestion
-Ingest the master bilingual lexicon or individual form schemas into `pandas` or PowerBI:
-
-```python
-import json
-import pkg_resources
-
-# Access bundled LEXICON registry
-lexicon_path = pkg_resources.resource_filename("tasleemat", "docs/LEXICON.json")
-with open(lexicon_path, "r", encoding="utf-8") as f:
-    lexicon_data = json.load(f)
-
-print(f"Loaded {len(lexicon_data)} registered deliverable forms.")
 ```
 
 ---
 
 ## 📦 5-File Synchronized Artifact Architecture
 
-Inside every form folder (e.g., `forms/en/03_Initiating/01_Project_Charter/`), Tasleemat provides 5 synchronized files:
+Every one of the 114 deliverables is organized as a synchronized bundle of 5 files:
 
-| File Type | Pattern | Purpose |
+| File Type | File Pattern | Purpose |
 | :--- | :--- | :--- |
-| **Printable Template** | `*_Template.md` / `*_قالب.md` | Human-facing document structure with sign-off headers |
-| **Practitioner Guide** | `*_Guide.md` / `*_دليل.md` | In-depth operational guide & dependency rules |
-| **LLM Generation Prompt** | `*.md` | Engineered system prompt for automated LLM drafting |
-| **JSON Data Schema** | `*.json` | Machine-readable schema for API integrations & validation |
-| **Tabular Dictionary** | `*.csv` | 4-column structured dictionary for Excel/PowerBI ingestion |
+| **Printable Template** | `*_Template.md` / `*_قالب.md` | Human-facing document structure with sign-off headers and Document Control tables |
+| **Practitioner Guide** | `*_Guide.md` / `*_دليل.md` | In-depth operational guide, field-by-field instructions, and dependency rules |
+| **LLM Generation Prompt** | `*.md` | Engineered system prompt for automated AI drafting and LLM completion |
+| **JSON Data Schema** | `*.json` | Machine-readable schema specification for API ingestion and validation |
+| **Tabular Dictionary** | `*.csv` | 4-column structured dictionary for spreadsheet, PowerBI, and database ingestion |
 
 ---
 
-## 🗺️ Project Lifecycle Overview (114 Forms)
+## 🗺️ Project Lifecycle Overview (114 Deliverables)
 
 | Phase Code | Phase Name | Deliverables Count | Focus Area |
 | :---: | :--- | :---: | :--- |
@@ -180,33 +204,59 @@ Inside every form folder (e.g., `forms/en/03_Initiating/01_Project_Charter/`), T
 | **01** | **Business & Value Delivery** | **4 Forms** | Business cases, benefits realization plans, value registers |
 | **02** | **Project Approach & Tailoring** | **6 Forms** | Tailoring strategy, AI governance, AI ethics baselines, model cards |
 | **03** | **Initiating** | **5 Forms** | Project charter, product vision, assumption log, stakeholder register |
-| **04** | **Planning** | **52 Forms** | 12 Domains: Scope, Schedule, Cost, Quality, Resource & Psychological Safety, Communications, Risk, Procurement, Stakeholder, OCM, Sustainability/ESG |
+| **04** | **Planning** | **52 Forms** | 12 Domains: Scope, Schedule, Cost, Quality, Resources, Communications, Risk, Procurement, Stakeholder, OCM, Sustainability/ESG |
 | **05** | **Executing** | **12 Forms** | Issue log, change requests, retrospectives, team performance |
-| **06** | **Monitoring & Controlling** | **12 Forms** | Status reports, Earned Value (EVA), UAT signoff, flow metrics |
-| **07** | **Closing** | **5 Forms** | Lessons learned, contract closeouts, operational handover |
+| **06** | **Monitoring & Controlling** | **12 Forms** | Status reports, Earned Value Analysis (EVA), UAT signoff, flow metrics |
+| **07** | **Closing** | **5 Forms** | Lessons learned, contract closeouts, operational handover, archive |
 
 ---
 
-## 📜 Standards & Compliance Alignment
+## 🤖 Integration Architecture for Downstream Agents (e.g. Maharat)
 
-- **PMI PMBOK® Guide** (6th, 7th & 8th Edition Ready)
-- **ISO 21500:2021 & ISO 21502:2020** (Project & Portfolio Governance)
-- **Agile & Lean Practice Guides** (Scrum, Kanban, Value Streams)
-- **NIST AI Risk Management Framework & EU AI Act** (AI Artifacts)
-- **UN Sustainable Development Goals & ESG Frameworks**
+Tasleemat v2.4.0 establishes a clean, decoupled boundary for downstream AI agents and workflow orchestration platforms:
+
+```
+┌────────────────────────────────────────────────────────┐
+│            DOWNSTREAM AGENTS / MAHARAT                 │
+│  - Methodological workflows & PMBOK skill guidance     │
+│  - Input suitability, evidence & business checks       │
+│  - Stage-gate approvals & multi-agent decisions        │
+└───────────────────────────┬────────────────────────────┘
+                            │ imports & queries
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│               TASLEEMAT OPERATING SYSTEM               │
+│  - 114 Canonical Artifacts & Stable IDs (PMO-XX.YY)    │
+│  - Bilingual Templates, Guides & Terminology (Lexicon) │
+│  - Structural Data Contracts & JSON Schema Validation  │
+│  - Standalone Offline Rendering & Template Preservation│
+└────────────────────────────────────────────────────────┘
+```
+
+- **Tasleemat owns:** Canonical artifact definitions, stable IDs, templates, structural data schemas, format validation (`strict` and `draft`), bilingual terminology, and offline rendering.
+- **Agent Orchestrators (Maharat) own:** Methodological skills, business suitability checks, evidence validation, cross-artifact consistency, and human approval workflows.
 
 ---
 
-## 🔗 Useful Links & Citation
+## 📜 Standards Alignment
 
-- **🐙 GitHub Repository:** [github.com/fakhruldeen/Tasleemat](https://github.com/fakhruldeen/Tasleemat)
-- **📚 Documentation Index:** [docs/README.md](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/README.md)
-- **📚 Citation (Zenodo DOI):** [10.5281/zenodo.23193523](https://doi.org/10.5281/zenodo.23193523)
+- **PMI PMBOK® Guide:** 6th, 7th & 8th Edition alignment.
+- **ISO Standards:** ISO 21500:2021 (Project Governance) & ISO 21502:2020 (Project Management).
+- **AI Governance:** NIST AI Risk Management Framework (AI RMF 1.0) & EU AI Act readiness.
+- **Open Data:** Open Knowledge Foundation (OKF) Frictionless Data Package specification.
+- **Saudi DGA PMO Standards:** Terminology aligned with official government digital governance frameworks.
 
-> Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.3.0 [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23193523
+---
+
+## 🔗 Links & Resources
+
+- **GitHub Repository:** [github.com/fakhruldeen/Tasleemat](https://github.com/fakhruldeen/Tasleemat)
+- **Interactive Web Portal:** [fakhr.me/Tasleemat](https://fakhr.me/Tasleemat/)
+- **Documentation:** [docs/README.md](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/README.md)
+- **Zenodo DOI:** [10.5281/zenodo.23193523](https://doi.org/10.5281/zenodo.23193523)
 
 ---
 
 <div align="center">
-  <sub>Open Source under <a href="https://opensource.org/licenses/MIT">MIT License</a>. Maintained by <a href="https://github.com/fakhruldeen">Fakhruldeen</a>.</sub>
+  <sub>Open Source under <a href="https://opensource.org/licenses/MIT">MIT License</a>. Created and maintained by <a href="https://github.com/fakhruldeen">Fakhruldeen</a>.</sub>
 </div>

@@ -15,6 +15,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.4.0] - 2026-10-12 — Programmatic Python API, Structural Validation & Agent Integration
+
+### 🧩 Programmatic Python API (`import tasleemat`)
+- **Direct Library Access:** Exposed public API functions in `tasleemat`: `list_artifacts`, `get_artifact_definition`, `get_artifact_assets`, `get_artifact_asset`, `get_tailoring_profile`, `get_lexicon`, `validate_artifact_data`, and `render_artifact`.
+- **Deterministic Artifact Catalog:** Generated centralized `tasleemat/data/catalog.json` indexing all 114 deliverables with verified SHA-256 content fingerprints and bilingual metadata.
+- **Bilingual PMO Terminology Registry:** Bundled `tasleemat/data/lexicon.json` with `get_lexicon(category=...)` supporting filtered queries for PMI/DGA PMO terminology pairs.
+
+### 🔍 Structural Data Validation Contracts
+- **Draft 2020-12 Companion JSON Schemas:** Delivered strict schemas for representative deliverables (`PMO-03.01`, `PMO-04.08.02`, `PMO-06.01`) in `tasleemat/schemas/completed/`.
+- **Validation Engine:** Built-in validator supporting `strict` mode (for formal stage-gate approval) and `draft` mode (for non-blocking agent drafting loops with warnings).
+- **Traceable Error Reporting:** Detailed `ValidationReport` returning field paths (`/project_name`), error codes (`REQUIRED_FIELD_MISSING`, `INVALID_TYPE`), human-readable messages, and package version stamp.
+
+### 🎨 Standalone Offline Rendering
+- **Zero-Dependency Document Renderer:** Generates styled, print-ready HTML with responsive styling, status badges, and Document Control tables via `tasleemat.render_artifact`.
+- **Strict Immutability Guards:** Runtime path verification prevents rendering exports into the protected `forms/` directory.
+
+### 🤖 Downstream Agent Integration Contract (Maharat Ready)
+- **Decoupled Boundary:** Established clear division of responsibility where Tasleemat provides canonical artifact definitions, templates, structural schemas, and validation, while downstream orchestrators (like Maharat) handle methodological reasoning, evidence checks, and human approvals.
+- **Comprehensive Test Suite:** Added 23 new test cases across `test_consumer_interface.py`, `test_maharat_integration_contract.py`, and `test_wheel_clean_install.py` verifying programmatic execution outside source checkouts.
+
+---
+
 ## [2.3.1] - 2026-10-11 — Portal Enhancements, Cryptographic Audit Trail & Release Polish
 
 ### 🔒 Governance & Cryptographic Integrity

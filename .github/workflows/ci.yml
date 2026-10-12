@@ -50,9 +50,13 @@ jobs:
           python3 tools/generate_documentation_portal.py
 
 
-      - name: Run Complete Automated Test Suite (38 Unit & Integration Tests)
+      - name: Run Complete Automated Test Suite
         run: |
           python3 -m unittest discover -s tests -v
+
+      - name: Build Distribution Wheel & Verify Isolated Clean Installation
+        run: |
+          python3 -m unittest tests/test_wheel_clean_install.py -v
 
 
       - name: Test Tasleemat CLI Scaffolder & Exporter

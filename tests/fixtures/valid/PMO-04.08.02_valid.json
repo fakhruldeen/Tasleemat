@@ -1,0 +1,40 @@
+{
+  "artifact_id": "PMO-04.08.02",
+  "metadata": {
+    "project_name": "Apex Enterprise Nexus ERP Modernization",
+    "project_code": "PRJ-2026-ERP-01",
+    "last_updated": "2026-03-20",
+    "risk_manager": "Sarah Al-Rashid",
+    "version": "1.2"
+  },
+  "risks": [
+    {
+      "risk_id": "RSK-01",
+      "category": "Technical",
+      "event_narrative": "Third-party payment gateway API rate limiting causes transaction processing delays during peak periods.",
+      "root_cause": "Legacy API gateway lacks token bucket autoscaling configuration.",
+      "trigger_symptoms": "HTTP 429 response rate exceeds 1% of total transaction requests.",
+      "probability_score": 3,
+      "impact_score": 4,
+      "exposure_rating": 12,
+      "response_strategy": "Mitigate",
+      "action_plan": "Implement Redis-backed local request caching and negotiate dedicated gateway burst tier.",
+      "owner": "Tariq Al-Amri",
+      "status": "Mitigating"
+    },
+    {
+      "risk_id": "RSK-02",
+      "category": "Resource",
+      "event_narrative": "Specialized cloud data migration engineer availability constrained due to concurrent regional rollouts.",
+      "root_cause": "Market shortage of certified cloud migration architects.",
+      "trigger_symptoms": "Sprint velocity drop in data pipeline epic backlog.",
+      "probability_score": 2,
+      "impact_score": 5,
+      "exposure_rating": 10,
+      "response_strategy": "Mitigate",
+      "action_plan": "Secure secondary vendor augmentation contract with pre-cleared certified staff.",
+      "owner": "Sarah Al-Rashid",
+      "status": "Identified"
+    }
+  ]
+}

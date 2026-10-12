@@ -3,6 +3,34 @@ type: Guide
 ---
 # Tasleemat Release Notes
 
+## 🚀 Tasleemat v2.4.0 — Programmatic Python API, Structural Validation & Agent Integration
+ 
+**Release Date:** October 12, 2026  
+**PyPI Version:** [`tasleemat 2.4.0`](https://pypi.org/project/tasleemat/2.4.0/)  
+**Git Tag:** [`v2.4.0`](https://github.com/fakhruldeen/Tasleemat/releases/tag/v2.4.0)  
+
+---
+
+### 🧩 First-Class Programmatic Python API (`import tasleemat`)
+- **Direct Python Import:** Reusable, clean top-level functions `list_artifacts()`, `get_artifact_definition()`, `get_artifact_assets()`, `get_artifact_asset()`, `get_tailoring_profile()`, `get_lexicon()`, `validate_artifact_data()`, and `render_artifact()`.
+- **Deterministic 114-Deliverable Catalog:** Generated and bundled `tasleemat/data/catalog.json` with SHA-256 content fingerprints and bilingual metadata for instant offline discovery without disk scans.
+- **Bilingual PMO Terminology API:** Dedicated `get_lexicon(category=...)` function providing fast lookup for standardized English-Arabic PMI and Saudi DGA terminology.
+
+### 🔍 Structural JSON Data Validation & Contracts
+- **Draft 2020-12 Companion Schemas:** Added complete structural data schemas for representative deliverables (`PMO-03.01`, `PMO-04.08.02`, `PMO-06.01`) in `tasleemat/schemas/completed/`.
+- **Strict vs. Draft Modes:** Full support for strict production validation (for stage-gate approvals) alongside draft validation (for AI agent generation cycles) with non-blocking warnings.
+- **Traceable Error Structure:** Returns structured `ValidationReport` with JSON pointer field paths, machine-readable error codes, messages, and package version tracking.
+
+### 🎨 Standalone Offline Rendering Engine
+- **Print-Ready HTML Generation:** Self-contained document renderer with responsive typography, document sign-off blocks, and document control tables.
+- **Strict Immutability Assurance:** Enforced write protection blocking any rendered exports inside the immutable `forms/` directory.
+
+### 🤖 Decoupled Downstream Agent Integration (Maharat Ready)
+- **Clear Governance Boundary:** Documented contract separating Tasleemat structural data contracts from downstream methodological/evidence checks.
+- **Clean Environment Wheel Execution:** Full verification suite ensuring the distributed wheel installs and runs seamlessly outside repository source trees.
+
+---
+
 ## 🚀 Tasleemat v2.3.1 — Electronic Audit Trail, Portal Interactivity & GitBook Sync
 
 **Release Date:** October 11, 2026  

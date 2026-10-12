@@ -16,7 +16,7 @@ type: Overview
 *متوافقة بالكامل مع الدليل المعرفي لإدارة المشاريع PMI PMBOK® (الإصدار 6 و7 والجاهزية لـ 8)، معايير أيزو ISO 21500 / 21502، وهيئة الحكومة الرقمية*
 
 <p align="center">
-  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.3.1-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
+  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.4.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
   <a href="https://fakhr.me/Tasleemat/README_AR.html"><img src="https://img.shields.io/badge/🌐_البوابة_التفاعلية-معاينة_حصرية-006a61?style=for-the-badge" alt="البوابة التفاعلية"></a>
   <a href="https://fakhr.me/Tasleemat/catalog/ar/index.html"><img src="https://img.shields.io/badge/📋_114_تسليمة-مستكشف_النماذج-059669?style=for-the-badge" alt="كتالوج النماذج"></a>
   <a href="README.md"><img src="https://img.shields.io/badge/🇬🇧_English_Version-LTR_Portal-1d4ed8?style=for-the-badge" alt="English Version"></a>
@@ -167,21 +167,42 @@ flowchart TD
 - 🌐 **[https://fakhr.me/Tasleemat/README_AR.html](https://fakhr.me/Tasleemat/README_AR.html)**
 - 📋 **[مستكشف الـ 114 تسليمة](https://fakhr.me/Tasleemat/catalog/ar/index.html)**
 
-### 2. النسخ والاستخدام المباشر داخل GitHub
+### 2. الاستخدام البرمجي عبر مكتبة بايثون (`import tasleemat`)
+تثبيت الحزمة الرسمية مباشرة من مستودع PyPI للوصول البرمجي إلى القوالب، مخططات البيانات، والتحقق:
+```bash
+pip install tasleemat
+```
+```python
+import tasleemat
+
+# 1. استكشاف التسليمات المسجلة (114 تسليمة)
+charter = tasleemat.get_artifact_definition("PMO-03.01")
+
+# 2. استرجاع القوالب والأدلة مباشرة
+ar_template = tasleemat.get_artifact_asset("PMO-03.01", role="template", lang="ar")
+
+# 3. التحقق الهيكلي من البيانات وفق مخططات JSON
+report = tasleemat.validate_artifact_data("PMO-03.01", {"project_name": "مشروع التحول"}, mode="draft")
+print(f"صلاحية المسودة: {report.valid}, التنبيهات: {len(report.warnings)}")
+
+# 4. تصدير المستند كصفحة HTML مهيأة للطباعة دون إنترنت
+tasleemat.render_artifact("PMO-03.01", lang="ar", out_path="./charter_ar.html")
+```
+
+### 3. الأتمتة عبر أداة السطر البرمجي CLI
+توليد بيئة حوكمة المشروع تلقائياً عبر موجه الأوامر:
+```bash
+# توليد حزمة مشروع قياسية للمستوى الثاني باللغة العربية
+tasleemat init --tier 2 --pack agile --lang ar --out ./مشروعي
+```
+
+### 4. النسخ والاستخدام المباشر داخل GitHub
 كافة القوالب مكتوبة بلغة ماركداون نظيفة وجاهزة للاستخدام في Notion أو Obsidian أو Confluence:
 ```bash
 git clone https://github.com/fakhruldeen/Tasleemat.git
 cd Tasleemat
 # تصفح القوالب العربية: forms/ar/
 # تصفح القوالب الإنجليزية: forms/en/
-```
-
-### 3. الأتمتة عبر أداة السطر البرمجي CLI
-توليد هيكل مستندات المشروع تلقائياً على جهازك:
-```bash
-# استخدام أداة السطر البرمجي
-python3 -m cli.tasleemat_cli scaffold FORM-03-01 --lang ar
-python3 -m cli.tasleemat_cli list --phase 04
 ```
 
 ---

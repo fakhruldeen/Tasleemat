@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.08.02.schema.json",
+  "title": "Completed Risk Register Data Contract",
+  "description": "Additive structural schema validating completed Risk Register artifact data payloads (PMO-04.08.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.08.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "last_updated": { "type": "string" },
+        "risk_manager": { "type": "string" },
+        "version": { "type": "string" }
+      },
+      "required": ["project_name", "project_code", "last_updated"]
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "risk_id": { "type": "string", "pattern": "^RSK-\\d+" },
+          "category": {
+            "type": "string",
+            "enum": ["Technical", "Schedule", "Cost", "Resource", "External", "Governance", "Other"]
+          },
+          "event_narrative": { "type": "string", "minLength": 5 },
+          "root_cause": { "type": "string" },
+          "trigger_symptoms": { "type": "string" },
+          "probability_score": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "impact_score": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "exposure_rating": { "type": "integer", "minimum": 1, "maximum": 25 },
+          "response_strategy": {
+            "type": "string",
+            "enum": ["Avoid", "Mitigate", "Transfer", "Accept", "Escalate"]
+          },
+          "action_plan": { "type": "string" },
+          "owner": { "type": "string", "minLength": 1 },
+          "status": {
+            "type": "string",
+            "enum": ["Identified", "Assessing", "Mitigating", "Closed", "Realized"]
+          }
+        },
+        "required": [
+          "risk_id",
+          "category",
+          "event_narrative",
+          "probability_score",
+          "impact_score",
+          "response_strategy",
+          "owner",
+          "status"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["artifact_id", "metadata", "risks"]
+}

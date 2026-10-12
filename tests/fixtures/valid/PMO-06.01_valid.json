@@ -1,0 +1,41 @@
+{
+  "artifact_id": "PMO-06.01",
+  "metadata": {
+    "project_name": "Apex Enterprise Nexus ERP Modernization",
+    "project_code": "PRJ-2026-ERP-01",
+    "report_date": "2026-04-15",
+    "reporting_period": "Sprint 04 (2026-04-01 to 2026-04-15)",
+    "prepared_by": "Sarah Al-Rashid",
+    "overall_status": "Green"
+  },
+  "schedule_performance": {
+    "status": "Green",
+    "accomplishments_this_period": [
+      "Completed database schema migration testing on staging environment.",
+      "Finalized API integration specs for procurement interface.",
+      "Conducted Sprint 04 demo with finance operational leads."
+    ],
+    "planned_but_not_completed": [],
+    "schedule_variance_cause": "None. Project tracking 2 days ahead of milestone schedule.",
+    "milestone_impact": "Gate 1 sign-off on track for 2026-06-15.",
+    "corrective_actions": "None required."
+  },
+  "cost_performance": {
+    "status": "Green",
+    "funds_spent_this_period": 345000.0,
+    "variance_cause": "Favorable variance of SAR 25,000 due to accelerated automated testing suite execution.",
+    "corrective_actions": "Maintain current burn rate control measures."
+  },
+  "planning_next_period": {
+    "planned_accomplishments": [
+      "Initiate user acceptance testing for procurement workflows.",
+      "Deploy localized Arabic dashboard components to UAT cluster."
+    ],
+    "planned_costs": 380000.0
+  },
+  "risks_and_issues": {
+    "new_risks": ["Potential vendor SDK minor version deprecation scheduled for Q3."],
+    "new_issues": [],
+    "escalations": []
+  }
+}

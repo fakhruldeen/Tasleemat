@@ -51,6 +51,31 @@ tasleemat config set --provider openai --model gpt-4o --key "YOUR_OPENAI_KEY"
 
 ### SDK Code Example
 ```python
+import tasleemat
+
+# 1. List and filter canonical artifacts
+artifacts = tasleemat.list_artifacts(phase="03", tier="2")
+for a in artifacts:
+    print(a.artifact_id, a.name_en, a.name_ar)
+
+# 2. Retrieve artifact definition and specific asset by role
+defn = tasleemat.get_artifact_definition("PMO-03.01")
+template_text = tasleemat.get_artifact_asset("PMO-03.01", role="template", lang="en")
+prompt_text   = tasleemat.get_artifact_asset("PMO-03.01", role="prompt",   lang="ar")
+
+# 3. Retrieve standardized bilingual PMO terminology
+pmo_terms = tasleemat.get_lexicon(category="Governance")
+
+# 4. Validate completed artifact payload (strict or draft mode)
+report = tasleemat.validate_artifact_data("PMO-03.01", {"artifact_id": "PMO-03.01", ...}, mode="strict")
+print("Valid:", report.valid, "Errors:", report.errors)
+
+# 5. Render offline styled HTML document
+html_doc = tasleemat.render_artifact("PMO-03.01", lang="ar")
+```
+
+### AI Generation Client (`tasleemat.ai`)
+```python
 from tasleemat.ai import AIClient
 
 # Initialize AI client (automatically reads configured API key or env variables)
@@ -110,6 +135,9 @@ tasleemat test -v
 ### Test Suite Modules
 | Test Module | Coverage & Verification Scope |
 | :--- | :--- |
+| **`test_consumer_interface.py`** | Programmatic catalog discovery, bilingual asset loading, completed data validation, rendering |
+| **`test_maharat_integration_contract.py`** | Simulated downstream integration verifying stable ID lookup, role asset access, draft mode, and error behavior |
+| **`test_wheel_clean_install.py`** | Isolated wheel build, clean venv installation, and repository-free execution |
 | **`test_parity.py`** | 1:1 English/Arabic structural symmetry across all 8 phases and 114 form folders |
 | **`test_schemas.py`** | JSON schema parsing, top-level keys, field definitions, and JSON-CSV alignment |
 | **`test_okf_datapackage.py`** | Frictionless JSON Schema standard compliance for all 228 package resources |
@@ -122,9 +150,31 @@ tasleemat test -v
 
 ## 🛠️ 5. Documentation Architecture
 
-Tasleemat follows a pure **Repository-First** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](docs/README.md) and [`forms/`](forms/en/) directories as native GitHub-flavored Markdown.
+Tasleemat follows a hybrid **Repository-First & Static Portal** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](docs/README.md) and [`forms/`](forms/en/) directories as native GitHub-flavored Markdown.
 
-The previous GitHub Pages deployment portal has been retired. Documentation is directly accessible, searchable, and navigable within the repository.
+Additionally, an interactive static HTML documentation portal is automatically generated from these markdown sources via `tools/generate_documentation_portal.py` and deployed to GitHub Pages via continuous integration (`.github/workflows/deploy-docs.yml`).
+
+---
+
+## 🤝 6. Downstream Consumer Integration (e.g., Maharat)
+
+Tasleemat serves as an upstream, read-only foundation for downstream skill runners and methodology agents (such as **Maharat**).
+
+### Responsibility Boundaries
+- **Tasleemat owns**: Stable artifact identities (`PMO-03.01`), read-only templates, practitioner guides, prompt specifications, tabular data dictionaries, companion structural JSON schemas, and offline HTML rendering.
+- **Maharat owns**: Workflow orchestration, PMBOK methodological guidance, evidence sufficiency assessments, cross-artifact alignment checks, and human sign-off state.
+
+### Explicit Non-Claims
+Structural validity verified by Tasleemat does **NOT** establish:
+1. PMI standard compliance or formal institutional certification.
+2. Business or technical evidence sufficiency.
+3. Methodological suitability for a specific project context.
+4. Human executive authorization or stage-gate approval.
+
+### Two-Tier Validation Architecture
+1. **Tier 1 — Tasleemat Structural Checks**: Required JSON fields, primitive data types, enum bounds, string formats, array minItems constraints.
+2. **Tier 2 — Maharat Suitability Checks**: Evaluation of whether project facts are current, sources are non-conflicting, assumptions are justified, and deliverables are complete.
+
 
 ---
 

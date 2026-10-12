@@ -347,8 +347,15 @@ def run_tests(args):
     print(f"\n{Colors.HEADER}{Colors.BOLD}===================================================={Colors.ENDC}")
     print(f"{Colors.HEADER}{Colors.BOLD}   🧪 Running Tasleemat Automated Test Suite       {Colors.ENDC}")
     print(f"{Colors.HEADER}{Colors.BOLD}===================================================={Colors.ENDC}\n")
+    tests_dir = ROOT / "tests"
+    if not tests_dir.exists():
+        tests_dir = pathlib.Path.cwd() / "tests"
+    if not tests_dir.exists():
+        print(f"{Colors.WARNING}⚠️ Test directory not found in the installed distribution package.{Colors.ENDC}")
+        print("To run the full developer test suite, clone the Tasleemat repository from GitHub.")
+        sys.exit(0)
     loader = unittest.TestLoader()
-    suite = loader.discover(str(ROOT / "tests"), pattern="test_*.py")
+    suite = loader.discover(str(tests_dir), pattern="test_*.py")
     runner = unittest.TextTestRunner(verbosity=2 if args.verbose else 1)
     result = runner.run(suite)
     if result.wasSuccessful():

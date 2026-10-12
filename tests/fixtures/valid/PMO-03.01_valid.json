@@ -1,0 +1,56 @@
+{
+  "artifact_id": "PMO-03.01",
+  "metadata": {
+    "project_name": "Apex Enterprise Nexus ERP Modernization",
+    "project_code": "PRJ-2026-ERP-01",
+    "date_prepared": "2026-03-15",
+    "prepared_by": "Sarah Al-Rashid",
+    "sponsor": "Eng. Khalid Al-Mansoor",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "fields": {
+    "project_purpose": "Modernize enterprise enterprise resource planning core infrastructure into unified cloud platform.",
+    "high_level_project_description": "Implement automated financial, procurement, and supply chain modules with real-time analytics across all regional operating branches.",
+    "project_boundaries": "Excludes legacy mainframe decomissioning which is managed under Program Wave 2.",
+    "key_deliverables": [
+      "Cloud ERP Architecture Blueprint",
+      "Financial Management Ledger Module",
+      "Procurement Automation Pipeline",
+      "User Acceptance Sign-off Dossier"
+    ],
+    "high_level_requirements": [
+      "99.95% system uptime SLA",
+      "Full compliance with National Cybersecurity Authority (NCA) regulations",
+      "Dual-language UI supporting Arabic and English"
+    ],
+    "high_level_assumptions_and_constraints": "Core database schemas remain accessible throughout migration window; budget capped at pre-approved ceiling.",
+    "overall_project_risk": "Moderate risk driven by vendor API dependencies and multi-system integration timeline constraints.",
+    "project_objectives_and_related_success_criteria": [
+      {
+        "objective": "Reduce month-end closing cycle time",
+        "success_criteria": "Close cycle reduced from 14 calendar days to 3 business days within 90 days post-go-live."
+      },
+      {
+        "objective": "Automate purchase order processing",
+        "success_criteria": "85% of standard purchase requests processed without manual intervention."
+      }
+    ],
+    "summary_milestone_schedule": [
+      { "milestone": "Project Charter Approval (Gate 0)", "target_date": "2026-04-01" },
+      { "milestone": "Solution Design Sign-off (Gate 1)", "target_date": "2026-06-15" },
+      { "milestone": "System Integration Testing Complete (Gate 2)", "target_date": "2026-10-30" },
+      { "milestone": "Go-Live & Operations Handover (Gate 3)", "target_date": "2026-12-15" }
+    ],
+    "preapproved_financial_resources": "SAR 4,500,000 allocated under Capital Expenditure Budget Line CAPEX-2026-IT.",
+    "key_stakeholder_list": [
+      { "role": "Executive Sponsor", "name": "Eng. Khalid Al-Mansoor", "organization": "Executive Leadership Team" },
+      { "role": "Project Manager", "name": "Sarah Al-Rashid", "organization": "PMO" },
+      { "role": "Chief Financial Officer", "name": "Fahad Al-Harbi", "organization": "Finance Directorate" }
+    ],
+    "project_exit_criteria": "All core ERP services active in production with zero Severity-1 defect tickets open for 14 consecutive days.",
+    "project_approval_requirements": "Signed authorization by Project Sponsor and PMO Steering Committee at Gate 0.",
+    "project_manager_authority_level": "Authority to allocate up to SAR 100,000 variance and authorize task staffing changes within approved PMO pool.",
+    "name_and_authority_of_the_sponsor": "Eng. Khalid Al-Mansoor, Executive VP of Enterprise Transformation, holding full financial sign-off authority."
+  }
+}
