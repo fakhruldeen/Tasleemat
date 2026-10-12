@@ -121,6 +121,39 @@ valid_payload = {
 }
 report = tasleemat.validate_artifact_data("PMO-03.01", valid_payload)
 assert report.valid is True, f"Validation failed: {report.errors}"
+assert report.status == "supported", f"Expected supported status, got {report.status}"
+assert report.is_available is True
+
+# Verify negative validation case in clean venv
+invalid_payload = {"artifact_id": "PMO-03.01", "metadata": {}}
+report_inv = tasleemat.validate_artifact_data("PMO-03.01", invalid_payload)
+assert report_inv.valid is False, "Expected invalid payload to fail"
+assert len(report_inv.errors) > 0
+
+# Verify unsupported deliverable validation returns unavailable status
+report_unavail = tasleemat.validate_artifact_data("PMO-00.01", {"artifact_id": "PMO-00.01"})
+assert report_unavail.valid is False
+assert report_unavail.status == "unavailable"
+assert report_unavail.is_available is False
+assert any(e.code == "SCHEMA_UNAVAILABLE" for e in report_unavail.errors)
+
+# Verify draft mode validation in clean venv
+draft_payload = {
+    "artifact_id": "PMO-03.01",
+    "metadata": {
+        "project_name": "Test Draft",
+        "date_prepared": "2026-03-15",
+        "prepared_by": "Draft Author",
+        "sponsor": "Sponsor",
+        "status": "draft"
+    },
+    "fields": {
+        "project_purpose": "Initial scoping draft statement.",
+        "high_level_project_description": "Exploratory summary."
+    }
+}
+report_draft = tasleemat.validate_artifact_data("PMO-03.01", draft_payload, mode="draft")
+assert report_draft.valid is True, f"Draft validation failed: {report_draft.errors}"
 
 print("SUCCESS: Programmatic library test passed in clean venv!")
 """

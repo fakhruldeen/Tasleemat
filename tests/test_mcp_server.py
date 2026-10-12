@@ -163,6 +163,21 @@ class TestMCPServer(unittest.TestCase):
         self.assertTrue(rep_draft["valid"])
         self.assertGreater(rep_draft["warnings_count"], 0)
 
+        # 3. Unsupported deliverable validation via MCP
+        resp_unavail = self.send_request("tools/call", {
+            "name": "tasleemat_validate_data",
+            "arguments": {
+                "artifact_id": "PMO-00.01",
+                "data": {"artifact_id": "PMO-00.01"},
+            },
+        })
+        self.assertNotIn("error", resp_unavail)
+        rep_unavail = json.loads(resp_unavail["result"]["content"][0]["text"])
+        self.assertFalse(rep_unavail["valid"])
+        self.assertEqual(rep_unavail["status"], "unavailable")
+        self.assertFalse(rep_unavail["is_available"])
+        self.assertTrue(any(e["code"] == "SCHEMA_UNAVAILABLE" for e in rep_unavail["errors"]))
+
     def test_tool_render_artifact(self):
         """Verify tasleemat_render_artifact renders HTML."""
         resp = self.send_request("tools/call", {
