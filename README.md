@@ -161,7 +161,7 @@ Avoid governance paralysis by matching the paperwork to the actual risk and scal
 
 ---
 
-## ⚡ Quick Start: 3 Ways to Use Tasleemat
+## ⚡ Quick Start: 4 Ways to Use Tasleemat
 
 ### Option 1: Explore on the Web *(Fastest)*
 Visit the interactive portal to search, preview, and copy templates with one click:
@@ -205,6 +205,96 @@ git clone https://github.com/fakhruldeen/Tasleemat.git
 cd Tasleemat
 # Browse English templates: forms/en/
 # Browse Arabic templates: forms/ar/
+```
+
+---
+
+## 🤖 Using Tasleemat & OKF with LLMs (Claude, ChatGPT, OpenCode & AI Coding Agents)
+
+Tasleemat is natively engineered for **Generative AI workflows**, **Large Language Models (LLMs)**, and **AI coding assistants** (Claude, ChatGPT, OpenCode, Cursor, GitHub Copilot).
+
+### 1. In Standard Chat LLMs (Claude & ChatGPT)
+
+Every form folder in `forms/` contains a dedicated, pre-engineered LLM prompt file (e.g. `03_01_Project_Charter.md`) and a clean template (`*_Template.md`):
+
+#### Workflow A: Direct Prompt Injection
+1. **Copy the Prompt**: Open the deliverable's prompt file (e.g. `forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter.md` or Arabic equivalent).
+2. **Paste into Claude or ChatGPT**: Paste the prompt into your chat window as the System Instructions or prompt prefix.
+3. **Attach Your Notes**: Append your raw project kickoff notes, meeting transcripts, or charter inputs:
+   ```text
+   [PASTE TASLEEMAT PROMPT HERE]
+
+   Project Kickoff Notes:
+   - Project: Riyadh Smart Logistics Hub
+   - Sponsor: Logistics Development Authority
+   - Budget: 12M SAR
+   - Timeline: 14 Months
+   - Key Scope: Automate sorting center, deploy IoT fleet tracking
+   ```
+4. **Result**: The LLM outputs a complete, audit-compliant PMO deliverable following official PMI PMBOK® formatting and document control sign-off tables.
+
+#### Workflow B: Custom GPTs & Claude Projects
+- Create a **Claude Project** or **Custom GPT** titled *"PMO Enterprise Architect"*.
+- Upload the `forms/` templates and `docs/LEXICON.json` as project knowledge files.
+- Set the project instructions to: *"Always use Tasleemat artifact structures, Document Control headers, and bilingual terminology for all requested PMO deliverables."*
+
+---
+
+### 2. In OpenCode, Cursor, Windsurf & GitHub Copilot
+
+When opening the cloned Tasleemat repository in **OpenCode**, **Cursor**, or any agentic IDE:
+
+- **Reference via `@` Context**:
+  - In OpenCode / Cursor chat: `@03_01_Project_Charter_Template.md Fill this project charter for a modern mobile banking app with biometric authentication.`
+  - The AI assistant reads the exact template structure, Document Control table, and required sections to generate conforming documentation directly in your workspace.
+- **Repository Rules (`.cursorrules` / `.windsurfrules` / Agent Prompts)**:
+  - You can instruct your coding agent to scaffold PMO documents using:
+    ```markdown
+    When generating project documentation, always adhere to the schema and templates defined in forms/en/ and forms/ar/. Enforce Document Control blocks and never remove placeholder audit hashes.
+    ```
+
+---
+
+### 3. Using the Open Knowledge Foundation (OKF) Data Package with LLMs
+
+Tasleemat includes a root [`datapackage.json`](datapackage.json) following the **OKF Frictionless Data Package** standard, which indexes all 228 form schema resources.
+
+#### A. Structured Function Calling & Tool Use
+LLMs often hallucinate fields when asked to produce JSON. With Tasleemat's OKF schemas, you can supply formal parameter definitions to LLM function calling (OpenAI Tools / Claude Tool Use):
+
+```python
+import json
+import tasleemat
+
+# Load the schema directly from the companion contracts
+defn = tasleemat.get_artifact_asset("PMO-03.01", role="schema", lang="en")
+
+# Pass into Claude / OpenAI tool definitions:
+tools = [
+    {
+        "name": "create_project_charter",
+        "description": "Generate a PMI-compliant Project Charter",
+        "parameters": defn  # Exact JSON schema constraints
+    }
+]
+```
+
+#### B. In-Context Validation & Self-Correction Loops
+When using LLMs to draft project records, use `validate_artifact_data` in an automated feedback loop:
+
+```python
+import tasleemat
+
+# 1. Ask LLM to generate structured artifact JSON
+llm_json_output = {"artifact_id": "PMO-03.01", "project_name": "Incomplete Project"}
+
+# 2. Validate against Tasleemat structural contract
+report = tasleemat.validate_artifact_data("PMO-03.01", llm_json_output, mode="strict")
+
+# 3. If invalid, feed exact error pointers back to the LLM to self-correct:
+if not report.valid:
+    feedback_prompt = f"Your output had validation errors: {[(e.field_path, e.message) for e in report.errors]}. Please correct and return valid JSON."
+    # Re-prompt LLM with feedback_prompt
 ```
 
 ---

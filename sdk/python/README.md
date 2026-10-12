@@ -211,6 +211,22 @@ Every one of the 114 deliverables is organized as a synchronized bundle of 5 fil
 
 ---
 
+## 🤖 Using Tasleemat & OKF with LLMs (Claude, ChatGPT, OpenCode & Coding Agents)
+
+Tasleemat is natively engineered for **Generative AI workflows**, **Large Language Models (LLMs)**, and **AI coding assistants** (Claude, ChatGPT, OpenCode, Cursor, GitHub Copilot):
+
+- **In Standard Chat LLMs (Claude & ChatGPT)**:
+  - Copy any engineered LLM prompt from `forms/en/` or `forms/ar/` (e.g. `03_01_Project_Charter.md`) and append raw kickoff/meeting notes. The LLM generates a complete, PMI-aligned deliverable with Document Control headers.
+  - Upload `forms/` templates and `docs/LEXICON.json` into **Custom GPTs** or **Claude Projects** as persistent institutional knowledge.
+- **In Agentic IDEs (OpenCode, Cursor, Copilot)**:
+  - Use `@` context referencing (e.g. `@03_01_Project_Charter_Template.md Fill this project charter for...`) to have AI coding agents generate conforming deliverables directly into your workspace.
+- **Structured Tool Use & Function Calling via OKF**:
+  - The root [`datapackage.json`](https://github.com/fakhruldeen/Tasleemat/blob/main/datapackage.json) conforms to the **Open Knowledge Foundation (OKF)** standard. Pass companion JSON schemas into OpenAI Tools or Claude Tool Use parameters to guarantee structured JSON outputs without hallucinated fields.
+- **Self-Correction Feedback Loops**:
+  - Run `validate_artifact_data` on LLM-generated JSON payloads. If errors occur, pass exact JSON pointer error paths back to the model to self-correct automatically.
+
+---
+
 ## 🤖 Integration Architecture for Downstream Agents (e.g. Maharat)
 
 Tasleemat v2.4.0 establishes a clean, decoupled boundary for downstream AI agents and workflow orchestration platforms:
