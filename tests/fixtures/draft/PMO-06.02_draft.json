@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-06.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "schedule_and_activities_current_period": {
+    "activities_planned_this_reporting_period": "Draft notes for Activities Planned This Reporting Period."
+  },
+  "cost_and_budget_current_period": {
+    "funds_planned_to_be_spent_this_reporting_period": "Draft notes for Funds Planned To Be Spent This Reporting Period."
+  },
+  "quality_and_corrective_actions": {
+    "quality_variances_identified_this_period": "Draft notes for Quality Variances Identified This Period."
+  },
+  "planning_for_next_period": {
+    "activities_planned_for_next_reporting_period": "Draft notes for Activities Planned For Next Reporting Period."
+  },
+  "risks_issues_and_escalations": {
+    "new_risks_identified": "Draft notes for New Risks Identified."
+  },
+  "project_knowledge_and_decisions": {
+    "decisions_made": "Draft notes for Decisions Made."
+  },
+  "comments": {
+    "comments": "Draft notes for Comments."
+  }
+}

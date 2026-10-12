@@ -1,0 +1,25 @@
+{
+  "artifact_id": "PMO-04.03.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-05",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "network_logic_and_critical_path_overview": {
+    "network_diagramming_methodology": "",
+    "critical_path_summary_and_duration": "",
+    "near_critical_paths_and_float_analysis": ""
+  },
+  "precedence_relationships_and_dependencies": {
+    "core_predecessor_and_successor_chains": "",
+    "lead_and_lag_justifications": ""
+  },
+  "network_diagram_visualization": {
+    "mermaid_diagram_syntax": "",
+    "diagram_interpretation_guidelines": ""
+  }
+}

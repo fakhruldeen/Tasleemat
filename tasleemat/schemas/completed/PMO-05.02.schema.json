@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.02.schema.json",
+  "title": "Completed DECISION LOG Data Contract",
+  "description": "Additive structural schema validating completed DECISION LOG artifact data payloads (PMO-05.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "decision_log_entries": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier for the decision (e.g., DEC-01)."
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Category of the decision (e.g., Scope, Architecture, Vendor, Process)."
+        },
+        "decision": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific decision made and its underlying rationale."
+        },
+        "impacts_on_deliverables_objectives": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Anticipated impacts on deliverables, budget, schedule, or architecture."
+        },
+        "impacted_stakeholders": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stakeholders affected by this decision."
+        },
+        "responsible_party": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The person or entity responsible for making and enforcing the decision."
+        },
+        "date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The date on which the decision was officially agreed or approved."
+        },
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Alternatives considered, trade-offs, and supporting references."
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "decision",
+        "impacts_on_deliverables_objectives",
+        "impacted_stakeholders",
+        "responsible_party",
+        "date",
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "decision_log_entries"
+  ]
+}

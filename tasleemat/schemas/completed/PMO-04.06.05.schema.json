@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.06.05.schema.json",
+  "title": "Completed TEAM CHARTER Data Contract",
+  "description": "Additive structural schema validating completed TEAM CHARTER artifact data payloads (PMO-04.06.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.06.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "team_values_and_shared_vision": {
+      "type": "object",
+      "properties": {
+        "core_team_values": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Guiding moral, professional, and behavioral values agreed upon by the team."
+        },
+        "shared_project_mission_and_vision": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Collective vision articulating the team's commitment to delivering quality project outcomes."
+        }
+      },
+      "required": [
+        "core_team_values",
+        "shared_project_mission_and_vision"
+      ]
+    },
+    "operating_agreements_and_guidelines": {
+      "type": "object",
+      "properties": {
+        "working_norms_and_ground_rules": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Standard rules governing daily conduct, accountability, punctuality, and mutual respect."
+        },
+        "core_working_hours_and_availability": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Agreed overlapping collaboration hours, remote working standards, and response timeframes."
+        }
+      },
+      "required": [
+        "working_norms_and_ground_rules",
+        "core_working_hours_and_availability"
+      ]
+    },
+    "communication_and_meeting_protocols": {
+      "type": "object",
+      "properties": {
+        "meeting_cadence_and_rules": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Protocols for daily standups, status meetings, retrospectives, agendas, and note taking."
+        },
+        "communication_channels_usage": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Guidelines defining appropriate use of instant messaging, email, ticketing, and documentation repositories."
+        }
+      },
+      "required": [
+        "meeting_cadence_and_rules",
+        "communication_channels_usage"
+      ]
+    },
+    "decision_making_and_conflict_resolution": {
+      "type": "object",
+      "properties": {
+        "decision_making_framework": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Agreed decision methodology (e.g., consensus, majority vote, or technical lead authority)."
+        },
+        "conflict_escalation_and_resolution_steps": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Constructive step-by-step process for resolving interpersonal and technical disputes."
+        },
+        "team_signatures_and_commitment": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formal acknowledgment and commitment signed by all active project team members."
+        }
+      },
+      "required": [
+        "decision_making_framework",
+        "conflict_escalation_and_resolution_steps",
+        "team_signatures_and_commitment"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "team_values_and_shared_vision",
+    "operating_agreements_and_guidelines",
+    "communication_and_meeting_protocols",
+    "decision_making_and_conflict_resolution"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "artifact_id": "PMO-06.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-04",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "variance_analysis_table": {
+    "schedule_planned_result": "",
+    "schedule_actual_result": "",
+    "schedule_variance": "",
+    "schedule_root_cause": "",
+    "schedule_planned_response": "",
+    "cost_planned_result": "",
+    "cost_actual_result": "",
+    "cost_variance": "",
+    "cost_root_cause": "",
+    "cost_planned_response": "",
+    "quality_planned_result": "",
+    "quality_actual_result": "",
+    "quality_variance": "",
+    "quality_root_cause": "",
+    "quality_planned_response": "",
+    "scope_planned_result": "",
+    "scope_actual_result": "",
+    "scope_variance": "",
+    "scope_root_cause": "",
+    "scope_planned_response": ""
+  },
+  "variance_implications_and_escalation": {
+    "implications_of_continued_variance_forecast": "",
+    "escalation_required_y_n": "",
+    "escalation_details": ""
+  },
+  "comments": {
+    "comments": ""
+  }
+}

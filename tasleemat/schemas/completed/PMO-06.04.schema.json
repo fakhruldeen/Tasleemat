@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.04.schema.json",
+  "title": "Completed VARIANCE ANALYSIS Data Contract",
+  "description": "Additive structural schema validating completed VARIANCE ANALYSIS artifact data payloads (PMO-06.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "variance_analysis_table": {
+      "type": "object",
+      "properties": {
+        "schedule_planned_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The target baseline schedule milestone, duration, or date."
+        },
+        "schedule_actual_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The actual completed milestone date, duration, or current progress."
+        },
+        "schedule_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated difference between actual schedule performance and the baseline."
+        },
+        "schedule_root_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Primary cause and contributing factors for schedule variance."
+        },
+        "schedule_planned_response": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Action plan or recovery strategy designed to address schedule variance."
+        },
+        "cost_planned_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The approved baseline budget or planned expenditure for the period."
+        },
+        "cost_actual_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The actual expenditures or costs incurred during the period."
+        },
+        "cost_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated difference between actual expenditures and the cost baseline."
+        },
+        "cost_root_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Primary drivers and events resulting in cost overruns or savings."
+        },
+        "cost_planned_response": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Corrective measures and cost containment actions to realign with budget."
+        },
+        "quality_planned_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The quality metric, acceptance threshold, or standard expected."
+        },
+        "quality_actual_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The actual measured quality outcome, defect rate, or test score."
+        },
+        "quality_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Discrepancy between actual quality achievements and defined quality metrics."
+        },
+        "quality_root_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Root cause analysis detailing why quality requirements were not met."
+        },
+        "quality_planned_response": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Remediation plan, rework procedures, or process improvements."
+        },
+        "scope_planned_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The authorized deliverables and work packages committed in the scope statement."
+        },
+        "scope_actual_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The actual scope deliverables completed and verified during the period."
+        },
+        "scope_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Extent of scope variance, unapproved scope additions, or unfinished deliverables."
+        },
+        "scope_root_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Factors causing scope variance, creep, or delayed deliverable completions."
+        },
+        "scope_planned_response": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Corrective actions, change requests, or realignment to baseline scope."
+        }
+      },
+      "required": [
+        "schedule_planned_result",
+        "schedule_actual_result",
+        "schedule_variance",
+        "schedule_root_cause",
+        "schedule_planned_response",
+        "cost_planned_result",
+        "cost_actual_result",
+        "cost_variance",
+        "cost_root_cause",
+        "cost_planned_response",
+        "quality_planned_result",
+        "quality_actual_result",
+        "quality_variance",
+        "quality_root_cause",
+        "quality_planned_response",
+        "scope_planned_result",
+        "scope_actual_result",
+        "scope_variance",
+        "scope_root_cause",
+        "scope_planned_response"
+      ]
+    },
+    "variance_implications_and_escalation": {
+      "type": "object",
+      "properties": {
+        "implications_of_continued_variance_forecast": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Anticipated long-term impact on overall project objectives if variances persist."
+        },
+        "escalation_required_y_n": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Clear indication (Yes/No) whether senior leadership escalation is necessary."
+        },
+        "escalation_details": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Details of the specific escalation path, required decisions, and target stakeholders."
+        }
+      },
+      "required": [
+        "implications_of_continued_variance_forecast",
+        "escalation_required_y_n",
+        "escalation_details"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Additional explanatory notes, cross-functional dependencies, or contextual insights."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "variance_analysis_table",
+    "variance_implications_and_escalation",
+    "comments"
+  ]
+}

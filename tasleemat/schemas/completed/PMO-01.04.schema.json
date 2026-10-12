@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-01.04.schema.json",
+  "title": "Completed Gap Analysis Report Data Contract",
+  "description": "Additive structural schema validating completed Gap Analysis Report artifact data payloads (PMO-01.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-01.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "analysis_context": {
+      "type": "object",
+      "properties": {
+        "analysis_objective_and_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The strategic purpose and organizational business domain boundaries evaluated by this gap analysis."
+        },
+        "current_state_summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Executive summary of the baseline operating model, legacy systems, and existing operational capabilities."
+        },
+        "desired_target_state": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The envisioned future operating state, target business architecture, and required capability levels."
+        }
+      },
+      "required": [
+        "analysis_objective_and_scope",
+        "current_state_summary",
+        "desired_target_state"
+      ]
+    },
+    "gap_evaluation_matrix": {
+      "type": "object",
+      "properties": {
+        "functional_and_process_gaps": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific discrepancies identified between current operational workflows and target process efficiency standards."
+        },
+        "technical_and_systems_gaps": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Deficiencies in current software infrastructure, data architecture, security tooling, and integration capabilities."
+        },
+        "people_and_competency_gaps": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human capital deficiencies, staffing shortages, and technical skill gaps required to sustain the target state."
+        },
+        "risk_and_business_impact": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The quantified operational risk, revenue exposure, and strategic impact of leaving identified gaps unaddressed."
+        }
+      },
+      "required": [
+        "functional_and_process_gaps",
+        "technical_and_systems_gaps",
+        "people_and_competency_gaps",
+        "risk_and_business_impact"
+      ]
+    },
+    "remediation_strategy": {
+      "type": "object",
+      "properties": {
+        "closure_initiative_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific project, enhancement sprint, or restructuring action designed to bridge the capability gap."
+        },
+        "priority_and_execution_feasibility": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The implementation urgency (Urgent/High/Medium/Low) and technical/financial execution feasibility rating."
+        },
+        "assigned_owner_and_target_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The accountable business lead and committed milestone target date for closing the capability gap."
+        }
+      },
+      "required": [
+        "closure_initiative_description",
+        "priority_and_execution_feasibility",
+        "assigned_owner_and_target_date"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "analysis_context",
+    "gap_evaluation_matrix",
+    "remediation_strategy"
+  ]
+}

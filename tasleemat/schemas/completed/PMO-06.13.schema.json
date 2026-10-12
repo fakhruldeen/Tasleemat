@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.13.schema.json",
+  "title": "Completed EXECUTIVE STEERING COMMITTEE DASHBOARD Data Contract",
+  "description": "Additive structural schema validating completed EXECUTIVE STEERING COMMITTEE DASHBOARD artifact data payloads (PMO-06.13).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.13"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "executive_health_baseline_indicators": {
+      "type": "object",
+      "properties": {
+        "executive_summary_and_overall_health_rag": {
+          "type": "string",
+          "minLength": 1,
+          "description": "High-level synthesis of progress and overall project health color code (Red, Amber, Green)."
+        },
+        "baseline_variance_summary_schedule_cost_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Quantitative variance snapshot across CPI, SPI, budget burn rate, and major milestones."
+        }
+      },
+      "required": [
+        "executive_summary_and_overall_health_rag",
+        "baseline_variance_summary_schedule_cost_scope"
+      ]
+    },
+    "strategic_milestones_resource_health": {
+      "type": "object",
+      "properties": {
+        "key_milestone_roadmap_and_forecast_dates": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Target completion versus revised forecast for the next 3 to 6 strategic stage gates."
+        }
+      },
+      "required": [
+        "key_milestone_roadmap_and_forecast_dates"
+      ]
+    },
+    "risks_decisions_leadership_actions": {
+      "type": "object",
+      "properties": {
+        "top_three_strategic_risks_and_mitigations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Highest-exposure threats with potential business impact and active contingency measures."
+        },
+        "required_steering_committee_decisions_and_guidance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Explicit governance approvals, budget reallocations, or policy waivers requested from executive sponsors."
+        }
+      },
+      "required": [
+        "top_three_strategic_risks_and_mitigations",
+        "required_steering_committee_decisions_and_guidance"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "executive_health_baseline_indicators",
+    "strategic_milestones_resource_health",
+    "risks_decisions_leadership_actions"
+  ]
+}

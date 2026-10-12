@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-01.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-01-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "1_benefits_baseline": {
+    "benefit_statements": "Draft notes for Benefit Statements."
+  },
+  "2_benefit_realisation_timeline": {
+    "realisation_date": "Draft notes for Realisation Date."
+  },
+  "3_measurement_and_governance": {
+    "benefit_metrics": "Draft notes for Benefit Metrics."
+  },
+  "4_benefit_risks_and_actions": {
+    "benefit_risks": "Draft notes for Benefit Risks."
+  }
+}

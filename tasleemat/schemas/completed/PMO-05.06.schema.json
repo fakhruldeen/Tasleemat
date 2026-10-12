@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.06.schema.json",
+  "title": "Completed TEAM PERFORMANCE ASSESSMENT Data Contract",
+  "description": "Additive structural schema validating completed TEAM PERFORMANCE ASSESSMENT artifact data payloads (PMO-05.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "technical_performance": {
+      "type": "object",
+      "properties": {
+        "technical_performance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Evaluation of the team's ability to achieve scope, quality, schedule, and cost goals."
+        }
+      },
+      "required": [
+        "technical_performance"
+      ]
+    },
+    "interpersonal_competency": {
+      "type": "object",
+      "properties": {
+        "interpersonal_competency": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Evaluation of communication, collaboration, conflict management, and decision making."
+        }
+      },
+      "required": [
+        "interpersonal_competency"
+      ]
+    },
+    "team_characteristics": {
+      "type": "object",
+      "properties": {
+        "team_characteristics": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment of overall team morale, cohesion, trust, and shared commitment."
+        }
+      },
+      "required": [
+        "team_characteristics"
+      ]
+    },
+    "team_strengths_and_weaknesses": {
+      "type": "object",
+      "properties": {
+        "team_strengths_and_weaknesses": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identification of critical technical/interpersonal strengths and operational weaknesses."
+        }
+      },
+      "required": [
+        "team_strengths_and_weaknesses"
+      ]
+    },
+    "areas_for_development": {
+      "type": "object",
+      "properties": {
+        "areas_for_development": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Targeted skill acquisition, training programs, team building, and coaching plans."
+        }
+      },
+      "required": [
+        "areas_for_development"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "technical_performance",
+    "interpersonal_competency",
+    "team_characteristics",
+    "team_strengths_and_weaknesses",
+    "areas_for_development"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.02.schema.json",
+  "title": "Completed REQUIREMENTS MANAGEMENT PLAN Data Contract",
+  "description": "Additive structural schema validating completed REQUIREMENTS MANAGEMENT PLAN artifact data payloads (PMO-04.02.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.02.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "requirements_collection_and_analysis": {
+      "type": "object",
+      "properties": {
+        "requirements_elicitation_techniques": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Methods used to gather stakeholder needs including interviews, focus groups, and surveys."
+        },
+        "requirements_analysis_and_elaboration": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Analytical processes applied to structure, clarify, and model requirements."
+        },
+        "stakeholder_engagement_for_requirements": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Strategy for maintaining active stakeholder participation throughout requirements definition."
+        }
+      },
+      "required": [
+        "requirements_elicitation_techniques",
+        "requirements_analysis_and_elaboration",
+        "stakeholder_engagement_for_requirements"
+      ]
+    },
+    "requirements_categorization_and_documentation": {
+      "type": "object",
+      "properties": {
+        "requirements_taxonomy_and_categories": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Classification scheme covering business, stakeholder, solution, functional, and non-functional requirements."
+        },
+        "requirements_documentation_standards": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formatting guidelines and documentation artifacts used to record verified requirements."
+        }
+      },
+      "required": [
+        "requirements_taxonomy_and_categories",
+        "requirements_documentation_standards"
+      ]
+    },
+    "prioritization_and_metrics": {
+      "type": "object",
+      "properties": {
+        "requirements_prioritization_scheme": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Ranking methodology (such as MoSCoW, weighted scoring, or value ranking) to prioritize scope."
+        },
+        "requirements_product_metrics": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Quantitative metrics measuring requirements volatility, defect density, and coverage."
+        }
+      },
+      "required": [
+        "requirements_prioritization_scheme",
+        "requirements_product_metrics"
+      ]
+    },
+    "traceability_and_configuration_management": {
+      "type": "object",
+      "properties": {
+        "traceability_structure_and_attributes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Attributes and linkages tracked across the requirements lifecycle to ensure bidirectional traceability."
+        },
+        "requirements_configuration_control": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Procedures for baseline versioning and evaluating changes to documented requirements."
+        }
+      },
+      "required": [
+        "traceability_structure_and_attributes",
+        "requirements_configuration_control"
+      ]
+    },
+    "verification_and_validation_strategy": {
+      "type": "object",
+      "properties": {
+        "requirements_verification_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Techniques ensuring requirements are complete, consistent, unambiguous, and testable."
+        },
+        "validation_and_user_acceptance_strategy": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Approach for validating that final deliverables fulfill underlying business objectives."
+        }
+      },
+      "required": [
+        "requirements_verification_method",
+        "validation_and_user_acceptance_strategy"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "requirements_collection_and_analysis",
+    "requirements_categorization_and_documentation",
+    "prioritization_and_metrics",
+    "traceability_and_configuration_management",
+    "verification_and_validation_strategy"
+  ]
+}

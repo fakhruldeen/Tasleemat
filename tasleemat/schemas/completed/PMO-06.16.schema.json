@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.16.schema.json",
+  "title": "Completed RISK AND ISSUE ESCALATION REPORT Data Contract",
+  "description": "Additive structural schema validating completed RISK AND ISSUE ESCALATION REPORT artifact data payloads (PMO-06.16).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.16"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "escalation_event_impact_diagnosis": {
+      "type": "object",
+      "properties": {
+        "escalation_trigger_and_urgency_classification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Threshold breach triggering escalation (Budget +10%, Critical Path +14 days, Contractual dispute) and urgency rating."
+        },
+        "detailed_context_of_risk_or_issue": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Factual, chronological narrative of the unresolved threat or materialized impediment."
+        },
+        "project_impact_analysis_schedule_cost_scope_reputation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Quantifiable financial, milestone delay, operational, and stakeholder reputation ramifications."
+        }
+      },
+      "required": [
+        "escalation_trigger_and_urgency_classification",
+        "detailed_context_of_risk_or_issue",
+        "project_impact_analysis_schedule_cost_scope_reputation"
+      ]
+    },
+    "options_analysis_leadership_decision_request": {
+      "type": "object",
+      "properties": {
+        "evaluated_options_and_recommended_course_of_action": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Alternative scenarios analyzed with pros, cons, costs, and the Project Manager recommended option."
+        },
+        "required_executive_intervention_and_decision_deadline": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific executive authority, budget release, or legal intervention required and hard deadline for decision."
+        }
+      },
+      "required": [
+        "evaluated_options_and_recommended_course_of_action",
+        "required_executive_intervention_and_decision_deadline"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "escalation_event_impact_diagnosis",
+    "options_analysis_leadership_decision_request"
+  ]
+}

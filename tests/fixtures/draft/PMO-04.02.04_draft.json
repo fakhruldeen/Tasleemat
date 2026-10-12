@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.02.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-02-04",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "traceability_parameters": {
+    "traceability_purpose_and_baseline_reference": "Draft notes for Traceability Purpose And Baseline Reference."
+  },
+  "requirements_traceability_mapping": {
+    "business_need_to_requirement_linkage": "Draft notes for Business Need To Requirement Linkage."
+  },
+  "inter_requirements_dependencies": {
+    "core_inter_requirement_dependencies": "Draft notes for Core Inter Requirement Dependencies."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.08.schema.json",
+  "title": "Completed PROJECT SCHEDULE Data Contract",
+  "description": "Additive structural schema validating completed PROJECT SCHEDULE artifact data payloads (PMO-04.03.08).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.08"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "baseline_schedule_summary": {
+      "type": "object",
+      "properties": {
+        "project_start_and_target_finish_dates": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The authorized baseline start date and targeted project completion date."
+        },
+        "schedule_data_version_and_baseline_status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The formal schedule model version number and baseline authorization state."
+        },
+        "total_critical_path_length_and_major_phases": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Total working days on the critical path and scheduled durations for each major project phase."
+        }
+      },
+      "required": [
+        "project_start_and_target_finish_dates",
+        "schedule_data_version_and_baseline_status",
+        "total_critical_path_length_and_major_phases"
+      ]
+    },
+    "detailed_schedule_data": {
+      "type": "object",
+      "properties": {
+        "wbs_code_and_activity_schedule_mapping": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Consolidated schedule line items linking WBS code, activity title, and work package."
+        },
+        "planned_start_and_finish_dates": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Approved baseline start date and baseline completion date for each scheduled activity."
+        },
+        "assigned_resources_and_effort_allocation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Designated resource leads, team members, and allocated effort hours per activity."
+        }
+      },
+      "required": [
+        "wbs_code_and_activity_schedule_mapping",
+        "planned_start_and_finish_dates",
+        "assigned_resources_and_effort_allocation"
+      ]
+    },
+    "critical_path_and_float_analysis": {
+      "type": "object",
+      "properties": {
+        "critical_path_flag_and_dependencies": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Clear indicator (Yes/No) identifying critical path activities and predecessor linkages."
+        },
+        "total_float_and_free_float_values": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated total float and free float values in working days for each schedule activity."
+        },
+        "schedule_risk_and_recovery_considerations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identification of high-risk scheduling bottlenecks and contingency deployment rules."
+        }
+      },
+      "required": [
+        "critical_path_flag_and_dependencies",
+        "total_float_and_free_float_values",
+        "schedule_risk_and_recovery_considerations"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "baseline_schedule_summary",
+    "detailed_schedule_data",
+    "critical_path_and_float_analysis"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.01.02.schema.json",
+  "title": "Completed CHANGE MANAGEMENT PLAN Data Contract",
+  "description": "Additive structural schema validating completed CHANGE MANAGEMENT PLAN artifact data payloads (PMO-04.01.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.01.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "change_management_approach": {
+      "type": "object",
+      "properties": {
+        "change_philosophy_and_governance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Principles governing how change requests are evaluated, prioritized, and approved."
+        },
+        "change_thresholds_and_triggers": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Conditions and variance thresholds that necessitate formal change control submissions."
+        },
+        "change_tracking_and_tools": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Software tools and tracking mechanisms used to log and trace change requests."
+        }
+      },
+      "required": [
+        "change_philosophy_and_governance",
+        "change_thresholds_and_triggers",
+        "change_tracking_and_tools"
+      ]
+    },
+    "definitions_of_change": {
+      "type": "object",
+      "properties": {
+        "minor_change_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Criteria for low-impact changes manageable within existing project tolerances."
+        },
+        "major_change_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Criteria for significant changes affecting baselines, budgets, or critical path."
+        },
+        "emergency_change_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Expedited protocols for urgent operational or security change interventions."
+        }
+      },
+      "required": [
+        "minor_change_definition",
+        "major_change_definition",
+        "emergency_change_definition"
+      ]
+    },
+    "change_control_board_ccb": {
+      "type": "object",
+      "properties": {
+        "ccb_composition_and_roles": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Designated members, roles, and voting authority within the Change Control Board."
+        },
+        "meeting_cadence_and_quorum": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Frequency of CCB meetings and quorum requirements for binding change approvals."
+        },
+        "escalation_and_delegation_rules": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Rules governing threshold-based escalation to executive sponsors or steering committees."
+        }
+      },
+      "required": [
+        "ccb_composition_and_roles",
+        "meeting_cadence_and_quorum",
+        "escalation_and_delegation_rules"
+      ]
+    },
+    "change_control_process": {
+      "type": "object",
+      "properties": {
+        "change_submission_workflow": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Standard operating procedure for logging and submitting formal change requests."
+        },
+        "impact_assessment_methodology": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cross-functional analysis evaluating scope, schedule, cost, quality, and risk impact."
+        },
+        "approval_and_baseline_update_protocol": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formal sign-off steps and procedures for updating affected baselines and plans."
+        },
+        "communication_and_implementation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Process for communicating change decisions and tracking implementation progress."
+        }
+      },
+      "required": [
+        "change_submission_workflow",
+        "impact_assessment_methodology",
+        "approval_and_baseline_update_protocol",
+        "communication_and_implementation"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "change_management_approach",
+    "definitions_of_change",
+    "change_control_board_ccb",
+    "change_control_process"
+  ]
+}

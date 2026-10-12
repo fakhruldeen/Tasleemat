@@ -1,0 +1,52 @@
+{
+  "artifact_id": "PMO-00.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-04",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "matrix_basis": {
+    "matrix_scope_and_level": "Substantive completed details for Matrix Scope And Level.",
+    "capacity_unit_of_measure": "Substantive completed details for Capacity Unit Of Measure.",
+    "periods_covered": "Substantive completed details for Periods Covered.",
+    "source_of_truth_or_extract": "Substantive completed details for Source Of Truth Or Extract.",
+    "matrix_owner": "Substantive completed details for Matrix Owner.",
+    "last_updated": "Substantive completed details for Last Updated."
+  },
+  "capacity_by_resource": {
+    "id": "Substantive completed details for Id.",
+    "resource_role_or_team": "Substantive completed details for Resource Role Or Team.",
+    "period": "Substantive completed details for Period.",
+    "total_available": "Substantive completed details for Total Available.",
+    "allocated": "Substantive completed details for Allocated.",
+    "remaining": "Substantive completed details for Remaining.",
+    "constraints_or_single_points_of_failure": "Substantive completed details for Constraints Or Single Points Of Failure.",
+    "notes": "Substantive completed details for Notes."
+  },
+  "demand_by_resource": {
+    "id": "Substantive completed details for Id.",
+    "resource_role": "Substantive completed details for Resource Role.",
+    "period": "Substantive completed details for Period.",
+    "required_capacity": "Substantive completed details for Required Capacity.",
+    "source_of_demand": "Substantive completed details for Source Of Demand.",
+    "priority": "Substantive completed details for Priority."
+  },
+  "gap_analysis": {
+    "resource_role": "Substantive completed details for Resource Role.",
+    "gap": "Substantive completed details for Gap.",
+    "period": "Substantive completed details for Period.",
+    "resolution_planned": "Substantive completed details for Resolution Planned.",
+    "resolution_owner": "Substantive completed details for Resolution Owner.",
+    "resolution_date": "Substantive completed details for Resolution Date."
+  },
+  "contingency": {
+    "resource_role": "Substantive completed details for Resource Role.",
+    "contingency_type": "Substantive completed details for Contingency Type.",
+    "contingency_amount": "Substantive completed details for Contingency Amount.",
+    "how_it_would_be_used": "Substantive completed details for How It Would Be Used."
+  }
+}

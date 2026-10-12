@@ -1,0 +1,19 @@
+{
+  "artifact_id": "PMO-06.09",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-09",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "vendor_performance_scorecard_entries": {
+    "metric_kpi": "Substantive completed details for Metric Kpi.",
+    "target_score": "Substantive completed details for Target Score.",
+    "actual_score": "Substantive completed details for Actual Score.",
+    "variance": "Substantive completed details for Variance.",
+    "corrective_action": "Substantive completed details for Corrective Action."
+  }
+}

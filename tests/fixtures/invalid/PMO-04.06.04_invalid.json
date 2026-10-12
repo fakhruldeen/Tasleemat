@@ -1,0 +1,26 @@
+{
+  "artifact_id": "PMO-04.06.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-06-04",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "raci_model_definitions_and_key": {
+    "responsible_r_definition": "",
+    "accountable_a_definition": "",
+    "consulted_c_definition": "",
+    "informed_i_definition": ""
+  },
+  "assignment_matrix_work_packages_vs_roles": {
+    "wbs_deliverable_and_assigned_raci_codes": "",
+    "role_coverage_and_work_distribution": ""
+  },
+  "governance_and_accountability_rules": {
+    "single_accountability_governance_rule": "",
+    "escalation_and_conflict_resolution_protocol": ""
+  }
+}

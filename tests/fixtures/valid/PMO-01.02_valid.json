@@ -1,0 +1,37 @@
+{
+  "artifact_id": "PMO-01.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-01-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "1_benefits_baseline": {
+    "benefit_statements": "Substantive completed details for Benefit Statements.",
+    "benefit_categories": "Substantive completed details for Benefit Categories.",
+    "benefit_owners": "Substantive completed details for Benefit Owners.",
+    "baseline_values": "Substantive completed details for Baseline Values.",
+    "attribution_assumption": "Substantive completed details for Attribution Assumption."
+  },
+  "2_benefit_realisation_timeline": {
+    "realisation_date": "Substantive completed details for Realisation Date.",
+    "lead_and_lag_indicators": "Substantive completed details for Lead And Lag Indicators.",
+    "dis_benefits": "Substantive completed details for Dis Benefits.",
+    "dependencies": "Substantive completed details for Dependencies."
+  },
+  "3_measurement_and_governance": {
+    "benefit_metrics": "Substantive completed details for Benefit Metrics.",
+    "measurement_method": "Substantive completed details for Measurement Method.",
+    "review_cadence": "Substantive completed details for Review Cadence.",
+    "benefit_status_rules": "Substantive completed details for Benefit Status Rules.",
+    "reporting_audience": "Substantive completed details for Reporting Audience."
+  },
+  "4_benefit_risks_and_actions": {
+    "benefit_risks": "Substantive completed details for Benefit Risks.",
+    "risk_owner_and_response": "Substantive completed details for Risk Owner And Response.",
+    "early_warning_trigger": "Substantive completed details for Early Warning Trigger."
+  }
+}

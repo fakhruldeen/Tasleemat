@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.05.02.schema.json",
+  "title": "Completed QUALITY METRICS Data Contract",
+  "description": "Additive structural schema validating completed QUALITY METRICS artifact data payloads (PMO-04.05.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.05.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "deliverable_quality_metrics": {
+      "type": "object",
+      "properties": {
+        "metric_name_and_target_standard": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific quality attribute, measurable KPI, and approved benchmark target value."
+        },
+        "associated_deliverable_and_work_package": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The corresponding project deliverable, subsystem, or WBS component measured."
+        }
+      },
+      "required": [
+        "metric_name_and_target_standard",
+        "associated_deliverable_and_work_package"
+      ]
+    },
+    "process_and_performance_quality_metrics": {
+      "type": "object",
+      "properties": {
+        "process_efficiency_metric": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Process measurement evaluating cycle times, throughput, sprint burndown, or rework rates."
+        },
+        "defect_density_and_severity_thresholds": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Allowable defect counts categorized by severity level (Critical, Major, Minor)."
+        }
+      },
+      "required": [
+        "process_efficiency_metric",
+        "defect_density_and_severity_thresholds"
+      ]
+    },
+    "quality_measurement_and_tolerance_limits": {
+      "type": "object",
+      "properties": {
+        "measurement_frequency_and_tooling": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How often data is collected and the specific testing tools or inspection techniques used."
+        },
+        "acceptable_tolerance_range_and_escalation_trigger": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Upper and lower control limits (+/- tolerance) and triggers requiring corrective escalation."
+        }
+      },
+      "required": [
+        "measurement_frequency_and_tooling",
+        "acceptable_tolerance_range_and_escalation_trigger"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "deliverable_quality_metrics",
+    "process_and_performance_quality_metrics",
+    "quality_measurement_and_tolerance_limits"
+  ]
+}

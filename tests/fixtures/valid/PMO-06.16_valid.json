@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-06.16",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-16",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "escalation_event_impact_diagnosis": {
+    "escalation_trigger_and_urgency_classification": "Substantive completed details for Escalation Trigger And Urgency Classification.",
+    "detailed_context_of_risk_or_issue": "Substantive completed details for Detailed Context Of Risk Or Issue.",
+    "project_impact_analysis_schedule_cost_scope_reputation": "Substantive completed details for Project Impact Analysis Schedule Cost Scope Reputation."
+  },
+  "options_analysis_leadership_decision_request": {
+    "evaluated_options_and_recommended_course_of_action": "Substantive completed details for Evaluated Options And Recommended Course Of Action.",
+    "required_executive_intervention_and_decision_deadline": "Substantive completed details for Required Executive Intervention And Decision Deadline."
+  }
+}

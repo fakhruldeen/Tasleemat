@@ -1,0 +1,31 @@
+{
+  "artifact_id": "PMO-04.08.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-08-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "risk_identification_and_event_narrative": {
+    "risk_identifier_and_title": "Substantive completed details for Risk Identifier And Title.",
+    "risk_statement_and_operational_context": "Substantive completed details for Risk Statement And Operational Context.",
+    "assigned_risk_owner_and_stakeholders": "Substantive completed details for Assigned Risk Owner And Stakeholders."
+  },
+  "qualitative_and_quantitative_analysis": {
+    "assessed_probability_and_impact_ratings": "Substantive completed details for Assessed Probability And Impact Ratings.",
+    "expected_monetary_value_emv_analysis": "Substantive completed details for Expected Monetary Value Emv Analysis.",
+    "schedule_delay_and_critical_path_exposure": "Substantive completed details for Schedule Delay And Critical Path Exposure."
+  },
+  "root_cause_triggers_and_impacts": {
+    "root_cause_analysis_details": "Substantive completed details for Root Cause Analysis Details.",
+    "early_warning_triggers_and_thresholds": "Substantive completed details for Early Warning Triggers And Thresholds."
+  },
+  "detailed_response_strategy_and_action_plan": {
+    "primary_mitigation_action_plan": "Substantive completed details for Primary Mitigation Action Plan.",
+    "contingency_and_fallback_response_plan": "Substantive completed details for Contingency And Fallback Response Plan.",
+    "allocated_contingency_budget_and_reserves": "Substantive completed details for Allocated Contingency Budget And Reserves."
+  }
+}

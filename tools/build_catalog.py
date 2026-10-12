@@ -141,10 +141,10 @@ def find_asset_bundles():
         rel = lambda p: str(p.relative_to(ROOT)) if p else None
 
         # Generate completed_data_validation metadata
-        schema_rel = COMPANION_SCHEMAS.get(doc_ref)
-        if schema_rel:
-            full_schema_path = ROOT / "tasleemat" / schema_rel
-            schema_fp = compute_file_sha256(full_schema_path) if full_schema_path.exists() else None
+        full_schema_path = ROOT / "tasleemat" / "schemas" / "completed" / f"{doc_ref}.schema.json"
+        if full_schema_path.exists():
+            schema_rel = f"schemas/completed/{doc_ref}.schema.json"
+            schema_fp = compute_file_sha256(full_schema_path)
             validation_meta = {
                 "status": "supported",
                 "schema_id": f"https://tasleemat.pmo/{schema_rel}",

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.04.04.schema.json",
+  "title": "Completed COST BASELINE Data Contract",
+  "description": "Additive structural schema validating completed COST BASELINE artifact data payloads (PMO-04.04.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.04.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "time_phased_cost_baseline_s_curve": {
+      "type": "object",
+      "properties": {
+        "reporting_period_and_planned_expenditures": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Periodic time-phased planned expenditures across months or fiscal quarters."
+        },
+        "cumulative_planned_value_s_curve_pv": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The authorized cumulative planned budget curve from project start to completion."
+        },
+        "budget_at_completion_bac_total": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The total authorized baseline budget excluding management reserves."
+        }
+      },
+      "required": [
+        "reporting_period_and_planned_expenditures",
+        "cumulative_planned_value_s_curve_pv",
+        "budget_at_completion_bac_total"
+      ]
+    },
+    "work_package_budget_allocations": {
+      "type": "object",
+      "properties": {
+        "control_account_and_work_package_allocations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Approved baseline budget figures mapped to specific WBS control accounts."
+        },
+        "contingency_reserve_distribution": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Distribution of project contingency reserves assigned across control accounts."
+        }
+      },
+      "required": [
+        "control_account_and_work_package_allocations",
+        "contingency_reserve_distribution"
+      ]
+    },
+    "project_funding_requirements_and_limits": {
+      "type": "object",
+      "properties": {
+        "periodic_funding_requirements": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Total cash outlay required per period, incorporating funding step increments."
+        },
+        "management_reserve_and_total_project_budget": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Executive management reserve amount and the total authorized project budget (BAC + Management Reserve)."
+        }
+      },
+      "required": [
+        "periodic_funding_requirements",
+        "management_reserve_and_total_project_budget"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "time_phased_cost_baseline_s_curve",
+    "work_package_budget_allocations",
+    "project_funding_requirements_and_limits"
+  ]
+}

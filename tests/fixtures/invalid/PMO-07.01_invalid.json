@@ -1,0 +1,66 @@
+{
+  "artifact_id": "PMO-07.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-01",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "project_performance": {
+    "requirements_definition_and_management_what_worked_well": "",
+    "requirements_definition_and_management_what_can_be_improved": "",
+    "scope_definition_and_management_what_worked_well": "",
+    "scope_definition_and_management_what_can_be_improved": "",
+    "schedule_development_and_control_what_worked_well": "",
+    "schedule_development_and_control_what_can_be_improved": "",
+    "cost_estimating_and_control_what_worked_well": "",
+    "cost_estimating_and_control_what_can_be_improved": "",
+    "quality_planning_and_control_what_worked_well": "",
+    "quality_planning_and_control_what_can_be_improved": "",
+    "physical_resource_planning_and_control_what_worked_well": "",
+    "physical_resource_planning_and_control_what_can_be_improved": "",
+    "team_planning_development_and_performance_what_worked_well": "",
+    "team_planning_development_and_performance_what_can_be_improved": "",
+    "communications_management_what_worked_well": "",
+    "communications_management_what_can_be_improved": "",
+    "reporting_what_worked_well": "",
+    "reporting_what_can_be_improved": "",
+    "risk_management_what_worked_well": "",
+    "risk_management_what_can_be_improved": "",
+    "procurement_planning_and_management_what_worked_well": "",
+    "procurement_planning_and_management_what_can_be_improved": "",
+    "stakeholder_engagement_what_worked_well": "",
+    "stakeholder_engagement_what_can_be_improved": "",
+    "process_improvement_information_what_worked_well": "",
+    "process_improvement_information_what_can_be_improved": "",
+    "product_specific_information_what_worked_well": "",
+    "product_specific_information_what_can_be_improved": "",
+    "other_what_worked_well": "",
+    "other_what_can_be_improved": ""
+  },
+  "risks_and_issues": {
+    "risk_or_issue": "",
+    "response": "",
+    "comments": ""
+  },
+  "quality_defects": {
+    "defect": "",
+    "resolution": "",
+    "comments": ""
+  },
+  "vendor_management": {
+    "vendor": "",
+    "issue": "",
+    "resolution": "",
+    "comments": ""
+  },
+  "areas_of_exceptional_performance": {
+    "entry": ""
+  },
+  "areas_for_improvement": {
+    "entry": ""
+  }
+}

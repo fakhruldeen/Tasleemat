@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.04.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-04-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "activity_and_work_package_cost_breakdown": {
+    "activity_identifier_and_description": "Draft notes for Activity Identifier And Description."
+  },
+  "resource_cost_rates_and_basis_of_estimates": {
+    "labor_rate_categories_and_rate_cards": "Draft notes for Labor Rate Categories And Rate Cards."
+  },
+  "contingency_and_management_reserves": {
+    "contingency_reserve_allocation": "Draft notes for Contingency Reserve Allocation."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-07.07",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-07",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "resource_demobilization_asset_clearance": {
+    "resource_release_scope_and_demobilization_schedule": "",
+    "equipment_hardware_and_physical_asset_return_log": ""
+  },
+  "security_deprovisioning_financial_closure": {
+    "it_access_revocation_and_account_deprovisioning": "",
+    "financial_cost_center_closure_and_invoice_clearance": "",
+    "hr_and_functional_manager_demobilization_signoff": ""
+  }
+}

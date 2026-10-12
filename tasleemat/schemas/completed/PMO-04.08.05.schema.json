@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.08.05.schema.json",
+  "title": "Completed RISK DATA SHEET Data Contract",
+  "description": "Additive structural schema validating completed RISK DATA SHEET artifact data payloads (PMO-04.08.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.08.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "risk_identification_and_event_narrative": {
+      "type": "object",
+      "properties": {
+        "risk_identifier_and_title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier code and descriptive title for the specific high-impact risk."
+        },
+        "risk_statement_and_operational_context": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Comprehensive statement articulating cause, condition, and operational impact."
+        },
+        "assigned_risk_owner_and_stakeholders": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Designated risk owner, action lead, and impacted project stakeholders."
+        }
+      },
+      "required": [
+        "risk_identifier_and_title",
+        "risk_statement_and_operational_context",
+        "assigned_risk_owner_and_stakeholders"
+      ]
+    },
+    "qualitative_and_quantitative_analysis": {
+      "type": "object",
+      "properties": {
+        "assessed_probability_and_impact_ratings": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed probability rating and impact breakdown across scope, schedule, and cost."
+        },
+        "expected_monetary_value_emv_analysis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Quantitative calculation of monetary impact (Probability x Financial Consequence)."
+        },
+        "schedule_delay_and_critical_path_exposure": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Projected days of delay on critical path activities if the risk occurs."
+        }
+      },
+      "required": [
+        "assessed_probability_and_impact_ratings",
+        "expected_monetary_value_emv_analysis",
+        "schedule_delay_and_critical_path_exposure"
+      ]
+    },
+    "root_cause_triggers_and_impacts": {
+      "type": "object",
+      "properties": {
+        "root_cause_analysis_details": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Underlying systemic, technical, or environmental drivers causing the risk."
+        },
+        "early_warning_triggers_and_thresholds": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifiable metrics and operational thresholds that trigger risk activation."
+        }
+      },
+      "required": [
+        "root_cause_analysis_details",
+        "early_warning_triggers_and_thresholds"
+      ]
+    },
+    "detailed_response_strategy_and_action_plan": {
+      "type": "object",
+      "properties": {
+        "primary_mitigation_action_plan": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Step-by-step preventive measures, action item owners, and completion deadlines."
+        },
+        "contingency_and_fallback_response_plan": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Secondary action plan implemented if primary mitigation fails or risk materializes."
+        },
+        "allocated_contingency_budget_and_reserves": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific financial reserve allocation assigned to execute this risk response."
+        }
+      },
+      "required": [
+        "primary_mitigation_action_plan",
+        "contingency_and_fallback_response_plan",
+        "allocated_contingency_budget_and_reserves"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "risk_identification_and_event_narrative",
+    "qualitative_and_quantitative_analysis",
+    "root_cause_triggers_and_impacts",
+    "detailed_response_strategy_and_action_plan"
+  ]
+}

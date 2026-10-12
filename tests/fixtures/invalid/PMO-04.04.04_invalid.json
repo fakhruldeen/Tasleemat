@@ -1,0 +1,25 @@
+{
+  "artifact_id": "PMO-04.04.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-04-04",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "time_phased_cost_baseline_s_curve": {
+    "reporting_period_and_planned_expenditures": "",
+    "cumulative_planned_value_s_curve_pv": "",
+    "budget_at_completion_bac_total": ""
+  },
+  "work_package_budget_allocations": {
+    "control_account_and_work_package_allocations": "",
+    "contingency_reserve_distribution": ""
+  },
+  "project_funding_requirements_and_limits": {
+    "periodic_funding_requirements": "",
+    "management_reserve_and_total_project_budget": ""
+  }
+}

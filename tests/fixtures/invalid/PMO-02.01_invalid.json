@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-02.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-01",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "1_tailoring_basis": {
+    "organizational_methodology": "",
+    "tailoring_drivers": "",
+    "applicable_standards": "",
+    "inherited_tailoring": ""
+  },
+  "2_tailoring_decisions": {
+    "process_or_artifact": "",
+    "standard_requirement": "",
+    "decision": "",
+    "rationale": "",
+    "consequence": "",
+    "reversibility": "",
+    "impact_on_artifacts": ""
+  },
+  "3_governance_of_tailoring": {
+    "decision_authority": "",
+    "review_and_reapproval": "",
+    "compliance_check": "",
+    "change_control_link": ""
+  }
+}

@@ -6,6 +6,7 @@ prompts, and error handling over simulated stdio messages.
 
 import json
 import unittest
+from unittest.mock import patch
 from tasleemat.mcp.server import MCPServer
 import tasleemat
 
@@ -163,20 +164,21 @@ class TestMCPServer(unittest.TestCase):
         self.assertTrue(rep_draft["valid"])
         self.assertGreater(rep_draft["warnings_count"], 0)
 
-        # 3. Unsupported deliverable validation via MCP
-        resp_unavail = self.send_request("tools/call", {
-            "name": "tasleemat_validate_data",
-            "arguments": {
-                "artifact_id": "PMO-00.01",
-                "data": {"artifact_id": "PMO-00.01"},
-            },
-        })
-        self.assertNotIn("error", resp_unavail)
-        rep_unavail = json.loads(resp_unavail["result"]["content"][0]["text"])
-        self.assertFalse(rep_unavail["valid"])
-        self.assertEqual(rep_unavail["status"], "unavailable")
-        self.assertFalse(rep_unavail["is_available"])
-        self.assertTrue(any(e["code"] == "SCHEMA_UNAVAILABLE" for e in rep_unavail["errors"]))
+        # 3. Unsupported deliverable validation via MCP (simulated missing schema)
+        with patch("tasleemat.validation._load_schema", side_effect=KeyError("Schema unavailable")):
+            resp_unavail = self.send_request("tools/call", {
+                "name": "tasleemat_validate_data",
+                "arguments": {
+                    "artifact_id": "PMO-00.01",
+                    "data": {"artifact_id": "PMO-00.01"},
+                },
+            })
+            self.assertNotIn("error", resp_unavail)
+            rep_unavail = json.loads(resp_unavail["result"]["content"][0]["text"])
+            self.assertFalse(rep_unavail["valid"])
+            self.assertEqual(rep_unavail["status"], "unavailable")
+            self.assertFalse(rep_unavail["is_available"])
+            self.assertTrue(any(e["code"] == "SCHEMA_UNAVAILABLE" for e in rep_unavail["errors"]))
 
         # 4. Unknown artifact ID validation via MCP
         resp_unknown = self.send_request("tools/call", {

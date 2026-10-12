@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.13.01.schema.json",
+  "title": "Completed INFORMATION SECURITY AND COMPLIANCE PLAN Data Contract",
+  "description": "Additive structural schema validating completed INFORMATION SECURITY AND COMPLIANCE PLAN artifact data payloads (PMO-04.13.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.13.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "compliance_governance_data_classification": {
+      "type": "object",
+      "properties": {
+        "regulatory_framework_and_applicable_standards": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Mandatory national regulations (NCA ECC, NDMO, GDPR, ISO 27001) governing project delivery."
+        },
+        "data_classification_and_privacy_tiering": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Information classification scheme (Public, Internal, Confidential, Highly Confidential) and PII protections."
+        }
+      },
+      "required": [
+        "regulatory_framework_and_applicable_standards",
+        "data_classification_and_privacy_tiering"
+      ]
+    },
+    "security_architecture_incident_management": {
+      "type": "object",
+      "properties": {
+        "technical_and_administrative_security_controls": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Encryption at rest/in transit, identity and access management (IAM), multi-factor authentication, and audit trails."
+        },
+        "security_assessment_and_penetration_testing_cadence": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Vulnerability scanning, automated code analysis (SAST/DAST), and third-party penetration testing gateways."
+        }
+      },
+      "required": [
+        "technical_and_administrative_security_controls",
+        "security_assessment_and_penetration_testing_cadence"
+      ]
+    },
+    "audit_governance_sign_off_roles": {
+      "type": "object",
+      "properties": {
+        "incident_response_protocol_and_breach_notification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Escalation procedure, root cause containment, and mandatory regulatory reporting timeframes."
+        },
+        "compliance_audit_gateways_and_signoff_criteria": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stage-gate evidence packages required by Chief Information Security Officer (CISO) and legal counsel."
+        }
+      },
+      "required": [
+        "incident_response_protocol_and_breach_notification",
+        "compliance_audit_gateways_and_signoff_criteria"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "compliance_governance_data_classification",
+    "security_architecture_incident_management",
+    "audit_governance_sign_off_roles"
+  ]
+}

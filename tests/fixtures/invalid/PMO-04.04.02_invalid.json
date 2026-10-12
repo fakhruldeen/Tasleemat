@@ -1,0 +1,26 @@
+{
+  "artifact_id": "PMO-04.04.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-04-02",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "activity_and_work_package_cost_breakdown": {
+    "activity_identifier_and_description": "",
+    "direct_labor_cost_estimate": "",
+    "materials_and_equipment_cost_estimate": "",
+    "total_base_cost_estimate": ""
+  },
+  "resource_cost_rates_and_basis_of_estimates": {
+    "labor_rate_categories_and_rate_cards": "",
+    "historical_data_and_estimating_assumptions": ""
+  },
+  "contingency_and_management_reserves": {
+    "contingency_reserve_allocation": "",
+    "total_activity_cost_with_contingency": ""
+  }
+}

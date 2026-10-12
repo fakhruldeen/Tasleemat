@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-07.06.schema.json",
+  "title": "Completed KNOWLEDGE TRANSFER AND ASSET ARCHIVAL SIGNOFF Data Contract",
+  "description": "Additive structural schema validating completed KNOWLEDGE TRANSFER AND ASSET ARCHIVAL SIGNOFF artifact data payloads (PMO-07.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-07.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "knowledge_handover_documentation_repository": {
+      "type": "object",
+      "properties": {
+        "knowledge_transfer_scope_and_target_operations_team": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Designated operational entities, support teams, and technical domains covered by handover."
+        },
+        "technical_documentation_repository_and_architecture_assets": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Source code repositories, architecture diagrams, runbooks, and API documentation URLs archived."
+        }
+      },
+      "required": [
+        "knowledge_transfer_scope_and_target_operations_team",
+        "technical_documentation_repository_and_architecture_assets"
+      ]
+    },
+    "operational_readiness_access_transfer": {
+      "type": "object",
+      "properties": {
+        "operational_training_and_shadowing_completion_record": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Completed hands-on workshops, admin shadowing sessions, and formal trainee attendance records."
+        },
+        "system_credentials_access_keys_and_license_transfers": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Secure handover of production administrative accounts, cloud root keys, certificates, and software licenses."
+        }
+      },
+      "required": [
+        "operational_training_and_shadowing_completion_record",
+        "system_credentials_access_keys_and_license_transfers"
+      ]
+    },
+    "formal_acceptance_archival_custody": {
+      "type": "object",
+      "properties": {
+        "formal_operational_acceptance_and_custody_signoff": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Operations Director and Project Manager joint authorization confirming complete custody transfer."
+        }
+      },
+      "required": [
+        "formal_operational_acceptance_and_custody_signoff"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "knowledge_handover_documentation_repository",
+    "operational_readiness_access_transfer",
+    "formal_acceptance_archival_custody"
+  ]
+}

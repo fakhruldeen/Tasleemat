@@ -1,0 +1,55 @@
+{
+  "artifact_id": "PMO-02.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "purpose_and_scope_of_the_assessment": {
+    "assessment_objective": "Substantive completed details for Assessment Objective.",
+    "assessment_scope": "Substantive completed details for Assessment Scope.",
+    "assessment_method": "Substantive completed details for Assessment Method.",
+    "assessor_and_date": "Substantive completed details for Assessor And Date.",
+    "evidence_basis": "Substantive completed details for Evidence Basis."
+  },
+  "data_readiness": {
+    "data_availability": "Substantive completed details for Data Availability.",
+    "data_quality": "Substantive completed details for Data Quality.",
+    "data_lineage_and_documentation": "Substantive completed details for Data Lineage And Documentation.",
+    "labelling_and_ground_truth": "Substantive completed details for Labelling And Ground Truth.",
+    "data_governance_and_access": "Substantive completed details for Data Governance And Access."
+  },
+  "technical_and_platform_readiness": {
+    "compute_and_capacity": "Substantive completed details for Compute And Capacity.",
+    "platform_and_tooling": "Substantive completed details for Platform And Tooling.",
+    "integration": "Substantive completed details for Integration.",
+    "security_and_resilience": "Substantive completed details for Security And Resilience.",
+    "scalability": "Substantive completed details for Scalability."
+  },
+  "skills_and_team_readiness": {
+    "team_composition": "Substantive completed details for Team Composition.",
+    "ai_skills": "Substantive completed details for Ai Skills.",
+    "domain_expertise": "Substantive completed details for Domain Expertise.",
+    "capacity_and_availability": "Substantive completed details for Capacity And Availability.",
+    "capability_building": "Substantive completed details for Capability Building."
+  },
+  "organisational_readiness": {
+    "leadership_sponsorship": "Substantive completed details for Leadership Sponsorship.",
+    "operating_model": "Substantive completed details for Operating Model.",
+    "change_and_adoption": "Substantive completed details for Change And Adoption.",
+    "procurement_and_contracting": "Substantive completed details for Procurement And Contracting.",
+    "risk_appetite": "Substantive completed details for Risk Appetite."
+  },
+  "assessment_outcome_and_route_forward": {
+    "dimension_scores": "Substantive completed details for Dimension Scores.",
+    "weighted_overall_score": "Substantive completed details for Weighted Overall Score.",
+    "blocking_gaps": "Substantive completed details for Blocking Gaps.",
+    "recommended_route": "Substantive completed details for Recommended Route.",
+    "remediation_plan": "Substantive completed details for Remediation Plan.",
+    "reassessment_trigger": "Substantive completed details for Reassessment Trigger."
+  }
+}

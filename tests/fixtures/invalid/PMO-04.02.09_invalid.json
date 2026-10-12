@@ -1,0 +1,47 @@
+{
+  "artifact_id": "PMO-04.02.09",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-02-09",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "persona_and_problem": {
+    "primary_persona": "",
+    "what_they_are_trying_to_do": "",
+    "frequency_and_stakes": "",
+    "organisations_and_roles_affected": ""
+  },
+  "the_backbone": {
+    "activities_in_order": "",
+    "backbone_source": "",
+    "activities_deferred": "",
+    "optional_and_variable_paths": ""
+  },
+  "the_slices": {
+    "tasks_under_each_activity": "",
+    "slices_as_vertical_columns": "",
+    "walking_skeleton": "",
+    "slice_sizing_evidence": ""
+  },
+  "release_slicing": {
+    "mvp_boundary": "",
+    "outcome_of_the_first_release": "",
+    "validation_plan": "",
+    "slices_deferred_beyond_mvp": ""
+  },
+  "beyond_the_first_release": {
+    "later_release_candidates": "",
+    "emergent_work_anticipated": "",
+    "explicitly_out_of_scope": ""
+  },
+  "map_quality_and_maintenance": {
+    "assumptions_and_unvalidated_beliefs": "",
+    "risks_to_the_map": "",
+    "update_cadence_and_owners": "",
+    "traceability_to_backlog_and_release": ""
+  }
+}

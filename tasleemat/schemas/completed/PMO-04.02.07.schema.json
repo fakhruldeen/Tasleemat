@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.07.schema.json",
+  "title": "Completed WBS DICTIONARY Data Contract",
+  "description": "Additive structural schema validating completed WBS DICTIONARY artifact data payloads (PMO-04.02.07).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.02.07"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "work_package_identification": {
+      "type": "object",
+      "properties": {
+        "wbs_identifier_and_title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The unique WBS code number and descriptive name of the specific work package."
+        },
+        "control_account_and_responsible_organization": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Associated control account code and organizational unit or person accountable for delivery."
+        },
+        "work_package_owner": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Designated lead engineer or manager responsible for work package execution."
+        }
+      },
+      "required": [
+        "wbs_identifier_and_title",
+        "control_account_and_responsible_organization",
+        "work_package_owner"
+      ]
+    },
+    "scope_of_work_and_deliverables": {
+      "type": "object",
+      "properties": {
+        "work_package_scope_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed narrative describing the technical work, tasks, and activities required for this package."
+        },
+        "deliverables_produced": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific tangible or intangible outputs generated upon work package completion."
+        },
+        "milestone_schedule_and_target_dates": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Target start date, intermediate technical milestones, and completion deadline."
+        }
+      },
+      "required": [
+        "work_package_scope_description",
+        "deliverables_produced",
+        "milestone_schedule_and_target_dates"
+      ]
+    },
+    "quality_criteria_and_acceptance": {
+      "type": "object",
+      "properties": {
+        "quality_requirements_and_standards": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Mandatory quality metrics, engineering specifications, and technical standards."
+        },
+        "acceptance_criteria_and_sign_off_lead": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Clear criteria and designated stakeholder authorized to accept the work package."
+        }
+      },
+      "required": [
+        "quality_requirements_and_standards",
+        "acceptance_criteria_and_sign_off_lead"
+      ]
+    },
+    "resource_and_cost_allocations": {
+      "type": "object",
+      "properties": {
+        "required_resources_and_skills": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Personnel roles, technical expertise, materials, and specialized equipment needed."
+        },
+        "cost_estimate_and_budget_allocation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Approved budget allocation and cost baseline figure assigned to this work package."
+        },
+        "assumptions_constraints_and_dependencies": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific operational constraints, key assumptions, and preceding/succeeding work package linkages."
+        }
+      },
+      "required": [
+        "required_resources_and_skills",
+        "cost_estimate_and_budget_allocation",
+        "assumptions_constraints_and_dependencies"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "work_package_identification",
+    "scope_of_work_and_deliverables",
+    "quality_criteria_and_acceptance",
+    "resource_and_cost_allocations"
+  ]
+}

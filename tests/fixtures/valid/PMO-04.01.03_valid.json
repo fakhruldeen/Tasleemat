@@ -1,0 +1,32 @@
+{
+  "artifact_id": "PMO-04.01.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-01-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "strategic_objectives_and_business_value": {
+    "strategic_alignment_summary": "Substantive completed details for Strategic Alignment Summary.",
+    "target_business_value_and_benefits": "Substantive completed details for Target Business Value And Benefits.",
+    "success_criteria_and_key_metrics": "Substantive completed details for Success Criteria And Key Metrics."
+  },
+  "project_roadmap_overview": {
+    "high_level_product_vision": "Substantive completed details for High Level Product Vision.",
+    "major_workstreams_and_themes": "Substantive completed details for Major Workstreams And Themes.",
+    "roadmap_horizon_and_timeframes": "Substantive completed details for Roadmap Horizon And Timeframes."
+  },
+  "release_and_milestone_timeline": {
+    "release_1_mvp_scope_and_milestone": "Substantive completed details for Release 1 Mvp Scope And Milestone.",
+    "release_2_scope_and_milestone": "Substantive completed details for Release 2 Scope And Milestone.",
+    "future_enhancements_and_final_milestone": "Substantive completed details for Future Enhancements And Final Milestone."
+  },
+  "key_dependencies_and_assumptions": {
+    "cross_project_and_external_dependencies": "Substantive completed details for Cross Project And External Dependencies.",
+    "critical_architectural_and_strategic_assumptions": "Substantive completed details for Critical Architectural And Strategic Assumptions.",
+    "strategic_risks_and_mitigation": "Substantive completed details for Strategic Risks And Mitigation."
+  }
+}

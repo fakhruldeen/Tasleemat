@@ -1,0 +1,43 @@
+{
+  "artifact_id": "PMO-06.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-02",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "schedule_and_activities_current_period": {
+    "activities_planned_this_reporting_period": "",
+    "activities_accomplished_this_reporting_period": "",
+    "activities_planned_but_not_accomplished_this_reporting_period": "",
+    "root_cause_of_schedule_variances": ""
+  },
+  "cost_and_budget_current_period": {
+    "funds_planned_to_be_spent_this_reporting_period": "",
+    "funds_spent_this_reporting_period": "",
+    "root_cause_of_cost_variances": ""
+  },
+  "quality_and_corrective_actions": {
+    "quality_variances_identified_this_period": "",
+    "planned_corrective_or_preventive_action": ""
+  },
+  "planning_for_next_period": {
+    "activities_planned_for_next_reporting_period": "",
+    "costs_planned_for_next_reporting_period": ""
+  },
+  "risks_issues_and_escalations": {
+    "new_risks_identified": "",
+    "new_issues_identified": "",
+    "escalations": ""
+  },
+  "project_knowledge_and_decisions": {
+    "decisions_made": "",
+    "lessons_learned_and_knowledge_transfer": ""
+  },
+  "comments": {
+    "comments": ""
+  }
+}

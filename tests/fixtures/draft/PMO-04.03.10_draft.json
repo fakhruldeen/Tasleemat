@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.03.10",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-10",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "sprint_frame": {
+    "sprint_goal": "Draft notes for Sprint Goal."
+  },
+  "committed_scope": {
+    "story_id": "Draft notes for Story Id."
+  },
+  "team_assignment": {
+    "team_member": "Draft notes for Team Member."
+  },
+  "risks_to_the_sprint": {
+    "risk": "Draft notes for Risk."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "artifact_id": "PMO-00.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-01",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "portfolio_context_and_planning_basis": {
+    "portfolio_purpose_and_scope": "Substantive completed details for Portfolio Purpose And Scope.",
+    "planning_period": "Substantive completed details for Planning Period.",
+    "roadmap_horizon": "Substantive completed details for Roadmap Horizon.",
+    "portfolio_owner": "Substantive completed details for Portfolio Owner.",
+    "planning_cycle": "Substantive completed details for Planning Cycle.",
+    "roadmap_version_and_status": "Substantive completed details for Roadmap Version And Status."
+  },
+  "roadmap_initiatives": {
+    "id": "Substantive completed details for Id.",
+    "initiative_name": "Substantive completed details for Initiative Name.",
+    "type": "Substantive completed details for Type.",
+    "strategic_objective": "Substantive completed details for Strategic Objective.",
+    "start": "Substantive completed details for Start.",
+    "end": "Substantive completed details for End.",
+    "budget": "Substantive completed details for Budget.",
+    "status": "Substantive completed details for Status."
+  },
+  "dependencies_and_sequencing": {
+    "id": "Substantive completed details for Id.",
+    "dependent_initiative": "Substantive completed details for Dependent Initiative.",
+    "dependency_type": "Substantive completed details for Dependency Type.",
+    "predecessor": "Substantive completed details for Predecessor.",
+    "required_by": "Substantive completed details for Required By.",
+    "impact_if_late": "Substantive completed details for Impact If Late."
+  },
+  "funding_and_capacity_by_period": {
+    "period": "Substantive completed details for Period.",
+    "planned_funding": "Substantive completed details for Planned Funding.",
+    "planned_capacity": "Substantive completed details for Planned Capacity.",
+    "committed_load": "Substantive completed details for Committed Load.",
+    "available": "Substantive completed details for Available.",
+    "notes": "Substantive completed details for Notes."
+  },
+  "assumptions_and_constraints": {
+    "id": "Substantive completed details for Id.",
+    "type": "Substantive completed details for Type.",
+    "description": "Substantive completed details for Description.",
+    "impact_on_roadmap": "Substantive completed details for Impact On Roadmap.",
+    "owner": "Substantive completed details for Owner.",
+    "review_date": "Substantive completed details for Review Date."
+  },
+  "roadmap_changes": {
+    "change_id": "Substantive completed details for Change Id.",
+    "description": "Substantive completed details for Description.",
+    "reason": "Substantive completed details for Reason.",
+    "affected_initiatives": "Substantive completed details for Affected Initiatives.",
+    "approved_by": "Substantive completed details for Approved By.",
+    "date": "Substantive completed details for Date."
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-03.03.schema.json",
+  "title": "Completed ASSUMPTION LOG Data Contract",
+  "description": "Additive structural schema validating completed ASSUMPTION LOG artifact data payloads (PMO-03.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-03.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "assumption_log_entries": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier for the assumption or constraint entry."
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specify whether this entry is an 'Assumption' or a 'Constraint'."
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The category of the assumption or constraint (e.g., Technical, Financial, Schedule, Resource)."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "A clear, detailed description of the assumption or constraint."
+        },
+        "impact_if_invalid": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The potential risk or impact to the project if the assumption proves false or the constraint is breached."
+        },
+        "responsible_party": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The person or role tasked with following up on the assumption to validate its accuracy."
+        },
+        "due_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The target date by which the assumption needs to be validated or reviewed."
+        },
+        "actions": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific actions required to validate the assumption or monitor the constraint."
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The current status of the assumption (e.g., active, validated, closed)."
+        },
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Any additional information, operational context, or status updates."
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "category",
+        "description",
+        "impact_if_invalid",
+        "responsible_party",
+        "due_date",
+        "actions",
+        "status",
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "assumption_log_entries"
+  ]
+}

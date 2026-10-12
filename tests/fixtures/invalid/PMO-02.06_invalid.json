@@ -1,0 +1,62 @@
+{
+  "artifact_id": "PMO-02.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-06",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "scope_data_inventory_and_ownership": {
+    "assessment_scope": "",
+    "processing_out_of_scope": "",
+    "data_owners_and_custodians": "",
+    "data_inventory": "",
+    "data_flow_and_recipients": ""
+  },
+  "lawful_basis_and_purpose_limitation": {
+    "processing_purposes_and_necessity": "",
+    "lawful_basis_by_purpose": "",
+    "purpose_compatibility_and_secondary_use": "",
+    "automated_decision_making": ""
+  },
+  "consent_and_transparency": {
+    "consent_mechanism": "",
+    "consent_specificity_and_granularity": "",
+    "consent_recording_and_evidence": "",
+    "withdrawal": "",
+    "privacy_notices_and_just_in_time_disclosure": ""
+  },
+  "individual_rights": {
+    "rights_handling_process": "",
+    "identity_verification": "",
+    "response_timeframes_and_escalation": "",
+    "rights_over_derived_shared_and_retired_data": ""
+  },
+  "retention_security_and_sharing": {
+    "retention_schedule": "",
+    "deletion_mechanism_and_coverage": "",
+    "backups_and_derived_data": "",
+    "access_controls_and_least_privilege": "",
+    "encryption_and_key_management": "",
+    "third_party_sharing": "",
+    "cross_border_transfers": "",
+    "breach_notification": ""
+  },
+  "ethics_beyond_compliance": {
+    "harm_beyond_legal_exposure": "",
+    "vulnerable_individuals_and_groups": "",
+    "transparency_to_affected_people": "",
+    "manipulation_dark_patterns_and_consent_fatigue": "",
+    "fairness_of_automated_decisions": ""
+  },
+  "findings_remediation_and_review": {
+    "findings_register": "",
+    "residual_risk_and_acceptance": "",
+    "remediation_plan": "",
+    "review_triggers": "",
+    "reassessment_triggers": ""
+  }
+}

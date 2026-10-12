@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.02.schema.json",
+  "title": "Completed TEAM MEMBER STATUS REPORT Data Contract",
+  "description": "Additive structural schema validating completed TEAM MEMBER STATUS REPORT artifact data payloads (PMO-06.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "schedule_and_activities_current_period": {
+      "type": "object",
+      "properties": {
+        "activities_planned_this_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Tasks and work packages scheduled for execution by this member during this period."
+        },
+        "activities_accomplished_this_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Tasks and work packages successfully finalized by this member during this period."
+        },
+        "activities_planned_but_not_accomplished_this_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scheduled tasks that were started but not completed or deferred."
+        },
+        "root_cause_of_schedule_variances": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Underlying reasons for any task delays or workload obstacles."
+        }
+      },
+      "required": [
+        "activities_planned_this_reporting_period",
+        "activities_accomplished_this_reporting_period",
+        "activities_planned_but_not_accomplished_this_reporting_period",
+        "root_cause_of_schedule_variances"
+      ]
+    },
+    "cost_and_budget_current_period": {
+      "type": "object",
+      "properties": {
+        "funds_planned_to_be_spent_this_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Planned labor hours or direct expenses allocated for the member this period."
+        },
+        "funds_spent_this_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Actual labor hours or expenses incurred by the member during this period."
+        },
+        "root_cause_of_cost_variances": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reasons for discrepancies between planned and actual resource expenditures."
+        }
+      },
+      "required": [
+        "funds_planned_to_be_spent_this_reporting_period",
+        "funds_spent_this_reporting_period",
+        "root_cause_of_cost_variances"
+      ]
+    },
+    "quality_and_corrective_actions": {
+      "type": "object",
+      "properties": {
+        "quality_variances_identified_this_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Defects, rework, or non-conformance issues encountered in deliverables."
+        },
+        "planned_corrective_or_preventive_action": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Targeted remedial steps to correct quality issues or prevent recurring defects."
+        }
+      },
+      "required": [
+        "quality_variances_identified_this_period",
+        "planned_corrective_or_preventive_action"
+      ]
+    },
+    "planning_for_next_period": {
+      "type": "object",
+      "properties": {
+        "activities_planned_for_next_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Upcoming work assignments and deliverables scheduled for the next interval."
+        },
+        "costs_planned_for_next_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimated hours or expenditures planned for the upcoming reporting period."
+        }
+      },
+      "required": [
+        "activities_planned_for_next_reporting_period",
+        "costs_planned_for_next_reporting_period"
+      ]
+    },
+    "risks_issues_and_escalations": {
+      "type": "object",
+      "properties": {
+        "new_risks_identified": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Potential technical, operational, or resource uncertainties identified by the member."
+        },
+        "new_issues_identified": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Immediate roadblocks, blockers, or dependencies requiring team resolution."
+        },
+        "escalations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Impediments requiring intervention from the Project Manager or Team Lead."
+        }
+      },
+      "required": [
+        "new_risks_identified",
+        "new_issues_identified",
+        "escalations"
+      ]
+    },
+    "project_knowledge_and_decisions": {
+      "type": "object",
+      "properties": {
+        "decisions_made": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Technical or operational choices adopted by the team member during execution."
+        },
+        "lessons_learned_and_knowledge_transfer": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practical findings and best practices captured during task execution."
+        }
+      },
+      "required": [
+        "decisions_made",
+        "lessons_learned_and_knowledge_transfer"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Additional reflections, notes, or contextual feedback from the team member."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "schedule_and_activities_current_period",
+    "cost_and_budget_current_period",
+    "quality_and_corrective_actions",
+    "planning_for_next_period",
+    "risks_issues_and_escalations",
+    "project_knowledge_and_decisions",
+    "comments"
+  ]
+}

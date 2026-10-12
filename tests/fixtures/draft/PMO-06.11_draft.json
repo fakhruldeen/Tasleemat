@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-06.11",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-11",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "review_context": {
+    "review_purpose_and_milestone_stage": "Draft notes for Review Purpose And Milestone Stage."
+  },
+  "dimension_health_scores": {
+    "governance_and_sponsorship_health": "Draft notes for Governance And Sponsorship Health."
+  },
+  "remediation_action_plan": {
+    "critical_finding_description": "Draft notes for Critical Finding Description."
+  }
+}

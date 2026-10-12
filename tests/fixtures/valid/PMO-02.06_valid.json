@@ -1,0 +1,62 @@
+{
+  "artifact_id": "PMO-02.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "scope_data_inventory_and_ownership": {
+    "assessment_scope": "Substantive completed details for Assessment Scope.",
+    "processing_out_of_scope": "Substantive completed details for Processing Out Of Scope.",
+    "data_owners_and_custodians": "Substantive completed details for Data Owners And Custodians.",
+    "data_inventory": "Substantive completed details for Data Inventory.",
+    "data_flow_and_recipients": "Substantive completed details for Data Flow And Recipients."
+  },
+  "lawful_basis_and_purpose_limitation": {
+    "processing_purposes_and_necessity": "Substantive completed details for Processing Purposes And Necessity.",
+    "lawful_basis_by_purpose": "Substantive completed details for Lawful Basis By Purpose.",
+    "purpose_compatibility_and_secondary_use": "Substantive completed details for Purpose Compatibility And Secondary Use.",
+    "automated_decision_making": "Substantive completed details for Automated Decision Making."
+  },
+  "consent_and_transparency": {
+    "consent_mechanism": "Substantive completed details for Consent Mechanism.",
+    "consent_specificity_and_granularity": "Substantive completed details for Consent Specificity And Granularity.",
+    "consent_recording_and_evidence": "Substantive completed details for Consent Recording And Evidence.",
+    "withdrawal": "Substantive completed details for Withdrawal.",
+    "privacy_notices_and_just_in_time_disclosure": "Substantive completed details for Privacy Notices And Just In Time Disclosure."
+  },
+  "individual_rights": {
+    "rights_handling_process": "Substantive completed details for Rights Handling Process.",
+    "identity_verification": "Substantive completed details for Identity Verification.",
+    "response_timeframes_and_escalation": "Substantive completed details for Response Timeframes And Escalation.",
+    "rights_over_derived_shared_and_retired_data": "Substantive completed details for Rights Over Derived Shared And Retired Data."
+  },
+  "retention_security_and_sharing": {
+    "retention_schedule": "Substantive completed details for Retention Schedule.",
+    "deletion_mechanism_and_coverage": "Substantive completed details for Deletion Mechanism And Coverage.",
+    "backups_and_derived_data": "Substantive completed details for Backups And Derived Data.",
+    "access_controls_and_least_privilege": "Substantive completed details for Access Controls And Least Privilege.",
+    "encryption_and_key_management": "Substantive completed details for Encryption And Key Management.",
+    "third_party_sharing": "Substantive completed details for Third Party Sharing.",
+    "cross_border_transfers": "Substantive completed details for Cross Border Transfers.",
+    "breach_notification": "Substantive completed details for Breach Notification."
+  },
+  "ethics_beyond_compliance": {
+    "harm_beyond_legal_exposure": "Substantive completed details for Harm Beyond Legal Exposure.",
+    "vulnerable_individuals_and_groups": "Substantive completed details for Vulnerable Individuals And Groups.",
+    "transparency_to_affected_people": "Substantive completed details for Transparency To Affected People.",
+    "manipulation_dark_patterns_and_consent_fatigue": "Substantive completed details for Manipulation Dark Patterns And Consent Fatigue.",
+    "fairness_of_automated_decisions": "Substantive completed details for Fairness Of Automated Decisions."
+  },
+  "findings_remediation_and_review": {
+    "findings_register": "Substantive completed details for Findings Register.",
+    "residual_risk_and_acceptance": "Substantive completed details for Residual Risk And Acceptance.",
+    "remediation_plan": "Substantive completed details for Remediation Plan.",
+    "review_triggers": "Substantive completed details for Review Triggers.",
+    "reassessment_triggers": "Substantive completed details for Reassessment Triggers."
+  }
+}

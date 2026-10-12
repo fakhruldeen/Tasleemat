@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.15.schema.json",
+  "title": "Completed DEFECT AND BUG TRACKING LOG Data Contract",
+  "description": "Additive structural schema validating completed DEFECT AND BUG TRACKING LOG artifact data payloads (PMO-06.15).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.15"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "defect_logging_severity_assessment": {
+      "type": "object",
+      "properties": {
+        "defect_identifier_and_title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique defect ID, summary title, and affected component or module name."
+        },
+        "severity_priority_and_business_impact": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Severity rating (Blocker, Critical, Major, Minor) and SLA turnaround requirement."
+        },
+        "steps_to_reproduce_and_observed_versus_expected": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed reproduction instructions, environment context, and expected versus actual result."
+        }
+      },
+      "required": [
+        "defect_identifier_and_title",
+        "severity_priority_and_business_impact",
+        "steps_to_reproduce_and_observed_versus_expected"
+      ]
+    },
+    "remediation_re_testing_signoff": {
+      "type": "object",
+      "properties": {
+        "root_cause_diagnosis_and_assigned_fixer": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Technical root cause classification (Code, Requirement, Environment) and assigned developer."
+        },
+        "resolution_status_and_qa_retest_signoff": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Status (Open, In Fix, Retest, Verified Closed) and QA engineer verification signoff."
+        }
+      },
+      "required": [
+        "root_cause_diagnosis_and_assigned_fixer",
+        "resolution_status_and_qa_retest_signoff"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "defect_logging_severity_assessment",
+    "remediation_re_testing_signoff"
+  ]
+}

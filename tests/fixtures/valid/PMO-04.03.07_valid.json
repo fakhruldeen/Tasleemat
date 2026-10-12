@@ -1,0 +1,31 @@
+{
+  "artifact_id": "PMO-04.03.07",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-07",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "parametric_estimates": {
+    "parametric_activity_and_unit_metric": "Substantive completed details for Parametric Activity And Unit Metric.",
+    "quantity_and_resource_factor": "Substantive completed details for Quantity And Resource Factor.",
+    "parametric_duration_result": "Substantive completed details for Parametric Duration Result."
+  },
+  "analogous_estimates": {
+    "historical_reference_activity": "Substantive completed details for Historical Reference Activity.",
+    "historical_duration_and_complexity_scaling": "Substantive completed details for Historical Duration And Complexity Scaling.",
+    "analogous_duration_result": "Substantive completed details for Analogous Duration Result."
+  },
+  "three_point_estimates_beta_distribution": {
+    "optimistic_most_likely_and_pessimistic_durations": "Substantive completed details for Optimistic Most Likely And Pessimistic Durations.",
+    "beta_calculated_expected_duration_te": "Substantive completed details for Beta Calculated Expected Duration Te.",
+    "standard_deviation_and_variance": "Substantive completed details for Standard Deviation And Variance."
+  },
+  "aggregated_schedule_reserves": {
+    "total_calculated_schedule_buffer": "Substantive completed details for Total Calculated Schedule Buffer.",
+    "worksheet_reconciliation_and_approval": "Substantive completed details for Worksheet Reconciliation And Approval."
+  }
+}

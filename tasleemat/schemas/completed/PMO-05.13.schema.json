@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.13.schema.json",
+  "title": "Completed ACTION ITEMS LOG Data Contract",
+  "description": "Additive structural schema validating completed ACTION ITEMS LOG artifact data payloads (PMO-05.13).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.13"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "action_identification_assignment": {
+      "type": "object",
+      "properties": {
+        "action_item_identifier_and_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique tracking ID and concise, actionable statement of the specific task or decision follow-up."
+        },
+        "action_owner_and_accountable_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Single designated individual with primary execution and delivery accountability."
+        },
+        "target_completion_date_and_priority": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Firm committed due date and priority weighting (Critical, High, Medium, Low)."
+        }
+      },
+      "required": [
+        "action_item_identifier_and_description",
+        "action_owner_and_accountable_role",
+        "target_completion_date_and_priority"
+      ]
+    },
+    "status_tracking_verification_signoff": {
+      "type": "object",
+      "properties": {
+        "current_execution_status_and_notes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Real-time status (Open, In Progress, Blocked, Complete) with recent progress notes."
+        },
+        "resolution_evidence_and_verification_signoff": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Deliverable link, test evidence, or Project Manager formal verification confirming closure."
+        }
+      },
+      "required": [
+        "current_execution_status_and_notes",
+        "resolution_evidence_and_verification_signoff"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "action_identification_assignment",
+    "status_tracking_verification_signoff"
+  ]
+}

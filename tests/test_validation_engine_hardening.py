@@ -16,6 +16,7 @@ import pathlib
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -32,6 +33,7 @@ from tasleemat.validation import (
     ValidationError,
     ValidationReport,
     validate_artifact_data,
+    preflight_schema,
 )
 from tasleemat.ai import AIClient
 
@@ -220,12 +222,13 @@ class TestValidationEngineHardening(unittest.TestCase):
 
     def test_unsupported_artifact_explicit_status(self):
         """Verify validation of deliverable without companion schema returns status='unavailable'."""
-        report = validate_artifact_data("PMO-00.01", {"some": "data"})
-        self.assertFalse(report.valid)
-        self.assertEqual(report.status, "unavailable")
-        self.assertFalse(report.is_available)
-        self.assertEqual(len(report.errors), 1)
-        self.assertEqual(report.errors[0].code, "SCHEMA_UNAVAILABLE")
+        with patch("tasleemat.validation._load_schema", side_effect=KeyError("Schema unavailable")):
+            report = validate_artifact_data("PMO-00.01", {"some": "data"})
+            self.assertFalse(report.valid)
+            self.assertEqual(report.status, "unavailable")
+            self.assertFalse(report.is_available)
+            self.assertEqual(len(report.errors), 1)
+            self.assertEqual(report.errors[0].code, "SCHEMA_UNAVAILABLE")
 
     def test_artifact_summary_and_lexicon_cache_isolation(self):
         """Verify mutating ArtifactSummary.tiers or get_lexicon() does not pollute cache."""
@@ -612,6 +615,50 @@ class TestValidationEngineHardening(unittest.TestCase):
         rep_dr = validate_artifact_data("PMO-04.09.01", dr_data, mode="draft")
         self.assertTrue(rep_dr.valid)
 
+    # ==================== ALL 114 DELIVERABLES VALIDATION MATRIX ====================
+
+    def test_all_114_companion_schemas_and_fixtures_matrix(self):
+        """Verify that all 114 companion schemas in the catalog validate their fixture sets."""
+        schema_dir = ROOT / "tasleemat" / "schemas" / "completed"
+        schemas = sorted(schema_dir.glob("*.json"))
+        self.assertEqual(len(schemas), 114, "Expected exactly 114 companion schemas")
+
+        for sf in schemas:
+            with open(sf, "r", encoding="utf-8") as f:
+                s = json.load(f)
+            aid = s.get("properties", {}).get("artifact_id", {}).get("const")
+            self.assertIsNotNone(aid, f"Schema {sf.name} missing artifact_id const")
+
+            # Preflight
+            p_errs = preflight_schema(s)
+            self.assertEqual(len(p_errs), 0, f"{aid} preflight errors: {p_errs}")
+
+            # Valid fixture
+            v_path = ROOT / "tests" / "fixtures" / "valid" / f"{aid}_valid.json"
+            self.assertTrue(v_path.exists(), f"Missing valid fixture for {aid}")
+            with open(v_path, "r", encoding="utf-8") as f:
+                v_data = json.load(f)
+            rep_v = validate_artifact_data(aid, v_data)
+            self.assertTrue(rep_v.valid, f"{aid} valid failed: {rep_v.errors}")
+            self.assertEqual(rep_v.status, "supported")
+
+            # Invalid fixture
+            inv_candidates = list((ROOT / "tests" / "fixtures" / "invalid").glob(f"{aid}_*.json"))
+            self.assertGreater(len(inv_candidates), 0, f"Missing invalid fixture for {aid}")
+            with open(inv_candidates[0], "r", encoding="utf-8") as f:
+                inv_data = json.load(f)
+            rep_inv = validate_artifact_data(aid, inv_data)
+            self.assertFalse(rep_inv.valid, f"{aid} invalid fixture unexpectedly valid")
+            self.assertGreater(len(rep_inv.errors), 0)
+
+            # Draft fixture
+            dr_path = ROOT / "tests" / "fixtures" / "draft" / f"{aid}_draft.json"
+            self.assertTrue(dr_path.exists(), f"Missing draft fixture for {aid}")
+            with open(dr_path, "r", encoding="utf-8") as f:
+                dr_data = json.load(f)
+            rep_dr = validate_artifact_data(aid, dr_data, mode="draft")
+            self.assertTrue(rep_dr.valid, f"{aid} draft failed: {rep_dr.errors}")
+
     # ==================== ADVANCED PREFLIGHT & CONTRACT TESTS ====================
 
     def test_definition_reference_contract(self):
@@ -732,12 +779,13 @@ class TestValidationEngineHardening(unittest.TestCase):
         self.assertFalse(rep_unknown.is_available)
         self.assertEqual(rep_unknown.errors[0].code, "UNKNOWN_ARTIFACT")
 
-        # 2. Known artifact without companion schema
-        rep_no_schema = validate_artifact_data("PMO-00.01", {"some": "data"})
-        self.assertFalse(rep_no_schema.valid)
-        self.assertEqual(rep_no_schema.status, "unavailable")
-        self.assertFalse(rep_no_schema.is_available)
-        self.assertEqual(rep_no_schema.errors[0].code, "SCHEMA_UNAVAILABLE")
+        # 2. Known artifact without companion schema (simulated via patch)
+        with patch("tasleemat.validation._load_schema", side_effect=KeyError("Schema unavailable")):
+            rep_no_schema = validate_artifact_data("PMO-00.01", {"some": "data"})
+            self.assertFalse(rep_no_schema.valid)
+            self.assertEqual(rep_no_schema.status, "unavailable")
+            self.assertFalse(rep_no_schema.is_available)
+            self.assertEqual(rep_no_schema.errors[0].code, "SCHEMA_UNAVAILABLE")
 
         # 3. Known artifact with supported schema but non-dict payload
         rep_bad_payload = validate_artifact_data("PMO-03.01", ["not", "a", "dict"])

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.06.04.schema.json",
+  "title": "Completed RESPONSIBILITY ASSIGNMENT MATRIX Data Contract",
+  "description": "Additive structural schema validating completed RESPONSIBILITY ASSIGNMENT MATRIX artifact data payloads (PMO-04.06.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.06.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "raci_model_definitions_and_key": {
+      "type": "object",
+      "properties": {
+        "responsible_r_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Definition: The role assigned to do the work and complete the activity deliverable."
+        },
+        "accountable_a_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Definition: The single role with ultimate ownership, decision authority, and sign-off approval."
+        },
+        "consulted_c_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Definition: Subject matter experts providing vital two-way input and technical guidance."
+        },
+        "informed_i_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Definition: Stakeholders kept updated on progress, milestones, and decisions via one-way communication."
+        }
+      },
+      "required": [
+        "responsible_r_definition",
+        "accountable_a_definition",
+        "consulted_c_definition",
+        "informed_i_definition"
+      ]
+    },
+    "assignment_matrix_work_packages_vs_roles": {
+      "type": "object",
+      "properties": {
+        "wbs_deliverable_and_assigned_raci_codes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Tabular mapping assigning explicit R, A, C, and I roles for each major WBS work package."
+        },
+        "role_coverage_and_work_distribution": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verification that every activity has exactly one Accountable role and at least one Responsible role."
+        }
+      },
+      "required": [
+        "wbs_deliverable_and_assigned_raci_codes",
+        "role_coverage_and_work_distribution"
+      ]
+    },
+    "governance_and_accountability_rules": {
+      "type": "object",
+      "properties": {
+        "single_accountability_governance_rule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Mandatory policy prohibiting multiple Accountable (A) assignments per deliverable to prevent diffusion of responsibility."
+        },
+        "escalation_and_conflict_resolution_protocol": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Process for resolving role overlaps, gaps, and decision deadlocks across project leads."
+        }
+      },
+      "required": [
+        "single_accountability_governance_rule",
+        "escalation_and_conflict_resolution_protocol"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "raci_model_definitions_and_key",
+    "assignment_matrix_work_packages_vs_roles",
+    "governance_and_accountability_rules"
+  ]
+}

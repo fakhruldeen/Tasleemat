@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.10.schema.json",
+  "title": "Completed Impediment Log Data Contract",
+  "description": "Additive structural schema validating completed Impediment Log artifact data payloads (PMO-05.10).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.10"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "impediment_log": {
+      "type": "object",
+      "properties": {
+        "impediment_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "A short identifier, so an impediment can be referred to in a stand-up without being described again. A number is enough if it is the only one in use."
+        },
+        "date_raised": {
+          "type": "string",
+          "minLength": 1,
+          "description": "When it was identified. The date is what makes an old impediment visible: an entry with no date is one nobody can tell has been sitting there."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What is standing between the team and the work, in terms someone outside the team would understand. A description the reader can only decode by asking is not one that can be escalated."
+        },
+        "impact": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What it costs while it stands: the work it holds up and what that costs in the cycle. An impediment with no stated impact cannot be prioritised against anything else."
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who is pursuing the resolution, which is not the same as who the impediment affects. The person raising it may be pursuing it and the person who can remove it may be elsewhere."
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Open, in progress, or resolved, and the date it was resolved. A resolved entry with no resolution recorded is worth little, because the next team to hit it cannot use what was learned."
+        }
+      },
+      "required": [
+        "impediment_id",
+        "date_raised",
+        "description",
+        "impact",
+        "owner",
+        "status"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "impediment_log"
+  ]
+}

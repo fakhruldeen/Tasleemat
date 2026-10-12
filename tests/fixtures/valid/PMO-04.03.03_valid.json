@@ -1,0 +1,29 @@
+{
+  "artifact_id": "PMO-04.03.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "activity_identification_and_overview": {
+    "activity_code_and_title": "Substantive completed details for Activity Code And Title.",
+    "activity_description_and_scope_summary": "Substantive completed details for Activity Description And Scope Summary.",
+    "assigned_work_package_reference": "Substantive completed details for Assigned Work Package Reference."
+  },
+  "activity_predecessors_and_successors": {
+    "predecessor_activities_and_logic": "Substantive completed details for Predecessor Activities And Logic.",
+    "successor_activities_and_logic": "Substantive completed details for Successor Activities And Logic."
+  },
+  "resource_and_skill_requirements": {
+    "required_team_roles_and_headcount": "Substantive completed details for Required Team Roles And Headcount.",
+    "technical_skills_and_equipment_needed": "Substantive completed details for Technical Skills And Equipment Needed."
+  },
+  "execution_constraints_and_imposed_dates": {
+    "imposed_start_and_finish_dates": "Substantive completed details for Imposed Start And Finish Dates.",
+    "activity_assumptions_and_location_constraints": "Substantive completed details for Activity Assumptions And Location Constraints."
+  }
+}

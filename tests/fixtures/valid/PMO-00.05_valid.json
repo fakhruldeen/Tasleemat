@@ -1,0 +1,29 @@
+{
+  "artifact_id": "PMO-00.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "assessment_context": {
+    "assessment_purpose_and_scope": "Substantive completed details for Assessment Purpose And Scope.",
+    "assessment_lead_and_date": "Substantive completed details for Assessment Lead And Date.",
+    "target_maturity_level": "Substantive completed details for Target Maturity Level."
+  },
+  "dimension_scoring": {
+    "governance_and_strategy_alignment": "Substantive completed details for Governance And Strategy Alignment.",
+    "delivery_support_and_methodology": "Substantive completed details for Delivery Support And Methodology.",
+    "people_and_competency_development": "Substantive completed details for People And Competency Development.",
+    "performance_and_reporting": "Substantive completed details for Performance And Reporting.",
+    "tools_and_technology_ecosystem": "Substantive completed details for Tools And Technology Ecosystem."
+  },
+  "improvement_roadmap": {
+    "capability_gap_description": "Substantive completed details for Capability Gap Description.",
+    "improvement_initiative": "Substantive completed details for Improvement Initiative.",
+    "initiative_owner_and_timeline": "Substantive completed details for Initiative Owner And Timeline."
+  }
+}

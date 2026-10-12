@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.08.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-08-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "assessment_parameters_and_scoring_scales": {
+    "probability_scoring_scales_and_values": "Draft notes for Probability Scoring Scales And Values."
+  },
+  "qualitative_risk_evaluation": {
+    "risk_id_and_event_title": "Draft notes for Risk Id And Event Title."
+  },
+  "risk_exposure_analysis_and_prioritization": {
+    "composite_risk_exposure_score": "Draft notes for Composite Risk Exposure Score."
+  }
+}

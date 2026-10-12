@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-02.04.schema.json",
+  "title": "Completed AI Use Case Canvas Data Contract",
+  "description": "Additive structural schema validating completed AI Use Case Canvas artifact data payloads (PMO-02.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-02.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "use_case_identification": {
+      "type": "object",
+      "properties": {
+        "use_case_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What this use case is called, and where it sits in the portfolio. Naming it makes it possible to say that a later system is the same use case grown, which is usually the difference between a second business case and a repeat of the first."
+        },
+        "business_owner": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The person accountable for the outcome, who must be able to say what the system is for without reference to the model. An owner who describes the technology has not been identified."
+        },
+        "problem_statement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific problem, in the words of the person who has it, with the cost of leaving it unsolved. \"Improve efficiency\" is a goal; \"a specialist spends forty minutes a day reconciling three spreadsheets\" is a problem that can be sized and later checked."
+        },
+        "affected_population": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who experiences the problem, how many, and how often. The population is what converts an annoyance into a cost, and it is also the population the system will act upon."
+        },
+        "current_workaround": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What people do today, and what it costs them. A workaround with no stated cost cannot be beaten, so the baseline here is what any proposal is measured against."
+        }
+      },
+      "required": [
+        "use_case_name",
+        "business_owner",
+        "problem_statement",
+        "affected_population",
+        "current_workaround"
+      ]
+    },
+    "proposed_solution": {
+      "type": "object",
+      "properties": {
+        "ai_pattern": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The class of approach, and what makes it fit this problem rather than a neighbouring one. Classification, ranking, generation, forecasting and anomaly detection fail differently, and naming the pattern is what lets the failure modes be anticipated."
+        },
+        "solution_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What the system does, in one paragraph a non-specialist can check. If the description requires the model architecture to be understood, the description is not yet a description."
+        },
+        "human_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What a person still does, and at which points they can stop the system. A system described as assisting usually replaces something, and the thing replaced should be named so the change is visible to those affected."
+        },
+        "scope_boundary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What this use case explicitly does not include. Scope stated only as a positive is unbounded, and an unbounded use case absorbs its neighbours' costs."
+        },
+        "assumptions": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What must be true for the solution to work, and what happens if each is not. Assumptions recorded after the build are records of what was believed, not of what was assumed."
+        }
+      },
+      "required": [
+        "ai_pattern",
+        "solution_description",
+        "human_role",
+        "scope_boundary",
+        "assumptions"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "data_sources": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Where each input comes from, as a named system or collection with an owner. A source named only as \"historical data\" cannot be checked for permission, and permission is the first thing that blocks."
+        },
+        "data_category_and_volume": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What kind of data, at what volume and frequency. Frequency is the field most often omitted and the one that determines whether the system is retrained, refreshed or left to drift."
+        },
+        "data_quality_status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What is known about completeness, consistency and timeliness, and what has not been checked. Recording what was not checked is as useful as recording what was, because it bounds the confidence of the estimate."
+        },
+        "labelling_requirement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Whether labelled examples exist, who will produce them, and at what cost. This is usually the largest single line in the business case, and it is usually absent from it."
+        },
+        "permitted_use_and_access": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What the data may be used for within this use case, and who approves it. Where the data cannot be used for model training, the shape of the solution changes, and that is better known before than after."
+        }
+      },
+      "required": [
+        "data_sources",
+        "data_category_and_volume",
+        "data_quality_status",
+        "labelling_requirement",
+        "permitted_use_and_access"
+      ]
+    },
+    "value_and_cost": {
+      "type": "object",
+      "properties": {
+        "value_proposition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What changes for whom, expressed as a change in the process rather than a return figure. A return calculated before the operating cost is a number that survives no review."
+        },
+        "value_measurement_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How the value will be measured, against what baseline, and by whom. Value stated without a baseline is a claim, and the baseline is usually already recorded in the current-workaround cost above."
+        },
+        "beneficiaries": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who gains, and who bears the cost of the change. These are rarely the same people, and the form is the place where the second group becomes visible."
+        },
+        "build_cost": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What it will cost to build, and what is included. The cost that is excluded is the operating cost below, and stating the exclusion is what keeps the total honest."
+        },
+        "operating_cost": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What it will cost to run per unit of work, and at what volume. Cost per unit rather than total, because the total scales with volume and the viability question is asked per unit."
+        },
+        "value_realisation_condition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What must be true for the value to be realised, as distinct from for the system to be built. Most systems are built successfully and deliver nothing, and the difference is nearly always one of these conditions."
+        }
+      },
+      "required": [
+        "value_proposition",
+        "value_measurement_method",
+        "beneficiaries",
+        "build_cost",
+        "operating_cost",
+        "value_realisation_condition"
+      ]
+    },
+    "risks_controls_and_governance_route": {
+      "type": "object",
+      "properties": {
+        "key_risks": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The risks specific to this use case, ranked, with the consequence if each materialises. A generic risk register applied here records that data may be biased without saying for whom or how it would be detected."
+        },
+        "risk_controls": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What is in place for each risk, and what it does not cover. The second half is the useful half, and a control that covers everything is a control that has been described rather than designed."
+        },
+        "feasibility_assessment": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Whether this is technically feasible, at what maturity, and what is unproven. A feasibility statement that does not say which part is unproven is a statement that all of it is proven."
+        },
+        "governance_route": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Which governance artefacts this use case must pass through, and in what order. The order is the content: privacy, then fairness, then approval, because a system approved before its data is assessed cannot be un-approved."
+        },
+        "kill_criteria": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What result would cause this use case to be stopped. A use case with no kill criteria is a commitment, and a commitment entered without an exit condition is the failure mode this field exists to prevent."
+        },
+        "related_artefacts": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The business case, AI governance plan, model card and privacy assessment for this use case, so that a reader holding the canvas can find the decisions that depend on it."
+        }
+      },
+      "required": [
+        "key_risks",
+        "risk_controls",
+        "feasibility_assessment",
+        "governance_route",
+        "kill_criteria",
+        "related_artefacts"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "use_case_identification",
+    "proposed_solution",
+    "data",
+    "value_and_cost",
+    "risks_controls_and_governance_route"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.05.schema.json",
+  "title": "Completed NETWORK DIAGRAM Data Contract",
+  "description": "Additive structural schema validating completed NETWORK DIAGRAM artifact data payloads (PMO-04.03.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "network_logic_and_critical_path_overview": {
+      "type": "object",
+      "properties": {
+        "network_diagramming_methodology": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The logical diagramming method utilized (Precedence Diagramming Method - PDM)."
+        },
+        "critical_path_summary_and_duration": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identification of critical path activities, total critical path duration, and zero-float paths."
+        },
+        "near_critical_paths_and_float_analysis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Analysis of near-critical paths and activities possessing total and free float."
+        }
+      },
+      "required": [
+        "network_diagramming_methodology",
+        "critical_path_summary_and_duration",
+        "near_critical_paths_and_float_analysis"
+      ]
+    },
+    "precedence_relationships_and_dependencies": {
+      "type": "object",
+      "properties": {
+        "core_predecessor_and_successor_chains": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key sequence chains connecting major engineering and development work packages."
+        },
+        "lead_and_lag_justifications": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Documented technical justifications for all applied lead times and lag buffers."
+        }
+      },
+      "required": [
+        "core_predecessor_and_successor_chains",
+        "lead_and_lag_justifications"
+      ]
+    },
+    "network_diagram_visualization": {
+      "type": "object",
+      "properties": {
+        "mermaid_diagram_syntax": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Valid Mermaid graph syntax representing the complete node-and-arrow network dependency logic."
+        },
+        "diagram_interpretation_guidelines": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Narrative guide explaining how to read activity nodes, dependencies, and path flows."
+        }
+      },
+      "required": [
+        "mermaid_diagram_syntax",
+        "diagram_interpretation_guidelines"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "network_logic_and_critical_path_overview",
+    "precedence_relationships_and_dependencies",
+    "network_diagram_visualization"
+  ]
+}

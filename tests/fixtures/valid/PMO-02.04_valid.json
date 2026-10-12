@@ -1,0 +1,49 @@
+{
+  "artifact_id": "PMO-02.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-04",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "use_case_identification": {
+    "use_case_name": "Substantive completed details for Use Case Name.",
+    "business_owner": "Substantive completed details for Business Owner.",
+    "problem_statement": "Substantive completed details for Problem Statement.",
+    "affected_population": "Substantive completed details for Affected Population.",
+    "current_workaround": "Substantive completed details for Current Workaround."
+  },
+  "proposed_solution": {
+    "ai_pattern": "Substantive completed details for Ai Pattern.",
+    "solution_description": "Substantive completed details for Solution Description.",
+    "human_role": "Substantive completed details for Human Role.",
+    "scope_boundary": "Substantive completed details for Scope Boundary.",
+    "assumptions": "Substantive completed details for Assumptions."
+  },
+  "data": {
+    "data_sources": "Substantive completed details for Data Sources.",
+    "data_category_and_volume": "Substantive completed details for Data Category And Volume.",
+    "data_quality_status": "Substantive completed details for Data Quality Status.",
+    "labelling_requirement": "Substantive completed details for Labelling Requirement.",
+    "permitted_use_and_access": "Substantive completed details for Permitted Use And Access."
+  },
+  "value_and_cost": {
+    "value_proposition": "Substantive completed details for Value Proposition.",
+    "value_measurement_method": "Substantive completed details for Value Measurement Method.",
+    "beneficiaries": "Substantive completed details for Beneficiaries.",
+    "build_cost": "Substantive completed details for Build Cost.",
+    "operating_cost": "Substantive completed details for Operating Cost.",
+    "value_realisation_condition": "Substantive completed details for Value Realisation Condition."
+  },
+  "risks_controls_and_governance_route": {
+    "key_risks": "Substantive completed details for Key Risks.",
+    "risk_controls": "Substantive completed details for Risk Controls.",
+    "feasibility_assessment": "Substantive completed details for Feasibility Assessment.",
+    "governance_route": "Substantive completed details for Governance Route.",
+    "kill_criteria": "Substantive completed details for Kill Criteria.",
+    "related_artefacts": "Substantive completed details for Related Artefacts."
+  }
+}

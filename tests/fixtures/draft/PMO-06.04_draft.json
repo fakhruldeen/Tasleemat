@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-06.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-04",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "variance_analysis_table": {
+    "schedule_planned_result": "Draft notes for Schedule Planned Result."
+  },
+  "variance_implications_and_escalation": {
+    "implications_of_continued_variance_forecast": "Draft notes for Implications Of Continued Variance Forecast."
+  },
+  "comments": {
+    "comments": "Draft notes for Comments."
+  }
+}

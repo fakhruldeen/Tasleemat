@@ -1,0 +1,29 @@
+{
+  "artifact_id": "PMO-04.06.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-06-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "team_values_and_shared_vision": {
+    "core_team_values": "Substantive completed details for Core Team Values.",
+    "shared_project_mission_and_vision": "Substantive completed details for Shared Project Mission And Vision."
+  },
+  "operating_agreements_and_guidelines": {
+    "working_norms_and_ground_rules": "Substantive completed details for Working Norms And Ground Rules.",
+    "core_working_hours_and_availability": "Substantive completed details for Core Working Hours And Availability."
+  },
+  "communication_and_meeting_protocols": {
+    "meeting_cadence_and_rules": "Substantive completed details for Meeting Cadence And Rules.",
+    "communication_channels_usage": "Substantive completed details for Communication Channels Usage."
+  },
+  "decision_making_and_conflict_resolution": {
+    "decision_making_framework": "Substantive completed details for Decision Making Framework.",
+    "conflict_escalation_and_resolution_steps": "Substantive completed details for Conflict Escalation And Resolution Steps.",
+    "team_signatures_and_commitment": "Substantive completed details for Team Signatures And Commitment."
+  }
+}

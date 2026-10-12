@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-02.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "governance_context_and_scope": {
+    "ai_system_inventory": "Draft notes for Ai System Inventory."
+  },
+  "ethical_principles_and_acceptable_use": {
+    "ethical_principles": "Draft notes for Ethical Principles."
+  },
+  "data_governance": {
+    "data_category": "Draft notes for Data Category."
+  },
+  "fairness_bias_and_transparency": {
+    "affected_group": "Draft notes for Affected Group."
+  },
+  "compliance_and_accountability": {
+    "applicable_regulations": "Draft notes for Applicable Regulations."
+  },
+  "monitoring_and_change": {
+    "performance_and_drift_monitoring": "Draft notes for Performance And Drift Monitoring."
+  }
+}

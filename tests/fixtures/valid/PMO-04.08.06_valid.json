@@ -1,0 +1,31 @@
+{
+  "artifact_id": "PMO-04.08.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-08-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "executive_summary_and_overall_risk_profile": {
+    "overall_project_risk_exposure_summary": "Substantive completed details for Overall Project Risk Exposure Summary.",
+    "key_risk_drivers_and_strategic_factors": "Substantive completed details for Key Risk Drivers And Strategic Factors.",
+    "overall_risk_mitigation_strategy": "Substantive completed details for Overall Risk Mitigation Strategy."
+  },
+  "critical_threats_and_opportunities_summary": {
+    "top_project_threats_and_active_responses": "Substantive completed details for Top Project Threats And Active Responses.",
+    "top_project_opportunities_and_capture_plans": "Substantive completed details for Top Project Opportunities And Capture Plans.",
+    "realized_risks_transferred_to_issue_log": "Substantive completed details for Realized Risks Transferred To Issue Log."
+  },
+  "quantitative_risk_exposure_and_reserve_adequacy": {
+    "quantitative_simulation_findings": "Substantive completed details for Quantitative Simulation Findings.",
+    "probability_of_achieving_project_objectives": "Substantive completed details for Probability Of Achieving Project Objectives.",
+    "contingency_reserve_adequacy_assessment": "Substantive completed details for Contingency Reserve Adequacy Assessment."
+  },
+  "risk_management_trends_and_recommendations": {
+    "risk_process_and_metric_trends": "Substantive completed details for Risk Process And Metric Trends.",
+    "recommended_governance_interventions": "Substantive completed details for Recommended Governance Interventions."
+  }
+}

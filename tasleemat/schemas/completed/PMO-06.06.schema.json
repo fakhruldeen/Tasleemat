@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.06.schema.json",
+  "title": "Completed RISK AUDIT REPORT Data Contract",
+  "description": "Additive structural schema validating completed RISK AUDIT REPORT artifact data payloads (PMO-06.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "audit_information": {
+      "type": "object",
+      "properties": {
+        "audit_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The defined scope and boundaries of the risk audit."
+        },
+        "period_covered": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The timeframe examined by the risk audit."
+        },
+        "level_of_analysis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The organizational or WBS level examined during the audit."
+        },
+        "reference_documents_reviewed": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key governance documents and logs reviewed during the audit."
+        },
+        "audit_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The methodology and evaluation techniques applied during the audit."
+        }
+      },
+      "required": [
+        "audit_scope",
+        "period_covered",
+        "level_of_analysis",
+        "reference_documents_reviewed",
+        "audit_method"
+      ]
+    },
+    "risk_event_audits": {
+      "type": "object",
+      "properties": {
+        "risk_event_audits": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Evaluation of materialized risk events, root causes, response effectiveness, and foreseeability."
+        }
+      },
+      "required": [
+        "risk_event_audits"
+      ]
+    },
+    "risk_response_audits": {
+      "type": "object",
+      "properties": {
+        "risk_response_audits": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed assessment of planned risk responses and their practical execution success."
+        }
+      },
+      "required": [
+        "risk_response_audits"
+      ]
+    },
+    "risk_management_process_audit": {
+      "type": "object",
+      "properties": {
+        "process_compliance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Evaluation of organizational compliance with established PMBOK risk processes."
+        },
+        "tools_and_techniques": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment of the effectiveness of risk assessment tools and analytical models applied."
+        }
+      },
+      "required": [
+        "process_compliance",
+        "tools_and_techniques"
+      ]
+    },
+    "good_practices": {
+      "type": "object",
+      "properties": {
+        "good_practices": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Proven risk management practices and techniques recommended for broader adoption."
+        }
+      },
+      "required": [
+        "good_practices"
+      ]
+    },
+    "areas_for_improvement": {
+      "type": "object",
+      "properties": {
+        "areas_for_improvement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identified procedural deficiencies, corrective action plans, owners, and due dates."
+        }
+      },
+      "required": [
+        "areas_for_improvement"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Additional audit observations, limitations, or stakeholder commentary."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "audit_information",
+    "risk_event_audits",
+    "risk_response_audits",
+    "risk_management_process_audit",
+    "good_practices",
+    "areas_for_improvement",
+    "comments"
+  ]
+}

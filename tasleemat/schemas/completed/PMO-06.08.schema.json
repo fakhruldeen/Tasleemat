@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.08.schema.json",
+  "title": "Completed PRODUCT ACCEPTANCE FORM Data Contract",
+  "description": "Additive structural schema validating completed PRODUCT ACCEPTANCE FORM artifact data payloads (PMO-06.08).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.08"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "product_acceptance_record": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter a unique requirement identifier from the requirements documentation."
+        },
+        "requirement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the requirement description from the requirements documentation."
+        },
+        "acceptance_criteria": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the criteria for acceptance, stated so they can be judged as met or not met."
+        },
+        "validation_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the method of validating that the requirement meets the stakeholder's needs."
+        },
+        "verification_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional. Record the verification method used to prove that the deliverable meets the requirement. Adding this column turns the form into a product verification, validation, and acceptance form."
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Document whether the requirement or deliverable was accepted or not."
+        },
+        "sign_off": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Obtain the signature of the party accepting the product."
+        },
+        "acceptance_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the date the product was accepted. This dates the acceptance for the project record and for the requirements traceability matrix."
+        },
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Add any comments relevant to the acceptance, such as conditions attached to the acceptance, or items deferred to a later acceptance."
+        }
+      },
+      "required": [
+        "id",
+        "requirement",
+        "acceptance_criteria",
+        "validation_method",
+        "verification_method",
+        "status",
+        "sign_off",
+        "acceptance_date",
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "product_acceptance_record"
+  ]
+}

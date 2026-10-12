@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.07.schema.json",
+  "title": "Completed PROCUREMENT AUDIT REPORT Data Contract",
+  "description": "Additive structural schema validating completed PROCUREMENT AUDIT REPORT artifact data payloads (PMO-06.07).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.07"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "audit_information": {
+      "type": "object",
+      "properties": {
+        "procurements_or_contracts_audited": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific procurement contracts, tender packages, and vendors audited."
+        },
+        "audit_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The scope, contract boundaries, and sampling methodology of the procurement audit."
+        },
+        "period_covered": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The date range and milestones examined during the procurement audit."
+        },
+        "audit_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The methodology used (e.g., contract file review, vendor interviews, financial reconciliation)."
+        }
+      },
+      "required": [
+        "procurements_or_contracts_audited",
+        "audit_scope",
+        "period_covered",
+        "audit_method"
+      ]
+    },
+    "vendor_performance_audit_what_worked_well": {
+      "type": "object",
+      "properties": {
+        "vendor_performance_audit_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Aspects of contract scope, quality, schedule, and cost delivered successfully with supporting evidence."
+        }
+      },
+      "required": [
+        "vendor_performance_audit_what_worked_well"
+      ]
+    },
+    "vendor_performance_audit_what_can_be_improved": {
+      "type": "object",
+      "properties": {
+        "vendor_performance_audit_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Deficiencies, delays, or cost variances identified across contract dimensions with recommendations."
+        }
+      },
+      "required": [
+        "vendor_performance_audit_what_can_be_improved"
+      ]
+    },
+    "procurement_management_process_audit": {
+      "type": "object",
+      "properties": {
+        "procurement_management_process_audit": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Audit evaluation across Plan Procurements, Conduct Procurements, and Control Procurements."
+        }
+      },
+      "required": [
+        "procurement_management_process_audit"
+      ]
+    },
+    "good_practices_to_share": {
+      "type": "object",
+      "properties": {
+        "good_practices_to_share": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Contracting best practices, negotiation tactics, and lessons learned for reuse across the PMO."
+        }
+      },
+      "required": [
+        "good_practices_to_share"
+      ]
+    },
+    "areas_for_improvement": {
+      "type": "object",
+      "properties": {
+        "areas_for_improvement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Recommendations for updating organizational procurement policies, templates, and procedures."
+        }
+      },
+      "required": [
+        "areas_for_improvement"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Additional auditor observations, commercial context, or closing remarks."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "audit_information",
+    "vendor_performance_audit_what_worked_well",
+    "vendor_performance_audit_what_can_be_improved",
+    "procurement_management_process_audit",
+    "good_practices_to_share",
+    "areas_for_improvement",
+    "comments"
+  ]
+}

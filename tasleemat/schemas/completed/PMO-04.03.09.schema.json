@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.09.schema.json",
+  "title": "Completed RELEASE PLAN Data Contract",
+  "description": "Additive structural schema validating completed RELEASE PLAN artifact data payloads (PMO-04.03.09).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.09"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "releases": {
+      "type": "object",
+      "properties": {
+        "release": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The release identifier and name, for example R1 or Release 1. A release is the unit the customer receives, not an internal milestone, so name it the way the customer would recognise it."
+        },
+        "start_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "When the release starts. For a high-level plan a month or a quarter is honest; a day-level date implies a precision the plan does not have."
+        },
+        "end_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "When the release finishes. Give the duration as well as the end date, since the two together are what show whether the release is gaining or losing ground."
+        },
+        "user_stories": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The requirements or user stories from the backlog assigned to this release, referenced by their backlog identifier rather than restated, so the plan and the backlog cannot drift apart."
+        },
+        "release_goal": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What this release is for, in one sentence. A release without a goal turns into a list of everything that happened to fit, which is how releases acquire unrelated work."
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Not started, in progress, or released. This is the column that makes the plan honest: once a sprint has started its contents cannot change, so anything still marked in progress is committed, and anything not started can still move."
+        }
+      },
+      "required": [
+        "release",
+        "start_date",
+        "end_date",
+        "user_stories",
+        "release_goal",
+        "status"
+      ]
+    },
+    "sprint_breakdown": {
+      "type": "object",
+      "properties": {
+        "sprint": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The sprint identifier and the release it belongs to, so the plan can be read per release rather than as one long list."
+        },
+        "dates": {
+          "type": "string",
+          "minLength": 1,
+          "description": "When the sprint starts and ends. A sprint with no dates cannot be told apart from one that is still open to negotiation, and once it has started its contents are fixed."
+        },
+        "sprint_goal": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What this sprint is for, in one sentence. Several sprints toward one release goal is the normal case; a sprint goal that contradicts the release goal is a sign the release is carrying two unrelated pieces of work."
+        },
+        "sprint_user_stories": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The user stories committed to this sprint, by backlog identifier. Once the sprint has started this list is what was committed, and a change to it is a change to the commitment rather than to the plan."
+        },
+        "sprint_status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Not started, in progress, or complete."
+        }
+      },
+      "required": [
+        "sprint",
+        "dates",
+        "sprint_goal",
+        "sprint_user_stories",
+        "sprint_status"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "releases",
+    "sprint_breakdown"
+  ]
+}

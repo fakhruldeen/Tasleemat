@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.06.06.schema.json",
+  "title": "Completed Team Psychological Safety and Wellbeing Index Data Contract",
+  "description": "Additive structural schema validating completed Team Psychological Safety and Wellbeing Index artifact data payloads (PMO-04.06.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.06.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "assessment_baseline": {
+      "type": "object",
+      "properties": {
+        "assessment_period_and_cadence": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The evaluation sprint, sprint cadence, and designated survey period for measuring team psychological safety and cognitive well-being."
+        },
+        "facilitator_and_working_model": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The designated agile coach, scrum master, or people lead facilitating the assessment, and the team's working arrangement (Co-located, Hybrid, or Fully Remote)."
+        },
+        "team_response_participation_rate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The percentage of team members participating in the anonymous assessment to validate sample representation."
+        }
+      },
+      "required": [
+        "assessment_period_and_cadence",
+        "facilitator_and_working_model",
+        "team_response_participation_rate"
+      ]
+    },
+    "psychological_safety_dimensions": {
+      "type": "object",
+      "properties": {
+        "vulnerability_and_open_inquiry_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Aggregated rating reflecting team members' comfort in asking questions, admitting mistakes, and seeking help without fear of penalty."
+        },
+        "constructive_dissent_and_innovation_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Aggregated rating reflecting psychological comfort in challenging assumptions, proposing novel ideas, and offering dissenting views."
+        },
+        "blameless_culture_and_mutual_support_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Aggregated rating reflecting perceived team trust, peer collaboration, and constructive root-cause problem solving."
+        }
+      },
+      "required": [
+        "vulnerability_and_open_inquiry_score",
+        "constructive_dissent_and_innovation_score",
+        "blameless_culture_and_mutual_support_score"
+      ]
+    },
+    "cognitive_load_and_well_being": {
+      "type": "object",
+      "properties": {
+        "cognitive_load_and_overtime_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Quantitative assessment of sustained work pressure, cognitive context-switching frequency, and overtime hours worked."
+        },
+        "focus_time_and_meeting_load_ratio": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Ratio of uninterrupted deep-work focus time compared to total hours spent in synchronous meetings and ceremonies."
+        },
+        "well_being_action_and_working_agreement_update": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Agreed interventions, meeting hygiene rules, focus-block policies, or team charter amendments enacted to protect team vitality."
+        }
+      },
+      "required": [
+        "cognitive_load_and_overtime_health",
+        "focus_time_and_meeting_load_ratio",
+        "well_being_action_and_working_agreement_update"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "assessment_baseline",
+    "psychological_safety_dimensions",
+    "cognitive_load_and_well_being"
+  ]
+}

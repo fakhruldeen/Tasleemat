@@ -1,0 +1,53 @@
+{
+  "artifact_id": "PMO-02.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "governance_context_and_scope": {
+    "ai_system_inventory": "Substantive completed details for Ai System Inventory.",
+    "intended_purpose_and_affected_users": "Substantive completed details for Intended Purpose And Affected Users.",
+    "risk_classification": "Substantive completed details for Risk Classification.",
+    "scope_exclusions": "Substantive completed details for Scope Exclusions."
+  },
+  "ethical_principles_and_acceptable_use": {
+    "ethical_principles": "Substantive completed details for Ethical Principles.",
+    "prohibited_uses": "Substantive completed details for Prohibited Uses.",
+    "approved_use_cases": "Substantive completed details for Approved Use Cases.",
+    "human_impact_assessment": "Substantive completed details for Human Impact Assessment."
+  },
+  "data_governance": {
+    "data_category": "Substantive completed details for Data Category.",
+    "provenance_and_lawful_basis": "Substantive completed details for Provenance And Lawful Basis.",
+    "permitted_use": "Substantive completed details for Permitted Use.",
+    "protection_control": "Substantive completed details for Protection Control.",
+    "retention_and_deletion": "Substantive completed details for Retention And Deletion."
+  },
+  "fairness_bias_and_transparency": {
+    "affected_group": "Substantive completed details for Affected Group.",
+    "bias_risk": "Substantive completed details for Bias Risk.",
+    "test_method_and_threshold": "Substantive completed details for Test Method And Threshold.",
+    "mitigation": "Substantive completed details for Mitigation.",
+    "ongoing_indicator": "Substantive completed details for Ongoing Indicator."
+  },
+  "compliance_and_accountability": {
+    "applicable_regulations": "Substantive completed details for Applicable Regulations.",
+    "control_mapping": "Substantive completed details for Control Mapping.",
+    "evidence_and_records": "Substantive completed details for Evidence And Records.",
+    "compliance_review_cadence": "Substantive completed details for Compliance Review Cadence.",
+    "accountable_owner": "Substantive completed details for Accountable Owner.",
+    "human_oversight_points": "Substantive completed details for Human Oversight Points.",
+    "decision_rights_and_redress": "Substantive completed details for Decision Rights And Redress.",
+    "incident_reporting": "Substantive completed details for Incident Reporting."
+  },
+  "monitoring_and_change": {
+    "performance_and_drift_monitoring": "Substantive completed details for Performance And Drift Monitoring.",
+    "reassessment_triggers": "Substantive completed details for Reassessment Triggers.",
+    "change_control_link": "Substantive completed details for Change Control Link."
+  }
+}

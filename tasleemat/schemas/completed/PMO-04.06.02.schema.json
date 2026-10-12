@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.06.02.schema.json",
+  "title": "Completed RESOURCE REQUIREMENTS Data Contract",
+  "description": "Additive structural schema validating completed RESOURCE REQUIREMENTS artifact data payloads (PMO-04.06.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.06.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "human_resource_requirements": {
+      "type": "object",
+      "properties": {
+        "activity_identifier_and_role_required": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The schedule activity code and specific professional role or technical job title required."
+        },
+        "skill_competencies_and_quantity_needed": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Required certifications, technical expertise, and quantity of headcount required."
+        },
+        "estimated_effort_hours_and_allocation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Total estimated person-hours and allocated percentage commitment for each resource."
+        }
+      },
+      "required": [
+        "activity_identifier_and_role_required",
+        "skill_competencies_and_quantity_needed",
+        "estimated_effort_hours_and_allocation"
+      ]
+    },
+    "physical_and_material_resource_requirements": {
+      "type": "object",
+      "properties": {
+        "equipment_machinery_and_tool_requirements": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific hardware, specialized machinery, computing infrastructure, or testing tools needed."
+        },
+        "materials_supplies_and_facilities": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Physical raw materials, office space, testing laboratories, or staging environments required."
+        }
+      },
+      "required": [
+        "equipment_machinery_and_tool_requirements",
+        "materials_supplies_and_facilities"
+      ]
+    },
+    "resource_availability_and_scheduling_calendar": {
+      "type": "object",
+      "properties": {
+        "resource_availability_dates_and_constraints": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calendar timeframes, mobilization dates, shift constraints, and lead time requirements."
+        },
+        "resource_assumptions_and_risk_factors": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key assumptions regarding staffing market availability, productivity rates, and bottleneck risks."
+        }
+      },
+      "required": [
+        "resource_availability_dates_and_constraints",
+        "resource_assumptions_and_risk_factors"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "human_resource_requirements",
+    "physical_and_material_resource_requirements",
+    "resource_availability_and_scheduling_calendar"
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.07.schema.json",
+  "title": "Completed DURATION ESTIMATING WORKSHEET Data Contract",
+  "description": "Additive structural schema validating completed DURATION ESTIMATING WORKSHEET artifact data payloads (PMO-04.03.07).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.07"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "parametric_estimates": {
+      "type": "object",
+      "properties": {
+        "parametric_activity_and_unit_metric": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The activity name and specific unit metric rate used for parametric calculation (e.g., hours per unit)."
+        },
+        "quantity_and_resource_factor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Total quantity of work units and resource efficiency factor applied."
+        },
+        "parametric_duration_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated duration derived from the mathematical parametric formula."
+        }
+      },
+      "required": [
+        "parametric_activity_and_unit_metric",
+        "quantity_and_resource_factor",
+        "parametric_duration_result"
+      ]
+    },
+    "analogous_estimates": {
+      "type": "object",
+      "properties": {
+        "historical_reference_activity": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Past project activity used as a baseline benchmark for historical comparison."
+        },
+        "historical_duration_and_complexity_scaling": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Duration of past activity and scaling factor applied for project scope differences."
+        },
+        "analogous_duration_result": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Final duration outcome determined through analogous comparison."
+        }
+      },
+      "required": [
+        "historical_reference_activity",
+        "historical_duration_and_complexity_scaling",
+        "analogous_duration_result"
+      ]
+    },
+    "three_point_estimates_beta_distribution": {
+      "type": "object",
+      "properties": {
+        "optimistic_most_likely_and_pessimistic_durations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The recorded optimistic (tO), most likely (tM), and pessimistic (tP) estimates."
+        },
+        "beta_calculated_expected_duration_te": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated expected duration using the PERT beta distribution formula (tO + 4tM + tP) / 6."
+        },
+        "standard_deviation_and_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated standard deviation (tP - tO) / 6 assessing estimating risk and variance."
+        }
+      },
+      "required": [
+        "optimistic_most_likely_and_pessimistic_durations",
+        "beta_calculated_expected_duration_te",
+        "standard_deviation_and_variance"
+      ]
+    },
+    "aggregated_schedule_reserves": {
+      "type": "object",
+      "properties": {
+        "total_calculated_schedule_buffer": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Consolidated sum of duration contingency buffers across all estimated activities."
+        },
+        "worksheet_reconciliation_and_approval": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formal review confirming no duplicate activity estimations across methods."
+        }
+      },
+      "required": [
+        "total_calculated_schedule_buffer",
+        "worksheet_reconciliation_and_approval"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "parametric_estimates",
+    "analogous_estimates",
+    "three_point_estimates_beta_distribution",
+    "aggregated_schedule_reserves"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.10.02.schema.json",
+  "title": "Completed STAKEHOLDER ENGAGEMENT ASSESSMENT MATRIX Data Contract",
+  "description": "Additive structural schema validating completed STAKEHOLDER ENGAGEMENT ASSESSMENT MATRIX artifact data payloads (PMO-04.10.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.10.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "stakeholder_classification_engagement_gap": {
+      "type": "object",
+      "properties": {
+        "stakeholder_identity_and_project_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name, organizational entity, and specific project touchpoint role of the stakeholder."
+        },
+        "current_versus_desired_engagement_level": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment of current engagement (C) versus desired engagement (D): Unaware, Resistant, Neutral, Supportive, Leading."
+        },
+        "engagement_gap_and_risk_impact_analysis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Strategic risks and schedule or governance exposure resulting from any delta between current and desired state."
+        }
+      },
+      "required": [
+        "stakeholder_identity_and_project_role",
+        "current_versus_desired_engagement_level",
+        "engagement_gap_and_risk_impact_analysis"
+      ]
+    },
+    "action_strategy_monitoring_feedback": {
+      "type": "object",
+      "properties": {
+        "targeted_engagement_strategy_and_action_plan": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific relationship management actions, executive touchpoints, or incentives designed to close the gap."
+        },
+        "monitoring_cadence_and_feedback_indicators": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Schedule for re-assessing stakeholder sentiment and quantifiable indicators of active support."
+        }
+      },
+      "required": [
+        "targeted_engagement_strategy_and_action_plan",
+        "monitoring_cadence_and_feedback_indicators"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "stakeholder_classification_engagement_gap",
+    "action_strategy_monitoring_feedback"
+  ]
+}

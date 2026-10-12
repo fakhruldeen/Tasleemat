@@ -1,0 +1,43 @@
+{
+  "artifact_id": "PMO-06.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "schedule_and_activities_current_period": {
+    "activities_planned_this_reporting_period": "Substantive completed details for Activities Planned This Reporting Period.",
+    "activities_accomplished_this_reporting_period": "Substantive completed details for Activities Accomplished This Reporting Period.",
+    "activities_planned_but_not_accomplished_this_reporting_period": "Substantive completed details for Activities Planned But Not Accomplished This Reporting Period.",
+    "root_cause_of_schedule_variances": "Substantive completed details for Root Cause Of Schedule Variances."
+  },
+  "cost_and_budget_current_period": {
+    "funds_planned_to_be_spent_this_reporting_period": "Substantive completed details for Funds Planned To Be Spent This Reporting Period.",
+    "funds_spent_this_reporting_period": "Substantive completed details for Funds Spent This Reporting Period.",
+    "root_cause_of_cost_variances": "Substantive completed details for Root Cause Of Cost Variances."
+  },
+  "quality_and_corrective_actions": {
+    "quality_variances_identified_this_period": "Substantive completed details for Quality Variances Identified This Period.",
+    "planned_corrective_or_preventive_action": "Substantive completed details for Planned Corrective Or Preventive Action."
+  },
+  "planning_for_next_period": {
+    "activities_planned_for_next_reporting_period": "Substantive completed details for Activities Planned For Next Reporting Period.",
+    "costs_planned_for_next_reporting_period": "Substantive completed details for Costs Planned For Next Reporting Period."
+  },
+  "risks_issues_and_escalations": {
+    "new_risks_identified": "Substantive completed details for New Risks Identified.",
+    "new_issues_identified": "Substantive completed details for New Issues Identified.",
+    "escalations": "Substantive completed details for Escalations."
+  },
+  "project_knowledge_and_decisions": {
+    "decisions_made": "Substantive completed details for Decisions Made.",
+    "lessons_learned_and_knowledge_transfer": "Substantive completed details for Lessons Learned And Knowledge Transfer."
+  },
+  "comments": {
+    "comments": "Substantive completed details for Comments."
+  }
+}

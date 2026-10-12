@@ -1,0 +1,55 @@
+{
+  "artifact_id": "PMO-02.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-03",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "purpose_and_scope_of_the_assessment": {
+    "assessment_objective": "",
+    "assessment_scope": "",
+    "assessment_method": "",
+    "assessor_and_date": "",
+    "evidence_basis": ""
+  },
+  "data_readiness": {
+    "data_availability": "",
+    "data_quality": "",
+    "data_lineage_and_documentation": "",
+    "labelling_and_ground_truth": "",
+    "data_governance_and_access": ""
+  },
+  "technical_and_platform_readiness": {
+    "compute_and_capacity": "",
+    "platform_and_tooling": "",
+    "integration": "",
+    "security_and_resilience": "",
+    "scalability": ""
+  },
+  "skills_and_team_readiness": {
+    "team_composition": "",
+    "ai_skills": "",
+    "domain_expertise": "",
+    "capacity_and_availability": "",
+    "capability_building": ""
+  },
+  "organisational_readiness": {
+    "leadership_sponsorship": "",
+    "operating_model": "",
+    "change_and_adoption": "",
+    "procurement_and_contracting": "",
+    "risk_appetite": ""
+  },
+  "assessment_outcome_and_route_forward": {
+    "dimension_scores": "",
+    "weighted_overall_score": "",
+    "blocking_gaps": "",
+    "recommended_route": "",
+    "remediation_plan": "",
+    "reassessment_trigger": ""
+  }
+}

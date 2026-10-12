@@ -1,0 +1,19 @@
+{
+  "artifact_id": "PMO-05.09",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-05-09",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "prompt_library": {
+    "prompt_id": "Substantive completed details for Prompt Id.",
+    "use_case": "Substantive completed details for Use Case.",
+    "prompt_text": "Substantive completed details for Prompt Text.",
+    "expected_output": "Substantive completed details for Expected Output.",
+    "status_version": "Substantive completed details for Status Version."
+  }
+}

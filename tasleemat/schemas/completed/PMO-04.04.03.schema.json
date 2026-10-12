@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.04.03.schema.json",
+  "title": "Completed COST ESTIMATING WORKSHEET Data Contract",
+  "description": "Additive structural schema validating completed COST ESTIMATING WORKSHEET artifact data payloads (PMO-04.04.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.04.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "labor_and_staffing_cost_calculations": {
+      "type": "object",
+      "properties": {
+        "role_title_and_headcount": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific resource role, staffing level, and number of full-time equivalents (FTE)."
+        },
+        "hours_allocation_and_hourly_rate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Total planned working hours and authorized standard or contracted hourly billing rate."
+        },
+        "total_calculated_labor_cost": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Subtotal labor expenditure calculated from hours multiplied by hourly rate."
+        }
+      },
+      "required": [
+        "role_title_and_headcount",
+        "hours_allocation_and_hourly_rate",
+        "total_calculated_labor_cost"
+      ]
+    },
+    "material_and_equipment_cost_calculations": {
+      "type": "object",
+      "properties": {
+        "material_or_equipment_item_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed description of physical supplies, hardware, server infrastructure, or licenses."
+        },
+        "unit_quantity_and_unit_purchase_price": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Required quantity and current quoted unit price per item."
+        },
+        "total_calculated_materials_cost": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Subtotal materials expenditure calculated from quantity multiplied by unit price."
+        }
+      },
+      "required": [
+        "material_or_equipment_item_description",
+        "unit_quantity_and_unit_purchase_price",
+        "total_calculated_materials_cost"
+      ]
+    },
+    "subcontractor_and_vendor_cost_calculations": {
+      "type": "object",
+      "properties": {
+        "contracted_service_or_work_package": {
+          "type": "string",
+          "minLength": 1,
+          "description": "External vendor scope of work, milestone deliverables, or consulting package."
+        },
+        "vendor_pricing_model_and_contract_sum": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Fixed price, time-and-materials rate, or contracted service sum."
+        }
+      },
+      "required": [
+        "contracted_service_or_work_package",
+        "vendor_pricing_model_and_contract_sum"
+      ]
+    },
+    "consolidated_cost_estimate_reconciliation": {
+      "type": "object",
+      "properties": {
+        "grand_total_base_estimate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Sum of all labor, materials, equipment, and subcontractor cost line items."
+        },
+        "worksheet_verification_and_audit_sign_off": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formal reconciliation verifying math accuracy and absence of duplicated cost items."
+        }
+      },
+      "required": [
+        "grand_total_base_estimate",
+        "worksheet_verification_and_audit_sign_off"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "labor_and_staffing_cost_calculations",
+    "material_and_equipment_cost_calculations",
+    "subcontractor_and_vendor_cost_calculations",
+    "consolidated_cost_estimate_reconciliation"
+  ]
+}

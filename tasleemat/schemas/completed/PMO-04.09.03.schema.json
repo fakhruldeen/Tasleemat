@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.09.03.schema.json",
+  "title": "Completed SOURCE SELECTION CRITERIA Data Contract",
+  "description": "Additive structural schema validating completed SOURCE SELECTION CRITERIA artifact data payloads (PMO-04.09.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.09.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "evaluation_criteria_and_weighting_framework": {
+      "type": "object",
+      "properties": {
+        "technical_capability_and_understanding_weight": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scoring weight and criteria assessing technical approach, compliance with SOW, and architecture."
+        },
+        "vendor_experience_and_past_performance_weight": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scoring weight and criteria evaluating track record, references, and relevant past project delivery."
+        },
+        "financial_commercial_pricing_weight": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scoring weight and evaluation model for pricing, total cost of ownership (TCO), and rate competitiveness."
+        },
+        "management_approach_and_compliance_weight": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scoring weight evaluating project management methodology, staffing qualifications, and contractual compliance."
+        }
+      },
+      "required": [
+        "technical_capability_and_understanding_weight",
+        "vendor_experience_and_past_performance_weight",
+        "financial_commercial_pricing_weight",
+        "management_approach_and_compliance_weight"
+      ]
+    },
+    "candidate_scoring_and_assessment_table": {
+      "type": "object",
+      "properties": {
+        "vendor_candidate_name_and_proposal_identifier": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identification of bidding vendor, proposal reference number, and submission date."
+        },
+        "technical_and_commercial_score_breakdown": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Individual numerical scores assigned across technical, commercial, and past performance criteria."
+        },
+        "total_weighted_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Consolidated total weighted evaluation score out of 100 points for each candidate."
+        }
+      },
+      "required": [
+        "vendor_candidate_name_and_proposal_identifier",
+        "technical_and_commercial_score_breakdown",
+        "total_weighted_score"
+      ]
+    },
+    "final_evaluation_summary_and_recommendation": {
+      "type": "object",
+      "properties": {
+        "comparative_analysis_and_value_justification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Narrative justifying why the winning proposal offers superior value, quality, or pricing."
+        },
+        "contract_award_recommendation_and_sign_off": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formal evaluation committee recommendation identifying preferred vendor for contract execution."
+        }
+      },
+      "required": [
+        "comparative_analysis_and_value_justification",
+        "contract_award_recommendation_and_sign_off"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "evaluation_criteria_and_weighting_framework",
+    "candidate_scoring_and_assessment_table",
+    "final_evaluation_summary_and_recommendation"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-02.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "model_identification_and_provenance": {
+    "model_name_and_version": "Draft notes for Model Name And Version."
+  },
+  "intended_use_and_out_of_scope_use": {
+    "primary_use": "Draft notes for Primary Use."
+  },
+  "training_data": {
+    "datasets": "Draft notes for Datasets."
+  },
+  "evaluation_and_performance": {
+    "evaluation_data": "Draft notes for Evaluation Data."
+  },
+  "ethical_fairness_and_safety_considerations": {
+    "affected_groups": "Draft notes for Affected Groups."
+  },
+  "limitations_monitoring_and_change_control": {
+    "known_limitations": "Draft notes for Known Limitations."
+  }
+}

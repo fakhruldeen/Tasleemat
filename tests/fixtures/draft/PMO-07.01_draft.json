@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-07.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-01",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "project_performance": {
+    "requirements_definition_and_management_what_worked_well": "Draft notes for Requirements Definition And Management What Worked Well."
+  },
+  "risks_and_issues": {
+    "risk_or_issue": "Draft notes for Risk Or Issue."
+  },
+  "quality_defects": {
+    "defect": "Draft notes for Defect."
+  },
+  "vendor_management": {
+    "vendor": "Draft notes for Vendor."
+  },
+  "areas_of_exceptional_performance": {
+    "entry": "Draft notes for Entry."
+  },
+  "areas_for_improvement": {
+    "entry": "Draft notes for Entry."
+  }
+}

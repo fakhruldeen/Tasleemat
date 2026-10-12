@@ -1,0 +1,19 @@
+{
+  "artifact_id": "PMO-06.10",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-10",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "acceptance_record": {
+    "test_summary": "Substantive completed details for Test Summary.",
+    "testing_environment": "Substantive completed details for Testing Environment.",
+    "pass_fail_criteria": "Substantive completed details for Pass Fail Criteria.",
+    "known_defects": "Substantive completed details for Known Defects.",
+    "business_owner_sign_off": "Substantive completed details for Business Owner Sign Off."
+  }
+}

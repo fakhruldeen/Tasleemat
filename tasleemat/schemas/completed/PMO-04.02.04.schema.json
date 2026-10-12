@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.04.schema.json",
+  "title": "Completed REQUIREMENTS TRACEABILITY MATRIX Data Contract",
+  "description": "Additive structural schema validating completed REQUIREMENTS TRACEABILITY MATRIX artifact data payloads (PMO-04.02.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.02.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "traceability_parameters": {
+      "type": "object",
+      "properties": {
+        "traceability_purpose_and_baseline_reference": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The governing objective and versioned requirements baseline linked across the matrix."
+        },
+        "traceability_dimensions_and_attributes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key parameters tracked including source origin, WBS work package, design component, and test case ID."
+        }
+      },
+      "required": [
+        "traceability_purpose_and_baseline_reference",
+        "traceability_dimensions_and_attributes"
+      ]
+    },
+    "requirements_traceability_mapping": {
+      "type": "object",
+      "properties": {
+        "business_need_to_requirement_linkage": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Explicit linkage connecting overarching business goals to detailed functional requirements."
+        },
+        "requirement_to_wbs_deliverable_mapping": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Traceability mapping associating each requirement with its corresponding WBS work package."
+        },
+        "requirement_to_design_and_test_case_mapping": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verification mapping linking requirements to technical architecture components and test verification cases."
+        }
+      },
+      "required": [
+        "business_need_to_requirement_linkage",
+        "requirement_to_wbs_deliverable_mapping",
+        "requirement_to_design_and_test_case_mapping"
+      ]
+    },
+    "inter_requirements_dependencies": {
+      "type": "object",
+      "properties": {
+        "core_inter_requirement_dependencies": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identified functional linkages, prerequisite requirements, and cross-feature constraints."
+        },
+        "impact_and_traceability_governance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Protocols for assessing downstream deliverable impact when a linked requirement is modified."
+        }
+      },
+      "required": [
+        "core_inter_requirement_dependencies",
+        "impact_and_traceability_governance"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "traceability_parameters",
+    "requirements_traceability_mapping",
+    "inter_requirements_dependencies"
+  ]
+}

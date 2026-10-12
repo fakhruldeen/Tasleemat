@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-05.15",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-05-15",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "deliverable_verification_inspection_scope": {
+    "deliverable_item_and_wbs_work_package": "Draft notes for Deliverable Item And Wbs Work Package."
+  },
+  "inspection_evidence_defect_triage": {
+    "quality_criteria_and_testing_protocol_results": "Draft notes for Quality Criteria And Testing Protocol Results."
+  },
+  "verification_decision_authorization": {
+    "technical_inspection_verdict_and_formal_signoff": "Draft notes for Technical Inspection Verdict And Formal Signoff."
+  }
+}

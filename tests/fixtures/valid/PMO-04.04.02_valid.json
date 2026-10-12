@@ -1,0 +1,26 @@
+{
+  "artifact_id": "PMO-04.04.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-04-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "activity_and_work_package_cost_breakdown": {
+    "activity_identifier_and_description": "Substantive completed details for Activity Identifier And Description.",
+    "direct_labor_cost_estimate": "Substantive completed details for Direct Labor Cost Estimate.",
+    "materials_and_equipment_cost_estimate": "Substantive completed details for Materials And Equipment Cost Estimate.",
+    "total_base_cost_estimate": "Substantive completed details for Total Base Cost Estimate."
+  },
+  "resource_cost_rates_and_basis_of_estimates": {
+    "labor_rate_categories_and_rate_cards": "Substantive completed details for Labor Rate Categories And Rate Cards.",
+    "historical_data_and_estimating_assumptions": "Substantive completed details for Historical Data And Estimating Assumptions."
+  },
+  "contingency_and_management_reserves": {
+    "contingency_reserve_allocation": "Substantive completed details for Contingency Reserve Allocation.",
+    "total_activity_cost_with_contingency": "Substantive completed details for Total Activity Cost With Contingency."
+  }
+}

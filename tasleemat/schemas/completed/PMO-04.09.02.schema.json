@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.09.02.schema.json",
+  "title": "Completed PROCUREMENT STRATEGY Data Contract",
+  "description": "Additive structural schema validating completed PROCUREMENT STRATEGY artifact data payloads (PMO-04.09.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.09.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "delivery_methods_and_contract_types": {
+      "type": "object",
+      "properties": {
+        "project_delivery_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The selected delivery structure (e.g., Design-Build, Turnkey EPC, Professional Services, Agile Staff Augmentation)."
+        },
+        "contract_payment_types_and_rationale": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Selected contract payment mechanism (Firm Fixed Price, Cost Reimbursable, Target Price) and justification."
+        }
+      },
+      "required": [
+        "project_delivery_method",
+        "contract_payment_types_and_rationale"
+      ]
+    },
+    "incentive_and_fee_structures": {
+      "type": "object",
+      "properties": {
+        "incentive_fees_and_bonus_provisions": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Performance-based financial incentives, early completion bonuses, or quality metrics."
+        },
+        "penalty_and_liquidated_damages_clauses": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Contractual liquidated damages and penalty provisions for unexcused schedule delays."
+        }
+      },
+      "required": [
+        "incentive_fees_and_bonus_provisions",
+        "penalty_and_liquidated_damages_clauses"
+      ]
+    },
+    "procurement_phases_and_sourcing_life_cycle": {
+      "type": "object",
+      "properties": {
+        "procurement_sourcing_stages": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Sequence of procurement stages: market analysis, pre-qualification, RFP issuance, evaluation, negotiation, award."
+        },
+        "market_engagement_and_competitive_sourcing_approach": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Method of market engagement (Sole Source, Open Competitive Tender, Limited Request for Quotation)."
+        }
+      },
+      "required": [
+        "procurement_sourcing_stages",
+        "market_engagement_and_competitive_sourcing_approach"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "delivery_methods_and_contract_types",
+    "incentive_and_fee_structures",
+    "procurement_phases_and_sourcing_life_cycle"
+  ]
+}

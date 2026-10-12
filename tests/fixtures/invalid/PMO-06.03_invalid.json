@@ -1,0 +1,57 @@
+{
+  "artifact_id": "PMO-06.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-03",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "reporting_information": {
+    "contractor": "",
+    "contract_number_and_type": "",
+    "reporting_period": "",
+    "report_submission_date": ""
+  },
+  "performance_this_reporting_period": {
+    "scope_status_this_period": "",
+    "scope_variance_and_cause": "",
+    "quality_status_this_period": "",
+    "quality_variance_and_cause": "",
+    "schedule_status_this_period": "",
+    "schedule_variance_and_cause": "",
+    "cost_status_this_period": "",
+    "cost_variance_and_cause": ""
+  },
+  "forecast_performance_for_future_reporting_periods": {
+    "estimated_completion_date_estimate": "",
+    "estimated_completion_date_basis": "",
+    "estimated_final_cost_estimate": "",
+    "estimated_final_cost_basis": "",
+    "key_forecast_assumptions_estimate": "",
+    "key_forecast_assumptions_basis": ""
+  },
+  "claims_or_disputes": {
+    "claims_or_disputes": ""
+  },
+  "risks": {
+    "risks": ""
+  },
+  "planned_corrective_or_preventive_action": {
+    "planned_corrective_or_preventive_action": ""
+  },
+  "issues": {
+    "issues": ""
+  },
+  "escalations": {
+    "escalations": ""
+  },
+  "contract_change_requests": {
+    "contract_change_requests": ""
+  },
+  "comments": {
+    "comments": ""
+  }
+}

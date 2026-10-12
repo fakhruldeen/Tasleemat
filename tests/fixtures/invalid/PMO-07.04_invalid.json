@@ -1,0 +1,19 @@
+{
+  "artifact_id": "PMO-07.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-04",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "operational_handover_items": {
+    "handover_item": "",
+    "responsible_party": "",
+    "acceptance_criteria": "",
+    "handover_date": "",
+    "sign_off_status": ""
+  }
+}

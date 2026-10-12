@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.03.schema.json",
+  "title": "Completed REQUIREMENTS DOCUMENTATION Data Contract",
+  "description": "Additive structural schema validating completed REQUIREMENTS DOCUMENTATION artifact data payloads (PMO-04.02.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.02.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "business_requirements": {
+      "type": "object",
+      "properties": {
+        "business_objectives_and_goals": {
+          "type": "string",
+          "minLength": 1,
+          "description": "High-level organizational motivations, strategic drivers, and target business problems to solve."
+        },
+        "business_process_impact": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Current-state vs. target-state operational workflow enhancements and process impacts."
+        },
+        "business_value_and_success_criteria": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Measurable commercial, operational, or customer value expected upon delivery."
+        }
+      },
+      "required": [
+        "business_objectives_and_goals",
+        "business_process_impact",
+        "business_value_and_success_criteria"
+      ]
+    },
+    "stakeholder_requirements": {
+      "type": "object",
+      "properties": {
+        "user_persona_and_needs_summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed operational requirements categorized by specific stakeholder groups and user personas."
+        },
+        "stakeholder_pain_points_and_expectations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Critical operational pain points addressed and expected behavioral outcomes."
+        }
+      },
+      "required": [
+        "user_persona_and_needs_summary",
+        "stakeholder_pain_points_and_expectations"
+      ]
+    },
+    "solution_and_technical_requirements": {
+      "type": "object",
+      "properties": {
+        "functional_requirements_specification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed capabilities, system interactions, features, and functional behavior."
+        },
+        "technical_architecture_and_system_constraints": {
+          "type": "string",
+          "minLength": 1,
+          "description": "System interfaces, infrastructure prerequisites, data architecture, and technological boundaries."
+        }
+      },
+      "required": [
+        "functional_requirements_specification",
+        "technical_architecture_and_system_constraints"
+      ]
+    },
+    "transition_and_non_functional_requirements": {
+      "type": "object",
+      "properties": {
+        "non_functional_requirements_quality_of_service": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Performance thresholds, security standards, availability, scalability, and usability criteria."
+        },
+        "transition_and_readiness_requirements": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Data migration, end-user training, operational handover, and rollout support prerequisites."
+        }
+      },
+      "required": [
+        "non_functional_requirements_quality_of_service",
+        "transition_and_readiness_requirements"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "business_requirements",
+    "stakeholder_requirements",
+    "solution_and_technical_requirements",
+    "transition_and_non_functional_requirements"
+  ]
+}

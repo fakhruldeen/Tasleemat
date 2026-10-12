@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.03.schema.json",
+  "title": "Completed CONTRACTOR STATUS REPORT Data Contract",
+  "description": "Additive structural schema validating completed CONTRACTOR STATUS REPORT artifact data payloads (PMO-06.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "reporting_information": {
+      "type": "object",
+      "properties": {
+        "contractor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The legal name and contact details of the contractor performing the contract."
+        },
+        "contract_number_and_type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The official contract identifier and contract type (e.g., Fixed Price, T&M)."
+        },
+        "reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The start and end calendar dates covered by this contractor report."
+        },
+        "report_submission_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The exact date on which the report was officially submitted to the project manager."
+        }
+      },
+      "required": [
+        "contractor",
+        "contract_number_and_type",
+        "reporting_period",
+        "report_submission_date"
+      ]
+    },
+    "performance_this_reporting_period": {
+      "type": "object",
+      "properties": {
+        "scope_status_this_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment of contracted scope deliverables completed or in progress during this period."
+        },
+        "scope_variance_and_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Explanation of any deviations from contracted scope baselines and their root causes."
+        },
+        "quality_status_this_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Evaluation of deliverable quality against contracted standards and specifications."
+        },
+        "quality_variance_and_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Root causes and details of any non-conformance or failed quality checks."
+        },
+        "schedule_status_this_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment of progress against contracted milestone dates and schedule baselines."
+        },
+        "schedule_variance_and_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Root cause explanation for any schedule delays or accelerations."
+        },
+        "cost_status_this_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment of contract billings and expenditures against the financial plan."
+        },
+        "cost_variance_and_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Root cause explanation for any financial variances or billing discrepancies."
+        }
+      },
+      "required": [
+        "scope_status_this_period",
+        "scope_variance_and_cause",
+        "quality_status_this_period",
+        "quality_variance_and_cause",
+        "schedule_status_this_period",
+        "schedule_variance_and_cause",
+        "cost_status_this_period",
+        "cost_variance_and_cause"
+      ]
+    },
+    "forecast_performance_for_future_reporting_periods": {
+      "type": "object",
+      "properties": {
+        "estimated_completion_date_estimate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The contractor projected delivery and contract completion date."
+        },
+        "estimated_completion_date_basis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Basis and rationale supporting the estimated completion date."
+        },
+        "estimated_final_cost_estimate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Projected total final cost at completion (applicable to cost-reimbursable contracts)."
+        },
+        "estimated_final_cost_basis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Basis and historical cost rate data supporting the estimated final cost."
+        },
+        "key_forecast_assumptions_estimate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Summary of key assumptions underpinning forecast values."
+        },
+        "key_forecast_assumptions_basis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Dependencies and external conditions supporting forecast stability."
+        }
+      },
+      "required": [
+        "estimated_completion_date_estimate",
+        "estimated_completion_date_basis",
+        "estimated_final_cost_estimate",
+        "estimated_final_cost_basis",
+        "key_forecast_assumptions_estimate",
+        "key_forecast_assumptions_basis"
+      ]
+    },
+    "claims_or_disputes": {
+      "type": "object",
+      "properties": {
+        "claims_or_disputes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Summary of any new, pending, or resolved contractual claims or disputes."
+        }
+      },
+      "required": [
+        "claims_or_disputes"
+      ]
+    },
+    "risks": {
+      "type": "object",
+      "properties": {
+        "risks": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key vendor-side risks that could impact contract milestones or deliverables."
+        }
+      },
+      "required": [
+        "risks"
+      ]
+    },
+    "planned_corrective_or_preventive_action": {
+      "type": "object",
+      "properties": {
+        "planned_corrective_or_preventive_action": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific remedial actions planned by the contractor to recover performance variances."
+        }
+      },
+      "required": [
+        "planned_corrective_or_preventive_action"
+      ]
+    },
+    "issues": {
+      "type": "object",
+      "properties": {
+        "issues": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Current active roadblocks, technical issues, or dependencies affecting execution."
+        }
+      },
+      "required": [
+        "issues"
+      ]
+    },
+    "escalations": {
+      "type": "object",
+      "properties": {
+        "escalations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Items requiring urgent decisions or dispute intervention from the buyer or PMO."
+        }
+      },
+      "required": [
+        "escalations"
+      ]
+    },
+    "contract_change_requests": {
+      "type": "object",
+      "properties": {
+        "contract_change_requests": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Summary of formal contract change proposals submitted, reviewed, or pending."
+        }
+      },
+      "required": [
+        "contract_change_requests"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Additional context, contractor remarks, or explanatory notes."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "reporting_information",
+    "performance_this_reporting_period",
+    "forecast_performance_for_future_reporting_periods",
+    "claims_or_disputes",
+    "risks",
+    "planned_corrective_or_preventive_action",
+    "issues",
+    "escalations",
+    "contract_change_requests",
+    "comments"
+  ]
+}

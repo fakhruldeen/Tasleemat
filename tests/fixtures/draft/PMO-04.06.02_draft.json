@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.06.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-06-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "human_resource_requirements": {
+    "activity_identifier_and_role_required": "Draft notes for Activity Identifier And Role Required."
+  },
+  "physical_and_material_resource_requirements": {
+    "equipment_machinery_and_tool_requirements": "Draft notes for Equipment Machinery And Tool Requirements."
+  },
+  "resource_availability_and_scheduling_calendar": {
+    "resource_availability_dates_and_constraints": "Draft notes for Resource Availability Dates And Constraints."
+  }
+}

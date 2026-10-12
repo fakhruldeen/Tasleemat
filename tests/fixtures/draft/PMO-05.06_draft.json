@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-05.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-05-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "technical_performance": {
+    "technical_performance": "Draft notes for Technical Performance."
+  },
+  "interpersonal_competency": {
+    "interpersonal_competency": "Draft notes for Interpersonal Competency."
+  },
+  "team_characteristics": {
+    "team_characteristics": "Draft notes for Team Characteristics."
+  },
+  "team_strengths_and_weaknesses": {
+    "team_strengths_and_weaknesses": "Draft notes for Team Strengths And Weaknesses."
+  },
+  "areas_for_development": {
+    "areas_for_development": "Draft notes for Areas For Development."
+  }
+}

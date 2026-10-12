@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.09.schema.json",
+  "title": "Completed Prompt Library Log Data Contract",
+  "description": "Additive structural schema validating completed Prompt Library Log artifact data payloads (PMO-05.09).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.09"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "prompt_library": {
+      "type": "object",
+      "properties": {
+        "prompt_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "A short identifier, so a prompt can be referred to in a meeting without its text being read out. A number is enough if it is the only one in use."
+        },
+        "use_case": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What the prompt is for, in one line: the task it was written to do and the situation it was written in. A prompt filed without its use case cannot be told apart from another one that reads almost the same."
+        },
+        "prompt_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The prompt as it is actually sent, not a description of it. What is filed here has to be usable by pasting it, because a paraphrase is a different prompt and will behave differently."
+        },
+        "expected_output": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What a good answer looks like, specifically enough to be checked. This is the column that makes the library auditable: without it there is nothing to compare a later response against."
+        },
+        "status_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Where the prompt stands, and which version this is. A prompt that has been revised without the version moving leaves every earlier result attached to a text that no longer exists."
+        }
+      },
+      "required": [
+        "prompt_id",
+        "use_case",
+        "prompt_text",
+        "expected_output",
+        "status_version"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "prompt_library"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.01.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-01-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "change_management_approach": {
+    "change_philosophy_and_governance": "Draft notes for Change Philosophy And Governance."
+  },
+  "definitions_of_change": {
+    "minor_change_definition": "Draft notes for Minor Change Definition."
+  },
+  "change_control_board_ccb": {
+    "ccb_composition_and_roles": "Draft notes for Ccb Composition And Roles."
+  },
+  "change_control_process": {
+    "change_submission_workflow": "Draft notes for Change Submission Workflow."
+  }
+}

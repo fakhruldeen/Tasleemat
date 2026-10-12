@@ -1,0 +1,38 @@
+{
+  "artifact_id": "PMO-06.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-06",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "audit_information": {
+    "audit_scope": "",
+    "period_covered": "",
+    "level_of_analysis": "",
+    "reference_documents_reviewed": "",
+    "audit_method": ""
+  },
+  "risk_event_audits": {
+    "risk_event_audits": ""
+  },
+  "risk_response_audits": {
+    "risk_response_audits": ""
+  },
+  "risk_management_process_audit": {
+    "process_compliance": "",
+    "tools_and_techniques": ""
+  },
+  "good_practices": {
+    "good_practices": ""
+  },
+  "areas_for_improvement": {
+    "areas_for_improvement": ""
+  },
+  "comments": {
+    "comments": ""
+  }
+}

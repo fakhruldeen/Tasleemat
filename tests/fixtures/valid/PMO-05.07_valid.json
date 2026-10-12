@@ -1,0 +1,23 @@
+{
+  "artifact_id": "PMO-05.07",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-05-07",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "lessons_learned_entries": {
+    "id": "Substantive completed details for Id.",
+    "category": "Substantive completed details for Category.",
+    "trigger": "Substantive completed details for Trigger.",
+    "lesson": "Substantive completed details for Lesson.",
+    "responsible_party": "Substantive completed details for Responsible Party.",
+    "identifier_submitter": "Substantive completed details for Identifier Submitter.",
+    "next_implementation_opportunity_date": "Substantive completed details for Next Implementation Opportunity Date.",
+    "organizational_impact_y_n": "Substantive completed details for Organizational Impact Y N.",
+    "comments": "Substantive completed details for Comments."
+  }
+}

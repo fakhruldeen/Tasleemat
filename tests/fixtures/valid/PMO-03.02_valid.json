@@ -1,0 +1,36 @@
+{
+  "artifact_id": "PMO-03.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-03-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "target_customer": {
+    "target_customer": "Substantive completed details for Target Customer."
+  },
+  "needs": {
+    "needs": "Substantive completed details for Needs."
+  },
+  "product_and_key_attributes": {
+    "product_and_key_attributes": "Substantive completed details for Product And Key Attributes."
+  },
+  "key_benefit": {
+    "key_benefit": "Substantive completed details for Key Benefit."
+  },
+  "business_goals": {
+    "business_goals": "Substantive completed details for Business Goals."
+  },
+  "competitive_position": {
+    "competitive_position": "Substantive completed details for Competitive Position."
+  },
+  "differentiation": {
+    "differentiation": "Substantive completed details for Differentiation."
+  },
+  "vision_statement": {
+    "vision_statement": "Substantive completed details for Vision Statement."
+  }
+}

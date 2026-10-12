@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.14.schema.json",
+  "title": "Completed WORKSTREAM COORDINATION AND STANDUP LOG Data Contract",
+  "description": "Additive structural schema validating completed WORKSTREAM COORDINATION AND STANDUP LOG artifact data payloads (PMO-05.14).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.14"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "session_context_workstream_alignments": {
+      "type": "object",
+      "properties": {
+        "coordination_session_date_and_attendees": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Meeting timestamp, participating workstream leads, Scrum Masters, and engineering facilitators."
+        },
+        "accomplished_items_since_previous_sync": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key deliverable increments, completed user stories, or milestones achieved across streams."
+        },
+        "planned_focus_for_current_cycle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Immediate priority work packages and sprint goals committed for the next 24-48 hours."
+        }
+      },
+      "required": [
+        "coordination_session_date_and_attendees",
+        "accomplished_items_since_previous_sync",
+        "planned_focus_for_current_cycle"
+      ]
+    },
+    "dependencies_blockers_resolutions": {
+      "type": "object",
+      "properties": {
+        "cross_stream_dependencies_and_handoffs": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Critical interface handoffs, API integrations, or hardware prerequisites between teams."
+        },
+        "active_impediments_and_escalation_owners": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Blockers requiring Scrum of Scrums intervention or PMO escalation with assigned lead."
+        }
+      },
+      "required": [
+        "cross_stream_dependencies_and_handoffs",
+        "active_impediments_and_escalation_owners"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "session_context_workstream_alignments",
+    "dependencies_blockers_resolutions"
+  ]
+}

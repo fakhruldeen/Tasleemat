@@ -1,0 +1,62 @@
+{
+  "artifact_id": "PMO-00.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-01",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "portfolio_context_and_planning_basis": {
+    "portfolio_purpose_and_scope": "",
+    "planning_period": "",
+    "roadmap_horizon": "",
+    "portfolio_owner": "",
+    "planning_cycle": "",
+    "roadmap_version_and_status": ""
+  },
+  "roadmap_initiatives": {
+    "id": "",
+    "initiative_name": "",
+    "type": "",
+    "strategic_objective": "",
+    "start": "",
+    "end": "",
+    "budget": "",
+    "status": ""
+  },
+  "dependencies_and_sequencing": {
+    "id": "",
+    "dependent_initiative": "",
+    "dependency_type": "",
+    "predecessor": "",
+    "required_by": "",
+    "impact_if_late": ""
+  },
+  "funding_and_capacity_by_period": {
+    "period": "",
+    "planned_funding": "",
+    "planned_capacity": "",
+    "committed_load": "",
+    "available": "",
+    "notes": ""
+  },
+  "assumptions_and_constraints": {
+    "id": "",
+    "type": "",
+    "description": "",
+    "impact_on_roadmap": "",
+    "owner": "",
+    "review_date": ""
+  },
+  "roadmap_changes": {
+    "change_id": "",
+    "description": "",
+    "reason": "",
+    "affected_initiatives": "",
+    "approved_by": "",
+    "date": ""
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.09.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-09-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "delivery_methods_and_contract_types": {
+    "project_delivery_method": "Substantive completed details for Project Delivery Method.",
+    "contract_payment_types_and_rationale": "Substantive completed details for Contract Payment Types And Rationale."
+  },
+  "incentive_and_fee_structures": {
+    "incentive_fees_and_bonus_provisions": "Substantive completed details for Incentive Fees And Bonus Provisions.",
+    "penalty_and_liquidated_damages_clauses": "Substantive completed details for Penalty And Liquidated Damages Clauses."
+  },
+  "procurement_phases_and_sourcing_life_cycle": {
+    "procurement_sourcing_stages": "Substantive completed details for Procurement Sourcing Stages.",
+    "market_engagement_and_competitive_sourcing_approach": "Substantive completed details for Market Engagement And Competitive Sourcing Approach."
+  }
+}

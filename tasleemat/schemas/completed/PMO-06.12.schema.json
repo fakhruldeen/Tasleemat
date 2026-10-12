@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.12.schema.json",
+  "title": "Completed Flow Metrics and Value Stream Dashboard Data Contract",
+  "description": "Additive structural schema validating completed Flow Metrics and Value Stream Dashboard artifact data payloads (PMO-06.12).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.12"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "value_stream_parameters": {
+      "type": "object",
+      "properties": {
+        "value_stream_name_and_definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific customer value stream, delivery pipeline, or product domain monitored by this flow dashboard."
+        },
+        "measurement_window_and_interval": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The operational reporting period, iteration window, and rolling sample interval evaluated for flow metrics."
+        },
+        "wip_limits_and_work_categorization": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Configured Work in Progress (WIP) caps across workflow stages and item type breakdown (Features, Defect Fixes, Technical Debt, and Risks)."
+        }
+      },
+      "required": [
+        "value_stream_name_and_definition",
+        "measurement_window_and_interval",
+        "wip_limits_and_work_categorization"
+      ]
+    },
+    "flow_telemetry_and_metrics": {
+      "type": "object",
+      "properties": {
+        "lead_time_and_cycle_time_percentiles": {
+          "type": "string",
+          "minLength": 1,
+          "description": "50th, 85th, and 95th percentile delivery times from work commitment to customer deployment, highlighting predictability."
+        },
+        "flow_efficiency_and_wait_time_ratio": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Percentage of total lead time spent in active value-adding touch work versus idle queue/blocking states."
+        },
+        "throughput_and_delivery_velocity": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Completed work items delivered per iteration cycle, indicating steady-state system capacity and throughput stability."
+        }
+      },
+      "required": [
+        "lead_time_and_cycle_time_percentiles",
+        "flow_efficiency_and_wait_time_ratio",
+        "throughput_and_delivery_velocity"
+      ]
+    },
+    "flow_health_and_bottleneck_remediation": {
+      "type": "object",
+      "properties": {
+        "flow_load_and_work_age_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Inventory of active in-flight items, aging WIP items exceeding the 85th percentile threshold, and systemic work overload."
+        },
+        "bottleneck_identification_and_root_cause": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific workflow stage where work accumulates as queue inventory and the underlying process constraint."
+        },
+        "kaizen_flow_optimization_action": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Targeted continuous improvement action, WIP constraint adjustment, or dependency unblocking intervention to improve flow."
+        }
+      },
+      "required": [
+        "flow_load_and_work_age_health",
+        "bottleneck_identification_and_root_cause",
+        "kaizen_flow_optimization_action"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "value_stream_parameters",
+    "flow_telemetry_and_metrics",
+    "flow_health_and_bottleneck_remediation"
+  ]
+}

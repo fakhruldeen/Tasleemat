@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-02.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "scope_data_inventory_and_ownership": {
+    "assessment_scope": "Draft notes for Assessment Scope."
+  },
+  "lawful_basis_and_purpose_limitation": {
+    "processing_purposes_and_necessity": "Draft notes for Processing Purposes And Necessity."
+  },
+  "consent_and_transparency": {
+    "consent_mechanism": "Draft notes for Consent Mechanism."
+  },
+  "individual_rights": {
+    "rights_handling_process": "Draft notes for Rights Handling Process."
+  },
+  "retention_security_and_sharing": {
+    "retention_schedule": "Draft notes for Retention Schedule."
+  },
+  "ethics_beyond_compliance": {
+    "harm_beyond_legal_exposure": "Draft notes for Harm Beyond Legal Exposure."
+  },
+  "findings_remediation_and_review": {
+    "findings_register": "Draft notes for Findings Register."
+  }
+}

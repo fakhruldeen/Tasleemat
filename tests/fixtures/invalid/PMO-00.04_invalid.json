@@ -1,0 +1,52 @@
+{
+  "artifact_id": "PMO-00.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-04",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "matrix_basis": {
+    "matrix_scope_and_level": "",
+    "capacity_unit_of_measure": "",
+    "periods_covered": "",
+    "source_of_truth_or_extract": "",
+    "matrix_owner": "",
+    "last_updated": ""
+  },
+  "capacity_by_resource": {
+    "id": "",
+    "resource_role_or_team": "",
+    "period": "",
+    "total_available": "",
+    "allocated": "",
+    "remaining": "",
+    "constraints_or_single_points_of_failure": "",
+    "notes": ""
+  },
+  "demand_by_resource": {
+    "id": "",
+    "resource_role": "",
+    "period": "",
+    "required_capacity": "",
+    "source_of_demand": "",
+    "priority": ""
+  },
+  "gap_analysis": {
+    "resource_role": "",
+    "gap": "",
+    "period": "",
+    "resolution_planned": "",
+    "resolution_owner": "",
+    "resolution_date": ""
+  },
+  "contingency": {
+    "resource_role": "",
+    "contingency_type": "",
+    "contingency_amount": "",
+    "how_it_would_be_used": ""
+  }
+}

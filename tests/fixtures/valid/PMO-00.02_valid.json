@@ -1,0 +1,67 @@
+{
+  "artifact_id": "PMO-00.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "program_purpose_and_rationale": {
+    "program_purpose": "Substantive completed details for Program Purpose.",
+    "business_driver_and_strategic_alignment": "Substantive completed details for Business Driver And Strategic Alignment.",
+    "problem_or_opportunity_statement": "Substantive completed details for Problem Or Opportunity Statement.",
+    "consequence_of_not_proceeding": "Substantive completed details for Consequence Of Not Proceeding.",
+    "program_vision_statement": "Substantive completed details for Program Vision Statement."
+  },
+  "program_objectives": {
+    "id": "Substantive completed details for Id.",
+    "objective": "Substantive completed details for Objective.",
+    "measure": "Substantive completed details for Measure.",
+    "target_date": "Substantive completed details for Target Date.",
+    "owner": "Substantive completed details for Owner.",
+    "status": "Substantive completed details for Status."
+  },
+  "component_projects_and_operations": {
+    "component_id": "Substantive completed details for Component Id.",
+    "component_name": "Substantive completed details for Component Name.",
+    "objective_linkage": "Substantive completed details for Objective Linkage.",
+    "status": "Substantive completed details for Status.",
+    "owner": "Substantive completed details for Owner."
+  },
+  "program_benefits": {
+    "benefit_id": "Substantive completed details for Benefit Id.",
+    "benefit": "Substantive completed details for Benefit.",
+    "category": "Substantive completed details for Category.",
+    "beneficiary": "Substantive completed details for Beneficiary.",
+    "realization_mechanism": "Substantive completed details for Realization Mechanism.",
+    "realization_date": "Substantive completed details for Realization Date."
+  },
+  "program_manager_authority_and_governance": {
+    "program_manager_authority_statement": "Substantive completed details for Program Manager Authority Statement.",
+    "authority_retained_by_the_sponsor": "Substantive completed details for Authority Retained By The Sponsor.",
+    "program_governance_forum": "Substantive completed details for Program Governance Forum.",
+    "reporting_cadence_and_audience": "Substantive completed details for Reporting Cadence And Audience.",
+    "escalation_path": "Substantive completed details for Escalation Path.",
+    "funding_position": "Substantive completed details for Funding Position.",
+    "decision_type": "Substantive completed details for Decision Type.",
+    "authority_level": "Substantive completed details for Authority Level.",
+    "decision_escalation_path": "Substantive completed details for Decision Escalation Path.",
+    "limits_or_conditions": "Substantive completed details for Limits Or Conditions."
+  },
+  "risks_and_assumptions": {
+    "id": "Substantive completed details for Id.",
+    "type": "Substantive completed details for Type.",
+    "description": "Substantive completed details for Description.",
+    "impact_on_program": "Substantive completed details for Impact On Program.",
+    "owner": "Substantive completed details for Owner.",
+    "review_date": "Substantive completed details for Review Date."
+  },
+  "response_to_objective_failure": {
+    "defined_response": "Substantive completed details for Defined Response.",
+    "decision_authority": "Substantive completed details for Decision Authority.",
+    "trigger_for_reassessment": "Substantive completed details for Trigger For Reassessment."
+  }
+}

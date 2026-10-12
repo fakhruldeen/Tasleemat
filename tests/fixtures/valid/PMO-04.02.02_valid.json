@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-04.02.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-02-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "requirements_collection_and_analysis": {
+    "requirements_elicitation_techniques": "Substantive completed details for Requirements Elicitation Techniques.",
+    "requirements_analysis_and_elaboration": "Substantive completed details for Requirements Analysis And Elaboration.",
+    "stakeholder_engagement_for_requirements": "Substantive completed details for Stakeholder Engagement For Requirements."
+  },
+  "requirements_categorization_and_documentation": {
+    "requirements_taxonomy_and_categories": "Substantive completed details for Requirements Taxonomy And Categories.",
+    "requirements_documentation_standards": "Substantive completed details for Requirements Documentation Standards."
+  },
+  "prioritization_and_metrics": {
+    "requirements_prioritization_scheme": "Substantive completed details for Requirements Prioritization Scheme.",
+    "requirements_product_metrics": "Substantive completed details for Requirements Product Metrics."
+  },
+  "traceability_and_configuration_management": {
+    "traceability_structure_and_attributes": "Substantive completed details for Traceability Structure And Attributes.",
+    "requirements_configuration_control": "Substantive completed details for Requirements Configuration Control."
+  },
+  "verification_and_validation_strategy": {
+    "requirements_verification_method": "Substantive completed details for Requirements Verification Method.",
+    "validation_and_user_acceptance_strategy": "Substantive completed details for Validation And User Acceptance Strategy."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.02.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-02-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "wbs_structure_and_hierarchy": {
+    "wbs_decomposition_approach": "Draft notes for Wbs Decomposition Approach."
+  },
+  "work_breakdown_elements": {
+    "level_1_summary_elements": "Draft notes for Level 1 Summary Elements."
+  },
+  "wbs_outline_representation": {
+    "hierarchical_wbs_outline": "Draft notes for Hierarchical Wbs Outline."
+  }
+}

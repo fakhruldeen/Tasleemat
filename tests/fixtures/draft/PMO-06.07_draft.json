@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-06.07",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-07",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "audit_information": {
+    "procurements_or_contracts_audited": "Draft notes for Procurements Or Contracts Audited."
+  },
+  "vendor_performance_audit_what_worked_well": {
+    "vendor_performance_audit_what_worked_well": "Draft notes for Vendor Performance Audit What Worked Well."
+  },
+  "vendor_performance_audit_what_can_be_improved": {
+    "vendor_performance_audit_what_can_be_improved": "Draft notes for Vendor Performance Audit What Can Be Improved."
+  },
+  "procurement_management_process_audit": {
+    "procurement_management_process_audit": "Draft notes for Procurement Management Process Audit."
+  },
+  "good_practices_to_share": {
+    "good_practices_to_share": "Draft notes for Good Practices To Share."
+  },
+  "areas_for_improvement": {
+    "areas_for_improvement": "Draft notes for Areas For Improvement."
+  },
+  "comments": {
+    "comments": "Draft notes for Comments."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-04.01.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-01-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "change_management_approach": {
+    "change_philosophy_and_governance": "Substantive completed details for Change Philosophy And Governance.",
+    "change_thresholds_and_triggers": "Substantive completed details for Change Thresholds And Triggers.",
+    "change_tracking_and_tools": "Substantive completed details for Change Tracking And Tools."
+  },
+  "definitions_of_change": {
+    "minor_change_definition": "Substantive completed details for Minor Change Definition.",
+    "major_change_definition": "Substantive completed details for Major Change Definition.",
+    "emergency_change_definition": "Substantive completed details for Emergency Change Definition."
+  },
+  "change_control_board_ccb": {
+    "ccb_composition_and_roles": "Substantive completed details for Ccb Composition And Roles.",
+    "meeting_cadence_and_quorum": "Substantive completed details for Meeting Cadence And Quorum.",
+    "escalation_and_delegation_rules": "Substantive completed details for Escalation And Delegation Rules."
+  },
+  "change_control_process": {
+    "change_submission_workflow": "Substantive completed details for Change Submission Workflow.",
+    "impact_assessment_methodology": "Substantive completed details for Impact Assessment Methodology.",
+    "approval_and_baseline_update_protocol": "Substantive completed details for Approval And Baseline Update Protocol.",
+    "communication_and_implementation": "Substantive completed details for Communication And Implementation."
+  }
+}

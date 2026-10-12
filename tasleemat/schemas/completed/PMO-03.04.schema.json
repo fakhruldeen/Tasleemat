@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-03.04.schema.json",
+  "title": "Completed Stakeholder Register Data Contract",
+  "description": "Additive structural schema validating completed Stakeholder Register artifact data payloads (PMO-03.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-03.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "stakeholder_register_entries": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier for the stakeholder (e.g., SH-01)."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stakeholder’s name. If unknown, specify the position or organization."
+        },
+        "position_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The position or functional role the stakeholder holds in the organization or project."
+        },
+        "contact_information": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Communication channels for the stakeholder such as email address or phone number."
+        },
+        "requirements": {
+          "type": "string",
+          "minLength": 1,
+          "description": "High-level needs and critical requirements for the project and deliverables."
+        },
+        "expectations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Main expectations regarding project execution, outcomes, and governance."
+        },
+        "classification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stakeholder categorization (e.g., internal/external, high/medium/low impact)."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "position_role",
+        "contact_information",
+        "requirements",
+        "expectations",
+        "classification"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "stakeholder_register_entries"
+  ]
+}

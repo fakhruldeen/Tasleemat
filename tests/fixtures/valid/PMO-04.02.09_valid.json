@@ -1,0 +1,47 @@
+{
+  "artifact_id": "PMO-04.02.09",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-02-09",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "persona_and_problem": {
+    "primary_persona": "Substantive completed details for Primary Persona.",
+    "what_they_are_trying_to_do": "Substantive completed details for What They Are Trying To Do.",
+    "frequency_and_stakes": "Substantive completed details for Frequency And Stakes.",
+    "organisations_and_roles_affected": "Substantive completed details for Organisations And Roles Affected."
+  },
+  "the_backbone": {
+    "activities_in_order": "Substantive completed details for Activities In Order.",
+    "backbone_source": "Substantive completed details for Backbone Source.",
+    "activities_deferred": "Substantive completed details for Activities Deferred.",
+    "optional_and_variable_paths": "Substantive completed details for Optional And Variable Paths."
+  },
+  "the_slices": {
+    "tasks_under_each_activity": "Substantive completed details for Tasks Under Each Activity.",
+    "slices_as_vertical_columns": "Substantive completed details for Slices As Vertical Columns.",
+    "walking_skeleton": "Substantive completed details for Walking Skeleton.",
+    "slice_sizing_evidence": "Substantive completed details for Slice Sizing Evidence."
+  },
+  "release_slicing": {
+    "mvp_boundary": "Substantive completed details for Mvp Boundary.",
+    "outcome_of_the_first_release": "Substantive completed details for Outcome Of The First Release.",
+    "validation_plan": "Substantive completed details for Validation Plan.",
+    "slices_deferred_beyond_mvp": "Substantive completed details for Slices Deferred Beyond Mvp."
+  },
+  "beyond_the_first_release": {
+    "later_release_candidates": "Substantive completed details for Later Release Candidates.",
+    "emergent_work_anticipated": "Substantive completed details for Emergent Work Anticipated.",
+    "explicitly_out_of_scope": "Substantive completed details for Explicitly Out Of Scope."
+  },
+  "map_quality_and_maintenance": {
+    "assumptions_and_unvalidated_beliefs": "Substantive completed details for Assumptions And Unvalidated Beliefs.",
+    "risks_to_the_map": "Substantive completed details for Risks To The Map.",
+    "update_cadence_and_owners": "Substantive completed details for Update Cadence And Owners.",
+    "traceability_to_backlog_and_release": "Substantive completed details for Traceability To Backlog And Release."
+  }
+}

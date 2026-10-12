@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.11.schema.json",
+  "title": "Completed Project Health Check Matrix Data Contract",
+  "description": "Additive structural schema validating completed Project Health Check Matrix artifact data payloads (PMO-06.11).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.11"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "review_context": {
+      "type": "object",
+      "properties": {
+        "review_purpose_and_milestone_stage": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The objective of the independent health review and the project lifecycle phase or gate at which it is conducted."
+        },
+        "lead_reviewer_and_assessment_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The independent PMO auditor or assurance lead conducting the review and the inspection date."
+        },
+        "overall_health_rating": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The synthesized overall health score (Red, Amber, or Green) representing aggregate delivery confidence."
+        }
+      },
+      "required": [
+        "review_purpose_and_milestone_stage",
+        "lead_reviewer_and_assessment_date",
+        "overall_health_rating"
+      ]
+    },
+    "dimension_health_scores": {
+      "type": "object",
+      "properties": {
+        "governance_and_sponsorship_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Health rating and findings on steering committee engagement, decision timeliness, and charter mandate."
+        },
+        "scope_and_change_control_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Health rating and findings on baseline stability, scope creep control, and change request rigor."
+        },
+        "schedule_and_milestone_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Health rating and findings on critical path adherence, milestone float, and delivery velocity."
+        },
+        "cost_and_budget_variance_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Health rating and findings on earned value metrics (CPI), cost variance, and EAC forecast credibility."
+        },
+        "risk_and_issue_exposure_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Health rating and findings on risk register currency, mitigation effectiveness, and unresolved issues."
+        },
+        "stakeholder_and_team_health": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Health rating and findings on team morale, resourcing levels, and stakeholder satisfaction."
+        }
+      },
+      "required": [
+        "governance_and_sponsorship_health",
+        "scope_and_change_control_health",
+        "schedule_and_milestone_health",
+        "cost_and_budget_variance_health",
+        "risk_and_issue_exposure_health",
+        "stakeholder_and_team_health"
+      ]
+    },
+    "remediation_action_plan": {
+      "type": "object",
+      "properties": {
+        "critical_finding_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key vulnerability or red-flag issue identified during the health check audit."
+        },
+        "mandated_corrective_action": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific remedial intervention required to return the project domain to acceptable performance."
+        },
+        "remediation_owner_and_due_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The assigned individual accountable for corrective action execution and the strict due date."
+        }
+      },
+      "required": [
+        "critical_finding_description",
+        "mandated_corrective_action",
+        "remediation_owner_and_due_date"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "review_context",
+    "dimension_health_scores",
+    "remediation_action_plan"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "artifact_id": "PMO-06.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "reporting_information": {
+    "contractor": "Draft notes for Contractor."
+  },
+  "performance_this_reporting_period": {
+    "scope_status_this_period": "Draft notes for Scope Status This Period."
+  },
+  "forecast_performance_for_future_reporting_periods": {
+    "estimated_completion_date_estimate": "Draft notes for Estimated Completion Date Estimate."
+  },
+  "claims_or_disputes": {
+    "claims_or_disputes": "Draft notes for Claims Or Disputes."
+  },
+  "risks": {
+    "risks": "Draft notes for Risks."
+  },
+  "planned_corrective_or_preventive_action": {
+    "planned_corrective_or_preventive_action": "Draft notes for Planned Corrective Or Preventive Action."
+  },
+  "issues": {
+    "issues": "Draft notes for Issues."
+  },
+  "escalations": {
+    "escalations": "Draft notes for Escalations."
+  },
+  "contract_change_requests": {
+    "contract_change_requests": "Draft notes for Contract Change Requests."
+  },
+  "comments": {
+    "comments": "Draft notes for Comments."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.11.02.schema.json",
+  "title": "Completed Training Plan and Log Data Contract",
+  "description": "Additive structural schema validating completed Training Plan and Log artifact data payloads (PMO-04.11.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.11.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "training_activities": {
+      "type": "object",
+      "properties": {
+        "target_audience": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific stakeholder group, department, or role that requires training to effectively operate new systems or execute updated workflows."
+        },
+        "training_module": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The title, core learning objectives, and curriculum content designed to build required technical and operational competencies."
+        },
+        "delivery_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The instructional format and medium used (e.g., in-person workshop, live virtual session, self-paced e-learning, or peer coaching)."
+        },
+        "target_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The scheduled delivery date or completion deadline, aligned with project deployment and user readiness milestones."
+        },
+        "completion_status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The current progress or adoption status (e.g., Scheduled, In Progress, Completed) tracking user participation and certification."
+        }
+      },
+      "required": [
+        "target_audience",
+        "training_module",
+        "delivery_method",
+        "target_date",
+        "completion_status"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "training_activities"
+  ]
+}

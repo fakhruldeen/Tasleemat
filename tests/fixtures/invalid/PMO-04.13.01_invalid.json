@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.13.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-13-01",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "compliance_governance_data_classification": {
+    "regulatory_framework_and_applicable_standards": "",
+    "data_classification_and_privacy_tiering": ""
+  },
+  "security_architecture_incident_management": {
+    "technical_and_administrative_security_controls": "",
+    "security_assessment_and_penetration_testing_cadence": ""
+  },
+  "audit_governance_sign_off_roles": {
+    "incident_response_protocol_and_breach_notification": "",
+    "compliance_audit_gateways_and_signoff_criteria": ""
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-06.11",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-11",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "review_context": {
+    "review_purpose_and_milestone_stage": "Substantive completed details for Review Purpose And Milestone Stage.",
+    "lead_reviewer_and_assessment_date": "Substantive completed details for Lead Reviewer And Assessment Date.",
+    "overall_health_rating": "Substantive completed details for Overall Health Rating."
+  },
+  "dimension_health_scores": {
+    "governance_and_sponsorship_health": "Substantive completed details for Governance And Sponsorship Health.",
+    "scope_and_change_control_health": "Substantive completed details for Scope And Change Control Health.",
+    "schedule_and_milestone_health": "Substantive completed details for Schedule And Milestone Health.",
+    "cost_and_budget_variance_health": "Substantive completed details for Cost And Budget Variance Health.",
+    "risk_and_issue_exposure_health": "Substantive completed details for Risk And Issue Exposure Health.",
+    "stakeholder_and_team_health": "Substantive completed details for Stakeholder And Team Health."
+  },
+  "remediation_action_plan": {
+    "critical_finding_description": "Substantive completed details for Critical Finding Description.",
+    "mandated_corrective_action": "Substantive completed details for Mandated Corrective Action.",
+    "remediation_owner_and_due_date": "Substantive completed details for Remediation Owner And Due Date."
+  }
+}

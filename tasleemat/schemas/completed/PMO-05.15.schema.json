@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.15.schema.json",
+  "title": "Completed DELIVERABLE TECHNICAL INSPECTION CHECKLIST Data Contract",
+  "description": "Additive structural schema validating completed DELIVERABLE TECHNICAL INSPECTION CHECKLIST artifact data payloads (PMO-05.15).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.15"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "deliverable_verification_inspection_scope": {
+      "type": "object",
+      "properties": {
+        "deliverable_item_and_wbs_work_package": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Deliverable title, WBS code, and associated technical design specification reference."
+        },
+        "technical_specification_compliance_verification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Objective verification criteria evaluating functional and architectural conformity."
+        }
+      },
+      "required": [
+        "deliverable_item_and_wbs_work_package",
+        "technical_specification_compliance_verification"
+      ]
+    },
+    "inspection_evidence_defect_triage": {
+      "type": "object",
+      "properties": {
+        "quality_criteria_and_testing_protocol_results": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Automated unit test coverage, performance benchmark results, and physical inspection metrics."
+        },
+        "observed_non_conformances_and_defects": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific defects, punch list items, or documentation discrepancies requiring rectification."
+        }
+      },
+      "required": [
+        "quality_criteria_and_testing_protocol_results",
+        "observed_non_conformances_and_defects"
+      ]
+    },
+    "verification_decision_authorization": {
+      "type": "object",
+      "properties": {
+        "technical_inspection_verdict_and_formal_signoff": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Final technical recommendation: Approved for UAT, Approved with Minor punch-list, or Rejected."
+        }
+      },
+      "required": [
+        "technical_inspection_verdict_and_formal_signoff"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "deliverable_verification_inspection_scope",
+    "inspection_evidence_defect_triage",
+    "verification_decision_authorization"
+  ]
+}

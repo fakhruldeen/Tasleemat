@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-04.12.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-12-01",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "sustainability_mandate_and_scope": {
+    "sustainability_vision_and_regulatory_baseline": "Substantive completed details for Sustainability Vision And Regulatory Baseline.",
+    "carbon_footprint_reduction_target": "Substantive completed details for Carbon Footprint Reduction Target.",
+    "circular_economy_and_material_strategy": "Substantive completed details for Circular Economy And Material Strategy."
+  },
+  "social_and_ethical_governance": {
+    "social_impact_and_community_engagement": "Substantive completed details for Social Impact And Community Engagement.",
+    "ethical_procurement_and_supplier_esg_standards": "Substantive completed details for Ethical Procurement And Supplier Esg Standards.",
+    "esg_risk_and_compliance_monitoring": "Substantive completed details for Esg Risk And Compliance Monitoring."
+  },
+  "esg_metrics_and_decommissioning": {
+    "esg_key_performance_indicators": "Substantive completed details for Esg Key Performance Indicators.",
+    "sustainable_decommissioning_and_handover": "Substantive completed details for Sustainable Decommissioning And Handover.",
+    "sustainability_audit_lead_and_review_cadence": "Substantive completed details for Sustainability Audit Lead And Review Cadence."
+  }
+}

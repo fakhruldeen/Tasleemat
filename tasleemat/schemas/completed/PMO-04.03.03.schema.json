@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.03.schema.json",
+  "title": "Completed ACTIVITY ATTRIBUTES Data Contract",
+  "description": "Additive structural schema validating completed ACTIVITY ATTRIBUTES artifact data payloads (PMO-04.03.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "activity_identification_and_overview": {
+      "type": "object",
+      "properties": {
+        "activity_code_and_title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier code and full descriptive title of the schedule activity."
+        },
+        "activity_description_and_scope_summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed technical narrative of the specific scope executed under this activity."
+        },
+        "assigned_work_package_reference": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Corresponding parent WBS code and deliverable component mapping."
+        }
+      },
+      "required": [
+        "activity_code_and_title",
+        "activity_description_and_scope_summary",
+        "assigned_work_package_reference"
+      ]
+    },
+    "activity_predecessors_and_successors": {
+      "type": "object",
+      "properties": {
+        "predecessor_activities_and_logic": {
+          "type": "string",
+          "minLength": 1,
+          "description": "List of preceding activities with dependency relationships (FS, SS, FF, SF) and lead/lag times."
+        },
+        "successor_activities_and_logic": {
+          "type": "string",
+          "minLength": 1,
+          "description": "List of succeeding activities dependent upon the completion or start of this activity."
+        }
+      },
+      "required": [
+        "predecessor_activities_and_logic",
+        "successor_activities_and_logic"
+      ]
+    },
+    "resource_and_skill_requirements": {
+      "type": "object",
+      "properties": {
+        "required_team_roles_and_headcount": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific staffing roles, technical disciplines, and quantity of resources required."
+        },
+        "technical_skills_and_equipment_needed": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specialized skill sets, machinery, software licenses, or facilities required for performance."
+        }
+      },
+      "required": [
+        "required_team_roles_and_headcount",
+        "technical_skills_and_equipment_needed"
+      ]
+    },
+    "execution_constraints_and_imposed_dates": {
+      "type": "object",
+      "properties": {
+        "imposed_start_and_finish_dates": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Contractual or management-mandated fixed start/finish constraint dates."
+        },
+        "activity_assumptions_and_location_constraints": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Critical assumptions regarding execution conditions, performance location, and physical constraints."
+        }
+      },
+      "required": [
+        "imposed_start_and_finish_dates",
+        "activity_assumptions_and_location_constraints"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "activity_identification_and_overview",
+    "activity_predecessors_and_successors",
+    "resource_and_skill_requirements",
+    "execution_constraints_and_imposed_dates"
+  ]
+}

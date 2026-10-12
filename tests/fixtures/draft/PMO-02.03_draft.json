@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-02.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "purpose_and_scope_of_the_assessment": {
+    "assessment_objective": "Draft notes for Assessment Objective."
+  },
+  "data_readiness": {
+    "data_availability": "Draft notes for Data Availability."
+  },
+  "technical_and_platform_readiness": {
+    "compute_and_capacity": "Draft notes for Compute And Capacity."
+  },
+  "skills_and_team_readiness": {
+    "team_composition": "Draft notes for Team Composition."
+  },
+  "organisational_readiness": {
+    "leadership_sponsorship": "Draft notes for Leadership Sponsorship."
+  },
+  "assessment_outcome_and_route_forward": {
+    "dimension_scores": "Draft notes for Dimension Scores."
+  }
+}

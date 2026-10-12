@@ -1,0 +1,359 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-07.01.schema.json",
+  "title": "Completed LESSONS LEARNED SUMMARY Data Contract",
+  "description": "Additive structural schema validating completed LESSONS LEARNED SUMMARY artifact data payloads (PMO-07.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-07.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "project_performance": {
+      "type": "object",
+      "properties": {
+        "requirements_definition_and_management_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in defining and managing requirements. Name the practice, not the meeting where it was discussed."
+        },
+        "requirements_definition_and_management_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in defining and managing requirements, and what the improvement should be."
+        },
+        "scope_definition_and_management_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in defining and managing scope. Where baselines were held, say so."
+        },
+        "scope_definition_and_management_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in defining and managing scope."
+        },
+        "schedule_development_and_control_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in developing and controlling the schedule."
+        },
+        "schedule_development_and_control_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in developing and controlling the schedule."
+        },
+        "cost_estimating_and_control_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in developing estimates and controlling costs."
+        },
+        "cost_estimating_and_control_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in developing estimates and controlling costs."
+        },
+        "quality_planning_and_control_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in planning, managing, and controlling quality."
+        },
+        "quality_planning_and_control_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in planning, managing, and controlling quality. Specific defects are recorded in the quality defects section below."
+        },
+        "physical_resource_planning_and_control_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in planning, acquiring, and managing physical resources."
+        },
+        "physical_resource_planning_and_control_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in planning, acquiring, and managing physical resources."
+        },
+        "team_planning_development_and_performance_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in working with team members and developing and managing the team."
+        },
+        "team_planning_development_and_performance_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in working with team members and developing and managing the team."
+        },
+        "communications_management_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in planning and distributing information."
+        },
+        "communications_management_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in planning and distributing information."
+        },
+        "reporting_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in reporting project performance."
+        },
+        "reporting_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in reporting project performance."
+        },
+        "risk_management_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in the risk management process. Specific risks are recorded in the risks and issues section below."
+        },
+        "risk_management_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in the risk management process. Specific risks are recorded in the risks and issues section below."
+        },
+        "procurement_planning_and_management_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in planning, conducting, and administering contracts."
+        },
+        "procurement_planning_and_management_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in planning, conducting, and administering contracts."
+        },
+        "stakeholder_engagement_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in engaging stakeholders."
+        },
+        "stakeholder_engagement_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in engaging stakeholders."
+        },
+        "process_improvement_information_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Processes that were developed and should be continued on future projects."
+        },
+        "process_improvement_information_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Processes that should be changed or discontinued."
+        },
+        "product_specific_information_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that were effective in delivering the specific product, service, or result."
+        },
+        "product_specific_information_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Practices or incidents that can be improved in delivering the specific product, service, or result."
+        },
+        "other_what_worked_well": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Other practices or incidents that were effective, such as change control, configuration management, or integration management."
+        },
+        "other_what_can_be_improved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Other practices or incidents that can be improved, such as change control, configuration management, or integration management."
+        }
+      },
+      "required": [
+        "requirements_definition_and_management_what_worked_well",
+        "requirements_definition_and_management_what_can_be_improved",
+        "scope_definition_and_management_what_worked_well",
+        "scope_definition_and_management_what_can_be_improved",
+        "schedule_development_and_control_what_worked_well",
+        "schedule_development_and_control_what_can_be_improved",
+        "cost_estimating_and_control_what_worked_well",
+        "cost_estimating_and_control_what_can_be_improved",
+        "quality_planning_and_control_what_worked_well",
+        "quality_planning_and_control_what_can_be_improved",
+        "physical_resource_planning_and_control_what_worked_well",
+        "physical_resource_planning_and_control_what_can_be_improved",
+        "team_planning_development_and_performance_what_worked_well",
+        "team_planning_development_and_performance_what_can_be_improved",
+        "communications_management_what_worked_well",
+        "communications_management_what_can_be_improved",
+        "reporting_what_worked_well",
+        "reporting_what_can_be_improved",
+        "risk_management_what_worked_well",
+        "risk_management_what_can_be_improved",
+        "procurement_planning_and_management_what_worked_well",
+        "procurement_planning_and_management_what_can_be_improved",
+        "stakeholder_engagement_what_worked_well",
+        "stakeholder_engagement_what_can_be_improved",
+        "process_improvement_information_what_worked_well",
+        "process_improvement_information_what_can_be_improved",
+        "product_specific_information_what_worked_well",
+        "product_specific_information_what_can_be_improved",
+        "other_what_worked_well",
+        "other_what_can_be_improved"
+      ]
+    },
+    "risks_and_issues": {
+      "type": "object",
+      "properties": {
+        "risk_or_issue": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the risk or issue that occurred and should be considered to improve organizational learning."
+        },
+        "response": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the response that was taken and its effectiveness. Say plainly whether the response worked."
+        },
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Provide any additional information needed to improve future project performance."
+        }
+      },
+      "required": [
+        "risk_or_issue",
+        "response",
+        "comments"
+      ]
+    },
+    "quality_defects": {
+      "type": "object",
+      "properties": {
+        "defect": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the quality defect that should be considered to improve organizational effectiveness."
+        },
+        "resolution": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe how the defect was resolved and whether the resolution held."
+        },
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Indicate what should be done to improve future project performance."
+        }
+      },
+      "required": [
+        "defect",
+        "resolution",
+        "comments"
+      ]
+    },
+    "vendor_management": {
+      "type": "object",
+      "properties": {
+        "vendor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "List the vendor or vendors concerned."
+        },
+        "issue": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe any issues, claims, or disputes that occurred with this vendor."
+        },
+        "resolution": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the outcome or resolution that was reached."
+        },
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Indicate what should be done to improve future vendor management performance."
+        }
+      },
+      "required": [
+        "vendor",
+        "issue",
+        "resolution",
+        "comments"
+      ]
+    },
+    "areas_of_exceptional_performance": {
+      "type": "object",
+      "properties": {
+        "entry": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identify areas of exceptional performance that can be passed on to other teams. State what was done and what made it work."
+        }
+      },
+      "required": [
+        "entry"
+      ]
+    },
+    "areas_for_improvement": {
+      "type": "object",
+      "properties": {
+        "entry": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identify areas that can be improved for future performance. State the improvement sought, not only the problem."
+        }
+      },
+      "required": [
+        "entry"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "project_performance",
+    "risks_and_issues",
+    "quality_defects",
+    "vendor_management",
+    "areas_of_exceptional_performance",
+    "areas_for_improvement"
+  ]
+}

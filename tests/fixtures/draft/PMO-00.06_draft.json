@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-00.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "alignment_framework": {
+    "strategic_cycle_and_horizon": "Draft notes for Strategic Cycle And Horizon."
+  },
+  "okr_mapping_and_key_results": {
+    "target_key_result_id_and_metric": "Draft notes for Target Key Result Id And Metric."
+  },
+  "confidence_tracking_and_pivoting": {
+    "quarterly_confidence_score": "Draft notes for Quarterly Confidence Score."
+  }
+}

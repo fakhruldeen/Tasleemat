@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-07.02.schema.json",
+  "title": "Completed CONTRACT CLOSEOUT REPORT Data Contract",
+  "description": "Additive structural schema validating completed CONTRACT CLOSEOUT REPORT artifact data payloads (PMO-07.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-07.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "contract_identification": {
+      "type": "object",
+      "properties": {
+        "contract_identification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Record the contract reference, the vendor, and the contract type and value."
+        }
+      },
+      "required": [
+        "contract_identification"
+      ]
+    },
+    "vendor_performance_analysis_what_worked_well": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of contract scope that were handled well."
+        },
+        "quality": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of product quality that were handled well."
+        },
+        "schedule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of the contract schedule that were handled well."
+        },
+        "cost": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of the contract budget that were handled well."
+        },
+        "other": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe any other aspects of the contract or procurement that were handled well, including how easy the vendor was to work with."
+        }
+      },
+      "required": [
+        "scope",
+        "quality",
+        "schedule",
+        "cost",
+        "other"
+      ]
+    },
+    "vendor_performance_analysis_what_can_be_improved": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of contract scope that could be improved."
+        },
+        "quality": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of product quality that could be improved."
+        },
+        "schedule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of the contract schedule that could be improved."
+        },
+        "cost": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe the aspects of the contract budget that could be improved."
+        },
+        "other": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Describe any other aspects of the contract or procurement that could be improved."
+        }
+      },
+      "required": [
+        "scope",
+        "quality",
+        "schedule",
+        "cost",
+        "other"
+      ]
+    },
+    "record_of_contract_changes": {
+      "type": "object",
+      "properties": {
+        "change_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the change identifier from the change log."
+        },
+        "change_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the description from the change log."
+        },
+        "date_approved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the date approved from the change log."
+        }
+      },
+      "required": [
+        "change_id",
+        "change_description",
+        "date_approved"
+      ]
+    },
+    "record_of_contract_disputes": {
+      "type": "object",
+      "properties": {
+        "dispute_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The dispute or claim, what was in contention, and the amount or scope at issue. State the position the project took and the date it was raised, because a dispute recorded without its date cannot be distinguished from one still open at closeout."
+        },
+        "resolution": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How the dispute was settled, by whom, and when, with a reference to the agreement or settlement that closed it. An unresolved dispute carried past closeout is a liability the receiving organisation inherits without knowing it, so record the outcome even when it is only partial."
+        },
+        "date_resolved": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the date the dispute or claim was resolved."
+        }
+      },
+      "required": [
+        "dispute_description",
+        "resolution",
+        "date_resolved"
+      ]
+    },
+    "contract_completion_and_final_payment": {
+      "type": "object",
+      "properties": {
+        "contract_completion_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The date the contract was completed, meaning the date the work was accepted rather than the date the last invoice was paid. Where the two differ, give both, because a payment date is not evidence that the work was accepted."
+        },
+        "signed_off_by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Record who signed off on the contract completion."
+        },
+        "final_payment_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enter the date of the final payment."
+        }
+      },
+      "required": [
+        "contract_completion_date",
+        "signed_off_by",
+        "final_payment_date"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Add any comments that will add relevance to the closeout report."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "contract_identification",
+    "vendor_performance_analysis_what_worked_well",
+    "vendor_performance_analysis_what_can_be_improved",
+    "record_of_contract_changes",
+    "record_of_contract_disputes",
+    "contract_completion_and_final_payment",
+    "comments"
+  ]
+}

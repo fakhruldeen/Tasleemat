@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.08.03.schema.json",
+  "title": "Completed PROBABILITY AND IMPACT ASSESSMENT Data Contract",
+  "description": "Additive structural schema validating completed PROBABILITY AND IMPACT ASSESSMENT artifact data payloads (PMO-04.08.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.08.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "assessment_parameters_and_scoring_scales": {
+      "type": "object",
+      "properties": {
+        "probability_scoring_scales_and_values": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The 1 to 5 numerical scale and percentage probability ranges applied."
+        },
+        "impact_scoring_scales_and_dimensions": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The 1 to 5 rating scale defining scope, schedule, cost, and quality severity."
+        }
+      },
+      "required": [
+        "probability_scoring_scales_and_values",
+        "impact_scoring_scales_and_dimensions"
+      ]
+    },
+    "qualitative_risk_evaluation": {
+      "type": "object",
+      "properties": {
+        "risk_id_and_event_title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The unique risk tracking identifier and concise description of the risk event."
+        },
+        "evaluated_probability_and_impact_ratings": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Individual probability score and assessed impact rating across project dimensions."
+        },
+        "risk_urgency_and_proximity_assessment": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Time proximity and urgency factor determining how quickly a response is needed."
+        }
+      },
+      "required": [
+        "risk_id_and_event_title",
+        "evaluated_probability_and_impact_ratings",
+        "risk_urgency_and_proximity_assessment"
+      ]
+    },
+    "risk_exposure_analysis_and_prioritization": {
+      "type": "object",
+      "properties": {
+        "composite_risk_exposure_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated overall risk score (Probability x Impact) placing the risk on the priority ladder."
+        },
+        "priority_category_and_mitigation_urgency": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Classification into High (Red), Moderate (Yellow), or Low (Green) priority bands."
+        }
+      },
+      "required": [
+        "composite_risk_exposure_score",
+        "priority_category_and_mitigation_urgency"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "assessment_parameters_and_scoring_scales",
+    "qualitative_risk_evaluation",
+    "risk_exposure_analysis_and_prioritization"
+  ]
+}

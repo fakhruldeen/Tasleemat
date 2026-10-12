@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.09.04.schema.json",
+  "title": "Completed Statement of Work Data Contract",
+  "description": "Additive structural schema validating completed Statement of Work artifact data payloads (PMO-04.09.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.09.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "scope_and_deliverables": {
+      "type": "object",
+      "properties": {
+        "purpose_and_authority": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What this statement of work is authorised to do, and by whom. The authority clause is the one that settles a dispute about whether something was in scope: it names the instrument that created the obligation - the contract, the charter, the minute that approved it - so that a later reader can tell an agreed obligation from a good suggestion."
+        },
+        "scope_of_work": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The work to be performed, described so that both parties would recognise the same work from this description alone. Boundaries are part of the description: what is explicitly excluded matters as much as what is included, because an omission read as an inclusion is the most common way a statement of work is argued about after the fact."
+        },
+        "period_of_performance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The start and end dates, with any phases or extensions written in rather than left to a separate schedule. The end date is the one that carries the obligation, because it determines when acceptance becomes due and therefore when payment may fall due with it."
+        },
+        "deliverables_and_schedule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What will be handed over and by when, milestone by milestone rather than as a single lump. A deliverable without a date attached to it is a topic rather than an obligation, and it is the absence of dates that lets a period of performance run past its end without anybody having to decide anything."
+        },
+        "applicable_standards": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The technical, quality and regulatory requirements the deliverables must satisfy, named so that conformance can be tested rather than asserted. \"Best practice\" is not a standard, because there is no test that fails it; a named standard either passes or does not."
+        },
+        "acceptance_criteria": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How the buyer will decide that each deliverable is accepted, who decides it, and how long they have to decide. An acceptance clause that omits the rejection route accepts the deliverable by default on silence, which removes the only leverage a buyer has over a supplier who has already been paid to try."
+        }
+      },
+      "required": [
+        "purpose_and_authority",
+        "scope_of_work",
+        "period_of_performance",
+        "deliverables_and_schedule",
+        "applicable_standards",
+        "acceptance_criteria"
+      ]
+    },
+    "terms_and_governance": {
+      "type": "object",
+      "properties": {
+        "roles_and_responsibilities": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who is accountable for each part of the work on each side, named by role rather than by person so the document survives a change of staff. The line that matters is the boundary of authority: who may approve a delivery, who may commit additional effort, and who may not do either without going back to the contract."
+        },
+        "assumptions_and_dependencies": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What both parties are taking to be true, and what the work depends on that is not under the supplier's control - access, data, decisions from third parties. This is the section that determines who carries the schedule when an assumption turns out to be false, and leaving it out converts a dependency problem into a dispute."
+        },
+        "change_control": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How a change to the scope, the deliverables or the dates gets into the statement of work, who approves it, and what happens to the price and the dates when it does. A change route that is described but not named is not a control: without an approver and a form, the first change of scope becomes a conversation, and the second one becomes the dispute."
+        }
+      },
+      "required": [
+        "roles_and_responsibilities",
+        "assumptions_and_dependencies",
+        "change_control"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "scope_and_deliverables",
+    "terms_and_governance"
+  ]
+}

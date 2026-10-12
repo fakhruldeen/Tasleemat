@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.08.06.schema.json",
+  "title": "Completed RISK REPORT Data Contract",
+  "description": "Additive structural schema validating completed RISK REPORT artifact data payloads (PMO-04.08.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.08.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "executive_summary_and_overall_risk_profile": {
+      "type": "object",
+      "properties": {
+        "overall_project_risk_exposure_summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "High-level summary of overall project risk health, trends, and risk exposure level."
+        },
+        "key_risk_drivers_and_strategic_factors": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Primary organizational, commercial, or technical drivers influencing project risk."
+        },
+        "overall_risk_mitigation_strategy": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Consolidated strategy for navigating major project uncertainties."
+        }
+      },
+      "required": [
+        "overall_project_risk_exposure_summary",
+        "key_risk_drivers_and_strategic_factors",
+        "overall_risk_mitigation_strategy"
+      ]
+    },
+    "critical_threats_and_opportunities_summary": {
+      "type": "object",
+      "properties": {
+        "top_project_threats_and_active_responses": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Summary of the most critical individual threats, current status, and active mitigation plans."
+        },
+        "top_project_opportunities_and_capture_plans": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Summary of major positive opportunities and execution plans to realize benefits."
+        },
+        "realized_risks_transferred_to_issue_log": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Recently materialized risks that have transitioned to the Issue Log for resolution."
+        }
+      },
+      "required": [
+        "top_project_threats_and_active_responses",
+        "top_project_opportunities_and_capture_plans",
+        "realized_risks_transferred_to_issue_log"
+      ]
+    },
+    "quantitative_risk_exposure_and_reserve_adequacy": {
+      "type": "object",
+      "properties": {
+        "quantitative_simulation_findings": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Key conclusions derived from quantitative Monte Carlo simulations or probabilistic models."
+        },
+        "probability_of_achieving_project_objectives": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimated percentage likelihood of achieving target delivery dates and budget limits."
+        },
+        "contingency_reserve_adequacy_assessment": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Audit assessment of total contingency reserve balance against remaining project risk exposure."
+        }
+      },
+      "required": [
+        "quantitative_simulation_findings",
+        "probability_of_achieving_project_objectives",
+        "contingency_reserve_adequacy_assessment"
+      ]
+    },
+    "risk_management_trends_and_recommendations": {
+      "type": "object",
+      "properties": {
+        "risk_process_and_metric_trends": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Trend analysis tracking closed risks, newly identified risks, and velocity of response actions."
+        },
+        "recommended_governance_interventions": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Strategic recommendations, escalation requests, and required decisions for executive sponsors."
+        }
+      },
+      "required": [
+        "risk_process_and_metric_trends",
+        "recommended_governance_interventions"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "executive_summary_and_overall_risk_profile",
+    "critical_threats_and_opportunities_summary",
+    "quantitative_risk_exposure_and_reserve_adequacy",
+    "risk_management_trends_and_recommendations"
+  ]
+}

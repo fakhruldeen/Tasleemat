@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-05.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-05-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "area_audited": {
+    "area_audited": "Draft notes for Area Audited."
+  },
+  "good_practices_from_similar_projects": {
+    "good_practices_from_similar_projects": "Draft notes for Good Practices From Similar Projects."
+  },
+  "areas_for_improvement": {
+    "areas_for_improvement": "Draft notes for Areas For Improvement."
+  },
+  "deficiencies_or_defects": {
+    "deficiencies_or_defects": "Draft notes for Deficiencies Or Defects."
+  },
+  "implementation_tracking_of_approved_changes": {
+    "implementation_tracking_of_approved_changes": "Draft notes for Implementation Tracking Of Approved Changes."
+  },
+  "information_to_share_with_other_projects": {
+    "information_to_share_with_other_projects": "Draft notes for Information To Share With Other Projects."
+  },
+  "comments": {
+    "comments": "Draft notes for Comments."
+  }
+}

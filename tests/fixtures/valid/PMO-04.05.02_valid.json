@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.05.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-05-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "deliverable_quality_metrics": {
+    "metric_name_and_target_standard": "Substantive completed details for Metric Name And Target Standard.",
+    "associated_deliverable_and_work_package": "Substantive completed details for Associated Deliverable And Work Package."
+  },
+  "process_and_performance_quality_metrics": {
+    "process_efficiency_metric": "Substantive completed details for Process Efficiency Metric.",
+    "defect_density_and_severity_thresholds": "Substantive completed details for Defect Density And Severity Thresholds."
+  },
+  "quality_measurement_and_tolerance_limits": {
+    "measurement_frequency_and_tooling": "Substantive completed details for Measurement Frequency And Tooling.",
+    "acceptable_tolerance_range_and_escalation_trigger": "Substantive completed details for Acceptable Tolerance Range And Escalation Trigger."
+  }
+}

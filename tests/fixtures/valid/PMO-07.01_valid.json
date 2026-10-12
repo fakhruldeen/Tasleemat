@@ -1,0 +1,66 @@
+{
+  "artifact_id": "PMO-07.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-01",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "project_performance": {
+    "requirements_definition_and_management_what_worked_well": "Substantive completed details for Requirements Definition And Management What Worked Well.",
+    "requirements_definition_and_management_what_can_be_improved": "Substantive completed details for Requirements Definition And Management What Can Be Improved.",
+    "scope_definition_and_management_what_worked_well": "Substantive completed details for Scope Definition And Management What Worked Well.",
+    "scope_definition_and_management_what_can_be_improved": "Substantive completed details for Scope Definition And Management What Can Be Improved.",
+    "schedule_development_and_control_what_worked_well": "Substantive completed details for Schedule Development And Control What Worked Well.",
+    "schedule_development_and_control_what_can_be_improved": "Substantive completed details for Schedule Development And Control What Can Be Improved.",
+    "cost_estimating_and_control_what_worked_well": "Substantive completed details for Cost Estimating And Control What Worked Well.",
+    "cost_estimating_and_control_what_can_be_improved": "Substantive completed details for Cost Estimating And Control What Can Be Improved.",
+    "quality_planning_and_control_what_worked_well": "Substantive completed details for Quality Planning And Control What Worked Well.",
+    "quality_planning_and_control_what_can_be_improved": "Substantive completed details for Quality Planning And Control What Can Be Improved.",
+    "physical_resource_planning_and_control_what_worked_well": "Substantive completed details for Physical Resource Planning And Control What Worked Well.",
+    "physical_resource_planning_and_control_what_can_be_improved": "Substantive completed details for Physical Resource Planning And Control What Can Be Improved.",
+    "team_planning_development_and_performance_what_worked_well": "Substantive completed details for Team Planning Development And Performance What Worked Well.",
+    "team_planning_development_and_performance_what_can_be_improved": "Substantive completed details for Team Planning Development And Performance What Can Be Improved.",
+    "communications_management_what_worked_well": "Substantive completed details for Communications Management What Worked Well.",
+    "communications_management_what_can_be_improved": "Substantive completed details for Communications Management What Can Be Improved.",
+    "reporting_what_worked_well": "Substantive completed details for Reporting What Worked Well.",
+    "reporting_what_can_be_improved": "Substantive completed details for Reporting What Can Be Improved.",
+    "risk_management_what_worked_well": "Substantive completed details for Risk Management What Worked Well.",
+    "risk_management_what_can_be_improved": "Substantive completed details for Risk Management What Can Be Improved.",
+    "procurement_planning_and_management_what_worked_well": "Substantive completed details for Procurement Planning And Management What Worked Well.",
+    "procurement_planning_and_management_what_can_be_improved": "Substantive completed details for Procurement Planning And Management What Can Be Improved.",
+    "stakeholder_engagement_what_worked_well": "Substantive completed details for Stakeholder Engagement What Worked Well.",
+    "stakeholder_engagement_what_can_be_improved": "Substantive completed details for Stakeholder Engagement What Can Be Improved.",
+    "process_improvement_information_what_worked_well": "Substantive completed details for Process Improvement Information What Worked Well.",
+    "process_improvement_information_what_can_be_improved": "Substantive completed details for Process Improvement Information What Can Be Improved.",
+    "product_specific_information_what_worked_well": "Substantive completed details for Product Specific Information What Worked Well.",
+    "product_specific_information_what_can_be_improved": "Substantive completed details for Product Specific Information What Can Be Improved.",
+    "other_what_worked_well": "Substantive completed details for Other What Worked Well.",
+    "other_what_can_be_improved": "Substantive completed details for Other What Can Be Improved."
+  },
+  "risks_and_issues": {
+    "risk_or_issue": "Substantive completed details for Risk Or Issue.",
+    "response": "Substantive completed details for Response.",
+    "comments": "Substantive completed details for Comments."
+  },
+  "quality_defects": {
+    "defect": "Substantive completed details for Defect.",
+    "resolution": "Substantive completed details for Resolution.",
+    "comments": "Substantive completed details for Comments."
+  },
+  "vendor_management": {
+    "vendor": "Substantive completed details for Vendor.",
+    "issue": "Substantive completed details for Issue.",
+    "resolution": "Substantive completed details for Resolution.",
+    "comments": "Substantive completed details for Comments."
+  },
+  "areas_of_exceptional_performance": {
+    "entry": "Substantive completed details for Entry."
+  },
+  "areas_for_improvement": {
+    "entry": "Substantive completed details for Entry."
+  }
+}

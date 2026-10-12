@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-01.02.schema.json",
+  "title": "Completed Benefits Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Benefits Management Plan artifact data payloads (PMO-01.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-01.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "1_benefits_baseline": {
+      "type": "object",
+      "properties": {
+        "benefit_statements": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The benefits the project is expected to deliver, each stated as a measurable change rather than as an activity. \"Improve the onboarding process\" is an activity; \"reduce time from application to first productive day by five working days\" is a benefit, and only the second can later be shown to have happened or not."
+        },
+        "benefit_categories": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The category of each benefit, distinguishing financial from non-financial. The split matters because the two are approved, measured and reported by different parties, and a plan that reports one blended number lets each party read it as favouring itself."
+        },
+        "benefit_owners": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The role accountable for each benefit, which is normally not the project manager. The project manager can deliver the output; only someone in the operating role can change the measure the benefit is written against."
+        },
+        "baseline_values": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The value of each measure today. Without a baseline no benefit can later be shown to have arrived, and a baseline written after delivery is a baseline chosen to flatter the delivery."
+        },
+        "attribution_assumption": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Why the project is credited with the benefit rather than a trend that would have happened anyway. This is the assumption most often left unstated, and it is the one that determines whether a realised benefit can actually be claimed."
+        }
+      },
+      "required": [
+        "benefit_statements",
+        "benefit_categories",
+        "benefit_owners",
+        "baseline_values",
+        "attribution_assumption"
+      ]
+    },
+    "2_benefit_realisation_timeline": {
+      "type": "object",
+      "properties": {
+        "realisation_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "When each benefit is expected to be realised, stated as a date. Benefits do not arrive when the project does, and a plan that dates them at handover is a plan that will be found to be wrong in the first month after delivery."
+        },
+        "lead_and_lag_indicators": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The leading indicator that will be visible before the benefit itself. Benefits that are only measured at realisation give no warning while they are failing, and by the time the measure moves the intervention that could have helped has passed."
+        },
+        "dis_benefits": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Any harm the project causes, including the disruption of changing a process people are working in. These are the benefits that do not appear in a benefits register because nobody is reporting them, and they are reliably larger than the expected gains."
+        },
+        "dependencies": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What must be in place for each benefit to arrive, such as a policy change, a training programme, or a budget. A benefit dependent on something nobody has committed to is a benefit that will be attributed to nobody."
+        }
+      },
+      "required": [
+        "realisation_date",
+        "lead_and_lag_indicators",
+        "dis_benefits",
+        "dependencies"
+      ]
+    },
+    "3_measurement_and_governance": {
+      "type": "object",
+      "properties": {
+        "benefit_metrics": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The measure for each benefit, with its source, its collection frequency and who collects it. A metric with no named collector is a metric that is not collected."
+        },
+        "measurement_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How the value is calculated, stated so that two people would compute it the same way. Most disputed benefits are disputed over method rather than over outcome."
+        },
+        "review_cadence": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How often the benefits are reviewed, and by whom. A benefits review held only at project closure is a retrospective exercise, by which point every decision available to influence the outcome has already passed."
+        },
+        "benefit_status_rules": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What happens when a benefit is not on track: who is told, what action follows, and what would cause a benefit to be withdrawn from the plan. Without a rule the status is adjusted to match reality rather than reality being adjusted, which is the mechanism by which a plan quietly becomes fiction."
+        },
+        "reporting_audience": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who receives the benefits report, and in what form. The reporting line is what makes the numbers change; a benefits report sent only to the project team is a record rather than a control."
+        }
+      },
+      "required": [
+        "benefit_metrics",
+        "measurement_method",
+        "review_cadence",
+        "benefit_status_rules",
+        "reporting_audience"
+      ]
+    },
+    "4_benefit_risks_and_actions": {
+      "type": "object",
+      "properties": {
+        "benefit_risks": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The risks that would prevent each benefit arriving, stated as the risk to the benefit rather than as a project risk. A schedule risk is not a benefit risk until it is traced to the benefit it threatens."
+        },
+        "risk_owner_and_response": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who owns each risk to the benefit, and what the response is. An action with no owner is a wish, and the wish is repeated at every review until the review becomes routine."
+        },
+        "early_warning_trigger": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The observable event that means the risk is materialising. Risks are usually reviewed after they have occurred, at which point the response is a record of what happened."
+        }
+      },
+      "required": [
+        "benefit_risks",
+        "risk_owner_and_response",
+        "early_warning_trigger"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "1_benefits_baseline",
+    "2_benefit_realisation_timeline",
+    "3_measurement_and_governance",
+    "4_benefit_risks_and_actions"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-06.12",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-12",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "value_stream_parameters": {
+    "value_stream_name_and_definition": "Substantive completed details for Value Stream Name And Definition.",
+    "measurement_window_and_interval": "Substantive completed details for Measurement Window And Interval.",
+    "wip_limits_and_work_categorization": "Substantive completed details for Wip Limits And Work Categorization."
+  },
+  "flow_telemetry_and_metrics": {
+    "lead_time_and_cycle_time_percentiles": "Substantive completed details for Lead Time And Cycle Time Percentiles.",
+    "flow_efficiency_and_wait_time_ratio": "Substantive completed details for Flow Efficiency And Wait Time Ratio.",
+    "throughput_and_delivery_velocity": "Substantive completed details for Throughput And Delivery Velocity."
+  },
+  "flow_health_and_bottleneck_remediation": {
+    "flow_load_and_work_age_health": "Substantive completed details for Flow Load And Work Age Health.",
+    "bottleneck_identification_and_root_cause": "Substantive completed details for Bottleneck Identification And Root Cause.",
+    "kaizen_flow_optimization_action": "Substantive completed details for Kaizen Flow Optimization Action."
+  }
+}

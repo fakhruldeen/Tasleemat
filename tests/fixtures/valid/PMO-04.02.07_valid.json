@@ -1,0 +1,31 @@
+{
+  "artifact_id": "PMO-04.02.07",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-02-07",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "work_package_identification": {
+    "wbs_identifier_and_title": "Substantive completed details for Wbs Identifier And Title.",
+    "control_account_and_responsible_organization": "Substantive completed details for Control Account And Responsible Organization.",
+    "work_package_owner": "Substantive completed details for Work Package Owner."
+  },
+  "scope_of_work_and_deliverables": {
+    "work_package_scope_description": "Substantive completed details for Work Package Scope Description.",
+    "deliverables_produced": "Substantive completed details for Deliverables Produced.",
+    "milestone_schedule_and_target_dates": "Substantive completed details for Milestone Schedule And Target Dates."
+  },
+  "quality_criteria_and_acceptance": {
+    "quality_requirements_and_standards": "Substantive completed details for Quality Requirements And Standards.",
+    "acceptance_criteria_and_sign_off_lead": "Substantive completed details for Acceptance Criteria And Sign Off Lead."
+  },
+  "resource_and_cost_allocations": {
+    "required_resources_and_skills": "Substantive completed details for Required Resources And Skills.",
+    "cost_estimate_and_budget_allocation": "Substantive completed details for Cost Estimate And Budget Allocation.",
+    "assumptions_constraints_and_dependencies": "Substantive completed details for Assumptions Constraints And Dependencies."
+  }
+}

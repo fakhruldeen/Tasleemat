@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-04.03.08",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-08",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "baseline_schedule_summary": {
+    "project_start_and_target_finish_dates": "Substantive completed details for Project Start And Target Finish Dates.",
+    "schedule_data_version_and_baseline_status": "Substantive completed details for Schedule Data Version And Baseline Status.",
+    "total_critical_path_length_and_major_phases": "Substantive completed details for Total Critical Path Length And Major Phases."
+  },
+  "detailed_schedule_data": {
+    "wbs_code_and_activity_schedule_mapping": "Substantive completed details for Wbs Code And Activity Schedule Mapping.",
+    "planned_start_and_finish_dates": "Substantive completed details for Planned Start And Finish Dates.",
+    "assigned_resources_and_effort_allocation": "Substantive completed details for Assigned Resources And Effort Allocation."
+  },
+  "critical_path_and_float_analysis": {
+    "critical_path_flag_and_dependencies": "Substantive completed details for Critical Path Flag And Dependencies.",
+    "total_float_and_free_float_values": "Substantive completed details for Total Float And Free Float Values.",
+    "schedule_risk_and_recovery_considerations": "Substantive completed details for Schedule Risk And Recovery Considerations."
+  }
+}

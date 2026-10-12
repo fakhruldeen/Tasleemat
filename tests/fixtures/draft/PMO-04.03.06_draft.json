@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.03.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "activity_duration_estimates_table": {
+    "activity_identifier_and_description": "Draft notes for Activity Identifier And Description."
+  },
+  "basis_of_estimates_and_assumptions": {
+    "historical_data_and_productivity_rates": "Draft notes for Historical Data And Productivity Rates."
+  },
+  "contingency_and_reserve_analysis": {
+    "schedule_contingency_reserve": "Draft notes for Schedule Contingency Reserve."
+  }
+}

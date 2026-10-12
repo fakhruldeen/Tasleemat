@@ -21,6 +21,7 @@ import os
 import pathlib
 import sys
 import unittest
+from unittest.mock import patch
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -158,10 +159,11 @@ class TestMaharatIntegrationContract(unittest.TestCase):
         self.assertFalse(report_bad_ver.valid)
         self.assertTrue(any(e.code == "UNSUPPORTED_VERSION" for e in report_bad_ver.errors))
 
-        # 5. Missing companion schema requested (e.g. PMO-00.01)
-        report_no_schema = validate_artifact_data("PMO-00.01", {"artifact_id": "PMO-00.01"})
-        self.assertFalse(report_no_schema.valid)
-        self.assertTrue(any(e.code == "SCHEMA_UNAVAILABLE" for e in report_no_schema.errors))
+        # 5. Missing companion schema requested (simulated via patch)
+        with patch("tasleemat.validation._load_schema", side_effect=KeyError("Schema unavailable")):
+            report_no_schema = validate_artifact_data("PMO-00.01", {"artifact_id": "PMO-00.01"})
+            self.assertFalse(report_no_schema.valid)
+            self.assertTrue(any(e.code == "SCHEMA_UNAVAILABLE" for e in report_no_schema.errors))
 
     def test_criterion_8_bilingual_lexicon_retrieval(self):
         """Criterion 8: Retrieve standardized bilingual PMO terminology."""

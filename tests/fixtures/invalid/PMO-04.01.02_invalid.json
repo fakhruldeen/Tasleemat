@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-04.01.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-01-02",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "change_management_approach": {
+    "change_philosophy_and_governance": "",
+    "change_thresholds_and_triggers": "",
+    "change_tracking_and_tools": ""
+  },
+  "definitions_of_change": {
+    "minor_change_definition": "",
+    "major_change_definition": "",
+    "emergency_change_definition": ""
+  },
+  "change_control_board_ccb": {
+    "ccb_composition_and_roles": "",
+    "meeting_cadence_and_quorum": "",
+    "escalation_and_delegation_rules": ""
+  },
+  "change_control_process": {
+    "change_submission_workflow": "",
+    "impact_assessment_methodology": "",
+    "approval_and_baseline_update_protocol": "",
+    "communication_and_implementation": ""
+  }
+}

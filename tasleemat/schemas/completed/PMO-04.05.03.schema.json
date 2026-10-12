@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.05.03.schema.json",
+  "title": "Completed Definition of Ready and Done Standard Data Contract",
+  "description": "Additive structural schema validating completed Definition of Ready and Done Standard artifact data payloads (PMO-04.05.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.05.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "team_working_agreement": {
+      "type": "object",
+      "properties": {
+        "definition_of_ready_dor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What a piece of work must satisfy before the team will pick it up. The test for every item is that a second person can check it without asking the author: the acceptance criteria are written and are unambiguous, the dependency is named, the estimate exists. \"The team believes it is understood\" is not ready; \"the acceptance criteria are in the ticket and no two readers would build different things from them\" is."
+        },
+        "definition_of_done_dod": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What must be true before a piece of work is called finished, stated so that somebody other than the author could confirm each one: the change is reviewed, the tests exist and pass, the documentation follows the change, and the acceptance criteria are met. This is the definition that decays, because every story shipped with an exception weakens it for the next one and nothing stops that becoming the rule. It is written once and applied without renegotiation; a justified exception is logged, not folded back into the definition."
+        }
+      },
+      "required": [
+        "definition_of_ready_dor",
+        "definition_of_done_dod"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "team_working_agreement"
+  ]
+}

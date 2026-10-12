@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-03.02.schema.json",
+  "title": "Completed PRODUCT VISION Data Contract",
+  "description": "Additive structural schema validating completed PRODUCT VISION artifact data payloads (PMO-03.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-03.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "target_customer": {
+      "type": "object",
+      "properties": {
+        "target_customer": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The person or group who will buy or use the product. Name who they are in a way that lets a reader tell whether a given person is in scope, because \"small business\" and \"enterprise customer\" lead to different products."
+        }
+      },
+      "required": [
+        "target_customer"
+      ]
+    },
+    "needs": {
+      "type": "object",
+      "properties": {
+        "needs": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The needs or requirements that the product will address. State the underlying need rather than the feature that answers it, because features can be built many ways and the need cannot."
+        }
+      },
+      "required": [
+        "needs"
+      ]
+    },
+    "product_and_key_attributes": {
+      "type": "object",
+      "properties": {
+        "product_and_key_attributes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "A description of the product that includes attributes, functional and nonfunctional requirements, and top-level requirements. Keep this at the top level: it is a vision, not a specification, and detail added here will age badly before the backlog is written."
+        }
+      },
+      "required": [
+        "product_and_key_attributes"
+      ]
+    },
+    "key_benefit": {
+      "type": "object",
+      "properties": {
+        "key_benefit": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Why the customer would buy the product. One benefit, stated in the customer's terms rather than the team's. If several benefits compete, record the primary one here and the others below, because a vision that promises everything commits to nothing."
+        }
+      },
+      "required": [
+        "key_benefit"
+      ]
+    },
+    "business_goals": {
+      "type": "object",
+      "properties": {
+        "business_goals": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The business goals the product is aligned to. This is what makes a vision arguable: without it, \"key benefit\" cannot be weighed against a competing use of the same budget."
+        }
+      },
+      "required": [
+        "business_goals"
+      ]
+    },
+    "competitive_position": {
+      "type": "object",
+      "properties": {
+        "competitive_position": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The key competitors, and how this product will be better. \"Better\" must be measured on something the customer cares about; being newer or cheaper to build is not the same thing."
+        }
+      },
+      "required": [
+        "competitive_position"
+      ]
+    },
+    "differentiation": {
+      "type": "object",
+      "properties": {
+        "differentiation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What differentiates this product from similar products in the market. If nothing does, that is a finding worth recording now rather than discovering after the product is built."
+        }
+      },
+      "required": [
+        "differentiation"
+      ]
+    },
+    "vision_statement": {
+      "type": "object",
+      "properties": {
+        "vision_statement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The whole vision in a sentence or two, once the sections above are settled. Write it last, from what the sections concluded, not first as a summary of what was intended."
+        }
+      },
+      "required": [
+        "vision_statement"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "target_customer",
+    "needs",
+    "product_and_key_attributes",
+    "key_benefit",
+    "business_goals",
+    "competitive_position",
+    "differentiation",
+    "vision_statement"
+  ]
+}

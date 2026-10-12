@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.08.04.schema.json",
+  "title": "Completed PROBABILITY AND IMPACT MATRIX Data Contract",
+  "description": "Additive structural schema validating completed PROBABILITY AND IMPACT MATRIX artifact data payloads (PMO-04.08.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.08.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "matrix_architecture_and_rating_thresholds": {
+      "type": "object",
+      "properties": {
+        "matrix_grid_dimensions_and_scaling": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Description of the matrix layout (e.g., 5x5 grid) and mathematical scoring formula."
+        },
+        "risk_tolerance_and_severity_bands": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Definition of risk severity bands: High (Red), Medium (Yellow), and Low (Green)."
+        }
+      },
+      "required": [
+        "matrix_grid_dimensions_and_scaling",
+        "risk_tolerance_and_severity_bands"
+      ]
+    },
+    "threat_and_opportunity_scoring_grid": {
+      "type": "object",
+      "properties": {
+        "threat_evaluation_grid_mapping": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The calibrated scoring values and color-coded zones for negative risk threats."
+        },
+        "opportunity_evaluation_grid_mapping": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The calibrated scoring values and color-coded zones for positive project opportunities."
+        }
+      },
+      "required": [
+        "threat_evaluation_grid_mapping",
+        "opportunity_evaluation_grid_mapping"
+      ]
+    },
+    "risk_thresholds_and_escalation_rules": {
+      "type": "object",
+      "properties": {
+        "mandatory_treatment_thresholds": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Thresholds requiring mandatory immediate mitigation and dedicated contingency funding."
+        },
+        "executive_escalation_protocols": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Protocols governing when high-severity risks must be escalated to the Executive Sponsor or PMO."
+        }
+      },
+      "required": [
+        "mandatory_treatment_thresholds",
+        "executive_escalation_protocols"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "matrix_architecture_and_rating_thresholds",
+    "threat_and_opportunity_scoring_grid",
+    "risk_thresholds_and_escalation_rules"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_id": "PMO-04.11.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-11-01",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "change_strategy_and_impact": {
+    "change_vision": "",
+    "stakeholder_impact_analysis": "",
+    "sponsorship_strategy": ""
+  },
+  "enablement_and_adoption": {
+    "communication_strategy": "",
+    "resistance_management": "",
+    "readiness_and_reinforcement": ""
+  }
+}

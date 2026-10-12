@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.07.02.schema.json",
+  "title": "Completed COMMUNICATIONS DISTRIBUTION MATRIX Data Contract",
+  "description": "Additive structural schema validating completed COMMUNICATIONS DISTRIBUTION MATRIX artifact data payloads (PMO-04.07.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.07.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "communication_artifact_content_details": {
+      "type": "object",
+      "properties": {
+        "information_item_and_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific reporting artifact, dashboard, or operational update item being distributed."
+        },
+        "target_audience_and_stakeholder_tier": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Designated recipient groups, stakeholder classification, and information consumption level."
+        }
+      },
+      "required": [
+        "information_item_and_description",
+        "target_audience_and_stakeholder_tier"
+      ]
+    },
+    "channels_protocols_cadence": {
+      "type": "object",
+      "properties": {
+        "distribution_channel_and_delivery_format": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Approved transmission medium (email, portal, automated webhook, executive briefing) and file format."
+        },
+        "cadence_trigger_and_schedule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Recurrence frequency (weekly, monthly, sprint boundary) or specific milestone event triggers."
+        }
+      },
+      "required": [
+        "distribution_channel_and_delivery_format",
+        "cadence_trigger_and_schedule"
+      ]
+    },
+    "governance_information_security": {
+      "type": "object",
+      "properties": {
+        "responsible_sender_and_author": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Designated role or individual accountable for preparing, validating, and sending the update."
+        },
+        "confidentiality_classification_and_access_controls": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Data sensitivity level (Public, Internal, Confidential, Restricted) and access control policies."
+        }
+      },
+      "required": [
+        "responsible_sender_and_author",
+        "confidentiality_classification_and_access_controls"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "communication_artifact_content_details",
+    "channels_protocols_cadence",
+    "governance_information_security"
+  ]
+}

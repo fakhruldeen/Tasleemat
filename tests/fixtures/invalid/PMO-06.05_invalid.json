@@ -1,0 +1,70 @@
+{
+  "artifact_id": "PMO-06.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-05",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "basic_earned_value_metrics": {
+    "budget_at_completion_bac": "",
+    "planned_value_pv_current_reporting_period": "",
+    "planned_value_pv_current_period_cumulative": "",
+    "planned_value_pv_past_period_cumulative": "",
+    "earned_value_ev_current_reporting_period": "",
+    "earned_value_ev_current_period_cumulative": "",
+    "earned_value_ev_past_period_cumulative": "",
+    "actual_cost_ac_current_reporting_period": "",
+    "actual_cost_ac_current_period_cumulative": "",
+    "actual_cost_ac_past_period_cumulative": ""
+  },
+  "variances_and_indices": {
+    "schedule_variance_sv_current_reporting_period": "",
+    "schedule_variance_sv_current_period_cumulative": "",
+    "schedule_variance_sv_past_period_cumulative": "",
+    "cost_variance_cv_current_reporting_period": "",
+    "cost_variance_cv_current_period_cumulative": "",
+    "cost_variance_cv_past_period_cumulative": "",
+    "schedule_performance_index_spi_current_reporting_period": "",
+    "schedule_performance_index_spi_current_period_cumulative": "",
+    "schedule_performance_index_spi_past_period_cumulative": "",
+    "cost_performance_index_cpi_current_reporting_period": "",
+    "cost_performance_index_cpi_current_period_cumulative": "",
+    "cost_performance_index_cpi_past_period_cumulative": ""
+  },
+  "percentages": {
+    "percent_planned_current_reporting_period": "",
+    "percent_planned_current_period_cumulative": "",
+    "percent_planned_past_period_cumulative": "",
+    "percent_earned_current_reporting_period": "",
+    "percent_earned_current_period_cumulative": "",
+    "percent_earned_past_period_cumulative": "",
+    "percent_spent_current_reporting_period": "",
+    "percent_spent_current_period_cumulative": "",
+    "percent_spent_past_period_cumulative": ""
+  },
+  "forecasting_estimates": {
+    "eac_w_cpi_current_reporting_period": "",
+    "eac_w_cpi_current_period_cumulative": "",
+    "eac_w_cpi_past_period_cumulative": "",
+    "eac_w_cpi_spi_current_reporting_period": "",
+    "eac_w_cpi_spi_current_period_cumulative": "",
+    "eac_w_cpi_spi_past_period_cumulative": "",
+    "to_complete_performance_index_tcpi_current_reporting_period": "",
+    "to_complete_performance_index_tcpi_current_period_cumulative": "",
+    "to_complete_performance_index_tcpi_past_period_cumulative": "",
+    "selected_eac_justification_and_explanation": ""
+  },
+  "root_cause_and_impacts_analysis": {
+    "root_cause_of_schedule_variance": "",
+    "schedule_impact_incl_implications_of_continued_variance": "",
+    "root_cause_of_cost_variance": "",
+    "budget_impact_incl_intended_actions_reserves": ""
+  },
+  "comments": {
+    "comments": ""
+  }
+}

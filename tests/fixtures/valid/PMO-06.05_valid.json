@@ -1,0 +1,70 @@
+{
+  "artifact_id": "PMO-06.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "basic_earned_value_metrics": {
+    "budget_at_completion_bac": "Substantive completed details for Budget At Completion Bac.",
+    "planned_value_pv_current_reporting_period": "Substantive completed details for Planned Value Pv Current Reporting Period.",
+    "planned_value_pv_current_period_cumulative": "Substantive completed details for Planned Value Pv Current Period Cumulative.",
+    "planned_value_pv_past_period_cumulative": "Substantive completed details for Planned Value Pv Past Period Cumulative.",
+    "earned_value_ev_current_reporting_period": "Substantive completed details for Earned Value Ev Current Reporting Period.",
+    "earned_value_ev_current_period_cumulative": "Substantive completed details for Earned Value Ev Current Period Cumulative.",
+    "earned_value_ev_past_period_cumulative": "Substantive completed details for Earned Value Ev Past Period Cumulative.",
+    "actual_cost_ac_current_reporting_period": "Substantive completed details for Actual Cost Ac Current Reporting Period.",
+    "actual_cost_ac_current_period_cumulative": "Substantive completed details for Actual Cost Ac Current Period Cumulative.",
+    "actual_cost_ac_past_period_cumulative": "Substantive completed details for Actual Cost Ac Past Period Cumulative."
+  },
+  "variances_and_indices": {
+    "schedule_variance_sv_current_reporting_period": "Substantive completed details for Schedule Variance Sv Current Reporting Period.",
+    "schedule_variance_sv_current_period_cumulative": "Substantive completed details for Schedule Variance Sv Current Period Cumulative.",
+    "schedule_variance_sv_past_period_cumulative": "Substantive completed details for Schedule Variance Sv Past Period Cumulative.",
+    "cost_variance_cv_current_reporting_period": "Substantive completed details for Cost Variance Cv Current Reporting Period.",
+    "cost_variance_cv_current_period_cumulative": "Substantive completed details for Cost Variance Cv Current Period Cumulative.",
+    "cost_variance_cv_past_period_cumulative": "Substantive completed details for Cost Variance Cv Past Period Cumulative.",
+    "schedule_performance_index_spi_current_reporting_period": "Substantive completed details for Schedule Performance Index Spi Current Reporting Period.",
+    "schedule_performance_index_spi_current_period_cumulative": "Substantive completed details for Schedule Performance Index Spi Current Period Cumulative.",
+    "schedule_performance_index_spi_past_period_cumulative": "Substantive completed details for Schedule Performance Index Spi Past Period Cumulative.",
+    "cost_performance_index_cpi_current_reporting_period": "Substantive completed details for Cost Performance Index Cpi Current Reporting Period.",
+    "cost_performance_index_cpi_current_period_cumulative": "Substantive completed details for Cost Performance Index Cpi Current Period Cumulative.",
+    "cost_performance_index_cpi_past_period_cumulative": "Substantive completed details for Cost Performance Index Cpi Past Period Cumulative."
+  },
+  "percentages": {
+    "percent_planned_current_reporting_period": "Substantive completed details for Percent Planned Current Reporting Period.",
+    "percent_planned_current_period_cumulative": "Substantive completed details for Percent Planned Current Period Cumulative.",
+    "percent_planned_past_period_cumulative": "Substantive completed details for Percent Planned Past Period Cumulative.",
+    "percent_earned_current_reporting_period": "Substantive completed details for Percent Earned Current Reporting Period.",
+    "percent_earned_current_period_cumulative": "Substantive completed details for Percent Earned Current Period Cumulative.",
+    "percent_earned_past_period_cumulative": "Substantive completed details for Percent Earned Past Period Cumulative.",
+    "percent_spent_current_reporting_period": "Substantive completed details for Percent Spent Current Reporting Period.",
+    "percent_spent_current_period_cumulative": "Substantive completed details for Percent Spent Current Period Cumulative.",
+    "percent_spent_past_period_cumulative": "Substantive completed details for Percent Spent Past Period Cumulative."
+  },
+  "forecasting_estimates": {
+    "eac_w_cpi_current_reporting_period": "Substantive completed details for Eac W Cpi Current Reporting Period.",
+    "eac_w_cpi_current_period_cumulative": "Substantive completed details for Eac W Cpi Current Period Cumulative.",
+    "eac_w_cpi_past_period_cumulative": "Substantive completed details for Eac W Cpi Past Period Cumulative.",
+    "eac_w_cpi_spi_current_reporting_period": "Substantive completed details for Eac W Cpi Spi Current Reporting Period.",
+    "eac_w_cpi_spi_current_period_cumulative": "Substantive completed details for Eac W Cpi Spi Current Period Cumulative.",
+    "eac_w_cpi_spi_past_period_cumulative": "Substantive completed details for Eac W Cpi Spi Past Period Cumulative.",
+    "to_complete_performance_index_tcpi_current_reporting_period": "Substantive completed details for To Complete Performance Index Tcpi Current Reporting Period.",
+    "to_complete_performance_index_tcpi_current_period_cumulative": "Substantive completed details for To Complete Performance Index Tcpi Current Period Cumulative.",
+    "to_complete_performance_index_tcpi_past_period_cumulative": "Substantive completed details for To Complete Performance Index Tcpi Past Period Cumulative.",
+    "selected_eac_justification_and_explanation": "Substantive completed details for Selected Eac Justification And Explanation."
+  },
+  "root_cause_and_impacts_analysis": {
+    "root_cause_of_schedule_variance": "Substantive completed details for Root Cause Of Schedule Variance.",
+    "schedule_impact_incl_implications_of_continued_variance": "Substantive completed details for Schedule Impact Incl Implications Of Continued Variance.",
+    "root_cause_of_cost_variance": "Substantive completed details for Root Cause Of Cost Variance.",
+    "budget_impact_incl_intended_actions_reserves": "Substantive completed details for Budget Impact Incl Intended Actions Reserves."
+  },
+  "comments": {
+    "comments": "Substantive completed details for Comments."
+  }
+}

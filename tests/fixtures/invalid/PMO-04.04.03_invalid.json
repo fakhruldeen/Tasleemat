@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-04.04.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-04-03",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "labor_and_staffing_cost_calculations": {
+    "role_title_and_headcount": "",
+    "hours_allocation_and_hourly_rate": "",
+    "total_calculated_labor_cost": ""
+  },
+  "material_and_equipment_cost_calculations": {
+    "material_or_equipment_item_description": "",
+    "unit_quantity_and_unit_purchase_price": "",
+    "total_calculated_materials_cost": ""
+  },
+  "subcontractor_and_vendor_cost_calculations": {
+    "contracted_service_or_work_package": "",
+    "vendor_pricing_model_and_contract_sum": ""
+  },
+  "consolidated_cost_estimate_reconciliation": {
+    "grand_total_base_estimate": "",
+    "worksheet_verification_and_audit_sign_off": ""
+  }
+}

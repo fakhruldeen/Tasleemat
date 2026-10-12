@@ -93,24 +93,11 @@ df_resources = pd.read_json("datapackage.json")
 ```
 
 ### Completed-Data Schemas (JSON Schema Draft 2020-12)
-In addition to the 114 template schema definitions, Tasleemat provides additive companion completed-data schemas for core lifecycle deliverables:
-- `PMO-01.01` (Business Case — Strategic Justification)
-- `PMO-03.01` (Project Charter — Project Authorization)
-- `PMO-04.01.01` (Project Management Plan — Master Integration Plan)
-- `PMO-04.02.01` (Scope Management Plan — WBS, Dictionary & Scope Control)
-- `PMO-04.02.05` (Project Scope Statement — Scope Definition & Acceptance)
-- `PMO-04.03.01` (Schedule Management Plan — CPM, Cadence & Thresholds)
-- `PMO-04.04.01` (Cost Management Plan — Budget, EVM & Thresholds)
-- `PMO-04.05.01` (Quality Management Plan — Quality Standards & Gates)
-- `PMO-04.06.01` (Resource Management Plan — Staffing & Resource Logistics)
-- `PMO-04.07.01` (Communications Management Plan — Stakeholder Cadence & Escalation)
-- `PMO-04.08.01` (Risk Management Plan — Risk Strategy, Scoring & Thresholds)
-- `PMO-04.08.02` (Risk Register — Risk Assessment & Response Strategy)
-- `PMO-04.09.01` (Procurement Management Plan — SOW, Contracts & Vendor SLAs)
-- `PMO-04.10.01` (Stakeholder Engagement Plan — Matrix & Engagement Actions)
-- `PMO-05.01` (Issue Log — Operational Impediments & Corrective Resolutions)
-- `PMO-06.01` (Project Status Report — Operational Monitoring)
-- `PMO-07.03` (Project or Phase Closeout — Archival & Benefits Handover)
+In addition to the 114 template schema definitions, Tasleemat provides additive companion completed-data schemas for **all 114 lifecycle deliverables** across all 8 phases (100% deliverable coverage). Each deliverable possesses:
+- A Draft 2020-12 companion JSON schema in `tasleemat/schemas/completed/{ARTIFACT_ID}.schema.json`.
+- Complete valid, invalid, and draft test fixture sets in `tests/fixtures/{valid,invalid,draft}/`.
+- Full preflight inspection and runtime support in `validate_artifact_data` and MCP `tasleemat_validate_data`.
+- Registered SHA-256 schema fingerprints in canonical `tasleemat/data/catalog.json`.
 
 #### Structural Validation Engine Architecture & Contracts
 Completed-data payload validation is executed through `validate_artifact_data` or MCP `tasleemat_validate_data`. The engine operates under strict deterministic contracts:

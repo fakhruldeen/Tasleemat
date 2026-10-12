@@ -1,0 +1,47 @@
+{
+  "artifact_id": "PMO-07.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "contract_identification": {
+    "contract_identification": "Substantive completed details for Contract Identification."
+  },
+  "vendor_performance_analysis_what_worked_well": {
+    "scope": "Substantive completed details for Scope.",
+    "quality": "Substantive completed details for Quality.",
+    "schedule": "Substantive completed details for Schedule.",
+    "cost": "Substantive completed details for Cost.",
+    "other": "Substantive completed details for Other."
+  },
+  "vendor_performance_analysis_what_can_be_improved": {
+    "scope": "Substantive completed details for Scope.",
+    "quality": "Substantive completed details for Quality.",
+    "schedule": "Substantive completed details for Schedule.",
+    "cost": "Substantive completed details for Cost.",
+    "other": "Substantive completed details for Other."
+  },
+  "record_of_contract_changes": {
+    "change_id": "Substantive completed details for Change Id.",
+    "change_description": "Substantive completed details for Change Description.",
+    "date_approved": "Substantive completed details for Date Approved."
+  },
+  "record_of_contract_disputes": {
+    "dispute_description": "Substantive completed details for Dispute Description.",
+    "resolution": "Substantive completed details for Resolution.",
+    "date_resolved": "Substantive completed details for Date Resolved."
+  },
+  "contract_completion_and_final_payment": {
+    "contract_completion_date": "Substantive completed details for Contract Completion Date.",
+    "signed_off_by": "Substantive completed details for Signed Off By.",
+    "final_payment_date": "Substantive completed details for Final Payment Date."
+  },
+  "comments": {
+    "comments": "Substantive completed details for Comments."
+  }
+}

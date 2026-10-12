@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-00.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "alignment_framework": {
+    "strategic_cycle_and_horizon": "Substantive completed details for Strategic Cycle And Horizon.",
+    "enterprise_strategic_objective": "Substantive completed details for Enterprise Strategic Objective.",
+    "portfolio_investment_category": "Substantive completed details for Portfolio Investment Category."
+  },
+  "okr_mapping_and_key_results": {
+    "target_key_result_id_and_metric": "Substantive completed details for Target Key Result Id And Metric.",
+    "project_deliverable_contribution": "Substantive completed details for Project Deliverable Contribution.",
+    "leading_vs_lagging_indicator": "Substantive completed details for Leading Vs Lagging Indicator."
+  },
+  "confidence_tracking_and_pivoting": {
+    "quarterly_confidence_score": "Substantive completed details for Quarterly Confidence Score.",
+    "confidence_variance_rationale": "Substantive completed details for Confidence Variance Rationale.",
+    "strategic_pivot_recommendation": "Substantive completed details for Strategic Pivot Recommendation."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.09.schema.json",
+  "title": "Completed Vendor Performance Scorecard Data Contract",
+  "description": "Additive structural schema validating completed Vendor Performance Scorecard artifact data payloads (PMO-06.09).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.09"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "vendor_performance_scorecard_entries": {
+      "type": "object",
+      "properties": {
+        "metric_kpi": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What is being measured, named so that both sides would recognise it. \"Quality\" is not a metric; \"defects found in acceptance, per hundred items delivered\" is, because a word cannot be measured twice and compared across periods."
+        },
+        "target_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The level agreed in advance, with the period it applies to. A target written after the result is known is not a target, it is a description, and this column is the one that makes the variance column mean anything."
+        },
+        "actual_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What was measured, and how. The measure is stated with the score so that a later reader can tell whether the same method was used in both periods; a number whose method has changed is not comparable to a number whose method did not."
+        },
+        "variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Target minus actual, with the direction that matters. Whether a positive number is good or bad depends on the metric, and stating it here is what stops the sign being argued about instead of the performance."
+        },
+        "corrective_action": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What happens because of the variance, and by when. Written only where there is a shortfall, and naming who does it: a scorecard that records a variance and no response produces the same variance next period, because the only thing that changed in between was the number."
+        }
+      },
+      "required": [
+        "metric_kpi",
+        "target_score",
+        "actual_score",
+        "variance",
+        "corrective_action"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "vendor_performance_scorecard_entries"
+  ]
+}

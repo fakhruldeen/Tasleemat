@@ -1,0 +1,22 @@
+{
+  "artifact_id": "PMO-04.08.07",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-08-07",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "risk_assessment": {
+    "risk_id_and_title": "Substantive completed details for Risk Id And Title.",
+    "current_risk_score": "Substantive completed details for Current Risk Score."
+  },
+  "mitigation_plan": {
+    "mitigation_strategy": "Substantive completed details for Mitigation Strategy.",
+    "detailed_action_steps": "Substantive completed details for Detailed Action Steps.",
+    "resource_requirements": "Substantive completed details for Resource Requirements.",
+    "target_risk_score": "Substantive completed details for Target Risk Score."
+  }
+}

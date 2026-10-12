@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.12.01.schema.json",
+  "title": "Completed Sustainability and ESG Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Sustainability and ESG Management Plan artifact data payloads (PMO-04.12.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.12.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "sustainability_mandate_and_scope": {
+      "type": "object",
+      "properties": {
+        "sustainability_vision_and_regulatory_baseline": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The organizational ESG mandate, environmental regulatory frameworks, and statutory compliance standards governing the project."
+        },
+        "carbon_footprint_reduction_target": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Quantified greenhouse gas (GHG) emission reduction targets spanning direct execution (Scope 1/2) and supply chain operations (Scope 3)."
+        },
+        "circular_economy_and_material_strategy": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Policies governing zero-waste design, sustainable material selection, energy efficiency, and asset recycling / reuse pathways."
+        }
+      },
+      "required": [
+        "sustainability_vision_and_regulatory_baseline",
+        "carbon_footprint_reduction_target",
+        "circular_economy_and_material_strategy"
+      ]
+    },
+    "social_and_ethical_governance": {
+      "type": "object",
+      "properties": {
+        "social_impact_and_community_engagement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Measures ensuring positive community impact, workforce diversity, labor safety standards, and local stakeholder benefits."
+        },
+        "ethical_procurement_and_supplier_esg_standards": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Mandatory vendor qualification criteria regarding human rights, fair labor practices, and sustainable supply chain transparency."
+        },
+        "esg_risk_and_compliance_monitoring": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific environmental and social risk exposures, mitigation plans, and regulatory inspection cadences."
+        }
+      },
+      "required": [
+        "social_impact_and_community_engagement",
+        "ethical_procurement_and_supplier_esg_standards",
+        "esg_risk_and_compliance_monitoring"
+      ]
+    },
+    "esg_metrics_and_decommissioning": {
+      "type": "object",
+      "properties": {
+        "esg_key_performance_indicators": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Measurable scorecard tracking energy consumption, carbon offsets, diversity ratios, and ethical audit scores across sprints."
+        },
+        "sustainable_decommissioning_and_handover": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Procedures ensuring environmentally responsible asset disposal, data purging, and ecological post-project decommissioning."
+        },
+        "sustainability_audit_lead_and_review_cadence": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The designated sustainability officer accountable for compliance audits and the periodic ESG review schedule."
+        }
+      },
+      "required": [
+        "esg_key_performance_indicators",
+        "sustainable_decommissioning_and_handover",
+        "sustainability_audit_lead_and_review_cadence"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "sustainability_mandate_and_scope",
+    "social_and_ethical_governance",
+    "esg_metrics_and_decommissioning"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-06.12",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-12",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "value_stream_parameters": {
+    "value_stream_name_and_definition": "Draft notes for Value Stream Name And Definition."
+  },
+  "flow_telemetry_and_metrics": {
+    "lead_time_and_cycle_time_percentiles": "Draft notes for Lead Time And Cycle Time Percentiles."
+  },
+  "flow_health_and_bottleneck_remediation": {
+    "flow_load_and_work_age_health": "Draft notes for Flow Load And Work Age Health."
+  }
+}

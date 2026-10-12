@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-07.05.schema.json",
+  "title": "Completed Post-Implementation Review Report Data Contract",
+  "description": "Additive structural schema validating completed Post-Implementation Review Report artifact data payloads (PMO-07.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-07.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "review_context": {
+      "type": "object",
+      "properties": {
+        "review_purpose_and_evaluation_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The post-handover evaluation objectives and the operating timeframe assessed (typically 3 to 6 months post go-live)."
+        },
+        "lead_evaluator_and_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The designated business assurance lead or PMO evaluator conducting the review and the completion date."
+        }
+      },
+      "required": [
+        "review_purpose_and_evaluation_period",
+        "lead_evaluator_and_date"
+      ]
+    },
+    "benefits_realization_assessment": {
+      "type": "object",
+      "properties": {
+        "planned_vs_realized_benefits": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Quantitative comparison of financial and operational benefits realized in steady-state operations versus business case projections."
+        },
+        "operational_adoption_rate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Metrics reflecting user adoption, system throughput, and behavioral integration into routine operations."
+        }
+      },
+      "required": [
+        "planned_vs_realized_benefits",
+        "operational_adoption_rate"
+      ]
+    },
+    "operational_transition_and_stability": {
+      "type": "object",
+      "properties": {
+        "operational_stability_and_support": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment of post-transition SLA adherence, support ticket volume, and operational maintenance handover efficacy."
+        },
+        "outstanding_issues_and_technical_debt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Inventory of lingering operational bugs, unresolved defects, or technical debt requiring long-term maintenance."
+        }
+      },
+      "required": [
+        "operational_stability_and_support",
+        "outstanding_issues_and_technical_debt"
+      ]
+    },
+    "long_term_insights_and_recommendations": {
+      "type": "object",
+      "properties": {
+        "strategic_lessons_learned": {
+          "type": "string",
+          "minLength": 1,
+          "description": "High-level strategic insights on solution viability, change management effectiveness, and business model impact."
+        },
+        "ongoing_optimization_recommendations": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Prescriptive guidance for continuous optimization, future phase enhancements, and long-term capability extension."
+        }
+      },
+      "required": [
+        "strategic_lessons_learned",
+        "ongoing_optimization_recommendations"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "review_context",
+    "benefits_realization_assessment",
+    "operational_transition_and_stability",
+    "long_term_insights_and_recommendations"
+  ]
+}

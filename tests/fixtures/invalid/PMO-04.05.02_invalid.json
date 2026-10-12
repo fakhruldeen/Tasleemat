@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.05.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-05-02",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "deliverable_quality_metrics": {
+    "metric_name_and_target_standard": "",
+    "associated_deliverable_and_work_package": ""
+  },
+  "process_and_performance_quality_metrics": {
+    "process_efficiency_metric": "",
+    "defect_density_and_severity_thresholds": ""
+  },
+  "quality_measurement_and_tolerance_limits": {
+    "measurement_frequency_and_tooling": "",
+    "acceptable_tolerance_range_and_escalation_trigger": ""
+  }
+}

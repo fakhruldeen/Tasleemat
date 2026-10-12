@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.06.schema.json",
+  "title": "Completed WORK BREAKDOWN STRUCTURE Data Contract",
+  "description": "Additive structural schema validating completed WORK BREAKDOWN STRUCTURE artifact data payloads (PMO-04.02.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.02.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "wbs_structure_and_hierarchy": {
+      "type": "object",
+      "properties": {
+        "wbs_decomposition_approach": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The organizing principle used to decompose scope (e.g., phase-based, deliverable-based, or subsystem-based)."
+        },
+        "hierarchy_levels_and_coding_scheme": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Definition of hierarchical levels (Project, Phase/Subsystem, Deliverable, Work Package) and WBS numbering scheme."
+        },
+        "100_percent_rule_compliance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Confirmation that all parent nodes capture 100 percent of subordinate scope with no external additions."
+        }
+      },
+      "required": [
+        "wbs_decomposition_approach",
+        "hierarchy_levels_and_coding_scheme",
+        "100_percent_rule_compliance"
+      ]
+    },
+    "work_breakdown_elements": {
+      "type": "object",
+      "properties": {
+        "level_1_summary_elements": {
+          "type": "string",
+          "minLength": 1,
+          "description": "High-level summary nodes representing major phases or principal delivery workstreams."
+        },
+        "level_2_and_3_intermediate_deliverables": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Subordinate deliverables and integrated components decomposing summary elements."
+        },
+        "lowest_level_work_packages_summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Discrete manageable units of work assigned for cost estimation, scheduling, and control."
+        }
+      },
+      "required": [
+        "level_1_summary_elements",
+        "level_2_and_3_intermediate_deliverables",
+        "lowest_level_work_packages_summary"
+      ]
+    },
+    "wbs_outline_representation": {
+      "type": "object",
+      "properties": {
+        "hierarchical_wbs_outline": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Complete textual outline displaying the hierarchical breakdown of the entire project scope."
+        },
+        "control_accounts_and_work_package_identifiers": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assigned identifiers mapping control accounts to accounting and management structures."
+        }
+      },
+      "required": [
+        "hierarchical_wbs_outline",
+        "control_accounts_and_work_package_identifiers"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "wbs_structure_and_hierarchy",
+    "work_breakdown_elements",
+    "wbs_outline_representation"
+  ]
+}

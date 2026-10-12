@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-01.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-01-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "1_register_control": {
+    "register_purpose": "Draft notes for Register Purpose."
+  },
+  "2_value_realization_register": {
+    "benefit_id": "Draft notes for Benefit Id."
+  },
+  "3_realization_actions": {
+    "variance_explanation": "Draft notes for Variance Explanation."
+  }
+}

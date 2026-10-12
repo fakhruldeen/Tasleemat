@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-04.03.08",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-08",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "baseline_schedule_summary": {
+    "project_start_and_target_finish_dates": "",
+    "schedule_data_version_and_baseline_status": "",
+    "total_critical_path_length_and_major_phases": ""
+  },
+  "detailed_schedule_data": {
+    "wbs_code_and_activity_schedule_mapping": "",
+    "planned_start_and_finish_dates": "",
+    "assigned_resources_and_effort_allocation": ""
+  },
+  "critical_path_and_float_analysis": {
+    "critical_path_flag_and_dependencies": "",
+    "total_float_and_free_float_values": "",
+    "schedule_risk_and_recovery_considerations": ""
+  }
+}

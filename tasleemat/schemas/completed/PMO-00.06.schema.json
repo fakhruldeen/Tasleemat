@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-00.06.schema.json",
+  "title": "Completed OKR Alignment Matrix Data Contract",
+  "description": "Additive structural schema validating completed OKR Alignment Matrix artifact data payloads (PMO-00.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-00.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "alignment_framework": {
+      "type": "object",
+      "properties": {
+        "strategic_cycle_and_horizon": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The corporate planning cycle, fiscal year, and strategic review cadence governing the OKR alignment matrix."
+        },
+        "enterprise_strategic_objective": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The overarching corporate priority or strategic theme this initiative directly advances."
+        },
+        "portfolio_investment_category": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The investment classification (Strategic Growth, Operational Resilience, Transformative Innovation, or Mandatory Compliance)."
+        }
+      },
+      "required": [
+        "strategic_cycle_and_horizon",
+        "enterprise_strategic_objective",
+        "portfolio_investment_category"
+      ]
+    },
+    "okr_mapping_and_key_results": {
+      "type": "object",
+      "properties": {
+        "target_key_result_id_and_metric": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific measurable Key Result identifier and target performance metric defined by executive leadership."
+        },
+        "project_deliverable_contribution": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The tangible product capability, system feature, or project milestone directly contributing to Key Result fulfillment."
+        },
+        "leading_vs_lagging_indicator": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Classification whether the contribution measure provides immediate early progress signals (leading) or final outcome confirmation (lagging)."
+        }
+      },
+      "required": [
+        "target_key_result_id_and_metric",
+        "project_deliverable_contribution",
+        "leading_vs_lagging_indicator"
+      ]
+    },
+    "confidence_tracking_and_pivoting": {
+      "type": "object",
+      "properties": {
+        "quarterly_confidence_score": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Current subjective confidence rating (0.0 to 1.0) of achieving the Key Result given project execution trajectory."
+        },
+        "confidence_variance_rationale": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Root-cause explanation for any score degradation or positive acceleration relative to the previous cycle baseline."
+        },
+        "strategic_pivot_recommendation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Mandated strategic intervention, scope adjustment, or resource reallocation if confidence drops below target threshold."
+        }
+      },
+      "required": [
+        "quarterly_confidence_score",
+        "confidence_variance_rationale",
+        "strategic_pivot_recommendation"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "alignment_framework",
+    "okr_mapping_and_key_results",
+    "confidence_tracking_and_pivoting"
+  ]
+}

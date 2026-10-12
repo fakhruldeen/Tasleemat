@@ -1,0 +1,63 @@
+{
+  "artifact_id": "PMO-02.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "model_identification_and_provenance": {
+    "model_name_and_version": "Substantive completed details for Model Name And Version.",
+    "developer_and_provenance": "Substantive completed details for Developer And Provenance.",
+    "architecture_and_configuration": "Substantive completed details for Architecture And Configuration.",
+    "training_method_and_compute": "Substantive completed details for Training Method And Compute.",
+    "licence_and_usage_terms": "Substantive completed details for Licence And Usage Terms.",
+    "related_artefacts": "Substantive completed details for Related Artefacts."
+  },
+  "intended_use_and_out_of_scope_use": {
+    "primary_use": "Substantive completed details for Primary Use.",
+    "secondary_use": "Substantive completed details for Secondary Use.",
+    "out_of_scope_use": "Substantive completed details for Out Of Scope Use.",
+    "user_and_audience": "Substantive completed details for User And Audience.",
+    "operating_conditions": "Substantive completed details for Operating Conditions.",
+    "human_oversight_requirement": "Substantive completed details for Human Oversight Requirement."
+  },
+  "training_data": {
+    "datasets": "Substantive completed details for Datasets.",
+    "provenance_and_collection_method": "Substantive completed details for Provenance And Collection Method.",
+    "demographic_and_geographic_coverage": "Substantive completed details for Demographic And Geographic Coverage.",
+    "time_period_covered": "Substantive completed details for Time Period Covered.",
+    "licence_and_consent_basis": "Substantive completed details for Licence And Consent Basis.",
+    "preprocessing_and_filtering": "Substantive completed details for Preprocessing And Filtering.",
+    "known_dataset_limitations": "Substantive completed details for Known Dataset Limitations."
+  },
+  "evaluation_and_performance": {
+    "evaluation_data": "Substantive completed details for Evaluation Data.",
+    "metrics": "Substantive completed details for Metrics.",
+    "performance_by_subgroup": "Substantive completed details for Performance By Subgroup.",
+    "baseline_comparison": "Substantive completed details for Baseline Comparison.",
+    "threshold_and_operating_point": "Substantive completed details for Threshold And Operating Point.",
+    "evaluation_method_and_limitations": "Substantive completed details for Evaluation Method And Limitations.",
+    "robustness_and_failure_modes": "Substantive completed details for Robustness And Failure Modes."
+  },
+  "ethical_fairness_and_safety_considerations": {
+    "affected_groups": "Substantive completed details for Affected Groups.",
+    "known_bias": "Substantive completed details for Known Bias.",
+    "safety_risks": "Substantive completed details for Safety Risks.",
+    "dual_use_and_misuse_potential": "Substantive completed details for Dual Use And Misuse Potential.",
+    "environmental_and_resource_impact": "Substantive completed details for Environmental And Resource Impact.",
+    "data_privacy_impact": "Substantive completed details for Data Privacy Impact."
+  },
+  "limitations_monitoring_and_change_control": {
+    "known_limitations": "Substantive completed details for Known Limitations.",
+    "out_of_distribution_behaviour": "Substantive completed details for Out Of Distribution Behaviour.",
+    "production_monitoring": "Substantive completed details for Production Monitoring.",
+    "monitoring_thresholds": "Substantive completed details for Monitoring Thresholds.",
+    "retraining_and_update_policy": "Substantive completed details for Retraining And Update Policy.",
+    "version_change_record": "Substantive completed details for Version Change Record.",
+    "decommissioning_plan": "Substantive completed details for Decommissioning Plan."
+  }
+}

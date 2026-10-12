@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-04.12.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-12-01",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "sustainability_mandate_and_scope": {
+    "sustainability_vision_and_regulatory_baseline": "",
+    "carbon_footprint_reduction_target": "",
+    "circular_economy_and_material_strategy": ""
+  },
+  "social_and_ethical_governance": {
+    "social_impact_and_community_engagement": "",
+    "ethical_procurement_and_supplier_esg_standards": "",
+    "esg_risk_and_compliance_monitoring": ""
+  },
+  "esg_metrics_and_decommissioning": {
+    "esg_key_performance_indicators": "",
+    "sustainable_decommissioning_and_handover": "",
+    "sustainability_audit_lead_and_review_cadence": ""
+  }
+}

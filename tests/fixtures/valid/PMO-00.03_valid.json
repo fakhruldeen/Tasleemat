@@ -1,0 +1,47 @@
+{
+  "artifact_id": "PMO-00.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "register_basis": {
+    "register_scope_and_level": "Substantive completed details for Register Scope And Level.",
+    "programs_or_projects_covered": "Substantive completed details for Programs Or Projects Covered.",
+    "source_of_truth_or_extract": "Substantive completed details for Source Of Truth Or Extract.",
+    "review_cycle": "Substantive completed details for Review Cycle.",
+    "register_owner": "Substantive completed details for Register Owner.",
+    "last_updated": "Substantive completed details for Last Updated."
+  },
+  "internal_interdependencies": {
+    "id": "Substantive completed details for Id.",
+    "predecessor": "Substantive completed details for Predecessor.",
+    "successor": "Substantive completed details for Successor.",
+    "deliverable_or_condition": "Substantive completed details for Deliverable Or Condition.",
+    "dependency_type": "Substantive completed details for Dependency Type.",
+    "required_by": "Substantive completed details for Required By.",
+    "agreed_date": "Substantive completed details for Agreed Date.",
+    "status": "Substantive completed details for Status.",
+    "impact_if_late": "Substantive completed details for Impact If Late."
+  },
+  "external_interdependencies": {
+    "id": "Substantive completed details for Id.",
+    "external_party": "Substantive completed details for External Party.",
+    "dependency_description": "Substantive completed details for Dependency Description.",
+    "contractual_basis": "Substantive completed details for Contractual Basis.",
+    "required_by": "Substantive completed details for Required By.",
+    "status": "Substantive completed details for Status.",
+    "owner": "Substantive completed details for Owner."
+  },
+  "escalations_and_agreements": {
+    "dependency_id": "Substantive completed details for Dependency Id.",
+    "trigger": "Substantive completed details for Trigger.",
+    "escalated_to": "Substantive completed details for Escalated To.",
+    "action_agreed": "Substantive completed details for Action Agreed.",
+    "date": "Substantive completed details for Date."
+  }
+}

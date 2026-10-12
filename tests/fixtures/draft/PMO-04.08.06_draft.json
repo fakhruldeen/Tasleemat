@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.08.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-08-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "executive_summary_and_overall_risk_profile": {
+    "overall_project_risk_exposure_summary": "Draft notes for Overall Project Risk Exposure Summary."
+  },
+  "critical_threats_and_opportunities_summary": {
+    "top_project_threats_and_active_responses": "Draft notes for Top Project Threats And Active Responses."
+  },
+  "quantitative_risk_exposure_and_reserve_adequacy": {
+    "quantitative_simulation_findings": "Draft notes for Quantitative Simulation Findings."
+  },
+  "risk_management_trends_and_recommendations": {
+    "risk_process_and_metric_trends": "Draft notes for Risk Process And Metric Trends."
+  }
+}

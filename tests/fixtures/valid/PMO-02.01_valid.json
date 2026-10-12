@@ -1,0 +1,33 @@
+{
+  "artifact_id": "PMO-02.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-01",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "1_tailoring_basis": {
+    "organizational_methodology": "Substantive completed details for Organizational Methodology.",
+    "tailoring_drivers": "Substantive completed details for Tailoring Drivers.",
+    "applicable_standards": "Substantive completed details for Applicable Standards.",
+    "inherited_tailoring": "Substantive completed details for Inherited Tailoring."
+  },
+  "2_tailoring_decisions": {
+    "process_or_artifact": "Substantive completed details for Process Or Artifact.",
+    "standard_requirement": "Substantive completed details for Standard Requirement.",
+    "decision": "Substantive completed details for Decision.",
+    "rationale": "Substantive completed details for Rationale.",
+    "consequence": "Substantive completed details for Consequence.",
+    "reversibility": "Substantive completed details for Reversibility.",
+    "impact_on_artifacts": "Substantive completed details for Impact On Artifacts."
+  },
+  "3_governance_of_tailoring": {
+    "decision_authority": "Substantive completed details for Decision Authority.",
+    "review_and_reapproval": "Substantive completed details for Review And Reapproval.",
+    "compliance_check": "Substantive completed details for Compliance Check.",
+    "change_control_link": "Substantive completed details for Change Control Link."
+  }
+}

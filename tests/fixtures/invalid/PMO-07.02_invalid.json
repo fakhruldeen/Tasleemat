@@ -1,0 +1,47 @@
+{
+  "artifact_id": "PMO-07.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-02",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "contract_identification": {
+    "contract_identification": ""
+  },
+  "vendor_performance_analysis_what_worked_well": {
+    "scope": "",
+    "quality": "",
+    "schedule": "",
+    "cost": "",
+    "other": ""
+  },
+  "vendor_performance_analysis_what_can_be_improved": {
+    "scope": "",
+    "quality": "",
+    "schedule": "",
+    "cost": "",
+    "other": ""
+  },
+  "record_of_contract_changes": {
+    "change_id": "",
+    "change_description": "",
+    "date_approved": ""
+  },
+  "record_of_contract_disputes": {
+    "dispute_description": "",
+    "resolution": "",
+    "date_resolved": ""
+  },
+  "contract_completion_and_final_payment": {
+    "contract_completion_date": "",
+    "signed_off_by": "",
+    "final_payment_date": ""
+  },
+  "comments": {
+    "comments": ""
+  }
+}

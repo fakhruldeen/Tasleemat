@@ -1,0 +1,383 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.05.schema.json",
+  "title": "Completed EARNED VALUE ANALYSIS REPORT Data Contract",
+  "description": "Additive structural schema validating completed EARNED VALUE ANALYSIS REPORT artifact data payloads (PMO-06.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "basic_earned_value_metrics": {
+      "type": "object",
+      "properties": {
+        "budget_at_completion_bac": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The total approved baseline budget allocated for the complete project scope."
+        },
+        "planned_value_pv_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The authorized budget assigned to scheduled work for the current reporting period."
+        },
+        "planned_value_pv_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative authorized budget planned from project start through current period."
+        },
+        "planned_value_pv_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative planned value calculated at the close of the previous reporting period."
+        },
+        "earned_value_ev_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The budgeted amount for the work actually completed during the current period."
+        },
+        "earned_value_ev_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative budgeted amount for all work accomplished from project start to date."
+        },
+        "earned_value_ev_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative earned value achieved as of the previous reporting period."
+        },
+        "actual_cost_ac_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The actual expenditures incurred for work performed during the current period."
+        },
+        "actual_cost_ac_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative total actual costs incurred from project start through current period."
+        },
+        "actual_cost_ac_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative actual costs recorded as of the previous reporting period."
+        }
+      },
+      "required": [
+        "budget_at_completion_bac",
+        "planned_value_pv_current_reporting_period",
+        "planned_value_pv_current_period_cumulative",
+        "planned_value_pv_past_period_cumulative",
+        "earned_value_ev_current_reporting_period",
+        "earned_value_ev_current_period_cumulative",
+        "earned_value_ev_past_period_cumulative",
+        "actual_cost_ac_current_reporting_period",
+        "actual_cost_ac_current_period_cumulative",
+        "actual_cost_ac_past_period_cumulative"
+      ]
+    },
+    "variances_and_indices": {
+      "type": "object",
+      "properties": {
+        "schedule_variance_sv_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The schedule performance in financial terms (EV - PV) for the current period."
+        },
+        "schedule_variance_sv_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative schedule variance (Cumulative EV - Cumulative PV) to date."
+        },
+        "schedule_variance_sv_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative schedule variance as of the prior reporting period."
+        },
+        "cost_variance_cv_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The financial budget variance (EV - AC) for the current reporting period."
+        },
+        "cost_variance_cv_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative cost variance (Cumulative EV - Cumulative AC) to date."
+        },
+        "cost_variance_cv_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative cost variance as of the prior reporting period."
+        },
+        "schedule_performance_index_spi_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The schedule efficiency ratio (EV / PV) for the current period."
+        },
+        "schedule_performance_index_spi_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative schedule efficiency ratio (Cumulative EV / Cumulative PV)."
+        },
+        "schedule_performance_index_spi_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative schedule efficiency index from the previous reporting period."
+        },
+        "cost_performance_index_cpi_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cost efficiency ratio (EV / AC) for the current period."
+        },
+        "cost_performance_index_cpi_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative cost efficiency ratio (Cumulative EV / Cumulative AC)."
+        },
+        "cost_performance_index_cpi_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The cumulative cost efficiency index from the previous reporting period."
+        }
+      },
+      "required": [
+        "schedule_variance_sv_current_reporting_period",
+        "schedule_variance_sv_current_period_cumulative",
+        "schedule_variance_sv_past_period_cumulative",
+        "cost_variance_cv_current_reporting_period",
+        "cost_variance_cv_current_period_cumulative",
+        "cost_variance_cv_past_period_cumulative",
+        "schedule_performance_index_spi_current_reporting_period",
+        "schedule_performance_index_spi_current_period_cumulative",
+        "schedule_performance_index_spi_past_period_cumulative",
+        "cost_performance_index_cpi_current_reporting_period",
+        "cost_performance_index_cpi_current_period_cumulative",
+        "cost_performance_index_cpi_past_period_cumulative"
+      ]
+    },
+    "percentages": {
+      "type": "object",
+      "properties": {
+        "percent_planned_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Planned Value divided by BAC for the current reporting period."
+        },
+        "percent_planned_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cumulative Planned Value divided by BAC to measure scheduled completion percentage."
+        },
+        "percent_planned_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cumulative Planned Value divided by BAC as of the prior reporting period."
+        },
+        "percent_earned_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Earned Value divided by BAC for the current reporting period."
+        },
+        "percent_earned_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cumulative Earned Value divided by BAC representing actual project percent complete."
+        },
+        "percent_earned_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cumulative Earned Value divided by BAC as of the prior reporting period."
+        },
+        "percent_spent_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Actual Cost divided by BAC for the current reporting period."
+        },
+        "percent_spent_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cumulative Actual Cost divided by BAC representing total project budget spent to date."
+        },
+        "percent_spent_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cumulative Actual Cost divided by BAC as of the prior reporting period."
+        }
+      },
+      "required": [
+        "percent_planned_current_reporting_period",
+        "percent_planned_current_period_cumulative",
+        "percent_planned_past_period_cumulative",
+        "percent_earned_current_reporting_period",
+        "percent_earned_current_period_cumulative",
+        "percent_earned_past_period_cumulative",
+        "percent_spent_current_reporting_period",
+        "percent_spent_current_period_cumulative",
+        "percent_spent_past_period_cumulative"
+      ]
+    },
+    "forecasting_estimates": {
+      "type": "object",
+      "properties": {
+        "eac_w_cpi_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimate at Completion assuming future work performed at current period CPI (BAC / CPI)."
+        },
+        "eac_w_cpi_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimate at Completion assuming future work performed at cumulative CPI."
+        },
+        "eac_w_cpi_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimate at Completion based on past period cumulative CPI."
+        },
+        "eac_w_cpi_spi_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimate at Completion factoring both cost and schedule indices for current period."
+        },
+        "eac_w_cpi_spi_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimate at Completion factoring cumulative cost and schedule performance indices."
+        },
+        "eac_w_cpi_spi_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimate at Completion factoring past period cumulative cost and schedule indices."
+        },
+        "to_complete_performance_index_tcpi_current_reporting_period": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cost efficiency required to complete the remaining work within BAC for current period."
+        },
+        "to_complete_performance_index_tcpi_current_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cost efficiency required to complete the remaining work within BAC cumulatively."
+        },
+        "to_complete_performance_index_tcpi_past_period_cumulative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "TCPI calculated at the close of the prior reporting period."
+        },
+        "selected_eac_justification_and_explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed justification of the selected EAC forecasting formula and expected final budget outcome."
+        }
+      },
+      "required": [
+        "eac_w_cpi_current_reporting_period",
+        "eac_w_cpi_current_period_cumulative",
+        "eac_w_cpi_past_period_cumulative",
+        "eac_w_cpi_spi_current_reporting_period",
+        "eac_w_cpi_spi_current_period_cumulative",
+        "eac_w_cpi_spi_past_period_cumulative",
+        "to_complete_performance_index_tcpi_current_reporting_period",
+        "to_complete_performance_index_tcpi_current_period_cumulative",
+        "to_complete_performance_index_tcpi_past_period_cumulative",
+        "selected_eac_justification_and_explanation"
+      ]
+    },
+    "root_cause_and_impacts_analysis": {
+      "type": "object",
+      "properties": {
+        "root_cause_of_schedule_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Underlying drivers and operational causes for schedule efficiency or delay."
+        },
+        "schedule_impact_incl_implications_of_continued_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Projected delivery delays and critical path impacts if schedule trends continue."
+        },
+        "root_cause_of_cost_variance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Operational factors, rate fluctuations, or scope drivers causing cost variances."
+        },
+        "budget_impact_incl_intended_actions_reserves": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Financial exposure and reserve utilization strategies to maintain fiscal control."
+        }
+      },
+      "required": [
+        "root_cause_of_schedule_variance",
+        "schedule_impact_incl_implications_of_continued_variance",
+        "root_cause_of_cost_variance",
+        "budget_impact_incl_intended_actions_reserves"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Additional contextual observations or recommendations from the EVM analyst."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "basic_earned_value_metrics",
+    "variances_and_indices",
+    "percentages",
+    "forecasting_estimates",
+    "root_cause_and_impacts_analysis",
+    "comments"
+  ]
+}

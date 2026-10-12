@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-06.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "basic_earned_value_metrics": {
+    "budget_at_completion_bac": "Draft notes for Budget At Completion Bac."
+  },
+  "variances_and_indices": {
+    "schedule_variance_sv_current_reporting_period": "Draft notes for Schedule Variance Sv Current Reporting Period."
+  },
+  "percentages": {
+    "percent_planned_current_reporting_period": "Draft notes for Percent Planned Current Reporting Period."
+  },
+  "forecasting_estimates": {
+    "eac_w_cpi_current_reporting_period": "Draft notes for Eac W Cpi Current Reporting Period."
+  },
+  "root_cause_and_impacts_analysis": {
+    "root_cause_of_schedule_variance": "Draft notes for Root Cause Of Schedule Variance."
+  },
+  "comments": {
+    "comments": "Draft notes for Comments."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.03.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-04",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "mandatory_milestones": {
+    "contractual_and_regulatory_milestones": "",
+    "target_dates_and_deliverables_mandatory": ""
+  },
+  "optional_and_internal_milestones": {
+    "internal_project_gate_milestones": "",
+    "target_dates_and_deliverables_internal": ""
+  },
+  "milestone_verification_and_criteria": {
+    "verification_evidence_and_sign_off_lead": "",
+    "milestone_critical_path_impact": ""
+  }
+}

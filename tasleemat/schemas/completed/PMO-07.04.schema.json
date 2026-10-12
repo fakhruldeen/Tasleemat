@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-07.04.schema.json",
+  "title": "Completed Transition to Operations Checklist Data Contract",
+  "description": "Additive structural schema validating completed Transition to Operations Checklist artifact data payloads (PMO-07.04).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-07.04"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "operational_handover_items": {
+      "type": "object",
+      "properties": {
+        "handover_item": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The operational deliverable, documentation, system asset, credentials, warranty, or support agreement formally transferred to the sustaining operations team."
+        },
+        "responsible_party": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The operational team, service owner, or designated role accepting ongoing responsibility and stewardship for the item."
+        },
+        "acceptance_criteria": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific operational readiness criteria and verification evidence required before formal handover sign-off."
+        },
+        "handover_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The scheduled or actual date on which ownership and support accountability are formally transferred."
+        },
+        "sign_off_status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The formal verification status (e.g., Accepted, Conditional, Pending) confirming operational readiness."
+        }
+      },
+      "required": [
+        "handover_item",
+        "responsible_party",
+        "acceptance_criteria",
+        "handover_date",
+        "sign_off_status"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "operational_handover_items"
+  ]
+}

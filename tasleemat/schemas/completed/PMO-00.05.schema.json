@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-00.05.schema.json",
+  "title": "Completed PMO Maturity Assessment Data Contract",
+  "description": "Additive structural schema validating completed PMO Maturity Assessment artifact data payloads (PMO-00.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-00.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "assessment_context": {
+      "type": "object",
+      "properties": {
+        "assessment_purpose_and_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What this PMO maturity assessment covers, the organizational boundaries evaluated, and the strategic improvement rationale behind the exercise."
+        },
+        "assessment_lead_and_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The designated assessor or governance review team accountable for the evaluation, and the baseline assessment completion date."
+        },
+        "target_maturity_level": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The desired future maturity tier (Levels 1 to 5) targeted by the PMO across defined strategic planning horizons."
+        }
+      },
+      "required": [
+        "assessment_purpose_and_scope",
+        "assessment_lead_and_date",
+        "target_maturity_level"
+      ]
+    },
+    "dimension_scoring": {
+      "type": "object",
+      "properties": {
+        "governance_and_strategy_alignment": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scored capability rating and evidentiary findings regarding portfolio decision-making, strategic prioritization, and executive reporting alignment."
+        },
+        "delivery_support_and_methodology": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scored capability rating and evidentiary findings regarding standard delivery framework adoption, lifecycle gates, and PM coaching support."
+        },
+        "people_and_competency_development": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scored capability rating and evidentiary findings regarding project management professional pathways, mentoring programs, and training curricula."
+        },
+        "performance_and_reporting": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scored capability rating and evidentiary findings regarding milestone tracking, earned value visibility, variance logging, and KPI reporting."
+        },
+        "tools_and_technology_ecosystem": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scored capability rating and evidentiary findings regarding PMIS tooling integration, workflow automation, and collaborative repository usage."
+        }
+      },
+      "required": [
+        "governance_and_strategy_alignment",
+        "delivery_support_and_methodology",
+        "people_and_competency_development",
+        "performance_and_reporting",
+        "tools_and_technology_ecosystem"
+      ]
+    },
+    "improvement_roadmap": {
+      "type": "object",
+      "properties": {
+        "capability_gap_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific operational or structural gap separating current maturity performance from target capability requirements."
+        },
+        "improvement_initiative": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The prioritized transformative action, process overhaul, or technology deployment planned to close the identified capability gap."
+        },
+        "initiative_owner_and_timeline": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The accountable individual responsible for delivery and the committed milestone completion date for the improvement initiative."
+        }
+      },
+      "required": [
+        "capability_gap_description",
+        "improvement_initiative",
+        "initiative_owner_and_timeline"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "assessment_context",
+    "dimension_scoring",
+    "improvement_roadmap"
+  ]
+}

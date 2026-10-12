@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.11.schema.json",
+  "title": "Completed Meeting Minutes Data Contract",
+  "description": "Additive structural schema validating completed Meeting Minutes artifact data payloads (PMO-05.11).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.11"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "meeting_record": {
+      "type": "object",
+      "properties": {
+        "meeting_objective": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What the meeting was called to settle, in one sentence. A purpose written after the meeting is a summary, and it is the only line that tells a reader whether anything was decided."
+        },
+        "attendees": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who was there, and who sent apologies. The list is not administrative: it is what tells a later reader whose agreement a decision carries, and who has to be told when the position changes."
+        },
+        "key_discussion_points": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The matters discussed, with the reasoning recorded alongside the conclusion. A decision with no recorded reasoning is one that gets relitigated, because the next person cannot see what was weighed."
+        },
+        "decisions_made": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What was agreed, one per entry, attributed to the meeting that agreed it. This section is the one that is read later, and anything not written here did not happen as far as the record is concerned."
+        }
+      },
+      "required": [
+        "meeting_objective",
+        "attendees",
+        "key_discussion_points",
+        "decisions_made"
+      ]
+    },
+    "action_items": {
+      "type": "object",
+      "properties": {
+        "action_items": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What was assigned, to whom, and by when. Written as a table because a task in a paragraph has no owner and no deadline a week later, and an action item without those two is a note."
+        }
+      },
+      "required": [
+        "action_items"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "meeting_record",
+    "action_items"
+  ]
+}

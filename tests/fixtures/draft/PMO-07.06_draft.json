@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-07.06",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-07-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "knowledge_handover_documentation_repository": {
+    "knowledge_transfer_scope_and_target_operations_team": "Draft notes for Knowledge Transfer Scope And Target Operations Team."
+  },
+  "operational_readiness_access_transfer": {
+    "operational_training_and_shadowing_completion_record": "Draft notes for Operational Training And Shadowing Completion Record."
+  },
+  "formal_acceptance_archival_custody": {
+    "formal_operational_acceptance_and_custody_signoff": "Draft notes for Formal Operational Acceptance And Custody Signoff."
+  }
+}

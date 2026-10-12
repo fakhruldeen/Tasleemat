@@ -1,0 +1,35 @@
+{
+  "artifact_id": "PMO-01.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-01-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "1_register_control": {
+    "register_purpose": "Substantive completed details for Register Purpose.",
+    "reporting_period": "Substantive completed details for Reporting Period.",
+    "source_documents": "Substantive completed details for Source Documents.",
+    "entry_rules": "Substantive completed details for Entry Rules."
+  },
+  "2_value_realization_register": {
+    "benefit_id": "Substantive completed details for Benefit Id.",
+    "benefit_description": "Substantive completed details for Benefit Description.",
+    "benefit_owner": "Substantive completed details for Benefit Owner.",
+    "measurement_method": "Substantive completed details for Measurement Method.",
+    "baseline_value": "Substantive completed details for Baseline Value.",
+    "target_value_and_date": "Substantive completed details for Target Value And Date.",
+    "actual_value_and_date": "Substantive completed details for Actual Value And Date.",
+    "variance": "Substantive completed details for Variance.",
+    "status": "Substantive completed details for Status."
+  },
+  "3_realization_actions": {
+    "variance_explanation": "Substantive completed details for Variance Explanation.",
+    "corrective_action": "Substantive completed details for Corrective Action.",
+    "escalation_trigger": "Substantive completed details for Escalation Trigger.",
+    "benefit_withdrawal": "Substantive completed details for Benefit Withdrawal."
+  }
+}

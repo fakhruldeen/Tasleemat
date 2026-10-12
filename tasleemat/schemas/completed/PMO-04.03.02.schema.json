@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.02.schema.json",
+  "title": "Completed ACTIVITY LIST Data Contract",
+  "description": "Additive structural schema validating completed ACTIVITY LIST artifact data payloads (PMO-04.03.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "schedule_activity_inventory": {
+      "type": "object",
+      "properties": {
+        "activity_identifier_and_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique activity code and concise action-oriented title for each schedule activity."
+        },
+        "activity_scope_of_work": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific narrative detailing the discrete scope of work to be performed in this activity."
+        },
+        "planned_iteration_or_release": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The target delivery sprint, wave, or milestone window assigned to this activity."
+        }
+      },
+      "required": [
+        "activity_identifier_and_name",
+        "activity_scope_of_work",
+        "planned_iteration_or_release"
+      ]
+    },
+    "activity_details_and_descriptions": {
+      "type": "object",
+      "properties": {
+        "activity_execution_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Technical or managerial execution approach applied to perform the work."
+        },
+        "estimated_effort_and_duration_units": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimated working effort in person-hours and planned calendar duration."
+        }
+      },
+      "required": [
+        "activity_execution_method",
+        "estimated_effort_and_duration_units"
+      ]
+    },
+    "associated_wbs_work_packages": {
+      "type": "object",
+      "properties": {
+        "parent_wbs_work_package_mapping": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The parent WBS work package identifier and deliverable directly decomposed by this activity."
+        },
+        "activity_completion_deliverable": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The tangible or verified intermediate output produced upon activity completion."
+        }
+      },
+      "required": [
+        "parent_wbs_work_package_mapping",
+        "activity_completion_deliverable"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "schedule_activity_inventory",
+    "activity_details_and_descriptions",
+    "associated_wbs_work_packages"
+  ]
+}

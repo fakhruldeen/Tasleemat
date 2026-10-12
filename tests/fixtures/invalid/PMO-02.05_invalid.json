@@ -1,0 +1,63 @@
+{
+  "artifact_id": "PMO-02.05",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-05",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "model_identification_and_provenance": {
+    "model_name_and_version": "",
+    "developer_and_provenance": "",
+    "architecture_and_configuration": "",
+    "training_method_and_compute": "",
+    "licence_and_usage_terms": "",
+    "related_artefacts": ""
+  },
+  "intended_use_and_out_of_scope_use": {
+    "primary_use": "",
+    "secondary_use": "",
+    "out_of_scope_use": "",
+    "user_and_audience": "",
+    "operating_conditions": "",
+    "human_oversight_requirement": ""
+  },
+  "training_data": {
+    "datasets": "",
+    "provenance_and_collection_method": "",
+    "demographic_and_geographic_coverage": "",
+    "time_period_covered": "",
+    "licence_and_consent_basis": "",
+    "preprocessing_and_filtering": "",
+    "known_dataset_limitations": ""
+  },
+  "evaluation_and_performance": {
+    "evaluation_data": "",
+    "metrics": "",
+    "performance_by_subgroup": "",
+    "baseline_comparison": "",
+    "threshold_and_operating_point": "",
+    "evaluation_method_and_limitations": "",
+    "robustness_and_failure_modes": ""
+  },
+  "ethical_fairness_and_safety_considerations": {
+    "affected_groups": "",
+    "known_bias": "",
+    "safety_risks": "",
+    "dual_use_and_misuse_potential": "",
+    "environmental_and_resource_impact": "",
+    "data_privacy_impact": ""
+  },
+  "limitations_monitoring_and_change_control": {
+    "known_limitations": "",
+    "out_of_distribution_behaviour": "",
+    "production_monitoring": "",
+    "monitoring_thresholds": "",
+    "retraining_and_update_policy": "",
+    "version_change_record": "",
+    "decommissioning_plan": ""
+  }
+}

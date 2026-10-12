@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-07.07.schema.json",
+  "title": "Completed ADMINISTRATIVE AND RESOURCE RELEASE FORM Data Contract",
+  "description": "Additive structural schema validating completed ADMINISTRATIVE AND RESOURCE RELEASE FORM artifact data payloads (PMO-07.07).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-07.07"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "resource_demobilization_asset_clearance": {
+      "type": "object",
+      "properties": {
+        "resource_release_scope_and_demobilization_schedule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Staff members, contractors, and specialized consultants slated for scheduled release back to functional pools."
+        },
+        "equipment_hardware_and_physical_asset_return_log": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Inventory of laptops, test devices, security tokens, and field equipment inspected and returned."
+        }
+      },
+      "required": [
+        "resource_release_scope_and_demobilization_schedule",
+        "equipment_hardware_and_physical_asset_return_log"
+      ]
+    },
+    "security_deprovisioning_financial_closure": {
+      "type": "object",
+      "properties": {
+        "it_access_revocation_and_account_deprovisioning": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Revocation of VPN credentials, code repository commit access, cloud IAM roles, and facility badge access."
+        },
+        "financial_cost_center_closure_and_invoice_clearance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reconciliation of expense reports, settlement of pending vendor invoices, and freezing project cost centers."
+        },
+        "hr_and_functional_manager_demobilization_signoff": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Joint sign-off between Project Manager, HR, and Functional Manager releasing resource obligations."
+        }
+      },
+      "required": [
+        "it_access_revocation_and_account_deprovisioning",
+        "financial_cost_center_closure_and_invoice_clearance",
+        "hr_and_functional_manager_demobilization_signoff"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "resource_demobilization_asset_clearance",
+    "security_deprovisioning_financial_closure"
+  ]
+}

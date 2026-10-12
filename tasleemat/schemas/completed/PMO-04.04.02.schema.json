@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.04.02.schema.json",
+  "title": "Completed COST ESTIMATES Data Contract",
+  "description": "Additive structural schema validating completed COST ESTIMATES artifact data payloads (PMO-04.04.02).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.04.02"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "activity_and_work_package_cost_breakdown": {
+      "type": "object",
+      "properties": {
+        "activity_identifier_and_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique activity code and concise work summary for each estimated item."
+        },
+        "direct_labor_cost_estimate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimated direct staffing expenses calculated from effort hours and labor rates."
+        },
+        "materials_and_equipment_cost_estimate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Estimated costs for hardware, raw materials, software licensing, and equipment."
+        },
+        "total_base_cost_estimate": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Consolidated base financial estimate prior to reserve calculations."
+        }
+      },
+      "required": [
+        "activity_identifier_and_description",
+        "direct_labor_cost_estimate",
+        "materials_and_equipment_cost_estimate",
+        "total_base_cost_estimate"
+      ]
+    },
+    "resource_cost_rates_and_basis_of_estimates": {
+      "type": "object",
+      "properties": {
+        "labor_rate_categories_and_rate_cards": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Standard billing rate categories, consultant day-rates, and internal unit costs."
+        },
+        "historical_data_and_estimating_assumptions": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Benchmark data, vendor quotation references, and key assumptions applied."
+        }
+      },
+      "required": [
+        "labor_rate_categories_and_rate_cards",
+        "historical_data_and_estimating_assumptions"
+      ]
+    },
+    "contingency_and_management_reserves": {
+      "type": "object",
+      "properties": {
+        "contingency_reserve_allocation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated risk contingency reserve allocated for identified known-unknown risks."
+        },
+        "total_activity_cost_with_contingency": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Final baseline cost figure inclusive of contingency reserves for budgeting."
+        }
+      },
+      "required": [
+        "contingency_reserve_allocation",
+        "total_activity_cost_with_contingency"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "activity_and_work_package_cost_breakdown",
+    "resource_cost_rates_and_basis_of_estimates",
+    "contingency_and_management_reserves"
+  ]
+}

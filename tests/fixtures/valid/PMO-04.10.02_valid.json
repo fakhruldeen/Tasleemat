@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.10.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-10-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "stakeholder_classification_engagement_gap": {
+    "stakeholder_identity_and_project_role": "Substantive completed details for Stakeholder Identity And Project Role.",
+    "current_versus_desired_engagement_level": "Substantive completed details for Current Versus Desired Engagement Level.",
+    "engagement_gap_and_risk_impact_analysis": "Substantive completed details for Engagement Gap And Risk Impact Analysis."
+  },
+  "action_strategy_monitoring_feedback": {
+    "targeted_engagement_strategy_and_action_plan": "Substantive completed details for Targeted Engagement Strategy And Action Plan.",
+    "monitoring_cadence_and_feedback_indicators": "Substantive completed details for Monitoring Cadence And Feedback Indicators."
+  }
+}

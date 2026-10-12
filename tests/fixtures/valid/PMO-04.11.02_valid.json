@@ -1,0 +1,19 @@
+{
+  "artifact_id": "PMO-04.11.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-11-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "training_activities": {
+    "target_audience": "Substantive completed details for Target Audience.",
+    "training_module": "Substantive completed details for Training Module.",
+    "delivery_method": "Substantive completed details for Delivery Method.",
+    "target_date": "Substantive completed details for Target Date.",
+    "completion_status": "Substantive completed details for Completion Status."
+  }
+}

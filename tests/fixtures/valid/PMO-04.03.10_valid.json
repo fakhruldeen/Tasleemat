@@ -1,0 +1,46 @@
+{
+  "artifact_id": "PMO-04.03.10",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-10",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "sprint_frame": {
+    "sprint_goal": "Substantive completed details for Sprint Goal.",
+    "sprint_window": "Substantive completed details for Sprint Window.",
+    "capacity_basis": "Substantive completed details for Capacity Basis.",
+    "carry_over_from_the_previous_sprint": "Substantive completed details for Carry Over From The Previous Sprint."
+  },
+  "committed_scope": {
+    "story_id": "Substantive completed details for Story Id.",
+    "story_title": "Substantive completed details for Story Title.",
+    "story_points": "Substantive completed details for Story Points.",
+    "priority": "Substantive completed details for Priority.",
+    "status": "Substantive completed details for Status.",
+    "acceptance_criteria": "Substantive completed details for Acceptance Criteria.",
+    "verified_by": "Substantive completed details for Verified By.",
+    "reason_added": "Substantive completed details for Reason Added.",
+    "requested_by": "Substantive completed details for Requested By.",
+    "effect_on_sprint": "Substantive completed details for Effect On Sprint."
+  },
+  "team_assignment": {
+    "team_member": "Substantive completed details for Team Member.",
+    "role": "Substantive completed details for Role.",
+    "assigned_stories": "Substantive completed details for Assigned Stories.",
+    "available_capacity": "Substantive completed details for Available Capacity.",
+    "skill_and_capacity_gaps": "Substantive completed details for Skill And Capacity Gaps.",
+    "dependencies_outside_the_team": "Substantive completed details for Dependencies Outside The Team."
+  },
+  "risks_to_the_sprint": {
+    "risk": "Substantive completed details for Risk.",
+    "trigger": "Substantive completed details for Trigger.",
+    "likelihood": "Substantive completed details for Likelihood.",
+    "impact": "Substantive completed details for Impact.",
+    "response": "Substantive completed details for Response.",
+    "contingency": "Substantive completed details for Contingency."
+  }
+}

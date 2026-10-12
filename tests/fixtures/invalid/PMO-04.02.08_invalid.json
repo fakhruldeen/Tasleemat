@@ -1,0 +1,23 @@
+{
+  "artifact_id": "PMO-04.02.08",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-02-08",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "backlog": {
+    "id": "",
+    "summary_description": "",
+    "priority": "",
+    "story": "",
+    "status": "",
+    "story_points": "",
+    "target_sprint_or_release": "",
+    "user_type": "",
+    "category": ""
+  }
+}

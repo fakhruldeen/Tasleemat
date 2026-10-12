@@ -1,0 +1,67 @@
+{
+  "artifact_id": "PMO-00.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-00-02",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "program_purpose_and_rationale": {
+    "program_purpose": "",
+    "business_driver_and_strategic_alignment": "",
+    "problem_or_opportunity_statement": "",
+    "consequence_of_not_proceeding": "",
+    "program_vision_statement": ""
+  },
+  "program_objectives": {
+    "id": "",
+    "objective": "",
+    "measure": "",
+    "target_date": "",
+    "owner": "",
+    "status": ""
+  },
+  "component_projects_and_operations": {
+    "component_id": "",
+    "component_name": "",
+    "objective_linkage": "",
+    "status": "",
+    "owner": ""
+  },
+  "program_benefits": {
+    "benefit_id": "",
+    "benefit": "",
+    "category": "",
+    "beneficiary": "",
+    "realization_mechanism": "",
+    "realization_date": ""
+  },
+  "program_manager_authority_and_governance": {
+    "program_manager_authority_statement": "",
+    "authority_retained_by_the_sponsor": "",
+    "program_governance_forum": "",
+    "reporting_cadence_and_audience": "",
+    "escalation_path": "",
+    "funding_position": "",
+    "decision_type": "",
+    "authority_level": "",
+    "decision_escalation_path": "",
+    "limits_or_conditions": ""
+  },
+  "risks_and_assumptions": {
+    "id": "",
+    "type": "",
+    "description": "",
+    "impact_on_program": "",
+    "owner": "",
+    "review_date": ""
+  },
+  "response_to_objective_failure": {
+    "defined_response": "",
+    "decision_authority": "",
+    "trigger_for_reassessment": ""
+  }
+}

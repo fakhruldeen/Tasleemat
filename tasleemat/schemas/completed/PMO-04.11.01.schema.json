@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.11.01.schema.json",
+  "title": "Completed OCM Strategy and Plan Data Contract",
+  "description": "Additive structural schema validating completed OCM Strategy and Plan artifact data payloads (PMO-04.11.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.11.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "change_strategy_and_impact": {
+      "type": "object",
+      "properties": {
+        "change_vision": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Why the organizational change is necessary and the future state it creates. It articulates the business need for people to change how they work, the compelling reasons to transition, and the tangible outcomes the organization will realize when adoption is achieved."
+        },
+        "stakeholder_impact_analysis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How different stakeholder groups, departments, and roles will be affected by the change. Identifies the degree of disruption across processes, systems, organizational structures, and daily workloads so tailored support can be provided."
+        },
+        "sponsorship_strategy": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How project sponsors, executive leaders, and change champions will visibly advocate, lead, and resource the change. Details their active commitments, coalitions across business units, and direct engagement with impacted teams."
+        }
+      },
+      "required": [
+        "change_vision",
+        "stakeholder_impact_analysis",
+        "sponsorship_strategy"
+      ]
+    },
+    "enablement_and_adoption": {
+      "type": "object",
+      "properties": {
+        "communication_strategy": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The channels, key messages, frequency, and two-way feedback loops used to keep stakeholders informed and engaged throughout the transition. Ensures timely delivery of transparent information and addresses evolving concerns."
+        },
+        "resistance_management": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Proactive identification of likely sources of resistance, underlying root causes, and specific interventions to mitigate pushback. Establishes supportive pathways to help teams navigate transition anxiety and adopt new practices."
+        },
+        "readiness_and_reinforcement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The criteria, checkpoints, and mechanisms to measure organizational readiness before go-live, and the reinforcement strategies (recognition, ongoing coaching, audits) to ensure adopted behaviors are sustained long-term."
+        }
+      },
+      "required": [
+        "communication_strategy",
+        "resistance_management",
+        "readiness_and_reinforcement"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "change_strategy_and_impact",
+    "enablement_and_adoption"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "artifact_id": "PMO-06.13",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-13",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "executive_health_baseline_indicators": {
+    "executive_summary_and_overall_health_rag": "Substantive completed details for Executive Summary And Overall Health Rag.",
+    "baseline_variance_summary_schedule_cost_scope": "Substantive completed details for Baseline Variance Summary Schedule Cost Scope."
+  },
+  "strategic_milestones_resource_health": {
+    "key_milestone_roadmap_and_forecast_dates": "Substantive completed details for Key Milestone Roadmap And Forecast Dates."
+  },
+  "risks_decisions_leadership_actions": {
+    "top_three_strategic_risks_and_mitigations": "Substantive completed details for Top Three Strategic Risks And Mitigations.",
+    "required_steering_committee_decisions_and_guidance": "Substantive completed details for Required Steering Committee Decisions And Guidance."
+  }
+}

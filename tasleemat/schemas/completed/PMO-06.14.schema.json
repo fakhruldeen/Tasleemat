@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-06.14.schema.json",
+  "title": "Completed MILESTONE TREND ANALYSIS AND SLIP CHART Data Contract",
+  "description": "Additive structural schema validating completed MILESTONE TREND ANALYSIS AND SLIP CHART artifact data payloads (PMO-06.14).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-06.14"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "milestone_schedule_historical_tracking": {
+      "type": "object",
+      "properties": {
+        "milestone_identifier_and_baseline_target_date": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Milestone code, deliverable name, and original approved baseline completion date."
+        },
+        "historical_forecast_trend_data_points": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Bi-weekly or monthly sequential forecasts tracking milestone date movements over time."
+        }
+      },
+      "required": [
+        "milestone_identifier_and_baseline_target_date",
+        "historical_forecast_trend_data_points"
+      ]
+    },
+    "slip_analysis_root_cause_diagnosis": {
+      "type": "object",
+      "properties": {
+        "current_variance_and_slip_days_calculated": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Net difference in working days between current forecast and baseline date."
+        },
+        "root_cause_of_schedule_drift_and_dependencies": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Underlying drivers (supplier delay, scope change, technical hurdles) causing milestone slippage."
+        }
+      },
+      "required": [
+        "current_variance_and_slip_days_calculated",
+        "root_cause_of_schedule_drift_and_dependencies"
+      ]
+    },
+    "corrective_recovery_path_stabilization": {
+      "type": "object",
+      "properties": {
+        "schedule_recovery_actions_and_target_stabilization": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Crashing, fast-tracking, or resource reallocations committed to recover milestone timing."
+        }
+      },
+      "required": [
+        "schedule_recovery_actions_and_target_stabilization"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "milestone_schedule_historical_tracking",
+    "slip_analysis_root_cause_diagnosis",
+    "corrective_recovery_path_stabilization"
+  ]
+}

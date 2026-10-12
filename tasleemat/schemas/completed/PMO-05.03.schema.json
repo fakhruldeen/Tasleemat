@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-05.03.schema.json",
+  "title": "Completed CHANGE REQUEST Data Contract",
+  "description": "Additive structural schema validating completed CHANGE REQUEST artifact data payloads (PMO-05.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-05.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "requestor_information": {
+      "type": "object",
+      "properties": {
+        "requestor_name_and_position": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The name and organizational role or position of the person submitting the change request."
+        }
+      },
+      "required": [
+        "requestor_name_and_position"
+      ]
+    },
+    "change_classification": {
+      "type": "object",
+      "properties": {
+        "change_category": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific project dimension affected (e.g., Scope, Schedule, Cost, Quality, Resource)."
+        },
+        "change_type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Indicates whether the change is mandatory (legal/compliance) or discretionary."
+        }
+      },
+      "required": [
+        "change_category",
+        "change_type"
+      ]
+    },
+    "change_details": {
+      "type": "object",
+      "properties": {
+        "description_of_change": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Comprehensive narrative detailing the requested modification or enhancement."
+        },
+        "justification_for_proposed_change": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The business driver, operational trigger, or rationale justifying the change."
+        },
+        "implications_of_not_making_the_change": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Risks, costs, operational penalties, or missed opportunities if the change is rejected."
+        }
+      },
+      "required": [
+        "description_of_change",
+        "justification_for_proposed_change",
+        "implications_of_not_making_the_change"
+      ]
+    },
+    "impacts_of_change": {
+      "type": "object",
+      "properties": {
+        "impacts_of_change": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed assessment of impacts across scope, schedule, budget, risks, and contracts."
+        }
+      },
+      "required": [
+        "impacts_of_change"
+      ]
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Additional context, dependencies, or evaluation notes."
+        }
+      },
+      "required": [
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "requestor_information",
+    "change_classification",
+    "change_details",
+    "impacts_of_change",
+    "comments"
+  ]
+}

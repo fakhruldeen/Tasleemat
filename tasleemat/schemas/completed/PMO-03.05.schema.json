@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-03.05.schema.json",
+  "title": "Completed STAKEHOLDER ANALYSIS Data Contract",
+  "description": "Additive structural schema validating completed STAKEHOLDER ANALYSIS artifact data payloads (PMO-03.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-03.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "stakeholder_analysis_entries": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier linking back to the Stakeholder Register (e.g., SH-01)."
+        },
+        "name_or_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The name or role of the stakeholder being analyzed."
+        },
+        "interest": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The level of interest the stakeholder has in project outcomes (e.g., High, Medium, Low)."
+        },
+        "influence": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The level of power or influence the stakeholder has over the project (e.g., High, Medium, Low)."
+        },
+        "attitude": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The stakeholder's stance towards the project (e.g., Champion, Positive, Neutral, Negative)."
+        }
+      },
+      "required": [
+        "id",
+        "name_or_role",
+        "interest",
+        "influence",
+        "attitude"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "stakeholder_analysis_entries"
+  ]
+}

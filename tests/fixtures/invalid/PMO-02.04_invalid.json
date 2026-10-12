@@ -1,0 +1,49 @@
+{
+  "artifact_id": "PMO-02.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-02-04",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "not_an_enum"
+  },
+  "use_case_identification": {
+    "use_case_name": "",
+    "business_owner": "",
+    "problem_statement": "",
+    "affected_population": "",
+    "current_workaround": ""
+  },
+  "proposed_solution": {
+    "ai_pattern": "",
+    "solution_description": "",
+    "human_role": "",
+    "scope_boundary": "",
+    "assumptions": ""
+  },
+  "data": {
+    "data_sources": "",
+    "data_category_and_volume": "",
+    "data_quality_status": "",
+    "labelling_requirement": "",
+    "permitted_use_and_access": ""
+  },
+  "value_and_cost": {
+    "value_proposition": "",
+    "value_measurement_method": "",
+    "beneficiaries": "",
+    "build_cost": "",
+    "operating_cost": "",
+    "value_realisation_condition": ""
+  },
+  "risks_controls_and_governance_route": {
+    "key_risks": "",
+    "risk_controls": "",
+    "feasibility_assessment": "",
+    "governance_route": "",
+    "kill_criteria": "",
+    "related_artefacts": ""
+  }
+}

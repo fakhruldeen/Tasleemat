@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.06.03.schema.json",
+  "title": "Completed RESOURCE BREAKDOWN STRUCTURE Data Contract",
+  "description": "Additive structural schema validating completed RESOURCE BREAKDOWN STRUCTURE artifact data payloads (PMO-04.06.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.06.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "resource_breakdown_structure_outline": {
+      "type": "object",
+      "properties": {
+        "rbs_code": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The position of the node in the hierarchy, written as 1, 1.1, 1.1.1 so a reader can reconstruct the tree from the text alone. A node numbered 1.2.1 with no 1.2 above it means a level was skipped."
+        },
+        "resource_node": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What the node names. A first-level node is the project, a second-level node is a resource category such as people or equipment, and a third-level node is an individual resource carrying its quantity. A category node with nothing beneath it leaves the branch empty."
+        }
+      },
+      "required": [
+        "rbs_code",
+        "resource_node"
+      ]
+    },
+    "resource_breakdown_structure_hierarchical_chart": {
+      "type": "object",
+      "properties": {
+        "chart_form": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Which view the chart takes: a mindmap for a single hierarchy, or a flowchart where the nodes carry relationships rather than only parentage. Stated so a reader knows what the diagram is meant to show."
+        },
+        "node_labels": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The node labels, one per line, in the same order as the outline. The chart and the outline must agree: a branch present in one and absent from the other is the defect this section exists to prevent."
+        }
+      },
+      "required": [
+        "chart_form",
+        "node_labels"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "resource_breakdown_structure_outline",
+    "resource_breakdown_structure_hierarchical_chart"
+  ]
+}

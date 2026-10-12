@@ -1,0 +1,25 @@
+{
+  "artifact_id": "PMO-04.03.02",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-03-02",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "schedule_activity_inventory": {
+    "activity_identifier_and_name": "Substantive completed details for Activity Identifier And Name.",
+    "activity_scope_of_work": "Substantive completed details for Activity Scope Of Work.",
+    "planned_iteration_or_release": "Substantive completed details for Planned Iteration Or Release."
+  },
+  "activity_details_and_descriptions": {
+    "activity_execution_method": "Substantive completed details for Activity Execution Method.",
+    "estimated_effort_and_duration_units": "Substantive completed details for Estimated Effort And Duration Units."
+  },
+  "associated_wbs_work_packages": {
+    "parent_wbs_work_package_mapping": "Substantive completed details for Parent Wbs Work Package Mapping.",
+    "activity_completion_deliverable": "Substantive completed details for Activity Completion Deliverable."
+  }
+}

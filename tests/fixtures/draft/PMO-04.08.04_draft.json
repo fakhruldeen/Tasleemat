@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.08.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-08-04",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "matrix_architecture_and_rating_thresholds": {
+    "matrix_grid_dimensions_and_scaling": "Draft notes for Matrix Grid Dimensions And Scaling."
+  },
+  "threat_and_opportunity_scoring_grid": {
+    "threat_evaluation_grid_mapping": "Draft notes for Threat Evaluation Grid Mapping."
+  },
+  "risk_thresholds_and_escalation_rules": {
+    "mandatory_treatment_thresholds": "Draft notes for Mandatory Treatment Thresholds."
+  }
+}

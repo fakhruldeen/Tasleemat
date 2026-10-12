@@ -1,0 +1,42 @@
+{
+  "artifact_id": "PMO-06.04",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06-04",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "variance_analysis_table": {
+    "schedule_planned_result": "Substantive completed details for Schedule Planned Result.",
+    "schedule_actual_result": "Substantive completed details for Schedule Actual Result.",
+    "schedule_variance": "Substantive completed details for Schedule Variance.",
+    "schedule_root_cause": "Substantive completed details for Schedule Root Cause.",
+    "schedule_planned_response": "Substantive completed details for Schedule Planned Response.",
+    "cost_planned_result": "Substantive completed details for Cost Planned Result.",
+    "cost_actual_result": "Substantive completed details for Cost Actual Result.",
+    "cost_variance": "Substantive completed details for Cost Variance.",
+    "cost_root_cause": "Substantive completed details for Cost Root Cause.",
+    "cost_planned_response": "Substantive completed details for Cost Planned Response.",
+    "quality_planned_result": "Substantive completed details for Quality Planned Result.",
+    "quality_actual_result": "Substantive completed details for Quality Actual Result.",
+    "quality_variance": "Substantive completed details for Quality Variance.",
+    "quality_root_cause": "Substantive completed details for Quality Root Cause.",
+    "quality_planned_response": "Substantive completed details for Quality Planned Response.",
+    "scope_planned_result": "Substantive completed details for Scope Planned Result.",
+    "scope_actual_result": "Substantive completed details for Scope Actual Result.",
+    "scope_variance": "Substantive completed details for Scope Variance.",
+    "scope_root_cause": "Substantive completed details for Scope Root Cause.",
+    "scope_planned_response": "Substantive completed details for Scope Planned Response."
+  },
+  "variance_implications_and_escalation": {
+    "implications_of_continued_variance_forecast": "Substantive completed details for Implications Of Continued Variance Forecast.",
+    "escalation_required_y_n": "Substantive completed details for Escalation Required Y N.",
+    "escalation_details": "Substantive completed details for Escalation Details."
+  },
+  "comments": {
+    "comments": "Substantive completed details for Comments."
+  }
+}

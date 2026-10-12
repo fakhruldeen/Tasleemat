@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.03.06.schema.json",
+  "title": "Completed DURATION ESTIMATES Data Contract",
+  "description": "Additive structural schema validating completed DURATION ESTIMATES artifact data payloads (PMO-04.03.06).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.03.06"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_code": {
+          "type": "string"
+        },
+        "date_prepared": {
+          "type": "string",
+          "format": "date"
+        },
+        "project_manager": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "baselined",
+            "in_review",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "project_name",
+        "date_prepared",
+        "project_manager",
+        "prepared_by"
+      ]
+    },
+    "activity_duration_estimates_table": {
+      "type": "object",
+      "properties": {
+        "activity_identifier_and_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The activity code and concise work summary for each estimated activity."
+        },
+        "estimation_method_applied": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific technique used (analogous, parametric, three-point, or bottom-up)."
+        },
+        "estimated_effort_hours_and_assigned_resources": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Total calculated person-hours of effort and assigned resource quantities."
+        },
+        "estimated_duration": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated working duration in work days or weeks required to complete the activity."
+        }
+      },
+      "required": [
+        "activity_identifier_and_description",
+        "estimation_method_applied",
+        "estimated_effort_hours_and_assigned_resources",
+        "estimated_duration"
+      ]
+    },
+    "basis_of_estimates_and_assumptions": {
+      "type": "object",
+      "properties": {
+        "historical_data_and_productivity_rates": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Empirical reference data, productivity metrics, and historical benchmarks used."
+        },
+        "key_estimating_assumptions": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Foundational assumptions regarding resource availability, skill proficiencies, and work shifts."
+        }
+      },
+      "required": [
+        "historical_data_and_productivity_rates",
+        "key_estimating_assumptions"
+      ]
+    },
+    "contingency_and_reserve_analysis": {
+      "type": "object",
+      "properties": {
+        "schedule_contingency_reserve": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Calculated contingency buffer allocated to accommodate identified activity risks."
+        },
+        "total_activity_duration_with_contingency": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Final baseline duration inclusive of contingency buffer used in the schedule model."
+        }
+      },
+      "required": [
+        "schedule_contingency_reserve",
+        "total_activity_duration_with_contingency"
+      ]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "activity_duration_estimates_table",
+    "basis_of_estimates_and_assumptions",
+    "contingency_and_reserve_analysis"
+  ]
+}

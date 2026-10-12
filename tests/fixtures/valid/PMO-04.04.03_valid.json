@@ -1,0 +1,30 @@
+{
+  "artifact_id": "PMO-04.04.03",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-04-04-03",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "PMO Governance Directorate",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "labor_and_staffing_cost_calculations": {
+    "role_title_and_headcount": "Substantive completed details for Role Title And Headcount.",
+    "hours_allocation_and_hourly_rate": "Substantive completed details for Hours Allocation And Hourly Rate.",
+    "total_calculated_labor_cost": "Substantive completed details for Total Calculated Labor Cost."
+  },
+  "material_and_equipment_cost_calculations": {
+    "material_or_equipment_item_description": "Substantive completed details for Material Or Equipment Item Description.",
+    "unit_quantity_and_unit_purchase_price": "Substantive completed details for Unit Quantity And Unit Purchase Price.",
+    "total_calculated_materials_cost": "Substantive completed details for Total Calculated Materials Cost."
+  },
+  "subcontractor_and_vendor_cost_calculations": {
+    "contracted_service_or_work_package": "Substantive completed details for Contracted Service Or Work Package.",
+    "vendor_pricing_model_and_contract_sum": "Substantive completed details for Vendor Pricing Model And Contract Sum."
+  },
+  "consolidated_cost_estimate_reconciliation": {
+    "grand_total_base_estimate": "Substantive completed details for Grand Total Base Estimate.",
+    "worksheet_verification_and_audit_sign_off": "Substantive completed details for Worksheet Verification And Audit Sign Off."
+  }
+}

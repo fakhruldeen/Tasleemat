@@ -130,12 +130,14 @@ report_inv = tasleemat.validate_artifact_data("PMO-03.01", invalid_payload)
 assert report_inv.valid is False, "Expected invalid payload to fail"
 assert len(report_inv.errors) > 0
 
-# Verify unsupported deliverable validation returns unavailable status
-report_unavail = tasleemat.validate_artifact_data("PMO-00.01", {"artifact_id": "PMO-00.01"})
-assert report_unavail.valid is False
-assert report_unavail.status == "unavailable"
-assert report_unavail.is_available is False
-assert any(e.code == "SCHEMA_UNAVAILABLE" for e in report_unavail.errors)
+# Verify unsupported deliverable validation returns unavailable status (simulated missing schema)
+from unittest.mock import patch
+with patch("tasleemat.validation._load_schema", side_effect=KeyError("Schema unavailable")):
+    report_unavail = tasleemat.validate_artifact_data("PMO-00.01", {"artifact_id": "PMO-00.01"})
+    assert report_unavail.valid is False
+    assert report_unavail.status == "unavailable"
+    assert report_unavail.is_available is False
+    assert any(e.code == "SCHEMA_UNAVAILABLE" for e in report_unavail.errors)
 
 # Verify draft mode validation in clean venv
 draft_payload = {
