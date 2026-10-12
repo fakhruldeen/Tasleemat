@@ -17,6 +17,7 @@ type: Overview
 
 <p align="center">
   <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.4.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
+  <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_MCP_Server-Standard_Protocol-7c3aed?style=for-the-badge" alt="MCP Server"></a>
   <a href="https://fakhr.me/Tasleemat/"><img src="https://img.shields.io/badge/🌐_Interactive_Portal-Live_Demo-006a61?style=for-the-badge" alt="Live Portal"></a>
   <a href="https://fakhr.me/Tasleemat/catalog/en/index.html"><img src="https://img.shields.io/badge/📋_114_Deliverables-Catalog_Explorer-059669?style=for-the-badge" alt="Catalog"></a>
   <a href="README_AR.md"><img src="https://img.shields.io/badge/🇸🇦_النسخة_العربية-Bilingual_RTL-1d4ed8?style=for-the-badge" alt="Arabic Version"></a>
@@ -26,6 +27,7 @@ type: Overview
 
 <p align="center">
   <b><a href="https://fakhr.me/Tasleemat/">🌐 Live Web Portal</a></b> • 
+  <b><a href="docs/MCP_INTEGRATION.md">⚡ MCP Server (Claude/Cursor)</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/catalog/en/index.html">📋 Browse 114 Templates</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/governance.html">🚪 6 Stage-Gates</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/LEXICON.html">📖 Bilingual Lexicon</a></b> • 

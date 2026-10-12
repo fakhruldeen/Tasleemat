@@ -17,6 +17,7 @@ type: Overview
 
 <p align="center">
   <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.4.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
+  <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_خادم_MCP-البروتوكول_المعياري-7c3aed?style=for-the-badge" alt="خادم MCP"></a>
   <a href="https://fakhr.me/Tasleemat/README_AR.html"><img src="https://img.shields.io/badge/🌐_البوابة_التفاعلية-معاينة_حصرية-006a61?style=for-the-badge" alt="البوابة التفاعلية"></a>
   <a href="https://fakhr.me/Tasleemat/catalog/ar/index.html"><img src="https://img.shields.io/badge/📋_114_تسليمة-مستكشف_النماذج-059669?style=for-the-badge" alt="كتالوج النماذج"></a>
   <a href="README.md"><img src="https://img.shields.io/badge/🇬🇧_English_Version-LTR_Portal-1d4ed8?style=for-the-badge" alt="English Version"></a>
@@ -26,6 +27,7 @@ type: Overview
 
 <p align="center">
   <b><a href="https://fakhr.me/Tasleemat/README_AR.html">🌐 البوابة الرقمية التفاعلية</a></b> • 
+  <b><a href="docs/MCP_INTEGRATION.md">⚡ خادم MCP لـ (Claude/Cursor)</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/catalog/ar/index.html">📋 تصفح 114 قالباً</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/governance_ar.html">🚪 6 بوابات عبور حوكمية</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/LEXICON.html">📖 معجم المصطلحات الموحد</a></b> • 

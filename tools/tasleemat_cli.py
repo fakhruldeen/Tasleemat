@@ -531,6 +531,9 @@ def main():
     test_parser = subparsers.add_parser("test", help="Run automated test suite")
     test_parser.add_argument("-v", "--verbose", action="store_true", help="Verbose test output")
 
+    # mcp command
+    mcp_parser = subparsers.add_parser("mcp", help="Start Model Context Protocol (MCP) server over stdio")
+
     # help command
     help_parser = subparsers.add_parser("help", help="Display complete CLI help manual")
     help_parser.add_argument("subcommand", nargs="?", help="Optional subcommand for specific help")
@@ -551,6 +554,9 @@ def main():
         generate_artifact(args)
     elif args.command == "test":
         run_tests(args)
+    elif args.command == "mcp":
+        from tasleemat.mcp.server import main as mcp_main
+        sys.exit(mcp_main())
     else:
         print_comprehensive_help()
 

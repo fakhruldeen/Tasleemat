@@ -20,6 +20,7 @@ setup(
     entry_points={
         "console_scripts": [
             "tasleemat=tasleemat.tools.tasleemat_cli:main",
+            "tasleemat-mcp=tasleemat.mcp.server:main",
         ]
     },
     install_requires=[

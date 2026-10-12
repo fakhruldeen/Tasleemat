@@ -6,18 +6,20 @@
 [![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://github.com/fakhruldeen/Tasleemat)
 [![Deliverables](https://img.shields.io/badge/Deliverables-114%20Bilingual%20Pairs%20(228%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat)
 [![Data Package](https://img.shields.io/badge/Data%20Package-OKF%20Frictionless-orange)](https://github.com/fakhruldeen/Tasleemat/blob/main/datapackage.json)
+[![MCP Server](https://img.shields.io/badge/MCP%20Server-Standard%20Protocol-7c3aed)](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/MCP_INTEGRATION.md)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
 
 **Tasleemat (تسليمات)** is a production-grade, open-source Project Management Office (PMO) operating system and programmatic Python library designed for **Project Managers, PMO Directors, Business Leaders, Data Engineers, and AI Agents**.
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
-With **Version 2.4.0**, Tasleemat delivers a **complete programmatic Python API**, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
+With **Version 2.4.0**, Tasleemat delivers a **complete programmatic Python API**, standard **Model Context Protocol (MCP)** server, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
 
 ---
 
 ## 🌟 What's New in v2.4.0
 
+- ⚡ **Native Model Context Protocol (MCP) Server:** Plug Tasleemat directly into Claude Desktop, Cursor, and OpenCode via `tasleemat-mcp` or `python -m tasleemat.mcp`.
 - 🧩 **First-Class Programmatic Python API:** Access all 114 artifact definitions, bundles, templates, guides, prompts, and schemas directly via `import tasleemat`.
 - 🔍 **Structural Data Validation Engine:** Validate artifact data payloads against formal Draft 2020-12 companion JSON schemas with field-level error reporting (`validate_artifact_data`).
 - 📝 **Strict & Draft Validation Modes:** Support production sign-offs with strict validation while enabling in-progress agent workflows with non-blocking draft warnings.
