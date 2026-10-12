@@ -1,0 +1,22 @@
+{
+  "artifact_id": "PMO-06.01",
+  "metadata": {
+    "project_name": "Core Banking Modernization (Draft Status)",
+    "project_code": "PRJ-2026-04",
+    "report_date": "2026-08-15",
+    "reporting_period": "Sprint 14",
+    "prepared_by": "Scrum Master",
+    "overall_status": "Green"
+  },
+  "schedule_performance": {
+    "status": "Green",
+    "accomplishments_this_period": ["Completed user authentication flow integration."]
+  },
+  "cost_performance": {
+    "status": "Green",
+    "funds_spent_this_period": 125000
+  },
+  "planning_next_period": {
+    "planned_accomplishments": ["Initiate staging environment deployment."]
+  }
+}

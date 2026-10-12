@@ -1,0 +1,50 @@
+{
+  "artifact_id": "PMO-07.03",
+  "metadata": {
+    "project_name": "Core Banking Modernization Phase 1",
+    "project_code": "PRJ-2026-04",
+    "closeout_type": "Phase",
+    "date_prepared": "2026-10-01",
+    "project_manager": "Eng. Tariq Mansour",
+    "prepared_by": "PMO Closeout Lead",
+    "version": "1.0",
+    "status": "closed"
+  },
+  "project_description": {
+    "summary": "Phase 1 successfully delivered the cloud-native open banking integration middleware and API gateway."
+  },
+  "benefits_management": {
+    "how_benefits_achieved": "Onboarding response time dropped to 2.4 minutes verified via production telemetry report TR-402.",
+    "benefits_realisation_status": "Realised; sustained operational tracking transferred to Retail Operations Director."
+  },
+  "performance_summary": [
+    {
+      "area": "Scope",
+      "objectives": "Implement 14 government API endpoints with 99.9% uptime SLA.",
+      "completion_criteria": "Formal user acceptance sign-off by Digital Government Authority audit.",
+      "how_met": "Certificate of Acceptance DGA-APP-2026-88 issued on 2026-09-28."
+    },
+    {
+      "area": "Quality",
+      "objectives": "Zero Critical or High severity defects open at phase gate.",
+      "completion_criteria": "Security penetration testing and static analysis sign-off.",
+      "how_met": "Penetration Test Report SEC-2026-99 closed with 100% remediations confirmed."
+    }
+  ],
+  "variances": [
+    {
+      "measure": "Time",
+      "objectives": "Planned Phase 1 duration of 180 calendar days.",
+      "final_outcome": "Completed in 172 calendar days.",
+      "variance": "-8 days (favourable)",
+      "comments": "Early completion achieved due to parallel sandbox testing in Sprint 4."
+    },
+    {
+      "measure": "Cost",
+      "objectives": "Approved Phase 1 budget baseline: SAR 4,200,000.",
+      "final_outcome": "Actual expenditure: SAR 4,085,000.",
+      "variance": "-SAR 115,000 (favourable)",
+      "comments": "Favourable variance achieved via bulk cloud credit procurement."
+    }
+  ]
+}

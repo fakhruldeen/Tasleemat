@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-07.03.schema.json",
+  "title": "Completed Project or Phase Closeout Data Contract",
+  "description": "Additive structural schema validating completed Project or Phase Closeout artifact data payloads (PMO-07.03).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-07.03"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "closeout_type": {
+          "type": "string",
+          "enum": ["Project", "Phase"]
+        },
+        "date_prepared": { "type": "string", "format": "date" },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "pending_signoff", "closed", "archived"]
+        }
+      },
+      "required": ["project_name", "closeout_type", "date_prepared", "project_manager", "prepared_by"]
+    },
+    "project_description": {
+      "type": "object",
+      "properties": {
+        "summary": { "type": "string", "minLength": 10 }
+      },
+      "required": ["summary"]
+    },
+    "benefits_management": {
+      "type": "object",
+      "properties": {
+        "how_benefits_achieved": { "type": "string", "minLength": 10 },
+        "benefits_realisation_status": { "type": "string", "minLength": 5 }
+      },
+      "required": ["how_benefits_achieved", "benefits_realisation_status"]
+    },
+    "performance_summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "area": {
+            "type": "string",
+            "enum": ["Scope", "Quality", "Other"]
+          },
+          "objectives": { "type": "string", "minLength": 5 },
+          "completion_criteria": { "type": "string", "minLength": 5 },
+          "how_met": { "type": "string", "minLength": 5 }
+        },
+        "required": ["area", "objectives", "completion_criteria", "how_met"]
+      },
+      "minItems": 1
+    },
+    "variances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "measure": {
+            "type": "string",
+            "enum": ["Time", "Cost", "Scope", "Other"]
+          },
+          "objectives": { "type": "string" },
+          "final_outcome": { "type": "string" },
+          "variance": { "type": "string" },
+          "comments": { "type": "string" }
+        },
+        "required": ["measure", "objectives", "final_outcome", "variance"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "project_description",
+    "benefits_management",
+    "performance_summary",
+    "variances"
+  ]
+}

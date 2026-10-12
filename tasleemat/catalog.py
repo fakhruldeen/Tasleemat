@@ -35,6 +35,7 @@ class ArtifactSummary:
     phase_name_ar: str
     tiers: List[str]
     fingerprint: str
+    completed_data_validation: Optional[Dict[str, Any]] = None
 
 
 @dataclass(frozen=True)
@@ -136,17 +137,27 @@ def list_artifacts(
         if phase and item.get("phase_code") != phase and item.get("phase_name_en") != phase:
             continue
         tailoring = item.get("tailoring", {})
-        if tier and tier not in tailoring.get("tiers", []):
+        packs_by_tier = tailoring.get("packs_by_tier", {})
+        item_tiers = tailoring.get("tiers", [])
+
+        if tier and tier not in item_tiers:
             continue
+
         if pack:
-            packs_for_tier = tailoring.get("packs_by_tier", {})
-            matched = False
-            for t_packs in packs_for_tier.values():
-                if pack in t_packs:
-                    matched = True
-                    break
-            if not matched:
-                continue
+            if tier:
+                # Strict intersection: pack must exist under the requested tier
+                tier_packs = packs_by_tier.get(tier, [])
+                if pack not in tier_packs:
+                    continue
+            else:
+                # No specific tier requested: match if pack exists in any tier
+                matched = False
+                for t_packs in packs_by_tier.values():
+                    if pack in t_packs:
+                        matched = True
+                        break
+                if not matched:
+                    continue
 
         results.append(
             ArtifactSummary(
@@ -157,8 +168,9 @@ def list_artifacts(
                 phase_code=item["phase_code"],
                 phase_name_en=item["phase_name_en"],
                 phase_name_ar=item["phase_name_ar"],
-                tiers=tailoring.get("tiers", []),
+                tiers=list(item_tiers),
                 fingerprint=item["fingerprint"],
+                completed_data_validation=copy.deepcopy(item.get("completed_data_validation")),
             )
         )
     return results
@@ -285,9 +297,9 @@ def get_lexicon(category: Optional[str] = None) -> List[Dict[str, Any]]:
     if category:
         norm_cat = category.strip().lower()
         return [
-            f
+            copy.deepcopy(f)
             for f in forms
             if f.get("group", "") and norm_cat in f.get("group", "").lower()
         ]
-    return forms
+    return [copy.deepcopy(f) for f in forms]
 

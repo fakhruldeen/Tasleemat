@@ -1,0 +1,20 @@
+{
+  "artifact_id": "PMO-06.01",
+  "metadata": {
+    "project_name": "Core Banking Modernization",
+    "project_code": "PRJ-2026-04",
+    "report_date": "2026-08-15",
+    "reporting_period": "Sprint 14"
+  },
+  "schedule_performance": {
+    "status": "InvalidStatusColor",
+    "accomplishments_this_period": []
+  },
+  "cost_performance": {
+    "status": "Green",
+    "funds_spent_this_period": -500
+  },
+  "planning_next_period": {
+    "planned_accomplishments": []
+  }
+}

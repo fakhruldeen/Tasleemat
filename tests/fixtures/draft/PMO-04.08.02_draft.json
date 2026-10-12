@@ -1,0 +1,20 @@
+{
+  "artifact_id": "PMO-04.08.02",
+  "metadata": {
+    "project_name": "Infrastructure Migration (Draft Risk Register)",
+    "project_code": "PRJ-INF-01",
+    "last_updated": "2026-03-20"
+  },
+  "risks": [
+    {
+      "risk_id": "RSK-101",
+      "category": "Technical",
+      "event_narrative": "Database replication timeout under burst load conditions.",
+      "probability_score": 3,
+      "impact_score": 4,
+      "response_strategy": "Mitigate",
+      "owner": "Database Administrator",
+      "status": "Identified"
+    }
+  ]
+}

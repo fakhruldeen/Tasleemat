@@ -203,6 +203,99 @@ class TestValidationEngineHardening(unittest.TestCase):
         self.assertIn("MOCK AI GENERATION", res)
         self.assertIn("[MOCK TEST ONLY]", res)
 
+    # ==================== STAGE B TESTS ====================
+
+    def test_unsupported_schema_keyword_detection(self):
+        """Verify pure-Python validator flags unsupported JSON schema assertions."""
+        schema_with_unsupported = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "type": "object",
+            "properties": {
+                "name": {"type": "string", "unsupportedAssertion": True}
+            }
+        }
+        from tasleemat.validation import _validate_with_builtin
+        errors, warnings = _validate_with_builtin({"name": "test"}, schema_with_unsupported, "strict")
+        self.assertTrue(any(e.code == "UNSUPPORTED_SCHEMA_ASSERTION" for e in errors))
+
+    def test_unsupported_artifact_explicit_status(self):
+        """Verify validation of deliverable without companion schema returns status='unavailable'."""
+        report = validate_artifact_data("PMO-00.01", {"some": "data"})
+        self.assertFalse(report.valid)
+        self.assertEqual(report.status, "unavailable")
+        self.assertFalse(report.is_available)
+        self.assertEqual(len(report.errors), 1)
+        self.assertEqual(report.errors[0].code, "SCHEMA_UNAVAILABLE")
+
+    def test_artifact_summary_and_lexicon_cache_isolation(self):
+        """Verify mutating ArtifactSummary.tiers or get_lexicon() does not pollute cache."""
+        from tasleemat.catalog import get_lexicon
+        arts1 = list_artifacts()
+        arts1[0].tiers.append("DIRTY_TIER")
+        arts2 = list_artifacts()
+        self.assertNotIn("DIRTY_TIER", arts2[0].tiers)
+
+        lex1 = get_lexicon()
+        lex1[0]["dirty_key"] = "DIRTY_VALUE"
+        lex2 = get_lexicon()
+        self.assertNotIn("dirty_key", lex2[0])
+
+    def test_combined_tier_and_pack_filter_intersection(self):
+        """Verify list_artifacts with tier and pack enforces strict intersection."""
+        # PMO-02.01 has agile under tier 1, but NOT under tier 2
+        arts = list_artifacts(tier="2", pack="agile")
+        ids = [a.artifact_id for a in arts]
+        self.assertNotIn("PMO-02.01", ids)
+
+    def test_batch_1_pmo_01_01_business_case_validation(self):
+        """Verify PMO-01.01 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-01.01_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-01.01_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-01.01_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-01.01", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+        self.assertTrue(rep_v.is_available)
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-01.01", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-01.01", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
+    def test_batch_1_pmo_07_03_closeout_validation(self):
+        """Verify PMO-07.03 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-07.03_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-07.03_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-07.03_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-07.03", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-07.03", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-07.03", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
 
 if __name__ == "__main__":
     unittest.main()

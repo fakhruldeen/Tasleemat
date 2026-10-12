@@ -39,6 +39,7 @@ class ValidationReport:
     fingerprint: str
     mode: str
     package_version: str = "2.5.0"
+    status: str = "supported"  # "supported" or "unavailable"
     definition_fingerprint: str = ""
     schema_id: str = ""
     schema_dialect: str = ""
@@ -51,9 +52,16 @@ class ValidationReport:
         if not self.fingerprint and self.definition_fingerprint:
             self.fingerprint = self.definition_fingerprint
 
+    @property
+    def is_available(self) -> bool:
+        """Returns True if completed-data schema validation is available for this artifact."""
+        return self.status == "supported"
+
     def to_dict(self) -> Dict[str, Any]:
         return {
             "valid": self.valid,
+            "status": self.status,
+            "is_available": self.is_available,
             "package_version": self.package_version,
             "artifact_id": self.artifact_id,
             "schema_version": self.schema_version,
@@ -87,6 +95,14 @@ def _load_schema(artifact_id: str) -> Dict[str, Any]:
         return json.load(f)
 
 
+# Set of recognized structural keywords supported by the pure-Python validator engine
+SUPPORTED_SCHEMA_KEYWORDS = {
+    "$schema", "$id", "title", "description", "type", "properties",
+    "required", "items", "minItems", "maxItems", "minLength", "maxLength",
+    "pattern", "format", "enum", "const", "minimum", "maximum"
+}
+
+
 def _validate_with_builtin(
     data: Dict[str, Any], schema: Dict[str, Any], mode: str
 ) -> tuple[list[ValidationError], list[str]]:
@@ -95,6 +111,19 @@ def _validate_with_builtin(
     warnings: list[str] = []
 
     def check_node(val: Any, rule: Dict[str, Any], path: str):
+        # Verify rule does not rely on unsupported schema assertions
+        unsupported = set(rule.keys()) - SUPPORTED_SCHEMA_KEYWORDS
+        if unsupported:
+            for kw in sorted(list(unsupported)):
+                errors.append(
+                    ValidationError(
+                        code="UNSUPPORTED_SCHEMA_ASSERTION",
+                        message=f"Schema keyword '{kw}' at {path or '/'} is not supported by built-in validator.",
+                        field_path=path or "/",
+                        schema_rule=f"keyword:{kw}",
+                    )
+                )
+
         expected_type = rule.get("type")
         if expected_type == "object":
             if not isinstance(val, dict):
@@ -314,8 +343,12 @@ def validate_artifact_data(
     try:
         art_def = get_artifact_definition(norm_id)
         real_fingerprint = art_def.get("fingerprint", "")
-    except Exception:
+    except KeyError:
+        # Unknown artifact ID
         pass
+    except Exception as exc:
+        # Propagate unreadable or corrupted catalog errors
+        raise RuntimeError(f"Failed to access canonical catalog: {exc}") from exc
 
     # Check payload type
     if not isinstance(data, dict):
@@ -326,6 +359,7 @@ def validate_artifact_data(
             fingerprint=real_fingerprint,
             definition_fingerprint=real_fingerprint,
             package_version=current_pkg_version,
+            status="supported",
             mode=norm_mode,
             errors=[
                 ValidationError(
@@ -341,7 +375,7 @@ def validate_artifact_data(
     # Check companion schema availability
     try:
         schema = _load_schema(norm_id)
-    except KeyError as exc:
+    except KeyError:
         return ValidationReport(
             valid=False,
             artifact_id=norm_id,
@@ -349,11 +383,15 @@ def validate_artifact_data(
             fingerprint=real_fingerprint,
             definition_fingerprint=real_fingerprint,
             package_version=current_pkg_version,
+            status="unavailable",
             mode=norm_mode,
             errors=[
                 ValidationError(
                     code="SCHEMA_UNAVAILABLE",
-                    message=f"Companion completed-data schema not available for artifact '{artifact_id}'.",
+                    message=(
+                        f"Completed-data structural validation is not available for artifact '{artifact_id}'. "
+                        f"No companion schema has been published for this deliverable."
+                    ),
                     field_path="/",
                     schema_rule="schema_existence",
                 )

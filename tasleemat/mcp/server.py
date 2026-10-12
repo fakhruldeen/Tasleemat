@@ -315,6 +315,8 @@ class MCPServer:
                 report = validate_artifact_data(artifact_id, data, mode=mode)
                 report_dict = {
                     "valid": report.valid,
+                    "status": report.status,
+                    "is_available": report.is_available,
                     "mode": report.mode,
                     "artifact_id": report.artifact_id,
                     "package_version": report.package_version,

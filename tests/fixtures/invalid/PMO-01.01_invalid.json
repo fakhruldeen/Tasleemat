@@ -1,0 +1,15 @@
+{
+  "artifact_id": "PMO-01.01",
+  "metadata": {
+    "project_name": "Digital Transformation Initiative",
+    "date_prepared": "invalid-date-format",
+    "business_sponsor": "VP of Customer Experience"
+  },
+  "business_need": {
+    "need_statement": "Short"
+  },
+  "situation_analysis": {
+    "current_state": "Too short"
+  },
+  "options_analysis": []
+}

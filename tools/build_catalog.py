@@ -36,9 +36,11 @@ PHASE_NAMES = {
 }
 
 COMPANION_SCHEMAS = {
+    "PMO-01.01": "schemas/completed/PMO-01.01.schema.json",
     "PMO-03.01": "schemas/completed/PMO-03.01.schema.json",
     "PMO-04.08.02": "schemas/completed/PMO-04.08.02.schema.json",
     "PMO-06.01": "schemas/completed/PMO-06.01.schema.json",
+    "PMO-07.03": "schemas/completed/PMO-07.03.schema.json",
 }
 
 def compute_file_sha256(path: pathlib.Path) -> str:
@@ -126,6 +128,33 @@ def find_asset_bundles():
         # Relative paths
         rel = lambda p: str(p.relative_to(ROOT)) if p else None
 
+        # Generate completed_data_validation metadata
+        schema_rel = COMPANION_SCHEMAS.get(doc_ref)
+        if schema_rel:
+            full_schema_path = ROOT / "tasleemat" / schema_rel
+            schema_fp = compute_file_sha256(full_schema_path) if full_schema_path.exists() else None
+            validation_meta = {
+                "status": "supported",
+                "schema_id": f"https://tasleemat.pmo/{schema_rel}",
+                "schema_path": schema_rel,
+                "schema_dialect": "https://json-schema.org/draft/2020-12/schema",
+                "schema_fingerprint": schema_fp,
+                "supported_modes": ["strict", "draft"],
+                "limitations": [],
+            }
+        else:
+            validation_meta = {
+                "status": "unavailable",
+                "schema_id": None,
+                "schema_path": None,
+                "schema_dialect": None,
+                "schema_fingerprint": None,
+                "supported_modes": [],
+                "limitations": [
+                    "Completed-data structural schema not yet implemented. Use form template and practitioner guide."
+                ],
+            }
+
         entry = {
             "artifact_id": doc_ref,
             "prefix": prefix,
@@ -157,7 +186,8 @@ def find_asset_bundles():
                 "tiers": sorted(applicable_tiers),
                 "packs_by_tier": applicable_packs,
             },
-            "companion_data_schema": COMPANION_SCHEMAS.get(doc_ref),
+            "companion_data_schema": schema_rel,
+            "completed_data_validation": validation_meta,
         }
         artifacts.append(entry)
 
@@ -171,7 +201,7 @@ def build_catalog():
     print(f"Discovered {len(artifacts)} unique artifact definitions.")
 
     catalog_data = {
-        "version": "2.4.2",
+        "version": "2.5.0",
         "description": "Canonical Tasleemat PMO Artifact Registry",
         "generated_from": "datapackage.json & forms/ baseline",
         "total_artifacts": len(artifacts),

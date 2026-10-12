@@ -1,0 +1,46 @@
+{
+  "artifact_id": "PMO-01.01",
+  "metadata": {
+    "project_name": "Digital Transformation Initiative",
+    "proposal_id": "PROP-2026-001",
+    "date_prepared": "2026-03-15",
+    "business_sponsor": "VP of Customer Experience",
+    "lead_analyst": "Dr. Sarah Al-Otaibi",
+    "version": "1.0",
+    "status": "approved"
+  },
+  "business_need": {
+    "need_statement": "The existing legacy core banking systems result in 48-hour customer onboarding delays, limiting retail market expansion.",
+    "why_now": "Regulatory mandates for instant electronic KYC take effect in Q4 2026, posing compliance penalties.",
+    "who_feels_it": "Retail banking applicants experience delays, while branch operations bear manual verification costs.",
+    "cost_of_inaction": "Projected annual revenue loss of SAR 14.5M due to customer attrition to digital-first fintech competitors."
+  },
+  "situation_analysis": {
+    "current_state": "Manual document intake and batch processing via legacy mainframe nodes averaging 48 hours per application.",
+    "future_state_without_project": "Onboarding times increase to 72 hours as application volumes grow by 30% year-on-year.",
+    "root_causes": "Lack of real-time API integrations with government identification registries.",
+    "constraints_and_assumptions": "Assumes regulatory API sandbox access remains stable through Q3 2026."
+  },
+  "options_analysis": [
+    {
+      "option_name": "Option 1: Modernize with Microservices & Open Banking APIs",
+      "description": "Deploy cloud-native API middleware connected to Saudi DGA and Wathq registers.",
+      "benefits": "Reduces onboarding time to under 3 minutes; captures 25,000 additional accounts in year one.",
+      "costs": "SAR 3.8M initial implementation plus SAR 450K annual recurring cloud subscriptions.",
+      "risks": "Integration latency with legacy backend during Phase 1 rollout.",
+      "net_present_value": "SAR 18.2M over 5-year investment period at 8% discount rate."
+    },
+    {
+      "option_name": "Option 2: Do Nothing (Maintain Status Quo)",
+      "description": "Maintain existing manual document verification teams and batch operations.",
+      "benefits": "Zero immediate capital investment.",
+      "costs": "Ongoing operational expenditure scaling at SAR 2.1M annually with overtime.",
+      "risks": "Severe non-compliance fines and irreversible customer churn.",
+      "net_present_value": "Negative SAR 12.0M over 5-year period."
+    }
+  ],
+  "recommendation": {
+    "recommended_option": "Option 1: Modernize with Microservices & Open Banking APIs",
+    "rationale": "Delivers the highest NPV (SAR 18.2M), ensures full regulatory compliance before Q4 2026, and resolves customer pain points."
+  }
+}
