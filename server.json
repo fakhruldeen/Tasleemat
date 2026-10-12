@@ -2,12 +2,12 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.fakhruldeen/tasleemat",
   "description": "Bilingual (EN/AR) PMO Operating System with 114 deliverables & validation.",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "tasleemat",
-      "version": "2.4.2",
+      "version": "2.5.0",
       "transport": {
         "type": "stdio"
       }

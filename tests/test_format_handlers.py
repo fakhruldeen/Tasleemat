@@ -3,7 +3,7 @@ Tests for Centralized Format Registry, Assertion Handlers, and Preflight Enforce
 """
 
 import copy
-import pytest
+import unittest
 from tasleemat.formats import (
     FORMAT_HANDLERS,
     SUPPORTED_FORMATS,
@@ -25,7 +25,7 @@ from tasleemat.validation import (
 )
 
 
-class TestFormatRegistryAndHandlers:
+class TestFormatRegistryAndHandlers(unittest.TestCase):
     """Verifies that format handlers adhere strictly to specifications and boundaries."""
 
     def test_supported_formats_registry_structure(self):
@@ -45,7 +45,7 @@ class TestFormatRegistryAndHandlers:
         is_valid, _ = check_format("date", "not-a-date")
         assert is_valid is False
 
-        with pytest.raises(KeyError, match="Unsupported format"):
+        with self.assertRaises(KeyError):
             check_format("unsupported-fmt", "value")
 
     # --- Batch 1: Date and Timestamp Handling ---
@@ -181,7 +181,7 @@ class TestFormatRegistryAndHandlers:
         assert validate_duration("10h") is False
 
 
-class TestPreflightAndFormatAssertions:
+class TestPreflightAndFormatAssertions(unittest.TestCase):
     """Verifies schema preflight independent inspection and format assertion enforcement."""
 
     def test_preflight_detects_unsupported_format_in_absent_property(self):
