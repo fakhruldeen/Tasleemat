@@ -108,7 +108,51 @@ python3 tools/validate_okf.py
 ---
 
 ## 💡 مزايا اعتماد مخططات JSON في معايير OKF
-
-1. **الاستدعاء المباشر لوكلاء الذكاء الاصطناعي (Function Calling):** تستخدم نماذج الذكاء الاصطناعي الحديثة مخططات JSON بشكل طبيعي لتوليد المخرجات المنسقة دون أخطاء هيكلية.
-2. **شجرة بيانات هرمية ومتكاملة:** يحمل كل حقل خصائص `section` (القسم) و `label` (المسمى) و `guidance` (الإرشادات التفصيلية) و `value` (القيمة المستهدفة).
-3. **التماثل الثنائي الكامل (en / ar-SA):** دعم كامل لاتجاه النص العربي (`rtl`) والترميز الموحد `utf-8` عبر كافة المخططات الـ 204.
+ 
+ 1. **الاستدعاء المباشر لوكلاء الذكاء الاصطناعي (Function Calling):** تستخدم نماذج الذكاء الاصطناعي الحديثة مخططات JSON بشكل طبيعي لتوليد المخرجات المنسقة دون أخطاء هيكلية.
+ 2. **شجرة بيانات هرمية ومتكاملة:** يحمل كل حقل خصائص `section` (القسم) و `label` (المسمى) و `guidance` (الإرشادات التفصيلية) و `value` (القيمة المستهدفة).
+ 3. **التماثل الثنائي الكامل (en / ar-SA):** دعم كامل لاتجاه النص العربي (`rtl`) والترميز الموحد `utf-8` عبر كافة المخططات الـ 228.
+ 
+ ---
+ 
+ ## 🤖 التطبيق العملي لمخططات OKF مع نماذج الذكاء الاصطناعي (LLMs)
+ 
+ ### 1. تعريف الأدوات واستدعاء الدوال الذكية (OpenAI Tools & Anthropic Claude)
+ يتيح تمرير مخططات JSON المعتمدة تقييد استجابة النماذج لتوليد بيانات هيكلية مطابقة بدقة متناهية:
+ 
+ ```python
+ import tasleemat
+ 
+ # 1. استخراج مخطط البيانات المعتمد للتسليمة باللغة العربية
+ schema = tasleemat.get_artifact_asset("PMO-03.01", role="schema", lang="ar")
+ 
+ # 2. تعريف الأداة الذكية لنماذج OpenAI أو Claude
+ pmo_tool = {
+     "name": "generate_project_charter",
+     "description": "توليد ميثاق مشروع رسمي معتمد وفق معايير PMI",
+     "parameters": schema
+ }
+ ```
+ 
+ ### 2. حلقة التحقق والتصحيح الذاتي التلقائي
+ عند قيام النموذج بتوليد بيانات معقدة للمشروع، يمكن ربط التحقق الهيكلي بإعادة التوجيه الذاتي التلقائي:
+ 
+ ```python
+ import tasleemat
+ 
+ def generate_and_validate(llm_client, meeting_notes):
+     # طلب توليد JSON من النموذج
+     raw_payload = llm_client.generate_json(meeting_notes)
+ 
+     # التحقق البرمجي وفق عقد تسليمات الصارم
+     report = tasleemat.validate_artifact_data("PMO-03.01", raw_payload, mode="strict")
+ 
+     if not report.valid:
+         # بناء موجه تصحيحي دقيق يحدد مسارات الحقول غير المطابقة
+         errors_summary = [f"الحقل: {err.field_path} -> {err.message}" for err in report.errors]
+         correction_prompt = "البيانات المولدة تحتوي أخطاء هيكلية:\n" + "\n".join(errors_summary)
+         # إعادة التوجيه ليصحح النموذج خطأه ذاتياً
+         return llm_client.generate_json(correction_prompt)
+ 
+     return raw_payload
+ ```

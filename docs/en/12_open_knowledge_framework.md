@@ -111,4 +111,48 @@ python3 tools/validate_okf.py
 
 1. **AI Agent Tool Calling:** Modern LLMs (Gemini, Claude, GPT-4) consume JSON schemas natively for function calling and structured document generation.
 2. **Hierarchical Field Metadata:** Each field carries explicit `section`, `label`, `guidance`, and target `value` properties.
-3. **Bilingual Symmetry (en / ar-SA):** Preserves bidirectional text orientation flags (`ltr` and `rtl`) and UTF-8 encoding across all 204 schemas.
+3. **Bilingual Symmetry (en / ar-SA):** Preserves bidirectional text orientation flags (`ltr` and `rtl`) and UTF-8 encoding across all 228 schemas.
+
+---
+
+## 🤖 Practical LLM Integration with OKF Schemas
+
+### 1. Function Calling & Tool Definition (OpenAI & Anthropic Claude)
+By passing Tasleemat schemas directly into LLM tool definitions, you constrain model responses to guaranteed structured data:
+
+```python
+import tasleemat
+
+# 1. Fetch schema definition from Tasleemat
+schema = tasleemat.get_artifact_asset("PMO-03.01", role="schema", lang="en")
+
+# 2. Define tool for Claude / OpenAI API
+pmo_tool = {
+    "name": "generate_project_charter",
+    "description": "Generate a formal PMI PMBOK® Project Charter document payload",
+    "input_schema": schema  # Conforms to Draft 2020-12 / OpenAPI
+}
+```
+
+### 2. In-Context Self-Correction Feedback Loop
+When LLMs draft complex project data, schema validation can be coupled with automated retry loops:
+
+```python
+import tasleemat
+
+def generate_and_validate(llm_client, user_notes):
+    # Prompt LLM for structured output
+    raw_payload = llm_client.generate_json(user_notes)
+
+    # Validate against Tasleemat strict companion contract
+    report = tasleemat.validate_artifact_data("PMO-03.01", raw_payload, mode="strict")
+
+    if not report.valid:
+        # Construct surgical feedback prompt with exact JSON pointer paths
+        corrections = [f"Field: {err.field_path} -> {err.message}" for err in report.errors]
+        feedback = f"The generated payload had schema errors:\n" + "\n".join(corrections)
+        # LLM self-corrects based on exact validation errors
+        return llm_client.generate_json(feedback)
+
+    return raw_payload
+```

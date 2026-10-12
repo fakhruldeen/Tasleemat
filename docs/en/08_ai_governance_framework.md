@@ -103,3 +103,19 @@ Deploying an AI model is not the end of the project—it is the beginning of con
 1. **Model Drift Monitoring:** Daily telemetry comparing inference feature distributions against training baselines (PSI / KL divergence).
 2. **Fairness Drift Audits:** Monthly evaluation across demographic slices to detect emerging bias.
 3. **Prompt Version Rollback:** Immediate rollback capability via [`05_09 Prompt Library Log`](../forms/en/05_Executing/05_09_Prompt_Library_Log_Template.md) if unexpected hallucinations occur.
+
+---
+
+## 🤖 Leveraging Generative LLMs for PMO Operations
+
+Tasleemat is structured to serve as the ground-truth standard for **Generative AI PMO assistants**, including **ChatGPT**, **Claude**, and agentic IDEs like **OpenCode** and **Cursor**:
+
+### 1. Zero-Shot & Few-Shot Document Drafting
+Every deliverable bundle includes an engineered system prompt (`*.md`) alongside a human-facing template (`*_Template.md`):
+- **Direct Prompt Ingestion**: Load the prompt into your chat session, attach project notes, and generate compliant documentation in seconds.
+- **Reference Examples as Ground Truth**: The 228 reference examples in `examples/en/` and `examples/ar/` provide high-quality few-shot exemplars with authentic project metrics.
+
+### 2. Guardrails Against Hallucination
+- **Document Control Enforcement**: Standardized document control blocks ensure the LLM explicitly attributes authors, version history, and sign-offs.
+- **Cryptographic Audit Placeholders**: All templates embed `{{Audit_Trail_SHA256_Hash}}` blocks, ensuring AI-generated records can be programmatically attested before gate submission.
+- **JSON Schema Validation**: Use `tasleemat.validate_artifact_data` to ensure AI outputs strictly adhere to formal data types, required keys, and formatting constraints.
