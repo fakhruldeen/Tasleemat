@@ -1184,17 +1184,18 @@
           ]
         }
       },
-      "companion_data_schema": null,
+      "companion_data_schema": "schemas/completed/PMO-04.01.01.schema.json",
       "completed_data_validation": {
-        "status": "unavailable",
-        "schema_id": null,
-        "schema_path": null,
-        "schema_dialect": null,
-        "schema_fingerprint": null,
-        "supported_modes": [],
-        "limitations": [
-          "Completed-data structural schema not yet implemented. Use form template and practitioner guide."
-        ]
+        "status": "supported",
+        "schema_id": "https://tasleemat.pmo/schemas/completed/PMO-04.01.01.schema.json",
+        "schema_path": "schemas/completed/PMO-04.01.01.schema.json",
+        "schema_dialect": "https://json-schema.org/draft/2020-12/schema",
+        "schema_fingerprint": "93ca84ccd1e6cf72498e1acf2bfacfdddf7be3395d88f02261ced888f5ae26b4",
+        "supported_modes": [
+          "strict",
+          "draft"
+        ],
+        "limitations": []
       }
     },
     {
@@ -1526,17 +1527,18 @@
         "tiers": [],
         "packs_by_tier": {}
       },
-      "companion_data_schema": null,
+      "companion_data_schema": "schemas/completed/PMO-04.02.05.schema.json",
       "completed_data_validation": {
-        "status": "unavailable",
-        "schema_id": null,
-        "schema_path": null,
-        "schema_dialect": null,
-        "schema_fingerprint": null,
-        "supported_modes": [],
-        "limitations": [
-          "Completed-data structural schema not yet implemented. Use form template and practitioner guide."
-        ]
+        "status": "supported",
+        "schema_id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.05.schema.json",
+        "schema_path": "schemas/completed/PMO-04.02.05.schema.json",
+        "schema_dialect": "https://json-schema.org/draft/2020-12/schema",
+        "schema_fingerprint": "8ab1a1c6ff9db73a511f251c61d9fd046c9ad4067c7576cf83fb30f8cc2ed03d",
+        "supported_modes": [
+          "strict",
+          "draft"
+        ],
+        "limitations": []
       }
     },
     {
@@ -2218,17 +2220,18 @@
           ]
         }
       },
-      "companion_data_schema": null,
+      "companion_data_schema": "schemas/completed/PMO-04.04.01.schema.json",
       "completed_data_validation": {
-        "status": "unavailable",
-        "schema_id": null,
-        "schema_path": null,
-        "schema_dialect": null,
-        "schema_fingerprint": null,
-        "supported_modes": [],
-        "limitations": [
-          "Completed-data structural schema not yet implemented. Use form template and practitioner guide."
-        ]
+        "status": "supported",
+        "schema_id": "https://tasleemat.pmo/schemas/completed/PMO-04.04.01.schema.json",
+        "schema_path": "schemas/completed/PMO-04.04.01.schema.json",
+        "schema_dialect": "https://json-schema.org/draft/2020-12/schema",
+        "schema_fingerprint": "4860d9122edd99190ffc6b10f3f0a8e295dbd870fd2a64ac0ce1459f7f8ad4bb",
+        "supported_modes": [
+          "strict",
+          "draft"
+        ],
+        "limitations": []
       }
     },
     {

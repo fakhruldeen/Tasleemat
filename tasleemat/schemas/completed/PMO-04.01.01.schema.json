@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.01.01.schema.json",
+  "title": "Completed Project Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Project Management Plan artifact data payloads (PMO-04.01.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.01.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "sponsor": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_revision", "superseded"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "project_manager", "sponsor"]
+    },
+    "project_life_cycle": {
+      "type": "object",
+      "properties": {
+        "life_cycle_description": { "type": "string", "minLength": 10 },
+        "development_approach": {
+          "type": "string",
+          "enum": ["Predictive", "Agile", "Hybrid", "Iterative", "Incremental"]
+        },
+        "phase_gates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "phase_name": { "type": "string", "minLength": 1 },
+              "key_deliverables": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "exit_criteria": { "type": "string", "minLength": 5 }
+            },
+            "required": ["phase_name", "key_deliverables", "exit_criteria"]
+          },
+          "minItems": 1
+        }
+      },
+      "required": ["life_cycle_description", "development_approach", "phase_gates"]
+    },
+    "baselines_summary": {
+      "type": "object",
+      "properties": {
+        "scope_baseline_summary": { "type": "string", "minLength": 10 },
+        "schedule_baseline_summary": { "type": "string", "minLength": 10 },
+        "cost_baseline_summary": { "type": "string", "minLength": 10 }
+      },
+      "required": ["scope_baseline_summary", "schedule_baseline_summary", "cost_baseline_summary"]
+    },
+    "governance_and_reviews": {
+      "type": "object",
+      "properties": {
+        "change_management_process": { "type": "string", "minLength": 10 },
+        "performance_measurement_rules": { "type": "string", "minLength": 10 }
+      },
+      "required": ["change_management_process", "performance_measurement_rules"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "project_life_cycle",
+    "baselines_summary",
+    "governance_and_reviews"
+  ]
+}

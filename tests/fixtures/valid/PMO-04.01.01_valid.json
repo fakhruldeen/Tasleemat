@@ -1,0 +1,45 @@
+{
+  "artifact_id": "PMO-04.01.01",
+  "metadata": {
+    "project_name": "Enterprise ERP Modernization",
+    "project_code": "ERP-2026-X",
+    "date_prepared": "2026-03-15",
+    "project_manager": "Sarah Jenkins, PMP",
+    "sponsor": "Executive VP Operations",
+    "version": "1.0",
+    "status": "baselined"
+  },
+  "project_life_cycle": {
+    "life_cycle_description": "Four-phase hybrid delivery model consisting of Concept, Foundation, Incremental Sprints, and Enterprise Transition.",
+    "development_approach": "Hybrid",
+    "phase_gates": [
+      {
+        "phase_name": "Phase 1 - Foundation & Architecture",
+        "key_deliverables": [
+          "Architecture Blueprint",
+          "Scope Baseline",
+          "Environment Provisioning"
+        ],
+        "exit_criteria": "Architecture Review Board sign-off and core cluster deployment verified."
+      },
+      {
+        "phase_name": "Phase 2 - Iterative Release Build",
+        "key_deliverables": [
+          "Core Financials Module",
+          "Supply Chain Integration",
+          "UAT Test Scenarios"
+        ],
+        "exit_criteria": "Successful end-to-end sandbox dry run and user acceptance sign-off."
+      }
+    ]
+  },
+  "baselines_summary": {
+    "scope_baseline_summary": "Governed by WBS v2.1 encompassing core finance, procurement, and inventory management modules across 12 distribution hubs.",
+    "schedule_baseline_summary": "18-month timeline with critical path through supply chain adapter certification and parallel payroll integration.",
+    "cost_baseline_summary": "Total approved baseline budget of $4.8M USD with 10% management reserve held at steering committee level."
+  },
+  "governance_and_reviews": {
+    "change_management_process": "Formal change control board (CCB) reviews all variance requests exceeding 5 days on critical path or $25,000 cost impact.",
+    "performance_measurement_rules": "Monthly earned value management (EVM) tracking using CPI and SPI thresholds of 0.90 triggering corrective action plans."
+  }
+}

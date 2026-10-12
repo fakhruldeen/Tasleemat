@@ -1,0 +1,43 @@
+{
+  "artifact_id": "PMO-04.04.01",
+  "metadata": {
+    "project_name": "Smart Campus IoT Implementation",
+    "project_code": "IOT-2026-CAMPUS",
+    "date_prepared": "2026-05-01",
+    "cost_manager": "Tariq Al-Mansoor, CCEA",
+    "project_manager": "Fatima Zahra, PMP",
+    "version": "1.0",
+    "status": "baselined"
+  },
+  "methodology_and_units": {
+    "estimating_methodology": "Bottom-up work package estimating combining vendor fixed-price hardware quotes with parametric engineering labor rates.",
+    "currency": "SAR",
+    "units_of_measure": "Hours / Resource-Days",
+    "level_of_precision": "Rounded to nearest 1,000 SAR for capital assets and 100 SAR for consumables."
+  },
+  "control_accounts": {
+    "wbs_integration_approach": "Control accounts mapped directly to Level 3 WBS work packages with monthly cost recording against specific ERP cost centers.",
+    "approval_thresholds": [
+      {
+        "role": "Project Manager",
+        "spending_limit": 50000.0,
+        "currency": "SAR"
+      },
+      {
+        "role": "PMO Director",
+        "spending_limit": 250000.0,
+        "currency": "SAR"
+      },
+      {
+        "role": "Project Steering Committee",
+        "spending_limit": 1000000.0,
+        "currency": "SAR"
+      }
+    ]
+  },
+  "evm_and_thresholds": {
+    "evm_measurement_technique": "Weighted milestones for software delivery and percent complete with physical inspection for hardware installation.",
+    "variance_threshold_percentage": 10.0,
+    "escalation_procedure": "Any cost variance exceeding 10% or cumulative CV exceeding 100,000 SAR triggers mandatory RCA and Steering Committee escalation."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "artifact_id": "PMO-04.04.01",
+  "metadata": {
+    "project_name": "Smart Campus IoT Implementation",
+    "project_code": "IOT-2026-CAMPUS",
+    "date_prepared": "2026-05-01",
+    "cost_manager": "Tariq Al-Mansoor, CCEA",
+    "project_manager": "Fatima Zahra, PMP",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "methodology_and_units": {
+    "estimating_methodology": "Parametric and bottom-up work package estimating.",
+    "currency": "SAR",
+    "units_of_measure": "Hours"
+  },
+  "control_accounts": {
+    "wbs_integration_approach": "Draft control accounts tied to WBS Level 2 deliverable clusters.",
+    "approval_thresholds": []
+  },
+  "evm_and_thresholds": {
+    "evm_measurement_technique": "Draft milestones based on work completion percentages.",
+    "variance_threshold_percentage": 10.0,
+    "escalation_procedure": "Escalation to steering committee on prolonged variances."
+  }
+}

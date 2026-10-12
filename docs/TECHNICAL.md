@@ -96,9 +96,12 @@ df_resources = pd.read_json("datapackage.json")
 In addition to the 114 template schema definitions, Tasleemat provides additive companion completed-data schemas for core lifecycle deliverables:
 - `PMO-01.01` (Business Case — Strategic Justification)
 - `PMO-03.01` (Project Charter — Project Authorization)
-- `PMO-04.08.02` (Risk Register — Risk Assessment)
+- `PMO-04.01.01` (Project Management Plan — Master Integration Plan)
+- `PMO-04.02.05` (Project Scope Statement — Scope Definition & Acceptance)
+- `PMO-04.04.01` (Cost Management Plan — Budget, EVM & Thresholds)
+- `PMO-04.08.02` (Risk Register — Risk Assessment & Response Strategy)
 - `PMO-06.01` (Project Status Report — Operational Monitoring)
-- `PMO-07.03` (Project or Phase Closeout — Project Archival & Benefits Handover)
+- `PMO-07.03` (Project or Phase Closeout — Archival & Benefits Handover)
 
 These schemas validate completed JSON payloads using `validate_artifact_data` or MCP `tasleemat_validate_data` in `strict` or `draft` modes. Unsupported deliverables return `status="unavailable"` with clear error diagnostic codes.
 

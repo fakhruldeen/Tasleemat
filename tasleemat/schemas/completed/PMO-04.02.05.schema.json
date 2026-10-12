@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.02.05.schema.json",
+  "title": "Completed Project Scope Statement Data Contract",
+  "description": "Additive structural schema validating completed Project Scope Statement artifact data payloads (PMO-04.02.05).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.02.05"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "scope_lead": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "prepared_by", "scope_lead"]
+    },
+    "scope_description": {
+      "type": "object",
+      "properties": {
+        "detailed_scope_narrative": { "type": "string", "minLength": 15 },
+        "major_outcomes": { "type": "string", "minLength": 10 }
+      },
+      "required": ["detailed_scope_narrative", "major_outcomes"]
+    },
+    "deliverables": {
+      "type": "object",
+      "properties": {
+        "core_product_deliverables": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "management_deliverables": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["core_product_deliverables"]
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "deliverable": { "type": "string", "minLength": 1 },
+          "criteria": { "type": "string", "minLength": 5 },
+          "approval_authority": { "type": "string", "minLength": 1 }
+        },
+        "required": ["deliverable", "criteria", "approval_authority"]
+      },
+      "minItems": 1
+    },
+    "project_exclusions": {
+      "type": "object",
+      "properties": {
+        "out_of_scope_items": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "operational_boundaries": { "type": "string" }
+      },
+      "required": ["out_of_scope_items"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "scope_description",
+    "deliverables",
+    "acceptance_criteria",
+    "project_exclusions"
+  ]
+}

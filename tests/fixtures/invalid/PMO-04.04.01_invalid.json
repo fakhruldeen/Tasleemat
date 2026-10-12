@@ -1,0 +1,21 @@
+{
+  "artifact_id": "PMO-04.04.01",
+  "metadata": {
+    "project_name": "Smart Campus IoT Implementation",
+    "cost_manager": "Tariq Al-Mansoor",
+    "status": "not_an_approved_status"
+  },
+  "methodology_and_units": {
+    "estimating_methodology": "Brief",
+    "currency": "S"
+  },
+  "control_accounts": {
+    "wbs_integration_approach": "Too short",
+    "approval_thresholds": []
+  },
+  "evm_and_thresholds": {
+    "evm_measurement_technique": "None",
+    "variance_threshold_percentage": 150.0,
+    "escalation_procedure": "None"
+  }
+}

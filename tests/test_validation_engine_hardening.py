@@ -296,6 +296,84 @@ class TestValidationEngineHardening(unittest.TestCase):
         rep_dr = validate_artifact_data("PMO-07.03", dr_data, mode="draft")
         self.assertTrue(rep_dr.valid)
 
+    # ==================== BATCH 2 COMPANION SCHEMAS ====================
+
+    def test_batch_2_pmo_04_01_01_project_management_plan_validation(self):
+        """Verify PMO-04.01.01 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-04.01.01_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-04.01.01_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-04.01.01_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-04.01.01", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+        self.assertTrue(rep_v.is_available)
+        self.assertEqual(rep_v.schema_id, "https://tasleemat.pmo/schemas/completed/PMO-04.01.01.schema.json")
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-04.01.01", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-04.01.01", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
+    def test_batch_2_pmo_04_02_05_scope_statement_validation(self):
+        """Verify PMO-04.02.05 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-04.02.05_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-04.02.05_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-04.02.05_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-04.02.05", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+        self.assertTrue(rep_v.is_available)
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-04.02.05", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-04.02.05", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
+    def test_batch_2_pmo_04_04_01_cost_management_plan_validation(self):
+        """Verify PMO-04.04.01 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-04.04.01_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-04.04.01_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-04.04.01_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-04.04.01", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+        self.assertTrue(rep_v.is_available)
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-04.04.01", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-04.04.01", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
 
 if __name__ == "__main__":
     unittest.main()

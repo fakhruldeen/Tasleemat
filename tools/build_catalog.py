@@ -38,6 +38,9 @@ PHASE_NAMES = {
 COMPANION_SCHEMAS = {
     "PMO-01.01": "schemas/completed/PMO-01.01.schema.json",
     "PMO-03.01": "schemas/completed/PMO-03.01.schema.json",
+    "PMO-04.01.01": "schemas/completed/PMO-04.01.01.schema.json",
+    "PMO-04.02.05": "schemas/completed/PMO-04.02.05.schema.json",
+    "PMO-04.04.01": "schemas/completed/PMO-04.04.01.schema.json",
     "PMO-04.08.02": "schemas/completed/PMO-04.08.02.schema.json",
     "PMO-06.01": "schemas/completed/PMO-06.01.schema.json",
     "PMO-07.03": "schemas/completed/PMO-07.03.schema.json",

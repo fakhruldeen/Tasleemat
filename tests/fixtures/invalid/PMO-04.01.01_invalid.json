@@ -1,0 +1,13 @@
+{
+  "artifact_id": "PMO-04.01.01",
+  "metadata": {
+    "project_name": "Enterprise ERP Modernization",
+    "project_manager": "Sarah Jenkins, PMP",
+    "status": "invalid_status_enum"
+  },
+  "project_life_cycle": {
+    "life_cycle_description": "Short",
+    "development_approach": "NonExistentApproach",
+    "phase_gates": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "artifact_id": "PMO-04.01.01",
+  "metadata": {
+    "project_name": "Enterprise ERP Modernization",
+    "project_code": "ERP-2026-X",
+    "date_prepared": "2026-03-15",
+    "project_manager": "Sarah Jenkins, PMP",
+    "sponsor": "Executive VP Operations",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "project_life_cycle": {
+    "life_cycle_description": "Initial draft of hybrid project life cycle under formulation.",
+    "development_approach": "Hybrid",
+    "phase_gates": []
+  },
+  "baselines_summary": {
+    "scope_baseline_summary": "Draft scope outline focusing on core ERP modules.",
+    "schedule_baseline_summary": "Preliminary target window of 18 months.",
+    "cost_baseline_summary": "Initial indicative budget ceiling of $4.8M USD."
+  },
+  "governance_and_reviews": {
+    "change_management_process": "Preliminary change governance will adhere to corporate PMO thresholds.",
+    "performance_measurement_rules": "Earned value management tracking rules under definition."
+  }
+}

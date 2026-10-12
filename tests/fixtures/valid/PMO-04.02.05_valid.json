@@ -1,0 +1,47 @@
+{
+  "artifact_id": "PMO-04.02.05",
+  "metadata": {
+    "project_name": "Cloud Infrastructure Migration",
+    "project_code": "CLOUD-MIG-01",
+    "date_prepared": "2026-04-10",
+    "prepared_by": "Alex Morgan, Solutions Architect",
+    "scope_lead": "Director of Infrastructure",
+    "version": "1.0",
+    "status": "baselined"
+  },
+  "scope_description": {
+    "detailed_scope_narrative": "Comprehensive migration of legacy on-premise compute and data workloads to sovereign multi-region cloud infrastructure.",
+    "major_outcomes": "Zero-downtime database replication cutover, container orchestration platform rollout, and legacy hardware decommissioning."
+  },
+  "deliverables": {
+    "core_product_deliverables": [
+      "Landing Zone Architecture Specification",
+      "Automated Infrastructure as Code (IaC) Pipelines",
+      "Production Database Migration Scripts",
+      "Post-Cutover Disaster Recovery Runbook"
+    ],
+    "management_deliverables": [
+      "Weekly Cutover Readiness Dashboard",
+      "Stakeholder Communication Plan"
+    ]
+  },
+  "acceptance_criteria": [
+    {
+      "deliverable": "Landing Zone Architecture Specification",
+      "criteria": "CIS Benchmark Level 2 compliance verification and Infosec sign-off.",
+      "approval_authority": "Chief Information Security Officer"
+    },
+    {
+      "deliverable": "Production Database Migration Scripts",
+      "criteria": "Data consistency check 100% matched across source and target schemas within 4-hour cutover window.",
+      "approval_authority": "Lead Database Administrator"
+    }
+  ],
+  "project_exclusions": {
+    "out_of_scope_items": [
+      "Refactoring of end-of-life legacy third-party desktop utilities",
+      "End-user peripheral hardware refreshes"
+    ],
+    "operational_boundaries": "Migration scope terminates at OS and platform tier; application maintenance remains with business unit teams."
+  }
+}

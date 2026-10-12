@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.04.01.schema.json",
+  "title": "Completed Cost Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Cost Management Plan artifact data payloads (PMO-04.04.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.04.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "cost_manager": { "type": "string", "minLength": 1 },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "cost_manager", "project_manager"]
+    },
+    "methodology_and_units": {
+      "type": "object",
+      "properties": {
+        "estimating_methodology": { "type": "string", "minLength": 10 },
+        "currency": { "type": "string", "minLength": 3 },
+        "units_of_measure": { "type": "string", "minLength": 2 },
+        "level_of_precision": { "type": "string" }
+      },
+      "required": ["estimating_methodology", "currency", "units_of_measure"]
+    },
+    "control_accounts": {
+      "type": "object",
+      "properties": {
+        "wbs_integration_approach": { "type": "string", "minLength": 10 },
+        "approval_thresholds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": { "type": "string", "minLength": 1 },
+              "spending_limit": { "type": "number", "minimum": 0 },
+              "currency": { "type": "string" }
+            },
+            "required": ["role", "spending_limit"]
+          },
+          "minItems": 1
+        }
+      },
+      "required": ["wbs_integration_approach", "approval_thresholds"]
+    },
+    "evm_and_thresholds": {
+      "type": "object",
+      "properties": {
+        "evm_measurement_technique": { "type": "string", "minLength": 10 },
+        "variance_threshold_percentage": { "type": "number", "minimum": 0, "maximum": 100 },
+        "escalation_procedure": { "type": "string", "minLength": 10 }
+      },
+      "required": ["evm_measurement_technique", "variance_threshold_percentage", "escalation_procedure"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "methodology_and_units",
+    "control_accounts",
+    "evm_and_thresholds"
+  ]
+}

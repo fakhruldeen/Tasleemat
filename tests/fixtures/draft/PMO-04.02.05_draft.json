@@ -1,0 +1,23 @@
+{
+  "artifact_id": "PMO-04.02.05",
+  "metadata": {
+    "project_name": "Cloud Infrastructure Migration",
+    "project_code": "CLOUD-MIG-01",
+    "date_prepared": "2026-04-10",
+    "prepared_by": "Alex Morgan, Solutions Architect",
+    "scope_lead": "Director of Infrastructure",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "scope_description": {
+    "detailed_scope_narrative": "Comprehensive migration of legacy on-premise compute workloads.",
+    "major_outcomes": "Zero-downtime database replication cutover."
+  },
+  "deliverables": {
+    "core_product_deliverables": []
+  },
+  "acceptance_criteria": [],
+  "project_exclusions": {
+    "out_of_scope_items": []
+  }
+}
