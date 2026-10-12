@@ -12,6 +12,7 @@ Claude Desktop, Cursor, OpenCode, and IDEs with native access to:
 
 import sys
 import json
+import math
 import logging
 import traceback
 from typing import Any, Dict, List, Optional
@@ -497,18 +498,26 @@ class MCPServer:
         else:
             raise ValueError(f"Unknown prompt: {prompt_name}")
 
-    def handle_message(self, request_data: str) -> Optional[str]:
-        """Process a single JSON-RPC 2.0 message string."""
-        if not request_data.strip():
-            return None
-
-        try:
-            req = json.loads(request_data)
-        except json.JSONDecodeError as e:
+    def handle_message(self, request_data: Any) -> Optional[str]:
+        """Process a single JSON-RPC 2.0 message string or dictionary object."""
+        if isinstance(request_data, str):
+            if not request_data.strip():
+                return None
+            try:
+                req = json.loads(request_data)
+            except json.JSONDecodeError as e:
+                return json.dumps({
+                    "jsonrpc": "2.0",
+                    "id": None,
+                    "error": {"code": -32700, "message": f"Parse error: {str(e)}"},
+                })
+        elif isinstance(request_data, dict):
+            req = request_data
+        else:
             return json.dumps({
                 "jsonrpc": "2.0",
                 "id": None,
-                "error": {"code": -32700, "message": f"Parse error: {str(e)}"},
+                "error": {"code": -32600, "message": "Invalid Request: expected a JSON-RPC 2.0 object."},
             })
 
         # Validate that request is a JSON object per JSON-RPC 2.0 single request spec

@@ -465,6 +465,105 @@ class TestMCPServer(unittest.TestCase):
         self.assertTrue(resp_tool_arg_err["result"]["isError"])
         self.assertIn("Error executing", resp_tool_arg_err["result"]["content"][0]["text"])
 
+        # 16. Integral float ID (e.g. 1.0) coerced cleanly to int without NameError
+        raw_float_int_id = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": 1.0,
+            "method": "ping",
+        }))
+        resp_fii = json.loads(raw_float_int_id)
+        self.assertNotIn("error", resp_fii)
+        self.assertEqual(resp_fii["id"], 1)
+        self.assertEqual(resp_fii["result"], {})
+
+        # 17. Fractional float ID (e.g. 1.5) rejected with -32600
+        raw_frac_id = self.server.handle_message(json.dumps({
+            "jsonrpc": "2.0",
+            "id": 1.5,
+            "method": "ping",
+        }))
+        resp_frac = json.loads(raw_frac_id)
+        self.assertEqual(resp_frac["error"]["code"], -32600)
+        self.assertIsNone(resp_frac["id"])
+
+        # 18. Non-finite float IDs (NaN, Infinity) rejected with -32600
+        # In raw JSON string, NaN / Infinity are invalid JSON syntax per RFC 8259, but test via dict handler
+        req_nan = {"jsonrpc": "2.0", "id": float("nan"), "method": "ping"}
+        resp_nan = json.loads(self.server.handle_message(req_nan))
+        self.assertEqual(resp_nan["error"]["code"], -32600)
+        self.assertIsNone(resp_nan["id"])
+
+    def test_stdio_subprocess_float_id_and_survivability(self):
+        """Exercise integral and fractional float IDs over real stdio subprocess and prove server stays alive."""
+        import subprocess
+        import sys
+        from pathlib import Path
+
+        repo_root = Path(__file__).resolve().parent.parent
+        proc = subprocess.Popen(
+            [sys.executable, "-m", "tasleemat.mcp.server"],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            cwd=str(repo_root),
+        )
+        try:
+            # Step 1: Initialize
+            init_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "initialize",
+                "params": {
+                    "protocolVersion": "2024-11-05",
+                    "capabilities": {},
+                    "clientInfo": {"name": "float-test-client", "version": "1.0"},
+                },
+            }) + "\n"
+            proc.stdin.write(init_msg)
+            proc.stdin.flush()
+            init_resp = json.loads(proc.stdout.readline())
+            self.assertEqual(init_resp.get("id"), 1)
+
+            # Step 2: Integral float ID (1.0)
+            float_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 1.0,
+                "method": "ping",
+            }) + "\n"
+            proc.stdin.write(float_msg)
+            proc.stdin.flush()
+            float_resp = json.loads(proc.stdout.readline())
+            self.assertNotIn("error", float_resp)
+            self.assertEqual(float_resp.get("id"), 1)
+
+            # Step 3: Fractional float ID (2.5) rejected with -32600
+            frac_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 2.5,
+                "method": "ping",
+            }) + "\n"
+            proc.stdin.write(frac_msg)
+            proc.stdin.flush()
+            frac_resp = json.loads(proc.stdout.readline())
+            self.assertEqual(frac_resp["error"]["code"], -32600)
+            self.assertIsNone(frac_resp["id"])
+
+            # Step 4: Prove server remains alive and handles subsequent valid request
+            ping_msg = json.dumps({
+                "jsonrpc": "2.0",
+                "id": 99,
+                "method": "ping",
+            }) + "\n"
+            proc.stdin.write(ping_msg)
+            proc.stdin.flush()
+            ping_resp = json.loads(proc.stdout.readline())
+            self.assertEqual(ping_resp.get("id"), 99)
+            self.assertEqual(ping_resp["result"], {})
+        finally:
+            proc.terminate()
+            proc.wait(timeout=5)
+
 
 if __name__ == "__main__":
     unittest.main()

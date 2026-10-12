@@ -366,6 +366,33 @@ def _json_equals(a: Any, b: Any) -> bool:
     return a == b
 
 
+def _check_payload_json_compatibility(val: Any, path: str = "") -> List[ValidationError]:
+    """
+    Recursively check that all payload values are valid JSON tokens per RFC 8259.
+    Specifically, non-finite floats (NaN, Infinity, -Infinity) are rejected anywhere
+    in the payload structure, including undeclared properties, bare arrays, and nested containers.
+    """
+    errors: List[ValidationError] = []
+    if isinstance(val, float) and (math.isnan(val) or math.isinf(val)):
+        errors.append(
+            ValidationError(
+                code="TYPE_MISMATCH",
+                message=f"Non-finite numeric value '{val}' at {path or '/'} is not valid JSON.",
+                field_path=path or "/",
+                schema_rule="type:number",
+            )
+        )
+    elif isinstance(val, dict):
+        for k, child in val.items():
+            child_path = f"{path}/{k}" if path else f"/{k}"
+            errors.extend(_check_payload_json_compatibility(child, child_path))
+    elif isinstance(val, list):
+        for idx, child in enumerate(val):
+            child_path = f"{path}/{idx}" if path else f"/{idx}"
+            errors.extend(_check_payload_json_compatibility(child, child_path))
+    return errors
+
+
 def _validate_with_builtin(
     data: Dict[str, Any], schema: Dict[str, Any], mode: str
 ) -> Tuple[List[ValidationError], List[str]]:
@@ -374,19 +401,13 @@ def _validate_with_builtin(
     errors: List[ValidationError] = list(preflight_schema(schema))
     warnings: List[str] = []
 
-    def check_node(val: Any, rule: Dict[str, Any], path: str):
-        # 0. Payload validity check: Reject non-finite floats (NaN, Infinity) per RFC 8259 JSON spec
-        if isinstance(val, float) and (math.isnan(val) or math.isinf(val)):
-            errors.append(
-                ValidationError(
-                    code="TYPE_MISMATCH",
-                    message=f"Non-finite numeric value '{val}' at {path or '/'} is not valid JSON.",
-                    field_path=path or "/",
-                    schema_rule="type:number",
-                )
-            )
-            return
+    # Whole-payload JSON-compatibility check independent of schema declaration
+    payload_compat_errors = _check_payload_json_compatibility(data, "")
+    if payload_compat_errors:
+        errors.extend(payload_compat_errors)
+        return errors, warnings
 
+    def check_node(val: Any, rule: Dict[str, Any], path: str):
         # 1. Evaluate universal assertions: enum and const across all types
         if "const" in rule:
             const_val = rule["const"]

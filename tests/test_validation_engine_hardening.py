@@ -993,39 +993,83 @@ class TestValidationEngineHardening(unittest.TestCase):
         """Verify arbitrary-size finite integers do not cause float conversion overflow or failure in preflight/runtime."""
         from tasleemat.validation import preflight_schema, _validate_with_builtin
 
-        # 100-digit large integers
-        large_int_min = 10**80
-        large_int_max = 10**85
-        schema_large = {
+        # Genuine overflow-sized integers: 10**400 exceeds IEEE 754 float max (~1.8e308)
+        # In Python, float(10**400) raises OverflowError: int too large to convert to float
+        overflow_int_min = 10**400
+        overflow_int_max = 10**405
+        schema_overflow = {
             "type": "object",
             "properties": {
                 "counter": {
                     "type": "integer",
-                    "minimum": large_int_min,
-                    "maximum": large_int_max,
+                    "minimum": overflow_int_min,
+                    "maximum": overflow_int_max,
                 }
             }
         }
-        # Preflight must pass without math.isinf conversion overflow
-        pre_errs = preflight_schema(schema_large)
-        self.assertEqual(len(pre_errs), 0)
+        # Preflight must pass without math.isinf conversion OverflowError
+        pre_errs_overflow = preflight_schema(schema_overflow)
+        self.assertEqual(len(pre_errs_overflow), 0)
 
         # Value within range
-        val_within = 5 * (10**82)
-        errs_ok, _ = _validate_with_builtin({"counter": val_within}, schema_large, "strict")
+        val_within = 5 * (10**402)
+        errs_ok, _ = _validate_with_builtin({"counter": val_within}, schema_overflow, "strict")
         self.assertEqual(len(errs_ok), 0)
 
         # Value below minimum
-        val_below = 10**79
-        errs_below, _ = _validate_with_builtin({"counter": val_below}, schema_large, "strict")
+        val_below = 10**399
+        errs_below, _ = _validate_with_builtin({"counter": val_below}, schema_overflow, "strict")
         self.assertEqual(len(errs_below), 1)
         self.assertEqual(errs_below[0].code, "MINIMUM_VIOLATION")
 
         # Value above maximum
-        val_above = 10**86
-        errs_above, _ = _validate_with_builtin({"counter": val_above}, schema_large, "strict")
+        val_above = 10**406
+        errs_above, _ = _validate_with_builtin({"counter": val_above}, schema_overflow, "strict")
         self.assertEqual(len(errs_above), 1)
         self.assertEqual(errs_above[0].code, "MAXIMUM_VIOLATION")
+
+    def test_undeclared_property_and_untyped_array_nan_rejection(self):
+        """Verify non-finite values in undeclared properties, bare arrays, and nested structures are rejected."""
+        from tasleemat.validation import _validate_with_builtin
+
+        # 1. Undeclared property containing NaN
+        schema_strict_props = {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string"},
+            },
+        }
+        payload_undeclared_nan = {
+            "name": "Valid Name",
+            "extra": float("nan"),
+        }
+        errs_und, _ = _validate_with_builtin(payload_undeclared_nan, schema_strict_props, "strict")
+        self.assertTrue(any(e.code == "TYPE_MISMATCH" and e.field_path == "/extra" for e in errs_und))
+
+        # 2. Bare array without an items schema containing Infinity
+        schema_bare_array = {
+            "type": "object",
+            "properties": {
+                "tags": {"type": "array"},
+            },
+        }
+        payload_bare_array = {
+            "tags": ["tag1", float("inf"), "tag2"],
+        }
+        errs_arr, _ = _validate_with_builtin(payload_bare_array, schema_bare_array, "strict")
+        self.assertTrue(any(e.code == "TYPE_MISMATCH" and e.field_path == "/tags/1" for e in errs_arr))
+
+        # 3. Deeply nested undeclared structure containing -Infinity
+        payload_nested = {
+            "name": "Nested Example",
+            "deep": {
+                "level1": {
+                    "level2": [1, 2, {"inner": float("-inf")}]
+                }
+            }
+        }
+        errs_nest, _ = _validate_with_builtin(payload_nested, schema_strict_props, "strict")
+        self.assertTrue(any(e.code == "TYPE_MISMATCH" and e.field_path == "/deep/level1/level2/2/inner" for e in errs_nest))
 
 
 if __name__ == "__main__":
