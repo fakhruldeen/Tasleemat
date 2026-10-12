@@ -1,0 +1,24 @@
+{
+  "artifact_id": "PMO-04.05.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-05",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Fakhruldeen Quality Office",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "quality_standards_and_policies": {
+    "organizational_quality_policy": "Draft alignment with corporate ISO 9001 quality framework."
+  },
+  "quality_objectives_and_kpis": {
+    "quality_goals_and_thresholds": "Draft quality containment objectives under team review."
+  },
+  "qa_and_qc_procedures": {
+    "qa_process": "Draft quality assurance inspection workflows."
+  },
+  "quality_roles_and_review_gates": {
+    "roles_and_responsibilities": "Draft quality role definitions assigned to testing squad leads."
+  }
+}

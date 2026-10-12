@@ -1,0 +1,29 @@
+{
+  "artifact_id": "PMO-04.05.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-05",
+    "date_prepared": "2026-02-29",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Fakhruldeen Quality Office",
+    "version": "1.0",
+    "status": "invalid_status"
+  },
+  "quality_standards_and_policies": {
+    "organizational_quality_policy": "ISO",
+    "applicable_industry_standards": "IEEE"
+  },
+  "quality_objectives_and_kpis": {
+    "quality_goals_and_thresholds": "OK",
+    "continuous_improvement_objectives": "Done"
+  },
+  "qa_and_qc_procedures": {
+    "qa_process": "Audit",
+    "qc_testing_protocol": "Test",
+    "defect_management_process": "Fix"
+  },
+  "quality_roles_and_review_gates": {
+    "roles_and_responsibilities": "Lead",
+    "review_gates_and_signoff_criteria": "Gate"
+  }
+}

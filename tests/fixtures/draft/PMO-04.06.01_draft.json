@@ -1,0 +1,27 @@
+{
+  "artifact_id": "PMO-04.06.01",
+  "metadata": {
+    "project_name": "Digital Transformation Core",
+    "project_code": "PRJ-2026-06",
+    "date_prepared": "2026-10-12",
+    "project_manager": "Sarah Jenkins",
+    "prepared_by": "Resource Management PMO",
+    "version": "0.1",
+    "status": "draft"
+  },
+  "resource_identification_and_acquisition": {
+    "identification_strategy": "Draft skill matrix mapping and resource allocation forecast."
+  },
+  "roles_responsibilities_and_authority": {
+    "key_roles_and_competency_profiles": "Draft core staffing competency profiles."
+  },
+  "project_organization_structure": {
+    "org_chart_and_hierarchy": "Draft matrix organizational chart."
+  },
+  "team_development_and_training": {
+    "team_building_initiatives": "Draft team development objectives and training roadmap."
+  },
+  "physical_resource_management": {
+    "equipment_and_material_logistics": "Draft physical tooling and cloud workstation logistics."
+  }
+}

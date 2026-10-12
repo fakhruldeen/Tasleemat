@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.06.01.schema.json",
+  "title": "Completed Resource Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Resource Management Plan artifact data payloads (PMO-04.06.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.06.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "project_manager", "prepared_by"]
+    },
+    "resource_identification_and_acquisition": {
+      "type": "object",
+      "properties": {
+        "identification_strategy": { "type": "string", "minLength": 5 },
+        "acquisition_and_staffing_approach": { "type": "string", "minLength": 5 }
+      },
+      "required": ["identification_strategy", "acquisition_and_staffing_approach"]
+    },
+    "roles_responsibilities_and_authority": {
+      "type": "object",
+      "properties": {
+        "key_roles_and_competency_profiles": { "type": "string", "minLength": 5 },
+        "authority_and_decision_boundaries": { "type": "string", "minLength": 5 }
+      },
+      "required": ["key_roles_and_competency_profiles", "authority_and_decision_boundaries"]
+    },
+    "project_organization_structure": {
+      "type": "object",
+      "properties": {
+        "org_chart_and_hierarchy": { "type": "string", "minLength": 5 },
+        "governance_and_allocation_rules": { "type": "string", "minLength": 5 }
+      },
+      "required": ["org_chart_and_hierarchy", "governance_and_allocation_rules"]
+    },
+    "team_development_and_training": {
+      "type": "object",
+      "properties": {
+        "team_building_initiatives": { "type": "string", "minLength": 5 },
+        "training_and_certifications": { "type": "string", "minLength": 5 }
+      },
+      "required": ["team_building_initiatives", "training_and_certifications"]
+    },
+    "physical_resource_management": {
+      "type": "object",
+      "properties": {
+        "equipment_and_material_logistics": { "type": "string", "minLength": 5 },
+        "demobilization_and_release_plan": { "type": "string", "minLength": 5 }
+      },
+      "required": ["equipment_and_material_logistics", "demobilization_and_release_plan"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "resource_identification_and_acquisition",
+    "roles_responsibilities_and_authority",
+    "project_organization_structure",
+    "team_development_and_training",
+    "physical_resource_management"
+  ]
+}

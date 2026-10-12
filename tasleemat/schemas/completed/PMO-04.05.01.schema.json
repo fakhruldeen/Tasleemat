@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tasleemat.pmo/schemas/completed/PMO-04.05.01.schema.json",
+  "title": "Completed Quality Management Plan Data Contract",
+  "description": "Additive structural schema validating completed Quality Management Plan artifact data payloads (PMO-04.05.01).",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "const": "PMO-04.05.01"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "project_code": { "type": "string" },
+        "date_prepared": { "type": "string", "format": "date" },
+        "project_manager": { "type": "string", "minLength": 1 },
+        "prepared_by": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "baselined", "in_review", "approved"]
+        }
+      },
+      "required": ["project_name", "date_prepared", "project_manager", "prepared_by"]
+    },
+    "quality_standards_and_policies": {
+      "type": "object",
+      "properties": {
+        "organizational_quality_policy": { "type": "string", "minLength": 5 },
+        "applicable_industry_standards": { "type": "string", "minLength": 5 }
+      },
+      "required": ["organizational_quality_policy", "applicable_industry_standards"]
+    },
+    "quality_objectives_and_kpis": {
+      "type": "object",
+      "properties": {
+        "quality_goals_and_thresholds": { "type": "string", "minLength": 5 },
+        "continuous_improvement_objectives": { "type": "string", "minLength": 5 }
+      },
+      "required": ["quality_goals_and_thresholds", "continuous_improvement_objectives"]
+    },
+    "qa_and_qc_procedures": {
+      "type": "object",
+      "properties": {
+        "qa_process": { "type": "string", "minLength": 5 },
+        "qc_testing_protocol": { "type": "string", "minLength": 5 },
+        "defect_management_process": { "type": "string", "minLength": 5 }
+      },
+      "required": ["qa_process", "qc_testing_protocol", "defect_management_process"]
+    },
+    "quality_roles_and_review_gates": {
+      "type": "object",
+      "properties": {
+        "roles_and_responsibilities": { "type": "string", "minLength": 5 },
+        "review_gates_and_signoff_criteria": { "type": "string", "minLength": 5 }
+      },
+      "required": ["roles_and_responsibilities", "review_gates_and_signoff_criteria"]
+    }
+  },
+  "required": [
+    "artifact_id",
+    "metadata",
+    "quality_standards_and_policies",
+    "quality_objectives_and_kpis",
+    "qa_and_qc_procedures",
+    "quality_roles_and_review_gates"
+  ]
+}

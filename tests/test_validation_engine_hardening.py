@@ -452,6 +452,86 @@ class TestValidationEngineHardening(unittest.TestCase):
         rep_dr = validate_artifact_data("PMO-05.01", dr_data, mode="draft")
         self.assertTrue(rep_dr.valid)
 
+    # ==================== BATCH 4 COMPANION SCHEMAS ====================
+
+    def test_batch_4_pmo_04_05_01_quality_management_plan_validation(self):
+        """Verify PMO-04.05.01 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-04.05.01_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-04.05.01_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-04.05.01_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-04.05.01", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+        self.assertTrue(rep_v.is_available)
+        self.assertEqual(rep_v.schema_id, "https://tasleemat.pmo/schemas/completed/PMO-04.05.01.schema.json")
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-04.05.01", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-04.05.01", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
+    def test_batch_4_pmo_04_06_01_resource_management_plan_validation(self):
+        """Verify PMO-04.06.01 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-04.06.01_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-04.06.01_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-04.06.01_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-04.06.01", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+        self.assertTrue(rep_v.is_available)
+        self.assertEqual(rep_v.schema_id, "https://tasleemat.pmo/schemas/completed/PMO-04.06.01.schema.json")
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-04.06.01", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-04.06.01", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
+    def test_batch_4_pmo_04_07_01_communications_management_plan_validation(self):
+        """Verify PMO-04.07.01 valid, invalid, and draft fixture validation."""
+        fixtures_dir = ROOT / "tests" / "fixtures"
+        valid_path = fixtures_dir / "valid" / "PMO-04.07.01_valid.json"
+        invalid_path = fixtures_dir / "invalid" / "PMO-04.07.01_invalid.json"
+        draft_path = fixtures_dir / "draft" / "PMO-04.07.01_draft.json"
+
+        with open(valid_path, "r", encoding="utf-8") as f:
+            v_data = json.load(f)
+        rep_v = validate_artifact_data("PMO-04.07.01", v_data)
+        self.assertTrue(rep_v.valid)
+        self.assertEqual(rep_v.status, "supported")
+        self.assertTrue(rep_v.is_available)
+        self.assertEqual(rep_v.schema_id, "https://tasleemat.pmo/schemas/completed/PMO-04.07.01.schema.json")
+
+        with open(invalid_path, "r", encoding="utf-8") as f:
+            inv_data = json.load(f)
+        rep_inv = validate_artifact_data("PMO-04.07.01", inv_data)
+        self.assertFalse(rep_inv.valid)
+        self.assertGreater(len(rep_inv.errors), 0)
+
+        with open(draft_path, "r", encoding="utf-8") as f:
+            dr_data = json.load(f)
+        rep_dr = validate_artifact_data("PMO-04.07.01", dr_data, mode="draft")
+        self.assertTrue(rep_dr.valid)
+
     # ==================== ADVANCED PREFLIGHT & CONTRACT TESTS ====================
 
     def test_definition_reference_contract(self):
