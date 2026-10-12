@@ -1,5 +1,7 @@
 # 🚀 Tasleemat (تسليمات) — Enterprise Bilingual PMO Operating System & Python SDK
 
+<!-- mcp-name: io.github.fakhruldeen/tasleemat -->
+
 [![PyPI version](https://badge.fury.io/py/tasleemat.svg)](https://pypi.org/project/tasleemat/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/tasleemat.svg)](https://pypi.org/project/tasleemat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)

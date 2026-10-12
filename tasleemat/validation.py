@@ -35,7 +35,7 @@ class ValidationReport:
     schema_version: str
     fingerprint: str
     mode: str
-    package_version: str = "2.4.1"
+    package_version: str = "2.4.2"
     errors: List[ValidationError] = field(default_factory=list)
     warnings: List[str] = field(default_factory=list)
 
@@ -287,11 +287,11 @@ def validate_artifact_data(
 
     # Verify version compatibility if requested
     if definition_version:
-        supported_versions = {"2.4.1", "v2.4.1", "2.4.0", "v2.4.0", "2.3.1", "v2.3.1", schema_id, schema.get("$schema")}
+        supported_versions = {"2.4.2", "v2.4.2", "2.4.1", "v2.4.1", "2.4.0", "v2.4.0", "2.3.1", "v2.3.1", schema_id, schema.get("$schema")}
         if definition_version not in supported_versions and not definition_version.endswith(norm_id):
             return ValidationReport(
                 valid=False,
-                package_version="2.4.1",
+                package_version="2.4.2",
                 artifact_id=norm_id,
                 schema_version=definition_version,
                 fingerprint=schema_id,
@@ -301,7 +301,7 @@ def validate_artifact_data(
                         code="UNSUPPORTED_VERSION",
                         message=(
                             f"Requested definition version '{definition_version}' is not supported "
-                            f"by installed Tasleemat package (v2.4.1)."
+                            f"by installed Tasleemat package (v2.4.2)."
                         ),
                         field_path="/",
                         schema_rule="version_compatibility",

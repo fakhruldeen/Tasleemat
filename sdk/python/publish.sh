@@ -29,10 +29,12 @@ if ! command -v twine &> /dev/null; then
     TWINE_BIN="python3 -m twine"
 fi
 
-echo "Verifying package metadata..."
-$TWINE_BIN check dist/*2.4.1*
+VERSION=$(grep 'version=' setup.py | cut -d'"' -f2)
 
-echo "Uploading v2.4.1 to PyPI..."
-TWINE_USERNAME="__token__" TWINE_PASSWORD="$PYPI_TOKEN" $TWINE_BIN upload dist/*2.4.1* --skip-existing
+echo "Verifying package metadata for v$VERSION..."
+$TWINE_BIN check dist/*$VERSION*
 
-echo "✅ Successfully published Tasleemat v2.4.1 to PyPI!"
+echo "Uploading v$VERSION to PyPI..."
+TWINE_USERNAME="__token__" TWINE_PASSWORD="$PYPI_TOKEN" $TWINE_BIN upload dist/*$VERSION* --skip-existing
+
+echo "✅ Successfully published Tasleemat v$VERSION to PyPI!"

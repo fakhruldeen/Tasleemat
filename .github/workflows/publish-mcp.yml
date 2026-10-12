@@ -26,7 +26,8 @@ jobs:
         run: |
           ./mcp-publisher validate server.json
 
-      - name: Authenticate with GitHub OIDC and Publish
-        run: |
-          ./mcp-publisher login github-oidc
-          ./mcp-publisher publish
+      - name: Authenticate with GitHub OIDC
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish to MCP Registry
+        run: ./mcp-publisher publish
