@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-04.02.05 PROJECT SCOPE STATEMENT | Tasleemat</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/" class="brand-group" aria-label="Tasleemat">
+        <span>📦 Tasleemat</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/" class="nav-link ">Home</a></li>
+<li><a href="/Tasleemat/start/" class="nav-link ">Start Here</a></li>
+<li><a href="/Tasleemat/deliverables/" class="nav-link active">Deliverables</a></li>
+<li><a href="/Tasleemat/guides/" class="nav-link ">Guides & Governance</a></li>
+<li><a href="/Tasleemat/developers/" class="nav-link ">Developers & AI</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/ar/deliverables/PMO-04.02.05/" class="btn-utility" aria-label="Switch Language">
+          🌐 العربية
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">Home</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">Deliverables</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-04.02.05</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-04.02.05</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              Phase 04: Planning
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">PROJECT SCOPE STATEMENT</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">بيان نطاق المشروع</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-04.02.05 template --lang en</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-04.02.05 template --lang en'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            Copy Command
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. Overview & Metadata
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. Template Markdown
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. Practitioner Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. Realistic Example
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. JSON Schema (Draft 2020-12)
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">Deliverable Summary & Governance Boundaries</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Lifecycle Phase Alignment</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>Phase 04:</strong> Planning
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Sizing Tier Requirements</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Validation Contract</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              This deliverable conforms to a strict companion Draft 2020-12 JSON Schema for automated structural and semantic validation.
+            </p>
+            <pre><code>tasleemat validate PMO-04.02.05 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">Template Markdown (Bilingual)</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              Copy Markdown
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Template.npy
+token_count: 598
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.942796+00:00&#x27;
+form_id: PMO-04.02.05
+language: en
+status: approved
+---
+--&gt;
+
+&lt;!-- LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+- Project Scope Description: Provide comprehensive project data for all required fields in this section.
+- Project Deliverables: Provide comprehensive project data for all required fields in this section.
+- Product Acceptance Criteria: Provide comprehensive project data for all required fields in this section.
+- Project Exclusions: Provide comprehensive project data for all required fields in this section.
+- Project Constraints and Assumptions: Provide comprehensive project data for all required fields in this section.
+--&gt;
+
+&lt;h3 align=&quot;right&quot;&gt;{{Company_Name}}&lt;/h3&gt;
+&lt;h2 align=&quot;right&quot;&gt;{{Project_Name}} - {{Project_ID}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;PROJECT SCOPE STATEMENT&lt;/h1&gt;
+
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |
+
+---
+
+## 1. Project Scope Description
+
+**Detailed Project Scope Description:**
+[ Add details... ]
+
+**Major Project Objectives and Outcomes:**
+[ Add details... ]
+
+---
+
+## 2. Project Deliverables
+
+**Core Product Deliverables:**
+[ Add details... ]
+
+**Project Management and Governance Deliverables:**
+[ Add details... ]
+
+---
+
+## 3. Product Acceptance Criteria
+
+**Measurable Acceptance Criteria:**
+[ Add details... ]
+
+**Acceptance Authority and Process:**
+[ Add details... ]
+
+---
+
+## 4. Project Exclusions
+
+**Explicit Out-of-Scope Items:**
+[ Add details... ]
+
+**Boundaries and Excluded Support:**
+[ Add details... ]
+
+---
+
+## 5. Project Constraints and Assumptions
+
+**Identified Project Constraints:**
+[ Add details... ]
+
+**Identified Project Assumptions:**
+[ Add details... ]
+
+---
+
+### Sign-off and Approvals
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :---: | :---: |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Lead Technical Architect** | {{Lead_Architect_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Sponsor / Client** | {{Project_Sponsor_Name}} | _______________________ | [ .... - .... - .... ] |
+---
+
+&lt;div align=&quot;right&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;Electronic Audit Trail: Hash SHA256: {{Audit_Trail_SHA256_Hash}}&lt;/span&gt; &lt;br&gt;
+  &lt;strong&gt;Template:&lt;/strong&gt; PROJECT SCOPE STATEMENT | &lt;strong&gt;Ref:&lt;/strong&gt; PMO-04.02.05 &lt;br&gt;
+  &lt;i&gt;Generated on: {{Current_Timestamp}}, by &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;Tasleemat&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: en
+layout: default
+title: Project Scope Statement
+nav_order: 5
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Guide.npy
+token_count: 773
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.943592+00:00'
+form_id: PMO-04.02.05
+status: approved</p>
+<hr />
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: Project Scope Statement
+
+**Document Reference:** `PMO-04.02.05`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **Project Scope Statement** in alignment with the
+Tasleemat framework.
+
+---
+
+### 1. What?
+A formal detailed narrative establishing the exact boundary and deliverables of the project.
+
+---
+
+### 2. Why?
+Builds shared understanding among stakeholders, prevents scope creep, and guides project team decisions.
+
+---
+
+### 3. When?
+Developed in planning after requirements elicitation, baseline approved prior to major execution.
+
+---
+
+### 4. Who?
+Authored by Project Manager and Business Analyst, signed off by Project Sponsor and Client.
+
+---
+
+### Tailoring Tips
+*   Include vision and boundary statements for agile releases while decomposing detailed user stories in backlogs.
+*   Incorporate strict contractual specs for third-party fixed-price delivery agreements.
+
+---
+
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Stakeholder Requirements
+*   **Optional / Contextual:**
+    *   Product Vision (PMO-03.02)
+    *   Assumption Log (PMO-03.03)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Project Schedule (PMO-04.03.08)
+    *   Cost Estimates (PMO-04.04.02)
+*   **Optional / Contextual:**
+    *   Product Backlog (PMO-04.02.08)
+    *   Quality Metrics (PMO-04.05.02)
+
+---
+
+### 5. How?
+To accurately and professionally complete the **Project Scope Statement**, the responsible party
+must populate the following critical sections based on the project context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Detailed Project Scope Description:** Comprehensive narrative of the project work, characteristics of the end solution, and boundaries.
+*   **Major Project Objectives and Outcomes:** Target business and technical outcomes directly addressed by executing this scope.
+*   **Core Product Deliverables:** The primary end-products, technical systems, or physical deliverables generated by the project.
+*   **Project Management and Governance Deliverables:** Management plans, status reports, audit logs, and compliance documentation delivered.
+*   **Measurable Acceptance Criteria:** Specific, objective, and testable quality conditions required before deliverable formal acceptance.
+*   **Acceptance Authority and Process:** Designated stakeholder authority and formal inspection workflow required for sign-off.
+*   **Explicit Out-of-Scope Items:** Explicitly documented features, services, or activities that are intentionally excluded from project scope.
+*   **Boundaries and Excluded Support:** Operational boundaries clarifying responsibilities not assumed by the project team.
+*   **Identified Project Constraints:** Imposed boundaries including hard deadlines, budget caps, regulatory compliance, and technology limits.
+*   **Identified Project Assumptions:** Critical planning assumptions regarding resource availability, vendor performance, and dependencies.
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_05_Project_Scope_Statement_Example.md](../../../../../examples/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Example.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Example.npy
+token_count: 1353
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.214514+00:00'</p>
+<hr />
+<h1>Project Scope Statement (Reference Example)</h1>
+<blockquote>
+<p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-04.02</code>). All company names, project references, and figures are realistic fictional simulations.</p>
+</blockquote>
+<hr />
+<h3 align="right">Apex Global Solutions</h3>
+<h2 align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
+<h1 align="center">PROJECT SCOPE STATEMENT</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Date Prepared:</strong> 2026-03-15</th>
+<th style="text-align: left;"><strong>Project Manager:</strong> Faisal Al-Harbi, PMP</th>
+<th style="text-align: left;"><strong>Prepared By:</strong> Faisal Al-Harbi, PMP (Senior Project Manager)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1. Project Scope Description</h2>
+<p><strong>Detailed Project Scope Description:</strong>
+The project encompasses the end-to-end implementation and rollout of a unified cloud ERP suite comprising:
+1. Automated Procurement, Inventory Management, and Smart Supply Chain logistics.
+2. Core Financials, General Ledger, Multi-currency Treasury, and Tax Compliance modules.
+3. Human Capital Management (HCM), Payroll automation, and Employee Self-Service portals.
+4. Secure enterprise API integration middleware connecting CRM, BI, and banking gateways.
+5. Real-time executive dashboards and predictive operational analytics engines.</p>
+<p><strong>Major Project Objectives and Outcomes:</strong>
+The project encompasses the end-to-end implementation and rollout of a unified cloud ERP suite comprising:
+1. Automated Procurement, Inventory Management, and Smart Supply Chain logistics.
+2. Core Financials, General Ledger, Multi-currency Treasury, and Tax Compliance modules.
+3. Human Capital Management (HCM), Payroll automation, and Employee Self-Service portals.
+4. Secure enterprise API integration middleware connecting CRM, BI, and banking gateways.
+5. Real-time executive dashboards and predictive operational analytics engines.</p>
+<hr />
+<h2>2. Project Deliverables</h2>
+<p><strong>Core Product Deliverables:</strong>
+Key Project Deliverables:
+* Detailed Solution Architecture &amp; Data Integration Blueprint.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
+* Validated historical master data migration package (99.98% reconciliation rate).
+* Comprehensive training curriculum delivered to 450+ business users and functional admins.
+* User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.</p>
+<p><strong>Project Management and Governance Deliverables:</strong>
+Key Project Deliverables:
+* Detailed Solution Architecture &amp; Data Integration Blueprint.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
+* Validated historical master data migration package (99.98% reconciliation rate).
+* Comprehensive training curriculum delivered to 450+ business users and functional admins.
+* User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.</p>
+<hr />
+<h2>3. Product Acceptance Criteria</h2>
+<p><strong>Measurable Acceptance Criteria:</strong>
+Key Project Deliverables:
+* Detailed Solution Architecture &amp; Data Integration Blueprint.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
+* Validated historical master data migration package (99.98% reconciliation rate).
+* Comprehensive training curriculum delivered to 450+ business users and functional admins.
+* User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.</p>
+<p><strong>Acceptance Authority and Process:</strong>
+Key Project Deliverables:
+* Detailed Solution Architecture &amp; Data Integration Blueprint.
+* Fully provisioned, hardened cloud production environment meeting enterprise security standards.
+* Validated historical master data migration package (99.98% reconciliation rate).
+* Comprehensive training curriculum delivered to 450+ business users and functional admins.
+* User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.</p>
+<hr />
+<h2>4. Project Exclusions</h2>
+<p><strong>Explicit Out-of-Scope Items:</strong>
+Scope Boundaries &amp; Exclusions:
+* <strong>In-Scope:</strong> Corporate headquarters, regional business units, distribution fulfillment centers, and cloud infrastructure.
+* <strong>Out-of-Scope:</strong> Hardware replacement for physical POS terminals at retail kiosks (deferred to Phase 2).
+* <strong>Exclusions:</strong> On-premise server acquisitions; legacy custom code maintenance beyond the migration period.</p>
+<p><strong>Boundaries and Excluded Support:</strong>
+Scope Boundaries &amp; Exclusions:
+* <strong>In-Scope:</strong> Corporate headquarters, regional business units, distribution fulfillment centers, and cloud infrastructure.
+* <strong>Out-of-Scope:</strong> Hardware replacement for physical POS terminals at retail kiosks (deferred to Phase 2).
+* <strong>Exclusions:</strong> On-premise server acquisitions; legacy custom code maintenance beyond the migration period.</p>
+<hr />
+<h2>5. Project Constraints and Assumptions</h2>
+<p><strong>Identified Project Constraints:</strong>
+Assumptions and Constraints:
+* <strong>Assumptions:</strong> Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
+* <strong>Constraints:</strong> Hard completion deadline prior to Q4 fiscal year close; pre-approved budget limit of $3.5M USD; mandatory adherence to corporate data protection guidelines.</p>
+<p><strong>Identified Project Assumptions:</strong>
+Assumptions and Constraints:
+* <strong>Assumptions:</strong> Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
+* <strong>Constraints:</strong> Hard completion deadline prior to Q4 fiscal year close; pre-approved budget limit of $3.5M USD; mandatory adherence to corporate data protection guidelines.</p>
+<hr />
+<h3>Sign-off and Approvals</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Signature</th>
+<th style="text-align: center;">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Project Manager</strong></td>
+<td style="text-align: left;">Faisal Al-Harbi, PMP</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lead Technical Architect</strong></td>
+<td style="text-align: left;">Fahad Al-Subaie (Chief Solution Architect)</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Project Sponsor / Client</strong></td>
+<td style="text-align: left;">Dr. Muna Al-Ghamdi (Executive VP of Technology)</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> PROJECT SCOPE STATEMENT | <strong>Ref:</strong> PMO-04.02.05 <br>
+  <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">Draft 2020-12 JSON Schema</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              Copy JSON Schema
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;form_name&quot;: &quot;PROJECT SCOPE STATEMENT&quot;,
+  &quot;document_reference&quot;: &quot;PMO-04.02.05&quot;,
+  &quot;_llm_instructions&quot;: &quot;Populate the fields of &#x27;PROJECT SCOPE STATEMENT&#x27; and write the value of each field under &#x27;Generated Value&#x27;, based on the project context. Context: the project carrying reference PMO-04.02.05.&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Detailed_Project_Scope_Description&quot;: {
+      &quot;section&quot;: &quot;Project Scope Description&quot;,
+      &quot;label&quot;: &quot;Detailed Project Scope Description&quot;,
+      &quot;guidance&quot;: &quot;Comprehensive narrative of the project work, characteristics of the end solution, and boundaries.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Major_Project_Objectives_and_Outcomes&quot;: {
+      &quot;section&quot;: &quot;Project Scope Description&quot;,
+      &quot;label&quot;: &quot;Major Project Objectives and Outcomes&quot;,
+      &quot;guidance&quot;: &quot;Target business and technical outcomes directly addressed by executing this scope.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Core_Product_Deliverables&quot;: {
+      &quot;section&quot;: &quot;Project Deliverables&quot;,
+      &quot;label&quot;: &quot;Core Product Deliverables&quot;,
+      &quot;guidance&quot;: &quot;The primary end-products, technical systems, or physical deliverables generated by the project.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Project_Management_and_Governance_Deliverables&quot;: {
+      &quot;section&quot;: &quot;Project Deliverables&quot;,
+      &quot;label&quot;: &quot;Project Management and Governance Deliverables&quot;,
+      &quot;guidance&quot;: &quot;Management plans, status reports, audit logs, and compliance documentation delivered.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Measurable_Acceptance_Criteria&quot;: {
+      &quot;section&quot;: &quot;Product Acceptance Criteria&quot;,
+      &quot;label&quot;: &quot;Measurable Acceptance Criteria&quot;,
+      &quot;guidance&quot;: &quot;Specific, objective, and testable quality conditions required before deliverable formal acceptance.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Acceptance_Authority_and_Process&quot;: {
+      &quot;section&quot;: &quot;Product Acceptance Criteria&quot;,
+      &quot;label&quot;: &quot;Acceptance Authority and Process&quot;,
+      &quot;guidance&quot;: &quot;Designated stakeholder authority and formal inspection workflow required for sign-off.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Explicit_Out_of_Scope_Items&quot;: {
+      &quot;section&quot;: &quot;Project Exclusions&quot;,
+      &quot;label&quot;: &quot;Explicit Out-of-Scope Items&quot;,
+      &quot;guidance&quot;: &quot;Explicitly documented features, services, or activities that are intentionally excluded from project scope.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Boundaries_and_Excluded_Support&quot;: {
+      &quot;section&quot;: &quot;Project Exclusions&quot;,
+      &quot;label&quot;: &quot;Boundaries and Excluded Support&quot;,
+      &quot;guidance&quot;: &quot;Operational boundaries clarifying responsibilities not assumed by the project team.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Identified_Project_Constraints&quot;: {
+      &quot;section&quot;: &quot;Project Constraints and Assumptions&quot;,
+      &quot;label&quot;: &quot;Identified Project Constraints&quot;,
+      &quot;guidance&quot;: &quot;Imposed boundaries including hard deadlines, budget caps, regulatory compliance, and technology limits.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Identified_Project_Assumptions&quot;: {
+      &quot;section&quot;: &quot;Project Constraints and Assumptions&quot;,
+      &quot;label&quot;: &quot;Identified Project Assumptions&quot;,
+      &quot;guidance&quot;: &quot;Critical planning assumptions regarding resource availability, vendor performance, and dependencies.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 Tasleemat</div>
+          <p style="margin-bottom: 1rem;">Tasleemat is a bilingual open deliverable library and supporting toolkit. Not a live PMO application or approval authority.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">Start Here</a></li>
+            <li><a href="/Tasleemat/deliverables/">Deliverables (114)</a></li>
+            <li><a href="/Tasleemat/guides/">Core Manuals</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Technical & AI</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">Python SDK & CLI</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">Model Context Protocol (MCP)</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">Draft 2020-12 Schemas</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Community & Policy</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">PMO Governance Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

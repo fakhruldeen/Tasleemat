@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-00.01 خارطة طريق المحفظة | تسليمات</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-00.01/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-00.01</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-00.01</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 00: إدارة البرامج والمحافظ
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span>
+            <span class="tag pack">general</span> <span class="tag pack">predictive</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">خارطة طريق المحفظة</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">Portfolio Roadmap</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-00.01 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-00.01 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. النظرة العامة والبيانات الوصفية
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. قالب التسليمة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. الدليل الإرشادي للممارس
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. مثال واقعي مكتمل
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. مخطط البيانات Draft 2020-12
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 00:</strong> إدارة البرامج والمحافظ
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-00.01 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_قالب.npy
+token_count: 4053
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.927300+00:00&#x27;
+form_id: PMO-00.01
+language: ar
+status: approved
+---
+--&gt;
+
+&lt;!-- 
+تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+خارطة طريق المحفظة هي عرض بصري مرحلي زمنيًا للبرامج والمشاريع والعمليات في المحفظة، يُظهر ترتيبها ونتائجها المتوقعة والاعتماديات بينها. والغرض منها نشر الاستراتيجية وإتاحة صاحب القرار من أن يرى أثر التغيير من أن يرى أثر التغيير قبل إحداثه، لا أن يكتشفه بعد ربع عام عندما يكون التمويل قد التزم بالفعل.
+
+والغرض من حمل الاعتماديات والتمويل والسعة كأقسام مستقلة هو أن خارطة الطريق التي تقتصر على سرد المبادرات والتواريخ دون توضيح الاعتماديات والتمويل جدول زمني مجرد يفتقر إلى البعد الاستراتيجي وآليات الحوكمة. فهي تبدو كاملة وهي لا تقدم للإدارة تحليلاً كافياً عمّا سيحدث إذا تأخرت مبادرة.
+
+المحاذاة: ينبغي أن تكون خارطة طريق المحفظة متسقة مع الوثائق التالية: ميثاق البرنامج، دراسة الجدوى، خطة إدارة المحفظة، مصفوفة سعة الموارد.
+
+إرشادات الكتابة:
+
+*  امنح كل مبادرة معرفًا ثابتًا. فخارطة الطريق التي تُراجع عبر دورات متعددة تصبح غير مقروءة إذا وردت المبادرة باسم مختلف كل مرة، ويتعذر التمييز بين ما إذا كان الصفان مبادرة واحدة أم مبادرتين.
+
+*  اكتب التواريخ بالدقة التي يحتاجها القرار فعلًا. فمحفظة سنوية قد يُخطط لها بالربع تبرعًا، وإصدار بتاريخ تجاري ثابت لا يجوز. وتُتجنَّب الدقة المختلطة في الجدول الواحد تحديدًا، لأن القارئ يقارن الصفوف ببعضها.
+
+*  سجّل الحالة من مجموعة ثابتة مثل: مقترح، مموَّل، قيد التنفيذ، معلَّق، مكتمل. فالحالة النصية الحرة لا يمكن ترتيبها أو ترشيحها، وخارطة الطريق التي لا يمكن ترشيحها صورة.
+
+*  سجّل التمويل كحدّ مخصص مخطط لا كتنبؤ بالإنفاق. فخارطة الطريق تجيب مدى توفر المخصصات المالية المعتمدة في الفترة، لا هل يُنفق، والخلط بين الأمرين شائع.
+
+*  حيث تعتمد مبادرة على أخرى، سمِّ السابقة في قسم الاعتماديات لا في ملاحظة نصية. فالاعتمادية المسجلة في نص فقط هي اعتمادية لا يمكن لأحد الاستعلام عنها.
+
+ملاحظات التخصيص:
+
+*  قد تختصر خارطة طريق المحفظة على مستوى البرنامج إلى البرامج فقط، وقد تكون صفوف المبادرات على مستوى أعمق حيث تخطط الإدارة الفرعية محفظتها الخاصة.
+
+*  قد تُعرض خارطة الطريق بيانيًا لا كجدول. والأقسام أدناه تحمل المحتوى نفسه بأي من الصورتين، وينبغي أن يحدد النموذج أيّهما متوقعة.
+
+*  أضف صفوفًا أو احذفها حسب الحاجة. فإذا حملت مبادرة تفصيلًا يفوق ما تتسع له خارطة الطريق، فاربط بميثاقها أو دراستها بدل ضغطها هنا.
+
+*  حيث تعمل المؤسسة بدورة تخطيط ثابتة، سجل الدورة في قسم السياق وأعد استخدامها، فتصبح خرائط الطريق المتعاقبة قابلة للمقارنة.
+
+إرشادات الأعمدة، حسب العمود:
+
+صفوف المبادرات:
+
+*  **المعرف:** المعرف الثابت للمبادرة، يُستخدم في كل دورة لاحقة من هذه الخارطة وفي قسمَي الاعتماديات والتمويل.
+
+*  **اسم المبادرة:** اسم البرنامج أو المشروع أو العملية. استخدم الاسم الوارد في الميثاق حتى لا تُتابع المبادرة نفسها باسمين.
+
+*  **النوع:** هل كان الصف برنامجًا أم مشروعًا أم عملية. والنوع يحدد الحوكمة المنطبقة، فالمبادرة المسجلة دون نوع تفتقر إلى مسار واضح للحوكمة والاعتماد الرسمي.
+
+*  **الهدف الاستراتيجي:** الهدف المحدد الذي تخدمه هذه المبادرة، مذكورًا من الاستراتيجية لا من ميثاق المبادرة نفسه. والمبادرة التي لا ترتبط بهدف عرضة للاستبعاد أو إعادة التوجيه، وخارطة الطريق هي الموضع الوحيد الذي يظهر فيه ذلك.
+
+*  **البداية:** متى يُتوقع بدء المبادرة.
+
+*  **النهاية:** متى يُتوقع أن تحقق المبادرة نتائجها، وهو ليس متى يُنفق اعتمادها.
+
+*  **الميزانية:** حد التمويل المخصص للمبادرة خلال فترة التخطيط.
+
+*  **الحالة:** أين تقف المبادرة حاليًا مقابل المجموعة الثابتة المستخدمة في خارطة الطريق هذه.
+
+صفوف الاعتماديات:
+
+*  **المعرف:** معرف المبادرة التي تُسجَّل اعتماديتها.
+
+*  **المبادرة التابعة:** المبادرة التي لا يمكنها البدء دون السابقة.
+
+*  **نوع الاعتمادية:** هل هي انتهاء إلى بدء، أم بدء إلى بدء، أم انتهاء إلى انتهاء، أم بدء إلى انتهاء. والنوع يحدد مقدار المساحة المتوفرة للمتابعة، فالاعتمادية غير المحددة النوع لا يمكن التخطيط لها.
+
+*  **السابقة:** المبادرة التي تعتمد عليها هذه.
+
+*  **مطلوب بحلول:** التاريخ الذي يجب أن تتحقق فيه الاعتمادية كي تحافظ المبادرة التابعة على تواريخها.
+
+*  **الأثر عند التأخر:** ما يحدث للمبادرة التابعة إذا لم تسلّم السابقة في موعدها.
+
+صفوف التمويل والسعة:
+
+*  **الفترة:** فترة التخطيط التي يغطيها الصف.
+
+*  **التمويل المخطط:** المال المتاح في الفترة على مستوى المحفظة كلها.
+
+*  **السعة المخططة:** سعة الموارد المتاحة في الفترة، بالوحدة التي تستخدمها المؤسسة.
+
+*  **العبء الملتزم:** السعة الملتزم بها بالفعل للمبادرات في الفترة.
+
+*  **المتاح:** الفرق بين المخطط والملتزم، وهو الرقم الذي يخبر القارئ بجدوى الخطة.
+
+*  **ملاحظات:** ما يغير تفسير الصف، مثل نقص معروف أو افتراض توظيف يعتمد عليه الصف.
+
+صفوف الافتراضات والقيود:
+
+*  **المعرف:** معرف الافتراض أو القيد.
+
+*  **النوع:** هل كان الصف افتراضًا أم قيدًا.
+
+*  **الوصف:** ما يفترض أو ما يقيّد.
+
+*  **الأثر على خارطة الطريق:** الأثر على خارطة الطريق إذا ثبت خطأ هذا الافتراض أو ثبت تشدده على ما ورد.
+
+*  **المالك:** من المسؤول عن تأكيده أو إدارته.
+
+*  **تاريخ المراجعة:** متى سيُراجع مرة أخرى، فالافتراض الذي لا يراجعه أحد لا يميز بينه وبين الحقيقة.
+
+صفوف تغييرات خارطة الطريق:
+
+*  **معرف التغيير:** معرف التغيير.
+
+*  **الوصف:** ما الذي تغير في خارطة الطريق.
+
+*  **السبب:** سبب التغيير، وهو ما يحتاجه القارئ التالي ليحكم على صلاحية السبب نفسه في المرة القادمة.
+
+*  **المبادرات المتأثرة:** المبادرات التي يمسها التغيير.
+
+*  **اعتمده:** من اعتمد التغيير.
+
+*  **التاريخ:** متى اعتُمد التغيير، وهو ما يحدد نسخة خارطة الطريق التي نُفِّذ فيها.
+--&gt;
+
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{اسم_المحفظة}} - {{معرف_المحفظة}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;خارطة طريق المحفظة&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير المحفظة:** {{اسم_مدير_المحفظة}} | **إعداد:** {{المُعِد}} |
+| :--- | :--- | :--- |
+
+---
+
+## 1. سياق المحفظة وأساس التخطيط
+&lt;!-- ما الذي تغطيه هذه المحفظة، وعلى أي فترة، وكم مرة تُحدَّث خارطة الطريق. سجل دورة التخطيط هنا لا في ملاحظة، فالخرائط المتعاقبة لا تكون قابلة للمقارنة إلا إذا بُنيت على أساس واحد. وسجل حالة الخارطة بوصفها بيان نسخة: أي دورة تخطيط تمثلها وأي اجتماع اعتمدها. فبدون ذلك لا يمكن قراءة خريطتين تختلفان في مبادرات قليلة بوصفهما تغيرًا في الاتجاه لا بوصفهماالرأيَينين في المحفظة نفسها. --&gt;
+
+**غرض المحفظة ونطاقها:** [ أضف التفاصيل... ]
+
+**فترة التخطيط:** [ أضف التفاصيل... ]
+
+**أفق الخارطة:** [ أضف التفاصيل... ]
+
+**مالك المحفظة:** [ أضف التفاصيل... ]
+
+**دورة التخطيط:** [ أضف التفاصيل... ]
+
+**نسخة الخارطة وحالتها:** [ أضف التفاصيل... ]
+
+---
+
+## 2. مبادرات خارطة الطريق
+&lt;!-- صف واحد لكل برنامج أو مشروع أو عملية، مرتبًا حسب تاريخ البدء. استخدم الأسماء الواردة في ميثاق كل مبادرة حتى لا تُتابع المبادرة نفسها باسمين عبر الدورات. وسجل الحالة من المجموعة الثابتة المتفق عليها في خارطة الطريق هذه، فالحالة النصية الحرة لا يمكن ترشيحها، وخارطة الطريق التي لا يمكن ترشيحها عرض وصفي غير قابل للتنفيذ والقياس. وحيث لا تخدم مبادرة أي هدف استراتيجي، فاكتب في الخلية أنها لا تخدم هدفًا صراحةً لا واتركها فارغة، فالفراغ لا يميز بينه وبين السهو. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | اسم المبادرة | النوع | الهدف الاستراتيجي | البداية | النهاية | الميزانية | الحالة |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 3. الاعتماديات والترتيب
+&lt;!-- حيث لا يمكن لمبادرة أن تبدأ قبل أن تسلّم أخرى، سجل ذلك هنا باعتمادية محددة النوع لا في ملاحظة نصية، فالاعتمادية المسجلة في نص فقط لا يمكن الاستعلام عنها. وانتهاء إلى بدء هي الحالة الشائعة، أما بدء إلى بدء وانتهاء إلى انتهاء فت تنشأ حيث يجب أن تتحرك مبادرتان معًا. واذكر أثر تأخر السابقة في المال أو الجدول أو كليهما، فالاعتمادية التي لا يذكر أثرها لا يمكن التصرف بشأنها عند تأخر السابقة. --&gt;
+
+| المعرف | المبادرة التابعة | نوع الاعتمادية | السابقة | مطلوب بحلول | الأثر عند التأخر |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+---
+
+## 4. التمويل والسعة حسب الفترة
+&lt;!-- هل الخطة مجدية، لا مجرد ما هو مخطط. وعمود «المتاح» هو المهم: هو التمويل أو السعة المخطط ناقص الملتزم به، وخارطة الطريق التي يكون فيها هذا الرقم سالبًا في فترة ما هي خارطة طريق ستنكسر في تلك الفترة. وسجل الافتراضات التي يعتمد عليها الصف، مثل تاريخ توظيف أو قرار تمويل لم يُتخذ بعد، لأن صف السعة بلا افتراضاته يُقرأ كالتزام والقارئ يعامله كذلك. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| الفترة | التمويل المخطط | السعة المخططة | العبء الملتزم | المتاح | ملاحظات |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 5. الافتراضات والقيود
+&lt;!-- ما تفترضه خارطة الطريق وما الذي يحدّها. فالافتراض بلا مالك ولا تاريخ مراجعة لا يميز بينه وبين الحقيقة، فتمرر خارطة الطريق هذا الافتراض إلى الأمام إلى ما لا نهاية بعد أن تنتهي الظروف التي جعلته صحيحًا. وسجل القيود بالجدية نفسها، لأن القيد المسجل بلا أثر لا يمكن مقابلته بشيء. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | النوع | الوصف | الأثر على خارطة الطريق | المالك | تاريخ المراجعة |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 6. تغييرات خارطة الطريق
+&lt;!-- ما الذي تغير بين هذه النسخة من خارطة الطريق وبين السابقة، ولماذا. القارئ الذي يقارن بين خريطتين يحتاج السبب بقدر ما يحتاج التغيير، لأن السبب هو ما يخبره بصلاحية السبب نفسه في التغيير التالي. وسجل المعتمد، فخارطة الطريق التي تُعدَّل بلا معتمد خارطة طريق لا يملكها أحد. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| معرف التغيير | الوصف | السبب | المبادرات المتأثرة | اعتمده | التاريخ |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 7. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير المحفظة** | {{اسم_مدير_المحفظة}} | _______________________ | [.... -.... -.... ] |
+| **رئيس مكتب إدارة المشاريع** | {{اسم_مسؤول_مكتب_إدارة_المشاريع}} | _______________________ | [.... -.... -.... ] |
+| **الراعي التنفيذي** | {{اسم_الراعي_التنفيذي}} | _______________________ | [.... -.... -.... ] |
+---
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;النموذج:&lt;/strong&gt; خارطة طريق المحفظة | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-00.01 &lt;br&gt;
+ &lt;i&gt;تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: ar
+layout: default
+title: خارطة طريق المحفظة
+nav_order: 1
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_دليل.npy
+token_count: 3585
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.924267+00:00'
+form_id: PMO-00.01
+status: approved</p>
+<hr />
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## دليل نماذج تسليمات
+# مخرج المشروع: خارطة طريق المحفظة
+
+**المرجع الوثيقي:** `PMO-00.01`
+
+توفر هذه الوثيقة مرجعًا شاملًا ومهنيًا لفهم الغرض من **خارطة طريق المحفظة**
+واستخدامها الفعال بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة رسمية متوافقة مع تسليمات تُعرف بـ **خارطة طريق المحفظة**، وهي عرض بصري
+مرحلي زمنيًا للبرامج والمشاريع والعمليات في المحفظة، يُظهر ترتيبها ونتائجها
+المتوقعة والاعتماديات بينها.
+
+وتسجل الأساس الذي تُخطط على أساسه المحفظة، والمبادرات نفسها بنوعها وهدفها
+الاستراتيجي وتواريخها وميزانيتها وحالتها، والاعتماديات بينها، وما إذا كان
+التمويل والسعة خلف الخطة متاحين فعلًا، والافتراضات والقيود التي تقوم عليها
+الخطة، وما الذي تغير بين هذه النسخة من الخارطة وبين السابقة.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن خارطة الطريق التي تقتصر على سرد المبادرات والتواريخ دون توضيح الاعتماديات والتمويل جدول زمني مجرد يفتقر إلى البعد الاستراتيجي وآليات الحوكمة. فهي تبدو
+كاملة وهي لا تقدم للإدارة تحليلاً كافياً عمّا سيحدث إذا تأخرت مبادرة، وقسم التمويل والسعة
+هو الإطار الحاكم الذي يظهر فيه ذلك. وبدون رقم نسخة وسجل تغييرات، لا يمكن قراءة
+خريطتين تختلفان في مبادرات قليلة بوصفهما تغيرًا في الاتجاه لا بوصفهما رأيَين
+في المحفظة نفسها.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعد هذا المخرج في مجموعة **إدارة البرامج والمحفظة**، ويُحدَّث وفق دورة التخطيط
+المسجلة في قسم السياق، عادةً في بداية كل فترة مالية أو قبيل كل مراجعة
+استثمارية.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكها مدير المحفظة وتُعد بالاشتراك مع ملاك المبادرات في
+المحفظة. ويعتمدها مجلس الحوكمة الذي يحتفظ بالتمويل، عادةً لجنة الاستثمار،
+ويوقّعها الراعي والشريك المالي للأعمال الذي يستطيع تأكيد أن صفوف التمويل
+واقعية.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  قد تختصر خارطة طريق المحفظة على مستوى البرنامج إلى البرامج فقط، وقد تكون
+  صفوف المبادرات على مستوى أعمق حيث تخطط الإدارة الفرعية محفظتها الخاصة.
+*  قد تُعرض خارطة الطريق بيانيًا لا كجدول، والأقسام أدناه تحمل المحتوى نفسه
+  بأي من الصورتين، وينبغي أن يحدد النموذج أيّهما متوقعة.
+*  أضف صفوفًا أو احذفها حسب الحاجة، فإذا حملت مبادرة تفصيلًا يفوق ما تتسع له
+  خارطة الطريق فاربط بميثاقها أو دراستها بدل ضغطها هنا.
+*  حيث تعمل المؤسسة بدورة تخطيط ثابتة، سجل الدورة في قسم السياق وأعد
+  استخدامها، فتصبح خرائط الطريق المتعاقبة قابلة للمقارنة.
+*  قد يُحذف قسم التمويل إذا كانت الخارطة تركز على الترتيب فقط، لكن ينبغي
+  أن يذكر النموذج ذلك صراحةً لا أن يترك القارئ يفترض أن التمويل قد أُخذ في
+  الحسبان.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن تكون خارطة طريق المحفظة متسقة مع الوثائق التالية:
+*  ميثاق البرنامج
+*  دراسة الجدوى
+*  خطة إدارة المحفظة
+*  مصفوفة سعة الموارد
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإكمال **خارطة طريق المحفظة** على نحو دقيق ومهني، على المسؤول أن يملأ
+الحقول التالية بناءً على سياق المشروع (مع الرجوع إلى `parameters.md` للمتغيرات العامة
+للمشروع):
+
+*  **غرض المحفظة ونطاقها:** ما الذي تغطيه هذه المحفظة وما الذي تستبعده عمدًا، بمصطلحات الاستراتيجية نفسها. فخارطة الطريق التي لا تذكر حدودها لا يمكن قراءتها في مقابل استراتيجية أوسع من المحفظة، ويُحسب الفارق مبادرات مفقودة.
+*  **فترة التخطيط:** الفترة التي تخطط لها خارطة الطريق، وهل هي سنة مالية أم متحركة أم دورة متفق عليها في مكان آخر. فخرائط الطريق المتعاقبة لا تكون قابلة للمقارنة إلا إذا كانت هذه الفترة واحدة كل مرة.
+*  **أفق الخارطة:** إلى أي مدى تنظر خارطة الطريق. سجل الأفق حتى حين يساوي فترة التخطيط، فالأمرين يختلطان كثيرًا ويظهر الالتباس لاحقًا بوصفه فجوة بين المخطط الزمني المستهدف والتوقعات الفعلية للتنفيذ.
+*  **مالك المحفظة:** الدور الواحد المسؤول عن المحفظة ككل، وهو عادةً ليس مالك أي مبادرة فيها. وحين يُترك هذا فارغًا تكون للخارطة مسؤول عن الصياغة دون صلاحية اتخاذ القرار، فتصبح إعادة الترتيب قرارًا لا يتخذه أحد.
+*  **دورة التخطيط:** كم مرة تُحدَّث خارطة الطريق وبأي جهة حاكمة تُعرض، مثل لجنة استثمارية ربع سنوية. والدورة هي ما يجعل نسختين من الخارطة قابلتين للمقارنة، وخارطة الطريق التي لا دورة لها وثائق تفتقر للمرجعية الزمنية والمقارنة المعيارية.
+*  **نسخة الخارطة وحالتها:** أي دورة تخطيط تمثلها هذه النسخة، ورقم نسختها، وهل هي مسودة أم معتمدة. فبدون رقم نسخة لا يمكن قراءة خريطتين تختلفان في مبادرات قليلة بوصفهما تغيرًا في الاتجاه لا بوصفهما وجهتي نظر متباينتين حول اتجاهات المحفظة.
+*  **المعرف:** المعرف الثابت للمبادرة، يُستخدم في كل دورة لاحقة من هذه الخارطة وفي قسمَي الاعتماديات والتمويل. فخارطة الطريق التي تُراجع عبر دورات متعددة لا تُقرأ إن وردت المبادرة باسم مختلف كل مرة، إذ يتعذر التمييز بين ما إذا كان الصفان مبادرة واحدة أم مبادرتين.
+*  **اسم المبادرة:** اسم البرنامج أو المشروع أو العملية، مأخوذًا من الميثاق حتى لا تُتابع المبادرة نفسها باسمين. وحين يُغيَّر الاسم، سجل الاسم السابق لا أن يستبدل، وإلا صار تتبع التاريخ مستحيلًا.
+*  **النوع:** هل الصف برنامج أم مشروع أم عملية. والنوع يحدد الحوكمة المنطبقة، فالمبادرة المسجلة دون نوع تفتقر إلى مسار واضح للحوكمة والاعتماد الرسمي، ولا تستطيع الخارطة الإجابة عن نوع القرار اللازم بشأنها.
+*  **الهدف الاستراتيجي:** الهدف المحدد الذي تخدمه هذه المبادرة، مذكورًا من الاستراتيجية لا من ميثاق المبادرة نفسه. والمبادرة التي لا ترتبط بهدف عرضة للاستبعاد أو إعادة التوجيه، وخارطة الطريق هي الموضع الوحيد الذي يظهر فيه ذلك؛ وحين ينعدم الربط فعلًا فاكتب في الخلية أنه «لا ينطبق» بدلاً من ترك الحقل فارغاً فارغة.
+*  **البداية:** متى يُتوقع بدء المبادرة، بالدقة المستخدمة في هذا الجدول بأكمله. فالدقة المختلطة في جدول واحد هي ما يجب تجنبه، لأن القارئ يقارن الصفوف ببعضها وشهر بجوار ربع يدعو إلى استنتاج خاطئ.
+*  **النهاية:** متى يُتوقع أن تحقق المبادرة نتائجها، وهو ليس متى يُنفق اعتمادها. فالمبادرة التي تسلّم مبكرًا وتغلق حساباتها لاحقًا أمر طبيعي، وتسجيل تاريخ الحسابات كتاريخ نهاية يؤثر سلباً على تواريخ المبادرات التابعة ومساراتها الحرجة.
+*  **الميزانية:** حد التمويل المخصص للمبادرة خلال فترة التخطيط، لا تنبؤ بالإنفاق. فخارطة الطريق تركز على تخصيص واعتماد سقف التمويل للفترة المحددة لضمان الجاهزية المالية للمبادرات.
+*  **الحالة:** أين تقف المبادرة حاليًا مقابل المجموعة الثابتة المتفق عليها في خارطة الطريق هذه، مثل: مقترح، مموَّل، قيد التنفيذ، معلَّق، مكتمل. فالحالة النصية الحرة لا يمكن ترتيبها أو ترشيحها، وخارطة الطريق التي لا يمكن ترشيحها عرض وصفي غير قابل للتنفيذ والقياس.
+*  **المعرف:** معرف المبادرة التي تُسجَّل اعتماديتها، مطابقًا للمعرف المستخدم في قسم المبادرات حتى يمكن وصل الصف بها.
+*  **المبادرة التابعة:** المبادرة التي لا يمكنها البدء، أو لا يمكنها البدء بتواريخها، دون السابقة. سمِّها لا صفها، فالاعتمادية المعبَّرة بصنف لا بمبادرة محددة لا يمكن التصرف بشأنها حين تُهدَّد.
+*  **نوع الاعتمادية:** هل الاعتمادية انتهاء إلى بدء، أم بدء إلى بدء، أم انتهاء إلى انتهاء، أم بدء إلى انتهاء. والنوع يحدد المساحة المتوفرة للمتابعة، فالاعتمادية غير المحددة النوع لا يمكن التخطيط لها؛ وانتهاء إلى بدء هي الحالة الشائعة، وتنشأ البقية حيث يجب أن تتحرك مبادرتان معًا.
+*  **السابقة:** المبادرة التي تعتمد عليها هذه، مسماة ومعرَّفة. فالاعتمادية المسجلة في نص فقط لا يمكن الاستعلام عنها، ولذلك لا تُراجع قبل أن تتأخر السابقة.
+*  **مطلوب بحلول:** التاريخ الذي يجب أن تتحقق فيه الاعتمادية كي تحافظ المبادرة التابعة على تواريخها. وحين يكون التاريخ المطلوب متأخرًا عن انتهاء السابقة المخطط، فالفجوة هي الخطر ويجب أن تظهر هنا لا أن تُكتشف لاحقًا.
+*  **الأثر عند التأخر:** ما يحدث للمبادرة التابعة إذا لم تسلّم السابقة في موعدها، في المال أو الجدول أو النطاق. فالاعتمادية التي لا يذكر أثرها لا يمكن التصرف بشأنها عند تأخر السابقة، إذ لا يعرف أحد هل يُصعَّد أم يُعاد الترتيب أم يُتحمَّل التأخير.
+*  **الفترة:** فترة التخطيط التي يغطيها الصف، بالفترات نفسها المستخدمة في قسم أساس التخطيط حتى تُقرأ الجداول معًا. وحين يظهر ربع في جدول وشهر في آخر، يتحتم على القارئ أن يوفّق بينهما قبل أي استنتاج.
+*  **التمويل المخطط:** المال المتاح في الفترة على مستوى المحفظة كلها، من الميزانية المعتمدة لا من الطلبات. وغرض الخارطة اختبار الخطة مقابل المتاح فعلًا، فالرقم المأخوذ من الطلبات لا يختبر شيئًا.
+*  **السعة المخططة:** سعة الموارد المتاحة في الفترة، بالوحدة التي تستخدمها المؤسسة، سواء كانت أيام عمل أو وظائف بدوام كامل أو ساعات آلات. والوحدة مهمة لأن صف السعة المُعَبَّر عنها بوحدة مختلفة عن باقي الخارطة لا يجمع بشيء.
+*  **العبء الملتزم:** السعة الملتزم بها بالفعل للمبادرات في الفترة، بما فيها العمل الذي لن ينتهي داخلها. واستثناء الجزء الذي يمتد إلى الفترة التالية هو أشيع سبب لمبالغة جدول السعة في ما هو متاح.
+*  **المتاح:** الفرق بين المخطط والملتزم. وهذا العمود هو ما يخبر القارئ بجدوى الخطة؛ فخارطة الطريق التي يكون فيها هذا الرقم سالبًا في فترة ما هي خارطة طريق ستنكسر في تلك الفترة، والنقص يظهر هنا أو لا يظهر.
+*  **ملاحظات:** ما يغير كيفية قراءة الصف، مثل نقص معروف أو افتراض توظيف يعتمد عليه الصف أو قرار تمويل لم يُتخذ بعد. وصف السعة بلا افتراضاته يُقرأ كالتزام، والقارئ يعامله كذلك.
+*  **المعرف:** معرف الافتراض أو القيد، ليُشار إليه من سجل التغييرات ومن صفوف المبادرات التي تعتمد عليه.
+*  **النوع:** هل الصف افتراض أم قيد. فالافتراض قد يثبت خطأه فيُستبدل، والقيد لا يُستبدل بل يُخطَّط حوله، وجمعهما تحت عنوان واحد يفقد هذا التمييز تحديدًا حيث هو مهم.
+*  **الوصف:** ما الذي يُفترض، أو ما الذي يقيّد المحفظة. اذكره على صورة قابلة للاختبار لا على صورة أمنية، فالافتراض المصوغ أمنية لا يمكن إثبات خطئه.
+*  **الأثر على خارطة الطريق:** الأثر على خارطة الطريق إذا ثبت خطأ هذا الافتراض، أو ثبت تشدده على ما ورد. فالافتراض المسجل بلا أثر لا يمكن تحديد أولوياته للاختبار، إذ لا شيء يميز الفرضيات الجوهرية من الثانوية.
+*  **المالك:** من المسؤول عن تأكيده أو إدارته. فالافتراض بلا مالك ليس مراقبًا، وتمرر خارطة الطريق إلى الأمام إلى ما لا نهاية بعد أن تنتهي الظروف التي جعلته صحيحًا.
+*  **تاريخ المراجعة:** متى يُراجع الافترض مرة أخرى. هذا ما يفصل الافتراض عن الحقيقة في الواقع: الافتراض الذي لا يراجعه أحد لا يميز بينه وبين الحقيقة، ويتوقف عن التساؤل عنه في الوقت الذي ينبغي أن يُسأل فيه.
+*  **معرف التغيير:** معرف التغيير، ليُربط بسجل القرار وبالاجتماع الذي اعتمده.
+*  **الوصف:** ما الذي تغير في خارطة الطريق، بوصف دقيق يكفي لعقد فرق بينه وبين النسخة السابقة. فالتغيير الموصوف بأنه مجرد إعادة تنظيم لا يمكن التحقق من وقوعه.
+*  **السبب:** سبب التغيير. والقارئ الذي يقارن بين خريطتين يحتاج السبب بقدر ما يحتاج التغيير نفسه، لأن السبب هو ما يخبره بصلاحية هذا السبب في التغيير التالي أو تجاوزه.
+*  **المبادرات المتأثرة:** المبادرات التي يمسها التغيير، بالمعرف حيثما أمكن. وهذا ما يتيح للقارئ أن يرى إن كان تغيير موصوف بأنه صغير قد أخّر فعلًا تاريخًا ملتزمًا به.
+*  **اعتمده:** من اعتمد التغيير. فخارطة الطريق التي تُعدَّل بلا معتمد خارطة طريق لا يملكها أحد، والتعديل التالي محتمل أن يكون خطأً كما يحتمل أن يكون قرارًا.
+*  **التاريخ:** متى اعتُمد التغيير، وهو ما يحدد نسخة خارطة الطريق التي نُفِّذ فيها، ويتيح قراءة سجل التغييرات بترتيب.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 نموذج قابل للطباعة (Markdown)](00_01_خارطة_طريق_المحفظة_قالب.md)
+* [🤖 موجّه التوليد بالنموذج الذكي](00_01_خارطة_طريق_المحفظة.md)
+* [📊 بنية البيانات (JSON)](00_01_خارطة_طريق_المحفظة.json)
+* [📈 البيانات الجدولية (CSV)](00_01_خارطة_طريق_المحفظة.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [00_01_خارطة_طريق_المحفظة_مثال.md](../../../../examples/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_مثال.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/00_إدارة_البرامج_والمحافظ/01_خارطة_طريق_المحفظة/00_01_خارطة_طريق_المحفظة_مثال.npy
+token_count: 2772
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.208923+00:00'</p>
+<hr />
+<div>
+
+# خارطة طريق المحفظة (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-00.01`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">محفظة التحول الرقمي وتحديث العمليات المؤسسية - PORT-2026-X01</h2>
+<h1 align="center">خارطة طريق المحفظة</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مدير المحفظة:** أ. إلينا فانس، PfMP | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| :--- | :--- | :--- |
+
+---
+
+## 1. سياق المحفظة وأساس التخطيط
+<!-- ما الذي تغطيه هذه المحفظة، وعلى أي فترة، وكم مرة تُحدَّث خارطة الطريق. سجل دورة التخطيط هنا لا في ملاحظة، فالخرائط المتعاقبة لا تكون قابلة للمقارنة إلا إذا بُنيت على أساس واحد. وسجل حالة الخارطة بوصفها بيان نسخة: أي دورة تخطيط تمثلها وأي اجتماع اعتمدها. فبدون ذلك لا يمكن قراءة خريطتين تختلفان في مبادرات قليلة بوصفهما تغيرًا في الاتجاه لا بوصفهماالرأيَينين في المحفظة نفسها. -->
+
+**غرض المحفظة ونطاقها:** قيادة التحول الرقمي الشامل، تحديث البنية التقنية، وأتمتة سلاسل الإمداد والعمليات التشغيلية لشركة القمة عبر كافة الفروع ومراكز التوزيع.
+
+**فترة التخطيط:** 2026 - 2028 (خطة ثلاثية متجددة)
+
+**أفق الخارطة:** 24 شهراً مع مراجعة ربع سنوية لأولويات المبادرات
+
+**مالك المحفظة:** أ. إلينا فانس، PfMP (مدير المحفظة والتحول المؤسسي)
+
+**دورة التخطيط:** دورة التخطيط الاستراتيجي السنوية (تحديث ربع سنوي)
+
+**نسخة الخارطة وحالتها:** الإصدار 2.0 (معتمد من لجنة التوجيه الاستراتيجي في 15 مارس 2026)
+
+---
+
+## 2. مبادرات خارطة الطريق
+<!-- صف واحد لكل برنامج أو مشروع أو عملية، مرتبًا حسب تاريخ البدء. استخدم الأسماء الواردة في ميثاق كل مبادرة حتى لا تُتابع المبادرة نفسها باسمين عبر الدورات. وسجل الحالة من المجموعة الثابتة المتفق عليها في خارطة الطريق هذه، فالحالة النصية الحرة لا يمكن ترشيحها، وخارطة الطريق التي لا يمكن ترشيحها عرض وصفي غير قابل للتنفيذ والقياس. وحيث لا تخدم مبادرة أي هدف استراتيجي، فاكتب في الخلية أنها لا تخدم هدفًا صراحةً لا واتركها فارغة، فالفراغ لا يميز بينه وبين السهو. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | اسم المبادرة | النوع | الهدف الاستراتيجي | البداية | النهاية | الميزانية | الحالة |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | المنظومة السحابية الموحدة لتخطيط الموارد | تقني وتكاملي | التحول الرقمي والتميز التشغيلي | 2026-04-01 | 2026-06-30 | 3,500,000 ريال | قيد التنفيذ |
+| REQ-02 | أتمتة سلاسل الإمداد والمستودعات الذكية | تنظيمي وتشغيلي | أتمتة العمليات وخفض التكاليف بنسبة 40% | 2026-06-01 | 2026-09-30 | 4,200,000 ريال | مكتمل |
+| ACT-03 | منصة التقارير التحليلية والذكاء المؤسسي | حوكمة وامتثال | تمكين اتخاذ القرار بالبيانات اللحظية | 2026-08-15 | 2026-11-30 | 2,800,000 ريال | مخطط |
+| BEN-04 | بوابة الخدمات الذاتية وإدارة رأس المال البشري | بنية سحابية | ضمان الامتثال التنظيمي والأمني بنسبة 100% | 2026-10-01 | 2027-01-31 | 1,950,000 ريال | معتمد |
+| WBS-05 | طبقة التكامل السحابي والربط البرمجي API | أمن معلومات | التحول الرقمي والتميز التشغيلي | 2026-12-01 | 2027-03-31 | 1,250,000 ريال | قيد التنفيذ |
+
+---
+
+## 3. الاعتماديات والترتيب
+<!-- حيث لا يمكن لمبادرة أن تبدأ قبل أن تسلّم أخرى، سجل ذلك هنا باعتمادية محددة النوع لا في ملاحظة نصية، فالاعتمادية المسجلة في نص فقط لا يمكن الاستعلام عنها. وانتهاء إلى بدء هي الحالة الشائعة، أما بدء إلى بدء وانتهاء إلى انتهاء فت تنشأ حيث يجب أن تتحرك مبادرتان معًا. واذكر أثر تأخر السابقة في المال أو الجدول أو كليهما، فالاعتمادية التي لا يذكر أثرها لا يمكن التصرف بشأنها عند تأخر السابقة. -->
+
+| المعرف | المبادرة التابعة | نوع الاعتمادية | السابقة | مطلوب بحلول | الأثر عند التأخر |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | المنظومة السحابية الموحدة لتخطيط الموارد | نهاية إلى بداية (FS) | INIT-01 (المنظومة السحابية) | 2026-06-30 | تأخير بدء اختبارات التكامل لمدة أسبوعين |
+| REQ-02 | أتمتة سلاسل الإمداد والمستودعات الذكية | بداية إلى بداية (SS) | INIT-02 (سلاسل الإمداد) | 2026-09-30 | إعادة جدولة نافذة الإطلاق التشغيلي التجريبي |
+| ACT-03 | منصة التقارير التحليلية والذكاء المؤسسي | نهاية إلى نهاية (FF) | INIT-01 (البنية التحتية) | 2026-11-30 | زيادة طفيفة في استهلاك ساعات الاستشارات التقنية |
+| BEN-04 | بوابة الخدمات الذاتية وإدارة رأس المال البشري | نهاية إلى بداية (FS) | INIT-03 (البيانات) | 2027-01-31 | ترحيل تاريخ التدريب للمجموعة الثانية |
+---
+
+## 4. التمويل والسعة حسب الفترة
+<!-- هل الخطة مجدية، لا مجرد ما هو مخطط. وعمود «المتاح» هو المهم: هو التمويل أو السعة المخطط ناقص الملتزم به، وخارطة الطريق التي يكون فيها هذا الرقم سالبًا في فترة ما هي خارطة طريق ستنكسر في تلك الفترة. وسجل الافتراضات التي يعتمد عليها الصف، مثل تاريخ توظيف أو قرار تمويل لم يُتخذ بعد، لأن صف السعة بلا افتراضاته يُقرأ كالتزام والقارئ يعامله كذلك. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| الفترة | التمويل المخطط | السعة المخططة | العبء الملتزم | المتاح | ملاحظات |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| الربع الثاني 2026 | 3,500,000 ريال | 480 ساعة عمل / شهر | 420 ساعة عمل / شهر | 60 ساعة عمل (فائض) | تم التحقق من الجاهزية والامتثال لضوابط الأمن السيبراني |
+| الربع الثالث 2026 | 4,200,000 ريال | 620 ساعة عمل / شهر | 580 ساعة عمل / شهر | 40 ساعة عمل (فائض) | جلسات المتابعة والتنسيق مستمرة وفق الجدول المعتمد |
+| الربع الرابع 2026 | 2,800,000 ريال | 540 ساعة عمل / شهر | 490 ساعة عمل / شهر | 50 ساعة عمل (فائض) | تم رصد مخصص الطوارئ المعتمد لهذه المرحلة |
+
+---
+
+## 5. الافتراضات والقيود
+<!-- ما تفترضه خارطة الطريق وما الذي يحدّها. فالافتراض بلا مالك ولا تاريخ مراجعة لا يميز بينه وبين الحقيقة، فتمرر خارطة الطريق هذا الافتراض إلى الأمام إلى ما لا نهاية بعد أن تنتهي الظروف التي جعلته صحيحًا. وسجل القيود بالجدية نفسها، لأن القيد المسجل بلا أثر لا يمكن مقابلته بشيء. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | النوع | الوصف | الأثر على خارطة الطريق | المالك | تاريخ المراجعة |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | تقني وتكاملي | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | تأخير بدء اختبارات التكامل لمدة أسبوعين | أ. إلينا فانس، PfMP | 2026-06-30 |
+| REQ-02 | تنظيمي وتشغيلي | أتمتة دورة المشتريات والمستودعات والربط المباشر | إعادة جدولة نافذة الإطلاق التشغيلي التجريبي | م. فيصل الحربي، PMP | 2026-09-30 |
+| ACT-03 | حوكمة وامتثال | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | زيادة طفيفة في استهلاك ساعات الاستشارات التقنية | د. طارق المنصور، PfMP | 2026-11-30 |
+
+---
+
+## 6. تغييرات خارطة الطريق
+<!-- ما الذي تغير بين هذه النسخة من خارطة الطريق وبين السابقة، ولماذا. القارئ الذي يقارن بين خريطتين يحتاج السبب بقدر ما يحتاج التغيير، لأن السبب هو ما يخبره بصلاحية السبب نفسه في التغيير التالي. وسجل المعتمد، فخارطة الطريق التي تُعدَّل بلا معتمد خارطة طريق لا يملكها أحد. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| معرف التغيير | الوصف | السبب | المبادرات المتأثرة | اعتمده | التاريخ |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| CR-2026-01 | نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة | تحديث متطلبات التكامل الأمني السحابي | INIT-01, INIT-02 | أ. إلينا فانس، PfMP | 2026-06-30 |
+| CR-2026-02 | أتمتة دورة المشتريات والمستودعات والربط المباشر | توسيع نطاق التقارير التحليلية لإدارة العمليات | INIT-01, INIT-02 | م. فيصل الحربي، PMP | 2026-09-30 |
+| CR-2026-03 | بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة | مواءمة مسارات النشر مع إغلاق الربع المالي | INIT-01, INIT-02 | د. طارق المنصور، PfMP | 2026-11-30 |
+
+---
+
+## 7. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير المحفظة** | أ. إلينا فانس، PfMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **رئيس مكتب إدارة المشاريع** | د. طارق المنصور، PfMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **الراعي التنفيذي** | د. منى الغامدي (نائب الرئيس التنفيذي) | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>النموذج:</strong> خارطة طريق المحفظة | <strong>المرجع:</strong> PMO-00.01 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              نسخ المخطط
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill in the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field, based on the provided project context. Reference parameters.md for global project variables.&quot;,
+  &quot;form_name&quot;: &quot;Portfolio Roadmap&quot;,
+  &quot;document_reference&quot;: &quot;PMO-00.01&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Portfolio_Purpose_and_Scope&quot;: {
+      &quot;section&quot;: &quot;Portfolio Context and Planning Basis&quot;,
+      &quot;label&quot;: &quot;Portfolio Purpose and Scope&quot;,
+      &quot;guidance&quot;: &quot;What this portfolio covers and what it deliberately excludes, in the terms the strategy uses. A roadmap that does not state its boundaries cannot be read against a strategy that is wider than the portfolio, and the gap is mistaken for missing initiatives.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Planning_Period&quot;: {
+      &quot;section&quot;: &quot;Portfolio Context and Planning Basis&quot;,
+      &quot;label&quot;: &quot;Planning Period&quot;,
+      &quot;guidance&quot;: &quot;The period the roadmap plans for, and whether it is a financial year, a rolling three years, or a fixed cycle agreed elsewhere. Successive roadmaps are only comparable if this is the same each time.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Roadmap_Horizon&quot;: {
+      &quot;section&quot;: &quot;Portfolio Context and Planning Basis&quot;,
+      &quot;label&quot;: &quot;Roadmap Horizon&quot;,
+      &quot;guidance&quot;: &quot;How far ahead the roadmap looks. Record the horizon even where it equals the planning period, because the two are frequently confused and the confusion shows up later as a gap between what was planned and what was expected.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Portfolio_Owner&quot;: {
+      &quot;section&quot;: &quot;Portfolio Context and Planning Basis&quot;,
+      &quot;label&quot;: &quot;Portfolio Owner&quot;,
+      &quot;guidance&quot;: &quot;The single role accountable for the portfolio as a whole, which is usually not the owner of any one initiative in it. Where this is left blank, the roadmap has an author but no owner, and reprioritisation becomes nobody&#x27;s decision.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Planning_Cycle&quot;: {
+      &quot;section&quot;: &quot;Portfolio Context and Planning Basis&quot;,
+      &quot;label&quot;: &quot;Planning Cycle&quot;,
+      &quot;guidance&quot;: &quot;How often the roadmap is refreshed and by what governance forum, such as a quarterly investment board. The cycle is what makes two versions of the roadmap comparable, and a roadmap refreshed on no cycle is a document nobody can diff.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Roadmap_Version_and_Status&quot;: {
+      &quot;section&quot;: &quot;Portfolio Context and Planning Basis&quot;,
+      &quot;label&quot;: &quot;Roadmap Version and Status&quot;,
+      &quot;guidance&quot;: &quot;Which planning cycle this represents, its version number, and whether it is draft or approved. Without a version, two roadmaps differing by a few initiatives cannot be read as a change of direction rather than as two views of the same portfolio.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_ID&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The stable identifier for the initiative, used by every later cycle of this roadmap and by the dependency and funding sections. A roadmap reviewed across several cycles is unreadable if an initiative is named differently each time, because the reader cannot tell whether two rows are one initiative or two.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Initiative_Name&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;Initiative Name&quot;,
+      &quot;guidance&quot;: &quot;The name of the program, project, or operation, taken from its charter so the same initiative is not tracked under two names. Where a name has changed, record the former name rather than replacing it, or the history becomes impossible to follow.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Type&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;Type&quot;,
+      &quot;guidance&quot;: &quot;Whether the row is a Program, Project, or Operation. The type determines what governance applies, so an initiative recorded without one has no defined approval path, and the roadmap cannot answer what kind of decision is needed about it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Strategic_Objective&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;Strategic Objective&quot;,
+      &quot;guidance&quot;: &quot;The specific objective this initiative serves, named from the strategy rather than from the initiative&#x27;s own charter. An initiative that maps to no objective is a candidate for removal, and the roadmap is the only place that becomes visible; where the mapping is genuinely absent, say so in the cell rather than leaving it blank.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Start&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;Start&quot;,
+      &quot;guidance&quot;: &quot;When the initiative is expected to start, at the precision this table uses throughout. Mixed precision within one table is the thing to avoid, because the reader compares the rows against each other and a month beside a quarter invites a wrong conclusion.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_End&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;End&quot;,
+      &quot;guidance&quot;: &quot;When the initiative is expected to deliver its outcomes, which is not the same as when its budget is spent. An initiative that delivers early and closes its accounts later is normal, and recording the accounts date as the end date moves every dependent initiative on the roadmap.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Budget&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;Budget&quot;,
+      &quot;guidance&quot;: &quot;The funding envelope allocated to the initiative for the planning period, not a spend forecast. The roadmap answers whether the money is available in the period, not whether it is being spent, and the two are routinely confused when the figure is taken from a finance system.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Status&quot;: {
+      &quot;section&quot;: &quot;Roadmap Initiatives&quot;,
+      &quot;label&quot;: &quot;Status&quot;,
+      &quot;guidance&quot;: &quot;Where the initiative currently stands against the fixed set agreed for this roadmap, such as Proposed, Funded, In Progress, On Hold, or Complete. A free-text status cannot be sorted or filtered, and a roadmap that cannot be filtered is a picture rather than a plan.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_ID&quot;: {
+      &quot;section&quot;: &quot;Dependencies and Sequencing&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier of the initiative whose dependency is being recorded, matching the ID used in the initiatives section so the row can be joined to it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Dependent_Initiative&quot;: {
+      &quot;section&quot;: &quot;Dependencies and Sequencing&quot;,
+      &quot;label&quot;: &quot;Dependent Initiative&quot;,
+      &quot;guidance&quot;: &quot;The initiative that cannot proceed, or cannot proceed on its own dates, without the predecessor. Name it rather than describing it, because a dependency stated in terms of a category rather than a named initiative cannot be actioned when it is threatened.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Dependency_Type&quot;: {
+      &quot;section&quot;: &quot;Dependencies and Sequencing&quot;,
+      &quot;label&quot;: &quot;Dependency Type&quot;,
+      &quot;guidance&quot;: &quot;Whether the dependency is Finish to Start, Start to Start, Finish to Finish, or Start to Finish. The type determines how much float the successor has, so an untyped dependency cannot be planned; Finish to Start is the common case and the others arise where two initiatives must move together.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Predecessor&quot;: {
+      &quot;section&quot;: &quot;Dependencies and Sequencing&quot;,
+      &quot;label&quot;: &quot;Predecessor&quot;,
+      &quot;guidance&quot;: &quot;The initiative on which this one depends, named and identified. A dependency recorded only in prose is a dependency nobody can query, and it is therefore a dependency that will not be checked before the predecessor slips.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Required_By&quot;: {
+      &quot;section&quot;: &quot;Dependencies and Sequencing&quot;,
+      &quot;label&quot;: &quot;Required By&quot;,
+      &quot;guidance&quot;: &quot;The date by which the dependency must be satisfied for the dependent initiative to hold its own dates. Where the required date is later than the predecessor&#x27;s planned finish, the gap is the risk and should be visible here rather than discovered later.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Impact_if_Late&quot;: {
+      &quot;section&quot;: &quot;Dependencies and Sequencing&quot;,
+      &quot;label&quot;: &quot;Impact if Late&quot;,
+      &quot;guidance&quot;: &quot;What happens to the dependent initiative if the predecessor does not deliver in time, in money, schedule, or scope terms. A dependency with no stated impact is not actionable when the predecessor slips, because nobody knows whether to escalate, re-sequence, or absorb the delay.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Period&quot;: {
+      &quot;section&quot;: &quot;Funding and Capacity by Period&quot;,
+      &quot;label&quot;: &quot;Period&quot;,
+      &quot;guidance&quot;: &quot;The planning period the row covers, using the same periods as the planning basis section so the two can be read together. Where a quarter appears in one table and a month in another, the reader has to reconcile them before drawing any conclusion.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Planned_Funding&quot;: {
+      &quot;section&quot;: &quot;Funding and Capacity by Period&quot;,
+      &quot;label&quot;: &quot;Planned Funding&quot;,
+      &quot;guidance&quot;: &quot;The money available in the period across the whole portfolio, from the approved budget rather than from requests. The roadmap&#x27;s purpose is to test the plan against what is actually available, so a figure taken from requests tests nothing.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Planned_Capacity&quot;: {
+      &quot;section&quot;: &quot;Funding and Capacity by Period&quot;,
+      &quot;label&quot;: &quot;Planned Capacity&quot;,
+      &quot;guidance&quot;: &quot;The resource capacity available in the period, in the unit the organisation uses, whether that is person-days, FTEs, or machine hours. The unit matters because a capacity row expressed in a different unit from the rest of the roadmap cannot be added up with anything else.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Committed_Load&quot;: {
+      &quot;section&quot;: &quot;Funding and Capacity by Period&quot;,
+      &quot;label&quot;: &quot;Committed Load&quot;,
+      &quot;guidance&quot;: &quot;The capacity already committed to initiatives in the period, including work that will not finish inside it. Excluding the part that spills into the next period is the most common way a capacity table overstates what is free.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Available&quot;: {
+      &quot;section&quot;: &quot;Funding and Capacity by Period&quot;,
+      &quot;label&quot;: &quot;Available&quot;,
+      &quot;guidance&quot;: &quot;The difference between planned and committed. This is the column that tells the reader whether the plan is feasible; a roadmap where this figure is negative in some period is a roadmap that will break in that period, and the shortfall is visible here or nowhere.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Notes&quot;: {
+      &quot;section&quot;: &quot;Funding and Capacity by Period&quot;,
+      &quot;label&quot;: &quot;Notes&quot;,
+      &quot;guidance&quot;: &quot;Anything that changes how the row should be read, such as a known shortage, a hiring assumption the row depends on, or a funding decision not yet taken. A capacity row without its assumptions reads as a commitment, and the reader treats it as one.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f27_ID&quot;: {
+      &quot;section&quot;: &quot;Assumptions and Constraints&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the assumption or constraint, so it can be referred to from the change log and from the initiative rows that depend on it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f28_Type&quot;: {
+      &quot;section&quot;: &quot;Assumptions and Constraints&quot;,
+      &quot;label&quot;: &quot;Type&quot;,
+      &quot;guidance&quot;: &quot;Whether the row is an Assumption or a Constraint. An assumption may prove false and be replaced; a constraint may not be replaced at all, only planned around, and recording both under one heading loses that distinction exactly where it matters.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f29_Description&quot;: {
+      &quot;section&quot;: &quot;Assumptions and Constraints&quot;,
+      &quot;label&quot;: &quot;Description&quot;,
+      &quot;guidance&quot;: &quot;What is being assumed, or what is limiting the portfolio. State it as a testable statement rather than a sentiment, since an assumption phrased as a hope cannot be shown to have failed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f30_Impact_on_Roadmap&quot;: {
+      &quot;section&quot;: &quot;Assumptions and Constraints&quot;,
+      &quot;label&quot;: &quot;Impact on Roadmap&quot;,
+      &quot;guidance&quot;: &quot;The effect on the roadmap if this proves false, or proves tighter than stated. An assumption recorded without its impact cannot be prioritised for testing, because nothing distinguishes the consequential ones from the trivial.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f31_Owner&quot;: {
+      &quot;section&quot;: &quot;Assumptions and Constraints&quot;,
+      &quot;label&quot;: &quot;Owner&quot;,
+      &quot;guidance&quot;: &quot;Who is responsible for confirming or managing it. An assumption with no owner is not being watched, and the roadmap carries it forward indefinitely after the conditions that made it true have gone.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f32_Review_Date&quot;: {
+      &quot;section&quot;: &quot;Assumptions and Constraints&quot;,
+      &quot;label&quot;: &quot;Review Date&quot;,
+      &quot;guidance&quot;: &quot;When the assumption will next be checked. This is what separates an assumption from a fact in practice: an assumption nobody revisits is indistinguishable from a fact, and it stops being questioned precisely when it should be.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f33_Change_ID&quot;: {
+      &quot;section&quot;: &quot;Roadmap Changes&quot;,
+      &quot;label&quot;: &quot;Change ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the change, used to link it to the decision record and to the meeting that authorised it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f34_Description&quot;: {
+      &quot;section&quot;: &quot;Roadmap Changes&quot;,
+      &quot;label&quot;: &quot;Description&quot;,
+      &quot;guidance&quot;: &quot;What changed in the roadmap, stated concretely enough to be diffed against the previous version. A change described only as a realignment cannot be checked to see whether it actually happened.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f35_Reason&quot;: {
+      &quot;section&quot;: &quot;Roadmap Changes&quot;,
+      &quot;label&quot;: &quot;Reason&quot;,
+      &quot;guidance&quot;: &quot;Why it changed. A reader comparing two roadmaps needs the reason as much as the change itself, because the reason is what tells them whether the same reasoning applies to the next change or whether the reasoning has been overtaken.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f36_Affected_Initiatives&quot;: {
+      &quot;section&quot;: &quot;Roadmap Changes&quot;,
+      &quot;label&quot;: &quot;Affected Initiatives&quot;,
+      &quot;guidance&quot;: &quot;The initiatives the change touches, by identifier where possible. This is what allows the reader to see whether a change described as minor has in fact moved a committed date.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f37_Approved_By&quot;: {
+      &quot;section&quot;: &quot;Roadmap Changes&quot;,
+      &quot;label&quot;: &quot;Approved By&quot;,
+      &quot;guidance&quot;: &quot;Who authorised the change. A roadmap altered without an approver is a roadmap nobody owns, and the next alteration is as likely to be an error as a decision.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f38_Date&quot;: {
+      &quot;section&quot;: &quot;Roadmap Changes&quot;,
+      &quot;label&quot;: &quot;Date&quot;,
+      &quot;guidance&quot;: &quot;When the change was approved, which fixes the version of the roadmap in which it took effect and lets the change log be read in order.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">مكتبة بايثون وأمر التشغيل</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">مخططات JSON</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

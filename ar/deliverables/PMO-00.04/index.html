@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-00.04 مصفوفة سعة الموارد | تسليمات</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-00.04/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-00.04</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-00.04</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 00: إدارة البرامج والمحافظ
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span>
+            <span class="tag pack">general</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">مصفوفة سعة الموارد</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">Resource Capacity Matrix</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-00.04 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-00.04 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. النظرة العامة والبيانات الوصفية
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. قالب التسليمة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. الدليل الإرشادي للممارس
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. مثال واقعي مكتمل
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. مخطط البيانات Draft 2020-12
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 00:</strong> إدارة البرامج والمحافظ
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-00.04 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد/00_04_مصفوفة_سعة_الموارد_قالب.npy
+token_count: 4032
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.920900+00:00&#x27;
+form_id: PMO-00.04
+language: ar
+status: approved
+---
+--&gt;
+
+&lt;!-- 
+تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+تبيّن مصفوفة سعة الموارد ما إذا كانت الخطة مجدية من حيث الأشخاص المتاحون لتنفيذها. فهي تقارن ما يحتاجه البرنامج أو المشروع بما هو متاح فعلًا، والفارق هو ما يستحق القراءة: فالخطة التي تتطلب سعة أكبر من المتاحة ليست خطة تحتاج جهدًا أكثر، بل خطة لا يمكن تنفيذها كما كُتبت.
+
+والغرض من فصل الطلب عن التوفر هو أن هذين يجمعان من موضعين مختلفين، ولذلك نادرًا ما يُوفَّق بينهما من تلقاء نفسه. فالطلب يأتي من الجدول الزمني والنطاق، والتوفر يأتي من خطة الموارد وشكل المؤسسة الفعلي، ولا يوفّق أحد بينهما حتى تصنع مصفوفة كهذه الفجوة ظاهرة. وعمود الفجوة هو ما يبحث عنه القارئ، فالمصفوفة التي تسجل المجاميع وحدها قد تُهملت المؤشر الرئيسي المهم.
+
+المحاذاة: ينبغي أن تكون مصفوفة سعة الموارد متسقة مع الوثائق التالية: خارطة طريق المحفظة، ميثاق البرنامج، خطة إدارة المشروع، هيكل تجزئة الموارد، خطة المشتريات.
+
+إرشادات الكتابة:
+
+*  اذكر وحدة السعة مرة واحدة واستخدمها في كل الجدول، سواء كانت أيام عمل أو وظائف بدوام كامل أو ساعات لكل فترة. فالمصفوفة التي تخلط وحداتها بين صفوفها لا يمكن جمعها، ويصبح المجموع في أسفلها بلا معنى حسابي لا مجرد تقريب.
+
+*  سجل السعة لكل فترة لا إجمالًا. فمن له ألف يوم عمل متاحة وهو مشغول تمامًا في الشهر الذي يُنفَّذ فيه العمل لا سعة له البتة، والرقم الإجمالي يخفي ذلك بالضبط.
+
+*  سجل الطلب من الخطة لا مما يؤديه الفريق حاليًا. عمود الطلب هو ما يشترطه الجدول والنطاق، وعمود التوفر هو الموجود. وتسجيل الرقم نفسه في العمودين أشيع سبب لخطأ مصفوفة السعة، لأنه يجعل المصفوفة توافق الخطة بدل الواقع.
+
+*  سجل القيود بوصفها نتائج لا صفات. فعبارة «أتمتة الاختبارات نقطة فشل وحيدة لأن شخصًا واحدًا يمسكها» قابلة للتصرف، وعبارة «أتمتة الاختبارات مخاطرة» ليست كذلك.
+
+*  وحين تُغطَّى فجوة بمتعهد أو بمورد مشترك، سجل العقد أو الاتفاق الذي يغطيها. فالفجوة المملوءة على فهم أن أحدًا سيساعد ليست مغطاة، ويظهر الفرق في الأسبوع الذي يحتاج فيه المساعدة إلى مكان آخر.
+
+ملاحظات التخصيص:
+
+*  قد تُدار المصفوفة على مستوى المحفظة عبر جميع المبادرات، أو على مستوى البرنامج عبر مكوناته، أو لمشروع واحد. وينبغي أن يحدد النموذج أيّها، فمصفوفة المحفظة تُستخدم للقرار بين المبادرات، ومصفوفة المشروع تُستخدم للحكم على جدوى خطة واحدة.
+
+*  وحين تعمل المؤسسة أداة لتخصيص الموارد، قد تكون المصفوفة مقتطفًا لا مصدر الحقيقة. فسجل ذلك، حتى لا يتعامل القارئ مع مقتطف قديم على أنه حالي.
+
+*  أضف صفوفًا أو احذفها حسب الحاجة. وحين يشغل الدور أكثر من شخص، سجل الدور مرة واحدة واذكر التقسيم في عمود الملاحظات، فالصف لكل شخص يخفي إجمالي سعة الدور.
+
+*  قد تدير المصفوفة وظيفة تخصيص الموارد أو تخطيط القوى العاملة، وعندئذٍ يُشار إليها بدل تكرار جانب التوفر.
+
+إرشادات الأعمدة، حسب العمود:
+
+صفوف السعة حسب المورد:
+
+*  **المعرف:** معرف الدور الوظيفي، يُستخدم في قسم الطلب وقسم الفجوة ليُقارَن الصفوف الثلاثة ببعضها.
+
+*  **الدور أو الفريق:** الدور أو الفريق، مذكورًا كما يتطلب العمل لا كما يرسمه الهيكل التنظيمي. فالمصفوفة المرتبة حسب الأقسام القائمة لا تستطيع أبدًا أن تُظهر فجوة، لأنها لا تسرد إلا ما هو قائم، وغياب الكفاية اللازمة يبدو غيابها من الخطة لا من المؤسسة.
+
+*  **الفترة:** الفترة التي يغطيها الصف، نفسها في كل الجدول.
+
+*  **إجمالي المتاح:** السعة الموجودة في الفترة قبل أي تخصيص، بالوحدة المعلنة للمصفوفة.
+
+*  **المخصص:** السعة الملتزم بها بالفعل في مكان آخر من المحفظة. هذا هو العمود الذي يُهمل أكثر من غيره، وبدونه يصبح المتاح هو الإجمالي، وهو ليس ما يستطيع المشروع استخدامه. وهو أيضًا العمود الذي يكشف موردًا مشتركًا بين مبادرات دون أن يعلم أي من المالكين.
+
+*  **المتبقي:** ما بقي بعد التخصيص، وهو الرقم الذي يملكه المخطط فعلًا
+
+*  **القيود أو نقاط الفشل الوحيدة:** ما يحدّ من هذا المورد، كموقع أو مؤهل يملكه شخص واحد أو ترخيص أو أداة لا يملكها إلا شخص واحد أو مدة إشعار. سجل النتيجة لا الصفة.
+
+*  **ملاحظات:** ما يغير كيفية قراءة الصف، كوظيفة شاغرة معروفة أو إجازة مخططة أو مورد مشترك مع محفظة أخرى.
+
+صفوف الطلب:
+
+*  **المعرف:** معرف الدور الذي يليه الطلب، مطابقًا للمعرف المستخدم في قسم السعة.
+
+*  **الدور الوظيفي:** الدور الذي يقع عليه الطلب، بنفس التسمية المستخدمة في قسم السعة. يجب أن تكون القائمتان واحدة، وإلا استبعدت المقارنة ضمنًا الأدوار الواردة في إحداهما فقط، وهي عادةً الأدوار التي بها مشكلة.
+
+*  **الفترة:** الفترة التي يقع فيها الطلب.
+
+*  **السعة المطلوبة:** ما يشترطه النطاق والجدول الزمني في تلك الفترة.
+
+*  **مصدر الطلب:** أي جزء من الخطة ينشئه، كـ مخرج أو حزمة عمل
+
+*  **الأولوية:** هل الطلب جوهري أم يمكن تأجيله أو تخفيضه. وبدون أولوية لا علاج للفجوة، إذ الردود المتاحة هي زيادة السعة أو نقل العمل أو تقليصه، ولا شيء في المصفوفة يقول أيّها يقبله البرنامج.
+
+صفوف تحليل الفجوة:
+
+*  **الدور الوظيفي:** الدور الذي تنطبق عليه الفجوة.
+
+*  **الفجوة:** الفرق بين المطلوب والمتبقي، مذكورًا رقمًا بإشارة، حتى لا تُقرأ زيادة على أنها نقص. هذا هو الرقم الذي وُجدت المصفوفة لأجله.
+
+*  **الفترة:** الفترة التي تقع فيها الفجوة.
+
+*  **الحل المخطط:** كيف ستُغلق الفجوة، بالتكليف أو بمتعهد أو بنقل العمل بين الفترات أو بتقليل النطاق أو بقبول المخاطر.
+
+*  **مالك الحل:** من المسؤول عن إغلاقها. فالفجوة التي لها حل مخطط ولا مالك هي فجوة يتمنى المرجو حلها، وهي أشيع طريقة يُعتمد عليها في مصفوفة سعة بعد أن تصير غير صالحة.
+
+*  **تاريخ الحل:** متى يُتوقع أن يكون الحل قائمًا. فهذا ما يخبر القارئ بأن الخطة ما زالت مجدية، فسجله بدل ترك الصف مفتوحًا، وحين يمر التاريخ دون حل فصعّد بدل نقل التاريخ.
+
+صفوف الاحتياطي:
+
+*  **الدور الوظيفي:** الدور الذي ينطبق عليه الاحتياطي.
+
+*  **نوع الاحتياطي:** هل هو احتياطي سعة أم وقت أم نطاق. والثلاثة غير قابلة للمبادلة: احتياطي الوقت يُنفق مرة واحدة، واحتياطي السعة يُنفق على أي شيء، واحتياطي النطاق يقلّل المخرج.
+
+*  **مقدار الاحتياطي:** حجم الاحتياطي بالوحدة المعلنة.
+
+*  **كيف سيُستخدم:** ما الذي يحميه الاحتياطي، حتى لا يُستهلك بهدوء على شيء لم يُحتجز لأجله.
+--&gt;
+
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{الوحدة_التنظيمية}} - {{فترة_التخطيط}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;مصفوفة سعة الموارد&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير البرنامج:** {{اسم_مدير_البرنامج}} | **إعداد:** {{معد_الوثيقة}} |
+| :--- | :--- | :--- |
+
+---
+
+## 1. أساس المصفوفة
+&lt;!-- ما الذي تغطيه هذه المصفوفة وبأي وحدة وعلى أي فترات. سجل الوحدة مرة واحدة واستخدمها في كل الجدول. وسجل المستوى الذي تُدار عليه، فمصفوفة المحفظة تُستخدم للقرار بين المبادرات ومصفوفة المشروع للحكم على جدوى خطة واحدة. وسجل ما إذا كانت مصدر الحقيقة أم مقتطفًا من أداة تخصيص موارد، حتى لا يتعامل القارئ مع مقتطف قديم على أنه حالي. --&gt;
+
+**نطاق المصفوفة ومستواها:** [ أضف التفاصيل... ]
+
+**وحدة قياس السعة:** [ أضف التفاصيل... ]
+
+**الفترات المشمولة:** [ أضف التفاصيل... ]
+
+**مصدر الحقيقة أم مقتطف:** [ أضف التفاصيل... ]
+
+**مالك المصفوفة:** [ أضف التفاصيل... ]
+
+**آخر تحديث:** [ أضف التفاصيل... ]
+
+---
+
+## 2. السعة حسب المورد
+&lt;!-- ما هو متاح، بالوحدة نفسها وفي كل فترة. عمود المخصص هو ما يُهمل أكثر من غيره، وبدونه يصبح المتاح هو الإجمالي، وهو ليس ما يستطيع المشروع استخدامه. وسجل السعة لكل فترة لا إجمالًا، فمن له سعة كبيرة متاحة وهو مشغول تمامًا في الشهر الذي يُنفَّذ فيه العمل لا سعة له البتة. وسجل القيود بوصفها نتائج لا صفات. وحين يشغل الدور أكثر من شخص فسجل الدور مرة واحدة واذكر التقسيم في الملاحظات، فالصف لكل شخص يخفي إجمالي سعة الدور. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | الدور أو الفريق | الفترة | إجمالي المتاح | المخصص | المتبقي | القيود أو نقاط الفشل الوحيدة | ملاحظات |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 3. الطلب حسب المورد
+&lt;!-- ما تشترطه الخطة، وهو رقم مختلف عمّا يتحقق حاليًا. وسجل الرقم الذي بُنيت عليه الخطة لا الرقم الجاري تحقيقه، فالثاني نتيجة لخطأ الأول، والإبلاغ عنه بوصفه المتطلب يجعل العجز يختفي من الخطة. وسجل مصدر الطلب ليُرجع إلى مخرج أو حزمة عمل، فالطلب الذي لا يُرجع إلى شيء في الخطة لا يمكن الطعن فيه. وسجل أولوية، فبدونها لا علاج للفجوة، إذ الردود المتاحة هي زيادة السعة أو نقل العمل أو تقليصه، ولا شيء في المصفوفة يقول أيّها يقبله البرنامج. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | الدور الوظيفي | الفترة | السعة المطلوبة | مصدر الطلب | الأولوية |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 4. تحليل الفجوة
+&lt;!-- الفرق بين المطلوب والمتبقي، وهو المؤشر الرئيسي الذي يبحث عنه القارئ في المصفوفة كلها. اذكره رقمًا بإشارة حتى لا تُقرأ زيادة على أنها نقص. وسجل حلًا مخططًا، وسجلًا مالكًا له على حدة، فالفجوة التي لها حل ولا مالك هي فجوة يتمنى حلها، وهي أشيع طريقة يُعتمد عليها في مصفوفة سعة بعد أن تصير غير صالحة. وتاريخ الحل هو ما يخبر القارئ بأن الخطة ما زالت مجدية، فسجله بدل ترك الصف مفتوحًا. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| الدور الوظيفي | الفجوة | الفترة | الحل المخطط | مالك الحل | تاريخ الحل |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 5. الاحتياطي
+&lt;!-- ما تحتفظ به الخطة، وما الذي يحميه هذا الاحتياطي. أنواع الاحتياطي الثلاثة غير قابلة للمبادلة: احتياطي الوقت يُنفق مرة واحدة، واحتياطي السعة يُنفق على أي شيء، واحتياطي النطاق يقلّل المخرج. وسجل أي نوع كل احتياطي، فالخطة التي لا تحتفظ باحتياطي نطاق وتذكر أنها تملك مهلة فائضة هي خطة يكون احتياطيها هو العمل المقطوع. وسجل ما الذي يحميه كل احتياطي حتى لا يُستهلك بهدوء على شيء لم يُحتجز لأجله. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| الدور الوظيفي | نوع الاحتياطي | مقدار الاحتياطي | كيف سيُستخدم |
+| ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 6. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مسؤول تخطيط الموارد** | {{اسم_مسؤول_تخطيط_الموارد}} | _______________________ | [.... -.... -.... ] |
+| **مدير البرنامج** | {{اسم_مدير_البرنامج}} | _______________________ | [.... -.... -.... ] |
+| **مدير مكتب إدارة المشاريع** | {{اسم_مدير_مكتب_إدارة_المشاريع}} | _______________________ | [.... -.... -.... ] |
+---
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;النموذج:&lt;/strong&gt; مصفوفة سعة الموارد | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-00.04 &lt;br&gt;
+ &lt;i&gt;تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: ar
+layout: default
+title: مصفوفة سعة الموارد
+nav_order: 1
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد/00_04_مصفوفة_سعة_الموارد_دليل.npy
+token_count: 3495
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.922518+00:00'
+form_id: PMO-00.04
+status: approved</p>
+<hr />
+<div>
+
+## دليل نماذج تسليمات
+# مخرج المشروع: مصفوفة سعة الموارد
+
+**المرجع الوثيقي:** `PMO-00.04`
+
+يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من **مصفوفة سعة الموارد** واستخدامه
+بصورة فعّالة بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة مشروع رسمية متوافقة مع إطار عمل تسليمات يعرف باسم **مصفوفة سعة الموارد**، ويُظهر ما إذا كانت الخطة
+مجدية من حيث الأشخاص المتاحين لتنفيذها.
+
+يسجّل أساس المصفوفة ووحدة قياسها، والسعة القائمة بحسب الدور والفترة وما
+خُصِّص منها في مكان آخر، والطلب الذي ينشئه النطاق والجدول الزمني مع مصدره
+وأولويته، والفرق بين اثنين مع كيفية إغلاق كل فجوة والجهة المسؤولة عن معالجتها وإغلاقها، والاحتياطي
+الذي تحتفظ به الخطة وما يحميه هذا الاحتياطي.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن الطلب والعرض يُجمعان من موضعين مختلفين، ولذلك لا يتطابقان أبدًا من
+تلقاء نفسيهما. يأتي الطلب من الجدول الزمني والنطاق، ويأتي العرض من خطة
+الموارد وشكل المؤسسة الفعلي، ولا يضع أحدهما في مقابل الآخر حتى تجعل مصفوفة
+كهذه الفجوة ظاهرة. وعمود الفجوة هو ما يبحث عنه القارئ، فالمصفوفة التي تسجّل
+الإجماليات وحدها قد أسقطت المؤشر الرئيسي الذي يهم.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعدّ هذا المخرج في مجموعة **إدارة البرامج والمحفظة**، ويُعاد تسويته كلما
+تغير الجدول الزمني تغييرًا جوهريًا أو أُعيدت هيكلة المؤسسة. وهو تسوية
+متكررة لا وثيقة تُنتج مرة واحدة، لأن السعة تُعاد توزيعها باستمرار، والمصفوفة
+التي لا تُحدَّث تصف مؤسسة لم تعد موجودة.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكه مدير البرنامج، ويُسوّى مع وظيفة تخطيط الموارد أو القوى
+العاملة التي تملك جانب العرض. ويوقّعه مكتب إدارة المشاريع والشريك المالي
+للأعمال، لأن الفجوة التي يُغلقها مقاول هي تغيير في التكلفة ولا ينبغي الموافقة
+عليها دون من يرى التكلفة.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  المصفوفة قد تُصيانعلى مستوى المحفوظةعبر جميع المبادرات،أو على مستوى البرنامجعبر مكوناته،أو لمشروع واحد. ينباي النموذج أي منها،فإن مصفوفة المحفوظةتُستعمل للقراربين المبادرات،ومصفوفة المشروعتُستعمل للقرار ما إن كانتخطة واحدة أم لا.
+*  أذا تعمل المؤسسةأداة تخطيط موارد،فقد تكون المصفوفةاستخلاصًا لا مصدرالحقيق. سجّل ذلك،لأن لا يتعاملالقارئ قديم علىأنه حالي.
+*  أضف أو احذف الصفوفحسب الحاجة. وحينيشغل الدور أكثرمن شخص، سجّلالدور مرة وادكرالتقسيم في الملاحظات،فاصل صف لكل شخصيخفي السعة الإجمالية للدور.
+*  قد تصان المصفوفةوظيفة تخطيط الموارد،في حين الكثابة في عارضها اتخصصبالإشار إليها بدل تكرارها،فاصل من الإشارة التكريرة.
+*  قد يُهمل قسم الاحتياطيمركزًا، حين تحتظ المؤسسةالاحتياطي مركزًا،يُقال النموذج بصراحة،وليس ترك قارئًا علىأن الخطة تحتفظ على أنّها لا تحتفظ إلى.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن تتسق مصفوفة سعة الموارد مع المستندات التالية:
+*  خارطة طريق المحفظة
+*  ميثاق البرنامج
+*  خطة إدارة المشروع
+*  هيكل تجزئة الموارد
+*  خطة التعاقد
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإتمام **مصفوفة سعة الموارد** بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية استنادًا إلى
+سياق المشروع (مع التأكد من الرجوع إلى `parameters.md` للمتغيرات العامة):
+
+*  **نطاق المصفوفة ومستواها:** ما تغطيه هذه المصفوفة وبأي مستوى تُصان، سواء على مستوى المحفظة كلها عبر المبادرات، أو على مستوى البرنامج عبر مكوناته، أو لمشروع واحد. والمستوى يحدد ما تُستخدم المصفوفة لاتخاذه: مصفوفة المحفظة تقرر بين المبادرات، ومصفوفة المشروع تقرر هل الخطة واحدة أم لا، وقراءة إحداهما على أنها الأخرى تنتج جوابًا واثقًا خاطئًا.
+*  **وحدة قياس السعة:** الوحدة المستعملة لكل رقم في المصفوفة، سواء أيام شخص أو ما يعادلها بدوام كامل أو ساعات في الفترة. اذكرها مرة واحدة واستعملها في كل الجدول، فالمصفوفة التي تخلط وحداتها بين صفوفها لا يمكن جمعها، ومجموعها في أسفلها يصير بلا معنى حسابي لا مجرد تقريب.
+*  **الفترات المشمولة:** الفترات الزمنية التي تغطيها المصفوفة، وتطابق فترات الجدول الذي تُقارن به. وحين تكون المصفوفة سنوية والجدول أسبوعيًا، تُجرى المقارنة يدويًا في كل مرة، ولذلك لا تُجرى، وهكذا يبقى العجز الفصلي حيًّا حتى يصير فشلًا في التسليم.
+*  **مصدر الحقيقة أم مقتطف:** هل هذه المصفوفة هي السجل المعتمد أم استخلاصًا من أداة تخطيط الموارد. بين ذلك، لأن من يتعامل مع استخلاص قديم على أنه حالي يخطط على أساس سعة أُعيد توزيعها قبل أسابيع، ولا يظهر الخطأ إلا حين يتعذر توفير العمل.
+*  **مالك المصفوفة:** الدور الواحد المساءل عن المصفوفة ككل، وهو عادة ليس مالك أي مورد فيها. وحين يُترك هذا الحقل فارغًا تكون للمصفوفة مساهمون ولا أحد ينتبه إلى أن صفًا لم يُحدَّث منذ إعادة الهيكلة، فلا يبقى من يسأل عنه.
+*  **آخر تحديث:** تاريخ آخر تسوية للمصفوفة مقابل الخطة، وأي نسخة من الجدول جرت مقابلها. ومن دونه يتعذر على المعنيين أن يميز المصفوفة السارية عن مهجورة، والنوعان متماهيان تمامًا في الصفحة.
+*  **المعرف:** معرف الدور الوظيفي، يُستعمل في قسم الطلب وقسم الفجوة ليُقارَن الصفوف الثلاثة ببعضها. ومن دون معرف مشترك تُجرى المقارنة بالعين، وأصحاب الأدوار المتشابهة في الأسماء هم الأكثر عرضة للالتباس.
+*  **الدور أو الفريق:** الدور أو الفريق، مذكورًا كما يتطلب العمل لا كما يرسمه الهيكل التنظيمي. فالمصفوفة المرتبة حسب الأقسام القائمة لا تستطيع أن تُظهر فجوة أبدًا، لأنها لا تسرد إلا ما هو قائم، وغياب الكفاية اللازمة يبدو غيابها من الخطة لا من المؤسسة.
+*  **الفترة:** الفترة التي يغطيها الصف، وهي نفسها في كل الجدول. فتسجيل السعة لكل فترة لا كإجمالي هو ما يجعل المصفوفة نافعة، لأن موردًا متاح له ألف يوم شخص ومحجوز بالكامل في الشهر الذي يحتاج فيه العمل لا سعة له البتة.
+*  **إجمالي المتاح:** السعة الموجودة في الفترة قبل أي تخصيص، بالوحدة المعلنة للمصفوفة. وهذا رقم عن المؤسسة لا عن المشروع، وتسجيله هنا هو ما يتيح للقارئ أن يرى كم منها متاح فعلًا.
+*  **المخصص:** السعة الملتزم بها بالفعل في مكان آخر من المحفظة. هذا هو العمود الذي يُهمل أكثر من غيره، وبدونه يصير المتاح هو الإجمالي، وهو ليس ما يمكن للمشروع استعماله. وهو أيضًا العمود الذي يكشف موردًا مشتركًا بين مبادرتين دون أن يعرف أحد المالكين.
+*  **المتبقي:** ما بقي بعد التخصيص، وهو الرقم الذي يملكه المخطط فعلًا. وحين يكون سالبًا تكون المصفوفة قد وجدت مشكلة حقيقية، وحين يُسجَّل صامتًا على أنه صفر لأن أحدًا لم يريد كتابة رقم سالب تكون المشكلة مُخفاة لا محلولة.
+*  **القيود أو نقاط الفشل الوحيدة:** ما يحدّ من هذا المورد: موقع، أو مؤهل يحمله شخص واحد، أو رخصة، أو أداة لا يجيد تشغيلها إلا شخص واحد، أو مدة إشعار. سجّل الأثر لا الصفة، فعبارة أتمتة الاختبار نقطة فشل وحيدة لأن شخصًا واحدًا يمسك بها قابلة للتصرف، أما عبارة أتمتة الاختبار خطر فلا.
+*  **ملاحظات:** كل ما يغيّر كيفية قراءة الصف، كوظيفة شاغرة معروفة أو إجازة مخططة أو مورد مشترك مع محفظة أخرى. وحين يشغل الدور أكثر من شخص، سجّل الدور مرة واحدة واذكر التقسيم هنا، لأن صفًا لكل شخص يخفي السعة الإجمالية للدور.
+*  **المعرف:** معرف الدور الوظيفي، يُستعمل في قسم الطلب وقسم الفجوة ليُقارَن الصفوف الثلاثة ببعضها. ومن دون معرف مشترك تُجرى المقارنة بالعين، وأصحاب الأدوار المتشابهة في الأسماء هم الأكثر عرضة للالتباس.
+*  **الدور الوظيفي:** الدور الذي ينطبق عليه السجل، مذكورًا بالتسمية نفسها المستعملة في قسم السعة وقسم الطلب. والقوائم الثلاثة يجب أن تكون واحدة، وإلا استُبعدت بصمت من المقارنة في قسم الفجوة الأدوار التي لا تظهر إلا في إحداها، وهي عادة الأدوار التي في مشكلة.
+*  **الفترة:** الفترة التي يغطيها الصف، وهي نفسها في كل الجدول. فتسجيل السعة لكل فترة لا كإجمالي هو ما يجعل المصفوفة نافعة، لأن موردًا متاح له ألف يوم شخص ومحجوز بالكامل في الشهر الذي يحتاج فيه العمل لا سعة له البتة.
+*  **السعة المطلوبة:** ما يشترطه النطاق والجدول الزمني في تلك الفترة. سجل الرقم الذي بُنيت عليه الخطة لا الرقم الجاري تحقيقه، فالثاني نتيجة لخطأ الأول، وإبلاغه بوصفه المتطلب يجعل العجز يختفي من الخطة.
+*  **مصدر الطلب:** أي جزء من الخطة ينشئه، كـ مخرج أو حزمة عمل. والطلب الذي لا يمكن إرجاعه إلى شيء في الخطة لا يمكن الطعن فيه، والطلبات التي لا يمكن الطعن فيها لا تكبر إلا بقدر ما تُترك بلا جواب.
+*  **الأولوية:** هل الطلب جوهري أم يمكن تأجيله أو تخفيضه. وبدون أولوية لا علاج للفجوة، إذ الردود المتاحة هي زيادة السعة أو نقل العمل أو تقليصه، ولا شيء في المصفوفة يقول أيّها يقبله البرنامج.
+*  **الدور الوظيفي:** الدور الذي ينطبق عليه السجل، مذكورًا بالتسمية نفسها المستعملة في قسم السعة وقسم الطلب. والقوائم الثلاثة يجب أن تكون واحدة، وإلا استُبعدت بصمت من المقارنة في قسم الفجوة الأدوار التي لا تظهر إلا في إحداها، وهي عادة الأدوار التي في مشكلة.
+*  **الفجوة:** الفرق بين المطلوب والمتبقي، وهو المؤشر الرئيسي الذي يبحث عنه القارئ في المصفوفة كلها. اذكره رقمًا بإشارة حتى لا تُقرأ زيادة على أنها نقص.
+*  **الفترة:** الفترة التي يغطيها الصف، وهي نفسها في كل الجدول. فتسجيل السعة لكل فترة لا كإجمالي هو ما يجعل المصفوفة نافعة، لأن موردًا متاح له ألف يوم شخص ومحجوز بالكامل في الشهر الذي يحتاج فيه العمل لا سعة له البتة.
+*  **الحل المخطط:** ما يُعلم الإخطة على الفجوة، مذكورًا بإيجاز. فالفجوة التي لها حل مخطط ولا مالك هي فجوة يتمنى المرجو حلها، وهي أشيع طريقة يُعتمد عليها في مصفوفة سعة بعد أن تصير غير صالحة.
+*  **مالك الحل:** الدور المسؤول عن إغلاق الفجوة، مذكورًا على حدة عن الحل نفسه. فالصف الذي يحمل اسم الحل دون اسم مالكه يبقى مفتوحًا مدة أقصر مما يُتوقع.
+*  **تاريخ الحل:** التاريخ الذي يُنجز فيه الحل فعلًا، لا التاريخ الذي التُزم به. والفرق بينهما هو كل ما يجعل سطر الحل في المصفوفة صادقًا أو زائفًا.
+*  **الدور الوظيفي:** الدور الذي ينطبق عليه السجل، مذكورًا بالتسمية نفسها المستعملة في قسم السعة وقسم الطلب. والقوائم الثلاثة يجب أن تكون واحدة، وإلا استُبعدت بصمت من المقارنة في قسم الفجوة الأدوار التي لا تظهر إلا في إحداها، وهي عادة الأدوار التي في مشكلة.
+*  **نوع الاحتياطي:** نوع الاحتياطي: وقت أو سعة أو نطاق. أنواع الاحتياطي الثلاثة غير قابلة للمبادلة: احتياطي الوقت يُنفق مرة واحدة، واحتياطي السعة يُنفق على أي شيء، واحتياطي النطاق يقلّل المخرج. وخطة لا تحتفظ باحتياطي نطاق وتذكر أنها تملك مهلة فائضة هي خطة يكون احتياطيها هو العمل المقطوع.
+*  **مقدار الاحتياطي:** كمية الاحتياطي المحجوزة، بنفس وحدة قياس السعة أو بوحدة مختلفة مع التصريح بها. ويجب أن يكون المقدار كافيًا ليغطي الفجوة لا ليبدو كافٍ.
+*  **كيف سيُستخدم:** متى وكيف سيُستعمل الاحتياطي. سجّل ما يفعله الاحتياطي بالضبط عند استعماله، لا أنه موجود، فالاحتياطي الذي لا يُعرف شرط استعماله يتحول إلى إهدار متعمد.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](00_04_مصفوفة_سعة_الموارد_قالب.md)
+* [🤖 موجّه التوليد الذكي](00_04_مصفوفة_سعة_الموارد.md)
+* [📊 بنية البيانات (JSON)](00_04_مصفوفة_سعة_الموارد.json)
+* [📈 البيانات الجدولية (CSV)](00_04_مصفوفة_سعة_الموارد.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [00_04_مصفوفة_سعة_الموارد_مثال.md](../../../../examples/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد/00_04_مصفوفة_سعة_الموارد_مثال.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/00_إدارة_البرامج_والمحافظ/04_مصفوفة_سعة_الموارد/00_04_مصفوفة_سعة_الموارد_مثال.npy
+token_count: 2874
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.207631+00:00'</p>
+<hr />
+<div>
+
+# مصفوفة سعة الموارد (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-00.04`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">قطاع تقنية المعلومات والعمليات المؤسسية - من الربع الأول 2026 إلى الربع الرابع 2027</h2>
+<h1 align="center">مصفوفة سعة الموارد</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مدير البرنامج:** م. خالد العتيبي، PgMP | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| :--- | :--- | :--- |
+
+---
+
+## 1. أساس المصفوفة
+<!-- ما الذي تغطيه هذه المصفوفة وبأي وحدة وعلى أي فترات. سجل الوحدة مرة واحدة واستخدمها في كل الجدول. وسجل المستوى الذي تُدار عليه، فمصفوفة المحفظة تُستخدم للقرار بين المبادرات ومصفوفة المشروع للحكم على جدوى خطة واحدة. وسجل ما إذا كانت مصدر الحقيقة أم مقتطفًا من أداة تخصيص موارد، حتى لا يتعامل القارئ مع مقتطف قديم على أنه حالي. -->
+
+**نطاق المصفوفة ومستواها:** تحقيق التميز التشغيلي وأتمتة العمليات والربط السحابي الموحد وفق أعلى المعايير القياسية.
+
+**وحدة قياس السعة:** ساعات العمل الفعلية للموظف المكافئ (FTE Hours) بمتوسط 160 ساعة شهرياً.
+
+**الفترات المشمولة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**مصدر الحقيقة أم مقتطف:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**مالك المصفوفة:** أ. إلينا فانس، PfMP (مدير المحفظة والتحول المؤسسي)
+
+**آخر تحديث:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+---
+
+## 2. السعة حسب المورد
+<!-- ما هو متاح، بالوحدة نفسها وفي كل فترة. عمود المخصص هو ما يُهمل أكثر من غيره، وبدونه يصبح المتاح هو الإجمالي، وهو ليس ما يستطيع المشروع استخدامه. وسجل السعة لكل فترة لا إجمالًا، فمن له سعة كبيرة متاحة وهو مشغول تمامًا في الشهر الذي يُنفَّذ فيه العمل لا سعة له البتة. وسجل القيود بوصفها نتائج لا صفات. وحين يشغل الدور أكثر من شخص فسجل الدور مرة واحدة واذكر التقسيم في الملاحظات، فالصف لكل شخص يخفي إجمالي سعة الدور. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | الدور أو الفريق | الفترة | إجمالي المتاح | المخصص | المتبقي | القيود أو نقاط الفشل الوحيدة | ملاحظات |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | الرعاية الاستراتيجية وتوفير الموارد والمصادقة على الميثاق | الربع الثاني 2026 | 60 ساعة عمل (فائض) | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | تم التحقق من الجاهزية والامتثال لضوابط الأمن السيبراني |
+| REQ-02 | مالك متطلبات الأعمال وسلاسل الإمداد وقبول المخرجات | الربع الثالث 2026 | 40 ساعة عمل (فائض) | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | جلسات المتابعة والتنسيق مستمرة وفق الجدول المعتمد |
+| ACT-03 | المستفيد التجاري الرئيسي والمشاركة في اختبارات القبول UAT | الربع الرابع 2026 | 50 ساعة عمل (فائض) | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | تم رصد مخصص الطوارئ المعتمد لهذه المرحلة |
+| BEN-04 | ضمان الامتثال للأمن السيبراني وحماية البيانات الشخصية | الربع الأول 2027 | 60 ساعة عمل (فائض) | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | مؤشرات الأداء التشغيلي ضمن الحدود المستهدفة |
+| WBS-05 | الرعاية الاستراتيجية وتوفير الموارد والمصادقة على الميثاق | الربع الثاني 2027 | 60 ساعة عمل (فائض) | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | تم التحقق من الجاهزية والامتثال لضوابط الأمن السيبراني |
+
+---
+
+## 3. الطلب حسب المورد
+<!-- ما تشترطه الخطة، وهو رقم مختلف عمّا يتحقق حاليًا. وسجل الرقم الذي بُنيت عليه الخطة لا الرقم الجاري تحقيقه، فالثاني نتيجة لخطأ الأول، والإبلاغ عنه بوصفه المتطلب يجعل العجز يختفي من الخطة. وسجل مصدر الطلب ليُرجع إلى مخرج أو حزمة عمل، فالطلب الذي لا يُرجع إلى شيء في الخطة لا يمكن الطعن فيه. وسجل أولوية، فبدونها لا علاج للفجوة، إذ الردود المتاحة هي زيادة السعة أو نقل العمل أو تقليصه، ولا شيء في المصفوفة يقول أيّها يقبله البرنامج. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | الدور الوظيفي | الفترة | السعة المطلوبة | مصدر الطلب | الأولوية |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | الرعاية الاستراتيجية وتوفير الموارد والمصادقة على الميثاق | الربع الثاني 2026 | 480 ساعة عمل / شهر | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| REQ-02 | مالك متطلبات الأعمال وسلاسل الإمداد وقبول المخرجات | الربع الثالث 2026 | 620 ساعة عمل / شهر | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| ACT-03 | المستفيد التجاري الرئيسي والمشاركة في اختبارات القبول UAT | الربع الرابع 2026 | 540 ساعة عمل / شهر | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| BEN-04 | ضمان الامتثال للأمن السيبراني وحماية البيانات الشخصية | الربع الأول 2027 | 500 ساعة عمل / شهر | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+---
+
+## 4. تحليل الفجوة
+<!-- الفرق بين المطلوب والمتبقي، وهو المؤشر الرئيسي الذي يبحث عنه القارئ في المصفوفة كلها. اذكره رقمًا بإشارة حتى لا تُقرأ زيادة على أنها نقص. وسجل حلًا مخططًا، وسجلًا مالكًا له على حدة، فالفجوة التي لها حل ولا مالك هي فجوة يتمنى حلها، وهي أشيع طريقة يُعتمد عليها في مصفوفة سعة بعد أن تصير غير صالحة. وتاريخ الحل هو ما يخبر القارئ بأن الخطة ما زالت مجدية، فسجله بدل ترك الصف مفتوحًا. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| الدور الوظيفي | الفجوة | الفترة | الحل المخطط | مالك الحل | تاريخ الحل |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| الرعاية الاستراتيجية وتوفير الموارد والمصادقة على الميثاق | معتمد ومطابق للمعايير القياسية لشركة القمة | الربع الثاني 2026 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-06-30 |
+| مالك متطلبات الأعمال وسلاسل الإمداد وقبول المخرجات | معتمد ومطابق للمعايير القياسية لشركة القمة | الربع الثالث 2026 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-09-30 |
+| المستفيد التجاري الرئيسي والمشاركة في اختبارات القبول UAT | معتمد ومطابق للمعايير القياسية لشركة القمة | الربع الرابع 2026 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-11-30 |
+| ضمان الامتثال للأمن السيبراني وحماية البيانات الشخصية | معتمد ومطابق للمعايير القياسية لشركة القمة | الربع الأول 2027 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2027-01-31 |
+
+---
+
+## 5. الاحتياطي
+<!-- ما تحتفظ به الخطة، وما الذي يحميه هذا الاحتياطي. أنواع الاحتياطي الثلاثة غير قابلة للمبادلة: احتياطي الوقت يُنفق مرة واحدة، واحتياطي السعة يُنفق على أي شيء، واحتياطي النطاق يقلّل المخرج. وسجل أي نوع كل احتياطي، فالخطة التي لا تحتفظ باحتياطي نطاق وتذكر أنها تملك مهلة فائضة هي خطة يكون احتياطيها هو العمل المقطوع. وسجل ما الذي يحميه كل احتياطي حتى لا يُستهلك بهدوء على شيء لم يُحتجز لأجله. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| الدور الوظيفي | نوع الاحتياطي | مقدار الاحتياطي | كيف سيُستخدم |
+| ---: | ---: | ---: | ---: |
+| الرعاية الاستراتيجية وتوفير الموارد والمصادقة على الميثاق | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| مالك متطلبات الأعمال وسلاسل الإمداد وقبول المخرجات | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| المستفيد التجاري الرئيسي والمشاركة في اختبارات القبول UAT | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+---
+
+## 6. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مسؤول تخطيط الموارد** | أ. سامي الغامدي (مسؤول تخطيط الموارد) | [معتمد إلكترونياً] | 2026-03-18 |
+| **مدير البرنامج** | م. خالد العتيبي، PgMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **مدير مكتب إدارة المشاريع** | د. طارق المنصور، PfMP | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>النموذج:</strong> مصفوفة سعة الموارد | <strong>المرجع:</strong> PMO-00.04 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              نسخ المخطط
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill in the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field, based on the provided project context. Reference parameters.md for global project variables.&quot;,
+  &quot;form_name&quot;: &quot;Resource Capacity Matrix&quot;,
+  &quot;document_reference&quot;: &quot;PMO-00.04&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Matrix_Scope_and_Level&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Matrix Scope and Level&quot;,
+      &quot;guidance&quot;: &quot;What this matrix covers and at what level it is maintained, whether portfolio-wide across initiatives, program-wide across components, or for a single project. The level decides what the matrix is used to decide: a portfolio matrix decides between initiatives, a project matrix decides whether one plan is credible, and reading either as the other produces a confident wrong answer.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Capacity_Unit_of_Measure&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Capacity Unit of Measure&quot;,
+      &quot;guidance&quot;: &quot;The unit used for every figure in the matrix, whether person-days, full-time equivalents, or hours per period. State it once and use it throughout: a matrix whose rows use different units cannot be added up, and the total at the foot of it is then arithmetically meaningless rather than merely approximate.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Periods_Covered&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Periods Covered&quot;,
+      &quot;guidance&quot;: &quot;The periods the matrix covers, matching those of the schedule it is compared against. Where the matrix is annual and the schedule is weekly, the comparison has to be done by hand every time and is therefore not done, which is how a quarterly shortfall survives to become a delivery failure.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Source_of_Truth_or_Extract&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Source of Truth or Extract&quot;,
+      &quot;guidance&quot;: &quot;Whether this matrix is the authoritative record or an extract from a resourcing tool. Record which, because a reader who treats a stale extract as current will plan against capacity that was reallocated weeks ago, and the error surfaces only when the work cannot be staffed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Matrix_Owner&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Matrix Owner&quot;,
+      &quot;guidance&quot;: &quot;The single role accountable for the matrix as a whole, which is normally not the owner of any one resource in it. Where this is blank, the matrix has contributors but nobody who notices that a row has not been updated since the reorganisation.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Last_Updated&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Last Updated&quot;,
+      &quot;guidance&quot;: &quot;The date the matrix was last reconciled against the plan, and against which version of the schedule. Without it a reader cannot tell a current matrix from an abandoned one, and the two are indistinguishable on the page.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_ID&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the resource role, used in the demand and gap sections so the three can be compared row against row. Without a shared identifier the comparison is done by eye, and two similarly named roles are the ones most often confused.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Resource_Role_or_Team&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Resource Role or Team&quot;,
+      &quot;guidance&quot;: &quot;The role or team, named as the work requires it rather than as the organisation chart draws it. A matrix organised by existing departments can never show a gap, because it only ever lists what is already there, and the absence of a needed capability reads as its absence from the plan rather than from the organisation.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Period&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Period&quot;,
+      &quot;guidance&quot;: &quot;The period the row covers, using the same periods throughout the matrix. Capacity recorded per period rather than in total is what makes the matrix usable, because a resource with a thousand person-days available who is fully committed in the month the work is needed has no capacity at all.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Total_Available&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Total Available&quot;,
+      &quot;guidance&quot;: &quot;The capacity that exists in the period, before any allocation, in the unit declared for the matrix. This is a figure about the organisation rather than about the project, and recording it here is what allows the reader to see how much of it is actually available.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Allocated&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Allocated&quot;,
+      &quot;guidance&quot;: &quot;The capacity already committed elsewhere in the portfolio. This is the column most often left out, and without it the available figure is the total, which is not what the project can use. It is also the column that reveals a resource being shared between initiatives without either owner knowing.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Remaining&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Remaining&quot;,
+      &quot;guidance&quot;: &quot;What is left after allocation, which is the figure the planner actually has. Where this is negative, the matrix has found a real problem; where it is silently recorded as zero because nobody wanted to write a negative number, the problem has been hidden instead of solved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Constraints_or_Single_Points_of_Failure&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Constraints or Single Points of Failure&quot;,
+      &quot;guidance&quot;: &quot;What limits this resource: a location, a qualification held by one person, a licence, a tool only one person can operate, or a notice period. Record the consequence rather than the adjective, because \&quot;test automation is a single point of failure because one person holds it\&quot; can be acted on, while \&quot;test automation is a risk\&quot; cannot.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Notes&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Notes&quot;,
+      &quot;guidance&quot;: &quot;Anything that changes how the row should be read, such as a known vacancy, planned leave, or a resource shared with another portfolio. Where a role is filled by more than one person, record the role once and note the split here, since a row per person hides the total capacity of the role.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_ID&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The resource role the demand is for, matching the ID used in the capacity section so the two can be set against each other.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Resource_Role&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Resource Role&quot;,
+      &quot;guidance&quot;: &quot;The role the demand falls on, using the same naming as the capacity section. The two must be the same list, or the comparison in the gap section silently excludes roles that appear in only one of them, which are usually the ones in trouble.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Period&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Period&quot;,
+      &quot;guidance&quot;: &quot;The period the demand falls in. A demand recorded with no period cannot be compared with a capacity figure that has one, and is therefore dropped from the comparison without anyone deciding to drop it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Required_Capacity&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Required Capacity&quot;,
+      &quot;guidance&quot;: &quot;What the scope and schedule require in the period. Record the figure the plan was built on rather than the figure currently being achieved, since the second is a consequence of the first being wrong and reporting it back as the requirement makes the shortfall disappear from the plan.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Source_of_Demand&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Source of Demand&quot;,
+      &quot;guidance&quot;: &quot;Which part of the plan generates it, such as a named deliverable, work package, or activity. A demand that cannot be traced to something in the plan cannot be challenged, and demands that cannot be challenged only ever grow.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Priority&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Priority&quot;,
+      &quot;guidance&quot;: &quot;Whether the demand is essential, or could be deferred or descoped. Without a priority a gap has no remedy, because the available responses are to add capacity, move the work, or reduce it, and nothing in the matrix says which of those the programme would accept.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Resource_Role&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resource Role&quot;,
+      &quot;guidance&quot;: &quot;The role the gap applies to, using the same naming as the sections above. Where a role appears in the demand but not the capacity, the gap is the whole requirement rather than a shortfall, and that case is worth distinguishing because it is a different problem.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Gap&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Gap&quot;,
+      &quot;guidance&quot;: &quot;The difference between required and remaining, stated as a signed number so that a surplus is not read as a shortfall. This is the figure the whole matrix exists to produce, and a matrix that records only the totals has omitted the only number anyone reads.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Period&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Period&quot;,
+      &quot;guidance&quot;: &quot;The period the gap falls in. A gap in a period with no demand in it is a different problem from a gap in a period the work needs, and reporting both as \&quot;a gap\&quot; sends the reader looking for the wrong remedy.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Resolution_Planned&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resolution Planned&quot;,
+      &quot;guidance&quot;: &quot;How the gap will be closed: recruitment, a contractor, moving work between periods, reducing scope, or accepting the risk. Where the gap is covered by a contractor or a shared resource, record the contract or agreement that covers it, because a gap filled on the understanding that someone will help is not covered at all.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Resolution_Owner&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resolution Owner&quot;,
+      &quot;guidance&quot;: &quot;Who is accountable for closing the gap. A gap with a planned resolution and no owner is a gap being wished away, and it is the most common way a capacity matrix comes to be relied upon long after it was last true.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Resolution_Date&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resolution Date&quot;,
+      &quot;guidance&quot;: &quot;By when the resolution is expected to be in place. This is what tells the reader whether the plan is still feasible, so record it rather than leaving the row open, and where the date has passed without resolution, escalate rather than moving the date.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f27_Resource_Role&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;Resource Role&quot;,
+      &quot;guidance&quot;: &quot;The role the contingency applies to, or \&quot;plan\&quot; where the buffer is held across all roles rather than against one.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f28_Contingency_Type&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;Contingency Type&quot;,
+      &quot;guidance&quot;: &quot;Whether the buffer is in capacity, in time, or in scope. The three are not interchangeable: time contingency can be spent once, capacity contingency can be spent on anything, and scope contingency reduces the deliverable. A plan that holds no scope contingency and states only that it has float is a plan whose contingency is the work being cut.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f29_Contingency_Amount&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;Contingency Amount&quot;,
+      &quot;guidance&quot;: &quot;The size of the buffer, in the declared unit. Record it as a figure rather than a percentage, because a percentage of a demand that was never reconciled produces a number that looks precise and is not.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f30_How_It_Would_Be_Used&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;How It Would Be Used&quot;,
+      &quot;guidance&quot;: &quot;What the buffer protects, recorded so it cannot be quietly consumed on something it was not held for. A contingency with no stated use is the first thing cut in a difficult month, which is precisely the month it was held for.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">مكتبة بايثون وأمر التشغيل</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">مخططات JSON</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

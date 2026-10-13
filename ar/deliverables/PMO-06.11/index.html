@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-06.11 مصفوفة الفحص الصحي للمشروع | تسليمات</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-06.11/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-06.11</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-06.11</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 06: المراقبة والتحكم
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span>
+            <span class="tag pack">general</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">مصفوفة الفحص الصحي للمشروع</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">Project Health Check Matrix</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-06.11 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-06.11 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. النظرة العامة والبيانات الوصفية
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. قالب التسليمة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. الدليل الإرشادي للممارس
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. مثال واقعي مكتمل
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. مخطط البيانات Draft 2020-12
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 06:</strong> المراقبة والتحكم
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-06.11 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع/06_11_الفحص_الصحي_للمشروع_قالب.npy
+token_count: 731
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.876675+00:00&#x27;
+form_id: PMO-06.11
+language: ar
+status: approved
+---
+--&gt;
+
+&lt;!-- تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+السياق والتعريف: أداة تشخيص وضمان مهيكلة صُممت لإجراء تقييم موضوعي لسلامة المشروع عبر سبعة أبعاد رئيسية لضمان نجاح التسليم.
+
+إرشادات الأقسام:
+- سياق المراجعة: توفير بيانات شاملة لجميع الحقول المطلوبة.
+- تقييم أبعاد الصحة: توفير بيانات شاملة لجميع الحقول المطلوبة.
+- خطة إجراءات المعالجة: توفير بيانات شاملة لجميع الحقول المطلوبة.
+--&gt;
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{اسم_المشروع}} - {{معرف_المشروع}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;مصفوفة الفحص الصحي للمشروع&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{تاريخ_اليوم}} | **مدير المشروع:** {{اسم_مدير_المشروع}} | **أُعد بواسطة:** {{اسم_المُعد}} |
+| :--- | :--- | :--- |
+
+---
+
+## سياق المراجعة
+
+**غرض المراجعة ومرحلة المعلم:**
+[ أضف التفاصيل... ]
+
+**المراجع الرئيسي وتاريخ التقييم:**
+[ أضف التفاصيل... ]
+
+**تقييم الصحة العام:**
+[ أضف التفاصيل... ]
+
+---
+
+## تقييم أبعاد الصحة
+
+**صحة الحوكمة والرعاية التنفيذية:**
+[ أضف التفاصيل... ]
+
+**صحة النطاق وضبط التغيير:**
+[ أضف التفاصيل... ]
+
+**صحة الجدول الزمني والمعالم:**
+[ أضف التفاصيل... ]
+
+**صحة التكاليف وتباين الميزانية:**
+[ أضف التفاصيل... ]
+
+**صحة المخاطر والتعرض للقضايا:**
+[ أضف التفاصيل... ]
+
+**صحة المعنيين وفريق العمل:**
+[ أضف التفاصيل... ]
+
+---
+
+## خطة إجراءات المعالجة
+
+**وصف النتيجة الحرجة:**
+[ أضف التفاصيل... ]
+
+**الإجراء التصحيحي الإلزامي:**
+[ أضف التفاصيل... ]
+
+**مسؤول المعالجة وتاريخ الاستحقاق:**
+[ أضف التفاصيل... ]
+
+---
+
+### الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| :--- | :--- | :--- | :--- |
+| **المراجع الرئيسي لمكتب إدارة المشاريع** | {{اسم_المراجع_الرئيسي}} | _______________________ | [ .... - .... - .... ] |
+| **مدير المشروع** | {{اسم_مدير_المشروع}} | _______________________ | [ .... - .... - .... ] |
+| **رئيس لجنة التوجيه** | {{اسم_رئيس_لجنة_التوجيه}} | _______________________ | [ .... - .... - .... ] |
+---
+
+&lt;div align=&quot;right&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+  &lt;strong&gt;قالب:&lt;/strong&gt; مصفوفة الفحص الصحي للمشروع | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-06.11 &lt;br&gt;
+  &lt;i&gt;تم التوليد في: {{طابع_زمني_حالي}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: ar
+layout: default
+title: مصفوفة الفحص الصحي للمشروع
+nav_order: 11
+token_pointer: /_tokens/forms/ar/06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع/06_11_الفحص_الصحي_للمشروع_دليل.npy
+token_count: 1087
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.875682+00:00'
+form_id: PMO-06.11
+status: approved</p>
+<hr />
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## دليل نماذج تسليمات
+# مخرج المشروع: مصفوفة الفحص الصحي للمشروع
+
+**المرجع الوثيقي:** `PMO-06.11`
+
+توفر هذه الوثيقة مرجعًا مهنيًا لفهم الغرض من **مصفوفة الفحص الصحي للمشروع**
+واستخدامها الفعال بما يتوافق مع إطار تسليمات ومعايير معهد إدارة المشاريع (PMI).
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة رسمية متوافقة مع تسليمات تُعرف بـ **مصفوفة الفحص الصحي للمشروع**.
+أداة تشخيص وضمان مهيكلة صُممت لإجراء تقييم موضوعي لسلامة المشروع عبر سبعة أبعاد رئيسية لضمان نجاح التسليم.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن غياب مصفوفة الفحص الصحي للمشروع يؤدي إلى ضبابية القرارات وانعدام الأسس الموضوعية في التقييم.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+تُعد هذه الوثيقة أثناء أنشطة دورة حياة المشروع وتُحدّث حسب متطلبات الحوكمة.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يعدها قائد المشروع المعني ويعتمدها أصحاب الصلاحية والحوكمة.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*   تخصيص عمق التحليل ليتناسب مع حجم المشروع ومستوى مخاطره.
+*   التأكد من مواءمة جميع المعنيين الرئيسيين قبل الاعتماد النهائي.
+
+---
+
+### المحاذاة والترابط المؤسسي
+
+#### 1. المدخلات والاعتماديات السابقة
+*   **إلزامي:**
+    *   الخطة الاستراتيجية للمنظمة
+*   **اختياري / سياقي:**
+    *   ميثاق المشروع (PMO-03.01)
+
+#### 2. المخرجات والاعتماديات اللاحقة
+*   **إلزامي:**
+    *   سجلات الحوكمة والتقارير الرقابية
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+املأ كل قسم بعناية بناءً على الإرشادات المحددة لكل حقل أدناه:
+
+#### سياق المراجعة
+
+*   **غرض المراجعة ومرحلة المعلم:** هدف الفحص الصحي المستقل ومرحلة دورة حياة المشروع أو البوابة التي يُجرى عندها التقييم.
+*   **المراجع الرئيسي وتاريخ التقييم:** مدقق مكتب إدارة المشاريع المستقل أو قائد ضمان الجودة الذي يجري الفحص وتاريخ إجراء المعاينة.
+*   **تقييم الصحة العام:** درجة الصحة العامة التركيبية (أحمر، أو أصفر، أو أخضر) التي تعكس الثقة الإجمالية في تسليم المشروع.
+
+#### تقييم أبعاد الصحة
+
+*   **صحة الحوكمة والرعاية التنفيذية:** تصنيف الصحة والنتائج بشأن تفاعل لجنة التوجيه وسرعة اتخاذ القرارات والالتزام بالميثاق.
+*   **صحة النطاق وضبط التغيير:** تصنيف الصحة والنتائج بشأن استقرار خط الأساس وضبط زحف النطاق ودقة طلبات التغيير.
+*   **صحة الجدول الزمني والمعالم:** تصنيف الصحة والنتائج بشأن الالتزام بالمسار الحرج والفترات الاحتياطية وسرعة الإنجاز.
+*   **صحة التكاليف وتباين الميزانية:** تصنيف الصحة والنتائج بشأن مؤشر أداء التكلفة (CPI) وتباين التكاليف وموثوقية تقدير الميزانية عند الاكتمال.
+*   **صحة المخاطر والتعرض للقضايا:** تصنيف الصحة والنتائج بشأن تحديث سجل المخاطر وفاعلية خطط الاستجابة والقضايا المعلقة.
+*   **صحة المعنيين وفريق العمل:** تصنيف الصحة والنتائج بشأن الروح المعنوية للفريق وكفاية الموارد ومستوى رضا المعنيين.
+
+#### خطة إجراءات المعالجة
+
+*   **وصف النتيجة الحرجة:** نقطة الضعف الجوهرية أو المؤشر الحرج المكتشف أثناء تدقيق الفحص الصحي للمشروع.
+*   **الإجراء التصحيحي الإلزامي:** التدخل العلاجي المحدد المطلوب لإعادة أداء مجال المشروع إلى المستويات المقبولة.
+*   **مسؤول المعالجة وتاريخ الاستحقاق:** الشخص المسؤول المكلف بتنفيذ الإجراء التصحيحي وتاريخ الاستحقاق النهائي الصارم.
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [06_11_الفحص_الصحي_للمشروع_مثال.md](../../../../examples/ar/06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع/06_11_الفحص_الصحي_للمشروع_مثال.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/06_المراقبة_والتحكم/11_الفحص_الصحي_للمشروع/06_11_الفحص_الصحي_للمشروع_مثال.npy
+token_count: 1523
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.185529+00:00'</p>
+<hr />
+<h1>الفحص الصحي للمشروع (نموذج تطبيقي معبأ)</h1>
+<blockquote>
+<p>🏆 <strong>نموذج استرشادي مكتمل (Gold Standard):</strong> يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (<code>PMO-06.11</code>). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.</p>
+</blockquote>
+<hr />
+<h3 align="right">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="right">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
+<h1 align="center">مصفوفة الفحص الصحي للمشروع</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>تاريخ الإعداد:</strong> 2026-03-15</th>
+<th style="text-align: left;"><strong>مدير المشروع:</strong> م. فيصل الحربي، PMP</th>
+<th style="text-align: left;"><strong>أُعد بواسطة:</strong> م. فيصل الحربي، PMP (مدير المشروع)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>سياق المراجعة</h2>
+<p><strong>غرض المراجعة ومرحلة المعلم:</strong>
+يهدف هذا المشروع إلى توحيد وأتمتة كافة العمليات التشغيلية وسلاسل الإمداد والإدارة المالية لشركة القمة من خلال الانتقال إلى منظومة سحابية متطورة (Nexus ERP). يعالج المشروع التحديات التشغيلية الناتجة عن تشتت البيانات في أنظمة قديمة معزولة، ويحقق وفراً تشغيلياً سنوياً يقدر بـ 4.2 مليون ريال مع تقليص دورة معالجة الطلبات بنسبة 40%، بما يتماشى مباشرة مع الركيزة الاستراتيجية للتحول الرقمي والتميز التشغيلي 2028.</p>
+<p><strong>المراجع الرئيسي وتاريخ التقييم:</strong>
+يهدف هذا المشروع إلى توحيد وأتمتة كافة العمليات التشغيلية وسلاسل الإمداد والإدارة المالية لشركة القمة من خلال الانتقال إلى منظومة سحابية متطورة (Nexus ERP). يعالج المشروع التحديات التشغيلية الناتجة عن تشتت البيانات في أنظمة قديمة معزولة، ويحقق وفراً تشغيلياً سنوياً يقدر بـ 4.2 مليون ريال مع تقليص دورة معالجة الطلبات بنسبة 40%، بما يتماشى مباشرة مع الركيزة الاستراتيجية للتحول الرقمي والتميز التشغيلي 2028.</p>
+<p><strong>تقييم الصحة العام:</strong>
+يهدف هذا المشروع إلى توحيد وأتمتة كافة العمليات التشغيلية وسلاسل الإمداد والإدارة المالية لشركة القمة من خلال الانتقال إلى منظومة سحابية متطورة (Nexus ERP). يعالج المشروع التحديات التشغيلية الناتجة عن تشتت البيانات في أنظمة قديمة معزولة، ويحقق وفراً تشغيلياً سنوياً يقدر بـ 4.2 مليون ريال مع تقليص دورة معالجة الطلبات بنسبة 40%، بما يتماشى مباشرة مع الركيزة الاستراتيجية للتحول الرقمي والتميز التشغيلي 2028.</p>
+<hr />
+<h2>تقييم أبعاد الصحة</h2>
+<p><strong>صحة الحوكمة والرعاية التنفيذية:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>صحة النطاق وضبط التغيير:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>صحة الجدول الزمني والمعالم:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>صحة التكاليف وتباين الميزانية:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>صحة المخاطر والتعرض للقضايا:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>صحة المعنيين وفريق العمل:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h2>خطة إجراءات المعالجة</h2>
+<p><strong>وصف النتيجة الحرجة:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>الإجراء التصحيحي الإلزامي:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>مسؤول المعالجة وتاريخ الاستحقاق:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h3>الاعتماد والموافقات</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">الدور</th>
+<th style="text-align: left;">الاسم</th>
+<th style="text-align: left;">التوقيع</th>
+<th style="text-align: left;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>المراجع الرئيسي لمكتب إدارة المشاريع</strong></td>
+<td style="text-align: left;">أ. نورة السيد (مدير ضمان الجودة)</td>
+<td style="text-align: left;">[معتمد إلكترونياً]</td>
+<td style="text-align: left;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>مدير المشروع</strong></td>
+<td style="text-align: left;">م. فيصل الحربي، PMP</td>
+<td style="text-align: left;">[معتمد إلكترونياً]</td>
+<td style="text-align: left;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>رئيس لجنة التوجيه</strong></td>
+<td style="text-align: left;">د. منى الغامدي (رئيس لجنة التوجيه)</td>
+<td style="text-align: left;">[معتمد إلكترونياً]</td>
+<td style="text-align: left;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<div align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>قالب:</strong> مصفوفة الفحص الصحي للمشروع | <strong>المرجع:</strong> PMO-06.11 <br>
+  <i>تم التوليد في: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              نسخ المخطط
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill in the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field, based on the provided project context. Reference parameters.md for global project variables.&quot;,
+  &quot;form_name&quot;: &quot;Project Health Check Matrix&quot;,
+  &quot;document_reference&quot;: &quot;PMO-06.11&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Review_Purpose_and_Milestone_Stage&quot;: {
+      &quot;section&quot;: &quot;Review Context&quot;,
+      &quot;label&quot;: &quot;Review Purpose and Milestone Stage&quot;,
+      &quot;guidance&quot;: &quot;The objective of the independent health review and the project lifecycle phase or gate at which it is conducted.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Lead_Reviewer_and_Assessment_Date&quot;: {
+      &quot;section&quot;: &quot;Review Context&quot;,
+      &quot;label&quot;: &quot;Lead Reviewer and Assessment Date&quot;,
+      &quot;guidance&quot;: &quot;The independent PMO auditor or assurance lead conducting the review and the inspection date.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Overall_Health_Rating&quot;: {
+      &quot;section&quot;: &quot;Review Context&quot;,
+      &quot;label&quot;: &quot;Overall Health Rating&quot;,
+      &quot;guidance&quot;: &quot;The synthesized overall health score (Red, Amber, or Green) representing aggregate delivery confidence.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Governance_and_Sponsorship_Health&quot;: {
+      &quot;section&quot;: &quot;Dimension Health Scores&quot;,
+      &quot;label&quot;: &quot;Governance and Sponsorship Health&quot;,
+      &quot;guidance&quot;: &quot;Health rating and findings on steering committee engagement, decision timeliness, and charter mandate.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Scope_and_Change_Control_Health&quot;: {
+      &quot;section&quot;: &quot;Dimension Health Scores&quot;,
+      &quot;label&quot;: &quot;Scope and Change Control Health&quot;,
+      &quot;guidance&quot;: &quot;Health rating and findings on baseline stability, scope creep control, and change request rigor.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Schedule_and_Milestone_Health&quot;: {
+      &quot;section&quot;: &quot;Dimension Health Scores&quot;,
+      &quot;label&quot;: &quot;Schedule and Milestone Health&quot;,
+      &quot;guidance&quot;: &quot;Health rating and findings on critical path adherence, milestone float, and delivery velocity.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Cost_and_Budget_Variance_Health&quot;: {
+      &quot;section&quot;: &quot;Dimension Health Scores&quot;,
+      &quot;label&quot;: &quot;Cost and Budget Variance Health&quot;,
+      &quot;guidance&quot;: &quot;Health rating and findings on earned value metrics (CPI), cost variance, and EAC forecast credibility.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Risk_and_Issue_Exposure_Health&quot;: {
+      &quot;section&quot;: &quot;Dimension Health Scores&quot;,
+      &quot;label&quot;: &quot;Risk and Issue Exposure Health&quot;,
+      &quot;guidance&quot;: &quot;Health rating and findings on risk register currency, mitigation effectiveness, and unresolved issues.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Stakeholder_and_Team_Health&quot;: {
+      &quot;section&quot;: &quot;Dimension Health Scores&quot;,
+      &quot;label&quot;: &quot;Stakeholder and Team Health&quot;,
+      &quot;guidance&quot;: &quot;Health rating and findings on team morale, resourcing levels, and stakeholder satisfaction.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Critical_Finding_Description&quot;: {
+      &quot;section&quot;: &quot;Remediation Action Plan&quot;,
+      &quot;label&quot;: &quot;Critical Finding Description&quot;,
+      &quot;guidance&quot;: &quot;Key vulnerability or red-flag issue identified during the health check audit.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Mandated_Corrective_Action&quot;: {
+      &quot;section&quot;: &quot;Remediation Action Plan&quot;,
+      &quot;label&quot;: &quot;Mandated Corrective Action&quot;,
+      &quot;guidance&quot;: &quot;Specific remedial intervention required to return the project domain to acceptable performance.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Remediation_Owner_and_Due_Date&quot;: {
+      &quot;section&quot;: &quot;Remediation Action Plan&quot;,
+      &quot;label&quot;: &quot;Remediation Owner and Due Date&quot;,
+      &quot;guidance&quot;: &quot;The assigned individual accountable for corrective action execution and the strict due date.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">مكتبة بايثون وأمر التشغيل</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">مخططات JSON</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

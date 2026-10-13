@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-04.02.09 USER STORY MAPPING CANVAS | Tasleemat</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/" class="brand-group" aria-label="Tasleemat">
+        <span>📦 Tasleemat</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/" class="nav-link ">Home</a></li>
+<li><a href="/Tasleemat/start/" class="nav-link ">Start Here</a></li>
+<li><a href="/Tasleemat/deliverables/" class="nav-link active">Deliverables</a></li>
+<li><a href="/Tasleemat/guides/" class="nav-link ">Guides & Governance</a></li>
+<li><a href="/Tasleemat/developers/" class="nav-link ">Developers & AI</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/ar/deliverables/PMO-04.02.09/" class="btn-utility" aria-label="Switch Language">
+          🌐 العربية
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">Home</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">Deliverables</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-04.02.09</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-04.02.09</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              Phase 04: Planning
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">USER STORY MAPPING CANVAS</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">نموذج تخطيط قصص المستخدم</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-04.02.09 template --lang en</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-04.02.09 template --lang en'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            Copy Command
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. Overview & Metadata
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. Template Markdown
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. Practitioner Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. Realistic Example
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. JSON Schema (Draft 2020-12)
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">Deliverable Summary & Governance Boundaries</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Lifecycle Phase Alignment</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>Phase 04:</strong> Planning
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Sizing Tier Requirements</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Validation Contract</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              This deliverable conforms to a strict companion Draft 2020-12 JSON Schema for automated structural and semantic validation.
+            </p>
+            <pre><code>tasleemat validate PMO-04.02.09 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">Template Markdown (Bilingual)</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              Copy Markdown
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Template.npy
+token_count: 2435
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.946186+00:00&#x27;
+form_id: PMO-04.02.09
+language: en
+status: approved
+---
+--&gt;
+
+&lt;!--
+LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+
+**1. Persona and Problem**
+*   **Primary Persona:** The specific person, described so that a team can tell whether a proposed story serves them. A persona written as a role title rather than a person is the reason two teams build different products from the same map and discover the difference at launch.
+*   **What They Are Trying to Do:** What the person is trying to accomplish, in their own framing, and what they do today instead. The workaround is the baseline: a proposal that cannot say what it replaces cannot say what it improves, and every estimate is then a guess.
+*   **Frequency and Stakes:** How often the person does this, and what it costs them when it goes wrong. Frequency is what orders the backbone, and stakes are what separate a task worth automating from one worth automating carefully.
+*   **Organisations and Roles Affected:** Other roles the change touches, including the people who approve, review, or are affected by a decision made from the output. A map that names only the operator will produce a system whose other users are discovered after release.
+
+**2. The Backbone**
+*   **Activities in Order:** The high-level activities the persona performs, left to right in the order performed. The order is a claim about how the work actually happens, and it is the part of the map most often arranged by system architecture instead, which hides the sequence the person actually experiences.
+*   **Backbone Source:** How the sequence was established: observation, interview, existing process document, or assumption. A backbone derived from a process diagram describes how the organisation says the work happens, which is not always how anyone does it.
+*   **Activities Deferred:** Activities the person does that are deliberately not on the map, and why. A map that lists everything is a list of activities; the argument is in what has been left off and what that defers.
+*   **Optional and Variable Paths:** Where the sequence branches, and which branches are common and which are rare. A backbone drawn as a single line forces rare paths into the main flow, which is where most of the wasted work in a release comes from.
+
+**3. The Slices**
+*   **Tasks Under Each Activity:** One row per activity, with the specific steps of that activity. A step that serves no single activity is a horizontal layer, and a horizontal layer cannot be released on its own because no user can do anything useful with it.
+*   **Slices as Vertical Columns:** Each column must be a usable increment: every activity in the backbone has something in it, and a user can complete the whole journey with only that column. This is the defining discipline of the method, and a map that fails it has produced a technical layering dressed as a story map.
+*   **Walking Skeleton:** The thinnest possible column, end to end, with the crudest workable implementation of every activity. Its purpose is to prove the integration rather than the features, and it is normally thrown away, which is the reason teams hesitate to build it.
+*   **Slice Sizing Evidence:** What shows each slice is small enough to deliver, such as a timeboxed trial or a measured manual run. An estimate is a claim about a slice nobody has tried, and the first slice is where the estimate is usually wrong.
+
+**4. Release Slicing**
+*   **MVP Boundary:** Which columns are in the first release and which are not, and the single outcome that release delivers. The boundary is drawn by whether a persona can achieve something they came for, not by what is most valuable or most nearly finished, and a release assembled from the easiest columns delivers nothing anyone wanted.
+*   **Outcome of the First Release:** What the persona is able to do after it that they could not do before, stated as a capability and not as a list of features. A release described by its features has no test for whether it succeeded, so its success is decided afterwards by whoever feels strongly about it.
+*   **Validation Plan:** How the first release will be judged, against what, and by whom. Recorded before the release because a validation designed afterwards is a description of whatever was found.
+*   **Slices Deferred Beyond MVP:** The columns not in the first release, with the reason for each. &quot;Later&quot; is not a reason; the reason is usually a dependency, a missing decision, or a risk too large for a first release.
+
+**5. Beyond the First Release**
+*   **Later Release Candidates:** Columns considered for subsequent releases, with their dependencies named. A candidate with an unnamed dependency is a wish, and a wish placed on a map is read as a commitment by whoever reads the map next.
+*   **Emergent Work Anticipated:** Work the map does not contain because it has not been discovered yet, and how new items will be added. A map that claims to be complete invites the work to go somewhere unrecorded instead, which is where it is found later at the worst possible moment.
+*   **Explicitly Out of Scope:** What this product will not do, stated so it can be said out loud. This is the section that makes the map safe to publish, because an unstated exclusion is discovered by a user rather than by the team.
+
+**6. Map Quality and Maintenance**
+*   **Assumptions and Unvalidated Beliefs:** What the map takes on trust, and what would have to be true for it to hold. Every map rests on beliefs nobody has tested, and listing them is the only way to know which one to test first.
+*   **Risks to the Map:** What would force the map to be redrawn, such as a change in regulation, a competitor&#x27;s launch, or a finding that the real sequence differs. Recorded as triggers rather than as concerns, because a concern has no date and a trigger does.
+*   **Update Cadence and Owners:** How often the map is revisited, when a change triggers a redraw, and who owns it. A map with no owner and no cadence is a picture of what was understood once, and it is still being shown to people as if it were current.
+*   **Traceability to Backlog and Release:** How a story on this map reaches the backlog, and what happens when a backlog item contradicts the map. The two are kept in step by a rule and a person, or they diverge quietly and the map stops describing the product.
+--&gt;
+
+&lt;h3 dir=&quot;ltr&quot; align=&quot;right&quot;&gt;{{Company_Name}}&lt;/h3&gt;
+&lt;h2 dir=&quot;ltr&quot; align=&quot;right&quot;&gt;{{Project_Name}} - {{Project_ID}}&lt;/h2&gt;
+&lt;h1 dir=&quot;ltr&quot; align=&quot;center&quot;&gt;USER STORY MAPPING CANVAS&lt;/h1&gt;
+
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |
+---
+
+## 1. Persona and Problem
+&lt;!-- Who this is for, what they are trying to do, how often they do it, what it costs them, and who else the change touches. --&gt;
+
+**Primary Persona:** [ Add details... ]
+
+**What They Are Trying to Do:** [ Add details... ]
+
+**Frequency and Stakes:** [ Add details... ]
+
+**Organisations and Roles Affected:** [ Add details... ]
+
+---
+
+## 2. The Backbone
+&lt;!-- The high-level activities in the order they are performed, where that order came from, what is deliberately not on the map, and where the sequence branches. --&gt;
+
+**Activities in Order:**
+
+| # | Activity | Purpose for the Persona | Source of Evidence |
+| :---: | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+**Backbone Source:** [ Add details... ]
+
+**Activities Deferred:** [ Add details... ]
+
+**Optional and Variable Paths:** [ Add details... ]
+
+---
+
+## 3. The Slices
+&lt;!-- The steps under each activity, one row per activity, so that each column is a usable increment rather than a horizontal layer. --&gt;
+
+**Tasks Under Each Activity:**
+
+| Activity | Step 1 | Step 2 | Step 3 | Vertical Slice Complete |
+| :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+**Slices as Vertical Columns:** [ Add details... ]
+
+**Walking Skeleton:** [ Add details... ]
+
+**Slice Sizing Evidence:** [ Add details... ]
+
+---
+
+## 4. Release Slicing
+&lt;!-- Where the first-release line falls, what the persona can then do, how that will be judged, and which columns were left out and why. --&gt;
+
+**MVP Boundary:** [ Add details... ]
+
+**Outcome of the First Release:** [ Add details... ]
+
+**Validation Plan:** [ Add details... ]
+
+**Slices Deferred Beyond MVP:** [ Add details... ]
+
+---
+
+## 5. Beyond the First Release
+&lt;!-- Columns considered later with their dependencies, work the map does not yet contain, and what this product will not do. --&gt;
+
+**Later Release Candidates:** [ Add details... ]
+
+**Emergent Work Anticipated:** [ Add details... ]
+
+**Explicitly Out of Scope:** [ Add details... ]
+
+---
+
+## 6. Map Quality and Maintenance
+&lt;!-- What the map takes on trust, what would force it to be redrawn, who owns it and how often it is revisited, and how it reaches the backlog. --&gt;
+
+**Assumptions and Unvalidated Beliefs:** [ Add details... ]
+
+**Risks to the Map:** [ Add details... ]
+
+**Update Cadence and Owners:** [ Add details... ]
+
+**Traceability to Backlog and Release:** [ Add details... ]
+
+---
+
+### Sign-off and Approvals
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :---: | :---: |
+| **Product Owner** | {{Product_Owner_Name}} | _______________________ | [ .... - .... - .... ] |
+| **UX / BA Lead** | {{UX_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Development Team Lead** | {{Dev_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+---
+
+&lt;div dir=&quot;ltr&quot; align=&quot;right&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;Electronic Audit Trail: Hash SHA256: {{Audit_Trail_SHA256_Hash}}&lt;/span&gt; &lt;br&gt;
+  &lt;strong&gt;Template:&lt;/strong&gt; USER STORY MAPPING CANVAS | &lt;strong&gt;Ref:&lt;/strong&gt; PMO-04.02.09 &lt;br&gt;
+  &lt;i&gt;Generated on: {{Current_Timestamp}}, by &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;Tasleemat&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: en
+layout: default
+title: User Story Mapping Canvas
+nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Guide.npy
+token_count: 2861
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.944551+00:00'
+form_id: PMO-04.02.09
+status: approved</p>
+<hr />
+<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## Tasleemat Forms Guide
+# Project Artifact: User Story Mapping Canvas
+
+**Document Reference:** `PMO-04.02.09`
+
+This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the **User Story Mapping Canvas** in alignment
+with the Tasleemat framework.
+
+---
+
+### 1. What?
+A picture of how one person gets something done, and the reasoning behind
+it: who that person is, what they are trying to accomplish, what they do
+today instead, how often they do it and what it costs them, and which other
+roles the change touches. Then the high-level activities in the order they
+are performed, where that order came from, what has been deliberately left
+off, and where the sequence branches. Then the steps under each activity, one
+row per activity so that every column of the map is a usable increment rather
+than a horizontal layer, the walking skeleton that proves the integration, and
+what shows each slice is small enough to deliver. Then where the first-release
+line falls, what the person can then do, how that will be judged, and which
+slices were deferred and why. Then the later candidates with their
+dependencies, the work the map does not yet contain, what the product will
+not do, what the map assumes, what would force it to be redrawn, and who owns
+it.
+
+---
+
+### 2. Why?
+Because a backlog records decisions already taken and a map records the
+reasoning, which is the part that can still be argued with. The disagreement
+is the point: it is much cheaper to move a column on a whiteboard than to
+unpick a release. The map is also the artefact that makes a wrong assumption
+visible while it is still cheap, which a requirements list cannot do, because
+by the time a requirement is written the assumption has been built into it.
+
+The fields that appear empty are the evidence. A map with no stated
+workaround, no recorded source for the backbone, no deferred slices with
+reasons, no outcome and no validation plan describes a product nobody has
+agreed on, since each of those is filled in by something that happened
+rather than by something that was decided. A backbone drawn from an existing
+process diagram describes how the organisation says the work happens, which
+is frequently not how anybody does it, and a map ordered by system
+architecture describes the software rather than the day. A release boundary
+drawn by what is easiest to estimate delivers a set of features and no
+outcome, and a release described by its features has no test for whether it
+succeeded, so its success is decided afterwards by whoever feels strongly
+about it.
+
+---
+
+### 3. When?
+This artifact is primarily prepared, utilized, and updated during the
+**PLANNING Process Group** of the project lifecycle. It is drafted before
+the backlog is committed to, revised whenever the persona, the workaround or
+the sequence changes, whenever a release boundary is drawn or moved, and
+whenever new work arrives that the map does not contain. It is read at
+backlog refinement, at release planning, and by anyone proposing a story,
+who needs to know which column it would sit in and whether that column is
+already scheduled.
+
+---
+
+### 4. Who?
+**Responsibilities:** Prepared by the Product Owner, who is accountable for
+the persona and for the first-release boundary, since the boundary is a
+decision about what the product is for. Reviewed by the Business Analyst,
+who is accountable for the backbone sequence and for where its evidence came
+from, and by the UX practitioner who observed the workaround. Approved by the
+Business Owner, who confirms the persona is the one whose problem is worth
+solving. Where a column has no stated dependency or a deferred slice has no
+reason, record that rather than leaving the cell empty, since an empty cell
+on a map is read as a decision by whoever reads the map next.
+
+---
+
+### Tailoring Tips
+*   A map for a single well-understood persona may omit the persona section
+    beyond a sentence, but the workaround and the frequency should survive,
+    since they are what order the backbone and what justify building
+    anything.
+*   Where a team already maintains a mature backlog, the map may be used
+    retrospectively to test whether the backlog is vertical, provided the
+    test is applied honestly; a backlog that turns out to be horizontal is a
+    finding, and the map is the only artefact that will show it.
+*   The walking skeleton may be run against real data in a trial, provided
+    the trial is bounded and the data handled accordingly, since the point
+    is to prove the integration and a real trial proves more.
+*   Slices may be split across releases where a single column is too large,
+    provided each part remains usable on its own; a column cut in half across
+    two releases has reintroduced the horizontal layer.
+*   It is worth recording which activities were considered and left off the
+    backbone, as this is what distinguishes a considered map from an
+    incomplete one.
+*   A map for an internal tool with one user may be a single row, but it
+    should still state what that person does today, since a tool with no
+    stated workaround is usually solving a problem nobody has.
+*   Superseded maps should be retained rather than overwritten, since the
+    question a team argues about later is almost always what was believed at
+    the time.
+
+---
+
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Stakeholder Requirements
+*   **Optional / Contextual:**
+    *   Product Vision (PMO-03.02)
+    *   Assumption Log (PMO-03.03)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Project Schedule (PMO-04.03.08)
+    *   Cost Estimates (PMO-04.04.02)
+*   **Optional / Contextual:**
+    *   Product Backlog (PMO-04.02.08)
+    *   Quality Metrics (PMO-04.05.02)
+
+---
+
+### 5. How?
+To accurately and professionally complete the **USER STORY MAPPING CANVAS**, the
+responsible party must populate the following sections based on the project
+context (ensure `parameters.md` is referenced for global project variables):
+
+*   **Primary Persona:** The specific person, described so that a team can tell whether a proposed story serves them. A persona written as a role title rather than a person is the reason two teams build different products from the same map and discover the difference at launch.
+*   **What They Are Trying to Do:** What the person is trying to accomplish, in their own framing, and what they do today instead. The workaround is the baseline: a proposal that cannot say what it replaces cannot say what it improves, and every estimate is then a guess.
+*   **Frequency and Stakes:** How often the person does this, and what it costs them when it goes wrong. Frequency is what orders the backbone, and stakes are what separate a task worth automating from one worth automating carefully.
+*   **Organisations and Roles Affected:** Other roles the change touches, including the people who approve, review, or are affected by a decision made from the output. A map that names only the operator will produce a system whose other users are discovered after release.
+*   **Activities in Order:** The high-level activities the persona performs, left to right in the order performed. The order is a claim about how the work actually happens, and it is the part of the map most often arranged by system architecture instead, which hides the sequence the person actually experiences.
+*   **Backbone Source:** How the sequence was established: observation, interview, existing process document, or assumption. A backbone derived from a process diagram describes how the organisation says the work happens, which is not always how anyone does it.
+*   **Activities Deferred:** Activities the person does that are deliberately not on the map, and why. A map that lists everything is a list of activities; the argument is in what has been left off and what that defers.
+*   **Optional and Variable Paths:** Where the sequence branches, and which branches are common and which are rare. A backbone drawn as a single line forces rare paths into the main flow, which is where most of the wasted work in a release comes from.
+*   **Tasks Under Each Activity:** One row per activity, with the specific steps of that activity. A step that serves no single activity is a horizontal layer, and a horizontal layer cannot be released on its own because no user can do anything useful with it.
+*   **Slices as Vertical Columns:** Each column must be a usable increment: every activity in the backbone has something in it, and a user can complete the whole journey with only that column. This is the defining discipline of the method, and a map that fails it has produced a technical layering dressed as a story map.
+*   **Walking Skeleton:** The thinnest possible column, end to end, with the crudest workable implementation of every activity. Its purpose is to prove the integration rather than the features, and it is normally thrown away, which is the reason teams hesitate to build it.
+*   **Slice Sizing Evidence:** What shows each slice is small enough to deliver, such as a timeboxed trial or a measured manual run. An estimate is a claim about a slice nobody has tried, and the first slice is where the estimate is usually wrong.
+*   **MVP Boundary:** Which columns are in the first release and which are not, and the single outcome that release delivers. The boundary is drawn by whether a persona can achieve something they came for, not by what is most valuable or most nearly finished, and a release assembled from the easiest columns delivers nothing anyone wanted.
+*   **Outcome of the First Release:** What the persona is able to do after it that they could not do before, stated as a capability and not as a list of features. A release described by its features has no test for whether it succeeded, so its success is decided afterwards by whoever feels strongly about it.
+*   **Validation Plan:** How the first release will be judged, against what, and by whom. Recorded before the release because a validation designed afterwards is a description of whatever was found.
+*   **Slices Deferred Beyond MVP:** The columns not in the first release, with the reason for each. "Later" is not a reason; the reason is usually a dependency, a missing decision, or a risk too large for a first release.
+*   **Later Release Candidates:** Columns considered for subsequent releases, with their dependencies named. A candidate with an unnamed dependency is a wish, and a wish placed on a map is read as a commitment by whoever reads the map next.
+*   **Emergent Work Anticipated:** Work the map does not contain because it has not been discovered yet, and how new items will be added. A map that claims to be complete invites the work to go somewhere unrecorded instead, which is where it is found later at the worst possible moment.
+*   **Explicitly Out of Scope:** What this product will not do, stated so it can be said out loud. This is the section that makes the map safe to publish, because an unstated exclusion is discovered by a user rather than by the team.
+*   **Assumptions and Unvalidated Beliefs:** What the map takes on trust, and what would have to be true for it to hold. Every map rests on beliefs nobody has tested, and listing them is the only way to know which one to test first.
+*   **Risks to the Map:** What would force the map to be redrawn, such as a change in regulation, a competitor's launch, or a finding that the real sequence differs. Recorded as triggers rather than as concerns, because a concern has no date and a trigger does.
+*   **Update Cadence and Owners:** How often the map is revisited, when a change triggers a redraw, and who owns it. A map with no owner and no cadence is a picture of what was understood once, and it is still being shown to people as if it were current.
+*   **Traceability to Backlog and Release:** How a story on this map reaches the backlog, and what happens when a backlog item contradicts the map. The two are kept in step by a rule and a person, or they diverge quietly and the map stops describing the product.
+
+---
+
+### 📥 Associated Templates
+* [📄 Printable Template (Markdown)](04_02_09_User_Story_Mapping_Canvas_Template.md)
+* [🤖 LLM Generation Prompt](04_02_09_User_Story_Mapping_Canvas.md)
+* [📊 Data Structure (JSON)](04_02_09_User_Story_Mapping_Canvas.json)
+* [📈 Tabular Data (CSV)](04_02_09_User_Story_Mapping_Canvas.csv)
+
+---
+
+### 6. Reference Example
+A fully completed, gold-standard reference example illustrating this artifact in practice is available:
+> 📖 **Completed Example:** [04_02_09_User_Story_Mapping_Canvas_Example.md](../../../../../examples/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Example.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Example.npy
+token_count: 1444
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.215159+00:00'</p>
+<hr />
+<h1>User Story Mapping Canvas (Reference Example)</h1>
+<blockquote>
+<p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-04.02</code>). All company names, project references, and figures are realistic fictional simulations.</p>
+</blockquote>
+<hr />
+<h3 dir="ltr" align="right">Apex Global Solutions</h3>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
+<h1 dir="ltr" align="center">USER STORY MAPPING CANVAS</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Date Prepared:</strong> 2026-03-15</th>
+<th style="text-align: left;"><strong>Project Manager:</strong> Faisal Al-Harbi, PMP</th>
+<th style="text-align: left;"><strong>Prepared By:</strong> Faisal Al-Harbi, PMP (Senior Project Manager)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>1. Persona and Problem</h2>
+<!-- Who this is for, what they are trying to do, how often they do it, what it costs them, and who else the change touches. -->
+
+<p><strong>Primary Persona:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>What They Are Trying to Do:</strong> Reduce purchase order cycle time by 40% and eliminate data entry reconciliation errors to &lt; 0.1%</p>
+<p><strong>Frequency and Stakes:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Organisations and Roles Affected:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<hr />
+<h2>2. The Backbone</h2>
+<!-- The high-level activities in the order they are performed, where that order came from, what is deliberately not on the map, and where the sequence branches. -->
+
+<p><strong>Activities in Order:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th style="text-align: left;">Activity</th>
+<th style="text-align: left;">Purpose for the Persona</th>
+<th style="text-align: left;">Source of Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Unified Cloud ERP Core Architecture</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">INIT-01</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Automated Procurement &amp; Smart Supply Chain Engine</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">REQ-02</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Executive Business Intelligence &amp; Reporting Platform</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">ACT-03</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Employee Self-Service &amp; HR Capital Portal</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">BEN-04</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Backbone Source:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Activities Deferred:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Optional and Variable Paths:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<hr />
+<h2>3. The Slices</h2>
+<!-- The steps under each activity, one row per activity, so that each column is a usable increment rather than a horizontal layer. -->
+
+<p><strong>Tasks Under Each Activity:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Activity</th>
+<th style="text-align: left;">Step 1</th>
+<th style="text-align: left;">Step 2</th>
+<th style="text-align: left;">Step 3</th>
+<th style="text-align: left;">Vertical Slice Complete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Unified Cloud ERP Core Architecture</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: left;">Automated Procurement &amp; Smart Supply Chain Engine</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: left;">Executive Business Intelligence &amp; Reporting Platform</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: left;">Employee Self-Service &amp; HR Capital Portal</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Slices as Vertical Columns:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Walking Skeleton:</strong> Minimal end-to-end functional thread: Requisition creation, manager approval, and cloud invoice generation.</p>
+<p><strong>Slice Sizing Evidence:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<hr />
+<h2>4. Release Slicing</h2>
+<p><strong>MVP Boundary:</strong> Core procurement, inventory ledger, and financial billing integration.</p>
+<p><strong>Outcome of the First Release:</strong> Pilot rollout (MVP) deployed across 3 regional distribution hubs for performance validation.</p>
+<p><strong>Validation Plan:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Slices Deferred Beyond MVP:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<hr />
+<h2>5. Beyond the First Release</h2>
+<!-- Columns considered later with their dependencies, work the map does not yet contain, and what this product will not do. -->
+
+<p><strong>Later Release Candidates:</strong> Mobile self-service portal, international payment gateway integrations, and predictive analytics engine.</p>
+<p><strong>Emergent Work Anticipated:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Explicitly Out of Scope:</strong> On-premise hardware procurement and legacy codebase maintenance beyond cutover window.</p>
+<hr />
+<h2>6. Map Quality and Maintenance</h2>
+<p><strong>Assumptions and Unvalidated Beliefs:</strong> 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)</p>
+<p><strong>Risks to the Map:</strong> Active operational monitoring with rapid response workflows triggered upon threshold deviations.</p>
+<p><strong>Update Cadence and Owners:</strong> 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)</p>
+<p><strong>Traceability to Backlog and Release:</strong> Two-week agile delivery sprint focusing on high-priority backlog items and acceptance criteria verification.</p>
+<hr />
+<h3>Sign-off and Approvals</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Signature</th>
+<th style="text-align: center;">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Product Owner</strong></td>
+<td style="text-align: left;">Mariam Al-Khatib (Principal Product Owner)</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>UX / BA Lead</strong></td>
+<td style="text-align: left;">Leena Al-Bahrani (Lead UX Architect)</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Development Team Lead</strong></td>
+<td style="text-align: left;">Eng. Walid Al-Hammad (Development Lead)</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> USER STORY MAPPING CANVAS | <strong>Ref:</strong> PMO-04.02.09 <br>
+  <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">Draft 2020-12 JSON Schema</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              Copy JSON Schema
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill out the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Give the persona a workaround to beat and a frequency, and order the backbone by what the person does rather than by how the system is built. State the first-release outcome as something the person can now do, not as a list of features, and give every deferred slice a reason: later is not a reason, and a column with no stated dependency is a wish rather than a plan.&quot;,
+  &quot;form_name&quot;: &quot;USER STORY MAPPING CANVAS&quot;,
+  &quot;document_reference&quot;: &quot;PMO-04.02.09&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Primary_Persona&quot;: {
+      &quot;section&quot;: &quot;Persona and Problem&quot;,
+      &quot;label&quot;: &quot;Primary Persona&quot;,
+      &quot;guidance&quot;: &quot;The specific person, described so that a team can tell whether a proposed story serves them. A persona written as a role title rather than a person is the reason two teams build different products from the same map and discover the difference at launch.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_What_They_Are_Trying_to_Do&quot;: {
+      &quot;section&quot;: &quot;Persona and Problem&quot;,
+      &quot;label&quot;: &quot;What They Are Trying to Do&quot;,
+      &quot;guidance&quot;: &quot;What the person is trying to accomplish, in their own framing, and what they do today instead. The workaround is the baseline: a proposal that cannot say what it replaces cannot say what it improves, and every estimate is then a guess.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Frequency_and_Stakes&quot;: {
+      &quot;section&quot;: &quot;Persona and Problem&quot;,
+      &quot;label&quot;: &quot;Frequency and Stakes&quot;,
+      &quot;guidance&quot;: &quot;How often the person does this, and what it costs them when it goes wrong. Frequency is what orders the backbone, and stakes are what separate a task worth automating from one worth automating carefully.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Organisations_and_Roles_Affected&quot;: {
+      &quot;section&quot;: &quot;Persona and Problem&quot;,
+      &quot;label&quot;: &quot;Organisations and Roles Affected&quot;,
+      &quot;guidance&quot;: &quot;Other roles the change touches, including the people who approve, review, or are affected by a decision made from the output. A map that names only the operator will produce a system whose other users are discovered after release.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Activities_in_Order&quot;: {
+      &quot;section&quot;: &quot;The Backbone&quot;,
+      &quot;label&quot;: &quot;Activities in Order&quot;,
+      &quot;guidance&quot;: &quot;The high-level activities the persona performs, left to right in the order performed. The order is a claim about how the work actually happens, and it is the part of the map most often arranged by system architecture instead, which hides the sequence the person actually experiences.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Backbone_Source&quot;: {
+      &quot;section&quot;: &quot;The Backbone&quot;,
+      &quot;label&quot;: &quot;Backbone Source&quot;,
+      &quot;guidance&quot;: &quot;How the sequence was established: observation, interview, existing process document, or assumption. A backbone derived from a process diagram describes how the organisation says the work happens, which is not always how anyone does it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Activities_Deferred&quot;: {
+      &quot;section&quot;: &quot;The Backbone&quot;,
+      &quot;label&quot;: &quot;Activities Deferred&quot;,
+      &quot;guidance&quot;: &quot;Activities the person does that are deliberately not on the map, and why. A map that lists everything is a list of activities; the argument is in what has been left off and what that defers.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Optional_and_Variable_Paths&quot;: {
+      &quot;section&quot;: &quot;The Backbone&quot;,
+      &quot;label&quot;: &quot;Optional and Variable Paths&quot;,
+      &quot;guidance&quot;: &quot;Where the sequence branches, and which branches are common and which are rare. A backbone drawn as a single line forces rare paths into the main flow, which is where most of the wasted work in a release comes from.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Tasks_Under_Each_Activity&quot;: {
+      &quot;section&quot;: &quot;The Slices&quot;,
+      &quot;label&quot;: &quot;Tasks Under Each Activity&quot;,
+      &quot;guidance&quot;: &quot;One row per activity, with the specific steps of that activity. A step that serves no single activity is a horizontal layer, and a horizontal layer cannot be released on its own because no user can do anything useful with it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Slices_as_Vertical_Columns&quot;: {
+      &quot;section&quot;: &quot;The Slices&quot;,
+      &quot;label&quot;: &quot;Slices as Vertical Columns&quot;,
+      &quot;guidance&quot;: &quot;Each column must be a usable increment: every activity in the backbone has something in it, and a user can complete the whole journey with only that column. This is the defining discipline of the method, and a map that fails it has produced a technical layering dressed as a story map.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Walking_Skeleton&quot;: {
+      &quot;section&quot;: &quot;The Slices&quot;,
+      &quot;label&quot;: &quot;Walking Skeleton&quot;,
+      &quot;guidance&quot;: &quot;The thinnest possible column, end to end, with the crudest workable implementation of every activity. Its purpose is to prove the integration rather than the features, and it is normally thrown away, which is the reason teams hesitate to build it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Slice_Sizing_Evidence&quot;: {
+      &quot;section&quot;: &quot;The Slices&quot;,
+      &quot;label&quot;: &quot;Slice Sizing Evidence&quot;,
+      &quot;guidance&quot;: &quot;What shows each slice is small enough to deliver, such as a timeboxed trial or a measured manual run. An estimate is a claim about a slice nobody has tried, and the first slice is where the estimate is usually wrong.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_MVP_Boundary&quot;: {
+      &quot;section&quot;: &quot;Release Slicing&quot;,
+      &quot;label&quot;: &quot;MVP Boundary&quot;,
+      &quot;guidance&quot;: &quot;Which columns are in the first release and which are not, and the single outcome that release delivers. The boundary is drawn by whether a persona can achieve something they came for, not by what is most valuable or most nearly finished, and a release assembled from the easiest columns delivers nothing anyone wanted.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Outcome_of_the_First_Release&quot;: {
+      &quot;section&quot;: &quot;Release Slicing&quot;,
+      &quot;label&quot;: &quot;Outcome of the First Release&quot;,
+      &quot;guidance&quot;: &quot;What the persona is able to do after it that they could not do before, stated as a capability and not as a list of features. A release described by its features has no test for whether it succeeded, so its success is decided afterwards by whoever feels strongly about it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_Validation_Plan&quot;: {
+      &quot;section&quot;: &quot;Release Slicing&quot;,
+      &quot;label&quot;: &quot;Validation Plan&quot;,
+      &quot;guidance&quot;: &quot;How the first release will be judged, against what, and by whom. Recorded before the release because a validation designed afterwards is a description of whatever was found.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Slices_Deferred_Beyond_MVP&quot;: {
+      &quot;section&quot;: &quot;Release Slicing&quot;,
+      &quot;label&quot;: &quot;Slices Deferred Beyond MVP&quot;,
+      &quot;guidance&quot;: &quot;The columns not in the first release, with the reason for each. \&quot;Later\&quot; is not a reason; the reason is usually a dependency, a missing decision, or a risk too large for a first release.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Later_Release_Candidates&quot;: {
+      &quot;section&quot;: &quot;Beyond the First Release&quot;,
+      &quot;label&quot;: &quot;Later Release Candidates&quot;,
+      &quot;guidance&quot;: &quot;Columns considered for subsequent releases, with their dependencies named. A candidate with an unnamed dependency is a wish, and a wish placed on a map is read as a commitment by whoever reads the map next.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Emergent_Work_Anticipated&quot;: {
+      &quot;section&quot;: &quot;Beyond the First Release&quot;,
+      &quot;label&quot;: &quot;Emergent Work Anticipated&quot;,
+      &quot;guidance&quot;: &quot;Work the map does not contain because it has not been discovered yet, and how new items will be added. A map that claims to be complete invites the work to go somewhere unrecorded instead, which is where it is found later at the worst possible moment.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Explicitly_Out_of_Scope&quot;: {
+      &quot;section&quot;: &quot;Beyond the First Release&quot;,
+      &quot;label&quot;: &quot;Explicitly Out of Scope&quot;,
+      &quot;guidance&quot;: &quot;What this product will not do, stated so it can be said out loud. This is the section that makes the map safe to publish, because an unstated exclusion is discovered by a user rather than by the team.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Assumptions_and_Unvalidated_Beliefs&quot;: {
+      &quot;section&quot;: &quot;Map Quality and Maintenance&quot;,
+      &quot;label&quot;: &quot;Assumptions and Unvalidated Beliefs&quot;,
+      &quot;guidance&quot;: &quot;What the map takes on trust, and what would have to be true for it to hold. Every map rests on beliefs nobody has tested, and listing them is the only way to know which one to test first.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Risks_to_the_Map&quot;: {
+      &quot;section&quot;: &quot;Map Quality and Maintenance&quot;,
+      &quot;label&quot;: &quot;Risks to the Map&quot;,
+      &quot;guidance&quot;: &quot;What would force the map to be redrawn, such as a change in regulation, a competitor&#x27;s launch, or a finding that the real sequence differs. Recorded as triggers rather than as concerns, because a concern has no date and a trigger does.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Update_Cadence_and_Owners&quot;: {
+      &quot;section&quot;: &quot;Map Quality and Maintenance&quot;,
+      &quot;label&quot;: &quot;Update Cadence and Owners&quot;,
+      &quot;guidance&quot;: &quot;How often the map is revisited, when a change triggers a redraw, and who owns it. A map with no owner and no cadence is a picture of what was understood once, and it is still being shown to people as if it were current.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Traceability_to_Backlog_and_Release&quot;: {
+      &quot;section&quot;: &quot;Map Quality and Maintenance&quot;,
+      &quot;label&quot;: &quot;Traceability to Backlog and Release&quot;,
+      &quot;guidance&quot;: &quot;How a story on this map reaches the backlog, and what happens when a backlog item contradicts the map. The two are kept in step by a rule and a person, or they diverge quietly and the map stops describing the product.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 Tasleemat</div>
+          <p style="margin-bottom: 1rem;">Tasleemat is a bilingual open deliverable library and supporting toolkit. Not a live PMO application or approval authority.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">Start Here</a></li>
+            <li><a href="/Tasleemat/deliverables/">Deliverables (114)</a></li>
+            <li><a href="/Tasleemat/guides/">Core Manuals</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Technical & AI</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">Python SDK & CLI</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">Model Context Protocol (MCP)</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">Draft 2020-12 Schemas</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Community & Policy</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">PMO Governance Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

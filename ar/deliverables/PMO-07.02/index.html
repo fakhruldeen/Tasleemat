@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-07.02 تقرير إغلاق العقد | تسليمات</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-07.02/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-07.02</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-07.02</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 07: الإغلاق
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span>
+            <span class="tag pack">general</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">تقرير إغلاق العقد</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">CONTRACT CLOSEOUT REPORT</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-07.02 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-07.02 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. النظرة العامة والبيانات الوصفية
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. قالب التسليمة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. الدليل الإرشادي للممارس
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. مثال واقعي مكتمل
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. مخطط البيانات Draft 2020-12
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 07:</strong> الإغلاق
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-07.02 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/07_الإغلاق/02_تقرير_إغلاق_العقد/07_02_تقرير_إغلاق_العقد_قالب.npy
+token_count: 2770
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.878822+00:00&#x27;
+form_id: PMO-07.02
+language: ar
+status: approved
+---
+--&gt;
+
+&lt;!-- تعليمات للنموذج الذكي (LLM): قم بتوليد واستيفاء الحقول وعناصر البيانات [ أضف التفاصيل... ] بدقة واحترافية استناداً إلى سياق المشروع وبيانات الإدخال المعتمدة..
+
+يتضمن إغلاق توثيق أداء المورد حتى يمكن استخدام تلك المعلومات لتقييم المورد في الأعمال
+المستقبلية. ويدعم إغلاق العقد عملية إغلاق المشروع ويساعد على ضمان استكمال اتفاقيات العقد أو
+إنهائها.
+
+وقبل أن يمكن إغلاق العقد أو إنهائه بالكامل، يجب حل جميع النزاعات، وقبول المنتج أو النتيجة،
+ودفع الدفعات النهائية. وسجل تاريخ إتمام العقد، ومن اعتمده، وتاريخ الدفعة النهائية.
+
+ويستند تقرير إغلاق العقد إلى الجدول 4.8، عناصر إغلاق العقد.
+
+ملاحظات التخصيص:
+*  في حالة العقد الصغير، يمكنك دمج جميع المعلومات في تحليل أداء المورد في فقرة ملخص واحدة.
+*  في حالة العقود الصغيرة، قد لا تحتاج إلى معلومات عن تغييرات العقد أو نزاعاته.
+*  إذا كان المشروع قائمًا حول عقد كبير واحد، يمكنك دمج المعلومات الواردة في تقرير إغلاق
+  المشروع مع هذا النموذج.
+
+المحاذاة: يجب أن يتسق التقرير ويتوافق مع خطة إدارة المشتريات وتدقيق المشتريات وسجل التغييرات
+وتقرير إغلاق المشروع.
+
+توجيهات استيفاء الأقسام:
+*  **تحديد العقد:** سجل مرجع العقد والمورد ونوع العقد وقيمته وحالة الإغلاق.
+*  **ما تمت معالجته بشكل جيد:** في تحليل أداء المورد، صف ما تمت معالجته بشكل جيد في النطاق
+  والجودة والجدول الزمني والتكلفة، إلى جانب أي جانب آخر من العقد أو الشراء.
+*  **ما يمكن تحسينه:** في الأبعاد الخمسة نفسها، صف ما كان يمكن تحسينه. وينبغي أن يكون كل بند
+  محددًا وقابلًا للتنفيذ.
+*  **سجل تغييرات العقد:** لكل تغيير، أدخل المعرف والوصف وتاريخ الاعتماد من سجل التغييرات.
+*  **سجل نزاعات العقد:** لكل نزاع أو مطالبة، صفه وتسويته وتاريخ حله. ويجب حل جميع النزاعات
+  قبل الإغلاق.
+*  **إتمام العقد والدفعة النهائية:** سجل تاريخ الإتمام ومن اعتمده وتاريخ الدفعة النهائية.
+*  **التعليقات:** أضف أي تعليقات تضفي على التقرير صلة إضافية. --&gt;
+
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{اسم_المشروع}} - {{معرف_المشروع}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;تقرير إغلاق العقد&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير المشروع:** {{اسم_مدير_المشروع}} | **إعداد:** {{معد_الوثيقة}} |
+| ---: | ---: | ---: |
+
+---
+
+## 1. تحديد العقد
+&lt;!-- حدد العقد الجاري إغلاقه حتى يمكن حفظ هذا السجل في مكانه الصحيح وإعادة استخدامه عند
+تقييم المورد في أعمال مستقبلية. سجل مرجع العقد والمورد ونوع العقد وقيمته، وما إذا كان العقد
+يُغلق كمكتمل أو كمنتهٍ. وحالة الإغلاق مهمة لأن العقد المنهي يُغلق أيضًا، لكن تفسير سجل
+الأداء يختلف بينهما.
+- **مرجع العقد:** رقم العقد أو أمر الشراء.
+- **المورد:** الكيان القانوني الذي تنفيذ العمل.
+- **نوع العقد وقيمته:** نوع العقد، مثل السعر الثابت أو تعويض التكلفة، وإجمالي القيمة
+ التعاقدية.
+- **حالة الإغلاق:** مكتمل أو منتهٍ، وتاريخ بدء الإغلاق. --&gt;
+
+| الحقل | الإدخال |
+| ---: | ---: |
+| **مرجع العقد** | [ أضف التفاصيل... ] |
+| **المورد** | [ أضف التفاصيل... ] |
+| **نوع العقد وقيمته** | [ أضف التفاصيل... ] |
+| **حالة الإغلاق** | [ أضف التفاصيل... ] |
+
+---
+
+## 2. تحليل أداء المورد: ما تمت معالجته بشكل جيد
+&lt;!-- سجل ما فعله المورد بشكل جيد، في الأبعاد الخمسة الواردة في الجدول 4.8. ويوجد هذا
+السجل ليُستخدم في تقييم المورد للعمل المستقبلي، لذا اذكر الممارسة محددة والدليل عليها بدلًا من
+تقييم عام. وأبقي الأبعاد منفصلة، فالاستنتاج الذي يخلط بين الجودة والتكلفة لا يمكن اتخاذ
+إجراء بشأنه. ويخص صف &quot;أخرى&quot; النقاط النوعية، مثل مدى سهولة التعامل مع المورد.
+- **النطاق:** جوانب نطاق العقد التي تمت معالجتها بشكل جيد.
+- **الجودة:** جوانب جودة المنتج التي تمت معالجتها بشكل جيد.
+- **الجدول الزمني:** جوانب الجدول الزمني للعقد التي تمت معالجتها بشكل جيد.
+- **التكلفة:** جوانب ميزانية العقد التي تمت معالجتها بشكل جيد.
+- **أخرى:** أي جانب آخر من العقد أو الشراء تمت معالجته بشكل جيد، بما في ذلك مدى سهولة
+ التعامل مع المورد. --&gt;
+
+| البُعد | ما تمت معالجته بشكل جيد | الدليل أو المثال |
+| ---: | ---: | ---: |
+| **النطاق** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **الجودة** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **الجدول الزمني** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **التكلفة** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **أخرى** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+&lt;!--
+ملاحظة تخصيص: في حالة العقد الصغير، يمكن دمج جميع معلومات أداء المورد في فقرة ملخص واحدة.
+--&gt;
+
+---
+
+## 3. تحليل أداء المورد: ما يمكن تحسينه
+&lt;!-- سجل ما كان ينبغي فعله بشكل أفضل، في الأبعاد الخمسة نفسها. وينبغي أن يكون كل بند محددًا
+وقابلًا للتنفيذ: حدد النقص وأثره على العقد أو المشروع وما ينبغي فعله بدلًا منه. وتُعد هذه
+القسم الأكثر قيمة للمشتريات المستقبلية، لأن أي عيب يُسجل هنا سيغيّر طريقة كتابة العقد
+التالي أو إدارته. وإذا كان السبب مؤسسيًا وليس خاصًا بالمورد، فاذكر ذلك.
+- **النطاق:** جوانب نطاق العقد التي يمكن تحسينها.
+- **الجودة:** جوانب جودة المنتج التي يمكن تحسينها.
+- **الجدول الزمني:** جوانب الجدول الزمني للعقد التي يمكن تحسينها.
+- **التكلفة:** جوانب ميزانية العقد التي يمكن تحسينها.
+- **أخرى:** أي جانب آخر من العقد أو الشراء يمكن تحسينه. --&gt;
+
+| البُعد | ما يمكن تحسينه | الإجراء الموصى به |
+| ---: | ---: | ---: |
+| **النطاق** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **الجودة** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **الجدول الزمني** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **التكلفة** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| **أخرى** | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+&lt;!--
+إرشادات التعليق: حدد النقص وأثره وما ينبغي فعله بدلًا منه.
+--&gt;
+
+---
+
+## 4. سجل تغييرات العقد
+&lt;!-- سجل كل تغيير تم إجراءه على العقد أثناء تنفيذه، مع الأخذ بالعناصر الثلاثة جميعها من
+سجل التغييرات بدلاً من إعادة كتابتها من الذاكرة. فالتغيير يعدل النطاق أو السعر أو الجدول
+الزمني المتعاقد عليه، ولذلك فإن أي تغيير غير مسجل يترك العقد غير مطابق للحساب النهائي.
+وأدخل معرف التغيير كما هو تمامًا في سجل التغييرات حتى يمكن مطابقة السجلين.
+- **معرف التغيير:** معرف التغيير من سجل التغييرات.
+- **وصف التغيير:** الوصف من سجل التغييرات.
+- **تاريخ الاعتماد:** تاريخ الاعتماد من سجل التغييرات. --&gt;
+
+| معرف التغيير | وصف التغيير | تاريخ الاعتماد |
+| ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+&lt;!--
+ملاحظة تخصيص: في حالة العقود الصغيرة، قد لا يكون هذا القسم ضروريًا.
+--&gt;
+
+---
+
+## 5. سجل نزاعات العقد
+&lt;!-- سجل كل نزاع أو مطالبة مرفوعة ضد العقد ونتيجتها. ويجب حل جميع النزاعات قبل أن يمكن
+إغلاق العقد أو إنهائه بالكامل، لذلك فإن أي بند ما زال مفتوحًا في تاريخ هذا التقرير يمنع
+الإغلاق. واذكر التسوية بصيغة محددة، بما في ذلك أي مبلغ تسوية، لأن التسوية هي التي تُحرر
+العقد.
+- **وصف النزاع:** صف النزاع أو المطالبة.
+- **التسوية:** صف التسوية.
+- **تاريخ الحل:** تاريخ حل النزاع أو المطالبة. --&gt;
+
+| وصف النزاع | التسوية | تاريخ الحل |
+| ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+&lt;!--
+ملاحظة تخصيص: في حالة العقود الصغيرة، قد لا يكون هذا القسم ضروريًا.
+--&gt;
+
+---
+
+## 6. إتمام العقد والدفعة النهائية
+&lt;!-- سجل العناصر الثلاثة التي تُثبت الإغلاق. يجب حل جميع النزاعات، وقبول المنتج أو النتيجة،
+ودفع الدفعات النهائية قبل أن يمكن إغلاق العقد أو إنهائه بالكامل. واذكر اسم من اعتمد الإنجاز
+وليس الدور فقط، حتى يكون القبول قابلًا للتتبع. وإذا كان العقد يُنهى بدلًا من إكماله، فاذكر
+ذلك هنا واشرح السبب في قسم التعليقات.
+- **تاريخ إتمام العقد:** التاريخ الذي اكتمل فيه العقد.
+- **تم الاعتماد من:** من اعتمد إتمام العقد.
+- **تاريخ الدفعة النهائية:** تاريخ الدفعة النهائية. --&gt;
+
+| الحقل | الإدخال |
+| ---: | ---: |
+| **تاريخ إتمام العقد** | [ أضف التفاصيل... ] |
+| **تم الاعتماد من** | [ أضف التفاصيل... ] |
+| **تاريخ الدفعة النهائية** | [ أضف التفاصيل... ] |
+
+&lt;!--
+إرشادات التعليق: يجب حل جميع النزاعات وقبول النتيجة ودفع الدفعة النهائية قبل الإغلاق.
+--&gt;
+
+---
+
+## 7. التعليقات
+&lt;!-- أضف أي تعليقات تضفي على التقرير صلة إضافية، مثل سبب إنهاء العقد بدلًا من إكماله، أو
+حدود النطاق، أو السياق الذي يحتاجه تقرير إغلاق المشروع. --&gt;
+
+
+---
+
+### الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير العقود** | {{اسم_مدير_العقود}} | _______________________ | [.... -.... -.... ] |
+| **مدير المشتريات** | {{اسم_مدير_المشتريات}} | _______________________ | [.... -.... -.... ] |
+| **المراقب المالي / المستشار القانوني** | {{اسم_المراقب_المالي}} | _______________________ | [.... -.... -.... ] |
+---
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;القالب:&lt;/strong&gt; تقرير إغلاق العقد | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-07.02 &lt;br&gt;
+ &lt;i&gt;تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: ar
+layout: default
+title: تقرير إغلاق العقد
+nav_order: 1
+token_pointer: /_tokens/forms/ar/07_الإغلاق/02_تقرير_إغلاق_العقد/07_02_تقرير_إغلاق_العقد_دليل.npy
+token_count: 980
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.877697+00:00'
+form_id: PMO-07.02
+status: approved</p>
+<hr />
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## دليل نماذج تسليمات
+# المخرج (Artifact): تقرير إغلاق العقد
+
+**مرجع الوثيقة:** `PMO-07.02`
+
+يوفر هذا المستند مرجعاً تفصيلياً واحترافياً لفهم الغرض من **تقرير إغلاق العقد** واستخدامه بفعالية كجزء من منهجية تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة حوكمة رسمية متوافقة مع إطار عمل تسليمات تُعرف بـ **تقرير إغلاق العقد**، وتُستخدم لتوثيق أداء المورد حتى يمكن استخدام تلك المعلومات لتقييم المورد في الأعمال المستقبلية. ويدعم إغلاق العقد عملية إغلاق المشروع ويساعد على ضمان استكمال اتفاقيات العقد أو إنهائها.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لضمان التوافق مع معايير تسليمات، ولتوفير الشفافية، وتوثيق الدروس المستفادة من العقد بما يخدم المشتريات المستقبلية، ودعم إغلاق المشروع.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يتم إعداد هذا المخرج (Artifact) وتحديثه في **مرحلة الإغلاق (Closing Process Group)** من دورة حياة المشروع، وقبل إغلاق العقد أو إنهائه بالكامل.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يُصان بواسطة مدير العقد ومدير المشتريات، ويُعتمد من قبل الرقابة المالية. ويُستخدم كمدخل لتقييم المورد في مشتريات مستقبلية.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  في حالة العقد الصغير، يمكنك دمج جميع معلومات تحليل أداء المورد في فقرة ملخص واحدة.
+*  في حالة العقود الصغيرة، قد لا تحتاج إلى الأقسام الخاصة بتغييرات العقد ونزاعاته.
+*  إذا كان المشروع قائمًا حول عقد كبير واحد، يمكنك دمج المعلومات في تقرير إغلاق المشروع مع هذا النموذج.
+
+### المحاذاة والترابط المؤسسي
+*  خطة إدارة المشتريات
+*  تدقيق المشتريات
+*  سجل التغييرات
+*  إغلاق المشروع
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإكمال **تقرير إغلاق العقد** بطريقة احترافية ومتوافقة مع المعايير، يجب تعبئة الأقسام الحرجة التالية بشكل مفصل (يرجى الرجوع إلى ملف `parameters.md` لضمان توافق المتغيرات العامة للمشروع):
+
+*  **تحديد العقد:** سجل مرجع العقد والمورد ونوع العقد وقيمته وحالة الإغلاق.
+*  **ما تمت معالجته بشكل جيد:** لكل من النطاق والجودة والجدول الزمني والتكلفة وأي جوانب أخرى، صف ما تمت معالجته جيدًا مع الدليل عليه.
+*  **ما يمكن تحسينه:** لكل من الأبعاد الخمسة نفسها، صف ما يمكن تحسينه والإجراء الموصى به.
+*  **سجل تغييرات العقد:** لكل تغيير، أدخل المعرف والوصف وتاريخ الاعتماد من سجل التغييرات.
+*  **سجل نزاعات العقد:** لكل نزاع أو مطالبة، صفه وتسويته وتاريخ حله.
+*  **إتمام العقد والدفعة النهائية:** سجل تاريخ الإتمام ومن اعتمده وتاريخ الدفعة النهائية.
+*  **التعليقات:** أضف أي تعليقات تضفي على التقرير صلة إضافية.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](07_02_تقرير_إغلاق_العقد_قالب.md)
+* [🤖 تعليمات النموذج الذكي (LLM)](07_02_تقرير_إغلاق_العقد.md)
+* [📊 هيكل البيانات (JSON)](07_02_تقرير_إغلاق_العقد.json)
+* [📈 البيانات المجدولة (CSV)](07_02_تقرير_إغلاق_العقد.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [07_02_تقرير_إغلاق_العقد_مثال.md](../../../../examples/ar/07_الإغلاق/02_تقرير_إغلاق_العقد/07_02_تقرير_إغلاق_العقد_مثال.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/07_الإغلاق/02_تقرير_إغلاق_العقد/07_02_تقرير_إغلاق_العقد_مثال.npy
+token_count: 2627
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.188281+00:00'</p>
+<hr />
+<div>
+
+# تقرير إغلاق العقد (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-07.02`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
+<h1 align="center">تقرير إغلاق العقد</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مدير المشروع:** م. فيصل الحربي، PMP | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| ---: | ---: | ---: |
+
+---
+
+## 1. تحديد العقد
+<!-- حدد العقد الجاري إغلاقه حتى يمكن حفظ هذا السجل في مكانه الصحيح وإعادة استخدامه عند
+تقييم المورد في أعمال مستقبلية. سجل مرجع العقد والمورد ونوع العقد وقيمته، وما إذا كان العقد
+يُغلق كمكتمل أو كمنتهٍ. وحالة الإغلاق مهمة لأن العقد المنهي يُغلق أيضًا، لكن تفسير سجل
+الأداء يختلف بينهما.
+- **مرجع العقد:** رقم العقد أو أمر الشراء.
+- **المورد:** الكيان القانوني الذي تنفيذ العمل.
+- **نوع العقد وقيمته:** نوع العقد، مثل السعر الثابت أو تعويض التكلفة، وإجمالي القيمة
+ التعاقدية.
+- **حالة الإغلاق:** مكتمل أو منتهٍ، وتاريخ بدء الإغلاق. -->
+
+| الحقل | الإدخال |
+| ---: | ---: |
+| **مرجع العقد** | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| **المورد** | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| **نوع العقد وقيمته** | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| **حالة الإغلاق** | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+---
+
+## 2. تحليل أداء المورد: ما تمت معالجته بشكل جيد
+<!-- سجل ما فعله المورد بشكل جيد، في الأبعاد الخمسة الواردة في الجدول 4.8. ويوجد هذا
+السجل ليُستخدم في تقييم المورد للعمل المستقبلي، لذا اذكر الممارسة محددة والدليل عليها بدلًا من
+تقييم عام. وأبقي الأبعاد منفصلة، فالاستنتاج الذي يخلط بين الجودة والتكلفة لا يمكن اتخاذ
+إجراء بشأنه. ويخص صف "أخرى" النقاط النوعية، مثل مدى سهولة التعامل مع المورد.
+- **النطاق:** جوانب نطاق العقد التي تمت معالجتها بشكل جيد.
+- **الجودة:** جوانب جودة المنتج التي تمت معالجتها بشكل جيد.
+- **الجدول الزمني:** جوانب الجدول الزمني للعقد التي تمت معالجتها بشكل جيد.
+- **التكلفة:** جوانب ميزانية العقد التي تمت معالجتها بشكل جيد.
+- **أخرى:** أي جانب آخر من العقد أو الشراء تمت معالجته بشكل جيد، بما في ذلك مدى سهولة
+ التعامل مع المورد. -->
+
+| البُعد | ما تمت معالجته بشكل جيد | الدليل أو المثال |
+| ---: | ---: | ---: |
+| **النطاق** | نشر وتشغيل المنظومة السحابية الموحدة وتكاملها مع الأنظمة الأساسية | نشر وتشغيل المنظومة السحابية الموحدة وتكاملها مع الأنظمة الأساسية |
+| **الجودة** | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم |
+| **الجدول الزمني** | إنجاز كافة مراحل المشروع والتسليم التشغيلي خلال 18 شهراً | إنجاز كافة مراحل المشروع والتسليم التشغيلي خلال 18 شهراً |
+| **التكلفة** | تنفيذ المشروع بالكامل ضمن سقف الميزانية المعتمدة (12,500,000 ريال) | تنفيذ المشروع بالكامل ضمن سقف الميزانية المعتمدة (12,500,000 ريال) |
+| **أخرى** | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم |
+
+<!--
+ملاحظة تخصيص: في حالة العقد الصغير، يمكن دمج جميع معلومات أداء المورد في فقرة ملخص واحدة.
+-->
+
+---
+
+## 3. تحليل أداء المورد: ما يمكن تحسينه
+<!-- سجل ما كان ينبغي فعله بشكل أفضل، في الأبعاد الخمسة نفسها. وينبغي أن يكون كل بند محددًا
+وقابلًا للتنفيذ: حدد النقص وأثره على العقد أو المشروع وما ينبغي فعله بدلًا منه. وتُعد هذه
+القسم الأكثر قيمة للمشتريات المستقبلية، لأن أي عيب يُسجل هنا سيغيّر طريقة كتابة العقد
+التالي أو إدارته. وإذا كان السبب مؤسسيًا وليس خاصًا بالمورد، فاذكر ذلك.
+- **النطاق:** جوانب نطاق العقد التي يمكن تحسينها.
+- **الجودة:** جوانب جودة المنتج التي يمكن تحسينها.
+- **الجدول الزمني:** جوانب الجدول الزمني للعقد التي يمكن تحسينها.
+- **التكلفة:** جوانب ميزانية العقد التي يمكن تحسينها.
+- **أخرى:** أي جانب آخر من العقد أو الشراء يمكن تحسينه. -->
+
+| البُعد | ما يمكن تحسينه | الإجراء الموصى به |
+| ---: | ---: | ---: |
+| **النطاق** | نشر وتشغيل المنظومة السحابية الموحدة وتكاملها مع الأنظمة الأساسية | نشر وتشغيل المنظومة السحابية الموحدة وتكاملها مع الأنظمة الأساسية |
+| **الجودة** | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم |
+| **الجدول الزمني** | إنجاز كافة مراحل المشروع والتسليم التشغيلي خلال 18 شهراً | إنجاز كافة مراحل المشروع والتسليم التشغيلي خلال 18 شهراً |
+| **التكلفة** | تنفيذ المشروع بالكامل ضمن سقف الميزانية المعتمدة (12,500,000 ريال) | تنفيذ المشروع بالكامل ضمن سقف الميزانية المعتمدة (12,500,000 ريال) |
+| **أخرى** | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم | تحقيق أعلى معايير الجودة والأمان الرقمي وسلاسة تجربة المستخدم |
+
+
+
+---
+
+## 4. سجل تغييرات العقد
+<!-- سجل كل تغيير تم إجراءه على العقد أثناء تنفيذه، مع الأخذ بالعناصر الثلاثة جميعها من
+سجل التغييرات بدلاً من إعادة كتابتها من الذاكرة. فالتغيير يعدل النطاق أو السعر أو الجدول
+الزمني المتعاقد عليه، ولذلك فإن أي تغيير غير مسجل يترك العقد غير مطابق للحساب النهائي.
+وأدخل معرف التغيير كما هو تمامًا في سجل التغييرات حتى يمكن مطابقة السجلين.
+- **معرف التغيير:** معرف التغيير من سجل التغييرات.
+- **وصف التغيير:** الوصف من سجل التغييرات.
+- **تاريخ الاعتماد:** تاريخ الاعتماد من سجل التغييرات. -->
+
+| معرف التغيير | وصف التغيير | تاريخ الاعتماد |
+| ---: | ---: | ---: |
+| CR-2026-01 | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-06-30 |
+| CR-2026-02 | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-09-30 |
+| CR-2026-03 | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-11-30 |
+
+<!--
+ملاحظة تخصيص: في حالة العقود الصغيرة، قد لا يكون هذا القسم ضروريًا.
+-->
+
+---
+
+## 5. سجل نزاعات العقد
+<!-- سجل كل نزاع أو مطالبة مرفوعة ضد العقد ونتيجتها. ويجب حل جميع النزاعات قبل أن يمكن
+إغلاق العقد أو إنهائه بالكامل، لذلك فإن أي بند ما زال مفتوحًا في تاريخ هذا التقرير يمنع
+الإغلاق. واذكر التسوية بصيغة محددة، بما في ذلك أي مبلغ تسوية، لأن التسوية هي التي تُحرر
+العقد.
+- **وصف النزاع:** صف النزاع أو المطالبة.
+- **التسوية:** صف التسوية.
+- **تاريخ الحل:** تاريخ حل النزاع أو المطالبة. -->
+
+| وصف النزاع | التسوية | تاريخ الحل |
+| ---: | ---: | ---: |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-06-30 |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-09-30 |
+| معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-11-30 |
+
+<!--
+ملاحظة تخصيص: في حالة العقود الصغيرة، قد لا يكون هذا القسم ضروريًا.
+-->
+
+---
+
+## 6. إتمام العقد والدفعة النهائية
+<!-- سجل العناصر الثلاثة التي تُثبت الإغلاق. يجب حل جميع النزاعات، وقبول المنتج أو النتيجة،
+ودفع الدفعات النهائية قبل أن يمكن إغلاق العقد أو إنهائه بالكامل. واذكر اسم من اعتمد الإنجاز
+وليس الدور فقط، حتى يكون القبول قابلًا للتتبع. وإذا كان العقد يُنهى بدلًا من إكماله، فاذكر
+ذلك هنا واشرح السبب في قسم التعليقات.
+- **تاريخ إتمام العقد:** التاريخ الذي اكتمل فيه العقد.
+- **تم الاعتماد من:** من اعتمد إتمام العقد.
+- **تاريخ الدفعة النهائية:** تاريخ الدفعة النهائية. -->
+
+| الحقل | الإدخال |
+| ---: | ---: |
+| **تاريخ إتمام العقد** | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| **تم الاعتماد من** | معتمد ومطابق للمعايير القياسية لشركة القمة |
+| **تاريخ الدفعة النهائية** | معتمد ومطابق للمعايير القياسية لشركة القمة |
+
+
+
+---
+
+## 7. التعليقات
+<!-- أضف أي تعليقات تضفي على التقرير صلة إضافية، مثل سبب إنهاء العقد بدلًا من إكماله، أو
+حدود النطاق، أو السياق الذي يحتاجه تقرير إغلاق المشروع. -->
+
+
+---
+
+### الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير العقود** | أ. منصور الشهري (مدير إدارة العقود) | [معتمد إلكترونياً] | 2026-03-18 |
+| **مدير المشتريات** | أ. منصور الشهري (مدير إدارة المشتريات) | [معتمد إلكترونياً] | 2026-03-18 |
+| **المراقب المالي / المستشار القانوني** | أ. بدر المطيري (المدير المالي) | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>القالب:</strong> تقرير إغلاق العقد | <strong>المرجع:</strong> PMO-07.02 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              نسخ المخطط
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill out &#x27;project_title&#x27; and &#x27;date_prepared&#x27;, and the &#x27;value&#x27; property of each field, using the project context. Use &#x27;label&#x27; to select the correct output language. Reference parameters.md for global project variables.&quot;,
+  &quot;form_name&quot;: &quot;CONTRACT CLOSEOUT REPORT&quot;,
+  &quot;document_reference&quot;: &quot;PMO-07.02&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;contract_identification&quot;: {
+      &quot;section&quot;: &quot;Contract Identification&quot;,
+      &quot;label&quot;: &quot;Contract Identification&quot;,
+      &quot;guidance&quot;: &quot;Record the contract reference, the vendor, and the contract type and value.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;scope_worked_well&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Worked Well&quot;,
+      &quot;label&quot;: &quot;Scope&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of contract scope that were handled well.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;quality_worked_well&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Worked Well&quot;,
+      &quot;label&quot;: &quot;Quality&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of product quality that were handled well.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;schedule_worked_well&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Worked Well&quot;,
+      &quot;label&quot;: &quot;Schedule&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of the contract schedule that were handled well.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;cost_worked_well&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Worked Well&quot;,
+      &quot;label&quot;: &quot;Cost&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of the contract budget that were handled well.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;other_worked_well&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Worked Well&quot;,
+      &quot;label&quot;: &quot;Other&quot;,
+      &quot;guidance&quot;: &quot;Describe any other aspects of the contract or procurement that were handled well, including how easy the vendor was to work with.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;scope_improve&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Can Be Improved&quot;,
+      &quot;label&quot;: &quot;Scope&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of contract scope that could be improved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;quality_improve&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Can Be Improved&quot;,
+      &quot;label&quot;: &quot;Quality&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of product quality that could be improved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;schedule_improve&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Can Be Improved&quot;,
+      &quot;label&quot;: &quot;Schedule&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of the contract schedule that could be improved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;cost_improve&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Can Be Improved&quot;,
+      &quot;label&quot;: &quot;Cost&quot;,
+      &quot;guidance&quot;: &quot;Describe the aspects of the contract budget that could be improved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;other_improve&quot;: {
+      &quot;section&quot;: &quot;Vendor Performance Analysis: What Can Be Improved&quot;,
+      &quot;label&quot;: &quot;Other&quot;,
+      &quot;guidance&quot;: &quot;Describe any other aspects of the contract or procurement that could be improved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;change_id&quot;: {
+      &quot;section&quot;: &quot;Record of Contract Changes&quot;,
+      &quot;label&quot;: &quot;Change ID&quot;,
+      &quot;guidance&quot;: &quot;Enter the change identifier from the change log.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;change_description&quot;: {
+      &quot;section&quot;: &quot;Record of Contract Changes&quot;,
+      &quot;label&quot;: &quot;Change Description&quot;,
+      &quot;guidance&quot;: &quot;Enter the description from the change log.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;date_approved&quot;: {
+      &quot;section&quot;: &quot;Record of Contract Changes&quot;,
+      &quot;label&quot;: &quot;Date Approved&quot;,
+      &quot;guidance&quot;: &quot;Enter the date approved from the change log.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;dispute_description&quot;: {
+      &quot;section&quot;: &quot;Record of Contract Disputes&quot;,
+      &quot;label&quot;: &quot;Dispute Description&quot;,
+      &quot;guidance&quot;: &quot;The dispute or claim, what was in contention, and the amount or scope at issue. State the position the project took and the date it was raised, because a dispute recorded without its date cannot be distinguished from one still open at closeout.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;dispute_resolution&quot;: {
+      &quot;section&quot;: &quot;Record of Contract Disputes&quot;,
+      &quot;label&quot;: &quot;Resolution&quot;,
+      &quot;guidance&quot;: &quot;How the dispute was settled, by whom, and when, with a reference to the agreement or settlement that closed it. An unresolved dispute carried past closeout is a liability the receiving organisation inherits without knowing it, so record the outcome even when it is only partial.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;date_resolved&quot;: {
+      &quot;section&quot;: &quot;Record of Contract Disputes&quot;,
+      &quot;label&quot;: &quot;Date Resolved&quot;,
+      &quot;guidance&quot;: &quot;Enter the date the dispute or claim was resolved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;completion_date&quot;: {
+      &quot;section&quot;: &quot;Contract Completion and Final Payment&quot;,
+      &quot;label&quot;: &quot;Contract Completion Date&quot;,
+      &quot;guidance&quot;: &quot;The date the contract was completed, meaning the date the work was accepted rather than the date the last invoice was paid. Where the two differ, give both, because a payment date is not evidence that the work was accepted.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;signed_off_by&quot;: {
+      &quot;section&quot;: &quot;Contract Completion and Final Payment&quot;,
+      &quot;label&quot;: &quot;Signed Off By&quot;,
+      &quot;guidance&quot;: &quot;Record who signed off on the contract completion.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;final_payment_date&quot;: {
+      &quot;section&quot;: &quot;Contract Completion and Final Payment&quot;,
+      &quot;label&quot;: &quot;Final Payment Date&quot;,
+      &quot;guidance&quot;: &quot;Enter the date of the final payment.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;comments&quot;: {
+      &quot;section&quot;: &quot;Comments&quot;,
+      &quot;label&quot;: &quot;Comments&quot;,
+      &quot;guidance&quot;: &quot;Add any comments that will add relevance to the closeout report.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">مكتبة بايثون وأمر التشغيل</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">مخططات JSON</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

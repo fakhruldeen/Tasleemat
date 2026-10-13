@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-00.03 سجل الاعتماديات المتبادلة | تسليمات</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-00.03/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-00.03</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-00.03</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 00: إدارة البرامج والمحافظ
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span>
+            <span class="tag pack">general</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">سجل الاعتماديات المتبادلة</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">Interdependency Register</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-00.03 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-00.03 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. النظرة العامة والبيانات الوصفية
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. قالب التسليمة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. الدليل الإرشادي للممارس
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. مثال واقعي مكتمل
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. مخطط البيانات Draft 2020-12
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 00:</strong> إدارة البرامج والمحافظ
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-00.03 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/03_سجل_الاعتماديات_المتبادلة/00_03_سجل_الاعتماديات_المتبادلة_قالب.npy
+token_count: 3736
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.917557+00:00&#x27;
+form_id: PMO-00.03
+language: ar
+status: approved
+---
+--&gt;
+
+&lt;!-- 
+تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+يسجل سجل الاعتماديات المتبادلة العلاقات بين مكونات البرنامج أو المحفظة أو المشروع، بالمعنى المحدد الذي لا يمكن لأحدها أن يمضي، أو لا يمكن أن يمضي بتواريخه، قبل أن يسلّم الآخر شيئًا. وهو سجل استشرافي: هو ما يخبر القارئ بما يجب أن يتحقق قبل أن تنجح الخطة.
+
+والغرض من فصل الاعتماديات الداخلية عن الخارجية هو أنها تتصرف على نحو مختلف ويحكمها أشخاص مختلفون. فالاعتمادية الداخلية يمكن عادةً إعادة التفاوض عليها بالطلب، أما الخارجية فغالبًا لا يمكن، والسجل الذي يخلط بينهما يدعو القارئ إلى معاملة التزام خارجي وكأنه تنسيق تشغيلي غير ملزم.
+
+المحاذاة: ينبغي أن يكون سجل الاعتماديات المتبادلة متسقًا مع الوثائق التالية: خارطة طريق المحفظة، ميثاق البرنامج، خطة إدارة المشروع، خطة إدارة الجدول الزمني.
+
+إرشادات الكتابة:
+
+*  سمِّ المخرج أو الشرط المحدد المنتظر، لا المشروع الآخر. فعبارة «بانتظار المشروع ب» لا يمكن تتبع مسارها والسيطرة على تداعياتها عند تأخر المشروع ب، لأن يصعب تحديد طبيعة المخرجات والمتطلبات المستهدفة بدقة، بينما عبارة «بانتظار مواصفة ترحيل البيانات المعتمدة من المشروع ب» يمكن مطاردتها ويمكن إغلاقها.
+
+*  سجل التاريخ الذي يجب أن تتحقق الاعتمادية بحلوله، وهو طلب التابع، لا التاريخ الذي يتوقع السابقة تسليمه. وحين يختلف التاريخان، فالفجوة بينهما هي الخطر، ويجب أن تكون في السجل لا في ذاكرة أحد.
+
+*  سجل نوع الاعتمادية. فـ«انتهاء إلى بدء» هي الحالة الشائعة، وهي وهي العلاقة القياسية الأكثر شيوعاً؛ والأنواع الأخرى تنشأ حيث يجب أن يتحرك مشروعان معًا، ودون النوع يتعذر التمييز بين قيد ترتيب حقيقي عن مجرد تفضيل.
+
+*  سجل من اتُّفق على الاعتمادية ومتى. فالاعتمادية المفترضة لا المتفق عليها هي التي ستُتنازع في اللحظة التي تصبح فيها غير مريحة.
+
+*  سجل الحالة من مجموعة ثابتة. فالحالة النصية الحرة لا يمكن ترشيحها، وسجلأربعون اعتمادية لا يمكن ترشيحه وثيقة غير فعالة تفتقر إلى سهولة الاستخدام والمتابعة حين يحتاج إلى الإجابة عن سؤال يخص إحداها.
+
+ملاحظات التخصيص:
+
+*  قد يُدار السجل على مستوى المحفظة فيغطي جميع الاعتماديات بين المبادرات، أو على مستوى البرنامج فيغطي ما بين المكونات فقط. وينبغي أن يحدد النموذج أيّهما، فالمستويان يجيبان عن أسئلة مختلفة.
+
+*  وحين تعمل المؤسسة سجل اعتماديات في أداة تخطيط، قد يكون هذا السجل مقتطفًا لا مصدر الحقيقة. وإن كان الأمر كذلك فسجل ذلك، حتى لا يتعامل القارئ مع المقتطف على أنه مرجع ملزم.
+
+*  أضف صفوفًا أو احذفها حسب الحاجة. وحين تكون بين مشروعين اعتمادية متبادلة، سجل الاتجاهين لا صفًا واحدًا بالاسمين، حتى يمكن متابعة كل اتجاه والاتفاق عليه على حدة.
+
+*  قد يُدار قسم الاعتماديات الخارجية على حدة من قبل وظيفة المشتريات أو حوكمة الموردين، وعندئذٍ يُشار إليه بدل تكراره.
+
+إرشادات الأعمدة، حسب العمود:
+
+صفوف الاعتماديات الداخلية:
+
+*  **المعرف:** معرف الاعتمادية، يُستخدم في قسم التصعيد وفي التقارير ليُشار إليه دون التباس حين يصبح مهددًا.
+
+*  **السابقة:** المشروع أو المكون الذي يجب أن يسلّم أولًا، مذكورًا ومعرَّفًا ليُوصل الصف بخارطة طريق المحفظة. وعبارة «المشروع ب» ليست سابقة، بل معرّف المكون هو السابقة، لأنه المعرف الثابت الذي يضمن استمرارية التتبع بغض النظر عن أي تعديل في مسمى المكون.
+
+*  **التابعة:** المشروع أو المكون المنتظر. وحين يحتاج المكون نفسه عدة توابع، سجل صفًا لكل واحد منهم لا أن تذكرهم جميعًا، لأن التواريخ المطلوبة والآثار تختلف ولا يصلح تاريخ واحد للجميع.
+
+*  **المخرج أو الشرط:** ما المنتظر تحديدًا، بصيغة يمكن التأكد من تسليمه أو عدمه.
+
+*  **نوع الاعتمادية:** هل العلاقة انتهاء إلى بدء، أم بدء إلى بدء، أم انتهاء إلى انتهاء، أم بدء إلى انتهاء.
+
+*  **مطلوب بحلول:** التاريخ الذي يحتاج فيه التابع إلى المخرج. وهذا هو طلب التابع، وتسجيل التاريخ المتوقع من السابقة بدلًا منه يخفي الفجوة بين المطلوب والمُوعود به، وهي المؤشر الأهم للتحكم وإدارة الفجوات الزمنية.
+
+*  **التاريخ المتفق عليه:** التاريخ الذي التزمت السابقة به، ليظهر بجانب التاريخ المطلوب فتكون الفجوة بينهما ظاهرة في السجل نفسه؛ وحين يكون التاريخ المتفق عليه متأخرًا عن المطلوب، فتلك الفجوة هي خطر الاعتمادية، وهي تُكتشف عادةً بتجاوز الموعد لا بقراءته.
+
+*  **الحالة:** أين تقف الاعتمادية حاليًا مقابل المجموعة الثابتة.
+
+*  **الأثر عند التأخر:** يحدث لأحدماذا للتابع إذا أخلت السابقة بالتاريخ المطلوب.
+
+صفوف الاعتماديات الخارجية:
+
+*  **المعرف:** معرف الاعتمادية الخارجية.
+
+*  **الطرف الخارجي:** المؤسسة خارج البرنامج التي تمر عبرها الاعتمادية، مذكورة بالدور الذي تؤديه لا بالفرد، فينجو الصف من تغيّر جهة الاتصال ويبقى مقروءًا لمن لم يلتقِ بها.
+
+*  **وصف الاعتمادية:** ما يُتوقع من الطرف الخارجي أن يقدّمه أو يوافق عليه أو يتخذه، ومتى.
+
+*  **الأساس التعاقدي:** هل تغطيها عقدية، أم مذكرة تفاهم، أم خطاب رسمي، أم لا شيء مكتوب. وهذا العمود هو الذي يحدد أمكن إنفاذ الاعتمادية، والالتزام المكتوب في مراسلات والالتزام المنصوص عليه في عقد يبدو متطابقًا في كل عمود آخر ومختلفًا تمامًا في الواقع.
+
+*  **مطلوب بحلول:** التاريخ الذي يحتاج فيه البرنامج إلى هذا.
+
+*  **الحالة:** أين تقف الاعتمادية. وللاعتماديات الخارجية، سجل بشكل منفصل ما إذا كان الطرف الخارجي قد أكدها، فالبرنامج يعرف موقفه بدقة ولا يعرف موقف الطرف الآخر إلا بالسؤال.
+
+*  **المالك:** من المسؤول عن العلاقة مع الطرف الخارجي، وهو عادةً ليس من يحتاج المخرج.
+
+صفوف التصعيد والاتفاقات:
+
+*  **معرف الاعتمادية:** الاعتمادية التي يتعلق بها التصعيد، ليُوصل الصف بالسجل. والتصعيد المسجل دون هذا المرجع لا يمكن تتبعه إلى ما تعلق به، وتتكرر المسألة في الدورة التالية.
+
+*  **المحفِّز:** ما سبّب التصعيد: تاريخ متفق عليه لم يُحترم، أو رفض صريح، أو تغيير في جانب السابقة، أو خلاف تجاري. فالعلاج يختلف في كل حالة، والتصعيد الذي لا يميز بينها ينتج تصعيدًا عامًا لا ينتج شيئًا.
+
+*  **صُعد إلى:** من صُعد إليه، مذكورًا بالاسم لا موصوفًا، ليعرف القارئ إن كان يملك صلاحية القرار. والتصعيد إلى من لا يملك الصلاحية يسجل الخلاف دون تسجيل تسوية.
+
+*  **الإجراء المتفق عليه:** ما اتُّفق عليه أو تم الاتفاق عليه، وهو ما يمنع تكرار السؤال نفسه في الدورة التالية بالنتيجة نفسها.
+
+*  **التاريخ:** متى وقع التصعيد، ومتى ستتم مراجعته.
+--&gt;
+
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{اسم_المحفظة_أو_البرنامج}} - {{معرف_الحوكمة}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;سجل الاعتماديات المتبادلة&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير البرنامج:** {{اسم_مدير_البرنامج}} | **إعداد:** {{معد_الوثيقة}} |
+| :--- | :--- | :--- |
+
+---
+
+## 1. أساس السجل
+&lt;!-- ما الذي يغطيه هذا السجل وعلى أي مستوى يُدار. سجل المستوى الذي يُدار عليه، فسجل على مستوى المحفظة وآخر على مستوى البرنامج يجيبان عن أسئلة مختلفة، وقراءة سجل المحفظة في مقابل جدول مشروع تؤدي إلى استنتاجات غير دقيقة على أي منهما. وسجل دورة المراجعة، فسجل لا يراجعه أحد يصف المحفظة كما كانت لا كما هي. وسجل ما إذا كان هذا مصدر الحقيقة أم مقتطفًا من أداة تخطيط، حتى لا يتعامل القارئ مع المقتطف على أنه ملزم ويتصرف بناء على تاريخ تحرك بعدها. --&gt;
+
+**نطاق السجل ومستواه:** [ أضف التفاصيل... ]
+
+**البرامج أو المشاريع المشمولة:** [ أضف التفاصيل... ]
+
+**مصدر الحقيقة أم مقتطف:** [ أضف التفاصيل... ]
+
+**دورة المراجعة:** [ أضف التفاصيل... ]
+
+**مالك السجل:** [ أضف التفاصيل... ]
+
+**آخر تحديث:** [ أضف التفاصيل... ]
+
+---
+
+## 2. الاعتماديات الداخلية
+&lt;!-- بين المشاريع والمكونات التي يسيطر عليها البرنامج. سمِّ المخرج أو الشرط المحدد المنتظر، لا المشروع الآخر: فعبارة «بانتظار المشروع ب» لا يمكن تتبع مسارها والسيطرة على تداعياتها عند تأخره، إذ يصعب تحديد طبيعة المخرجات والمتطلبات المستهدفة بدقة، بينما «بانتظار مواصفة ترحيل البيانات المعتمدة من المشروع ب» يمكن مطاردتها وإغلاقها. وسجل التاريخ المطلوب، وهو طلب التابع، بجانب التاريخ المتفق عليه، فتظهر الفجوة بين المطلوب والمُوعود به في السجل نفسه لا تُكتشف لاحقًا. وحين يخدم المكون نفسه عدة توابع، سجل صفًا لكل واحد منهم، لأن التواريخ والآثار تختلف. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | السابقة | التابعة | المخرج أو الشرط | نوع الاعتمادية | مطلوب بحلول | التاريخ المتفق عليه | الحالة | الأثر عند التأخر |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 3. الاعتماديات الخارجية
+&lt;!-- على مؤسسات خارج البرنامج، وهي تتصرف على نحو مختلف ويحكمها أشخاص مختلفون. أهم عمود هنا هو الأساس التعاقدي، لأنه يحدد أمكن إنفاذ الاعتمادية: فالالتزام المكتوب في مراسلات والالتزام المنصوص عليه في عقد يبدو متطابقًا في كل عمود آخر ومختلفًا تمامًا في الواقع. وسمِّ الطرف الخارجي بالدور لا بالفرد، فينجو الصف من تغيّر جهة الاتصال، وسجل من المسؤول عن العلاقة منفصلًا ممن يحتاج المخرج. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | الطرف الخارجي | وصف الاعتمادية | السند التعاقدي | مطلوب بحلول | الحالة | المالك |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+---
+
+## 4. التصعيدات والاتفاقات
+&lt;!-- ما قُدِّم بشأن الاعتماديات التي لا تتحقق نفسها. سجل المحفِّز، ليعرف القارئ أيّ تصعيد سببه تاريخ لم يُحترم وأيّ سببه رفض، لأن العلاج يختلف. وسجل ما اتُّفق عليه، فالتصعيد الذي لا ينتهي بقرار يتكرر في الدورة التالية بالنتيجة نفسها. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| معرف الاعتمادية | المحفِّز | صُعد إلى | الإجراء المتفق عليه | التاريخ |
+| ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 5. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير البرنامج / المحفظة** | {{اسم_مدير_البرنامج}} | _______________________ | [.... -.... -.... ] |
+| **قائد التسليم / المشاريع المرتبطة** | {{اسم_قائد_التسليم}} | _______________________ | [.... -.... -.... ] |
+| **مسؤول مكتب إدارة المشاريع** | {{اسم_مسؤول_مكتب_إدارة_المشاريع}} | _______________________ | [.... -.... -.... ] |
+---
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;النموذج:&lt;/strong&gt; سجل الاعتماديات المتبادلة | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-00.03 &lt;br&gt;
+ &lt;i&gt;تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: ar
+layout: default
+title: سجل الاعتماديات المتبادلة
+nav_order: 1
+token_pointer: /_tokens/forms/ar/00_إدارة_البرامج_والمحافظ/03_سجل_الاعتماديات_المتبادلة/00_03_سجل_الاعتماديات_المتبادلة_دليل.npy
+token_count: 3036
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.914765+00:00'
+form_id: PMO-00.03
+status: approved</p>
+<hr />
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+## دليل نماذج تسليمات
+# مخرج المشروع: سجل الاعتماديات المتبادلة
+
+**المرجع الوثيقي:** `PMO-00.03`
+
+توفر هذه الوثيقة مرجعًا شاملًا ومهنيًا لفهم الغرض من **سجل الاعتماديات
+المتبادلة** واستخدامه الفعال بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+وثيقة رسمية متوافقة مع تسليمات تُعرف بـ **سجل الاعتماديات المتبادلة**، وهي
+تسجل العلاقات بين مكونات البرنامج أو المحفظة أو المشروع، بالمعنى المحدد الذي
+لا يمكن لأحدها أن يمضي، أو لا يمكن أن يمضي بتواريخه، قبل أن يسلّم الآخر شيئًا.
+
+وتسجل الأساس الذي يُدار عليه السجل، والاعتماديات الداخلية بتاريخيها المطلوب
+والمتفق عليه جنبًا إلى جنب، والاعتماديات الخارجية والأساس التعاقدي الذي تقوم
+عليها كل منها، وما قُدِّم من تصعيدات بشأن الاعتماديات التي لا تتحقق.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن الاعتمادية المسجلة باسم مشروع بدل مخرج محدد لا يمكن تتبع مسارها والسيطرة على تداعياتها عند تأخر ذلك
+المشروع: يصعب تحديد طبيعة المخرجات والمتطلبات المستهدفة بدقة. ولأن سجلًا يخلط بين الاعتماديات الداخلية
+والخارجية يدعو القارئ إلى معاملة التزام خارجي وكأنه تنسيق تشغيلي غير ملزم. وعمود الأساس
+التعاقدي هو ما يفصل بين الاثنين.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعد هذا المخرج في مجموعة **إدارة البرامج والمحفظة**، ويُدار وفق دورة المراجعة
+المسجلة في قسم الأساس. وهو سجل حي لا وثيقة تُنتج مرة واحدة، لأن سجل
+الاعتماديات يصف خطة لا تزال قيد الصياغة.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكه مدير البرنامج أو مدير المحفظة، ويأتي محتوى كل صف من
+مالك التابع، لأن ذلك هو من يعرف ما الذي ينتظره. أما صفوف الاعتماديات
+الخارجية فيملكها من يحفظ العلاقة مع الطرف الخارجي، وهو عادةً ليس من يحتاج
+المخرج.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  قد يُدار السجل على مستوى المحفظة فيغطي جميع الاعتماديات بين المبادرات، أو
+  على مستوى البرنامج فيغطي ما بين المكونات فقط. وينبغي أن يحدد النموذج
+  أيّهما، فالمستويان يجيبان عن أسئلة مختلفة.
+*  وحين تعمل المؤسسة سجل اعتماديات في أداة تخطيط، قد يكون هذا السجل مقتطفًا
+  لا مصدر الحقيقة. وإن كان الأمر كذلك فسجل ذلك، حتى لا يتعامل القارئ مع
+  المقتطف على أنه ملزم.
+*  أضف صفوفًا أو احذفها حسب الحاجة. وحين تكون بين مشروعين اعتمادية متبادلة،
+  سجل الاتجاهين لا صفًا واحدًا بالاسمين، حتى يمكن متابعة كل اتجاه والاتفاق
+  عليه على حدة.
+*  قد يُدار قسم الاعتماديات الخارجية على حدة من قبل وظيفة المشتريات أو حوكمة
+  الموردين، وعندئذٍ يُشار إليه بدل تكراره.
+*  السجل كثيرة الصفوف يستفيد من ترشيح بالحالة، وهو سبب الإصرار على مجموعة
+  حالات ثابتة لا على نص حر.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن يكون سجل الاعتماديات المتبادلة متسقًا مع الوثائق التالية:
+*  خارطة طريق المحفظة
+*  ميثاق البرنامج
+*  خطة إدارة المشروع
+*  خطة إدارة الجدول الزمني
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإكمال **سجل الاعتماديات المتبادلة** على نحو دقيق ومهني، على المسؤول أن يملأ
+الحقول التالية بناءً على سياق المشروع (مع الرجوع إلى `parameters.md` للمتغيرات
+العامة للمشروع):
+
+*  **نطاق السجل ومستواه:** ما الذي يغطيه هذا السجل وعلى أي مستوى يُدار،فهو على مستوى المحفظة أو البرنامج أو المشروع. والمستوى يحدد الخطة التي يُقارَن السجل بها، وقراءة سجل محفظة في مقابل جدول مشروع تؤدي إلى نتائج واستنتاجات غير دقيقة ومضللة لكلا الطرفين.
+*  **البرامج أو المشاريع المشمولة:** البرامج أو المشاريع أو المكونات التي تُسجَّل اعتمادياتها المتبادلة، بالاسم والمعرف ليُوصل الجدول بخارطة طريق المحفظة. والسجل الذي لا يسمي مكونات لا يمكن التحقق من اكتماله، والسجل الناقص يُقرأ كأنه كامل.
+*  **مصدر الحقيقة أم مقتطف:** هل هذا السجل هو السجل المعتمد أم مقتطفًا من أداة تخطيط. سجل أيّهما، فمن يعامل المقتطف على أنه ملزم سيبني قراراته على تواريخ غير محدثة، مما يؤدي إلى تفاقم الانحرافات وتعثر الالتزامات المشتركة.
+*  **دورة المراجعة:** كم مرة يُراجع السجل وبأي مجلس. والدورة هي ما يجعل نسختين قابلتين للمقارنة، والسجل الذي لا يُراجع يصف المحفظة كما كانت لا كما هي.
+*  **مالك السجل:** الدور الواحد المسؤول عن السجل ككل، وهو عادةً ليس مالك أي اعتمادية فيه. وحين يُترك فارغًا يقتصر التعامل مع السجل على إدخال البيانات دون وجود مسؤولية إشرافية لمراجعة وتحديث البنود المتقادمة.
+*  **آخر تحديث:** تاريخ آخر مراجعة للسجل، ونسخة خارطة طريق المحفظة التي راجع مقابلها. فبدونه يتعذر التمييز بين سجل حالي من سجل مهجور، والاثنان يبدوان متطابقين في الصفحة.
+*  **المعرف:** معرف الاعتمادية، يُستخدم في قسم التصعيد وفي التقارير ليُشار إليه دون التباس حين يصبح مهددًا.
+*  **السابقة:** المشروع أو المكون الذي يجب أن يسلّم أولًا، مذكورًا ومعرَّفًا ليُوصل الصف بخارطة طريق المحفظة. وعبارة «المشروع ب» ليست سابقة، بل معرّف المكون هو السابقة، لأنه المعرف الثابت الذي يضمن استمرارية التتبع بغض النظر عن أي تعديل في مسمى المكون.
+*  **التابعة:** المشروع أو المكون المنتظر. وحين يحتاج المكون نفسه عدة توابع، سجل صفًا لكل واحد منهم لا أن تذكرهم جميعًا، لأن التواريخ المطلوبة والآثار تختلف ولا يصلح تاريخ واحد للجميع.
+*  **المخرج أو الشرط:** ما المنتظر تحديدًا، بصيغة يمكن التأكد من تسليمه أو عدمه. فعبارة «بانتظار المشروع ب» لا يمكن تتبع مسارها والسيطرة على تداعياتها عند تأخره، لأن يصعب تحديد طبيعة المخرجات والمتطلبات المستهدفة بدقة؛ بينما «بانتظار مواصفة ترحيل البيانات المعتمدة من المشروع ب» يمكن مطاردتها ويمكن إغلاقها.
+*  **نوع الاعتمادية:** هل العلاقة انتهاء إلى بدء، أم بدء إلى بدء، أم انتهاء إلى انتهاء، أم بدء إلى انتهاء. والنوع يحدد المساحة المتوفرة للتابع، و«انتهاء إلى بدء» هي وهي العلاقة القياسية الأكثر شيوعاً؛ والأنواع الأخرى تنشأ حيث يجب أن يتحرك مشروعان معًا وتتطلب توثيقاً واضحاً لطبيعة الربط التشغيلي والزمني.
+*  **مطلوب بحلول:** التاريخ الذي يحتاج فيه التابع إلى المخرج. وهذا هو طلب التابع، وتسجيل تاريخ المتوقع من السابقة بدلًا منه يخفي الفجوة بين المطلوب والمُوعود به، وهي المؤشر الأهم للتحكم وإدارة الفجوات الزمنية.
+*  **التاريخ المتفق عليه:** التاريخ الذي التزمت به السابقة. ويُترك بجانب التاريخ المطلوب لتظهر الفجوة بينهما في السجل نفسه؛ وحين يكون التاريخ المتفق عليه متأخرًا عن المطلوب، فتمثل هذه الفجوة خطراً مباشراً على الجدول الزمني يستوجب المعالجة الفورية والتنسيق المبكر قبل وقوع التأخير.
+*  **الحالة:** أين تقف الاعتمادية حاليًا مقابل المجموعة الثابتة المتفق عليها لهذا السجل، مثل: على المسار، في خطر، مخالفة، متفق عليها. فالحالة النصية الحرة لا يمكن ترشيحها، والسجلات الكبيرة التي تفتقر إلى إمكانية الفلترة والتصنيف تفقد قيمتها العملية ويصعب الرجوع إليها لاتخاذ القرارات السريعة.
+*  **الأثر عند التأخر:** ما يحدث للتابع إذا أخلت السابقة بالتاريخ المطلوب، في الجدول أو التكلفة أو النطاق. فالاعتمادية التي لا يذكر أثرها لا يمكن تصعيدها، لأن لا أحد يستطيع أن يقول طبيعة المخاطر وحجم التداعيات المحتملة، والتصعيد الذي لا يذكر المخاطرة يُرفض عادةً.
+*  **المعرف:** معرف الاعتمادية الخارجية، ليُشار إليه في التقارير ويُوصل بأي عقدة أو مراسلات تغطيه.
+*  **الطرف الخارجي:** المؤسسة خارج البرنامج التي تمر عبرها الاعتمادية، مذكورة بالدور الذي تؤديه لا بالفرد، فينجو الصف من تغيّر جهة الاتصال ويبقى مقروءًا لمن لم يلتقِ بها.
+*  **وصف الاعتمادية:** ما يُتوقع من الطرف الخارجي أن يقدّمه أو يوافق عليه أو يتخذه، ومتى. اذكره على صورة يمكن التأكد من إنجازها، فالاعتمادية الموصوفة بدعم مستمر لا يمكن إغلاقها، ولذلك لن تظهر مسدودة أبدًا.
+*  **الأساس التعاقدي:** هل تغطيها عقدة، أم مذكرة تفاهم، أم خطاب رسمي، أم لا شيء مكتوب. وهذا العمود يحدد أمكن إنفاذ الاعتمادية، والالتزام المكتوب في مراسلات والالتزام المنصوص عليه في عقد يبدو متطابقًا في كل عمود آخر ومختلفًا تمامًا في الواقع.
+*  **مطلوب بحلول:** التاريخ الذي يحتاج فيه البرنامج إلى هذا، وهو في الاعتمادية الخارجية عادةً تاريخ تجاري أو تنظيمي قاسٍ لا اختاره البرنامج. وسجل من أين جاء هذا التاريخ، فالتاريخ الخارجي الذي لم يحدده البرنامج تاريخ لا يستطيع تحريكه.
+*  **الحالة:** أين تقف الاعتمادية. وللاعتماديات الخارجية، سجل بشكل منفصل ما إذا كان الطرف الخارجي قد أكدها، فالبرنامج يعرف موقفه بدقة ولا يعرف موقف الطرف الآخر إلا بالسؤال.
+*  **المالك:** من المسؤول عن العلاقة مع الطرف الخارجي، وهو عادةً ليس من يحتاج المخرج. وفصل الاثنين هو ما يمنع أن تُنقل إلحاح الحاجة عبر كل من له الصلة بالطرف.
+*  **معرف الاعتمادية:** الاعتمادية التي يتعلق بها التصعيد، ليُوصل الصف بالسجل. والتصعيد المسجل دون هذا المرجع لا يمكن تتبعه إلى ما تعلق به، وتتكرر المسألة في الدورة التالية.
+*  **المحفِّز:** ما سبّب التصعيد: تاريخ متفق عليه لم يُحترم، أو رفض صريح، أو تغيير في جانب السابقة، أو خلاف تجاري. فالعلاج يختلف في كل حالة، والتصعيد الذي لا يميز بينها ينتج تصعيدًا عامًا لا ينتج شيئًا.
+*  **صُعد إلى:** من صُعد إليه، مذكورًا بالاسم لا موصوفًا، ليعرف القارئ إن كان يملك صلاحية القرار. والتصعيد إلى من لا يملك الصلاحية يسجل الخلاف دون تسجيل تسوية.
+*  **الإجراء المتفق عليه:** ما اتُّفق عليه، وهو ما يمنع تكرار السؤال نفسه في الدورة التالية بالنتيجة نفسها. وحين لم يُتفق على شيء فسجل ذلك صراحةً، فالإجراء الفارغ والتصعيد غير المحسوم يبدوان متطابقين بعد قراءة السجل مرات.
+*  **التاريخ:** متى وقع التصعيد، ومتى ستتم مراجعته عند الاقتضاء. والتصعيد بلا تاريخ لا موضع له في التسلسل، فيصير السجل قائمة مظالم بدل سجل قرارات.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 نموذج قابل للطباعة (Markdown)](00_03_سجل_الاعتماديات_المتبادلة_قالب.md)
+* [🤖 موجّه التوليد بالنموذج الذكي](00_03_سجل_الاعتماديات_المتبادلة.md)
+* [📊 بنية البيانات (JSON)](00_03_سجل_الاعتماديات_المتبادلة.json)
+* [📈 البيانات الجدولية (CSV)](00_03_سجل_الاعتماديات_المتبادلة.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [00_03_سجل_الاعتماديات_المتبادلة_مثال.md](../../../../examples/ar/00_إدارة_البرامج_والمحافظ/03_سجل_الاعتماديات_المتبادلة/00_03_سجل_الاعتماديات_المتبادلة_مثال.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/00_إدارة_البرامج_والمحافظ/03_سجل_الاعتماديات_المتبادلة/00_03_سجل_الاعتماديات_المتبادلة_مثال.npy
+token_count: 2347
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.206383+00:00'</p>
+<hr />
+<div>
+
+# سجل الاعتماديات المتبادلة (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-00.03`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">محفظة التحول الرقمي وتحديث العمليات المؤسسية - GOV-2026-ERP</h2>
+<h1 align="center">سجل الاعتماديات المتبادلة</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مدير البرنامج:** م. خالد العتيبي، PgMP | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| :--- | :--- | :--- |
+
+---
+
+## 1. أساس السجل
+<!-- ما الذي يغطيه هذا السجل وعلى أي مستوى يُدار. سجل المستوى الذي يُدار عليه، فسجل على مستوى المحفظة وآخر على مستوى البرنامج يجيبان عن أسئلة مختلفة، وقراءة سجل المحفظة في مقابل جدول مشروع تؤدي إلى استنتاجات غير دقيقة على أي منهما. وسجل دورة المراجعة، فسجل لا يراجعه أحد يصف المحفظة كما كانت لا كما هي. وسجل ما إذا كان هذا مصدر الحقيقة أم مقتطفًا من أداة تخطيط، حتى لا يتعامل القارئ مع المقتطف على أنه ملزم ويتصرف بناء على تاريخ تحرك بعدها. -->
+
+**نطاق السجل ومستواه:** تحقيق التميز التشغيلي وأتمتة العمليات والربط السحابي الموحد وفق أعلى المعايير القياسية.
+
+**البرامج أو المشاريع المشمولة:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**مصدر الحقيقة أم مقتطف:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+**دورة المراجعة:** 2026-Q1 إلى 2027-Q4 (دورة سنوية مع مراجعة ربع سنوية)
+
+**مالك السجل:** أ. إلينا فانس، PfMP (مدير المحفظة والتحول المؤسسي)
+
+**آخر تحديث:** تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.
+
+---
+
+## 2. الاعتماديات الداخلية
+<!-- بين المشاريع والمكونات التي يسيطر عليها البرنامج. سمِّ المخرج أو الشرط المحدد المنتظر، لا المشروع الآخر: فعبارة «بانتظار المشروع ب» لا يمكن تتبع مسارها والسيطرة على تداعياتها عند تأخره، إذ يصعب تحديد طبيعة المخرجات والمتطلبات المستهدفة بدقة، بينما «بانتظار مواصفة ترحيل البيانات المعتمدة من المشروع ب» يمكن مطاردتها وإغلاقها. وسجل التاريخ المطلوب، وهو طلب التابع، بجانب التاريخ المتفق عليه، فتظهر الفجوة بين المطلوب والمُوعود به في السجل نفسه لا تُكتشف لاحقًا. وحين يخدم المكون نفسه عدة توابع، سجل صفًا لكل واحد منهم، لأن التواريخ والآثار تختلف. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | السابقة | التابعة | المخرج أو الشرط | نوع الاعتمادية | مطلوب بحلول | التاريخ المتفق عليه | الحالة | الأثر عند التأخر |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | INIT-01 (المنظومة السحابية) | أتمتة سلاسل الإمداد الذكية | المنظومة السحابية الموحدة لتخطيط الموارد | نهاية إلى بداية (FS) | 2026-06-30 | 2026-06-30 | قيد التنفيذ | تأخير بدء اختبارات التكامل لمدة أسبوعين |
+| REQ-02 | INIT-02 (سلاسل الإمداد) | منصة التقارير التحليلية المتقدمة | أتمتة سلاسل الإمداد والمستودعات الذكية | بداية إلى بداية (SS) | 2026-09-30 | 2026-09-30 | مكتمل | إعادة جدولة نافذة الإطلاق التشغيلي التجريبي |
+| ACT-03 | INIT-01 (البنية التحتية) | بوابة الخدمات الذاتية الموحدة | منصة التقارير التحليلية والذكاء المؤسسي | نهاية إلى نهاية (FF) | 2026-11-30 | 2026-11-30 | مخطط | زيادة طفيفة في استهلاك ساعات الاستشارات التقنية |
+| BEN-04 | INIT-03 (البيانات) | طبقة التكامل السحابي | بوابة الخدمات الذاتية وإدارة رأس المال البشري | نهاية إلى بداية (FS) | 2027-01-31 | 2027-01-31 | معتمد | ترحيل تاريخ التدريب للمجموعة الثانية |
+| WBS-05 | INIT-01 (المنظومة السحابية) | أتمتة سلاسل الإمداد الذكية | طبقة التكامل السحابي والربط البرمجي API | نهاية إلى بداية (FS) | 2027-03-31 | 2027-03-31 | قيد التنفيذ | تأخير بدء اختبارات التكامل لمدة أسبوعين |
+
+---
+
+## 3. الاعتماديات الخارجية
+<!-- على مؤسسات خارج البرنامج، وهي تتصرف على نحو مختلف ويحكمها أشخاص مختلفون. أهم عمود هنا هو الأساس التعاقدي، لأنه يحدد أمكن إنفاذ الاعتمادية: فالالتزام المكتوب في مراسلات والالتزام المنصوص عليه في عقد يبدو متطابقًا في كل عمود آخر ومختلفًا تمامًا في الواقع. وسمِّ الطرف الخارجي بالدور لا بالفرد، فينجو الصف من تغيّر جهة الاتصال، وسجل من المسؤول عن العلاقة منفصلًا ممن يحتاج المخرج. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| المعرف | الطرف الخارجي | وصف الاعتمادية | السند التعاقدي | مطلوب بحلول | الحالة | المالك |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-06-30 | قيد التنفيذ | أ. إلينا فانس، PfMP |
+| REQ-02 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-09-30 | مكتمل | م. فيصل الحربي، PMP |
+| ACT-03 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2026-11-30 | مخطط | د. طارق المنصور، PfMP |
+| BEN-04 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | 2027-01-31 | معتمد | أ. سلطان الدوسري |
+---
+
+## 4. التصعيدات والاتفاقات
+<!-- ما قُدِّم بشأن الاعتماديات التي لا تتحقق نفسها. سجل المحفِّز، ليعرف القارئ أيّ تصعيد سببه تاريخ لم يُحترم وأيّ سببه رفض، لأن العلاج يختلف. وسجل ما اتُّفق عليه، فالتصعيد الذي لا ينتهي بقرار يتكرر في الدورة التالية بالنتيجة نفسها. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+| معرف الاعتمادية | المحفِّز | صُعد إلى | الإجراء المتفق عليه | التاريخ |
+| ---: | ---: | ---: | ---: | ---: |
+| INIT-01 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | تم التحقق من الجاهزية والامتثال لضوابط الأمن السيبراني | 2026-06-30 |
+| REQ-02 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | جلسات المتابعة والتنسيق مستمرة وفق الجدول المعتمد | 2026-09-30 |
+| ACT-03 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | تم رصد مخصص الطوارئ المعتمد لهذه المرحلة | 2026-11-30 |
+| BEN-04 | معتمد ومطابق للمعايير القياسية لشركة القمة | معتمد ومطابق للمعايير القياسية لشركة القمة | مؤشرات الأداء التشغيلي ضمن الحدود المستهدفة | 2027-01-31 |
+
+---
+
+## 5. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير البرنامج / المحفظة** | م. خالد العتيبي، PgMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **قائد التسليم / المشاريع المرتبطة** | م. فيصل الحربي، PMP | [معتمد إلكترونياً] | 2026-03-18 |
+| **مسؤول مكتب إدارة المشاريع** | د. طارق المنصور، PfMP | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>النموذج:</strong> سجل الاعتماديات المتبادلة | <strong>المرجع:</strong> PMO-00.03 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              نسخ المخطط
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill in the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field, based on the provided project context. Reference parameters.md for global project variables.&quot;,
+  &quot;form_name&quot;: &quot;Interdependency Register&quot;,
+  &quot;document_reference&quot;: &quot;PMO-00.03&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Register_Scope_and_Level&quot;: {
+      &quot;section&quot;: &quot;Register Basis&quot;,
+      &quot;label&quot;: &quot;Register Scope and Level&quot;,
+      &quot;guidance&quot;: &quot;What this register covers and at what level it is maintained, whether portfolio-wide, program-level, or project-level. The level decides which plan the register is compared against, and a portfolio register read against a project schedule produces conclusions that are true of neither.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Programs_or_Projects_Covered&quot;: {
+      &quot;section&quot;: &quot;Register Basis&quot;,
+      &quot;label&quot;: &quot;Programs or Projects Covered&quot;,
+      &quot;guidance&quot;: &quot;The programs, projects, or components whose mutual dependencies are recorded, by name and identifier so the list can be joined to the portfolio roadmap. A register that names no components cannot be checked for completeness, and an incomplete register reads as a complete one.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Source_of_Truth_or_Extract&quot;: {
+      &quot;section&quot;: &quot;Register Basis&quot;,
+      &quot;label&quot;: &quot;Source of Truth or Extract&quot;,
+      &quot;guidance&quot;: &quot;Whether this register is the authoritative record or an extract from a planning tool. Record which, because a reader who treats an extract as authoritative will act on a date that has since moved, and the error is invisible until the dependency is missed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Review_Cycle&quot;: {
+      &quot;section&quot;: &quot;Register Basis&quot;,
+      &quot;label&quot;: &quot;Review Cycle&quot;,
+      &quot;guidance&quot;: &quot;How often the register is reviewed and by which forum. The cycle is what makes two versions comparable, and a register refreshed on no cycle describes the portfolio as it once was rather than as it is.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Register_Owner&quot;: {
+      &quot;section&quot;: &quot;Register Basis&quot;,
+      &quot;label&quot;: &quot;Register Owner&quot;,
+      &quot;guidance&quot;: &quot;The single role accountable for the register as a whole, which is normally not the owner of any one dependency in it. Where this is left blank, the register has contributors but no one who notices that a row has gone stale.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Last_Updated&quot;: {
+      &quot;section&quot;: &quot;Register Basis&quot;,
+      &quot;label&quot;: &quot;Last Updated&quot;,
+      &quot;guidance&quot;: &quot;The date the register was last reviewed, and against which version of the portfolio roadmap. Without it, a reader has no way to tell a current register from an abandoned one, and the two look identical on the page.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_ID&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the dependency, used in the escalation section and in reporting so a threatened dependency can be referred to without ambiguity.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Predecessor&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Predecessor&quot;,
+      &quot;guidance&quot;: &quot;The project or component that must deliver first, named and identified so the row can be joined to the portfolio roadmap. \&quot;Project B\&quot; is not a predecessor; the component&#x27;s own identifier is, because that is what survives it being renamed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Successor&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Successor&quot;,
+      &quot;guidance&quot;: &quot;The project or component that is waiting. Where the same predecessor is needed by several successors, record a row for each rather than listing them together, because the required dates and the impacts differ and one date cannot serve all of them.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Deliverable_or_Condition&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Deliverable or Condition&quot;,
+      &quot;guidance&quot;: &quot;What specifically is being waited on, stated so that it can be confirmed as delivered or not. \&quot;Waiting for Project B\&quot; cannot be chased when Project B slips, because nobody knows what to ask for; \&quot;waiting for the signed data migration specification from Project B\&quot; can be chased, and can be closed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Dependency_Type&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Dependency Type&quot;,
+      &quot;guidance&quot;: &quot;Whether the relationship is Finish to Start, Start to Start, Finish to Finish, or Start to Finish. The type determines how much float the successor has, and Finish to Start is the only one needing no explanation; the others arise where two projects must move together and cannot be read from the names alone.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Required_By&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Required By&quot;,
+      &quot;guidance&quot;: &quot;The date by which the successor needs the deliverable. This is the successor&#x27;s requirement, and recording the predecessor&#x27;s forecast here instead hides the gap between what is needed and what has been promised, which is the only figure worth watching.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Agreed_Date&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Agreed Date&quot;,
+      &quot;guidance&quot;: &quot;The date the predecessor has committed to. Kept beside the required date so the gap between the two is visible in the register itself; where the agreed date is later than the required date, that gap is the dependency&#x27;s risk, and it is usually found out by being overrun rather than by being read.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Status&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Status&quot;,
+      &quot;guidance&quot;: &quot;Where the dependency currently stands against the fixed set agreed for this register, such as On Track, At Risk, Breached, or Agreed. A free-text status cannot be filtered, and a register of forty dependencies that cannot be filtered is a document nobody consults when they need to answer a question about one of them.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_Impact_if_Late&quot;: {
+      &quot;section&quot;: &quot;Internal Interdependencies&quot;,
+      &quot;label&quot;: &quot;Impact if Late&quot;,
+      &quot;guidance&quot;: &quot;What happens to the successor if the predecessor misses the required date, in schedule, cost, or scope terms. A dependency with no stated impact cannot be escalated, because nobody can say what is at stake, and an escalation that cannot state the stake is usually declined.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_ID&quot;: {
+      &quot;section&quot;: &quot;External Interdependencies&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the external dependency, so it can be referred to in reporting and joined to any contract or correspondence that covers it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_External_Party&quot;: {
+      &quot;section&quot;: &quot;External Interdependencies&quot;,
+      &quot;label&quot;: &quot;External Party&quot;,
+      &quot;guidance&quot;: &quot;The organisation outside the program through which the dependency runs, named by the role it plays rather than by the individual, so the row survives a change of contact and remains readable to someone who has not met them.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Dependency_Description&quot;: {
+      &quot;section&quot;: &quot;External Interdependencies&quot;,
+      &quot;label&quot;: &quot;Dependency Description&quot;,
+      &quot;guidance&quot;: &quot;What the external party is expected to provide, approve, or decide, and by when. State it as something that can be confirmed as done, since a dependency described as ongoing support cannot be closed and will therefore never show as satisfied.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Contractual_Basis&quot;: {
+      &quot;section&quot;: &quot;External Interdependencies&quot;,
+      &quot;label&quot;: &quot;Contractual Basis&quot;,
+      &quot;guidance&quot;: &quot;Whether the dependency is covered by a contract, a memorandum of understanding, a formal letter, or nothing in writing. This column decides whether the dependency can be enforced, and a commitment taken in correspondence and one written into a contract look identical in every other column while being entirely different in practice.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Required_By&quot;: {
+      &quot;section&quot;: &quot;External Interdependencies&quot;,
+      &quot;label&quot;: &quot;Required By&quot;,
+      &quot;guidance&quot;: &quot;The date the program needs this, which for an external dependency is usually a hard commercial or regulatory date rather than a date the program chose. Record where the date comes from, because an external date the program did not set is a date it cannot move.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Status&quot;: {
+      &quot;section&quot;: &quot;External Interdependencies&quot;,
+      &quot;label&quot;: &quot;Status&quot;,
+      &quot;guidance&quot;: &quot;Where the dependency stands against the fixed set. For external dependencies record separately whether the external party has confirmed it, since the program can know its own position accurately and the other party&#x27;s only by asking.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Owner&quot;: {
+      &quot;section&quot;: &quot;External Interdependencies&quot;,
+      &quot;label&quot;: &quot;Owner&quot;,
+      &quot;guidance&quot;: &quot;Who is accountable for the relationship with the external party, which is normally not the person who needs the deliverable. Separating the two is what stops the urgency of a need being communicated through whoever happens to have the contact.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Dependency_ID&quot;: {
+      &quot;section&quot;: &quot;Escalations and Agreements&quot;,
+      &quot;label&quot;: &quot;Dependency ID&quot;,
+      &quot;guidance&quot;: &quot;The dependency the escalation concerns, so the row can be joined back to the register. An escalation recorded without this reference cannot be traced to the thing it was about, and the next cycle repeats it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Trigger&quot;: {
+      &quot;section&quot;: &quot;Escalations and Agreements&quot;,
+      &quot;label&quot;: &quot;Trigger&quot;,
+      &quot;guidance&quot;: &quot;What caused the escalation: a missed agreed date, an explicit refusal, a change on the predecessor&#x27;s side, or a commercial dispute. The remedy differs in each case, and an escalation that does not distinguish them tends to produce a general escalation that resolves nothing.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Escalated_To&quot;: {
+      &quot;section&quot;: &quot;Escalations and Agreements&quot;,
+      &quot;label&quot;: &quot;Escalated To&quot;,
+      &quot;guidance&quot;: &quot;Who it was escalated to, named rather than described, so the reader knows whether the person holds the authority to decide. An escalation to somebody who cannot decide records the disagreement without recording a resolution.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Action_Agreed&quot;: {
+      &quot;section&quot;: &quot;Escalations and Agreements&quot;,
+      &quot;label&quot;: &quot;Action Agreed&quot;,
+      &quot;guidance&quot;: &quot;What was decided or agreed, which is what stops the same question being escalated again next cycle with the same outcome. Where nothing was agreed, record that explicitly, because a blank action and an unresolved escalation look identical once the register has been read a few times.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f27_Date&quot;: {
+      &quot;section&quot;: &quot;Escalations and Agreements&quot;,
+      &quot;label&quot;: &quot;Date&quot;,
+      &quot;guidance&quot;: &quot;When the escalation happened, and where relevant when it will next be reviewed. An escalation without a date has no position in the sequence, and the register becomes a list of grievances rather than a record of decisions.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">مكتبة بايثون وأمر التشغيل</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">مخططات JSON</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

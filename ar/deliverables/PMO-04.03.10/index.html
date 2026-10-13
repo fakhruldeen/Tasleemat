@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-04.03.10 سجل تخطيط دورة تطوير | تسليمات</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-04.03.10/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-04.03.10</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-04.03.10</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 04: التخطيط
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">سجل تخطيط دورة تطوير</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">SPRINT PLANNING LOG</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-04.03.10 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-04.03.10 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. النظرة العامة والبيانات الوصفية
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. قالب التسليمة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. الدليل الإرشادي للممارس
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. مثال واقعي مكتمل
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. مخطط البيانات Draft 2020-12
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 04:</strong> التخطيط
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-04.03.10 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/04_التخطيط/03_الجدول_الزمني/10_سجل_تخطيط_أسبوع_العمل/04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.npy
+token_count: 1280
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.822695+00:00&#x27;
+form_id: PMO-04.03.10
+language: ar
+status: approved
+---
+--&gt;
+
+&lt;!--
+تعليمات النموذج الذكي: املأ مواضع [ أضف التفاصيل... ] استنادًا إلى سياق المشروع، وراجع `parameters.md` للمتغيرات العامة.
+
+توجيهات استيفاء الأقسام:
+الحقول المطلوبة: **تاريخ الإعداد**, **مدير المشروع**, **أعدّها**, **هدف دورة تطوير**, **مدة دورة تطوير**, **أساس الطاقة الاستيعابية**, **المنقول من دورة تطوير السابقة**, **القصص الملتزم بها**, **النطاق المضاف بعد التخطيط**, **معرّف القصة**, **عنوان القصة**, **نقاط القصة**, **الأولوية**, **الحالة**, **معايير القبول**, **يتحقق منها**, **سبب الإضافة**, **طلبها**, **الأثر في دورة تطوير**, **المُسنَد والطاقة المتاحة**, **عضو الفريق**, **الدور**, **القصص المسندة**, **الطاقة المتاحة**, **فجوات المهارات والطاقة**, **اعتماديات خارج الفريق**, **المخاطر المرصودة عند التخطيط**, **المخاطرة**, **المحفّز**, **الاحتمال**, **الأثر**, **الاستجابة**, **خطة الطوارئ**
+--&gt;
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{اسم_المشروع}} - {{معرف_المشروع}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;سجل تخطيط دورة تطوير&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير المشروع:** {{اسم_مدير_المشروع}} | **أعدّها:** {{معد_الوثيقة}} |
+| ---: | --- | --- |
+---
+
+## 1. إطار دورة تطوير
+
+&lt;!-- الحقول في هذا القسم: هدف دورة تطوير، مدة دورة تطوير، أساس الطاقة الاستيعابية، المنقول من دورة تطوير السابقة --&gt;
+
+**هدف دورة تطوير:** [ أضف التفاصيل... ]
+
+**مدة دورة تطوير:** [ أضف التفاصيل... ]
+
+**أساس الطاقة الاستيعابية:** [ أضف التفاصيل... ]
+
+**المنقول من دورة تطوير السابقة:** [ أضف التفاصيل... ]
+
+---
+
+## 2. النطاق الملتزم به
+
+&lt;!-- الحقول في هذا القسم: معرّف القصة، عنوان القصة، نقاط القصة، الأولوية، الحالة، معايير القبول، يتحقق منها، سبب الإضافة، طلبها، الأثر في دورة تطوير --&gt;
+
+**القصص الملتزم بها:**
+
+| معرّف القصة | عنوان القصة | نقاط القصة | الأولوية | الحالة |
+| ---: | --- | --- | --- | --- |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+**معايير القبول:**
+
+| معرّف القصة | معايير القبول | يتحقق منها |
+| ---: | --- | --- |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+**النطاق المضاف بعد التخطيط:**
+
+| معرّف القصة | سبب الإضافة | طلبها | الأثر في دورة تطوير |
+| ---: | --- | --- | --- |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 3. إسناد الفريق
+
+&lt;!-- الحقول في هذا القسم: عضو الفريق، الدور، القصص المسندة، الطاقة المتاحة، فجوات المهارات والطاقة، اعتماديات خارج الفريق --&gt;
+
+**المُسنَد والطاقة المتاحة:**
+
+| عضو الفريق | الدور | القصص المسندة | الطاقة المتاحة |
+| ---: | --- | --- | --- |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+**فجوات المهارات والطاقة:** [ أضف التفاصيل... ]
+
+**اعتماديات خارج الفريق:** [ أضف التفاصيل... ]
+
+---
+
+## 4. مخاطر دورة تطوير
+
+&lt;!-- الحقول في هذا القسم: المخاطرة، المحفّز، الاحتمال، الأثر، الاستجابة، خطة الطوارئ --&gt;
+
+**المخاطر المرصودة عند التخطيط:**
+
+| المخاطرة | المحفّز | الاحتمال | الأثر | الاستجابة |
+| ---: | --- | --- | --- | --- |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+**خطة الطوارئ:** [ أضف التفاصيل... ]
+
+---
+
+## 5. الاعتماد والتوقيعات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **قائد الموقع / التنفيذ** | {{اسم_قائد_الموقع}} | _______________________ | [.... -.... -.... ] |
+| **مخطط المشروع / الجدولة** | {{اسم_مسؤول_الجدولة}} | _______________________ | [.... -.... -.... ] |
+| **مدير المشروع** | {{اسم_مدير_المشروع}} | _______________________ | [.... -.... -.... ] |
+---
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;النموذج:&lt;/strong&gt; سجل تخطيط دورة تطوير &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-04.03.10 &lt;br&gt;
+ &lt;i&gt;تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: ar
+layout: default
+title: سجل تخطيط دورة تطوير
+nav_order: 1
+token_pointer: /_tokens/forms/ar/04_التخطيط/03_الجدول_الزمني/10_سجل_تخطيط_أسبوع_العمل/04_03_10_سجل_تخطيط_أسبوع_العمل_دليل.npy
+token_count: 2092
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.823703+00:00'
+form_id: PMO-04.03.10
+status: approved</p>
+<hr />
+<div>
+
+## دليل نماذج تسليمات
+# المخرج: سجل تخطيط دورة تطوير
+
+**مرجع الوثيقة:** `PMO-04.03.10`
+
+يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من **سجل تخطيط دورة تطوير** واستخدامه بفعالية بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+سجل لدورة تطوير واحدة: هدفها ومدتها، والقصص الملتزم بها بتقديراتها ومعايير قبولها، ومن يحمل كل قصة، وما يمكن أن يوقفها.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن دورة تطوير يُتفق عليها في اجتماع وتُراجع بعد أسابيع من أشخاص لم يكونوا حاضرين. والسجل يجعل ما أُضيف في منتصف دورة تطوير ظاهرًا، وهو أكبر سبب وحيد لتجاوز دورة تطوير لالتزامها.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعد في بداية كل دورة تطوير ويُستكمل في مراجعتها، ويُقرأ من جديد عند تخطيط دورة تطوير التالية، لأن المنقول والطاقة الفعلية هما الرقمان الذان يعتمد عليهما التقدير التالي.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+يسجّله قائد الفريق وهو مسؤول عن التقدير، ومالك المنتج مسؤول عن الأولوية يؤكد الهدف، ويؤكد مدير المشروع أن دورة تطوير تنسجم مع خطة الإصدار.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  دورة تطوير تقتصر على عنصر واحد قرار سليم، وموضع هذا السجل هو ذلك، لا ما عداه.
+*  احتفظ بالمعرّفات كما تظهر في اللوحة تمامًا، فالسجل الذي يعيد صياغتها لا يطابق اللوحة لاحقًا.
+*  عند نقل قصة، أعد تقديرها ولا تكرّر الرقم القديم، واذكر أي الاثنين حدث.
+*  يكفي للفريق الرشيق تسجيل النطاق الملتزم به والمخاطر والباقي متاح عند الحاجة إلى الدفاع عن الإصدار.
+
+---
+
+### المحاذاة والترابط المؤسسي
+قائمة تراكم المنتج، وخطة الإصدار، والجدول الزمني للمشروع، ومصفوفة الطاقة الاستيعابية للموارد
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإتمام **سجل تخطيط دورة تطوير** بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية استنادًا إلى سياق المشروع (مع التأكد من الرجوع إلى `parameters.md` للمتغيرات العامة):
+
+*  **هدف دورة تطوير:** النتيجة الواحدة التي بُنيت لأجلها دورة تطوير، وصياغتها كقدرة يستطيع الفريق إظهارها لا كقائمة قصص. والهدف المكتوب كقائمة قصص لا يصلح لرفض أي شيء، ودورة تطوير لا ترفض شيئًا ليست لها هدف.
+*  **مدة دورة تطوير:** تاريخا البداية والنهاية، وطول دورة تطوير. والمدة قيد لا تفضيل، فطول دورة تطوير المتذبرة يعطي رقم سرعة لا معنى له.
+*  **أساس الطاقة الاستيعابية:** ما يظن الفريق أنه قادر على أخذه، وما الذي يستند إليه هذا الظن. والطاقة بلا أساس أمنية، و دورة تطوير هي التي يصح فيها رقم الطاقة عادة.
+*  **المنقول من دورة تطوير السابقة:** ما لم يُنجَز، وهل أُعيد تقديره أم نُقل كما هو. والعمل المنقول بلا تقدير جديد هو عمل لم يُختبر تقديره قط.
+*  **معرّف القصة:** المعرّف كما هو في لوحة العمل، حتى يمكن تتبّع القصة عند انتهاء دورة تطوير. والقصة بلا معرّف لا يمكن العثور عليها بعد أن تغادر الغرفة.
+*  **عنوان القصة:** اسم قصير للقصة، بلغة الفريق التي يسميها بها. والعنوان الذي يعيد صياغة معايير القبول لا يسمّي القصة، ويصعب قراءة السجل أكثر من اللوحة التي جاء منها.
+*  **نقاط القصة:** التقدير لكل قصة، والمقياس المستخدم. والنقاط مقارنة نسبية لا مدة، فتغيير المقياس بين دورةتي تطوير يجعل سرعة إحداهما لا تقارن بالأخرى.
+*  **الأولوية:** الترتيب النسبي مقارنة ببقية قصص هذه دورة تطوير، ولماذا جاءت هذه القصة في موضعها. والأولوية المكتوبة عالية أو متوسطة دون سبب لا تُرَتًَب.
+*  **الحالة:** أين وصلت القصة عند نهاية دورة تطوير قياسًا بما التُزم به. والحالة التي تُسجَّل عند المراجعة فقط تتأخر عن أن تنفع أحدًا.
+*  **معايير القبول:** ما الذي سيتحقق حين تُعدّ القصة، بصياغة يستطيع من لم يحضر اجتماع التخطيط أن يحكم عليها. والمعايير المتفق عليها بعد البناء تصف ما بُني فعلًا.
+*  **يتحقق منها:** من يتحقق من المعايير ومتى. والمعيار الذي بلا محدِّد يتحقق ليس إلزامًا، والمراجعة تصير أول مرة ينظر فيها أحد.
+*  **سبب الإضافة:** لماذا دخلت القصة دورة تطوير كانت قد خططت. السبب هو الجزء الجدير بالتسجيل، إذ يفصل بين اكتشاف حقيقي ومجرد رغبة.
+*  **طلبها:** من طلب الإضافة، حتى تُناقش المقايضة مع من أرادها. والنطاق المضاف في منتصف دورة تطوير سبب رئيسي لتجاوزها لالتزامها.
+*  **الأثر في دورة تطوير:** ما الذي أزاحته الإضافة، أو أي قصة ملتزم بها صارت تحمل خطر عدم الإنجاز. والإضافة بلا أثر تبدو مجانية، وهي ليست كذلك.
+*  **عضو الفريق:** الشخص باسمه لا بصفتة، حتى يمكن مطابقة الإسناد مع طاقته الفعلية.
+*  **الدور:** الدور الذي يحمله هذا الشخص في دورة تطوير، وهو ليس مسماه الوظيفي خارج دورة تطوير. والدور يحدد من يحسم خلاف النطاق أثناء دورة تطوير.
+*  **القصص المسندة:** القصص التي يحملها هذا الشخص في هذه دورة تطوير. هذه القائمة هي ما يُقرأ عليه الإفراط في الإسناد: شخص على كل قصة في السجل يعني أن الخطة لم تُصنع بعد.
+*  **الطاقة المتاحة:** كم من وقت هذا الشخص تملكه دورة تطوير فعليًا بعد الالتزامات الأخرى. والطاقة الكاملة لكل قصة في السجل أمل لا خطة.
+*  **فجوات المهارات والطاقة:** ما يحتاجه النطاق الملتزم به ولا يملكه الفريق. والفجوة التي تُسمّى عند التخطيط مخاطرة تُدار، ونفس الفجوة إن ظهرت في آخر دورة تطوير مفاجأة.
+*  **اعتماديات خارج الفريق:** ما يجب أن يصل من فريق آخر، ومتى. والاعتمادية بلا تاريخ افتراض، وعادةً ما تُكتشف في آخر يوم من دورة تطوير.
+*  **المخاطرة:** ما يمكن أن يوقف دورة تطوير، موصوفًا كحدث لا كشعور. والمخاطرة المكتوبة كقلق لا يمكن إدارتها، إذ لا يوجد ما يُراقب.
+*  **المحفّز:** الإشارة الملاحظة على أن المخاطرة تحدث. هذا ما يجعل المخاطرة قابلة للمتابعة: بدون محفّز يُعرَض البند في آخر دورة تطوير ويُعثر على أنه وقع.
+*  **الاحتمال:** مدى احتمال وقوع المخاطرة، وما يستند إليه هذا الحكم. والقيمة المكتوبة عالية أو منخفضة مجردة لا تسجّل أساسًا، فلا يستطيع التالي أن يعرف هل تحسن التقدير أم تبدّل المزاج.
+*  **الأثر:** ما تخسره دورة تطوير إن وقعت المخاطرة، مقيسًا بوحدات الالتزام نفسها. والأثر المكتوب أنه شديد لا يقارن بتقدير قصة.
+*  **الاستجابة:** ما سيُفعل بشأن المخاطرة أثناء سير دورة تطوير. والمخاطرة بلا استجابة تُسجَّل ليُحال إليها لاحقًا.
+*  **خطة الطوارئ:** ما سيُسقَط أو يؤجَّل إن وقعت المخاطرة. ودورة تطوير بلا خطة طوارئ هي دورة تطوير يُتخذ فيها القرار تحت الضغط من تتوفر له في حينه.
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](04_03_10_سجل_تخطيط_أسبوع_العمل_قالب.md)
+* [🤖 موجّه التوليد الذكي](04_03_10_سجل_تخطيط_أسبوع_العمل.md)
+* [📊 بنية البيانات (JSON)](04_03_10_سجل_تخطيط_أسبوع_العمل.json)
+* [📈 البيانات الجدولية (CSV)](04_03_10_سجل_تخطيط_أسبوع_العمل.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [04_03_10_سجل_تخطيط_أسبوع_العمل_مثال.md](../../../../../examples/ar/04_التخطيط/03_الجدول_الزمني/10_سجل_تخطيط_أسبوع_العمل/04_03_10_سجل_تخطيط_أسبوع_العمل_مثال.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/04_التخطيط/03_الجدول_الزمني/10_سجل_تخطيط_أسبوع_العمل/04_03_10_سجل_تخطيط_أسبوع_العمل_مثال.npy
+token_count: 1403
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.162574+00:00'</p>
+<hr />
+<h1>سجل تخطيط أسبوع العمل (نموذج تطبيقي معبأ)</h1>
+<blockquote>
+<p>🏆 <strong>نموذج استرشادي مكتمل (Gold Standard):</strong> يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (<code>PMO-04.03</code>). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.</p>
+</blockquote>
+<hr />
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
+<h1 align="center">سجل تخطيط دورة تطوير</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><strong>تاريخ الإعداد:</strong> 2026-03-15</th>
+<th><strong>مدير المشروع:</strong> م. فيصل الحربي، PMP</th>
+<th><strong>أعدّها:</strong> م. فيصل الحربي، PMP (مدير المشروع)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">---</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>1. إطار دورة تطوير</h2>
+<!-- الحقول في هذا القسم: هدف دورة تطوير، مدة دورة تطوير، أساس الطاقة الاستيعابية، المنقول من دورة تطوير السابقة -->
+
+<p><strong>هدف دورة تطوير:</strong> إنجاز وتكامل وحدة الفوترة السحابية الآلية واجتياز اختبارات قبول المستخدمين للدفعة الأولى.</p>
+<p><strong>مدة دورة تطوير:</strong> أسبوعان (سبرنت يبدأ من الأحد 2026-04-05 حتى الخميس 2026-04-16).</p>
+<p><strong>أساس الطاقة الاستيعابية:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<p><strong>المنقول من دورة تطوير السابقة:</strong> مهمتان فرعيتان لتحسين واجهة المستخدم واختبار استجابة بوابات الربط البرمجي.</p>
+<hr />
+<h2>2. النطاق الملتزم به</h2>
+<!-- الحقول في هذا القسم: معرّف القصة، عنوان القصة، نقاط القصة، الأولوية، الحالة، معايير القبول، يتحقق منها، سبب الإضافة، طلبها، الأثر في دورة تطوير -->
+
+<p><strong>القصص الملتزم بها:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرّف القصة</th>
+<th>عنوان القصة</th>
+<th>نقاط القصة</th>
+<th>الأولوية</th>
+<th>الحالة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>قيد التنفيذ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معايير القبول:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرّف القصة</th>
+<th>معايير القبول</th>
+<th>يتحقق منها</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+</tr>
+</tbody>
+</table>
+<p><strong>النطاق المضاف بعد التخطيط:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرّف القصة</th>
+<th>سبب الإضافة</th>
+<th>طلبها</th>
+<th>الأثر في دورة تطوير</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>تأخير بدء اختبارات التكامل لمدة أسبوعين</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. إسناد الفريق</h2>
+<!-- الحقول في هذا القسم: عضو الفريق، الدور، القصص المسندة، الطاقة المتاحة، فجوات المهارات والطاقة، اعتماديات خارج الفريق -->
+
+<p><strong>المُسنَد والطاقة المتاحة:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">عضو الفريق</th>
+<th>الدور</th>
+<th>القصص المسندة</th>
+<th>الطاقة المتاحة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>الرعاية الاستراتيجية وتوفير الموارد والمصادقة على الميثاق</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>60 ساعة عمل (فائض)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>فجوات المهارات والطاقة:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<p><strong>اعتماديات خارج الفريق:</strong> مراجعة واعتماد بشري إلزامي من قِبل مدراء القطاعات المعنية لكافة العمليات الاستثنائية وذات الأثر المالي.</p>
+<hr />
+<h2>4. مخاطر دورة تطوير</h2>
+<!-- الحقول في هذا القسم: المخاطرة، المحفّز، الاحتمال، الأثر، الاستجابة، خطة الطوارئ -->
+
+<p><strong>المخاطر المرصودة عند التخطيط:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المخاطرة</th>
+<th>المحفّز</th>
+<th>الاحتمال</th>
+<th>الأثر</th>
+<th>الاستجابة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td>تأخير بدء اختبارات التكامل لمدة أسبوعين</td>
+<td>معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+</tr>
+</tbody>
+</table>
+<p><strong>خطة الطوارئ:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<hr />
+<h2>5. الاعتماد والتوقيعات</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>قائد الموقع / التنفيذ</strong></td>
+<td style="text-align: right;">م. عمر الخطيب</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مخطط المشروع / الجدولة</strong></td>
+<td style="text-align: right;">م. إبراهيم الدوسري، PMI-SP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مدير المشروع</strong></td>
+<td style="text-align: right;">م. فيصل الحربي، PMP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>النموذج:</strong> سجل تخطيط دورة تطوير <strong>المرجع:</strong> PMO-04.03.10 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              نسخ المخطط
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;form_name&quot;: &quot;SPRINT PLANNING LOG&quot;,
+  &quot;document_reference&quot;: &quot;PMO-04.03.10&quot;,
+  &quot;_llm_instructions&quot;: &quot;Populate the fields of &#x27;SPRINT PLANNING LOG&#x27; and write the value of each field under &#x27;Generated Value&#x27;, based on the project context. Context: the project carrying reference PMO-04.03.10.&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Sprint_Goal&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Sprint Goal&quot;,
+      &quot;guidance&quot;: &quot;The one outcome the sprint is for, stated as a capability the team can demonstrate rather than as a list of stories. A goal written as a list of stories cannot be used to reject anything, and a sprint that cannot reject anything has no goal.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Sprint_Window&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Sprint Window&quot;,
+      &quot;guidance&quot;: &quot;The start and end dates, and the length of the sprint. The window is a constraint rather than a preference, because a sprint length that drifts produces a velocity figure that means nothing.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Capacity_Basis&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Capacity Basis&quot;,
+      &quot;guidance&quot;: &quot;How much the team believes it can take on, and what that belief is based on. Capacity stated without its basis is a wish, and the first sprint is where a capacity figure is usually found to be wrong.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Carry_over_From_the_Previous_Sprint&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Carry-over From the Previous Sprint&quot;,
+      &quot;guidance&quot;: &quot;What was not finished, and whether it has been re-estimated or carried as-is. Work carried without a new estimate is work whose estimate has never been tested.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Story_ID&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Story ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier from the board, so the story can be traced when the sprint ends and the question is asked afterwards. A story with no identifier cannot be found again once it leaves the room.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Story_Title&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Story Title&quot;,
+      &quot;guidance&quot;: &quot;A short name for the story, in the language the team uses for it. A title that restates the acceptance criteria instead of naming the story makes the log harder to scan than the board it came from.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Story_Points&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Story Points&quot;,
+      &quot;guidance&quot;: &quot;The estimate for each story, and the scale used. Points are a relative comparison rather than a duration, so a scale changed between sprints makes two velocities incomparable.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Priority&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Priority&quot;,
+      &quot;guidance&quot;: &quot;Order relative to the other stories in this sprint, and why this story sits where it does. Priority stated as high or medium without a reason is a label rather than an ordering.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Status&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Status&quot;,
+      &quot;guidance&quot;: &quot;Where the story stands at the end of the sprint, against what was committed. A status recorded only at review is too late to be useful to anyone planning the next sprint.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Acceptance_Criteria&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Acceptance Criteria&quot;,
+      &quot;guidance&quot;: &quot;What will be true when the story is done, written so that a person who was not in the planning meeting can tell. Criteria agreed after the work is built describe whatever was built.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Verified_By&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Verified By&quot;,
+      &quot;guidance&quot;: &quot;Who checks the criteria and when. A criterion with no named verifier is a statement of intent, and the review becomes the first time anyone looks at it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Reason_Added&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Reason Added&quot;,
+      &quot;guidance&quot;: &quot;Why the story entered a sprint that had already been planned. The reason is the part worth recording, because it distinguishes a genuine discovery from a preference.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Requested_By&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Requested By&quot;,
+      &quot;guidance&quot;: &quot;Who asked for the addition, so the trade-off can be discussed with the person who wanted it. Scope added mid-sprint is how a sprint stops being a commitment.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Effect_on_Sprint&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Effect on Sprint&quot;,
+      &quot;guidance&quot;: &quot;What the addition displaces, or which committed story now carries the risk of not finishing. An addition recorded without an effect reads as free, and it is not.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_Team_Member&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Team Member&quot;,
+      &quot;guidance&quot;: &quot;The person, named rather than as a role, so the assignment can be checked against the person&#x27;s actual availability.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Role&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Role&quot;,
+      &quot;guidance&quot;: &quot;The role this person holds on the sprint, which is not the same as their title outside it. The role decides who settles an argument about scope during the sprint.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Assigned_Stories&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Assigned Stories&quot;,
+      &quot;guidance&quot;: &quot;The stories this person is carrying in this sprint. The list is the thing to read for over-allocation: a person on every story in the log is a plan that has not been made yet.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Available_Capacity&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Available Capacity&quot;,
+      &quot;guidance&quot;: &quot;How much of this person&#x27;s time the sprint actually has, after other commitments. Capacity at full for every story in the log is a statement of hope rather than of plan.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Skill_and_Capacity_Gaps&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Skill and Capacity Gaps&quot;,
+      &quot;guidance&quot;: &quot;What the committed scope needs that the team does not have. A gap named at planning is a risk to be managed; the same gap found at the end of the sprint is a surprise.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Dependencies_Outside_the_Team&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Dependencies Outside the Team&quot;,
+      &quot;guidance&quot;: &quot;What must arrive from another team, and by when. A dependency with no date is an assumption, and it is usually discovered on the last day of the sprint.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Risk&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Risk&quot;,
+      &quot;guidance&quot;: &quot;What could stop the sprint, described as the event rather than as a feeling. A risk written as a concern cannot be managed, because there is nothing to watch for.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Trigger&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Trigger&quot;,
+      &quot;guidance&quot;: &quot;The observable signal that the risk is happening. This is what makes a risk trackable: without a trigger the item is reviewed at the end of the sprint and found to have happened.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Likelihood&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Likelihood&quot;,
+      &quot;guidance&quot;: &quot;How likely the risk is, and what that judgement rests on. A bare high or low records no basis, so the next person cannot tell whether the estimate improved or the mood changed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Impact&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Impact&quot;,
+      &quot;guidance&quot;: &quot;What the sprint loses if the risk occurs, measured in the same units as the commitment. Impact stated as severe is not comparable to a story estimate.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Response&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Response&quot;,
+      &quot;guidance&quot;: &quot;What will be done about the risk while the sprint is running. A risk with no response is recorded in order to be mentioned later.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Contingency&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Contingency&quot;,
+      &quot;guidance&quot;: &quot;What will be dropped or deferred if the risk occurs. A sprint with no contingency is a sprint where the decision gets made under pressure by whoever is most available at the time.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">مكتبة بايثون وأمر التشغيل</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">مخططات JSON</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

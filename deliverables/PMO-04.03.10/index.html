@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-04.03.10 SPRINT PLANNING LOG | Tasleemat</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/" class="brand-group" aria-label="Tasleemat">
+        <span>📦 Tasleemat</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/" class="nav-link ">Home</a></li>
+<li><a href="/Tasleemat/start/" class="nav-link ">Start Here</a></li>
+<li><a href="/Tasleemat/deliverables/" class="nav-link active">Deliverables</a></li>
+<li><a href="/Tasleemat/guides/" class="nav-link ">Guides & Governance</a></li>
+<li><a href="/Tasleemat/developers/" class="nav-link ">Developers & AI</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/ar/deliverables/PMO-04.03.10/" class="btn-utility" aria-label="Switch Language">
+          🌐 العربية
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">Home</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">Deliverables</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-04.03.10</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-04.03.10</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              Phase 04: Planning
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">SPRINT PLANNING LOG</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">سجل تخطيط دورة تطوير</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-04.03.10 template --lang en</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-04.03.10 template --lang en'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            Copy Command
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. Overview & Metadata
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. Template Markdown
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. Practitioner Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. Realistic Example
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. JSON Schema (Draft 2020-12)
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">Deliverable Summary & Governance Boundaries</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Lifecycle Phase Alignment</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>Phase 04:</strong> Planning
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Sizing Tier Requirements</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Validation Contract</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              This deliverable conforms to a strict companion Draft 2020-12 JSON Schema for automated structural and semantic validation.
+            </p>
+            <pre><code>tasleemat validate PMO-04.03.10 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">Template Markdown (Bilingual)</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              Copy Markdown
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/04_03_10_Sprint_Planning_Log_Template.npy
+token_count: 1522
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.980506+00:00&#x27;
+form_id: PMO-04.03.10
+language: en
+status: approved
+---
+--&gt;
+
+&lt;!--
+LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+Section Instructions:
+
+**1. Sprint Frame**
+*   **Sprint Goal:** The one outcome the sprint is for, stated as a capability the team can demonstrate rather than as a list of stories. A goal written as a list of stories cannot be used to reject anything, and a sprint that cannot reject anything has no goal.
+*   **Sprint Window:** The start and end dates, and the length of the sprint. The window is a constraint rather than a preference, because a sprint length that drifts is a velocity figure that means nothing.
+*   **Capacity Basis:** How much the team believes it can take on, and what that belief is based on. Capacity stated without its basis is a wish, and the first sprint is where a capacity figure is usually found to be wrong.
+*   **Carry-over From the Previous Sprint:** What was not finished, and whether it has been re-estimated or carried as-is. Work carried without a new estimate is work whose estimate has never been tested.
+
+**2. Committed Scope**
+*   **Stories Committed:** The stories the team takes on, with the identifier from the board. A story with no identifier cannot be traced when the sprint ends and the question is asked afterwards.
+*   **Story Points:** The estimate for each story, and the scale used. Points are a relative comparison rather than a duration, so a scale change between sprints makes two velocities incomparable.
+*   **Acceptance Criteria:** What will be true when the story is done, written so that a person who was not in the planning meeting can tell. Criteria agreed after the work is built describe whatever was built.
+*   **Scope Added After Planning:** Anything added once the sprint had started, with who asked for it. Scope added mid-sprint is how a sprint stops being a commitment, and the record of who asked is what makes the trade-off visible.
+
+**3. Team Assignment**
+*   **Assignee and Availability:** Who is on each story, and how much of their time the sprint actually has. An assignee at full capacity across every story in the log is a plan that has not been made yet.
+*   **Skill and Capacity Gaps:** What the committed scope needs that the team does not have. A gap named at planning is a risk to be managed; the same gap found at the end of the sprint is a surprise.
+*   **Dependencies Outside the Team:** What must arrive from another team, and by when. A dependency with no date is an assumption, and it is usually discovered on the last day of the sprint.
+
+**4. Risks to the Sprint**
+*   **Risks Identified at Planning:** What could stop the sprint, with the trigger that would show it happening. A concern without a trigger has no date and so is not tracked.
+*   **Contingency:** What will be dropped or deferred if the risk occurs. A sprint with no contingency is a sprint where the decision gets made under pressure by whoever is most available.
+
+**5. Sign-off and Approvals**
+*   **Team Lead, Product Owner, Project Manager:** The three roles that commit the sprint. The product owner commits the priority and the team lead commits the estimate, and a sign-off that has only one of the two is an agreement about half of what was planned.
+--&gt;
+
+&lt;h3 dir=&quot;ltr&quot; align=&quot;right&quot;&gt;{{Company_Name}}&lt;/h3&gt;
+&lt;h2 dir=&quot;ltr&quot; align=&quot;right&quot;&gt;{{Project_Name}} - {{Project_ID}}&lt;/h2&gt;
+&lt;h1 dir=&quot;ltr&quot; align=&quot;center&quot;&gt;SPRINT PLANNING LOG&lt;/h1&gt;
+
+| **Date Prepared:** {{Current_Date}} | **Project Manager:** {{Project_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |
+---
+
+## 1. Sprint Frame
+&lt;!-- What the sprint is for, over what window, and how much the team believes it can take on. --&gt;
+
+**Sprint Goal:** [ Add details... ]
+
+**Sprint Window:** [ Add details... ]
+
+**Capacity Basis:** [ Add details... ]
+
+**Carry-over From the Previous Sprint:** [ Add details... ]
+
+---
+
+## 2. Committed Scope
+&lt;!-- The stories the team takes on, what they are estimated at, and what counts as done. --&gt;
+
+**Stories Committed:**
+
+| Story ID | Story Title | Story Points | Priority | Status |
+| :---: | :--- | ---: | :---: | :---: |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+**Acceptance Criteria:**
+
+| Story ID | Acceptance Criteria | Verified By |
+| :---: | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+**Scope Added After Planning:**
+
+| Story ID | Reason Added | Requested By | Effect on Sprint |
+| :---: | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 3. Team Assignment
+&lt;!-- Who is working on what, how much time the sprint has, and what the committed scope needs that the team does not have. --&gt;
+
+**Assignee and Availability:**
+
+| Team Member | Role | Assigned Stories | Available Capacity |
+| :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+**Skill and Capacity Gaps:** [ Add details... ]
+
+**Dependencies Outside the Team:** [ Add details... ]
+
+---
+
+## 4. Risks to the Sprint
+&lt;!-- What could stop the sprint, what would show it happening, and what would be given up if it does. --&gt;
+
+**Risks Identified at Planning:**
+
+| Risk | Trigger | Likelihood | Impact | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+**Contingency:** [ Add details... ]
+
+---
+
+## 5. Sign-off and Approvals
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :---: | :---: |
+| **Site / Execution Lead** | {{Execution_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Planner / Scheduler** | {{Scheduler_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Project Manager** | {{Project_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+---
+
+&lt;div dir=&quot;ltr&quot; align=&quot;right&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;Electronic Audit Trail: Hash SHA256: {{Audit_Trail_SHA256_Hash}}&lt;/span&gt; &lt;br&gt;
+  &lt;strong&gt;Template:&lt;/strong&gt; Sprint Planning Log | &lt;strong&gt;Ref:&lt;/strong&gt; PMO-04.03.10 &lt;br&gt;
+  &lt;i&gt;Generated on: {{Current_Timestamp}}, by &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;Tasleemat&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: en
+layout: default
+title: Sprint Planning Log
+nav_order: 1
+token_pointer: /_tokens/forms/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/04_03_10_Sprint_Planning_Log_Guide.npy
+token_count: 1932
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.981297+00:00'
+form_id: PMO-04.03.10
+status: approved</p>
+<hr />
+<h2>Tasleemat Forms Guide</h2>
+<h1>Project Artifact: Sprint Planning Log</h1>
+<p><strong>Document Reference:</strong> <code>PMO-04.03.10</code></p>
+<p>This document provides a comprehensive, professional reference to understand
+the purpose and effective usage of the <strong>Sprint Planning Log</strong> in alignment with
+Tasleemat framework.</p>
+<hr />
+<h3>1. What?</h3>
+<p>A record of one sprint: its goal and window, the stories committed with their estimates and acceptance criteria, who is carrying what, and what could stop it. It is the point at which a sprint becomes a commitment that can be checked rather than an intention.</p>
+<hr />
+<h3>2. Why?</h3>
+<p>Because a sprint is agreed in a meeting and reviewed weeks later by people who were not there. Without a record the review becomes an argument about memory, and the numbers that disagree are the ones nobody can reconstruct. The log also makes scope added mid-sprint visible, which is the single largest cause of a sprint finishing over.</p>
+<hr />
+<h3>3. When?</h3>
+<p>Prepared at the start of each sprint and completed at its review. Read again whenever the next sprint is planned, because the carry-over and the actual capacity are the two figures that the next estimate depends on.</p>
+<hr />
+<h3>4. Who?</h3>
+<p>The team lead records it and owns the estimate, the product owner owns the priority and confirms the goal, and the project manager confirms the sprint fits the release plan. A sign-off with only one of the first two is an agreement about half of what was planned.</p>
+<hr />
+<h3>Tailoring Tips</h3>
+<ul>
+<li>A sprint of one story is fine and should be recorded as such; the log is not the place to argue for a smaller number.</li>
+<li>Keep the identifiers exactly as the board shows them. A log that paraphrases them cannot be reconciled with the board later.</li>
+<li>Where a story carries over, re-estimate it rather than repeating the old number, and say which of the two was done.</li>
+<li>An agile team using this form may record only the committed scope and the risks; the remaining sections are there when a release needs defending.</li>
+<li>Where the sprint is fixed by a release date rather than by capacity, record the date in the window field so the constraint is visible to whoever reviews the outcome.</li>
+</ul>
+<hr />
+<h3>Alignment &amp; Dependencies</h3>
+<h4>1. Pre-requisites &amp; Inputs (Upstream Dependencies)</h4>
+<ul>
+<li><strong>Mandatory:</strong><ul>
+<li>Work Breakdown Structure / WBS (PMO-04.02.06)</li>
+<li>Scope Statement (PMO-04.02.05)</li>
+</ul>
+</li>
+<li><strong>Optional / Contextual:</strong><ul>
+<li>Resource Requirements (PMO-04.06.02)</li>
+<li>Risk Register (PMO-04.08.02)</li>
+</ul>
+</li>
+</ul>
+<h4>2. Downstream Dependents</h4>
+<ul>
+<li><strong>Mandatory:</strong><ul>
+<li>Project Schedule Baseline (PMO-04.03.08)</li>
+<li>Earned Value Analysis / EVA (PMO-06.05)</li>
+</ul>
+</li>
+<li><strong>Optional / Contextual:</strong><ul>
+<li>Release Plan (PMO-04.03.09)</li>
+<li>Lookahead Planning Log (PMO-04.03.10)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3>5. How?</h3>
+<p>To accurately complete the Sprint Planning Log, populate the following sections
+based on the project context (ensuring reference to <code>parameters.md</code> for the
+general project variables):</p>
+<ul>
+<li><strong>Sprint Goal:</strong> The one outcome the sprint is for, stated as a capability the team can demonstrate rather than as a list of stories. A goal written as a list of stories cannot be used to reject anything, and a sprint that cannot reject anything has no goal.</li>
+<li><strong>Sprint Window:</strong> The start and end dates, and the length of the sprint. The window is a constraint rather than a preference, because a sprint length that drifts produces a velocity figure that means nothing.</li>
+<li><strong>Capacity Basis:</strong> How much the team believes it can take on, and what that belief is based on. Capacity stated without its basis is a wish, and the first sprint is where a capacity figure is usually found to be wrong.</li>
+<li><strong>Carry-over From the Previous Sprint:</strong> What was not finished, and whether it has been re-estimated or carried as-is. Work carried without a new estimate is work whose estimate has never been tested.</li>
+<li><strong>Story ID:</strong> The identifier from the board, so the story can be traced when the sprint ends and the question is asked afterwards. A story with no identifier cannot be found again once it leaves the room.</li>
+<li><strong>Story Title:</strong> A short name for the story, in the language the team uses for it. A title that restates the acceptance criteria instead of naming the story makes the log harder to scan than the board it came from.</li>
+<li><strong>Story Points:</strong> The estimate for each story, and the scale used. Points are a relative comparison rather than a duration, so a scale changed between sprints makes two velocities incomparable.</li>
+<li><strong>Priority:</strong> Order relative to the other stories in this sprint, and why this story sits where it does. Priority stated as high or medium without a reason is a label rather than an ordering.</li>
+<li><strong>Status:</strong> Where the story stands at the end of the sprint, against what was committed. A status recorded only at review is too late to be useful to anyone planning the next sprint.</li>
+<li><strong>Acceptance Criteria:</strong> What will be true when the story is done, written so that a person who was not in the planning meeting can tell. Criteria agreed after the work is built describe whatever was built.</li>
+<li><strong>Verified By:</strong> Who checks the criteria and when. A criterion with no named verifier is a statement of intent, and the review becomes the first time anyone looks at it.</li>
+<li><strong>Reason Added:</strong> Why the story entered a sprint that had already been planned. The reason is the part worth recording, because it distinguishes a genuine discovery from a preference.</li>
+<li><strong>Requested By:</strong> Who asked for the addition, so the trade-off can be discussed with the person who wanted it. Scope added mid-sprint is how a sprint stops being a commitment.</li>
+<li><strong>Effect on Sprint:</strong> What the addition displaces, or which committed story now carries the risk of not finishing. An addition recorded without an effect reads as free, and it is not.</li>
+<li><strong>Team Member:</strong> The person, named rather than as a role, so the assignment can be checked against the person's actual availability.</li>
+<li><strong>Role:</strong> The role this person holds on the sprint, which is not the same as their title outside it. The role decides who settles an argument about scope during the sprint.</li>
+<li><strong>Assigned Stories:</strong> The stories this person is carrying in this sprint. The list is the thing to read for over-allocation: a person on every story in the log is a plan that has not been made yet.</li>
+<li><strong>Available Capacity:</strong> How much of this person's time the sprint actually has, after other commitments. Capacity at full for every story in the log is a statement of hope rather than of plan.</li>
+<li><strong>Skill and Capacity Gaps:</strong> What the committed scope needs that the team does not have. A gap named at planning is a risk to be managed; the same gap found at the end of the sprint is a surprise.</li>
+<li><strong>Dependencies Outside the Team:</strong> What must arrive from another team, and by when. A dependency with no date is an assumption, and it is usually discovered on the last day of the sprint.</li>
+<li><strong>Risk:</strong> What could stop the sprint, described as the event rather than as a feeling. A risk written as a concern cannot be managed, because there is nothing to watch for.</li>
+<li><strong>Trigger:</strong> The observable signal that the risk is happening. This is what makes a risk trackable: without a trigger the item is reviewed at the end of the sprint and found to have happened.</li>
+<li><strong>Likelihood:</strong> How likely the risk is, and what that judgement rests on. A bare high or low records no basis, so the next person cannot tell whether the estimate improved or the mood changed.</li>
+<li><strong>Impact:</strong> What the sprint loses if the risk occurs, measured in the same units as the commitment. Impact stated as severe is not comparable to a story estimate.</li>
+<li><strong>Response:</strong> What will be done about the risk while the sprint is running. A risk with no response is recorded in order to be mentioned later.</li>
+<li><strong>Contingency:</strong> What will be dropped or deferred if the risk occurs. A sprint with no contingency is a sprint where the decision gets made under pressure by whoever is most available at the time.</li>
+</ul>
+<hr />
+<h3>📥 Associated Templates</h3>
+<ul>
+<li><a href="04_03_10_Sprint_Planning_Log_Template.md">📄 Printable Template (Markdown)</a></li>
+<li><a href="04_03_10_Sprint_Planning_Log.md">🤖 LLM Generation Prompt</a></li>
+<li><a href="04_03_10_Sprint_Planning_Log.json">📊 Data Structure (JSON)</a></li>
+<li><a href="04_03_10_Sprint_Planning_Log.csv">📈 Tabular Data (CSV)</a></li>
+</ul>
+<hr />
+<h3>6. Reference Example</h3>
+<p>A fully completed, gold-standard reference example illustrating this artifact in practice is available:</p>
+<blockquote>
+<p>📖 <strong>Completed Example:</strong> <a href="../../../../../examples/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/04_03_10_Sprint_Planning_Log_Example.md">04_03_10_Sprint_Planning_Log_Example.md</a></p>
+</blockquote>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/en/04_Planning/03_Schedule/10_Sprint_Planning_Log/04_03_10_Sprint_Planning_Log_Example.npy
+token_count: 1055
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.228766+00:00'</p>
+<hr />
+<h1>Sprint Planning Log (Reference Example)</h1>
+<blockquote>
+<p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-04.03</code>). All company names, project references, and figures are realistic fictional simulations.</p>
+</blockquote>
+<hr />
+<h3 dir="ltr" align="right">Apex Global Solutions</h3>
+<h2 dir="ltr" align="right">Apex Unified Cloud ERP & Supply Chain Modernization - PRJ-2026-ERP-01</h2>
+<h1 dir="ltr" align="center">SPRINT PLANNING LOG</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Date Prepared:</strong> 2026-03-15</th>
+<th style="text-align: left;"><strong>Project Manager:</strong> Faisal Al-Harbi, PMP</th>
+<th style="text-align: left;"><strong>Prepared By:</strong> Faisal Al-Harbi, PMP (Senior Project Manager)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>1. Sprint Frame</h2>
+<p><strong>Sprint Goal:</strong> Deliver and integrate the automated cloud e-invoicing module and validate initial batch user acceptance testing.</p>
+<p><strong>Sprint Window:</strong> 2-Week Sprint Cycle (Starting Sunday April 5, 2026 through Thursday April 16, 2026).</p>
+<p><strong>Capacity Basis:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Carry-over From the Previous Sprint:</strong> Two minor sub-tasks for UI styling polish and API edge-case integration test scripts.</p>
+<hr />
+<h2>2. Committed Scope</h2>
+<!-- The stories the team takes on, what they are estimated at, and what counts as done. -->
+
+<p><strong>Stories Committed:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Story ID</th>
+<th style="text-align: left;">Story Title</th>
+<th style="text-align: right;">Story Points</th>
+<th style="text-align: center;">Priority</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">INIT-01</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: center;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: center;">In Progress</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Acceptance Criteria:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Story ID</th>
+<th style="text-align: left;">Acceptance Criteria</th>
+<th style="text-align: left;">Verified By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">INIT-01</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Scope Added After Planning:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Story ID</th>
+<th style="text-align: left;">Reason Added</th>
+<th style="text-align: left;">Requested By</th>
+<th style="text-align: left;">Effect on Sprint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">INIT-01</td>
+<td style="text-align: left;">Security baseline compliance enhancement</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Team Assignment</h2>
+<!-- Who is working on what, how much time the sprint has, and what the committed scope needs that the team does not have. -->
+
+<p><strong>Assignee and Availability:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Team Member</th>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Assigned Stories</th>
+<th style="text-align: left;">Available Capacity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Strategic executive oversight and resource authorization</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">480 FTE Hours / mo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Skill and Capacity Gaps:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Dependencies Outside the Team:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<hr />
+<h2>4. Risks to the Sprint</h2>
+<!-- What could stop the sprint, what would show it happening, and what would be given up if it does. -->
+
+<p><strong>Risks Identified at Planning:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Risk</th>
+<th style="text-align: left;">Trigger</th>
+<th style="text-align: left;">Likelihood</th>
+<th style="text-align: left;">Impact</th>
+<th style="text-align: left;">Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">2-week schedule slippage on integration testing window</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contingency:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<hr />
+<h2>5. Sign-off and Approvals</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Signature</th>
+<th style="text-align: center;">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Site / Execution Lead</strong></td>
+<td style="text-align: left;">Faisal Al-Harbi, PMP</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Project Planner / Scheduler</strong></td>
+<td style="text-align: left;">Ibrahim Al-Dosari, PMI-SP</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Project Manager</strong></td>
+<td style="text-align: left;">Faisal Al-Harbi, PMP</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> Sprint Planning Log | <strong>Ref:</strong> PMO-04.03.10 <br>
+  <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">Draft 2020-12 JSON Schema</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              Copy JSON Schema
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;form_name&quot;: &quot;SPRINT PLANNING LOG&quot;,
+  &quot;document_reference&quot;: &quot;PMO-04.03.10&quot;,
+  &quot;_llm_instructions&quot;: &quot;Populate the fields of &#x27;SPRINT PLANNING LOG&#x27; and write the value of each field under &#x27;Generated Value&#x27;, based on the project context. Context: the project carrying reference PMO-04.03.10.&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Sprint_Goal&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Sprint Goal&quot;,
+      &quot;guidance&quot;: &quot;The one outcome the sprint is for, stated as a capability the team can demonstrate rather than as a list of stories. A goal written as a list of stories cannot be used to reject anything, and a sprint that cannot reject anything has no goal.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Sprint_Window&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Sprint Window&quot;,
+      &quot;guidance&quot;: &quot;The start and end dates, and the length of the sprint. The window is a constraint rather than a preference, because a sprint length that drifts produces a velocity figure that means nothing.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Capacity_Basis&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Capacity Basis&quot;,
+      &quot;guidance&quot;: &quot;How much the team believes it can take on, and what that belief is based on. Capacity stated without its basis is a wish, and the first sprint is where a capacity figure is usually found to be wrong.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Carry_over_From_the_Previous_Sprint&quot;: {
+      &quot;section&quot;: &quot;Sprint Frame&quot;,
+      &quot;label&quot;: &quot;Carry-over From the Previous Sprint&quot;,
+      &quot;guidance&quot;: &quot;What was not finished, and whether it has been re-estimated or carried as-is. Work carried without a new estimate is work whose estimate has never been tested.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Story_ID&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Story ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier from the board, so the story can be traced when the sprint ends and the question is asked afterwards. A story with no identifier cannot be found again once it leaves the room.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Story_Title&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Story Title&quot;,
+      &quot;guidance&quot;: &quot;A short name for the story, in the language the team uses for it. A title that restates the acceptance criteria instead of naming the story makes the log harder to scan than the board it came from.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Story_Points&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Story Points&quot;,
+      &quot;guidance&quot;: &quot;The estimate for each story, and the scale used. Points are a relative comparison rather than a duration, so a scale changed between sprints makes two velocities incomparable.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Priority&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Priority&quot;,
+      &quot;guidance&quot;: &quot;Order relative to the other stories in this sprint, and why this story sits where it does. Priority stated as high or medium without a reason is a label rather than an ordering.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Status&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Status&quot;,
+      &quot;guidance&quot;: &quot;Where the story stands at the end of the sprint, against what was committed. A status recorded only at review is too late to be useful to anyone planning the next sprint.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Acceptance_Criteria&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Acceptance Criteria&quot;,
+      &quot;guidance&quot;: &quot;What will be true when the story is done, written so that a person who was not in the planning meeting can tell. Criteria agreed after the work is built describe whatever was built.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Verified_By&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Verified By&quot;,
+      &quot;guidance&quot;: &quot;Who checks the criteria and when. A criterion with no named verifier is a statement of intent, and the review becomes the first time anyone looks at it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Reason_Added&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Reason Added&quot;,
+      &quot;guidance&quot;: &quot;Why the story entered a sprint that had already been planned. The reason is the part worth recording, because it distinguishes a genuine discovery from a preference.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Requested_By&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Requested By&quot;,
+      &quot;guidance&quot;: &quot;Who asked for the addition, so the trade-off can be discussed with the person who wanted it. Scope added mid-sprint is how a sprint stops being a commitment.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Effect_on_Sprint&quot;: {
+      &quot;section&quot;: &quot;Committed Scope&quot;,
+      &quot;label&quot;: &quot;Effect on Sprint&quot;,
+      &quot;guidance&quot;: &quot;What the addition displaces, or which committed story now carries the risk of not finishing. An addition recorded without an effect reads as free, and it is not.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_Team_Member&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Team Member&quot;,
+      &quot;guidance&quot;: &quot;The person, named rather than as a role, so the assignment can be checked against the person&#x27;s actual availability.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Role&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Role&quot;,
+      &quot;guidance&quot;: &quot;The role this person holds on the sprint, which is not the same as their title outside it. The role decides who settles an argument about scope during the sprint.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Assigned_Stories&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Assigned Stories&quot;,
+      &quot;guidance&quot;: &quot;The stories this person is carrying in this sprint. The list is the thing to read for over-allocation: a person on every story in the log is a plan that has not been made yet.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Available_Capacity&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Available Capacity&quot;,
+      &quot;guidance&quot;: &quot;How much of this person&#x27;s time the sprint actually has, after other commitments. Capacity at full for every story in the log is a statement of hope rather than of plan.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Skill_and_Capacity_Gaps&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Skill and Capacity Gaps&quot;,
+      &quot;guidance&quot;: &quot;What the committed scope needs that the team does not have. A gap named at planning is a risk to be managed; the same gap found at the end of the sprint is a surprise.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Dependencies_Outside_the_Team&quot;: {
+      &quot;section&quot;: &quot;Team Assignment&quot;,
+      &quot;label&quot;: &quot;Dependencies Outside the Team&quot;,
+      &quot;guidance&quot;: &quot;What must arrive from another team, and by when. A dependency with no date is an assumption, and it is usually discovered on the last day of the sprint.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Risk&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Risk&quot;,
+      &quot;guidance&quot;: &quot;What could stop the sprint, described as the event rather than as a feeling. A risk written as a concern cannot be managed, because there is nothing to watch for.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Trigger&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Trigger&quot;,
+      &quot;guidance&quot;: &quot;The observable signal that the risk is happening. This is what makes a risk trackable: without a trigger the item is reviewed at the end of the sprint and found to have happened.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Likelihood&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Likelihood&quot;,
+      &quot;guidance&quot;: &quot;How likely the risk is, and what that judgement rests on. A bare high or low records no basis, so the next person cannot tell whether the estimate improved or the mood changed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Impact&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Impact&quot;,
+      &quot;guidance&quot;: &quot;What the sprint loses if the risk occurs, measured in the same units as the commitment. Impact stated as severe is not comparable to a story estimate.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Response&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Response&quot;,
+      &quot;guidance&quot;: &quot;What will be done about the risk while the sprint is running. A risk with no response is recorded in order to be mentioned later.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Contingency&quot;: {
+      &quot;section&quot;: &quot;Risks to the Sprint&quot;,
+      &quot;label&quot;: &quot;Contingency&quot;,
+      &quot;guidance&quot;: &quot;What will be dropped or deferred if the risk occurs. A sprint with no contingency is a sprint where the decision gets made under pressure by whoever is most available at the time.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 Tasleemat</div>
+          <p style="margin-bottom: 1rem;">Tasleemat is a bilingual open deliverable library and supporting toolkit. Not a live PMO application or approval authority.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">Start Here</a></li>
+            <li><a href="/Tasleemat/deliverables/">Deliverables (114)</a></li>
+            <li><a href="/Tasleemat/guides/">Core Manuals</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Technical & AI</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">Python SDK & CLI</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">Model Context Protocol (MCP)</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">Draft 2020-12 Schemas</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Community & Policy</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">PMO Governance Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>

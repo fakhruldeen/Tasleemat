@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-02.05 بطاقة نموذج الذكاء الاصطناعي | تسليمات</title>
+  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-02.05/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-02.05</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-02.05</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 02: منهجية المشروع وتخصيصه
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span> <span class="tag tier">المستوى 2</span> <span class="tag tier">المستوى 3</span>
+            <span class="tag pack">ai</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">بطاقة نموذج الذكاء الاصطناعي</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">AI MODEL CARD AND FACT SHEET</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-02.05 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-02.05 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 1. النظرة العامة والبيانات الوصفية
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 2. قالب التسليمة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 3. الدليل الإرشادي للممارس
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 4. مثال واقعي مكتمل
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ 5. مخطط البيانات Draft 2020-12
+          </button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 02:</strong> منهجية المشروع وتخصيصه
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span> <span class="tag tier">المستوى 2</span> <span class="tag tier">المستوى 3</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-02.05 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--
+---
+type: Form
+token_pointer: /_tokens/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.npy
+token_count: 2227
+tokenizer_model_id: tiktoken/o200k_base
+created_at: &#x27;2026-10-06T16:05:28.712214+00:00&#x27;
+form_id: PMO-02.05
+language: ar
+status: approved
+---
+--&gt;
+
+&lt;!--
+تعليمات النموذج الذكي: املأ العناصر النائبة [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+توجيهات استيفاء الأقسام:
+
+**١. تعريف النموذج ومصدره**
+*  **اسم النموذج وإصداره:**
+*  **المطوّر ومصدر النموذج:**
+*  **البنية والإعداد:**
+*  **أسلوب التدريب والحوسبة:**
+*  **الترخيص وشروط الاستعمال:**
+*  **المخرجات المرتبطة:**
+
+**٢. الاستخدام المقصود وغير المشمول**
+*  **الاستخدام الرئيس:**
+*  **الاستخدام الثانوي:**
+*  **الاستخدام غير المشمول:**
+*  **المستخدم والجمهور:**
+*  **شروط التشغيل:**
+*  **متطلب الإشراف البشري:**
+
+**٣. بيانات التدريب**
+*  **مجموعات البيانات:**
+*  **المصدر وطريقة الجمع:**
+*  **التغطية السكانية والجغرافية:**
+*  **الفترة الزمنية المشمولة:**
+*  **الترخيص وسند الموافقة:**
+*  **ما قبل المعالجة والترشيح:**
+*  **قيود مجموعة البيانات المعروفة:**
+
+**٤. التقييم والأداء**
+*  **بيانات التقييم:**
+*  **المقاييس:**
+*  **الأداء بحسب الفئة:**
+*  **المقارنة بخط الأساس:**
+*  **العتبة ونقطة التشغيل:**
+*  **منهج التقييم وقيوده:**
+*  **المتانة وأنماط الفشل:**
+
+**٥. الاعتبارات الأخلاقية والعدالة والسلامة**
+*  **الفئات المتأثرة:**
+*  **التحيّز المعروف:**
+*  **مخاطر السلامة:**
+*  **إمكانية الاستخدام المزدوج وإساءة الاستعمال:**
+*  **الأثر البيئي وعلى الموارد:**
+*  **الأثر على خصوصية البيانات:**
+
+**٦. القيود والمراقبة وضبط التغيير**
+*  **القيود المعروفة:**
+*  **السلوك خارج نطاق التوزيع:**
+*  **المراقبة في الإنتاج:**
+*  **عتبات المراقبة:**
+*  **سياسة إعادة التدريب والتحديث:**
+*  **سجل تغييرات الإصدار:**
+*  **خطة الإحالة للتقاعد:**
+--&gt;
+
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{نطاق_الحوكمة}} - {{معرف_إطار_العمل}}&lt;/h2&gt;
+ &lt;h1 align=&quot;center&quot;&gt;بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مسؤول الامتثال:** {{اسم_مسؤول_الامتثال}} | **إعداد:** {{المُعِد}} |
+| ---: | ---: | ---: |
+
+---
+
+## ١. تعريف النموذج ومصدره
+&lt;!-- ما هو النموذج عند إصدار بعينه، ومن بناه ومن أيّ، والإعدادات التي تؤثر في سلوكه، وتحت أي ترخيص يُستعمل، وأين توجد المخرجات. --&gt;
+
+**اسم النموذج وإصداره:** [ أضف التفاصيل... ]
+
+**المطوّر ومصدر النموذج:** [ أضف التفاصيل... ]
+
+**البنية والإعداد:** [ أضف التفاصيل... ]
+
+**أسلوب التدريب والحوسبة:** [ أضف التفاصيل... ]
+
+**الترخيص وشروط الاستعمال:** [ أضف التفاصيل... ]
+
+**المخرجات المرتبطة:** [ أضف التفاصيل... ]
+
+---
+
+## ٢. الاستخدام المقصود وغير المشمول
+&lt;!-- المهمة مُدخَلاً ومُخرَجًا، وما يجوز استعماله لأغراض أخرى، وما يجب ألا يُستعمل له، ومن يشغّله ومن يخضع لمخرجه، والشروط التي تصلح فيها قياسات القسم الرابع. --&gt;
+
+**الاستخدام الرئيس:** [ أضف التفاصيل... ]
+
+**الاستخدام الثانوي:** [ أضف التفاصيل... ]
+
+**الاستخدام غير المشمول:** [ أضف التفاصيل... ]
+
+**المستخدم والجمهور:** [ أضف التفاصيل... ]
+
+**شروط التشغيل:** [ أضف التفاصيل... ]
+
+**متطلب الإشراف البشري:** [ أضف التفاصيل... ]
+
+---
+
+## ٣. بيانات التدريب
+&lt;!-- صف واحد لكل مجموعة بيانات: ما هي ومن يملكها، ومن أين جاءت، ومن تمثّلهم وأين تمثّل، وأي فترة تغطي، وبأي سند يُستعمل بها، وما جرى لها، وما لا تستطيع تمثيله. --&gt;
+
+| مجموعة البيانات | المصدر وطريقة الجمع | التغطية السكانية والجغرافية | الفترة الزمنية المشمولة | الترخيص وسند الموافقة | ما قبل المعالجة والترشيح | القيود المعروفة |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## ٤. التقييم والأداء
+&lt;!-- صف واحد لكل مقياس: ما قيس عليه، وقيمته مع حجم العينة، ونفس الرقم لكل فئة متأثرة، وخط الأساس الذي يتفوق عليه، والعتبة السارية، وما لا يثبته المنهج. --&gt;
+
+| المقياس | بيانات التقييم واستقلالها | القيمة وحجم العينة | الأداء بحسب الفئة | المقارنة بخط الأساس | العتبة السارية | قيود المنهج |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## ٥. الاعتبارات الأخلاقية والعدالة والسلامة
+&lt;!-- صف واحد لكل اعتبار: من الفئات المتأثرة، والطريقة المحددة التي يكون النموذج بها غير عادل، والضرر ودرجته، وما أُخذ من إجراء. --&gt;
+
+| الاعتبار | الفئات المتأثرة | النتيجة المحددة | الخطورة | ما أُخذ من إجراء |
+| ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## ٦. القيود والمراقبة وضبط التغيير
+&lt;!-- ما لا يستطيع النموذج فعله، وسلوكه خارج نطاقه، وما يراقب في الإنتاج، وما يستدعي إجراءً، ومتى يُعاد تدريبه، وما تغيّر في هذا الإصدار، وكيف يُحال إلى التقاعد. --&gt;
+
+**القيود المعروفة:** [ أضف التفاصيل... ]
+
+**السلوك خارج نطاق التوزيع:** [ أضف التفاصيل... ]
+
+**المراقبة في الإنتاج:** [ أضف التفاصيل... ]
+
+**عتبات المراقبة:** [ أضف التفاصيل... ]
+
+**سياسة إعادة التدريب والتحديث:** [ أضف التفاصيل... ]
+
+**سجل تغييرات الإصدار:** [ أضف التفاصيل... ]
+
+**خطة الإحالة للتقاعد:** [ أضف التفاصيل... ]
+
+---
+
+### الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مطور النموذج / مسؤول تعلم الآلة** | {{اسم_مسؤول_تعلم_الآلة}} | _______________________ | [.... -.... -.... ] |
+| **مراجع جودة وأخلاقيات الذكاء الاصطناعي** | {{اسم_مراجع_الجودة_والأخلاقيات}} | _______________________ | [.... -.... -.... ] |
+| **مالك المنتج** | {{اسم_مالك_المنتج}} | _______________________ | [.... -.... -.... ] |
+---
+
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;النموذج:&lt;/strong&gt; بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-02.05 &lt;br&gt;
+ &lt;i&gt;تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Form
+lang: ar
+layout: default
+title: بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق
+nav_order: 1
+token_pointer: /_tokens/forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_دليل.npy
+token_count: 4047
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:28.711163+00:00'
+form_id: PMO-02.05
+status: approved</p>
+<hr />
+<div>
+
+## دليل نماذج تسليمات
+# المخرج: بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق
+
+**مرجع الوثيقة:** `PMO-02.05`
+
+يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من **بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق**
+واستخدامه بفعالية بما يتوافق مع إطار تسليمات.
+
+---
+
+### 1. مفهوم الوثيقة وطبيعتها
+بيان موثَّق لنموذج ذكاء اصطناعي عند إصدار بعينه، يوثّق هويته ومصدره وبيانات
+تدريبه وتقييمه وأخلاقياته وقيوده. يسمّي النموذج بإصداره لا باسمه المجرد، ويسجّل
+من بناه ومن أي نموذج أساسي، والفئة التي كان الإصدار في داخلها، ولكل مجموعة
+بيانات صف باسمها ومالكها وسند استعمالها ومن تمثّلهم ومن لا تمثّلهم، ولكل
+مقياس صف بقيمة تقف خلفها عينة معلومة، وأداء كل فئة متأثرة، وخط أساس يُقارَن
+به، وعتبة سارية، وحدود المنهج، ولكل اعتبار أخلاقي أو أمني صف بالفئات المتأثرة
+وطريقة التحيّز المحددة ودرجة الخطورة والإجراء المتخذ، ويختم بالقيود المعروفة
+ورقابة الإنتاج وعتبات المراقبة وسياسة إعادة التدريب وسجل تغييرات الإصدار
+وخطة الإحالة إلى التقاعد.
+
+---
+
+### 2. القيمة والأهمية الاستراتيجية
+لأن البطاقة هي ما يحوّل ادعاءً إلى سجل يمكن الرجوع إليه. ومن يعمل بنموذج
+يحتاج أن يعرف: أي إصدار بالضبط، ومن أين جاءت البيانات، وما الذي قيس وما
+الذي لم يُقَس، وما لا يفعله النموذج. وغالبًا ما يجيب مالك النموذج عن السؤال
+الأخير بإجابة لا صلة لها بالواقع، لأن الاعتراف بحدّ يُقرأ كضعف، وغياب الحدّ
+يُقرأ كقوة. والبطاقة هي الموضع الوحيد الذي يصبح فيه هذا الحدّ جزءًا من السجل
+لا من التقدير.
+
+والانضباط الذي تفرضه هو الفصل. الإصدار ليس الاسم، والرقم ليس بلا عينة، ودقة
+التقييم ليست بلا استقلال عن التدريب، والموافقة ليست تقييمًا، والاستخدام
+المؤيَّد ليس الحصر. كل من هذه دعوى مستقلة، ودمجها في دعوى واحدة هو بالضبط
+ما يجعل بطاقات تظهر مطمئنة وتصير خاطئة. وأخطر ما يمرّ في المراجعة غير المكتشَف هو
+قيمة بلا حجم عينة، ورقم أداء لفئة من عينة صغيرة، وحالة تحيّز مكتوبة بصيغة
+احتمال لا بصيغة دعوى.
+
+---
+
+### 3. التوقيت ودواعي الإعداد والتحديث
+يُعدّ هذا المخرج ويستخدم أساسًا في مجموعة **منهجية المشروع وتخصيصه** من دورة
+حياة المشروع. يُعدّ عند ورود النموذج أول مرة، ويُعاد عند كل إصدار جديد، ويُفتح
+مراجعته عند إطلاق النظام في الإنتاج وعند أي تغيّر في البيانات أو في خط الأساس،
+ويُقرأ ثانية عند وقوع حادثة أو عند التحديث الدوري للبطاقة.
+
+---
+
+### 4. الأدوار والمسؤوليات (RACI)
+**المسؤوليات:** يملكه مالك النموذج، ويجب أن يجيب عن كل خانة فيه بسجل لا
+بتحمّل؛ وهو الشخص الذي سيُسأل عن أي رقم فيه. ويُستكمل مع مسؤول الذكاء
+الاصطناعي أو تعلّم الآلة، المسؤول عن بيانات التدريب والتقييم ومبرر كل مقياس،
+ومع مسؤول حماية البيانات، المسؤول عن سند استعمال البيانات ومن تمثّلهم،
+ومع مسؤول المخاطر أو الأمن، المسؤول عن ترتيب مخاطر السلامة وضوابطها. يراجعه
+مدير المشروع في ضوء خطة الحوكمة، ويعتمده راعي المشروع، ويُوقّعه مسؤول حماية
+البيانات لأن البطاقة وثيقةُ قولٍ عن بيانات لا عن نموذج فقط.
+
+---
+
+### إرشادات التخصيص والمواءمة
+*  سمِّ الإصدار لا الاسم. البطاقة التي تصف عائلة النماذج لا تصف أي شيء عند
+  المقارنة، واسمُ الشركة لا يتغيّر بين بناءين أحدهما أفضل والآخر أضعف.
+*  افصل بيانات التقييم عن بيانات التدريب في خانة مستقلة، فالاستقلال أول ما
+  يُفحص، ودمجُه في عمود القيمة يخفي أهم خاصية في القسم كله.
+*  لا تكتب رقمًا بلا حجم عينة. فالفارق بين أداء فئة من ألف عينة وفئة من
+  عشرين فارق بين قياس ورقم.
+*  اكتب حدود المنهج في خانتها، فالخانة المملوءة وحدها تجعل الرقم يبدو
+  مسحًا شاملًا وهو ليس كذلك.
+*  صُغ دعوى التحيّز بحيث يمكن أن تكون خاطئة. «قد يكون متحيّزًا» عنوان،
+  أما «يمنح هذه الفئة درجات أدنى بناءً على معدلات إتمام تاريخية» فمقيس.
+*  اجعل لكل مقياس خط أساس، فالمقارنة بخط أساس ساذج تُنتج نموذجًا أفضل من لا شيء ونافدًا في آن واحد.
+  شيء ونافدًا في آن واحد.
+*  سمِّ الفئات المتأثرة بالاسم. الوصف الجامع لفئة وفق اختبار ليس الفئة التي
+  يكون أداء النموذج الأسوأ عليها.
+*  عتبات المراقبة تُكتب قبل معرفة النتيجة؛ والعتبة التي تُحدد بعد رؤية
+  الرقم وصف لذلك الرقم.
+*  سجّل قيودًا معروفة صريحة. البطاقة المتفائلة في هذا القسم هي بطاقة لن
+  يُرجع إليها أحد بعد الحادثة.
+*  استبدل البطاقة عند كل إصدار ولا ترقّمها في مكانها، فيبقى ما رُئي على قرار
+  الاعتماد هو ما رُئي عليه.
+
+---
+
+### المحاذاة والترابط المؤسسي
+ينبغي أن يتسق نموذج بطاقة الذكاء الاصطناعي مع المستندات التالية:
+*  خطة حوكمة الذكاء الاصطناعي
+*  تقييم جاهزية الذكاء الاصطناعي
+*  نموذج حالة استخدام الذكاء الاصطناعي
+*  تقييم خصوصية البيانات وأخلاقياتها
+
+---
+
+### 5. إرشادات تعبئة الحقول والبيانات
+لإتمام **بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق** بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية
+استنادًا إلى سياق المشروع (مع التأكد من الرجوع إلى `parameters.md`
+للمتغيرات العامة للمشروع):
+
+*  **اسم النموذج وإصداره:** النموذج عند إصدار بعينه، مع تاريخ إنتاج ذلك الإصدار. البطاقة التي تسمّي النموذج لا الإصدار تصف أي بناء كان منشورًا حين تُقرأ، والجواب نادرًا ما يكون الذي خُصص.
+*  **المطوّر ومصدر النموذج:** من بناه، أهو مدرَّب داخلي أم مُهيَّأ أم مُكتسَب، ومن أيّ نموذج أساسي. والمصدر يحدد أي الأقسام التالية يمكن الإجابة عنها أصلًا، وهو القسم الغائب عادة حين يُطرح سؤال.
+*  **البنية والإعداد:** عائلة البنية، وعدد المعاملات، والإعدادات التي تؤثر في السلوك. والإعدادات هي الجزء المهم، فالبنية نفسها بإعدادات فك الترميز المختلفة نظام مختلف.
+*  **أسلوب التدريب والحوسبة:** كيف دُرِّب، وفي أي فترة، وبأي كلفة. والحوسبة تُسجَّل لأنها تحدّ إعادة الإنتاج: فالنتيجة التي تطلبت توزيع حوسبة لا يستطيع أحد الحصول عليه ثانية ليست نتيجة يمكن اشتقاقها من جديد.
+*  **الترخيص وشروط الاستعمال:** الترخيص، ومن يجوز له الاستعمال، وتحت أي قيود. والنموذج المستعمل خارج ترخيصه تعرض قانوني لا يعالجه أي قسم تقني في هذه البطاقة.
+*  **المخرجات المرتبطة:** النموذج، والشيفرة، والأوزان، والبيانات، مع مكان كل منها. البطاقة التي لا تسرد مواقع هي وصف، والوصف لا يمكن مطابقته على شيء.
+*  **الاستخدام الرئيس:** المهمة التي النموذج لها، مصوغةً مدخلًا ومخرجًا. فالمدخل والمخرج يمكن اختبارهما، أما الغرض فلا.
+*  **الاستخدام الثانوي:** ما يجوز استعماله له أيضًا، إن وُجد. يُسجَّل منفصلًا لأن الاستعمال المحتمل على مضض والمؤيَّد يحتاجان ضوابط مختلفة، وبطاقة تسرد المؤيَّد وحده تخفي المحتمل.
+*  **الاستخدام غير المشمول:** الاستخدامات التي يجب ألا يُستعمل لها، مع سبب كل منها. وهذا القسم هو ما يجعل البطاقة نافعة لمن يقرر النشر، وبطاقة خالية منه لا تستطيع إلا أن تقول ما هو النموذج له.
+*  **المستخدم والجمهور:** من يشغّل النظام، ومن يخضع لمخرجه. والاثنان يُعاملان كواحد عادة، وفي هذا الخلط يصير النظام الذي يفرز المرشحين موصوفًا بأنه أداة يساعد المُوظِّفين على كتابة إعلانات أفضل.
+*  **شروط التشغيل:** المدخلات التي يتوقعها، والظروف التي اختُبر فيها، والظروف التي يجب ألا يُستعمل فيها. وهذه حدود التقييم في القسم الرابع، ومقياس قُرئ خارجها ليس دعوى أضعف بل دعوى خاطئة.
+*  **متطلب الإشراف البشري:** أين يجب أن يراجع الإنسان المخرج قبل العمل به. والإشراف المعرَّف بوصفه مبدأً عامًا لا كنقاط في سير العمل لا يصمد أمام موعد نهائي.
+*  **مجموعات البيانات:** المجموعات التي دُرِّب النموذج عليها، كل منها باسمها ومالكها.
+*  **المصدر وطريقة الجمع:** من أين جاءت كل مجموعة وكيف جُمعت. والبيانات المجموعة تحمل ممارسات الفترة والمكان اللذين جاءتا منها، سواء فُحصت تلك الممارسات أو لم تُفحص.
+*  **التغطية السكانية والجغرافية:** من يمثّلهم البيانات وأين تمثّل، ومن لا تمثّلهم ولا أين. والمجموعة التي تمثّل فئة بدقة تقول ذلك، والخانة مهمة لأن غيابها هو ما يسمح بتطبيق النموذج على فئة لم يقسها أحد.
+*  **الفترة الزمنية المشمولة:** المدى الذي تغطيه البيانات، وماذا حدث فيه. والنموذج المدرَّب على فترة من الظروف المستقرة يرث افتراض بقائها، والبطاقة هي المكان الذي يُكتب فيه ذلك الافتراض.
+*  **الترخيص وسند الموافقة:** السند الذي يجيز استعمال كل مجموعة، وهل أُخذت الموافقة حيث كانت مطلوبة. وحيث لم تُؤخذ الموافقة، فتلك هي الحقيقة التي تُسجَّل لا غيابٌ يُترك فارغًا.
+*  **ما قبل المعالجة والترشيح:** ما أُزيل أو أُعيدت عيّنته أو كُمِّل، وعلى أي أساس. والترشيح هو المكان الذي تكتسب فيه المجموعة شكل الفئة التي سيخفق النموذج عليها لاحقًا، وهو الخطوة التي نادرًا ما تفحص.
+*  **قيود مجموعة البيانات المعروفة:** ما لا تستطيع المجموعة تمثيله. وهذه الخانة هي ما يمنع قراء المقياس بوصفه دعوى عامة، وهي خالية في الغالب.
+*  **بيانات التقييم:** البيانات التي أُجري عليها التقييم، وهل هي منفصلة عن بيانات التدريب. والاستقلال هو أول ما يُفحص في أي تقييم، وغيابه يُبطل كل رقم في القسم.
+*  **المقاييس:** ما الذي تُقاس، وكيف حُسب كل مقياس. وشرح المقياس أهم من رقمه، لأن رقمًا بلا تعريف يمكن أن يُقارَن بما ليس له، ولا يكشف القارئ ذلك من الرقم نفسه.
+*  **الأداء بحسب الفئة:** نفس المقاييس لكل فئة يؤثر فيها النموذج، مع حجم العينة لكل منها. ورقم فئة من عينة صغيرة ليس قياسًا، وحجم العينة هو ما يميز بين الاثنين.
+*  **المقارنة بخط الأساس:** بماذا يُقارَن النموذج، وبكم يتفوق. والنموذج المقارَن بخط أساس ساذج فقط قد يكون أفضل منه ونافدًا في آن واحد.
+*  **العتبة ونقطة التشغيل:** العتبة المطبَّقة، وما الذي يتغير عند كل بديل. النموذج مجموعة مبادلات لا نظام واحد: خفض العتبة يزيد الاسترجاع يزيد الإنذارات الكاذبة، وهذه المبادلة لا تظهر إلا بعد تثبيت عتبة.
+*  **منهج التقييم وقيوده:** كيف أُجري التقييم، ومن أجراه، وما لا يثبته. والتقييم الذي أجراه الفريق الذي بنى النموذج مشروع، وهذه حقيقة تُكتب على البطاقة.
+*  **المتانة وأنماط الفشل:** كيف يتصرف النموذج أمام مدخلات لم يُختبر عليها، وطرق فشله المعروفة. وأنماط الفشل المعروفة أنفع من درجة متانة، لأن القارئ يستطيع التصرف بناءً عليها ولا يستطيع التصرف بناءً على درجة.
+*  **الفئات المتأثرة:** الفئات التي يحدد النموذج نتائجها، مذكورة بالاسم. والفئات الموصوفة في مجملها العام على أساس الاختبار ليست بالضرورة هي الفئة التي يكون أداؤها الأسوأ.
+*  **التحيّز المعروف:** الطريقة المحددة التي يكون النموذج بها غير عادل، مصوغة بحيث يمكن أن تكون خاطئة. وخانة عنوانها «التحيّز» وتقول قد يكون النموذج متحيّزًا عنوان، أما «يمنح هذه الفئة درجات أدنى بناءً على معدلات إتمام تاريخية» فدعوى يمكن قياسها ويمكن أن يثبت خطؤها.
+*  **مخاطر السلامة:** الطرق التي يمكن أن يضرّ بها النموذج، مرتبة بالخطورة، مع الظروف التي تنشأ فيها. والخطورة هي ما يحدد الضابط، والخطر بلا درجة قائمة احتمالات.
+*  **إمكانية الاستخدام المزدوج وإساءة الاستعمال:** كيف يمكن إساءة استعمال النموذج لإيذاء، وما أُخذ بشأن ذلك. وذات الصلة لنموذج يولّد أكثر من صلتها بنموذج يصنّف، وهي غير مذكورة في الغالب.
+*  **الأثر البيئي وعلى الموارد:** الطاقة والحوسبة المستهلكة، ومن يتحملها. وتُسجَّل لأنها كلفة حقيقية لا تظهر في أي قسم آخر، ولأنها في الغالب المؤشر الرئيسي الذي يستطيع طرف خارجي التحقق منه.
+*  **الأثر على خصوصية البيانات:** ما يمكن أن يكشفه النموذج عن الأفراد في بيانات تدريبه، وهل اختُبر ذلك. والاستخراج والحفظ قابلان للاختبار، والاختبار هو ما يميز الجواب المتدبر عن الافتراض.
+*  **القيود المعروفة:** ما لا يستطيع النموذج فعله، مصرَّحًا به. وهذا القسم يرجع إليه القارئ بعد حادثة، وبطاقة متفائلة فيه هي بطاقة لن يُرجع إليها ثانية.
+*  **السلوك خارج نطاق التوزيع:** كيف يتصرف النموذج أمام مدخلات تشبه بيانات تدريبه، وهل قيس ذلك. والنموذج الذي يُعطى فئة لم يرها لا يخفق بصوت عالٍ، وهذا ما يجعل تسجيله مفيدًا.
+*  **المراقبة في الإنتاج:** ما يراقب بعد النشر، مقابل أي خط أساس، وكم مرة. والانحراف خاصية للعلاقة بين النموذج والعالم لا للنموذج، فقياس الإطلاق هو أول سلسلة.
+*  **عتبات المراقبة:** ما النتيجة التي تستدعي إجراءً، مكتوبة قبل معرفة النتيجة. والعتبة التي تُحدد بعد رؤية الرقم وصف لذلك الرقم.
+*  **سياسة إعادة التدريب والتحديث:** متى يُعاد تدريب النموذج، وما يستدعيه، ومن يوافق. وبدون ذلك يُحدَّث النموذج متى ما تفرّغ أحدهم، فيصبح التغيير خفيًا على كل ما فوقه في هذه البطاقة.
+*  **سجل تغييرات الإصدار:** ما الذي تغيّر بين هذا الإصدار وسابقه، ولماذا. النماذج تتغير كثيرًا بهدوء، وبطاقة بلا سجل تغييرات لا تستطيع أن تجيب بما كان ساريًا عند وقوع حادثة.
+*  **خطة الإحالة للتقاعد:** متى وكيف يُحال النموذج إلى التقاعد، وماذا يحدث للبيانات التي يحملها. والنموذج في الإنتاج بلا خطة تقاعد نظام تتراكم كلفته ولا تُسدّد التزاماته أبدًا.
+
+---
+
+### المحاذاة والترابط المؤسسي
+* [📄 القالب القابل للطباعة (Markdown)](02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.md)
+* [🤖 موجّه التوليد الذكي](02_05_بطاقة_نموذج_الذكاء_الاصطناعي.md)
+* [📊 بنية البيانات (JSON)](02_05_بطاقة_نموذج_الذكاء_الاصطناعي.json)
+* [📈 البيانات الجدولية (CSV)](02_05_بطاقة_نموذج_الذكاء_الاصطناعي.csv)
+
+---
+
+### 6. نموذج تطبيقي معبأ (مثال استرشادي)
+يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:
+> 📖 **النموذج التطبيقي المكتمل:** [02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.md](../../../../examples/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.md)
+
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+          <div style="line-height: 1.8;">
+            <hr />
+<p>type: Example
+token_pointer: /_tokens/examples/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_مثال.npy
+token_count: 2512
+tokenizer_model_id: tiktoken/o200k_base
+created_at: '2026-10-06T16:05:29.118885+00:00'</p>
+<hr />
+<div>
+
+# بطاقة نموذج الذكاء الاصطناعي (نموذج تطبيقي معبأ)
+> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-02.05`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
+
+---
+
+
+
+
+
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">التحول السحابي الشامل لكافة فروع وإدارات المؤسسة - GOV-FRM-2026-01</h2>
+ <h1 align="center">بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق</h1>
+
+| **تاريخ الإعداد:** 2026-03-15 | **مسؤول الامتثال:** أ. عبد العزيز الزهراني (مدير الامتثال والحوكمة) | **إعداد:** م. فيصل الحربي، PMP (مدير المشروع) |
+| ---: | ---: | ---: |
+
+---
+
+## ١. تعريف النموذج ومصدره
+<!-- ما هو النموذج عند إصدار بعينه، ومن بناه ومن أيّ، والإعدادات التي تؤثر في سلوكه، وتحت أي ترخيص يُستعمل، وأين توجد المخرجات. -->
+
+**اسم النموذج وإصداره:** نموذج المساعد المعرفي الذكي لمؤسسة القمة (AECA Engine v2.4)
+
+**المطوّر ومصدر النموذج:** فريق الذكاء الاصطناعي وهندسة البيانات بشركة القمة بالتعاون مع المطور السحابي المعتمد
+
+**البنية والإعداد:** بنية Transformer مدعومة بطبقة استرجاع معزز (RAG) وقاعدة بيانات متجهية مدمجة
+
+**أسلوب التدريب والحوسبة:** ضبط دقيق موجه (Supervised Fine-Tuning) على عنقود حوسبة سحابي مؤمن (8x H100 GPUs)
+
+**الترخيص وشروط الاستعمال:** ترخيص مؤسسي داخلي خاص بشركة القمة للحلول المؤسسية المتقدمة
+
+**المخرجات المرتبطة:** مستودع النماذج السحابي الآمن (Model Registry Artifacts v2.4)
+
+---
+
+## ٢. الاستخدام المقصود وغير المشمول
+<!-- المهمة مُدخَلاً ومُخرَجًا، وما يجوز استعماله لأغراض أخرى، وما يجب ألا يُستعمل له، ومن يشغّله ومن يخضع لمخرجه، والشروط التي تصلح فيها قياسات القسم الرابع. -->
+
+**الاستخدام الرئيس:** أتمتة مطابقة أوامر الشراء، استخلاص بيانات الفواتير، والتنبؤ باحتياجات المخزون
+
+**الاستخدام الثانوي:** توليد ملخصات الأداء التشغيلي ومسودات تقارير التدقيق لإدارة العمليات
+
+**الاستخدام غير المشمول:** اتخاذ قرارات التوظيف وفصل الموظفين، أو اعتماد التحويلات المالية الكبرى دون توقيع بشري
+
+**المستخدم والجمهور:** مدراء العمليات، محللو سلاسل الإمداد، موظفو المشتريات، ومدققو الحسابات بشركة القمة
+
+**شروط التشغيل:** بيئة سحابية خاصة مع توفر اتصال شبكي آمن وزمن استجابة < 800 ميلي ثانية
+
+**متطلب الإشراف البشري:** مراجعة بشرية إلزامية لكافة المعاملات المالية التي تتجاوز 50,000 ريال، أو في حال كانت درجة ثقة النموذج أقل من 90%
+
+---
+
+## ٣. بيانات التدريب
+<!-- صف واحد لكل مجموعة بيانات: ما هي ومن يملكها، ومن أين جاءت، ومن تمثّلهم وأين تمثّل، وأي فترة تغطي، وبأي سند يُستعمل بها، وما جرى لها، وما لا تستطيع تمثيله. -->
+
+| مجموعة البيانات | المصدر وطريقة الجمع | التغطية السكانية والجغرافية | الفترة الزمنية المشمولة | الترخيص وسند الموافقة | ما قبل المعالجة والترشيح | القيود المعروفة |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| بيانات أوامر الشراء والمخزون التاريخية | استخراج آلي مباشر من قواعد البيانات المركزية | كافة الفروع والمستودعات الإقليمية (المملكة) | الربع الثاني 2026 | ملكية بيانات مؤسسية خاصة بشركة القمة | إغفال الهوية وإزالة البيانات الشخصية الحساسة | تقتصر على العمليات المنفذة بالريال والدولار |
+| سجلات مطابقة الفواتير وعروض الأسعار | أرشفة إلكترونية مؤمنة مع تدقيق التوافق | عمليات المشتريات المركزية والفرعية | الربع الثالث 2026 | ترخيص استخدام داخلي متوافق مع سياسة الخصوصية | إزالة السجلات المكررة وتصحيح القيم الشاذة | عدم شمول المعاملات النقدية اليدوية القديمة |
+| بيانات تفاعلات المستخدمين وبلاغات الدعم | واجهات الربط البرمجي API مع سجلات مشفرة | المعاملات التجارية لموردي الفئة (أ) و(ب) | الربع الرابع 2026 | موافقة رسمية من الإدارة المالية والامتثال | توحيد صيغ التواريخ والعملات وفق ISO 4217 | تتطلب تدقيقاً بشرياً للفواتير ذات البنود المتعددة |
+
+---
+
+## ٤. التقييم والأداء
+<!-- صف واحد لكل مقياس: ما قيس عليه، وقيمته مع حجم العينة، ونفس الرقم لكل فئة متأثرة، وخط الأساس الذي يتفوق عليه، والعتبة السارية، وما لا يثبته المنهج. -->
+
+| المقياس | بيانات التقييم واستقلالها | القيمة وحجم العينة | الأداء بحسب الفئة | المقارنة بخط الأساس | العتبة السارية | قيود المنهج |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| دقة النموذج ومطابقة البيانات >= 95% | عينة اختبار معزولة (15% من البيانات التاريخية) | دقة 94.2% (حجم العينة: 50,000 معاملة) | دقة 96% للفواتير القياسية و91% للفواتير المعقدة | تحسن بنسبة +28% مقارنة بالمعالجة التقليدية | الحد الأدنى للدقة المقبولة >= 90% | تقتصر على العمليات المنفذة بالريال والدولار |
+| تحقيق وفورات تشغيلية سنوية >= 3.5M ريال | حزمة بيانات اختبارية جديدة من الربع الأول 2026 | درجة F1 = 0.91 (حجم العينة: 25,000 فاتورة) | دقة 95% لموردي التجزئة و93% للخدمات | خفض معدل الأخطاء بنسبة 65% عن النظام القديم | الحد الأقصى للخطأ <= 2% | عدم شمول المعاملات النقدية اليدوية القديمة |
+| زمن استجابة للعمليات < 800 ميلي ثانية | مجموعة تقييم أداء مستقلة ومحققة يدوياً | زمن استجابة 620ms (10,000 طلب متزامن) | أداء متكافئ عبر كافة الفروع الإقليمية | تفوق على خط الأساس بنسبة 18% في زمن المعالجة | الحد الأعلى لزمن الاستجابة <= 800ms | تتطلب تدقيقاً بشرياً للفواتير ذات البنود المتعددة |
+
+---
+
+## ٥. الاعتبارات الأخلاقية والعدالة والسلامة
+<!-- صف واحد لكل اعتبار: من الفئات المتأثرة، والطريقة المحددة التي يكون النموذج بها غير عادل، والضرر ودرجته، وما أُخذ من إجراء. -->
+
+| الاعتبار | الفئات المتأثرة | النتيجة المحددة | الخطورة | ما أُخذ من إجراء |
+| ---: | ---: | ---: | ---: | ---: |
+| عدالة التقييم وعدم التحيز للموردين الكبار | الموردون المحليون والمؤسسات الصغيرة والمتوسطة | فرص متكافئة في الترسية بناءً على الأداء الموضوعي | متوسطة (تتطلب مراجعة دورية) | تطبيق اختبارات التكافؤ الإحصائي ومراقبة الانحياز |
+| حماية خصوصية بيانات المعاملات والأسعار | موظفو إدارة المشتريات وسلاسل الإمداد | منع تسريب البيانات المالية الحساسة عبر التشفير | منخفضة (ضمن الحدود المقبولة) | تفعيل بروتوكولات التشفير وإدارة مفاتيح الأمان |
+| موثوقية مخرجات التنبؤ بالمخزون | العملاء المستفيدون من سرعة تسليم الطلبات | تقليل الهدر في المخزون بنسبة 15% | عالية (تتطلب إشرافاً بشرياً إلزامياً) | مراجعة بشرية للطلبات ذات القيمة العالية |
+
+---
+
+## ٦. القيود والمراقبة وضبط التغيير
+<!-- ما لا يستطيع النموذج فعله، وسلوكه خارج نطاقه، وما يراقب في الإنتاج، وما يستدعي إجراءً، ومتى يُعاد تدريبه، وما تغيّر في هذا الإصدار، وكيف يُحال إلى التقاعد. -->
+
+**القيود المعروفة:** تقتصر على معالجة المستندات الرقمية والفواتير الواضحة بدقة >= 300 DPI بالريال والدولار.
+
+**السلوك خارج نطاق التوزيع:** تفعيل التراجع الآمن وتوجيه المعاملات غير المألوفة إلى طابور المراجعة البشرية فوراً.
+
+**المراقبة في الإنتاج:** مراقبة لحظية لمؤشرات الأداء، زمن الاستجابة، ونسبة الدقة عبر لوحة Grafana سحابية.
+
+**عتبات المراقبة:** تنبيه فوري عند انخفاض الدقة اليومية عن 90% أو تجاوز زمن الاستجابة 800ms.
+
+**سياسة إعادة التدريب والتحديث:** إعادة ضبط وتدريب ربع سنوية باستخدام البيانات المعتمدة بعد اجتياز اختبارات الانحدار.
+
+**سجل تغييرات الإصدار:** الإصدار 2.4: تحسين دقة استخلاص الفواتير متعددة الصفحات بنسبة 12% وضبط طبقة RAG.
+
+**خطة الإحالة للتقاعد:** الاحتفاظ بالنموذج السابق كخطة طوارئ بديلة (Fallback) لمدة 6 أشهر قبل الأرشفة الآمنة.
+
+---
+
+### الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مطور النموذج / مسؤول تعلم الآلة** | د. ريان السليمان (رئيس فريق الذكاء الاصطناعي) | [معتمد إلكترونياً] | 2026-03-18 |
+| **مراجع جودة وأخلاقيات الذكاء الاصطناعي** | د. ريان السليمان | [معتمد إلكترونياً] | 2026-03-18 |
+| **مالك المنتج** | أ. مريم الخطيب (كبير ملاك المنتجات) | [معتمد إلكترونياً] | 2026-03-18 |
+---
+
+
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>النموذج:</strong> بطاقة نموذج الذكاء الاصطناعي وورقة الحقائق | <strong>المرجع:</strong> PMO-02.05 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+              نسخ المخطط
+            </button>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill out the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field below, based on the available project context. Refer to parameters.md for the shared project variables. Name the model version, the group affected, and the threshold that triggers action, rather than recording a category; a governance plan that says &#x27;encrypted&#x27;, &#x27;minimised&#x27; and &#x27;monitored&#x27; describes an intention and not a system, and the difference only becomes visible when something goes wrong and no one can say what was in force.&quot;,
+  &quot;form_name&quot;: &quot;AI MODEL CARD AND FACT SHEET&quot;,
+  &quot;document_reference&quot;: &quot;PMO-02.05&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Model_Name_and_Version&quot;: {
+      &quot;section&quot;: &quot;Model Identification and Provenance&quot;,
+      &quot;label&quot;: &quot;Model Name and Version&quot;,
+      &quot;guidance&quot;: &quot;The model at a specific version, with the date that version was produced. A card that names a model rather than a version describes whichever build happens to be deployed when it is read, and the answer is rarely the one that was assessed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Developer_and_Provenance&quot;: {
+      &quot;section&quot;: &quot;Model Identification and Provenance&quot;,
+      &quot;label&quot;: &quot;Developer and Provenance&quot;,
+      &quot;guidance&quot;: &quot;Who built it, whether it was trained in-house, fine-tuned, or acquired, and from what base model. Provenance determines which of the sections that follow can be answered at all, and it is usually the section that is missing when a question is asked.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Architecture_and_Configuration&quot;: {
+      &quot;section&quot;: &quot;Model Identification and Provenance&quot;,
+      &quot;label&quot;: &quot;Architecture and Configuration&quot;,
+      &quot;guidance&quot;: &quot;The architecture family, the parameter count, and the settings that affect behaviour. The settings are the part that matters, because the same architecture with different decoding parameters is a different system.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Training_Method_and_Compute&quot;: {
+      &quot;section&quot;: &quot;Model Identification and Provenance&quot;,
+      &quot;label&quot;: &quot;Training Method and Compute&quot;,
+      &quot;guidance&quot;: &quot;How it was trained, over what period, and at what cost. Compute is recorded because it bounds reproducibility: a result that needed a compute allocation nobody can obtain again is not a result that can be re-derived.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Licence_and_Usage_Terms&quot;: {
+      &quot;section&quot;: &quot;Model Identification and Provenance&quot;,
+      &quot;label&quot;: &quot;Licence and Usage Terms&quot;,
+      &quot;guidance&quot;: &quot;The licence, who may use it, and under what restrictions. A model used outside its licence is a legal exposure that no technical section of this card addresses.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Related_Artefacts&quot;: {
+      &quot;section&quot;: &quot;Model Identification and Provenance&quot;,
+      &quot;label&quot;: &quot;Related Artefacts&quot;,
+      &quot;guidance&quot;: &quot;The model, the code, the weights and the data, each with where it lives. A card that lists no locations is a description, and a description cannot be checked against anything.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Primary_Use&quot;: {
+      &quot;section&quot;: &quot;Intended Use and Out-of-Scope Use&quot;,
+      &quot;label&quot;: &quot;Primary Use&quot;,
+      &quot;guidance&quot;: &quot;The task the model is for, stated as an input and an output. An input and an output can be tested; a purpose cannot.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Secondary_Use&quot;: {
+      &quot;section&quot;: &quot;Intended Use and Out-of-Scope Use&quot;,
+      &quot;label&quot;: &quot;Secondary Use&quot;,
+      &quot;guidance&quot;: &quot;What else it may legitimately be used for, if anything. Recorded separately because a use that is merely tolerated and one that is endorsed need different controls, and a card that lists only the endorsed one hides the tolerated ones.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Out_of_Scope_Use&quot;: {
+      &quot;section&quot;: &quot;Intended Use and Out-of-Scope Use&quot;,
+      &quot;label&quot;: &quot;Out-of-Scope Use&quot;,
+      &quot;guidance&quot;: &quot;The uses it must not be used for, with the reason for each. This section is the one that makes the card usable by someone deciding whether to deploy it, and a card without it can only say what the model is for.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_User_and_Audience&quot;: {
+      &quot;section&quot;: &quot;Intended Use and Out-of-Scope Use&quot;,
+      &quot;label&quot;: &quot;User and Audience&quot;,
+      &quot;guidance&quot;: &quot;Who operates it, and who is subject to its output. The two are routinely treated as one, and the conflation is how a system that scores applicants comes to be described as a tool that helps recruiters write better.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Operating_Conditions&quot;: {
+      &quot;section&quot;: &quot;Intended Use and Out-of-Scope Use&quot;,
+      &quot;label&quot;: &quot;Operating Conditions&quot;,
+      &quot;guidance&quot;: &quot;The inputs it expects, the conditions it was tested under, and the conditions under which it should not be used. These are the boundaries of the evaluation in section 4, and a metric read outside them is not a weaker claim, it is a wrong one.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Human_Oversight_Requirement&quot;: {
+      &quot;section&quot;: &quot;Intended Use and Out-of-Scope Use&quot;,
+      &quot;label&quot;: &quot;Human Oversight Requirement&quot;,
+      &quot;guidance&quot;: &quot;Where a person must review an output before it is acted on. Oversight specified as a general principle rather than as points in a workflow does not survive contact with a deadline.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Datasets&quot;: {
+      &quot;section&quot;: &quot;Training Data&quot;,
+      &quot;label&quot;: &quot;Datasets&quot;,
+      &quot;guidance&quot;: &quot;Each dataset by name, with its owner and the date it was collected. A dataset named only by type cannot be checked for permission, and permission is what blocks first.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Provenance_and_Collection_Method&quot;: {
+      &quot;section&quot;: &quot;Training Data&quot;,
+      &quot;label&quot;: &quot;Provenance and Collection Method&quot;,
+      &quot;guidance&quot;: &quot;Where each dataset came from and how it was gathered. Collected data carries the practices of the period and place it came from, whether or not those were examined.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_Demographic_and_Geographic_Coverage&quot;: {
+      &quot;section&quot;: &quot;Training Data&quot;,
+      &quot;label&quot;: &quot;Demographic and Geographic Coverage&quot;,
+      &quot;guidance&quot;: &quot;Who and where the data represents, and who and where it does not. A dataset that represents a population accurately says so; the field matters because its absence is what allows a model to be applied to a population nobody measured.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Time_Period_Covered&quot;: {
+      &quot;section&quot;: &quot;Training Data&quot;,
+      &quot;label&quot;: &quot;Time Period Covered&quot;,
+      &quot;guidance&quot;: &quot;The span the data covers, and what happened during it. A model trained on a period of stable conditions inherits the assumption that conditions will remain stable, and the card is where that assumption is written down.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Licence_and_Consent_Basis&quot;: {
+      &quot;section&quot;: &quot;Training Data&quot;,
+      &quot;label&quot;: &quot;Licence and Consent Basis&quot;,
+      &quot;guidance&quot;: &quot;The basis on which each dataset may be used, and whether consent was obtained where it was required. Where consent was not obtained, that is the fact to record, not an absence to leave blank.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Preprocessing_and_Filtering&quot;: {
+      &quot;section&quot;: &quot;Training Data&quot;,
+      &quot;label&quot;: &quot;Preprocessing and Filtering&quot;,
+      &quot;guidance&quot;: &quot;What was removed, resampled or imputed, and on what basis. Filtering is where a dataset acquires the shape of the population the model will then fail on, and it is rarely the step examined.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Known_Dataset_Limitations&quot;: {
+      &quot;section&quot;: &quot;Training Data&quot;,
+      &quot;label&quot;: &quot;Known Dataset Limitations&quot;,
+      &quot;guidance&quot;: &quot;What the dataset cannot represent. This is the field that prevents a metric from being read as a general claim, and it is almost always empty.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Evaluation_Data&quot;: {
+      &quot;section&quot;: &quot;Evaluation and Performance&quot;,
+      &quot;label&quot;: &quot;Evaluation Data&quot;,
+      &quot;guidance&quot;: &quot;The data the evaluation was run on, and whether it is disjoint from the training data. Disjointness is the first thing to check in any evaluation, and its absence invalidates every number in the section.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Metrics&quot;: {
+      &quot;section&quot;: &quot;Evaluation and Performance&quot;,
+      &quot;label&quot;: &quot;Metrics&quot;,
+      &quot;guidance&quot;: &quot;Each metric, its value, and the confidence interval or sample size behind it. A single figure with no interval is a point presented as a range, and decisions get made on it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Performance_by_Subgroup&quot;: {
+      &quot;section&quot;: &quot;Evaluation and Performance&quot;,
+      &quot;label&quot;: &quot;Performance by Subgroup&quot;,
+      &quot;guidance&quot;: &quot;The same metrics for each group the model affects, with the sample size for each. A subgroup figure from a small sample is not a measurement, and the sample size is what distinguishes the two.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Baseline_Comparison&quot;: {
+      &quot;section&quot;: &quot;Evaluation and Performance&quot;,
+      &quot;label&quot;: &quot;Baseline Comparison&quot;,
+      &quot;guidance&quot;: &quot;What the model is compared against, and by how much. A model compared only with a trivial baseline can be both better than it and useless.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Threshold_and_Operating_Point&quot;: {
+      &quot;section&quot;: &quot;Evaluation and Performance&quot;,
+      &quot;label&quot;: &quot;Threshold and Operating Point&quot;,
+      &quot;guidance&quot;: &quot;The threshold in force, and what the alternatives would cost. A model is a set of trade-offs rather than a single system, and the trade-off is only visible once a threshold is fixed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Evaluation_Method_and_Limitations&quot;: {
+      &quot;section&quot;: &quot;Evaluation and Performance&quot;,
+      &quot;label&quot;: &quot;Evaluation Method and Limitations&quot;,
+      &quot;guidance&quot;: &quot;How the evaluation was conducted, by whom, and what it does not establish. An evaluation conducted by the team that built the model is legitimate, and it is a fact that belongs on the card.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Robustness_and_Failure_Modes&quot;: {
+      &quot;section&quot;: &quot;Evaluation and Performance&quot;,
+      &quot;label&quot;: &quot;Robustness and Failure Modes&quot;,
+      &quot;guidance&quot;: &quot;How the model behaves under input it was not tested on, and the known ways it fails. Known failure modes are more useful than a robustness score, because a reader can act on them and cannot act on a score.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f27_Affected_Groups&quot;: {
+      &quot;section&quot;: &quot;Ethical, Fairness and Safety Considerations&quot;,
+      &quot;label&quot;: &quot;Affected Groups&quot;,
+      &quot;guidance&quot;: &quot;The groups whose outcomes the model determines, named. Groups described in aggregate on the basis of a test are not the same as the group that performs worst on it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f28_Known_Bias&quot;: {
+      &quot;section&quot;: &quot;Ethical, Fairness and Safety Considerations&quot;,
+      &quot;label&quot;: &quot;Known Bias&quot;,
+      &quot;guidance&quot;: &quot;The specific ways this model is unfair to this group, stated so that they could be false. A field titled \&quot;bias\&quot; that says the model may be biased is a heading; \&quot;the model scores this group lower on historic completion rates\&quot; is a claim that can be measured and can turn out to be wrong.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f29_Safety_Risks&quot;: {
+      &quot;section&quot;: &quot;Ethical, Fairness and Safety Considerations&quot;,
+      &quot;label&quot;: &quot;Safety Risks&quot;,
+      &quot;guidance&quot;: &quot;The ways the model could cause harm, by severity, with the conditions under which each arises. Severity is what determines the control, and a risk listed without severity is a list of possibilities.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f30_Dual_Use_and_Misuse_Potential&quot;: {
+      &quot;section&quot;: &quot;Ethical, Fairness and Safety Considerations&quot;,
+      &quot;label&quot;: &quot;Dual-Use and Misuse Potential&quot;,
+      &quot;guidance&quot;: &quot;How the model could be used to cause harm, and what has been done about it. Relevant to a model that generates as well as one that classifies, and usually unstated.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f31_Environmental_and_Resource_Impact&quot;: {
+      &quot;section&quot;: &quot;Ethical, Fairness and Safety Considerations&quot;,
+      &quot;label&quot;: &quot;Environmental and Resource Impact&quot;,
+      &quot;guidance&quot;: &quot;The energy and compute consumed, and by whom bears it. Recorded because it is a real cost that appears in no other section, and because it is usually the only figure an external party can verify.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f32_Data_Privacy_Impact&quot;: {
+      &quot;section&quot;: &quot;Ethical, Fairness and Safety Considerations&quot;,
+      &quot;label&quot;: &quot;Data Privacy Impact&quot;,
+      &quot;guidance&quot;: &quot;What the model can reveal about individuals in its training data, and whether it has been tested for it. Extraction and memorisation are testable, and the test is the only thing that distinguishes a considered answer from an assumption.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f33_Known_Limitations&quot;: {
+      &quot;section&quot;: &quot;Limitations, Monitoring and Change Control&quot;,
+      &quot;label&quot;: &quot;Known Limitations&quot;,
+      &quot;guidance&quot;: &quot;What the model cannot do, stated plainly. This is the section a reader consults after an incident, and a card that is optimistic in it is a card that will not be consulted a second time.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f34_Out_of_Distribution_Behaviour&quot;: {
+      &quot;section&quot;: &quot;Limitations, Monitoring and Change Control&quot;,
+      &quot;label&quot;: &quot;Out-of-Distribution Behaviour&quot;,
+      &quot;guidance&quot;: &quot;How the model behaves on inputs unlike its training data, and whether that has been measured. A model given a population it never saw does not fail loudly, which is what makes this worth recording.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f35_Production_Monitoring&quot;: {
+      &quot;section&quot;: &quot;Limitations, Monitoring and Change Control&quot;,
+      &quot;label&quot;: &quot;Production Monitoring&quot;,
+      &quot;guidance&quot;: &quot;What is watched after deployment, against what baseline, and how often. Drift is a property of the relationship between the model and the world, not of the model, so a launch measurement is the first of a series.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f36_Monitoring_Thresholds&quot;: {
+      &quot;section&quot;: &quot;Limitations, Monitoring and Change Control&quot;,
+      &quot;label&quot;: &quot;Monitoring Thresholds&quot;,
+      &quot;guidance&quot;: &quot;What result triggers action, written before the result is known. A threshold set after seeing a number is a description of that number.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f37_Retraining_and_Update_Policy&quot;: {
+      &quot;section&quot;: &quot;Limitations, Monitoring and Change Control&quot;,
+      &quot;label&quot;: &quot;Retraining and Update Policy&quot;,
+      &quot;guidance&quot;: &quot;When the model will be retrained, what triggers it, and who approves. Without this the model is updated whenever someone has time, and the change is then invisible to everything above it in this card.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f38_Version_Change_Record&quot;: {
+      &quot;section&quot;: &quot;Limitations, Monitoring and Change Control&quot;,
+      &quot;label&quot;: &quot;Version Change Record&quot;,
+      &quot;guidance&quot;: &quot;What changed between this version and the last, and why. Models change often and silently, and a card with no change record cannot answer what was in force when an incident occurred.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f39_Decommissioning_Plan&quot;: {
+      &quot;section&quot;: &quot;Limitations, Monitoring and Change Control&quot;,
+      &quot;label&quot;: &quot;Decommissioning Plan&quot;,
+      &quot;guidance&quot;: &quot;How and when the model will be retired, and what happens to the data it holds. A model in production with no retirement plan is a system whose cost grows and whose obligations are never discharged.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">مكتبة بايثون وأمر التشغيل</a></li>
+            <li><a href="/Tasleemat/developers/#mcp">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/#schemas">مخططات JSON</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const parent = evt.target.closest('.tabs-container');
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    evt.target.classList.add('active');
+    const targetPane = document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+})();
+
+  </script>
+  
+</body>
+</html>
