@@ -89,7 +89,7 @@ created_at: '2026-10-06T16:05:28.224180+00:00'</p>
 <hr />
 <h2 id="_1">🎯 نظرة عامة تنفيذية</h2>
 <p>تلتزم حزمة <strong>«تسليمات»</strong> بمواصفات حزم البيانات الصادرة عن <strong>مؤسسة المعرفة المفتوحة (OKF)</strong> بالاعتماد على <strong>مخططات JSON الرقمية القياسية</strong>؛ مما يجعلها إطار عمل مكاتب إدارة المشاريع (PMO) الأكثر ملاءمة للأتمتة ووكلاء الذكاء الاصطناعي عالمياً.</p>
-<p>من خلال توفير ملف البيان الموحد <a href="../../datapackage.json"><code>datapackage.json</code></a> في جذر المستودع، تمكّن تسليمات المطورين ووكلاء الذكاء الاصطناعي (AI Agents) ومهندسي النظم من قراءة وتدقيق واستدعاء كافة مخططات النماذج الـ 204 مباشرة عبر واجهات البرمجة (APIs) دون الحاجة إلى أي وسائط تحويل وسيطة.</p>
+<p>من خلال توفير ملف البيان الموحد <a href="../../datapackage.json"><code>datapackage.json</code></a> في جذر المستودع، تمكّن تسليمات المطورين ووكلاء الذكاء الاصطناعي (AI Agents) ومهندسي النظم من قراءة وتدقيق واستدعاء كافة مخططات النماذج الـ 228 مباشرة عبر واجهات البرمجة (APIs) دون الحاجة إلى أي وسائط تحويل وسيطة.</p>
 <pre><code class="language-mermaid">flowchart TD
     subgraph &quot;هيكلية حزم بيانات مؤسسة المعرفة المفتوحة&quot;
         DP[&quot;&lt;b&gt;datapackage.json&lt;/b&gt;&lt;br/&gt;(البيان الموحد)&quot;]
@@ -100,8 +100,8 @@ created_at: '2026-10-06T16:05:28.224180+00:00'</p>
     end
 
     subgraph &quot;موارد مخططات JSON في تسليمات&quot;
-        EN_RES[&quot;102 مخطط JSON إنجليزي&lt;br/&gt;(forms/en/**/*.json)&quot;]
-        AR_RES[&quot;102 مخطط JSON عربي&lt;br/&gt;(forms/ar/**/*.json)&quot;]
+        EN_RES[&quot;114 مخطط JSON إنجليزي&lt;br/&gt;(forms/en/**/*.json)&quot;]
+        AR_RES[&quot;114 مخطط JSON عربي&lt;br/&gt;(forms/ar/**/*.json)&quot;]
         DP --&gt; EN_RES
         DP --&gt; AR_RES
     end
@@ -116,8 +116,17 @@ created_at: '2026-10-06T16:05:28.224180+00:00'</p>
     end
 </code></pre>
 <hr />
+<h2 id="_2">🗂️ طبقات البيانات والمخططات الأربع في تسليمات</h2>
+<p>لمنع الخلط المعماري بين تعريفات النماذج وبيانات المشاريع الفعلية أثناء التشغيل، تحدد تسليمات أربع طبقات مستقلة للبيانات والمخططات:</p>
+<ol>
+<li><strong>الطبقة 1: مخططات أقسام وحقول النماذج (<code>forms/{en,ar}/**/*.json</code>):</strong> تعريفات الأقسام والحقول والتوجيهات والإرشادات المستخدمة لتوليد القوالب.</li>
+<li><strong>الطبقة 2: حزمة البيانات المفتوحة Frictionless OKF (<code>datapackage.json</code>):</strong> فهرس الموارد المفتوحة على مستوى المستودع الذي يربط كافة موارد النماذج الثنائية الـ 228.</li>
+<li><strong>الطبقة 3: المخططات المرجعية للتحقق وفق مسودة Draft 2020-12 (<code>schemas/completed/PMO-*.schema.json</code>):</strong> عقود التحقق البرمجي للمخرجات المكتملة في وضعي التحقق الصارم (<code>strict</code>) والمسودة (<code>draft</code>).</li>
+<li><strong>الطبقة 4: حمولات بيانات المشاريع التشغيلية (Runtime Payloads):</strong> البيانات الواقعية للمشاريع المدخلة بواسطة الفرق أو وكلاء الذكاء الاصطناعي والمفحوصة مقابل الطبقة 3.</li>
+</ol>
+<hr />
 <h2 id="datapackagejson">📦 مواصفة ملف <code>datapackage.json</code></h2>
-<p>يقوم ملف <a href="../../datapackage.json"><code>datapackage.json</code></a> بفهرسة كافة المخططات الـ 204 كموارد JSON رقمية:</p>
+<p>يقوم ملف <a href="../../datapackage.json"><code>datapackage.json</code></a> بفهرسة كافة المخططات الـ 228 كموارد JSON رقمية:</p>
 <pre><code class="language-json">{
   &quot;profile&quot;: &quot;data-package&quot;,
   &quot;name&quot;: &quot;tasleemat-pmo-framework&quot;,

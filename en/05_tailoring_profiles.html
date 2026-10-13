@@ -86,23 +86,24 @@ created_at: '2026-10-06T16:05:28.491597+00:00'</p>
 <strong>Standard:</strong> PMI PMBOK® Guide 6th, 7th &amp; 8th Edition Standard  </p>
 <hr />
 <h2 id="executive-overview">🎯 Executive Overview</h2>
-<p>To prevent administrative bureaucracy on simple initiatives and ensure rigorous governance on critical investments, the <strong>Tasleemat Sizing and Tailoring Framework</strong> categorizes projects into <strong>3 Governance Tiers</strong> and provides <strong>4 Methodology Archetype Packs</strong>. </p>
-<p>Project Managers and PMO Directors use the <strong>Complexity Assessment Model (<code>PMO-02.02</code>)</strong> and <strong>Development Approach Assessment (<code>PMO-02.01</code>)</strong> at Gate 1 to select the minimum mandatory artifact set required for their specific project.</p>
+<p>To prevent administrative bureaucracy on simple initiatives and ensure rigorous governance on critical investments, the <strong>Tasleemat Sizing and Tailoring Framework</strong> categorizes projects into <strong>3 Governance Tiers</strong> and provides <strong>5 Methodology Archetype Packs</strong> (<code>general</code>, <code>agile</code>, <code>ai</code>, <code>predictive</code>, <code>hybrid</code>). </p>
+<p>Project Managers and PMO Directors use the <strong>Tailoring Plan (<code>PMO-02.01</code>)</strong> and <strong>AI Governance Plan (<code>PMO-02.02</code>)</strong> (or organizational complexity scoring) at Gate 1 to select the minimum mandatory artifact set required for their specific project.</p>
 <pre><code class="language-mermaid">flowchart TD
     subgraph Assessment[&quot;Gate 1: Project Categorization&quot;]
-        C1[&quot;PMO-02.02 Complexity Assessment&quot;]
-        C2[&quot;PMO-02.01 Development Approach&quot;]
-        C1 --&gt; Decision[&quot;Select Governance Tier &amp; Archetype&quot;]
+        C1[&quot;PMO-02.01 Tailoring Plan&quot;]
+        C2[&quot;PMO-02.02 AI Governance Plan&quot;]
+        C1 --&gt; Decision[&quot;Select Governance Tier &amp; Pack&quot;]
         C2 --&gt; Decision
     end
 
     subgraph Tiers[&quot;Governance Sizing Tiers&quot;]
-        Decision --&gt; T1[&quot;&lt;b&gt;Tier 1: Mega / Critical&lt;/b&gt;&lt;br/&gt;(&gt;$10M | 35–50 Forms)&quot;]
-        Decision --&gt; T2[&quot;&lt;b&gt;Tier 2: Standard&lt;/b&gt;&lt;br/&gt;($1M–$10M | 18–25 Forms)&quot;]
-        Decision --&gt; T3[&quot;&lt;b&gt;Tier 3: Lean / Fast-Track&lt;/b&gt;&lt;br/&gt;(&lt;$1M | 7–9 Forms)&quot;]
+        Decision --&gt; T1[&quot;&lt;b&gt;Tier 1: Mega / Critical&lt;/b&gt;&lt;br/&gt;(&gt;$10M | 35–50 Deliverables)&quot;]
+        Decision --&gt; T2[&quot;&lt;b&gt;Tier 2: Standard&lt;/b&gt;&lt;br/&gt;($1M–$10M | 18–25 Deliverables)&quot;]
+        Decision --&gt; T3[&quot;&lt;b&gt;Tier 3: Lean / Fast-Track&lt;/b&gt;&lt;br/&gt;(&lt;$1M | 7–9 Deliverables)&quot;]
     end
 
     subgraph Packs[&quot;Methodology Archetype Packs&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P0[&quot;General PMO Pack&quot;]
         T1 &amp; T2 &amp; T3 --&gt; P1[&quot;Agile / Scrum Pack&quot;]
         T1 &amp; T2 &amp; T3 --&gt; P2[&quot;Predictive / EPC Pack&quot;]
         T1 &amp; T2 &amp; T3 --&gt; P3[&quot;AI &amp; Data Product Pack&quot;]
@@ -118,10 +119,10 @@ created_at: '2026-10-06T16:05:28.491597+00:00'</p>
 <li><strong>Duration:</strong> $&gt; 12\text{ months}$.</li>
 <li><strong>Complexity:</strong> High regulatory impact, cross-entity dependencies, multi-vendor contracting, high public exposure, or critical infrastructure impact.</li>
 <li><strong>Governance Cadence:</strong> Monthly Executive Steering Committee, bi-weekly PMO tollgates, weekly project core reviews.</li>
-<li><strong>Artifact Count:</strong> <strong>35–50 Standardized Forms</strong>.</li>
+<li><strong>Artifact Count:</strong> <strong>35–50 Standardized Deliverables</strong>.</li>
 <li><strong>Mandatory Artifact Set:</strong></li>
 <li><strong>Initiation:</strong> <code>PMO-00.06</code>, <code>PMO-01.01</code>, <code>PMO-01.02</code>, <code>PMO-03.01</code>, <code>PMO-03.04</code>, <code>PMO-03.05</code>, <code>PMO-03.03</code>.</li>
-<li><strong>Planning:</strong> Complete Project Management Plan (<code>PMO-04.01.01</code>), Scope Statement &amp; WBS (<code>PMO-04.02.05</code>/<code>06</code>), Master Schedule Baseline (<code>PMO-04.03.07</code>), Cost Baseline &amp; Reserves (<code>PMO-04.04.04</code>), Quality Plan (<code>PMO-04.05.01</code>), RACI Matrix (<code>PMO-04.06.04</code>), Communications Plan (<code>PMO-04.07.01</code>), Risk Register &amp; Quantitative Modeling (<code>PMO-04.08.02</code>/<code>04</code>/<code>07</code>), Procurement Strategy &amp; SOW (<code>PMO-04.09.02</code>/<code>04</code>), Stakeholder Engagement Plan (<code>PMO-04.10.01</code>), OCM Plan (<code>PMO-04.11.01</code>), ESG Plan (<code>PMO-04.12.01</code>).</li>
+<li><strong>Planning:</strong> Complete Project Management Plan (<code>PMO-04.01.01</code>), Scope Statement &amp; WBS (<code>PMO-04.02.05</code>/<code>06</code>), Master Schedule Baseline (<code>PMO-04.03.08</code>), Cost Baseline &amp; Reserves (<code>PMO-04.04.04</code>), Quality Plan (<code>PMO-04.05.01</code>), RACI Matrix (<code>PMO-04.06.04</code>), Communications Plan (<code>PMO-04.07.01</code>), Risk Register &amp; Quantitative Modeling (<code>PMO-04.08.02</code>/<code>04</code>/<code>07</code>), Procurement Strategy &amp; SOW (<code>PMO-04.09.02</code>/<code>04</code>), Stakeholder Engagement Plan (<code>PMO-04.10.01</code>), OCM Plan (<code>PMO-04.11.01</code>), ESG Plan (<code>PMO-04.12.01</code>).</li>
 <li><strong>Execution &amp; Control:</strong> Status Reports (<code>PMO-06.01</code>), Earned Value Analysis (<code>PMO-06.05</code>), Issue Log (<code>PMO-05.01</code>), Decision Log (<code>PMO-05.02</code>), Change Control Log (<code>PMO-05.04</code>), Quality &amp; Procurement Audits (<code>PMO-05.05</code>/<code>PMO-06.07</code>), Vendor Scorecards (<code>PMO-06.09</code>).</li>
 <li><strong>Closing:</strong> Deliverable Acceptance (<code>PMO-06.08</code>), UAT Sign-off (<code>PMO-06.10</code>), Handover Checklist (<code>PMO-07.04</code>), Contract Closeouts (<code>PMO-07.02</code>), Project Closure Report (<code>PMO-07.03</code>), Lessons Learned Summary (<code>PMO-07.01</code>), Post-Implementation Review (<code>PMO-07.05</code>), Benefits Plan (<code>PMO-01.03</code>).</li>
 </ul>
@@ -133,10 +134,10 @@ created_at: '2026-10-06T16:05:28.491597+00:00'</p>
 <li><strong>Duration:</strong> $3 - 12\text{ months}$.</li>
 <li><strong>Complexity:</strong> Standard organizational changes, internal systems development, moderate risk profile.</li>
 <li><strong>Governance Cadence:</strong> Bi-weekly Sponsor checkpoints, monthly PMO health checks.</li>
-<li><strong>Artifact Count:</strong> <strong>18–25 Standardized Forms</strong>.</li>
+<li><strong>Artifact Count:</strong> <strong>18–25 Standardized Deliverables</strong>.</li>
 <li><strong>Mandatory Artifact Set:</strong></li>
 <li><strong>Initiation:</strong> <code>PMO-01.01</code>, <code>PMO-03.01</code>, <code>PMO-03.04</code>, <code>PMO-03.03</code>, <code>PMO-02.01</code>.</li>
-<li><strong>Planning:</strong> Project Management Plan (<code>PMO-04.01.01</code>), Scope Baseline / WBS (<code>PMO-04.02.06</code>), Schedule Baseline (<code>PMO-04.03.07</code>), Cost Baseline (<code>PMO-04.04.04</code>), RACI Matrix (<code>PMO-04.06.04</code>), Risk Register (<code>PMO-04.08.02</code>), Communications Matrix (<code>PMO-04.07.01</code>).</li>
+<li><strong>Planning:</strong> Project Management Plan (<code>PMO-04.01.01</code>), Scope Baseline / WBS (<code>PMO-04.02.06</code>), Schedule Baseline (<code>PMO-04.03.08</code>), Cost Baseline (<code>PMO-04.04.04</code>), RACI Matrix (<code>PMO-04.06.04</code>), Risk Register (<code>PMO-04.08.02</code>), Communications Matrix (<code>PMO-04.07.01</code>).</li>
 <li><strong>Execution &amp; Control:</strong> Project Status Report (<code>PMO-06.01</code>), Issue Log (<code>PMO-05.01</code>), Decision Log (<code>PMO-05.02</code>), Change Log &amp; Requests (<code>PMO-05.04</code>/<code>03</code>), Variance Analysis (<code>PMO-06.04</code>).</li>
 <li><strong>Closing:</strong> UAT Sign-off (<code>PMO-06.10</code>), Deliverable Acceptance (<code>PMO-06.08</code>), Handover Checklist (<code>PMO-07.04</code>), Project Closure Report (<code>PMO-07.03</code>), Lessons Learned (<code>PMO-07.01</code>).</li>
 </ul>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚖️ دليل القيادات التنفيذية: مستويات تخصيص وتصنيف المشاريع (Sizing & Tailoring) | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/en/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../LEXICON.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/managerial_tailoring_and_sizing.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل التنفيذي باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/managerial_tailoring_and_sizing.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/managerial_tailoring_and_sizing.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<h1 id="sizing-tailoring">⚖️ دليل القيادات التنفيذية: مستويات تخصيص وتصنيف المشاريع (Sizing &amp; Tailoring)</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>TASLEEMAT-EXEC-TAILORING-SIZING-AR</code><br />
+<strong>الفئات المستهدفة:</strong> رعاة المشاريع، مدراء مكاتب إدارة المشاريع (PMO)، مدراء المحافظ الاستثمارية، وقادة التحول المؤسسي<br />
+<strong>المعايير المرجعية:</strong> معهد إدارة المشاريع العالمي PMI PMBOK® الإصدارات 6 و 7 و 8، ومعايير أيزو ISO 21500  </p>
+<hr />
+<div class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-md"><div class="font-bold text-sm text-blue-900 mb-1">ℹ️ Note</div><div class="text-sm text-blue-900">> **إقرار نموذج الحوكمة المؤسسي المقترح**</div></div>
+<blockquote>
+<p>تعد الحدود المالية وحزم النماذج الموضحة في هذا الدليل معايير استرشادية قياسية تتطلب مراجعة واعتماد القيادات التنفيذية بكل منشأة بما يتناسب مع درجة تقبل المخاطر واللوائح المالية المعتمدة.</p>
+</blockquote>
+<hr />
+<h2 id="_1">🎯 الهدف الاستراتيجي: القضاء على الهدر والبيروقراطية الحوكمية</h2>
+<p>أحد أكثر أسباب الفشل شيوعاً في المنظمات هو تطبيق <strong>سياسة الحوكمة الموحدة على الجميع (One-Size-Fits-All)</strong>:
+- إجبار مشروع برمجي داخلي سريع على إعداد 50 وثيقة ونموذجاً يؤدي لشلل الفريق وتأخر الإنجاز في أعباء شكلية.
+- السماح لمشروع بنية تحتية بقيمة 50 مليون ريال بالعمل بأدنى حدود التوثيق يُعرّض المنشأة لمخاطر تعاقدية ومالية جسيمة.</p>
+<p>تُعالج <strong>منظومة التخصيص والتصنيف في تسليمات</strong> هذه المعضلة عبر الفصل التام بين مسارين مستقلين:
+1. <strong>فئات الحوكمة المؤسسية (Governance Sizing Tiers)</strong>: تحدد <strong>كمية وعمق</strong> التسليمات الإلزامية المطلوبة (3 فئات رئيسية).
+2. <strong>باقات المنهجيات التشغيلية (Methodology Packs)</strong>: تحدد <strong>نوعية النماذج المتخصصة</strong> الواجب تفعيلها وفق طبيعة العمل (5 باقات).</p>
+<hr />
+<h2 id="tiers">🏛️ فئات الحوكمة الثلاث لحجم المشاريع (Tiers)</h2>
+<p>تُصنّف تسليمات كافة المبادرات المؤسسية إلى ثلاث فئات واضحة بناءً على الميزانية، والمدة، والمخاطر، وتعقيد أصحاب المصلحة:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">المعيار الحوكمي</th>
+<th style="text-align: left;">الفئة 1: المشاريع الضخمة والاستراتيجية (Mega)</th>
+<th style="text-align: left;">الفئة 2: المشاريع القياسية المؤسسية (Standard)</th>
+<th style="text-align: left;">الفئة 3: المشاريع الرشيقة والسريعة (Lean)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>سقف الميزانية (ريال سعودي)</strong></td>
+<td style="text-align: left;"><strong>أكثر من 40,000,000 ريال</strong></td>
+<td style="text-align: left;"><strong>من 4,000,000 إلى 40,000,000 ريال</strong></td>
+<td style="text-align: left;"><strong>أقل من 4,000,000 ريال</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>سقف الميزانية (دولار أمريكي)</strong></td>
+<td style="text-align: left;"><strong>أكثر من \$10,000,000</strong></td>
+<td style="text-align: left;"><strong>من \$1,000,000 إلى \$10,000,000</strong></td>
+<td style="text-align: left;"><strong>أقل من \$1,000,000</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>المدى الزمني</strong></td>
+<td style="text-align: left;">أكثر من 12 شهراً (متعدد السنوات)</td>
+<td style="text-align: left;">من 3 إلى 12 شهراً</td>
+<td style="text-align: left;">أقل من 3 أشهر</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>مستوى التعقيد التشغيلي</strong></td>
+<td style="text-align: left;">تعدد المقاولين، متطلبات رقابية عالية، مساس بالأنظمة الجوهرية</td>
+<td style="text-align: left;">فرق عمل مشتركة، مورد خارجي رئيسي، رقابة عادية</td>
+<td style="text-align: left;">فريق عمل داخلي، اعتمادية منخفضة، مخاطر محدودة</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>عدد النماذج الإلزامية</strong></td>
+<td style="text-align: left;"><strong>35 إلى 50 مخرجاً معتمداً</strong></td>
+<td style="text-align: left;"><strong>18 إلى 25 مخرجاً معتمداً</strong></td>
+<td style="text-align: left;"><strong>7 إلى 9 مخرجات أساسية</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>دورية المراجعة والتقارير</strong></td>
+<td style="text-align: left;">تقرير ومضي كل أسبوعين؛ اجتماع رسمي شهري للجنة التوجيه</td>
+<td style="text-align: left;">تقرير شهري رسمي لمكتب إدارة المشاريع PMO</td>
+<td style="text-align: left;">اجتماع أسبوعي سريع لمراجعة المحطات الرئيسية</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>صلاحية الاعتماد النهائي</strong></td>
+<td style="text-align: left;">لجنة التوجيه العليا، المدير المالي، مدير PMO</td>
+<td style="text-align: left;">راعي المشروع التنفيذي ومسؤول الرقابة في PMO</td>
+<td style="text-align: left;">راعي المشروع ومدير المشروع المباشر</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="packs">📦 باقات المنهجيات الخمس المتخصصة (Packs)</h2>
+<p>بينما تحدد الفئة (Tier) عمق التوثيق، تحدد باقة المنهجية طريقة التنفيذ. وتختار المنشأة باقة واحدة رئيسية لكل مشروع:</p>
+<pre><code class="language-mermaid">flowchart TD
+    INIT[&quot;تأسيس المبادرة وتحديد الفئة&quot;] --&gt; PACK{&quot;اختيار باقة المنهجية المتخصصة&quot;}
+    PACK --&gt; P1[&quot;&lt;b&gt;الباقة العامة / PMBOK&lt;/b&gt;&lt;br/&gt;المشاريع الإدارية والتطويرية القياسية&quot;]
+    PACK --&gt; P2[&quot;&lt;b&gt;باقة أجايل / Scrum&lt;/b&gt;&lt;br/&gt;الدورات المتكررة وسبرنتات البرمجيات&quot;]
+    PACK --&gt; P3[&quot;&lt;b&gt;باقة الذكاء الاصطناعي AI&lt;/b&gt;&lt;br/&gt;بطاقات النماذج ومراجعات الأخلاقيات&quot;]
+    PACK --&gt; P4[&quot;&lt;b&gt;باقة الشلال / التنبؤية&lt;/b&gt;&lt;br/&gt;المشاريع الهندسية والإنشائية الخطية&quot;]
+    PACK --&gt; P5[&quot;&lt;b&gt;الباقة الهجينة Hybrid&lt;/b&gt;&lt;br/&gt;حوكمة مالية كلاسيكية + تنفيذ أجايل&quot;]
+</code></pre>
+<h3 id="1-general">1. الباقة العامة (<code>general</code>)</h3>
+<ul>
+<li><strong>الاستخدام:</strong> مشاريع التحول الإداري، تطوير العمليات، والتحسين المؤسسي القياسي.</li>
+<li><strong>التسليمات المحورية:</strong> الميثاق، نطاق العمل، الجدول الزمني، الميزانية، سجل المخاطر، تقارير الحالة، ومحضر التسليم.</li>
+</ul>
+<h3 id="2-agile">2. باقة أجايل وسكرام (<code>agile</code>)</h3>
+<ul>
+<li><strong>الاستخدام:</strong> تطوير المنتجات الرقمية والتطبيقات سريعة التغير.</li>
+<li><strong>التسليمات المتخصصة:</strong> لوحة رؤية المنتج، سجل مهام السبرنت، مقاييس التدفق وسلسلة القيمة (<code>PMO-06.12</code>)، سجل مراجعات الدروس (Retrospectives)، وقوائم التحقق من الجاهزية (DoD).</li>
+</ul>
+<h3 id="3-ai">3. باقة حوكمة وهندسة الذكاء الاصطناعي (<code>ai</code>)</h3>
+<ul>
+<li><strong>الاستخدام:</strong> مشاريع التعلم الآلي، النماذج اللغوية الكبيرة، ومبادرات علم البيانات المتقدمة.</li>
+<li><strong>التسليمات المتخصصة:</strong> تقييم الجاهزية (<code>PMO-02.03</code>)، لوحة حالات الاستخدام (<code>PMO-02.04</code>)، بطاقة النموذج وحقائقه (<code>PMO-02.05</code>)، تقييم الخصوصية والأخلاقيات (<code>PMO-02.06</code>)، وسجل مكتبة الأوامر (<code>PMO-05.09</code>).</li>
+</ul>
+<h3 id="4-predictive">4. باقة الشلال والمنهجية التنبؤية (<code>predictive</code>)</h3>
+<ul>
+<li><strong>الاستخدام:</strong> الإنشاءات، البنية التحتية، وشبكات الاتصالات الخاضعة لعقود توريد هندسية صارمة.</li>
+<li><strong>التسليمات المتخصصة:</strong> قاموس تفصيلي لهيكل تجزئة العمل، خط الأساس للمسار الحرج (CPM)، ومحاضر القبول الفني المتدرجة.</li>
+</ul>
+<h3 id="5-hybrid">5. الباقة الهجينة (<code>hybrid</code>)</h3>
+<ul>
+<li><strong>الاستخدام:</strong> المعيار المؤسسي السائد—حوكمة ورقابة مالية تنبؤية على مستوى المحفظة، مع تنفيذ مرن ورشيق لفرق العمل.</li>
+<li><strong>التسليمات المتخصصة:</strong> تجمع بين مؤشرات تحليل القيمة المكتسبة (EVA) وسجلات السبرنتات وقوائم تسليم المخرجات السريعة.</li>
+</ul>
+<hr />
+<h2 id="_2">🧮 خطوات اتخاذ قرار التخصيص للمشاريع</h2>
+<p>عند اعتماد بوابة العبور 1، تتبع القيادة التنفيذية الخطوات الأربع التالية:</p>
+<ol>
+<li><strong>فحص الالتزام المالي:</strong></li>
+<li>إذا تجاوزت الميزانية 40 مليون ريال (\$10M) $\leftarrow$ <strong>تصنيف إلزامي كفئة 1 (Mega)</strong>.</li>
+<li>إذا قلت الميزانية عن 4 ملايين ريال والمدة أقل من 90 يوماً $\leftarrow$ <strong>تأهيل فوري للفئة 3 (Lean)</strong>.</li>
+<li>كافة المشاريع الأخرى تُدرج تلقائياً ضمن <strong>الفئة 2 (Standard)</strong>.</li>
+<li><strong>تقييم الرقابة التنظيمية الخارجية:</strong></li>
+<li>المبادرات الخاضعة لجهات رقابية خارجية (مثل هيئة الحكومة الرقمية DGA أو البنك المركزي SAMA) تُرفع تلقائياً فئة واحدة للأعلى.</li>
+<li><strong>تحديد أسلوب التنفيذ:</strong></li>
+<li>اختيار باقة المنهجية المتوافقة مع أسلوب عمل الفريق.</li>
+<li><strong>تثبيت التخصيص رسمياً:</strong></li>
+<li>توثيق الفئة والباقة وأسباب استبعاد أي نموذج اختياري ضمن <strong>خطة المواءمة والتخصيص (<code>PMO-02.01</code>)</strong> قبل التوقيع الرسمي على ميثاق المشروع.</li>
+</ol>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../LEXICON.html">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

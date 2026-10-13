@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖 الدليل الهندسي: توليد وتأصيل وثائق PMO بالنماذج اللغوية (LLM Synthesis) | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/en/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../LEXICON.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/tech_llm_synthesis_and_prompting.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل التقني باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/tech_llm_synthesis_and_prompting.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/tech_llm_synthesis_and_prompting.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<h1 id="pmo-llm-synthesis">🤖 الدليل الهندسي: توليد وتأصيل وثائق PMO بالنماذج اللغوية (LLM Synthesis)</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>TASLEEMAT-TECH-LLM-SYNTHESIS-AR</code><br />
+<strong>الفئات المستهدفة:</strong> مهندسو الذكاء الاصطناعي، معماريو الحلول، مهندسو الأوامر (Prompt Engineers)، ومطورو البرمجيات<br />
+<strong>التقنيات الأساسية:</strong> حزمة بايثون (<code>tasleemat.ai</code>)، نماذج OpenAI GPT-4o، Anthropic Claude 3.5، Google Gemini 2.5، ونماذج Ollama المحلية  </p>
+<hr />
+<h2 id="_1">🎯 المعمارية الهندسية للتوليد والتأصيل المعرفي</h2>
+<p>يتطلب توليد مخرجات ووثائق إدارة المشاريع المؤسسية بالنماذج اللغوية الكبيرة معمارية أكثر انضباطاً من مجرد المحادثات التوليدية الساذجة. فالأوامر المباشرة غير المؤصلة تؤدي في الغالب إلى:
+1. <strong>هلوسة هيكلية</strong>: تباين العناوين، غياب جداول ضبط المستندات، وفبركة رموز الاعتماد.
+2. <strong>عدم مطابقة المخططات البرمجية</strong>: تنسيق التواريخ بشكل خاطئ، غياب الحقول الإلزامية، أو قلب حسابات مصفوفة المخاطر.
+3. <strong>لغة إنشائية غير مهنية</strong>: أسلوب محادثة فضفاض لا يليق بالعرض على لجان التوجيه والرعاة التنفيذيين.</p>
+<p>تحل <strong>منظومة التوليد والتأصيل في تسليمات</strong> هذه المشاكل عبر <strong>معمارية التأصيل ثلاثية الطبقات (Three-Tier Grounding)</strong>:
+- <strong>الطبقة 1: الهيكل المنضبط</strong>: الاستناد إلى قوالب وموجهات مهندسة مسبقاً (<code>forms/ar/.../*.md</code>).
+- <strong>الطبقة 2: أمثلة السياق الواقعية</strong>: التغذية بأمثلة من الـ 228 نموذجاً تطبيقياً المعتمدة في <code>examples/ar/</code>.
+- <strong>الطبقة 3: الفحص الهيكلي البرمجي</strong>: التحقق الآلي الصارم مقابل مخططات JSON Schemas عبر دالة <code>tasleemat.validate_artifact_data</code>.</p>
+<pre><code class="language-mermaid">flowchart TD
+    NOTES[&quot;المدخلات: ملاحظات الاجتماع / نصوص الورش&quot;] --&gt; PROMPT_ENG[&quot;مجمّع الأوامر المؤصلة&quot;]
+    TEMPLATE[&quot;قالب النموذج ومحددات الحقول&quot;] --&gt; PROMPT_ENG
+    EXEMPLAR[&quot;أمثلة واقعية معتمدة (examples/ar/*.md)&quot;] --&gt; PROMPT_ENG
+    PROMPT_ENG --&gt; LLM[&quot;محرك النموذج اللغوي (Gemini / OpenAI / Claude)&quot;]
+    LLM --&gt; RAW_MD[&quot;مسودة المخرج بصيغة ماركداون&quot;]
+    RAW_MD --&gt; EXTRACT[&quot;استخراج كائن JSON الهيكلي&quot;]
+    EXTRACT --&gt; VALIDATE{&quot;tasleemat.validate_artifact_data()&quot;}
+    VALIDATE --&gt;|مطابق| FINAL[&quot;المخرج النهائي المعتمد الجاهز للنشر&quot;]
+    VALIDATE --&gt;|أخطاء| FIX[&quot;حلقة التصحيح الذاتي التلقائي&quot;]
+    FIX --&gt; LLM
+</code></pre>
+<hr />
+<h2 id="1-tasleemataiaiclient">🚀 1. عميل الذكاء الاصطناعي الموحد في بايثون (<code>tasleemat.ai.AIClient</code>)</h2>
+<p>تتضمن تسليمات عميلاً برمجياً متعدداً للمزودين صُمم خصيصاً لتوليد مخرجات إدارة المشاريع، ويقرأ مفاتيح الربط تلقائياً من الإعدادات <code>~/.tasleemat/config.json</code> أو متغيرات البيئة القياسية (<code>GEMINI_API_KEY</code>, <code>OPENAI_API_KEY</code>, <code>ANTHROPIC_API_KEY</code>).</p>
+<h3 id="_2">المزودون والنماذج المدعومة</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">رمز المزود</th>
+<th style="text-align: left;">النموذج الافتراضي</th>
+<th style="text-align: center;">دعم العناوين المخصصة</th>
+<th style="text-align: left;">متغير البيئة المستدعى</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>gemini</code></td>
+<td style="text-align: left;"><code>gemini-2.5-flash</code></td>
+<td style="text-align: center;">لا</td>
+<td style="text-align: left;"><code>GEMINI_API_KEY</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>openai</code></td>
+<td style="text-align: left;"><code>gpt-4o</code></td>
+<td style="text-align: center;">نعم (<code>api_base</code>)</td>
+<td style="text-align: left;"><code>OPENAI_API_KEY</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>anthropic</code></td>
+<td style="text-align: left;"><code>claude-3-5-sonnet</code></td>
+<td style="text-align: center;">لا</td>
+<td style="text-align: left;"><code>ANTHROPIC_API_KEY</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ollama</code></td>
+<td style="text-align: left;"><code>llama3.3:latest</code></td>
+<td style="text-align: center;">نعم (<code>http://localhost:11434</code>)</td>
+<td style="text-align: left;">بدون (تشغيل محلي بالكامل)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>mock</code></td>
+<td style="text-align: left;"><code>offline-deterministic</code></td>
+<td style="text-align: center;">محلي</td>
+<td style="text-align: left;">بدون (للاختبارات وخطوط CI/CD)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">نموذج تطبيقي متكامل في بايثون</h3>
+<pre><code class="language-python">import os
+import tasleemat
+from tasleemat.ai import AIClient
+
+# 1. تهيئة العميل البرمجي مع دعم التبديل التلقائي
+ai_client = AIClient(provider=&quot;gemini&quot;, model=&quot;gemini-2.5-flash&quot;)
+
+# 2. استرجاع القالب والموجه المعتمد لميثاق المشروع (PMO-03.01) بالعربية
+charter_def = tasleemat.get_artifact_definition(&quot;PMO-03.01&quot;)
+charter_prompt_template = tasleemat.get_artifact_asset(&quot;PMO-03.01&quot;, role=&quot;prompt&quot;, lang=&quot;ar&quot;)
+
+# 3. تجميع الموجه البرمجي المؤصل
+user_meeting_notes = &quot;&quot;&quot;
+المشروع: منصة الحوكمة الرقمية الموحدة
+الراعي التنفيذي: سعادة وكيل الوزارة للتحول الرقمي
+الميزانية التقديرية: 8,500,000 ريال سعودي
+المدة الزمنية: 10 أشهر، الانطلاق في 2026-11-01.
+الهدف الرئيسي: أتمتة إجراءات التراخيص وربط 8 جهات حكومية عبر بنية تكامل سحابية آمنة.
+أبرز المخاطر: تباين جاهزية واجهات الربط البرمجي (APIs) لدى بعض الجهات الشريكة.
+&quot;&quot;&quot;
+
+system_instruction = (
+    &quot;أنت خبير ومدير أول لمكتب إدارة المشاريع (PMO Director). قم بتوليد ميثاق مشروع رسمي واحترافي &quot;
+    &quot;مطابق تماماً للقالب المرفق أدناه. تجنب تماماً المقدمات الحوارية أو العبارات الختامية الخارجة عن صلب الوثيقة.&quot;
+)
+
+full_prompt = f&quot;&quot;&quot;
+{charter_prompt_template}
+
+### ملاحظات الاجتماع ومعطيات المشروع:
+{user_meeting_notes}
+&quot;&quot;&quot;
+
+# 4. توليد الوثيقة الرسمية
+generated_charter = ai_client.generate(
+    prompt=full_prompt,
+    system_instruction=system_instruction
+)
+
+print(f&quot;تم توليد ميثاق المشروع بنجاح ({len(generated_charter)} حرف)&quot;)
+</code></pre>
+<hr />
+<h2 id="2-tasleemat-generate">🛠️ 2. التوليد عبر سطر الأوامر (<code>tasleemat generate</code>)</h2>
+<p>لأتمتة العمليات عبر سكربتات Bash الطرفية:</p>
+<pre><code class="language-bash"># توليد ميثاق المشروع من ملف ملاحظات نصي
+tasleemat generate \
+  --form PMO-03.01 \
+  --notes ./transcripts/meeting_notes_ar.txt \
+  --lang ar \
+  --out ./my_project/03_01_ميثاق_المشروع.md
+
+# توليد سجل المخاطر بالعربية باستخدام نموذج OpenAI
+tasleemat generate \
+  --form PMO-04.08.02 \
+  --notes ./risk_workshop_notes.txt \
+  --lang ar \
+  --provider openai \
+  --model gpt-4o \
+  --out ./my_project/04_08_02_سجل_المخاطر.md
+
+# تشغيل وهمي بدون استهلاك رصيد (مفيد لخطوط أنابيب CI/CD)
+tasleemat generate \
+  --form PMO-03.01 \
+  --notes &quot;بيانات اختبار الفحص&quot; \
+  --mock \
+  --out /tmp/mock_charter.md
+</code></pre>
+<hr />
+<h2 id="3">🔒 3. هندسة الأوامر الدفاعية: منع الهلوسة وفبركة الأرقام</h2>
+<p>عند توجيه النماذج لكتابة وثائق PMO، يُنصح بتطبيق ثلاثة ضوابط دفاعية محكمة:</p>
+<h3 id="1">الضابط 1: توجيه <code>[ يتطلب إدخالاً بشرياً ]</code></h3>
+<p>تضمين الشرط الصارم التالي في التعليمات التأسيسية:</p>
+<blockquote>
+<p><em>"في حال غياب أي معلومة رقمية أو تاريخ دقيق أو اسم مورد في الملاحظات المدخلة، يجب كتابة <code>[ يتطلب إدخالاً بشرياً: &lt;وصف الحقل&gt; ]</code> بدلاً من اختلاق أو تخمين أي بيانات مالية أو تعاقدية."</em></p>
+</blockquote>
+<h3 id="2-document-control">الضابط 2: إلزامية جدول ضبط المستند (Document Control)</h3>
+<p>إلزام النموذج بملء جدول البيانات الوصفية في بداية الوثيقة:</p>
+<pre><code class="language-markdown">| خاصية الوثيقة | القيمة المؤسسية |
+| :--- | :--- |
+| **رمز المشروع** | PRJ-2026-DIGITAL-01 |
+| **معرف الوثيقة** | PMO-03.01-CHARTER-AR |
+| **معد الوثيقة** | مساعد تسليمات الذكي (بإشراف مدير المشروع) |
+| **الإصدار** | 1.0 (مسودة معتمدة) |
+| **درجة السرية** | سري داخلي |
+</code></pre>
+<h3 id="3_1">الضابط 3: كتلة البصمة الرقمية للتدقيق</h3>
+<p>تتضمن قوالب تسليمات وسماً مخصصاً لبصمة التجزئة الرقمية:</p>
+<pre><code class="language-markdown">&lt;!-- AUDIT_BLOCK_START --&gt;
+**البصمة الرقمية المشفرة للتدقيق:** `{{Audit_Trail_SHA256_Hash}}`
+&lt;!-- AUDIT_BLOCK_END --&gt;
+</code></pre>
+<p>تقوم خطوط الأنابيب البرمجية باستبدال هذا الوسم ببصمة SHA-256 الرقمية للمستند قبل تقديمه لبوابة العبور، مما يضمن كشف أي تعديل لاحق غير مصرح به.</p>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../LEXICON.html">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

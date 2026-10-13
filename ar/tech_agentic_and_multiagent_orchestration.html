@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖 الدليل الهندسي: وكلاء الذكاء الاصطناعي والأنظمة متعددة الوكلاء (Agentic PMO) | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/en/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../LEXICON.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../ar/tech_agentic_and_multiagent_orchestration.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل التقني باللغة العربية</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/tech_agentic_and_multiagent_orchestration.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
+    <a class="lang-switch-btn" href="../en/tech_agentic_and_multiagent_orchestration.html">🇬🇧 Switch to English Version (النسخة الإنجليزية) ←</a>
+  </div>
+</div>
+
+<hr />
+<h1 id="agentic-pmo">🤖 الدليل الهندسي: وكلاء الذكاء الاصطناعي والأنظمة متعددة الوكلاء (Agentic PMO)</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>TASLEEMAT-TECH-AGENTIC-MULTIAGENT-AR</code><br />
+<strong>الفئات المستهدفة:</strong> مطورو الوكلاء المستقلين (AI Agents)، معماريو الأنظمة متعددة الوكلاء، ومهندسو أتمتة PMO<br />
+<strong>أطر العمل المدعومة:</strong> بروتوكول سياق النموذج (MCP)، CrewAI، LangGraph، AutoGen، و OpenAI Swarm  </p>
+<hr />
+<h2 id="_1">🎯 المعمارية التشغيلية للوكلاء الأذكياء في إدارة المشاريع</h2>
+<p>في بيئات الأعمال الحديثة، أصبحت عمليات توثيق ومراجعة وحوكمة المشاريع تُدار بشكل متزايد عبر <strong>الوكلاء المستقلين (Autonomous Single-Agent) والأنظمة متعددة الوكلاء (Multi-Agent Swarms)</strong>. فبدلاً من النقل اليدوي للبيانات عبر عشرات الملفات، يقوم الوكلاء الأذكياء بالآتي:
+1. استكشاف النماذج الإلزامية للمشروع برمجياً وفق حجمه ومنهجيته.
+2. استيعاب محاضر الاجتماعات والقرارات التقنية.
+3. تتبع وتتبع مخطط الاعتماديات المتجه غير الدائري (DAG) بين النماذج.
+4. توليد وفحص وتصحيح الوثائق ذاتياً قبل تقديمها للمراجعة والاعتماد البشري.</p>
+<p>يقدم هذا الدليل المخططات المعمارية والنماذج البرمجية لتشغيل تسليمات عبر <strong>خادم MCP</strong> و<strong>أسراب الوكلاء المتعددة</strong>.</p>
+<pre><code class="language-mermaid">flowchart TD
+    USER[&quot;طلب راعي المشروع / المدير&quot;] --&gt; ORCH[&quot;&lt;b&gt;الوكيل المنسق (مدير PMO)&lt;/b&gt;&lt;br/&gt;يحدد الفئة والباقة عبر get_tailoring_profile()&quot;]
+
+    subgraph Swarm[&quot;سرب الوكلاء المتخصصين&quot;]
+        ORCH --&gt;|تكليف بالميثاق والنطاق| BA[&quot;&lt;b&gt;وكيل تحليل الأعمال&lt;/b&gt;&lt;br/&gt;يعد PMO-01.01 و 03.01 و 04.02.05&quot;]
+        ORCH --&gt;|تكليف بالجدول وهيكل WBS| SCHED[&quot;&lt;b&gt;وكيل الجدولة الزمنية&lt;/b&gt;&lt;br/&gt;يعد PMO-04.02.06 و 04.03.08&quot;]
+        ORCH --&gt;|تكليف بسجل المخاطر| RISK[&quot;&lt;b&gt;وكيل إدارة المخاطر&lt;/b&gt;&lt;br/&gt;يعد PMO-04.08.02&quot;]
+    end
+
+    BA --&gt; GATEKEEPER[&quot;&lt;b&gt;وكيل التدقيق الحوكمي QA&lt;/b&gt;&lt;br/&gt;يفحص عبر tasleemat.validate_artifact_data(strict=True)&quot;]
+    SCHED --&gt; GATEKEEPER
+    RISK --&gt; GATEKEEPER
+
+    GATEKEEPER --&gt;|وجود أخطاء مخطط| RETRY[&quot;حلقة التصحيح الذاتي التلقائي&quot;]
+    RETRY --&gt; Swarm
+
+    GATEKEEPER --&gt;|مطابقة 100%| HUMAN[&quot;&lt;b&gt;الاعتماد البشري لبوابة العبور&lt;/b&gt;&lt;br/&gt;معاينة HTML عبر tasleemat.render_artifact()&quot;]
+</code></pre>
+<hr />
+<h2 id="1-mcp">🔌 1. تكامل الوكيل الفردي عبر بروتوكول سياق النموذج (MCP)</h2>
+<p>لبيئات البرمجة الذكية والمساعدات المستقلة (مثل <strong>Claude Desktop</strong> و <strong>Cursor</strong> و <strong>OpenCode</strong> و <strong>Antigravity</strong>)، توفر تسليمات خادماً رسمياً متوافقاً مع بروتوكول Model Context Protocol.</p>
+<h3 id="stdio-configuration">ضبط إعدادات العميل (Stdio Configuration)</h3>
+<p>أضف الخادم إلى ملف إعدادات عميلك الذكي:</p>
+<pre><code class="language-json">{
+  &quot;mcpServers&quot;: {
+    &quot;tasleemat&quot;: {
+      &quot;command&quot;: &quot;tasleemat&quot;,
+      &quot;args&quot;: [&quot;mcp&quot;]
+    }
+  }
+}
+</code></pre>
+<h3 id="_2">الأدوات الست الأساسية المتاحة للوكلاء</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">اسم الأداة في MCP</th>
+<th style="text-align: left;">المعاملات المدخلة</th>
+<th style="text-align: left;">وظيفة الأداة البرمجية</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>tasleemat_list_artifacts</code></td>
+<td style="text-align: left;"><code>category?: string</code>, <code>tier?: string</code></td>
+<td style="text-align: left;">استكشاف المخرجات المتاحة عبر مراحل دورة حياة المشروع الثماني.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tasleemat_get_artifact</code></td>
+<td style="text-align: left;"><code>artifact_id: string</code></td>
+<td style="text-align: left;">استرجاع البيانات الوصفية وبصمة التجزئة والمخطط الهيكلي.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tasleemat_get_asset</code></td>
+<td style="text-align: left;"><code>artifact_id: string</code>, <code>role: string</code>, <code>lang?: string</code></td>
+<td style="text-align: left;">جلب القالب الأصلي، أو الموجه، أو الدليل، أو المثال باللغة المطلوبة.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tasleemat_get_lexicon</code></td>
+<td style="text-align: left;"><code>category?: string</code>, <code>query?: string</code></td>
+<td style="text-align: left;">استرجاع المصطلحات المعتمدة بالعربية والإنجليزية لمنع الانحراف الدلالي.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tasleemat_validate_data</code></td>
+<td style="text-align: left;"><code>artifact_id: string</code>, <code>data: object</code>, <code>mode?: "strict" \| "draft"</code></td>
+<td style="text-align: left;">فحص صحة البيانات الهيكلية مقابل مخطط Draft 2020-12 المعتمد.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tasleemat_render_artifact</code></td>
+<td style="text-align: left;"><code>artifact_id: string</code>, <code>data?: object</code>, <code>lang?: string</code></td>
+<td style="text-align: left;">تصيير الوثيقة المعتمدة إلى صفحة HTML منسقة ومستقلة للعرض.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-crewai-langgraph-blueprint">👥 2. معمارية سرب الوكلاء المتعددين (CrewAI / LangGraph Blueprint)</h2>
+<p>عند تنظيم العمل عبر أطر عمل الوكلاء المتعددين، يُقسّم الفريق إلى أربعة أدوار متخصصة:</p>
+<h3 id="pmo">أ. الوكيل المنسق (مدير PMO الافتراضي)</h3>
+<ul>
+<li><strong>الدور:</strong> يحلل متطلبات المشروع، ويحدد الفئة والباقة عبر استدعاء <code>tasleemat.get_tailoring_profile(tier, pack)</code>، ويرتب تسلسل المهام وفق مخطط الاعتماديات في <code>docs/ar/07_document_dependencies.md</code>.</li>
+<li><strong>توجيه النظام (System Prompt):</strong><blockquote>
+<p><em>"أنت المنسق العام لمكتب إدارة المشاريع. تلتزم بالاعتماديات الهيكلية للمشروع. لا تسمح بتوليد مخرجات لاحقة قبل اجتياز المخرجات السابقة لفحص التحقق البرمجي بنجاح."</em></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="business-analyst-agent">ب. وكيل تحليل الأعمال (Business Analyst Agent)</h3>
+<ul>
+<li><strong>الدور:</strong> صياغة دراسة الجدوى (<code>PMO-01.01</code>)، ميثاق المشروع (<code>PMO-03.01</code>)، وبيان النطاق (<code>PMO-04.02.05</code>).</li>
+<li><strong>صلاحية الأدوات:</strong> <code>get_artifact_asset(role="prompt")</code>, <code>get_artifact_asset(role="schema")</code>.</li>
+</ul>
+<h3 id="risk-governance-agent">ج. وكيل المخاطر والحوكمة (Risk &amp; Governance Agent)</h3>
+<ul>
+<li><strong>الدور:</strong> بناء سجل المخاطر الشامل (<code>PMO-04.08.02</code>) وبطاقة نموذج الذكاء الاصطناعي (<code>PMO-02.05</code>) وضبط مصفوفات الاحتمالية والأثر.</li>
+<li><strong>صلاحية الأدوات:</strong> <code>get_artifact_asset(role="dictionary")</code>, <code>validate_artifact_data</code>.</li>
+</ul>
+<h3 id="qa-gatekeeper-agent">د. وكيل الرقابة والتدقيق الحوكمي (QA Gatekeeper Agent)</h3>
+<ul>
+<li><strong>الدور:</strong> الحارس البرمجي لبوابات العبور. يلتقط مسودات الوكلاء، ويفحص بياناتها مقابل مخططات Draft 2020-12، ويصدر إما قرار الاعتماد أو توجيهات التصحيح الهيكلية.</li>
+</ul>
+<hr />
+<h2 id="3-langgraph-python-node">🐍 3. نموذج برمجي لتنسيق الوكلاء عبر بايثون (LangGraph / Python Node)</h2>
+<pre><code class="language-python">import tasleemat
+from typing import Dict, Any
+
+class PMOGatekeeperNode:
+    &quot;&quot;&quot;عقدة التدقيق الحوكمي الآلي في خط أنابيب الوكلاء الأذكياء.&quot;&quot;&quot;
+
+    def __init__(self, artifact_id: str):
+        self.artifact_id = artifact_id
+
+    def evaluate_agent_output(self, generated_payload: Dict[str, Any]) -&gt; Dict[str, Any]:
+        # التحقق البرمجي الصارم مقابل مخطط Draft 2020-12
+        report = tasleemat.validate_artifact_data(
+            artifact_id=self.artifact_id,
+            data=generated_payload,
+            strict=True
+        )
+
+        if report[&quot;valid&quot;]:
+            # تصيير الوثيقة كصفحة HTML للمعاينة البشرية
+            html = tasleemat.render_artifact(
+                artifact_id=self.artifact_id,
+                data=generated_payload,
+                format=&quot;html&quot;,
+                lang=&quot;ar&quot;
+            )
+            return {
+                &quot;status&quot;: &quot;APPROVED&quot;,
+                &quot;html_preview&quot;: html,
+                &quot;remediation_instructions&quot;: None
+            }
+        else:
+            # إرجاع تفاصيل الأخطاء للوكيل لتصحيح نفسه ذاتياً
+            return {
+                &quot;status&quot;: &quot;REJECTED&quot;,
+                &quot;html_preview&quot;: None,
+                &quot;remediation_instructions&quot;: {
+                    &quot;errors&quot;: report[&quot;errors&quot;],
+                    &quot;guidance&quot;: &quot;يرجى تصحيح الحقول وفق أخطاء مخطط Draft 2020-12 المرفقة.&quot;
+                }
+            }
+
+# فحص تجريبي لمخرجات وكيل
+gatekeeper = PMOGatekeeperNode(&quot;PMO-03.01&quot;)
+agent_payload = {
+    &quot;project_name&quot;: &quot;منصة التحول الرقمي السحابي&quot;,
+    &quot;project_code&quot;: &quot;PRJ-2026-CLOUD-01&quot;,
+    &quot;start_date&quot;: &quot;2026-11-01&quot;,
+    &quot;sponsor&quot;: &quot;سعادة وكيل الوزارة&quot;
+}
+result = gatekeeper.evaluate_agent_output(agent_payload)
+print(f&quot;نتيجة التدقيق الحوكمي: {result['status']}&quot;)
+</code></pre>
+<hr />
+<h2 id="4-self-correction-loop">🔁 4. حلقة التصحيح الذاتي للوكلاء (Self-Correction Loop)</h2>
+<p>عندما ينتج وكيل التوليد بيانات لا تتطابق مع المخطط الهيكلي، يُحظر توقف النظام؛ بل يُفعّل نمط <strong>التصحيح الذاتي التلقائي</strong>:</p>
+<pre><code>الخطوة 1: يستدعي الوكيل أداة tasleemat_validate_data(artifact_id, payload, mode=&quot;draft&quot;)
+الخطوة 2: يعيد المدقق تقريراً بالأخطاء: {&quot;valid&quot;: false, &quot;errors&quot;: [{&quot;path&quot;: &quot;/start_date&quot;, &quot;message&quot;: &quot;Expected format: date&quot;}]}
+الخطوة 3: يلتقط الوكيل الخطأ ويوجه نفسه:
+         &quot;الحقل '/start_date' يخالف صيغة RFC 3339. حوّل التاريخ إلى الصيغة المعيارية YYYY-MM-DD.&quot;
+الخطوة 4: يحدّث الوكيل الكائن ويعيد الفحص بالوضع الصارم (strict=True).
+الخطوة 5: عند الحصول على {&quot;valid&quot;: true} فقط، يقوم الوكيل بكتابة المخرج النهائي في مساحة عمل المشروع.
+</code></pre>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../LEXICON.html">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

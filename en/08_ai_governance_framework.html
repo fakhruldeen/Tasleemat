@@ -195,6 +195,11 @@ created_at: '2026-10-06T16:05:28.490351+00:00'</p>
 <li><strong>Cryptographic Audit Placeholders</strong>: All templates embed <code>{{Audit_Trail_SHA256_Hash}}</code> blocks, ensuring AI-generated records can be programmatically attested before gate submission.</li>
 <li><strong>JSON Schema Validation</strong>: Use <code>tasleemat.validate_artifact_data</code> to ensure AI outputs strictly adhere to formal data types, required keys, and formatting constraints.</li>
 </ul>
+<h3 id="3-autonomous-ai-agent-tool-calling-mcp-schema-integration">3. Autonomous AI Agent Tool Calling &amp; MCP Schema Integration</h3>
+<p>Tasleemat directly powers autonomous coding and PMO agents (via the Model Context Protocol <code>tasleemat mcp</code> or Python SDK):
+- <strong>114 Companion Draft 2020-12 Schemas</strong>: Each of the 114 deliverables exposes a companion JSON Schema defining strictly typed fields, allowable values, and RFC-compliant formats (<code>date</code>, <code>date-time</code>, <code>email</code>, <code>uuid</code>).
+- <strong>Function/Tool Calling</strong>: LLMs can invoke tools such as <code>get_artifact_asset(artifact_id, role="schema")</code> to dynamically retrieve input contracts before populating project data.
+- <strong>Automated Validation Loop</strong>: Agents can test generated deliverable payloads against <code>validate_artifact_data(artifact_id, data, strict=True)</code>. If schema validation errors occur, the agent receives machine-readable error paths to self-correct before presenting deliverables to human project managers.</p>
     </div>
   </main>
 

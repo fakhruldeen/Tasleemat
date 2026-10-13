@@ -90,7 +90,7 @@ created_at: '2026-10-06T16:05:28.492539+00:00'</p>
 <h2 id="automation-capabilities">🎯 Automation Capabilities</h2>
 <p>Tasleemat is built with a <strong>Docs-as-Code</strong> and <strong>Governance-as-Code</strong> philosophy. Everything is version-controllable, programmatically verifiable, and pipeline-friendly.</p>
 <pre><code class="language-mermaid">flowchart LR
-    A[&quot;102 Bilingual Deliverables&quot;] --&gt; B[&quot;tasleemat-cli Scaffolder&quot;]
+    A[&quot;114 Bilingual Deliverables&lt;br/&gt;(228 Bundles)&quot;] --&gt; B[&quot;tasleemat-cli Scaffolder&quot;]
     A --&gt; C[&quot;Python Validation Suite&quot;]
     C --&gt; D[&quot;GitHub Actions CI Pipeline&quot;]
     A --&gt; E[&quot;Batch Exporter (HTML/PDF)&quot;]
@@ -130,14 +130,14 @@ tasleemat init \
 </code></pre>
 <h4 id="what-init-does-automatically">What <code>init</code> Does Automatically:</h4>
 <ol>
-<li>Filters the 102 forms down to the exact mandatory subset for your selected tier (1, 2, or 3) and pack (<code>agile</code>, <code>ai</code>, <code>predictive</code>, <code>hybrid</code>).</li>
+<li>Filters the 114 deliverables down to the exact mandatory subset for your selected tier (1, 2, or 3) and pack (<code>agile</code>, <code>ai</code>, <code>predictive</code>, <code>hybrid</code>).</li>
 <li>Copies all templates, guides, JSON schemas, and CSV field dictionaries.</li>
 <li>Automatically pre-populates document headers (Project Name, Code, PM Name, Sponsor, Date) across all generated files.</li>
 <li>Creates a custom <code>PROJECT_README.md</code> with an actionable Stage-Gate checklist and direct deliverable links.</li>
 </ol>
 <hr />
 <h3 id="b-searching-the-forms-catalog-search">B. Searching the Forms Catalog (<code>search</code>)</h3>
-<p>Search across all 102 forms by keyword in Arabic or English:</p>
+<p>Search across all 114 deliverables by keyword in Arabic or English:</p>
 <pre><code class="language-bash"># Search in English
 tasleemat search &quot;Risk&quot; --lang en
 tasleemat search &quot;Sprint&quot; --lang en
@@ -150,7 +150,7 @@ tasleemat search &quot;ذكاء اصطناعي&quot; --lang ar
 </code></pre>
 <hr />
 <h3 id="c-listing-all-available-forms-list">C. Listing All Available Forms (<code>list</code>)</h3>
-<p>Inspect the complete 102-form catalog with IDs and folder mappings:</p>
+<p>Inspect the complete 114-deliverable catalog with IDs and folder mappings:</p>
 <pre><code class="language-bash">tasleemat list --lang en
 tasleemat list --lang ar
 </code></pre>
@@ -191,7 +191,118 @@ tasleemat test -v
 python3 -m unittest discover -s tests -v
 </code></pre>
 <hr />
-<h2 id="2-batch-deliverable-exporter-toolsexport_deliverablespy">🖨️ 2. Batch Deliverable Exporter (<code>tools/export_deliverables.py</code>)</h2>
+<h3 id="g-model-context-protocol-mcp-server-mcp">G. Model Context Protocol (MCP) Server (<code>mcp</code>)</h3>
+<p>Run the official Model Context Protocol (MCP) server over standard input/output (stdio) to expose all 114 deliverables, Draft 2020-12 schemas, and governance tools to AI agent runtimes (such as Claude Desktop, Cursor, and Antigravity):</p>
+<pre><code class="language-bash"># Run via tasleemat CLI subcommand
+tasleemat mcp
+
+# Or run via standalone console script entrypoint
+tasleemat-mcp
+</code></pre>
+<hr />
+<h2 id="2-official-python-sdk-reference-import-tasleemat">🐍 2. Official Python SDK Reference (<code>import tasleemat</code>)</h2>
+<p>The <code>tasleemat</code> package exposes a stable, programmatic Python API designed for workflow automation, governance pipelines, and AI agent integration.</p>
+<h3 id="core-sdk-functions">Core SDK Functions</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Function</th>
+<th style="text-align: left;">Parameters</th>
+<th style="text-align: left;">Return Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>list_artifacts()</code></td>
+<td style="text-align: left;"><code>category: str = None</code></td>
+<td style="text-align: left;"><code>list[dict]</code></td>
+<td style="text-align: left;">Returns all 114 deliverable definitions, optionally filtered by phase or category.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>get_artifact_definition(artifact_id)</code></td>
+<td style="text-align: left;"><code>artifact_id: str</code></td>
+<td style="text-align: left;"><code>dict</code></td>
+<td style="text-align: left;">Retrieves canonical metadata, title, and schema definitions for a specific deliverable ID (e.g., <code>"PMO-03.01"</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>get_artifact_assets(artifact_id, lang)</code></td>
+<td style="text-align: left;"><code>artifact_id: str</code>, <code>lang: str = "en"</code></td>
+<td style="text-align: left;"><code>list[dict]</code></td>
+<td style="text-align: left;">Returns structured file asset descriptors (<code>template</code>, <code>schema</code>, <code>dictionary</code>, <code>guide</code>, <code>example</code>) for the given language.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>get_artifact_asset(artifact_id, role, lang)</code></td>
+<td style="text-align: left;"><code>artifact_id: str</code>, <code>role: str</code>, <code>lang: str = "en"</code></td>
+<td style="text-align: left;"><code>str \| dict</code></td>
+<td style="text-align: left;">Fetches the raw content or parsed JSON of a specific asset role (<code>"template"</code>, <code>"schema"</code>, <code>"dictionary"</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>get_tailoring_profile(tier, pack)</code></td>
+<td style="text-align: left;"><code>tier: int \| str</code>, <code>pack: str</code></td>
+<td style="text-align: left;"><code>dict</code></td>
+<td style="text-align: left;">Resolves required and optional deliverables for a specific Governance Sizing Tier (1, 2, or 3) and Methodology Pack (<code>general</code>, <code>agile</code>, <code>ai</code>, <code>predictive</code>, <code>hybrid</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>get_lexicon(lang)</code></td>
+<td style="text-align: left;"><code>lang: str = "en"</code></td>
+<td style="text-align: left;"><code>dict</code></td>
+<td style="text-align: left;">Returns bilingual PMO terminology, stage-gate definitions, and standard status taxonomies.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>validate_artifact_data(artifact_id, data, strict)</code></td>
+<td style="text-align: left;"><code>artifact_id: str</code>, <code>data: dict</code>, <code>strict: bool = True</code></td>
+<td style="text-align: left;"><code>dict</code></td>
+<td style="text-align: left;">Validates project deliverable data against Draft 2020-12 JSON Schema. In strict mode, unknown fields trigger errors.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>render_artifact(artifact_id, data, format, lang)</code></td>
+<td style="text-align: left;"><code>artifact_id: str</code>, <code>data: dict</code>, <code>format: str = "html"</code>, <code>lang: str = "en"</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">Renders deliverable content into clean standalone HTML or formatted text offline.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="supported-draft-2020-12-data-formats">Supported Draft 2020-12 Data Formats</h3>
+<p>The built-in validator (<code>tasleemat.formats</code>) provides full RFC-compliant format checking across all companion schemas:
+- <code>date</code>: Full date string formatted according to RFC 3339 (<code>YYYY-MM-DD</code>).
+- <code>date-time</code>: Combined date and time timestamp according to RFC 3339 (<code>YYYY-MM-DDTHH:MM:SSZ</code>).
+- <code>time</code>: Time string formatted according to RFC 3339 (<code>HH:MM:SS</code>).
+- <code>uuid</code>: Universally Unique Identifier conforming to RFC 4122.
+- <code>uri</code>: Uniform Resource Identifier conforming to RFC 3986.
+- <code>uri-reference</code>: Relative or absolute URI reference conforming to RFC 3986.
+- <code>email</code>: Electronic mail address conforming to RFC 5322.
+- <code>duration</code>: Duration specification conforming to ISO 8601 (e.g., <code>P3M</code>, <code>P14D</code>).</p>
+<h3 id="python-sdk-quickstart-example">Python SDK Quickstart Example</h3>
+<pre><code class="language-python">import tasleemat
+
+# 1. Discover deliverables for Tier 2 Agile projects
+profile = tasleemat.get_tailoring_profile(tier=2, pack=&quot;agile&quot;)
+print(f&quot;Required deliverables: {len(profile['artifacts'])}&quot;)
+
+# 2. Retrieve Project Charter metadata and schema
+charter_def = tasleemat.get_artifact_definition(&quot;PMO-03.01&quot;)
+charter_schema = tasleemat.get_artifact_asset(&quot;PMO-03.01&quot;, role=&quot;schema&quot;, lang=&quot;en&quot;)
+
+# 3. Validate deliverable payload against Draft 2020-12 Schema
+payload = {
+    &quot;project_name&quot;: &quot;Cloud Transformation Platform&quot;,
+    &quot;project_code&quot;: &quot;PRJ-2026-CLOUD&quot;,
+    &quot;start_date&quot;: &quot;2026-11-01&quot;,
+    &quot;sponsor&quot;: &quot;Jane Doe&quot;,
+    &quot;estimated_budget&quot;: 2500000.00
+}
+result = tasleemat.validate_artifact_data(&quot;PMO-03.01&quot;, payload, strict=True)
+if result[&quot;valid&quot;]:
+    print(&quot;Payload conforms to Draft 2020-12 governance schema!&quot;)
+
+# 4. Render deliverable offline to standalone HTML
+html_output = tasleemat.render_artifact(&quot;PMO-03.01&quot;, payload, format=&quot;html&quot;, lang=&quot;en&quot;)
+with open(&quot;Project_Charter_Preview.html&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    f.write(html_output)
+</code></pre>
+<hr />
+<h2 id="3-batch-deliverable-exporter-toolsexport_deliverablespy">🖨️ 3. Batch Deliverable Exporter (<code>tools/export_deliverables.py</code>)</h2>
 <p>Convert single Markdown forms or entire project directories into executive, print-ready HTML documents with embedded CSS and full Arabic RTL typography support:</p>
 <pre><code class="language-bash"># Export a single document to HTML
 python3 tools/export_deliverables.py forms/en/03_Initiating/01_Project_Charter/03_01_Project_Charter_Template.md -o output.html
@@ -203,25 +314,25 @@ python3 tools/export_deliverables.py forms/ar/03_البدء/01_ميثاق_الم
 python3 tools/export_deliverables.py my_project_workspace/
 </code></pre>
 <hr />
-<h2 id="3-repository-first-documentation-architecture">🌐 3. Repository-First Documentation Architecture</h2>
+<h2 id="4-repository-first-documentation-architecture">🌐 4. Repository-First Documentation Architecture</h2>
 <p>Tasleemat maintains all governance guides, operational manuals, and bilingual templates directly within the GitHub repository as structured Markdown. The previous web portal has been retired to keep documentation version-controlled, auditable, and directly accessible alongside code and templates. All guides can be navigated starting from <a href="../README.html"><code>docs/README.md</code></a>.</p>
 <hr />
-<h2 id="4-python-quality-parity-audit-suite">🛡️ 4. Python Quality &amp; Parity Audit Suite</h2>
+<h2 id="5-python-quality-parity-audit-suite">🛡️ 5. Python Quality &amp; Parity Audit Suite</h2>
 <p>The repository includes built-in verification scripts and full unit test coverage executed automatically by our CI/CD pipeline:</p>
 <h3 id="1-master-test-suite-tests">1. Master Test Suite (<code>tests/</code>)</h3>
 <ul>
-<li><strong>Execution:</strong> <code>python3 -m unittest discover -s tests -v</code></li>
-<li><strong>Modules:</strong> <code>test_parity.py</code>, <code>test_schemas.py</code>, <code>test_okf_datapackage.py</code>, <code>test_governance_templates.py</code>, <code>test_fictional_compliance.py</code>, <code>test_cli_and_exporters.py</code>, <code>test_documentation.py</code>.</li>
+<li><strong>Execution:</strong> <code>pytest -v tests</code> or <code>python3 -m unittest discover -s tests -v</code></li>
+<li><strong>Coverage:</strong> <strong>130 automated tests across 15 test modules</strong> (<code>test_parity.py</code>, <code>test_schemas.py</code>, <code>test_okf_datapackage.py</code>, <code>test_governance_templates.py</code>, <code>test_fictional_compliance.py</code>, <code>test_cli_and_exporters.py</code>, <code>test_documentation.py</code>, <code>test_mcp_server.py</code>, <code>test_mcp_advanced.py</code>, <code>test_mcp_audit.py</code>, <code>test_mcp_stdio_e2e.py</code>, <code>test_validation_modes.py</code>, <code>test_edge_cases.py</code>, etc.).</li>
 </ul>
 <h3 id="2-form-quality-schema-auditor-toolsaudit_formspy">2. Form Quality &amp; Schema Auditor (<code>tools/audit_forms.py</code>)</h3>
 <ul>
 <li><strong>Execution:</strong> <code>python3 tools/audit_forms.py</code></li>
-<li><strong>Function:</strong> Scans all 204 form files for governance table compliance, section depth, and formatting.</li>
+<li><strong>Function:</strong> Scans all 228 form files for governance table compliance, section depth, and formatting.</li>
 </ul>
 <h3 id="3-open-knowledge-foundation-frictionless-validator-toolsvalidate_okfpy">3. Open Knowledge Foundation Frictionless Validator (<code>tools/validate_okf.py</code>)</h3>
 <ul>
 <li><strong>Execution:</strong> <code>python3 tools/validate_okf.py</code></li>
-<li><strong>Function:</strong> Validates <code>datapackage.json</code> and all 204 frictionless JSON schemas against international open data standards.</li>
+<li><strong>Function:</strong> Validates <code>datapackage.json</code> and all 228 frictionless JSON schemas against international open data standards.</li>
 </ul>
 <h3 id="4-bilingual-parity-checker-toolsparitypy">4. Bilingual Parity Checker (<code>tools/parity.py</code>)</h3>
 <ul>
@@ -229,14 +340,14 @@ python3 tools/export_deliverables.py my_project_workspace/
 <li><strong>Function:</strong> Ensures exact 1:1 structural symmetry between English and Arabic deliverable catalogs.</li>
 </ul>
 <hr />
-<h2 id="5-github-actions-cicd-pipeline-githubworkflowsciyml">⚙️ 5. GitHub Actions CI/CD Pipeline (<code>.github/workflows/ci.yml</code>)</h2>
+<h2 id="6-github-actions-cicd-pipeline-githubworkflowsciyml">⚙️ 6. GitHub Actions CI/CD Pipeline (<code>.github/workflows/ci.yml</code>)</h2>
 <p>Every push and pull request to the <code>main</code> branch triggers an automated GitHub Actions workflow that:
-1. Validates schema integrity across all 204 form bundles (<code>audit_forms.py</code>).
+1. Validates schema integrity across all 228 form bundles (<code>audit_forms.py</code>).
 2. Checks web rendering syntax (<code>check_rendering.py</code>).
 3. Enforces 1:1 English-Arabic structural parity (<code>parity.py</code>).
 4. Validates Frictionless Open Data Package (<code>validate_okf.py</code>).
-5. Executes the complete 28-test automated test suite (<code>tests/</code>).
-6. Runs end-to-end integration tests on <code>tasleemat_cli.py</code>.</p>
+5. Executes the complete 130-test automated test suite (<code>tests/</code>).
+6. Runs end-to-end integration tests on <code>tasleemat_cli.py</code> and the MCP server.</p>
     </div>
   </main>
 

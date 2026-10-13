@@ -89,7 +89,7 @@ created_at: '2026-10-06T16:05:28.497172+00:00'</p>
 <hr />
 <h2 id="executive-overview">🎯 Executive Overview</h2>
 <p><strong>Tasleemat (تسليمات)</strong> conforms to the <strong>Open Knowledge Foundation (OKF)</strong> Frictionless Data Package specification using <strong>native JSON Schemas</strong>, making it one of the world's first fully open, machine-readable, bilingual Project Management Office (PMO) operating frameworks.</p>
-<p>By providing a root <a href="../../datapackage.json"><code>datapackage.json</code></a>, Tasleemat enables data scientists, AI engineers, and enterprise architects to query, validate, and integrate all 204 deliverable JSON schemas directly into REST APIs, autonomous AI agent toolchains, and project analytics pipelines.</p>
+<p>By providing a root <a href="../../datapackage.json"><code>datapackage.json</code></a>, Tasleemat enables data scientists, AI engineers, and enterprise architects to query, validate, and integrate all 228 deliverable JSON schemas directly into REST APIs, autonomous AI agent toolchains, and project analytics pipelines.</p>
 <pre><code class="language-mermaid">flowchart TD
     subgraph &quot;OKF Frictionless Data Architecture&quot;
         DP[&quot;&lt;b&gt;datapackage.json&lt;/b&gt;&lt;br/&gt;(Root Manifest)&quot;]
@@ -100,8 +100,8 @@ created_at: '2026-10-06T16:05:28.497172+00:00'</p>
     end
 
     subgraph &quot;Tasleemat JSON Schema Resources&quot;
-        EN_RES[&quot;102 English JSON Schemas&lt;br/&gt;(forms/en/**/*.json)&quot;]
-        AR_RES[&quot;102 Arabic JSON Schemas&lt;br/&gt;(forms/ar/**/*.json)&quot;]
+        EN_RES[&quot;114 English JSON Schemas&lt;br/&gt;(forms/en/**/*.json)&quot;]
+        AR_RES[&quot;114 Arabic JSON Schemas&lt;br/&gt;(forms/ar/**/*.json)&quot;]
         DP --&gt; EN_RES
         DP --&gt; AR_RES
     end
@@ -116,8 +116,17 @@ created_at: '2026-10-06T16:05:28.497172+00:00'</p>
     end
 </code></pre>
 <hr />
+<h2 id="the-four-distinct-data-schema-layers">🗂️ The Four Distinct Data &amp; Schema Layers</h2>
+<p>To prevent architectural conflation between form definitions and runtime project payloads, Tasleemat enforces four distinct data and schema layers:</p>
+<ol>
+<li><strong>Layer 1: Form Section Schemas (<code>forms/{en,ar}/**/*.json</code>):</strong> Form-level section definitions, fields, labels, guidance, and default placeholders used for template scaffolding.</li>
+<li><strong>Layer 2: OKF Frictionless Data Package (<code>datapackage.json</code>):</strong> Repository-level open data catalog referencing all 228 bilingual form schema resources.</li>
+<li><strong>Layer 3: Draft 2020-12 Companion Schemas (<code>schemas/completed/PMO-*.schema.json</code>):</strong> High-integrity validation contracts covering completed runtime deliverable payloads in <code>strict</code> and <code>draft</code> modes.</li>
+<li><strong>Layer 4: Runtime Project Payloads:</strong> Actual business data submitted by users, CLI scaffolds, or AI agents, validated against Layer 3 companion schemas.</li>
+</ol>
+<hr />
 <h2 id="the-datapackagejson-specification">📦 The <code>datapackage.json</code> Specification</h2>
-<p>Located at the repository root, <a href="../../datapackage.json"><code>datapackage.json</code></a> indexes all 204 deliverable schemas as Frictionless JSON Resources:</p>
+<p>Located at the repository root, <a href="../../datapackage.json"><code>datapackage.json</code></a> indexes all 228 deliverable schemas as Frictionless JSON Resources:</p>
 <pre><code class="language-json">{
   &quot;profile&quot;: &quot;data-package&quot;,
   &quot;name&quot;: &quot;tasleemat-pmo-framework&quot;,

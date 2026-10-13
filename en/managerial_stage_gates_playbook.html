@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-md-color-scheme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏛️ Executive Stage-Gate Governance Playbook | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
+</head>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/en/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../LEXICON.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
+        </button>
+        
+        <a href="../en/managerial_stage_gates_playbook.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
+  <span class="lang-switch-label">🌐 <strong>Language:</strong> English Executive Manual</span>
+  <div class="lang-switch-actions">
+    <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/managerial_stage_gates_playbook.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
+    <a class="lang-switch-btn" href="../ar/managerial_stage_gates_playbook.html">🇸🇦 الانتقال للنسخة العربية (Arabic Version) →</a>
+  </div>
+</div>
+
+<hr />
+<h1 id="executive-stage-gate-governance-playbook">🏛️ Executive Stage-Gate Governance Playbook</h1>
+<p><strong>Document ID:</strong> <code>TASLEEMAT-EXEC-STAGE-GATES-PLAYBOOK</code><br />
+<strong>Target Audience:</strong> Project Sponsors, PMO Directors, Steering Committee Members, Executive Leadership<br />
+<strong>Standard Alignment:</strong> PMI PMBOK® 6th/7th/8th Editions, ISO 21500 / ISO 21502:2021  </p>
+<hr />
+<div class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-md"><div class="font-bold text-sm text-blue-900 mb-1">ℹ️ Note</div><div class="text-sm text-blue-900">> **Proposed Organizational Governance Model**</div></div>
+<blockquote>
+<p>This document outlines a standard organizational governance model requiring formal institutional adoption and tailoring. It does not establish universal statutory authority, legal mandates, or rigid certification requirements for every organization.</p>
+</blockquote>
+<hr />
+<h2 id="executive-summary-purpose">🎯 Executive Summary &amp; Purpose</h2>
+<p>In modern capital and digital delivery environments, project failure rarely stems from a lack of engineering talent; it stems from <strong>governance drift, ambiguous sign-off authority, and unmonitored capital release</strong>. Traditional project management often treats governance as a bureaucratic after-the-fact compliance exercise rather than an active risk-management mechanism.</p>
+<p>The <strong>Tasleemat Stage-Gate Governance Framework</strong> institutes a structured, auditable checkpoint system spanning the complete initiative lifecycle from initial concept exploration (<strong>Gate 0</strong>) through post-project contract settlement and value realization (<strong>Gate 5</strong>).</p>
+<p>Each stage-gate acts as a <strong>decision checkpoint</strong> where authorized leadership evaluates validated deliverables, assesses strategic fit and fiscal health, and formally determines whether subsequent budget tranches and operational mandates should be released.</p>
+<pre><code class="language-mermaid">flowchart LR
+    G0[&quot;&lt;b&gt;Gate 0&lt;/b&gt;&lt;br/&gt;Concept Review&quot;] --&gt;|Authorize Initiation| G1[&quot;&lt;b&gt;Gate 1&lt;/b&gt;&lt;br/&gt;Charter &amp; Auth&quot;]
+    G1 --&gt;|Authorize Planning| G2[&quot;&lt;b&gt;Gate 2&lt;/b&gt;&lt;br/&gt;Baseline Approval&quot;]
+    G2 --&gt;|Release Execution Capital| G3[&quot;&lt;b&gt;Gate 3&lt;/b&gt;&lt;br/&gt;Execution Health&quot;]
+    G3 --&gt;|Authorize Deployment| G4[&quot;&lt;b&gt;Gate 4&lt;/b&gt;&lt;br/&gt;Operational UAT&quot;]
+    G4 --&gt;|Authorize Operational Handoff| G5[&quot;&lt;b&gt;Gate 5&lt;/b&gt;&lt;br/&gt;Final Closeout&quot;]
+
+    style G0 fill:#f0fdf4,stroke:#10b981,stroke-width:2px
+    style G1 fill:#eff6ff,stroke:#2563eb,stroke-width:2px
+    style G2 fill:#eff6ff,stroke:#2563eb,stroke-width:2px
+    style G3 fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+    style G4 fill:#f0fdf4,stroke:#10b981,stroke-width:2px
+    style G5 fill:#f8fafc,stroke:#0b132b,stroke-width:2px
+</code></pre>
+<hr />
+<h2 id="the-three-executive-gate-decisions">🚦 The Three Executive Gate Decisions</h2>
+<p>At each formal gate review, the governing authority must render one of three formal outcomes:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Gate Decision</th>
+<th style="text-align: left;">Definition &amp; Operational Impact</th>
+<th style="text-align: left;">Capital &amp; Mandate Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">🟢 <strong>Proceed (Go)</strong></td>
+<td style="text-align: left;">Deliverables fully satisfy exit criteria. Technical baselines, risk registers, and fiscal metrics are acceptable.</td>
+<td style="text-align: left;">Authorizes immediate progression to the next phase; releases the subsequent budget tranche.</td>
+</tr>
+<tr>
+<td style="text-align: left;">🟡 <strong>Conditional Approval (Go with Actions)</strong></td>
+<td style="text-align: left;">Minor deficiencies or manageable variances identified. The overall strategic trajectory remains sound.</td>
+<td style="text-align: left;">Releases partial funding or allows phase initiation subject to mandatory remediation actions completed within <strong>14 calendar days</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">🔴 <strong>Redirect / Terminate (No-Go)</strong></td>
+<td style="text-align: left;">Critical variances detected (e.g., severe cost overruns, strategic obsolescence, insurmountable risks).</td>
+<td style="text-align: left;">Halts the project immediately. Initiates either formal replanning, scope de-scoping, or orderly termination.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="detailed-stage-gate-specifications">🚪 Detailed Stage-Gate Specifications</h2>
+<h3 id="gate-0-strategic-concept-portfolio-alignment">Gate 0: Strategic Concept &amp; Portfolio Alignment</h3>
+<p><em>Validating the Idea Before Allocating Capital</em></p>
+<ul>
+<li><strong>Lifecycle Phases Covered:</strong> Phase 00 (Discovery) &amp; Phase 01 (Ideation).</li>
+<li><strong>Governing Body:</strong> Investment Review Board, Chief Financial Officer (CFO), Portfolio Steering Committee.</li>
+<li><strong>Core Purpose:</strong> To verify that the proposed initiative aligns directly with organizational strategic goals (e.g., Vision 2030 objectives, corporate OKRs) and presents a compelling return on investment before teams are staffed or significant budgets allocated.</li>
+<li><strong>Mandatory Executive Exit Criteria:</strong></li>
+<li>[ ] Strategic linkage explicitly established with corporate OKRs.</li>
+<li>[ ] Business Case includes quantified Cost of Inaction and initial Financial Valuation (NPV/IRR/Payback).</li>
+<li>[ ] Strategic Feasibility confirms high-level technical, legal, and operational viability.</li>
+<li><strong>Key Deliverables Reviewed:</strong></li>
+<li><code>PMO-00.06</code>: OKR Alignment Assessment</li>
+<li><code>PMO-01.01</code>: Business Case</li>
+<li><code>PMO-01.02</code>: Feasibility Study</li>
+</ul>
+<hr />
+<h3 id="gate-1-project-charter-formal-authorization">Gate 1: Project Charter &amp; Formal Authorization</h3>
+<p><em>Empowering Leadership &amp; Authorizing Team Mobilization</em></p>
+<ul>
+<li><strong>Lifecycle Phases Covered:</strong> Phase 02 (Preparation) &amp; Phase 03 (Initiation).</li>
+<li><strong>Governing Body:</strong> Executive Project Sponsor &amp; Enterprise PMO Director.</li>
+<li><strong>Core Purpose:</strong> Formally authorizes the project's existence, designates the Project Manager with formal spending and resource authority, and approves the initial project boundaries.</li>
+<li><strong>Mandatory Executive Exit Criteria:</strong></li>
+<li>[ ] Project Charter signed by Executive Sponsor and Lead Project Manager.</li>
+<li>[ ] Core stakeholder register identifies primary decision-makers, champions, and regulatory bodies.</li>
+<li>[ ] Tailoring Plan designates the project sizing tier (Tier 1 Mega, Tier 2 Standard, or Tier 3 Lean) and methodology pack (<code>general</code>, <code>agile</code>, <code>ai</code>, <code>predictive</code>, or <code>hybrid</code>).</li>
+<li><strong>Key Deliverables Reviewed:</strong></li>
+<li><code>PMO-02.01</code>: Tailoring Plan</li>
+<li><code>PMO-03.01</code>: Project Charter</li>
+<li><code>PMO-03.04</code>: Stakeholder Register</li>
+</ul>
+<hr />
+<h3 id="gate-2-integrated-baseline-planning-approval">Gate 2: Integrated Baseline &amp; Planning Approval</h3>
+<p><em>Locking the Scope, Schedule, Cost, and Risk Contracts</em></p>
+<ul>
+<li><strong>Lifecycle Phases Covered:</strong> Phase 04 (Planning - 12 Management Domains).</li>
+<li><strong>Governing Body:</strong> Project Steering Committee &amp; PMO Leadership.</li>
+<li><strong>Core Purpose:</strong> Freezes the foundational performance measurement baselines (Scope Baseline, Schedule Baseline, Cost Baseline) against which project performance will be measured.</li>
+<li><strong>Mandatory Executive Exit Criteria:</strong></li>
+<li>[ ] Scope statement and Work Breakdown Structure (WBS) fully decomposed down to work packages.</li>
+<li>[ ] Critical path schedule established with milestone dependencies verified.</li>
+<li>[ ] Detailed bottom-up cost budget approved with management and contingency reserves clearly distinguished.</li>
+<li>[ ] Quantitative and qualitative Risk Register completed with funded risk response strategies.</li>
+<li><strong>Key Deliverables Reviewed:</strong></li>
+<li><code>PMO-04.01.01</code>: Project Management Plan</li>
+<li><code>PMO-04.02.05</code>: Scope Statement</li>
+<li><code>PMO-04.02.06</code>: WBS &amp; WBS Dictionary</li>
+<li><code>PMO-04.03.08</code>: Schedule Baseline</li>
+<li><code>PMO-04.04.04</code>: Cost Baseline &amp; Budget</li>
+<li><code>PMO-04.08.02</code>: Risk Register</li>
+</ul>
+<hr />
+<h3 id="gate-3-mid-execution-performance-health-review">Gate 3: Mid-Execution Performance &amp; Health Review</h3>
+<p><em>Monitoring Execution Integrity &amp; Variance Control</em></p>
+<ul>
+<li><strong>Lifecycle Phases Covered:</strong> Phase 05 (Executing) &amp; Phase 06 (Monitoring &amp; Controlling).</li>
+<li><strong>Governing Body:</strong> Project Sponsor &amp; PMO Performance Lead.</li>
+<li><strong>Core Purpose:</strong> Evaluates intermediate milestone delivery, Earned Value Analysis (EVA) indicators, major vendor deliverables, and escalated risk/issue items.</li>
+<li><strong>Mandatory Executive Exit Criteria:</strong></li>
+<li>[ ] Cost Performance Index (CPI) and Schedule Performance Index (SPI) within approved governance tolerances ($0.90 \le \text{CPI, SPI} \le 1.10$).</li>
+<li>[ ] Critical change requests evaluated and approved through the formal Change Control Board (CCB).</li>
+<li>[ ] No unmitigated critical (red) issues open without an active, funded remediation plan.</li>
+<li><strong>Key Deliverables Reviewed:</strong></li>
+<li><code>PMO-05.01</code>: Issue Log</li>
+<li><code>PMO-05.03</code>: Change Request Register</li>
+<li><code>PMO-06.01</code>: Executive Project Status Report</li>
+<li><code>PMO-06.05</code>: Earned Value Analysis (EVA) Report</li>
+</ul>
+<hr />
+<h3 id="gate-4-operational-readiness-user-acceptance-uat">Gate 4: Operational Readiness &amp; User Acceptance (UAT)</h3>
+<p><em>Validating Value Delivery Prior to Operational Handoff</em></p>
+<ul>
+<li><strong>Lifecycle Phases Covered:</strong> Phase 06 (Controlling) &amp; Phase 07 (Closing).</li>
+<li><strong>Governing Body:</strong> Operations Director (Business-As-Usual Owner) &amp; Customer Sponsor.</li>
+<li><strong>Core Purpose:</strong> Confirms that deliverables satisfy all operational, technical, and quality requirements before releasing products or systems to end users and operational teams.</li>
+<li><strong>Mandatory Executive Exit Criteria:</strong></li>
+<li>[ ] 100% of critical User Acceptance Testing (UAT) test cases successfully executed and formally signed off.</li>
+<li>[ ] Operational Handover Protocol executed, establishing operational service level agreements (SLAs).</li>
+<li>[ ] Operations and customer support teams trained with technical maintenance manuals delivered.</li>
+<li><strong>Key Deliverables Reviewed:</strong></li>
+<li><code>PMO-06.10</code>: User Acceptance Testing (UAT) Sign-off</li>
+<li><code>PMO-07.04</code>: Transition to Operations Checklist &amp; Handover</li>
+</ul>
+<hr />
+<h3 id="gate-5-contract-closeout-archival-value-realization">Gate 5: Contract Closeout, Archival &amp; Value Realization</h3>
+<p><em>Closing the Books &amp; Establishing Long-Term Benefit Tracking</em></p>
+<ul>
+<li><strong>Lifecycle Phases Covered:</strong> Phase 07 (Closing).</li>
+<li><strong>Governing Body:</strong> Executive Sponsor, CFO &amp; Enterprise Audit Committee.</li>
+<li><strong>Core Purpose:</strong> Formally closes procurement contracts, releases project staff and equipment, archives institutional lessons learned, and establishes post-implementation review (PIR) milestones.</li>
+<li><strong>Mandatory Executive Exit Criteria:</strong></li>
+<li>[ ] All procurement contracts closed with final financial reconciliations and vendor release letters signed.</li>
+<li>[ ] Project Closeout Report and Lessons Learned Register archived into the organizational knowledge repository.</li>
+<li>[ ] Post-Implementation Review (PIR) schedule established with the Business Value Owner to assess actual vs. projected benefits 6–12 months post-transition.</li>
+<li><strong>Key Deliverables Reviewed:</strong></li>
+<li><code>PMO-07.01</code>: Lessons Learned Summary</li>
+<li><code>PMO-07.02</code>: Contract Closeout Report</li>
+<li><code>PMO-07.03</code>: Project Closeout Report</li>
+<li><code>PMO-07.05</code>: Post-Implementation Review Plan</li>
+</ul>
+<hr />
+<h2 id="governance-escalation-ccb-mandates">⚖️ Governance Escalation &amp; CCB Mandates</h2>
+<p>When project performance diverges from approved baselines, managerial governance relies on pre-authorized variance thresholds rather than subjective discretion:</p>
+<pre><code class="language-mermaid">flowchart TD
+    VAR[&quot;Observed Variance in Execution&quot;] --&gt; CHK{&quot;Variance Threshold Check&quot;}
+    CHK --&gt;|&quot;&lt; 5% Budget / &lt; 10% Schedule&quot;| PM[&quot;Project Manager Discretion&lt;br/&gt;(Apply Contingency Reserve)&quot;]
+    CHK --&gt;|&quot;5% - 10% Budget / 10% - 15% Schedule&quot;| SPONSOR[&quot;Sponsor &amp; PMO Review&lt;br/&gt;(Remedial Plan Required)&quot;]
+    CHK --&gt;|&quot;&gt; 10% Budget / &gt; 15% Schedule&quot;| CCB[&quot;Formal Change Control Board (CCB)&lt;br/&gt;(Baseline Replanning or Termination)&quot;]
+</code></pre>
+<ol>
+<li><strong>Within Operational Tolerances:</strong></li>
+<li>Variances under <strong>$5\%$ of budget</strong> and <strong>$10\%$ of milestone duration</strong> remain under the delegated authority of the Project Manager, funded via authorized project contingency reserves.</li>
+<li><strong>Elevated Variances:</strong></li>
+<li>Variances between <strong>$5\%$–$10\%$ of budget</strong> or <strong>$10\%$–$15\%$ of duration</strong> require formal notification to the Executive Sponsor and an actionable corrective action plan within 7 calendar days.</li>
+<li><strong>Breach of Baseline (CCB Escalation):</strong></li>
+<li>Any cost variance exceeding <strong>$10\%$</strong> or schedule deviation exceeding <strong>$15\%$</strong> triggers a mandatory CCB review. The CCB must convene to determine whether to authorize an updated project baseline, allocate management reserves, or redirect capital to alternative portfolio priorities.</li>
+</ol>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../LEXICON.html">Bilingual Lexicon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

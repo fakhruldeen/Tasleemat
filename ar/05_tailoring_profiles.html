@@ -86,27 +86,28 @@ created_at: '2026-10-06T16:05:28.215576+00:00'</p>
 <strong>المعيار:</strong> متوافق بالكامل مع معايير معهد إدارة المشاريع العالمي PMI PMBOK® الإصدارات السادس والسابع والجاهزية للإصدار الثامن  </p>
 <hr />
 <h2 id="_2">🎯 نظرة عامة تنفيذية</h2>
-<p>لتفادي البيروقراطية الإدارية الزائدة في المبادرات الصغيرة، وضمان أقصى درجات الانضباط والحوكمة في الاستثمارات والمشاريع الاستراتيجية الكبرى، يقدم <strong>إطار تسليمات للتصنيف والتخصيص (Tailoring Framework)</strong> معياراً لقياس حجم المشاريع عبر <strong>3 فئات حوكمية (Governance Tiers)</strong> و<strong>4 باقات متخصصة حسب طبيعة التسليم (Methodology Archetype Packs)</strong>.</p>
-<p>يقوم مدير المشروع ومدير مكتب إدارة المشاريع (PMO) باستخدام <strong>نموذج تقييم تعقيد المشروع (<code>PMO-02.02</code>)</strong> و<strong>تقييم منهجية التطوير ودورة الحياة (<code>PMO-02.01</code>)</strong> عند البوابة 1 لاختيار الحد الأدنى الإلزامي من النماذج لكل مشروع.</p>
+<p>لتفادي البيروقراطية الإدارية الزائدة في المبادرات الصغيرة، وضمان أقصى درجات الانضباط والحوكمة في الاستثمارات والمشاريع الاستراتيجية الكبرى، يقدم <strong>إطار تسليمات للتصنيف والتخصيص (Tailoring Framework)</strong> معياراً لقياس حجم المشاريع عبر <strong>3 فئات حوكمية (Governance Sizing Tiers)</strong> و<strong>5 باقات منهجية متخصصة (Methodology Packs)</strong> تشمل (<code>general</code>, <code>agile</code>, <code>ai</code>, <code>predictive</code>, <code>hybrid</code>).</p>
+<p>يقوم مدير المشروع ومدير مكتب إدارة المشاريع (PMO) باستخدام <strong>خطة تكييف الحوكمة ودورة الحياة (<code>PMO-02.01</code>)</strong> و<strong>خطة حوكمة الذكاء الاصطناعي والأنظمة الخوارزمية (<code>PMO-02.02</code>)</strong> (أو معايير التقييم المؤسسي) عند البوابة 1 لاختيار الحد الأدنى الإلزامي من المخرجات لكل مشروع.</p>
 <pre><code class="language-mermaid">flowchart TD
     subgraph Assessment[&quot;بوابة 1: تقييم وتصنيف المشروع&quot;]
-        C1[&quot;PMO-02.02 تقييم تعقيد المشروع&quot;]
-        C2[&quot;PMO-02.01 تقييم منهجية التطوير&quot;]
-        C1 --&gt; Decision[&quot;تحديد فئة الحوكمة وباقة التسليم&quot;]
+        C1[&quot;PMO-02.01 خطة تكييف الحوكمة&quot;]
+        C2[&quot;PMO-02.02 خطة حوكمة الذكاء الاصطناعي&quot;]
+        C1 --&gt; Decision[&quot;تحديد فئة الحوكمة والباقة المنهجية&quot;]
         C2 --&gt; Decision
     end
 
     subgraph Tiers[&quot;فئات الحوكمة المؤسسية&quot;]
-        Decision --&gt; T1[&quot;&lt;b&gt;الفئة 1: المشاريع الكبرى والحرجة&lt;/b&gt;&lt;br/&gt;(&gt; 40 مليون ريال | 35–50 نموذجاً)&quot;]
-        Decision --&gt; T2[&quot;&lt;b&gt;الفئة 2: المشاريع القياسية&lt;/b&gt;&lt;br/&gt;(4–40 مليون ريال | 18–25 نموذجاً)&quot;]
-        Decision --&gt; T3[&quot;&lt;b&gt;الفئة 3: المشاريع الرشيقة السريعة&lt;/b&gt;&lt;br/&gt;(&lt; 4 مليون ريال | 7–9 نماذج)&quot;]
+        Decision --&gt; T1[&quot;&lt;b&gt;الفئة 1: المشاريع الكبرى والحرجة&lt;/b&gt;&lt;br/&gt;(&gt; 40 مليون ريال | 35–50 مخرجاً)&quot;]
+        Decision --&gt; T2[&quot;&lt;b&gt;الفئة 2: المشاريع القياسية&lt;/b&gt;&lt;br/&gt;(4–40 مليون ريال | 18–25 مخرجاً)&quot;]
+        Decision --&gt; T3[&quot;&lt;b&gt;الفئة 3: المشاريع الرشيقة السريعة&lt;/b&gt;&lt;br/&gt;(&lt; 4 مليون ريال | 7–9 مخرجات)&quot;]
     end
 
     subgraph Packs[&quot;باقات طبيعة التسليم التخصصية&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P0[&quot;باقة PMO العامة (General Pack)&quot;]
         T1 &amp; T2 &amp; T3 --&gt; P1[&quot;باقة أجايل وسكروم (Agile Pack)&quot;]
-        T1 &amp; T2 &amp; T3 --&gt; P2[&quot;باقة المشاريع الهندسية والإنشائية&quot;]
-        T1 &amp; T2 &amp; T3 --&gt; P3[&quot;باقة منتجات الذكاء الاصطناعي والبيانات&quot;]
-        T1 &amp; T2 &amp; T3 --&gt; P4[&quot;باقة التحول الرقمي الهجين&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P2[&quot;باقة المشاريع الهندسية والإنشائية (Predictive)&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P3[&quot;باقة منتجات الذكاء الاصطناعي والبيانات (AI Pack)&quot;]
+        T1 &amp; T2 &amp; T3 --&gt; P4[&quot;باقة التحول الرقمي الهجين (Hybrid Pack)&quot;]
     end
 </code></pre>
 <hr />
@@ -118,10 +119,10 @@ created_at: '2026-10-06T16:05:28.215576+00:00'</p>
 <li><strong>المدة الزمنية:</strong> $&gt; 12\text{ شهراً}$.</li>
 <li><strong>درجة التعقيد:</strong> تأثير تنظيمي وتشريعي واسع، اعتماديات متبادلة مع جهات متعددة، تعاقدات مع مقاولين واستشاريين دوليين، وظهور إعلامي ومجتمعي عالٍ.</li>
 <li><strong>دورية الحوكمة:</strong> لجنة توجيهية تنفيذية شهرية، بوابات عبور مرحلية نصف شهرية مع PMO، واجتماعات أسبوعية لفرق العمل.</li>
-<li><strong>نطاق النماذج:</strong> <strong>35–50 نموذجاً معتمداً</strong>.</li>
+<li><strong>نطاق النماذج:</strong> <strong>35–50 مخرجاً ونموذجاً معتمداً</strong>.</li>
 <li><strong>باقة النماذج الإلزامية:</strong></li>
 <li><strong>مرحلة البدء:</strong> <code>PMO-00.06</code>, <code>PMO-01.01</code>, <code>PMO-01.02</code>, <code>PMO-03.01</code>, <code>PMO-03.04</code>, <code>PMO-03.05</code>, <code>PMO-03.03</code>.</li>
-<li><strong>مرحلة التخطيط:</strong> خطة إدارة المشروع المتكاملة (<code>PMO-04.01.01</code>)، بيان النطاق وهيكل WBS (<code>PMO-04.02.05</code>/<code>06</code>)، خط الأساس للجدول الزمني والمسار الحرج (<code>PMO-04.03.07</code>)، خط الأساس للتكلفة والاحتياطيات (<code>PMO-04.04.04</code>)، خطة الجودة (<code>PMO-04.05.01</code>)، مصفوفة RACI (<code>PMO-04.06.04</code>)، خطة التواصل (<code>PMO-04.07.01</code>)، سجل ونمذجة المخاطر الكمية (<code>PMO-04.08.02</code>/<code>04</code>/<code>07</code>)، استراتيجية المشتريات وبيان العمل SOW (<code>PMO-04.09.02</code>/<code>04</code>)، خطة إشراك المعنيين (<code>PMO-04.10.01</code>)، خطة إدارة التغيير المؤسسي OCM (<code>PMO-04.11.01</code>)، خطة الاستدامة والمعايير البيئية والاجتماعية والحوكمة ESG (<code>PMO-04.12.01</code>).</li>
+<li><strong>مرحلة التخطيط:</strong> خطة إدارة المشروع المتكاملة (<code>PMO-04.01.01</code>)، بيان النطاق وهيكل WBS (<code>PMO-04.02.05</code>/<code>06</code>)، خط الأساس للجدول الزمني والمسار الحرج (<code>PMO-04.03.08</code>)، خط الأساس للتكلفة والاحتياطيات (<code>PMO-04.04.04</code>)، خطة الجودة (<code>PMO-04.05.01</code>)، مصفوفة RACI (<code>PMO-04.06.04</code>)، خطة التواصل (<code>PMO-04.07.01</code>)، سجل ونمذجة المخاطر الكمية (<code>PMO-04.08.02</code>/<code>04</code>/<code>07</code>)، استراتيجية المشتريات وبيان العمل SOW (<code>PMO-04.09.02</code>/<code>04</code>)، خطة إشراك المعنيين (<code>PMO-04.10.01</code>)، خطة إدارة التغيير المؤسسي OCM (<code>PMO-04.11.01</code>)، خطة الاستدامة والمعايير البيئية والاجتماعية والحوكمة ESG (<code>PMO-04.12.01</code>).</li>
 <li><strong>مرحلة التنفيذ والتحكم:</strong> تقارير حالة المشروع التنفيذية (<code>PMO-06.01</code>)، تحليل القيمة المكتسبة EVM (<code>PMO-06.05</code>)، سجل المشكلات (<code>PMO-05.01</code>)، سجل القرارات (<code>PMO-05.02</code>)، سجل التحكم بالتغيير (<code>PMO-05.04</code>)، تدقيق الجودة والمشتريات (<code>PMO-05.05</code>/<code>PMO-06.07</code>)، بطاقات تقييم أداء الموردين (<code>PMO-06.09</code>).</li>
 <li><strong>مرحلة الإغلاق:</strong> القبول الرسمي للمخرجات (<code>PMO-06.08</code>)، اعتماد اختبارات UAT (<code>PMO-06.10</code>)، قائمة التحقق للتسليم التشغيلي (<code>PMO-07.04</code>)، إغلاق العقود (<code>PMO-07.02</code>)، وثيقة إغلاق المشروع (<code>PMO-07.03</code>)، ملخص الدروس المستفادة (<code>PMO-07.01</code>)، مراجعة ما بعد التنفيذ PIR (<code>PMO-07.05</code>)، وتحديث خطة المنافع (<code>PMO-01.03</code>).</li>
 </ul>
@@ -133,10 +134,10 @@ created_at: '2026-10-06T16:05:28.215576+00:00'</p>
 <li><strong>المدة الزمنية:</strong> $3 - 12\text{ شهراً}$.</li>
 <li><strong>درجة التعقيد:</strong> مشاريع تحول رقمي مؤسسي، تطوير أنظمة داخلية، وملف مخاطر متوسط.</li>
 <li><strong>دورية الحوكمة:</strong> اجتماعات نصف شهرية مع راعي المشروع، ومراجعات صحة شهرية مع PMO.</li>
-<li><strong>نطاق النماذج:</strong> <strong>18–25 نموذجاً معتمداً</strong>.</li>
+<li><strong>نطاق النماذج:</strong> <strong>18–25 مخرجاً ونموذجاً معتمداً</strong>.</li>
 <li><strong>باقة النماذج الإلزامية:</strong></li>
 <li><strong>مرحلة البدء:</strong> <code>PMO-01.01</code>, <code>PMO-03.01</code>, <code>PMO-03.04</code>, <code>PMO-03.03</code>, <code>PMO-02.01</code>.</li>
-<li><strong>مرحلة التخطيط:</strong> خطة إدارة المشروع (<code>PMO-04.01.01</code>)، هيكل تجزئة العمل WBS (<code>PMO-04.02.06</code>)، خط الأساس للجدول الزمني (<code>PMO-04.03.07</code>)، خط الأساس للتكلفة (<code>PMO-04.04.04</code>)، مصفوفة RACI (<code>PMO-04.06.04</code>)، سجل المخاطر (<code>PMO-04.08.02</code>)، ومصفوفة التواصل (<code>PMO-04.07.01</code>).</li>
+<li><strong>مرحلة التخطيط:</strong> خطة إدارة المشروع (<code>PMO-04.01.01</code>)، هيكل تجزئة العمل WBS (<code>PMO-04.02.06</code>)، خط الأساس للجدول الزمني (<code>PMO-04.03.08</code>)، خط الأساس للتكلفة (<code>PMO-04.04.04</code>)، مصفوفة RACI (<code>PMO-04.06.04</code>)، سجل المخاطر (<code>PMO-04.08.02</code>)، ومصفوفة التواصل (<code>PMO-04.07.01</code>).</li>
 <li><strong>مرحلة التنفيذ والتحكم:</strong> تقرير حالة المشروع (<code>PMO-06.01</code>)، سجل المشكلات (<code>PMO-05.01</code>)، سجل القرارات (<code>PMO-05.02</code>)، سجل وطلبات التغيير (<code>PMO-05.04</code>/<code>03</code>)، وتحليل التباين (<code>PMO-06.04</code>).</li>
 <li><strong>مرحلة الإغلاق:</strong> اعتماد اختبارات UAT (<code>PMO-06.10</code>)، قبول المخرجات (<code>PMO-06.08</code>)، قائمة التسليم للعمليات (<code>PMO-07.04</code>)، وثيقة الإغلاق (<code>PMO-07.03</code>)، والدروس المستفادة (<code>PMO-07.01</code>).</li>
 </ul>

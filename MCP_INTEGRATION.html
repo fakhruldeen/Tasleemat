@@ -258,6 +258,112 @@ echo '{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: 2, &quot;method&quo
 # 3. Retrieve Project Charter Template (Arabic)
 echo '{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: 3, &quot;method&quot;: &quot;tools/call&quot;, &quot;params&quot;: {&quot;name&quot;: &quot;tasleemat_get_asset&quot;, &quot;arguments&quot;: {&quot;artifact_id&quot;: &quot;PMO-03.01&quot;, &quot;role&quot;: &quot;template&quot;, &quot;lang&quot;: &quot;ar&quot;}}}' | python3 -m tasleemat.mcp
 </code></pre>
+<hr />
+<h2 id="json-rpc-20-protocol-conformance-request-id-rules">📋 JSON-RPC 2.0 Protocol Conformance &amp; Request ID Rules</h2>
+<p>The Tasleemat MCP server strictly conforms to the JSON-RPC 2.0 specification:</p>
+<h3 id="1-request-id-validation-rules">1. Request ID Validation Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID Type</th>
+<th style="text-align: left;">Example</th>
+<th style="text-align: left;">Server Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>String</strong></td>
+<td style="text-align: left;"><code>"req-101"</code>, <code>""</code></td>
+<td style="text-align: left;">✅ Accepted; mirrored exactly in response <code>id</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Integer</strong></td>
+<td style="text-align: left;"><code>1</code>, <code>0</code>, <code>-5</code></td>
+<td style="text-align: left;">✅ Accepted; mirrored exactly in response <code>id</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Integral Float</strong></td>
+<td style="text-align: left;"><code>1.0</code>, <code>42.0</code></td>
+<td style="text-align: left;">✅ Normalized to integer <code>1</code>, <code>42</code> in response <code>id</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Null</strong></td>
+<td style="text-align: left;"><code>null</code></td>
+<td style="text-align: left;">✅ Accepted; mirrored as <code>null</code> in response <code>id</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fractional Float</strong></td>
+<td style="text-align: left;"><code>1.5</code>, <code>3.14159</code></td>
+<td style="text-align: left;">❌ Rejected with <code>-32600</code> (<code>Invalid Request</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Non-finite Float</strong></td>
+<td style="text-align: left;"><code>NaN</code>, <code>Infinity</code></td>
+<td style="text-align: left;">❌ Rejected with <code>-32600</code> (<code>Invalid Request</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Boolean</strong></td>
+<td style="text-align: left;"><code>true</code>, <code>false</code></td>
+<td style="text-align: left;">❌ Rejected with <code>-32600</code> (<code>Invalid Request</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Container</strong></td>
+<td style="text-align: left;"><code>[]</code>, <code>{"id": 1}</code></td>
+<td style="text-align: left;">❌ Rejected with <code>-32600</code> (<code>Invalid Request</code>).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-standard-json-rpc-error-taxonomy">2. Standard JSON-RPC Error Taxonomy</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Code</th>
+<th style="text-align: left;">Constant</th>
+<th style="text-align: left;">Meaning in Tasleemat MCP Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>-32700</code></td>
+<td style="text-align: left;">Parse error</td>
+<td style="text-align: left;">Received payload is not well-formed JSON.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>-32600</code></td>
+<td style="text-align: left;">Invalid Request</td>
+<td style="text-align: left;">Missing <code>"jsonrpc": "2.0"</code>, invalid method type, or disallowed request ID format.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>-32601</code></td>
+<td style="text-align: left;">Method not found</td>
+<td style="text-align: left;">Method does not exist (supported: <code>initialize</code>, <code>ping</code>, <code>tools/list</code>, <code>tools/call</code>, <code>resources/list</code>, <code>prompts/list</code>).</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>-32602</code></td>
+<td style="text-align: left;">Invalid params</td>
+<td style="text-align: left;">Positional array parameters passed instead of named object, or missing required tool arguments.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>-32603</code></td>
+<td style="text-align: left;">Internal error</td>
+<td style="text-align: left;">Unhandled runtime exception within tool execution.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="troubleshooting-common-questions">🔧 Troubleshooting &amp; Common Questions</h2>
+<h4 id="1-why-does-cursor-or-claude-report-server-disconnected">1. Why does Cursor or Claude report "Server disconnected"?</h4>
+<p>Ensure your Python environment has <code>tasleemat</code> installed in the exact Python interpreter configured:</p>
+<pre><code class="language-bash"># Verify CLI runs cleanly from the environment
+python3 -m tasleemat.mcp --help
+</code></pre>
+<p>If using a virtualenv, specify the full path to <code>python3</code> in your configuration (e.g. <code>/home/user/venv/bin/python3</code>).</p>
+<h4 id="2-stdio-buffering-in-shell-scripts">2. Stdio Buffering in Shell Scripts</h4>
+<p>When communicating with the server over pipes, ensure unbuffered output or explicit newlines:</p>
+<pre><code class="language-bash">python3 -u -m tasleemat.mcp
+</code></pre>
+<h4 id="3-re-validating-ai-drafts-in-strict-vs-draft-mode">3. Re-validating AI Drafts in Strict vs. Draft Mode</h4>
+<p>Use <code>mode="draft"</code> when generating incomplete sections during agent drafting loops. Use <code>mode="strict"</code> only prior to formal stage-gate submission to ensure 100% required field presence and baseline completeness.</p>
     </div>
   </main>
 
