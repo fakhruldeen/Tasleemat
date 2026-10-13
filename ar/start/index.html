@@ -991,9 +991,71 @@ tr:hover td {
   border-top: 1px solid var(--border-color);
 }
 
+.footer-quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.footer-pip-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-pip-code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--accent-blue);
+  font-weight: 600;
+  direction: ltr !important;
+  text-align: left;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.footer-badge-link:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-blue);
+  background: var(--bg-card-hover);
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
     grid-template-columns: 1fr;
   }
   .footer-grid {
@@ -1169,10 +1231,35 @@ tasleemat validate PMO-04.14 completed_data.json</code></pre>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <!-- Quick Installation & GitHub Repository Bar -->
+      <div class="footer-quick-bar">
+        <div class="footer-pip-box">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
+            تثبيت الحزمة عبر pip:
+          </span>
+          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ', 2000);">
+            نسخ
+          </button>
+        </div>
+        <div class="footer-links-row">
+          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+            📦 حزمة PyPI (v2.5.0.post1)
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link">
+            🐙 مستودع GitHub للمشروع
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            💬 إبلاغ عن ملاحظة
+          </a>
+        </div>
+      </div>
+
       <div class="footer-grid">
         <div>
           <div class="footer-heading">📦 تسليمات</div>
           <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+
           <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
         </div>
         <div>

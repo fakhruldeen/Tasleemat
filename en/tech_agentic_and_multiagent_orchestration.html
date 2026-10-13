@@ -991,9 +991,71 @@ tr:hover td {
   border-top: 1px solid var(--border-color);
 }
 
+.footer-quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.footer-pip-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-pip-code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--accent-blue);
+  font-weight: 600;
+  direction: ltr !important;
+  text-align: left;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.footer-badge-link:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-blue);
+  background: var(--bg-card-hover);
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
     grid-template-columns: 1fr;
   }
   .footer-grid {
@@ -1063,13 +1125,7 @@ tr:hover td {
               </nav>
 
               <div class="card markdown-body" style="padding: 2.5rem; line-height: 1.8;">
-                <!--
----
-type: Guide
----
--->
-
-<div class="lang-switch-bar">
+                <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>Language:</strong> English Technical Manual</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/en/tech_agentic_and_multiagent_orchestration.md" target="_blank" rel="noopener noreferrer">🐙 View on GitHub ↗</a>
@@ -1077,12 +1133,6 @@ type: Guide
   </div>
 </div>
 
-<hr />
-<h1 id="technical-guide-agentic-pmo-multi-agent-orchestration">🤖 Technical Guide: Agentic PMO &amp; Multi-Agent Orchestration</h1>
-<p><strong>Document ID:</strong> <code>TASLEEMAT-TECH-AGENTIC-MULTIAGENT</code><br />
-<strong>Target Audience:</strong> Autonomous Agent Developers, Multi-Agent System Architects, PMO Automation Engineers<br />
-<strong>Ecosystems Supported:</strong> Model Context Protocol (MCP), CrewAI, LangGraph, AutoGen, OpenAI Swarm  </p>
-<hr />
 <h2 id="architectural-purpose">🎯 Architectural Purpose</h2>
 <p>In next-generation enterprise environments, PMO documentation and governance checks are increasingly handled by <strong>autonomous single-agent and multi-agent systems</strong>. Instead of human practitioners manually copying data across dozens of templates, autonomous software agents:
 1. Discover required project artifacts dynamically.
@@ -1259,10 +1309,35 @@ Step 5: Only upon {&quot;valid&quot;: true} does the agent write output to the w
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <!-- Quick Installation & GitHub Repository Bar -->
+      <div class="footer-quick-bar">
+        <div class="footer-pip-box">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
+            Install Package:
+          </span>
+          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy', 2000);">
+            Copy
+          </button>
+        </div>
+        <div class="footer-links-row">
+          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+            📦 PyPI Package (v2.5.0.post1)
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link">
+            🐙 GitHub Source Code
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            💬 Report Issue
+          </a>
+        </div>
+      </div>
+
       <div class="footer-grid">
         <div>
           <div class="footer-heading">📦 Tasleemat</div>
           <p style="margin-bottom: 1rem;">Tasleemat is a bilingual open deliverable library and supporting toolkit. Not a live PMO application or approval authority.</p>
+
           <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
         </div>
         <div>

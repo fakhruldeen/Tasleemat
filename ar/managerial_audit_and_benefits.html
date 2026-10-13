@@ -991,9 +991,71 @@ tr:hover td {
   border-top: 1px solid var(--border-color);
 }
 
+.footer-quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.footer-pip-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-pip-code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--accent-blue);
+  font-weight: 600;
+  direction: ltr !important;
+  text-align: left;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.footer-badge-link:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-blue);
+  background: var(--bg-card-hover);
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
     grid-template-columns: 1fr;
   }
   .footer-grid {
@@ -1063,13 +1125,7 @@ tr:hover td {
               </nav>
 
               <div class="card markdown-body" style="padding: 2.5rem; line-height: 1.8;">
-                <!--
----
-type: Guide
----
--->
-
-<div class="lang-switch-bar">
+                <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل التنفيذي باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/managerial_audit_and_benefits.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -1077,18 +1133,12 @@ type: Guide
   </div>
 </div>
 
-<hr />
-<h1 id="_1">📈 دليل القيادات التنفيذية: الجاهزية للتدقيق، حوكمة التغيير، وتحقيق الفوائد</h1>
-<p><strong>مرجع الوثيقة:</strong> <code>TASLEEMAT-EXEC-AUDIT-BENEFITS-AR</code><br />
-<strong>الفئات المستهدفة:</strong> المدراء الماليون (CFO)، مدراء المراجعة والتدقيق الداخلي، مسؤولو تحقيق الفوائد المؤسسية، ورؤساء لجان التحكم بالتغيير (CCB)<br />
-<strong>المعايير المرجعية:</strong> معيار معهد إدارة المشاريع لإدارة البرامج PMI Standard for Program Management، ومعايير أيزو ISO 21500، وحوكمة تقنية المعلومات COBIT 2019  </p>
-<hr />
 <div class="admonition note"><div class="admonition-title">NOTE</div><p>> **إقرار نموذج الحوكمة المؤسسي المقترح**</p></div>
 <blockquote>
 <p>تمثل حدود الانحراف المالي والزمني وآليات قياس الفوائد الموضحة في هذا الدليل معايير استرشادية قياسية تتطلب المواءمة الرسمية مع لائحة الصلاحيات المالية وسياسات العقود والمشتريات المعتمدة في المنشأة.</p>
 </blockquote>
 <hr />
-<h2 id="_2">🎯 الأهمية الاستراتيجية: استدامة القيمة المؤسسية لما بعد التسليم</h2>
+<h2 id="_1">🎯 الأهمية الاستراتيجية: استدامة القيمة المؤسسية لما بعد التسليم</h2>
 <p>في الفكر القيادي الحديث، لا يُعد إنجاز المشروع في الوقت والميزانية المحددة المعيار الوحيد للنجاح؛ بل يقاس النجاح الحقيقي بقدرة المشروع على:
 1. <strong>الصمود أمام التدقيق والمراجعة</strong>: إثبات الشفافية الكاملة، وسلامة سلاسل الاعتماد، ووجود سجلات مالية وقرارات حوكمية قابلة للتدقيق.
 2. <strong>التحكم الصارم بتعديلات خطوط الأساس</strong>: منع زحف النطاق العشوائي من خلال لجنة رسمية للتحكم بالتغيير (CCB).
@@ -1114,7 +1164,7 @@ type: Guide
 <hr />
 <h2 id="ccb">🏛️ ميثاق وصلاحيات لجنة التحكم بالتغيير (CCB)</h2>
 <p>تُعد لجنة التحكم بالتغيير (Change Control Board) المرجع الحوكمي الأعلى لأي تعديل يمس خطوط قياس الأداء المعتمدة للمشروع. ولا تتدخل اللجنة في إدارة المهام اليومية، بل ينصب تركيزها حصرياً على فحص وتقييم التغييرات المقترحة على نطاق العمل، أو الميزانية، أو الجدول الزمني المعتمد.</p>
-<h3 id="_3">جدول مصفوفة تصعيد التغييرات الحوكمية</h3>
+<h3 id="_2">جدول مصفوفة تصعيد التغييرات الحوكمية</h3>
 <pre><code>┌─────────────────────────────────┬──────────────────────────────────┬─────────────────────────────────┐
 │ نسبة وحجم الانحراف              │ المستوى الإجرائي                  │ جهة الاعتماد الحوكمية المطلوبة  │
 ├─────────────────────────────────┼──────────────────────────────────┼─────────────────────────────────┤
@@ -1175,10 +1225,35 @@ type: Guide
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <!-- Quick Installation & GitHub Repository Bar -->
+      <div class="footer-quick-bar">
+        <div class="footer-pip-box">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
+            تثبيت الحزمة عبر pip:
+          </span>
+          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ', 2000);">
+            نسخ
+          </button>
+        </div>
+        <div class="footer-links-row">
+          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+            📦 حزمة PyPI (v2.5.0.post1)
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link">
+            🐙 مستودع GitHub للمشروع
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            💬 إبلاغ عن ملاحظة
+          </a>
+        </div>
+      </div>
+
       <div class="footer-grid">
         <div>
           <div class="footer-heading">📦 تسليمات</div>
           <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+
           <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
         </div>
         <div>

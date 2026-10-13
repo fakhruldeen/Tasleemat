@@ -991,9 +991,71 @@ tr:hover td {
   border-top: 1px solid var(--border-color);
 }
 
+.footer-quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.footer-pip-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-pip-code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--accent-blue);
+  font-weight: 600;
+  direction: ltr !important;
+  text-align: left;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.footer-badge-link:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-blue);
+  background: var(--bg-card-hover);
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
     grid-template-columns: 1fr;
   }
   .footer-grid {
@@ -1145,20 +1207,7 @@ tr:hover td {
               Copy Markdown
             </button>
           </div>
-          <pre id="code-template"><code>&lt;!--
----
-type: Form
-token_pointer: /_tokens/forms/en/05_Executing/08_Retrospective/05_08_Retrospective_Template.npy
-token_count: 1792
-tokenizer_model_id: tiktoken/o200k_base
-created_at: &#x27;2026-10-06T16:05:29.063365+00:00&#x27;
-form_id: PMO-05.08
-language: en
-status: approved
----
---&gt;
-
-&lt;!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+          <pre id="code-template"><code>&lt;!--  LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
 
 The retrospective is an activity that is performed at the end of every sprint. The information is usually recorded on sticky notes or recorded in software. A common retrospective approach is called a &quot;starfish,&quot; which collects Start, Stop, Keep, More, and Less.
 
@@ -1272,20 +1321,7 @@ Column guidance, by column:
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
           <div class="markdown-body" style="line-height: 1.8;">
-            <hr />
-<p>type: Form
-lang: en
-layout: default
-title: Retrospective
-nav_order: 1
-token_pointer: /_tokens/forms/en/05_Executing/08_Retrospective/05_08_Retrospective_Guide.npy
-token_count: 1476
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:29.063985+00:00'
-form_id: PMO-05.08
-status: approved</p>
-<hr />
-<div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
+            <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 ## Tasleemat Forms Guide
 # Project Artifact: Retrospective
@@ -1737,10 +1773,35 @@ A fully completed, gold-standard reference example illustrating this artifact in
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <!-- Quick Installation & GitHub Repository Bar -->
+      <div class="footer-quick-bar">
+        <div class="footer-pip-box">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
+            Install Package:
+          </span>
+          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy', 2000);">
+            Copy
+          </button>
+        </div>
+        <div class="footer-links-row">
+          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+            📦 PyPI Package (v2.5.0.post1)
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link">
+            🐙 GitHub Source Code
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            💬 Report Issue
+          </a>
+        </div>
+      </div>
+
       <div class="footer-grid">
         <div>
           <div class="footer-heading">📦 Tasleemat</div>
           <p style="margin-bottom: 1rem;">Tasleemat is a bilingual open deliverable library and supporting toolkit. Not a live PMO application or approval authority.</p>
+
           <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
         </div>
         <div>
