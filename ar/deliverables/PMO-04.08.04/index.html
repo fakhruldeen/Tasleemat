@@ -809,6 +809,147 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* ==========================================================================
+   Realistic Example & Form Viewer Components (Stitch Design System)
+   ========================================================================== */
+
+.deliverable-header-card {
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0.5rem 0 1.25rem 0;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .deliverable-header-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.deliverable-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  line-height: 1.2;
+}
+
+.badge-code {
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+}
+
+[data-theme="dark"] .badge-code {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.badge-phase {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+[data-theme="dark"] .badge-phase {
+  background-color: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+.badge-example {
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+[data-theme="dark"] .badge-example {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Document Metadata Bar & Chips */
+.doc-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doc-meta-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.doc-meta-chip:hover {
+  border-color: var(--border-focus);
+}
+
+.meta-chip-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.meta-chip-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  word-break: break-word;
+}
+
+/* Form Viewer Container & Elevation */
+.form-viewer-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .form-viewer-container {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+.form-viewer-container table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-viewer-container blockquote {
+  background: var(--bg-main);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+}
+
+[dir="rtl"] .form-viewer-container blockquote {
+  border-radius: 8px 0 0 8px;
+}
+
+
+
 /* Footer */
 .site-footer {
   margin-top: auto;
@@ -1165,81 +1306,108 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div class="markdown-body" style="line-height: 1.8;">
-            <hr />
-<p>type: Example
-token_pointer: /_tokens/examples/ar/04_التخطيط/08_المخاطر/04_مصفوفة_الاحتمالية_والأثر/04_08_04_مصفوفة_الاحتمالية_والأثر_مثال.npy
-token_count: 1055
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:29.158388+00:00'</p>
+          <!-- Deliverable Header Card & Badge Row -->
+          <div class="deliverable-header-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <div class="deliverable-badge-row">
+                <span class="badge badge-code">PMO-04.08.04</span>
+                <span class="badge badge-phase">المرحلة 04: التخطيط</span>
+                <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn-utility" onclick="window.print()">
+                  🖨️ طباعة / PDF
+                </button>
+                <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('example-prose').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ النص', 2000);">
+                  📋 نسخ النص
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Control Meta Strip -->
+          <div class="doc-meta-bar">
+<div class="doc-meta-chip"><div class="meta-chip-label">تاريخ الإعداد</div><div class="meta-chip-val">2026-03-15</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">مدير المشروع</div><div class="meta-chip-val">م. فيصل الحربي، PMP</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">تم الإعداد بواسطة</div><div class="meta-chip-val">م. فيصل الحربي، PMP (مدير المشروع)</div></div>
+</div>
+
+          <!-- Form Sheet & Rendered Document Prose -->
+          <div class="form-viewer-container markdown-body" id="example-prose" style="line-height: 1.85;">
+            <h1 id="_1">مصفوفة الاحتمالية والأثر (نموذج تطبيقي معبأ)</h1>
+<blockquote>
+<p>🏆 <strong>نموذج استرشادي مكتمل (Gold Standard):</strong> يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (<code>PMO-04.08</code>). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.</p>
+</blockquote>
 <hr />
-<div>
-
-# مصفوفة الاحتمالية والأثر (نموذج تطبيقي معبأ)
-> 🏆 **نموذج استرشادي مكتمل (Gold Standard):** يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (`PMO-04.08`). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.
-
----
-
-
-
 <h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
 <h2 align="left">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
 <h1 align="center">مصفوفة الاحتمالية والأثر</h1>
 
-| **تاريخ الإعداد:** 2026-03-15 | **مدير المشروع:** م. فيصل الحربي، PMP | **تم الإعداد بواسطة:** م. فيصل الحربي، PMP (مدير المشروع) |
-| ---: | ---: | ---: |
-
----
-
-## 1. هيكلية المصفوفة وعتبات التقييم
-
-**أبعاد وتدريج شبكة المصفوفة:**
-تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).
-
-**نطاقات تحمل المخاطر والخطورة:**
-تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).
-
----
-
-## 2. شبكة تقييم التهديدات والفرص
-
-**شبكة تقييم التهديدات السلبية:**
-تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).
-
-**شبكة تقييم الفرص الإيجابية:**
-تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).
-
----
-
-## 3. عتبات المخاطر وقواعد التصعيد
-
-**عتبات الاستجابة الإلزامية:**
+<hr />
+<h2 id="1">1. هيكلية المصفوفة وعتبات التقييم</h2>
+<p><strong>أبعاد وتدريج شبكة المصفوفة:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>نطاقات تحمل المخاطر والخطورة:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h2 id="2">2. شبكة تقييم التهديدات والفرص</h2>
+<p><strong>شبكة تقييم التهديدات السلبية:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>شبكة تقييم الفرص الإيجابية:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h2 id="3">3. عتبات المخاطر وقواعد التصعيد</h2>
+<p><strong>عتبات الاستجابة الإلزامية:</strong>
 المخاطر الكلية واستراتيجية المعالجة:
-تم تقييم مستوى المخاطر الكلي للمشروع بدرجة 'متوسطة إلى عالية' نظراً لتعدد واجهات التكامل وتأثير التغيير على العمليات اليومية. تم وضع خطط تخفيف تشمل تكليف فريق دعم مخصص للترحيل، تطبيق منهجية تدريجية للإطلاق التجريبي (Pilot)، ورصد احتياطي طوارئ مالي بنسبة 10% واحتياطي زمني قدره 4 أسابيع على المسار الحرج.
-
-**بروتوكولات التصعيد التنفيذي:**
+تم تقييم مستوى المخاطر الكلي للمشروع بدرجة 'متوسطة إلى عالية' نظراً لتعدد واجهات التكامل وتأثير التغيير على العمليات اليومية. تم وضع خطط تخفيف تشمل تكليف فريق دعم مخصص للترحيل، تطبيق منهجية تدريجية للإطلاق التجريبي (Pilot)، ورصد احتياطي طوارئ مالي بنسبة 10% واحتياطي زمني قدره 4 أسابيع على المسار الحرج.</p>
+<p><strong>بروتوكولات التصعيد التنفيذي:</strong>
 المخاطر الكلية واستراتيجية المعالجة:
-تم تقييم مستوى المخاطر الكلي للمشروع بدرجة 'متوسطة إلى عالية' نظراً لتعدد واجهات التكامل وتأثير التغيير على العمليات اليومية. تم وضع خطط تخفيف تشمل تكليف فريق دعم مخصص للترحيل، تطبيق منهجية تدريجية للإطلاق التجريبي (Pilot)، ورصد احتياطي طوارئ مالي بنسبة 10% واحتياطي زمني قدره 4 أسابيع على المسار الحرج.
-
----
-
-### الاعتماد والموافقات
-
-| الدور | الاسم | التوقيع | التاريخ |
-| ---: | ---: | ---: | ---: |
-| **مدير المخاطر** | أ. ليلى العمري، PMI-RMP | [معتمد إلكترونياً] | 2026-03-18 |
-| **مدير المشروع** | م. فيصل الحربي، PMP | [معتمد إلكترونياً] | 2026-03-18 |
-| **مسؤول مكتب إدارة المشاريع** | د. طارق المنصور، PfMP | [معتمد إلكترونياً] | 2026-03-18 |
----
-
+تم تقييم مستوى المخاطر الكلي للمشروع بدرجة 'متوسطة إلى عالية' نظراً لتعدد واجهات التكامل وتأثير التغيير على العمليات اليومية. تم وضع خطط تخفيف تشمل تكليف فريق دعم مخصص للترحيل، تطبيق منهجية تدريجية للإطلاق التجريبي (Pilot)، ورصد احتياطي طوارئ مالي بنسبة 10% واحتياطي زمني قدره 4 أسابيع على المسار الحرج.</p>
+<hr />
+<h3 id="_2">الاعتماد والموافقات</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مدير المخاطر</strong></td>
+<td style="text-align: right;">أ. ليلى العمري، PMI-RMP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مدير المشروع</strong></td>
+<td style="text-align: right;">م. فيصل الحربي، PMP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مسؤول مكتب إدارة المشاريع</strong></td>
+<td style="text-align: right;">د. طارق المنصور، PfMP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
 <div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
  <strong>القالب:</strong> مصفوفة الاحتمالية والأثر | <strong>المرجع:</strong> PMO-04.08.04 <br>
  <i>تم التوليد في: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
 </div>
-
-</div>
           </div>
         </div>
+
 
         <!-- Tab 5: Schema -->
         <div id="tab-schema" class="tab-pane" role="tabpanel">

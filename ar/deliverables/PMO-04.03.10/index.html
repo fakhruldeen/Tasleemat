@@ -809,6 +809,147 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* ==========================================================================
+   Realistic Example & Form Viewer Components (Stitch Design System)
+   ========================================================================== */
+
+.deliverable-header-card {
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0.5rem 0 1.25rem 0;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .deliverable-header-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.deliverable-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  line-height: 1.2;
+}
+
+.badge-code {
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+}
+
+[data-theme="dark"] .badge-code {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.badge-phase {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+[data-theme="dark"] .badge-phase {
+  background-color: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+.badge-example {
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+[data-theme="dark"] .badge-example {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Document Metadata Bar & Chips */
+.doc-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doc-meta-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.doc-meta-chip:hover {
+  border-color: var(--border-focus);
+}
+
+.meta-chip-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.meta-chip-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  word-break: break-word;
+}
+
+/* Form Viewer Container & Elevation */
+.form-viewer-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .form-viewer-container {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+.form-viewer-container table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-viewer-container blockquote {
+  background: var(--bg-main);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+}
+
+[dir="rtl"] .form-viewer-container blockquote {
+  border-radius: 8px 0 0 8px;
+}
+
+
+
 /* Footer */
 .site-footer {
   margin-top: auto;
@@ -1225,15 +1366,35 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div class="markdown-body" style="line-height: 1.8;">
-            <hr />
-<p>type: Example
-token_pointer: /_tokens/examples/ar/04_التخطيط/03_الجدول_الزمني/10_سجل_تخطيط_أسبوع_العمل/04_03_10_سجل_تخطيط_أسبوع_العمل_مثال.npy
-token_count: 1403
-tokenizer_model_id: tiktoken/o200k_base
-created_at: '2026-10-06T16:05:29.162574+00:00'</p>
-<hr />
-<h1 id="_1">سجل تخطيط أسبوع العمل (نموذج تطبيقي معبأ)</h1>
+          <!-- Deliverable Header Card & Badge Row -->
+          <div class="deliverable-header-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <div class="deliverable-badge-row">
+                <span class="badge badge-code">PMO-04.03.10</span>
+                <span class="badge badge-phase">المرحلة 04: التخطيط</span>
+                <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn-utility" onclick="window.print()">
+                  🖨️ طباعة / PDF
+                </button>
+                <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('example-prose').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ النص', 2000);">
+                  📋 نسخ النص
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Control Meta Strip -->
+          <div class="doc-meta-bar">
+<div class="doc-meta-chip"><div class="meta-chip-label">تاريخ الإعداد</div><div class="meta-chip-val">2026-03-15</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">مدير المشروع</div><div class="meta-chip-val">م. فيصل الحربي، PMP</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">أعدّها</div><div class="meta-chip-val">م. فيصل الحربي، PMP (مدير المشروع)</div></div>
+</div>
+
+          <!-- Form Sheet & Rendered Document Prose -->
+          <div class="form-viewer-container markdown-body" id="example-prose" style="line-height: 1.85;">
+            <h1 id="_1">سجل تخطيط أسبوع العمل (نموذج تطبيقي معبأ)</h1>
 <blockquote>
 <p>🏆 <strong>نموذج استرشادي مكتمل (Gold Standard):</strong> يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (<code>PMO-04.03</code>). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.</p>
 </blockquote>
@@ -1242,22 +1403,6 @@ created_at: '2026-10-06T16:05:29.162574+00:00'</p>
 <h2 align="left">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
 <h1 align="center">سجل تخطيط دورة تطوير</h1>
 
-<table>
-<thead>
-<tr>
-<th style="text-align: right;"><strong>تاريخ الإعداد:</strong> 2026-03-15</th>
-<th><strong>مدير المشروع:</strong> م. فيصل الحربي، PMP</th>
-<th><strong>أعدّها:</strong> م. فيصل الحربي، PMP (مدير المشروع)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: right;">---</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <h2 id="1">1. إطار دورة تطوير</h2>
 <!-- الحقول في هذا القسم: هدف دورة تطوير، مدة دورة تطوير، أساس الطاقة الاستيعابية، المنقول من دورة تطوير السابقة -->
 
@@ -1418,9 +1563,9 @@ created_at: '2026-10-06T16:05:29.162574+00:00'</p>
 <div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
  <strong>النموذج:</strong> سجل تخطيط دورة تطوير <strong>المرجع:</strong> PMO-04.03.10 <br>
  <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
-</div>
           </div>
         </div>
+
 
         <!-- Tab 5: Schema -->
         <div id="tab-schema" class="tab-pane" role="tabpanel">
