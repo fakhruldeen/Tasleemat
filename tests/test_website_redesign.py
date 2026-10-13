@@ -134,6 +134,39 @@ class TestWebsiteRedesign(unittest.TestCase):
         self.assertTrue(hasattr(result, "valid"))
         self.assertTrue(hasattr(result, "errors"))
 
+    def test_example_tab_form_viewer_design(self):
+        """Verifies that Tab 4 (Realistic Example) features the previous website's form design."""
+        # Test an Arabic detail page (e.g. PMO-03.01)
+        detail_ar = ROOT / "site" / "ar" / "deliverables" / "PMO-03.01" / "index.html"
+        self.assertTrue(detail_ar.exists(), "PMO-03.01 Arabic detail page must exist")
+        html_ar = detail_ar.read_text(encoding="utf-8")
+
+        self.assertIn('id="tab-example"', html_ar)
+        self.assertIn('deliverable-header-card', html_ar)
+        self.assertIn('deliverable-badge-row', html_ar)
+        self.assertIn('badge-code', html_ar)
+        self.assertIn('badge-phase', html_ar)
+        self.assertIn('badge-example', html_ar)
+        self.assertIn('doc-meta-bar', html_ar)
+        self.assertIn('doc-meta-chip', html_ar)
+        self.assertIn('form-viewer-container', html_ar)
+
+        # Test an English detail page
+        detail_en = ROOT / "site" / "deliverables" / "PMO-03.01" / "index.html"
+        self.assertTrue(detail_en.exists(), "PMO-03.01 English detail page must exist")
+        html_en = detail_en.read_text(encoding="utf-8")
+
+        self.assertIn('id="tab-example"', html_en)
+        self.assertIn('deliverable-header-card', html_en)
+        self.assertIn('deliverable-badge-row', html_en)
+        self.assertIn('badge-code', html_en)
+        self.assertIn('badge-phase', html_en)
+        self.assertIn('badge-example', html_en)
+        self.assertIn('doc-meta-bar', html_en)
+        self.assertIn('doc-meta-chip', html_en)
+        self.assertIn('form-viewer-container', html_en)
+
 
 if __name__ == "__main__":
     unittest.main()
+

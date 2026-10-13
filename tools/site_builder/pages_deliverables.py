@@ -11,10 +11,66 @@ Features:
   5. Companion JSON Schema (Draft 2020-12)
 """
 
+import re
 import json
 import html
 import markdown
 from tools.site_builder.theme import render_html_page
+
+def _extract_meta_chips(md_text: str):
+    """Extract metadata chips (e.g. Project Sponsor, PM, Date, Budget) from example document."""
+    txt = md_text
+    if txt.startswith("---"):
+        parts = txt.split("---", 2)
+        if len(parts) >= 3:
+            txt = parts[2]
+            
+    lines = txt.splitlines()[:50]
+    tbl_lines = [l.strip() for l in lines if l.strip().startswith("|") and l.strip().endswith("|")]
+    chips = []
+    if tbl_lines:
+        for l in tbl_lines:
+            if re.match(r"^\|[\s\-:|]+\|$", l):
+                continue
+            cells = [c.strip() for c in l.split("|")[1:-1] if c.strip()]
+            for cell in cells:
+                clean_cell = cell.replace("**", "").replace("__", "").strip()
+                if ":" in clean_cell or "：" in clean_cell:
+                    delim = ":" if ":" in clean_cell else "："
+                    k, v = clean_cell.split(delim, 1)
+                    if k.strip() and v.strip():
+                        chips.append((k.strip(), v.strip()))
+    return chips
+
+def _clean_example_content(md_text: str):
+    """Clean markdown frontmatter, wrappers, and remove redundant metadata table to render inside styled form container."""
+    txt = md_text
+    if txt.startswith("---"):
+        parts = txt.split("---", 2)
+        if len(parts) >= 3:
+            txt = parts[2]
+            
+    txt = re.sub(r"^\s*<div[^>]*>\s*", "", txt)
+    txt = re.sub(r"\s*</div>\s*$", "", txt)
+    
+    lines = txt.splitlines()
+    new_lines = []
+    in_meta_table = False
+    table_removed = False
+    
+    for idx, l in enumerate(lines):
+        if idx < 45 and not table_removed:
+            if l.strip().startswith("|") and l.strip().endswith("|"):
+                in_meta_table = True
+                continue
+            elif in_meta_table:
+                in_meta_table = False
+                table_removed = True
+                if l.strip() == "---":
+                    continue
+        new_lines.append(l)
+    return "\n".join(new_lines).strip()
+
 
 PHASES_NAME_MAP = {
     "00": ("00. Program & Portfolio Management", "00. إدارة البرامج والمحافظ"),
@@ -247,7 +303,20 @@ def generate_detail_page(
 
     # Convert markdown contents safely to HTML
     rendered_guide_html = markdown.markdown(guide_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
-    rendered_example_html = markdown.markdown(example_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
+
+    # Extract metadata chips and clean example markdown for rich form-viewer display
+    example_chips = _extract_meta_chips(example_content)
+    cleaned_example_md = _clean_example_content(example_content)
+    rendered_example_html = markdown.markdown(cleaned_example_md, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
+
+    # Render metadata chips block if available
+    chips_html = ""
+    if example_chips:
+        chips_inner = "\n".join([
+            f'<div class="doc-meta-chip"><div class="meta-chip-label">{html.escape(k)}</div><div class="meta-chip-val">{html.escape(v)}</div></div>'
+            for k, v in example_chips
+        ])
+        chips_html = f'<div class="doc-meta-bar">\n{chips_inner}\n</div>'
 
     # Format JSON schema cleanly
     if isinstance(schema_content, dict):
@@ -258,6 +327,7 @@ def generate_detail_page(
             formatted_schema_json = json.dumps(parsed_schema, indent=2, ensure_ascii=False)
         except Exception:
             formatted_schema_json = str(schema_content)
+
 
     content = f"""
     <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
@@ -362,10 +432,34 @@ def generate_detail_page(
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div class="markdown-body" style="line-height: 1.8;">
+          <!-- Deliverable Header Card & Badge Row -->
+          <div class="deliverable-header-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <div class="deliverable-badge-row">
+                <span class="badge badge-code">{art_id}</span>
+                <span class="badge badge-phase">{"Phase" if not is_ar else "المرحلة"} {phase_code}: {phase_title}</span>
+                <span class="badge badge-example">{"Realistic Case Study Benchmark" if not is_ar else "دراسة حالة واقعية مكتملة"}</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn-utility" onclick="window.print()">
+                  🖨️ {"Print / PDF" if not is_ar else "طباعة / PDF"}
+                </button>
+                <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('example-prose').innerText); this.innerText='{'Copied!' if not is_ar else 'تم النسخ!'}'; setTimeout(() => this.innerText='{'Copy Text' if not is_ar else 'نسخ النص'}', 2000);">
+                  📋 {"Copy Text" if not is_ar else "نسخ النص"}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Control Meta Strip -->
+          {chips_html}
+
+          <!-- Form Sheet & Rendered Document Prose -->
+          <div class="form-viewer-container markdown-body" id="example-prose" style="line-height: 1.85;">
             {rendered_example_html}
           </div>
         </div>
+
 
         <!-- Tab 5: Schema -->
         <div id="tab-schema" class="tab-pane" role="tabpanel">
