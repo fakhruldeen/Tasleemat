@@ -166,7 +166,42 @@ class TestWebsiteRedesign(unittest.TestCase):
         self.assertIn('doc-meta-chip', html_en)
         self.assertIn('form-viewer-container', html_en)
 
+    def test_footer_pip_and_github_links(self):
+        """Verifies that all pages include pip install command and GitHub links in the footer."""
+        sample_pages = [
+            ROOT / "site" / "index.html",
+            ROOT / "site" / "ar" / "index.html",
+            ROOT / "site" / "deliverables" / "index.html",
+            ROOT / "site" / "guides" / "index.html",
+            ROOT / "site" / "en" / "01_getting_started.html",
+            ROOT / "site" / "ar" / "01_getting_started.html",
+            ROOT / "site" / "deliverables" / "PMO-03.01" / "index.html",
+            ROOT / "site" / "ar" / "deliverables" / "PMO-03.01" / "index.html",
+        ]
+        for page in sample_pages:
+            self.assertTrue(page.exists(), f"Page {page} must exist")
+            html = page.read_text(encoding="utf-8")
+            self.assertIn("pip install tasleemat", html, f"pip install link missing in {page}")
+            self.assertIn("https://github.com/fakhruldeen/Tasleemat", html, f"GitHub link missing in {page}")
+
+    def test_no_visible_yaml_frontmatter(self):
+        """Verifies that markdown YAML frontmatter (e.g. token_pointer, tokenizer_model_id) is not visible in compiled pages."""
+        import re
+        sample_pages = [
+            ROOT / "site" / "en" / "01_getting_started.html",
+            ROOT / "site" / "ar" / "07_document_dependencies.html",
+            ROOT / "site" / "deliverables" / "PMO-03.01" / "index.html",
+            ROOT / "site" / "ar" / "deliverables" / "PMO-03.01" / "index.html",
+        ]
+        for page in sample_pages:
+            self.assertTrue(page.exists(), f"Page {page} must exist")
+            html = page.read_text(encoding="utf-8")
+            # Frontmatter block like type: Guide token_pointer: should not be present
+            matches = re.findall(r'type:\s*(?:Guide|Form|Overview|Manual|Example)[\s\S]{0,100}token_pointer:', html)
+            self.assertEqual(len(matches), 0, f"Found visible YAML frontmatter in {page}: {matches}")
+
 
 if __name__ == "__main__":
     unittest.main()
+
 

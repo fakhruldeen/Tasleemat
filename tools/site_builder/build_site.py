@@ -49,13 +49,20 @@ def compile_manual_pages():
             for line in raw_md.splitlines():
                 if line.startswith("# "):
                     title = line[2:].strip()
+
+            # Clean YAML frontmatter and token metadata (including comment-wrapped or lang-bar-separated blocks)
+            cleaned_md = raw_md
+            cleaned_md = re.sub(r"^\s*<!--\s*\n*---\s*\n.*?\n---\s*\n*-->\s*", "", cleaned_md, flags=re.DOTALL)
+            cleaned_md = re.sub(r"^\s*---\s*\n.*?\n---\s*", "", cleaned_md, flags=re.DOTALL)
+            cleaned_md = re.sub(r"(<div class=\"lang-switch-bar\">.*?</div>\s*)\n*---\s*\n.*?\n---\s*", r"\1\n", cleaned_md, flags=re.DOTALL)
+
             # Support callouts like > [!NOTE], > [!IMPORTANT], > [!WARNING]
             def repl_callout(m):
                 kind = m.group(1).upper()
                 body = m.group(2).strip()
                 return f'<div class="admonition {kind.lower()}"><div class="admonition-title">{kind}</div><p>{body}</p></div>'
 
-            processed_md = re.sub(r"^>\s*\[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*(.*)$", repl_callout, raw_md, flags=re.MULTILINE | re.IGNORECASE)
+            processed_md = re.sub(r"^>\s*\[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*(.*)$", repl_callout, cleaned_md, flags=re.MULTILINE | re.IGNORECASE)
 
             body_html = markdown.markdown(processed_md, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
             

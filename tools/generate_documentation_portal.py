@@ -2512,16 +2512,20 @@ def compile_static_site(deliverables):
         if content.startswith("<!--") and "-->" in content:
             content = content.split("-->", 1)[1]
         
-        # Strip frontmatter blocks (both with and without comment markers)
+        # Strip frontmatter blocks (both with and without comment markers or after header cards)
         content = re.sub(r'<!--\s*---\s*.*?---\s*-->', '', content, flags=re.DOTALL)
-        content = re.sub(r'---\s*\n\s*type:\s*Form.*?\n---\s*\n', '', content, flags=re.DOTALL)
-        content = re.sub(r'^---\s*\n.*?\n---\s*\n', '', content, flags=re.DOTALL)
+        content = re.sub(r'---\s*\n\s*type:\s*(?:Form|Guide|Example|Manual|Overview).*?\n---\s*\n', '', content, flags=re.DOTALL)
+        content = re.sub(r'^\s*---\s*\n.*?\n---\s*\n', '', content, flags=re.DOTALL)
+        content = re.sub(r'---\s*\n\s*---\s*\n\s*type:\s*(?:Form|Guide|Example|Manual|Overview).*?\n---\s*\n', '', content, flags=re.DOTALL)
+        content = re.sub(r'(<div class=[\"\x27]deliverable-header-card.*?</div>\s*)\n*-+\s*\n*-+\s*\n*type:.*?\n-+\s*\n', r'\1\n', content, flags=re.DOTALL)
+        content = re.sub(r'(<div class=[\"\x27]lang-switch-bar.*?</div>\s*)\n*-+\s*\n*type:.*?\n-+\s*\n', r'\1\n', content, flags=re.DOTALL)
         
         # Strip raw container divs that prevent python-markdown from parsing markdown inside them
         content = re.sub(r'<div[^>]*markdown=[\"\x27]1[\"\x27][^>]*>', '', content)
         content = re.sub(r'\n<div>\s*\n', '\n\n', content)
         content = re.sub(r'\n<div\s+dir=[\"\x27](?:rtl|ltr)[\"\x27]>\s*\n', '\n\n', content)
         content = re.sub(r'</div>\s*$', '', content)
+
 
         h1_match = re.search(r'<h1[^>]*>(.+?)</h1>', content, re.DOTALL) or re.search(r"^#\s+(.+)$", content, re.MULTILINE)
         if h1_match:

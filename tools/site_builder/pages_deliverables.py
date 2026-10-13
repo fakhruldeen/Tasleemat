@@ -42,13 +42,17 @@ def _extract_meta_chips(md_text: str):
                         chips.append((k.strip(), v.strip()))
     return chips
 
+def strip_yaml_frontmatter(md_text: str) -> str:
+    """Strips YAML frontmatter and token pointers from markdown documents."""
+    txt = md_text
+    txt = re.sub(r"^\s*<!--\s*\n*---\s*\n.*?\n---\s*\n*-->\s*", "", txt, flags=re.DOTALL)
+    txt = re.sub(r"^\s*---\s*\n.*?\n---\s*", "", txt, flags=re.DOTALL)
+    txt = re.sub(r"(<div class=\"lang-switch-bar\">.*?</div>\s*)\n*---\s*\n.*?\n---\s*", r"\1\n", txt, flags=re.DOTALL)
+    return txt
+
 def _clean_example_content(md_text: str):
     """Clean markdown frontmatter, wrappers, and remove redundant metadata table to render inside styled form container."""
-    txt = md_text
-    if txt.startswith("---"):
-        parts = txt.split("---", 2)
-        if len(parts) >= 3:
-            txt = parts[2]
+    txt = strip_yaml_frontmatter(md_text)
             
     txt = re.sub(r"^\s*<div[^>]*>\s*", "", txt)
     txt = re.sub(r"\s*</div>\s*$", "", txt)
@@ -70,6 +74,7 @@ def _clean_example_content(md_text: str):
                     continue
         new_lines.append(l)
     return "\n".join(new_lines).strip()
+
 
 
 PHASES_NAME_MAP = {
@@ -301,8 +306,12 @@ def generate_detail_page(
     unique_packs = sorted(list(set(packs_list)))
     pack_badges = " ".join([f'<span class="tag pack">{p}</span>' for p in unique_packs])
 
+    # Clean frontmatter from template and guide
+    cleaned_template_content = strip_yaml_frontmatter(template_content)
+    cleaned_guide_content = strip_yaml_frontmatter(guide_content)
+
     # Convert markdown contents safely to HTML
-    rendered_guide_html = markdown.markdown(guide_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
+    rendered_guide_html = markdown.markdown(cleaned_guide_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
 
     # Extract metadata chips and clean example markdown for rich form-viewer display
     example_chips = _extract_meta_chips(example_content)
@@ -420,7 +429,7 @@ def generate_detail_page(
               {"Copy Markdown" if not is_ar else "نسخ القالب"}
             </button>
           </div>
-          <pre id="code-template"><code>{html.escape(template_content)}</code></pre>
+          <pre id="code-template"><code>{html.escape(cleaned_template_content)}</code></pre>
         </div>
 
         <!-- Tab 3: Guide -->
