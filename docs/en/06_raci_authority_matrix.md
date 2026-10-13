@@ -20,7 +20,7 @@ created_at: '2026-10-06T16:05:28.499236+00:00'
 
 # 👥 Tasleemat Master Governance RACI & Signature Authority Matrix
 **Document Reference:** `TASLEEMAT-GOVERNANCE-RACI-v2.0`  
-**Scope:** Complete RACI authority framework across all 102 PMO deliverables  
+**Scope:** Complete RACI authority framework across all 114 PMO deliverables  
 **Standards:** PMI PMBOK® 6th, 7th & 8th Edition Standard Governance
 
 ---
@@ -35,7 +35,7 @@ This matrix defines the governance authority and accountability for creating, ap
 
 ---
 
-## 🏛️ Master RACI Authority Index (All 102 Deliverables)
+## 🏛️ Master RACI Authority Index (All 114 Deliverables)
 
 | Code | Deliverable Name | Responsible (Author) | Accountable (Sign-off Authority) | Consulted (Contributors) | Informed (Reported To) |
 | :---: | :--- | :--- | :--- | :--- | :--- |
@@ -96,6 +96,7 @@ This matrix defines the governance authority and accountability for creating, ap
 | **`PMO-04.06.05`** | Team Charter | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.06.06`** | Team Psychological Safety and Wellbeing Index | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.07.01`** | Communications Management Plan | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-04.07.02`** | Communications Distribution Matrix | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.08.01`** | Risk Management Plan | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.08.02`** | Risk Register | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.08.03`** | Probability and Impact Assessment | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
@@ -109,9 +110,11 @@ This matrix defines the governance authority and accountability for creating, ap
 | **`PMO-04.09.04`** | Statement of Work SOW | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.09.05`** | Request for Proposal RFP | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.10.01`** | Stakeholder Engagement Plan | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-04.10.02`** | Stakeholder Engagement Assessment Matrix | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.11.01`** | OCM Strategy and Plan | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.11.02`** | Training Plan and Log | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-04.12.01`** | Sustainability and ESG Management Plan | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-04.13.01`** | Information Security and Compliance Plan | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-05.01`** | Issue Log | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-05.02`** | Decision Log | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-05.03`** | Change Request | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
@@ -124,6 +127,9 @@ This matrix defines the governance authority and accountability for creating, ap
 | **`PMO-05.10`** | Impediment Log | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-05.11`** | Meeting Minutes | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-05.12`** | Team Onboarding Checklist | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-05.13`** | Action Items Log | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-05.14`** | Workstream Coordination and Standup Log | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-05.15`** | Deliverable Technical Inspection Checklist | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-06.01`** | Project Status Report | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-06.02`** | Team Member Status Report | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-06.03`** | Contractor Status Report | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
@@ -136,8 +142,19 @@ This matrix defines the governance authority and accountability for creating, ap
 | **`PMO-06.10`** | User Acceptance Testing Signoff | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-06.11`** | Project Health Check | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-06.12`** | Flow Metrics and Value Stream | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-06.13`** | Executive Steering Committee Dashboard | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-06.14`** | Milestone Trend Analysis and Slip Chart | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-06.15`** | Defect and Bug Tracking Log | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-06.16`** | Risk and Issue Escalation Report | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-07.01`** | Lessons Learned Summary | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-07.02`** | Contract Closeout Report | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-07.03`** | Project or Phase Closeout | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-07.04`** | Transition to Operations Checklist | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
 | **`PMO-07.05`** | Post Implementation Review | Project Manager / Transition Lead | **Project Sponsor & Operations Director** | Domain SMEs, Technical Leads, Team Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-07.06`** | Knowledge Transfer and Asset Archival Signoff | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
+| **`PMO-07.07`** | Administrative and Resource Release Form | Project Manager / Author | **Project Sponsor & PMO Director** | Domain SMEs, Technical Leads | Steering Committee, PMO, Project Stakeholders |
+
+---
+
+> [!NOTE] **Proposed Governance Framework Disclaimer**
+> The RACI roles, sign-off authorities, and oversight assignments outlined in this matrix represent a recommended operational reference framework aligned with PMI / PMBOK® standards. Every enterprise must calibrate and formally approve these assignments in accordance with its institutional Delegation of Authority (DoA) regulations and internal audit policies.

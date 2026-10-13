@@ -33,7 +33,7 @@ created_at: '2026-10-06T16:05:28.216685+00:00'
 
 ```mermaid
 flowchart LR
-    A["102 نموذج تسليم ثنائي اللغة"] --> B["أداة سطر الأوامر tasleemat-cli"]
+    A["114 مخرجاً ثنائي اللغة<br/>(228 حزمة متكاملة)"] --> B["أداة سطر الأوامر tasleemat-cli"]
     A --> C["حزمة الفحص البرمجي في بايثون"]
     C --> D["خطوط أنابيب GitHub Actions CI"]
     A --> E["محرك التصدير المجمع (HTML/PDF)"]
@@ -81,7 +81,7 @@ tasleemat init \
 ```
 
 #### ما تقوم به الأداة تلقائياً:
-1. تصفية الـ 102 نموذج لاختيار الباقة الإلزامية المناسبة لحجم المشروع وحزمة المنهجية (`agile`, `ai`, `predictive`, `hybrid`).
+1. تصفية الـ 114 مخرجاً لاختيار الباقة الإلزامية المناسبة لحجم المشروع وحزمة المنهجية (`agile`, `ai`, `predictive`, `hybrid`).
 2. نسخ القوالب، والأدلة، ومخططات JSON، وقواميس CSV.
 3. التعبئة التلقائية لبيانات الترويسة (اسم المشروع، رمزه، اسم المدير، الراعي، وتاريخ اليوم) في كافة الملفات المستنسخة.
 4. إنشاء ملف `PROJECT_README.md` تفصيلي يحتوي على قائمة تدقيق لبوابات العبور وروابط مباشرة للنماذج.
@@ -89,7 +89,7 @@ tasleemat init \
 ---
 
 ### ب. البحث في فهرس النماذج (`search`)
-البحث في كافة النماذج الـ 102 عبر الكلمات المفتاحية باللغتين العربية والإنجليزية:
+البحث في كافة المخرجات الـ 114 عبر الكلمات المفتاحية باللغتين العربية والإنجليزية:
 
 ```bash
 # البحث باللغة العربية
@@ -107,7 +107,7 @@ tasleemat search "Model Card" --lang en
 ---
 
 ### ج. استعراض الفهرس الشامل للنماذج (`list`)
-عرض قائمة النماذج الكاملة مع رموزها ومجلداتها:
+عرض قائمة المخرجات الكاملة (114 مخرجاً) مع رموزها ومجلداتها:
 
 ```bash
 tasleemat list --lang ar
@@ -163,7 +163,82 @@ python3 -m unittest discover -s tests -v
 
 ---
 
-## 🖨️ 2. محرك التصدير المجمع للوثائق (`tools/export_deliverables.py`)
+### ز. تشغيل خادم بروتوكول سياق النموذج (`mcp`)
+تشغيل خادم Model Context Protocol (MCP) الرسمي عبر الإدخال/الإخراج القياسي (stdio) لإتاحة جميع المخرجات الـ 114 ومخططات Draft 2020-12 وأدوات الحوكمة لبيئات ووكلاء الذكاء الاصطناعي (مثل Claude Desktop و Cursor و Antigravity):
+
+```bash
+# التشغيل عبر الأمر الفرعي في أداة tasleemat
+tasleemat mcp
+
+# أو التشغيل عبر الأمر المباشر المستقل
+tasleemat-mcp
+```
+
+---
+
+## 🐍 2. المرجع البرمجي لحزمة بايثون الرسمية (`import tasleemat`)
+
+توفر حزمة `tasleemat` واجهة برمجية برمجية مستقرة وعالية الأداء لبناء خطوط أنابيب الحوكمة، وأتمتة مساحات العمل، وتكامل وكلاء الذكاء الاصطناعي.
+
+### الدوال الأساسية في الحزمة (SDK Core Functions)
+
+| الدالة البرمجية | المعاملات المدخلة | نوع القيمة المعادة | الوصف والوظيفة |
+| :--- | :--- | :--- | :--- |
+| `list_artifacts()` | `category: str = None` | `list[dict]` | استرجاع قائمة كافة المخرجات الـ 114 المعتمدة مع إمكانية التصفية حسب المرحلة. |
+| `get_artifact_definition(artifact_id)` | `artifact_id: str` | `dict` | جلب البيانات الوصفية، والتعريفات، والمخططات لمخرج محدد (مثل `"PMO-03.01"`). |
+| `get_artifact_assets(artifact_id, lang)` | `artifact_id: str`, `lang: str = "ar"` | `list[dict]` | استرجاع واصفات الأصول المرفقة بالمخرج باللغة المحددة (`template`, `schema`, `dictionary`, `guide`, `example`). |
+| `get_artifact_asset(artifact_id, role, lang)` | `artifact_id: str`, `role: str`, `lang: str = "ar"` | `str \| dict` | قراءة المحتوى الأصلي أو كائن JSON لأصل محدد (`"template"`, `"schema"`, `"dictionary"`). |
+| `get_tailoring_profile(tier, pack)` | `tier: int \| str`, `pack: str` | `dict` | تحديد قائمة المخرجات الإلزامية والاختيارية لفئة الحوكمة (1 أو 2 أو 3) وحزمة المنهجية (`general`, `agile`, `ai`, `predictive`, `hybrid`). |
+| `get_lexicon(lang)` | `lang: str = "ar"` | `dict` | استرجاع المعجم المؤسسي الموحد لمصطلحات إدارة المشاريع وبوابات العبور الحوكمية. |
+| `validate_artifact_data(artifact_id, data, strict)` | `artifact_id: str`, `data: dict`, `strict: bool = True` | `dict` | التحقق البرمجي الصارم من بيانات النموذج مقابل مخطط Draft 2020-12 المعتمد. |
+| `render_artifact(artifact_id, data, format, lang)` | `artifact_id: str`, `data: dict`, `format: str = "html"`, `lang: str = "ar"` | `str` | تصيير وتوليد صفحة HTML مستقلة أو نص منسق للنموذج دون اتصال بالإنترنت. |
+
+### التنسيقات المدعومة لمخططات Draft 2020-12 (Supported Formats)
+
+يدعم محرك التحقق البرمجي المدمج (`tasleemat.formats`) التحقق التام والمطابق لمعايير RFC الدولية:
+- `date`: التاريخ الكامل بصيغة RFC 3339 القياسية (`YYYY-MM-DD`).
+- `date-time`: الطابع الزمني المدمج للتاريخ والوقت وفق RFC 3339 (`YYYY-MM-DDTHH:MM:SSZ`).
+- `time`: الوقت بصيغة RFC 3339 (`HH:MM:SS`).
+- `uuid`: المعرف الفريد عالمياً المتوافق مع RFC 4122.
+- `uri`: المعرف الموحد للموارد وفق RFC 3986.
+- `uri-reference`: مرجع المعرف الموحد للموارد النسبي أو المطلق وفق RFC 3986.
+- `email`: عنوان البريد الإلكتروني المتوافق مع RFC 5322.
+- `duration`: الفترة الزمنية المتوافقة مع ISO 8601 (مثل `P3M`, `P14D`).
+
+### نموذج تطبيقي متكامل لاستخدام الحزمة البرمجية (Python Example)
+
+```python
+import tasleemat
+
+# 1. استكشاف التسليمات الإلزامية لمشروع متوسط (Tier 2) بمنهجية أجايل
+profile = tasleemat.get_tailoring_profile(tier=2, pack="agile")
+print(f"عدد التسليمات الإلزامية: {len(profile['artifacts'])}")
+
+# 2. جلب تعريف ميثاق المشروع ومخطط البيانات العربي
+charter_def = tasleemat.get_artifact_definition("PMO-03.01")
+charter_schema = tasleemat.get_artifact_asset("PMO-03.01", role="schema", lang="ar")
+
+# 3. التحقق الصارم من صحة بيانات النموذج وفق مخطط Draft 2020-12
+payload = {
+    "project_name": "منصة التحول الرقمي السحابي",
+    "project_code": "PRJ-2026-CLOUD",
+    "start_date": "2026-11-01",
+    "sponsor": "سعادة مدير عام التقنية",
+    "estimated_budget": 2500000.00
+}
+result = tasleemat.validate_artifact_data("PMO-03.01", payload, strict=True)
+if result["valid"]:
+    print("البيانات متطابقة تماماً مع المخطط الهيكلي المعتمد!")
+
+# 4. تصيير النموذج مباشرة كصفحة HTML مستقلة وجاهزة للعرض والطباعة
+html_output = tasleemat.render_artifact("PMO-03.01", payload, format="html", lang="ar")
+with open("Project_Charter_Preview_AR.html", "w", encoding="utf-8") as f:
+    f.write(html_output)
+```
+
+---
+
+## 🖨️ 3. محرك التصدير المجمع للوثائق (`tools/export_deliverables.py`)
 
 تحويل أي وثيقة أو مجلد مشروع كامل من صيغة Markdown إلى صفحات HTML منسقة وجاهزة للطباعة وتصدير PDF، مع دعم كامل للاتجاه العربي (RTL) وخطوط Cairo و Inter:
 
@@ -180,27 +255,27 @@ python3 tools/export_deliverables.py my_project_workspace/
 
 ---
 
-## 🌐 3. هيكلية التوثيق المباشر عبر المستودع (Repository-First)
+## 🌐 4. هيكلية التوثيق المباشر عبر المستودع (Repository-First)
 
 تحتفظ تسليمات بكافة أدلة الحوكمة، والأدلة التشغيلية، والنماذج ثنائية اللغة بصيغة ماركداون الأصلية المباشرة داخل مستودع GitHub. تم إيقاف بوابة الويب السابقة لضمان بقاء التوثيق خاضعاً لإدارة النسخ وتدقيق التغييرات جنباً إلى جنب مع الشيفرات والقوالب. يمكن تصفح جميع الأدلة بدءاً من [`docs/README.md`](../README.md).
 
 ---
 
-## 🛡️ 4. حزمة التدقيق والفحص البرمجي في بايثون
+## 🛡️ 5. حزمة التدقيق والفحص البرمجي في بايثون
 
 يحتوي مجلد `tests/` و `tools/` على منظومة اختبارات وتدقيق آلية متكاملة:
 
 ### 1. حزمة الاختبارات الرئيسية (`tests/`)
-- **طريقة التشغيل:** `python3 -m unittest discover -s tests -v`
-- **الوحدات:** التماثل اللغوي (`test_parity.py`)، المخططات الهيكلية (`test_schemas.py`)، حزمة البيانات المفتوحة (`test_okf_datapackage.py`)، قوالب الحوكمة (`test_governance_templates.py`)، الامتثال للبيانات الافتراضية (`test_fictional_compliance.py`)، أدوات CLI (`test_cli_and_exporters.py`)، والأدلة التوثيقية (`test_documentation.py`).
+- **طريقة التشغيل:** `pytest -v tests` أو `python3 -m unittest discover -s tests -v`
+- **التغطية:** **130 اختباراً مؤتمتاً عبر 15 وحدة فحص** تشمل: التماثل اللغوي (`test_parity.py`)، المخططات الهيكلية (`test_schemas.py`)، حزمة البيانات المفتوحة (`test_okf_datapackage.py`)، قوالب الحوكمة (`test_governance_templates.py`)، الامتثال للبيانات الافتراضية (`test_fictional_compliance.py`)، أدوات CLI (`test_cli_and_exporters.py`)، الأدلة التوثيقية (`test_documentation.py`)، وخادم بروتوكول سياق النموذج MCP بكافة اختبارات التكامل والطرفية (`test_mcp_server.py`, `test_mcp_advanced.py`, `test_mcp_audit.py`, `test_mcp_stdio_e2e.py`).
 
 ### 2. مدقق جودة النماذج والمخططات (`tools/audit_forms.py`)
 - **طريقة التشغيل:** `python3 tools/audit_forms.py`
-- **الوظيفة:** يفحص جميع النماذج الـ 102 باللغتين العربية والإنجليزية (204 ملفات) للتأكد من وجود جدول الاعتماد وتسلسل العناوين وصحة الروابط.
+- **الوظيفة:** يفحص جميع النماذج الـ 114 باللغتين العربية والإنجليزية (228 ملفاً وحزمة) للتأكد من وجود جدول الاعتماد وتسلسل العناوين وصحة الروابط.
 
 ### 3. مدقق حزمة البيانات المفتوحة Frictionless OKF (`tools/validate_okf.py`)
 - **طريقة التشغيل:** `python3 tools/validate_okf.py`
-- **الوظيفة:** يتحقق من مطابقة ملف `datapackage.json` والمخططات الـ 204 لمعايير حزم البيانات المفتوحة الدولية.
+- **الوظيفة:** يتحقق من مطابقة ملف `datapackage.json` والمخططات الـ 228 لمعايير حزم البيانات المفتوحة الدولية.
 
 ### 4. فاحص التماثل والتطابق اللغوي (`tools/parity.py`)
 - **طريقة التشغيل:** `python3 tools/parity.py forms/en forms/ar`
@@ -208,12 +283,12 @@ python3 tools/export_deliverables.py my_project_workspace/
 
 ---
 
-## ⚙️ 5. خط أنابيب التكامل المستمر (`.github/workflows/ci.yml`)
+## ⚙️ 6. خط أنابيب التكامل المستمر (`.github/workflows/ci.yml`)
 
 يتم تشغيل فحص آلي عبر GitHub Actions مع كل عملية دفع أو سحب (Pull Request) إلى الفرع الرئيسي `main` يشمل:
-1. التحقق من سلامة المخططات الهيكلية لكافة النماذج الـ 204 (`audit_forms.py`).
+1. التحقق من سلامة المخططات الهيكلية لكافة حزم النماذج الـ 228 (`audit_forms.py`).
 2. فحص العرض والتنسيق للجداول والمخططات (`check_rendering.py`).
 3. التحقق من التماثل الثنائي التام عربي/إنجليزي 1:1 (`parity.py`).
 4. فحص حزمة البيانات المفتوحة Frictionless (`validate_okf.py`).
-5. تشغيل حزمة الاختبارات الآلية الشاملة المكونة من 28 فحصاً (`tests/`).
-6. اختبار واجهة الأوامر والتصدير (`tasleemat_cli.py`).
+5. تشغيل حزمة الاختبارات الآلية الشاملة المكونة من 130 فحصاً عبر 15 وحدة (`tests/`).
+6. اختبار واجهة الأوامر وخادم بروتوكول MCP (`tasleemat_cli.py` & MCP server).

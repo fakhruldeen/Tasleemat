@@ -119,3 +119,9 @@ Every deliverable bundle includes an engineered system prompt (`*.md`) alongside
 - **Document Control Enforcement**: Standardized document control blocks ensure the LLM explicitly attributes authors, version history, and sign-offs.
 - **Cryptographic Audit Placeholders**: All templates embed `{{Audit_Trail_SHA256_Hash}}` blocks, ensuring AI-generated records can be programmatically attested before gate submission.
 - **JSON Schema Validation**: Use `tasleemat.validate_artifact_data` to ensure AI outputs strictly adhere to formal data types, required keys, and formatting constraints.
+
+### 3. Autonomous AI Agent Tool Calling & MCP Schema Integration
+Tasleemat directly powers autonomous coding and PMO agents (via the Model Context Protocol `tasleemat mcp` or Python SDK):
+- **114 Companion Draft 2020-12 Schemas**: Each of the 114 deliverables exposes a companion JSON Schema defining strictly typed fields, allowable values, and RFC-compliant formats (`date`, `date-time`, `email`, `uuid`).
+- **Function/Tool Calling**: LLMs can invoke tools such as `get_artifact_asset(artifact_id, role="schema")` to dynamically retrieve input contracts before populating project data.
+- **Automated Validation Loop**: Agents can test generated deliverable payloads against `validate_artifact_data(artifact_id, data, strict=True)`. If schema validation errors occur, the agent receives machine-readable error paths to self-correct before presenting deliverables to human project managers.

@@ -26,7 +26,7 @@ created_at: '2026-10-06T16:05:28.496415+00:00'
 
 ## 🎯 Executive Overview
 
-The **Stage-Gate Governance Framework** structures the 102 Tasleemat PMO forms into 6 formal, sequential decision checkpoints (Gates 0 through 5). Instead of burdening project teams with all artifacts at once, this framework establishes clear **Entry Criteria**, **Mandatory Artifact Bundles**, **Review Checklists**, and **Exit Criteria** required to authorize resources and release funding for each subsequent phase.
+The **Stage-Gate Governance Framework** structures the 114 Tasleemat PMO deliverables into 6 formal, sequential decision checkpoints (Gates 0 through 5). Instead of burdening project teams with all artifacts at once, this framework establishes clear **Entry Criteria**, **Mandatory Artifact Bundles**, **Review Checklists**, and **Exit Criteria** required to authorize resources and release funding for each subsequent phase.
 
 ```mermaid
 flowchart LR
@@ -48,8 +48,8 @@ flowchart LR
 * **Mandatory Artifact Kit:**
   1. `PMO-00.06` **OKR Alignment Matrix:** Maps initiative to enterprise strategic objectives and Key Results.
   2. `PMO-01.01` **Business Case:** Need statement, options analysis, cost of inaction, and financial metrics (NPV/ROI).
-  3. `PMO-01.02` **Feasibility Study:** Technical, operational, legal, and economic feasibility.
-  4. `PMO-01.04` **Value Proposition Canvas:** Customer segments, pains, gains, and value drivers.
+  3. `PMO-01.02` **Benefits Management Plan:** Benefit definitions, metrics, realization timelines, and financial impacts.
+  4. `PMO-01.04` **Gap Analysis Report:** Current state vs. future state capabilities and organizational readiness.
   5. `PMO-02.04` **AI Canvas & Use Case Card:** (For AI initiatives) Data availability, model viability, and value hypothesis.
 * **Gate Review Checklist:**
   - [ ] Does the initiative directly support a corporate strategic objective or mandate?
@@ -67,8 +67,8 @@ flowchart LR
   1. `PMO-03.01` **Project Charter:** Authorizes project manager and defines high-level scope, budget, and milestones.
   2. `PMO-03.04` **Stakeholder Register:** Catalogs internal and external stakeholders, expectations, and influence.
   3. `PMO-03.03` **Assumption Log:** Documents initial assumptions, constraints, and validation owners.
-  4. `PMO-02.01` **Development Approach Assessment:** Selects delivery methodology (Predictive, Agile, or Hybrid).
-  5. `PMO-02.02` **Complexity Assessment Model:** Determines governance tier (Tier 1 Mega, Tier 2 Standard, Tier 3 Lean).
+  4. `PMO-02.01` **Tailoring Plan:** Customizes lifecycle governance, required artifacts, and delivery cadence.
+  5. `PMO-02.02` **AI Governance Plan:** (For AI/Algorithmic projects) Ethical constraints, data compliance, and risk controls.
   6. `PMO-03.02` **Product Vision:** (For Agile/Product initiatives) Product vision statement and target outcomes.
 * **Gate Review Checklist:**
   - [ ] Is the Project Charter signed by the executive sponsor and PMO lead?
@@ -84,8 +84,8 @@ flowchart LR
 * **Entry Criteria:** Authorized Project Charter and mobilized project planning team.
 * **Mandatory Artifact Kit:**
   1. `PMO-04.01.01` **Project Management Plan:** Integrated master plan governing project execution.
-  2. `PMO-04.02.05` & `PMO-04.02.06` **Scope Statement & WBS Dictionary:** 100% scope decomposition and deliverables.
-  3. `PMO-04.03.07` **Project Schedule Baseline:** Critical path network diagram, duration estimates, and milestone dates.
+  2. `PMO-04.02.06` & `PMO-04.02.07` **WBS & WBS Dictionary:** 100% scope decomposition, work packages, and deliverables.
+  3. `PMO-04.03.08` **Project Schedule Baseline:** Critical path network diagram, duration estimates, and milestone dates.
   4. `PMO-04.04.04` **Cost Baseline & Budget Allocation:** Work package cost estimates, contingency reserves, and cash flow curve.
   5. `PMO-04.08.02` **Risk Register & Mitigation Plan:** Identified risks, probability/impact scores, and response strategies.
   6. `PMO-04.06.04` **RACI Matrix:** Responsibility Assignment Matrix for all deliverables and activities.
@@ -160,7 +160,12 @@ flowchart LR
 | :--- | :--- | :--- | :---: | :--- |
 | **Gate 0** | Strategic Alignment & Business Justification | Investment Board / CFO | 5 | `PMO-00.06`, `PMO-01.01`, `PMO-01.02`, `PMO-01.04`, `PMO-02.04` |
 | **Gate 1** | Initiation & Authorization | Sponsor & PMO Director | 6 | `PMO-03.01`, `PMO-03.03`, `PMO-03.04`, `PMO-02.01`, `PMO-02.02`, `PMO-03.02` |
-| **Gate 2** | Integrated Baseline Sign-off | Sponsor & PMO Director | 8–15 | `PMO-04.01.01`, `PMO-04.02.06`, `PMO-04.03.07`, `PMO-04.04.04`, `PMO-04.08.02` |
+| **Gate 2** | Integrated Baseline Sign-off | Sponsor & PMO Director | 8–15 | `PMO-04.01.01`, `PMO-04.02.06`, `PMO-04.03.08`, `PMO-04.04.04`, `PMO-04.08.02` |
 | **Gate 3** | Operational Execution & Control | Steering Committee & PM | 6–10 | `PMO-06.01`, `PMO-06.05`, `PMO-06.12`, `PMO-05.01`, `PMO-05.02`, `PMO-05.04` |
 | **Gate 4** | Acceptance & Handover | Business Owner & QA | 4 | `PMO-06.08`, `PMO-06.10`, `PMO-07.04`, `PMO-04.11.02` |
 | **Gate 5** | Closeout & Benefits | Sponsor & Benefits Owner | 5 | `PMO-07.03`, `PMO-07.01`, `PMO-07.02`, `PMO-07.05`, `PMO-01.03` |
+
+---
+
+> [!NOTE] **Proposed Governance Framework Disclaimer**
+> The stage-gate governance kit thresholds, gate review checklists, and approval assignments described in this manual represent a recommended best-practice baseline. Each enterprise PMO must tailor and formally calibrate these decision gates, thresholds, and authorities to align with organizational governance regulations and statutory policies.

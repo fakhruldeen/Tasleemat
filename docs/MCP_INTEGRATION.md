@@ -221,3 +221,51 @@ echo '{"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}}' | pytho
 # 3. Retrieve Project Charter Template (Arabic)
 echo '{"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "tasleemat_get_asset", "arguments": {"artifact_id": "PMO-03.01", "role": "template", "lang": "ar"}}}' | python3 -m tasleemat.mcp
 ```
+
+---
+
+## 📋 JSON-RPC 2.0 Protocol Conformance & Request ID Rules
+
+The Tasleemat MCP server strictly conforms to the JSON-RPC 2.0 specification:
+
+### 1. Request ID Validation Rules
+| ID Type | Example | Server Behavior |
+| :--- | :--- | :--- |
+| **String** | `"req-101"`, `""` | ✅ Accepted; mirrored exactly in response `id`. |
+| **Integer** | `1`, `0`, `-5` | ✅ Accepted; mirrored exactly in response `id`. |
+| **Integral Float** | `1.0`, `42.0` | ✅ Normalized to integer `1`, `42` in response `id`. |
+| **Null** | `null` | ✅ Accepted; mirrored as `null` in response `id`. |
+| **Fractional Float** | `1.5`, `3.14159` | ❌ Rejected with `-32600` (`Invalid Request`). |
+| **Non-finite Float** | `NaN`, `Infinity` | ❌ Rejected with `-32600` (`Invalid Request`). |
+| **Boolean** | `true`, `false` | ❌ Rejected with `-32600` (`Invalid Request`). |
+| **Container** | `[]`, `{"id": 1}` | ❌ Rejected with `-32600` (`Invalid Request`). |
+
+### 2. Standard JSON-RPC Error Taxonomy
+| Code | Constant | Meaning in Tasleemat MCP Server |
+| :---: | :--- | :--- |
+| `-32700` | Parse error | Received payload is not well-formed JSON. |
+| `-32600` | Invalid Request | Missing `"jsonrpc": "2.0"`, invalid method type, or disallowed request ID format. |
+| `-32601` | Method not found | Method does not exist (supported: `initialize`, `ping`, `tools/list`, `tools/call`, `resources/list`, `prompts/list`). |
+| `-32602` | Invalid params | Positional array parameters passed instead of named object, or missing required tool arguments. |
+| `-32603` | Internal error | Unhandled runtime exception within tool execution. |
+
+---
+
+## 🔧 Troubleshooting & Common Questions
+
+#### 1. Why does Cursor or Claude report "Server disconnected"?
+Ensure your Python environment has `tasleemat` installed in the exact Python interpreter configured:
+```bash
+# Verify CLI runs cleanly from the environment
+python3 -m tasleemat.mcp --help
+```
+If using a virtualenv, specify the full path to `python3` in your configuration (e.g. `/home/user/venv/bin/python3`).
+
+#### 2. Stdio Buffering in Shell Scripts
+When communicating with the server over pipes, ensure unbuffered output or explicit newlines:
+```bash
+python3 -u -m tasleemat.mcp
+```
+
+#### 3. Re-validating AI Drafts in Strict vs. Draft Mode
+Use `mode="draft"` when generating incomplete sections during agent drafting loops. Use `mode="strict"` only prior to formal stage-gate submission to ensure 100% required field presence and baseline completeness.

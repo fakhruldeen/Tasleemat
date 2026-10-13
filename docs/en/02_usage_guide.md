@@ -43,7 +43,7 @@ Welcome to the definitive practitioner and automation guide for the **Tasleemat 
 
 ## 1. The 5-File Architecture
 
-Every one of the **102 form directories** across [`../../forms/en/`](../forms/en/index.md) and [`../../forms/ar/`](../forms/ar/index.md) contains exactly five synchronized files engineered for specific stages of the document lifecycle:
+Every one of the **114 deliverable directories** (228 total bilingual bundles across [`../../forms/en/`](../forms/en/index.md) and [`../../forms/ar/`](../forms/ar/index.md)) contains exactly five synchronized files engineered for specific stages of the document lifecycle:
 
 ```text
 01_Project_Charter/

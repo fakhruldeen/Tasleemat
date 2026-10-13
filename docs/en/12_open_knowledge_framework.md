@@ -31,7 +31,7 @@ created_at: '2026-10-06T16:05:28.497172+00:00'
 
 **Tasleemat (تسليمات)** conforms to the **Open Knowledge Foundation (OKF)** Frictionless Data Package specification using **native JSON Schemas**, making it one of the world's first fully open, machine-readable, bilingual Project Management Office (PMO) operating frameworks.
 
-By providing a root [`datapackage.json`](../../datapackage.json), Tasleemat enables data scientists, AI engineers, and enterprise architects to query, validate, and integrate all 204 deliverable JSON schemas directly into REST APIs, autonomous AI agent toolchains, and project analytics pipelines.
+By providing a root [`datapackage.json`](../../datapackage.json), Tasleemat enables data scientists, AI engineers, and enterprise architects to query, validate, and integrate all 228 deliverable JSON schemas directly into REST APIs, autonomous AI agent toolchains, and project analytics pipelines.
 
 ```mermaid
 flowchart TD
@@ -44,8 +44,8 @@ flowchart TD
     end
 
     subgraph "Tasleemat JSON Schema Resources"
-        EN_RES["102 English JSON Schemas<br/>(forms/en/**/*.json)"]
-        AR_RES["102 Arabic JSON Schemas<br/>(forms/ar/**/*.json)"]
+        EN_RES["114 English JSON Schemas<br/>(forms/en/**/*.json)"]
+        AR_RES["114 Arabic JSON Schemas<br/>(forms/ar/**/*.json)"]
         DP --> EN_RES
         DP --> AR_RES
     end
@@ -62,9 +62,20 @@ flowchart TD
 
 ---
 
+## 🗂️ The Four Distinct Data & Schema Layers
+
+To prevent architectural conflation between form definitions and runtime project payloads, Tasleemat enforces four distinct data and schema layers:
+
+1. **Layer 1: Form Section Schemas (`forms/{en,ar}/**/*.json`):** Form-level section definitions, fields, labels, guidance, and default placeholders used for template scaffolding.
+2. **Layer 2: OKF Frictionless Data Package (`datapackage.json`):** Repository-level open data catalog referencing all 228 bilingual form schema resources.
+3. **Layer 3: Draft 2020-12 Companion Schemas (`schemas/completed/PMO-*.schema.json`):** High-integrity validation contracts covering completed runtime deliverable payloads in `strict` and `draft` modes.
+4. **Layer 4: Runtime Project Payloads:** Actual business data submitted by users, CLI scaffolds, or AI agents, validated against Layer 3 companion schemas.
+
+---
+
 ## 📦 The `datapackage.json` Specification
 
-Located at the repository root, [`datapackage.json`](../../datapackage.json) indexes all 204 deliverable schemas as Frictionless JSON Resources:
+Located at the repository root, [`datapackage.json`](../../datapackage.json) indexes all 228 deliverable schemas as Frictionless JSON Resources:
 
 ```json
 {

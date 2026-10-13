@@ -63,7 +63,7 @@ flowchart TD
 | **02** | [**Practitioner Usage Guide**](en/02_usage_guide.md) | 🇬🇧 EN | Field syntax, Markdown conventions, JSON/CSV integration, and authoring guidelines. |
 | **03** | [**PMO Policy Manual**](en/03_pmo_policy_manual.md) | 🇬🇧 EN | Enterprise governance mandates, change control thresholds, and audit rules. |
 | **04** | [**Stage-Gates Framework**](en/04_stage_gates_and_governance.md) | 🇬🇧 EN | 6 Stage-Gates (Gate 0 to 5), entry/exit criteria, and executive review gates. |
-| **05** | [**Tailoring Profiles**](en/05_tailoring_profiles.md) | 🇬🇧 EN | 4 project tiers (Enterprise, Medium, Agile, AI) and deliverable requirements. |
+| **05** | [**Tailoring Profiles**](en/05_tailoring_profiles.md) | 🇬🇧 EN | 3 sizing tiers (Tier 1 Mega, Tier 2 Standard, Tier 3 Lean) and methodology packs. |
 | **06** | [**RACI Authority Matrix**](en/06_raci_authority_matrix.md) | 🇬🇧 EN | Full 114-form governance matrix defining author and approval sign-off roles. |
 | **07** | [**Document Dependencies**](en/07_document_dependencies.md) | 🇬🇧 EN | Directed acyclic graph (DAG) mapping upstream inputs to downstream outputs. |
 | **08** | [**AI Governance Framework**](en/08_ai_governance_framework.md) | 🇬🇧 EN | AI Canvas, Model Cards, Ethics, NIST AI RMF, and MLOps monitoring. |
@@ -75,15 +75,37 @@ flowchart TD
 
 ---
 
+## 👔 Track A: Managerial & Governance Series (Executive Register)
+
+Dedicated high-level playbooks for C-Suite leadership, Project Sponsors, and PMO Directors:
+
+| Document Title | Language | Executive Focus |
+| :--- | :---: | :--- |
+| [**Executive Stage-Gates Playbook**](en/managerial_stage_gates_playbook.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/managerial_stage_gates_playbook.md) | The 6 decision gates, Go / Conditional / No-Go criteria, and sign-off authorities. |
+| [**Portfolio Sizing & Tailoring Guide**](en/managerial_tailoring_and_sizing.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/managerial_tailoring_and_sizing.md) | 3 Sizing Tiers (Mega, Standard, Lean), 5 Methodology Packs, and fiscal thresholds. |
+| [**Executive AI Risk & Ethics Guide**](en/managerial_ai_risk_and_ethics.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/managerial_ai_risk_and_ethics.md) | SDAIA AI Ethics, NIST AI RMF, ISO 42001, and Human-in-the-Loop (HITL) policies. |
+| [**Audit Readiness & Benefits Realization**](en/managerial_audit_and_benefits.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/managerial_audit_and_benefits.md) | CCB variance thresholds, Operational Transition to BAU, and PIR ROI tracking. |
+
+---
+
+## 💻 Track B: Technical Engineering & Multi-Agent Series (Code & API Register)
+
+Architectural blueprints and code references for AI Engineers, DevOps, and Agent Developers:
+
+| Document Title | Language | Technical Focus |
+| :--- | :---: | :--- |
+| [**LLM Synthesis & Prompt Grounding**](en/tech_llm_synthesis_and_prompting.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/tech_llm_synthesis_and_prompting.md) | In-context grounding, prompt templates, few-shot examples, and `tasleemat.ai.AIClient`. |
+| [**Agentic PMO & Multi-Agent Orchestration**](en/tech_agentic_and_multiagent_orchestration.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/tech_agentic_and_multiagent_orchestration.md) | MCP server integration, multi-agent blueprints (CrewAI, LangGraph), and swarm roles. |
+| [**CLI Automation & DevOps Pipelines**](en/tech_cli_and_devops_automation.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/tech_cli_and_devops_automation.md) | Non-interactive CLI flags, batch HTML/PDF export, and GitHub Actions recipes. |
+| [**Schemas, RFC Formats & Self-Correction**](en/tech_schemas_and_validation_loops.md) | 🇬🇧 EN / 🇸🇦 [AR](ar/tech_schemas_and_validation_loops.md) | Draft 2020-12 companion schemas, RFC format validation, and automated error feedback loops. |
+| [**Autonomous AI Agent Navigation Protocol**](AGENT_NAVIGATION.md) | 🤖 Spec | Machine-readable protocol: JSON-RPC 2.0 tool definitions, DAG traversal, and token pointers. |
+
+---
+
 ## 👤 Persona-Based Reading Pathways
 
-* **For Project Managers:** Start with [`01_getting_started.md`](en/01_getting_started.md) $
-ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md) $
-ightarrow$ [`02_usage_guide.md`](en/02_usage_guide.md).
-* **For PMO Directors & Governance Leads:** Read [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) $
-ightarrow$ [`04_stage_gates_and_governance.md`](en/04_stage_gates_and_governance.md) $
-ightarrow$ [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
-* **For Scrum Masters & Product Owners:** Focus on [`09_agile_hybrid_integration.md`](en/09_agile_hybrid_integration.md) $
-ightarrow$ [`05_tailoring_profiles.md`](en/05_tailoring_profiles.md).
-* **For AI Engineers & Tech PMs:** Deep dive into [`08_ai_governance_framework.md`](en/08_ai_governance_framework.md).
-* **For DevOps & Tool Admins:** Explore [`11_tools_and_automation.md`](en/11_tools_and_automation.md).
+* **For C-Level Executives & Project Sponsors:** Read [**Executive Stage-Gates Playbook**](en/managerial_stage_gates_playbook.md) → [**Portfolio Sizing & Tailoring Guide**](en/managerial_tailoring_and_sizing.md) → [**Executive AI Risk & Ethics**](en/managerial_ai_risk_and_ethics.md).
+* **For PMO Directors & Governance Leads:** Read [**Audit Readiness & Benefits**](en/managerial_audit_and_benefits.md) → [`03_pmo_policy_manual.md`](en/03_pmo_policy_manual.md) → [`06_raci_authority_matrix.md`](en/06_raci_authority_matrix.md).
+* **For AI Engineers & Agent System Architects:** Read [**Agentic PMO & Multi-Agent Orchestration**](en/tech_agentic_and_multiagent_orchestration.md) → [**Schemas & Self-Correction Loops**](en/tech_schemas_and_validation_loops.md) → [**MCP Integration Guide**](MCP_INTEGRATION.md).
+* **For DevOps Engineers & Automation Specialists:** Explore [**CLI Automation & DevOps Pipelines**](en/tech_cli_and_devops_automation.md) → [`11_tools_and_automation.md`](en/11_tools_and_automation.md).
+* **For Autonomous AI Agents & LLM Run-Times:** Consume [**Agent Navigation Protocol**](AGENT_NAVIGATION.md) directly.

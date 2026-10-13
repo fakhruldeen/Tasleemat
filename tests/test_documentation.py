@@ -20,17 +20,27 @@ CustomYamlLoader.add_multi_constructor('tag:yaml.org,2002:python/', lambda loade
 class TestDocumentation(unittest.TestCase):
 
     def setUp(self):
-        self.en_docs = sorted(list((DOCS_DIR / "en").glob("*.md")))
-        self.ar_docs = sorted(list((DOCS_DIR / "ar").glob("*.md")))
+        # 12 Core Numbered Governance Manuals
+        self.en_docs = sorted(list((DOCS_DIR / "en").glob("[0-9][0-9]_*.md")))
+        self.ar_docs = sorted(list((DOCS_DIR / "ar").glob("[0-9][0-9]_*.md")))
+        # All Markdown guides in en and ar
+        self.all_en_docs = sorted(list((DOCS_DIR / "en").glob("*.md")))
+        self.all_ar_docs = sorted(list((DOCS_DIR / "ar").glob("*.md")))
 
     def test_documentation_manuals_count_and_symmetry(self):
-        """Verify exactly 12 English and 12 Arabic governance manuals exist."""
-        self.assertEqual(len(self.en_docs), 12, f"Expected 12 EN guides, found {len(self.en_docs)}")
-        self.assertEqual(len(self.ar_docs), 12, f"Expected 12 AR guides, found {len(self.ar_docs)}")
+        """Verify exactly 12 core numbered manuals exist and specialized series have 1:1 symmetry."""
+        self.assertEqual(len(self.en_docs), 12, f"Expected 12 core EN guides, found {len(self.en_docs)}")
+        self.assertEqual(len(self.ar_docs), 12, f"Expected 12 core AR guides, found {len(self.ar_docs)}")
 
         en_prefixes = [p.stem.split("_")[0] for p in self.en_docs]
         ar_prefixes = [p.stem.split("_")[0] for p in self.ar_docs]
-        self.assertEqual(en_prefixes, ar_prefixes, "EN and AR guide number prefixes must match 1:1")
+        self.assertEqual(en_prefixes, ar_prefixes, "Core EN and AR guide number prefixes must match 1:1")
+
+        # Verify full 1:1 symmetry across all specialized series (Track A Managerial & Track B Technical)
+        en_names = [p.name for p in self.all_en_docs]
+        ar_names = [p.name for p in self.all_ar_docs]
+        self.assertEqual(en_names, ar_names, "All EN and AR markdown guides in docs/ must have 1:1 exact filenames")
+        self.assertEqual(len(self.all_en_docs), 20, f"Expected 20 EN guides (12 core + 8 specialized), found {len(self.all_en_docs)}")
 
     def test_documentation_manuals_substantive_content(self):
         """Verify each guide is substantive (> 1000 characters) and has standard governance headers."""

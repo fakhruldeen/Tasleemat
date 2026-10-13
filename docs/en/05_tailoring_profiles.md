@@ -26,26 +26,27 @@ created_at: '2026-10-06T16:05:28.491597+00:00'
 
 ## 🎯 Executive Overview
 
-To prevent administrative bureaucracy on simple initiatives and ensure rigorous governance on critical investments, the **Tasleemat Sizing and Tailoring Framework** categorizes projects into **3 Governance Tiers** and provides **4 Methodology Archetype Packs**. 
+To prevent administrative bureaucracy on simple initiatives and ensure rigorous governance on critical investments, the **Tasleemat Sizing and Tailoring Framework** categorizes projects into **3 Governance Tiers** and provides **5 Methodology Archetype Packs** (`general`, `agile`, `ai`, `predictive`, `hybrid`). 
 
-Project Managers and PMO Directors use the **Complexity Assessment Model (`PMO-02.02`)** and **Development Approach Assessment (`PMO-02.01`)** at Gate 1 to select the minimum mandatory artifact set required for their specific project.
+Project Managers and PMO Directors use the **Tailoring Plan (`PMO-02.01`)** and **AI Governance Plan (`PMO-02.02`)** (or organizational complexity scoring) at Gate 1 to select the minimum mandatory artifact set required for their specific project.
 
 ```mermaid
 flowchart TD
     subgraph Assessment["Gate 1: Project Categorization"]
-        C1["PMO-02.02 Complexity Assessment"]
-        C2["PMO-02.01 Development Approach"]
-        C1 --> Decision["Select Governance Tier & Archetype"]
+        C1["PMO-02.01 Tailoring Plan"]
+        C2["PMO-02.02 AI Governance Plan"]
+        C1 --> Decision["Select Governance Tier & Pack"]
         C2 --> Decision
     end
 
     subgraph Tiers["Governance Sizing Tiers"]
-        Decision --> T1["<b>Tier 1: Mega / Critical</b><br/>(>$10M | 35–50 Forms)"]
-        Decision --> T2["<b>Tier 2: Standard</b><br/>($1M–$10M | 18–25 Forms)"]
-        Decision --> T3["<b>Tier 3: Lean / Fast-Track</b><br/>(<$1M | 7–9 Forms)"]
+        Decision --> T1["<b>Tier 1: Mega / Critical</b><br/>(>$10M | 35–50 Deliverables)"]
+        Decision --> T2["<b>Tier 2: Standard</b><br/>($1M–$10M | 18–25 Deliverables)"]
+        Decision --> T3["<b>Tier 3: Lean / Fast-Track</b><br/>(<$1M | 7–9 Deliverables)"]
     end
 
     subgraph Packs["Methodology Archetype Packs"]
+        T1 & T2 & T3 --> P0["General PMO Pack"]
         T1 & T2 & T3 --> P1["Agile / Scrum Pack"]
         T1 & T2 & T3 --> P2["Predictive / EPC Pack"]
         T1 & T2 & T3 --> P3["AI & Data Product Pack"]
@@ -63,10 +64,10 @@ flowchart TD
   * **Duration:** $> 12\text{ months}$.
   * **Complexity:** High regulatory impact, cross-entity dependencies, multi-vendor contracting, high public exposure, or critical infrastructure impact.
 * **Governance Cadence:** Monthly Executive Steering Committee, bi-weekly PMO tollgates, weekly project core reviews.
-* **Artifact Count:** **35–50 Standardized Forms**.
+* **Artifact Count:** **35–50 Standardized Deliverables**.
 * **Mandatory Artifact Set:**
   * **Initiation:** `PMO-00.06`, `PMO-01.01`, `PMO-01.02`, `PMO-03.01`, `PMO-03.04`, `PMO-03.05`, `PMO-03.03`.
-  * **Planning:** Complete Project Management Plan (`PMO-04.01.01`), Scope Statement & WBS (`PMO-04.02.05`/`06`), Master Schedule Baseline (`PMO-04.03.07`), Cost Baseline & Reserves (`PMO-04.04.04`), Quality Plan (`PMO-04.05.01`), RACI Matrix (`PMO-04.06.04`), Communications Plan (`PMO-04.07.01`), Risk Register & Quantitative Modeling (`PMO-04.08.02`/`04`/`07`), Procurement Strategy & SOW (`PMO-04.09.02`/`04`), Stakeholder Engagement Plan (`PMO-04.10.01`), OCM Plan (`PMO-04.11.01`), ESG Plan (`PMO-04.12.01`).
+  * **Planning:** Complete Project Management Plan (`PMO-04.01.01`), Scope Statement & WBS (`PMO-04.02.05`/`06`), Master Schedule Baseline (`PMO-04.03.08`), Cost Baseline & Reserves (`PMO-04.04.04`), Quality Plan (`PMO-04.05.01`), RACI Matrix (`PMO-04.06.04`), Communications Plan (`PMO-04.07.01`), Risk Register & Quantitative Modeling (`PMO-04.08.02`/`04`/`07`), Procurement Strategy & SOW (`PMO-04.09.02`/`04`), Stakeholder Engagement Plan (`PMO-04.10.01`), OCM Plan (`PMO-04.11.01`), ESG Plan (`PMO-04.12.01`).
   * **Execution & Control:** Status Reports (`PMO-06.01`), Earned Value Analysis (`PMO-06.05`), Issue Log (`PMO-05.01`), Decision Log (`PMO-05.02`), Change Control Log (`PMO-05.04`), Quality & Procurement Audits (`PMO-05.05`/`PMO-06.07`), Vendor Scorecards (`PMO-06.09`).
   * **Closing:** Deliverable Acceptance (`PMO-06.08`), UAT Sign-off (`PMO-06.10`), Handover Checklist (`PMO-07.04`), Contract Closeouts (`PMO-07.02`), Project Closure Report (`PMO-07.03`), Lessons Learned Summary (`PMO-07.01`), Post-Implementation Review (`PMO-07.05`), Benefits Plan (`PMO-01.03`).
 
@@ -78,10 +79,10 @@ flowchart TD
   * **Duration:** $3 - 12\text{ months}$.
   * **Complexity:** Standard organizational changes, internal systems development, moderate risk profile.
 * **Governance Cadence:** Bi-weekly Sponsor checkpoints, monthly PMO health checks.
-* **Artifact Count:** **18–25 Standardized Forms**.
+* **Artifact Count:** **18–25 Standardized Deliverables**.
 * **Mandatory Artifact Set:**
   * **Initiation:** `PMO-01.01`, `PMO-03.01`, `PMO-03.04`, `PMO-03.03`, `PMO-02.01`.
-  * **Planning:** Project Management Plan (`PMO-04.01.01`), Scope Baseline / WBS (`PMO-04.02.06`), Schedule Baseline (`PMO-04.03.07`), Cost Baseline (`PMO-04.04.04`), RACI Matrix (`PMO-04.06.04`), Risk Register (`PMO-04.08.02`), Communications Matrix (`PMO-04.07.01`).
+  * **Planning:** Project Management Plan (`PMO-04.01.01`), Scope Baseline / WBS (`PMO-04.02.06`), Schedule Baseline (`PMO-04.03.08`), Cost Baseline (`PMO-04.04.04`), RACI Matrix (`PMO-04.06.04`), Risk Register (`PMO-04.08.02`), Communications Matrix (`PMO-04.07.01`).
   * **Execution & Control:** Project Status Report (`PMO-06.01`), Issue Log (`PMO-05.01`), Decision Log (`PMO-05.02`), Change Log & Requests (`PMO-05.04`/`03`), Variance Analysis (`PMO-06.04`).
   * **Closing:** UAT Sign-off (`PMO-06.10`), Deliverable Acceptance (`PMO-06.08`), Handover Checklist (`PMO-07.04`), Project Closure Report (`PMO-07.03`), Lessons Learned (`PMO-07.01`).
 

@@ -30,8 +30,8 @@ created_at: '2026-10-06T16:05:28.497865+00:00'
 ## 💡 Top Frequently Asked Questions
 
 ### General Architecture & Standards
-#### Q1: Do I have to fill out all 102 forms for every project?
-**Answer:** Absolutely not. Tasleemat is strictly tailored based on project size and category. Consult [`05_tailoring_profiles.md`](05_tailoring_profiles.md). Tier 3 (Small/Agile) projects only require **12 core deliverables**, whereas Tier 1 (Strategic Enterprise) projects utilize up to 45 forms.
+#### Q1: Do I have to fill out all 114 deliverables for every project?
+**Answer:** Absolutely not. Tasleemat is strictly tailored based on project size and methodology. Consult [`05_tailoring_profiles.md`](05_tailoring_profiles.md). The catalog defines **3 Governance Sizing Tiers** (Tier 1: Mega / 35–50 deliverables, Tier 2: Standard / 18–25 deliverables, Tier 3: Lean / 7–9 deliverables) and **5 Methodology Archetype Packs** (`general`, `agile`, `ai`, `predictive`, `hybrid`). You only scaffold the required subset for your project.
 
 #### Q2: What international standards does Tasleemat align with?
 **Answer:** Tasleemat aligns with:

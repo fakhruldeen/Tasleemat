@@ -28,7 +28,7 @@ created_at: '2026-10-06T16:05:28.495320+00:00'
 ## 1. 📜 Purpose, Scope & Governance Mandate
 
 ### 1.1 Purpose
-This Policy Manual establishes the governing standard operating procedures (SOPs), authority limits, escalation pathways, and quality gates for all programs, projects, and strategic initiatives across the organization. It integrates the **102 Tasleemat PMO Artifacts** into an enforceable operational governance framework.
+This Policy Manual establishes the governing standard operating procedures (SOPs), authority limits, escalation pathways, and quality gates for all programs, projects, and strategic initiatives across the organization. It integrates the **114 Tasleemat PMO Artifacts** into an enforceable operational governance framework.
 
 ### 1.2 Governance Scope & PMO Authority Model
 The PMO operates under a **Controlling & Directive Governance Mandate** responsible for:
@@ -77,13 +77,15 @@ flowchart LR
 ## 3. 🔄 Change Management & Delegation of Authority (DoA)
 
 ### 3.1 Variance Management & Approval Thresholds
-Changes to project scope, schedule baseline (`PMO-04.03.07`), or cost baseline (`PMO-04.04.04`) must strictly follow the **Delegation of Authority (DoA) Matrix**:
+Changes to project scope, schedule baseline (`PMO-04.03.08`), or cost baseline (`PMO-04.04.04`) must strictly follow the **Delegation of Authority (DoA) Matrix**:
 
 | Variance Level | Schedule Variance (SV) | Cost Variance (CV) | Scope Impact | Required Approver | Required Artifacts |
 | :--- | :---: | :---: | :--- | :--- | :--- |
 | **Level 1 (Minor)** | $< \pm 5\%$ (or $\le 5$ days) | $< \pm 5\%$ (or $\le \$25\text{k}$) | No change to contractual deliverables | **Project Manager** | Update `PMO-05.04` Change Log |
 | **Level 2 (Moderate)** | $\pm 5\% - 10\%$ (or $\le 15$ days) | $\pm 5\% - 10\%$ (or $\le \$100\text{k}$) | Minor shift within work package | **Project Sponsor & PMO Director** | `PMO-05.03` Change Request + Baseline Update |
 | **Level 3 (Major)** | $> \pm 10\%$ (or $> 15$ days) | $> \pm 10\%$ (or $> \$100\text{k}$) | Material addition/deletion of deliverables | **Change Control Board (CCB) / Steering Comm.** | Full CCB Review + Revised Business Case (`PMO-01.01`) |
+
+> 📌 **Organizational Calibration Note:** Thresholds, monetary brackets, and variance percentages above serve as a recommended baseline model. Each adopting organization must formally calibrate and calibrate these thresholds against its institutional governance charter and approved financial delegations.
 
 ### 3.2 Change Control Board (CCB) Operating Rules
 * The CCB convenes bi-weekly or ad-hoc for emergency Level 3 change requests.
@@ -155,3 +157,10 @@ A project is not formally closed until the following assets are approved and arc
 
 * The PMO reserves the right to conduct unannounced **Project Health Checks (`PMO-06.11`)** and **Quality Audits (`PMO-05.05`)** on any active initiative.
 * Non-compliance with baseline governance or failure to submit mandatory reports may result in temporary freezing of project expense authority.
+
+---
+
+## ⚠️ Governance & Tailoring Disclaimer
+
+> [!NOTE]
+> **Proposed Organizational Model:** Tasleemat is an open reference PMO framework designed to accelerate institutional delivery capability. It represents a proposed organizational model requiring formal tailoring and adoption by your enterprise governance authority. It does not establish statutory legal authority, certification, or mandatory compliance rules for external organizations.

@@ -92,6 +92,17 @@ with open("docs/LEXICON.json", "r", encoding="utf-8") as f:
 df_resources = pd.read_json("datapackage.json")
 ```
 
+### 🗂️ The Four Distinct Data & Schema Layers
+
+To prevent architectural ambiguity between form layouts and structured payload validation, Tasleemat defines four distinct data and contract layers:
+
+| Layer | Component | Location / API | Standard / Dialect | Primary Purpose |
+| :---: | :--- | :--- | :--- | :--- |
+| **1** | **Form-Definition Section Schemas** | `forms/{en,ar}/**/*.json` | Custom Section Schema | Defines human-facing form section layouts, field prompts, and Markdown scaffolding rules. |
+| **2** | **OKF Data Package Registry** | `datapackage.json` | Frictionless Table Schema | Indexes all 228 bilingual form resources as an Open Knowledge Data Package with FAIR-compliant metadata. |
+| **3** | **Companion Completed-Data Schemas** | `tasleemat/schemas/completed/*.json` | JSON Schema Draft 2020-12 | Machine-readable JSON Schemas enforcing types, required fields, formats, and bounds for completed records. |
+| **4** | **Runtime Project Payloads** | Client data passed to `validate_artifact_data` | JSON Object / Dict | The actual completed project data payloads created by practitioners or AI agents, validated in strict or draft mode. |
+
 ### Completed-Data Schemas (JSON Schema Draft 2020-12)
 In addition to the 114 template schema definitions, Tasleemat provides additive companion completed-data schemas for **all 114 lifecycle deliverables** across all 8 phases (100% deliverable coverage). Each deliverable possesses:
 - A Draft 2020-12 companion JSON schema in `tasleemat/schemas/completed/{ARTIFACT_ID}.schema.json`.
@@ -141,9 +152,41 @@ Completed-data payload validation is executed through `validate_artifact_data` o
 7. **Immutability Guarantee:** Validation never mutates input dictionaries or catalog cache structures.
 8. **MCP Server Protocol Conformance:** The Model Context Protocol (MCP) server strictly conforms to JSON-RPC 2.0:
    - Requires `jsonrpc: "2.0"` envelope.
-   - Strictly validates request IDs (`string`, integer `number`, or `null`; rejects boolean, non-finite, fractional float, and structural container IDs with `-32600`).
+   - Strictly validates request IDs (`string`, integer `number`, or `null`; integral float IDs like `1.0` are handled cleanly, while rejecting booleans, non-finite floats, fractional floats like `1.5`, and containers with `-32600`).
    - Requires object-shaped named parameters (`dict` or omitted); rejects positional parameter arrays with standard code `-32602` (`Invalid params`).
    - Silently drops unhandled JSON-RPC notifications while returning standard errors for unhandled requests.
+
+### 🤖 Safe AI Drafting & Bounded Re-Validation Loop
+
+Autonomous agents and LLM toolchains generating PMO deliverables should implement a bounded self-correction loop:
+
+```
+┌─────────────────┐       ┌────────────────────┐       ┌──────────────────────┐
+│ 1. Fetch Schema │ ────> │ 2. LLM Drafts JSON │ ────> │ 3. Preflight Validate│
+│    (Layer 3)    │       │    Structured Data │       │    (mode="draft")    │
+└─────────────────┘       └────────────────────┘       └──────────┬───────────┘
+                                                                  │
+                                            ┌─────────────────────┴─────────────────────┐
+                                            ▼                                           ▼
+                                    [Validation Errors]                          [Valid Payload]
+                                            │                                           │
+                                            ▼                                           ▼
+                                 ┌───────────────────────┐                  ┌───────────────────────┐
+                                 │ 4. Targeted Repair    │                  │ 5. Strict Gate Audit  │
+                                 │    (Max 2 iterations) │                  │    (mode="strict")    │
+                                 └──────────┬────────────┘                  └───────────┬───────────┘
+                                            │                                           │
+                                            └───────────── Re-validate ────────────────>▼
+                                                                                ┌───────────────────────┐
+                                                                                │ 6. Render & Human PMO │
+                                                                                │    Stage-Gate Signoff │
+                                                                                └───────────────────────┘
+```
+
+1. **Preflight Draft Validation:** Validate agent drafts using `mode="draft"` to surface missing fields and formatting violations early.
+2. **Targeted Repair (Bounded Loop):** Pass specific field validation errors back to the model for surgical correction. Enforce a hard ceiling of 2–3 repair iterations to avoid infinite API loops.
+3. **Strict Gate Validation:** Before submitting deliverables for executive stage-gate review, execute validation with `mode="strict"` to guarantee mandatory sections and baseline completeness.
+4. **Mandatory Human Sign-off:** AI-generated artifacts serve as accelerator drafts. Official project authorization requires formal sign-off by designated authorities in the Document Control table.
 
 ### Mock Generation Notice
 The built-in offline mock provider (`AIClient(provider="mock")`) emits structural placeholders labeled prominently with:
@@ -154,27 +197,39 @@ Mock deliverables are strictly intended for offline structural pipeline testing 
 
 ## 🧪 4. Automated Testing Suite
 
-Tasleemat features an extensive automated unit and integration test suite (`tests/`) covering 100% of all 114 forms, 228 reference examples, JSON schemas, OKF data packages, and CLI commands.
+Tasleemat features an extensive automated test suite (`tests/`) covering 100% of all 114 forms, 228 reference examples, JSON schemas, OKF data packages, CLI commands, and MCP protocol integration.
 
 ### Running Unit Tests
 ```bash
-# Run complete test suite (28 comprehensive unit & integration tests)
+# Run complete test suite (130 comprehensive unit & integration tests)
+pytest tests/ -v
+
+# Or run via unittest
 python3 -m unittest discover -s tests -v
 
 # Or run directly via CLI
 tasleemat test -v
 ```
 
-### Test Suite Modules
-| Test Module | Coverage & Verification Scope |
-| :--- | :--- |
-| **`test_parity.py`** | 1:1 English/Arabic structural symmetry across all 8 phases and 114 form folders |
-| **`test_schemas.py`** | JSON schema parsing, top-level keys, field definitions, and JSON-CSV alignment |
-| **`test_okf_datapackage.py`** | Frictionless JSON Schema standard compliance for all 228 package resources |
-| **`test_governance_templates.py`** | Executive Document Control tables and relative link integrity |
-| **`test_fictional_compliance.py`** | Sample data integrity, non-empty content checks, zero unresolved placeholders |
-| **`test_cli_and_exporters.py`** | Multi-tier project scaffolding, parameter substitution, and catalog search |
-| **`test_documentation.py`** | 24 operational manuals, LEXICON integrity, and repository Markdown link integrity |
+### Complete Test Suite Modules (15 Modules / 130 Tests)
+| Test Module | Coverage & Verification Scope | Tests |
+| :--- | :--- | :---: |
+| **`test_parity.py`** | 1:1 English/Arabic structural symmetry across all 8 phases and 114 form folders | 3 |
+| **`test_schemas.py`** | JSON schema parsing, top-level keys, field definitions, and JSON-CSV alignment | 3 |
+| **`test_okf_datapackage.py`** | Frictionless JSON Schema standard compliance for all 228 package resources | 3 |
+| **`test_governance_templates.py`** | Executive Document Control tables and relative link integrity | 3 |
+| **`test_fictional_compliance.py`** | Sample data integrity, non-empty content checks, zero unresolved placeholders | 3 |
+| **`test_cli_and_exporters.py`** | Multi-tier project scaffolding, parameter substitution, and catalog search | 6 |
+| **`test_documentation.py`** | 24 operational manuals, LEXICON integrity, and repository Markdown link integrity | 5 |
+| **`test_ai_client.py`** | AI client initialization, retry heuristics, prompt formatting, error taxonomy | 5 |
+| **`test_consumer_interface.py`** | Public consumer API contract (`tasleemat.list_artifacts`, `get_artifact`, `get_template`, etc.) | 8 |
+| **`test_eva.py`** | Earned Value Analysis mathematics (CPI, SPI, CV, SV, EAC, TCPI) and edge cases | 7 |
+| **`test_format_handlers.py`** | Markdown, JSON, and CSV export handlers, parameter substitution | 6 |
+| **`test_maharat_integration_contract.py`** | Integration contracts for downstream agents and structured tooling | 4 |
+| **`test_mcp_server.py`** | MCP JSON-RPC 2.0 stdio server, tool dispatch, error codes, float ID handling | 35 |
+| **`test_validation_engine_hardening.py`** | Draft 2020-12 validator hardening, recursive non-finite checks, large integer bounds | 38 |
+| **`test_wheel_clean_install.py`** | Clean-environment wheel packaging and CLI installation verification | 1 |
+| **Total Test Suite** | **Comprehensive Automated Verification Across All Functional Capabilities** | **130** |
 
 ---
 
@@ -182,7 +237,7 @@ tasleemat test -v
 
 Tasleemat follows a pure **Repository-First** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](README.md) and [`forms/`](forms/en/index.md) directories as native GitHub-flavored Markdown.
 
-The previous GitHub Pages deployment portal has been retired. Documentation is directly accessible, searchable, and navigable within the repository.
+For online interactive browsing, an accessible, searchable static HTML portal is generated via `tools/generate_documentation_portal.py` and published at **[https://fakhr.me/Tasleemat/](https://fakhr.me/Tasleemat/)**.
 
 ---
 

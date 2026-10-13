@@ -50,7 +50,7 @@ Most Project Management Offices (PMOs) and Project Managers waste hundreds of ho
 | :--- | :--- |
 | **Fragmented templates** scattered across folders and platforms | **114 production-ready deliverables** in structured Markdown, CSV data schemas, and JSON metadata |
 | **English-only or poor machine translations** | **Handcrafted 1:1 bilingual parity** with Saudi DGA, PMI & ISO approved terminology |
-| **One-size-fits-all overhead** that suffocates small projects | **4 Tailoring Tiers** (from a 5-artifact micro setup to a 45+ enterprise governance pack) |
+| **One-size-fits-all overhead** that suffocates small projects | **3 Governance Tiers & 5 Methodology Packs** (from a lean fast-track setup to a 45+ enterprise governance pack) |
 | **Weak gate transition criteria** leading to scope creep & budget overrun | **6 Formal Stage-Gates** (Gate 0 to 5) with concrete RACI checklists and sign-off criteria |
 | **Zero AI readiness** | Built-in **NIST AI RMF compliance**, AI model cards, and ready-to-run prompt templates |
 
@@ -107,10 +107,10 @@ flowchart LR
     P0["🏛️ 00. Portfolio<br/>(6 Forms)"] --> P1["💎 01. Business<br/>(4 Forms)"]
     P1 --> P2["⚖️ 02. Approach<br/>(6 Forms)"]
     P2 --> P3["🚀 03. Initiating<br/>(5 Forms)"]
-    P3 --> P4["📐 04. Planning<br/>(52 Forms)"]
-    P4 --> P5["⚙️ 05. Executing<br/>(12 Forms)"]
-    P5 --> P6["📊 06. Controlling<br/>(12 Forms)"]
-    P6 --> P7["🏁 07. Closing<br/>(5 Forms)"]
+    P3 --> P4["📐 04. Planning<br/>(55 Forms)"]
+    P4 --> P5["⚙️ 05. Executing<br/>(15 Forms)"]
+    P5 --> P6["📊 06. Controlling<br/>(16 Forms)"]
+    P6 --> P7["🏁 07. Closing<br/>(7 Forms)"]
 ```
 
 ### 📑 Lifecycle Phase Directory
@@ -118,13 +118,13 @@ flowchart LR
 | Phase | Phase Name | Focus & Scope | Forms Count | Quick Links |
 | :---: | :--- | :--- | :---: | :---: |
 | **00** | **[Program & Portfolio Strategy](forms/en/00_Program_and_Portfolio_Management/)** | Strategic alignment, OKRs, portfolio roadmap, dependencies, PMO maturity | **6 Forms** | [English](forms/en/00_Program_and_Portfolio_Management/) • [العربية](forms/ar/00_إدارة_البرامج_والمحافظ/) |
-| **01** | **[Business & Value Delivery](forms/en/01_Business_and_Value_Delivery/)** | Business case justification, feasibility studies, benefits realization | **4 Forms** | [English](forms/en/01_Business_and_Value_Delivery/) • [العربية](forms/ar/01_الأعمال_وتسليم_القيمة/) |
+| **01** | **[Business & Value Delivery](forms/en/01_Business_and_Value_Delivery/)** | Business case justification, benefits management plan, value realization | **4 Forms** | [English](forms/en/01_Business_and_Value_Delivery/) • [العربية](forms/ar/01_الأعمال_وتسليم_القيمة/) |
 | **02** | **[Project Approach & Tailoring](forms/en/02_Project_Approach_and_Tailoring/)** | Governance tailoring strategy, agile/hybrid selection, AI ethics & model cards | **6 Forms** | [English](forms/en/02_Project_Approach_and_Tailoring/) • [العربية](forms/ar/02_منهجية_المشروع_وتخصيصه/) |
 | **03** | **[Initiating](forms/en/03_Initiating/)** | Project charter, initial assumption log, stakeholder identification register | **5 Forms** | [English](forms/en/03_Initiating/) • [العربية](forms/ar/03_البدء/) |
-| **04** | **[Integrated Planning](forms/en/04_Planning/)** | Scope/WBS, schedule, cost/budget, quality, risk, ESG, procurement, security | **52 Forms** | [English](forms/en/04_Planning/) • [العربية](forms/ar/04_التخطيط/) |
-| **05** | **[Executing & Delivering](forms/en/05_Executing/)** | Issue logs, change requests, team charter, sprint backlog, retrospectives | **12 Forms** | [English](forms/en/05_Executing/) • [العربية](forms/ar/05_التنفيذ/) |
-| **06** | **[Monitoring & Controlling](forms/en/06_Monitoring_and_Controlling/)** | Status reports, Earned Value (EVA), variance tracking, quality acceptance | **12 Forms** | [English](forms/en/06_Monitoring_and_Controlling/) • [العربية](forms/ar/06_المراقبة_والتحكم/) |
-| **07** | **[Closing & Transition](forms/en/07_Closing/)** | Operational handover, lessons learned register, contract closeout sign-off | **5 Forms** | [English](forms/en/07_Closing/) • [العربية](forms/ar/07_الإغلاق/) |
+| **04** | **[Integrated Planning](forms/en/04_Planning/)** | Scope/WBS, schedule, cost/budget, quality, risk, ESG, procurement, security | **55 Forms** | [English](forms/en/04_Planning/) • [العربية](forms/ar/04_التخطيط/) |
+| **05** | **[Executing & Delivering](forms/en/05_Executing/)** | Issue logs, change requests, team charter, sprint backlog, retrospectives | **15 Forms** | [English](forms/en/05_Executing/) • [العربية](forms/ar/05_التنفيذ/) |
+| **06** | **[Monitoring & Controlling](forms/en/06_Monitoring_and_Controlling/)** | Status reports, Earned Value (EVA), variance tracking, quality acceptance | **16 Forms** | [English](forms/en/06_Monitoring_and_Controlling/) • [العربية](forms/ar/06_المراقبة_والتحكم/) |
+| **07** | **[Closing & Transition](forms/en/07_Closing/)** | Operational handover, lessons learned register, contract closeout sign-off | **7 Forms** | [English](forms/en/07_Closing/) • [العربية](forms/ar/07_الإغلاق/) |
 
 ---
 
@@ -150,9 +150,9 @@ Every gate produces one of **3 Formal Outcomes**:
 
 ---
 
-## 🎯 4 Tailoring Sizing Profiles
+## 🎯 3 Tailoring Sizing Profiles & Methodology Packs
 
-Avoid governance paralysis by matching the paperwork to the actual risk and scale of your initiative:
+Avoid governance paralysis by matching documentation rigor to the actual risk and scale of your initiative:
 
 | Sizing Tier | Profile Description | Typical Scale | Artifact Count | Core Deliverables Included |
 | :--- | :--- | :--- | :---: | :--- |
@@ -450,6 +450,13 @@ If you use Tasleemat in your PMO operations, institutional research, or consulti
   url          = {https://doi.org/10.5281/zenodo.23193523}
 }
 ```
+
+---
+
+## ⚠️ Governance & Tailoring Disclaimer
+
+> [!NOTE]
+> **Proposed Organizational Model:** Tasleemat is an open reference PMO framework designed to accelerate institutional delivery capability. It represents a proposed organizational model requiring formal tailoring and adoption by your enterprise governance authority. It does not establish statutory legal authority, professional certification, or mandatory compliance rules for external organizations.
 
 ---
 

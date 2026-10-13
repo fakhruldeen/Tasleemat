@@ -29,13 +29,13 @@ created_at: '2026-10-06T16:05:28.501242+00:00'
 
 ## 🎯 Welcome to Tasleemat
 
-**Tasleemat (تسليمات)** is a high-performance, enterprise-grade Project Management Office (PMO) Operating System. It delivers **102 standardized, bilingual (English & Arabic)** deliverable forms engineered in clean Markdown, accompanied by structural schemas (`*.json`, `*.csv`) and real-world reference implementations.
+**Tasleemat (تسليمات)** is a high-performance, enterprise-grade Project Management Office (PMO) Operating System. It delivers **114 standardized, bilingual (English & Arabic)** deliverable forms (228 synchronized bilingual bundles) engineered in clean Markdown, accompanied by structural schemas (`*.json`, `*.csv`) and real-world reference implementations.
 
 Whether you are running a multi-million-dollar infrastructure transformation, a lean agile sprint, or an innovative GenAI deployment, Tasleemat provides the exact governance baseline you need without bureaucratic bloat.
 
 ```mermaid
 flowchart LR
-    A["1. Select Project Tier"] --> B["2. Tailor Deliverables"]
+    A["1. Select Sizing Tier & Pack"] --> B["2. Tailor Deliverables"]
     B --> C["3. Initiate Baseline"]
     C --> D["4. Execute & Monitor"]
     D --> E["5. Verify Stage Gates"]
@@ -49,7 +49,7 @@ flowchart LR
 ### Phase 1: Day 1 to Day 7 — Project Discovery & Sizing
 1. **Determine Project Tier & Category:**
    - Consult [`05_tailoring_profiles.md`](05_tailoring_profiles.md).
-   - Classify your initiative into **Tier 1 (Enterprise / Strategic)**, **Tier 2 (Medium / Core)**, **Tier 3 (Small / Fast-Track Agile)**, or **Tier 4 (AI / Emerging Tech)**.
+   - Classify your initiative into **Tier 1 (Enterprise / Mega)**, **Tier 2 (Standard / Core)**, or **Tier 3 (Lean / Fast-Track)**, and select your Methodology Archetype Pack (*General*, *Agile*, *AI Governance*, *Predictive*, or *Hybrid*).
 2. **Review Stage-Gate Requirements:**
    - Read [`04_stage_gates_and_governance.md`](04_stage_gates_and_governance.md) to understand the 6 governance milestones (Gate 0 to Gate 5).
 3. **Draft the Strategic Foundation:**
@@ -118,10 +118,18 @@ examples/en/03_Initiating/01_Project_Charter/
 | **02** | [`02_usage_guide.md`](02_usage_guide.md) | All Practitioners | Template fields, markdown rules, JSON/CSV tools |
 | **03** | [`03_pmo_policy_manual.md`](03_pmo_policy_manual.md) | PMO & Executives | Corporate governance, change control, compliance |
 | **04** | [`04_stage_gates_and_governance.md`](04_stage_gates_and_governance.md) | PMs & Gate Reviewers | 6 Stage-Gates, entry/exit criteria, signoff |
-| **05** | [`05_tailoring_profiles.md`](05_tailoring_profiles.md) | PMs & PMO Leads | Project sizing matrix, 4-tier mandatory deliverables |
-| **06** | [`06_raci_authority_matrix.md`](06_raci_authority_matrix.md) | Governance Officers | 102-form RACI approval rights |
+| **05** | [`05_tailoring_profiles.md`](05_tailoring_profiles.md) | PMs & PMO Leads | Project sizing matrix, 3-tier mandatory deliverables and methodology packs |
+| **06** | [`06_raci_authority_matrix.md`](06_raci_authority_matrix.md) | Governance Officers | 114-deliverable RACI approval rights |
 | **07** | [`07_document_dependencies.md`](07_document_dependencies.md) | Architects & PMs | Upstream/downstream deliverable data flows |
 | **08** | [`08_ai_governance_framework.md`](08_ai_governance_framework.md) | AI PMs & Tech Leads | AI Canvas, Model Cards, Ethics, SDAIA/NIST |
 | **09** | [`09_agile_hybrid_integration.md`](09_agile_hybrid_integration.md) | Scrum Masters & PMs | Agile ceremonies, flow metrics, DoD, Sprints |
 | **10** | [`10_faq_and_troubleshooting.md`](10_faq_and_troubleshooting.md) | All Users | 25+ practical answers to common obstacles |
 | **11** | [`11_tools_and_automation.md`](11_tools_and_automation.md) | Developers & DevOps | Scripts, CI/CD, JIRA/Azure DevOps integration |
+| **12** | [`12_open_knowledge_framework.md`](12_open_knowledge_framework.md) | Data Engineers & AI Architects | Open Knowledge Framework, Frictionless data package, FAIR data principles |
+
+---
+
+## ⚠️ Governance & Tailoring Disclaimer
+
+> [!NOTE]
+> **Proposed Organizational Model:** Tasleemat is an open reference PMO framework designed to accelerate institutional delivery capability. It represents a proposed organizational model requiring formal tailoring and adoption by your enterprise governance authority. It does not establish statutory legal authority, certification, or mandatory compliance rules for external organizations.

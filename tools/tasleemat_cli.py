@@ -108,9 +108,9 @@ def scaffold_project(args):
     tier = args.tier
     if not tier:
         print("\nSelect Governance Tier:")
-        print("  1) Enterprise (Full 52+ baselines)")
-        print("  2) Standard (Balanced 14+ baselines)")
-        print("  3) Fast-Track / Lean (Minimal 6+ baselines)")
+        print("  1) Enterprise / Strategic (35–50 deliverables)")
+        print("  2) Standard Enterprise (18–25 deliverables)")
+        print("  3) Fast-Track / Lean (7–9 deliverables)")
         choice = input("Choice [1-3, default=2]: ").strip()
         tier = choice if choice in ["1", "2", "3"] else "2"
 
@@ -384,7 +384,7 @@ def print_comprehensive_help(target_cmd=None):
                 ("-c, --code TEXT", "Project ID code (e.g., 'PRJ-2026-001')"),
                 ("--pm TEXT", "Project Manager name"),
                 ("--sponsor TEXT", "Executive Sponsor name"),
-                ("-t, --tier {1,2,3}", "Governance Tier: 1=Enterprise (52+ forms), 2=Standard (14+ forms), 3=Lean (6+ forms)"),
+                ("-t, --tier {1,2,3}", "Governance Tier: 1=Enterprise (35–50 deliverables), 2=Standard (18–25 deliverables), 3=Lean (7–9 deliverables)"),
                 ("-p, --pack {general,agile,ai,predictive,hybrid}", "Methodology Pack (Default: general)"),
                 ("-l, --lang {ar,en,both}", "Deliverable language selection (Default: both)"),
                 ("-o, --out PATH", "Target output directory (Default: ./<code_Workspace>)")
@@ -393,7 +393,7 @@ def print_comprehensive_help(target_cmd=None):
         },
         "list": {
             "title": "list — List all available project management forms & templates",
-            "desc": "Displays the complete catalog of 102 bilingual forms indexed by phase and form code.",
+            "desc": "Displays the complete catalog of 114 bilingual forms indexed by phase and form code.",
             "args": [
                 ("-l, --lang {ar,en}", "Catalog language filter (Default: en)")
             ],
@@ -435,9 +435,15 @@ def print_comprehensive_help(target_cmd=None):
             ],
             "example": "tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./Project_Charter.md"
         },
+        "mcp": {
+            "title": "mcp — Run Model Context Protocol server over stdio",
+            "desc": "Runs the official MCP server exposing all 114 deliverables, schemas, and governance tools to AI agents.",
+            "args": [],
+            "example": "tasleemat mcp"
+        },
         "test": {
             "title": "test — Run complete automated test suite",
-            "desc": "Executes 38 unit & integration tests covering forms, schemas, data packages, CLI, and links.",
+            "desc": "Executes 130+ unit & integration tests covering forms, schemas, data packages, CLI, and links.",
             "args": [
                 ("-v, --verbose", "Enable verbose detailed test output")
             ],
