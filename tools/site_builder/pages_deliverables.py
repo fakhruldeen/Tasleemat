@@ -246,8 +246,8 @@ def generate_detail_page(
     pack_badges = " ".join([f'<span class="tag pack">{p}</span>' for p in unique_packs])
 
     # Convert markdown contents safely to HTML
-    rendered_guide_html = markdown.markdown(guide_content, extensions=['tables', 'fenced_code'])
-    rendered_example_html = markdown.markdown(example_content, extensions=['tables', 'fenced_code'])
+    rendered_guide_html = markdown.markdown(guide_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
+    rendered_example_html = markdown.markdown(example_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
 
     # Format JSON schema cleanly
     if isinstance(schema_content, dict):
@@ -355,14 +355,14 @@ def generate_detail_page(
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             {rendered_guide_html}
           </div>
         </div>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             {rendered_example_html}
           </div>
         </div>

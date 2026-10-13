@@ -8,6 +8,7 @@ Main static site compiler for the Tasleemat Public Portal (https://fakhr.me/Tasl
 """
 
 import os
+import re
 import sys
 import json
 import shutil
@@ -48,9 +49,15 @@ def compile_manual_pages():
             for line in raw_md.splitlines():
                 if line.startswith("# "):
                     title = line[2:].strip()
-                    break
-                    
-            body_html = markdown.markdown(raw_md, extensions=['tables', 'fenced_code', 'toc'])
+            # Support callouts like > [!NOTE], > [!IMPORTANT], > [!WARNING]
+            def repl_callout(m):
+                kind = m.group(1).upper()
+                body = m.group(2).strip()
+                return f'<div class="admonition {kind.lower()}"><div class="admonition-title">{kind}</div><p>{body}</p></div>'
+
+            processed_md = re.sub(r"^>\s*\[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*(.*)$", repl_callout, raw_md, flags=re.MULTILINE | re.IGNORECASE)
+
+            body_html = markdown.markdown(processed_md, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
             
             alt_lang = "ar" if lang == "en" else "en"
             alt_url = f"{BASE_URL}/{alt_lang}/{md_file.stem}.html"
@@ -63,7 +70,7 @@ def compile_manual_pages():
                 <span style="color: var(--text-main); font-weight: 600;">{title}</span>
               </nav>
 
-              <div class="card" style="padding: 2.5rem; line-height: 1.8;">
+              <div class="card markdown-body" style="padding: 2.5rem; line-height: 1.8;">
                 {body_html}
               </div>
             </div>
