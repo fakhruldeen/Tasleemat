@@ -2568,8 +2568,17 @@ def compile_static_site(deliverables):
     # Compile the 6 core Stitch screens directly into site/ and docs/
     compile_stitch_screens(SITE_DIR, DOCS_DIR, deliverables)
 
+    # Compile the redesigned, accessible, bilingual Tasleemat Public Portal
+    try:
+        from tools.site_builder.build_site import build_site as build_redesigned_site
+        print("Invoking modern site_builder pipeline...")
+        build_redesigned_site()
+    except Exception as e:
+        print(f"Warning: Redesigned site builder encountered error: {e}")
+
     print(f"Executive static HTML portal compiled successfully to {SITE_DIR}!")
 
 if __name__ == "__main__":
     build_portal()
+
 
