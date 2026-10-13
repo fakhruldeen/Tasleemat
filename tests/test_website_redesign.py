@@ -200,6 +200,39 @@ class TestWebsiteRedesign(unittest.TestCase):
             matches = re.findall(r'type:\s*(?:Guide|Form|Overview|Manual|Example)[\s\S]{0,100}token_pointer:', html)
             self.assertEqual(len(matches), 0, f"Found visible YAML frontmatter in {page}: {matches}")
 
+    def test_footer_author_card(self):
+        """Verifies that all pages include Mohamed Fakhruldeen's author card with links to fakhr.me and linkedin in the footer."""
+        sample_pages = [
+            ROOT / "site" / "index.html",
+            ROOT / "site" / "ar" / "index.html",
+            ROOT / "site" / "deliverables" / "index.html",
+            ROOT / "site" / "guides" / "index.html",
+            ROOT / "site" / "deliverables" / "PMO-03.01" / "index.html",
+            ROOT / "site" / "ar" / "deliverables" / "PMO-03.01" / "index.html",
+        ]
+        for page in sample_pages:
+            self.assertTrue(page.exists(), f"Page {page} must exist")
+            html = page.read_text(encoding="utf-8")
+            self.assertIn("footer-author-card", html, f"Author card missing in {page}")
+            self.assertIn("https://fakhr.me", html, f"fakhr.me link missing in {page}")
+            self.assertIn("https://www.linkedin.com/in/fakhruldeen", html, f"LinkedIn link missing in {page}")
+            self.assertIn("https://avatars.githubusercontent.com/u/1162549", html, f"Avatar missing in {page}")
+
+    def test_deliverable_prompt_and_short_tabs(self):
+        """Verifies that deliverable pages have shortened tab names and a dedicated LLM Prompt tab."""
+        sample_pages = [
+            ROOT / "site" / "deliverables" / "PMO-03.01" / "index.html",
+            ROOT / "site" / "ar" / "deliverables" / "PMO-03.01" / "index.html",
+        ]
+        for page in sample_pages:
+            self.assertTrue(page.exists(), f"Page {page} must exist")
+            html = page.read_text(encoding="utf-8")
+            self.assertIn('id="tab-prompt"', html, f"LLM Prompt tab missing in {page}")
+            self.assertIn('id="tab-guide"', html, f"User Guide tab missing in {page}")
+            self.assertIn('id="tab-template"', html, f"Template tab missing in {page}")
+            self.assertIn('id="tab-example"', html, f"Example tab missing in {page}")
+            self.assertIn('id="tab-schema"', html, f"Schema tab missing in {page}")
+
 
 if __name__ == "__main__":
     unittest.main()

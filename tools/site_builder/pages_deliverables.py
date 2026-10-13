@@ -287,6 +287,7 @@ def generate_detail_page(
     guide_content: str,
     example_content: str,
     schema_content: str,
+    prompt_content: str = "",
     lang: str = "en",
     base_url: str = "/Tasleemat"
 ) -> str:
@@ -306,12 +307,15 @@ def generate_detail_page(
     unique_packs = sorted(list(set(packs_list)))
     pack_badges = " ".join([f'<span class="tag pack">{p}</span>' for p in unique_packs])
 
-    # Clean frontmatter from template and guide
+    # Clean frontmatter from template, guide, and prompt
     cleaned_template_content = strip_yaml_frontmatter(template_content)
     cleaned_guide_content = strip_yaml_frontmatter(guide_content)
+    cleaned_prompt_content = strip_yaml_frontmatter(prompt_content)
 
     # Convert markdown contents safely to HTML
     rendered_guide_html = markdown.markdown(cleaned_guide_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
+    rendered_prompt_html = markdown.markdown(cleaned_prompt_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
+
 
     # Extract metadata chips and clean example markdown for rich form-viewer display
     example_chips = _extract_meta_chips(example_content)
@@ -378,21 +382,25 @@ def generate_detail_page(
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 {"1. Overview & Metadata" if not is_ar else "1. النظرة العامة والبيانات الوصفية"}
+            📋 {"Overview" if not is_ar else "نظرة عامة"}
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 {"2. Template Markdown" if not is_ar else "2. قالب التسليمة"}
+            📄 {"Template" if not is_ar else "القالب"}
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 {"3. Practitioner Guide" if not is_ar else "3. الدليل الإرشادي للممارس"}
+            📖 {"User Guide" if not is_ar else "دليل المستخدم"}
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 {"LLM Prompt" if not is_ar else "مطالبة التوليد"}
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 {"4. Realistic Example" if not is_ar else "4. مثال واقعي مكتمل"}
+            💡 {"Example" if not is_ar else "مثال واقعي"}
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ {"5. JSON Schema (Draft 2020-12)" if not is_ar else "5. مخطط البيانات Draft 2020-12"}
+            ⚙️ {"Schema" if not is_ar else "المخطط"}
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -434,13 +442,33 @@ def generate_detail_page(
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">{"User Guide & Practitioner Instructions" if not is_ar else "دليل المستخدم وإرشادات الممارس"}</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ {"Print Guide" if not is_ar else "طباعة الدليل"}
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             {rendered_guide_html}
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">{"LLM Generation Prompt & Agent Instructions" if not is_ar else "مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل"}</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='{'Copied!' if not is_ar else 'تم النسخ!'}'; setTimeout(() => this.innerText='{'Copy Prompt' if not is_ar else 'نسخ المطالبة'}', 2000);">
+              📋 {"Copy Prompt" if not is_ar else "نسخ المطالبة"}
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            {rendered_prompt_html if rendered_prompt_html.strip() else f'<pre><code>{html.escape(cleaned_prompt_content)}</code></pre>'}
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">

@@ -109,10 +109,12 @@ def compile_all_deliverables(artifacts_summary):
         guide_en = tasleemat.get_artifact_asset(art_id, "guide", lang="en")
         example_en = tasleemat.get_artifact_asset(art_id, "example", lang="en")
         schema_text = tasleemat.get_artifact_asset(art_id, "schema", lang="en")
+        prompt_en = tasleemat.get_artifact_asset(art_id, "prompt", lang="en")
         
         template_ar = tasleemat.get_artifact_asset(art_id, "template", lang="ar")
         guide_ar = tasleemat.get_artifact_asset(art_id, "guide", lang="ar")
         example_ar = tasleemat.get_artifact_asset(art_id, "example", lang="ar")
+        prompt_ar = tasleemat.get_artifact_asset(art_id, "prompt", lang="ar")
         
         # English Detail Page
         en_out_dir = SITE_DIR / "deliverables" / art_id
@@ -123,6 +125,7 @@ def compile_all_deliverables(artifacts_summary):
             guide_content=guide_en,
             example_content=example_en,
             schema_content=schema_text,
+            prompt_content=prompt_en,
             lang="en",
             base_url=BASE_URL
         )
@@ -138,11 +141,13 @@ def compile_all_deliverables(artifacts_summary):
             guide_content=guide_ar,
             example_content=example_ar,
             schema_content=schema_text,
+            prompt_content=prompt_ar,
             lang="ar",
             base_url=BASE_URL
         )
         with open(ar_out_dir / "index.html", "w", encoding="utf-8") as f:
             f.write(html_ar)
+
 
 
 def build_site():
