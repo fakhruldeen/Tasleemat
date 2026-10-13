@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1346,6 +1436,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1447,8 +1543,126 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="contractor-status-report-generation-prompt">Contractor Status Report - Generation Prompt</h1>
+<!--
+System Instructions: This document contains instructions for generating the
+«Contractor Status Report». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
+
+<blockquote>
+<p><strong>Context and Definition:</strong>
+A formal contract administration artifact submitted by external vendors to report work progress, variances, forecasts, and risks.</p>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> Approved Project Baselines (PMO-04.01.01), Work Performance Data &amp; Logs (PMO-05.01 - 05.12)
+  * <em>Optional:</em> Risk Register (PMO-04.08.02), Vendor Agreements (PMO-04.09.04)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> Change Requests (PMO-05.03), Project / Phase Closeout (PMO-07.03), Lessons Learned Summary (PMO-07.01)
+  * <em>Optional:</em> Transition to Operations Checklist (PMO-07.04), Value Realization Register (PMO-01.03)</p>
+</blockquote>
+<hr />
+<h2 id="reporting-information">Reporting Information</h2>
+<h3 id="contractor">Contractor</h3>
+<p><strong>Instruction:</strong> The legal name and contact details of the contractor performing the contract.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="contract-number-and-type">Contract Number and Type</h3>
+<p><strong>Instruction:</strong> The official contract identifier and contract type (e.g., Fixed Price, T&amp;M).</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="reporting-period">Reporting Period</h3>
+<p><strong>Instruction:</strong> The start and end calendar dates covered by this contractor report.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="report-submission-date">Report Submission Date</h3>
+<p><strong>Instruction:</strong> The exact date on which the report was officially submitted to the project manager.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="performance-this-reporting-period">Performance This Reporting Period</h2>
+<h3 id="scope-status-this-period">Scope / Status This Period</h3>
+<p><strong>Instruction:</strong> Assessment of contracted scope deliverables completed or in progress during this period.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="scope-variance-and-cause">Scope / Variance and Cause</h3>
+<p><strong>Instruction:</strong> Explanation of any deviations from contracted scope baselines and their root causes.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="quality-status-this-period">Quality / Status This Period</h3>
+<p><strong>Instruction:</strong> Evaluation of deliverable quality against contracted standards and specifications.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="quality-variance-and-cause">Quality / Variance and Cause</h3>
+<p><strong>Instruction:</strong> Root causes and details of any non-conformance or failed quality checks.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="schedule-status-this-period">Schedule / Status This Period</h3>
+<p><strong>Instruction:</strong> Assessment of progress against contracted milestone dates and schedule baselines.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="schedule-variance-and-cause">Schedule / Variance and Cause</h3>
+<p><strong>Instruction:</strong> Root cause explanation for any schedule delays or accelerations.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="cost-status-this-period">Cost / Status This Period</h3>
+<p><strong>Instruction:</strong> Assessment of contract billings and expenditures against the financial plan.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="cost-variance-and-cause">Cost / Variance and Cause</h3>
+<p><strong>Instruction:</strong> Root cause explanation for any financial variances or billing discrepancies.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="forecast-performance-for-future-reporting-periods">Forecast Performance for Future Reporting Periods</h2>
+<h3 id="estimated-completion-date-estimate">Estimated Completion Date / Estimate</h3>
+<p><strong>Instruction:</strong> The contractor projected delivery and contract completion date.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="estimated-completion-date-basis">Estimated Completion Date / Basis</h3>
+<p><strong>Instruction:</strong> Basis and rationale supporting the estimated completion date.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="estimated-final-cost-estimate">Estimated Final Cost / Estimate</h3>
+<p><strong>Instruction:</strong> Projected total final cost at completion (applicable to cost-reimbursable contracts).</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="estimated-final-cost-basis">Estimated Final Cost / Basis</h3>
+<p><strong>Instruction:</strong> Basis and historical cost rate data supporting the estimated final cost.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="key-forecast-assumptions-estimate">Key Forecast Assumptions / Estimate</h3>
+<p><strong>Instruction:</strong> Summary of key assumptions underpinning forecast values.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="key-forecast-assumptions-basis">Key Forecast Assumptions / Basis</h3>
+<p><strong>Instruction:</strong> Dependencies and external conditions supporting forecast stability.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="claims-or-disputes">Claims or Disputes</h2>
+<h3 id="claims-or-disputes_1">Claims or Disputes</h3>
+<p><strong>Instruction:</strong> Summary of any new, pending, or resolved contractual claims or disputes.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="risks">Risks</h2>
+<h3 id="risks_1">Risks</h3>
+<p><strong>Instruction:</strong> Key vendor-side risks that could impact contract milestones or deliverables.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="planned-corrective-or-preventive-action">Planned Corrective or Preventive Action</h2>
+<h3 id="planned-corrective-or-preventive-action_1">Planned Corrective or Preventive Action</h3>
+<p><strong>Instruction:</strong> Specific remedial actions planned by the contractor to recover performance variances.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="issues">Issues</h2>
+<h3 id="issues_1">Issues</h3>
+<p><strong>Instruction:</strong> Current active roadblocks, technical issues, or dependencies affecting execution.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="escalations">Escalations</h2>
+<h3 id="escalations_1">Escalations</h3>
+<p><strong>Instruction:</strong> Items requiring urgent decisions or dispute intervention from the buyer or PMO.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="contract-change-requests">Contract Change Requests</h2>
+<h3 id="contract-change-requests_1">Contract Change Requests</h3>
+<p><strong>Instruction:</strong> Summary of formal contract change proposals submitted, reviewed, or pending.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="comments">Comments</h2>
+<h3 id="comments_1">Comments</h3>
+<p><strong>Instruction:</strong> Additional context, contractor remarks, or explanatory notes.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -2000,6 +2214,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

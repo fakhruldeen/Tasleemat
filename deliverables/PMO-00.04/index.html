@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1495,6 +1585,12 @@ Contingency rows:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1644,8 +1740,129 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="resource-capacity-matrix-llm-generation-guide">RESOURCE CAPACITY MATRIX - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>RESOURCE CAPACITY MATRIX</code>. When asked to populate this form, use the
+guidance provided for each section below to accurately generate the required
+content. Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+The resource capacity matrix shows whether the plan is feasible in terms of
+the people available to carry it out. It compares what the programme or
+project needs against what exists, and the difference is the thing worth
+reading: a plan that requires more capacity than is available is not a plan
+that needs more effort, it is a plan that cannot be executed as written.</p>
+<p><strong>Alignment:</strong>
+This resource capacity matrix must be consistent with: Portfolio roadmap,
+Program charter, Project management plan, Resource breakdown structure,
+Procurement plan.</p>
+</blockquote>
+<h3 id="matrix-scope-and-level">Matrix Scope and Level</h3>
+<p><strong>Instruction:</strong> What this matrix covers and at what level it is maintained, whether portfolio-wide across initiatives, program-wide across components, or for a single project. The level decides what the matrix is used to decide: a portfolio matrix decides between initiatives, a project matrix decides whether one plan is credible, and reading either as the other produces a confident wrong answer.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="capacity-unit-of-measure">Capacity Unit of Measure</h3>
+<p><strong>Instruction:</strong> The unit used for every figure in the matrix, whether person-days, full-time equivalents, or hours per period. State it once and use it throughout: a matrix whose rows use different units cannot be added up, and the total at the foot of it is then arithmetically meaningless rather than merely approximate.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="periods-covered">Periods Covered</h3>
+<p><strong>Instruction:</strong> The periods the matrix covers, matching those of the schedule it is compared against. Where the matrix is annual and the schedule is weekly, the comparison has to be done by hand every time and is therefore not done, which is how a quarterly shortfall survives to become a delivery failure.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="source-of-truth-or-extract">Source of Truth or Extract</h3>
+<p><strong>Instruction:</strong> Whether this matrix is the authoritative record or an extract from a resourcing tool. Record which, because a reader who treats a stale extract as current will plan against capacity that was reallocated weeks ago, and the error surfaces only when the work cannot be staffed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="matrix-owner">Matrix Owner</h3>
+<p><strong>Instruction:</strong> The single role accountable for the matrix as a whole, which is normally not the owner of any one resource in it. Where this is blank, the matrix has contributors but nobody who notices that a row has not been updated since the reorganisation.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="last-updated">Last Updated</h3>
+<p><strong>Instruction:</strong> The date the matrix was last reconciled against the plan, and against which version of the schedule. Without it a reader cannot tell a current matrix from an abandoned one, and the two are indistinguishable on the page.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="id">ID</h3>
+<p><strong>Instruction:</strong> The identifier for the resource role, used in the demand and gap sections so the three can be compared row against row. Without a shared identifier the comparison is done by eye, and two similarly named roles are the ones most often confused.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role-or-team">Resource Role or Team</h3>
+<p><strong>Instruction:</strong> The role or team, named as the work requires it rather than as the organisation chart draws it. A matrix organised by existing departments can never show a gap, because it only ever lists what is already there, and the absence of a needed capability reads as its absence from the plan rather than from the organisation.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="period">Period</h3>
+<p><strong>Instruction:</strong> The period the row covers, using the same periods throughout the matrix. Capacity recorded per period rather than in total is what makes the matrix usable, because a resource with a thousand person-days available who is fully committed in the month the work is needed has no capacity at all.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="total-available">Total Available</h3>
+<p><strong>Instruction:</strong> The capacity that exists in the period, before any allocation, in the unit declared for the matrix. This is a figure about the organisation rather than about the project, and recording it here is what allows the reader to see how much of it is actually available.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="allocated">Allocated</h3>
+<p><strong>Instruction:</strong> The capacity already committed elsewhere in the portfolio. This is the column most often left out, and without it the available figure is the total, which is not what the project can use. It is also the column that reveals a resource being shared between initiatives without either owner knowing.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="remaining">Remaining</h3>
+<p><strong>Instruction:</strong> What is left after allocation, which is the figure the planner actually has. Where this is negative, the matrix has found a real problem; where it is silently recorded as zero because nobody wanted to write a negative number, the problem has been hidden instead of solved.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="constraints-or-single-points-of-failure">Constraints or Single Points of Failure</h3>
+<p><strong>Instruction:</strong> What limits this resource: a location, a qualification held by one person, a licence, a tool only one person can operate, or a notice period. Record the consequence rather than the adjective, because "test automation is a single point of failure because one person holds it" can be acted on, while "test automation is a risk" cannot.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="notes">Notes</h3>
+<p><strong>Instruction:</strong> Anything that changes how the row should be read, such as a known vacancy, planned leave, or a resource shared with another portfolio. Where a role is filled by more than one person, record the role once and note the split here, since a row per person hides the total capacity of the role.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="id_1">ID</h3>
+<p><strong>Instruction:</strong> The resource role the demand is for, matching the ID used in the capacity section so the two can be set against each other.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role">Resource Role</h3>
+<p><strong>Instruction:</strong> The role the demand falls on, using the same naming as the capacity section. The two must be the same list, or the comparison in the gap section silently excludes roles that appear in only one of them, which are usually the ones in trouble.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="period_1">Period</h3>
+<p><strong>Instruction:</strong> The period the demand falls in. A demand recorded with no period cannot be compared with a capacity figure that has one, and is therefore dropped from the comparison without anyone deciding to drop it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="required-capacity">Required Capacity</h3>
+<p><strong>Instruction:</strong> What the scope and schedule require in the period. Record the figure the plan was built on rather than the figure currently being achieved, since the second is a consequence of the first being wrong and reporting it back as the requirement makes the shortfall disappear from the plan.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="source-of-demand">Source of Demand</h3>
+<p><strong>Instruction:</strong> Which part of the plan generates it, such as a named deliverable, work package, or activity. A demand that cannot be traced to something in the plan cannot be challenged, and demands that cannot be challenged only ever grow.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="priority">Priority</h3>
+<p><strong>Instruction:</strong> Whether the demand is essential, or could be deferred or descoped. Without a priority a gap has no remedy, because the available responses are to add capacity, move the work, or reduce it, and nothing in the matrix says which of those the programme would accept.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role_1">Resource Role</h3>
+<p><strong>Instruction:</strong> The role the gap applies to, using the same naming as the sections above. Where a role appears in the demand but not the capacity, the gap is the whole requirement rather than a shortfall, and that case is worth distinguishing because it is a different problem.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="gap">Gap</h3>
+<p><strong>Instruction:</strong> The difference between required and remaining, stated as a signed number so that a surplus is not read as a shortfall. This is the figure the whole matrix exists to produce, and a matrix that records only the totals has omitted the only number anyone reads.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="period_2">Period</h3>
+<p><strong>Instruction:</strong> The period the gap falls in. A gap in a period with no demand in it is a different problem from a gap in a period the work needs, and reporting both as "a gap" sends the reader looking for the wrong remedy.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resolution-planned">Resolution Planned</h3>
+<p><strong>Instruction:</strong> How the gap will be closed: recruitment, a contractor, moving work between periods, reducing scope, or accepting the risk. Where the gap is covered by a contractor or a shared resource, record the contract or agreement that covers it, because a gap filled on the understanding that someone will help is not covered at all.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resolution-owner">Resolution Owner</h3>
+<p><strong>Instruction:</strong> Who is accountable for closing the gap. A gap with a planned resolution and no owner is a gap being wished away, and it is the most common way a capacity matrix comes to be relied upon long after it was last true.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resolution-date">Resolution Date</h3>
+<p><strong>Instruction:</strong> By when the resolution is expected to be in place. This is what tells the reader whether the plan is still feasible, so record it rather than leaving the row open, and where the date has passed without resolution, escalate rather than moving the date.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role_2">Resource Role</h3>
+<p><strong>Instruction:</strong> The role the contingency applies to, or "plan" where the buffer is held across all roles rather than against one.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="contingency-type">Contingency Type</h3>
+<p><strong>Instruction:</strong> Whether the buffer is in capacity, in time, or in scope. The three are not interchangeable: time contingency can be spent once, capacity contingency can be spent on anything, and scope contingency reduces the deliverable. A plan that holds no scope contingency and states only that it has float is a plan whose contingency is the work being cut.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="contingency-amount">Contingency Amount</h3>
+<p><strong>Instruction:</strong> The size of the buffer, in the declared unit. Record it as a figure rather than a percentage, because a percentage of a demand that was never reconciled produces a number that looks precise and is not.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="how-it-would-be-used">How It Would Be Used</h3>
+<p><strong>Instruction:</strong> What the buffer protects, recorded so it cannot be quietly consumed on something it was not held for. A contingency with no stated use is the first thing cut in a difficult month, which is precisely the month it was held for.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -2191,6 +2408,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

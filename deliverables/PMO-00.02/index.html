@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1524,6 +1614,12 @@ Risk and assumption rows:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1686,8 +1782,161 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="program-charter-llm-generation-guide">PROGRAM CHARTER - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>PROGRAM CHARTER</code>. When asked to populate this form, use the guidance provided
+for each section below to accurately generate the required content. Reference
+<code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+The program charter is the document that authorises a program. It states why the
+program exists, what it is accountable for delivering, and what authority and
+resources have been given to the program manager in order to deliver it. It is
+the point at which a group of individually sensible projects becomes a program
+with a single accountable owner and a single set of objectives.</p>
+<p><strong>Alignment:</strong>
+This program charter must be consistent with: Portfolio roadmap, Business case,
+Program management plan, Organizational change management plan.</p>
+</blockquote>
+<h3 id="program-purpose">Program Purpose</h3>
+<p><strong>Instruction:</strong> The change the program exists to bring about, not a description of the work it will do. "Replace the billing platform" describes work; "so that month-end billing closes in three days rather than ten" describes a change, and only the second can be judged complete or not.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="business-driver-and-strategic-alignment">Business Driver and Strategic Alignment</h3>
+<p><strong>Instruction:</strong> The portfolio or strategy entry this program serves, named so the program can be traced back to the objective that funded it. A charter that cannot name its driver has no way to answer whether it is still worth doing once the strategy has moved on.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="problem-or-opportunity-statement">Problem or Opportunity Statement</h3>
+<p><strong>Instruction:</strong> The specific problem being solved or the specific opportunity being taken, stated so that someone who disagreed with it could say why. An opportunity described only in positive terms is indistinguishable from a wish, because nothing in the statement can fail.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="consequence-of-not-proceeding">Consequence of Not Proceeding</h3>
+<p><strong>Instruction:</strong> What happens if the program is not undertaken, including what is lost rather than only what is missed. This is the test every charter is eventually measured against, usually several years later by someone who was not present when it was written, and it is almost never recorded at the time.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="program-vision-statement">Program Vision Statement</h3>
+<p><strong>Instruction:</strong> A short statement of the future state the program exists to create, in the organisation's own words. Keep it to a single sentence that someone outside the program could understand, since a vision statement read only by the program team is a statement to itself.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="id">ID</h3>
+<p><strong>Instruction:</strong> The identifier for the objective, used in the components, benefits and reporting sections so that progress against it can be traced to the work that was meant to deliver it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="objective">Objective</h3>
+<p><strong>Instruction:</strong> What must be true when the program succeeds, stated so that a reasonable person could disagree with it. Where the components were funded before the charter was written, check the direction of the fit: an objective written to fit a component has inherited that component's scope without choosing it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="measure">Measure</h3>
+<p><strong>Instruction:</strong> How achievement will be established, naming the source of the figure rather than the sentiment behind it. A measure with no source cannot be reproduced by anyone checking the claim, and an objective whose evidence cannot be reproduced is an opinion with a number attached.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="target-date">Target Date</h3>
+<p><strong>Instruction:</strong> When the objective must be met, which is what makes it a target rather than a direction. Where the date is inherited from a component's own plan rather than from the benefit it serves, record the date the benefit is actually expected rather than the date the work finishes.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="owner">Owner</h3>
+<p><strong>Instruction:</strong> The single role accountable for the objective, which is normally not the program manager for every objective. An objective owned by a team cannot be chased, because a team is never available when the answer is needed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="status">Status</h3>
+<p><strong>Instruction:</strong> Where the objective currently stands, from a fixed set agreed for the program. A free-text status cannot be rolled up, and a program whose objectives cannot be rolled up cannot be reported to the sponsor as anything other than a list.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="component-id">Component ID</h3>
+<p><strong>Instruction:</strong> The stable identifier of the component project, matching the identifier used in the portfolio roadmap so the two can be joined and the same component is not tracked under two names.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="component-name">Component Name</h3>
+<p><strong>Instruction:</strong> The name of the project or operation within the program, taken from its own charter. Where a component serves more than one program, record that here, because a component reported to two owners is reported to neither once they disagree.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="objective-linkage">Objective Linkage</h3>
+<p><strong>Instruction:</strong> Which program objectives this component serves, by identifier. A component linked to no objective is a candidate for removal, and the charter is the last point at which that is visible before the money is committed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="status_1">Status</h3>
+<p><strong>Instruction:</strong> Where the component currently stands, from the fixed set used across the program, so components are read against each other rather than each in the terms its own project used.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="owner_1">Owner</h3>
+<p><strong>Instruction:</strong> Who is accountable for the component, which will usually not be the program manager. The program manager remains accountable for the component's contribution to the objective, which is a different accountability and is worth stating as such.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="benefit-id">Benefit ID</h3>
+<p><strong>Instruction:</strong> The identifier for the benefit, used in the benefits management plan and the value realization register so the same benefit is not counted twice under two names.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="benefit">Benefit</h3>
+<p><strong>Instruction:</strong> The benefit the program expects to produce, preferably stating benefits the components would not produce individually, since those are the reason for having a program rather than a list of projects. A benefit that any one component would have delivered anyway is not a program benefit.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="category">Category</h3>
+<p><strong>Instruction:</strong> Whether the benefit is financial or non-financial. The two are governed differently and are counted differently, and a benefit recorded without a category is usually valued at whichever the writer found more convenient.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="beneficiary">Beneficiary</h3>
+<p><strong>Instruction:</strong> Who receives the benefit, named rather than described. A benefit with no identifiable recipient cannot be realised, because realisation requires someone to change their behaviour or take a decision they would not otherwise have taken.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="realization-mechanism">Realization Mechanism</h3>
+<p><strong>Instruction:</strong> How the benefit will actually be captured, which is where most assumed benefits turn out not to be. The mechanism is what distinguishes a benefit the program will deliver from one the business hopes will occur, and without it the benefit is an aspiration with a number attached.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="realization-date">Realization Date</h3>
+<p><strong>Instruction:</strong> When the benefit is expected to be realised. For a financial benefit this is commonly well after the component that created it has closed, and recording the earlier date is the most common way a program's benefits appear to land on time when they have not.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="program-manager-authority-statement">Program Manager Authority Statement</h3>
+<p><strong>Instruction:</strong> What the program manager is authorised to decide and to commit, in the terms the organisation recognises. Record it as a grant rather than as a description of the role, so that a decision taken under it is defensible afterwards.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="authority-retained-by-the-sponsor">Authority Retained by the Sponsor</h3>
+<p><strong>Instruction:</strong> What the sponsor keeps, which is usually the larger share. A charter that grants everything appears to grant everything, and the first real escalation then has no precedent to follow because there was no line drawn to escalate across.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="program-governance-forum">Program Governance Forum</h3>
+<p><strong>Instruction:</strong> The forum that governs the program, its membership, and what it decides rather than merely discusses. Record the distinction, because a forum that only discusses produces minutes about decisions taken elsewhere.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="reporting-cadence-and-audience">Reporting Cadence and Audience</h3>
+<p><strong>Instruction:</strong> How often the program reports, to whom, and in what form. Reporting to a body that cannot act on it is a reporting obligation rather than a control, and the difference is visible only when the report is examined.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="escalation-path">Escalation Path</h3>
+<p><strong>Instruction:</strong> Who decides when the authority level is exceeded, named so the escalation does not have to be negotiated at the moment it is needed. Where the path is a role rather than a person, record how the person is identified, since roles go vacant.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="funding-position">Funding Position</h3>
+<p><strong>Instruction:</strong> What is approved, what is requested, and what is not yet decided, stated honestly. A charter that treats unapproved funding as available sets the program up to discover the shortfall after it has already committed the component projects to spend against it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="decision-type">Decision Type</h3>
+<p><strong>Instruction:</strong> What kind of decision this row concerns, such as scope, budget, procurement, or personnel. Naming the kinds separately is what makes the authority levels below meaningful, since a single level cannot apply uniformly to all of them.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="authority-level">Authority Level</h3>
+<p><strong>Instruction:</strong> The level at which the program manager may decide this kind of decision, such as team, department, or business unit. Where the answer is the same for every row, consider whether the row is doing any work.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="escalation-path_1">Escalation Path</h3>
+<p><strong>Instruction:</strong> Who decides when this authority level is exceeded, named for this decision type rather than in general, since the escalation for a budget decision is often not the escalation for a scope one.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="limits-or-conditions">Limits or Conditions</h3>
+<p><strong>Instruction:</strong> What this authority does not extend to, which is the half of the row that prevents the dispute later. A row recording only what is permitted invites the reading that everything not forbidden is also permitted.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="id_1">ID</h3>
+<p><strong>Instruction:</strong> The identifier for the risk or assumption, so it can be referred to from the objectives and from reporting without ambiguity.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="type">Type</h3>
+<p><strong>Instruction:</strong> Whether the row is a Risk or an Assumption. A risk may occur or not; an assumption is either true or false and can be tested. Recording both under one heading loses the distinction exactly where it decides whether the item needs watching or checking.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="description">Description</h3>
+<p><strong>Instruction:</strong> What is at stake, or what is being taken for granted, stated so the assumption could be shown to have failed. An assumption phrased as a sentiment cannot be tested, and an untestable assumption is a hope with a risk rating attached.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="impact-on-program">Impact on Program</h3>
+<p><strong>Instruction:</strong> What happens to the program if the risk occurs or the assumption proves false, in objective, funding or schedule terms. An item recorded without an impact cannot be prioritised, because nothing distinguishes the consequential from the trivial.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="owner_2">Owner</h3>
+<p><strong>Instruction:</strong> Who watches this. A risk with no owner is not being watched, and the program's exposure grows silently while the register still appears complete.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="review-date">Review Date</h3>
+<p><strong>Instruction:</strong> When this will next be checked. An assumption nobody revisits becomes a fact by default, which is precisely when the conditions that made it true have changed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="defined-response">Defined Response</h3>
+<p><strong>Instruction:</strong> What happens when an objective is not met: whether the response is to replan, reduce scope, extend the date, or close the objective. A charter with no stated response to failure leaves that decision to whoever happens to be in the room when it arises, which is usually the person least able to afford the time.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="decision-authority">Decision Authority</h3>
+<p><strong>Instruction:</strong> Who takes that decision, and whether the sponsor must be consulted first. Where the answer is that the program manager decides alone, record what they may not commit without the sponsor, since that is the part that is assumed rather than agreed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="trigger-for-reassessment">Trigger for Reassessment</h3>
+<p><strong>Instruction:</strong> What specifically triggers the response: a date, a measure falling short by a stated margin, or an event. A trigger expressed as "if the objective is not met" is the same as the failure itself and gives no warning that the decision is coming.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -2334,6 +2583,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1284,6 +1374,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1370,8 +1466,63 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="okr-alignment-matrix-llm-generation-guide">OKR ALIGNMENT MATRIX - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>OKR ALIGNMENT MATRIX</code>. When asked to populate this form, use the guidance
+provided for each section below to accurately generate the required content.
+Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+A formal strategic governance document connecting enterprise Objectives and Key Results (OKRs) directly with project deliverables to enable continuous value tracking and dynamic portfolio alignment.</p>
+<p><strong>Alignment:</strong>
+This okr alignment matrix must be aligned with standard PMI PMBOK principles.</p>
+</blockquote>
+<h2 id="alignment-framework">Alignment Framework</h2>
+<h3 id="strategic-cycle-and-horizon">Strategic Cycle and Horizon</h3>
+<p><strong>Instruction:</strong> The corporate planning cycle, fiscal year, and strategic review cadence governing the OKR alignment matrix.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="enterprise-strategic-objective">Enterprise Strategic Objective</h3>
+<p><strong>Instruction:</strong> The overarching corporate priority or strategic theme this initiative directly advances.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="portfolio-investment-category">Portfolio Investment Category</h3>
+<p><strong>Instruction:</strong> The investment classification (Strategic Growth, Operational Resilience, Transformative Innovation, or Mandatory Compliance).</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="okr-mapping-and-key-results">OKR Mapping and Key Results</h2>
+<h3 id="target-key-result-id-and-metric">Target Key Result ID and Metric</h3>
+<p><strong>Instruction:</strong> The specific measurable Key Result identifier and target performance metric defined by executive leadership.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="project-deliverable-contribution">Project Deliverable Contribution</h3>
+<p><strong>Instruction:</strong> The tangible product capability, system feature, or project milestone directly contributing to Key Result fulfillment.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="leading-vs-lagging-indicator">Leading vs Lagging Indicator</h3>
+<p><strong>Instruction:</strong> Classification whether the contribution measure provides immediate early progress signals (leading) or final outcome confirmation (lagging).</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="confidence-tracking-and-pivoting">Confidence Tracking and Pivoting</h2>
+<h3 id="quarterly-confidence-score">Quarterly Confidence Score</h3>
+<p><strong>Instruction:</strong> Current subjective confidence rating (0.0 to 1.0) of achieving the Key Result given project execution trajectory.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="confidence-variance-rationale">Confidence Variance Rationale</h3>
+<p><strong>Instruction:</strong> Root-cause explanation for any score degradation or positive acceleration relative to the previous cycle baseline.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="strategic-pivot-recommendation">Strategic Pivot Recommendation</h3>
+<p><strong>Instruction:</strong> Mandated strategic intervention, scope adjustment, or resource reallocation if confidence drops below target threshold.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1581,6 +1732,31 @@ This section has been thoroughly documented and validated in accordance with Ape
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. النظرة العامة والبيانات الوصفية
+            📋 نظرة عامة
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. قالب التسليمة
+            📄 القالب
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. الدليل الإرشادي للممارس
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. مثال واقعي مكتمل
+            💡 مثال واقعي
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. مخطط البيانات Draft 2020-12
+            ⚙️ المخطط
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1296,6 +1386,12 @@ tr:hover td {
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div>
 
@@ -1365,8 +1461,76 @@ tr:hover td {
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="-generation-prompt">خطة إدارة الموارد - مطالبة التوليد (Generation Prompt)</h1>
+<!--
+تعليمات النظام: يحتوي هذا المستند على التوجيهات التفصيلية للذكاء الاصطناعي لتوليد وثيقة «خطة إدارة الموارد».
+عند طلب صياغة أو استيفاء هذا النموذج، اتبع الإرشادات المحددة لكل قسم بدقة واحترافية،
+مع مراعاة سياق المشروع والمتغيرات المرجعية في `parameters.md`.
+-->
+
+<blockquote>
+<p><strong>السياق والتعريف المهني:</strong>
+خطة فرعية تحدد كيفية تصنيف الموارد البشرية والمعدات والمواد واستقطابها وإدارتها وضبطها طوال دورة حياة المشروع.</p>
+<p><strong>المحاذاة وسلسلة الاعتماديات:</strong>
+* <strong>المدخلات (المتطلبات السابقة):</strong>
+  * <em>إلزامي:</em> هيكل تجزئة العمل (WBS) (PMO-04.02.06)، الجدول الزمني للمشروع (PMO-04.03.08)
+  * <em>اختياري:</em> مصفوفة سعة الموارد (PMO-00.04)، خطة إدارة التكلفة (PMO-04.04.01)
+* <strong>المخرجات (النماذج التابعة):</strong>
+  * <em>إلزامي:</em> مصفوفة تعيين المسؤوليات (RAM) (PMO-04.06.04)، ميثاق الفريق (PMO-04.06.05)، تقييم أداء الفريق (PMO-05.06)
+  * <em>اختياري:</em> قائمة التحقق لتهيئة فريق العمل (PMO-05.12)، خطة وسجل التدريب (PMO-04.11.02)</p>
+</blockquote>
+<hr />
+<h2 id="_1">تحديد واستقطاب الموارد</h2>
+<h3 id="_2">استراتيجية تحديد احتياجات الموارد</h3>
+<p><strong>التعليمات:</strong> الأساليب المتبعة لتحديد الموارد البشرية والمعدات والمواد اللازمة لتنفيذ المشروع.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_3">نهج استقطاب وتعيين الكوادر</h3>
+<p><strong>التعليمات:</strong> الإجراءات المعتمدة للتعيين الداخلي والاستقطاب الخارجي والتعاقد مع الكفاءات.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_4">الأدوار والمسؤوليات والصلاحيات</h2>
+<h3 id="_5">أدوار المشروع وملفات الكفاءة</h3>
+<p><strong>التعليمات:</strong> توصيف أدوار المشروع الرئيسية والمؤهلات المطلوبة والمهارات الفنية اللازمة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_6">حدود الصلاحيات واتخاذ القرارات</h3>
+<p><strong>التعليمات:</strong> نطاق الصلاحيات المخولة لمدير المشروع والقادة الفنيين والمشرفين الميدانيين.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_7">الهيكل التنظيمي للمشروع</h2>
+<h3 id="_8">المخطط التنظيمي للمشروع وهيكل التبعية</h3>
+<p><strong>التعليمات:</strong> الهيكل التنظيمي الذي يوضح خطوط الإشراف والعلاقات الوظيفية بين فرق العمل.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_9">حوكمة إدارة وتوزيع الموارد</h3>
+<p><strong>التعليمات:</strong> السياسات الموجهة لتوزيع الموارد وحل تعارض الأولويات وموازنة أعباء العمل.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_10">استراتيجية تدريب وتطوير الفريق</h2>
+<h3 id="_11">مبادرات بناء وتطوير الفريق</h3>
+<p><strong>التعليمات:</strong> الأنشطة والبرامج التوجيهية الهادفة لتعزيز تماسك الفريق ورفع كفاءته وإنتاجيته.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_12">برامج التدريب والشهادات المهنية</h3>
+<p><strong>التعليمات:</strong> التدريبات الفنية وبرامج السلامة والتأهيل الإلزامي لأعضاء الفريق.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_13">إدارة وضبط الموارد المادية والمعدات</h2>
+<h3 id="_14">لوجستيات المواد والأجهزة والمعدات</h3>
+<p><strong>التعليمات:</strong> إجراءات توريد وتخزين وتتبع استخدام وصيانة المعدات والأدوات المادية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_15">خطة تسريح وتدوير الموارد</h3>
+<p><strong>التعليمات:</strong> المسار المرحلي المنظم لتسريح الكوادر وإعادة الأجهزة أو التخلص منها عند انتهاء المهام.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1609,6 +1773,31 @@ tr:hover td {
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

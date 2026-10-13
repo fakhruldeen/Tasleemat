@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1378,6 +1468,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1508,8 +1604,167 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="ai-model-card-and-fact-sheet-llm-generation-guide">AI MODEL CARD AND FACT SHEET - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>AI MODEL CARD AND FACT SHEET</code>. When asked to populate this form, use the guidance
+provided for each section below to accurately generate the required
+content. Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+A model card is the document that answers the question a person asks when they have been handed a model and told to use it: what is this, what was it built from, what does it do well, what does it fail at, and what am I not allowed to do with it. That question arrives from engineering, from legal, from the data protection officer and from the person who will be affected by the output, and they need different halves of the same answer. The card is what stops four documents being written separately and disagreeing.</p>
+</blockquote>
+<p>The six sections follow the order those questions arrive. Identification records the model at a version rather than a name, because a card that names a model describes whichever build is deployed when it is read, and the answer is rarely the one that was assessed; it also records licence and where the artefacts live, since a card with no locations is a description that cannot be checked against anything. Intended use separates the endorsed use from the tolerated one and from the refused one, records the operating conditions under which the evaluation in section 4 holds, and names the points at which a human must review an output. Training data records each dataset by name and owner, whom and where it represents, the period it covers, the basis on which it may be used, and what preprocessing did to it, since filtering is where a dataset acquires the shape of the population the model will later fail on. Evaluation records the disjointness of the test set first, because its absence invalidates every figure in the section, then each metric with its sample size, the same figure by subgroup, the baseline, and the threshold in force, since a model is a set of trade-offs rather than a single system. Ethical and safety considerations name the affected groups and the specific way the model is unfair to them, stated so that they could be false. Limitations and change control record what the model cannot do, what is watched after deployment, what triggers action, when it is retrained, what changed in this version, and how it will be retired.</p>
+<p>The card's value is entirely in the fields that are inconvenient. A model card with no out-of-scope use, no known limitations, no subgroup figures and no change record describes a model that has not been used, because every one of those fields is filled in by something that happened. So the fields to insist on are the ones with no good answer available: the subgroup figure with its sample size, the threshold and what the alternatives would cost, the known dataset limitations, the out-of-distribution behaviour, and the decommissioning plan. Where a value genuinely is not known, record that it is not known and who must resolve it, which is more useful than a plausible figure, because a plausible figure will be relied on and a declared gap will be closed.</p>
+<blockquote>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> AI Governance Plan (PMO-02.02), Model Training &amp; Validation Benchmarks
+  * <em>Optional:</em> Data Privacy &amp; Ethics Assessment (PMO-02.06), AI Use Case Canvas (PMO-02.04)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> Product Acceptance Form (PMO-06.08), UAT Sign-off Form (PMO-06.10), Transition to Operations Checklist (PMO-07.04)
+  * <em>Optional:</em> Prompt Library Register (PMO-05.09), Lessons Learned Register (PMO-05.07)</p>
+</blockquote>
+<hr />
+<h2 id="model-identification-and-provenance">Model Identification and Provenance</h2>
+<h3 id="model-name-and-version">Model Name and Version</h3>
+<p><strong>Instruction:</strong> The model at a specific version, with the date that version was produced. A card that names a model rather than a version describes whichever build happens to be deployed when it is read, and the answer is rarely the one that was assessed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="developer-and-provenance">Developer and Provenance</h3>
+<p><strong>Instruction:</strong> Who built it, whether it was trained in-house, fine-tuned, or acquired, and from what base model. Provenance determines which of the sections that follow can be answered at all, and it is usually the section that is missing when a question is asked.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="architecture-and-configuration">Architecture and Configuration</h3>
+<p><strong>Instruction:</strong> The architecture family, the parameter count, and the settings that affect behaviour. The settings are the part that matters, because the same architecture with different decoding parameters is a different system.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="training-method-and-compute">Training Method and Compute</h3>
+<p><strong>Instruction:</strong> How it was trained, over what period, and at what cost. Compute is recorded because it bounds reproducibility: a result that needed a compute allocation nobody can obtain again is not a result that can be re-derived.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="licence-and-usage-terms">Licence and Usage Terms</h3>
+<p><strong>Instruction:</strong> The licence, who may use it, and under what restrictions. A model used outside its licence is a legal exposure that no technical section of this card addresses.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="related-artefacts">Related Artefacts</h3>
+<p><strong>Instruction:</strong> The model, the code, the weights and the data, each with where it lives. A card that lists no locations is a description, and a description cannot be checked against anything.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="intended-use-and-out-of-scope-use">Intended Use and Out-of-Scope Use</h2>
+<h3 id="primary-use">Primary Use</h3>
+<p><strong>Instruction:</strong> The task the model is for, stated as an input and an output. An input and an output can be tested; a purpose cannot.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="secondary-use">Secondary Use</h3>
+<p><strong>Instruction:</strong> What else it may legitimately be used for, if anything. Recorded separately because a use that is merely tolerated and one that is endorsed need different controls, and a card that lists only the endorsed one hides the tolerated ones.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="out-of-scope-use">Out-of-Scope Use</h3>
+<p><strong>Instruction:</strong> The uses it must not be used for, with the reason for each. This section is the one that makes the card usable by someone deciding whether to deploy it, and a card without it can only say what the model is for.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="user-and-audience">User and Audience</h3>
+<p><strong>Instruction:</strong> Who operates it, and who is subject to its output. The two are routinely treated as one, and the conflation is how a system that scores applicants comes to be described as a tool that helps recruiters write better.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="operating-conditions">Operating Conditions</h3>
+<p><strong>Instruction:</strong> The inputs it expects, the conditions it was tested under, and the conditions under which it should not be used. These are the boundaries of the evaluation in section 4, and a metric read outside them is not a weaker claim, it is a wrong one.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="human-oversight-requirement">Human Oversight Requirement</h3>
+<p><strong>Instruction:</strong> Where a person must review an output before it is acted on. Oversight specified as a general principle rather than as points in a workflow does not survive contact with a deadline.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="training-data">Training Data</h2>
+<h3 id="datasets">Datasets</h3>
+<p><strong>Instruction:</strong> Each dataset by name, with its owner and the date it was collected. A dataset named only by type cannot be checked for permission, and permission is what blocks first.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="provenance-and-collection-method">Provenance and Collection Method</h3>
+<p><strong>Instruction:</strong> Where each dataset came from and how it was gathered. Collected data carries the practices of the period and place it came from, whether or not those were examined.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="demographic-and-geographic-coverage">Demographic and Geographic Coverage</h3>
+<p><strong>Instruction:</strong> Who and where the data represents, and who and where it does not. A dataset that represents a population accurately says so; the field matters because its absence is what allows a model to be applied to a population nobody measured.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="time-period-covered">Time Period Covered</h3>
+<p><strong>Instruction:</strong> The span the data covers, and what happened during it. A model trained on a period of stable conditions inherits the assumption that conditions will remain stable, and the card is where that assumption is written down.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="licence-and-consent-basis">Licence and Consent Basis</h3>
+<p><strong>Instruction:</strong> The basis on which each dataset may be used, and whether consent was obtained where it was required. Where consent was not obtained, that is the fact to record, not an absence to leave blank.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="preprocessing-and-filtering">Preprocessing and Filtering</h3>
+<p><strong>Instruction:</strong> What was removed, resampled or imputed, and on what basis. Filtering is where a dataset acquires the shape of the population the model will then fail on, and it is rarely the step examined.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="known-dataset-limitations">Known Dataset Limitations</h3>
+<p><strong>Instruction:</strong> What the dataset cannot represent. This is the field that prevents a metric from being read as a general claim, and it is almost always empty.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="evaluation-and-performance">Evaluation and Performance</h2>
+<h3 id="evaluation-data">Evaluation Data</h3>
+<p><strong>Instruction:</strong> The data the evaluation was run on, and whether it is disjoint from the training data. Disjointness is the first thing to check in any evaluation, and its absence invalidates every number in the section.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="metrics">Metrics</h3>
+<p><strong>Instruction:</strong> Each metric, its value, and the confidence interval or sample size behind it. A single figure with no interval is a point presented as a range, and decisions get made on it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="performance-by-subgroup">Performance by Subgroup</h3>
+<p><strong>Instruction:</strong> The same metrics for each group the model affects, with the sample size for each. A subgroup figure from a small sample is not a measurement, and the sample size is what distinguishes the two.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="baseline-comparison">Baseline Comparison</h3>
+<p><strong>Instruction:</strong> What the model is compared against, and by how much. A model compared only with a trivial baseline can be both better than it and useless.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="threshold-and-operating-point">Threshold and Operating Point</h3>
+<p><strong>Instruction:</strong> The threshold in force, and what the alternatives would cost. A model is a set of trade-offs rather than a single system, and the trade-off is only visible once a threshold is fixed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="evaluation-method-and-limitations">Evaluation Method and Limitations</h3>
+<p><strong>Instruction:</strong> How the evaluation was conducted, by whom, and what it does not establish. An evaluation conducted by the team that built the model is legitimate, and it is a fact that belongs on the card.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="robustness-and-failure-modes">Robustness and Failure Modes</h3>
+<p><strong>Instruction:</strong> How the model behaves under input it was not tested on, and the known ways it fails. Known failure modes are more useful than a robustness score, because a reader can act on them and cannot act on a score.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="ethical-fairness-and-safety-considerations">Ethical, Fairness and Safety Considerations</h2>
+<h3 id="affected-groups">Affected Groups</h3>
+<p><strong>Instruction:</strong> The groups whose outcomes the model determines, named. Groups described in aggregate on the basis of a test are not the same as the group that performs worst on it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="known-bias">Known Bias</h3>
+<p><strong>Instruction:</strong> The specific ways this model is unfair to this group, stated so that they could be false. A field titled "bias" that says the model may be biased is a heading; "the model scores this group lower on historic completion rates" is a claim that can be measured and can turn out to be wrong.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="safety-risks">Safety Risks</h3>
+<p><strong>Instruction:</strong> The ways the model could cause harm, by severity, with the conditions under which each arises. Severity is what determines the control, and a risk listed without severity is a list of possibilities.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="dual-use-and-misuse-potential">Dual-Use and Misuse Potential</h3>
+<p><strong>Instruction:</strong> How the model could be used to cause harm, and what has been done about it. Relevant to a model that generates as well as one that classifies, and usually unstated.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="environmental-and-resource-impact">Environmental and Resource Impact</h3>
+<p><strong>Instruction:</strong> The energy and compute consumed, and by whom bears it. Recorded because it is a real cost that appears in no other section, and because it is usually the only figure an external party can verify.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="data-privacy-impact">Data Privacy Impact</h3>
+<p><strong>Instruction:</strong> What the model can reveal about individuals in its training data, and whether it has been tested for it. Extraction and memorisation are testable, and the test is the only thing that distinguishes a considered answer from an assumption.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="limitations-monitoring-and-change-control">Limitations, Monitoring and Change Control</h2>
+<h3 id="known-limitations">Known Limitations</h3>
+<p><strong>Instruction:</strong> What the model cannot do, stated plainly. This is the section a reader consults after an incident, and a card that is optimistic in it is a card that will not be consulted a second time.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="out-of-distribution-behaviour">Out-of-Distribution Behaviour</h3>
+<p><strong>Instruction:</strong> How the model behaves on inputs unlike its training data, and whether that has been measured. A model given a population it never saw does not fail loudly, which is what makes this worth recording.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="production-monitoring">Production Monitoring</h3>
+<p><strong>Instruction:</strong> What is watched after deployment, against what baseline, and how often. Drift is a property of the relationship between the model and the world, not of the model, so a launch measurement is the first of a series.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="monitoring-thresholds">Monitoring Thresholds</h3>
+<p><strong>Instruction:</strong> What result triggers action, written before the result is known. A threshold set after seeing a number is a description of that number.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="retraining-and-update-policy">Retraining and Update Policy</h3>
+<p><strong>Instruction:</strong> When the model will be retrained, what triggers it, and who approves. Without this the model is updated whenever someone has time, and the change is then invisible to everything above it in this card.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="version-change-record">Version Change Record</h3>
+<p><strong>Instruction:</strong> What changed between this version and the last, and why. Models change often and silently, and a card with no change record cannot answer what was in force when an incident occurred.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="decommissioning-plan">Decommissioning Plan</h3>
+<p><strong>Instruction:</strong> How and when the model will be retired, and what happens to the data it holds. A model in production with no retirement plan is a system whose cost grows and whose obligations are never discharged.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -2032,6 +2287,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

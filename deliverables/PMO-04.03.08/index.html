@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1282,6 +1372,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1366,8 +1462,71 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="project-schedule-generation-prompt">Project Schedule - Generation Prompt</h1>
+<!--
+System Instructions: This document contains instructions for generating the
+«Project Schedule». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
+
+<blockquote>
+<p><strong>Context and Definition:</strong>
+The primary schedule output that presents linked activities with planned dates, durations, milestones, and resource allocations.</p>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> Work Breakdown Structure / WBS (PMO-04.02.06), Scope Statement (PMO-04.02.05)
+  * <em>Optional:</em> Resource Requirements (PMO-04.06.02), Risk Register (PMO-04.08.02)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> Project Schedule Baseline (PMO-04.03.08), Earned Value Analysis / EVA (PMO-06.05)
+  * <em>Optional:</em> Release Plan (PMO-04.03.09), Lookahead Planning Log (PMO-04.03.10)</p>
+</blockquote>
+<hr />
+<h2 id="baseline-schedule-summary">Baseline Schedule Summary</h2>
+<h3 id="project-start-and-target-finish-dates">Project Start and Target Finish Dates</h3>
+<p><strong>Instruction:</strong> The authorized baseline start date and targeted project completion date.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="schedule-data-version-and-baseline-status">Schedule Data Version and Baseline Status</h3>
+<p><strong>Instruction:</strong> The formal schedule model version number and baseline authorization state.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="total-critical-path-length-and-major-phases">Total Critical Path Length and Major Phases</h3>
+<p><strong>Instruction:</strong> Total working days on the critical path and scheduled durations for each major project phase.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="detailed-schedule-data">Detailed Schedule Data</h2>
+<h3 id="wbs-code-and-activity-schedule-mapping">WBS Code and Activity Schedule Mapping</h3>
+<p><strong>Instruction:</strong> Consolidated schedule line items linking WBS code, activity title, and work package.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="planned-start-and-finish-dates">Planned Start and Finish Dates</h3>
+<p><strong>Instruction:</strong> Approved baseline start date and baseline completion date for each scheduled activity.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="assigned-resources-and-effort-allocation">Assigned Resources and Effort Allocation</h3>
+<p><strong>Instruction:</strong> Designated resource leads, team members, and allocated effort hours per activity.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="critical-path-and-float-analysis">Critical Path and Float Analysis</h2>
+<h3 id="critical-path-flag-and-dependencies">Critical Path Flag and Dependencies</h3>
+<p><strong>Instruction:</strong> Clear indicator (Yes/No) identifying critical path activities and predecessor linkages.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="total-float-and-free-float-values">Total Float and Free Float Values</h3>
+<p><strong>Instruction:</strong> Calculated total float and free float values in working days for each schedule activity.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="schedule-risk-and-recovery-considerations">Schedule Risk and Recovery Considerations</h3>
+<p><strong>Instruction:</strong> Identification of high-risk scheduling bottlenecks and contingency deployment rules.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1577,6 +1736,31 @@ This section has been thoroughly documented and validated in accordance with Ape
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

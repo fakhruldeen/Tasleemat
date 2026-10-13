@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. النظرة العامة والبيانات الوصفية
+            📋 نظرة عامة
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. قالب التسليمة
+            📄 القالب
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. الدليل الإرشادي للممارس
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. مثال واقعي مكتمل
+            💡 مثال واقعي
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. مخطط البيانات Draft 2020-12
+            ⚙️ المخطط
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1315,6 +1405,12 @@ tr:hover td {
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div>
 
@@ -1420,8 +1516,185 @@ tr:hover td {
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="-generation-prompt">تقرير تحليل القيمة المكتسبة - مطالبة التوليد (Generation Prompt)</h1>
+<!--
+تعليمات النظام: يحتوي هذا المستند على التوجيهات التفصيلية للذكاء الاصطناعي لتوليد وثيقة «تقرير تحليل القيمة المكتسبة».
+عند طلب صياغة أو استيفاء هذا النموذج، اتبع الإرشادات المحددة لكل قسم بدقة واحترافية،
+مع مراعاة سياق المشروع والمتغيرات المرجعية في `parameters.md`.
+-->
+
+<blockquote>
+<p><strong>السياق والتعريف المهني:</strong>
+منهجية دقيقة لقياس الأداء تدمج نطاق المشروع والجدول الزمني والتكلفة لتقييم صحة المشروع والتنبؤ بنتائجه النهائية.</p>
+<p><strong>المحاذاة وسلسلة الاعتماديات:</strong>
+* <strong>المدخلات (المتطلبات السابقة):</strong>
+  * <em>إلزامي:</em> خطوط الأساس المعتمدة للمشروع (PMO-04.01.01)، بيانات وسجلات أداء العمل الفعلي (PMO-05.01 - 05.12)
+  * <em>اختياري:</em> سجل المخاطر (PMO-04.08.02)، اتفاقيات الموردين وعقود العمل (PMO-04.09.04)
+* <strong>المخرجات (النماذج التابعة):</strong>
+  * <em>إلزامي:</em> طلبات التغيير (PMO-05.03)، إغلاق المشروع أو المرحلة (PMO-07.03)، ملخص الدروس المستفادة (PMO-07.01)
+  * <em>اختياري:</em> قائمة التحقق للانتقال إلى العمليات (PMO-07.04)، سجل تحقيق القيمة (PMO-01.03)</p>
+</blockquote>
+<hr />
+<h2 id="_1">مقاييس القيمة المكتسبة الأساسية</h2>
+<h3 id="bac">الميزانية عند الاكتمال (BAC)</h3>
+<p><strong>التعليمات:</strong> إجمالي الميزانية المعتمدة لخط الأساس والمخصصة لإنجاز كامل نطاق المشروع.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="pv">القيمة المخططة (PV) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> الميزانية المعتمدة المخصصة للعمل المجدول تنفيذه خلال فترة التقرير الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="pv_1">القيمة المخططة (PV) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> إجمالي الميزانية المعتمدة المجدولة من بداية المشروع حتى نهاية الفترة الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="pv_2">القيمة المخططة (PV) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> القيمة المخططة التراكمية المحسوبة عند نهاية فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="ev">القيمة المكتسبة (EV) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> قيمة الميزانية المعتمدة للعمل الذي تم إنجازه فعلياً خلال فترة التقرير الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="ev_1">القيمة المكتسبة (EV) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> إجمالي قيمة العمل المنجز فعلياً والمقاس بالميزانية من بداية المشروع حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="ev_2">القيمة المكتسبة (EV) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> القيمة المكتسبة التراكمية المحققة حتى نهاية فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="ac">التكلفة الفعلية (AC) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> إجمالي النفقات والتكاليف الفعلية المنفقة على العمل المنجز خلال الفترة الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="ac_1">التكلفة الفعلية (AC) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> إجمالي النفقات والتكاليف الفعلية المنفقة من بداية المشروع حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="ac_2">التكلفة الفعلية (AC) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> التكلفة الفعلية التراكمية المسجلة حتى نهاية فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_2">التباينات والمؤشرات</h2>
+<h3 id="sv">تباين الجدول الزمني (SV) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> انحراف أداء الجدول الزمني مالياً (EV - PV) لفترة التقرير الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="sv_1">تباين الجدول الزمني (SV) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> تباين الجدول الزمني التراكمي المحسوب من بداية المشروع حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="sv_2">تباين الجدول الزمني (SV) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> تباين الجدول الزمني التراكمي المسجل في فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="cv">تباين التكلفة (CV) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> انحراف الميزانية المالية (EV - AC) لفترة التقرير الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="cv_1">تباين التكلفة (CV) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> تباين التكلفة التراكمي المحسوب من بداية المشروع حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="cv_2">تباين التكلفة (CV) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> تباين التكلفة التراكمي المسجل في فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="spi">مؤشر أداء الجدول الزمني (SPI) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> معدل كفاءة الجدول الزمني (EV / PV) لفترة التقرير الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="spi_1">مؤشر أداء الجدول الزمني (SPI) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> معدل كفاءة الجدول الزمني التراكمي المحسوب حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="spi_2">مؤشر أداء الجدول الزمني (SPI) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> مؤشر أداء الجدول الزمني التراكمي في فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="cpi">مؤشر أداء التكلفة (CPI) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> معدل كفاءة التكلفة (EV / AC) لفترة التقرير الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="cpi_1">مؤشر أداء التكلفة (CPI) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> معدل كفاءة التكلفة التراكمي المحسوب من بداية المشروع حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="cpi_2">مؤشر أداء التكلفة (CPI) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> مؤشر أداء التكلفة التراكمي المسجل في فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_3">النسب المئوية</h2>
+<h3 id="_4">النسبة المئوية المخططة / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> نسبة القيمة المخططة إلى الميزانية عند الاكتمال لفترة التقرير الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_5">النسبة المئوية المخططة / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> نسبة إجمالي القيمة المخططة التراكمية إلى الميزانية عند الاكتمال حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_6">النسبة المئوية المخططة / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> نسبة القيمة المخططة التراكمية إلى الميزانية عند الاكتمال للفترة السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_7">النسبة المئوية المكتسبة / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> نسبة القيمة المكتسبة إلى الميزانية عند الاكتمال للفترة الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_8">النسبة المئوية المكتسبة / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> نسبة الإنجاز الفعلي التراكمي للمشروع إلى الميزانية عند الاكتمال حتى تاريخه.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_9">النسبة المئوية المكتسبة / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> نسبة القيمة المكتسبة التراكمية إلى الميزانية عند الاكتمال للفترة السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_10">النسبة المئوية المنفقة / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> نسبة التكلفة الفعلية المنفقة إلى الميزانية عند الاكتمال للفترة الحالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_11">النسبة المئوية المنفقة / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> نسبة إجمالي المصروفات الفعلية التراكمية إلى الميزانية الكلية للمشروع.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_12">النسبة المئوية المنفقة / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> نسبة التكلفة الفعلية التراكمية إلى الميزانية عند الاكتمال للفترة السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_13">التنبؤ (التقديرات)</h2>
+<h3 id="eac-wcpi">تقدير التكلفة عند الاكتمال بمؤشر التكلفة (EAC w/CPI) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> تقدير التكلفة عند الاكتمال بافتراض استمرار كفاءة التكلفة الحالية (BAC / CPI).</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="eac-wcpi_1">تقدير التكلفة عند الاكتمال بمؤشر التكلفة (EAC w/CPI) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> تقدير التكلفة عند الاكتمال استناداً إلى مؤشر كفاءة التكلفة التراكمي.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="eac-wcpi_2">تقدير التكلفة عند الاكتمال بمؤشر التكلفة (EAC w/CPI) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> تقدير التكلفة عند الاكتمال المحسوب بناءً على مؤشر التكلفة للفترة السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="eac-wcpi-spi">تقدير التكلفة عند الاكتمال بمؤشري التكلفة والجدول (EAC w/CPI × SPI) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> تقدير التكلفة عند الاكتمال مع أخذ مؤشري التكلفة والجدول الزمني بالاعتبار.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="eac-wcpi-spi_1">تقدير التكلفة عند الاكتمال بمؤشري التكلفة والجدول (EAC w/CPI × SPI) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> تقدير التكلفة عند الاكتمال التراكمي المشترك بمؤشري التكلفة والجدول الزمني.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="eac-wcpi-spi_2">تقدير التكلفة عند الاكتمال بمؤشري التكلفة والجدول (EAC w/CPI × SPI) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> تقدير التكلفة عند الاكتمال التراكمي المشترك المسجل في الفترة السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="tcpi">مؤشر الأداء حتى الاكتمال (TCPI) / فترة التقرير الحالية</h3>
+<p><strong>التعليمات:</strong> الكفاءة المالية المطلوبة لإنجاز العمل المتبقي ضمن الميزانية عند الاكتمال.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="tcpi_1">مؤشر الأداء حتى الاكتمال (TCPI) / التراكمي للفترة الحالية</h3>
+<p><strong>التعليمات:</strong> مؤشر الكفاءة المالية التراكمي المطلوب لإتمام باقي المشروع ضمن الميزانية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="tcpi_2">مؤشر الأداء حتى الاكتمال (TCPI) / التراكمي للفترة السابقة</h3>
+<p><strong>التعليمات:</strong> مؤشر الأداء حتى الاكتمال المحسوب في نهاية فترة التقرير السابقة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_14">تبرير وتفسير تقدير التكلفة عند الاكتمال المختار</h3>
+<p><strong>التعليمات:</strong> التفسير والتحليل المهني لاختيار صيغة تقدير التكلفة عند الاكتمال الأنسب للمشروع.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_15">تحليل السبب الجذري والتأثيرات</h2>
+<h3 id="_16">السبب الجذري لتباين الجدول الزمني</h3>
+<p><strong>التعليمات:</strong> العوامل والأسباب الرئيسية لحدوث انحراف كفاءة الجدول الزمني وتأخر الإنجاز.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_17">تأثير الجدول الزمني</h3>
+<p><strong>التعليمات:</strong> التأثيرات المتوقعة على المسار الحرج ومواعيد التسليم في حال استمرار التباين الزمني.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_18">السبب الجذري لتباين التكلفة</h3>
+<p><strong>التعليمات:</strong> العوامل التشغيلية والتغيرات المالية التي كانت وراء حدوث انحراف في التكلفة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_19">تأثير الميزانية</h3>
+<p><strong>التعليمات:</strong> المخاطر المالية المحتملة ومدى الحاجة لاستخدام مخصصات واحتياطيات الطوارئ.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_20">ملاحظات</h2>
+<h3 id="_21">ملاحظات</h3>
+<p><strong>التعليمات:</strong> أي ملاحظات مهنية أو استنتاجات تحليلية إضافية يقدمها مسؤول القيمة المكتسبة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1994,6 +2267,31 @@ tr:hover td {
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. النظرة العامة والبيانات الوصفية
+            📋 نظرة عامة
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. قالب التسليمة
+            📄 القالب
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. الدليل الإرشادي للممارس
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. مثال واقعي مكتمل
+            💡 مثال واقعي
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. مخطط البيانات Draft 2020-12
+            ⚙️ المخطط
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1412,6 +1502,12 @@ tr:hover td {
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1545,8 +1641,210 @@ tr:hover td {
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="-">ملخص الدروس المستفادة - دليل التوليد بالنموذج الذكي</h1>
+<blockquote>
+<p><strong>تعليمات النظام:</strong>
+يمثل هذا المستند مجموعة التعليمات التفصيلية لتوليد <code>ملخص الدروس المستفادة</code>. وعند طلب تعبئة هذا النموذج، استخدم الإرشادات المقدمة لكل قسم أدناه لتوليد المحتوى المطلوب بدقة. راجع <code>parameters.md</code> للتحقق من المتغيرات العامة للمشروع.</p>
+<p><strong>السياق والتعريف المهني:</strong>
+تُجمع الدروس المستفادة طوال المشروع أو على فترات محددة. ويُعد هذا الملخص تجميعًا وتنظيمًا لما نجح في المشروع وينبغي نقله إلى فرق أخرى، وتحديد ما ينبغي تحسينه في المشاريع المستقبلية. وهو يدعم العملية 4.7 إغلاق المشروع أو المرحلة.</p>
+<p><strong>المحاذاة وسلسلة الاعتماديات:</strong>
+* <strong>المدخلات (المتطلبات السابقة):</strong>
+  * <em>إلزامي:</em> نموذج قبول المنتج (PMO-06.08)، اعتماد اختبار قبول المستخدم (UAT) (PMO-06.10)، تقارير إغلاق العقود (PMO-07.02)
+  * <em>اختياري:</em> سجل الدروس المستفادة (PMO-05.07)، سجل المشكلات (PMO-05.01)، سجل المخاطر (PMO-04.08.02)
+* <strong>المخرجات (النماذج التابعة):</strong>
+  * <em>إلزامي:</em> الأرشفة النهائية وإغلاق المشروع، سجل تحقيق القيمة (PMO-01.03)، تحديث أصول العمليات التنظيمية المؤسسية
+  * <em>اختياري:</em> مراجعات ما بعد التنفيذ، قائمة التحقق للانتقال إلى العمليات (PMO-07.04)</p>
+</blockquote>
+<hr />
+<h2 id="_1">أداء المشروع</h2>
+<h3 id="_2">تعريف المتطلبات وإدارتها / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تعريف المتطلبات وإدارتها. اذكر الممارسة نفسها، لا الاجتماع الذي نُوقشت فيه.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_3">تعريف المتطلبات وإدارتها / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تعريف المتطلبات وإدارتها، وما الذي ينبغي أن يكون التحسين.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_4">تعريف النطاق وإدارته / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تعريف النطاق وإدارته. إذا تم الالتزام بخط الأساس، فاذكر ذلك.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_5">تعريف النطاق وإدارته / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تعريف النطاق وإدارته.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_6">تطوير الجدول الزمني والتحكم فيه / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تطوير الجدول الزمني والتحكم فيه.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_7">تطوير الجدول الزمني والتحكم فيه / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تطوير الجدول الزمني والتحكم فيه.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_8">تقدير التكلفة والتحكم فيها / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في إعداد التقديرات والتحكم في التكاليف.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_9">تقدير التكلفة والتحكم فيها / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في إعداد التقديرات والتحكم في التكاليف.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_10">تخطيط الجودة والتحكم فيها / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تخطيط الجودة وإدارتها والتحكم فيها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_11">تخطيط الجودة والتحكم فيها / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تخطيط الجودة وإدارتها والتحكم فيها. تُسجَّل عيوب الجودة تحديدًا في قسم عيوب الجودة أدناه.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_12">تخطيط الموارد المادية والتحكم فيها / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تخطيط الموارد المادية واكتسابها وإدارتها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_13">تخطيط الموارد المادية والتحكم فيها / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تخطيط الموارد المادية واكتسابها وإدارتها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_14">تخطيط الفريق وتطويره وأداؤه / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في العمل مع أعضاء الفريق وتطويره وإدارته.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_15">تخطيط الفريق وتطويره وأداؤه / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في العمل مع أعضاء الفريق وتطويره وإدارته.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_16">إدارة الاتصالات / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تخطيط المعلومات وتوزيعها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_17">إدارة الاتصالات / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تخطيط المعلومات وتوزيعها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_18">التقارير / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في إعداد تقارير أداء المشروع.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_19">التقارير / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في إعداد تقارير أداء المشروع.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_20">إدارة المخاطر / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في عملية إدارة المخاطر. تُسجَّل المخاطر تحديدًا في قسم المخاطر والمشكلات أدناه.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_21">إدارة المخاطر / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في عملية إدارة المخاطر. تُسجَّل المخاطر تحديدًا في قسم المخاطر والمشكلات أدناه.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_22">تخطيط المشتريات وإدارتها / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تخطيط العقود وتنفيذها وإدارتها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_23">تخطيط المشتريات وإدارتها / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تخطيط العقود وتنفيذها وإدارتها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_24">إشراك أصحاب المصلحة / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في إشراك أصحاب المصلحة.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_25">إشراك أصحاب المصلحة / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في إشراك أصحاب المصلحة.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_26">معلومات تحسين العمليات / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> العمليات التي تم تطويرها وينبغي الاستمرار في تطبيقها في المشاريع القادمة.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_27">معلومات تحسين العمليات / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> العمليات التي ينبغي تغييرها أو وقفها.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_28">معلومات خاصة بالمنتج / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي كانت فعّالة في تسليم المنتج أو الخدمة أو النتيجة المحددة.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_29">معلومات خاصة بالمنتج / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> الممارسات أو الحوادث التي يمكن تحسينها في تسليم المنتج أو الخدمة أو النتيجة المحددة.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_30">أخرى / ما نجح بشكل جيد</h3>
+<p><strong>التعليمات:</strong> ممارسات أو حوادث أخرى كانت فعّالة، مثل إدارة التغيير أو إدارة التهيئة أو إدارة التكامل.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_31">أخرى / ما يمكن تحسينه</h3>
+<p><strong>التعليمات:</strong> ممارسات أو حوادث أخرى يمكن تحسينها، مثل إدارة التغيير أو إدارة التهيئة أو إدارة التكامل.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_32">المخاطر والمشكلات</h2>
+<h3 id="_33">المخاطرة أو المشكلة</h3>
+<p><strong>التعليمات:</strong> صف المخاطرة أو المشكلة التي وقعت والتي ينبغي أخذها في الاعتبار لتحسين التعلم المؤسسي.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_34">الاستجابة</h3>
+<p><strong>التعليمات:</strong> صف الاستجابة التي تم اتخاذها وفعاليتها. واذكر بوضوح ما إذا كانت الاستجابة ناجحة.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_35">التعليقات</h3>
+<p><strong>التعليمات:</strong> اذكر أي معلومات إضافية مطلوبة لتحسين أداء المشاريع في المستقبل.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_36">عيوب الجودة</h2>
+<h3 id="_37">العيب</h3>
+<p><strong>التعليمات:</strong> صف عيب الجودة الذي ينبغي أخذه في الاعتبار لتحسين الفعالية المؤسسية.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_38">الحل</h3>
+<p><strong>التعليمات:</strong> صف كيف تم حل العيب وما إذا كان الحل ثابتًا.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_39">التعليقات</h3>
+<p><strong>التعليمات:</strong> اذكر ما ينبغي عمله لتحسين أداء المشاريع في المستقبل.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_40">إدارة الموردين</h2>
+<h3 id="_41">المورد</h3>
+<p><strong>التعليمات:</strong> اذكر المورد أو الموردين المعنيين.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_42">المشكلة</h3>
+<p><strong>التعليمات:</strong> صف أي مشكلات أو مطالبات أو منازعات حدثت مع هذا المورد.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_43">الحل</h3>
+<p><strong>التعليمات:</strong> صف النتيجة أو الحل الذي تم الوصول إليه.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_44">التعليقات</h3>
+<p><strong>التعليمات:</strong> اذكر ما ينبغي عمله لتحسين أداء إدارة الموردين في المستقبل.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_45">مجالات الأداء الاستثنائي</h2>
+<h3 id="_46">مخرج</h3>
+<p><strong>التعليمات:</strong> حدّد مجالات الأداء الاستثنائي التي يمكن نقلها إلى فرق أخرى. اذكر ما تم عمله وما جعله ناجحًا.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_47">مجالات التحسين</h2>
+<h3 id="_48">مخرج</h3>
+<p><strong>التعليمات:</strong> حدّد المجالات التي يمكن تحسينها لأداء المستقبل. اذكر التحسين المطلوب، وليس المشكلة فحسب.</p>
+<p><strong>Generated value:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -2166,6 +2464,31 @@ tr:hover td {
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

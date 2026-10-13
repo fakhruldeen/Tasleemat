@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1427,6 +1517,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1619,8 +1715,160 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="data-privacy-and-ethics-assessment-llm-generation-guide">DATA PRIVACY AND ETHICS ASSESSMENT - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>DATA PRIVACY AND ETHICS ASSESSMENT</code>. When asked to populate this form, use the guidance
+provided for each section below to accurately generate the required
+content. Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+A privacy assessment is written by people who are about to do something to a person they will never meet, and it is the only document that forces that asymmetry into the open. Everything else about the work is legible to the team doing it: the schema, the throughput, the cost per request. What is not legible is what happens to the person whose record is in the table, and that is the whole subject of this form. The team that fills it in is not the team that answers for it, which is why the form is a record rather than a feeling.</p>
+</blockquote>
+<p>The seven sections follow the order the questions arrive. Scope and inventory record what is covered and, more importantly, what is not, because an assessment that does not state its exclusions will be read as covering everything and the untested processing lives in that gap. The inventory is a list rather than a count, and it separates the owner from the custodian, since accountability follows the custodian and the budget follows the owner. Lawful basis is recorded per purpose rather than per dataset, because one dataset commonly serves several purposes with very different necessity, and necessity is the question that actually gets asked. Secondary use is called out separately: it is the most common failure in analytics work and the least likely to be noticed, because every individual field still has a lawful origin. Consent records the version of the text that was shown, because a consent record without it cannot be defended later, and withdrawal records whether honouring it is as easy as granting it, since that asymmetry is the standard test. Individual rights records what happens to data that has been aggregated, shared, or trained into a model, and the answer is not that it was deleted, because deleting a row does not unlearn a model. Retention records the basis for each period rather than a default, and deletion records its coverage, because a deletion applied to the primary store while the data persists in replicas, logs, exports and model weights is the most frequent finding in any such assessment. Security records who holds the keys, not only what is encrypted. Sharing gives each recipient its own row and its own basis, because a processor bound by contract is not the same arrangement as a controller sharing on its own purpose, and cross-border transfer is not a hosting region, since remote access by foreign staff is a transfer that no region setting records.</p>
+<p>The seventh section is where this form differs from the others in this group. The sixth asks what harm the processing causes that no law prohibits, and it exists because compliance is a floor rather than a ceiling: processing can be lawful, consented, retained properly, secured properly and shared properly, and still be wrong. A form that stops at lawful has answered the question that was easy to answer, and the people who read it will believe the work is finished. Vulnerable individuals, transparency as the recipient reads it rather than the drafter, dark patterns and consent fatigue, and the fairness of automated outcomes are all findings a category-and-volume record cannot produce. The last section records what was found, the risk remaining after the planned actions and who accepts it until when, what happens in the interim because that is where a known finding actually operates, and what would reopen the assessment, since triggers stated after the change are a record of the change rather than a control against it.</p>
+<p>The value of the form is in the fields that are inconvenient. An assessment with no exclusions, no secondary use, no deletion-coverage statement, no withdrawal route and no ethics findings describes processing that has not started, because each of those is filled in by something that happened rather than by something that was decided. So the fields to insist on are the ones with no good answer available: where deletion does not reach, what happens to a person whose data is in a trained model, who can refuse and who cannot, and what harm remains after compliance is satisfied. Where a value genuinely is not known, record that it is not known and who must resolve it, which is more useful than a plausible answer, because a plausible answer will be relied on and a declared gap will be closed.</p>
+<blockquote>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> AI Use Case Canvas (PMO-02.04) or Scope Statement (PMO-04.02.05), Data Flow &amp; System Architecture
+  * <em>Optional:</em> Regulatory Privacy Requirements (GDPR / Data Protection Acts)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> AI Governance Plan (PMO-02.02), Risk Register (PMO-04.08.02), Requirements Documentation (PMO-04.02.03)
+  * <em>Optional:</em> Statement of Work / SOW (PMO-04.09.04), Quality Audit (PMO-05.05)</p>
+</blockquote>
+<hr />
+<h2 id="scope-data-inventory-and-ownership">Scope, Data Inventory and Ownership</h2>
+<h3 id="assessment-scope">Assessment Scope</h3>
+<p><strong>Instruction:</strong> The processing, systems, and periods this assessment covers, stated so that its edges are visible. An assessment that does not say what it excludes will be read as covering everything, and the gap between the two is where the untested processing lives.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="processing-out-of-scope">Processing Out of Scope</h3>
+<p><strong>Instruction:</strong> What is explicitly not covered, and why. Excluded because another assessment covers it, or excluded because it was not looked at, are very different statements and only the second one is a finding.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="data-owners-and-custodians">Data Owners and Custodians</h3>
+<p><strong>Instruction:</strong> Who owns each data asset and who administers it day to day. Ownership and custody differ, and the accountability clause follows the custodian while the budget follows the owner.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="data-inventory">Data Inventory</h3>
+<p><strong>Instruction:</strong> One row per data asset: what it is, who owns it, the purpose it is held for, whether it holds personal data, whether that data is special category, and its volume and refresh rate. An inventory described as a count rather than as a list cannot answer any of the questions that follow.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="data-flow-and-recipients">Data Flow and Recipients</h3>
+<p><strong>Instruction:</strong> Where the data moves, and who receives it. The flow is what determines which transfers need a mechanism, and a flow that shows only the primary store hides the copies.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="lawful-basis-and-purpose-limitation">Lawful Basis and Purpose Limitation</h2>
+<h3 id="processing-purposes-and-necessity">Processing Purposes and Necessity</h3>
+<p><strong>Instruction:</strong> What each processing activity is for, and why it cannot be achieved with less data or a shorter reach. Necessity is assessed per purpose rather than per dataset, because one dataset frequently serves several purposes with very different necessity.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="lawful-basis-by-purpose">Lawful Basis by Purpose</h3>
+<p><strong>Instruction:</strong> One row per purpose: the data processed, the basis relied on, the basis for special category data where any is present, and the justification. A form that records a basis once for a dataset will carry one basis across purposes that do not share it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="purpose-compatibility-and-secondary-use">Purpose Compatibility and Secondary Use</h3>
+<p><strong>Instruction:</strong> Whether the data is used for any purpose other than the one collected for, and on what basis. Secondary use is the most common privacy failure in analytics work and the one least likely to be noticed, because every individual field still has a lawful origin.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="automated-decision-making">Automated Decision-Making</h3>
+<p><strong>Instruction:</strong> Any decision made about a person with no meaningful human involvement, the logic involved, and the consequences for them. Recorded because the assessment of a legal basis does not by itself establish that a decision is one a person could contest.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="consent-and-transparency">Consent and Transparency</h2>
+<h3 id="consent-mechanism">Consent Mechanism</h3>
+<p><strong>Instruction:</strong> How consent is requested, and where in the flow it appears. Consent collected after the data is already in use is a record, not a request, and the difference determines what the record is worth.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="consent-specificity-and-granularity">Consent Specificity and Granularity</h3>
+<p><strong>Instruction:</strong> What the person was told they were consenting to, and whether the choices are separate. A single consent covering several purposes is consent to none of them in particular, and a bundle of pre-ticked boxes is not a choice.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="consent-recording-and-evidence">Consent Recording and Evidence</h3>
+<p><strong>Instruction:</strong> Where each consent is stored, with the timestamp, the version of the text shown, and the interface shown. A consent record without the version of the text cannot be defended later, because the terms the person agreed to are then unrecoverable.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="withdrawal">Withdrawal</h3>
+<p><strong>Instruction:</strong> How a person withdraws, how much easier it is than granting, and what happens to data already processed on that basis. Asymmetry between granting and withdrawing is the standard test, and a withdrawal that is honoured prospectively only leaves the processing intact behind it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="privacy-notices-and-just-in-time-disclosure">Privacy Notices and Just-in-Time Disclosure</h3>
+<p><strong>Instruction:</strong> What is told at collection, what is told at the point the data is used, and where either may be found. A notice published once and never revisited informs nobody who meets the processing for the first time in month three.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="individual-rights">Individual Rights</h2>
+<h3 id="rights-handling-process">Rights Handling Process</h3>
+<p><strong>Instruction:</strong> How a request is received, routed, decided and answered, and by whom. A right stated in a policy with no route to exercise it is a stated right, and it is tested only when someone uses it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="identity-verification">Identity Verification</h3>
+<p><strong>Instruction:</strong> How the requester is confirmed to be who they claim, and what is refused when that cannot be done. Verification that accepts anyone discloses data; verification that refuses everyone denies the right, and the balance is a decision to record rather than a default.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="response-timeframes-and-escalation">Response Timeframes and Escalation</h3>
+<p><strong>Instruction:</strong> The deadline for each type of request, what happens when it is missed, and who is told. The clock is the whole of the right in practice, because a correct answer delivered late is still a breach.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="rights-over-derived-shared-and-retired-data">Rights Over Derived, Shared and Retired Data</h3>
+<p><strong>Instruction:</strong> What happens to a request where the data has been aggregated, shared with a third party, or placed in a model. Deletion cannot reach a trained model by deleting a row, and the form that does not say so will be read as having deleted it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="retention-security-and-sharing">Retention, Security and Sharing</h2>
+<h3 id="retention-schedule">Retention Schedule</h3>
+<p><strong>Instruction:</strong> One row per data asset: the retention period, the basis for that period rather than the convention, what triggers deletion, and how deletion is verified. A period adopted as a default and recorded as a decision is the most common entry, and it is the reason data outlives every justification that justified it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="deletion-mechanism-and-coverage">Deletion Mechanism and Coverage</h3>
+<p><strong>Instruction:</strong> How deletion is carried out, across primary stores, replicas, logs, exports and derived copies. Deleting a row from one table while the data persists in five other places is the most frequent finding in any such assessment, and it is invisible without a coverage statement.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="backups-and-derived-data">Backups and Derived Data</h3>
+<p><strong>Instruction:</strong> How deletion propagates to backups and to models trained on the data, and over what period. Backups are the usual reason a deletion is incomplete, and a trained model is a copy no deletion request reaches.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="access-controls-and-least-privilege">Access Controls and Least Privilege</h3>
+<p><strong>Instruction:</strong> Who can reach the data, by what route, under what approval, and how access is reviewed. Access is the control that fails quietly, since misuse of legitimate credentials is indistinguishable from legitimate use without a review.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="encryption-and-key-management">Encryption and Key Management</h3>
+<p><strong>Instruction:</strong> What is encrypted in transit and at rest, and who holds the keys. Encryption whose keys sit beside the data is a control on paper, and the key custody arrangement is the part that is not written down.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="third-party-sharing">Third-Party Sharing</h3>
+<p><strong>Instruction:</strong> One row per recipient: the recipient, the purpose, the data shared, the contractual safeguard relied on, and the region processed in. Each row needs its own basis, because a processor bound by contract to a controller is not the same arrangement as a controller sharing on its own purpose.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="cross-border-transfers">Cross-Border Transfers</h3>
+<p><strong>Instruction:</strong> Where data or processing leaves the jurisdiction, under which transfer mechanism, and what supplementary measures apply. A hosting region is not a transfer analysis, and remote access by a foreign staff member is a transfer that no region setting records.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="breach-notification">Breach Notification</h3>
+<p><strong>Instruction:</strong> What constitutes a breach here, who is notified, within what time, and who decides. Recorded because a response plan written after an incident is always written for that incident, and the decision threshold is the part that is usually left out.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="ethics-beyond-compliance">Ethics Beyond Compliance</h2>
+<h3 id="harm-beyond-legal-exposure">Harm Beyond Legal Exposure</h3>
+<p><strong>Instruction:</strong> Where this processing causes harm that no law prohibits. This section exists because compliance is a floor: processing can be lawful, consented, retained properly and shared properly, and still be wrong, and a form that stops at lawful has answered the question it was easy to answer.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="vulnerable-individuals-and-groups">Vulnerable Individuals and Groups</h3>
+<p><strong>Instruction:</strong> Who is affected in a state of reduced ability to refuse, to understand, or to bear the consequence. Vulnerability here is a property of the situation rather than of the person, and it is invisible to a record of categories and volumes.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="transparency-to-affected-people">Transparency to Affected People</h3>
+<p><strong>Instruction:</strong> What the people in the data are actually told, in language they use, as distinct from what the notice says. A notice that is accurate, complete and unread is the standard failure, and reading it as a recipient rather than as a drafter is the only way to see it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="manipulation-dark-patterns-and-consent-fatigue">Manipulation, Dark Patterns and Consent Fatigue</h3>
+<p><strong>Instruction:</strong> Whether the interface nudges, pre-ticks, buries refusal, or asks repeatedly, and whether the volume of requests is such that a refusal is impractical. Consent obtained by a design choice is not freely given, whatever the record says.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="fairness-of-automated-decisions">Fairness of Automated Decisions</h3>
+<p><strong>Instruction:</strong> Whether the processing produces outcomes for people, and what the distribution of those outcomes is across groups. A lawful basis for a decision is not a defence of its fairness, and the two are assessed against different questions.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="findings-remediation-and-review">Findings, Remediation and Review</h2>
+<h3 id="findings-register">Findings Register</h3>
+<p><strong>Instruction:</strong> One row per finding: the finding, the risk it poses to individuals, the severity, the owner, and the action being taken. Severity is what determines the order of work, and a register with no severity column is a list of observations.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="residual-risk-and-acceptance">Residual Risk and Acceptance</h3>
+<p><strong>Instruction:</strong> The risk remaining after the planned actions, who accepts it, and until when. Acceptance is a decision with an owner and an expiry date; an acceptance with neither is an unowned risk that will be rediscovered at the next assessment.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="remediation-plan">Remediation Plan</h3>
+<p><strong>Instruction:</strong> The actions, their owners and their dates, and what is being done in the interim. The interim period is where a known finding actually operates, so it is the part of the plan most worth writing down.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="review-triggers">Review Triggers</h3>
+<p><strong>Instruction:</strong> What would cause this assessment to be revisited before its scheduled date, such as a new purpose, a new recipient, a new model, or a regulatory change. Triggers stated after the change have occurred are a record of the change.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="reassessment-triggers">Reassessment Triggers</h3>
+<p><strong>Instruction:</strong> When this assessment expires and on what cycle. An assessment with no expiry is treated as permanent by everyone who did not write it, including the people who inherited it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -2197,6 +2445,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

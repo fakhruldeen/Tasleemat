@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. النظرة العامة والبيانات الوصفية
+            📋 نظرة عامة
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. قالب التسليمة
+            📄 القالب
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. الدليل الإرشادي للممارس
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. مثال واقعي مكتمل
+            💡 مثال واقعي
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. مخطط البيانات Draft 2020-12
+            ⚙️ المخطط
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1403,6 +1493,12 @@ tr:hover td {
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1515,8 +1611,143 @@ tr:hover td {
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="-">تقرير إغلاق المشروع أو المرحلة - دليل التوليد بالنموذج الذكي</h1>
+<blockquote>
+<p><strong>تعليمات النظام:</strong>
+يمثل هذا المستند مجموعة التعليمات التفصيلية لتوليد <code>تقرير إغلاق المشروع أو المرحلة</code>. وعند طلب تعبئة هذا النموذج، استخدم الإرشادات المقدمة لكل قسم أدناه لتوليد المحتوى المطلوب بدقة. راجع <code>parameters.md</code> للتحقق من المتغيرات العامة للمشروع.</p>
+<p><strong>السياق والتعريف المهني:</strong>
+يوثّق إغلاق المشروع الأداء النهائي مقارنةً بأهداف المشروع. تُراجع الأهداف الواردة في ميثاق المشروع ويُوثَّق دليل على تحقيقها، وكذلك الأهداف غير المحققة والانحرافات. كما تُوثَّق معلومات إغلاق المشتريات. وهو يدعم العملية 4.7 إغلاق المشروع أو المرحلة.</p>
+<p><strong>المحاذاة وسلسلة الاعتماديات:</strong>
+* <strong>المدخلات (المتطلبات السابقة):</strong>
+  * <em>إلزامي:</em> نموذج قبول المنتج (PMO-06.08)، اعتماد اختبار قبول المستخدم (UAT) (PMO-06.10)، تقارير إغلاق العقود (PMO-07.02)
+  * <em>اختياري:</em> سجل الدروس المستفادة (PMO-05.07)، سجل المشكلات (PMO-05.01)، سجل المخاطر (PMO-04.08.02)
+* <strong>المخرجات (النماذج التابعة):</strong>
+  * <em>إلزامي:</em> الأرشفة النهائية وإغلاق المشروع، سجل تحقيق القيمة (PMO-01.03)، تحديث أصول العمليات التنظيمية المؤسسية
+  * <em>اختياري:</em> مراجعات ما بعد التنفيذ، قائمة التحقق للانتقال إلى العمليات (PMO-07.04)</p>
+</blockquote>
+<hr />
+<h2 id="_1">وصف المشروع</h2>
+<h3 id="_2">الوصف</h3>
+<p><strong>التعليمات:</strong> قدّم وصفًا على مستوى ملخص للمشروع أو المرحلة: ما هو، وهدفه، وحدوده. اجعل ذلك على مستوى الملخص، وأشر إلى ميثاق المشروع للتفاصيل.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_3">إدارة الفوائد</h2>
+<h3 id="_4">كيف تحققت الفوائد</h3>
+<p><strong>التعليمات:</strong> صف كيف حقق المنتج أو الخدمة أو النتيجة النهائية الفوائد التي أُنشئ المشروع لتحقيقها. حدد الفائد والدليل على تحققها، مع التمييز بين فائدة تحقق فعلًا وأخرى لم تتحقق بعد.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_5">حالة تحقق الفوائد</h3>
+<p><strong>التعليمات:</strong> حالة تحقق كل فائدة حاليًا، ومن المسؤول عن متابعتها بعد انفصال فريق المشروع. الفائدة التي لا يوجد لها مالك عند الإغلاق هي فائدة لن يتم قياسها.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_6">الاحتياجات التجارية</h2>
+<h3 id="_7">كيف تحققت الاحتياجات التجارية</h3>
+<p><strong>التعليمات:</strong> صف كيف حقق المنتج أو الخدمة أو النتيجة النهائية الاحتياجات التجارية المحددة في خطة الأعمال.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_8">الاحتياجات غير المحققة</h3>
+<p><strong>التعليمات:</strong> أي حاجة تجارية لم تتحقق، وما الخطوة التالية بعد إغلاق المشروع. الحاجة التي لا تُذكر هنا سيفترضها من يرث المنتج أنها تحققت.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_9">ملخص الأداء</h2>
+<h3 id="_10">النطاق / الأهداف</h3>
+<p><strong>التعليمات:</strong> صف أهداف النطاق اللازمة لتحقيق الفوائد المخطط لها للمشروع.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_11">النطاق / معايير الإنجاز</h3>
+<p><strong>التعليمات:</strong> وثّق معايير محددة وقابلة للقياس اللازمة لإكمال أهداف النطاق. اذكر كل معيار بحيث يمكن الإجابة عنه بتحقق أو عدم تحقق، وأشر إلى خط أساس النطاق.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_12">النطاق / كيف تحققت</h3>
+<p><strong>التعليمات:</strong> اذكر الدليل على تحقّق معايير الإنجاز. وقدّم مصدر الدليل، مثل الوثيقة أو نتيجة الاختبار أو سجل القبول، وليس الاستنتاج المستخلص منه فقط.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_13">الجودة / الأهداف</h3>
+<p><strong>التعليمات:</strong> صف أهداف الجودة والمعايير اللازمة لتحقيق الفوائد المخطط لها للمشروع.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_14">الجودة / معايير الإنجاز</h3>
+<p><strong>التعليمات:</strong> وثّق المعايير المحددة والقابلة للقياس اللازمة لتحقيق أهداف جودة المنتج والمشروع.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_15">الجودة / كيف تحققت</h3>
+<p><strong>التعليمات:</strong> أدخل معلومات التحقق والإثبات من نموذج قبول المنتج. وأشر إلى ذلك النموذج بدلًا من إعادة كتابته، حتى لا تتباعد السجلات.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_16">الانحرافات</h2>
+<h3 id="_17">الوقت / الأهداف</h3>
+<p><strong>التعليمات:</strong> أهداف الوقت المخطط لها: المدة المعتمدة في خط أساس الجدول الزمني وتاريخ الإنجاز المخطط.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_18">الوقت / النتيجة النهائية</h3>
+<p><strong>التعليمات:</strong> تاريخ الإنجاز الفعلي والمدة الفعلية.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_19">الوقت / الانحراف</h3>
+<p><strong>التعليمات:</strong> الفرق بين المخطط والفعلي بالأيام أو الأسابيع، مع السبب. وإذا أُنجز المشروع مبكرًا، فاذكر ذلك واشرح السبب، فالانحراف الإيجابي غير المفسّر يخفي خطأ في التخطيط تمامًا كما يخفيه التأخير.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_20">الوقت / التعليقات</h3>
+<p><strong>التعليمات:</strong> أي ترتب على انحراف الوقت للمؤسسة، مثل تفويت نافذة سوقية، وأي بند ما زال مفتوحًا عند الإغلاق.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_21">التكلفة / الأهداف</h3>
+<p><strong>التعليمات:</strong> خط أساس التكلفة المعتمد، أو إجمالي الميزانية عند الإنجاز إذا لم ينطبق خط أساس.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_22">التكلفة / النتيجة النهائية</h3>
+<p><strong>التعليمات:</strong> إجمالي ما أنفق فعليًا عند الإنجاز، مع بيان ما إذا كان يشمل مبلغ الاحتياطي المستهلك أو الاحتياطي المُحرَّر.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_23">التكلفة / الانحراف</h3>
+<p><strong>التعليمات:</strong> الفرق بين المخطط والفعلي بالعملة ونسبة مئوية، مع السبب.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_24">التكلفة / التعليقات</h3>
+<p><strong>التعليمات:</strong> أي ترتب على انحراف التكلفة للمؤسسة، مثل مطالبة أو تحويل ميزانية لا يزال مطلوبًا، وأي بند ما زال مفتوحًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_25">المخاطر والمشكلات</h2>
+<h3 id="_26">المخاطرة أو المشكلة</h3>
+<p><strong>التعليمات:</strong> المخاطرة أو المشكلة، ومصدرها. اذكر المرجع من سجل المخاطر أو المشكلات بدلًا من إعادة كتابته.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_27">الاستجابة والحل</h3>
+<p><strong>التعليمات:</strong> ما تم بشأنه وفعاليته. واذكر بوضوح ما إذا كان ناجحًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_28">التعليقات</h3>
+<p><strong>التعليمات:</strong> ما بقي مفتوحًا، ومن يملكه بعد الإغلاق. والبند غير المحلول المتنقل دون مستلم محدد لم ينتقل فعليًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_29">إغلاق المشتريات</h2>
+<h3 id="_30">العقود المغلقة</h3>
+<p><strong>التعليمات:</strong> العقود التي تم إغلاقها، مع القيمة النهائية وتاريخ إغلاق كل منها. وإذا لم تُستخدم المشتريات، فاذكر ذلك بوضوح بدلًا من ترك القسم فارغًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_31">الالتزامات المُباة</h3>
+<p><strong>التعليمات:</strong> الالتزامات والضمانات ومستويات الخدمة التي تم الوفاء بها أو نقلها أو ما زالت قائمة، مع ذكر المالك لكل منها.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_32">المطالبات والمنازعات المسوّاة</h3>
+<p><strong>التعليمات:</strong> أي مطالبة أو منازعة سُوّت قبل الإغلاق، وأي لم تُسوَّ. فالمطالبة غير المسوّاة التزام يسلّمه المشروع.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1974,6 +2205,31 @@ tr:hover td {
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

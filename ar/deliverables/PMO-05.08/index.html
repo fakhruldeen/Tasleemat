@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. النظرة العامة والبيانات الوصفية
+            📋 نظرة عامة
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. قالب التسليمة
+            📄 القالب
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. الدليل الإرشادي للممارس
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. مثال واقعي مكتمل
+            💡 مثال واقعي
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. مخطط البيانات Draft 2020-12
+            ⚙️ المخطط
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1322,6 +1412,12 @@ tr:hover td {
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1424,8 +1520,92 @@ tr:hover td {
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="-">مراجعة المرحلة - دليل التوليد بالنموذج الذكي</h1>
+<blockquote>
+<p><strong>تعليمات النظام:</strong>
+يمثل هذا المستند مجموعة التعليمات التفصيلية لتوليد <code>مراجعة المرحلة</code>. وعند طلب تعبئة هذا النموذج، استخدم الإرشادات المقدمة لكل قسم أدناه لتوليد المحتوى المطلوب بدقة. راجع <code>parameters.md</code> للتحقق من المتغيرات العامة للمشروع.</p>
+<p><strong>السياق والتعريف المهني:</strong>
+مراجعة المرحلة نشاط يُنفَّذ في نهاية كل دورة. وعادة ما تُسجَّل المعلومات على ملاحظات لاصقة أو في برنامج. ومن الأساليب الشائعة ما يُعرف بـ "نجمة البحر"، ويجمع: ابدأ، وتوقف، واستمر، وزد، وقلل. والهدف هو تحسين أداء الفريق وجعله أكثر كفاءة في كل دورة تالية.</p>
+<p><strong>المحاذاة وسلسلة الاعتماديات:</strong>
+* <strong>المدخلات (المتطلبات السابقة):</strong>
+  * <em>إلزامي:</em> خطة إدارة المشروع (PMO-04.01.01)، خطوط الأساس المعتمدة (النطاق / الجدول / التكلفة)
+  * <em>اختياري:</em> سجل المخاطر (PMO-04.08.02)، خطة إشراك المعنيين (PMO-04.10.01)
+* <strong>المخرجات (النماذج التابعة):</strong>
+  * <em>إلزامي:</em> تقارير حالة المشروع (PMO-06.01)، سجل التغييرات (PMO-05.04)، ملخص الدروس المستفادة (PMO-07.01)
+  * <em>اختياري:</em> تحليل التباين (PMO-06.04)، سجل القرارات (PMO-05.02)</p>
+</blockquote>
+<hr />
+<h2 id="_1">الجلسة</h2>
+<h3 id="_2">الدورة أو التكرار</h3>
+<p><strong>التعليمات:</strong> الدورة أو التكرار الذي تغطي هذه المراجعة. والمراجعة التي لا تذكر الدورة التي تنتمي إليها لا يمكن مقارنتها بالسابقة، وسلسلة مراجعات لا يمكن تعدادها هي نفسها لا شيء.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_3">أعضاء الفريق الحاضرون</h3>
+<p><strong>التعليمات:</strong> من شارك. ومن ليس في الغرفة لا يستطيع تنفيذ ما تم الاتفاق عليه، فاذكر الغائبين وكيف يصلهم ما تم الاتفاق عليه.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_4">التاريخ</h3>
+<p><strong>التعليمات:</strong> تاريخ عقد المراجعة. اذكره مع رقم الدورة في السطر نفسه، فالمراجعة التي تحمل تاريخًا فقط لا يمكن مطابقتها بما قبلها، وتتحول المجموعة إلى سجل تواريخ بلا سياق.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_5">نجمة البحر</h2>
+<h3 id="_6">ابدأ</h3>
+<p><strong>التعليمات:</strong> الإجراءات والسلوكيات التي سيبدأ الفريق بتنفيذها. كن محددًا: فعبارة "نعقد مراجعة مشتركة مع ضمان الجودة مرتين أسبوعيًا" قابلة للتنفيذ، بينما "نتواصل بشكل أفضل" ليست كذلك.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_7">توقف</h3>
+<p><strong>التعليمات:</strong> الإجراءات أو السلوكيات التي سيوقف الفريق عن تنفيذها. وإذا لم يكن الفريق مستعدًا للتوقف فعليًا، فإن تسجيلها هنا لا يبني سوى قائمة يتعلم الفريق عدم الثقة بها.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_8">استمر</h3>
+<p><strong>التعليمات:</strong> الممارسات التي ينبغي أن يواصل الفريق تنفيذها. واذكر سببها، فالسبب هو ما سيحتاجه فريق مستقبلي حين ينتقل الشخص الذي أدخل هذه الممارسة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_9">زد</h3>
+<p><strong>التعليمات:</strong> الممارسات التي لم تُنفَّذ بانتظام وينبغي تنفيذها بشكل أكثر. وعدم الاتساق يعني عادة أن الممارسة موجودة لكن لا شيء يفرضها، فسجّل ما سيفرضها.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_10">قلل</h3>
+<p><strong>التعليمات:</strong> الممارسات التي أُفرط فيها أو ينبغي تقليلها. وانتبه للممارسات التي وُجدت لحل مشكلة لم تعد موجودة؛ فذلك هو المصدر المعتاد للطقوس التي لم يعد الفريق يلاحظها.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="_11">بنود الإجراءات</h2>
+<h3 id="_12">الإجراء</h3>
+<p><strong>التعليمات:</strong> التغيير المحدد الذي سيُجرى، مأخوذًا من أعمدة ابدأ وتوقف وزد وقلل بدلًا من اختراعه بشكل منفصل.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_13">المالك</h3>
+<p><strong>التعليمات:</strong> الشخص الواحد المسؤول عن تنفيذه. لا يمكن للفريق أن يكون مالكًا لإجراء، لأن الفريق لا يكون متاحًا دائمًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_14">الموعد</h3>
+<p><strong>التعليمات:</strong> تاريخ الإنجاز، والمكان الذي ستُراجع فيه. والإجراء بلا موعد مراجعة هو إجراء يُنقل إلى المراجعة التالية كملاحظة عن العمل بشكل أفضل.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h3 id="_15">النتيجة</h3>
+<p><strong>التعليمات:</strong> ما حدث عند تطبيقه، ويُملأ في المراجعة التالية. وبلون هذا العمود يكرر الفريق الإجراءات نفسها وتصبح المراجعة طقسًا لا حلقة تغذية راجعة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+<h2 id="flap">بديل FLAP</h2>
+<h3 id="_16">اعتبارات مستقبلية</h3>
+<p><strong>التعليمات:</strong> بديل FLAP لقالب نجمة البحر. إذا كان الفريق يفضل FLAP، فاستبدل أعمدة نجمة البحر الخمسة بالإنجازات والمشاكل والدروس والاعتبارات المستقبلية، لا أن تسجّل كليهما، فالنموذجان المتوازيان يمتلئ أحدهما نصفًا ولا يُوثَّق في أي منهما.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1777,6 +1957,31 @@ tr:hover td {
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

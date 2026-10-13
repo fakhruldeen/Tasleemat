@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1362,6 +1452,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1526,8 +1622,137 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="ai-governance-plan-llm-generation-guide">AI GOVERNANCE PLAN - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>AI GOVERNANCE PLAN</code>. When asked to populate this form, use the guidance
+provided for each section below to accurately generate the required
+content. Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+An AI governance plan is the document that answers one question: for this system, what is in force right now. Every external AI obligation eventually reduces to it, because what a regulator, a client or an internal audit asks for is not a policy in general but the specific set of constraints, data permissions, test thresholds and named owners that applied to this version of this system on the day in question.</p>
+</blockquote>
+<p>The six sections follow the order in which those answers are needed. Scope establishes what the system is, at which version, who it acts upon rather than merely who uses it, and what the plan explicitly does not reach, since governance fails at the boundary where nobody owns the component. The principles and acceptable-use sections state what is refused as well as what is allowed, which is the only reason the document can refuse anything at all. Data governance records what may be used and for what, because the commonest failure is not a leak but reuse for a purpose nobody re-approved. Fairness records the group affected, the specific way the system could be unfair to them, and the threshold that triggers action, written before the result is known. Accountability names a person rather than a committee, and states where a person affected by an output can contest it. Monitoring and change state what forces the plan to be reopened.</p>
+<p>The failure mode is category language. A plan that says data is minimised, protected and monitored, that bias is mitigated, and that compliance is maintained describes an intention rather than a system, and reads identically whether or not anyone has checked. The test is whether a reader who was not in the room can tell what would have to change for a decision to be made differently. So record the model version, the key holder, the numeric threshold, the named individual, the event that triggers review. Where a value genuinely is not yet known, record that it is not known and who must resolve it, which is a far more useful sentence than a plausible-looking category.</p>
+<blockquote>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> AI Use Case Canvas (PMO-02.04), AI Readiness Assessment (PMO-02.03), Organizational AI Ethics Policy
+  * <em>Optional:</em> Data Privacy &amp; Ethics Assessment (PMO-02.06), Project Charter (PMO-03.01)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> AI Model Card (PMO-02.05), Quality Metrics (PMO-04.05.02), Risk Management Plan (PMO-04.08.01)
+  * <em>Optional:</em> Prompt Library Register (PMO-05.09), UAT Sign-off Form (PMO-06.10)</p>
+</blockquote>
+<hr />
+<h2 id="governance-context-and-scope">Governance Context and Scope</h2>
+<h3 id="ai-system-inventory">AI System Inventory</h3>
+<p><strong>Instruction:</strong> What the system is, at the version that will actually run, and who operates it. Record the version, because a governance plan that covers "the model" covers whichever model happens to be deployed when someone asks, and the answer is rarely the one that was assessed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="intended-purpose-and-affected-users">Intended Purpose and Affected Users</h3>
+<p><strong>Instruction:</strong> What the system is for, and who is subject to its output rather than merely its user. The two are routinely confused, and the confusion is how a system that screens applicants comes to be described as a tool that helps recruiters write better.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="risk-classification">Risk Classification</h3>
+<p><strong>Instruction:</strong> The tier assigned and the criteria that put it there, not the tier alone. A classification with no stated criteria cannot be challenged, and an unchallengeable classification is the same as no classification.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="scope-exclusions">Scope Exclusions</h3>
+<p><strong>Instruction:</strong> What this plan explicitly does not cover, and who owns it instead. Governance plans fail at the boundary: the component nobody assigned sits under a plan that assumed it was included.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="ethical-principles-and-acceptable-use">Ethical Principles and Acceptable Use</h2>
+<h3 id="ethical-principles">Ethical Principles</h3>
+<p><strong>Instruction:</strong> The principles that constrain use on this project, and the case in which one yields to another. Principles that cannot yield to each other are not a decision rule, and a project under time pressure will resolve the conflict silently and after the fact.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="prohibited-uses">Prohibited Uses</h3>
+<p><strong>Instruction:</strong> Uses that are refused regardless of benefit. This section is what the plan is for, and a plan listing only permitted uses has no way to refuse anything.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="approved-use-cases">Approved Use Cases</h3>
+<p><strong>Instruction:</strong> The uses that are approved, each with the limits within which it stays approved. An approved use without stated limits is an approved capability, not an approved use.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="human-impact-assessment">Human Impact Assessment</h3>
+<p><strong>Instruction:</strong> Who bears the consequences of a wrong output, and whether they can tell it was wrong. A system whose subject cannot detect its own errors transfers the cost of error to the person least able to contest it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="data-governance">Data Governance</h2>
+<h3 id="data-category">Data Category</h3>
+<p><strong>Instruction:</strong> What kind of data, in terms a data subject would recognise as being about them.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="provenance-and-lawful-basis">Provenance and Lawful Basis</h3>
+<p><strong>Instruction:</strong> Where the data came from and under what basis it is processed. Data that arrived with the model cannot have its basis added later, so a model trained before this question was asked holds data whose status nobody can now evidence.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="permitted-use">Permitted Use</h3>
+<p><strong>Instruction:</strong> What the data may be used for within this system, and what it may not. The most common governance failure is not a leak but reuse for a purpose nobody re-approved.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="protection-control">Protection Control</h3>
+<p><strong>Instruction:</strong> The specific control applied, not the category of control. "Encrypted" is a category, and the sentence that matters is which key, held by whom, and rotated how.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="retention-and-deletion">Retention and Deletion</h3>
+<p><strong>Instruction:</strong> When the data is deleted, and how deletion is verified. Deletion that is asserted rather than evidenced is how a training set outlives the project that justified it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="fairness-bias-and-transparency">Fairness, Bias and Transparency</h2>
+<h3 id="affected-group">Affected Group</h3>
+<p><strong>Instruction:</strong> The group whose outcomes are affected, named. Groups are described in aggregate on the basis of a test, and the group that matters is the one that performs worst on it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="bias-risk">Bias Risk</h3>
+<p><strong>Instruction:</strong> The specific way this system could be unfair to this group, stated so it could be false. "Bias risk" as a heading is not a risk; "the model scores this group lower on historic completion rates" is a risk that can be measured and can turn out to be wrong.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="test-method-and-threshold">Test Method and Threshold</h3>
+<p><strong>Instruction:</strong> How it is tested and what result triggers action, with the threshold written before the result is known. A threshold set after seeing the number is a description of that number.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="mitigation">Mitigation</h3>
+<p><strong>Instruction:</strong> What will be done about a confirmed disparity, and what the system does in the meantime. Most bias mitigation plans describe the end state and are silent on whether the system runs while the question is open.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="ongoing-indicator">Ongoing Indicator</h3>
+<p><strong>Instruction:</strong> The metric watched after release, and its frequency. Bias is not a property of a model at launch but of the data it keeps meeting, so the launch measurement is the first of a series and not the last.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="compliance-and-accountability">Compliance and Accountability</h2>
+<h3 id="applicable-regulations">Applicable Regulations</h3>
+<p><strong>Instruction:</strong> The instruments that bind this system, named, with the clause where the obligation is specific. A list of regulation names is a research note, not a compliance position.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="control-mapping">Control Mapping</h3>
+<p><strong>Instruction:</strong> Which control satisfies which obligation, and which obligations have no control yet. The second half is the useful half, and a mapping that covers every obligation is nearly always a mapping that was written to be complete rather than to be true.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="evidence-and-records">Evidence and Records</h3>
+<p><strong>Instruction:</strong> What is retained to demonstrate compliance, for how long, and who may inspect it. Compliance demonstrated only by assertion cannot be audited, and what cannot be audited is not demonstrable to a regulator.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="compliance-review-cadence">Compliance Review Cadence</h3>
+<p><strong>Instruction:</strong> How often compliance is revisited and what triggers an off-cycle review. A model version change, a new data source, and a new use are all events, and a plan that reviews only on a calendar will miss all three.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="accountable-owner">Accountable Owner</h3>
+<p><strong>Instruction:</strong> The named person answerable for this system's behaviour, with the authority to stop it. Accountability assigned to a committee is distributed to nobody, and the test is whether the named person can halt the system without convening anyone.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="human-oversight-points">Human Oversight Points</h3>
+<p><strong>Instruction:</strong> The specific points where a human can override, and where they cannot. Oversight that exists everywhere in principle and nowhere in the workflow is a statement of values, and the points that matter are the ones where override is expensive.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="decision-rights-and-redress">Decision Rights and Redress</h3>
+<p><strong>Instruction:</strong> Who decides what the system is permitted to do after launch, and how a person affected by its output contests that output. Redress is the only mechanism that makes accountability reachable by the person who needs it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="incident-reporting">Incident Reporting</h3>
+<p><strong>Instruction:</strong> What counts as an incident, to whom it is reported, and within what time. An incident definition written broadly enough to catch everything is one nobody can apply under time pressure, and a narrow one misses precisely the cases that were not foreseeable when it was written.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="monitoring-and-change">Monitoring and Change</h2>
+<h3 id="performance-and-drift-monitoring">Performance and Drift Monitoring</h3>
+<p><strong>Instruction:</strong> What is watched in operation, and against what baseline. A production model is a different system from the one assessed, and the difference accumulates rather than announcing itself.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="reassessment-triggers">Reassessment Triggers</h3>
+<p><strong>Instruction:</strong> The events that require the plan to be reopened, stated so they can be recognised by someone who was not in the room. Triggers described in terms of materiality always resolve towards not triggering.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="change-control-link">Change Control Link</h3>
+<p><strong>Instruction:</strong> How a change to the system is raised, since the system, its data, and its approved uses are all governed by this plan and a change to any of them is a change to the plan.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1942,6 +2167,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

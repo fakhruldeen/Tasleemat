@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1353,6 +1443,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1471,8 +1567,130 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="ai-governance-plan-llm-generation-guide">AI GOVERNANCE PLAN - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>AI GOVERNANCE PLAN</code>. When asked to populate this form, use the guidance
+provided for each section below to accurately generate the required
+content. Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+An AI use case canvas is the artefact where a proposed use is stated in terms that can be argued with. The governance plan says what is in force for a system that exists; the readiness assessment says whether the organisation can build one; the canvas is the document in between, and it is the only one of the three that is written before anything has been built, which is precisely why it is the one most often written badly.</p>
+</blockquote>
+<p>The five sections follow the order a reviewer asks questions in. Identification names the use case, its owner, the problem in the words of the person who has it, the population that experiences it, and what people do today. That last field is the baseline: a workaround with no stated cost cannot be beaten, so any proposal measured against an unrecorded alternative is measured against nothing. The solution section states the class of approach, what the system does in terms a non-specialist can check, what a person still does, what is excluded, and what must be true for it to work. Data records each source by name and owner, because a source described only as historical data cannot be checked for permission, and permission is what blocks first. Value and cost keeps the build cost and the operating cost apart, states value against a baseline rather than as a return figure, and names the condition for realisation separately from the condition for building, since most systems are built successfully and deliver nothing. The final section ranks the risks specific to this use case, says what the controls do not cover, states which part of the feasibility is unproven, gives the governance route in order, and records the kill criteria.</p>
+<p>Two fields do the work that the rest supports. The current workaround establishes the baseline, because a claim of value without one is a number someone chose. The kill criteria establish that this is a proposal rather than a commitment, since a use case entered without an exit condition becomes permanent by default rather than by decision. Where the data cannot be used for model training, the shape of the solution changes, and the canvas is the last place that is cheap to discover. Write the labelling requirement with its cost: it is usually the largest single line in the business case and usually absent from it.</p>
+<blockquote>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> AI Readiness Assessment (PMO-02.03), Business Case (PMO-01.01)
+  * <em>Optional:</em> Product Vision (PMO-03.02), Stakeholder Analysis (PMO-03.05)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> Project Charter (PMO-03.01), AI Governance Plan (PMO-02.02), Requirements Documentation (PMO-04.02.03)
+  * <em>Optional:</em> User Story Mapping (PMO-04.02.09), AI Model Card (PMO-02.05)</p>
+</blockquote>
+<hr />
+<h2 id="use-case-identification">Use Case Identification</h2>
+<h3 id="use-case-name">Use Case Name</h3>
+<p><strong>Instruction:</strong> What this use case is called, and where it sits in the portfolio. Naming it makes it possible to say that a later system is the same use case grown, which is usually the difference between a second business case and a repeat of the first.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="business-owner">Business Owner</h3>
+<p><strong>Instruction:</strong> The person accountable for the outcome, who must be able to say what the system is for without reference to the model. An owner who describes the technology has not been identified.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="problem-statement">Problem Statement</h3>
+<p><strong>Instruction:</strong> The specific problem, in the words of the person who has it, with the cost of leaving it unsolved. "Improve efficiency" is a goal; "a specialist spends forty minutes a day reconciling three spreadsheets" is a problem that can be sized and later checked.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="affected-population">Affected Population</h3>
+<p><strong>Instruction:</strong> Who experiences the problem, how many, and how often. The population is what converts an annoyance into a cost, and it is also the population the system will act upon.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="current-workaround">Current Workaround</h3>
+<p><strong>Instruction:</strong> What people do today, and what it costs them. A workaround with no stated cost cannot be beaten, so the baseline here is what any proposal is measured against.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="proposed-solution">Proposed Solution</h2>
+<h3 id="ai-pattern">AI Pattern</h3>
+<p><strong>Instruction:</strong> The class of approach, and what makes it fit this problem rather than a neighbouring one. Classification, ranking, generation, forecasting and anomaly detection fail differently, and naming the pattern is what lets the failure modes be anticipated.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="solution-description">Solution Description</h3>
+<p><strong>Instruction:</strong> What the system does, in one paragraph a non-specialist can check. If the description requires the model architecture to be understood, the description is not yet a description.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="human-role">Human Role</h3>
+<p><strong>Instruction:</strong> What a person still does, and at which points they can stop the system. A system described as assisting usually replaces something, and the thing replaced should be named so the change is visible to those affected.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="scope-boundary">Scope Boundary</h3>
+<p><strong>Instruction:</strong> What this use case explicitly does not include. Scope stated only as a positive is unbounded, and an unbounded use case absorbs its neighbours' costs.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="assumptions">Assumptions</h3>
+<p><strong>Instruction:</strong> What must be true for the solution to work, and what happens if each is not. Assumptions recorded after the build are records of what was believed, not of what was assumed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="data">Data</h2>
+<h3 id="data-sources">Data Sources</h3>
+<p><strong>Instruction:</strong> Where each input comes from, as a named system or collection with an owner. A source named only as "historical data" cannot be checked for permission, and permission is the first thing that blocks.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="data-category-and-volume">Data Category and Volume</h3>
+<p><strong>Instruction:</strong> What kind of data, at what volume and frequency. Frequency is the field most often omitted and the one that determines whether the system is retrained, refreshed or left to drift.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="data-quality-status">Data Quality Status</h3>
+<p><strong>Instruction:</strong> What is known about completeness, consistency and timeliness, and what has not been checked. Recording what was not checked is as useful as recording what was, because it bounds the confidence of the estimate.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="labelling-requirement">Labelling Requirement</h3>
+<p><strong>Instruction:</strong> Whether labelled examples exist, who will produce them, and at what cost. This is usually the largest single line in the business case, and it is usually absent from it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="permitted-use-and-access">Permitted Use and Access</h3>
+<p><strong>Instruction:</strong> What the data may be used for within this use case, and who approves it. Where the data cannot be used for model training, the shape of the solution changes, and that is better known before than after.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="value-and-cost">Value and Cost</h2>
+<h3 id="value-proposition">Value Proposition</h3>
+<p><strong>Instruction:</strong> What changes for whom, expressed as a change in the process rather than a return figure. A return calculated before the operating cost is a number that survives no review.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="value-measurement-method">Value Measurement Method</h3>
+<p><strong>Instruction:</strong> How the value will be measured, against what baseline, and by whom. Value stated without a baseline is a claim, and the baseline is usually already recorded in the current-workaround cost above.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="beneficiaries">Beneficiaries</h3>
+<p><strong>Instruction:</strong> Who gains, and who bears the cost of the change. These are rarely the same people, and the form is the place where the second group becomes visible.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="build-cost">Build Cost</h3>
+<p><strong>Instruction:</strong> What it will cost to build, and what is included. The cost that is excluded is the operating cost below, and stating the exclusion is what keeps the total honest.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="operating-cost">Operating Cost</h3>
+<p><strong>Instruction:</strong> What it will cost to run per unit of work, and at what volume. Cost per unit rather than total, because the total scales with volume and the viability question is asked per unit.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="value-realisation-condition">Value Realisation Condition</h3>
+<p><strong>Instruction:</strong> What must be true for the value to be realised, as distinct from for the system to be built. Most systems are built successfully and deliver nothing, and the difference is nearly always one of these conditions.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="risks-controls-and-governance-route">Risks, Controls and Governance Route</h2>
+<h3 id="key-risks">Key Risks</h3>
+<p><strong>Instruction:</strong> The risks specific to this use case, ranked, with the consequence if each materialises. A generic risk register applied here records that data may be biased without saying for whom or how it would be detected.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="risk-controls">Risk Controls</h3>
+<p><strong>Instruction:</strong> What is in place for each risk, and what it does not cover. The second half is the useful half, and a control that covers everything is a control that has been described rather than designed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="feasibility-assessment">Feasibility Assessment</h3>
+<p><strong>Instruction:</strong> Whether this is technically feasible, at what maturity, and what is unproven. A feasibility statement that does not say which part is unproven is a statement that all of it is proven.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="governance-route">Governance Route</h3>
+<p><strong>Instruction:</strong> Which governance artefacts this use case must pass through, and in what order. The order is the content: privacy, then fairness, then approval, because a system approved before its data is assessed cannot be un-approved.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="kill-criteria">Kill Criteria</h3>
+<p><strong>Instruction:</strong> What result would cause this use case to be stopped. A use case with no kill criteria is a commitment, and a commitment entered without an exit condition is the failure mode this field exists to prevent.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="related-artefacts">Related Artefacts</h3>
+<p><strong>Instruction:</strong> The business case, AI governance plan, model card and privacy assessment for this use case, so that a reader holding the canvas can find the decisions that depend on it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1842,6 +2060,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

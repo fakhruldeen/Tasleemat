@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1287,6 +1377,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1372,8 +1468,72 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="quality-management-plan-generation-prompt">Quality Management Plan - Generation Prompt</h1>
+<!--
+System Instructions: This document contains instructions for generating the
+«Quality Management Plan». When asked to fill this template, follow the section-by-section
+instructions below. Refer to `parameters.md` for project variables.
+-->
+
+<blockquote>
+<p><strong>Context and Definition:</strong>
+A subsidiary plan defining how the organization's quality policies, methodologies, and standards will be implemented and verified.</p>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> Project Scope Statement (PMO-04.02.05), Requirements Documentation (PMO-04.02.03)
+  * <em>Optional:</em> Tailoring Plan (PMO-02.01), AI Governance Plan (PMO-02.02)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> Quality Audits (PMO-05.05), Product Acceptance Form (PMO-06.08), UAT Sign-off Form (PMO-06.10)
+  * <em>Optional:</em> Definition of Ready &amp; Done (PMO-04.05.03), Vendor Scorecard (PMO-06.09)</p>
+</blockquote>
+<hr />
+<h2 id="quality-standards-and-policies">Quality Standards and Policies</h2>
+<h3 id="organizational-quality-policy-and-framework">Organizational Quality Policy and Framework</h3>
+<p><strong>Instruction:</strong> The overarching corporate quality principles and methodology (e.g., ISO, Lean Six Sigma, CMMI).</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="applicable-industry-quality-standards">Applicable Industry Quality Standards</h3>
+<p><strong>Instruction:</strong> Specific external regulatory, engineering, or legal quality standards enforced.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="quality-objectives-and-kpis">Quality Objectives and KPIs</h2>
+<h3 id="project-quality-goals-and-thresholds">Project Quality Goals and Thresholds</h3>
+<p><strong>Instruction:</strong> Measurable quality targets regarding defect containment, test coverage, and customer satisfaction.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="continuous-improvement-objectives">Continuous Improvement Objectives</h3>
+<p><strong>Instruction:</strong> Process enhancement goals and lessons learned integration mechanisms.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="quality-assurance-and-quality-control-procedures">Quality Assurance and Quality Control Procedures</h2>
+<h3 id="quality-assurance-qa-process">Quality Assurance (QA) Process</h3>
+<p><strong>Instruction:</strong> Audits and process compliance activities ensuring project execution adheres to approved standards.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="quality-control-qc-testing-protocol">Quality Control (QC) Testing Protocol</h3>
+<p><strong>Instruction:</strong> Inspection, automated testing, and peer review workflows used to verify deliverable quality.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="non-conformance-and-defect-management">Non-Conformance and Defect Management</h3>
+<p><strong>Instruction:</strong> Standard procedure for logging, prioritizing, resolving, and verifying non-conformance issues.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h2 id="quality-roles-and-review-gates">Quality Roles and Review Gates</h2>
+<h3 id="quality-roles-and-responsibilities">Quality Roles and Responsibilities</h3>
+<p><strong>Instruction:</strong> Designated quality assurance leads, test engineers, and peer review inspectors.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<h3 id="quality-review-gates-and-sign-off-criteria">Quality Review Gates and Sign-off Criteria</h3>
+<p><strong>Instruction:</strong> Mandatory quality milestones and gate reviews required before client acceptance.</p>
+<p><strong>Generated Value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1592,6 +1752,31 @@ All deliverables are audited against PMO Stage-Gate quality gates, ISO 9001 qual
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

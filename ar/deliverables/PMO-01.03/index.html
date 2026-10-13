@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. النظرة العامة والبيانات الوصفية
+            📋 نظرة عامة
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. قالب التسليمة
+            📄 القالب
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. الدليل الإرشادي للممارس
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. مثال واقعي مكتمل
+            💡 مثال واقعي
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. مخطط البيانات Draft 2020-12
+            ⚙️ المخطط
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1307,6 +1397,12 @@ tr:hover td {
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div>
 
@@ -1420,8 +1516,142 @@ tr:hover td {
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <div>
+
+# سجل تحقيق القيمة - دليل التوليد الذكي
+
+<!--
+تعليمات النظام: يحتوي هذا المستند على التوجيهات التفصيلية للذكاء الاصطناعي لتوليد وثيقة «الوثيقة المعتمدة».
+عند طلب صياغة أو استيفاء هذا النموذج، اتبع الإرشادات المحددة لكل قسم بدقة واحترافية،
+مع مراعاة سياق المشروع والمتغيرات المرجعية في `parameters.md`.
+-->
+
+> **السياق والتعريف المهني:**
+> سجل تحقيق القيمة هو السجل الجاري ل التحقق مما إذا كان ما وعدت به دراسة الجدوى يحدث فعلًا. فهو ليس خطة الفوائد، فهي خطة إدارة الفوائد، وليس سجل المشروع الذي يُثبت ما سلّمه. إنه الوثيقة التي تبقى بعد انتهاء المشروع، لأن فريق المشروع الذي يمكنه أن يشهد بما كان ينبغي أن يحدث يكون قد تفرّق حين تستحق الفوائد.
+
+وُجد السجل ليُظهر حركة واحدة: الفرق بين ما كان المقياس، وما كان متوقعًا له، وما هو عليه الآن. وهذا يستلزم خط أساس وفارقًا بإشارته وتاريخ قياس، ولا يمكن إعادة بناء أيٍّ منها لاحقًا. والقيمة المقيسة في أول الفترة والمُبلَّغ عنها على أنها نهائية هي الطريقة العادية التي يُقدَّم بها نقص على أنه نجاح، والتاريخ وحده هو ما يميز بين الحالتين.
+
+ويحتاج السجل أيضًا إلى قواعد لما يحدث لفائدة لا تأتي. فمن دون محفّز معلن للتصعيد يُستوعَب الفارق في كل مراجعة حتى يتوقف عن كونه فارقًا ويصير الخطة، والخطة قد تحوّلت بهدوء إلى سجل لما حدث.
+
+> **المحاذاة وسلسلة الاعتماديات:**
+> * **المدخلات (المتطلبات السابقة):**
+>   * *إلزامي:* خطة إدارة الفوائد (PMO-01.02)، دراسة الجدوى وحالة الأعمال (PMO-01.01)
+>   * *اختياري:* تقارير حالة المشروع (PMO-06.01)، نموذج قبول المنتج (PMO-06.08)
+> * **المخرجات (النماذج التابعة):**
+>   * *إلزامي:* ملخص الدروس المستفادة (PMO-07.01)، إغلاق المشروع أو المرحلة (PMO-07.03)
+>   * *اختياري:* مراجعات الفوائد اللاحقة للمشروع، لوحات مؤشرات الأداء التشغيلية
+
+---
+
+## ضبط السجل
+
+### غرض السجل
+**التعليمات:** ما الذي يتتبعه هذا السجل والفوائد التي يغطيها. بين النطاق، لأن السجل الذي يُسقط فائدة بصمت يُقرأ كأنه فائدة لم تُطالب بها أصلًا، والاثنان لا يمكن تمييزهما لقارئ لاحق.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### فترة البلاغ
+**التعليمات:** الفترة التي تغطيها المدخلات وتاريخ آخر تحديث للسجل. ومن دون تاريخ لا يمكن تمييز سجل قيم متحركة عن سجل مهجور، والنوعان متماهيان في الصفحة.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### المستندات المصدر
+**التعليمات:** دراسة الجدوى وخطة إدارة الفوائد التي تشتق منها المدخلات. فالسجل لا ينشئ فوائد، بل يتتبع فوائد معرَّفة في مكان آخر، والمصدر هو ما يتيح للقارئ أن يقارن الهدف بالحالة التي صرّحت به.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### قواعد الإدخال
+**التعليمات:** ما الذي يستحق الإدخال وما الذي لا يستحق. فالسجل الذي يجمع كل شيء لا يطالب بانتباه أحد، والمدخلات التي تُراجَع فعلًا هي التي كان أسهل كتابتها.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+## سجل تحقيق القيمة
+
+### معرف الفائدة
+**التعليمات:** معرف الفائدة، مطابقًا لخطة إدارة الفوائد. ومن دون معرف مشترك لا يمكن تسوية السجل مقابل الخطة، وقد تُتابع فائدة في أحدهما وتُسقط من الآخر دون أن يقرر أحد إسقاطها.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### وصف الفائدة
+**التعليمات:** الفائدة في صورة تغيير قابل للقياس، بصياغة تُعاد في الصورة التي ستُقاس بها. فالسجل هو المكان الذي تتحول فيه فائدة مكتوبة في النثر إلى رقم، فيجب أن يكون الوصف هو الذي يشير إليه المقياس فعلًا.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### مالك الفوائد
+**التعليمات:** الدور المساءل عن تحقيق الفوائد، وهو عادة ليس مدير المشروع. فمدير المشروع يستطيع بلوغ القيمة، أما تغيير الممارسة التي تقوم عليها القيمة فيستطيعه الدور التشغيلي وحده.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### طريقة القياس
+**التعليمات:** كيف تُحسب القيمة، مصوغةً بحيث يحسبها شخصان بالطريقة نفسها. وأغلب الخلاف على القيمة المحققة يعود إلى الطريقة لا إلى النتيجة، والطريقة غير المذكورة تدعو كل قارئ إلى تأويله لصالحه.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### قيمة خط الأساس
+**التعليمات:** قيمة المقياس قبل المشروع. ومن دونها لا يجد الرقم الفعلي ما يقارَن به، ويصير السجل قائمة أرقام لا دليل على حدوث تغيير.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### القيمة المستهدفة وتاريخها
+**التعليمات:** القيمة المتوقعة والتاريخ المتوقع لها. والهدف بلا تاريخ لا يتأخر، والهدف غير المؤرخ يتحقق كل يوم لا يُنظر فيه.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### القيمة الفعلية وتاريخها
+**التعليمات:** القيمة المقيسة وتاريخ قياسها. وتاريخ القياس يهمّ بقدر الرقم، فالقيمة المقيسة في أول الفترة والمُبلَّغ عنها على أنها نهائية هي أشيع طريقة يُبلَّغ بها عن نقص على أنه نجاح.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### الفارق
+**التعليمات:** الفرق بين الفعلي والمستهدف، بإشارته. وهذا هو العمود الذي وُجد السجل لينتجه، والسجل الذي يسجّل الفعليات وحدها قد أسقط المؤشر الرئيسي الذي يقرؤه أحد.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### الحالة
+**التعليمات:** أين تقف الفائدة مقابل خطتها. وينبغي أن تتبع الحالة قاعدة معلنة لا حكماً، فالحالة التي تُختار لتطابق البلاغ هي حالة لا تبلّغ عن شيء.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+## إجراءات التحقيق
+
+### شرح الفارق
+**التعليمات:** لماذا يختلف الفعلي عن المستهدف، مسجلاً في صورة سبب لا في صورة فجوة. فالفارق الذي لا سبب له لا يمكن التصرف بشأنه، والفائدة المنحرفة لأسباب لم يثبتها أحد ستبقى منحرفة لأسباب لم يثبتها أحد.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### الإجراء التصحيحي
+**التعليمات:** ما الذي سيُعمل، ومن يقوم به، ومتى. والإجراء الذي لا مالك له ملاحظة، والملاحظات تظهر في النسخة التالية من السجل على أنها غير محلولة.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### محفّز التصعيد
+**التعليمات:** الحدث الذي يستلزم تصعيد الفائدة بدل تعديله. ومن دون محفّز يُستوعَب الفارق في كل مراجعة حتى يصير ليس فارقًا بل الخطة، والخطة قد تحوّلت بهدوء إلى سجل لما حدث.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+### سحب الفائدة
+**التعليمات:** الأسانيد التي يُسحب بناءً عليها فائدة من السجل. ومن دونها لا تُسحب الفوائد أبدًا بل تُترك عند آخر قيمة مُبلَّغ عنها، وتبقى الفائدة المسحوبة والفائدة المتوقفة متشابهتين إلى الأبد.
+
+**القيمة المولَّدة:** [ أضف التفاصيل... ]
+
+---
+
+</div>
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1759,6 +1989,31 @@ tr:hover td {
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>

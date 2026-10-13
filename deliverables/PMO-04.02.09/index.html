@@ -1052,9 +1052,95 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
   .boundaries-grid {
+
 
     grid-template-columns: 1fr;
   }
@@ -1156,21 +1242,25 @@ tr:hover td {
       <div class="tabs-container">
         <div class="tabs-nav" role="tablist">
           <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
-            📋 1. Overview & Metadata
+            📋 Overview
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
-            📄 2. Template Markdown
+            📄 Template
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
-            📖 3. Practitioner Guide
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
-            💡 4. Realistic Example
+            💡 Example
           </button>
           <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
-            ⚙️ 5. JSON Schema (Draft 2020-12)
+            ⚙️ Schema
           </button>
         </div>
+
 
         <!-- Tab 1: Overview -->
         <div id="tab-overview" class="tab-pane active" role="tabpanel">
@@ -1365,6 +1455,12 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
           <div class="markdown-body" style="line-height: 1.8;">
             <div dir="ltr" style="font-family: Arial, sans-serif; line-height: 1.6;">
 
@@ -1540,8 +1636,123 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </div>
         </div>
 
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="user-story-mapping-canvas-llm-generation-guide">USER STORY MAPPING CANVAS - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>USER STORY MAPPING CANVAS</code>. When asked to populate this form, use the guidance
+provided for each section below to accurately generate the required
+content. Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+A story map is a picture of how one person gets something done, and its whole purpose is to make an argument that can be wrong in a visible way. That is what separates it from a backlog, a requirements list or a release plan, all of which record decisions already taken. A map records the reasoning, so a team can disagree with the reasoning before anyone spends a sprint on it. The disagreement is the point: it is much cheaper to move a column on a whiteboard than to unpick a release.</p>
+</blockquote>
+<p>The six sections follow the order the argument is made. Persona establishes who this is for, what they are trying to accomplish in their own framing, what they do today instead, how often, and what it costs them when it goes wrong. The workaround matters more than it looks: a proposal that cannot say what it replaces cannot say what it improves, and every estimate downstream becomes a guess. Frequency is what orders the backbone, because a task done twice a year and a task done twenty times a day do not earn the same place in the sequence, and the map that ignores this orders the work by how interesting it is to build rather than by how much it is needed.</p>
+<p>The backbone is the high-level activities in the order the person performs them, and the order is a claim about how the work actually happens. It is the part of the map most often arranged by system architecture instead, which produces a map that describes the software rather than the day, and the difference surfaces as a release nobody wanted. So the map records where the sequence came from: observation, interview, an existing process document, or assumption. A backbone drawn from a process diagram describes how the organisation says the work happens, which is frequently not how anybody does it. The section also records what has been deliberately left off, because a map listing everything is a list of activities and the argument is in the omissions, and where the sequence branches, since a backbone drawn as a single line forces rare paths into the main flow and that is where most of the wasted work in a release comes from.</p>
+<p>The slices are where the method either holds or becomes decoration. A column of the map must be a usable increment: every activity in the backbone has something in it, and a user can complete the whole journey using only that column. A step that serves no single activity is a horizontal layer, and a horizontal layer cannot be released on its own because no user can do anything useful with it alone. Teams that get this wrong produce a map that looks like a story map and is in fact a technical layering with the labels changed, and the tell is that no column can be pointed at and described as a thing a person would use. The walking skeleton is the first column built for that reason: the crudest workable version of every activity, end to end, proving the integration rather than the features. It is normally thrown away once it has done its job, which is the reason teams hesitate to build it, and the map says so in advance rather than letting the throwaway look like wasted effort.</p>
+<p>Release slicing is where most maps quietly fail. The boundary of the first release is drawn by whether the persona can achieve something they came for, not by what is most valuable, most nearly finished, or easiest to estimate. A release assembled from the easiest columns delivers a set of features and no outcome, and its success is then decided afterwards by whoever feels strongly about it, because a release described by its features has no test. So the map states the outcome as a capability, and records the validation plan before the release, since a validation designed afterwards is a description of whatever was found. Everything deferred gets a reason: later is not a reason, and the real reasons are a dependency, a missing decision, or a risk too large for a first release.</p>
+<p>The last two sections keep the map honest. Work the map does not contain is anticipated, because a map that claims completeness sends the work somewhere unrecorded, where it is found later at the worst possible moment. What the product will not do is stated so that it can be said out loud, which is what makes the map safe to publish. The assumptions are listed, because every map rests on beliefs nobody has tested and listing them is the only way to know which to test first. The risks are recorded as triggers rather than as concerns, since a concern has no date and a trigger does. And the map has an owner and a cadence, because a map with neither is a picture of what was understood once, and it is still being shown to people as though it were current.</p>
+<p>The value of the form is in the fields that are inconvenient. A map with no stated workaround, no recorded source for the backbone, no deferred slices with reasons, no outcome and no validation plan describes a product nobody has agreed on, because each of those is filled in by something that happened rather than by something that was decided. So the fields to insist on are the ones with no good answer available: what the person does today, where the sequence came from, which slices are out of the first release and why, and what the map assumes. Where a value genuinely is not known, record that it is not known and who must resolve it, which is more useful than a plausible answer, because a plausible answer will be relied on and a declared gap will be closed.</p>
+<blockquote>
+<p><strong>Alignment &amp; Dependencies:</strong>
+* <strong>Pre-requisites (Inputs):</strong>
+  * <em>Mandatory:</em> Project Charter (PMO-03.01), Stakeholder Requirements
+  * <em>Optional:</em> Product Vision (PMO-03.02), Assumption Log (PMO-03.03)
+* <strong>Downstream Dependents:</strong>
+  * <em>Mandatory:</em> Work Breakdown Structure / WBS (PMO-04.02.06), Project Schedule (PMO-04.03.08), Cost Estimates (PMO-04.04.02)
+  * <em>Optional:</em> Product Backlog (PMO-04.02.08), Quality Metrics (PMO-04.05.02)</p>
+</blockquote>
+<hr />
+<h2 id="persona-and-problem">Persona and Problem</h2>
+<h3 id="primary-persona">Primary Persona</h3>
+<p><strong>Instruction:</strong> The specific person, described so that a team can tell whether a proposed story serves them. A persona written as a role title rather than a person is the reason two teams build different products from the same map and discover the difference at launch.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="what-they-are-trying-to-do">What They Are Trying to Do</h3>
+<p><strong>Instruction:</strong> What the person is trying to accomplish, in their own framing, and what they do today instead. The workaround is the baseline: a proposal that cannot say what it replaces cannot say what it improves, and every estimate is then a guess.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="frequency-and-stakes">Frequency and Stakes</h3>
+<p><strong>Instruction:</strong> How often the person does this, and what it costs them when it goes wrong. Frequency is what orders the backbone, and stakes are what separate a task worth automating from one worth automating carefully.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="organisations-and-roles-affected">Organisations and Roles Affected</h3>
+<p><strong>Instruction:</strong> Other roles the change touches, including the people who approve, review, or are affected by a decision made from the output. A map that names only the operator will produce a system whose other users are discovered after release.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="the-backbone">The Backbone</h2>
+<h3 id="activities-in-order">Activities in Order</h3>
+<p><strong>Instruction:</strong> The high-level activities the persona performs, left to right in the order performed. The order is a claim about how the work actually happens, and it is the part of the map most often arranged by system architecture instead, which hides the sequence the person actually experiences.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="backbone-source">Backbone Source</h3>
+<p><strong>Instruction:</strong> How the sequence was established: observation, interview, existing process document, or assumption. A backbone derived from a process diagram describes how the organisation says the work happens, which is not always how anyone does it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="activities-deferred">Activities Deferred</h3>
+<p><strong>Instruction:</strong> Activities the person does that are deliberately not on the map, and why. A map that lists everything is a list of activities; the argument is in what has been left off and what that defers.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="optional-and-variable-paths">Optional and Variable Paths</h3>
+<p><strong>Instruction:</strong> Where the sequence branches, and which branches are common and which are rare. A backbone drawn as a single line forces rare paths into the main flow, which is where most of the wasted work in a release comes from.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="the-slices">The Slices</h2>
+<h3 id="tasks-under-each-activity">Tasks Under Each Activity</h3>
+<p><strong>Instruction:</strong> One row per activity, with the specific steps of that activity. A step that serves no single activity is a horizontal layer, and a horizontal layer cannot be released on its own because no user can do anything useful with it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="slices-as-vertical-columns">Slices as Vertical Columns</h3>
+<p><strong>Instruction:</strong> Each column must be a usable increment: every activity in the backbone has something in it, and a user can complete the whole journey with only that column. This is the defining discipline of the method, and a map that fails it has produced a technical layering dressed as a story map.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="walking-skeleton">Walking Skeleton</h3>
+<p><strong>Instruction:</strong> The thinnest possible column, end to end, with the crudest workable implementation of every activity. Its purpose is to prove the integration rather than the features, and it is normally thrown away, which is the reason teams hesitate to build it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="slice-sizing-evidence">Slice Sizing Evidence</h3>
+<p><strong>Instruction:</strong> What shows each slice is small enough to deliver, such as a timeboxed trial or a measured manual run. An estimate is a claim about a slice nobody has tried, and the first slice is where the estimate is usually wrong.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="release-slicing">Release Slicing</h2>
+<h3 id="mvp-boundary">MVP Boundary</h3>
+<p><strong>Instruction:</strong> Which columns are in the first release and which are not, and the single outcome that release delivers. The boundary is drawn by whether a persona can achieve something they came for, not by what is most valuable or most nearly finished, and a release assembled from the easiest columns delivers nothing anyone wanted.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="outcome-of-the-first-release">Outcome of the First Release</h3>
+<p><strong>Instruction:</strong> What the persona is able to do after it that they could not do before, stated as a capability and not as a list of features. A release described by its features has no test for whether it succeeded, so its success is decided afterwards by whoever feels strongly about it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="validation-plan">Validation Plan</h3>
+<p><strong>Instruction:</strong> How the first release will be judged, against what, and by whom. Recorded before the release because a validation designed afterwards is a description of whatever was found.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="slices-deferred-beyond-mvp">Slices Deferred Beyond MVP</h3>
+<p><strong>Instruction:</strong> The columns not in the first release, with the reason for each. "Later" is not a reason; the reason is usually a dependency, a missing decision, or a risk too large for a first release.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="beyond-the-first-release">Beyond the First Release</h2>
+<h3 id="later-release-candidates">Later Release Candidates</h3>
+<p><strong>Instruction:</strong> Columns considered for subsequent releases, with their dependencies named. A candidate with an unnamed dependency is a wish, and a wish placed on a map is read as a commitment by whoever reads the map next.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="emergent-work-anticipated">Emergent Work Anticipated</h3>
+<p><strong>Instruction:</strong> Work the map does not contain because it has not been discovered yet, and how new items will be added. A map that claims to be complete invites the work to go somewhere unrecorded instead, which is where it is found later at the worst possible moment.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="explicitly-out-of-scope">Explicitly Out of Scope</h3>
+<p><strong>Instruction:</strong> What this product will not do, stated so it can be said out loud. This is the section that makes the map safe to publish, because an unstated exclusion is discovered by a user rather than by the team.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h2 id="map-quality-and-maintenance">Map Quality and Maintenance</h2>
+<h3 id="assumptions-and-unvalidated-beliefs">Assumptions and Unvalidated Beliefs</h3>
+<p><strong>Instruction:</strong> What the map takes on trust, and what would have to be true for it to hold. Every map rests on beliefs nobody has tested, and listing them is the only way to know which one to test first.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="risks-to-the-map">Risks to the Map</h3>
+<p><strong>Instruction:</strong> What would force the map to be redrawn, such as a change in regulation, a competitor's launch, or a finding that the real sequence differs. Recorded as triggers rather than as concerns, because a concern has no date and a trigger does.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="update-cadence-and-owners">Update Cadence and Owners</h3>
+<p><strong>Instruction:</strong> How often the map is revisited, when a change triggers a redraw, and who owns it. A map with no owner and no cadence is a picture of what was understood once, and it is still being shown to people as if it were current.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="traceability-to-backlog-and-release">Traceability to Backlog and Release</h3>
+<p><strong>Instruction:</strong> How a story on this map reaches the backlog, and what happens when a backlog item contradicts the map. The two are kept in step by a rule and a person, or they diverge quietly and the map stops describing the product.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<hr />
+          </div>
+        </div>
+
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
+
           <!-- Deliverable Header Card & Badge Row -->
           <div class="deliverable-header-card">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
@@ -1930,6 +2141,31 @@ A fully completed, gold-standard reference example illustrating this artifact in
           </a>
         </div>
       </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+
 
       <div class="footer-grid">
         <div>
