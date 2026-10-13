@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1009,7 +1100,7 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: en
@@ -1111,7 +1202,7 @@ A fully completed, gold-standard reference example illustrating this artifact in
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/en/04_Planning/04_Cost/03_Cost_Estimating_Worksheet/04_04_03_Cost_Estimating_Worksheet_Example.npy
@@ -1119,7 +1210,7 @@ token_count: 1519
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.219147+00:00'</p>
 <hr />
-<h1>Cost Estimating Worksheet (Reference Example)</h1>
+<h1 id="cost-estimating-worksheet-reference-example">Cost Estimating Worksheet (Reference Example)</h1>
 <blockquote>
 <p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-04.04</code>). All company names, project references, and figures are realistic fictional simulations.</p>
 </blockquote>
@@ -1145,7 +1236,7 @@ created_at: '2026-10-06T16:05:29.219147+00:00'</p>
 </tbody>
 </table>
 <hr />
-<h2>1. Labor and Staffing Cost Calculations</h2>
+<h2 id="1-labor-and-staffing-cost-calculations">1. Labor and Staffing Cost Calculations</h2>
 <p><strong>Role Title and Headcount:</strong>
 Preapproved Financial Resources &amp; Budget Envelope:
 * Total Approved Capital &amp; Operational Envelope: <strong>$3,500,000 USD</strong>, structured as:
@@ -1168,7 +1259,7 @@ Preapproved Financial Resources &amp; Budget Envelope:
   - Organizational Change Management &amp; User Enablement: $350,000 USD.
   - Management Contingency Reserve (10%): $350,000 USD.</p>
 <hr />
-<h2>2. Material and Equipment Cost Calculations</h2>
+<h2 id="2-material-and-equipment-cost-calculations">2. Material and Equipment Cost Calculations</h2>
 <p><strong>Material or Equipment Item Description:</strong>
 Preapproved Financial Resources &amp; Budget Envelope:
 * Total Approved Capital &amp; Operational Envelope: <strong>$3,500,000 USD</strong>, structured as:
@@ -1191,7 +1282,7 @@ Preapproved Financial Resources &amp; Budget Envelope:
   - Organizational Change Management &amp; User Enablement: $350,000 USD.
   - Management Contingency Reserve (10%): $350,000 USD.</p>
 <hr />
-<h2>3. Subcontractor and Vendor Cost Calculations</h2>
+<h2 id="3-subcontractor-and-vendor-cost-calculations">3. Subcontractor and Vendor Cost Calculations</h2>
 <p><strong>Contracted Service or Work Package:</strong>
 Preapproved Financial Resources &amp; Budget Envelope:
 * Total Approved Capital &amp; Operational Envelope: <strong>$3,500,000 USD</strong>, structured as:
@@ -1207,7 +1298,7 @@ Preapproved Financial Resources &amp; Budget Envelope:
   - Organizational Change Management &amp; User Enablement: $350,000 USD.
   - Management Contingency Reserve (10%): $350,000 USD.</p>
 <hr />
-<h2>4. Consolidated Cost Estimate Reconciliation</h2>
+<h2 id="4-consolidated-cost-estimate-reconciliation">4. Consolidated Cost Estimate Reconciliation</h2>
 <p><strong>Grand Total Base Estimate:</strong>
 Preapproved Financial Resources &amp; Budget Envelope:
 * Total Approved Capital &amp; Operational Envelope: <strong>$3,500,000 USD</strong>, structured as:
@@ -1223,7 +1314,7 @@ Preapproved Financial Resources &amp; Budget Envelope:
   - Organizational Change Management &amp; User Enablement: $350,000 USD.
   - Management Contingency Reserve (10%): $350,000 USD.</p>
 <hr />
-<h3>Sign-off and Approvals</h3>
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
 <table>
 <thead>
 <tr>
@@ -1391,6 +1482,7 @@ Preapproved Financial Resources &amp; Budget Envelope:
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1432,6 +1524,30 @@ Preapproved Financial Resources &amp; Budget Envelope:
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

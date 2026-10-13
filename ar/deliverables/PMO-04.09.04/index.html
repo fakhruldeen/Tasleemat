@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1042,7 +1133,7 @@ status: approved
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: ar
@@ -1056,25 +1147,25 @@ created_at: '2026-10-06T16:05:28.804237+00:00'
 form_id: PMO-04.09.04
 status: approved</p>
 <hr />
-<h2>دليل نماذج تسليمات</h2>
-<h1>المخرج: بيان العمل</h1>
+<h2 id="_1">دليل نماذج تسليمات</h2>
+<h1 id="_2">المخرج: بيان العمل</h1>
 <p><strong>مرجع الوثيقة:</strong> <code>PMO-04.09.04</code></p>
 <p>يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من <strong>بيان العمل</strong> واستخدامه
 بفعالية بما يتوافق مع إطار تسليمات.</p>
 <hr />
-<h3>1. مفهوم الوثيقة وطبيعتها</h3>
+<h3 id="1">1. مفهوم الوثيقة وطبيعتها</h3>
 <p>قسمان. الأول ما سيُسلَّم: الغرض والصلاحية التي خلفه، والنطاق، ومدة الأداء، والتسليمات مقابل تواريخها، والمعايير التي يجب أن يتحقق، ومعايير القبول التي يعتمد عليها المشتري لكل تسليم. والثاني ما يجعل هذه الشروط قائمة: الأدوار والمسؤوليات على كل جانب، وما يفترضه الطرفان ويعتمدان عليه، والمسار الذي يدخل منه تغيير إلى الوثيقة.</p>
 <hr />
-<h3>2. القيمة والأهمية الاستراتيجية</h3>
+<h3 id="2">2. القيمة والأهمية الاستراتيجية</h3>
 <p>لأن وثيقة تصف التسليمات دون أن تسمّي الصلاحية التي وافقت عليها ولا الآلية التي يمكن بها تغييرها ليست وثيقة عقد، بل عرض في المكان الخاطئ. وكل ما في بيان العمل يصعب بعد توقيعه: يُقرأ النطاق أوسع من ما كُتب، ويظهر افتراض على أنه غير قائم، ويحتاج أحدهم إلى جهد إضافي. والشرط يحسم من اتفق على ماذا، ومسار التغيير يقرر أين يصير هذا الجهد الإضافي حديثًا أو خلافًا. وحذفهما لا يجعل المشروع أبسط، بل يؤجل الخلافين إلى اللحظة مناسبا فيها</p>
 <hr />
-<h3>3. التوقيت ودواعي الإعداد والتحديث</h3>
+<h3 id="3">3. التوقيت ودواعي الإعداد والتحديث</h3>
 <p>مرة واحدة، قبل بدء العمل، ثم لا يُعدَّل إلا عبر مسار التغيير الذي تحدده الوثيقة نفسها. وليس سجلًّا حيًّا لما يجري، ذلك عمل سجل المشكلات وسجل التغييرات؛ فبيان العمل الذي يُعدَّل في مكانه يتوقف عن كونه ما اتُّفق عليه، الاحتفاظ بنسخة هو الغرض، إذ لا يستطيع أحد الطرفين أن يحركه في هدوء. ويُقرأ مرة أخرى عند الإغلاق، حيث لا يكون السؤال كيف سار العمل، بل هل ما تم تسليمه هو ما كُتب هنا.</p>
 <hr />
-<h3>4. الأدوار والمسؤوليات (RACI)</h3>
+<h3 id="4-raci">4. الأدوار والمسؤوليات (RACI)</h3>
 <p>يملكه مدير المشتريات، لأنه صاحب العقد والطرف الوحيد الذي يملك صلاحية الالتزام باسم المشتري، ويسند مدير المشروع بسياق الجدول الزمني والمتطلبات، حتى يكون النطاق الموصوف هو النطاق الذي يديره المشروع. ويمثّل العميل من يوقّع، لأن معايير القبول تُلزم العميل لا المورد، ومعيار لا وافق عليه العميل هو معيار يمكن للعميل أن يرفض عن تطبيقه حين يصعب عليه.</p>
 <hr />
-<h3>إرشادات التخصيص والمواءمة</h3>
+<h3 id="_3">إرشادات التخصيص والمواءمة</h3>
 <ul>
 <li>اكتب ما هو مستثنى. فالإغفال يُقرأ إدراجًا، ومعظم الخلاف على النطاق يبدأ من شيء لم يقله أحد.</li>
 <li>سمِّ المعيار ولا تصفه. المعايير المسمَّاة يمكن اختبارها ويمكن أن تفشل، أما وصف الممارسة الجيدة فلا يفشل، ولذلك لا يحسم شيئًا.</li>
@@ -1082,10 +1173,10 @@ status: approved</p>
 <li>سمِّ من يعتمد طلب التغيير. مسار تغيير بلا معتمد ليس ضبطًا، فالتغيير الأول يصير حديثًا، والثاني يصير خلافًا.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_4">المحاذاة والترابط المؤسسي</h3>
 <p>استراتيجية المشتريات، إذ هي التي تقرر ما يُشترى وبأي شروط، ووثيقة المتطلبات، حتى يكون النطاق الموصوف هنا هو النطاق الذي يديره المشروع، ومع طلب التغيير وسجل التغييرات، لأن مسار التغيير المكتوب هنا هو مسار تلك السجلات.</p>
 <hr />
-<h3>5. إرشادات تعبئة الحقول والبيانات</h3>
+<h3 id="5">5. إرشادات تعبئة الحقول والبيانات</h3>
 <p>لإتمام بيان العمل بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية استنادًا إلى
 سياق المشروع (مع التأكد من الرجوع إلى <code>parameters.md</code> للمتغيرات العامة):</p>
 <ul>
@@ -1100,7 +1191,7 @@ status: approved</p>
 <li><strong>إدارة التغيير:</strong> كيف يدخل تغيير في النطاق أو التسليمات أو التواريخ، ومن يوافق عليه، وماذا يحدث للسعر والتواريخ عند دخوله. ومسار تغيير بلا معتمد ليس ضبطًا: فالتغيير الأول يصير حديثًا، والثاني يصير خلافًا.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_5">المحاذاة والترابط المؤسسي</h3>
 <ul>
 <li><a href="04_09_04_بيان_العمل_(SOW)_قالب.md">📄 القالب القابل للطباعة (Markdown)</a></li>
 <li><a href="04_09_04_بيان_العمل_(SOW).md">🤖 موجّه التوليد الذكي</a></li>
@@ -1108,7 +1199,7 @@ status: approved</p>
 <li><a href="04_09_04_بيان_العمل_(SOW).csv">📈 البيانات الجدولية (CSV)</a></li>
 </ul>
 <hr />
-<h3>6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
+<h3 id="6">6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
 <p>يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:</p>
 <blockquote>
 <p>📖 <strong>النموذج التطبيقي المكتمل:</strong> <a href="../../../../../examples/ar/04_التخطيط/09_المشتريات/04_بيان_العمل_(SOW)/04_09_04_بيان_العمل_(SOW)_مثال.md">04_09_04_بيان_العمل_(SOW)_مثال.md</a></p>
@@ -1118,7 +1209,7 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /<em>tokens/examples/ar/04_التخطيط/09_المشتريات/04_بيان_العمل</em>(SOW)/04_09_04_بيان_العمل_(SOW)_مثال.npy
@@ -1366,6 +1457,7 @@ created_at: '2026-10-06T16:05:29.154240+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1407,6 +1499,30 @@ created_at: '2026-10-06T16:05:29.154240+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1000,7 +1091,7 @@ status: approved
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: ar
@@ -1082,7 +1173,7 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/ar/04_التخطيط/08_المخاطر/02_سجل_المخاطر/04_08_02_سجل_المخاطر_مثال.npy
@@ -1291,6 +1382,7 @@ created_at: '2026-10-06T16:05:29.156857+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1332,6 +1424,30 @@ created_at: '2026-10-06T16:05:29.156857+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

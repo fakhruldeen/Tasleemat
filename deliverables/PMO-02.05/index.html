@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1097,7 +1188,7 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: en
@@ -1242,7 +1333,7 @@ A fully completed, gold-standard reference example illustrating this artifact in
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/en/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet/02_05_AI_Model_Card_and_Fact_Sheet_Example.npy
@@ -1250,7 +1341,7 @@ token_count: 1806
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 <hr />
-<h1>AI Model Card and Fact Sheet (Reference Example)</h1>
+<h1 id="ai-model-card-and-fact-sheet-reference-example">AI Model Card and Fact Sheet (Reference Example)</h1>
 <blockquote>
 <p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-02.05</code>). All company names, project references, and figures are realistic fictional simulations.</p>
 </blockquote>
@@ -1276,7 +1367,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 </tbody>
 </table>
 <hr />
-<h2>1. Model Identification and Provenance</h2>
+<h2 id="1-model-identification-and-provenance">1. Model Identification and Provenance</h2>
 <p><strong>Model Name and Version:</strong> Apex Enterprise Cognitive Assistant Engine (AECA Engine v2.4)</p>
 <p><strong>Developer and Provenance:</strong> Apex Global Solutions AI &amp; Data Engineering Squad in partnership with Certified Cloud Partner</p>
 <p><strong>Architecture and Configuration:</strong> Transformer architecture augmented with Vector Retrieval (RAG) and private vector embeddings</p>
@@ -1284,7 +1375,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 <p><strong>Licence and Usage Terms:</strong> Proprietary Enterprise Commercial License restricted to Apex Global Solutions internal operations</p>
 <p><strong>Related Artefacts:</strong> Secured Cloud Model Registry Artifacts (v2.4 Production Baseline)</p>
 <hr />
-<h2>2. Intended Use and Out-of-Scope Use</h2>
+<h2 id="2-intended-use-and-out-of-scope-use">2. Intended Use and Out-of-Scope Use</h2>
 <!-- The task as an input and an output, what else it may be used for, what it must not be used for, who operates it and who it acts upon, and the conditions under which its metrics hold. -->
 
 <p><strong>Primary Use:</strong> Automated procurement purchase order matching, invoice data parsing, and predictive replenishment</p>
@@ -1294,7 +1385,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 <p><strong>Operating Conditions:</strong> Secured enterprise virtual private cloud (VPC) with latency SLA &lt; 800ms and 99.95% uptime</p>
 <p><strong>Human Oversight Requirement:</strong> Mandatory human-in-the-loop review for all financial transactions exceeding $15,000 USD or model confidence &lt; 90%</p>
 <hr />
-<h2>3. Training Data</h2>
+<h2 id="3-training-data">3. Training Data</h2>
 <!-- One row per dataset: what it is and who owns it, where it came from, whom and where it represents, when it covers, on what basis it may be used, what was done to it, and what it cannot represent. -->
 
 <table>
@@ -1340,7 +1431,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 </tbody>
 </table>
 <hr />
-<h2>4. Evaluation and Performance</h2>
+<h2 id="4-evaluation-and-performance">4. Evaluation and Performance</h2>
 <!-- One row per metric: what it is measured on, its value with the sample size behind it, the same figure for each affected group, the baseline it beats, the threshold in force, and what the method does not establish. -->
 
 <table>
@@ -1386,7 +1477,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 </tbody>
 </table>
 <hr />
-<h2>5. Ethical, Fairness and Safety Considerations</h2>
+<h2 id="5-ethical-fairness-and-safety-considerations">5. Ethical, Fairness and Safety Considerations</h2>
 <!-- One row per consideration: which group is affected, the specific way this model is unfair, the harm it could cause and its severity, how it could be misused, what it can reveal, and its resource cost. -->
 
 <table>
@@ -1424,7 +1515,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 </tbody>
 </table>
 <hr />
-<h2>6. Limitations, Monitoring and Change Control</h2>
+<h2 id="6-limitations-monitoring-and-change-control">6. Limitations, Monitoring and Change Control</h2>
 <p><strong>Known Limitations:</strong> Restricted to digital documents and invoices with minimum 300 DPI resolution in USD and SAR.</p>
 <p><strong>Out-of-Distribution Behaviour:</strong> Automatic safe fallback routing out-of-distribution inputs directly to human verification queues.</p>
 <p><strong>Production Monitoring:</strong> Real-time telemetry tracking inference latency, accuracy rates, and error anomalies via Grafana dashboards.</p>
@@ -1433,7 +1524,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
 <p><strong>Version Change Record:</strong> Version 2.4: Enhanced multi-page invoice entity extraction accuracy by 12% and optimized RAG embedding layer.</p>
 <p><strong>Decommissioning Plan:</strong> Maintain previous model release in warm standby for 6 months prior to permanent secure archival.</p>
 <hr />
-<h3>Sign-off and Approvals</h3>
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
 <table>
 <thead>
 <tr>
@@ -1775,6 +1866,7 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1816,6 +1908,30 @@ created_at: '2026-10-06T16:05:29.242774+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

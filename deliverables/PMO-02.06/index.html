@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1146,7 +1237,7 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: en
@@ -1353,7 +1444,7 @@ A fully completed, gold-standard reference example illustrating this artifact in
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/en/02_Project_Approach_and_Tailoring/06_Data_Privacy_and_Ethics_Assessment/02_06_Data_Privacy_and_Ethics_Assessment_Example.npy
@@ -1361,7 +1452,7 @@ token_count: 2204
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.241910+00:00'</p>
 <hr />
-<h1>Data Privacy and Ethics Assessment (Reference Example)</h1>
+<h1 id="data-privacy-and-ethics-assessment-reference-example">Data Privacy and Ethics Assessment (Reference Example)</h1>
 <blockquote>
 <p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-02.06</code>). All company names, project references, and figures are realistic fictional simulations.</p>
 </blockquote>
@@ -1386,7 +1477,7 @@ created_at: '2026-10-06T16:05:29.241910+00:00'</p>
 </tr>
 </tbody>
 </table>
-<h2>1. Scope, Data Inventory and Ownership</h2>
+<h2 id="1-scope-data-inventory-and-ownership">1. Scope, Data Inventory and Ownership</h2>
 <!-- What this assessment covers, what it does not, who owns and administers the data, what assets exist, and where the data moves. -->
 
 <p><strong>Assessment Scope:</strong> Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.</p>
@@ -1433,7 +1524,7 @@ created_at: '2026-10-06T16:05:29.241910+00:00'</p>
 </table>
 <p><strong>Data Flow and Recipients:</strong> Encrypted data transit (TLS 1.3) contained within private cloud VPC with zero unapproved third-party exposure.</p>
 <hr />
-<h2>2. Lawful Basis and Purpose Limitation</h2>
+<h2 id="2-lawful-basis-and-purpose-limitation">2. Lawful Basis and Purpose Limitation</h2>
 <!-- What each processing is for and why it needs the data it uses, the basis relied on per purpose, any use beyond the original purpose, and any decision made about a person automatically. -->
 
 <p><strong>Processing Purposes and Necessity:</strong> Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.</p>
@@ -1475,20 +1566,20 @@ created_at: '2026-10-06T16:05:29.241910+00:00'</p>
 <p><strong>Purpose Compatibility and Secondary Use:</strong> Operational synthesis reporting and preliminary compliance audit logs for operations management</p>
 <p><strong>Automated Decision-Making:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <hr />
-<h2>3. Consent and Transparency</h2>
+<h2 id="3-consent-and-transparency">3. Consent and Transparency</h2>
 <p><strong>Consent Mechanism:</strong> Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.</p>
 <p><strong>Consent Specificity and Granularity:</strong> Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.</p>
 <p><strong>Consent Recording and Evidence:</strong> Cryptographically signed, timestamped audit log of all user consent grants and revocations.</p>
 <p><strong>Withdrawal:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Privacy Notices and Just-in-Time Disclosure:</strong> End-to-end data encryption at rest and in transit adhering strictly to enterprise data privacy regulations</p>
 <hr />
-<h2>4. Individual Rights</h2>
+<h2 id="4-individual-rights">4. Individual Rights</h2>
 <p><strong>Rights Handling Process:</strong> Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.</p>
 <p><strong>Identity Verification:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Response Timeframes and Escalation:</strong> Active operational monitoring with rapid response workflows triggered upon threshold deviations.</p>
 <p><strong>Rights Over Derived, Shared and Retired Data:</strong> Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.</p>
 <hr />
-<h2>5. Retention, Security and Sharing</h2>
+<h2 id="5-retention-security-and-sharing">5. Retention, Security and Sharing</h2>
 <p><strong>Retention Schedule:</strong></p>
 <table>
 <thead>
@@ -1566,14 +1657,14 @@ created_at: '2026-10-06T16:05:29.241910+00:00'</p>
 <p><strong>Cross-Border Transfers:</strong> All sensitive data residency strictly maintained within authorized in-country sovereign cloud regions.</p>
 <p><strong>Breach Notification:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <hr />
-<h2>6. Ethics Beyond Compliance</h2>
+<h2 id="6-ethics-beyond-compliance">6. Ethics Beyond Compliance</h2>
 <p><strong>Harm Beyond Legal Exposure:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Vulnerable Individuals and Groups:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Transparency to Affected People:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Manipulation, Dark Patterns and Consent Fatigue:</strong> Full adherence to enterprise data privacy regulations, bias prevention protocols, and transparent audit trails.</p>
 <p><strong>Fairness of Automated Decisions:</strong> Enterprise cloud-hosted ML pipeline trained on historical operations and authorized for internal use.</p>
 <hr />
-<h2>7. Findings, Remediation and Review</h2>
+<h2 id="7-findings-remediation-and-review">7. Findings, Remediation and Review</h2>
 <!-- What was found, the risk remaining after the planned actions, what happens in the meantime, and what would cause this assessment to be reopened. -->
 
 <p><strong>Findings Register:</strong></p>
@@ -1616,7 +1707,7 @@ created_at: '2026-10-06T16:05:29.241910+00:00'</p>
 <p><strong>Review Triggers:</strong> Active operational monitoring with rapid response workflows triggered upon threshold deviations.</p>
 <p><strong>Reassessment Triggers:</strong> Scope baseline shift &gt; 10%, schedule slip &gt; 2 weeks, or regulatory framework modifications.</p>
 <hr />
-<h3>Sign-off and Approvals</h3>
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
 <table>
 <thead>
 <tr>
@@ -1940,6 +2031,7 @@ created_at: '2026-10-06T16:05:29.241910+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1981,6 +2073,30 @@ created_at: '2026-10-06T16:05:29.241910+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

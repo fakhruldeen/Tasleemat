@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1006,7 +1097,7 @@ status: approved
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: ar
@@ -1020,35 +1111,35 @@ created_at: '2026-10-06T16:05:28.747894+00:00'
 form_id: PMO-05.09
 status: approved</p>
 <hr />
-<h2>دليل نماذج تسليمات</h2>
-<h1>المخرج: سجل مكتبة الأوامر</h1>
+<h2 id="_1">دليل نماذج تسليمات</h2>
+<h1 id="_2">المخرج: سجل مكتبة الأوامر</h1>
 <p><strong>مرجع الوثيقة:</strong> <code>PMO-05.09</code></p>
 <p>يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من <strong>سجل مكتبة الأوامر</strong> واستخدامه
 بفعالية بما يتوافق مع إطار تسليمات.</p>
 <hr />
-<h3>1. مفهوم الوثيقة وطبيعتها</h3>
+<h3 id="1">1. مفهوم الوثيقة وطبيعتها</h3>
 <p>سجل مركزي لإدارة وتوثيق مكتبة الأوامر والنماذج التوجيهية للذكاء الاصطناعي، يوثق لكل أمر: المعرف الفريد، وحالة الاستخدام المستهدفة، والصيغة النصية الدقيقة للأمر، ومعايير جودة الاستجابة المتوقعة، والإصدار والحالة التي يحملها. وعمود النص هو الذي يقرر السجل صالحًا للاستعمال: الأمر المسجَّل وصفًا لا بد من إعادة كتابته قبل استعماله.</p>
 <hr />
-<h3>2. القيمة والأهمية الاستراتيجية</h3>
+<h3 id="2">2. القيمة والأهمية الاستراتيجية</h3>
 <p>لأن الأوامر تُكتب مرارًا ولا تُذكر نادرًا، وكلفة الأمر الخاطئ تُدفع في مراجعة ما أنتجه. والمكتبة تحوّل هذه الكلفة إلى بحث. وهي أيضًا تحوّل حكمًا فرديًا إلى حكم مشترك: الأمر الذي يستعمله اثنان يتحسن بما لا يتحسن به عادة أحدهما، وعمود المخرج المتوقع هو ما يسمح للفريق بأن يقول إن التحسين قد وقع.</p>
 <hr />
-<h3>3. التوقيت ودواعي الإعداد والتحديث</h3>
+<h3 id="3">3. التوقيت ودواعي الإعداد والتحديث</h3>
 <p>يُكتب حين يستعمل أحد أمرًا فيُحتفظ به، ويُعدَّل كلما تغيّر الأمر نفسه. والإصدار مكانه في المدخل الأول لا في ما بعده، لأن أمرًا بُدّل دون رقم إصدار يترك كل نتيجة سابقة بلا نص يصفها.</p>
 <hr />
-<h3>4. الأدوار والمسؤوليات (RACI)</h3>
+<h3 id="4-raci">4. الأدوار والمسؤوليات (RACI)</h3>
 <p>يحتفظ به من يستعمل الأوامر، وهو على مشروع فيه ذكاء اصطناعي الفريق لا مالك واحد. ويوقّعه مسؤول الذكاء الاصطناعي لأن ذلك الدور هو ما تُسحب منه الأوامر وهناك يُلاحظ التي لا تفيد. ويوقّعه مسؤول حماية البيانات لأن الأمر هو الإطار الحاكم الذي تدخل فيه البيانات الشخصية أكثر من غيره دون أن يُلاحظ.</p>
 <hr />
-<h3>إرشادات التخصيص والمواءمة</h3>
+<h3 id="_3">إرشادات التخصيص والمواءمة</h3>
 <ul>
 <li>سجّل الأمر لا تاريخه. المكتبة تُقرأ تحت ضغط الوقت، والأمر الذي يُدخل معه فقرة في التعليل لا يفتحه أحد.</li>
 <li>اكتب المخرج المتوقع قبل استعمال الأمر. تحديد ما يبدو عليه الرد الجيد بعد رؤية الرد ليس معيارًا بل وصف.</li>
 <li>أسقط ما لا ينفع. الأمر الذي استُخدم ولم ينفع هو أنفع سطر في السجل، ما دام موسومًا كذلك لا محذوفًا.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_4">المحاذاة والترابط المؤسسي</h3>
 <p>خطة حوكمة الذكاء الاصطناعي، وتقييم جاهزية الذكاء الاصطناعي، وبطاقة النموذج، لأن الأمر الذي يسمّي نموذجًا لا يُعاد استخدامه إلا ما دام ذلك النموذج مستخدمًا.</p>
 <hr />
-<h3>5. إرشادات تعبئة الحقول والبيانات</h3>
+<h3 id="5">5. إرشادات تعبئة الحقول والبيانات</h3>
 <p>لإتمام سجل مكتبة الأوامر بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية استنادًا إلى
 سياق المشروع (مع التأكد من الرجوع إلى <code>parameters.md</code> للمتغيرات العامة):</p>
 <ul>
@@ -1059,7 +1150,7 @@ status: approved</p>
 <li><strong>الحالة والإصدار:</strong> أين يقف الأمر الآن، ونسخته الحالية. والأمر الذي يُعدَّل من غير أن يتحرك الإصدار يترك كل نتيجة سابقة بلا نص يصفها.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_5">المحاذاة والترابط المؤسسي</h3>
 <ul>
 <li><a href="05_09_سجل_مكتبة_الأوامر_(Prompts)_قالب.md">📄 القالب القابل للطباعة (Markdown)</a></li>
 <li><a href="05_09_سجل_مكتبة_الأوامر_(Prompts).md">🤖 موجّه التوليد الذكي</a></li>
@@ -1067,7 +1158,7 @@ status: approved</p>
 <li><a href="05_09_سجل_مكتبة_الأوامر_(Prompts).csv">📈 البيانات الجدولية (CSV)</a></li>
 </ul>
 <hr />
-<h3>6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
+<h3 id="6">6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
 <p>يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:</p>
 <blockquote>
 <p>📖 <strong>النموذج التطبيقي المكتمل:</strong> <a href="../../../../examples/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر_(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.md">05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.md</a></p>
@@ -1077,7 +1168,7 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /<em>tokens/examples/ar/05_التنفيذ/09_سجل_مكتبة_الأوامر</em>(Prompts)/05_09_سجل_مكتبة_الأوامر_(Prompts)_مثال.npy
@@ -1223,6 +1314,7 @@ created_at: '2026-10-06T16:05:29.128967+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1264,6 +1356,30 @@ created_at: '2026-10-06T16:05:29.128967+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

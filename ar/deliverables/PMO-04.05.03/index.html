@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -997,7 +1088,7 @@ status: approved
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: ar
@@ -1011,35 +1102,35 @@ created_at: '2026-10-06T16:05:28.821884+00:00'
 form_id: PMO-04.05.03
 status: approved</p>
 <hr />
-<h2>دليل نماذج تسليمات</h2>
-<h1>المخرج: تعريف الجاهزية والاكتمال</h1>
+<h2 id="_1">دليل نماذج تسليمات</h2>
+<h1 id="_2">المخرج: تعريف الجاهزية والاكتمال</h1>
 <p><strong>مرجع الوثيقة:</strong> <code>PMO-04.05.03</code></p>
 <p>يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من <strong>تعريف الجاهزية والاكتمال</strong> واستخدامه
 بفعالية بما يتوافق مع إطار تسليمات.</p>
 <hr />
-<h3>1. مفهوم الوثيقة وطبيعتها</h3>
+<h3 id="1">1. مفهوم الوثيقة وطبيعتها</h3>
 <p>قائمتان لا جدول، لأن كل بند لا معنى له إلا داخل المجموعة: فريق يستوفي معظم البنود لم يستوفِ معيارًا أقل، بل لم يستوفِه أصلًا. وقائمة الجاهزية تبين ما يجب أن يستوفيه العمل قبل أن يبدأه الفريق، وقائمة الاكتمال تبين ما يجب أن يتحقق قبل أن يوصف العمل بأنه انتهى، وكل بند مكتوب بحيث يتحقق منه غير كاتبه.</p>
 <hr />
-<h3>2. القيمة والأهمية الاستراتيجية</h3>
+<h3 id="2">2. القيمة والأهمية الاستراتيجية</h3>
 <p>لأن البديل أسوأ. فريق بلا تعريف جاهزية يكتشف في منتصف دورة التطوير أن متطلبًا غامض، وفريق بلا تعريف اكتمال يكتشف عند القبول أن نصف العمل لم يُختبر. والفشلان يكتشفان متأخرين، وكلفة هذا الاكتشاف باهظة، ولا يعمل على تفاديهما إلا كتابة الشروط قبل العمل لا بعده.</p>
 <hr />
-<h3>3. التوقيت ودواعي الإعداد والتحديث</h3>
+<h3 id="3">3. التوقيت ودواعي الإعداد والتحديث</h3>
 <p>مرة واحدة، في أول عمل الفريق، ثم لا يُعدَّل إلا حين يستطيع الفريق أن يقول أي معيار لم يعد نافعًا. وليس مستندًا لكل دورة، ولا يُملأ عن كل بند. والتعديل نفسه حدث يستحق التسجيل، فالمعيار الذي يتغير بهدوء هو معيار لا يعرف أحد أنه يُقاس عليه، وأول ذلك أن يُسلَّم عملٌ على النسخة السابقة.</p>
 <hr />
-<h3>4. الأدوار والمسؤوليات (RACI)</h3>
+<h3 id="4-raci">4. الأدوار والمسؤوليات (RACI)</h3>
 <p>يتفق عليه الفريق، وهو الترتيب الوحيد الذي ينتج معيارًا سيطبقه بعضهم على بعض، ويوقّعه مالك المنتج وقائد الفريق لأنهما أكثر من يشعر بتكلفة هذا المعيار: مالك المنتج حين تُستخدم معايير الجاهزية لتأخير قائمة العمل، وقائد الفريق حين يُطبَّق تعريف الاكتمال في آخر الأسبوع. وتوقيع مدير الجودة موجود لأن تعريف الاكتمال في معظمه عن الاختبار، ويجب أن يؤكده من لا يملك سلطانًا على العمل.</p>
 <hr />
-<h3>إرشادات التخصيص والمواءمة</h3>
+<h3 id="_3">إرشادات التخصيص والمواءمة</h3>
 <ul>
 <li>أبقِ تعريف الجاهزية قصيرًا، فهو السبب الوحيد الذي يمكن للفريق أن يرفض به عملًا، والمعيار الذي لا يُحقق يُتجاوز.</li>
 <li>اكتب تعريف الاكتمال مرة واحدة وطبقه دون إعادة تفاوض. فالاستثناء المبرر يُسجَّل في سجل الاستثناءات، لأن التعريف الذي يُعاد كتابته في هدوء لا يمكن لأحد أن يحاسب عليه أحد.</li>
 <li>اجعل كل بند يتحقق منه شخص غير كاتبه. فالتعريفان عن الدليل، وحين لا يكون التأكيد إلا من كتبه، يتحول البند إلى قول بالثقة لا إلى معيار.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_4">المحاذاة والترابط المؤسسي</h3>
 <p>سجل تقدير الفريق، حتى يعكس تعريف الجاهزية الممارسة لا النيّة، ومراجعة الفريق، حيث يُبلَّغ عن معيار يُتجاوز بدل أن يُسقط في هدوء، وعملية إدارة التغييرات، إذ التغيير غير المختبَر هو الحالة التي وُجد تعريف الاكتمال لالتقاطها.</p>
 <hr />
-<h3>5. إرشادات تعبئة الحقول والبيانات</h3>
+<h3 id="5">5. إرشادات تعبئة الحقول والبيانات</h3>
 <p>لإتمام تعريف الجاهزية والاكتمال بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية استنادًا إلى
 سياق المشروع (مع التأكد من الرجوع إلى <code>parameters.md</code> للمتغيرات العامة):</p>
 <ul>
@@ -1047,7 +1138,7 @@ status: approved</p>
 <li><strong>تعريف الاكتمال:</strong> ما يجب أن يتحقق قبل أن يوصف العمل بأنه انتهى، مكتوبًا بحيث يؤكده غير من كتب التغيير: تمت مراجعة التغيير، والاختبارات موجودة وناجحة، والتوثيق يتبع التغيير، ومعايير القبول محققة. وهذا هو التعريف الذي يتراجع، لأن كل عمل قُدِّم باستثناء تراجع معه، ولا شيء يمنع أن يصير الاستثناء قاعدة. يُكتب مرة واحدة ويُطبَّق دون إعادة تفاوض، والاستثناء المبرر يُسجَّل ولا يعود إلى التعريف.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_5">المحاذاة والترابط المؤسسي</h3>
 <ul>
 <li><a href="04_05_03_تعريف_الجاهزية_والاكتمال_قالب.md">📄 القالب القابل للطباعة (Markdown)</a></li>
 <li><a href="04_05_03_تعريف_الجاهزية_والاكتمال.md">🤖 موجّه التوليد الذكي</a></li>
@@ -1055,7 +1146,7 @@ status: approved</p>
 <li><a href="04_05_03_تعريف_الجاهزية_والاكتمال.csv">📈 البيانات الجدولية (CSV)</a></li>
 </ul>
 <hr />
-<h3>6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
+<h3 id="6">6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
 <p>يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:</p>
 <blockquote>
 <p>📖 <strong>النموذج التطبيقي المكتمل:</strong> <a href="../../../../../examples/ar/04_التخطيط/05_الجودة/03_تعريف_الجاهزية_والاكتمال/04_05_03_تعريف_الجاهزية_والاكتمال_مثال.md">04_05_03_تعريف_الجاهزية_والاكتمال_مثال.md</a></p>
@@ -1065,7 +1156,7 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/ar/04_التخطيط/05_الجودة/03_تعريف_الجاهزية_والاكتمال/04_05_03_تعريف_الجاهزية_والاكتمال_مثال.npy
@@ -1197,6 +1288,7 @@ created_at: '2026-10-06T16:05:29.161733+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1238,6 +1330,30 @@ created_at: '2026-10-06T16:05:29.161733+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -980,7 +1071,7 @@ status: approved
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: en
@@ -1059,10 +1150,10 @@ A fully completed, gold-standard reference example illustrating this artifact in
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
-<h2>type: Example</h2>
-<h1>Executive Steering Committee Dashboard (Reference Example)</h1>
+<h2 id="type-example">type: Example</h2>
+<h1 id="executive-steering-committee-dashboard-reference-example">Executive Steering Committee Dashboard (Reference Example)</h1>
 <blockquote>
 <p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (). All company names, project references, and figures are realistic fictional simulations.</p>
 </blockquote>
@@ -1088,23 +1179,23 @@ A fully completed, gold-standard reference example illustrating this artifact in
 </tbody>
 </table>
 <hr />
-<h2>1. Executive Health &amp; Baseline Indicators</h2>
+<h2 id="1-executive-health-baseline-indicators">1. Executive Health &amp; Baseline Indicators</h2>
 <p><strong>Executive Summary and Overall Health RAG:</strong>
 Apex Enterprise Baseline: Verified operational compliance for executive summary and overall health rag. Detailed analysis, SLA criteria, and execution metrics have been comprehensively documented and aligned with PMO delivery governance standards.</p>
 <p><strong>Baseline Variance Summary Schedule Cost Scope:</strong>
 Apex Enterprise Baseline: Verified operational compliance for baseline variance summary schedule cost scope. Detailed analysis, SLA criteria, and execution metrics have been comprehensively documented and aligned with PMO delivery governance standards.</p>
 <hr />
-<h2>2. Strategic Milestones &amp; Resource Health</h2>
+<h2 id="2-strategic-milestones-resource-health">2. Strategic Milestones &amp; Resource Health</h2>
 <p><strong>Key Milestone Roadmap and Forecast Dates:</strong>
 Apex Enterprise Baseline: Verified operational compliance for key milestone roadmap and forecast dates. Detailed analysis, SLA criteria, and execution metrics have been comprehensively documented and aligned with PMO delivery governance standards.</p>
 <hr />
-<h2>3. Risks, Decisions &amp; Leadership Actions</h2>
+<h2 id="3-risks-decisions-leadership-actions">3. Risks, Decisions &amp; Leadership Actions</h2>
 <p><strong>Top Three Strategic Risks and Mitigations:</strong>
 Apex Enterprise Baseline: Verified operational compliance for top three strategic risks and mitigations. Detailed analysis, SLA criteria, and execution metrics have been comprehensively documented and aligned with PMO delivery governance standards.</p>
 <p><strong>Required Steering Committee Decisions and Guidance:</strong>
 Apex Enterprise Baseline: Verified operational compliance for required steering committee decisions and guidance. Detailed analysis, SLA criteria, and execution metrics have been comprehensively documented and aligned with PMO delivery governance standards.</p>
 <hr />
-<h3>Sign-off and Approvals</h3>
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
 <table>
 <thead>
 <tr>
@@ -1237,6 +1328,7 @@ Apex Enterprise Baseline: Verified operational compliance for required steering 
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1278,6 +1370,30 @@ Apex Enterprise Baseline: Verified operational compliance for required steering 
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

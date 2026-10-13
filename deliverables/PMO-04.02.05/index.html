@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1014,7 +1105,7 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: en
@@ -1115,7 +1206,7 @@ A fully completed, gold-standard reference example illustrating this artifact in
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/en/04_Planning/02_Scope/05_Project_Scope_Statement/04_02_05_Project_Scope_Statement_Example.npy
@@ -1123,7 +1214,7 @@ token_count: 1353
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.214514+00:00'</p>
 <hr />
-<h1>Project Scope Statement (Reference Example)</h1>
+<h1 id="project-scope-statement-reference-example">Project Scope Statement (Reference Example)</h1>
 <blockquote>
 <p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-04.02</code>). All company names, project references, and figures are realistic fictional simulations.</p>
 </blockquote>
@@ -1149,7 +1240,7 @@ created_at: '2026-10-06T16:05:29.214514+00:00'</p>
 </tbody>
 </table>
 <hr />
-<h2>1. Project Scope Description</h2>
+<h2 id="1-project-scope-description">1. Project Scope Description</h2>
 <p><strong>Detailed Project Scope Description:</strong>
 The project encompasses the end-to-end implementation and rollout of a unified cloud ERP suite comprising:
 1. Automated Procurement, Inventory Management, and Smart Supply Chain logistics.
@@ -1165,7 +1256,7 @@ The project encompasses the end-to-end implementation and rollout of a unified c
 4. Secure enterprise API integration middleware connecting CRM, BI, and banking gateways.
 5. Real-time executive dashboards and predictive operational analytics engines.</p>
 <hr />
-<h2>2. Project Deliverables</h2>
+<h2 id="2-project-deliverables">2. Project Deliverables</h2>
 <p><strong>Core Product Deliverables:</strong>
 Key Project Deliverables:
 * Detailed Solution Architecture &amp; Data Integration Blueprint.
@@ -1181,7 +1272,7 @@ Key Project Deliverables:
 * Comprehensive training curriculum delivered to 450+ business users and functional admins.
 * User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.</p>
 <hr />
-<h2>3. Product Acceptance Criteria</h2>
+<h2 id="3-product-acceptance-criteria">3. Product Acceptance Criteria</h2>
 <p><strong>Measurable Acceptance Criteria:</strong>
 Key Project Deliverables:
 * Detailed Solution Architecture &amp; Data Integration Blueprint.
@@ -1197,7 +1288,7 @@ Key Project Deliverables:
 * Comprehensive training curriculum delivered to 450+ business users and functional admins.
 * User Acceptance Testing (UAT) sign-off certificates and Operational Handover dossier.</p>
 <hr />
-<h2>4. Project Exclusions</h2>
+<h2 id="4-project-exclusions">4. Project Exclusions</h2>
 <p><strong>Explicit Out-of-Scope Items:</strong>
 Scope Boundaries &amp; Exclusions:
 * <strong>In-Scope:</strong> Corporate headquarters, regional business units, distribution fulfillment centers, and cloud infrastructure.
@@ -1209,7 +1300,7 @@ Scope Boundaries &amp; Exclusions:
 * <strong>Out-of-Scope:</strong> Hardware replacement for physical POS terminals at retail kiosks (deferred to Phase 2).
 * <strong>Exclusions:</strong> On-premise server acquisitions; legacy custom code maintenance beyond the migration period.</p>
 <hr />
-<h2>5. Project Constraints and Assumptions</h2>
+<h2 id="5-project-constraints-and-assumptions">5. Project Constraints and Assumptions</h2>
 <p><strong>Identified Project Constraints:</strong>
 Assumptions and Constraints:
 * <strong>Assumptions:</strong> Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
@@ -1219,7 +1310,7 @@ Assumptions and Constraints:
 * <strong>Assumptions:</strong> Subject matter experts (SMEs) are allocated at 25% dedicated capacity during Sprint cycles; external vendor API schemas remain stable.
 * <strong>Constraints:</strong> Hard completion deadline prior to Q4 fiscal year close; pre-approved budget limit of $3.5M USD; mandatory adherence to corporate data protection guidelines.</p>
 <hr />
-<h3>Sign-off and Approvals</h3>
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
 <table>
 <thead>
 <tr>
@@ -1387,6 +1478,7 @@ Assumptions and Constraints:
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1428,6 +1520,30 @@ Assumptions and Constraints:
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

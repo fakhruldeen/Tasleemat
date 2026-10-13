@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1024,7 +1115,7 @@ status: approved
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: ar
@@ -1038,25 +1129,25 @@ created_at: '2026-10-06T16:05:28.772680+00:00'
 form_id: PMO-04.11.01
 status: approved</p>
 <hr />
-<h2>دليل نماذج تسليمات</h2>
-<h1>المخرج: استراتيجية وخطة إدارة التغيير المؤسسي</h1>
+<h2 id="_1">دليل نماذج تسليمات</h2>
+<h1 id="_2">المخرج: استراتيجية وخطة إدارة التغيير المؤسسي</h1>
 <p><strong>مرجع الوثيقة:</strong> <code>PMO-04.11.01</code></p>
 <p>يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من <strong>استراتيجية وخطة إدارة التغيير المؤسسي</strong> واستخدامه
 بفعالية بما يتوافق مع إطار تسليمات.</p>
 <hr />
-<h3>1. مفهوم الوثيقة وطبيعتها</h3>
+<h3 id="1">1. مفهوم الوثيقة وطبيعتها</h3>
 <p>قسمان. الأول استراتيجية التغيير والأثر: ويتضمن رؤية التغيير والحالة المستقبلية، وتحليل أثر التغيير على مختلف الفرق، واستراتيجية رعاية القيادة. والثاني التهيئة والتبني: ويشمل وسائل التواصل والتفاعل، وإدارة ومعالجة الاعتراضات، ومعايير تقييم الجاهزية وآليات التعزيز المستمر.</p>
 <hr />
-<h3>2. القيمة والأهمية الاستراتيجية</h3>
+<h3 id="2">2. القيمة والأهمية الاستراتيجية</h3>
 <p>لأن التسليم الفني دون تبني حقيقي لا يحقق قيمة المشروع. فكثير من المشاريع تقدم أنظمة مكتملة لكنها تفشل في تحقيق أهدافها بسبب ضعف استخدام الفرق للنظام المقدم. وخطة إدارة التغيير تعالج مخاوف المعنيين وتوفر المساعدة اللازمة لضمان تحول سلس ومستمر.</p>
 <hr />
-<h3>3. التوقيت ودواعي الإعداد والتحديث</h3>
+<h3 id="3">3. التوقيت ودواعي الإعداد والتحديث</h3>
 <p>تبدأ في مرحلة التخطيط بالتوازي مع خطة إدارة المشروع، وتُحدث مع اتضاح تفاصيل النطاق والتصميم، وتُنفذ خلال مراحل التطوير والإطلاق وما بعد التسليم. وتُراجع في المعالم الرئيسية للمشروع.</p>
 <hr />
-<h3>4. الأدوار والمسؤوليات (RACI)</h3>
+<h3 id="4-raci">4. الأدوار والمسؤوليات (RACI)</h3>
 <p>يملكها مدير التغيير أو مدير المشروع بالتعاون مع راعي المشروع ومجموعات العمل المعنية. ويعتمدها راعي المشروع لتأكيد التزام القيادة برعاية مبادرات التغيير ومساعدتها.</p>
 <hr />
-<h3>إرشادات التخصيص والمواءمة</h3>
+<h3 id="_3">إرشادات التخصيص والمواءمة</h3>
 <ul>
 <li>اهتم بالأفراد وسلوكهم، فالنجاح الحقيقي يقاس بمدى التبني والاستخدام الفعلي.</li>
 <li>يجب تأكيد وجود رعاية محددة من القيادة لمساعدة التغيير والتواصل المباشر مع الفرق.</li>
@@ -1064,10 +1155,10 @@ status: approved</p>
 <li>تابع قياس مستوى الاستخدام بعد الإطلاق لضمان ثبات الممارسات الجديدة واستمرارها.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_4">المحاذاة والترابط المؤسسي</h3>
 <p>يجب أن تتسق خطة إدارة التغيير مع خطة إدارة المشروع لربط مراحل التغيير مع الإطلاق الفني، ومع خطة إدارة الاتصالات لتوحيد معلومات التغيير، ومع سجل المخاطر لإدارة المخاطر المرتبطة بالتبني ومسار العمل.</p>
 <hr />
-<h3>5. إرشادات تعبئة الحقول والبيانات</h3>
+<h3 id="5">5. إرشادات تعبئة الحقول والبيانات</h3>
 <p>لإتمام استراتيجية وخطة إدارة التغيير المؤسسي بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية استنادًا إلى
 سياق المشروع (مع التأكد من الرجوع إلى <code>parameters.md</code> للمتغيرات العامة):</p>
 <ul>
@@ -1079,7 +1170,7 @@ status: approved</p>
 <li><strong>الجاهزية والتعزيز:</strong> معايير قياس جاهزية المنظمة قبل الإطلاق الفعلي، وآليات التعزيز والتقدير لضمان استمرار الممارسات الجديدة وتثبيتها.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_5">المحاذاة والترابط المؤسسي</h3>
 <ul>
 <li><a href="04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_قالب.md">📄 القالب القابل للطباعة (Markdown)</a></li>
 <li><a href="04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي.md">🤖 موجّه التوليد الذكي</a></li>
@@ -1087,7 +1178,7 @@ status: approved</p>
 <li><a href="04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي.csv">📈 البيانات الجدولية (CSV)</a></li>
 </ul>
 <hr />
-<h3>6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
+<h3 id="6">6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
 <p>يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:</p>
 <blockquote>
 <p>📖 <strong>النموذج التطبيقي المكتمل:</strong> <a href="../../../../../examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_مثال.md">04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_مثال.md</a></p>
@@ -1097,7 +1188,7 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/ar/04_التخطيط/11_إدارة_التغيير_المؤسسي/01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي/04_11_01_استراتيجية_وخطة_إدارة_التغيير_المؤسسي_مثال.npy
@@ -1282,6 +1373,7 @@ created_at: '2026-10-06T16:05:29.140943+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1323,6 +1415,30 @@ created_at: '2026-10-06T16:05:29.140943+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -996,7 +1087,7 @@ hruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: ar
@@ -1010,35 +1101,35 @@ created_at: '2026-10-06T16:05:28.868760+00:00'
 form_id: PMO-06.09
 status: approved</p>
 <hr />
-<h2>دليل نماذج تسليمات</h2>
-<h1>المخرج: بطاقة أداء المورد</h1>
+<h2 id="_1">دليل نماذج تسليمات</h2>
+<h1 id="_2">المخرج: بطاقة أداء المورد</h1>
 <p><strong>مرجع الوثيقة:</strong> <code>PMO-06.09</code></p>
 <p>يوفّر هذا المستند مرجعًا مهنيًا شاملًا لفهم الغرض من <strong>بطاقة أداء المورد</strong> واستخدامه
 بفعالية بما يتوافق مع إطار تسليمات.</p>
 <hr />
-<h3>1. مفهوم الوثيقة وطبيعتها</h3>
+<h3 id="1">1. مفهوم الوثيقة وطبيعتها</h3>
 <p>جدول للمقاييس التي يتابعها المشروع لمورد واحد، صفًّا لكل مقياس: المقياس مسمّىً بحيث يعرفه الطرفان، والدرجة المتفق عليها للفترة، والدرجة التي قِيست فعلًا مع طريقة قياسها، والفارق بين الدرجة المتفق عليها والدرجة التي قِيست، والإجراء التصحيحي باسم من يقوم به وتاريخه عند النقص.</p>
 <hr />
-<h3>2. القيمة والأهمية الاستراتيجية</h3>
+<h3 id="2">2. القيمة والأهمية الاستراتيجية</h3>
 <p>لأن الدرجة التي لا يقف خلفها هدف متفق عليه لا يمكن الجدال فيها من أي طرف. فيرى المورد أنها جيدة، والمشروع يراها مقبولة، ولا شيء في المستند يحسم الخلاف. والاتفاق على الهدف قبلًا هو ما يحوّل النموذج من سجل رأي إلى أساس قرار، وهو أيضًا ما يجعل حساب التباين ذا معنى.</p>
 <hr />
-<h3>3. التوقيت ودواعي الإعداد والتحديث</h3>
+<h3 id="3">3. التوقيت ودواعي الإعداد والتحديث</h3>
 <p>مرة في كل فترة لكل مورد، ويُحفظ ولا يُستبدل، لأن الفترة الواحدة لا تقول شيئًا تقريبًا، والاتجاه هو ما يكشف موردًا ينحرف. ويراجعه من يملك العقد، ويُقرأ من جديد عند الإغلاق، حيث السؤال ليس كيف كان الربع الذي سبق بل هل يُختار المورد مرة أخرى.</p>
 <hr />
-<h3>4. الأدوار والمسؤوليات (RACI)</h3>
+<h3 id="4-raci">4. الأدوار والمسؤوليات (RACI)</h3>
 <p>يملكها مدير المشتريات، الذي يملك العقد وهو الطرف الوحيد الذي له أن يتصرف على أساس ما تُظهره الأرقام، ويأتيه مدير المشروع بسياق الجدول والجودة، ومن هذا السياق تأتي المقاييس. ويوقّع السجل ممثل المورد، وهذا التوقيع ذو قيمة لأنه يعني أن الطرفين يعملان من الأرقام نفسها لا من رواية مختلفة للفترة نفسها.</p>
 <hr />
-<h3>إرشادات التخصيص والمواءمة</h3>
+<h3 id="_3">إرشادات التخصيص والمواءمة</h3>
 <ul>
 <li>اتفق على الدرجة المستهدفة قبل أن تبدأ الفترة. فكل درجة مكتوبة بعد ذلك هي وصف لما وقع، وعمود التباين يحسب عندها فارقًا بين النتيجة ونها نفسها.</li>
 <li>اذكر طريقة القياس مع الدرجة. فالرقم الذي تغيّرت طريقة قياسه من فترة إلى أخرى لا يُقارن برقم كانت طريقة قياسه واحدة، والمقارنة هي سبب وجود الرقم.</li>
 <li>اكتب إجراءً تصحيحيًا عند النقص فقط، وسمِّ من يقوم به. فالتباين الذي لا جواب له يُسجَّل من جديد في الفترة التالية، إذ لم يتغير بينهما إلا الرقم.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_4">المحاذاة والترابط المؤسسي</h3>
 <p>العقد، فالمقاييس مقاييس العقد لا تفضيلات المشروع، وتدقيق المشتريات الذي يقرأ سجلات الفترات دليلًا له، وتقرير إغلاق العقد الذي يحتاج الاتجاه العام لا فترة واحدة.</p>
 <hr />
-<h3>5. إرشادات تعبئة الحقول والبيانات</h3>
+<h3 id="5">5. إرشادات تعبئة الحقول والبيانات</h3>
 <p>لإتمام بطاقة أداء المورد بدقّة واحتراف، على المسؤول تعبئة الأقسام التالية استنادًا إلى
 سياق المشروع (مع التأكد من الرجوع إلى <code>parameters.md</code> للمتغيرات العامة):</p>
 <ul>
@@ -1049,7 +1140,7 @@ status: approved</p>
 <li><strong>الإجراء التصحيحي:</strong> ما الذي يجري بسبب الفارق، ومتى. ويُكتب عند النقص وحده، مسمّىً من يقوم به: البطاقة التي تسجّل فارقًا ولا جواب عنه تنتج الفارق نفسه في الفترة التالية، إذ لم يتغير بينهما إلا الرقم.</li>
 </ul>
 <hr />
-<h3>المحاذاة والترابط المؤسسي</h3>
+<h3 id="_5">المحاذاة والترابط المؤسسي</h3>
 <ul>
 <li><a href="06_09_بطاقة_أداء_المورد_قالب.md">📄 القالب القابل للطباعة (Markdown)</a></li>
 <li><a href="06_09_بطاقة_أداء_المورد.md">🤖 موجّه التوليد الذكي</a></li>
@@ -1057,7 +1148,7 @@ status: approved</p>
 <li><a href="06_09_بطاقة_أداء_المورد.csv">📈 البيانات الجدولية (CSV)</a></li>
 </ul>
 <hr />
-<h3>6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
+<h3 id="6">6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
 <p>يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:</p>
 <blockquote>
 <p>📖 <strong>النموذج التطبيقي المكتمل:</strong> <a href="../../../../examples/ar/06_المراقبة_والتحكم/09_بطاقة_أداء_المورد/06_09_بطاقة_أداء_المورد_مثال.md">06_09_بطاقة_أداء_المورد_مثال.md</a></p>
@@ -1067,7 +1158,7 @@ status: approved</p>
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/ar/06_المراقبة_والتحكم/09_بطاقة_أداء_المورد/06_09_بطاقة_أداء_المورد_مثال.npy
@@ -1215,6 +1306,7 @@ hruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1256,6 +1348,30 @@ hruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>

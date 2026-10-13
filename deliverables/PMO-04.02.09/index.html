@@ -686,10 +686,101 @@ pre code {
   display: block;
 }
 
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
 /* Tables */
-.table-wrapper {
+.table-wrapper, .markdown-body table {
   overflow-x: auto;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 table {
@@ -1084,7 +1175,7 @@ Section Instructions:
 
         <!-- Tab 3: Guide -->
         <div id="tab-guide" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Form
 lang: en
@@ -1274,7 +1365,7 @@ A fully completed, gold-standard reference example illustrating this artifact in
 
         <!-- Tab 4: Example -->
         <div id="tab-example" class="tab-pane" role="tabpanel">
-          <div style="line-height: 1.8;">
+          <div class="markdown-body" style="line-height: 1.8;">
             <hr />
 <p>type: Example
 token_pointer: /_tokens/examples/en/04_Planning/02_Scope/09_User_Story_Mapping_Canvas/04_02_09_User_Story_Mapping_Canvas_Example.npy
@@ -1282,7 +1373,7 @@ token_count: 1444
 tokenizer_model_id: tiktoken/o200k_base
 created_at: '2026-10-06T16:05:29.215159+00:00'</p>
 <hr />
-<h1>User Story Mapping Canvas (Reference Example)</h1>
+<h1 id="user-story-mapping-canvas-reference-example">User Story Mapping Canvas (Reference Example)</h1>
 <blockquote>
 <p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-04.02</code>). All company names, project references, and figures are realistic fictional simulations.</p>
 </blockquote>
@@ -1307,7 +1398,7 @@ created_at: '2026-10-06T16:05:29.215159+00:00'</p>
 </tr>
 </tbody>
 </table>
-<h2>1. Persona and Problem</h2>
+<h2 id="1-persona-and-problem">1. Persona and Problem</h2>
 <!-- Who this is for, what they are trying to do, how often they do it, what it costs them, and who else the change touches. -->
 
 <p><strong>Primary Persona:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
@@ -1315,7 +1406,7 @@ created_at: '2026-10-06T16:05:29.215159+00:00'</p>
 <p><strong>Frequency and Stakes:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Organisations and Roles Affected:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <hr />
-<h2>2. The Backbone</h2>
+<h2 id="2-the-backbone">2. The Backbone</h2>
 <!-- The high-level activities in the order they are performed, where that order came from, what is deliberately not on the map, and where the sequence branches. -->
 
 <p><strong>Activities in Order:</strong></p>
@@ -1359,7 +1450,7 @@ created_at: '2026-10-06T16:05:29.215159+00:00'</p>
 <p><strong>Activities Deferred:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Optional and Variable Paths:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <hr />
-<h2>3. The Slices</h2>
+<h2 id="3-the-slices">3. The Slices</h2>
 <!-- The steps under each activity, one row per activity, so that each column is a usable increment rather than a horizontal layer. -->
 
 <p><strong>Tasks Under Each Activity:</strong></p>
@@ -1408,26 +1499,26 @@ created_at: '2026-10-06T16:05:29.215159+00:00'</p>
 <p><strong>Walking Skeleton:</strong> Minimal end-to-end functional thread: Requisition creation, manager approval, and cloud invoice generation.</p>
 <p><strong>Slice Sizing Evidence:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <hr />
-<h2>4. Release Slicing</h2>
+<h2 id="4-release-slicing">4. Release Slicing</h2>
 <p><strong>MVP Boundary:</strong> Core procurement, inventory ledger, and financial billing integration.</p>
 <p><strong>Outcome of the First Release:</strong> Pilot rollout (MVP) deployed across 3 regional distribution hubs for performance validation.</p>
 <p><strong>Validation Plan:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Slices Deferred Beyond MVP:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <hr />
-<h2>5. Beyond the First Release</h2>
+<h2 id="5-beyond-the-first-release">5. Beyond the First Release</h2>
 <!-- Columns considered later with their dependencies, work the map does not yet contain, and what this product will not do. -->
 
 <p><strong>Later Release Candidates:</strong> Mobile self-service portal, international payment gateway integrations, and predictive analytics engine.</p>
 <p><strong>Emergent Work Anticipated:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
 <p><strong>Explicitly Out of Scope:</strong> On-premise hardware procurement and legacy codebase maintenance beyond cutover window.</p>
 <hr />
-<h2>6. Map Quality and Maintenance</h2>
+<h2 id="6-map-quality-and-maintenance">6. Map Quality and Maintenance</h2>
 <p><strong>Assumptions and Unvalidated Beliefs:</strong> 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)</p>
 <p><strong>Risks to the Map:</strong> Active operational monitoring with rapid response workflows triggered upon threshold deviations.</p>
 <p><strong>Update Cadence and Owners:</strong> 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)</p>
 <p><strong>Traceability to Backlog and Release:</strong> Two-week agile delivery sprint focusing on high-priority backlog items and acceptance criteria verification.</p>
 <hr />
-<h3>Sign-off and Approvals</h3>
+<h3 id="sign-off-and-approvals">Sign-off and Approvals</h3>
 <table>
 <thead>
 <tr>
@@ -1673,6 +1764,7 @@ created_at: '2026-10-06T16:05:29.215159+00:00'</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
 
 // Tasleemat Portal Runtime Scripts
@@ -1714,6 +1806,30 @@ created_at: '2026-10-06T16:05:29.215159+00:00'</p>
       setTimeout(() => { btn.innerText = orig; }, 2000);
     });
   };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
 })();
 
   </script>
