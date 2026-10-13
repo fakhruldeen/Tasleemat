@@ -281,15 +281,15 @@ flowchart LR
       <span class="badge" style="background:#ede9fe;color:#6b21a8;">NIST AI RMF Aligned</span>
     </div>
     <div class="flex gap-2">
-      <button class="card-btn" onclick="navigator.clipboard.writeText('@software{fakhruldeen_tasleemat_2026,\n  author = {Fakhruldeen, Mohamed (Fouad)},\n  title = {Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework},\n  year = {2026},\n  version = {v2.3.0},\n  doi = {10.5281/zenodo.23193523}\n}'); alert('BibTeX citation copied!');">📋 Copy BibTeX</button>
-      <button class="card-btn" onclick="navigator.clipboard.writeText('Fakhruldeen, M. (F.). (2026). Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework (v2.3.0). Zenodo. https://doi.org/10.5281/zenodo.23193523'); alert('APA citation copied!');">📋 Copy APA</button>
+      <button class="card-btn" onclick="navigator.clipboard.writeText('@software{fakhruldeen_tasleemat_2026,\n  author = {Fakhruldeen, Mohamed (Fouad)},\n  title = {Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework},\n  year = {2026},\n  doi = {10.5281/zenodo.23193523}\n}'); alert('BibTeX citation copied!');">📋 Copy BibTeX</button>
+      <button class="card-btn" onclick="navigator.clipboard.writeText('Fakhruldeen, M. (F.). (2026). Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework. Zenodo. https://doi.org/10.5281/zenodo.23193523'); alert('APA citation copied!');">📋 Copy APA</button>
     </div>
   </div>
   <p class="text-xs text-slate-600 mb-2">
     If you use Tasleemat in your PMO operations, research, or audit manuals, please cite:
   </p>
   <blockquote class="text-xs text-slate-700 bg-slate-50 p-3 rounded border-l-4 border-blue-500 m-0">
-    Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.3.0 [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank">https://doi.org/10.5281/zenodo.23193523</a>
+    Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank">https://doi.org/10.5281/zenodo.23193523</a>
   </blockquote>
   <div class="text-[11px] text-slate-400 mt-3">Licensed under the <a href="https://github.com/fakhruldeen/Tasleemat/blob/main/LICENSE" target="_blank" class="underline">MIT License</a>. Built with precision by Fakhruldeen.</div>
 </div>

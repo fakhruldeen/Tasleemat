@@ -416,10 +416,8 @@ if not report.valid:
 @software{fakhruldeen_tasleemat_2026,
   author       = {Fakhruldeen, Mohamed (Fouad)},
   title        = {Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Toolkit},
-  month        = oct,
-  year         = 2026,
+  year         = {2026},
   publisher    = {Zenodo},
-  version      = {v2.3.0},
   doi          = {10.5281/zenodo.23193523},
   url          = {https://doi.org/10.5281/zenodo.23193523}
 }

@@ -2,8 +2,8 @@
 
 <!-- mcp-name: io.github.fakhruldeen/tasleemat -->
 
-[![PyPI version](https://badge.fury.io/py/tasleemat.svg)](https://pypi.org/project/tasleemat/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/tasleemat.svg)](https://pypi.org/project/tasleemat/)
+[![PyPI version](https://img.shields.io/pypi/v/tasleemat.svg?style=flat-square&color=blue)](https://pypi.org/project/tasleemat/)
+[![Python Versions](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg?style=flat-square)](https://pypi.org/project/tasleemat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://github.com/fakhruldeen/Tasleemat)
 [![Deliverables](https://img.shields.io/badge/Deliverables-114%20Bilingual%20Pairs%20(228%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat)
@@ -15,7 +15,7 @@
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
-With **Version 2.4.1**, Tasleemat delivers a **complete programmatic Python API**, standard **Model Context Protocol (MCP)** server, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
+With **Version 2.5.0**, Tasleemat delivers a **complete programmatic Python API**, standard **Model Context Protocol (MCP)** server, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
 
 ---
 

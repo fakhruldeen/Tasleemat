@@ -320,14 +320,14 @@ flowchart TD
       <span class="badge" style="background:#ede9fe;color:#6b21a8;">هيئة الحكومة الرقمية (DGA)</span>
     </div>
     <div class="flex gap-2">
-      <button class="card-btn" onclick="navigator.clipboard.writeText('Fakhruldeen, M. (F.). (2026). Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework (v2.3.0). Zenodo. https://doi.org/10.5281/zenodo.23193523'); alert('تم نسخ التوثيق بصيغة APA بنجاح!');">📋 نسخ التوثيق (APA)</button>
+      <button class="card-btn" onclick="navigator.clipboard.writeText('Fakhruldeen, M. (F.). (2026). Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework. Zenodo. https://doi.org/10.5281/zenodo.23193523'); alert('تم نسخ التوثيق بصيغة APA بنجاح!');">📋 نسخ التوثيق (APA)</button>
     </div>
   </div>
   <p class="text-xs text-slate-600 mb-2">
     إذا تم استخدام تسليمات في عمليات مكتب إدارة المشاريع أو أدلة التدقيق أو الأبحاث الأكاديمية، يرجى الاستشهاد بالمصدر:
   </p>
   <blockquote class="text-xs text-slate-700 bg-slate-50 p-3 rounded border-r-4 border-blue-500 m-0">
-    Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat: v2.3.0 [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank">https://doi.org/10.5281/zenodo.23193523</a>
+    Mohamed (Fouad) Fakhruldeen. (2026). fakhruldeen/Tasleemat [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank">https://doi.org/10.5281/zenodo.23193523</a>
   </blockquote>
   <div class="text-[11px] text-slate-400 mt-3">مرخص بموجب ترخيص <a href="https://github.com/fakhruldeen/Tasleemat/blob/main/LICENSE" target="_blank" class="underline">MIT</a>. مطور بدقة فائقة لدعم قادة المشاريع حول العالم.</div>
 </div>

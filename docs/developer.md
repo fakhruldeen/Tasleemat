@@ -125,7 +125,6 @@ If you utilize the Tasleemat framework or dataset in enterprise research, audit 
   author       = {Fakhruldeen, Mohamed (Fouad)},
   title        = {Tasleemat: The Enterprise Bilingual (English & Arabic) Project Management Artifact & AI Governance Framework},
   year         = {2026},
-  version      = {v2.3.0},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.23193523},
   url          = {https://doi.org/10.5281/zenodo.23193523}

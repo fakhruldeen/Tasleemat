@@ -13,7 +13,7 @@ created_at: '2026-10-06T16:05:28.037976+00:00'
 </p>
 
 # 📚 Tasleemat Knowledge Base & Governance Documentation
-**Version:** 2.0  
+**Version:** 2.5.0  
 **Standard Alignment:** PMI PMBOK® 6th, 7th & 8th Editions • NIST AI RMF • SDAIA AI Ethics • ISO 21500  
 
 ---
