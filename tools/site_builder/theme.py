@@ -3,6 +3,8 @@ Design tokens, CSS definitions, HTML headers, footers, and layout templates for 
 Fully supports LTR (English) and RTL (Arabic), dark mode, WCAG 2.2 AA accessibility.
 """
 
+import html
+
 CSS_STYLES = """
 :root {
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -1238,11 +1240,42 @@ def render_html_page(
     extra_head: str = "",
     extra_scripts: str = "",
     alt_lang_url: str = "",
+    description: str = "",
+    canonical_url: str = "",
+    og_image: str = "",
 ) -> str:
-    """Renders a fully accessible, SEO-optimized, bilingual HTML page."""
+    """Renders a fully accessible, SEO-optimized, bilingual HTML page with rich Open Graph & Twitter Cards."""
     is_ar = lang == "ar"
     html_dir = "rtl" if is_ar else "ltr"
     lang_code = "ar" if is_ar else "en"
+    site_origin = "https://fakhr.me"
+
+    brand_name = "Tasleemat" if not is_ar else "تسليمات"
+    brand_sub = "Deliverable Library" if not is_ar else "مكتبة التسليمات"
+    og_site_name = "تسليمات | Tasleemat" if is_ar else "Tasleemat | Deliverable Library"
+    og_locale = "ar_SA" if is_ar else "en_US"
+    og_alt_locale = "en_US" if is_ar else "ar_SA"
+    og_title = f"{title} | {brand_name}"
+
+    # Descriptions tailored for search engines and social cards
+    if not description:
+        if is_ar:
+            page_desc = "تسليمات: مكتبة معيارية مفتوحة ثنائية اللغة تضم 114 تسليمة لإدارة المشاريع، أدلة تطبيق عملية، قوالب Markdown، مخططات JSON متوافقة، ومجموعة أدوات للمطورين وخادم MCP."
+        else:
+            page_desc = "Tasleemat is an open bilingual library of 114 project management deliverables, practitioner guides, companion JSON schemas (Draft 2020-12), and developer automation tools (Python SDK, CLI, MCP)."
+    else:
+        page_desc = description.strip()
+
+    # Canonical and Open Graph URLs
+    if not canonical_url:
+        if active_nav == "home" or not active_nav:
+            canonical_url = f"{site_origin}{base_url}/" if not is_ar else f"{site_origin}{base_url}/ar/"
+        else:
+            canonical_url = f"{site_origin}{base_url}/{active_nav}/" if not is_ar else f"{site_origin}{base_url}/ar/{active_nav}/"
+
+    # Social Card Preview Image (1280x640)
+    if not og_image:
+        og_image = f"{site_origin}{base_url}/img/social.png"
 
     # Navigation Labels
     nav_items = [
@@ -1253,9 +1286,6 @@ def render_html_page(
         {"id": "guides", "en": "Guides & Governance", "ar": "الأدلة والحوكمة", "url": f"{base_url}/guides/" if not is_ar else f"{base_url}/ar/guides/"},
         {"id": "developers", "en": "Developers & AI", "ar": "المطورون والذكاء الاصطناعي", "url": f"{base_url}/developers/" if not is_ar else f"{base_url}/ar/developers/"},
     ]
-
-    brand_name = "Tasleemat" if not is_ar else "تسليمات"
-    brand_sub = "Deliverable Library" if not is_ar else "مكتبة التسليمات"
 
     lang_switch_label = "العربية" if not is_ar else "English"
     if not alt_lang_url:
@@ -1278,7 +1308,39 @@ def render_html_page(
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | {brand_name}</title>
-  <meta name="description" content="Tasleemat - Bilingual Project Management Deliverables Library, Tailoring Profiles, JSON Schemas, CLI & MCP.">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="{html.escape(og_title)}">
+  <meta name="description" content="{html.escape(page_desc)}">
+  <meta name="author" content="Mohamed Fouad Fakhruldeen">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{canonical_url}">
+  <link rel="alternate" hreflang="{'en' if is_ar else 'ar'}" href="{site_origin}{alt_lang_url}">
+  <link rel="alternate" hreflang="{lang_code}" href="{canonical_url}">
+  
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{canonical_url}">
+  <meta property="og:site_name" content="{og_site_name}">
+  <meta property="og:title" content="{html.escape(og_title)}">
+  <meta property="og:description" content="{html.escape(page_desc)}">
+  <meta property="og:image" content="{og_image}">
+  <meta property="og:image:secure_url" content="{og_image}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="{html.escape(title)} - {brand_name}">
+  <meta property="og:locale" content="{og_locale}">
+  <meta property="og:locale:alternate" content="{og_alt_locale}">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{canonical_url}">
+  <meta name="twitter:title" content="{html.escape(og_title)}">
+  <meta name="twitter:description" content="{html.escape(page_desc)}">
+  <meta name="twitter:image" content="{og_image}">
+  <meta name="twitter:image:alt" content="{html.escape(title)} - {brand_name}">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">

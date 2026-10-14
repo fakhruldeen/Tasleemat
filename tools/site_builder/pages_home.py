@@ -232,6 +232,8 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
         active_nav="home",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/",
+        description="Tasleemat is an open bilingual library of 114 project management deliverables, practitioner guides, companion JSON schemas (Draft 2020-12), and developer automation tools (Python SDK, CLI, MCP).",
+        canonical_url="https://fakhr.me/Tasleemat/",
     )
 
 
@@ -381,4 +383,6 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
         active_nav="home",
         base_url=base_url,
         alt_lang_url=f"{base_url}/",
+        description="تسليمات: مكتبة معيارية مفتوحة ثنائية اللغة تضم 114 تسليمة لإدارة المشاريع، أدلة تطبيق عملية، قوالب Markdown، مخططات JSON متوافقة، ومجموعة أدوات للمطورين وخادم MCP.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/",
     )

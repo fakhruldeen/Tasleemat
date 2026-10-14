@@ -129,6 +129,8 @@ tasleemat validate PMO-04.14 completed_data.json</code></pre>
         active_nav="start",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/start/",
+        description="Start using Tasleemat with three practical pathways: manual template tailoring, Python package & CLI automation, or AI assistant / MCP integration.",
+        canonical_url="https://fakhr.me/Tasleemat/start/",
     )
 
 
@@ -252,4 +254,6 @@ tasleemat validate PMO-04.14 completed_data.json</code></pre>
         active_nav="start",
         base_url=base_url,
         alt_lang_url=f"{base_url}/start/",
+        description="ابدأ استخدام تسليمات عبر 3 مسارات عملية: الاستخدام اليدوي للقوالب، مكتبة وأداة بايثون الطرفية، أو الربط الذكي عبر خادم MCP.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/start/",
     )

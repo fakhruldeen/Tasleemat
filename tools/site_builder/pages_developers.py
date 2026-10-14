@@ -320,6 +320,8 @@ tasleemat-mcp</code></pre>
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/developers/",
+        description="Comprehensive Developer & AI Engineering Portal for Tasleemat: CLI, Python SDK, MCP Server, Draft 2020-12 Schemas, and Agentic Swarms.",
+        canonical_url="https://fakhr.me/Tasleemat/developers/",
     )
 
 
@@ -592,6 +594,8 @@ tasleemat-mcp</code></pre>
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/developers/",
+        description="بوابة المطورين وهندسة الذكاء الاصطناعي لمنظومة تسليمات: أداة الطرفية CLI، مكتبة بايثون SDK، خادم MCP، مخططات JSON، وأسراب الوكلاء الأذكياء.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/developers/",
     )
 
 
@@ -760,6 +764,8 @@ tasleemat mcp</code></pre>
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/developers/cli/",
+        description="Comprehensive CLI Tooling & Scaffolding Manual for Tasleemat: init, list, search, config, generate, test, and automated CI/CD recipes.",
+        canonical_url="https://fakhr.me/Tasleemat/developers/cli/",
     )
 
 
@@ -924,6 +930,8 @@ tasleemat mcp</code></pre>
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/developers/cli/",
+        description="دليل أداة سطر الأوامر (CLI) الشامل لتسليمات: تهيئة المشاريع، استكشاف التسليمات، التوليد الآلي، وإدارة بيئات العمل في أسطر الأوامر.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/developers/cli/",
     )
 
 
@@ -1106,6 +1114,8 @@ else:
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/developers/sdk/",
+        description="Python SDK Reference for Tasleemat: 8 core API functions, ArtifactSummary models, Draft 2020-12 validation, and headless report rendering.",
+        canonical_url="https://fakhr.me/Tasleemat/developers/sdk/",
     )
 
 
@@ -1284,6 +1294,8 @@ else:
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/developers/sdk/",
+        description="المرجع البرمجي لمكتبة بايثون (SDK) لتسليمات: الدوال الثماني الأساسية، نماذج البيانات، والتحقق الصارم من مخططات الوثائق.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/developers/sdk/",
     )
 
 
@@ -1416,6 +1428,8 @@ tasleemat-mcp</code></pre>
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/developers/mcp/",
+        description="Model Context Protocol (MCP) Server for Tasleemat: Connect Claude Desktop, Cursor, and AI agents directly to 114 project deliverables via stdio.",
+        canonical_url="https://fakhr.me/Tasleemat/developers/mcp/",
     )
 
 
@@ -1543,6 +1557,8 @@ tasleemat-mcp</code></pre>
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/developers/mcp/",
+        description="خادم بروتوكول سياق النموذج (MCP) لتسليمات: دمج أدوات الحوكمة ومخططات الـ 114 تسليمة مباشرة مع بيئات Cursor و Claude Desktop.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/developers/mcp/",
     )
 
 
@@ -1666,6 +1682,8 @@ def synthesize_with_self_correction(artifact_id: str, prompt_notes: str, max_ret
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/developers/schemas/",
+        description="JSON Schema Draft 2020-12 specifications, strict RFC format constraints, and autonomous agent self-correction feedback loop for Tasleemat.",
+        canonical_url="https://fakhr.me/Tasleemat/developers/schemas/",
     )
 
 
@@ -1783,6 +1801,8 @@ def synthesize_with_self_correction(artifact_id: str, prompt_notes: str, max_ret
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/developers/schemas/",
+        description="مواصفات مخططات JSON المعيارية Draft 2020-12، قيود RFC الإلزامية، ومحرك التصحيح الذاتي التلقائي لأسراب الوكلاء الأذكياء.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/developers/schemas/",
     )
 
 
@@ -1952,6 +1972,8 @@ jobs:
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/developers/agentic/",
+        description="Multi-Agent Architectures (CrewAI, LangGraph), LLM Prompt Synthesis, CI/CD Automated Governance Gates, and Attested Math Contracts for Tasleemat.",
+        canonical_url="https://fakhr.me/Tasleemat/developers/agentic/",
     )
 
 
@@ -2115,6 +2137,8 @@ jobs:
         active_nav="developers",
         base_url=base_url,
         alt_lang_url=f"{base_url}/developers/agentic/",
+        description="معمارية أسراب الوكلاء المتعددين (CrewAI و LangGraph)، هندسة موجهات LLM، بوابات الحوكمة المؤتمتة، وعقود الحسابات الرياضية الموثقة.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/developers/agentic/",
     )
 
 

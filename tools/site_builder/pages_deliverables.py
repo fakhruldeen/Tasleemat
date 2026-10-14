@@ -270,6 +270,13 @@ def generate_explorer_page(artifacts_data: list, lang: str = "en", base_url: str
     </div>
     """
 
+    desc = (
+        "Interactive explorer across 114 canonical project management deliverables with multi-faceted filtering by lifecycle phase, sizing tier, and methodology pack."
+        if not is_ar
+        else "مستكشف تفاعلي لكافة الـ 114 تسليمة معيارية لإدارة المشاريع مع إمكانية الفلترة والبحث بحسب مرحلة دورة الحياة ومستوى الحوكمة وحزمة المنهجية."
+    )
+    canonical = f"https://fakhr.me{base_url}/deliverables/" if not is_ar else f"https://fakhr.me{base_url}/ar/deliverables/"
+
     return render_html_page(
         title=title,
         content=content,
@@ -278,6 +285,8 @@ def generate_explorer_page(artifacts_data: list, lang: str = "en", base_url: str
         base_url=base_url,
         extra_scripts=extra_scripts,
         alt_lang_url=f"{base_url}/ar/deliverables/" if not is_ar else f"{base_url}/deliverables/",
+        description=desc,
+        canonical_url=canonical,
     )
 
 
@@ -513,6 +522,18 @@ def generate_detail_page(
     </div>
     """
 
+    # Generate tailored description for social sharing
+    art_summary = (
+        f"{art_id}: {name} - Comprehensive project deliverable template, practitioner guide, completed realistic example, and companion Draft 2020-12 JSON schema."
+        if not is_ar
+        else f"{art_id}: {name} - تسليمة معيارية للمشروع، دليل تطبيقي للممارس، مثال واقعي متكامل، ومخطط JSON للتحقق الآلي."
+    )
+    canonical = (
+        f"https://fakhr.me{base_url}/deliverables/{art_id}/"
+        if not is_ar
+        else f"https://fakhr.me{base_url}/ar/deliverables/{art_id}/"
+    )
+
     return render_html_page(
         title=f"{art_id} {name}",
         content=content,
@@ -520,4 +541,6 @@ def generate_detail_page(
         active_nav="deliverables",
         base_url=base_url,
         alt_lang_url=f"{base_url}/deliverables/{art_id}/" if is_ar else f"{base_url}/ar/deliverables/{art_id}/",
+        description=art_summary,
+        canonical_url=canonical,
     )

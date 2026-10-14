@@ -97,6 +97,16 @@ def compile_manual_pages():
             </div>
             """
             
+            # Extract description from cleaned markdown
+            desc = ""
+            for line in cleaned_md.splitlines():
+                stripped = line.strip()
+                if stripped and not stripped.startswith("#") and not stripped.startswith("<") and not stripped.startswith(">") and not stripped.startswith("|"):
+                    desc = stripped.replace("**", "").replace("__", "")[:200]
+                    break
+            if not desc:
+                desc = f"{title} - Official Tasleemat PMO Governance Manual." if lang == "en" else f"{title} - الدليل الرسمي لإدارة وحوكمة المشاريع في تسليمات."
+
             full_html = render_html_page(
                 title=title,
                 content=page_content,
@@ -104,6 +114,8 @@ def compile_manual_pages():
                 active_nav="guides",
                 base_url=BASE_URL,
                 alt_lang_url=alt_url,
+                description=desc,
+                canonical_url=f"https://fakhr.me{BASE_URL}/{lang}/{md_file.stem}.html",
             )
             
             out_file = out_dir / f"{md_file.stem}.html"
@@ -167,6 +179,13 @@ def compile_all_deliverables(artifacts_summary):
 def build_site():
     print(f"--- Starting Tasleemat Public Website Build (Target: {SITE_DIR}) ---")
     SITE_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Copy images to site/img for Open Graph / Social Media cards
+    img_src = DOCS_DIR / "img"
+    img_dst = SITE_DIR / "img"
+    if img_src.exists():
+        shutil.copytree(img_src, img_dst, dirs_exist_ok=True)
+        print(f"Copied image assets to {img_dst}.")
     
     # 1. Fetch catalog data
     artifacts_summary = tasleemat.list_artifacts()

@@ -333,6 +333,8 @@ print(f"Tailored count: {{len(deliverables)}}")</code></pre>
         active_nav="tailoring",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/tailoring/",
+        description="Governance Sizing Tiers (Tier 1 Mega, Tier 2 Standard, Tier 3 Lean) and Delivery Packs (General, Agile, AI, Predictive, Hybrid) with complete lists of deliverables.",
+        canonical_url="https://fakhr.me/Tasleemat/tailoring/",
     )
 
 
@@ -547,4 +549,6 @@ print(f"عدد تسليمات الحزمة: {{len(deliverables)}}")</code></pre>
         active_nav="tailoring",
         base_url=base_url,
         alt_lang_url=f"{base_url}/tailoring/",
+        description="مستويات الحوكمة وتحديد الحجم (المشاريع الكبرى، القياسية، الرشيقة) وحزم المنهجيات المعيارية مع قوائم التسليمات التفصيلية وروابطها المباشرة.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/tailoring/",
     )

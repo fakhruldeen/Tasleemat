@@ -194,6 +194,8 @@ def generate_guides_en(base_url: str = "/Tasleemat") -> str:
         active_nav="guides",
         base_url=base_url,
         alt_lang_url=f"{base_url}/ar/guides/",
+        description="The 12 Core PMO Lifecycle Manuals, Frameworks, Dual-Track Playbooks, and Governance Guides for Tasleemat in English and Arabic.",
+        canonical_url="https://fakhr.me/Tasleemat/guides/",
     )
 
 
@@ -283,4 +285,6 @@ def generate_guides_ar(base_url: str = "/Tasleemat") -> str:
         active_nav="guides",
         base_url=base_url,
         alt_lang_url=f"{base_url}/guides/",
+        description="الأدلة الرئيسية الـ 12 لمكتب إدارة المشاريع، أطر الحوكمة، وأدلة الممارس باللغتين العربية والإنجليزية.",
+        canonical_url="https://fakhr.me/Tasleemat/ar/guides/",
     )

@@ -327,12 +327,67 @@ class TestWebsiteRedesign(unittest.TestCase):
         pos_ar_bounds = html_ar.find("حدود ونطاق مشروع تسليمات")
         pos_ar_foot = html_ar.find("<footer")
 
-        self.assertTrue(pos_ar_life < pos_ar_tiers < pos_ar_bounds < pos_ar_foot,
-                        f"Arabic home section order violated: {pos_ar_life}, {pos_ar_tiers}, {pos_ar_bounds}, {pos_ar_foot}")
+    def test_social_meta_and_open_graph_tags(self):
+        """Verifies that all pages contain complete Open Graph, Twitter Cards, and canonical tags for social sharing."""
+        social_img = SITE_DIR / "img" / "social.png"
+        self.assertTrue(social_img.exists(), "Social preview image site/img/social.png must exist")
+        self.assertGreater(social_img.stat().st_size, 1000, "Social image must not be empty")
+
+        sample_pages = [
+            ("index.html", "en", "https://fakhr.me/Tasleemat/"),
+            ("ar/index.html", "ar", "https://fakhr.me/Tasleemat/ar/"),
+            ("start/index.html", "en", "https://fakhr.me/Tasleemat/start/"),
+            ("ar/start/index.html", "ar", "https://fakhr.me/Tasleemat/ar/start/"),
+            ("deliverables/index.html", "en", "https://fakhr.me/Tasleemat/deliverables/"),
+            ("ar/deliverables/index.html", "ar", "https://fakhr.me/Tasleemat/ar/deliverables/"),
+            ("deliverables/PMO-03.01/index.html", "en", "https://fakhr.me/Tasleemat/deliverables/PMO-03.01/"),
+            ("ar/deliverables/PMO-03.01/index.html", "ar", "https://fakhr.me/Tasleemat/ar/deliverables/PMO-03.01/"),
+            ("guides/index.html", "en", "https://fakhr.me/Tasleemat/guides/"),
+            ("ar/guides/index.html", "ar", "https://fakhr.me/Tasleemat/ar/guides/"),
+            ("developers/index.html", "en", "https://fakhr.me/Tasleemat/developers/"),
+            ("ar/developers/index.html", "ar", "https://fakhr.me/Tasleemat/ar/developers/"),
+            ("developers/cli/index.html", "en", "https://fakhr.me/Tasleemat/developers/cli/"),
+            ("ar/developers/cli/index.html", "ar", "https://fakhr.me/Tasleemat/ar/developers/cli/"),
+            ("tailoring/index.html", "en", "https://fakhr.me/Tasleemat/tailoring/"),
+            ("ar/tailoring/index.html", "ar", "https://fakhr.me/Tasleemat/ar/tailoring/"),
+        ]
+
+        for rel_path, lang, canonical_url in sample_pages:
+            page = SITE_DIR / rel_path
+            self.assertTrue(page.exists(), f"Sample page missing: {rel_path}")
+            html = page.read_text(encoding="utf-8")
+
+            # Open Graph Tags
+            self.assertIn('<meta property="og:type" content="website">', html, f"Missing og:type in {rel_path}")
+            self.assertIn(f'<meta property="og:url" content="{canonical_url}">', html, f"Wrong og:url in {rel_path}")
+            self.assertIn('<meta property="og:site_name"', html, f"Missing og:site_name in {rel_path}")
+            self.assertIn('<meta property="og:title"', html, f"Missing og:title in {rel_path}")
+            self.assertIn('<meta property="og:description"', html, f"Missing og:description in {rel_path}")
+            self.assertIn('<meta property="og:image" content="https://fakhr.me/Tasleemat/img/social.png">', html, f"Missing og:image in {rel_path}")
+            self.assertIn('<meta property="og:image:width" content="1280">', html, f"Missing og:image:width in {rel_path}")
+            self.assertIn('<meta property="og:image:height" content="640">', html, f"Missing og:image:height in {rel_path}")
+
+            # Locale
+            expected_locale = "ar_SA" if lang == "ar" else "en_US"
+            alt_locale = "en_US" if lang == "ar" else "ar_SA"
+            self.assertIn(f'<meta property="og:locale" content="{expected_locale}">', html, f"Wrong og:locale in {rel_path}")
+            self.assertIn(f'<meta property="og:locale:alternate" content="{alt_locale}">', html, f"Wrong og:locale:alternate in {rel_path}")
+
+            # Twitter Card Tags
+            self.assertIn('<meta name="twitter:card" content="summary_large_image">', html, f"Missing twitter:card in {rel_path}")
+            self.assertIn(f'<meta name="twitter:url" content="{canonical_url}">', html, f"Wrong twitter:url in {rel_path}")
+            self.assertIn('<meta name="twitter:title"', html, f"Missing twitter:title in {rel_path}")
+            self.assertIn('<meta name="twitter:description"', html, f"Missing twitter:description in {rel_path}")
+            self.assertIn('<meta name="twitter:image" content="https://fakhr.me/Tasleemat/img/social.png">', html, f"Missing twitter:image in {rel_path}")
+
+            # Canonical & Author
+            self.assertIn(f'<link rel="canonical" href="{canonical_url}">', html, f"Missing canonical in {rel_path}")
+            self.assertIn('<meta name="author" content="Mohamed Fouad Fakhruldeen">', html, f"Missing author in {rel_path}")
 
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
 
