@@ -271,7 +271,7 @@ class TestWebsiteRedesign(unittest.TestCase):
         self.assertIn("RFC 3339", html_ar)
 
     def test_developer_subpages_exist(self):
-        """Verifies that all 5 developer sub-pages exist in both English and Arabic."""
+        """Verifies that all 5 developer sub-pages exist in both English and Arabic with rich tutorials."""
         subpages = ["cli", "sdk", "mcp", "schemas", "agentic"]
         for sub in subpages:
             en_page = ROOT / "site" / "developers" / sub / "index.html"
@@ -279,8 +279,47 @@ class TestWebsiteRedesign(unittest.TestCase):
 
             self.assertTrue(en_page.exists(), f"Missing English developer subpage: {sub}")
             self.assertTrue(ar_page.exists(), f"Missing Arabic developer subpage: {sub}")
-            self.assertGreater(en_page.stat().st_size, 5000, f"English subpage {sub} is suspiciously small")
-            self.assertGreater(ar_page.stat().st_size, 5000, f"Arabic subpage {sub} is suspiciously small")
+            self.assertGreater(en_page.stat().st_size, 40000, f"English subpage {sub} is smaller than 40KB")
+            self.assertGreater(ar_page.stat().st_size, 40000, f"Arabic subpage {sub} is smaller than 40KB")
+
+        # Specific content assertions for enriched sections
+        cli_en = (ROOT / "site" / "developers" / "cli" / "index.html").read_text(encoding="utf-8")
+        cli_ar = (ROOT / "site" / "ar" / "developers" / "cli" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("TASLEEMAT_HOME", cli_en)
+        self.assertIn("TASLEEMAT_HOME", cli_ar)
+        self.assertIn("provision_portfolio.sh", cli_en)
+        self.assertIn("provision_portfolio.sh", cli_ar)
+
+        sdk_en = (ROOT / "site" / "developers" / "sdk" / "index.html").read_text(encoding="utf-8")
+        sdk_ar = (ROOT / "site" / "ar" / "developers" / "sdk" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("FastAPI", sdk_en)
+        self.assertIn("FastAPI", sdk_ar)
+        self.assertIn("Streamlit", sdk_en)
+        self.assertIn("Streamlit", sdk_ar)
+        self.assertIn("calculate_evm_metrics", sdk_en)
+        self.assertIn("calculate_evm_metrics", sdk_ar)
+
+        mcp_en = (ROOT / "site" / "developers" / "mcp" / "index.html").read_text(encoding="utf-8")
+        mcp_ar = (ROOT / "site" / "ar" / "developers" / "mcp" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("tasleemat_calculate_eva", mcp_en)
+        self.assertIn("tasleemat_calculate_eva", mcp_ar)
+        self.assertIn("call_mcp_tool", mcp_en)
+        self.assertIn("call_mcp_tool", mcp_ar)
+
+        schemas_en = (ROOT / "site" / "developers" / "schemas" / "index.html").read_text(encoding="utf-8")
+        schemas_ar = (ROOT / "site" / "ar" / "developers" / "schemas" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("run_autonomous_synthesis", schemas_en)
+        self.assertIn("run_autonomous_synthesis", schemas_ar)
+        self.assertIn("unevaluatedProperties", schemas_en)
+        self.assertIn("unevaluatedProperties", schemas_ar)
+
+        agentic_en = (ROOT / "site" / "developers" / "agentic" / "index.html").read_text(encoding="utf-8")
+        agentic_ar = (ROOT / "site" / "ar" / "developers" / "agentic" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("CrewAI", agentic_en)
+        self.assertIn("CrewAI", agentic_ar)
+        self.assertIn("LangGraph", agentic_en)
+        self.assertIn("LangGraph", agentic_ar)
+
 
     def test_tailoring_page_structure_and_deliverable_links(self):
         """Verifies that the dedicated /tailoring/ page lists deliverables with direct links."""
