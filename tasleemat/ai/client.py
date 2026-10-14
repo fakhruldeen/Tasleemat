@@ -26,7 +26,7 @@ class AIClient:
     """Unified LLM Client for Tasleemat PMO Artifact Auto-Generation with multi-provider & custom endpoint support."""
 
     DEFAULT_SUGGESTED_MODELS = {
-        "gemini": "gemini-2.5-flash",
+        "gemini": "gemini-3.8-flash",
         "openai": "gpt-4o",
         "anthropic": "claude-3-5-sonnet-20241022",
         "openrouter": "anthropic/claude-3.5-sonnet",
@@ -38,7 +38,8 @@ class AIClient:
     def __init__(self, provider=None, model=None, api_key=None, endpoint=None):
         cfg = load_config()
         self.provider = (provider or cfg.get("provider") or os.getenv("TASLEEMAT_LLM_PROVIDER") or "gemini").lower()
-        self.model = model or cfg.get("model") or os.getenv("TASLEEMAT_LLM_MODEL") or self.DEFAULT_SUGGESTED_MODELS.get(self.provider, "gemini-2.5-flash")
+        default_model = os.getenv("TASLEEMAT_LLM_MODEL") or os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
+        self.model = model or cfg.get("model") or (default_model if self.provider == "gemini" else self.DEFAULT_SUGGESTED_MODELS.get(self.provider, "default-model"))
         self.api_key = api_key or cfg.get("api_key") or self._resolve_api_key(self.provider)
         self.endpoint = endpoint or cfg.get("endpoint") or self._resolve_endpoint(self.provider)
 

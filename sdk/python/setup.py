@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tasleemat",
-    version="2.6.0b1",
+    version="2.6.0",
     description="The Bilingual (English & Arabic) PMO Operating System, Interactive TUI Workstation, MCP Server & Governance Auditor for Project Managers and AI Agents",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",

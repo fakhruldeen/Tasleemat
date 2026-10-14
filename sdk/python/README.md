@@ -18,11 +18,11 @@
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
-With **Version 2.6.0 (Beta)**, Tasleemat introduces an **Interactive Bilingual Terminal User Interface (TUI)** workstation, a **Project Governance Auditor & Verification Engine** with Stage-Gate readiness KPIs, **1-Click Native Integration for 8 Leading AI Coding Agents and IDEs**, and a universal **Multi-Provider LLM Engine**.
+With **Version 2.6.0**, Tasleemat introduces an **Interactive Bilingual Terminal User Interface (TUI)** workstation, a **Project Governance Auditor & Verification Engine** with Stage-Gate readiness KPIs, **1-Click Native Integration for 8 Leading AI Coding Agents and IDEs**, and a universal **Multi-Provider LLM Engine**.
 
 ---
 
-## 🌟 What's New in v2.6.0 (Beta)
+## 🌟 What's New in v2.6.0
 
 - 🖥️ **Interactive Bilingual Terminal User Interface (TUI)** (`tasleemat tui` / `pip install "tasleemat[tui]"`):
   - Full-screen terminal dashboard powered by Textual with real-time bidirectional Arabic text shaping (`arabic-reshaper` & `python-bidi`).
