@@ -1,5 +1,6 @@
 ---
 name: tasleemat
+type: Skill
 description: Discover and use Tasleemat's Arabic and English project-management deliverables, templates, practitioner guides, examples, and supported structured-data validation. Use when a user needs a project charter, risk register, status report, change record, another PM artifact, or help retrieving Tasleemat assets through its repository, Python library, or MCP tools. Produces drafts and structural findings, not approvals or compliance certification.
 license: MIT
 compatibility: Requires access to the Tasleemat repository, an installed tasleemat Python package, or connected Tasleemat MCP tools. Available capabilities depend on the accessible version and assets.

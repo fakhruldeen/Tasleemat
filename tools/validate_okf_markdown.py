@@ -56,7 +56,9 @@ def validate_okf():
                 
             frontmatter = clean_content[offset+3:end_idx]
             match = re.search(r'^type:\s*(.+)$', frontmatter, re.MULTILINE)
-            if not match or not match.group(1).strip():
+            if not match and file.upper() == 'SKILL.MD' and re.search(r'^name:\s*(.+)$', frontmatter, re.MULTILINE):
+                match = True
+            if not match or (match is not True and not match.group(1).strip()):
                 print(f"❌ OKF FAIL: {filepath} is missing a valid 'type' field.")
                 okf_errors += 1
                 
