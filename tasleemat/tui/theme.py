@@ -194,4 +194,32 @@ MarkdownViewer {
 Checkbox {
     margin: 0 0 1 0;
 }
+
+.kpi-row {
+    height: auto;
+    margin: 1 0;
+}
+
+.kpi-box {
+    width: 32%;
+    background: #1e293b;
+    border: round #334155;
+    padding: 1;
+    margin-right: 1;
+    content-align: center middle;
+}
+
+.kpi-value {
+    text-style: bold;
+    color: #38bdf8;
+}
+
+.kpi-label {
+    color: #94a3b8;
+}
+
+ProgressBar {
+    padding: 0 1;
+    margin: 1 0;
+}
 """

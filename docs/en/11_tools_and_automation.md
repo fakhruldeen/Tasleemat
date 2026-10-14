@@ -198,6 +198,20 @@ tasleemat mcp
 tasleemat-mcp
 ```
 
+### H. Project Governance Audit & Verification (`audit`)
+Audit and verify any scaffolded project workspace against its assigned Governance Tier (1, 2, or 3) and Methodology Pack. The auditor verifies file completeness, checks required deliverables, computes live completion percentages and governance scores, evaluates Stage-Gate readiness (Gates 0 to 5), and performs Draft 2020-12 schema validation on completed JSON payloads:
+
+```bash
+# Audit the current project directory (auto-detects Tier & Pack from workspace)
+tasleemat audit
+
+# Audit a specific directory with explicit rules and strict CI/CD exit code
+tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
+
+# Output machine-readable structured JSON report for automated CI/CD pipelines
+tasleemat audit ./projects/PRJ-2026-CLOUD --json --out audit_report.json
+```
+
 ---
 
 ## 🐍 2. Official Python SDK Reference (`import tasleemat`)
@@ -215,6 +229,7 @@ The `tasleemat` package exposes a stable, programmatic Python API designed for w
 | `get_tailoring_profile(tier, pack)` | `tier: int \| str`, `pack: str` | `dict` | Resolves required and optional deliverables for a specific Governance Sizing Tier (1, 2, or 3) and Methodology Pack (`general`, `agile`, `ai`, `predictive`, `hybrid`). |
 | `get_lexicon(lang)` | `lang: str = "en"` | `dict` | Returns bilingual PMO terminology, stage-gate definitions, and standard status taxonomies. |
 | `validate_artifact_data(artifact_id, data, strict)` | `artifact_id: str`, `data: dict`, `strict: bool = True` | `dict` | Validates project deliverable data against Draft 2020-12 JSON Schema. In strict mode, unknown fields trigger errors. |
+| `audit_project(project_path, tier, pack, strict_schema)` | `project_path: str`, `tier: str = None`, `pack: str = None`, `strict_schema: bool = True` | `ProjectAuditReport` | Audits an entire workspace, returning KPIs, progress percentages, Stage-Gate readiness, and deliverable findings. |
 | `render_artifact(artifact_id, data, format, lang)` | `artifact_id: str`, `data: dict`, `format: str = "html"`, `lang: str = "en"` | `str` | Renders deliverable content into clean standalone HTML or formatted text offline. |
 
 ### Supported Draft 2020-12 Data Formats

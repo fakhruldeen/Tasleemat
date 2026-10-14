@@ -44,6 +44,7 @@ tasleemat tui --lang ar
   5. `🤖 AI Studio`: Prompt playground for drafting deliverables with live LLM generation and markdown export.
   6. `🔑 LLM API`: Unrestricted model configuration for OpenRouter, Google Gemini, OpenAI, Claude, Ollama, and custom OpenAI-compatible endpoints (Groq, DeepSeek, Together, etc.).
   7. `🔌 Agents Hub`: 1-click workspace configuration for **Cursor, Antigravity (AGY), Claude Desktop, VS Code, OpenCode, Cline, Windsurf, and OpenAI CLI replicas**.
+  8. `🛡️ Auditor & KPIs`: Interactive governance verification with live progress bars, KPI metric cards, Stage-Gate readiness matrix, and deliverable findings.
 - **Real-Time Keybindings**:
   - `F2`: Instant toggle between English and Arabic UI modes with native Arabic cursive shaping (`arabic-reshaper`) and bidirectional algorithm (`python-bidi`).
   - `F1`: Help and keyboard navigation guide.
@@ -53,6 +54,12 @@ tasleemat tui --lang ar
 ```bash
 # Scaffold a new project (interactive wizard or flags)
 tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
+
+# Audit and verify an existing project workspace against PMO governance tiers
+tasleemat audit ./projects/PRJ-2026-01 --tier 2 --pack agile
+
+# Run strict audit with JSON export for CI/CD gates
+tasleemat audit ./my_project --strict --json --out audit_report.json
 
 # Search deliverable templates by keyword in English or Arabic
 tasleemat search "Risk" --lang en

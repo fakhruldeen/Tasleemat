@@ -199,6 +199,20 @@ tasleemat mcp
 tasleemat-mcp
 ```
 
+### ح. التدقيق الحوكمي والتحقق الهيكلي للمشاريع (`audit`)
+تدقيق والتحقق من امتثال أي بيئة عمل للمشروع وفق مستويات الحوكمة (المستوى 1 أو 2 أو 3) وحزمة المنهجية المتبعة. يقوم المدقق بالتحقق من اكتمال الملفات، واحتساب نسب الإنجاز المئوية ودرجة الحوكمة، وتقييم جاهزية بوابات المرحلة (البوابات 0 إلى 5)، والتحقق من صحة مخططات البيانات JSON Schema:
+
+```bash
+# تدقيق مجلد المشروع الحالي (يكتشف المستوى والمنهجية تلقائياً)
+tasleemat audit
+
+# تدقيق مجلد محدد مع تفعيل الإغلاق الصارم لاختبارات أنظمة CI/CD
+tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
+
+# استخراج تقرير التدقيق بصيغة JSON المعيارية لخطوط الإنتاج المؤتمتة
+tasleemat audit ./projects/PRJ-2026-CLOUD --json --out audit_report.json
+```
+
 ---
 
 ## 🐍 2. المرجع البرمجي لحزمة بايثون الرسمية (`import tasleemat`)
@@ -216,6 +230,7 @@ tasleemat-mcp
 | `get_tailoring_profile(tier, pack)` | `tier: int \| str`, `pack: str` | `dict` | تحديد قائمة المخرجات الإلزامية والاختيارية لفئة الحوكمة (1 أو 2 أو 3) وحزمة المنهجية (`general`, `agile`, `ai`, `predictive`, `hybrid`). |
 | `get_lexicon(lang)` | `lang: str = "ar"` | `dict` | استرجاع المعجم المؤسسي الموحد لمصطلحات إدارة المشاريع وبوابات العبور الحوكمية. |
 | `validate_artifact_data(artifact_id, data, strict)` | `artifact_id: str`, `data: dict`, `strict: bool = True` | `dict` | التحقق البرمجي الصارم من بيانات النموذج مقابل مخطط Draft 2020-12 المعتمد. |
+| `audit_project(project_path, tier, pack, strict_schema)` | `project_path: str`, `tier: str = None`, `pack: str = None`, `strict_schema: bool = True` | `ProjectAuditReport` | فحص وتدقيق بيئة عمل المشروع بالكامل واستخراج مؤشرات الأداء والنسب المئوية وجاهزية البوابات. |
 | `render_artifact(artifact_id, data, format, lang)` | `artifact_id: str`, `data: dict`, `format: str = "html"`, `lang: str = "ar"` | `str` | تصيير وتوليد صفحة HTML مستقلة أو نص منسق للنموذج دون اتصال بالإنترنت. |
 
 ### التنسيقات المدعومة لمخططات Draft 2020-12 (Supported Formats)

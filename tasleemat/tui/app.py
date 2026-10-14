@@ -16,6 +16,7 @@ from tasleemat.tui.screens.lexicon import LexiconScreen
 from tasleemat.tui.screens.ai_studio import AIStudioScreen
 from tasleemat.tui.screens.llm_config import LLMConfigScreen
 from tasleemat.tui.screens.agent_hub import AgentHubScreen
+from tasleemat.tui.screens.auditor import AuditorScreen
 
 class TasleematApp(App):
     """Tasleemat PMO Operating System TUI Application."""
@@ -49,6 +50,7 @@ class TasleematApp(App):
             Tab(t("tab_ai_studio", self.lang), id="tab_ai_studio"),
             Tab(t("tab_llm_config", self.lang), id="tab_llm_config"),
             Tab(t("tab_agents", self.lang), id="tab_agents"),
+            Tab(t("tab_auditor", self.lang), id="tab_auditor"),
             id="main_nav_tabs"
         )
 
@@ -60,6 +62,7 @@ class TasleematApp(App):
             yield AIStudioScreen(lang=self.lang, id="screen_ai_studio")
             yield LLMConfigScreen(lang=self.lang, id="screen_llm_config")
             yield AgentHubScreen(lang=self.lang, id="screen_agents")
+            yield AuditorScreen(lang=self.lang, id="screen_auditor")
 
         yield Footer()
 
@@ -74,6 +77,7 @@ class TasleematApp(App):
             "tab_ai_studio": "screen_ai_studio",
             "tab_llm_config": "screen_llm_config",
             "tab_agents": "screen_agents",
+            "tab_auditor": "screen_auditor",
         }
         if tab_id in mapping:
             switcher.current = mapping[tab_id]

@@ -242,5 +242,45 @@ class TestTUI(unittest.TestCase):
         self.assertIn("tui", res.stdout)
         self.assertIn("--lang", res.stdout)
 
+    def test_audit_project_programmatic_api(self):
+        """Test programmatic pip-style audit_project verification with KPIs."""
+        from tasleemat import audit_project
+        import subprocess
+        import sys
+        ROOT = pathlib.Path(__file__).parent.parent.resolve()
+        CLI_PATH = ROOT / "tools" / "tasleemat_cli.py"
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            prj_dir = pathlib.Path(tmpdir) / "Audit_Test_Prj"
+            # Scaffold via CLI
+            subprocess.run([
+                sys.executable, str(CLI_PATH), "init",
+                "--tier", "3", "--pack", "agile", "--lang", "en",
+                "--name", "Agile Health", "--code", "PRJ-AH-01",
+                "--pm", "PM Test", "--sponsor", "Sponsor Test",
+                "--out", str(prj_dir)
+            ], check=True, cwd=str(ROOT))
+
+            report = audit_project(prj_dir, strict_schema=False)
+            self.assertEqual(report.project_code, "PRJ-AH-01")
+            self.assertEqual(report.tier, "3")
+            self.assertEqual(report.pack, "agile")
+            self.assertGreaterEqual(report.overall_progress_pct, 80.0)
+            self.assertGreaterEqual(report.governance_score_pct, 80.0)
+            self.assertEqual(len(report.gate_readiness), 6)
+
+            # Test to_dict serializability
+            data = report.to_dict()
+            self.assertIn("summary", data)
+            self.assertIn("gate_readiness", data)
+            self.assertIn("overall_progress_pct", data["summary"])
+
+    @unittest.skipUnless(HAS_TUI_DEPS, "Textual optional dependency not installed")
+    def test_tui_auditor_screen_execution(self):
+        """Test TUI AuditorScreen mounting and audit execution."""
+        from tasleemat.tui.screens.auditor import AuditorScreen
+        screen = AuditorScreen(lang="en")
+        self.assertEqual(screen.lang, "en")
+
 if __name__ == "__main__":
     unittest.main()

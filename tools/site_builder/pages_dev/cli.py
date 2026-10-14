@@ -265,7 +265,7 @@ tasleemat tui --lang ar
 # Command alias
 tasleemat ui</code></pre>
           <div style="margin-top: 1rem; background: var(--bg-main); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
-            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">7 Workstation Workspaces &amp; Capabilities:</div>
+            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">8 Workstation Workspaces &amp; Capabilities:</div>
             <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; padding-left: 1.25rem; margin-bottom: 1rem;">
               <li><strong>1. Scaffolding Wizard:</strong> 5-step guided project initialization with live Tier/Archetype selection and automatic AI agent injection.</li>
               <li><strong>2. Deliverables Explorer:</strong> Instant split-pane browser for all 114 deliverables with Phase and Tier filters, live Markdown viewer, and companion JSON Schema syntax inspector.</li>
@@ -273,12 +273,31 @@ tasleemat ui</code></pre>
               <li><strong>4. Bilingual Lexicon:</strong> Real-time fuzzy search across 114 standard Arabic &amp; English PMO governance terms with quick navigation.</li>
               <li><strong>5. AI Studio:</strong> Interactive deliverable synthesis studio—enter prompt/notes, select target deliverable, and stream live AI drafting directly in your terminal.</li>
               <li><strong>6. LLM Config Manager:</strong> Unrestricted model selection supporting OpenAI, Anthropic, Gemini, Groq, OpenRouter, and custom local/remote OpenAI-compatible endpoints (vLLM, Ollama, Together).</li>
-              <li><strong>7. Agent Hub:</strong> 1-click workspace generator injecting project rules, deliverable catalogs, and MCP configurations into <strong>8 AI agent environments</strong>: Cursor (<code>.cursorrules</code>), Antigravity (<code>skills/pmo-governance</code>), Claude Desktop (<code>claude_desktop_config.json</code>), VS Code (<code>tasks.json</code>), OpenCode, Cline, Windsurf (<code>.windsurfrules</code>), and OpenAI CLI Replicas.</li>
+              <li><strong>7. Agent Hub:</strong> 1-click workspace generator injecting project rules, deliverable catalogs, and MCP configurations into <strong>8 AI agent environments</strong>: Cursor, Antigravity, Claude Desktop, VS Code, OpenCode, Cline, Windsurf, and OpenAI CLI Replicas.</li>
+              <li><strong>8. Auditor &amp; KPIs:</strong> Live project workspace verification dashboard with real-time completion progress bars, governance score percentages, Stage-Gate readiness matrix, and schema compliance inspector.</li>
             </ul>
             <div style="font-size: 0.85rem; color: var(--text-muted);">
               <strong>Global Shortcuts:</strong> <code>F1</code> Help &bull; <code>F2</code> Toggle English/العربية &bull; <code>F10</code> / <code>Ctrl+Q</code> Quit &bull; <code>Tab</code> Navigate controls.
             </div>
           </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 7: audit -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #10b981; margin-bottom: 0.5rem;">G. <code>tasleemat audit</code> (Project Governance &amp; Structural Verification)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Deterministic compliance auditing for any scaffolded PMO workspace. Analyzes deliverable presence against governance tiers (1, 2, or 3) and delivery packs, computes completion percentages, validates JSON payloads against companion schemas (Draft 2020-12), and produces structured JSON for CI/CD gates.
+          </p>
+          <pre><code># Audit the current project directory with auto-detected Tier &amp; Pack
+tasleemat audit
+
+# Audit a specific directory with explicit rules and strict CI/CD exit code
+tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
+
+# Generate machine-readable JSON report for automated pipelines
+tasleemat audit ./my_workspace --json --out audit_report.json</code></pre>
         </div>
 
       </div>
@@ -692,7 +711,7 @@ tasleemat tui --lang ar
 # الاسم البديل المختصر للأمر
 tasleemat ui</code></pre>
           <div style="margin-top: 1rem; background: var(--bg-main); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
-            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">7 مساحات عمل ومزايا متقدمة في الواجهة:</div>
+            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">8 مساحات عمل ومزايا متقدمة في الواجهة:</div>
             <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; padding-right: 1.25rem; margin-bottom: 1rem;">
               <li><strong>1. معالج تهيئة المشاريع (Wizard):</strong> معالج مرشد في 5 خطوات لاختيار مستوى الحوكمة والمنهجية وتوليد بيئة العمل مع حقن إعدادات وكلاء الذكاء الاصطناعي تلقائياً.</li>
               <li><strong>2. مستكشف التسليمات (Explorer):</strong> استعراض فوري لـ 114 وثيقة بتصميم مقسوم، مع فلاتر المراحل والمستويات، ومعاينة حية لنصوص Markdown وبنية JSON Schema المرافقة.</li>
@@ -701,11 +720,30 @@ tasleemat ui</code></pre>
               <li><strong>5. استوديو الذكاء الاصطناعي (AI Studio):</strong> مساحة تفاعلية لصياغة وتوليد الوثائق من مذكراتك وملاحظاتك مع بث حي ومباشر للنصوص داخل الطرفية.</li>
               <li><strong>6. إدارة نماذج الذكاء الاصطناعي (LLM Config):</strong> حرية كاملة في تحديد أي نموذج دون قيود، مع دعم كامل لـ OpenAI و Anthropic و Gemini و Groq و OpenRouter والنماذج المحلية المتوافقة مع معيار OpenAI (مثل vLLM و Ollama و Together).</li>
               <li><strong>7. مركز ربط الوكلاء (Agent Hub):</strong> توليد فوري لإعدادات وقواعد وقوالب الوثائق وخادم MCP بنقرة واحدة لـ <strong>8 بيئات عمل ذكاء اصطناعي</strong>: Cursor و Antigravity و Claude Desktop و VS Code و OpenCode و Cline و Windsurf و OpenAI CLI Replicas.</li>
+              <li><strong>8. أداة التدقيق ومؤشرات الأداء (Auditor &amp; KPIs):</strong> لوحة تحكم تفاعلية لتدقيق بيئة العمل مع أشرطة تقدم لحظية، حساب نسب الحوكمة المئوية، ومصفوفة جاهزية البوابات، وفحص مخططات البيانات.</li>
             </ul>
             <div style="font-size: 0.85rem; color: var(--text-muted);">
               <strong>الاختصارات العامة:</strong> <code>F1</code> المساعدة &bull; <code>F2</code> التبديل بين العربية والإنجليزية &bull; <code>F10</code> / <code>Ctrl+Q</code> الخروج &bull; <code>Tab</code> التنقل بين العناصر.
             </div>
           </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 7: audit AR -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #10b981; margin-bottom: 0.5rem;">ز. <code>tasleemat audit</code> (التدقيق الحوكمي والتحقق الهيكلي)</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            أداة التدقيق المنضبطة للتحقق من امتثال أي بيئة عمل للمشروع وفق مستويات الحوكمة (المستوى 1 أو 2 أو 3) وحزمة المنهجية، مع حساب نسب الإنجاز المئوية وفحص سلامة مخططات البيانات JSON Schema (Draft 2020-12)، وتصدير تقارير JSON لأنظمة CI/CD.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code># تدقيق مجلد المشروع الحالي مع الكشف التلقائي عن المستوى والمنهجية
+tasleemat audit
+
+# تدقيق مجلد محدد مع فرض الفحص الصارم لاختبارات خطوط الإنتاج CI/CD
+tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
+
+# استخراج تقرير التدقيق بصيغة JSON المعيارية
+tasleemat audit ./my_workspace --json --out audit_report.json</code></pre>
         </div>
 
       </div>

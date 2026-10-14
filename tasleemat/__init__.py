@@ -20,6 +20,12 @@ from tasleemat.validation import (
     ValidationReport,
     validate_artifact_data,
 )
+from tasleemat.audit import (
+    audit_project,
+    ProjectAuditReport,
+    ArtifactAuditFinding,
+    GateReadinessKPI,
+)
 
 __all__ = [
     "__version__",
@@ -31,8 +37,12 @@ __all__ = [
     "get_lexicon",
     "validate_artifact_data",
     "render_artifact",
+    "audit_project",
     "ArtifactSummary",
     "ArtifactAssets",
     "ValidationReport",
     "ValidationError",
+    "ProjectAuditReport",
+    "ArtifactAuditFinding",
+    "GateReadinessKPI",
 ]

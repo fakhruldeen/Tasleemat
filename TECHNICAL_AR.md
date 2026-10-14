@@ -44,6 +44,7 @@ tasleemat tui --lang ar
   5. `🤖 AI Studio (مختبر الذكاء الاصطناعي)`: صياغة وتوليد الوثائق بنماذج الذكاء الاصطناعي وتصديرها مباشرة.
   6. `🔑 LLM API (إعدادات المزودين)`: حرية مطلقة لكتابة أي نموذج ذكاء اصطناعي مع دعم OpenRouter، Gemini، OpenAI، Claude، Ollama، ومزودي واجهات OpenAI المتوافقة (Groq، DeepSeek، إلخ).
   7. `🔌 Agents Hub (ربط الوكلاء)`: تهيئة بيئة العمل بضغطة زر لـ **Cursor، Antigravity (AGY)، Claude Desktop، VS Code، OpenCode، Cline، Windsurf، ونسخ OpenAI CLI**.
+  8. `🛡️ Auditor & KPIs (التدقيق ومؤشرات الأداء)`: تدقيق حوكمة بيئة العمل مع أشرطة تقدم لحظية، بطاقات مؤشرات الأداء، مصفوفة جاهزية البوابات، وتفاصيل سلامة المخرجات والمخططات.
 - **اختصارات لوحة المفاتيح**:
   - `F2`: التبديل الفوري بين اللغتين العربية والإنجليزية مع معالجة تشبيك النصوص العربية واتجاهها.
   - `F1`: عرض نافذة المساعدة ودليل التنقل.
@@ -53,6 +54,12 @@ tasleemat tui --lang ar
 ```bash
 # إنشاء مشروع جديد عبر المعالج التفاعلي
 tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
+
+# تدقيق والتحقق من حوكمة بيئة عمل المشروع واكتمال مخرجاته
+tasleemat audit ./projects/PRJ-2026-01 --tier 2 --pack agile
+
+# تشغيل التدقيق الصارم مع تصدير تقرير JSON لأنظمة CI/CD
+tasleemat audit ./my_project --strict --json --out audit_report.json
 
 # البحث في قوالب تسليمات بالكلمات المفتاحية
 tasleemat search "Risk" --lang en

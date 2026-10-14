@@ -15,6 +15,9 @@ import re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FORMS_DIR = ROOT / "forms"
 
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 class Colors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -341,6 +344,102 @@ def generate_artifact(args):
         print(f"\n{Colors.OKGREEN}--- Generated Output ---{Colors.ENDC}\n")
         print(output)
 
+def render_progress_bar(pct: float, width: int = 24) -> str:
+    """Render a visual terminal progress bar."""
+    filled = int(round(width * (pct / 100.0)))
+    empty = width - filled
+    bar = "█" * filled + "░" * empty
+    color = Colors.OKGREEN if pct >= 80 else (Colors.WARNING if pct >= 50 else Colors.FAIL)
+    return f"{color}[{bar}] {pct:5.1f}%{Colors.ENDC}"
+
+def audit_project_cli(args):
+    """Execute project governance audit and display KPIs, progress bars, and verification checks."""
+    from tasleemat.audit import audit_project
+
+    target_path = pathlib.Path(args.path or pathlib.Path.cwd()).resolve()
+    if not getattr(args, "json", False):
+        print(f"\n{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}")
+        print(f"{Colors.HEADER}{Colors.BOLD}   🛡️  Tasleemat PMO Project Governance Audit & Structural Verification          {Colors.ENDC}")
+        print(f"{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}\n")
+        print(f"Auditing workspace: {Colors.OKBLUE}{target_path}{Colors.ENDC}\n")
+
+    try:
+        report = audit_project(
+            project_path=target_path,
+            tier=getattr(args, "tier", None),
+            pack=getattr(args, "pack", None),
+            strict_schema=not getattr(args, "no_schema", False),
+        )
+    except Exception as e:
+        print(f"{Colors.FAIL}❌ Audit failed to execute: {e}{Colors.ENDC}\n")
+        sys.exit(1)
+
+    if getattr(args, "json", False):
+        report_json = json.dumps(report.to_dict(), indent=2, ensure_ascii=False)
+        if getattr(args, "out", None):
+            out_file = pathlib.Path(args.out)
+            out_file.write_text(report_json, encoding="utf-8")
+            print(f"{Colors.OKGREEN}✅ Audit report exported to: {out_file}{Colors.ENDC}\n")
+        else:
+            print(report_json)
+        sys.exit(0 if report.is_compliant else 1)
+
+    # Display Project Metadata
+    print(f"{Colors.BOLD}Project Name:{Colors.ENDC}    {report.project_name}")
+    print(f"{Colors.BOLD}Project Code:{Colors.ENDC}    {report.project_code}")
+    print(f"{Colors.BOLD}Governance Tier:{Colors.ENDC} Tier {report.tier}")
+    print(f"{Colors.BOLD}Methodology:{Colors.ENDC}     {report.pack.upper()}")
+    print(f"{Colors.BOLD}Languages:{Colors.ENDC}       {', '.join(report.detected_langs).upper()}")
+    if report.agent_integrations_found:
+        print(f"{Colors.BOLD}Agent Integrations:{Colors.ENDC} {', '.join(report.agent_integrations_found)}")
+    print()
+
+    # Display High-Level KPIs & Progress Bars
+    print(f"{Colors.BOLD}--- 📊 Governance KPIs & Progress Metrics ---{Colors.ENDC}")
+    print(f"Overall Completion:    {render_progress_bar(report.overall_progress_pct)} ({report.total_present}/{report.total_required} Deliverables)")
+    print(f"Governance Score:      {render_progress_bar(report.governance_score_pct)} ({report.total_valid}/{report.total_required} Fully Compliant)")
+    print(f"Schema Integrity:      {render_progress_bar(report.schema_compliance_pct)} ({report.total_schema_errors} Schema Errors)")
+    print()
+
+    # Display Stage-Gate Readiness Matrix
+    print(f"{Colors.BOLD}--- 🚪 Stage-Gate Readiness Matrix ---{Colors.ENDC}")
+    print(f"{'Gate ID':<10} {'Stage Name':<42} {'Progress':<32} {'Status'}")
+    print("-" * 92)
+    for g in report.gate_readiness:
+        status_color = Colors.OKGREEN if g.status == "PASS" else (Colors.WARNING if g.status == "WARN" else Colors.FAIL)
+        bar = render_progress_bar(g.percentage, width=16)
+        comp_str = f"({g.completed_count}/{g.required_count})"
+        print(f"{g.gate_id:<10} {g.gate_name_en[:40]:<42} {bar} {comp_str:<8} {status_color}[{g.status}]{Colors.ENDC}")
+    print("-" * 92)
+    print()
+
+    # Display Deliverable Findings Breakdown
+    print(f"{Colors.BOLD}--- 📋 Deliverable Findings Details ---{Colors.ENDC}")
+    for f in report.findings:
+        if f.status == "valid":
+            badge = f"{Colors.OKGREEN}✓ VALID{Colors.ENDC}"
+        elif f.status == "incomplete":
+            badge = f"{Colors.WARNING}⚠ INCOMPLETE{Colors.ENDC}"
+        elif f.status == "schema_error":
+            badge = f"{Colors.FAIL}✖ SCHEMA ERR{Colors.ENDC}"
+        else:
+            badge = f"{Colors.FAIL}✗ MISSING{Colors.ENDC}"
+
+        files_info = f"({len(f.found_files)} files)" if f.found_files else "(no files)"
+        print(f"[{badge}] {Colors.BOLD}{f.artifact_id:<14}{Colors.ENDC} {f.name_en[:38]:<40} {files_info}")
+        if f.messages:
+            for m in f.messages:
+                print(f"         ↳ {Colors.WARNING}{m}{Colors.ENDC}")
+
+    print()
+    if report.is_compliant:
+        print(f"{Colors.OKGREEN}{Colors.BOLD}✅ AUDIT PASSED: Workspace is 100% compliant with Tier {report.tier} ({report.pack.upper()}) governance standards!{Colors.ENDC}\n")
+        sys.exit(0)
+    else:
+        print(f"{Colors.WARNING}{Colors.BOLD}⚠️  AUDIT NOTICE: {report.total_missing} missing deliverables, {report.total_schema_errors} schema errors.{Colors.ENDC}")
+        print(f"To remediate, use {Colors.OKBLUE}tasleemat generate{Colors.ENDC} or the interactive {Colors.OKBLUE}tasleemat tui{Colors.ENDC} workstation.\n")
+        sys.exit(0 if not getattr(args, "strict", False) else 1)
+
 def run_tests(args):
     """Execute the comprehensive automated test suite."""
     import unittest
@@ -449,6 +548,20 @@ def print_comprehensive_help(target_cmd=None):
             ],
             "example": "tasleemat tui --lang ar"
         },
+        "audit": {
+            "title": "audit — Audit and verify a project workspace against PMO governance tiers",
+            "desc": "Inspects project deliverables, calculates governance KPIs, progress percentage, Stage-Gate readiness, and Draft 2020-12 schema validation.",
+            "args": [
+                ("path PATH", "Path to project directory (Default: current directory)"),
+                ("-t, --tier {1,2,3}", "Override governance tier (Default: auto-detect from project)"),
+                ("-p, --pack {general,agile,ai,predictive,hybrid}", "Override methodology pack (Default: auto-detect)"),
+                ("--strict", "Exit with code 1 if any deliverable is missing or schema validation fails"),
+                ("--no-schema", "Skip deep JSON schema verification"),
+                ("--json", "Output audit report as structured JSON for CI/CD"),
+                ("-o, --out PATH", "Save JSON audit report to target file")
+            ],
+            "example": "tasleemat audit ./projects/PRJ-01 --tier 2 --pack agile --strict"
+        },
         "test": {
             "title": "test — Run complete automated test suite",
             "desc": "Executes 130+ unit & integration tests covering forms, schemas, data packages, CLI, and links.",
@@ -555,6 +668,16 @@ def main():
     ui_parser = subparsers.add_parser("ui", help="Alias for tui")
     ui_parser.add_argument("-l", "--lang", choices=["ar", "en"], default="en", help="Default interface language (Default: en)")
 
+    # audit command
+    audit_parser = subparsers.add_parser("audit", help="Audit and verify a project workspace against PMO governance tiers")
+    audit_parser.add_argument("path", nargs="?", default=".", help="Path to project workspace (Default: current directory)")
+    audit_parser.add_argument("-t", "--tier", choices=["1", "2", "3"], help="Override governance tier (Default: auto-detect)")
+    audit_parser.add_argument("-p", "--pack", choices=["general", "agile", "ai", "predictive", "hybrid"], help="Override methodology pack (Default: auto-detect)")
+    audit_parser.add_argument("--strict", action="store_true", help="Exit with code 1 if any deliverable is missing or schema fails")
+    audit_parser.add_argument("--no-schema", action="store_true", help="Skip deep Draft 2020-12 schema validation on JSON payloads")
+    audit_parser.add_argument("--json", action="store_true", help="Output audit report as structured JSON")
+    audit_parser.add_argument("-o", "--out", help="Save JSON report to file")
+
     # help command
     help_parser = subparsers.add_parser("help", help="Display complete CLI help manual")
     help_parser.add_argument("subcommand", nargs="?", help="Optional subcommand for specific help")
@@ -575,6 +698,8 @@ def main():
         generate_artifact(args)
     elif args.command == "test":
         run_tests(args)
+    elif args.command == "audit":
+        audit_project_cli(args)
     elif args.command == "mcp":
         from tasleemat.mcp.server import main as mcp_main
         sys.exit(mcp_main())
