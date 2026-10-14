@@ -1,1251 +1,68 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="light">
+<html lang="en" dir="ltr" data-md-color-scheme="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تصدير مجلد مشروع بالكامل | تسليمات</title>
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="تصدير مجلد مشروع بالكامل | تسليمات">
-  <meta name="description" content="---">
-  <meta name="author" content="Mohamed Fouad Fakhruldeen">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://fakhr.me/Tasleemat/ar/11_tools_and_automation.html">
-  <link rel="alternate" hreflang="en" href="https://fakhr.me/Tasleemat/en/11_tools_and_automation.html">
-  <link rel="alternate" hreflang="ar" href="https://fakhr.me/Tasleemat/ar/11_tools_and_automation.html">
-  
-  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://fakhr.me/Tasleemat/ar/11_tools_and_automation.html">
-  <meta property="og:site_name" content="تسليمات | Tasleemat">
-  <meta property="og:title" content="تصدير مجلد مشروع بالكامل | تسليمات">
-  <meta property="og:description" content="---">
-  <meta property="og:image" content="https://fakhr.me/Tasleemat/img/social.png">
-  <meta property="og:image:secure_url" content="https://fakhr.me/Tasleemat/img/social.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1280">
-  <meta property="og:image:height" content="640">
-  <meta property="og:image:alt" content="تصدير مجلد مشروع بالكامل - تسليمات">
-  <meta property="og:locale" content="ar_SA">
-  <meta property="og:locale:alternate" content="en_US">
-
-  <!-- Twitter / X Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://fakhr.me/Tasleemat/ar/11_tools_and_automation.html">
-  <meta name="twitter:title" content="تصدير مجلد مشروع بالكامل | تسليمات">
-  <meta name="twitter:description" content="---">
-  <meta name="twitter:image" content="https://fakhr.me/Tasleemat/img/social.png">
-  <meta name="twitter:image:alt" content="تصدير مجلد مشروع بالكامل - تسليمات">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-
-:root {
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
-  
-  --bg-main: #f8fafc;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f1f5f9;
-  --border-color: #e2e8f0;
-  --border-focus: #3b82f6;
-  
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --text-dim: #94a3b8;
-  
-  --primary: #0f172a;
-  --primary-contrast: #ffffff;
-  --accent-emerald: #059669;
-  --accent-emerald-bg: #ecfdf5;
-  --accent-emerald-border: #a7f3d0;
-  
-  --accent-blue: #2563eb;
-  --accent-blue-bg: #eff6ff;
-  --accent-blue-border: #bfdbfe;
-  
-  --accent-amber: #d97706;
-  --accent-amber-bg: #fffbeb;
-  --accent-amber-border: #fde68a;
-  
-  --tag-bg: #f1f5f9;
-  --tag-text: #475569;
-}
-
-[data-theme="dark"] {
-  --bg-main: #090d16;
-  --bg-card: #111827;
-  --bg-card-hover: #1f2937;
-  --border-color: #1f2937;
-  --border-focus: #60a5fa;
-  
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  
-  --primary: #f8fafc;
-  --primary-contrast: #0f172a;
-  --accent-emerald: #10b981;
-  --accent-emerald-bg: #064e3b;
-  --accent-emerald-border: #047857;
-  
-  --accent-blue: #3b82f6;
-  --accent-blue-bg: #1e3a8a;
-  --accent-blue-border: #1d4ed8;
-  
-  --accent-amber: #f59e0b;
-  --accent-amber-bg: #78350f;
-  --accent-amber-border: #b45309;
-  
-  --tag-bg: #1e293b;
-  --tag-text: #cbd5e1;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--bg-main);
-  color: var(--text-main);
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  -webkit-font-smoothing: antialiased;
-}
-
-[dir="rtl"] body {
-  font-family: var(--font-arabic);
-}
-
-a {
-  color: var(--accent-blue);
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Accessibility Focus Ring */
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
-  outline: 2px solid var(--border-focus);
-  outline-offset: 2px;
-}
-
-/* Layout Containers */
-.container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-/* Navigation Header */
-.site-header {
-  background-color: var(--bg-card);
-  border-bottom: 1px solid var(--border-color);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(8px);
-}
-
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 4.25rem;
-}
-
-.brand-group {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--text-main);
-  text-decoration: none;
-}
-
-.brand-badge {
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.15rem 0.5rem;
-  border-radius: 9999px;
-  background-color: var(--accent-emerald-bg);
-  color: var(--accent-emerald);
-  border: 1px solid var(--accent-emerald-border);
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav-link {
-  color: var(--text-muted);
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.15s;
-}
-
-.nav-link:hover, .nav-link.active {
-  color: var(--text-main);
-  text-decoration: none;
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.btn-utility {
-  background: var(--tag-bg);
-  color: var(--text-main);
-  border: 1px solid var(--border-color);
-  padding: 0.4rem 0.75rem;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.btn-utility:hover {
-  background: var(--bg-card-hover);
-  text-decoration: none;
-}
-
-/* Hero Section */
-.hero-section {
-  padding: 4rem 0 3rem;
-  text-align: center;
-  border-bottom: 1px solid var(--border-color);
-  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
-}
-
-.hero-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.9rem;
-  border-radius: 9999px;
-  background-color: var(--accent-blue-bg);
-  color: var(--accent-blue);
-  border: 1px solid var(--accent-blue-border);
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-
-.hero-title {
-  font-size: 2.75rem;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
-  margin-bottom: 1.25rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 760px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
-}
-
-.hero-actions {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.btn-primary {
-  background-color: #0f172a;
-  color: #ffffff;
-  padding: 0.75rem 1.75rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border: 1px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-[data-theme="dark"] .btn-primary {
-  background-color: #f8fafc;
-  color: #0f172a;
-}
-
-.btn-primary:hover {
-  opacity: 0.95;
-  text-decoration: none;
-}
-
-.btn-secondary {
-  background-color: var(--bg-card);
-  color: var(--text-main);
-  padding: 0.75rem 1.75rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border: 1px solid var(--border-color);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btn-secondary:hover {
-  background-color: var(--bg-card-hover);
-  text-decoration: none;
-}
-
-/* Honesty & Boundaries Grid */
-.boundaries-section {
-  padding: 3.5rem 0;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.section-title {
-  font-size: 1.85rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.section-desc {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-}
-
-.boundaries-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.75rem;
-}
-
-.boundary-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  padding: 1.75rem;
-}
-
-.boundary-card.provides {
-  border-top: 4px solid var(--accent-emerald);
-}
-
-.boundary-card.limits {
-  border-top: 4px solid var(--accent-amber);
-}
-
-.boundary-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.boundary-list {
-  list-style: none;
-}
-
-.boundary-list li {
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--border-color);
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  font-size: 0.95rem;
-}
-
-.boundary-list li:last-child {
-  border-bottom: none;
-}
-
-/* Lifecycle Stage Hub */
-.stages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
-  margin-top: 1.5rem;
-}
-
-.stage-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  transition: transform 0.15s, box-shadow 0.15s;
-  display: flex;
-  flex-direction: column;
-}
-
-.stage-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  text-decoration: none;
-}
-
-.stage-badge {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  margin-bottom: 0.35rem;
-}
-
-.stage-name {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
-}
-
-.stage-desc {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  flex-grow: 1;
-  margin-bottom: 0.75rem;
-}
-
-.stage-count {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent-blue);
-}
-
-/* Card & Grid Layouts */
-.grid-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.card:hover {
-  border-color: var(--border-focus);
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.card-desc {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  flex-grow: 1;
-}
-
-/* Tags and Chips */
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.5rem;
-}
-
-.tag {
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.25rem;
-  background: var(--tag-bg);
-  color: var(--tag-text);
-  border: 1px solid var(--border-color);
-}
-
-.tag.tier {
-  background: var(--accent-blue-bg);
-  color: var(--accent-blue);
-  border-color: var(--accent-blue-border);
-}
-
-.tag.pack {
-  background: var(--accent-emerald-bg);
-  color: var(--accent-emerald);
-  border-color: var(--accent-emerald-border);
-}
-
-/* Interactive Deliverables Explorer */
-.explorer-controls {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.search-input-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.search-input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  background: var(--bg-main);
-  color: var(--text-main);
-  font-family: inherit;
-}
-
-[dir="rtl"] .search-input {
-  text-align: right;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-}
-
-.filters-row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  flex: 1;
-  min-width: 180px;
-}
-
-.filter-label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--text-muted);
-}
-
-.filter-select {
-  padding: 0.55rem 0.75rem;
-  font-size: 0.9rem;
-  border: 1px solid var(--border-color);
-  border-radius: 0.375rem;
-  background: var(--bg-main);
-  color: var(--text-main);
-  font-family: inherit;
-}
-
-.explorer-status {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  padding: 0.25rem 0.5rem;
-}
-
-/* Deliverable Item Card */
-.deliverable-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.deliverable-card:hover {
-  border-color: var(--border-focus);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.deliverable-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
-}
-
-.deliverable-id {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--accent-blue);
-  background: var(--accent-blue-bg);
-  padding: 0.15rem 0.4rem;
-  border-radius: 0.25rem;
-}
-
-.deliverable-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.35rem;
-  color: var(--text-main);
-}
-
-.deliverable-title-alt {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 0.75rem;
-}
-
-.deliverable-actions {
-  margin-top: 1rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Tabs UI for Detail Pages */
-.tabs-container {
-  margin: 2rem 0;
-}
-
-.tabs-nav {
-  display: flex;
-  gap: 0.5rem;
-  border-bottom: 2px solid var(--border-color);
-  margin-bottom: 1.5rem;
-  overflow-x: auto;
-}
-
-.tab-btn {
-  padding: 0.75rem 1.25rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  background: none;
-  border: none;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -2px;
-  color: var(--text-muted);
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.tab-btn:hover {
-  color: var(--text-main);
-}
-
-.tab-btn.active {
-  color: var(--accent-blue);
-  border-bottom-color: var(--accent-blue);
-}
-
-.tab-pane {
-  display: none;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  padding: 2rem;
-}
-
-.tab-pane.active {
-  display: block;
-}
-
-/* Code Blocks & Schemas */
-pre {
-  background: #0f172a;
-  color: #f8fafc;
-  padding: 1.25rem;
-  border-radius: 0.5rem;
-  overflow-x: auto;
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin: 1rem 0;
-  direction: ltr !important;
-  text-align: left !important;
-}
-
-code {
-  font-family: var(--font-mono);
-  font-size: 0.875em;
-  padding: 0.15rem 0.35rem;
-  border-radius: 0.25rem;
-  background: var(--tag-bg);
-  color: var(--text-main);
-  direction: ltr;
-  display: inline-block;
-}
-
-pre code {
-  padding: 0;
-  background: transparent;
-  color: inherit;
-  display: block;
-}
-
-/* Mermaid Diagrams Styling */
-.mermaid {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  text-align: center;
-  overflow-x: auto;
-  direction: ltr !important;
-}
-
-.mermaid svg {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-}
-
-/* Callouts / Admonitions */
-.admonition, .callout {
-  border-left: 4px solid var(--accent-blue);
-  background: var(--accent-blue-bg);
-  padding: 1rem 1.25rem;
-  margin: 1.25rem 0;
-  border-radius: 0 0.375rem 0.375rem 0;
-}
-
-[dir="rtl"] .admonition, [dir="rtl"] .callout {
-  border-left: none;
-  border-right: 4px solid var(--accent-blue);
-  border-radius: 0.375rem 0 0 0.375rem;
-}
-
-.admonition.note {
-  border-color: var(--accent-blue);
-  background: var(--accent-blue-bg);
-}
-
-.admonition.tip {
-  border-color: var(--accent-emerald);
-  background: var(--accent-emerald-bg);
-}
-
-.admonition.warning {
-  border-color: var(--accent-amber);
-  background: var(--accent-amber-bg);
-}
-
-.admonition-title {
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin-bottom: 0.35rem;
-}
-
-/* Markdown Content Styling */
-.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
-  margin-top: 1.75rem;
-  margin-bottom: 0.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-}
-
-.markdown-body p {
-  margin-bottom: 1rem;
-}
-
-.markdown-body ul, .markdown-body ol {
-  margin-left: 1.75rem;
-  margin-bottom: 1.25rem;
-}
-
-[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
-  margin-left: 0;
-  margin-right: 1.75rem;
-}
-
-.markdown-body blockquote {
-  border-left: 4px solid var(--border-color);
-  padding-left: 1rem;
-  color: var(--text-muted);
-  margin: 1rem 0;
-}
-
-[dir="rtl"] .markdown-body blockquote {
-  border-left: none;
-  border-right: 4px solid var(--border-color);
-  padding-left: 0;
-  padding-right: 1rem;
-}
-
-/* Tables */
-.table-wrapper, .markdown-body table {
-  overflow-x: auto;
-  margin: 1.5rem 0;
-  width: 100%;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-[dir="rtl"] table {
-  text-align: right;
-}
-
-th, td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
-th {
-  background: var(--bg-main);
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: var(--text-muted);
-}
-
-tr:hover td {
-  background: var(--bg-card-hover);
-}
-
-/* ==========================================================================
-   Realistic Example & Form Viewer Components (Stitch Design System)
-   ========================================================================== */
-
-.deliverable-header-card {
-  background: var(--bg-card-hover);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
-  margin: 0.5rem 0 1.25rem 0;
-  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.04);
-}
-
-[data-theme="dark"] .deliverable-header-card {
-  background: #1e293b;
-  border-color: #334155;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-}
-
-.deliverable-badge-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.25rem 0.65rem;
-  border-radius: 6px;
-  line-height: 1.2;
-}
-
-.badge-code {
-  background-color: var(--accent-blue-bg);
-  color: var(--accent-blue);
-  border: 1px solid var(--accent-blue-border);
-}
-
-[data-theme="dark"] .badge-code {
-  background-color: rgba(37, 99, 235, 0.25);
-  color: #93c5fd;
-  border-color: rgba(37, 99, 235, 0.45);
-}
-
-.badge-phase {
-  background-color: #f1f5f9;
-  color: #334155;
-  border: 1px solid #cbd5e1;
-}
-
-[data-theme="dark"] .badge-phase {
-  background-color: #334155;
-  color: #cbd5e1;
-  border-color: #475569;
-}
-
-.badge-example {
-  background-color: var(--accent-emerald-bg);
-  color: var(--accent-emerald);
-  border: 1px solid var(--accent-emerald-border);
-}
-
-[data-theme="dark"] .badge-example {
-  background-color: rgba(16, 185, 129, 0.2);
-  color: #6ee7b7;
-  border-color: rgba(16, 185, 129, 0.4);
-}
-
-/* Document Metadata Bar & Chips */
-.doc-meta-bar {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.doc-meta-chip {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  padding: 0.85rem 1.1rem;
-  border-radius: 8px;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.doc-meta-chip:hover {
-  border-color: var(--border-focus);
-}
-
-.meta-chip-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  margin-bottom: 0.25rem;
-}
-
-.meta-chip-val {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  word-break: break-word;
-}
-
-/* Form Viewer Container & Elevation */
-.form-viewer-container {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 2rem 2.25rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="dark"] .form-viewer-container {
-  background: #0f172a;
-  border-color: #1e293b;
-}
-
-.form-viewer-container table {
-  margin: 1.5rem 0;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.form-viewer-container blockquote {
-  background: var(--bg-main);
-  border-radius: 0 8px 8px 0;
-  padding: 1rem 1.25rem;
-}
-
-[dir="rtl"] .form-viewer-container blockquote {
-  border-radius: 8px 0 0 8px;
-}
-
-
-
-/* Footer */
-.site-footer {
-  margin-top: auto;
-  background: var(--bg-card);
-  border-top: 1px solid var(--border-color);
-  padding: 3rem 0;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.footer-heading {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-main);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-color);
-}
-
-.footer-quick-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 2rem;
-  background: var(--bg-card-hover);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-}
-
-.footer-pip-box {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.footer-pip-code {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  background: var(--bg-card);
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  color: var(--accent-blue);
-  font-weight: 600;
-  direction: ltr !important;
-  text-align: left;
-}
-
-.footer-links-row {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.footer-badge-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.85rem;
-  border-radius: 6px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-decoration: none !important;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
-  transition: all 0.15s ease;
-}
-
-.footer-badge-link:hover {
-  border-color: var(--border-focus);
-  color: var(--accent-blue);
-  background: var(--bg-card-hover);
-}
-
-/* Author Profile Card in Footer */
-.footer-author-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 2rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-}
-
-.author-info-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.author-avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--accent-blue);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  flex-shrink: 0;
-}
-
-.author-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.author-name {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--text-main);
-  line-height: 1.2;
-}
-
-.author-bio {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.45;
-  max-width: 550px;
-}
-
-.author-links-group {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
-.author-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.9rem;
-  border-radius: 6px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-decoration: none !important;
-  border: 1px solid var(--border-color);
-  background: var(--bg-card-hover);
-  color: var(--text-main);
-  transition: all 0.15s ease;
-}
-
-.author-btn:hover {
-  background: var(--accent-blue-bg);
-  border-color: var(--accent-blue-border);
-  color: var(--accent-blue);
-}
-
-.author-btn.linkedin:hover {
-  background: #0077b5;
-  color: #ffffff;
-  border-color: #0077b5;
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 900px) {
-  .boundaries-grid {
-
-
-    grid-template-columns: 1fr;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-  .nav-menu {
-    display: none;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-}
-
-  </style>
-  
+  <title>🛠️ دليل الأدوات البرمجية والأتمتة والتكامل السحابي (CI/CD) | Tasleemat PMO Operating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+  <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="../assets/tasleemat_data.js"></script>
+  <script src="../assets/search.js"></script>
+  <script src="../assets/explorer.js"></script>
 </head>
-<body>
-  <header class="site-header" role="banner">
-    <div class="container nav-wrapper">
-      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
-        <span>📦 تسليمات</span>
-        <span class="brand-badge">v2.5.0.post1</span>
-      </a>
-      
-      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
-        <ul class="nav-menu">
-          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
-<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
-<li><a href="/Tasleemat/ar/deliverables/" class="nav-link ">التسليمات</a></li>
-<li><a href="/Tasleemat/ar/tailoring/" class="nav-link ">مستويات الحوكمة</a></li>
-<li><a href="/Tasleemat/ar/guides/" class="nav-link active">الأدلة والحوكمة</a></li>
-<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
-        </ul>
+<body class="bg-[#faf8ff] text-[#131b2e] min-h-screen flex flex-col font-['Inter','Noto_Sans_Arabic',sans-serif]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#e2e7ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-2.5 text-decoration-none">
+          <img src="../img/logo.png" alt="Tasleemat PMO Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-[#131b2e] leading-none">Tasleemat (تسليمات)</span>
+            <span class="text-[10px] font-semibold text-[#45464d] uppercase tracking-wider">Enterprise PMO Toolkit</span>
+          </div>
+        </a>
+        <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">v2.3.0</span>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
+        <a href="../index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Home / Overview</a>
+        <a href="../catalog/en/index.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">114 Templates Catalog</a>
+        <a href="../governance.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Stage-Gate Governance</a>
+        <a href="../governance.html#tailoring-matrix" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Tailoring Profiles</a>
+        <a href="../forms/en/form-viewer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Form Viewer</a>
+        <a href="../en/01_getting_started.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">PMO Manuals</a>
+        <a href="../developer.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Developer & CLI</a>
+        <a href="../LEXICON.html" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">Bilingual Lexicon</a>
       </nav>
 
-      <div class="nav-actions">
-        <a href="/Tasleemat/en/11_tools_and_automation.html" class="btn-utility" aria-label="Switch Language">
-          🌐 English
-        </a>
-        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
-          🌓
+      <div class="flex items-center gap-2">
+        <button class="tasleemat-search-btn flex items-center gap-1.5 bg-[#f2f3ff] hover:bg-[#eaedff] text-[#45464d] px-2.5 py-1.5 rounded-lg text-xs font-medium border border-[#c6c6ce]/60 transition">
+          <span>🔍</span>
+          <span class="hidden sm:inline">Search...</span>
+          <kbd class="hidden sm:inline bg-white px-1.5 py-0.5 rounded border text-[10px]">Ctrl K</kbd>
         </button>
-        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository" style="display: inline-flex; align-items: center; gap: 0.35rem;">
-          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
-          GitHub
+        
+        <a href="../ar/11_tools_and_automation.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#006a61] bg-[#86f2e4]/20 border border-[#006a61]/30 rounded-lg hover:bg-[#86f2e4]/40 transition">🇸🇦 العربية</a>
+
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
+          <span>★</span><span>2 Stars</span>
         </a>
       </div>
     </div>
   </header>
 
-  <main id="main-content" role="main">
-    
-            <div class="container" style="margin-top: 2.5rem; margin-bottom: 4rem; max-width: 900px;">
-              <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
-                <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
-                <a href="/Tasleemat/guides/" style="color: var(--text-muted);">الأدلة</a> &gt; 
-                <span style="color: var(--text-main); font-weight: 600;">تصدير مجلد مشروع بالكامل</span>
-              </nav>
-
-              <div class="card markdown-body" style="padding: 2.5rem; line-height: 1.8;">
-                <div class="lang-switch-bar">
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-xl border border-[#e2e7ff] shadow-sm">
+      <div class="lang-switch-bar">
   <span class="lang-switch-label">🌐 <strong>اللغة:</strong> الدليل باللغة العربية</span>
   <div class="lang-switch-actions">
     <a class="lang-switch-btn github-btn" href="https://github.com/fakhruldeen/Tasleemat/blob/main/docs/ar/11_tools_and_automation.md" target="_blank" rel="noopener noreferrer">🐙 عرض على GitHub ↗</a>
@@ -1492,7 +309,7 @@ python3 tools/export_deliverables.py my_project_workspace/
 </code></pre>
 <hr />
 <h2 id="4-repository-first">🌐 4. هيكلية التوثيق المباشر عبر المستودع (Repository-First)</h2>
-<p>تحتفظ تسليمات بكافة أدلة الحوكمة، والأدلة التشغيلية، والنماذج ثنائية اللغة بصيغة ماركداون الأصلية المباشرة داخل مستودع GitHub. تم إيقاف بوابة الويب السابقة لضمان بقاء التوثيق خاضعاً لإدارة النسخ وتدقيق التغييرات جنباً إلى جنب مع الشيفرات والقوالب. يمكن تصفح جميع الأدلة بدءاً من <a href="../README.md"><code>docs/README.md</code></a>.</p>
+<p>تحتفظ تسليمات بكافة أدلة الحوكمة، والأدلة التشغيلية، والنماذج ثنائية اللغة بصيغة ماركداون الأصلية المباشرة داخل مستودع GitHub. تم إيقاف بوابة الويب السابقة لضمان بقاء التوثيق خاضعاً لإدارة النسخ وتدقيق التغييرات جنباً إلى جنب مع الشيفرات والقوالب. يمكن تصفح جميع الأدلة بدءاً من <a href="../README.html"><code>docs/README.md</code></a>.</p>
 <hr />
 <h2 id="5">🛡️ 5. حزمة التدقيق والفحص البرمجي في بايثون</h2>
 <p>يحتوي مجلد <code>tests/</code> و <code>tools/</code> على منظومة اختبارات وتدقيق آلية متكاملة:</p>
@@ -1525,177 +342,80 @@ python3 tools/export_deliverables.py my_project_workspace/
 4. فحص حزمة البيانات المفتوحة Frictionless (<code>validate_okf.py</code>).
 5. تشغيل حزمة الاختبارات الآلية الشاملة المكونة من 130 فحصاً عبر 15 وحدة (<code>tests/</code>).
 6. اختبار واجهة الأوامر وخادم بروتوكول MCP (<code>tasleemat_cli.py</code> &amp; MCP server).</p>
-              </div>
-            </div>
-            
+    </div>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <!-- Quick Installation & GitHub Repository Bar -->
-      <div class="footer-quick-bar">
-        <div class="footer-pip-box">
-          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
-            تثبيت الحزمة عبر pip:
-          </span>
-          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
-          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ', 2000);">
-            نسخ
-          </button>
-        </div>
-        <div class="footer-links-row">
-          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
-            📦 حزمة PyPI (v2.5.0.post1)
-          </a>
-          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.35rem;">
-            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
-            مستودع GitHub للمشروع
-          </a>
-          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
-            💬 إبلاغ عن ملاحظة
-          </a>
-        </div>
-      </div>
-
-      <!-- Author Profile Card -->
-      <div class="footer-author-card">
-        <div class="author-info-group">
-          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fouad Fakhruldeen" class="author-avatar" loading="lazy" />
-          <div class="author-details">
-            <div class="author-name">محمد فؤاد فخر الدين</div>
-            <div class="author-bio">
-              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
-            </div>
+  <footer class="w-full bg-[#f2f3ff] border-t border-[#e2e7ff] mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-[#e2e7ff]">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base text-[#131b2e]">Tasleemat (تسليمات)</span>
+            <span class="px-2 py-0.5 rounded bg-[#dae2fd] text-[#45464d] font-mono text-xs">PMO Framework</span>
+          </div>
+          <p class="text-xs text-[#45464d] max-w-lg leading-relaxed">
+            An institutional-grade, bilingual Project Management & AI Governance artifact matrix supporting PMBOK 6/7/8, ISO 21500, and Saudi Digital Government Authority (DGA) delivery standards.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">PMI PMBOK® 6/7/8</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">ISO 21500:2021</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#006a61] font-mono text-xs border border-[#86f2e4]/50">NIST AI RMF 1.0</span>
+            <span class="px-2 py-0.5 rounded bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40">MIT License</span>
           </div>
         </div>
-        <div class="author-links-group">
-          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
-            🌐 fakhr.me
-          </a>
-          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin" style="display: inline-flex; align-items: center; gap: 0.35rem;">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn" style="display: inline-flex; align-items: center; gap: 0.35rem;">
-            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
 
-
-      <div class="footer-grid">
-        <div>
-          <div class="footer-heading">📦 تسليمات</div>
-          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
-
-          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
-        </div>
-        <div>
-          <div class="footer-heading">التنقل</div>
-          <ul class="footer-links">
-            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
-            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
-            <li><a href="/Tasleemat/tailoring/">مستويات الحوكمة</a></li>
-            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Framework Resources</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../catalog/en/index.html">114 Deliverables Library</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html">Stage-Gate Inspection</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../governance.html#tailoring-matrix">Enterprise Tailoring</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="../LEXICON.html">Bilingual Lexicon</a></li>
           </ul>
         </div>
-        <div>
-          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
-          <ul class="footer-links">
-            <li><a href="/Tasleemat/developers/">بوابة المطورين</a></li>
-            <li><a href="/Tasleemat/developers/cli/">أداة سطر الأوامر</a></li>
-            <li><a href="/Tasleemat/developers/sdk/">مكتبة بايثون</a></li>
-            <li><a href="/Tasleemat/developers/mcp/">خادم MCP</a></li>
-            <li><a href="/Tasleemat/developers/schemas/">مخططات JSON</a></li>
-            <li><a href="/Tasleemat/developers/agentic/">أسراب الوكلاء وبوابات CI/CD</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-heading">المجتمع والسياسات</div>
-          <ul class="footer-links">
-            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.35rem;"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg> GitHub</a></li>
-            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">📦 PyPI Package</a></li>
-            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-[#131b2e]">Developer & Tools</h4>
+          <ul class="space-y-1.5 text-xs text-[#45464d]">
+            <li><a class="hover:text-[#131b2e] transition" href="../developer.html">CLI Documentation</a></li>
+            <li><code class="font-mono text-xs px-2 py-0.5 rounded bg-[#eaedff] text-[#131b2e]">pip install tasleemat</code></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://github.com/fakhruldeen/Tasleemat" target="_blank">GitHub Repository</a></li>
+            <li><a class="hover:text-[#131b2e] transition" href="https://doi.org/10.5281/zenodo.23193523" target="_blank">Zenodo Archive</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
-        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#45464d]">
+        <div>© 2026 Tasleemat (تسليمات) Open Source PMO Collective. Released under the MIT License.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-[#131b2e] transition" href="../index.html">Home</a>
+          <a class="hover:text-[#131b2e] transition" href="../governance.html">Governance</a>
+          <a class="hover:text-[#131b2e] transition" href="../developer.html">Developer SDK</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
-
-// Tasleemat Portal Runtime Scripts
-(function() {
-  // Theme Toggle Support
-  const themeToggle = document.getElementById('theme-toggle');
-  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', storedTheme);
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('tasleemat-theme', next);
-    });
-  }
-
-  // Interactive Tabs Controller
-  window.switchTab = function(evt, tabId) {
-    const parent = evt.target.closest('.tabs-container');
-    if (!parent) return;
-    
-    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-    
-    evt.target.classList.add('active');
-    const targetPane = document.getElementById(tabId);
-    if (targetPane) targetPane.classList.add('active');
-  };
-
-  // Copy to Clipboard
-  window.copySnippet = function(btn, snippetId) {
-    const el = document.getElementById(snippetId);
-    if (!el) return;
-    navigator.clipboard.writeText(el.innerText).then(() => {
-      const orig = btn.innerText;
-      btn.innerText = 'Copied!';
-      setTimeout(() => { btn.innerText = orig; }, 2000);
-    });
-  };
-
-  // Render Mermaid diagrams automatically
-  document.addEventListener("DOMContentLoaded", function() {
-    // Convert any pre.code.language-mermaid into div.mermaid
-    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
-      var pre = codeBlock.closest("pre");
-      var mermaidDiv = document.createElement("div");
-      mermaidDiv.className = "mermaid";
-      mermaidDiv.textContent = codeBlock.textContent;
-      if (pre && pre.parentNode) {
-        pre.parentNode.replaceChild(mermaidDiv, pre);
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'neutral',
+          fontFamily: 'Inter, sans-serif'
+        });
       }
     });
-
-    if (window.mermaid) {
-      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
-      mermaid.initialize({
-        startOnLoad: true,
-        theme: isDark ? "dark" : "neutral",
-        securityLevel: "loose",
-        flowchart: { useMaxWidth: true, htmlLabels: true }
-      });
-    }
-  });
-})();
-
   </script>
-  
 </body>
 </html>
