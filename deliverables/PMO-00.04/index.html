@@ -1,0 +1,2921 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-00.04 Resource Capacity Matrix | Tasleemat</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="PMO-00.04 Resource Capacity Matrix | Tasleemat">
+  <meta name="description" content="PMO-00.04: Resource Capacity Matrix - Comprehensive project deliverable template, practitioner guide, completed realistic example, and companion Draft 2020-12 JSON schema.">
+  <meta name="author" content="Mohamed Fouad Fakhruldeen">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fakhr.me/Tasleemat/deliverables/PMO-00.04/">
+  <link rel="alternate" hreflang="ar" href="https://fakhr.me/Tasleemat/ar/deliverables/PMO-00.04/">
+  <link rel="alternate" hreflang="en" href="https://fakhr.me/Tasleemat/deliverables/PMO-00.04/">
+  
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fakhr.me/Tasleemat/deliverables/PMO-00.04/">
+  <meta property="og:site_name" content="Tasleemat | Deliverable Library">
+  <meta property="og:title" content="PMO-00.04 Resource Capacity Matrix | Tasleemat">
+  <meta property="og:description" content="PMO-00.04: Resource Capacity Matrix - Comprehensive project deliverable template, practitioner guide, completed realistic example, and companion Draft 2020-12 JSON schema.">
+  <meta property="og:image" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta property="og:image:secure_url" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="PMO-00.04 Resource Capacity Matrix - Tasleemat">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_SA">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fakhr.me/Tasleemat/deliverables/PMO-00.04/">
+  <meta name="twitter:title" content="PMO-00.04 Resource Capacity Matrix | Tasleemat">
+  <meta name="twitter:description" content="PMO-00.04: Resource Capacity Matrix - Comprehensive project deliverable template, practitioner guide, completed realistic example, and companion Draft 2020-12 JSON schema.">
+  <meta name="twitter:image" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta name="twitter:image:alt" content="PMO-00.04 Resource Capacity Matrix - Tasleemat">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* DevHunt Badge */
+.devhunt-badge-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.devhunt-badge {
+  display: inline-block;
+  line-height: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.devhunt-badge:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.devhunt-dark {
+  display: none !important;
+}
+
+.devhunt-light {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-dark {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-light {
+  display: none !important;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* Tables */
+.table-wrapper, .markdown-body table {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* ==========================================================================
+   Realistic Example & Form Viewer Components (Stitch Design System)
+   ========================================================================== */
+
+.deliverable-header-card {
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0.5rem 0 1.25rem 0;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .deliverable-header-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.deliverable-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  line-height: 1.2;
+}
+
+.badge-code {
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+}
+
+[data-theme="dark"] .badge-code {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.badge-phase {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+[data-theme="dark"] .badge-phase {
+  background-color: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+.badge-example {
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+[data-theme="dark"] .badge-example {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Document Metadata Bar & Chips */
+.doc-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doc-meta-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.doc-meta-chip:hover {
+  border-color: var(--border-focus);
+}
+
+.meta-chip-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.meta-chip-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  word-break: break-word;
+}
+
+/* Form Viewer Container & Elevation */
+.form-viewer-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .form-viewer-container {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+.form-viewer-container table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-viewer-container blockquote {
+  background: var(--bg-main);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+}
+
+[dir="rtl"] .form-viewer-container blockquote {
+  border-radius: 8px 0 0 8px;
+}
+
+
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.footer-pip-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-pip-code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--accent-blue);
+  font-weight: 600;
+  direction: ltr !important;
+  text-align: left;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.footer-badge-link:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-blue);
+  background: var(--bg-card-hover);
+}
+
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+
+
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/" class="brand-group" aria-label="Tasleemat">
+        <span>📦 Tasleemat</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/" class="nav-link ">Home</a></li>
+<li><a href="/Tasleemat/start/" class="nav-link ">Start Here</a></li>
+<li><a href="/Tasleemat/deliverables/" class="nav-link active">Deliverables</a></li>
+<li><a href="/Tasleemat/tailoring/" class="nav-link ">Tailoring & Tiers</a></li>
+<li><a href="/Tasleemat/guides/" class="nav-link ">Guides & Governance</a></li>
+<li><a href="/Tasleemat/developers/" class="nav-link ">Developers & AI</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/ar/deliverables/PMO-00.04/" class="btn-utility" aria-label="Switch Language">
+          🌐 العربية
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">Home</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">Deliverables</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-00.04</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-00.04</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              Phase 00: Program and Portfolio Management
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">Tier 1</span>
+            <span class="tag pack">general</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">Resource Capacity Matrix</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">مصفوفة سعة الموارد</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-00.04 template --lang en</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-00.04 template --lang en'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            Copy Command
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 Overview
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 Template
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 User Guide
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 LLM Prompt
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 Example
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ Schema
+          </button>
+        </div>
+
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">Deliverable Summary & Governance Boundaries</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Lifecycle Phase Alignment</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>Phase 00:</strong> Program and Portfolio Management
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Sizing Tier Requirements</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">Tier 1</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Validation Contract</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              This deliverable conforms to a strict companion Draft 2020-12 JSON Schema for automated structural and semantic validation.
+            </p>
+            <pre><code>tasleemat validate PMO-00.04 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">Template Markdown (Bilingual)</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              Copy Markdown
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!--  
+LLM INSTRUCTIONS: Fill in the [ Add details... ] placeholders based on project context.
+
+The resource capacity matrix shows whether the plan is feasible in terms of the
+people available to carry it out. It compares what the programme or project
+needs against what exists, and the difference is the thing worth reading: a
+plan that requires more capacity than is available is not a plan that needs
+more effort, it is a plan that cannot be executed as written.
+
+The intent behind separating demand from supply is that they are gathered from
+different places and are therefore rarely reconciled by accident. Demand comes
+from the schedule and the scope, supply comes from the resourcing plan and the
+organisation&#x27;s actual shape, and nobody reconciles the two until a matrix like
+this makes the gap visible. The Gap column is therefore the one the reader
+cares about, and a matrix that records only the totals has omitted the only
+figure that matters.
+
+Alignment: the resource capacity matrix should be aligned and consistent with
+the following documents: Portfolio roadmap, Program charter, Project management
+plan, Resource breakdown structure, Procurement plan.
+
+Writing guidance:
+
+*   State the unit of capacity once and use it throughout, whether that is
+    person-days, full-time equivalents, or hours per period. A matrix whose
+    rows use different units cannot be added up, and the total at the bottom
+    is then arithmetically meaningless rather than merely approximate.
+
+*   Record capacity per period, not in total. A resource with a thousand
+    person-days available who is fully committed in the month the work is
+    needed has no capacity at all, and a total figure hides exactly that.
+
+*   Record the demand from the plan, not from what the team currently is. The
+    demand column is what the schedule and scope require; the supply column is
+    what exists. Recording the same number in both columns is the single most
+    common way a capacity matrix comes to be wrong, because it makes the
+    matrix agree with the plan rather than with reality.
+
+*   Record named constraints as consequences, not as adjectives. &quot;Test
+    automation is a single point of failure because one person holds it&quot; is
+    actionable; &quot;test automation is a risk&quot; is not.
+
+*   Where a gap is covered by a contractor or a shared resource, record the
+    contract or agreement that covers it. A gap filled on the understanding
+    that someone will help is not covered, and the difference shows up the week
+    the help is needed elsewhere.
+
+Tailoring Notes:
+
+*   The matrix may be maintained at portfolio level across all initiatives, or
+    at program level across the components, or for a single project. The form
+    should say which, because a portfolio matrix is used to decide between
+    initiatives and a project matrix is used to decide whether one plan is
+    credible.
+
+*   Where the organisation runs a resourcing tool, the matrix may be an
+    extract rather than the source of truth. Record that, so a reader does not
+    treat a stale extract as current.
+
+*   Add or remove rows as needed. Where a role is filled by more than one
+    person, record the role once and note the split in the notes column, since
+    a row per person hides the total capacity of the role.
+
+*   The matrix may be maintained by a resourcing or workforce planning
+    function, in which case cross-reference it rather than duplicating the
+    supply side.
+
+Column guidance, by column:
+
+Capacity by resource:
+
+*   **ID:** The identifier for the resource role, used in the demand and the
+    gap sections so the two can be compared row against row.
+
+*   **Resource Role or Team:** The role or team, named as the work requires it
+    rather than as the organisation chart draws it. A matrix organised by
+    existing departments cannot show a gap, because it only ever lists what is
+    already there.
+
+*   **Period:** The period the row covers, using the same periods throughout
+    the matrix and matching those of the schedule it is compared against.
+
+*   **Total Available:** The capacity that exists in the period, before any
+    allocation, stated in the unit declared for the matrix.
+
+*   **Allocated:** The capacity already committed elsewhere in the portfolio.
+    This is the column most often left out, and without it the available
+    figure is the total, which is not what the project can use.
+
+*   **Remaining:** What is left after allocation, which is the figure the
+    planner actually has.
+
+*   **Constraints or Single Points of Failure:** What limits this resource, such
+    as a location, a qualification held by one person, a licence, or a tool
+    only one person can operate. Record the consequence rather than the
+    adjective.
+
+*   **Notes:** Anything that changes how the row should be read, such as a
+    known vacancy, a planned leave, or a commitment shared with another
+    portfolio.
+
+Demand rows:
+
+*   **ID:** The resource role the demand is for, matching the ID used above.
+
+*   **Required Capacity:** What the scope and schedule require in the period.
+    Record the figure the plan was built on rather than the figure currently
+    being achieved, since the second is a consequence of the first being wrong.
+
+*   **Source of Demand:** Which part of the plan generates it, such as a
+    specific deliverable or work package. A demand that cannot be traced to
+    something in the plan cannot be challenged, and demands that cannot be
+    challenged only ever grow.
+
+*   **Period:** The period the demand falls in.
+
+*   **Priority:** Whether the demand is essential, or could be deferred or
+    descoped. Without a priority a gap has no remedy, because the only
+    available responses are to add capacity, move the work, or reduce it, and
+    the matrix does not say which is acceptable.
+
+Gap analysis rows:
+
+*   **Resource Role:** The role the gap applies to.
+
+*   **Gap:** The difference between required and remaining, stated as a number
+    and signed so a surplus is not read as a shortfall.
+
+*   **Period:** The period the gap falls in.
+
+*   **Resolution Planned:** How the gap will be closed, whether by recruitment,
+    by a contractor, by moving work between periods, or by reducing scope.
+
+*   **Resolution Owner:** Who is accountable for closing it. A gap with a
+    planned resolution and no owner is a gap that is being wished away, and it
+    is the most common way a capacity matrix comes to be relied upon.
+
+*   **Resolution Date:** By when the resolution is expected to be in place,
+    which is what tells the reader whether the plan is still feasible.
+
+Contingency rows:
+
+*   **Resource Role:** The role the contingency applies to.
+
+*   **Contingency Type:** Whether the buffer is in capacity, in time, or in
+    scope. The three are not interchangeable: time contingency can be spent
+    once, capacity contingency can be spent on anything, and scope
+    contingency reduces the deliverable.
+
+*   **Contingency Amount:** The size of the buffer, in the declared unit.
+
+*   **How It Would Be Used:** What it protects, so that a buffer cannot be
+    quietly consumed on something it was not held for.
+--&gt;
+
+&lt;h3 dir=&quot;ltr&quot; align=&quot;right&quot;&gt;{{Company_Name}}&lt;/h3&gt;
+&lt;h2 dir=&quot;ltr&quot; align=&quot;right&quot;&gt;{{Organization_Unit}} - {{Planning_Period}}&lt;/h2&gt;
+&lt;h1 dir=&quot;ltr&quot; align=&quot;center&quot;&gt;RESOURCE CAPACITY MATRIX&lt;/h1&gt;
+
+| **Date Prepared:** {{Current_Date}} | **Program Manager:** {{Program_Manager_Name}} | **Prepared By:** {{Prepared_By}} |
+| :--- | :--- | :--- |  
+
+---
+
+## 1. Matrix Basis
+&lt;!-- What this matrix covers, in what unit, and over which periods. Record the
+ unit once and use it throughout: a matrix whose rows use different units
+ cannot be added up, and a total is then arithmetically meaningless rather than
+ merely approximate. Record the level the matrix is maintained at, because a
+ portfolio matrix is used to decide between initiatives while a project matrix
+ is used to decide whether a single plan is credible. And record whether this
+ is the source of truth or an extract from a resourcing tool, so a reader does
+ not treat a stale extract as current. --&gt;
+
+**Matrix Scope and Level:** [ Add details... ]
+
+**Capacity Unit of Measure:** [ Add details... ]
+
+**Periods Covered:** [ Add details... ]
+
+**Source of Truth or Extract:** [ Add details... ]
+
+**Matrix Owner:** [ Add details... ]
+
+**Last Updated:** [ Add details... ]
+
+---
+
+## 2. Capacity by Resource
+&lt;!-- What exists, in what unit, in which period. The Allocated column is the one
+ most often left out, and without it the available figure is the total, which
+ is not what the project can use. Record capacity per period rather than in
+ total: a resource with a thousand person-days available who is fully
+ committed in the month the work is needed has no capacity at all, and a total
+ figure hides exactly that. Record constraints as consequences, not as
+ adjectives; &quot;test automation is a single point of failure because one person
+ holds it&quot; can be acted on, and &quot;test automation is a risk&quot; cannot. Where a
+ role is filled by more than one person, record the role once and note the
+ split, since a row per person hides the total capacity of the role. Add or
+ remove rows as needed. --&gt;
+
+| ID | Resource Role or Team | Period | Total Available | Allocated | Remaining | Constraints or Single Points of Failure | Notes |
+| :---: | :--- | :---: | ---: | ---: | ---: | :--- | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 3. Demand by Resource
+&lt;!-- What the plan requires, which is a different number from what is
+ currently being achieved. Record the figure the plan was built on rather than
+ the figure being achieved, since the second is a consequence of the first
+ being wrong. Record the source of the demand so it can be traced to a
+ deliverable or a work package; a demand that cannot be traced to something in
+ the plan cannot be challenged, and demands that cannot be challenged only ever
+ grow. Record a priority, because without one a gap has no remedy, since the
+ available responses are to add capacity, move the work, or reduce it, and
+ nothing in the matrix says which is acceptable here. Add or remove rows as
+ needed. --&gt;
+
+| ID | Resource Role | Period | Required Capacity | Source of Demand | Priority |
+| :---: | :--- | :---: | ---: | :--- | :---: |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 4. Gap Analysis
+&lt;!-- The difference between what is required and what is remaining, which is
+ the only figure in the matrix the reader is looking for. State it as a signed
+ number so a surplus is not read as a shortfall. Record a planned resolution
+ and, separately, an owner for it: a gap with a resolution and no owner is a
+ gap being wished away, and it is the most common way a capacity matrix comes
+ to be relied upon after it has already been superseded. The resolution date is
+ what tells the reader whether the plan is still feasible, so record it rather
+ than leaving the row open. Add or remove rows as needed. --&gt;
+
+| Resource Role | Gap | Period | Resolution Planned | Resolution Owner | Resolution Date |
+| :--- | ---: | :---: | :--- | :--- | :---: |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 5. Contingency
+&lt;!-- What the plan holds in reserve, and what that reserve protects. The three
+ kinds of contingency are not interchangeable: time contingency can be spent
+ once, capacity contingency can be spent on anything, and scope contingency
+ reduces the deliverable. Record which kind each buffer is, because a plan that
+ holds no scope contingency and states only that it has float is a plan whose
+ contingency is the work being cut. Record what each buffer protects so that it
+ cannot be quietly consumed on something it was not held for. Add or remove
+ rows as needed. --&gt;
+
+| Resource Role | Contingency Type | Contingency Amount | How It Would Be Used |
+| :--- | :--- | ---: | :--- |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+| [ Add details... ] | [ Add details... ] | [ Add details... ] | [ Add details... ] |
+
+---
+
+## 6. Sign-off and Approvals
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :---: | :---: |
+| **Resource Planning Lead** | {{Resource_Planning_Lead_Name}} | _______________________ | [ .... - .... - .... ] |
+| **Program Manager** | {{Program_Manager_Name}} | _______________________ | [ .... - .... - .... ] |
+| **PMO Director** | {{PMO_Director_Name}} | _______________________ | [ .... - .... - .... ] |
+---
+
+&lt;div dir=&quot;ltr&quot; align=&quot;right&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;Electronic Audit Trail: Hash SHA256: {{Audit_Trail_SHA256_Hash}}&lt;/span&gt; &lt;br&gt;
+  &lt;strong&gt;Template:&lt;/strong&gt; Resource Capacity Matrix | &lt;strong&gt;Ref:&lt;/strong&gt; PMO-00.04 &lt;br&gt;
+  &lt;i&gt;Generated on: {{Current_Timestamp}}, by &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;Tasleemat&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">User Guide & Practitioner Instructions</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ Print Guide
+            </button>
+          </div>
+          <div class="markdown-body" style="line-height: 1.8;">
+            <h2 id="tasleemat-forms-guide">Tasleemat Forms Guide</h2>
+<h1 id="project-artifact-resource-capacity-matrix">Project Artifact: Resource Capacity Matrix</h1>
+<p><strong>Document Reference:</strong> <code>PMO-00.04</code></p>
+<p>This document provides a comprehensive, professional reference to understand the
+purpose and effective usage of the <strong>Resource Capacity Matrix</strong> in alignment with
+the Tasleemat framework.</p>
+<hr />
+<h3 id="1-what">1. What?</h3>
+<p>A formal Tasleemat-aligned project document known as the <strong>Resource Capacity
+Matrix</strong>, showing whether the plan is feasible in terms of the people available
+to carry it out.</p>
+<p>It records the basis of the matrix and its unit of measure, the capacity that
+exists by role and period with what is already allocated elsewhere, the demand
+the scope and schedule create with the source and priority of each, the gap
+between the two with how each gap will be closed and by whom, and the
+contingency the plan holds and what that contingency protects.</p>
+<hr />
+<h3 id="2-why">2. Why?</h3>
+<p>Because demand and supply are gathered from different places and are therefore
+never reconciled by accident. Demand comes from the schedule and the scope,
+supply comes from the resourcing plan and the organisation's actual shape, and
+nobody sets the two against each other until a matrix like this makes the gap
+visible. The Gap column is the one the reader is looking for, so a matrix that
+records only totals has omitted the only figure that matters.</p>
+<hr />
+<h3 id="3-when">3. When?</h3>
+<p>This artifact is prepared at the <strong>PROGRAM AND PORTFOLIO MANAGEMENT</strong> Process
+Group, and re-reconciled whenever the schedule changes materially or the
+organisation is restructured. It is a recurring reconciliation rather than a
+document produced once, because capacity is reallocated continuously and a
+matrix that is not refreshed describes an organisation that no longer exists.</p>
+<hr />
+<h3 id="4-who">4. Who?</h3>
+<p><strong>Responsibilities:</strong> Owned by the Program Manager and reconciled with the
+resource or workforce planning function that holds the supply side. Signed by
+the PMO and by the finance business partner, since a gap closed by a contractor
+is a cost change and should not be agreed without someone who can see the cost.</p>
+<hr />
+<h3 id="tailoring-tips">Tailoring Tips</h3>
+<ul>
+<li>The matrix may be maintained at portfolio level across all initiatives, or
+    at program level across the components, or for a single project. The form
+    should say which, because a portfolio matrix is used to decide between
+    initiatives and a project matrix is used to decide whether one plan is
+    credible.</li>
+<li>Where the organisation runs a resourcing tool, the matrix may be an extract
+    rather than the source of truth. Record that, so a reader does not treat a
+    stale extract as current.</li>
+<li>Add or remove rows as needed. Where a role is filled by more than one
+    person, record the role once and note the split in the notes column, since a
+    row per person hides the total capacity of the role.</li>
+<li>The matrix may be maintained by a resourcing or workforce planning function,
+    in which case cross-reference it rather than duplicating the supply side.</li>
+<li>The contingency section may be omitted where the organisation holds
+    contingency centrally, but the form should say so explicitly rather than
+    leaving a reader to assume the plan holds none.</li>
+</ul>
+<hr />
+<h3 id="alignment-dependencies">Alignment &amp; Dependencies</h3>
+<h4 id="1-pre-requisites-inputs-upstream-dependencies">1. Pre-requisites &amp; Inputs (Upstream Dependencies)</h4>
+<ul>
+<li><strong>Mandatory:</strong><ul>
+<li>Portfolio Roadmap (PMO-00.01)</li>
+<li>Program Charter (PMO-00.02)</li>
+<li>Organizational Staffing Budgets</li>
+</ul>
+</li>
+<li><strong>Optional / Contextual:</strong><ul>
+<li>Resource Management Plans (PMO-04.06.01)</li>
+<li>Resource Requirements (PMO-04.06.02)</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-downstream-dependents">2. Downstream Dependents</h4>
+<ul>
+<li><strong>Mandatory:</strong><ul>
+<li>Project Resource Management Plans (PMO-04.06.01)</li>
+<li>Project Schedules (PMO-04.03.08)</li>
+</ul>
+</li>
+<li><strong>Optional / Contextual:</strong><ul>
+<li>Responsibility Assignment Matrix / RAM (PMO-04.06.04)</li>
+<li>Procurement Strategy (PMO-04.09.02)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="5-how">5. How?</h3>
+<p>To accurately and professionally complete the <strong>RESOURCE CAPACITY MATRIX</strong>, the
+responsible party must populate the following sections based on the project
+context (ensure <code>parameters.md</code> is referenced for global project variables):</p>
+<ul>
+<li><strong>Matrix Scope and Level:</strong> What this matrix covers and at what level it is maintained, whether portfolio-wide across initiatives, program-wide across components, or for a single project. The level decides what the matrix is used to decide: a portfolio matrix decides between initiatives, a project matrix decides whether one plan is credible, and reading either as the other produces a confident wrong answer.</li>
+<li><strong>Capacity Unit of Measure:</strong> The unit used for every figure in the matrix, whether person-days, full-time equivalents, or hours per period. State it once and use it throughout: a matrix whose rows use different units cannot be added up, and the total at the foot of it is then arithmetically meaningless rather than merely approximate.</li>
+<li><strong>Periods Covered:</strong> The periods the matrix covers, matching those of the schedule it is compared against. Where the matrix is annual and the schedule is weekly, the comparison has to be done by hand every time and is therefore not done, which is how a quarterly shortfall survives to become a delivery failure.</li>
+<li><strong>Source of Truth or Extract:</strong> Whether this matrix is the authoritative record or an extract from a resourcing tool. Record which, because a reader who treats a stale extract as current will plan against capacity that was reallocated weeks ago, and the error surfaces only when the work cannot be staffed.</li>
+<li><strong>Matrix Owner:</strong> The single role accountable for the matrix as a whole, which is normally not the owner of any one resource in it. Where this is blank, the matrix has contributors but nobody who notices that a row has not been updated since the reorganisation.</li>
+<li><strong>Last Updated:</strong> The date the matrix was last reconciled against the plan, and against which version of the schedule. Without it a reader cannot tell a current matrix from an abandoned one, and the two are indistinguishable on the page.</li>
+<li><strong>ID:</strong> The identifier for the resource role, used in the demand and gap sections so the three can be compared row against row. Without a shared identifier the comparison is done by eye, and two similarly named roles are the ones most often confused.</li>
+<li><strong>Resource Role or Team:</strong> The role or team, named as the work requires it rather than as the organisation chart draws it. A matrix organised by existing departments can never show a gap, because it only ever lists what is already there, and the absence of a needed capability reads as its absence from the plan rather than from the organisation.</li>
+<li><strong>Period:</strong> The period the row covers, using the same periods throughout the matrix. Capacity recorded per period rather than in total is what makes the matrix usable, because a resource with a thousand person-days available who is fully committed in the month the work is needed has no capacity at all.</li>
+<li><strong>Total Available:</strong> The capacity that exists in the period, before any allocation, in the unit declared for the matrix. This is a figure about the organisation rather than about the project, and recording it here is what allows the reader to see how much of it is actually available.</li>
+<li><strong>Allocated:</strong> The capacity already committed elsewhere in the portfolio. This is the column most often left out, and without it the available figure is the total, which is not what the project can use. It is also the column that reveals a resource being shared between initiatives without either owner knowing.</li>
+<li><strong>Remaining:</strong> What is left after allocation, which is the figure the planner actually has. Where this is negative, the matrix has found a real problem; where it is silently recorded as zero because nobody wanted to write a negative number, the problem has been hidden instead of solved.</li>
+<li><strong>Constraints or Single Points of Failure:</strong> What limits this resource: a location, a qualification held by one person, a licence, a tool only one person can operate, or a notice period. Record the consequence rather than the adjective, because "test automation is a single point of failure because one person holds it" can be acted on, while "test automation is a risk" cannot.</li>
+<li><strong>Notes:</strong> Anything that changes how the row should be read, such as a known vacancy, planned leave, or a resource shared with another portfolio. Where a role is filled by more than one person, record the role once and note the split here, since a row per person hides the total capacity of the role.</li>
+<li><strong>ID:</strong> The resource role the demand is for, matching the ID used in the capacity section so the two can be set against each other.</li>
+<li><strong>Resource Role:</strong> The role the demand falls on, using the same naming as the capacity section. The two must be the same list, or the comparison in the gap section silently excludes roles that appear in only one of them, which are usually the ones in trouble.</li>
+<li><strong>Period:</strong> The period the demand falls in. A demand recorded with no period cannot be compared with a capacity figure that has one, and is therefore dropped from the comparison without anyone deciding to drop it.</li>
+<li><strong>Required Capacity:</strong> What the scope and schedule require in the period. Record the figure the plan was built on rather than the figure currently being achieved, since the second is a consequence of the first being wrong and reporting it back as the requirement makes the shortfall disappear from the plan.</li>
+<li><strong>Source of Demand:</strong> Which part of the plan generates it, such as a named deliverable, work package, or activity. A demand that cannot be traced to something in the plan cannot be challenged, and demands that cannot be challenged only ever grow.</li>
+<li><strong>Priority:</strong> Whether the demand is essential, or could be deferred or descoped. Without a priority a gap has no remedy, because the available responses are to add capacity, move the work, or reduce it, and nothing in the matrix says which of those the programme would accept.</li>
+<li><strong>Resource Role:</strong> The role the gap applies to, using the same naming as the sections above. Where a role appears in the demand but not the capacity, the gap is the whole requirement rather than a shortfall, and that case is worth distinguishing because it is a different problem.</li>
+<li><strong>Gap:</strong> The difference between required and remaining, stated as a signed number so that a surplus is not read as a shortfall. This is the figure the whole matrix exists to produce, and a matrix that records only the totals has omitted the only number anyone reads.</li>
+<li><strong>Period:</strong> The period the gap falls in. A gap in a period with no demand in it is a different problem from a gap in a period the work needs, and reporting both as "a gap" sends the reader looking for the wrong remedy.</li>
+<li><strong>Resolution Planned:</strong> How the gap will be closed: recruitment, a contractor, moving work between periods, reducing scope, or accepting the risk. Where the gap is covered by a contractor or a shared resource, record the contract or agreement that covers it, because a gap filled on the understanding that someone will help is not covered at all.</li>
+<li><strong>Resolution Owner:</strong> Who is accountable for closing the gap. A gap with a planned resolution and no owner is a gap being wished away, and it is the most common way a capacity matrix comes to be relied upon long after it was last true.</li>
+<li><strong>Resolution Date:</strong> By when the resolution is expected to be in place. This is what tells the reader whether the plan is still feasible, so record it rather than leaving the row open, and where the date has passed without resolution, escalate rather than moving the date.</li>
+<li><strong>Resource Role:</strong> The role the contingency applies to, or "plan" where the buffer is held across all roles rather than against one.</li>
+<li><strong>Contingency Type:</strong> Whether the buffer is in capacity, in time, or in scope. The three are not interchangeable: time contingency can be spent once, capacity contingency can be spent on anything, and scope contingency reduces the deliverable. A plan that holds no scope contingency and states only that it has float is a plan whose contingency is the work being cut.</li>
+<li><strong>Contingency Amount:</strong> The size of the buffer, in the declared unit. Record it as a figure rather than a percentage, because a percentage of a demand that was never reconciled produces a number that looks precise and is not.</li>
+<li><strong>How It Would Be Used:</strong> What the buffer protects, recorded so it cannot be quietly consumed on something it was not held for. A contingency with no stated use is the first thing cut in a difficult month, which is precisely the month it was held for.</li>
+</ul>
+<hr />
+<h3 id="associated-templates">📥 Associated Templates</h3>
+<ul>
+<li><a href="00_04_Resource_Capacity_Matrix_Template.md">📄 Printable Template (Markdown)</a></li>
+<li><a href="00_04_Resource_Capacity_Matrix.md">🤖 LLM Generation Prompt</a></li>
+<li><a href="00_04_Resource_Capacity_Matrix.json">📊 Data Structure (JSON)</a></li>
+<li><a href="00_04_Resource_Capacity_Matrix.csv">📈 Tabular Data (CSV)</a></li>
+</ul>
+<hr />
+<h3 id="6-reference-example">6. Reference Example</h3>
+<p>A fully completed, gold-standard reference example illustrating this artifact in practice is available:</p>
+<blockquote>
+<p>📖 <strong>Completed Example:</strong> <a href="../../../../examples/en/00_Program_and_Portfolio_Management/04_Resource_Capacity_Matrix/00_04_Resource_Capacity_Matrix_Example.md">00_04_Resource_Capacity_Matrix_Example.md</a></p>
+</blockquote>
+          </div>
+        </div>
+
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">LLM Generation Prompt & Agent Instructions</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Prompt', 2000);">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="resource-capacity-matrix-llm-generation-guide">RESOURCE CAPACITY MATRIX - LLM GENERATION GUIDE</h1>
+<blockquote>
+<p><strong>System Prompt / Instructions:</strong>
+This document serves as the detailed instruction set for generating the
+<code>RESOURCE CAPACITY MATRIX</code>. When asked to populate this form, use the
+guidance provided for each section below to accurately generate the required
+content. Reference <code>parameters.md</code> for global project variables.</p>
+<p><strong>Context &amp; Definition:</strong>
+The resource capacity matrix shows whether the plan is feasible in terms of
+the people available to carry it out. It compares what the programme or
+project needs against what exists, and the difference is the thing worth
+reading: a plan that requires more capacity than is available is not a plan
+that needs more effort, it is a plan that cannot be executed as written.</p>
+<p><strong>Alignment:</strong>
+This resource capacity matrix must be consistent with: Portfolio roadmap,
+Program charter, Project management plan, Resource breakdown structure,
+Procurement plan.</p>
+</blockquote>
+<h3 id="matrix-scope-and-level">Matrix Scope and Level</h3>
+<p><strong>Instruction:</strong> What this matrix covers and at what level it is maintained, whether portfolio-wide across initiatives, program-wide across components, or for a single project. The level decides what the matrix is used to decide: a portfolio matrix decides between initiatives, a project matrix decides whether one plan is credible, and reading either as the other produces a confident wrong answer.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="capacity-unit-of-measure">Capacity Unit of Measure</h3>
+<p><strong>Instruction:</strong> The unit used for every figure in the matrix, whether person-days, full-time equivalents, or hours per period. State it once and use it throughout: a matrix whose rows use different units cannot be added up, and the total at the foot of it is then arithmetically meaningless rather than merely approximate.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="periods-covered">Periods Covered</h3>
+<p><strong>Instruction:</strong> The periods the matrix covers, matching those of the schedule it is compared against. Where the matrix is annual and the schedule is weekly, the comparison has to be done by hand every time and is therefore not done, which is how a quarterly shortfall survives to become a delivery failure.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="source-of-truth-or-extract">Source of Truth or Extract</h3>
+<p><strong>Instruction:</strong> Whether this matrix is the authoritative record or an extract from a resourcing tool. Record which, because a reader who treats a stale extract as current will plan against capacity that was reallocated weeks ago, and the error surfaces only when the work cannot be staffed.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="matrix-owner">Matrix Owner</h3>
+<p><strong>Instruction:</strong> The single role accountable for the matrix as a whole, which is normally not the owner of any one resource in it. Where this is blank, the matrix has contributors but nobody who notices that a row has not been updated since the reorganisation.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="last-updated">Last Updated</h3>
+<p><strong>Instruction:</strong> The date the matrix was last reconciled against the plan, and against which version of the schedule. Without it a reader cannot tell a current matrix from an abandoned one, and the two are indistinguishable on the page.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="id">ID</h3>
+<p><strong>Instruction:</strong> The identifier for the resource role, used in the demand and gap sections so the three can be compared row against row. Without a shared identifier the comparison is done by eye, and two similarly named roles are the ones most often confused.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role-or-team">Resource Role or Team</h3>
+<p><strong>Instruction:</strong> The role or team, named as the work requires it rather than as the organisation chart draws it. A matrix organised by existing departments can never show a gap, because it only ever lists what is already there, and the absence of a needed capability reads as its absence from the plan rather than from the organisation.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="period">Period</h3>
+<p><strong>Instruction:</strong> The period the row covers, using the same periods throughout the matrix. Capacity recorded per period rather than in total is what makes the matrix usable, because a resource with a thousand person-days available who is fully committed in the month the work is needed has no capacity at all.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="total-available">Total Available</h3>
+<p><strong>Instruction:</strong> The capacity that exists in the period, before any allocation, in the unit declared for the matrix. This is a figure about the organisation rather than about the project, and recording it here is what allows the reader to see how much of it is actually available.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="allocated">Allocated</h3>
+<p><strong>Instruction:</strong> The capacity already committed elsewhere in the portfolio. This is the column most often left out, and without it the available figure is the total, which is not what the project can use. It is also the column that reveals a resource being shared between initiatives without either owner knowing.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="remaining">Remaining</h3>
+<p><strong>Instruction:</strong> What is left after allocation, which is the figure the planner actually has. Where this is negative, the matrix has found a real problem; where it is silently recorded as zero because nobody wanted to write a negative number, the problem has been hidden instead of solved.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="constraints-or-single-points-of-failure">Constraints or Single Points of Failure</h3>
+<p><strong>Instruction:</strong> What limits this resource: a location, a qualification held by one person, a licence, a tool only one person can operate, or a notice period. Record the consequence rather than the adjective, because "test automation is a single point of failure because one person holds it" can be acted on, while "test automation is a risk" cannot.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="notes">Notes</h3>
+<p><strong>Instruction:</strong> Anything that changes how the row should be read, such as a known vacancy, planned leave, or a resource shared with another portfolio. Where a role is filled by more than one person, record the role once and note the split here, since a row per person hides the total capacity of the role.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="id_1">ID</h3>
+<p><strong>Instruction:</strong> The resource role the demand is for, matching the ID used in the capacity section so the two can be set against each other.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role">Resource Role</h3>
+<p><strong>Instruction:</strong> The role the demand falls on, using the same naming as the capacity section. The two must be the same list, or the comparison in the gap section silently excludes roles that appear in only one of them, which are usually the ones in trouble.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="period_1">Period</h3>
+<p><strong>Instruction:</strong> The period the demand falls in. A demand recorded with no period cannot be compared with a capacity figure that has one, and is therefore dropped from the comparison without anyone deciding to drop it.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="required-capacity">Required Capacity</h3>
+<p><strong>Instruction:</strong> What the scope and schedule require in the period. Record the figure the plan was built on rather than the figure currently being achieved, since the second is a consequence of the first being wrong and reporting it back as the requirement makes the shortfall disappear from the plan.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="source-of-demand">Source of Demand</h3>
+<p><strong>Instruction:</strong> Which part of the plan generates it, such as a named deliverable, work package, or activity. A demand that cannot be traced to something in the plan cannot be challenged, and demands that cannot be challenged only ever grow.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="priority">Priority</h3>
+<p><strong>Instruction:</strong> Whether the demand is essential, or could be deferred or descoped. Without a priority a gap has no remedy, because the available responses are to add capacity, move the work, or reduce it, and nothing in the matrix says which of those the programme would accept.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role_1">Resource Role</h3>
+<p><strong>Instruction:</strong> The role the gap applies to, using the same naming as the sections above. Where a role appears in the demand but not the capacity, the gap is the whole requirement rather than a shortfall, and that case is worth distinguishing because it is a different problem.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="gap">Gap</h3>
+<p><strong>Instruction:</strong> The difference between required and remaining, stated as a signed number so that a surplus is not read as a shortfall. This is the figure the whole matrix exists to produce, and a matrix that records only the totals has omitted the only number anyone reads.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="period_2">Period</h3>
+<p><strong>Instruction:</strong> The period the gap falls in. A gap in a period with no demand in it is a different problem from a gap in a period the work needs, and reporting both as "a gap" sends the reader looking for the wrong remedy.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resolution-planned">Resolution Planned</h3>
+<p><strong>Instruction:</strong> How the gap will be closed: recruitment, a contractor, moving work between periods, reducing scope, or accepting the risk. Where the gap is covered by a contractor or a shared resource, record the contract or agreement that covers it, because a gap filled on the understanding that someone will help is not covered at all.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resolution-owner">Resolution Owner</h3>
+<p><strong>Instruction:</strong> Who is accountable for closing the gap. A gap with a planned resolution and no owner is a gap being wished away, and it is the most common way a capacity matrix comes to be relied upon long after it was last true.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resolution-date">Resolution Date</h3>
+<p><strong>Instruction:</strong> By when the resolution is expected to be in place. This is what tells the reader whether the plan is still feasible, so record it rather than leaving the row open, and where the date has passed without resolution, escalate rather than moving the date.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="resource-role_2">Resource Role</h3>
+<p><strong>Instruction:</strong> The role the contingency applies to, or "plan" where the buffer is held across all roles rather than against one.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="contingency-type">Contingency Type</h3>
+<p><strong>Instruction:</strong> Whether the buffer is in capacity, in time, or in scope. The three are not interchangeable: time contingency can be spent once, capacity contingency can be spent on anything, and scope contingency reduces the deliverable. A plan that holds no scope contingency and states only that it has float is a plan whose contingency is the work being cut.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="contingency-amount">Contingency Amount</h3>
+<p><strong>Instruction:</strong> The size of the buffer, in the declared unit. Record it as a figure rather than a percentage, because a percentage of a demand that was never reconciled produces a number that looks precise and is not.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+<h3 id="how-it-would-be-used">How It Would Be Used</h3>
+<p><strong>Instruction:</strong> What the buffer protects, recorded so it cannot be quietly consumed on something it was not held for. A contingency with no stated use is the first thing cut in a difficult month, which is precisely the month it was held for.</p>
+<p><strong>Generated value:</strong> [ Add details... ]</p>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+
+          <!-- Deliverable Header Card & Badge Row -->
+          <div class="deliverable-header-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <div class="deliverable-badge-row">
+                <span class="badge badge-code">PMO-00.04</span>
+                <span class="badge badge-phase">Phase 00: Program and Portfolio Management</span>
+                <span class="badge badge-example">Realistic Case Study Benchmark</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn-utility" onclick="window.print()">
+                  🖨️ Print / PDF
+                </button>
+                <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('example-prose').innerText); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Text', 2000);">
+                  📋 Copy Text
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Control Meta Strip -->
+          <div class="doc-meta-bar">
+<div class="doc-meta-chip"><div class="meta-chip-label">Date Prepared</div><div class="meta-chip-val">2026-03-15</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">Program Manager</div><div class="meta-chip-val">Khalid Al-Otaibi, PgMP</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">Prepared By</div><div class="meta-chip-val">Faisal Al-Harbi, PMP (Senior Project Manager)</div></div>
+</div>
+
+          <!-- Form Sheet & Rendered Document Prose -->
+          <div class="form-viewer-container markdown-body" id="example-prose" style="line-height: 1.85;">
+            <h1 id="resource-capacity-matrix-reference-example">Resource Capacity Matrix (Reference Example)</h1>
+<blockquote>
+<p>🏆 <strong>Gold Standard Reference Example:</strong> This document illustrates a fully completed, production-grade artifact adhering to the Tasleemat PMO Framework (<code>PMO-00.04</code>). All company names, project references, and figures are realistic fictional simulations.</p>
+</blockquote>
+<hr />
+<h3 dir="ltr" align="right">Apex Global Solutions</h3>
+<h2 dir="ltr" align="right">Information Technology & Enterprise Operations - 2026-Q1 to 2027-Q4</h2>
+<h1 dir="ltr" align="center">RESOURCE CAPACITY MATRIX</h1>
+
+<hr />
+<h2 id="1-matrix-basis">1. Matrix Basis</h2>
+<!-- What this matrix covers, in what unit, and over which periods. Record the
+ unit once and use it throughout: a matrix whose rows use different units
+ cannot be added up, and a total is then arithmetically meaningless rather than
+ merely approximate. Record the level the matrix is maintained at, because a
+ portfolio matrix is used to decide between initiatives while a project matrix
+ is used to decide whether a single plan is credible. And record whether this
+ is the source of truth or an extract from a resourcing tool, so a reader does
+ not treat a stale extract as current. -->
+
+<p><strong>Matrix Scope and Level:</strong> Deliver operational excellence, process automation, and unified cloud integration adhering to enterprise standards.</p>
+<p><strong>Capacity Unit of Measure:</strong> Full-Time Equivalent (FTE) Billable Work Hours, benchmarked at 160 hours per month per engineer.</p>
+<p><strong>Periods Covered:</strong> 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)</p>
+<p><strong>Source of Truth or Extract:</strong> Fully defined and aligned with Apex Global Solutions operational baseline and project objectives.</p>
+<p><strong>Matrix Owner:</strong> Elena Vance, PfMP (Portfolio Transformation Director)</p>
+<p><strong>Last Updated:</strong> 2026-Q1 through 2027-Q4 (Annual cycle with quarterly governance refresh)</p>
+<hr />
+<h2 id="2-capacity-by-resource">2. Capacity by Resource</h2>
+<!-- What exists, in what unit, in which period. The Allocated column is the one
+ most often left out, and without it the available figure is the total, which
+ is not what the project can use. Record capacity per period rather than in
+ total: a resource with a thousand person-days available who is fully
+ committed in the month the work is needed has no capacity at all, and a total
+ figure hides exactly that. Record constraints as consequences, not as
+ adjectives; "test automation is a single point of failure because one person
+ holds it" can be acted on, and "test automation is a risk" cannot. Where a
+ role is filled by more than one person, record the role once and note the
+ split, since a row per person hides the total capacity of the role. Add or
+ remove rows as needed. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th style="text-align: left;">Resource Role or Team</th>
+<th style="text-align: center;">Period</th>
+<th style="text-align: right;">Total Available</th>
+<th style="text-align: right;">Allocated</th>
+<th style="text-align: right;">Remaining</th>
+<th style="text-align: left;">Constraints or Single Points of Failure</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">INIT-01</td>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: center;">2026-Q2</td>
+<td style="text-align: right;">60 FTE Hours (Buffer)</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Validated against enterprise ISO27001 cloud security standards.</td>
+</tr>
+<tr>
+<td style="text-align: center;">REQ-02</td>
+<td style="text-align: left;">Secure electronic archiving with compliance audit</td>
+<td style="text-align: center;">2026-Q3</td>
+<td style="text-align: right;">40 FTE Hours (Buffer)</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Weekly steering coordination meetings on schedule.</td>
+</tr>
+<tr>
+<td style="text-align: center;">ACT-03</td>
+<td style="text-align: left;">API ingestion streams with tokenized logging</td>
+<td style="text-align: center;">2026-Q4</td>
+<td style="text-align: right;">50 FTE Hours (Buffer)</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Contingency reserve allocated for critical path dependencies.</td>
+</tr>
+<tr>
+<td style="text-align: center;">BEN-04</td>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: center;">2027-Q1</td>
+<td style="text-align: right;">60 FTE Hours (Buffer)</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Operational KPIs performing within target tolerance.</td>
+</tr>
+<tr>
+<td style="text-align: center;">WBS-05</td>
+<td style="text-align: left;">Secure electronic archiving with compliance audit</td>
+<td style="text-align: center;">2027-Q2</td>
+<td style="text-align: right;">60 FTE Hours (Buffer)</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Validated against enterprise ISO27001 cloud security standards.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-demand-by-resource">3. Demand by Resource</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th style="text-align: left;">Resource Role</th>
+<th style="text-align: center;">Period</th>
+<th style="text-align: right;">Required Capacity</th>
+<th style="text-align: left;">Source of Demand</th>
+<th style="text-align: center;">Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">INIT-01</td>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: center;">2026-Q2</td>
+<td style="text-align: right;">480 FTE Hours / mo</td>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: center;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: center;">REQ-02</td>
+<td style="text-align: left;">Secure electronic archiving with compliance audit</td>
+<td style="text-align: center;">2026-Q3</td>
+<td style="text-align: right;">620 FTE Hours / mo</td>
+<td style="text-align: left;">Secure electronic archiving with compliance audit</td>
+<td style="text-align: center;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: center;">ACT-03</td>
+<td style="text-align: left;">API ingestion streams with tokenized logging</td>
+<td style="text-align: center;">2026-Q4</td>
+<td style="text-align: right;">540 FTE Hours / mo</td>
+<td style="text-align: left;">API ingestion streams with tokenized logging</td>
+<td style="text-align: center;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: center;">BEN-04</td>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: center;">2027-Q1</td>
+<td style="text-align: right;">500 FTE Hours / mo</td>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: center;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-gap-analysis">4. Gap Analysis</h2>
+<!-- The difference between what is required and what is remaining, which is
+ the only figure in the matrix the reader is looking for. State it as a signed
+ number so a surplus is not read as a shortfall. Record a planned resolution
+ and, separately, an owner for it: a gap with a resolution and no owner is a
+ gap being wished away, and it is the most common way a capacity matrix comes
+ to be relied upon after it has already been superseded. The resolution date is
+ what tells the reader whether the plan is still feasible, so record it rather
+ than leaving the row open. Add or remove rows as needed. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Resource Role</th>
+<th style="text-align: right;">Gap</th>
+<th style="text-align: center;">Period</th>
+<th style="text-align: left;">Resolution Planned</th>
+<th style="text-align: left;">Resolution Owner</th>
+<th style="text-align: center;">Resolution Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: center;">2026-Q2</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Elena Vance, PfMP</td>
+<td style="text-align: center;">2026-06-30</td>
+</tr>
+<tr>
+<td style="text-align: left;">Secure electronic archiving with compliance audit</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: center;">2026-Q3</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Faisal Al-Harbi, PMP</td>
+<td style="text-align: center;">2026-09-30</td>
+</tr>
+<tr>
+<td style="text-align: left;">API ingestion streams with tokenized logging</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: center;">2026-Q4</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Tariq Al-Mansoor, PfMP</td>
+<td style="text-align: center;">2026-11-30</td>
+</tr>
+<tr>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: right;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: center;">2027-Q1</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+<td style="text-align: left;">Sultan Al-Dossary</td>
+<td style="text-align: center;">2027-01-31</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-contingency">5. Contingency</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Resource Role</th>
+<th style="text-align: left;">Contingency Type</th>
+<th style="text-align: right;">Contingency Amount</th>
+<th style="text-align: left;">How It Would Be Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Automated database ETL pipeline extraction</td>
+<td style="text-align: left;">Technical &amp; Integration</td>
+<td style="text-align: right;">$950,000 USD</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: left;">Secure electronic archiving with compliance audit</td>
+<td style="text-align: left;">Operational &amp; Functional</td>
+<td style="text-align: right;">$1,150,000 USD</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+<tr>
+<td style="text-align: left;">API ingestion streams with tokenized logging</td>
+<td style="text-align: left;">Governance &amp; Compliance</td>
+<td style="text-align: right;">$780,000 USD</td>
+<td style="text-align: left;">Approved and aligned with Apex Global Solutions governance baseline</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-sign-off-and-approvals">6. Sign-off and Approvals</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Signature</th>
+<th style="text-align: center;">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Resource Planning Lead</strong></td>
+<td style="text-align: left;">Sami Al-Ghamdi (Resource Management Lead)</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Program Manager</strong></td>
+<td style="text-align: left;">Khalid Al-Otaibi, PgMP</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PMO Director</strong></td>
+<td style="text-align: left;">Tariq Al-Mansoor, PfMP</td>
+<td style="text-align: center;">[Electronically Signed]</td>
+<td style="text-align: center;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div dir="ltr" align="right" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+  <strong>Template:</strong> Resource Capacity Matrix | <strong>Ref:</strong> PMO-00.04 <br>
+  <i>Generated on: 2026-03-15 10:00 UTC, by <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">Tasleemat</a></i>
+</div>
+          </div>
+        </div>
+
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <h2 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Draft 2020-12 JSON Schema</h2>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                Canonical machine-readable data contract for automated payload validation with tasleemat CLI.
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+                Copy JSON Schema
+              </button>
+            </div>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+  &quot;$id&quot;: &quot;https://tasleemat.pmo/schemas/completed/PMO-00.04.schema.json&quot;,
+  &quot;title&quot;: &quot;Completed Resource Capacity Matrix Data Contract&quot;,
+  &quot;description&quot;: &quot;Additive structural schema validating completed Resource Capacity Matrix artifact data payloads (PMO-00.04).&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;artifact_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;const&quot;: &quot;PMO-00.04&quot;
+    },
+    &quot;metadata&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;project_name&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;project_code&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;date_prepared&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;format&quot;: &quot;date&quot;
+        },
+        &quot;project_manager&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;prepared_by&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;version&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;status&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;enum&quot;: [
+            &quot;draft&quot;,
+            &quot;baselined&quot;,
+            &quot;in_review&quot;,
+            &quot;approved&quot;
+          ]
+        }
+      },
+      &quot;required&quot;: [
+        &quot;project_name&quot;,
+        &quot;date_prepared&quot;,
+        &quot;project_manager&quot;,
+        &quot;prepared_by&quot;
+      ]
+    },
+    &quot;matrix_basis&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;matrix_scope_and_level&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What this matrix covers and at what level it is maintained, whether portfolio-wide across initiatives, program-wide across components, or for a single project. The level decides what the matrix is used to decide: a portfolio matrix decides between initiatives, a project matrix decides whether one plan is credible, and reading either as the other produces a confident wrong answer.&quot;
+        },
+        &quot;capacity_unit_of_measure&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The unit used for every figure in the matrix, whether person-days, full-time equivalents, or hours per period. State it once and use it throughout: a matrix whose rows use different units cannot be added up, and the total at the foot of it is then arithmetically meaningless rather than merely approximate.&quot;
+        },
+        &quot;periods_covered&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The periods the matrix covers, matching those of the schedule it is compared against. Where the matrix is annual and the schedule is weekly, the comparison has to be done by hand every time and is therefore not done, which is how a quarterly shortfall survives to become a delivery failure.&quot;
+        },
+        &quot;source_of_truth_or_extract&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Whether this matrix is the authoritative record or an extract from a resourcing tool. Record which, because a reader who treats a stale extract as current will plan against capacity that was reallocated weeks ago, and the error surfaces only when the work cannot be staffed.&quot;
+        },
+        &quot;matrix_owner&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The single role accountable for the matrix as a whole, which is normally not the owner of any one resource in it. Where this is blank, the matrix has contributors but nobody who notices that a row has not been updated since the reorganisation.&quot;
+        },
+        &quot;last_updated&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The date the matrix was last reconciled against the plan, and against which version of the schedule. Without it a reader cannot tell a current matrix from an abandoned one, and the two are indistinguishable on the page.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;matrix_scope_and_level&quot;,
+        &quot;capacity_unit_of_measure&quot;,
+        &quot;periods_covered&quot;,
+        &quot;source_of_truth_or_extract&quot;,
+        &quot;matrix_owner&quot;,
+        &quot;last_updated&quot;
+      ]
+    },
+    &quot;capacity_by_resource&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;id&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The identifier for the resource role, used in the demand and gap sections so the three can be compared row against row. Without a shared identifier the comparison is done by eye, and two similarly named roles are the ones most often confused.&quot;
+        },
+        &quot;resource_role_or_team&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The role or team, named as the work requires it rather than as the organisation chart draws it. A matrix organised by existing departments can never show a gap, because it only ever lists what is already there, and the absence of a needed capability reads as its absence from the plan rather than from the organisation.&quot;
+        },
+        &quot;period&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The period the row covers, using the same periods throughout the matrix. Capacity recorded per period rather than in total is what makes the matrix usable, because a resource with a thousand person-days available who is fully committed in the month the work is needed has no capacity at all.&quot;
+        },
+        &quot;total_available&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The capacity that exists in the period, before any allocation, in the unit declared for the matrix. This is a figure about the organisation rather than about the project, and recording it here is what allows the reader to see how much of it is actually available.&quot;
+        },
+        &quot;allocated&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The capacity already committed elsewhere in the portfolio. This is the column most often left out, and without it the available figure is the total, which is not what the project can use. It is also the column that reveals a resource being shared between initiatives without either owner knowing.&quot;
+        },
+        &quot;remaining&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What is left after allocation, which is the figure the planner actually has. Where this is negative, the matrix has found a real problem; where it is silently recorded as zero because nobody wanted to write a negative number, the problem has been hidden instead of solved.&quot;
+        },
+        &quot;constraints_or_single_points_of_failure&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What limits this resource: a location, a qualification held by one person, a licence, a tool only one person can operate, or a notice period. Record the consequence rather than the adjective, because \&quot;test automation is a single point of failure because one person holds it\&quot; can be acted on, while \&quot;test automation is a risk\&quot; cannot.&quot;
+        },
+        &quot;notes&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Anything that changes how the row should be read, such as a known vacancy, planned leave, or a resource shared with another portfolio. Where a role is filled by more than one person, record the role once and note the split here, since a row per person hides the total capacity of the role.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;id&quot;,
+        &quot;resource_role_or_team&quot;,
+        &quot;period&quot;,
+        &quot;total_available&quot;,
+        &quot;allocated&quot;,
+        &quot;remaining&quot;,
+        &quot;constraints_or_single_points_of_failure&quot;,
+        &quot;notes&quot;
+      ]
+    },
+    &quot;demand_by_resource&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;id&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The resource role the demand is for, matching the ID used in the capacity section so the two can be set against each other.&quot;
+        },
+        &quot;resource_role&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The role the demand falls on, using the same naming as the capacity section. The two must be the same list, or the comparison in the gap section silently excludes roles that appear in only one of them, which are usually the ones in trouble.&quot;
+        },
+        &quot;period&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The period the demand falls in. A demand recorded with no period cannot be compared with a capacity figure that has one, and is therefore dropped from the comparison without anyone deciding to drop it.&quot;
+        },
+        &quot;required_capacity&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What the scope and schedule require in the period. Record the figure the plan was built on rather than the figure currently being achieved, since the second is a consequence of the first being wrong and reporting it back as the requirement makes the shortfall disappear from the plan.&quot;
+        },
+        &quot;source_of_demand&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Which part of the plan generates it, such as a named deliverable, work package, or activity. A demand that cannot be traced to something in the plan cannot be challenged, and demands that cannot be challenged only ever grow.&quot;
+        },
+        &quot;priority&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Whether the demand is essential, or could be deferred or descoped. Without a priority a gap has no remedy, because the available responses are to add capacity, move the work, or reduce it, and nothing in the matrix says which of those the programme would accept.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;id&quot;,
+        &quot;resource_role&quot;,
+        &quot;period&quot;,
+        &quot;required_capacity&quot;,
+        &quot;source_of_demand&quot;,
+        &quot;priority&quot;
+      ]
+    },
+    &quot;gap_analysis&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;resource_role&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The role the gap applies to, using the same naming as the sections above. Where a role appears in the demand but not the capacity, the gap is the whole requirement rather than a shortfall, and that case is worth distinguishing because it is a different problem.&quot;
+        },
+        &quot;gap&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The difference between required and remaining, stated as a signed number so that a surplus is not read as a shortfall. This is the figure the whole matrix exists to produce, and a matrix that records only the totals has omitted the only number anyone reads.&quot;
+        },
+        &quot;period&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The period the gap falls in. A gap in a period with no demand in it is a different problem from a gap in a period the work needs, and reporting both as \&quot;a gap\&quot; sends the reader looking for the wrong remedy.&quot;
+        },
+        &quot;resolution_planned&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;How the gap will be closed: recruitment, a contractor, moving work between periods, reducing scope, or accepting the risk. Where the gap is covered by a contractor or a shared resource, record the contract or agreement that covers it, because a gap filled on the understanding that someone will help is not covered at all.&quot;
+        },
+        &quot;resolution_owner&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Who is accountable for closing the gap. A gap with a planned resolution and no owner is a gap being wished away, and it is the most common way a capacity matrix comes to be relied upon long after it was last true.&quot;
+        },
+        &quot;resolution_date&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;By when the resolution is expected to be in place. This is what tells the reader whether the plan is still feasible, so record it rather than leaving the row open, and where the date has passed without resolution, escalate rather than moving the date.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;resource_role&quot;,
+        &quot;gap&quot;,
+        &quot;period&quot;,
+        &quot;resolution_planned&quot;,
+        &quot;resolution_owner&quot;,
+        &quot;resolution_date&quot;
+      ]
+    },
+    &quot;contingency&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;resource_role&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The role the contingency applies to, or \&quot;plan\&quot; where the buffer is held across all roles rather than against one.&quot;
+        },
+        &quot;contingency_type&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Whether the buffer is in capacity, in time, or in scope. The three are not interchangeable: time contingency can be spent once, capacity contingency can be spent on anything, and scope contingency reduces the deliverable. A plan that holds no scope contingency and states only that it has float is a plan whose contingency is the work being cut.&quot;
+        },
+        &quot;contingency_amount&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The size of the buffer, in the declared unit. Record it as a figure rather than a percentage, because a percentage of a demand that was never reconciled produces a number that looks precise and is not.&quot;
+        },
+        &quot;how_it_would_be_used&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What the buffer protects, recorded so it cannot be quietly consumed on something it was not held for. A contingency with no stated use is the first thing cut in a difficult month, which is precisely the month it was held for.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;resource_role&quot;,
+        &quot;contingency_type&quot;,
+        &quot;contingency_amount&quot;,
+        &quot;how_it_would_be_used&quot;
+      ]
+    }
+  },
+  &quot;required&quot;: [
+    &quot;artifact_id&quot;,
+    &quot;metadata&quot;,
+    &quot;matrix_basis&quot;,
+    &quot;capacity_by_resource&quot;,
+    &quot;demand_by_resource&quot;,
+    &quot;gap_analysis&quot;,
+    &quot;contingency&quot;
+  ]
+}</code></pre>
+          
+          <details style="margin-top: 1.5rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1rem;">
+            <summary style="font-size: 0.95rem; font-weight: 600; cursor: pointer; color: var(--accent-blue);">
+              📋 Form Field Definitions Dictionary (Legacy Specification)
+            </summary>
+            <div style="display: flex; justify-content: flex-end; margin-top: 0.75rem; margin-bottom: 0.5rem;">
+              <button class="btn-utility" onclick="copySnippet(this, 'code-fields')">
+                Copy Field Definitions
+              </button>
+            </div>
+            <pre id="code-fields"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill in the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field, based on the provided project context. Reference parameters.md for global project variables.&quot;,
+  &quot;form_name&quot;: &quot;Resource Capacity Matrix&quot;,
+  &quot;document_reference&quot;: &quot;PMO-00.04&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Matrix_Scope_and_Level&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Matrix Scope and Level&quot;,
+      &quot;guidance&quot;: &quot;What this matrix covers and at what level it is maintained, whether portfolio-wide across initiatives, program-wide across components, or for a single project. The level decides what the matrix is used to decide: a portfolio matrix decides between initiatives, a project matrix decides whether one plan is credible, and reading either as the other produces a confident wrong answer.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Capacity_Unit_of_Measure&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Capacity Unit of Measure&quot;,
+      &quot;guidance&quot;: &quot;The unit used for every figure in the matrix, whether person-days, full-time equivalents, or hours per period. State it once and use it throughout: a matrix whose rows use different units cannot be added up, and the total at the foot of it is then arithmetically meaningless rather than merely approximate.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Periods_Covered&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Periods Covered&quot;,
+      &quot;guidance&quot;: &quot;The periods the matrix covers, matching those of the schedule it is compared against. Where the matrix is annual and the schedule is weekly, the comparison has to be done by hand every time and is therefore not done, which is how a quarterly shortfall survives to become a delivery failure.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Source_of_Truth_or_Extract&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Source of Truth or Extract&quot;,
+      &quot;guidance&quot;: &quot;Whether this matrix is the authoritative record or an extract from a resourcing tool. Record which, because a reader who treats a stale extract as current will plan against capacity that was reallocated weeks ago, and the error surfaces only when the work cannot be staffed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Matrix_Owner&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Matrix Owner&quot;,
+      &quot;guidance&quot;: &quot;The single role accountable for the matrix as a whole, which is normally not the owner of any one resource in it. Where this is blank, the matrix has contributors but nobody who notices that a row has not been updated since the reorganisation.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Last_Updated&quot;: {
+      &quot;section&quot;: &quot;Matrix Basis&quot;,
+      &quot;label&quot;: &quot;Last Updated&quot;,
+      &quot;guidance&quot;: &quot;The date the matrix was last reconciled against the plan, and against which version of the schedule. Without it a reader cannot tell a current matrix from an abandoned one, and the two are indistinguishable on the page.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_ID&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the resource role, used in the demand and gap sections so the three can be compared row against row. Without a shared identifier the comparison is done by eye, and two similarly named roles are the ones most often confused.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Resource_Role_or_Team&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Resource Role or Team&quot;,
+      &quot;guidance&quot;: &quot;The role or team, named as the work requires it rather than as the organisation chart draws it. A matrix organised by existing departments can never show a gap, because it only ever lists what is already there, and the absence of a needed capability reads as its absence from the plan rather than from the organisation.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Period&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Period&quot;,
+      &quot;guidance&quot;: &quot;The period the row covers, using the same periods throughout the matrix. Capacity recorded per period rather than in total is what makes the matrix usable, because a resource with a thousand person-days available who is fully committed in the month the work is needed has no capacity at all.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Total_Available&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Total Available&quot;,
+      &quot;guidance&quot;: &quot;The capacity that exists in the period, before any allocation, in the unit declared for the matrix. This is a figure about the organisation rather than about the project, and recording it here is what allows the reader to see how much of it is actually available.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Allocated&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Allocated&quot;,
+      &quot;guidance&quot;: &quot;The capacity already committed elsewhere in the portfolio. This is the column most often left out, and without it the available figure is the total, which is not what the project can use. It is also the column that reveals a resource being shared between initiatives without either owner knowing.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Remaining&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Remaining&quot;,
+      &quot;guidance&quot;: &quot;What is left after allocation, which is the figure the planner actually has. Where this is negative, the matrix has found a real problem; where it is silently recorded as zero because nobody wanted to write a negative number, the problem has been hidden instead of solved.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Constraints_or_Single_Points_of_Failure&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Constraints or Single Points of Failure&quot;,
+      &quot;guidance&quot;: &quot;What limits this resource: a location, a qualification held by one person, a licence, a tool only one person can operate, or a notice period. Record the consequence rather than the adjective, because \&quot;test automation is a single point of failure because one person holds it\&quot; can be acted on, while \&quot;test automation is a risk\&quot; cannot.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Notes&quot;: {
+      &quot;section&quot;: &quot;Capacity by Resource&quot;,
+      &quot;label&quot;: &quot;Notes&quot;,
+      &quot;guidance&quot;: &quot;Anything that changes how the row should be read, such as a known vacancy, planned leave, or a resource shared with another portfolio. Where a role is filled by more than one person, record the role once and note the split here, since a row per person hides the total capacity of the role.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_ID&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The resource role the demand is for, matching the ID used in the capacity section so the two can be set against each other.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Resource_Role&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Resource Role&quot;,
+      &quot;guidance&quot;: &quot;The role the demand falls on, using the same naming as the capacity section. The two must be the same list, or the comparison in the gap section silently excludes roles that appear in only one of them, which are usually the ones in trouble.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Period&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Period&quot;,
+      &quot;guidance&quot;: &quot;The period the demand falls in. A demand recorded with no period cannot be compared with a capacity figure that has one, and is therefore dropped from the comparison without anyone deciding to drop it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Required_Capacity&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Required Capacity&quot;,
+      &quot;guidance&quot;: &quot;What the scope and schedule require in the period. Record the figure the plan was built on rather than the figure currently being achieved, since the second is a consequence of the first being wrong and reporting it back as the requirement makes the shortfall disappear from the plan.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Source_of_Demand&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Source of Demand&quot;,
+      &quot;guidance&quot;: &quot;Which part of the plan generates it, such as a named deliverable, work package, or activity. A demand that cannot be traced to something in the plan cannot be challenged, and demands that cannot be challenged only ever grow.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Priority&quot;: {
+      &quot;section&quot;: &quot;Demand by Resource&quot;,
+      &quot;label&quot;: &quot;Priority&quot;,
+      &quot;guidance&quot;: &quot;Whether the demand is essential, or could be deferred or descoped. Without a priority a gap has no remedy, because the available responses are to add capacity, move the work, or reduce it, and nothing in the matrix says which of those the programme would accept.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Resource_Role&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resource Role&quot;,
+      &quot;guidance&quot;: &quot;The role the gap applies to, using the same naming as the sections above. Where a role appears in the demand but not the capacity, the gap is the whole requirement rather than a shortfall, and that case is worth distinguishing because it is a different problem.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Gap&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Gap&quot;,
+      &quot;guidance&quot;: &quot;The difference between required and remaining, stated as a signed number so that a surplus is not read as a shortfall. This is the figure the whole matrix exists to produce, and a matrix that records only the totals has omitted the only number anyone reads.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Period&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Period&quot;,
+      &quot;guidance&quot;: &quot;The period the gap falls in. A gap in a period with no demand in it is a different problem from a gap in a period the work needs, and reporting both as \&quot;a gap\&quot; sends the reader looking for the wrong remedy.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Resolution_Planned&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resolution Planned&quot;,
+      &quot;guidance&quot;: &quot;How the gap will be closed: recruitment, a contractor, moving work between periods, reducing scope, or accepting the risk. Where the gap is covered by a contractor or a shared resource, record the contract or agreement that covers it, because a gap filled on the understanding that someone will help is not covered at all.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Resolution_Owner&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resolution Owner&quot;,
+      &quot;guidance&quot;: &quot;Who is accountable for closing the gap. A gap with a planned resolution and no owner is a gap being wished away, and it is the most common way a capacity matrix comes to be relied upon long after it was last true.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Resolution_Date&quot;: {
+      &quot;section&quot;: &quot;Gap Analysis&quot;,
+      &quot;label&quot;: &quot;Resolution Date&quot;,
+      &quot;guidance&quot;: &quot;By when the resolution is expected to be in place. This is what tells the reader whether the plan is still feasible, so record it rather than leaving the row open, and where the date has passed without resolution, escalate rather than moving the date.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f27_Resource_Role&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;Resource Role&quot;,
+      &quot;guidance&quot;: &quot;The role the contingency applies to, or \&quot;plan\&quot; where the buffer is held across all roles rather than against one.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f28_Contingency_Type&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;Contingency Type&quot;,
+      &quot;guidance&quot;: &quot;Whether the buffer is in capacity, in time, or in scope. The three are not interchangeable: time contingency can be spent once, capacity contingency can be spent on anything, and scope contingency reduces the deliverable. A plan that holds no scope contingency and states only that it has float is a plan whose contingency is the work being cut.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f29_Contingency_Amount&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;Contingency Amount&quot;,
+      &quot;guidance&quot;: &quot;The size of the buffer, in the declared unit. Record it as a figure rather than a percentage, because a percentage of a demand that was never reconciled produces a number that looks precise and is not.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f30_How_It_Would_Be_Used&quot;: {
+      &quot;section&quot;: &quot;Contingency&quot;,
+      &quot;label&quot;: &quot;How It Would Be Used&quot;,
+      &quot;guidance&quot;: &quot;What the buffer protects, recorded so it cannot be quietly consumed on something it was not held for. A contingency with no stated use is the first thing cut in a difficult month, which is precisely the month it was held for.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+          </details>
+          
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <!-- Quick Installation & GitHub Repository Bar -->
+      <div class="footer-quick-bar">
+        <div class="footer-pip-box">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
+            Install Package:
+          </span>
+          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy', 2000);">
+            Copy
+          </button>
+        </div>
+        <div class="footer-links-row">
+          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+            📦 PyPI Package (v2.5.0.post1)
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            GitHub Source Code
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            💬 Report Issue
+          </a>
+        </div>
+      </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fouad Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">Mohamed Fouad Fakhruldeen</div>
+            <div class="author-bio">
+              Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 Tasleemat</div>
+          <p style="margin-bottom: 1rem;">Tasleemat is a bilingual open deliverable library and supporting toolkit. Not a live PMO application or approval authority.</p>
+
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">Start Here</a></li>
+            <li><a href="/Tasleemat/deliverables/">Deliverables (114)</a></li>
+            <li><a href="/Tasleemat/tailoring/">Tailoring & Tiers</a></li>
+            <li><a href="/Tasleemat/guides/">Core Manuals</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Technical & AI</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">Developers Hub</a></li>
+            <li><a href="/Tasleemat/developers/cli/">CLI Tooling</a></li>
+            <li><a href="/Tasleemat/developers/sdk/">Python SDK</a></li>
+            <li><a href="/Tasleemat/developers/mcp/">Model Context Protocol (MCP)</a></li>
+            <li><a href="/Tasleemat/developers/schemas/">Draft 2020-12 Schemas</a></li>
+            <li><a href="/Tasleemat/developers/agentic/">Agentic Swarms & CI/CD</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Community & Policy</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.35rem;"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg> GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">📦 PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">PMO Governance Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const btn = evt.currentTarget || (evt.target && evt.target.closest('.tab-btn'));
+    const parent = btn ? btn.closest('.tabs-container') : (evt.target && evt.target.closest('.tabs-container'));
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    if (btn) {
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+    }
+    const targetPane = parent.querySelector('#' + tabId) || document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
+})();
+
+  </script>
+  
+</body>
+</html>

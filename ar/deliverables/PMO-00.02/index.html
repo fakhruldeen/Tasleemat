@@ -1,0 +1,3032 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-00.02 ميثاق البرنامج | تسليمات</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="PMO-00.02 ميثاق البرنامج | تسليمات">
+  <meta name="description" content="PMO-00.02: ميثاق البرنامج - تسليمة معيارية للمشروع، دليل تطبيقي للممارس، مثال واقعي متكامل، ومخطط JSON للتحقق الآلي.">
+  <meta name="author" content="Mohamed Fouad Fakhruldeen">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fakhr.me/Tasleemat/ar/deliverables/PMO-00.02/">
+  <link rel="alternate" hreflang="en" href="https://fakhr.me/Tasleemat/deliverables/PMO-00.02/">
+  <link rel="alternate" hreflang="ar" href="https://fakhr.me/Tasleemat/ar/deliverables/PMO-00.02/">
+  
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fakhr.me/Tasleemat/ar/deliverables/PMO-00.02/">
+  <meta property="og:site_name" content="تسليمات | Tasleemat">
+  <meta property="og:title" content="PMO-00.02 ميثاق البرنامج | تسليمات">
+  <meta property="og:description" content="PMO-00.02: ميثاق البرنامج - تسليمة معيارية للمشروع، دليل تطبيقي للممارس، مثال واقعي متكامل، ومخطط JSON للتحقق الآلي.">
+  <meta property="og:image" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta property="og:image:secure_url" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="PMO-00.02 ميثاق البرنامج - تسليمات">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fakhr.me/Tasleemat/ar/deliverables/PMO-00.02/">
+  <meta name="twitter:title" content="PMO-00.02 ميثاق البرنامج | تسليمات">
+  <meta name="twitter:description" content="PMO-00.02: ميثاق البرنامج - تسليمة معيارية للمشروع، دليل تطبيقي للممارس، مثال واقعي متكامل، ومخطط JSON للتحقق الآلي.">
+  <meta name="twitter:image" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta name="twitter:image:alt" content="PMO-00.02 ميثاق البرنامج - تسليمات">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* DevHunt Badge */
+.devhunt-badge-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.devhunt-badge {
+  display: inline-block;
+  line-height: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.devhunt-badge:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.devhunt-dark {
+  display: none !important;
+}
+
+.devhunt-light {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-dark {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-light {
+  display: none !important;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* Tables */
+.table-wrapper, .markdown-body table {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* ==========================================================================
+   Realistic Example & Form Viewer Components (Stitch Design System)
+   ========================================================================== */
+
+.deliverable-header-card {
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0.5rem 0 1.25rem 0;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .deliverable-header-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.deliverable-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  line-height: 1.2;
+}
+
+.badge-code {
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+}
+
+[data-theme="dark"] .badge-code {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.badge-phase {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+[data-theme="dark"] .badge-phase {
+  background-color: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+.badge-example {
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+[data-theme="dark"] .badge-example {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Document Metadata Bar & Chips */
+.doc-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doc-meta-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.doc-meta-chip:hover {
+  border-color: var(--border-focus);
+}
+
+.meta-chip-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.meta-chip-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  word-break: break-word;
+}
+
+/* Form Viewer Container & Elevation */
+.form-viewer-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .form-viewer-container {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+.form-viewer-container table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-viewer-container blockquote {
+  background: var(--bg-main);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+}
+
+[dir="rtl"] .form-viewer-container blockquote {
+  border-radius: 8px 0 0 8px;
+}
+
+
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.footer-pip-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-pip-code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--accent-blue);
+  font-weight: 600;
+  direction: ltr !important;
+  text-align: left;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.footer-badge-link:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-blue);
+  background: var(--bg-card-hover);
+}
+
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+
+
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/tailoring/" class="nav-link ">مستويات الحوكمة</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-00.02/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-00.02</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-00.02</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 00: إدارة البرامج والمحافظ
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span>
+            <span class="tag pack">general</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">ميثاق البرنامج</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">Program Charter</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-00.02 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-00.02 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 نظرة عامة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 القالب
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 مثال واقعي
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ المخطط
+          </button>
+        </div>
+
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 00:</strong> إدارة البرامج والمحافظ
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-00.02 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!-- 
+تعليمات النموذج الذكي: املأ الحقول التي تحمل [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+ميثاق البرنامج هو الوثيقة التي تجيز البرنامج. فهي تذكر لماذا يوجد البرنامج، وما الذي يُحاسب عليه مقابل الإنجاز، وما الذي مُنح لمدير البرنامج من صلاحية وموارد لإنجازه. وهو نقطة التحول المحورية التي يتم فيها توحيد المشاريع الفردية المترابطة تحت مظلة برنامج متكامل ذي حوكمة استراتيجية ومسؤولية موحدة.
+
+والغرض من فصل المكونات عن الأهداف هو أن الأمرين يختلطان كثيرًا: المكونات تصف القائم، والأهداف تصف ما يجب أن يتغير. والبرنامج الذي يمكن نسخ قائمة مكوناته إلى قسم الأهداف لم يقرر بعد ما هو الغرض منه.
+
+المحاذاة: ينبغي أن يكون ميثاق البرنامج متسقًا مع الوثائق التالية: خارطة طريق المحفظة، دراسة الجدوى، خطة إدارة البرنامج، خطة إدارة التغيير المؤسسي.
+
+إرشادات الكتابة:
+
+*  اذكر الغرض بوصفه التغيير الذي وجود البرنامج لإحداثه، لا بوصفه وصفًا للعمل. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به.
+
+*  اجعل لكل هدف مقياسًا وتاريخًا. ف الهدف الذي لا يمكن اختباره لا يمكن التقرير في شأنه، والهدف الذي يُبلَّغ عنه بالرأي فقط لا يميز بينه وبين التمني.
+
+*  سمِّ الصلاحية التي يملكها مدير البرنامج، وكذلك ما لا يملكه. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع.
+
+*  سجل حد التمويل المخصص كافتراض حيث لم يُعتمد بعد. فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة.
+
+*  سجل ما يحدث عند عدم بلوغ الهدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر في الغرفة حين يحين الأمر.
+
+ملاحظات التخصيص:
+
+*  قد يُدمج ميثاق البرنامج مع دراسة الجدوى حين تعامل المؤسسةهما كوثيقة إجازة واحدة. وعند الدمج، احتفظ بمحتوى الاثنتين: فدراسة الجدوى تجيب هل يستحق البرنامج التنفيذ، والميثاق يجيب من المسؤول عن تنفيذه.
+
+*  قد يكون قسم المكونات مقتطفًا من المحفظة لا قائمة مُدارة، حين تتغير المكونات أسرع من مراجعة الميثاق. وينبغي أن يحدد النموذج أيّهما، حتى لا يتعامل القارئ مع المقتطف على أنه مرجع ملزم.
+
+*  أضف الأقسام أو احذفها بحسب ما تتطلبه حوكمة البرنامج. فالبرنامج الذي يفرض إدارة منافع رسمية يحمل قسم منافع لا يحتاجه برنامج بلا ذلك الالتزام.
+
+*  وحين يكون البرنامج صغيرًا بما يكفي ليحتفظ شخص واحد بكل الصلاحيات، فذلك صراحةً لا ترك الحقل فارغًا، مع تسجيل أي صلاحية تبقى محفوظة في مكان آخر.
+
+إرشادات الأعمدة، حسب العمود:
+
+صفوف الأهداف:
+
+*  **المعرف:** معرف الهدف، يُستخدم في أقسام المكونات والمنافع والتقارير ليتتبع التقدم في تحقيقه ربطًا بالعمل الذي قصد به.
+
+*  **الهدف:** ما يجب أن يكون عليه حال البرنامج عند نجاحه، بصيغة يمكن لشخص معترض أن يبيّن سبب اعتراضه.
+
+*  **المقياس:** كيف سيُتحقق من الإنجاز، مع ذكر مصدر الرقم لا الشعور الكامن وراءه. فالمقياس بلا مصدر لا يستطيع أحد إعادة إنتاجه عند التحقق.
+
+*  **تاريخ الاستحقاق:** متى يجب بلوغ الهدف، وهو ما يجعله مستهدفًا لا اتجاهًا.
+
+*  **المالك:** الدور الواحد المسؤول عن الهدف، وهو عادةً ليس مدير البرنامج لكل الأهداف.
+
+*  **الحالة:** أين يقف الهدف حاليًا، من مجموعة ثابتة متفق عليها.
+
+صفوف المكونات:
+
+*  **معرف المكون:** معرف مشروع المكون الثابت، مطابقًا للمعرف المستخدم في خارطة طريق المحفظة.
+
+*  **اسم المكون:** اسم المشروع أو العملية ضمن البرنامج.
+
+*  **الارتباط بالأهداف:** أهداف البرنامج التي يخدمها المكون. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق هو الموضع الأخير الذي يظهر فيه ذلك قبل الالتزام بالمال.
+
+*  **الحالة:** أين يقف المكون حاليًا.
+
+*  **المالك:** من المسؤول عن المكون، وهو عادةً ليس مدير البرنامج.
+
+صفوف المنافع:
+
+*  **معرف المنفعة:** معرف المنفعة.
+
+*  **المنفعة:** المنفعة المتوقعة من البرنامج.
+
+*  **التصنيف:** هل هي مالية أم غير مالية. فالاثنتان تُداران على نحو مختلفتين، والمنفعة المسجلة دون تصنيف تُقدَّر عادةً بالقيمة التي وجدها كاتبها أكثر ملاءمة.
+
+*  **المستفيد:** من ينتفع بالمنفعة، مذكورًا لا موصوفًا. فالمنفعة التي لا مستفيد محدد لها لا يمكن تحقيقها.
+
+*  **آلية التحقيق:** كيف ستُحصَّل المنفعة فعليًا، وهنا تتحول معظم المنافع المفترضة إلى لا شيء. فالآلية هي التي تميز المنفعة التي سينجزها البرنامج عن المنفعة التي تأمل المؤسسة حدوثها.
+
+*  **تاريخ التحقيق:** متى يُتوقع تحقيق المنفعة، وقد يكون بعد إغلاق المكون الذي أنشأها بوقت طويل.
+
+صفوف الصلاحيات:
+
+*  **نوع القرار:** نوع القرار الذي يعنيه هذا الصف.
+
+*  **مستوى الصلاحية:** المستوى الذي يحق لمدير البرنامج أن يقرر فيه، كالفريق أو القسم أو وحدة الأعمال.
+
+*  **مسار التصعيد:** من يقرر عند تجاوز مستوى الصلاحية، مذكورًا بالاسم كي لا يُتفاوض على التصعيد لحظة الحاجة إليه.
+
+*  **الحدود أو الشروط:** ما لا تمتد إليه هذه الصلاحية، وهي نصف الصف الذي يمنع الخلاف لاحقًا.
+
+صفوف المخاطر والافتراضات:
+
+*  **المعرف:** معرف المخاطرة أو الافتراض.
+
+*  **النوع:** هل هو مخاطرة أم افتراض.
+
+*  **الوصف:** ما هو محل المخاطرة، أو ما هو مفترض.
+
+*  **الأثر على البرنامج:** ما يحدث للبرنامج إذا وقعت المخاطرة أو ثبت خطأ الافتراض.
+
+*  **المالك:** من يراقب هذا البند.
+
+*  **تاريخ المراجعة:** متى سيُراجع مرة أخرى.
+--&gt;
+
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{اسم_البرنامج}} - {{معرف_البرنامج}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;ميثاق البرنامج&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير البرنامج:** {{اسم_مدير_البرنامج}} | **إعداد:** {{معد_الوثيقة}} |
+| :--- | :--- | :--- |
+
+---
+
+## 1. غرض البرنامج ومبرراته
+&lt;!-- التغيير الذي وجود البرنامج لإحداثه، لا وصف العمل الذي سيؤديه. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به. سجل المحرّك التجاري من خارطة طريق المحفظة ليُتتبَع البرنامج إلى الاستراتيجية التي يخدمها. واذكر ما يحدث إذا لم يُنفَّذ البرنامج، فهذا هو الاختبار الذي يُقاس عليه كل ميثاق في النهاية، عادةً بعد سنوات من شخص لم يكن حاضرًا عند كتابته. --&gt;
+
+**غرض البرنامج:** [ أضف التفاصيل... ]
+
+**المحرّك التجاري والتسلسل مع الاستراتيجية:** [ أضف التفاصيل... ]
+
+**بيان المشكلة أو الفرصة:** [ أضف التفاصيل... ]
+
+**عاقبة عدم التنفيذ:** [ أضف التفاصيل... ]
+
+**بيان رؤية البرنامج:** [ أضف التفاصيل... ]
+
+---
+
+## 2. أهداف البرنامج
+&lt;!-- ما يجب أن يكون عليه الحال عند نجاح البرنامج. ولكل هدف مقياس وتاريخ استحقاق، فالهدف الذي لا يمكن اختباره لا يمكن التقرير في شأنه، والذي يُبلَّغ عنه بالرأي فقط لا يميز بينه وبين التمني. وحين يكون أحد المكونات قد مُوّل قبل كتابة الميثاق، فكثيرًا ما يُكتب الهدف ليطابق المكون؛ فاحسب اتجاه هذه المطابقة، فالبرنامج الذي اشتُقّت أهدافه من مكوناته قد ورث نطاقها دون أن يختاره. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | الهدف | المقياس | تاريخ الاستحقاق | المالك | الحالة |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 3. مشاريع البرنامج وعملياته
+&lt;!-- ما يتكون منه البرنامج، تمييزًا لما يجب أن يحققه. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق هو الإطار الحاكم الذي يظهر فيه ذلك قبل الالتزام بالمال لا بعده. استخدم معرّفات المكونات من خارطة طريق المحفظة ليتم ربط القائمتين. وأشر حيث يكون المكون مشتركًا مع برنامج آخر، فالمكون المُبلَّغ إلى مالكين لا يُبلَّغ إلى أيّ منهما حين يختلفان. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| معرف المكون | اسم المكون | الارتباط بالأهداف | الحالة | المالك |
+| ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 4. منافع البرنامج
+&lt;!-- ما يتوقع البرنامج أن ينتجه ولا ينتجه المكونات منفردة. والمنفعة التي ليس لها مستفيد محدد ليست منفعة يمكن محاسبة البرنامج عليها، والمنفعة التي ليس لها آلية تحقيق هي افتراض لا خطة: فآلية التحقيق هي التي تميز منفعة سينجزها البرنامج عن منفعة تأمل المؤسسة حدوثها. وف المنفعة المالية، فسجل متى تتحقق، وهو غالبًا بعد إغلاق المكون الذي أنشأها بوقت طويل. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| معرف المنفعة | المنفعة | التصنيف | المستفيد | آلية التحقيق | تاريخ التحقيق |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 5. صلاحية مدير البرنامج وحوكمته
+&lt;!-- ما يحق لمدير البرنامج أن يقرره، وما لا يحق له بالقدر نفسه. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع لخلو رسم الخط الذي يُتصعَّد عبره. وسمِّ مسار التصعيد، حتى لا يُتفاوض عليه لحظة الحاجة. وسجل وضع التمويل بصدق، بما فيه ما لم يُعتمد بعد: فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+**بيان صلاحية مدير البرنامج:** [ أضف التفاصيل... ]
+
+**الصلاحية المحفوظة للراعي:** [ أضف التفاصيل... ]
+
+**مجلس حوكمة البرنامج:** [ أضف التفاصيل... ]
+
+**وتيرة التقارير وجمهورها:** [ أضف التفاصيل... ]
+
+**مسار التصعيد:** [ أضف التفاصيل... ]
+
+**وضع التمويل:** [ أضف التفاصيل... ]
+
+| نوع القرار | مستوى الصلاحية | مسار التصعيد | الحدود أو الشروط |
+| ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 6. المخاطر والافتراضات
+&lt;!-- ما يفترضه الميثاق وما يمكن أن يفسده. وهذه بنود مستوى البرنامج؛ فمخاطر المكونات تُسجَّل في سجلات المكونات الخاصة ولا تُكرر هنا. والمخاطرة بلا مالك لا تُراقب، والافتراض بلا تاريخ مراجعة يصبح حقيقةً بالافتراض في الوقت نفسه الذي ينبغي أن يظل فيه مسائلًا. وحين لا يملك البرنامج أي احتياطي ممول، فذلك صراحةً، فالبرنامج الذي لا يتوقع أيًا منها لم يبحث ببساطة. أضف صفوفًا أو احذفها حسب الحاجة. --&gt;
+
+| المعرف | النوع | الوصف | الأثر على البرنامج | المالك | تاريخ المراجعة |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+| [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] | [ أضف التفاصيل... ] |
+
+---
+
+## 7. الاستجابة عند عدم بلوغ الهدف
+&lt;!-- ما يحدث عند عدم بلوغ هدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر في الغرفة حين يحيء الأمر، وهو عادةً أقل من يملك الوقت لذلك. وسجل ما إذا كانت الاستجابة إعادة تخطيط أم تقليص نطاق أم تمديد تاريخ أم إغلاق الهدف، ومن يتخذ ذلك القرار. أضف صفوفًا أو احذفها بحسب ما تتطلبه حوكمة البرنامج. --&gt;
+
+**الاستجابة المحددة:** [ أضف التفاصيل... ]
+
+**صلاحية القرار:** [ أضف التفاصيل... ]
+
+**محفِّز إعادة التقييم:** [ أضف التفاصيل... ]
+
+---
+
+## 8. الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير البرنامج** | {{اسم_مدير_البرنامج}} | _______________________ | [.... -.... -.... ] |
+| **راعي البرنامج** | {{اسم_راعي_البرنامج}} | _______________________ | [.... -.... -.... ] |
+| **مالك الأعمال** | {{اسم_مالك_الأعمال}} | _______________________ | [.... -.... -.... ] |
+---
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;النموذج:&lt;/strong&gt; ميثاق البرنامج | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-00.02 &lt;br&gt;
+ &lt;i&gt;تاريخ الإنشاء: {{وقت_الإنشاء}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
+          <div class="markdown-body" style="line-height: 1.8;">
+            <h2 id="_1">دليل نماذج تسليمات</h2>
+<h1 id="_2">مخرج المشروع: ميثاق البرنامج</h1>
+<p><strong>المرجع الوثيقي:</strong> <code>PMO-00.02</code></p>
+<p>توفر هذه الوثيقة مرجعًا شاملًا ومهنيًا لفهم الغرض من <strong>ميثاق البرنامج</strong>
+واستخدامه الفعال بما يتوافق مع إطار تسليمات.</p>
+<hr />
+<h3 id="1">1. مفهوم الوثيقة وطبيعتها</h3>
+<p>وثيقة رسمية متوافقة مع تسليمات تُعرف بـ <strong>ميثاق البرنامج</strong>، وهي الوثيقة التي
+تجيز البرنامج: لماذا يوجد، وما الذي يُحاسب عليه مقابل الإنجاز، وما الذي مُنح لمدير
+البرنامج من صلاحية وموارد لإنجازه.</p>
+<p>وتسجل الغرض والمحرّك التجاري، والأهداف بمقاييسها وتواريخ استحقاقها، ومشاريع
+البرنامج المكونة والأهداف التي تخدمها، والمنافع وكيفية تحقيقها فعليًا، والصلاحية
+الممنوحة والمحفوظة، ومخاطر البرنامج وافتراضاته على المستوى البرنامجي، وما يحدث
+عند عدم بلوغ الهدف.</p>
+<hr />
+<h3 id="2">2. القيمة والأهمية الاستراتيجية</h3>
+<p>لأنه الإطار الحاكم الذي تتحول عنده مجموعة من مشاريع مفردة معقولة إلى برنامج له مالك
+واحد مسؤول ومجموعة واحدة من الأهداف. وفصل المكونات عن الأهداف هو الجزء المهم:
+فالبرنامج الذي يمكن نسخ قائمة مكوناته إلى قسم أهدافه قد لم يحدد نطاقه الاستراتيجي بناء على مبررات أعمال واضحة،
+والميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر حين يحيء الأمر.</p>
+<hr />
+<h3 id="3">3. التوقيت ودواعي الإعداد والتحديث</h3>
+<p>يُعد هذا المخرج في مجموعة <strong>إدارة البرامج والمحفظة</strong>، عند بدء البرنامج وقبل أن
+يُموَّل أي مشروع مكون.</p>
+<hr />
+<h3 id="4-raci">4. الأدوار والمسؤوليات (RACI)</h3>
+<p><strong>المسؤوليات:</strong> يتبناه التنفيذي الذي يحتفظ بالتمويل ويعتمد الميثاق. ويملكه مدير
+البرنامج الذي يُحاسب على تحقيق الأهداف لا على المكونات، فلكل منها مالكها. ويراجعه
+مكتب إدارة المشاريع للتسق مع المحفظة، ويوقّعه الشريك المالي للأعمال الذي يستطيع
+التأكد من أن وضع التمويل واقعي.</p>
+<hr />
+<h3 id="_3">إرشادات التخصيص والمواءمة</h3>
+<ul>
+<li>قد يُدمج ميثاق البرنامج مع دراسة الجدوى حين تعامل المؤسسةهما كوثيقة إجازة
+  واحدة، وعند الدمج احتفظ بمحتوى الاثنتين: فدراسة الجدوى تجيب هل يستحق البرنامج
+  التنفيذ، والميثاق تجيب من المسؤول عن تنفيذه.</li>
+<li>قد يكون قسم المكونات مقتطفًا من المحفظة لا قائمة مُدارة، حين تتغير المكونات
+  أسرع من مراجعة الميثاق، وينبغي أن يحدد النموذج أيّهما حتى لا يتعامل القارئ
+  مع المقتطف على أنه مرجع ملزم.</li>
+<li>أضف الأقسام أو احذفها بحسب ما تتطلبه حوكمة البرنامج، فالبرنامج الذي يفرض
+  إدارة منافع رسمية يحمل قسم منافع لا يحتاجه برنامج بلا ذلك الالتزام.</li>
+<li>وحين يكون البرنامج صغيرًا بما يكفي ليحتفظ شخص واحد بكل الصلاحيات، فذلك
+  صراحةً لا ترك الحقل فارغًا، مع تسجيل أي صلاحية تبقى محفوظة في مكان آخر.</li>
+<li>يمكن استبدال جدول الصلاحيات بإحالة إلى سياسة تفويض صلاحيات مركزية، شريطة أن
+  يسجل الميثاق رقم نسخة السياسة المنطبقة.</li>
+</ul>
+<hr />
+<h3 id="_4">المحاذاة والترابط المؤسسي</h3>
+<p>ينبغي أن يكون ميثاق البرنامج متسقًا مع الوثائق التالية:
+*  خارطة طريق المحفظة
+*  دراسة الجدوى
+*  خطة إدارة البرنامج
+*  خطة إدارة التغيير المؤسسي</p>
+<hr />
+<h3 id="5">5. إرشادات تعبئة الحقول والبيانات</h3>
+<p>لإكمال <strong>ميثاق البرنامج</strong> على نحو دقيق ومهني، على المسؤول أن يملأ الحقول التالية
+بناءً على سياق المشروع (مع الرجوع إلى <code>parameters.md</code> للمتغيرات العامة للمشروع):</p>
+<ul>
+<li><strong>غرض البرنامج:</strong> التغيير الذي وجود البرنامج لإحداثه، لا وصف العمل الذي سيؤديه. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به.</li>
+<li><strong>المحرّك التجاري والتسلسل مع الاستراتيجية:</strong> مدخل المحفظة أو الاستراتيجية الذي يخدمه هذا البرنامج، مذكورًا ليُتتبَع البرنامج إلى الهدف الذي موّله. فالميثاق الذي لا يذكر محرّكه لا سبيل له إلى الإجابة عن هل يستحق التنفيذ بعد أن تكون الاستراتيجية قد تحركت.</li>
+<li><strong>بيان المشكلة أو الفرصة:</strong> المشكل المحدود الذي يُحل أو الفرصة المحدودة التي تُلتقط، بصيغة يمكن لشخص أن يعترض عليها فيبيّن سبب اعتراضه. والفرصة الموصوفة بمصطلحات إيجابية فقط لا تميز عن التمني، إذ لا شيء في البيان يمكن أن يفشل.</li>
+<li><strong>عاقبة عدم التنفيذ:</strong> ما يحدث إذا لم يُنفَّذ البرنامج، بما فيه ما يُفقد لا ما يُفوَّت فقط. فهذا هو الاختبار الذي يُقاس عليه كل ميثاق في النهاية، عادةً بعد سنوات بشخص لم يكن حاضرًا عند كتابته، وهو لا يُسجَّل وقت الكتابة أبدًا.</li>
+<li><strong>بيان رؤية البرنامج:</strong> بيان قصير عن الحالة المستقبلية التي وجود البرنامج لإحداثها، بصياغة المؤسسة. وأبقه جملة واحدة يفهمها من هو خارج البرنامج، فرؤية يقرأها فريق البرنامج وحده بيان إلى نفسه.</li>
+<li><strong>المعرف:</strong> معرف الهدف، يُستخدم في أقسام المكونات والمنافع والتقارير ليتتبع التقدم في تحقيقه ربطًا بالعمل الذي قصد به.</li>
+<li><strong>الهدف:</strong> ما يجب أن يكون عليه الحال عند نجاح البرنامج، بصيغة يمكن لشخص معترض أن يبيّن سبب اعتراضه. وحين يكون المكون قد مُوّل قبل كتابة الميثاق، فاحسب اتجاه المطابقة: الهدف المكتوب ليطابق المكون قد لم يحدد نطاقه الاستراتيجي بناء على مبررات أعمال واضحة.</li>
+<li><strong>المقياس:</strong> كيف سيُتحقق من الإنجاز، بذكر مصدر الرقم لا الشعور الكامن وراءه. فالمقياس بلا مصدر لا يستطيع أحد إعادة إنتاجه عند التحقق، والهدف الذي لا يمكن إعادة إنتاج دليله رأي مضاف إليه رقم.</li>
+<li><strong>تاريخ الاستحقاق:</strong> متى يجب بلوغ الهدف، وهو ما يجعله مستهدفًا لا اتجاهًا. وحين يكون التاريخ موروثًا من خطة المكون لا من المنفعة التي يخدمها، فسجل التاريخ الذي يُتوقع فيه تحقق المنفعة فعلًا لا تاريخ انتهاء العمل.</li>
+<li><strong>المالك:</strong> الدور الواحد المسؤول عن الهدف، وهو عادةً ليس مدير البرنامج لكل الأهداف. والهدف الذي يملكه فريق لا يمكن ملاحقته، لأن الفريق لا يكون متاحًا حين يلزم الجواب.</li>
+<li><strong>الحالة:</strong> أين يقف الهدف حاليًا، من مجموعة ثابتة متفق عليها للبرنامج. فالحالة النصية الحرة لا يمكن تجميعها، والبرنامج الذي لا يمكن تجميع أهدافه لا يمكن الإبلاغ عنه لراعيه إلا على صورة قائمة.</li>
+<li><strong>معرف المكون:</strong> معرف مشروع المكون الثابت، مطابقًا للمعرف المستخدم في خارطة طريق المحفزة ليُوصل الجدولان فلا يُتابع المكون نفسه باسمين.</li>
+<li><strong>اسم المكون:</strong> اسم المشروع أو العملية ضمن البرنامج، مأخوذًا من ميثاقه. وحين يخدم المكون أكثر من برنامج، فسجل ذلك هنا، فالمكون المُبلَّغ إلى مالكين لا يُبلَّغ إلى أيّ منهما حين يختلفان.</li>
+<li><strong>الارتباط بالأهداف:</strong> أهداف البرنامج التي يخدمها المكون، بالمعرف. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق آخر موضع يظهر فيه ذلك قبل الالتزام بالمال.</li>
+<li><strong>الحالة:</strong> أين يقف المكون حاليًا، من المجموعة الثابتة المستخدمة في البرنامج كلها، فتقرأ المكونات بعضها بعضًا لا كلٌّ منها بمصطلحات مشروعه.</li>
+<li><strong>المالك:</strong> من المسؤول عن المكون، وهو عادةً ليس مدير البرنامج. ويبقى مدير البرنامج مسؤولًا عن مساهمة المكون في الهدف، وهي مسؤولية مختلفة وويستحق الأمر استئناسها.</li>
+<li><strong>معرف المنفعة:</strong> معرف المنفعة، يُستخدم في خطة إدارة المنافع وسجل تحقيق القيمة كي لا تُحتسب المنفعة نفسها مرتين باسمين.</li>
+<li><strong>المنفعة:</strong> المنفعة التي يتوقع البرنامج أن ينتجها، والأفضل تفضيل منافع لا تنتجها المكونات منفردة، فهذه هي حجة وجود برنامج بدل قائمة مشاريع. والمنفعة التي كان أي مكون منها سينجزها على أي حال ليست منفعة للبرنامج.</li>
+<li><strong>التصنيف:</strong> هل المنفعة مالية أم غير مالية. فالاثنتان تُداران على نحو مختلفتين وتُحسبان على نحو مختلف، والمنفعة المسجلة دون تصنيف تُقدَّر عادةً بالقيمة التي وجدها كاتبها أكثر ملاءمة.</li>
+<li><strong>المستفيد:</strong> من ينتفع بالمنفعة، مذكورًا لا موصوفًا. فالمنفعة التي لا مستفيد محدد لها لا يمكن تحقيقها، لأن التحقيق يستلزم من يغيّر سلوكه أو يتخذ قرارًا ما كان ليتخذه.</li>
+<li><strong>آلية التحقيق:</strong> كيف ستُحصَّل المنفعة فعليًا، وهنا تتحول معظم المنافع المفترضة إلى لا شيء. فالآلية هي التي تميز منفعة سينجزها البرنامج عن منفعة تأمل المؤسسة حدوثها، وبلونها المنفعة تمنٍّ مضاف إليه رقم.</li>
+<li><strong>تاريخ التحقيق:</strong> متى يُتوقع تحقيق المنفعة. أما المنفعة المالية، فسجل متى تتحقق، وهو غالبًا بعد إغلاق المكون الذي أنشأها بوقت طويل، وتسجيل التاريخ الأسبق أشيع طريقة لتبدو منافع البرنامج محققة في موعدها وهي ليست كذلك.</li>
+<li><strong>بيان صلاحية مدير البرنامج:</strong> ما أُذن لمدير البرنامج أن يقرره وأن يلتزم به، بمصطلحات التي تعترف بها المؤسسة. وسجله كمنح لا كوصف للدور، كي يصبح القرار المتخذ بموجبه قابلًا للدفاع عنه لاحقًا.</li>
+<li><strong>الصلاحية المحفوظة للراعي:</strong> ما يحتفظ به الراعي، وهو عادةً الحصة الأكبر. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع لخلو رسم الخط الذي يُتصعَّد عبره.</li>
+<li><strong>مجلس حوكمة البرنامج:</strong> المجلس الذي يحكم البرنامج، وأعضاؤه، وما يتقره لا ما يناقشه فحسب. وسجل هذا التمييز، فالمجلس الذي يناقش ولا يقرر يُنتج محاضر عن قرارات اتُّخذت في مكان آخر.</li>
+<li><strong>وتيرة التقارير وجمهورها:</strong> كم مرة يُبلّغ البرنامج، وإلى من، وبأي صيغة. فالإبلاغ إلى جهة لا تستطيع التصرف بناء عليه التزام بالإبلاغ لا ضبط، والفرق بينهما لا يظهر إلا عند مراجعة التقرير.</li>
+<li><strong>مسار التصعيد:</strong> من يقرر عند تجاوز مستوى الصلاحية، مذكورًا بالاسم كي لا يُتفاوض على التصعيد لحظة الحاجة إليه. وحين يكون المسار دورًا لا شخصًا، فسجل كيف يُحدَّد الشخص، فالدور يُشغر.</li>
+<li><strong>وضع التمويل:</strong> ما هو معتمد، وما هو مطلوب، وما لم يُتخذ قرار فيه بعد، مصروفًا بصدق. فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة.</li>
+<li><strong>نوع القرار:</strong> نوع القرار الذي يعنيه هذا الصف، كالنطاق أو الميزانية أو المشتريات أو الموارد البشرية. وتسمية الأنواع على حدة هي ما يجعل مستويات الصلاحية أدناه ذات معنى، إذ لا يطبق مستوى واحد على جميعها باتساق.</li>
+<li><strong>مستوى الصلاحية:</strong> المستوى الذي يحق لمدير البرنامج أن يقرر فيه هذا النوع من القرار، كالفريق أو القسم أو وحدة الأعمال. وحين تكون الإجابة واحدة في كل الصفوف، فكّر في أن يكون الصف بلا عمل.</li>
+<li><strong>مسار التصعيد:</strong> من يقرر عند تجاوز هذا المستوى، مذكورًا لهذا نوع القرار بعينه لا إجمالًا، فغالبًا ما يكون مسار التصعيد لقرار الميزانية غير مسار التصعيد لقرار النطاق.</li>
+<li><strong>الحدود أو الشروط:</strong> ما لا تمتد إليه هذه الصلاحية، وهي نصف الصف الذي يمنع الخلاف لاحقًا. فالصف الذي يسجل المسموح فقط يدعو إلى قراءة أن كل ما لم يُمنع مسموح به أيضًا.</li>
+<li><strong>المعرف:</strong> معرف المخاطرة أو الافتراض، ليُشار إليه من الأهداف ومن التقارير دون التباس.</li>
+<li><strong>النوع:</strong> هل الصف مخاطرة أم افتراض. فالمخاطرة قد تقع أو لا تقع، والافتراض إما صحيح وإما خاطئ ويمكن اختباره. وجمعهما تحت عنوان واحد يفقد هذا التمييز تحديدًا حيث يقرر هل يحتاج البند إلى مراقبة أم إلى اختبار.</li>
+<li><strong>الوصف:</strong> ما هو محل المخاطرة، أو ما هو مفترض، بصيغة يمكن بها إثبات خطأ الافتراض. فالافتراض المصوغ على صورة أمنية لا يمكن اختباره، والافتراض غير القابل للاختبار تمنٍّ عليه تصنيف مخاطرة.</li>
+<li><strong>الأثر على البرنامج:</strong> ما يحدث للبرنامج إذا وقعت المخاطرة أو ثبت خطأ الافتراض، في الأهداف أو التمويل أو الجدول. والبند المسجل بلا أثر لا يمكن ترتيب أولوياته، إذ لا شيء يميز الجوهرية من التافهة.</li>
+<li><strong>المالك:</strong> من يراقب هذا البند. فالمخاطرة بلا مالك لا تُراقب، وينمو تعرض البرنامج بصمت بينما يبدو السجل مكتملًا.</li>
+<li><strong>تاريخ المراجعة:</strong> متى يُراجع هذا البند مرة أخرى. فالافتراض الذي لا يراجعه أحد يصبح حقيقةً بالافتراض، وهو بالضبط الوقت الذي تكون فيه الظروف التي جعلته صحيحًا قد تغيرت.</li>
+<li><strong>الاستجابة المحددة:</strong> ما يحدث عند عدم بلوغ هدف: هل الاستجابة إعادة تخطيط أم تقليص نطاق أم تمديد تاريخ أم إغلاق الهدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر حين يحيء الأمر، وهو عادةً أقل من يملك الوقت لذلك.</li>
+<li><strong>صلاحية القرار:</strong> من يتخذ ذلك القرار، وهل يجب استشارة الراعي أولًا. وحين تكون الإجابة أن مدير البرنامج يقرر وحده، فسجل ما لا يلتزم به دون الراعي، فهذا هو الجزء المفترض لا المتفق عليه.</li>
+<li><strong>محفِّز إعادة التقييم:</strong> ما الذي يحرّك الاستجابة تحديدًا: تاريخ، أو مقياس ينقص عن حدّ معلن، أو حدث. والمحفِّز المعبَّر عنه بـ«إذا لم يتحقق الهدف» هو الفشل نفسه ولا ينبّه إلى أن القرار قادم.</li>
+</ul>
+<hr />
+<h3 id="_5">المحاذاة والترابط المؤسسي</h3>
+<ul>
+<li><a href="00_02_ميثاق_البرنامج_قالب.md">📄 نموذج قابل للطباعة (Markdown)</a></li>
+<li><a href="00_02_ميثاق_البرنامج.md">🤖 موجّه التوليد بالنموذج الذكي</a></li>
+<li><a href="00_02_ميثاق_البرنامج.json">📊 بنية البيانات (JSON)</a></li>
+<li><a href="00_02_ميثاق_البرنامج.csv">📈 البيانات الجدولية (CSV)</a></li>
+</ul>
+<hr />
+<h3 id="6">6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
+<p>يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:</p>
+<blockquote>
+<p>📖 <strong>النموذج التطبيقي المكتمل:</strong> <a href="../../../../examples/ar/00_إدارة_البرامج_والمحافظ/02_ميثاق_البرنامج/00_02_ميثاق_البرنامج_مثال.md">00_02_ميثاق_البرنامج_مثال.md</a></p>
+</blockquote>
+          </div>
+        </div>
+
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="-">ميثاق البرنامج - دليل توليد النموذج الذكي</h1>
+<blockquote>
+<p><strong>تعليمات النظام:</strong>
+هذه الوثيقة مجموعة التعليمات التفصيلية لتوليد نموذج <code>ميثاق البرنامج</code>، فاستخدم الإرشادات المعطاة لكل قسم أدناه لتوليد المحتوى المطلوب بدقة، وراجع <code>parameters.md</code> للمتغيرات العامة للمشروع.</p>
+<p><strong>سياق وتعريف:</strong>
+ميثاق البرنامج هو الوثيقة التي تجيز البرنامج. فهي تذكر لماذا يوجد البرنامج، وما الذي يُحاسب عليه مقابل الإنجاز، وما الذي مُنح لمدير البرنامج من صلاحية وموارد لإنجازه. وهو نقطة التحول المحورية التي يتم فيها توحيد المشاريع الفردية المترابطة تحت مظلة برنامج متكامل ذي حوكمة استراتيجية ومسؤولية موحدة.</p>
+<p><strong>المحاذاة:</strong>
+يجب أن يكون ميثاق البرنامج متسقًا مع: خارطة طريق المحفظة، دراسة الجدوى، خطة إدارة البرنامج، خطة إدارة التغيير المؤسسي.</p>
+</blockquote>
+<h3 id="_1">غرض البرنامج</h3>
+<p><strong>التعليمات:</strong> التغيير الذي وجود البرنامج لإحداثه، لا وصف العمل الذي سيؤديه. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_2">المحرّك التجاري والتسلسل مع الاستراتيجية</h3>
+<p><strong>التعليمات:</strong> مدخل المحفظة أو الاستراتيجية الذي يخدمه هذا البرنامج، مذكورًا ليُتتبَع البرنامج إلى الهدف الذي موّله. فالميثاق الذي لا يذكر محرّكه لا سبيل له إلى الإجابة عن هل يستحق التنفيذ بعد أن تكون الاستراتيجية قد تحركت.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_3">بيان المشكلة أو الفرصة</h3>
+<p><strong>التعليمات:</strong> المشكل المحدود الذي يُحل أو الفرصة المحدودة التي تُلتقط، بصيغة يمكن لشخص أن يعترض عليها فيبيّن سبب اعتراضه. والفرصة الموصوفة بمصطلحات إيجابية فقط لا تميز عن التمني، إذ لا شيء في البيان يمكن أن يفشل.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_4">عاقبة عدم التنفيذ</h3>
+<p><strong>التعليمات:</strong> ما يحدث إذا لم يُنفَّذ البرنامج، بما فيه ما يُفقد لا ما يُفوَّت فقط. فهذا هو الاختبار الذي يُقاس عليه كل ميثاق في النهاية، عادةً بعد سنوات بشخص لم يكن حاضرًا عند كتابته، وهو لا يُسجَّل وقت الكتابة أبدًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_5">بيان رؤية البرنامج</h3>
+<p><strong>التعليمات:</strong> بيان قصير عن الحالة المستقبلية التي وجود البرنامج لإحداثها، بصياغة المؤسسة. وأبقه جملة واحدة يفهمها من هو خارج البرنامج، فرؤية يقرأها فريق البرنامج وحده بيان إلى نفسه.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_6">المعرف</h3>
+<p><strong>التعليمات:</strong> معرف الهدف، يُستخدم في أقسام المكونات والمنافع والتقارير ليتتبع التقدم في تحقيقه ربطًا بالعمل الذي قصد به.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_7">الهدف</h3>
+<p><strong>التعليمات:</strong> ما يجب أن يكون عليه الحال عند نجاح البرنامج، بصيغة يمكن لشخص معترض أن يبيّن سبب اعتراضه. وحين يكون المكون قد مُوّل قبل كتابة الميثاق، فاحسب اتجاه المطابقة: الهدف المكتوب ليطابق المكون قد لم يحدد نطاقه الاستراتيجي بناء على مبررات أعمال واضحة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_8">المقياس</h3>
+<p><strong>التعليمات:</strong> كيف سيُتحقق من الإنجاز، بذكر مصدر الرقم لا الشعور الكامن وراءه. فالمقياس بلا مصدر لا يستطيع أحد إعادة إنتاجه عند التحقق، والهدف الذي لا يمكن إعادة إنتاج دليله رأي مضاف إليه رقم.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_9">تاريخ الاستحقاق</h3>
+<p><strong>التعليمات:</strong> متى يجب بلوغ الهدف، وهو ما يجعله مستهدفًا لا اتجاهًا. وحين يكون التاريخ موروثًا من خطة المكون لا من المنفعة التي يخدمها، فسجل التاريخ الذي يُتوقع فيه تحقق المنفعة فعلًا لا تاريخ انتهاء العمل.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_10">المالك</h3>
+<p><strong>التعليمات:</strong> الدور الواحد المسؤول عن الهدف، وهو عادةً ليس مدير البرنامج لكل الأهداف. والهدف الذي يملكه فريق لا يمكن ملاحقته، لأن الفريق لا يكون متاحًا حين يلزم الجواب.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_11">الحالة</h3>
+<p><strong>التعليمات:</strong> أين يقف الهدف حاليًا، من مجموعة ثابتة متفق عليها للبرنامج. فالحالة النصية الحرة لا يمكن تجميعها، والبرنامج الذي لا يمكن تجميع أهدافه لا يمكن الإبلاغ عنه لراعيه إلا على صورة قائمة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_12">معرف المكون</h3>
+<p><strong>التعليمات:</strong> معرف مشروع المكون الثابت، مطابقًا للمعرف المستخدم في خارطة طريق المحفزة ليُوصل الجدولان فلا يُتابع المكون نفسه باسمين.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_13">اسم المكون</h3>
+<p><strong>التعليمات:</strong> اسم المشروع أو العملية ضمن البرنامج، مأخوذًا من ميثاقه. وحين يخدم المكون أكثر من برنامج، فسجل ذلك هنا، فالمكون المُبلَّغ إلى مالكين لا يُبلَّغ إلى أيّ منهما حين يختلفان.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_14">الارتباط بالأهداف</h3>
+<p><strong>التعليمات:</strong> أهداف البرنامج التي يخدمها المكون، بالمعرف. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق آخر موضع يظهر فيه ذلك قبل الالتزام بالمال.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_15">الحالة</h3>
+<p><strong>التعليمات:</strong> أين يقف المكون حاليًا، من المجموعة الثابتة المستخدمة في البرنامج كلها، فتقرأ المكونات بعضها بعضًا لا كلٌّ منها بمصطلحات مشروعه.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_16">المالك</h3>
+<p><strong>التعليمات:</strong> من المسؤول عن المكون، وهو عادةً ليس مدير البرنامج. ويبقى مدير البرنامج مسؤولًا عن مساهمة المكون في الهدف، وهي مسؤولية مختلفة وويستحق الأمر استئناسها.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_17">معرف المنفعة</h3>
+<p><strong>التعليمات:</strong> معرف المنفعة، يُستخدم في خطة إدارة المنافع وسجل تحقيق القيمة كي لا تُحتسب المنفعة نفسها مرتين باسمين.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_18">المنفعة</h3>
+<p><strong>التعليمات:</strong> المنفعة التي يتوقع البرنامج أن ينتجها، والأفضل تفضيل منافع لا تنتجها المكونات منفردة، فهذه هي حجة وجود برنامج بدل قائمة مشاريع. والمنفعة التي كان أي مكون منها سينجزها على أي حال ليست منفعة للبرنامج.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_19">التصنيف</h3>
+<p><strong>التعليمات:</strong> هل المنفعة مالية أم غير مالية. فالاثنتان تُداران على نحو مختلفتين وتُحسبان على نحو مختلف، والمنفعة المسجلة دون تصنيف تُقدَّر عادةً بالقيمة التي وجدها كاتبها أكثر ملاءمة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_20">المستفيد</h3>
+<p><strong>التعليمات:</strong> من ينتفع بالمنفعة، مذكورًا لا موصوفًا. فالمنفعة التي لا مستفيد محدد لها لا يمكن تحقيقها، لأن التحقيق يستلزم من يغيّر سلوكه أو يتخذ قرارًا ما كان ليتخذه.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_21">آلية التحقيق</h3>
+<p><strong>التعليمات:</strong> كيف ستُحصَّل المنفعة فعليًا، وهنا تتحول معظم المنافع المفترضة إلى لا شيء. فالآلية هي التي تميز منفعة سينجزها البرنامج عن منفعة تأمل المؤسسة حدوثها، وبلونها المنفعة تمنٍّ مضاف إليه رقم.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_22">تاريخ التحقيق</h3>
+<p><strong>التعليمات:</strong> متى يُتوقع تحقيق المنفعة. أما المنفعة المالية، فسجل متى تتحقق، وهو غالبًا بعد إغلاق المكون الذي أنشأها بوقت طويل، وتسجيل التاريخ الأسبق أشيع طريقة لتبدو منافع البرنامج محققة في موعدها وهي ليست كذلك.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_23">بيان صلاحية مدير البرنامج</h3>
+<p><strong>التعليمات:</strong> ما أُذن لمدير البرنامج أن يقرره وأن يلتزم به، بمصطلحات التي تعترف بها المؤسسة. وسجله كمنح لا كوصف للدور، كي يصبح القرار المتخذ بموجبه قابلًا للدفاع عنه لاحقًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_24">الصلاحية المحفوظة للراعي</h3>
+<p><strong>التعليمات:</strong> ما يحتفظ به الراعي، وهو عادةً الحصة الأكبر. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع لخلو رسم الخط الذي يُتصعَّد عبره.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_25">مجلس حوكمة البرنامج</h3>
+<p><strong>التعليمات:</strong> المجلس الذي يحكم البرنامج، وأعضاؤه، وما يتقره لا ما يناقشه فحسب. وسجل هذا التمييز، فالمجلس الذي يناقش ولا يقرر يُنتج محاضر عن قرارات اتُّخذت في مكان آخر.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_26">وتيرة التقارير وجمهورها</h3>
+<p><strong>التعليمات:</strong> كم مرة يُبلّغ البرنامج، وإلى من، وبأي صيغة. فالإبلاغ إلى جهة لا تستطيع التصرف بناء عليه التزام بالإبلاغ لا ضبط، والفرق بينهما لا يظهر إلا عند مراجعة التقرير.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_27">مسار التصعيد</h3>
+<p><strong>التعليمات:</strong> من يقرر عند تجاوز مستوى الصلاحية، مذكورًا بالاسم كي لا يُتفاوض على التصعيد لحظة الحاجة إليه. وحين يكون المسار دورًا لا شخصًا، فسجل كيف يُحدَّد الشخص، فالدور يُشغر.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_28">وضع التمويل</h3>
+<p><strong>التعليمات:</strong> ما هو معتمد، وما هو مطلوب، وما لم يُتخذ قرار فيه بعد، مصروفًا بصدق. فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_29">نوع القرار</h3>
+<p><strong>التعليمات:</strong> نوع القرار الذي يعنيه هذا الصف، كالنطاق أو الميزانية أو المشتريات أو الموارد البشرية. وتسمية الأنواع على حدة هي ما يجعل مستويات الصلاحية أدناه ذات معنى، إذ لا يطبق مستوى واحد على جميعها باتساق.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_30">مستوى الصلاحية</h3>
+<p><strong>التعليمات:</strong> المستوى الذي يحق لمدير البرنامج أن يقرر فيه هذا النوع من القرار، كالفريق أو القسم أو وحدة الأعمال. وحين تكون الإجابة واحدة في كل الصفوف، فكّر في أن يكون الصف بلا عمل.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_31">مسار التصعيد</h3>
+<p><strong>التعليمات:</strong> من يقرر عند تجاوز هذا المستوى، مذكورًا لهذا نوع القرار بعينه لا إجمالًا، فغالبًا ما يكون مسار التصعيد لقرار الميزانية غير مسار التصعيد لقرار النطاق.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_32">الحدود أو الشروط</h3>
+<p><strong>التعليمات:</strong> ما لا تمتد إليه هذه الصلاحية، وهي نصف الصف الذي يمنع الخلاف لاحقًا. فالصف الذي يسجل المسموح فقط يدعو إلى قراءة أن كل ما لم يُمنع مسموح به أيضًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_33">المعرف</h3>
+<p><strong>التعليمات:</strong> معرف المخاطرة أو الافتراض، ليُشار إليه من الأهداف ومن التقارير دون التباس.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_34">النوع</h3>
+<p><strong>التعليمات:</strong> هل الصف مخاطرة أم افتراض. فالمخاطرة قد تقع أو لا تقع، والافتراض إما صحيح وإما خاطئ ويمكن اختباره. وجمعهما تحت عنوان واحد يفقد هذا التمييز تحديدًا حيث يقرر هل يحتاج البند إلى مراقبة أم إلى اختبار.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_35">الوصف</h3>
+<p><strong>التعليمات:</strong> ما هو محل المخاطرة، أو ما هو مفترض، بصيغة يمكن بها إثبات خطأ الافتراض. فالافتراض المصوغ على صورة أمنية لا يمكن اختباره، والافتراض غير القابل للاختبار تمنٍّ عليه تصنيف مخاطرة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_36">الأثر على البرنامج</h3>
+<p><strong>التعليمات:</strong> ما يحدث للبرنامج إذا وقعت المخاطرة أو ثبت خطأ الافتراض، في الأهداف أو التمويل أو الجدول. والبند المسجل بلا أثر لا يمكن ترتيب أولوياته، إذ لا شيء يميز الجوهرية من التافهة.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_37">المالك</h3>
+<p><strong>التعليمات:</strong> من يراقب هذا البند. فالمخاطرة بلا مالك لا تُراقب، وينمو تعرض البرنامج بصمت بينما يبدو السجل مكتملًا.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_38">تاريخ المراجعة</h3>
+<p><strong>التعليمات:</strong> متى يُراجع هذا البند مرة أخرى. فالافتراض الذي لا يراجعه أحد يصبح حقيقةً بالافتراض، وهو بالضبط الوقت الذي تكون فيه الظروف التي جعلته صحيحًا قد تغيرت.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_39">الاستجابة المحددة</h3>
+<p><strong>التعليمات:</strong> ما يحدث عند عدم بلوغ هدف: هل الاستجابة إعادة تخطيط أم تقليص نطاق أم تمديد تاريخ أم إغلاق الهدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر حين يحيء الأمر، وهو عادةً أقل من يملك الوقت لذلك.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_40">صلاحية القرار</h3>
+<p><strong>التعليمات:</strong> من يتخذ ذلك القرار، وهل يجب استشارة الراعي أولًا. وحين تكون الإجابة أن مدير البرنامج يقرر وحده، فسجل ما لا يلتزم به دون الراعي، فهذا هو الجزء المفترض لا المتفق عليه.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_41">محفِّز إعادة التقييم</h3>
+<p><strong>التعليمات:</strong> ما الذي يحرّك الاستجابة تحديدًا: تاريخ، أو مقياس ينقص عن حدّ معلن، أو حدث. والمحفِّز المعبَّر عنه بـ«إذا لم يتحقق الهدف» هو الفشل نفسه ولا ينبّه إلى أن القرار قادم.</p>
+<p><strong>القيمة المولدة:</strong> [ أضف التفاصيل... ]</p>
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+
+          <!-- Deliverable Header Card & Badge Row -->
+          <div class="deliverable-header-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <div class="deliverable-badge-row">
+                <span class="badge badge-code">PMO-00.02</span>
+                <span class="badge badge-phase">المرحلة 00: إدارة البرامج والمحافظ</span>
+                <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn-utility" onclick="window.print()">
+                  🖨️ طباعة / PDF
+                </button>
+                <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('example-prose').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ النص', 2000);">
+                  📋 نسخ النص
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Control Meta Strip -->
+          <div class="doc-meta-bar">
+<div class="doc-meta-chip"><div class="meta-chip-label">تاريخ الإعداد</div><div class="meta-chip-val">2026-03-15</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">مدير البرنامج</div><div class="meta-chip-val">م. خالد العتيبي، PgMP</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">إعداد</div><div class="meta-chip-val">م. فيصل الحربي، PMP (مدير المشروع)</div></div>
+</div>
+
+          <!-- Form Sheet & Rendered Document Prose -->
+          <div class="form-viewer-container markdown-body" id="example-prose" style="line-height: 1.85;">
+            <h1 id="_1">ميثاق البرنامج (نموذج تطبيقي معبأ)</h1>
+<blockquote>
+<p>🏆 <strong>نموذج استرشادي مكتمل (Gold Standard):</strong> يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (<code>PMO-00.02</code>). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.</p>
+</blockquote>
+<hr />
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">برنامج البنية التحتية السحابية والخدمات الرقمية الموحدة - PGM-2026-CX</h2>
+<h1 align="center">ميثاق البرنامج</h1>
+
+<hr />
+<h2 id="1">1. غرض البرنامج ومبرراته</h2>
+<!-- التغيير الذي وجود البرنامج لإحداثه، لا وصف العمل الذي سيؤديه. فعبارة «استبدال منصة الفوترة» تصف العمل، وعبارة «بحيث يُغلق الفوترة الشهرية في ثلاثة أيام بدل عشرة» تصف تغييرًا، ولا يكتمل الثاني ولا ينقص إلا به. سجل المحرّك التجاري من خارطة طريق المحفظة ليُتتبَع البرنامج إلى الاستراتيجية التي يخدمها. واذكر ما يحدث إذا لم يُنفَّذ البرنامج، فهذا هو الاختبار الذي يُقاس عليه كل ميثاق في النهاية، عادةً بعد سنوات من شخص لم يكن حاضرًا عند كتابته. -->
+
+<p><strong>غرض البرنامج:</strong> تحديث البنية التحتية والأنظمة المؤسسية وتوحيد قنوات الخدمات الرقمية.</p>
+<p><strong>المحرّك التجاري والتسلسل مع الاستراتيجية:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<p><strong>بيان المشكلة أو الفرصة:</strong> تشتت البيانات عبر أنظمة قديمة معزولة يؤدي إلى بطء معالجة الطلبات وارتفاع تكاليف التشغيل</p>
+<p><strong>عاقبة عدم التنفيذ:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<p><strong>بيان رؤية البرنامج:</strong> الوصول إلى منظومة مؤسسية ذكية ومؤتمتة بالكامل تحقق أعلى معايير الكفاءة بحلول 2028.</p>
+<hr />
+<h2 id="2">2. أهداف البرنامج</h2>
+<!-- ما يجب أن يكون عليه الحال عند نجاح البرنامج. ولكل هدف مقياس وتاريخ استحقاق، فالهدف الذي لا يمكن اختباره لا يمكن التقرير في شأنه، والذي يُبلَّغ عنه بالرأي فقط لا يميز بينه وبين التمني. وحين يكون أحد المكونات قد مُوّل قبل كتابة الميثاق، فكثيرًا ما يُكتب الهدف ليطابق المكون؛ فاحسب اتجاه هذه المطابقة، فالبرنامج الذي اشتُقّت أهدافه من مكوناته قد ورث نطاقها دون أن يختاره. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المعرف</th>
+<th style="text-align: right;">الهدف</th>
+<th style="text-align: right;">المقياس</th>
+<th style="text-align: right;">تاريخ الاستحقاق</th>
+<th style="text-align: right;">المالك</th>
+<th style="text-align: right;">الحالة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">INIT-01</td>
+<td style="text-align: right;">التحول الرقمي والتميز التشغيلي</td>
+<td style="text-align: right;">دقة النموذج ومطابقة البيانات &gt;= 95%</td>
+<td style="text-align: right;">2026-06-30</td>
+<td style="text-align: right;">أ. إلينا فانس، PfMP</td>
+<td style="text-align: right;">قيد التنفيذ</td>
+</tr>
+<tr>
+<td style="text-align: right;">REQ-02</td>
+<td style="text-align: right;">أتمتة العمليات وخفض التكاليف بنسبة 40%</td>
+<td style="text-align: right;">تحقيق وفورات تشغيلية سنوية &gt;= 3.5M ريال</td>
+<td style="text-align: right;">2026-09-30</td>
+<td style="text-align: right;">م. فيصل الحربي، PMP</td>
+<td style="text-align: right;">مكتمل</td>
+</tr>
+<tr>
+<td style="text-align: right;">ACT-03</td>
+<td style="text-align: right;">تمكين اتخاذ القرار بالبيانات اللحظية</td>
+<td style="text-align: right;">زمن استجابة للعمليات &lt; 800 ميلي ثانية</td>
+<td style="text-align: right;">2026-11-30</td>
+<td style="text-align: right;">د. طارق المنصور، PfMP</td>
+<td style="text-align: right;">مخطط</td>
+</tr>
+<tr>
+<td style="text-align: right;">BEN-04</td>
+<td style="text-align: right;">ضمان الامتثال التنظيمي والأمني بنسبة 100%</td>
+<td style="text-align: right;">نسبة رضا المستخدمين النهائيين &gt;= 90%</td>
+<td style="text-align: right;">2027-01-31</td>
+<td style="text-align: right;">أ. سلطان الدوسري</td>
+<td style="text-align: right;">معتمد</td>
+</tr>
+<tr>
+<td style="text-align: right;">WBS-05</td>
+<td style="text-align: right;">التحول الرقمي والتميز التشغيلي</td>
+<td style="text-align: right;">دقة النموذج ومطابقة البيانات &gt;= 95%</td>
+<td style="text-align: right;">2027-03-31</td>
+<td style="text-align: right;">أ. إلينا فانس، PfMP</td>
+<td style="text-align: right;">قيد التنفيذ</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3">3. مشاريع البرنامج وعملياته</h2>
+<!-- ما يتكون منه البرنامج، تمييزًا لما يجب أن يحققه. والمكون غير المرتبط بهدف خاطرة إزالته، والميثاق هو الإطار الحاكم الذي يظهر فيه ذلك قبل الالتزام بالمال لا بعده. استخدم معرّفات المكونات من خارطة طريق المحفظة ليتم ربط القائمتين. وأشر حيث يكون المكون مشتركًا مع برنامج آخر، فالمكون المُبلَّغ إلى مالكين لا يُبلَّغ إلى أيّ منهما حين يختلفان. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرف المكون</th>
+<th style="text-align: right;">اسم المكون</th>
+<th style="text-align: right;">الارتباط بالأهداف</th>
+<th style="text-align: right;">الحالة</th>
+<th style="text-align: right;">المالك</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">INIT-01</td>
+<td style="text-align: right;">المنظومة السحابية الموحدة لتخطيط الموارد</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">قيد التنفيذ</td>
+<td style="text-align: right;">أ. إلينا فانس، PfMP</td>
+</tr>
+<tr>
+<td style="text-align: right;">REQ-02</td>
+<td style="text-align: right;">أتمتة سلاسل الإمداد والمستودعات الذكية</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">مكتمل</td>
+<td style="text-align: right;">م. فيصل الحربي، PMP</td>
+</tr>
+<tr>
+<td style="text-align: right;">ACT-03</td>
+<td style="text-align: right;">منصة التقارير التحليلية والذكاء المؤسسي</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">مخطط</td>
+<td style="text-align: right;">د. طارق المنصور، PfMP</td>
+</tr>
+<tr>
+<td style="text-align: right;">BEN-04</td>
+<td style="text-align: right;">بوابة الخدمات الذاتية وإدارة رأس المال البشري</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">معتمد</td>
+<td style="text-align: right;">أ. سلطان الدوسري</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4">4. منافع البرنامج</h2>
+<!-- ما يتوقع البرنامج أن ينتجه ولا ينتجه المكونات منفردة. والمنفعة التي ليس لها مستفيد محدد ليست منفعة يمكن محاسبة البرنامج عليها، والمنفعة التي ليس لها آلية تحقيق هي افتراض لا خطة: فآلية التحقيق هي التي تميز منفعة سينجزها البرنامج عن منفعة تأمل المؤسسة حدوثها. وف المنفعة المالية، فسجل متى تتحقق، وهو غالبًا بعد إغلاق المكون الذي أنشأها بوقت طويل. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">معرف المنفعة</th>
+<th style="text-align: right;">المنفعة</th>
+<th style="text-align: right;">التصنيف</th>
+<th style="text-align: right;">المستفيد</th>
+<th style="text-align: right;">آلية التحقيق</th>
+<th style="text-align: right;">تاريخ التحقيق</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">INIT-01</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">تقني وتكاملي</td>
+<td style="text-align: right;">أ. إلينا فانس، PfMP</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">2026-06-30</td>
+</tr>
+<tr>
+<td style="text-align: right;">REQ-02</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">تنظيمي وتشغيلي</td>
+<td style="text-align: right;">م. فيصل الحربي، PMP</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">2026-09-30</td>
+</tr>
+<tr>
+<td style="text-align: right;">ACT-03</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">حوكمة وامتثال</td>
+<td style="text-align: right;">د. طارق المنصور، PfMP</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">2026-11-30</td>
+</tr>
+<tr>
+<td style="text-align: right;">BEN-04</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">بنية سحابية</td>
+<td style="text-align: right;">أ. سلطان الدوسري</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">2027-01-31</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. صلاحية مدير البرنامج وحوكمته</h2>
+<!-- ما يحق لمدير البرنامج أن يقرره، وما لا يحق له بالقدر نفسه. فالميثاق الذي يمنح كل شيء يبدو وكأنه يمنح كل شيء، فيجد التصعيد الحقيقي الأول على مسار يُتّبع لخلو رسم الخط الذي يُتصعَّد عبره. وسمِّ مسار التصعيد، حتى لا يُتفاوض عليه لحظة الحاجة. وسجل وضع التمويل بصدق، بما فيه ما لم يُعتمد بعد: فالميثاق الذي يتعامل مع تمويل غير معتمد كأنه متاح يُهيّئ البرنامج ليكتشف العجز بعد أن يكون قد التزم بمشاريعه المكونة. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<p><strong>بيان صلاحية مدير البرنامج:</strong> صلاحية إدارة وتوجيه كافة مسارات البرنامج، اعتماد المخرجات المرحلية، وتخصيص الموارد حتى 500,000 ريال.</p>
+<p><strong>الصلاحية المحفوظة للراعي:</strong> مراجعة واعتماد بشري إلزامي من قِبل مدراء القطاعات المعنية لكافة العمليات الاستثنائية وذات الأثر المالي.</p>
+<p><strong>مجلس حوكمة البرنامج:</strong> مراجعة واعتماد بشري إلزامي من قِبل مدراء القطاعات المعنية لكافة العمليات الاستثنائية وذات الأثر المالي.</p>
+<p><strong>وتيرة التقارير وجمهورها:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<p><strong>مسار التصعيد:</strong> المشرف المباشر -&gt; مدير المشروع -&gt; رئيس مكتب إدارة المشاريع (PMO) -&gt; لجنة التوجيه التنفيذية.</p>
+<p><strong>وضع التمويل:</strong> تمويل معتمد بالكامل من الميزانية الرأسمالية (CAPEX) للعام المالي 2026-2027.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">نوع القرار</th>
+<th style="text-align: right;">مستوى الصلاحية</th>
+<th style="text-align: right;">مسار التصعيد</th>
+<th style="text-align: right;">الحدود أو الشروط</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">كامل الصلاحية لاعتماد ميثاق المشروع وتخصيص الميزانية والموارد المؤسسية</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+</tr>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">اعتماد متطلبات الأعمال وقبول التسليمات المرحلية والنهائية</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+</tr>
+<tr>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">حوكمة المنهجية واعتماد تقارير الأداء وبوابات العبور الرسمية</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+<td style="text-align: right;">معتمد ومطابق للمعايير القياسية لشركة القمة</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6">6. المخاطر والافتراضات</h2>
+<!-- ما يفترضه الميثاق وما يمكن أن يفسده. وهذه بنود مستوى البرنامج؛ فمخاطر المكونات تُسجَّل في سجلات المكونات الخاصة ولا تُكرر هنا. والمخاطرة بلا مالك لا تُراقب، والافتراض بلا تاريخ مراجعة يصبح حقيقةً بالافتراض في الوقت نفسه الذي ينبغي أن يظل فيه مسائلًا. وحين لا يملك البرنامج أي احتياطي ممول، فذلك صراحةً، فالبرنامج الذي لا يتوقع أيًا منها لم يبحث ببساطة. أضف صفوفًا أو احذفها حسب الحاجة. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">المعرف</th>
+<th style="text-align: right;">النوع</th>
+<th style="text-align: right;">الوصف</th>
+<th style="text-align: right;">الأثر على البرنامج</th>
+<th style="text-align: right;">المالك</th>
+<th style="text-align: right;">تاريخ المراجعة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">INIT-01</td>
+<td style="text-align: right;">تقني وتكاملي</td>
+<td style="text-align: right;">نشر وتجهيز البنية السحابية وقواعد البيانات الموحدة</td>
+<td style="text-align: right;">تأخير بدء اختبارات التكامل لمدة أسبوعين</td>
+<td style="text-align: right;">أ. إلينا فانس، PfMP</td>
+<td style="text-align: right;">2026-06-30</td>
+</tr>
+<tr>
+<td style="text-align: right;">REQ-02</td>
+<td style="text-align: right;">تنظيمي وتشغيلي</td>
+<td style="text-align: right;">أتمتة دورة المشتريات والمستودعات والربط المباشر</td>
+<td style="text-align: right;">إعادة جدولة نافذة الإطلاق التشغيلي التجريبي</td>
+<td style="text-align: right;">م. فيصل الحربي، PMP</td>
+<td style="text-align: right;">2026-09-30</td>
+</tr>
+<tr>
+<td style="text-align: right;">ACT-03</td>
+<td style="text-align: right;">حوكمة وامتثال</td>
+<td style="text-align: right;">بناء لوحات المؤشرات التفاعلية والتحليلات المتقدمة</td>
+<td style="text-align: right;">زيادة طفيفة في استهلاك ساعات الاستشارات التقنية</td>
+<td style="text-align: right;">د. طارق المنصور، PfMP</td>
+<td style="text-align: right;">2026-11-30</td>
+</tr>
+<tr>
+<td style="text-align: right;">BEN-04</td>
+<td style="text-align: right;">بنية سحابية</td>
+<td style="text-align: right;">تفعيل قنوات الدعم الفني والتدريب للمستخدمين</td>
+<td style="text-align: right;">ترحيل تاريخ التدريب للمجموعة الثانية</td>
+<td style="text-align: right;">أ. سلطان الدوسري</td>
+<td style="text-align: right;">2027-01-31</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7">7. الاستجابة عند عدم بلوغ الهدف</h2>
+<!-- ما يحدث عند عدم بلوغ هدف. فالميثاق الذي لا يذكر استجابةً للفشل يترك ذلك القرار لمن يحضر في الغرفة حين يحيء الأمر، وهو عادةً أقل من يملك الوقت لذلك. وسجل ما إذا كانت الاستجابة إعادة تخطيط أم تقليص نطاق أم تمديد تاريخ أم إغلاق الهدف، ومن يتخذ ذلك القرار. أضف صفوفًا أو احذفها بحسب ما تتطلبه حوكمة البرنامج. -->
+
+<p><strong>الاستجابة المحددة:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<p><strong>صلاحية القرار:</strong> مراجعة واعتماد بشري إلزامي من قِبل مدراء القطاعات المعنية لكافة العمليات الاستثنائية وذات الأثر المالي.</p>
+<p><strong>محفِّز إعادة التقييم:</strong> تم تحديده وتوثيقه بالتفصيل ليتوافق مع أهداف المشروع والمتطلبات التشغيلية لشركة القمة.</p>
+<hr />
+<h2 id="8">8. الاعتماد والموافقات</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مدير البرنامج</strong></td>
+<td style="text-align: right;">م. خالد العتيبي، PgMP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>راعي البرنامج</strong></td>
+<td style="text-align: right;">د. منى الغامدي (نائب الرئيس التنفيذي)</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مالك الأعمال</strong></td>
+<td style="text-align: right;">أ. سلطان الدوسري (نائب الرئيس للعمليات)</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>النموذج:</strong> ميثاق البرنامج | <strong>المرجع:</strong> PMO-00.02 <br>
+ <i>تاريخ الإنشاء: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+          </div>
+        </div>
+
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <h2 style="font-size: 1.3rem; margin-bottom: 0.25rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                العقد الرقمي المعياري لتمكين التحقق الآلي من بيانات التسليمة بواسطة أداة tasleemat.
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+                نسخ المخطط
+              </button>
+            </div>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+  &quot;$id&quot;: &quot;https://tasleemat.pmo/schemas/completed/PMO-00.02.schema.json&quot;,
+  &quot;title&quot;: &quot;Completed Program Charter Data Contract&quot;,
+  &quot;description&quot;: &quot;Additive structural schema validating completed Program Charter artifact data payloads (PMO-00.02).&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;artifact_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;const&quot;: &quot;PMO-00.02&quot;
+    },
+    &quot;metadata&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;project_name&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;project_code&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;date_prepared&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;format&quot;: &quot;date&quot;
+        },
+        &quot;project_manager&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;prepared_by&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;version&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;status&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;enum&quot;: [
+            &quot;draft&quot;,
+            &quot;baselined&quot;,
+            &quot;in_review&quot;,
+            &quot;approved&quot;
+          ]
+        }
+      },
+      &quot;required&quot;: [
+        &quot;project_name&quot;,
+        &quot;date_prepared&quot;,
+        &quot;project_manager&quot;,
+        &quot;prepared_by&quot;
+      ]
+    },
+    &quot;program_purpose_and_rationale&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;program_purpose&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The change the program exists to bring about, not a description of the work it will do. \&quot;Replace the billing platform\&quot; describes work; \&quot;so that month-end billing closes in three days rather than ten\&quot; describes a change, and only the second can be judged complete or not.&quot;
+        },
+        &quot;business_driver_and_strategic_alignment&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The portfolio or strategy entry this program serves, named so the program can be traced back to the objective that funded it. A charter that cannot name its driver has no way to answer whether it is still worth doing once the strategy has moved on.&quot;
+        },
+        &quot;problem_or_opportunity_statement&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The specific problem being solved or the specific opportunity being taken, stated so that someone who disagreed with it could say why. An opportunity described only in positive terms is indistinguishable from a wish, because nothing in the statement can fail.&quot;
+        },
+        &quot;consequence_of_not_proceeding&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What happens if the program is not undertaken, including what is lost rather than only what is missed. This is the test every charter is eventually measured against, usually several years later by someone who was not present when it was written, and it is almost never recorded at the time.&quot;
+        },
+        &quot;program_vision_statement&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;A short statement of the future state the program exists to create, in the organisation&#x27;s own words. Keep it to a single sentence that someone outside the program could understand, since a vision statement read only by the program team is a statement to itself.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;program_purpose&quot;,
+        &quot;business_driver_and_strategic_alignment&quot;,
+        &quot;problem_or_opportunity_statement&quot;,
+        &quot;consequence_of_not_proceeding&quot;,
+        &quot;program_vision_statement&quot;
+      ]
+    },
+    &quot;program_objectives&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;id&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The identifier for the objective, used in the components, benefits and reporting sections so that progress against it can be traced to the work that was meant to deliver it.&quot;
+        },
+        &quot;objective&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What must be true when the program succeeds, stated so that a reasonable person could disagree with it. Where the components were funded before the charter was written, check the direction of the fit: an objective written to fit a component has inherited that component&#x27;s scope without choosing it.&quot;
+        },
+        &quot;measure&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;How achievement will be established, naming the source of the figure rather than the sentiment behind it. A measure with no source cannot be reproduced by anyone checking the claim, and an objective whose evidence cannot be reproduced is an opinion with a number attached.&quot;
+        },
+        &quot;target_date&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;When the objective must be met, which is what makes it a target rather than a direction. Where the date is inherited from a component&#x27;s own plan rather than from the benefit it serves, record the date the benefit is actually expected rather than the date the work finishes.&quot;
+        },
+        &quot;owner&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The single role accountable for the objective, which is normally not the program manager for every objective. An objective owned by a team cannot be chased, because a team is never available when the answer is needed.&quot;
+        },
+        &quot;status&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Where the objective currently stands, from a fixed set agreed for the program. A free-text status cannot be rolled up, and a program whose objectives cannot be rolled up cannot be reported to the sponsor as anything other than a list.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;id&quot;,
+        &quot;objective&quot;,
+        &quot;measure&quot;,
+        &quot;target_date&quot;,
+        &quot;owner&quot;,
+        &quot;status&quot;
+      ]
+    },
+    &quot;component_projects_and_operations&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;component_id&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The stable identifier of the component project, matching the identifier used in the portfolio roadmap so the two can be joined and the same component is not tracked under two names.&quot;
+        },
+        &quot;component_name&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The name of the project or operation within the program, taken from its own charter. Where a component serves more than one program, record that here, because a component reported to two owners is reported to neither once they disagree.&quot;
+        },
+        &quot;objective_linkage&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Which program objectives this component serves, by identifier. A component linked to no objective is a candidate for removal, and the charter is the last point at which that is visible before the money is committed.&quot;
+        },
+        &quot;status&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Where the component currently stands, from the fixed set used across the program, so components are read against each other rather than each in the terms its own project used.&quot;
+        },
+        &quot;owner&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Who is accountable for the component, which will usually not be the program manager. The program manager remains accountable for the component&#x27;s contribution to the objective, which is a different accountability and is worth stating as such.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;component_id&quot;,
+        &quot;component_name&quot;,
+        &quot;objective_linkage&quot;,
+        &quot;status&quot;,
+        &quot;owner&quot;
+      ]
+    },
+    &quot;program_benefits&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;benefit_id&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The identifier for the benefit, used in the benefits management plan and the value realization register so the same benefit is not counted twice under two names.&quot;
+        },
+        &quot;benefit&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The benefit the program expects to produce, preferably stating benefits the components would not produce individually, since those are the reason for having a program rather than a list of projects. A benefit that any one component would have delivered anyway is not a program benefit.&quot;
+        },
+        &quot;category&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Whether the benefit is financial or non-financial. The two are governed differently and are counted differently, and a benefit recorded without a category is usually valued at whichever the writer found more convenient.&quot;
+        },
+        &quot;beneficiary&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Who receives the benefit, named rather than described. A benefit with no identifiable recipient cannot be realised, because realisation requires someone to change their behaviour or take a decision they would not otherwise have taken.&quot;
+        },
+        &quot;realization_mechanism&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;How the benefit will actually be captured, which is where most assumed benefits turn out not to be. The mechanism is what distinguishes a benefit the program will deliver from one the business hopes will occur, and without it the benefit is an aspiration with a number attached.&quot;
+        },
+        &quot;realization_date&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;When the benefit is expected to be realised. For a financial benefit this is commonly well after the component that created it has closed, and recording the earlier date is the most common way a program&#x27;s benefits appear to land on time when they have not.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;benefit_id&quot;,
+        &quot;benefit&quot;,
+        &quot;category&quot;,
+        &quot;beneficiary&quot;,
+        &quot;realization_mechanism&quot;,
+        &quot;realization_date&quot;
+      ]
+    },
+    &quot;program_manager_authority_and_governance&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;program_manager_authority_statement&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What the program manager is authorised to decide and to commit, in the terms the organisation recognises. Record it as a grant rather than as a description of the role, so that a decision taken under it is defensible afterwards.&quot;
+        },
+        &quot;authority_retained_by_the_sponsor&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What the sponsor keeps, which is usually the larger share. A charter that grants everything appears to grant everything, and the first real escalation then has no precedent to follow because there was no line drawn to escalate across.&quot;
+        },
+        &quot;program_governance_forum&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The forum that governs the program, its membership, and what it decides rather than merely discusses. Record the distinction, because a forum that only discusses produces minutes about decisions taken elsewhere.&quot;
+        },
+        &quot;reporting_cadence_and_audience&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;How often the program reports, to whom, and in what form. Reporting to a body that cannot act on it is a reporting obligation rather than a control, and the difference is visible only when the report is examined.&quot;
+        },
+        &quot;escalation_path&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Who decides when the authority level is exceeded, named so the escalation does not have to be negotiated at the moment it is needed. Where the path is a role rather than a person, record how the person is identified, since roles go vacant.&quot;
+        },
+        &quot;funding_position&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What is approved, what is requested, and what is not yet decided, stated honestly. A charter that treats unapproved funding as available sets the program up to discover the shortfall after it has already committed the component projects to spend against it.&quot;
+        },
+        &quot;decision_type&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What kind of decision this row concerns, such as scope, budget, procurement, or personnel. Naming the kinds separately is what makes the authority levels below meaningful, since a single level cannot apply uniformly to all of them.&quot;
+        },
+        &quot;authority_level&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The level at which the program manager may decide this kind of decision, such as team, department, or business unit. Where the answer is the same for every row, consider whether the row is doing any work.&quot;
+        },
+        &quot;decision_escalation_path&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Who decides when this authority level is exceeded, named for this decision type rather than in general, since the escalation for a budget decision is often not the escalation for a scope one.&quot;
+        },
+        &quot;limits_or_conditions&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What this authority does not extend to, which is the half of the row that prevents the dispute later. A row recording only what is permitted invites the reading that everything not forbidden is also permitted.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;program_manager_authority_statement&quot;,
+        &quot;authority_retained_by_the_sponsor&quot;,
+        &quot;program_governance_forum&quot;,
+        &quot;reporting_cadence_and_audience&quot;,
+        &quot;escalation_path&quot;,
+        &quot;funding_position&quot;,
+        &quot;decision_type&quot;,
+        &quot;authority_level&quot;,
+        &quot;decision_escalation_path&quot;,
+        &quot;limits_or_conditions&quot;
+      ]
+    },
+    &quot;risks_and_assumptions&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;id&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;The identifier for the risk or assumption, so it can be referred to from the objectives and from reporting without ambiguity.&quot;
+        },
+        &quot;type&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Whether the row is a Risk or an Assumption. A risk may occur or not; an assumption is either true or false and can be tested. Recording both under one heading loses the distinction exactly where it decides whether the item needs watching or checking.&quot;
+        },
+        &quot;description&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What is at stake, or what is being taken for granted, stated so the assumption could be shown to have failed. An assumption phrased as a sentiment cannot be tested, and an untestable assumption is a hope with a risk rating attached.&quot;
+        },
+        &quot;impact_on_program&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What happens to the program if the risk occurs or the assumption proves false, in objective, funding or schedule terms. An item recorded without an impact cannot be prioritised, because nothing distinguishes the consequential from the trivial.&quot;
+        },
+        &quot;owner&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Who watches this. A risk with no owner is not being watched, and the program&#x27;s exposure grows silently while the register still appears complete.&quot;
+        },
+        &quot;review_date&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;When this will next be checked. An assumption nobody revisits becomes a fact by default, which is precisely when the conditions that made it true have changed.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;id&quot;,
+        &quot;type&quot;,
+        &quot;description&quot;,
+        &quot;impact_on_program&quot;,
+        &quot;owner&quot;,
+        &quot;review_date&quot;
+      ]
+    },
+    &quot;response_to_objective_failure&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;defined_response&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What happens when an objective is not met: whether the response is to replan, reduce scope, extend the date, or close the objective. A charter with no stated response to failure leaves that decision to whoever happens to be in the room when it arises, which is usually the person least able to afford the time.&quot;
+        },
+        &quot;decision_authority&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;Who takes that decision, and whether the sponsor must be consulted first. Where the answer is that the program manager decides alone, record what they may not commit without the sponsor, since that is the part that is assumed rather than agreed.&quot;
+        },
+        &quot;trigger_for_reassessment&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1,
+          &quot;description&quot;: &quot;What specifically triggers the response: a date, a measure falling short by a stated margin, or an event. A trigger expressed as \&quot;if the objective is not met\&quot; is the same as the failure itself and gives no warning that the decision is coming.&quot;
+        }
+      },
+      &quot;required&quot;: [
+        &quot;defined_response&quot;,
+        &quot;decision_authority&quot;,
+        &quot;trigger_for_reassessment&quot;
+      ]
+    }
+  },
+  &quot;required&quot;: [
+    &quot;artifact_id&quot;,
+    &quot;metadata&quot;,
+    &quot;program_purpose_and_rationale&quot;,
+    &quot;program_objectives&quot;,
+    &quot;component_projects_and_operations&quot;,
+    &quot;program_benefits&quot;,
+    &quot;program_manager_authority_and_governance&quot;,
+    &quot;risks_and_assumptions&quot;,
+    &quot;response_to_objective_failure&quot;
+  ]
+}</code></pre>
+          
+          <details style="margin-top: 1.5rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1rem;">
+            <summary style="font-size: 0.95rem; font-weight: 600; cursor: pointer; color: var(--accent-blue);">
+              📋 قاموس تعريفات حقول النموذج (المواصفة التفصيلية)
+            </summary>
+            <div style="display: flex; justify-content: flex-end; margin-top: 0.75rem; margin-bottom: 0.5rem;">
+              <button class="btn-utility" onclick="copySnippet(this, 'code-fields')">
+                نسخ تعريفات الحقول
+              </button>
+            </div>
+            <pre id="code-fields"><code>{
+  &quot;_llm_instructions&quot;: &quot;Fill in the &#x27;project_title&#x27; and &#x27;date_prepared&#x27; properties, and the &#x27;value&#x27; property of each field, based on the provided project context. Reference parameters.md for global project variables.&quot;,
+  &quot;form_name&quot;: &quot;Program Charter&quot;,
+  &quot;document_reference&quot;: &quot;PMO-00.02&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Program_Purpose&quot;: {
+      &quot;section&quot;: &quot;Program Purpose and Rationale&quot;,
+      &quot;label&quot;: &quot;Program Purpose&quot;,
+      &quot;guidance&quot;: &quot;The change the program exists to bring about, not a description of the work it will do. \&quot;Replace the billing platform\&quot; describes work; \&quot;so that month-end billing closes in three days rather than ten\&quot; describes a change, and only the second can be judged complete or not.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Business_Driver_and_Strategic_Alignment&quot;: {
+      &quot;section&quot;: &quot;Program Purpose and Rationale&quot;,
+      &quot;label&quot;: &quot;Business Driver and Strategic Alignment&quot;,
+      &quot;guidance&quot;: &quot;The portfolio or strategy entry this program serves, named so the program can be traced back to the objective that funded it. A charter that cannot name its driver has no way to answer whether it is still worth doing once the strategy has moved on.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Problem_or_Opportunity_Statement&quot;: {
+      &quot;section&quot;: &quot;Program Purpose and Rationale&quot;,
+      &quot;label&quot;: &quot;Problem or Opportunity Statement&quot;,
+      &quot;guidance&quot;: &quot;The specific problem being solved or the specific opportunity being taken, stated so that someone who disagreed with it could say why. An opportunity described only in positive terms is indistinguishable from a wish, because nothing in the statement can fail.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Consequence_of_Not_Proceeding&quot;: {
+      &quot;section&quot;: &quot;Program Purpose and Rationale&quot;,
+      &quot;label&quot;: &quot;Consequence of Not Proceeding&quot;,
+      &quot;guidance&quot;: &quot;What happens if the program is not undertaken, including what is lost rather than only what is missed. This is the test every charter is eventually measured against, usually several years later by someone who was not present when it was written, and it is almost never recorded at the time.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Program_Vision_Statement&quot;: {
+      &quot;section&quot;: &quot;Program Purpose and Rationale&quot;,
+      &quot;label&quot;: &quot;Program Vision Statement&quot;,
+      &quot;guidance&quot;: &quot;A short statement of the future state the program exists to create, in the organisation&#x27;s own words. Keep it to a single sentence that someone outside the program could understand, since a vision statement read only by the program team is a statement to itself.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_ID&quot;: {
+      &quot;section&quot;: &quot;Program Objectives&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the objective, used in the components, benefits and reporting sections so that progress against it can be traced to the work that was meant to deliver it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Objective&quot;: {
+      &quot;section&quot;: &quot;Program Objectives&quot;,
+      &quot;label&quot;: &quot;Objective&quot;,
+      &quot;guidance&quot;: &quot;What must be true when the program succeeds, stated so that a reasonable person could disagree with it. Where the components were funded before the charter was written, check the direction of the fit: an objective written to fit a component has inherited that component&#x27;s scope without choosing it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Measure&quot;: {
+      &quot;section&quot;: &quot;Program Objectives&quot;,
+      &quot;label&quot;: &quot;Measure&quot;,
+      &quot;guidance&quot;: &quot;How achievement will be established, naming the source of the figure rather than the sentiment behind it. A measure with no source cannot be reproduced by anyone checking the claim, and an objective whose evidence cannot be reproduced is an opinion with a number attached.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Target_Date&quot;: {
+      &quot;section&quot;: &quot;Program Objectives&quot;,
+      &quot;label&quot;: &quot;Target Date&quot;,
+      &quot;guidance&quot;: &quot;When the objective must be met, which is what makes it a target rather than a direction. Where the date is inherited from a component&#x27;s own plan rather than from the benefit it serves, record the date the benefit is actually expected rather than the date the work finishes.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Owner&quot;: {
+      &quot;section&quot;: &quot;Program Objectives&quot;,
+      &quot;label&quot;: &quot;Owner&quot;,
+      &quot;guidance&quot;: &quot;The single role accountable for the objective, which is normally not the program manager for every objective. An objective owned by a team cannot be chased, because a team is never available when the answer is needed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Status&quot;: {
+      &quot;section&quot;: &quot;Program Objectives&quot;,
+      &quot;label&quot;: &quot;Status&quot;,
+      &quot;guidance&quot;: &quot;Where the objective currently stands, from a fixed set agreed for the program. A free-text status cannot be rolled up, and a program whose objectives cannot be rolled up cannot be reported to the sponsor as anything other than a list.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Component_ID&quot;: {
+      &quot;section&quot;: &quot;Component Projects and Operations&quot;,
+      &quot;label&quot;: &quot;Component ID&quot;,
+      &quot;guidance&quot;: &quot;The stable identifier of the component project, matching the identifier used in the portfolio roadmap so the two can be joined and the same component is not tracked under two names.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Component_Name&quot;: {
+      &quot;section&quot;: &quot;Component Projects and Operations&quot;,
+      &quot;label&quot;: &quot;Component Name&quot;,
+      &quot;guidance&quot;: &quot;The name of the project or operation within the program, taken from its own charter. Where a component serves more than one program, record that here, because a component reported to two owners is reported to neither once they disagree.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Objective_Linkage&quot;: {
+      &quot;section&quot;: &quot;Component Projects and Operations&quot;,
+      &quot;label&quot;: &quot;Objective Linkage&quot;,
+      &quot;guidance&quot;: &quot;Which program objectives this component serves, by identifier. A component linked to no objective is a candidate for removal, and the charter is the last point at which that is visible before the money is committed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_Status&quot;: {
+      &quot;section&quot;: &quot;Component Projects and Operations&quot;,
+      &quot;label&quot;: &quot;Status&quot;,
+      &quot;guidance&quot;: &quot;Where the component currently stands, from the fixed set used across the program, so components are read against each other rather than each in the terms its own project used.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Owner&quot;: {
+      &quot;section&quot;: &quot;Component Projects and Operations&quot;,
+      &quot;label&quot;: &quot;Owner&quot;,
+      &quot;guidance&quot;: &quot;Who is accountable for the component, which will usually not be the program manager. The program manager remains accountable for the component&#x27;s contribution to the objective, which is a different accountability and is worth stating as such.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Benefit_ID&quot;: {
+      &quot;section&quot;: &quot;Program Benefits&quot;,
+      &quot;label&quot;: &quot;Benefit ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the benefit, used in the benefits management plan and the value realization register so the same benefit is not counted twice under two names.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Benefit&quot;: {
+      &quot;section&quot;: &quot;Program Benefits&quot;,
+      &quot;label&quot;: &quot;Benefit&quot;,
+      &quot;guidance&quot;: &quot;The benefit the program expects to produce, preferably stating benefits the components would not produce individually, since those are the reason for having a program rather than a list of projects. A benefit that any one component would have delivered anyway is not a program benefit.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Category&quot;: {
+      &quot;section&quot;: &quot;Program Benefits&quot;,
+      &quot;label&quot;: &quot;Category&quot;,
+      &quot;guidance&quot;: &quot;Whether the benefit is financial or non-financial. The two are governed differently and are counted differently, and a benefit recorded without a category is usually valued at whichever the writer found more convenient.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Beneficiary&quot;: {
+      &quot;section&quot;: &quot;Program Benefits&quot;,
+      &quot;label&quot;: &quot;Beneficiary&quot;,
+      &quot;guidance&quot;: &quot;Who receives the benefit, named rather than described. A benefit with no identifiable recipient cannot be realised, because realisation requires someone to change their behaviour or take a decision they would not otherwise have taken.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Realization_Mechanism&quot;: {
+      &quot;section&quot;: &quot;Program Benefits&quot;,
+      &quot;label&quot;: &quot;Realization Mechanism&quot;,
+      &quot;guidance&quot;: &quot;How the benefit will actually be captured, which is where most assumed benefits turn out not to be. The mechanism is what distinguishes a benefit the program will deliver from one the business hopes will occur, and without it the benefit is an aspiration with a number attached.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Realization_Date&quot;: {
+      &quot;section&quot;: &quot;Program Benefits&quot;,
+      &quot;label&quot;: &quot;Realization Date&quot;,
+      &quot;guidance&quot;: &quot;When the benefit is expected to be realised. For a financial benefit this is commonly well after the component that created it has closed, and recording the earlier date is the most common way a program&#x27;s benefits appear to land on time when they have not.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f23_Program_Manager_Authority_Statement&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Program Manager Authority Statement&quot;,
+      &quot;guidance&quot;: &quot;What the program manager is authorised to decide and to commit, in the terms the organisation recognises. Record it as a grant rather than as a description of the role, so that a decision taken under it is defensible afterwards.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f24_Authority_Retained_by_the_Sponsor&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Authority Retained by the Sponsor&quot;,
+      &quot;guidance&quot;: &quot;What the sponsor keeps, which is usually the larger share. A charter that grants everything appears to grant everything, and the first real escalation then has no precedent to follow because there was no line drawn to escalate across.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f25_Program_Governance_Forum&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Program Governance Forum&quot;,
+      &quot;guidance&quot;: &quot;The forum that governs the program, its membership, and what it decides rather than merely discusses. Record the distinction, because a forum that only discusses produces minutes about decisions taken elsewhere.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f26_Reporting_Cadence_and_Audience&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Reporting Cadence and Audience&quot;,
+      &quot;guidance&quot;: &quot;How often the program reports, to whom, and in what form. Reporting to a body that cannot act on it is a reporting obligation rather than a control, and the difference is visible only when the report is examined.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f27_Escalation_Path&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Escalation Path&quot;,
+      &quot;guidance&quot;: &quot;Who decides when the authority level is exceeded, named so the escalation does not have to be negotiated at the moment it is needed. Where the path is a role rather than a person, record how the person is identified, since roles go vacant.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f28_Funding_Position&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Funding Position&quot;,
+      &quot;guidance&quot;: &quot;What is approved, what is requested, and what is not yet decided, stated honestly. A charter that treats unapproved funding as available sets the program up to discover the shortfall after it has already committed the component projects to spend against it.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f29_Decision_Type&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Decision Type&quot;,
+      &quot;guidance&quot;: &quot;What kind of decision this row concerns, such as scope, budget, procurement, or personnel. Naming the kinds separately is what makes the authority levels below meaningful, since a single level cannot apply uniformly to all of them.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f30_Authority_Level&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Authority Level&quot;,
+      &quot;guidance&quot;: &quot;The level at which the program manager may decide this kind of decision, such as team, department, or business unit. Where the answer is the same for every row, consider whether the row is doing any work.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f31_Escalation_Path&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Escalation Path&quot;,
+      &quot;guidance&quot;: &quot;Who decides when this authority level is exceeded, named for this decision type rather than in general, since the escalation for a budget decision is often not the escalation for a scope one.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f32_Limits_or_Conditions&quot;: {
+      &quot;section&quot;: &quot;Program Manager Authority and Governance&quot;,
+      &quot;label&quot;: &quot;Limits or Conditions&quot;,
+      &quot;guidance&quot;: &quot;What this authority does not extend to, which is the half of the row that prevents the dispute later. A row recording only what is permitted invites the reading that everything not forbidden is also permitted.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f33_ID&quot;: {
+      &quot;section&quot;: &quot;Risks and Assumptions&quot;,
+      &quot;label&quot;: &quot;ID&quot;,
+      &quot;guidance&quot;: &quot;The identifier for the risk or assumption, so it can be referred to from the objectives and from reporting without ambiguity.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f34_Type&quot;: {
+      &quot;section&quot;: &quot;Risks and Assumptions&quot;,
+      &quot;label&quot;: &quot;Type&quot;,
+      &quot;guidance&quot;: &quot;Whether the row is a Risk or an Assumption. A risk may occur or not; an assumption is either true or false and can be tested. Recording both under one heading loses the distinction exactly where it decides whether the item needs watching or checking.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f35_Description&quot;: {
+      &quot;section&quot;: &quot;Risks and Assumptions&quot;,
+      &quot;label&quot;: &quot;Description&quot;,
+      &quot;guidance&quot;: &quot;What is at stake, or what is being taken for granted, stated so the assumption could be shown to have failed. An assumption phrased as a sentiment cannot be tested, and an untestable assumption is a hope with a risk rating attached.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f36_Impact_on_Program&quot;: {
+      &quot;section&quot;: &quot;Risks and Assumptions&quot;,
+      &quot;label&quot;: &quot;Impact on Program&quot;,
+      &quot;guidance&quot;: &quot;What happens to the program if the risk occurs or the assumption proves false, in objective, funding or schedule terms. An item recorded without an impact cannot be prioritised, because nothing distinguishes the consequential from the trivial.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f37_Owner&quot;: {
+      &quot;section&quot;: &quot;Risks and Assumptions&quot;,
+      &quot;label&quot;: &quot;Owner&quot;,
+      &quot;guidance&quot;: &quot;Who watches this. A risk with no owner is not being watched, and the program&#x27;s exposure grows silently while the register still appears complete.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f38_Review_Date&quot;: {
+      &quot;section&quot;: &quot;Risks and Assumptions&quot;,
+      &quot;label&quot;: &quot;Review Date&quot;,
+      &quot;guidance&quot;: &quot;When this will next be checked. An assumption nobody revisits becomes a fact by default, which is precisely when the conditions that made it true have changed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f39_Defined_Response&quot;: {
+      &quot;section&quot;: &quot;Response to Objective Failure&quot;,
+      &quot;label&quot;: &quot;Defined Response&quot;,
+      &quot;guidance&quot;: &quot;What happens when an objective is not met: whether the response is to replan, reduce scope, extend the date, or close the objective. A charter with no stated response to failure leaves that decision to whoever happens to be in the room when it arises, which is usually the person least able to afford the time.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f40_Decision_Authority&quot;: {
+      &quot;section&quot;: &quot;Response to Objective Failure&quot;,
+      &quot;label&quot;: &quot;Decision Authority&quot;,
+      &quot;guidance&quot;: &quot;Who takes that decision, and whether the sponsor must be consulted first. Where the answer is that the program manager decides alone, record what they may not commit without the sponsor, since that is the part that is assumed rather than agreed.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f41_Trigger_for_Reassessment&quot;: {
+      &quot;section&quot;: &quot;Response to Objective Failure&quot;,
+      &quot;label&quot;: &quot;Trigger for Reassessment&quot;,
+      &quot;guidance&quot;: &quot;What specifically triggers the response: a date, a measure falling short by a stated margin, or an event. A trigger expressed as \&quot;if the objective is not met\&quot; is the same as the failure itself and gives no warning that the decision is coming.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+          </details>
+          
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <!-- Quick Installation & GitHub Repository Bar -->
+      <div class="footer-quick-bar">
+        <div class="footer-pip-box">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
+            تثبيت الحزمة عبر pip:
+          </span>
+          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ', 2000);">
+            نسخ
+          </button>
+        </div>
+        <div class="footer-links-row">
+          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+            📦 حزمة PyPI (v2.5.0.post1)
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            مستودع GitHub للمشروع
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            💬 إبلاغ عن ملاحظة
+          </a>
+        </div>
+      </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fouad Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فؤاد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/tailoring/">مستويات الحوكمة</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">بوابة المطورين</a></li>
+            <li><a href="/Tasleemat/developers/cli/">أداة سطر الأوامر</a></li>
+            <li><a href="/Tasleemat/developers/sdk/">مكتبة بايثون</a></li>
+            <li><a href="/Tasleemat/developers/mcp/">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/schemas/">مخططات JSON</a></li>
+            <li><a href="/Tasleemat/developers/agentic/">أسراب الوكلاء وبوابات CI/CD</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.35rem;"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg> GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">📦 PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const btn = evt.currentTarget || (evt.target && evt.target.closest('.tab-btn'));
+    const parent = btn ? btn.closest('.tabs-container') : (evt.target && evt.target.closest('.tabs-container'));
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    if (btn) {
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+    }
+    const targetPane = parent.querySelector('#' + tabId) || document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
+})();
+
+  </script>
+  
+</body>
+</html>

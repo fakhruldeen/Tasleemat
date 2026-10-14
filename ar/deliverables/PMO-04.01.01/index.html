@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMO-04.01.01 خطة إدارة المشروع | تسليمات</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="PMO-04.01.01 خطة إدارة المشروع | تسليمات">
+  <meta name="description" content="PMO-04.01.01: خطة إدارة المشروع - تسليمة معيارية للمشروع، دليل تطبيقي للممارس، مثال واقعي متكامل، ومخطط JSON للتحقق الآلي.">
+  <meta name="author" content="Mohamed Fouad Fakhruldeen">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fakhr.me/Tasleemat/ar/deliverables/PMO-04.01.01/">
+  <link rel="alternate" hreflang="en" href="https://fakhr.me/Tasleemat/deliverables/PMO-04.01.01/">
+  <link rel="alternate" hreflang="ar" href="https://fakhr.me/Tasleemat/ar/deliverables/PMO-04.01.01/">
+  
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fakhr.me/Tasleemat/ar/deliverables/PMO-04.01.01/">
+  <meta property="og:site_name" content="تسليمات | Tasleemat">
+  <meta property="og:title" content="PMO-04.01.01 خطة إدارة المشروع | تسليمات">
+  <meta property="og:description" content="PMO-04.01.01: خطة إدارة المشروع - تسليمة معيارية للمشروع، دليل تطبيقي للممارس، مثال واقعي متكامل، ومخطط JSON للتحقق الآلي.">
+  <meta property="og:image" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta property="og:image:secure_url" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="PMO-04.01.01 خطة إدارة المشروع - تسليمات">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fakhr.me/Tasleemat/ar/deliverables/PMO-04.01.01/">
+  <meta name="twitter:title" content="PMO-04.01.01 خطة إدارة المشروع | تسليمات">
+  <meta name="twitter:description" content="PMO-04.01.01: خطة إدارة المشروع - تسليمة معيارية للمشروع، دليل تطبيقي للممارس، مثال واقعي متكامل، ومخطط JSON للتحقق الآلي.">
+  <meta name="twitter:image" content="https://fakhr.me/Tasleemat/img/social.png">
+  <meta name="twitter:image:alt" content="PMO-04.01.01 خطة إدارة المشروع - تسليمات">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: 'Cairo', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  
+  --primary: #0f172a;
+  --primary-contrast: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-bg: #eff6ff;
+  --accent-blue-border: #bfdbfe;
+  
+  --accent-amber: #d97706;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --tag-bg: #f1f5f9;
+  --tag-text: #475569;
+}
+
+[data-theme="dark"] {
+  --bg-main: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-focus: #60a5fa;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --primary: #f8fafc;
+  --primary-contrast: #0f172a;
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #064e3b;
+  --accent-emerald-border: #047857;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-bg: #1e3a8a;
+  --accent-blue-border: #1d4ed8;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #78350f;
+  --accent-amber-border: #b45309;
+  
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility Focus Ring */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navigation Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-utility {
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-utility:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+/* DevHunt Badge */
+.devhunt-badge-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.devhunt-badge {
+  display: inline-block;
+  line-height: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.devhunt-badge:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.devhunt-dark {
+  display: none !important;
+}
+
+.devhunt-light {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-dark {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-light {
+  display: none !important;
+}
+
+/* Honesty & Boundaries Grid */
+.boundaries-section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.boundary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.boundary-card.provides {
+  border-top: 4px solid var(--accent-emerald);
+}
+
+.boundary-card.limits {
+  border-top: 4px solid var(--accent-amber);
+}
+
+.boundary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boundary-list {
+  list-style: none;
+}
+
+.boundary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.boundary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Lifecycle Stage Hub */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.stage-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stage-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Card & Grid Layouts */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--border-focus);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tags and Chips */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border-color);
+}
+
+.tag.tier {
+  background: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+}
+
+.tag.pack {
+  background: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald-border);
+}
+
+/* Interactive Deliverables Explorer */
+.explorer-controls {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.filters-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.explorer-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Deliverable Item Card */
+.deliverable-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.deliverable-card:hover {
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.deliverable-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.deliverable-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-main);
+}
+
+.deliverable-title-alt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.deliverable-actions {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs UI for Detail Pages */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.tab-pane {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Code Blocks & Schemas */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  direction: ltr;
+  display: inline-block;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Mermaid Diagrams Styling */
+.mermaid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  direction: ltr !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Callouts / Admonitions */
+.admonition, .callout {
+  border-left: 4px solid var(--accent-blue);
+  background: var(--accent-blue-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+[dir="rtl"] .admonition, [dir="rtl"] .callout {
+  border-left: none;
+  border-right: 4px solid var(--accent-blue);
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.admonition.note {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-bg);
+}
+
+.admonition.tip {
+  border-color: var(--accent-emerald);
+  background: var(--accent-emerald-bg);
+}
+
+.admonition.warning {
+  border-color: var(--accent-amber);
+  background: var(--accent-amber-bg);
+}
+
+.admonition-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Markdown Content Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+[dir="rtl"] .markdown-body ul, [dir="rtl"] .markdown-body ol {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .markdown-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--border-color);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* Tables */
+.table-wrapper, .markdown-body table {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* ==========================================================================
+   Realistic Example & Form Viewer Components (Stitch Design System)
+   ========================================================================== */
+
+.deliverable-header-card {
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0.5rem 0 1.25rem 0;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .deliverable-header-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.deliverable-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  line-height: 1.2;
+}
+
+.badge-code {
+  background-color: var(--accent-blue-bg);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+}
+
+[data-theme="dark"] .badge-code {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.badge-phase {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+[data-theme="dark"] .badge-phase {
+  background-color: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+.badge-example {
+  background-color: var(--accent-emerald-bg);
+  color: var(--accent-emerald);
+  border: 1px solid var(--accent-emerald-border);
+}
+
+[data-theme="dark"] .badge-example {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Document Metadata Bar & Chips */
+.doc-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doc-meta-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.doc-meta-chip:hover {
+  border-color: var(--border-focus);
+}
+
+.meta-chip-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.meta-chip-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  word-break: break-word;
+}
+
+/* Form Viewer Container & Elevation */
+.form-viewer-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .form-viewer-container {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+.form-viewer-container table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-viewer-container blockquote {
+  background: var(--bg-main);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+}
+
+[dir="rtl"] .form-viewer-container blockquote {
+  border-radius: 8px 0 0 8px;
+}
+
+
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-quick-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.footer-pip-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-pip-code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--accent-blue);
+  font-weight: 600;
+  direction: ltr !important;
+  text-align: left;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.footer-badge-link:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-blue);
+  background: var(--bg-card-hover);
+}
+
+/* Author Profile Card in Footer */
+.footer-author-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.author-info-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 550px;
+}
+
+.author-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.author-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.author-btn:hover {
+  background: var(--accent-blue-bg);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue);
+}
+
+.author-btn.linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  border-color: #0077b5;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .boundaries-grid {
+
+
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="/Tasleemat/ar/" class="brand-group" aria-label="تسليمات">
+        <span>📦 تسليمات</span>
+        <span class="brand-badge">v2.5.0.post1</span>
+      </a>
+      
+      <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/Tasleemat/ar/" class="nav-link ">الرئيسية</a></li>
+<li><a href="/Tasleemat/ar/start/" class="nav-link ">ابدأ هنا</a></li>
+<li><a href="/Tasleemat/ar/deliverables/" class="nav-link active">التسليمات</a></li>
+<li><a href="/Tasleemat/ar/tailoring/" class="nav-link ">مستويات الحوكمة</a></li>
+<li><a href="/Tasleemat/ar/guides/" class="nav-link ">الأدلة والحوكمة</a></li>
+<li><a href="/Tasleemat/ar/developers/" class="nav-link ">المطورون والذكاء الاصطناعي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/Tasleemat/deliverables/PMO-04.01.01/" class="btn-utility" aria-label="Switch Language">
+          🌐 English
+        </a>
+        <button id="theme-toggle" class="btn-utility" aria-label="Toggle Dark/Light Mode">
+          🌓
+        </button>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    
+    <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <!-- Breadcrumb -->
+      <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+        <a href="/Tasleemat/" style="color: var(--text-muted);">الرئيسية</a> &gt; 
+        <a href="/Tasleemat/deliverables/" style="color: var(--text-muted);">التسليمات</a> &gt; 
+        <span style="color: var(--text-main); font-weight: 600;">PMO-04.01.01</span>
+      </nav>
+
+      <!-- Deliverable Header Card -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="deliverable-id" style="font-size: 1rem; padding: 0.25rem 0.6rem;">PMO-04.01.01</span>
+            <span style="font-size: 0.9rem; color: var(--text-muted); margin-left: 0.75rem; margin-right: 0.75rem;">
+              المرحلة 04: التخطيط
+            </span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="tag tier">المستوى 1</span> <span class="tag tier">المستوى 2</span>
+            <span class="tag pack">ai</span> <span class="tag pack">general</span> <span class="tag pack">hybrid</span> <span class="tag pack">predictive</span>
+          </div>
+        </div>
+
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">خطة إدارة المشروع</h1>
+        <div style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;">PROJECT MANAGEMENT PLAN</div>
+
+        <!-- CLI Quick Command Bar -->
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <code style="font-size: 0.85rem;">tasleemat asset PMO-04.01.01 template --lang ar</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('tasleemat asset PMO-04.01.01 template --lang ar'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy Command', 2000);">
+            نسخ الأمر
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Views -->
+      <div class="tabs-container">
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')" role="tab" aria-selected="true">
+            📋 نظرة عامة
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-template')" role="tab" aria-selected="false">
+            📄 القالب
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-guide')" role="tab" aria-selected="false">
+            📖 دليل المستخدم
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-prompt')" role="tab" aria-selected="false">
+            🤖 مطالبة التوليد
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-example')" role="tab" aria-selected="false">
+            💡 مثال واقعي
+          </button>
+          <button class="tab-btn" onclick="switchTab(event, 'tab-schema')" role="tab" aria-selected="false">
+            ⚙️ المخطط
+          </button>
+        </div>
+
+
+        <!-- Tab 1: Overview -->
+        <div id="tab-overview" class="tab-pane active" role="tabpanel">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">ملخص التسليمة وحدود الحوكمة</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">المرحلة في دورة حياة المشروع</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <strong>المرحلة 04:</strong> التخطيط
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">متطلبات مستوى الحجم</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <span class="tag tier">المستوى 1</span> <span class="tag tier">المستوى 2</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">عقد التحقق الآلي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              ترتبط هذه التسليمة بمخطط JSON Schema متوافق مع معيار Draft 2020-12 لتمكين التحقق البنيوي والدلالي الآلي.
+            </p>
+            <pre><code>tasleemat validate PMO-04.01.01 ./completed_data.json</code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Template -->
+        <div id="tab-template" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">قالب التسليمة بتنسيق Markdown</h2>
+            <button class="btn-utility" id="btn-copy-template" onclick="copySnippet(this, 'code-template')">
+              نسخ القالب
+            </button>
+          </div>
+          <pre id="code-template"><code>&lt;!-- تعليمات للنموذج الذكي: قم بتعبئة العناصر النائبة [ أضف التفاصيل... ] بناءً على سياق المشروع.
+
+تعليمات الأقسام بالتفصيل:
+- دورة حياة المشروع: قدّم بيانات شاملة ودقيقة لكافة الحقول المطلوبة في هذا القسم.
+- مراجعات ومعايير المراحل: قدّم بيانات شاملة ودقيقة لكافة الحقول المطلوبة في هذا القسم.
+- مناهج التطوير: قدّم بيانات شاملة ودقيقة لكافة الحقول المطلوبة في هذا القسم.
+- خطط الإدارة الفرعية: قدّم بيانات شاملة ودقيقة لكافة الحقول المطلوبة في هذا القسم.
+- عتبات التباين والانحراف: قدّم بيانات شاملة ودقيقة لكافة الحقول المطلوبة في هذا القسم.
+- خطوط الأساس للمشروع: قدّم بيانات شاملة ودقيقة لكافة الحقول المطلوبة في هذا القسم.
+--&gt;
+
+&lt;h3 align=&quot;left&quot;&gt;{{اسم_الشركة}}&lt;/h3&gt;
+&lt;h2 align=&quot;left&quot;&gt;{{اسم_المشروع}} - {{معرف_المشروع}}&lt;/h2&gt;
+&lt;h1 align=&quot;center&quot;&gt;خطة إدارة المشروع&lt;/h1&gt;
+
+| **تاريخ الإعداد:** {{التاريخ_الحالي}} | **مدير المشروع:** {{اسم_مدير_المشروع}} | **تم الإعداد بواسطة:** {{تم_الإعداد_بواسطة}} |
+| ---: | ---: | ---: |
+
+---
+
+## 1. دورة حياة المشروع
+
+**وصف دورة حياة المشروع:**
+[ أضف التفاصيل... ]
+
+**مسميات المراحل وتتابعها:**
+[ أضف التفاصيل... ]
+
+**الأنشطة الرئيسية للمراحل:**
+[ أضف التفاصيل... ]
+
+**التسليمات الرئيسية للمراحل:**
+[ أضف التفاصيل... ]
+
+---
+
+## 2. مراجعات ومعايير المراحل
+
+**آلية مراجعة المراحل:**
+[ أضف التفاصيل... ]
+
+**معايير الدخول إلى المرحلة:**
+[ أضف التفاصيل... ]
+
+**معايير الخروج من المرحلة:**
+[ أضف التفاصيل... ]
+
+---
+
+## 3. مناهج التطوير
+
+**منهج التطوير المختار:**
+[ أضف التفاصيل... ]
+
+**مناهج التطوير حسب التسليمات:**
+[ أضف التفاصيل... ]
+
+---
+
+## 4. خطط الإدارة الفرعية
+
+**ملخص إدارة النطاق والمتطلبات:**
+[ أضف التفاصيل... ]
+
+**ملخص إدارة الجدول والتكلفة:**
+[ أضف التفاصيل... ]
+
+**ملخص إدارة الجودة والموارد:**
+[ أضف التفاصيل... ]
+
+**ملخص إدارة الاتصالات والمعنيين:**
+[ أضف التفاصيل... ]
+
+**ملخص إدارة المخاطر والمشتريات:**
+[ أضف التفاصيل... ]
+
+**ملخص إدارة التغيير والتهيئة:**
+[ أضف التفاصيل... ]
+
+---
+
+## 5. عتبات التباين والانحراف
+
+**عتبة تباين النطاق:**
+[ أضف التفاصيل... ]
+
+**عتبة تباين الجدول الزمني:**
+[ أضف التفاصيل... ]
+
+**عتبة تباين التكلفة:**
+[ أضف التفاصيل... ]
+
+---
+
+## 6. خطوط الأساس للمشروع
+
+**تعريف خط الأساس للنطاق:**
+[ أضف التفاصيل... ]
+
+**تعريف خط الأساس للجدول الزمني:**
+[ أضف التفاصيل... ]
+
+**تعريف خط الأساس للتكلفة:**
+[ أضف التفاصيل... ]
+
+**خط أساس قياس الأداء (PMB):**
+[ أضف التفاصيل... ]
+
+---
+
+### الاعتماد والموافقات
+
+| الدور | الاسم | التوقيع | التاريخ |
+| ---: | ---: | ---: | ---: |
+| **مدير المشروع** | {{اسم_مدير_المشروع}} | _______________________ | [.... -.... -.... ] |
+| **مسؤول مكتب إدارة المشاريع** | {{اسم_مسؤول_مكتب_إدارة_المشاريع}} | _______________________ | [.... -.... -.... ] |
+| **راعي المشروع** | {{اسم_راعي_المشروع}} | _______________________ | [.... -.... -.... ] |
+---
+
+&lt;div align=&quot;left&quot; style=&quot;margin-top: 20px; font-size: 12px; color: #7f8c8d;&quot;&gt;
+  &lt;span&gt;سجل التدقيق الإلكتروني: Hash SHA256: {{رمز_تجزئة_التدقيق_SHA256}}&lt;/span&gt; &lt;br&gt;
+ &lt;strong&gt;القالب:&lt;/strong&gt; خطة إدارة المشروع | &lt;strong&gt;المرجع:&lt;/strong&gt; PMO-04.01.01 &lt;br&gt;
+ &lt;i&gt;تم التوليد في: {{الطابع_الزمني_الحالي}}، بواسطة &lt;a href=&quot;https://github.com/fakhruldeen/Tasleemat/&quot; style=&quot;color: #7f8c8d;&quot;&gt;تسليمات&lt;/a&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <!-- Tab 3: Guide -->
+        <div id="tab-guide" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">دليل المستخدم وإرشادات الممارس</h2>
+            <button class="btn-utility" onclick="window.print()">
+              🖨️ طباعة الدليل
+            </button>
+          </div>
+          <div class="markdown-body" style="line-height: 1.8;">
+            <h2 id="_1">دليل نماذج تسليمات</h2>
+<h1 id="_2">المخرج المعتمد للمشروع: خطة إدارة المشروع</h1>
+<p><strong>مرجع الوثيقة:</strong> <code>PMO-04.01.01</code></p>
+<p>يوفر هذا المستند مرجعًا شاملاً ومهنيًا لفهم الغرض والاستخدام الفعال
+لوثيقة <strong>خطة إدارة المشروع</strong> بما يتوافق مع إطار عمل تسليمات.</p>
+<hr />
+<h3 id="1">1. مفهوم الوثيقة وطبيعتها</h3>
+<p>مخرج تخطيطي شامل يدمج تعريفات دورة الحياة والخطط الفرعية وخطوط الأساس المعتمدة وعتبات التباين.</p>
+<hr />
+<h3 id="2">2. القيمة والأهمية الاستراتيجية</h3>
+<p>يوفر خط الأساس التشغيلي المعتمد والمرجع الموحد لإدارة أداء المشروع وضمان تحقيق أهدافه.</p>
+<hr />
+<h3 id="3">3. التوقيت ودواعي الإعداد والتحديث</h3>
+<p>يتم إعدادها خلال مرحلة التخطيط ويتم تنقيحها وصيانتها باستمرار طوال دورة حياة المشروع.</p>
+<hr />
+<h3 id="4-raci">4. الأدوار والمسؤوليات (RACI)</h3>
+<p>يُعدها مدير المشروع بمشاركة قادة الفرق ويعتمدها راعي المشروع ومسؤول مكتب إدارة المشاريع.</p>
+<hr />
+<h3 id="_3">إرشادات التخصيص والمواءمة</h3>
+<ul>
+<li>تكييف مستوى التفصيل بحسب حجم المشروع ودرجة تعقيده ومستوى نضج الحوكمة المؤسسية.</li>
+<li>التركيز على دورات التكرار التكيفية في المشاريع الرشيقة والهجينة.</li>
+</ul>
+<hr />
+<h3 id="_4">المحاذاة والترابط المؤسسي</h3>
+<p>تدمج كافة خطط الإدارة الفرعية وخطوط الأساس للنطاق والجدول والتكلفة وتتوافق مع ميثاق المشروع وإطار الحوكمة.</p>
+<hr />
+<h3 id="5">5. إرشادات تعبئة الحقول والبيانات</h3>
+<p>لتعبئة وثيقة <strong>خطة إدارة المشروع</strong> بشكل دقيق واحترافي، يتعين على الطرف المسؤول
+استيفاء الأقسام الرئيسية التالية استناداً إلى سياق المشروع (مع مراعاة الرجوع إلى <code>parameters.md</code> لمتغيرات المشروع العامة):</p>
+<ul>
+<li><strong>وصف دورة حياة المشروع:</strong> توصيف مراحل دورة حياة المشروع المختارة ومسارات الانتقال والتقدم الشامل.</li>
+<li><strong>مسميات المراحل وتتابعها:</strong> الترتيب المحدد لمراحل المشروع وحدودها الفاصلة من البداية وحتى الإغلاق.</li>
+<li><strong>الأنشطة الرئيسية للمراحل:</strong> الأنشطة الإدارية والفنية الرئيسية المنفذة خلال كل مرحلة من مراحل المشروع.</li>
+<li><strong>التسليمات الرئيسية للمراحل:</strong> المخرجات المعتمدة والمعالم التسليمية الأساسية المنتجة خلال كل مرحلة.</li>
+<li><strong>آلية مراجعة المراحل:</strong> بوابات الحوكمة ونقاط اتخاذ القرار المعتمدة للفصل بين مراحل المشروع.</li>
+<li><strong>معايير الدخول إلى المرحلة:</strong> المتطلبات الأساسية والجاهزية الإلزامية الواجب توفرها قبل بدء كل مرحلة.</li>
+<li><strong>معايير الخروج من المرحلة:</strong> معايير القبول والاعتمادات الرسمية المطلوبة لإغلاق المرحلة والانتقال للتالية.</li>
+<li><strong>منهج التطوير المختار:</strong> المبررات المهنية لاختيار المنهج التنبؤي أو التكيفي الرشيق أو الهجين.</li>
+<li><strong>مناهج التطوير حسب التسليمات:</strong> تخصيص منهجيات التطوير المتبعة لتناسب طبيعة كل تسليم ومخرج محدد.</li>
+<li><strong>ملخص إدارة النطاق والمتطلبات:</strong> ملخص تكامل تحديد النطاق وضبط خط الأساس وتتبع المتطلبات المعتمدة.</li>
+<li><strong>ملخص إدارة الجدول والتكلفة:</strong> ملخص تكامل تطوير الجدول الزمني وإعداد الميزانية وعتبات التباين.</li>
+<li><strong>ملخص إدارة الجودة والموارد:</strong> ملخص تكامل معايير الجودة وتوفير الموارد وتطوير كفاءات الفريق.</li>
+<li><strong>ملخص إدارة الاتصالات والمعنيين:</strong> ملخص تكامل تدفق المعلومات وقنوات الاتصال وإشراك أصحاب المصلحة.</li>
+<li><strong>ملخص إدارة المخاطر والمشتريات:</strong> ملخص تكامل استجابات المخاطر وإدارة العقود وعلاقات الموردين.</li>
+<li><strong>ملخص إدارة التغيير والتهيئة:</strong> ملخص تكامل إجراءات التحكم في التغيير وإدارة التكوين والضبط.</li>
+<li><strong>عتبة تباين النطاق:</strong> الحدود المقبولة لانحراف النطاق قبل تفعيل طلبات التغيير الرسمية.</li>
+<li><strong>عتبة تباين الجدول الزمني:</strong> حدود التباين الزمني المسموح بها قبل اتخاذ إجراءات تصحيح المسار الزمني.</li>
+<li><strong>عتبة تباين التكلفة:</strong> النسب المئوية والحدود المالية المقبولة للانحراف قبل تصعيد الميزانية.</li>
+<li><strong>تعريف خط الأساس للنطاق:</strong> بيان نطاق المشروع المعتمد وهيكل تجزئة العمل وقاموس الهيكل المرتبط به.</li>
+<li><strong>تعريف خط الأساس للجدول الزمني:</strong> نموذج الجدول الزمني المعتمد وتواريخ البداية والنهاية لخط الأساس.</li>
+<li><strong>تعريف خط الأساس للتكلفة:</strong> الميزانية المعتمدة الموزعة زمنياً للمشروع باستثناء احتياطي الإدارة.</li>
+<li><strong>خط أساس قياس الأداء (PMB):</strong> التكامل المعتمد بين خطوط الأساس للنطاق والجدول والتكلفة لإدارة القيمة المكتسبة.</li>
+</ul>
+<hr />
+<h3 id="6">6. نموذج تطبيقي معبأ (مثال استرشادي)</h3>
+<p>يتوفر نموذج تطبيقي مكتمل وعالي الجودة يوضح كيفية تعبئة واستخدام هذا المستند عملياً:</p>
+<blockquote>
+<p>📖 <strong>النموذج التطبيقي المكتمل:</strong> <a href="../../../../../examples/ar/04_التخطيط/01_التكامل/01_خطة_إدارة_المشروع/04_01_01_خطة_إدارة_المشروع_مثال.md">04_01_01_خطة_إدارة_المشروع_مثال.md</a></p>
+</blockquote>
+          </div>
+        </div>
+
+        <!-- Tab: LLM Prompt -->
+        <div id="tab-prompt" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 style="font-size: 1.3rem;">مطالبة التوليد للذكاء الاصطناعي وتعليمات الوكيل</h2>
+            <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('code-prompt').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ المطالبة', 2000);">
+              📋 نسخ المطالبة
+            </button>
+          </div>
+          <div class="markdown-body" id="code-prompt" style="line-height: 1.8;">
+            <h1 id="-generation-prompt">خطة إدارة المشروع - مطالبة التوليد (Generation Prompt)</h1>
+<blockquote>
+<p>تعليمات النظام: يحتوي هذا المستند على التوجيهات التفصيلية للذكاء الاصطناعي لتوليد وثيقة «خطة إدارة المشروع».
+عند طلب صياغة أو استيفاء هذا النموذج، اتبع الإرشادات المحددة لكل قسم بدقة واحترافية،
+مع مراعاة سياق المشروع والمتغيرات المرجعية في <code>parameters.md</code>.</p>
+<p><strong>السياق والتعريف المهني:</strong>
+الوثيقة التكاملية الرئيسية التي تحدد كيفية تنفيذ المشروع ومراقبته والتحكم فيه وإغلاقه عبر جميع مجالات المعرفة.</p>
+<p><strong>المحاذاة وسلسلة الاعتماديات:</strong>
+* <strong>المدخلات (المتطلبات السابقة):</strong>
+  * <em>إلزامي:</em> ميثاق المشروع (PMO-03.01)، الخطط الفرعية للإدارة وخطوط الأساس المعتمدة
+  * <em>اختياري:</em> خطة التخصيص (PMO-02.01)، إطار حوكمة البرنامج (PMO-00.02)
+* <strong>المخرجات (النماذج التابعة):</strong>
+  * <em>إلزامي:</em> تنفيذ المشروع وتقارير الحالة الدورية (PMO-06.01)، إدارة وضبط التغيير (PMO-05.03)
+  * <em>اختياري:</em> خارطة طريق المشروع (PMO-04.01.03)، تخطيط أسبوع العمل (PMO-04.03.10)</p>
+</blockquote>
+<hr />
+<h2 id="_1">دورة حياة المشروع</h2>
+<h3 id="_2">وصف دورة حياة المشروع</h3>
+<p><strong>التعليمات:</strong> توصيف مراحل دورة حياة المشروع المختارة ومسارات الانتقال والتقدم الشامل.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_3">مسميات المراحل وتتابعها</h3>
+<p><strong>التعليمات:</strong> الترتيب المحدد لمراحل المشروع وحدودها الفاصلة من البداية وحتى الإغلاق.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_4">الأنشطة الرئيسية للمراحل</h3>
+<p><strong>التعليمات:</strong> الأنشطة الإدارية والفنية الرئيسية المنفذة خلال كل مرحلة من مراحل المشروع.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_5">التسليمات الرئيسية للمراحل</h3>
+<p><strong>التعليمات:</strong> المخرجات المعتمدة والمعالم التسليمية الأساسية المنتجة خلال كل مرحلة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_6">مراجعات ومعايير المراحل</h2>
+<h3 id="_7">آلية مراجعة المراحل</h3>
+<p><strong>التعليمات:</strong> بوابات الحوكمة ونقاط اتخاذ القرار المعتمدة للفصل بين مراحل المشروع.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_8">معايير الدخول إلى المرحلة</h3>
+<p><strong>التعليمات:</strong> المتطلبات الأساسية والجاهزية الإلزامية الواجب توفرها قبل بدء كل مرحلة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_9">معايير الخروج من المرحلة</h3>
+<p><strong>التعليمات:</strong> معايير القبول والاعتمادات الرسمية المطلوبة لإغلاق المرحلة والانتقال للتالية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_10">مناهج التطوير</h2>
+<h3 id="_11">منهج التطوير المختار</h3>
+<p><strong>التعليمات:</strong> المبررات المهنية لاختيار المنهج التنبؤي أو التكيفي الرشيق أو الهجين.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_12">مناهج التطوير حسب التسليمات</h3>
+<p><strong>التعليمات:</strong> تخصيص منهجيات التطوير المتبعة لتناسب طبيعة كل تسليم ومخرج محدد.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_13">خطط الإدارة الفرعية</h2>
+<h3 id="_14">ملخص إدارة النطاق والمتطلبات</h3>
+<p><strong>التعليمات:</strong> ملخص تكامل تحديد النطاق وضبط خط الأساس وتتبع المتطلبات المعتمدة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_15">ملخص إدارة الجدول والتكلفة</h3>
+<p><strong>التعليمات:</strong> ملخص تكامل تطوير الجدول الزمني وإعداد الميزانية وعتبات التباين.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_16">ملخص إدارة الجودة والموارد</h3>
+<p><strong>التعليمات:</strong> ملخص تكامل معايير الجودة وتوفير الموارد وتطوير كفاءات الفريق.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_17">ملخص إدارة الاتصالات والمعنيين</h3>
+<p><strong>التعليمات:</strong> ملخص تكامل تدفق المعلومات وقنوات الاتصال وإشراك أصحاب المصلحة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_18">ملخص إدارة المخاطر والمشتريات</h3>
+<p><strong>التعليمات:</strong> ملخص تكامل استجابات المخاطر وإدارة العقود وعلاقات الموردين.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_19">ملخص إدارة التغيير والتهيئة</h3>
+<p><strong>التعليمات:</strong> ملخص تكامل إجراءات التحكم في التغيير وإدارة التكوين والضبط.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_20">عتبات التباين والانحراف</h2>
+<h3 id="_21">عتبة تباين النطاق</h3>
+<p><strong>التعليمات:</strong> الحدود المقبولة لانحراف النطاق قبل تفعيل طلبات التغيير الرسمية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_22">عتبة تباين الجدول الزمني</h3>
+<p><strong>التعليمات:</strong> حدود التباين الزمني المسموح بها قبل اتخاذ إجراءات تصحيح المسار الزمني.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_23">عتبة تباين التكلفة</h3>
+<p><strong>التعليمات:</strong> النسب المئوية والحدود المالية المقبولة للانحراف قبل تصعيد الميزانية.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h2 id="_24">خطوط الأساس للمشروع</h2>
+<h3 id="_25">تعريف خط الأساس للنطاق</h3>
+<p><strong>التعليمات:</strong> بيان نطاق المشروع المعتمد وهيكل تجزئة العمل وقاموس الهيكل المرتبط به.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_26">تعريف خط الأساس للجدول الزمني</h3>
+<p><strong>التعليمات:</strong> نموذج الجدول الزمني المعتمد وتواريخ البداية والنهاية لخط الأساس.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="_27">تعريف خط الأساس للتكلفة</h3>
+<p><strong>التعليمات:</strong> الميزانية المعتمدة الموزعة زمنياً للمشروع باستثناء احتياطي الإدارة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<h3 id="pmb">خط أساس قياس الأداء (PMB)</h3>
+<p><strong>التعليمات:</strong> التكامل المعتمد بين خطوط الأساس للنطاق والجدول والتكلفة لإدارة القيمة المكتسبة.</p>
+<p><strong>القيمة المولَّدة:</strong> [ أضف التفاصيل... ]</p>
+<hr />
+          </div>
+        </div>
+
+        <!-- Tab 4: Example -->
+        <div id="tab-example" class="tab-pane" role="tabpanel">
+
+          <!-- Deliverable Header Card & Badge Row -->
+          <div class="deliverable-header-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <div class="deliverable-badge-row">
+                <span class="badge badge-code">PMO-04.01.01</span>
+                <span class="badge badge-phase">المرحلة 04: التخطيط</span>
+                <span class="badge badge-example">دراسة حالة واقعية مكتملة</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn-utility" onclick="window.print()">
+                  🖨️ طباعة / PDF
+                </button>
+                <button class="btn-utility" onclick="navigator.clipboard.writeText(document.getElementById('example-prose').innerText); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ النص', 2000);">
+                  📋 نسخ النص
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Control Meta Strip -->
+          <div class="doc-meta-bar">
+<div class="doc-meta-chip"><div class="meta-chip-label">تاريخ الإعداد</div><div class="meta-chip-val">2026-03-15</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">مدير المشروع</div><div class="meta-chip-val">م. فيصل الحربي، PMP</div></div>
+<div class="doc-meta-chip"><div class="meta-chip-label">تم الإعداد بواسطة</div><div class="meta-chip-val">م. فيصل الحربي، PMP (مدير المشروع)</div></div>
+</div>
+
+          <!-- Form Sheet & Rendered Document Prose -->
+          <div class="form-viewer-container markdown-body" id="example-prose" style="line-height: 1.85;">
+            <h1 id="_1">خطة إدارة المشروع (نموذج تطبيقي معبأ)</h1>
+<blockquote>
+<p>🏆 <strong>نموذج استرشادي مكتمل (Gold Standard):</strong> يوضح هذا المستند التطبيق العملي المتكامل لهذا النموذج وفق معايير تسليمات (<code>PMO-04.01</code>). كافة الأسماء والبيانات الواردة هي لأغراض العرض التوضيحي والمحاكاة المؤسسية الفرضية.</p>
+</blockquote>
+<hr />
+<h3 align="left">شركة القمة للحلول المؤسسية المتقدمة</h3>
+<h2 align="left">مشروع المنظومة السحابية الموحدة لتخطيط الموارد وسلاسل الإمداد - PRJ-2026-ERP-01</h2>
+<h1 align="center">خطة إدارة المشروع</h1>
+
+<hr />
+<h2 id="1">1. دورة حياة المشروع</h2>
+<p><strong>وصف دورة حياة المشروع:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>مسميات المراحل وتتابعها:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>الأنشطة الرئيسية للمراحل:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>التسليمات الرئيسية للمراحل:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h2 id="2">2. مراجعات ومعايير المراحل</h2>
+<p><strong>آلية مراجعة المراحل:</strong>
+معايير الخروج والقبول النهائي:
+1. اجتياز اختبارات قبول المستخدمين بنسبة 100% وإغلاق كافة الملاحظات عالية الخطورة.
+2. اكتمال ترحيل البيانات ومطابقتها وتوقيع محاضر الاستلام من الإدارة المالية والعمليات.
+3. إتمام تدريب 95% على الأقل من المستخدمين المستهدفين واجتيازهم لتقييم الكفاءة.
+4. استقرار النظام في بيئة الإنتاج لمدة 30 يوماً متواصلة دون انقطاعات حرجة.</p>
+<p><strong>معايير الدخول إلى المرحلة:</strong>
+معايير الخروج والقبول النهائي:
+1. اجتياز اختبارات قبول المستخدمين بنسبة 100% وإغلاق كافة الملاحظات عالية الخطورة.
+2. اكتمال ترحيل البيانات ومطابقتها وتوقيع محاضر الاستلام من الإدارة المالية والعمليات.
+3. إتمام تدريب 95% على الأقل من المستخدمين المستهدفين واجتيازهم لتقييم الكفاءة.
+4. استقرار النظام في بيئة الإنتاج لمدة 30 يوماً متواصلة دون انقطاعات حرجة.</p>
+<p><strong>معايير الخروج من المرحلة:</strong>
+معايير الخروج والقبول النهائي:
+1. اجتياز اختبارات قبول المستخدمين بنسبة 100% وإغلاق كافة الملاحظات عالية الخطورة.
+2. اكتمال ترحيل البيانات ومطابقتها وتوقيع محاضر الاستلام من الإدارة المالية والعمليات.
+3. إتمام تدريب 95% على الأقل من المستخدمين المستهدفين واجتيازهم لتقييم الكفاءة.
+4. استقرار النظام في بيئة الإنتاج لمدة 30 يوماً متواصلة دون انقطاعات حرجة.</p>
+<hr />
+<h2 id="3">3. مناهج التطوير</h2>
+<p><strong>منهج التطوير المختار:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>مناهج التطوير حسب التسليمات:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h2 id="4">4. خطط الإدارة الفرعية</h2>
+<p><strong>ملخص إدارة النطاق والمتطلبات:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>ملخص إدارة الجدول والتكلفة:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>ملخص إدارة الجودة والموارد:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>ملخص إدارة الاتصالات والمعنيين:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>ملخص إدارة المخاطر والمشتريات:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>ملخص إدارة التغيير والتهيئة:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h2 id="5">5. عتبات التباين والانحراف</h2>
+<p><strong>عتبة تباين النطاق:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>عتبة تباين الجدول الزمني:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>عتبة تباين التكلفة:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h2 id="6">6. خطوط الأساس للمشروع</h2>
+<p><strong>تعريف خط الأساس للنطاق:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>تعريف خط الأساس للجدول الزمني:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>تعريف خط الأساس للتكلفة:</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<p><strong>خط أساس قياس الأداء (PMB):</strong>
+تم توثيق هذا القسم واعتماده بالتفصيل وفق خطة المشروع التشغيلية لشركة القمة للحلول المؤسسية المتقدمة، بما يضمن التوافق الكامل مع أفضل ممارسات الحوكمة الصادرة عن مكتب إدارة المشاريع (PMO).</p>
+<hr />
+<h3 id="_2">الاعتماد والموافقات</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">الدور</th>
+<th style="text-align: right;">الاسم</th>
+<th style="text-align: right;">التوقيع</th>
+<th style="text-align: right;">التاريخ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>مدير المشروع</strong></td>
+<td style="text-align: right;">م. فيصل الحربي، PMP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مسؤول مكتب إدارة المشاريع</strong></td>
+<td style="text-align: right;">د. طارق المنصور، PfMP</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>راعي المشروع</strong></td>
+<td style="text-align: right;">د. منى الغامدي (نائب الرئيس لتقنية المعلومات)</td>
+<td style="text-align: right;">[معتمد إلكترونياً]</td>
+<td style="text-align: right;">2026-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">---</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<div align="left" style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">
+ <strong>القالب:</strong> خطة إدارة المشروع | <strong>المرجع:</strong> PMO-04.01.01 <br>
+ <i>تم التوليد في: 2026-03-15 10:00 بتوقيت مكة المكرمة، بواسطة <a href="https://github.com/fakhruldeen/Tasleemat/" style="color: #7f8c8d;">تسليمات</a></i>
+</div>
+          </div>
+        </div>
+
+
+        <!-- Tab 5: Schema -->
+        <div id="tab-schema" class="tab-pane" role="tabpanel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <h2 style="font-size: 1.3rem; margin-bottom: 0.25rem;">مخطط JSON Schema (معيار Draft 2020-12)</h2>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                العقد الرقمي المعياري لتمكين التحقق الآلي من بيانات التسليمة بواسطة أداة tasleemat.
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+                نسخ المخطط
+              </button>
+            </div>
+          </div>
+          <pre id="code-schema"><code>{
+  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+  &quot;$id&quot;: &quot;https://tasleemat.pmo/schemas/completed/PMO-04.01.01.schema.json&quot;,
+  &quot;title&quot;: &quot;Completed Project Management Plan Data Contract&quot;,
+  &quot;description&quot;: &quot;Additive structural schema validating completed Project Management Plan artifact data payloads (PMO-04.01.01).&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;artifact_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;const&quot;: &quot;PMO-04.01.01&quot;
+    },
+    &quot;metadata&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;project_name&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;project_code&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;date_prepared&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;format&quot;: &quot;date&quot;
+        },
+        &quot;project_manager&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;sponsor&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;version&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;status&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;enum&quot;: [
+            &quot;draft&quot;,
+            &quot;baselined&quot;,
+            &quot;in_revision&quot;,
+            &quot;superseded&quot;
+          ]
+        }
+      },
+      &quot;required&quot;: [
+        &quot;project_name&quot;,
+        &quot;date_prepared&quot;,
+        &quot;project_manager&quot;,
+        &quot;sponsor&quot;
+      ]
+    },
+    &quot;project_life_cycle&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;life_cycle_description&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 10
+        },
+        &quot;development_approach&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;enum&quot;: [
+            &quot;Predictive&quot;,
+            &quot;Agile&quot;,
+            &quot;Hybrid&quot;,
+            &quot;Iterative&quot;,
+            &quot;Incremental&quot;
+          ]
+        },
+        &quot;phase_gates&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;phase_name&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;key_deliverables&quot;: {
+                &quot;type&quot;: &quot;array&quot;,
+                &quot;items&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;minItems&quot;: 1
+              },
+              &quot;exit_criteria&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 5
+              }
+            },
+            &quot;required&quot;: [
+              &quot;phase_name&quot;,
+              &quot;key_deliverables&quot;,
+              &quot;exit_criteria&quot;
+            ]
+          },
+          &quot;minItems&quot;: 1
+        }
+      },
+      &quot;required&quot;: [
+        &quot;life_cycle_description&quot;,
+        &quot;development_approach&quot;,
+        &quot;phase_gates&quot;
+      ]
+    },
+    &quot;baselines_summary&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;scope_baseline_summary&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 10
+        },
+        &quot;schedule_baseline_summary&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 10
+        },
+        &quot;cost_baseline_summary&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 10
+        }
+      },
+      &quot;required&quot;: [
+        &quot;scope_baseline_summary&quot;,
+        &quot;schedule_baseline_summary&quot;,
+        &quot;cost_baseline_summary&quot;
+      ]
+    },
+    &quot;governance_and_reviews&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;change_management_process&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 10
+        },
+        &quot;performance_measurement_rules&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 10
+        }
+      },
+      &quot;required&quot;: [
+        &quot;change_management_process&quot;,
+        &quot;performance_measurement_rules&quot;
+      ]
+    }
+  },
+  &quot;required&quot;: [
+    &quot;artifact_id&quot;,
+    &quot;metadata&quot;,
+    &quot;project_life_cycle&quot;,
+    &quot;baselines_summary&quot;,
+    &quot;governance_and_reviews&quot;
+  ]
+}</code></pre>
+          
+          <details style="margin-top: 1.5rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1rem;">
+            <summary style="font-size: 0.95rem; font-weight: 600; cursor: pointer; color: var(--accent-blue);">
+              📋 قاموس تعريفات حقول النموذج (المواصفة التفصيلية)
+            </summary>
+            <div style="display: flex; justify-content: flex-end; margin-top: 0.75rem; margin-bottom: 0.5rem;">
+              <button class="btn-utility" onclick="copySnippet(this, 'code-fields')">
+                نسخ تعريفات الحقول
+              </button>
+            </div>
+            <pre id="code-fields"><code>{
+  &quot;form_name&quot;: &quot;PROJECT MANAGEMENT PLAN&quot;,
+  &quot;document_reference&quot;: &quot;PMO-04.01.01&quot;,
+  &quot;_llm_instructions&quot;: &quot;Populate the fields of &#x27;PROJECT MANAGEMENT PLAN&#x27; and write the value of each field under &#x27;Generated Value&#x27;, based on the project context. Context: the project carrying reference PMO-04.01.01.&quot;,
+  &quot;project_title&quot;: &quot;&quot;,
+  &quot;date_prepared&quot;: &quot;&quot;,
+  &quot;fields&quot;: {
+    &quot;f01_Project_Life_Cycle_Description&quot;: {
+      &quot;section&quot;: &quot;Project Life Cycle&quot;,
+      &quot;label&quot;: &quot;Project Life Cycle Description&quot;,
+      &quot;guidance&quot;: &quot;Description of the chosen life cycle phases, transitions, and overarching progression.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f02_Phase_Names_and_Progression&quot;: {
+      &quot;section&quot;: &quot;Project Life Cycle&quot;,
+      &quot;label&quot;: &quot;Phase Names and Progression&quot;,
+      &quot;guidance&quot;: &quot;Defined sequence and boundaries of project phases from inception to closeout.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f03_Key_Phase_Activities&quot;: {
+      &quot;section&quot;: &quot;Project Life Cycle&quot;,
+      &quot;label&quot;: &quot;Key Phase Activities&quot;,
+      &quot;guidance&quot;: &quot;Major technical and managerial activities executed across each project phase.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f04_Key_Phase_Deliverables&quot;: {
+      &quot;section&quot;: &quot;Project Life Cycle&quot;,
+      &quot;label&quot;: &quot;Key Phase Deliverables&quot;,
+      &quot;guidance&quot;: &quot;Core verified outputs and milestone deliverables generated within each phase.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f05_Phase_Review_Mechanism&quot;: {
+      &quot;section&quot;: &quot;Phase Reviews and Criteria&quot;,
+      &quot;label&quot;: &quot;Phase Review Mechanism&quot;,
+      &quot;guidance&quot;: &quot;Governance gates, health checks, and decision points conducted between phases.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f06_Phase_Entry_Criteria&quot;: {
+      &quot;section&quot;: &quot;Phase Reviews and Criteria&quot;,
+      &quot;label&quot;: &quot;Phase Entry Criteria&quot;,
+      &quot;guidance&quot;: &quot;Mandatory readiness prerequisites and inputs required before entering each phase.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f07_Phase_Exit_Criteria&quot;: {
+      &quot;section&quot;: &quot;Phase Reviews and Criteria&quot;,
+      &quot;label&quot;: &quot;Phase Exit Criteria&quot;,
+      &quot;guidance&quot;: &quot;Specific acceptance standards and approvals needed to formally close each phase.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f08_Selected_Development_Approach&quot;: {
+      &quot;section&quot;: &quot;Development Approaches&quot;,
+      &quot;label&quot;: &quot;Selected Development Approach&quot;,
+      &quot;guidance&quot;: &quot;Justification for predictive, agile, hybrid, iterative, or incremental delivery.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f09_Deliverable_Specific_Approaches&quot;: {
+      &quot;section&quot;: &quot;Development Approaches&quot;,
+      &quot;label&quot;: &quot;Deliverable-Specific Approaches&quot;,
+      &quot;guidance&quot;: &quot;Tailored development methodologies mapped to distinct deliverable types.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f10_Scope_and_Requirements_Management_Summary&quot;: {
+      &quot;section&quot;: &quot;Subsidiary Management Plans&quot;,
+      &quot;label&quot;: &quot;Scope and Requirements Management Summary&quot;,
+      &quot;guidance&quot;: &quot;Integration summary of scope definition, baseline control, and requirements tracing.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f11_Schedule_and_Cost_Management_Summary&quot;: {
+      &quot;section&quot;: &quot;Subsidiary Management Plans&quot;,
+      &quot;label&quot;: &quot;Schedule and Cost Management Summary&quot;,
+      &quot;guidance&quot;: &quot;Integration summary of schedule development, budgeting, and variance thresholds.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f12_Quality_and_Resource_Management_Summary&quot;: {
+      &quot;section&quot;: &quot;Subsidiary Management Plans&quot;,
+      &quot;label&quot;: &quot;Quality and Resource Management Summary&quot;,
+      &quot;guidance&quot;: &quot;Integration summary of quality standards, staffing, and team development.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f13_Communications_and_Stakeholder_Summary&quot;: {
+      &quot;section&quot;: &quot;Subsidiary Management Plans&quot;,
+      &quot;label&quot;: &quot;Communications and Stakeholder Summary&quot;,
+      &quot;guidance&quot;: &quot;Integration summary of information distribution and stakeholder engagement.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f14_Risk_and_Procurement_Summary&quot;: {
+      &quot;section&quot;: &quot;Subsidiary Management Plans&quot;,
+      &quot;label&quot;: &quot;Risk and Procurement Summary&quot;,
+      &quot;guidance&quot;: &quot;Integration summary of risk mitigation and vendor procurement management.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f15_Change_and_Configuration_Summary&quot;: {
+      &quot;section&quot;: &quot;Subsidiary Management Plans&quot;,
+      &quot;label&quot;: &quot;Change and Configuration Summary&quot;,
+      &quot;guidance&quot;: &quot;Integration summary of change control procedures and configuration management.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f16_Scope_Variance_Threshold&quot;: {
+      &quot;section&quot;: &quot;Variance Thresholds&quot;,
+      &quot;label&quot;: &quot;Scope Variance Threshold&quot;,
+      &quot;guidance&quot;: &quot;Defined boundary for allowable scope variance before triggering formal change control.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f17_Schedule_Variance_Threshold&quot;: {
+      &quot;section&quot;: &quot;Variance Thresholds&quot;,
+      &quot;label&quot;: &quot;Schedule Variance Threshold&quot;,
+      &quot;guidance&quot;: &quot;Permissible schedule variance limits before mandatory schedule recovery actions.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f18_Cost_Variance_Threshold&quot;: {
+      &quot;section&quot;: &quot;Variance Thresholds&quot;,
+      &quot;label&quot;: &quot;Cost Variance Threshold&quot;,
+      &quot;guidance&quot;: &quot;Authorized percentage or financial variance limits before budget escalation.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f19_Scope_Baseline_Definition&quot;: {
+      &quot;section&quot;: &quot;Project Baselines&quot;,
+      &quot;label&quot;: &quot;Scope Baseline Definition&quot;,
+      &quot;guidance&quot;: &quot;The approved project scope statement, WBS, and associated WBS dictionary.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f20_Schedule_Baseline_Definition&quot;: {
+      &quot;section&quot;: &quot;Project Baselines&quot;,
+      &quot;label&quot;: &quot;Schedule Baseline Definition&quot;,
+      &quot;guidance&quot;: &quot;The authorized project schedule model with baseline start and finish dates.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f21_Cost_Baseline_Definition&quot;: {
+      &quot;section&quot;: &quot;Project Baselines&quot;,
+      &quot;label&quot;: &quot;Cost Baseline Definition&quot;,
+      &quot;guidance&quot;: &quot;The approved time-phased project budget excluding management reserves.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;f22_Performance_Measurement_Baseline_PMB&quot;: {
+      &quot;section&quot;: &quot;Project Baselines&quot;,
+      &quot;label&quot;: &quot;Performance Measurement Baseline (PMB)&quot;,
+      &quot;guidance&quot;: &quot;Integrated scope-schedule-cost baseline used for earned value management.&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  }
+}</code></pre>
+          </details>
+          
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <!-- Quick Installation & GitHub Repository Bar -->
+      <div class="footer-quick-bar">
+        <div class="footer-pip-box">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
+            تثبيت الحزمة عبر pip:
+          </span>
+          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
+          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ', 2000);">
+            نسخ
+          </button>
+        </div>
+        <div class="footer-links-row">
+          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+            📦 حزمة PyPI (v2.5.0.post1)
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            مستودع GitHub للمشروع
+          </a>
+          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            💬 إبلاغ عن ملاحظة
+          </a>
+        </div>
+      </div>
+
+      <!-- Author Profile Card -->
+      <div class="footer-author-card">
+        <div class="author-info-group">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fouad Fakhruldeen" class="author-avatar" loading="lazy" />
+          <div class="author-details">
+            <div class="author-name">محمد فؤاد فخر الدين</div>
+            <div class="author-bio">
+              مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي.
+            </div>
+          </div>
+        </div>
+        <div class="author-links-group">
+          <a href="https://fakhr.me" target="_blank" rel="noopener" class="author-btn">
+            🌐 fakhr.me
+          </a>
+          <a href="https://www.linkedin.com/in/fakhruldeen" target="_blank" rel="noopener" class="author-btn linkedin" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/fakhruldeen" target="_blank" rel="noopener" class="author-btn" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-heading">📦 تسليمات</div>
+          <p style="margin-bottom: 1rem;">تسليمات هي مكتبة تسليمات مفتوحة ثنائية اللغة ومجموعة أدوات مساندة. وليست برنامج مكتب إدارة مشاريع مباشر أو جهة اعتماد.</p>
+
+          <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>
+        </div>
+        <div>
+          <div class="footer-heading">التنقل</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/start/">ابدأ هنا</a></li>
+            <li><a href="/Tasleemat/deliverables/">التسليمات (114)</a></li>
+            <li><a href="/Tasleemat/tailoring/">مستويات الحوكمة</a></li>
+            <li><a href="/Tasleemat/guides/">الأدلة الرئيسية</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">التقنية والذكاء الاصطناعي</div>
+          <ul class="footer-links">
+            <li><a href="/Tasleemat/developers/">بوابة المطورين</a></li>
+            <li><a href="/Tasleemat/developers/cli/">أداة سطر الأوامر</a></li>
+            <li><a href="/Tasleemat/developers/sdk/">مكتبة بايثون</a></li>
+            <li><a href="/Tasleemat/developers/mcp/">خادم MCP</a></li>
+            <li><a href="/Tasleemat/developers/schemas/">مخططات JSON</a></li>
+            <li><a href="/Tasleemat/developers/agentic/">أسراب الوكلاء وبوابات CI/CD</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">المجتمع والسياسات</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.35rem;"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg> GitHub</a></li>
+            <li><a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener">📦 PyPI Package</a></li>
+            <li><a href="/Tasleemat/guides/#governance">سياسات الحوكمة</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tasleemat Project. Open Knowledge Framework & MIT License.</div>
+        <div>114 Deliverables • 228 Language Bundles • 114 Draft 2020-12 Schemas</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+
+// Tasleemat Portal Runtime Scripts
+(function() {
+  // Theme Toggle Support
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tasleemat-theme', next);
+    });
+  }
+
+  // Interactive Tabs Controller
+  window.switchTab = function(evt, tabId) {
+    const btn = evt.currentTarget || (evt.target && evt.target.closest('.tab-btn'));
+    const parent = btn ? btn.closest('.tabs-container') : (evt.target && evt.target.closest('.tabs-container'));
+    if (!parent) return;
+    
+    parent.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    if (btn) {
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+    }
+    const targetPane = parent.querySelector('#' + tabId) || document.getElementById(tabId);
+    if (targetPane) targetPane.classList.add('active');
+  };
+
+  // Copy to Clipboard
+  window.copySnippet = function(btn, snippetId) {
+    const el = document.getElementById(snippetId);
+    if (!el) return;
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = orig; }, 2000);
+    });
+  };
+
+  // Render Mermaid diagrams automatically
+  document.addEventListener("DOMContentLoaded", function() {
+    // Convert any pre.code.language-mermaid into div.mermaid
+    document.querySelectorAll("pre code.language-mermaid, pre code.mermaid").forEach(function(codeBlock) {
+      var pre = codeBlock.closest("pre");
+      var mermaidDiv = document.createElement("div");
+      mermaidDiv.className = "mermaid";
+      mermaidDiv.textContent = codeBlock.textContent;
+      if (pre && pre.parentNode) {
+        pre.parentNode.replaceChild(mermaidDiv, pre);
+      }
+    });
+
+    if (window.mermaid) {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: isDark ? "dark" : "neutral",
+        securityLevel: "loose",
+        flowchart: { useMaxWidth: true, htmlLabels: true }
+      });
+    }
+  });
+})();
+
+  </script>
+  
+</body>
+</html>
