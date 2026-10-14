@@ -423,6 +423,67 @@ class TestWebsiteRedesign(unittest.TestCase):
             self.assertIn(f'<link rel="canonical" href="{canonical_url}">', html, f"Missing canonical in {rel_path}")
             self.assertIn('<meta name="author" content="Mohamed Fouad Fakhruldeen">', html, f"Missing author in {rel_path}")
 
+    def test_deliverable_user_guides_and_prompts_markdown_rendered(self):
+        """Verifies that Tab 3 (User Guide) and Tab 4 (LLM Prompt) render rich, styled HTML without raw markdown syntax."""
+        import glob
+        import re
+
+        deliverable_pages = glob.glob(str(SITE_DIR / "deliverables" / "*" / "index.html")) + \
+                            glob.glob(str(SITE_DIR / "ar" / "deliverables" / "*" / "index.html"))
+        self.assertEqual(len(deliverable_pages), 228, "Must verify all 228 deliverable detail pages")
+
+        for page_path in deliverable_pages:
+            content = pathlib.Path(page_path).read_text(encoding="utf-8")
+
+            # Check Guide tab
+            g_match = re.search(r'<div id="tab-guide"[^>]*>(.*?)</div>\s*</div>\s*<!-- Tab:', content, re.DOTALL)
+            self.assertIsNotNone(g_match, f"tab-guide missing in {page_path}")
+            g_html = g_match.group(1)
+            self.assertNotIn("## Tasleemat Forms Guide", g_html, f"Raw markdown unrendered in guide of {page_path}")
+            self.assertNotIn("## دليل نماذج تسليمات", g_html, f"Raw Arabic markdown unrendered in guide of {page_path}")
+            self.assertFalse(bool(re.search(r'(?:^|\n)##\s+', g_html)), f"Found unparsed heading ## in guide of {page_path}")
+
+            # Check Prompt tab
+            p_match = re.search(r'<div id="tab-prompt"[^>]*>(.*?)</div>\s*</div>\s*<!-- Tab', content, re.DOTALL)
+            self.assertIsNotNone(p_match, f"tab-prompt missing in {page_path}")
+            p_html = p_match.group(1)
+            self.assertFalse(bool(re.search(r'<!--\s*(?:System Instructions|تعليمات النظام)', p_html)),
+                             f"Hidden HTML system comment in prompt of {page_path}")
+            self.assertFalse(bool(re.search(r'(?:^|\n)##\s+', p_html)), f"Found unparsed heading ## in prompt of {page_path}")
+
+    def test_deliverable_schemas_draft_2020_12_and_tab_structure(self):
+        """Verifies that all 114 deliverable pages embed the Draft 2020-12 schema and tabs are properly structured."""
+        import glob
+        import re
+
+        deliverable_pages = glob.glob(str(SITE_DIR / "deliverables" / "*" / "index.html")) + \
+                            glob.glob(str(SITE_DIR / "ar" / "deliverables" / "*" / "index.html"))
+        self.assertEqual(len(deliverable_pages), 228, "Must verify all 228 deliverable detail pages")
+
+        for page_path in deliverable_pages:
+            content = pathlib.Path(page_path).read_text(encoding="utf-8")
+
+            # 1. Total <div> balance in entire page
+            opens = len(content.split("<div")) - 1
+            closes = len(content.split("</div>")) - 1
+            self.assertEqual(opens, closes, f"Unbalanced <div> tags in {page_path}: opens={opens}, closes={closes}")
+
+            # 2. Verify tab-schema is NOT trapped inside tab-example
+            idx_example = content.find('id="tab-example"')
+            idx_schema = content.find('id="tab-schema"')
+            self.assertTrue(idx_example != -1 and idx_schema != -1, f"Missing tabs in {page_path}")
+            snippet = content[idx_example:idx_schema]
+            snip_opens = len(re.findall(r'<div\b', snippet))
+            snip_closes = len(re.findall(r'</div>', snippet))
+            self.assertEqual(snip_opens, snip_closes, f"tab-schema trapped inside tab-example in {page_path}")
+
+            # 3. Verify Draft 2020-12 schema presence in code-schema
+            s_match = re.search(r'<pre id="code-schema"><code>(.*?)</code></pre>', content, re.DOTALL)
+            self.assertIsNotNone(s_match, f"code-schema missing in {page_path}")
+            schema_txt = s_match.group(1)
+            self.assertIn("https://json-schema.org/draft/2020-12/schema", schema_txt,
+                          f"Draft 2020-12 dialect missing from schema in {page_path}")
+
 
 if __name__ == "__main__":
     unittest.main()

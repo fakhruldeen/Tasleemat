@@ -142,6 +142,14 @@ def compile_all_deliverables(artifacts_summary):
         example_ar = tasleemat.get_artifact_asset(art_id, "example", lang="ar")
         prompt_ar = tasleemat.get_artifact_asset(art_id, "prompt", lang="ar")
         
+        # Load Draft 2020-12 schema
+        completed_schema_file = ROOT / "tasleemat" / "schemas" / "completed" / f"{art_id}.schema.json"
+        if completed_schema_file.exists():
+            with open(completed_schema_file, "r", encoding="utf-8") as sf:
+                draft_schema = json.load(sf)
+        else:
+            draft_schema = schema_text
+
         # English Detail Page
         en_out_dir = SITE_DIR / "deliverables" / art_id
         en_out_dir.mkdir(parents=True, exist_ok=True)
@@ -150,8 +158,9 @@ def compile_all_deliverables(artifacts_summary):
             template_content=template_en,
             guide_content=guide_en,
             example_content=example_en,
-            schema_content=schema_text,
+            schema_content=draft_schema,
             prompt_content=prompt_en,
+            fields_content=schema_text,
             lang="en",
             base_url=BASE_URL
         )
@@ -166,8 +175,9 @@ def compile_all_deliverables(artifacts_summary):
             template_content=template_ar,
             guide_content=guide_ar,
             example_content=example_ar,
-            schema_content=schema_text,
+            schema_content=draft_schema,
             prompt_content=prompt_ar,
+            fields_content=schema_text,
             lang="ar",
             base_url=BASE_URL
         )

@@ -50,12 +50,46 @@ def strip_yaml_frontmatter(md_text: str) -> str:
     txt = re.sub(r"(<div class=\"lang-switch-bar\">.*?</div>\s*)\n*---\s*\n.*?\n---\s*", r"\1\n", txt, flags=re.DOTALL)
     return txt
 
-def _clean_example_content(md_text: str):
+def clean_guide_content(md_text: str) -> str:
+    """Clean markdown frontmatter and outer HTML wrappers from user guides."""
+    txt = strip_yaml_frontmatter(md_text)
+    txt = re.sub(r"^\s*<div[^>]*>\s*", "", txt)
+    opens = len(re.findall(r"<div\b", txt))
+    closes = len(re.findall(r"</div>", txt))
+    if closes > opens:
+        txt = re.sub(r"\s*</div>\s*$", "", txt)
+    txt = re.sub(r"^\s*<div[^>]*>\s*$", "", txt, flags=re.MULTILINE)
+    txt = re.sub(r"^\s*</div>\s*$", "", txt, flags=re.MULTILINE)
+    return txt.strip()
+
+def clean_prompt_content(md_text: str) -> str:
+    """Clean markdown frontmatter, wrappers, and convert HTML comment instructions to rendered blockquotes."""
+    txt = strip_yaml_frontmatter(md_text)
+    txt = re.sub(r"^\s*<div[^>]*>\s*", "", txt)
+    opens = len(re.findall(r"<div\b", txt))
+    closes = len(re.findall(r"</div>", txt))
+    if closes > opens:
+        txt = re.sub(r"\s*</div>\s*$", "", txt)
+    txt = re.sub(r"^\s*<div[^>]*>\s*$", "", txt, flags=re.MULTILINE)
+    txt = re.sub(r"^\s*</div>\s*$", "", txt, flags=re.MULTILINE)
+    
+    def _comment_to_blockquote(match):
+        inner = match.group(1).strip()
+        lines = inner.splitlines()
+        return "\n".join(["> " + l for l in lines]) + "\n"
+        
+    txt = re.sub(r"<!--\s*(.*?)\s*-->", _comment_to_blockquote, txt, flags=re.DOTALL)
+    return txt.strip()
+
+def _clean_example_content(md_text: str) -> str:
     """Clean markdown frontmatter, wrappers, and remove redundant metadata table to render inside styled form container."""
     txt = strip_yaml_frontmatter(md_text)
             
     txt = re.sub(r"^\s*<div[^>]*>\s*", "", txt)
-    txt = re.sub(r"\s*</div>\s*$", "", txt)
+    opens = len(re.findall(r"<div\b", txt))
+    closes = len(re.findall(r"</div>", txt))
+    if closes > opens:
+        txt = re.sub(r"\s*</div>\s*$", "", txt)
     
     lines = txt.splitlines()
     new_lines = []
@@ -295,8 +329,9 @@ def generate_detail_page(
     template_content: str,
     guide_content: str,
     example_content: str,
-    schema_content: str,
+    schema_content: Any,
     prompt_content: str = "",
+    fields_content: Any = None,
     lang: str = "en",
     base_url: str = "/Tasleemat"
 ) -> str:
@@ -316,12 +351,12 @@ def generate_detail_page(
     unique_packs = sorted(list(set(packs_list)))
     pack_badges = " ".join([f'<span class="tag pack">{p}</span>' for p in unique_packs])
 
-    # Clean frontmatter from template, guide, and prompt
+    # Clean frontmatter and outer wrappers from template, guide, and prompt
     cleaned_template_content = strip_yaml_frontmatter(template_content)
-    cleaned_guide_content = strip_yaml_frontmatter(guide_content)
-    cleaned_prompt_content = strip_yaml_frontmatter(prompt_content)
+    cleaned_guide_content = clean_guide_content(guide_content)
+    cleaned_prompt_content = clean_prompt_content(prompt_content)
 
-    # Convert markdown contents safely to HTML
+    # Convert markdown contents safely to rich HTML
     rendered_guide_html = markdown.markdown(cleaned_guide_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
     rendered_prompt_html = markdown.markdown(cleaned_prompt_content, extensions=['tables', 'fenced_code', 'toc', 'attr_list', 'admonition'])
 
@@ -340,7 +375,7 @@ def generate_detail_page(
         ])
         chips_html = f'<div class="doc-meta-bar">\n{chips_inner}\n</div>'
 
-    # Format JSON schema cleanly
+    # Format Draft 2020-12 JSON schema cleanly
     if isinstance(schema_content, dict):
         formatted_schema_json = json.dumps(schema_content, indent=2, ensure_ascii=False)
     else:
@@ -349,6 +384,17 @@ def generate_detail_page(
             formatted_schema_json = json.dumps(parsed_schema, indent=2, ensure_ascii=False)
         except Exception:
             formatted_schema_json = str(schema_content)
+
+    formatted_fields_json = ""
+    if fields_content and fields_content != schema_content:
+        if isinstance(fields_content, dict):
+            formatted_fields_json = json.dumps(fields_content, indent=2, ensure_ascii=False)
+        else:
+            try:
+                parsed_f = json.loads(fields_content)
+                formatted_fields_json = json.dumps(parsed_f, indent=2, ensure_ascii=False)
+            except Exception:
+                formatted_fields_json = str(fields_content)
 
 
     content = f"""
@@ -509,13 +555,33 @@ def generate_detail_page(
 
         <!-- Tab 5: Schema -->
         <div id="tab-schema" class="tab-pane" role="tabpanel">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-            <h2 style="font-size: 1.3rem;">{"Draft 2020-12 JSON Schema" if not is_ar else "مخطط JSON Schema (معيار Draft 2020-12)"}</h2>
-            <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
-              {"Copy JSON Schema" if not is_ar else "نسخ المخطط"}
-            </button>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <h2 style="font-size: 1.3rem; margin-bottom: 0.25rem;">{"Draft 2020-12 JSON Schema" if not is_ar else "مخطط JSON Schema (معيار Draft 2020-12)"}</h2>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                {"Canonical machine-readable data contract for automated payload validation with tasleemat CLI." if not is_ar else "العقد الرقمي المعياري لتمكين التحقق الآلي من بيانات التسليمة بواسطة أداة tasleemat."}
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <button class="btn-utility" id="btn-copy-schema" onclick="copySnippet(this, 'code-schema')">
+                {"Copy JSON Schema" if not is_ar else "نسخ المخطط"}
+              </button>
+            </div>
           </div>
           <pre id="code-schema"><code>{html.escape(formatted_schema_json)}</code></pre>
+          {f'''
+          <details style="margin-top: 1.5rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1rem;">
+            <summary style="font-size: 0.95rem; font-weight: 600; cursor: pointer; color: var(--accent-blue);">
+              {"📋 Form Field Definitions Dictionary (Legacy Specification)" if not is_ar else "📋 قاموس تعريفات حقول النموذج (المواصفة التفصيلية)"}
+            </summary>
+            <div style="display: flex; justify-content: flex-end; margin-top: 0.75rem; margin-bottom: 0.5rem;">
+              <button class="btn-utility" onclick="copySnippet(this, 'code-fields')">
+                {"Copy Field Definitions" if not is_ar else "نسخ تعريفات الحقول"}
+              </button>
+            </div>
+            <pre id="code-fields"><code>{html.escape(formatted_fields_json)}</code></pre>
+          </details>
+          ''' if formatted_fields_json else ''}
         </div>
 
       </div>

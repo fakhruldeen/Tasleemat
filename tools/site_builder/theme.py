@@ -1182,14 +1182,21 @@ JAVASCRIPT_RUNTIME = """
 
   // Interactive Tabs Controller
   window.switchTab = function(evt, tabId) {
-    const parent = evt.target.closest('.tabs-container');
+    const btn = evt.currentTarget || (evt.target && evt.target.closest('.tab-btn'));
+    const parent = btn ? btn.closest('.tabs-container') : (evt.target && evt.target.closest('.tabs-container'));
     if (!parent) return;
     
-    parent.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    parent.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
     parent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
     
-    evt.target.classList.add('active');
-    const targetPane = document.getElementById(tabId);
+    if (btn) {
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+    }
+    const targetPane = parent.querySelector('#' + tabId) || document.getElementById(tabId);
     if (targetPane) targetPane.classList.add('active');
   };
 
