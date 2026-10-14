@@ -48,6 +48,8 @@ class TestWebsiteRedesign(unittest.TestCase):
             "ar/guides/index.html",
             "developers/index.html",
             "ar/developers/index.html",
+            "tailoring/index.html",
+            "ar/tailoring/index.html",
         ]
         for r in routes:
             page_path = SITE_DIR / r
@@ -268,8 +270,69 @@ class TestWebsiteRedesign(unittest.TestCase):
         self.assertIn("RFC 3339", html_en)
         self.assertIn("RFC 3339", html_ar)
 
+    def test_developer_subpages_exist(self):
+        """Verifies that all 5 developer sub-pages exist in both English and Arabic."""
+        subpages = ["cli", "sdk", "mcp", "schemas", "agentic"]
+        for sub in subpages:
+            en_page = ROOT / "site" / "developers" / sub / "index.html"
+            ar_page = ROOT / "site" / "ar" / "developers" / sub / "index.html"
+
+            self.assertTrue(en_page.exists(), f"Missing English developer subpage: {sub}")
+            self.assertTrue(ar_page.exists(), f"Missing Arabic developer subpage: {sub}")
+            self.assertGreater(en_page.stat().st_size, 5000, f"English subpage {sub} is suspiciously small")
+            self.assertGreater(ar_page.stat().st_size, 5000, f"Arabic subpage {sub} is suspiciously small")
+
+    def test_tailoring_page_structure_and_deliverable_links(self):
+        """Verifies that the dedicated /tailoring/ page lists deliverables with direct links."""
+        en_tailor = ROOT / "site" / "tailoring" / "index.html"
+        ar_tailor = ROOT / "site" / "ar" / "tailoring" / "index.html"
+
+        self.assertTrue(en_tailor.exists(), "English tailoring page must exist")
+        self.assertTrue(ar_tailor.exists(), "Arabic tailoring page must exist")
+
+        html_en = en_tailor.read_text(encoding="utf-8")
+        html_ar = ar_tailor.read_text(encoding="utf-8")
+
+        # Verify all tiers and packs mentioned
+        self.assertIn("Tier 1: Mega", html_en)
+        self.assertIn("المستوى 1: المشاريع الكبرى", html_ar)
+        self.assertIn("Tier 2: Standard Enterprise", html_en)
+        self.assertIn("المستوى 2: المشاريع القياسية", html_ar)
+        self.assertIn("Tier 3: Lean", html_en)
+        self.assertIn("المستوى 3: المشاريع الرشيقة", html_ar)
+
+        # Verify deliverable links
+        self.assertIn("/deliverables/PMO-03.01/", html_en)
+        self.assertIn("/ar/deliverables/PMO-03.01/", html_ar)
+        self.assertIn("/deliverables/PMO-01.01/", html_en)
+        self.assertIn("/ar/deliverables/PMO-01.01/", html_ar)
+
+    def test_homepage_section_ordering(self):
+        """Verifies that Honest Boundaries section was moved down right before the footer."""
+        html_en = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        html_ar = (ROOT / "site" / "ar" / "index.html").read_text(encoding="utf-8")
+
+        # In English: Lifecycle < Tiers < Boundaries < Footer
+        pos_en_life = html_en.find("8 Project Lifecycle Stages")
+        pos_en_tiers = html_en.find("Governance Sizing Tiers &amp; Delivery Packs")
+        pos_en_bounds = html_en.find("Honest Boundaries &amp; Scope")
+        pos_en_foot = html_en.find("<footer")
+
+        self.assertTrue(pos_en_life < pos_en_tiers < pos_en_bounds < pos_en_foot,
+                        f"English home section order violated: {pos_en_life}, {pos_en_tiers}, {pos_en_bounds}, {pos_en_foot}")
+
+        # In Arabic: Lifecycle < Tiers < Boundaries < Footer
+        pos_ar_life = html_ar.find("8 مراحل في دورة حياة المشروع")
+        pos_ar_tiers = html_ar.find("مستويات الحوكمة وحزم المنهجيات")
+        pos_ar_bounds = html_ar.find("حدود ونطاق مشروع تسليمات")
+        pos_ar_foot = html_ar.find("<footer")
+
+        self.assertTrue(pos_ar_life < pos_ar_tiers < pos_ar_bounds < pos_ar_foot,
+                        f"Arabic home section order violated: {pos_ar_life}, {pos_ar_tiers}, {pos_ar_bounds}, {pos_ar_foot}")
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 

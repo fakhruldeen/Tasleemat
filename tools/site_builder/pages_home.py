@@ -2,10 +2,10 @@
 Generates the Home pages in English and Arabic for the Tasleemat Portal.
 Includes:
 - Hero with accurate value proposition
-- Honest Boundaries table (What Tasleemat Provides vs What It Does Not Do)
 - Interactive 8-Phase Lifecycle Map (00 to 07)
-- Governance Sizing Tiers (1 Mega, 2 Standard, 3 Lean)
+- Governance Sizing Tiers (1 Mega, 2 Standard, 3 Lean) with link to dedicated /tailoring/ page
 - Methodology Archetype Packs (General, Agile, AI, Predictive, Hybrid)
+- Honest Boundaries table (What Tasleemat Provides vs What It Does Not Do) placed before the footer
 """
 
 from tools.site_builder.theme import render_html_page
@@ -120,38 +120,6 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
       </div>
     </section>
 
-    <!-- Honest Boundaries & Positioning -->
-    <section class="boundaries-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Honest Boundaries &amp; Scope</h2>
-          <p class="section-desc">Understand exactly what Tasleemat provides and what it does not do.</p>
-        </div>
-        <div class="boundaries-grid">
-          <div class="boundary-card provides">
-            <h3><span>✅</span> What Tasleemat Provides</h3>
-            <ul class="boundary-list">
-              <li><strong>114 Canonical Deliverables:</strong> Reusable markdown templates in English and Arabic so teams never start from blank sheets.</li>
-              <li><strong>Practitioner Guidance &amp; Examples:</strong> Step-by-step authoring guides, completed realistic examples, and bilingual glossaries.</li>
-              <li><strong>Governance Sizing &amp; Tailoring:</strong> Structured tailoring rules across 3 Sizing Tiers and 5 Delivery Archetype Packs.</li>
-              <li><strong>Machine-Readable Contracts:</strong> 114 companion JSON Schemas (Draft 2020-12) for automated validation.</li>
-              <li><strong>Developer &amp; AI Assistant Integration:</strong> Native Python SDK, CLI (<code>tasleemat</code>), and Model Context Protocol (MCP) server.</li>
-            </ul>
-          </div>
-          <div class="boundary-card limits">
-            <h3><span>❌</span> What Tasleemat Does Not Do</h3>
-            <ul class="boundary-list">
-              <li><strong>Not a Live PMO Application:</strong> Does not host or execute project tracking workflows, dashboards, or scheduling engines.</li>
-              <li><strong>Not an Approval Authority:</strong> Does not replace project steering committees, sponsors, or governance gates.</li>
-              <li><strong>Not a Certification Authority:</strong> Does not issue compliance seals, audits, or legal certifications.</li>
-              <li><strong>Not an Autonomous Project Agent:</strong> Does not autonomously make executive or contractual decisions.</li>
-              <li><strong>Not a Shared Database:</strong> Does not store your confidential project deliverables or sensitive operational data.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Lifecycle Map -->
     <section class="boundaries-section" style="background-color: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
       <div class="container">
@@ -165,7 +133,7 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
       </div>
     </section>
 
-    <!-- Governance Tiers & Packs -->
+    <!-- Governance Tiers & Packs Summary -->
     <section class="boundaries-section">
       <div class="container">
         <div class="section-header">
@@ -210,12 +178,47 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
 
         <div style="margin-top: 2.5rem; text-align: center;">
           <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Delivery Archetype Packs</h3>
-          <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+          <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.75rem;">
             <span class="tag pack">General Delivery</span>
             <span class="tag pack">Agile &amp; Scrum</span>
             <span class="tag pack">AI &amp; Machine Learning</span>
             <span class="tag pack">Predictive / Waterfall</span>
             <span class="tag pack">Hybrid Framework</span>
+          </div>
+          <a href="{base_url}/tailoring/" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.75rem;">
+            <span>Explore Governance Sizing Tiers &amp; Deliverable Lists &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honest Boundaries & Scope (Moved down before footer) -->
+    <section class="boundaries-section" style="background-color: var(--bg-card); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Honest Boundaries &amp; Scope</h2>
+          <p class="section-desc">Understand exactly what Tasleemat provides and what it does not do.</p>
+        </div>
+        <div class="boundaries-grid">
+          <div class="boundary-card provides">
+            <h3><span>✅</span> What Tasleemat Provides</h3>
+            <ul class="boundary-list">
+              <li><strong>114 Canonical Deliverables:</strong> Reusable markdown templates in English and Arabic so teams never start from blank sheets.</li>
+              <li><strong>Practitioner Guidance &amp; Examples:</strong> Step-by-step authoring guides, completed realistic examples, and bilingual glossaries.</li>
+              <li><strong>Governance Sizing &amp; Tailoring:</strong> Structured tailoring rules across 3 Sizing Tiers and 5 Delivery Archetype Packs.</li>
+              <li><strong>Machine-Readable Contracts:</strong> 114 companion JSON Schemas (Draft 2020-12) for automated validation.</li>
+              <li><strong>Developer &amp; AI Assistant Integration:</strong> Native Python SDK, CLI (<code>tasleemat</code>), and Model Context Protocol (MCP) server.</li>
+            </ul>
+          </div>
+          <div class="boundary-card limits">
+            <h3><span>❌</span> What Tasleemat Does Not Do</h3>
+            <ul class="boundary-list">
+              <li><strong>Not a Live PMO Application:</strong> Does not host or execute project tracking workflows, dashboards, or scheduling engines.</li>
+              <li><strong>Not an Approval Authority:</strong> Does not replace project steering committees, sponsors, or governance gates.</li>
+              <li><strong>Not a Certification Authority:</strong> Does not issue compliance seals, audits, or legal certifications.</li>
+              <li><strong>Not an Autonomous Project Agent:</strong> Does not autonomously make executive or contractual decisions.</li>
+              <li><strong>Not a Shared Database:</strong> Does not store your confidential project deliverables or sensitive operational data.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -262,38 +265,6 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
           <a href="{base_url}/ar/start/" class="btn-secondary">
             🚀 ابدأ هنا (3 مسارات تطبيق)
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Honest Boundaries & Positioning in Arabic -->
-    <section class="boundaries-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">حدود ونطاق مشروع تسليمات</h2>
-          <p class="section-desc">تعرّف بدقة على ما توفره مكتبة تسليمات وما تخرج عن نطاقه.</p>
-        </div>
-        <div class="boundaries-grid">
-          <div class="boundary-card provides">
-            <h3><span>✅</span> ما توفره مكتبة تسليمات</h3>
-            <ul class="boundary-list">
-              <li><strong>114 تسليمة معيارية:</strong> قوالب بتنسيق Markdown باللغتين العربية والإنجليزية لإنهاء مشكلة البدء من صفحات فارغة.</li>
-              <li><strong>أدلة توجيهية وأمثلة واقعية:</strong> أدلة إرشادية لكل تسليمة، أمثلة مكتملة واقعية، ومعاجم مصطلحات ثنائية متخصصة.</li>
-              <li><strong>تحديد الحجم وتخصيص الحوكمة:</strong> قواعد تخصيص واضحة عبر 3 مستويات حوكمة و5 حزم منهجية للتسليم.</li>
-              <li><strong>عقود بيانات رقمية منضبطة:</strong> 114 مخطط JSON متوافق مع معيار Draft 2020-12 للتحقق الآلي من جودة البيانات.</li>
-              <li><strong>تكامل المطورين ومساعدي الذكاء الاصطناعي:</strong> مكتبة بايثون رسمية، أمر تشغيل (<code>tasleemat</code>)، وخادم MCP قياسي.</li>
-            </ul>
-          </div>
-          <div class="boundary-card limits">
-            <h3><span>❌</span> ما لا تقدمه مكتبة تسليمات</h3>
-            <ul class="boundary-list">
-              <li><strong>ليست نظاماً إلكترونياً حياً لإدارة المشاريع:</strong> لا تستضيف مهام المشاريع ولا تحتوي لوحات تحكم تفاعلية للمتابعة اليومية.</li>
-              <li><strong>ليست سلطة اعتماد أو موافقة:</strong> لا تغني عن اللجان التوجيهية، والرعاة، وبوابات المراجعة المؤسسية.</li>
-              <li><strong>ليست جهة تدقيق أو شهادات:</strong> لا تصدر أختام امتثال قانوني أو شهادات تدقيق إلزامية.</li>
-              <li><strong>ليست وكيلاً ذكياً ذاتي القرار:</strong> لا تتخذ قرارات تعاقدية أو تنفيذية نيابة عن مدير المشروع أو المنظمة.</li>
-              <li><strong>ليست قاعدة بيانات مشتركة:</strong> لا تقوم بحفظ أو استضافة وثائق مشاريعك السرية أو بياناتك الحساسة.</li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
@@ -356,12 +327,47 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
 
         <div style="margin-top: 2.5rem; text-align: center;">
           <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">حزم المنهجيات المعيارية</h3>
-          <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+          <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.75rem;">
             <span class="tag pack">التسليم العام (General)</span>
             <span class="tag pack">المنهجيات الرشيقة (Agile)</span>
             <span class="tag pack">الذكاء الاصطناعي (AI)</span>
             <span class="tag pack">المنهجية التنبؤية (Predictive)</span>
             <span class="tag pack">المنهجية الهجينة (Hybrid)</span>
+          </div>
+          <a href="{base_url}/ar/tailoring/" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.75rem;">
+            <span>استعراض مستويات الحوكمة وقوائم التسليمات التفصيلية &larr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honest Boundaries & Scope in Arabic (Moved down before footer) -->
+    <section class="boundaries-section" style="background-color: var(--bg-card); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">حدود ونطاق مشروع تسليمات</h2>
+          <p class="section-desc">تعرّف بدقة على ما توفره مكتبة تسليمات وما تخرج عن نطاقه.</p>
+        </div>
+        <div class="boundaries-grid">
+          <div class="boundary-card provides">
+            <h3><span>✅</span> ما توفره مكتبة تسليمات</h3>
+            <ul class="boundary-list">
+              <li><strong>114 تسليمة معيارية:</strong> قوالب بتنسيق Markdown باللغتين العربية والإنجليزية لإنهاء مشكلة البدء من صفحات فارغة.</li>
+              <li><strong>أدلة توجيهية وأمثلة واقعية:</strong> أدلة إرشادية لكل تسليمة، أمثلة مكتملة واقعية، ومعاجم مصطلحات ثنائية متخصصة.</li>
+              <li><strong>تحديد الحجم وتخصيص الحوكمة:</strong> قواعد تخصيص واضحة عبر 3 مستويات حوكمة و5 حزم منهجية للتسليم.</li>
+              <li><strong>عقود بيانات رقمية منضبطة:</strong> 114 مخطط JSON متوافق مع معيار Draft 2020-12 للتحقق الآلي من جودة البيانات.</li>
+              <li><strong>تكامل المطورين ومساعدي الذكاء الاصطناعي:</strong> مكتبة بايثون رسمية، أمر تشغيل (<code>tasleemat</code>)، وخادم MCP قياسي.</li>
+            </ul>
+          </div>
+          <div class="boundary-card limits">
+            <h3><span>❌</span> ما لا تقدمه مكتبة تسليمات</h3>
+            <ul class="boundary-list">
+              <li><strong>ليست نظاماً إلكترونياً حياً لإدارة المشاريع:</strong> لا تستضيف مهام المشاريع ولا تحتوي لوحات تحكم تفاعلية للمتابعة اليومية.</li>
+              <li><strong>ليست سلطة اعتماد أو موافقة:</strong> لا تغني عن اللجان التوجيهية، والرعاة، وبوابات المراجعة المؤسسية.</li>
+              <li><strong>ليست جهة تدقيق أو شهادات:</strong> لا تصدر أختام امتثال قانوني أو شهادات تدقيق إلزامية.</li>
+              <li><strong>ليست وكيلاً ذكياً ذاتي القرار:</strong> لا تتخذ قرارات تعاقدية أو تنفيذية نيابة عن مدير المشروع أو المنظمة.</li>
+              <li><strong>ليست قاعدة بيانات مشتركة:</strong> لا تقوم بحفظ أو استضافة وثائق مشاريعك السرية أو بياناتك الحساسة.</li>
+            </ul>
           </div>
         </div>
       </div>

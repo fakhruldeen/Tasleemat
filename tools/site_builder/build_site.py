@@ -22,7 +22,21 @@ import tasleemat
 from tools.site_builder.theme import render_html_page
 from tools.site_builder.pages_home import generate_home_en, generate_home_ar
 from tools.site_builder.pages_start import generate_start_en, generate_start_ar
-from tools.site_builder.pages_developers import generate_developers_en, generate_developers_ar
+from tools.site_builder.pages_tailoring import generate_tailoring_en, generate_tailoring_ar
+from tools.site_builder.pages_developers import (
+    generate_developers_en,
+    generate_developers_ar,
+    generate_dev_cli_en,
+    generate_dev_cli_ar,
+    generate_dev_sdk_en,
+    generate_dev_sdk_ar,
+    generate_dev_mcp_en,
+    generate_dev_mcp_ar,
+    generate_dev_schemas_en,
+    generate_dev_schemas_ar,
+    generate_dev_agentic_en,
+    generate_dev_agentic_ar,
+)
 from tools.site_builder.pages_guides import generate_guides_en, generate_guides_ar
 from tools.site_builder.pages_deliverables import generate_explorer_page, generate_detail_page
 
@@ -217,8 +231,20 @@ def build_site():
     with open(deliv_ar_dir / "index.html", "w", encoding="utf-8") as f:
         f.write(generate_explorer_page(artifacts_data, lang="ar", base_url=BASE_URL))
 
-    # 5. Compile Developers & AI Pages
-    print("Generating Developers & AI pages (EN & AR)...")
+    # 4.5 Compile Governance Sizing Tiers & Tailoring Pages
+    print("Generating Governance Sizing Tiers & Tailoring pages (EN & AR)...")
+    tailor_en_dir = SITE_DIR / "tailoring"
+    tailor_en_dir.mkdir(parents=True, exist_ok=True)
+    with open(tailor_en_dir / "index.html", "w", encoding="utf-8") as f:
+        f.write(generate_tailoring_en(BASE_URL))
+
+    tailor_ar_dir = SITE_DIR / "ar" / "tailoring"
+    tailor_ar_dir.mkdir(parents=True, exist_ok=True)
+    with open(tailor_ar_dir / "index.html", "w", encoding="utf-8") as f:
+        f.write(generate_tailoring_ar(BASE_URL))
+
+    # 5. Compile Developers & AI Pages and Sub-pages
+    print("Generating Developers & AI Hub and Sub-pages (EN & AR)...")
     dev_en_dir = SITE_DIR / "developers"
     dev_en_dir.mkdir(parents=True, exist_ok=True)
     with open(dev_en_dir / "index.html", "w", encoding="utf-8") as f:
@@ -228,6 +254,25 @@ def build_site():
     dev_ar_dir.mkdir(parents=True, exist_ok=True)
     with open(dev_ar_dir / "index.html", "w", encoding="utf-8") as f:
         f.write(generate_developers_ar(BASE_URL))
+
+    # Sub-pages: CLI, SDK, MCP, Schemas, Agentic
+    dev_subpages = [
+        ("cli", generate_dev_cli_en, generate_dev_cli_ar),
+        ("sdk", generate_dev_sdk_en, generate_dev_sdk_ar),
+        ("mcp", generate_dev_mcp_en, generate_dev_mcp_ar),
+        ("schemas", generate_dev_schemas_en, generate_dev_schemas_ar),
+        ("agentic", generate_dev_agentic_en, generate_dev_agentic_ar),
+    ]
+    for sub_slug, gen_en, gen_ar in dev_subpages:
+        en_sub_dir = dev_en_dir / sub_slug
+        en_sub_dir.mkdir(parents=True, exist_ok=True)
+        with open(en_sub_dir / "index.html", "w", encoding="utf-8") as f:
+            f.write(gen_en(BASE_URL))
+
+        ar_sub_dir = dev_ar_dir / sub_slug
+        ar_sub_dir.mkdir(parents=True, exist_ok=True)
+        with open(ar_sub_dir / "index.html", "w", encoding="utf-8") as f:
+            f.write(gen_ar(BASE_URL))
 
     # 6. Compile Guides & Governance Pages
     print("Generating Guides & Governance landing pages (EN & AR)...")
