@@ -413,12 +413,12 @@ def print_comprehensive_help(target_cmd=None):
             "desc": "Saves or displays LLM credentials at ~/.tasleemat/config.json for automated AI drafting.",
             "args": [
                 ("action {set,show}", "Configuration action to perform (Default: show)"),
-                ("--provider {gemini,openai,anthropic,ollama,mock}", "LLM AI Provider selection"),
-                ("--model TEXT", "Model ID (e.g., 'gemini-2.5-flash', 'gpt-4o', 'claude-3-5-sonnet')"),
+                ("--provider {gemini,openai,anthropic,openrouter,custom,ollama,mock}", "LLM AI Provider selection"),
+                ("--model TEXT", "Model ID (e.g., 'gemini-2.5-flash', 'gpt-4o', 'anthropic/claude-3.5-sonnet', 'deepseek/deepseek-r1')"),
                 ("--key TEXT", "API Key string"),
-                ("--endpoint TEXT", "Custom Endpoint URL for local models (e.g., http://localhost:11434)")
+                ("--endpoint TEXT", "Custom Endpoint URL (e.g. https://openrouter.ai/api/v1 or http://localhost:11434)")
             ],
-            "example": "tasleemat config set --provider gemini --model gemini-2.5-flash --key 'YOUR_GEMINI_API_KEY'"
+            "example": "tasleemat config set --provider openrouter --model anthropic/claude-3.5-sonnet --key 'YOUR_KEY'"
         },
         "generate": {
             "title": "generate — Auto-fill PMO artifact using LLM AI client",
@@ -427,7 +427,7 @@ def print_comprehensive_help(target_cmd=None):
                 ("-f, --form TEXT", "Form ID or keyword [REQUIRED] (e.g., 'PMO-03.01' or 'Charter')"),
                 ("-n, --notes TEXT/PATH", "Path to text file with meeting notes or direct prompt context string"),
                 ("-l, --lang {ar,en}", "Deliverable output language (Default: en)"),
-                ("-p, --provider {gemini,openai,anthropic,ollama,mock}", "Override default LLM Provider"),
+                ("-p, --provider {gemini,openai,anthropic,openrouter,custom,ollama,mock}", "Override default LLM Provider"),
                 ("-m, --model TEXT", "Override default Model ID"),
                 ("-k, --key TEXT", "Override default API Key"),
                 ("-o, --out PATH", "Output Markdown file path"),
@@ -440,6 +440,14 @@ def print_comprehensive_help(target_cmd=None):
             "desc": "Runs the official MCP server exposing all 114 deliverables, schemas, and governance tools to AI agents.",
             "args": [],
             "example": "tasleemat mcp"
+        },
+        "tui": {
+            "title": "tui — Launch interactive Bilingual Terminal User Interface (TUI)",
+            "desc": "Launches the full-screen terminal workstation with Scaffolder Wizard, Catalog Explorer, Stage-Gates, Lexicon, and Agent Hub.",
+            "args": [
+                ("-l, --lang {ar,en}", "Default interface language (Default: en)")
+            ],
+            "example": "tasleemat tui --lang ar"
         },
         "test": {
             "title": "test — Run complete automated test suite",
@@ -517,8 +525,8 @@ def main():
     # config command
     config_parser = subparsers.add_parser("config", help="Manage default LLM provider & credentials")
     config_parser.add_argument("action", choices=["set", "list", "show"], default="show", nargs="?", help="Action: set or show")
-    config_parser.add_argument("--provider", choices=["gemini", "openai", "anthropic", "ollama", "mock"], help="LLM Provider")
-    config_parser.add_argument("--model", help="Model ID (e.g. gemini-2.5-flash, gpt-4o)")
+    config_parser.add_argument("--provider", choices=["gemini", "openai", "anthropic", "openrouter", "custom", "ollama", "mock"], help="LLM Provider")
+    config_parser.add_argument("--model", help="Model ID (e.g. gemini-2.5-flash, gpt-4o, anthropic/claude-3.5-sonnet, deepseek/deepseek-r1)")
     config_parser.add_argument("--key", help="API Key")
     config_parser.add_argument("--endpoint", help="Custom Endpoint URL")
 
@@ -527,7 +535,7 @@ def main():
     gen_parser.add_argument("-f", "--form", required=True, help="Form ID or name (e.g. PMO-03.01 or Charter)")
     gen_parser.add_argument("-n", "--notes", help="Path to project meeting notes / context text")
     gen_parser.add_argument("-l", "--lang", choices=["ar", "en"], default="en", help="Deliverable language")
-    gen_parser.add_argument("-p", "--provider", choices=["gemini", "openai", "anthropic", "ollama", "mock"], help="Override LLM Provider")
+    gen_parser.add_argument("-p", "--provider", choices=["gemini", "openai", "anthropic", "openrouter", "custom", "ollama", "mock"], help="Override LLM Provider")
     gen_parser.add_argument("-m", "--model", help="Override Model ID")
     gen_parser.add_argument("-k", "--key", help="Override API Key")
     gen_parser.add_argument("-o", "--out", help="Output file path")
@@ -539,6 +547,13 @@ def main():
 
     # mcp command
     mcp_parser = subparsers.add_parser("mcp", help="Start Model Context Protocol (MCP) server over stdio")
+
+    # tui / ui command
+    tui_parser = subparsers.add_parser("tui", help="Launch interactive Bilingual Terminal User Interface (TUI)")
+    tui_parser.add_argument("-l", "--lang", choices=["ar", "en"], default="en", help="Default interface language (Default: en)")
+
+    ui_parser = subparsers.add_parser("ui", help="Alias for tui")
+    ui_parser.add_argument("-l", "--lang", choices=["ar", "en"], default="en", help="Default interface language (Default: en)")
 
     # help command
     help_parser = subparsers.add_parser("help", help="Display complete CLI help manual")
@@ -563,6 +578,14 @@ def main():
     elif args.command == "mcp":
         from tasleemat.mcp.server import main as mcp_main
         sys.exit(mcp_main())
+    elif args.command in ["tui", "ui"]:
+        try:
+            from tasleemat.tui import launch_tui
+            launch_tui(lang=getattr(args, "lang", "en"))
+        except ImportError:
+            sys.path.insert(0, str(ROOT))
+            from tasleemat.tui import launch_tui
+            launch_tui(lang=getattr(args, "lang", "en"))
     else:
         print_comprehensive_help()
 

@@ -211,7 +211,7 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
               <li><strong>Practitioner Guidance &amp; Examples:</strong> Step-by-step authoring guides, completed realistic examples, and bilingual glossaries.</li>
               <li><strong>Governance Sizing &amp; Tailoring:</strong> Structured tailoring rules across 3 Sizing Tiers and 5 Delivery Archetype Packs.</li>
               <li><strong>Machine-Readable Contracts:</strong> 114 companion JSON Schemas (Draft 2020-12) for automated validation.</li>
-              <li><strong>Developer &amp; AI Assistant Integration:</strong> Native Python SDK, CLI (<code>tasleemat</code>), and Model Context Protocol (MCP) server.</li>
+              <li><strong>Developer &amp; AI Assistant Integration:</strong> Native Python SDK, CLI (<code>tasleemat</code>), interactive bilingual TUI (<code>tasleemat tui</code>), and Model Context Protocol (MCP) server.</li>
             </ul>
           </div>
           <div class="boundary-card limits">
@@ -366,7 +366,7 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
               <li><strong>أدلة توجيهية وأمثلة واقعية:</strong> أدلة إرشادية لكل تسليمة، أمثلة مكتملة واقعية، ومعاجم مصطلحات ثنائية متخصصة.</li>
               <li><strong>تحديد الحجم وتخصيص الحوكمة:</strong> قواعد تخصيص واضحة عبر 3 مستويات حوكمة و5 حزم منهجية للتسليم.</li>
               <li><strong>عقود بيانات رقمية منضبطة:</strong> 114 مخطط JSON متوافق مع معيار Draft 2020-12 للتحقق الآلي من جودة البيانات.</li>
-              <li><strong>تكامل المطورين ومساعدي الذكاء الاصطناعي:</strong> مكتبة بايثون رسمية، أمر تشغيل (<code>tasleemat</code>)، وخادم MCP قياسي.</li>
+              <li><strong>تكامل المطورين ومساعدي الذكاء الاصطناعي:</strong> مكتبة بايثون رسمية، أمر سطر الأوامر (<code>tasleemat</code>)، واجهة طرفية تفاعلية ثنائية اللغة (<code>tasleemat tui</code>)، وخادم MCP قياسي.</li>
             </ul>
           </div>
           <div class="boundary-card limits">

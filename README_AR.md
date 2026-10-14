@@ -17,6 +17,7 @@ type: Overview
 
 <p align="center">
   <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.5.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
+  <a href="TECHNICAL_AR.md#1-واجهة-الطرفية-التفاعلية-tui-وأداة-السطر-البرمجي-cli"><img src="https://img.shields.io/badge/🖥️_الطرفية_التفاعلية_TUI-بيئة_عمل_متكاملة-0f766e?style=for-the-badge" alt="الطرفية التفاعلية TUI"></a>
   <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_خادم_MCP-البروتوكول_المعياري-7c3aed?style=for-the-badge" alt="خادم MCP"></a>
   <a href="https://fakhr.me/Tasleemat/README_AR.html"><img src="https://img.shields.io/badge/🌐_البوابة_التفاعلية-معاينة_حصرية-006a61?style=for-the-badge" alt="البوابة التفاعلية"></a>
   <a href="https://fakhr.me/Tasleemat/catalog/ar/index.html"><img src="https://img.shields.io/badge/📋_114_تسليمة-مستكشف_النماذج-059669?style=for-the-badge" alt="كتالوج النماذج"></a>
@@ -87,7 +88,8 @@ type: Overview
 
 ### 💻 للمطورين ومهندسي الأتمتة
 **أتمتة الوثائق وحزم البيانات**
-- 📦 **[أداة السطر البرمجي CLI](TECHNICAL_AR.md#1-أداة-السطر-البرمجي-tasleemat-cli)**: إنشاء هياكل الوثائق بأمر واحد
+- 🖥️ **[واجهة الطرفية التفاعلية (`tasleemat tui`)](TECHNICAL_AR.md#1-واجهة-الطرفية-التفاعلية-tui-وأداة-السطر-البرمجي-cli)**: بيئة عمل تفاعلية متكاملة باللغتين مع ربط وكلاء AI ومزودي النماذج المفتوحة
+- 📦 **[أداة السطر البرمجي CLI](TECHNICAL_AR.md#1-واجهة-الطرفية-التفاعلية-tui-وأداة-السطر-البرمجي-cli)**: إنشاء هياكل الوثائق بأمر واحد
 - 🐍 **[حزمة بايثون (`tasleemat.ai`)](TECHNICAL_AR.md#2-حزمة-تطوير-البرمجيات-tasleematai)**: توليد الوثائق برمجياً
 - 🗄️ **[مخططات OKF JSON](TECHNICAL_AR.md#3-حزم-البيانات-والخمسية-المتزامنة)**: التحقق التلقائي من جداول البيانات
 - 🤖 **[بطاقات حوكمة الذكاء الاصطناعي](forms/ar/02_منهجية_المشروع_وتخصيصه/05_بطاقة_نموذج_الذكاء_الاصطناعي/02_05_بطاقة_نموذج_الذكاء_الاصطناعي_قالب.md)**: مواءمة أخلاقيات AI

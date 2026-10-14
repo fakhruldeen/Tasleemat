@@ -12,16 +12,44 @@ Welcome to the technical engineering reference manual for **Tasleemat (تسلي�
 
 ---
 
-## 🛠️ 1. Tasleemat CLI Scaffolder & Search Tool
+## 🛠️ 1. Tasleemat CLI Scaffolder & Terminal User Interface (TUI)
 
-Tasleemat is published on PyPI as an enterprise CLI and Python library.
+Tasleemat is published on PyPI as an enterprise CLI, interactive TUI workstation, and Python library.
 
 ### Installation
 ```bash
+# Standard CLI & SDK installation
 pip install tasleemat
+
+# Full Interactive TUI Workstation (includes Textual & Arabic BiDi Shaping)
+pip install "tasleemat[tui]"
 ```
 
-### CLI Commands
+### 🖥️ Interactive Bilingual TUI Workstation (`tasleemat tui`)
+The full-screen interactive workstation turns Tasleemat into a standalone offline PMO terminal workbench:
+```bash
+# Launch interactive TUI (English Default)
+tasleemat tui
+
+# Launch directly in Arabic with BiDi shaping
+tasleemat tui --lang ar
+```
+
+#### TUI Features:
+- **7 Integrated Workspaces**:
+  1. `🚀 Scaffolder`: 5-step visual wizard with live deliverable counts and agent setup.
+  2. `📋 Deliverables`: 114 deliverable split-pane explorer with live Markdown and JSON schema preview.
+  3. `🚪 Stage-Gates`: Gates 0 to 5 entry/exit criteria and checklist inspector.
+  4. `📖 Lexicon`: Instant bilingual search across 114 PMI & Saudi DGA standardized terms.
+  5. `🤖 AI Studio`: Prompt playground for drafting deliverables with live LLM generation and markdown export.
+  6. `🔑 LLM API`: Unrestricted model configuration for OpenRouter, Google Gemini, OpenAI, Claude, Ollama, and custom OpenAI-compatible endpoints (Groq, DeepSeek, Together, etc.).
+  7. `🔌 Agents Hub`: 1-click workspace configuration for **Cursor, Antigravity (AGY), Claude Desktop, VS Code, OpenCode, Cline, Windsurf, and OpenAI CLI replicas**.
+- **Real-Time Keybindings**:
+  - `F2`: Instant toggle between English and Arabic UI modes with native Arabic cursive shaping (`arabic-reshaper`) and bidirectional algorithm (`python-bidi`).
+  - `F1`: Help and keyboard navigation guide.
+  - `F10` / `Ctrl+Q`: Safe quit.
+
+### Headless CLI Commands
 ```bash
 # Scaffold a new project (interactive wizard or flags)
 tasleemat init --tier 2 --pack agile --lang ar --name "منصة التحول الرقمي" --code "PRJ-2026-01"
@@ -38,11 +66,13 @@ tasleemat list --lang en
 
 ## 🤖 2. Programmatic Python SDK (`tasleemat.ai`)
 
-The `tasleemat.ai` module provides a unified interface for LLM-assisted document generation (supporting Google Gemini, OpenAI GPT-4, Anthropic Claude, or local mock engines).
+The `tasleemat.ai` module provides a unified interface for LLM-assisted document generation (supporting OpenRouter, Google Gemini, OpenAI, Anthropic Claude, custom endpoints, or local engines).
 
 ### Configuration Setup
 ```bash
-# Configure default LLM API key & provider via CLI
+# Configure default LLM API key & provider via CLI (OpenRouter, Gemini, OpenAI, etc.)
+tasleemat config set --provider openrouter --model anthropic/claude-3.5-sonnet --key "YOUR_KEY"
+tasleemat config set --provider gemini --model gemini-2.5-flash --key "YOUR_GEMINI_API_KEY"
 tasleemat config set --provider gemini --model gemini-2.5-flash --key "YOUR_GEMINI_API_KEY"
 
 # Or configure OpenAI

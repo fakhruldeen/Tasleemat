@@ -42,13 +42,38 @@ flowchart LR
 
 ---
 
-## 🚀 1. Official Tasleemat CLI Tool (`tasleemat`)
+## 🚀 1. Official Tasleemat CLI & TUI Workstation (`tasleemat`)
 
-Tasleemat provides an official Python SDK and CLI tool designed to streamline project initialization and form exploration. You can install it globally via PyPI:
+Tasleemat provides an official Python SDK, CLI tool, and visual Terminal User Interface (TUI) designed to streamline project initialization, offline catalog browsing, and AI agent integration. You can install it globally via PyPI:
 
 ```bash
+# Standard installation
 pip install tasleemat
+
+# Full TUI Workstation (with Textual & Arabic BiDi text shaping)
+pip install "tasleemat[tui]"
 ```
+
+### 🖥️ Interactive Terminal User Interface (TUI Workstation)
+Launch the full-screen terminal workstation:
+```bash
+# Launch interactive TUI (English Default)
+tasleemat tui
+
+# Launch directly in Arabic with BiDi shaping
+tasleemat tui --lang ar
+```
+
+The TUI provides 7 tabs:
+1. **🚀 Scaffolder Wizard**: 5-step stepper to generate tailored project workspaces.
+2. **📋 Deliverables Explorer**: Split-pane browser of all 114 deliverables with syntax-highlighted Markdown and JSON schema preview.
+3. **🚪 Stage-Gate Navigator**: Gate 0–5 checklist and RACI matrix review.
+4. **📖 Bilingual Lexicon**: Instant search across 114 PMI & Saudi DGA standardized terms.
+5. **🤖 AI Studio**: Interactive drafting playground using configured LLMs.
+6. **🔑 LLM API Manager**: Unrestricted model selection supporting OpenRouter, Gemini, OpenAI, Claude, Ollama, and OpenAI-compatible endpoints.
+7. **🔌 Agent Hub**: 1-click configuration for Cursor, Antigravity (AGY), Claude Desktop, VS Code, OpenCode, Cline, Windsurf, and OpenAI CLI replicas.
+
+---
 
 ### A. Scaffolding a New Tailored Project (`init`)
 Generate a complete, ready-to-use project workspace tailored to your exact governance tier and methodology pack:

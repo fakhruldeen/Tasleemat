@@ -31,6 +31,13 @@ setup(
         "tiktoken",
         "numpy"
     ],
+    extras_require={
+        "tui": [
+            "textual>=0.70.0",
+            "arabic-reshaper>=3.0.0",
+            "python-bidi>=0.4.2",
+        ]
+    },
     python_requires=">=3.9",
     classifiers=[
         "Development Status :: 5 - Production/Stable",

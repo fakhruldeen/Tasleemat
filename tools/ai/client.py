@@ -23,12 +23,14 @@ def save_config(config_dict):
         json.dump(config_dict, f, indent=2, ensure_ascii=False)
 
 class AIClient:
-    """Unified LLM Client for Tasleemat PMO Artifact Auto-Generation."""
+    """Unified LLM Client for Tasleemat PMO Artifact Auto-Generation with multi-provider & custom endpoint support."""
 
-    DEFAULT_MODELS = {
+    DEFAULT_SUGGESTED_MODELS = {
         "gemini": "gemini-2.5-flash",
         "openai": "gpt-4o",
         "anthropic": "claude-3-5-sonnet-20241022",
+        "openrouter": "anthropic/claude-3.5-sonnet",
+        "custom": "default-model",
         "ollama": "llama3.2",
         "mock": "mock-v1"
     }
@@ -36,7 +38,7 @@ class AIClient:
     def __init__(self, provider=None, model=None, api_key=None, endpoint=None):
         cfg = load_config()
         self.provider = (provider or cfg.get("provider") or os.getenv("TASLEEMAT_LLM_PROVIDER") or "gemini").lower()
-        self.model = model or cfg.get("model") or os.getenv("TASLEEMAT_LLM_MODEL") or self.DEFAULT_MODELS.get(self.provider, "gemini-2.5-flash")
+        self.model = model or cfg.get("model") or os.getenv("TASLEEMAT_LLM_MODEL") or self.DEFAULT_SUGGESTED_MODELS.get(self.provider, "gemini-2.5-flash")
         self.api_key = api_key or cfg.get("api_key") or self._resolve_api_key(self.provider)
         self.endpoint = endpoint or cfg.get("endpoint") or self._resolve_endpoint(self.provider)
 
@@ -45,13 +47,19 @@ class AIClient:
             "gemini": "GEMINI_API_KEY",
             "openai": "OPENAI_API_KEY",
             "anthropic": "ANTHROPIC_API_KEY",
+            "openrouter": "OPENROUTER_API_KEY",
+            "custom": "CUSTOM_LLM_API_KEY",
         }
         var_name = env_map.get(provider)
-        return os.getenv(var_name) if var_name else None
+        return os.getenv(var_name) if var_name else os.getenv("LLM_API_KEY")
 
     def _resolve_endpoint(self, provider):
         if provider == "ollama":
             return os.getenv("OLLAMA_HOST", "http://localhost:11434")
+        elif provider == "openrouter":
+            return os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
+        elif provider in ["custom", "openai-compatible"]:
+            return os.getenv("CUSTOM_LLM_ENDPOINT")
         return None
 
     def generate(self, prompt, system_instruction=None, mock=False):
@@ -64,10 +72,15 @@ class AIClient:
             return self._generate_openai(prompt, system_instruction)
         elif self.provider == "anthropic":
             return self._generate_anthropic(prompt, system_instruction)
+        elif self.provider == "openrouter":
+            return self._generate_openrouter(prompt, system_instruction)
+        elif self.provider in ["custom", "openai-compatible"]:
+            return self._generate_openai_compatible(prompt, system_instruction)
         elif self.provider == "ollama":
             return self._generate_ollama(prompt, system_instruction)
         else:
-            raise ValueError(f"Unsupported LLM provider '{self.provider}'. Supported: gemini, openai, anthropic, ollama, mock.")
+            # Fallback to generic OpenAI-compatible chat completion if custom provider specified
+            return self._generate_openai_compatible(prompt, system_instruction)
 
     def _generate_mock(self, prompt):
         return (
@@ -107,7 +120,7 @@ class AIClient:
         if not self.api_key:
             raise ValueError("OPENAI_API_KEY is not set. Run 'tasleemat config set --provider openai --key <KEY>' or export OPENAI_API_KEY.")
         
-        url = "https://api.openai.com/v1/chat/completions"
+        url = (self.endpoint.rstrip('/') + '/chat/completions') if self.endpoint else "https://api.openai.com/v1/chat/completions"
         messages = []
         if system_instruction:
             messages.append({"role": "system", "content": system_instruction})
@@ -127,11 +140,63 @@ class AIClient:
             err_body = e.read().decode("utf-8")
             raise RuntimeError(f"OpenAI API Error ({e.code}): {err_body}")
 
+    def _generate_openrouter(self, prompt, system_instruction=None):
+        if not self.api_key:
+            raise ValueError("OPENROUTER_API_KEY is not set. Run 'tasleemat config set --provider openrouter --key <KEY>' or export OPENROUTER_API_KEY.")
+
+        base_url = self.endpoint or "https://openrouter.ai/api/v1"
+        url = f"{base_url.rstrip('/')}/chat/completions"
+
+        messages = []
+        if system_instruction:
+            messages.append({"role": "system", "content": system_instruction})
+        messages.append({"role": "user", "content": prompt})
+
+        payload = json.dumps({"model": self.model, "messages": messages}).encode("utf-8")
+        req = urllib.request.Request(url, data=payload, headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.api_key}",
+            "HTTP-Referer": "https://fakhr.me/Tasleemat/",
+            "X-Title": "Tasleemat PMO Operating System"
+        })
+
+        try:
+            with urllib.request.urlopen(req) as resp:
+                res_data = json.loads(resp.read().decode("utf-8"))
+                return res_data["choices"][0]["message"]["content"]
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8")
+            raise RuntimeError(f"OpenRouter API Error ({e.code}): {err_body}")
+
+    def _generate_openai_compatible(self, prompt, system_instruction=None):
+        base_url = self.endpoint or "https://api.openai.com/v1"
+        url = f"{base_url.rstrip('/')}/chat/completions"
+
+        messages = []
+        if system_instruction:
+            messages.append({"role": "system", "content": system_instruction})
+        messages.append({"role": "user", "content": prompt})
+
+        payload = json.dumps({"model": self.model, "messages": messages}).encode("utf-8")
+        headers = {"Content-Type": "application/json"}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+
+        req = urllib.request.Request(url, data=payload, headers=headers)
+
+        try:
+            with urllib.request.urlopen(req) as resp:
+                res_data = json.loads(resp.read().decode("utf-8"))
+                return res_data["choices"][0]["message"]["content"]
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8")
+            raise RuntimeError(f"Custom LLM API Error ({e.code}): {err_body}")
+
     def _generate_anthropic(self, prompt, system_instruction=None):
         if not self.api_key:
             raise ValueError("ANTHROPIC_API_KEY is not set. Run 'tasleemat config set --provider anthropic --key <KEY>' or export ANTHROPIC_API_KEY.")
         
-        url = "https://api.anthropic.com/v1/messages"
+        url = (self.endpoint.rstrip('/') + '/messages') if self.endpoint else "https://api.anthropic.com/v1/messages"
         payload_dict = {
             "model": self.model,
             "max_tokens": 4096,
@@ -168,4 +233,4 @@ class AIClient:
                 res_data = json.loads(resp.read().decode("utf-8"))
                 return res_data["response"]
         except urllib.error.URLError as e:
-            raise RuntimeError(f"Ollama Connection Error at {url}: {e}")
+            raise RuntimeError(f"Ollama Connection Error: {e}. Is Ollama running on {base_url}?")

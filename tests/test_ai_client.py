@@ -47,5 +47,24 @@ class TestAIClient(unittest.TestCase):
                 if old_path:
                     os.environ["TASLEEMAT_CONFIG_PATH"] = old_path
 
+    def test_openrouter_and_custom_models(self):
+        # OpenRouter with custom model
+        client_or = AIClient(provider="openrouter", model="anthropic/claude-3.7-sonnet", api_key="sk-or-test")
+        self.assertEqual(client_or.provider, "openrouter")
+        self.assertEqual(client_or.model, "anthropic/claude-3.7-sonnet")
+        self.assertEqual(client_or.endpoint, "https://openrouter.ai/api/v1")
+
+        # Custom OpenAI-compatible provider with DeepSeek R1
+        client_custom = AIClient(provider="custom", model="deepseek/deepseek-r1", endpoint="https://api.deepseek.com/v1", api_key="sk-test")
+        self.assertEqual(client_custom.provider, "custom")
+        self.assertEqual(client_custom.model, "deepseek/deepseek-r1")
+        self.assertEqual(client_custom.endpoint, "https://api.deepseek.com/v1")
+
+    def test_arbitrary_unrestricted_model_strings(self):
+        # User can set ANY model identifier
+        any_model = "my-custom-fine-tuned-qwen-2.5-72b:v2"
+        client = AIClient(provider="openai", model=any_model, api_key="sk-test")
+        self.assertEqual(client.model, any_model)
+
 if __name__ == "__main__":
     unittest.main()

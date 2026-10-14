@@ -228,7 +228,7 @@ tasleemat generate \\
         <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
         <!-- Command 5: test & mcp -->
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h3 style="font-size: 1.25rem; color: #ec4899; margin-bottom: 0.5rem;">E. <code>tasleemat test</code> &amp; <code>tasleemat mcp</code></h3>
           <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
             Execute internal verification suites or launch the stdio Model Context Protocol (MCP) server for IDE integration:
@@ -241,6 +241,44 @@ tasleemat test -v --failfast
 
 # Start the Model Context Protocol stdio server for Claude Desktop / Cursor
 tasleemat mcp</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 6: tui -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #06b6d4; margin-bottom: 0.5rem;">F. <code>tasleemat tui</code> (Interactive Bilingual Terminal Workstation)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Launch the full-featured, mouse-aware, keyboard-driven Terminal User Interface built on Textual. 
+            Features true bilingual Arabic BiDi cursor &amp; shaping, live Markdown and JSON schema preview, 
+            interactive project scaffolding, Stage-Gate exit checklists, AI synthesis playground, and 1-click workspace setup for 8 AI agent tools.
+          </p>
+          <pre><code># Install with TUI dependencies (Textual, arabic-reshaper, python-bidi)
+pip install "tasleemat[tui]"
+
+# Launch the interactive terminal workstation
+tasleemat tui
+
+# Launch directly in Arabic mode
+tasleemat tui --lang ar
+
+# Command alias
+tasleemat ui</code></pre>
+          <div style="margin-top: 1rem; background: var(--bg-main); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">7 Workstation Workspaces &amp; Capabilities:</div>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; padding-left: 1.25rem; margin-bottom: 1rem;">
+              <li><strong>1. Scaffolding Wizard:</strong> 5-step guided project initialization with live Tier/Archetype selection and automatic AI agent injection.</li>
+              <li><strong>2. Deliverables Explorer:</strong> Instant split-pane browser for all 114 deliverables with Phase and Tier filters, live Markdown viewer, and companion JSON Schema syntax inspector.</li>
+              <li><strong>3. Stage-Gates Navigator:</strong> Interactive gate approval navigator (Gates 0 through 5) with required entry artifacts and interactive exit criteria checklists.</li>
+              <li><strong>4. Bilingual Lexicon:</strong> Real-time fuzzy search across 114 standard Arabic &amp; English PMO governance terms with quick navigation.</li>
+              <li><strong>5. AI Studio:</strong> Interactive deliverable synthesis studio—enter prompt/notes, select target deliverable, and stream live AI drafting directly in your terminal.</li>
+              <li><strong>6. LLM Config Manager:</strong> Unrestricted model selection supporting OpenAI, Anthropic, Gemini, Groq, OpenRouter, and custom local/remote OpenAI-compatible endpoints (vLLM, Ollama, Together).</li>
+              <li><strong>7. Agent Hub:</strong> 1-click workspace generator injecting project rules, deliverable catalogs, and MCP configurations into <strong>8 AI agent environments</strong>: Cursor (<code>.cursorrules</code>), Antigravity (<code>skills/pmo-governance</code>), Claude Desktop (<code>claude_desktop_config.json</code>), VS Code (<code>tasks.json</code>), OpenCode, Cline, Windsurf (<code>.windsurfrules</code>), and OpenAI CLI Replicas.</li>
+            </ul>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">
+              <strong>Global Shortcuts:</strong> <code>F1</code> Help &bull; <code>F2</code> Toggle English/العربية &bull; <code>F10</code> / <code>Ctrl+Q</code> Quit &bull; <code>Tab</code> Navigate controls.
+            </div>
+          </div>
         </div>
 
       </div>
@@ -617,7 +655,7 @@ tasleemat generate \\
         <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
         <!-- Command 5: test & mcp AR -->
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h3 style="font-size: 1.25rem; color: #ec4899; margin-bottom: 0.5rem;">هـ. <code>tasleemat test</code> و <code>tasleemat mcp</code></h3>
           <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
             تشغيل حزم الاختبارات الداخلية والتحقق من صحة البيئة، أو إطلاق خادم بروتوكول سياق النموذج (MCP):
@@ -630,6 +668,44 @@ tasleemat test -v --failfast
 
 # تشغيل خادم بروتوكول MCP عبر بروتوكول stdio للتكامل مع Cursor و Claude
 tasleemat mcp</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 6: tui AR -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #06b6d4; margin-bottom: 0.5rem;">و. <code>tasleemat tui</code> (محطة العمل التفاعلية ثنائية اللغة في الطرفية)</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            تشغيل واجهة المستخدم الطرفية الغنية (TUI) والمبنية بمكتبة Textual لدعم التفاعل بالفأرة ولوحة المفاتيح.
+            تتميز بدعم كامل ودقيق للغة العربية تشكيلاً واتجاهاً (BiDi &amp; Reshaping)، ومعاينة حية لوثائق Markdown ومخططات JSON Schema،
+            ومعالج تهيئة تفاعلي، ومصفوفة بوابات المرحلة، واستوديو التوليد بالذكاء الاصطناعي، وتكامل فوري بنقرة واحدة مع 8 بيئات وكلاء ذكاء اصطناعي.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code># تثبيت الحزمة مع إضافات واجهة الطرفية TUI
+pip install "tasleemat[tui]"
+
+# تشغيل محطة العمل الطرفية التفاعلية
+tasleemat tui
+
+# التشغيل المباشر باللغة العربية
+tasleemat tui --lang ar
+
+# الاسم البديل المختصر للأمر
+tasleemat ui</code></pre>
+          <div style="margin-top: 1rem; background: var(--bg-main); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">7 مساحات عمل ومزايا متقدمة في الواجهة:</div>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; padding-right: 1.25rem; margin-bottom: 1rem;">
+              <li><strong>1. معالج تهيئة المشاريع (Wizard):</strong> معالج مرشد في 5 خطوات لاختيار مستوى الحوكمة والمنهجية وتوليد بيئة العمل مع حقن إعدادات وكلاء الذكاء الاصطناعي تلقائياً.</li>
+              <li><strong>2. مستكشف التسليمات (Explorer):</strong> استعراض فوري لـ 114 وثيقة بتصميم مقسوم، مع فلاتر المراحل والمستويات، ومعاينة حية لنصوص Markdown وبنية JSON Schema المرافقة.</li>
+              <li><strong>3. متصفح بوابات المرحلة (Gates):</strong> تصفح بوابات الحوكمة الخمس (Gate 0 إلى Gate 5) واستعراض معايير الدخول وقوائم التحقق التفاعلية للاعتماد.</li>
+              <li><strong>4. المعجم الموحد (Lexicon):</strong> بحث لحظي ضبابي في 114 مصطلحاً حوكمياً باللغتين العربية والإنجليزية مع إمكانية الانتقال الفوري لوثيقة المصطلح.</li>
+              <li><strong>5. استوديو الذكاء الاصطناعي (AI Studio):</strong> مساحة تفاعلية لصياغة وتوليد الوثائق من مذكراتك وملاحظاتك مع بث حي ومباشر للنصوص داخل الطرفية.</li>
+              <li><strong>6. إدارة نماذج الذكاء الاصطناعي (LLM Config):</strong> حرية كاملة في تحديد أي نموذج دون قيود، مع دعم كامل لـ OpenAI و Anthropic و Gemini و Groq و OpenRouter والنماذج المحلية المتوافقة مع معيار OpenAI (مثل vLLM و Ollama و Together).</li>
+              <li><strong>7. مركز ربط الوكلاء (Agent Hub):</strong> توليد فوري لإعدادات وقواعد وقوالب الوثائق وخادم MCP بنقرة واحدة لـ <strong>8 بيئات عمل ذكاء اصطناعي</strong>: Cursor و Antigravity و Claude Desktop و VS Code و OpenCode و Cline و Windsurf و OpenAI CLI Replicas.</li>
+            </ul>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">
+              <strong>الاختصارات العامة:</strong> <code>F1</code> المساعدة &bull; <code>F2</code> التبديل بين العربية والإنجليزية &bull; <code>F10</code> / <code>Ctrl+Q</code> الخروج &bull; <code>Tab</code> التنقل بين العناصر.
+            </div>
+          </div>
         </div>
 
       </div>

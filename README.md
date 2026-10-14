@@ -18,6 +18,7 @@ type: Overview
 
 <p align="center">
   <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.5.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
+  <a href="TECHNICAL.md#1-tasleemat-cli-scaffolder--terminal-user-interface-tui"><img src="https://img.shields.io/badge/🖥️_Terminal_TUI-Interactive_Workstation-0f766e?style=for-the-badge" alt="Terminal TUI"></a>
   <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_MCP_Server-Standard_Protocol-7c3aed?style=for-the-badge" alt="MCP Server"></a>
   <a href="https://fakhr.me/Tasleemat/"><img src="https://img.shields.io/badge/🌐_Interactive_Portal-Live_Demo-006a61?style=for-the-badge" alt="Live Portal"></a>
   <a href="https://fakhr.me/Tasleemat/catalog/en/index.html"><img src="https://img.shields.io/badge/📋_114_Deliverables-Catalog_Explorer-059669?style=for-the-badge" alt="Catalog"></a>
@@ -88,7 +89,8 @@ Most Project Management Offices (PMOs) and Project Managers waste hundreds of ho
 
 ### 💻 For Developers & AI Engineers
 **Automate documentation & workflows**
-- 📦 **[CLI Scaffolder (`tasleemat init`)](TECHNICAL.md#1-tasleemat-cli-scaffolder--search-tool)**: One-command project scaffolding
+- 🖥️ **[Interactive TUI (`tasleemat tui`)](TECHNICAL.md#1-tasleemat-cli-scaffolder--terminal-user-interface-tui)**: Bilingual terminal workstation with live LLM setup & 1-click Agent Hub
+- 📦 **[CLI Scaffolder (`tasleemat init`)](TECHNICAL.md#1-tasleemat-cli-scaffolder--terminal-user-interface-tui)**: One-command project scaffolding
 - 🐍 **[Python SDK (`tasleemat.ai`)](TECHNICAL.md#2-programmatic-python-sdk-tasleematai)**: Programmatic artifact generator
 - 🗄️ **[OKF Frictionless Data Schemas](TECHNICAL.md#3-data-architecture--synchronized-5-file-bundles)**: Validate tables with JSON schemas
 - 🤖 **[NIST AI Model Cards](forms/en/02_Project_Approach_and_Tailoring/05_AI_Model_Card_and_Fact_Sheet/02_05_AI_Model_Card_and_Fact_Sheet_Template.md)**: AI ethics and governance
