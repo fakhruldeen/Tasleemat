@@ -484,6 +484,23 @@ class TestWebsiteRedesign(unittest.TestCase):
             self.assertIn("https://json-schema.org/draft/2020-12/schema", schema_txt,
                           f"Draft 2020-12 dialect missing from schema in {page_path}")
 
+    def test_devhunt_badge_presence(self):
+        """Verifies that DevHunt badge is in README.md, README_AR.md, and EN/AR index pages."""
+        # 1. README files
+        readme_en = (ROOT / "README.md").read_text(encoding="utf-8")
+        readme_ar = (ROOT / "README_AR.md").read_text(encoding="utf-8")
+        badge_md = "[![tasleemat on DevHunt](https://devhunt.org/badge/tasleemat.svg)](https://devhunt.org/tool/tasleemat)"
+        self.assertIn(badge_md, readme_en, "DevHunt badge missing in README.md")
+        self.assertIn(badge_md, readme_ar, "DevHunt badge missing in README_AR.md")
+
+        # 2. Site index pages
+        index_en = (SITE_DIR / "index.html").read_text(encoding="utf-8")
+        index_ar = (SITE_DIR / "ar" / "index.html").read_text(encoding="utf-8")
+        for lang, html in [("en", index_en), ("ar", index_ar)]:
+            self.assertIn("https://devhunt.org/tool/tasleemat", html, f"DevHunt link missing in {lang} index")
+            self.assertIn("https://devhunt.org/badge/tasleemat.svg", html, f"DevHunt dark badge missing in {lang} index")
+            self.assertIn("https://devhunt.org/badge/tasleemat.svg?theme=light", html, f"DevHunt light badge missing in {lang} index")
+
 
 if __name__ == "__main__":
     unittest.main()

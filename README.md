@@ -26,6 +26,8 @@ type: Overview
   <a href="https://doi.org/10.5281/zenodo.23193523"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23193523-blue?style=for-the-badge" alt="Zenodo DOI"></a>
 </p>
 
+[![tasleemat on DevHunt](https://devhunt.org/badge/tasleemat.svg)](https://devhunt.org/tool/tasleemat)
+
 <p align="center">
   <b><a href="https://fakhr.me/Tasleemat/">🌐 Live Web Portal</a></b> • 
   <b><a href="docs/MCP_INTEGRATION.md">⚡ MCP Server (Claude/Cursor)</a></b> • 

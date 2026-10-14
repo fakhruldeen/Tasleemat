@@ -289,6 +289,41 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   text-decoration: none;
 }
 
+/* DevHunt Badge */
+.devhunt-badge-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.devhunt-badge {
+  display: inline-block;
+  line-height: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.devhunt-badge:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.devhunt-dark {
+  display: none !important;
+}
+
+.devhunt-light {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-dark {
+  display: inline-block !important;
+}
+
+[data-theme="dark"] .devhunt-light {
+  display: none !important;
+}
+
 /* Honesty & Boundaries Grid */
 .boundaries-section {
   padding: 3.5rem 0;

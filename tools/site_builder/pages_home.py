@@ -117,6 +117,10 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
             🚀 Start Here (3 Pathways)
           </a>
         </div>
+        <div class="devhunt-badge-wrap">
+          <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-dark"><img src="https://devhunt.org/badge/tasleemat.svg" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
+          <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-light"><img src="https://devhunt.org/badge/tasleemat.svg?theme=light" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
+        </div>
       </div>
     </section>
 
@@ -267,6 +271,10 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
           <a href="{base_url}/ar/start/" class="btn-secondary">
             🚀 ابدأ هنا (3 مسارات تطبيق)
           </a>
+        </div>
+        <div class="devhunt-badge-wrap">
+          <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-dark"><img src="https://devhunt.org/badge/tasleemat.svg" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
+          <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-light"><img src="https://devhunt.org/badge/tasleemat.svg?theme=light" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
         </div>
       </div>
     </section>
