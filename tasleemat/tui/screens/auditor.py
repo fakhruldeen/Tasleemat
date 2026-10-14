@@ -5,6 +5,8 @@ Features live progress bars, KPIs (governance score, deliverable completion, sch
 Stage-Gate readiness table, and detailed pass/fail deliverable findings with 1-click remediation.
 """
 
+from __future__ import annotations
+
 import os
 import pathlib
 from textual.app import ComposeResult

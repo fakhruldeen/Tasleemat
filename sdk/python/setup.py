@@ -14,7 +14,8 @@ setup(
             "docs/**/*", 
             "_tokens/**/*",
             "data/**/*",
-            "schemas/**/*"
+            "schemas/**/*",
+            "tui/locales/**/*"
         ]
     },
     entry_points={

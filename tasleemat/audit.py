@@ -237,10 +237,10 @@ def audit_project(
     file_map: Dict[str, List[pathlib.Path]] = {}
     for p in root.rglob("*"):
         if p.is_file():
-            # Check filename and parent folder for PMO identifier
-            search_str = f"{p.parent.name} {p.name}"
-            # Match PMO-03.01 or 03_01_Project_Charter
-            m = re.search(r'(?:PMO[-_])?(\d{2})[._](\d{2})(?:[._](\d{2}))?', search_str, re.IGNORECASE)
+            # Check filename first, then parent folder for PMO identifier
+            m = re.search(r'(?:PMO[-_])?(\d{2})[._](\d{2})(?:[._](\d{2}))?', p.name, re.IGNORECASE)
+            if not m:
+                m = re.search(r'(?:PMO[-_])?(\d{2})[._](\d{2})(?:[._](\d{2}))?', p.parent.name, re.IGNORECASE)
             if m:
                 part1, part2, part3 = m.group(1), m.group(2), m.group(3)
                 art_id = f"PMO-{part1}.{part2}" + (f".{part3}" if part3 else "")

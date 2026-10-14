@@ -161,11 +161,7 @@ def scaffold_project(args):
             # Match item_id like PMO-03.01 or PMO-04.08.02
             clean_id = item_id.replace("PMO-", "").replace(".", "_")
             
-            matched_folder = None
-            for k, folder in forms_map.items():
-                if k == clean_id or k.endswith(clean_id) or clean_id.endswith(k):
-                    matched_folder = folder
-                    break
+            matched_folder = forms_map.get(clean_id)
             
             if matched_folder and matched_folder.exists():
                 dest_folder = lang_dir / matched_folder.relative_to(FORMS_DIR / l)
