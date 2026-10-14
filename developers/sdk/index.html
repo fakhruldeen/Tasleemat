@@ -1245,9 +1245,9 @@ tr:hover td {
           <span style="color: var(--text-main); font-weight: 600;">Python SDK</span>
         </nav>
         <div class="hero-pill"><span>🐍 Pure Python Library</span></div>
-        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">Python SDK &amp; Core Architecture</h1>
+        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">Python SDK &amp; API Reference</h1>
         <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto;">
-          Complete programmatic API reference for catalog discovery, tailored workspace generation, Draft 2020-12 validation, and report rendering.
+          The authoritative Python API reference for programmatic catalog discovery, project tailoring, Draft 2020-12 schema validation, and headless deliverable compilation.
         </p>
       </div>
     </section>
@@ -1258,142 +1258,120 @@ tr:hover td {
         <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-right: 0.5rem; text-transform: uppercase;">
           Sections:
         </span>
-        <a href="/Tasleemat/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📖 Developers Hub</a><a href="/Tasleemat/developers/cli/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">⌨️ CLI Tooling</a><a href="/Tasleemat/developers/sdk/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.35rem 0.75rem; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">🐍 Python SDK</a><a href="/Tasleemat/developers/mcp/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🔌 MCP Server</a><a href="/Tasleemat/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📐 Schemas & Validation</a><a href="/Tasleemat/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🤖 Agentic Swarms & CI/CD</a>
+        <a href="/Tasleemat/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📖 Developers Hub</a><a href="/Tasleemat/developers/cli/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">⌨️ CLI Tooling & Automation</a><a href="/Tasleemat/developers/sdk/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">🐍 Python SDK & API</a><a href="/Tasleemat/developers/mcp/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🔌 MCP Server & IDEs</a><a href="/Tasleemat/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📐 Schemas & Validation</a><a href="/Tasleemat/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🤖 Agentic Swarms & CI/CD</a>
       </div>
     </div>
     
 
     <div class="container" style="margin-bottom: 5rem; max-width: 960px;">
       
-      <!-- SDK Functions Table -->
+      <!-- Section 1: Architectural Foundation -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">The 8 Verified Core Functions</h2>
-        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
-          The top-level <code>tasleemat</code> module exports 8 zero-dependency functions designed for production PMO automation pipelines:
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">1. Architectural Foundation &amp; Zero-Dependency Design</h2>
+        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+          The <code>tasleemat</code> Python library is built with a strict <strong>zero-external-dependency</strong> philosophy. 
+          It relies exclusively on Python standard library modules (<code>json</code>, <code>pathlib</code>, <code>dataclasses</code>, <code>hashlib</code>, <code>re</code>, <code>csv</code>), 
+          ensuring instant installation, zero dependency conflicts, and guaranteed execution in ultra-secure, air-gapped container runtimes.
         </p>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Function</th>
-                <th>Parameters</th>
-                <th>Return Type</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>list_artifacts()</code></td>
-                <td><code>phase=None, tier=None, pack=None</code></td>
-                <td><code>List[ArtifactSummary]</code></td>
-                <td>Discovers summary objects for all 114 deliverables or tailored subsets with cryptographic SHA-256 fingerprints.</td>
-              </tr>
-              <tr>
-                <td><code>get_artifact_definition()</code></td>
-                <td><code>artifact_id: str</code></td>
-                <td><code>dict</code></td>
-                <td>Retrieves canonical metadata dictionary including phase codes, tier mappings, and asset file paths.</td>
-              </tr>
-              <tr>
-                <td><code>get_artifact_assets()</code></td>
-                <td><code>artifact_id: str, lang='en'</code></td>
-                <td><code>ArtifactAssets</code></td>
-                <td>Object containing safe file path resolvers and convenience content accessors.</td>
-              </tr>
-              <tr>
-                <td><code>get_artifact_asset()</code></td>
-                <td><code>artifact_id: str, role: str, lang='en'</code></td>
-                <td><code>Union[str, dict, list]</code></td>
-                <td>Fetches parsed content directly by role: <code>template</code>, <code>guide</code>, <code>prompt</code>, <code>schema</code>, <code>dictionary</code>, <code>example</code>.</td>
-              </tr>
-              <tr>
-                <td><code>get_tailoring_profile()</code></td>
-                <td><code>tier: Union[int, str], pack: str='general'</code></td>
-                <td><code>List[str]</code></td>
-                <td>Returns the verified list of mandatory deliverable codes matching governance tier (1, 2, 3) and methodology pack.</td>
-              </tr>
-              <tr>
-                <td><code>get_lexicon()</code></td>
-                <td><code>category: Optional[str]=None</code></td>
-                <td><code>List[dict]</code></td>
-                <td>Returns bilingual PMI PMBOK® and Saudi DGA project management terminology mappings.</td>
-              </tr>
-              <tr>
-                <td><code>validate_artifact_data()</code></td>
-                <td><code>artifact_id: str, data: dict, mode='strict'</code></td>
-                <td><code>ValidationReport</code></td>
-                <td>Validates structured payload against Draft 2020-12 companion schema with strict RFC format checking.</td>
-              </tr>
-              <tr>
-                <td><code>render_artifact()</code></td>
-                <td><code>artifact_id: str, lang='en', data=None, out_path=None</code></td>
-                <td><code>str</code></td>
-                <td>Compiles deliverable template and data dictionary into styled, print-ready HTML with Arabic RTL support.</td>
-              </tr>
-            </tbody>
-          </table>
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 0.5rem;">
+          <div style="font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--accent-blue);">Core Guarantees:</div>
+          <ul style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin: 0; padding-left: 1.25rem;">
+            <li><strong>Thread-Safe In-Memory Caching:</strong> Catalog indexing and schema parsing are memoized on first load for microsecond retrieval times.</li>
+            <li><strong>Source Immutability Protection:</strong> Internal filesystem resolvers block any write or modification operations targeting package data.</li>
+            <li><strong>Cross-Platform Compatibility:</strong> Native POSIX and Windows filesystem support with UTF-8 encoding normalization.</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Data Models Card -->
+      <!-- Section 2: Detailed 8 API Functions -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">Data Models &amp; Type Classes</h2>
-        
-        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><code>ArtifactSummary</code></h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">Represents high-level deliverable metadata returned by <code>list_artifacts()</code>:</p>
-        <pre><code>@dataclass(frozen=True)
-class ArtifactSummary:
-    artifact_id: str       # e.g. "PMO-03.01"
-    prefix: str            # e.g. "03_01"
-    name_en: str           # e.g. "Project Charter"
-    name_ar: str           # e.g. "ميثاق المشروع"
-    phase_code: str        # e.g. "03"
-    phase_name_en: str     # e.g. "Initiating"
-    phase_name_ar: str     # e.g. "البدء والترخيص"
-    tiers: List[str]       # e.g. ["1", "2", "3"]
-    fingerprint: str       # SHA-256 hash of immutable source form
-    completed_data_validation: dict</code></pre>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">2. The 8 Verified Core API Functions</h2>
 
-        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem;"><code>ValidationReport</code> &amp; <code>ValidationError</code></h3>
-        <pre><code>@dataclass
-class ValidationReport:
-    valid: bool                         # True if payload satisfies all schema constraints
-    errors: List[ValidationError]       # List of structured validation errors
-    schema_id: str                      # Canonical URI of the schema
-    schema_dialect: str                 # "https://json-schema.org/draft/2020-12/schema"
-    fingerprint: str                    # SHA-256 fingerprint of the schema
+        <!-- Function 1 -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.5rem;">
+            <code>tasleemat.list_artifacts(phase=None, tier=None, pack=None)</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            Discovers deliverable metadata objects across the entire catalog or filtered by lifecycle phase, sizing tier, or methodology pack.
+          </p>
+          <pre><code>import tasleemat
 
-@dataclass
-class ValidationError:
-    path: str                           # JSON Pointer / property path (e.g. "/budget/total")
-    message: str                        # Human-readable failure explanation
-    keyword: str                        # Violated keyword (e.g. "required", "format")
-    schema_path: str                    # Path inside the schema where rule was defined</code></pre>
-      </div>
+# List all 114 deliverables
+all_artifacts = tasleemat.list_artifacts()
+print(f"Total deliverables: {len(all_artifacts)}")
 
-      <!-- Real-World Python Script Card -->
-      <div class="card" style="padding: 2.25rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">Complete Working Python Example</h2>
-        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-          The following script demonstrates discovering tailored deliverables, loading asset templates, validating structured data, and rendering HTML output:
-        </p>
-        <pre><code>import tasleemat
+# Discover deliverables for Phase 03 (Initiating) in Tier 2
+phase_artifacts = tasleemat.list_artifacts(phase="03", tier=2)
+for art in phase_artifacts:
+    print(f"- [{art.artifact_id}] {art.name_en} / {art.name_ar}")</code></pre>
+        </div>
 
-# 1. Resolve tailored deliverable bundle for a Tier 2 Agile Project
-tailored_ids = tasleemat.get_tailoring_profile(tier=2, pack="agile")
-print(f"Tailored deliverable count: {len(tailored_ids)}")
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
-# 2. Inspect specific deliverable definition and assets
-art_id = "PMO-03.01"  # Project Charter
-meta = tasleemat.get_artifact_definition(art_id)
-print(f"Deliverable: {meta['name_en']} / {meta['name_ar']}")
+        <!-- Function 2 -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-emerald); margin-bottom: 0.5rem;">
+            <code>tasleemat.get_artifact_definition(artifact_id: str) -&gt; dict</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            Retrieves the canonical metadata dictionary for a specific deliverable code, including English/Arabic names, phase code, and supported tiers.
+          </p>
+          <pre><code>meta = tasleemat.get_artifact_definition("PMO-03.01")
+print(f"Name (EN): {meta['name_en']}")
+print(f"Name (AR): {meta['name_ar']}")
+print(f"Allocated Tiers: {meta['tiers']}")</code></pre>
+        </div>
 
-assets = tasleemat.get_artifact_assets(art_id, lang="en")
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 3 & 4 -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-amber); margin-bottom: 0.5rem;">
+            <code>tasleemat.get_artifact_assets(artifact_id: str, lang='en') -&gt; ArtifactAssets</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            Returns a secure wrapper object providing access to the 5 companion files: template, guide, example, schema, and dictionary.
+          </p>
+          <pre><code>assets = tasleemat.get_artifact_assets("PMO-03.01", lang="ar")
+
+# Direct content accessors
 template_text = assets.get_template_content()
-schema_data = assets.get_schema_data()
+guide_text = assets.get_guide_content()
+example_text = assets.get_example_content()
+schema_dict = assets.get_schema_data()
+dict_rows = assets.get_dictionary_rows()
 
-# 3. Validate a structured charter payload against Draft 2020-12 schema
-payload = {
+# Or fetch directly by role string:
+schema_raw = tasleemat.get_artifact_asset("PMO-03.01", role="schema", lang="en")</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 5 -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: #8b5cf6; margin-bottom: 0.5rem;">
+            <code>tasleemat.get_tailoring_profile(tier: Union[int, str], pack: str='general') -&gt; List[str]</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            Computes the exact deterministic list of required deliverable codes matching a governance tier and delivery pack.
+          </p>
+          <pre><code># Resolve required deliverables for Tier 2 Agile Project
+deliverable_ids = tasleemat.get_tailoring_profile(tier=2, pack="agile")
+print(f"Allocated {len(deliverable_ids)} deliverables: {deliverable_ids[:5]}...")</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 6 -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: #ec4899; margin-bottom: 0.5rem;">
+            <code>tasleemat.validate_artifact_data(artifact_id: str, data: dict, mode='strict') -&gt; ValidationReport</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            Executes pure-Python Draft 2020-12 schema validation on incoming JSON data payloads. Supports <code>strict</code> and <code>draft</code> modes.
+          </p>
+          <pre><code>payload = {
     "project_id": "PRJ-2026-CLOUD",
     "project_name": "Cloud Transformation Platform",
     "sponsor": "Executive VP Operations",
@@ -1401,12 +1379,221 @@ payload = {
     "authorization_date": "2026-10-15"
 }
 
-report = tasleemat.validate_artifact_data(art_id, payload, mode="strict")
+report = tasleemat.validate_artifact_data("PMO-03.01", payload, mode="strict")
 if report.valid:
     print("Payload conforms 100% to Draft 2020-12 schema!")
 else:
     for err in report.errors:
-        print(f"Schema Error at {err.path}: {err.message}")</code></pre>
+        print(f"Error at {err.path}: {err.message} (Rule: {err.keyword})")</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 7 & 8 -->
+        <div>
+          <h3 style="font-size: 1.2rem; color: #0284c7; margin-bottom: 0.5rem;">
+            <code>tasleemat.get_lexicon()</code> &amp; <code>tasleemat.render_artifact()</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            <code>get_lexicon()</code> retrieves bilingual project management terminology mappings. 
+            <code>render_artifact()</code> compiles markdown templates and structured data into standalone, print-ready HTML with Arabic RTL support.
+          </p>
+          <pre><code># Terminology lookup
+terms = tasleemat.get_lexicon(category="governance")
+
+# Headless HTML render
+html_output = tasleemat.render_artifact(
+    artifact_id="PMO-03.01",
+    lang="ar",
+    data=payload,
+    out_path="./output_charter.html"
+)</code></pre>
+        </div>
+
+      </div>
+
+      <!-- Section 3: Data Models & Classes -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">3. Data Models &amp; Type Classes</h2>
+        
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><code>ArtifactSummary</code> (Immutable Dataclass)</h3>
+        <pre><code>@dataclass(frozen=True)
+class ArtifactSummary:
+    artifact_id: str                    # Unique code (e.g. "PMO-03.01")
+    prefix: str                         # File prefix (e.g. "03_01")
+    name_en: str                        # English name (e.g. "Project Charter")
+    name_ar: str                        # Arabic name (e.g. "ميثاق المشروع")
+    phase_code: str                     # Lifecycle phase code ("00" to "07")
+    phase_name_en: str                  # Phase name in English
+    phase_name_ar: str                  # Phase name in Arabic
+    tiers: List[str]                    # Supported tiers: ["1", "2", "3"]
+    fingerprint: str                    # SHA-256 fingerprint of canonical source
+    completed_data_validation: dict     # Pre-validated baseline report</code></pre>
+
+        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem;"><code>ValidationReport</code> &amp; <code>ValidationError</code></h3>
+        <pre><code>@dataclass
+class ValidationReport:
+    valid: bool                         # True if payload passes all schema rules
+    errors: List[ValidationError]       # List of structured validation errors
+    schema_id: str                      # Canonical URI of the companion schema
+    schema_dialect: str                 # "https://json-schema.org/draft/2020-12/schema"
+    fingerprint: str                    # Cryptographic hash of schema file
+
+@dataclass
+class ValidationError:
+    path: str                           # JSON Pointer / property path (e.g. "/risks/0/score")
+    message: str                        # Detailed failure explanation
+    keyword: str                        # Violated schema keyword (e.g. "required", "format")
+    schema_path: str                    # Path inside schema where constraint was declared</code></pre>
+      </div>
+
+      <!-- Section 4: Production Tutorials -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">4. Production Implementation Tutorials</h2>
+
+        <!-- Tutorial 1: FastAPI -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-blue); margin-bottom: 0.5rem;">
+            Tutorial 1: Building a Governance REST API with FastAPI
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Wrap the <code>tasleemat</code> SDK into high-performance REST microservices for enterprise integration:
+          </p>
+          <pre><code>from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from typing import Optional, List, Dict, Any
+import tasleemat
+
+app = FastAPI(title="Tasleemat PMO Governance API", version="2.5.0")
+
+class TailorRequest(BaseModel):
+    tier: int
+    pack: str = "general"
+
+class ValidateRequest(BaseModel):
+    artifact_id: str
+    data: Dict[str, Any]
+    mode: str = "strict"
+
+@app.get("/api/v1/artifacts")
+def list_artifacts(phase: Optional[str] = None, tier: Optional[int] = None):
+    results = tasleemat.list_artifacts(phase=phase, tier=tier)
+    return [
+        {"id": a.artifact_id, "name_en": a.name_en, "name_ar": a.name_ar, "phase": a.phase_code}
+        for a in results
+    ]
+
+@app.post("/api/v1/tailor")
+def tailor_project(req: TailorRequest):
+    try:
+        deliverable_ids = tasleemat.get_tailoring_profile(tier=req.tier, pack=req.pack)
+        return {"tier": req.tier, "pack": req.pack, "count": len(deliverable_ids), "deliverables": deliverable_ids}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/v1/validate")
+def validate_deliverable(req: ValidateRequest):
+    report = tasleemat.validate_artifact_data(req.artifact_id, req.data, mode=req.mode)
+    return {
+        "valid": report.valid,
+        "errors": [{"path": e.path, "message": e.message, "rule": e.keyword} for e in report.errors],
+        "schema_id": report.schema_id
+    }</code></pre>
+        </div>
+
+        <!-- Tutorial 2: Streamlit Dashboard -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-emerald); margin-bottom: 0.5rem;">
+            Tutorial 2: Interactive PMO Portal with Streamlit
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Deploy an interactive internal web portal for project managers to tailor their projects and validate deliverables live:
+          </p>
+          <pre><code>import streamlit as st
+import json
+import tasleemat
+
+st.set_page_config(page_title="Tasleemat PMO Portal", layout="wide")
+st.title("🛡️ Enterprise PMO Deliverables Portal")
+
+st.sidebar.header("Project Tailoring Parameters")
+tier = st.sidebar.selectbox("Governance Sizing Tier", [1, 2, 3], index=1)
+pack = st.sidebar.selectbox("Delivery Archetype Pack", ["general", "agile", "ai", "predictive", "hybrid"])
+
+deliverables = tasleemat.get_tailoring_profile(tier=tier, pack=pack)
+st.sidebar.success(f"Allocated Deliverables: {len(deliverables)}")
+
+col1, col2 = st.columns([1, 1])
+
+with col1:
+    st.subheader("Required Deliverables Manifest")
+    selected_id = st.selectbox("Select Deliverable to Inspect", deliverables)
+    assets = tasleemat.get_artifact_assets(selected_id, lang="en")
+    st.markdown(f"**Guide:**\n{assets.get_guide_content()[:500]}...")
+
+with col2:
+    st.subheader(f"Validate Payload against Schema ({selected_id})")
+    sample_json = json.dumps({"project_id": "PRJ-01", "name": "Cloud App"}, indent=2)
+    user_input = st.text_area("JSON Payload", sample_json, height=220)
+    
+    if st.button("Run Schema Validation"):
+        try:
+            payload = json.loads(user_input)
+            report = tasleemat.validate_artifact_data(selected_id, payload, mode="strict")
+            if report.valid:
+                st.success("✅ Payload passed all Draft 2020-12 schema assertions!")
+            else:
+                for err in report.errors:
+                    st.error(f"❌ At {err.path}: {err.message}")
+        except json.JSONDecodeError as e:
+            st.warning(f"Invalid JSON format: {e}")</code></pre>
+        </div>
+
+        <!-- Tutorial 3: EVM Engine -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: var(--accent-amber); margin-bottom: 0.5rem;">
+            Tutorial 3: Attested Earned Value Management (EVM) Calculation Engine
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Execute deterministic, mathematically audited computations for project metrics in <code>PMO-06.05</code> with zero-division handling:
+          </p>
+          <pre><code>def calculate_evm_metrics(pv: float, ev: float, ac: float, bac: float) -&gt; dict:
+    # Computes PMI PMBOK standard Earned Value Management metrics with safe division
+    # Variances
+    cv = ev - ac                               # Cost Variance
+    sv = ev - pv                               # Schedule Variance
+
+    # Indices
+    cpi = (ev / ac) if ac &gt; 0 else 1.0        # Cost Performance Index
+    spi = (ev / pv) if pv &gt; 0 else 1.0        # Schedule Performance Index
+
+    # Forecasting
+    eac = (bac / cpi) if cpi &gt; 0 else bac      # Estimate At Completion
+    etc = eac - ac                             # Estimate To Complete
+    vac = bac - eac                            # Variance At Completion
+
+    # To-Complete Performance Index (TCPI)
+    remaining_work = bac - ev
+    remaining_budget = bac - ac
+    tcpi = (remaining_work / remaining_budget) if remaining_budget &gt; 0 else 1.0
+
+    return {
+        "cost_variance": round(cv, 2),
+        "schedule_variance": round(sv, 2),
+        "cpi": round(cpi, 3),
+        "spi": round(spi, 3),
+        "eac": round(eac, 2),
+        "etc": round(etc, 2),
+        "vac": round(vac, 2),
+        "tcpi": round(tcpi, 3),
+        "status": "HEALTHY" if cpi &gt;= 1.0 and spi &gt;= 1.0 else "WARNING"
+    }
+
+# Example calculation:
+metrics = calculate_evm_metrics(pv=100000, ev=95000, ac=105000, bac=250000)
+print(f"Project CPI: {metrics['cpi']}, SPI: {metrics['spi']}, EAC: ${metrics['eac']:,}")</code></pre>
+        </div>
+
       </div>
 
     </div>

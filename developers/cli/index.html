@@ -1242,12 +1242,12 @@ tr:hover td {
         <nav style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;" aria-label="Breadcrumb">
           <a href="/Tasleemat/">Home</a> &gt; 
           <a href="/Tasleemat/developers/">Developers &amp; AI</a> &gt; 
-          <span style="color: var(--text-main); font-weight: 600;">CLI Tooling</span>
+          <span style="color: var(--text-main); font-weight: 600;">CLI Tooling &amp; Automation</span>
         </nav>
-        <div class="hero-pill"><span>⌨️ Command Line Executable</span></div>
-        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">CLI Tooling &amp; Scaffolding Reference</h1>
+        <div class="hero-pill"><span>⌨️ Command Line Interface (CLI)</span></div>
+        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">CLI Tooling, Scaffolding &amp; Automation Manual</h1>
         <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto;">
-          The authoritative command-line interface (<code>tasleemat</code>) for terminal automation, interactive workspace scaffolding, catalog querying, and test validation.
+          The authoritative command-line executable (<code>tasleemat</code>) for terminal automation, interactive workspace scaffolding, catalog querying, LLM synthesis, and air-gapped CI/CD execution.
         </p>
       </div>
     </section>
@@ -1258,141 +1258,365 @@ tr:hover td {
         <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-right: 0.5rem; text-transform: uppercase;">
           Sections:
         </span>
-        <a href="/Tasleemat/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📖 Developers Hub</a><a href="/Tasleemat/developers/cli/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.35rem 0.75rem; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">⌨️ CLI Tooling</a><a href="/Tasleemat/developers/sdk/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🐍 Python SDK</a><a href="/Tasleemat/developers/mcp/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🔌 MCP Server</a><a href="/Tasleemat/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📐 Schemas & Validation</a><a href="/Tasleemat/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🤖 Agentic Swarms & CI/CD</a>
+        <a href="/Tasleemat/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📖 Developers Hub</a><a href="/Tasleemat/developers/cli/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">⌨️ CLI Tooling & Automation</a><a href="/Tasleemat/developers/sdk/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🐍 Python SDK & API</a><a href="/Tasleemat/developers/mcp/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🔌 MCP Server & IDEs</a><a href="/Tasleemat/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📐 Schemas & Validation</a><a href="/Tasleemat/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🤖 Agentic Swarms & CI/CD</a>
       </div>
     </div>
     
 
     <div class="container" style="margin-bottom: 5rem; max-width: 960px;">
       
-      <!-- Command 1: init -->
+      <!-- Section 1: Overview & Environment Architecture -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-          <h2 style="font-size: 1.5rem; margin: 0; color: var(--text-main);">A. Workspace Scaffolding (<code>tasleemat init</code>)</h2>
-          <span class="badge" style="background: var(--accent-emerald-bg); color: var(--accent-emerald); font-weight: 700; font-size: 0.8rem; padding: 0.25rem 0.6rem; border-radius: 9999px;">Primary Tool</span>
-        </div>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">1. CLI Architecture &amp; Environment Variables</h2>
         <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-          The <code>init</code> command creates a complete project folder tailored to your governance tier (Tier 1, 2, or 3) and delivery methodology pack (General, Agile, AI, Predictive, Hybrid). 
-          Each deliverable in the profile is pre-scaffolded with its full 5-file bundle: template, authoring guide, realistic example, companion JSON schema, and CSV data dictionary.
+          The <code>tasleemat</code> command-line executable is compiled with zero external C-dependencies. It runs natively across Linux, macOS, and Windows.
+          It operates in two distinct execution modes: an <strong>interactive terminal wizard</strong> for practitioners and human managers, 
+          and a <strong>deterministic headless flag mode</strong> optimized for shell scripts, cron jobs, and CI/CD pipelines.
         </p>
+        
+        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Global Environment Variables</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Variable</th>
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>TASLEEMAT_HOME</code></td>
+                <td><code>~/.tasleemat</code></td>
+                <td>Root directory for localized caches, project registry, and telemetry.</td>
+              </tr>
+              <tr>
+                <td><code>TASLEEMAT_CONFIG_FILE</code></td>
+                <td><code>~/.tasleemat/config.json</code></td>
+                <td>Location of secure API keys and local LLM endpoints (file permissions <code>0600</code>).</td>
+              </tr>
+              <tr>
+                <td><code>TASLEEMAT_DEFAULT_LANG</code></td>
+                <td><code>en</code></td>
+                <td>Fallback language for outputs and templates if <code>--lang</code> flag is omitted (<code>en</code> or <code>ar</code>).</td>
+              </tr>
+              <tr>
+                <td><code>TASLEEMAT_NO_COLOR</code></td>
+                <td><code>0</code></td>
+                <td>Set to <code>1</code> to disable ANSI terminal colors for raw logging pipelines.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <h3 style="font-size: 1.1rem; margin-top: 1.25rem; margin-bottom: 0.5rem;">Interactive Wizard Mode</h3>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-          Running without arguments prompts interactively for project code, project name, project manager, sponsor, sizing tier, and language:
+        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Standard Exit Codes Matrix</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">
+          The CLI produces strict POSIX exit codes to guarantee deterministic pipeline control:
         </p>
-        <pre><code>tasleemat init</code></pre>
+        <ul style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.8; padding-left: 1.5rem;">
+          <li><code>0</code>: <strong>SUCCESS</strong> - Command completed successfully with all outputs written.</li>
+          <li><code>1</code>: <strong>VALIDATION / RUNTIME ERROR</strong> - Schema validation failure, missing template, or LLM connection failure.</li>
+          <li><code>2</code>: <strong>INVALID ARGUMENTS</strong> - Unrecognized flag, unsupported tier number, or illegal language code.</li>
+          <li><code>127</code>: <strong>DELIVERABLE NOT FOUND</strong> - Specified artifact ID (e.g. <code>PMO-99.99</code>) does not exist in the 114 catalog.</li>
+        </ul>
+      </div>
 
-        <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Headless Automation Mode (CLI Flags)</h3>
-        <pre><code># Scaffold Tier 2 Agile Project in Arabic
+      <!-- Section 2: Command Reference -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">2. Exhaustive Command Reference &amp; Flags</h2>
+
+        <!-- Command 1: init -->
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-blue); margin-bottom: 0.5rem;">A. <code>tasleemat init</code> (Workspace Scaffolding)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Scaffolds an isolated project repository pre-tailored to your governance tier (1, 2, or 3) and delivery archetype pack. 
+            For every required deliverable, the CLI generates the complete 5-asset bundle:
+            <strong>Template (Markdown)</strong>, <strong>Practitioner Guide (Markdown)</strong>, <strong>Realistic Example (Markdown)</strong>, 
+            <strong>Companion Schema (JSON Draft 2020-12)</strong>, and <strong>Data Dictionary (CSV)</strong>.
+          </p>
+          <pre><code># Interactive wizard mode (prompts for project metadata)
+tasleemat init
+
+# Full headless automation flags (e.g. Tier 2 Agile Project in Arabic)
 tasleemat init \
   --tier 2 \
   --pack agile \
   --lang ar \
-  --code "PRJ-2026-CLOUD-01" \
+  --code "PRJ-2026-CLOUD" \
   --name "منصة التحول الرقمي السحابي" \
   --pm "سارة الأحمد" \
   --sponsor "د. خالد المنصور" \
-  --out ./workspaces/PRJ-2026-CLOUD-01
+  --out ./projects/PRJ-2026-CLOUD \
+  --force
 
-# Enterprise Tier 1 Strategic Project in both English and Arabic
+# Enterprise Tier 1 Hybrid Project with Bilingual (both) Deliverables
 tasleemat init \
   --tier 1 \
   --pack hybrid \
   --lang both \
-  --code "PRJ-2026-CORE" \
-  --name "Enterprise Core Banking Migration" \
-  --pm "Tariq Al-Harbi" \
-  --sponsor "Executive VP IT" \
+  --code "PRJ-CORE-MIGRATE" \
+  --name "Core Banking Replacement Program" \
+  --pm "Fahad Al-Harbi" \
+  --sponsor "Chief Operating Officer" \
   --out ./enterprise_workspace</code></pre>
-
-        <div style="margin-top: 1.5rem; background: var(--bg-main); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
-          <div style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem;">Supported CLI Options:</div>
-          <ul style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; padding-left: 1.25rem;">
-            <li><code>--tier &lt;1|2|3&gt;</code>: Governance sizing tier (1 = Mega/Strategic, 2 = Standard, 3 = Lean/Fast-track). Default: 2.</li>
-            <li><code>--pack &lt;general|agile|ai|predictive|hybrid&gt;</code>: Delivery archetype pack. Default: general.</li>
-            <li><code>--lang &lt;en|ar|both&gt;</code>: Target language generation mode. Default: en.</li>
-            <li><code>--code &lt;string&gt;</code>: Project code identifier (e.g., PRJ-2026-001).</li>
-            <li><code>--name &lt;string&gt;</code>: Formal project title.</li>
-            <li><code>--pm &lt;string&gt;</code>: Project Manager name.</li>
-            <li><code>--sponsor &lt;string&gt;</code>: Executive Project Sponsor name.</li>
-            <li><code>--out &lt;dir&gt;</code>: Destination output directory path.</li>
-          </ul>
+          
+          <div style="margin-top: 1rem; background: var(--bg-main); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem;">Supported Flags:</div>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; padding-left: 1.25rem; margin: 0;">
+              <li><code>--tier &lt;1|2|3&gt;</code>: Governance tier (1 = Strategic/Mega, 2 = Standard Enterprise, 3 = Lean/Fast-track). Default: 2.</li>
+              <li><code>--pack &lt;general|agile|ai|predictive|hybrid&gt;</code>: Delivery methodology pack. Default: general.</li>
+              <li><code>--lang &lt;en|ar|both&gt;</code>: Language generation mode. Default: en.</li>
+              <li><code>--code &lt;string&gt;</code>: Unique project identifier code.</li>
+              <li><code>--name &lt;string&gt;</code>: Official project title.</li>
+              <li><code>--pm &lt;string&gt;</code>: Name of assigned Project Manager.</li>
+              <li><code>--sponsor &lt;string&gt;</code>: Name and title of Project Sponsor.</li>
+              <li><code>--out &lt;path&gt;</code>: Target filesystem directory path.</li>
+              <li><code>--force</code>: Overwrites existing destination directory without prompt.</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- Command 2: list & search -->
-      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">B. Catalog Exploration &amp; Search (<code>tasleemat list</code> &amp; <code>search</code>)</h2>
-        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-          Query the canonical 114 deliverables catalog directly from the terminal with bilingual support and phase filters.
-        </p>
-        <pre><code># List all deliverables in English or Arabic
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 2: list & search -->
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-emerald); margin-bottom: 0.5rem;">B. <code>tasleemat list</code> &amp; <code>search</code> (Catalog Exploration)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Inspect the 114 canonical deliverables directly from your terminal. Supports phase filtering, tier filtering, and JSON output formatting for piping into <code>jq</code>.
+          </p>
+          <pre><code># List all 114 deliverables in English or Arabic
 tasleemat list --lang en
 tasleemat list --lang ar
 
-# Search by English keyword, Arabic keyword, or deliverable ID
-tasleemat search "Risk" --lang en
+# Filter by project lifecycle phase code (00 to 07)
+tasleemat list --phase 04 --lang en
+
+# Filter by tier and pack
+tasleemat list --tier 3 --pack agile
+
+# Output catalog as machine-readable JSON array
+tasleemat list --json | jq '.[0]'
+
+# Full-text fuzzy search across deliverable titles, keywords, and IDs
+tasleemat search "Charter"
 tasleemat search "ميثاق" --lang ar
-tasleemat search "PMO-03.01" --lang en
+tasleemat search "PMO-04.08.02"</code></pre>
+        </div>
 
-# Filter deliverables by phase code (00 to 07)
-tasleemat list --phase 04</code></pre>
-      </div>
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
-      <!-- Command 3: config -->
-      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">C. LLM AI Account Configuration (<code>tasleemat config</code>)</h2>
-        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-          Manage API keys and preferred LLM models for automated document synthesis. Configurations are stored locally in <code>~/.tasleemat/config.json</code> with restrictive file permissions.
-        </p>
-        <pre><code># Configure Google Gemini
+        <!-- Command 3: config -->
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-amber); margin-bottom: 0.5rem;">C. <code>tasleemat config</code> (AI Model Credentials Management)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Securely configure LLM provider API credentials and default models for automated document synthesis. 
+            All tokens are stored locally in <code>~/.tasleemat/config.json</code> with POSIX permissions <code>0600</code>.
+          </p>
+          <pre><code># Configure Google Gemini
 tasleemat config set --provider gemini --model gemini-2.5-flash --key "AIzaSy..."
 
-# Configure OpenAI GPT-4o
+# Configure OpenAI
 tasleemat config set --provider openai --model gpt-4o --key "sk-proj-..."
 
 # Configure Anthropic Claude
 tasleemat config set --provider anthropic --model claude-3-5-sonnet-20241022 --key "sk-ant-..."
 
-# Configure local Ollama endpoint (Offline / Air-gapped)
+# Configure Local Ollama Endpoint (Air-Gapped / High-Security Setup)
 tasleemat config set --provider ollama --model llama3.2 --endpoint "http://localhost:11434"
 
-# Display active configuration (masks confidential tokens)
-tasleemat config show</code></pre>
-      </div>
+# Display configured providers (keys are automatically masked with asterisks)
+tasleemat config show
 
-      <!-- Command 4: generate -->
-      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">D. AI Deliverable Synthesis (<code>tasleemat generate</code>)</h2>
-        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-          Synthesize draft deliverable markdown files from kickoff meeting notes using configured LLM providers:
-        </p>
-        <pre><code># Generate Project Charter (PMO-03.01) from raw text notes
+# Reset credentials for a specific provider
+tasleemat config reset --provider openai</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 4: generate -->
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.25rem; color: #8b5cf6; margin-bottom: 0.5rem;">D. <code>tasleemat generate</code> (Automated Document Synthesis)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Synthesize compliant markdown deliverables from raw meeting notes or text requirements using your configured LLM provider.
+            Also features an offline <code>--mock</code> mode for test environments.
+          </p>
+          <pre><code># Generate Project Charter (PMO-03.01) from kick-off notes file
 tasleemat generate \
   --form PMO-03.01 \
-  --notes ./meeting_minutes.txt \
+  --notes ./kickoff_notes.txt \
   --lang en \
-  --out ./drafts/Project_Charter.md
+  --out ./Project_Charter.md
 
-# Offline mock mode for CI/CD test pipelines (zero token consumption)
+# Pipe notes directly from stdin (ideal for shell automation)
+cat &lt;&lt; 'EOF' | tasleemat generate --form PMO-04.08.02 --lang ar --out ./Risk_Register.md -
+المشروع يواجه احتمالية تأخر وصول الخوادم بنسبة 40%، مما قد يعطل الإطلاق أسبوعين.
+المسؤول عن المتابعة هو مهندس البنية التحتية.
+EOF
+
+# Offline mock mode for CI/CD test runs (zero tokens consumed, runs in 50ms)
 tasleemat generate \
   --form PMO-03.01 \
-  --notes "Mock project notes" \
+  --notes "Mock input data" \
   --mock \
-  --out ./ci_output/Mock_Charter.md</code></pre>
-      </div>
+  --out ./mock_charter.md</code></pre>
+        </div>
 
-      <!-- Command 5: test & mcp -->
-      <div class="card" style="padding: 2.25rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">E. Automated Test Suite &amp; MCP Launcher (<code>test</code> &amp; <code>mcp</code>)</h2>
-        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-          Execute internal regression test suites or launch the stdio MCP server directly from the CLI:
-        </p>
-        <pre><code># Run full regression test suite (140+ unit &amp; integration tests)
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 5: test & mcp -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #ec4899; margin-bottom: 0.5rem;">E. <code>tasleemat test</code> &amp; <code>tasleemat mcp</code></h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Execute internal verification suites or launch the stdio Model Context Protocol (MCP) server for IDE integration:
+          </p>
+          <pre><code># Run complete automated test suite (140+ unit and integration checks)
 tasleemat test -v
 
-# Start the Model Context Protocol stdio server
+# Run tests with fail-fast mode
+tasleemat test -v --failfast
+
+# Start the Model Context Protocol stdio server for Claude Desktop / Cursor
 tasleemat mcp</code></pre>
+        </div>
+
+      </div>
+
+      <!-- Section 3: Step-by-Step Tutorials -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">3. Practical Step-by-Step Tutorials</h2>
+
+        <!-- Tutorial 1 -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.75rem;">
+            Tutorial 1: Zero-to-Production Enterprise Workspace Scaffolding
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Follow this end-to-end walkthrough to create an audited project directory for a strategic healthcare transformation initiative:
+          </p>
+          <ol style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; padding-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>Discover Required Deliverables:</strong> Run <code>tasleemat list --tier 1 --pack hybrid</code> to inspect the required 42 deliverables.</li>
+            <li><strong>Scaffold the Workspace:</strong> Execute the headless initialization command:
+              <pre><code>tasleemat init \
+  --tier 1 \
+  --pack hybrid \
+  --lang en \
+  --code "PRJ-2026-MED" \
+  --name "National Health EHR Integration" \
+  --pm "Dr. Mariam Al-Ghamdi" \
+  --sponsor "Ministerial Steering Committee" \
+  --out ./PRJ-2026-MED</code></pre>
+            </li>
+            <li><strong>Inspect Directory Structure:</strong> Navigate into <code>./PRJ-2026-MED</code>. You will find:
+              <pre><code>PRJ-2026-MED/
+├── manifest.json                  # Machine-readable workspace catalog &amp; SHA-256 hashes
+├── 01_Initiation/
+│   ├── PMO-03.01_Project_Charter/
+│   │   ├── template.md            # Pure Markdown template with placeholder brackets
+│   │   ├── guide.md               # Practitioner authoring instructions &amp; RACI tips
+│   │   ├── example.md             # Fully filled realistic enterprise example
+│   │   ├── schema.json            # Companion JSON Schema Draft 2020-12
+│   │   └── dictionary.csv         # Standardized field dictionary &amp; data types
+│   └── PMO-03.02_Stakeholder_Register/
+└── ...</code></pre>
+            </li>
+            <li><strong>Synthesize Charter from Raw Notes:</strong> Feed your kickoff meeting notes directly into the synthesizer:
+              <pre><code>tasleemat generate \
+  --form PMO-03.01 \
+  --notes ./meeting_minutes.txt \
+  --out ./PRJ-2026-MED/01_Initiation/PMO-03.01_Project_Charter/template.md</code></pre>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Tutorial 2 -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-emerald); margin-bottom: 0.75rem;">
+            Tutorial 2: Air-Gapped High-Security Enterprise Setup
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            For defense, banking, and government environments with zero outbound internet connectivity:
+          </p>
+          <ol style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; padding-left: 1.5rem;">
+            <li><strong>Transfer Wheel Package:</strong> Copy the pre-built <code>tasleemat-2.5.0.post1-py3-none-any.whl</code> to your air-gapped bastion host via verified removable media.</li>
+            <li><strong>Offline Installation:</strong>
+              <pre><code>pip install --no-index --find-links . tasleemat-2.5.0.post1-py3-none-any.whl</code></pre>
+            </li>
+            <li><strong>Configure Local Ollama Instance:</strong> Point Tasleemat to an on-premises air-gapped LLM instance:
+              <pre><code>tasleemat config set --provider ollama --model llama3.2 --endpoint "http://10.0.50.12:11434"</code></pre>
+            </li>
+            <li><strong>Verify Zero Telemetry:</strong> Run <code>tasleemat test -v</code>. All 146 internal tests execute in memory without emitting any outbound HTTP requests.</li>
+          </ol>
+        </div>
+
+        <!-- Tutorial 3 -->
+        <div>
+          <h3 style="font-size: 1.2rem; color: var(--accent-amber); margin-bottom: 0.75rem;">
+            Tutorial 3: Multi-Project Enterprise Portfolio Batch Provisioning
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Use this bash automation recipe to batch-scaffold multiple project workspaces from a centralized portfolio CSV registry:
+          </p>
+          <pre><code>#!/usr/bin/env bash
+# provision_portfolio.sh - Batch PMO Workspace Initializer
+set -euo pipefail
+
+CSV_FILE="portfolio_registry.csv"
+OUTPUT_ROOT="./enterprise_pmo_workspaces"
+
+mkdir -p "$OUTPUT_ROOT"
+
+echo "Reading projects from $CSV_FILE..."
+# CSV Format: code,name,tier,pack,lang,pm,sponsor
+tail -n +2 "$CSV_FILE" | while IFS=',' read -r code name tier pack lang pm sponsor; do
+    echo "=========================================================="
+    echo "Scaffolding: [$code] $name (Tier $tier, Pack $pack)..."
+    
+    tasleemat init \
+      --code "$code" \
+      --name "$name" \
+      --tier "$tier" \
+      --pack "$pack" \
+      --lang "$lang" \
+      --pm "$pm" \
+      --sponsor "$sponsor" \
+      --out "$OUTPUT_ROOT/$code" \
+      --force
+      
+    echo "Successfully created: $OUTPUT_ROOT/$code"
+done
+
+echo "Portfolio provisioning complete! All workspaces verified."</code></pre>
+        </div>
+
+      </div>
+
+      <!-- Section 4: CI/CD & Shell Recipes -->
+      <div class="card" style="padding: 2.25rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">4. Enterprise DevOps &amp; Shell Recipes</h2>
+        
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">A. Git Pre-Commit Hook</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem;">
+          Place this script in <code>.git/hooks/pre-commit</code> to prevent committing corrupted workspaces or invalid deliverable schemas:
+        </p>
+        <pre><code>#!/usr/bin/env bash
+# .git/hooks/pre-commit
+echo "[Tasleemat Hook] Verifying project integrity..."
+
+# 1. Run internal unit tests
+if ! tasleemat test &gt; /dev/null 2&gt;&amp;1; then
+    echo "ERROR: Tasleemat regression tests failed! Aborting commit."
+    exit 1
+fi
+
+echo "[Tasleemat Hook] Pre-commit checks passed successfully."
+exit 0</code></pre>
+
+        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">B. Parsing Catalog via <code>jq</code></h3>
+        <pre><code># Extract deliverable codes and English names for Phase 03
+tasleemat list --phase 03 --json | jq -r '.[] | "\(.id): \(.name_en)"'
+
+# Count deliverables allocated to Tier 3
+tasleemat list --tier 3 --json | jq 'length'</code></pre>
       </div>
 
     </div>

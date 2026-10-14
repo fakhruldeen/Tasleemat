@@ -1245,9 +1245,9 @@ tr:hover td {
           <span style="color: var(--text-main); font-weight: 600;">خادم بروتوكول MCP</span>
         </nav>
         <div class="hero-pill"><span>🔌 بروتوكول سياق النموذج (MCP)</span></div>
-        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">خادم بروتوكول سياق النموذج (MCP)</h1>
+        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">دليل خادم بروتوكول سياق النموذج (MCP)</h1>
         <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
-          ربط بيئات Claude Desktop و Cursor والوكلاء الأذكياء مباشرة بتسليمات المشروع ومخططاتها عبر بروتوكول JSON-RPC 2.0.
+          ربط بيئات التطوير الذكية مثل Cursor و Claude Desktop والوكلاء الأذكياء مباشرة بالـ 114 تسليمة ومخططاتها المعيارية عبر بروتوكول JSON-RPC 2.0 stdio الموحد.
         </p>
       </div>
     </section>
@@ -1258,33 +1258,57 @@ tr:hover td {
         <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-right: 0.5rem; text-transform: uppercase;">
           الأقسام الفنية:
         </span>
-        <a href="/Tasleemat/ar/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📖 بوابة المطورين</a><a href="/Tasleemat/ar/developers/cli/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">⌨️ أداة الطرفية (CLI)</a><a href="/Tasleemat/ar/developers/sdk/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🐍 مكتبة بايثون (SDK)</a><a href="/Tasleemat/ar/developers/mcp/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.35rem 0.75rem; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">🔌 خادم بروتوكول MCP</a><a href="/Tasleemat/ar/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📐 المخططات والتحقق</a><a href="/Tasleemat/ar/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🤖 أسراب الوكلاء و CI/CD</a>
+        <a href="/Tasleemat/ar/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📖 بوابة المطورين</a><a href="/Tasleemat/ar/developers/cli/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">⌨️ أداة الطرفية والأتمتة</a><a href="/Tasleemat/ar/developers/sdk/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🐍 مكتبة بايثون (SDK)</a><a href="/Tasleemat/ar/developers/mcp/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">🔌 خادم بروتوكول MCP</a><a href="/Tasleemat/ar/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📐 المخططات والتحقق</a><a href="/Tasleemat/ar/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🤖 أسراب الوكلاء و CI/CD</a>
       </div>
     </div>
     
 
     <div class="container" style="margin-bottom: 5rem; max-width: 960px;">
       
-      <!-- What is MCP Card AR -->
+      <!-- Section 1: Architecture AR -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">المعمارية القياسية لبروتوكول MCP</h2>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">1. معمارية البروتوكول ومسار المصافحة (Handshake)</h2>
         <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
-          يسمح بروتوكول سياق النموذج (MCP) لمساعدي الذكاء الاصطناعي بقراءة الأدوات البرمجية، جلب المخططات، والتحقق من صحة البيانات دون أي هلوسة في المحتوى.
-          توفر حزمة تسليمات أداة تشغيل رسمية مستقلة (<code>tasleemat-mcp</code>) تتواصل عبر قنوات <code>stdio</code> القياسية.
+          يُعد بروتوكول سياق النماذج (Model Context Protocol - MCP) المعيار الدولي المفتوح لربط مساعدي الذكاء الاصطناعي بمستودعات البيانات وأدوات التشغيل الخارجية.
+          توفر منظومة تسليمات خادماً مستقلاً (<code>tasleemat-mcp</code>) يتواصل عبر مجاري الإدخال والإخراج القياسية (<code>stdio</code>) 
+          باستخدام رسائل <strong>JSON-RPC 2.0</strong> الصارمة، مما يمنع تعارض المنافذ الشبكية ويتيح التشغيل في بيئات معزولة وآمنة تماماً.
         </p>
-        <pre style="direction: ltr; text-align: left;"><code># تجربة تشغيل خادم MCP في سطر الأوامر
-tasleemat-mcp</code></pre>
+        
+        <pre><code class="language-mermaid">
+sequenceDiagram
+    autonumber
+    actor User as المهندس / مدير المشروع
+    participant Host as المساعد الذكي (Cursor / Claude)
+    participant Server as خادم Tasleemat MCP (stdio)
+    participant Engine as محرك تسليمات الأساسي
+
+    Host->>Server: رسالة المصافحة "initialize"
+    Server-->>Host: تأكيد الإمكانات وعرض الأدوات المتاحة
+    Host->>Server: إشعار الاكتمال "notifications/initialized"
+    User->>Host: "خصص لي تسليمات مشروع رشيق من المستوى 2"
+    Host->>Server: استدعاء الأداة (name: "tasleemat_tailor_project", args: {tier: 2, pack: "agile"})
+    Server->>Engine: get_tailoring_profile(tier=2, pack="agile")
+    Engine-->>Server: قائمة بـ 34 تسليمة معتمدة
+    Server-->>Host: نتيجة JSON-RPC (بيان التسليمات)
+    Host->>User: "إليك قائمة التسليمات المعتمدة لمشروعك..."
+        </code></pre>
       </div>
 
-      <!-- IDE Configurations Card AR -->
+      <!-- Section 2: IDE Configurations AR -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">إعدادات بيئات ومساعدي الذكاء الاصطناعي</h2>
-        
-        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">1. تطبيق Claude Desktop</h3>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-          أضف الإعداد في ملف <code>claude_desktop_config.json</code>:
-        </p>
-        <pre style="direction: ltr; text-align: left;"><code>{
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">2. إعدادات التكامل مع بيئات التطوير الذكية</h2>
+
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.5rem;">أ. تطبيق Anthropic Claude Desktop</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            أضف المقطع التالي إلى ملف التكوين <code>claude_desktop_config.json</code>:
+          </p>
+          <ul style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; padding-right: 1.25rem;">
+            <li><strong>نظام macOS:</strong> <code>~/Library/Application Support/Claude/claude_desktop_config.json</code></li>
+            <li><strong>نظام Windows:</strong> <code>%APPDATA%\Claude\claude_desktop_config.json</code></li>
+            <li><strong>نظام Linux:</strong> <code>~/.config/Claude/claude_desktop_config.json</code></li>
+          </ul>
+          <pre style="direction: ltr; text-align: left;"><code>{
   "mcpServers": {
     "tasleemat": {
       "command": "tasleemat-mcp",
@@ -1292,12 +1316,16 @@ tasleemat-mcp</code></pre>
     }
   }
 }</code></pre>
+        </div>
 
-        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">2. محرر Cursor IDE</h3>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-          أضف في ملف <code>.cursor/mcp.json</code> داخل المجلد الرئيسي لمشروعك:
-        </p>
-        <pre style="direction: ltr; text-align: left;"><code>{
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-emerald); margin-bottom: 0.5rem;">ب. بيئة Cursor الذكية</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            أنشئ ملف <code>.cursor/mcp.json</code> في المجلد الرئيسي للمشروع:
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>{
   "mcpServers": {
     "tasleemat": {
       "command": "python3",
@@ -1305,57 +1333,227 @@ tasleemat-mcp</code></pre>
     }
   }
 }</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <div>
+          <h3 style="font-size: 1.2rem; color: var(--accent-amber); margin-bottom: 0.5rem;">ج. محررات VS Code (Cline و Continue.dev)</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            في إعدادات إضافة MCP داخل المحرر، أضف التكوين التالي مع تفعيل الموافقة التلقائية على الأدوات:
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>{
+  "mcpServers": {
+    "tasleemat": {
+      "command": "tasleemat-mcp",
+      "args": [],
+      "disabled": false,
+      "autoApprove": [
+        "tasleemat_list_forms",
+        "tasleemat_get_form",
+        "tasleemat_get_schema",
+        "tasleemat_validate",
+        "tasleemat_tailor_project",
+        "tasleemat_calculate_eva"
+      ]
+    }
+  }
+}</code></pre>
+        </div>
       </div>
 
-      <!-- 6 Exposed Tools Card AR -->
-      <div class="card" style="padding: 2.25rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">الأدوات الست المتخصصة لخادم MCP</h2>
-        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
-          يعلن الخادم للعملاء عن 6 أدوات برمجية حتمية:
-        </p>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>اسم الأداة</th>
-                <th>المعاملات</th>
-                <th>الوصف والوظيفة</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>tasleemat_list_forms</code></td>
-                <td><code>phase (اختياري), lang (اختياري)</code></td>
-                <td>إرجاع قائمة التسليمات بمعرفاتها وعناوينها الثنائية ومراحلها.</td>
-              </tr>
-              <tr>
-                <td><code>tasleemat_get_form</code></td>
-                <td><code>artifact_id, asset_type, lang</code></td>
-                <td>جلب القالب أو الدليل أو المثال أو موجه الذكاء الاصطناعي أو المخطط أو القاموس.</td>
-              </tr>
-              <tr>
-                <td><code>tasleemat_get_schema</code></td>
-                <td><code>artifact_id</code></td>
-                <td>جلب مخطط JSON Draft 2020-12 الكامل للتسليمة.</td>
-              </tr>
-              <tr>
-                <td><code>tasleemat_validate</code></td>
-                <td><code>artifact_id, data, mode</code></td>
-                <td>التحقق الآلي من البيانات وإرجاع مسار الخطأ بدقة.</td>
-              </tr>
-              <tr>
-                <td><code>tasleemat_tailor_project</code></td>
-                <td><code>tier (1, 2, 3), pack</code></td>
-                <td>إرجاع قائمة التسليمات المخصصة للمشروع بحسب الحجم والمنهجية.</td>
-              </tr>
-              <tr>
-                <td><code>tasleemat_calculate_eva</code></td>
-                <td><code>pv, ev, ac, bac</code></td>
-                <td>تنفيذ الحسابات الرياضية الموثقة لمقاييس القيمة المكتسبة (PMO-06.05).</td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Section 3: The 6 Tools Reference AR -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">3. المرجع التفصيلي لأدوات MCP الست وحمولات البيانات</h2>
+
+        <!-- Tool 1 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.5rem; direction: ltr; text-align: right;">1. <code>tasleemat_list_forms</code></h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            استعراض التسليمات المتاحة مع تصفية محددة بالمرحلة، مستوى الحجم، أو اللغة.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>// طلب العميل (Client Request)
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "tools/call",
+  "params": {
+    "name": "tasleemat_list_forms",
+    "arguments": {
+      "phase": "03",
+      "lang": "ar"
+    }
+  }
+}</code></pre>
         </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Tool 2 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-emerald); margin-bottom: 0.5rem; direction: ltr; text-align: right;">2. <code>tasleemat_get_form</code></h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            جلب أصول التسليمة: <code>template</code> (القالب)، <code>guide</code> (الدليل)، <code>example</code> (المثال)، <code>schema</code> (المخطط).
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>// طلب العميل
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "method": "tools/call",
+  "params": {
+    "name": "tasleemat_get_form",
+    "arguments": {
+      "artifact_id": "PMO-03.01",
+      "asset_type": "template",
+      "lang": "ar"
+    }
+  }
+}</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Tool 3 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-amber); margin-bottom: 0.5rem; direction: ltr; text-align: right;">3. <code>tasleemat_get_schema</code></h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            استرجاع مخطط JSON الكامل لتمكين نموذج الذكاء الاصطناعي من فهم قيود الحقول قبل الصياغة.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>// طلب العميل
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "method": "tools/call",
+  "params": {
+    "name": "tasleemat_get_schema",
+    "arguments": {
+      "artifact_id": "PMO-04.08.02"
+    }
+  }
+}</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Tool 4 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: #8b5cf6; margin-bottom: 0.5rem; direction: ltr; text-align: right;">4. <code>tasleemat_validate</code></h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            التحقق من بيانات JSON المصاغة مقابل المخطط وإرجاع مسار الخطأ بدقة إلى المساعد الذكي.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>// طلب التحقق
+{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "method": "tools/call",
+  "params": {
+    "name": "tasleemat_validate",
+    "arguments": {
+      "artifact_id": "PMO-03.01",
+      "data": {
+        "project_id": "PRJ-01",
+        "project_name": "منصة التحول السحابي",
+        "sponsor": "سارة الأحمد"
+      },
+      "mode": "strict"
+    }
+  }
+}</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Tool 5 & 6 AR -->
+        <div>
+          <h3 style="font-size: 1.2rem; color: #ec4899; margin-bottom: 0.5rem; direction: ltr; text-align: right;">5. <code>tasleemat_tailor_project</code> و 6. <code>tasleemat_calculate_eva</code></h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            أداة <code>tasleemat_tailor_project</code> لتخصيص التسليمات المطلوبة، وأداة <code>tasleemat_calculate_eva</code> لحساب مقاييس القيمة المكتسبة حتمياً لتسليمة PMO-06.05.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>// طلب حساب مقاييس القيمة المكتسبة
+{
+  "jsonrpc": "2.0",
+  "id": 6,
+  "method": "tools/call",
+  "params": {
+    "name": "tasleemat_calculate_eva",
+    "arguments": {
+      "pv": 500000,
+      "ev": 475000,
+      "ac": 520000,
+      "bac": 1200000
+    }
+  }
+}</code></pre>
+        </div>
+      </div>
+
+      <!-- Section 4: Practical Tutorials AR -->
+      <div class="card" style="padding: 2.25rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">4. أدلة تطبيقية عملية (Tutorials)</h2>
+
+        <!-- Tutorial 1 AR -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.5rem;">
+            الدليل 1: صياغة تسليمات المشاريع ذاتياً داخل نمط الوكيل في Cursor (Agent Mode)
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            بعد حفظ ملف التكوين <code>.cursor/mcp.json</code>، فعّل نمط Agent في Cursor وأرسل التوجيه التالي:
+          </p>
+          <div style="background: var(--bg-main); border-right: 4px solid var(--accent-blue); padding: 1rem; margin-bottom: 1rem; font-style: italic;">
+            "نحن نبدأ مشروع منصة التحول الرقمي PRJ-CLOUD. باستخدام أدوات خادم Tasleemat MCP، اجلب قالب ومخطط ميثاق المشروع PMO-03.01، وصغ ميثاقاً مطابقاً للمواصفات استناداً لمذكرات الاجتماع في docs/notes.txt، مع التحقق من صحة بيانات JSON قبل إنشاء الملف النهائي."
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.8;">
+            سيقوم Cursor تلقائياً باستدعاء <code>tasleemat_get_form</code>، وفحص الشروط عبر <code>tasleemat_get_schema</code>، 
+            ثم استدعاء <code>tasleemat_validate</code> لتأكيد سلامة البيانات 100% وكتابة الملف النهائي.
+          </p>
+        </div>
+
+        <!-- Tutorial 2 AR -->
+        <div>
+          <h3 style="font-size: 1.2rem; color: var(--accent-emerald); margin-bottom: 0.5rem;">
+            الدليل 2: بناء عميل بايثون مخصص للتواصل مع خادم MCP
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            يمكن استدعاء أدوات خادم MCP من أي تطبيق بايثون خارجي عبر مجاري الإدخال والإخراج:
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>import subprocess
+import json
+
+def call_mcp_tool(tool_name: str, arguments: dict) -&gt; dict:
+    # استدعاء أدوات خادم تسليمات MCP عبر بروتوكول stdio JSON-RPC
+    proc = subprocess.Popen(
+        ["tasleemat-mcp"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
+    
+    # 1. إرسال مصافحة التهيئة
+    init_req = {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"capabilities": {}}}
+    proc.stdin.write(json.dumps(init_req) + "\n")
+    proc.stdin.flush()
+    proc.stdout.readline()  # قراءة رد التهيئة
+    
+    # 2. استدعاء الأداة المطلوبة
+    call_req = {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {"name": tool_name, "arguments": arguments}
+    }
+    proc.stdin.write(json.dumps(call_req) + "\n")
+    proc.stdin.flush()
+    
+    response_line = proc.stdout.readline()
+    proc.terminate()
+    return json.loads(response_line)
+
+# تجربة تخصيص تسليمات المشروع:
+result = call_mcp_tool("tasleemat_tailor_project", {"tier": 2, "pack": "agile"})
+print("نتيجة التخصيص:", result)</code></pre>
+        </div>
+
       </div>
 
     </div>

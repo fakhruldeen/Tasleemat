@@ -1244,10 +1244,10 @@ tr:hover td {
           <a href="/Tasleemat/ar/developers/">المطورون والذكاء الاصطناعي</a> &gt; 
           <span style="color: var(--text-main); font-weight: 600;">مكتبة بايثون (SDK)</span>
         </nav>
-        <div class="hero-pill"><span>🐍 مكتبة بايثون البرمجية</span></div>
-        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">معمارية مكتبة بايثون والمرجع البرمجي</h1>
+        <div class="hero-pill"><span>🐍 مكتبة بايثون الخالصة</span></div>
+        <h1 class="hero-title" style="font-size: 2.2rem; margin-top: 0.5rem;">المرجع البرمجي لمكتبة بايثون (SDK)</h1>
         <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
-          المرجع البرمجي الكامل لاستكشاف الكتالوج، توليد بيئات العمل المخصصة، التحقق وفق Draft 2020-12، وتصيير الوثائق.
+          المرجع البرمجي المعتمد للتحكم الآلي في فهرس التسليمات، تحديد الحجم والتخصيص، التحقق من صحة البيانات وفق Draft 2020-12، وتوليد التقارير.
         </p>
       </div>
     </section>
@@ -1258,155 +1258,341 @@ tr:hover td {
         <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-right: 0.5rem; text-transform: uppercase;">
           الأقسام الفنية:
         </span>
-        <a href="/Tasleemat/ar/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📖 بوابة المطورين</a><a href="/Tasleemat/ar/developers/cli/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">⌨️ أداة الطرفية (CLI)</a><a href="/Tasleemat/ar/developers/sdk/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.35rem 0.75rem; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">🐍 مكتبة بايثون (SDK)</a><a href="/Tasleemat/ar/developers/mcp/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🔌 خادم بروتوكول MCP</a><a href="/Tasleemat/ar/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">📐 المخططات والتحقق</a><a href="/Tasleemat/ar/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.35rem 0.75rem; ">🤖 أسراب الوكلاء و CI/CD</a>
+        <a href="/Tasleemat/ar/developers/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📖 بوابة المطورين</a><a href="/Tasleemat/ar/developers/cli/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">⌨️ أداة الطرفية والأتمتة</a><a href="/Tasleemat/ar/developers/sdk/" class="btn-utility active" style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; background: var(--accent-blue); color: #fff; border-color: var(--accent-blue);">🐍 مكتبة بايثون (SDK)</a><a href="/Tasleemat/ar/developers/mcp/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🔌 خادم بروتوكول MCP</a><a href="/Tasleemat/ar/developers/schemas/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">📐 المخططات والتحقق</a><a href="/Tasleemat/ar/developers/agentic/" class="btn-utility " style="font-size: 0.82rem; padding: 0.38rem 0.85rem; font-weight: 600; ">🤖 أسراب الوكلاء و CI/CD</a>
       </div>
     </div>
     
 
     <div class="container" style="margin-bottom: 5rem; max-width: 960px;">
       
-      <!-- SDK Functions Table AR -->
+      <!-- Section 1: Architectural Foundation AR -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">الدوال البرمجية الأساسية الثمانية (8 Core Functions)</h2>
-        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
-          تصدر مكتبة <code>tasleemat</code> في المستوى الأعلى 8 دوال نقية بدون أي اعتماديات خارجية مخصصة لخطوط الإنتاج البرمجية:
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">1. المعمارية البرمجية ومبدأ الاعتمادية الصفرية</h2>
+        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
+          تم تصميم مكتبة <code>tasleemat</code> وفق فلسفة صارمة قائمة على <strong>الاعتمادية الصفرية على المكتبات الخارجية (Zero-Dependency)</strong>؛ 
+          حيث تعتمد بالكامل على حزم بايثون القياسية المدمجة (<code>json</code>, <code>pathlib</code>, <code>dataclasses</code>, <code>hashlib</code>, <code>re</code>, <code>csv</code>).
+          يضمن هذا النهج التثبيت الفوري في بضع ثوانٍ، وانعدام تعارض إصدارات الحزم، وإمكانية التشغيل في البيئات الحكومية والمصرفية المعزولة أمنياً (Air-Gapped).
         </p>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>الدالة البرمجية</th>
-                <th>المعاملات</th>
-                <th>النوع المُرجع</th>
-                <th>الوصف الفني</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>list_artifacts()</code></td>
-                <td><code>phase=None, tier=None, pack=None</code></td>
-                <td><code>List[ArtifactSummary]</code></td>
-                <td>استكشاف كائنات الملخص لكافة الـ 114 تسليمة أو الحزم المخصصة مع البصمات التشفيرية SHA-256.</td>
-              </tr>
-              <tr>
-                <td><code>get_artifact_definition()</code></td>
-                <td><code>artifact_id: str</code></td>
-                <td><code>dict</code></td>
-                <td>جلب قاموس البيانات الوصفية المعياري للتسليمة شاملاً رموز المراحل ومسارات الملفات.</td>
-              </tr>
-              <tr>
-                <td><code>get_artifact_assets()</code></td>
-                <td><code>artifact_id: str, lang='en'</code></td>
-                <td><code>ArtifactAssets</code></td>
-                <td>كائن يوفر مسارات آمنة ودوال وصول ميسرة لكافة أصول التسليمة.</td>
-              </tr>
-              <tr>
-                <td><code>get_artifact_asset()</code></td>
-                <td><code>artifact_id: str, role: str, lang='en'</code></td>
-                <td><code>Union[str, dict, list]</code></td>
-                <td>جلب محتوى الأصل مباشرة بحسب دوره: <code>template</code>, <code>guide</code>, <code>prompt</code>, <code>schema</code>, <code>dictionary</code>, <code>example</code>.</td>
-              </tr>
-              <tr>
-                <td><code>get_tailoring_profile()</code></td>
-                <td><code>tier: Union[int, str], pack: str='general'</code></td>
-                <td><code>List[str]</code></td>
-                <td>إرجاع قائمة معرّفات التسليمات الإلزامية المطابقة لمستوى الحوكمة (1, 2, 3) وحزمة المنهجية.</td>
-              </tr>
-              <tr>
-                <td><code>get_lexicon()</code></td>
-                <td><code>category: Optional[str]=None</code></td>
-                <td><code>List[dict]</code></td>
-                <td>إرجاع مصفوفة المصطلحات ثنائية اللغة المتوافقة مع دليل PMI ومواصفات هيئة الحكومة الرقمية السعودية (DGA).</td>
-              </tr>
-              <tr>
-                <td><code>validate_artifact_data()</code></td>
-                <td><code>artifact_id: str, data: dict, mode='strict'</code></td>
-                <td><code>ValidationReport</code></td>
-                <td>التحقق الآلي من مطابقة البيانات مع مخطط JSON Draft 2020-12 والتحقق الصارم من معايير RFC.</td>
-              </tr>
-              <tr>
-                <td><code>render_artifact()</code></td>
-                <td><code>artifact_id: str, lang='en', data=None, out_path=None</code></td>
-                <td><code>str</code></td>
-                <td>تصيير قالب التسليمة مع البيانات إلى وثيقة HTML منسقة جاهزة للطباعة مع دعم كامل للغة العربية.</td>
-              </tr>
-            </tbody>
-          </table>
+        <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 0.5rem;">
+          <div style="font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--accent-blue);">الضمانات الهندسية الأساسية:</div>
+          <ul style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.8; margin: 0; padding-right: 1.25rem;">
+            <li><strong>تخزين مؤقت آمن ومتزامن (Thread-Safe Caching):</strong> فهرسة الأصول وتحليل المخططات تتم مرة واحدة في الذاكرة لتوفير استجابة في أجزاء من الملي ثانية.</li>
+            <li><strong>حماية النواة المصدرية من التعديل (Immutability):</strong> تمنع دوال الوصول أي عمليات كتابة أو تعديل على بيانات الحزمة المعتمدة.</li>
+            <li><strong>توافق تام مع مختلف أنظمة التشغيل:</strong> دعم كامل لأنظمة Linux و macOS و Windows مع معالجة قياسية لترميز UTF-8.</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Data Models Card AR -->
+      <!-- Section 2: Detailed 8 API Functions AR -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">نماذج وفئات البيانات البرمجية</h2>
-        
-        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><code>ArtifactSummary</code></h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">يمثل البيانات الوصفية الإجمالية للتسليمة المرجعة من <code>list_artifacts()</code>:</p>
-        <pre style="direction: ltr; text-align: left;"><code>@dataclass(frozen=True)
-class ArtifactSummary:
-    artifact_id: str       # e.g. "PMO-03.01"
-    prefix: str            # e.g. "03_01"
-    name_en: str           # e.g. "Project Charter"
-    name_ar: str           # e.g. "ميثاق المشروع"
-    phase_code: str        # e.g. "03"
-    phase_name_en: str     # e.g. "Initiating"
-    phase_name_ar: str     # e.g. "البدء والترخيص"
-    tiers: List[str]       # e.g. ["1", "2", "3"]
-    fingerprint: str       # SHA-256 hash of immutable source form
-    completed_data_validation: dict</code></pre>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">2. الدوال الثماني المعتمدة في واجهة البرمجة (API)</h2>
 
-        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem;"><code>ValidationReport</code> &amp; <code>ValidationError</code></h3>
-        <pre style="direction: ltr; text-align: left;"><code>@dataclass
-class ValidationReport:
-    valid: bool                         # True if payload satisfies all schema constraints
-    errors: List[ValidationError]       # List of structured validation errors
-    schema_id: str                      # Canonical URI of the schema
-    schema_dialect: str                 # "https://json-schema.org/draft/2020-12/schema"
-    fingerprint: str                    # SHA-256 fingerprint of the schema
+        <!-- Function 1 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            <code>tasleemat.list_artifacts(phase=None, tier=None, pack=None)</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            استكشاف كائنات التسليمات في الفهرس بالكامل أو مع تصفية محددة بحسب مرحلة المشروع أو مستوى الحجم أو حزمة المنهجية.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>import tasleemat
 
-@dataclass
-class ValidationError:
-    path: str                           # JSON Pointer / property path (e.g. "/budget/total")
-    message: str                        # Human-readable failure explanation
-    keyword: str                        # Violated keyword (e.g. "required", "format")
-    schema_path: str                    # Path inside the schema where rule was defined</code></pre>
-      </div>
+# استعراض كافة الـ 114 تسليمة
+all_artifacts = tasleemat.list_artifacts()
+print(f"إجمالي التسليمات: {len(all_artifacts)}")
 
-      <!-- Real-World Python Script Card AR -->
-      <div class="card" style="padding: 2.25rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">مثال برمجي مكتمل بلغة بايثون</h2>
-        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
-          يوضح الكود التالي كيفية استعلام التسليمات المخصصة، قراءة محتوى القالب، التحقق من صحة البيانات، وإصدار التقرير:
-        </p>
-        <pre style="direction: ltr; text-align: left;"><code>import tasleemat
+# استعراض تسليمات المرحلة 03 (البدء) للمستوى 2
+phase_artifacts = tasleemat.list_artifacts(phase="03", tier=2)
+for art in phase_artifacts:
+    print(f"- [{art.artifact_id}] {art.name_ar} ({art.name_en})")</code></pre>
+        </div>
 
-# 1. استخراج التسليمات المخصصة للمستوى 2 بمنهجية رشيقة
-tailored_ids = tasleemat.get_tailoring_profile(tier=2, pack="agile")
-print(f"عدد تسليمات الحزمة المخصصة: {len(tailored_ids)}")
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
-# 2. فحص أصول تسليمة معينة (ميثاق المشروع PMO-03.01)
-art_id = "PMO-03.01"
-meta = tasleemat.get_artifact_definition(art_id)
-print(f"التسليمة: {meta['name_ar']} / {meta['name_en']}")
+        <!-- Function 2 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-emerald); margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            <code>tasleemat.get_artifact_definition(artifact_id: str) -&gt; dict</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            استرجاع قاموس البيانات الوصفية لتسليمة معينة يشمل الأسماء ثنائية اللغة، ورمز المرحلة، والمستويات المدعومة.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>meta = tasleemat.get_artifact_definition("PMO-03.01")
+print(f"الاسم بالعربية: {meta['name_ar']}")
+print(f"الاسم بالإنجليزية: {meta['name_en']}")
+print(f"المستويات المعتمدة: {meta['tiers']}")</code></pre>
+        </div>
 
-assets = tasleemat.get_artifact_assets(art_id, lang="ar")
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 3 & 4 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: var(--accent-amber); margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            <code>tasleemat.get_artifact_assets(artifact_id: str, lang='ar') -&gt; ArtifactAssets</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            استرجاع كائن الأصول الذي يتيح الوصول الآمن للملفات الخمسة المرافقة للتسليمة.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>assets = tasleemat.get_artifact_assets("PMO-03.01", lang="ar")
+
+# دوال الوصول المباشر للمحتوى
 template_text = assets.get_template_content()
-schema_data = assets.get_schema_data()
+guide_text = assets.get_guide_content()
+example_text = assets.get_example_content()
+schema_dict = assets.get_schema_data()
+dict_rows = assets.get_dictionary_rows()
 
-# 3. التحقق من بيانات الميثاق آلياً وفق معيار Draft 2020-12
-payload = {
+# أو جلب الأصل مباشرة بحسب نوعه
+schema_raw = tasleemat.get_artifact_asset("PMO-03.01", role="schema", lang="ar")</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 5 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: #8b5cf6; margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            <code>tasleemat.get_tailoring_profile(tier: Union[int, str], pack: str='general') -&gt; List[str]</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            تحديد القائمة الدقيقة والحتمية لرموز التسليمات المطلوبة وفق مستوى الحوكمة وحزمة المنهجية.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code># استخراج تسليمات مشروع رشيق من المستوى 2
+deliverable_ids = tasleemat.get_tailoring_profile(tier=2, pack="agile")
+print(f"عدد التسليمات المخصصة: {len(deliverable_ids)}")</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 6 AR -->
+        <div style="margin-bottom: 2.25rem;">
+          <h3 style="font-size: 1.2rem; color: #ec4899; margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            <code>tasleemat.validate_artifact_data(artifact_id: str, data: dict, mode='strict') -&gt; ValidationReport</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            التحقق البرمجي الدقيق من بيانات JSON مقابل مخطط Draft 2020-12 المرافق للتسليمة.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>payload = {
     "project_id": "PRJ-2026-CLOUD",
     "project_name": "منصة التحول الرقمي السحابي",
-    "sponsor": "النائب التنفيذي للعمليات",
+    "sponsor": "نائب الرئيس التنفيذي للعمليات",
     "project_manager": "سارة الأحمد",
     "authorization_date": "2026-10-15"
 }
 
-report = tasleemat.validate_artifact_data(art_id, payload, mode="strict")
+report = tasleemat.validate_artifact_data("PMO-03.01", payload, mode="strict")
 if report.valid:
-    print("البيانات مطابقة تماماً للمخطط المعتمد!")
+    print("البيانات مطابقة بنسبة 100% لمعايير المخطط المعياري!")
 else:
     for err in report.errors:
-        print(f"خطأ في الحقل {err.path}: {err.message}")</code></pre>
+        print(f"خطأ في الحقل {err.path}: {err.message} (القاعدة: {err.keyword})")</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 7 & 8 AR -->
+        <div>
+          <h3 style="font-size: 1.2rem; color: #0284c7; margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            <code>tasleemat.get_lexicon()</code> و <code>tasleemat.render_artifact()</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            دالة <code>get_lexicon()</code> لاسترجاع المصطلحات المهنية المعتمدة في إدارة المشاريع، ودالة <code>render_artifact()</code> لتوليد مخرجات HTML أنيقة وجاهزة للطباعة مع دعم اتجاه الكتابة العربي (RTL).
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code># استرجاع المصطلحات المعتمدة
+terms = tasleemat.get_lexicon(category="governance")
+
+# توليد صفحة HTML منسقة باللغة العربية
+html_output = tasleemat.render_artifact(
+    artifact_id="PMO-03.01",
+    lang="ar",
+    data=payload,
+    out_path="./output_charter.html"
+)</code></pre>
+        </div>
+
+      </div>
+
+      <!-- Section 3: Data Models & Classes AR -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">3. نماذج البيانات وفئات الكائنات (Data Models)</h2>
+        
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">فئة <code>ArtifactSummary</code> (كائن غير قابل للتعديل)</h3>
+        <pre style="direction: ltr; text-align: left;"><code>@dataclass(frozen=True)
+class ArtifactSummary:
+    artifact_id: str                    # الرمز الفريد للتسليمة (مثل "PMO-03.01")
+    prefix: str                         # بادئة الملف (مثل "03_01")
+    name_en: str                        # الاسم بالإنجليزية
+    name_ar: str                        # الاسم بالعربية
+    phase_code: str                     # رمز المرحلة ("00" إلى "07")
+    phase_name_en: str                  # اسم المرحلة بالإنجليزية
+    phase_name_ar: str                  # اسم المرحلة بالعربية
+    tiers: List[str]                    # المستويات المعتمدة: ["1", "2", "3"]
+    fingerprint: str                    # بصمة التجزئة SHA-256 للملف المصدري
+    completed_data_validation: dict     # تقرير المطابقة المعياري المسبق</code></pre>
+
+        <h3 style="font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">فئتا <code>ValidationReport</code> و <code>ValidationError</code></h3>
+        <pre style="direction: ltr; text-align: left;"><code>@dataclass
+class ValidationReport:
+    valid: bool                         # True إذا كانت البيانات مطابقة تماماً
+    errors: List[ValidationError]       # قائمة بأخطاء عدم المطابقة المنظمة
+    schema_id: str                      # الرابط المعياري للمخطط المرافق
+    schema_dialect: str                 # لهجة المخطط Draft 2020-12
+    fingerprint: str                    # بصمة التجزئة SHA-256 لملف المخطط
+
+@dataclass
+class ValidationError:
+    path: str                           # مسار الحقل بنظام JSON Pointer (مثل "/risks/0/score")
+    message: str                        # رسالة الخطأ وشرح المشكلة
+    keyword: str                        # الكلمة المفتاحية في المخطط التي تم انتهاكها
+    schema_path: str                    # مسار القاعدة داخل المخطط نفسه</code></pre>
+      </div>
+
+      <!-- Section 4: Production Tutorials AR -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">4. أدلة بناء التطبيقات والأنظمة المؤسسية (Tutorials)</h2>
+
+        <!-- Tutorial 1: FastAPI AR -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-blue); margin-bottom: 0.5rem;">
+            الدليل 1: بناء واجهة برمجة تطبيقات REST كاملة عبر إطار FastAPI
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            تضمين مكتبة <code>tasleemat</code> في خدمة سحابية عالية الأداء لربط أنظمة المؤسسة:
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from typing import Optional, List, Dict, Any
+import tasleemat
+
+app = FastAPI(title="Tasleemat PMO Governance API", version="2.5.0")
+
+class TailorRequest(BaseModel):
+    tier: int
+    pack: str = "general"
+
+class ValidateRequest(BaseModel):
+    artifact_id: str
+    data: Dict[str, Any]
+    mode: str = "strict"
+
+@app.get("/api/v1/artifacts")
+def list_artifacts(phase: Optional[str] = None, tier: Optional[int] = None):
+    results = tasleemat.list_artifacts(phase=phase, tier=tier)
+    return [
+        {"id": a.artifact_id, "name_en": a.name_en, "name_ar": a.name_ar, "phase": a.phase_code}
+        for a in results
+    ]
+
+@app.post("/api/v1/tailor")
+def tailor_project(req: TailorRequest):
+    try:
+        deliverable_ids = tasleemat.get_tailoring_profile(tier=req.tier, pack=req.pack)
+        return {"tier": req.tier, "pack": req.pack, "count": len(deliverable_ids), "deliverables": deliverable_ids}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/v1/validate")
+def validate_deliverable(req: ValidateRequest):
+    report = tasleemat.validate_artifact_data(req.artifact_id, req.data, mode=req.mode)
+    return {
+        "valid": report.valid,
+        "errors": [{"path": e.path, "message": e.message, "rule": e.keyword} for e in report.errors],
+        "schema_id": report.schema_id
+    }</code></pre>
+        </div>
+
+        <!-- Tutorial 2: Streamlit Dashboard AR -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-emerald); margin-bottom: 0.5rem;">
+            الدليل 2: بناء لوحة تحكم تفاعلية للممارسين عبر Streamlit
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            تطبيق ويب متكامل يتيح لمديري المشاريع اختيار مستوى وحزمة المشروع والتحقق من صحة الوثائق مباشرة:
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>import streamlit as st
+import json
+import tasleemat
+
+st.set_page_config(page_title="بوابة تسليمات لإدارة المشاريع", layout="wide")
+st.title("🛡️ بوابة الحوكمة وإدارة التسليمات المؤسسية")
+
+st.sidebar.header("معايير تخصيص المشروع")
+tier = st.sidebar.selectbox("مستوى الحجم والحوكمة", [1, 2, 3], index=1)
+pack = st.sidebar.selectbox("حزمة المنهجية", ["general", "agile", "ai", "predictive", "hybrid"])
+
+deliverables = tasleemat.get_tailoring_profile(tier=tier, pack=pack)
+st.sidebar.success(f"عدد التسليمات المعتمدة: {len(deliverables)}")
+
+col1, col2 = st.columns([1, 1])
+
+with col1:
+    st.subheader("بيان التسليمات المطلوبة")
+    selected_id = st.selectbox("اختر التسليمة للمعاينة", deliverables)
+    assets = tasleemat.get_artifact_assets(selected_id, lang="ar")
+    st.markdown(f"**دليل الممارس:**\n{assets.get_guide_content()[:500]}...")
+
+with col2:
+    st.subheader(f"التحقق من البيانات مقابل المخطط ({selected_id})")
+    sample_json = json.dumps({"project_id": "PRJ-01", "name": "مشروع التحول السحابي"}, indent=2, ensure_ascii=False)
+    user_input = st.text_area("بيانات JSON", sample_json, height=220)
+    
+    if st.button("تشغيل فحص المطابقة"):
+        try:
+            payload = json.loads(user_input)
+            report = tasleemat.validate_artifact_data(selected_id, payload, mode="strict")
+            if report.valid:
+                st.success("✅ البيانات مطابقة 100% لمعايير المخطط المعياري!")
+            else:
+                for err in report.errors:
+                    st.error(f"❌ في المسار {err.path}: {err.message}")
+        except json.JSONDecodeError as e:
+            st.warning(f"صيغة JSON غير صحيحة: {e}")</code></pre>
+        </div>
+
+        <!-- Tutorial 3: EVM Engine AR -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: var(--accent-amber); margin-bottom: 0.5rem;">
+            الدليل 3: محرك الحسابات الرياضية الموثقة لإدارة القيمة المكتسبة (EVM)
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            كود برمجي حتمي لتنفيذ معادلات القيمة المكتسبة لتسليمة <code>PMO-06.05</code> بدقة ومنع أخطاء القسمة على صفر:
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>def calculate_evm_metrics(pv: float, ev: float, ac: float, bac: float) -&gt; dict:
+    # حساب مقاييس إدارة القيمة المكتسبة وفق معايير PMI PMBOK مع معالجة آمنة للقسمة
+    # التباينات (Variances)
+    cv = ev - ac                               # تباين التكلفة (Cost Variance)
+    sv = ev - pv                               # تباين الجدول الزمني (Schedule Variance)
+
+    # المؤشرات (Indices)
+    cpi = (ev / ac) if ac &gt; 0 else 1.0        # مؤشر أداء التكلفة
+    spi = (ev / pv) if pv &gt; 0 else 1.0        # مؤشر أداء الجدول الزمني
+
+    # التنبؤات (Forecasting)
+    eac = (bac / cpi) if cpi &gt; 0 else bac      # التكلفة التقديرية عند الاكتمال
+    etc = eac - ac                             # التكلفة التقديرية المتبقية للاكتمال
+    vac = bac - eac                            # تباين التكلفة عند الاكتمال
+
+    # مؤشر الأداء المطلوب للاكتمال (TCPI)
+    remaining_work = bac - ev
+    remaining_budget = bac - ac
+    tcpi = (remaining_work / remaining_budget) if remaining_budget &gt; 0 else 1.0
+
+    return {
+        "cost_variance": round(cv, 2),
+        "schedule_variance": round(sv, 2),
+        "cpi": round(cpi, 3),
+        "spi": round(spi, 3),
+        "eac": round(eac, 2),
+        "etc": round(etc, 2),
+        "vac": round(vac, 2),
+        "tcpi": round(tcpi, 3),
+        "status": "HEALTHY" if cpi &gt;= 1.0 and spi &gt;= 1.0 else "WARNING"
+    }
+
+# تجربة حسابية للمشروع:
+metrics = calculate_evm_metrics(pv=100000, ev=95000, ac=105000, bac=250000)
+print(f"مؤشر التكلفة: {metrics['cpi']}، مؤشر الجدول: {metrics['spi']}، التكلفة المتوقعة: ${metrics['eac']:,}")</code></pre>
+        </div>
+
       </div>
 
     </div>
