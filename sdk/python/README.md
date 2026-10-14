@@ -7,26 +7,55 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PMI Standard](https://img.shields.io/badge/Standard-PMI%20PMBOK®%206th%2C%207th%20%26%208th%20Edition-0052cc)](https://github.com/fakhruldeen/Tasleemat)
 [![Deliverables](https://img.shields.io/badge/Deliverables-114%20Bilingual%20Pairs%20(228%20Total)-059669)](https://github.com/fakhruldeen/Tasleemat)
+[![TUI Workstation](https://img.shields.io/badge/TUI-Interactive%20Terminal%20Workstation-0284c7.svg?style=flat-square)](https://github.com/fakhruldeen/Tasleemat)
+[![AI Agents](https://img.shields.io/badge/Agent%20Integrations-8%20IDEs%20%26%20Agents-8b5cf6.svg?style=flat-square)](https://github.com/fakhruldeen/Tasleemat)
+[![Auditor](https://img.shields.io/badge/Auditor-Stage--Gate%20Verification-10b981.svg?style=flat-square)](https://github.com/fakhruldeen/Tasleemat)
 [![Data Package](https://img.shields.io/badge/Data%20Package-OKF%20Frictionless-orange)](https://github.com/fakhruldeen/Tasleemat/blob/main/datapackage.json)
 [![MCP Server](https://img.shields.io/badge/MCP%20Server-Standard%20Protocol-7c3aed)](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/MCP_INTEGRATION.md)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23193523.svg)](https://doi.org/10.5281/zenodo.23193523)
 
-**Tasleemat (تسليمات)** is a production-grade, open-source Project Management Office (PMO) operating system and programmatic Python library designed for **Project Managers, PMO Directors, Business Leaders, Data Engineers, and AI Agents**.
+**Tasleemat (تسليمات)** is an enterprise-grade, open-source Project Management Office (PMO) operating system and programmatic Python library designed for **Project Managers, PMO Directors, Business Leaders, Data Engineers, and Autonomous AI Agents**.
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
-With **Version 2.5.0**, Tasleemat delivers a **complete programmatic Python API**, standard **Model Context Protocol (MCP)** server, standalone offline rendering, structural JSON schema data contracts with strict and draft validation modes, and machine-readable downstream integration contracts for AI agent orchestrators (such as **Maharat**).
+With **Version 2.6.0 (Beta)**, Tasleemat introduces an **Interactive Bilingual Terminal User Interface (TUI)** workstation, a **Project Governance Auditor & Verification Engine** with Stage-Gate readiness KPIs, **1-Click Native Integration for 8 Leading AI Coding Agents and IDEs**, and a universal **Multi-Provider LLM Engine**.
 
 ---
 
-## 🌟 What's New in v2.5.0
- 
-- 💯 **100% Completed-Data Companion Schema Coverage:** All 114 PMO deliverables across all 8 lifecycle phases now possess formal Draft 2020-12 companion JSON schemas and comprehensive valid/invalid/draft fixture suites.
-- 🚀 **Zero-Dependency Pure-Python Validation Engine:** Robust structural JSON validation (`validate_artifact_data` / MCP `tasleemat_validate_data`) with static schema preflighting, strict RFC 8259 JSON compatibility, and universal equality semantics.
-- ⚡ **Hardened Model Context Protocol (MCP) Server:** Strict JSON-RPC 2.0 request envelope validation, robust ID handling (preserving falsey IDs, rejecting fractional/non-finite IDs with `-32600`), named-parameter enforcement, and non-crashing stdio transport.
-- 📐 **RFC Format Handlers & Registries:** Full support for `date`, `date-time`, `time`, `uuid`, `uri`, `uri-reference`, `email`, and `duration` format assertions.
-- 🛡️ **Arbitrary-Precision Safe Bounds:** Preflight schema checks safely evaluate extreme integer constraints (e.g. $10^{400}$) without float conversion overflow errors.
-- 🔒 **Absolute Immutability & Traceability:** Authoritative SHA-256 fingerprinting for every schema and deliverable definition with strict immutability protection for source templates.
+## 🌟 What's New in v2.6.0 (Beta)
+
+- 🖥️ **Interactive Bilingual Terminal User Interface (TUI)** (`tasleemat tui` / `pip install "tasleemat[tui]"`):
+  - Full-screen terminal dashboard powered by Textual with real-time bidirectional Arabic text shaping (`arabic-reshaper` & `python-bidi`).
+  - **8 Specialized Workspaces:**
+    1. **Scaffolding Wizard:** Guided project workspace creation tailored by Governance Tier (1, 2, 3), Methodology Pack (General, Agile, AI Governance, Predictive, Hybrid), and Language (EN/AR/Both).
+    2. **Deliverables Browser:** Interactive explorer across all 114 standardized bilingual deliverables with tabbed views for Templates, Practitioner Guides, AI Prompts, Schemas, and Examples.
+    3. **Live AI Generator:** Interactive deliverable generation with streaming completions, customizable prompts, and multi-provider selection.
+    4. **Governance Auditor & Verification:** Automated project workspace audit with real-time ANSI progress bars, Governance Score %, Deliverable Completion %, and a 6-Stage Gate Readiness Matrix (Gate 0 to Gate 5).
+    5. **MCP Diagnostics & Server:** Real-time Model Context Protocol telemetry, server status, tools registry, and connection verification.
+    6. **Earned Value Analysis (EVA) Calculator:** Real-time computation of Cost Variance (CV), Schedule Variance (SV), Cost Performance Index (CPI), Schedule Performance Index (SPI), Estimate at Completion (EAC), Estimate to Complete (ETC), and To-Complete Performance Index (TCPI).
+    7. **Bilingual PMO Lexicon Dictionary:** Searchable English/Arabic PMBOK & Saudi DGA terminology lookup with instant translations.
+    8. **System & LLM Settings:** Provider, model, API endpoint, and key configuration with secure persistence.
+
+- 🛡️ **Comprehensive Project Governance Auditor (`tasleemat audit [path]` / `tasleemat.audit_project`)**:
+  - Available across **PIP SDK**, **CLI**, and **TUI**.
+  - Analyzes scaffolded project workspaces against required methodology packs and governance tiers.
+  - Generates compliance KPIs: Overall Completion %, Governance Score %, and Schema Compliance %.
+  - Delivers a 6-Stage Gate Readiness Matrix (Gate 0 Strategic Alignment through Gate 5 Operational Handover & Closeout).
+  - Itemized deliverable verification (`VALID`, `INCOMPLETE`, `MISSING`, `SCHEMA ERROR`) with diagnostic remediation advice and `--strict` / `--json` export flags.
+
+- 🤖 **Universal Multi-Agent Ecosystem (8 Native IDE & Agent Integrations)**:
+  - 1-click workspace scaffolding and configuration for:
+    - **Cursor:** `.cursor/mcp.json` and `.cursorrules`
+    - **Google Antigravity:** `.antigravityrules` and `skills/pmo-governance`
+    - **Claude Desktop:** `claude_desktop_config.json` and `CLAUDE.md`
+    - **VS Code:** `.vscode/mcp.json`
+    - **OpenCode:** `.opencode/mcp.json` and `OPENCODE.md`
+    - **Cline:** `.cline/mcp.json` and `.clinerules`
+    - **Windsurf:** `.windsurf/mcp.json` and `.windsurfrules`
+    - **OpenAI CLI Replicas:** `.openai/agent_runner.py`
+
+- 🌐 **Flexible Multi-Provider LLM Engine**:
+  - Zero-lockin AI client supporting **Google Gemini**, **OpenAI**, **Anthropic**, **OpenRouter**, **DeepSeek**, **Groq**, **Ollama**, and custom OpenAI-compatible endpoints with dynamic model selection and encrypted token storage (`~/.tasleemat/config.json`).
 
 ---
 
@@ -35,7 +64,11 @@ With **Version 2.5.0**, Tasleemat delivers a **complete programmatic Python API*
 Install the official package from PyPI:
 
 ```bash
+# Standard SDK, CLI, and MCP Server:
 pip install tasleemat
+
+# With Interactive Terminal Workstation (TUI & BiDi Arabic rendering):
+pip install "tasleemat[tui]"
 ```
 
 Verify your installation:
@@ -153,33 +186,78 @@ for item in initiating_terms[:3]:
     print(f"{item['en_name']} <---> {item['ar_name']}")
 ```
 
+### 6. Automated Project Governance & Stage-Gate Auditing
+
+Perform structural compliance verification and stage-gate readiness evaluation on any project workspace:
+
+```python
+from tasleemat import audit_project
+
+# Perform complete governance audit
+report = audit_project("./My_Project", strict_schema=True)
+
+# High-Level KPIs
+print(f"Project:            {report.project_name} ({report.project_code})")
+print(f"Governance Tier:    Tier {report.tier} ({report.pack.upper()})")
+print(f"Overall Progress:   {report.overall_progress_pct:.1f}%")
+print(f"Governance Score:   {report.governance_score_pct:.1f}%")
+print(f"Schema Compliance:  {report.schema_compliance_pct:.1f}%")
+
+# Stage-Gate Readiness Matrix (Gate 0 through Gate 5)
+print("\n--- Stage-Gate Readiness Matrix ---")
+for gate in report.gate_readiness:
+    status_icon = "✅ [PASS]" if gate.status == "PASS" else "⚠️ [ACTION REQUIRED]"
+    print(f"{gate.gate_id:7} | {gate.stage_name:40} | {gate.readiness_pct:5.1f}% | {status_icon}")
+
+# Itemized Findings Breakdown
+print(f"\nDeliverables: {report.total_valid} Valid, {report.total_incomplete} Incomplete, {report.total_missing} Missing")
+for finding in report.findings:
+    if finding.status != "valid":
+        print(f"[{finding.status.upper()}] {finding.artifact_id} - {finding.name_en}: {finding.messages}")
+```
+
 ---
 
-## 🛠️ Global Command-Line Interface (CLI)
+## 🛠️ Global Command-Line Interface (CLI) & TUI Workstation
 
-The `tasleemat` CLI provides workspace scaffolding, form searches, AI document auto-generation, and testing:
+The `tasleemat` CLI provides workspace scaffolding, visual terminal workstations, governance auditing, form searches, and AI document auto-generation:
 
 ```bash
 # 1. Complete CLI reference
 tasleemat --help
 
-# 2. Interactive project workspace scaffolder
+# 2. Launch the Interactive Bilingual Terminal Workstation (TUI)
+tasleemat tui
+
+# 3. Launch TUI in Arabic directly with full BiDi shaping
+tasleemat tui --lang ar
+
+# 4. Perform complete Project Governance Audit with visual progress bars
+tasleemat audit ./My_Project
+
+# 5. Strict Governance Audit with machine-readable JSON report export
+tasleemat audit ./My_Project --strict --json ./audit_report.json
+
+# 6. Interactive project workspace scaffolder with agent configurations
 tasleemat init
 
-# 3. Fast-track automated scaffolding (Tier 2 Standard, Agile Pack, Arabic templates)
+# 7. Fast-track automated scaffolding (Tier 2 Standard, Agile Pack, Arabic templates)
 tasleemat init --tier 2 --pack agile --lang ar --name "منصة السحابة" --code "PRJ-2026-02" --out ./My_Project
 
-# 4. Search deliverable forms by keyword
+# 8. Configure default LLM provider, model, or custom API endpoints
+tasleemat config-llm --provider openrouter --model anthropic/claude-3.7-sonnet --key "sk-or-..."
+
+# 9. Search deliverable forms by keyword
 tasleemat search "Risk" --lang en
 tasleemat search "ميثاق" --lang ar
 
-# 5. List all 114 forms in catalog
+# 10. List all 114 forms in catalog
 tasleemat list --lang en
 
-# 6. Auto-fill project deliverables using AI from meeting notes
+# 11. Auto-fill project deliverables using AI from meeting notes
 tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./Project_Charter.md
 
-# 7. Run automated test suite
+# 12. Run automated test suite
 tasleemat test -v
 ```
 

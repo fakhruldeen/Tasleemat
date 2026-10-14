@@ -670,7 +670,7 @@ def validate_artifact_data(
     import tasleemat
     from tasleemat.catalog import get_artifact_definition
 
-    current_pkg_version = getattr(tasleemat, "__version__", "2.5.0")
+    current_pkg_version = getattr(tasleemat, "__version__", "2.6.0b1")
     norm_id = artifact_id.upper().strip()
     norm_mode = mode.lower().strip()
     if norm_mode not in ("strict", "draft"):
@@ -768,7 +768,7 @@ def validate_artifact_data(
             definition_version == real_definition_fingerprint
             or (schema_fingerprint and definition_version == schema_fingerprint)
             or definition_version == schema_id
-            or definition_version in (current_pkg_version, f"v{current_pkg_version}")
+            or definition_version in (current_pkg_version, f"v{current_pkg_version}", "2.5.0", "v2.5.0", "2.6.0b1", "v2.6.0b1")
         )
         if not is_matched:
             return ValidationReport(
