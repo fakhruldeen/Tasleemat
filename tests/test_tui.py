@@ -7,7 +7,14 @@ import json
 import pathlib
 import tempfile
 import unittest
-import asyncio
+try:
+    import textual
+    import arabic_reshaper
+    import bidi
+    HAS_TUI_DEPS = True
+except ImportError:
+    HAS_TUI_DEPS = False
+
 from tasleemat.tui.bidi import is_arabic, shape_text, align_bilingual
 from tasleemat.tui.i18n import t
 from tasleemat.tui.integrations.manager import (
@@ -15,7 +22,10 @@ from tasleemat.tui.integrations.manager import (
     apply_selected_integrations,
     detect_existing_integrations,
 )
-from tasleemat.tui.app import TasleematApp
+if HAS_TUI_DEPS:
+    from tasleemat.tui.app import TasleematApp
+else:
+    TasleematApp = None
 
 class TestTUI(unittest.TestCase):
 
@@ -131,8 +141,10 @@ class TestTUI(unittest.TestCase):
             self.assertTrue(updated_status["windsurf"])
             self.assertTrue(updated_status["openai_cli"])
 
+    @unittest.skipUnless(HAS_TUI_DEPS, "Textual optional dependency not installed")
     def test_tui_app_headless_execution(self):
         """Test Textual app instantiation, mounting, and language toggle in headless mode."""
+        import asyncio
         async def _run():
             app = TasleematApp(lang="en")
             async with app.run_test() as pilot:
@@ -151,6 +163,7 @@ class TestTUI(unittest.TestCase):
 
         asyncio.run(_run())
 
+    @unittest.skipUnless(HAS_TUI_DEPS, "Textual optional dependency not installed")
     def test_wizard_scaffolding_execution(self):
         """Test wizard screen scaffolding execution with agent integrations."""
         from tasleemat.tui.screens.wizard import ScaffolderWizardScreen
