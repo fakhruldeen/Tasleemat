@@ -1308,10 +1308,31 @@ tr:hover td {
     A --&gt; F[&quot;Repository Markdown Documentation&quot;]
 </code></pre>
 <hr />
-<h2 id="1-official-tasleemat-cli-tool-tasleemat">🚀 1. Official Tasleemat CLI Tool (<code>tasleemat</code>)</h2>
-<p>Tasleemat provides an official Python SDK and CLI tool designed to streamline project initialization and form exploration. You can install it globally via PyPI:</p>
-<pre><code class="language-bash">pip install tasleemat
+<h2 id="1-official-tasleemat-cli-tui-workstation-tasleemat">🚀 1. Official Tasleemat CLI &amp; TUI Workstation (<code>tasleemat</code>)</h2>
+<p>Tasleemat provides an official Python SDK, CLI tool, and visual Terminal User Interface (TUI) designed to streamline project initialization, offline catalog browsing, and AI agent integration. You can install it globally via PyPI:</p>
+<pre><code class="language-bash"># Standard installation
+pip install tasleemat
+
+# Full TUI Workstation (with Textual &amp; Arabic BiDi text shaping)
+pip install &quot;tasleemat[tui]&quot;
 </code></pre>
+<h3 id="interactive-terminal-user-interface-tui-workstation">🖥️ Interactive Terminal User Interface (TUI Workstation)</h3>
+<p>Launch the full-screen terminal workstation:</p>
+<pre><code class="language-bash"># Launch interactive TUI (English Default)
+tasleemat tui
+
+# Launch directly in Arabic with BiDi shaping
+tasleemat tui --lang ar
+</code></pre>
+<p>The TUI provides 7 tabs:
+1. <strong>🚀 Scaffolder Wizard</strong>: 5-step stepper to generate tailored project workspaces.
+2. <strong>📋 Deliverables Explorer</strong>: Split-pane browser of all 114 deliverables with syntax-highlighted Markdown and JSON schema preview.
+3. <strong>🚪 Stage-Gate Navigator</strong>: Gate 0–5 checklist and RACI matrix review.
+4. <strong>📖 Bilingual Lexicon</strong>: Instant search across 114 PMI &amp; Saudi DGA standardized terms.
+5. <strong>🤖 AI Studio</strong>: Interactive drafting playground using configured LLMs.
+6. <strong>🔑 LLM API Manager</strong>: Unrestricted model selection supporting OpenRouter, Gemini, OpenAI, Claude, Ollama, and OpenAI-compatible endpoints.
+7. <strong>🔌 Agent Hub</strong>: 1-click configuration for Cursor, Antigravity (AGY), Claude Desktop, VS Code, OpenCode, Cline, Windsurf, and OpenAI CLI replicas.</p>
+<hr />
 <h3 id="a-scaffolding-a-new-tailored-project-init">A. Scaffolding a New Tailored Project (<code>init</code>)</h3>
 <p>Generate a complete, ready-to-use project workspace tailored to your exact governance tier and methodology pack:</p>
 <pre><code class="language-bash"># Interactive Wizard Mode (prompts you step-by-step)

@@ -1499,7 +1499,7 @@ tasleemat generate \
         <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
         <!-- Command 5: test & mcp -->
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h3 style="font-size: 1.25rem; color: #ec4899; margin-bottom: 0.5rem;">E. <code>tasleemat test</code> &amp; <code>tasleemat mcp</code></h3>
           <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
             Execute internal verification suites or launch the stdio Model Context Protocol (MCP) server for IDE integration:
@@ -1512,6 +1512,44 @@ tasleemat test -v --failfast
 
 # Start the Model Context Protocol stdio server for Claude Desktop / Cursor
 tasleemat mcp</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 6: tui -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #06b6d4; margin-bottom: 0.5rem;">F. <code>tasleemat tui</code> (Interactive Bilingual Terminal Workstation)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Launch the full-featured, mouse-aware, keyboard-driven Terminal User Interface built on Textual. 
+            Features true bilingual Arabic BiDi cursor &amp; shaping, live Markdown and JSON schema preview, 
+            interactive project scaffolding, Stage-Gate exit checklists, AI synthesis playground, and 1-click workspace setup for 8 AI agent tools.
+          </p>
+          <pre><code># Install with TUI dependencies (Textual, arabic-reshaper, python-bidi)
+pip install "tasleemat[tui]"
+
+# Launch the interactive terminal workstation
+tasleemat tui
+
+# Launch directly in Arabic mode
+tasleemat tui --lang ar
+
+# Command alias
+tasleemat ui</code></pre>
+          <div style="margin-top: 1rem; background: var(--bg-main); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">7 Workstation Workspaces &amp; Capabilities:</div>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; padding-left: 1.25rem; margin-bottom: 1rem;">
+              <li><strong>1. Scaffolding Wizard:</strong> 5-step guided project initialization with live Tier/Archetype selection and automatic AI agent injection.</li>
+              <li><strong>2. Deliverables Explorer:</strong> Instant split-pane browser for all 114 deliverables with Phase and Tier filters, live Markdown viewer, and companion JSON Schema syntax inspector.</li>
+              <li><strong>3. Stage-Gates Navigator:</strong> Interactive gate approval navigator (Gates 0 through 5) with required entry artifacts and interactive exit criteria checklists.</li>
+              <li><strong>4. Bilingual Lexicon:</strong> Real-time fuzzy search across 114 standard Arabic &amp; English PMO governance terms with quick navigation.</li>
+              <li><strong>5. AI Studio:</strong> Interactive deliverable synthesis studio—enter prompt/notes, select target deliverable, and stream live AI drafting directly in your terminal.</li>
+              <li><strong>6. LLM Config Manager:</strong> Unrestricted model selection supporting OpenAI, Anthropic, Gemini, Groq, OpenRouter, and custom local/remote OpenAI-compatible endpoints (vLLM, Ollama, Together).</li>
+              <li><strong>7. Agent Hub:</strong> 1-click workspace generator injecting project rules, deliverable catalogs, and MCP configurations into <strong>8 AI agent environments</strong>: Cursor (<code>.cursorrules</code>), Antigravity (<code>skills/pmo-governance</code>), Claude Desktop (<code>claude_desktop_config.json</code>), VS Code (<code>tasks.json</code>), OpenCode, Cline, Windsurf (<code>.windsurfrules</code>), and OpenAI CLI Replicas.</li>
+            </ul>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">
+              <strong>Global Shortcuts:</strong> <code>F1</code> Help &bull; <code>F2</code> Toggle English/العربية &bull; <code>F10</code> / <code>Ctrl+Q</code> Quit &bull; <code>Tab</code> Navigate controls.
+            </div>
+          </div>
         </div>
 
       </div>

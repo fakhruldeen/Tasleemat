@@ -1496,7 +1496,7 @@ tasleemat generate \
         <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
         <!-- Command 5: test & mcp AR -->
-        <div>
+        <div style="margin-bottom: 2rem;">
           <h3 style="font-size: 1.25rem; color: #ec4899; margin-bottom: 0.5rem;">هـ. <code>tasleemat test</code> و <code>tasleemat mcp</code></h3>
           <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
             تشغيل حزم الاختبارات الداخلية والتحقق من صحة البيئة، أو إطلاق خادم بروتوكول سياق النموذج (MCP):
@@ -1509,6 +1509,44 @@ tasleemat test -v --failfast
 
 # تشغيل خادم بروتوكول MCP عبر بروتوكول stdio للتكامل مع Cursor و Claude
 tasleemat mcp</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 6: tui AR -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #06b6d4; margin-bottom: 0.5rem;">و. <code>tasleemat tui</code> (محطة العمل التفاعلية ثنائية اللغة في الطرفية)</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            تشغيل واجهة المستخدم الطرفية الغنية (TUI) والمبنية بمكتبة Textual لدعم التفاعل بالفأرة ولوحة المفاتيح.
+            تتميز بدعم كامل ودقيق للغة العربية تشكيلاً واتجاهاً (BiDi &amp; Reshaping)، ومعاينة حية لوثائق Markdown ومخططات JSON Schema،
+            ومعالج تهيئة تفاعلي، ومصفوفة بوابات المرحلة، واستوديو التوليد بالذكاء الاصطناعي، وتكامل فوري بنقرة واحدة مع 8 بيئات وكلاء ذكاء اصطناعي.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code># تثبيت الحزمة مع إضافات واجهة الطرفية TUI
+pip install "tasleemat[tui]"
+
+# تشغيل محطة العمل الطرفية التفاعلية
+tasleemat tui
+
+# التشغيل المباشر باللغة العربية
+tasleemat tui --lang ar
+
+# الاسم البديل المختصر للأمر
+tasleemat ui</code></pre>
+          <div style="margin-top: 1rem; background: var(--bg-main); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-main);">7 مساحات عمل ومزايا متقدمة في الواجهة:</div>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; padding-right: 1.25rem; margin-bottom: 1rem;">
+              <li><strong>1. معالج تهيئة المشاريع (Wizard):</strong> معالج مرشد في 5 خطوات لاختيار مستوى الحوكمة والمنهجية وتوليد بيئة العمل مع حقن إعدادات وكلاء الذكاء الاصطناعي تلقائياً.</li>
+              <li><strong>2. مستكشف التسليمات (Explorer):</strong> استعراض فوري لـ 114 وثيقة بتصميم مقسوم، مع فلاتر المراحل والمستويات، ومعاينة حية لنصوص Markdown وبنية JSON Schema المرافقة.</li>
+              <li><strong>3. متصفح بوابات المرحلة (Gates):</strong> تصفح بوابات الحوكمة الخمس (Gate 0 إلى Gate 5) واستعراض معايير الدخول وقوائم التحقق التفاعلية للاعتماد.</li>
+              <li><strong>4. المعجم الموحد (Lexicon):</strong> بحث لحظي ضبابي في 114 مصطلحاً حوكمياً باللغتين العربية والإنجليزية مع إمكانية الانتقال الفوري لوثيقة المصطلح.</li>
+              <li><strong>5. استوديو الذكاء الاصطناعي (AI Studio):</strong> مساحة تفاعلية لصياغة وتوليد الوثائق من مذكراتك وملاحظاتك مع بث حي ومباشر للنصوص داخل الطرفية.</li>
+              <li><strong>6. إدارة نماذج الذكاء الاصطناعي (LLM Config):</strong> حرية كاملة في تحديد أي نموذج دون قيود، مع دعم كامل لـ OpenAI و Anthropic و Gemini و Groq و OpenRouter والنماذج المحلية المتوافقة مع معيار OpenAI (مثل vLLM و Ollama و Together).</li>
+              <li><strong>7. مركز ربط الوكلاء (Agent Hub):</strong> توليد فوري لإعدادات وقواعد وقوالب الوثائق وخادم MCP بنقرة واحدة لـ <strong>8 بيئات عمل ذكاء اصطناعي</strong>: Cursor و Antigravity و Claude Desktop و VS Code و OpenCode و Cline و Windsurf و OpenAI CLI Replicas.</li>
+            </ul>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">
+              <strong>الاختصارات العامة:</strong> <code>F1</code> المساعدة &bull; <code>F2</code> التبديل بين العربية والإنجليزية &bull; <code>F10</code> / <code>Ctrl+Q</code> الخروج &bull; <code>Tab</code> التنقل بين العناصر.
+            </div>
+          </div>
         </div>
 
       </div>
