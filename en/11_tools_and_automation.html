@@ -1431,6 +1431,17 @@ tasleemat mcp
 # Or run via standalone console script entrypoint
 tasleemat-mcp
 </code></pre>
+<h3 id="h-project-governance-audit-verification-audit">H. Project Governance Audit &amp; Verification (<code>audit</code>)</h3>
+<p>Audit and verify any scaffolded project workspace against its assigned Governance Tier (1, 2, or 3) and Methodology Pack. The auditor verifies file completeness, checks required deliverables, computes live completion percentages and governance scores, evaluates Stage-Gate readiness (Gates 0 to 5), and performs Draft 2020-12 schema validation on completed JSON payloads:</p>
+<pre><code class="language-bash"># Audit the current project directory (auto-detects Tier &amp; Pack from workspace)
+tasleemat audit
+
+# Audit a specific directory with explicit rules and strict CI/CD exit code
+tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
+
+# Output machine-readable structured JSON report for automated CI/CD pipelines
+tasleemat audit ./projects/PRJ-2026-CLOUD --json --out audit_report.json
+</code></pre>
 <hr />
 <h2 id="2-official-python-sdk-reference-import-tasleemat">🐍 2. Official Python SDK Reference (<code>import tasleemat</code>)</h2>
 <p>The <code>tasleemat</code> package exposes a stable, programmatic Python API designed for workflow automation, governance pipelines, and AI agent integration.</p>
@@ -1486,6 +1497,12 @@ tasleemat-mcp
 <td style="text-align: left;"><code>artifact_id: str</code>, <code>data: dict</code>, <code>strict: bool = True</code></td>
 <td style="text-align: left;"><code>dict</code></td>
 <td style="text-align: left;">Validates project deliverable data against Draft 2020-12 JSON Schema. In strict mode, unknown fields trigger errors.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>audit_project(project_path, tier, pack, strict_schema)</code></td>
+<td style="text-align: left;"><code>project_path: str</code>, <code>tier: str = None</code>, <code>pack: str = None</code>, <code>strict_schema: bool = True</code></td>
+<td style="text-align: left;"><code>ProjectAuditReport</code></td>
+<td style="text-align: left;">Audits an entire workspace, returning KPIs, progress percentages, Stage-Gate readiness, and deliverable findings.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>render_artifact(artifact_id, data, format, lang)</code></td>

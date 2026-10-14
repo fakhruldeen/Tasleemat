@@ -1432,6 +1432,17 @@ tasleemat mcp
 # أو التشغيل عبر الأمر المباشر المستقل
 tasleemat-mcp
 </code></pre>
+<h3 id="audit">ح. التدقيق الحوكمي والتحقق الهيكلي للمشاريع (<code>audit</code>)</h3>
+<p>تدقيق والتحقق من امتثال أي بيئة عمل للمشروع وفق مستويات الحوكمة (المستوى 1 أو 2 أو 3) وحزمة المنهجية المتبعة. يقوم المدقق بالتحقق من اكتمال الملفات، واحتساب نسب الإنجاز المئوية ودرجة الحوكمة، وتقييم جاهزية بوابات المرحلة (البوابات 0 إلى 5)، والتحقق من صحة مخططات البيانات JSON Schema:</p>
+<pre><code class="language-bash"># تدقيق مجلد المشروع الحالي (يكتشف المستوى والمنهجية تلقائياً)
+tasleemat audit
+
+# تدقيق مجلد محدد مع تفعيل الإغلاق الصارم لاختبارات أنظمة CI/CD
+tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
+
+# استخراج تقرير التدقيق بصيغة JSON المعيارية لخطوط الإنتاج المؤتمتة
+tasleemat audit ./projects/PRJ-2026-CLOUD --json --out audit_report.json
+</code></pre>
 <hr />
 <h2 id="2-import-tasleemat">🐍 2. المرجع البرمجي لحزمة بايثون الرسمية (<code>import tasleemat</code>)</h2>
 <p>توفر حزمة <code>tasleemat</code> واجهة برمجية برمجية مستقرة وعالية الأداء لبناء خطوط أنابيب الحوكمة، وأتمتة مساحات العمل، وتكامل وكلاء الذكاء الاصطناعي.</p>
@@ -1487,6 +1498,12 @@ tasleemat-mcp
 <td style="text-align: left;"><code>artifact_id: str</code>, <code>data: dict</code>, <code>strict: bool = True</code></td>
 <td style="text-align: left;"><code>dict</code></td>
 <td style="text-align: left;">التحقق البرمجي الصارم من بيانات النموذج مقابل مخطط Draft 2020-12 المعتمد.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>audit_project(project_path, tier, pack, strict_schema)</code></td>
+<td style="text-align: left;"><code>project_path: str</code>, <code>tier: str = None</code>, <code>pack: str = None</code>, <code>strict_schema: bool = True</code></td>
+<td style="text-align: left;"><code>ProjectAuditReport</code></td>
+<td style="text-align: left;">فحص وتدقيق بيئة عمل المشروع بالكامل واستخراج مؤشرات الأداء والنسب المئوية وجاهزية البوابات.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>render_artifact(artifact_id, data, format, lang)</code></td>
