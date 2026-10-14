@@ -201,7 +201,7 @@ class TestWebsiteRedesign(unittest.TestCase):
             self.assertEqual(len(matches), 0, f"Found visible YAML frontmatter in {page}: {matches}")
 
     def test_footer_author_card(self):
-        """Verifies that all pages include Mohamed Fakhruldeen's author card with links to fakhr.me and linkedin in the footer."""
+        """Verifies that all pages include Mohamed Fouad Fakhruldeen's author card with links to fakhr.me and linkedin in the footer."""
         sample_pages = [
             ROOT / "site" / "index.html",
             ROOT / "site" / "ar" / "index.html",
@@ -217,6 +217,10 @@ class TestWebsiteRedesign(unittest.TestCase):
             self.assertIn("https://fakhr.me", html, f"fakhr.me link missing in {page}")
             self.assertIn("https://www.linkedin.com/in/fakhruldeen", html, f"LinkedIn link missing in {page}")
             self.assertIn("https://avatars.githubusercontent.com/u/1162549", html, f"Avatar missing in {page}")
+            if "/ar/" in str(page):
+                self.assertIn("محمد فؤاد فخر الدين", html, f"Arabic author name missing in {page}")
+            else:
+                self.assertIn("Mohamed Fouad Fakhruldeen", html, f"English author name missing in {page}")
 
     def test_deliverable_prompt_and_short_tabs(self):
         """Verifies that deliverable pages have shortened tab names and a dedicated LLM Prompt tab."""
