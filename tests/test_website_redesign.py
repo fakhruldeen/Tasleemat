@@ -233,6 +233,37 @@ class TestWebsiteRedesign(unittest.TestCase):
             self.assertIn('id="tab-example"', html, f"Example tab missing in {page}")
             self.assertIn('id="tab-schema"', html, f"Schema tab missing in {page}")
 
+    def test_developers_comprehensive_documentation(self):
+        """Verifies that the /developers/ page contains comprehensive documentation across all 10 technical areas."""
+        dev_en = ROOT / "site" / "developers" / "index.html"
+        dev_ar = ROOT / "site" / "ar" / "developers" / "index.html"
+        self.assertTrue(dev_en.exists(), "English developers page must exist")
+        self.assertTrue(dev_ar.exists(), "Arabic developers page must exist")
+
+        html_en = dev_en.read_text(encoding="utf-8")
+        html_ar = dev_ar.read_text(encoding="utf-8")
+
+        # Verify all 10 core section anchors are present in both
+        section_ids = [
+            "quickstart", "cli", "sdk", "mcp", "schemas",
+            "self-correction", "multi-agent", "llm-client", "cicd", "attested-math"
+        ]
+        for sid in section_ids:
+            self.assertIn(f'id="{sid}"', html_en, f"Section #{sid} missing in English developers page")
+            self.assertIn(f'id="{sid}"', html_ar, f"Section #{sid} missing in Arabic developers page")
+
+        # Verify key technical topics covered
+        self.assertIn("tasleemat.ai.AIClient", html_en)
+        self.assertIn("tasleemat.ai.AIClient", html_ar)
+        self.assertIn("The Autonomous Agent Self-Correction Loop", html_en)
+        self.assertIn("التصحيح الذاتي", html_ar)
+        self.assertIn("Multi-Agent PMO Swarm", html_en)
+        self.assertIn("أسراب الوكلاء", html_ar)
+        self.assertIn("PMO-06.05", html_en)
+        self.assertIn("PMO-06.05", html_ar)
+        self.assertIn("RFC 3339", html_en)
+        self.assertIn("RFC 3339", html_ar)
+
 
 if __name__ == "__main__":
     unittest.main()
