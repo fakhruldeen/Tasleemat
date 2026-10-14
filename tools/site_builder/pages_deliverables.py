@@ -15,6 +15,7 @@ import re
 import json
 import html
 import markdown
+from typing import Any, Optional, Dict, List, Union
 from tools.site_builder.theme import render_html_page
 
 def _extract_meta_chips(md_text: str):

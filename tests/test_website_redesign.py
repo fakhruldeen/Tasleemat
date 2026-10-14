@@ -25,6 +25,12 @@ SITE_DIR = ROOT / "site"
 
 class TestWebsiteRedesign(unittest.TestCase):
 
+    @classmethod
+    def setUpClass(cls):
+        if not SITE_DIR.exists() or not (SITE_DIR / "deliverables").exists() or not (SITE_DIR / "ar" / "deliverables").exists():
+            from tools.site_builder.build_site import build_site
+            build_site()
+
     def test_forms_immutability(self):
         """Confirms that forms/ directory remains 100% bit-for-bit identical to baseline."""
         baseline_file = pathlib.Path("/tmp/forms_baseline_website_redesign.sha256")

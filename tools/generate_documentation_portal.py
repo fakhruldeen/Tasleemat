@@ -2578,7 +2578,8 @@ def compile_static_site(deliverables):
         print("Invoking modern site_builder pipeline...")
         build_redesigned_site()
     except Exception as e:
-        print(f"Warning: Redesigned site builder encountered error: {e}")
+        print(f"Error: Redesigned site builder encountered critical error: {e}")
+        raise
 
     print(f"Executive static HTML portal compiled successfully to {SITE_DIR}!")
 
