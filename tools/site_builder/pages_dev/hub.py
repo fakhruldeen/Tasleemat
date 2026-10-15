@@ -129,7 +129,7 @@ flowchart TD
         Swarm["Autonomous Agent Swarm (LangGraph, CrewAI)"]
     end
 
-    subgraph Core["Core Engine (tasleemat v2.5.0.post1)"]
+    subgraph Core["Core Engine (tasleemat v2.6.0)"]
         Catalog["Catalog &amp; Asset Resolver"]
         Tailoring["Tailoring Engine (Tiers 1-3, 5 Packs)"]
         Validator["Draft 2020-12 Schema Validator"]
@@ -404,7 +404,7 @@ flowchart TD
         Swarm["أسراب الوكلاء الأذكياء (CrewAI, LangGraph)"]
     end
 
-    subgraph Core["محرك المنظومة (tasleemat v2.5.0.post1)"]
+    subgraph Core["محرك المنظومة (tasleemat v2.6.0)"]
         Catalog["محرك الفهرسة واستدعاء الأصول"]
         Tailoring["محرك التخصيص وتحديد الحجم"]
         Validator["محرك التحقق من المخططات 2020-12"]

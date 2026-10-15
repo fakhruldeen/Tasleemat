@@ -177,7 +177,7 @@ tasleemat search "PMO-04.08.02"</code></pre>
             All tokens are stored locally in <code>~/.tasleemat/config.json</code> with POSIX permissions <code>0600</code>.
           </p>
           <pre><code># Configure Google Gemini
-tasleemat config set --provider gemini --model gemini-2.5-flash --key "AIzaSy..."
+tasleemat config set --provider gemini --model gemini-3.8-flash --key "AIzaSy..."
 
 # Configure OpenAI
 tasleemat config set --provider openai --model gpt-4o --key "sk-proj-..."
@@ -300,6 +300,43 @@ tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
 tasleemat audit ./my_workspace --json --out audit_report.json</code></pre>
         </div>
 
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 8: agents export -->
+        <div id="agents-export">
+          <h3 style="font-size: 1.25rem; color: #8b5cf6; margin-bottom: 0.5rem;">H. <code>tasleemat agents export</code> (1-Click Multi-Agent &amp; IDE Exporter)</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Generate ready-to-use AI instruction rules, deliverable catalogs, and MCP configurations tailored for 8 top AI agent tools and IDE environments.
+            Instantly equips AI agents with comprehensive project rules, Stage-Gate criteria, and schema references.
+          </p>
+          <pre><code># Export configuration for a specific AI agent platform
+tasleemat agents export --target claude     # Creates CLAUDE.md in current workspace
+tasleemat agents export --target cursor     # Generates .cursorrules with PMO governance bounds
+tasleemat agents export --target windsurf   # Creates .windsurfrules file
+tasleemat agents export --target cline      # Creates .clinerules instructions
+tasleemat agents export --target opencode   # Generates OpenCode agent context
+tasleemat agents export --target openai     # Prepares instructions for OpenAI Assistant / CLI
+tasleemat agents export --target agy        # Prepares Antigravity (AGY) system rule bundle
+tasleemat agents export --target vscode     # Generates .vscode/settings.json with MCP hooks
+
+# Export all supported agent configs at once to a target directory
+tasleemat agents export --target all --out ./agents_config/</code></pre>
+          <div style="margin-top: 1rem; background: var(--bg-main); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem;">Supported Agent Targets:</div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag">claude</span>
+              <span class="tag">cursor</span>
+              <span class="tag">windsurf</span>
+              <span class="tag">cline</span>
+              <span class="tag">opencode</span>
+              <span class="tag">openai</span>
+              <span class="tag">agy</span>
+              <span class="tag">vscode</span>
+              <span class="tag">all</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Section 3: Step-by-Step Tutorials -->
@@ -358,9 +395,9 @@ tasleemat audit ./my_workspace --json --out audit_report.json</code></pre>
             For defense, banking, and government environments with zero outbound internet connectivity:
           </p>
           <ol style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; padding-left: 1.5rem;">
-            <li><strong>Transfer Wheel Package:</strong> Copy the pre-built <code>tasleemat-2.5.0.post1-py3-none-any.whl</code> to your air-gapped bastion host via verified removable media.</li>
+            <li><strong>Transfer Wheel Package:</strong> Copy the pre-built <code>tasleemat-2.6.0-py3-none-any.whl</code> to your air-gapped bastion host via verified removable media.</li>
             <li><strong>Offline Installation:</strong>
-              <pre><code>pip install --no-index --find-links . tasleemat-2.5.0.post1-py3-none-any.whl</code></pre>
+              <pre><code>pip install --no-index --find-links . tasleemat-2.6.0-py3-none-any.whl</code></pre>
             </li>
             <li><strong>Configure Local Ollama Instance:</strong> Point Tasleemat to an on-premises air-gapped LLM instance:
               <pre><code>tasleemat config set --provider ollama --model llama3.2 --endpoint "http://10.0.50.12:11434"</code></pre>
@@ -624,7 +661,7 @@ tasleemat search "PMO-04.08.02"</code></pre>
             إدارة مفاتيح الربط مع نماذج الذكاء الاصطناعي والنماذج المحلية بشكل آمن في الملف المحلي <code>~/.tasleemat/config.json</code> بصلاحيات مقيدة.
           </p>
           <pre style="direction: ltr; text-align: left;"><code># إعداد وتفعيل Google Gemini
-tasleemat config set --provider gemini --model gemini-2.5-flash --key "AIzaSy..."
+tasleemat config set --provider gemini --model gemini-3.8-flash --key "AIzaSy..."
 
 # إعداد وتفعيل OpenAI GPT-4o
 tasleemat config set --provider openai --model gpt-4o --key "sk-proj-..."
@@ -746,6 +783,43 @@ tasleemat audit ./projects/PRJ-2026-CLOUD --tier 2 --pack agile --strict
 tasleemat audit ./my_workspace --json --out audit_report.json</code></pre>
         </div>
 
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Command 8: agents export AR -->
+        <div id="agents-export">
+          <h3 style="font-size: 1.25rem; color: #8b5cf6; margin-bottom: 0.5rem;">ح. <code>tasleemat agents export</code> (تصدير إعدادات وكلاء الذكاء الاصطناعي)</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            توليد قواعد وتعليمات الذكاء الاصطناعي وسجلات الحوكمة لـ 8 من أبرز بيئات وكلاء الذكاء الاصطناعي بنقرة واحدة.
+            يزود الوكلاء تلقائياً بقواعد الحوكمة، وبوابات المرحلة، ومخططات التحقق (Draft 2020-12).
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code># تصدير التكوين لمنصة وكيل محددة
+tasleemat agents export --target claude     # ينشئ ملف CLAUDE.md في مجلد العمل
+tasleemat agents export --target cursor     # ينشئ ملف .cursorrules مع حدود الحوكمة
+tasleemat agents export --target windsurf   # ينشئ ملف .windsurfrules
+tasleemat agents export --target cline      # ينشئ ملف .clinerules
+tasleemat agents export --target opencode   # ينشئ سياق بيئة OpenCode
+tasleemat agents export --target openai     # يجهز تعليمات OpenAI Assistant / CLI
+tasleemat agents export --target agy        # يجهز حزمة قواعد Antigravity
+tasleemat agents export --target vscode     # ينشئ .vscode/settings.json مع خطافات MCP
+
+# تصدير كافة بيئات الوكلاء دفعة واحدة لمجلد محدد
+tasleemat agents export --target all --out ./agents_config/</code></pre>
+          <div style="margin-top: 1rem; background: var(--bg-main); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem;">المنصات المدعومة:</div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; direction: ltr;">
+              <span class="tag">claude</span>
+              <span class="tag">cursor</span>
+              <span class="tag">windsurf</span>
+              <span class="tag">cline</span>
+              <span class="tag">opencode</span>
+              <span class="tag">openai</span>
+              <span class="tag">agy</span>
+              <span class="tag">vscode</span>
+              <span class="tag">all</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Section 3: Step-by-Step Tutorials AR -->
@@ -805,9 +879,9 @@ tasleemat audit ./my_workspace --json --out audit_report.json</code></pre>
             للبيئات فائقة الأمان التي تمنع الاتصال بالإنترنت الخارجي منعاً باتاً:
           </p>
           <ol style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.9; padding-right: 1.5rem;">
-            <li><strong>نقل حزمة التثبيت:</strong> انسخ ملف <code>tasleemat-2.5.0.post1-py3-none-any.whl</code> إلى الخادم المعزول عبر وسائط آمنة ومعتمدة.</li>
+            <li><strong>نقل حزمة التثبيت:</strong> انسخ ملف <code>tasleemat-2.6.0-py3-none-any.whl</code> إلى الخادم المعزول عبر وسائط آمنة ومعتمدة.</li>
             <li><strong>التثبيت دون اتصال بالإنترنت:</strong>
-              <pre style="direction: ltr; text-align: left;"><code>pip install --no-index --find-links . tasleemat-2.5.0.post1-py3-none-any.whl</code></pre>
+              <pre style="direction: ltr; text-align: left;"><code>pip install --no-index --find-links . tasleemat-2.6.0-py3-none-any.whl</code></pre>
             </li>
             <li><strong>توجيه الأداة لخادم ذكاء اصطناعي محلي:</strong>
               <pre style="direction: ltr; text-align: left;"><code>tasleemat config set --provider ollama --model llama3.2 --endpoint "http://10.0.50.12:11434"</code></pre>

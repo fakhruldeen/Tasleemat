@@ -102,7 +102,7 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
     <section class="hero-section">
       <div class="container">
         <div class="hero-pill">
-          <span>🛡️ Verified Project Deliverables &amp; Open Toolkit</span>
+          <span>🛡️ Verified Project Deliverables &amp; Open Toolkit &bull; v2.6.0 Stable on PyPI</span>
         </div>
         <h1 class="hero-title">Bilingual Project Management Deliverable Library &amp; Toolkit</h1>
         <p class="hero-subtitle">
@@ -120,6 +120,75 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
         <div class="devhunt-badge-wrap">
           <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-dark"><img src="https://devhunt.org/badge/tasleemat.svg" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
           <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-light"><img src="https://devhunt.org/badge/tasleemat.svg?theme=light" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's New in v2.6.0 Banner -->
+    <section class="boundaries-section" style="background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); padding: 3rem 0;">
+      <div class="container">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">
+              🚀 Official Stable Release &bull; v2.6.0 on PyPI
+            </div>
+            <h2 class="section-title" style="margin-bottom: 0.25rem;">What's New in Tasleemat v2.6.0</h2>
+            <p class="section-desc" style="margin-bottom: 0;">Interactive TUI workstation, automated stage-gate auditor, 8 AI agent exporters, and official MCP Registry listing.</p>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.6rem 1rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue);">pip install "tasleemat[tui]==2.6.0"</code>
+            <a href="{base_url}/developers/cli/#tui" class="btn-secondary" style="padding: 0.6rem 1.1rem; font-size: 0.88rem;">Explore TUI &rarr;</a>
+          </div>
+        </div>
+
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="card" style="border-top: 3px solid #06b6d4;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🖥️</span> Terminal Workstation (TUI)
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              Textual-powered desktop workstation with full BiDi Arabic shaping, split-pane deliverable browser, live Markdown &amp; JSON schema inspector, and interactive scaffolding wizard.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #06b6d4; font-family: var(--font-mono);">
+              $ tasleemat tui
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid #10b981;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🛡️</span> Stage-Gate Auditor
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              Automated governance verification engine. Audits workspace artifacts against Gates 0 to 5, calculates deterministic KPI compliance scores (0–100%), and outputs structured JSON for CI/CD pipelines.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--accent-emerald); font-family: var(--font-mono);">
+              $ tasleemat audit
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid #8b5cf6;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🤖</span> 1-Click Multi-Agent Exporter
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              Export optimized system prompts, context files, and schemas for 8 AI environments: Claude, Cursor, Windsurf, Cline, OpenCode, OpenAI CLI, AGY, and VS Code.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #8b5cf6; font-family: var(--font-mono);">
+              $ tasleemat agents export
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid #f59e0b;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🔌</span> Official MCP Registry Listing
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              Officially published to the Anthropic/Model Context Protocol Registry as <code>io.github.fakhruldeen/tasleemat</code> v2.6.0 with zero-configuration stdio execution.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #f59e0b; font-family: var(--font-mono);">
+              $ uvx tasleemat-mcp
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -257,7 +326,7 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
     <section class="hero-section">
       <div class="container">
         <div class="hero-pill">
-          <span>🛡️ تسليمات معتمدة ثنائية اللغة وأدوات مساندة</span>
+          <span>🛡️ تسليمات معتمدة ثنائية اللغة وأدوات مساندة &bull; الإصدار المستقر v2.6.0 على PyPI</span>
         </div>
         <h1 class="hero-title">مكتبة تسليمات إدارة المشاريع ثنائية اللغة ومجموعة الأدوات</h1>
         <p class="hero-subtitle">
@@ -275,6 +344,75 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
         <div class="devhunt-badge-wrap">
           <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-dark"><img src="https://devhunt.org/badge/tasleemat.svg" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
           <a href="https://devhunt.org/tool/tasleemat" target="_blank" title="tasleemat on DevHunt" class="devhunt-badge devhunt-light"><img src="https://devhunt.org/badge/tasleemat.svg?theme=light" alt="tasleemat - Featured on DevHunt" width="220" height="54" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's New in v2.6.0 Banner in Arabic -->
+    <section class="boundaries-section" style="background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); padding: 3rem 0;">
+      <div class="container">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">
+              🚀 الإصدار المستقر الرسمي &bull; v2.6.0 على مستودع PyPI
+            </div>
+            <h2 class="section-title" style="margin-bottom: 0.25rem;">الجديد في إصدار تسليمات v2.6.0</h2>
+            <p class="section-desc" style="margin-bottom: 0;">محطة عمل تفاعلية TUI، مدقق حوكمة بوابات المرحلة، تصدير 8 وكلاء ذكاء اصطناعي بنقرة واحدة، وتوثيق سجل MCP الرسمي.</p>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; direction: ltr;">
+            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.6rem 1rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue);">pip install "tasleemat[tui]==2.6.0"</code>
+            <a href="{base_url}/ar/developers/cli/#tui" class="btn-secondary" style="padding: 0.6rem 1.1rem; font-size: 0.88rem;">استكشف TUI &larr;</a>
+          </div>
+        </div>
+
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="card" style="border-top: 3px solid #06b6d4;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🖥️</span> محطة العمل الطرفية (TUI)
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              واجهة طرفية تفاعلية متكاملة مبنية على Textual تدعم تشكيل ومحاذاة اللغة العربية ثنائية الاتجاه (BiDi)، وتصفح التسليمات، ومعاينة المخططات الفورية، ومعالج التهيئة.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #06b6d4; font-family: var(--font-mono); direction: ltr; text-align: left;">
+              $ tasleemat tui
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid #10b981;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🛡️</span> مدقق بوابات المرحلة والحوكمة
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              محرك تدقيق حوكمة آلي للتحقق من بوابات المشروع (البوابات 0 إلى 5)، وحساب مؤشرات الالتزام الدقيقة (0–100%)، وتوليد تقارير JSON لخطوط أنابيب CI/CD.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--accent-emerald); font-family: var(--font-mono); direction: ltr; text-align: left;">
+              $ tasleemat audit
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid #8b5cf6;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🤖</span> تصدير سياق 8 وكلاء ذكاء اصطناعي
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              تصدير سياق المشروع وتعليمات الوكلاء ومخططات التسليمات بنقرة واحدة لـ 8 بيئات: Claude و Cursor و Windsurf و Cline و OpenCode و OpenAI CLI و AGY و VS Code.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #8b5cf6; font-family: var(--font-mono); direction: ltr; text-align: left;">
+              $ tasleemat agents export
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid #f59e0b;">
+            <div class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <span>🔌</span> توثيق سجل بروتوكول MCP الرسمي
+            </div>
+            <div class="card-desc" style="font-size: 0.88rem;">
+              نُشر الخادم رسمياً في سجل Model Context Protocol العام كخادم معتمد تحت المعرّف <code>io.github.fakhruldeen/tasleemat</code> v2.6.0 للتشغيل المباشر عبر stdio.
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #f59e0b; font-family: var(--font-mono); direction: ltr; text-align: left;">
+              $ uvx tasleemat-mcp
+            </div>
+          </div>
         </div>
       </div>
     </section>

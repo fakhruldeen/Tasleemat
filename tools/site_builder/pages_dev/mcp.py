@@ -60,6 +60,17 @@ sequenceDiagram
 
       <!-- Section 2: IDE Configurations -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <div style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%); border: 1px solid rgba(37, 99, 235, 0.25); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 2rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+            <div>
+              <span class="brand-badge" style="background: #10b981; color: white; margin-bottom: 0.5rem; display: inline-block;">Official MCP Registry</span>
+              <h3 style="font-size: 1.15rem; margin: 0.25rem 0; color: var(--text-main);">Registered ID: <code>io.github.fakhruldeen/tasleemat</code> (v2.6.0)</h3>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Verified standard stdio Model Context Protocol server. Launch with zero setup using uvx or pip.</p>
+            </div>
+            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.5rem 0.85rem; border-radius: 0.4rem; font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-blue);">uvx tasleemat-mcp</code>
+          </div>
+        </div>
+
         <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">2. IDE &amp; Assistant Configuration Setup</h2>
 
         <div style="margin-bottom: 2rem;">
@@ -418,6 +429,17 @@ sequenceDiagram
 
       <!-- Section 2: IDE Configurations AR -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
+        <div style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%); border: 1px solid rgba(37, 99, 235, 0.25); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 2rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+            <div>
+              <span class="brand-badge" style="background: #10b981; color: white; margin-bottom: 0.5rem; display: inline-block;">سجل MCP الرسمي المعتمد</span>
+              <h3 style="font-size: 1.15rem; margin: 0.25rem 0; color: var(--text-main);">المعرّف المعتمد: <code>io.github.fakhruldeen/tasleemat</code> (v2.6.0)</h3>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">خادم بروتوكول سياق النماذج معتمد عبر قنوات stdio القياسية بدون الحاجة لفتح منافذ شبكية.</p>
+            </div>
+            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.5rem 0.85rem; border-radius: 0.4rem; font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-blue); direction: ltr;">uvx tasleemat-mcp</code>
+          </div>
+        </div>
+
         <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);">2. إعدادات التكامل مع بيئات التطوير الذكية</h2>
 
         <div style="margin-bottom: 2rem;">

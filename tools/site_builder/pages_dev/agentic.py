@@ -60,6 +60,64 @@ flowchart TD
         </code></pre>
       </div>
 
+      <!-- Section: 1-Click Native Agent Exporter -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem; border-left: 4px solid #8b5cf6;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(139, 92, 246, 0.1); color: #8b5cf6; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem;">
+              ⚡ Instant Agent Context Injection
+            </div>
+            <h2 style="font-size: 1.4rem; margin: 0; color: var(--text-main);">1-Click Native Integration for 8 AI Agents &amp; IDEs</h2>
+          </div>
+          <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.5rem 0.85rem; border-radius: 0.4rem; font-family: var(--font-mono); font-size: 0.85rem; color: #8b5cf6;">tasleemat agents export --target &lt;agent&gt;</code>
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+          Instead of manually crafting system prompts and prompt engineering files, <code>tasleemat agents export</code> generates tuned, deterministic instruction files, governance bounds, and Stage-Gate checklists for 8 industry-standard AI platforms:
+        </p>
+
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Anthropic Claude</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">CLAUDE.md</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Cursor AI</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">.cursorrules</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Codeium Windsurf</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">.windsurfrules</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Cline / Roo Code</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">.clinerules</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">OpenCode</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">opencode.json</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">OpenAI Assistant</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">openai_instructions.txt</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Antigravity (AGY)</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">RULES.md &amp; SKILL.md</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">VS Code Workspace</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">.vscode/settings.json</div>
+          </div>
+        </div>
+
+        <pre><code># Bootstrap an agentic PMO workspace for Cursor and Claude
+tasleemat agents export --target cursor
+tasleemat agents export --target claude
+
+# Export all 8 agent targets at once to a dedicated directory
+tasleemat agents export --target all --out ./agents_config/</code></pre>
+      </div>
+
       <!-- Section 2: Framework Integrations (CrewAI & LangGraph) -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
         <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">2. Production Multi-Agent Framework Integrations</h2>
@@ -346,6 +404,64 @@ flowchart TD
     Auditor ==>|بيانات مطابقة ومعتمدة| HumanGate
     HumanGate -->|اعتماد نهائي| Repo
         </code></pre>
+      </div>
+
+      <!-- Section: 1-Click Native Agent Exporter AR -->
+      <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem; border-right: 4px solid #8b5cf6;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(139, 92, 246, 0.1); color: #8b5cf6; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem;">
+              ⚡ حقن سياق وقواعد الحوكمة فورياً
+            </div>
+            <h2 style="font-size: 1.4rem; margin: 0; color: var(--text-main);">تصدير سياق المشروع بنقرة واحدة لـ 8 من وكلاء الذكاء الاصطناعي</h2>
+          </div>
+          <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.5rem 0.85rem; border-radius: 0.4rem; font-family: var(--font-mono); font-size: 0.85rem; color: #8b5cf6; direction: ltr;">tasleemat agents export --target &lt;agent&gt;</code>
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
+          بدلاً من كتابة المطالبات والتعليمات الحوكمية يدوياً، يتيح أمر <code>tasleemat agents export</code> توليد ملفات التوجيه الموجهة والمنضبطة تلقائياً مع معايير بوابات المراحل وقوائم التحقق لـ 8 من أبرز بيئات الذكاء الاصطناعي:
+        </p>
+
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Anthropic Claude</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">CLAUDE.md</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Cursor AI</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">.cursorrules</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Codeium Windsurf</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">.windsurfrules</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Cline / Roo Code</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">.clinerules</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">OpenCode</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">opencode.json</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">OpenAI Assistant</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">openai_instructions.txt</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Antigravity (AGY)</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">RULES.md &amp; SKILL.md</div>
+          </div>
+          <div style="background: var(--bg-main); border: 1px solid var(--border-color); padding: 1rem; border-radius: 0.5rem;">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">بيئة VS Code</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); direction: ltr; text-align: right;">.vscode/settings.json</div>
+          </div>
+        </div>
+
+        <pre style="direction: ltr; text-align: left;"><code># تجهيز بيئة عمل الحوكمة لـ Cursor و Claude بنقرة واحدة
+tasleemat agents export --target cursor
+tasleemat agents export --target claude
+
+# تصدير إعدادات كافة الوكلاء دفعة واحدة لمجلد مخصص
+tasleemat agents export --target all --out ./agents_config/</code></pre>
       </div>
 
       <!-- Section 2: Framework Integrations AR -->

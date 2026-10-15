@@ -47,9 +47,9 @@ def generate_dev_sdk_en(base_url: str = "/Tasleemat") -> str:
         </div>
       </div>
 
-      <!-- Section 2: Detailed 8 API Functions -->
+      <!-- Section 2: Detailed 9 API Functions -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">2. The 8 Verified Core API Functions</h2>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">2. The 9 Verified Core API Functions</h2>
 
         <!-- Function 1 -->
         <div style="margin-bottom: 2.25rem;">
@@ -174,6 +174,28 @@ html_output = tasleemat.render_artifact(
 )</code></pre>
         </div>
 
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 9 -->
+        <div>
+          <h3 style="font-size: 1.2rem; color: #10b981; margin-bottom: 0.5rem;">
+            <code>tasleemat.audit_project(project_path, tier=None, pack=None, strict=False) -&gt; ProjectAuditReport</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            Executes deterministic project workspace governance verification. Audits presence of required deliverables for Stage-Gates 0 through 5, validates JSON schemas (Draft 2020-12), and calculates governance compliance scores (0–100%).
+          </p>
+          <pre><code>import tasleemat
+
+# Audit workspace against Tier 2 Agile requirements
+report = tasleemat.audit_project("./PRJ-2026-CLOUD", tier=2, pack="agile", strict=True)
+print(f"Overall Completion: {{report.overall_completion_pct}}%")
+print(f"Governance Score: {{report.governance_score_pct}}%")
+
+# Check Stage-Gate readiness
+for gate in report.gate_kpis:
+    print(f"[{{gate.status}}] Gate {{gate.gate_id}} ({{gate.gate_name_en}}): {{gate.percentage}}%")</code></pre>
+        </div>
+
       </div>
 
       <!-- Section 3: Data Models & Classes -->
@@ -228,7 +250,7 @@ from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 import tasleemat
 
-app = FastAPI(title="Tasleemat PMO Governance API", version="2.5.0")
+app = FastAPI(title="Tasleemat PMO Governance API", version="2.6.0")
 
 class TailorRequest(BaseModel):
     tier: int
@@ -358,6 +380,47 @@ metrics = calculate_evm_metrics(pv=100000, ev=95000, ac=105000, bac=250000)
 print(f"Project CPI: {{metrics['cpi']}}, SPI: {{metrics['spi']}}, EAC: ${{metrics['eac']:,}}")</code></pre>
         </div>
 
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Tutorial 4: Programmatic Project Governance Audit -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #10b981; margin-bottom: 0.5rem;">
+            Tutorial 4: Programmatic Stage-Gate Governance Auditing
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Integrate automated governance verification directly into your Python CI/CD pipelines, pre-commit hooks, or backend services:
+          </p>
+          <pre><code>import sys
+import tasleemat
+
+# Run deterministic audit against project directory
+report = tasleemat.audit_project(
+    project_path="./projects/PRJ-2026-CLOUD",
+    tier=2,
+    pack="agile",
+    strict=True
+)
+
+print(f"Workspace: {{report.project_name}} ({{report.project_code}})")
+print(f"Overall Governance Score: {{report.governance_score_pct}}%")
+print(f"Completion Rate: {{report.overall_completion_pct}}%")
+
+# Verify Gate 0 to 5 compliance
+gate_failed = False
+for gate in report.gate_kpis:
+    status_icon = "✅" if gate.status == "PASS" else ("⚠️" if gate.status == "WARN" else "❌")
+    print(f"{{status_icon}} Gate {{gate.gate_id}} - {{gate.gate_name_en}}: {{gate.percentage}}% ({{gate.completed_count}}/{{gate.required_count}})")
+    if gate.status == "FAIL":
+        gate_failed = True
+
+# Block deployment if compliance is below threshold
+if report.governance_score_pct &lt; 85.0 or gate_failed:
+    print("❌ CI/CD Gate Failed: Project governance does not meet enterprise minimums.")
+    sys.exit(1)
+
+print("✅ Project approved for next stage gate!")</code></pre>
+        </div>
+
       </div>
 
     </div>
@@ -416,9 +479,9 @@ def generate_dev_sdk_ar(base_url: str = "/Tasleemat") -> str:
         </div>
       </div>
 
-      <!-- Section 2: Detailed 8 API Functions AR -->
+      <!-- Section 2: Detailed 9 API Functions AR -->
       <div class="card" style="padding: 2.25rem; margin-bottom: 2.5rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">2. الدوال الثماني المعتمدة في واجهة البرمجة (API)</h2>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">2. الدوال التسع المعتمدة في واجهة البرمجة (API)</h2>
 
         <!-- Function 1 AR -->
         <div style="margin-bottom: 2.25rem;">
@@ -542,6 +605,28 @@ html_output = tasleemat.render_artifact(
 )</code></pre>
         </div>
 
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Function 9 AR -->
+        <div>
+          <h3 style="font-size: 1.2rem; color: #10b981; margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            <code>tasleemat.audit_project(project_path, tier=None, pack=None, strict=False) -&gt; ProjectAuditReport</code>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem;">
+            تنفيذ تدقيق حوكمي هيكلي وحتمي على مجلد المشروع. يتحقق من اكتمال تسليمات بوابات المراحل (0 إلى 5)، ويفحص سلامة مخططات JSON، ويحسب نسب ومؤشرات الامتثال المئوية.
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>import tasleemat
+
+# تدقيق المشروع وفق متطلبات المستوى 2 والمنهجية الرشيقة
+report = tasleemat.audit_project("./PRJ-2026-CLOUD", tier=2, pack="agile", strict=True)
+print(f"نسبة الإنجاز الكلية: {{report.overall_completion_pct}}%")
+print(f"درجة الحوكمة: {{report.governance_score_pct}}%")
+
+# فحص جاهزية بوابات المرحلة
+for gate in report.gate_kpis:
+    print(f"[{{gate.status}}] البوابة {{gate.gate_id}} ({{gate.gate_name_ar}}): {{gate.percentage}}%")</code></pre>
+        </div>
+
       </div>
 
       <!-- Section 3: Data Models & Classes AR -->
@@ -596,7 +681,7 @@ from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 import tasleemat
 
-app = FastAPI(title="Tasleemat PMO Governance API", version="2.5.0")
+app = FastAPI(title="Tasleemat PMO Governance API", version="2.6.0")
 
 class TailorRequest(BaseModel):
     tier: int
@@ -724,6 +809,47 @@ with col2:
 # تجربة حسابية للمشروع:
 metrics = calculate_evm_metrics(pv=100000, ev=95000, ac=105000, bac=250000)
 print(f"مؤشر التكلفة: {{metrics['cpi']}}، مؤشر الجدول: {{metrics['spi']}}، التكلفة المتوقعة: ${{metrics['eac']:,}}")</code></pre>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+        <!-- Tutorial 4: Programmatic Project Governance Audit AR -->
+        <div>
+          <h3 style="font-size: 1.25rem; color: #10b981; margin-bottom: 0.5rem;">
+            الدليل 4: التدقيق الحوكمي البرمجي لبوابات المرحلة عبر بايثون
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+            دمج التدقيق الآلي المباشر ضمن خطوط أنابيب التكامل المستمر (CI/CD) أو كخطافات ما قبل الالتزام (Pre-commit hooks):
+          </p>
+          <pre style="direction: ltr; text-align: left;"><code>import sys
+import tasleemat
+
+# تدقيق مجلد المشروع تدقيقاً حتمياً
+report = tasleemat.audit_project(
+    project_path="./projects/PRJ-2026-CLOUD",
+    tier=2,
+    pack="agile",
+    strict=True
+)
+
+print(f"المشروع: {{report.project_name}} ({{report.project_code}})")
+print(f"درجة الحوكمة الكلية: {{report.governance_score_pct}}%")
+print(f"نسبة إنجاز التسليمات: {{report.overall_completion_pct}}%")
+
+# التحقق من امتثال البوابات 0 إلى 5
+gate_failed = False
+for gate in report.gate_kpis:
+    status_icon = "✅" if gate.status == "PASS" else ("⚠️" if gate.status == "WARN" else "❌")
+    print(f"{{status_icon}} البوابة {{gate.gate_id}} - {{gate.gate_name_ar}}: {{gate.percentage}}% ({{gate.completed_count}}/{{gate.required_count}})")
+    if gate.status == "FAIL":
+        gate_failed = True
+
+# إيقاف النشر إذا كانت نسبة الامتثال أقل من الحد الأدنى للمؤسسة
+if report.governance_score_pct &lt; 85.0 or gate_failed:
+    print("❌ فشل اختبار الحوكمة: المشروع لا يستوفي الحد الأدنى لمعايير البوابة.")
+    sys.exit(1)
+
+print("✅ تم اجتياز متطلبات التدقيق واعتماد الانتقال للمرحلة التالية!")</code></pre>
         </div>
 
       </div>

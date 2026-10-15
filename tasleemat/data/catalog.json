@@ -1,5 +1,5 @@
 {
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Canonical Tasleemat PMO Artifact Registry",
   "generated_from": "datapackage.json & forms/ baseline",
   "total_artifacts": 114,
