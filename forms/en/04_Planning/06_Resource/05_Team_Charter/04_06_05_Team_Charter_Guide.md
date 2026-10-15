@@ -55,7 +55,7 @@ Authored collaboratively by the Entire Project Team with facilitator guidance fr
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Work Breakdown Structure (PMO-04.02.06)
     *   Project Schedule (PMO-04.03.08)
 *   **Optional / Contextual:**
     *   Resource Capacity Matrix (PMO-00.04)
@@ -63,12 +63,11 @@ Authored collaboratively by the Entire Project Team with facilitator guidance fr
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Responsibility Assignment Matrix / RAM (PMO-04.06.04)
-    *   Team Charter (PMO-04.06.05)
+    *   Responsibility Assignment Matrix (PMO-04.06.04)
     *   Team Performance Assessment (PMO-05.06)
 *   **Optional / Contextual:**
     *   Team Onboarding Checklist (PMO-05.12)
-    *   Training Plan & Log (PMO-04.11.02)
+    *   Training Plan and Log (PMO-04.11.02)
 
 ---
 

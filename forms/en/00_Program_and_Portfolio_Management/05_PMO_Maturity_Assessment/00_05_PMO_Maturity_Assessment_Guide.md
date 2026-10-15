@@ -56,13 +56,13 @@ This artifact is prepared during project lifecycle activities and refreshed as r
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   Enterprise Strategic Plan
+    *   Enterprise Strategic Plan (External)
 *   **Optional / Contextual:**
     *   Project Charter (PMO-03.01)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Project Governance and Reporting Records
+    *   Project Governance and Reporting Records (External)
 
 ---
 

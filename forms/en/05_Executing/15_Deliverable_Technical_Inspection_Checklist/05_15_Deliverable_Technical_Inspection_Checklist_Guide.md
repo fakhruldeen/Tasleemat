@@ -47,12 +47,18 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Quality Management Plan (PMO-04.05.01), Quality Metrics (PMO-04.05.02)
-*   **Optional / Contextual:** Work Breakdown Structure (PMO-04.02.06)
+*   **Mandatory:**
+    *   Quality Management Plan (PMO-04.05.01)
+    *   Quality Metrics (PMO-04.05.02)
+*   **Optional / Contextual:**
+    *   Work Breakdown Structure (PMO-04.02.06)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Product Acceptance Form (PMO-06.08), User Acceptance Testing Signoff (PMO-06.10)
-*   **Optional / Contextual:** Defect and Bug Tracking Log (PMO-06.15)
+*   **Mandatory:**
+    *   Product Acceptance Form (PMO-06.08)
+    *   User Acceptance Testing Signoff (PMO-06.10)
+*   **Optional / Contextual:**
+    *   Defect and Bug Tracking Log (PMO-06.15)
 
 ---
 

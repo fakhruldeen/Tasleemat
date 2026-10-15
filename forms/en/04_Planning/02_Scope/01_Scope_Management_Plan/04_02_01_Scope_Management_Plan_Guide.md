@@ -56,14 +56,14 @@ Created by Project Manager and Business Analyst, approved by Project Sponsor and
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Project Charter (PMO-03.01)
-    *   Stakeholder Requirements
+    *   Requirements Documentation (PMO-04.02.03)
 *   **Optional / Contextual:**
     *   Product Vision (PMO-03.02)
     *   Assumption Log (PMO-03.03)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Work Breakdown Structure (PMO-04.02.06)
     *   Project Schedule (PMO-04.03.08)
     *   Cost Estimates (PMO-04.04.02)
 *   **Optional / Contextual:**

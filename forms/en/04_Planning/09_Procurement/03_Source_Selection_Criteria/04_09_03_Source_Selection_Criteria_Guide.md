@@ -64,9 +64,9 @@ Created by Procurement Evaluation Committee and Project Manager, approved by Pro
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Statement of Work / SOW (PMO-04.09.04)
-    *   RFP (PMO-04.09.05)
-    *   Contract Closure Report (PMO-07.02)
+    *   Statement of Work (PMO-04.09.04)
+    *   Request for Proposal (PMO-04.09.05)
+    *   Contract Closeout Report (PMO-07.02)
 *   **Optional / Contextual:**
     *   Vendor Performance Scorecard (PMO-06.09)
     *   Contractor Status Report (PMO-06.03)

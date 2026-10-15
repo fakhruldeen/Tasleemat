@@ -58,8 +58,8 @@ Maintained by the Project Manager with input from the project team and stakehold
     *   Project Charter (PMO-03.01)
     *   Business Case (PMO-01.01)
 *   **Optional / Contextual:**
-    *   Feasibility Studies
-    *   Contractual SOW (PMO-04.09.04)
+    *   Feasibility Studies (External)
+    *   Statement of Work (PMO-04.09.04)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**

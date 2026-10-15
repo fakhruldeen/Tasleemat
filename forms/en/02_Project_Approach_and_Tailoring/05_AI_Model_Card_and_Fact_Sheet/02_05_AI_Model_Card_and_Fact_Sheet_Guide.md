@@ -62,18 +62,18 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   AI Governance Plan (PMO-02.02)
-    *   Model Training & Validation Benchmarks
+    *   Model Training & Validation Benchmarks (External)
 *   **Optional / Contextual:**
-    *   Data Privacy & Ethics Assessment (PMO-02.06)
+    *   Data Privacy and Ethics Assessment (PMO-02.06)
     *   AI Use Case Canvas (PMO-02.04)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
     *   Product Acceptance Form (PMO-06.08)
-    *   UAT Sign-off Form (PMO-06.10)
+    *   User Acceptance Testing Signoff (PMO-06.10)
     *   Transition to Operations Checklist (PMO-07.04)
 *   **Optional / Contextual:**
-    *   Prompt Library Register (PMO-05.09)
+    *   Prompt Library Log (PMO-05.09)
     *   Lessons Learned Register (PMO-05.07)
 
 ---

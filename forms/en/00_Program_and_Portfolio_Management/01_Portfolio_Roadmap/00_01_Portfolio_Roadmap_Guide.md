@@ -87,20 +87,20 @@ finance business partner who can confirm the funding rows are real.
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   Enterprise Strategic Plan
-    *   Portfolio Capital Budget & Allocations
+    *   Enterprise Strategic Plan (External)
+    *   Portfolio Capital Budget & Allocations (External)
 *   **Optional / Contextual:**
-    *   Program Charters (PMO-00.02)
+    *   Program Charter (PMO-00.02)
     *   Interdependency Register (PMO-00.03)
     *   Resource Capacity Matrix (PMO-00.04)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Program Charters (PMO-00.02)
-    *   Project Charters (PMO-03.01)
-    *   Portfolio Capacity Allocations
+    *   Program Charter (PMO-00.02)
+    *   Project Charter (PMO-03.01)
+    *   Portfolio Capacity Allocations (External)
 *   **Optional / Contextual:**
-    *   Business Cases (PMO-01.01)
+    *   Business Case (PMO-01.01)
     *   AI Readiness Assessment (PMO-02.03)
 
 ---

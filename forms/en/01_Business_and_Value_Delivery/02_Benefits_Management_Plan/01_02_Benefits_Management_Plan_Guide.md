@@ -92,13 +92,13 @@ benefits were part of the case for.
     *   Project Charter (PMO-03.01)
 *   **Optional / Contextual:**
     *   Program Charter (PMO-00.02)
-    *   Enterprise Strategic Goals
+    *   Enterprise Strategic Goals (External)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
     *   Value Realization Register (PMO-01.03)
     *   Project Management Plan (PMO-04.01.01)
-    *   Project / Phase Closeout (PMO-07.03)
+    *   Project or Phase Closeout (PMO-07.03)
 *   **Optional / Contextual:**
     *   Project Roadmap (PMO-04.01.03)
     *   Transition to Operations Checklist (PMO-07.04)

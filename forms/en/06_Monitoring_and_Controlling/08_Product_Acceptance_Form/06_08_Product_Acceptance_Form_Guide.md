@@ -62,11 +62,29 @@ representative where an external party is involved.
     that the deliverables meet the requirements. In that case the form becomes
     a product verification, validation, and acceptance form.
 
-### Alignment
-*   Scope management plan
-*   Requirements documentation
-*   Requirements traceability matrix
-*   Quality management plan
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Approved Baselines: Scope (PMO-04.02.05), Schedule (PMO-04.03.08), Cost (PMO-04.04.04)
+    *   Requirements Documentation (PMO-04.02.03)
+    *   Requirements Traceability Matrix (PMO-04.02.04)
+*   **Optional / Contextual:**
+    *   Scope Management Plan (PMO-04.02.01)
+    *   Quality Management Plan (PMO-04.05.01)
+    *   Deliverable Technical Inspection Checklist (PMO-05.15)
+    *   Statement of Work (PMO-04.09.04)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project or Phase Closeout (PMO-07.03)
+    *   Transition to Operations Checklist (PMO-07.04)
+    *   Lessons Learned Summary (PMO-07.01)
+*   **Optional / Contextual:**
+    *   Change Request (PMO-05.03)
+    *   Value Realization Register (PMO-01.03)
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **PRODUCT ACCEPTANCE FORM**, the

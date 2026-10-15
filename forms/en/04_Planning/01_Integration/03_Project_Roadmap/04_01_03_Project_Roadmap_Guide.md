@@ -56,18 +56,17 @@ Authored by Project Manager and Product Owner, approved by Project Sponsor and S
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Project Charter (PMO-03.01)
-    *   Subsidiary Management Plans & Baselines
+    *   Subsidiary Management Plans (PMO-04.02.01 – PMO-04.09.01)
 *   **Optional / Contextual:**
     *   Tailoring Plan (PMO-02.01)
-    *   Program Governance Framework (PMO-00.02)
+    *   Program Charter (PMO-00.02)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Project Execution & Status Reports (PMO-06.01)
-    *   Change Control Management (PMO-05.03)
+    *   Project Status Report (PMO-06.01)
+    *   Change Request (PMO-05.03)
 *   **Optional / Contextual:**
-    *   Project Roadmap (PMO-04.01.03)
-    *   Lookahead Planning (PMO-04.03.10)
+    *   Sprint Planning Log (PMO-04.03.10)
 
 ---
 

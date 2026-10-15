@@ -85,11 +85,11 @@ deal with it", and neither is answered by the project team alone.
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   Strategic Business Objectives
-    *   Cost-Benefit Financial Baseline
+    *   Strategic Business Objectives (External)
+    *   Cost-Benefit Financial Baseline (External)
 *   **Optional / Contextual:**
     *   Portfolio Roadmap (PMO-00.01)
-    *   Feasibility & Market Analysis
+    *   Feasibility & Market Analysis (External)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**

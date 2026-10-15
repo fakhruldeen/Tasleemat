@@ -47,12 +47,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Project Charter (PMO-03.01), Risk Management Plan (PMO-04.08.01)
-*   **Optional / Contextual:** Data Privacy and Ethics Assessment (PMO-02.06)
+*   **Mandatory:**
+    *   Project Charter (PMO-03.01)
+    *   Risk Management Plan (PMO-04.08.01)
+*   **Optional / Contextual:**
+    *   Data Privacy and Ethics Assessment (PMO-02.06)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Deliverable Technical Inspection Checklist (PMO-05.15)
-*   **Optional / Contextual:** Transition to Operations Checklist (PMO-07.04)
+*   **Mandatory:**
+    *   Deliverable Technical Inspection Checklist (PMO-05.15)
+*   **Optional / Contextual:**
+    *   Transition to Operations Checklist (PMO-07.04)
 
 ---
 

@@ -55,7 +55,7 @@ Authored by Cost Estimator and Technical Leads, audited by Project Manager.
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   Work Breakdown Structure / WBS (PMO-04.02.06)
+    *   Work Breakdown Structure (PMO-04.02.06)
     *   Project Schedule (PMO-04.03.08)
     *   Resource Requirements (PMO-04.06.02)
 *   **Optional / Contextual:**
@@ -65,11 +65,10 @@ Authored by Cost Estimator and Technical Leads, audited by Project Manager.
 #### 2. Downstream Dependents
 *   **Mandatory:**
     *   Cost Baseline (PMO-04.04.04)
-    *   Earned Value Analysis / EVA (PMO-06.05)
+    *   Earned Value Analysis Report (PMO-06.05)
     *   Variance Analysis (PMO-06.04)
 *   **Optional / Contextual:**
-    *   Cost Estimating Worksheet (PMO-04.04.03)
-    *   Procurement Budget Plan (PMO-04.09.01)
+    *   Procurement Management Plan (PMO-04.09.01)
 
 ---
 

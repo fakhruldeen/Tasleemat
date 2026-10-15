@@ -47,12 +47,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Project or Phase Closeout (PMO-07.03), Contract Closeout Report (PMO-07.02)
-*   **Optional / Contextual:** Knowledge Transfer and Asset Archival Signoff (PMO-07.06)
+*   **Mandatory:**
+    *   Project or Phase Closeout (PMO-07.03)
+    *   Contract Closeout Report (PMO-07.02)
+*   **Optional / Contextual:**
+    *   Knowledge Transfer and Asset Archival Signoff (PMO-07.06)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Lessons Learned Summary (PMO-07.01)
-*   **Optional / Contextual:** Post-Implementation Review (PMO-07.05)
+*   **Mandatory:**
+    *   Lessons Learned Summary (PMO-07.01)
+*   **Optional / Contextual:**
+    *   Post-Implementation Review Report (PMO-07.05)
 
 ---
 

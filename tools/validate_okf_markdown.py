@@ -8,7 +8,7 @@ import sys
 import re
 
 def validate_okf():
-    exclude_dirs = {'.venv', 'venv', 'sdk', 'sdk_test_venv', 'build', 'dist', 'site', 'scratch', '.github', '.pytest_cache', '__pycache__', '.git', '_tokens'}
+    exclude_dirs = {'.venv', 'venv', 'sdk', 'sdk_test_venv', 'build', 'dist', 'site', 'scratch', 'UAT', '.github', '.pytest_cache', '__pycache__', '.git', '_tokens'}
     
     okf_errors = 0
     profile_errors = 0

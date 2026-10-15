@@ -47,12 +47,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Project Status Report (PMO-06.01), Earned Value Analysis (PMO-06.05)
-*   **Optional / Contextual:** Risk Report (PMO-04.08.06)
+*   **Mandatory:**
+    *   Project Status Report (PMO-06.01)
+    *   Earned Value Analysis Report (PMO-06.05)
+*   **Optional / Contextual:**
+    *   Risk Report (PMO-04.08.06)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Decision Log (PMO-05.02)
-*   **Optional / Contextual:** Change Request (PMO-05.03)
+*   **Mandatory:**
+    *   Decision Log (PMO-05.02)
+*   **Optional / Contextual:**
+    *   Change Request (PMO-05.03)
 
 ---
 
