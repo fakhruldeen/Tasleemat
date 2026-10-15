@@ -121,31 +121,40 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
     </section>
 
     <!-- Quick Installation & Resource Links Bar -->
-    <section style="padding: 1.5rem 0 0.5rem; background: var(--bg-card); border-bottom: 1px solid var(--border-color);">
+    <div style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 1.75rem 0;">
       <div class="container">
-        <div class="footer-quick-bar" style="margin: 0; padding: 0.5rem 0;">
-          <div class="footer-pip-box">
-            <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Install Package:</span>
-            <code class="footer-pip-code" id="home-pip-cmd">pip install tasleemat</code>
-            <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy', 2000);">
-              Copy
-            </button>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.1rem 1.6rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);">
+          
+          <!-- Pip Command Group with Ample Padding -->
+          <div style="display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap;">
+            <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-main); display: inline-flex; align-items: center; gap: 0.4rem;">
+              <span>⚡</span> Install Package:
+            </span>
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.35rem 0.5rem 0.35rem 0.85rem;">
+              <code style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue); font-weight: 600;" id="home-pip-cmd">pip install tasleemat</code>
+              <button class="btn-utility" style="padding: 0.35rem 0.75rem; font-size: 0.8rem; font-weight: 600; border-radius: 6px;" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='Copied!'; setTimeout(() => this.innerText='Copy', 2000);">
+                Copy
+              </button>
+            </div>
           </div>
-          <div class="footer-links-row">
-            <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+
+          <!-- Resource Badge Links -->
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link" style="padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
               📦 PyPI Package (v2.6.0)
             </a>
-            <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.35rem;">
-              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
+              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
               GitHub Source Code
             </a>
-            <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link" style="padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
               💬 Report Issue
             </a>
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- What's New in v2.6.0 Banner -->
     <section class="boundaries-section" style="background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); padding: 3rem 0;">
@@ -378,31 +387,40 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
     </section>
 
     <!-- Quick Installation & Resource Links Bar in Arabic -->
-    <section style="padding: 1.5rem 0 0.5rem; background: var(--bg-card); border-bottom: 1px solid var(--border-color);">
+    <div style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 1.75rem 0;">
       <div class="container">
-        <div class="footer-quick-bar" style="margin: 0; padding: 0.5rem 0;">
-          <div class="footer-pip-box">
-            <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">تثبيت الحزمة عبر pip:</span>
-            <code class="footer-pip-code" id="home-pip-cmd-ar">pip install tasleemat</code>
-            <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ', 2000);">
-              نسخ
-            </button>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.1rem 1.6rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);">
+          
+          <!-- Pip Command Group with Ample Padding AR -->
+          <div style="display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap;">
+            <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-main); display: inline-flex; align-items: center; gap: 0.4rem;">
+              <span>⚡</span> تثبيت الحزمة عبر pip:
+            </span>
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.35rem 0.5rem 0.35rem 0.85rem; direction: ltr;">
+              <code style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue); font-weight: 600;" id="home-pip-cmd-ar">pip install tasleemat</code>
+              <button class="btn-utility" style="padding: 0.35rem 0.75rem; font-size: 0.8rem; font-weight: 600; border-radius: 6px;" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='تم النسخ!'; setTimeout(() => this.innerText='نسخ', 2000);">
+                نسخ
+              </button>
+            </div>
           </div>
-          <div class="footer-links-row">
-            <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
+
+          <!-- Resource Badge Links AR -->
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link" style="padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
               📦 حزمة PyPI (v2.6.0)
             </a>
-            <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.35rem;">
-              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+            <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
+              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
               مستودع GitHub للمشروع
             </a>
-            <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
+            <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link" style="padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
               💬 إبلاغ عن ملاحظة
             </a>
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- What's New in v2.6.0 Banner in Arabic -->
     <section class="boundaries-section" style="background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); padding: 3rem 0;">
