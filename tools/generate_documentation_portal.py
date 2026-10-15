@@ -1959,7 +1959,6 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
       </div>
 
       <nav class="hidden xl:flex items-center gap-1 font-medium text-sm">
-        <a href="{nav_home}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Home / Overview" if not is_ar else "الرئيسية"}</a>
         <a href="{nav_catalog}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"114 Templates Catalog" if not is_ar else "كتالوج النماذج"}</a>
         <a href="{nav_gates}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Stage-Gate Governance" if not is_ar else "بوابات العبور"}</a>
         <a href="{nav_tailoring}" class="px-2.5 py-1.5 rounded-lg text-[#45464d] hover:bg-[#eaedff] hover:text-[#131b2e] transition">{"Tailoring Profiles" if not is_ar else "مستويات التخصيص"}</a>
@@ -1978,8 +1977,11 @@ def wrap_html_in_shell(title: str, body_html: str, rel_root: str = "./", is_ar: 
         
         {lang_btn}
 
-        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#eaedff] text-[#45464d] font-mono text-xs border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository">
-          <span>★</span><span>2 Stars</span>
+        <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center justify-center p-2 rounded-lg bg-[#eaedff] text-[#45464d] border border-[#c6c6ce]/40 hover:bg-[#e2e7ff] transition" title="GitHub Repository" aria-label="GitHub Repository">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
+        </a>
+        <a href="https://fakhruldeen.github.io" target="_blank" rel="noopener" class="inline-flex items-center justify-center line-none" title="Mohamed Fouad Fakhruldeen (fakhruldeen.github.io)" aria-label="Mohamed Fouad Fakhruldeen Website">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fouad Fakhruldeen" class="w-8 h-8 rounded-full border-2 border-slate-300 hover:border-blue-500 hover:scale-105 transition-transform object-cover" loading="lazy" />
         </a>
       </div>
     </div>

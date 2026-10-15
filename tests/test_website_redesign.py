@@ -230,6 +230,32 @@ class TestWebsiteRedesign(unittest.TestCase):
             else:
                 self.assertIn("Mohamed Fouad Fakhruldeen", html, f"English author name missing in {page}")
 
+    def test_header_author_image_and_nav(self):
+        """Verifies that the header includes circular author image linked to fakhruldeen.github.io,
+        GitHub icon only, and no redundant Home link in nav-menu (brand logo links to home)."""
+        sample_pages = [
+            ROOT / "site" / "index.html",
+            ROOT / "site" / "ar" / "index.html",
+            ROOT / "site" / "start" / "index.html",
+            ROOT / "site" / "deliverables" / "index.html",
+            ROOT / "site" / "guides" / "index.html",
+        ]
+        for page in sample_pages:
+            self.assertTrue(page.exists(), f"Page {page} must exist")
+            html = page.read_text(encoding="utf-8")
+            # 1. Author circular image in header
+            self.assertIn('header-author-link', html, f"Header author link missing in {page}")
+            self.assertIn('https://fakhruldeen.github.io', html, f"fakhruldeen.github.io link missing in {page}")
+            self.assertIn('header-avatar', html, f"Header avatar img class missing in {page}")
+
+            # 2. Brand logo links to home
+            self.assertIn('class="brand-group"', html, f"Brand group missing in {page}")
+
+            # 3. No redundant Home link in nav-menu
+            # The nav-menu should have Start Here, Deliverables, etc., but not a nav-link to Home
+            self.assertNotIn('>Home</a>', html, f"Redundant Home nav link found in {page}")
+            self.assertNotIn('>الرئيسية</a>', html, f"Redundant Arabic Home nav link found in {page}")
+
     def test_deliverable_prompt_and_short_tabs(self):
         """Verifies that deliverable pages have shortened tab names and a dedicated LLM Prompt tab."""
         sample_pages = [
