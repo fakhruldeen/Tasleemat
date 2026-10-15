@@ -285,7 +285,7 @@ tasleemat ui</code></pre>
         <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
         <!-- Command 7: audit -->
-        <div>
+        <div id="audit">
           <h3 style="font-size: 1.25rem; color: #10b981; margin-bottom: 0.5rem;">G. <code>tasleemat audit</code> (Project Governance &amp; Structural Verification)</h3>
           <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
             Deterministic compliance auditing for any scaffolded PMO workspace. Analyzes deliverable presence against governance tiers (1, 2, or 3) and delivery packs, computes completion percentages, validates JSON payloads against companion schemas (Draft 2020-12), and produces structured JSON for CI/CD gates.
@@ -768,7 +768,7 @@ tasleemat ui</code></pre>
         <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
         <!-- Command 7: audit AR -->
-        <div>
+        <div id="audit">
           <h3 style="font-size: 1.25rem; color: #10b981; margin-bottom: 0.5rem;">ز. <code>tasleemat audit</code> (التدقيق الحوكمي والتحقق الهيكلي)</h3>
           <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
             أداة التدقيق المنضبطة للتحقق من امتثال أي بيئة عمل للمشروع وفق مستويات الحوكمة (المستوى 1 أو 2 أو 3) وحزمة المنهجية، مع حساب نسب الإنجاز المئوية وفحص سلامة مخططات البيانات JSON Schema (Draft 2020-12)، وتصدير تقارير JSON لأنظمة CI/CD.

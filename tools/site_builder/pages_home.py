@@ -161,9 +161,9 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
             <div class="card-desc" style="font-size: 0.88rem;">
               Automated governance verification engine. Audits workspace artifacts against Gates 0 to 5, calculates deterministic KPI compliance scores (0–100%), and outputs structured JSON for CI/CD pipelines.
             </div>
-            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--accent-emerald); font-family: var(--font-mono);">
-              $ tasleemat audit
-            </div>
+            <a href="{base_url}/developers/cli/#audit" style="display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.75rem; font-size: 0.82rem; color: var(--accent-emerald); font-family: var(--font-mono); text-decoration: none;">
+              <span>$ tasleemat audit</span> &rarr;
+            </a>
           </div>
 
           <div class="card" style="border-top: 3px solid #8b5cf6;">
@@ -385,9 +385,9 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
             <div class="card-desc" style="font-size: 0.88rem;">
               محرك تدقيق حوكمة آلي للتحقق من بوابات المشروع (البوابات 0 إلى 5)، وحساب مؤشرات الالتزام الدقيقة (0–100%)، وتوليد تقارير JSON لخطوط أنابيب CI/CD.
             </div>
-            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--accent-emerald); font-family: var(--font-mono); direction: ltr; text-align: left;">
-              $ tasleemat audit
-            </div>
+            <a href="{base_url}/ar/developers/cli/#audit" style="display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.75rem; font-size: 0.82rem; color: var(--accent-emerald); font-family: var(--font-mono); text-decoration: none; direction: ltr;">
+              <span>$ tasleemat audit</span> &rarr;
+            </a>
           </div>
 
           <div class="card" style="border-top: 3px solid #8b5cf6;">
