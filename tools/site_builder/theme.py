@@ -1472,7 +1472,7 @@ def render_html_page(
           <div class="author-details">
             <div class="author-name">{"Mohamed Fouad Fakhruldeen" if not is_ar else "محمد فؤاد فخر الدين"}</div>
             <div class="author-bio">
-              {"Creator & Maintainer of Tasleemat. Passionate about PMO governance, AI systems, and agile enterprise operating systems." if not is_ar else "مؤسس ومطور إطار تسليمات. مهتم بحوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي."}
+              {"Creator & Maintainer of Tasleemat. Working across PMO governance, AI systems, and agile enterprise operating systems." if not is_ar else "مؤسس ومطور إطار تسليمات. يعمل في مجالات حوكمة مكاتب إدارة المشاريع ونظم الذكاء الاصطناعي وهندسة التشغيل المؤسسي."}
             </div>
           </div>
         </div>
