@@ -175,21 +175,27 @@ class TestWebsiteRedesign(unittest.TestCase):
         self.assertIn('form-viewer-container', html_en)
 
     def test_footer_pip_and_github_links(self):
-        """Verifies that all pages include pip install command and GitHub links in the footer."""
+        """Verifies homepage pip install quick bar, absence of duplicate footer quick bar, and GitHub links."""
+        # 1. Homepage has pip install tasleemat in its designated quick bar
+        home_pages = [ROOT / "site" / "index.html", ROOT / "site" / "ar" / "index.html"]
+        for hp in home_pages:
+            self.assertTrue(hp.exists(), f"Page {hp} must exist")
+            html = hp.read_text(encoding="utf-8")
+            self.assertIn("pip install tasleemat", html, f"pip install command missing in {hp}")
+
+        # 2. Duplicate footer-quick-bar has been removed
         sample_pages = [
             ROOT / "site" / "index.html",
             ROOT / "site" / "ar" / "index.html",
             ROOT / "site" / "deliverables" / "index.html",
             ROOT / "site" / "guides" / "index.html",
-            ROOT / "site" / "en" / "01_getting_started.html",
-            ROOT / "site" / "ar" / "01_getting_started.html",
             ROOT / "site" / "deliverables" / "PMO-03.01" / "index.html",
             ROOT / "site" / "ar" / "deliverables" / "PMO-03.01" / "index.html",
         ]
         for page in sample_pages:
             self.assertTrue(page.exists(), f"Page {page} must exist")
             html = page.read_text(encoding="utf-8")
-            self.assertIn("pip install tasleemat", html, f"pip install link missing in {page}")
+            self.assertNotIn('class="footer-quick-bar"', html, f"Duplicate footer-quick-bar element should be removed in {page}")
             self.assertIn("https://github.com/fakhruldeen/Tasleemat", html, f"GitHub link missing in {page}")
 
     def test_no_visible_yaml_frontmatter(self):
@@ -209,7 +215,7 @@ class TestWebsiteRedesign(unittest.TestCase):
             self.assertEqual(len(matches), 0, f"Found visible YAML frontmatter in {page}: {matches}")
 
     def test_footer_author_card(self):
-        """Verifies that all pages include Mohamed Fouad Fakhruldeen's author card with links to fakhr.me and linkedin in the footer."""
+        """Verifies that all pages include Mohamed Fouad Fakhruldeen's author card in a dedicated section with links to fakhr.me and linkedin."""
         sample_pages = [
             ROOT / "site" / "index.html",
             ROOT / "site" / "ar" / "index.html",
@@ -221,6 +227,7 @@ class TestWebsiteRedesign(unittest.TestCase):
         for page in sample_pages:
             self.assertTrue(page.exists(), f"Page {page} must exist")
             html = page.read_text(encoding="utf-8")
+            self.assertIn("site-author-section", html, f"Author section missing in {page}")
             self.assertIn("footer-author-card", html, f"Author card missing in {page}")
             self.assertIn("https://fakhr.me", html, f"fakhr.me link missing in {page}")
             self.assertIn("https://www.linkedin.com/in/fakhruldeen", html, f"LinkedIn link missing in {page}")

@@ -1113,19 +1113,25 @@ tr:hover td {
   background: var(--bg-card-hover);
 }
 
-/* Author Profile Card in Footer */
+/* Author Profile Section & Card */
+.site-author-section {
+  background: var(--bg-main);
+  border-top: 1px solid var(--border-color);
+  padding: 2.5rem 0;
+}
+
 .footer-author-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.25rem;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 2rem;
+  padding: 1.35rem 1.6rem;
+  margin-bottom: 0;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .author-info-group {
@@ -1457,37 +1463,12 @@ def render_html_page(
     {content}
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <!-- Author Profile Section -->
+  <section class="site-author-section" aria-label="{"About the Author" if not is_ar else "عن المطور والمؤلف"}">
     <div class="container">
-      <!-- Quick Installation & GitHub Repository Bar -->
-      <div class="footer-quick-bar">
-        <div class="footer-pip-box">
-          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">
-            {"Install Package:" if not is_ar else "تثبيت الحزمة عبر pip:"}
-          </span>
-          <code class="footer-pip-code" id="footer-pip-cmd">pip install tasleemat</code>
-          <button class="btn-utility" onclick="navigator.clipboard.writeText('pip install tasleemat'); this.innerText='{'Copied!' if not is_ar else 'تم النسخ!'}'; setTimeout(() => this.innerText='{'Copy' if not is_ar else 'نسخ'}', 2000);">
-            {"Copy" if not is_ar else "نسخ"}
-          </button>
-        </div>
-        <div class="footer-links-row">
-          <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link">
-            📦 {"PyPI Package (v2.6.0)" if not is_ar else "حزمة PyPI (v2.6.0)"}
-          </a>
-          <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.35rem;">
-            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
-            {"GitHub Source Code" if not is_ar else "مستودع GitHub للمشروع"}
-          </a>
-          <a href="https://github.com/fakhruldeen/Tasleemat/issues" target="_blank" rel="noopener" class="footer-badge-link">
-            💬 {"Report Issue" if not is_ar else "إبلاغ عن ملاحظة"}
-          </a>
-        </div>
-      </div>
-
-      <!-- Author Profile Card -->
       <div class="footer-author-card">
         <div class="author-info-group">
-          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fouad Fakhruldeen" class="author-avatar" loading="lazy" />
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="{"Mohamed Fouad Fakhruldeen" if not is_ar else "محمد فؤاد فخر الدين"}" class="author-avatar" loading="lazy" />
           <div class="author-details">
             <div class="author-name">{"Mohamed Fouad Fakhruldeen" if not is_ar else "محمد فؤاد فخر الدين"}</div>
             <div class="author-bio">
@@ -1509,6 +1490,11 @@ def render_html_page(
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
 
 
       <div class="footer-grid">
