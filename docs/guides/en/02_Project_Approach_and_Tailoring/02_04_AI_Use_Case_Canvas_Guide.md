@@ -98,8 +98,8 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
     *   AI Governance Plan (PMO-02.02)
     *   Requirements Documentation (PMO-04.02.03)
 *   **Optional / Contextual:**
-    *   User Story Mapping (PMO-04.02.09)
-    *   AI Model Card (PMO-02.05)
+    *   User Story Mapping Canvas (PMO-04.02.09)
+    *   AI Model Card and Fact Sheet (PMO-02.05)
 
 ---
 

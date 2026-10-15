@@ -80,19 +80,19 @@ Created by Project Manager and Scheduler, approved by Project Sponsor and Client
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   Work Breakdown Structure / WBS (PMO-04.02.06)
-    *   Scope Statement (PMO-04.02.05)
+    *   Work Breakdown Structure (PMO-04.02.06)
+    *   Project Scope Statement (PMO-04.02.05)
 *   **Optional / Contextual:**
     *   Resource Requirements (PMO-04.06.02)
     *   Risk Register (PMO-04.08.02)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Project Schedule Baseline (PMO-04.03.08)
-    *   Earned Value Analysis / EVA (PMO-06.05)
+    *   Project Schedule (PMO-04.03.08)
+    *   Earned Value Analysis Report (PMO-06.05)
 *   **Optional / Contextual:**
     *   Release Plan (PMO-04.03.09)
-    *   Lookahead Planning Log (PMO-04.03.10)
+    *   Sprint Planning Log (PMO-04.03.10)
 
 ---
 

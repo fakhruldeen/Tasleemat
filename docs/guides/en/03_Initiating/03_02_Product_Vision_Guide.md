@@ -105,15 +105,15 @@ Project Sponsor or Client.
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Business Case (PMO-01.01)
-    *   Customer & Market Needs Analysis
+    *   Customer & Market Needs Analysis (External)
 *   **Optional / Contextual:**
     *   Project Charter (PMO-03.01)
-    *   Strategic Objectives
+    *   Strategic Objectives (External)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
     *   Product Backlog (PMO-04.02.08)
-    *   User Story Mapping (PMO-04.02.09)
+    *   User Story Mapping Canvas (PMO-04.02.09)
     *   Project Roadmap (PMO-04.01.03)
 *   **Optional / Contextual:**
     *   Release Plan (PMO-04.03.09)

@@ -72,12 +72,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Meeting Minutes (PMO-05.11), Issue Log (PMO-05.01)
-*   **Optional / Contextual:** Decision Log (PMO-05.02)
+*   **Mandatory:**
+    *   Meeting Minutes (PMO-05.11)
+    *   Issue Log (PMO-05.01)
+*   **Optional / Contextual:**
+    *   Decision Log (PMO-05.02)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Project Status Report (PMO-06.01)
-*   **Optional / Contextual:** Team Member Status Report (PMO-06.02)
+*   **Mandatory:**
+    *   Project Status Report (PMO-06.01)
+*   **Optional / Contextual:**
+    *   Team Member Status Report (PMO-06.02)
 
 ---
 

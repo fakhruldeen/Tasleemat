@@ -72,12 +72,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Stakeholder Register (PMO-03.04), Stakeholder Analysis (PMO-03.05)
-*   **Optional / Contextual:** Project Charter (PMO-03.01)
+*   **Mandatory:**
+    *   Stakeholder Register (PMO-03.04)
+    *   Stakeholder Analysis (PMO-03.05)
+*   **Optional / Contextual:**
+    *   Project Charter (PMO-03.01)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Stakeholder Engagement Plan (PMO-04.10.01)
-*   **Optional / Contextual:** Communications Distribution Matrix (PMO-04.07.02)
+*   **Mandatory:**
+    *   Stakeholder Engagement Plan (PMO-04.10.01)
+*   **Optional / Contextual:**
+    *   Communications Distribution Matrix (PMO-04.07.02)
 
 ---
 

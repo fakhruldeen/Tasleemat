@@ -87,12 +87,11 @@ Agreed by the team, which is the only arrangement that produces something they w
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Quality Audits (PMO-05.05)
+    *   Quality Audit Report (PMO-05.05)
     *   Product Acceptance Form (PMO-06.08)
-    *   UAT Sign-off Form (PMO-06.10)
+    *   User Acceptance Testing Signoff (PMO-06.10)
 *   **Optional / Contextual:**
-    *   Definition of Ready & Done (PMO-04.05.03)
-    *   Vendor Scorecard (PMO-06.09)
+    *   Vendor Performance Scorecard (PMO-06.09)
 
 ---
 

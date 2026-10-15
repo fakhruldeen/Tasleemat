@@ -103,8 +103,8 @@ learned repository alongside the lessons learned register.
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Product Acceptance Form (PMO-06.08)
-    *   UAT Sign-off (PMO-06.10)
-    *   Contract Closure Reports (PMO-07.02)
+    *   User Acceptance Testing Signoff (PMO-06.10)
+    *   Contract Closeout Report (PMO-07.02)
 *   **Optional / Contextual:**
     *   Lessons Learned Register (PMO-05.07)
     *   Issue Log (PMO-05.01)
@@ -112,11 +112,11 @@ learned repository alongside the lessons learned register.
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Final Project Archive & Release
+    *   Knowledge Transfer and Asset Archival Signoff (PMO-07.06), Administrative and Resource Release Form (PMO-07.07)
     *   Value Realization Register (PMO-01.03)
-    *   Organizational Process Assets Update
+    *   Organizational Process Assets Update (External)
 *   **Optional / Contextual:**
-    *   Post-Implementation Review
+    *   Post-Implementation Review Report (PMO-07.05)
     *   Transition to Operations Checklist (PMO-07.04)
 
 ---

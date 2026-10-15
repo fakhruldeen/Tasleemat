@@ -80,14 +80,14 @@ Owned by whoever is responsible for the new member's first week, which on most p
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Project Management Plan (PMO-04.01.01)
-    *   Approved Baselines (Scope/Schedule/Cost)
+    *   Approved Baselines: Scope (PMO-04.02.05), Schedule (PMO-04.03.08), Cost (PMO-04.04.04)
 *   **Optional / Contextual:**
     *   Risk Register (PMO-04.08.02)
     *   Stakeholder Engagement Plan (PMO-04.10.01)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Project Status Reports (PMO-06.01)
+    *   Project Status Report (PMO-06.01)
     *   Change Log (PMO-05.04)
     *   Lessons Learned Summary (PMO-07.01)
 *   **Optional / Contextual:**

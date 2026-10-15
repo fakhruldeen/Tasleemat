@@ -83,12 +83,11 @@ Managed by the Training Coordinator or Change Specialist, with oversight from th
     *   Stakeholder Analysis (PMO-03.05)
     *   Project Scope Statement (PMO-04.02.05)
 *   **Optional / Contextual:**
-    *   Communications Plan (PMO-04.07.01)
+    *   Communications Management Plan (PMO-04.07.01)
     *   Project Roadmap (PMO-04.01.03)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Training Plan & Log (PMO-04.11.02)
     *   Transition to Operations Checklist (PMO-07.04)
 *   **Optional / Contextual:**
     *   Team Performance Assessment (PMO-05.06)

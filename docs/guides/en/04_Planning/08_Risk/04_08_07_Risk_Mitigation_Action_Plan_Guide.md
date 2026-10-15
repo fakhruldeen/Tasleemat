@@ -81,7 +81,7 @@ Owned by the person who carries the risk, which is not always the project manage
 *   **Mandatory:**
     *   Project Charter (PMO-03.01)
     *   Assumption Log (PMO-03.03)
-    *   Project Baselines (Scope/Schedule/Cost)
+    *   Approved Baselines: Scope (PMO-04.02.05), Schedule (PMO-04.03.08), Cost (PMO-04.04.04)
 *   **Optional / Contextual:**
     *   AI Governance Plan (PMO-02.02)
     *   Procurement Strategy (PMO-04.09.02)
@@ -89,10 +89,9 @@ Owned by the person who carries the risk, which is not always the project manage
 #### 2. Downstream Dependents
 *   **Mandatory:**
     *   Risk Register (PMO-04.08.02)
-    *   Risk Reports (PMO-04.08.06)
-    *   Risk Audits (PMO-06.06)
+    *   Risk Report (PMO-04.08.06)
+    *   Risk Audit Report (PMO-06.06)
 *   **Optional / Contextual:**
-    *   Risk Mitigation Action Plan (PMO-04.08.07)
     *   Decision Log (PMO-05.02)
 
 ---

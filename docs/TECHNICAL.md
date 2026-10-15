@@ -187,7 +187,7 @@ tasleemat test -v
 
 ## 🛠️ 5. Documentation Architecture
 
-Tasleemat follows a hybrid **Repository-First & Static Portal** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](README.md) and [`forms/`](../forms/en/) directories as native GitHub-flavored Markdown.
+Tasleemat follows a hybrid **Repository-First & Static Portal** documentation architecture. All substantive project management manuals, stage-gate checklists, RACI matrices, and deliverable guides reside directly within the [`docs/`](README.md) and [`forms/`](forms/en/index.md) directories as native GitHub-flavored Markdown.
 
 Additionally, an interactive static HTML documentation portal is automatically generated from these markdown sources via `tools/generate_documentation_portal.py` and deployed to GitHub Pages via continuous integration (`.github/workflows/deploy-docs.yml`).
 

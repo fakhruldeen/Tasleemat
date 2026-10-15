@@ -87,11 +87,27 @@ is evaluated for future procurement.
 *   If the project was based around one large contract, you can combine the
     information in the project closeout report with this form.
 
-### Alignment
-*   Procurement management plan
-*   Procurement audit
-*   Change log
-*   Project closeout
+### Alignment & Dependencies
+
+#### 1. Pre-requisites & Inputs (Upstream Dependencies)
+*   **Mandatory:**
+    *   Procurement Management Plan (PMO-04.09.01)
+    *   Procurement Audit Report (PMO-06.07)
+    *   Change Log (PMO-05.04)
+*   **Optional / Contextual:**
+    *   Product Acceptance Form (PMO-06.08)
+    *   Vendor Performance Scorecard (PMO-06.09)
+    *   Statement of Work (PMO-04.09.04)
+
+#### 2. Downstream Dependents
+*   **Mandatory:**
+    *   Project or Phase Closeout (PMO-07.03)
+    *   Administrative and Resource Release Form (PMO-07.07)
+*   **Optional / Contextual:**
+    *   Lessons Learned Summary (PMO-07.01)
+    *   Value Realization Register (PMO-01.03)
+
+---
 
 ### 5. How?
 To accurately and professionally complete the **CONTRACT CLOSEOUT REPORT**, the

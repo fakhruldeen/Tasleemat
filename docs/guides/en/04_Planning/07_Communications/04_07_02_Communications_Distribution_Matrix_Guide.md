@@ -72,12 +72,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Communications Management Plan (PMO-04.07.01), Stakeholder Register (PMO-03.04)
-*   **Optional / Contextual:** Project Charter (PMO-03.01)
+*   **Mandatory:**
+    *   Communications Management Plan (PMO-04.07.01)
+    *   Stakeholder Register (PMO-03.04)
+*   **Optional / Contextual:**
+    *   Project Charter (PMO-03.01)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Project Status Report (PMO-06.01)
-*   **Optional / Contextual:** Meeting Minutes (PMO-05.11)
+*   **Mandatory:**
+    *   Project Status Report (PMO-06.01)
+*   **Optional / Contextual:**
+    *   Meeting Minutes (PMO-05.11)
 
 ---
 

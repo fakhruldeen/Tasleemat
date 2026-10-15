@@ -72,12 +72,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Transition to Operations Checklist (PMO-07.04), Training Plan and Log (PMO-04.11.02)
-*   **Optional / Contextual:** Lessons Learned Register (PMO-05.07)
+*   **Mandatory:**
+    *   Transition to Operations Checklist (PMO-07.04)
+    *   Training Plan and Log (PMO-04.11.02)
+*   **Optional / Contextual:**
+    *   Lessons Learned Register (PMO-05.07)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Project or Phase Closeout (PMO-07.03)
-*   **Optional / Contextual:** Post-Implementation Review (PMO-07.05)
+*   **Mandatory:**
+    *   Project or Phase Closeout (PMO-07.03)
+*   **Optional / Contextual:**
+    *   Post-Implementation Review Report (PMO-07.05)
 
 ---
 

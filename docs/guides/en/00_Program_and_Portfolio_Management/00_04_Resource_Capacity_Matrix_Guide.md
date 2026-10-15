@@ -116,17 +116,17 @@ is a cost change and should not be agreed without someone who can see the cost.
 *   **Mandatory:**
     *   Portfolio Roadmap (PMO-00.01)
     *   Program Charter (PMO-00.02)
-    *   Organizational Staffing Budgets
+    *   Organizational Staffing Budgets (External)
 *   **Optional / Contextual:**
-    *   Resource Management Plans (PMO-04.06.01)
+    *   Resource Management Plan (PMO-04.06.01)
     *   Resource Requirements (PMO-04.06.02)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Project Resource Management Plans (PMO-04.06.01)
-    *   Project Schedules (PMO-04.03.08)
+    *   Resource Management Plan (PMO-04.06.01)
+    *   Project Schedule (PMO-04.03.08)
 *   **Optional / Contextual:**
-    *   Responsibility Assignment Matrix / RAM (PMO-04.06.04)
+    *   Responsibility Assignment Matrix (PMO-04.06.04)
     *   Procurement Strategy (PMO-04.09.02)
 
 ---

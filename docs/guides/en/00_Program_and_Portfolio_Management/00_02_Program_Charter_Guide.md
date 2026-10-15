@@ -116,20 +116,20 @@ is real.
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Portfolio Roadmap (PMO-00.01)
-    *   Program Business Case
-    *   Strategic Plan
+    *   Business Case (PMO-01.01)
+    *   Strategic Plan (External)
 *   **Optional / Contextual:**
     *   Interdependency Register (PMO-00.03)
     *   Benefits Management Plan (PMO-01.02)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Program Benefits Management Plan (PMO-01.02)
-    *   Component Project Charters (PMO-03.01)
+    *   Benefits Management Plan (PMO-01.02)
+    *   Project Charter (PMO-03.01)
     *   Interdependency Register (PMO-00.03)
 *   **Optional / Contextual:**
     *   Resource Capacity Matrix (PMO-00.04)
-    *   Program Governance Plan
+    *   Program Governance Plan (External)
 
 ---
 

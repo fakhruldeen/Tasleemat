@@ -72,12 +72,18 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Issue Log (PMO-05.01), Risk Register (PMO-04.08.02)
-*   **Optional / Contextual:** Variance Analysis (PMO-06.04)
+*   **Mandatory:**
+    *   Issue Log (PMO-05.01)
+    *   Risk Register (PMO-04.08.02)
+*   **Optional / Contextual:**
+    *   Variance Analysis (PMO-06.04)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Executive Steering Committee Dashboard (PMO-06.13), Decision Log (PMO-05.02)
-*   **Optional / Contextual:** Change Request (PMO-05.03)
+*   **Mandatory:**
+    *   Executive Steering Committee Dashboard (PMO-06.13)
+    *   Decision Log (PMO-05.02)
+*   **Optional / Contextual:**
+    *   Change Request (PMO-05.03)
 
 ---
 

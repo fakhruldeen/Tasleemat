@@ -80,16 +80,16 @@ Authored by Procurement Auditor or Contracts Specialist and reviewed by Procurem
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   Approved Project Baselines (PMO-04.01.01)
-    *   Work Performance Data & Logs (PMO-05.01 - 05.12)
+    *   Approved Baselines: Scope (PMO-04.02.05), Schedule (PMO-04.03.08), Cost (PMO-04.04.04)
+    *   Work Performance Data & Logs (PMO-05.01 – PMO-05.15)
 *   **Optional / Contextual:**
     *   Risk Register (PMO-04.08.02)
-    *   Vendor Agreements (PMO-04.09.04)
+    *   Statement of Work (PMO-04.09.04)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Change Requests (PMO-05.03)
-    *   Project / Phase Closeout (PMO-07.03)
+    *   Change Request (PMO-05.03)
+    *   Project or Phase Closeout (PMO-07.03)
     *   Lessons Learned Summary (PMO-07.01)
 *   **Optional / Contextual:**
     *   Transition to Operations Checklist (PMO-07.04)

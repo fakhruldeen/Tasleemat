@@ -152,10 +152,10 @@ findings.
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
-    *   AI Use Case Canvas (PMO-02.04) or Scope Statement (PMO-04.02.05)
-    *   Data Flow & System Architecture
+    *   AI Use Case Canvas (PMO-02.04) or Project Scope Statement (PMO-04.02.05)
+    *   Data Flow & System Architecture (External)
 *   **Optional / Contextual:**
-    *   Regulatory Privacy Requirements (GDPR / Data Protection Acts)
+    *   Regulatory Privacy Requirements (GDPR / Data Protection Acts) (External)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
@@ -163,8 +163,8 @@ findings.
     *   Risk Register (PMO-04.08.02)
     *   Requirements Documentation (PMO-04.02.03)
 *   **Optional / Contextual:**
-    *   Statement of Work / SOW (PMO-04.09.04)
-    *   Quality Audit (PMO-05.05)
+    *   Statement of Work (PMO-04.09.04)
+    *   Quality Audit Report (PMO-05.05)
 
 ---
 

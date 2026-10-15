@@ -72,12 +72,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Milestone List (PMO-04.03.04), Project Schedule (PMO-04.03.08)
-*   **Optional / Contextual:** Variance Analysis (PMO-06.04)
+*   **Mandatory:**
+    *   Milestone List (PMO-04.03.04)
+    *   Project Schedule (PMO-04.03.08)
+*   **Optional / Contextual:**
+    *   Variance Analysis (PMO-06.04)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Project Status Report (PMO-06.01)
-*   **Optional / Contextual:** Change Request (PMO-05.03)
+*   **Mandatory:**
+    *   Project Status Report (PMO-06.01)
+*   **Optional / Contextual:**
+    *   Change Request (PMO-05.03)
 
 ---
 

@@ -88,12 +88,12 @@ Authored by Quality Lead and Project Manager, approved by Project Sponsor and PM
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Quality Audits (PMO-05.05)
+    *   Quality Audit Report (PMO-05.05)
     *   Product Acceptance Form (PMO-06.08)
-    *   UAT Sign-off Form (PMO-06.10)
+    *   User Acceptance Testing Signoff (PMO-06.10)
 *   **Optional / Contextual:**
-    *   Definition of Ready & Done (PMO-04.05.03)
-    *   Vendor Scorecard (PMO-06.09)
+    *   Definition of Ready and Done Standard (PMO-04.05.03)
+    *   Vendor Performance Scorecard (PMO-06.09)
 
 ---
 

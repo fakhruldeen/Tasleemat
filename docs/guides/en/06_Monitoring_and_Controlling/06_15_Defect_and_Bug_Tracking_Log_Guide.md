@@ -72,12 +72,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Deliverable Technical Inspection Checklist (PMO-05.15), Quality Metrics (PMO-04.05.02)
-*   **Optional / Contextual:** Quality Audit (PMO-05.05)
+*   **Mandatory:**
+    *   Deliverable Technical Inspection Checklist (PMO-05.15)
+    *   Quality Metrics (PMO-04.05.02)
+*   **Optional / Contextual:**
+    *   Quality Audit Report (PMO-05.05)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** User Acceptance Testing Signoff (PMO-06.10)
-*   **Optional / Contextual:** Product Acceptance Form (PMO-06.08)
+*   **Mandatory:**
+    *   User Acceptance Testing Signoff (PMO-06.10)
+*   **Optional / Contextual:**
+    *   Product Acceptance Form (PMO-06.08)
 
 ---
 

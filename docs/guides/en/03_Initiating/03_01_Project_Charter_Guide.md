@@ -82,7 +82,7 @@ Issued by the Project Sponsor, authored/drafted with the Project Manager, and si
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Business Case (PMO-01.01)
-    *   Strategic Plan
+    *   Strategic Plan (External)
 *   **Optional / Contextual:**
     *   Program Charter (PMO-00.02)
     *   Portfolio Roadmap (PMO-00.01)
@@ -93,7 +93,7 @@ Issued by the Project Sponsor, authored/drafted with the Project Manager, and si
     *   Project Management Plan (PMO-04.01.01)
     *   Stakeholder Register (PMO-03.04)
     *   Assumption Log (PMO-03.03)
-    *   Scope Statement (PMO-04.02.05)
+    *   Project Scope Statement (PMO-04.02.05)
 *   **Optional / Contextual:**
     *   Tailoring Plan (PMO-02.01)
     *   Team Charter (PMO-04.06.05)

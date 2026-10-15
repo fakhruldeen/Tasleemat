@@ -87,10 +87,10 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Business Case (PMO-01.01)
-    *   Data & Technical Architecture Baseline
+    *   Data & Technical Architecture Baseline (External)
 *   **Optional / Contextual:**
     *   Portfolio Roadmap (PMO-00.01)
-    *   Strategic AI Goals
+    *   Strategic AI Goals (External)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
@@ -98,7 +98,7 @@ This artifact is primarily prepared, utilized, and updated during the **PROJECT 
     *   AI Use Case Canvas (PMO-02.04)
 *   **Optional / Contextual:**
     *   Resource Capacity Matrix (PMO-00.04)
-    *   Procurement Plan (PMO-04.09.01)
+    *   Procurement Management Plan (PMO-04.09.01)
 
 ---
 

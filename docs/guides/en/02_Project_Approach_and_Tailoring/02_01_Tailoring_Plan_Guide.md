@@ -114,7 +114,7 @@ required to uphold.
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Project Charter (PMO-03.01)
-    *   Organizational PMO Methodology
+    *   Organizational PMO Methodology (External)
 *   **Optional / Contextual:**
     *   Program Charter (PMO-00.02)
     *   Risk Management Plan (PMO-04.08.01)

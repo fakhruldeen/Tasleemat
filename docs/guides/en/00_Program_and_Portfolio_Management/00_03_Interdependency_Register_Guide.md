@@ -113,19 +113,19 @@ the person who needs the deliverable.
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Program Charter (PMO-00.02) or Portfolio Roadmap (PMO-00.01)
-    *   Project Schedules (PMO-04.03.08)
+    *   Project Schedule (PMO-04.03.08)
 *   **Optional / Contextual:**
-    *   Milestone Lists (PMO-04.03.04)
-    *   Procurement Plans (PMO-04.09.01)
+    *   Milestone List (PMO-04.03.04)
+    *   Procurement Management Plan (PMO-04.09.01)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Project Schedules (PMO-04.03.08)
-    *   Program Status Reports (PMO-06.01)
-    *   Risk Registers (PMO-04.08.02)
+    *   Project Schedule (PMO-04.03.08)
+    *   Project Status Report (PMO-06.01)
+    *   Risk Register (PMO-04.08.02)
 *   **Optional / Contextual:**
-    *   Lookahead Planning Log (PMO-04.03.10)
-    *   Change Requests (PMO-05.03)
+    *   Sprint Planning Log (PMO-04.03.10)
+    *   Change Request (PMO-05.03)
 
 ---
 

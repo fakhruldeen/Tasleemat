@@ -81,10 +81,10 @@ Created and managed by the Project Manager with input from project sponsors and 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
 *   **Mandatory:**
     *   Project Charter (PMO-03.01)
-    *   Procurement Agreements
+    *   Procurement Agreements (External)
 *   **Optional / Contextual:**
     *   Program Charter (PMO-00.02)
-    *   Organizational Charts
+    *   Organizational Charts (External)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
@@ -92,7 +92,7 @@ Created and managed by the Project Manager with input from project sponsors and 
     *   Stakeholder Engagement Plan (PMO-04.10.01)
     *   Communications Management Plan (PMO-04.07.01)
 *   **Optional / Contextual:**
-    *   Change Management Strategy (PMO-04.11.01)
+    *   OCM Strategy and Plan (PMO-04.11.01)
     *   Team Charter (PMO-04.06.05)
 
 ---

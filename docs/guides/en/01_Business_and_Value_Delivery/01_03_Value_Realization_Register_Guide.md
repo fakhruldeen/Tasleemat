@@ -116,16 +116,16 @@ figures, not the project's.
     *   Benefits Management Plan (PMO-01.02)
     *   Business Case (PMO-01.01)
 *   **Optional / Contextual:**
-    *   Project Status Reports (PMO-06.01)
+    *   Project Status Report (PMO-06.01)
     *   Product Acceptance Form (PMO-06.08)
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
     *   Lessons Learned Summary (PMO-07.01)
-    *   Project / Phase Closeout (PMO-07.03)
+    *   Project or Phase Closeout (PMO-07.03)
 *   **Optional / Contextual:**
-    *   Post-Project Benefit Reviews
-    *   Operational KPI Dashboards
+    *   Post-Project Benefit Reviews (External)
+    *   Operational KPI Dashboards (External)
 
 ---
 

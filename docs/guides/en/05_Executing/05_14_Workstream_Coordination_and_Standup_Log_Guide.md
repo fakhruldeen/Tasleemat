@@ -72,12 +72,17 @@ Authored by the Project Manager or designated lead; reviewed and approved by Pro
 ### Alignment & Dependencies
 
 #### 1. Pre-requisites & Inputs (Upstream Dependencies)
-*   **Mandatory:** Sprint Planning Log (PMO-04.03.10), Team Charter (PMO-04.06.05)
-*   **Optional / Contextual:** Impediment Log (PMO-05.10)
+*   **Mandatory:**
+    *   Sprint Planning Log (PMO-04.03.10)
+    *   Team Charter (PMO-04.06.05)
+*   **Optional / Contextual:**
+    *   Impediment Log (PMO-05.10)
 
 #### 2. Downstream Dependents
-*   **Mandatory:** Action Items Log (PMO-05.13)
-*   **Optional / Contextual:** Flow Metrics and Value Stream (PMO-06.12)
+*   **Mandatory:**
+    *   Action Items Log (PMO-05.13)
+*   **Optional / Contextual:**
+    *   Flow Metrics and Value Stream Dashboard (PMO-06.12)
 
 ---
 

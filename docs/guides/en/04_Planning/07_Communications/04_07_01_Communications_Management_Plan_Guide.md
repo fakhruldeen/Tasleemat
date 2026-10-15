@@ -88,10 +88,10 @@ Authored by Project Manager and Communications Lead, approved by Sponsor and Key
 
 #### 2. Downstream Dependents
 *   **Mandatory:**
-    *   Project Status Reports (PMO-06.01)
+    *   Project Status Report (PMO-06.01)
     *   Meeting Minutes (PMO-05.11)
 *   **Optional / Contextual:**
-    *   OCM Strategy & Plan (PMO-04.11.01)
+    *   OCM Strategy and Plan (PMO-04.11.01)
     *   Issue Log (PMO-05.01)
 
 ---
