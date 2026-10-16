@@ -1,3 +1,9 @@
+<!--
+---
+type: Roadmap
+---
+-->
+
 # 🗺️ Tasleemat Future Strategic Plans & Roadmap
 
 This document outlines the multi-phase evolution of the **Tasleemat (تسليمات)** PMO Operating System beyond version `v2.6.1`. It establishes concrete milestones, architectural objectives, and deliverable specifications to expand management coverage from 114 to 126 standardized bilingual deliverables.
