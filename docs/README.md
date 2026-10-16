@@ -9,11 +9,15 @@ created_at: '2026-10-06T16:05:28.037976+00:00'
 -->
 
 <p align="center">
-  <img src="img/logo.png" alt="Tasleemat Logo" width="340" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="img/logo-dark.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="img/logo-white.jpeg">
+    <img src="img/logo-white.jpeg" alt="Tasleemat Logo" width="300" style="border-radius: 14px;" />
+  </picture>
 </p>
 
 # 📚 Tasleemat Knowledge Base & Governance Documentation
-**Version:** 2.6.0  
+**Version:** 2.6.2  
 **Standard Alignment:** PMI PMBOK® 6th, 7th & 8th Editions • NIST AI RMF • SDAIA AI Ethics • ISO 21500  
 
 ---

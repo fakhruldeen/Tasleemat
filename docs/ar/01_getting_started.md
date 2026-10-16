@@ -15,7 +15,11 @@ created_at: '2026-10-06T16:05:28.230099+00:00'
 ---
 
 <p align="center">
-  <img src="../img/logo.png" alt="شعار تسليمات" width="280" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../img/logo-dark.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="../img/logo-white.jpeg">
+    <img src="../img/logo-white.jpeg" alt="شعار تسليمات" width="280" style="border-radius: 12px;" />
+  </picture>
 </p>
 
 ---

@@ -145,6 +145,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   text-decoration: none;
 }
 
+.brand-logo-light {
+  display: inline-block;
+}
+.brand-logo-dark {
+  display: none !important;
+}
+
+[data-theme="dark"] .brand-logo-light {
+  display: none !important;
+}
+[data-theme="dark"] .brand-logo-dark {
+  display: inline-block !important;
+}
+
 .brand-badge {
   font-size: 0.75rem;
   font-weight: 600;
@@ -1242,12 +1256,36 @@ JAVASCRIPT_RUNTIME = """
   const storedTheme = localStorage.getItem('tasleemat-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', storedTheme);
 
+  function syncThemePictures(theme) {
+    const isDark = theme === 'dark';
+    document.querySelectorAll('picture').forEach(pic => {
+      const darkSource = pic.querySelector('source[media*="dark"]');
+      const lightSource = pic.querySelector('source[media*="light"]');
+      const img = pic.querySelector('img');
+      if (img) {
+        if (!img.dataset.origSrc) img.dataset.origSrc = img.src;
+        if (isDark && darkSource && darkSource.srcset) {
+          img.src = darkSource.srcset;
+        } else if (!isDark) {
+          if (lightSource && lightSource.srcset) {
+            img.src = lightSource.srcset;
+          } else if (img.dataset.origSrc) {
+            img.src = img.dataset.origSrc;
+          }
+        }
+      }
+    });
+  }
+
+  syncThemePictures(storedTheme);
+
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
       const current = document.documentElement.getAttribute('data-theme');
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('tasleemat-theme', next);
+      syncThemePictures(next);
     });
   }
 
@@ -1420,6 +1458,10 @@ def render_html_page(
   <meta name="twitter:image" content="{og_image}">
   <meta name="twitter:image:alt" content="{html.escape(title)} - {brand_name}">
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/jpeg" href="{base_url}/img/logo-dark-sm.jpeg">
+  <link rel="apple-touch-icon" href="{base_url}/img/logo-dark-sm.jpeg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -1432,7 +1474,8 @@ def render_html_page(
   <header class="site-header" role="banner">
     <div class="container nav-wrapper">
       <a href="{home_url}" class="brand-group" aria-label="{brand_name}">
-        <img src="{base_url}/img/logo-sq.png" alt="Tasleemat Logo" width="28" height="28" style="vertical-align: middle; border-radius: 6px; margin-inline-end: 8px;">
+        <img src="{base_url}/img/logo-white-sm.jpeg" class="brand-logo-light" alt="Tasleemat Logo" width="28" height="28" style="vertical-align: middle; border-radius: 6px; margin-inline-end: 8px;">
+        <img src="{base_url}/img/logo-dark-sm.jpeg" class="brand-logo-dark" alt="Tasleemat Logo" width="28" height="28" style="vertical-align: middle; border-radius: 6px; margin-inline-end: 8px;">
         <span>{brand_name}</span>
         <span class="brand-badge">v2.6.2</span>
       </a>
@@ -1500,7 +1543,11 @@ def render_html_page(
 
       <div class="footer-grid">
         <div>
-          <div class="footer-heading">📦 {brand_name}</div>
+          <div class="footer-heading" style="display: flex; align-items: center; gap: 0.5rem;">
+            <img src="{base_url}/img/logo-white-sm.jpeg" class="brand-logo-light" alt="{brand_name}" width="22" height="22" style="border-radius: 5px; vertical-align: middle;">
+            <img src="{base_url}/img/logo-dark-sm.jpeg" class="brand-logo-dark" alt="{brand_name}" width="22" height="22" style="border-radius: 5px; vertical-align: middle;">
+            <span>{brand_name}</span>
+          </div>
           <p style="margin-bottom: 1rem;">{footer_text}</p>
 
           <p style="font-size: 0.8rem;">DOI: <a href="https://doi.org/10.5281/zenodo.23193523" target="_blank" rel="noopener">10.5281/zenodo.23193523</a></p>

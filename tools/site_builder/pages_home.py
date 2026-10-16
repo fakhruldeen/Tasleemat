@@ -102,7 +102,8 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
     <section class="hero-section">
       <div class="container">
         <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
-          <img src="{base_url}/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="130" height="128" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
+          <img src="{base_url}/img/logo-white.jpeg" class="brand-logo-light" alt="Tasleemat PMO Toolkit Logo" width="130" height="130" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
+          <img src="{base_url}/img/logo-dark.jpeg" class="brand-logo-dark" alt="Tasleemat PMO Toolkit Logo" width="130" height="130" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
         </div>
         <div class="hero-pill">
           <span>🛡️ Verified Project Deliverables &amp; Open Toolkit &bull; v2.6.2 Stable on PyPI</span>
@@ -379,7 +380,8 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
     <section class="hero-section">
       <div class="container">
         <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
-          <img src="{base_url}/img/logo.png" alt="شعار مكتبة تسليمات" width="130" height="128" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
+          <img src="{base_url}/img/logo-white.jpeg" class="brand-logo-light" alt="شعار مكتبة تسليمات" width="130" height="130" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
+          <img src="{base_url}/img/logo-dark.jpeg" class="brand-logo-dark" alt="شعار مكتبة تسليمات" width="130" height="130" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
         </div>
         <div class="hero-pill">
           <span>🛡️ تسليمات معتمدة ثنائية اللغة وأدوات مساندة &bull; الإصدار المستقر v2.6.2 على PyPI</span>

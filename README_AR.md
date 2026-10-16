@@ -11,7 +11,11 @@ type: Overview
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo.png" alt="شعار مكتبة تسليمات" width="300">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-dark.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-white.jpeg">
+    <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-white.jpeg" alt="شعار حزمة أدوات تسليمات لإدارة المشاريع" width="300" style="border-radius: 14px;">
+  </picture>
 </p>
 
 # 🚀 مكتبة تسليمات لإدارة المشاريع (Tasleemat)

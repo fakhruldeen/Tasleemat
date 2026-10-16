@@ -59,13 +59,19 @@ def clean_manual_content(content: str, is_arabic: bool = False) -> str:
     cleaned = '\n'.join(lines[start_idx:])
     
     # 2. Fix logo paths
-    logo_file = "../img/logo-ar.png" if is_arabic else "../img/logo.png"
     logo_alt = "Tasleemat PMO Logo" if not is_arabic else "شعار تسليمات"
     # Replace broken logo images e.g. src="docs/img/..." or src="../img/..."
+    cleaned = re.sub(r'<p align="center">\s*<picture>.*?</picture>\s*</p>\n*', '', cleaned, flags=re.DOTALL)
     cleaned = re.sub(r'<p align="center">\s*<img src="[^"]+"[^>]*>\s*</p>\n*', '', cleaned)
     
-    # Prepend clean logo
-    logo_html = f'<p align="center">\n  <img src="{logo_file}" alt="{logo_alt}" width="280" />\n</p>\n\n'
+    # Prepend clean theme-aware logo
+    logo_html = f'''<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../img/logo-dark.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="../img/logo-white.jpeg">
+    <img src="../img/logo-white.jpeg" alt="{logo_alt}" width="280" style="border-radius: 12px;" />
+  </picture>
+</p>\n\n'''
     cleaned = logo_html + cleaned.lstrip()
     
     return cleaned

@@ -15,7 +15,11 @@ created_at: '2026-10-06T16:05:28.495320+00:00'
 ---
 
 <p align="center">
-  <img src="../img/logo.png" alt="Tasleemat PMO Logo" width="280" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../img/logo-dark.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="../img/logo-white.jpeg">
+    <img src="../img/logo-white.jpeg" alt="Tasleemat PMO Logo" width="280" style="border-radius: 12px;" />
+  </picture>
 </p>
 
 # 🏛️ Tasleemat Enterprise PMO Policy Manual & Standard Operating Procedures

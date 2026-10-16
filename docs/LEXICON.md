@@ -14,7 +14,11 @@ created_at: '2026-10-06T16:05:28.042021+00:00'
 ---
 
 <p align="center">
-  <img src="img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="280">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="img/logo-dark-sm.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="img/logo-white-sm.jpeg">
+    <img src="img/logo-white-sm.jpeg" alt="Tasleemat PMO Toolkit Logo" width="220" style="border-radius: 10px;">
+  </picture>
 </p>
 
 # Project Management Bilingual Lexicon & Forms Catalog

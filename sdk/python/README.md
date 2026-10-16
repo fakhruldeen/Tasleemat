@@ -5,7 +5,11 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-sq.png" alt="Tasleemat PMO Toolkit Logo" width="180">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-dark-sm.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-white-sm.jpeg">
+    <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-white-sm.jpeg" alt="Tasleemat PMO Toolkit Logo" width="180" style="border-radius: 12px;">
+  </picture>
 </p>
 
 # 🚀 Tasleemat (تسليمات)
