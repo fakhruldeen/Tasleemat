@@ -54,6 +54,6 @@ setup(
         "Programming Language :: Python :: 3.13",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Office/Business",
-        "Topic :: Office/Business :: Management",
+        "Topic :: Office/Business :: Groupware",
     ],
 )
