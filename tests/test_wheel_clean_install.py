@@ -50,6 +50,8 @@ class TestWheelCleanInstall(unittest.TestCase):
             shutil.copy(str(ROOT / "LICENSE"), str(stage_dir / "LICENSE"))
             shutil.copy(str(SDK_DIR / "setup.py"), str(stage_dir / "setup.py"))
             shutil.copy(str(SDK_DIR / "README.md"), str(stage_dir / "README.md"))
+            if (SDK_DIR / "pyproject.toml").exists():
+                shutil.copy(str(SDK_DIR / "pyproject.toml"), str(stage_dir / "pyproject.toml"))
 
             (pkg_dest / "tools" / "__init__.py").touch()
             (pkg_dest / "tools" / "attested_computations" / "__init__.py").touch()
@@ -75,7 +77,7 @@ import sys
 import tasleemat
 
 # Verify version and exports
-assert tasleemat.__version__ == "2.6.0", f"Unexpected version {tasleemat.__version__}"
+assert tasleemat.__version__ == "2.6.1", f"Unexpected version {tasleemat.__version__}"
 artifacts = tasleemat.list_artifacts()
 assert len(artifacts) == 114, f"Expected 114 artifacts, got {len(artifacts)}"
 

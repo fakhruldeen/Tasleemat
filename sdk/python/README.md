@@ -18,7 +18,24 @@
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
-With **Version 2.6.0**, Tasleemat introduces an **Interactive Bilingual Terminal User Interface (TUI)** workstation, a **Project Governance Auditor & Verification Engine** with Stage-Gate readiness KPIs, **1-Click Native Integration for 8 Leading AI Coding Agents and IDEs**, and a universal **Multi-Provider LLM Engine**.
+With **Version 2.6.1**, Tasleemat delivers **100% Tailoring Matrix & Tier Pack Mapping** across all 114 deliverables, exposes the **Project Governance Auditor directly via MCP (`tasleemat_audit_project`)**, standardizes PEP 517/518 packaging with `pyproject.toml`, and refines multi-agent interoperability.
+
+---
+
+## 🌟 What's New in v2.6.1
+
+- 🎯 **100% Tailoring Matrix Coverage (Zero Unmapped Deliverables)**:
+  - All 114 standardized deliverables are now fully mapped across **Tier 1 (Enterprise/Strategic)**, **Tier 2 (Standard Enterprise)**, and **Tier 3 (Lean/Fast-Track)**.
+  - Complete coverage across all 5 methodology packs: `General / PMBOK`, `Agile / Scrum`, `AI Governance & Engineering`, `Predictive / Waterfall`, and `Hybrid`.
+  - Scaffolding via `tasleemat init` or TUI now supports comprehensive tailoring with zero gaps.
+
+- 🤖 **Native MCP Project Governance Auditor (`tasleemat_audit_project`)**:
+  - Exposes `audit_project()` directly over JSON-RPC 2.0 stdio transport to all connected AI agents (Cursor, Claude, Antigravity, OpenCode).
+  - Enhanced `tasleemat_list_artifacts` with multi-pack filtering (`general`, `agile`, `ai`, `predictive`, `hybrid`).
+
+- 📦 **Standardized PEP 517/518 Packaging**:
+  - Modernized packaging architecture with root `pyproject.toml` alongside `setup.py`.
+  - Refined PyPI enterprise management classifications and clean wheel distribution.
 
 ---
 

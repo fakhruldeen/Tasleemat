@@ -27,6 +27,7 @@ from tasleemat.catalog import (
 )
 from tasleemat.validation import validate_artifact_data
 from tasleemat.rendering import render_artifact
+from tasleemat.audit import audit_project
 
 # Configure logging to stderr to prevent interference with stdio JSON-RPC transport
 logging.basicConfig(
@@ -103,7 +104,13 @@ class MCPServer:
                         },
                         "tier": {
                             "type": "string",
+                            "enum": ["1", "2", "3"],
                             "description": "Optional tailoring tier to filter by ('1', '2', or '3').",
+                        },
+                        "pack": {
+                            "type": "string",
+                            "enum": ["general", "agile", "ai", "predictive", "hybrid"],
+                            "description": "Optional methodology pack to filter by ('general', 'agile', 'ai', 'predictive', 'hybrid').",
                         },
                     },
                 },
@@ -234,6 +241,39 @@ class MCPServer:
                     "required": ["artifact_id"],
                 },
             },
+            {
+                "name": "tasleemat_audit_project",
+                "description": (
+                    "Perform a complete structural PMO governance audit on a project workspace directory. "
+                    "Validates presence of required deliverable folders, templates, practitioner guides, "
+                    "structural data schemas, and stage-gate readiness KPIs across all project phases."
+                ),
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "project_path": {
+                            "type": "string",
+                            "description": "Absolute or relative path to the scaffolded project workspace directory.",
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["1", "2", "3"],
+                            "description": "Optional governance tier ('1', '2', '3'). If omitted, auto-detected from PROJECT_README.md or defaults to '2'.",
+                        },
+                        "pack": {
+                            "type": "string",
+                            "enum": ["general", "agile", "ai", "predictive", "hybrid"],
+                            "description": "Optional methodology pack ('general', 'agile', 'ai', 'predictive', 'hybrid'). If omitted, auto-detected from PROJECT_README.md or defaults to 'general'.",
+                        },
+                        "strict_schema": {
+                            "type": "boolean",
+                            "default": True,
+                            "description": "If True, executes full JSON Schema Draft 2020-12 checks on completed data files.",
+                        },
+                    },
+                    "required": ["project_path"],
+                },
+            },
         ]
         return {"tools": tools}
 
@@ -246,7 +286,8 @@ class MCPServer:
             if tool_name == "tasleemat_list_artifacts":
                 phase = args.get("phase")
                 tier = args.get("tier")
-                results = list_artifacts(phase=phase, tier=tier)
+                pack = args.get("pack")
+                results = list_artifacts(phase=phase, tier=tier, pack=pack)
                 summaries = [
                     {
                         "artifact_id": a.artifact_id,
@@ -345,6 +386,26 @@ class MCPServer:
                 return {
                     "content": [
                         {"type": "text", "text": html_output}
+                    ]
+                }
+
+            elif tool_name == "tasleemat_audit_project":
+                project_path = args["project_path"]
+                tier = args.get("tier")
+                pack = args.get("pack")
+                strict_schema = args.get("strict_schema", True)
+                audit_report = audit_project(
+                    project_path=project_path,
+                    tier=tier,
+                    pack=pack,
+                    strict_schema=strict_schema,
+                )
+                return {
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": json.dumps(audit_report.to_dict(), indent=2, ensure_ascii=False),
+                        }
                     ]
                 }
 

@@ -15,6 +15,50 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.6.1] - 2026-10-16 — 100% Tailoring Matrix Coverage, Native MCP Project Auditor & Modern Packaging
+
+### 🎯 100% Tailoring Matrix Coverage (Zero Unmapped Deliverables)
+- **Complete Tier Mapping:** Mapped all 114 deliverables across Tier 1 (Enterprise/Strategic), Tier 2 (Standard Enterprise), and Tier 3 (Lean/Fast-Track) in `tools/tasleemat_cli.py` (`TIER_PACKS`).
+- **Comprehensive Methodology Packs:** Full coverage across all 5 methodology packs: `General / PMBOK`, `Agile / Scrum`, `AI Governance & Engineering`, `Predictive / Waterfall`, and `Hybrid`.
+- **Verified Zero Gaps:** Validated that 100% of deliverables in `tasleemat/data/catalog.json` feature non-empty tailoring tiers and packs.
+
+### 🤖 Native MCP Project Governance Auditor (`tasleemat_audit_project`)
+- **Direct Protocol Tool:** Exposes `audit_project()` over JSON-RPC stdio transport in `tasleemat.mcp.server`, allowing AI agents (Cursor, Claude, Antigravity) to audit project workspaces directly.
+- **Multi-Pack Discovery:** Added `pack` filtering (`general`, `agile`, `ai`, `predictive`, `hybrid`) to `tasleemat_list_artifacts`.
+
+### 📦 Standardized PEP 517/518 Packaging Architecture
+- **Root `pyproject.toml`:** Modernized build architecture eliminating pip build deprecation warnings.
+- **Metadata Polish:** Refined PyPI package classifiers to reflect enterprise management and project office domains.
+
+---
+
+## [2.6.0] - 2026-10-15 — Bilingual Terminal Workstation (TUI), Project Governance Auditor & 8 AI Agent Integrations
+
+### 🖥️ Interactive Bilingual Terminal User Interface (TUI)
+- **Textual-Powered Dashboard:** Full-screen terminal dashboard (`tasleemat tui`) with real-time bidirectional Arabic text shaping (`arabic-reshaper` and `python-bidi`).
+- **8 Dedicated Workspaces:** Scaffolding Wizard, Deliverables Browser, Live AI Generator, Governance Auditor, MCP Diagnostics, Earned Value Analysis (EVA) Calculator, Lexicon Dictionary, and Settings.
+
+### 🛡️ Project Governance Auditor & Verification Engine
+- **Command & Library:** Introduced `tasleemat audit [path]` and `tasleemat.audit_project()`.
+- **Compliance Metrics:** Real-time ANSI progress bars for Overall Completion %, Governance Score %, and Schema Compliance %.
+- **6-Stage Gate Readiness Matrix:** Evaluates transition criteria across Gate 0 (Strategic Alignment) through Gate 5 (Handover & Closeout).
+
+### 🤖 Universal Multi-Agent Ecosystem (8 Native Integrations)
+- **1-Click Agent Setup:** Automated scaffolding and rule generation for Cursor, Google Antigravity, Claude Desktop, VS Code, OpenCode, Cline, Windsurf, and OpenAI CLI.
+
+### 🌐 Universal Multi-Provider LLM Engine
+- **Dynamic AI Client:** Zero-lockin multi-provider client supporting Google Gemini (defaulting to `gemini-3.8-flash`), Anthropic, OpenAI, OpenRouter, DeepSeek, Groq, and Ollama.
+
+---
+
+## [2.5.0] - 2026-10-13 — 100% Completed-Data Companion Schema Coverage & Pure-Python Validation Engine
+
+### 🔍 100% Structural JSON Schema Coverage
+- **114 Companion Schemas:** Added Draft 2020-12 companion JSON schemas for all 114 deliverables in `tasleemat/schemas/completed/`.
+- **Pure-Python Validation:** Built-in validation engine supporting RFC format checks, strict stage-gate evaluation, and draft warning modes.
+
+---
+
 ## [2.4.1] - 2026-10-12 — Native Model Context Protocol (MCP) Server & LLM Ecosystem Integration
 
 ### ⚡ Standard Model Context Protocol (MCP) Server

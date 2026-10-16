@@ -3,6 +3,68 @@ type: Guide
 ---
 # Tasleemat Release Notes
 
+## 🚀 Tasleemat v2.6.1 — 100% Tailoring Matrix Coverage, Native MCP Project Auditor & Modern Packaging
+
+**Release Date:** October 16, 2026  
+**PyPI Version:** [`tasleemat 2.6.1`](https://pypi.org/project/tasleemat/2.6.1/)  
+**Git Tag:** [`v2.6.1`](https://github.com/fakhruldeen/Tasleemat/releases/tag/v2.6.1)  
+
+---
+
+### 🎯 100% Tailoring Matrix & Tier Pack Mapping
+- **Zero Unmapped Deliverables:** Mapped 100% of all 114 deliverables across Tier 1 (Enterprise/Strategic), Tier 2 (Standard Enterprise), and Tier 3 (Lean/Fast-Track).
+- **5 Comprehensive Methodology Packs:** Enhanced `General / PMBOK`, `Agile / Scrum`, `AI Governance & Engineering`, `Predictive / Waterfall`, and `Hybrid` packs to cover the full project governance spectrum.
+- **Dynamic Scaffolding:** CLI `tasleemat init` and TUI Scaffolding Wizard now scaffold any methodology or governance tier without omitting core planning deliverables.
+
+### 🤖 Native MCP Project Governance Auditor (`tasleemat_audit_project`)
+- **Direct Protocol Tool:** Exposes `audit_project()` over JSON-RPC stdio transport in `tasleemat.mcp.server`, enabling AI agents (Cursor, Claude, Antigravity, OpenCode) to audit project workspaces directly.
+- **Multi-Pack Discovery:** Added `pack` filtering (`general`, `agile`, `ai`, `predictive`, `hybrid`) to `tasleemat_list_artifacts`.
+
+### 📦 Standardized PEP 517/518 Packaging Architecture
+- **Root `pyproject.toml`:** Modernized build architecture eliminating pip build deprecation warnings.
+- **Metadata Polish:** Refined PyPI package classifiers to reflect enterprise management and project office domains.
+
+---
+
+## 🚀 Tasleemat v2.6.0 — Bilingual Terminal Workstation (TUI), Governance Auditor & 8 AI Agent Integrations
+
+**Release Date:** October 15, 2026  
+**PyPI Version:** [`tasleemat 2.6.0`](https://pypi.org/project/tasleemat/2.6.0/)  
+**Git Tag:** [`v2.6.0`](https://github.com/fakhruldeen/Tasleemat/releases/tag/v2.6.0)  
+
+---
+
+### 🖥️ Interactive Bilingual Terminal User Interface (TUI)
+- Full-screen terminal dashboard powered by Textual with real-time bidirectional Arabic text shaping (`arabic-reshaper` & `python-bidi`).
+- **8 Dedicated Workspaces:** Scaffolding Wizard, Deliverables Browser, Live AI Generator, Governance Auditor & Verification, MCP Diagnostics, Earned Value Analysis (EVA) Calculator, Bilingual Lexicon Dictionary, and Settings.
+
+### 🛡️ Project Governance Auditor & Verification Engine
+- Analyzes scaffolded project workspaces against required methodology packs and governance tiers.
+- Generates compliance KPIs: Overall Completion %, Governance Score %, and Schema Compliance %.
+- 6-Stage Gate Readiness Matrix (Gate 0 Strategic Alignment through Gate 5 Operational Handover & Closeout).
+
+### 🤖 Universal Multi-Agent Ecosystem (8 Native Integrations)
+- 1-click workspace scaffolding and rule generation for Cursor, Google Antigravity, Claude Desktop, VS Code, OpenCode, Cline, Windsurf, and OpenAI CLI.
+
+### 🌐 Universal Multi-Provider LLM Engine
+- Zero-lockin multi-provider client supporting Google Gemini (defaulting to `gemini-3.8-flash`), Anthropic, OpenAI, OpenRouter, DeepSeek, Groq, and Ollama.
+
+---
+
+## 🚀 Tasleemat v2.5.0 — 100% Completed-Data Companion Schema Coverage & Pure-Python Validation Engine
+
+**Release Date:** October 13, 2026  
+**PyPI Version:** [`tasleemat 2.5.0`](https://pypi.org/project/tasleemat/2.5.0/)  
+**Git Tag:** [`v2.5.0`](https://github.com/fakhruldeen/Tasleemat/releases/tag/v2.5.0)  
+
+---
+
+### 🔍 100% Completed-Data Companion Schema Coverage
+- Companion JSON schemas (Draft 2020-12) delivered for all 114 deliverables in `tasleemat/schemas/completed/`.
+- Pure-Python validation engine supporting RFC format checks, strict stage-gate evaluation, and draft warning modes.
+
+---
+
 ## 🚀 Tasleemat v2.4.1 — Native Model Context Protocol (MCP) Server & LLM Ecosystem Integration
 
 **Release Date:** October 12, 2026  

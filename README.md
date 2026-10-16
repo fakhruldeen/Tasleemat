@@ -17,7 +17,7 @@ type: Overview
 *Fully Aligned with PMI PMBOK® (6th, 7th & 8th Edition Ready), ISO 21500 / 21502 & NIST AI RMF*
 
 <p align="center">
-  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.5.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
+  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.6.1-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
   <a href="TECHNICAL.md#1-tasleemat-cli-scaffolder--terminal-user-interface-tui"><img src="https://img.shields.io/badge/🖥️_Terminal_TUI-Interactive_Workstation-0f766e?style=for-the-badge" alt="Terminal TUI"></a>
   <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_MCP_Server-Standard_Protocol-7c3aed?style=for-the-badge" alt="MCP Server"></a>
   <a href="https://fakhr.me/Tasleemat/"><img src="https://img.shields.io/badge/🌐_Interactive_Portal-Live_Demo-006a61?style=for-the-badge" alt="Live Portal"></a>

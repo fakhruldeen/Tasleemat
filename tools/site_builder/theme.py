@@ -1433,7 +1433,7 @@ def render_html_page(
     <div class="container nav-wrapper">
       <a href="{home_url}" class="brand-group" aria-label="{brand_name}">
         <span>📦 {brand_name}</span>
-        <span class="brand-badge">v2.6.0</span>
+        <span class="brand-badge">v2.6.1</span>
       </a>
       
       <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">

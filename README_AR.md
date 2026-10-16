@@ -16,7 +16,7 @@ type: Overview
 *متوافقة بالكامل مع الدليل المعرفي لإدارة المشاريع PMI PMBOK® (الإصدار 6 و7 والجاهزية لـ 8)، معايير أيزو ISO 21500 / 21502، وهيئة الحكومة الرقمية*
 
 <p align="center">
-  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.5.0-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
+  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.6.1-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
   <a href="TECHNICAL_AR.md#1-واجهة-الطرفية-التفاعلية-tui-وأداة-السطر-البرمجي-cli"><img src="https://img.shields.io/badge/🖥️_الطرفية_التفاعلية_TUI-بيئة_عمل_متكاملة-0f766e?style=for-the-badge" alt="الطرفية التفاعلية TUI"></a>
   <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_خادم_MCP-البروتوكول_المعياري-7c3aed?style=for-the-badge" alt="خادم MCP"></a>
   <a href="https://fakhr.me/Tasleemat/README_AR.html"><img src="https://img.shields.io/badge/🌐_البوابة_التفاعلية-معاينة_حصرية-006a61?style=for-the-badge" alt="البوابة التفاعلية"></a>

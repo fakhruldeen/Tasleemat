@@ -1,5 +1,5 @@
 {
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "Canonical Tasleemat PMO Artifact Registry",
   "generated_from": "datapackage.json & forms/ baseline",
   "total_artifacts": 114,
@@ -38,6 +38,7 @@
         "packs_by_tier": {
           "1": [
             "general",
+            "hybrid",
             "predictive"
           ]
         }
@@ -89,7 +90,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -140,7 +142,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -191,7 +194,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -242,7 +246,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -293,7 +298,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -412,7 +418,10 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "agile",
+            "general",
+            "hybrid",
+            "predictive"
           ]
         }
       },
@@ -463,7 +472,10 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "agile",
+            "ai",
+            "general",
+            "predictive"
           ]
         }
       },
@@ -514,7 +526,9 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "ai",
+            "general",
+            "predictive"
           ]
         }
       },
@@ -573,7 +587,9 @@
             "predictive"
           ],
           "2": [
-            "general"
+            "ai",
+            "general",
+            "predictive"
           ]
         }
       },
@@ -682,7 +698,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "ai"
+            "ai",
+            "general"
           ],
           "2": [
             "ai"
@@ -735,10 +752,19 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2",
+          "3"
         ],
         "packs_by_tier": {
           "1": [
+            "ai",
+            "general"
+          ],
+          "2": [
+            "ai"
+          ],
+          "3": [
             "ai"
           ]
         }
@@ -792,7 +818,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "ai"
+            "ai",
+            "general"
           ],
           "2": [
             "ai"
@@ -845,10 +872,15 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
+            "ai",
+            "general"
+          ],
+          "2": [
             "ai"
           ]
         }
@@ -974,10 +1006,13 @@
         "packs_by_tier": {
           "1": [
             "agile",
-            "general"
+            "ai",
+            "general",
+            "hybrid"
           ],
           "2": [
-            "agile"
+            "agile",
+            "hybrid"
           ],
           "3": [
             "agile"
@@ -1027,11 +1062,17 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -1083,12 +1124,16 @@
         ],
         "packs_by_tier": {
           "1": [
+            "agile",
+            "ai",
             "general",
             "hybrid",
             "predictive"
           ],
           "2": [
-            "general"
+            "agile",
+            "general",
+            "predictive"
           ]
         }
       },
@@ -1139,7 +1184,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -1191,12 +1237,15 @@
         ],
         "packs_by_tier": {
           "1": [
+            "agile",
             "ai",
             "general",
             "hybrid",
             "predictive"
           ],
           "2": [
+            "agile",
+            "ai",
             "general",
             "hybrid",
             "predictive"
@@ -1250,7 +1299,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -1296,8 +1346,18 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.01.03.schema.json",
       "completed_data_validation": {
@@ -1343,12 +1403,12 @@
       "tailoring": {
         "tiers": [
           "1",
-          "2",
-          "3"
+          "2"
         ],
         "packs_by_tier": {
           "1": [
             "agile",
+            "ai",
             "general",
             "hybrid",
             "predictive"
@@ -1356,11 +1416,6 @@
           "2": [
             "agile",
             "general",
-            "hybrid",
-            "predictive"
-          ],
-          "3": [
-            "agile",
             "hybrid",
             "predictive"
           ]
@@ -1413,7 +1468,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -1459,8 +1515,18 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.02.03.schema.json",
       "completed_data_validation": {
@@ -1504,8 +1570,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.02.04.schema.json",
       "completed_data_validation": {
@@ -1549,8 +1622,28 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "3": [
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.02.05.schema.json",
       "completed_data_validation": {
@@ -1594,8 +1687,21 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.02.06.schema.json",
       "completed_data_validation": {
@@ -1639,8 +1745,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.02.07.schema.json",
       "completed_data_validation": {
@@ -1684,8 +1797,28 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid"
+          ],
+          "2": [
+            "agile",
+            "ai",
+            "hybrid"
+          ],
+          "3": [
+            "agile",
+            "hybrid"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.02.08.schema.json",
       "completed_data_validation": {
@@ -1729,8 +1862,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.02.09.schema.json",
       "completed_data_validation": {
@@ -1781,12 +1921,15 @@
         "packs_by_tier": {
           "1": [
             "agile",
+            "ai",
             "general",
             "hybrid",
             "predictive"
           ],
           "2": [
+            "agile",
             "general",
+            "hybrid",
             "predictive"
           ]
         }
@@ -1838,7 +1981,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -1884,8 +2028,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.03.schema.json",
       "completed_data_validation": {
@@ -1929,8 +2080,28 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "3": [
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.04.schema.json",
       "completed_data_validation": {
@@ -1974,8 +2145,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.05.schema.json",
       "completed_data_validation": {
@@ -2019,8 +2197,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.06.schema.json",
       "completed_data_validation": {
@@ -2064,8 +2249,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.07.schema.json",
       "completed_data_validation": {
@@ -2109,8 +2301,22 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.08.schema.json",
       "completed_data_validation": {
@@ -2154,8 +2360,21 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid"
+          ],
+          "2": [
+            "agile"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.09.schema.json",
       "completed_data_validation": {
@@ -2199,8 +2418,21 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general",
+            "hybrid"
+          ],
+          "2": [
+            "agile",
+            "hybrid"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.03.10.schema.json",
       "completed_data_validation": {
@@ -2250,11 +2482,14 @@
         ],
         "packs_by_tier": {
           "1": [
+            "ai",
             "general",
+            "hybrid",
             "predictive"
           ],
           "2": [
             "general",
+            "hybrid",
             "predictive"
           ]
         }
@@ -2306,7 +2541,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -2352,8 +2588,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.04.03.schema.json",
       "completed_data_validation": {
@@ -2397,8 +2640,25 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
+          ],
+          "3": [
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.04.04.schema.json",
       "completed_data_validation": {
@@ -2443,11 +2703,20 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
+            "agile",
+            "ai",
             "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "hybrid",
             "predictive"
           ]
         }
@@ -2494,8 +2763,16 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "ai",
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.05.02.schema.json",
       "completed_data_validation": {
@@ -2539,8 +2816,24 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general",
+            "hybrid"
+          ],
+          "2": [
+            "agile"
+          ],
+          "3": [
+            "agile"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.05.03.schema.json",
       "completed_data_validation": {
@@ -2585,11 +2878,19 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -2635,8 +2936,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.06.02.schema.json",
       "completed_data_validation": {
@@ -2680,8 +2988,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.06.03.schema.json",
       "completed_data_validation": {
@@ -2725,8 +3040,25 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "agile",
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.06.04.schema.json",
       "completed_data_validation": {
@@ -2770,8 +3102,21 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "agile"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.06.05.schema.json",
       "completed_data_validation": {
@@ -2815,8 +3160,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.06.06.schema.json",
       "completed_data_validation": {
@@ -2861,11 +3213,19 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "agile",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -2911,8 +3271,20 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.07.02.schema.json",
       "completed_data_validation": {
@@ -2957,11 +3329,19 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -3028,6 +3408,8 @@
             "predictive"
           ],
           "3": [
+            "agile",
+            "ai",
             "general",
             "hybrid",
             "predictive"
@@ -3076,8 +3458,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.08.03.schema.json",
       "completed_data_validation": {
@@ -3121,8 +3510,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.08.04.schema.json",
       "completed_data_validation": {
@@ -3166,8 +3562,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.08.05.schema.json",
       "completed_data_validation": {
@@ -3211,8 +3614,17 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.08.06.schema.json",
       "completed_data_validation": {
@@ -3256,8 +3668,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.08.07.schema.json",
       "completed_data_validation": {
@@ -3302,11 +3721,18 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -3352,8 +3778,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.09.02.schema.json",
       "completed_data_validation": {
@@ -3397,8 +3830,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.09.03.schema.json",
       "completed_data_validation": {
@@ -3442,8 +3882,16 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.09.04.schema.json",
       "completed_data_validation": {
@@ -3487,8 +3935,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.09.05.schema.json",
       "completed_data_validation": {
@@ -3533,11 +3988,18 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -3583,8 +4045,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.10.02.schema.json",
       "completed_data_validation": {
@@ -3633,7 +4102,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -3679,8 +4149,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.11.02.schema.json",
       "completed_data_validation": {
@@ -3729,7 +4206,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -3775,8 +4253,24 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "ai",
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-04.13.01.schema.json",
       "completed_data_validation": {
@@ -3892,10 +4386,26 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2",
+          "3"
         ],
         "packs_by_tier": {
           "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "3": [
             "general"
           ]
         }
@@ -3944,15 +4454,21 @@
       "tailoring": {
         "tiers": [
           "1",
-          "2"
+          "2",
+          "3"
         ],
         "packs_by_tier": {
           "1": [
             "general",
+            "hybrid",
             "predictive"
           ],
           "2": [
-            "general"
+            "general",
+            "predictive"
+          ],
+          "3": [
+            "predictive"
           ]
         }
       },
@@ -4006,10 +4522,14 @@
           "1": [
             "agile",
             "general",
-            "hybrid"
+            "hybrid",
+            "predictive"
           ],
           "2": [
-            "agile"
+            "agile",
+            "general",
+            "hybrid",
+            "predictive"
           ]
         }
       },
@@ -4055,8 +4575,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.05.schema.json",
       "completed_data_validation": {
@@ -4100,8 +4627,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.06.schema.json",
       "completed_data_validation": {
@@ -4145,8 +4679,23 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.07.schema.json",
       "completed_data_validation": {
@@ -4190,8 +4739,25 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general",
+            "hybrid"
+          ],
+          "2": [
+            "agile",
+            "hybrid"
+          ],
+          "3": [
+            "agile"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.08.schema.json",
       "completed_data_validation": {
@@ -4236,10 +4802,19 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2",
+          "3"
         ],
         "packs_by_tier": {
           "1": [
+            "ai",
+            "general"
+          ],
+          "2": [
+            "ai"
+          ],
+          "3": [
             "ai"
           ]
         }
@@ -4294,6 +4869,7 @@
         "packs_by_tier": {
           "1": [
             "agile",
+            "general",
             "hybrid"
           ],
           "2": [
@@ -4301,7 +4877,8 @@
             "hybrid"
           ],
           "3": [
-            "agile"
+            "agile",
+            "hybrid"
           ]
         }
       },
@@ -4347,8 +4924,21 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.11.schema.json",
       "completed_data_validation": {
@@ -4392,8 +4982,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.12.schema.json",
       "completed_data_validation": {
@@ -4437,8 +5034,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.13.schema.json",
       "completed_data_validation": {
@@ -4482,8 +5086,19 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "general"
+          ],
+          "2": [
+            "agile"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.14.schema.json",
       "completed_data_validation": {
@@ -4527,8 +5142,20 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "ai",
+            "general",
+            "predictive"
+          ],
+          "2": [
+            "ai"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-05.15.schema.json",
       "completed_data_validation": {
@@ -4648,7 +5275,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -4699,7 +5327,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -4746,11 +5375,17 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -4797,12 +5432,17 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
             "general",
             "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
             "predictive"
           ]
         }
@@ -4849,8 +5489,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.06.schema.json",
       "completed_data_validation": {
@@ -4894,8 +5541,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.07.schema.json",
       "completed_data_validation": {
@@ -4939,8 +5593,22 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "agile"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.08.schema.json",
       "completed_data_validation": {
@@ -4984,8 +5652,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.09.schema.json",
       "completed_data_validation": {
@@ -5029,8 +5704,21 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "predictive"
+          ],
+          "2": [
+            "ai"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.10.schema.json",
       "completed_data_validation": {
@@ -5075,11 +5763,23 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
           ]
         }
       },
@@ -5127,14 +5827,21 @@
       "tailoring": {
         "tiers": [
           "1",
-          "2"
+          "2",
+          "3"
         ],
         "packs_by_tier": {
           "1": [
             "agile",
+            "ai",
+            "general",
             "hybrid"
           ],
           "2": [
+            "agile",
+            "hybrid"
+          ],
+          "3": [
             "agile",
             "hybrid"
           ]
@@ -5182,8 +5889,20 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.13.schema.json",
       "completed_data_validation": {
@@ -5227,8 +5946,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.14.schema.json",
       "completed_data_validation": {
@@ -5272,8 +5998,24 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1",
+          "2"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "agile",
+            "ai",
+            "hybrid"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.15.schema.json",
       "completed_data_validation": {
@@ -5317,8 +6059,17 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-06.16.schema.json",
       "completed_data_validation": {
@@ -5372,16 +6123,20 @@
             "agile",
             "ai",
             "general",
-            "hybrid"
+            "hybrid",
+            "predictive"
           ],
           "2": [
             "agile",
             "ai",
             "general",
-            "hybrid"
+            "hybrid",
+            "predictive"
           ],
           "3": [
             "agile",
+            "ai",
+            "general",
             "hybrid"
           ]
         }
@@ -5433,7 +6188,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -5486,12 +6242,17 @@
         ],
         "packs_by_tier": {
           "1": [
+            "agile",
+            "ai",
             "general",
             "hybrid",
             "predictive"
           ],
           "2": [
+            "agile",
+            "ai",
             "general",
+            "hybrid",
             "predictive"
           ],
           "3": [
@@ -5543,11 +6304,20 @@
       },
       "tailoring": {
         "tiers": [
-          "1"
+          "1",
+          "2"
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "agile",
+            "ai",
+            "general",
+            "hybrid",
+            "predictive"
+          ],
+          "2": [
+            "general",
+            "predictive"
           ]
         }
       },
@@ -5598,7 +6368,8 @@
         ],
         "packs_by_tier": {
           "1": [
-            "general"
+            "general",
+            "predictive"
           ]
         }
       },
@@ -5644,8 +6415,17 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "agile",
+            "ai",
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-07.06.schema.json",
       "completed_data_validation": {
@@ -5689,8 +6469,15 @@
         }
       },
       "tailoring": {
-        "tiers": [],
-        "packs_by_tier": {}
+        "tiers": [
+          "1"
+        ],
+        "packs_by_tier": {
+          "1": [
+            "general",
+            "predictive"
+          ]
+        }
       },
       "companion_data_schema": "schemas/completed/PMO-07.07.schema.json",
       "completed_data_validation": {

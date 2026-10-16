@@ -35,26 +35,6 @@ PHASE_NAMES = {
     "07": {"en": "Closing", "ar": "الإغلاق"},
 }
 
-COMPANION_SCHEMAS = {
-    "PMO-01.01": "schemas/completed/PMO-01.01.schema.json",
-    "PMO-03.01": "schemas/completed/PMO-03.01.schema.json",
-    "PMO-04.01.01": "schemas/completed/PMO-04.01.01.schema.json",
-    "PMO-04.02.01": "schemas/completed/PMO-04.02.01.schema.json",
-    "PMO-04.02.05": "schemas/completed/PMO-04.02.05.schema.json",
-    "PMO-04.03.01": "schemas/completed/PMO-04.03.01.schema.json",
-    "PMO-04.04.01": "schemas/completed/PMO-04.04.01.schema.json",
-    "PMO-04.05.01": "schemas/completed/PMO-04.05.01.schema.json",
-    "PMO-04.06.01": "schemas/completed/PMO-04.06.01.schema.json",
-    "PMO-04.07.01": "schemas/completed/PMO-04.07.01.schema.json",
-    "PMO-04.08.01": "schemas/completed/PMO-04.08.01.schema.json",
-    "PMO-04.08.02": "schemas/completed/PMO-04.08.02.schema.json",
-    "PMO-04.09.01": "schemas/completed/PMO-04.09.01.schema.json",
-    "PMO-04.10.01": "schemas/completed/PMO-04.10.01.schema.json",
-    "PMO-05.01": "schemas/completed/PMO-05.01.schema.json",
-    "PMO-06.01": "schemas/completed/PMO-06.01.schema.json",
-    "PMO-07.03": "schemas/completed/PMO-07.03.schema.json",
-}
-
 def compute_file_sha256(path: pathlib.Path) -> str:
     h = hashlib.sha256()
     with open(path, "rb") as f:
@@ -142,6 +122,7 @@ def find_asset_bundles():
 
         # Generate completed_data_validation metadata
         full_schema_path = ROOT / "tasleemat" / "schemas" / "completed" / f"{doc_ref}.schema.json"
+        schema_rel = None
         if full_schema_path.exists():
             schema_rel = f"schemas/completed/{doc_ref}.schema.json"
             schema_fp = compute_file_sha256(full_schema_path)
@@ -213,7 +194,7 @@ def build_catalog():
     print(f"Discovered {len(artifacts)} unique artifact definitions.")
 
     catalog_data = {
-        "version": "2.6.0",
+        "version": "2.6.1",
         "description": "Canonical Tasleemat PMO Artifact Registry",
         "generated_from": "datapackage.json & forms/ baseline",
         "total_artifacts": len(artifacts),
