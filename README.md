@@ -9,7 +9,7 @@ type: Overview
 <div align="center">
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="300">
+  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-dark-sm.jpeg" alt="Tasleemat PMO Toolkit Logo" width="300">
 </p>
 
 # 🚀 Tasleemat (تسليمات)
